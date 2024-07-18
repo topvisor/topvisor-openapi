@@ -1,0 +1,29 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Pagination",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Pagination": {
+                "type": "object",
+                "properties": {
+                    "nextOffset": {
+                        "title": "Смещение для получения следующий порции данных",
+                        "description": "Вернется только в случае существования следующей порции",
+                        "nullable": true,
+                        "type": "integer"
+                    },
+                    "total": {
+                        "title": "Общее число результатов, без учета применения пагинации",
+                        "nullable": true,
+                        "type": "integer"
+                    }
+                },
+                "title": "Результаты пагинации"
+            }
+        }
+    }
+}

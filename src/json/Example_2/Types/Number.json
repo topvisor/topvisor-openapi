@@ -1,0 +1,20 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Example_2.Types.Number",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Example_2.Types.Number": {
+                "type": "integer",
+                "enum": [
+                    1,
+                    2,
+                    3
+                ]
+            }
+        }
+    }
+}

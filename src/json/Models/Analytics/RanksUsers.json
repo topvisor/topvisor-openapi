@@ -1,0 +1,52 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Models.Analytics.RanksUsers",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Models.Analytics.RanksUsers": {
+                "properties": {
+                    "code": {
+                        "nullable": true
+                    },
+                    "email": {
+                        "nullable": true
+                    },
+                    "rank": {
+                        "nullable": true
+                    },
+                    "retention_week": {
+                        "nullable": true
+                    },
+                    "retention_month": {
+                        "nullable": true
+                    },
+                    "payment_week": {
+                        "nullable": true
+                    },
+                    "payment_month": {
+                        "nullable": true
+                    },
+                    "payment_month_6": {
+                        "nullable": true
+                    },
+                    "payment_year": {
+                        "nullable": true
+                    },
+                    "new_user": {
+                        "nullable": true
+                    },
+                    "returned_user": {
+                        "nullable": true
+                    },
+                    "quitted_user": {
+                        "nullable": true
+                    }
+                }
+            }
+        }
+    }
+}

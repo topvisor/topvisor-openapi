@@ -1,0 +1,376 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Models.Audit.Pages",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Models.Audit.Pages": {
+                "properties": {
+                    "dummy_opener_summary_page": {
+                        "nullable": true
+                    },
+                    "COUNT(*)": {
+                        "nullable": true
+                    },
+                    "HTTP_CODES_HUNDREDS()": {
+                        "type": "array",
+                        "items": {
+                            "oneOf": [
+                                {
+                                    "type": "string"
+                                },
+                                {
+                                    "type": "number"
+                                }
+                            ]
+                        },
+                        "nullable": true
+                    },
+                    "check_id": {
+                        "nullable": true
+                    },
+                    "url_id": {
+                        "nullable": true
+                    },
+                    "url": {
+                        "nullable": true
+                    },
+                    "time_parse": {
+                        "nullable": true
+                    },
+                    "http_codes": {
+                        "type": "array",
+                        "items": {
+                            "oneOf": [
+                                {
+                                    "type": "string"
+                                },
+                                {
+                                    "type": "number"
+                                }
+                            ]
+                        },
+                        "nullable": true
+                    },
+                    "last_http_code": {
+                        "nullable": true
+                    },
+                    "tls_version": {
+                        "nullable": true
+                    },
+                    "redirects": {
+                        "type": "array",
+                        "items": {
+                            "oneOf": [
+                                {
+                                    "type": "string"
+                                },
+                                {
+                                    "type": "number"
+                                }
+                            ]
+                        },
+                        "nullable": true
+                    },
+                    "meta_robots_none": {
+                        "nullable": true
+                    },
+                    "x_robots_tag_none": {
+                        "nullable": true
+                    },
+                    "meta_robots_noindex": {
+                        "nullable": true
+                    },
+                    "x_robots_tag_noindex": {
+                        "nullable": true
+                    },
+                    "meta_robots_nofollow": {
+                        "nullable": true
+                    },
+                    "x_robots_tag_nofollow": {
+                        "nullable": true
+                    },
+                    "canonical": {
+                        "nullable": true
+                    },
+                    "canonical_count": {
+                        "nullable": true
+                    },
+                    "http_resources_count": {
+                        "nullable": true
+                    },
+                    "html_lang": {
+                        "nullable": true
+                    },
+                    "hreflang": {
+                        "nullable": true
+                    },
+                    "rdfa": {
+                        "nullable": true
+                    },
+                    "json_ld": {
+                        "nullable": true
+                    },
+                    "microdata": {
+                        "nullable": true
+                    },
+                    "alternates": {
+                        "nullable": true
+                    },
+                    "refresh": {
+                        "nullable": true
+                    },
+                    "title": {
+                        "nullable": true
+                    },
+                    "description": {
+                        "nullable": true
+                    },
+                    "h1": {
+                        "nullable": true
+                    },
+                    "links_count": {
+                        "nullable": true
+                    },
+                    "images_count": {
+                        "nullable": true
+                    },
+                    "js_count": {
+                        "nullable": true
+                    },
+                    "css_count": {
+                        "nullable": true
+                    },
+                    "lastmod": {
+                        "nullable": true
+                    },
+                    "lastmod_since": {
+                        "nullable": true
+                    },
+                    "sitemap_xml_mention": {
+                        "nullable": true
+                    },
+                    "robots_txt_mention": {
+                        "nullable": true
+                    },
+                    "robots_txt_blocked": {
+                        "nullable": true
+                    },
+                    "og_title": {
+                        "nullable": true
+                    },
+                    "og_description": {
+                        "nullable": true
+                    },
+                    "og_image": {
+                        "nullable": true
+                    },
+                    "og_url": {
+                        "nullable": true
+                    },
+                    "og_type": {
+                        "nullable": true
+                    },
+                    "count_errors": {
+                        "nullable": true
+                    },
+                    "count_warnings": {
+                        "nullable": true
+                    },
+                    "count_problems": {
+                        "nullable": true
+                    },
+                    "broken": {
+                        "nullable": true
+                    },
+                    "ttfb": {
+                        "nullable": true
+                    },
+                    "compression": {
+                        "nullable": true
+                    },
+                    "cacheable": {
+                        "nullable": true
+                    },
+                    "cache_type": {
+                        "nullable": true
+                    },
+                    "cache_time": {
+                        "nullable": true
+                    },
+                    "cache_validator": {
+                        "nullable": true
+                    },
+                    "search": {
+                        "nullable": true
+                    },
+                    "snippet_search": {
+                        "nullable": true
+                    },
+                    "title_dbl": {
+                        "nullable": true
+                    },
+                    "description_dbl": {
+                        "nullable": true
+                    },
+                    "lcp": {
+                        "nullable": true
+                    },
+                    "fid": {
+                        "nullable": true
+                    },
+                    "inp": {
+                        "nullable": true
+                    },
+                    "cls": {
+                        "nullable": true
+                    },
+                    "fcp": {
+                        "nullable": true
+                    },
+                    "si": {
+                        "nullable": true
+                    },
+                    "tti": {
+                        "nullable": true
+                    },
+                    "tbt": {
+                        "nullable": true
+                    },
+                    "cwv_performance": {
+                        "nullable": true
+                    },
+                    "backlinks_inner_count": {
+                        "nullable": true
+                    },
+                    "text_length": {
+                        "nullable": true
+                    },
+                    "check_http_code_200": {
+                        "nullable": true
+                    },
+                    "check_redirects_not_exists": {
+                        "nullable": true
+                    },
+                    "check_redirects_many_not_exists": {
+                        "nullable": true
+                    },
+                    "check_ttfb_max": {
+                        "nullable": true
+                    },
+                    "check_cacheable": {
+                        "nullable": true
+                    },
+                    "check_robots_txt_allowed": {
+                        "nullable": true
+                    },
+                    "check_sitemap_xml_exists": {
+                        "nullable": true
+                    },
+                    "check_sitemap_xml_exists_with_canonical": {
+                        "nullable": true
+                    },
+                    "check_sitemap_included_none_blocked": {
+                        "nullable": true
+                    },
+                    "check_noindex_off": {
+                        "nullable": true
+                    },
+                    "check_nofollow_off": {
+                        "nullable": true
+                    },
+                    "check_title_exists": {
+                        "nullable": true
+                    },
+                    "check_title_length_max": {
+                        "nullable": true
+                    },
+                    "check_title_is_unique": {
+                        "nullable": true
+                    },
+                    "check_description_exists": {
+                        "nullable": true
+                    },
+                    "check_description_is_unique": {
+                        "nullable": true
+                    },
+                    "check_description_length_min": {
+                        "nullable": true
+                    },
+                    "check_description_length_max": {
+                        "nullable": true
+                    },
+                    "check_h1_exists": {
+                        "nullable": true
+                    },
+                    "check_html_lang_exists": {
+                        "nullable": true
+                    },
+                    "check_url_length": {
+                        "nullable": true
+                    },
+                    "check_canonical_exists": {
+                        "nullable": true
+                    },
+                    "check_alternate": {
+                        "nullable": true
+                    },
+                    "check_http_resources_count": {
+                        "nullable": true
+                    },
+                    "check_links_exists": {
+                        "nullable": true
+                    },
+                    "check_refresh_not_exists": {
+                        "nullable": true
+                    },
+                    "check_compression_exists": {
+                        "nullable": true
+                    },
+                    "check_schema_exists": {
+                        "nullable": true
+                    },
+                    "check_og_title_exists": {
+                        "nullable": true
+                    },
+                    "check_og_description_exists": {
+                        "nullable": true
+                    },
+                    "check_og_image_exists": {
+                        "nullable": true
+                    },
+                    "check_og_url_exists": {
+                        "nullable": true
+                    },
+                    "check_og_url_canonical": {
+                        "nullable": true
+                    },
+                    "check_lcp_max": {
+                        "nullable": true
+                    },
+                    "check_fid_max": {
+                        "nullable": true
+                    },
+                    "check_inp_max": {
+                        "nullable": true
+                    },
+                    "check_cls_max": {
+                        "nullable": true
+                    },
+                    "check_fcp_max": {
+                        "nullable": true
+                    },
+                    "check_si_max": {
+                        "nullable": true
+                    },
+                    "check_tbt_max": {
+                        "nullable": true
+                    }
+                }
+            }
+        }
+    }
+}

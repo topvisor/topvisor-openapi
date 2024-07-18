@@ -1,0 +1,131 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Controller_2.Objects.Page.Article",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Controller_2.Objects.Page.Article": {
+                "type": "object",
+                "properties": {
+                    "type": {
+                        "default": "module",
+                        "type": "string"
+                    },
+                    "duration": {
+                        "nullable": true,
+                        "type": "string"
+                    },
+                    "word_count": {
+                        "nullable": true,
+                        "type": "string"
+                    },
+                    "htmlRaw": {
+                        "type": "string"
+                    },
+                    "url": {
+                        "type": "string"
+                    },
+                    "parent_url": {
+                        "type": "string"
+                    },
+                    "publish_time": {
+                        "nullable": true,
+                        "type": "string"
+                    },
+                    "h1": {
+                        "type": "string"
+                    },
+                    "description": {
+                        "nullable": true,
+                        "type": "string"
+                    },
+                    "menu_name": {
+                        "nullable": true,
+                        "type": "string"
+                    },
+                    "intro": {
+                        "nullable": true,
+                        "type": "string"
+                    },
+                    "html": {
+                        "type": "string"
+                    },
+                    "image": {
+                        "type": "string"
+                    },
+                    "tags": {
+                        "type": "array",
+                        "items": {
+                            "oneOf": [
+                                {
+                                    "type": "string"
+                                },
+                                {
+                                    "type": "number"
+                                }
+                            ]
+                        }
+                    },
+                    "count_views": {
+                        "type": "integer"
+                    },
+                    "count_unique_views": {
+                        "nullable": true,
+                        "type": "integer"
+                    },
+                    "count_likes": {
+                        "type": "integer"
+                    },
+                    "count_comments": {
+                        "nullable": true,
+                        "type": "integer"
+                    },
+                    "theme": {
+                        "type": "string"
+                    },
+                    "noindex": {
+                        "type": "boolean"
+                    },
+                    "quiz_id": {
+                        "type": "string"
+                    },
+                    "state": {
+                        "default": "ACTIVE",
+                        "type": "string"
+                    },
+                    "rubric_name": {
+                        "type": "string"
+                    },
+                    "user_id": {
+                        "type": "integer"
+                    },
+                    "user_name": {
+                        "nullable": true,
+                        "type": "string"
+                    },
+                    "user_description": {
+                        "type": "string"
+                    },
+                    "user_avatar": {
+                        "type": "string"
+                    },
+                    "view": {
+                        "type": "integer"
+                    },
+                    "like": {
+                        "type": "integer"
+                    },
+                    "bookmark": {
+                        "type": "string"
+                    },
+                    "bookmark_author": {
+                        "type": "string"
+                    }
+                }
+            }
+        }
+    }
+}

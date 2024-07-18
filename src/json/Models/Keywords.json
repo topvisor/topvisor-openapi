@@ -1,0 +1,167 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Models.Keywords",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Models.Keywords": {
+                "properties": {
+                    "COUNT(*)": {
+                        "nullable": true
+                    },
+                    "LENGTH(name)": {
+                        "nullable": true
+                    },
+                    "tagsNames()": {
+                        "nullable": true
+                    },
+                    "id": {},
+                    "phrase_id": {
+                        "nullable": true
+                    },
+                    "project_id": {
+                        "nullable": true
+                    },
+                    "group_id": {
+                        "nullable": true
+                    },
+                    "tags": {
+                        "nullable": true
+                    },
+                    "target": {
+                        "nullable": true
+                    },
+                    "ord": {
+                        "nullable": true
+                    },
+                    "name": {
+                        "nullable": true
+                    },
+                    "group_name": {
+                        "nullable": true
+                    },
+                    "group_on": {
+                        "nullable": true
+                    },
+                    "group_ord": {
+                        "nullable": true
+                    },
+                    "group_folder_id": {
+                        "nullable": true
+                    },
+                    "group_folder_path": {
+                        "nullable": true
+                    },
+                    "group_folder_ord": {
+                        "nullable": true
+                    },
+                    "target_status": {
+                        "nullable": true,
+                        "example": {
+                            "need set qualifiers": [
+                                "region_index"
+                            ]
+                        }
+                    },
+                    "position": {
+                        "type": "integer",
+                        "nullable": true,
+                        "example": {
+                            "need set qualifiers": [
+                                "date",
+                                "project_id",
+                                "region_index"
+                            ]
+                        }
+                    },
+                    "relevant_url": {
+                        "type": "string",
+                        "nullable": true,
+                        "example": {
+                            "need set qualifiers": [
+                                "date",
+                                "project_id",
+                                "region_index"
+                            ]
+                        }
+                    },
+                    "snippet_title": {
+                        "type": "string",
+                        "nullable": true,
+                        "example": {
+                            "need set qualifiers": [
+                                "date",
+                                "project_id",
+                                "region_index"
+                            ]
+                        }
+                    },
+                    "snippet_body": {
+                        "type": "string",
+                        "nullable": true,
+                        "example": {
+                            "need set qualifiers": [
+                                "date",
+                                "project_id",
+                                "region_index"
+                            ]
+                        }
+                    },
+                    "snippet_ext": {
+                        "type": "string",
+                        "nullable": true,
+                        "example": {
+                            "need set qualifiers": [
+                                "date",
+                                "project_id",
+                                "region_index"
+                            ]
+                        }
+                    },
+                    "visitors": {
+                        "type": "integer",
+                        "nullable": true,
+                        "example": {
+                            "need set qualifiers": [
+                                "date",
+                                "project_id",
+                                "region_index"
+                            ]
+                        }
+                    },
+                    "positionStatus": {
+                        "nullable": true,
+                        "example": {
+                            "need set qualifiers": [
+                                "region_index"
+                            ]
+                        }
+                    },
+                    "volume": {
+                        "nullable": true,
+                        "example": {
+                            "need set qualifiers": [
+                                "region_key",
+                                "searcher_key",
+                                "type"
+                            ]
+                        }
+                    },
+                    "cost_forecast": {
+                        "nullable": true,
+                        "example": {
+                            "need set qualifiers": [
+                                "position",
+                                "region_key",
+                                "searcher_key"
+                            ]
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

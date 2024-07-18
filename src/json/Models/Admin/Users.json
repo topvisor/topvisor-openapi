@@ -1,0 +1,98 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Models.Admin.Users",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Models.Admin.Users": {
+                "properties": {
+                    "REQUISITES()": {
+                        "nullable": true
+                    },
+                    "ORG_NAME()": {
+                        "nullable": true
+                    },
+                    "id": {},
+                    "site": {
+                        "nullable": true
+                    },
+                    "currency": {
+                        "nullable": true
+                    },
+                    "name": {
+                        "nullable": true
+                    },
+                    "lang": {
+                        "nullable": true
+                    },
+                    "timezone": {
+                        "nullable": true
+                    },
+                    "dateformat": {
+                        "nullable": true
+                    },
+                    "date_reg": {
+                        "nullable": true
+                    },
+                    "page_reg": {
+                        "nullable": true
+                    },
+                    "has_EDF": {
+                        "nullable": true
+                    },
+                    "group": {
+                        "nullable": true
+                    },
+                    "phone": {
+                        "nullable": true
+                    },
+                    "email": {
+                        "nullable": true
+                    },
+                    "avatar": {
+                        "nullable": true
+                    },
+                    "deleted": {
+                        "nullable": true
+                    },
+                    "balance_all": {
+                        "nullable": true
+                    },
+                    "balance_bonus": {
+                        "nullable": true
+                    },
+                    "balance_plan": {
+                        "nullable": true
+                    },
+                    "plan_id": {
+                        "nullable": true
+                    },
+                    "status": {
+                        "nullable": true
+                    },
+                    "status_paid": {
+                        "nullable": true
+                    },
+                    "status_used": {
+                        "nullable": true
+                    },
+                    "sum_payments": {
+                        "nullable": true
+                    },
+                    "average_expenses_3": {
+                        "nullable": true
+                    },
+                    "plan_expire": {
+                        "nullable": true
+                    },
+                    "referrer_id": {
+                        "nullable": true
+                    }
+                }
+            }
+        }
+    }
+}
