@@ -5,5 +5,8 @@
 	"author": "Artemeey <artemeey2@gmail.com>",
 	"files": [
 		"src"
-	]
+	],
+	"dependencies": {
+		"topvisor-openapi": "github:topvisor/topvisor-openapi"
+	}
 }

@@ -6,11 +6,42 @@
 
 ## JSON
 
-Схемы представлены в JSON формате: [./src/json/](./src/json/).
+Схемы представлены в JSON формате: [./src/json/](./src/json).
 
 ## Typescript
 
-Схемы представлены в typescript формате: [./src/ts/](./src/ts/).
+Схемы представлены в typescript формате: [./src/ts/](./src/ts).
+
+## NPM
+
+Проект не имеет релизов, обновляется по мере изменений API.
+
+Установка: `npm install github:topvisor/topvisor-openapi`
+
+Обновление: `npm update topvisor-openapi`
+
+### Typescript
+
+После установки при написании кода typescript вы сможете использовать автоподсказки, описывающие API методы, их параметры и результаты.
+
+```typescript
+import type { paths } from 'topvisor-openapi/src/ts/Topvisor.ts';
+
+type ExtractServicesNamesFromPaths<T> = T extends `/${string}/${infer P}/${string}` ? P : never
+
+/**
+ * Имя сервиса
+ */
+type ServicesNames = ExtractServicesNamesFromPaths<Path>;
+
+/**
+ * Путь к вызову метрода
+ */
+type Path = keyof paths;
+
+const methodPath: Path = '/get/payments_2/'; // <-- В ходе написания кода вы будете получать подсказки
+const serviceName: ServicesNames = 'example_2';
+```
 
 ## Полезные ссылки
 
