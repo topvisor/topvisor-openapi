@@ -8,7 +8,7 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         /** Результат успешного API запроса */
-        Response: {
+        ResponseSuccess: {
             /**
              * Результат ответа API метода
              * @description Тип результата зависит от типа запроса и его настроек

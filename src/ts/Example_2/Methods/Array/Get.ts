@@ -7,10 +7,7 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /**
-         * Метод с примерами параметров типа Enum
-         * @description Возвращает ассоциативный результирующий массив, с данными, переданными в метод
-         */
+        /** Метод с примерами параметров типа Enum */
         "Example_2.Methods.Array.Get": {
             ints?: import('../../../TV/API/Types/IntArray.ts').components['schemas']['TV.API.Types.IntArray'];
             strings?: import('../../../TV/API/Types/StringArray.ts').components['schemas']['TV.API.Types.StringArray'];

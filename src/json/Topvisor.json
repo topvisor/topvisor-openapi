@@ -30,13 +30,15 @@
                                 "schema": {
                                     "allOf": [
                                         {
-                                            "$ref": "Response.json#/components/schemas/Response"
+                                            "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
                                         },
                                         {
                                             "type": "object",
                                             "properties": {
                                                 "result": {
-                                                    "type": "integer"
+                                                    "type": "integer",
+                                                    "title": "",
+                                                    "description": ""
                                                 },
                                                 "model": {}
                                             }
@@ -107,12 +109,15 @@
                                 "schema": {
                                     "allOf": [
                                         {
-                                            "$ref": "Response.json#/components/schemas/Response"
+                                            "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
                                         },
                                         {
                                             "type": "object",
                                             "properties": {
-                                                "result": {},
+                                                "result": {
+                                                    "title": "",
+                                                    "description": ""
+                                                },
                                                 "model": {}
                                             }
                                         }
@@ -149,7 +154,7 @@
                                 "schema": {
                                     "allOf": [
                                         {
-                                            "$ref": "Response.json#/components/schemas/Response"
+                                            "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
                                         },
                                         {
                                             "type": "object",
@@ -165,7 +170,9 @@
                                                                 "type": "number"
                                                             }
                                                         ]
-                                                    }
+                                                    },
+                                                    "title": "",
+                                                    "description": ""
                                                 },
                                                 "model": {
                                                     "$ref": "Models/Payments.json#/components/schemas/Models.Payments"
@@ -209,13 +216,15 @@
                                 "schema": {
                                     "allOf": [
                                         {
-                                            "$ref": "Response.json#/components/schemas/Response"
+                                            "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
                                         },
                                         {
                                             "type": "object",
                                             "properties": {
                                                 "result": {
-                                                    "type": "string"
+                                                    "type": "string",
+                                                    "title": "",
+                                                    "description": ""
                                                 },
                                                 "model": {}
                                             }
@@ -254,12 +263,15 @@
                                 "schema": {
                                     "allOf": [
                                         {
-                                            "$ref": "Response.json#/components/schemas/Response"
+                                            "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
                                         },
                                         {
                                             "type": "object",
                                             "properties": {
-                                                "result": {},
+                                                "result": {
+                                                    "title": "",
+                                                    "description": ""
+                                                },
                                                 "model": {}
                                             }
                                         }
@@ -296,13 +308,15 @@
                                 "schema": {
                                     "allOf": [
                                         {
-                                            "$ref": "Response.json#/components/schemas/Response"
+                                            "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
                                         },
                                         {
                                             "type": "object",
                                             "properties": {
                                                 "result": {
-                                                    "$ref": "Controller_2/Objects/Page.json#/components/schemas/Controller_2.Objects.Page"
+                                                    "$ref": "Controller_2/Objects/Page.json#/components/schemas/Controller_2.Objects.Page",
+                                                    "title": "",
+                                                    "description": ""
                                                 },
                                                 "model": {}
                                             }
@@ -322,7 +336,6 @@
                     "Example_2"
                 ],
                 "summary": "Метод с примерами параметров типа Enum",
-                "description": "Возвращает ассоциативный результирующий массив, с данными, переданными в метод",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -341,7 +354,7 @@
                                 "schema": {
                                     "allOf": [
                                         {
-                                            "$ref": "Response.json#/components/schemas/Response"
+                                            "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
                                         },
                                         {
                                             "type": "object",
@@ -357,7 +370,9 @@
                                                                 "type": "number"
                                                             }
                                                         ]
-                                                    }
+                                                    },
+                                                    "title": "Возвращает ассоциативный результирующий массив, с данными, переданными в метод",
+                                                    "description": ""
                                                 },
                                                 "model": {}
                                             }
@@ -398,13 +413,15 @@
                                 "schema": {
                                     "allOf": [
                                         {
-                                            "$ref": "Response.json#/components/schemas/Response"
+                                            "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
                                         },
                                         {
                                             "type": "object",
                                             "properties": {
                                                 "result": {
-                                                    "type": "string"
+                                                    "type": "string",
+                                                    "title": "",
+                                                    "description": ""
                                                 },
                                                 "model": {}
                                             }
@@ -424,7 +441,6 @@
                     "Example_2"
                 ],
                 "summary": "Метод с примерами параметров типа Enum",
-                "description": "Возвращает ассоциативный результирующий массив, с данными, переданными в метод",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -443,7 +459,7 @@
                                 "schema": {
                                     "allOf": [
                                         {
-                                            "$ref": "Response.json#/components/schemas/Response"
+                                            "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
                                         },
                                         {
                                             "type": "object",
@@ -459,7 +475,9 @@
                                                                 "type": "number"
                                                             }
                                                         ]
-                                                    }
+                                                    },
+                                                    "title": "Ассоциативный результирующий массив, с данными, переданными в метод",
+                                                    "description": ""
                                                 },
                                                 "model": {}
                                             }
@@ -500,7 +518,7 @@
                                 "schema": {
                                     "allOf": [
                                         {
-                                            "$ref": "Response.json#/components/schemas/Response"
+                                            "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
                                         },
                                         {
                                             "type": "object",
@@ -516,7 +534,9 @@
                                                                 "type": "number"
                                                             }
                                                         ]
-                                                    }
+                                                    },
+                                                    "title": "",
+                                                    "description": ""
                                                 },
                                                 "model": {
                                                     "$ref": "Models/Projects.json#/components/schemas/Models.Projects"
@@ -592,7 +612,7 @@
                                 "schema": {
                                     "allOf": [
                                         {
-                                            "$ref": "Response.json#/components/schemas/Response"
+                                            "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
                                         },
                                         {
                                             "type": "object",
@@ -608,7 +628,9 @@
                                                                 "type": "number"
                                                             }
                                                         ]
-                                                    }
+                                                    },
+                                                    "title": "",
+                                                    "description": ""
                                                 },
                                                 "model": {}
                                             }
@@ -646,13 +668,15 @@
                                 "schema": {
                                     "allOf": [
                                         {
-                                            "$ref": "Response.json#/components/schemas/Response"
+                                            "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
                                         },
                                         {
                                             "type": "object",
                                             "properties": {
                                                 "result": {
-                                                    "type": "integer"
+                                                    "type": "integer",
+                                                    "title": "",
+                                                    "description": ""
                                                 },
                                                 "model": {}
                                             }
@@ -690,13 +714,15 @@
                                 "schema": {
                                     "allOf": [
                                         {
-                                            "$ref": "Response.json#/components/schemas/Response"
+                                            "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
                                         },
                                         {
                                             "type": "object",
                                             "properties": {
                                                 "result": {
-                                                    "type": "integer"
+                                                    "type": "integer",
+                                                    "title": "",
+                                                    "description": ""
                                                 },
                                                 "model": {}
                                             }
@@ -734,13 +760,15 @@
                                 "schema": {
                                     "allOf": [
                                         {
-                                            "$ref": "Response.json#/components/schemas/Response"
+                                            "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
                                         },
                                         {
                                             "type": "object",
                                             "properties": {
                                                 "result": {
-                                                    "type": "integer"
+                                                    "type": "integer",
+                                                    "title": "",
+                                                    "description": ""
                                                 },
                                                 "model": {}
                                             }
@@ -778,7 +806,7 @@
                                 "schema": {
                                     "allOf": [
                                         {
-                                            "$ref": "Response.json#/components/schemas/Response"
+                                            "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
                                         },
                                         {
                                             "type": "object",
@@ -794,7 +822,9 @@
                                                                 "type": "number"
                                                             }
                                                         ]
-                                                    }
+                                                    },
+                                                    "title": "",
+                                                    "description": ""
                                                 },
                                                 "model": {}
                                             }
