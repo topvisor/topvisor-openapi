@@ -3,7 +3,8 @@
  * Do not make direct changes to the file.
  */
 
-export interface paths {
+export interface paths {  
+    /** Фиксация события */
     "/add/analytics_2/": {
         parameters: {
             query?: never;
@@ -13,14 +14,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
-        /** Фиксация события */
         post: operations["AddAnalytics2"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };
+    };  
+    /** Получение заархивированного приложения */
     "/get/app_2/": {
         parameters: {
             query?: never;
@@ -30,14 +31,23 @@ export interface paths {
         };
         get?: never;
         put?: never;
-        /** Получение заархивированного приложения */
         post: operations["GetApp2"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };
+    };  
+    /**
+     * Создать платежку и перейти к оплате
+     * @description Возвратит id платежа, если указан параметр $return_id = true
+     *
+     *     Произведет редирект, если настроена форма оплаты на стороне платежной системы
+     *
+     *     Возвратит информацию о платеже, если ожидается вывод формы оплаты на сайте
+     *
+     *     При ошибке произведет редирект на страницу с инофрмацией об ошибке
+     */
     "/add/payments_2/": {
         parameters: {
             query?: never;
@@ -47,23 +57,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
-        /**
-         * Создать платежку и перейти к оплате
-         * @description Возвратит id платежа, если указан параметр $return_id = true
-         *
-         *     Произведет редирект, если настроена форма оплаты на стороне платежной системы
-         *
-         *     Возвратит информацию о платеже, если ожидается вывод формы оплаты на сайте
-         *
-         *     При ошибке произведет редирект на страницу с инофрмацией об ошибке
-         */
         post: operations["AddPayments2"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };
+    };  
+    /** Получить список платежей */
     "/get/payments_2/": {
         parameters: {
             query?: never;
@@ -73,14 +74,17 @@ export interface paths {
         };
         get?: never;
         put?: never;
-        /** Получить список платежей */
         post: operations["GetPayments2"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };
+    };  
+    /**
+     * Генерирует QR код по тексту
+     * @description Возвращает изображение в формате data:image/png;base64
+     */
     "/get/qr_2/": {
         parameters: {
             query?: never;
@@ -90,17 +94,20 @@ export interface paths {
         };
         get?: never;
         put?: never;
-        /**
-         * Генерирует QR код по тексту
-         * @description Возвращает изображение в формате data:image/png;base64
-         */
         post: operations["GetQr2"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };
+    };  
+    /**
+     * Получение данных подтверждения
+     * @description Возвращает результат подтверждения в виде
+     *     массива с сообщением (acceptAction),
+     *     логической переменной (acceptEmail),
+     *     null при неправильно введенном типе
+     */
     "/get/app_2/actions/": {
         parameters: {
             query?: never;
@@ -110,20 +117,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
-        /**
-         * Получение данных подтверждения
-         * @description Возвращает результат подтверждения в виде
-         *     массива с сообщением (acceptAction),
-         *     логической переменной (acceptEmail),
-         *     null при неправильно введенном типе
-         */
         post: operations["GetApp2Actions"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };
+    };  
+    /** Получить текст политики конфиденциальности */
     "/get/app_2/privacy/": {
         parameters: {
             query?: never;
@@ -133,14 +134,17 @@ export interface paths {
         };
         get?: never;
         put?: never;
-        /** Получить текст политики конфиденциальности */
         post: operations["GetApp2Privacy"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };
+    };  
+    /**
+     * Метод с примерами параметров типа Enum
+     * @description Возвращает ассоциативный результирующий массив, с данными, переданными в метод
+     */
     "/get/example_2/array/": {
         parameters: {
             query?: never;
@@ -150,17 +154,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
-        /**
-         * Метод с примерами параметров типа Enum
-         * @description Возвращает ассоциативный результирующий массив, с данными, переданными в метод
-         */
         post: operations["GetExample2Array"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };
+    };  
+    /** Получение текущего времени */
     "/get/example_2/custom/": {
         parameters: {
             query?: never;
@@ -170,14 +171,17 @@ export interface paths {
         };
         get?: never;
         put?: never;
-        /** Получение текущего времени */
         post: operations["GetExample2Custom"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };
+    };  
+    /**
+     * Метод с примерами параметров типа Enum
+     * @description Возвращает ассоциативный результирующий массив, с данными, переданными в метод
+     */
     "/get/example_2/enum/": {
         parameters: {
             query?: never;
@@ -187,17 +191,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
-        /**
-         * Метод с примерами параметров типа Enum
-         * @description Возвращает ассоциативный результирующий массив, с данными, переданными в метод
-         */
         post: operations["GetExample2Enum"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };
+    };  
+    /** Получение списка проектов */
     "/get/example_2/projects/": {
         parameters: {
             query?: never;
@@ -207,14 +208,19 @@ export interface paths {
         };
         get?: never;
         put?: never;
-        /** Получение списка проектов */
         post: operations["GetExample2Projects"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };
+    };  
+    /**
+     * Создать Open API схемы и скачать в zip
+     * @description В результате вернет zip файл в потоке вывода
+     *
+     *     @see https://editor.swagger.io/ Редактор Open API
+     */
     "/get/openapi_2/download/": {
         parameters: {
             query?: never;
@@ -224,19 +230,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
-        /**
-         * Создать Open API схемы и скачать в zip
-         * @description В результате вернет zip файл в потоке вывода
-         *
-         *     @see https://editor.swagger.io/ Редактор Open API
-         */
         post: operations["GetOpenapi2Download"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };
+    };  
+    /** Компании пользователя, через которых, были совершены платежи */
     "/get/payments_2/companies/": {
         parameters: {
             query?: never;
@@ -246,14 +247,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
-        /** Компании пользователя, через которых, были совершены платежи */
         post: operations["GetPayments2Companies"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };
+    };  
+    /** Подписать контракт (только для админов) */
     "/edit/payments_2/contractsign/": {
         parameters: {
             query?: never;
@@ -263,14 +264,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
-        /** Подписать контракт (только для админов) */
         post: operations["EditPayments2Contractsign"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };
+    };  
+    /** Изменить платежные реквизиты тарифа */
     "/edit/payments_2/nextrequisitesid/": {
         parameters: {
             query?: never;
@@ -280,14 +281,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
-        /** Изменить платежные реквизиты тарифа */
         post: operations["EditPayments2Nextrequisitesid"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };
+    };  
+    /** Отправить заявка на подключение Тинькофф Бизнес */
     "/add/payments_2/urtinkoffcreateapplication/": {
         parameters: {
             query?: never;
@@ -297,14 +298,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
-        /** Отправить заявка на подключение Тинькофф Бизнес */
         post: operations["AddPayments2Urtinkoffcreateapplication"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };
+    };  
+    /** Валидация домена для подтверждения оплаты Apple Pay (system = card_ap) */
     "/get/payments_2/validatemerchantcardap/": {
         parameters: {
             query?: never;
@@ -314,7 +315,6 @@ export interface paths {
         };
         get?: never;
         put?: never;
-        /** Валидация домена для подтверждения оплаты Apple Pay (system = card_ap) */
         post: operations["GetPayments2Validatemerchantcardap"];
         delete?: never;
         options?: never;
