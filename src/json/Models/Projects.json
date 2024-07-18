@@ -1,0 +1,209 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Models.Projects",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Models.Projects": {
+                "properties": {
+                    "COUNT(*)": {
+                        "nullable": true
+                    },
+                    "IS_YOUTUBE()": {
+                        "nullable": true
+                    },
+                    "IS_APP_STORE()": {
+                        "nullable": true
+                    },
+                    "IS_GOOGLE_PLAY()": {
+                        "nullable": true
+                    },
+                    "GEN_SEARCH_STRING()": {
+                        "nullable": true
+                    },
+                    "id": {},
+                    "user_id": {
+                        "nullable": true
+                    },
+                    "name": {
+                        "type": "string",
+                        "nullable": true
+                    },
+                    "url": {
+                        "nullable": true
+                    },
+                    "date": {
+                        "nullable": true
+                    },
+                    "last_view": {
+                        "nullable": true
+                    },
+                    "folder_id": {
+                        "type": "integer",
+                        "nullable": true
+                    },
+                    "folder_name": {
+                        "nullable": true
+                    },
+                    "site": {
+                        "nullable": true
+                    },
+                    "update": {
+                        "nullable": true
+                    },
+                    "status_positions": {
+                        "type": "string",
+                        "nullable": true
+                    },
+                    "positions_time": {
+                        "nullable": true
+                    },
+                    "positions_date": {
+                        "nullable": true
+                    },
+                    "positions_percent": {
+                        "nullable": true
+                    },
+                    "status_positions_time": {
+                        "nullable": true
+                    },
+                    "status_positions_date": {
+                        "nullable": true
+                    },
+                    "status_positions_percent": {
+                        "nullable": true
+                    },
+                    "status_positions_by_keywords": {
+                        "nullable": true
+                    },
+                    "status_volumes": {
+                        "nullable": true
+                    },
+                    "status_claster": {
+                        "nullable": true
+                    },
+                    "status_audit": {
+                        "nullable": true
+                    },
+                    "status_audit_time": {
+                        "nullable": true
+                    },
+                    "status_audit_percent": {
+                        "nullable": true
+                    },
+                    "status_watcher": {
+                        "nullable": true
+                    },
+                    "status_watcher_percent": {
+                        "nullable": true
+                    },
+                    "status_indexing": {
+                        "nullable": true
+                    },
+                    "status_indexing_percent": {
+                        "nullable": true
+                    },
+                    "status_sitemap": {
+                        "nullable": true
+                    },
+                    "status_sitemap_percent": {
+                        "nullable": true
+                    },
+                    "status_urlsUpdater": {
+                        "nullable": true
+                    },
+                    "on": {
+                        "nullable": true
+                    },
+                    "subdomains": {
+                        "nullable": true
+                    },
+                    "filter": {
+                        "nullable": true
+                    },
+                    "auto_correct": {
+                        "nullable": true
+                    },
+                    "with_snippets": {
+                        "nullable": true
+                    },
+                    "do_snapshots": {
+                        "nullable": true
+                    },
+                    "do_snapshots_with_snippets": {
+                        "nullable": true
+                    },
+                    "report_last_time": {
+                        "nullable": true
+                    },
+                    "common_traffic": {
+                        "nullable": true
+                    },
+                    "guest_link_right": {
+                        "nullable": true
+                    },
+                    "count_keywords": {
+                        "nullable": true
+                    },
+                    "right": {
+                        "nullable": true
+                    },
+                    "ord": {
+                        "nullable": true
+                    },
+                    "favorite": {
+                        "nullable": true
+                    },
+                    "tags": {
+                        "nullable": true
+                    },
+                    "user_email": {
+                        "nullable": true
+                    },
+                    "user_currency": {
+                        "nullable": true
+                    },
+                    "broker_count_campaigns": {
+                        "nullable": true
+                    },
+                    "broker_count_banners": {
+                        "nullable": true
+                    },
+                    "broker_count_banners_off": {
+                        "nullable": true
+                    },
+                    "domain_expire": {
+                        "nullable": true
+                    },
+                    "ssl_expire": {
+                        "nullable": true
+                    },
+                    "competitor": {
+                        "nullable": true
+                    },
+                    "competitor_ord": {
+                        "nullable": true
+                    },
+                    "pos_summary_up": {
+                        "nullable": true
+                    },
+                    "pos_summary_stay": {
+                        "nullable": true
+                    },
+                    "pos_summary_down": {
+                        "nullable": true
+                    },
+                    "pos_summary_avg": {
+                        "nullable": true
+                    },
+                    "pos_summary_visibility": {
+                        "nullable": true
+                    }
+                }
+            }
+        }
+    }
+}

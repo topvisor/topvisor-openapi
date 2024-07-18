@@ -1,0 +1,20 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Example_2.Types.EnumNumberArray",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Example_2.Types.EnumNumberArray": {
+                "type": "array",
+                "items": {
+                    "$ref": "../../Example_2/Types/Number.json#/components/schemas/Example_2.Types.Number"
+                },
+                "title": "Тип: enum",
+                "description": "Принимает: 0|1|false|true\n\nХранит: false|true"
+            }
+        }
+    }
+}

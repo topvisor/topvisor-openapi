@@ -1,0 +1,53 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Models.Admin.Invoices",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Models.Admin.Invoices": {
+                "properties": {
+                    "id": {},
+                    "time": {
+                        "nullable": true
+                    },
+                    "external_name": {
+                        "nullable": true
+                    },
+                    "external_id": {
+                        "nullable": true
+                    },
+                    "document_date": {
+                        "nullable": true
+                    },
+                    "document_number": {
+                        "nullable": true
+                    },
+                    "org_name": {
+                        "nullable": true
+                    },
+                    "inn": {
+                        "nullable": true
+                    },
+                    "sum": {
+                        "nullable": true
+                    },
+                    "file_name": {
+                        "nullable": true
+                    },
+                    "file_data": {
+                        "nullable": true
+                    },
+                    "user_id": {
+                        "nullable": true
+                    },
+                    "status": {
+                        "nullable": true
+                    }
+                }
+            }
+        }
+    }
+}
