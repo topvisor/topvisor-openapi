@@ -1,0 +1,22 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Payments_2.Types.Country",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Payments_2.Types.Country": {
+                "type": "string",
+                "enum": [
+                    "RU",
+                    "UA",
+                    "BY",
+                    "KZ",
+                    "other"
+                ]
+            }
+        }
+    }
+}

@@ -1,0 +1,157 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Models.Audit.Js",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Models.Audit.Js": {
+                "properties": {
+                    "COUNT(*)": {
+                        "nullable": true
+                    },
+                    "HTTP_CODES_HUNDREDS()": {
+                        "type": "array",
+                        "items": {
+                            "oneOf": [
+                                {
+                                    "type": "string"
+                                },
+                                {
+                                    "type": "number"
+                                }
+                            ]
+                        },
+                        "nullable": true
+                    },
+                    "check_id": {
+                        "nullable": true
+                    },
+                    "url_ids": {
+                        "nullable": true
+                    },
+                    "url_id": {
+                        "nullable": true
+                    },
+                    "url": {
+                        "nullable": true
+                    },
+                    "count": {
+                        "nullable": true
+                    },
+                    "time_parse": {
+                        "nullable": true
+                    },
+                    "http_codes": {
+                        "type": "array",
+                        "items": {
+                            "oneOf": [
+                                {
+                                    "type": "string"
+                                },
+                                {
+                                    "type": "number"
+                                }
+                            ]
+                        },
+                        "nullable": true
+                    },
+                    "last_http_code": {
+                        "nullable": true
+                    },
+                    "redirects": {
+                        "type": "array",
+                        "items": {
+                            "oneOf": [
+                                {
+                                    "type": "string"
+                                },
+                                {
+                                    "type": "number"
+                                }
+                            ]
+                        },
+                        "nullable": true
+                    },
+                    "ttfb": {
+                        "nullable": true
+                    },
+                    "count_pages": {
+                        "nullable": true
+                    },
+                    "compression": {
+                        "nullable": true
+                    },
+                    "cacheable": {
+                        "nullable": true
+                    },
+                    "cache_type": {
+                        "nullable": true
+                    },
+                    "cache_time": {
+                        "nullable": true
+                    },
+                    "cache_validator": {
+                        "nullable": true
+                    },
+                    "robots_txt_mention": {
+                        "nullable": true
+                    },
+                    "robots_txt_blocked": {
+                        "nullable": true
+                    },
+                    "minified": {
+                        "nullable": true
+                    },
+                    "broken": {
+                        "nullable": true
+                    },
+                    "notice": {
+                        "nullable": true
+                    },
+                    "error": {
+                        "nullable": true
+                    },
+                    "warning_all": {
+                        "nullable": true
+                    },
+                    "render_blocking": {
+                        "nullable": true
+                    },
+                    "check_http_code_200": {
+                        "nullable": true
+                    },
+                    "check_redirects_not_exists": {
+                        "nullable": true
+                    },
+                    "check_redirects_many_not_exists": {
+                        "nullable": true
+                    },
+                    "check_ttfb_max": {
+                        "nullable": true
+                    },
+                    "check_compression_exists": {
+                        "nullable": true
+                    },
+                    "check_cacheable": {
+                        "nullable": true
+                    },
+                    "check_is_minified": {
+                        "nullable": true
+                    },
+                    "check_no_render_blocking": {
+                        "nullable": true
+                    },
+                    "count_errors": {
+                        "nullable": true
+                    },
+                    "count_warnings": {
+                        "nullable": true
+                    }
+                }
+            }
+        }
+    }
+}

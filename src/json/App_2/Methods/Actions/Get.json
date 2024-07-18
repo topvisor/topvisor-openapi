@@ -1,0 +1,33 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/App_2.Methods.Actions.Get",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "App_2.Methods.Actions.Get": {
+                "type": "object",
+                "properties": {
+                    "email": {
+                        "title": "Email пользователя",
+                        "type": "string"
+                    },
+                    "code": {
+                        "title": "Код для генерации ссылки подтверждения",
+                        "type": "string"
+                    },
+                    "type_action": {
+                        "title": "Тип подтверждения",
+                        "default": "acceptAction",
+                        "nullable": true,
+                        "type": "string"
+                    }
+                },
+                "title": "Получение данных подтверждения",
+                "description": "Возвращает результат подтверждения в виде\nмассива с сообщением (acceptAction),\nлогической переменной (acceptEmail),\nnull при неправильно введенном типе"
+            }
+        }
+    }
+}

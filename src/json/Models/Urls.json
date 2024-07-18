@@ -1,0 +1,212 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Models.Urls",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Models.Urls": {
+                "properties": {
+                    "COUNT(*)": {
+                        "nullable": true
+                    },
+                    "WATCHER_HTTP_CODES_HUNDREDS()": {
+                        "type": "array",
+                        "items": {
+                            "oneOf": [
+                                {
+                                    "type": "string"
+                                },
+                                {
+                                    "type": "number"
+                                }
+                            ]
+                        },
+                        "nullable": true,
+                        "example": {
+                            "need set qualifiers": [
+                                "check_id"
+                            ]
+                        }
+                    },
+                    "id": {
+                        "type": "integer"
+                    },
+                    "url": {
+                        "type": "string",
+                        "nullable": true
+                    },
+                    "project_id": {
+                        "type": "integer",
+                        "nullable": true
+                    },
+                    "sitemap": {
+                        "nullable": true
+                    },
+                    "audit": {
+                        "nullable": true
+                    },
+                    "watcher": {
+                        "nullable": true
+                    },
+                    "indexing": {
+                        "nullable": true
+                    },
+                    "tags": {
+                        "nullable": true
+                    },
+                    "sitemap_lastmod": {
+                        "nullable": true
+                    },
+                    "sitemap_changefreq": {
+                        "nullable": true
+                    },
+                    "sitemap_priority": {
+                        "nullable": true
+                    },
+                    "indexing_data": {
+                        "type": "integer",
+                        "nullable": true,
+                        "example": {
+                            "need set qualifiers": [
+                                "date",
+                                "searcher_key"
+                            ]
+                        }
+                    },
+                    "indexing_alert": {
+                        "type": "integer",
+                        "nullable": true,
+                        "example": {
+                            "need set qualifiers": [
+                                "date",
+                                "searcher_key"
+                            ]
+                        }
+                    },
+                    "watcher_http_codes": {
+                        "type": "array",
+                        "items": {
+                            "oneOf": [
+                                {
+                                    "type": "string"
+                                },
+                                {
+                                    "type": "number"
+                                }
+                            ]
+                        },
+                        "nullable": true,
+                        "example": {
+                            "need set qualifiers": [
+                                "check_id"
+                            ]
+                        }
+                    },
+                    "watcher_http_codes_changed": {
+                        "type": "integer",
+                        "nullable": true,
+                        "example": {
+                            "need set qualifiers": [
+                                "check_id"
+                            ]
+                        }
+                    },
+                    "watcher_redirects": {
+                        "type": "array",
+                        "items": {
+                            "oneOf": [
+                                {
+                                    "type": "string"
+                                },
+                                {
+                                    "type": "number"
+                                }
+                            ]
+                        },
+                        "nullable": true,
+                        "example": {
+                            "need set qualifiers": [
+                                "check_id"
+                            ]
+                        }
+                    },
+                    "watcher_h1": {
+                        "type": "string",
+                        "nullable": true,
+                        "example": {
+                            "need set qualifiers": [
+                                "check_id"
+                            ]
+                        }
+                    },
+                    "watcher_h1_changed": {
+                        "type": "integer",
+                        "nullable": true,
+                        "example": {
+                            "need set qualifiers": [
+                                "check_id"
+                            ]
+                        }
+                    },
+                    "watcher_title": {
+                        "type": "string",
+                        "nullable": true,
+                        "example": {
+                            "need set qualifiers": [
+                                "check_id"
+                            ]
+                        }
+                    },
+                    "watcher_title_changed": {
+                        "type": "integer",
+                        "nullable": true,
+                        "example": {
+                            "need set qualifiers": [
+                                "check_id"
+                            ]
+                        }
+                    },
+                    "watcher_description": {
+                        "type": "string",
+                        "nullable": true,
+                        "example": {
+                            "need set qualifiers": [
+                                "check_id"
+                            ]
+                        }
+                    },
+                    "watcher_description_changed": {
+                        "type": "integer",
+                        "nullable": true,
+                        "example": {
+                            "need set qualifiers": [
+                                "check_id"
+                            ]
+                        }
+                    },
+                    "watcher_content": {
+                        "type": "string",
+                        "nullable": true,
+                        "example": {
+                            "need set qualifiers": [
+                                "check_id"
+                            ]
+                        }
+                    },
+                    "watcher_content_changed": {
+                        "type": "integer",
+                        "nullable": true,
+                        "example": {
+                            "need set qualifiers": [
+                                "check_id"
+                            ]
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

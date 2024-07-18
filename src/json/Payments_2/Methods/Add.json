@@ -1,0 +1,85 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Payments_2.Methods.Add",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Payments_2.Methods.Add": {
+                "type": "object",
+                "properties": {
+                    "system": {
+                        "$ref": "../../Payments_2/Types/System.json#/components/schemas/Payments_2.Types.System"
+                    },
+                    "sum": {
+                        "title": "Сумма платежа",
+                        "type": "number"
+                    },
+                    "country": {
+                        "$ref": "../../Payments_2/Types/Country.json#/components/schemas/Payments_2.Types.Country"
+                    },
+                    "requisites_id": {
+                        "title": "Номер договора/оферты для платежа",
+                        "type": "string"
+                    },
+                    "tariff_id": {
+                        "title": "ID тарифа (если указан, сумма будет переопределена)",
+                        "type": "integer"
+                    },
+                    "tariff_count_month": {
+                        "title": "Число предоплаченных месяцев по тарифу",
+                        "description": "Примеры:\n- при оплате тарифа на 1 месяц должен быть равен 1\n- при оплате тарифа на 2 месяца должен быть равен 2",
+                        "type": "integer"
+                    },
+                    "comment": {
+                        "title": "Комментарий",
+                        "type": "string"
+                    },
+                    "items": {
+                        "title": "Комментарий",
+                        "type": "array",
+                        "items": {
+                            "oneOf": [
+                                {
+                                    "type": "string"
+                                },
+                                {
+                                    "type": "number"
+                                }
+                            ]
+                        }
+                    },
+                    "card_id": {
+                        "title": "ID карты в системе оплаты для привязки",
+                        "type": "string"
+                    },
+                    "payment_data": {
+                        "title": "Пробрасываемые данные в redirectToPay() для FinishAuthorize Tinkoff для Apple Pay и Google Pay",
+                        "type": "string"
+                    },
+                    "email": {
+                        "title": "Email (указывается, если у пользователя не привязан email)\nTODO: Добавить тип Email",
+                        "nullable": true,
+                        "type": "string"
+                    },
+                    "phone": {
+                        "title": "Телефон (указывается для определенных систем оплаты)",
+                        "type": "string"
+                    },
+                    "is_cancelable": {
+                        "title": "Флаг - отменяемый платеж, используется для сохранения данных банковской карты пользователя, сумма платежа вернется пользователю после отмены",
+                        "type": "boolean"
+                    },
+                    "return_id": {
+                        "title": "Возвратить id платежа, не выполняя redirectToPay()",
+                        "type": "boolean"
+                    }
+                },
+                "title": "Создать платежку и перейти к оплате",
+                "description": "Возвратит id платежа, если указан параметр $return_id = true\n\nПроизведет редирект, если настроена форма оплаты на стороне платежной системы\n\nВозвратит информацию о платеже, если ожидается вывод формы оплаты на сайте\n\nПри ошибке произведет редирект на страницу с инофрмацией об ошибке"
+            }
+        }
+    }
+}

@@ -1,0 +1,1039 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor",
+        "version": "2.0.0"
+    },
+    "paths": {
+        "/add/analytics_2/": {
+            "post": {
+                "operationId": "AddAnalytics2",
+                "tags": [
+                    "Analytics_2"
+                ],
+                "summary": "Фиксация события",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Analytics_2/Methods/Add.json#/components/schemas/Analytics_2.Methods.Add"
+                            }
+                        }
+                    },
+                    "required": false
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "allOf": [
+                                        {
+                                            "$ref": "Response.json#/components/schemas/Response"
+                                        },
+                                        {
+                                            "type": "object",
+                                            "properties": {
+                                                "result": {
+                                                    "type": "integer"
+                                                },
+                                                "model": {}
+                                            }
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/get/app_2/": {
+            "post": {
+                "operationId": "GetApp2",
+                "tags": [
+                    "App_2"
+                ],
+                "summary": "Получение заархивированного приложения",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "App_2/Methods/Get.json#/components/schemas/App_2.Methods.Get"
+                            }
+                        }
+                    },
+                    "required": false
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/octet-stream": {
+                                "schema": {
+                                    "type": "string",
+                                    "format": "binary"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/add/payments_2/": {
+            "post": {
+                "operationId": "AddPayments2",
+                "tags": [
+                    "Payments_2"
+                ],
+                "summary": "Создать платежку и перейти к оплате",
+                "description": "Возвратит id платежа, если указан параметр $return_id = true\n\nПроизведет редирект, если настроена форма оплаты на стороне платежной системы\n\nВозвратит информацию о платеже, если ожидается вывод формы оплаты на сайте\n\nПри ошибке произведет редирект на страницу с инофрмацией об ошибке",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Payments_2/Methods/Add.json#/components/schemas/Payments_2.Methods.Add"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "allOf": [
+                                        {
+                                            "$ref": "Response.json#/components/schemas/Response"
+                                        },
+                                        {
+                                            "type": "object",
+                                            "properties": {
+                                                "result": {},
+                                                "model": {}
+                                            }
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/get/payments_2/": {
+            "post": {
+                "operationId": "GetPayments2",
+                "tags": [
+                    "Payments_2"
+                ],
+                "summary": "Получить список платежей",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Payments_2/Methods/Get.json#/components/schemas/Payments_2.Methods.Get"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "allOf": [
+                                        {
+                                            "$ref": "Response.json#/components/schemas/Response"
+                                        },
+                                        {
+                                            "type": "object",
+                                            "properties": {
+                                                "result": {
+                                                    "type": "array",
+                                                    "items": {
+                                                        "oneOf": [
+                                                            {
+                                                                "type": "string"
+                                                            },
+                                                            {
+                                                                "type": "number"
+                                                            }
+                                                        ]
+                                                    }
+                                                },
+                                                "model": {
+                                                    "$ref": "Models/Payments.json#/components/schemas/Models.Payments"
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "$ref": "Pagination.json#/components/schemas/Pagination"
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/get/qr_2/": {
+            "post": {
+                "operationId": "GetQr2",
+                "tags": [
+                    "Qr_2"
+                ],
+                "summary": "Генерирует QR код по тексту",
+                "description": "Возвращает изображение в формате data:image/png;base64",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Qr_2/Methods/Get.json#/components/schemas/Qr_2.Methods.Get"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "allOf": [
+                                        {
+                                            "$ref": "Response.json#/components/schemas/Response"
+                                        },
+                                        {
+                                            "type": "object",
+                                            "properties": {
+                                                "result": {
+                                                    "type": "string"
+                                                },
+                                                "model": {}
+                                            }
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/get/app_2/actions/": {
+            "post": {
+                "operationId": "GetApp2Actions",
+                "tags": [
+                    "App_2"
+                ],
+                "summary": "Получение данных подтверждения",
+                "description": "Возвращает результат подтверждения в виде\nмассива с сообщением (acceptAction),\nлогической переменной (acceptEmail),\nnull при неправильно введенном типе",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "App_2/Methods/Actions/Get.json#/components/schemas/App_2.Methods.Actions.Get"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "allOf": [
+                                        {
+                                            "$ref": "Response.json#/components/schemas/Response"
+                                        },
+                                        {
+                                            "type": "object",
+                                            "properties": {
+                                                "result": {},
+                                                "model": {}
+                                            }
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/get/app_2/privacy/": {
+            "post": {
+                "operationId": "GetApp2Privacy",
+                "tags": [
+                    "App_2"
+                ],
+                "summary": "Получить текст политики конфиденциальности",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "App_2/Methods/Privacy/Get.json#/components/schemas/App_2.Methods.Privacy.Get"
+                            }
+                        }
+                    },
+                    "required": false
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "allOf": [
+                                        {
+                                            "$ref": "Response.json#/components/schemas/Response"
+                                        },
+                                        {
+                                            "type": "object",
+                                            "properties": {
+                                                "result": {
+                                                    "$ref": "Controller_2/Objects/Page.json#/components/schemas/Controller_2.Objects.Page"
+                                                },
+                                                "model": {}
+                                            }
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/get/example_2/array/": {
+            "post": {
+                "operationId": "GetExample2Array",
+                "tags": [
+                    "Example_2"
+                ],
+                "summary": "Метод с примерами параметров типа Enum",
+                "description": "Возвращает ассоциативный результирующий массив, с данными, переданными в метод",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Example_2/Methods/Array/Get.json#/components/schemas/Example_2.Methods.Array.Get"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "allOf": [
+                                        {
+                                            "$ref": "Response.json#/components/schemas/Response"
+                                        },
+                                        {
+                                            "type": "object",
+                                            "properties": {
+                                                "result": {
+                                                    "type": "array",
+                                                    "items": {
+                                                        "oneOf": [
+                                                            {
+                                                                "type": "string"
+                                                            },
+                                                            {
+                                                                "type": "number"
+                                                            }
+                                                        ]
+                                                    }
+                                                },
+                                                "model": {}
+                                            }
+                                        },
+                                        {
+                                            "$ref": "Pagination.json#/components/schemas/Pagination"
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/get/example_2/custom/": {
+            "post": {
+                "operationId": "GetExample2Custom",
+                "tags": [
+                    "Example_2"
+                ],
+                "summary": "Получение текущего времени",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Example_2/Methods/Custom/Get.json#/components/schemas/Example_2.Methods.Custom.Get"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "allOf": [
+                                        {
+                                            "$ref": "Response.json#/components/schemas/Response"
+                                        },
+                                        {
+                                            "type": "object",
+                                            "properties": {
+                                                "result": {
+                                                    "type": "string"
+                                                },
+                                                "model": {}
+                                            }
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/get/example_2/enum/": {
+            "post": {
+                "operationId": "GetExample2Enum",
+                "tags": [
+                    "Example_2"
+                ],
+                "summary": "Метод с примерами параметров типа Enum",
+                "description": "Возвращает ассоциативный результирующий массив, с данными, переданными в метод",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Example_2/Methods/Enum/Get.json#/components/schemas/Example_2.Methods.Enum.Get"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "allOf": [
+                                        {
+                                            "$ref": "Response.json#/components/schemas/Response"
+                                        },
+                                        {
+                                            "type": "object",
+                                            "properties": {
+                                                "result": {
+                                                    "type": "array",
+                                                    "items": {
+                                                        "oneOf": [
+                                                            {
+                                                                "type": "string"
+                                                            },
+                                                            {
+                                                                "type": "number"
+                                                            }
+                                                        ]
+                                                    }
+                                                },
+                                                "model": {}
+                                            }
+                                        },
+                                        {
+                                            "$ref": "Pagination.json#/components/schemas/Pagination"
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/get/example_2/projects/": {
+            "post": {
+                "operationId": "GetExample2Projects",
+                "tags": [
+                    "Example_2"
+                ],
+                "summary": "Получение списка проектов",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Example_2/Methods/Projects/Get.json#/components/schemas/Example_2.Methods.Projects.Get"
+                            }
+                        }
+                    },
+                    "required": false
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "allOf": [
+                                        {
+                                            "$ref": "Response.json#/components/schemas/Response"
+                                        },
+                                        {
+                                            "type": "object",
+                                            "properties": {
+                                                "result": {
+                                                    "type": "array",
+                                                    "items": {
+                                                        "oneOf": [
+                                                            {
+                                                                "type": "string"
+                                                            },
+                                                            {
+                                                                "type": "number"
+                                                            }
+                                                        ]
+                                                    }
+                                                },
+                                                "model": {
+                                                    "$ref": "Models/Projects.json#/components/schemas/Models.Projects"
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "$ref": "Pagination.json#/components/schemas/Pagination"
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/get/openapi_2/download/": {
+            "post": {
+                "operationId": "GetOpenapi2Download",
+                "tags": [
+                    "Openapi_2"
+                ],
+                "summary": "Создать Open API схемы и скачать в zip",
+                "description": "В результате вернет zip файл в потоке вывода\n\n@see https://editor.swagger.io/ Редактор Open API",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "OpenAPI_2/Methods/Download/Get.json#/components/schemas/OpenAPI_2.Methods.Download.Get"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/octet-stream": {
+                                "schema": {
+                                    "type": "string",
+                                    "format": "binary"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/get/payments_2/companies/": {
+            "post": {
+                "operationId": "GetPayments2Companies",
+                "tags": [
+                    "Payments_2"
+                ],
+                "summary": "Компании пользователя, через которых, были совершены платежи",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Payments_2/Methods/Companies/Get.json#/components/schemas/Payments_2.Methods.Companies.Get"
+                            }
+                        }
+                    },
+                    "required": false
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "allOf": [
+                                        {
+                                            "$ref": "Response.json#/components/schemas/Response"
+                                        },
+                                        {
+                                            "type": "object",
+                                            "properties": {
+                                                "result": {
+                                                    "type": "array",
+                                                    "items": {
+                                                        "oneOf": [
+                                                            {
+                                                                "type": "string"
+                                                            },
+                                                            {
+                                                                "type": "number"
+                                                            }
+                                                        ]
+                                                    }
+                                                },
+                                                "model": {}
+                                            }
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/edit/payments_2/contractsign/": {
+            "post": {
+                "operationId": "EditPayments2Contractsign",
+                "tags": [
+                    "Payments_2"
+                ],
+                "summary": "Подписать контракт (только для админов)",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Payments_2/Methods/ContractSign/Edit.json#/components/schemas/Payments_2.Methods.ContractSign.Edit"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "allOf": [
+                                        {
+                                            "$ref": "Response.json#/components/schemas/Response"
+                                        },
+                                        {
+                                            "type": "object",
+                                            "properties": {
+                                                "result": {
+                                                    "type": "integer"
+                                                },
+                                                "model": {}
+                                            }
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/edit/payments_2/nextrequisitesid/": {
+            "post": {
+                "operationId": "EditPayments2Nextrequisitesid",
+                "tags": [
+                    "Payments_2"
+                ],
+                "summary": "Изменить платежные реквизиты тарифа",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Payments_2/Methods/NextRequisitesId/Edit.json#/components/schemas/Payments_2.Methods.NextRequisitesId.Edit"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "allOf": [
+                                        {
+                                            "$ref": "Response.json#/components/schemas/Response"
+                                        },
+                                        {
+                                            "type": "object",
+                                            "properties": {
+                                                "result": {
+                                                    "type": "integer"
+                                                },
+                                                "model": {}
+                                            }
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/add/payments_2/urtinkoffcreateapplication/": {
+            "post": {
+                "operationId": "AddPayments2Urtinkoffcreateapplication",
+                "tags": [
+                    "Payments_2"
+                ],
+                "summary": "Отправить заявка на подключение Тинькофф Бизнес",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Payments_2/Methods/UrTinkoffCreateApplication/Add.json#/components/schemas/Payments_2.Methods.UrTinkoffCreateApplication.Add"
+                            }
+                        }
+                    },
+                    "required": false
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "allOf": [
+                                        {
+                                            "$ref": "Response.json#/components/schemas/Response"
+                                        },
+                                        {
+                                            "type": "object",
+                                            "properties": {
+                                                "result": {
+                                                    "type": "integer"
+                                                },
+                                                "model": {}
+                                            }
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/get/payments_2/validatemerchantcardap/": {
+            "post": {
+                "operationId": "GetPayments2Validatemerchantcardap",
+                "tags": [
+                    "Payments_2"
+                ],
+                "summary": "Валидация домена для подтверждения оплаты Apple Pay (system = card_ap)",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Payments_2/Methods/ValidateMerchantCardAP/Get.json#/components/schemas/Payments_2.Methods.ValidateMerchantCardAP.Get"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "allOf": [
+                                        {
+                                            "$ref": "Response.json#/components/schemas/Response"
+                                        },
+                                        {
+                                            "type": "object",
+                                            "properties": {
+                                                "result": {
+                                                    "type": "array",
+                                                    "items": {
+                                                        "oneOf": [
+                                                            {
+                                                                "type": "string"
+                                                            },
+                                                            {
+                                                                "type": "number"
+                                                            }
+                                                        ]
+                                                    }
+                                                },
+                                                "model": {}
+                                            }
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "components": {
+        "securitySchemes": {
+            "authLogin": {
+                "type": "apiKey",
+                "description": "Пользовательская авторизиаця через ввода Логина и пароля или через сторонний сервис",
+                "name": "auth",
+                "in": "cookie"
+            },
+            "authToken": {
+                "type": "apiKey",
+                "description": "Авторизаци по API ключу в формате: `Bearer userId:AccessToken`",
+                "name": "Authorization",
+                "in": "header"
+            }
+        }
+    },
+    "servers": [
+        {
+            "url": "https://topvisor.com/ajax/",
+            "description": "Web интерфейс для использования на сайте. Запрещено междоменное общение."
+        },
+        {
+            "url": "https://api.topvisor.com/v2/json",
+            "description": "Интерфейс для работы с API. Запрещено междоменное общение."
+        }
+    ],
+    "security": [
+        {
+            "authLogin": []
+        },
+        {
+            "authToken": []
+        }
+    ],
+    "tags": [
+        {
+            "name": "Admin_2",
+            "description": "admin_2"
+        },
+        {
+            "name": "Analytics_2",
+            "description": "analytics_2"
+        },
+        {
+            "name": "Annotations_2",
+            "description": "annotations_2"
+        },
+        {
+            "name": "App_2",
+            "description": "app_2"
+        },
+        {
+            "name": "Audit_2",
+            "description": "audit_2"
+        },
+        {
+            "name": "Bank_2",
+            "description": "bank_2"
+        },
+        {
+            "name": "Broker_2",
+            "description": "broker_2"
+        },
+        {
+            "name": "Comments_2",
+            "description": "comments_2"
+        },
+        {
+            "name": "Competitors_2",
+            "description": "competitors_2"
+        },
+        {
+            "name": "Content_2",
+            "description": "content_2"
+        },
+        {
+            "name": "Controller_2",
+            "description": "controller_2"
+        },
+        {
+            "name": "Eastereggs_2",
+            "description": "eastereggs_2"
+        },
+        {
+            "name": "Example_2",
+            "description": "example_2"
+        },
+        {
+            "name": "Fa2_2",
+            "description": "fa2_2"
+        },
+        {
+            "name": "Informer_2",
+            "description": "informer_2"
+        },
+        {
+            "name": "Keywords_2",
+            "description": "keywords_2"
+        },
+        {
+            "name": "Landings_2",
+            "description": "landings_2"
+        },
+        {
+            "name": "Mentions_2",
+            "description": "mentions_2"
+        },
+        {
+            "name": "Models",
+            "description": "models"
+        },
+        {
+            "name": "Openapi_2",
+            "description": "openapi_2"
+        },
+        {
+            "name": "Payments_2",
+            "description": "payments_2"
+        },
+        {
+            "name": "Positions_2",
+            "description": "positions_2"
+        },
+        {
+            "name": "Projects_2",
+            "description": "projects_2"
+        },
+        {
+            "name": "Qr_2",
+            "description": "qr_2"
+        },
+        {
+            "name": "Quiz_2",
+            "description": "quiz_2"
+        },
+        {
+            "name": "Recurring_2",
+            "description": "recurring_2"
+        },
+        {
+            "name": "Redmine_2",
+            "description": "redmine_2"
+        },
+        {
+            "name": "Reports_2",
+            "description": "reports_2"
+        },
+        {
+            "name": "Robot_2",
+            "description": "robot_2"
+        },
+        {
+            "name": "Schedule_2",
+            "description": "schedule_2"
+        },
+        {
+            "name": "Scripts_2",
+            "description": "scripts_2"
+        },
+        {
+            "name": "Selectel_2",
+            "description": "selectel_2"
+        },
+        {
+            "name": "Slack_2",
+            "description": "slack_2"
+        },
+        {
+            "name": "Sms_2",
+            "description": "sms_2"
+        },
+        {
+            "name": "Snapshots_2",
+            "description": "snapshots_2"
+        },
+        {
+            "name": "System_2",
+            "description": "system_2"
+        },
+        {
+            "name": "Tags_2",
+            "description": "tags_2"
+        },
+        {
+            "name": "Telegram_2",
+            "description": "telegram_2"
+        },
+        {
+            "name": "Templates_2",
+            "description": "templates_2"
+        },
+        {
+            "name": "Tickets_2",
+            "description": "tickets_2"
+        },
+        {
+            "name": "Tinkoff_2",
+            "description": "tinkoff_2"
+        },
+        {
+            "name": "Tpa_2",
+            "description": "tpa_2"
+        },
+        {
+            "name": "Tpvsr_2",
+            "description": "tpvsr_2"
+        },
+        {
+            "name": "Urls_2",
+            "description": "urls_2"
+        },
+        {
+            "name": "Users_2",
+            "description": "users_2"
+        },
+        {
+            "name": "Votes_2",
+            "description": "votes_2"
+        },
+        {
+            "name": "Vue_2",
+            "description": "vue_2"
+        },
+        {
+            "name": "Webscreens_2",
+            "description": "webscreens_2"
+        }
+    ]
+}
