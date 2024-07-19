@@ -422,7 +422,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & {
-                        result?: (string | number)[];
+                        result?: Record<string, never>[];
                         model?: import('./Models/Payments.ts').components['schemas']['Models.Payments'];
                     } & import('./Pagination.ts').components['schemas']['Pagination'];
                 };
@@ -606,7 +606,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & {
-                        result?: (string | number)[];
+                        result?: Record<string, never>[];
                         model?: import('./Models/Projects.ts').components['schemas']['Models.Projects'];
                     } & import('./Pagination.ts').components['schemas']['Pagination'];
                 };

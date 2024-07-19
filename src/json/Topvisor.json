@@ -162,14 +162,9 @@
                                                 "result": {
                                                     "type": "array",
                                                     "items": {
-                                                        "oneOf": [
-                                                            {
-                                                                "type": "string"
-                                                            },
-                                                            {
-                                                                "type": "number"
-                                                            }
-                                                        ]
+                                                        "type": {
+                                                            "$ref": "Models/Payments.json#/components/schemas/Models.Payments"
+                                                        }
                                                     },
                                                     "title": "",
                                                     "description": ""
@@ -526,14 +521,9 @@
                                                 "result": {
                                                     "type": "array",
                                                     "items": {
-                                                        "oneOf": [
-                                                            {
-                                                                "type": "string"
-                                                            },
-                                                            {
-                                                                "type": "number"
-                                                            }
-                                                        ]
+                                                        "type": {
+                                                            "$ref": "Models/Projects.json#/components/schemas/Models.Projects"
+                                                        }
                                                     },
                                                     "title": "",
                                                     "description": ""
