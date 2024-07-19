@@ -36,9 +36,7 @@
                                             "type": "object",
                                             "properties": {
                                                 "result": {
-                                                    "type": "integer",
-                                                    "title": "",
-                                                    "description": ""
+                                                    "type": "integer"
                                                 },
                                                 "model": {}
                                             }
@@ -114,10 +112,7 @@
                                         {
                                             "type": "object",
                                             "properties": {
-                                                "result": {
-                                                    "title": "",
-                                                    "description": ""
-                                                },
+                                                "result": {},
                                                 "model": {}
                                             }
                                         }
@@ -162,12 +157,8 @@
                                                 "result": {
                                                     "type": "array",
                                                     "items": {
-                                                        "type": {
-                                                            "$ref": "Models/Payments.json#/components/schemas/Models.Payments"
-                                                        }
-                                                    },
-                                                    "title": "",
-                                                    "description": ""
+                                                        "$ref": "Models/Payments.json#/components/schemas/Models.Payments"
+                                                    }
                                                 },
                                                 "model": {
                                                     "$ref": "Models/Payments.json#/components/schemas/Models.Payments"
@@ -217,9 +208,7 @@
                                             "type": "object",
                                             "properties": {
                                                 "result": {
-                                                    "type": "string",
-                                                    "title": "",
-                                                    "description": ""
+                                                    "type": "string"
                                                 },
                                                 "model": {}
                                             }
@@ -263,10 +252,7 @@
                                         {
                                             "type": "object",
                                             "properties": {
-                                                "result": {
-                                                    "title": "",
-                                                    "description": ""
-                                                },
+                                                "result": {},
                                                 "model": {}
                                             }
                                         }
@@ -309,9 +295,7 @@
                                             "type": "object",
                                             "properties": {
                                                 "result": {
-                                                    "$ref": "Controller_2/Objects/Page.json#/components/schemas/Controller_2.Objects.Page",
-                                                    "title": "",
-                                                    "description": ""
+                                                    "$ref": "Controller_2/Objects/Page.json#/components/schemas/Controller_2.Objects.Page"
                                                 },
                                                 "model": {}
                                             }
@@ -366,8 +350,7 @@
                                                             }
                                                         ]
                                                     },
-                                                    "title": "Возвращает ассоциативный результирующий массив, с данными, переданными в метод",
-                                                    "description": ""
+                                                    "title": "Возвращает ассоциативный результирующий массив, с данными, переданными в метод"
                                                 },
                                                 "model": {}
                                             }
@@ -414,9 +397,7 @@
                                             "type": "object",
                                             "properties": {
                                                 "result": {
-                                                    "type": "string",
-                                                    "title": "",
-                                                    "description": ""
+                                                    "type": "string"
                                                 },
                                                 "model": {}
                                             }
@@ -471,8 +452,7 @@
                                                             }
                                                         ]
                                                     },
-                                                    "title": "Ассоциативный результирующий массив, с данными, переданными в метод",
-                                                    "description": ""
+                                                    "title": "Ассоциативный результирующий массив, с данными, переданными в метод"
                                                 },
                                                 "model": {}
                                             }
@@ -521,12 +501,8 @@
                                                 "result": {
                                                     "type": "array",
                                                     "items": {
-                                                        "type": {
-                                                            "$ref": "Models/Projects.json#/components/schemas/Models.Projects"
-                                                        }
-                                                    },
-                                                    "title": "",
-                                                    "description": ""
+                                                        "$ref": "Models/Projects.json#/components/schemas/Models.Projects"
+                                                    }
                                                 },
                                                 "model": {
                                                     "$ref": "Models/Projects.json#/components/schemas/Models.Projects"
@@ -618,9 +594,7 @@
                                                                 "type": "number"
                                                             }
                                                         ]
-                                                    },
-                                                    "title": "",
-                                                    "description": ""
+                                                    }
                                                 },
                                                 "model": {}
                                             }
@@ -664,9 +638,7 @@
                                             "type": "object",
                                             "properties": {
                                                 "result": {
-                                                    "type": "integer",
-                                                    "title": "",
-                                                    "description": ""
+                                                    "type": "integer"
                                                 },
                                                 "model": {}
                                             }
@@ -710,9 +682,7 @@
                                             "type": "object",
                                             "properties": {
                                                 "result": {
-                                                    "type": "integer",
-                                                    "title": "",
-                                                    "description": ""
+                                                    "type": "integer"
                                                 },
                                                 "model": {}
                                             }
@@ -756,9 +726,7 @@
                                             "type": "object",
                                             "properties": {
                                                 "result": {
-                                                    "type": "integer",
-                                                    "title": "",
-                                                    "description": ""
+                                                    "type": "integer"
                                                 },
                                                 "model": {}
                                             }
@@ -812,9 +780,7 @@
                                                                 "type": "number"
                                                             }
                                                         ]
-                                                    },
-                                                    "title": "",
-                                                    "description": ""
+                                                    }
                                                 },
                                                 "model": {}
                                             }
