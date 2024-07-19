@@ -8,6 +8,9 @@
 
 Схемы представлены в JSON формате: [./src/json/](./src/json).
 
+Для быстрого теста можно использовать публичный демо: https://petstore.swagger.io/  
+Введите в поле URL: https://raw.githubusercontent.com/topvisor/topvisor-openapi/main/src/json/Topvisor.json
+
 ## Typescript
 
 Схемы представлены в typescript формате: [./src/ts/](./src/ts).
