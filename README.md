@@ -9,10 +9,11 @@
 Схемы представлены в JSON формате: [./src/json/](./src/json).
 
 Описание методов API: [./src/json/Topvisor.json](./src/json/Topvisor.json).  
-Схемы всех моделей данных: [./src/json/Topvisor.json](./src/json/Models.json).
+Схемы всех моделей данных: [./src/json/Models.json](./src/json/Models.json).
 
 Для быстрого теста можно использовать публичный демо: https://petstore.swagger.io/  
-Введите в поле URL: https://raw.githubusercontent.com/topvisor/topvisor-openapi/main/src/json/Topvisor.json
+Введите URL для прсомотра методов: https://raw.githubusercontent.com/topvisor/topvisor-openapi/main/src/json/Topvisor.json
+Введите URL для прсомотра моделей данных: https://raw.githubusercontent.com/topvisor/topvisor-openapi/main/src/json/Models.json
 
 ## Typescript
 
