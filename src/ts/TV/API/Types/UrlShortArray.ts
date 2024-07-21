@@ -8,10 +8,8 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         /**
-         * Тип массива: UrlShort
-         * @description Принимает: Только строки или UrlShort
-         *
-         *     Хранит: Только UrlShort
+         * Тип массива: UrlShort[]
+         * @description @see UrlShort
          */
         "TV.API.Types.UrlShortArray": import('./UrlShort.ts').components['schemas']['TV.API.Types.UrlShort'][];
     };

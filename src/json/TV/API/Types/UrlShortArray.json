@@ -12,8 +12,8 @@
                 "items": {
                     "$ref": "../../../TV/API/Types/UrlShort.json#/components/schemas/TV.API.Types.UrlShort"
                 },
-                "title": "Тип массива: UrlShort",
-                "description": "Принимает: Только строки или UrlShort\n\nХранит: Только UrlShort"
+                "title": "Тип массива: UrlShort[]",
+                "description": "@see UrlShort"
             }
         }
     }

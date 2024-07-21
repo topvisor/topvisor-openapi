@@ -12,8 +12,7 @@
                 "items": {
                     "type": "string"
                 },
-                "title": "Тип массива: string",
-                "description": "Принимает: Только строки\n\nХранит: Только строки"
+                "title": "Тип массива: string[]"
             }
         }
     }

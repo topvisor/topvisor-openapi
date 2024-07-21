@@ -7,12 +7,7 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /**
-         * Тип массива: string
-         * @description Принимает: Только строки
-         *
-         *     Хранит: Только строки
-         */
+        /** Тип массива: string[] */
         "TV.API.Types.StringArray": string[];
     };
     responses: never;

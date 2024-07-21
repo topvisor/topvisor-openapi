@@ -12,8 +12,7 @@
                 "items": {
                     "type": "number"
                 },
-                "title": "Тип: float",
-                "description": "Принимает: Любые числа и числа в строках\n\nХранит: float\n",
+                "title": "Тип: float[]",
                 "deprecated": true
             }
         }

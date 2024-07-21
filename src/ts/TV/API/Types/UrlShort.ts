@@ -17,9 +17,7 @@ export interface components {
          *
          *     Разрешен ввод строй строки, для удаления значения url
          */
-        "TV.API.Types.UrlShort": {
-            value?: string;
-        };
+        "TV.API.Types.UrlShort": string;
     };
     responses: never;
     parameters: never;

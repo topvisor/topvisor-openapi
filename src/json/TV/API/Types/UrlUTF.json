@@ -8,12 +8,7 @@
     "components": {
         "schemas": {
             "TV.API.Types.UrlUTF": {
-                "type": "object",
-                "properties": {
-                    "value": {
-                        "type": "string"
-                    }
-                },
+                "type": "string",
                 "title": "URL не в punycode, может содержать UTF-символы:\n- без \"<\" и \">\"",
                 "description": "Будет проивзедено автоматическое приведение к формату\n\nРазрешен ввод строй строки, для удаления значения url"
             }

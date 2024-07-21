@@ -8,10 +8,10 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         /**
-         * Тип массива: UrlUTF[]
-         * @description @see UrlUTF
+         * Тип массива: Datetime[]
+         * @description @see Datetime
          */
-        "TV.API.Types.UrlUTFArray": import('./UrlUTF.ts').components['schemas']['TV.API.Types.UrlUTF'][];
+        "TV.API.Types.DatetimeArray": import('./Datetime.ts').components['schemas']['TV.API.Types.Datetime'][];
     };
     responses: never;
     parameters: never;

@@ -8,12 +8,8 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         /**
-         * Тип: float
+         * Тип: float[]
          * @deprecated
-         * @description Принимает: Любые числа и числа в строках
-         *
-         *     Хранит: float
-         *
          */
         "TV.API.Types.FloatArray": number[];
     };

@@ -8,12 +8,7 @@
     "components": {
         "schemas": {
             "TV.API.Types.UrlShortUTF": {
-                "type": "object",
-                "properties": {
-                    "value": {
-                        "type": "string"
-                    }
-                },
+                "type": "string",
                 "title": "Краткий URL не в punycode, может содержать UTF-символы:\n- без схемы\n- без \"www.\" в домене\n- без слешей на конце\n- без \"<\" и \">\"",
                 "description": "Будет проивзедено автоматическое приведение к формату\n\nРазрешен ввод строй строки, для удаления значения url"
             }
