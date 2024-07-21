@@ -15,7 +15,13 @@
                         "type": "string"
                     },
                     "tpl_n": {
-                        "$ref": "../../Qr_2/Types/TplN.json#/components/schemas/Qr_2.Types.TplN"
+                        "title": "Кодируемый текст",
+                        "description": "- 0 - черно-белый\n- 1 - шашечки\n- 2 - группы с закруглениями",
+                        "allOf": [
+                            {
+                                "$ref": "../../Qr_2/Types/TplN.json#/components/schemas/Qr_2.Types.TplN"
+                            }
+                        ]
                     },
                     "use_brand": {
                         "title": "Использовать ли брендированное лого",

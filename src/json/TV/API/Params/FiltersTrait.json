@@ -1,0 +1,69 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/TV.API.Params.FiltersTrait",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "TV.API.Params.FiltersTrait": {
+                "type": "object",
+                "properties": {
+                    "filters": {
+                        "title": "Список фильтров по полям объекта",
+                        "description": "{name: string, operator: Field::AVAILABLE_OPERATORS, values: array}\n\nИспользует поля модели\n@see AbstractMethod::MODEL\n@see Field::AVAILABLE_OPERATORS",
+                        "nullable": true,
+                        "type": "array",
+                        "items": {
+                            "oneOf": [
+                                {
+                                    "type": "string"
+                                },
+                                {
+                                    "type": "number"
+                                }
+                            ]
+                        }
+                    },
+                    "id": {
+                        "title": "Id объекта, для фильтрации объектов по id",
+                        "description": "Только для моделей с полем id",
+                        "nullable": true,
+                        "type": "integer"
+                    }
+                }
+            }
+        },
+        "parameters": {
+            "filters": {
+                "name": "filters",
+                "description": "Список фильтров по полям объекта\n\n{name: string, operator: Field::AVAILABLE_OPERATORS, values: array}\n\nИспользует поля модели\n@see AbstractMethod::MODEL\n@see Field::AVAILABLE_OPERATORS",
+                "style": "deepObject",
+                "in": "query",
+                "schema": {
+                    "type": "array",
+                    "items": {
+                        "oneOf": [
+                            {
+                                "type": "string"
+                            },
+                            {
+                                "type": "number"
+                            }
+                        ]
+                    }
+                }
+            },
+            "id": {
+                "name": "id",
+                "description": "Id объекта, для фильтрации объектов по id\n\nТолько для моделей с полем id",
+                "style": "deepObject",
+                "in": "query",
+                "schema": {
+                    "type": "integer"
+                }
+            }
+        }
+    }
+}

@@ -11,13 +11,26 @@
                 "type": "object",
                 "properties": {
                     "number": {
-                        "$ref": "../../../Example_2/Types/Number.json#/components/schemas/Example_2.Types.Number"
+                        "nullable": true,
+                        "allOf": [
+                            {
+                                "$ref": "../../../Example_2/Types/Number.json#/components/schemas/Example_2.Types.Number"
+                            }
+                        ]
                     },
                     "number2": {
-                        "$ref": "../../../Example_2/Types/Number.json#/components/schemas/Example_2.Types.Number"
+                        "allOf": [
+                            {
+                                "$ref": "../../../Example_2/Types/Number.json#/components/schemas/Example_2.Types.Number"
+                            }
+                        ]
                     },
                     "letter": {
-                        "$ref": "../../../Example_2/Types/Letter.json#/components/schemas/Example_2.Types.Letter"
+                        "allOf": [
+                            {
+                                "$ref": "../../../Example_2/Types/Letter.json#/components/schemas/Example_2.Types.Letter"
+                            }
+                        ]
                     }
                 },
                 "title": "Метод с примерами параметров типа Enum"

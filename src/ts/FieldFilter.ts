@@ -11,6 +11,7 @@ export interface components {
         FieldFilter: {
             /** Имя поля */
             name?: string;
+            /** Оператор сравнения */
             operator?: import('./FieldOperator.ts').components['schemas']['FieldOperator'];
             /**
              * Значения для сравнения

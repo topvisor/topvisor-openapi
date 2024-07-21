@@ -11,7 +11,13 @@
                 "type": "object",
                 "properties": {
                     "lang": {
-                        "$ref": "../../../TV/API/Types/Lang.json#/components/schemas/TV.API.Types.Lang"
+                        "title": "Язык страницы",
+                        "nullable": true,
+                        "allOf": [
+                            {
+                                "$ref": "../../../TV/API/Types/Lang.json#/components/schemas/TV.API.Types.Lang"
+                            }
+                        ]
                     }
                 },
                 "title": "Получить текст политики конфиденциальности"

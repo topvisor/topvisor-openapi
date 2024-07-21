@@ -18,9 +18,11 @@ export interface components {
          *     При ошибке произведет редирект на страницу с инофрмацией об ошибке
          */
         "Payments_2.Methods.Add": {
+            /** Платежная система */
             system?: import('../Types/System.ts').components['schemas']['Payments_2.Types.System'];
             /** Сумма платежа */
             sum?: number;
+            /** Страна реквизитов */
             country?: import('../Types/Country.ts').components['schemas']['Payments_2.Types.Country'];
             /** Номер договора/оферты для платежа */
             requisites_id?: string;

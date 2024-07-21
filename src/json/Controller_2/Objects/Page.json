@@ -11,22 +11,46 @@
                 "type": "object",
                 "properties": {
                     "location": {
-                        "$ref": "../../Controller_2/Objects/Location.json#/components/schemas/Controller_2.Objects.Location"
+                        "allOf": [
+                            {
+                                "$ref": "../../Controller_2/Objects/Location.json#/components/schemas/Controller_2.Objects.Location"
+                            }
+                        ]
                     },
                     "openGraph": {
-                        "$ref": "../../Controller_2/Objects/OpenGraph.json#/components/schemas/Controller_2.Objects.OpenGraph"
+                        "allOf": [
+                            {
+                                "$ref": "../../Controller_2/Objects/OpenGraph.json#/components/schemas/Controller_2.Objects.OpenGraph"
+                            }
+                        ]
                     },
                     "options": {
-                        "$ref": "../../Controller_2/Objects/Page/Options.json#/components/schemas/Controller_2.Objects.Page.Options"
+                        "allOf": [
+                            {
+                                "$ref": "../../Controller_2/Objects/Page/Options.json#/components/schemas/Controller_2.Objects.Page.Options"
+                            }
+                        ]
                     },
                     "article": {
-                        "$ref": "../../Controller_2/Objects/Page/Article.json#/components/schemas/Controller_2.Objects.Page.Article"
+                        "allOf": [
+                            {
+                                "$ref": "../../Controller_2/Objects/Page/Article.json#/components/schemas/Controller_2.Objects.Page.Article"
+                            }
+                        ]
                     },
                     "secondMenu": {
-                        "$ref": "../../Tpl/Core/SecondMenu.json#/components/schemas/Tpl.Core.SecondMenu"
+                        "allOf": [
+                            {
+                                "$ref": "../../Tpl/Core/SecondMenu.json#/components/schemas/Tpl.Core.SecondMenu"
+                            }
+                        ]
                     },
                     "leftMenu": {
-                        "$ref": "../../Tpl/Core/LeftMenu.json#/components/schemas/Tpl.Core.LeftMenu"
+                        "allOf": [
+                            {
+                                "$ref": "../../Tpl/Core/LeftMenu.json#/components/schemas/Tpl.Core.LeftMenu"
+                            }
+                        ]
                     },
                     "params": {
                         "type": "array",
@@ -42,7 +66,11 @@
                         }
                     },
                     "site": {
-                        "$ref": "../../Controller_2/Objects/Sites/Site.json#/components/schemas/Controller_2.Objects.Sites.Site"
+                        "allOf": [
+                            {
+                                "$ref": "../../Controller_2/Objects/Sites/Site.json#/components/schemas/Controller_2.Objects.Sites.Site"
+                            }
+                        ]
                     },
                     "subdomain": {
                         "type": "string"
@@ -103,7 +131,11 @@
                         "type": "integer"
                     },
                     "tplEngine": {
-                        "$ref": "../../Controller_2/Objects/TplEngine.json#/components/schemas/Controller_2.Objects.TplEngine"
+                        "allOf": [
+                            {
+                                "$ref": "../../Controller_2/Objects/TplEngine.json#/components/schemas/Controller_2.Objects.TplEngine"
+                            }
+                        ]
                     },
                     "tplStaticPath": {
                         "type": "string"

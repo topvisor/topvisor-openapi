@@ -9,7 +9,8 @@ export interface components {
     schemas: {
         /** Получить текст политики конфиденциальности */
         "App_2.Methods.Privacy.Get": {
-            lang?: import('../../../TV/API/Types/Lang.ts').components['schemas']['TV.API.Types.Lang'];
+            /** Язык страницы */
+            lang?: import('../../../TV/API/Types/Lang.ts').components['schemas']['TV.API.Types.Lang'] | null;
         };
     };
     responses: never;

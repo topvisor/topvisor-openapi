@@ -11,16 +11,32 @@
                 "type": "object",
                 "properties": {
                     "ints": {
-                        "$ref": "../../../TV/API/Types/IntArray.json#/components/schemas/TV.API.Types.IntArray"
+                        "allOf": [
+                            {
+                                "$ref": "../../../TV/API/Types/IntArray.json#/components/schemas/TV.API.Types.IntArray"
+                            }
+                        ]
                     },
                     "strings": {
-                        "$ref": "../../../TV/API/Types/StringArray.json#/components/schemas/TV.API.Types.StringArray"
+                        "allOf": [
+                            {
+                                "$ref": "../../../TV/API/Types/StringArray.json#/components/schemas/TV.API.Types.StringArray"
+                            }
+                        ]
                     },
                     "booleans": {
-                        "$ref": "../../../TV/API/Types/BoolArray.json#/components/schemas/TV.API.Types.BoolArray"
+                        "allOf": [
+                            {
+                                "$ref": "../../../TV/API/Types/BoolArray.json#/components/schemas/TV.API.Types.BoolArray"
+                            }
+                        ]
                     },
                     "enum_numbers": {
-                        "$ref": "../../../Example_2/Types/EnumNumberArray.json#/components/schemas/Example_2.Types.EnumNumberArray"
+                        "allOf": [
+                            {
+                                "$ref": "../../../Example_2/Types/EnumNumberArray.json#/components/schemas/Example_2.Types.EnumNumberArray"
+                            }
+                        ]
                     }
                 },
                 "title": "Метод с примерами параметров типа Enum"

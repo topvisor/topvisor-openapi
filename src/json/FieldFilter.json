@@ -15,7 +15,12 @@
                         "type": "string"
                     },
                     "operator": {
-                        "$ref": "FieldOperator.json#/components/schemas/FieldOperator"
+                        "title": "Оператор сравнения",
+                        "allOf": [
+                            {
+                                "$ref": "FieldOperator.json#/components/schemas/FieldOperator"
+                            }
+                        ]
                     },
                     "values": {
                         "title": "Значения для сравнения",

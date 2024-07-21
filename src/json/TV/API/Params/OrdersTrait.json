@@ -1,0 +1,54 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/TV.API.Params.OrdersTrait",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "TV.API.Params.OrdersTrait": {
+                "type": "object",
+                "properties": {
+                    "orders": {
+                        "title": "Список полей объекта, по которым необходимо выполнить сортировку",
+                        "description": "Поля могут быть строками или объектом: {name: string, direction: 'ASC' | 'DESC', orderValues: array}\n\nИспользует поля модели\n@see AbstractMethod::MODEL",
+                        "nullable": true,
+                        "type": "array",
+                        "items": {
+                            "oneOf": [
+                                {
+                                    "type": "string"
+                                },
+                                {
+                                    "type": "number"
+                                }
+                            ]
+                        }
+                    }
+                }
+            }
+        },
+        "parameters": {
+            "orders": {
+                "name": "orders",
+                "description": "Список полей объекта, по которым необходимо выполнить сортировку\n\nПоля могут быть строками или объектом: {name: string, direction: 'ASC' | 'DESC', orderValues: array}\n\nИспользует поля модели\n@see AbstractMethod::MODEL",
+                "style": "deepObject",
+                "in": "query",
+                "schema": {
+                    "type": "array",
+                    "items": {
+                        "oneOf": [
+                            {
+                                "type": "string"
+                            },
+                            {
+                                "type": "number"
+                            }
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

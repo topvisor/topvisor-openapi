@@ -10,7 +10,9 @@ export interface components {
         /** Результат API запроса с ошибкой */
         ResponseError: {
             result?: unknown;
-            errors?: import('./Errors.ts').components['schemas']['Errors'];
+            /** Список ошибок, полученных при выполнении запроса */
+            errors?: import('./Errors.ts').components['schemas']['Errors'] | null;
+            /** Список ообщений, полученных при выполнении запроса */
             messages?: import('./TV/API/Types/StringArray.ts').components['schemas']['TV.API.Types.StringArray'];
         };
     };

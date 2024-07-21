@@ -1,0 +1,54 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/TV.API.Params.FieldsTrait",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "TV.API.Params.FieldsTrait": {
+                "type": "object",
+                "properties": {
+                    "fields": {
+                        "title": "Список полей объекта, которые надо вернуть в результате",
+                        "description": "Если запрос поддерижвает параметр fetch_style, формат ответа может быть разным, fields будет влиять на содержание данных в этом ответе\n\nИспользует поля модели\n@see AbstractMethod::MODEL",
+                        "nullable": true,
+                        "type": "array",
+                        "items": {
+                            "oneOf": [
+                                {
+                                    "type": "string"
+                                },
+                                {
+                                    "type": "number"
+                                }
+                            ]
+                        }
+                    }
+                }
+            }
+        },
+        "parameters": {
+            "fields": {
+                "name": "fields",
+                "description": "Список полей объекта, которые надо вернуть в результате\n\nЕсли запрос поддерижвает параметр fetch_style, формат ответа может быть разным, fields будет влиять на содержание данных в этом ответе\n\nИспользует поля модели\n@see AbstractMethod::MODEL",
+                "style": "deepObject",
+                "in": "query",
+                "schema": {
+                    "type": "array",
+                    "items": {
+                        "oneOf": [
+                            {
+                                "type": "string"
+                            },
+                            {
+                                "type": "number"
+                            }
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

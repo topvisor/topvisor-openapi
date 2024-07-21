@@ -14,10 +14,21 @@
                         "nullable": true
                     },
                     "errors": {
-                        "$ref": "Errors.json#/components/schemas/Errors"
+                        "title": "Список ошибок, полученных при выполнении запроса",
+                        "nullable": true,
+                        "allOf": [
+                            {
+                                "$ref": "Errors.json#/components/schemas/Errors"
+                            }
+                        ]
                     },
                     "messages": {
-                        "$ref": "TV/API/Types/StringArray.json#/components/schemas/TV.API.Types.StringArray"
+                        "title": "Список ообщений, полученных при выполнении запроса",
+                        "allOf": [
+                            {
+                                "$ref": "TV/API/Types/StringArray.json#/components/schemas/TV.API.Types.StringArray"
+                            }
+                        ]
                     }
                 },
                 "title": "Результат API запроса с ошибкой"

@@ -11,9 +11,14 @@ export interface components {
         FieldOrder: {
             /** Имя поля */
             name?: string;
-            direction?: import('./FieldDirection.ts').components['schemas']['FieldDirection'];
+            /**
+             * Оператор сравнения
+             * @default ASC
+             */
+            direction: import('./FieldDirection.ts').components['schemas']['FieldDirection'];
             /** Список значений поля, для ручной сортировки */
             orderValues?: (string | number)[];
+            /** Оператор сравнения */
             operator?: import('./FieldOperator.ts').components['schemas']['FieldOperator'];
             /**
              * Значения для сравенния

@@ -15,7 +15,13 @@
                         "type": "string"
                     },
                     "direction": {
-                        "$ref": "FieldDirection.json#/components/schemas/FieldDirection"
+                        "title": "Оператор сравнения",
+                        "default": "ASC",
+                        "allOf": [
+                            {
+                                "$ref": "FieldDirection.json#/components/schemas/FieldDirection"
+                            }
+                        ]
                     },
                     "orderValues": {
                         "title": "Список значений поля, для ручной сортировки",
@@ -32,7 +38,12 @@
                         }
                     },
                     "operator": {
-                        "$ref": "FieldOperator.json#/components/schemas/FieldOperator"
+                        "title": "Оператор сравнения",
+                        "allOf": [
+                            {
+                                "$ref": "FieldOperator.json#/components/schemas/FieldOperator"
+                            }
+                        ]
                     },
                     "values": {
                         "title": "Значения для сравенния",

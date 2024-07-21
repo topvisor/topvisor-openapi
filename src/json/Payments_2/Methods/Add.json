@@ -11,14 +11,24 @@
                 "type": "object",
                 "properties": {
                     "system": {
-                        "$ref": "../../Payments_2/Types/System.json#/components/schemas/Payments_2.Types.System"
+                        "title": "Платежная система",
+                        "allOf": [
+                            {
+                                "$ref": "../../Payments_2/Types/System.json#/components/schemas/Payments_2.Types.System"
+                            }
+                        ]
                     },
                     "sum": {
                         "title": "Сумма платежа",
                         "type": "number"
                     },
                     "country": {
-                        "$ref": "../../Payments_2/Types/Country.json#/components/schemas/Payments_2.Types.Country"
+                        "title": "Страна реквизитов",
+                        "allOf": [
+                            {
+                                "$ref": "../../Payments_2/Types/Country.json#/components/schemas/Payments_2.Types.Country"
+                            }
+                        ]
                     },
                     "requisites_id": {
                         "title": "Номер договора/оферты для платежа",
