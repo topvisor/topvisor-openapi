@@ -171,14 +171,18 @@ function genImport($ref, ctx) {
  */
 function pathToTypeName(schemaPath) {
 	const partsToType = schemaPath.split('/').map((part, index) => {
+		// First slash
 		if (index === 0) return;
 
 		if (index === 1) {
-			// Путь всегда начинается с интерфейса components
+			// Always start with components
 			return part;
 		}
 
-		// Обращение к типу интерфейса
+		// Properties - is a link to property in Open Api spec, in type script there is no such
+		if (part === 'properties') return;
+
+		// Property of interface
 		return `['${part}']`;
 	});
 
