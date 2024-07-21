@@ -350,13 +350,10 @@
                                                             }
                                                         ]
                                                     },
-                                                    "title": "Возвращает ассоциативный результирующий массив, с данными, переданными в метод"
+                                                    "title": "Ассоциативный результирующий массив, с данными, переданными в метод и результатом genSet()"
                                                 },
                                                 "model": {}
                                             }
-                                        },
-                                        {
-                                            "$ref": "Pagination.json#/components/schemas/Pagination"
                                         }
                                     ]
                                 }
@@ -456,9 +453,6 @@
                                                 },
                                                 "model": {}
                                             }
-                                        },
-                                        {
-                                            "$ref": "Pagination.json#/components/schemas/Pagination"
                                         }
                                     ]
                                 }
@@ -811,10 +805,6 @@
         }
     },
     "servers": [
-        {
-            "url": "https://topvisor.com/ajax/",
-            "description": "Web интерфейс для использования на сайте. Запрещено междоменное общение."
-        },
         {
             "url": "https://api.topvisor.com/v2/json",
             "description": "Интерфейс для работы с API. Запрещено междоменное общение."

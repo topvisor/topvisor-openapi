@@ -7,11 +7,15 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Метод с примерами параметров типа Enum */
-        "Example_2.Methods.Enum.Get": {
-            number?: import('../../Types/Number.ts').components['schemas']['Example_2.Types.Number'];
-            number2?: import('../../Types/Number.ts').components['schemas']['Example_2.Types.Number'];
-            letter?: import('../../Types/Letter.ts').components['schemas']['Example_2.Types.Letter'];
+        /**
+         * URL не в punycode, может содержать UTF-символы:
+         *     - без "<" и ">"
+         * @description Будет проивзедено автоматическое приведение к формату
+         *
+         *     Разрешен ввод строй строки, для удаления значения url
+         */
+        "TV.API.Types.UrlUTF": {
+            value?: string;
         };
     };
     responses: never;

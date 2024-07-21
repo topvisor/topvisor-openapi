@@ -1,0 +1,20 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/TV.API.Types.UrlArray",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "TV.API.Types.UrlArray": {
+                "type": "array",
+                "items": {
+                    "$ref": "../../../TV/API/Types/Url.json#/components/schemas/TV.API.Types.Url"
+                },
+                "title": "Тип массива: Url",
+                "description": "Принимает: Только строки или Url\n\nХранит: Только Url"
+            }
+        }
+    }
+}

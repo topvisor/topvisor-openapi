@@ -526,10 +526,10 @@ export interface operations {
                 };
                 content: {
                     "application/json": import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & {
-                        /** Возвращает ассоциативный результирующий массив, с данными, переданными в метод */
+                        /** Ассоциативный результирующий массив, с данными, переданными в метод и результатом genSet() */
                         result?: (string | number)[];
                         model?: unknown;
-                    } & import('./Pagination.ts').components['schemas']['Pagination'];
+                    };
                 };
             };
         };
@@ -582,7 +582,7 @@ export interface operations {
                         /** Ассоциативный результирующий массив, с данными, переданными в метод */
                         result?: (string | number)[];
                         model?: unknown;
-                    } & import('./Pagination.ts').components['schemas']['Pagination'];
+                    };
                 };
             };
         };
