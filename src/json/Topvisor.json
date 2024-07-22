@@ -30,9 +30,6 @@
                                 "schema": {
                                     "allOf": [
                                         {
-                                            "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
-                                        },
-                                        {
                                             "type": "object",
                                             "properties": {
                                                 "result": {
@@ -40,6 +37,9 @@
                                                 },
                                                 "model": {}
                                             }
+                                        },
+                                        {
+                                            "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
                                         }
                                     ]
                                 }
@@ -81,6 +81,61 @@
                 }
             }
         },
+        "/get/demo_2/": {
+            "post": {
+                "operationId": "GetDemo2",
+                "tags": [
+                    "Demo_2"
+                ],
+                "summary": "Вывод самых популярных сайтов из анализа конкурентов",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Demo_2/Methods/Get.json#/components/schemas/Demo_2.Methods.Get"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "allOf": [
+                                        {
+                                            "type": "object",
+                                            "properties": {
+                                                "result": {
+                                                    "type": "array",
+                                                    "items": {
+                                                        "oneOf": [
+                                                            {
+                                                                "type": "string"
+                                                            },
+                                                            {
+                                                                "type": "number"
+                                                            }
+                                                        ]
+                                                    },
+                                                    "title": "Список самых популярных доменов и их сводка"
+                                                },
+                                                "model": {}
+                                            }
+                                        },
+                                        {
+                                            "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
         "/add/payments_2/": {
             "post": {
                 "operationId": "AddPayments2",
@@ -107,14 +162,14 @@
                                 "schema": {
                                     "allOf": [
                                         {
-                                            "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
-                                        },
-                                        {
                                             "type": "object",
                                             "properties": {
                                                 "result": {},
                                                 "model": {}
                                             }
+                                        },
+                                        {
+                                            "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
                                         }
                                     ]
                                 }
@@ -149,9 +204,6 @@
                                 "schema": {
                                     "allOf": [
                                         {
-                                            "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
-                                        },
-                                        {
                                             "type": "object",
                                             "properties": {
                                                 "result": {
@@ -164,6 +216,9 @@
                                                     "$ref": "Models/Payments.json#/components/schemas/Models.Payments"
                                                 }
                                             }
+                                        },
+                                        {
+                                            "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
                                         },
                                         {
                                             "$ref": "Pagination.json#/components/schemas/Pagination"
@@ -202,9 +257,6 @@
                                 "schema": {
                                     "allOf": [
                                         {
-                                            "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
-                                        },
-                                        {
                                             "type": "object",
                                             "properties": {
                                                 "result": {
@@ -212,6 +264,9 @@
                                                 },
                                                 "model": {}
                                             }
+                                        },
+                                        {
+                                            "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
                                         }
                                     ]
                                 }
@@ -247,14 +302,14 @@
                                 "schema": {
                                     "allOf": [
                                         {
-                                            "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
-                                        },
-                                        {
                                             "type": "object",
                                             "properties": {
                                                 "result": {},
                                                 "model": {}
                                             }
+                                        },
+                                        {
+                                            "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
                                         }
                                     ]
                                 }
@@ -289,9 +344,6 @@
                                 "schema": {
                                     "allOf": [
                                         {
-                                            "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
-                                        },
-                                        {
                                             "type": "object",
                                             "properties": {
                                                 "result": {
@@ -299,6 +351,9 @@
                                                 },
                                                 "model": {}
                                             }
+                                        },
+                                        {
+                                            "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
                                         }
                                     ]
                                 }
@@ -333,9 +388,6 @@
                                 "schema": {
                                     "allOf": [
                                         {
-                                            "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
-                                        },
-                                        {
                                             "type": "object",
                                             "properties": {
                                                 "result": {
@@ -354,6 +406,9 @@
                                                 },
                                                 "model": {}
                                             }
+                                        },
+                                        {
+                                            "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
                                         }
                                     ]
                                 }
@@ -388,9 +443,6 @@
                                 "schema": {
                                     "allOf": [
                                         {
-                                            "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
-                                        },
-                                        {
                                             "type": "object",
                                             "properties": {
                                                 "result": {
@@ -398,6 +450,9 @@
                                                 },
                                                 "model": {}
                                             }
+                                        },
+                                        {
+                                            "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
                                         }
                                     ]
                                 }
@@ -432,9 +487,6 @@
                                 "schema": {
                                     "allOf": [
                                         {
-                                            "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
-                                        },
-                                        {
                                             "type": "object",
                                             "properties": {
                                                 "result": {
@@ -453,6 +505,9 @@
                                                 },
                                                 "model": {}
                                             }
+                                        },
+                                        {
+                                            "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
                                         }
                                     ]
                                 }
@@ -487,9 +542,6 @@
                                 "schema": {
                                     "allOf": [
                                         {
-                                            "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
-                                        },
-                                        {
                                             "type": "object",
                                             "properties": {
                                                 "result": {
@@ -502,6 +554,9 @@
                                                     "$ref": "Models/Projects.json#/components/schemas/Models.Projects"
                                                 }
                                             }
+                                        },
+                                        {
+                                            "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
                                         },
                                         {
                                             "$ref": "Pagination.json#/components/schemas/Pagination"
@@ -572,9 +627,6 @@
                                 "schema": {
                                     "allOf": [
                                         {
-                                            "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
-                                        },
-                                        {
                                             "type": "object",
                                             "properties": {
                                                 "result": {
@@ -592,6 +644,9 @@
                                                 },
                                                 "model": {}
                                             }
+                                        },
+                                        {
+                                            "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
                                         }
                                     ]
                                 }
@@ -626,9 +681,6 @@
                                 "schema": {
                                     "allOf": [
                                         {
-                                            "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
-                                        },
-                                        {
                                             "type": "object",
                                             "properties": {
                                                 "result": {
@@ -636,6 +688,9 @@
                                                 },
                                                 "model": {}
                                             }
+                                        },
+                                        {
+                                            "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
                                         }
                                     ]
                                 }
@@ -670,9 +725,6 @@
                                 "schema": {
                                     "allOf": [
                                         {
-                                            "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
-                                        },
-                                        {
                                             "type": "object",
                                             "properties": {
                                                 "result": {
@@ -680,6 +732,9 @@
                                                 },
                                                 "model": {}
                                             }
+                                        },
+                                        {
+                                            "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
                                         }
                                     ]
                                 }
@@ -714,9 +769,6 @@
                                 "schema": {
                                     "allOf": [
                                         {
-                                            "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
-                                        },
-                                        {
                                             "type": "object",
                                             "properties": {
                                                 "result": {
@@ -724,6 +776,9 @@
                                                 },
                                                 "model": {}
                                             }
+                                        },
+                                        {
+                                            "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
                                         }
                                     ]
                                 }
@@ -758,9 +813,6 @@
                                 "schema": {
                                     "allOf": [
                                         {
-                                            "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
-                                        },
-                                        {
                                             "type": "object",
                                             "properties": {
                                                 "result": {
@@ -778,6 +830,9 @@
                                                 },
                                                 "model": {}
                                             }
+                                        },
+                                        {
+                                            "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
                                         }
                                     ]
                                 }
@@ -862,6 +917,10 @@
         {
             "name": "Controller_2",
             "description": "controller_2"
+        },
+        {
+            "name": "Demo_2",
+            "description": "demo_2"
         },
         {
             "name": "Eastereggs_2",
