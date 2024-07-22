@@ -38,23 +38,6 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Вывод самых популярных сайтов из анализа конкурентов */
-    "/get/demo_2/": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        get?: never;
-        put?: never;
-        post: operations["GetDemo2"];
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
-    };  
     /**
      * Создать платежку и перейти к оплате
      * @description Возвратит id платежа, если указан параметр $return_id = true
@@ -390,33 +373,6 @@ export interface operations {
                 };
                 content: {
                     "application/octet-stream": string;
-                };
-            };
-        };
-    };
-    GetDemo2: {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        requestBody: {
-            content: {
-                "application/json": import('./Demo_2/Methods/Get.ts').components['schemas']['Demo_2.Methods.Get'];
-            };
-        };
-        responses: {
-            200: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/json": import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & {
-                        /** Список самых популярных доменов и их сводка */
-                        result?: (string | number)[];
-                        model?: unknown;
-                    };
                 };
             };
         };
