@@ -160,11 +160,13 @@
                                                 "result": {
                                                     "type": "array",
                                                     "items": {
-                                                        "$ref": "Models/Payments.json#/components/schemas/Models.Payments"
+                                                        "$ref": "Models/Payments.json#/components/schemas/Models.Payments",
+                                                        "description": "only for typescript, does not contain real data"
                                                     }
                                                 },
                                                 "model": {
-                                                    "$ref": "Models/Payments.json#/components/schemas/Models.Payments"
+                                                    "$ref": "Models/Payments.json#/components/schemas/Models.Payments",
+                                                    "description": "only for typescript, does not contain real data"
                                                 }
                                             },
                                             "required": [
@@ -519,11 +521,13 @@
                                                 "result": {
                                                     "type": "array",
                                                     "items": {
-                                                        "$ref": "Models/Projects.json#/components/schemas/Models.Projects"
+                                                        "$ref": "Models/Projects.json#/components/schemas/Models.Projects",
+                                                        "description": "only for typescript, does not contain real data"
                                                     }
                                                 },
                                                 "model": {
-                                                    "$ref": "Models/Projects.json#/components/schemas/Models.Projects"
+                                                    "$ref": "Models/Projects.json#/components/schemas/Models.Projects",
+                                                    "description": "only for typescript, does not contain real data"
                                                 }
                                             },
                                             "required": [

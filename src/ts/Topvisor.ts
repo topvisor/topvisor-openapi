@@ -423,6 +423,7 @@ export interface operations {
                 content: {
                     "application/json": {
                         result?: import('./Models/Payments.ts').components['schemas']['Models.Payments'][];
+                        /** @description only for typescript, does not contain real data */
                         model: import('./Models/Payments.ts').components['schemas']['Models.Payments'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination'];
                 };
@@ -607,6 +608,7 @@ export interface operations {
                 content: {
                     "application/json": {
                         result?: import('./Models/Projects.ts').components['schemas']['Models.Projects'][];
+                        /** @description only for typescript, does not contain real data */
                         model: import('./Models/Projects.ts').components['schemas']['Models.Projects'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination'];
                 };
