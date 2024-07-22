@@ -81,6 +81,61 @@
                 }
             }
         },
+        "/get/demo_2/": {
+            "post": {
+                "operationId": "GetDemo2",
+                "tags": [
+                    "Demo_2"
+                ],
+                "summary": "Получение самых популярных доменов",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Demo_2/Methods/Get.json#/components/schemas/Demo_2.Methods.Get"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "allOf": [
+                                        {
+                                            "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                        },
+                                        {
+                                            "type": "object",
+                                            "properties": {
+                                                "result": {
+                                                    "type": "array",
+                                                    "items": {
+                                                        "oneOf": [
+                                                            {
+                                                                "type": "string"
+                                                            },
+                                                            {
+                                                                "type": "number"
+                                                            }
+                                                        ]
+                                                    },
+                                                    "title": "Список самых популярных доменов"
+                                                },
+                                                "model": {}
+                                            }
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
         "/add/payments_2/": {
             "post": {
                 "operationId": "AddPayments2",
@@ -862,6 +917,10 @@
         {
             "name": "Controller_2",
             "description": "controller_2"
+        },
+        {
+            "name": "Demo_2",
+            "description": "demo_2"
         },
         {
             "name": "Eastereggs_2",

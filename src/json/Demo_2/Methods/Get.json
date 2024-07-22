@@ -1,0 +1,28 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Demo_2.Methods.Get",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Demo_2.Methods.Get": {
+                "type": "object",
+                "properties": {
+                    "date": {
+                        "allOf": [
+                            {
+                                "$ref": "../../TV/API/Types/Date.json#/components/schemas/TV.API.Types.Date"
+                            }
+                        ]
+                    },
+                    "regionIndex": {
+                        "type": "integer"
+                    }
+                },
+                "title": "Получение самых популярных доменов"
+            }
+        }
+    }
+}
