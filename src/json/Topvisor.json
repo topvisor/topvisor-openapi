@@ -36,7 +36,10 @@
                                                     "type": "integer"
                                                 },
                                                 "model": {}
-                                            }
+                                            },
+                                            "required": [
+                                                "model"
+                                            ]
                                         },
                                         {
                                             "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
@@ -81,61 +84,6 @@
                 }
             }
         },
-        "/get/demo_2/": {
-            "post": {
-                "operationId": "GetDemo2",
-                "tags": [
-                    "Demo_2"
-                ],
-                "summary": "Вывод самых популярных сайтов из анализа конкурентов",
-                "requestBody": {
-                    "content": {
-                        "application/json": {
-                            "schema": {
-                                "$ref": "Demo_2/Methods/Get.json#/components/schemas/Demo_2.Methods.Get"
-                            }
-                        }
-                    },
-                    "required": true
-                },
-                "responses": {
-                    "200": {
-                        "description": "",
-                        "content": {
-                            "application/json": {
-                                "schema": {
-                                    "allOf": [
-                                        {
-                                            "type": "object",
-                                            "properties": {
-                                                "result": {
-                                                    "type": "array",
-                                                    "items": {
-                                                        "oneOf": [
-                                                            {
-                                                                "type": "string"
-                                                            },
-                                                            {
-                                                                "type": "number"
-                                                            }
-                                                        ]
-                                                    },
-                                                    "title": "Список самых популярных доменов и их сводка"
-                                                },
-                                                "model": {}
-                                            }
-                                        },
-                                        {
-                                            "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
-                                        }
-                                    ]
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        },
         "/add/payments_2/": {
             "post": {
                 "operationId": "AddPayments2",
@@ -166,7 +114,10 @@
                                             "properties": {
                                                 "result": {},
                                                 "model": {}
-                                            }
+                                            },
+                                            "required": [
+                                                "model"
+                                            ]
                                         },
                                         {
                                             "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
@@ -215,7 +166,10 @@
                                                 "model": {
                                                     "$ref": "Models/Payments.json#/components/schemas/Models.Payments"
                                                 }
-                                            }
+                                            },
+                                            "required": [
+                                                "model"
+                                            ]
                                         },
                                         {
                                             "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
@@ -263,7 +217,10 @@
                                                     "type": "string"
                                                 },
                                                 "model": {}
-                                            }
+                                            },
+                                            "required": [
+                                                "model"
+                                            ]
                                         },
                                         {
                                             "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
@@ -306,7 +263,10 @@
                                             "properties": {
                                                 "result": {},
                                                 "model": {}
-                                            }
+                                            },
+                                            "required": [
+                                                "model"
+                                            ]
                                         },
                                         {
                                             "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
@@ -350,7 +310,10 @@
                                                     "$ref": "Controller_2/Objects/Page.json#/components/schemas/Controller_2.Objects.Page"
                                                 },
                                                 "model": {}
-                                            }
+                                            },
+                                            "required": [
+                                                "model"
+                                            ]
                                         },
                                         {
                                             "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
@@ -405,7 +368,10 @@
                                                     "title": "Ассоциативный результирующий массив, с данными, переданными в метод и результатом genSet()"
                                                 },
                                                 "model": {}
-                                            }
+                                            },
+                                            "required": [
+                                                "model"
+                                            ]
                                         },
                                         {
                                             "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
@@ -449,7 +415,10 @@
                                                     "type": "string"
                                                 },
                                                 "model": {}
-                                            }
+                                            },
+                                            "required": [
+                                                "model"
+                                            ]
                                         },
                                         {
                                             "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
@@ -504,7 +473,10 @@
                                                     "title": "Ассоциативный результирующий массив, с данными, переданными в метод"
                                                 },
                                                 "model": {}
-                                            }
+                                            },
+                                            "required": [
+                                                "model"
+                                            ]
                                         },
                                         {
                                             "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
@@ -553,7 +525,10 @@
                                                 "model": {
                                                     "$ref": "Models/Projects.json#/components/schemas/Models.Projects"
                                                 }
-                                            }
+                                            },
+                                            "required": [
+                                                "model"
+                                            ]
                                         },
                                         {
                                             "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
@@ -643,7 +618,10 @@
                                                     }
                                                 },
                                                 "model": {}
-                                            }
+                                            },
+                                            "required": [
+                                                "model"
+                                            ]
                                         },
                                         {
                                             "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
@@ -687,7 +665,10 @@
                                                     "type": "integer"
                                                 },
                                                 "model": {}
-                                            }
+                                            },
+                                            "required": [
+                                                "model"
+                                            ]
                                         },
                                         {
                                             "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
@@ -731,7 +712,10 @@
                                                     "type": "integer"
                                                 },
                                                 "model": {}
-                                            }
+                                            },
+                                            "required": [
+                                                "model"
+                                            ]
                                         },
                                         {
                                             "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
@@ -775,7 +759,10 @@
                                                     "type": "integer"
                                                 },
                                                 "model": {}
-                                            }
+                                            },
+                                            "required": [
+                                                "model"
+                                            ]
                                         },
                                         {
                                             "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
@@ -829,7 +816,10 @@
                                                     }
                                                 },
                                                 "model": {}
-                                            }
+                                            },
+                                            "required": [
+                                                "model"
+                                            ]
                                         },
                                         {
                                             "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
@@ -917,10 +907,6 @@
         {
             "name": "Controller_2",
             "description": "controller_2"
-        },
-        {
-            "name": "Demo_2",
-            "description": "demo_2"
         },
         {
             "name": "Eastereggs_2",

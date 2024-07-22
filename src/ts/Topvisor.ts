@@ -38,23 +38,6 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Вывод самых популярных сайтов из анализа конкурентов */
-    "/get/demo_2/": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        get?: never;
-        put?: never;
-        post: operations["GetDemo2"];
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
-    };  
     /**
      * Создать платежку и перейти к оплате
      * @description Возвратит id платежа, если указан параметр $return_id = true
@@ -365,7 +348,7 @@ export interface operations {
                 content: {
                     "application/json": {
                         result?: number;
-                        model?: unknown;
+                        model: unknown;
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'];
                 };
             };
@@ -394,33 +377,6 @@ export interface operations {
             };
         };
     };
-    GetDemo2: {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        requestBody: {
-            content: {
-                "application/json": import('./Demo_2/Methods/Get.ts').components['schemas']['Demo_2.Methods.Get'];
-            };
-        };
-        responses: {
-            200: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/json": {
-                        /** Список самых популярных доменов и их сводка */
-                        result?: (string | number)[];
-                        model?: unknown;
-                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'];
-                };
-            };
-        };
-    };
     AddPayments2: {
         parameters: {
             query?: never;
@@ -441,7 +397,7 @@ export interface operations {
                 content: {
                     "application/json": {
                         result?: unknown;
-                        model?: unknown;
+                        model: unknown;
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'];
                 };
             };
@@ -467,7 +423,7 @@ export interface operations {
                 content: {
                     "application/json": {
                         result?: import('./Models/Payments.ts').components['schemas']['Models.Payments'][];
-                        model?: import('./Models/Payments.ts').components['schemas']['Models.Payments'];
+                        model: import('./Models/Payments.ts').components['schemas']['Models.Payments'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination'];
                 };
             };
@@ -493,7 +449,7 @@ export interface operations {
                 content: {
                     "application/json": {
                         result?: string;
-                        model?: unknown;
+                        model: unknown;
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'];
                 };
             };
@@ -519,7 +475,7 @@ export interface operations {
                 content: {
                     "application/json": {
                         result?: unknown;
-                        model?: unknown;
+                        model: unknown;
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'];
                 };
             };
@@ -545,7 +501,7 @@ export interface operations {
                 content: {
                     "application/json": {
                         result?: import('./Controller_2/Objects/Page.ts').components['schemas']['Controller_2.Objects.Page'];
-                        model?: unknown;
+                        model: unknown;
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'];
                 };
             };
@@ -572,7 +528,7 @@ export interface operations {
                     "application/json": {
                         /** Ассоциативный результирующий массив, с данными, переданными в метод и результатом genSet() */
                         result?: (string | number)[];
-                        model?: unknown;
+                        model: unknown;
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'];
                 };
             };
@@ -598,7 +554,7 @@ export interface operations {
                 content: {
                     "application/json": {
                         result?: string;
-                        model?: unknown;
+                        model: unknown;
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'];
                 };
             };
@@ -625,7 +581,7 @@ export interface operations {
                     "application/json": {
                         /** Ассоциативный результирующий массив, с данными, переданными в метод */
                         result?: (string | number)[];
-                        model?: unknown;
+                        model: unknown;
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'];
                 };
             };
@@ -651,7 +607,7 @@ export interface operations {
                 content: {
                     "application/json": {
                         result?: import('./Models/Projects.ts').components['schemas']['Models.Projects'][];
-                        model?: import('./Models/Projects.ts').components['schemas']['Models.Projects'];
+                        model: import('./Models/Projects.ts').components['schemas']['Models.Projects'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination'];
                 };
             };
@@ -700,7 +656,7 @@ export interface operations {
                 content: {
                     "application/json": {
                         result?: (string | number)[];
-                        model?: unknown;
+                        model: unknown;
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'];
                 };
             };
@@ -726,7 +682,7 @@ export interface operations {
                 content: {
                     "application/json": {
                         result?: number;
-                        model?: unknown;
+                        model: unknown;
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'];
                 };
             };
@@ -752,7 +708,7 @@ export interface operations {
                 content: {
                     "application/json": {
                         result?: number;
-                        model?: unknown;
+                        model: unknown;
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'];
                 };
             };
@@ -778,7 +734,7 @@ export interface operations {
                 content: {
                     "application/json": {
                         result?: number;
-                        model?: unknown;
+                        model: unknown;
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'];
                 };
             };
@@ -804,7 +760,7 @@ export interface operations {
                 content: {
                     "application/json": {
                         result?: (string | number)[];
-                        model?: unknown;
+                        model: unknown;
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'];
                 };
             };
