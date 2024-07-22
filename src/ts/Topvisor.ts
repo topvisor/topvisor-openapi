@@ -38,7 +38,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Получение самых популярных доменов */
+    /** Вывод самых популярных сайтов из анализа конкурентов */
     "/get/demo_2/": {
         parameters: {
             query?: never;
@@ -413,7 +413,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & {
-                        /** Список самых популярных доменов */
+                        /** Список самых популярных доменов и их сводка */
                         result?: (string | number)[];
                         model?: unknown;
                     };

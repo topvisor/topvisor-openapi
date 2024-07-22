@@ -7,10 +7,11 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Получение самых популярных доменов */
+        /** Вывод самых популярных сайтов из анализа конкурентов */
         "Demo_2.Methods.Get": {
+            /** Дата отчета */
             date?: import('../../TV/API/Types/Date.ts').components['schemas']['TV.API.Types.Date'];
-            regionIndex?: number;
+            region_index?: number;
         };
     };
     responses: never;

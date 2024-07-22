@@ -11,17 +11,18 @@
                 "type": "object",
                 "properties": {
                     "date": {
+                        "title": "Дата отчета",
                         "allOf": [
                             {
                                 "$ref": "../../TV/API/Types/Date.json#/components/schemas/TV.API.Types.Date"
                             }
                         ]
                     },
-                    "regionIndex": {
+                    "region_index": {
                         "type": "integer"
                     }
                 },
-                "title": "Получение самых популярных доменов"
+                "title": "Вывод самых популярных сайтов из анализа конкурентов"
             }
         }
     }
