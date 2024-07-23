@@ -28,22 +28,29 @@
                         "content": {
                             "application/json": {
                                 "schema": {
-                                    "allOf": [
+                                    "oneOf": [
                                         {
-                                            "type": "object",
-                                            "properties": {
-                                                "result": {
-                                                    "type": "integer"
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "type": "integer"
+                                                        },
+                                                        "model": {}
+                                                    },
+                                                    "required": [
+                                                        "result",
+                                                        "model"
+                                                    ]
                                                 },
-                                                "model": {}
-                                            },
-                                            "required": [
-                                                "result",
-                                                "model"
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                }
                                             ]
                                         },
                                         {
-                                            "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
                                         }
                                     ]
                                 }
@@ -109,20 +116,27 @@
                         "content": {
                             "application/json": {
                                 "schema": {
-                                    "allOf": [
+                                    "oneOf": [
                                         {
-                                            "type": "object",
-                                            "properties": {
-                                                "result": {},
-                                                "model": {}
-                                            },
-                                            "required": [
-                                                "result",
-                                                "model"
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {},
+                                                        "model": {}
+                                                    },
+                                                    "required": [
+                                                        "result",
+                                                        "model"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                }
                                             ]
                                         },
                                         {
-                                            "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
                                         }
                                     ]
                                 }
@@ -155,26 +169,33 @@
                         "content": {
                             "application/json": {
                                 "schema": {
-                                    "allOf": [
+                                    "oneOf": [
                                         {
-                                            "type": "object",
-                                            "properties": {
-                                                "result": {},
-                                                "model": {
-                                                    "$ref": "Models/Payments.json#/components/schemas/Models.Payments",
-                                                    "description": "Only for typescript, does not contain real data"
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {},
+                                                        "model": {
+                                                            "$ref": "Models/Payments.json#/components/schemas/Models.Payments",
+                                                            "description": "Only for typescript, does not contain real data"
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "result",
+                                                        "model"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                },
+                                                {
+                                                    "$ref": "Pagination.json#/components/schemas/Pagination"
                                                 }
-                                            },
-                                            "required": [
-                                                "result",
-                                                "model"
                                             ]
                                         },
                                         {
-                                            "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
-                                        },
-                                        {
-                                            "$ref": "Pagination.json#/components/schemas/Pagination"
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
                                         }
                                     ]
                                 }
@@ -208,22 +229,29 @@
                         "content": {
                             "application/json": {
                                 "schema": {
-                                    "allOf": [
+                                    "oneOf": [
                                         {
-                                            "type": "object",
-                                            "properties": {
-                                                "result": {
-                                                    "type": "string"
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "type": "string"
+                                                        },
+                                                        "model": {}
+                                                    },
+                                                    "required": [
+                                                        "result",
+                                                        "model"
+                                                    ]
                                                 },
-                                                "model": {}
-                                            },
-                                            "required": [
-                                                "result",
-                                                "model"
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                }
                                             ]
                                         },
                                         {
-                                            "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
                                         }
                                     ]
                                 }
@@ -257,20 +285,27 @@
                         "content": {
                             "application/json": {
                                 "schema": {
-                                    "allOf": [
+                                    "oneOf": [
                                         {
-                                            "type": "object",
-                                            "properties": {
-                                                "result": {},
-                                                "model": {}
-                                            },
-                                            "required": [
-                                                "result",
-                                                "model"
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {},
+                                                        "model": {}
+                                                    },
+                                                    "required": [
+                                                        "result",
+                                                        "model"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                }
                                             ]
                                         },
                                         {
-                                            "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
                                         }
                                     ]
                                 }
@@ -303,22 +338,29 @@
                         "content": {
                             "application/json": {
                                 "schema": {
-                                    "allOf": [
+                                    "oneOf": [
                                         {
-                                            "type": "object",
-                                            "properties": {
-                                                "result": {
-                                                    "$ref": "Controller_2/Objects/Page.json#/components/schemas/Controller_2.Objects.Page"
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "$ref": "Controller_2/Objects/Page.json#/components/schemas/Controller_2.Objects.Page"
+                                                        },
+                                                        "model": {}
+                                                    },
+                                                    "required": [
+                                                        "result",
+                                                        "model"
+                                                    ]
                                                 },
-                                                "model": {}
-                                            },
-                                            "required": [
-                                                "result",
-                                                "model"
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                }
                                             ]
                                         },
                                         {
-                                            "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
                                         }
                                     ]
                                 }
@@ -351,33 +393,40 @@
                         "content": {
                             "application/json": {
                                 "schema": {
-                                    "allOf": [
+                                    "oneOf": [
                                         {
-                                            "type": "object",
-                                            "properties": {
-                                                "result": {
-                                                    "type": "array",
-                                                    "items": {
-                                                        "oneOf": [
-                                                            {
-                                                                "type": "string"
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "type": "array",
+                                                            "items": {
+                                                                "oneOf": [
+                                                                    {
+                                                                        "type": "string"
+                                                                    },
+                                                                    {
+                                                                        "type": "number"
+                                                                    }
+                                                                ]
                                                             },
-                                                            {
-                                                                "type": "number"
-                                                            }
-                                                        ]
+                                                            "title": "Ассоциативный результирующий массив, с данными, переданными в метод и результатом genSet()"
+                                                        },
+                                                        "model": {}
                                                     },
-                                                    "title": "Ассоциативный результирующий массив, с данными, переданными в метод и результатом genSet()"
+                                                    "required": [
+                                                        "result",
+                                                        "model"
+                                                    ]
                                                 },
-                                                "model": {}
-                                            },
-                                            "required": [
-                                                "result",
-                                                "model"
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                }
                                             ]
                                         },
                                         {
-                                            "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
                                         }
                                     ]
                                 }
@@ -410,22 +459,29 @@
                         "content": {
                             "application/json": {
                                 "schema": {
-                                    "allOf": [
+                                    "oneOf": [
                                         {
-                                            "type": "object",
-                                            "properties": {
-                                                "result": {
-                                                    "type": "string"
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "type": "string"
+                                                        },
+                                                        "model": {}
+                                                    },
+                                                    "required": [
+                                                        "result",
+                                                        "model"
+                                                    ]
                                                 },
-                                                "model": {}
-                                            },
-                                            "required": [
-                                                "result",
-                                                "model"
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                }
                                             ]
                                         },
                                         {
-                                            "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
                                         }
                                     ]
                                 }
@@ -458,33 +514,40 @@
                         "content": {
                             "application/json": {
                                 "schema": {
-                                    "allOf": [
+                                    "oneOf": [
                                         {
-                                            "type": "object",
-                                            "properties": {
-                                                "result": {
-                                                    "type": "array",
-                                                    "items": {
-                                                        "oneOf": [
-                                                            {
-                                                                "type": "string"
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "type": "array",
+                                                            "items": {
+                                                                "oneOf": [
+                                                                    {
+                                                                        "type": "string"
+                                                                    },
+                                                                    {
+                                                                        "type": "number"
+                                                                    }
+                                                                ]
                                                             },
-                                                            {
-                                                                "type": "number"
-                                                            }
-                                                        ]
+                                                            "title": "Ассоциативный результирующий массив, с данными, переданными в метод"
+                                                        },
+                                                        "model": {}
                                                     },
-                                                    "title": "Ассоциативный результирующий массив, с данными, переданными в метод"
+                                                    "required": [
+                                                        "result",
+                                                        "model"
+                                                    ]
                                                 },
-                                                "model": {}
-                                            },
-                                            "required": [
-                                                "result",
-                                                "model"
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                }
                                             ]
                                         },
                                         {
-                                            "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
                                         }
                                     ]
                                 }
@@ -517,32 +580,39 @@
                         "content": {
                             "application/json": {
                                 "schema": {
-                                    "allOf": [
+                                    "oneOf": [
                                         {
-                                            "type": "object",
-                                            "properties": {
-                                                "result": {
-                                                    "type": "array",
-                                                    "items": {
-                                                        "$ref": "Models/Projects.json#/components/schemas/Models.Projects",
-                                                        "description": "Only for typescript, does not contain real data"
-                                                    }
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "type": "array",
+                                                            "items": {
+                                                                "$ref": "Models/Projects.json#/components/schemas/Models.Projects",
+                                                                "description": "Only for typescript, does not contain real data"
+                                                            }
+                                                        },
+                                                        "model": {
+                                                            "$ref": "Models/Projects.json#/components/schemas/Models.Projects",
+                                                            "description": "Only for typescript, does not contain real data"
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "result",
+                                                        "model"
+                                                    ]
                                                 },
-                                                "model": {
-                                                    "$ref": "Models/Projects.json#/components/schemas/Models.Projects",
-                                                    "description": "Only for typescript, does not contain real data"
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                },
+                                                {
+                                                    "$ref": "Pagination.json#/components/schemas/Pagination"
                                                 }
-                                            },
-                                            "required": [
-                                                "result",
-                                                "model"
                                             ]
                                         },
                                         {
-                                            "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
-                                        },
-                                        {
-                                            "$ref": "Pagination.json#/components/schemas/Pagination"
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
                                         }
                                     ]
                                 }
@@ -608,32 +678,39 @@
                         "content": {
                             "application/json": {
                                 "schema": {
-                                    "allOf": [
+                                    "oneOf": [
                                         {
-                                            "type": "object",
-                                            "properties": {
-                                                "result": {
-                                                    "type": "array",
-                                                    "items": {
-                                                        "oneOf": [
-                                                            {
-                                                                "type": "string"
-                                                            },
-                                                            {
-                                                                "type": "number"
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "type": "array",
+                                                            "items": {
+                                                                "oneOf": [
+                                                                    {
+                                                                        "type": "string"
+                                                                    },
+                                                                    {
+                                                                        "type": "number"
+                                                                    }
+                                                                ]
                                                             }
-                                                        ]
-                                                    }
+                                                        },
+                                                        "model": {}
+                                                    },
+                                                    "required": [
+                                                        "result",
+                                                        "model"
+                                                    ]
                                                 },
-                                                "model": {}
-                                            },
-                                            "required": [
-                                                "result",
-                                                "model"
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                }
                                             ]
                                         },
                                         {
-                                            "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
                                         }
                                     ]
                                 }
@@ -666,22 +743,29 @@
                         "content": {
                             "application/json": {
                                 "schema": {
-                                    "allOf": [
+                                    "oneOf": [
                                         {
-                                            "type": "object",
-                                            "properties": {
-                                                "result": {
-                                                    "type": "integer"
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "type": "integer"
+                                                        },
+                                                        "model": {}
+                                                    },
+                                                    "required": [
+                                                        "result",
+                                                        "model"
+                                                    ]
                                                 },
-                                                "model": {}
-                                            },
-                                            "required": [
-                                                "result",
-                                                "model"
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                }
                                             ]
                                         },
                                         {
-                                            "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
                                         }
                                     ]
                                 }
@@ -714,22 +798,29 @@
                         "content": {
                             "application/json": {
                                 "schema": {
-                                    "allOf": [
+                                    "oneOf": [
                                         {
-                                            "type": "object",
-                                            "properties": {
-                                                "result": {
-                                                    "type": "integer"
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "type": "integer"
+                                                        },
+                                                        "model": {}
+                                                    },
+                                                    "required": [
+                                                        "result",
+                                                        "model"
+                                                    ]
                                                 },
-                                                "model": {}
-                                            },
-                                            "required": [
-                                                "result",
-                                                "model"
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                }
                                             ]
                                         },
                                         {
-                                            "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
                                         }
                                     ]
                                 }
@@ -762,22 +853,29 @@
                         "content": {
                             "application/json": {
                                 "schema": {
-                                    "allOf": [
+                                    "oneOf": [
                                         {
-                                            "type": "object",
-                                            "properties": {
-                                                "result": {
-                                                    "type": "integer"
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "type": "integer"
+                                                        },
+                                                        "model": {}
+                                                    },
+                                                    "required": [
+                                                        "result",
+                                                        "model"
+                                                    ]
                                                 },
-                                                "model": {}
-                                            },
-                                            "required": [
-                                                "result",
-                                                "model"
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                }
                                             ]
                                         },
                                         {
-                                            "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
                                         }
                                     ]
                                 }
@@ -810,32 +908,39 @@
                         "content": {
                             "application/json": {
                                 "schema": {
-                                    "allOf": [
+                                    "oneOf": [
                                         {
-                                            "type": "object",
-                                            "properties": {
-                                                "result": {
-                                                    "type": "array",
-                                                    "items": {
-                                                        "oneOf": [
-                                                            {
-                                                                "type": "string"
-                                                            },
-                                                            {
-                                                                "type": "number"
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "type": "array",
+                                                            "items": {
+                                                                "oneOf": [
+                                                                    {
+                                                                        "type": "string"
+                                                                    },
+                                                                    {
+                                                                        "type": "number"
+                                                                    }
+                                                                ]
                                                             }
-                                                        ]
-                                                    }
+                                                        },
+                                                        "model": {}
+                                                    },
+                                                    "required": [
+                                                        "result",
+                                                        "model"
+                                                    ]
                                                 },
-                                                "model": {}
-                                            },
-                                            "required": [
-                                                "result",
-                                                "model"
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                }
                                             ]
                                         },
                                         {
-                                            "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
                                         }
                                     ]
                                 }

@@ -346,10 +346,10 @@ export interface operations {
                     [name: string]: unknown;
                 };
                 content: {
-                    "application/json": {
+                    "application/json": ({
                         result: number;
                         model: unknown;
-                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                 };
             };
         };
@@ -395,10 +395,10 @@ export interface operations {
                     [name: string]: unknown;
                 };
                 content: {
-                    "application/json": {
+                    "application/json": ({
                         result: unknown;
                         model: unknown;
-                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                 };
             };
         };
@@ -421,11 +421,11 @@ export interface operations {
                     [name: string]: unknown;
                 };
                 content: {
-                    "application/json": {
+                    "application/json": ({
                         result: unknown;
                         /** @description Only for typescript, does not contain real data */
                         model: import('./Models/Payments.ts').components['schemas']['Models.Payments'];
-                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                 };
             };
         };
@@ -448,10 +448,10 @@ export interface operations {
                     [name: string]: unknown;
                 };
                 content: {
-                    "application/json": {
+                    "application/json": ({
                         result: string;
                         model: unknown;
-                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                 };
             };
         };
@@ -474,10 +474,10 @@ export interface operations {
                     [name: string]: unknown;
                 };
                 content: {
-                    "application/json": {
+                    "application/json": ({
                         result: unknown;
                         model: unknown;
-                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                 };
             };
         };
@@ -500,10 +500,10 @@ export interface operations {
                     [name: string]: unknown;
                 };
                 content: {
-                    "application/json": {
+                    "application/json": ({
                         result: import('./Controller_2/Objects/Page.ts').components['schemas']['Controller_2.Objects.Page'];
                         model: unknown;
-                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                 };
             };
         };
@@ -526,11 +526,11 @@ export interface operations {
                     [name: string]: unknown;
                 };
                 content: {
-                    "application/json": {
+                    "application/json": ({
                         /** Ассоциативный результирующий массив, с данными, переданными в метод и результатом genSet() */
                         result: (string | number)[];
                         model: unknown;
-                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                 };
             };
         };
@@ -553,10 +553,10 @@ export interface operations {
                     [name: string]: unknown;
                 };
                 content: {
-                    "application/json": {
+                    "application/json": ({
                         result: string;
                         model: unknown;
-                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                 };
             };
         };
@@ -579,11 +579,11 @@ export interface operations {
                     [name: string]: unknown;
                 };
                 content: {
-                    "application/json": {
+                    "application/json": ({
                         /** Ассоциативный результирующий массив, с данными, переданными в метод */
                         result: (string | number)[];
                         model: unknown;
-                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                 };
             };
         };
@@ -606,11 +606,11 @@ export interface operations {
                     [name: string]: unknown;
                 };
                 content: {
-                    "application/json": {
+                    "application/json": ({
                         result: import('./Models/Projects.ts').components['schemas']['Models.Projects'][];
                         /** @description Only for typescript, does not contain real data */
                         model: import('./Models/Projects.ts').components['schemas']['Models.Projects'];
-                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                 };
             };
         };
@@ -656,10 +656,10 @@ export interface operations {
                     [name: string]: unknown;
                 };
                 content: {
-                    "application/json": {
+                    "application/json": ({
                         result: (string | number)[];
                         model: unknown;
-                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                 };
             };
         };
@@ -682,10 +682,10 @@ export interface operations {
                     [name: string]: unknown;
                 };
                 content: {
-                    "application/json": {
+                    "application/json": ({
                         result: number;
                         model: unknown;
-                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                 };
             };
         };
@@ -708,10 +708,10 @@ export interface operations {
                     [name: string]: unknown;
                 };
                 content: {
-                    "application/json": {
+                    "application/json": ({
                         result: number;
                         model: unknown;
-                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                 };
             };
         };
@@ -734,10 +734,10 @@ export interface operations {
                     [name: string]: unknown;
                 };
                 content: {
-                    "application/json": {
+                    "application/json": ({
                         result: number;
                         model: unknown;
-                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                 };
             };
         };
@@ -760,10 +760,10 @@ export interface operations {
                     [name: string]: unknown;
                 };
                 content: {
-                    "application/json": {
+                    "application/json": ({
                         result: (string | number)[];
                         model: unknown;
-                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                 };
             };
         };
