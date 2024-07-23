@@ -54,7 +54,9 @@
                                 }
                             },
                             "model": {
-                                "schema": {}
+                                "schema": {
+                                    "type": "null"
+                                }
                             }
                         }
                     }
@@ -141,7 +143,9 @@
                                 }
                             },
                             "model": {
-                                "schema": {}
+                                "schema": {
+                                    "type": "null"
+                                }
                             }
                         }
                     }
@@ -258,7 +262,9 @@
                                 }
                             },
                             "model": {
-                                "schema": {}
+                                "schema": {
+                                    "type": "null"
+                                }
                             }
                         }
                     }
@@ -313,7 +319,9 @@
                                 }
                             },
                             "model": {
-                                "schema": {}
+                                "schema": {
+                                    "type": "null"
+                                }
                             }
                         }
                     }
@@ -369,7 +377,9 @@
                                 }
                             },
                             "model": {
-                                "schema": {}
+                                "schema": {
+                                    "type": "null"
+                                }
                             }
                         }
                     }
@@ -436,7 +446,9 @@
                                 }
                             },
                             "model": {
-                                "schema": {}
+                                "schema": {
+                                    "type": "null"
+                                }
                             }
                         }
                     }
@@ -492,7 +504,9 @@
                                 }
                             },
                             "model": {
-                                "schema": {}
+                                "schema": {
+                                    "type": "null"
+                                }
                             }
                         }
                     }
@@ -559,7 +573,9 @@
                                 }
                             },
                             "model": {
-                                "schema": {}
+                                "schema": {
+                                    "type": "null"
+                                }
                             }
                         }
                     }
@@ -724,7 +740,9 @@
                                 }
                             },
                             "model": {
-                                "schema": {}
+                                "schema": {
+                                    "type": "null"
+                                }
                             }
                         }
                     }
@@ -780,7 +798,9 @@
                                 }
                             },
                             "model": {
-                                "schema": {}
+                                "schema": {
+                                    "type": "null"
+                                }
                             }
                         }
                     }
@@ -836,7 +856,9 @@
                                 }
                             },
                             "model": {
-                                "schema": {}
+                                "schema": {
+                                    "type": "null"
+                                }
                             }
                         }
                     }
@@ -892,7 +914,9 @@
                                 }
                             },
                             "model": {
-                                "schema": {}
+                                "schema": {
+                                    "type": "null"
+                                }
                             }
                         }
                     }
@@ -958,7 +982,9 @@
                                 }
                             },
                             "model": {
-                                "schema": {}
+                                "schema": {
+                                    "type": "null"
+                                }
                             }
                         }
                     }

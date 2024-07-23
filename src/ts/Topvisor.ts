@@ -349,7 +349,7 @@ export interface operations {
                     "application/json": ({
                         result: number;
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: unknown;
+                    model: null;
                 };
             };
         };
@@ -398,7 +398,7 @@ export interface operations {
                     "application/json": ({
                         result: unknown;
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: unknown;
+                    model: null;
                 };
             };
         };
@@ -450,7 +450,7 @@ export interface operations {
                     "application/json": ({
                         result: string;
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: unknown;
+                    model: null;
                 };
             };
         };
@@ -476,7 +476,7 @@ export interface operations {
                     "application/json": ({
                         result: unknown;
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: unknown;
+                    model: null;
                 };
             };
         };
@@ -502,7 +502,7 @@ export interface operations {
                     "application/json": ({
                         result: import('./Controller_2/Objects/Page.ts').components['schemas']['Controller_2.Objects.Page'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: unknown;
+                    model: null;
                 };
             };
         };
@@ -529,7 +529,7 @@ export interface operations {
                         /** Ассоциативный результирующий массив, с данными, переданными в метод и результатом genSet() */
                         result: (string | number)[];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: unknown;
+                    model: null;
                 };
             };
         };
@@ -555,7 +555,7 @@ export interface operations {
                     "application/json": ({
                         result: string;
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: unknown;
+                    model: null;
                 };
             };
         };
@@ -582,7 +582,7 @@ export interface operations {
                         /** Ассоциативный результирующий массив, с данными, переданными в метод */
                         result: (string | number)[];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: unknown;
+                    model: null;
                 };
             };
         };
@@ -657,7 +657,7 @@ export interface operations {
                     "application/json": ({
                         result: (string | number)[];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: unknown;
+                    model: null;
                 };
             };
         };
@@ -683,7 +683,7 @@ export interface operations {
                     "application/json": ({
                         result: number;
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: unknown;
+                    model: null;
                 };
             };
         };
@@ -709,7 +709,7 @@ export interface operations {
                     "application/json": ({
                         result: number;
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: unknown;
+                    model: null;
                 };
             };
         };
@@ -735,7 +735,7 @@ export interface operations {
                     "application/json": ({
                         result: number;
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: unknown;
+                    model: null;
                 };
             };
         };
@@ -761,7 +761,7 @@ export interface operations {
                     "application/json": ({
                         result: (string | number)[];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: unknown;
+                    model: null;
                 };
             };
         };
