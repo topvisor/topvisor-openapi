@@ -36,12 +36,10 @@
                                                     "properties": {
                                                         "result": {
                                                             "type": "integer"
-                                                        },
-                                                        "model": {}
+                                                        }
                                                     },
                                                     "required": [
-                                                        "result",
-                                                        "model"
+                                                        "result"
                                                     ]
                                                 },
                                                 {
@@ -54,6 +52,9 @@
                                         }
                                     ]
                                 }
+                            },
+                            "model": {
+                                "schema": {}
                             }
                         }
                     }
@@ -122,12 +123,10 @@
                                                 {
                                                     "type": "object",
                                                     "properties": {
-                                                        "result": {},
-                                                        "model": {}
+                                                        "result": {}
                                                     },
                                                     "required": [
-                                                        "result",
-                                                        "model"
+                                                        "result"
                                                     ]
                                                 },
                                                 {
@@ -140,6 +139,9 @@
                                         }
                                     ]
                                 }
+                            },
+                            "model": {
+                                "schema": {}
                             }
                         }
                     }
@@ -175,15 +177,10 @@
                                                 {
                                                     "type": "object",
                                                     "properties": {
-                                                        "result": {},
-                                                        "model": {
-                                                            "$ref": "Models/Payments.json#/components/schemas/Models.Payments",
-                                                            "description": "Only for typescript, does not contain real data"
-                                                        }
+                                                        "result": {}
                                                     },
                                                     "required": [
-                                                        "result",
-                                                        "model"
+                                                        "result"
                                                     ]
                                                 },
                                                 {
@@ -198,6 +195,12 @@
                                             "$ref": "ResponseError.json#/components/schemas/ResponseError"
                                         }
                                     ]
+                                }
+                            },
+                            "model": {
+                                "schema": {
+                                    "$ref": "Models/Payments.json#/components/schemas/Models.Payments",
+                                    "description": "Only for typescript, does not contain real data"
                                 }
                             }
                         }
@@ -237,12 +240,10 @@
                                                     "properties": {
                                                         "result": {
                                                             "type": "string"
-                                                        },
-                                                        "model": {}
+                                                        }
                                                     },
                                                     "required": [
-                                                        "result",
-                                                        "model"
+                                                        "result"
                                                     ]
                                                 },
                                                 {
@@ -255,6 +256,9 @@
                                         }
                                     ]
                                 }
+                            },
+                            "model": {
+                                "schema": {}
                             }
                         }
                     }
@@ -291,12 +295,10 @@
                                                 {
                                                     "type": "object",
                                                     "properties": {
-                                                        "result": {},
-                                                        "model": {}
+                                                        "result": {}
                                                     },
                                                     "required": [
-                                                        "result",
-                                                        "model"
+                                                        "result"
                                                     ]
                                                 },
                                                 {
@@ -309,6 +311,9 @@
                                         }
                                     ]
                                 }
+                            },
+                            "model": {
+                                "schema": {}
                             }
                         }
                     }
@@ -346,12 +351,10 @@
                                                     "properties": {
                                                         "result": {
                                                             "$ref": "Controller_2/Objects/Page.json#/components/schemas/Controller_2.Objects.Page"
-                                                        },
-                                                        "model": {}
+                                                        }
                                                     },
                                                     "required": [
-                                                        "result",
-                                                        "model"
+                                                        "result"
                                                     ]
                                                 },
                                                 {
@@ -364,6 +367,9 @@
                                         }
                                     ]
                                 }
+                            },
+                            "model": {
+                                "schema": {}
                             }
                         }
                     }
@@ -412,12 +418,10 @@
                                                                 ]
                                                             },
                                                             "title": "Ассоциативный результирующий массив, с данными, переданными в метод и результатом genSet()"
-                                                        },
-                                                        "model": {}
+                                                        }
                                                     },
                                                     "required": [
-                                                        "result",
-                                                        "model"
+                                                        "result"
                                                     ]
                                                 },
                                                 {
@@ -430,6 +434,9 @@
                                         }
                                     ]
                                 }
+                            },
+                            "model": {
+                                "schema": {}
                             }
                         }
                     }
@@ -467,12 +474,10 @@
                                                     "properties": {
                                                         "result": {
                                                             "type": "string"
-                                                        },
-                                                        "model": {}
+                                                        }
                                                     },
                                                     "required": [
-                                                        "result",
-                                                        "model"
+                                                        "result"
                                                     ]
                                                 },
                                                 {
@@ -485,6 +490,9 @@
                                         }
                                     ]
                                 }
+                            },
+                            "model": {
+                                "schema": {}
                             }
                         }
                     }
@@ -533,12 +541,10 @@
                                                                 ]
                                                             },
                                                             "title": "Ассоциативный результирующий массив, с данными, переданными в метод"
-                                                        },
-                                                        "model": {}
+                                                        }
                                                     },
                                                     "required": [
-                                                        "result",
-                                                        "model"
+                                                        "result"
                                                     ]
                                                 },
                                                 {
@@ -551,6 +557,9 @@
                                         }
                                     ]
                                 }
+                            },
+                            "model": {
+                                "schema": {}
                             }
                         }
                     }
@@ -592,15 +601,10 @@
                                                                 "$ref": "Models/Projects.json#/components/schemas/Models.Projects",
                                                                 "description": "Only for typescript, does not contain real data"
                                                             }
-                                                        },
-                                                        "model": {
-                                                            "$ref": "Models/Projects.json#/components/schemas/Models.Projects",
-                                                            "description": "Only for typescript, does not contain real data"
                                                         }
                                                     },
                                                     "required": [
-                                                        "result",
-                                                        "model"
+                                                        "result"
                                                     ]
                                                 },
                                                 {
@@ -615,6 +619,12 @@
                                             "$ref": "ResponseError.json#/components/schemas/ResponseError"
                                         }
                                     ]
+                                }
+                            },
+                            "model": {
+                                "schema": {
+                                    "$ref": "Models/Projects.json#/components/schemas/Models.Projects",
+                                    "description": "Only for typescript, does not contain real data"
                                 }
                             }
                         }
@@ -696,12 +706,10 @@
                                                                     }
                                                                 ]
                                                             }
-                                                        },
-                                                        "model": {}
+                                                        }
                                                     },
                                                     "required": [
-                                                        "result",
-                                                        "model"
+                                                        "result"
                                                     ]
                                                 },
                                                 {
@@ -714,6 +722,9 @@
                                         }
                                     ]
                                 }
+                            },
+                            "model": {
+                                "schema": {}
                             }
                         }
                     }
@@ -751,12 +762,10 @@
                                                     "properties": {
                                                         "result": {
                                                             "type": "integer"
-                                                        },
-                                                        "model": {}
+                                                        }
                                                     },
                                                     "required": [
-                                                        "result",
-                                                        "model"
+                                                        "result"
                                                     ]
                                                 },
                                                 {
@@ -769,6 +778,9 @@
                                         }
                                     ]
                                 }
+                            },
+                            "model": {
+                                "schema": {}
                             }
                         }
                     }
@@ -806,12 +818,10 @@
                                                     "properties": {
                                                         "result": {
                                                             "type": "integer"
-                                                        },
-                                                        "model": {}
+                                                        }
                                                     },
                                                     "required": [
-                                                        "result",
-                                                        "model"
+                                                        "result"
                                                     ]
                                                 },
                                                 {
@@ -824,6 +834,9 @@
                                         }
                                     ]
                                 }
+                            },
+                            "model": {
+                                "schema": {}
                             }
                         }
                     }
@@ -861,12 +874,10 @@
                                                     "properties": {
                                                         "result": {
                                                             "type": "integer"
-                                                        },
-                                                        "model": {}
+                                                        }
                                                     },
                                                     "required": [
-                                                        "result",
-                                                        "model"
+                                                        "result"
                                                     ]
                                                 },
                                                 {
@@ -879,6 +890,9 @@
                                         }
                                     ]
                                 }
+                            },
+                            "model": {
+                                "schema": {}
                             }
                         }
                     }
@@ -926,12 +940,10 @@
                                                                     }
                                                                 ]
                                                             }
-                                                        },
-                                                        "model": {}
+                                                        }
                                                     },
                                                     "required": [
-                                                        "result",
-                                                        "model"
+                                                        "result"
                                                     ]
                                                 },
                                                 {
@@ -944,6 +956,9 @@
                                         }
                                     ]
                                 }
+                            },
+                            "model": {
+                                "schema": {}
                             }
                         }
                     }
