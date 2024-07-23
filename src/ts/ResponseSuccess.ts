@@ -15,7 +15,7 @@ export interface components {
              */
             errors?: null | null;
             /** Список ообщений, полученных при выполнении запроса */
-            messages?: import('./TV/API/Types/StringArray.ts').components['schemas']['TV.API.Types.StringArray'];
+            messages?: import('./TV/API/Types/StringArray.ts').components['schemas']['TV.API.Types.StringArray'] | null;
         };
     };
     responses: never;

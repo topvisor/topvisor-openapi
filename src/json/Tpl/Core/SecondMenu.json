@@ -9,7 +9,8 @@
         "schemas": {
             "Tpl.Core.SecondMenu": {
                 "type": "object",
-                "properties": {}
+                "properties": {},
+                "required": []
             }
         }
     }

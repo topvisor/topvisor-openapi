@@ -61,6 +61,13 @@
                         }
                     }
                 },
+                "required": [
+                    "name",
+                    "direction",
+                    "orderValues",
+                    "operator",
+                    "values"
+                ],
                 "title": "Поле сортировки"
             }
         }

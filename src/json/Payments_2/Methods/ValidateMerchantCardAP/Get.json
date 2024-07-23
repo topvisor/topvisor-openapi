@@ -15,6 +15,9 @@
                         "type": "string"
                     }
                 },
+                "required": [
+                    "validation_url"
+                ],
                 "title": "Валидация домена для подтверждения оплаты Apple Pay (system = card_ap)"
             }
         }

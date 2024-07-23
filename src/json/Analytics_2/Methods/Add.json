@@ -41,6 +41,7 @@
                         "type": "integer"
                     }
                 },
+                "required": [],
                 "title": "Фиксация события"
             }
         }

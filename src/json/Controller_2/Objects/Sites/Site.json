@@ -9,7 +9,8 @@
         "schemas": {
             "Controller_2.Objects.Sites.Site": {
                 "type": "object",
-                "properties": {}
+                "properties": {},
+                "required": []
             }
         }
     }

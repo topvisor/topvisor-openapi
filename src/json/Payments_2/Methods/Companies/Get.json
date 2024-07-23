@@ -10,6 +10,7 @@
             "Payments_2.Methods.Companies.Get": {
                 "type": "object",
                 "properties": {},
+                "required": [],
                 "title": "Компании пользователя, через которых, были совершены платежи"
             }
         }

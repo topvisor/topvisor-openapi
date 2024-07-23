@@ -10,6 +10,7 @@
             "Controller_2.Objects.TplEngine": {
                 "type": "object",
                 "properties": {},
+                "required": [],
                 "title": "Движок работы с шаблонизатором",
                 "description": "Является неотъемлемой частью Page"
             }

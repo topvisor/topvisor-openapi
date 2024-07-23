@@ -36,6 +36,9 @@
                         "$ref": "../../TV/API/Params/FetchStyleTrait.json#/components/schemas/TV.API.Params.FetchStyleTrait/properties/fetch_style"
                     }
                 },
+                "required": [
+                    "include_is_domains_services_provided"
+                ],
                 "title": "Получить список платежей"
             }
         }

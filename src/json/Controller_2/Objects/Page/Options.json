@@ -38,7 +38,15 @@
                             ]
                         }
                     }
-                }
+                },
+                "required": [
+                    "title",
+                    "description",
+                    "keywords",
+                    "noindex",
+                    "canonical",
+                    "alternates"
+                ]
             }
         }
     }

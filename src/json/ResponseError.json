@@ -17,6 +17,7 @@
                     },
                     "errors": {
                         "title": "Список ошибок, полученных при выполнении запроса",
+                        "description": "@requires",
                         "allOf": [
                             {
                                 "$ref": "Errors.json#/components/schemas/Errors"
@@ -25,6 +26,7 @@
                     },
                     "messages": {
                         "title": "Список ообщений, полученных при выполнении запроса",
+                        "nullable": true,
                         "allOf": [
                             {
                                 "$ref": "TV/API/Types/StringArray.json#/components/schemas/TV.API.Types.StringArray"
@@ -32,6 +34,9 @@
                         ]
                     }
                 },
+                "required": [
+                    "errors"
+                ],
                 "title": "Результат API запроса с ошибкой"
             }
         }

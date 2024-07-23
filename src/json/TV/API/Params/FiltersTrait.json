@@ -32,7 +32,8 @@
                         "nullable": true,
                         "type": "integer"
                     }
-                }
+                },
+                "required": []
             }
         },
         "parameters": {

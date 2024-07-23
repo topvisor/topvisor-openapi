@@ -19,39 +19,39 @@ export interface components {
          */
         "Payments_2.Methods.Add": {
             /** Платежная система */
-            system?: import('../Types/System.ts').components['schemas']['Payments_2.Types.System'];
+            system: import('../Types/System.ts').components['schemas']['Payments_2.Types.System'];
             /** Сумма платежа */
-            sum?: number;
+            sum: number;
             /** Страна реквизитов */
-            country?: import('../Types/Country.ts').components['schemas']['Payments_2.Types.Country'];
+            country: import('../Types/Country.ts').components['schemas']['Payments_2.Types.Country'];
             /** Номер договора/оферты для платежа */
-            requisites_id?: string;
+            requisites_id: string;
             /** ID тарифа (если указан, сумма будет переопределена) */
-            tariff_id?: number;
+            tariff_id: number;
             /**
              * Число предоплаченных месяцев по тарифу
              * @description Примеры:
              *     - при оплате тарифа на 1 месяц должен быть равен 1
              *     - при оплате тарифа на 2 месяца должен быть равен 2
              */
-            tariff_count_month?: number;
+            tariff_count_month: number;
             /** Комментарий */
-            comment?: string;
+            comment: string;
             /** Комментарий */
-            items?: (string | number)[];
+            items: (string | number)[];
             /** ID карты в системе оплаты для привязки */
-            card_id?: string;
+            card_id: string;
             /** Пробрасываемые данные в redirectToPay() для FinishAuthorize Tinkoff для Apple Pay и Google Pay */
-            payment_data?: string;
+            payment_data: string;
             /** Email (указывается, если у пользователя не привязан email)
              *     TODO: Добавить тип Email */
             email?: string | null;
             /** Телефон (указывается для определенных систем оплаты) */
-            phone?: string;
+            phone: string;
             /** Флаг - отменяемый платеж, используется для сохранения данных банковской карты пользователя, сумма платежа вернется пользователю после отмены */
-            is_cancelable?: boolean;
+            is_cancelable: boolean;
             /** Возвратить id платежа, не выполняя redirectToPay() */
-            return_id?: boolean;
+            return_id: boolean;
         };
     };
     responses: never;

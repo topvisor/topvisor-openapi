@@ -10,8 +10,8 @@ export interface components {
         /** Метод с примерами параметров типа Enum */
         "Example_2.Methods.Enum.Get": {
             number?: import('../../Types/Number.ts').components['schemas']['Example_2.Types.Number'] | null;
-            number2?: import('../../Types/Number.ts').components['schemas']['Example_2.Types.Number'];
-            letter?: import('../../Types/Letter.ts').components['schemas']['Example_2.Types.Letter'];
+            number2: import('../../Types/Number.ts').components['schemas']['Example_2.Types.Number'];
+            letter: import('../../Types/Letter.ts').components['schemas']['Example_2.Types.Letter'];
         };
     };
     responses: never;

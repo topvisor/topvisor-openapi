@@ -16,7 +16,8 @@
                         "nullable": true,
                         "type": "string"
                     }
-                }
+                },
+                "required": []
             }
         },
         "parameters": {

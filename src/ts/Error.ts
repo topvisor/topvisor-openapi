@@ -13,11 +13,11 @@ export interface components {
              * Код ошибки
              * @description Код ошибки 0 - deprecated
              */
-            code?: number;
+            code: number;
             /** Описание ошибки */
-            string?: string;
+            string: string;
             /** Дополнительная информация об ошибке */
-            detail?: string;
+            detail: string;
         };
     };
     responses: never;

@@ -13,18 +13,18 @@ export interface components {
          */
         "Qr_2.Methods.Get": {
             /** Кодируемый текст */
-            text?: string;
+            text: string;
             /**
              * Кодируемый текст
              * @description - 0 - черно-белый
              *     - 1 - шашечки
              *     - 2 - группы с закруглениями
              */
-            tpl_n?: import('../Types/TplN.ts').components['schemas']['Qr_2.Types.TplN'];
+            tpl_n: import('../Types/TplN.ts').components['schemas']['Qr_2.Types.TplN'];
             /** Использовать ли брендированное лого */
-            use_brand?: boolean;
+            use_brand: boolean;
             /** Использовать ли цвета из лого */
-            use_logo_colors?: boolean;
+            use_logo_colors: boolean;
             /** Использовать указанный цвет, цвет задается массивом из 3 элементов [r, g, b] */
             color?: (string | number)[] | null;
             /**

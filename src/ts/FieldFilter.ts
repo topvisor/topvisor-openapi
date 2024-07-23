@@ -10,16 +10,16 @@ export interface components {
         /** Поле фильтра */
         FieldFilter: {
             /** Имя поля */
-            name?: string;
+            name: string;
             /** Оператор сравнения */
-            operator?: import('./FieldOperator.ts').components['schemas']['FieldOperator'];
+            operator: import('./FieldOperator.ts').components['schemas']['FieldOperator'];
             /**
              * Значения для сравнения
              * @description В зависимости от типа условия оно может иметь разное количество значений
              *
              *     Обычно оно имеет только одно значение
              */
-            values?: (string | number)[];
+            values: (string | number)[];
         };
     };
     responses: never;

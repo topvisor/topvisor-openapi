@@ -10,7 +10,7 @@ export interface components {
         /** Изменить платежные реквизиты тарифа */
         "Payments_2.Methods.NextRequisitesId.Edit": {
             /** ID следующего запроса */
-            next_requisites_id?: string;
+            next_requisites_id: string;
         };
     };
     responses: never;

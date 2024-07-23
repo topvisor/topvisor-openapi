@@ -26,7 +26,8 @@
                             ]
                         }
                     }
-                }
+                },
+                "required": []
             }
         },
         "parameters": {

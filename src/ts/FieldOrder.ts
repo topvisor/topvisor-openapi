@@ -10,23 +10,23 @@ export interface components {
         /** Поле сортировки */
         FieldOrder: {
             /** Имя поля */
-            name?: string;
+            name: string;
             /**
              * Оператор сравнения
              * @default ASC
              */
             direction: import('./FieldDirection.ts').components['schemas']['FieldDirection'];
             /** Список значений поля, для ручной сортировки */
-            orderValues?: (string | number)[];
+            orderValues: (string | number)[];
             /** Оператор сравнения */
-            operator?: import('./FieldOperator.ts').components['schemas']['FieldOperator'];
+            operator: import('./FieldOperator.ts').components['schemas']['FieldOperator'];
             /**
              * Значения для сравенния
              * @description В зависимости от типа условия оно может иметь разное количество значений
              *
              *     Обычно оно имеет только одно значение
              */
-            values?: (string | number)[];
+            values: (string | number)[];
         };
     };
     responses: never;

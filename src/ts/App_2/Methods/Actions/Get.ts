@@ -16,9 +16,9 @@ export interface components {
          */
         "App_2.Methods.Actions.Get": {
             /** Email пользователя */
-            email?: string;
+            email: string;
             /** Код для генерации ссылки подтверждения */
-            code?: string;
+            code: string;
             /**
              * Тип подтверждения
              * @default acceptAction

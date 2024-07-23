@@ -15,6 +15,9 @@
                         "type": "string"
                     }
                 },
+                "required": [
+                    "next_requisites_id"
+                ],
                 "title": "Изменить платежные реквизиты тарифа"
             }
         }

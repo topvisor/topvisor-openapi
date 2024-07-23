@@ -18,6 +18,7 @@
                     },
                     "messages": {
                         "title": "Список ообщений, полученных при выполнении запроса",
+                        "nullable": true,
                         "allOf": [
                             {
                                 "$ref": "TV/API/Types/StringArray.json#/components/schemas/TV.API.Types.StringArray"
@@ -25,6 +26,7 @@
                         ]
                     }
                 },
+                "required": [],
                 "title": "Результат успешного API запроса"
             }
         }

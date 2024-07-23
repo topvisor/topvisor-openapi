@@ -10,9 +10,9 @@ export interface components {
         /** Подписать контракт (только для админов) */
         "Payments_2.Methods.ContractSign.Edit": {
             /** Номер договора/оферты для платежа */
-            requisites_id?: string;
+            requisites_id: string;
             /** Флаг обозначающий подписан ли контракт */
-            signed?: boolean;
+            signed: boolean;
         };
     };
     responses: never;

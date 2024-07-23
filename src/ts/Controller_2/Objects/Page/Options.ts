@@ -8,12 +8,12 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         "Controller_2.Objects.Page.Options": {
-            title?: string;
-            description?: string;
-            keywords?: string;
-            noindex?: boolean;
-            canonical?: string;
-            alternates?: (string | number)[];
+            title: string;
+            description: string;
+            keywords: string;
+            noindex: boolean;
+            canonical: string;
+            alternates: (string | number)[];
         };
     };
     responses: never;

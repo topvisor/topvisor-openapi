@@ -17,6 +17,9 @@
                         "type": "string"
                     }
                 },
+                "required": [
+                    "format"
+                ],
                 "title": "Получение текущего времени"
             }
         }

@@ -24,6 +24,11 @@
                         "type": "string"
                     }
                 },
+                "required": [
+                    "code",
+                    "string",
+                    "detail"
+                ],
                 "title": "Информация об ошибке"
             }
         }

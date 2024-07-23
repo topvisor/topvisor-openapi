@@ -9,7 +9,8 @@
         "schemas": {
             "Controller_2.Objects.Location": {
                 "type": "object",
-                "properties": {}
+                "properties": {},
+                "required": []
             }
         }
     }

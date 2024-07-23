@@ -10,7 +10,7 @@ export interface components {
         /** Валидация домена для подтверждения оплаты Apple Pay (system = card_ap) */
         "Payments_2.Methods.ValidateMerchantCardAP.Get": {
             /** URL для запроса к Apple Pay */
-            validation_url?: string;
+            validation_url: string;
         };
     };
     responses: never;

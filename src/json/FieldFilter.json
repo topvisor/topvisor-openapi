@@ -38,6 +38,11 @@
                         }
                     }
                 },
+                "required": [
+                    "name",
+                    "operator",
+                    "values"
+                ],
                 "title": "Поле фильтра"
             }
         }

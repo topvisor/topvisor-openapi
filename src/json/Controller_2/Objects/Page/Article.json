@@ -124,7 +124,31 @@
                     "bookmark_author": {
                         "type": "string"
                     }
-                }
+                },
+                "required": [
+                    "type",
+                    "htmlRaw",
+                    "url",
+                    "parent_url",
+                    "h1",
+                    "html",
+                    "image",
+                    "tags",
+                    "count_views",
+                    "count_likes",
+                    "theme",
+                    "noindex",
+                    "quiz_id",
+                    "state",
+                    "rubric_name",
+                    "user_id",
+                    "user_description",
+                    "user_avatar",
+                    "view",
+                    "like",
+                    "bookmark",
+                    "bookmark_author"
+                ]
             }
         }
     }

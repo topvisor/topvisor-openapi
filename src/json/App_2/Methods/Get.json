@@ -10,6 +10,7 @@
             "App_2.Methods.Get": {
                 "type": "object",
                 "properties": {},
+                "required": [],
                 "title": "Получение заархивированного приложения"
             }
         }

@@ -200,7 +200,44 @@
                     "vJS": {
                         "type": "string"
                     }
-                }
+                },
+                "required": [
+                    "location",
+                    "openGraph",
+                    "options",
+                    "article",
+                    "secondMenu",
+                    "leftMenu",
+                    "params",
+                    "site",
+                    "subdomain",
+                    "langContext",
+                    "langUrl",
+                    "modUrl",
+                    "mod",
+                    "subMod",
+                    "theme",
+                    "jsonLDs",
+                    "htmlAttributes",
+                    "logo",
+                    "redirect",
+                    "redirectCode",
+                    "tplEngine",
+                    "tplStaticPath",
+                    "tplStatic",
+                    "tplStaticRendered",
+                    "tplPath",
+                    "tplRendered",
+                    "tplSiteRendered",
+                    "data",
+                    "rightsLabels",
+                    "isFullSize",
+                    "showFooter",
+                    "isAdaptive",
+                    "additionalHeadCode",
+                    "v",
+                    "vJS"
+                ]
             }
         }
     }

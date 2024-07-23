@@ -52,6 +52,13 @@
                         "type": "integer"
                     }
                 },
+                "required": [
+                    "text",
+                    "tpl_n",
+                    "use_brand",
+                    "use_logo_colors",
+                    "point_size"
+                ],
                 "title": "Генерирует QR код по тексту",
                 "description": "Возвращает изображение в формате data:image/png;base64"
             }
