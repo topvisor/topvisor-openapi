@@ -13,7 +13,7 @@ export interface components {
              * Результат ответа API метода
              * @description Тип результата зависит от типа запроса и его настроек
              */
-            result?: unknown;
+            errors?: null | null;
             /** Список ообщений, полученных при выполнении запроса */
             messages?: import('./TV/API/Types/StringArray.ts').components['schemas']['TV.API.Types.StringArray'];
         };

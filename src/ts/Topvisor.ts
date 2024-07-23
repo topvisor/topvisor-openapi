@@ -347,7 +347,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": {
-                        result?: number;
+                        result: number;
                         model: unknown;
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'];
                 };
@@ -396,7 +396,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": {
-                        result?: unknown;
+                        result: unknown;
                         model: unknown;
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'];
                 };
@@ -422,8 +422,8 @@ export interface operations {
                 };
                 content: {
                     "application/json": {
-                        result?: import('./Models/Payments.ts').components['schemas']['Models.Payments'][];
-                        /** @description only for typescript, does not contain real data */
+                        result: unknown;
+                        /** @description Only for typescript, does not contain real data */
                         model: import('./Models/Payments.ts').components['schemas']['Models.Payments'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination'];
                 };
@@ -449,7 +449,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": {
-                        result?: string;
+                        result: string;
                         model: unknown;
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'];
                 };
@@ -475,7 +475,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": {
-                        result?: unknown;
+                        result: unknown;
                         model: unknown;
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'];
                 };
@@ -501,7 +501,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": {
-                        result?: import('./Controller_2/Objects/Page.ts').components['schemas']['Controller_2.Objects.Page'];
+                        result: import('./Controller_2/Objects/Page.ts').components['schemas']['Controller_2.Objects.Page'];
                         model: unknown;
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'];
                 };
@@ -528,7 +528,7 @@ export interface operations {
                 content: {
                     "application/json": {
                         /** Ассоциативный результирующий массив, с данными, переданными в метод и результатом genSet() */
-                        result?: (string | number)[];
+                        result: (string | number)[];
                         model: unknown;
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'];
                 };
@@ -554,7 +554,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": {
-                        result?: string;
+                        result: string;
                         model: unknown;
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'];
                 };
@@ -581,7 +581,7 @@ export interface operations {
                 content: {
                     "application/json": {
                         /** Ассоциативный результирующий массив, с данными, переданными в метод */
-                        result?: (string | number)[];
+                        result: (string | number)[];
                         model: unknown;
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'];
                 };
@@ -607,8 +607,8 @@ export interface operations {
                 };
                 content: {
                     "application/json": {
-                        result?: import('./Models/Projects.ts').components['schemas']['Models.Projects'][];
-                        /** @description only for typescript, does not contain real data */
+                        result: import('./Models/Projects.ts').components['schemas']['Models.Projects'][];
+                        /** @description Only for typescript, does not contain real data */
                         model: import('./Models/Projects.ts').components['schemas']['Models.Projects'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination'];
                 };
@@ -657,7 +657,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": {
-                        result?: (string | number)[];
+                        result: (string | number)[];
                         model: unknown;
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'];
                 };
@@ -683,7 +683,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": {
-                        result?: number;
+                        result: number;
                         model: unknown;
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'];
                 };
@@ -709,7 +709,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": {
-                        result?: number;
+                        result: number;
                         model: unknown;
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'];
                 };
@@ -735,7 +735,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": {
-                        result?: number;
+                        result: number;
                         model: unknown;
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'];
                 };
@@ -761,7 +761,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": {
-                        result?: (string | number)[];
+                        result: (string | number)[];
                         model: unknown;
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'];
                 };

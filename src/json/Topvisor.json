@@ -38,6 +38,7 @@
                                                 "model": {}
                                             },
                                             "required": [
+                                                "result",
                                                 "model"
                                             ]
                                         },
@@ -116,6 +117,7 @@
                                                 "model": {}
                                             },
                                             "required": [
+                                                "result",
                                                 "model"
                                             ]
                                         },
@@ -157,19 +159,14 @@
                                         {
                                             "type": "object",
                                             "properties": {
-                                                "result": {
-                                                    "type": "array",
-                                                    "items": {
-                                                        "$ref": "Models/Payments.json#/components/schemas/Models.Payments",
-                                                        "description": "only for typescript, does not contain real data"
-                                                    }
-                                                },
+                                                "result": {},
                                                 "model": {
                                                     "$ref": "Models/Payments.json#/components/schemas/Models.Payments",
-                                                    "description": "only for typescript, does not contain real data"
+                                                    "description": "Only for typescript, does not contain real data"
                                                 }
                                             },
                                             "required": [
+                                                "result",
                                                 "model"
                                             ]
                                         },
@@ -221,6 +218,7 @@
                                                 "model": {}
                                             },
                                             "required": [
+                                                "result",
                                                 "model"
                                             ]
                                         },
@@ -267,6 +265,7 @@
                                                 "model": {}
                                             },
                                             "required": [
+                                                "result",
                                                 "model"
                                             ]
                                         },
@@ -314,6 +313,7 @@
                                                 "model": {}
                                             },
                                             "required": [
+                                                "result",
                                                 "model"
                                             ]
                                         },
@@ -372,6 +372,7 @@
                                                 "model": {}
                                             },
                                             "required": [
+                                                "result",
                                                 "model"
                                             ]
                                         },
@@ -419,6 +420,7 @@
                                                 "model": {}
                                             },
                                             "required": [
+                                                "result",
                                                 "model"
                                             ]
                                         },
@@ -477,6 +479,7 @@
                                                 "model": {}
                                             },
                                             "required": [
+                                                "result",
                                                 "model"
                                             ]
                                         },
@@ -522,15 +525,16 @@
                                                     "type": "array",
                                                     "items": {
                                                         "$ref": "Models/Projects.json#/components/schemas/Models.Projects",
-                                                        "description": "only for typescript, does not contain real data"
+                                                        "description": "Only for typescript, does not contain real data"
                                                     }
                                                 },
                                                 "model": {
                                                     "$ref": "Models/Projects.json#/components/schemas/Models.Projects",
-                                                    "description": "only for typescript, does not contain real data"
+                                                    "description": "Only for typescript, does not contain real data"
                                                 }
                                             },
                                             "required": [
+                                                "result",
                                                 "model"
                                             ]
                                         },
@@ -624,6 +628,7 @@
                                                 "model": {}
                                             },
                                             "required": [
+                                                "result",
                                                 "model"
                                             ]
                                         },
@@ -671,6 +676,7 @@
                                                 "model": {}
                                             },
                                             "required": [
+                                                "result",
                                                 "model"
                                             ]
                                         },
@@ -718,6 +724,7 @@
                                                 "model": {}
                                             },
                                             "required": [
+                                                "result",
                                                 "model"
                                             ]
                                         },
@@ -765,6 +772,7 @@
                                                 "model": {}
                                             },
                                             "required": [
+                                                "result",
                                                 "model"
                                             ]
                                         },
@@ -822,6 +830,7 @@
                                                 "model": {}
                                             },
                                             "required": [
+                                                "result",
                                                 "model"
                                             ]
                                         },

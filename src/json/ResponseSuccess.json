@@ -10,10 +10,11 @@
             "ResponseSuccess": {
                 "type": "object",
                 "properties": {
-                    "result": {
+                    "errors": {
                         "title": "Результат ответа API метода",
                         "description": "Тип результата зависит от типа запроса и его настроек",
-                        "nullable": true
+                        "nullable": true,
+                        "type": "null"
                     },
                     "messages": {
                         "title": "Список ообщений, полученных при выполнении запроса",

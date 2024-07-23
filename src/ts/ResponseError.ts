@@ -9,9 +9,10 @@ export interface components {
     schemas: {
         /** Результат API запроса с ошибкой */
         ResponseError: {
-            result?: unknown;
+            /** При ошибке результат отсутствует */
+            result?: null | null;
             /** Список ошибок, полученных при выполнении запроса */
-            errors?: import('./Errors.ts').components['schemas']['Errors'] | null;
+            errors?: import('./Errors.ts').components['schemas']['Errors'];
             /** Список ообщений, полученных при выполнении запроса */
             messages?: import('./TV/API/Types/StringArray.ts').components['schemas']['TV.API.Types.StringArray'];
         };
