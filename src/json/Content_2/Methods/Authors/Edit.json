@@ -1,0 +1,49 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Content_2.Methods.Authors.Edit",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Content_2.Methods.Authors.Edit": {
+                "type": "object",
+                "properties": {
+                    "alias": {
+                        "title": "Имя для url страницы автора",
+                        "description": "Только латинские буквы, цифры и символ дефиса",
+                        "nullable": true,
+                        "type": "string"
+                    },
+                    "promoText": {
+                        "title": "Промо текст",
+                        "nullable": true,
+                        "type": "string"
+                    },
+                    "promoLabel": {
+                        "title": "Текс для промо кнопки",
+                        "nullable": true,
+                        "type": "string"
+                    },
+                    "promoLink": {
+                        "title": "Ссылка для промо кнопки",
+                        "nullable": true,
+                        "allOf": [
+                            {
+                                "$ref": "../../../TV/API/Types/Url.json#/components/schemas/TV.API.Types.Url"
+                            }
+                        ]
+                    },
+                    "show_in_author_list": {
+                        "title": "Отображать ли автора в списке авторов",
+                        "nullable": true,
+                        "type": "boolean"
+                    }
+                },
+                "required": [],
+                "title": "Изменить настройки автора"
+            }
+        }
+    }
+}

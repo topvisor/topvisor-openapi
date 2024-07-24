@@ -130,6 +130,9 @@
             "Models.Competitors.Wordstat": {
                 "$ref": "Models/Competitors/Wordstat.json#/components/schemas/Models.Competitors.Wordstat"
             },
+            "Models.Content.Authors": {
+                "$ref": "Models/Content/Authors.json#/components/schemas/Models.Content.Authors"
+            },
             "Models.Magnet.Ganalytics": {
                 "$ref": "Models/Magnet/Ganalytics.json#/components/schemas/Models.Magnet.Ganalytics"
             },

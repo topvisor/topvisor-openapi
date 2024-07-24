@@ -48,6 +48,7 @@ export interface components {
         "Models.Competitors.Keywords": import('./Models/Competitors/Keywords.ts').components['schemas']['Models.Competitors.Keywords'];
         "Models.Competitors.Urls": import('./Models/Competitors/Urls.ts').components['schemas']['Models.Competitors.Urls'];
         "Models.Competitors.Wordstat": import('./Models/Competitors/Wordstat.ts').components['schemas']['Models.Competitors.Wordstat'];
+        "Models.Content.Authors": import('./Models/Content/Authors.ts').components['schemas']['Models.Content.Authors'];
         "Models.Magnet.Ganalytics": import('./Models/Magnet/Ganalytics.ts').components['schemas']['Models.Magnet.Ganalytics'];
         "Models.Magnet.Gsc": import('./Models/Magnet/Gsc.ts').components['schemas']['Models.Magnet.Gsc'];
         "Models.Magnet.Metrika": import('./Models/Magnet/Metrika.ts').components['schemas']['Models.Magnet.Metrika'];
