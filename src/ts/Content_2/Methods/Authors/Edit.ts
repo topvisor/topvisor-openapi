@@ -15,11 +15,11 @@ export interface components {
              */
             alias?: string | null;
             /** Промо текст */
-            promoText?: string | null;
+            promo_text?: string | null;
             /** Текс для промо кнопки */
-            promoLabel?: string | null;
+            promo_label?: string | null;
             /** Ссылка для промо кнопки */
-            promoLink?: import('../../../TV/API/Types/Url.ts').components['schemas']['TV.API.Types.Url'] | null;
+            promo_link?: import('../../../TV/API/Types/Url.ts').components['schemas']['TV.API.Types.Url'] | null;
             /** Отображать ли автора в списке авторов */
             show_in_author_list?: boolean | null;
         };

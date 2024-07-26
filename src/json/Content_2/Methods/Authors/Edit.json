@@ -16,17 +16,17 @@
                         "nullable": true,
                         "type": "string"
                     },
-                    "promoText": {
+                    "promo_text": {
                         "title": "Промо текст",
                         "nullable": true,
                         "type": "string"
                     },
-                    "promoLabel": {
+                    "promo_label": {
                         "title": "Текс для промо кнопки",
                         "nullable": true,
                         "type": "string"
                     },
-                    "promoLink": {
+                    "promo_link": {
                         "title": "Ссылка для промо кнопки",
                         "nullable": true,
                         "allOf": [
