@@ -2,6 +2,10 @@
 	"version": "1.0.0",
 	"author": "Artemeey <artemeey2@gmail.com>",
 	"license": "MIT",
+	"engines": {
+		"npm": ">=10.0.0",
+		"node": ">=20.0.0"
+	},
 	"dependencies": {
 		"fs": "^0.0.1-security",
 		"openapi-typescript": "^7.0.4",
