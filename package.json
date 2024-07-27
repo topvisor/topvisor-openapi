@@ -3,6 +3,7 @@
 	"description": "OpenApi schemas for Topvisor API",
 	"version": "1.0.0",
 	"author": "Artemeey <artemeey2@gmail.com>",
+	"license": "MIT",
 	"files": [
 		"src"
 	]
