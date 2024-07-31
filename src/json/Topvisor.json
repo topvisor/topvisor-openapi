@@ -1719,6 +1719,610 @@
                     }
                 }
             }
+        },
+        "/add/admin_2/users/promocodes/": {
+            "post": {
+                "operationId": "AddAdmin2UsersPromocodes",
+                "tags": [
+                    "Admin_2"
+                ],
+                "summary": "Добавить промокоды к достижению",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Admin_2/Methods/Users/Promocodes/Add.json#/components/schemas/Admin_2.Methods.Users.Promocodes.Add"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "oneOf": [
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "type": "integer",
+                                                            "title": "@throws Exception"
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "result"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
+                                        }
+                                    ]
+                                }
+                            },
+                            "model": {
+                                "schema": {
+                                    "$ref": "Models/Users/Verif.json#/components/schemas/Models.Users.Verif",
+                                    "description": "Only for typescript, does not contain real data"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/get/admin_2/users/promocodes/": {
+            "post": {
+                "operationId": "GetAdmin2UsersPromocodes",
+                "tags": [
+                    "Admin_2"
+                ],
+                "summary": "Получить промокоды",
+                "description": "В params хранится строка в формате:\n- {{ rank_id }}\n- {{ rank_id }},single_code - для многоразового кода",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Admin_2/Methods/Users/Promocodes/Get.json#/components/schemas/Admin_2.Methods.Users.Promocodes.Get"
+                            }
+                        }
+                    },
+                    "required": false
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "oneOf": [
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "type": "array",
+                                                            "items": {
+                                                                "$ref": "Models/Users/Verif.json#/components/schemas/Models.Users.Verif",
+                                                                "description": "Only for typescript, does not contain real data"
+                                                            }
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "result"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                },
+                                                {
+                                                    "$ref": "Pagination.json#/components/schemas/Pagination"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
+                                        }
+                                    ]
+                                }
+                            },
+                            "model": {
+                                "schema": {
+                                    "$ref": "Models/Users/Verif.json#/components/schemas/Models.Users.Verif",
+                                    "description": "Only for typescript, does not contain real data"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/add/admin_2/users/ranks/": {
+            "post": {
+                "operationId": "AddAdmin2UsersRanks",
+                "tags": [
+                    "Admin_2"
+                ],
+                "summary": "Добавить достижение",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Admin_2/Methods/Users/Ranks/Add.json#/components/schemas/Admin_2.Methods.Users.Ranks.Add"
+                            }
+                        }
+                    },
+                    "required": false
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "oneOf": [
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "type": "integer"
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "result"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
+                                        }
+                                    ]
+                                }
+                            },
+                            "model": {
+                                "schema": {
+                                    "$ref": "Models/Admin/Users/Ranks.json#/components/schemas/Models.Admin.Users.Ranks",
+                                    "description": "Only for typescript, does not contain real data"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/edit/admin_2/users/ranks/": {
+            "post": {
+                "operationId": "EditAdmin2UsersRanks",
+                "tags": [
+                    "Admin_2"
+                ],
+                "summary": "Изменить достижение",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Admin_2/Methods/Users/Ranks/Edit.json#/components/schemas/Admin_2.Methods.Users.Ranks.Edit"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "oneOf": [
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "type": "integer"
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "result"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
+                                        }
+                                    ]
+                                }
+                            },
+                            "model": {
+                                "schema": {
+                                    "$ref": "Models/Admin/Users/Ranks.json#/components/schemas/Models.Admin.Users.Ranks",
+                                    "description": "Only for typescript, does not contain real data"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/get/admin_2/users/ranks/": {
+            "post": {
+                "operationId": "GetAdmin2UsersRanks",
+                "tags": [
+                    "Admin_2"
+                ],
+                "summary": "Получить достижения",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Admin_2/Methods/Users/Ranks/Get.json#/components/schemas/Admin_2.Methods.Users.Ranks.Get"
+                            }
+                        }
+                    },
+                    "required": false
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "oneOf": [
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "type": "array",
+                                                            "items": {
+                                                                "$ref": "Models/Admin/Users/Ranks.json#/components/schemas/Models.Admin.Users.Ranks",
+                                                                "description": "Only for typescript, does not contain real data"
+                                                            }
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "result"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                },
+                                                {
+                                                    "$ref": "Pagination.json#/components/schemas/Pagination"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
+                                        }
+                                    ]
+                                }
+                            },
+                            "model": {
+                                "schema": {
+                                    "$ref": "Models/Admin/Users/Ranks.json#/components/schemas/Models.Admin.Users.Ranks",
+                                    "description": "Only for typescript, does not contain real data"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/edit/payments_2/tariff/delcard/": {
+            "post": {
+                "operationId": "EditPayments2TariffDelcard",
+                "tags": [
+                    "Payments_2"
+                ],
+                "summary": "Отписаться от тарифа, оплаченного картой",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Payments_2/Methods/Tariff/DelCard/Edit.json#/components/schemas/Payments_2.Methods.Tariff.DelCard.Edit"
+                            }
+                        }
+                    },
+                    "required": false
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "oneOf": [
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "type": "integer"
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "result"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
+                                        }
+                                    ]
+                                }
+                            },
+                            "model": {
+                                "schema": {
+                                    "type": "null"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/edit/payments_2/tariff/nexttodiadoc/": {
+            "post": {
+                "operationId": "EditPayments2TariffNexttodiadoc",
+                "tags": [
+                    "Payments_2"
+                ],
+                "summary": "Настройка оплаты тарифов: выставлять ли счета через диадок",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Payments_2/Methods/Tariff/NextToDiadoc/Edit.json#/components/schemas/Payments_2.Methods.Tariff.NextToDiadoc.Edit"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "oneOf": [
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "type": "integer"
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "result"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
+                                        }
+                                    ]
+                                }
+                            },
+                            "model": {
+                                "schema": {
+                                    "type": "null"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/edit/payments_2/tariff/setnext/": {
+            "post": {
+                "operationId": "EditPayments2TariffSetnext",
+                "tags": [
+                    "Payments_2"
+                ],
+                "summary": "Сменить тариф со следующего месяца",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Payments_2/Methods/Tariff/SetNext/Edit.json#/components/schemas/Payments_2.Methods.Tariff.SetNext.Edit"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "oneOf": [
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "type": "integer"
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "result"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
+                                        }
+                                    ]
+                                }
+                            },
+                            "model": {
+                                "schema": {
+                                    "type": "null"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/add/users_2/join/email/": {
+            "post": {
+                "operationId": "AddUsers2JoinEmail",
+                "tags": [
+                    "Users_2"
+                ],
+                "summary": "Привязка email к аккаунту",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Users_2/Methods/Join/Email/Add.json#/components/schemas/Users_2.Methods.Join.Email.Add"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "oneOf": [
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "type": "integer",
+                                                            "title": "@throws Exception"
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "result"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
+                                        }
+                                    ]
+                                }
+                            },
+                            "model": {
+                                "schema": {
+                                    "type": "null"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/get/admin_2/users/informer/subscriptions/": {
+            "post": {
+                "operationId": "GetAdmin2UsersInformerSubscriptions",
+                "tags": [
+                    "Admin_2"
+                ],
+                "summary": "График с количеством подписок на рубрики с сегментцией по способам рассылки",
+                "description": "График кешируется, первый запрос может выполнятсья дольше",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Admin_2/Methods/Users/Informer/Subscriptions/Get.json#/components/schemas/Admin_2.Methods.Users.Informer.Subscriptions.Get"
+                            }
+                        }
+                    },
+                    "required": false
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "oneOf": [
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "$ref": "TV/Objects/Highcharts/Chart.json#/components/schemas/TV.Objects.Highcharts.Chart",
+                                                            "title": "Данные для построения графика"
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "result"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
+                                        }
+                                    ]
+                                }
+                            },
+                            "model": {
+                                "schema": {
+                                    "type": "null"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
         }
     },
     "components": {

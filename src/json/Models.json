@@ -168,6 +168,12 @@
             },
             "Models.Watcher.Results": {
                 "$ref": "Models/Watcher/Results.json#/components/schemas/Models.Watcher.Results"
+            },
+            "Models.Admin.Accounting.Counteragents": {
+                "$ref": "Models/Admin/Accounting/Counteragents.json#/components/schemas/Models.Admin.Accounting.Counteragents"
+            },
+            "Models.Admin.Users.Ranks": {
+                "$ref": "Models/Admin/Users/Ranks.json#/components/schemas/Models.Admin.Users.Ranks"
             }
         }
     }

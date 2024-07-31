@@ -61,6 +61,8 @@ export interface components {
         "Models.Users.Referrals": import('./Models/Users/Referrals.ts').components['schemas']['Models.Users.Referrals'];
         "Models.Users.Verif": import('./Models/Users/Verif.ts').components['schemas']['Models.Users.Verif'];
         "Models.Watcher.Results": import('./Models/Watcher/Results.ts').components['schemas']['Models.Watcher.Results'];
+        "Models.Admin.Accounting.Counteragents": import('./Models/Admin/Accounting/Counteragents.ts').components['schemas']['Models.Admin.Accounting.Counteragents'];
+        "Models.Admin.Users.Ranks": import('./Models/Admin/Users/Ranks.ts').components['schemas']['Models.Admin.Users.Ranks'];
     };
     responses: never;
     parameters: never;
