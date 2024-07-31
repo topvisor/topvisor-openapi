@@ -1,0 +1,31 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Comments_2.Methods.Like.Edit",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Comments_2.Methods.Like.Edit": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "title": "Id комментария",
+                        "type": "integer"
+                    },
+                    "like": {
+                        "title": "Установка лайка\n- 0: снять лайк\n- 1: поставить лайк",
+                        "type": "boolean"
+                    }
+                },
+                "required": [
+                    "id",
+                    "like"
+                ],
+                "title": "Редактирование статуса лайка для комментария",
+                "description": "Возвращает результат редактирования статуса лайка"
+            }
+        }
+    }
+}

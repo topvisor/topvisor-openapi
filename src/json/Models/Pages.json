@@ -30,6 +30,9 @@
                     "AUTHOR_VIEWS()": {
                         "nullable": true
                     },
+                    "AUTHOR_UNIQUE_VIEWS()": {
+                        "nullable": true
+                    },
                     "site": {
                         "nullable": true
                     },

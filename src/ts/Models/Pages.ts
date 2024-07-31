@@ -15,6 +15,7 @@ export interface components {
             "HTML_RAW()"?: unknown;
             "AUTHOR_LIKES()"?: unknown;
             "AUTHOR_VIEWS()"?: unknown;
+            "AUTHOR_UNIQUE_VIEWS()"?: unknown;
             site?: unknown;
             subdomain?: unknown;
             url?: unknown;

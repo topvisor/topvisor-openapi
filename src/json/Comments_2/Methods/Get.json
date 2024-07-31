@@ -1,0 +1,39 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Comments_2.Methods.Get",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Comments_2.Methods.Get": {
+                "type": "object",
+                "properties": {
+                    "subdomain": {
+                        "allOf": [
+                            {
+                                "$ref": "../../TV/API/Types/Topvisor/Subdomain.json#/components/schemas/TV.API.Types.Topvisor.Subdomain"
+                            }
+                        ]
+                    },
+                    "page_url": {
+                        "title": "Адрес страницы (нельзя указывать совместно с reply_id)",
+                        "nullable": true,
+                        "type": "string"
+                    },
+                    "reply_id": {
+                        "title": "Получить ответы на комменатрий с id = reply_id (нельзя указывать совместно с page_url)",
+                        "nullable": true,
+                        "type": "integer"
+                    }
+                },
+                "required": [
+                    "subdomain"
+                ],
+                "title": "Получение комментариев",
+                "description": "Возвращает набор комментариев со всеми подкомменатриями, limit, offset не виляют на получение вложенных комментариев"
+            }
+        }
+    }
+}

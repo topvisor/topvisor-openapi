@@ -1,0 +1,45 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Annotations_2.Methods.Edit",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Annotations_2.Methods.Edit": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "title": "ID примечания",
+                        "type": "integer"
+                    },
+                    "project_id": {
+                        "title": "ID проекта",
+                        "type": "integer"
+                    },
+                    "service": {
+                        "title": "Имя сервиса",
+                        "allOf": [
+                            {
+                                "$ref": "../../Annotations_2/Types/ServiceName.json#/components/schemas/Annotations_2.Types.ServiceName"
+                            }
+                        ]
+                    },
+                    "text": {
+                        "title": "Текст комментария",
+                        "description": "Если не текст указан, комментарий будет удален",
+                        "type": "string"
+                    }
+                },
+                "required": [
+                    "id",
+                    "project_id",
+                    "service",
+                    "text"
+                ],
+                "title": "Редактирование примечания"
+            }
+        }
+    }
+}

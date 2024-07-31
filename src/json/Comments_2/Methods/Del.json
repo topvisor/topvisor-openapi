@@ -1,0 +1,26 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Comments_2.Methods.Del",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Comments_2.Methods.Del": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "title": "ID комментария",
+                        "type": "integer"
+                    }
+                },
+                "required": [
+                    "id"
+                ],
+                "title": "Удаление комментария",
+                "description": "Удалять комментарии можно только в течение ограниченного времени\n\nАдмины могут удалять комментарии в любое время"
+            }
+        }
+    }
+}
