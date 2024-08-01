@@ -13,6 +13,7 @@
                     "limit": {
                         "title": "Количество объектов, которые необходимо получить в результате",
                         "description": "Используется в паре с offset",
+                        "default": 10000,
                         "nullable": true,
                         "type": "integer"
                     }

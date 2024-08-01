@@ -11,15 +11,21 @@ export interface components {
             /**
              * Число объектов, которое необходимо пропустить при получении резальтата
              * @description Используется в паре с limit
+             *
+             * @example 10
              */
             offset?: number | null;
         };
     };
     responses: never;
     parameters: {
-        /** @description Число объектов, которое необходимо пропустить при получении резальтата
+        /**
+         * @description Число объектов, которое необходимо пропустить при получении резальтата
          *
-         *     Используется в паре с limit */
+         *     Используется в паре с limit
+         *
+         * @example 10
+         */
         offset: number;
     };
     requestBodies: never;

@@ -1600,12 +1600,15 @@ components:
     limit:
       title: Количество объектов, которые необходимо получить в результате
       description: Используется в паре с offset
+      default: 10000
       nullable: true
       type: integer
     offset:
       title: Число объектов, которое необходимо пропустить при получении резальтата
-      description: Используется в паре с limit
+      description: |
+        Используется в паре с limit
       nullable: true
+      example: '10'
       type: integer
     fetch_style:
       title: 'Определяет формат результата: коллекция, объект, значение'
