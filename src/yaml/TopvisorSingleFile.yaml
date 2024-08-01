@@ -1,0 +1,3113 @@
+openapi: 3.0.0
+info:
+  title: Topvisor
+  version: 2.0.0
+servers:
+  - url: https://api.topvisor.com/v2/json
+    description: Интерфейс для работы с API. Запрещено междоменное общение.
+security:
+  - authLogin: []
+  - authToken: []
+tags:
+  - name: Admin_2
+    description: admin_2
+  - name: Analytics_2
+    description: analytics_2
+  - name: Annotations_2
+    description: annotations_2
+  - name: App_2
+    description: app_2
+  - name: Audit_2
+    description: audit_2
+  - name: Bank_2
+    description: bank_2
+  - name: Broker_2
+    description: broker_2
+  - name: Comments_2
+    description: comments_2
+  - name: Competitors_2
+    description: competitors_2
+  - name: Content_2
+    description: content_2
+  - name: Controller_2
+    description: controller_2
+  - name: Eastereggs_2
+    description: eastereggs_2
+  - name: Example_2
+    description: example_2
+  - name: Fa2_2
+    description: fa2_2
+  - name: Informer_2
+    description: informer_2
+  - name: Keywords_2
+    description: keywords_2
+  - name: Landings_2
+    description: landings_2
+  - name: Mentions_2
+    description: mentions_2
+  - name: Models
+    description: models
+  - name: Openapi_2
+    description: openapi_2
+  - name: Payments_2
+    description: payments_2
+  - name: Positions_2
+    description: positions_2
+  - name: Projects_2
+    description: projects_2
+  - name: Qr_2
+    description: qr_2
+  - name: Quiz_2
+    description: quiz_2
+  - name: Recurring_2
+    description: recurring_2
+  - name: Redmine_2
+    description: redmine_2
+  - name: Reports_2
+    description: reports_2
+  - name: Robot_2
+    description: robot_2
+  - name: Schedule_2
+    description: schedule_2
+  - name: Scripts_2
+    description: scripts_2
+  - name: Selectel_2
+    description: selectel_2
+  - name: Slack_2
+    description: slack_2
+  - name: Sms_2
+    description: sms_2
+  - name: Snapshots_2
+    description: snapshots_2
+  - name: System_2
+    description: system_2
+  - name: Tags_2
+    description: tags_2
+  - name: Telegram_2
+    description: telegram_2
+  - name: Templates_2
+    description: templates_2
+  - name: Tickets_2
+    description: tickets_2
+  - name: Tinkoff_2
+    description: tinkoff_2
+  - name: Tpa_2
+    description: tpa_2
+  - name: Tpvsr_2
+    description: tpvsr_2
+  - name: Urls_2
+    description: urls_2
+  - name: Users_2
+    description: users_2
+  - name: Votes_2
+    description: votes_2
+  - name: Vue_2
+    description: vue_2
+  - name: Webscreens_2
+    description: webscreens_2
+paths:
+  /add/analytics_2/:
+    post:
+      operationId: AddAnalytics2
+      tags:
+        - Analytics_2
+      summary: Фиксация события
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Analytics_2.Methods.Add'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            type: integer
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
+  /add/annotations_2/:
+    post:
+      operationId: AddAnnotations2
+      tags:
+        - Annotations_2
+      summary: Добавление примечания
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Annotations_2.Methods.Add'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            type: integer
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
+  /del/annotations_2/:
+    post:
+      operationId: DelAnnotations2
+      tags:
+        - Annotations_2
+      summary: Удаление примечания
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Annotations_2.Methods.Del'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            type: integer
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
+  /edit/annotations_2/:
+    post:
+      operationId: EditAnnotations2
+      tags:
+        - Annotations_2
+      summary: Редактирование примечания
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Annotations_2.Methods.Edit'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            type: integer
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
+  /get/annotations_2/:
+    post:
+      operationId: GetAnnotations2
+      tags:
+        - Annotations_2
+      summary: Получение примечаний
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Annotations_2.Methods.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            type: array
+                            items:
+                              $ref: '#/components/schemas/Models.Annotations'
+                              description: Only for typescript, does not contain real data
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                      - $ref: '#/components/schemas/Pagination'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                $ref: '#/components/schemas/Models.Annotations'
+                description: Only for typescript, does not contain real data
+  /get/app_2/:
+    post:
+      operationId: GetApp2
+      tags:
+        - App_2
+      summary: Получение заархивированного приложения
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/App_2.Methods.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/octet-stream:
+              schema:
+                type: string
+                format: binary
+  /add/comments_2/:
+    post:
+      operationId: AddComments2
+      tags:
+        - Comments_2
+      summary: Добавление комментария
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Comments_2.Methods.Add'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            type: integer
+                            title: Id вставленного комментария
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
+  /del/comments_2/:
+    post:
+      operationId: DelComments2
+      tags:
+        - Comments_2
+      summary: Удаление комментария
+      description: |-
+        Удалять комментарии можно только в течение ограниченного времени
+
+        Админы могут удалять комментарии в любое время
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Comments_2.Methods.Del'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            type: integer
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
+  /edit/comments_2/:
+    post:
+      operationId: EditComments2
+      tags:
+        - Comments_2
+      summary: Изменение комментария
+      description: Изменять комментарий можно только в течение ограниченного времени
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Comments_2.Methods.Edit'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            type: integer
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
+  /get/comments_2/:
+    post:
+      operationId: GetComments2
+      tags:
+        - Comments_2
+      summary: Получение комментариев
+      description: Возвращает набор комментариев со всеми подкомменатриями, limit, offset не виляют на получение вложенных комментариев
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Comments_2.Methods.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            type: array
+                            items:
+                              oneOf:
+                                - type: string
+                                - type: number
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
+  /add/payments_2/:
+    post:
+      operationId: AddPayments2
+      tags:
+        - Payments_2
+      summary: Создать платежку и перейти к оплате
+      description: |-
+        Возвратит id платежа, если указан параметр $return_id = true
+
+        Произведет редирект, если настроена форма оплаты на стороне платежной системы
+
+        Возвратит информацию о платеже, если ожидается вывод формы оплаты на сайте
+
+        При ошибке произведет редирект на страницу с инофрмацией об ошибке
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Payments_2.Methods.Add'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result: {}
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
+  /get/payments_2/:
+    post:
+      operationId: GetPayments2
+      tags:
+        - Payments_2
+      summary: Получить список платежей
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Payments_2.Methods.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result: {}
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                      - $ref: '#/components/schemas/Pagination'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                $ref: '#/components/schemas/Models.Payments'
+                description: Only for typescript, does not contain real data
+  /get/qr_2/:
+    post:
+      operationId: GetQr2
+      tags:
+        - Qr_2
+      summary: Генерирует QR код по тексту
+      description: Возвращает изображение в формате data:image/png;base64
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Qr_2.Methods.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            type: string
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
+  /get/annotations_2/my/:
+    post:
+      operationId: GetAnnotations2My
+      tags:
+        - Annotations_2
+      summary: Получение всех своих примечаний по всем проектам и сервисам
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Annotations_2.Methods.My.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            type: array
+                            items:
+                              $ref: '#/components/schemas/Models.Annotations'
+                              description: Only for typescript, does not contain real data
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                      - $ref: '#/components/schemas/Pagination'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                $ref: '#/components/schemas/Models.Annotations'
+                description: Only for typescript, does not contain real data
+  /get/app_2/actions/:
+    post:
+      operationId: GetApp2Actions
+      tags:
+        - App_2
+      summary: Получение данных подтверждения
+      description: |-
+        Возвращает результат подтверждения в виде
+        массива с сообщением (acceptAction),
+        логической переменной (acceptEmail),
+        null при неправильно введенном типе
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/App_2.Methods.Actions.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result: {}
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
+  /get/app_2/privacy/:
+    post:
+      operationId: GetApp2Privacy
+      tags:
+        - App_2
+      summary: Получить текст политики конфиденциальности
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/App_2.Methods.Privacy.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            $ref: '#/components/schemas/Controller_2.Objects.Page'
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
+  /edit/comments_2/like/:
+    post:
+      operationId: EditComments2Like
+      tags:
+        - Comments_2
+      summary: Редактирование статуса лайка для комментария
+      description: Возвращает результат редактирования статуса лайка
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Comments_2.Methods.Like.Edit'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            type: integer
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
+  /edit/content_2/authors/:
+    post:
+      operationId: EditContent2Authors
+      tags:
+        - Content_2
+      summary: Изменить настройки автора
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Content_2.Methods.Authors.Edit'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            type: integer
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
+  /get/content_2/authors/:
+    post:
+      operationId: GetContent2Authors
+      tags:
+        - Content_2
+      summary: Получение данных об авторе
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Content_2.Methods.Authors.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result: {}
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                      - $ref: '#/components/schemas/Pagination'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                $ref: '#/components/schemas/Models.Content.Authors'
+                description: Only for typescript, does not contain real data
+  /get/example_2/array/:
+    post:
+      operationId: GetExample2Array
+      tags:
+        - Example_2
+      summary: Метод с примерами параметров типа Enum
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Example_2.Methods.Array.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            type: array
+                            items:
+                              oneOf:
+                                - type: string
+                                - type: number
+                            title: Ассоциативный результирующий массив, с данными, переданными в метод и результатом genSet()
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
+  /get/example_2/custom/:
+    post:
+      operationId: GetExample2Custom
+      tags:
+        - Example_2
+      summary: Получение текущего времени
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Example_2.Methods.Custom.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            type: string
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
+  /get/example_2/enum/:
+    post:
+      operationId: GetExample2Enum
+      tags:
+        - Example_2
+      summary: Метод с примерами параметров типа Enum
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Example_2.Methods.Enum.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            type: array
+                            items:
+                              oneOf:
+                                - type: string
+                                - type: number
+                            title: Ассоциативный результирующий массив, с данными, переданными в метод
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
+  /get/example_2/projects/:
+    post:
+      operationId: GetExample2Projects
+      tags:
+        - Example_2
+      summary: Получение списка проектов
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Example_2.Methods.Projects.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            type: array
+                            items:
+                              $ref: '#/components/schemas/Models.Projects'
+                              description: Only for typescript, does not contain real data
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                      - $ref: '#/components/schemas/Pagination'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                $ref: '#/components/schemas/Models.Projects'
+                description: Only for typescript, does not contain real data
+  /get/openapi_2/download/:
+    post:
+      operationId: GetOpenapi2Download
+      tags:
+        - Openapi_2
+      summary: Создать Open API схемы и скачать в zip
+      description: |-
+        В результате вернет zip файл в потоке вывода
+
+        @see https://editor.swagger.io/ Редактор Open API
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/OpenAPI_2.Methods.Download.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/octet-stream:
+              schema:
+                type: string
+                format: binary
+  /get/payments_2/companies/:
+    post:
+      operationId: GetPayments2Companies
+      tags:
+        - Payments_2
+      summary: Компании пользователя, через которых, были совершены платежи
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Payments_2.Methods.Companies.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            type: array
+                            items:
+                              oneOf:
+                                - type: string
+                                - type: number
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
+  /edit/payments_2/contractsign/:
+    post:
+      operationId: EditPayments2Contractsign
+      tags:
+        - Payments_2
+      summary: Подписать контракт (только для админов)
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Payments_2.Methods.ContractSign.Edit'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            type: integer
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
+  /edit/payments_2/nextrequisitesid/:
+    post:
+      operationId: EditPayments2Nextrequisitesid
+      tags:
+        - Payments_2
+      summary: Изменить платежные реквизиты тарифа
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Payments_2.Methods.NextRequisitesId.Edit'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            type: integer
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
+  /add/payments_2/urtinkoffcreateapplication/:
+    post:
+      operationId: AddPayments2Urtinkoffcreateapplication
+      tags:
+        - Payments_2
+      summary: Отправить заявка на подключение Тинькофф Бизнес
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Payments_2.Methods.UrTinkoffCreateApplication.Add'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            type: integer
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
+  /get/payments_2/validatemerchantcardap/:
+    post:
+      operationId: GetPayments2Validatemerchantcardap
+      tags:
+        - Payments_2
+      summary: Валидация домена для подтверждения оплаты Apple Pay (system = card_ap)
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Payments_2.Methods.ValidateMerchantCardAP.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            type: array
+                            items:
+                              oneOf:
+                                - type: string
+                                - type: number
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
+  /add/admin_2/users/promocodes/:
+    post:
+      operationId: AddAdmin2UsersPromocodes
+      tags:
+        - Admin_2
+      summary: Добавить промокоды к достижению
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Admin_2.Methods.Users.Promocodes.Add'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            type: integer
+                            title: '@throws Exception'
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                $ref: '#/components/schemas/Models.Users.Verif'
+                description: Only for typescript, does not contain real data
+  /get/admin_2/users/promocodes/:
+    post:
+      operationId: GetAdmin2UsersPromocodes
+      tags:
+        - Admin_2
+      summary: Получить промокоды
+      description: |-
+        В params хранится строка в формате:
+        - {{ rank_id }}
+        - {{ rank_id }},single_code - для многоразового кода
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Admin_2.Methods.Users.Promocodes.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            type: array
+                            items:
+                              $ref: '#/components/schemas/Models.Users.Verif'
+                              description: Only for typescript, does not contain real data
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                      - $ref: '#/components/schemas/Pagination'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                $ref: '#/components/schemas/Models.Users.Verif'
+                description: Only for typescript, does not contain real data
+  /add/admin_2/users/ranks/:
+    post:
+      operationId: AddAdmin2UsersRanks
+      tags:
+        - Admin_2
+      summary: Добавить достижение
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Admin_2.Methods.Users.Ranks.Add'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            type: integer
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                $ref: '#/components/schemas/Models.Admin.Users.Ranks'
+                description: Only for typescript, does not contain real data
+  /edit/admin_2/users/ranks/:
+    post:
+      operationId: EditAdmin2UsersRanks
+      tags:
+        - Admin_2
+      summary: Изменить достижение
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Admin_2.Methods.Users.Ranks.Edit'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            type: integer
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                $ref: '#/components/schemas/Models.Admin.Users.Ranks'
+                description: Only for typescript, does not contain real data
+  /get/admin_2/users/ranks/:
+    post:
+      operationId: GetAdmin2UsersRanks
+      tags:
+        - Admin_2
+      summary: Получить достижения
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Admin_2.Methods.Users.Ranks.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            type: array
+                            items:
+                              $ref: '#/components/schemas/Models.Admin.Users.Ranks'
+                              description: Only for typescript, does not contain real data
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                      - $ref: '#/components/schemas/Pagination'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                $ref: '#/components/schemas/Models.Admin.Users.Ranks'
+                description: Only for typescript, does not contain real data
+  /edit/payments_2/tariff/delcard/:
+    post:
+      operationId: EditPayments2TariffDelcard
+      tags:
+        - Payments_2
+      summary: Отписаться от тарифа, оплаченного картой
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Payments_2.Methods.Tariff.DelCard.Edit'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            type: integer
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
+  /edit/payments_2/tariff/nexttodiadoc/:
+    post:
+      operationId: EditPayments2TariffNexttodiadoc
+      tags:
+        - Payments_2
+      summary: 'Настройка оплаты тарифов: выставлять ли счета через диадок'
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Payments_2.Methods.Tariff.NextToDiadoc.Edit'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            type: integer
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
+  /edit/payments_2/tariff/setnext/:
+    post:
+      operationId: EditPayments2TariffSetnext
+      tags:
+        - Payments_2
+      summary: Сменить тариф со следующего месяца
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Payments_2.Methods.Tariff.SetNext.Edit'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            type: integer
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
+  /add/users_2/join/email/:
+    post:
+      operationId: AddUsers2JoinEmail
+      tags:
+        - Users_2
+      summary: Привязка email к аккаунту
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Users_2.Methods.Join.Email.Add'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            type: integer
+                            title: '@throws Exception'
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
+  /get/admin_2/users/informer/subscriptions/:
+    post:
+      operationId: GetAdmin2UsersInformerSubscriptions
+      tags:
+        - Admin_2
+      summary: График с количеством подписок на рубрики с сегментцией по способам рассылки
+      description: График кешируется, первый запрос может выполняться дольше
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Admin_2.Methods.Users.Informer.Subscriptions.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            $ref: '#/components/schemas/TV.Objects.Highcharts.Chart'
+                            title: Данные для построения графика
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
+components:
+  securitySchemes:
+    authLogin:
+      type: apiKey
+      description: Пользовательская авторизиаця через ввода Логина и пароля или через сторонний сервис
+      name: auth
+      in: cookie
+    authToken:
+      type: apiKey
+      description: 'Авторизаци по API ключу в формате: `Bearer userId:AccessToken`'
+      name: Authorization
+      in: header
+  schemas:
+    Analytics_2.Methods.Add:
+      type: object
+      properties:
+        ec:
+          title: Категория
+          nullable: true
+          type: string
+        ea:
+          title: Дейсвтие
+          nullable: true
+          type: string
+        el:
+          title: Ярлык в base64
+          nullable: true
+          type: string
+        uid:
+          title: ID пользователя
+          nullable: true
+          type: integer
+        hash_id:
+          title: Хеш для уникализации события
+          nullable: true
+          type: integer
+        hash:
+          title: Хэш для проверки подлинности события
+          nullable: true
+          type: integer
+      required: []
+      title: Фиксация события
+    TV.API.Types.StringArray:
+      type: array
+      items:
+        type: string
+      title: 'Тип массива: string[]'
+    ResponseSuccess:
+      type: object
+      properties:
+        errors:
+          title: Результат ответа API метода
+          description: Тип результата зависит от типа запроса и его настроек
+          nullable: true
+          type: 'null'
+        messages:
+          title: Список ообщений, полученных при выполнении запроса
+          nullable: true
+          allOf:
+            - $ref: '#/components/schemas/TV.API.Types.StringArray'
+      required: []
+      title: Результат успешного API запроса
+    Error:
+      type: object
+      properties:
+        code:
+          title: Код ошибки
+          description: Код ошибки 0 - deprecated
+          type: integer
+        string:
+          title: Описание ошибки
+          type: string
+        detail:
+          title: Дополнительная информация об ошибке
+          type: string
+      required:
+        - code
+        - string
+        - detail
+      title: Информация об ошибке
+    Errors:
+      type: array
+      items:
+        $ref: '#/components/schemas/Error'
+      title: Список ошибок
+    ResponseError:
+      type: object
+      properties:
+        result:
+          title: При ошибке результат отсутствует
+          nullable: true
+          type: 'null'
+        errors:
+          title: Список ошибок, полученных при выполнении запроса
+          description: '@requires'
+          allOf:
+            - $ref: '#/components/schemas/Errors'
+        messages:
+          title: Список ообщений, полученных при выполнении запроса
+          nullable: true
+          allOf:
+            - $ref: '#/components/schemas/TV.API.Types.StringArray'
+      required:
+        - errors
+      title: Результат API запроса с ошибкой
+    Annotations_2.Types.ServiceName:
+      type: string
+      enum:
+        - positions
+        - audit
+        - watcher
+        - indexing
+    Annotations_2.Methods.Add:
+      type: object
+      properties:
+        project_id:
+          title: ID проекта
+          type: integer
+        service:
+          title: Имя сервиса
+          allOf:
+            - $ref: '#/components/schemas/Annotations_2.Types.ServiceName'
+        target_id:
+          title: Идентификатор отчета в сервисе
+          type: string
+        text:
+          title: Комментарий, если не указан, комментарий добавлен не будет
+          type: string
+      required:
+        - project_id
+        - service
+        - target_id
+        - text
+      title: Добавление примечания
+    Annotations_2.Methods.Del:
+      type: object
+      properties:
+        id:
+          title: ID примечания
+          type: integer
+        project_id:
+          title: ID проекта
+          type: integer
+        service:
+          title: Имя сервиса
+          allOf:
+            - $ref: '#/components/schemas/Annotations_2.Types.ServiceName'
+      required:
+        - id
+        - project_id
+        - service
+      title: Удаление примечания
+    Annotations_2.Methods.Edit:
+      type: object
+      properties:
+        id:
+          title: ID примечания
+          type: integer
+        project_id:
+          title: ID проекта
+          type: integer
+        service:
+          title: Имя сервиса
+          allOf:
+            - $ref: '#/components/schemas/Annotations_2.Types.ServiceName'
+        text:
+          title: Текст комментария
+          description: Если не текст указан, комментарий будет удален
+          type: string
+      required:
+        - id
+        - project_id
+        - service
+        - text
+      title: Редактирование примечания
+    fields:
+      title: Список полей объекта, которые надо вернуть в результате
+      description: |-
+        Если запрос поддерижвает параметр fetch_style, формат ответа может быть разным, fields будет влиять на содержание данных в этом ответе
+
+        Использует поля модели
+        @see AbstractMethod::MODEL
+      nullable: true
+      type: array
+      items:
+        oneOf:
+          - type: string
+          - type: number
+    orders:
+      title: Список полей объекта, по которым необходимо выполнить сортировку
+      description: |-
+        Поля могут быть строками или объектом: {name: string, direction: 'ASC' | 'DESC', orderValues: array}
+
+        Использует поля модели
+        @see AbstractMethod::MODEL
+      nullable: true
+      type: array
+      items:
+        oneOf:
+          - type: string
+          - type: number
+    filters:
+      title: Список фильтров по полям объекта
+      description: |-
+        {name: string, operator: Field::AVAILABLE_OPERATORS, values: array}
+
+        Использует поля модели
+        @see AbstractMethod::MODEL
+        @see Field::AVAILABLE_OPERATORS
+      nullable: true
+      type: array
+      items:
+        oneOf:
+          - type: string
+          - type: number
+    id:
+      title: Id объекта, для фильтрации объектов по id
+      description: Только для моделей с полем id
+      nullable: true
+      type: integer
+    limit:
+      title: Количество объектов, которые необходимо получить в результате
+      description: Используется в паре с offset
+      nullable: true
+      type: integer
+    offset:
+      title: Число объектов, которое необходимо пропустить при получении резальтата
+      description: Используется в паре с limit
+      nullable: true
+      type: integer
+    fetch_style:
+      title: 'Определяет формат результата: коллекция, объект, значение'
+      description: |-
+        Примеры:
+        - fetchAll - получить коллекцию объектов
+        - fetch - получить один объект
+        - fetchColumn - получить свойсвто объекта
+
+        @see Selector::AVAILABLE_FETCH_STYLES
+        @see Selector::execFetch() - см. реализацию
+      nullable: true
+      type: string
+    Annotations_2.Methods.Get:
+      type: object
+      properties:
+        project_id:
+          title: ID проекта
+          type: integer
+        service:
+          title: Имя сервиса
+          allOf:
+            - $ref: '#/components/schemas/Annotations_2.Types.ServiceName'
+        fields:
+          $ref: '#/components/schemas/fields'
+        orders:
+          $ref: '#/components/schemas/orders'
+        filters:
+          $ref: '#/components/schemas/filters'
+        id:
+          $ref: '#/components/schemas/id'
+        limit:
+          $ref: '#/components/schemas/limit'
+        offset:
+          $ref: '#/components/schemas/offset'
+        fetch_style:
+          $ref: '#/components/schemas/fetch_style'
+      required:
+        - project_id
+        - service
+      title: Получение примечаний
+    Models.Annotations:
+      properties:
+        id: {}
+        user_id:
+          nullable: true
+        project_id:
+          nullable: true
+        service:
+          nullable: true
+        target_id:
+          nullable: true
+        text:
+          nullable: true
+        create_time:
+          nullable: true
+    Pagination:
+      type: object
+      properties:
+        nextOffset:
+          title: Смещение для получения следующий порции данных
+          description: Вернется только в случае существования следующей порции
+          nullable: true
+          type: integer
+        total:
+          title: Общее число результатов, без учета применения пагинации
+          nullable: true
+          type: integer
+      required: []
+      title: Результаты пагинации
+    App_2.Methods.Get:
+      type: object
+      properties: {}
+      required: []
+      title: Получение заархивированного приложения
+    TV.API.Types.Topvisor.Subdomain:
+      type: string
+      enum:
+        - ''
+        - journal
+    Comments_2.Methods.Add:
+      type: object
+      properties:
+        subdomain:
+          allOf:
+            - $ref: '#/components/schemas/TV.API.Types.Topvisor.Subdomain'
+        text:
+          title: Текст комментария
+          type: string
+        page_url:
+          title: Адрес страницы (нельзя указывать совместно с reply_id)
+          nullable: true
+          type: string
+        reply_id:
+          title: Привязать к комментарию с id = reply_id  (нельзя указывать совместно с page_url)
+          nullable: true
+          type: integer
+      required:
+        - subdomain
+        - text
+      title: Добавление комментария
+    Comments_2.Methods.Del:
+      type: object
+      properties:
+        id:
+          title: ID комментария
+          type: integer
+      required:
+        - id
+      title: Удаление комментария
+      description: |-
+        Удалять комментарии можно только в течение ограниченного времени
+
+        Админы могут удалять комментарии в любое время
+    Comments_2.Methods.Edit:
+      type: object
+      properties:
+        id:
+          title: ID комментария
+          type: integer
+        text:
+          title: Текст комментария, не может быть пустой строкой
+          type: string
+      required:
+        - id
+        - text
+      title: Изменение комментария
+      description: Изменять комментарий можно только в течение ограниченного времени
+    Comments_2.Methods.Get:
+      type: object
+      properties:
+        subdomain:
+          allOf:
+            - $ref: '#/components/schemas/TV.API.Types.Topvisor.Subdomain'
+        page_url:
+          title: Адрес страницы (нельзя указывать совместно с reply_id)
+          nullable: true
+          type: string
+        reply_id:
+          title: Получить ответы на комменатрий с id = reply_id (нельзя указывать совместно с page_url)
+          nullable: true
+          type: integer
+      required:
+        - subdomain
+      title: Получение комментариев
+      description: Возвращает набор комментариев со всеми подкомменатриями, limit, offset не виляют на получение вложенных комментариев
+    Payments_2.Types.System:
+      type: string
+      enum:
+        - balance
+        - card
+        - card_ios
+        - card_android
+        - card_ap
+        - card_gp
+        - invoice
+        - tinkoff_business
+        - ap
+        - ym
+        - qw
+        - sb
+        - wm2
+        - pp
+        - pd
+        - pd_invoice
+        - rk
+    Payments_2.Types.Country:
+      type: string
+      enum:
+        - RU
+        - UA
+        - BY
+        - KZ
+        - other
+    Payments_2.Methods.Add:
+      type: object
+      properties:
+        system:
+          title: Платежная система
+          allOf:
+            - $ref: '#/components/schemas/Payments_2.Types.System'
+        sum:
+          title: Сумма платежа
+          type: number
+        country:
+          title: Страна реквизитов
+          allOf:
+            - $ref: '#/components/schemas/Payments_2.Types.Country'
+        requisites_id:
+          title: Номер договора/оферты для платежа
+          type: string
+        tariff_id:
+          title: ID тарифа (если указан, сумма будет переопределена)
+          type: integer
+        tariff_count_month:
+          title: Число предоплаченных месяцев по тарифу
+          description: |-
+            Примеры:
+            - при оплате тарифа на 1 месяц должен быть равен 1
+            - при оплате тарифа на 2 месяца должен быть равен 2
+          type: integer
+        comment:
+          title: Комментарий
+          type: string
+        items:
+          title: Комментарий
+          type: array
+          items:
+            oneOf:
+              - type: string
+              - type: number
+        card_id:
+          title: ID карты в системе оплаты для привязки
+          type: string
+        payment_data:
+          title: Пробрасываемые данные в redirectToPay() для FinishAuthorize Tinkoff для Apple Pay и Google Pay
+          type: string
+        email:
+          title: |-
+            Email (указывается, если у пользователя не привязан email)
+            TODO: Добавить тип Email
+          nullable: true
+          type: string
+        phone:
+          title: Телефон (указывается для определенных систем оплаты)
+          type: string
+        is_cancelable:
+          title: Флаг - отменяемый платеж, используется для сохранения данных банковской карты пользователя, сумма платежа вернется пользователю после отмены
+          type: boolean
+        return_id:
+          title: Возвратить id платежа, не выполняя redirectToPay()
+          type: boolean
+      required:
+        - system
+        - sum
+        - country
+        - requisites_id
+        - tariff_id
+        - tariff_count_month
+        - comment
+        - items
+        - card_id
+        - payment_data
+        - phone
+        - is_cancelable
+        - return_id
+      title: Создать платежку и перейти к оплате
+      description: |-
+        Возвратит id платежа, если указан параметр $return_id = true
+
+        Произведет редирект, если настроена форма оплаты на стороне платежной системы
+
+        Возвратит информацию о платеже, если ожидается вывод формы оплаты на сайте
+
+        При ошибке произведет редирект на страницу с инофрмацией об ошибке
+    Payments_2.Methods.Get:
+      type: object
+      properties:
+        include_is_domains_services_provided:
+          title: Добавить в результаты is_domains_serv+ices_provided, означающий, что были оказаны услуги доменного регистратора
+          type: integer
+        fields:
+          $ref: '#/components/schemas/fields'
+        orders:
+          $ref: '#/components/schemas/orders'
+        filters:
+          $ref: '#/components/schemas/filters'
+        id:
+          $ref: '#/components/schemas/id'
+        limit:
+          $ref: '#/components/schemas/limit'
+        offset:
+          $ref: '#/components/schemas/offset'
+        fetch_style:
+          $ref: '#/components/schemas/fetch_style'
+      required:
+        - include_is_domains_services_provided
+      title: Получить список платежей
+    Models.Payments:
+      properties:
+        COUNT(*):
+          nullable: true
+        HAS_DOC():
+          nullable: true
+        id: {}
+        external_id:
+          nullable: true
+        user_id:
+          nullable: true
+        system:
+          nullable: true
+        requisites_id:
+          nullable: true
+        data:
+          nullable: true
+        sum:
+          nullable: true
+        currency:
+          nullable: true
+        status:
+          nullable: true
+        recurrent_type:
+          nullable: true
+        tariff_id:
+          nullable: true
+        tariff_count_month:
+          nullable: true
+        date:
+          nullable: true
+        date_month:
+          nullable: true
+        date_finished:
+          nullable: true
+        date_month_finished:
+          nullable: true
+        fromBase64Data:
+          nullable: true
+    Qr_2.Types.TplN:
+      type: integer
+      enum:
+        - 0
+        - 1
+        - 2
+    Qr_2.Methods.Get:
+      type: object
+      properties:
+        text:
+          title: Кодируемый текст
+          type: string
+        tpl_n:
+          title: Кодируемый текст
+          description: |-
+            - 0 - черно-белый
+            - 1 - шашечки
+            - 2 - группы с закруглениями
+          allOf:
+            - $ref: '#/components/schemas/Qr_2.Types.TplN'
+        use_brand:
+          title: Использовать ли брендированное лого
+          type: boolean
+        use_logo_colors:
+          title: Использовать ли цвета из лого
+          type: boolean
+        color:
+          title: Использовать указанный цвет, цвет задается массивом из 3 элементов [r, g, b]
+          nullable: true
+          type: array
+          items:
+            oneOf:
+              - type: string
+              - type: number
+        point_size:
+          title: Размер точек QR кода в пикселях
+          default: 4
+          type: integer
+      required:
+        - text
+        - tpl_n
+        - use_brand
+        - use_logo_colors
+        - point_size
+      title: Генерирует QR код по тексту
+      description: Возвращает изображение в формате data:image/png;base64
+    Annotations_2.Methods.My.Get:
+      type: object
+      properties:
+        fields:
+          $ref: '#/components/schemas/fields'
+        orders:
+          $ref: '#/components/schemas/orders'
+        filters:
+          $ref: '#/components/schemas/filters'
+        id:
+          $ref: '#/components/schemas/id'
+        limit:
+          $ref: '#/components/schemas/limit'
+        offset:
+          $ref: '#/components/schemas/offset'
+        fetch_style:
+          $ref: '#/components/schemas/fetch_style'
+      required: []
+      title: Получение всех своих примечаний по всем проектам и сервисам
+    App_2.Methods.Actions.Get:
+      type: object
+      properties:
+        email:
+          title: Email пользователя
+          type: string
+        code:
+          title: Код для генерации ссылки подтверждения
+          type: string
+        type_action:
+          title: Тип подтверждения
+          default: acceptAction
+          nullable: true
+          type: string
+      required:
+        - email
+        - code
+      title: Получение данных подтверждения
+      description: |-
+        Возвращает результат подтверждения в виде
+        массива с сообщением (acceptAction),
+        логической переменной (acceptEmail),
+        null при неправильно введенном типе
+    TV.API.Types.Lang:
+      type: string
+      enum:
+        - ru
+        - en
+    App_2.Methods.Privacy.Get:
+      type: object
+      properties:
+        lang:
+          title: Язык страницы
+          nullable: true
+          allOf:
+            - $ref: '#/components/schemas/TV.API.Types.Lang'
+      required: []
+      title: Получить текст политики конфиденциальности
+    Controller_2.Objects.Location:
+      type: object
+      properties: {}
+      required: []
+    Controller_2.Objects.OpenGraph:
+      type: object
+      properties: {}
+      required: []
+    Controller_2.Objects.Page.Options:
+      type: object
+      properties:
+        title:
+          type: string
+        description:
+          type: string
+        keywords:
+          type: string
+        noindex:
+          type: boolean
+        canonical:
+          type: string
+        alternates:
+          type: array
+          items:
+            oneOf:
+              - type: string
+              - type: number
+      required:
+        - title
+        - description
+        - keywords
+        - noindex
+        - canonical
+        - alternates
+    Controller_2.Objects.Page.Article:
+      type: object
+      properties:
+        type:
+          default: module
+          type: string
+        duration:
+          nullable: true
+          type: string
+        word_count:
+          nullable: true
+          type: string
+        htmlRaw:
+          type: string
+        url:
+          type: string
+        parent_url:
+          type: string
+        publish_time:
+          nullable: true
+          type: string
+        h1:
+          type: string
+        description:
+          nullable: true
+          type: string
+        menu_name:
+          nullable: true
+          type: string
+        intro:
+          nullable: true
+          type: string
+        html:
+          type: string
+        image:
+          type: string
+        tags:
+          type: array
+          items:
+            oneOf:
+              - type: string
+              - type: number
+        count_views:
+          type: integer
+        count_unique_views:
+          nullable: true
+          type: integer
+        count_likes:
+          type: integer
+        count_comments:
+          nullable: true
+          type: integer
+        theme:
+          type: string
+        noindex:
+          type: boolean
+        quiz_id:
+          type: string
+        state:
+          default: ACTIVE
+          type: string
+        rubric_name:
+          type: string
+        user_id:
+          type: integer
+        user_name:
+          nullable: true
+          type: string
+        user_description:
+          type: string
+        user_avatar:
+          type: string
+        view:
+          type: integer
+        like:
+          type: integer
+        bookmark:
+          type: string
+        bookmark_author:
+          type: string
+      required:
+        - type
+        - htmlRaw
+        - url
+        - parent_url
+        - h1
+        - html
+        - image
+        - tags
+        - count_views
+        - count_likes
+        - theme
+        - noindex
+        - quiz_id
+        - state
+        - rubric_name
+        - user_id
+        - user_description
+        - user_avatar
+        - view
+        - like
+        - bookmark
+        - bookmark_author
+    Tpl.Core.SecondMenu:
+      type: object
+      properties: {}
+      required: []
+    Tpl.Core.LeftMenu:
+      type: object
+      properties:
+        items:
+          type: array
+          items:
+            oneOf:
+              - type: string
+              - type: number
+      required:
+        - items
+    Controller_2.Objects.Sites.Site:
+      type: object
+      properties: {}
+      required: []
+    Controller_2.Objects.TplEngine:
+      type: object
+      properties: {}
+      required: []
+      title: Движок работы с шаблонизатором
+      description: Является неотъемлемой частью Page
+    Controller_2.Objects.Page:
+      type: object
+      properties:
+        location:
+          allOf:
+            - $ref: '#/components/schemas/Controller_2.Objects.Location'
+        openGraph:
+          allOf:
+            - $ref: '#/components/schemas/Controller_2.Objects.OpenGraph'
+        options:
+          allOf:
+            - $ref: '#/components/schemas/Controller_2.Objects.Page.Options'
+        article:
+          allOf:
+            - $ref: '#/components/schemas/Controller_2.Objects.Page.Article'
+        secondMenu:
+          allOf:
+            - $ref: '#/components/schemas/Tpl.Core.SecondMenu'
+        leftMenu:
+          allOf:
+            - $ref: '#/components/schemas/Tpl.Core.LeftMenu'
+        params:
+          type: array
+          items:
+            oneOf:
+              - type: string
+              - type: number
+        site:
+          allOf:
+            - $ref: '#/components/schemas/Controller_2.Objects.Sites.Site'
+        subdomain:
+          type: string
+        langContext:
+          type: string
+        langUrl:
+          type: string
+        modUrl:
+          type: string
+        mod:
+          type: string
+        subMod:
+          type: string
+        theme:
+          default: regular
+          type: string
+        jsonLDs:
+          type: array
+          items:
+            oneOf:
+              - type: string
+              - type: number
+        htmlAttributes:
+          type: array
+          items:
+            oneOf:
+              - type: string
+              - type: number
+        logo:
+          type: string
+        redirect:
+          type: string
+        redirectCode:
+          default: 302
+          type: integer
+        tplEngine:
+          allOf:
+            - $ref: '#/components/schemas/Controller_2.Objects.TplEngine'
+        tplStaticPath:
+          type: string
+        tplStatic:
+          type: string
+        tplStaticRendered:
+          type: string
+        tplPath:
+          default: templates/pages/simple.php
+          type: string
+        tplRendered:
+          type: string
+        tplSiteRendered:
+          type: string
+        data:
+          type: array
+          items:
+            oneOf:
+              - type: string
+              - type: number
+        rightsLabels:
+          type: array
+          items:
+            oneOf:
+              - type: string
+              - type: number
+        isFullSize:
+          type: boolean
+        showFooter:
+          type: boolean
+        isAdaptive:
+          type: boolean
+        additionalHeadCode:
+          type: string
+        v:
+          type: string
+        vJS:
+          type: string
+      required:
+        - location
+        - openGraph
+        - options
+        - article
+        - secondMenu
+        - leftMenu
+        - params
+        - site
+        - subdomain
+        - langContext
+        - langUrl
+        - modUrl
+        - mod
+        - subMod
+        - theme
+        - jsonLDs
+        - htmlAttributes
+        - logo
+        - redirect
+        - redirectCode
+        - tplEngine
+        - tplStaticPath
+        - tplStatic
+        - tplStaticRendered
+        - tplPath
+        - tplRendered
+        - tplSiteRendered
+        - data
+        - rightsLabels
+        - isFullSize
+        - showFooter
+        - isAdaptive
+        - additionalHeadCode
+        - v
+        - vJS
+    Comments_2.Methods.Like.Edit:
+      type: object
+      properties:
+        id:
+          title: Id комментария
+          type: integer
+        like:
+          title: |-
+            Установка лайка
+            - 0: снять лайк
+            - 1: поставить лайк
+          type: boolean
+      required:
+        - id
+        - like
+      title: Редактирование статуса лайка для комментария
+      description: Возвращает результат редактирования статуса лайка
+    TV.API.Types.Url:
+      type: string
+      title: |-
+        Краткий URL в punycode, не может содержать UTF-символы:
+        - без схемы
+        - без "www." в домене
+        - без слешей на конце
+        - без "<" и ">"
+      description: |-
+        Будет проивзедено автоматическое приведение к формату
+
+        Разрешен ввод строй строки, для удаления значения url
+    Content_2.Methods.Authors.Edit:
+      type: object
+      properties:
+        alias:
+          title: Имя для url страницы автора
+          description: Только латинские буквы, цифры и символ дефиса
+          nullable: true
+          type: string
+        promo_text:
+          title: Промо текст
+          nullable: true
+          type: string
+        promo_label:
+          title: Текс для промо кнопки
+          nullable: true
+          type: string
+        promo_link:
+          title: Ссылка для промо кнопки
+          nullable: true
+          allOf:
+            - $ref: '#/components/schemas/TV.API.Types.Url'
+        show_in_author_list:
+          title: Отображать ли автора в списке авторов
+          nullable: true
+          type: boolean
+      required: []
+      title: Изменить настройки автора
+    Content_2.Methods.Authors.Get:
+      type: object
+      properties:
+        fields:
+          $ref: '#/components/schemas/fields'
+        orders:
+          $ref: '#/components/schemas/orders'
+        filters:
+          $ref: '#/components/schemas/filters'
+        id:
+          $ref: '#/components/schemas/id'
+        limit:
+          $ref: '#/components/schemas/limit'
+        offset:
+          $ref: '#/components/schemas/offset'
+        fetch_style:
+          $ref: '#/components/schemas/fetch_style'
+      required: []
+      title: Получение данных об авторе
+    Models.Content.Authors:
+      properties:
+        IS_ACTIVE():
+          type: integer
+          nullable: true
+        user_id:
+          type: integer
+          nullable: true
+        alias:
+          type: string
+          nullable: true
+        promo_text:
+          type: string
+          nullable: true
+        promo_label:
+          type: string
+          nullable: true
+        promo_link:
+          type: string
+          nullable: true
+        count_pages:
+          type: integer
+          nullable: true
+        count_views:
+          type: integer
+          nullable: true
+        count_likes:
+          type: integer
+          nullable: true
+        show_in_author_list:
+          type: integer
+          nullable: true
+        user_site:
+          type: string
+          nullable: true
+        user_name:
+          type: string
+          nullable: true
+        user_avatar:
+          type: string
+          nullable: true
+        user_description:
+          type: string
+          nullable: true
+        bookmark_author:
+          type: integer
+          nullable: true
+    TV.API.Types.IntArray:
+      type: array
+      items:
+        type: integer
+      title: 'Тип массива: int'
+      description: |-
+        Принимает: Любые целые числа и числа в строках
+
+        Хранит: int
+    TV.API.Types.BoolArray:
+      type: array
+      items:
+        type: boolean
+      title: 'Тип массива: boolean'
+      description: |-
+        Принимает: 0|1|false|true
+
+        Хранит: false|true
+    Example_2.Types.Number:
+      type: integer
+      enum:
+        - 1
+        - 2
+        - 3
+    Example_2.Types.EnumNumberArray:
+      type: array
+      items:
+        $ref: '#/components/schemas/Example_2.Types.Number'
+      title: 'Тип: enum'
+      description: |-
+        Принимает: 0|1|false|true
+
+        Хранит: false|true
+    Example_2.Methods.Array.Get:
+      type: object
+      properties:
+        ints:
+          allOf:
+            - $ref: '#/components/schemas/TV.API.Types.IntArray'
+        strings:
+          allOf:
+            - $ref: '#/components/schemas/TV.API.Types.StringArray'
+        booleans:
+          allOf:
+            - $ref: '#/components/schemas/TV.API.Types.BoolArray'
+        enum_numbers:
+          allOf:
+            - $ref: '#/components/schemas/Example_2.Types.EnumNumberArray'
+      required:
+        - ints
+        - strings
+        - booleans
+        - enum_numbers
+      title: Метод с примерами параметров типа Enum
+    Example_2.Methods.Custom.Get:
+      type: object
+      properties:
+        format:
+          title: Формат даты
+          description: |-
+            Не обязательный параметр строкового типа со значением по умолчанию
+
+            Можно не указывать, но в exec() он не может быть пустым
+          default: Y-m-d H:i:s
+          type: string
+      required:
+        - format
+      title: Получение текущего времени
+    Example_2.Types.Letter:
+      type: string
+      enum:
+        - a
+        - b
+        - c
+    Example_2.Methods.Enum.Get:
+      type: object
+      properties:
+        number:
+          nullable: true
+          allOf:
+            - $ref: '#/components/schemas/Example_2.Types.Number'
+        number2:
+          allOf:
+            - $ref: '#/components/schemas/Example_2.Types.Number'
+        letter:
+          allOf:
+            - $ref: '#/components/schemas/Example_2.Types.Letter'
+      required:
+        - number2
+        - letter
+      title: Метод с примерами параметров типа Enum
+    Example_2.Methods.Projects.Get:
+      type: object
+      properties:
+        name:
+          title: Имя проекта
+          description: |-
+            Используется для фильтрации по имени проекта, см. self::exec()
+
+            Не обязательный параметр метода строкового типа
+          nullable: true
+          type: string
+        fields:
+          $ref: '#/components/schemas/fields'
+        orders:
+          $ref: '#/components/schemas/orders'
+        filters:
+          $ref: '#/components/schemas/filters'
+        id:
+          $ref: '#/components/schemas/id'
+        limit:
+          $ref: '#/components/schemas/limit'
+        offset:
+          $ref: '#/components/schemas/offset'
+        fetch_style:
+          $ref: '#/components/schemas/fetch_style'
+      required: []
+      title: Получение списка проектов
+    Models.Projects:
+      properties:
+        COUNT(*):
+          nullable: true
+        IS_YOUTUBE():
+          nullable: true
+        IS_APP_STORE():
+          nullable: true
+        IS_GOOGLE_PLAY():
+          nullable: true
+        GEN_SEARCH_STRING():
+          nullable: true
+        id: {}
+        user_id:
+          nullable: true
+        name:
+          type: string
+          nullable: true
+        url:
+          nullable: true
+        date:
+          nullable: true
+        last_view:
+          nullable: true
+        folder_id:
+          type: integer
+          nullable: true
+        folder_name:
+          nullable: true
+        site:
+          nullable: true
+        update:
+          nullable: true
+        status_positions:
+          type: string
+          nullable: true
+        positions_time:
+          nullable: true
+        positions_date:
+          nullable: true
+        positions_percent:
+          nullable: true
+        status_positions_time:
+          nullable: true
+        status_positions_date:
+          nullable: true
+        status_positions_percent:
+          nullable: true
+        status_positions_by_keywords:
+          nullable: true
+        status_volumes:
+          nullable: true
+        status_claster:
+          nullable: true
+        status_audit:
+          nullable: true
+        status_audit_time:
+          nullable: true
+        status_audit_percent:
+          nullable: true
+        status_watcher:
+          nullable: true
+        status_watcher_percent:
+          nullable: true
+        status_indexing:
+          nullable: true
+        status_indexing_percent:
+          nullable: true
+        status_sitemap:
+          nullable: true
+        status_sitemap_percent:
+          nullable: true
+        status_urlsUpdater:
+          nullable: true
+        'on':
+          nullable: true
+        subdomains:
+          nullable: true
+        filter:
+          nullable: true
+        auto_correct:
+          nullable: true
+        with_snippets:
+          nullable: true
+        do_snapshots:
+          nullable: true
+        do_snapshots_with_snippets:
+          nullable: true
+        report_last_time:
+          nullable: true
+        common_traffic:
+          nullable: true
+        guest_link_right:
+          nullable: true
+        count_keywords:
+          nullable: true
+        right:
+          nullable: true
+        ord:
+          nullable: true
+        favorite:
+          nullable: true
+        tags:
+          nullable: true
+        user_email:
+          nullable: true
+        user_currency:
+          nullable: true
+        broker_count_campaigns:
+          nullable: true
+        broker_count_banners:
+          nullable: true
+        broker_count_banners_off:
+          nullable: true
+        domain_expire:
+          nullable: true
+        ssl_expire:
+          nullable: true
+        competitor:
+          nullable: true
+        competitor_ord:
+          nullable: true
+        pos_summary_up:
+          nullable: true
+        pos_summary_stay:
+          nullable: true
+        pos_summary_down:
+          nullable: true
+        pos_summary_avg:
+          nullable: true
+        pos_summary_visibility:
+          nullable: true
+    OpenAPI_2.Methods.Download.Get:
+      type: object
+      properties:
+        format:
+          title: Формат схемы Open API, json или yaml
+          default: json
+          type: string
+      required:
+        - format
+      title: Создать Open API схемы и скачать в zip
+      description: |-
+        В результате вернет zip файл в потоке вывода
+
+        @see https://editor.swagger.io/ Редактор Open API
+    Payments_2.Methods.Companies.Get:
+      type: object
+      properties: {}
+      required: []
+      title: Компании пользователя, через которых, были совершены платежи
+    Payments_2.Methods.ContractSign.Edit:
+      type: object
+      properties:
+        requisites_id:
+          title: Номер договора/оферты для платежа
+          type: string
+        signed:
+          title: Флаг обозначающий подписан ли контракт
+          type: boolean
+      required:
+        - requisites_id
+        - signed
+      title: Подписать контракт (только для админов)
+    Payments_2.Methods.NextRequisitesId.Edit:
+      type: object
+      properties:
+        next_requisites_id:
+          title: ID следующего запроса
+          type: string
+      required:
+        - next_requisites_id
+      title: Изменить платежные реквизиты тарифа
+    Payments_2.Methods.UrTinkoffCreateApplication.Add:
+      type: object
+      properties: {}
+      required: []
+      title: Отправить заявка на подключение Тинькофф Бизнес
+    Payments_2.Methods.ValidateMerchantCardAP.Get:
+      type: object
+      properties:
+        validation_url:
+          title: URL для запроса к Apple Pay
+          type: string
+      required:
+        - validation_url
+      title: Валидация домена для подтверждения оплаты Apple Pay (system = card_ap)
+    Admin_2.Methods.Users.Promocodes.Add:
+      type: object
+      properties:
+        rank_id:
+          type: integer
+        single_code:
+          title: single_code - многоразовый промокод
+          nullable: true
+          type: string
+        codes:
+          title: Список многоразовых промокодов
+          nullable: true
+          type: array
+          items:
+            oneOf:
+              - type: string
+              - type: number
+      required:
+        - rank_id
+      title: Добавить промокоды к достижению
+    Models.Users.Verif:
+      properties:
+        email:
+          nullable: true
+        code:
+          nullable: true
+        action:
+          nullable: true
+        params:
+          nullable: true
+        data:
+          nullable: true
+        date:
+          nullable: true
+    Admin_2.Methods.Users.Promocodes.Get:
+      type: object
+      properties:
+        fields:
+          $ref: '#/components/schemas/fields'
+        orders:
+          $ref: '#/components/schemas/orders'
+        filters:
+          $ref: '#/components/schemas/filters'
+        id:
+          $ref: '#/components/schemas/id'
+        limit:
+          $ref: '#/components/schemas/limit'
+        offset:
+          $ref: '#/components/schemas/offset'
+        fetch_style:
+          $ref: '#/components/schemas/fetch_style'
+      required: []
+      title: Получить промокоды
+      description: |-
+        В params хранится строка в формате:
+        - {{ rank_id }}
+        - {{ rank_id }},single_code - для многоразового кода
+    Admin_2.Types.Users.Ranks.Category:
+      type: string
+      enum:
+        - ''
+        - journal
+    Admin_2.Methods.Users.Ranks.Add:
+      type: object
+      properties:
+        name_id:
+          nullable: true
+          type: string
+        category:
+          nullable: true
+          allOf:
+            - $ref: '#/components/schemas/Admin_2.Types.Users.Ranks.Category'
+        name_ru:
+          nullable: true
+          type: string
+        name_en:
+          nullable: true
+          type: string
+        descr_ru:
+          nullable: true
+          type: string
+        descr_en:
+          nullable: true
+          type: string
+        descr_how_to_use_ru:
+          nullable: true
+          type: string
+        descr_how_to_use_en:
+          nullable: true
+          type: string
+        bonus_RUB:
+          nullable: true
+          type: integer
+        bonus_USD:
+          nullable: true
+          type: integer
+        cashback_expenses:
+          nullable: true
+          type: integer
+        cashback_first_payment:
+          nullable: true
+          type: integer
+        discount:
+          nullable: true
+          type: integer
+        referrer_id:
+          nullable: true
+          type: integer
+        from_date:
+          nullable: true
+          type: string
+        to_date:
+          nullable: true
+          type: string
+        max_count_usage:
+          nullable: true
+          type: integer
+        currency:
+          nullable: true
+          type: string
+        only_new_users:
+          nullable: true
+          type: boolean
+        color:
+          nullable: true
+          type: string
+        always_visible:
+          nullable: true
+          type: boolean
+      required: []
+      title: Добавить достижение
+    Models.Admin.Users.Ranks:
+      properties:
+        COUNT_CODES():
+          nullable: true
+        id: {}
+        name_id:
+          nullable: true
+        category:
+          nullable: true
+        name:
+          nullable: true
+        name_ru:
+          nullable: true
+        name_en:
+          nullable: true
+        descr:
+          nullable: true
+        descr_ru:
+          nullable: true
+        descr_en:
+          nullable: true
+        descr_how_to_use:
+          nullable: true
+        descr_how_to_use_ru:
+          nullable: true
+        descr_how_to_use_en:
+          nullable: true
+        bonus:
+          nullable: true
+        bonus_RUB:
+          nullable: true
+        bonus_USD:
+          nullable: true
+        cashback_expenses:
+          nullable: true
+        cashback_first_payment:
+          nullable: true
+        discount:
+          nullable: true
+        referrer_id:
+          nullable: true
+        from_date:
+          nullable: true
+        to_date:
+          nullable: true
+        limit:
+          nullable: true
+        currency:
+          nullable: true
+        only_new_users:
+          nullable: true
+        color:
+          nullable: true
+        always_visible:
+          nullable: true
+    Admin_2.Methods.Users.Ranks.Edit:
+      type: object
+      properties:
+        id:
+          type: integer
+        name_id:
+          nullable: true
+          type: string
+        category:
+          nullable: true
+          allOf:
+            - $ref: '#/components/schemas/Admin_2.Types.Users.Ranks.Category'
+        name_ru:
+          nullable: true
+          type: string
+        name_en:
+          nullable: true
+          type: string
+        descr_ru:
+          nullable: true
+          type: string
+        descr_en:
+          nullable: true
+          type: string
+        descr_how_to_use_ru:
+          nullable: true
+          type: string
+        descr_how_to_use_en:
+          nullable: true
+          type: string
+        bonus_RUB:
+          nullable: true
+          type: integer
+        bonus_USD:
+          nullable: true
+          type: integer
+        cashback_expenses:
+          nullable: true
+          type: integer
+        cashback_first_payment:
+          nullable: true
+          type: integer
+        discount:
+          nullable: true
+          type: integer
+        referrer_id:
+          nullable: true
+          type: integer
+        from_date:
+          nullable: true
+          type: string
+        to_date:
+          nullable: true
+          type: string
+        max_count_usage:
+          nullable: true
+          type: integer
+        currency:
+          nullable: true
+          type: string
+        only_new_users:
+          nullable: true
+          type: boolean
+        color:
+          nullable: true
+          type: string
+        always_visible:
+          nullable: true
+          type: boolean
+      required:
+        - id
+      title: Изменить достижение
+    Admin_2.Methods.Users.Ranks.Get:
+      type: object
+      properties:
+        fields:
+          $ref: '#/components/schemas/fields'
+        orders:
+          $ref: '#/components/schemas/orders'
+        filters:
+          $ref: '#/components/schemas/filters'
+        id:
+          $ref: '#/components/schemas/id'
+        limit:
+          $ref: '#/components/schemas/limit'
+        offset:
+          $ref: '#/components/schemas/offset'
+        fetch_style:
+          $ref: '#/components/schemas/fetch_style'
+      required: []
+      title: Получить достижения
+    Payments_2.Methods.Tariff.DelCard.Edit:
+      type: object
+      properties: {}
+      required: []
+      title: Отписаться от тарифа, оплаченного картой
+    Payments_2.Methods.Tariff.NextToDiadoc.Edit:
+      type: object
+      properties:
+        next_to_diadoc:
+          title: Флаг - применение настройки тарифов
+          type: boolean
+      required:
+        - next_to_diadoc
+      title: 'Настройка оплаты тарифов: выставлять ли счета через диадок'
+    Payments_2.Methods.Tariff.SetNext.Edit:
+      type: object
+      properties:
+        id:
+          title: id тарифа
+          type: string
+      required:
+        - id
+      title: Сменить тариф со следующего месяца
+    Users_2.Methods.Join.Email.Add:
+      type: object
+      properties:
+        email:
+          type: string
+        pass:
+          nullable: true
+          type: string
+      required:
+        - email
+      title: Привязка email к аккаунту
+    Admin_2.Methods.Users.Informer.Subscriptions.Get:
+      type: object
+      properties:
+        tariff_id:
+          nullable: true
+          type: integer
+      required: []
+      title: График с количеством подписок на рубрики с сегментцией по способам рассылки
+      description: График кешируется, первый запрос может выполняться дольше
+    TV.Objects.Highcharts.Chart:
+      type: object
+      properties:
+        categories:
+          title: Категории
+          description: Для обчных графиков это значения на оси X
+          type: array
+          items:
+            oneOf:
+              - type: string
+              - type: number
+        series:
+          title: Набор серий
+          description: |-
+            Серия - это объект, выводимый на графике, например линия.
+
+            Серия обязательно должна иметь поле data, в котором перечисляются значения для категорий. Значения должны идти в таком же порядке, что и
+            категории
+          type: array
+          items:
+            oneOf:
+              - type: string
+              - type: number
+        additionalData:
+          title: Дополнительгная информация
+          type: array
+          items:
+            oneOf:
+              - type: string
+              - type: number
+      required:
+        - categories
+        - series
+        - additionalData
+      title: Сокращенный тип с данными для вывода hightcharts
+      description: https://www.highcharts.com/
