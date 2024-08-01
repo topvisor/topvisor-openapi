@@ -2327,17 +2327,17 @@
     },
     "components": {
         "securitySchemes": {
-            "authLogin": {
-                "type": "apiKey",
-                "description": "Пользовательская авторизиаця через ввода Логина и пароля или через сторонний сервис",
-                "name": "auth",
-                "in": "cookie"
-            },
             "authToken": {
                 "type": "apiKey",
                 "description": "Авторизаци по API ключу в формате: `Bearer userId:AccessToken`",
                 "name": "Authorization",
                 "in": "header"
+            },
+            "authLogin": {
+                "type": "apiKey",
+                "description": "Пользовательская авторизиаця через ввода Логина и пароля или через сторонний сервис",
+                "name": "auth",
+                "in": "cookie"
             }
         }
     },
@@ -2349,10 +2349,10 @@
     ],
     "security": [
         {
-            "authLogin": []
+            "authToken": []
         },
         {
-            "authToken": []
+            "authLogin": []
         }
     ],
     "tags": [

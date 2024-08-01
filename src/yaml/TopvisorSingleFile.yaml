@@ -6,8 +6,8 @@ servers:
   - url: https://api.topvisor.com/v2/json
     description: Интерфейс для работы с API. Запрещено междоменное общение.
 security:
-  - authLogin: []
   - authToken: []
+  - authLogin: []
 tags:
   - name: Admin_2
     description: admin_2
@@ -1379,16 +1379,16 @@ paths:
                 type: 'null'
 components:
   securitySchemes:
-    authLogin:
-      type: apiKey
-      description: Пользовательская авторизиаця через ввода Логина и пароля или через сторонний сервис
-      name: auth
-      in: cookie
     authToken:
       type: apiKey
       description: 'Авторизаци по API ключу в формате: `Bearer userId:AccessToken`'
       name: Authorization
       in: header
+    authLogin:
+      type: apiKey
+      description: Пользовательская авторизиаця через ввода Логина и пароля или через сторонний сервис
+      name: auth
+      in: cookie
   schemas:
     Analytics_2.Methods.Add:
       type: object
