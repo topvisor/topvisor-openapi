@@ -17,7 +17,7 @@
 
 ## YAML
 
-Схемы представлены в YAML формате все в одном файле: [./src/yaml/TopvisorSingleFile.yaml](./src/yaml/TopvisorSingleFile.yaml).
+Все схемы представлены в YAML в одном файле: [./src/yaml/TopvisorSingleFile.yaml](./src/yaml/TopvisorSingleFile.yaml).
 
 Ссылка для импорта в сторонние сервисы: https://raw.githubusercontent.com/topvisor/topvisor-openapi/main/src/yaml/TopvisorSingleFile.yaml
 
