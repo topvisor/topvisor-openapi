@@ -694,7 +694,7 @@ export interface paths {
     };  
     /**
      * График с количеством подписок на рубрики с сегментцией по способам рассылки
-     * @description График кешируется, первый запрос может выполнятсья дольше
+     * @description График кешируется, первый запрос может выполняться дольше
      */
     "/get/admin_2/users/informer/subscriptions/": {
         parameters: {
@@ -731,7 +731,7 @@ export interface operations {
             path?: never;
             cookie?: never;
         };
-        requestBody?: {
+        requestBody: {
             content: {
                 "application/json": import('./Analytics_2/Methods/Add.ts').components['schemas']['Analytics_2.Methods.Add'];
             };
@@ -861,7 +861,7 @@ export interface operations {
             path?: never;
             cookie?: never;
         };
-        requestBody?: {
+        requestBody: {
             content: {
                 "application/json": import('./App_2/Methods/Get.ts').components['schemas']['App_2.Methods.Get'];
             };
@@ -1067,7 +1067,7 @@ export interface operations {
             path?: never;
             cookie?: never;
         };
-        requestBody?: {
+        requestBody: {
             content: {
                 "application/json": import('./Annotations_2/Methods/My/Get.ts').components['schemas']['Annotations_2.Methods.My.Get'];
             };
@@ -1119,7 +1119,7 @@ export interface operations {
             path?: never;
             cookie?: never;
         };
-        requestBody?: {
+        requestBody: {
             content: {
                 "application/json": import('./App_2/Methods/Privacy/Get.ts').components['schemas']['App_2.Methods.Privacy.Get'];
             };
@@ -1171,7 +1171,7 @@ export interface operations {
             path?: never;
             cookie?: never;
         };
-        requestBody?: {
+        requestBody: {
             content: {
                 "application/json": import('./Content_2/Methods/Authors/Edit.ts').components['schemas']['Content_2.Methods.Authors.Edit'];
             };
@@ -1197,7 +1197,7 @@ export interface operations {
             path?: never;
             cookie?: never;
         };
-        requestBody?: {
+        requestBody: {
             content: {
                 "application/json": import('./Content_2/Methods/Authors/Get.ts').components['schemas']['Content_2.Methods.Authors.Get'];
             };
@@ -1303,7 +1303,7 @@ export interface operations {
             path?: never;
             cookie?: never;
         };
-        requestBody?: {
+        requestBody: {
             content: {
                 "application/json": import('./Example_2/Methods/Projects/Get.ts').components['schemas']['Example_2.Methods.Projects.Get'];
             };
@@ -1352,7 +1352,7 @@ export interface operations {
             path?: never;
             cookie?: never;
         };
-        requestBody?: {
+        requestBody: {
             content: {
                 "application/json": import('./Payments_2/Methods/Companies/Get.ts').components['schemas']['Payments_2.Methods.Companies.Get'];
             };
@@ -1430,7 +1430,7 @@ export interface operations {
             path?: never;
             cookie?: never;
         };
-        requestBody?: {
+        requestBody: {
             content: {
                 "application/json": import('./Payments_2/Methods/UrTinkoffCreateApplication/Add.ts').components['schemas']['Payments_2.Methods.UrTinkoffCreateApplication.Add'];
             };
@@ -1509,7 +1509,7 @@ export interface operations {
             path?: never;
             cookie?: never;
         };
-        requestBody?: {
+        requestBody: {
             content: {
                 "application/json": import('./Admin_2/Methods/Users/Promocodes/Get.ts').components['schemas']['Admin_2.Methods.Users.Promocodes.Get'];
             };
@@ -1535,7 +1535,7 @@ export interface operations {
             path?: never;
             cookie?: never;
         };
-        requestBody?: {
+        requestBody: {
             content: {
                 "application/json": import('./Admin_2/Methods/Users/Ranks/Add.ts').components['schemas']['Admin_2.Methods.Users.Ranks.Add'];
             };
@@ -1587,7 +1587,7 @@ export interface operations {
             path?: never;
             cookie?: never;
         };
-        requestBody?: {
+        requestBody: {
             content: {
                 "application/json": import('./Admin_2/Methods/Users/Ranks/Get.ts').components['schemas']['Admin_2.Methods.Users.Ranks.Get'];
             };
@@ -1613,7 +1613,7 @@ export interface operations {
             path?: never;
             cookie?: never;
         };
-        requestBody?: {
+        requestBody: {
             content: {
                 "application/json": import('./Payments_2/Methods/Tariff/DelCard/Edit.ts').components['schemas']['Payments_2.Methods.Tariff.DelCard.Edit'];
             };
@@ -1718,7 +1718,7 @@ export interface operations {
             path?: never;
             cookie?: never;
         };
-        requestBody?: {
+        requestBody: {
             content: {
                 "application/json": import('./Admin_2/Methods/Users/Informer/Subscriptions/Get.ts').components['schemas']['Admin_2.Methods.Users.Informer.Subscriptions.Get'];
             };

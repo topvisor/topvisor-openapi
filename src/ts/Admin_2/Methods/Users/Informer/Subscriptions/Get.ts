@@ -9,7 +9,7 @@ export interface components {
     schemas: {
         /**
          * График с количеством подписок на рубрики с сегментцией по способам рассылки
-         * @description График кешируется, первый запрос может выполнятсья дольше
+         * @description График кешируется, первый запрос может выполняться дольше
          */
         "Admin_2.Methods.Users.Informer.Subscriptions.Get": {
             tariff_id?: number | null;

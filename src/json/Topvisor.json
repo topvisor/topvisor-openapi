@@ -20,7 +20,7 @@
                             }
                         }
                     },
-                    "required": false
+                    "required": true
                 },
                 "responses": {
                     "200": {
@@ -318,7 +318,7 @@
                             }
                         }
                     },
-                    "required": false
+                    "required": true
                 },
                 "responses": {
                     "200": {
@@ -772,7 +772,7 @@
                             }
                         }
                     },
-                    "required": false
+                    "required": true
                 },
                 "responses": {
                     "200": {
@@ -895,7 +895,7 @@
                             }
                         }
                     },
-                    "required": false
+                    "required": true
                 },
                 "responses": {
                     "200": {
@@ -1012,7 +1012,7 @@
                             }
                         }
                     },
-                    "required": false
+                    "required": true
                 },
                 "responses": {
                     "200": {
@@ -1070,7 +1070,7 @@
                             }
                         }
                     },
-                    "required": false
+                    "required": true
                 },
                 "responses": {
                     "200": {
@@ -1326,7 +1326,7 @@
                             }
                         }
                     },
-                    "required": false
+                    "required": true
                 },
                 "responses": {
                     "200": {
@@ -1425,7 +1425,7 @@
                             }
                         }
                     },
-                    "required": false
+                    "required": true
                 },
                 "responses": {
                     "200": {
@@ -1609,7 +1609,7 @@
                             }
                         }
                     },
-                    "required": false
+                    "required": true
                 },
                 "responses": {
                     "200": {
@@ -1796,7 +1796,7 @@
                             }
                         }
                     },
-                    "required": false
+                    "required": true
                 },
                 "responses": {
                     "200": {
@@ -1862,7 +1862,7 @@
                             }
                         }
                     },
-                    "required": false
+                    "required": true
                 },
                 "responses": {
                     "200": {
@@ -1980,7 +1980,7 @@
                             }
                         }
                     },
-                    "required": false
+                    "required": true
                 },
                 "responses": {
                     "200": {
@@ -2046,7 +2046,7 @@
                             }
                         }
                     },
-                    "required": false
+                    "required": true
                 },
                 "responses": {
                     "200": {
@@ -2271,7 +2271,7 @@
                     "Admin_2"
                 ],
                 "summary": "График с количеством подписок на рубрики с сегментцией по способам рассылки",
-                "description": "График кешируется, первый запрос может выполнятсья дольше",
+                "description": "График кешируется, первый запрос может выполняться дольше",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -2280,7 +2280,7 @@
                             }
                         }
                     },
-                    "required": false
+                    "required": true
                 },
                 "responses": {
                     "200": {
