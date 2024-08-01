@@ -15,6 +15,12 @@
 Введите URL для прсомотра методов: https://raw.githubusercontent.com/topvisor/topvisor-openapi/main/src/json/Topvisor.json  
 Введите URL для прсомотра моделей данных: https://raw.githubusercontent.com/topvisor/topvisor-openapi/main/src/json/Models.json
 
+## YAML
+
+Схемы представлены в YAML формате все в одном файле: [./src/yaml/TopvisorSingleFile.yaml](./src/yaml/TopvisorSingleFile.yaml).
+
+Ссылка для импорта в сторонние сервисы: https://raw.githubusercontent.com/topvisor/topvisor-openapi/main/src/yaml/TopvisorSingleFile.yaml
+
 ## Typescript
 
 Схемы представлены в typescript формате: [./src/ts/](./src/ts).
