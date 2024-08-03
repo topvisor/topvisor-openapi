@@ -11,9 +11,8 @@ export interface components {
             /**
              * Количество объектов, которые необходимо получить в результате
              * @description Используется в паре с offset
-             * @default 10000
              */
-            limit: number;
+            limit?: number | null;
         };
     };
     responses: never;

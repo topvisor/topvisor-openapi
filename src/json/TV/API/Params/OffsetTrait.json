@@ -12,9 +12,8 @@
                 "properties": {
                     "offset": {
                         "title": "Число объектов, которое необходимо пропустить при получении резальтата",
-                        "description": "Используется в паре с limit\n",
+                        "description": "Используется в паре с limit",
                         "nullable": true,
-                        "example": "10",
                         "type": "integer"
                     }
                 },
@@ -24,8 +23,7 @@
         "parameters": {
             "offset": {
                 "name": "offset",
-                "description": "Число объектов, которое необходимо пропустить при получении резальтата\n\nИспользуется в паре с limit\n",
-                "example": "10",
+                "description": "Число объектов, которое необходимо пропустить при получении резальтата\n\nИспользуется в паре с limit",
                 "style": "deepObject",
                 "in": "query",
                 "schema": {
