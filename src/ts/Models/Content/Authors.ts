@@ -16,6 +16,7 @@ export interface components {
             promo_link?: string | null;
             count_pages?: number | null;
             count_views?: number | null;
+            count_unique_views?: string | null;
             count_likes?: number | null;
             show_in_author_list?: number | null;
             user_site?: string | null;

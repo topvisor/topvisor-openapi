@@ -41,6 +41,10 @@
                         "type": "integer",
                         "nullable": true
                     },
+                    "count_unique_views": {
+                        "type": "string",
+                        "nullable": true
+                    },
                     "count_likes": {
                         "type": "integer",
                         "nullable": true
