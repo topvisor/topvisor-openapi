@@ -938,9 +938,9 @@
                 }
             }
         },
-        "/get/audit_2/counturls/": {
+        "/get/audit_2/countUrls/": {
             "post": {
-                "operationId": "GetAudit2Counturls",
+                "operationId": "GetAudit2CountUrls",
                 "tags": [
                     "Audit_2"
                 ],
@@ -1806,9 +1806,9 @@
                 }
             }
         },
-        "/edit/payments_2/contractsign/": {
+        "/edit/payments_2/contractSign/": {
             "post": {
-                "operationId": "EditPayments2Contractsign",
+                "operationId": "EditPayments2ContractSign",
                 "tags": [
                     "Payments_2"
                 ],
@@ -1864,9 +1864,9 @@
                 }
             }
         },
-        "/edit/payments_2/nextrequisitesid/": {
+        "/edit/payments_2/nextRequisitesId/": {
             "post": {
-                "operationId": "EditPayments2Nextrequisitesid",
+                "operationId": "EditPayments2NextRequisitesId",
                 "tags": [
                     "Payments_2"
                 ],
@@ -1922,9 +1922,9 @@
                 }
             }
         },
-        "/add/payments_2/urtinkoffcreateapplication/": {
+        "/add/payments_2/urTinkoffCreateApplication/": {
             "post": {
-                "operationId": "AddPayments2Urtinkoffcreateapplication",
+                "operationId": "AddPayments2UrTinkoffCreateApplication",
                 "tags": [
                     "Payments_2"
                 ],
@@ -1980,9 +1980,9 @@
                 }
             }
         },
-        "/get/payments_2/validatemerchantcardap/": {
+        "/get/payments_2/validateMerchantCardAP/": {
             "post": {
-                "operationId": "GetPayments2Validatemerchantcardap",
+                "operationId": "GetPayments2ValidateMerchantCardAP",
                 "tags": [
                     "Payments_2"
                 ],
@@ -2997,9 +2997,9 @@
                 }
             }
         },
-        "/get/audit_2/audit/summarypage/": {
+        "/get/audit_2/audit/summaryPage/": {
             "post": {
-                "operationId": "GetAudit2AuditSummarypage",
+                "operationId": "GetAudit2AuditSummaryPage",
                 "tags": [
                     "Audit_2"
                 ],
@@ -3253,9 +3253,9 @@
                 }
             }
         },
-        "/get/audit_2/watcher/byurl/": {
+        "/get/audit_2/watcher/byURL/": {
             "post": {
-                "operationId": "GetAudit2WatcherByurl",
+                "operationId": "GetAudit2WatcherByURL",
                 "tags": [
                     "Audit_2"
                 ],
@@ -3454,9 +3454,9 @@
                 }
             }
         },
-        "/edit/payments_2/tariff/delcard/": {
+        "/edit/payments_2/tariff/delCard/": {
             "post": {
-                "operationId": "EditPayments2TariffDelcard",
+                "operationId": "EditPayments2TariffDelCard",
                 "tags": [
                     "Payments_2"
                 ],
@@ -3512,9 +3512,9 @@
                 }
             }
         },
-        "/edit/payments_2/tariff/nexttodiadoc/": {
+        "/edit/payments_2/tariff/nextToDiadoc/": {
             "post": {
-                "operationId": "EditPayments2TariffNexttodiadoc",
+                "operationId": "EditPayments2TariffNextToDiadoc",
                 "tags": [
                     "Payments_2"
                 ],
@@ -3570,9 +3570,9 @@
                 }
             }
         },
-        "/edit/payments_2/tariff/setnext/": {
+        "/edit/payments_2/tariff/setNext/": {
             "post": {
-                "operationId": "EditPayments2TariffSetnext",
+                "operationId": "EditPayments2TariffSetNext",
                 "tags": [
                     "Payments_2"
                 ],
@@ -3966,9 +3966,9 @@
                 }
             }
         },
-        "/get/audit_2/audit/log/actualerror/": {
+        "/get/audit_2/audit/log/actualError/": {
             "post": {
-                "operationId": "GetAudit2AuditLogActualerror",
+                "operationId": "GetAudit2AuditLogActualError",
                 "tags": [
                     "Audit_2"
                 ],
@@ -4416,9 +4416,9 @@
                 }
             }
         },
-        "/get/audit_2/indexing/export/torepository/": {
+        "/get/audit_2/indexing/export/toRepository/": {
             "post": {
-                "operationId": "GetAudit2IndexingExportTorepository",
+                "operationId": "GetAudit2IndexingExportToRepository",
                 "tags": [
                     "Audit_2"
                 ],

@@ -306,7 +306,7 @@ export interface paths {
         trace?: never;
     };  
     /** Получение количества настроенных URL */
-    "/get/audit_2/counturls/": {
+    "/get/audit_2/countUrls/": {
         parameters: {
             query?: never;
             header?: never;
@@ -315,7 +315,7 @@ export interface paths {
         };
         get?: never;
         put?: never;
-        post: operations["GetAudit2Counturls"];
+        post: operations["GetAudit2CountUrls"];
         delete?: never;
         options?: never;
         head?: never;
@@ -560,7 +560,7 @@ export interface paths {
         trace?: never;
     };  
     /** Подписать контракт (только для админов) */
-    "/edit/payments_2/contractsign/": {
+    "/edit/payments_2/contractSign/": {
         parameters: {
             query?: never;
             header?: never;
@@ -569,7 +569,7 @@ export interface paths {
         };
         get?: never;
         put?: never;
-        post: operations["EditPayments2Contractsign"];
+        post: operations["EditPayments2ContractSign"];
         delete?: never;
         options?: never;
         head?: never;
@@ -577,7 +577,7 @@ export interface paths {
         trace?: never;
     };  
     /** Изменить платежные реквизиты тарифа */
-    "/edit/payments_2/nextrequisitesid/": {
+    "/edit/payments_2/nextRequisitesId/": {
         parameters: {
             query?: never;
             header?: never;
@@ -586,7 +586,7 @@ export interface paths {
         };
         get?: never;
         put?: never;
-        post: operations["EditPayments2Nextrequisitesid"];
+        post: operations["EditPayments2NextRequisitesId"];
         delete?: never;
         options?: never;
         head?: never;
@@ -594,7 +594,7 @@ export interface paths {
         trace?: never;
     };  
     /** Отправить заявка на подключение Тинькофф Бизнес */
-    "/add/payments_2/urtinkoffcreateapplication/": {
+    "/add/payments_2/urTinkoffCreateApplication/": {
         parameters: {
             query?: never;
             header?: never;
@@ -603,7 +603,7 @@ export interface paths {
         };
         get?: never;
         put?: never;
-        post: operations["AddPayments2Urtinkoffcreateapplication"];
+        post: operations["AddPayments2UrTinkoffCreateApplication"];
         delete?: never;
         options?: never;
         head?: never;
@@ -611,7 +611,7 @@ export interface paths {
         trace?: never;
     };  
     /** Валидация домена для подтверждения оплаты Apple Pay (system = card_ap) */
-    "/get/payments_2/validatemerchantcardap/": {
+    "/get/payments_2/validateMerchantCardAP/": {
         parameters: {
             query?: never;
             header?: never;
@@ -620,7 +620,7 @@ export interface paths {
         };
         get?: never;
         put?: never;
-        post: operations["GetPayments2Validatemerchantcardap"];
+        post: operations["GetPayments2ValidateMerchantCardAP"];
         delete?: never;
         options?: never;
         head?: never;
@@ -895,7 +895,7 @@ export interface paths {
         trace?: never;
     };  
     /** Получение сводки страницы */
-    "/get/audit_2/audit/summarypage/": {
+    "/get/audit_2/audit/summaryPage/": {
         parameters: {
             query?: never;
             header?: never;
@@ -904,7 +904,7 @@ export interface paths {
         };
         get?: never;
         put?: never;
-        post: operations["GetAudit2AuditSummarypage"];
+        post: operations["GetAudit2AuditSummaryPage"];
         delete?: never;
         options?: never;
         head?: never;
@@ -975,7 +975,7 @@ export interface paths {
      *     - параметры выбора периода отчета игнорируются
      *     - выбор прверок регулируется параметрами запроса filters, limit и offset
      */
-    "/get/audit_2/watcher/byurl/": {
+    "/get/audit_2/watcher/byURL/": {
         parameters: {
             query?: never;
             header?: never;
@@ -984,7 +984,7 @@ export interface paths {
         };
         get?: never;
         put?: never;
-        post: operations["GetAudit2WatcherByurl"];
+        post: operations["GetAudit2WatcherByURL"];
         delete?: never;
         options?: never;
         head?: never;
@@ -1026,7 +1026,7 @@ export interface paths {
         trace?: never;
     };  
     /** Отписаться от тарифа, оплаченного картой */
-    "/edit/payments_2/tariff/delcard/": {
+    "/edit/payments_2/tariff/delCard/": {
         parameters: {
             query?: never;
             header?: never;
@@ -1035,7 +1035,7 @@ export interface paths {
         };
         get?: never;
         put?: never;
-        post: operations["EditPayments2TariffDelcard"];
+        post: operations["EditPayments2TariffDelCard"];
         delete?: never;
         options?: never;
         head?: never;
@@ -1043,7 +1043,7 @@ export interface paths {
         trace?: never;
     };  
     /** Настройка оплаты тарифов: выставлять ли счета через диадок */
-    "/edit/payments_2/tariff/nexttodiadoc/": {
+    "/edit/payments_2/tariff/nextToDiadoc/": {
         parameters: {
             query?: never;
             header?: never;
@@ -1052,7 +1052,7 @@ export interface paths {
         };
         get?: never;
         put?: never;
-        post: operations["EditPayments2TariffNexttodiadoc"];
+        post: operations["EditPayments2TariffNextToDiadoc"];
         delete?: never;
         options?: never;
         head?: never;
@@ -1060,7 +1060,7 @@ export interface paths {
         trace?: never;
     };  
     /** Сменить тариф со следующего месяца */
-    "/edit/payments_2/tariff/setnext/": {
+    "/edit/payments_2/tariff/setNext/": {
         parameters: {
             query?: never;
             header?: never;
@@ -1069,7 +1069,7 @@ export interface paths {
         };
         get?: never;
         put?: never;
-        post: operations["EditPayments2TariffSetnext"];
+        post: operations["EditPayments2TariffSetNext"];
         delete?: never;
         options?: never;
         head?: never;
@@ -1182,7 +1182,7 @@ export interface paths {
         trace?: never;
     };  
     /** Получение информации о текущей ошибке на роботе */
-    "/get/audit_2/audit/log/actualerror/": {
+    "/get/audit_2/audit/log/actualError/": {
         parameters: {
             query?: never;
             header?: never;
@@ -1191,7 +1191,7 @@ export interface paths {
         };
         get?: never;
         put?: never;
-        post: operations["GetAudit2AuditLogActualerror"];
+        post: operations["GetAudit2AuditLogActualError"];
         delete?: never;
         options?: never;
         head?: never;
@@ -1313,7 +1313,7 @@ export interface paths {
         trace?: never;
     };  
     /** Экспорт файла в хранилище */
-    "/get/audit_2/indexing/export/torepository/": {
+    "/get/audit_2/indexing/export/toRepository/": {
         parameters: {
             query?: never;
             header?: never;
@@ -1322,7 +1322,7 @@ export interface paths {
         };
         get?: never;
         put?: never;
-        post: operations["GetAudit2IndexingExportTorepository"];
+        post: operations["GetAudit2IndexingExportToRepository"];
         delete?: never;
         options?: never;
         head?: never;
@@ -1874,7 +1874,7 @@ export interface operations {
             };
         };
     };
-    GetAudit2Counturls: {
+    GetAudit2CountUrls: {
         parameters: {
             query?: never;
             header?: never;
@@ -2242,7 +2242,7 @@ export interface operations {
             };
         };
     };
-    EditPayments2Contractsign: {
+    EditPayments2ContractSign: {
         parameters: {
             query?: never;
             header?: never;
@@ -2268,7 +2268,7 @@ export interface operations {
             };
         };
     };
-    EditPayments2Nextrequisitesid: {
+    EditPayments2NextRequisitesId: {
         parameters: {
             query?: never;
             header?: never;
@@ -2294,7 +2294,7 @@ export interface operations {
             };
         };
     };
-    AddPayments2Urtinkoffcreateapplication: {
+    AddPayments2UrTinkoffCreateApplication: {
         parameters: {
             query?: never;
             header?: never;
@@ -2320,7 +2320,7 @@ export interface operations {
             };
         };
     };
-    GetPayments2Validatemerchantcardap: {
+    GetPayments2ValidateMerchantCardAP: {
         parameters: {
             query?: never;
             header?: never;
@@ -2747,7 +2747,7 @@ export interface operations {
             };
         };
     };
-    GetAudit2AuditSummarypage: {
+    GetAudit2AuditSummaryPage: {
         parameters: {
             query?: never;
             header?: never;
@@ -2855,7 +2855,7 @@ export interface operations {
             };
         };
     };
-    GetAudit2WatcherByurl: {
+    GetAudit2WatcherByURL: {
         parameters: {
             query?: never;
             header?: never;
@@ -2936,7 +2936,7 @@ export interface operations {
             };
         };
     };
-    EditPayments2TariffDelcard: {
+    EditPayments2TariffDelCard: {
         parameters: {
             query?: never;
             header?: never;
@@ -2962,7 +2962,7 @@ export interface operations {
             };
         };
     };
-    EditPayments2TariffNexttodiadoc: {
+    EditPayments2TariffNextToDiadoc: {
         parameters: {
             query?: never;
             header?: never;
@@ -2988,7 +2988,7 @@ export interface operations {
             };
         };
     };
-    EditPayments2TariffSetnext: {
+    EditPayments2TariffSetNext: {
         parameters: {
             query?: never;
             header?: never;
@@ -3189,7 +3189,7 @@ export interface operations {
             };
         };
     };
-    GetAudit2AuditLogActualerror: {
+    GetAudit2AuditLogActualError: {
         parameters: {
             query?: never;
             header?: never;
@@ -3403,7 +3403,7 @@ export interface operations {
             };
         };
     };
-    GetAudit2IndexingExportTorepository: {
+    GetAudit2IndexingExportToRepository: {
         parameters: {
             query?: never;
             header?: never;
