@@ -1,0 +1,26 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Audit_2.Methods.Indexing.Checker.Price.Get",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Audit_2.Methods.Indexing.Checker.Price.Get": {
+                "type": "object",
+                "properties": {
+                    "apply_discount": {
+                        "title": "Отображать сумму с учетом скидки",
+                        "default": 1,
+                        "type": "integer"
+                    }
+                },
+                "required": [
+                    "apply_discount"
+                ],
+                "title": "Полуение стоимости проверки индексации"
+            }
+        }
+    }
+}

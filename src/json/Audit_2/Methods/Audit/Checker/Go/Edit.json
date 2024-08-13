@@ -1,0 +1,27 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Audit_2.Methods.Audit.Checker.Go.Edit",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Audit_2.Methods.Audit.Checker.Go.Edit": {
+                "type": "object",
+                "properties": {
+                    "filters": {
+                        "$ref": "../../../../../TV/API/Params/FiltersTrait.json#/components/schemas/TV.API.Params.FiltersTrait/properties/filters"
+                    },
+                    "id": {
+                        "$ref": "../../../../../TV/API/Params/FiltersTrait.json#/components/schemas/TV.API.Params.FiltersTrait/properties/id"
+                    }
+                },
+                "required": [
+                    "filters"
+                ],
+                "title": "Запуск проверки аудита"
+            }
+        }
+    }
+}

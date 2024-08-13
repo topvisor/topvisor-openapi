@@ -1,0 +1,78 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Audit_2.Methods.Audit.Log.Get",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Audit_2.Methods.Audit.Log.Get": {
+                "type": "object",
+                "properties": {
+                    "time1": {
+                        "title": "Фильтр по периоду",
+                        "nullable": true,
+                        "allOf": [
+                            {
+                                "$ref": "../../../../TV/API/Types/Datetime.json#/components/schemas/TV.API.Types.Datetime"
+                            }
+                        ]
+                    },
+                    "time2": {
+                        "title": "Фильтр по периоду",
+                        "nullable": true,
+                        "allOf": [
+                            {
+                                "$ref": "../../../../TV/API/Types/Datetime.json#/components/schemas/TV.API.Types.Datetime"
+                            }
+                        ]
+                    },
+                    "show_urls": {
+                        "title": "Добавить url к записям",
+                        "type": "boolean"
+                    },
+                    "show_locations": {
+                        "title": "Добавить массив locations - адреса страницы и редиректы с HTTP кодами",
+                        "type": "boolean"
+                    },
+                    "http_codes_hundreds": {
+                        "title": "Фильтр по категориям кодов",
+                        "nullable": true,
+                        "allOf": [
+                            {
+                                "$ref": "../../../../TV/API/Types/IntArray.json#/components/schemas/TV.API.Types.IntArray"
+                            }
+                        ]
+                    },
+                    "page": {
+                        "title": "Номер страницы (для использования в SQL)",
+                        "default": 1,
+                        "type": "integer"
+                    },
+                    "project_id": {
+                        "$ref": "../../../../TV/API/Params/ProjectIdTrait.json#/components/schemas/TV.API.Params.ProjectIdTrait/properties/project_id"
+                    },
+                    "limit": {
+                        "$ref": "../../../../TV/API/Params/LimitTrait.json#/components/schemas/TV.API.Params.LimitTrait/properties/limit"
+                    },
+                    "offset": {
+                        "$ref": "../../../../TV/API/Params/OffsetTrait.json#/components/schemas/TV.API.Params.OffsetTrait/properties/offset"
+                    },
+                    "check_id": {
+                        "$ref": "../../../../Audit_2/Params/Audit/CheckIdTrait.json#/components/schemas/Audit_2.Params.Audit.CheckIdTrait/properties/check_id"
+                    }
+                },
+                "required": [
+                    "show_urls",
+                    "show_locations",
+                    "page",
+                    "project_id",
+                    "offset",
+                    "check_id"
+                ],
+                "title": "Получение данных проверенных ресурсов"
+            }
+        }
+    }
+}

@@ -123,6 +123,9 @@
                     },
                     "bookmark_author": {
                         "type": "string"
+                    },
+                    "author_alias": {
+                        "type": "string"
                     }
                 },
                 "required": [
@@ -147,7 +150,8 @@
                     "view",
                     "like",
                     "bookmark",
-                    "bookmark_author"
+                    "bookmark_author",
+                    "author_alias"
                 ]
             }
         }

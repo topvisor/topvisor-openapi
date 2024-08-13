@@ -35,6 +35,8 @@ tags:
     description: eastereggs_2
   - name: Example_2
     description: example_2
+  - name: Export_2
+    description: export_2
   - name: Fa2_2
     description: fa2_2
   - name: Informer_2
@@ -621,6 +623,185 @@ paths:
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
+  /get/audit_2/counturls/:
+    post:
+      operationId: GetAudit2Counturls
+      tags:
+        - Audit_2
+      summary: Получение количества настроенных URL
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Audit_2.Methods.CountUrls.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            type: integer
+                            title: Количество настроенных URL
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
+  /get/audit_2/indexing/:
+    post:
+      operationId: GetAudit2Indexing
+      tags:
+        - Audit_2
+      summary: Получение отчета по проверке индексации
+      description: Необходимо указать либо date1 и date2, либо dates (вместе указывать нельзя)
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Audit_2.Methods.Indexing.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            type: array
+                            items:
+                              $ref: '#/components/schemas/Models.Urls'
+                              description: Only for typescript, does not contain real data
+                            title: Список ссылок с данными по ним
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                      - $ref: '#/components/schemas/Pagination'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                $ref: '#/components/schemas/Models.Urls'
+                description: Only for typescript, does not contain real data
+  /edit/audit_2/settings/:
+    post:
+      operationId: EditAudit2Settings
+      tags:
+        - Audit_2
+      summary: Применение наастроек Анализа сайта
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Audit_2.Methods.Settings.Edit'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            type: integer
+                            title: Количество применных настроек
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
+  /get/audit_2/settings/:
+    post:
+      operationId: GetAudit2Settings
+      tags:
+        - Audit_2
+      summary: Получение настроек аудита
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Audit_2.Methods.Settings.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            type: array
+                            items:
+                              oneOf:
+                                - type: string
+                                - type: number
+                            title: Настройки аудита
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
+  /get/audit_2/watcher/:
+    post:
+      operationId: GetAudit2Watcher
+      tags:
+        - Audit_2
+      summary: Получение результатов проверок радара
+      description: |-
+        Отчет генерируется на основе объектов urls
+
+        Необходимо указать либо check_id1 и check_id2, либо checks_ids (вместе указывать нельзя)
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Audit_2.Methods.Watcher.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            type: array
+                            items:
+                              oneOf:
+                                - type: string
+                                - type: number
+                            title: Генерируемый на основе urls, список результатов проверок радара
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                      - $ref: '#/components/schemas/Pagination'
                   - $ref: '#/components/schemas/ResponseError'
             model:
               schema:
@@ -1219,6 +1400,613 @@ paths:
               schema:
                 $ref: '#/components/schemas/Models.Admin.Users.Ranks'
                 description: Only for typescript, does not contain real data
+  /get/audit_2/audit/browse/:
+    post:
+      operationId: GetAudit2AuditBrowse
+      tags:
+        - Audit_2
+      summary: Получение обзора анализа сайта
+      deprecated: true
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Audit_2.Methods.Audit.Browse.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            type: array
+                            items:
+                              oneOf:
+                                - type: string
+                                - type: number
+                            title: Результаты обзора анализа сайта
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
+  /get/audit_2/audit/checks/:
+    post:
+      operationId: GetAudit2AuditChecks
+      tags:
+        - Audit_2
+      summary: |-
+        Получение общей информации о проверках
+        - только для проверки, которая не завершена
+        - в ответе будут заменены значения кодов ответа на текущие: count_000, count_1xx, count_2xx, count_3xx, count_4xx, count_5xx
+        - в ответе будет заменено значение count_pages и count_all на текущие
+        - в ответ будет добавлены значения robot_step и robot_count_tasks_allм
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Audit_2.Methods.Audit.Checks.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            title: Список выполненных (выполняемых) проверок аудита
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                      - $ref: '#/components/schemas/Pagination'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                $ref: '#/components/schemas/Models.Audit.Checks'
+                description: Only for typescript, does not contain real data
+  /get/audit_2/audit/css/:
+    post:
+      operationId: GetAudit2AuditCss
+      tags:
+        - Audit_2
+      summary: Получение проверенных css
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Audit_2.Methods.Audit.Css.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            type: array
+                            items:
+                              $ref: '#/components/schemas/Models.Audit.Css'
+                              description: Only for typescript, does not contain real data
+                            title: Список проверенных css
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                      - $ref: '#/components/schemas/Pagination'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                $ref: '#/components/schemas/Models.Audit.Css'
+                description: Only for typescript, does not contain real data
+  /get/audit_2/audit/export/:
+    post:
+      operationId: GetAudit2AuditExport
+      tags:
+        - Audit_2
+      summary: Экспорт результатов проверки файла
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Audit_2.Methods.Audit.Export.Get'
+        required: true
+      responses:
+        '200':
+          description: Файл результатов проверки сайта
+          content:
+            application/octet-stream:
+              schema:
+                type: string
+                format: binary
+  /get/audit_2/audit/images/:
+    post:
+      operationId: GetAudit2AuditImages
+      tags:
+        - Audit_2
+      summary: Получение проверенных изображений
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Audit_2.Methods.Audit.Images.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            type: array
+                            items:
+                              $ref: '#/components/schemas/Models.Audit.Images'
+                              description: Only for typescript, does not contain real data
+                            title: Список проверенных изображений
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                      - $ref: '#/components/schemas/Pagination'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                $ref: '#/components/schemas/Models.Audit.Images'
+                description: Only for typescript, does not contain real data
+  /get/audit_2/audit/js/:
+    post:
+      operationId: GetAudit2AuditJs
+      tags:
+        - Audit_2
+      summary: Получение проверенных js
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Audit_2.Methods.Audit.Js.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            type: array
+                            items:
+                              $ref: '#/components/schemas/Models.Audit.Js'
+                              description: Only for typescript, does not contain real data
+                            title: Список проверенных js
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                      - $ref: '#/components/schemas/Pagination'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                $ref: '#/components/schemas/Models.Audit.Js'
+                description: Only for typescript, does not contain real data
+  /get/audit_2/audit/links/:
+    post:
+      operationId: GetAudit2AuditLinks
+      tags:
+        - Audit_2
+      summary: Получение проверенных ссылок
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Audit_2.Methods.Audit.Links.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            type: array
+                            items:
+                              $ref: '#/components/schemas/Models.Audit.Links'
+                              description: Only for typescript, does not contain real data
+                            title: Список проверенных ссылок
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                      - $ref: '#/components/schemas/Pagination'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                $ref: '#/components/schemas/Models.Audit.Links'
+                description: Only for typescript, does not contain real data
+  /get/audit_2/audit/log/:
+    post:
+      operationId: GetAudit2AuditLog
+      tags:
+        - Audit_2
+      summary: Получение данных проверенных ресурсов
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Audit_2.Methods.Audit.Log.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            type: array
+                            items:
+                              oneOf:
+                                - type: string
+                                - type: number
+                            title: Данные проверенных ресурсов
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                      - $ref: '#/components/schemas/Pagination'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
+  /get/audit_2/audit/pages/:
+    post:
+      operationId: GetAudit2AuditPages
+      tags:
+        - Audit_2
+      summary: Получение страниц, по которым был выполнен аудит
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Audit_2.Methods.Audit.Pages.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            type: array
+                            items:
+                              $ref: '#/components/schemas/Models.Audit.Pages'
+                              description: Only for typescript, does not contain real data
+                            title: Список страниц
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                      - $ref: '#/components/schemas/Pagination'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                $ref: '#/components/schemas/Models.Audit.Pages'
+                description: Only for typescript, does not contain real data
+  /get/audit_2/audit/summary/:
+    post:
+      operationId: GetAudit2AuditSummary
+      tags:
+        - Audit_2
+      summary: Получение сводки о выполненном аудите
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Audit_2.Methods.Audit.Summary.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            type: array
+                            items:
+                              $ref: '#/components/schemas/Models.Audit.Checks'
+                              description: Only for typescript, does not contain real data
+                            title: |-
+                              Возвращает объект со сводкой по категориям, пример:
+                               - `$res['all']['all']['count_checks_success']` - количество пройденных проверок во всех категориях
+                               - `$res['pages']['indexing']['count_checks_success']` - количество пройденных проверок в категории Страницы / Индексация
+                               - `$res['all']['all']['count_checks_success']` - количество пройденных проверок во всех категориях
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                      - $ref: '#/components/schemas/Pagination'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                $ref: '#/components/schemas/Models.Audit.Checks'
+                description: Only for typescript, does not contain real data
+  /get/audit_2/audit/summarypage/:
+    post:
+      operationId: GetAudit2AuditSummarypage
+      tags:
+        - Audit_2
+      summary: Получение сводки страницы
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Audit_2.Methods.Audit.SummaryPage.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            type: array
+                            items:
+                              $ref: '#/components/schemas/Models.Audit.Pages'
+                              description: Only for typescript, does not contain real data
+                            title: Сводка о выполненном аудите по одной странице
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                      - $ref: '#/components/schemas/Pagination'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                $ref: '#/components/schemas/Models.Audit.Pages'
+                description: Only for typescript, does not contain real data
+  /get/audit_2/indexing/export/:
+    post:
+      operationId: GetAudit2IndexingExport
+      tags:
+        - Audit_2
+      summary: Экспорт результатов индексации
+      description: Необходимо указать либо date1 и date2, либо dates (вместе указывать нельзя)
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Audit_2.Methods.Indexing.Export.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            type: string
+                            title: Результаты индексации
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
+  /get/audit_2/indexing/links/:
+    post:
+      operationId: GetAudit2IndexingLinks
+      tags:
+        - Audit_2
+      summary: Создание гостевой ссылки на просмотр позиций
+      description: Необходимо указать либо date1 и date2, либо dates (вместе указывать нельзя)
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Audit_2.Methods.Indexing.Links.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            type: string
+                            title: Короткая гостевая ссылка на просмотр позиций
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
+  /get/audit_2/indexing/summary/:
+    post:
+      operationId: GetAudit2IndexingSummary
+      tags:
+        - Audit_2
+      summary: Получение сводки индексации
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Audit_2.Methods.Indexing.Summary.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            type: array
+                            items:
+                              oneOf:
+                                - type: string
+                                - type: number
+                            title: Сводка индексации
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
+  /get/audit_2/watcher/byurl/:
+    post:
+      operationId: GetAudit2WatcherByurl
+      tags:
+        - Audit_2
+      summary: Построить отчет по одному URL
+      description: |-
+        Отличия от get/audit_2/watcher:
+        - отчет генерируется на основе объекта watcher_results, а не urls
+        - параметры выбора периода отчета игнорируются
+        - выбор прверок регулируется параметрами запроса filters, limit и offset
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Audit_2.Methods.Watcher.ByURL.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            title: Отчет по одному URL
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                      - $ref: '#/components/schemas/Pagination'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                $ref: '#/components/schemas/Models.Watcher.Results'
+                description: Only for typescript, does not contain real data
+  /get/audit_2/watcher/checks/:
+    post:
+      operationId: GetAudit2WatcherChecks
+      tags:
+        - Audit_2
+      summary: Получение проверок радара
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Audit_2.Methods.Watcher.Checks.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            type: array
+                            items:
+                              oneOf:
+                                - type: string
+                                - type: number
+                            title: Список проверок радара
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
+  /get/audit_2/watcher/summary/:
+    post:
+      operationId: GetAudit2WatcherSummary
+      tags:
+        - Audit_2
+      summary: Получение сводки радара
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Audit_2.Methods.Watcher.Summary.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            type: array
+                            items:
+                              oneOf:
+                                - type: string
+                                - type: number
+                            title: Сводка с количеством изменений по каждому типу проверки
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
   /edit/payments_2/tariff/delcard/:
     post:
       operationId: EditPayments2TariffDelcard
@@ -1370,6 +2158,723 @@ paths:
                           result:
                             $ref: '#/components/schemas/TV.Objects.Highcharts.Chart'
                             title: Данные для построения графика
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
+  /edit/audit_2/audit/checker/go/:
+    post:
+      operationId: EditAudit2AuditCheckerGo
+      tags:
+        - Audit_2
+      summary: Запуск проверки аудита
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Audit_2.Methods.Audit.Checker.Go.Edit'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            type: array
+                            items:
+                              $ref: '#/components/schemas/Models.Projects'
+                              description: Only for typescript, does not contain real data
+                            title: |-
+                              @return array{projectIds: int[]}
+
+                              @throws Exception
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                $ref: '#/components/schemas/Models.Projects'
+                description: Only for typescript, does not contain real data
+  /get/audit_2/audit/checker/price/:
+    post:
+      operationId: GetAudit2AuditCheckerPrice
+      tags:
+        - Audit_2
+      summary: Получение стоимости проверки аудита
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Audit_2.Methods.Audit.Checker.Price.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            type: array
+                            items:
+                              $ref: '#/components/schemas/Models.Projects'
+                              description: Only for typescript, does not contain real data
+                            title: |-
+                              @return array{pricesByUsers: array<int, array{projectsIds: int[], price: float}>}
+
+                              ```
+                              {
+                                  "pricesByUsers": {
+                                          "{{userId}}": {
+                                              "projectsIds": [],
+                                              "price": float,
+                                              "priceOriginal": float
+                                          }
+                                  }
+                               }
+                              ```
+
+                              @throws Exception
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                $ref: '#/components/schemas/Models.Projects'
+                description: Only for typescript, does not contain real data
+  /get/audit_2/audit/export/links/:
+    post:
+      operationId: GetAudit2AuditExportLinks
+      tags:
+        - Audit_2
+      summary: Получение гостевой ссылки на просмотр аудита позиций
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Audit_2.Methods.Audit.Export.Links.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            type: string
+                            title: Короткая гостевая ссылка на просмотр аудита позиций
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
+  /get/audit_2/audit/export/summary/:
+    post:
+      operationId: GetAudit2AuditExportSummary
+      tags:
+        - Audit_2
+      summary: Экспорт отчета Анализа сайта
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Audit_2.Methods.Audit.Export.Summary.Get'
+        required: true
+      responses:
+        '200':
+          description: Файл отчета анализа сайта
+          content:
+            application/octet-stream:
+              schema:
+                type: string
+                format: binary
+  /get/audit_2/audit/log/actualerror/:
+    post:
+      operationId: GetAudit2AuditLogActualerror
+      tags:
+        - Audit_2
+      summary: Получение информации о текущей ошибке на роботе
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Audit_2.Methods.Audit.Log.ActualError.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            $ref: '#/components/schemas/stdClass'
+                            title: Вернет null, если ошибки на роботе нет
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
+  /get/audit_2/audit/log/chart/:
+    post:
+      operationId: GetAudit2AuditLogChart
+      tags:
+        - Audit_2
+      summary: Получение данных для графика
+      deprecated: true
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Audit_2.Methods.Audit.Log.Chart.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            type: array
+                            items:
+                              oneOf:
+                                - type: string
+                                - type: number
+                            title: Данные для графика
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                      - $ref: '#/components/schemas/Pagination'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
+  /get/audit_2/audit/results/export/:
+    post:
+      operationId: GetAudit2AuditResultsExport
+      tags:
+        - Audit_2
+      summary: Экспорт результатов аудита
+      deprecated: true
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Audit_2.Methods.Audit.Results.Export.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            type: boolean
+                            title: Ответ об успешнности экспорта результатов аудита
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
+  /get/audit_2/audit/results/page/:
+    post:
+      operationId: GetAudit2AuditResultsPage
+      tags:
+        - Audit_2
+      summary: Результаты анализа страницы
+      deprecated: true
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Audit_2.Methods.Audit.Results.Page.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            type: array
+                            items:
+                              oneOf:
+                                - type: string
+                                - type: number
+                            title: |-
+                              Результаты анализа страницы
+                              ```
+                              {
+                                     "result": {
+                                         'page_in_filter': bool,
+                                         'index': => int,
+                                         'snippet': => string,
+                                         'content': => string
+                                     }
+                              }
+                              ```
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
+  /edit/audit_2/indexing/checker/go/:
+    post:
+      operationId: EditAudit2IndexingCheckerGo
+      tags:
+        - Audit_2
+      summary: Отправка проектов на проверку индексации
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Audit_2.Methods.Indexing.Checker.Go.Edit'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            type: array
+                            items:
+                              $ref: '#/components/schemas/Models.Projects'
+                              description: Only for typescript, does not contain real data
+                            title: |-
+                              @return array{projectIds: int[]}
+
+                              @throws Exception
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                $ref: '#/components/schemas/Models.Projects'
+                description: Only for typescript, does not contain real data
+  /get/audit_2/indexing/checker/price/:
+    post:
+      operationId: GetAudit2IndexingCheckerPrice
+      tags:
+        - Audit_2
+      summary: Полуение стоимости проверки индексации
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Audit_2.Methods.Indexing.Checker.Price.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            type: array
+                            items:
+                              $ref: '#/components/schemas/Models.Projects'
+                              description: Only for typescript, does not contain real data
+                            title: |-
+                              @return array{pricesByUsers: array<int, array{projectsIds: int[], price: float}>}
+
+                              ```
+                              {
+                                 "pricesByUsers": {
+                                     "{{userId}}": {
+                                         "projectsIds": [],
+                                         "price": float
+                                     }
+                                 }
+                              }
+                              ```
+
+                              @throws Exception
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                $ref: '#/components/schemas/Models.Projects'
+                description: Only for typescript, does not contain real data
+  /get/audit_2/indexing/export/links/:
+    post:
+      operationId: GetAudit2IndexingExportLinks
+      tags:
+        - Audit_2
+      summary: Получение гостевой ссылки на просмотр индексации
+      description: Необходимо указать либо date1 и date2, либо dates (вместе указывать нельзя)
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Audit_2.Methods.Indexing.Export.Links.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            type: string
+                            title: Короткая гостевая ссылка на просмотр индексации
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
+  /get/audit_2/indexing/export/torepository/:
+    post:
+      operationId: GetAudit2IndexingExportTorepository
+      tags:
+        - Audit_2
+      summary: Экспорт файла в хранилище
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Audit_2.Methods.Indexing.Export.ToRepository.Get'
+        required: true
+      responses:
+        '200':
+          description: Будет произведен редиркт на файл в хранилище
+          content:
+            application/octet-stream:
+              schema:
+                type: string
+                format: binary
+  /get/audit_2/indexing/summary/chart/:
+    post:
+      operationId: GetAudit2IndexingSummaryChart
+      tags:
+        - Audit_2
+      summary: Получение сводок индексации для графика
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Audit_2.Methods.Indexing.Summary.Chart.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            type: array
+                            items:
+                              oneOf:
+                                - type: string
+                                - type: number
+                            title: Сводки индексации
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
+  /edit/audit_2/sitemap/checker/go/:
+    post:
+      operationId: EditAudit2SitemapCheckerGo
+      tags:
+        - Audit_2
+      summary: Отправка проектов на проверку карты сайта
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Audit_2.Methods.Sitemap.Checker.Go.Edit'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            type: array
+                            items:
+                              $ref: '#/components/schemas/Models.Projects'
+                              description: Only for typescript, does not contain real data
+                            title: |-
+                              @return array{projectIds: int[]}
+
+                              @throws Exception
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                $ref: '#/components/schemas/Models.Projects'
+                description: Only for typescript, does not contain real data
+  /get/audit_2/sitemap/checker/price/:
+    post:
+      operationId: GetAudit2SitemapCheckerPrice
+      tags:
+        - Audit_2
+      summary: Полуение стоимости проверки карты сайта
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Audit_2.Methods.Sitemap.Checker.Price.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            type: array
+                            items:
+                              $ref: '#/components/schemas/Models.Projects'
+                              description: Only for typescript, does not contain real data
+                            title: |-
+                              @return array{pricesByUsers: array<int, array{projectsIds: int[], price: float}>}
+
+                              ```
+                              {
+                                 "pricesByUsers": {
+                                     "{{userId}}": {
+                                         "projectsIds": [],
+                                         "price": float
+                                     }
+                                 }
+                              }
+                              ```
+
+                              @throws Exception
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                $ref: '#/components/schemas/Models.Projects'
+                description: Only for typescript, does not contain real data
+  /edit/audit_2/watcher/checker/go/:
+    post:
+      operationId: EditAudit2WatcherCheckerGo
+      tags:
+        - Audit_2
+      summary: Отправка проектов на проверку радара
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Audit_2.Methods.Watcher.Checker.Go.Edit'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            type: array
+                            items:
+                              $ref: '#/components/schemas/Models.Projects'
+                              description: Only for typescript, does not contain real data
+                            title: |-
+                              @return array{projectIds: int[]}
+
+                              @throws Exception
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                $ref: '#/components/schemas/Models.Projects'
+                description: Only for typescript, does not contain real data
+  /get/audit_2/watcher/checker/price/:
+    post:
+      operationId: GetAudit2WatcherCheckerPrice
+      tags:
+        - Audit_2
+      summary: Полуение стоимости проверки радара
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Audit_2.Methods.Watcher.Checker.Price.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            type: array
+                            items:
+                              $ref: '#/components/schemas/Models.Projects'
+                              description: Only for typescript, does not contain real data
+                            title: |-
+                              @return array{pricesByUsers: array<int, array{projectsIds: int[], price: float}>}
+
+                              ```
+                              {
+                                 "pricesByUsers": {
+                                     "{{userId}}": {
+                                         "projectsIds": [],
+                                         "price": float
+                                     }
+                                 }
+                              }
+                              ```
+
+                              @throws Exception
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                $ref: '#/components/schemas/Models.Projects'
+                description: Only for typescript, does not contain real data
+  /get/audit_2/watcher/export/links/:
+    post:
+      operationId: GetAudit2WatcherExportLinks
+      tags:
+        - Audit_2
+      summary: Создание гостевой ссылки на просмотр радара
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Audit_2.Methods.Watcher.Export.Links.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            type: string
+                            title: Короткая ссылка гостевого доступа для просмотра радара
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
+  /get/audit_2/watcher/summary/chart/:
+    post:
+      operationId: GetAudit2WatcherSummaryChart
+      tags:
+        - Audit_2
+      summary: Получение сводок радара для графика
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Audit_2.Methods.Watcher.Summary.Chart.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            type: array
+                            items:
+                              oneOf:
+                                - type: string
+                                - type: number
+                            title: Сводки с количеством изменений по каждому типу проверки
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
@@ -1558,6 +3063,7 @@ components:
         Если запрос поддерижвает параметр fetch_style, формат ответа может быть разным, fields будет влиять на содержание данных в этом ответе
 
         Использует поля модели
+
         @see AbstractMethod::MODEL
       nullable: true
       type: array
@@ -1571,8 +3077,8 @@ components:
         Поля могут быть строками или объектом: {name: string, direction: 'ASC' | 'DESC', orderValues: array}
 
         Использует поля модели
+
         @see AbstractMethod::MODEL
-      nullable: true
       type: array
       items:
         oneOf:
@@ -1584,9 +3090,9 @@ components:
         {name: string, operator: Field::AVAILABLE_OPERATORS, values: array}
 
         Использует поля модели
+
         @see AbstractMethod::MODEL
         @see Field::AVAILABLE_OPERATORS
-      nullable: true
       type: array
       items:
         oneOf:
@@ -1605,7 +3111,6 @@ components:
     offset:
       title: Число объектов, которое необходимо пропустить при получении резальтата
       description: Используется в паре с limit
-      nullable: true
       type: integer
     fetch_style:
       title: 'Определяет формат результата: коллекция, объект, значение'
@@ -1646,6 +3151,9 @@ components:
       required:
         - project_id
         - service
+        - orders
+        - filters
+        - offset
       title: Получение примечаний
     Models.Annotations:
       properties:
@@ -1883,6 +3391,9 @@ components:
           $ref: '#/components/schemas/fetch_style'
       required:
         - include_is_domains_services_provided
+        - orders
+        - filters
+        - offset
       title: Получить список платежей
     Models.Payments:
       properties:
@@ -1986,7 +3497,10 @@ components:
           $ref: '#/components/schemas/offset'
         fetch_style:
           $ref: '#/components/schemas/fetch_style'
-      required: []
+      required:
+        - orders
+        - filters
+        - offset
       title: Получение всех своих примечаний по всем проектам и сервисам
     App_2.Methods.Actions.Get:
       type: object
@@ -2140,6 +3654,8 @@ components:
           type: string
         bookmark_author:
           type: string
+        author_alias:
+          type: string
       required:
         - type
         - htmlRaw
@@ -2163,6 +3679,7 @@ components:
         - like
         - bookmark
         - bookmark_author
+        - author_alias
     Tpl.Core.SecondMenu:
       type: object
       properties: {}
@@ -2328,6 +3845,575 @@ components:
         - additionalHeadCode
         - v
         - vJS
+    Audit_2.Types.Type:
+      type: string
+      enum:
+        - audit
+        - indexing
+        - sitemap
+        - watcher
+      title: Модуль аудита
+    project_id:
+      title: ID проекта
+      type: integer
+    Audit_2.Methods.CountUrls.Get:
+      type: object
+      properties:
+        audit_type:
+          allOf:
+            - $ref: '#/components/schemas/Audit_2.Types.Type'
+        project_id:
+          $ref: '#/components/schemas/project_id'
+      required:
+        - audit_type
+        - project_id
+      title: Получение количества настроенных URL
+    Audit_2.Types.Indexing.SearcherKey:
+      type: string
+      enum:
+        - '0'
+        - '1'
+        - '5'
+        - '6'
+      title: Id поисковой системы для индексации
+    Audit_2.Types.Indexing.SearcherKeys:
+      type: array
+      items:
+        $ref: '#/components/schemas/Audit_2.Types.Indexing.SearcherKey'
+      title: Id поисковых систем для индексации
+    TV.API.Types.Date:
+      type: string
+      title: Дата
+      example: '2000-01-01'
+    Audit_2.Types.Indexing.Export.TypeRange:
+      type: integer
+      enum:
+        - 0
+        - 2
+        - 3
+        - 4
+        - 7
+        - 100
+      title: Тип диапазона индексации
+    Audit_2.Methods.Indexing.Get:
+      type: object
+      properties:
+        searchers_keys:
+          allOf:
+            - $ref: '#/components/schemas/Audit_2.Types.Indexing.SearcherKeys'
+        indexing_fields:
+          title: Список полей индексации, которые необъодимо получить
+          description: См. поля indexing_* в объекте Urls
+          default:
+            - data
+          type: array
+          items:
+            oneOf:
+              - type: string
+              - type: number
+        show_headers:
+          title: Вернуть ли заголовки отчета
+          type: boolean
+        show_counts_indexing:
+          title: Вернуть ли суммарное количество страниц в индексе по URL
+          type: boolean
+        show_exists_dates:
+          title: Вернуть ли даты проверок
+          type: boolean
+        filter_by_alert:
+          title: Фильтр по изменениям в указанной ПС в указанную дату
+          description: 'Формат записи: `{{ date }}:{{ searcher_key }}`'
+          type: string
+        dates:
+          title: Произвольные даты без использования диапазона
+          nullable: true
+          type: array
+          items:
+            oneOf:
+              - type: string
+              - type: number
+        date1:
+          title: Дата начала диапазона
+          nullable: true
+          allOf:
+            - $ref: '#/components/schemas/TV.API.Types.Date'
+        date2:
+          title: Дата окончания диапазона
+          nullable: true
+          allOf:
+            - $ref: '#/components/schemas/TV.API.Types.Date'
+        periodDays:
+          title: Период в днях
+          default: 7
+          type: integer
+        type_range:
+          title: Тип диапазона дат
+          default: 7
+          allOf:
+            - $ref: '#/components/schemas/Audit_2.Types.Indexing.Export.TypeRange'
+        count_dates:
+          title: Количество дней в диапазоне
+          default: 60
+          type: integer
+        fields:
+          $ref: '#/components/schemas/fields'
+        orders:
+          $ref: '#/components/schemas/orders'
+        filters:
+          $ref: '#/components/schemas/filters'
+        id:
+          $ref: '#/components/schemas/id'
+        limit:
+          $ref: '#/components/schemas/limit'
+        offset:
+          $ref: '#/components/schemas/offset'
+        fetch_style:
+          $ref: '#/components/schemas/fetch_style'
+        project_id:
+          $ref: '#/components/schemas/project_id'
+      required:
+        - searchers_keys
+        - indexing_fields
+        - show_headers
+        - show_counts_indexing
+        - show_exists_dates
+        - filter_by_alert
+        - periodDays
+        - type_range
+        - count_dates
+        - orders
+        - filters
+        - offset
+        - project_id
+      title: Получение отчета по проверке индексации
+      description: Необходимо указать либо date1 и date2, либо dates (вместе указывать нельзя)
+    Models.Urls:
+      properties:
+        COUNT(*):
+          nullable: true
+        WATCHER_HTTP_CODES_HUNDREDS():
+          type: array
+          items:
+            oneOf:
+              - type: string
+              - type: number
+          nullable: true
+          example:
+            need set qualifiers:
+              - check_id
+        id:
+          type: integer
+        url:
+          type: string
+          nullable: true
+        project_id:
+          type: integer
+          nullable: true
+        sitemap:
+          nullable: true
+        audit:
+          nullable: true
+        watcher:
+          nullable: true
+        indexing:
+          nullable: true
+        tags:
+          nullable: true
+        sitemap_lastmod:
+          nullable: true
+        sitemap_changefreq:
+          nullable: true
+        sitemap_priority:
+          nullable: true
+        indexing_data:
+          type: integer
+          nullable: true
+          example:
+            need set qualifiers:
+              - date
+              - searcher_key
+        indexing_alert:
+          type: integer
+          nullable: true
+          example:
+            need set qualifiers:
+              - date
+              - searcher_key
+        watcher_http_codes:
+          type: array
+          items:
+            oneOf:
+              - type: string
+              - type: number
+          nullable: true
+          example:
+            need set qualifiers:
+              - check_id
+        watcher_http_codes_changed:
+          type: integer
+          nullable: true
+          example:
+            need set qualifiers:
+              - check_id
+        watcher_redirects:
+          type: array
+          items:
+            oneOf:
+              - type: string
+              - type: number
+          nullable: true
+          example:
+            need set qualifiers:
+              - check_id
+        watcher_h1:
+          type: string
+          nullable: true
+          example:
+            need set qualifiers:
+              - check_id
+        watcher_h1_changed:
+          type: integer
+          nullable: true
+          example:
+            need set qualifiers:
+              - check_id
+        watcher_title:
+          type: string
+          nullable: true
+          example:
+            need set qualifiers:
+              - check_id
+        watcher_title_changed:
+          type: integer
+          nullable: true
+          example:
+            need set qualifiers:
+              - check_id
+        watcher_description:
+          type: string
+          nullable: true
+          example:
+            need set qualifiers:
+              - check_id
+        watcher_description_changed:
+          type: integer
+          nullable: true
+          example:
+            need set qualifiers:
+              - check_id
+        watcher_content:
+          type: string
+          nullable: true
+          example:
+            need set qualifiers:
+              - check_id
+        watcher_content_changed:
+          type: integer
+          nullable: true
+          example:
+            need set qualifiers:
+              - check_id
+    TV.API.Types.Url:
+      type: string
+      title: |-
+        Краткий URL в punycode, не может содержать UTF-символы:
+        - без схемы
+        - без "www." в домене
+        - без слешей на конце
+        - без "<" и ">"
+      description: |-
+        Будет проивзедено автоматическое приведение к формату
+
+        Разрешен ввод строй строки, для удаления значения url
+    Audit_2.Types.Settings.WatcherType:
+      type: string
+      enum:
+        - title
+        - description
+        - h1
+        - content
+      title: Тип отчета радара
+    Audit_2.Types.Settings.WatcherTypes:
+      type: array
+      items:
+        $ref: '#/components/schemas/Audit_2.Types.Settings.WatcherType'
+      title: Типы отчетов радара
+    TV.API.Types.RegExp:
+      type: string
+      title: Регулярное выражение
+      description: |
+        Пустое значение разрешено
+
+        Управляющие символы "/" в начале и в конце строки будут удалены
+      example: /^year_(\d\d\d\d)$/
+    Audit_2.Types.Settings.ServerLocation:
+      type: string
+      enum:
+        - EASTERN_EUROPE
+        - WESTERN_EUROPE
+      title: Местоположение сервера для выполнения задач инструментов аудита
+    Audit_2.Methods.Settings.Edit:
+      type: object
+      properties:
+        audit_user_agent:
+          title: User-Agent (аудит)
+          description: |-
+            Можно указать id устройства
+
+            @see Audit_2\Types\Settings\Device
+          nullable: true
+          type: string
+        audit_use_cookie:
+          title: Сохранять куки между запросами (аудит)
+          nullable: true
+          type: boolean
+        audit_scan_links:
+          title: Проверять ссылки (аудит)
+          nullable: true
+          type: boolean
+        audit_scan_images:
+          title: Проверять изображения (аудит)
+          nullable: true
+          type: boolean
+        audit_scan_js:
+          title: Проверять JS (аудит)
+          nullable: true
+          type: boolean
+        audit_scan_css:
+          title: Проверять css (аудит)
+          nullable: true
+          type: boolean
+        audit_api_key:
+          title: Ключ api для https://developers.google.com/speed/docs/insights/v5/get-started (аудит)
+          nullable: true
+          type: string
+        audit_page_delay:
+          title: Паузы между проверками страниц сайта (аудит)
+          nullable: true
+          type: number
+        audit_resource_delay:
+          title: Паузы между првоерками ресурсов страниц сайта (аудит)
+          nullable: true
+          type: number
+        audit_cookies:
+          title: Дополнитлеьные Cookies (аудит)
+          nullable: true
+          type: string
+        audit_auto_collect_pages:
+          title: Использовать ли при запуске аудита автоматический сбор URL (аудит)
+          nullable: true
+          type: boolean
+        audit_auto_collect_pages_limit:
+          title: Лимит страниц при автоматическом проходе по сайту (аудит)
+          nullable: true
+          type: integer
+        audit_auto_collect_pages_start_url:
+          title: Страница, с которой начинается автоматический сбор URL (аудит)
+          nullable: true
+          allOf:
+            - $ref: '#/components/schemas/TV.API.Types.Url'
+        indexing_searchers_keys:
+          title: Поисковые системы (индексация)
+          nullable: true
+          allOf:
+            - $ref: '#/components/schemas/Audit_2.Types.Indexing.SearcherKeys'
+        watcher_user_agent:
+          title: User-Agent (радар)
+          description: |-
+            Можно указать id устройства
+
+            @see Audit_2\Types\Settings\Device
+          nullable: true
+          type: string
+        watcher_max_redirects:
+          nullable: true
+          type: integer
+        watcher_types:
+          title: Типы отчетов, которые необходимо построить (радар)
+          nullable: true
+          allOf:
+            - $ref: '#/components/schemas/Audit_2.Types.Settings.WatcherTypes'
+        watcher_regexp:
+          title: Регулярное выражение для сбора контента (радар)
+          description: |-
+            Если не указано, будут ипользоваться теги разметки
+
+            @see https://topvisor.com/support/watcher/settings/#tags
+          nullable: true
+          allOf:
+            - $ref: '#/components/schemas/TV.API.Types.RegExp'
+        watcher_ignore_js:
+          title: Вырезать из кода страницы javascript (радар)
+          nullable: true
+          type: boolean
+        watcher_strip_tags_from_result:
+          title: Вырезать из результатов html-тэги (радар)
+          nullable: true
+          type: boolean
+        watcher_cookies:
+          title: Дополнитлеьные cookies (радар)
+          nullable: true
+          type: string
+        server_location:
+          nullable: true
+          allOf:
+            - $ref: '#/components/schemas/Audit_2.Types.Settings.ServerLocation'
+        project_id:
+          $ref: '#/components/schemas/project_id'
+      required:
+        - project_id
+      title: Применение наастроек Анализа сайта
+    Audit_2.Types.Settings.FieldName:
+      type: string
+      enum:
+        - audit_user_agent
+        - audit_use_cookie
+        - audit_cookies
+        - audit_scan_links
+        - audit_scan_images
+        - audit_scan_js
+        - audit_scan_css
+        - audit_api_key
+        - audit_page_delay
+        - audit_resource_delay
+        - audit_auto_collect_pages
+        - audit_auto_collect_pages_limit
+        - audit_auto_collect_pages_start_url
+        - indexing_searchers_keys
+        - watcher_user_agent
+        - watcher_cookies
+        - watcher_max_redirects
+        - watcher_types
+        - watcher_regexp
+        - watcher_ignore_js
+        - watcher_strip_tags_from_result
+        - server_location
+      title: Имя настройки для интсрумента аудита
+    Audit_2.Types.Settings.FieldNames:
+      type: array
+      items:
+        $ref: '#/components/schemas/Audit_2.Types.Settings.FieldName'
+      title: Имена настроек для инструментов аудита
+    Audit_2.Methods.Settings.Get:
+      type: object
+      properties:
+        fields:
+          allOf:
+            - $ref: '#/components/schemas/Audit_2.Types.Settings.FieldNames'
+        project_id:
+          $ref: '#/components/schemas/project_id'
+      required:
+        - fields
+        - project_id
+      title: Получение настроек аудита
+    Audit_2.Types.Watcher.TypeRange:
+      type: integer
+      enum:
+        - 0
+        - 2
+        - 3
+        - 4
+        - 7
+        - 100
+      title: Тип диапазона радара
+    Audit_2.Types.Watcher.Type:
+      type: string
+      enum:
+        - http_codes
+        - redirects
+        - h1
+        - title
+        - description
+        - content
+      title: Тип проверки радара
+    Audit_2.Types.Watcher.ShowDiff:
+      type: integer
+      enum:
+        - 0
+        - 1
+        - 2
+        - 3
+      title: Добавить в результат различия данных
+    Audit_2.Methods.Watcher.Get:
+      type: object
+      properties:
+        checks_ids:
+          title: ID проверок в произвольном порядке
+          nullable: true
+          type: array
+          items:
+            oneOf:
+              - type: string
+              - type: number
+        check_id1:
+          title: ID проверки начала диапазона
+          nullable: true
+          type: integer
+        check_id2:
+          title: ID проверки конца диапазона
+          nullable: true
+          type: integer
+        type_range:
+          default: 7
+          allOf:
+            - $ref: '#/components/schemas/Audit_2.Types.Watcher.TypeRange'
+        count_ids:
+          title: Максимальное число возвращаемых проверок (не более 60)
+          default: 60
+          type: integer
+        watcher_type:
+          allOf:
+            - $ref: '#/components/schemas/Audit_2.Types.Watcher.Type'
+        watcher_fields:
+          title: Выбор столбцов данных с результатами проверки
+          default:
+            - http_codes
+            - redirects
+          type: array
+          items:
+            oneOf:
+              - type: string
+              - type: number
+        show_headers:
+          title: Добавить в результат заголовки отчета
+          type: boolean
+        show_diff:
+          allOf:
+            - $ref: '#/components/schemas/Audit_2.Types.Watcher.ShowDiff'
+        show_counts_watcher:
+          title: Добавить в результат количество проверок
+          type: boolean
+        project_id:
+          $ref: '#/components/schemas/project_id'
+        fields:
+          $ref: '#/components/schemas/fields'
+        filters:
+          $ref: '#/components/schemas/filters'
+        id:
+          $ref: '#/components/schemas/id'
+        limit:
+          $ref: '#/components/schemas/limit'
+        orders:
+          $ref: '#/components/schemas/orders'
+        offset:
+          $ref: '#/components/schemas/offset'
+      required:
+        - type_range
+        - count_ids
+        - watcher_type
+        - watcher_fields
+        - show_headers
+        - show_diff
+        - show_counts_watcher
+        - project_id
+        - filters
+        - orders
+        - offset
+      title: Получение результатов проверок радара
+      description: |-
+        Отчет генерируется на основе объектов urls
+
+        Необходимо указать либо check_id1 и check_id2, либо checks_ids (вместе указывать нельзя)
     Comments_2.Methods.Like.Edit:
       type: object
       properties:
@@ -2345,18 +4431,6 @@ components:
         - like
       title: Редактирование статуса лайка для комментария
       description: Возвращает результат редактирования статуса лайка
-    TV.API.Types.Url:
-      type: string
-      title: |-
-        Краткий URL в punycode, не может содержать UTF-символы:
-        - без схемы
-        - без "www." в домене
-        - без слешей на конце
-        - без "<" и ">"
-      description: |-
-        Будет проивзедено автоматическое приведение к формату
-
-        Разрешен ввод строй строки, для удаления значения url
     Content_2.Methods.Authors.Edit:
       type: object
       properties:
@@ -2401,7 +4475,10 @@ components:
           $ref: '#/components/schemas/offset'
         fetch_style:
           $ref: '#/components/schemas/fetch_style'
-      required: []
+      required:
+        - orders
+        - filters
+        - offset
       title: Получение данных об авторе
     Models.Content.Authors:
       properties:
@@ -2569,7 +4646,10 @@ components:
           $ref: '#/components/schemas/offset'
         fetch_style:
           $ref: '#/components/schemas/fetch_style'
-      required: []
+      required:
+        - orders
+        - filters
+        - offset
       title: Получение списка проектов
     Models.Projects:
       properties:
@@ -2809,7 +4889,10 @@ components:
           $ref: '#/components/schemas/offset'
         fetch_style:
           $ref: '#/components/schemas/fetch_style'
-      required: []
+      required:
+        - orders
+        - filters
+        - offset
       title: Получить промокоды
       description: |-
         В params хранится строка в формате:
@@ -3033,8 +5116,1566 @@ components:
           $ref: '#/components/schemas/offset'
         fetch_style:
           $ref: '#/components/schemas/fetch_style'
-      required: []
+      required:
+        - orders
+        - filters
+        - offset
       title: Получить достижения
+    check_id:
+      title: ID проверки аудита
+      type: integer
+    Audit_2.Methods.Audit.Browse.Get:
+      type: object
+      properties:
+        project_id:
+          $ref: '#/components/schemas/project_id'
+        check_id:
+          $ref: '#/components/schemas/check_id'
+      required:
+        - project_id
+        - check_id
+      title: Получение обзора анализа сайта
+      deprecated: true
+    Audit_2.Methods.Audit.Checks.Get:
+      type: object
+      properties:
+        show_raw_data:
+          title: Добавить в результат данные о незавершенной проверке
+          type: boolean
+        fields:
+          $ref: '#/components/schemas/fields'
+        orders:
+          $ref: '#/components/schemas/orders'
+        filters:
+          $ref: '#/components/schemas/filters'
+        id:
+          $ref: '#/components/schemas/id'
+        limit:
+          $ref: '#/components/schemas/limit'
+        offset:
+          $ref: '#/components/schemas/offset'
+        fetch_style:
+          $ref: '#/components/schemas/fetch_style'
+        project_id:
+          $ref: '#/components/schemas/project_id'
+      required:
+        - show_raw_data
+        - orders
+        - filters
+        - offset
+        - project_id
+      title: |-
+        Получение общей информации о проверках
+        - только для проверки, которая не завершена
+        - в ответе будут заменены значения кодов ответа на текущие: count_000, count_1xx, count_2xx, count_3xx, count_4xx, count_5xx
+        - в ответе будет заменено значение count_pages и count_all на текущие
+        - в ответ будет добавлены значения robot_step и robot_count_tasks_allм
+    Models.Audit.Checks:
+      properties:
+        DURATION():
+          nullable: true
+        id: {}
+        project_id:
+          nullable: true
+        device:
+          nullable: true
+        scan_links:
+          nullable: true
+        scan_images:
+          nullable: true
+        scan_js:
+          nullable: true
+        scan_css:
+          nullable: true
+        robots_txt_exists:
+          nullable: true
+        sitemap_xml_exists:
+          nullable: true
+        www_redirect_exists:
+          nullable: true
+        ssl_redirect_exists:
+          nullable: true
+        tls_exists:
+          nullable: true
+        fatal:
+          nullable: true
+        rkn_no_ban:
+          nullable: true
+        notice:
+          nullable: true
+        error:
+          nullable: true
+        time_start:
+          nullable: true
+        time_finish:
+          nullable: true
+        count_pages:
+          nullable: true
+        count_all:
+          nullable: true
+        count_000:
+          nullable: true
+        count_1xx:
+          nullable: true
+        count_2xx:
+          nullable: true
+        count_3xx:
+          nullable: true
+        count_4xx:
+          nullable: true
+        count_5xx:
+          nullable: true
+        complete:
+          nullable: true
+        count_warnings:
+          nullable: true
+        count_errors:
+          nullable: true
+        count_problems:
+          nullable: true
+        is_mobile:
+          nullable: true
+        domain_check_rkn_no_ban:
+          nullable: true
+        domain_check_webmaster_no_errors:
+          nullable: true
+        domain_check_robots_txt_exists:
+          nullable: true
+        domain_check_sitemap_xml_exists:
+          nullable: true
+        domain_check_www_redirect_exists:
+          nullable: true
+        domain_check_ssl_redirect_exists:
+          nullable: true
+        domain_check_tls_exists:
+          nullable: true
+        pages_check_http_code_200_errors:
+          nullable: true
+        pages_check_redirects_not_exists_errors:
+          nullable: true
+        pages_check_redirects_many_not_exists_errors:
+          nullable: true
+        pages_check_ttfb_max_errors:
+          nullable: true
+        pages_check_cacheable_errors:
+          nullable: true
+        pages_check_robots_txt_allowed_errors:
+          nullable: true
+        pages_check_sitemap_xml_exists_errors:
+          nullable: true
+        pages_check_sitemap_xml_exists_with_canonical_errors:
+          nullable: true
+        pages_check_sitemap_included_none_blocked_errors:
+          nullable: true
+        pages_check_noindex_off_errors:
+          nullable: true
+        pages_check_nofollow_off_errors:
+          nullable: true
+        pages_check_title_exists_errors:
+          nullable: true
+        pages_check_title_length_max_errors:
+          nullable: true
+        pages_check_title_is_unique_errors:
+          nullable: true
+        pages_check_description_exists_errors:
+          nullable: true
+        pages_check_description_is_unique_errors:
+          nullable: true
+        pages_check_description_length_min_errors:
+          nullable: true
+        pages_check_description_length_max_errors:
+          nullable: true
+        pages_check_h1_exists_errors:
+          nullable: true
+        pages_check_html_lang_exists_errors:
+          nullable: true
+        pages_check_url_length_errors:
+          nullable: true
+        pages_check_canonical_exists_errors:
+          nullable: true
+        pages_check_alternate_errors:
+          nullable: true
+        pages_check_http_resources_count_errors:
+          nullable: true
+        pages_check_links_exists_errors:
+          nullable: true
+        pages_check_refresh_not_exists_errors:
+          nullable: true
+        pages_check_compression_exists_errors:
+          nullable: true
+        pages_check_schema_exists_errors:
+          nullable: true
+        pages_check_og_title_exists_errors:
+          nullable: true
+        pages_check_og_description_exists_errors:
+          nullable: true
+        pages_check_og_image_exists_errors:
+          nullable: true
+        pages_check_og_url_exists_errors:
+          nullable: true
+        pages_check_og_url_canonical_errors:
+          nullable: true
+        pages_check_lcp_max_errors:
+          nullable: true
+        pages_check_fid_max_errors:
+          nullable: true
+        pages_check_inp_max_errors:
+          nullable: true
+        pages_check_cls_max_errors:
+          nullable: true
+        pages_check_fcp_max_errors:
+          nullable: true
+        pages_check_si_max_errors:
+          nullable: true
+        pages_check_tbt_max_errors:
+          nullable: true
+        links_check_http_code_200_errors:
+          nullable: true
+        links_check_redirects_not_exists_errors:
+          nullable: true
+        links_check_redirects_many_not_exists_errors:
+          nullable: true
+        links_check_ttfb_max_errors:
+          nullable: true
+        links_check_url_slash_unique_errors:
+          nullable: true
+        links_check_url_format_good_errors:
+          nullable: true
+        links_check_title_or_content_exists_errors:
+          nullable: true
+        links_check_nofollow_off_errors:
+          nullable: true
+        images_check_http_code_200_errors:
+          nullable: true
+        images_check_redirects_not_exists_errors:
+          nullable: true
+        images_check_redirects_many_not_exists_errors:
+          nullable: true
+        images_check_ttfb_max_errors:
+          nullable: true
+        images_check_cacheable_errors:
+          nullable: true
+        images_check_alt_exists_errors:
+          nullable: true
+        images_check_alt_length_max_errors:
+          nullable: true
+        images_check_size_max_errors:
+          nullable: true
+        images_check_robots_disallow_off_errors:
+          nullable: true
+        images_check_modern_format_errors:
+          nullable: true
+        js_check_http_code_200_errors:
+          nullable: true
+        js_check_redirects_not_exists_errors:
+          nullable: true
+        js_check_redirects_many_not_exists_errors:
+          nullable: true
+        js_check_ttfb_max_errors:
+          nullable: true
+        js_check_compression_exists_errors:
+          nullable: true
+        js_check_cacheable_errors:
+          nullable: true
+        js_check_is_minified_errors:
+          nullable: true
+        js_check_no_render_blocking_errors:
+          nullable: true
+        css_check_http_code_200_errors:
+          nullable: true
+        css_check_redirects_not_exists_errors:
+          nullable: true
+        css_check_redirects_many_not_exists_errors:
+          nullable: true
+        css_check_ttfb_max_errors:
+          nullable: true
+        css_check_compression_exists_errors:
+          nullable: true
+        css_check_cacheable_errors:
+          nullable: true
+        css_check_is_minified_errors:
+          nullable: true
+        css_check_no_render_blocking_errors:
+          nullable: true
+    Audit_2.Methods.Audit.Css.Get:
+      type: object
+      properties:
+        fields:
+          $ref: '#/components/schemas/fields'
+        orders:
+          $ref: '#/components/schemas/orders'
+        filters:
+          $ref: '#/components/schemas/filters'
+        id:
+          $ref: '#/components/schemas/id'
+        limit:
+          $ref: '#/components/schemas/limit'
+        offset:
+          $ref: '#/components/schemas/offset'
+        fetch_style:
+          $ref: '#/components/schemas/fetch_style'
+        project_id:
+          $ref: '#/components/schemas/project_id'
+        check_id:
+          $ref: '#/components/schemas/check_id'
+      required:
+        - orders
+        - filters
+        - offset
+        - project_id
+        - check_id
+      title: Получение проверенных css
+    Models.Audit.Css:
+      properties:
+        COUNT(*):
+          nullable: true
+        HTTP_CODES_HUNDREDS():
+          type: array
+          items:
+            oneOf:
+              - type: string
+              - type: number
+          nullable: true
+        check_id:
+          nullable: true
+        url_ids:
+          nullable: true
+        url_id:
+          nullable: true
+        url:
+          nullable: true
+        count:
+          nullable: true
+        time_parse:
+          nullable: true
+        http_codes:
+          type: array
+          items:
+            oneOf:
+              - type: string
+              - type: number
+          nullable: true
+        last_http_code:
+          nullable: true
+        redirects:
+          type: array
+          items:
+            oneOf:
+              - type: string
+              - type: number
+          nullable: true
+        locations:
+          nullable: true
+        ttfb:
+          nullable: true
+        count_pages:
+          nullable: true
+        compression:
+          nullable: true
+        cacheable:
+          nullable: true
+        cache_type:
+          nullable: true
+        cache_time:
+          nullable: true
+        cache_validator:
+          nullable: true
+        robots_txt_mention:
+          nullable: true
+        robots_txt_blocked:
+          nullable: true
+        minified:
+          nullable: true
+        broken:
+          nullable: true
+        notice:
+          nullable: true
+        error:
+          nullable: true
+        warning_all:
+          nullable: true
+        render_blocking:
+          nullable: true
+        check_http_code_200:
+          nullable: true
+        check_redirects_not_exists:
+          nullable: true
+        check_redirects_many_not_exists:
+          nullable: true
+        check_ttfb_max:
+          nullable: true
+        check_compression_exists:
+          nullable: true
+        check_cacheable:
+          nullable: true
+        check_is_minified:
+          nullable: true
+        check_no_render_blocking:
+          nullable: true
+        count_errors:
+          nullable: true
+        count_warnings:
+          nullable: true
+    Audit_2.Types.Audit.TargetType:
+      type: string
+      enum:
+        - pages
+        - links
+        - images
+        - js
+        - css
+      title: Тип очтета аудита
+    TV.API.Types.ExportFormat:
+      type: string
+      enum:
+        - csv
+        - xlsx
+    Audit_2.Methods.Audit.Export.Get:
+      type: object
+      properties:
+        target_type:
+          allOf:
+            - $ref: '#/components/schemas/Audit_2.Types.Audit.TargetType'
+        output:
+          title: Формат экспортируемого файла
+          allOf:
+            - $ref: '#/components/schemas/TV.API.Types.ExportFormat'
+        project_id:
+          $ref: '#/components/schemas/project_id'
+        fields:
+          $ref: '#/components/schemas/fields'
+        check_id:
+          $ref: '#/components/schemas/check_id'
+      required:
+        - target_type
+        - output
+        - project_id
+        - check_id
+      title: Экспорт результатов проверки файла
+    Audit_2.Methods.Audit.Images.Get:
+      type: object
+      properties:
+        fields:
+          $ref: '#/components/schemas/fields'
+        orders:
+          $ref: '#/components/schemas/orders'
+        filters:
+          $ref: '#/components/schemas/filters'
+        id:
+          $ref: '#/components/schemas/id'
+        limit:
+          $ref: '#/components/schemas/limit'
+        offset:
+          $ref: '#/components/schemas/offset'
+        fetch_style:
+          $ref: '#/components/schemas/fetch_style'
+        project_id:
+          $ref: '#/components/schemas/project_id'
+        check_id:
+          $ref: '#/components/schemas/check_id'
+      required:
+        - orders
+        - filters
+        - offset
+        - project_id
+        - check_id
+      title: Получение проверенных изображений
+    Models.Audit.Images:
+      properties:
+        COUNT(*):
+          nullable: true
+        HTTP_CODES_HUNDREDS():
+          type: array
+          items:
+            oneOf:
+              - type: string
+              - type: number
+          nullable: true
+        check_id:
+          nullable: true
+        url_id:
+          nullable: true
+        url_ids:
+          nullable: true
+        url:
+          nullable: true
+        alt:
+          nullable: true
+        time_parse:
+          nullable: true
+        http_codes:
+          type: array
+          items:
+            oneOf:
+              - type: string
+              - type: number
+          nullable: true
+        last_http_code:
+          nullable: true
+        redirects:
+          type: array
+          items:
+            oneOf:
+              - type: string
+              - type: number
+          nullable: true
+        locations:
+          nullable: true
+        count:
+          nullable: true
+        ttfb:
+          nullable: true
+        count_pages:
+          nullable: true
+        size:
+          nullable: true
+        cacheable:
+          nullable: true
+        cache_type:
+          nullable: true
+        cache_time:
+          nullable: true
+        cache_validator:
+          nullable: true
+        robots_txt_mention:
+          nullable: true
+        robots_txt_blocked:
+          nullable: true
+        extension:
+          nullable: true
+        content_type:
+          nullable: true
+        modern_format:
+          nullable: true
+        broken:
+          nullable: true
+        search:
+          nullable: true
+        notice:
+          nullable: true
+        error:
+          nullable: true
+        warning_all:
+          nullable: true
+        check_http_code_200:
+          nullable: true
+        check_redirects_not_exists:
+          nullable: true
+        check_redirects_many_not_exists:
+          nullable: true
+        check_ttfb_max:
+          nullable: true
+        check_cacheable:
+          nullable: true
+        check_alt_exists:
+          nullable: true
+        check_alt_length_max:
+          nullable: true
+        check_size_max:
+          nullable: true
+        check_robots_disallow_off:
+          nullable: true
+        check_modern_format:
+          nullable: true
+        count_errors:
+          nullable: true
+        count_warnings:
+          nullable: true
+    Audit_2.Methods.Audit.Js.Get:
+      type: object
+      properties:
+        fields:
+          $ref: '#/components/schemas/fields'
+        orders:
+          $ref: '#/components/schemas/orders'
+        filters:
+          $ref: '#/components/schemas/filters'
+        id:
+          $ref: '#/components/schemas/id'
+        limit:
+          $ref: '#/components/schemas/limit'
+        offset:
+          $ref: '#/components/schemas/offset'
+        fetch_style:
+          $ref: '#/components/schemas/fetch_style'
+        project_id:
+          $ref: '#/components/schemas/project_id'
+        check_id:
+          $ref: '#/components/schemas/check_id'
+      required:
+        - orders
+        - filters
+        - offset
+        - project_id
+        - check_id
+      title: Получение проверенных js
+    Models.Audit.Js:
+      properties:
+        COUNT(*):
+          nullable: true
+        HTTP_CODES_HUNDREDS():
+          type: array
+          items:
+            oneOf:
+              - type: string
+              - type: number
+          nullable: true
+        check_id:
+          nullable: true
+        url_ids:
+          nullable: true
+        url_id:
+          nullable: true
+        url:
+          nullable: true
+        count:
+          nullable: true
+        time_parse:
+          nullable: true
+        http_codes:
+          type: array
+          items:
+            oneOf:
+              - type: string
+              - type: number
+          nullable: true
+        last_http_code:
+          nullable: true
+        redirects:
+          type: array
+          items:
+            oneOf:
+              - type: string
+              - type: number
+          nullable: true
+        ttfb:
+          nullable: true
+        count_pages:
+          nullable: true
+        compression:
+          nullable: true
+        cacheable:
+          nullable: true
+        cache_type:
+          nullable: true
+        cache_time:
+          nullable: true
+        cache_validator:
+          nullable: true
+        robots_txt_mention:
+          nullable: true
+        robots_txt_blocked:
+          nullable: true
+        minified:
+          nullable: true
+        broken:
+          nullable: true
+        notice:
+          nullable: true
+        error:
+          nullable: true
+        warning_all:
+          nullable: true
+        render_blocking:
+          nullable: true
+        check_http_code_200:
+          nullable: true
+        check_redirects_not_exists:
+          nullable: true
+        check_redirects_many_not_exists:
+          nullable: true
+        check_ttfb_max:
+          nullable: true
+        check_compression_exists:
+          nullable: true
+        check_cacheable:
+          nullable: true
+        check_is_minified:
+          nullable: true
+        check_no_render_blocking:
+          nullable: true
+        count_errors:
+          nullable: true
+        count_warnings:
+          nullable: true
+    Audit_2.Methods.Audit.Links.Get:
+      type: object
+      properties:
+        fields:
+          $ref: '#/components/schemas/fields'
+        orders:
+          $ref: '#/components/schemas/orders'
+        filters:
+          $ref: '#/components/schemas/filters'
+        id:
+          $ref: '#/components/schemas/id'
+        limit:
+          $ref: '#/components/schemas/limit'
+        offset:
+          $ref: '#/components/schemas/offset'
+        fetch_style:
+          $ref: '#/components/schemas/fetch_style'
+        project_id:
+          $ref: '#/components/schemas/project_id'
+        check_id:
+          $ref: '#/components/schemas/check_id'
+      required:
+        - orders
+        - filters
+        - offset
+        - project_id
+        - check_id
+      title: Получение проверенных ссылок
+    Models.Audit.Links:
+      properties:
+        COUNT(*):
+          nullable: true
+        search:
+          nullable: true
+        HTTP_CODES_HUNDREDS():
+          type: array
+          items:
+            oneOf:
+              - type: string
+              - type: number
+          nullable: true
+        check_id:
+          nullable: true
+        project_id:
+          nullable: true
+        url_id:
+          nullable: true
+        url_ids:
+          nullable: true
+        url:
+          nullable: true
+        type:
+          nullable: true
+        content:
+          type: string
+          nullable: true
+        time_parse:
+          nullable: true
+        http_codes:
+          type: array
+          items:
+            oneOf:
+              - type: string
+              - type: number
+          nullable: true
+        last_http_code:
+          nullable: true
+        count:
+          nullable: true
+        title:
+          nullable: true
+        redirects:
+          type: array
+          items:
+            oneOf:
+              - type: string
+              - type: number
+          nullable: true
+        nofollow:
+          nullable: true
+        sponsored:
+          nullable: true
+        ugc:
+          nullable: true
+        external:
+          nullable: true
+        broken:
+          nullable: true
+        ttfb:
+          nullable: true
+        count_pages:
+          nullable: true
+        cacheable:
+          nullable: true
+        cache_type:
+          nullable: true
+        cache_time:
+          nullable: true
+        cache_validator:
+          nullable: true
+        check_http_code_200:
+          nullable: true
+        check_redirects_not_exists:
+          nullable: true
+        check_redirects_many_not_exists:
+          nullable: true
+        check_ttfb_max:
+          nullable: true
+        check_url_slash_unique:
+          nullable: true
+        check_url_format_good:
+          nullable: true
+        check_title_or_content_exists:
+          nullable: true
+        check_nofollow_off:
+          nullable: true
+        notice:
+          nullable: true
+        error:
+          nullable: true
+        warning_all:
+          nullable: true
+        count_errors:
+          nullable: true
+        count_warnings:
+          nullable: true
+    TV.API.Types.Datetime:
+      type: string
+      title: Дата с временем
+      example: '2000-01-01 00:00:00'
+    Audit_2.Methods.Audit.Log.Get:
+      type: object
+      properties:
+        time1:
+          title: Фильтр по периоду
+          nullable: true
+          allOf:
+            - $ref: '#/components/schemas/TV.API.Types.Datetime'
+        time2:
+          title: Фильтр по периоду
+          nullable: true
+          allOf:
+            - $ref: '#/components/schemas/TV.API.Types.Datetime'
+        show_urls:
+          title: Добавить url к записям
+          type: boolean
+        show_locations:
+          title: Добавить массив locations - адреса страницы и редиректы с HTTP кодами
+          type: boolean
+        http_codes_hundreds:
+          title: Фильтр по категориям кодов
+          nullable: true
+          allOf:
+            - $ref: '#/components/schemas/TV.API.Types.IntArray'
+        page:
+          title: Номер страницы (для использования в SQL)
+          default: 1
+          type: integer
+        project_id:
+          $ref: '#/components/schemas/project_id'
+        limit:
+          $ref: '#/components/schemas/limit'
+        offset:
+          $ref: '#/components/schemas/offset'
+        check_id:
+          $ref: '#/components/schemas/check_id'
+      required:
+        - show_urls
+        - show_locations
+        - page
+        - project_id
+        - offset
+        - check_id
+      title: Получение данных проверенных ресурсов
+    Audit_2.Methods.Audit.Pages.Get:
+      type: object
+      properties:
+        filters_resources_target_type:
+          title: Тип отчета для фильтра по ресурсам страницы
+          nullable: true
+          allOf:
+            - $ref: '#/components/schemas/Audit_2.Types.Audit.TargetType'
+        filters_resources:
+          title: Фильтр по ресурсам страницы, API fitlers для объекта, тип которого указан в filters_extra_target_type
+          type: array
+          items:
+            oneOf:
+              - type: string
+              - type: number
+        fields:
+          $ref: '#/components/schemas/fields'
+        orders:
+          $ref: '#/components/schemas/orders'
+        filters:
+          $ref: '#/components/schemas/filters'
+        id:
+          $ref: '#/components/schemas/id'
+        limit:
+          $ref: '#/components/schemas/limit'
+        offset:
+          $ref: '#/components/schemas/offset'
+        fetch_style:
+          $ref: '#/components/schemas/fetch_style'
+        project_id:
+          $ref: '#/components/schemas/project_id'
+        check_id:
+          $ref: '#/components/schemas/check_id'
+      required:
+        - filters_resources
+        - orders
+        - filters
+        - offset
+        - project_id
+        - check_id
+      title: Получение страниц, по которым был выполнен аудит
+    Models.Audit.Pages:
+      properties:
+        dummy_opener_summary_page:
+          nullable: true
+        COUNT(*):
+          nullable: true
+        HTTP_CODES_HUNDREDS():
+          type: array
+          items:
+            oneOf:
+              - type: string
+              - type: number
+          nullable: true
+        check_id:
+          nullable: true
+        url_id:
+          nullable: true
+        url:
+          nullable: true
+        time_parse:
+          nullable: true
+        http_codes:
+          type: array
+          items:
+            oneOf:
+              - type: string
+              - type: number
+          nullable: true
+        last_http_code:
+          nullable: true
+        tls_version:
+          nullable: true
+        redirects:
+          type: array
+          items:
+            oneOf:
+              - type: string
+              - type: number
+          nullable: true
+        meta_robots_none:
+          nullable: true
+        x_robots_tag_none:
+          nullable: true
+        meta_robots_noindex:
+          nullable: true
+        x_robots_tag_noindex:
+          nullable: true
+        meta_robots_nofollow:
+          nullable: true
+        x_robots_tag_nofollow:
+          nullable: true
+        canonical:
+          nullable: true
+        canonical_count:
+          nullable: true
+        http_resources_count:
+          nullable: true
+        html_lang:
+          nullable: true
+        hreflang:
+          nullable: true
+        rdfa:
+          nullable: true
+        json_ld:
+          nullable: true
+        microdata:
+          nullable: true
+        alternates:
+          nullable: true
+        refresh:
+          nullable: true
+        title:
+          nullable: true
+        description:
+          nullable: true
+        h1:
+          nullable: true
+        links_count:
+          nullable: true
+        images_count:
+          nullable: true
+        js_count:
+          nullable: true
+        css_count:
+          nullable: true
+        lastmod:
+          nullable: true
+        lastmod_since:
+          nullable: true
+        sitemap_xml_mention:
+          nullable: true
+        robots_txt_mention:
+          nullable: true
+        robots_txt_blocked:
+          nullable: true
+        og_title:
+          nullable: true
+        og_description:
+          nullable: true
+        og_image:
+          nullable: true
+        og_url:
+          nullable: true
+        og_type:
+          nullable: true
+        count_errors:
+          nullable: true
+        count_warnings:
+          nullable: true
+        count_problems:
+          nullable: true
+        broken:
+          nullable: true
+        ttfb:
+          nullable: true
+        compression:
+          nullable: true
+        cacheable:
+          nullable: true
+        cache_type:
+          nullable: true
+        cache_time:
+          nullable: true
+        cache_validator:
+          nullable: true
+        search:
+          nullable: true
+        snippet_search:
+          nullable: true
+        title_dbl:
+          nullable: true
+        description_dbl:
+          nullable: true
+        lcp:
+          nullable: true
+        fid:
+          nullable: true
+        inp:
+          nullable: true
+        cls:
+          nullable: true
+        fcp:
+          nullable: true
+        si:
+          nullable: true
+        tti:
+          nullable: true
+        tbt:
+          nullable: true
+        cwv_performance:
+          nullable: true
+        backlinks_inner_count:
+          nullable: true
+        text_length:
+          nullable: true
+        check_http_code_200:
+          nullable: true
+        check_redirects_not_exists:
+          nullable: true
+        check_redirects_many_not_exists:
+          nullable: true
+        check_ttfb_max:
+          nullable: true
+        check_cacheable:
+          nullable: true
+        check_robots_txt_allowed:
+          nullable: true
+        check_sitemap_xml_exists:
+          nullable: true
+        check_sitemap_xml_exists_with_canonical:
+          nullable: true
+        check_sitemap_included_none_blocked:
+          nullable: true
+        check_noindex_off:
+          nullable: true
+        check_nofollow_off:
+          nullable: true
+        check_title_exists:
+          nullable: true
+        check_title_length_max:
+          nullable: true
+        check_title_is_unique:
+          nullable: true
+        check_description_exists:
+          nullable: true
+        check_description_is_unique:
+          nullable: true
+        check_description_length_min:
+          nullable: true
+        check_description_length_max:
+          nullable: true
+        check_h1_exists:
+          nullable: true
+        check_html_lang_exists:
+          nullable: true
+        check_url_length:
+          nullable: true
+        check_canonical_exists:
+          nullable: true
+        check_alternate:
+          nullable: true
+        check_http_resources_count:
+          nullable: true
+        check_links_exists:
+          nullable: true
+        check_refresh_not_exists:
+          nullable: true
+        check_compression_exists:
+          nullable: true
+        check_schema_exists:
+          nullable: true
+        check_og_title_exists:
+          nullable: true
+        check_og_description_exists:
+          nullable: true
+        check_og_image_exists:
+          nullable: true
+        check_og_url_exists:
+          nullable: true
+        check_og_url_canonical:
+          nullable: true
+        check_lcp_max:
+          nullable: true
+        check_fid_max:
+          nullable: true
+        check_inp_max:
+          nullable: true
+        check_cls_max:
+          nullable: true
+        check_fcp_max:
+          nullable: true
+        check_si_max:
+          nullable: true
+        check_tbt_max:
+          nullable: true
+    Audit_2.Types.Audit.Summary.FilterCheckState:
+      type: string
+      enum:
+        - all
+        - changed
+      title: Фильтр по состоянию изменения в сводке
+    Audit_2.Methods.Audit.Summary.Get:
+      type: object
+      properties:
+        filter_check_type:
+          title: Фильтр по состоянию сигнала (success, warning, error)
+          type: array
+          items:
+            oneOf:
+              - type: string
+              - type: number
+        filter_check_state:
+          nullable: true
+          allOf:
+            - $ref: '#/components/schemas/Audit_2.Types.Audit.Summary.FilterCheckState'
+        fields:
+          $ref: '#/components/schemas/fields'
+        orders:
+          $ref: '#/components/schemas/orders'
+        filters:
+          $ref: '#/components/schemas/filters'
+        id:
+          $ref: '#/components/schemas/id'
+        limit:
+          $ref: '#/components/schemas/limit'
+        offset:
+          $ref: '#/components/schemas/offset'
+        fetch_style:
+          $ref: '#/components/schemas/fetch_style'
+        project_id:
+          $ref: '#/components/schemas/project_id'
+        check_id:
+          $ref: '#/components/schemas/check_id'
+      required:
+        - filter_check_type
+        - orders
+        - filters
+        - offset
+        - project_id
+        - check_id
+      title: Получение сводки о выполненном аудите
+    Audit_2.Methods.Audit.SummaryPage.Get:
+      type: object
+      properties:
+        url_id:
+          title: Id ссылки на страницу
+          type: integer
+        fields:
+          $ref: '#/components/schemas/fields'
+        orders:
+          $ref: '#/components/schemas/orders'
+        filters:
+          $ref: '#/components/schemas/filters'
+        id:
+          $ref: '#/components/schemas/id'
+        limit:
+          $ref: '#/components/schemas/limit'
+        offset:
+          $ref: '#/components/schemas/offset'
+        fetch_style:
+          $ref: '#/components/schemas/fetch_style'
+        project_id:
+          $ref: '#/components/schemas/project_id'
+        check_id:
+          $ref: '#/components/schemas/check_id'
+      required:
+        - url_id
+        - orders
+        - filters
+        - offset
+        - project_id
+        - check_id
+      title: Получение сводки страницы
+    Audit_2.Methods.Indexing.Export.Get:
+      type: object
+      properties:
+        searchers_keys:
+          title: Поисковые системы
+          allOf:
+            - $ref: '#/components/schemas/Audit_2.Types.Indexing.SearcherKeys'
+        returnFilenameFromFolder:
+          title: Если указан, файл будет сохранен в указанной папке и будет возвращен путь к файлу
+          description: |-
+            Для внутреннего использования
+
+            @private
+          nullable: true
+          type: string
+        output:
+          title: Формат экспортируемого файла
+          allOf:
+            - $ref: '#/components/schemas/TV.API.Types.ExportFormat'
+        properties:
+          title: Настройки экспорта
+          type: array
+          items:
+            oneOf:
+              - type: string
+              - type: number
+        dates:
+          title: Произвольные даты без использования диапазона
+          nullable: true
+          type: array
+          items:
+            oneOf:
+              - type: string
+              - type: number
+        date1:
+          title: Дата начала диапазона
+          nullable: true
+          allOf:
+            - $ref: '#/components/schemas/TV.API.Types.Date'
+        date2:
+          title: Дата окончания диапазона
+          nullable: true
+          allOf:
+            - $ref: '#/components/schemas/TV.API.Types.Date'
+        periodDays:
+          title: Период в днях
+          default: 7
+          type: integer
+        type_range:
+          default: 7
+          allOf:
+            - $ref: '#/components/schemas/Audit_2.Types.Indexing.Export.TypeRange'
+        count_dates:
+          title: Количество дней в диапазоне
+          default: 60
+          type: integer
+        project_id:
+          $ref: '#/components/schemas/project_id'
+        fields:
+          $ref: '#/components/schemas/fields'
+      required:
+        - searchers_keys
+        - output
+        - properties
+        - periodDays
+        - type_range
+        - count_dates
+        - project_id
+      title: Экспорт результатов индексации
+      description: Необходимо указать либо date1 и date2, либо dates (вместе указывать нельзя)
+    Audit_2.Methods.Indexing.Links.Get:
+      type: object
+      properties:
+        template_date_range:
+          title: Диапазон значений шаблона
+          type: string
+        dates:
+          title: Произвольные даты без использования диапазона
+          nullable: true
+          type: array
+          items:
+            oneOf:
+              - type: string
+              - type: number
+        date1:
+          title: Дата начала диапазона
+          nullable: true
+          type: string
+        date2:
+          title: Дата окончания диапазона
+          nullable: true
+          type: string
+        type_range:
+          title: Тип диапазона дат
+          default: 7
+          nullable: true
+          allOf:
+            - $ref: '#/components/schemas/Audit_2.Types.Indexing.Export.TypeRange'
+        count_dates:
+          title: Количество дней в диапазоне
+          nullable: true
+          type: integer
+        searchers_keys:
+          title: Ппоисковые ключи
+          nullable: true
+          type: array
+          items:
+            oneOf:
+              - type: string
+              - type: number
+        tags:
+          title: Теги
+          nullable: true
+          type: array
+          items:
+            oneOf:
+              - type: string
+              - type: number
+        dynamic:
+          title: Динамический
+          nullable: true
+          type: array
+          items:
+            oneOf:
+              - type: string
+              - type: number
+        data_dynamic:
+          title: Динаамические данные
+          nullable: true
+          type: array
+          items:
+            oneOf:
+              - type: string
+              - type: number
+        data_sort:
+          title: Сортировка данных
+          nullable: true
+          type: array
+          items:
+            oneOf:
+              - type: string
+              - type: number
+        project_id:
+          $ref: '#/components/schemas/project_id'
+      required:
+        - template_date_range
+        - project_id
+      title: Создание гостевой ссылки на просмотр позиций
+      description: Необходимо указать либо date1 и date2, либо dates (вместе указывать нельзя)
+    Audit_2.Methods.Indexing.Summary.Get:
+      type: object
+      properties:
+        dates:
+          title: Произвольные даты без диапазона
+          type: array
+          items:
+            oneOf:
+              - type: string
+              - type: number
+        searcher_key:
+          nullable: true
+          allOf:
+            - $ref: '#/components/schemas/Audit_2.Types.Indexing.SearcherKey'
+        show_counts_changes:
+          title: Отобразить количество изменений
+          type: boolean
+        show_counts_in_index:
+          title: Отобразить количество страниц в индексе
+          type: boolean
+        show_counts_all:
+          title: Отобразить количество проверенных страниц
+          type: boolean
+        forChart:
+          title: Вернуть данные в формате для графика
+          description: |-
+            Недокументируемый параметр
+
+            @private
+          type: boolean
+        project_id:
+          $ref: '#/components/schemas/project_id'
+        filters:
+          $ref: '#/components/schemas/filters'
+        id:
+          $ref: '#/components/schemas/id'
+      required:
+        - dates
+        - show_counts_changes
+        - show_counts_in_index
+        - show_counts_all
+        - forChart
+        - project_id
+        - filters
+      title: Получение сводки индексации
+    Audit_2.Methods.Watcher.ByURL.Get:
+      type: object
+      properties:
+        url_id:
+          title: ID URL
+          type: integer
+        show_headers:
+          title: Включать ли в результат названия столбцов
+          type: boolean
+        watcher_fields:
+          title: Выбор столбцов данных с результатами проверки
+          default:
+            - http_codes
+            - redirects
+          type: array
+          items:
+            oneOf:
+              - type: string
+              - type: number
+        show_diff:
+          allOf:
+            - $ref: '#/components/schemas/Audit_2.Types.Watcher.ShowDiff'
+        watcher_type:
+          allOf:
+            - $ref: '#/components/schemas/Audit_2.Types.Watcher.Type'
+        fields:
+          $ref: '#/components/schemas/fields'
+        orders:
+          $ref: '#/components/schemas/orders'
+        filters:
+          $ref: '#/components/schemas/filters'
+        id:
+          $ref: '#/components/schemas/id'
+        limit:
+          $ref: '#/components/schemas/limit'
+        offset:
+          $ref: '#/components/schemas/offset'
+        fetch_style:
+          $ref: '#/components/schemas/fetch_style'
+        project_id:
+          $ref: '#/components/schemas/project_id'
+      required:
+        - url_id
+        - show_headers
+        - watcher_fields
+        - show_diff
+        - watcher_type
+        - orders
+        - filters
+        - offset
+        - project_id
+      title: Построить отчет по одному URL
+      description: |-
+        Отличия от get/audit_2/watcher:
+        - отчет генерируется на основе объекта watcher_results, а не urls
+        - параметры выбора периода отчета игнорируются
+        - выбор прверок регулируется параметрами запроса filters, limit и offset
+    Models.Watcher.Results:
+      properties:
+        project_id:
+          nullable: true
+        check_id:
+          nullable: true
+        url_id:
+          nullable: true
+        http_codes:
+          type: array
+          items:
+            oneOf:
+              - type: string
+              - type: number
+          nullable: true
+        http_codes_changed:
+          nullable: true
+        http_codes_md5:
+          nullable: true
+        redirects:
+          type: array
+          items:
+            oneOf:
+              - type: string
+              - type: number
+          nullable: true
+        redirects_changed:
+          nullable: true
+        redirects_md5:
+          nullable: true
+        h1:
+          nullable: true
+        h1_changed:
+          nullable: true
+        h1_md5:
+          nullable: true
+        title:
+          nullable: true
+        title_changed:
+          nullable: true
+        title_md5:
+          nullable: true
+        description:
+          nullable: true
+        description_changed:
+          nullable: true
+        description_md5:
+          nullable: true
+        content:
+          nullable: true
+        content_changed:
+          nullable: true
+        content_md5:
+          nullable: true
+    Audit_2.Methods.Watcher.Checks.Get:
+      type: object
+      properties:
+        project_id:
+          $ref: '#/components/schemas/project_id'
+      required:
+        - project_id
+      title: Получение проверок радара
+    Audit_2.Methods.Watcher.Summary.Get:
+      type: object
+      properties:
+        watcher_types:
+          title: Тип проверки
+          nullable: true
+          type: array
+          items:
+            oneOf:
+              - type: string
+              - type: number
+        checks_ids:
+          title: ID проверок
+          type: array
+          items:
+            oneOf:
+              - type: string
+              - type: number
+        show_counts_changes:
+          title: Отобразить количество изменений по типам
+          type: boolean
+        forChart:
+          title: Недокументируемый параметр, данные для графика
+          type: boolean
+        project_id:
+          $ref: '#/components/schemas/project_id'
+        filters:
+          $ref: '#/components/schemas/filters'
+        id:
+          $ref: '#/components/schemas/id'
+      required:
+        - checks_ids
+        - show_counts_changes
+        - forChart
+        - project_id
+        - filters
+      title: Получение сводки радара
     Payments_2.Methods.Tariff.DelCard.Edit:
       type: object
       properties: {}
@@ -3114,3 +6755,482 @@ components:
         - additionalData
       title: Сокращенный тип с данными для вывода hightcharts
       description: https://www.highcharts.com/
+    Audit_2.Methods.Audit.Checker.Go.Edit:
+      type: object
+      properties:
+        filters:
+          $ref: '#/components/schemas/filters'
+        id:
+          $ref: '#/components/schemas/id'
+      required:
+        - filters
+      title: Запуск проверки аудита
+    Audit_2.Methods.Audit.Checker.Price.Get:
+      type: object
+      properties:
+        apply_discount:
+          title: Отображать ли сумму с учетом скидки
+          default: true
+          type: boolean
+      required:
+        - apply_discount
+      title: Получение стоимости проверки аудита
+    Audit_2.Methods.Audit.Export.Links.Get:
+      type: object
+      properties:
+        view_name:
+          title: Название просмотра (используется на странице с просмотром проверки)
+          type: string
+        view_template:
+          title: Шаблон просмотра (используется на странице с просмотром проверки)
+          type: array
+          items:
+            oneOf:
+              - type: string
+              - type: number
+        log_http_codes_hundreds:
+          title: Логи фильтра по категориям кодов (используется на странице с просмотром проверки)
+          type: array
+          items:
+            oneOf:
+              - type: string
+              - type: number
+        view_signal_type:
+          title: Тип сигнала просмотра (используется на странице с просмотром проверки)
+          type: array
+          items:
+            oneOf:
+              - type: string
+              - type: number
+        links_external:
+          title: Внешние ссылки (используется на странице с просмотром проверки)
+          type: string
+        project_id:
+          $ref: '#/components/schemas/project_id'
+        check_id:
+          $ref: '#/components/schemas/check_id'
+      required:
+        - view_name
+        - view_template
+        - log_http_codes_hundreds
+        - view_signal_type
+        - links_external
+        - project_id
+        - check_id
+      title: Получение гостевой ссылки на просмотр аудита позиций
+    Audit_2.Methods.Audit.Export.Summary.Get:
+      type: object
+      properties:
+        output:
+          title: Формат экспортируемого файла
+          type: string
+        project_id:
+          $ref: '#/components/schemas/project_id'
+        check_id:
+          $ref: '#/components/schemas/check_id'
+      required:
+        - output
+        - project_id
+        - check_id
+      title: Экспорт отчета Анализа сайта
+    Audit_2.Methods.Audit.Log.ActualError.Get:
+      type: object
+      properties:
+        project_id:
+          $ref: '#/components/schemas/project_id'
+        check_id:
+          $ref: '#/components/schemas/check_id'
+      required:
+        - project_id
+        - check_id
+      title: Получение информации о текущей ошибке на роботе
+    stdClass:
+      type: object
+      properties: {}
+      required: []
+    DateTime:
+      type: object
+      properties: {}
+      required: []
+    Audit_2.Methods.Audit.Log.Chart.Get:
+      type: object
+      properties:
+        time1:
+          title: Фильтр по периоду
+          nullable: true
+          allOf:
+            - $ref: '#/components/schemas/DateTime'
+        time2:
+          title: Фильтр по периоду
+          nullable: true
+          allOf:
+            - $ref: '#/components/schemas/DateTime'
+        page:
+          title: Номер страницы (для использования в SQL)
+          default: 1
+          type: integer
+        limit:
+          $ref: '#/components/schemas/limit'
+        offset:
+          $ref: '#/components/schemas/offset'
+        project_id:
+          $ref: '#/components/schemas/project_id'
+        check_id:
+          $ref: '#/components/schemas/check_id'
+      required:
+        - page
+        - offset
+        - project_id
+        - check_id
+      title: Получение данных для графика
+      deprecated: true
+    Audit_2.Types.Audit.Results.Export.TypeReport:
+      type: integer
+      enum:
+        - 0
+        - 1
+        - 2
+        - 3
+        - 4
+        - 5
+        - 6
+        - 7
+      title: Тип отчета аудита для экспорта
+    Audit_2.Methods.Audit.Results.Export.Get:
+      type: object
+      properties:
+        type_report:
+          allOf:
+            - $ref: '#/components/schemas/Audit_2.Types.Audit.Results.Export.TypeReport'
+        format:
+          title: Формат экспорта
+          default: pdf
+          nullable: true
+          type: string
+        search:
+          title: Данные поиска во всех табличных разделах (только для PDF)
+          nullable: true
+          type: string
+        filter:
+          title: Данные фильтрации во всех табличных разделах (только для PDF)
+          nullable: true
+          type: string
+        external:
+          title: Вид ссылок (только для PDF)
+          nullable: true
+          type: string
+        project_id:
+          $ref: '#/components/schemas/project_id'
+        check_id:
+          $ref: '#/components/schemas/check_id'
+      required:
+        - type_report
+        - project_id
+        - check_id
+      title: Экспорт результатов аудита
+      deprecated: true
+    Audit_2.Methods.Audit.Results.Page.Get:
+      type: object
+      properties:
+        url:
+          title: Ссылка на анализируемую страницу
+          type: string
+        search:
+          title: Поиск
+          nullable: true
+          type: string
+        orders:
+          $ref: '#/components/schemas/orders'
+        project_id:
+          $ref: '#/components/schemas/project_id'
+        check_id:
+          $ref: '#/components/schemas/check_id'
+      required:
+        - url
+        - orders
+        - project_id
+        - check_id
+      title: Результаты анализа страницы
+      deprecated: true
+    Audit_2.Methods.Indexing.Checker.Go.Edit:
+      type: object
+      properties:
+        filters:
+          $ref: '#/components/schemas/filters'
+        id:
+          $ref: '#/components/schemas/id'
+      required:
+        - filters
+      title: Отправка проектов на проверку индексации
+    Audit_2.Methods.Indexing.Checker.Price.Get:
+      type: object
+      properties:
+        apply_discount:
+          title: Отображать сумму с учетом скидки
+          default: 1
+          type: integer
+      required:
+        - apply_discount
+      title: Полуение стоимости проверки индексации
+    Audit_2.Methods.Indexing.Export.Links.Get:
+      type: object
+      properties:
+        searchers_keys:
+          title: Поисковые ключи
+          nullable: true
+          type: array
+          items:
+            oneOf:
+              - type: string
+              - type: number
+        template_date_range:
+          title: Диапозон значений шаблона
+          nullable: true
+          type: string
+        dates:
+          title: Произвольные даты без использования диапазона
+          nullable: true
+          type: array
+          items:
+            oneOf:
+              - type: string
+              - type: number
+        date1:
+          title: Дата начала диапазона
+          nullable: true
+          type: string
+        date2:
+          title: Дата окончания диапазона
+          nullable: true
+          type: string
+        type_range:
+          title: Тип диапазона дат
+          nullable: true
+          allOf:
+            - $ref: '#/components/schemas/Audit_2.Types.Indexing.Export.TypeRange'
+        type_range_compare:
+          title: Сравнение диапазонов типов
+          nullable: true
+          type: string
+        count_dates:
+          title: Количество дней в диапазоне
+          nullable: true
+          type: string
+        tags_ids:
+          title: ID тегов
+          nullable: true
+          type: array
+          items:
+            oneOf:
+              - type: string
+              - type: number
+        data_sort:
+          title: Сортировка данных
+          nullable: true
+          type: array
+          items:
+            oneOf:
+              - type: string
+              - type: number
+        only_changed_for:
+          title: Применение изменений только для
+          nullable: true
+          type: string
+        project_id:
+          $ref: '#/components/schemas/project_id'
+      required:
+        - project_id
+      title: Получение гостевой ссылки на просмотр индексации
+      description: Необходимо указать либо date1 и date2, либо dates (вместе указывать нельзя)
+    Export_2.Types.Repository.Name:
+      type: string
+      enum:
+        - gdrive
+      title: Хранилище для экспорта
+    Audit_2.Methods.Indexing.Export.ToRepository.Get:
+      type: object
+      properties:
+        repository:
+          allOf:
+            - $ref: '#/components/schemas/Export_2.Types.Repository.Name'
+        project_id:
+          $ref: '#/components/schemas/project_id'
+      required:
+        - repository
+        - project_id
+      title: Экспорт файла в хранилище
+    Audit_2.Methods.Indexing.Summary.Chart.Get:
+      type: object
+      properties:
+        dates:
+          title: Произвольные даты без диапазона
+          type: array
+          items:
+            oneOf:
+              - type: string
+              - type: number
+        searcher_key:
+          nullable: true
+          allOf:
+            - $ref: '#/components/schemas/Audit_2.Types.Indexing.SearcherKey'
+        show_counts_changes:
+          title: Отобразить количество изменений
+          type: boolean
+        show_counts_in_index:
+          title: Отобразить количество страниц в индексе
+          type: boolean
+        show_counts_all:
+          title: Отобразить количество проверенных страниц
+          type: boolean
+        forChart:
+          title: Вернуть данные в формате для графика
+          description: |-
+            Недокументируемый параметр
+
+            @private
+          type: boolean
+        project_id:
+          $ref: '#/components/schemas/project_id'
+        filters:
+          $ref: '#/components/schemas/filters'
+        id:
+          $ref: '#/components/schemas/id'
+      required:
+        - dates
+        - show_counts_changes
+        - show_counts_in_index
+        - show_counts_all
+        - forChart
+        - project_id
+        - filters
+      title: Получение сводок индексации для графика
+    Audit_2.Types.Sitemap.MaxPages:
+      type: string
+      enum:
+        - '100'
+        - '1000'
+        - '10000'
+        - '100000'
+        - '150000'
+        - '300000'
+      title: Максимальное количество страниц для генерации карты сайта
+    Audit_2.Methods.Sitemap.Checker.Go.Edit:
+      type: object
+      properties:
+        max_pages:
+          allOf:
+            - $ref: '#/components/schemas/Audit_2.Types.Sitemap.MaxPages'
+        filters:
+          $ref: '#/components/schemas/filters'
+        id:
+          $ref: '#/components/schemas/id'
+      required:
+        - max_pages
+        - filters
+      title: Отправка проектов на проверку карты сайта
+    Audit_2.Methods.Sitemap.Checker.Price.Get:
+      type: object
+      properties:
+        apply_discount:
+          title: Отображать ли сумму с учетом скидки
+          default: 1
+          type: integer
+        max_pages:
+          allOf:
+            - $ref: '#/components/schemas/Audit_2.Types.Sitemap.MaxPages'
+      required:
+        - apply_discount
+        - max_pages
+      title: Полуение стоимости проверки карты сайта
+    Audit_2.Methods.Watcher.Checker.Go.Edit:
+      type: object
+      properties:
+        filters:
+          $ref: '#/components/schemas/filters'
+        id:
+          $ref: '#/components/schemas/id'
+      required:
+        - filters
+      title: Отправка проектов на проверку радара
+    Audit_2.Methods.Watcher.Checker.Price.Get:
+      type: object
+      properties:
+        apply_discount:
+          title: Отображать ли сумму с учетом скидки
+          default: 1
+          type: integer
+      required:
+        - apply_discount
+      title: Полуение стоимости проверки радара
+    properties-check_id:
+      title: ID проверки радара
+      type: integer
+    Audit_2.Methods.Watcher.Export.Links.Get:
+      type: object
+      properties:
+        view_name:
+          title: Выбранный элемент в меню
+          type: string
+        fulltext:
+          title: Выводить полные тексты (для вкладки контент)
+          type: boolean
+        changed:
+          default: all
+          allOf:
+            - $ref: '#/components/schemas/Audit_2.Types.Audit.Summary.FilterCheckState'
+        tags_ids:
+          title: Фильтр по тегам
+          nullable: true
+          type: array
+          items:
+            oneOf:
+              - type: string
+              - type: number
+        project_id:
+          $ref: '#/components/schemas/project_id'
+        check_id:
+          $ref: '#/components/schemas/properties-check_id'
+      required:
+        - view_name
+        - fulltext
+        - changed
+        - project_id
+        - check_id
+      title: Создание гостевой ссылки на просмотр радара
+    Audit_2.Methods.Watcher.Summary.Chart.Get:
+      type: object
+      properties:
+        watcher_types:
+          title: Тип проверки
+          nullable: true
+          type: array
+          items:
+            oneOf:
+              - type: string
+              - type: number
+        checks_ids:
+          title: ID проверок
+          type: array
+          items:
+            oneOf:
+              - type: string
+              - type: number
+        show_counts_changes:
+          title: Отобразить количество изменений по типам
+          type: boolean
+        forChart:
+          title: Недокументируемый параметр, данные для графика
+          type: boolean
+        project_id:
+          $ref: '#/components/schemas/project_id'
+        filters:
+          $ref: '#/components/schemas/filters'
+        id:
+          $ref: '#/components/schemas/id'
+      required:
+        - checks_ids
+        - show_counts_changes
+        - forChart
+        - project_id
+        - filters
+      title: Получение сводок радара для графика

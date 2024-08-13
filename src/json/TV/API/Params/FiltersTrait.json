@@ -12,8 +12,7 @@
                 "properties": {
                     "filters": {
                         "title": "Список фильтров по полям объекта",
-                        "description": "{name: string, operator: Field::AVAILABLE_OPERATORS, values: array}\n\nИспользует поля модели\n@see AbstractMethod::MODEL\n@see Field::AVAILABLE_OPERATORS",
-                        "nullable": true,
+                        "description": "{name: string, operator: Field::AVAILABLE_OPERATORS, values: array}\n\nИспользует поля модели\n\n@see AbstractMethod::MODEL\n@see Field::AVAILABLE_OPERATORS",
                         "type": "array",
                         "items": {
                             "oneOf": [
@@ -33,13 +32,16 @@
                         "type": "integer"
                     }
                 },
-                "required": []
+                "required": [
+                    "filters"
+                ]
             }
         },
         "parameters": {
             "filters": {
                 "name": "filters",
-                "description": "Список фильтров по полям объекта\n\n{name: string, operator: Field::AVAILABLE_OPERATORS, values: array}\n\nИспользует поля модели\n@see AbstractMethod::MODEL\n@see Field::AVAILABLE_OPERATORS",
+                "description": "Список фильтров по полям объекта\n\n{name: string, operator: Field::AVAILABLE_OPERATORS, values: array}\n\nИспользует поля модели\n\n@see AbstractMethod::MODEL\n@see Field::AVAILABLE_OPERATORS",
+                "required": true,
                 "style": "deepObject",
                 "in": "query",
                 "schema": {

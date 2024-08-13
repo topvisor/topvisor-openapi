@@ -13,17 +13,19 @@
                     "offset": {
                         "title": "Число объектов, которое необходимо пропустить при получении резальтата",
                         "description": "Используется в паре с limit",
-                        "nullable": true,
                         "type": "integer"
                     }
                 },
-                "required": []
+                "required": [
+                    "offset"
+                ]
             }
         },
         "parameters": {
             "offset": {
                 "name": "offset",
                 "description": "Число объектов, которое необходимо пропустить при получении резальтата\n\nИспользуется в паре с limit",
+                "required": true,
                 "style": "deepObject",
                 "in": "query",
                 "schema": {

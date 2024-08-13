@@ -13,9 +13,10 @@ export interface components {
              * @description Поля могут быть строками или объектом: {name: string, direction: 'ASC' | 'DESC', orderValues: array}
              *
              *     Использует поля модели
+             *
              *     @see AbstractMethod::MODEL
              */
-            orders?: (string | number)[] | null;
+            orders: (string | number)[];
         };
     };
     responses: never;
@@ -25,6 +26,7 @@ export interface components {
          *     Поля могут быть строками или объектом: {name: string, direction: 'ASC' | 'DESC', orderValues: array}
          *
          *     Использует поля модели
+         *
          *     @see AbstractMethod::MODEL */
         orders: (string | number)[];
     };

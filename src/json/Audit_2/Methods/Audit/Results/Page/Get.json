@@ -1,0 +1,43 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Audit_2.Methods.Audit.Results.Page.Get",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Audit_2.Methods.Audit.Results.Page.Get": {
+                "type": "object",
+                "properties": {
+                    "url": {
+                        "title": "Ссылка на анализируемую страницу",
+                        "type": "string"
+                    },
+                    "search": {
+                        "title": "Поиск",
+                        "nullable": true,
+                        "type": "string"
+                    },
+                    "orders": {
+                        "$ref": "../../../../../TV/API/Params/OrdersTrait.json#/components/schemas/TV.API.Params.OrdersTrait/properties/orders"
+                    },
+                    "project_id": {
+                        "$ref": "../../../../../TV/API/Params/ProjectIdTrait.json#/components/schemas/TV.API.Params.ProjectIdTrait/properties/project_id"
+                    },
+                    "check_id": {
+                        "$ref": "../../../../../Audit_2/Params/Audit/CheckIdTrait.json#/components/schemas/Audit_2.Params.Audit.CheckIdTrait/properties/check_id"
+                    }
+                },
+                "required": [
+                    "url",
+                    "orders",
+                    "project_id",
+                    "check_id"
+                ],
+                "title": "Результаты анализа страницы",
+                "deprecated": true
+            }
+        }
+    }
+}

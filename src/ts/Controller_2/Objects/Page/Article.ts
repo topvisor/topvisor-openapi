@@ -41,6 +41,7 @@ export interface components {
             like: number;
             bookmark: string;
             bookmark_author: string;
+            author_alias: string;
         };
     };
     responses: never;

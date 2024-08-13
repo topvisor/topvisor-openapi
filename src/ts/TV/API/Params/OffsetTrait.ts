@@ -12,7 +12,7 @@ export interface components {
              * Число объектов, которое необходимо пропустить при получении резальтата
              * @description Используется в паре с limit
              */
-            offset?: number | null;
+            offset: number;
         };
     };
     responses: never;

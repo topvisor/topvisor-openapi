@@ -32,7 +32,11 @@
                         "$ref": "../../../TV/API/Params/FetchStyleTrait.json#/components/schemas/TV.API.Params.FetchStyleTrait/properties/fetch_style"
                     }
                 },
-                "required": [],
+                "required": [
+                    "orders",
+                    "filters",
+                    "offset"
+                ],
                 "title": "Получение данных об авторе"
             }
         }

@@ -1,0 +1,34 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Audit_2.Methods.Sitemap.Checker.Price.Get",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Audit_2.Methods.Sitemap.Checker.Price.Get": {
+                "type": "object",
+                "properties": {
+                    "apply_discount": {
+                        "title": "Отображать ли сумму с учетом скидки",
+                        "default": 1,
+                        "type": "integer"
+                    },
+                    "max_pages": {
+                        "allOf": [
+                            {
+                                "$ref": "../../../../../Audit_2/Types/Sitemap/MaxPages.json#/components/schemas/Audit_2.Types.Sitemap.MaxPages"
+                            }
+                        ]
+                    }
+                },
+                "required": [
+                    "apply_discount",
+                    "max_pages"
+                ],
+                "title": "Полуение стоимости проверки карты сайта"
+            }
+        }
+    }
+}

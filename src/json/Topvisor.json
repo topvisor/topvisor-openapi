@@ -938,6 +938,334 @@
                 }
             }
         },
+        "/get/audit_2/counturls/": {
+            "post": {
+                "operationId": "GetAudit2Counturls",
+                "tags": [
+                    "Audit_2"
+                ],
+                "summary": "Получение количества настроенных URL",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Audit_2/Methods/CountUrls/Get.json#/components/schemas/Audit_2.Methods.CountUrls.Get"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "oneOf": [
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "type": "integer",
+                                                            "title": "Количество настроенных URL"
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "result"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
+                                        }
+                                    ]
+                                }
+                            },
+                            "model": {
+                                "schema": {
+                                    "type": "null"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/get/audit_2/indexing/": {
+            "post": {
+                "operationId": "GetAudit2Indexing",
+                "tags": [
+                    "Audit_2"
+                ],
+                "summary": "Получение отчета по проверке индексации",
+                "description": "Необходимо указать либо date1 и date2, либо dates (вместе указывать нельзя)",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Audit_2/Methods/Indexing/Get.json#/components/schemas/Audit_2.Methods.Indexing.Get"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "oneOf": [
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "type": "array",
+                                                            "items": {
+                                                                "$ref": "Models/Urls.json#/components/schemas/Models.Urls",
+                                                                "description": "Only for typescript, does not contain real data"
+                                                            },
+                                                            "title": "Список ссылок с данными по ним"
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "result"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                },
+                                                {
+                                                    "$ref": "Pagination.json#/components/schemas/Pagination"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
+                                        }
+                                    ]
+                                }
+                            },
+                            "model": {
+                                "schema": {
+                                    "$ref": "Models/Urls.json#/components/schemas/Models.Urls",
+                                    "description": "Only for typescript, does not contain real data"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/edit/audit_2/settings/": {
+            "post": {
+                "operationId": "EditAudit2Settings",
+                "tags": [
+                    "Audit_2"
+                ],
+                "summary": "Применение наастроек Анализа сайта",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Audit_2/Methods/Settings/Edit.json#/components/schemas/Audit_2.Methods.Settings.Edit"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "oneOf": [
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "type": "integer",
+                                                            "title": "Количество применных настроек"
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "result"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
+                                        }
+                                    ]
+                                }
+                            },
+                            "model": {
+                                "schema": {
+                                    "type": "null"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/get/audit_2/settings/": {
+            "post": {
+                "operationId": "GetAudit2Settings",
+                "tags": [
+                    "Audit_2"
+                ],
+                "summary": "Получение настроек аудита",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Audit_2/Methods/Settings/Get.json#/components/schemas/Audit_2.Methods.Settings.Get"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "oneOf": [
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "type": "array",
+                                                            "items": {
+                                                                "oneOf": [
+                                                                    {
+                                                                        "type": "string"
+                                                                    },
+                                                                    {
+                                                                        "type": "number"
+                                                                    }
+                                                                ]
+                                                            },
+                                                            "title": "Настройки аудита"
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "result"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
+                                        }
+                                    ]
+                                }
+                            },
+                            "model": {
+                                "schema": {
+                                    "type": "null"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/get/audit_2/watcher/": {
+            "post": {
+                "operationId": "GetAudit2Watcher",
+                "tags": [
+                    "Audit_2"
+                ],
+                "summary": "Получение результатов проверок радара",
+                "description": "Отчет генерируется на основе объектов urls\n\nНеобходимо указать либо check_id1 и check_id2, либо checks_ids (вместе указывать нельзя)",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Audit_2/Methods/Watcher/Get.json#/components/schemas/Audit_2.Methods.Watcher.Get"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "oneOf": [
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "type": "array",
+                                                            "items": {
+                                                                "oneOf": [
+                                                                    {
+                                                                        "type": "string"
+                                                                    },
+                                                                    {
+                                                                        "type": "number"
+                                                                    }
+                                                                ]
+                                                            },
+                                                            "title": "Генерируемый на основе urls, список результатов проверок радара"
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "result"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                },
+                                                {
+                                                    "$ref": "Pagination.json#/components/schemas/Pagination"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
+                                        }
+                                    ]
+                                }
+                            },
+                            "model": {
+                                "schema": {
+                                    "type": "null"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
         "/edit/comments_2/like/": {
             "post": {
                 "operationId": "EditComments2Like",
@@ -2031,6 +2359,1101 @@
                 }
             }
         },
+        "/get/audit_2/audit/browse/": {
+            "post": {
+                "operationId": "GetAudit2AuditBrowse",
+                "tags": [
+                    "Audit_2"
+                ],
+                "summary": "Получение обзора анализа сайта",
+                "deprecated": true,
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Audit_2/Methods/Audit/Browse/Get.json#/components/schemas/Audit_2.Methods.Audit.Browse.Get"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "oneOf": [
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "type": "array",
+                                                            "items": {
+                                                                "oneOf": [
+                                                                    {
+                                                                        "type": "string"
+                                                                    },
+                                                                    {
+                                                                        "type": "number"
+                                                                    }
+                                                                ]
+                                                            },
+                                                            "title": "Результаты обзора анализа сайта"
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "result"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
+                                        }
+                                    ]
+                                }
+                            },
+                            "model": {
+                                "schema": {
+                                    "type": "null"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/get/audit_2/audit/checks/": {
+            "post": {
+                "operationId": "GetAudit2AuditChecks",
+                "tags": [
+                    "Audit_2"
+                ],
+                "summary": "Получение общей информации о проверках\n- только для проверки, которая не завершена\n- в ответе будут заменены значения кодов ответа на текущие: count_000, count_1xx, count_2xx, count_3xx, count_4xx, count_5xx\n- в ответе будет заменено значение count_pages и count_all на текущие\n- в ответ будет добавлены значения robot_step и robot_count_tasks_allм",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Audit_2/Methods/Audit/Checks/Get.json#/components/schemas/Audit_2.Methods.Audit.Checks.Get"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "oneOf": [
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "title": "Список выполненных (выполняемых) проверок аудита"
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "result"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                },
+                                                {
+                                                    "$ref": "Pagination.json#/components/schemas/Pagination"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
+                                        }
+                                    ]
+                                }
+                            },
+                            "model": {
+                                "schema": {
+                                    "$ref": "Models/Audit/Checks.json#/components/schemas/Models.Audit.Checks",
+                                    "description": "Only for typescript, does not contain real data"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/get/audit_2/audit/css/": {
+            "post": {
+                "operationId": "GetAudit2AuditCss",
+                "tags": [
+                    "Audit_2"
+                ],
+                "summary": "Получение проверенных css",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Audit_2/Methods/Audit/Css/Get.json#/components/schemas/Audit_2.Methods.Audit.Css.Get"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "oneOf": [
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "type": "array",
+                                                            "items": {
+                                                                "$ref": "Models/Audit/Css.json#/components/schemas/Models.Audit.Css",
+                                                                "description": "Only for typescript, does not contain real data"
+                                                            },
+                                                            "title": "Список проверенных css"
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "result"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                },
+                                                {
+                                                    "$ref": "Pagination.json#/components/schemas/Pagination"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
+                                        }
+                                    ]
+                                }
+                            },
+                            "model": {
+                                "schema": {
+                                    "$ref": "Models/Audit/Css.json#/components/schemas/Models.Audit.Css",
+                                    "description": "Only for typescript, does not contain real data"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/get/audit_2/audit/export/": {
+            "post": {
+                "operationId": "GetAudit2AuditExport",
+                "tags": [
+                    "Audit_2"
+                ],
+                "summary": "Экспорт результатов проверки файла",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Audit_2/Methods/Audit/Export/Get.json#/components/schemas/Audit_2.Methods.Audit.Export.Get"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "Файл результатов проверки сайта",
+                        "content": {
+                            "application/octet-stream": {
+                                "schema": {
+                                    "type": "string",
+                                    "format": "binary"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/get/audit_2/audit/images/": {
+            "post": {
+                "operationId": "GetAudit2AuditImages",
+                "tags": [
+                    "Audit_2"
+                ],
+                "summary": "Получение проверенных изображений",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Audit_2/Methods/Audit/Images/Get.json#/components/schemas/Audit_2.Methods.Audit.Images.Get"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "oneOf": [
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "type": "array",
+                                                            "items": {
+                                                                "$ref": "Models/Audit/Images.json#/components/schemas/Models.Audit.Images",
+                                                                "description": "Only for typescript, does not contain real data"
+                                                            },
+                                                            "title": "Список проверенных изображений"
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "result"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                },
+                                                {
+                                                    "$ref": "Pagination.json#/components/schemas/Pagination"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
+                                        }
+                                    ]
+                                }
+                            },
+                            "model": {
+                                "schema": {
+                                    "$ref": "Models/Audit/Images.json#/components/schemas/Models.Audit.Images",
+                                    "description": "Only for typescript, does not contain real data"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/get/audit_2/audit/js/": {
+            "post": {
+                "operationId": "GetAudit2AuditJs",
+                "tags": [
+                    "Audit_2"
+                ],
+                "summary": "Получение проверенных js",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Audit_2/Methods/Audit/Js/Get.json#/components/schemas/Audit_2.Methods.Audit.Js.Get"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "oneOf": [
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "type": "array",
+                                                            "items": {
+                                                                "$ref": "Models/Audit/Js.json#/components/schemas/Models.Audit.Js",
+                                                                "description": "Only for typescript, does not contain real data"
+                                                            },
+                                                            "title": "Список проверенных js"
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "result"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                },
+                                                {
+                                                    "$ref": "Pagination.json#/components/schemas/Pagination"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
+                                        }
+                                    ]
+                                }
+                            },
+                            "model": {
+                                "schema": {
+                                    "$ref": "Models/Audit/Js.json#/components/schemas/Models.Audit.Js",
+                                    "description": "Only for typescript, does not contain real data"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/get/audit_2/audit/links/": {
+            "post": {
+                "operationId": "GetAudit2AuditLinks",
+                "tags": [
+                    "Audit_2"
+                ],
+                "summary": "Получение проверенных ссылок",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Audit_2/Methods/Audit/Links/Get.json#/components/schemas/Audit_2.Methods.Audit.Links.Get"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "oneOf": [
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "type": "array",
+                                                            "items": {
+                                                                "$ref": "Models/Audit/Links.json#/components/schemas/Models.Audit.Links",
+                                                                "description": "Only for typescript, does not contain real data"
+                                                            },
+                                                            "title": "Список проверенных ссылок"
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "result"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                },
+                                                {
+                                                    "$ref": "Pagination.json#/components/schemas/Pagination"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
+                                        }
+                                    ]
+                                }
+                            },
+                            "model": {
+                                "schema": {
+                                    "$ref": "Models/Audit/Links.json#/components/schemas/Models.Audit.Links",
+                                    "description": "Only for typescript, does not contain real data"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/get/audit_2/audit/log/": {
+            "post": {
+                "operationId": "GetAudit2AuditLog",
+                "tags": [
+                    "Audit_2"
+                ],
+                "summary": "Получение данных проверенных ресурсов",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Audit_2/Methods/Audit/Log/Get.json#/components/schemas/Audit_2.Methods.Audit.Log.Get"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "oneOf": [
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "type": "array",
+                                                            "items": {
+                                                                "oneOf": [
+                                                                    {
+                                                                        "type": "string"
+                                                                    },
+                                                                    {
+                                                                        "type": "number"
+                                                                    }
+                                                                ]
+                                                            },
+                                                            "title": "Данные проверенных ресурсов"
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "result"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                },
+                                                {
+                                                    "$ref": "Pagination.json#/components/schemas/Pagination"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
+                                        }
+                                    ]
+                                }
+                            },
+                            "model": {
+                                "schema": {
+                                    "type": "null"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/get/audit_2/audit/pages/": {
+            "post": {
+                "operationId": "GetAudit2AuditPages",
+                "tags": [
+                    "Audit_2"
+                ],
+                "summary": "Получение страниц, по которым был выполнен аудит",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Audit_2/Methods/Audit/Pages/Get.json#/components/schemas/Audit_2.Methods.Audit.Pages.Get"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "oneOf": [
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "type": "array",
+                                                            "items": {
+                                                                "$ref": "Models/Audit/Pages.json#/components/schemas/Models.Audit.Pages",
+                                                                "description": "Only for typescript, does not contain real data"
+                                                            },
+                                                            "title": "Список страниц"
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "result"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                },
+                                                {
+                                                    "$ref": "Pagination.json#/components/schemas/Pagination"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
+                                        }
+                                    ]
+                                }
+                            },
+                            "model": {
+                                "schema": {
+                                    "$ref": "Models/Audit/Pages.json#/components/schemas/Models.Audit.Pages",
+                                    "description": "Only for typescript, does not contain real data"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/get/audit_2/audit/summary/": {
+            "post": {
+                "operationId": "GetAudit2AuditSummary",
+                "tags": [
+                    "Audit_2"
+                ],
+                "summary": "Получение сводки о выполненном аудите",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Audit_2/Methods/Audit/Summary/Get.json#/components/schemas/Audit_2.Methods.Audit.Summary.Get"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "oneOf": [
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "type": "array",
+                                                            "items": {
+                                                                "$ref": "Models/Audit/Checks.json#/components/schemas/Models.Audit.Checks",
+                                                                "description": "Only for typescript, does not contain real data"
+                                                            },
+                                                            "title": "Возвращает объект со сводкой по категориям, пример:\n - `$res['all']['all']['count_checks_success']` - количество пройденных проверок во всех категориях\n - `$res['pages']['indexing']['count_checks_success']` - количество пройденных проверок в категории Страницы / Индексация\n - `$res['all']['all']['count_checks_success']` - количество пройденных проверок во всех категориях"
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "result"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                },
+                                                {
+                                                    "$ref": "Pagination.json#/components/schemas/Pagination"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
+                                        }
+                                    ]
+                                }
+                            },
+                            "model": {
+                                "schema": {
+                                    "$ref": "Models/Audit/Checks.json#/components/schemas/Models.Audit.Checks",
+                                    "description": "Only for typescript, does not contain real data"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/get/audit_2/audit/summarypage/": {
+            "post": {
+                "operationId": "GetAudit2AuditSummarypage",
+                "tags": [
+                    "Audit_2"
+                ],
+                "summary": "Получение сводки страницы",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Audit_2/Methods/Audit/SummaryPage/Get.json#/components/schemas/Audit_2.Methods.Audit.SummaryPage.Get"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "oneOf": [
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "type": "array",
+                                                            "items": {
+                                                                "$ref": "Models/Audit/Pages.json#/components/schemas/Models.Audit.Pages",
+                                                                "description": "Only for typescript, does not contain real data"
+                                                            },
+                                                            "title": "Сводка о выполненном аудите по одной странице"
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "result"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                },
+                                                {
+                                                    "$ref": "Pagination.json#/components/schemas/Pagination"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
+                                        }
+                                    ]
+                                }
+                            },
+                            "model": {
+                                "schema": {
+                                    "$ref": "Models/Audit/Pages.json#/components/schemas/Models.Audit.Pages",
+                                    "description": "Only for typescript, does not contain real data"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/get/audit_2/indexing/export/": {
+            "post": {
+                "operationId": "GetAudit2IndexingExport",
+                "tags": [
+                    "Audit_2"
+                ],
+                "summary": "Экспорт результатов индексации",
+                "description": "Необходимо указать либо date1 и date2, либо dates (вместе указывать нельзя)",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Audit_2/Methods/Indexing/Export/Get.json#/components/schemas/Audit_2.Methods.Indexing.Export.Get"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "oneOf": [
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "type": "string",
+                                                            "title": "Результаты индексации"
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "result"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
+                                        }
+                                    ]
+                                }
+                            },
+                            "model": {
+                                "schema": {
+                                    "type": "null"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/get/audit_2/indexing/links/": {
+            "post": {
+                "operationId": "GetAudit2IndexingLinks",
+                "tags": [
+                    "Audit_2"
+                ],
+                "summary": "Создание гостевой ссылки на просмотр позиций",
+                "description": "Необходимо указать либо date1 и date2, либо dates (вместе указывать нельзя)",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Audit_2/Methods/Indexing/Links/Get.json#/components/schemas/Audit_2.Methods.Indexing.Links.Get"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "oneOf": [
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "type": "string",
+                                                            "title": "Короткая гостевая ссылка на просмотр позиций"
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "result"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
+                                        }
+                                    ]
+                                }
+                            },
+                            "model": {
+                                "schema": {
+                                    "type": "null"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/get/audit_2/indexing/summary/": {
+            "post": {
+                "operationId": "GetAudit2IndexingSummary",
+                "tags": [
+                    "Audit_2"
+                ],
+                "summary": "Получение сводки индексации",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Audit_2/Methods/Indexing/Summary/Get.json#/components/schemas/Audit_2.Methods.Indexing.Summary.Get"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "oneOf": [
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "type": "array",
+                                                            "items": {
+                                                                "oneOf": [
+                                                                    {
+                                                                        "type": "string"
+                                                                    },
+                                                                    {
+                                                                        "type": "number"
+                                                                    }
+                                                                ]
+                                                            },
+                                                            "title": "Сводка индексации"
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "result"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
+                                        }
+                                    ]
+                                }
+                            },
+                            "model": {
+                                "schema": {
+                                    "type": "null"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/get/audit_2/watcher/byurl/": {
+            "post": {
+                "operationId": "GetAudit2WatcherByurl",
+                "tags": [
+                    "Audit_2"
+                ],
+                "summary": "Построить отчет по одному URL",
+                "description": "Отличия от get/audit_2/watcher:\n- отчет генерируется на основе объекта watcher_results, а не urls\n- параметры выбора периода отчета игнорируются\n- выбор прверок регулируется параметрами запроса filters, limit и offset",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Audit_2/Methods/Watcher/ByURL/Get.json#/components/schemas/Audit_2.Methods.Watcher.ByURL.Get"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "oneOf": [
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "title": "Отчет по одному URL"
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "result"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                },
+                                                {
+                                                    "$ref": "Pagination.json#/components/schemas/Pagination"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
+                                        }
+                                    ]
+                                }
+                            },
+                            "model": {
+                                "schema": {
+                                    "$ref": "Models/Watcher/Results.json#/components/schemas/Models.Watcher.Results",
+                                    "description": "Only for typescript, does not contain real data"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/get/audit_2/watcher/checks/": {
+            "post": {
+                "operationId": "GetAudit2WatcherChecks",
+                "tags": [
+                    "Audit_2"
+                ],
+                "summary": "Получение проверок радара",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Audit_2/Methods/Watcher/Checks/Get.json#/components/schemas/Audit_2.Methods.Watcher.Checks.Get"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "oneOf": [
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "type": "array",
+                                                            "items": {
+                                                                "oneOf": [
+                                                                    {
+                                                                        "type": "string"
+                                                                    },
+                                                                    {
+                                                                        "type": "number"
+                                                                    }
+                                                                ]
+                                                            },
+                                                            "title": "Список проверок радара"
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "result"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
+                                        }
+                                    ]
+                                }
+                            },
+                            "model": {
+                                "schema": {
+                                    "type": "null"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/get/audit_2/watcher/summary/": {
+            "post": {
+                "operationId": "GetAudit2WatcherSummary",
+                "tags": [
+                    "Audit_2"
+                ],
+                "summary": "Получение сводки радара",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Audit_2/Methods/Watcher/Summary/Get.json#/components/schemas/Audit_2.Methods.Watcher.Summary.Get"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "oneOf": [
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "type": "array",
+                                                            "items": {
+                                                                "oneOf": [
+                                                                    {
+                                                                        "type": "string"
+                                                                    },
+                                                                    {
+                                                                        "type": "number"
+                                                                    }
+                                                                ]
+                                                            },
+                                                            "title": "Сводка с количеством изменений по каждому типу проверки"
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "result"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
+                                        }
+                                    ]
+                                }
+                            },
+                            "model": {
+                                "schema": {
+                                    "type": "null"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
         "/edit/payments_2/tariff/delcard/": {
             "post": {
                 "operationId": "EditPayments2TariffDelcard",
@@ -2323,6 +3746,1160 @@
                     }
                 }
             }
+        },
+        "/edit/audit_2/audit/checker/go/": {
+            "post": {
+                "operationId": "EditAudit2AuditCheckerGo",
+                "tags": [
+                    "Audit_2"
+                ],
+                "summary": "Запуск проверки аудита",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Audit_2/Methods/Audit/Checker/Go/Edit.json#/components/schemas/Audit_2.Methods.Audit.Checker.Go.Edit"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "oneOf": [
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "type": "array",
+                                                            "items": {
+                                                                "$ref": "Models/Projects.json#/components/schemas/Models.Projects",
+                                                                "description": "Only for typescript, does not contain real data"
+                                                            },
+                                                            "title": "@return array{projectIds: int[]}\n\n@throws Exception"
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "result"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
+                                        }
+                                    ]
+                                }
+                            },
+                            "model": {
+                                "schema": {
+                                    "$ref": "Models/Projects.json#/components/schemas/Models.Projects",
+                                    "description": "Only for typescript, does not contain real data"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/get/audit_2/audit/checker/price/": {
+            "post": {
+                "operationId": "GetAudit2AuditCheckerPrice",
+                "tags": [
+                    "Audit_2"
+                ],
+                "summary": "Получение стоимости проверки аудита",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Audit_2/Methods/Audit/Checker/Price/Get.json#/components/schemas/Audit_2.Methods.Audit.Checker.Price.Get"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "oneOf": [
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "type": "array",
+                                                            "items": {
+                                                                "$ref": "Models/Projects.json#/components/schemas/Models.Projects",
+                                                                "description": "Only for typescript, does not contain real data"
+                                                            },
+                                                            "title": "@return array{pricesByUsers: array<int, array{projectsIds: int[], price: float}>}\n\n```\n{\n    \"pricesByUsers\": {\n            \"{{userId}}\": {\n                \"projectsIds\": [],\n                \"price\": float,\n                \"priceOriginal\": float\n            }\n    }\n }\n```\n\n@throws Exception"
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "result"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
+                                        }
+                                    ]
+                                }
+                            },
+                            "model": {
+                                "schema": {
+                                    "$ref": "Models/Projects.json#/components/schemas/Models.Projects",
+                                    "description": "Only for typescript, does not contain real data"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/get/audit_2/audit/export/links/": {
+            "post": {
+                "operationId": "GetAudit2AuditExportLinks",
+                "tags": [
+                    "Audit_2"
+                ],
+                "summary": "Получение гостевой ссылки на просмотр аудита позиций",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Audit_2/Methods/Audit/Export/Links/Get.json#/components/schemas/Audit_2.Methods.Audit.Export.Links.Get"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "oneOf": [
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "type": "string",
+                                                            "title": "Короткая гостевая ссылка на просмотр аудита позиций"
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "result"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
+                                        }
+                                    ]
+                                }
+                            },
+                            "model": {
+                                "schema": {
+                                    "type": "null"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/get/audit_2/audit/export/summary/": {
+            "post": {
+                "operationId": "GetAudit2AuditExportSummary",
+                "tags": [
+                    "Audit_2"
+                ],
+                "summary": "Экспорт отчета Анализа сайта",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Audit_2/Methods/Audit/Export/Summary/Get.json#/components/schemas/Audit_2.Methods.Audit.Export.Summary.Get"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "Файл отчета анализа сайта",
+                        "content": {
+                            "application/octet-stream": {
+                                "schema": {
+                                    "type": "string",
+                                    "format": "binary"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/get/audit_2/audit/log/actualerror/": {
+            "post": {
+                "operationId": "GetAudit2AuditLogActualerror",
+                "tags": [
+                    "Audit_2"
+                ],
+                "summary": "Получение информации о текущей ошибке на роботе",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Audit_2/Methods/Audit/Log/ActualError/Get.json#/components/schemas/Audit_2.Methods.Audit.Log.ActualError.Get"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "oneOf": [
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "$ref": "stdClass.json#/components/schemas/stdClass",
+                                                            "title": "Вернет null, если ошибки на роботе нет"
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "result"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
+                                        }
+                                    ]
+                                }
+                            },
+                            "model": {
+                                "schema": {
+                                    "type": "null"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/get/audit_2/audit/log/chart/": {
+            "post": {
+                "operationId": "GetAudit2AuditLogChart",
+                "tags": [
+                    "Audit_2"
+                ],
+                "summary": "Получение данных для графика",
+                "deprecated": true,
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Audit_2/Methods/Audit/Log/Chart/Get.json#/components/schemas/Audit_2.Methods.Audit.Log.Chart.Get"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "oneOf": [
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "type": "array",
+                                                            "items": {
+                                                                "oneOf": [
+                                                                    {
+                                                                        "type": "string"
+                                                                    },
+                                                                    {
+                                                                        "type": "number"
+                                                                    }
+                                                                ]
+                                                            },
+                                                            "title": "Данные для графика"
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "result"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                },
+                                                {
+                                                    "$ref": "Pagination.json#/components/schemas/Pagination"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
+                                        }
+                                    ]
+                                }
+                            },
+                            "model": {
+                                "schema": {
+                                    "type": "null"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/get/audit_2/audit/results/export/": {
+            "post": {
+                "operationId": "GetAudit2AuditResultsExport",
+                "tags": [
+                    "Audit_2"
+                ],
+                "summary": "Экспорт результатов аудита",
+                "deprecated": true,
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Audit_2/Methods/Audit/Results/Export/Get.json#/components/schemas/Audit_2.Methods.Audit.Results.Export.Get"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "oneOf": [
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "type": "boolean",
+                                                            "title": "Ответ об успешнности экспорта результатов аудита"
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "result"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
+                                        }
+                                    ]
+                                }
+                            },
+                            "model": {
+                                "schema": {
+                                    "type": "null"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/get/audit_2/audit/results/page/": {
+            "post": {
+                "operationId": "GetAudit2AuditResultsPage",
+                "tags": [
+                    "Audit_2"
+                ],
+                "summary": "Результаты анализа страницы",
+                "deprecated": true,
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Audit_2/Methods/Audit/Results/Page/Get.json#/components/schemas/Audit_2.Methods.Audit.Results.Page.Get"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "oneOf": [
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "type": "array",
+                                                            "items": {
+                                                                "oneOf": [
+                                                                    {
+                                                                        "type": "string"
+                                                                    },
+                                                                    {
+                                                                        "type": "number"
+                                                                    }
+                                                                ]
+                                                            },
+                                                            "title": "Результаты анализа страницы\n```\n{\n       \"result\": {\n           'page_in_filter': bool,\n           'index': => int,\n           'snippet': => string,\n           'content': => string\n       }\n}\n```"
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "result"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
+                                        }
+                                    ]
+                                }
+                            },
+                            "model": {
+                                "schema": {
+                                    "type": "null"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/edit/audit_2/indexing/checker/go/": {
+            "post": {
+                "operationId": "EditAudit2IndexingCheckerGo",
+                "tags": [
+                    "Audit_2"
+                ],
+                "summary": "Отправка проектов на проверку индексации",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Audit_2/Methods/Indexing/Checker/Go/Edit.json#/components/schemas/Audit_2.Methods.Indexing.Checker.Go.Edit"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "oneOf": [
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "type": "array",
+                                                            "items": {
+                                                                "$ref": "Models/Projects.json#/components/schemas/Models.Projects",
+                                                                "description": "Only for typescript, does not contain real data"
+                                                            },
+                                                            "title": "@return array{projectIds: int[]}\n\n@throws Exception"
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "result"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
+                                        }
+                                    ]
+                                }
+                            },
+                            "model": {
+                                "schema": {
+                                    "$ref": "Models/Projects.json#/components/schemas/Models.Projects",
+                                    "description": "Only for typescript, does not contain real data"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/get/audit_2/indexing/checker/price/": {
+            "post": {
+                "operationId": "GetAudit2IndexingCheckerPrice",
+                "tags": [
+                    "Audit_2"
+                ],
+                "summary": "Полуение стоимости проверки индексации",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Audit_2/Methods/Indexing/Checker/Price/Get.json#/components/schemas/Audit_2.Methods.Indexing.Checker.Price.Get"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "oneOf": [
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "type": "array",
+                                                            "items": {
+                                                                "$ref": "Models/Projects.json#/components/schemas/Models.Projects",
+                                                                "description": "Only for typescript, does not contain real data"
+                                                            },
+                                                            "title": "@return array{pricesByUsers: array<int, array{projectsIds: int[], price: float}>}\n\n```\n{\n   \"pricesByUsers\": {\n       \"{{userId}}\": {\n           \"projectsIds\": [],\n           \"price\": float\n       }\n   }\n}\n```\n\n@throws Exception"
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "result"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
+                                        }
+                                    ]
+                                }
+                            },
+                            "model": {
+                                "schema": {
+                                    "$ref": "Models/Projects.json#/components/schemas/Models.Projects",
+                                    "description": "Only for typescript, does not contain real data"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/get/audit_2/indexing/export/links/": {
+            "post": {
+                "operationId": "GetAudit2IndexingExportLinks",
+                "tags": [
+                    "Audit_2"
+                ],
+                "summary": "Получение гостевой ссылки на просмотр индексации",
+                "description": "Необходимо указать либо date1 и date2, либо dates (вместе указывать нельзя)",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Audit_2/Methods/Indexing/Export/Links/Get.json#/components/schemas/Audit_2.Methods.Indexing.Export.Links.Get"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "oneOf": [
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "type": "string",
+                                                            "title": "Короткая гостевая ссылка на просмотр индексации"
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "result"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
+                                        }
+                                    ]
+                                }
+                            },
+                            "model": {
+                                "schema": {
+                                    "type": "null"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/get/audit_2/indexing/export/torepository/": {
+            "post": {
+                "operationId": "GetAudit2IndexingExportTorepository",
+                "tags": [
+                    "Audit_2"
+                ],
+                "summary": "Экспорт файла в хранилище",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Audit_2/Methods/Indexing/Export/ToRepository/Get.json#/components/schemas/Audit_2.Methods.Indexing.Export.ToRepository.Get"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "Будет произведен редиркт на файл в хранилище",
+                        "content": {
+                            "application/octet-stream": {
+                                "schema": {
+                                    "type": "string",
+                                    "format": "binary"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/get/audit_2/indexing/summary/chart/": {
+            "post": {
+                "operationId": "GetAudit2IndexingSummaryChart",
+                "tags": [
+                    "Audit_2"
+                ],
+                "summary": "Получение сводок индексации для графика",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Audit_2/Methods/Indexing/Summary/Chart/Get.json#/components/schemas/Audit_2.Methods.Indexing.Summary.Chart.Get"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "oneOf": [
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "type": "array",
+                                                            "items": {
+                                                                "oneOf": [
+                                                                    {
+                                                                        "type": "string"
+                                                                    },
+                                                                    {
+                                                                        "type": "number"
+                                                                    }
+                                                                ]
+                                                            },
+                                                            "title": "Сводки индексации"
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "result"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
+                                        }
+                                    ]
+                                }
+                            },
+                            "model": {
+                                "schema": {
+                                    "type": "null"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/edit/audit_2/sitemap/checker/go/": {
+            "post": {
+                "operationId": "EditAudit2SitemapCheckerGo",
+                "tags": [
+                    "Audit_2"
+                ],
+                "summary": "Отправка проектов на проверку карты сайта",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Audit_2/Methods/Sitemap/Checker/Go/Edit.json#/components/schemas/Audit_2.Methods.Sitemap.Checker.Go.Edit"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "oneOf": [
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "type": "array",
+                                                            "items": {
+                                                                "$ref": "Models/Projects.json#/components/schemas/Models.Projects",
+                                                                "description": "Only for typescript, does not contain real data"
+                                                            },
+                                                            "title": "@return array{projectIds: int[]}\n\n@throws Exception"
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "result"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
+                                        }
+                                    ]
+                                }
+                            },
+                            "model": {
+                                "schema": {
+                                    "$ref": "Models/Projects.json#/components/schemas/Models.Projects",
+                                    "description": "Only for typescript, does not contain real data"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/get/audit_2/sitemap/checker/price/": {
+            "post": {
+                "operationId": "GetAudit2SitemapCheckerPrice",
+                "tags": [
+                    "Audit_2"
+                ],
+                "summary": "Полуение стоимости проверки карты сайта",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Audit_2/Methods/Sitemap/Checker/Price/Get.json#/components/schemas/Audit_2.Methods.Sitemap.Checker.Price.Get"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "oneOf": [
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "type": "array",
+                                                            "items": {
+                                                                "$ref": "Models/Projects.json#/components/schemas/Models.Projects",
+                                                                "description": "Only for typescript, does not contain real data"
+                                                            },
+                                                            "title": "@return array{pricesByUsers: array<int, array{projectsIds: int[], price: float}>}\n\n```\n{\n   \"pricesByUsers\": {\n       \"{{userId}}\": {\n           \"projectsIds\": [],\n           \"price\": float\n       }\n   }\n}\n```\n\n@throws Exception"
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "result"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
+                                        }
+                                    ]
+                                }
+                            },
+                            "model": {
+                                "schema": {
+                                    "$ref": "Models/Projects.json#/components/schemas/Models.Projects",
+                                    "description": "Only for typescript, does not contain real data"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/edit/audit_2/watcher/checker/go/": {
+            "post": {
+                "operationId": "EditAudit2WatcherCheckerGo",
+                "tags": [
+                    "Audit_2"
+                ],
+                "summary": "Отправка проектов на проверку радара",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Audit_2/Methods/Watcher/Checker/Go/Edit.json#/components/schemas/Audit_2.Methods.Watcher.Checker.Go.Edit"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "oneOf": [
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "type": "array",
+                                                            "items": {
+                                                                "$ref": "Models/Projects.json#/components/schemas/Models.Projects",
+                                                                "description": "Only for typescript, does not contain real data"
+                                                            },
+                                                            "title": "@return array{projectIds: int[]}\n\n@throws Exception"
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "result"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
+                                        }
+                                    ]
+                                }
+                            },
+                            "model": {
+                                "schema": {
+                                    "$ref": "Models/Projects.json#/components/schemas/Models.Projects",
+                                    "description": "Only for typescript, does not contain real data"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/get/audit_2/watcher/checker/price/": {
+            "post": {
+                "operationId": "GetAudit2WatcherCheckerPrice",
+                "tags": [
+                    "Audit_2"
+                ],
+                "summary": "Полуение стоимости проверки радара",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Audit_2/Methods/Watcher/Checker/Price/Get.json#/components/schemas/Audit_2.Methods.Watcher.Checker.Price.Get"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "oneOf": [
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "type": "array",
+                                                            "items": {
+                                                                "$ref": "Models/Projects.json#/components/schemas/Models.Projects",
+                                                                "description": "Only for typescript, does not contain real data"
+                                                            },
+                                                            "title": "@return array{pricesByUsers: array<int, array{projectsIds: int[], price: float}>}\n\n```\n{\n   \"pricesByUsers\": {\n       \"{{userId}}\": {\n           \"projectsIds\": [],\n           \"price\": float\n       }\n   }\n}\n```\n\n@throws Exception"
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "result"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
+                                        }
+                                    ]
+                                }
+                            },
+                            "model": {
+                                "schema": {
+                                    "$ref": "Models/Projects.json#/components/schemas/Models.Projects",
+                                    "description": "Only for typescript, does not contain real data"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/get/audit_2/watcher/export/links/": {
+            "post": {
+                "operationId": "GetAudit2WatcherExportLinks",
+                "tags": [
+                    "Audit_2"
+                ],
+                "summary": "Создание гостевой ссылки на просмотр радара",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Audit_2/Methods/Watcher/Export/Links/Get.json#/components/schemas/Audit_2.Methods.Watcher.Export.Links.Get"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "oneOf": [
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "type": "string",
+                                                            "title": "Короткая ссылка гостевого доступа для просмотра радара"
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "result"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
+                                        }
+                                    ]
+                                }
+                            },
+                            "model": {
+                                "schema": {
+                                    "type": "null"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/get/audit_2/watcher/summary/chart/": {
+            "post": {
+                "operationId": "GetAudit2WatcherSummaryChart",
+                "tags": [
+                    "Audit_2"
+                ],
+                "summary": "Получение сводок радара для графика",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Audit_2/Methods/Watcher/Summary/Chart/Get.json#/components/schemas/Audit_2.Methods.Watcher.Summary.Chart.Get"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "oneOf": [
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "type": "array",
+                                                            "items": {
+                                                                "oneOf": [
+                                                                    {
+                                                                        "type": "string"
+                                                                    },
+                                                                    {
+                                                                        "type": "number"
+                                                                    }
+                                                                ]
+                                                            },
+                                                            "title": "Сводки с количеством изменений по каждому типу проверки"
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "result"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
+                                        }
+                                    ]
+                                }
+                            },
+                            "model": {
+                                "schema": {
+                                    "type": "null"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
         }
     },
     "components": {
@@ -2407,6 +4984,10 @@
         {
             "name": "Example_2",
             "description": "example_2"
+        },
+        {
+            "name": "Export_2",
+            "description": "export_2"
         },
         {
             "name": "Fa2_2",

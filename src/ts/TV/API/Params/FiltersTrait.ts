@@ -13,10 +13,11 @@ export interface components {
              * @description {name: string, operator: Field::AVAILABLE_OPERATORS, values: array}
              *
              *     Использует поля модели
+             *
              *     @see AbstractMethod::MODEL
              *     @see Field::AVAILABLE_OPERATORS
              */
-            filters?: (string | number)[] | null;
+            filters: (string | number)[];
             /**
              * Id объекта, для фильтрации объектов по id
              * @description Только для моделей с полем id
@@ -31,6 +32,7 @@ export interface components {
          *     {name: string, operator: Field::AVAILABLE_OPERATORS, values: array}
          *
          *     Использует поля модели
+         *
          *     @see AbstractMethod::MODEL
          *     @see Field::AVAILABLE_OPERATORS */
         filters: (string | number)[];

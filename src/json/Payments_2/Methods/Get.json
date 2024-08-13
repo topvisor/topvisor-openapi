@@ -37,7 +37,10 @@
                     }
                 },
                 "required": [
-                    "include_is_domains_services_provided"
+                    "include_is_domains_services_provided",
+                    "orders",
+                    "filters",
+                    "offset"
                 ],
                 "title": "Получить список платежей"
             }

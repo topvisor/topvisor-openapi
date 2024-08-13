@@ -32,7 +32,11 @@
                         "$ref": "../../../../TV/API/Params/FetchStyleTrait.json#/components/schemas/TV.API.Params.FetchStyleTrait/properties/fetch_style"
                     }
                 },
-                "required": [],
+                "required": [
+                    "orders",
+                    "filters",
+                    "offset"
+                ],
                 "title": "Получить промокоды",
                 "description": "В params хранится строка в формате:\n- {{ rank_id }}\n- {{ rank_id }},single_code - для многоразового кода"
             }

@@ -13,6 +13,7 @@ export interface components {
              * @description Если запрос поддерижвает параметр fetch_style, формат ответа может быть разным, fields будет влиять на содержание данных в этом ответе
              *
              *     Использует поля модели
+             *
              *     @see AbstractMethod::MODEL
              */
             fields?: (string | number)[] | null;
@@ -25,6 +26,7 @@ export interface components {
          *     Если запрос поддерижвает параметр fetch_style, формат ответа может быть разным, fields будет влиять на содержание данных в этом ответе
          *
          *     Использует поля модели
+         *
          *     @see AbstractMethod::MODEL */
         fields: (string | number)[];
     };

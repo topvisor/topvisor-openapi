@@ -1,0 +1,22 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Audit_2.Types.Indexing.SearcherKey",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Audit_2.Types.Indexing.SearcherKey": {
+                "type": "string",
+                "enum": [
+                    "0",
+                    "1",
+                    "5",
+                    "6"
+                ],
+                "title": "Id поисковой системы для индексации"
+            }
+        }
+    }
+}

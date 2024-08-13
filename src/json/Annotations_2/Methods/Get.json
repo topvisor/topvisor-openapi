@@ -46,7 +46,10 @@
                 },
                 "required": [
                     "project_id",
-                    "service"
+                    "service",
+                    "orders",
+                    "filters",
+                    "offset"
                 ],
                 "title": "Получение примечаний"
             }

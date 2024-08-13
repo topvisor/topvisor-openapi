@@ -1,0 +1,60 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Audit_2.Methods.Audit.Log.Chart.Get",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Audit_2.Methods.Audit.Log.Chart.Get": {
+                "type": "object",
+                "properties": {
+                    "time1": {
+                        "title": "Фильтр по периоду",
+                        "nullable": true,
+                        "allOf": [
+                            {
+                                "$ref": "../../../../../DateTime.json#/components/schemas/DateTime"
+                            }
+                        ]
+                    },
+                    "time2": {
+                        "title": "Фильтр по периоду",
+                        "nullable": true,
+                        "allOf": [
+                            {
+                                "$ref": "../../../../../DateTime.json#/components/schemas/DateTime"
+                            }
+                        ]
+                    },
+                    "page": {
+                        "title": "Номер страницы (для использования в SQL)",
+                        "default": 1,
+                        "type": "integer"
+                    },
+                    "limit": {
+                        "$ref": "../../../../../TV/API/Params/LimitTrait.json#/components/schemas/TV.API.Params.LimitTrait/properties/limit"
+                    },
+                    "offset": {
+                        "$ref": "../../../../../TV/API/Params/OffsetTrait.json#/components/schemas/TV.API.Params.OffsetTrait/properties/offset"
+                    },
+                    "project_id": {
+                        "$ref": "../../../../../TV/API/Params/ProjectIdTrait.json#/components/schemas/TV.API.Params.ProjectIdTrait/properties/project_id"
+                    },
+                    "check_id": {
+                        "$ref": "../../../../../Audit_2/Params/Audit/CheckIdTrait.json#/components/schemas/Audit_2.Params.Audit.CheckIdTrait/properties/check_id"
+                    }
+                },
+                "required": [
+                    "page",
+                    "offset",
+                    "project_id",
+                    "check_id"
+                ],
+                "title": "Получение данных для графика",
+                "deprecated": true
+            }
+        }
+    }
+}
