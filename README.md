@@ -68,4 +68,4 @@ Online-поддержка пользователей Топвизор: https://t
 
 Ввведение в Open API: https://habr.com/ru/articles/776538/  
 Примеры описания простого проекта на Open API: https://editor.swagger.io/  
-Официальная докуменатия Open API: https://learn.openapis.org/
+Официальная документация Open API: https://learn.openapis.org/
