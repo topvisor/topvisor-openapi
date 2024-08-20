@@ -16,8 +16,8 @@ export interface components {
             code: number;
             /** Описание ошибки */
             string: string;
-            /** Дополнительная информация об ошибке */
-            detail: string;
+            /** Объект с дополнительной информацией */
+            detail: import('./stdClass.ts').components['schemas']['stdClass'];
         };
     };
     responses: never;

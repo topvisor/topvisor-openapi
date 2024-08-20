@@ -1,0 +1,31 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Cron_2.Methods.Del",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Cron_2.Methods.Del": {
+                "type": "object",
+                "properties": {
+                    "filters": {
+                        "$ref": "../../TV/API/Params/FiltersTrait.json#/components/schemas/TV.API.Params.FiltersTrait/properties/filters"
+                    },
+                    "id": {
+                        "$ref": "../../TV/API/Params/FiltersTrait.json#/components/schemas/TV.API.Params.FiltersTrait/properties/id"
+                    },
+                    "command": {
+                        "$ref": "../../Cron_2/Params/CommandTrait.json#/components/schemas/Cron_2.Params.CommandTrait/properties/command"
+                    }
+                },
+                "required": [
+                    "filters",
+                    "command"
+                ],
+                "title": "Удаление задачи cron"
+            }
+        }
+    }
+}

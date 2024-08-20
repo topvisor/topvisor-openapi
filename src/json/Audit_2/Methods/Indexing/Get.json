@@ -139,6 +139,7 @@
                     "periodDays",
                     "type_range",
                     "count_dates",
+                    "fields",
                     "orders",
                     "filters",
                     "offset",

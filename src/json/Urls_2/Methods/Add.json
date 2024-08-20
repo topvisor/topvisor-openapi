@@ -1,0 +1,77 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Urls_2.Methods.Add",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Urls_2.Methods.Add": {
+                "type": "object",
+                "properties": {
+                    "url": {
+                        "title": "URL соответствующий домену проекта",
+                        "allOf": [
+                            {
+                                "$ref": "../../TV/API/Types/Url.json#/components/schemas/TV.API.Types.Url"
+                            }
+                        ]
+                    },
+                    "sitemap": {
+                        "title": "Флаг активности в карте сайта\n- 1 - присутствовал в прошлых версиях карты сайта",
+                        "nullable": true,
+                        "allOf": [
+                            {
+                                "$ref": "../../Urls_2/Types/Flag.json#/components/schemas/Urls_2.Types.Flag"
+                            }
+                        ]
+                    },
+                    "audit": {
+                        "title": "Флаг активности в аудите",
+                        "nullable": true,
+                        "allOf": [
+                            {
+                                "$ref": "../../Urls_2/Types/Flag.json#/components/schemas/Urls_2.Types.Flag"
+                            }
+                        ]
+                    },
+                    "indexing": {
+                        "title": "Флаг активности в радаре",
+                        "nullable": true,
+                        "allOf": [
+                            {
+                                "$ref": "../../Urls_2/Types/Flag.json#/components/schemas/Urls_2.Types.Flag"
+                            }
+                        ]
+                    },
+                    "watcher": {
+                        "title": "Флаг активности в индексации",
+                        "nullable": true,
+                        "allOf": [
+                            {
+                                "$ref": "../../Urls_2/Types/Flag.json#/components/schemas/Urls_2.Types.Flag"
+                            }
+                        ]
+                    },
+                    "tags": {
+                        "nullable": true,
+                        "allOf": [
+                            {
+                                "$ref": "../../Urls_2/Types/Tags.json#/components/schemas/Urls_2.Types.Tags"
+                            }
+                        ]
+                    },
+                    "project_id": {
+                        "$ref": "../../TV/API/Params/ProjectIdTrait.json#/components/schemas/TV.API.Params.ProjectIdTrait/properties/project_id"
+                    }
+                },
+                "required": [
+                    "url",
+                    "project_id"
+                ],
+                "title": "Добавление url"
+            }
+        }
+    }
+}

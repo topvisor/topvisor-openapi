@@ -41,6 +41,7 @@
                 },
                 "required": [
                     "show_raw_data",
+                    "fields",
                     "orders",
                     "filters",
                     "offset",

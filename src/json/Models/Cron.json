@@ -1,0 +1,50 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Models.Cron",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Models.Cron": {
+                "properties": {
+                    "command": {
+                        "type": "string",
+                        "nullable": true
+                    },
+                    "description": {
+                        "type": "string",
+                        "nullable": true
+                    },
+                    "days": {
+                        "type": "string",
+                        "nullable": true
+                    },
+                    "hh": {
+                        "type": "string",
+                        "nullable": true
+                    },
+                    "i": {
+                        "type": "string",
+                        "nullable": true
+                    },
+                    "on": {
+                        "type": "integer",
+                        "nullable": true
+                    },
+                    "task_create_time": {
+                        "nullable": true
+                    },
+                    "task_start_time": {
+                        "nullable": true
+                    },
+                    "task_status": {
+                        "type": "string",
+                        "nullable": true
+                    }
+                }
+            }
+        }
+    }
+}

@@ -62,6 +62,7 @@
                 },
                 "required": [
                     "filter_check_type",
+                    "fields",
                     "orders",
                     "filters",
                     "offset",

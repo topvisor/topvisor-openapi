@@ -111,7 +111,8 @@
                     "periodDays",
                     "type_range",
                     "count_dates",
-                    "project_id"
+                    "project_id",
+                    "fields"
                 ],
                 "title": "Экспорт результатов индексации",
                 "description": "Необходимо указать либо date1 и date2, либо dates (вместе указывать нельзя)"

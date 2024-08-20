@@ -119,6 +119,7 @@
                     "show_diff",
                     "show_counts_watcher",
                     "project_id",
+                    "fields",
                     "filters",
                     "orders",
                     "offset"

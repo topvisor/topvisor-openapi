@@ -20,8 +20,12 @@
                         "type": "string"
                     },
                     "detail": {
-                        "title": "Дополнительная информация об ошибке",
-                        "type": "string"
+                        "title": "Объект с дополнительной информацией",
+                        "allOf": [
+                            {
+                                "$ref": "stdClass.json#/components/schemas/stdClass"
+                            }
+                        ]
                     }
                 },
                 "required": [

@@ -1,0 +1,113 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Urls_2.Methods.Import.Add",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Urls_2.Methods.Import.Add": {
+                "type": "object",
+                "properties": {
+                    "urls": {
+                        "title": "Список URL соответствующих домену проекта, допускается формат CSV",
+                        "description": "Можно передать в виде файла с именем urls, допускаются форматы CSV и XML (допустимы сжатые XML в .gz)\n\nНельзя передавать одновременно в виде массива и в виде файла или использовать совместно с link_sitemap_xml",
+                        "nullable": true,
+                        "allOf": [
+                            {
+                                "$ref": "../../../TV/API/Types/UrlArray.json#/components/schemas/TV.API.Types.UrlArray"
+                            }
+                        ]
+                    },
+                    "link_sitemap_xml": {
+                        "title": "Файл с содержимым для импорта, допускается формат XML (допустимы сжатые XML в .gz)",
+                        "nullable": true,
+                        "allOf": [
+                            {
+                                "$ref": "../../../TV/API/Types/Url.json#/components/schemas/TV.API.Types.Url"
+                            }
+                        ]
+                    },
+                    "tags": {
+                        "nullable": true,
+                        "allOf": [
+                            {
+                                "$ref": "../../../Urls_2/Types/Tags.json#/components/schemas/Urls_2.Types.Tags"
+                            }
+                        ]
+                    },
+                    "reset": {
+                        "title": "Очистить список URL перед импортом",
+                        "type": "boolean"
+                    },
+                    "setActiveByRegexpByType": {
+                        "title": "Недокументириуемый параметр",
+                        "description": "set(Audit_2\\Types\\Type => regexp)",
+                        "type": "array",
+                        "items": {
+                            "oneOf": [
+                                {
+                                    "type": "string"
+                                },
+                                {
+                                    "type": "number"
+                                }
+                            ]
+                        }
+                    },
+                    "sitemap": {
+                        "title": "Флаг активности в карте сайта\n- 1 - присутствовал в прошлых версиях карты сайта",
+                        "nullable": true,
+                        "allOf": [
+                            {
+                                "$ref": "../../../Urls_2/Types/Flag.json#/components/schemas/Urls_2.Types.Flag"
+                            }
+                        ]
+                    },
+                    "audit": {
+                        "title": "Флаг активности в аудите",
+                        "nullable": true,
+                        "allOf": [
+                            {
+                                "$ref": "../../../Urls_2/Types/Flag.json#/components/schemas/Urls_2.Types.Flag"
+                            }
+                        ]
+                    },
+                    "indexing": {
+                        "title": "Флаг активности в радаре",
+                        "nullable": true,
+                        "allOf": [
+                            {
+                                "$ref": "../../../Urls_2/Types/Flag.json#/components/schemas/Urls_2.Types.Flag"
+                            }
+                        ]
+                    },
+                    "watcher": {
+                        "title": "Флаг активности в индексации",
+                        "nullable": true,
+                        "allOf": [
+                            {
+                                "$ref": "../../../Urls_2/Types/Flag.json#/components/schemas/Urls_2.Types.Flag"
+                            }
+                        ]
+                    },
+                    "debug": {
+                        "nullable": true,
+                        "type": "boolean"
+                    },
+                    "project_id": {
+                        "$ref": "../../../TV/API/Params/ProjectIdTrait.json#/components/schemas/TV.API.Params.ProjectIdTrait/properties/project_id"
+                    }
+                },
+                "required": [
+                    "reset",
+                    "setActiveByRegexpByType",
+                    "project_id"
+                ],
+                "title": "Импортирование urls",
+                "description": "Доступные поля для импорта:\n- url\n- sitemap\n- audit\n- indexing\n- watcher\n- tags"
+            }
+        }
+    }
+}

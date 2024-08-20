@@ -1,0 +1,47 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Urls_2.Methods.Tags.Edit",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Urls_2.Methods.Tags.Edit": {
+                "type": "object",
+                "properties": {
+                    "tags": {
+                        "allOf": [
+                            {
+                                "$ref": "../../../Urls_2/Types/Tags.json#/components/schemas/Urls_2.Types.Tags"
+                            }
+                        ]
+                    },
+                    "action": {
+                        "allOf": [
+                            {
+                                "$ref": "../../../Urls_2/Types/Tags/Action.json#/components/schemas/Urls_2.Types.Tags.Action"
+                            }
+                        ]
+                    },
+                    "filters": {
+                        "$ref": "../../../TV/API/Params/FiltersTrait.json#/components/schemas/TV.API.Params.FiltersTrait/properties/filters"
+                    },
+                    "id": {
+                        "$ref": "../../../TV/API/Params/FiltersTrait.json#/components/schemas/TV.API.Params.FiltersTrait/properties/id"
+                    },
+                    "project_id": {
+                        "$ref": "../../../TV/API/Params/ProjectIdTrait.json#/components/schemas/TV.API.Params.ProjectIdTrait/properties/project_id"
+                    }
+                },
+                "required": [
+                    "tags",
+                    "action",
+                    "filters",
+                    "project_id"
+                ],
+                "title": "Изменение тегов"
+            }
+        }
+    }
+}

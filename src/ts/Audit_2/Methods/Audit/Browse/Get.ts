@@ -8,7 +8,7 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         /**
-         * Получение обзора анализа сайта
+         * Получение сводки анализа сайта
          * @deprecated
          */
         "Audit_2.Methods.Audit.Browse.Get": {

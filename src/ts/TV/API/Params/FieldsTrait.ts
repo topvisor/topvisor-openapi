@@ -16,7 +16,7 @@ export interface components {
              *
              *     @see AbstractMethod::MODEL
              */
-            fields?: (string | number)[] | null;
+            fields: (string | number)[];
         };
     };
     responses: never;

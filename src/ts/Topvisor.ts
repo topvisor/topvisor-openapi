@@ -185,6 +185,74 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
+    /** Добавление задачи cron */
+    "/add/cron_2/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["AddCron2"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Удаление задачи cron */
+    "/del/cron_2/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["DelCron2"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Изменение задачи cron */
+    "/edit/cron_2/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["EditCron2"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Получение задач cron */
+    "/get/cron_2/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["GetCron2"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
     /**
      * Создать платежку и перейти к оплате
      * @description Возвратит id платежа, если указан параметр $return_id = true
@@ -242,6 +310,57 @@ export interface paths {
         get?: never;
         put?: never;
         post: operations["GetQr2"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Добавление url */
+    "/add/urls_2/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["AddUrls2"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Изменение urls */
+    "/edit/urls_2/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["EditUrls2"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Получение списка urls проекта */
+    "/get/urls_2/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["GetUrls2"];
         delete?: never;
         options?: never;
         head?: never;
@@ -627,6 +746,66 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
+    /** Экспорт urls в определенном формате */
+    "/get/urls_2/export/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["GetUrls2Export"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /**
+     * Импортирование urls
+     * @description Доступные поля для импорта:
+     *     - url
+     *     - sitemap
+     *     - audit
+     *     - indexing
+     *     - watcher
+     *     - tags
+     */
+    "/add/urls_2/import/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["AddUrls2Import"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Изменение тегов */
+    "/edit/urls_2/tags/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["EditUrls2Tags"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
     /** Добавить промокоды к достижению */
     "/add/admin_2/users/promocodes/": {
         parameters: {
@@ -718,7 +897,7 @@ export interface paths {
         trace?: never;
     };  
     /**
-     * Получение обзора анализа сайта
+     * Получение сводки анализа сайта
      * @deprecated
      */
     "/get/audit_2/audit/browse/": {
@@ -1070,6 +1249,23 @@ export interface paths {
         get?: never;
         put?: never;
         post: operations["EditPayments2TariffSetNext"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Получение URL к карте сайта по файлу robots.txt для указанного домена */
+    "/get/urls_2/import/recognizeLinkSitemapXml/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["GetUrls2ImportRecognizeLinkSitemapXml"];
         delete?: never;
         options?: never;
         head?: never;
@@ -1718,6 +1914,111 @@ export interface operations {
             };
         };
     };
+    AddCron2: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Cron_2/Methods/Add.ts').components['schemas']['Cron_2.Methods.Add'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: number;
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: import('./Models/Cron.ts').components['schemas']['Models.Cron'];
+                };
+            };
+        };
+    };
+    DelCron2: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Cron_2/Methods/Del.ts').components['schemas']['Cron_2.Methods.Del'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: number;
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: import('./Models/Cron.ts').components['schemas']['Models.Cron'];
+                };
+            };
+        };
+    };
+    EditCron2: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Cron_2/Methods/Edit.ts').components['schemas']['Cron_2.Methods.Edit'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: number;
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: import('./Models/Cron.ts').components['schemas']['Models.Cron'];
+                };
+            };
+        };
+    };
+    GetCron2: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Cron_2/Methods/Get.ts').components['schemas']['Cron_2.Methods.Get'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        /** Список задач cron */
+                        result: import('./Models/Cron.ts').components['schemas']['Models.Cron'][];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: import('./Models/Cron.ts').components['schemas']['Models.Cron'];
+                };
+            };
+        };
+    };
     AddPayments2: {
         parameters: {
             query?: never;
@@ -1792,6 +2093,85 @@ export interface operations {
                         result: string;
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
+                };
+            };
+        };
+    };
+    AddUrls2: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Urls_2/Methods/Add.ts').components['schemas']['Urls_2.Methods.Add'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: number;
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: import('./Models/Urls.ts').components['schemas']['Models.Urls'];
+                };
+            };
+        };
+    };
+    EditUrls2: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Urls_2/Methods/Edit.ts').components['schemas']['Urls_2.Methods.Edit'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: number;
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: import('./Models/Urls.ts').components['schemas']['Models.Urls'];
+                };
+            };
+        };
+    };
+    GetUrls2: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Urls_2/Methods/Get.ts').components['schemas']['Urls_2.Methods.Get'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        /** Список urls проекта */
+                        result: unknown;
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: import('./Models/Urls.ts').components['schemas']['Models.Urls'];
                 };
             };
         };
@@ -2346,6 +2726,84 @@ export interface operations {
             };
         };
     };
+    GetUrls2Export: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Urls_2/Methods/Export/Get.ts').components['schemas']['Urls_2.Methods.Export.Get'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/octet-stream": string;
+                };
+            };
+        };
+    };
+    AddUrls2Import: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Urls_2/Methods/Import/Add.ts').components['schemas']['Urls_2.Methods.Import.Add'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        /** @return ?array{countSended: int, countDuplicated: int, countAdded: int, countChanged: int}
+                         *
+                         *     @throws Exception */
+                        result: (string | number)[];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: null;
+                };
+            };
+        };
+    };
+    EditUrls2Tags: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Urls_2/Methods/Tags/Edit.ts').components['schemas']['Urls_2.Methods.Tags.Edit'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: number;
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: import('./Models/Urls.ts').components['schemas']['Models.Urls'];
+                };
+            };
+        };
+    };
     AddAdmin2UsersPromocodes: {
         parameters: {
             query?: never;
@@ -2496,7 +2954,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        /** Результаты обзора анализа сайта */
+                        /** Сводка анализа сайта */
                         result: (string | number)[];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
@@ -3008,6 +3466,33 @@ export interface operations {
                 content: {
                     "application/json": ({
                         result: number;
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: null;
+                };
+            };
+        };
+    };
+    GetUrls2ImportRecognizeLinkSitemapXml: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Urls_2/Methods/Import/RecognizeLinkSitemapXml/Get.ts').components['schemas']['Urls_2.Methods.Import.RecognizeLinkSitemapXml.Get'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        /** URL к карте сайта */
+                        result: string;
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };

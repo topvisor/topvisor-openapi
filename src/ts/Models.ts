@@ -12,6 +12,7 @@ export interface components {
         "Models.Comments": import('./Models/Comments.ts').components['schemas']['Models.Comments'];
         "Models.ContentsRedirects": import('./Models/ContentsRedirects.ts').components['schemas']['Models.ContentsRedirects'];
         "Models.CronCommands": import('./Models/CronCommands.ts').components['schemas']['Models.CronCommands'];
+        "Models.Cron": import('./Models/Cron.ts').components['schemas']['Models.Cron'];
         "Models.EmptyModel": import('./Models/EmptyModel.ts').components['schemas']['Models.EmptyModel'];
         "Models.Folders": import('./Models/Folders.ts').components['schemas']['Models.Folders'];
         "Models.Groups": import('./Models/Groups.ts').components['schemas']['Models.Groups'];

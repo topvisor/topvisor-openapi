@@ -31,6 +31,8 @@ tags:
     description: content_2
   - name: Controller_2
     description: controller_2
+  - name: Cron_2
+    description: cron_2
   - name: Eastereggs_2
     description: eastereggs_2
   - name: Example_2
@@ -423,6 +425,139 @@ paths:
             model:
               schema:
                 type: 'null'
+  /add/cron_2/:
+    post:
+      operationId: AddCron2
+      tags:
+        - Cron_2
+      summary: Добавление задачи cron
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Cron_2.Methods.Add'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            type: integer
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                $ref: '#/components/schemas/Models.Cron'
+                description: Only for typescript, does not contain real data
+  /del/cron_2/:
+    post:
+      operationId: DelCron2
+      tags:
+        - Cron_2
+      summary: Удаление задачи cron
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Cron_2.Methods.Del'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            type: integer
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                $ref: '#/components/schemas/Models.Cron'
+                description: Only for typescript, does not contain real data
+  /edit/cron_2/:
+    post:
+      operationId: EditCron2
+      tags:
+        - Cron_2
+      summary: Изменение задачи cron
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Cron_2.Methods.Edit'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            type: integer
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                $ref: '#/components/schemas/Models.Cron'
+                description: Only for typescript, does not contain real data
+  /get/cron_2/:
+    post:
+      operationId: GetCron2
+      tags:
+        - Cron_2
+      summary: Получение задач cron
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Cron_2.Methods.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            type: array
+                            items:
+                              $ref: '#/components/schemas/Models.Cron'
+                              description: Only for typescript, does not contain real data
+                            title: Список задач cron
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                      - $ref: '#/components/schemas/Pagination'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                $ref: '#/components/schemas/Models.Cron'
+                description: Only for typescript, does not contain real data
   /add/payments_2/:
     post:
       operationId: AddPayments2
@@ -525,6 +660,103 @@ paths:
             model:
               schema:
                 type: 'null'
+  /add/urls_2/:
+    post:
+      operationId: AddUrls2
+      tags:
+        - Urls_2
+      summary: Добавление url
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Urls_2.Methods.Add'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            type: integer
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                $ref: '#/components/schemas/Models.Urls'
+                description: Only for typescript, does not contain real data
+  /edit/urls_2/:
+    post:
+      operationId: EditUrls2
+      tags:
+        - Urls_2
+      summary: Изменение urls
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Urls_2.Methods.Edit'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            type: integer
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                $ref: '#/components/schemas/Models.Urls'
+                description: Only for typescript, does not contain real data
+  /get/urls_2/:
+    post:
+      operationId: GetUrls2
+      tags:
+        - Urls_2
+      summary: Получение списка urls проекта
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Urls_2.Methods.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            title: Список urls проекта
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                      - $ref: '#/components/schemas/Pagination'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                $ref: '#/components/schemas/Models.Urls'
+                description: Only for typescript, does not contain real data
   /get/annotations_2/my/:
     post:
       operationId: GetAnnotations2My
@@ -1227,6 +1459,105 @@ paths:
             model:
               schema:
                 type: 'null'
+  /get/urls_2/export/:
+    post:
+      operationId: GetUrls2Export
+      tags:
+        - Urls_2
+      summary: Экспорт urls в определенном формате
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Urls_2.Methods.Export.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/octet-stream:
+              schema:
+                type: string
+                format: binary
+  /add/urls_2/import/:
+    post:
+      operationId: AddUrls2Import
+      tags:
+        - Urls_2
+      summary: Импортирование urls
+      description: |-
+        Доступные поля для импорта:
+        - url
+        - sitemap
+        - audit
+        - indexing
+        - watcher
+        - tags
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Urls_2.Methods.Import.Add'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            type: array
+                            items:
+                              oneOf:
+                                - type: string
+                                - type: number
+                            title: |-
+                              @return ?array{countSended: int, countDuplicated: int, countAdded: int, countChanged: int}
+
+                              @throws Exception
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
+  /edit/urls_2/tags/:
+    post:
+      operationId: EditUrls2Tags
+      tags:
+        - Urls_2
+      summary: Изменение тегов
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Urls_2.Methods.Tags.Edit'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            type: integer
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                $ref: '#/components/schemas/Models.Urls'
+                description: Only for typescript, does not contain real data
   /add/admin_2/users/promocodes/:
     post:
       operationId: AddAdmin2UsersPromocodes
@@ -1405,7 +1736,7 @@ paths:
       operationId: GetAudit2AuditBrowse
       tags:
         - Audit_2
-      summary: Получение обзора анализа сайта
+      summary: Получение сводки анализа сайта
       deprecated: true
       requestBody:
         content:
@@ -1429,7 +1760,7 @@ paths:
                               oneOf:
                                 - type: string
                                 - type: number
-                            title: Результаты обзора анализа сайта
+                            title: Сводка анализа сайта
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
@@ -2093,6 +2424,38 @@ paths:
                         properties:
                           result:
                             type: integer
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
+  /get/urls_2/import/recognizeLinkSitemapXml/:
+    post:
+      operationId: GetUrls2ImportRecognizeLinkSitemapXml
+      tags:
+        - Urls_2
+      summary: Получение URL к карте сайта по файлу robots.txt для указанного домена
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Urls_2.Methods.Import.RecognizeLinkSitemapXml.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            type: string
+                            title: URL к карте сайта
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
@@ -2944,6 +3307,10 @@ components:
             - $ref: '#/components/schemas/TV.API.Types.StringArray'
       required: []
       title: Результат успешного API запроса
+    stdClass:
+      type: object
+      properties: {}
+      required: []
     Error:
       type: object
       properties:
@@ -2955,8 +3322,9 @@ components:
           title: Описание ошибки
           type: string
         detail:
-          title: Дополнительная информация об ошибке
-          type: string
+          title: Объект с дополнительной информацией
+          allOf:
+            - $ref: '#/components/schemas/stdClass'
       required:
         - code
         - string
@@ -3065,7 +3433,6 @@ components:
         Использует поля модели
 
         @see AbstractMethod::MODEL
-      nullable: true
       type: array
       items:
         oneOf:
@@ -3151,6 +3518,7 @@ components:
       required:
         - project_id
         - service
+        - fields
         - orders
         - filters
         - offset
@@ -3260,6 +3628,163 @@ components:
         - subdomain
       title: Получение комментариев
       description: Возвращает набор комментариев со всеми подкомменатриями, limit, offset не виляют на получение вложенных комментариев
+    Cron_2.Types.Day:
+      type: string
+      enum:
+        - '1'
+        - '2'
+        - '3'
+        - '4'
+        - '5'
+        - '6'
+        - '7'
+      title: День недели, в который должен производиться запуск cron
+    Cron_2.Types.Days:
+      type: array
+      items:
+        $ref: '#/components/schemas/Cron_2.Types.Day'
+      title: Дни недели, в которые должен производиться запуск cron
+    Cron_2.Types.Hour:
+      type: string
+      title: Час в который должен производиться запуск cron
+      description: |-
+        Пустое значение зарезервированно для запуска cron каждый час
+
+        Значение должно находиться в диапазоне от 0 до 23 включительно
+    Cron_2.Types.Minute:
+      type: string
+      title: Минута или интервал в минутах в который должен производиться запуск cron
+      description: |-
+        Значение должно находится в диапазоне от 0 до 59 включительно
+
+        Если значение является интервалом, в начало ставится символ '*'
+    command:
+      title: Имя команды cron
+      type: string
+    Cron_2.Methods.Add:
+      type: object
+      properties:
+        description:
+          title: Описание
+          type: string
+        days:
+          allOf:
+            - $ref: '#/components/schemas/Cron_2.Types.Days'
+        hh:
+          allOf:
+            - $ref: '#/components/schemas/Cron_2.Types.Hour'
+        i:
+          allOf:
+            - $ref: '#/components/schemas/Cron_2.Types.Minute'
+        'on':
+          title: Статус активности задачи
+          type: boolean
+        command:
+          $ref: '#/components/schemas/command'
+      required:
+        - description
+        - days
+        - hh
+        - i
+        - 'on'
+        - command
+      title: Добавление задачи cron
+    Models.Cron:
+      properties:
+        command:
+          type: string
+          nullable: true
+        description:
+          type: string
+          nullable: true
+        days:
+          type: string
+          nullable: true
+        hh:
+          type: string
+          nullable: true
+        i:
+          type: string
+          nullable: true
+        'on':
+          type: integer
+          nullable: true
+        task_create_time:
+          nullable: true
+        task_start_time:
+          nullable: true
+        task_status:
+          type: string
+          nullable: true
+    Cron_2.Methods.Del:
+      type: object
+      properties:
+        filters:
+          $ref: '#/components/schemas/filters'
+        id:
+          $ref: '#/components/schemas/id'
+        command:
+          $ref: '#/components/schemas/command'
+      required:
+        - filters
+        - command
+      title: Удаление задачи cron
+    Cron_2.Methods.Edit:
+      type: object
+      properties:
+        description:
+          title: Описание
+          nullable: true
+          type: string
+        days:
+          nullable: true
+          allOf:
+            - $ref: '#/components/schemas/Cron_2.Types.Days'
+        hh:
+          nullable: true
+          allOf:
+            - $ref: '#/components/schemas/Cron_2.Types.Hour'
+        i:
+          nullable: true
+          allOf:
+            - $ref: '#/components/schemas/Cron_2.Types.Minute'
+        'on':
+          title: Статус активности задачи
+          nullable: true
+          type: boolean
+        filters:
+          $ref: '#/components/schemas/filters'
+        id:
+          $ref: '#/components/schemas/id'
+        command:
+          $ref: '#/components/schemas/command'
+      required:
+        - filters
+        - command
+      title: Изменение задачи cron
+    Cron_2.Methods.Get:
+      type: object
+      properties:
+        fields:
+          $ref: '#/components/schemas/fields'
+        orders:
+          $ref: '#/components/schemas/orders'
+        filters:
+          $ref: '#/components/schemas/filters'
+        id:
+          $ref: '#/components/schemas/id'
+        limit:
+          $ref: '#/components/schemas/limit'
+        offset:
+          $ref: '#/components/schemas/offset'
+        fetch_style:
+          $ref: '#/components/schemas/fetch_style'
+      required:
+        - fields
+        - orders
+        - filters
+        - offset
+      title: Получение задач cron
     Payments_2.Types.System:
       type: string
       enum:
@@ -3391,6 +3916,7 @@ components:
           $ref: '#/components/schemas/fetch_style'
       required:
         - include_is_domains_services_provided
+        - fields
         - orders
         - filters
         - offset
@@ -3480,6 +4006,268 @@ components:
         - point_size
       title: Генерирует QR код по тексту
       description: Возвращает изображение в формате data:image/png;base64
+    TV.API.Types.Url:
+      type: string
+      title: |-
+        Краткий URL в punycode, не может содержать UTF-символы:
+        - без схемы
+        - без "www." в домене
+        - без слешей на конце
+        - без "<" и ">"
+      description: |-
+        Будет проивзедено автоматическое приведение к формату
+
+        Разрешен ввод строй строки, для удаления значения url
+    Urls_2.Types.Flag:
+      type: integer
+      enum:
+        - -1
+        - 0
+        - 1
+        - 2
+      title: Флаг активности
+    Urls_2.Types.Tag:
+      type: string
+      title: Тег для urls
+      description: Значение должно находится в диапазоне от 1 до 50 включительно
+    Urls_2.Types.Tags:
+      type: array
+      items:
+        $ref: '#/components/schemas/Urls_2.Types.Tag'
+      title: Массив номеров тегов
+      description: |-
+        Тип массива Tags[]
+
+        @see Tag
+    project_id:
+      title: ID проекта
+      type: integer
+    Urls_2.Methods.Add:
+      type: object
+      properties:
+        url:
+          title: URL соответствующий домену проекта
+          allOf:
+            - $ref: '#/components/schemas/TV.API.Types.Url'
+        sitemap:
+          title: |-
+            Флаг активности в карте сайта
+            - 1 - присутствовал в прошлых версиях карты сайта
+          nullable: true
+          allOf:
+            - $ref: '#/components/schemas/Urls_2.Types.Flag'
+        audit:
+          title: Флаг активности в аудите
+          nullable: true
+          allOf:
+            - $ref: '#/components/schemas/Urls_2.Types.Flag'
+        indexing:
+          title: Флаг активности в радаре
+          nullable: true
+          allOf:
+            - $ref: '#/components/schemas/Urls_2.Types.Flag'
+        watcher:
+          title: Флаг активности в индексации
+          nullable: true
+          allOf:
+            - $ref: '#/components/schemas/Urls_2.Types.Flag'
+        tags:
+          nullable: true
+          allOf:
+            - $ref: '#/components/schemas/Urls_2.Types.Tags'
+        project_id:
+          $ref: '#/components/schemas/project_id'
+      required:
+        - url
+        - project_id
+      title: Добавление url
+    Models.Urls:
+      properties:
+        COUNT(*):
+          nullable: true
+        WATCHER_HTTP_CODES_HUNDREDS():
+          type: array
+          items:
+            oneOf:
+              - type: string
+              - type: number
+          nullable: true
+          example:
+            need set qualifiers:
+              - check_id
+        id:
+          type: integer
+        url:
+          type: string
+          nullable: true
+        project_id:
+          type: integer
+          nullable: true
+        sitemap:
+          nullable: true
+        audit:
+          nullable: true
+        watcher:
+          nullable: true
+        indexing:
+          nullable: true
+        tags:
+          nullable: true
+        sitemap_lastmod:
+          nullable: true
+        sitemap_changefreq:
+          nullable: true
+        sitemap_priority:
+          nullable: true
+        indexing_data:
+          type: integer
+          nullable: true
+          example:
+            need set qualifiers:
+              - date
+              - searcher_key
+        indexing_alert:
+          type: integer
+          nullable: true
+          example:
+            need set qualifiers:
+              - date
+              - searcher_key
+        watcher_http_codes:
+          type: array
+          items:
+            oneOf:
+              - type: string
+              - type: number
+          nullable: true
+          example:
+            need set qualifiers:
+              - check_id
+        watcher_http_codes_changed:
+          type: integer
+          nullable: true
+          example:
+            need set qualifiers:
+              - check_id
+        watcher_redirects:
+          type: array
+          items:
+            oneOf:
+              - type: string
+              - type: number
+          nullable: true
+          example:
+            need set qualifiers:
+              - check_id
+        watcher_h1:
+          type: string
+          nullable: true
+          example:
+            need set qualifiers:
+              - check_id
+        watcher_h1_changed:
+          type: integer
+          nullable: true
+          example:
+            need set qualifiers:
+              - check_id
+        watcher_title:
+          type: string
+          nullable: true
+          example:
+            need set qualifiers:
+              - check_id
+        watcher_title_changed:
+          type: integer
+          nullable: true
+          example:
+            need set qualifiers:
+              - check_id
+        watcher_description:
+          type: string
+          nullable: true
+          example:
+            need set qualifiers:
+              - check_id
+        watcher_description_changed:
+          type: integer
+          nullable: true
+          example:
+            need set qualifiers:
+              - check_id
+        watcher_content:
+          type: string
+          nullable: true
+          example:
+            need set qualifiers:
+              - check_id
+        watcher_content_changed:
+          type: integer
+          nullable: true
+          example:
+            need set qualifiers:
+              - check_id
+    Urls_2.Methods.Edit:
+      type: object
+      properties:
+        sitemap:
+          title: |-
+            Флаг активности в карте сайта
+            - 1 - присутствовал в прошлых версиях карты сайта
+          nullable: true
+          allOf:
+            - $ref: '#/components/schemas/Urls_2.Types.Flag'
+        audit:
+          title: Флаг активности в аудите
+          nullable: true
+          allOf:
+            - $ref: '#/components/schemas/Urls_2.Types.Flag'
+        indexing:
+          title: Флаг активности в радаре
+          nullable: true
+          allOf:
+            - $ref: '#/components/schemas/Urls_2.Types.Flag'
+        watcher:
+          title: Флаг активности в индексации
+          nullable: true
+          allOf:
+            - $ref: '#/components/schemas/Urls_2.Types.Flag'
+        filters:
+          $ref: '#/components/schemas/filters'
+        id:
+          $ref: '#/components/schemas/id'
+        project_id:
+          $ref: '#/components/schemas/project_id'
+      required:
+        - filters
+        - project_id
+      title: Изменение urls
+    Urls_2.Methods.Get:
+      type: object
+      properties:
+        fields:
+          $ref: '#/components/schemas/fields'
+        orders:
+          $ref: '#/components/schemas/orders'
+        filters:
+          $ref: '#/components/schemas/filters'
+        id:
+          $ref: '#/components/schemas/id'
+        limit:
+          $ref: '#/components/schemas/limit'
+        offset:
+          $ref: '#/components/schemas/offset'
+        fetch_style:
+          $ref: '#/components/schemas/fetch_style'
+        project_id:
+          $ref: '#/components/schemas/project_id'
+      required:
+        - fields
+        - orders
+        - filters
+        - offset
+        - project_id
+      title: Получение списка urls проекта
     Annotations_2.Methods.My.Get:
       type: object
       properties:
@@ -3498,6 +4286,7 @@ components:
         fetch_style:
           $ref: '#/components/schemas/fetch_style'
       required:
+        - fields
         - orders
         - filters
         - offset
@@ -3779,7 +4568,7 @@ components:
         tplStaticRendered:
           type: string
         tplPath:
-          default: templates/pages/simple.php
+          default: templates/pages/content.php
           type: string
         tplRendered:
           type: string
@@ -3853,9 +4642,6 @@ components:
         - sitemap
         - watcher
       title: Модуль аудита
-    project_id:
-      title: ID проекта
-      type: integer
     Audit_2.Methods.CountUrls.Get:
       type: object
       properties:
@@ -3981,150 +4767,13 @@ components:
         - periodDays
         - type_range
         - count_dates
+        - fields
         - orders
         - filters
         - offset
         - project_id
       title: Получение отчета по проверке индексации
       description: Необходимо указать либо date1 и date2, либо dates (вместе указывать нельзя)
-    Models.Urls:
-      properties:
-        COUNT(*):
-          nullable: true
-        WATCHER_HTTP_CODES_HUNDREDS():
-          type: array
-          items:
-            oneOf:
-              - type: string
-              - type: number
-          nullable: true
-          example:
-            need set qualifiers:
-              - check_id
-        id:
-          type: integer
-        url:
-          type: string
-          nullable: true
-        project_id:
-          type: integer
-          nullable: true
-        sitemap:
-          nullable: true
-        audit:
-          nullable: true
-        watcher:
-          nullable: true
-        indexing:
-          nullable: true
-        tags:
-          nullable: true
-        sitemap_lastmod:
-          nullable: true
-        sitemap_changefreq:
-          nullable: true
-        sitemap_priority:
-          nullable: true
-        indexing_data:
-          type: integer
-          nullable: true
-          example:
-            need set qualifiers:
-              - date
-              - searcher_key
-        indexing_alert:
-          type: integer
-          nullable: true
-          example:
-            need set qualifiers:
-              - date
-              - searcher_key
-        watcher_http_codes:
-          type: array
-          items:
-            oneOf:
-              - type: string
-              - type: number
-          nullable: true
-          example:
-            need set qualifiers:
-              - check_id
-        watcher_http_codes_changed:
-          type: integer
-          nullable: true
-          example:
-            need set qualifiers:
-              - check_id
-        watcher_redirects:
-          type: array
-          items:
-            oneOf:
-              - type: string
-              - type: number
-          nullable: true
-          example:
-            need set qualifiers:
-              - check_id
-        watcher_h1:
-          type: string
-          nullable: true
-          example:
-            need set qualifiers:
-              - check_id
-        watcher_h1_changed:
-          type: integer
-          nullable: true
-          example:
-            need set qualifiers:
-              - check_id
-        watcher_title:
-          type: string
-          nullable: true
-          example:
-            need set qualifiers:
-              - check_id
-        watcher_title_changed:
-          type: integer
-          nullable: true
-          example:
-            need set qualifiers:
-              - check_id
-        watcher_description:
-          type: string
-          nullable: true
-          example:
-            need set qualifiers:
-              - check_id
-        watcher_description_changed:
-          type: integer
-          nullable: true
-          example:
-            need set qualifiers:
-              - check_id
-        watcher_content:
-          type: string
-          nullable: true
-          example:
-            need set qualifiers:
-              - check_id
-        watcher_content_changed:
-          type: integer
-          nullable: true
-          example:
-            need set qualifiers:
-              - check_id
-    TV.API.Types.Url:
-      type: string
-      title: |-
-        Краткий URL в punycode, не может содержать UTF-символы:
-        - без схемы
-        - без "www." в домене
-        - без слешей на конце
-        - без "<" и ">"
-      description: |-
-        Будет проивзедено автоматическое приведение к формату
-
-        Разрешен ввод строй строки, для удаления значения url
     Audit_2.Types.Settings.WatcherType:
       type: string
       enum:
@@ -4406,6 +5055,7 @@ components:
         - show_diff
         - show_counts_watcher
         - project_id
+        - fields
         - filters
         - orders
         - offset
@@ -4476,6 +5126,7 @@ components:
         fetch_style:
           $ref: '#/components/schemas/fetch_style'
       required:
+        - fields
         - orders
         - filters
         - offset
@@ -4647,6 +5298,7 @@ components:
         fetch_style:
           $ref: '#/components/schemas/fetch_style'
       required:
+        - fields
         - orders
         - filters
         - offset
@@ -4838,6 +5490,161 @@ components:
       required:
         - validation_url
       title: Валидация домена для подтверждения оплаты Apple Pay (system = card_ap)
+    Urls_2.Types.Export.Output:
+      type: string
+      enum:
+        - csv
+        - csvUTF8s
+        - xml
+      title: Формат экспорта urls
+    Urls_2.Methods.Export.Get:
+      type: object
+      properties:
+        output:
+          allOf:
+            - $ref: '#/components/schemas/Urls_2.Types.Export.Output'
+        show_fields_names:
+          title: Вывести fieldName в заголовках столбцов (для CSV)
+          type: boolean
+        show_fields_labels:
+          title: Вывести fieldLabel в заголовках столбцов (для CSV)
+          type: boolean
+        forClipboard:
+          title: Вернуть данные в формате для копироваиня в буфер обмена
+          type: boolean
+        fields:
+          $ref: '#/components/schemas/fields'
+        orders:
+          $ref: '#/components/schemas/orders'
+        filters:
+          $ref: '#/components/schemas/filters'
+        id:
+          $ref: '#/components/schemas/id'
+        limit:
+          $ref: '#/components/schemas/limit'
+        offset:
+          $ref: '#/components/schemas/offset'
+        fetch_style:
+          $ref: '#/components/schemas/fetch_style'
+        project_id:
+          $ref: '#/components/schemas/project_id'
+      required:
+        - output
+        - show_fields_names
+        - show_fields_labels
+        - forClipboard
+        - fields
+        - orders
+        - filters
+        - offset
+        - project_id
+      title: Экспорт urls в определенном формате
+    TV.API.Types.UrlArray:
+      type: array
+      items:
+        $ref: '#/components/schemas/TV.API.Types.Url'
+      title: 'Тип массива: Url[]'
+      description: '@see Url'
+    Urls_2.Methods.Import.Add:
+      type: object
+      properties:
+        urls:
+          title: Список URL соответствующих домену проекта, допускается формат CSV
+          description: |-
+            Можно передать в виде файла с именем urls, допускаются форматы CSV и XML (допустимы сжатые XML в .gz)
+
+            Нельзя передавать одновременно в виде массива и в виде файла или использовать совместно с link_sitemap_xml
+          nullable: true
+          allOf:
+            - $ref: '#/components/schemas/TV.API.Types.UrlArray'
+        link_sitemap_xml:
+          title: Файл с содержимым для импорта, допускается формат XML (допустимы сжатые XML в .gz)
+          nullable: true
+          allOf:
+            - $ref: '#/components/schemas/TV.API.Types.Url'
+        tags:
+          nullable: true
+          allOf:
+            - $ref: '#/components/schemas/Urls_2.Types.Tags'
+        reset:
+          title: Очистить список URL перед импортом
+          type: boolean
+        setActiveByRegexpByType:
+          title: Недокументириуемый параметр
+          description: set(Audit_2\Types\Type => regexp)
+          type: array
+          items:
+            oneOf:
+              - type: string
+              - type: number
+        sitemap:
+          title: |-
+            Флаг активности в карте сайта
+            - 1 - присутствовал в прошлых версиях карты сайта
+          nullable: true
+          allOf:
+            - $ref: '#/components/schemas/Urls_2.Types.Flag'
+        audit:
+          title: Флаг активности в аудите
+          nullable: true
+          allOf:
+            - $ref: '#/components/schemas/Urls_2.Types.Flag'
+        indexing:
+          title: Флаг активности в радаре
+          nullable: true
+          allOf:
+            - $ref: '#/components/schemas/Urls_2.Types.Flag'
+        watcher:
+          title: Флаг активности в индексации
+          nullable: true
+          allOf:
+            - $ref: '#/components/schemas/Urls_2.Types.Flag'
+        debug:
+          nullable: true
+          type: boolean
+        project_id:
+          $ref: '#/components/schemas/project_id'
+      required:
+        - reset
+        - setActiveByRegexpByType
+        - project_id
+      title: Импортирование urls
+      description: |-
+        Доступные поля для импорта:
+        - url
+        - sitemap
+        - audit
+        - indexing
+        - watcher
+        - tags
+    Urls_2.Types.Tags.Action:
+      type: string
+      enum:
+        - set
+        - add
+        - remove
+      title: Способ установки тегов
+    Urls_2.Methods.Tags.Edit:
+      type: object
+      properties:
+        tags:
+          allOf:
+            - $ref: '#/components/schemas/Urls_2.Types.Tags'
+        action:
+          allOf:
+            - $ref: '#/components/schemas/Urls_2.Types.Tags.Action'
+        filters:
+          $ref: '#/components/schemas/filters'
+        id:
+          $ref: '#/components/schemas/id'
+        project_id:
+          $ref: '#/components/schemas/project_id'
+      required:
+        - tags
+        - action
+        - filters
+        - project_id
+      title: Изменение тегов
     Admin_2.Methods.Users.Promocodes.Add:
       type: object
       properties:
@@ -4890,6 +5697,7 @@ components:
         fetch_style:
           $ref: '#/components/schemas/fetch_style'
       required:
+        - fields
         - orders
         - filters
         - offset
@@ -5117,6 +5925,7 @@ components:
         fetch_style:
           $ref: '#/components/schemas/fetch_style'
       required:
+        - fields
         - orders
         - filters
         - offset
@@ -5134,7 +5943,7 @@ components:
       required:
         - project_id
         - check_id
-      title: Получение обзора анализа сайта
+      title: Получение сводки анализа сайта
       deprecated: true
     Audit_2.Methods.Audit.Checks.Get:
       type: object
@@ -5160,6 +5969,7 @@ components:
           $ref: '#/components/schemas/project_id'
       required:
         - show_raw_data
+        - fields
         - orders
         - filters
         - offset
@@ -5419,6 +6229,7 @@ components:
         check_id:
           $ref: '#/components/schemas/check_id'
       required:
+        - fields
         - orders
         - filters
         - offset
@@ -5550,6 +6361,7 @@ components:
         - target_type
         - output
         - project_id
+        - fields
         - check_id
       title: Экспорт результатов проверки файла
     Audit_2.Methods.Audit.Images.Get:
@@ -5574,6 +6386,7 @@ components:
         check_id:
           $ref: '#/components/schemas/check_id'
       required:
+        - fields
         - orders
         - filters
         - offset
@@ -5703,6 +6516,7 @@ components:
         check_id:
           $ref: '#/components/schemas/check_id'
       required:
+        - fields
         - orders
         - filters
         - offset
@@ -5820,6 +6634,7 @@ components:
         check_id:
           $ref: '#/components/schemas/check_id'
       required:
+        - fields
         - orders
         - filters
         - offset
@@ -6007,6 +6822,7 @@ components:
           $ref: '#/components/schemas/check_id'
       required:
         - filters_resources
+        - fields
         - orders
         - filters
         - offset
@@ -6288,6 +7104,7 @@ components:
           $ref: '#/components/schemas/check_id'
       required:
         - filter_check_type
+        - fields
         - orders
         - filters
         - offset
@@ -6320,6 +7137,7 @@ components:
           $ref: '#/components/schemas/check_id'
       required:
         - url_id
+        - fields
         - orders
         - filters
         - offset
@@ -6394,6 +7212,7 @@ components:
         - type_range
         - count_dates
         - project_id
+        - fields
       title: Экспорт результатов индексации
       description: Необходимо указать либо date1 и date2, либо dates (вместе указывать нельзя)
     Audit_2.Methods.Indexing.Links.Get:
@@ -6567,6 +7386,7 @@ components:
         - watcher_fields
         - show_diff
         - watcher_type
+        - fields
         - orders
         - filters
         - offset
@@ -6699,6 +7519,15 @@ components:
       required:
         - id
       title: Сменить тариф со следующего месяца
+    Urls_2.Methods.Import.RecognizeLinkSitemapXml.Get:
+      type: object
+      properties:
+        domain:
+          title: Домен
+          type: string
+      required:
+        - domain
+      title: Получение URL к карте сайта по файлу robots.txt для указанного домена
     Users_2.Methods.Join.Email.Add:
       type: object
       properties:
@@ -6844,10 +7673,6 @@ components:
         - project_id
         - check_id
       title: Получение информации о текущей ошибке на роботе
-    stdClass:
-      type: object
-      properties: {}
-      required: []
     DateTime:
       type: object
       properties: {}

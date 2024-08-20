@@ -147,7 +147,7 @@
                         "type": "string"
                     },
                     "tplPath": {
-                        "default": "templates/pages/simple.php",
+                        "default": "templates/pages/content.php",
                         "type": "string"
                     },
                     "tplRendered": {

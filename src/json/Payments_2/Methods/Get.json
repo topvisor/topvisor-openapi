@@ -38,6 +38,7 @@
                 },
                 "required": [
                     "include_is_domains_services_provided",
+                    "fields",
                     "orders",
                     "filters",
                     "offset"

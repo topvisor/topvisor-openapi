@@ -47,6 +47,7 @@
                 "required": [
                     "project_id",
                     "service",
+                    "fields",
                     "orders",
                     "filters",
                     "offset"

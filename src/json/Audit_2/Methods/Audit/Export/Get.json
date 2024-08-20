@@ -39,6 +39,7 @@
                     "target_type",
                     "output",
                     "project_id",
+                    "fields",
                     "check_id"
                 ],
                 "title": "Экспорт результатов проверки файла"

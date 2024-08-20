@@ -39,6 +39,7 @@
                     }
                 },
                 "required": [
+                    "fields",
                     "orders",
                     "filters",
                     "offset",
