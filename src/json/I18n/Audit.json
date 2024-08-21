@@ -1,0 +1,559 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/I18n.Audit",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "I18n.Audit": {
+                "type": "object",
+                "properties": {
+                    "Audit": {
+                        "const": "Website audit"
+                    },
+                    "Indexing": {
+                        "const": "Index status"
+                    },
+                    "Watcher": {
+                        "const": "Website watcher"
+                    },
+                    "No_results": {
+                        "const": "You haven't checked your website yet"
+                    },
+                    "Process_text": {
+                        "const": "Scanning"
+                    },
+                    "Header_h1": {
+                        "const": "H1 Header"
+                    },
+                    "Menu": {
+                        "const": "Website SEO audit"
+                    },
+                    "Associated_pages": {
+                        "const": "Associated pages"
+                    },
+                    "String_length_short": {
+                        "const": "Symb. count"
+                    },
+                    "Filter_all": {
+                        "const": "All"
+                    },
+                    "Filter_with_warnings_or_errors": {
+                        "const": "All with issues"
+                    },
+                    "Filter_with_warnings": {
+                        "const": "With warnings"
+                    },
+                    "Filter_with_errors": {
+                        "const": "With errors"
+                    },
+                    "Filter_checks_changed": {
+                        "const": "What's new"
+                    },
+                    "Links_inner": {
+                        "const": "Internal links"
+                    },
+                    "Links_external": {
+                        "const": "External links"
+                    },
+                    "Pages_to_check": {
+                        "const": "Pages to check"
+                    },
+                    "Generated_sitemap": {
+                        "const": "Generated sitemap"
+                    },
+                    "Sitemap_not_found": {
+                        "const": "Sitemap not found"
+                    },
+                    "Sitemap_already_started_error": {
+                        "const": "Sitemap already started"
+                    },
+                    "Sitemap_gen": {
+                        "const": "Sitemap generator"
+                    },
+                    "pages": {
+                        "const": "pages"
+                    },
+                    "Site_size": {
+                        "const": "Web page count"
+                    },
+                    "Header_start_short": {
+                        "const": "Scan"
+                    },
+                    "Step1_gen": {
+                        "const": "Generate"
+                    },
+                    "Step1_gen_notice": {
+                        "const": "A valid map can be generated only with a valid robots.txt"
+                    },
+                    "Sitemap_bank_info": {
+                        "const": "Sitemap generation for"
+                    },
+                    "Audit_bank_info": {
+                        "const": "Project audit for"
+                    },
+                    "Report": {
+                        "const": "Report"
+                    },
+                    "Header_browse": {
+                        "const": "Summary"
+                    },
+                    "Header_common": {
+                        "const": "Common"
+                    },
+                    "Count_pages_checked": {
+                        "const": "Scanned pages"
+                    },
+                    "Header_notices": {
+                        "const": "Warnings"
+                    },
+                    "Header_warnings": {
+                        "const": "Issues"
+                    },
+                    "Www_redirect": {
+                        "const": "Redirects between"
+                    },
+                    "robots_txt_blocked": {
+                        "const": "blocked by robots.txt"
+                    },
+                    "refresh_redirect": {
+                        "const": "blocked by <i>&lt;meta http-equiv=\"refresh\"&gt;</i>"
+                    },
+                    "noindex": {
+                        "const": "blocked by <i>&lt;meta name=\"robots\" content=\"noindex\"&gt;</i>"
+                    },
+                    "redirect": {
+                        "const": "redirects detected"
+                    },
+                    "index_broken": {
+                        "const": "loading error / incorrect server response code (for example, 404, 503)"
+                    },
+                    "title_empty": {
+                        "const": "title is missing"
+                    },
+                    "title_size": {
+                        "const": "too short / long title"
+                    },
+                    "title_dbl": {
+                        "const": "duplicate title"
+                    },
+                    "description_empty": {
+                        "const": "description is missing"
+                    },
+                    "description_size": {
+                        "const": "too short / long description"
+                    },
+                    "description_dbl": {
+                        "const": "duplicate description"
+                    },
+                    "links_empty_content": {
+                        "const": "anchor or alternative (attribute <i>title=\"...\"</i>) text is missing"
+                    },
+                    "nofollow": {
+                        "const": "attribute <i>rel=\"nofollow\"</i> is used"
+                    },
+                    "links_broken": {
+                        "const": "broken links"
+                    },
+                    "no_title": {
+                        "const": "alternative text (attribute <i>alt=\"...\"</i>) is missing"
+                    },
+                    "images_broken": {
+                        "const": "\"broken\" image"
+                    },
+                    "h1_empty": {
+                        "const": "empty or missing H1 tag"
+                    },
+                    "no_lastmod": {
+                        "const": "Last-Modified is missing"
+                    },
+                    "no_lastmod_since": {
+                        "const": "If-Modified-Since not processed"
+                    },
+                    "Header_index": {
+                        "const": "Index status"
+                    },
+                    "Status_code": {
+                        "const": "Response code"
+                    },
+                    "Robots_txt_blocked_short": {
+                        "const": "Blocked robots.txt"
+                    },
+                    "Header_snippet": {
+                        "const": "Snippet"
+                    },
+                    "Description": {
+                        "const": "Meta-description (description)"
+                    },
+                    "Snippet_title_dbl": {
+                        "const": "Duplicate titles"
+                    },
+                    "Snippet_description_dbl": {
+                        "const": "Duplicate descriptions"
+                    },
+                    "Header_links": {
+                        "const": "Links"
+                    },
+                    "Link_type": {
+                        "const": "Type"
+                    },
+                    "Link_content": {
+                        "const": "Text (anchor)"
+                    },
+                    "Link_title": {
+                        "const": "Text (title)"
+                    },
+                    "Link_pages": {
+                        "const": "Pages"
+                    },
+                    "Link_broken": {
+                        "const": "\"Broken\""
+                    },
+                    "Link_image": {
+                        "const": "Image"
+                    },
+                    "Link_image2": {
+                        "const": "Image"
+                    },
+                    "Link_text": {
+                        "const": "Text"
+                    },
+                    "Watcher_send_to_informer": {
+                        "const": "Notification Center"
+                    },
+                    "Generate_sitemap": {
+                        "const": "Generate sitemap"
+                    },
+                    "Sitemap_generation": {
+                        "const": "Sitemap generator"
+                    },
+                    "Sitemap_uploading": {
+                        "const": "Sitemap uploader"
+                    },
+                    "Header_images": {
+                        "const": "Images"
+                    },
+                    "Image_alt": {
+                        "const": "Alt-text"
+                    },
+                    "Image_pages": {
+                        "const": "Pages"
+                    },
+                    "Image_size": {
+                        "const": "Size"
+                    },
+                    "Image_broken": {
+                        "const": "\"Broken\""
+                    },
+                    "Header_content": {
+                        "const": "Content"
+                    },
+                    "Title_page": {
+                        "const": "Page title (Title)"
+                    },
+                    "Header_pages_short": {
+                        "const": "List of pages"
+                    },
+                    "Header_page": {
+                        "const": "Page audit"
+                    },
+                    "Page_to_disallow": {
+                        "const": "Skip the page in the next reports"
+                    },
+                    "Page_to_disallow_ok": {
+                        "const": "The page will be skipped in the next reports"
+                    },
+                    "Page_redirects": {
+                        "const": "Redirects"
+                    },
+                    "Page_code": {
+                        "const": "Page response code"
+                    },
+                    "Page_robots_txt_blocked": {
+                        "const": "Blocked by Robots.txt"
+                    },
+                    "Page_nofollow": {
+                        "const": "Contains meta robots nofollow"
+                    },
+                    "Page_noindex": {
+                        "const": "Blocked by meta robots noindex"
+                    },
+                    "Page_canonical": {
+                        "const": "Contains rel=\"canonical\""
+                    },
+                    "Page_alternate": {
+                        "const": "Contains rel=\"alternate\""
+                    },
+                    "Page_refresh": {
+                        "const": "Contains meta refresh redirect"
+                    },
+                    "Page_string_length": {
+                        "const": "Symbol count"
+                    },
+                    "Page_title_dbl": {
+                        "const": "Duplicate title"
+                    },
+                    "Page_description_dbl": {
+                        "const": "Duplicate description"
+                    },
+                    "Filter_changed": {
+                        "const": "Changes"
+                    },
+                    "Filter_http_not_changed": {
+                        "const": "Changes (HTTP code didn't change)"
+                    },
+                    "Filter_check_selected": {
+                        "const": "Only current report"
+                    },
+                    "Filter_check_before": {
+                        "const": "All until the applied date"
+                    },
+                    "Watcher_go": {
+                        "const": "Check"
+                    },
+                    "Watcher_process_text": {
+                        "const": "Scanning"
+                    },
+                    "Watcher_bank_info": {
+                        "const": "Website watcher report for"
+                    },
+                    "Watcher_need_config_1": {
+                        "const": "To run Watcher"
+                    },
+                    "Watcher_need_config_2": {
+                        "const": "move to the settings"
+                    },
+                    "Watcher_need_config_3": {
+                        "const": "and add a list of pages"
+                    },
+                    "Indexing_go": {
+                        "const": "Scan"
+                    },
+                    "Indexing_check": {
+                        "const": "Index checker"
+                    },
+                    "Indexing_no_results": {
+                        "const": "You haven't checked website index status yet"
+                    },
+                    "Indexing_bank_info": {
+                        "const": "Index status report for"
+                    },
+                    "Indexing_need_config_1": {
+                        "const": "To check website index status"
+                    },
+                    "Indexing_need_config_2": {
+                        "const": "set"
+                    },
+                    "Indexing_need_config_3": {
+                        "const": "a list of pages to scan and select search engines"
+                    },
+                    "Pages_for_analyse_not_selected": {
+                        "const": "Please add pages to scan in the settings"
+                    },
+                    "Delete_url_by_regexp": {
+                        "const": "Delete URLs by regexp match"
+                    },
+                    "Report_limit_warning": {
+                        "const": "*Report can contain up to 1000 records"
+                    },
+                    "Watcher_store_180_days": {
+                        "const": "results are stored for 180 days"
+                    },
+                    "Watcher_selector_title": {
+                        "const": "Select tracking method"
+                    },
+                    "Watcher_regexpr": {
+                        "const": "Regular expression"
+                    },
+                    "Download_archive_csv": {
+                        "const": "CSV archive"
+                    },
+                    "Download_archive_pdf": {
+                        "const": "PDF archive"
+                    },
+                    "List_of_urls": {
+                        "const": "List of URLs"
+                    },
+                    "Sitemap_xml_url": {
+                        "const": "Sitemap.xml path"
+                    },
+                    "Sitemap_mail_sitemap": {
+                        "const": "Sitemap"
+                    },
+                    "Sitemap_mail_audit": {
+                        "const": "Website audit"
+                    },
+                    "Sitemap_mail_indexing": {
+                        "const": "Index checker"
+                    },
+                    "Sitemap_mail_watcher": {
+                        "const": "Website watcher"
+                    },
+                    "Retrieve_from_file": {
+                        "const": "Retrieve from file"
+                    },
+                    "Watcher_delete_title": {
+                        "const": "Delete Website Watcher data "
+                    },
+                    "Watcher_delete_info1": {
+                        "const": "Website Watcher report dated"
+                    },
+                    "Watcher_delete_info2": {
+                        "const": "will be deleted. You cannot undo this action."
+                    },
+                    "Watcher_ignore_options": {
+                        "const": "Skip code"
+                    },
+                    "Watcher_ignore_html": {
+                        "const": "HTML code"
+                    },
+                    "Watcher_ignore_js": {
+                        "const": "javascript code"
+                    },
+                    "Watcher_ignore_nothing": {
+                        "const": "do not skip"
+                    },
+                    "Watcher_track_button": {
+                        "const": "Track changes"
+                    },
+                    "Watcher_track_changes": {
+                        "const": "Track changes"
+                    },
+                    "Watcher_tracking": {
+                        "const": "Tracking changes of"
+                    },
+                    "Watcher_max_redirects_count": {
+                        "const": "Max redirects"
+                    },
+                    "Watcher_already_started_error": {
+                        "const": "Website Watcher already running"
+                    },
+                    "Indexing_already_started_error": {
+                        "const": "Index Checker already running"
+                    },
+                    "Sitemap_XML_link_not_match_host_error": {
+                        "const": "Link to XML does not match project host"
+                    },
+                    "Sitemap_required_columns_missing": {
+                        "const": "Required URLs column missing"
+                    },
+                    "Delete_sitemap": {
+                        "const": "Are you sure you want to delete all URLs?"
+                    },
+                    "URL_exists": {
+                        "const": "This URL already exists"
+                    },
+                    "Remove_URL": {
+                        "const": "Are you sure you want to delete the selected URL?"
+                    },
+                    "Enter_URL_one_per_line": {
+                        "const": "Enter a list of URLs (one per line), e.g:"
+                    },
+                    "Content_tracking": {
+                        "const": "Content tracking"
+                    },
+                    "Add_tags_use_regexp_notice": {
+                        "const": "Add tags to website code or use regular expressions to track changes"
+                    },
+                    "Use_cookie": {
+                        "const": "Use cookie"
+                    },
+                    "Scan_images": {
+                        "const": "Scan images"
+                    },
+                    "Scan_js": {
+                        "const": "Scan JS"
+                    },
+                    "Scan_css": {
+                        "const": "Scan CSS"
+                    },
+                    "Scan_links": {
+                        "const": "Scan links"
+                    },
+                    "Indexed_pages_with_no_snippet": {
+                        "const": "Indexed pages without snippet"
+                    },
+                    "Hints_settings": {
+                        "const": {
+                            "audit_user_agent": "User Agent can affect how the bot sees the site and how DDoS protection works.",
+                            "audit_page_delay": "How often crawler can open site URLs. If the delay is small, audit will end faster, but the site can go down due to high load. The bigger is the delay, the longer the check will go.<br><br>The delay can increase, if you check Core Web Vitals. For CWV JS is executed, and you need wait for the full rendering of every URL, that takes at least 20 s.",
+                            "audit_resource_delay": "How often crawler can open site resources (images, JS, CSS). If the delay is small, audit will end faster, but the site can go down due to high load. The bigger is the delay, the longer the check will go.",
+                            "audit_use_cookie": "Turn this feature on, if your DDoS protection uses cookies.<br><br>But it may cause more personalized information in checks and they could be distorted.",
+                            "audit_scan_images": "",
+                            "audit_scan_js": "",
+                            "audit_scan_css": "",
+                            "audit_scan_links": "",
+                            "server_location": "Change server location to access blocked websites."
+                        }
+                    },
+                    "Server_location": {
+                        "const": "Servers location"
+                    },
+                    "Servers_locations": {
+                        "const": {
+                            "WESTERN_EUROPE": "Western Europe",
+                            "EASTERN_EUROPE": "Eastern Europe"
+                        }
+                    },
+                    "Page_delay": {
+                        "const": "Delay between URL requests (s)"
+                    },
+                    "Resource_delay": {
+                        "const": "Delay between resources requests (s)"
+                    },
+                    "API_key_1": {
+                        "const": "Get free PageSpeed Insights API-key"
+                    },
+                    "API_key_2": {
+                        "const": "and paste it in the input field"
+                    },
+                    "Redirect_chain": {
+                        "const": "Redirect chain"
+                    },
+                    "Search_URL": {
+                        "const": "Search URL"
+                    },
+                    "Auto_collect": {
+                        "const": "Crawl website"
+                    },
+                    "Add_by_hand": {
+                        "const": "Add manually"
+                    },
+                    "Select_site_size": {
+                        "const": "Choose website size"
+                    },
+                    "Please_select_site_size": {
+                        "const": "Choose website size"
+                    },
+                    "Master_urls_auto_title": {
+                        "const": "Maximum of pages for audit"
+                    },
+                    "Master_urls_auto_alert": {
+                        "const": "We'll check only the pages found during crawling. First you'll be charged the price for the maximum number of pages, but there can be less pages on the website. We'll refund the amount for the number of pages that hadn't been checked back on your balance."
+                    },
+                    "Audit_go_alert_need_config": {
+                        "const": "To perform audit you need to add URLs manually or enable website crawling, go to "
+                    },
+                    "Audit_go_alert_by_hand": {
+                        "const": "URLs for audit are added manually. To change the way of adding pages, go to"
+                    },
+                    "Audit_go_alert_auto_collect_1": {
+                        "const": "We'll check"
+                    },
+                    "Audit_go_alert_auto_collect_2": {
+                        "const": "URLs for audit are crawled automatically. To change the maximum number of pages for audit or add them manually, go to"
+                    },
+                    "Audit_bank_autocrawl_info": {
+                        "const": "Funds reservation for audit with automatic website crawling, project"
+                    },
+                    "Audit_bank_autocrawl_unhold_info": {
+                        "const": "Reservation refund"
+                    }
+                },
+                "required": []
+            }
+        }
+    }
+}

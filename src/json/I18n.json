@@ -1,0 +1,138 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/I18n",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "I18n.Common": {
+                "$ref": "I18n/Common.json#/components/schemas/I18n.Common"
+            },
+            "I18n.Actions": {
+                "$ref": "I18n/Actions.json#/components/schemas/I18n.Actions"
+            },
+            "I18n.Admin": {
+                "$ref": "I18n/Admin.json#/components/schemas/I18n.Admin"
+            },
+            "I18n.Analytics": {
+                "$ref": "I18n/Analytics.json#/components/schemas/I18n.Analytics"
+            },
+            "I18n.Api": {
+                "$ref": "I18n/Api.json#/components/schemas/I18n.Api"
+            },
+            "I18n.Audit": {
+                "$ref": "I18n/Audit.json#/components/schemas/I18n.Audit"
+            },
+            "I18n.Bank": {
+                "$ref": "I18n/Bank.json#/components/schemas/I18n.Bank"
+            },
+            "I18n.Broker": {
+                "$ref": "I18n/Broker.json#/components/schemas/I18n.Broker"
+            },
+            "I18n.Calendar": {
+                "$ref": "I18n/Calendar.json#/components/schemas/I18n.Calendar"
+            },
+            "I18n.Competitors": {
+                "$ref": "I18n/Competitors.json#/components/schemas/I18n.Competitors"
+            },
+            "I18n.Cron": {
+                "$ref": "I18n/Cron.json#/components/schemas/I18n.Cron"
+            },
+            "I18n.Domains": {
+                "$ref": "I18n/Domains.json#/components/schemas/I18n.Domains"
+            },
+            "I18n.Dynamics": {
+                "$ref": "I18n/Dynamics.json#/components/schemas/I18n.Dynamics"
+            },
+            "I18n.Email": {
+                "$ref": "I18n/Email.json#/components/schemas/I18n.Email"
+            },
+            "I18n.Fieldtemplates": {
+                "$ref": "I18n/Fieldtemplates.json#/components/schemas/I18n.Fieldtemplates"
+            },
+            "I18n.Footer": {
+                "$ref": "I18n/Footer.json#/components/schemas/I18n.Footer"
+            },
+            "I18n.Indexing": {
+                "$ref": "I18n/Indexing.json#/components/schemas/I18n.Indexing"
+            },
+            "I18n.Informer": {
+                "$ref": "I18n/Informer.json#/components/schemas/I18n.Informer"
+            },
+            "I18n.Keywords": {
+                "$ref": "I18n/Keywords.json#/components/schemas/I18n.Keywords"
+            },
+            "I18n.Landings": {
+                "$ref": "I18n/Landings.json#/components/schemas/I18n.Landings"
+            },
+            "I18n.Projects": {
+                "$ref": "I18n/Projects.json#/components/schemas/I18n.Projects"
+            },
+            "I18n.Robot": {
+                "$ref": "I18n/Robot.json#/components/schemas/I18n.Robot"
+            },
+            "I18n.Sitemap": {
+                "$ref": "I18n/Sitemap.json#/components/schemas/I18n.Sitemap"
+            },
+            "I18n.Snapshots": {
+                "$ref": "I18n/Snapshots.json#/components/schemas/I18n.Snapshots"
+            },
+            "I18n.Telegram": {
+                "$ref": "I18n/Telegram.json#/components/schemas/I18n.Telegram"
+            },
+            "I18n.Thundo": {
+                "$ref": "I18n/Thundo.json#/components/schemas/I18n.Thundo"
+            },
+            "I18n.Tickets": {
+                "$ref": "I18n/Tickets.json#/components/schemas/I18n.Tickets"
+            },
+            "I18n.Tpvsr": {
+                "$ref": "I18n/Tpvsr.json#/components/schemas/I18n.Tpvsr"
+            },
+            "I18n.Units": {
+                "$ref": "I18n/Units.json#/components/schemas/I18n.Units"
+            },
+            "I18n.Updates": {
+                "$ref": "I18n/Updates.json#/components/schemas/I18n.Updates"
+            },
+            "I18n.User": {
+                "$ref": "I18n/User.json#/components/schemas/I18n.User"
+            },
+            "I18n.Votes": {
+                "$ref": "I18n/Votes.json#/components/schemas/I18n.Votes"
+            },
+            "I18n.Watcher": {
+                "$ref": "I18n/Watcher.json#/components/schemas/I18n.Watcher"
+            },
+            "I18n.Widget": {
+                "$ref": "I18n/Widget.json#/components/schemas/I18n.Widget"
+            },
+            "I18n.Audit.Scan": {
+                "$ref": "I18n/Audit/Scan.json#/components/schemas/I18n.Audit.Scan"
+            },
+            "I18n.Landings.Jobs": {
+                "$ref": "I18n/Landings/Jobs.json#/components/schemas/I18n.Landings.Jobs"
+            },
+            "I18n.Landings.Price": {
+                "$ref": "I18n/Landings/Price.json#/components/schemas/I18n.Landings.Price"
+            },
+            "I18n.Landings.Promocode": {
+                "$ref": "I18n/Landings/Promocode.json#/components/schemas/I18n.Landings.Promocode"
+            },
+            "I18n.Pages": {
+                "$ref": "I18n/Pages.json#/components/schemas/I18n.Pages"
+            },
+            "I18n.Projects.CheckButton": {
+                "$ref": "I18n/Projects/CheckButton.json#/components/schemas/I18n.Projects.CheckButton"
+            },
+            "I18n.Audit.Scan.Checks": {
+                "$ref": "I18n/Audit/Scan/Checks.json#/components/schemas/I18n.Audit.Scan.Checks"
+            },
+            "I18n.Sites.Topvisor.Organization": {
+                "$ref": "I18n/Sites/Topvisor/Organization.json#/components/schemas/I18n.Sites.Topvisor.Organization"
+            }
+        }
+    }
+}

@@ -1,0 +1,57 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/I18n.Cron",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "I18n.Cron": {
+                "type": "object",
+                "properties": {
+                    "Command": {
+                        "const": "Сommand name"
+                    },
+                    "Description": {
+                        "const": "Description"
+                    },
+                    "Days_week": {
+                        "const": "Days of the week"
+                    },
+                    "Hours": {
+                        "const": "Hours"
+                    },
+                    "Interval": {
+                        "const": "Interval"
+                    },
+                    "Status": {
+                        "const": "Status"
+                    },
+                    "Task_create_time": {
+                        "const": "Creation time"
+                    },
+                    "Task_start_time": {
+                        "const": "Start time"
+                    },
+                    "Task_status": {
+                        "const": "Execution status"
+                    },
+                    "Off": {
+                        "const": "Turned off"
+                    },
+                    "On": {
+                        "const": "Turned on"
+                    },
+                    "New_task": {
+                        "const": "New task"
+                    },
+                    "Running_task": {
+                        "const": "Running task"
+                    }
+                },
+                "required": []
+            }
+        }
+    }
+}

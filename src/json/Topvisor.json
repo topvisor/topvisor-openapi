@@ -2005,7 +2005,7 @@
                     "content": {
                         "application/json": {
                             "schema": {
-                                "$ref": "Example_2/Methods/Enum/Get.json#/components/schemas/Example_2.Methods.Enum.Get"
+                                "$ref": "Example_2/Methodsum/Get.json#/components/schemas/Example_2.Methodsum.Get"
                             }
                         }
                     },

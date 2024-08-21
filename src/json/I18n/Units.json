@@ -1,0 +1,27 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/I18n.Units",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "I18n.Units": {
+                "type": "object",
+                "properties": {
+                    "s": {
+                        "const": "s"
+                    },
+                    "ms": {
+                        "const": "ms"
+                    },
+                    "KB": {
+                        "const": "KB"
+                    }
+                },
+                "required": []
+            }
+        }
+    }
+}

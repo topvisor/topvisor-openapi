@@ -1,0 +1,60 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/I18n.Email",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "I18n.Email": {
+                "type": "object",
+                "properties": {
+                    "User_projects_rights_title": {
+                        "const": "You have received access to the project."
+                    },
+                    "User_projects_changeOwner_title": {
+                        "const": "Confirm project transfer."
+                    },
+                    "Integration_expires": {
+                        "const": "Update integration key"
+                    },
+                    "Integration_has_expired1": {
+                        "const": "Integration"
+                    },
+                    "Integration_has_expired2": {
+                        "const": "integration key has expired."
+                    },
+                    "Integration_access_error": {
+                        "const": "integration error"
+                    },
+                    "Project_report": {
+                        "const": "Report: Project dynamics."
+                    },
+                    "Indexing_informer_title": {
+                        "const": "Index status: new changes detected."
+                    },
+                    "Watcher_informer_title": {
+                        "const": "Website watcher: new changes detected."
+                    },
+                    "Sitemap_changes_to_sitemap_email": {
+                        "const": "Sitemap: new changes detected."
+                    },
+                    "Audit_informer_title": {
+                        "const": "Website audit is completed."
+                    },
+                    "Total_indexed": {
+                        "const": "Total indexed"
+                    },
+                    "Dropped_from_index": {
+                        "const": "Dropped from index"
+                    },
+                    "Got_indexed": {
+                        "const": "New indexed"
+                    }
+                },
+                "required": []
+            }
+        }
+    }
+}

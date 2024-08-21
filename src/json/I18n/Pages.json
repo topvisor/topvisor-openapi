@@ -1,0 +1,54 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/I18n.Pages",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "I18n.Pages": {
+                "type": "object",
+                "properties": {
+                    "Checking_positions": {
+                        "const": "Rank Checking and Rank Tracking"
+                    },
+                    "Collecting_top_sites": {
+                        "const": "SERP Top Checker"
+                    },
+                    "Technical_analysis": {
+                        "const": "SEO Website Audit"
+                    },
+                    "Tracking_changes": {
+                        "const": "Changer Tracker and Meta Tag Exractor"
+                    },
+                    "Semantic_core_research": {
+                        "const": "Semantic Core Research"
+                    },
+                    "Volume_checker": {
+                        "const": "Volume Checker"
+                    },
+                    "Index_checker": {
+                        "const": "Index Checker"
+                    },
+                    "Sitemap_generator": {
+                        "const": "Sitemap generator"
+                    },
+                    "Bid_manager": {
+                        "const": "Bid Manager"
+                    },
+                    "Updates_scanner": {
+                        "const": "Updates Scanner"
+                    },
+                    "Shortener_url": {
+                        "const": "URL Shortener"
+                    },
+                    "Clustering_top": {
+                        "const": "Clustering by SERP Top"
+                    }
+                },
+                "required": []
+            }
+        }
+    }
+}

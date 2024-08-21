@@ -1,0 +1,39 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/I18n.Landings.Promocode",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "I18n.Landings.Promocode": {
+                "type": "object",
+                "properties": {
+                    "Description": {
+                        "const": "Topvior is online platform for SEO specialists and marketers with all essential tools for analyzing website's visibility in search engines."
+                    },
+                    "OpenGraph_title": {
+                        "const": "Enter promocode"
+                    },
+                    "Enter_promocode": {
+                        "const": "Enter promocode"
+                    },
+                    "Promocode": {
+                        "const": "Promocode"
+                    },
+                    "By_pressing_sign_up_you_accept": {
+                        "const": "By pressing Sign up you accept"
+                    },
+                    "Terms_and_conditions": {
+                        "const": "Terms and Conditions"
+                    },
+                    "Privacy_policy": {
+                        "const": "Privacy Policy"
+                    }
+                },
+                "required": []
+            }
+        }
+    }
+}

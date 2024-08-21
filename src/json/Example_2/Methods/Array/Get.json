@@ -34,7 +34,7 @@
                     "enum_numbers": {
                         "allOf": [
                             {
-                                "$ref": "../../../Example_2/Types/EnumNumberArray.json#/components/schemas/Example_2.Types.EnumNumberArray"
+                                "$ref": "../../../Example_2/TypesumNumberArray.json#/components/schemas/Example_2.TypesumNumberArray"
                             }
                         ]
                     }

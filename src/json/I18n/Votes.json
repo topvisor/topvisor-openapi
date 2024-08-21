@@ -1,0 +1,45 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/I18n.Votes",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "I18n.Votes": {
+                "type": "object",
+                "properties": {
+                    "Question_is_article_useful": {
+                        "const": "Have you found what you were looking for?"
+                    },
+                    "Message_after_good_vote": {
+                        "const": "Thanks for the feedback! You can leave a comment below, but it's optional. You may write something nice."
+                    },
+                    "Message_after_bad_vote": {
+                        "const": "Напишите, что вы искали, — мы поможем вам, а также постараемся добавить это в руководство."
+                    },
+                    "Question_after_good_vote": {
+                        "const": "What did you like most?"
+                    },
+                    "Question_after_bad_vote": {
+                        "const": "What's been lacking in this guide?"
+                    },
+                    "Message_after_comment_good_vote": {
+                        "const": "We'll keep this up!"
+                    },
+                    "Message_after_comment_bad_vote": {
+                        "const": "We'll improve our service."
+                    },
+                    "Submit": {
+                        "const": "Leave feedback"
+                    },
+                    "SendTicket": {
+                        "const": "Отправить тикет"
+                    }
+                },
+                "required": []
+            }
+        }
+    }
+}

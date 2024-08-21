@@ -1,0 +1,330 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/I18n.Dynamics",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "I18n.Dynamics": {
+                "type": "object",
+                "properties": {
+                    "Number_keywords_better_ranks": {
+                        "const": "Keywords that advanced in ranks"
+                    },
+                    "Number_keywords_same_ranks": {
+                        "const": "Keywords that didn't change ranks"
+                    },
+                    "Number_keywords_drop_ranks": {
+                        "const": "Keywords that dropped in ranks"
+                    },
+                    "Search_table": {
+                        "const": "Find in table"
+                    },
+                    "Search_page": {
+                        "const": "Find on page"
+                    },
+                    "Snippets": {
+                        "const": "Snippets"
+                    },
+                    "Remove_results": {
+                        "const": "Delete all results for the applied date"
+                    },
+                    "oneway_operation": {
+                        "const": "this action cannot be undone"
+                    },
+                    "Proceed_deleting_ask": {
+                        "const": "Do you want to continue?"
+                    },
+                    "Sort_by_target": {
+                        "const": "By target URL"
+                    },
+                    "Sort_by_default": {
+                        "const": "Default settings"
+                    },
+                    "Sort_by_relevant": {
+                        "const": "By ranked URL"
+                    },
+                    "Sort_by_position_change": {
+                        "const": "Ranking dynamics over period"
+                    },
+                    "Filter_by_tag": {
+                        "const": "Filter by tag"
+                    },
+                    "Set_target_for_group": {
+                        "const": "Set target for group"
+                    },
+                    "Send_email": {
+                        "const": "Send to Email"
+                    },
+                    "Target_URL": {
+                        "const": "Target URL"
+                    },
+                    "Rankings_updated_less_than_5minutes": {
+                        "const": "You updated keyword ranks less than 5 minutes ago"
+                    },
+                    "Add_keywords_locations_notice": {
+                        "const": "Add keywords and select locations<br> in project settings"
+                    },
+                    "Tasks_processing_notice": {
+                        "const": "We're processing your tasks."
+                    },
+                    "Ranks_updating_notice": {
+                        "const": "We're updating your keyword rankings."
+                    },
+                    "Updated": {
+                        "const": "Last update"
+                    },
+                    "Positions_snippets": {
+                        "const": "Rankings and snippets"
+                    },
+                    "Period_last_7_days": {
+                        "const": "Last 7 days"
+                    },
+                    "Period_last_10_days": {
+                        "const": "Last 10 days"
+                    },
+                    "Period_last_30_days": {
+                        "const": "Last 30 days"
+                    },
+                    "Any_dates": {
+                        "const": "Optional dates"
+                    },
+                    "Current_month": {
+                        "const": "This month"
+                    },
+                    "Previous_month": {
+                        "const": "Previous month"
+                    },
+                    "Last_year": {
+                        "const": "Last year"
+                    },
+                    "Random": {
+                        "const": "Random"
+                    },
+                    "Period_regular": {
+                        "const": "Period"
+                    },
+                    "Period_2_dates": {
+                        "const": "Two dates"
+                    },
+                    "Period_2_margin_dates": {
+                        "const": "First and last date"
+                    },
+                    "Period_2_latest_dates": {
+                        "const": "Two latest dates"
+                    },
+                    "Period_first_date": {
+                        "const": "First date"
+                    },
+                    "Period_last_date": {
+                        "const": "Last date"
+                    },
+                    "Period_1_date": {
+                        "const": "One date"
+                    },
+                    "Period_only_updates": {
+                        "const": "Only Yandex updates"
+                    },
+                    "Last_day_month": {
+                        "const": "Last day of month"
+                    },
+                    "Count_dates": {
+                        "const": "Max dates"
+                    },
+                    "Painting_0": {
+                        "const": "Top, progress"
+                    },
+                    "Painting_1": {
+                        "const": "Improved, dropped"
+                    },
+                    "Report_after_tracking_30min_1": {
+                        "const": "After rank tracking"
+                    },
+                    "Report_after_tracking_30min_2": {
+                        "const": "in 30 minutes"
+                    },
+                    "Display_week_average_ranking": {
+                        "const": "Week's average"
+                    },
+                    "Summary": {
+                        "const": "Summary"
+                    },
+                    "Show_graphics": {
+                        "const": "Charts"
+                    },
+                    "Target_equal_relevant": {
+                        "const": "Target = Ranked"
+                    },
+                    "Off_display_group_names": {
+                        "const": "Hide group names"
+                    },
+                    "On_display_group_names": {
+                        "const": "Show group names"
+                    },
+                    "Display_group_names_above": {
+                        "const": "Display names under groups"
+                    },
+                    "Display_group_names_near": {
+                        "const": "Display names near groups"
+                    },
+                    "Show_global_volume": {
+                        "const": "Display / Hide global search volume"
+                    },
+                    "Remove_keyword": {
+                        "const": "Are you sure you want to delete a selected keyword?"
+                    },
+                    "Remove_history": {
+                        "const": "Wipe data for the selected date"
+                    },
+                    "Show_competitors": {
+                        "const": "Competitors"
+                    },
+                    "Hide_keywords_added_in_period": {
+                        "const": "Hide keywords added within the applied period"
+                    },
+                    "Only_keywords_added_in_period": {
+                        "const": "Only keywords added within the applied period"
+                    },
+                    "Show_keywords_added_in_period": {
+                        "const": "All keywords"
+                    },
+                    "and_save_snapshots": {
+                        "const": "snapshots collected"
+                    },
+                    "Check_rankings": {
+                        "const": "Check rankings of project"
+                    },
+                    "Add_keywords_on_page": {
+                        "const": "Add keywords on the page"
+                    },
+                    "Keywords": {
+                        "const": "Keywords"
+                    },
+                    "Add_se_location_to_display_data": {
+                        "const": "Add search engine and location to display data"
+                    },
+                    "Number_of_visits": {
+                        "const": "Number of visits"
+                    },
+                    "Matches_relevant_URL": {
+                        "const": "Matches ranked URL"
+                    },
+                    "Not_Matches_relevant_URL": {
+                        "const": "Doesn't match ranked URL"
+                    },
+                    "Relevant_URL_change_history": {
+                        "const": "Ranked URL history"
+                    },
+                    "Relevant_URL_changes": {
+                        "const": "Ranked URL changes"
+                    },
+                    "Download": {
+                        "const": "Download"
+                    },
+                    "Date_order": {
+                        "const": "Date order"
+                    },
+                    "Chart_export": {
+                        "const": "Chart export"
+                    },
+                    "Calendar_legend_ranks_checked": {
+                        "const": "Check"
+                    },
+                    "Calendar_legend_yandex_update": {
+                        "const": "Yandex update"
+                    },
+                    "Sort_keywords": {
+                        "const": "Sort"
+                    },
+                    "Filter": {
+                        "const": "Filter"
+                    },
+                    "Not_filter": {
+                        "const": "No filter"
+                    },
+                    "Target_and_relevant_URL": {
+                        "const": "Target and ranked URL"
+                    },
+                    "Matches": {
+                        "const": "Match"
+                    },
+                    "Not_matches": {
+                        "const": "Don't match"
+                    },
+                    "Status_not_defined": {
+                        "const": "Matching not defined"
+                    },
+                    "Not_specified": {
+                        "const": "Target not specified"
+                    },
+                    "with_featured_snippets": {
+                        "const": "with Featured Snippets"
+                    },
+                    "Pin_panel": {
+                        "const": "Pin panel"
+                    },
+                    "Pin_filters": {
+                        "const": "Pin filters"
+                    },
+                    "Pin_summary": {
+                        "const": "Pin summary"
+                    },
+                    "Customize_view": {
+                        "const": "Customize view"
+                    },
+                    "Color_theme": {
+                        "const": "Color theme"
+                    },
+                    "Highcharts_Export_PNG": {
+                        "const": "Download PNG image"
+                    },
+                    "Highcharts_Export_JPEG": {
+                        "const": "Download JPEG image"
+                    },
+                    "Highcharts_Export_PDF": {
+                        "const": "Download PDF document"
+                    },
+                    "Highcharts_Export_SVG": {
+                        "const": "Download SVG image"
+                    },
+                    "Highcharts_Export_Print": {
+                        "const": "Print chart"
+                    },
+                    "Highcharts_Export_CSV": {
+                        "const": "Download CSV"
+                    },
+                    "Summary_mode": {
+                        "const": "Summary mode"
+                    },
+                    "Default_summary_mode": {
+                        "const": "Default"
+                    },
+                    "Compact_summary_mode": {
+                        "const": "Compact"
+                    },
+                    "Columns_summary_mode": {
+                        "const": "Columns"
+                    },
+                    "order": {
+                        "const": "keyword ranking report"
+                    },
+                    "Project_has_been_deleted": {
+                        "const": "Project has been deleted"
+                    },
+                    "Snippets_no_checked": {
+                        "const": "<b>Snippets</b> weren't collected on the selected dates."
+                    },
+                    "Snippets_no_checking": {
+                        "const": "<b>Snippets</b> aren't being collected. Turn this feature on in the project's settings."
+                    },
+                    "Selected_time_is_hightload": {
+                        "const": "<p>Selected period is the hight load.</p><p>If you need to get results in the morning, we recommend setting time from <i></i> to <i></i> in the morning.</p>"
+                    }
+                },
+                "required": []
+            }
+        }
+    }
+}
