@@ -2529,7 +2529,7 @@ export interface operations {
         };
         requestBody: {
             content: {
-                "application/json": import('./Example_2/Methodsum/Get.ts').components['schemas']['Example_2.Methodsum.Get'];
+                "application/json": import('./Example_2/Methods/Enum/Get.ts').components['schemas']['Example_2.Methods.Enum.Get'];
             };
         };
         responses: {
