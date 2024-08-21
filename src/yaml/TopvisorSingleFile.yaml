@@ -1210,7 +1210,7 @@ paths:
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/Example_2.Methods.Enum.Get'
+              $ref: '#/components/schemas/Example_2.Methodsum.Get'
         required: true
       responses:
         '200':
@@ -5205,7 +5205,7 @@ components:
         - 1
         - 2
         - 3
-    Example_2.Types.EnumNumberArray:
+    Example_2.TypesumNumberArray:
       type: array
       items:
         $ref: '#/components/schemas/Example_2.Types.Number'
@@ -5228,7 +5228,7 @@ components:
             - $ref: '#/components/schemas/TV.API.Types.BoolArray'
         enum_numbers:
           allOf:
-            - $ref: '#/components/schemas/Example_2.Types.EnumNumberArray'
+            - $ref: '#/components/schemas/Example_2.TypesumNumberArray'
       required:
         - ints
         - strings
@@ -5255,7 +5255,7 @@ components:
         - a
         - b
         - c
-    Example_2.Methods.Enum.Get:
+    Example_2.Methodsum.Get:
       type: object
       properties:
         number:

@@ -12,7 +12,7 @@ export interface components {
             ints: import('../../../TV/API/Types/IntArray.ts').components['schemas']['TV.API.Types.IntArray'];
             strings: import('../../../TV/API/Types/StringArray.ts').components['schemas']['TV.API.Types.StringArray'];
             booleans: import('../../../TV/API/Types/BoolArray.ts').components['schemas']['TV.API.Types.BoolArray'];
-            enum_numbers: import('../../Types/EnumNumberArray.ts').components['schemas']['Example_2.Types.EnumNumberArray'];
+            enum_numbers: import('../../TypesumNumberArray.ts').components['schemas']['Example_2.TypesumNumberArray'];
         };
     };
     responses: never;
