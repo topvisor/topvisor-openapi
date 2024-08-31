@@ -481,6 +481,12 @@
                     "Card_payment": {
                         "const": "Card payment"
                     },
+                    "Card_payment_info": {
+                        "const": "(Visa and Mastercard of Russian banks;<br>«Mir» of any banks)"
+                    },
+                    "Paddle_info": {
+                        "const": "(Visa and Mastercard of non-Russian banks excluding Belarus;<br>American Express, PayPal)"
+                    },
                     "Pay_with_card_processing_time_15min": {
                         "const": "Pay with card. Processing time: 15 minutes."
                     },

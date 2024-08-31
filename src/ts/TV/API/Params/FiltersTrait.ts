@@ -14,6 +14,8 @@ export interface components {
              *
              *     Использует поля модели
              *
+             *     Поля обязатлеьное, если $id не указан
+             *
              *     @see AbstractMethod::MODEL
              *     @see Field::AVAILABLE_OPERATORS
              */
@@ -32,6 +34,8 @@ export interface components {
          *     {name: string, operator: Field::AVAILABLE_OPERATORS, values: array}
          *
          *     Использует поля модели
+         *
+         *     Поля обязатлеьное, если $id не указан
          *
          *     @see AbstractMethod::MODEL
          *     @see Field::AVAILABLE_OPERATORS */

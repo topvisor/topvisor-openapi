@@ -19,7 +19,7 @@ export interface components {
             /** @constant */
             Interval?: "Interval";
             /** @constant */
-            Status?: "Status";
+            Status?: "Enabled";
             /** @constant */
             Task_create_time?: "Creation time";
             /** @constant */
@@ -27,9 +27,9 @@ export interface components {
             /** @constant */
             Task_status?: "Execution status";
             /** @constant */
-            Off?: "Turned off";
+            Off?: "Disabled";
             /** @constant */
-            On?: "Turned on";
+            On?: "Enabled";
             /** @constant */
             New_task?: "New task";
             /** @constant */

@@ -323,6 +323,10 @@ export interface components {
             /** @constant */
             Card_payment?: "Card payment";
             /** @constant */
+            Card_payment_info?: "(Visa and Mastercard of Russian banks;<br>«Mir» of any banks)";
+            /** @constant */
+            Paddle_info?: "(Visa and Mastercard of non-Russian banks excluding Belarus;<br>American Express, PayPal)";
+            /** @constant */
             Pay_with_card_processing_time_15min?: "Pay with card. Processing time: 15 minutes.";
             /** @constant */
             Project_id?: "Project ID";

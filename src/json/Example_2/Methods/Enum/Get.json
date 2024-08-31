@@ -1,34 +1,34 @@
 {
     "openapi": "3.0.0",
     "info": {
-        "title": "Topvisor/Example_2.Methodsum.Get",
+        "title": "Topvisor/Example_2.Methods.Enum.Get",
         "version": "2.0.0"
     },
     "paths": {},
     "components": {
         "schemas": {
-            "Example_2.Methodsum.Get": {
+            "Example_2.Methods.Enum.Get": {
                 "type": "object",
                 "properties": {
                     "number": {
                         "nullable": true,
                         "allOf": [
                             {
-                                "$ref": "../../Example_2/Types/Number.json#/components/schemas/Example_2.Types.Number"
+                                "$ref": "../../../Example_2/Types/Number.json#/components/schemas/Example_2.Types.Number"
                             }
                         ]
                     },
                     "number2": {
                         "allOf": [
                             {
-                                "$ref": "../../Example_2/Types/Number.json#/components/schemas/Example_2.Types.Number"
+                                "$ref": "../../../Example_2/Types/Number.json#/components/schemas/Example_2.Types.Number"
                             }
                         ]
                     },
                     "letter": {
                         "allOf": [
                             {
-                                "$ref": "../../Example_2/Types/Letter.json#/components/schemas/Example_2.Types.Letter"
+                                "$ref": "../../../Example_2/Types/Letter.json#/components/schemas/Example_2.Types.Letter"
                             }
                         ]
                     }

@@ -26,7 +26,7 @@
                         "const": "Interval"
                     },
                     "Status": {
-                        "const": "Status"
+                        "const": "Enabled"
                     },
                     "Task_create_time": {
                         "const": "Creation time"
@@ -38,10 +38,10 @@
                         "const": "Execution status"
                     },
                     "Off": {
-                        "const": "Turned off"
+                        "const": "Disabled"
                     },
                     "On": {
-                        "const": "Turned on"
+                        "const": "Enabled"
                     },
                     "New_task": {
                         "const": "New task"
