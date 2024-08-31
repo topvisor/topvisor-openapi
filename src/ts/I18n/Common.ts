@@ -399,6 +399,8 @@ export interface components {
             /** @constant */
             Select?: "Select";
             /** @constant */
+            Select_all?: "Select all";
+            /** @constant */
             Added?: "Added";
             /** @constant */
             Deleted?: "Deleted";

@@ -595,6 +595,9 @@
                     "Select": {
                         "const": "Select"
                     },
+                    "Select_all": {
+                        "const": "Select all"
+                    },
                     "Added": {
                         "const": "Added"
                     },
