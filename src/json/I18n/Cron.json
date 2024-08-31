@@ -10,44 +10,38 @@
             "I18n.Cron": {
                 "type": "object",
                 "properties": {
-                    "Command": {
-                        "const": "Сommand name"
+                    "Field_command": {
+                        "const": "Сommand"
                     },
-                    "Description": {
+                    "Field_description": {
                         "const": "Description"
                     },
-                    "Days_week": {
+                    "Field_days": {
                         "const": "Days of the week"
                     },
-                    "Hours": {
+                    "Field_hh": {
                         "const": "Hours"
                     },
-                    "Interval": {
-                        "const": "Interval"
+                    "Field_i": {
+                        "const": "Minutes"
                     },
-                    "Status": {
-                        "const": "Enabled"
+                    "Field_on": {
+                        "const": "On/Off"
                     },
-                    "Task_create_time": {
-                        "const": "Creation time"
+                    "Field_task_create_time": {
+                        "const": "Task created"
                     },
-                    "Task_start_time": {
-                        "const": "Start time"
+                    "Field_task_start_time": {
+                        "const": "Task runned"
                     },
-                    "Task_status": {
+                    "Field_task_status": {
                         "const": "Execution status"
                     },
-                    "Off": {
+                    "Disabled": {
                         "const": "Disabled"
                     },
-                    "On": {
+                    "Enabled": {
                         "const": "Enabled"
-                    },
-                    "New_task": {
-                        "const": "New task"
-                    },
-                    "Running_task": {
-                        "const": "Running task"
                     }
                 },
                 "required": []
