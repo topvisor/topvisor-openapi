@@ -7,7 +7,7 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Получение списка имен сервисов, в которых есть команды cron */
+        /** Получение задач cron */
         "Cron_2.Methods.Get": {
             fields: components["schemas"]["fields"];
             orders: components["schemas"]["orders"];
