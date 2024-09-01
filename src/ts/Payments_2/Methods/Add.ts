@@ -19,11 +19,11 @@ export interface components {
          */
         "Payments_2.Methods.Add": {
             /** Платежная система */
-            system: import('../Types/System.ts').components['schemas']['Payments_2.Types.System'];
+            system: components["schemas"]["Payments_2.Types.System"];
             /** Сумма платежа */
             sum: number;
             /** Страна реквизитов */
-            country: import('../Types/Country.ts').components['schemas']['Payments_2.Types.Country'];
+            country: components["schemas"]["Payments_2.Types.Country"];
             /** Номер договора/оферты для платежа */
             requisites_id: string;
             /** ID тарифа (если указан, сумма будет переопределена) */
@@ -53,6 +53,10 @@ export interface components {
             /** Возвратить id платежа, не выполняя redirectToPay() */
             return_id: boolean;
         };
+        /** @enum {string} */
+        "Payments_2.Types.System": "balance" | "card" | "card_ios" | "card_android" | "card_ap" | "card_gp" | "invoice" | "tinkoff_business" | "ap" | "ym" | "qw" | "sb" | "wm2" | "pp" | "pd" | "pd_invoice" | "rk";
+        /** @enum {string} */
+        "Payments_2.Types.Country": "RU" | "UA" | "BY" | "KZ" | "other";
     };
     responses: never;
     parameters: never;

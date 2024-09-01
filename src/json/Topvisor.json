@@ -631,7 +631,7 @@
                             },
                             "model": {
                                 "schema": {
-                                    "$ref": "Models/CronCommands.json#/components/schemas/Models.CronCommands",
+                                    "$ref": "Models/Cron.json#/components/schemas/Models.Cron",
                                     "description": "Only for typescript, does not contain real data"
                                 }
                             }
@@ -690,7 +690,7 @@
                             },
                             "model": {
                                 "schema": {
-                                    "$ref": "Models/CronCommands.json#/components/schemas/Models.CronCommands",
+                                    "$ref": "Models/Cron.json#/components/schemas/Models.Cron",
                                     "description": "Only for typescript, does not contain real data"
                                 }
                             }
@@ -749,7 +749,7 @@
                             },
                             "model": {
                                 "schema": {
-                                    "$ref": "Models/CronCommands.json#/components/schemas/Models.CronCommands",
+                                    "$ref": "Models/Cron.json#/components/schemas/Models.Cron",
                                     "description": "Only for typescript, does not contain real data"
                                 }
                             }
@@ -790,7 +790,7 @@
                                                         "result": {
                                                             "type": "array",
                                                             "items": {
-                                                                "$ref": "Models/CronCommands.json#/components/schemas/Models.CronCommands",
+                                                                "$ref": "Models/Cron.json#/components/schemas/Models.Cron",
                                                                 "description": "Only for typescript, does not contain real data"
                                                             },
                                                             "title": "Список задач cron"
@@ -816,7 +816,7 @@
                             },
                             "model": {
                                 "schema": {
-                                    "$ref": "Models/CronCommands.json#/components/schemas/Models.CronCommands",
+                                    "$ref": "Models/Cron.json#/components/schemas/Models.Cron",
                                     "description": "Only for typescript, does not contain real data"
                                 }
                             }

@@ -24,10 +24,10 @@ export interface components {
              *
              *     Нельзя передавать одновременно в виде массива и в виде файла или использовать совместно с link_sitemap_xml
              */
-            urls?: import('../../../TV/API/Types/UrlArray.ts').components['schemas']['TV.API.Types.UrlArray'] | null;
+            urls?: components["schemas"]["TV.API.Types.UrlArray"] | null;
             /** Файл с содержимым для импорта, допускается формат XML (допустимы сжатые XML в .gz) */
-            link_sitemap_xml?: import('../../../TV/API/Types/Url.ts').components['schemas']['TV.API.Types.Url'] | null;
-            tags?: import('../../Types/Tags.ts').components['schemas']['Urls_2.Types.Tags'] | null;
+            link_sitemap_xml?: components["schemas"]["TV.API.Types.Url"] | null;
+            tags?: components["schemas"]["Urls_2.Types.Tags"] | null;
             /** Очистить список URL перед импортом */
             reset: boolean;
             /**
@@ -37,16 +37,51 @@ export interface components {
             setActiveByRegexpByType: (string | number)[];
             /** Флаг активности в карте сайта
              *     - 1 - присутствовал в прошлых версиях карты сайта */
-            sitemap?: import('../../Types/Flag.ts').components['schemas']['Urls_2.Types.Flag'] | null;
+            sitemap?: components["schemas"]["Urls_2.Types.Flag"] | null;
             /** Флаг активности в аудите */
-            audit?: import('../../Types/Flag.ts').components['schemas']['Urls_2.Types.Flag'] | null;
+            audit?: components["schemas"]["Urls_2.Types.Flag"] | null;
             /** Флаг активности в радаре */
-            indexing?: import('../../Types/Flag.ts').components['schemas']['Urls_2.Types.Flag'] | null;
+            indexing?: components["schemas"]["Urls_2.Types.Flag"] | null;
             /** Флаг активности в индексации */
-            watcher?: import('../../Types/Flag.ts').components['schemas']['Urls_2.Types.Flag'] | null;
+            watcher?: components["schemas"]["Urls_2.Types.Flag"] | null;
             debug?: boolean | null;
-            project_id: import('../../../TV/API/Params/ProjectIdTrait.ts').components['schemas']['TV.API.Params.ProjectIdTrait']['project_id'];
+            project_id: components["schemas"]["project_id"];
         };
+        /**
+         * Краткий URL в punycode, не может содержать UTF-символы:
+         *     - без схемы
+         *     - без "www." в домене
+         *     - без слешей на конце
+         *     - без "<" и ">"
+         * @description Будет проивзедено автоматическое приведение к формату
+         *
+         *     Разрешен ввод строй строки, для удаления значения url
+         */
+        "TV.API.Types.Url": string;
+        /**
+         * Тип массива: Url[]
+         * @description @see Url
+         */
+        "TV.API.Types.UrlArray": components["schemas"]["TV.API.Types.Url"][];
+        /**
+         * Тег для urls
+         * @description Значение должно находится в диапазоне от 1 до 50 включительно
+         */
+        "Urls_2.Types.Tag": string;
+        /**
+         * Массив номеров тегов
+         * @description Тип массива Tags[]
+         *
+         *     @see Tag
+         */
+        "Urls_2.Types.Tags": components["schemas"]["Urls_2.Types.Tag"][];
+        /**
+         * Флаг активности
+         * @enum {integer}
+         */
+        "Urls_2.Types.Flag": -1 | 0 | 1 | 2;
+        /** ID проекта */
+        project_id: number;
     };
     responses: never;
     parameters: never;

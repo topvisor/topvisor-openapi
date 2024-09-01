@@ -11,7 +11,7 @@
                 "type": "object",
                 "properties": {
                     "description": {
-                        "title": "Описание задачи",
+                        "title": "Описание",
                         "type": "string"
                     },
                     "days": {

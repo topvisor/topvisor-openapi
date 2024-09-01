@@ -24,7 +24,7 @@ export interface components {
              * Тип диапазона дат
              * @default 7
              */
-            type_range: import('../../../Types/Indexing/Export/TypeRange.ts').components['schemas']['Audit_2.Types.Indexing.Export.TypeRange'];
+            type_range: components["schemas"]["Audit_2.Types.Indexing.Export.TypeRange"];
             /** Количество дней в диапазоне */
             count_dates?: number | null;
             /** Ппоисковые ключи */
@@ -37,8 +37,15 @@ export interface components {
             data_dynamic?: (string | number)[] | null;
             /** Сортировка данных */
             data_sort?: (string | number)[] | null;
-            project_id: import('../../../../TV/API/Params/ProjectIdTrait.ts').components['schemas']['TV.API.Params.ProjectIdTrait']['project_id'];
+            project_id: components["schemas"]["project_id"];
         };
+        /**
+         * Тип диапазона индексации
+         * @enum {integer}
+         */
+        "Audit_2.Types.Indexing.Export.TypeRange": 0 | 2 | 3 | 4 | 7 | 100;
+        /** ID проекта */
+        project_id: number;
     };
     responses: never;
     parameters: never;

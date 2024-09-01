@@ -21,13 +21,13 @@ export interface components {
             /** ID проверки конца диапазона */
             check_id2?: number | null;
             /** @default 7 */
-            type_range: import('../../Types/Watcher/TypeRange.ts').components['schemas']['Audit_2.Types.Watcher.TypeRange'];
+            type_range: components["schemas"]["Audit_2.Types.Watcher.TypeRange"];
             /**
              * Максимальное число возвращаемых проверок (не более 60)
              * @default 60
              */
             count_ids: number;
-            watcher_type: import('../../Types/Watcher/Type.ts').components['schemas']['Audit_2.Types.Watcher.Type'];
+            watcher_type: components["schemas"]["Audit_2.Types.Watcher.Type"];
             /**
              * Выбор столбцов данных с результатами проверки
              * @default [
@@ -38,17 +38,79 @@ export interface components {
             watcher_fields: (string | number)[];
             /** Добавить в результат заголовки отчета */
             show_headers: boolean;
-            show_diff: import('../../Types/Watcher/ShowDiff.ts').components['schemas']['Audit_2.Types.Watcher.ShowDiff'];
+            show_diff: components["schemas"]["Audit_2.Types.Watcher.ShowDiff"];
             /** Добавить в результат количество проверок */
             show_counts_watcher: boolean;
-            project_id: import('../../../TV/API/Params/ProjectIdTrait.ts').components['schemas']['TV.API.Params.ProjectIdTrait']['project_id'];
-            fields: import('../../../TV/API/Params/FieldsTrait.ts').components['schemas']['TV.API.Params.FieldsTrait']['fields'];
-            filters: import('../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['filters'];
-            id?: import('../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['id'];
-            limit?: import('../../../TV/API/Params/LimitTrait.ts').components['schemas']['TV.API.Params.LimitTrait']['limit'];
-            orders: import('../../../TV/API/Params/OrdersTrait.ts').components['schemas']['TV.API.Params.OrdersTrait']['orders'];
-            offset: import('../../../TV/API/Params/OffsetTrait.ts').components['schemas']['TV.API.Params.OffsetTrait']['offset'];
+            project_id: components["schemas"]["project_id"];
+            fields: components["schemas"]["fields"];
+            filters: components["schemas"]["filters"];
+            id?: components["schemas"]["id"];
+            limit?: components["schemas"]["limit"];
+            orders: components["schemas"]["orders"];
+            offset: components["schemas"]["offset"];
         };
+        /**
+         * Тип диапазона радара
+         * @enum {integer}
+         */
+        "Audit_2.Types.Watcher.TypeRange": 0 | 2 | 3 | 4 | 7 | 100;
+        /**
+         * Тип проверки радара
+         * @enum {string}
+         */
+        "Audit_2.Types.Watcher.Type": "http_codes" | "redirects" | "h1" | "title" | "description" | "content";
+        /**
+         * Добавить в результат различия данных
+         * @enum {integer}
+         */
+        "Audit_2.Types.Watcher.ShowDiff": 0 | 1 | 2 | 3;
+        /** ID проекта */
+        project_id: number;
+        /**
+         * Список полей объекта, которые надо вернуть в результате
+         * @description Если запрос поддерижвает параметр fetch_style, формат ответа может быть разным, fields будет влиять на содержание данных в этом ответе
+         *
+         *     Использует поля модели
+         *
+         *     @see AbstractMethod::MODEL
+         */
+        fields: (string | number)[];
+        /**
+         * Список фильтров по полям объекта
+         * @description {name: string, operator: Field::AVAILABLE_OPERATORS, values: array}
+         *
+         *     Использует поля модели
+         *
+         *     Поля обязатлеьное, если $id не указан
+         *
+         *     @see AbstractMethod::MODEL
+         *     @see Field::AVAILABLE_OPERATORS
+         */
+        filters: (string | number)[];
+        /**
+         * Id объекта, для фильтрации объектов по id
+         * @description Только для моделей с полем id
+         */
+        id: number | null;
+        /**
+         * Количество объектов, которые необходимо получить в результате
+         * @description Используется в паре с offset
+         */
+        limit: number | null;
+        /**
+         * Список полей объекта, по которым необходимо выполнить сортировку
+         * @description Поля могут быть строками или объектом: {name: string, direction: 'ASC' | 'DESC', orderValues: array}
+         *
+         *     Использует поля модели
+         *
+         *     @see AbstractMethod::MODEL
+         */
+        orders: (string | number)[];
+        /**
+         * Число объектов, которое необходимо пропустить при получении резальтата
+         * @description Используется в паре с limit
+         */
+        offset: number;
     };
     responses: never;
     parameters: never;

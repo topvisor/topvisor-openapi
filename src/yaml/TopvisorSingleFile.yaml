@@ -455,7 +455,7 @@ paths:
                   - $ref: '#/components/schemas/ResponseError'
             model:
               schema:
-                $ref: '#/components/schemas/Models.CronCommands'
+                $ref: '#/components/schemas/Models.Cron'
                 description: Only for typescript, does not contain real data
   /del/cron_2/:
     post:
@@ -487,7 +487,7 @@ paths:
                   - $ref: '#/components/schemas/ResponseError'
             model:
               schema:
-                $ref: '#/components/schemas/Models.CronCommands'
+                $ref: '#/components/schemas/Models.Cron'
                 description: Only for typescript, does not contain real data
   /edit/cron_2/:
     post:
@@ -519,7 +519,7 @@ paths:
                   - $ref: '#/components/schemas/ResponseError'
             model:
               schema:
-                $ref: '#/components/schemas/Models.CronCommands'
+                $ref: '#/components/schemas/Models.Cron'
                 description: Only for typescript, does not contain real data
   /get/cron_2/:
     post:
@@ -546,7 +546,7 @@ paths:
                           result:
                             type: array
                             items:
-                              $ref: '#/components/schemas/Models.CronCommands'
+                              $ref: '#/components/schemas/Models.Cron'
                               description: Only for typescript, does not contain real data
                             title: Список задач cron
                         required:
@@ -556,7 +556,7 @@ paths:
                   - $ref: '#/components/schemas/ResponseError'
             model:
               schema:
-                $ref: '#/components/schemas/Models.CronCommands'
+                $ref: '#/components/schemas/Models.Cron'
                 description: Only for typescript, does not contain real data
   /add/payments_2/:
     post:
@@ -3837,7 +3837,7 @@ components:
       type: object
       properties:
         description:
-          title: Описание задачи
+          title: Описание
           type: string
         days:
           allOf:
@@ -3861,10 +3861,8 @@ components:
         - 'on'
         - command
       title: Добавление задачи cron
-    Models.CronCommands:
+    Models.Cron:
       properties:
-        SERVICE():
-          nullable: true
         command:
           type: string
           nullable: true
@@ -3907,7 +3905,7 @@ components:
       type: object
       properties:
         description:
-          title: Описание задачи
+          title: Описание
           nullable: true
           type: string
         days:
@@ -5383,6 +5381,29 @@ components:
         - 'on'
         - command
       title: Добавление задачи cron
+    Models.CronCommands:
+      properties:
+        command:
+          type: string
+          nullable: true
+        service:
+          type: string
+          nullable: true
+        description:
+          type: string
+          nullable: true
+        days:
+          type: string
+          nullable: true
+        hh:
+          type: string
+          nullable: true
+        i:
+          type: string
+          nullable: true
+        'on':
+          type: integer
+          nullable: true
     Cron_2.Methods.Commands.Del:
       type: object
       properties:

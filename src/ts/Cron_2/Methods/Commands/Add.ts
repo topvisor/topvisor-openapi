@@ -11,13 +11,36 @@ export interface components {
         "Cron_2.Methods.Commands.Add": {
             /** Описание задачи */
             description: string;
-            days: import('../../Types/Days.ts').components['schemas']['Cron_2.Types.Days'];
-            hh: import('../../Types/Hour.ts').components['schemas']['Cron_2.Types.Hour'];
-            i: import('../../Types/Minute.ts').components['schemas']['Cron_2.Types.Minute'];
+            days: components["schemas"]["Cron_2.Types.Days"];
+            hh: components["schemas"]["Cron_2.Types.Hour"];
+            i: components["schemas"]["Cron_2.Types.Minute"];
             /** Статус активности задачи */
             on: boolean;
-            command: import('../../Params/CommandTrait.ts').components['schemas']['Cron_2.Params.CommandTrait']['command'];
+            command: components["schemas"]["command"];
         };
+        /**
+         * День недели, в который должен производиться запуск cron
+         * @enum {string}
+         */
+        "Cron_2.Types.Day": "1" | "2" | "3" | "4" | "5" | "6" | "7";
+        /** Дни недели, в которые должен производиться запуск cron */
+        "Cron_2.Types.Days": components["schemas"]["Cron_2.Types.Day"][];
+        /**
+         * Час в который должен производиться запуск cron
+         * @description Пустое значение зарезервированно для запуска cron каждый час
+         *
+         *     Значение должно находиться в диапазоне от 0 до 23 включительно
+         */
+        "Cron_2.Types.Hour": string;
+        /**
+         * Минута или интервал в минутах в который должен производиться запуск cron
+         * @description Значение должно находится в диапазоне от 0 до 59 включительно
+         *
+         *     Если значение является интервалом, в начало ставится символ '*'
+         */
+        "Cron_2.Types.Minute": string;
+        /** Имя команды cron */
+        command: string;
     };
     responses: never;
     parameters: never;

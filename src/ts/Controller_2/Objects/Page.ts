@@ -8,14 +8,14 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         "Controller_2.Objects.Page": {
-            location: import('./Location.ts').components['schemas']['Controller_2.Objects.Location'];
-            openGraph: import('./OpenGraph.ts').components['schemas']['Controller_2.Objects.OpenGraph'];
-            options: import('./Page/Options.ts').components['schemas']['Controller_2.Objects.Page.Options'];
-            article: import('./Page/Article.ts').components['schemas']['Controller_2.Objects.Page.Article'];
-            secondMenu: import('../../Tpl/Core/SecondMenu.ts').components['schemas']['Tpl.Core.SecondMenu'];
-            leftMenu: import('../../Tpl/Core/LeftMenu.ts').components['schemas']['Tpl.Core.LeftMenu'];
+            location: components["schemas"]["Controller_2.Objects.Location"];
+            openGraph: components["schemas"]["Controller_2.Objects.OpenGraph"];
+            options: components["schemas"]["Controller_2.Objects.Page.Options"];
+            article: components["schemas"]["Controller_2.Objects.Page.Article"];
+            secondMenu: components["schemas"]["Tpl.Core.SecondMenu"];
+            leftMenu: components["schemas"]["Tpl.Core.LeftMenu"];
             params: (string | number)[];
-            site: import('./Sites/Site.ts').components['schemas']['Controller_2.Objects.Sites.Site'];
+            site: components["schemas"]["Controller_2.Objects.Sites.Site"];
             subdomain: string;
             langContext: string;
             langUrl: string;
@@ -30,7 +30,7 @@ export interface components {
             redirect: string;
             /** @default 302 */
             redirectCode: number;
-            tplEngine: import('./TplEngine.ts').components['schemas']['Controller_2.Objects.TplEngine'];
+            tplEngine: components["schemas"]["Controller_2.Objects.TplEngine"];
             tplStaticPath: string;
             tplStatic: string;
             tplStaticRendered: string;
@@ -47,6 +47,62 @@ export interface components {
             v: string;
             vJS: string;
         };
+        "Controller_2.Objects.Location": Record<string, never>;
+        "Controller_2.Objects.OpenGraph": Record<string, never>;
+        "Controller_2.Objects.Page.Options": {
+            title: string;
+            description: string;
+            keywords: string;
+            noindex: boolean;
+            canonical: string;
+            alternates: (string | number)[];
+        };
+        "Controller_2.Objects.Page.Article": {
+            /** @default module */
+            type: string;
+            duration?: string | null;
+            word_count?: string | null;
+            htmlRaw: string;
+            url: string;
+            parent_url: string;
+            publish_time?: string | null;
+            h1: string;
+            description?: string | null;
+            menu_name?: string | null;
+            intro?: string | null;
+            html: string;
+            image: string;
+            tags: (string | number)[];
+            count_views: number;
+            count_unique_views?: number | null;
+            count_likes: number;
+            count_comments?: number | null;
+            theme: string;
+            noindex: boolean;
+            quiz_id: string;
+            /** @default ACTIVE */
+            state: string;
+            rubric_name: string;
+            user_id: number;
+            user_name?: string | null;
+            user_description: string;
+            user_avatar: string;
+            view: number;
+            like: number;
+            bookmark: string;
+            bookmark_author: string;
+            author_alias: string;
+        };
+        "Tpl.Core.SecondMenu": Record<string, never>;
+        "Tpl.Core.LeftMenu": {
+            items: (string | number)[];
+        };
+        "Controller_2.Objects.Sites.Site": Record<string, never>;
+        /**
+         * Движок работы с шаблонизатором
+         * @description Является неотъемлемой частью Page
+         */
+        "Controller_2.Objects.TplEngine": Record<string, never>;
     };
     responses: never;
     parameters: never;

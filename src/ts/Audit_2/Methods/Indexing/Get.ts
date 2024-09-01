@@ -12,7 +12,7 @@ export interface components {
          * @description Необходимо указать либо date1 и date2, либо dates (вместе указывать нельзя)
          */
         "Audit_2.Methods.Indexing.Get": {
-            searchers_keys: import('../../Types/Indexing/SearcherKeys.ts').components['schemas']['Audit_2.Types.Indexing.SearcherKeys'];
+            searchers_keys: components["schemas"]["Audit_2.Types.Indexing.SearcherKeys"];
             /**
              * Список полей индексации, которые необъодимо получить
              * @description См. поля indexing_* в объекте Urls
@@ -35,9 +35,9 @@ export interface components {
             /** Произвольные даты без использования диапазона */
             dates?: (string | number)[] | null;
             /** Дата начала диапазона */
-            date1?: import('../../../TV/API/Types/Date.ts').components['schemas']['TV.API.Types.Date'] | null;
+            date1?: components["schemas"]["TV.API.Types.Date"] | null;
             /** Дата окончания диапазона */
-            date2?: import('../../../TV/API/Types/Date.ts').components['schemas']['TV.API.Types.Date'] | null;
+            date2?: components["schemas"]["TV.API.Types.Date"] | null;
             /**
              * Период в днях
              * @default 7
@@ -47,21 +47,96 @@ export interface components {
              * Тип диапазона дат
              * @default 7
              */
-            type_range: import('../../Types/Indexing/Export/TypeRange.ts').components['schemas']['Audit_2.Types.Indexing.Export.TypeRange'];
+            type_range: components["schemas"]["Audit_2.Types.Indexing.Export.TypeRange"];
             /**
              * Количество дней в диапазоне
              * @default 60
              */
             count_dates: number;
-            fields: import('../../../TV/API/Params/FieldsTrait.ts').components['schemas']['TV.API.Params.FieldsTrait']['fields'];
-            orders: import('../../../TV/API/Params/OrdersTrait.ts').components['schemas']['TV.API.Params.OrdersTrait']['orders'];
-            filters: import('../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['filters'];
-            id?: import('../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['id'];
-            limit?: import('../../../TV/API/Params/LimitTrait.ts').components['schemas']['TV.API.Params.LimitTrait']['limit'];
-            offset: import('../../../TV/API/Params/OffsetTrait.ts').components['schemas']['TV.API.Params.OffsetTrait']['offset'];
-            fetch_style?: import('../../../TV/API/Params/FetchStyleTrait.ts').components['schemas']['TV.API.Params.FetchStyleTrait']['fetch_style'];
-            project_id: import('../../../TV/API/Params/ProjectIdTrait.ts').components['schemas']['TV.API.Params.ProjectIdTrait']['project_id'];
+            fields: components["schemas"]["fields"];
+            orders: components["schemas"]["orders"];
+            filters: components["schemas"]["filters"];
+            id?: components["schemas"]["id"];
+            limit?: components["schemas"]["limit"];
+            offset: components["schemas"]["offset"];
+            fetch_style?: components["schemas"]["fetch_style"];
+            project_id: components["schemas"]["project_id"];
         };
+        /**
+         * Id поисковой системы для индексации
+         * @enum {string}
+         */
+        "Audit_2.Types.Indexing.SearcherKey": "0" | "1" | "5" | "6";
+        /** Id поисковых систем для индексации */
+        "Audit_2.Types.Indexing.SearcherKeys": components["schemas"]["Audit_2.Types.Indexing.SearcherKey"][];
+        /**
+         * Дата
+         * @example 2000-01-01
+         */
+        "TV.API.Types.Date": string;
+        /**
+         * Тип диапазона индексации
+         * @enum {integer}
+         */
+        "Audit_2.Types.Indexing.Export.TypeRange": 0 | 2 | 3 | 4 | 7 | 100;
+        /**
+         * Список полей объекта, которые надо вернуть в результате
+         * @description Если запрос поддерижвает параметр fetch_style, формат ответа может быть разным, fields будет влиять на содержание данных в этом ответе
+         *
+         *     Использует поля модели
+         *
+         *     @see AbstractMethod::MODEL
+         */
+        fields: (string | number)[];
+        /**
+         * Список полей объекта, по которым необходимо выполнить сортировку
+         * @description Поля могут быть строками или объектом: {name: string, direction: 'ASC' | 'DESC', orderValues: array}
+         *
+         *     Использует поля модели
+         *
+         *     @see AbstractMethod::MODEL
+         */
+        orders: (string | number)[];
+        /**
+         * Список фильтров по полям объекта
+         * @description {name: string, operator: Field::AVAILABLE_OPERATORS, values: array}
+         *
+         *     Использует поля модели
+         *
+         *     Поля обязатлеьное, если $id не указан
+         *
+         *     @see AbstractMethod::MODEL
+         *     @see Field::AVAILABLE_OPERATORS
+         */
+        filters: (string | number)[];
+        /**
+         * Id объекта, для фильтрации объектов по id
+         * @description Только для моделей с полем id
+         */
+        id: number | null;
+        /**
+         * Количество объектов, которые необходимо получить в результате
+         * @description Используется в паре с offset
+         */
+        limit: number | null;
+        /**
+         * Число объектов, которое необходимо пропустить при получении резальтата
+         * @description Используется в паре с limit
+         */
+        offset: number;
+        /**
+         * Определяет формат результата: коллекция, объект, значение
+         * @description Примеры:
+         *     - fetchAll - получить коллекцию объектов
+         *     - fetch - получить один объект
+         *     - fetchColumn - получить свойсвто объекта
+         *
+         *     @see Selector::AVAILABLE_FETCH_STYLES
+         *     @see Selector::execFetch() - см. реализацию
+         */
+        fetch_style: string | null;
+        /** ID проекта */
+        project_id: number;
     };
     responses: never;
     parameters: never;

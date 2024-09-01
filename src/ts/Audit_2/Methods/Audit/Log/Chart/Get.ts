@@ -13,19 +13,34 @@ export interface components {
          */
         "Audit_2.Methods.Audit.Log.Chart.Get": {
             /** Фильтр по периоду */
-            time1?: import('../../../../../DateTime.ts').components['schemas']['DateTime'] | null;
+            time1?: components["schemas"]["DateTime"] | null;
             /** Фильтр по периоду */
-            time2?: import('../../../../../DateTime.ts').components['schemas']['DateTime'] | null;
+            time2?: components["schemas"]["DateTime"] | null;
             /**
              * Номер страницы (для использования в SQL)
              * @default 1
              */
             page: number;
-            limit?: import('../../../../../TV/API/Params/LimitTrait.ts').components['schemas']['TV.API.Params.LimitTrait']['limit'];
-            offset: import('../../../../../TV/API/Params/OffsetTrait.ts').components['schemas']['TV.API.Params.OffsetTrait']['offset'];
-            project_id: import('../../../../../TV/API/Params/ProjectIdTrait.ts').components['schemas']['TV.API.Params.ProjectIdTrait']['project_id'];
-            check_id: import('../../../../Params/Audit/CheckIdTrait.ts').components['schemas']['Audit_2.Params.Audit.CheckIdTrait']['check_id'];
+            limit?: components["schemas"]["limit"];
+            offset: components["schemas"]["offset"];
+            project_id: components["schemas"]["project_id"];
+            check_id: components["schemas"]["check_id"];
         };
+        DateTime: Record<string, never>;
+        /**
+         * Количество объектов, которые необходимо получить в результате
+         * @description Используется в паре с offset
+         */
+        limit: number | null;
+        /**
+         * Число объектов, которое необходимо пропустить при получении резальтата
+         * @description Используется в паре с limit
+         */
+        offset: number;
+        /** ID проекта */
+        project_id: number;
+        /** ID проверки аудита */
+        check_id: number;
     };
     responses: never;
     parameters: never;

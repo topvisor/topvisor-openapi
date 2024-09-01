@@ -13,7 +13,12 @@ export interface components {
          *
          *     @see Tag
          */
-        "Urls_2.Types.Tags": import('./Tag.ts').components['schemas']['Urls_2.Types.Tag'][];
+        "Urls_2.Types.Tags": components["schemas"]["Urls_2.Types.Tag"][];
+        /**
+         * Тег для urls
+         * @description Значение должно находится в диапазоне от 1 до 50 включительно
+         */
+        "Urls_2.Types.Tag": string;
     };
     responses: never;
     parameters: never;

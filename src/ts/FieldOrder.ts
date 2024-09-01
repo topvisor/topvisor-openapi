@@ -15,11 +15,11 @@ export interface components {
              * Оператор сравнения
              * @default ASC
              */
-            direction: import('./FieldDirection.ts').components['schemas']['FieldDirection'];
+            direction: components["schemas"]["FieldDirection"];
             /** Список значений поля, для ручной сортировки */
             orderValues: (string | number)[];
             /** Оператор сравнения */
-            operator: import('./FieldOperator.ts').components['schemas']['FieldOperator'];
+            operator: components["schemas"]["FieldOperator"];
             /**
              * Значения для сравенния
              * @description В зависимости от типа условия оно может иметь разное количество значений
@@ -28,6 +28,16 @@ export interface components {
              */
             values: (string | number)[];
         };
+        /**
+         * Направление сортировки
+         * @enum {string}
+         */
+        FieldDirection: "ASC" | "DESC";
+        /**
+         * Операторы сравнения с полем
+         * @enum {string}
+         */
+        FieldOperator: "EQUALS" | "NOT_EQUALS" | "IN" | "NOT_IN" | "GREATER_THAN" | "GREATER_THAN_EQUALS" | "LESS_THAN" | "LESS_THAN_EQUALS" | "BETWEEN" | "STARTS_WITH" | "CONTAINS" | "DOES_NOT_CONTAIN" | "REGEXP" | "NOT_REGEXP" | "IS_NULL" | "IS_NOT_NULL";
     };
     responses: never;
     parameters: never;
