@@ -1,7 +1,7 @@
-const fs = require('fs');
-const path = require('path');
-const normalize = require('path-normalize');
-const YAML = require('yaml');
+import fs from 'fs';
+import path from 'path';
+import normalize from 'path-normalize';
+import YAML from 'yaml';
 
 /**
  * Список файлов, в которых проивзедена замена $ref
@@ -203,11 +203,13 @@ function genOutputFileName(sourceFileName) {
 	return outputFileName;
 }
 
-module.exports = {
-	id: 'openapi-typescript-multiScheme',
-	decorators: {
-		oas3: {
-			'replace$refToImportType': replace$refToImportType,
+export default () => {
+	return {
+		id: 'openapi-typescript-multiScheme',
+		decorators: {
+			oas3: {
+				'replace$refToImportType': replace$refToImportType,
+			},
 		},
-	},
+	};
 };

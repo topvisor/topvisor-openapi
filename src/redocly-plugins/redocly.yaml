@@ -1,5 +1,5 @@
 plugins:
-  - plugins/openapi-typescript-multiScheme.cjs
+  - plugins/openapi-typescript-multiScheme.js
 decorators:
   openapi-typescript-multiScheme/replace$refToImportType: 'on'
 apis:
