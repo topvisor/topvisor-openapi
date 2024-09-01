@@ -8,7 +8,7 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         /** Удаление задачи cron */
-        "Cron_2.Methods.Del": {
+        "Cron_2.Methods.Commands.Del": {
             filters: components["schemas"]["filters"];
             id?: components["schemas"]["id"];
             command: components["schemas"]["command"];

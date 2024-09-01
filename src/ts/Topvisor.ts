@@ -185,74 +185,6 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Добавление задачи cron */
-    "/add/cron_2/": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        get?: never;
-        put?: never;
-        post: operations["AddCron2"];
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
-    };  
-    /** Удаление задачи cron */
-    "/del/cron_2/": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        get?: never;
-        put?: never;
-        post: operations["DelCron2"];
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
-    };  
-    /** Изменение задачи cron */
-    "/edit/cron_2/": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        get?: never;
-        put?: never;
-        post: operations["EditCron2"];
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
-    };  
-    /** Получение задач cron */
-    "/get/cron_2/": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        get?: never;
-        put?: never;
-        post: operations["GetCron2"];
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
-    };  
     /**
      * Создать платежку и перейти к оплате
      * @description Возвратит id платежа, если указан параметр $return_id = true
@@ -565,6 +497,91 @@ export interface paths {
         get?: never;
         put?: never;
         post: operations["GetContent2Authors"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Добавление задачи cron */
+    "/add/cron_2/commands/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["AddCron2Commands"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Удаление задачи cron */
+    "/del/cron_2/commands/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["DelCron2Commands"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Изменение задачи cron */
+    "/edit/cron_2/commands/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["EditCron2Commands"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Получение задач cron */
+    "/get/cron_2/commands/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["GetCron2Commands"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Получение списка имен сервисов, в которых есть команды cron */
+    "/get/cron_2/services/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["GetCron2Services"];
         delete?: never;
         options?: never;
         head?: never;
@@ -1872,80 +1889,6 @@ export interface components {
             /** Получить ответы на комменатрий с id = reply_id (нельзя указывать совместно с page_url) */
             reply_id?: number | null;
         };
-        /**
-         * День недели, в который должен производиться запуск cron
-         * @enum {string}
-         */
-        "Cron_2.Types.Day": "1" | "2" | "3" | "4" | "5" | "6" | "7";
-        /** Дни недели, в которые должен производиться запуск cron */
-        "Cron_2.Types.Days": components["schemas"]["Cron_2.Types.Day"][];
-        /**
-         * Час в который должен производиться запуск cron
-         * @description Пустое значение зарезервированно для запуска cron каждый час
-         *
-         *     Значение должно находиться в диапазоне от 0 до 23 включительно
-         */
-        "Cron_2.Types.Hour": string;
-        /**
-         * Минута или интервал в минутах в который должен производиться запуск cron
-         * @description Значение должно находится в диапазоне от 0 до 59 включительно
-         *
-         *     Если значение является интервалом, в начало ставится символ '*'
-         */
-        "Cron_2.Types.Minute": string;
-        /** Имя команды cron */
-        command: string;
-        /** Добавление задачи cron */
-        "Cron_2.Methods.Add": {
-            /** Описание */
-            description: string;
-            days: components["schemas"]["Cron_2.Types.Days"];
-            hh: components["schemas"]["Cron_2.Types.Hour"];
-            i: components["schemas"]["Cron_2.Types.Minute"];
-            /** Статус активности задачи */
-            on: boolean;
-            command: components["schemas"]["command"];
-        };
-        "Models.Cron": {
-            command?: string | null;
-            description?: string | null;
-            days?: string | null;
-            hh?: string | null;
-            i?: string | null;
-            on?: number | null;
-            task_create_time?: unknown;
-            task_start_time?: unknown;
-            task_status?: string | null;
-        };
-        /** Удаление задачи cron */
-        "Cron_2.Methods.Del": {
-            filters: components["schemas"]["filters"];
-            id?: components["schemas"]["id"];
-            command: components["schemas"]["command"];
-        };
-        /** Изменение задачи cron */
-        "Cron_2.Methods.Edit": {
-            /** Описание */
-            description?: string | null;
-            days?: components["schemas"]["Cron_2.Types.Days"] | null;
-            hh?: components["schemas"]["Cron_2.Types.Hour"] | null;
-            i?: components["schemas"]["Cron_2.Types.Minute"] | null;
-            /** Статус активности задачи */
-            on?: boolean | null;
-            filters: components["schemas"]["filters"];
-            id?: components["schemas"]["id"];
-            command: components["schemas"]["command"];
-        };
-        /** Получение задач cron */
-        "Cron_2.Methods.Get": {
-            fields: components["schemas"]["fields"];
-            orders: components["schemas"]["orders"];
-            filters: components["schemas"]["filters"];
-            id?: components["schemas"]["id"];
-            limit?: components["schemas"]["limit"];
-            offset: components["schemas"]["offset"];
-            fetch_style?: components["schemas"]["fetch_style"];
-        };
         /** @enum {string} */
         "Payments_2.Types.System": "balance" | "card" | "card_ios" | "card_android" | "card_ap" | "card_gp" | "invoice" | "tinkoff_business" | "ap" | "ym" | "qw" | "sb" | "wm2" | "pp" | "pd" | "pd_invoice" | "rk";
         /** @enum {string} */
@@ -2648,6 +2591,91 @@ export interface components {
             user_avatar?: string | null;
             user_description?: string | null;
             bookmark_author?: number | null;
+        };
+        /**
+         * День недели, в который должен производиться запуск cron
+         * @enum {string}
+         */
+        "Cron_2.Types.Day": "1" | "2" | "3" | "4" | "5" | "6" | "7";
+        /** Дни недели, в которые должен производиться запуск cron */
+        "Cron_2.Types.Days": components["schemas"]["Cron_2.Types.Day"][];
+        /**
+         * Час в который должен производиться запуск cron
+         * @description Пустое значение зарезервированно для запуска cron каждый час
+         *
+         *     Значение должно находиться в диапазоне от 0 до 23 включительно
+         */
+        "Cron_2.Types.Hour": string;
+        /**
+         * Минута или интервал в минутах в который должен производиться запуск cron
+         * @description Значение должно находится в диапазоне от 0 до 59 включительно
+         *
+         *     Если значение является интервалом, в начало ставится символ '*'
+         */
+        "Cron_2.Types.Minute": string;
+        /** Имя команды cron */
+        command: string;
+        /** Добавление задачи cron */
+        "Cron_2.Methods.Commands.Add": {
+            /** Описание задачи */
+            description: string;
+            days: components["schemas"]["Cron_2.Types.Days"];
+            hh: components["schemas"]["Cron_2.Types.Hour"];
+            i: components["schemas"]["Cron_2.Types.Minute"];
+            /** Статус активности задачи */
+            on: boolean;
+            command: components["schemas"]["command"];
+        };
+        "Models.CronCommands": {
+            "SERVICE()"?: unknown;
+            command?: string | null;
+            description?: string | null;
+            days?: string | null;
+            hh?: string | null;
+            i?: string | null;
+            on?: number | null;
+            task_create_time?: unknown;
+            task_start_time?: unknown;
+            task_status?: string | null;
+        };
+        /** Удаление задачи cron */
+        "Cron_2.Methods.Commands.Del": {
+            filters: components["schemas"]["filters"];
+            id?: components["schemas"]["id"];
+            command: components["schemas"]["command"];
+        };
+        /** Изменение задачи cron */
+        "Cron_2.Methods.Commands.Edit": {
+            /** Описание задачи */
+            description?: string | null;
+            days?: components["schemas"]["Cron_2.Types.Days"] | null;
+            hh?: components["schemas"]["Cron_2.Types.Hour"] | null;
+            i?: components["schemas"]["Cron_2.Types.Minute"] | null;
+            /** Статус активности задачи */
+            on?: boolean | null;
+            filters: components["schemas"]["filters"];
+            id?: components["schemas"]["id"];
+            command: components["schemas"]["command"];
+        };
+        /** Получение задач cron */
+        "Cron_2.Methods.Commands.Get": {
+            fields: components["schemas"]["fields"];
+            orders: components["schemas"]["orders"];
+            filters: components["schemas"]["filters"];
+            id?: components["schemas"]["id"];
+            limit?: components["schemas"]["limit"];
+            offset: components["schemas"]["offset"];
+            fetch_style?: components["schemas"]["fetch_style"];
+        };
+        /** Получение списка имен сервисов, в которых есть команды cron */
+        "Cron_2.Methods.Get": {
+            fields: components["schemas"]["fields"];
+            orders: components["schemas"]["orders"];
+            filters: components["schemas"]["filters"];
+            id?: components["schemas"]["id"];
+            limit?: components["schemas"]["limit"];
+            offset: components["schemas"]["offset"];
+            fetch_style?: components["schemas"]["fetch_style"];
         };
         /**
          * Тип массива: int
@@ -4290,111 +4318,6 @@ export interface operations {
             };
         };
     };
-    AddCron2: {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        requestBody: {
-            content: {
-                "application/json": components["schemas"]["Cron_2.Methods.Add"];
-            };
-        };
-        responses: {
-            200: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/json": ({
-                        result: number;
-                    } & components["schemas"]["ResponseSuccess"]) | components["schemas"]["ResponseError"];
-                    model: components["schemas"]["Models.Cron"];
-                };
-            };
-        };
-    };
-    DelCron2: {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        requestBody: {
-            content: {
-                "application/json": components["schemas"]["Cron_2.Methods.Del"];
-            };
-        };
-        responses: {
-            200: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/json": ({
-                        result: number;
-                    } & components["schemas"]["ResponseSuccess"]) | components["schemas"]["ResponseError"];
-                    model: components["schemas"]["Models.Cron"];
-                };
-            };
-        };
-    };
-    EditCron2: {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        requestBody: {
-            content: {
-                "application/json": components["schemas"]["Cron_2.Methods.Edit"];
-            };
-        };
-        responses: {
-            200: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/json": ({
-                        result: number;
-                    } & components["schemas"]["ResponseSuccess"]) | components["schemas"]["ResponseError"];
-                    model: components["schemas"]["Models.Cron"];
-                };
-            };
-        };
-    };
-    GetCron2: {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        requestBody: {
-            content: {
-                "application/json": components["schemas"]["Cron_2.Methods.Get"];
-            };
-        };
-        responses: {
-            200: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/json": ({
-                        /** Список задач cron */
-                        result: components["schemas"]["Models.Cron"][];
-                    } & components["schemas"]["ResponseSuccess"] & components["schemas"]["Pagination"]) | components["schemas"]["ResponseError"];
-                    model: components["schemas"]["Models.Cron"];
-                };
-            };
-        };
-    };
     AddPayments2: {
         parameters: {
             query?: never;
@@ -4839,6 +4762,138 @@ export interface operations {
                         result: unknown;
                     } & components["schemas"]["ResponseSuccess"] & components["schemas"]["Pagination"]) | components["schemas"]["ResponseError"];
                     model: components["schemas"]["Models.Content.Authors"];
+                };
+            };
+        };
+    };
+    AddCron2Commands: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": components["schemas"]["Cron_2.Methods.Commands.Add"];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: number;
+                    } & components["schemas"]["ResponseSuccess"]) | components["schemas"]["ResponseError"];
+                    model: components["schemas"]["Models.CronCommands"];
+                };
+            };
+        };
+    };
+    DelCron2Commands: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": components["schemas"]["Cron_2.Methods.Commands.Del"];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: number;
+                    } & components["schemas"]["ResponseSuccess"]) | components["schemas"]["ResponseError"];
+                    model: components["schemas"]["Models.CronCommands"];
+                };
+            };
+        };
+    };
+    EditCron2Commands: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": components["schemas"]["Cron_2.Methods.Commands.Edit"];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: number;
+                    } & components["schemas"]["ResponseSuccess"]) | components["schemas"]["ResponseError"];
+                    model: components["schemas"]["Models.CronCommands"];
+                };
+            };
+        };
+    };
+    GetCron2Commands: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": components["schemas"]["Cron_2.Methods.Commands.Get"];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        /** Список задач cron */
+                        result: components["schemas"]["Models.CronCommands"][];
+                    } & components["schemas"]["ResponseSuccess"] & components["schemas"]["Pagination"]) | components["schemas"]["ResponseError"];
+                    model: components["schemas"]["Models.CronCommands"];
+                };
+            };
+        };
+    };
+    GetCron2Services: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": components["schemas"]["Cron_2.Methods.Get"];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        /** Список имен сервисов */
+                        result: components["schemas"]["Models.CronCommands"][];
+                    } & components["schemas"]["ResponseSuccess"] & components["schemas"]["Pagination"]) | components["schemas"]["ResponseError"];
+                    model: components["schemas"]["Models.CronCommands"];
                 };
             };
         };

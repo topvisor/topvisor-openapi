@@ -1,37 +1,37 @@
 {
     "openapi": "3.0.0",
     "info": {
-        "title": "Topvisor/Cron_2.Methods.Add",
+        "title": "Topvisor/Cron_2.Methods.Commands.Add",
         "version": "2.0.0"
     },
     "paths": {},
     "components": {
         "schemas": {
-            "Cron_2.Methods.Add": {
+            "Cron_2.Methods.Commands.Add": {
                 "type": "object",
                 "properties": {
                     "description": {
-                        "title": "Описание",
+                        "title": "Описание задачи",
                         "type": "string"
                     },
                     "days": {
                         "allOf": [
                             {
-                                "$ref": "../../Cron_2/Types/Days.json#/components/schemas/Cron_2.Types.Days"
+                                "$ref": "../../../Cron_2/Types/Days.json#/components/schemas/Cron_2.Types.Days"
                             }
                         ]
                     },
                     "hh": {
                         "allOf": [
                             {
-                                "$ref": "../../Cron_2/Types/Hour.json#/components/schemas/Cron_2.Types.Hour"
+                                "$ref": "../../../Cron_2/Types/Hour.json#/components/schemas/Cron_2.Types.Hour"
                             }
                         ]
                     },
                     "i": {
                         "allOf": [
                             {
-                                "$ref": "../../Cron_2/Types/Minute.json#/components/schemas/Cron_2.Types.Minute"
+                                "$ref": "../../../Cron_2/Types/Minute.json#/components/schemas/Cron_2.Types.Minute"
                             }
                         ]
                     },
@@ -40,7 +40,7 @@
                         "type": "boolean"
                     },
                     "command": {
-                        "$ref": "../../Cron_2/Params/CommandTrait.json#/components/schemas/Cron_2.Params.CommandTrait/properties/command"
+                        "$ref": "../../../Cron_2/Params/CommandTrait.json#/components/schemas/Cron_2.Params.CommandTrait/properties/command"
                     }
                 },
                 "required": [

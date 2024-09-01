@@ -581,250 +581,6 @@
                 }
             }
         },
-        "/add/cron_2/": {
-            "post": {
-                "operationId": "AddCron2",
-                "tags": [
-                    "Cron_2"
-                ],
-                "summary": "Добавление задачи cron",
-                "requestBody": {
-                    "content": {
-                        "application/json": {
-                            "schema": {
-                                "$ref": "Cron_2/Methods/Add.json#/components/schemas/Cron_2.Methods.Add"
-                            }
-                        }
-                    },
-                    "required": true
-                },
-                "responses": {
-                    "200": {
-                        "description": "",
-                        "content": {
-                            "application/json": {
-                                "schema": {
-                                    "oneOf": [
-                                        {
-                                            "allOf": [
-                                                {
-                                                    "type": "object",
-                                                    "properties": {
-                                                        "result": {
-                                                            "type": "integer"
-                                                        }
-                                                    },
-                                                    "required": [
-                                                        "result"
-                                                    ]
-                                                },
-                                                {
-                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
-                                                }
-                                            ]
-                                        },
-                                        {
-                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
-                                        }
-                                    ]
-                                }
-                            },
-                            "model": {
-                                "schema": {
-                                    "$ref": "Models/Cron.json#/components/schemas/Models.Cron",
-                                    "description": "Only for typescript, does not contain real data"
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        },
-        "/del/cron_2/": {
-            "post": {
-                "operationId": "DelCron2",
-                "tags": [
-                    "Cron_2"
-                ],
-                "summary": "Удаление задачи cron",
-                "requestBody": {
-                    "content": {
-                        "application/json": {
-                            "schema": {
-                                "$ref": "Cron_2/Methods/Del.json#/components/schemas/Cron_2.Methods.Del"
-                            }
-                        }
-                    },
-                    "required": true
-                },
-                "responses": {
-                    "200": {
-                        "description": "",
-                        "content": {
-                            "application/json": {
-                                "schema": {
-                                    "oneOf": [
-                                        {
-                                            "allOf": [
-                                                {
-                                                    "type": "object",
-                                                    "properties": {
-                                                        "result": {
-                                                            "type": "integer"
-                                                        }
-                                                    },
-                                                    "required": [
-                                                        "result"
-                                                    ]
-                                                },
-                                                {
-                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
-                                                }
-                                            ]
-                                        },
-                                        {
-                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
-                                        }
-                                    ]
-                                }
-                            },
-                            "model": {
-                                "schema": {
-                                    "$ref": "Models/Cron.json#/components/schemas/Models.Cron",
-                                    "description": "Only for typescript, does not contain real data"
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        },
-        "/edit/cron_2/": {
-            "post": {
-                "operationId": "EditCron2",
-                "tags": [
-                    "Cron_2"
-                ],
-                "summary": "Изменение задачи cron",
-                "requestBody": {
-                    "content": {
-                        "application/json": {
-                            "schema": {
-                                "$ref": "Cron_2/Methods/Edit.json#/components/schemas/Cron_2.Methods.Edit"
-                            }
-                        }
-                    },
-                    "required": true
-                },
-                "responses": {
-                    "200": {
-                        "description": "",
-                        "content": {
-                            "application/json": {
-                                "schema": {
-                                    "oneOf": [
-                                        {
-                                            "allOf": [
-                                                {
-                                                    "type": "object",
-                                                    "properties": {
-                                                        "result": {
-                                                            "type": "integer"
-                                                        }
-                                                    },
-                                                    "required": [
-                                                        "result"
-                                                    ]
-                                                },
-                                                {
-                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
-                                                }
-                                            ]
-                                        },
-                                        {
-                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
-                                        }
-                                    ]
-                                }
-                            },
-                            "model": {
-                                "schema": {
-                                    "$ref": "Models/Cron.json#/components/schemas/Models.Cron",
-                                    "description": "Only for typescript, does not contain real data"
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        },
-        "/get/cron_2/": {
-            "post": {
-                "operationId": "GetCron2",
-                "tags": [
-                    "Cron_2"
-                ],
-                "summary": "Получение задач cron",
-                "requestBody": {
-                    "content": {
-                        "application/json": {
-                            "schema": {
-                                "$ref": "Cron_2/Methods/Get.json#/components/schemas/Cron_2.Methods.Get"
-                            }
-                        }
-                    },
-                    "required": true
-                },
-                "responses": {
-                    "200": {
-                        "description": "",
-                        "content": {
-                            "application/json": {
-                                "schema": {
-                                    "oneOf": [
-                                        {
-                                            "allOf": [
-                                                {
-                                                    "type": "object",
-                                                    "properties": {
-                                                        "result": {
-                                                            "type": "array",
-                                                            "items": {
-                                                                "$ref": "Models/Cron.json#/components/schemas/Models.Cron",
-                                                                "description": "Only for typescript, does not contain real data"
-                                                            },
-                                                            "title": "Список задач cron"
-                                                        }
-                                                    },
-                                                    "required": [
-                                                        "result"
-                                                    ]
-                                                },
-                                                {
-                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
-                                                },
-                                                {
-                                                    "$ref": "Pagination.json#/components/schemas/Pagination"
-                                                }
-                                            ]
-                                        },
-                                        {
-                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
-                                        }
-                                    ]
-                                }
-                            },
-                            "model": {
-                                "schema": {
-                                    "$ref": "Models/Cron.json#/components/schemas/Models.Cron",
-                                    "description": "Only for typescript, does not contain real data"
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        },
         "/add/payments_2/": {
             "post": {
                 "operationId": "AddPayments2",
@@ -1859,6 +1615,317 @@
                             "model": {
                                 "schema": {
                                     "$ref": "Models/Content/Authors.json#/components/schemas/Models.Content.Authors",
+                                    "description": "Only for typescript, does not contain real data"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/add/cron_2/commands/": {
+            "post": {
+                "operationId": "AddCron2Commands",
+                "tags": [
+                    "Cron_2"
+                ],
+                "summary": "Добавление задачи cron",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Cron_2/Methods/Commands/Add.json#/components/schemas/Cron_2.Methods.Commands.Add"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "oneOf": [
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "type": "integer"
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "result"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
+                                        }
+                                    ]
+                                }
+                            },
+                            "model": {
+                                "schema": {
+                                    "$ref": "Models/CronCommands.json#/components/schemas/Models.CronCommands",
+                                    "description": "Only for typescript, does not contain real data"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/del/cron_2/commands/": {
+            "post": {
+                "operationId": "DelCron2Commands",
+                "tags": [
+                    "Cron_2"
+                ],
+                "summary": "Удаление задачи cron",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Cron_2/Methods/Commands/Del.json#/components/schemas/Cron_2.Methods.Commands.Del"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "oneOf": [
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "type": "integer"
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "result"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
+                                        }
+                                    ]
+                                }
+                            },
+                            "model": {
+                                "schema": {
+                                    "$ref": "Models/CronCommands.json#/components/schemas/Models.CronCommands",
+                                    "description": "Only for typescript, does not contain real data"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/edit/cron_2/commands/": {
+            "post": {
+                "operationId": "EditCron2Commands",
+                "tags": [
+                    "Cron_2"
+                ],
+                "summary": "Изменение задачи cron",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Cron_2/Methods/Commands/Edit.json#/components/schemas/Cron_2.Methods.Commands.Edit"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "oneOf": [
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "type": "integer"
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "result"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
+                                        }
+                                    ]
+                                }
+                            },
+                            "model": {
+                                "schema": {
+                                    "$ref": "Models/CronCommands.json#/components/schemas/Models.CronCommands",
+                                    "description": "Only for typescript, does not contain real data"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/get/cron_2/commands/": {
+            "post": {
+                "operationId": "GetCron2Commands",
+                "tags": [
+                    "Cron_2"
+                ],
+                "summary": "Получение задач cron",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Cron_2/Methods/Commands/Get.json#/components/schemas/Cron_2.Methods.Commands.Get"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "oneOf": [
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "type": "array",
+                                                            "items": {
+                                                                "$ref": "Models/CronCommands.json#/components/schemas/Models.CronCommands",
+                                                                "description": "Only for typescript, does not contain real data"
+                                                            },
+                                                            "title": "Список задач cron"
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "result"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                },
+                                                {
+                                                    "$ref": "Pagination.json#/components/schemas/Pagination"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
+                                        }
+                                    ]
+                                }
+                            },
+                            "model": {
+                                "schema": {
+                                    "$ref": "Models/CronCommands.json#/components/schemas/Models.CronCommands",
+                                    "description": "Only for typescript, does not contain real data"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/get/cron_2/services/": {
+            "post": {
+                "operationId": "GetCron2Services",
+                "tags": [
+                    "Cron_2"
+                ],
+                "summary": "Получение списка имен сервисов, в которых есть команды cron",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Cron_2/Methods/Get.json#/components/schemas/Cron_2.Methods.Get"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "oneOf": [
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "type": "array",
+                                                            "items": {
+                                                                "$ref": "Models/CronCommands.json#/components/schemas/Models.CronCommands",
+                                                                "description": "Only for typescript, does not contain real data"
+                                                            },
+                                                            "title": "Список имен сервисов"
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "result"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                },
+                                                {
+                                                    "$ref": "Pagination.json#/components/schemas/Pagination"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
+                                        }
+                                    ]
+                                }
+                            },
+                            "model": {
+                                "schema": {
+                                    "$ref": "Models/CronCommands.json#/components/schemas/Models.CronCommands",
                                     "description": "Only for typescript, does not contain real data"
                                 }
                             }

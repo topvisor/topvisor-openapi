@@ -59,15 +59,7 @@ export interface components {
             redirect_path?: unknown;
         };
         "Models.CronCommands": {
-            command?: string | null;
-            service?: string | null;
-            description?: string | null;
-            days?: string | null;
-            hh?: string | null;
-            i?: string | null;
-            on?: number | null;
-        };
-        "Models.Cron": {
+            "SERVICE()"?: unknown;
             command?: string | null;
             description?: string | null;
             days?: string | null;

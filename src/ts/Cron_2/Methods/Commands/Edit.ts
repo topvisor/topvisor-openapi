@@ -7,15 +7,17 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Добавление задачи cron */
-        "Cron_2.Methods.Add": {
-            /** Описание */
-            description: string;
-            days: components["schemas"]["Cron_2.Types.Days"];
-            hh: components["schemas"]["Cron_2.Types.Hour"];
-            i: components["schemas"]["Cron_2.Types.Minute"];
+        /** Изменение задачи cron */
+        "Cron_2.Methods.Commands.Edit": {
+            /** Описание задачи */
+            description?: string | null;
+            days?: components["schemas"]["Cron_2.Types.Days"] | null;
+            hh?: components["schemas"]["Cron_2.Types.Hour"] | null;
+            i?: components["schemas"]["Cron_2.Types.Minute"] | null;
             /** Статус активности задачи */
-            on: boolean;
+            on?: boolean | null;
+            filters: components["schemas"]["filters"];
+            id?: components["schemas"]["id"];
             command: components["schemas"]["command"];
         };
         /**
@@ -39,6 +41,23 @@ export interface components {
          *     Если значение является интервалом, в начало ставится символ '*'
          */
         "Cron_2.Types.Minute": string;
+        /**
+         * Список фильтров по полям объекта
+         * @description {name: string, operator: Field::AVAILABLE_OPERATORS, values: array}
+         *
+         *     Использует поля модели
+         *
+         *     Поля обязатлеьное, если $id не указан
+         *
+         *     @see AbstractMethod::MODEL
+         *     @see Field::AVAILABLE_OPERATORS
+         */
+        filters: (string | number)[];
+        /**
+         * Id объекта, для фильтрации объектов по id
+         * @description Только для моделей с полем id
+         */
+        id: number | null;
         /** Имя команды cron */
         command: string;
     };

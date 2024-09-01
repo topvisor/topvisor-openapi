@@ -22,9 +22,6 @@
             "Models.CronCommands": {
                 "$ref": "Models/CronCommands.json#/components/schemas/Models.CronCommands"
             },
-            "Models.Cron": {
-                "$ref": "Models/Cron.json#/components/schemas/Models.Cron"
-            },
             "Models.EmptyModel": {
                 "$ref": "Models/EmptyModel.json#/components/schemas/Models.EmptyModel"
             },
