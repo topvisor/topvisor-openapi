@@ -571,6 +571,91 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
+    /** Добавление задачи cron */
+    "/add/cron_2/commands/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["AddCron2Commands"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Удаление задачи cron */
+    "/del/cron_2/commands/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["DelCron2Commands"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Изменение задачи cron */
+    "/edit/cron_2/commands/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["EditCron2Commands"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Получение задач cron */
+    "/get/cron_2/commands/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["GetCron2Commands"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Получение списка имен сервисов, в которых есть команды cron */
+    "/get/cron_2/services/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["GetCron2Services"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
     /** Метод с примерами параметров типа Enum */
     "/get/example_2/array/": {
         parameters: {
@@ -1935,7 +2020,7 @@ export interface operations {
                     "application/json": ({
                         result: number;
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: import('./Models/Cron.ts').components['schemas']['Models.Cron'];
+                    model: import('./Models/CronCommands.ts').components['schemas']['Models.CronCommands'];
                 };
             };
         };
@@ -1961,7 +2046,7 @@ export interface operations {
                     "application/json": ({
                         result: number;
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: import('./Models/Cron.ts').components['schemas']['Models.Cron'];
+                    model: import('./Models/CronCommands.ts').components['schemas']['Models.CronCommands'];
                 };
             };
         };
@@ -1987,7 +2072,7 @@ export interface operations {
                     "application/json": ({
                         result: number;
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: import('./Models/Cron.ts').components['schemas']['Models.Cron'];
+                    model: import('./Models/CronCommands.ts').components['schemas']['Models.CronCommands'];
                 };
             };
         };
@@ -2012,9 +2097,9 @@ export interface operations {
                 content: {
                     "application/json": ({
                         /** Список задач cron */
-                        result: import('./Models/Cron.ts').components['schemas']['Models.Cron'][];
+                        result: import('./Models/CronCommands.ts').components['schemas']['Models.CronCommands'][];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: import('./Models/Cron.ts').components['schemas']['Models.Cron'];
+                    model: import('./Models/CronCommands.ts').components['schemas']['Models.CronCommands'];
                 };
             };
         };
@@ -2463,6 +2548,138 @@ export interface operations {
                         result: unknown;
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: import('./Models/Content/Authors.ts').components['schemas']['Models.Content.Authors'];
+                };
+            };
+        };
+    };
+    AddCron2Commands: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Cron_2/Methods/Commands/Add.ts').components['schemas']['Cron_2.Methods.Commands.Add'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: number;
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: import('./Models/CronCommands.ts').components['schemas']['Models.CronCommands'];
+                };
+            };
+        };
+    };
+    DelCron2Commands: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Cron_2/Methods/Commands/Del.ts').components['schemas']['Cron_2.Methods.Commands.Del'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: number;
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: import('./Models/CronCommands.ts').components['schemas']['Models.CronCommands'];
+                };
+            };
+        };
+    };
+    EditCron2Commands: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Cron_2/Methods/Commands/Edit.ts').components['schemas']['Cron_2.Methods.Commands.Edit'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: number;
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: import('./Models/CronCommands.ts').components['schemas']['Models.CronCommands'];
+                };
+            };
+        };
+    };
+    GetCron2Commands: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Cron_2/Methods/Commands/Get.ts').components['schemas']['Cron_2.Methods.Commands.Get'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        /** Список задач cron */
+                        result: import('./Models/CronCommands.ts').components['schemas']['Models.CronCommands'][];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: import('./Models/CronCommands.ts').components['schemas']['Models.CronCommands'];
+                };
+            };
+        };
+    };
+    GetCron2Services: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Cron_2/Methods/Get.ts').components['schemas']['Cron_2.Methods.Get'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        /** Список имен сервисов */
+                        result: import('./Models/CronCommands.ts').components['schemas']['Models.CronCommands'][];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: import('./Models/CronCommands.ts').components['schemas']['Models.CronCommands'];
                 };
             };
         };

@@ -9,11 +9,10 @@
         "schemas": {
             "Models.CronCommands": {
                 "properties": {
-                    "command": {
-                        "type": "string",
+                    "SERVICE()": {
                         "nullable": true
                     },
-                    "service": {
+                    "command": {
                         "type": "string",
                         "nullable": true
                     },
@@ -35,6 +34,16 @@
                     },
                     "on": {
                         "type": "integer",
+                        "nullable": true
+                    },
+                    "task_create_time": {
+                        "nullable": true
+                    },
+                    "task_start_time": {
+                        "nullable": true
+                    },
+                    "task_status": {
+                        "type": "string",
                         "nullable": true
                     }
                 }

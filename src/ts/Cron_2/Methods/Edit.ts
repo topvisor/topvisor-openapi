@@ -9,7 +9,7 @@ export interface components {
     schemas: {
         /** Изменение задачи cron */
         "Cron_2.Methods.Edit": {
-            /** Описание */
+            /** Описание задачи */
             description?: string | null;
             days?: import('../Types/Days.ts').components['schemas']['Cron_2.Types.Days'] | null;
             hh?: import('../Types/Hour.ts').components['schemas']['Cron_2.Types.Hour'] | null;

@@ -8,6 +8,7 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         "Models.Cron": {
+            "SERVICE()"?: unknown;
             command?: string | null;
             description?: string | null;
             days?: string | null;

@@ -1,13 +1,13 @@
 {
     "openapi": "3.0.0",
     "info": {
-        "title": "Topvisor/Cron_2.Methods.Edit",
+        "title": "Topvisor/Cron_2.Methods.Commands.Edit",
         "version": "2.0.0"
     },
     "paths": {},
     "components": {
         "schemas": {
-            "Cron_2.Methods.Edit": {
+            "Cron_2.Methods.Commands.Edit": {
                 "type": "object",
                 "properties": {
                     "description": {
@@ -19,7 +19,7 @@
                         "nullable": true,
                         "allOf": [
                             {
-                                "$ref": "../../Cron_2/Types/Days.json#/components/schemas/Cron_2.Types.Days"
+                                "$ref": "../../../Cron_2/Types/Days.json#/components/schemas/Cron_2.Types.Days"
                             }
                         ]
                     },
@@ -27,7 +27,7 @@
                         "nullable": true,
                         "allOf": [
                             {
-                                "$ref": "../../Cron_2/Types/Hour.json#/components/schemas/Cron_2.Types.Hour"
+                                "$ref": "../../../Cron_2/Types/Hour.json#/components/schemas/Cron_2.Types.Hour"
                             }
                         ]
                     },
@@ -35,7 +35,7 @@
                         "nullable": true,
                         "allOf": [
                             {
-                                "$ref": "../../Cron_2/Types/Minute.json#/components/schemas/Cron_2.Types.Minute"
+                                "$ref": "../../../Cron_2/Types/Minute.json#/components/schemas/Cron_2.Types.Minute"
                             }
                         ]
                     },
@@ -45,13 +45,13 @@
                         "type": "boolean"
                     },
                     "filters": {
-                        "$ref": "../../TV/API/Params/FiltersTrait.json#/components/schemas/TV.API.Params.FiltersTrait/properties/filters"
+                        "$ref": "../../../TV/API/Params/FiltersTrait.json#/components/schemas/TV.API.Params.FiltersTrait/properties/filters"
                     },
                     "id": {
-                        "$ref": "../../TV/API/Params/FiltersTrait.json#/components/schemas/TV.API.Params.FiltersTrait/properties/id"
+                        "$ref": "../../../TV/API/Params/FiltersTrait.json#/components/schemas/TV.API.Params.FiltersTrait/properties/id"
                     },
                     "command": {
-                        "$ref": "../../Cron_2/Params/CommandTrait.json#/components/schemas/Cron_2.Params.CommandTrait/properties/command"
+                        "$ref": "../../../Cron_2/Params/CommandTrait.json#/components/schemas/Cron_2.Params.CommandTrait/properties/command"
                     }
                 },
                 "required": [

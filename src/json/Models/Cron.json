@@ -9,6 +9,9 @@
         "schemas": {
             "Models.Cron": {
                 "properties": {
+                    "SERVICE()": {
+                        "nullable": true
+                    },
                     "command": {
                         "type": "string",
                         "nullable": true

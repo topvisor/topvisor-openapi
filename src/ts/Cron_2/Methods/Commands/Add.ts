@@ -8,15 +8,15 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         /** Добавление задачи cron */
-        "Cron_2.Methods.Add": {
+        "Cron_2.Methods.Commands.Add": {
             /** Описание задачи */
             description: string;
-            days: import('../Types/Days.ts').components['schemas']['Cron_2.Types.Days'];
-            hh: import('../Types/Hour.ts').components['schemas']['Cron_2.Types.Hour'];
-            i: import('../Types/Minute.ts').components['schemas']['Cron_2.Types.Minute'];
+            days: import('../../Types/Days.ts').components['schemas']['Cron_2.Types.Days'];
+            hh: import('../../Types/Hour.ts').components['schemas']['Cron_2.Types.Hour'];
+            i: import('../../Types/Minute.ts').components['schemas']['Cron_2.Types.Minute'];
             /** Статус активности задачи */
             on: boolean;
-            command: import('../Params/CommandTrait.ts').components['schemas']['Cron_2.Params.CommandTrait']['command'];
+            command: import('../../Params/CommandTrait.ts').components['schemas']['Cron_2.Params.CommandTrait']['command'];
         };
     };
     responses: never;
