@@ -8,7 +8,7 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         /**
-         * Дата
+         * E-mail
          * @example name@example.com
          */
         "TV.API.Types.Email": string;

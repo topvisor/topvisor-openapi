@@ -20,7 +20,7 @@ export interface components {
             indexing?: components["schemas"]["Urls_2.Types.Flag"] | null;
             /** Флаг активности в индексации */
             watcher?: components["schemas"]["Urls_2.Types.Flag"] | null;
-            tags?: components["schemas"]["Urls_2.Types.Tags"] | null;
+            tags?: components["schemas"]["Tags_2.Types.Tags"] | null;
             project_id: components["schemas"]["project_id"];
         };
         /**
@@ -40,17 +40,17 @@ export interface components {
          */
         "Urls_2.Types.Flag": -1 | 0 | 1 | 2;
         /**
-         * Тег для urls
-         * @description Значение должно находится в диапазоне от 1 до 50 включительно
+         * Доступные теги
+         * @description Значение должно находится в диапазоне от 1 до 20 включительно
          */
-        "Urls_2.Types.Tag": string;
+        "Tags_2.Types.Tag": string;
         /**
          * Массив номеров тегов
          * @description Тип массива Tags[]
          *
-         *     @see Tag
+         *     @see Tags_2\Types\Tag
          */
-        "Urls_2.Types.Tags": components["schemas"]["Urls_2.Types.Tag"][];
+        "Tags_2.Types.Tags": components["schemas"]["Tags_2.Types.Tag"][];
         /** ID проекта */
         project_id: number;
     };

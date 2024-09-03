@@ -1,0 +1,90 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Tickets_2.Methods.Tickets.Add",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Tickets_2.Methods.Tickets.Add": {
+                "type": "object",
+                "properties": {
+                    "text": {
+                        "title": "Текст тикета",
+                        "type": "string"
+                    },
+                    "type": {
+                        "default": "system",
+                        "allOf": [
+                            {
+                                "$ref": "../../../Tickets_2/Types/Tickets/Type.json#/components/schemas/Tickets_2.Types.Tickets.Type"
+                            }
+                        ]
+                    },
+                    "lang": {
+                        "title": "Язык тикета, нужен для подгрузки правильного языка в ответных письмах через почту",
+                        "nullable": true,
+                        "allOf": [
+                            {
+                                "$ref": "../../../TV/API/Types/Lang.json#/components/schemas/TV.API.Types.Lang"
+                            }
+                        ]
+                    },
+                    "user_data": {
+                        "title": "Данные среды пользователя",
+                        "nullable": true,
+                        "type": "array",
+                        "items": {
+                            "oneOf": [
+                                {
+                                    "type": "string"
+                                },
+                                {
+                                    "type": "number"
+                                }
+                            ]
+                        }
+                    },
+                    "is_silent": {
+                        "title": "Не проводить рассылку уведомлений",
+                        "type": "boolean"
+                    },
+                    "email": {
+                        "title": "Необходим только для незарегистрированных пользователей",
+                        "nullable": true,
+                        "allOf": [
+                            {
+                                "$ref": "../../../TV/API/Types/Email.json#/components/schemas/TV.API.Types.Email"
+                            }
+                        ]
+                    },
+                    "social_user_id": {
+                        "title": "Id пользователя внутри социальной сети, из которой был отправлен тикет",
+                        "description": "Может быть в любом виде",
+                        "type": "string"
+                    },
+                    "secret": {
+                        "title": "Данные для авторизации в сервисе-конкуренте для переноса проектов",
+                        "description": "Недокументированный параметр",
+                        "nullable": true,
+                        "type": "string"
+                    },
+                    "task_id": {
+                        "title": "Номер задачи redmine, связанной с тикетом",
+                        "description": "Недокументированный параметр",
+                        "type": "integer"
+                    }
+                },
+                "required": [
+                    "text",
+                    "type",
+                    "is_silent",
+                    "social_user_id",
+                    "task_id"
+                ],
+                "title": "Создание тикета"
+            }
+        }
+    }
+}

@@ -11,14 +11,14 @@ export interface components {
          * Массив номеров тегов
          * @description Тип массива Tags[]
          *
-         *     @see Tag
+         *     @see Tags_2\Types\Tag
          */
-        "Urls_2.Types.Tags": components["schemas"]["Urls_2.Types.Tag"][];
+        "Tags_2.Types.Tags": components["schemas"]["Tags_2.Types.Tag"][];
         /**
-         * Тег для urls
-         * @description Значение должно находится в диапазоне от 1 до 50 включительно
+         * Доступные теги
+         * @description Значение должно находится в диапазоне от 1 до 20 включительно
          */
-        "Urls_2.Types.Tag": string;
+        "Tags_2.Types.Tag": string;
     };
     responses: never;
     parameters: never;

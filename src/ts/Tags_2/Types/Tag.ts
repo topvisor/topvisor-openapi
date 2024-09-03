@@ -8,15 +8,10 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         /**
-         * Тип массива: Email[]
-         * @description @see Email
+         * Доступные теги
+         * @description Значение должно находится в диапазоне от 1 до 20 включительно
          */
-        "TV.API.Types.EmailArray": components["schemas"]["TV.API.Types.Email"][];
-        /**
-         * E-mail
-         * @example name@example.com
-         */
-        "TV.API.Types.Email": string;
+        "Tags_2.Types.Tag": string;
     };
     responses: never;
     parameters: never;

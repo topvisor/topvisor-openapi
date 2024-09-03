@@ -763,6 +763,57 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
+    /** Добавление сообщения к тикиту */
+    "/add/tickets_2/messages/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["AddTickets2Messages"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Создание тикета */
+    "/add/tickets_2/tickets/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["AddTickets2Tickets"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Получение списка тикетов с сообщениями */
+    "/get/tickets_2/tickets/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["GetTickets2Tickets"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
     /** Экспорт urls в определенном формате */
     "/get/urls_2/export/": {
         parameters: {
@@ -1272,6 +1323,23 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
+    /** Редактирование тикета (для админов) */
+    "/edit/tickets_2/admin/ticket/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["EditTickets2AdminTicket"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
     /** Получение URL к карте сайта по файлу robots.txt для указанного домена */
     "/get/urls_2/import/recognizeLinkSitemapXml/": {
         parameters: {
@@ -1665,9 +1733,9 @@ export interface paths {
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Фиксация события */
+        /** Фиксация события */  
+        /** Категория */
         "Analytics_2.Methods.Add": {
-            /** Категория */
             ec?: string | null;
             /** Дейсвтие */
             ea?: string | null;
@@ -2017,17 +2085,17 @@ export interface components {
          */
         "Urls_2.Types.Flag": -1 | 0 | 1 | 2;
         /**
-         * Тег для urls
-         * @description Значение должно находится в диапазоне от 1 до 50 включительно
+         * Доступные теги
+         * @description Значение должно находится в диапазоне от 1 до 20 включительно
          */
-        "Urls_2.Types.Tag": string;
+        "Tags_2.Types.Tag": string;
         /**
          * Массив номеров тегов
          * @description Тип массива Tags[]
          *
-         *     @see Tag
+         *     @see Tags_2\Types\Tag
          */
-        "Urls_2.Types.Tags": components["schemas"]["Urls_2.Types.Tag"][];
+        "Tags_2.Types.Tags": components["schemas"]["Tags_2.Types.Tag"][];
         /** ID проекта */
         project_id: number;
         /** Добавление url */
@@ -2043,7 +2111,7 @@ export interface components {
             indexing?: components["schemas"]["Urls_2.Types.Flag"] | null;
             /** Флаг активности в индексации */
             watcher?: components["schemas"]["Urls_2.Types.Flag"] | null;
-            tags?: components["schemas"]["Urls_2.Types.Tags"] | null;
+            tags?: components["schemas"]["Tags_2.Types.Tags"] | null;
             project_id: components["schemas"]["project_id"];
         };
         "Models.Urls": {
@@ -2843,6 +2911,117 @@ export interface components {
             /** URL для запроса к Apple Pay */
             validation_url: string;
         };
+        /** Добавление сообщения к тикиту */
+        "Tickets_2.Methods.Messages.Add": {
+            /** Id тикета */
+            ticket_id: number;
+            /** Текст сообщения */
+            text: string;
+            /** Не проводить рассылку уведомлений */
+            is_silent: boolean;
+        };
+        /**
+         * Откуда поступил тикет
+         * @enum {string}
+         */
+        "Tickets_2.Types.Tickets.Type": "system" | "other" | "email" | "ios" | "vk" | "chrome" | "twitter" | "facebook" | "telegram" | "android" | "guest";
+        /**
+         * E-mail
+         * @example name@example.com
+         */
+        "TV.API.Types.Email": string;
+        /** Создание тикета */
+        "Tickets_2.Methods.Tickets.Add": {
+            /** Текст тикета */
+            text: string;
+            /** @default system */
+            type: components["schemas"]["Tickets_2.Types.Tickets.Type"];
+            /** Язык тикета, нужен для подгрузки правильного языка в ответных письмах через почту */
+            lang?: components["schemas"]["TV.API.Types.Lang"] | null;
+            /** Данные среды пользователя */
+            user_data?: (string | number)[] | null;
+            /** Не проводить рассылку уведомлений */
+            is_silent: boolean;
+            /** Необходим только для незарегистрированных пользователей */
+            email?: components["schemas"]["TV.API.Types.Email"] | null;
+            /**
+             * Id пользователя внутри социальной сети, из которой был отправлен тикет
+             * @description Может быть в любом виде
+             */
+            social_user_id: string;
+            /**
+             * Данные для авторизации в сервисе-конкуренте для переноса проектов
+             * @description Недокументированный параметр
+             */
+            secret?: string | null;
+            /**
+             * Номер задачи redmine, связанной с тикетом
+             * @description Недокументированный параметр
+             */
+            task_id: number;
+        };
+        /** Получение списка тикетов с сообщениями */
+        "Tickets_2.Methods.Tickets.Get": {
+            fields_messages?: (string | number)[] | null;
+            /** Добавить в результат данные пользователей, написавших сообщения в тикеты */
+            show_messages_users: boolean;
+            /** Добавить в результат данные о том, что пишет собеседник */
+            show_writings: boolean;
+            fields: components["schemas"]["fields"];
+            orders: components["schemas"]["orders"];
+            filters: components["schemas"]["filters"];
+            id?: components["schemas"]["id"];
+            limit?: components["schemas"]["limit"];
+            offset: components["schemas"]["offset"];
+            fetch_style?: components["schemas"]["fetch_style"];
+        };
+        "Models.Tickets": {
+            "REQUISITES()"?: unknown;
+            "LAST_MESSAGE_TEXT()"?: unknown;
+            "LAST_MESSAGE_USER_ID()"?: unknown;
+            "READED(0)"?: unknown;
+            "READED(1)"?: unknown;
+            id?: unknown;
+            user_id?: unknown;
+            social_user_id?: unknown;
+            type?: unknown;
+            text?: unknown;
+            create?: unknown;
+            time?: unknown;
+            status?: unknown;
+            lang?: unknown;
+            email?: unknown;
+            user_data?: unknown;
+            manager_id?: unknown;
+            owner_readed?: unknown;
+            answerer_readed?: unknown;
+            admin_writing?: unknown;
+            task_id?: unknown;
+            tags?: unknown;
+            rate?: unknown;
+            rate_comment?: unknown;
+            rate_time?: unknown;
+            admin_comment?: unknown;
+            "VS_USER_IS_ONLINE()"?: unknown;
+            vs_user_name?: unknown;
+            vs_user_email?: unknown;
+            vs_user_avatar?: unknown;
+            vs_user_lastactive?: unknown;
+            social_nickname?: unknown;
+            social_network?: unknown;
+            social_last_message_time?: unknown;
+            social_name?: unknown;
+            social_type?: unknown;
+            social_post_id?: unknown;
+            social_reply_to_id?: unknown;
+            message_id?: unknown;
+            message_user_id?: unknown;
+            message_text?: unknown;
+            message_data?: unknown;
+            message_files?: unknown;
+            message_time?: unknown;
+            message_noticed?: unknown;
+        };
         /**
          * Формат экспорта urls
          * @enum {string}
@@ -2891,7 +3070,7 @@ export interface components {
             urls?: components["schemas"]["TV.API.Types.UrlArray"] | null;
             /** Файл с содержимым для импорта, допускается формат XML (допустимы сжатые XML в .gz) */
             link_sitemap_xml?: components["schemas"]["TV.API.Types.Url"] | null;
-            tags?: components["schemas"]["Urls_2.Types.Tags"] | null;
+            tags?: components["schemas"]["Tags_2.Types.Tags"] | null;
             /** Очистить список URL перед импортом */
             reset: boolean;
             /**
@@ -2918,7 +3097,7 @@ export interface components {
         "Urls_2.Types.Tags.Action": "set" | "add" | "remove";
         /** Изменение тегов */
         "Urls_2.Methods.Tags.Edit": {
-            tags: components["schemas"]["Urls_2.Types.Tags"];
+            tags: components["schemas"]["Tags_2.Types.Tags"];
             action: components["schemas"]["Urls_2.Types.Tags.Action"];
             filters: components["schemas"]["filters"];
             id?: components["schemas"]["id"];
@@ -3778,6 +3957,18 @@ export interface components {
         "Payments_2.Methods.Tariff.SetNext.Edit": {
             /** id тарифа */
             id: string;
+        };
+        /** Редактирование тикета (для админов) */
+        "Tickets_2.Methods.Admin.Ticket.Edit": {
+            id: number;
+            /** Флаг того, что тикет важный */
+            is_important?: boolean | null;
+            /** Номер задачи redmine, связанной с тикетом */
+            task_id?: number | null;
+            /** Доступные теги тикета */
+            tags?: components["schemas"]["Tags_2.Types.Tags"] | null;
+            /** Статус тикета */
+            status?: boolean | null;
         };
         /** Получение URL к карте сайта по файлу robots.txt для указанного домена */
         "Urls_2.Methods.Import.RecognizeLinkSitemapXml.Get": {
@@ -5157,6 +5348,86 @@ export interface operations {
             };
         };
     };
+    AddTickets2Messages: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": components["schemas"]["Tickets_2.Methods.Messages.Add"];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        /** Id добавленного сообщения */
+                        result: number;
+                    } & components["schemas"]["ResponseSuccess"]) | components["schemas"]["ResponseError"];
+                    model: null;
+                };
+            };
+        };
+    };
+    AddTickets2Tickets: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": components["schemas"]["Tickets_2.Methods.Tickets.Add"];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        /** Id тикета */
+                        result: number;
+                    } & components["schemas"]["ResponseSuccess"]) | components["schemas"]["ResponseError"];
+                    model: null;
+                };
+            };
+        };
+    };
+    GetTickets2Tickets: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": components["schemas"]["Tickets_2.Methods.Tickets.Get"];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: components["schemas"]["Models.Tickets"][];
+                    } & components["schemas"]["ResponseSuccess"] & components["schemas"]["Pagination"]) | components["schemas"]["ResponseError"];
+                    model: components["schemas"]["Models.Tickets"];
+                };
+            };
+        };
+    };
     GetUrls2Export: {
         parameters: {
             query?: never;
@@ -5887,6 +6158,32 @@ export interface operations {
         requestBody: {
             content: {
                 "application/json": components["schemas"]["Payments_2.Methods.Tariff.SetNext.Edit"];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: number;
+                    } & components["schemas"]["ResponseSuccess"]) | components["schemas"]["ResponseError"];
+                    model: null;
+                };
+            };
+        };
+    };
+    EditTickets2AdminTicket: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": components["schemas"]["Tickets_2.Methods.Admin.Ticket.Edit"];
             };
         };
         responses: {

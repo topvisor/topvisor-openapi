@@ -9,24 +9,24 @@ export interface components {
     schemas: {
         /** Изменение тегов */
         "Urls_2.Methods.Tags.Edit": {
-            tags: components["schemas"]["Urls_2.Types.Tags"];
+            tags: components["schemas"]["Tags_2.Types.Tags"];
             action: components["schemas"]["Urls_2.Types.Tags.Action"];
             filters: components["schemas"]["filters"];
             id?: components["schemas"]["id"];
             project_id: components["schemas"]["project_id"];
         };
         /**
-         * Тег для urls
-         * @description Значение должно находится в диапазоне от 1 до 50 включительно
+         * Доступные теги
+         * @description Значение должно находится в диапазоне от 1 до 20 включительно
          */
-        "Urls_2.Types.Tag": string;
+        "Tags_2.Types.Tag": string;
         /**
          * Массив номеров тегов
          * @description Тип массива Tags[]
          *
-         *     @see Tag
+         *     @see Tags_2\Types\Tag
          */
-        "Urls_2.Types.Tags": components["schemas"]["Urls_2.Types.Tag"][];
+        "Tags_2.Types.Tags": components["schemas"]["Tags_2.Types.Tag"][];
         /**
          * Способ установки тегов
          * @enum {string}

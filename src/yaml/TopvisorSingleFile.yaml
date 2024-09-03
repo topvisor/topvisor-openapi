@@ -1496,6 +1496,106 @@ paths:
             model:
               schema:
                 type: 'null'
+  /add/tickets_2/messages/:
+    post:
+      operationId: AddTickets2Messages
+      tags:
+        - Tickets_2
+      summary: Добавление сообщения к тикиту
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Tickets_2.Methods.Messages.Add'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            type: integer
+                            title: Id добавленного сообщения
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
+  /add/tickets_2/tickets/:
+    post:
+      operationId: AddTickets2Tickets
+      tags:
+        - Tickets_2
+      summary: Создание тикета
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Tickets_2.Methods.Tickets.Add'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            type: integer
+                            title: Id тикета
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
+  /get/tickets_2/tickets/:
+    post:
+      operationId: GetTickets2Tickets
+      tags:
+        - Tickets_2
+      summary: Получение списка тикетов с сообщениями
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Tickets_2.Methods.Tickets.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            type: array
+                            items:
+                              $ref: '#/components/schemas/Models.Tickets'
+                              description: Only for typescript, does not contain real data
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                      - $ref: '#/components/schemas/Pagination'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                $ref: '#/components/schemas/Models.Tickets'
+                description: Only for typescript, does not contain real data
   /get/urls_2/export/:
     post:
       operationId: GetUrls2Export
@@ -2448,6 +2548,37 @@ paths:
           application/json:
             schema:
               $ref: '#/components/schemas/Payments_2.Methods.Tariff.SetNext.Edit'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            type: integer
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
+  /edit/tickets_2/admin/ticket/:
+    post:
+      operationId: EditTickets2AdminTicket
+      tags:
+        - Tickets_2
+      summary: Редактирование тикета (для админов)
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Tickets_2.Methods.Admin.Ticket.Edit'
         required: true
       responses:
         '200':
@@ -3908,19 +4039,19 @@ components:
         - 1
         - 2
       title: Флаг активности
-    Urls_2.Types.Tag:
+    Tags_2.Types.Tag:
       type: string
-      title: Тег для urls
-      description: Значение должно находится в диапазоне от 1 до 50 включительно
-    Urls_2.Types.Tags:
+      title: Доступные теги
+      description: Значение должно находится в диапазоне от 1 до 20 включительно
+    Tags_2.Types.Tags:
       type: array
       items:
-        $ref: '#/components/schemas/Urls_2.Types.Tag'
+        $ref: '#/components/schemas/Tags_2.Types.Tag'
       title: Массив номеров тегов
       description: |-
         Тип массива Tags[]
 
-        @see Tag
+        @see Tags_2\Types\Tag
     project_id:
       title: ID проекта
       type: integer
@@ -3956,7 +4087,7 @@ components:
         tags:
           nullable: true
           allOf:
-            - $ref: '#/components/schemas/Urls_2.Types.Tags'
+            - $ref: '#/components/schemas/Tags_2.Types.Tags'
         project_id:
           $ref: '#/components/schemas/project_id'
       required:
@@ -5554,6 +5685,222 @@ components:
       required:
         - validation_url
       title: Валидация домена для подтверждения оплаты Apple Pay (system = card_ap)
+    Tickets_2.Methods.Messages.Add:
+      type: object
+      properties:
+        ticket_id:
+          title: Id тикета
+          type: integer
+        text:
+          title: Текст сообщения
+          type: string
+        is_silent:
+          title: Не проводить рассылку уведомлений
+          type: boolean
+      required:
+        - ticket_id
+        - text
+        - is_silent
+      title: Добавление сообщения к тикиту
+    Tickets_2.Types.Tickets.Type:
+      type: string
+      enum:
+        - system
+        - other
+        - email
+        - ios
+        - vk
+        - chrome
+        - twitter
+        - facebook
+        - telegram
+        - android
+        - guest
+      title: Откуда поступил тикет
+    TV.API.Types.Email:
+      type: string
+      title: E-mail
+      example: name@example.com
+    Tickets_2.Methods.Tickets.Add:
+      type: object
+      properties:
+        text:
+          title: Текст тикета
+          type: string
+        type:
+          default: system
+          allOf:
+            - $ref: '#/components/schemas/Tickets_2.Types.Tickets.Type'
+        lang:
+          title: Язык тикета, нужен для подгрузки правильного языка в ответных письмах через почту
+          nullable: true
+          allOf:
+            - $ref: '#/components/schemas/TV.API.Types.Lang'
+        user_data:
+          title: Данные среды пользователя
+          nullable: true
+          type: array
+          items:
+            oneOf:
+              - type: string
+              - type: number
+        is_silent:
+          title: Не проводить рассылку уведомлений
+          type: boolean
+        email:
+          title: Необходим только для незарегистрированных пользователей
+          nullable: true
+          allOf:
+            - $ref: '#/components/schemas/TV.API.Types.Email'
+        social_user_id:
+          title: Id пользователя внутри социальной сети, из которой был отправлен тикет
+          description: Может быть в любом виде
+          type: string
+        secret:
+          title: Данные для авторизации в сервисе-конкуренте для переноса проектов
+          description: Недокументированный параметр
+          nullable: true
+          type: string
+        task_id:
+          title: Номер задачи redmine, связанной с тикетом
+          description: Недокументированный параметр
+          type: integer
+      required:
+        - text
+        - type
+        - is_silent
+        - social_user_id
+        - task_id
+      title: Создание тикета
+    Tickets_2.Methods.Tickets.Get:
+      type: object
+      properties:
+        fields_messages:
+          nullable: true
+          type: array
+          items:
+            oneOf:
+              - type: string
+              - type: number
+        show_messages_users:
+          title: Добавить в результат данные пользователей, написавших сообщения в тикеты
+          type: boolean
+        show_writings:
+          title: Добавить в результат данные о том, что пишет собеседник
+          type: boolean
+        fields:
+          $ref: '#/components/schemas/fields'
+        orders:
+          $ref: '#/components/schemas/orders'
+        filters:
+          $ref: '#/components/schemas/filters'
+        id:
+          $ref: '#/components/schemas/id'
+        limit:
+          $ref: '#/components/schemas/limit'
+        offset:
+          $ref: '#/components/schemas/offset'
+        fetch_style:
+          $ref: '#/components/schemas/fetch_style'
+      required:
+        - show_messages_users
+        - show_writings
+        - fields
+        - orders
+        - filters
+        - offset
+      title: Получение списка тикетов с сообщениями
+    Models.Tickets:
+      properties:
+        REQUISITES():
+          nullable: true
+        LAST_MESSAGE_TEXT():
+          nullable: true
+        LAST_MESSAGE_USER_ID():
+          nullable: true
+        READED(0):
+          nullable: true
+        READED(1):
+          nullable: true
+        id: {}
+        user_id:
+          nullable: true
+        social_user_id:
+          nullable: true
+        type:
+          nullable: true
+        text:
+          nullable: true
+        create:
+          nullable: true
+        time:
+          nullable: true
+        status:
+          nullable: true
+        lang:
+          nullable: true
+        email:
+          nullable: true
+        user_data:
+          nullable: true
+        manager_id:
+          nullable: true
+        owner_readed:
+          nullable: true
+        answerer_readed:
+          nullable: true
+        admin_writing:
+          nullable: true
+        task_id:
+          nullable: true
+        tags:
+          nullable: true
+        rate:
+          nullable: true
+        rate_comment:
+          nullable: true
+        rate_time:
+          nullable: true
+        admin_comment:
+          nullable: true
+        VS_USER_IS_ONLINE():
+          nullable: true
+        vs_user_name:
+          nullable: true
+        vs_user_email:
+          nullable: true
+        vs_user_avatar:
+          nullable: true
+        vs_user_lastactive:
+          nullable: true
+        social_nickname:
+          nullable: true
+        social_network:
+          nullable: true
+        social_last_message_time:
+          nullable: true
+        social_name:
+          nullable: true
+        social_type:
+          nullable: true
+        social_post_id:
+          nullable: true
+        social_reply_to_id:
+          nullable: true
+        message_id:
+          nullable: true
+        message_user_id:
+          nullable: true
+        message_text:
+          nullable: true
+        message_data:
+          nullable: true
+        message_files:
+          nullable: true
+        message_time:
+          nullable: true
+        message_noticed:
+          nullable: true
     Urls_2.Types.Export.Output:
       type: string
       enum:
@@ -5629,7 +5976,7 @@ components:
         tags:
           nullable: true
           allOf:
-            - $ref: '#/components/schemas/Urls_2.Types.Tags'
+            - $ref: '#/components/schemas/Tags_2.Types.Tags'
         reset:
           title: Очистить список URL перед импортом
           type: boolean
@@ -5693,7 +6040,7 @@ components:
       properties:
         tags:
           allOf:
-            - $ref: '#/components/schemas/Urls_2.Types.Tags'
+            - $ref: '#/components/schemas/Tags_2.Types.Tags'
         action:
           allOf:
             - $ref: '#/components/schemas/Urls_2.Types.Tags.Action'
@@ -7583,6 +7930,31 @@ components:
       required:
         - id
       title: Сменить тариф со следующего месяца
+    Tickets_2.Methods.Admin.Ticket.Edit:
+      type: object
+      properties:
+        id:
+          type: integer
+        is_important:
+          title: Флаг того, что тикет важный
+          nullable: true
+          type: boolean
+        task_id:
+          title: Номер задачи redmine, связанной с тикетом
+          nullable: true
+          type: integer
+        tags:
+          title: Доступные теги тикета
+          nullable: true
+          allOf:
+            - $ref: '#/components/schemas/Tags_2.Types.Tags'
+        status:
+          title: Статус тикета
+          nullable: true
+          type: boolean
+      required:
+        - id
+      title: Редактирование тикета (для админов)
     Urls_2.Methods.Import.RecognizeLinkSitemapXml.Get:
       type: object
       properties:

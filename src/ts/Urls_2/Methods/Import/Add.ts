@@ -27,7 +27,7 @@ export interface components {
             urls?: components["schemas"]["TV.API.Types.UrlArray"] | null;
             /** Файл с содержимым для импорта, допускается формат XML (допустимы сжатые XML в .gz) */
             link_sitemap_xml?: components["schemas"]["TV.API.Types.Url"] | null;
-            tags?: components["schemas"]["Urls_2.Types.Tags"] | null;
+            tags?: components["schemas"]["Tags_2.Types.Tags"] | null;
             /** Очистить список URL перед импортом */
             reset: boolean;
             /**
@@ -64,17 +64,17 @@ export interface components {
          */
         "TV.API.Types.UrlArray": components["schemas"]["TV.API.Types.Url"][];
         /**
-         * Тег для urls
-         * @description Значение должно находится в диапазоне от 1 до 50 включительно
+         * Доступные теги
+         * @description Значение должно находится в диапазоне от 1 до 20 включительно
          */
-        "Urls_2.Types.Tag": string;
+        "Tags_2.Types.Tag": string;
         /**
          * Массив номеров тегов
          * @description Тип массива Tags[]
          *
-         *     @see Tag
+         *     @see Tags_2\Types\Tag
          */
-        "Urls_2.Types.Tags": components["schemas"]["Urls_2.Types.Tag"][];
+        "Tags_2.Types.Tags": components["schemas"]["Tags_2.Types.Tag"][];
         /**
          * Флаг активности
          * @enum {integer}

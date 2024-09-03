@@ -1,0 +1,48 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Tickets_2.Methods.Admin.Ticket.Edit",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Tickets_2.Methods.Admin.Ticket.Edit": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "type": "integer"
+                    },
+                    "is_important": {
+                        "title": "Флаг того, что тикет важный",
+                        "nullable": true,
+                        "type": "boolean"
+                    },
+                    "task_id": {
+                        "title": "Номер задачи redmine, связанной с тикетом",
+                        "nullable": true,
+                        "type": "integer"
+                    },
+                    "tags": {
+                        "title": "Доступные теги тикета",
+                        "nullable": true,
+                        "allOf": [
+                            {
+                                "$ref": "../../../../Tags_2/Types/Tags.json#/components/schemas/Tags_2.Types.Tags"
+                            }
+                        ]
+                    },
+                    "status": {
+                        "title": "Статус тикета",
+                        "nullable": true,
+                        "type": "boolean"
+                    }
+                },
+                "required": [
+                    "id"
+                ],
+                "title": "Редактирование тикета (для админов)"
+            }
+        }
+    }
+}

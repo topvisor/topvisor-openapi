@@ -7,11 +7,15 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /**
-         * Тег для urls
-         * @description Значение должно находится в диапазоне от 1 до 50 включительно
-         */
-        "Urls_2.Types.Tag": string;
+        /** Добавление сообщения к тикиту */
+        "Tickets_2.Methods.Messages.Add": {
+            /** Id тикета */
+            ticket_id: number;
+            /** Текст сообщения */
+            text: string;
+            /** Не проводить рассылку уведомлений */
+            is_silent: boolean;
+        };
     };
     responses: never;
     parameters: never;

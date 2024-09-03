@@ -1,0 +1,69 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Tickets_2.Methods.Tickets.Get",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Tickets_2.Methods.Tickets.Get": {
+                "type": "object",
+                "properties": {
+                    "fields_messages": {
+                        "nullable": true,
+                        "type": "array",
+                        "items": {
+                            "oneOf": [
+                                {
+                                    "type": "string"
+                                },
+                                {
+                                    "type": "number"
+                                }
+                            ]
+                        }
+                    },
+                    "show_messages_users": {
+                        "title": "Добавить в результат данные пользователей, написавших сообщения в тикеты",
+                        "type": "boolean"
+                    },
+                    "show_writings": {
+                        "title": "Добавить в результат данные о том, что пишет собеседник",
+                        "type": "boolean"
+                    },
+                    "fields": {
+                        "$ref": "../../../TV/API/Params/FieldsTrait.json#/components/schemas/TV.API.Params.FieldsTrait/properties/fields"
+                    },
+                    "orders": {
+                        "$ref": "../../../TV/API/Params/OrdersTrait.json#/components/schemas/TV.API.Params.OrdersTrait/properties/orders"
+                    },
+                    "filters": {
+                        "$ref": "../../../TV/API/Params/FiltersTrait.json#/components/schemas/TV.API.Params.FiltersTrait/properties/filters"
+                    },
+                    "id": {
+                        "$ref": "../../../TV/API/Params/FiltersTrait.json#/components/schemas/TV.API.Params.FiltersTrait/properties/id"
+                    },
+                    "limit": {
+                        "$ref": "../../../TV/API/Params/LimitTrait.json#/components/schemas/TV.API.Params.LimitTrait/properties/limit"
+                    },
+                    "offset": {
+                        "$ref": "../../../TV/API/Params/OffsetTrait.json#/components/schemas/TV.API.Params.OffsetTrait/properties/offset"
+                    },
+                    "fetch_style": {
+                        "$ref": "../../../TV/API/Params/FetchStyleTrait.json#/components/schemas/TV.API.Params.FetchStyleTrait/properties/fetch_style"
+                    }
+                },
+                "required": [
+                    "show_messages_users",
+                    "show_writings",
+                    "fields",
+                    "orders",
+                    "filters",
+                    "offset"
+                ],
+                "title": "Получение списка тикетов с сообщениями"
+            }
+        }
+    }
+}

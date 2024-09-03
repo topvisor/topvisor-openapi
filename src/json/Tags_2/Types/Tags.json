@@ -1,19 +1,19 @@
 {
     "openapi": "3.0.0",
     "info": {
-        "title": "Topvisor/Urls_2.Types.Tags",
+        "title": "Topvisor/Tags_2.Types.Tags",
         "version": "2.0.0"
     },
     "paths": {},
     "components": {
         "schemas": {
-            "Urls_2.Types.Tags": {
+            "Tags_2.Types.Tags": {
                 "type": "array",
                 "items": {
-                    "$ref": "../../Urls_2/Types/Tag.json#/components/schemas/Urls_2.Types.Tag"
+                    "$ref": "../../Tags_2/Types/Tag.json#/components/schemas/Tags_2.Types.Tag"
                 },
                 "title": "Массив номеров тегов",
-                "description": "Тип массива Tags[]\n\n@see Tag"
+                "description": "Тип массива Tags[]\n\n@see Tags_2\\Types\\Tag"
             }
         }
     }

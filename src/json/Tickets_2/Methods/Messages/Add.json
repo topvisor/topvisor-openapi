@@ -1,0 +1,35 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Tickets_2.Methods.Messages.Add",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Tickets_2.Methods.Messages.Add": {
+                "type": "object",
+                "properties": {
+                    "ticket_id": {
+                        "title": "Id тикета",
+                        "type": "integer"
+                    },
+                    "text": {
+                        "title": "Текст сообщения",
+                        "type": "string"
+                    },
+                    "is_silent": {
+                        "title": "Не проводить рассылку уведомлений",
+                        "type": "boolean"
+                    }
+                },
+                "required": [
+                    "ticket_id",
+                    "text",
+                    "is_silent"
+                ],
+                "title": "Добавление сообщения к тикиту"
+            }
+        }
+    }
+}
