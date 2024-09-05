@@ -9,6 +9,8 @@ export interface components {
     schemas: {
         /** Запуск проверки аудита */
         "Audit_2.Methods.Audit.Checker.Go.Edit": {
+            /** Запуск в режиме отладки */
+            debug: boolean;
             filters: components["schemas"]["filters"];
             id?: components["schemas"]["id"];
         };

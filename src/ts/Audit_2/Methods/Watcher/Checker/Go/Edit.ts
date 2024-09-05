@@ -9,6 +9,8 @@ export interface components {
     schemas: {
         /** Отправка проектов на проверку радара */
         "Audit_2.Methods.Watcher.Checker.Go.Edit": {
+            /** Запуск в режиме отладки */
+            debug: boolean;
             filters: components["schemas"]["filters"];
             id?: components["schemas"]["id"];
         };

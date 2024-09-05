@@ -10,6 +10,8 @@ export interface components {
         /** Отправка проектов на проверку карты сайта */
         "Audit_2.Methods.Sitemap.Checker.Go.Edit": {
             max_pages: components["schemas"]["Audit_2.Types.Sitemap.MaxPages"];
+            /** Запуск в режиме отладки */
+            debug: boolean;
             filters: components["schemas"]["filters"];
             id?: components["schemas"]["id"];
         };

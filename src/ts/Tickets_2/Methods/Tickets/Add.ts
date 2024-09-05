@@ -17,6 +17,11 @@ export interface components {
             lang?: components["schemas"]["TV.API.Types.Lang"] | null;
             /** Данные среды пользователя */
             user_data?: (string | number)[] | null;
+            /**
+             * URL страницы, с которой отправлен тикет
+             * @description Не испоьзуется, если указан user_data
+             */
+            resource?: string | null;
             /** Не проводить рассылку уведомлений */
             is_silent: boolean;
             /** Необходим только для незарегистрированных пользователей */

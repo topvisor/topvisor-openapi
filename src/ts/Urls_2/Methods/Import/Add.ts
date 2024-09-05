@@ -65,9 +65,9 @@ export interface components {
         "TV.API.Types.UrlArray": components["schemas"]["TV.API.Types.Url"][];
         /**
          * Доступные теги
-         * @description Значение должно находится в диапазоне от 1 до 20 включительно
+         * @enum {string}
          */
-        "Tags_2.Types.Tag": string;
+        "Tags_2.Types.Tag": "1" | "2" | "3" | "4" | "5" | "6" | "7" | "8" | "9" | "10" | "11" | "12" | "13" | "14" | "15" | "16" | "17" | "18" | "19" | "20";
         /**
          * Массив номеров тегов
          * @description Тип массива Tags[]

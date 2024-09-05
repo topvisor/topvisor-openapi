@@ -4041,8 +4041,28 @@ components:
       title: Флаг активности
     Tags_2.Types.Tag:
       type: string
+      enum:
+        - '1'
+        - '2'
+        - '3'
+        - '4'
+        - '5'
+        - '6'
+        - '7'
+        - '8'
+        - '9'
+        - '10'
+        - '11'
+        - '12'
+        - '13'
+        - '14'
+        - '15'
+        - '16'
+        - '17'
+        - '18'
+        - '19'
+        - '20'
       title: Доступные теги
-      description: Значение должно находится в диапазоне от 1 до 20 включительно
     Tags_2.Types.Tags:
       type: array
       items:
@@ -5744,6 +5764,11 @@ components:
             oneOf:
               - type: string
               - type: number
+        resource:
+          title: URL страницы, с которой отправлен тикет
+          description: Не испоьзуется, если указан user_data
+          nullable: true
+          type: string
         is_silent:
           title: Не проводить рассылку уведомлений
           type: boolean
@@ -8023,11 +8048,15 @@ components:
     Audit_2.Methods.Audit.Checker.Go.Edit:
       type: object
       properties:
+        debug:
+          title: Запуск в режиме отладки
+          type: boolean
         filters:
           $ref: '#/components/schemas/filters'
         id:
           $ref: '#/components/schemas/id'
       required:
+        - debug
         - filters
       title: Запуск проверки аудита
     Audit_2.Methods.Audit.Checker.Price.Get:
@@ -8216,11 +8245,15 @@ components:
     Audit_2.Methods.Indexing.Checker.Go.Edit:
       type: object
       properties:
+        debug:
+          title: Запуск в режиме отладки
+          type: boolean
         filters:
           $ref: '#/components/schemas/filters'
         id:
           $ref: '#/components/schemas/id'
       required:
+        - debug
         - filters
       title: Отправка проектов на проверку индексации
     Audit_2.Methods.Indexing.Checker.Price.Get:
@@ -8381,12 +8414,16 @@ components:
         max_pages:
           allOf:
             - $ref: '#/components/schemas/Audit_2.Types.Sitemap.MaxPages'
+        debug:
+          title: Запуск в режиме отладки
+          type: boolean
         filters:
           $ref: '#/components/schemas/filters'
         id:
           $ref: '#/components/schemas/id'
       required:
         - max_pages
+        - debug
         - filters
       title: Отправка проектов на проверку карты сайта
     Audit_2.Methods.Sitemap.Checker.Price.Get:
@@ -8406,11 +8443,15 @@ components:
     Audit_2.Methods.Watcher.Checker.Go.Edit:
       type: object
       properties:
+        debug:
+          title: Запуск в режиме отладки
+          type: boolean
         filters:
           $ref: '#/components/schemas/filters'
         id:
           $ref: '#/components/schemas/id'
       required:
+        - debug
         - filters
       title: Отправка проектов на проверку радара
     Audit_2.Methods.Watcher.Checker.Price.Get:

@@ -2086,9 +2086,9 @@ export interface components {
         "Urls_2.Types.Flag": -1 | 0 | 1 | 2;
         /**
          * Доступные теги
-         * @description Значение должно находится в диапазоне от 1 до 20 включительно
+         * @enum {string}
          */
-        "Tags_2.Types.Tag": string;
+        "Tags_2.Types.Tag": "1" | "2" | "3" | "4" | "5" | "6" | "7" | "8" | "9" | "10" | "11" | "12" | "13" | "14" | "15" | "16" | "17" | "18" | "19" | "20";
         /**
          * Массив номеров тегов
          * @description Тип массива Tags[]
@@ -2940,6 +2940,11 @@ export interface components {
             lang?: components["schemas"]["TV.API.Types.Lang"] | null;
             /** Данные среды пользователя */
             user_data?: (string | number)[] | null;
+            /**
+             * URL страницы, с которой отправлен тикет
+             * @description Не испоьзуется, если указан user_data
+             */
+            resource?: string | null;
             /** Не проводить рассылку уведомлений */
             is_silent: boolean;
             /** Необходим только для незарегистрированных пользователей */
@@ -4010,6 +4015,8 @@ export interface components {
         };
         /** Запуск проверки аудита */
         "Audit_2.Methods.Audit.Checker.Go.Edit": {
+            /** Запуск в режиме отладки */
+            debug: boolean;
             filters: components["schemas"]["filters"];
             id?: components["schemas"]["id"];
         };
@@ -4108,6 +4115,8 @@ export interface components {
         };
         /** Отправка проектов на проверку индексации */
         "Audit_2.Methods.Indexing.Checker.Go.Edit": {
+            /** Запуск в режиме отладки */
+            debug: boolean;
             filters: components["schemas"]["filters"];
             id?: components["schemas"]["id"];
         };
@@ -4188,6 +4197,8 @@ export interface components {
         /** Отправка проектов на проверку карты сайта */
         "Audit_2.Methods.Sitemap.Checker.Go.Edit": {
             max_pages: components["schemas"]["Audit_2.Types.Sitemap.MaxPages"];
+            /** Запуск в режиме отладки */
+            debug: boolean;
             filters: components["schemas"]["filters"];
             id?: components["schemas"]["id"];
         };
@@ -4202,6 +4213,8 @@ export interface components {
         };
         /** Отправка проектов на проверку радара */
         "Audit_2.Methods.Watcher.Checker.Go.Edit": {
+            /** Запуск в режиме отладки */
+            debug: boolean;
             filters: components["schemas"]["filters"];
             id?: components["schemas"]["id"];
         };

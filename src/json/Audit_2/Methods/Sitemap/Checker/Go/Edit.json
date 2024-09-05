@@ -17,6 +17,10 @@
                             }
                         ]
                     },
+                    "debug": {
+                        "title": "Запуск в режиме отладки",
+                        "type": "boolean"
+                    },
                     "filters": {
                         "$ref": "../../../../../TV/API/Params/FiltersTrait.json#/components/schemas/TV.API.Params.FiltersTrait/properties/filters"
                     },
@@ -26,6 +30,7 @@
                 },
                 "required": [
                     "max_pages",
+                    "debug",
                     "filters"
                 ],
                 "title": "Отправка проектов на проверку карты сайта"

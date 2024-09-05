@@ -10,6 +10,10 @@
             "Audit_2.Methods.Indexing.Checker.Go.Edit": {
                 "type": "object",
                 "properties": {
+                    "debug": {
+                        "title": "Запуск в режиме отладки",
+                        "type": "boolean"
+                    },
                     "filters": {
                         "$ref": "../../../../../TV/API/Params/FiltersTrait.json#/components/schemas/TV.API.Params.FiltersTrait/properties/filters"
                     },
@@ -18,6 +22,7 @@
                     }
                 },
                 "required": [
+                    "debug",
                     "filters"
                 ],
                 "title": "Отправка проектов на проверку индексации"

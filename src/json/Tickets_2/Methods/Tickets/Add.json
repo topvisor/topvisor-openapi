@@ -46,6 +46,12 @@
                             ]
                         }
                     },
+                    "resource": {
+                        "title": "URL страницы, с которой отправлен тикет",
+                        "description": "Не испоьзуется, если указан user_data",
+                        "nullable": true,
+                        "type": "string"
+                    },
                     "is_silent": {
                         "title": "Не проводить рассылку уведомлений",
                         "type": "boolean"
