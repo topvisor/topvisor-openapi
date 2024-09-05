@@ -797,6 +797,23 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
+    /** Редактирование тикета */
+    "/edit/tickets_2/tickets/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["EditTickets2Tickets"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
     /** Получение списка тикетов с сообщениями */
     "/get/tickets_2/tickets/": {
         parameters: {
@@ -1334,6 +1351,23 @@ export interface paths {
         get?: never;
         put?: never;
         post: operations["EditTickets2AdminTicket"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Пометка тикета как "прочитанный" для автора тикета или админов */
+    "/edit/tickets_2/tickets/setReaded/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["EditTickets2TicketsSetReaded"];
         delete?: never;
         options?: never;
         head?: never;
@@ -2965,6 +2999,13 @@ export interface components {
              */
             task_id: number;
         };
+        /** Редактирование тикета */
+        "Tickets_2.Methods.Tickets.Edit": {
+            /** Флаг того, что тикет закрыт */
+            status?: boolean | null;
+            filters: components["schemas"]["filters"];
+            id?: components["schemas"]["id"];
+        };
         /** Получение списка тикетов с сообщениями */
         "Tickets_2.Methods.Tickets.Get": {
             fields_messages?: (string | number)[] | null;
@@ -3974,6 +4015,11 @@ export interface components {
             tags?: components["schemas"]["Tags_2.Types.Tags"] | null;
             /** Статус тикета */
             status?: boolean | null;
+        };
+        /** Пометка тикета как "прочитанный" для автора тикета или админов */
+        "Tickets_2.Methods.Tickets.SetReaded.Edit": {
+            filters: components["schemas"]["filters"];
+            id?: components["schemas"]["id"];
         };
         /** Получение URL к карте сайта по файлу robots.txt для указанного домена */
         "Urls_2.Methods.Import.RecognizeLinkSitemapXml.Get": {
@@ -5415,6 +5461,32 @@ export interface operations {
             };
         };
     };
+    EditTickets2Tickets: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": components["schemas"]["Tickets_2.Methods.Tickets.Edit"];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: number;
+                    } & components["schemas"]["ResponseSuccess"]) | components["schemas"]["ResponseError"];
+                    model: null;
+                };
+            };
+        };
+    };
     GetTickets2Tickets: {
         parameters: {
             query?: never;
@@ -6197,6 +6269,32 @@ export interface operations {
         requestBody: {
             content: {
                 "application/json": components["schemas"]["Tickets_2.Methods.Admin.Ticket.Edit"];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: number;
+                    } & components["schemas"]["ResponseSuccess"]) | components["schemas"]["ResponseError"];
+                    model: null;
+                };
+            };
+        };
+    };
+    EditTickets2TicketsSetReaded: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": components["schemas"]["Tickets_2.Methods.Tickets.SetReaded.Edit"];
             };
         };
         responses: {

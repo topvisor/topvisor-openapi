@@ -2657,6 +2657,64 @@
                 }
             }
         },
+        "/edit/tickets_2/tickets/": {
+            "post": {
+                "operationId": "EditTickets2Tickets",
+                "tags": [
+                    "Tickets_2"
+                ],
+                "summary": "Редактирование тикета",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Tickets_2/Methods/Tickets/Edit.json#/components/schemas/Tickets_2.Methods.Tickets.Edit"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "oneOf": [
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "type": "integer"
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "result"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
+                                        }
+                                    ]
+                                }
+                            },
+                            "model": {
+                                "schema": {
+                                    "type": "null"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
         "/get/tickets_2/tickets/": {
             "post": {
                 "operationId": "GetTickets2Tickets",
@@ -4476,6 +4534,64 @@
                         "application/json": {
                             "schema": {
                                 "$ref": "Tickets_2/Methods/Admin/Ticket/Edit.json#/components/schemas/Tickets_2.Methods.Admin.Ticket.Edit"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "oneOf": [
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "type": "integer"
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "result"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
+                                        }
+                                    ]
+                                }
+                            },
+                            "model": {
+                                "schema": {
+                                    "type": "null"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/edit/tickets_2/tickets/setReaded/": {
+            "post": {
+                "operationId": "EditTickets2TicketsSetReaded",
+                "tags": [
+                    "Tickets_2"
+                ],
+                "summary": "Пометка тикета как \"прочитанный\" для автора тикета или админов",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Tickets_2/Methods/Tickets/SetReaded/Edit.json#/components/schemas/Tickets_2.Methods.Tickets.SetReaded.Edit"
                             }
                         }
                     },

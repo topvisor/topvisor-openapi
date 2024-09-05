@@ -1,0 +1,32 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Tickets_2.Methods.Tickets.Edit",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Tickets_2.Methods.Tickets.Edit": {
+                "type": "object",
+                "properties": {
+                    "status": {
+                        "title": "Флаг того, что тикет закрыт",
+                        "nullable": true,
+                        "type": "boolean"
+                    },
+                    "filters": {
+                        "$ref": "../../../TV/API/Params/FiltersTrait.json#/components/schemas/TV.API.Params.FiltersTrait/properties/filters"
+                    },
+                    "id": {
+                        "$ref": "../../../TV/API/Params/FiltersTrait.json#/components/schemas/TV.API.Params.FiltersTrait/properties/id"
+                    }
+                },
+                "required": [
+                    "filters"
+                ],
+                "title": "Редактирование тикета"
+            }
+        }
+    }
+}
