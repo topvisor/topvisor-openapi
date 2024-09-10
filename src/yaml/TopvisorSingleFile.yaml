@@ -1982,7 +1982,6 @@ paths:
       tags:
         - Audit_2
       summary: Получение проверенных css
-      description: test ci/cd
       requestBody:
         content:
           application/json:
@@ -6751,7 +6750,6 @@ components:
         - project_id
         - check_id
       title: Получение проверенных css
-      description: test ci/cd
     Models.Audit.Css:
       properties:
         COUNT(*):

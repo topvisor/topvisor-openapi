@@ -46,8 +46,7 @@
                     "project_id",
                     "check_id"
                 ],
-                "title": "Получение проверенных css",
-                "description": "test ci/cd"
+                "title": "Получение проверенных css"
             }
         }
     }
