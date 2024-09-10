@@ -1022,7 +1022,10 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Получение проверенных css */
+    /**
+     * Получение проверенных css
+     * @description test ci/cd
+     */
     "/get/audit_2/audit/css/": {
         parameters: {
             query?: never;
@@ -3412,7 +3415,10 @@ export interface components {
             css_check_is_minified_errors?: unknown;
             css_check_no_render_blocking_errors?: unknown;
         };
-        /** Получение проверенных css */
+        /**
+         * Получение проверенных css
+         * @description test ci/cd
+         */
         "Audit_2.Methods.Audit.Css.Get": {
             fields: components["schemas"]["fields"];
             orders: components["schemas"]["orders"];
