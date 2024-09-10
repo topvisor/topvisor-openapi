@@ -3392,7 +3392,6 @@
                     "Audit_2"
                 ],
                 "summary": "Получение проверенных css",
-                "description": "test",
                 "requestBody": {
                     "content": {
                         "application/json": {
