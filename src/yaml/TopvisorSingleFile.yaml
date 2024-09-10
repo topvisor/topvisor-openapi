@@ -1949,7 +1949,6 @@ paths:
         - в ответе будут заменены значения кодов ответа на текущие: count_000, count_1xx, count_2xx, count_3xx, count_4xx, count_5xx
         - в ответе будет заменено значение count_pages и count_all на текущие
         - в ответ будет добавлены значения robot_step и robot_count_tasks_allм
-      description: test ci/cd
       requestBody:
         content:
           application/json:
@@ -6495,7 +6494,6 @@ components:
         - в ответе будут заменены значения кодов ответа на текущие: count_000, count_1xx, count_2xx, count_3xx, count_4xx, count_5xx
         - в ответе будет заменено значение count_pages и count_all на текущие
         - в ответ будет добавлены значения robot_step и robot_count_tasks_allм
-      description: test ci/cd
     Models.Audit.Checks:
       properties:
         DURATION():

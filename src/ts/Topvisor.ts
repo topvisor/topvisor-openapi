@@ -1001,14 +1001,11 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /**
-     * Получение общей информации о проверках
+    /** Получение общей информации о проверках
      *     - только для проверки, которая не завершена
      *     - в ответе будут заменены значения кодов ответа на текущие: count_000, count_1xx, count_2xx, count_3xx, count_4xx, count_5xx
      *     - в ответе будет заменено значение count_pages и count_all на текущие
-     *     - в ответ будет добавлены значения robot_step и robot_count_tasks_allм
-     * @description test ci/cd
-     */
+     *     - в ответ будет добавлены значения robot_step и robot_count_tasks_allм */
     "/get/audit_2/audit/checks/": {
         parameters: {
             query?: never;
@@ -3283,14 +3280,11 @@ export interface components {
             project_id: components["schemas"]["project_id"];
             check_id: components["schemas"]["check_id"];
         };
-        /**
-         * Получение общей информации о проверках
+        /** Получение общей информации о проверках
          *     - только для проверки, которая не завершена
          *     - в ответе будут заменены значения кодов ответа на текущие: count_000, count_1xx, count_2xx, count_3xx, count_4xx, count_5xx
          *     - в ответе будет заменено значение count_pages и count_all на текущие
-         *     - в ответ будет добавлены значения robot_step и robot_count_tasks_allм
-         * @description test ci/cd
-         */
+         *     - в ответ будет добавлены значения robot_step и robot_count_tasks_allм */
         "Audit_2.Methods.Audit.Checks.Get": {
             /** Добавить в результат данные о незавершенной проверке */
             show_raw_data: boolean;
