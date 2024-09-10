@@ -7,7 +7,10 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Получение проверенных css */
+        /**
+         * Получение проверенных css
+         * @description test
+         */
         "Audit_2.Methods.Audit.Css.Get": {
             fields: components["schemas"]["fields"];
             orders: components["schemas"]["orders"];
