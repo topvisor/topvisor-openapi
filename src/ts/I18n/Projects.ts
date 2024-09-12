@@ -464,6 +464,12 @@ export interface components {
             In_progress?: "In progress";
             /** @constant */
             URL_count?: "Number of URLs";
+            /** @constant */
+            Username?: "Username";
+            /** @constant */
+            Spent?: "Spent";
+            /** @constant */
+            Spend_limit?: "Spend limit";
         };
     };
     responses: never;

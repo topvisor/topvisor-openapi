@@ -625,6 +625,8 @@ export interface components {
             /** @constant */
             Month?: "Month";
             /** @constant */
+            month?: "month";
+            /** @constant */
             months?: "months";
             /** @constant */
             months_mult?: "months";
@@ -900,6 +902,10 @@ export interface components {
             Invalid_url?: "Invalid project URL";
             /** @constant */
             Invalid_url_2?: "To change the URL, <a href=\"/support/start/ticket-request-system/#new-ticket\" target=\"_blank\" class=\"a\">submit a ticket</a>";
+            /** @constant */
+            Access_settings?: "Access settings";
+            /** @constant */
+            Hide_access_settings?: "Hide access settings";
         };
     };
     responses: never;

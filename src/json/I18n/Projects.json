@@ -693,6 +693,15 @@
                     },
                     "URL_count": {
                         "const": "Number of URLs"
+                    },
+                    "Username": {
+                        "const": "Username"
+                    },
+                    "Spent": {
+                        "const": "Spent"
+                    },
+                    "Spend_limit": {
+                        "const": "Spend limit"
                     }
                 },
                 "required": []

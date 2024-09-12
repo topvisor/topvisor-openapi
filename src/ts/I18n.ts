@@ -667,6 +667,8 @@ export interface components {
             /** @constant */
             Month?: "Month";
             /** @constant */
+            month?: "month";
+            /** @constant */
             months?: "months";
             /** @constant */
             months_mult?: "months";
@@ -942,6 +944,10 @@ export interface components {
             Invalid_url?: "Invalid project URL";
             /** @constant */
             Invalid_url_2?: "To change the URL, <a href=\"/support/start/ticket-request-system/#new-ticket\" target=\"_blank\" class=\"a\">submit a ticket</a>";
+            /** @constant */
+            Access_settings?: "Access settings";
+            /** @constant */
+            Hide_access_settings?: "Hide access settings";
         };
         "I18n.Actions": {
             /** @constant */
@@ -4393,6 +4399,12 @@ export interface components {
             In_progress?: "In progress";
             /** @constant */
             URL_count?: "Number of URLs";
+            /** @constant */
+            Username?: "Username";
+            /** @constant */
+            Spent?: "Spent";
+            /** @constant */
+            Spend_limit?: "Spend limit";
         };
         "I18n.Robot": Record<string, never>;
         "I18n.Sitemap": {

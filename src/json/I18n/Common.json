@@ -934,6 +934,9 @@
                     "Month": {
                         "const": "Month"
                     },
+                    "month": {
+                        "const": "month"
+                    },
                     "months": {
                         "const": "months"
                     },
@@ -1347,6 +1350,12 @@
                     },
                     "Invalid_url_2": {
                         "const": "To change the URL, <a href=\"/support/start/ticket-request-system/#new-ticket\" target=\"_blank\" class=\"a\">submit a ticket</a>"
+                    },
+                    "Access_settings": {
+                        "const": "Access settings"
+                    },
+                    "Hide_access_settings": {
+                        "const": "Hide access settings"
                     }
                 },
                 "required": []
