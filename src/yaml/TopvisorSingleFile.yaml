@@ -2632,6 +2632,37 @@ paths:
             model:
               schema:
                 type: 'null'
+  /edit/tickets_2/admin/ticketSplit/:
+    post:
+      operationId: EditTickets2AdminTicketSplit
+      tags:
+        - Tickets_2
+      summary: Перенос последниего сообщения (до 1 сообщения автора) в новый тикет
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Tickets_2.Methods.Admin.TicketSplit.Edit'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            type: integer
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
   /edit/tickets_2/tickets/setReaded/:
     post:
       operationId: EditTickets2TicketsSetReaded
@@ -8058,6 +8089,16 @@ components:
       required:
         - id
       title: Редактирование тикета (для админов)
+    Tickets_2.Methods.Admin.TicketSplit.Edit:
+      type: object
+      properties:
+        filters:
+          $ref: '#/components/schemas/filters'
+        id:
+          $ref: '#/components/schemas/id'
+      required:
+        - filters
+      title: Перенос последниего сообщения (до 1 сообщения автора) в новый тикет
     Tickets_2.Methods.Tickets.SetReaded.Edit:
       type: object
       properties:

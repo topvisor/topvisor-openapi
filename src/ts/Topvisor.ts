@@ -1357,6 +1357,23 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
+    /** Перенос последниего сообщения (до 1 сообщения автора) в новый тикет */
+    "/edit/tickets_2/admin/ticketSplit/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["EditTickets2AdminTicketSplit"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
     /** Пометка тикета как "прочитанный" для автора тикета или админов */
     "/edit/tickets_2/tickets/setReaded/": {
         parameters: {
@@ -4016,6 +4033,11 @@ export interface components {
             /** Статус тикета */
             status?: boolean | null;
         };
+        /** Перенос последниего сообщения (до 1 сообщения автора) в новый тикет */
+        "Tickets_2.Methods.Admin.TicketSplit.Edit": {
+            filters: components["schemas"]["filters"];
+            id?: components["schemas"]["id"];
+        };
         /** Пометка тикета как "прочитанный" для автора тикета или админов */
         "Tickets_2.Methods.Tickets.SetReaded.Edit": {
             filters: components["schemas"]["filters"];
@@ -6269,6 +6291,32 @@ export interface operations {
         requestBody: {
             content: {
                 "application/json": components["schemas"]["Tickets_2.Methods.Admin.Ticket.Edit"];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: number;
+                    } & components["schemas"]["ResponseSuccess"]) | components["schemas"]["ResponseError"];
+                    model: null;
+                };
+            };
+        };
+    };
+    EditTickets2AdminTicketSplit: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": components["schemas"]["Tickets_2.Methods.Admin.TicketSplit.Edit"];
             };
         };
         responses: {

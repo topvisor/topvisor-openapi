@@ -4580,6 +4580,64 @@
                 }
             }
         },
+        "/edit/tickets_2/admin/ticketSplit/": {
+            "post": {
+                "operationId": "EditTickets2AdminTicketSplit",
+                "tags": [
+                    "Tickets_2"
+                ],
+                "summary": "Перенос последниего сообщения (до 1 сообщения автора) в новый тикет",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Tickets_2/Methods/Admin/TicketSplit/Edit.json#/components/schemas/Tickets_2.Methods.Admin.TicketSplit.Edit"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "oneOf": [
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "type": "integer"
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "result"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
+                                        }
+                                    ]
+                                }
+                            },
+                            "model": {
+                                "schema": {
+                                    "type": "null"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
         "/edit/tickets_2/tickets/setReaded/": {
             "post": {
                 "operationId": "EditTickets2TicketsSetReaded",
