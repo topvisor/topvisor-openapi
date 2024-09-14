@@ -11,41 +11,17 @@ export interface components {
         "Urls_2.Methods.Edit": {
             /** Флаг активности в карте сайта
              *     - 1 - присутствовал в прошлых версиях карты сайта */
-            sitemap?: components["schemas"]["Urls_2.Types.Flag"] | null;
+            sitemap?: import('../Types/Flag.ts').components['schemas']['Urls_2.Types.Flag'] | null;
             /** Флаг активности в аудите */
-            audit?: components["schemas"]["Urls_2.Types.Flag"] | null;
+            audit?: import('../Types/Flag.ts').components['schemas']['Urls_2.Types.Flag'] | null;
             /** Флаг активности в радаре */
-            indexing?: components["schemas"]["Urls_2.Types.Flag"] | null;
+            indexing?: import('../Types/Flag.ts').components['schemas']['Urls_2.Types.Flag'] | null;
             /** Флаг активности в индексации */
-            watcher?: components["schemas"]["Urls_2.Types.Flag"] | null;
-            filters: components["schemas"]["filters"];
-            id?: components["schemas"]["id"];
-            project_id: components["schemas"]["project_id"];
+            watcher?: import('../Types/Flag.ts').components['schemas']['Urls_2.Types.Flag'] | null;
+            filters: import('../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['filters'];
+            id?: import('../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['id'];
+            project_id: import('../../TV/API/Params/ProjectIdTrait.ts').components['schemas']['TV.API.Params.ProjectIdTrait']['project_id'];
         };
-        /**
-         * Флаг активности
-         * @enum {integer}
-         */
-        "Urls_2.Types.Flag": -1 | 0 | 1 | 2;
-        /**
-         * Список фильтров по полям объекта
-         * @description {name: string, operator: Field::AVAILABLE_OPERATORS, values: array}
-         *
-         *     Использует поля модели
-         *
-         *     Поля обязатлеьное, если $id не указан
-         *
-         *     @see AbstractMethod::MODEL
-         *     @see Field::AVAILABLE_OPERATORS
-         */
-        filters: (string | number)[];
-        /**
-         * Id объекта, для фильтрации объектов по id
-         * @description Только для моделей с полем id
-         */
-        id: number | null;
-        /** ID проекта */
-        project_id: number;
     };
     responses: never;
     parameters: never;

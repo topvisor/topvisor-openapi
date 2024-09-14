@@ -15,22 +15,10 @@ export interface components {
             /** Номер задачи redmine, связанной с тикетом */
             task_id?: number | null;
             /** Доступные теги тикета */
-            tags?: components["schemas"]["Tags_2.Types.Tags"] | null;
+            tags?: import('../../../../Tags_2/Types/Tags.ts').components['schemas']['Tags_2.Types.Tags'] | null;
             /** Статус тикета */
             status?: boolean | null;
         };
-        /**
-         * Доступные теги
-         * @enum {string}
-         */
-        "Tags_2.Types.Tag": "1" | "2" | "3" | "4" | "5" | "6" | "7" | "8" | "9" | "10" | "11" | "12" | "13" | "14" | "15" | "16" | "17" | "18" | "19" | "20";
-        /**
-         * Массив номеров тегов
-         * @description Тип массива Tags[]
-         *
-         *     @see Tags_2\Types\Tag
-         */
-        "Tags_2.Types.Tags": components["schemas"]["Tags_2.Types.Tag"][];
     };
     responses: never;
     parameters: never;

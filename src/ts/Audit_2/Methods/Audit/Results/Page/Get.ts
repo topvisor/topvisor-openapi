@@ -16,23 +16,10 @@ export interface components {
             url: string;
             /** Поиск */
             search?: string | null;
-            orders: components["schemas"]["orders"];
-            project_id: components["schemas"]["project_id"];
-            check_id: components["schemas"]["check_id"];
+            orders: import('../../../../../TV/API/Params/OrdersTrait.ts').components['schemas']['TV.API.Params.OrdersTrait']['orders'];
+            project_id: import('../../../../../TV/API/Params/ProjectIdTrait.ts').components['schemas']['TV.API.Params.ProjectIdTrait']['project_id'];
+            check_id: import('../../../../Params/Audit/CheckIdTrait.ts').components['schemas']['Audit_2.Params.Audit.CheckIdTrait']['check_id'];
         };
-        /**
-         * Список полей объекта, по которым необходимо выполнить сортировку
-         * @description Поля могут быть строками или объектом: {name: string, direction: 'ASC' | 'DESC', orderValues: array}
-         *
-         *     Использует поля модели
-         *
-         *     @see AbstractMethod::MODEL
-         */
-        orders: (string | number)[];
-        /** ID проекта */
-        project_id: number;
-        /** ID проверки аудита */
-        check_id: number;
     };
     responses: never;
     parameters: never;

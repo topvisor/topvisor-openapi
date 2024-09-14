@@ -8,12 +8,7 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         /** Типы отчетов радара */
-        "Audit_2.Types.Settings.WatcherTypes": components["schemas"]["Audit_2.Types.Settings.WatcherType"][];
-        /**
-         * Тип отчета радара
-         * @enum {string}
-         */
-        "Audit_2.Types.Settings.WatcherType": "title" | "description" | "h1" | "content";
+        "Audit_2.Types.Settings.WatcherTypes": import('./WatcherType.ts').components['schemas']['Audit_2.Types.Settings.WatcherType'][];
     };
     responses: never;
     parameters: never;

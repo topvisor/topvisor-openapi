@@ -12,14 +12,12 @@ export interface components {
             /** ID проекта */
             project_id: number;
             /** Имя сервиса */
-            service: components["schemas"]["Annotations_2.Types.ServiceName"];
+            service: import('../Types/ServiceName.ts').components['schemas']['Annotations_2.Types.ServiceName'];
             /** Идентификатор отчета в сервисе */
             target_id: string;
             /** Комментарий, если не указан, комментарий добавлен не будет */
             text: string;
         };
-        /** @enum {string} */
-        "Annotations_2.Types.ServiceName": "positions" | "audit" | "watcher" | "indexing";
     };
     responses: never;
     parameters: never;

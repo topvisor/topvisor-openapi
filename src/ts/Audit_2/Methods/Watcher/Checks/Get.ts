@@ -9,10 +9,8 @@ export interface components {
     schemas: {
         /** Получение проверок радара */
         "Audit_2.Methods.Watcher.Checks.Get": {
-            project_id: components["schemas"]["project_id"];
+            project_id: import('../../../../TV/API/Params/ProjectIdTrait.ts').components['schemas']['TV.API.Params.ProjectIdTrait']['project_id'];
         };
-        /** ID проекта */
-        project_id: number;
     };
     responses: never;
     parameters: never;

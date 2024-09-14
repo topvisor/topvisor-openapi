@@ -11,12 +11,7 @@ export interface components {
          * Тип массива: Email[]
          * @description @see Email
          */
-        "TV.API.Types.EmailArray": components["schemas"]["TV.API.Types.Email"][];
-        /**
-         * E-mail
-         * @example name@example.com
-         */
-        "TV.API.Types.Email": string;
+        "TV.API.Types.EmailArray": import('./Email.ts').components['schemas']['TV.API.Types.Email'][];
     };
     responses: never;
     parameters: never;

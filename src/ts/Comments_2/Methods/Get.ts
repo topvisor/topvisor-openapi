@@ -12,14 +12,12 @@ export interface components {
          * @description Возвращает набор комментариев со всеми подкомменатриями, limit, offset не виляют на получение вложенных комментариев
          */
         "Comments_2.Methods.Get": {
-            subdomain: components["schemas"]["TV.API.Types.Topvisor.Subdomain"];
+            subdomain: import('../../TV/API/Types/Topvisor/Subdomain.ts').components['schemas']['TV.API.Types.Topvisor.Subdomain'];
             /** Адрес страницы (нельзя указывать совместно с reply_id) */
             page_url?: string | null;
             /** Получить ответы на комменатрий с id = reply_id (нельзя указывать совместно с page_url) */
             reply_id?: number | null;
         };
-        /** @enum {string} */
-        "TV.API.Types.Topvisor.Subdomain": "" | "journal";
     };
     responses: never;
     parameters: never;
