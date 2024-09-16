@@ -143,7 +143,7 @@ export interface components {
             /** @constant */
             All_tickets?: "All tickets";
             /** @constant */
-            All_pages?: "All pages";
+            All_pages?: "All articles";
             /** @constant */
             Submit?: "Submit";
             /** @constant */
