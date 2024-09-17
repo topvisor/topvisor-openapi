@@ -1189,6 +1189,9 @@
                     "Help_center_welcome": {
                         "const": "Support Center"
                     },
+                    "Help_center_question": {
+                        "const": "Got any questions?"
+                    },
                     "Run": {
                         "const": "Run"
                     },

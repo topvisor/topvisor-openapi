@@ -795,6 +795,8 @@ export interface components {
             /** @constant */
             Help_center_welcome?: "Support Center";
             /** @constant */
+            Help_center_question?: "Got any questions?";
+            /** @constant */
             Run?: "Run";
             /** @constant */
             Manage?: "Manage";
