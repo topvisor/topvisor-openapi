@@ -48,12 +48,6 @@
                     },
                     "Account": {
                         "const": "Account"
-                    },
-                    "No_discount_on_tools": {
-                        "const": "Скидка на инструменты не предоставляется"
-                    },
-                    "On_all_tools": {
-                        "const": "на все инструменты"
                     }
                 },
                 "required": []

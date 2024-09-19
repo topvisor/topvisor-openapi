@@ -121,6 +121,9 @@
             "Landings.Promocode": {
                 "$ref": "I18n/Landings/Promocode.json#/components/schemas/I18n.Landings.Promocode"
             },
+            "Pages.Help": {
+                "$ref": "I18n/Pages/Help.json#/components/schemas/I18n.Pages.Help"
+            },
             "Pages": {
                 "$ref": "I18n/Pages.json#/components/schemas/I18n.Pages"
             },

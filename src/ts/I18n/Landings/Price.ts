@@ -34,10 +34,6 @@ export interface components {
             Yandex_direct?: "Yandex Direct";
             /** @constant */
             Account?: "Account";
-            /** @constant */
-            No_discount_on_tools?: "Скидка на инструменты не предоставляется";
-            /** @constant */
-            On_all_tools?: "на все инструменты";
         };
     };
     responses: never;

@@ -45,6 +45,7 @@ export interface components {
         "Landings.Jobs": import('./I18n/Landings/Jobs.ts').components['schemas']['I18n.Landings.Jobs'];
         "Landings.Price": import('./I18n/Landings/Price.ts').components['schemas']['I18n.Landings.Price'];
         "Landings.Promocode": import('./I18n/Landings/Promocode.ts').components['schemas']['I18n.Landings.Promocode'];
+        "Pages.Help": import('./I18n/Pages/Help.ts').components['schemas']['I18n.Pages.Help'];
         Pages: import('./I18n/Pages.ts').components['schemas']['I18n.Pages'];
         "Projects.CheckButton": import('./I18n/Projects/CheckButton.ts').components['schemas']['I18n.Projects.CheckButton'];
         "Audit.Scan.Checks": import('./I18n/Audit/Scan/Checks.ts').components['schemas']['I18n.Audit.Scan.Checks'];
