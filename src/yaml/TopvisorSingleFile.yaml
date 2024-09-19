@@ -3913,6 +3913,7 @@ components:
         - pd
         - pd_invoice
         - rk
+        - pt
     Payments_2.Types.Country:
       type: string
       enum:
