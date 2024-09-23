@@ -253,6 +253,8 @@ export interface components {
             /** @constant */
             System_name_pp?: "PayPal";
             /** @constant */
+            System_name_pt?: "Payture";
+            /** @constant */
             System_name_ym?: "YooMoney";
             /** @constant */
             System_name_rk?: "Robokassa (cards of non-Russian banks, Belorussian in particular)";

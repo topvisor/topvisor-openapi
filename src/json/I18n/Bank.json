@@ -376,6 +376,9 @@
                     "System_name_pp": {
                         "const": "PayPal"
                     },
+                    "System_name_pt": {
+                        "const": "Payture"
+                    },
                     "System_name_ym": {
                         "const": "YooMoney"
                     },
