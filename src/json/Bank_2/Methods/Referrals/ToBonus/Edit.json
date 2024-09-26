@@ -1,0 +1,32 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Bank_2.Methods.Referrals.ToBonus.Edit",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Bank_2.Methods.Referrals.ToBonus.Edit": {
+                "type": "object",
+                "properties": {
+                    "sum": {
+                        "title": "Cумма для перевода",
+                        "type": "string"
+                    },
+                    "filters": {
+                        "$ref": "../../../../TV/API/Params/FiltersTrait.json#/components/schemas/TV.API.Params.FiltersTrait/properties/filters"
+                    },
+                    "id": {
+                        "$ref": "../../../../TV/API/Params/FiltersTrait.json#/components/schemas/TV.API.Params.FiltersTrait/properties/id"
+                    }
+                },
+                "required": [
+                    "sum",
+                    "filters"
+                ],
+                "title": "Перевод средств с реферального счета на бонусный"
+            }
+        }
+    }
+}

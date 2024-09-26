@@ -449,6 +449,23 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
+    /** Предоставить инфомацию по счету */
+    "/get/bank_2/info/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["GetBank2Info"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
     /**
      * Редактирование статуса лайка для комментария
      * @description Возвращает результат редактирования статуса лайка
@@ -1283,6 +1300,23 @@ export interface paths {
         get?: never;
         put?: never;
         post: operations["GetAudit2WatcherSummary"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Перевод средств с реферального счета на бонусный */
+    "/edit/bank_2/referrals/toBonus/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["EditBank2ReferralsToBonus"];
         delete?: never;
         options?: never;
         head?: never;
@@ -2413,6 +2447,32 @@ export interface operations {
                 content: {
                     "application/json": ({
                         /** Генерируемый на основе urls, список результатов проверок радара */
+                        result: (string | number)[];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: null;
+                };
+            };
+        };
+    };
+    GetBank2Info: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Bank_2/Methods/Info/Get.ts').components['schemas']['Bank_2.Methods.Info.Get'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
                         result: (string | number)[];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
@@ -3657,6 +3717,32 @@ export interface operations {
                     "application/json": ({
                         /** Сводка с количеством изменений по каждому типу проверки */
                         result: (string | number)[];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: null;
+                };
+            };
+        };
+    };
+    EditBank2ReferralsToBonus: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Bank_2/Methods/Referrals/ToBonus/Edit.ts').components['schemas']['Bank_2.Methods.Referrals.ToBonus.Edit'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: number;
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };

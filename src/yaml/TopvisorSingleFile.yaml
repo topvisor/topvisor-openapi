@@ -907,6 +907,42 @@ paths:
             model:
               schema:
                 type: 'null'
+  /get/bank_2/info/:
+    post:
+      operationId: GetBank2Info
+      tags:
+        - Bank_2
+      summary: Предоставить инфомацию по счету
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Bank_2.Methods.Info.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            type: array
+                            items:
+                              oneOf:
+                                - type: string
+                                - type: number
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                      - $ref: '#/components/schemas/Pagination'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
   /edit/comments_2/like/:
     post:
       operationId: EditComments2Like
@@ -2501,6 +2537,37 @@ paths:
                                 - type: string
                                 - type: number
                             title: Сводка с количеством изменений по каждому типу проверки
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
+  /edit/bank_2/referrals/toBonus/:
+    post:
+      operationId: EditBank2ReferralsToBonus
+      tags:
+        - Bank_2
+      summary: Перевод средств с реферального счета на бонусный
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Bank_2.Methods.Referrals.ToBonus.Edit'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            type: integer
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
@@ -5193,6 +5260,29 @@ components:
         Отчет генерируется на основе объектов urls
 
         Необходимо указать либо check_id1 и check_id2, либо checks_ids (вместе указывать нельзя)
+    Bank_2.Methods.Info.Get:
+      type: object
+      properties:
+        fields:
+          $ref: '#/components/schemas/fields'
+        orders:
+          $ref: '#/components/schemas/orders'
+        filters:
+          $ref: '#/components/schemas/filters'
+        id:
+          $ref: '#/components/schemas/id'
+        limit:
+          $ref: '#/components/schemas/limit'
+        offset:
+          $ref: '#/components/schemas/offset'
+        fetch_style:
+          $ref: '#/components/schemas/fetch_style'
+      required:
+        - fields
+        - orders
+        - filters
+        - offset
+      title: Предоставить инфомацию по счету
     Comments_2.Methods.Like.Edit:
       type: object
       properties:
@@ -8042,6 +8132,20 @@ components:
         - project_id
         - filters
       title: Получение сводки радара
+    Bank_2.Methods.Referrals.ToBonus.Edit:
+      type: object
+      properties:
+        sum:
+          title: Cумма для перевода
+          type: string
+        filters:
+          $ref: '#/components/schemas/filters'
+        id:
+          $ref: '#/components/schemas/id'
+      required:
+        - sum
+        - filters
+      title: Перевод средств с реферального счета на бонусный
     Payments_2.Methods.Tariff.DelCard.Edit:
       type: object
       properties: {}
