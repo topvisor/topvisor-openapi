@@ -11,7 +11,7 @@ export interface components {
         "Audit_2.Methods.Indexing.Summary.Get": {
             /** Произвольные даты без диапазона */
             dates: (string | number)[];
-            searcher_key?: components["schemas"]["Audit_2.Types.Indexing.SearcherKey"] | null;
+            searcher_key?: import('../../../Types/Indexing/SearcherKey.ts').components['schemas']['Audit_2.Types.Indexing.SearcherKey'] | null;
             /** Отобразить количество изменений */
             show_counts_changes: boolean;
             /** Отобразить количество страниц в индексе */
@@ -25,34 +25,10 @@ export interface components {
              *     @private
              */
             forChart: boolean;
-            project_id: components["schemas"]["project_id"];
-            filters: components["schemas"]["filters"];
-            id?: components["schemas"]["id"];
+            project_id: import('../../../../TV/API/Params/ProjectIdTrait.ts').components['schemas']['TV.API.Params.ProjectIdTrait']['project_id'];
+            filters: import('../../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['filters'];
+            id?: import('../../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['id'];
         };
-        /**
-         * Id поисковой системы для индексации
-         * @enum {string}
-         */
-        "Audit_2.Types.Indexing.SearcherKey": "0" | "1" | "5" | "6";
-        /** ID проекта */
-        project_id: number;
-        /**
-         * Список фильтров по полям объекта
-         * @description {name: string, operator: Field::AVAILABLE_OPERATORS, values: array}
-         *
-         *     Использует поля модели
-         *
-         *     Поля обязатлеьное, если $id не указан
-         *
-         *     @see AbstractMethod::MODEL
-         *     @see Field::AVAILABLE_OPERATORS
-         */
-        filters: (string | number)[];
-        /**
-         * Id объекта, для фильтрации объектов по id
-         * @description Только для моделей с полем id
-         */
-        id: number | null;
     };
     responses: never;
     parameters: never;

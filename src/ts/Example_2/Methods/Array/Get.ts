@@ -9,36 +9,11 @@ export interface components {
     schemas: {
         /** Метод с примерами параметров типа Enum */
         "Example_2.Methods.Array.Get": {
-            ints: components["schemas"]["TV.API.Types.IntArray"];
-            strings: components["schemas"]["TV.API.Types.StringArray"];
-            booleans: components["schemas"]["TV.API.Types.BoolArray"];
-            enum_numbers: components["schemas"]["Example_2.Types.EnumNumberArray"];
+            ints: import('../../../TV/API/Types/IntArray.ts').components['schemas']['TV.API.Types.IntArray'];
+            strings: import('../../../TV/API/Types/StringArray.ts').components['schemas']['TV.API.Types.StringArray'];
+            booleans: import('../../../TV/API/Types/BoolArray.ts').components['schemas']['TV.API.Types.BoolArray'];
+            enum_numbers: import('../../Types/EnumNumberArray.ts').components['schemas']['Example_2.Types.EnumNumberArray'];
         };
-        /**
-         * Тип массива: int
-         * @description Принимает: Любые целые числа и числа в строках
-         *
-         *     Хранит: int
-         */
-        "TV.API.Types.IntArray": number[];
-        /** Тип массива: string[] */
-        "TV.API.Types.StringArray": string[];
-        /**
-         * Тип массива: boolean
-         * @description Принимает: 0|1|false|true
-         *
-         *     Хранит: false|true
-         */
-        "TV.API.Types.BoolArray": boolean[];
-        /** @enum {integer} */
-        "Example_2.Types.Number": 1 | 2 | 3;
-        /**
-         * Тип: enum
-         * @description Принимает: 0|1|false|true
-         *
-         *     Хранит: false|true
-         */
-        "Example_2.Types.EnumNumberArray": components["schemas"]["Example_2.Types.Number"][];
     };
     responses: never;
     parameters: never;

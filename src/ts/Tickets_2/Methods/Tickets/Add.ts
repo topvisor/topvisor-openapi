@@ -12,9 +12,9 @@ export interface components {
             /** Текст тикета */
             text: string;
             /** @default system */
-            type: components["schemas"]["Tickets_2.Types.Tickets.Type"];
+            type: import('../../Types/Tickets/Type.ts').components['schemas']['Tickets_2.Types.Tickets.Type'];
             /** Язык тикета, нужен для подгрузки правильного языка в ответных письмах через почту */
-            lang?: components["schemas"]["TV.API.Types.Lang"] | null;
+            lang?: import('../../../TV/API/Types/Lang.ts').components['schemas']['TV.API.Types.Lang'] | null;
             /** Данные среды пользователя */
             user_data?: (string | number)[] | null;
             /**
@@ -25,7 +25,7 @@ export interface components {
             /** Не проводить рассылку уведомлений */
             is_silent: boolean;
             /** Необходим только для незарегистрированных пользователей */
-            email?: components["schemas"]["TV.API.Types.Email"] | null;
+            email?: import('../../../TV/API/Types/Email.ts').components['schemas']['TV.API.Types.Email'] | null;
             /**
              * Id пользователя внутри социальной сети, из которой был отправлен тикет
              * @description Может быть в любом виде
@@ -42,18 +42,6 @@ export interface components {
              */
             task_id: number;
         };
-        /**
-         * Откуда поступил тикет
-         * @enum {string}
-         */
-        "Tickets_2.Types.Tickets.Type": "system" | "other" | "email" | "ios" | "vk" | "chrome" | "twitter" | "facebook" | "telegram" | "android" | "guest";
-        /** @enum {string} */
-        "TV.API.Types.Lang": "ru" | "en";
-        /**
-         * E-mail
-         * @example name@example.com
-         */
-        "TV.API.Types.Email": string;
     };
     responses: never;
     parameters: never;

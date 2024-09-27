@@ -11,15 +11,7 @@ export interface components {
          * Тип массива: UrlUTF[]
          * @description @see UrlUTF
          */
-        "TV.API.Types.UrlUTFArray": components["schemas"]["TV.API.Types.UrlUTF"][];
-        /**
-         * URL не в punycode, может содержать UTF-символы:
-         *     - без "<" и ">"
-         * @description Будет проивзедено автоматическое приведение к формату
-         *
-         *     Разрешен ввод строй строки, для удаления значения url
-         */
-        "TV.API.Types.UrlUTF": string;
+        "TV.API.Types.UrlUTFArray": import('./UrlUTF.ts').components['schemas']['TV.API.Types.UrlUTF'][];
     };
     responses: never;
     parameters: never;

@@ -1817,2562 +1817,7 @@ export interface paths {
 }
 export type webhooks = Record<string, never>;
 export interface components {
-    schemas: {
-        /** Фиксация события */  
-        /** Категория */
-        "Analytics_2.Methods.Add": {
-            ec?: string | null;
-            /** Дейсвтие */
-            ea?: string | null;
-            /** Ярлык в base64 */
-            el?: string | null;
-            /** ID пользователя */
-            uid?: number | null;
-            /** Хеш для уникализации события */
-            hash_id?: number | null;
-            /** Хэш для проверки подлинности события */
-            hash?: number | null;
-        };
-        /** Тип массива: string[] */
-        "TV.API.Types.StringArray": string[];
-        /** Результат успешного API запроса */
-        ResponseSuccess: {
-            /**
-             * Результат ответа API метода
-             * @description Тип результата зависит от типа запроса и его настроек
-             */
-            errors?: null | null;
-            /** Список ообщений, полученных при выполнении запроса */
-            messages?: components["schemas"]["TV.API.Types.StringArray"] | null;
-        };
-        stdClass: Record<string, never>;
-        /** Информация об ошибке */
-        Error: {
-            /**
-             * Код ошибки
-             * @description Код ошибки 0 - deprecated
-             */
-            code: number;
-            /** Описание ошибки */
-            string: string;
-            /** Объект с дополнительной информацией */
-            detail: components["schemas"]["stdClass"];
-        };
-        /** Список ошибок */
-        Errors: components["schemas"]["Error"][];
-        /** Результат API запроса с ошибкой */
-        ResponseError: {
-            /** При ошибке результат отсутствует */
-            result?: null | null;
-            /**
-             * Список ошибок, полученных при выполнении запроса
-             * @description @requires
-             */
-            errors: components["schemas"]["Errors"];
-            /** Список ообщений, полученных при выполнении запроса */
-            messages?: components["schemas"]["TV.API.Types.StringArray"] | null;
-        };
-        /** @enum {string} */
-        "Annotations_2.Types.ServiceName": "positions" | "audit" | "watcher" | "indexing";
-        /** Добавление примечания */
-        "Annotations_2.Methods.Add": {
-            /** ID проекта */
-            project_id: number;
-            /** Имя сервиса */
-            service: components["schemas"]["Annotations_2.Types.ServiceName"];
-            /** Идентификатор отчета в сервисе */
-            target_id: string;
-            /** Комментарий, если не указан, комментарий добавлен не будет */
-            text: string;
-        };
-        /** Удаление примечания */
-        "Annotations_2.Methods.Del": {
-            /** ID примечания */
-            id: number;
-            /** ID проекта */
-            project_id: number;
-            /** Имя сервиса */
-            service: components["schemas"]["Annotations_2.Types.ServiceName"];
-        };
-        /** Редактирование примечания */
-        "Annotations_2.Methods.Edit": {
-            /** ID примечания */
-            id: number;
-            /** ID проекта */
-            project_id: number;
-            /** Имя сервиса */
-            service: components["schemas"]["Annotations_2.Types.ServiceName"];
-            /**
-             * Текст комментария
-             * @description Если не текст указан, комментарий будет удален
-             */
-            text: string;
-        };
-        /**
-         * Список полей объекта, которые надо вернуть в результате
-         * @description Если запрос поддерижвает параметр fetch_style, формат ответа может быть разным, fields будет влиять на содержание данных в этом ответе
-         *
-         *     Использует поля модели
-         *
-         *     @see AbstractMethod::MODEL
-         */
-        fields: (string | number)[];
-        /**
-         * Список полей объекта, по которым необходимо выполнить сортировку
-         * @description Поля могут быть строками или объектом: {name: string, direction: 'ASC' | 'DESC', orderValues: array}
-         *
-         *     Использует поля модели
-         *
-         *     @see AbstractMethod::MODEL
-         */
-        orders: (string | number)[];
-        /**
-         * Список фильтров по полям объекта
-         * @description {name: string, operator: Field::AVAILABLE_OPERATORS, values: array}
-         *
-         *     Использует поля модели
-         *
-         *     Поля обязатлеьное, если $id не указан
-         *
-         *     @see AbstractMethod::MODEL
-         *     @see Field::AVAILABLE_OPERATORS
-         */
-        filters: (string | number)[];
-        /**
-         * Id объекта, для фильтрации объектов по id
-         * @description Только для моделей с полем id
-         */
-        id: number | null;
-        /**
-         * Количество объектов, которые необходимо получить в результате
-         * @description Используется в паре с offset
-         */
-        limit: number | null;
-        /**
-         * Число объектов, которое необходимо пропустить при получении резальтата
-         * @description Используется в паре с limit
-         */
-        offset: number;
-        /**
-         * Определяет формат результата: коллекция, объект, значение
-         * @description Примеры:
-         *     - fetchAll - получить коллекцию объектов
-         *     - fetch - получить один объект
-         *     - fetchColumn - получить свойсвто объекта
-         *
-         *     @see Selector::AVAILABLE_FETCH_STYLES
-         *     @see Selector::execFetch() - см. реализацию
-         */
-        fetch_style: string | null;
-        /** Получение примечаний */
-        "Annotations_2.Methods.Get": {
-            /** ID проекта */
-            project_id: number;
-            /** Имя сервиса */
-            service: components["schemas"]["Annotations_2.Types.ServiceName"];
-            fields: components["schemas"]["fields"];
-            orders: components["schemas"]["orders"];
-            filters: components["schemas"]["filters"];
-            id?: components["schemas"]["id"];
-            limit?: components["schemas"]["limit"];
-            offset: components["schemas"]["offset"];
-            fetch_style?: components["schemas"]["fetch_style"];
-        };
-        "Models.Annotations": {
-            id?: unknown;
-            user_id?: unknown;
-            project_id?: unknown;
-            service?: unknown;
-            target_id?: unknown;
-            text?: unknown;
-            create_time?: unknown;
-        };
-        /** Результаты пагинации */
-        Pagination: {
-            /**
-             * Смещение для получения следующий порции данных
-             * @description Вернется только в случае существования следующей порции
-             */
-            nextOffset?: number | null;
-            /** Общее число результатов, без учета применения пагинации */
-            total?: number | null;
-        };
-        /** Получение заархивированного приложения */
-        "App_2.Methods.Get": Record<string, never>;
-        /** @enum {string} */
-        "TV.API.Types.Topvisor.Subdomain": "" | "journal";
-        /** Добавление комментария */
-        "Comments_2.Methods.Add": {
-            subdomain: components["schemas"]["TV.API.Types.Topvisor.Subdomain"];
-            /** Текст комментария */
-            text: string;
-            /** Адрес страницы (нельзя указывать совместно с reply_id) */
-            page_url?: string | null;
-            /** Привязать к комментарию с id = reply_id  (нельзя указывать совместно с page_url) */
-            reply_id?: number | null;
-        };
-        /**
-         * Удаление комментария
-         * @description Удалять комментарии можно только в течение ограниченного времени
-         *
-         *     Админы могут удалять комментарии в любое время
-         */
-        "Comments_2.Methods.Del": {
-            /** ID комментария */
-            id: number;
-        };
-        /**
-         * Изменение комментария
-         * @description Изменять комментарий можно только в течение ограниченного времени
-         */
-        "Comments_2.Methods.Edit": {
-            /** ID комментария */
-            id: number;
-            /** Текст комментария, не может быть пустой строкой */
-            text: string;
-        };
-        /**
-         * Получение комментариев
-         * @description Возвращает набор комментариев со всеми подкомменатриями, limit, offset не виляют на получение вложенных комментариев
-         */
-        "Comments_2.Methods.Get": {
-            subdomain: components["schemas"]["TV.API.Types.Topvisor.Subdomain"];
-            /** Адрес страницы (нельзя указывать совместно с reply_id) */
-            page_url?: string | null;
-            /** Получить ответы на комменатрий с id = reply_id (нельзя указывать совместно с page_url) */
-            reply_id?: number | null;
-        };
-        /** @enum {string} */
-        "Payments_2.Types.System": "balance" | "card" | "card_ios" | "card_android" | "card_ap" | "card_gp" | "invoice" | "tinkoff_business" | "ap" | "ym" | "qw" | "sb" | "wm2" | "pp" | "pd" | "pd_invoice" | "rk" | "pt";
-        /** @enum {string} */
-        "Payments_2.Types.Country": "RU" | "UA" | "BY" | "KZ" | "other";
-        /**
-         * Создать платежку и перейти к оплате
-         * @description Возвратит id платежа, если указан параметр $return_id = true
-         *
-         *     Произведет редирект, если настроена форма оплаты на стороне платежной системы
-         *
-         *     Возвратит информацию о платеже, если ожидается вывод формы оплаты на сайте
-         *
-         *     При ошибке произведет редирект на страницу с инофрмацией об ошибке
-         */
-        "Payments_2.Methods.Add": {
-            /** Платежная система */
-            system: components["schemas"]["Payments_2.Types.System"];
-            /** Сумма платежа */
-            sum: number;
-            /** Страна реквизитов */
-            country: components["schemas"]["Payments_2.Types.Country"];
-            /** Номер договора/оферты для платежа */
-            requisites_id: string;
-            /** ID тарифа (если указан, сумма будет переопределена) */
-            tariff_id: number;
-            /**
-             * Число предоплаченных месяцев по тарифу
-             * @description Примеры:
-             *     - при оплате тарифа на 1 месяц должен быть равен 1
-             *     - при оплате тарифа на 2 месяца должен быть равен 2
-             */
-            tariff_count_month: number;
-            /** Комментарий */
-            comment: string;
-            /** Комментарий */
-            items: (string | number)[];
-            /** ID карты в системе оплаты для привязки */
-            card_id: string;
-            /** Пробрасываемые данные в redirectToPay() для FinishAuthorize Tinkoff для Apple Pay и Google Pay */
-            payment_data: string;
-            /** Email (указывается, если у пользователя не привязан email)
-             *     TODO: Добавить тип Email */
-            email?: string | null;
-            /** Телефон (указывается для определенных систем оплаты) */
-            phone: string;
-            /** Флаг - отменяемый платеж, используется для сохранения данных банковской карты пользователя, сумма платежа вернется пользователю после отмены */
-            is_cancelable: boolean;
-            /** Возвратить id платежа, не выполняя redirectToPay() */
-            return_id: boolean;
-        };
-        /** Получить список платежей */
-        "Payments_2.Methods.Get": {
-            fields: components["schemas"]["fields"];
-            orders: components["schemas"]["orders"];
-            filters: components["schemas"]["filters"];
-            id?: components["schemas"]["id"];
-            limit?: components["schemas"]["limit"];
-            offset: components["schemas"]["offset"];
-            fetch_style?: components["schemas"]["fetch_style"];
-        };
-        "Models.Payments": {
-            "COUNT(*)"?: unknown;
-            "HAS_DOC()"?: unknown;
-            id?: unknown;
-            external_id?: unknown;
-            user_id?: unknown;
-            system?: unknown;
-            requisites_id?: unknown;
-            data?: unknown;
-            sum?: unknown;
-            currency?: unknown;
-            status?: unknown;
-            recurrent_type?: unknown;
-            tariff_id?: unknown;
-            tariff_count_month?: unknown;
-            date?: unknown;
-            date_month?: unknown;
-            date_finished?: unknown;
-            date_month_finished?: unknown;
-            fromBase64Data?: unknown;
-        };
-        /** @enum {integer} */
-        "Qr_2.Types.TplN": 0 | 1 | 2;
-        /**
-         * Генерирует QR код по тексту
-         * @description Возвращает изображение в формате data:image/png;base64
-         */
-        "Qr_2.Methods.Get": {
-            /** Кодируемый текст */
-            text: string;
-            /**
-             * Кодируемый текст
-             * @description - 0 - черно-белый
-             *     - 1 - шашечки
-             *     - 2 - группы с закруглениями
-             */
-            tpl_n: components["schemas"]["Qr_2.Types.TplN"];
-            /** Использовать ли брендированное лого */
-            use_brand: boolean;
-            /** Использовать ли цвета из лого */
-            use_logo_colors: boolean;
-            /** Использовать указанный цвет, цвет задается массивом из 3 элементов [r, g, b] */
-            color?: (string | number)[] | null;
-            /**
-             * Размер точек QR кода в пикселях
-             * @default 4
-             */
-            point_size: number;
-        };
-        /**
-         * Краткий URL в punycode, не может содержать UTF-символы:
-         *     - без схемы
-         *     - без "www." в домене
-         *     - без слешей на конце
-         *     - без "<" и ">"
-         * @description Будет проивзедено автоматическое приведение к формату
-         *
-         *     Разрешен ввод строй строки, для удаления значения url
-         */
-        "TV.API.Types.Url": string;
-        /**
-         * Флаг активности
-         * @enum {integer}
-         */
-        "Urls_2.Types.Flag": -1 | 0 | 1 | 2;
-        /**
-         * Доступные теги
-         * @enum {string}
-         */
-        "Tags_2.Types.Tag": "1" | "2" | "3" | "4" | "5" | "6" | "7" | "8" | "9" | "10" | "11" | "12" | "13" | "14" | "15" | "16" | "17" | "18" | "19" | "20";
-        /**
-         * Массив номеров тегов
-         * @description Тип массива Tags[]
-         *
-         *     @see Tags_2\Types\Tag
-         */
-        "Tags_2.Types.Tags": components["schemas"]["Tags_2.Types.Tag"][];
-        /** ID проекта */
-        project_id: number;
-        /** Добавление url */
-        "Urls_2.Methods.Add": {
-            /** URL соответствующий домену проекта */
-            url: components["schemas"]["TV.API.Types.Url"];
-            /** Флаг активности в карте сайта
-             *     - 1 - присутствовал в прошлых версиях карты сайта */
-            sitemap?: components["schemas"]["Urls_2.Types.Flag"] | null;
-            /** Флаг активности в аудите */
-            audit?: components["schemas"]["Urls_2.Types.Flag"] | null;
-            /** Флаг активности в радаре */
-            indexing?: components["schemas"]["Urls_2.Types.Flag"] | null;
-            /** Флаг активности в индексации */
-            watcher?: components["schemas"]["Urls_2.Types.Flag"] | null;
-            tags?: components["schemas"]["Tags_2.Types.Tags"] | null;
-            project_id: components["schemas"]["project_id"];
-        };
-        "Models.Urls": {
-            "COUNT(*)"?: unknown;
-            /** @example {
-             *       "need set qualifiers": [
-             *         "check_id"
-             *       ]
-             *     } */
-            "WATCHER_HTTP_CODES_HUNDREDS()"?: (string | number)[] | null;
-            id?: number;
-            url?: string | null;
-            project_id?: number | null;
-            sitemap?: unknown;
-            audit?: unknown;
-            watcher?: unknown;
-            indexing?: unknown;
-            tags?: unknown;
-            sitemap_lastmod?: unknown;
-            sitemap_changefreq?: unknown;
-            sitemap_priority?: unknown;
-            /** @example {
-             *       "need set qualifiers": [
-             *         "date",
-             *         "searcher_key"
-             *       ]
-             *     } */
-            indexing_data?: number | null;
-            /** @example {
-             *       "need set qualifiers": [
-             *         "date",
-             *         "searcher_key"
-             *       ]
-             *     } */
-            indexing_alert?: number | null;
-            /** @example {
-             *       "need set qualifiers": [
-             *         "check_id"
-             *       ]
-             *     } */
-            watcher_http_codes?: (string | number)[] | null;
-            /** @example {
-             *       "need set qualifiers": [
-             *         "check_id"
-             *       ]
-             *     } */
-            watcher_http_codes_changed?: number | null;
-            /** @example {
-             *       "need set qualifiers": [
-             *         "check_id"
-             *       ]
-             *     } */
-            watcher_redirects?: (string | number)[] | null;
-            /** @example {
-             *       "need set qualifiers": [
-             *         "check_id"
-             *       ]
-             *     } */
-            watcher_h1?: string | null;
-            /** @example {
-             *       "need set qualifiers": [
-             *         "check_id"
-             *       ]
-             *     } */
-            watcher_h1_changed?: number | null;
-            /** @example {
-             *       "need set qualifiers": [
-             *         "check_id"
-             *       ]
-             *     } */
-            watcher_title?: string | null;
-            /** @example {
-             *       "need set qualifiers": [
-             *         "check_id"
-             *       ]
-             *     } */
-            watcher_title_changed?: number | null;
-            /** @example {
-             *       "need set qualifiers": [
-             *         "check_id"
-             *       ]
-             *     } */
-            watcher_description?: string | null;
-            /** @example {
-             *       "need set qualifiers": [
-             *         "check_id"
-             *       ]
-             *     } */
-            watcher_description_changed?: number | null;
-            /** @example {
-             *       "need set qualifiers": [
-             *         "check_id"
-             *       ]
-             *     } */
-            watcher_content?: string | null;
-            /** @example {
-             *       "need set qualifiers": [
-             *         "check_id"
-             *       ]
-             *     } */
-            watcher_content_changed?: number | null;
-        };
-        /** Изменение urls */
-        "Urls_2.Methods.Edit": {
-            /** Флаг активности в карте сайта
-             *     - 1 - присутствовал в прошлых версиях карты сайта */
-            sitemap?: components["schemas"]["Urls_2.Types.Flag"] | null;
-            /** Флаг активности в аудите */
-            audit?: components["schemas"]["Urls_2.Types.Flag"] | null;
-            /** Флаг активности в радаре */
-            indexing?: components["schemas"]["Urls_2.Types.Flag"] | null;
-            /** Флаг активности в индексации */
-            watcher?: components["schemas"]["Urls_2.Types.Flag"] | null;
-            filters: components["schemas"]["filters"];
-            id?: components["schemas"]["id"];
-            project_id: components["schemas"]["project_id"];
-        };
-        /** Получение списка urls проекта */
-        "Urls_2.Methods.Get": {
-            fields: components["schemas"]["fields"];
-            orders: components["schemas"]["orders"];
-            filters: components["schemas"]["filters"];
-            id?: components["schemas"]["id"];
-            limit?: components["schemas"]["limit"];
-            offset: components["schemas"]["offset"];
-            fetch_style?: components["schemas"]["fetch_style"];
-            project_id: components["schemas"]["project_id"];
-        };
-        /** Получение всех своих примечаний по всем проектам и сервисам */
-        "Annotations_2.Methods.My.Get": {
-            fields: components["schemas"]["fields"];
-            orders: components["schemas"]["orders"];
-            filters: components["schemas"]["filters"];
-            id?: components["schemas"]["id"];
-            limit?: components["schemas"]["limit"];
-            offset: components["schemas"]["offset"];
-            fetch_style?: components["schemas"]["fetch_style"];
-        };
-        /**
-         * Получение данных подтверждения
-         * @description Возвращает результат подтверждения в виде
-         *     массива с сообщением (acceptAction),
-         *     логической переменной (acceptEmail),
-         *     null при неправильно введенном типе
-         */
-        "App_2.Methods.Actions.Get": {
-            /** Email пользователя */
-            email: string;
-            /** Код для генерации ссылки подтверждения */
-            code: string;
-            /**
-             * Тип подтверждения
-             * @default acceptAction
-             */
-            type_action: string;
-        };
-        /** @enum {string} */
-        "TV.API.Types.Lang": "ru" | "en";
-        /** Получить текст политики конфиденциальности */
-        "App_2.Methods.Privacy.Get": {
-            /** Язык страницы */
-            lang?: components["schemas"]["TV.API.Types.Lang"] | null;
-        };
-        "Controller_2.Objects.Location": Record<string, never>;
-        "Controller_2.Objects.OpenGraph": Record<string, never>;
-        "Controller_2.Objects.Page.Options": {
-            title: string;
-            description: string;
-            keywords: string;
-            noindex: boolean;
-            canonical: string;
-            alternates: (string | number)[];
-        };
-        "Controller_2.Objects.Page.Article": {
-            /** @default module */
-            type: string;
-            duration?: string | null;
-            word_count?: string | null;
-            htmlRaw: string;
-            url: string;
-            parent_url: string;
-            publish_time?: string | null;
-            h1: string;
-            description?: string | null;
-            menu_name?: string | null;
-            intro?: string | null;
-            html: string;
-            image: string;
-            tags: (string | number)[];
-            count_views: number;
-            count_unique_views?: number | null;
-            count_likes: number;
-            count_comments?: number | null;
-            theme: string;
-            noindex: boolean;
-            quiz_id: string;
-            /** @default ACTIVE */
-            state: string;
-            rubric_name: string;
-            user_id: number;
-            user_name?: string | null;
-            user_description: string;
-            user_avatar: string;
-            view: number;
-            like: number;
-            bookmark: string;
-            bookmark_author: string;
-            author_alias: string;
-        };
-        "Tpl.Core.SecondMenu": Record<string, never>;
-        "Tpl.Core.LeftMenu": {
-            items: (string | number)[];
-        };
-        "Controller_2.Objects.Sites.Site": Record<string, never>;
-        /**
-         * Движок работы с шаблонизатором
-         * @description Является неотъемлемой частью Page
-         */
-        "Controller_2.Objects.TplEngine": Record<string, never>;
-        "Controller_2.Objects.Page": {
-            location: components["schemas"]["Controller_2.Objects.Location"];
-            openGraph: components["schemas"]["Controller_2.Objects.OpenGraph"];
-            options: components["schemas"]["Controller_2.Objects.Page.Options"];
-            article: components["schemas"]["Controller_2.Objects.Page.Article"];
-            secondMenu: components["schemas"]["Tpl.Core.SecondMenu"];
-            leftMenu: components["schemas"]["Tpl.Core.LeftMenu"];
-            params: (string | number)[];
-            site: components["schemas"]["Controller_2.Objects.Sites.Site"];
-            subdomain: string;
-            langContext: string;
-            langUrl: string;
-            modUrl: string;
-            mod: string;
-            subMod: string;
-            /** @default regular */
-            theme: string;
-            jsonLDs: (string | number)[];
-            htmlAttributes: (string | number)[];
-            logo: string;
-            redirect: string;
-            /** @default 302 */
-            redirectCode: number;
-            tplEngine: components["schemas"]["Controller_2.Objects.TplEngine"];
-            tplStaticPath: string;
-            tplStatic: string;
-            tplStaticRendered: string;
-            /** @default templates/pages/content.php */
-            tplPath: string;
-            tplRendered: string;
-            tplSiteRendered: string;
-            data: (string | number)[];
-            rightsLabels: (string | number)[];
-            isFullSize: boolean;
-            showFooter: boolean;
-            isAdaptive: boolean;
-            additionalHeadCode: string;
-            v: string;
-            vJS: string;
-        };
-        /**
-         * Модуль аудита
-         * @enum {string}
-         */
-        "Audit_2.Types.Type": "audit" | "indexing" | "sitemap" | "watcher";
-        /** Получение количества настроенных URL */
-        "Audit_2.Methods.CountUrls.Get": {
-            audit_type: components["schemas"]["Audit_2.Types.Type"];
-            project_id: components["schemas"]["project_id"];
-        };
-        /**
-         * Id поисковой системы для индексации
-         * @enum {string}
-         */
-        "Audit_2.Types.Indexing.SearcherKey": "0" | "1" | "5" | "6";
-        /** Id поисковых систем для индексации */
-        "Audit_2.Types.Indexing.SearcherKeys": components["schemas"]["Audit_2.Types.Indexing.SearcherKey"][];
-        /**
-         * Дата
-         * @example 2000-01-01
-         */
-        "TV.API.Types.Date": string;
-        /**
-         * Тип диапазона индексации
-         * @enum {integer}
-         */
-        "Audit_2.Types.Indexing.Export.TypeRange": 0 | 2 | 3 | 4 | 7 | 100;
-        /**
-         * Получение отчета по проверке индексации
-         * @description Необходимо указать либо date1 и date2, либо dates (вместе указывать нельзя)
-         */
-        "Audit_2.Methods.Indexing.Get": {
-            searchers_keys: components["schemas"]["Audit_2.Types.Indexing.SearcherKeys"];
-            /**
-             * Список полей индексации, которые необъодимо получить
-             * @description См. поля indexing_* в объекте Urls
-             * @default [
-             *       "data"
-             *     ]
-             */
-            indexing_fields: (string | number)[];
-            /** Вернуть ли заголовки отчета */
-            show_headers: boolean;
-            /** Вернуть ли суммарное количество страниц в индексе по URL */
-            show_counts_indexing: boolean;
-            /** Вернуть ли даты проверок */
-            show_exists_dates: boolean;
-            /**
-             * Фильтр по изменениям в указанной ПС в указанную дату
-             * @description Формат записи: `{{ date }}:{{ searcher_key }}`
-             */
-            filter_by_alert: string;
-            /** Произвольные даты без использования диапазона */
-            dates?: (string | number)[] | null;
-            /** Дата начала диапазона */
-            date1?: components["schemas"]["TV.API.Types.Date"] | null;
-            /** Дата окончания диапазона */
-            date2?: components["schemas"]["TV.API.Types.Date"] | null;
-            /**
-             * Период в днях
-             * @default 7
-             */
-            periodDays: number;
-            /**
-             * Тип диапазона дат
-             * @default 7
-             */
-            type_range: components["schemas"]["Audit_2.Types.Indexing.Export.TypeRange"];
-            /**
-             * Количество дней в диапазоне
-             * @default 60
-             */
-            count_dates: number;
-            fields: components["schemas"]["fields"];
-            orders: components["schemas"]["orders"];
-            filters: components["schemas"]["filters"];
-            id?: components["schemas"]["id"];
-            limit?: components["schemas"]["limit"];
-            offset: components["schemas"]["offset"];
-            fetch_style?: components["schemas"]["fetch_style"];
-            project_id: components["schemas"]["project_id"];
-        };
-        /**
-         * Тип отчета радара
-         * @enum {string}
-         */
-        "Audit_2.Types.Settings.WatcherType": "title" | "description" | "h1" | "content";
-        /** Типы отчетов радара */
-        "Audit_2.Types.Settings.WatcherTypes": components["schemas"]["Audit_2.Types.Settings.WatcherType"][];
-        /**
-         * Регулярное выражение
-         * @description Пустое значение разрешено
-         *
-         *     Управляющие символы "/" в начале и в конце строки будут удалены
-         *
-         * @example /^year_(\d\d\d\d)$/
-         */
-        "TV.API.Types.RegExp": string;
-        /**
-         * Местоположение сервера для выполнения задач инструментов аудита
-         * @enum {string}
-         */
-        "Audit_2.Types.Settings.ServerLocation": "EASTERN_EUROPE" | "WESTERN_EUROPE";
-        /** Применение наастроек Анализа сайта */
-        "Audit_2.Methods.Settings.Edit": {
-            /**
-             * User-Agent (аудит)
-             * @description Можно указать id устройства
-             *
-             *     @see Audit_2\Types\Settings\Device
-             */
-            audit_user_agent?: string | null;
-            /** Сохранять куки между запросами (аудит) */
-            audit_use_cookie?: boolean | null;
-            /** Проверять ссылки (аудит) */
-            audit_scan_links?: boolean | null;
-            /** Проверять изображения (аудит) */
-            audit_scan_images?: boolean | null;
-            /** Проверять JS (аудит) */
-            audit_scan_js?: boolean | null;
-            /** Проверять css (аудит) */
-            audit_scan_css?: boolean | null;
-            /** Ключ api для https://developers.google.com/speed/docs/insights/v5/get-started (аудит) */
-            audit_api_key?: string | null;
-            /** Паузы между проверками страниц сайта (аудит) */
-            audit_page_delay?: number | null;
-            /** Паузы между првоерками ресурсов страниц сайта (аудит) */
-            audit_resource_delay?: number | null;
-            /** Дополнитлеьные Cookies (аудит) */
-            audit_cookies?: string | null;
-            /** Использовать ли при запуске аудита автоматический сбор URL (аудит) */
-            audit_auto_collect_pages?: boolean | null;
-            /** Лимит страниц при автоматическом проходе по сайту (аудит) */
-            audit_auto_collect_pages_limit?: number | null;
-            /** Страница, с которой начинается автоматический сбор URL (аудит) */
-            audit_auto_collect_pages_start_url?: components["schemas"]["TV.API.Types.Url"] | null;
-            /** Поисковые системы (индексация) */
-            indexing_searchers_keys?: components["schemas"]["Audit_2.Types.Indexing.SearcherKeys"] | null;
-            /**
-             * User-Agent (радар)
-             * @description Можно указать id устройства
-             *
-             *     @see Audit_2\Types\Settings\Device
-             */
-            watcher_user_agent?: string | null;
-            watcher_max_redirects?: number | null;
-            /** Типы отчетов, которые необходимо построить (радар) */
-            watcher_types?: components["schemas"]["Audit_2.Types.Settings.WatcherTypes"] | null;
-            /**
-             * Регулярное выражение для сбора контента (радар)
-             * @description Если не указано, будут ипользоваться теги разметки
-             *
-             *     @see https://topvisor.com/support/watcher/settings/#tags
-             */
-            watcher_regexp?: components["schemas"]["TV.API.Types.RegExp"] | null;
-            /** Вырезать из кода страницы javascript (радар) */
-            watcher_ignore_js?: boolean | null;
-            /** Вырезать из результатов html-тэги (радар) */
-            watcher_strip_tags_from_result?: boolean | null;
-            /** Дополнитлеьные cookies (радар) */
-            watcher_cookies?: string | null;
-            server_location?: components["schemas"]["Audit_2.Types.Settings.ServerLocation"] | null;
-            project_id: components["schemas"]["project_id"];
-        };
-        /**
-         * Имя настройки для интсрумента аудита
-         * @enum {string}
-         */
-        "Audit_2.Types.Settings.FieldName": "audit_user_agent" | "audit_use_cookie" | "audit_cookies" | "audit_scan_links" | "audit_scan_images" | "audit_scan_js" | "audit_scan_css" | "audit_api_key" | "audit_page_delay" | "audit_resource_delay" | "audit_auto_collect_pages" | "audit_auto_collect_pages_limit" | "audit_auto_collect_pages_start_url" | "indexing_searchers_keys" | "watcher_user_agent" | "watcher_cookies" | "watcher_max_redirects" | "watcher_types" | "watcher_regexp" | "watcher_ignore_js" | "watcher_strip_tags_from_result" | "server_location";
-        /** Имена настроек для инструментов аудита */
-        "Audit_2.Types.Settings.FieldNames": components["schemas"]["Audit_2.Types.Settings.FieldName"][];
-        /** Получение настроек аудита */
-        "Audit_2.Methods.Settings.Get": {
-            fields: components["schemas"]["Audit_2.Types.Settings.FieldNames"];
-            project_id: components["schemas"]["project_id"];
-        };
-        /**
-         * Тип диапазона радара
-         * @enum {integer}
-         */
-        "Audit_2.Types.Watcher.TypeRange": 0 | 2 | 3 | 4 | 7 | 100;
-        /**
-         * Тип проверки радара
-         * @enum {string}
-         */
-        "Audit_2.Types.Watcher.Type": "http_codes" | "redirects" | "h1" | "title" | "description" | "content";
-        /**
-         * Добавить в результат различия данных
-         * @enum {integer}
-         */
-        "Audit_2.Types.Watcher.ShowDiff": 0 | 1 | 2 | 3;
-        /**
-         * Получение результатов проверок радара
-         * @description Отчет генерируется на основе объектов urls
-         *
-         *     Необходимо указать либо check_id1 и check_id2, либо checks_ids (вместе указывать нельзя)
-         */
-        "Audit_2.Methods.Watcher.Get": {
-            /** ID проверок в произвольном порядке */
-            checks_ids?: (string | number)[] | null;
-            /** ID проверки начала диапазона */
-            check_id1?: number | null;
-            /** ID проверки конца диапазона */
-            check_id2?: number | null;
-            /** @default 7 */
-            type_range: components["schemas"]["Audit_2.Types.Watcher.TypeRange"];
-            /**
-             * Максимальное число возвращаемых проверок (не более 60)
-             * @default 60
-             */
-            count_ids: number;
-            watcher_type: components["schemas"]["Audit_2.Types.Watcher.Type"];
-            /**
-             * Выбор столбцов данных с результатами проверки
-             * @default [
-             *       "http_codes",
-             *       "redirects"
-             *     ]
-             */
-            watcher_fields: (string | number)[];
-            /** Добавить в результат заголовки отчета */
-            show_headers: boolean;
-            show_diff: components["schemas"]["Audit_2.Types.Watcher.ShowDiff"];
-            /** Добавить в результат количество проверок */
-            show_counts_watcher: boolean;
-            project_id: components["schemas"]["project_id"];
-            fields: components["schemas"]["fields"];
-            filters: components["schemas"]["filters"];
-            id?: components["schemas"]["id"];
-            limit?: components["schemas"]["limit"];
-            orders: components["schemas"]["orders"];
-            offset: components["schemas"]["offset"];
-        };
-        /** Предоставить инфомацию по счету */
-        "Bank_2.Methods.Info.Get": {
-            fields: components["schemas"]["fields"];
-            orders: components["schemas"]["orders"];
-            filters: components["schemas"]["filters"];
-            id?: components["schemas"]["id"];
-            limit?: components["schemas"]["limit"];
-            offset: components["schemas"]["offset"];
-            fetch_style?: components["schemas"]["fetch_style"];
-        };
-        /**
-         * Редактирование статуса лайка для комментария
-         * @description Возвращает результат редактирования статуса лайка
-         */
-        "Comments_2.Methods.Like.Edit": {
-            /** Id комментария */
-            id: number;
-            /** Установка лайка
-             *     - 0: снять лайк
-             *     - 1: поставить лайк */
-            like: boolean;
-        };
-        /** Изменить настройки автора */
-        "Content_2.Methods.Authors.Edit": {
-            /**
-             * Имя для url страницы автора
-             * @description Только латинские буквы, цифры и символ дефиса
-             */
-            alias?: string | null;
-            /** Промо текст */
-            promo_text?: string | null;
-            /** Текс для промо кнопки */
-            promo_label?: string | null;
-            /** Ссылка для промо кнопки */
-            promo_link?: components["schemas"]["TV.API.Types.Url"] | null;
-            /** Отображать ли автора в списке авторов */
-            show_in_author_list?: boolean | null;
-        };
-        /** Получение данных об авторе */
-        "Content_2.Methods.Authors.Get": {
-            fields: components["schemas"]["fields"];
-            orders: components["schemas"]["orders"];
-            filters: components["schemas"]["filters"];
-            id?: components["schemas"]["id"];
-            limit?: components["schemas"]["limit"];
-            offset: components["schemas"]["offset"];
-            fetch_style?: components["schemas"]["fetch_style"];
-        };
-        "Models.Content.Authors": {
-            "IS_ACTIVE()"?: number | null;
-            user_id?: number | null;
-            alias?: string | null;
-            promo_text?: string | null;
-            promo_label?: string | null;
-            promo_link?: string | null;
-            count_pages?: number | null;
-            count_views?: number | null;
-            count_unique_views?: string | null;
-            count_likes?: number | null;
-            show_in_author_list?: number | null;
-            user_site?: string | null;
-            user_name?: string | null;
-            user_avatar?: string | null;
-            user_description?: string | null;
-            bookmark_author?: number | null;
-        };
-        /**
-         * День недели, в который должен производиться запуск cron
-         * @enum {string}
-         */
-        "Cron_2.Types.Day": "1" | "2" | "3" | "4" | "5" | "6" | "7";
-        /** Дни недели, в которые должен производиться запуск cron */
-        "Cron_2.Types.Days": components["schemas"]["Cron_2.Types.Day"][];
-        /**
-         * Час в который должен производиться запуск cron
-         * @description Пустое значение зарезервированно для запуска cron каждый час
-         *
-         *     Значение должно находиться в диапазоне от 0 до 23 включительно
-         */
-        "Cron_2.Types.Hour": string;
-        /**
-         * Минута или интервал в минутах в который должен производиться запуск cron
-         * @description Значение должно находится в диапазоне от 0 до 59 включительно
-         *
-         *     Если значение является интервалом, в начало ставится символ '*'
-         */
-        "Cron_2.Types.Minute": string;
-        /** Имя команды cron */
-        command: string;
-        /** Добавление задачи cron */
-        "Cron_2.Methods.Commands.Add": {
-            /** Описание задачи */
-            description: string;
-            days: components["schemas"]["Cron_2.Types.Days"];
-            hh: components["schemas"]["Cron_2.Types.Hour"];
-            i: components["schemas"]["Cron_2.Types.Minute"];
-            /** Статус активности задачи */
-            on: boolean;
-            command: components["schemas"]["command"];
-        };
-        "Models.CronCommands": {
-            "SERVICE()"?: unknown;
-            command?: string | null;
-            description?: string | null;
-            days?: string | null;
-            hh?: string | null;
-            i?: string | null;
-            on?: number | null;
-            task_create_time?: unknown;
-            task_start_time?: unknown;
-            task_status?: string | null;
-        };
-        /** Удаление задачи cron */
-        "Cron_2.Methods.Commands.Del": {
-            filters: components["schemas"]["filters"];
-            id?: components["schemas"]["id"];
-            command: components["schemas"]["command"];
-        };
-        /** Изменение задачи cron */
-        "Cron_2.Methods.Commands.Edit": {
-            /** Описание задачи */
-            description?: string | null;
-            days?: components["schemas"]["Cron_2.Types.Days"] | null;
-            hh?: components["schemas"]["Cron_2.Types.Hour"] | null;
-            i?: components["schemas"]["Cron_2.Types.Minute"] | null;
-            /** Статус активности задачи */
-            on?: boolean | null;
-            filters: components["schemas"]["filters"];
-            id?: components["schemas"]["id"];
-            command: components["schemas"]["command"];
-        };
-        /** Получение задач cron */
-        "Cron_2.Methods.Commands.Get": {
-            fields: components["schemas"]["fields"];
-            orders: components["schemas"]["orders"];
-            filters: components["schemas"]["filters"];
-            id?: components["schemas"]["id"];
-            limit?: components["schemas"]["limit"];
-            offset: components["schemas"]["offset"];
-            fetch_style?: components["schemas"]["fetch_style"];
-        };
-        /** Получение списка имен сервисов, в которых есть команды cron */
-        "Cron_2.Methods.Get": {
-            fields: components["schemas"]["fields"];
-            orders: components["schemas"]["orders"];
-            filters: components["schemas"]["filters"];
-            id?: components["schemas"]["id"];
-            limit?: components["schemas"]["limit"];
-            offset: components["schemas"]["offset"];
-            fetch_style?: components["schemas"]["fetch_style"];
-        };
-        /**
-         * Тип массива: int
-         * @description Принимает: Любые целые числа и числа в строках
-         *
-         *     Хранит: int
-         */
-        "TV.API.Types.IntArray": number[];
-        /**
-         * Тип массива: boolean
-         * @description Принимает: 0|1|false|true
-         *
-         *     Хранит: false|true
-         */
-        "TV.API.Types.BoolArray": boolean[];
-        /** @enum {integer} */
-        "Example_2.Types.Number": 1 | 2 | 3;
-        /**
-         * Тип: enum
-         * @description Принимает: 0|1|false|true
-         *
-         *     Хранит: false|true
-         */
-        "Example_2.Types.EnumNumberArray": components["schemas"]["Example_2.Types.Number"][];
-        /** Метод с примерами параметров типа Enum */
-        "Example_2.Methods.Array.Get": {
-            ints: components["schemas"]["TV.API.Types.IntArray"];
-            strings: components["schemas"]["TV.API.Types.StringArray"];
-            booleans: components["schemas"]["TV.API.Types.BoolArray"];
-            enum_numbers: components["schemas"]["Example_2.Types.EnumNumberArray"];
-        };
-        /** Получение текущего времени */
-        "Example_2.Methods.Custom.Get": {
-            /**
-             * Формат даты
-             * @description Не обязательный параметр строкового типа со значением по умолчанию
-             *
-             *     Можно не указывать, но в exec() он не может быть пустым
-             * @default Y-m-d H:i:s
-             */
-            format: string;
-        };
-        /** @enum {string} */
-        "Example_2.Types.Letter": "a" | "b" | "c";
-        /** Метод с примерами параметров типа Enum */
-        "Example_2.Methods.Enum.Get": {
-            number?: components["schemas"]["Example_2.Types.Number"] | null;
-            number2: components["schemas"]["Example_2.Types.Number"];
-            letter: components["schemas"]["Example_2.Types.Letter"];
-        };
-        /** Получение списка проектов */
-        "Example_2.Methods.Projects.Get": {
-            /**
-             * Имя проекта
-             * @description Используется для фильтрации по имени проекта, см. self::exec()
-             *
-             *     Не обязательный параметр метода строкового типа
-             */
-            name?: string | null;
-            fields: components["schemas"]["fields"];
-            orders: components["schemas"]["orders"];
-            filters: components["schemas"]["filters"];
-            id?: components["schemas"]["id"];
-            limit?: components["schemas"]["limit"];
-            offset: components["schemas"]["offset"];
-            fetch_style?: components["schemas"]["fetch_style"];
-        };
-        "Models.Projects": {
-            "COUNT(*)"?: unknown;
-            "IS_YOUTUBE()"?: unknown;
-            "IS_APP_STORE()"?: unknown;
-            "IS_GOOGLE_PLAY()"?: unknown;
-            "GEN_SEARCH_STRING()"?: unknown;
-            id?: unknown;
-            user_id?: unknown;
-            name?: string | null;
-            url?: unknown;
-            date?: unknown;
-            last_view?: unknown;
-            folder_id?: number | null;
-            folder_name?: unknown;
-            site?: unknown;
-            update?: unknown;
-            status_positions?: string | null;
-            positions_time?: unknown;
-            positions_date?: unknown;
-            positions_percent?: unknown;
-            status_positions_time?: unknown;
-            status_positions_date?: unknown;
-            status_positions_percent?: unknown;
-            status_positions_by_keywords?: unknown;
-            status_volumes?: unknown;
-            status_claster?: unknown;
-            status_audit?: unknown;
-            status_audit_time?: unknown;
-            status_audit_percent?: unknown;
-            status_watcher?: unknown;
-            status_watcher_percent?: unknown;
-            status_indexing?: unknown;
-            status_indexing_percent?: unknown;
-            status_sitemap?: unknown;
-            status_sitemap_percent?: unknown;
-            status_urlsUpdater?: unknown;
-            on?: unknown;
-            subdomains?: unknown;
-            filter?: unknown;
-            auto_correct?: unknown;
-            with_snippets?: unknown;
-            do_snapshots?: unknown;
-            do_snapshots_with_snippets?: unknown;
-            report_last_time?: unknown;
-            common_traffic?: unknown;
-            guest_link_right?: unknown;
-            count_keywords?: unknown;
-            right?: unknown;
-            ord?: unknown;
-            favorite?: unknown;
-            tags?: unknown;
-            user_email?: unknown;
-            user_currency?: unknown;
-            broker_count_campaigns?: unknown;
-            broker_count_banners?: unknown;
-            broker_count_banners_off?: unknown;
-            domain_expire?: unknown;
-            ssl_expire?: unknown;
-            competitor?: unknown;
-            competitor_ord?: unknown;
-            pos_summary_up?: unknown;
-            pos_summary_stay?: unknown;
-            pos_summary_down?: unknown;
-            pos_summary_avg?: unknown;
-            pos_summary_visibility?: unknown;
-        };
-        /**
-         * Создать Open API схемы и скачать в zip
-         * @description В результате вернет zip файл в потоке вывода
-         *
-         *     @see https://editor.swagger.io/ Редактор Open API
-         */
-        "OpenAPI_2.Methods.Download.Get": {
-            /**
-             * Формат схемы Open API, json или yaml
-             * @default json
-             */
-            format: string;
-        };
-        /** Компании пользователя, через которых, были совершены платежи */
-        "Payments_2.Methods.Companies.Get": Record<string, never>;
-        /** Подписать контракт (только для админов) */
-        "Payments_2.Methods.ContractSign.Edit": {
-            /** Номер договора/оферты для платежа */
-            requisites_id: string;
-            /** Флаг обозначающий подписан ли контракт */
-            signed: boolean;
-        };
-        /** Изменить платежные реквизиты тарифа */
-        "Payments_2.Methods.NextRequisitesId.Edit": {
-            /** ID следующего запроса */
-            next_requisites_id: string;
-        };
-        /** Отправить заявка на подключение Тинькофф Бизнес */
-        "Payments_2.Methods.UrTinkoffCreateApplication.Add": Record<string, never>;
-        /** Валидация домена для подтверждения оплаты Apple Pay (system = card_ap) */
-        "Payments_2.Methods.ValidateMerchantCardAP.Get": {
-            /** URL для запроса к Apple Pay */
-            validation_url: string;
-        };
-        /** Добавление сообщения к тикиту */
-        "Tickets_2.Methods.Messages.Add": {
-            /** Id тикета */
-            ticket_id: number;
-            /** Текст сообщения */
-            text: string;
-            /** Не проводить рассылку уведомлений */
-            is_silent: boolean;
-        };
-        /**
-         * Откуда поступил тикет
-         * @enum {string}
-         */
-        "Tickets_2.Types.Tickets.Type": "system" | "other" | "email" | "ios" | "vk" | "chrome" | "twitter" | "facebook" | "telegram" | "android" | "guest";
-        /**
-         * E-mail
-         * @example name@example.com
-         */
-        "TV.API.Types.Email": string;
-        /** Создание тикета */
-        "Tickets_2.Methods.Tickets.Add": {
-            /** Текст тикета */
-            text: string;
-            /** @default system */
-            type: components["schemas"]["Tickets_2.Types.Tickets.Type"];
-            /** Язык тикета, нужен для подгрузки правильного языка в ответных письмах через почту */
-            lang?: components["schemas"]["TV.API.Types.Lang"] | null;
-            /** Данные среды пользователя */
-            user_data?: (string | number)[] | null;
-            /**
-             * URL страницы, с которой отправлен тикет
-             * @description Не испоьзуется, если указан user_data
-             */
-            resource?: string | null;
-            /** Не проводить рассылку уведомлений */
-            is_silent: boolean;
-            /** Необходим только для незарегистрированных пользователей */
-            email?: components["schemas"]["TV.API.Types.Email"] | null;
-            /**
-             * Id пользователя внутри социальной сети, из которой был отправлен тикет
-             * @description Может быть в любом виде
-             */
-            social_user_id: string;
-            /**
-             * Данные для авторизации в сервисе-конкуренте для переноса проектов
-             * @description Недокументированный параметр
-             */
-            secret?: string | null;
-            /**
-             * Номер задачи redmine, связанной с тикетом
-             * @description Недокументированный параметр
-             */
-            task_id: number;
-        };
-        /** Редактирование тикета */
-        "Tickets_2.Methods.Tickets.Edit": {
-            /** Флаг того, что тикет закрыт */
-            status?: boolean | null;
-            filters: components["schemas"]["filters"];
-            id?: components["schemas"]["id"];
-        };
-        /** Получение списка тикетов с сообщениями */
-        "Tickets_2.Methods.Tickets.Get": {
-            fields_messages?: (string | number)[] | null;
-            /** Добавить в результат данные пользователей, написавших сообщения в тикеты */
-            show_messages_users: boolean;
-            /** Добавить в результат данные о том, что пишет собеседник */
-            show_writings: boolean;
-            fields: components["schemas"]["fields"];
-            orders: components["schemas"]["orders"];
-            filters: components["schemas"]["filters"];
-            id?: components["schemas"]["id"];
-            limit?: components["schemas"]["limit"];
-            offset: components["schemas"]["offset"];
-            fetch_style?: components["schemas"]["fetch_style"];
-        };
-        "Models.Tickets": {
-            "REQUISITES()"?: unknown;
-            "LAST_MESSAGE_TEXT()"?: unknown;
-            "LAST_MESSAGE_USER_ID()"?: unknown;
-            "READED(0)"?: unknown;
-            "READED(1)"?: unknown;
-            id?: unknown;
-            user_id?: unknown;
-            social_user_id?: unknown;
-            type?: unknown;
-            text?: unknown;
-            create?: unknown;
-            time?: unknown;
-            status?: unknown;
-            lang?: unknown;
-            email?: unknown;
-            user_data?: unknown;
-            manager_id?: unknown;
-            owner_readed?: unknown;
-            answerer_readed?: unknown;
-            admin_writing?: unknown;
-            task_id?: unknown;
-            tags?: unknown;
-            rate?: unknown;
-            rate_comment?: unknown;
-            rate_time?: unknown;
-            admin_comment?: unknown;
-            "VS_USER_IS_ONLINE()"?: unknown;
-            vs_user_name?: unknown;
-            vs_user_email?: unknown;
-            vs_user_avatar?: unknown;
-            vs_user_lastactive?: unknown;
-            social_nickname?: unknown;
-            social_network?: unknown;
-            social_last_message_time?: unknown;
-            social_name?: unknown;
-            social_type?: unknown;
-            social_post_id?: unknown;
-            social_reply_to_id?: unknown;
-            message_id?: unknown;
-            message_user_id?: unknown;
-            message_text?: unknown;
-            message_data?: unknown;
-            message_files?: unknown;
-            message_time?: unknown;
-            message_noticed?: unknown;
-        };
-        /**
-         * Формат экспорта urls
-         * @enum {string}
-         */
-        "Urls_2.Types.Export.Output": "csv" | "csvUTF8s" | "xml";
-        /** Экспорт urls в определенном формате */
-        "Urls_2.Methods.Export.Get": {
-            output: components["schemas"]["Urls_2.Types.Export.Output"];
-            /** Вывести fieldName в заголовках столбцов (для CSV) */
-            show_fields_names: boolean;
-            /** Вывести fieldLabel в заголовках столбцов (для CSV) */
-            show_fields_labels: boolean;
-            /** Вернуть данные в формате для копироваиня в буфер обмена */
-            forClipboard: boolean;
-            fields: components["schemas"]["fields"];
-            orders: components["schemas"]["orders"];
-            filters: components["schemas"]["filters"];
-            id?: components["schemas"]["id"];
-            limit?: components["schemas"]["limit"];
-            offset: components["schemas"]["offset"];
-            fetch_style?: components["schemas"]["fetch_style"];
-            project_id: components["schemas"]["project_id"];
-        };
-        /**
-         * Тип массива: Url[]
-         * @description @see Url
-         */
-        "TV.API.Types.UrlArray": components["schemas"]["TV.API.Types.Url"][];
-        /**
-         * Импортирование urls
-         * @description Доступные поля для импорта:
-         *     - url
-         *     - sitemap
-         *     - audit
-         *     - indexing
-         *     - watcher
-         *     - tags
-         */
-        "Urls_2.Methods.Import.Add": {
-            /**
-             * Список URL соответствующих домену проекта, допускается формат CSV
-             * @description Можно передать в виде файла с именем urls, допускаются форматы CSV и XML (допустимы сжатые XML в .gz)
-             *
-             *     Нельзя передавать одновременно в виде массива и в виде файла или использовать совместно с link_sitemap_xml
-             */
-            urls?: components["schemas"]["TV.API.Types.UrlArray"] | null;
-            /** Файл с содержимым для импорта, допускается формат XML (допустимы сжатые XML в .gz) */
-            link_sitemap_xml?: components["schemas"]["TV.API.Types.Url"] | null;
-            tags?: components["schemas"]["Tags_2.Types.Tags"] | null;
-            /** Очистить список URL перед импортом */
-            reset: boolean;
-            /**
-             * Недокументириуемый параметр
-             * @description set(Audit_2\Types\Type => regexp)
-             */
-            setActiveByRegexpByType: (string | number)[];
-            /** Флаг активности в карте сайта
-             *     - 1 - присутствовал в прошлых версиях карты сайта */
-            sitemap?: components["schemas"]["Urls_2.Types.Flag"] | null;
-            /** Флаг активности в аудите */
-            audit?: components["schemas"]["Urls_2.Types.Flag"] | null;
-            /** Флаг активности в радаре */
-            indexing?: components["schemas"]["Urls_2.Types.Flag"] | null;
-            /** Флаг активности в индексации */
-            watcher?: components["schemas"]["Urls_2.Types.Flag"] | null;
-            debug?: boolean | null;
-            project_id: components["schemas"]["project_id"];
-        };
-        /**
-         * Способ установки тегов
-         * @enum {string}
-         */
-        "Urls_2.Types.Tags.Action": "set" | "add" | "remove";
-        /** Изменение тегов */
-        "Urls_2.Methods.Tags.Edit": {
-            tags: components["schemas"]["Tags_2.Types.Tags"];
-            action: components["schemas"]["Urls_2.Types.Tags.Action"];
-            filters: components["schemas"]["filters"];
-            id?: components["schemas"]["id"];
-            project_id: components["schemas"]["project_id"];
-        };
-        /** Добавить промокоды к достижению */
-        "Admin_2.Methods.Users.Promocodes.Add": {
-            rank_id: number;
-            /** single_code - многоразовый промокод */
-            single_code?: string | null;
-            /** Список многоразовых промокодов */
-            codes?: (string | number)[] | null;
-        };
-        "Models.Users.Verif": {
-            email?: unknown;
-            code?: unknown;
-            action?: unknown;
-            params?: unknown;
-            data?: unknown;
-            date?: unknown;
-        };
-        /**
-         * Получить промокоды
-         * @description В params хранится строка в формате:
-         *     - {{ rank_id }}
-         *     - {{ rank_id }},single_code - для многоразового кода
-         */
-        "Admin_2.Methods.Users.Promocodes.Get": {
-            fields: components["schemas"]["fields"];
-            orders: components["schemas"]["orders"];
-            filters: components["schemas"]["filters"];
-            id?: components["schemas"]["id"];
-            limit?: components["schemas"]["limit"];
-            offset: components["schemas"]["offset"];
-            fetch_style?: components["schemas"]["fetch_style"];
-        };
-        /** @enum {string} */
-        "Admin_2.Types.Users.Ranks.Category": "" | "journal";
-        /** Добавить достижение */
-        "Admin_2.Methods.Users.Ranks.Add": {
-            name_id?: string | null;
-            category?: components["schemas"]["Admin_2.Types.Users.Ranks.Category"] | null;
-            name_ru?: string | null;
-            name_en?: string | null;
-            descr_ru?: string | null;
-            descr_en?: string | null;
-            descr_how_to_use_ru?: string | null;
-            descr_how_to_use_en?: string | null;
-            bonus_RUB?: number | null;
-            bonus_USD?: number | null;
-            cashback_expenses?: number | null;
-            cashback_first_payment?: number | null;
-            discount?: number | null;
-            referrer_id?: number | null;
-            from_date?: string | null;
-            to_date?: string | null;
-            max_count_usage?: number | null;
-            currency?: string | null;
-            only_new_users?: boolean | null;
-            color?: string | null;
-            always_visible?: boolean | null;
-        };
-        "Models.Admin.Users.Ranks": {
-            "COUNT_CODES()"?: unknown;
-            id?: unknown;
-            name_id?: unknown;
-            category?: unknown;
-            name?: unknown;
-            name_ru?: unknown;
-            name_en?: unknown;
-            descr?: unknown;
-            descr_ru?: unknown;
-            descr_en?: unknown;
-            descr_how_to_use?: unknown;
-            descr_how_to_use_ru?: unknown;
-            descr_how_to_use_en?: unknown;
-            bonus?: unknown;
-            bonus_RUB?: unknown;
-            bonus_USD?: unknown;
-            cashback_expenses?: unknown;
-            cashback_first_payment?: unknown;
-            discount?: unknown;
-            referrer_id?: unknown;
-            from_date?: unknown;
-            to_date?: unknown;
-            limit?: unknown;
-            currency?: unknown;
-            only_new_users?: unknown;
-            color?: unknown;
-            always_visible?: unknown;
-        };
-        /** Изменить достижение */
-        "Admin_2.Methods.Users.Ranks.Edit": {
-            id: number;
-            name_id?: string | null;
-            category?: components["schemas"]["Admin_2.Types.Users.Ranks.Category"] | null;
-            name_ru?: string | null;
-            name_en?: string | null;
-            descr_ru?: string | null;
-            descr_en?: string | null;
-            descr_how_to_use_ru?: string | null;
-            descr_how_to_use_en?: string | null;
-            bonus_RUB?: number | null;
-            bonus_USD?: number | null;
-            cashback_expenses?: number | null;
-            cashback_first_payment?: number | null;
-            discount?: number | null;
-            referrer_id?: number | null;
-            from_date?: string | null;
-            to_date?: string | null;
-            max_count_usage?: number | null;
-            currency?: string | null;
-            only_new_users?: boolean | null;
-            color?: string | null;
-            always_visible?: boolean | null;
-        };
-        /** Получить достижения */
-        "Admin_2.Methods.Users.Ranks.Get": {
-            fields: components["schemas"]["fields"];
-            orders: components["schemas"]["orders"];
-            filters: components["schemas"]["filters"];
-            id?: components["schemas"]["id"];
-            limit?: components["schemas"]["limit"];
-            offset: components["schemas"]["offset"];
-            fetch_style?: components["schemas"]["fetch_style"];
-        };
-        /** ID проверки аудита */
-        check_id: number;
-        /**
-         * Получение сводки анализа сайта
-         * @deprecated
-         */
-        "Audit_2.Methods.Audit.Browse.Get": {
-            project_id: components["schemas"]["project_id"];
-            check_id: components["schemas"]["check_id"];
-        };
-        /** Получение общей информации о проверках
-         *     - только для проверки, которая не завершена
-         *     - в ответе будут заменены значения кодов ответа на текущие: count_000, count_1xx, count_2xx, count_3xx, count_4xx, count_5xx
-         *     - в ответе будет заменено значение count_pages и count_all на текущие
-         *     - в ответ будет добавлены значения robot_step и robot_count_tasks_allм */
-        "Audit_2.Methods.Audit.Checks.Get": {
-            /** Добавить в результат данные о незавершенной проверке */
-            show_raw_data: boolean;
-            fields: components["schemas"]["fields"];
-            orders: components["schemas"]["orders"];
-            filters: components["schemas"]["filters"];
-            id?: components["schemas"]["id"];
-            limit?: components["schemas"]["limit"];
-            offset: components["schemas"]["offset"];
-            fetch_style?: components["schemas"]["fetch_style"];
-            project_id: components["schemas"]["project_id"];
-        };
-        "Models.Audit.Checks": {
-            "DURATION()"?: unknown;
-            id?: unknown;
-            project_id?: unknown;
-            device?: unknown;
-            scan_links?: unknown;
-            scan_images?: unknown;
-            scan_js?: unknown;
-            scan_css?: unknown;
-            robots_txt_exists?: unknown;
-            sitemap_xml_exists?: unknown;
-            www_redirect_exists?: unknown;
-            ssl_redirect_exists?: unknown;
-            tls_exists?: unknown;
-            fatal?: unknown;
-            rkn_no_ban?: unknown;
-            notice?: unknown;
-            error?: unknown;
-            time_start?: unknown;
-            time_finish?: unknown;
-            count_pages?: unknown;
-            count_all?: unknown;
-            count_000?: unknown;
-            count_1xx?: unknown;
-            count_2xx?: unknown;
-            count_3xx?: unknown;
-            count_4xx?: unknown;
-            count_5xx?: unknown;
-            complete?: unknown;
-            count_warnings?: unknown;
-            count_errors?: unknown;
-            count_problems?: unknown;
-            is_mobile?: unknown;
-            domain_check_rkn_no_ban?: unknown;
-            domain_check_webmaster_no_errors?: unknown;
-            domain_check_robots_txt_exists?: unknown;
-            domain_check_sitemap_xml_exists?: unknown;
-            domain_check_www_redirect_exists?: unknown;
-            domain_check_ssl_redirect_exists?: unknown;
-            domain_check_tls_exists?: unknown;
-            pages_check_http_code_200_errors?: unknown;
-            pages_check_redirects_not_exists_errors?: unknown;
-            pages_check_redirects_many_not_exists_errors?: unknown;
-            pages_check_ttfb_max_errors?: unknown;
-            pages_check_cacheable_errors?: unknown;
-            pages_check_robots_txt_allowed_errors?: unknown;
-            pages_check_sitemap_xml_exists_errors?: unknown;
-            pages_check_sitemap_xml_exists_with_canonical_errors?: unknown;
-            pages_check_sitemap_included_none_blocked_errors?: unknown;
-            pages_check_noindex_off_errors?: unknown;
-            pages_check_nofollow_off_errors?: unknown;
-            pages_check_title_exists_errors?: unknown;
-            pages_check_title_length_max_errors?: unknown;
-            pages_check_title_is_unique_errors?: unknown;
-            pages_check_description_exists_errors?: unknown;
-            pages_check_description_is_unique_errors?: unknown;
-            pages_check_description_length_min_errors?: unknown;
-            pages_check_description_length_max_errors?: unknown;
-            pages_check_h1_exists_errors?: unknown;
-            pages_check_html_lang_exists_errors?: unknown;
-            pages_check_url_length_errors?: unknown;
-            pages_check_canonical_exists_errors?: unknown;
-            pages_check_alternate_errors?: unknown;
-            pages_check_http_resources_count_errors?: unknown;
-            pages_check_links_exists_errors?: unknown;
-            pages_check_refresh_not_exists_errors?: unknown;
-            pages_check_compression_exists_errors?: unknown;
-            pages_check_schema_exists_errors?: unknown;
-            pages_check_og_title_exists_errors?: unknown;
-            pages_check_og_description_exists_errors?: unknown;
-            pages_check_og_image_exists_errors?: unknown;
-            pages_check_og_url_exists_errors?: unknown;
-            pages_check_og_url_canonical_errors?: unknown;
-            pages_check_lcp_max_errors?: unknown;
-            pages_check_fid_max_errors?: unknown;
-            pages_check_inp_max_errors?: unknown;
-            pages_check_cls_max_errors?: unknown;
-            pages_check_fcp_max_errors?: unknown;
-            pages_check_si_max_errors?: unknown;
-            pages_check_tbt_max_errors?: unknown;
-            links_check_http_code_200_errors?: unknown;
-            links_check_redirects_not_exists_errors?: unknown;
-            links_check_redirects_many_not_exists_errors?: unknown;
-            links_check_ttfb_max_errors?: unknown;
-            links_check_url_slash_unique_errors?: unknown;
-            links_check_url_format_good_errors?: unknown;
-            links_check_title_or_content_exists_errors?: unknown;
-            links_check_nofollow_off_errors?: unknown;
-            images_check_http_code_200_errors?: unknown;
-            images_check_redirects_not_exists_errors?: unknown;
-            images_check_redirects_many_not_exists_errors?: unknown;
-            images_check_ttfb_max_errors?: unknown;
-            images_check_cacheable_errors?: unknown;
-            images_check_alt_exists_errors?: unknown;
-            images_check_alt_length_max_errors?: unknown;
-            images_check_size_max_errors?: unknown;
-            images_check_robots_disallow_off_errors?: unknown;
-            images_check_modern_format_errors?: unknown;
-            js_check_http_code_200_errors?: unknown;
-            js_check_redirects_not_exists_errors?: unknown;
-            js_check_redirects_many_not_exists_errors?: unknown;
-            js_check_ttfb_max_errors?: unknown;
-            js_check_compression_exists_errors?: unknown;
-            js_check_cacheable_errors?: unknown;
-            js_check_is_minified_errors?: unknown;
-            js_check_no_render_blocking_errors?: unknown;
-            css_check_http_code_200_errors?: unknown;
-            css_check_redirects_not_exists_errors?: unknown;
-            css_check_redirects_many_not_exists_errors?: unknown;
-            css_check_ttfb_max_errors?: unknown;
-            css_check_compression_exists_errors?: unknown;
-            css_check_cacheable_errors?: unknown;
-            css_check_is_minified_errors?: unknown;
-            css_check_no_render_blocking_errors?: unknown;
-        };
-        /** Получение проверенных css */
-        "Audit_2.Methods.Audit.Css.Get": {
-            fields: components["schemas"]["fields"];
-            orders: components["schemas"]["orders"];
-            filters: components["schemas"]["filters"];
-            id?: components["schemas"]["id"];
-            limit?: components["schemas"]["limit"];
-            offset: components["schemas"]["offset"];
-            fetch_style?: components["schemas"]["fetch_style"];
-            project_id: components["schemas"]["project_id"];
-            check_id: components["schemas"]["check_id"];
-        };
-        "Models.Audit.Css": {
-            "COUNT(*)"?: unknown;
-            "HTTP_CODES_HUNDREDS()"?: (string | number)[] | null;
-            check_id?: unknown;
-            url_ids?: unknown;
-            url_id?: unknown;
-            url?: unknown;
-            count?: unknown;
-            time_parse?: unknown;
-            http_codes?: (string | number)[] | null;
-            last_http_code?: unknown;
-            redirects?: (string | number)[] | null;
-            locations?: unknown;
-            ttfb?: unknown;
-            count_pages?: unknown;
-            compression?: unknown;
-            cacheable?: unknown;
-            cache_type?: unknown;
-            cache_time?: unknown;
-            cache_validator?: unknown;
-            robots_txt_mention?: unknown;
-            robots_txt_blocked?: unknown;
-            minified?: unknown;
-            broken?: unknown;
-            notice?: unknown;
-            error?: unknown;
-            warning_all?: unknown;
-            render_blocking?: unknown;
-            check_http_code_200?: unknown;
-            check_redirects_not_exists?: unknown;
-            check_redirects_many_not_exists?: unknown;
-            check_ttfb_max?: unknown;
-            check_compression_exists?: unknown;
-            check_cacheable?: unknown;
-            check_is_minified?: unknown;
-            check_no_render_blocking?: unknown;
-            count_errors?: unknown;
-            count_warnings?: unknown;
-        };
-        /**
-         * Тип очтета аудита
-         * @enum {string}
-         */
-        "Audit_2.Types.Audit.TargetType": "pages" | "links" | "images" | "js" | "css";
-        /** @enum {string} */
-        "TV.API.Types.ExportFormat": "csv" | "xlsx";
-        /** Экспорт результатов проверки файла */
-        "Audit_2.Methods.Audit.Export.Get": {
-            target_type: components["schemas"]["Audit_2.Types.Audit.TargetType"];
-            /** Формат экспортируемого файла */
-            output: components["schemas"]["TV.API.Types.ExportFormat"];
-            project_id: components["schemas"]["project_id"];
-            fields: components["schemas"]["fields"];
-            check_id: components["schemas"]["check_id"];
-        };
-        /** Получение проверенных изображений */
-        "Audit_2.Methods.Audit.Images.Get": {
-            fields: components["schemas"]["fields"];
-            orders: components["schemas"]["orders"];
-            filters: components["schemas"]["filters"];
-            id?: components["schemas"]["id"];
-            limit?: components["schemas"]["limit"];
-            offset: components["schemas"]["offset"];
-            fetch_style?: components["schemas"]["fetch_style"];
-            project_id: components["schemas"]["project_id"];
-            check_id: components["schemas"]["check_id"];
-        };
-        "Models.Audit.Images": {
-            "COUNT(*)"?: unknown;
-            "HTTP_CODES_HUNDREDS()"?: (string | number)[] | null;
-            check_id?: unknown;
-            url_id?: unknown;
-            url_ids?: unknown;
-            url?: unknown;
-            alt?: unknown;
-            time_parse?: unknown;
-            http_codes?: (string | number)[] | null;
-            last_http_code?: unknown;
-            redirects?: (string | number)[] | null;
-            locations?: unknown;
-            count?: unknown;
-            ttfb?: unknown;
-            count_pages?: unknown;
-            size?: unknown;
-            cacheable?: unknown;
-            cache_type?: unknown;
-            cache_time?: unknown;
-            cache_validator?: unknown;
-            robots_txt_mention?: unknown;
-            robots_txt_blocked?: unknown;
-            extension?: unknown;
-            content_type?: unknown;
-            modern_format?: unknown;
-            broken?: unknown;
-            search?: unknown;
-            notice?: unknown;
-            error?: unknown;
-            warning_all?: unknown;
-            check_http_code_200?: unknown;
-            check_redirects_not_exists?: unknown;
-            check_redirects_many_not_exists?: unknown;
-            check_ttfb_max?: unknown;
-            check_cacheable?: unknown;
-            check_alt_exists?: unknown;
-            check_alt_length_max?: unknown;
-            check_size_max?: unknown;
-            check_robots_disallow_off?: unknown;
-            check_modern_format?: unknown;
-            count_errors?: unknown;
-            count_warnings?: unknown;
-        };
-        /** Получение проверенных js */
-        "Audit_2.Methods.Audit.Js.Get": {
-            fields: components["schemas"]["fields"];
-            orders: components["schemas"]["orders"];
-            filters: components["schemas"]["filters"];
-            id?: components["schemas"]["id"];
-            limit?: components["schemas"]["limit"];
-            offset: components["schemas"]["offset"];
-            fetch_style?: components["schemas"]["fetch_style"];
-            project_id: components["schemas"]["project_id"];
-            check_id: components["schemas"]["check_id"];
-        };
-        "Models.Audit.Js": {
-            "COUNT(*)"?: unknown;
-            "HTTP_CODES_HUNDREDS()"?: (string | number)[] | null;
-            check_id?: unknown;
-            url_ids?: unknown;
-            url_id?: unknown;
-            url?: unknown;
-            count?: unknown;
-            time_parse?: unknown;
-            http_codes?: (string | number)[] | null;
-            last_http_code?: unknown;
-            redirects?: (string | number)[] | null;
-            ttfb?: unknown;
-            count_pages?: unknown;
-            compression?: unknown;
-            cacheable?: unknown;
-            cache_type?: unknown;
-            cache_time?: unknown;
-            cache_validator?: unknown;
-            robots_txt_mention?: unknown;
-            robots_txt_blocked?: unknown;
-            minified?: unknown;
-            broken?: unknown;
-            notice?: unknown;
-            error?: unknown;
-            warning_all?: unknown;
-            render_blocking?: unknown;
-            check_http_code_200?: unknown;
-            check_redirects_not_exists?: unknown;
-            check_redirects_many_not_exists?: unknown;
-            check_ttfb_max?: unknown;
-            check_compression_exists?: unknown;
-            check_cacheable?: unknown;
-            check_is_minified?: unknown;
-            check_no_render_blocking?: unknown;
-            count_errors?: unknown;
-            count_warnings?: unknown;
-        };
-        /** Получение проверенных ссылок */
-        "Audit_2.Methods.Audit.Links.Get": {
-            fields: components["schemas"]["fields"];
-            orders: components["schemas"]["orders"];
-            filters: components["schemas"]["filters"];
-            id?: components["schemas"]["id"];
-            limit?: components["schemas"]["limit"];
-            offset: components["schemas"]["offset"];
-            fetch_style?: components["schemas"]["fetch_style"];
-            project_id: components["schemas"]["project_id"];
-            check_id: components["schemas"]["check_id"];
-        };
-        "Models.Audit.Links": {
-            "COUNT(*)"?: unknown;
-            search?: unknown;
-            "HTTP_CODES_HUNDREDS()"?: (string | number)[] | null;
-            check_id?: unknown;
-            project_id?: unknown;
-            url_id?: unknown;
-            url_ids?: unknown;
-            url?: unknown;
-            type?: unknown;
-            content?: string | null;
-            time_parse?: unknown;
-            http_codes?: (string | number)[] | null;
-            last_http_code?: unknown;
-            count?: unknown;
-            title?: unknown;
-            redirects?: (string | number)[] | null;
-            nofollow?: unknown;
-            sponsored?: unknown;
-            ugc?: unknown;
-            external?: unknown;
-            broken?: unknown;
-            ttfb?: unknown;
-            count_pages?: unknown;
-            cacheable?: unknown;
-            cache_type?: unknown;
-            cache_time?: unknown;
-            cache_validator?: unknown;
-            check_http_code_200?: unknown;
-            check_redirects_not_exists?: unknown;
-            check_redirects_many_not_exists?: unknown;
-            check_ttfb_max?: unknown;
-            check_url_slash_unique?: unknown;
-            check_url_format_good?: unknown;
-            check_title_or_content_exists?: unknown;
-            check_nofollow_off?: unknown;
-            notice?: unknown;
-            error?: unknown;
-            warning_all?: unknown;
-            count_errors?: unknown;
-            count_warnings?: unknown;
-        };
-        /**
-         * Дата с временем
-         * @example 2000-01-01 00:00:00
-         */
-        "TV.API.Types.Datetime": string;
-        /** Получение данных проверенных ресурсов */
-        "Audit_2.Methods.Audit.Log.Get": {
-            /** Фильтр по периоду */
-            time1?: components["schemas"]["TV.API.Types.Datetime"] | null;
-            /** Фильтр по периоду */
-            time2?: components["schemas"]["TV.API.Types.Datetime"] | null;
-            /** Добавить url к записям */
-            show_urls: boolean;
-            /** Добавить массив locations - адреса страницы и редиректы с HTTP кодами */
-            show_locations: boolean;
-            /** Фильтр по категориям кодов */
-            http_codes_hundreds?: components["schemas"]["TV.API.Types.IntArray"] | null;
-            /**
-             * Номер страницы (для использования в SQL)
-             * @default 1
-             */
-            page: number;
-            project_id: components["schemas"]["project_id"];
-            limit?: components["schemas"]["limit"];
-            offset: components["schemas"]["offset"];
-            check_id: components["schemas"]["check_id"];
-        };
-        /** Получение страниц, по которым был выполнен аудит */
-        "Audit_2.Methods.Audit.Pages.Get": {
-            /** Тип отчета для фильтра по ресурсам страницы */
-            filters_resources_target_type?: components["schemas"]["Audit_2.Types.Audit.TargetType"] | null;
-            /** Фильтр по ресурсам страницы, API fitlers для объекта, тип которого указан в filters_extra_target_type */
-            filters_resources: (string | number)[];
-            fields: components["schemas"]["fields"];
-            orders: components["schemas"]["orders"];
-            filters: components["schemas"]["filters"];
-            id?: components["schemas"]["id"];
-            limit?: components["schemas"]["limit"];
-            offset: components["schemas"]["offset"];
-            fetch_style?: components["schemas"]["fetch_style"];
-            project_id: components["schemas"]["project_id"];
-            check_id: components["schemas"]["check_id"];
-        };
-        "Models.Audit.Pages": {
-            dummy_opener_summary_page?: unknown;
-            "COUNT(*)"?: unknown;
-            "HTTP_CODES_HUNDREDS()"?: (string | number)[] | null;
-            check_id?: unknown;
-            url_id?: unknown;
-            url?: unknown;
-            time_parse?: unknown;
-            http_codes?: (string | number)[] | null;
-            last_http_code?: unknown;
-            tls_version?: unknown;
-            redirects?: (string | number)[] | null;
-            meta_robots_none?: unknown;
-            x_robots_tag_none?: unknown;
-            meta_robots_noindex?: unknown;
-            x_robots_tag_noindex?: unknown;
-            meta_robots_nofollow?: unknown;
-            x_robots_tag_nofollow?: unknown;
-            canonical?: unknown;
-            canonical_count?: unknown;
-            http_resources_count?: unknown;
-            html_lang?: unknown;
-            hreflang?: unknown;
-            rdfa?: unknown;
-            json_ld?: unknown;
-            microdata?: unknown;
-            alternates?: unknown;
-            refresh?: unknown;
-            title?: unknown;
-            description?: unknown;
-            h1?: unknown;
-            links_count?: unknown;
-            images_count?: unknown;
-            js_count?: unknown;
-            css_count?: unknown;
-            lastmod?: unknown;
-            lastmod_since?: unknown;
-            sitemap_xml_mention?: unknown;
-            robots_txt_mention?: unknown;
-            robots_txt_blocked?: unknown;
-            og_title?: unknown;
-            og_description?: unknown;
-            og_image?: unknown;
-            og_url?: unknown;
-            og_type?: unknown;
-            count_errors?: unknown;
-            count_warnings?: unknown;
-            count_problems?: unknown;
-            broken?: unknown;
-            ttfb?: unknown;
-            compression?: unknown;
-            cacheable?: unknown;
-            cache_type?: unknown;
-            cache_time?: unknown;
-            cache_validator?: unknown;
-            search?: unknown;
-            snippet_search?: unknown;
-            title_dbl?: unknown;
-            description_dbl?: unknown;
-            lcp?: unknown;
-            fid?: unknown;
-            inp?: unknown;
-            cls?: unknown;
-            fcp?: unknown;
-            si?: unknown;
-            tti?: unknown;
-            tbt?: unknown;
-            cwv_performance?: unknown;
-            backlinks_inner_count?: unknown;
-            text_length?: unknown;
-            check_http_code_200?: unknown;
-            check_redirects_not_exists?: unknown;
-            check_redirects_many_not_exists?: unknown;
-            check_ttfb_max?: unknown;
-            check_cacheable?: unknown;
-            check_robots_txt_allowed?: unknown;
-            check_sitemap_xml_exists?: unknown;
-            check_sitemap_xml_exists_with_canonical?: unknown;
-            check_sitemap_included_none_blocked?: unknown;
-            check_noindex_off?: unknown;
-            check_nofollow_off?: unknown;
-            check_title_exists?: unknown;
-            check_title_length_max?: unknown;
-            check_title_is_unique?: unknown;
-            check_description_exists?: unknown;
-            check_description_is_unique?: unknown;
-            check_description_length_min?: unknown;
-            check_description_length_max?: unknown;
-            check_h1_exists?: unknown;
-            check_html_lang_exists?: unknown;
-            check_url_length?: unknown;
-            check_canonical_exists?: unknown;
-            check_alternate?: unknown;
-            check_http_resources_count?: unknown;
-            check_links_exists?: unknown;
-            check_refresh_not_exists?: unknown;
-            check_compression_exists?: unknown;
-            check_schema_exists?: unknown;
-            check_og_title_exists?: unknown;
-            check_og_description_exists?: unknown;
-            check_og_image_exists?: unknown;
-            check_og_url_exists?: unknown;
-            check_og_url_canonical?: unknown;
-            check_lcp_max?: unknown;
-            check_fid_max?: unknown;
-            check_inp_max?: unknown;
-            check_cls_max?: unknown;
-            check_fcp_max?: unknown;
-            check_si_max?: unknown;
-            check_tbt_max?: unknown;
-        };
-        /**
-         * Фильтр по состоянию изменения в сводке
-         * @enum {string}
-         */
-        "Audit_2.Types.Audit.Summary.FilterCheckState": "all" | "changed";
-        /** Получение сводки о выполненном аудите */
-        "Audit_2.Methods.Audit.Summary.Get": {
-            /** Фильтр по состоянию сигнала (success, warning, error) */
-            filter_check_type: (string | number)[];
-            filter_check_state?: components["schemas"]["Audit_2.Types.Audit.Summary.FilterCheckState"] | null;
-            fields: components["schemas"]["fields"];
-            orders: components["schemas"]["orders"];
-            filters: components["schemas"]["filters"];
-            id?: components["schemas"]["id"];
-            limit?: components["schemas"]["limit"];
-            offset: components["schemas"]["offset"];
-            fetch_style?: components["schemas"]["fetch_style"];
-            project_id: components["schemas"]["project_id"];
-            check_id: components["schemas"]["check_id"];
-        };
-        /** Получение сводки страницы */
-        "Audit_2.Methods.Audit.SummaryPage.Get": {
-            /** Id ссылки на страницу */
-            url_id: number;
-            fields: components["schemas"]["fields"];
-            orders: components["schemas"]["orders"];
-            filters: components["schemas"]["filters"];
-            id?: components["schemas"]["id"];
-            limit?: components["schemas"]["limit"];
-            offset: components["schemas"]["offset"];
-            fetch_style?: components["schemas"]["fetch_style"];
-            project_id: components["schemas"]["project_id"];
-            check_id: components["schemas"]["check_id"];
-        };
-        /**
-         * Экспорт результатов индексации
-         * @description Необходимо указать либо date1 и date2, либо dates (вместе указывать нельзя)
-         */
-        "Audit_2.Methods.Indexing.Export.Get": {
-            /** Поисковые системы */
-            searchers_keys: components["schemas"]["Audit_2.Types.Indexing.SearcherKeys"];
-            /**
-             * Если указан, файл будет сохранен в указанной папке и будет возвращен путь к файлу
-             * @description Для внутреннего использования
-             *
-             *     @private
-             */
-            returnFilenameFromFolder?: string | null;
-            /** Формат экспортируемого файла */
-            output: components["schemas"]["TV.API.Types.ExportFormat"];
-            /** Настройки экспорта */
-            properties: (string | number)[];
-            /** Произвольные даты без использования диапазона */
-            dates?: (string | number)[] | null;
-            /** Дата начала диапазона */
-            date1?: components["schemas"]["TV.API.Types.Date"] | null;
-            /** Дата окончания диапазона */
-            date2?: components["schemas"]["TV.API.Types.Date"] | null;
-            /**
-             * Период в днях
-             * @default 7
-             */
-            periodDays: number;
-            /** @default 7 */
-            type_range: components["schemas"]["Audit_2.Types.Indexing.Export.TypeRange"];
-            /**
-             * Количество дней в диапазоне
-             * @default 60
-             */
-            count_dates: number;
-            project_id: components["schemas"]["project_id"];
-            fields: components["schemas"]["fields"];
-        };
-        /**
-         * Создание гостевой ссылки на просмотр позиций
-         * @description Необходимо указать либо date1 и date2, либо dates (вместе указывать нельзя)
-         */
-        "Audit_2.Methods.Indexing.Links.Get": {
-            /** Диапазон значений шаблона */
-            template_date_range: string;
-            /** Произвольные даты без использования диапазона */
-            dates?: (string | number)[] | null;
-            /** Дата начала диапазона */
-            date1?: string | null;
-            /** Дата окончания диапазона */
-            date2?: string | null;
-            /**
-             * Тип диапазона дат
-             * @default 7
-             */
-            type_range: components["schemas"]["Audit_2.Types.Indexing.Export.TypeRange"];
-            /** Количество дней в диапазоне */
-            count_dates?: number | null;
-            /** Ппоисковые ключи */
-            searchers_keys?: (string | number)[] | null;
-            /** Теги */
-            tags?: (string | number)[] | null;
-            /** Динамический */
-            dynamic?: (string | number)[] | null;
-            /** Динаамические данные */
-            data_dynamic?: (string | number)[] | null;
-            /** Сортировка данных */
-            data_sort?: (string | number)[] | null;
-            project_id: components["schemas"]["project_id"];
-        };
-        /** Получение сводки индексации */
-        "Audit_2.Methods.Indexing.Summary.Get": {
-            /** Произвольные даты без диапазона */
-            dates: (string | number)[];
-            searcher_key?: components["schemas"]["Audit_2.Types.Indexing.SearcherKey"] | null;
-            /** Отобразить количество изменений */
-            show_counts_changes: boolean;
-            /** Отобразить количество страниц в индексе */
-            show_counts_in_index: boolean;
-            /** Отобразить количество проверенных страниц */
-            show_counts_all: boolean;
-            /**
-             * Вернуть данные в формате для графика
-             * @description Недокументируемый параметр
-             *
-             *     @private
-             */
-            forChart: boolean;
-            project_id: components["schemas"]["project_id"];
-            filters: components["schemas"]["filters"];
-            id?: components["schemas"]["id"];
-        };
-        /**
-         * Построить отчет по одному URL
-         * @description Отличия от get/audit_2/watcher:
-         *     - отчет генерируется на основе объекта watcher_results, а не urls
-         *     - параметры выбора периода отчета игнорируются
-         *     - выбор прверок регулируется параметрами запроса filters, limit и offset
-         */
-        "Audit_2.Methods.Watcher.ByURL.Get": {
-            /** ID URL */
-            url_id: number;
-            /** Включать ли в результат названия столбцов */
-            show_headers: boolean;
-            /**
-             * Выбор столбцов данных с результатами проверки
-             * @default [
-             *       "http_codes",
-             *       "redirects"
-             *     ]
-             */
-            watcher_fields: (string | number)[];
-            show_diff: components["schemas"]["Audit_2.Types.Watcher.ShowDiff"];
-            watcher_type: components["schemas"]["Audit_2.Types.Watcher.Type"];
-            fields: components["schemas"]["fields"];
-            orders: components["schemas"]["orders"];
-            filters: components["schemas"]["filters"];
-            id?: components["schemas"]["id"];
-            limit?: components["schemas"]["limit"];
-            offset: components["schemas"]["offset"];
-            fetch_style?: components["schemas"]["fetch_style"];
-            project_id: components["schemas"]["project_id"];
-        };
-        "Models.Watcher.Results": {
-            project_id?: unknown;
-            check_id?: unknown;
-            url_id?: unknown;
-            http_codes?: (string | number)[] | null;
-            http_codes_changed?: unknown;
-            http_codes_md5?: unknown;
-            redirects?: (string | number)[] | null;
-            redirects_changed?: unknown;
-            redirects_md5?: unknown;
-            h1?: unknown;
-            h1_changed?: unknown;
-            h1_md5?: unknown;
-            title?: unknown;
-            title_changed?: unknown;
-            title_md5?: unknown;
-            description?: unknown;
-            description_changed?: unknown;
-            description_md5?: unknown;
-            content?: unknown;
-            content_changed?: unknown;
-            content_md5?: unknown;
-        };
-        /** Получение проверок радара */
-        "Audit_2.Methods.Watcher.Checks.Get": {
-            project_id: components["schemas"]["project_id"];
-        };
-        /** Получение сводки радара */
-        "Audit_2.Methods.Watcher.Summary.Get": {
-            /** Тип проверки */
-            watcher_types?: (string | number)[] | null;
-            /** ID проверок */
-            checks_ids: (string | number)[];
-            /** Отобразить количество изменений по типам */
-            show_counts_changes: boolean;
-            /** Недокументируемый параметр, данные для графика */
-            forChart: boolean;
-            project_id: components["schemas"]["project_id"];
-            filters: components["schemas"]["filters"];
-            id?: components["schemas"]["id"];
-        };
-        /** Перевод средств с реферального счета на бонусный */
-        "Bank_2.Methods.Referrals.ToBonus.Edit": {
-            /** Cумма для перевода */
-            sum: string;
-            filters: components["schemas"]["filters"];
-            id?: components["schemas"]["id"];
-        };
-        /** Отписаться от тарифа, оплаченного картой */
-        "Payments_2.Methods.Tariff.DelCard.Edit": Record<string, never>;
-        /** Настройка оплаты тарифов: выставлять ли счета через диадок */
-        "Payments_2.Methods.Tariff.NextToDiadoc.Edit": {
-            /** Флаг - применение настройки тарифов */
-            next_to_diadoc: boolean;
-        };
-        /** Сменить тариф со следующего месяца */
-        "Payments_2.Methods.Tariff.SetNext.Edit": {
-            /** id тарифа */
-            id: string;
-        };
-        /** Редактирование тикета (для админов) */
-        "Tickets_2.Methods.Admin.Ticket.Edit": {
-            id: number;
-            /** Флаг того, что тикет важный */
-            is_important?: boolean | null;
-            /** Номер задачи redmine, связанной с тикетом */
-            task_id?: number | null;
-            /** Доступные теги тикета */
-            tags?: components["schemas"]["Tags_2.Types.Tags"] | null;
-            /** Статус тикета */
-            status?: boolean | null;
-        };
-        /** Перенос последниего сообщения (до 1 сообщения автора) в новый тикет */
-        "Tickets_2.Methods.Admin.TicketSplit.Edit": {
-            filters: components["schemas"]["filters"];
-            id?: components["schemas"]["id"];
-        };
-        /** Пометка тикета как "прочитанный" для автора тикета или админов */
-        "Tickets_2.Methods.Tickets.SetReaded.Edit": {
-            filters: components["schemas"]["filters"];
-            id?: components["schemas"]["id"];
-        };
-        /** Получение URL к карте сайта по файлу robots.txt для указанного домена */
-        "Urls_2.Methods.Import.RecognizeLinkSitemapXml.Get": {
-            /** Домен */
-            domain: string;
-        };
-        /** Привязка email к аккаунту */
-        "Users_2.Methods.Join.Email.Add": {
-            email: string;
-            pass?: string | null;
-        };
-        /**
-         * График с количеством подписок на рубрики с сегментцией по способам рассылки
-         * @description График кешируется, первый запрос может выполняться дольше
-         */
-        "Admin_2.Methods.Users.Informer.Subscriptions.Get": {
-            tariff_id?: number | null;
-        };
-        /**
-         * Сокращенный тип с данными для вывода hightcharts
-         * @description https://www.highcharts.com/
-         */
-        "TV.Objects.Highcharts.Chart": {
-            /**
-             * Категории
-             * @description Для обчных графиков это значения на оси X
-             */
-            categories: (string | number)[];
-            /**
-             * Набор серий
-             * @description Серия - это объект, выводимый на графике, например линия.
-             *
-             *     Серия обязательно должна иметь поле data, в котором перечисляются значения для категорий. Значения должны идти в таком же порядке, что и
-             *     категории
-             */
-            series: (string | number)[];
-            /** Дополнительгная информация */
-            additionalData: (string | number)[];
-        };
-        /** Запуск проверки аудита */
-        "Audit_2.Methods.Audit.Checker.Go.Edit": {
-            /** Запуск в режиме отладки */
-            debug: boolean;
-            filters: components["schemas"]["filters"];
-            id?: components["schemas"]["id"];
-        };
-        /** Получение стоимости проверки аудита */
-        "Audit_2.Methods.Audit.Checker.Price.Get": {
-            /**
-             * Отображать ли сумму с учетом скидки
-             * @default true
-             */
-            apply_discount: boolean;
-        };
-        /** Получение гостевой ссылки на просмотр аудита позиций */
-        "Audit_2.Methods.Audit.Export.Links.Get": {
-            /** Название просмотра (используется на странице с просмотром проверки) */
-            view_name: string;
-            /** Шаблон просмотра (используется на странице с просмотром проверки) */
-            view_template: (string | number)[];
-            /** Логи фильтра по категориям кодов (используется на странице с просмотром проверки) */
-            log_http_codes_hundreds: (string | number)[];
-            /** Тип сигнала просмотра (используется на странице с просмотром проверки) */
-            view_signal_type: (string | number)[];
-            /** Внешние ссылки (используется на странице с просмотром проверки) */
-            links_external: string;
-            project_id: components["schemas"]["project_id"];
-            check_id: components["schemas"]["check_id"];
-        };
-        /** Экспорт отчета Анализа сайта */
-        "Audit_2.Methods.Audit.Export.Summary.Get": {
-            /** Формат экспортируемого файла */
-            output: string;
-            project_id: components["schemas"]["project_id"];
-            check_id: components["schemas"]["check_id"];
-        };
-        /** Получение информации о текущей ошибке на роботе */
-        "Audit_2.Methods.Audit.Log.ActualError.Get": {
-            project_id: components["schemas"]["project_id"];
-            check_id: components["schemas"]["check_id"];
-        };
-        DateTime: Record<string, never>;
-        /**
-         * Получение данных для графика
-         * @deprecated
-         */
-        "Audit_2.Methods.Audit.Log.Chart.Get": {
-            /** Фильтр по периоду */
-            time1?: components["schemas"]["DateTime"] | null;
-            /** Фильтр по периоду */
-            time2?: components["schemas"]["DateTime"] | null;
-            /**
-             * Номер страницы (для использования в SQL)
-             * @default 1
-             */
-            page: number;
-            limit?: components["schemas"]["limit"];
-            offset: components["schemas"]["offset"];
-            project_id: components["schemas"]["project_id"];
-            check_id: components["schemas"]["check_id"];
-        };
-        /**
-         * Тип отчета аудита для экспорта
-         * @enum {integer}
-         */
-        "Audit_2.Types.Audit.Results.Export.TypeReport": 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7;
-        /**
-         * Экспорт результатов аудита
-         * @deprecated
-         */
-        "Audit_2.Methods.Audit.Results.Export.Get": {
-            type_report: components["schemas"]["Audit_2.Types.Audit.Results.Export.TypeReport"];
-            /**
-             * Формат экспорта
-             * @default pdf
-             */
-            format: string;
-            /** Данные поиска во всех табличных разделах (только для PDF) */
-            search?: string | null;
-            /** Данные фильтрации во всех табличных разделах (только для PDF) */
-            filter?: string | null;
-            /** Вид ссылок (только для PDF) */
-            external?: string | null;
-            project_id: components["schemas"]["project_id"];
-            check_id: components["schemas"]["check_id"];
-        };
-        /**
-         * Результаты анализа страницы
-         * @deprecated
-         */
-        "Audit_2.Methods.Audit.Results.Page.Get": {
-            /** Ссылка на анализируемую страницу */
-            url: string;
-            /** Поиск */
-            search?: string | null;
-            orders: components["schemas"]["orders"];
-            project_id: components["schemas"]["project_id"];
-            check_id: components["schemas"]["check_id"];
-        };
-        /** Отправка проектов на проверку индексации */
-        "Audit_2.Methods.Indexing.Checker.Go.Edit": {
-            /** Запуск в режиме отладки */
-            debug: boolean;
-            filters: components["schemas"]["filters"];
-            id?: components["schemas"]["id"];
-        };
-        /** Полуение стоимости проверки индексации */
-        "Audit_2.Methods.Indexing.Checker.Price.Get": {
-            /**
-             * Отображать сумму с учетом скидки
-             * @default 1
-             */
-            apply_discount: number;
-        };
-        /**
-         * Получение гостевой ссылки на просмотр индексации
-         * @description Необходимо указать либо date1 и date2, либо dates (вместе указывать нельзя)
-         */
-        "Audit_2.Methods.Indexing.Export.Links.Get": {
-            /** Поисковые ключи */
-            searchers_keys?: (string | number)[] | null;
-            /** Диапозон значений шаблона */
-            template_date_range?: string | null;
-            /** Произвольные даты без использования диапазона */
-            dates?: (string | number)[] | null;
-            /** Дата начала диапазона */
-            date1?: string | null;
-            /** Дата окончания диапазона */
-            date2?: string | null;
-            /** Тип диапазона дат */
-            type_range?: components["schemas"]["Audit_2.Types.Indexing.Export.TypeRange"] | null;
-            /** Сравнение диапазонов типов */
-            type_range_compare?: string | null;
-            /** Количество дней в диапазоне */
-            count_dates?: string | null;
-            /** ID тегов */
-            tags_ids?: (string | number)[] | null;
-            /** Сортировка данных */
-            data_sort?: (string | number)[] | null;
-            /** Применение изменений только для */
-            only_changed_for?: string | null;
-            project_id: components["schemas"]["project_id"];
-        };
-        /**
-         * Хранилище для экспорта
-         * @enum {string}
-         */
-        "Export_2.Types.Repository.Name": "gdrive";
-        /** Экспорт файла в хранилище */
-        "Audit_2.Methods.Indexing.Export.ToRepository.Get": {
-            repository: components["schemas"]["Export_2.Types.Repository.Name"];
-            project_id: components["schemas"]["project_id"];
-        };
-        /** Получение сводок индексации для графика */
-        "Audit_2.Methods.Indexing.Summary.Chart.Get": {
-            /** Произвольные даты без диапазона */
-            dates: (string | number)[];
-            searcher_key?: components["schemas"]["Audit_2.Types.Indexing.SearcherKey"] | null;
-            /** Отобразить количество изменений */
-            show_counts_changes: boolean;
-            /** Отобразить количество страниц в индексе */
-            show_counts_in_index: boolean;
-            /** Отобразить количество проверенных страниц */
-            show_counts_all: boolean;
-            /**
-             * Вернуть данные в формате для графика
-             * @description Недокументируемый параметр
-             *
-             *     @private
-             */
-            forChart: boolean;
-            project_id: components["schemas"]["project_id"];
-            filters: components["schemas"]["filters"];
-            id?: components["schemas"]["id"];
-        };
-        /**
-         * Максимальное количество страниц для генерации карты сайта
-         * @enum {string}
-         */
-        "Audit_2.Types.Sitemap.MaxPages": "100" | "1000" | "10000" | "100000" | "150000" | "300000";
-        /** Отправка проектов на проверку карты сайта */
-        "Audit_2.Methods.Sitemap.Checker.Go.Edit": {
-            max_pages: components["schemas"]["Audit_2.Types.Sitemap.MaxPages"];
-            /** Запуск в режиме отладки */
-            debug: boolean;
-            filters: components["schemas"]["filters"];
-            id?: components["schemas"]["id"];
-        };
-        /** Полуение стоимости проверки карты сайта */
-        "Audit_2.Methods.Sitemap.Checker.Price.Get": {
-            /**
-             * Отображать ли сумму с учетом скидки
-             * @default 1
-             */
-            apply_discount: number;
-            max_pages: components["schemas"]["Audit_2.Types.Sitemap.MaxPages"];
-        };
-        /** Отправка проектов на проверку радара */
-        "Audit_2.Methods.Watcher.Checker.Go.Edit": {
-            /** Запуск в режиме отладки */
-            debug: boolean;
-            filters: components["schemas"]["filters"];
-            id?: components["schemas"]["id"];
-        };
-        /** Полуение стоимости проверки радара */
-        "Audit_2.Methods.Watcher.Checker.Price.Get": {
-            /**
-             * Отображать ли сумму с учетом скидки
-             * @default 1
-             */
-            apply_discount: number;
-        };
-        /** ID проверки радара */
-        "properties-check_id": number;
-        /** Создание гостевой ссылки на просмотр радара */
-        "Audit_2.Methods.Watcher.Export.Links.Get": {
-            /** Выбранный элемент в меню */
-            view_name: string;
-            /** Выводить полные тексты (для вкладки контент) */
-            fulltext: boolean;
-            /** @default all */
-            changed: components["schemas"]["Audit_2.Types.Audit.Summary.FilterCheckState"];
-            /** Фильтр по тегам */
-            tags_ids?: (string | number)[] | null;
-            project_id: components["schemas"]["project_id"];
-            check_id: components["schemas"]["properties-check_id"];
-        };
-        /** Получение сводок радара для графика */
-        "Audit_2.Methods.Watcher.Summary.Chart.Get": {
-            /** Тип проверки */
-            watcher_types?: (string | number)[] | null;
-            /** ID проверок */
-            checks_ids: (string | number)[];
-            /** Отобразить количество изменений по типам */
-            show_counts_changes: boolean;
-            /** Недокументируемый параметр, данные для графика */
-            forChart: boolean;
-            project_id: components["schemas"]["project_id"];
-            filters: components["schemas"]["filters"];
-            id?: components["schemas"]["id"];
-        };
-    };
+    schemas: never;
     responses: never;
     parameters: never;
     requestBodies: never;
@@ -4390,7 +1835,7 @@ export interface operations {
         };
         requestBody: {
             content: {
-                "application/json": components["schemas"]["Analytics_2.Methods.Add"];
+                "application/json": import('./Analytics_2/Methods/Add.ts').components['schemas']['Analytics_2.Methods.Add'];
             };
         };
         responses: {
@@ -4401,7 +1846,7 @@ export interface operations {
                 content: {
                     "application/json": ({
                         result: number;
-                    } & components["schemas"]["ResponseSuccess"]) | components["schemas"]["ResponseError"];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
             };
@@ -4416,7 +1861,7 @@ export interface operations {
         };
         requestBody: {
             content: {
-                "application/json": components["schemas"]["Annotations_2.Methods.Add"];
+                "application/json": import('./Annotations_2/Methods/Add.ts').components['schemas']['Annotations_2.Methods.Add'];
             };
         };
         responses: {
@@ -4427,7 +1872,7 @@ export interface operations {
                 content: {
                     "application/json": ({
                         result: number;
-                    } & components["schemas"]["ResponseSuccess"]) | components["schemas"]["ResponseError"];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
             };
@@ -4442,7 +1887,7 @@ export interface operations {
         };
         requestBody: {
             content: {
-                "application/json": components["schemas"]["Annotations_2.Methods.Del"];
+                "application/json": import('./Annotations_2/Methods/Del.ts').components['schemas']['Annotations_2.Methods.Del'];
             };
         };
         responses: {
@@ -4453,7 +1898,7 @@ export interface operations {
                 content: {
                     "application/json": ({
                         result: number;
-                    } & components["schemas"]["ResponseSuccess"]) | components["schemas"]["ResponseError"];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
             };
@@ -4468,7 +1913,7 @@ export interface operations {
         };
         requestBody: {
             content: {
-                "application/json": components["schemas"]["Annotations_2.Methods.Edit"];
+                "application/json": import('./Annotations_2/Methods/Edit.ts').components['schemas']['Annotations_2.Methods.Edit'];
             };
         };
         responses: {
@@ -4479,7 +1924,7 @@ export interface operations {
                 content: {
                     "application/json": ({
                         result: number;
-                    } & components["schemas"]["ResponseSuccess"]) | components["schemas"]["ResponseError"];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
             };
@@ -4494,7 +1939,7 @@ export interface operations {
         };
         requestBody: {
             content: {
-                "application/json": components["schemas"]["Annotations_2.Methods.Get"];
+                "application/json": import('./Annotations_2/Methods/Get.ts').components['schemas']['Annotations_2.Methods.Get'];
             };
         };
         responses: {
@@ -4504,9 +1949,9 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: components["schemas"]["Models.Annotations"][];
-                    } & components["schemas"]["ResponseSuccess"] & components["schemas"]["Pagination"]) | components["schemas"]["ResponseError"];
-                    model: components["schemas"]["Models.Annotations"];
+                        result: import('./Models/Annotations.ts').components['schemas']['Models.Annotations'][];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: import('./Models/Annotations.ts').components['schemas']['Models.Annotations'];
                 };
             };
         };
@@ -4520,7 +1965,7 @@ export interface operations {
         };
         requestBody: {
             content: {
-                "application/json": components["schemas"]["App_2.Methods.Get"];
+                "application/json": import('./App_2/Methods/Get.ts').components['schemas']['App_2.Methods.Get'];
             };
         };
         responses: {
@@ -4543,7 +1988,7 @@ export interface operations {
         };
         requestBody: {
             content: {
-                "application/json": components["schemas"]["Comments_2.Methods.Add"];
+                "application/json": import('./Comments_2/Methods/Add.ts').components['schemas']['Comments_2.Methods.Add'];
             };
         };
         responses: {
@@ -4555,7 +2000,7 @@ export interface operations {
                     "application/json": ({
                         /** Id вставленного комментария */
                         result: number;
-                    } & components["schemas"]["ResponseSuccess"]) | components["schemas"]["ResponseError"];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
             };
@@ -4570,7 +2015,7 @@ export interface operations {
         };
         requestBody: {
             content: {
-                "application/json": components["schemas"]["Comments_2.Methods.Del"];
+                "application/json": import('./Comments_2/Methods/Del.ts').components['schemas']['Comments_2.Methods.Del'];
             };
         };
         responses: {
@@ -4581,7 +2026,7 @@ export interface operations {
                 content: {
                     "application/json": ({
                         result: number;
-                    } & components["schemas"]["ResponseSuccess"]) | components["schemas"]["ResponseError"];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
             };
@@ -4596,7 +2041,7 @@ export interface operations {
         };
         requestBody: {
             content: {
-                "application/json": components["schemas"]["Comments_2.Methods.Edit"];
+                "application/json": import('./Comments_2/Methods/Edit.ts').components['schemas']['Comments_2.Methods.Edit'];
             };
         };
         responses: {
@@ -4607,7 +2052,7 @@ export interface operations {
                 content: {
                     "application/json": ({
                         result: number;
-                    } & components["schemas"]["ResponseSuccess"]) | components["schemas"]["ResponseError"];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
             };
@@ -4622,7 +2067,7 @@ export interface operations {
         };
         requestBody: {
             content: {
-                "application/json": components["schemas"]["Comments_2.Methods.Get"];
+                "application/json": import('./Comments_2/Methods/Get.ts').components['schemas']['Comments_2.Methods.Get'];
             };
         };
         responses: {
@@ -4633,7 +2078,7 @@ export interface operations {
                 content: {
                     "application/json": ({
                         result: (string | number)[];
-                    } & components["schemas"]["ResponseSuccess"]) | components["schemas"]["ResponseError"];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
             };
@@ -4648,7 +2093,7 @@ export interface operations {
         };
         requestBody: {
             content: {
-                "application/json": components["schemas"]["Payments_2.Methods.Add"];
+                "application/json": import('./Payments_2/Methods/Add.ts').components['schemas']['Payments_2.Methods.Add'];
             };
         };
         responses: {
@@ -4659,7 +2104,7 @@ export interface operations {
                 content: {
                     "application/json": ({
                         result: unknown;
-                    } & components["schemas"]["ResponseSuccess"]) | components["schemas"]["ResponseError"];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
             };
@@ -4674,7 +2119,7 @@ export interface operations {
         };
         requestBody: {
             content: {
-                "application/json": components["schemas"]["Payments_2.Methods.Get"];
+                "application/json": import('./Payments_2/Methods/Get.ts').components['schemas']['Payments_2.Methods.Get'];
             };
         };
         responses: {
@@ -4685,8 +2130,8 @@ export interface operations {
                 content: {
                     "application/json": ({
                         result: unknown;
-                    } & components["schemas"]["ResponseSuccess"] & components["schemas"]["Pagination"]) | components["schemas"]["ResponseError"];
-                    model: components["schemas"]["Models.Payments"];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: import('./Models/Payments.ts').components['schemas']['Models.Payments'];
                 };
             };
         };
@@ -4700,7 +2145,7 @@ export interface operations {
         };
         requestBody: {
             content: {
-                "application/json": components["schemas"]["Qr_2.Methods.Get"];
+                "application/json": import('./Qr_2/Methods/Get.ts').components['schemas']['Qr_2.Methods.Get'];
             };
         };
         responses: {
@@ -4711,7 +2156,7 @@ export interface operations {
                 content: {
                     "application/json": ({
                         result: string;
-                    } & components["schemas"]["ResponseSuccess"]) | components["schemas"]["ResponseError"];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
             };
@@ -4726,7 +2171,7 @@ export interface operations {
         };
         requestBody: {
             content: {
-                "application/json": components["schemas"]["Urls_2.Methods.Add"];
+                "application/json": import('./Urls_2/Methods/Add.ts').components['schemas']['Urls_2.Methods.Add'];
             };
         };
         responses: {
@@ -4737,8 +2182,8 @@ export interface operations {
                 content: {
                     "application/json": ({
                         result: number;
-                    } & components["schemas"]["ResponseSuccess"]) | components["schemas"]["ResponseError"];
-                    model: components["schemas"]["Models.Urls"];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: import('./Models/Urls.ts').components['schemas']['Models.Urls'];
                 };
             };
         };
@@ -4752,7 +2197,7 @@ export interface operations {
         };
         requestBody: {
             content: {
-                "application/json": components["schemas"]["Urls_2.Methods.Edit"];
+                "application/json": import('./Urls_2/Methods/Edit.ts').components['schemas']['Urls_2.Methods.Edit'];
             };
         };
         responses: {
@@ -4763,8 +2208,8 @@ export interface operations {
                 content: {
                     "application/json": ({
                         result: number;
-                    } & components["schemas"]["ResponseSuccess"]) | components["schemas"]["ResponseError"];
-                    model: components["schemas"]["Models.Urls"];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: import('./Models/Urls.ts').components['schemas']['Models.Urls'];
                 };
             };
         };
@@ -4778,7 +2223,7 @@ export interface operations {
         };
         requestBody: {
             content: {
-                "application/json": components["schemas"]["Urls_2.Methods.Get"];
+                "application/json": import('./Urls_2/Methods/Get.ts').components['schemas']['Urls_2.Methods.Get'];
             };
         };
         responses: {
@@ -4790,8 +2235,8 @@ export interface operations {
                     "application/json": ({
                         /** Список urls проекта */
                         result: unknown;
-                    } & components["schemas"]["ResponseSuccess"] & components["schemas"]["Pagination"]) | components["schemas"]["ResponseError"];
-                    model: components["schemas"]["Models.Urls"];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: import('./Models/Urls.ts').components['schemas']['Models.Urls'];
                 };
             };
         };
@@ -4805,7 +2250,7 @@ export interface operations {
         };
         requestBody: {
             content: {
-                "application/json": components["schemas"]["Annotations_2.Methods.My.Get"];
+                "application/json": import('./Annotations_2/Methods/My/Get.ts').components['schemas']['Annotations_2.Methods.My.Get'];
             };
         };
         responses: {
@@ -4815,9 +2260,9 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: components["schemas"]["Models.Annotations"][];
-                    } & components["schemas"]["ResponseSuccess"] & components["schemas"]["Pagination"]) | components["schemas"]["ResponseError"];
-                    model: components["schemas"]["Models.Annotations"];
+                        result: import('./Models/Annotations.ts').components['schemas']['Models.Annotations'][];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: import('./Models/Annotations.ts').components['schemas']['Models.Annotations'];
                 };
             };
         };
@@ -4831,7 +2276,7 @@ export interface operations {
         };
         requestBody: {
             content: {
-                "application/json": components["schemas"]["App_2.Methods.Actions.Get"];
+                "application/json": import('./App_2/Methods/Actions/Get.ts').components['schemas']['App_2.Methods.Actions.Get'];
             };
         };
         responses: {
@@ -4842,7 +2287,7 @@ export interface operations {
                 content: {
                     "application/json": ({
                         result: unknown;
-                    } & components["schemas"]["ResponseSuccess"]) | components["schemas"]["ResponseError"];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
             };
@@ -4857,7 +2302,7 @@ export interface operations {
         };
         requestBody: {
             content: {
-                "application/json": components["schemas"]["App_2.Methods.Privacy.Get"];
+                "application/json": import('./App_2/Methods/Privacy/Get.ts').components['schemas']['App_2.Methods.Privacy.Get'];
             };
         };
         responses: {
@@ -4867,8 +2312,8 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: components["schemas"]["Controller_2.Objects.Page"];
-                    } & components["schemas"]["ResponseSuccess"]) | components["schemas"]["ResponseError"];
+                        result: import('./Controller_2/Objects/Page.ts').components['schemas']['Controller_2.Objects.Page'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
             };
@@ -4883,7 +2328,7 @@ export interface operations {
         };
         requestBody: {
             content: {
-                "application/json": components["schemas"]["Audit_2.Methods.CountUrls.Get"];
+                "application/json": import('./Audit_2/Methods/CountUrls/Get.ts').components['schemas']['Audit_2.Methods.CountUrls.Get'];
             };
         };
         responses: {
@@ -4895,7 +2340,7 @@ export interface operations {
                     "application/json": ({
                         /** Количество настроенных URL */
                         result: number;
-                    } & components["schemas"]["ResponseSuccess"]) | components["schemas"]["ResponseError"];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
             };
@@ -4910,7 +2355,7 @@ export interface operations {
         };
         requestBody: {
             content: {
-                "application/json": components["schemas"]["Audit_2.Methods.Indexing.Get"];
+                "application/json": import('./Audit_2/Methods/Indexing/Get.ts').components['schemas']['Audit_2.Methods.Indexing.Get'];
             };
         };
         responses: {
@@ -4921,9 +2366,9 @@ export interface operations {
                 content: {
                     "application/json": ({
                         /** Список ссылок с данными по ним */
-                        result: components["schemas"]["Models.Urls"][];
-                    } & components["schemas"]["ResponseSuccess"] & components["schemas"]["Pagination"]) | components["schemas"]["ResponseError"];
-                    model: components["schemas"]["Models.Urls"];
+                        result: import('./Models/Urls.ts').components['schemas']['Models.Urls'][];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: import('./Models/Urls.ts').components['schemas']['Models.Urls'];
                 };
             };
         };
@@ -4937,7 +2382,7 @@ export interface operations {
         };
         requestBody: {
             content: {
-                "application/json": components["schemas"]["Audit_2.Methods.Settings.Edit"];
+                "application/json": import('./Audit_2/Methods/Settings/Edit.ts').components['schemas']['Audit_2.Methods.Settings.Edit'];
             };
         };
         responses: {
@@ -4949,7 +2394,7 @@ export interface operations {
                     "application/json": ({
                         /** Количество применных настроек */
                         result: number;
-                    } & components["schemas"]["ResponseSuccess"]) | components["schemas"]["ResponseError"];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
             };
@@ -4964,7 +2409,7 @@ export interface operations {
         };
         requestBody: {
             content: {
-                "application/json": components["schemas"]["Audit_2.Methods.Settings.Get"];
+                "application/json": import('./Audit_2/Methods/Settings/Get.ts').components['schemas']['Audit_2.Methods.Settings.Get'];
             };
         };
         responses: {
@@ -4976,7 +2421,7 @@ export interface operations {
                     "application/json": ({
                         /** Настройки аудита */
                         result: (string | number)[];
-                    } & components["schemas"]["ResponseSuccess"]) | components["schemas"]["ResponseError"];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
             };
@@ -4991,7 +2436,7 @@ export interface operations {
         };
         requestBody: {
             content: {
-                "application/json": components["schemas"]["Audit_2.Methods.Watcher.Get"];
+                "application/json": import('./Audit_2/Methods/Watcher/Get.ts').components['schemas']['Audit_2.Methods.Watcher.Get'];
             };
         };
         responses: {
@@ -5003,7 +2448,7 @@ export interface operations {
                     "application/json": ({
                         /** Генерируемый на основе urls, список результатов проверок радара */
                         result: (string | number)[];
-                    } & components["schemas"]["ResponseSuccess"] & components["schemas"]["Pagination"]) | components["schemas"]["ResponseError"];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
             };
@@ -5018,7 +2463,7 @@ export interface operations {
         };
         requestBody: {
             content: {
-                "application/json": components["schemas"]["Bank_2.Methods.Info.Get"];
+                "application/json": import('./Bank_2/Methods/Info/Get.ts').components['schemas']['Bank_2.Methods.Info.Get'];
             };
         };
         responses: {
@@ -5029,7 +2474,7 @@ export interface operations {
                 content: {
                     "application/json": ({
                         result: (string | number)[];
-                    } & components["schemas"]["ResponseSuccess"] & components["schemas"]["Pagination"]) | components["schemas"]["ResponseError"];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
             };
@@ -5044,7 +2489,7 @@ export interface operations {
         };
         requestBody: {
             content: {
-                "application/json": components["schemas"]["Comments_2.Methods.Like.Edit"];
+                "application/json": import('./Comments_2/Methods/Like/Edit.ts').components['schemas']['Comments_2.Methods.Like.Edit'];
             };
         };
         responses: {
@@ -5055,7 +2500,7 @@ export interface operations {
                 content: {
                     "application/json": ({
                         result: number;
-                    } & components["schemas"]["ResponseSuccess"]) | components["schemas"]["ResponseError"];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
             };
@@ -5070,7 +2515,7 @@ export interface operations {
         };
         requestBody: {
             content: {
-                "application/json": components["schemas"]["Content_2.Methods.Authors.Edit"];
+                "application/json": import('./Content_2/Methods/Authors/Edit.ts').components['schemas']['Content_2.Methods.Authors.Edit'];
             };
         };
         responses: {
@@ -5081,7 +2526,7 @@ export interface operations {
                 content: {
                     "application/json": ({
                         result: number;
-                    } & components["schemas"]["ResponseSuccess"]) | components["schemas"]["ResponseError"];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
             };
@@ -5096,7 +2541,7 @@ export interface operations {
         };
         requestBody: {
             content: {
-                "application/json": components["schemas"]["Content_2.Methods.Authors.Get"];
+                "application/json": import('./Content_2/Methods/Authors/Get.ts').components['schemas']['Content_2.Methods.Authors.Get'];
             };
         };
         responses: {
@@ -5107,8 +2552,8 @@ export interface operations {
                 content: {
                     "application/json": ({
                         result: unknown;
-                    } & components["schemas"]["ResponseSuccess"] & components["schemas"]["Pagination"]) | components["schemas"]["ResponseError"];
-                    model: components["schemas"]["Models.Content.Authors"];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: import('./Models/Content/Authors.ts').components['schemas']['Models.Content.Authors'];
                 };
             };
         };
@@ -5122,7 +2567,7 @@ export interface operations {
         };
         requestBody: {
             content: {
-                "application/json": components["schemas"]["Cron_2.Methods.Commands.Add"];
+                "application/json": import('./Cron_2/Methods/Commands/Add.ts').components['schemas']['Cron_2.Methods.Commands.Add'];
             };
         };
         responses: {
@@ -5133,8 +2578,8 @@ export interface operations {
                 content: {
                     "application/json": ({
                         result: number;
-                    } & components["schemas"]["ResponseSuccess"]) | components["schemas"]["ResponseError"];
-                    model: components["schemas"]["Models.CronCommands"];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: import('./Models/CronCommands.ts').components['schemas']['Models.CronCommands'];
                 };
             };
         };
@@ -5148,7 +2593,7 @@ export interface operations {
         };
         requestBody: {
             content: {
-                "application/json": components["schemas"]["Cron_2.Methods.Commands.Del"];
+                "application/json": import('./Cron_2/Methods/Commands/Del.ts').components['schemas']['Cron_2.Methods.Commands.Del'];
             };
         };
         responses: {
@@ -5159,8 +2604,8 @@ export interface operations {
                 content: {
                     "application/json": ({
                         result: number;
-                    } & components["schemas"]["ResponseSuccess"]) | components["schemas"]["ResponseError"];
-                    model: components["schemas"]["Models.CronCommands"];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: import('./Models/CronCommands.ts').components['schemas']['Models.CronCommands'];
                 };
             };
         };
@@ -5174,7 +2619,7 @@ export interface operations {
         };
         requestBody: {
             content: {
-                "application/json": components["schemas"]["Cron_2.Methods.Commands.Edit"];
+                "application/json": import('./Cron_2/Methods/Commands/Edit.ts').components['schemas']['Cron_2.Methods.Commands.Edit'];
             };
         };
         responses: {
@@ -5185,8 +2630,8 @@ export interface operations {
                 content: {
                     "application/json": ({
                         result: number;
-                    } & components["schemas"]["ResponseSuccess"]) | components["schemas"]["ResponseError"];
-                    model: components["schemas"]["Models.CronCommands"];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: import('./Models/CronCommands.ts').components['schemas']['Models.CronCommands'];
                 };
             };
         };
@@ -5200,7 +2645,7 @@ export interface operations {
         };
         requestBody: {
             content: {
-                "application/json": components["schemas"]["Cron_2.Methods.Commands.Get"];
+                "application/json": import('./Cron_2/Methods/Commands/Get.ts').components['schemas']['Cron_2.Methods.Commands.Get'];
             };
         };
         responses: {
@@ -5211,9 +2656,9 @@ export interface operations {
                 content: {
                     "application/json": ({
                         /** Список задач cron */
-                        result: components["schemas"]["Models.CronCommands"][];
-                    } & components["schemas"]["ResponseSuccess"] & components["schemas"]["Pagination"]) | components["schemas"]["ResponseError"];
-                    model: components["schemas"]["Models.CronCommands"];
+                        result: import('./Models/CronCommands.ts').components['schemas']['Models.CronCommands'][];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: import('./Models/CronCommands.ts').components['schemas']['Models.CronCommands'];
                 };
             };
         };
@@ -5227,7 +2672,7 @@ export interface operations {
         };
         requestBody: {
             content: {
-                "application/json": components["schemas"]["Cron_2.Methods.Get"];
+                "application/json": import('./Cron_2/Methods/Get.ts').components['schemas']['Cron_2.Methods.Get'];
             };
         };
         responses: {
@@ -5238,9 +2683,9 @@ export interface operations {
                 content: {
                     "application/json": ({
                         /** Список имен сервисов */
-                        result: components["schemas"]["Models.CronCommands"][];
-                    } & components["schemas"]["ResponseSuccess"] & components["schemas"]["Pagination"]) | components["schemas"]["ResponseError"];
-                    model: components["schemas"]["Models.CronCommands"];
+                        result: import('./Models/CronCommands.ts').components['schemas']['Models.CronCommands'][];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: import('./Models/CronCommands.ts').components['schemas']['Models.CronCommands'];
                 };
             };
         };
@@ -5254,7 +2699,7 @@ export interface operations {
         };
         requestBody: {
             content: {
-                "application/json": components["schemas"]["Example_2.Methods.Array.Get"];
+                "application/json": import('./Example_2/Methods/Array/Get.ts').components['schemas']['Example_2.Methods.Array.Get'];
             };
         };
         responses: {
@@ -5266,7 +2711,7 @@ export interface operations {
                     "application/json": ({
                         /** Ассоциативный результирующий массив, с данными, переданными в метод и результатом genSet() */
                         result: (string | number)[];
-                    } & components["schemas"]["ResponseSuccess"]) | components["schemas"]["ResponseError"];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
             };
@@ -5281,7 +2726,7 @@ export interface operations {
         };
         requestBody: {
             content: {
-                "application/json": components["schemas"]["Example_2.Methods.Custom.Get"];
+                "application/json": import('./Example_2/Methods/Custom/Get.ts').components['schemas']['Example_2.Methods.Custom.Get'];
             };
         };
         responses: {
@@ -5292,7 +2737,7 @@ export interface operations {
                 content: {
                     "application/json": ({
                         result: string;
-                    } & components["schemas"]["ResponseSuccess"]) | components["schemas"]["ResponseError"];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
             };
@@ -5307,7 +2752,7 @@ export interface operations {
         };
         requestBody: {
             content: {
-                "application/json": components["schemas"]["Example_2.Methods.Enum.Get"];
+                "application/json": import('./Example_2/Methods/Enum/Get.ts').components['schemas']['Example_2.Methods.Enum.Get'];
             };
         };
         responses: {
@@ -5319,7 +2764,7 @@ export interface operations {
                     "application/json": ({
                         /** Ассоциативный результирующий массив, с данными, переданными в метод */
                         result: (string | number)[];
-                    } & components["schemas"]["ResponseSuccess"]) | components["schemas"]["ResponseError"];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
             };
@@ -5334,7 +2779,7 @@ export interface operations {
         };
         requestBody: {
             content: {
-                "application/json": components["schemas"]["Example_2.Methods.Projects.Get"];
+                "application/json": import('./Example_2/Methods/Projects/Get.ts').components['schemas']['Example_2.Methods.Projects.Get'];
             };
         };
         responses: {
@@ -5344,9 +2789,9 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: components["schemas"]["Models.Projects"][];
-                    } & components["schemas"]["ResponseSuccess"] & components["schemas"]["Pagination"]) | components["schemas"]["ResponseError"];
-                    model: components["schemas"]["Models.Projects"];
+                        result: import('./Models/Projects.ts').components['schemas']['Models.Projects'][];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: import('./Models/Projects.ts').components['schemas']['Models.Projects'];
                 };
             };
         };
@@ -5360,7 +2805,7 @@ export interface operations {
         };
         requestBody: {
             content: {
-                "application/json": components["schemas"]["OpenAPI_2.Methods.Download.Get"];
+                "application/json": import('./OpenAPI_2/Methods/Download/Get.ts').components['schemas']['OpenAPI_2.Methods.Download.Get'];
             };
         };
         responses: {
@@ -5383,7 +2828,7 @@ export interface operations {
         };
         requestBody: {
             content: {
-                "application/json": components["schemas"]["Payments_2.Methods.Companies.Get"];
+                "application/json": import('./Payments_2/Methods/Companies/Get.ts').components['schemas']['Payments_2.Methods.Companies.Get'];
             };
         };
         responses: {
@@ -5394,7 +2839,7 @@ export interface operations {
                 content: {
                     "application/json": ({
                         result: (string | number)[];
-                    } & components["schemas"]["ResponseSuccess"]) | components["schemas"]["ResponseError"];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
             };
@@ -5409,7 +2854,7 @@ export interface operations {
         };
         requestBody: {
             content: {
-                "application/json": components["schemas"]["Payments_2.Methods.ContractSign.Edit"];
+                "application/json": import('./Payments_2/Methods/ContractSign/Edit.ts').components['schemas']['Payments_2.Methods.ContractSign.Edit'];
             };
         };
         responses: {
@@ -5420,7 +2865,7 @@ export interface operations {
                 content: {
                     "application/json": ({
                         result: number;
-                    } & components["schemas"]["ResponseSuccess"]) | components["schemas"]["ResponseError"];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
             };
@@ -5435,7 +2880,7 @@ export interface operations {
         };
         requestBody: {
             content: {
-                "application/json": components["schemas"]["Payments_2.Methods.NextRequisitesId.Edit"];
+                "application/json": import('./Payments_2/Methods/NextRequisitesId/Edit.ts').components['schemas']['Payments_2.Methods.NextRequisitesId.Edit'];
             };
         };
         responses: {
@@ -5446,7 +2891,7 @@ export interface operations {
                 content: {
                     "application/json": ({
                         result: number;
-                    } & components["schemas"]["ResponseSuccess"]) | components["schemas"]["ResponseError"];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
             };
@@ -5461,7 +2906,7 @@ export interface operations {
         };
         requestBody: {
             content: {
-                "application/json": components["schemas"]["Payments_2.Methods.UrTinkoffCreateApplication.Add"];
+                "application/json": import('./Payments_2/Methods/UrTinkoffCreateApplication/Add.ts').components['schemas']['Payments_2.Methods.UrTinkoffCreateApplication.Add'];
             };
         };
         responses: {
@@ -5472,7 +2917,7 @@ export interface operations {
                 content: {
                     "application/json": ({
                         result: number;
-                    } & components["schemas"]["ResponseSuccess"]) | components["schemas"]["ResponseError"];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
             };
@@ -5487,7 +2932,7 @@ export interface operations {
         };
         requestBody: {
             content: {
-                "application/json": components["schemas"]["Payments_2.Methods.ValidateMerchantCardAP.Get"];
+                "application/json": import('./Payments_2/Methods/ValidateMerchantCardAP/Get.ts').components['schemas']['Payments_2.Methods.ValidateMerchantCardAP.Get'];
             };
         };
         responses: {
@@ -5498,7 +2943,7 @@ export interface operations {
                 content: {
                     "application/json": ({
                         result: (string | number)[];
-                    } & components["schemas"]["ResponseSuccess"]) | components["schemas"]["ResponseError"];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
             };
@@ -5513,7 +2958,7 @@ export interface operations {
         };
         requestBody: {
             content: {
-                "application/json": components["schemas"]["Tickets_2.Methods.Messages.Add"];
+                "application/json": import('./Tickets_2/Methods/Messages/Add.ts').components['schemas']['Tickets_2.Methods.Messages.Add'];
             };
         };
         responses: {
@@ -5525,7 +2970,7 @@ export interface operations {
                     "application/json": ({
                         /** Id добавленного сообщения */
                         result: number;
-                    } & components["schemas"]["ResponseSuccess"]) | components["schemas"]["ResponseError"];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
             };
@@ -5540,7 +2985,7 @@ export interface operations {
         };
         requestBody: {
             content: {
-                "application/json": components["schemas"]["Tickets_2.Methods.Tickets.Add"];
+                "application/json": import('./Tickets_2/Methods/Tickets/Add.ts').components['schemas']['Tickets_2.Methods.Tickets.Add'];
             };
         };
         responses: {
@@ -5552,7 +2997,7 @@ export interface operations {
                     "application/json": ({
                         /** Id тикета */
                         result: number;
-                    } & components["schemas"]["ResponseSuccess"]) | components["schemas"]["ResponseError"];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
             };
@@ -5567,7 +3012,7 @@ export interface operations {
         };
         requestBody: {
             content: {
-                "application/json": components["schemas"]["Tickets_2.Methods.Tickets.Edit"];
+                "application/json": import('./Tickets_2/Methods/Tickets/Edit.ts').components['schemas']['Tickets_2.Methods.Tickets.Edit'];
             };
         };
         responses: {
@@ -5578,7 +3023,7 @@ export interface operations {
                 content: {
                     "application/json": ({
                         result: number;
-                    } & components["schemas"]["ResponseSuccess"]) | components["schemas"]["ResponseError"];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
             };
@@ -5593,7 +3038,7 @@ export interface operations {
         };
         requestBody: {
             content: {
-                "application/json": components["schemas"]["Tickets_2.Methods.Tickets.Get"];
+                "application/json": import('./Tickets_2/Methods/Tickets/Get.ts').components['schemas']['Tickets_2.Methods.Tickets.Get'];
             };
         };
         responses: {
@@ -5603,9 +3048,9 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: components["schemas"]["Models.Tickets"][];
-                    } & components["schemas"]["ResponseSuccess"] & components["schemas"]["Pagination"]) | components["schemas"]["ResponseError"];
-                    model: components["schemas"]["Models.Tickets"];
+                        result: import('./Models/Tickets.ts').components['schemas']['Models.Tickets'][];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: import('./Models/Tickets.ts').components['schemas']['Models.Tickets'];
                 };
             };
         };
@@ -5619,7 +3064,7 @@ export interface operations {
         };
         requestBody: {
             content: {
-                "application/json": components["schemas"]["Urls_2.Methods.Export.Get"];
+                "application/json": import('./Urls_2/Methods/Export/Get.ts').components['schemas']['Urls_2.Methods.Export.Get'];
             };
         };
         responses: {
@@ -5642,7 +3087,7 @@ export interface operations {
         };
         requestBody: {
             content: {
-                "application/json": components["schemas"]["Urls_2.Methods.Import.Add"];
+                "application/json": import('./Urls_2/Methods/Import/Add.ts').components['schemas']['Urls_2.Methods.Import.Add'];
             };
         };
         responses: {
@@ -5656,7 +3101,7 @@ export interface operations {
                          *
                          *     @throws Exception */
                         result: (string | number)[];
-                    } & components["schemas"]["ResponseSuccess"]) | components["schemas"]["ResponseError"];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
             };
@@ -5671,7 +3116,7 @@ export interface operations {
         };
         requestBody: {
             content: {
-                "application/json": components["schemas"]["Urls_2.Methods.Tags.Edit"];
+                "application/json": import('./Urls_2/Methods/Tags/Edit.ts').components['schemas']['Urls_2.Methods.Tags.Edit'];
             };
         };
         responses: {
@@ -5682,8 +3127,8 @@ export interface operations {
                 content: {
                     "application/json": ({
                         result: number;
-                    } & components["schemas"]["ResponseSuccess"]) | components["schemas"]["ResponseError"];
-                    model: components["schemas"]["Models.Urls"];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: import('./Models/Urls.ts').components['schemas']['Models.Urls'];
                 };
             };
         };
@@ -5697,7 +3142,7 @@ export interface operations {
         };
         requestBody: {
             content: {
-                "application/json": components["schemas"]["Admin_2.Methods.Users.Promocodes.Add"];
+                "application/json": import('./Admin_2/Methods/Users/Promocodes/Add.ts').components['schemas']['Admin_2.Methods.Users.Promocodes.Add'];
             };
         };
         responses: {
@@ -5709,8 +3154,8 @@ export interface operations {
                     "application/json": ({
                         /** @throws Exception */
                         result: number;
-                    } & components["schemas"]["ResponseSuccess"]) | components["schemas"]["ResponseError"];
-                    model: components["schemas"]["Models.Users.Verif"];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: import('./Models/Users/Verif.ts').components['schemas']['Models.Users.Verif'];
                 };
             };
         };
@@ -5724,7 +3169,7 @@ export interface operations {
         };
         requestBody: {
             content: {
-                "application/json": components["schemas"]["Admin_2.Methods.Users.Promocodes.Get"];
+                "application/json": import('./Admin_2/Methods/Users/Promocodes/Get.ts').components['schemas']['Admin_2.Methods.Users.Promocodes.Get'];
             };
         };
         responses: {
@@ -5734,9 +3179,9 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: components["schemas"]["Models.Users.Verif"][];
-                    } & components["schemas"]["ResponseSuccess"] & components["schemas"]["Pagination"]) | components["schemas"]["ResponseError"];
-                    model: components["schemas"]["Models.Users.Verif"];
+                        result: import('./Models/Users/Verif.ts').components['schemas']['Models.Users.Verif'][];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: import('./Models/Users/Verif.ts').components['schemas']['Models.Users.Verif'];
                 };
             };
         };
@@ -5750,7 +3195,7 @@ export interface operations {
         };
         requestBody: {
             content: {
-                "application/json": components["schemas"]["Admin_2.Methods.Users.Ranks.Add"];
+                "application/json": import('./Admin_2/Methods/Users/Ranks/Add.ts').components['schemas']['Admin_2.Methods.Users.Ranks.Add'];
             };
         };
         responses: {
@@ -5761,8 +3206,8 @@ export interface operations {
                 content: {
                     "application/json": ({
                         result: number;
-                    } & components["schemas"]["ResponseSuccess"]) | components["schemas"]["ResponseError"];
-                    model: components["schemas"]["Models.Admin.Users.Ranks"];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: import('./Models/Admin/Users/Ranks.ts').components['schemas']['Models.Admin.Users.Ranks'];
                 };
             };
         };
@@ -5776,7 +3221,7 @@ export interface operations {
         };
         requestBody: {
             content: {
-                "application/json": components["schemas"]["Admin_2.Methods.Users.Ranks.Edit"];
+                "application/json": import('./Admin_2/Methods/Users/Ranks/Edit.ts').components['schemas']['Admin_2.Methods.Users.Ranks.Edit'];
             };
         };
         responses: {
@@ -5787,8 +3232,8 @@ export interface operations {
                 content: {
                     "application/json": ({
                         result: number;
-                    } & components["schemas"]["ResponseSuccess"]) | components["schemas"]["ResponseError"];
-                    model: components["schemas"]["Models.Admin.Users.Ranks"];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: import('./Models/Admin/Users/Ranks.ts').components['schemas']['Models.Admin.Users.Ranks'];
                 };
             };
         };
@@ -5802,7 +3247,7 @@ export interface operations {
         };
         requestBody: {
             content: {
-                "application/json": components["schemas"]["Admin_2.Methods.Users.Ranks.Get"];
+                "application/json": import('./Admin_2/Methods/Users/Ranks/Get.ts').components['schemas']['Admin_2.Methods.Users.Ranks.Get'];
             };
         };
         responses: {
@@ -5812,9 +3257,9 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: components["schemas"]["Models.Admin.Users.Ranks"][];
-                    } & components["schemas"]["ResponseSuccess"] & components["schemas"]["Pagination"]) | components["schemas"]["ResponseError"];
-                    model: components["schemas"]["Models.Admin.Users.Ranks"];
+                        result: import('./Models/Admin/Users/Ranks.ts').components['schemas']['Models.Admin.Users.Ranks'][];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: import('./Models/Admin/Users/Ranks.ts').components['schemas']['Models.Admin.Users.Ranks'];
                 };
             };
         };
@@ -5828,7 +3273,7 @@ export interface operations {
         };
         requestBody: {
             content: {
-                "application/json": components["schemas"]["Audit_2.Methods.Audit.Browse.Get"];
+                "application/json": import('./Audit_2/Methods/Audit/Browse/Get.ts').components['schemas']['Audit_2.Methods.Audit.Browse.Get'];
             };
         };
         responses: {
@@ -5840,7 +3285,7 @@ export interface operations {
                     "application/json": ({
                         /** Сводка анализа сайта */
                         result: (string | number)[];
-                    } & components["schemas"]["ResponseSuccess"]) | components["schemas"]["ResponseError"];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
             };
@@ -5855,7 +3300,7 @@ export interface operations {
         };
         requestBody: {
             content: {
-                "application/json": components["schemas"]["Audit_2.Methods.Audit.Checks.Get"];
+                "application/json": import('./Audit_2/Methods/Audit/Checks/Get.ts').components['schemas']['Audit_2.Methods.Audit.Checks.Get'];
             };
         };
         responses: {
@@ -5867,8 +3312,8 @@ export interface operations {
                     "application/json": ({
                         /** Список выполненных (выполняемых) проверок аудита */
                         result: unknown;
-                    } & components["schemas"]["ResponseSuccess"] & components["schemas"]["Pagination"]) | components["schemas"]["ResponseError"];
-                    model: components["schemas"]["Models.Audit.Checks"];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: import('./Models/Audit/Checks.ts').components['schemas']['Models.Audit.Checks'];
                 };
             };
         };
@@ -5882,7 +3327,7 @@ export interface operations {
         };
         requestBody: {
             content: {
-                "application/json": components["schemas"]["Audit_2.Methods.Audit.Css.Get"];
+                "application/json": import('./Audit_2/Methods/Audit/Css/Get.ts').components['schemas']['Audit_2.Methods.Audit.Css.Get'];
             };
         };
         responses: {
@@ -5893,9 +3338,9 @@ export interface operations {
                 content: {
                     "application/json": ({
                         /** Список проверенных css */
-                        result: components["schemas"]["Models.Audit.Css"][];
-                    } & components["schemas"]["ResponseSuccess"] & components["schemas"]["Pagination"]) | components["schemas"]["ResponseError"];
-                    model: components["schemas"]["Models.Audit.Css"];
+                        result: import('./Models/Audit/Css.ts').components['schemas']['Models.Audit.Css'][];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: import('./Models/Audit/Css.ts').components['schemas']['Models.Audit.Css'];
                 };
             };
         };
@@ -5909,7 +3354,7 @@ export interface operations {
         };
         requestBody: {
             content: {
-                "application/json": components["schemas"]["Audit_2.Methods.Audit.Export.Get"];
+                "application/json": import('./Audit_2/Methods/Audit/Export/Get.ts').components['schemas']['Audit_2.Methods.Audit.Export.Get'];
             };
         };
         responses: {
@@ -5933,7 +3378,7 @@ export interface operations {
         };
         requestBody: {
             content: {
-                "application/json": components["schemas"]["Audit_2.Methods.Audit.Images.Get"];
+                "application/json": import('./Audit_2/Methods/Audit/Images/Get.ts').components['schemas']['Audit_2.Methods.Audit.Images.Get'];
             };
         };
         responses: {
@@ -5944,9 +3389,9 @@ export interface operations {
                 content: {
                     "application/json": ({
                         /** Список проверенных изображений */
-                        result: components["schemas"]["Models.Audit.Images"][];
-                    } & components["schemas"]["ResponseSuccess"] & components["schemas"]["Pagination"]) | components["schemas"]["ResponseError"];
-                    model: components["schemas"]["Models.Audit.Images"];
+                        result: import('./Models/Audit/Images.ts').components['schemas']['Models.Audit.Images'][];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: import('./Models/Audit/Images.ts').components['schemas']['Models.Audit.Images'];
                 };
             };
         };
@@ -5960,7 +3405,7 @@ export interface operations {
         };
         requestBody: {
             content: {
-                "application/json": components["schemas"]["Audit_2.Methods.Audit.Js.Get"];
+                "application/json": import('./Audit_2/Methods/Audit/Js/Get.ts').components['schemas']['Audit_2.Methods.Audit.Js.Get'];
             };
         };
         responses: {
@@ -5971,9 +3416,9 @@ export interface operations {
                 content: {
                     "application/json": ({
                         /** Список проверенных js */
-                        result: components["schemas"]["Models.Audit.Js"][];
-                    } & components["schemas"]["ResponseSuccess"] & components["schemas"]["Pagination"]) | components["schemas"]["ResponseError"];
-                    model: components["schemas"]["Models.Audit.Js"];
+                        result: import('./Models/Audit/Js.ts').components['schemas']['Models.Audit.Js'][];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: import('./Models/Audit/Js.ts').components['schemas']['Models.Audit.Js'];
                 };
             };
         };
@@ -5987,7 +3432,7 @@ export interface operations {
         };
         requestBody: {
             content: {
-                "application/json": components["schemas"]["Audit_2.Methods.Audit.Links.Get"];
+                "application/json": import('./Audit_2/Methods/Audit/Links/Get.ts').components['schemas']['Audit_2.Methods.Audit.Links.Get'];
             };
         };
         responses: {
@@ -5998,9 +3443,9 @@ export interface operations {
                 content: {
                     "application/json": ({
                         /** Список проверенных ссылок */
-                        result: components["schemas"]["Models.Audit.Links"][];
-                    } & components["schemas"]["ResponseSuccess"] & components["schemas"]["Pagination"]) | components["schemas"]["ResponseError"];
-                    model: components["schemas"]["Models.Audit.Links"];
+                        result: import('./Models/Audit/Links.ts').components['schemas']['Models.Audit.Links'][];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: import('./Models/Audit/Links.ts').components['schemas']['Models.Audit.Links'];
                 };
             };
         };
@@ -6014,7 +3459,7 @@ export interface operations {
         };
         requestBody: {
             content: {
-                "application/json": components["schemas"]["Audit_2.Methods.Audit.Log.Get"];
+                "application/json": import('./Audit_2/Methods/Audit/Log/Get.ts').components['schemas']['Audit_2.Methods.Audit.Log.Get'];
             };
         };
         responses: {
@@ -6026,7 +3471,7 @@ export interface operations {
                     "application/json": ({
                         /** Данные проверенных ресурсов */
                         result: (string | number)[];
-                    } & components["schemas"]["ResponseSuccess"] & components["schemas"]["Pagination"]) | components["schemas"]["ResponseError"];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
             };
@@ -6041,7 +3486,7 @@ export interface operations {
         };
         requestBody: {
             content: {
-                "application/json": components["schemas"]["Audit_2.Methods.Audit.Pages.Get"];
+                "application/json": import('./Audit_2/Methods/Audit/Pages/Get.ts').components['schemas']['Audit_2.Methods.Audit.Pages.Get'];
             };
         };
         responses: {
@@ -6052,9 +3497,9 @@ export interface operations {
                 content: {
                     "application/json": ({
                         /** Список страниц */
-                        result: components["schemas"]["Models.Audit.Pages"][];
-                    } & components["schemas"]["ResponseSuccess"] & components["schemas"]["Pagination"]) | components["schemas"]["ResponseError"];
-                    model: components["schemas"]["Models.Audit.Pages"];
+                        result: import('./Models/Audit/Pages.ts').components['schemas']['Models.Audit.Pages'][];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: import('./Models/Audit/Pages.ts').components['schemas']['Models.Audit.Pages'];
                 };
             };
         };
@@ -6068,7 +3513,7 @@ export interface operations {
         };
         requestBody: {
             content: {
-                "application/json": components["schemas"]["Audit_2.Methods.Audit.Summary.Get"];
+                "application/json": import('./Audit_2/Methods/Audit/Summary/Get.ts').components['schemas']['Audit_2.Methods.Audit.Summary.Get'];
             };
         };
         responses: {
@@ -6082,9 +3527,9 @@ export interface operations {
                          *      - `$res['all']['all']['count_checks_success']` - количество пройденных проверок во всех категориях
                          *      - `$res['pages']['indexing']['count_checks_success']` - количество пройденных проверок в категории Страницы / Индексация
                          *      - `$res['all']['all']['count_checks_success']` - количество пройденных проверок во всех категориях */
-                        result: components["schemas"]["Models.Audit.Checks"][];
-                    } & components["schemas"]["ResponseSuccess"] & components["schemas"]["Pagination"]) | components["schemas"]["ResponseError"];
-                    model: components["schemas"]["Models.Audit.Checks"];
+                        result: import('./Models/Audit/Checks.ts').components['schemas']['Models.Audit.Checks'][];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: import('./Models/Audit/Checks.ts').components['schemas']['Models.Audit.Checks'];
                 };
             };
         };
@@ -6098,7 +3543,7 @@ export interface operations {
         };
         requestBody: {
             content: {
-                "application/json": components["schemas"]["Audit_2.Methods.Audit.SummaryPage.Get"];
+                "application/json": import('./Audit_2/Methods/Audit/SummaryPage/Get.ts').components['schemas']['Audit_2.Methods.Audit.SummaryPage.Get'];
             };
         };
         responses: {
@@ -6109,9 +3554,9 @@ export interface operations {
                 content: {
                     "application/json": ({
                         /** Сводка о выполненном аудите по одной странице */
-                        result: components["schemas"]["Models.Audit.Pages"][];
-                    } & components["schemas"]["ResponseSuccess"] & components["schemas"]["Pagination"]) | components["schemas"]["ResponseError"];
-                    model: components["schemas"]["Models.Audit.Pages"];
+                        result: import('./Models/Audit/Pages.ts').components['schemas']['Models.Audit.Pages'][];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: import('./Models/Audit/Pages.ts').components['schemas']['Models.Audit.Pages'];
                 };
             };
         };
@@ -6125,7 +3570,7 @@ export interface operations {
         };
         requestBody: {
             content: {
-                "application/json": components["schemas"]["Audit_2.Methods.Indexing.Export.Get"];
+                "application/json": import('./Audit_2/Methods/Indexing/Export/Get.ts').components['schemas']['Audit_2.Methods.Indexing.Export.Get'];
             };
         };
         responses: {
@@ -6137,7 +3582,7 @@ export interface operations {
                     "application/json": ({
                         /** Результаты индексации */
                         result: string;
-                    } & components["schemas"]["ResponseSuccess"]) | components["schemas"]["ResponseError"];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
             };
@@ -6152,7 +3597,7 @@ export interface operations {
         };
         requestBody: {
             content: {
-                "application/json": components["schemas"]["Audit_2.Methods.Indexing.Links.Get"];
+                "application/json": import('./Audit_2/Methods/Indexing/Links/Get.ts').components['schemas']['Audit_2.Methods.Indexing.Links.Get'];
             };
         };
         responses: {
@@ -6164,7 +3609,7 @@ export interface operations {
                     "application/json": ({
                         /** Короткая гостевая ссылка на просмотр позиций */
                         result: string;
-                    } & components["schemas"]["ResponseSuccess"]) | components["schemas"]["ResponseError"];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
             };
@@ -6179,7 +3624,7 @@ export interface operations {
         };
         requestBody: {
             content: {
-                "application/json": components["schemas"]["Audit_2.Methods.Indexing.Summary.Get"];
+                "application/json": import('./Audit_2/Methods/Indexing/Summary/Get.ts').components['schemas']['Audit_2.Methods.Indexing.Summary.Get'];
             };
         };
         responses: {
@@ -6191,7 +3636,7 @@ export interface operations {
                     "application/json": ({
                         /** Сводка индексации */
                         result: (string | number)[];
-                    } & components["schemas"]["ResponseSuccess"]) | components["schemas"]["ResponseError"];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
             };
@@ -6206,7 +3651,7 @@ export interface operations {
         };
         requestBody: {
             content: {
-                "application/json": components["schemas"]["Audit_2.Methods.Watcher.ByURL.Get"];
+                "application/json": import('./Audit_2/Methods/Watcher/ByURL/Get.ts').components['schemas']['Audit_2.Methods.Watcher.ByURL.Get'];
             };
         };
         responses: {
@@ -6218,8 +3663,8 @@ export interface operations {
                     "application/json": ({
                         /** Отчет по одному URL */
                         result: unknown;
-                    } & components["schemas"]["ResponseSuccess"] & components["schemas"]["Pagination"]) | components["schemas"]["ResponseError"];
-                    model: components["schemas"]["Models.Watcher.Results"];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: import('./Models/Watcher/Results.ts').components['schemas']['Models.Watcher.Results'];
                 };
             };
         };
@@ -6233,7 +3678,7 @@ export interface operations {
         };
         requestBody: {
             content: {
-                "application/json": components["schemas"]["Audit_2.Methods.Watcher.Checks.Get"];
+                "application/json": import('./Audit_2/Methods/Watcher/Checks/Get.ts').components['schemas']['Audit_2.Methods.Watcher.Checks.Get'];
             };
         };
         responses: {
@@ -6245,7 +3690,7 @@ export interface operations {
                     "application/json": ({
                         /** Список проверок радара */
                         result: (string | number)[];
-                    } & components["schemas"]["ResponseSuccess"]) | components["schemas"]["ResponseError"];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
             };
@@ -6260,7 +3705,7 @@ export interface operations {
         };
         requestBody: {
             content: {
-                "application/json": components["schemas"]["Audit_2.Methods.Watcher.Summary.Get"];
+                "application/json": import('./Audit_2/Methods/Watcher/Summary/Get.ts').components['schemas']['Audit_2.Methods.Watcher.Summary.Get'];
             };
         };
         responses: {
@@ -6272,7 +3717,7 @@ export interface operations {
                     "application/json": ({
                         /** Сводка с количеством изменений по каждому типу проверки */
                         result: (string | number)[];
-                    } & components["schemas"]["ResponseSuccess"]) | components["schemas"]["ResponseError"];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
             };
@@ -6287,7 +3732,7 @@ export interface operations {
         };
         requestBody: {
             content: {
-                "application/json": components["schemas"]["Bank_2.Methods.Referrals.ToBonus.Edit"];
+                "application/json": import('./Bank_2/Methods/Referrals/ToBonus/Edit.ts').components['schemas']['Bank_2.Methods.Referrals.ToBonus.Edit'];
             };
         };
         responses: {
@@ -6298,7 +3743,7 @@ export interface operations {
                 content: {
                     "application/json": ({
                         result: number;
-                    } & components["schemas"]["ResponseSuccess"]) | components["schemas"]["ResponseError"];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
             };
@@ -6313,7 +3758,7 @@ export interface operations {
         };
         requestBody: {
             content: {
-                "application/json": components["schemas"]["Payments_2.Methods.Tariff.DelCard.Edit"];
+                "application/json": import('./Payments_2/Methods/Tariff/DelCard/Edit.ts').components['schemas']['Payments_2.Methods.Tariff.DelCard.Edit'];
             };
         };
         responses: {
@@ -6324,7 +3769,7 @@ export interface operations {
                 content: {
                     "application/json": ({
                         result: number;
-                    } & components["schemas"]["ResponseSuccess"]) | components["schemas"]["ResponseError"];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
             };
@@ -6339,7 +3784,7 @@ export interface operations {
         };
         requestBody: {
             content: {
-                "application/json": components["schemas"]["Payments_2.Methods.Tariff.NextToDiadoc.Edit"];
+                "application/json": import('./Payments_2/Methods/Tariff/NextToDiadoc/Edit.ts').components['schemas']['Payments_2.Methods.Tariff.NextToDiadoc.Edit'];
             };
         };
         responses: {
@@ -6350,7 +3795,7 @@ export interface operations {
                 content: {
                     "application/json": ({
                         result: number;
-                    } & components["schemas"]["ResponseSuccess"]) | components["schemas"]["ResponseError"];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
             };
@@ -6365,7 +3810,7 @@ export interface operations {
         };
         requestBody: {
             content: {
-                "application/json": components["schemas"]["Payments_2.Methods.Tariff.SetNext.Edit"];
+                "application/json": import('./Payments_2/Methods/Tariff/SetNext/Edit.ts').components['schemas']['Payments_2.Methods.Tariff.SetNext.Edit'];
             };
         };
         responses: {
@@ -6376,7 +3821,7 @@ export interface operations {
                 content: {
                     "application/json": ({
                         result: number;
-                    } & components["schemas"]["ResponseSuccess"]) | components["schemas"]["ResponseError"];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
             };
@@ -6391,7 +3836,7 @@ export interface operations {
         };
         requestBody: {
             content: {
-                "application/json": components["schemas"]["Tickets_2.Methods.Admin.Ticket.Edit"];
+                "application/json": import('./Tickets_2/Methods/Admin/Ticket/Edit.ts').components['schemas']['Tickets_2.Methods.Admin.Ticket.Edit'];
             };
         };
         responses: {
@@ -6402,7 +3847,7 @@ export interface operations {
                 content: {
                     "application/json": ({
                         result: number;
-                    } & components["schemas"]["ResponseSuccess"]) | components["schemas"]["ResponseError"];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
             };
@@ -6417,7 +3862,7 @@ export interface operations {
         };
         requestBody: {
             content: {
-                "application/json": components["schemas"]["Tickets_2.Methods.Admin.TicketSplit.Edit"];
+                "application/json": import('./Tickets_2/Methods/Admin/TicketSplit/Edit.ts').components['schemas']['Tickets_2.Methods.Admin.TicketSplit.Edit'];
             };
         };
         responses: {
@@ -6428,7 +3873,7 @@ export interface operations {
                 content: {
                     "application/json": ({
                         result: number;
-                    } & components["schemas"]["ResponseSuccess"]) | components["schemas"]["ResponseError"];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
             };
@@ -6443,7 +3888,7 @@ export interface operations {
         };
         requestBody: {
             content: {
-                "application/json": components["schemas"]["Tickets_2.Methods.Tickets.SetReaded.Edit"];
+                "application/json": import('./Tickets_2/Methods/Tickets/SetReaded/Edit.ts').components['schemas']['Tickets_2.Methods.Tickets.SetReaded.Edit'];
             };
         };
         responses: {
@@ -6454,7 +3899,7 @@ export interface operations {
                 content: {
                     "application/json": ({
                         result: number;
-                    } & components["schemas"]["ResponseSuccess"]) | components["schemas"]["ResponseError"];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
             };
@@ -6469,7 +3914,7 @@ export interface operations {
         };
         requestBody: {
             content: {
-                "application/json": components["schemas"]["Urls_2.Methods.Import.RecognizeLinkSitemapXml.Get"];
+                "application/json": import('./Urls_2/Methods/Import/RecognizeLinkSitemapXml/Get.ts').components['schemas']['Urls_2.Methods.Import.RecognizeLinkSitemapXml.Get'];
             };
         };
         responses: {
@@ -6481,7 +3926,7 @@ export interface operations {
                     "application/json": ({
                         /** URL к карте сайта */
                         result: string;
-                    } & components["schemas"]["ResponseSuccess"]) | components["schemas"]["ResponseError"];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
             };
@@ -6496,7 +3941,7 @@ export interface operations {
         };
         requestBody: {
             content: {
-                "application/json": components["schemas"]["Users_2.Methods.Join.Email.Add"];
+                "application/json": import('./Users_2/Methods/Join/Email/Add.ts').components['schemas']['Users_2.Methods.Join.Email.Add'];
             };
         };
         responses: {
@@ -6508,7 +3953,7 @@ export interface operations {
                     "application/json": ({
                         /** @throws Exception */
                         result: number;
-                    } & components["schemas"]["ResponseSuccess"]) | components["schemas"]["ResponseError"];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
             };
@@ -6523,7 +3968,7 @@ export interface operations {
         };
         requestBody: {
             content: {
-                "application/json": components["schemas"]["Admin_2.Methods.Users.Informer.Subscriptions.Get"];
+                "application/json": import('./Admin_2/Methods/Users/Informer/Subscriptions/Get.ts').components['schemas']['Admin_2.Methods.Users.Informer.Subscriptions.Get'];
             };
         };
         responses: {
@@ -6534,8 +3979,8 @@ export interface operations {
                 content: {
                     "application/json": ({
                         /** Данные для построения графика */
-                        result: components["schemas"]["TV.Objects.Highcharts.Chart"];
-                    } & components["schemas"]["ResponseSuccess"]) | components["schemas"]["ResponseError"];
+                        result: import('./TV/Objects/Highcharts/Chart.ts').components['schemas']['TV.Objects.Highcharts.Chart'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
             };
@@ -6550,7 +3995,7 @@ export interface operations {
         };
         requestBody: {
             content: {
-                "application/json": components["schemas"]["Audit_2.Methods.Audit.Checker.Go.Edit"];
+                "application/json": import('./Audit_2/Methods/Audit/Checker/Go/Edit.ts').components['schemas']['Audit_2.Methods.Audit.Checker.Go.Edit'];
             };
         };
         responses: {
@@ -6563,9 +4008,9 @@ export interface operations {
                         /** @return array{projectIds: int[]}
                          *
                          *     @throws Exception */
-                        result: components["schemas"]["Models.Projects"][];
-                    } & components["schemas"]["ResponseSuccess"]) | components["schemas"]["ResponseError"];
-                    model: components["schemas"]["Models.Projects"];
+                        result: import('./Models/Projects.ts').components['schemas']['Models.Projects'][];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: import('./Models/Projects.ts').components['schemas']['Models.Projects'];
                 };
             };
         };
@@ -6579,7 +4024,7 @@ export interface operations {
         };
         requestBody: {
             content: {
-                "application/json": components["schemas"]["Audit_2.Methods.Audit.Checker.Price.Get"];
+                "application/json": import('./Audit_2/Methods/Audit/Checker/Price/Get.ts').components['schemas']['Audit_2.Methods.Audit.Checker.Price.Get'];
             };
         };
         responses: {
@@ -6604,9 +4049,9 @@ export interface operations {
                          *     ```
                          *
                          *     @throws Exception */
-                        result: components["schemas"]["Models.Projects"][];
-                    } & components["schemas"]["ResponseSuccess"]) | components["schemas"]["ResponseError"];
-                    model: components["schemas"]["Models.Projects"];
+                        result: import('./Models/Projects.ts').components['schemas']['Models.Projects'][];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: import('./Models/Projects.ts').components['schemas']['Models.Projects'];
                 };
             };
         };
@@ -6620,7 +4065,7 @@ export interface operations {
         };
         requestBody: {
             content: {
-                "application/json": components["schemas"]["Audit_2.Methods.Audit.Export.Links.Get"];
+                "application/json": import('./Audit_2/Methods/Audit/Export/Links/Get.ts').components['schemas']['Audit_2.Methods.Audit.Export.Links.Get'];
             };
         };
         responses: {
@@ -6632,7 +4077,7 @@ export interface operations {
                     "application/json": ({
                         /** Короткая гостевая ссылка на просмотр аудита позиций */
                         result: string;
-                    } & components["schemas"]["ResponseSuccess"]) | components["schemas"]["ResponseError"];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
             };
@@ -6647,7 +4092,7 @@ export interface operations {
         };
         requestBody: {
             content: {
-                "application/json": components["schemas"]["Audit_2.Methods.Audit.Export.Summary.Get"];
+                "application/json": import('./Audit_2/Methods/Audit/Export/Summary/Get.ts').components['schemas']['Audit_2.Methods.Audit.Export.Summary.Get'];
             };
         };
         responses: {
@@ -6671,7 +4116,7 @@ export interface operations {
         };
         requestBody: {
             content: {
-                "application/json": components["schemas"]["Audit_2.Methods.Audit.Log.ActualError.Get"];
+                "application/json": import('./Audit_2/Methods/Audit/Log/ActualError/Get.ts').components['schemas']['Audit_2.Methods.Audit.Log.ActualError.Get'];
             };
         };
         responses: {
@@ -6682,8 +4127,8 @@ export interface operations {
                 content: {
                     "application/json": ({
                         /** Вернет null, если ошибки на роботе нет */
-                        result: components["schemas"]["stdClass"];
-                    } & components["schemas"]["ResponseSuccess"]) | components["schemas"]["ResponseError"];
+                        result: import('./stdClass.ts').components['schemas']['stdClass'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
             };
@@ -6698,7 +4143,7 @@ export interface operations {
         };
         requestBody: {
             content: {
-                "application/json": components["schemas"]["Audit_2.Methods.Audit.Log.Chart.Get"];
+                "application/json": import('./Audit_2/Methods/Audit/Log/Chart/Get.ts').components['schemas']['Audit_2.Methods.Audit.Log.Chart.Get'];
             };
         };
         responses: {
@@ -6710,7 +4155,7 @@ export interface operations {
                     "application/json": ({
                         /** Данные для графика */
                         result: (string | number)[];
-                    } & components["schemas"]["ResponseSuccess"] & components["schemas"]["Pagination"]) | components["schemas"]["ResponseError"];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
             };
@@ -6725,7 +4170,7 @@ export interface operations {
         };
         requestBody: {
             content: {
-                "application/json": components["schemas"]["Audit_2.Methods.Audit.Results.Export.Get"];
+                "application/json": import('./Audit_2/Methods/Audit/Results/Export/Get.ts').components['schemas']['Audit_2.Methods.Audit.Results.Export.Get'];
             };
         };
         responses: {
@@ -6737,7 +4182,7 @@ export interface operations {
                     "application/json": ({
                         /** Ответ об успешнности экспорта результатов аудита */
                         result: boolean;
-                    } & components["schemas"]["ResponseSuccess"]) | components["schemas"]["ResponseError"];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
             };
@@ -6752,7 +4197,7 @@ export interface operations {
         };
         requestBody: {
             content: {
-                "application/json": components["schemas"]["Audit_2.Methods.Audit.Results.Page.Get"];
+                "application/json": import('./Audit_2/Methods/Audit/Results/Page/Get.ts').components['schemas']['Audit_2.Methods.Audit.Results.Page.Get'];
             };
         };
         responses: {
@@ -6774,7 +4219,7 @@ export interface operations {
                          *     }
                          *     ``` */
                         result: (string | number)[];
-                    } & components["schemas"]["ResponseSuccess"]) | components["schemas"]["ResponseError"];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
             };
@@ -6789,7 +4234,7 @@ export interface operations {
         };
         requestBody: {
             content: {
-                "application/json": components["schemas"]["Audit_2.Methods.Indexing.Checker.Go.Edit"];
+                "application/json": import('./Audit_2/Methods/Indexing/Checker/Go/Edit.ts').components['schemas']['Audit_2.Methods.Indexing.Checker.Go.Edit'];
             };
         };
         responses: {
@@ -6802,9 +4247,9 @@ export interface operations {
                         /** @return array{projectIds: int[]}
                          *
                          *     @throws Exception */
-                        result: components["schemas"]["Models.Projects"][];
-                    } & components["schemas"]["ResponseSuccess"]) | components["schemas"]["ResponseError"];
-                    model: components["schemas"]["Models.Projects"];
+                        result: import('./Models/Projects.ts').components['schemas']['Models.Projects'][];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: import('./Models/Projects.ts').components['schemas']['Models.Projects'];
                 };
             };
         };
@@ -6818,7 +4263,7 @@ export interface operations {
         };
         requestBody: {
             content: {
-                "application/json": components["schemas"]["Audit_2.Methods.Indexing.Checker.Price.Get"];
+                "application/json": import('./Audit_2/Methods/Indexing/Checker/Price/Get.ts').components['schemas']['Audit_2.Methods.Indexing.Checker.Price.Get'];
             };
         };
         responses: {
@@ -6842,9 +4287,9 @@ export interface operations {
                          *     ```
                          *
                          *     @throws Exception */
-                        result: components["schemas"]["Models.Projects"][];
-                    } & components["schemas"]["ResponseSuccess"]) | components["schemas"]["ResponseError"];
-                    model: components["schemas"]["Models.Projects"];
+                        result: import('./Models/Projects.ts').components['schemas']['Models.Projects'][];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: import('./Models/Projects.ts').components['schemas']['Models.Projects'];
                 };
             };
         };
@@ -6858,7 +4303,7 @@ export interface operations {
         };
         requestBody: {
             content: {
-                "application/json": components["schemas"]["Audit_2.Methods.Indexing.Export.Links.Get"];
+                "application/json": import('./Audit_2/Methods/Indexing/Export/Links/Get.ts').components['schemas']['Audit_2.Methods.Indexing.Export.Links.Get'];
             };
         };
         responses: {
@@ -6870,7 +4315,7 @@ export interface operations {
                     "application/json": ({
                         /** Короткая гостевая ссылка на просмотр индексации */
                         result: string;
-                    } & components["schemas"]["ResponseSuccess"]) | components["schemas"]["ResponseError"];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
             };
@@ -6885,7 +4330,7 @@ export interface operations {
         };
         requestBody: {
             content: {
-                "application/json": components["schemas"]["Audit_2.Methods.Indexing.Export.ToRepository.Get"];
+                "application/json": import('./Audit_2/Methods/Indexing/Export/ToRepository/Get.ts').components['schemas']['Audit_2.Methods.Indexing.Export.ToRepository.Get'];
             };
         };
         responses: {
@@ -6909,7 +4354,7 @@ export interface operations {
         };
         requestBody: {
             content: {
-                "application/json": components["schemas"]["Audit_2.Methods.Indexing.Summary.Chart.Get"];
+                "application/json": import('./Audit_2/Methods/Indexing/Summary/Chart/Get.ts').components['schemas']['Audit_2.Methods.Indexing.Summary.Chart.Get'];
             };
         };
         responses: {
@@ -6921,7 +4366,7 @@ export interface operations {
                     "application/json": ({
                         /** Сводки индексации */
                         result: (string | number)[];
-                    } & components["schemas"]["ResponseSuccess"]) | components["schemas"]["ResponseError"];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
             };
@@ -6936,7 +4381,7 @@ export interface operations {
         };
         requestBody: {
             content: {
-                "application/json": components["schemas"]["Audit_2.Methods.Sitemap.Checker.Go.Edit"];
+                "application/json": import('./Audit_2/Methods/Sitemap/Checker/Go/Edit.ts').components['schemas']['Audit_2.Methods.Sitemap.Checker.Go.Edit'];
             };
         };
         responses: {
@@ -6949,9 +4394,9 @@ export interface operations {
                         /** @return array{projectIds: int[]}
                          *
                          *     @throws Exception */
-                        result: components["schemas"]["Models.Projects"][];
-                    } & components["schemas"]["ResponseSuccess"]) | components["schemas"]["ResponseError"];
-                    model: components["schemas"]["Models.Projects"];
+                        result: import('./Models/Projects.ts').components['schemas']['Models.Projects'][];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: import('./Models/Projects.ts').components['schemas']['Models.Projects'];
                 };
             };
         };
@@ -6965,7 +4410,7 @@ export interface operations {
         };
         requestBody: {
             content: {
-                "application/json": components["schemas"]["Audit_2.Methods.Sitemap.Checker.Price.Get"];
+                "application/json": import('./Audit_2/Methods/Sitemap/Checker/Price/Get.ts').components['schemas']['Audit_2.Methods.Sitemap.Checker.Price.Get'];
             };
         };
         responses: {
@@ -6989,9 +4434,9 @@ export interface operations {
                          *     ```
                          *
                          *     @throws Exception */
-                        result: components["schemas"]["Models.Projects"][];
-                    } & components["schemas"]["ResponseSuccess"]) | components["schemas"]["ResponseError"];
-                    model: components["schemas"]["Models.Projects"];
+                        result: import('./Models/Projects.ts').components['schemas']['Models.Projects'][];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: import('./Models/Projects.ts').components['schemas']['Models.Projects'];
                 };
             };
         };
@@ -7005,7 +4450,7 @@ export interface operations {
         };
         requestBody: {
             content: {
-                "application/json": components["schemas"]["Audit_2.Methods.Watcher.Checker.Go.Edit"];
+                "application/json": import('./Audit_2/Methods/Watcher/Checker/Go/Edit.ts').components['schemas']['Audit_2.Methods.Watcher.Checker.Go.Edit'];
             };
         };
         responses: {
@@ -7018,9 +4463,9 @@ export interface operations {
                         /** @return array{projectIds: int[]}
                          *
                          *     @throws Exception */
-                        result: components["schemas"]["Models.Projects"][];
-                    } & components["schemas"]["ResponseSuccess"]) | components["schemas"]["ResponseError"];
-                    model: components["schemas"]["Models.Projects"];
+                        result: import('./Models/Projects.ts').components['schemas']['Models.Projects'][];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: import('./Models/Projects.ts').components['schemas']['Models.Projects'];
                 };
             };
         };
@@ -7034,7 +4479,7 @@ export interface operations {
         };
         requestBody: {
             content: {
-                "application/json": components["schemas"]["Audit_2.Methods.Watcher.Checker.Price.Get"];
+                "application/json": import('./Audit_2/Methods/Watcher/Checker/Price/Get.ts').components['schemas']['Audit_2.Methods.Watcher.Checker.Price.Get'];
             };
         };
         responses: {
@@ -7058,9 +4503,9 @@ export interface operations {
                          *     ```
                          *
                          *     @throws Exception */
-                        result: components["schemas"]["Models.Projects"][];
-                    } & components["schemas"]["ResponseSuccess"]) | components["schemas"]["ResponseError"];
-                    model: components["schemas"]["Models.Projects"];
+                        result: import('./Models/Projects.ts').components['schemas']['Models.Projects'][];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: import('./Models/Projects.ts').components['schemas']['Models.Projects'];
                 };
             };
         };
@@ -7074,7 +4519,7 @@ export interface operations {
         };
         requestBody: {
             content: {
-                "application/json": components["schemas"]["Audit_2.Methods.Watcher.Export.Links.Get"];
+                "application/json": import('./Audit_2/Methods/Watcher/Export/Links/Get.ts').components['schemas']['Audit_2.Methods.Watcher.Export.Links.Get'];
             };
         };
         responses: {
@@ -7086,7 +4531,7 @@ export interface operations {
                     "application/json": ({
                         /** Короткая ссылка гостевого доступа для просмотра радара */
                         result: string;
-                    } & components["schemas"]["ResponseSuccess"]) | components["schemas"]["ResponseError"];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
             };
@@ -7101,7 +4546,7 @@ export interface operations {
         };
         requestBody: {
             content: {
-                "application/json": components["schemas"]["Audit_2.Methods.Watcher.Summary.Chart.Get"];
+                "application/json": import('./Audit_2/Methods/Watcher/Summary/Chart/Get.ts').components['schemas']['Audit_2.Methods.Watcher.Summary.Chart.Get'];
             };
         };
         responses: {
@@ -7113,7 +4558,7 @@ export interface operations {
                     "application/json": ({
                         /** Сводки с количеством изменений по каждому типу проверки */
                         result: (string | number)[];
-                    } & components["schemas"]["ResponseSuccess"]) | components["schemas"]["ResponseError"];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
             };

@@ -9,26 +9,9 @@ export interface components {
     schemas: {
         /** Пометка тикета как "прочитанный" для автора тикета или админов */
         "Tickets_2.Methods.Tickets.SetReaded.Edit": {
-            filters: components["schemas"]["filters"];
-            id?: components["schemas"]["id"];
+            filters: import('../../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['filters'];
+            id?: import('../../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['id'];
         };
-        /**
-         * Список фильтров по полям объекта
-         * @description {name: string, operator: Field::AVAILABLE_OPERATORS, values: array}
-         *
-         *     Использует поля модели
-         *
-         *     Поля обязатлеьное, если $id не указан
-         *
-         *     @see AbstractMethod::MODEL
-         *     @see Field::AVAILABLE_OPERATORS
-         */
-        filters: (string | number)[];
-        /**
-         * Id объекта, для фильтрации объектов по id
-         * @description Только для моделей с полем id
-         */
-        id: number | null;
     };
     responses: never;
     parameters: never;

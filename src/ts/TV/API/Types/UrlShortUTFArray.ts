@@ -8,18 +8,7 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         /** Тип массива: UrlShortUTF[] */
-        "TV.API.Types.UrlShortUTFArray": components["schemas"]["TV.API.Types.UrlShortUTF"][];
-        /**
-         * Краткий URL не в punycode, может содержать UTF-символы:
-         *     - без схемы
-         *     - без "www." в домене
-         *     - без слешей на конце
-         *     - без "<" и ">"
-         * @description Будет проивзедено автоматическое приведение к формату
-         *
-         *     Разрешен ввод строй строки, для удаления значения url
-         */
-        "TV.API.Types.UrlShortUTF": string;
+        "TV.API.Types.UrlShortUTFArray": import('./UrlShortUTF.ts').components['schemas']['TV.API.Types.UrlShortUTF'][];
     };
     responses: never;
     parameters: never;
