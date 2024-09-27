@@ -11,6 +11,20 @@ export interface components {
             /** @constant */
             Suggestions_tool?: "Search Suggestions Tool";
             /** @constant */
+            Rank_and_SERP_top_cheking?: "Rank and SERP Top checking";
+            /** @constant */
+            Semantics?: "Semantics";
+            /** @constant */
+            Technical_SEO?: "Technical SEO";
+            /** @constant */
+            Miscellaneous?: "Miscellaneous";
+            /** @constant */
+            About_us?: "About us";
+            /** @constant */
+            Resources?: "Resources";
+            /** @constant */
+            Questions?: "Got any questions?";
+            /** @constant */
             Grouping_tool?: "Keyword Grouping Tool";
             /** @constant */
             Research_tool?: "Keyword Research Tool";
@@ -55,13 +69,15 @@ export interface components {
             /** @constant */
             Help_center?: "Help Center";
             /** @constant */
-            Join_facebook?: "Join us on Facebook";
+            Chat?: "Live Chat";
             /** @constant */
             Join_vkontakte?: "Join us on Vkontakte";
             /** @constant */
             Join_twitter?: "Follow us on Twitter";
             /** @constant */
             Join_telegram?: "Telegram channel";
+            /** @constant */
+            Join_youtube?: "Youtube channel";
             /** @constant */
             Website_rank_tracker?: "Rank Tracker Tool";
             /** @constant */
@@ -73,9 +89,9 @@ export interface components {
             /** @constant */
             Privacy_policy?: "Privacy Policy";
             /** @constant */
-            Chrome_extension?: "Chrome extension";
+            Chrome_extension?: "Search results numbering extension for Google Chrome";
             /** @constant */
-            Firefox_extension?: "Firefox extension";
+            Firefox_extension?: "Search results numbering extension for Firefox";
             /** @constant */
             Safari_extension?: "Safari extension";
             /** @constant */
@@ -109,7 +125,7 @@ export interface components {
             /** @constant */
             Mincom_accreditation?: "Certified by Ministry of Communications of Russia";
             /** @constant */
-            Best_friends?: "Friends";
+            Friends?: "Our Friends";
             /** @constant */
             Trademark?: "Trademark";
             /** @constant */
@@ -121,37 +137,15 @@ export interface components {
             /** @constant */
             Referral_agreement?: "Affiliate offer agreement";
             /** @constant */
-            We_make_life_of_easier_slogan?: "We make lives of SEO specialists, website owners and digital marketers easier.";
-            /** @constant */
             Delegate_us_routine_slogan?: "Delegate us all routine and enjoy your job!";
             /** @constant */
-            Social_links?: "Social links";
-            /** @constant */
-            Extension_search_results_numbering?: "Search results numbering extension";
+            Social_links?: "Follow us";
             /** @constant */
             Add_numbers_search_results?: "Numerate listings right on<br> the search results page";
             /** @constant */
             Install_for?: "Install for";
             /** @constant */
             Email_us_contact?: "We are eager to help! Email us";
-            /** @constant */
-            Or_call_us?: "Or call us";
-            /** @constant */
-            Projects_at_hand?: "Your projects are always at hand";
-            /** @constant */
-            Company_details?: "Company details";
-            /** @constant */
-            All_about_us?: "All about us";
-            /** @constant */
-            Payment_methods_we_accept?: "Available methods of payment";
-            /** @constant */
-            Basic_tools?: "Basic tools";
-            /** @constant */
-            Free?: "Free";
-            /** @constant */
-            Additional?: "Additional";
-            /** @constant */
-            Questions?: "Questions";
         };
     };
     responses: never;

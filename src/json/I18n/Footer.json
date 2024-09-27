@@ -13,6 +13,27 @@
                     "Suggestions_tool": {
                         "const": "Search Suggestions Tool"
                     },
+                    "Rank_and_SERP_top_cheking": {
+                        "const": "Rank and SERP Top checking"
+                    },
+                    "Semantics": {
+                        "const": "Semantics"
+                    },
+                    "Technical_SEO": {
+                        "const": "Technical SEO"
+                    },
+                    "Miscellaneous": {
+                        "const": "Miscellaneous"
+                    },
+                    "About_us": {
+                        "const": "About us"
+                    },
+                    "Resources": {
+                        "const": "Resources"
+                    },
+                    "Questions": {
+                        "const": "Got any questions?"
+                    },
                     "Grouping_tool": {
                         "const": "Keyword Grouping Tool"
                     },
@@ -79,8 +100,8 @@
                     "Help_center": {
                         "const": "Help Center"
                     },
-                    "Join_facebook": {
-                        "const": "Join us on Facebook"
+                    "Chat": {
+                        "const": "Live Chat"
                     },
                     "Join_vkontakte": {
                         "const": "Join us on Vkontakte"
@@ -90,6 +111,9 @@
                     },
                     "Join_telegram": {
                         "const": "Telegram channel"
+                    },
+                    "Join_youtube": {
+                        "const": "Youtube channel"
                     },
                     "Website_rank_tracker": {
                         "const": "Rank Tracker Tool"
@@ -107,10 +131,10 @@
                         "const": "Privacy Policy"
                     },
                     "Chrome_extension": {
-                        "const": "Chrome extension"
+                        "const": "Search results numbering extension for Google Chrome"
                     },
                     "Firefox_extension": {
-                        "const": "Firefox extension"
+                        "const": "Search results numbering extension for Firefox"
                     },
                     "Safari_extension": {
                         "const": "Safari extension"
@@ -160,8 +184,8 @@
                     "Mincom_accreditation": {
                         "const": "Certified by Ministry of Communications of Russia"
                     },
-                    "Best_friends": {
-                        "const": "Friends"
+                    "Friends": {
+                        "const": "Our Friends"
                     },
                     "Trademark": {
                         "const": "Trademark"
@@ -178,17 +202,11 @@
                     "Referral_agreement": {
                         "const": "Affiliate offer agreement"
                     },
-                    "We_make_life_of_easier_slogan": {
-                        "const": "We make lives of SEO specialists, website owners and digital marketers easier."
-                    },
                     "Delegate_us_routine_slogan": {
                         "const": "Delegate us all routine and enjoy your job!"
                     },
                     "Social_links": {
-                        "const": "Social links"
-                    },
-                    "Extension_search_results_numbering": {
-                        "const": "Search results numbering extension"
+                        "const": "Follow us"
                     },
                     "Add_numbers_search_results": {
                         "const": "Numerate listings right on<br> the search results page"
@@ -198,33 +216,6 @@
                     },
                     "Email_us_contact": {
                         "const": "We are eager to help! Email us"
-                    },
-                    "Or_call_us": {
-                        "const": "Or call us"
-                    },
-                    "Projects_at_hand": {
-                        "const": "Your projects are always at hand"
-                    },
-                    "Company_details": {
-                        "const": "Company details"
-                    },
-                    "All_about_us": {
-                        "const": "All about us"
-                    },
-                    "Payment_methods_we_accept": {
-                        "const": "Available methods of payment"
-                    },
-                    "Basic_tools": {
-                        "const": "Basic tools"
-                    },
-                    "Free": {
-                        "const": "Free"
-                    },
-                    "Additional": {
-                        "const": "Additional"
-                    },
-                    "Questions": {
-                        "const": "Questions"
                     }
                 },
                 "required": []
