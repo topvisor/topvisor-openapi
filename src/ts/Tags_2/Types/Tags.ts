@@ -13,7 +13,12 @@ export interface components {
          *
          *     @see Tags_2\Types\Tag
          */
-        "Tags_2.Types.Tags": import('./Tag.ts').components['schemas']['Tags_2.Types.Tag'][];
+        "Tags_2.Types.Tags": components["schemas"]["Tags_2.Types.Tag"][];
+        /**
+         * Доступные теги
+         * @enum {string}
+         */
+        "Tags_2.Types.Tag": "1" | "2" | "3" | "4" | "5" | "6" | "7" | "8" | "9" | "10" | "11" | "12" | "13" | "14" | "15" | "16" | "17" | "18" | "19" | "20";
     };
     responses: never;
     parameters: never;

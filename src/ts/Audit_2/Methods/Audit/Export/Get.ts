@@ -9,13 +9,33 @@ export interface components {
     schemas: {
         /** Экспорт результатов проверки файла */
         "Audit_2.Methods.Audit.Export.Get": {
-            target_type: import('../../../Types/Audit/TargetType.ts').components['schemas']['Audit_2.Types.Audit.TargetType'];
+            target_type: components["schemas"]["Audit_2.Types.Audit.TargetType"];
             /** Формат экспортируемого файла */
-            output: import('../../../../TV/API/Types/ExportFormat.ts').components['schemas']['TV.API.Types.ExportFormat'];
-            project_id: import('../../../../TV/API/Params/ProjectIdTrait.ts').components['schemas']['TV.API.Params.ProjectIdTrait']['project_id'];
-            fields: import('../../../../TV/API/Params/FieldsTrait.ts').components['schemas']['TV.API.Params.FieldsTrait']['fields'];
-            check_id: import('../../../Params/Audit/CheckIdTrait.ts').components['schemas']['Audit_2.Params.Audit.CheckIdTrait']['check_id'];
+            output: components["schemas"]["TV.API.Types.ExportFormat"];
+            project_id: components["schemas"]["project_id"];
+            fields: components["schemas"]["fields"];
+            check_id: components["schemas"]["check_id"];
         };
+        /**
+         * Тип очтета аудита
+         * @enum {string}
+         */
+        "Audit_2.Types.Audit.TargetType": "pages" | "links" | "images" | "js" | "css";
+        /** @enum {string} */
+        "TV.API.Types.ExportFormat": "csv" | "xlsx";
+        /** ID проекта */
+        project_id: number;
+        /**
+         * Список полей объекта, которые надо вернуть в результате
+         * @description Если запрос поддерижвает параметр fetch_style, формат ответа может быть разным, fields будет влиять на содержание данных в этом ответе
+         *
+         *     Использует поля модели
+         *
+         *     @see AbstractMethod::MODEL
+         */
+        fields: (string | number)[];
+        /** ID проверки аудита */
+        check_id: number;
     };
     responses: never;
     parameters: never;

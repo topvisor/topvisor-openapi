@@ -9,12 +9,48 @@ export interface components {
     schemas: {
         /** Изменение тегов */
         "Urls_2.Methods.Tags.Edit": {
-            tags: import('../../../Tags_2/Types/Tags.ts').components['schemas']['Tags_2.Types.Tags'];
-            action: import('../../Types/Tags/Action.ts').components['schemas']['Urls_2.Types.Tags.Action'];
-            filters: import('../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['filters'];
-            id?: import('../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['id'];
-            project_id: import('../../../TV/API/Params/ProjectIdTrait.ts').components['schemas']['TV.API.Params.ProjectIdTrait']['project_id'];
+            tags: components["schemas"]["Tags_2.Types.Tags"];
+            action: components["schemas"]["Urls_2.Types.Tags.Action"];
+            filters: components["schemas"]["filters"];
+            id?: components["schemas"]["id"];
+            project_id: components["schemas"]["project_id"];
         };
+        /**
+         * Доступные теги
+         * @enum {string}
+         */
+        "Tags_2.Types.Tag": "1" | "2" | "3" | "4" | "5" | "6" | "7" | "8" | "9" | "10" | "11" | "12" | "13" | "14" | "15" | "16" | "17" | "18" | "19" | "20";
+        /**
+         * Массив номеров тегов
+         * @description Тип массива Tags[]
+         *
+         *     @see Tags_2\Types\Tag
+         */
+        "Tags_2.Types.Tags": components["schemas"]["Tags_2.Types.Tag"][];
+        /**
+         * Способ установки тегов
+         * @enum {string}
+         */
+        "Urls_2.Types.Tags.Action": "set" | "add" | "remove";
+        /**
+         * Список фильтров по полям объекта
+         * @description {name: string, operator: Field::AVAILABLE_OPERATORS, values: array}
+         *
+         *     Использует поля модели
+         *
+         *     Поля обязатлеьное, если $id не указан
+         *
+         *     @see AbstractMethod::MODEL
+         *     @see Field::AVAILABLE_OPERATORS
+         */
+        filters: (string | number)[];
+        /**
+         * Id объекта, для фильтрации объектов по id
+         * @description Только для моделей с полем id
+         */
+        id: number | null;
+        /** ID проекта */
+        project_id: number;
     };
     responses: never;
     parameters: never;

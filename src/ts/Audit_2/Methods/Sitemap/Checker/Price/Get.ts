@@ -14,8 +14,13 @@ export interface components {
              * @default 1
              */
             apply_discount: number;
-            max_pages: import('../../../../Types/Sitemap/MaxPages.ts').components['schemas']['Audit_2.Types.Sitemap.MaxPages'];
+            max_pages: components["schemas"]["Audit_2.Types.Sitemap.MaxPages"];
         };
+        /**
+         * Максимальное количество страниц для генерации карты сайта
+         * @enum {string}
+         */
+        "Audit_2.Types.Sitemap.MaxPages": "100" | "1000" | "10000" | "100000" | "150000" | "300000";
     };
     responses: never;
     parameters: never;

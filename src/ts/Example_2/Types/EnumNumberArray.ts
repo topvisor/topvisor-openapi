@@ -13,7 +13,9 @@ export interface components {
          *
          *     Хранит: false|true
          */
-        "Example_2.Types.EnumNumberArray": import('./Number.ts').components['schemas']['Example_2.Types.Number'][];
+        "Example_2.Types.EnumNumberArray": components["schemas"]["Example_2.Types.Number"][];
+        /** @enum {integer} */
+        "Example_2.Types.Number": 1 | 2 | 3;
     };
     responses: never;
     parameters: never;

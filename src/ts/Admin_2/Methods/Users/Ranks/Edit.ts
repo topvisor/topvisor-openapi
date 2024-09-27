@@ -11,7 +11,7 @@ export interface components {
         "Admin_2.Methods.Users.Ranks.Edit": {
             id: number;
             name_id?: string | null;
-            category?: import('../../../Types/Users/Ranks/Category.ts').components['schemas']['Admin_2.Types.Users.Ranks.Category'] | null;
+            category?: components["schemas"]["Admin_2.Types.Users.Ranks.Category"] | null;
             name_ru?: string | null;
             name_en?: string | null;
             descr_ru?: string | null;
@@ -32,6 +32,8 @@ export interface components {
             color?: string | null;
             always_visible?: boolean | null;
         };
+        /** @enum {string} */
+        "Admin_2.Types.Users.Ranks.Category": "" | "journal";
     };
     responses: never;
     parameters: never;

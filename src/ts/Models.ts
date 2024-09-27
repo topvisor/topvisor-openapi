@@ -7,62 +7,1567 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        "Models.Annotations": import('./Models/Annotations.ts').components['schemas']['Models.Annotations'];
-        "Models.BalanceHistory": import('./Models/BalanceHistory.ts').components['schemas']['Models.BalanceHistory'];
-        "Models.Comments": import('./Models/Comments.ts').components['schemas']['Models.Comments'];
-        "Models.ContentsRedirects": import('./Models/ContentsRedirects.ts').components['schemas']['Models.ContentsRedirects'];
-        "Models.CronCommands": import('./Models/CronCommands.ts').components['schemas']['Models.CronCommands'];
-        "Models.EmptyModel": import('./Models/EmptyModel.ts').components['schemas']['Models.EmptyModel'];
-        "Models.Folders": import('./Models/Folders.ts').components['schemas']['Models.Folders'];
-        "Models.Groups": import('./Models/Groups.ts').components['schemas']['Models.Groups'];
-        "Models.Keywords": import('./Models/Keywords.ts').components['schemas']['Models.Keywords'];
-        "Models.Magnet": import('./Models/Magnet.ts').components['schemas']['Models.Magnet'];
-        "Models.Model": import('./Models/Model.ts').components['schemas']['Models.Model'];
-        "Models.Pages": import('./Models/Pages.ts').components['schemas']['Models.Pages'];
-        "Models.Payments": import('./Models/Payments.ts').components['schemas']['Models.Payments'];
-        "Models.Projects": import('./Models/Projects.ts').components['schemas']['Models.Projects'];
-        "Models.Quizes": import('./Models/Quizes.ts').components['schemas']['Models.Quizes'];
-        "Models.Requisites": import('./Models/Requisites.ts').components['schemas']['Models.Requisites'];
-        "Models.ShortLink": import('./Models/ShortLink.ts').components['schemas']['Models.ShortLink'];
-        "Models.Tickets": import('./Models/Tickets.ts').components['schemas']['Models.Tickets'];
-        "Models.Urls": import('./Models/Urls.ts').components['schemas']['Models.Urls'];
-        "Models.Votes": import('./Models/Votes.ts').components['schemas']['Models.Votes'];
-        "Models.Admin.Invoices": import('./Models/Admin/Invoices.ts').components['schemas']['Models.Admin.Invoices'];
-        "Models.Admin.Staff": import('./Models/Admin/Staff.ts').components['schemas']['Models.Admin.Staff'];
-        "Models.Admin.Users": import('./Models/Admin/Users.ts').components['schemas']['Models.Admin.Users'];
-        "Models.Analytics.Events": import('./Models/Analytics/Events.ts').components['schemas']['Models.Analytics.Events'];
-        "Models.Analytics.Ranks": import('./Models/Analytics/Ranks.ts').components['schemas']['Models.Analytics.Ranks'];
-        "Models.Analytics.RanksUsers": import('./Models/Analytics/RanksUsers.ts').components['schemas']['Models.Analytics.RanksUsers'];
-        "Models.Audit.Checks": import('./Models/Audit/Checks.ts').components['schemas']['Models.Audit.Checks'];
-        "Models.Audit.Css": import('./Models/Audit/Css.ts').components['schemas']['Models.Audit.Css'];
-        "Models.Audit.Images": import('./Models/Audit/Images.ts').components['schemas']['Models.Audit.Images'];
-        "Models.Audit.Js": import('./Models/Audit/Js.ts').components['schemas']['Models.Audit.Js'];
-        "Models.Audit.Links": import('./Models/Audit/Links.ts').components['schemas']['Models.Audit.Links'];
-        "Models.Audit.Pages": import('./Models/Audit/Pages.ts').components['schemas']['Models.Audit.Pages'];
-        "Models.Broker.Ads": import('./Models/Broker/Ads.ts').components['schemas']['Models.Broker.Ads'];
-        "Models.Broker.Campaigns": import('./Models/Broker/Campaigns.ts').components['schemas']['Models.Broker.Campaigns'];
-        "Models.Broker.Groups": import('./Models/Broker/Groups.ts').components['schemas']['Models.Broker.Groups'];
-        "Models.Broker.Keywords": import('./Models/Broker/Keywords.ts').components['schemas']['Models.Broker.Keywords'];
-        "Models.Broker.Log": import('./Models/Broker/Log.ts').components['schemas']['Models.Broker.Log'];
-        "Models.Competitors.Domains": import('./Models/Competitors/Domains.ts').components['schemas']['Models.Competitors.Domains'];
-        "Models.Competitors.Keywords": import('./Models/Competitors/Keywords.ts').components['schemas']['Models.Competitors.Keywords'];
-        "Models.Competitors.Urls": import('./Models/Competitors/Urls.ts').components['schemas']['Models.Competitors.Urls'];
-        "Models.Competitors.Wordstat": import('./Models/Competitors/Wordstat.ts').components['schemas']['Models.Competitors.Wordstat'];
-        "Models.Content.Authors": import('./Models/Content/Authors.ts').components['schemas']['Models.Content.Authors'];
-        "Models.Magnet.Ganalytics": import('./Models/Magnet/Ganalytics.ts').components['schemas']['Models.Magnet.Ganalytics'];
-        "Models.Magnet.Gsc": import('./Models/Magnet/Gsc.ts').components['schemas']['Models.Magnet.Gsc'];
-        "Models.Magnet.Metrika": import('./Models/Magnet/Metrika.ts').components['schemas']['Models.Magnet.Metrika'];
-        "Models.Magnet.Webmaster": import('./Models/Magnet/Webmaster.ts').components['schemas']['Models.Magnet.Webmaster'];
-        "Models.Mentions.Mentions": import('./Models/Mentions/Mentions.ts').components['schemas']['Models.Mentions.Mentions'];
-        "Models.Mentions.Rules": import('./Models/Mentions/Rules.ts').components['schemas']['Models.Mentions.Rules'];
-        "Models.Mentions.Searchers": import('./Models/Mentions/Searchers.ts').components['schemas']['Models.Mentions.Searchers'];
-        "Models.Quizes.Questions": import('./Models/Quizes/Questions.ts').components['schemas']['Models.Quizes.Questions'];
-        "Models.Users.Ranks": import('./Models/Users/Ranks.ts').components['schemas']['Models.Users.Ranks'];
-        "Models.Users.Referrals": import('./Models/Users/Referrals.ts').components['schemas']['Models.Users.Referrals'];
-        "Models.Users.Verif": import('./Models/Users/Verif.ts').components['schemas']['Models.Users.Verif'];
-        "Models.Watcher.Results": import('./Models/Watcher/Results.ts').components['schemas']['Models.Watcher.Results'];
-        "Models.Admin.Accounting.Counteragents": import('./Models/Admin/Accounting/Counteragents.ts').components['schemas']['Models.Admin.Accounting.Counteragents'];
-        "Models.Admin.Users.Ranks": import('./Models/Admin/Users/Ranks.ts').components['schemas']['Models.Admin.Users.Ranks'];
+        "Models.Annotations": {
+            id?: unknown;
+            user_id?: unknown;
+            project_id?: unknown;
+            service?: unknown;
+            target_id?: unknown;
+            text?: unknown;
+            create_time?: unknown;
+        };
+        "Models.BalanceHistory": {
+            "COUNT(*)"?: unknown;
+            "TOTAL()"?: unknown;
+            currency?: unknown;
+            plus?: unknown;
+            sum_group?: unknown;
+            user_id?: number | null;
+            by_user_id?: unknown;
+            sum?: unknown;
+            type?: unknown;
+            info?: unknown;
+            target?: unknown;
+            target_id?: number | null;
+            date?: unknown;
+            project_name?: unknown;
+            project_tags?: unknown;
+            project_folder_id?: unknown;
+            by_user_email?: unknown;
+        };
+        "Models.Comments": {
+            id?: unknown;
+            site?: unknown;
+            subdomain?: unknown;
+            page_url?: unknown;
+            reply_id?: unknown;
+            user_id?: unknown;
+            time?: unknown;
+            text?: unknown;
+            count_likes?: unknown;
+            status?: unknown;
+            user_name?: unknown;
+            user_avatar?: unknown;
+            like?: unknown;
+        };
+        "Models.ContentsRedirects": {
+            "PATH_MASK()"?: unknown;
+            "PATH_MASK_SLASHES_COUNT()"?: unknown;
+            site?: unknown;
+            subdomain?: unknown;
+            redirect_subdomain?: unknown;
+            redirect_path?: unknown;
+        };
+        "Models.CronCommands": {
+            "SERVICE()"?: unknown;
+            command?: string | null;
+            description?: string | null;
+            days?: string | null;
+            hh?: string | null;
+            i?: string | null;
+            on?: number | null;
+            task_create_time?: unknown;
+            task_start_time?: unknown;
+            task_status?: string | null;
+        };
+        "Models.EmptyModel": unknown;
+        "Models.Folders": {
+            "COUNT(*)"?: unknown;
+            id?: unknown;
+            project_id?: unknown;
+            parent_id?: unknown;
+            name?: unknown;
+            count_folders?: unknown;
+            count_groups?: unknown;
+            count_groups_active?: unknown;
+            ord?: unknown;
+            path?: unknown;
+            ord_path?: unknown;
+        };
+        "Models.Groups": {
+            "COUNT(*)"?: unknown;
+            id?: unknown;
+            project_id?: unknown;
+            folder_id?: unknown;
+            name?: unknown;
+            on?: unknown;
+            status?: unknown;
+            ord?: unknown;
+            folder_path?: unknown;
+            folder_ord?: unknown;
+            count_keywords?: unknown;
+            /** @example {
+             *       "need set qualifiers": [
+             *         "region_key",
+             *         "searcher_key",
+             *         "type"
+             *       ]
+             *     } */
+            volume?: unknown;
+            /** @example {
+             *       "need set qualifiers": [
+             *         "date",
+             *         "project_id",
+             *         "region_index"
+             *       ]
+             *     } */
+            "POSITIONS_AVG()"?: unknown;
+            /** @example {
+             *       "need set qualifiers": [
+             *         "date",
+             *         "project_id",
+             *         "region_index"
+             *       ]
+             *     } */
+            "POSITIONS_TOP10()"?: unknown;
+            /** @example {
+             *       "need set qualifiers": [
+             *         "date",
+             *         "project_id",
+             *         "region_index"
+             *       ]
+             *     } */
+            "POSITIONS_VISIBILITY()"?: unknown;
+        };
+        "Models.Keywords": {
+            "COUNT(*)"?: unknown;
+            "LENGTH(name)"?: unknown;
+            "tagsNames()"?: unknown;
+            id?: unknown;
+            phrase_id?: unknown;
+            project_id?: unknown;
+            group_id?: unknown;
+            tags?: unknown;
+            target?: unknown;
+            ord?: unknown;
+            name?: unknown;
+            group_name?: unknown;
+            group_on?: unknown;
+            group_ord?: unknown;
+            group_folder_id?: unknown;
+            group_folder_path?: unknown;
+            group_folder_ord?: unknown;
+            /** @example {
+             *       "need set qualifiers": [
+             *         "region_index"
+             *       ]
+             *     } */
+            target_status?: unknown;
+            /** @example {
+             *       "need set qualifiers": [
+             *         "date",
+             *         "project_id",
+             *         "region_index"
+             *       ]
+             *     } */
+            position?: number | null;
+            /** @example {
+             *       "need set qualifiers": [
+             *         "date",
+             *         "project_id",
+             *         "region_index"
+             *       ]
+             *     } */
+            relevant_url?: string | null;
+            /** @example {
+             *       "need set qualifiers": [
+             *         "date",
+             *         "project_id",
+             *         "region_index"
+             *       ]
+             *     } */
+            snippet_title?: string | null;
+            /** @example {
+             *       "need set qualifiers": [
+             *         "date",
+             *         "project_id",
+             *         "region_index"
+             *       ]
+             *     } */
+            snippet_body?: string | null;
+            /** @example {
+             *       "need set qualifiers": [
+             *         "date",
+             *         "project_id",
+             *         "region_index"
+             *       ]
+             *     } */
+            snippet_ext?: string | null;
+            /** @example {
+             *       "need set qualifiers": [
+             *         "date",
+             *         "project_id",
+             *         "region_index"
+             *       ]
+             *     } */
+            visitors?: number | null;
+            /** @example {
+             *       "need set qualifiers": [
+             *         "region_index"
+             *       ]
+             *     } */
+            positionStatus?: unknown;
+            /** @example {
+             *       "need set qualifiers": [
+             *         "region_key",
+             *         "searcher_key",
+             *         "type"
+             *       ]
+             *     } */
+            volume?: unknown;
+            /** @example {
+             *       "need set qualifiers": [
+             *         "position",
+             *         "region_key",
+             *         "searcher_key"
+             *       ]
+             *     } */
+            cost_forecast?: unknown;
+        };
+        "Models.Magnet": unknown;
+        "Models.Model": unknown;
+        "Models.Pages": {
+            "COUNT(*)"?: unknown;
+            "RAND()"?: unknown;
+            "DURATION()"?: unknown;
+            "WORD_COUNT()"?: unknown;
+            "HTML_RAW()"?: unknown;
+            "AUTHOR_LIKES()"?: unknown;
+            "AUTHOR_VIEWS()"?: unknown;
+            "AUTHOR_UNIQUE_VIEWS()"?: unknown;
+            site?: unknown;
+            subdomain?: unknown;
+            url?: unknown;
+            lang?: unknown;
+            parent_url?: unknown;
+            user_id?: unknown;
+            create?: unknown;
+            publish_time?: unknown;
+            noindex?: unknown;
+            theme?: unknown;
+            quiz_id?: unknown;
+            state?: unknown;
+            required_posts_any?: unknown;
+            h1?: unknown;
+            title?: unknown;
+            description?: unknown;
+            intro?: unknown;
+            html?: unknown;
+            text?: unknown;
+            menu_name?: unknown;
+            order?: unknown;
+            image?: unknown;
+            og_json?: unknown;
+            og?: unknown;
+            tags?: unknown;
+            count_views?: unknown;
+            count_unique_views?: unknown;
+            count_comments?: unknown;
+            count_likes?: unknown;
+            rubric_name?: unknown;
+            user_name?: unknown;
+            user_avatar?: unknown;
+            user_description?: unknown;
+            author_alias?: unknown;
+            author_promo_text?: unknown;
+            author_promo_label?: unknown;
+            author_promo_link?: unknown;
+            view?: unknown;
+            like?: unknown;
+            bookmark?: unknown;
+            bookmark_author?: unknown;
+        };
+        "Models.Payments": {
+            "COUNT(*)"?: unknown;
+            "HAS_DOC()"?: unknown;
+            id?: unknown;
+            external_id?: unknown;
+            user_id?: unknown;
+            system?: unknown;
+            requisites_id?: unknown;
+            data?: unknown;
+            sum?: unknown;
+            currency?: unknown;
+            status?: unknown;
+            recurrent_type?: unknown;
+            tariff_id?: unknown;
+            tariff_count_month?: unknown;
+            date?: unknown;
+            date_month?: unknown;
+            date_finished?: unknown;
+            date_month_finished?: unknown;
+            fromBase64Data?: unknown;
+        };
+        "Models.Projects": {
+            "COUNT(*)"?: unknown;
+            "IS_YOUTUBE()"?: unknown;
+            "IS_APP_STORE()"?: unknown;
+            "IS_GOOGLE_PLAY()"?: unknown;
+            "GEN_SEARCH_STRING()"?: unknown;
+            id?: unknown;
+            user_id?: unknown;
+            name?: string | null;
+            url?: unknown;
+            date?: unknown;
+            last_view?: unknown;
+            folder_id?: number | null;
+            folder_name?: unknown;
+            site?: unknown;
+            update?: unknown;
+            status_positions?: string | null;
+            positions_time?: unknown;
+            positions_date?: unknown;
+            positions_percent?: unknown;
+            status_positions_time?: unknown;
+            status_positions_date?: unknown;
+            status_positions_percent?: unknown;
+            status_positions_by_keywords?: unknown;
+            status_volumes?: unknown;
+            status_claster?: unknown;
+            status_audit?: unknown;
+            status_audit_time?: unknown;
+            status_audit_percent?: unknown;
+            status_watcher?: unknown;
+            status_watcher_percent?: unknown;
+            status_indexing?: unknown;
+            status_indexing_percent?: unknown;
+            status_sitemap?: unknown;
+            status_sitemap_percent?: unknown;
+            status_urlsUpdater?: unknown;
+            on?: unknown;
+            subdomains?: unknown;
+            filter?: unknown;
+            auto_correct?: unknown;
+            with_snippets?: unknown;
+            do_snapshots?: unknown;
+            do_snapshots_with_snippets?: unknown;
+            report_last_time?: unknown;
+            common_traffic?: unknown;
+            guest_link_right?: unknown;
+            count_keywords?: unknown;
+            right?: unknown;
+            ord?: unknown;
+            favorite?: unknown;
+            tags?: unknown;
+            user_email?: unknown;
+            user_currency?: unknown;
+            broker_count_campaigns?: unknown;
+            broker_count_banners?: unknown;
+            broker_count_banners_off?: unknown;
+            domain_expire?: unknown;
+            ssl_expire?: unknown;
+            competitor?: unknown;
+            competitor_ord?: unknown;
+            pos_summary_up?: unknown;
+            pos_summary_stay?: unknown;
+            pos_summary_down?: unknown;
+            pos_summary_avg?: unknown;
+            pos_summary_visibility?: unknown;
+        };
+        "Models.Quizes": {
+            "AVAILABLE_RESET()"?: unknown;
+            id?: unknown;
+            user_id?: unknown;
+            name?: unknown;
+            text?: unknown;
+            count_questions?: unknown;
+            total_score?: unknown;
+            min_score?: unknown;
+            available_reset_second?: unknown;
+            status?: unknown;
+            count_questions_is_passed?: unknown;
+            score?: unknown;
+            is_passed?: unknown;
+            update?: unknown;
+            is_finished?: unknown;
+            is_passed_earlier?: unknown;
+        };
+        "Models.Requisites": {
+            "LABEL()"?: unknown;
+            id?: unknown;
+            user_id?: unknown;
+            country?: unknown;
+            contract_date?: unknown;
+            contract_type?: unknown;
+            contract_balance?: unknown;
+            contract_tariff_id?: unknown;
+            data?: unknown;
+            signed?: unknown;
+            deleted?: unknown;
+            edc_connected?: unknown;
+            fromBase64Data?: unknown;
+        };
+        "Models.ShortLink": {
+            "COUNT(*)"?: unknown;
+            "GEN_SEARCH_STRING()"?: unknown;
+            short_link?: unknown;
+            link?: unknown;
+            user_id?: unknown;
+            create?: unknown;
+            title?: unknown;
+            favorite?: unknown;
+            deleted?: unknown;
+            hash?: unknown;
+            count?: unknown;
+            secret?: unknown;
+            ban?: unknown;
+            tags?: unknown;
+        };
+        "Models.Tickets": {
+            "REQUISITES()"?: unknown;
+            "LAST_MESSAGE_TEXT()"?: unknown;
+            "LAST_MESSAGE_USER_ID()"?: unknown;
+            "READED(0)"?: unknown;
+            "READED(1)"?: unknown;
+            id?: unknown;
+            user_id?: unknown;
+            social_user_id?: unknown;
+            type?: unknown;
+            text?: unknown;
+            create?: unknown;
+            time?: unknown;
+            status?: unknown;
+            lang?: unknown;
+            email?: unknown;
+            user_data?: unknown;
+            manager_id?: unknown;
+            owner_readed?: unknown;
+            answerer_readed?: unknown;
+            admin_writing?: unknown;
+            task_id?: unknown;
+            tags?: unknown;
+            rate?: unknown;
+            rate_comment?: unknown;
+            rate_time?: unknown;
+            admin_comment?: unknown;
+            "VS_USER_IS_ONLINE()"?: unknown;
+            vs_user_name?: unknown;
+            vs_user_email?: unknown;
+            vs_user_avatar?: unknown;
+            vs_user_lastactive?: unknown;
+            social_nickname?: unknown;
+            social_network?: unknown;
+            social_last_message_time?: unknown;
+            social_name?: unknown;
+            social_type?: unknown;
+            social_post_id?: unknown;
+            social_reply_to_id?: unknown;
+            message_id?: unknown;
+            message_user_id?: unknown;
+            message_text?: unknown;
+            message_data?: unknown;
+            message_files?: unknown;
+            message_time?: unknown;
+            message_noticed?: unknown;
+        };
+        "Models.Urls": {
+            "COUNT(*)"?: unknown;
+            /** @example {
+             *       "need set qualifiers": [
+             *         "check_id"
+             *       ]
+             *     } */
+            "WATCHER_HTTP_CODES_HUNDREDS()"?: (string | number)[] | null;
+            id?: number;
+            url?: string | null;
+            project_id?: number | null;
+            sitemap?: unknown;
+            audit?: unknown;
+            watcher?: unknown;
+            indexing?: unknown;
+            tags?: unknown;
+            sitemap_lastmod?: unknown;
+            sitemap_changefreq?: unknown;
+            sitemap_priority?: unknown;
+            /** @example {
+             *       "need set qualifiers": [
+             *         "date",
+             *         "searcher_key"
+             *       ]
+             *     } */
+            indexing_data?: number | null;
+            /** @example {
+             *       "need set qualifiers": [
+             *         "date",
+             *         "searcher_key"
+             *       ]
+             *     } */
+            indexing_alert?: number | null;
+            /** @example {
+             *       "need set qualifiers": [
+             *         "check_id"
+             *       ]
+             *     } */
+            watcher_http_codes?: (string | number)[] | null;
+            /** @example {
+             *       "need set qualifiers": [
+             *         "check_id"
+             *       ]
+             *     } */
+            watcher_http_codes_changed?: number | null;
+            /** @example {
+             *       "need set qualifiers": [
+             *         "check_id"
+             *       ]
+             *     } */
+            watcher_redirects?: (string | number)[] | null;
+            /** @example {
+             *       "need set qualifiers": [
+             *         "check_id"
+             *       ]
+             *     } */
+            watcher_h1?: string | null;
+            /** @example {
+             *       "need set qualifiers": [
+             *         "check_id"
+             *       ]
+             *     } */
+            watcher_h1_changed?: number | null;
+            /** @example {
+             *       "need set qualifiers": [
+             *         "check_id"
+             *       ]
+             *     } */
+            watcher_title?: string | null;
+            /** @example {
+             *       "need set qualifiers": [
+             *         "check_id"
+             *       ]
+             *     } */
+            watcher_title_changed?: number | null;
+            /** @example {
+             *       "need set qualifiers": [
+             *         "check_id"
+             *       ]
+             *     } */
+            watcher_description?: string | null;
+            /** @example {
+             *       "need set qualifiers": [
+             *         "check_id"
+             *       ]
+             *     } */
+            watcher_description_changed?: number | null;
+            /** @example {
+             *       "need set qualifiers": [
+             *         "check_id"
+             *       ]
+             *     } */
+            watcher_content?: string | null;
+            /** @example {
+             *       "need set qualifiers": [
+             *         "check_id"
+             *       ]
+             *     } */
+            watcher_content_changed?: number | null;
+        };
+        "Models.Votes": {
+            id?: unknown;
+            site?: unknown;
+            subdomain?: unknown;
+            url?: unknown;
+            user_id?: unknown;
+            rate?: unknown;
+            created_time?: unknown;
+            comment?: unknown;
+            is_viewed?: unknown;
+        };
+        "Models.Admin.Invoices": {
+            id?: unknown;
+            time?: unknown;
+            external_name?: unknown;
+            external_id?: unknown;
+            document_date?: unknown;
+            document_number?: unknown;
+            org_name?: unknown;
+            inn?: unknown;
+            sum?: unknown;
+            file_name?: unknown;
+            file_data?: unknown;
+            user_id?: unknown;
+            status?: unknown;
+        };
+        "Models.Admin.Staff": {
+            "VACATIONS()"?: unknown;
+            id?: unknown;
+            name?: unknown;
+            lang?: unknown;
+            timezone?: unknown;
+            dateformat?: unknown;
+            date_reg?: unknown;
+            group?: unknown;
+            phone?: unknown;
+            email?: unknown;
+            avatar?: unknown;
+            staff_id?: unknown;
+            staff_email?: unknown;
+            staff_department?: unknown;
+            staff_posts?: (string | number)[] | null;
+            staff_post?: unknown;
+            staff_name?: unknown;
+            staff_surname?: unknown;
+            staff_patronymic?: unknown;
+            staff_post_2?: unknown;
+            staff_name_2?: unknown;
+            staff_surname_2?: unknown;
+            staff_patronymic_2?: unknown;
+            staff_access?: unknown;
+        };
+        "Models.Admin.Users": {
+            "REQUISITES()"?: unknown;
+            "ORG_NAME()"?: unknown;
+            id?: unknown;
+            site?: unknown;
+            currency?: unknown;
+            name?: unknown;
+            lang?: unknown;
+            timezone?: unknown;
+            dateformat?: unknown;
+            date_reg?: unknown;
+            page_reg?: unknown;
+            has_EDF?: unknown;
+            group?: unknown;
+            phone?: unknown;
+            email?: unknown;
+            avatar?: unknown;
+            deleted?: unknown;
+            balance_all?: unknown;
+            balance_bonus?: unknown;
+            balance_plan?: unknown;
+            plan_id?: unknown;
+            status?: unknown;
+            status_paid?: unknown;
+            status_used?: unknown;
+            sum_payments?: unknown;
+            average_expenses_3?: unknown;
+            plan_expire?: unknown;
+            referrer_id?: unknown;
+        };
+        "Models.Analytics.Events": {
+            COUNT?: unknown;
+            /** @example {
+             *       "need set qualifiers": [
+             *         "action",
+             *         "category",
+             *         "label",
+             *         "label_2",
+             *         "label_3"
+             *       ]
+             *     } */
+            COUNT_QUALIFIERS?: unknown;
+            time?: unknown;
+            category?: unknown;
+            action?: unknown;
+            label?: unknown;
+            label_2?: unknown;
+            label_3?: unknown;
+            user_id?: unknown;
+            hash_id?: unknown;
+        };
+        "Models.Analytics.Ranks": {
+            "ACTIVATIONS()"?: unknown;
+            id?: unknown;
+            name_ru?: unknown;
+            name_en?: unknown;
+            bonus_RUB?: unknown;
+            bonus_USD?: unknown;
+            to_date?: unknown;
+            limit?: unknown;
+            code?: unknown;
+            retention_week?: unknown;
+            retention_month?: unknown;
+            payment_week?: unknown;
+            payment_month?: unknown;
+            payment_month_6?: unknown;
+            payment_year?: unknown;
+            new_user?: unknown;
+            returned_user?: unknown;
+            quitted_user?: unknown;
+        };
+        "Models.Analytics.RanksUsers": {
+            code?: unknown;
+            email?: unknown;
+            rank?: unknown;
+            retention_week?: unknown;
+            retention_month?: unknown;
+            payment_week?: unknown;
+            payment_month?: unknown;
+            payment_month_6?: unknown;
+            payment_year?: unknown;
+            new_user?: unknown;
+            returned_user?: unknown;
+            quitted_user?: unknown;
+        };
+        "Models.Audit.Checks": {
+            "DURATION()"?: unknown;
+            id?: unknown;
+            project_id?: unknown;
+            device?: unknown;
+            scan_links?: unknown;
+            scan_images?: unknown;
+            scan_js?: unknown;
+            scan_css?: unknown;
+            robots_txt_exists?: unknown;
+            sitemap_xml_exists?: unknown;
+            www_redirect_exists?: unknown;
+            ssl_redirect_exists?: unknown;
+            tls_exists?: unknown;
+            fatal?: unknown;
+            rkn_no_ban?: unknown;
+            notice?: unknown;
+            error?: unknown;
+            time_start?: unknown;
+            time_finish?: unknown;
+            count_pages?: unknown;
+            count_all?: unknown;
+            count_000?: unknown;
+            count_1xx?: unknown;
+            count_2xx?: unknown;
+            count_3xx?: unknown;
+            count_4xx?: unknown;
+            count_5xx?: unknown;
+            complete?: unknown;
+            count_warnings?: unknown;
+            count_errors?: unknown;
+            count_problems?: unknown;
+            is_mobile?: unknown;
+            domain_check_rkn_no_ban?: unknown;
+            domain_check_webmaster_no_errors?: unknown;
+            domain_check_robots_txt_exists?: unknown;
+            domain_check_sitemap_xml_exists?: unknown;
+            domain_check_www_redirect_exists?: unknown;
+            domain_check_ssl_redirect_exists?: unknown;
+            domain_check_tls_exists?: unknown;
+            pages_check_http_code_200_errors?: unknown;
+            pages_check_redirects_not_exists_errors?: unknown;
+            pages_check_redirects_many_not_exists_errors?: unknown;
+            pages_check_ttfb_max_errors?: unknown;
+            pages_check_cacheable_errors?: unknown;
+            pages_check_robots_txt_allowed_errors?: unknown;
+            pages_check_sitemap_xml_exists_errors?: unknown;
+            pages_check_sitemap_xml_exists_with_canonical_errors?: unknown;
+            pages_check_sitemap_included_none_blocked_errors?: unknown;
+            pages_check_noindex_off_errors?: unknown;
+            pages_check_nofollow_off_errors?: unknown;
+            pages_check_title_exists_errors?: unknown;
+            pages_check_title_length_max_errors?: unknown;
+            pages_check_title_is_unique_errors?: unknown;
+            pages_check_description_exists_errors?: unknown;
+            pages_check_description_is_unique_errors?: unknown;
+            pages_check_description_length_min_errors?: unknown;
+            pages_check_description_length_max_errors?: unknown;
+            pages_check_h1_exists_errors?: unknown;
+            pages_check_html_lang_exists_errors?: unknown;
+            pages_check_url_length_errors?: unknown;
+            pages_check_canonical_exists_errors?: unknown;
+            pages_check_alternate_errors?: unknown;
+            pages_check_http_resources_count_errors?: unknown;
+            pages_check_links_exists_errors?: unknown;
+            pages_check_refresh_not_exists_errors?: unknown;
+            pages_check_compression_exists_errors?: unknown;
+            pages_check_schema_exists_errors?: unknown;
+            pages_check_og_title_exists_errors?: unknown;
+            pages_check_og_description_exists_errors?: unknown;
+            pages_check_og_image_exists_errors?: unknown;
+            pages_check_og_url_exists_errors?: unknown;
+            pages_check_og_url_canonical_errors?: unknown;
+            pages_check_lcp_max_errors?: unknown;
+            pages_check_fid_max_errors?: unknown;
+            pages_check_inp_max_errors?: unknown;
+            pages_check_cls_max_errors?: unknown;
+            pages_check_fcp_max_errors?: unknown;
+            pages_check_si_max_errors?: unknown;
+            pages_check_tbt_max_errors?: unknown;
+            links_check_http_code_200_errors?: unknown;
+            links_check_redirects_not_exists_errors?: unknown;
+            links_check_redirects_many_not_exists_errors?: unknown;
+            links_check_ttfb_max_errors?: unknown;
+            links_check_url_slash_unique_errors?: unknown;
+            links_check_url_format_good_errors?: unknown;
+            links_check_title_or_content_exists_errors?: unknown;
+            links_check_nofollow_off_errors?: unknown;
+            images_check_http_code_200_errors?: unknown;
+            images_check_redirects_not_exists_errors?: unknown;
+            images_check_redirects_many_not_exists_errors?: unknown;
+            images_check_ttfb_max_errors?: unknown;
+            images_check_cacheable_errors?: unknown;
+            images_check_alt_exists_errors?: unknown;
+            images_check_alt_length_max_errors?: unknown;
+            images_check_size_max_errors?: unknown;
+            images_check_robots_disallow_off_errors?: unknown;
+            images_check_modern_format_errors?: unknown;
+            js_check_http_code_200_errors?: unknown;
+            js_check_redirects_not_exists_errors?: unknown;
+            js_check_redirects_many_not_exists_errors?: unknown;
+            js_check_ttfb_max_errors?: unknown;
+            js_check_compression_exists_errors?: unknown;
+            js_check_cacheable_errors?: unknown;
+            js_check_is_minified_errors?: unknown;
+            js_check_no_render_blocking_errors?: unknown;
+            css_check_http_code_200_errors?: unknown;
+            css_check_redirects_not_exists_errors?: unknown;
+            css_check_redirects_many_not_exists_errors?: unknown;
+            css_check_ttfb_max_errors?: unknown;
+            css_check_compression_exists_errors?: unknown;
+            css_check_cacheable_errors?: unknown;
+            css_check_is_minified_errors?: unknown;
+            css_check_no_render_blocking_errors?: unknown;
+        };
+        "Models.Audit.Css": {
+            "COUNT(*)"?: unknown;
+            "HTTP_CODES_HUNDREDS()"?: (string | number)[] | null;
+            check_id?: unknown;
+            url_ids?: unknown;
+            url_id?: unknown;
+            url?: unknown;
+            count?: unknown;
+            time_parse?: unknown;
+            http_codes?: (string | number)[] | null;
+            last_http_code?: unknown;
+            redirects?: (string | number)[] | null;
+            locations?: unknown;
+            ttfb?: unknown;
+            count_pages?: unknown;
+            compression?: unknown;
+            cacheable?: unknown;
+            cache_type?: unknown;
+            cache_time?: unknown;
+            cache_validator?: unknown;
+            robots_txt_mention?: unknown;
+            robots_txt_blocked?: unknown;
+            minified?: unknown;
+            broken?: unknown;
+            notice?: unknown;
+            error?: unknown;
+            warning_all?: unknown;
+            render_blocking?: unknown;
+            check_http_code_200?: unknown;
+            check_redirects_not_exists?: unknown;
+            check_redirects_many_not_exists?: unknown;
+            check_ttfb_max?: unknown;
+            check_compression_exists?: unknown;
+            check_cacheable?: unknown;
+            check_is_minified?: unknown;
+            check_no_render_blocking?: unknown;
+            count_errors?: unknown;
+            count_warnings?: unknown;
+        };
+        "Models.Audit.Images": {
+            "COUNT(*)"?: unknown;
+            "HTTP_CODES_HUNDREDS()"?: (string | number)[] | null;
+            check_id?: unknown;
+            url_id?: unknown;
+            url_ids?: unknown;
+            url?: unknown;
+            alt?: unknown;
+            time_parse?: unknown;
+            http_codes?: (string | number)[] | null;
+            last_http_code?: unknown;
+            redirects?: (string | number)[] | null;
+            locations?: unknown;
+            count?: unknown;
+            ttfb?: unknown;
+            count_pages?: unknown;
+            size?: unknown;
+            cacheable?: unknown;
+            cache_type?: unknown;
+            cache_time?: unknown;
+            cache_validator?: unknown;
+            robots_txt_mention?: unknown;
+            robots_txt_blocked?: unknown;
+            extension?: unknown;
+            content_type?: unknown;
+            modern_format?: unknown;
+            broken?: unknown;
+            search?: unknown;
+            notice?: unknown;
+            error?: unknown;
+            warning_all?: unknown;
+            check_http_code_200?: unknown;
+            check_redirects_not_exists?: unknown;
+            check_redirects_many_not_exists?: unknown;
+            check_ttfb_max?: unknown;
+            check_cacheable?: unknown;
+            check_alt_exists?: unknown;
+            check_alt_length_max?: unknown;
+            check_size_max?: unknown;
+            check_robots_disallow_off?: unknown;
+            check_modern_format?: unknown;
+            count_errors?: unknown;
+            count_warnings?: unknown;
+        };
+        "Models.Audit.Js": {
+            "COUNT(*)"?: unknown;
+            "HTTP_CODES_HUNDREDS()"?: (string | number)[] | null;
+            check_id?: unknown;
+            url_ids?: unknown;
+            url_id?: unknown;
+            url?: unknown;
+            count?: unknown;
+            time_parse?: unknown;
+            http_codes?: (string | number)[] | null;
+            last_http_code?: unknown;
+            redirects?: (string | number)[] | null;
+            ttfb?: unknown;
+            count_pages?: unknown;
+            compression?: unknown;
+            cacheable?: unknown;
+            cache_type?: unknown;
+            cache_time?: unknown;
+            cache_validator?: unknown;
+            robots_txt_mention?: unknown;
+            robots_txt_blocked?: unknown;
+            minified?: unknown;
+            broken?: unknown;
+            notice?: unknown;
+            error?: unknown;
+            warning_all?: unknown;
+            render_blocking?: unknown;
+            check_http_code_200?: unknown;
+            check_redirects_not_exists?: unknown;
+            check_redirects_many_not_exists?: unknown;
+            check_ttfb_max?: unknown;
+            check_compression_exists?: unknown;
+            check_cacheable?: unknown;
+            check_is_minified?: unknown;
+            check_no_render_blocking?: unknown;
+            count_errors?: unknown;
+            count_warnings?: unknown;
+        };
+        "Models.Audit.Links": {
+            "COUNT(*)"?: unknown;
+            search?: unknown;
+            "HTTP_CODES_HUNDREDS()"?: (string | number)[] | null;
+            check_id?: unknown;
+            project_id?: unknown;
+            url_id?: unknown;
+            url_ids?: unknown;
+            url?: unknown;
+            type?: unknown;
+            content?: string | null;
+            time_parse?: unknown;
+            http_codes?: (string | number)[] | null;
+            last_http_code?: unknown;
+            count?: unknown;
+            title?: unknown;
+            redirects?: (string | number)[] | null;
+            nofollow?: unknown;
+            sponsored?: unknown;
+            ugc?: unknown;
+            external?: unknown;
+            broken?: unknown;
+            ttfb?: unknown;
+            count_pages?: unknown;
+            cacheable?: unknown;
+            cache_type?: unknown;
+            cache_time?: unknown;
+            cache_validator?: unknown;
+            check_http_code_200?: unknown;
+            check_redirects_not_exists?: unknown;
+            check_redirects_many_not_exists?: unknown;
+            check_ttfb_max?: unknown;
+            check_url_slash_unique?: unknown;
+            check_url_format_good?: unknown;
+            check_title_or_content_exists?: unknown;
+            check_nofollow_off?: unknown;
+            notice?: unknown;
+            error?: unknown;
+            warning_all?: unknown;
+            count_errors?: unknown;
+            count_warnings?: unknown;
+        };
+        "Models.Audit.Pages": {
+            dummy_opener_summary_page?: unknown;
+            "COUNT(*)"?: unknown;
+            "HTTP_CODES_HUNDREDS()"?: (string | number)[] | null;
+            check_id?: unknown;
+            url_id?: unknown;
+            url?: unknown;
+            time_parse?: unknown;
+            http_codes?: (string | number)[] | null;
+            last_http_code?: unknown;
+            tls_version?: unknown;
+            redirects?: (string | number)[] | null;
+            meta_robots_none?: unknown;
+            x_robots_tag_none?: unknown;
+            meta_robots_noindex?: unknown;
+            x_robots_tag_noindex?: unknown;
+            meta_robots_nofollow?: unknown;
+            x_robots_tag_nofollow?: unknown;
+            canonical?: unknown;
+            canonical_count?: unknown;
+            http_resources_count?: unknown;
+            html_lang?: unknown;
+            hreflang?: unknown;
+            rdfa?: unknown;
+            json_ld?: unknown;
+            microdata?: unknown;
+            alternates?: unknown;
+            refresh?: unknown;
+            title?: unknown;
+            description?: unknown;
+            h1?: unknown;
+            links_count?: unknown;
+            images_count?: unknown;
+            js_count?: unknown;
+            css_count?: unknown;
+            lastmod?: unknown;
+            lastmod_since?: unknown;
+            sitemap_xml_mention?: unknown;
+            robots_txt_mention?: unknown;
+            robots_txt_blocked?: unknown;
+            og_title?: unknown;
+            og_description?: unknown;
+            og_image?: unknown;
+            og_url?: unknown;
+            og_type?: unknown;
+            count_errors?: unknown;
+            count_warnings?: unknown;
+            count_problems?: unknown;
+            broken?: unknown;
+            ttfb?: unknown;
+            compression?: unknown;
+            cacheable?: unknown;
+            cache_type?: unknown;
+            cache_time?: unknown;
+            cache_validator?: unknown;
+            search?: unknown;
+            snippet_search?: unknown;
+            title_dbl?: unknown;
+            description_dbl?: unknown;
+            lcp?: unknown;
+            fid?: unknown;
+            inp?: unknown;
+            cls?: unknown;
+            fcp?: unknown;
+            si?: unknown;
+            tti?: unknown;
+            tbt?: unknown;
+            cwv_performance?: unknown;
+            backlinks_inner_count?: unknown;
+            text_length?: unknown;
+            check_http_code_200?: unknown;
+            check_redirects_not_exists?: unknown;
+            check_redirects_many_not_exists?: unknown;
+            check_ttfb_max?: unknown;
+            check_cacheable?: unknown;
+            check_robots_txt_allowed?: unknown;
+            check_sitemap_xml_exists?: unknown;
+            check_sitemap_xml_exists_with_canonical?: unknown;
+            check_sitemap_included_none_blocked?: unknown;
+            check_noindex_off?: unknown;
+            check_nofollow_off?: unknown;
+            check_title_exists?: unknown;
+            check_title_length_max?: unknown;
+            check_title_is_unique?: unknown;
+            check_description_exists?: unknown;
+            check_description_is_unique?: unknown;
+            check_description_length_min?: unknown;
+            check_description_length_max?: unknown;
+            check_h1_exists?: unknown;
+            check_html_lang_exists?: unknown;
+            check_url_length?: unknown;
+            check_canonical_exists?: unknown;
+            check_alternate?: unknown;
+            check_http_resources_count?: unknown;
+            check_links_exists?: unknown;
+            check_refresh_not_exists?: unknown;
+            check_compression_exists?: unknown;
+            check_schema_exists?: unknown;
+            check_og_title_exists?: unknown;
+            check_og_description_exists?: unknown;
+            check_og_image_exists?: unknown;
+            check_og_url_exists?: unknown;
+            check_og_url_canonical?: unknown;
+            check_lcp_max?: unknown;
+            check_fid_max?: unknown;
+            check_inp_max?: unknown;
+            check_cls_max?: unknown;
+            check_fcp_max?: unknown;
+            check_si_max?: unknown;
+            check_tbt_max?: unknown;
+        };
+        "Models.Broker.Ads": {
+            id?: unknown;
+            campaign_tv_id?: unknown;
+            group_id?: unknown;
+            title?: unknown;
+            text?: unknown;
+            text2?: unknown;
+            href?: unknown;
+            domain?: unknown;
+            display_url?: unknown;
+            type?: unknown;
+            subtype?: unknown;
+            status?: unknown;
+            state?: unknown;
+            on?: unknown;
+            off?: unknown;
+            for_off?: unknown;
+            timestamp?: unknown;
+        };
+        "Models.Broker.Campaigns": {
+            id?: unknown;
+            project_id?: unknown;
+            provider_n?: unknown;
+            campaign_tv_id?: unknown;
+            client_id?: unknown;
+            login?: unknown;
+            agency_name?: unknown;
+            name?: unknown;
+            shows?: unknown;
+            clicks?: unknown;
+            count_tasks?: unknown;
+            frequency?: unknown;
+            rest?: unknown;
+            price?: unknown;
+            timezone?: unknown;
+            currency?: unknown;
+            state?: unknown;
+            servingStatus?: unknown;
+            status_name?: unknown;
+            manualBids?: unknown;
+            no_manage_suspended_keywords?: unknown;
+            added?: unknown;
+            on?: unknown;
+            on_tv?: unknown;
+            off?: unknown;
+            for_off?: unknown;
+            groups_load_time?: unknown;
+            keywords_statistics_update?: unknown;
+            count_keywords?: unknown;
+            count_keywords_autocorrect?: unknown;
+            targeting?: unknown;
+            limits?: unknown;
+            limits_max?: unknown;
+        };
+        "Models.Broker.Groups": {
+            "GEN_SEARCH_STRING()"?: unknown;
+            id?: unknown;
+            campaign_tv_id?: unknown;
+            name?: unknown;
+            geo?: unknown;
+            type?: unknown;
+            status?: unknown;
+            servingStatus?: unknown;
+            count?: unknown;
+            on?: unknown;
+            off?: unknown;
+            for_off?: unknown;
+            keywords_load_time?: unknown;
+            timestamp?: unknown;
+            keyword?: unknown;
+            keywords_off?: unknown;
+            price_max?: unknown;
+            P21?: unknown;
+            P11?: unknown;
+            P1L?: unknown;
+            P2L?: unknown;
+        };
+        "Models.Broker.Keywords": {
+            id?: unknown;
+            campaign_tv_id?: unknown;
+            keyword_id?: unknown;
+            group_id?: unknown;
+            keyword?: unknown;
+            status?: unknown;
+            state?: unknown;
+            shows?: unknown;
+            clicks?: unknown;
+            P11?: unknown;
+            P12?: unknown;
+            P13?: unknown;
+            P1L?: unknown;
+            P21?: unknown;
+            P2L?: unknown;
+            P11_f?: unknown;
+            P12_f?: unknown;
+            P13_f?: unknown;
+            P1L_f?: unknown;
+            P21_f?: unknown;
+            P2L_f?: unknown;
+            TrafficVolumes?: unknown;
+            bid?: unknown;
+            contextBid?: unknown;
+            price?: unknown;
+            price_max?: unknown;
+            price_risk?: unknown;
+            percent?: unknown;
+            tactics?: unknown;
+            tactics_2_old?: unknown;
+            tactics_2?: unknown;
+            on?: unknown;
+            off?: unknown;
+            for_off?: unknown;
+        };
+        "Models.Broker.Log": {
+            "COUNT(*)"?: unknown;
+            datetime?: unknown;
+            campaign_tv_id?: unknown;
+            text?: unknown;
+            error?: unknown;
+        };
+        "Models.Competitors.Domains": {
+            "COUNT(*)"?: number | null;
+            "COUNT_KEYWORDS_ME()"?: number | null;
+            "COUNT_KEYWORDS_ME_ADS()"?: number | null;
+            "MAX_SUM_TRAFFIC()"?: number | null;
+            "MAX_SUM_TRAFFIC_ADS()"?: number | null;
+            date?: string | null;
+            region_index?: number | null;
+            domain?: string | null;
+            is_shark?: number | null;
+            count_keywords_common?: number | null;
+            count_keywords_common_ads?: number | null;
+            count_keywords_exclusive?: number | null;
+            count_keywords_exclusive_ads?: number | null;
+            relevant?: number | null;
+            relevant_reverse?: number | null;
+            relevant_ads?: number | null;
+            relevant_reverse_ads?: number | null;
+            intersection?: number | null;
+            intersection_ads?: number | null;
+            avg_position_common?: number | null;
+            median_position_common?: number | null;
+            count_keywords?: number | null;
+            avg_position?: number | null;
+            median_position?: number | null;
+            visibility?: number | null;
+            sum_volume?: number | null;
+            sum_traffic?: number | null;
+            sum_month_cost_rub?: number | null;
+            sum_month_cost_usd?: number | null;
+            topvisor_rank?: number | null;
+            count_keywords_ads?: number | null;
+            sum_volume_ads?: number | null;
+            sum_traffic_ads?: number | null;
+            sum_month_cost_rub_ads?: number | null;
+            sum_month_cost_usd_ads?: number | null;
+        };
+        "Models.Competitors.Keywords": {
+            "COUNT(*)"?: string | null;
+            "DUMMY()"?: string | null;
+            "DUMMY_VS()"?: string | null;
+            "KEYWORDS_IDS_SQL()"?: string | null;
+            "CTR_BASE()"?: number | null;
+            "TRAFFIC()"?: number | null;
+            "MONTH_COST_RUB()"?: number | null;
+            "MONTH_COST_USD()"?: number | null;
+            "GROUP_NAME_BY_URL()"?: string | null;
+            "GROUP_NAME_BY_DOMAIN()"?: string | null;
+            "SNIPPET()"?: string | null;
+            date?: string | null;
+            region_index?: number | null;
+            domain?: string | null;
+            keyword_id?: number | null;
+            position?: number | null;
+            url?: string | null;
+            snippet_title?: string | null;
+            snippet_body?: string | null;
+            snippet_ext?: unknown;
+            volume?: number | null;
+            cost_rub?: number | null;
+            cost_usd?: number | null;
+            elements?: unknown;
+            count_results?: number | null;
+            keyword_name?: string | null;
+            block_position?: string | null;
+            prev_position?: number | null;
+            "CTR_BASE_VS()"?: number | null;
+            "TRAFFIC_VS()"?: string | null;
+            "MONTH_COST_RUB_VS()"?: number | null;
+            "MONTH_COST_USD_VS()"?: string | null;
+            "SNIPPET_VS()"?: string | null;
+            position_vs?: number | null;
+            url_vs?: string | null;
+            snippet_title_vs?: string | null;
+            snippet_body_vs?: string | null;
+            snippet_ext_vs?: unknown;
+            prev_position_vs?: number | null;
+        };
+        "Models.Competitors.Urls": {
+            "COUNT(*)"?: number | null;
+            "FOLDER()"?: string | null;
+            "PATH_FULL()"?: string | null;
+            "TOP()"?: string | null;
+            "GROUP_COUNT()"?: number | null;
+            "GROUP_SUM_TRAFFIC()"?: number | null;
+            "GROUP_AVG_POSITION()"?: number | null;
+            date?: string | null;
+            region_index?: number | null;
+            domain?: string | null;
+            url?: string | null;
+            count_suburls?: number | null;
+            count_keywords?: number | null;
+            avg_position?: number | null;
+            sum_volume?: number | null;
+            sum_traffic?: number | null;
+            sum_month_cost_rub?: number | null;
+            sum_month_cost_usd?: number | null;
+            thematic_keyword_name?: string | null;
+            count_suburls_ads?: number | null;
+            count_keywords_ads?: number | null;
+            sum_volume_ads?: number | null;
+            sum_traffic_ads?: number | null;
+            sum_month_cost_rub_ads?: number | null;
+            sum_month_cost_usd_ads?: number | null;
+            thematic_keyword_name_ads?: string | null;
+        };
+        "Models.Competitors.Wordstat": {
+            "COUNT(*)"?: string | null;
+            date?: string | null;
+            region_index?: number | null;
+            query?: string | null;
+            is_similar?: number | null;
+            is_commercial?: number | null;
+            is_phrase?: number | null;
+            is_strict?: number | null;
+            is_order?: number | null;
+            is_question?: number | null;
+            volume?: number | null;
+            cost_rub?: number | null;
+            cost_usd?: number | null;
+            domains?: string | null;
+            domains_ads?: string | null;
+            elements?: unknown;
+            count_results?: number | null;
+            keyword_id?: number | null;
+            keyword_name?: string | null;
+            keyword_length?: number | null;
+            keyword_count_words?: number | null;
+            domain_leader?: string | null;
+            intersection?: number | null;
+        };
+        "Models.Content.Authors": {
+            "IS_ACTIVE()"?: number | null;
+            user_id?: number | null;
+            alias?: string | null;
+            promo_text?: string | null;
+            promo_label?: string | null;
+            promo_link?: string | null;
+            count_pages?: number | null;
+            count_views?: number | null;
+            count_unique_views?: string | null;
+            count_likes?: number | null;
+            show_in_author_list?: number | null;
+            user_site?: string | null;
+            user_name?: string | null;
+            user_avatar?: string | null;
+            user_description?: string | null;
+            bookmark_author?: number | null;
+        };
+        "Models.Magnet.Ganalytics": {
+            id?: unknown;
+            phrase?: unknown;
+            visits?: unknown;
+            bounce?: unknown;
+            pageviews?: unknown;
+            duration?: unknown;
+            project_id?: unknown;
+            "IS_EXISTS()"?: unknown;
+            "COUNT(*)"?: unknown;
+        };
+        "Models.Magnet.Gsc": {
+            id?: unknown;
+            key?: unknown;
+            phrase?: unknown;
+            path?: unknown;
+            clicks?: unknown;
+            shows?: unknown;
+            ctr?: unknown;
+            position?: unknown;
+            domain?: unknown;
+            project_id?: unknown;
+            "IS_EXISTS()"?: unknown;
+            "COUNT(*)"?: unknown;
+        };
+        "Models.Magnet.Metrika": {
+            id?: unknown;
+            key?: unknown;
+            phrase?: unknown;
+            path?: unknown;
+            visits?: unknown;
+            bounce?: unknown;
+            pageviews?: unknown;
+            duration?: unknown;
+            domain?: unknown;
+            project_id?: unknown;
+            "IS_EXISTS()"?: unknown;
+            "COUNT(*)"?: unknown;
+        };
+        "Models.Magnet.Webmaster": {
+            id?: unknown;
+            phrase?: unknown;
+            clicks?: unknown;
+            shows?: unknown;
+            ctr?: unknown;
+            position?: unknown;
+            project_id?: unknown;
+            demand?: unknown;
+            "IS_EXISTS()"?: unknown;
+            "COUNT(*)"?: unknown;
+        };
+        "Models.Mentions.Mentions": {
+            id?: unknown;
+            project_id?: unknown;
+            rule_id?: unknown;
+            searcher_key?: unknown;
+            post_user_id?: unknown;
+            post_id?: unknown;
+            name?: unknown;
+            avatar?: unknown;
+            date?: unknown;
+            text?: unknown;
+            sentiment?: unknown;
+            readed?: unknown;
+            time_parse?: unknown;
+            need_send_report?: unknown;
+        };
+        "Models.Mentions.Rules": {
+            id?: unknown;
+            project_id?: unknown;
+            name?: unknown;
+            any?: unknown;
+            plus?: unknown;
+            minus?: unknown;
+            status?: unknown;
+            report_last_time?: unknown;
+            searcher_depth_by_keys?: unknown;
+            searcher_key?: unknown;
+            project_user_id?: unknown;
+            project_competitor?: unknown;
+            project_right?: unknown;
+        };
+        "Models.Mentions.Searchers": {
+            rule_id?: unknown;
+            key?: unknown;
+            project_id?: unknown;
+            depth?: unknown;
+            enabled?: unknown;
+            changed?: unknown;
+        };
+        "Models.Quizes.Questions": {
+            "ANSWERS()"?: unknown;
+            "RESPONSES()"?: unknown;
+            "IS_PASSED()"?: unknown;
+            id?: unknown;
+            quiz_id?: unknown;
+            type?: unknown;
+            text?: unknown;
+            response_text?: unknown;
+            score?: unknown;
+            likes_count?: unknown;
+            ord?: unknown;
+        };
+        "Models.Users.Ranks": {
+            "IS_VISIBLE()"?: unknown;
+            "IS_ACTIVE()"?: unknown;
+            id?: unknown;
+            category?: unknown;
+            name?: unknown;
+            descr?: unknown;
+            descr_how_to_use?: unknown;
+            bonus?: unknown;
+            currency?: unknown;
+            cashback_expenses?: unknown;
+            cashback_first_payment?: unknown;
+            discount?: unknown;
+            color?: unknown;
+            image_url?: unknown;
+            always_visible?: unknown;
+            code?: unknown;
+            used?: unknown;
+            date?: unknown;
+            retention_week?: unknown;
+            retention_month?: unknown;
+            payment_week?: unknown;
+            payment_month?: unknown;
+            payment_month_6?: unknown;
+            payment_year?: unknown;
+            new_user?: unknown;
+            returned_user?: unknown;
+            quitted_user?: unknown;
+        };
+        "Models.Users.Referrals": {
+            "STATS()"?: unknown;
+            referral_id?: unknown;
+            referrer_id?: unknown;
+            time_reg?: unknown;
+            number?: unknown;
+            income?: unknown;
+            level?: unknown;
+            status?: unknown;
+        };
+        "Models.Users.Verif": {
+            email?: unknown;
+            code?: unknown;
+            action?: unknown;
+            params?: unknown;
+            data?: unknown;
+            date?: unknown;
+        };
+        "Models.Watcher.Results": {
+            project_id?: unknown;
+            check_id?: unknown;
+            url_id?: unknown;
+            http_codes?: (string | number)[] | null;
+            http_codes_changed?: unknown;
+            http_codes_md5?: unknown;
+            redirects?: (string | number)[] | null;
+            redirects_changed?: unknown;
+            redirects_md5?: unknown;
+            h1?: unknown;
+            h1_changed?: unknown;
+            h1_md5?: unknown;
+            title?: unknown;
+            title_changed?: unknown;
+            title_md5?: unknown;
+            description?: unknown;
+            description_changed?: unknown;
+            description_md5?: unknown;
+            content?: unknown;
+            content_changed?: unknown;
+            content_md5?: unknown;
+        };
+        "Models.Admin.Accounting.Counteragents": {
+            "GROUPS_NAMES()"?: unknown;
+            id?: number;
+            name?: string | null;
+            inn?: string | null;
+            document_number?: string | null;
+            comments?: string | null;
+            comments_2?: string | null;
+            in_several_groups?: unknown;
+            group_id?: unknown;
+        };
+        "Models.Admin.Users.Ranks": {
+            "COUNT_CODES()"?: unknown;
+            id?: unknown;
+            name_id?: unknown;
+            category?: unknown;
+            name?: unknown;
+            name_ru?: unknown;
+            name_en?: unknown;
+            descr?: unknown;
+            descr_ru?: unknown;
+            descr_en?: unknown;
+            descr_how_to_use?: unknown;
+            descr_how_to_use_ru?: unknown;
+            descr_how_to_use_en?: unknown;
+            bonus?: unknown;
+            bonus_RUB?: unknown;
+            bonus_USD?: unknown;
+            cashback_expenses?: unknown;
+            cashback_first_payment?: unknown;
+            discount?: unknown;
+            referrer_id?: unknown;
+            from_date?: unknown;
+            to_date?: unknown;
+            limit?: unknown;
+            currency?: unknown;
+            only_new_users?: unknown;
+            color?: unknown;
+            always_visible?: unknown;
+        };
     };
     responses: never;
     parameters: never;

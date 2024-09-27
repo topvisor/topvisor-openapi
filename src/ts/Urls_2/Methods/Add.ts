@@ -10,19 +10,49 @@ export interface components {
         /** Добавление url */
         "Urls_2.Methods.Add": {
             /** URL соответствующий домену проекта */
-            url: import('../../TV/API/Types/Url.ts').components['schemas']['TV.API.Types.Url'];
+            url: components["schemas"]["TV.API.Types.Url"];
             /** Флаг активности в карте сайта
              *     - 1 - присутствовал в прошлых версиях карты сайта */
-            sitemap?: import('../Types/Flag.ts').components['schemas']['Urls_2.Types.Flag'] | null;
+            sitemap?: components["schemas"]["Urls_2.Types.Flag"] | null;
             /** Флаг активности в аудите */
-            audit?: import('../Types/Flag.ts').components['schemas']['Urls_2.Types.Flag'] | null;
+            audit?: components["schemas"]["Urls_2.Types.Flag"] | null;
             /** Флаг активности в радаре */
-            indexing?: import('../Types/Flag.ts').components['schemas']['Urls_2.Types.Flag'] | null;
+            indexing?: components["schemas"]["Urls_2.Types.Flag"] | null;
             /** Флаг активности в индексации */
-            watcher?: import('../Types/Flag.ts').components['schemas']['Urls_2.Types.Flag'] | null;
-            tags?: import('../../Tags_2/Types/Tags.ts').components['schemas']['Tags_2.Types.Tags'] | null;
-            project_id: import('../../TV/API/Params/ProjectIdTrait.ts').components['schemas']['TV.API.Params.ProjectIdTrait']['project_id'];
+            watcher?: components["schemas"]["Urls_2.Types.Flag"] | null;
+            tags?: components["schemas"]["Tags_2.Types.Tags"] | null;
+            project_id: components["schemas"]["project_id"];
         };
+        /**
+         * Краткий URL в punycode, не может содержать UTF-символы:
+         *     - без схемы
+         *     - без "www." в домене
+         *     - без слешей на конце
+         *     - без "<" и ">"
+         * @description Будет проивзедено автоматическое приведение к формату
+         *
+         *     Разрешен ввод строй строки, для удаления значения url
+         */
+        "TV.API.Types.Url": string;
+        /**
+         * Флаг активности
+         * @enum {integer}
+         */
+        "Urls_2.Types.Flag": -1 | 0 | 1 | 2;
+        /**
+         * Доступные теги
+         * @enum {string}
+         */
+        "Tags_2.Types.Tag": "1" | "2" | "3" | "4" | "5" | "6" | "7" | "8" | "9" | "10" | "11" | "12" | "13" | "14" | "15" | "16" | "17" | "18" | "19" | "20";
+        /**
+         * Массив номеров тегов
+         * @description Тип массива Tags[]
+         *
+         *     @see Tags_2\Types\Tag
+         */
+        "Tags_2.Types.Tags": components["schemas"]["Tags_2.Types.Tag"][];
+        /** ID проекта */
+        project_id: number;
     };
     responses: never;
     parameters: never;
