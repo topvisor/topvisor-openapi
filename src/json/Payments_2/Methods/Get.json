@@ -10,10 +10,6 @@
             "Payments_2.Methods.Get": {
                 "type": "object",
                 "properties": {
-                    "include_is_domains_services_provided": {
-                        "title": "Добавить в результаты is_domains_serv+ices_provided, означающий, что были оказаны услуги доменного регистратора",
-                        "type": "integer"
-                    },
                     "fields": {
                         "$ref": "../../TV/API/Params/FieldsTrait.json#/components/schemas/TV.API.Params.FieldsTrait/properties/fields"
                     },
@@ -37,7 +33,6 @@
                     }
                 },
                 "required": [
-                    "include_is_domains_services_provided",
                     "fields",
                     "orders",
                     "filters",
