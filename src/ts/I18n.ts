@@ -48,6 +48,7 @@ export interface components {
         "Pages.Help": import('./I18n/Pages/Help.ts').components['schemas']['I18n.Pages.Help'];
         Pages: import('./I18n/Pages.ts').components['schemas']['I18n.Pages'];
         "Projects.CheckButton": import('./I18n/Projects/CheckButton.ts').components['schemas']['I18n.Projects.CheckButton'];
+        "Projects.Settings": import('./I18n/Projects/Settings.ts').components['schemas']['I18n.Projects.Settings'];
         "Audit.Scan.Checks": import('./I18n/Audit/Scan/Checks.ts').components['schemas']['I18n.Audit.Scan.Checks'];
         "Sites.Topvisor.Organization": import('./I18n/Sites/Topvisor/Organization.ts').components['schemas']['I18n.Sites.Topvisor.Organization'];
     };

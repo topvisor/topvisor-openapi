@@ -130,6 +130,9 @@
             "Projects.CheckButton": {
                 "$ref": "I18n/Projects/CheckButton.json#/components/schemas/I18n.Projects.CheckButton"
             },
+            "Projects.Settings": {
+                "$ref": "I18n/Projects/Settings.json#/components/schemas/I18n.Projects.Settings"
+            },
             "Audit.Scan.Checks": {
                 "$ref": "I18n/Audit/Scan/Checks.json#/components/schemas/I18n.Audit.Scan.Checks"
             },

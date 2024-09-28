@@ -718,6 +718,9 @@
                     "Selected_regions": {
                         "const": "Selected locations"
                     },
+                    "Compare": {
+                        "const": "Compare"
+                    },
                     "Folder": {
                         "const": "Folder"
                     },
@@ -819,6 +822,9 @@
                     },
                     "Select_date": {
                         "const": "Select date"
+                    },
+                    "Not_date": {
+                        "const": "Not date"
                     },
                     "Close_window": {
                         "const": "Close window"

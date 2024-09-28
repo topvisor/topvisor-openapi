@@ -481,6 +481,8 @@ export interface components {
             /** @constant */
             Selected_regions?: "Selected locations";
             /** @constant */
+            Compare?: "Compare";
+            /** @constant */
             Folder?: "Folder";
             /** @constant */
             Group?: "Group";
@@ -548,6 +550,8 @@ export interface components {
             types?: "types";
             /** @constant */
             Select_date?: "Select date";
+            /** @constant */
+            Not_date?: "Not date";
             /** @constant */
             Close_window?: "Close window";
             /** @constant */
