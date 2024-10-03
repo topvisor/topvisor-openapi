@@ -65,6 +65,8 @@ export interface components {
             /** @constant */
             Pricing?: "Tools and prices";
             /** @constant */
+            Sales?: "Sales";
+            /** @constant */
             Help?: "Help & Support";
             /** @constant */
             Help_center?: "Help Center";

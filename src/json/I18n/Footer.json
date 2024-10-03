@@ -94,6 +94,9 @@
                     "Pricing": {
                         "const": "Tools and prices"
                     },
+                    "Sales": {
+                        "const": "Sales"
+                    },
                     "Help": {
                         "const": "Help & Support"
                     },
