@@ -8,17 +8,17 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         "Models.Groups": {
-            "COUNT(*)"?: unknown;
-            id?: unknown;
-            project_id?: unknown;
-            folder_id?: unknown;
-            name?: unknown;
-            on?: unknown;
-            status?: unknown;
-            ord?: unknown;
-            folder_path?: unknown;
-            folder_ord?: unknown;
-            count_keywords?: unknown;
+            "COUNT(*)"?: any;
+            id?: any;
+            project_id?: any;
+            folder_id?: any;
+            name?: any;
+            on?: any;
+            status?: any;
+            ord?: any;
+            folder_path?: any;
+            folder_ord?: any;
+            count_keywords?: any;
             /** @example {
              *       "need set qualifiers": [
              *         "region_key",
@@ -26,7 +26,7 @@ export interface components {
              *         "type"
              *       ]
              *     } */
-            volume?: unknown;
+            volume?: any;
             /** @example {
              *       "need set qualifiers": [
              *         "date",
@@ -34,7 +34,7 @@ export interface components {
              *         "region_index"
              *       ]
              *     } */
-            "POSITIONS_AVG()"?: unknown;
+            "POSITIONS_AVG()"?: any;
             /** @example {
              *       "need set qualifiers": [
              *         "date",
@@ -42,7 +42,7 @@ export interface components {
              *         "region_index"
              *       ]
              *     } */
-            "POSITIONS_TOP10()"?: unknown;
+            "POSITIONS_TOP10()"?: any;
             /** @example {
              *       "need set qualifiers": [
              *         "date",
@@ -50,7 +50,7 @@ export interface components {
              *         "region_index"
              *       ]
              *     } */
-            "POSITIONS_VISIBILITY()"?: unknown;
+            "POSITIONS_VISIBILITY()"?: any;
         };
     };
     responses: never;

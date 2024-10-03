@@ -8,11 +8,11 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         "Models.Broker.Log": {
-            "COUNT(*)"?: unknown;
-            datetime?: unknown;
-            campaign_tv_id?: unknown;
-            text?: unknown;
-            error?: unknown;
+            "COUNT(*)"?: any;
+            datetime?: any;
+            campaign_tv_id?: any;
+            text?: any;
+            error?: any;
         };
     };
     responses: never;

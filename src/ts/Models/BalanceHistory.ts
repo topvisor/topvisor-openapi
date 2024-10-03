@@ -8,23 +8,23 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         "Models.BalanceHistory": {
-            "COUNT(*)"?: unknown;
-            "TOTAL()"?: unknown;
-            currency?: unknown;
-            plus?: unknown;
-            sum_group?: unknown;
+            "COUNT(*)"?: any;
+            "TOTAL()"?: any;
+            currency?: any;
+            plus?: any;
+            sum_group?: any;
             user_id?: number | null;
-            by_user_id?: unknown;
-            sum?: unknown;
-            type?: unknown;
-            info?: unknown;
-            target?: unknown;
+            by_user_id?: any;
+            sum?: any;
+            type?: any;
+            info?: any;
+            target?: any;
             target_id?: number | null;
-            date?: unknown;
-            project_name?: unknown;
-            project_tags?: unknown;
-            project_folder_id?: unknown;
-            by_user_email?: unknown;
+            date?: any;
+            project_name?: any;
+            project_tags?: any;
+            project_folder_id?: any;
+            by_user_email?: any;
         };
     };
     responses: never;

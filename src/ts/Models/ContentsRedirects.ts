@@ -8,12 +8,12 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         "Models.ContentsRedirects": {
-            "PATH_MASK()"?: unknown;
-            "PATH_MASK_SLASHES_COUNT()"?: unknown;
-            site?: unknown;
-            subdomain?: unknown;
-            redirect_subdomain?: unknown;
-            redirect_path?: unknown;
+            "PATH_MASK()"?: any;
+            "PATH_MASK_SLASHES_COUNT()"?: any;
+            site?: any;
+            subdomain?: any;
+            redirect_subdomain?: any;
+            redirect_path?: any;
         };
     };
     responses: never;

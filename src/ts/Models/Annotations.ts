@@ -8,13 +8,13 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         "Models.Annotations": {
-            id?: unknown;
-            user_id?: unknown;
-            project_id?: unknown;
-            service?: unknown;
-            target_id?: unknown;
-            text?: unknown;
-            create_time?: unknown;
+            id?: any;
+            user_id?: any;
+            project_id?: any;
+            service?: any;
+            target_id?: any;
+            text?: any;
+            create_time?: any;
         };
     };
     responses: never;

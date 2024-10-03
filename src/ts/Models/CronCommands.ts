@@ -8,15 +8,15 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         "Models.CronCommands": {
-            "SERVICE()"?: unknown;
+            "SERVICE()"?: any;
             command?: string | null;
             description?: string | null;
             days?: string | null;
             hh?: string | null;
             i?: string | null;
             on?: number | null;
-            task_create_time?: unknown;
-            task_start_time?: unknown;
+            task_create_time?: any;
+            task_start_time?: any;
             task_status?: string | null;
         };
     };
