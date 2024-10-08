@@ -263,7 +263,7 @@
                             "title": "lang found",
                             "title_negative": "lang not found",
                             "description": "lang attribute contains page language. lang helps browsers correctly display characters which differ in different languages (i. o. quotes).",
-                            "resolve": "Check if there is lang attribute in the page source code and fill it in. If there's text on different languages on a page, you can indicate lang for each language. Also check official guides on\n\t\tlocalized pages from <a href=\"https://yandex.ru/support/webmaster/yandex-indexing/locale-pages.html?lang=en#tag\" target=\"_blank\">Yandex</a> and <a href=\"https://developers.google.com/search/docs/specialty/international/localized-versions\" target=\"_blank\">Google</a>."
+                            "resolve": "Check if there is lang attribute in the page source code and fill it in. If there's text on different languages on a page, you can indicate lang for each language."
                         }
                     },
                     "pages_check_fcp_max": {
