@@ -16,12 +16,15 @@ export interface components {
             "AUTHOR_LIKES()"?: any;
             "AUTHOR_VIEWS()"?: any;
             "AUTHOR_UNIQUE_VIEWS()"?: any;
+            "USERS_IDS()"?: any;
             site?: any;
             subdomain?: any;
             url?: any;
             lang?: any;
             parent_url?: any;
             user_id?: any;
+            user_id_2?: any;
+            user_id_3?: any;
             create?: any;
             publish_time?: any;
             noindex?: any;

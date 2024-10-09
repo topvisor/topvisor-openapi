@@ -33,6 +33,9 @@
                     "AUTHOR_UNIQUE_VIEWS()": {
                         "nullable": true
                     },
+                    "USERS_IDS()": {
+                        "nullable": true
+                    },
                     "site": {
                         "nullable": true
                     },
@@ -49,6 +52,12 @@
                         "nullable": true
                     },
                     "user_id": {
+                        "nullable": true
+                    },
+                    "user_id_2": {
+                        "nullable": true
+                    },
+                    "user_id_3": {
                         "nullable": true
                     },
                     "create": {

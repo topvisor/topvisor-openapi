@@ -126,6 +126,14 @@
                     },
                     "author_alias": {
                         "type": "string"
+                    },
+                    "user_id_2": {
+                        "nullable": true,
+                        "type": "integer"
+                    },
+                    "user_id_3": {
+                        "nullable": true,
+                        "type": "integer"
                     }
                 },
                 "required": [

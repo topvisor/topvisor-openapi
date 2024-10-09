@@ -42,6 +42,8 @@ export interface components {
             bookmark: string;
             bookmark_author: string;
             author_alias: string;
+            user_id_2?: number | null;
+            user_id_3?: number | null;
         };
     };
     responses: never;
