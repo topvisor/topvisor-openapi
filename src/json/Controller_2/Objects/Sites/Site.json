@@ -10,7 +10,8 @@
             "Controller_2.Objects.Sites.Site": {
                 "type": "object",
                 "properties": {},
-                "required": []
+                "required": [],
+                "title": "@property string host - Базовый домен сайта"
             }
         }
     }

@@ -4680,6 +4680,7 @@ components:
       type: object
       properties: {}
       required: []
+      title: '@property string host - Базовый домен сайта'
     Controller_2.Objects.TplEngine:
       type: object
       properties: {}
