@@ -2544,6 +2544,69 @@ paths:
             model:
               schema:
                 type: 'null'
+  /get/bank_2/diadoc/sendContract/:
+    post:
+      operationId: GetBank2DiadocSendContract
+      tags:
+        - Bank_2
+      summary: Отправка договора в диадок
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Bank_2.Methods.Diadoc.SendContract.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result: {}
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                      - $ref: '#/components/schemas/Pagination'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
+  /get/bank_2/diadoc/sendTotalReceipt/:
+    post:
+      operationId: GetBank2DiadocSendTotalReceipt
+      tags:
+        - Bank_2
+      summary: Отправка акта сверки в диадок
+      description: Параметры см. в bank_2_requisites::protected_get_printTotalReceipt();
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Bank_2.Methods.Diadoc.SendTotalReceipt.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result: {}
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                      - $ref: '#/components/schemas/Pagination'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
   /edit/bank_2/referrals/toBonus/:
     post:
       operationId: EditBank2ReferralsToBonus
@@ -2571,6 +2634,37 @@ paths:
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
+  /get/bank_2/requisites/printTotalReceipt/:
+    post:
+      operationId: GetBank2RequisitesPrintTotalReceipt
+      tags:
+        - Bank_2
+      summary: Акт сверки (акты по предоплате выводятся в одном платеже)
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Bank_2.Methods.Requisites.PrintTotalReceipt.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result: {}
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                      - $ref: '#/components/schemas/Pagination'
                   - $ref: '#/components/schemas/ResponseError'
             model:
               schema:
@@ -8135,6 +8229,76 @@ components:
         - project_id
         - filters
       title: Получение сводки радара
+    Bank_2.Methods.Diadoc.SendContract.Get:
+      type: object
+      properties:
+        requisites_id:
+          type: string
+        fields:
+          $ref: '#/components/schemas/fields'
+        orders:
+          $ref: '#/components/schemas/orders'
+        filters:
+          $ref: '#/components/schemas/filters'
+        id:
+          $ref: '#/components/schemas/id'
+        limit:
+          $ref: '#/components/schemas/limit'
+        offset:
+          $ref: '#/components/schemas/offset'
+        fetch_style:
+          $ref: '#/components/schemas/fetch_style'
+      required:
+        - requisites_id
+        - fields
+        - orders
+        - filters
+        - offset
+      title: Отправка договора в диадок
+    Bank_2.Methods.Diadoc.SendTotalReceipt.Get:
+      type: object
+      properties:
+        org_id:
+          type: string
+        date1:
+          allOf:
+            - $ref: '#/components/schemas/TV.API.Types.Date'
+        date2:
+          allOf:
+            - $ref: '#/components/schemas/TV.API.Types.Date'
+        org_kpp:
+          type: string
+        requisites_id:
+          nullable: true
+          type: string
+        signed:
+          nullable: true
+          type: boolean
+        fields:
+          $ref: '#/components/schemas/fields'
+        orders:
+          $ref: '#/components/schemas/orders'
+        filters:
+          $ref: '#/components/schemas/filters'
+        id:
+          $ref: '#/components/schemas/id'
+        limit:
+          $ref: '#/components/schemas/limit'
+        offset:
+          $ref: '#/components/schemas/offset'
+        fetch_style:
+          $ref: '#/components/schemas/fetch_style'
+      required:
+        - org_id
+        - date1
+        - date2
+        - org_kpp
+        - fields
+        - orders
+        - filters
+        - offset
+      title: Отправка акта сверки в диадок
+      description: Параметры см. в bank_2_requisites::protected_get_printTotalReceipt();
     Bank_2.Methods.Referrals.ToBonus.Edit:
       type: object
       properties:
@@ -8149,6 +8313,47 @@ components:
         - sum
         - filters
       title: Перевод средств с реферального счета на бонусный
+    Bank_2.Methods.Requisites.PrintTotalReceipt.Get:
+      type: object
+      properties:
+        date1:
+          allOf:
+            - $ref: '#/components/schemas/TV.API.Types.Date'
+        date2:
+          allOf:
+            - $ref: '#/components/schemas/TV.API.Types.Date'
+        org_id:
+          type: string
+        returnPdfDataForDiadoc:
+          title: Для внутреннего использования
+          type: boolean
+        signed:
+          type: boolean
+        fields:
+          $ref: '#/components/schemas/fields'
+        orders:
+          $ref: '#/components/schemas/orders'
+        filters:
+          $ref: '#/components/schemas/filters'
+        id:
+          $ref: '#/components/schemas/id'
+        limit:
+          $ref: '#/components/schemas/limit'
+        offset:
+          $ref: '#/components/schemas/offset'
+        fetch_style:
+          $ref: '#/components/schemas/fetch_style'
+      required:
+        - date1
+        - date2
+        - org_id
+        - returnPdfDataForDiadoc
+        - signed
+        - fields
+        - orders
+        - filters
+        - offset
+      title: Акт сверки (акты по предоплате выводятся в одном платеже)
     Payments_2.Methods.Tariff.DelCard.Edit:
       type: object
       properties: {}
@@ -8167,7 +8372,7 @@ components:
       type: object
       properties:
         id:
-          title: id тарифа
+          title: Id тарифа
           type: string
       required:
         - id

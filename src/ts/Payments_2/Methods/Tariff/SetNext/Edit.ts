@@ -9,7 +9,7 @@ export interface components {
     schemas: {
         /** Сменить тариф со следующего месяца */
         "Payments_2.Methods.Tariff.SetNext.Edit": {
-            /** id тарифа */
+            /** Id тарифа */
             id: string;
         };
     };

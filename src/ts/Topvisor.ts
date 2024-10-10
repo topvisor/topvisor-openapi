@@ -1306,6 +1306,43 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
+    /** Отправка договора в диадок */
+    "/get/bank_2/diadoc/sendContract/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["GetBank2DiadocSendContract"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /**
+     * Отправка акта сверки в диадок
+     * @description Параметры см. в bank_2_requisites::protected_get_printTotalReceipt();
+     */
+    "/get/bank_2/diadoc/sendTotalReceipt/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["GetBank2DiadocSendTotalReceipt"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
     /** Перевод средств с реферального счета на бонусный */
     "/edit/bank_2/referrals/toBonus/": {
         parameters: {
@@ -1317,6 +1354,23 @@ export interface paths {
         get?: never;
         put?: never;
         post: operations["EditBank2ReferralsToBonus"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Акт сверки (акты по предоплате выводятся в одном платеже) */
+    "/get/bank_2/requisites/printTotalReceipt/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["GetBank2RequisitesPrintTotalReceipt"];
         delete?: never;
         options?: never;
         head?: never;
@@ -3723,6 +3777,58 @@ export interface operations {
             };
         };
     };
+    GetBank2DiadocSendContract: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Bank_2/Methods/Diadoc/SendContract/Get.ts').components['schemas']['Bank_2.Methods.Diadoc.SendContract.Get'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: unknown;
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: null;
+                };
+            };
+        };
+    };
+    GetBank2DiadocSendTotalReceipt: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Bank_2/Methods/Diadoc/SendTotalReceipt/Get.ts').components['schemas']['Bank_2.Methods.Diadoc.SendTotalReceipt.Get'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: unknown;
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: null;
+                };
+            };
+        };
+    };
     EditBank2ReferralsToBonus: {
         parameters: {
             query?: never;
@@ -3744,6 +3850,32 @@ export interface operations {
                     "application/json": ({
                         result: number;
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: null;
+                };
+            };
+        };
+    };
+    GetBank2RequisitesPrintTotalReceipt: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Bank_2/Methods/Requisites/PrintTotalReceipt/Get.ts').components['schemas']['Bank_2.Methods.Requisites.PrintTotalReceipt.Get'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: unknown;
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
             };

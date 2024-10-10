@@ -11,7 +11,7 @@
                 "type": "object",
                 "properties": {
                     "id": {
-                        "title": "id тарифа",
+                        "title": "Id тарифа",
                         "type": "string"
                     }
                 },
