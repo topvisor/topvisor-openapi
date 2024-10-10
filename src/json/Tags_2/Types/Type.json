@@ -1,13 +1,13 @@
 {
     "openapi": "3.0.0",
     "info": {
-        "title": "Topvisor/Tags_2.Types.TargetType",
+        "title": "Topvisor/Tags_2.Types.Type",
         "version": "2.0.0"
     },
     "paths": {},
     "components": {
         "schemas": {
-            "Tags_2.Types.TargetType": {
+            "Tags_2.Types.Type": {
                 "type": "string",
                 "enum": [
                     "tickets",
@@ -17,7 +17,7 @@
                     "shortLinks",
                     "urls"
                 ],
-                "title": "Категория тега"
+                "title": "Тип тега, к каким объектам применяется"
             }
         }
     }

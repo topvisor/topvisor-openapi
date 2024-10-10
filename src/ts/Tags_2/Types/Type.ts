@@ -8,10 +8,10 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         /**
-         * Категория тега
+         * Тип тега, к каким объектам применяется
          * @enum {string}
          */
-        "Tags_2.Types.TargetType": "tickets" | "projects" | "keywords" | "snippets" | "shortLinks" | "urls";
+        "Tags_2.Types.Type": "tickets" | "projects" | "keywords" | "snippets" | "shortLinks" | "urls";
     };
     responses: never;
     parameters: never;
