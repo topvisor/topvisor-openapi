@@ -389,6 +389,8 @@ export interface components {
             /** @constant */
             Tag?: "Tag";
             /** @constant */
+            Tags?: "Tags";
+            /** @constant */
             All_tags?: "All tags";
             /** @constant */
             Charts?: "Charts";
@@ -500,6 +502,8 @@ export interface components {
             Move?: "Move";
             /** @constant */
             Delete?: "Delete";
+            /** @constant */
+            Repalce?: "Repalce";
             /** @constant */
             Restore?: "Restore";
             /** @constant */

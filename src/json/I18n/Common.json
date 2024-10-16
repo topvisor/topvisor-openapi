@@ -580,6 +580,9 @@
                     "Tag": {
                         "const": "Tag"
                     },
+                    "Tags": {
+                        "const": "Tags"
+                    },
                     "All_tags": {
                         "const": "All tags"
                     },
@@ -747,6 +750,9 @@
                     },
                     "Delete": {
                         "const": "Delete"
+                    },
+                    "Repalce": {
+                        "const": "Repalce"
                     },
                     "Restore": {
                         "const": "Restore"
