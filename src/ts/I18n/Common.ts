@@ -503,7 +503,7 @@ export interface components {
             /** @constant */
             Delete?: "Delete";
             /** @constant */
-            Repalce?: "Repalce";
+            Replace?: "Repalce";
             /** @constant */
             Restore?: "Restore";
             /** @constant */
