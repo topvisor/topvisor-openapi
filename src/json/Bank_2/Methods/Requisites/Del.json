@@ -10,15 +10,12 @@
             "Bank_2.Methods.Requisites.Del": {
                 "type": "object",
                 "properties": {
-                    "filters": {
-                        "$ref": "../../../TV/API/Params/FiltersTrait.json#/components/schemas/TV.API.Params.FiltersTrait/properties/filters"
-                    },
                     "id": {
-                        "$ref": "../../../TV/API/Params/FiltersTrait.json#/components/schemas/TV.API.Params.FiltersTrait/properties/id"
+                        "type": "string"
                     }
                 },
                 "required": [
-                    "filters"
+                    "id"
                 ],
                 "title": "Закрыть договор (оферту закрыть невозможно)"
             }

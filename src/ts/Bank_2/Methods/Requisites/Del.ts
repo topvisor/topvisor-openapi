@@ -9,8 +9,7 @@ export interface components {
     schemas: {
         /** Закрыть договор (оферту закрыть невозможно) */
         "Bank_2.Methods.Requisites.Del": {
-            filters: import('../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['filters'];
-            id?: import('../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['id'];
+            id: string;
         };
     };
     responses: never;
