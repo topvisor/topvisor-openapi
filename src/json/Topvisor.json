@@ -757,6 +757,133 @@
                 }
             }
         },
+        "/edit/tags_2/": {
+            "post": {
+                "operationId": "EditTags2",
+                "tags": [
+                    "Tags_2"
+                ],
+                "summary": "Изменить параметры тегов",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Tags_2/Methods/Edit.json#/components/schemas/Tags_2.Methods.Edit"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "oneOf": [
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {}
+                                                    },
+                                                    "required": [
+                                                        "result"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
+                                        }
+                                    ]
+                                }
+                            },
+                            "model": {
+                                "schema": {
+                                    "type": "null"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/get/tags_2/": {
+            "post": {
+                "operationId": "GetTags2",
+                "tags": [
+                    "Tags_2"
+                ],
+                "summary": "Получение списка тегов",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Tags_2/Methods/Get.json#/components/schemas/Tags_2.Methods.Get"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "oneOf": [
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "type": "array",
+                                                            "items": {
+                                                                "oneOf": [
+                                                                    {
+                                                                        "type": "string"
+                                                                    },
+                                                                    {
+                                                                        "type": "number"
+                                                                    }
+                                                                ]
+                                                            }
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "result"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                },
+                                                {
+                                                    "$ref": "Pagination.json#/components/schemas/Pagination"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
+                                        }
+                                    ]
+                                }
+                            },
+                            "model": {
+                                "schema": {
+                                    "type": "null"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
         "/add/urls_2/": {
             "post": {
                 "operationId": "AddUrls2",

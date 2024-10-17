@@ -248,6 +248,40 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
+    /** Изменить параметры тегов */
+    "/edit/tags_2/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["EditTags2"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Получение списка тегов */
+    "/get/tags_2/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["GetTags2"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
     /** Добавление url */
     "/add/urls_2/": {
         parameters: {
@@ -2413,6 +2447,58 @@ export interface operations {
                     "application/json": ({
                         result: string;
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: null;
+                };
+            };
+        };
+    };
+    EditTags2: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Tags_2/Methods/Edit.ts').components['schemas']['Tags_2.Methods.Edit'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: unknown;
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: null;
+                };
+            };
+        };
+    };
+    GetTags2: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Tags_2/Methods/Get.ts').components['schemas']['Tags_2.Methods.Get'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: (string | number)[];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
             };

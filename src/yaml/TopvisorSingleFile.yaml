@@ -529,6 +529,72 @@ paths:
             model:
               schema:
                 type: 'null'
+  /edit/tags_2/:
+    post:
+      operationId: EditTags2
+      tags:
+        - Tags_2
+      summary: Изменить параметры тегов
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Tags_2.Methods.Edit'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result: {}
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
+  /get/tags_2/:
+    post:
+      operationId: GetTags2
+      tags:
+        - Tags_2
+      summary: Получение списка тегов
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Tags_2.Methods.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            type: array
+                            items:
+                              oneOf:
+                                - type: string
+                                - type: number
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                      - $ref: '#/components/schemas/Pagination'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
   /add/urls_2/:
     post:
       operationId: AddUrls2
@@ -4625,6 +4691,79 @@ components:
         - point_size
       title: Генерирует QR код по тексту
       description: Возвращает изображение в формате data:image/png;base64
+    Tags_2.Types.Type:
+      type: string
+      enum:
+        - tickets
+        - projects
+        - keywords
+        - snippets
+        - shortLinks
+        - urls
+      title: Тип тега, к каким объектам применяется
+    Tags_2.Methods.Edit:
+      type: object
+      properties:
+        type:
+          allOf:
+            - $ref: '#/components/schemas/Tags_2.Types.Type'
+        tags:
+          title: |-
+            Список тегов в формате:
+            <code>
+            {
+               id:id,
+               name:name,
+               color_id:color_id
+            }
+            </code>
+          type: array
+          items:
+            oneOf:
+              - type: string
+              - type: number
+        project_id:
+          nullable: true
+          type: integer
+        filters:
+          $ref: '#/components/schemas/filters'
+        id:
+          $ref: '#/components/schemas/id'
+      required:
+        - type
+        - tags
+        - filters
+      title: Изменить параметры тегов
+    Tags_2.Methods.Get:
+      type: object
+      properties:
+        type:
+          allOf:
+            - $ref: '#/components/schemas/Tags_2.Types.Type'
+        project_id:
+          nullable: true
+          type: integer
+        fields:
+          $ref: '#/components/schemas/fields'
+        orders:
+          $ref: '#/components/schemas/orders'
+        filters:
+          $ref: '#/components/schemas/filters'
+        id:
+          $ref: '#/components/schemas/id'
+        limit:
+          $ref: '#/components/schemas/limit'
+        offset:
+          $ref: '#/components/schemas/offset'
+        fetch_style:
+          $ref: '#/components/schemas/fetch_style'
+      required:
+        - type
+        - fields
+        - orders
+        - filters
+        - offset
+      title: Получение списка тегов
     TV.API.Types.Url:
       type: string
       title: |-
