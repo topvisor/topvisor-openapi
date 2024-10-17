@@ -1,0 +1,47 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Bank_2.Methods.Requisites.Add",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Bank_2.Methods.Requisites.Add": {
+                "type": "object",
+                "properties": {
+                    "data": {
+                        "type": "array",
+                        "items": {
+                            "oneOf": [
+                                {
+                                    "type": "string"
+                                },
+                                {
+                                    "type": "number"
+                                }
+                            ]
+                        }
+                    },
+                    "type": {
+                        "allOf": [
+                            {
+                                "$ref": "../../../Bank_2/Types/Requisites/Type.json#/components/schemas/Bank_2.Types.Requisites.Type"
+                            }
+                        ]
+                    },
+                    "tariff_id": {
+                        "title": "Id тарифа, для договоров, ассоциируемых с тарифом (например fl223)",
+                        "nullable": true,
+                        "type": "integer"
+                    }
+                },
+                "required": [
+                    "data",
+                    "type"
+                ],
+                "title": "Добавить реквизиты"
+            }
+        }
+    }
+}

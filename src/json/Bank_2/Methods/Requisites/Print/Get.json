@@ -1,40 +1,25 @@
 {
     "openapi": "3.0.0",
     "info": {
-        "title": "Topvisor/Bank_2.Methods.Diadoc.SendTotalReceipt.Get",
+        "title": "Topvisor/Bank_2.Methods.Requisites.Print.Get",
         "version": "2.0.0"
     },
     "paths": {},
     "components": {
         "schemas": {
-            "Bank_2.Methods.Diadoc.SendTotalReceipt.Get": {
+            "Bank_2.Methods.Requisites.Print.Get": {
                 "type": "object",
                 "properties": {
-                    "org_id": {
+                    "target_id": {
+                        "title": "Id документа",
                         "type": "string"
                     },
-                    "date1": {
-                        "allOf": [
-                            {
-                                "$ref": "../../../../TV/API/Types/Date.json#/components/schemas/TV.API.Types.Date"
-                            }
-                        ]
-                    },
-                    "date2": {
-                        "allOf": [
-                            {
-                                "$ref": "../../../../TV/API/Types/Date.json#/components/schemas/TV.API.Types.Date"
-                            }
-                        ]
-                    },
-                    "org_kpp": {
-                        "type": "string"
-                    },
-                    "requisites_id": {
-                        "nullable": true,
+                    "type": {
+                        "title": "Тип документа enum(RequisitesDocuments::$availableDocumentsTypes)",
                         "type": "string"
                     },
                     "signed": {
+                        "title": "Если true, то документ с подписью (не распространяется на договоры)",
                         "type": "boolean"
                     },
                     "fields": {
@@ -60,18 +45,15 @@
                     }
                 },
                 "required": [
-                    "org_id",
-                    "date1",
-                    "date2",
-                    "org_kpp",
+                    "target_id",
+                    "type",
                     "signed",
                     "fields",
                     "orders",
                     "filters",
                     "offset"
                 ],
-                "title": "Отправка акта сверки в диадок",
-                "description": "Параметры см. в bank_2_requisites::protected_get_printTotalReceipt();"
+                "title": "Скачать документ в формате PDF"
             }
         }
     }

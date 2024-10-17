@@ -907,6 +907,68 @@ paths:
             model:
               schema:
                 type: 'null'
+  /get/bank_2/bank/:
+    post:
+      operationId: GetBank2Bank
+      tags:
+        - Bank_2
+      summary: Получение данных банка по БИК
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Bank_2.Methods.Bank.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result: {}
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                      - $ref: '#/components/schemas/Pagination'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
+  /get/bank_2/history/:
+    post:
+      operationId: GetBank2History
+      tags:
+        - Bank_2
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Bank_2.Methods.History.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result: {}
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                      - $ref: '#/components/schemas/Pagination'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                $ref: '#/components/schemas/Models.BalanceHistory'
+                description: Only for typescript, does not contain real data
   /get/bank_2/info/:
     post:
       operationId: GetBank2Info
@@ -935,6 +997,160 @@ paths:
                               oneOf:
                                 - type: string
                                 - type: number
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                      - $ref: '#/components/schemas/Pagination'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
+  /add/bank_2/requisites/:
+    post:
+      operationId: AddBank2Requisites
+      tags:
+        - Bank_2
+      summary: Добавить реквизиты
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Bank_2.Methods.Requisites.Add'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            type: string
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
+  /del/bank_2/requisites/:
+    post:
+      operationId: DelBank2Requisites
+      tags:
+        - Bank_2
+      summary: Закрыть договор (оферту закрыть невозможно)
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Bank_2.Methods.Requisites.Del'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result: {}
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
+  /edit/bank_2/requisites/:
+    post:
+      operationId: EditBank2Requisites
+      tags:
+        - Bank_2
+      summary: Измениить реквизиты
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Bank_2.Methods.Requisites.Edit'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result: {}
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
+  /get/bank_2/requisites/:
+    post:
+      operationId: GetBank2Requisites
+      tags:
+        - Bank_2
+      summary: Получить список договоров
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Bank_2.Methods.Requisites.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result: {}
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                      - $ref: '#/components/schemas/Pagination'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                $ref: '#/components/schemas/Models.Requisites'
+                description: Only for typescript, does not contain real data
+  /get/bank_2/ur/:
+    post:
+      operationId: GetBank2Ur
+      tags:
+        - Bank_2
+      summary: Запрос на получение юридического лица
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Bank_2.Methods.Ur.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result: {}
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
@@ -2607,6 +2823,62 @@ paths:
             model:
               schema:
                 type: 'null'
+  /get/bank_2/history/export/:
+    post:
+      operationId: GetBank2HistoryExport
+      tags:
+        - Bank_2
+      summary: Экспорт лога банка
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Bank_2.Methods.History.Export.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/octet-stream:
+              schema:
+                type: string
+                format: binary
+  /get/bank_2/history/summary/:
+    post:
+      operationId: GetBank2HistorySummary
+      tags:
+        - Bank_2
+      summary: Получить сводку проведенных операций
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Bank_2.Methods.History.Summary.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            type: array
+                            items:
+                              $ref: '#/components/schemas/Models.BalanceHistory'
+                              description: Only for typescript, does not contain real data
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                      - $ref: '#/components/schemas/Pagination'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                $ref: '#/components/schemas/Models.BalanceHistory'
+                description: Only for typescript, does not contain real data
   /edit/bank_2/referrals/toBonus/:
     post:
       operationId: EditBank2ReferralsToBonus
@@ -2638,6 +2910,56 @@ paths:
             model:
               schema:
                 type: 'null'
+  /get/bank_2/requisites/contractTariffId/:
+    post:
+      operationId: GetBank2RequisitesContractTariffId
+      tags:
+        - Bank_2
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Bank_2.Methods.Requisites.ContractTariffId.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result: {}
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                      - $ref: '#/components/schemas/Pagination'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
+  /get/bank_2/requisites/print/:
+    post:
+      operationId: GetBank2RequisitesPrint
+      tags:
+        - Bank_2
+      summary: Скачать документ в формате PDF
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Bank_2.Methods.Requisites.Print.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/octet-stream:
+              schema:
+                type: string
+                format: binary
   /get/bank_2/requisites/printTotalReceipt/:
     post:
       operationId: GetBank2RequisitesPrintTotalReceipt
@@ -2649,6 +2971,37 @@ paths:
           application/json:
             schema:
               $ref: '#/components/schemas/Bank_2.Methods.Requisites.PrintTotalReceipt.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result: {}
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                      - $ref: '#/components/schemas/Pagination'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
+  /get/bank_2/requisites/printZip/:
+    post:
+      operationId: GetBank2RequisitesPrintZip
+      tags:
+        - Bank_2
+      summary: Скачать архив документов в формате PDF
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Bank_2.Methods.Requisites.PrintZip.Get'
         required: true
       responses:
         '200':
@@ -5357,6 +5710,92 @@ components:
         Отчет генерируется на основе объектов urls
 
         Необходимо указать либо check_id1 и check_id2, либо checks_ids (вместе указывать нельзя)
+    Bank_2.Methods.Bank.Get:
+      type: object
+      properties:
+        bik:
+          type: string
+        fields:
+          $ref: '#/components/schemas/fields'
+        orders:
+          $ref: '#/components/schemas/orders'
+        filters:
+          $ref: '#/components/schemas/filters'
+        id:
+          $ref: '#/components/schemas/id'
+        limit:
+          $ref: '#/components/schemas/limit'
+        offset:
+          $ref: '#/components/schemas/offset'
+        fetch_style:
+          $ref: '#/components/schemas/fetch_style'
+      required:
+        - bik
+        - fields
+        - orders
+        - filters
+        - offset
+      title: Получение данных банка по БИК
+    Bank_2.Methods.History.Get:
+      type: object
+      properties:
+        fields:
+          $ref: '#/components/schemas/fields'
+        orders:
+          $ref: '#/components/schemas/orders'
+        filters:
+          $ref: '#/components/schemas/filters'
+        id:
+          $ref: '#/components/schemas/id'
+        limit:
+          $ref: '#/components/schemas/limit'
+        offset:
+          $ref: '#/components/schemas/offset'
+        fetch_style:
+          $ref: '#/components/schemas/fetch_style'
+      required:
+        - fields
+        - orders
+        - filters
+        - offset
+    Models.BalanceHistory:
+      properties:
+        COUNT(*):
+          nullable: true
+        TOTAL():
+          nullable: true
+        currency:
+          nullable: true
+        plus:
+          nullable: true
+        sum_group:
+          nullable: true
+        user_id:
+          type: integer
+          nullable: true
+        by_user_id:
+          nullable: true
+        sum:
+          nullable: true
+        type:
+          nullable: true
+        info:
+          nullable: true
+        target:
+          nullable: true
+        target_id:
+          type: integer
+          nullable: true
+        date:
+          nullable: true
+        project_name:
+          nullable: true
+        project_tags:
+          nullable: true
+        project_folder_id:
+          nullable: true
+        by_user_email:
+          nullable: true
     Bank_2.Methods.Info.Get:
       type: object
       properties:
@@ -5380,6 +5819,144 @@ components:
         - filters
         - offset
       title: Предоставить инфомацию по счету
+    Bank_2.Types.Requisites.Type:
+      type: string
+      enum:
+        - contract
+        - offer
+        - partnerOffer
+        - fl223
+        - domainsContract
+        - domainsOffer
+        - domainsPersonContract
+        - domainsPersonOffer
+    Bank_2.Methods.Requisites.Add:
+      type: object
+      properties:
+        data:
+          type: array
+          items:
+            oneOf:
+              - type: string
+              - type: number
+        type:
+          allOf:
+            - $ref: '#/components/schemas/Bank_2.Types.Requisites.Type'
+        tariff_id:
+          title: Id тарифа, для договоров, ассоциируемых с тарифом (например fl223)
+          nullable: true
+          type: integer
+      required:
+        - data
+        - type
+      title: Добавить реквизиты
+    Bank_2.Methods.Requisites.Del:
+      type: object
+      properties:
+        filters:
+          $ref: '#/components/schemas/filters'
+        id:
+          $ref: '#/components/schemas/id'
+      required:
+        - filters
+      title: Закрыть договор (оферту закрыть невозможно)
+    Bank_2.Methods.Requisites.Edit:
+      type: object
+      properties:
+        data:
+          type: array
+          items:
+            oneOf:
+              - type: string
+              - type: number
+        filters:
+          $ref: '#/components/schemas/filters'
+        id:
+          $ref: '#/components/schemas/id'
+      required:
+        - data
+        - filters
+      title: Измениить реквизиты
+    Bank_2.Methods.Requisites.Get:
+      type: object
+      properties:
+        include_edc_data:
+          title: Добавить информацию о доступных контрагентах организации для ЭДО
+          type: boolean
+        fields:
+          $ref: '#/components/schemas/fields'
+        orders:
+          $ref: '#/components/schemas/orders'
+        filters:
+          $ref: '#/components/schemas/filters'
+        id:
+          $ref: '#/components/schemas/id'
+        limit:
+          $ref: '#/components/schemas/limit'
+        offset:
+          $ref: '#/components/schemas/offset'
+        fetch_style:
+          $ref: '#/components/schemas/fetch_style'
+      required:
+        - include_edc_data
+        - fields
+        - orders
+        - filters
+        - offset
+      title: Получить список договоров
+    Models.Requisites:
+      properties:
+        LABEL():
+          nullable: true
+        id: {}
+        user_id:
+          nullable: true
+        country:
+          nullable: true
+        contract_date:
+          nullable: true
+        contract_type:
+          nullable: true
+        contract_balance:
+          nullable: true
+        contract_tariff_id:
+          nullable: true
+        data:
+          nullable: true
+        signed:
+          nullable: true
+        deleted:
+          nullable: true
+        edc_connected:
+          nullable: true
+        fromBase64Data:
+          nullable: true
+    Bank_2.Methods.Ur.Get:
+      type: object
+      properties:
+        inn:
+          type: string
+        fields:
+          $ref: '#/components/schemas/fields'
+        orders:
+          $ref: '#/components/schemas/orders'
+        filters:
+          $ref: '#/components/schemas/filters'
+        id:
+          $ref: '#/components/schemas/id'
+        limit:
+          $ref: '#/components/schemas/limit'
+        offset:
+          $ref: '#/components/schemas/offset'
+        fetch_style:
+          $ref: '#/components/schemas/fetch_style'
+      required:
+        - inn
+        - fields
+        - orders
+        - filters
+        - offset
+      title: Запрос на получение юридического лица
     Comments_2.Methods.Like.Edit:
       type: object
       properties:
@@ -8272,7 +8849,6 @@ components:
           nullable: true
           type: string
         signed:
-          nullable: true
           type: boolean
         fields:
           $ref: '#/components/schemas/fields'
@@ -8293,12 +8869,66 @@ components:
         - date1
         - date2
         - org_kpp
+        - signed
         - fields
         - orders
         - filters
         - offset
       title: Отправка акта сверки в диадок
       description: Параметры см. в bank_2_requisites::protected_get_printTotalReceipt();
+    Bank_2.Methods.History.Export.Get:
+      type: object
+      properties:
+        output:
+          type: string
+        show_summary_by_groups:
+          title: Вывести итого по группам
+          type: boolean
+        fields:
+          $ref: '#/components/schemas/fields'
+        orders:
+          $ref: '#/components/schemas/orders'
+        filters:
+          $ref: '#/components/schemas/filters'
+        id:
+          $ref: '#/components/schemas/id'
+        limit:
+          $ref: '#/components/schemas/limit'
+        offset:
+          $ref: '#/components/schemas/offset'
+        fetch_style:
+          $ref: '#/components/schemas/fetch_style'
+      required:
+        - output
+        - show_summary_by_groups
+        - fields
+        - orders
+        - filters
+        - offset
+      title: Экспорт лога банка
+    Bank_2.Methods.History.Summary.Get:
+      type: object
+      properties:
+        fields:
+          $ref: '#/components/schemas/fields'
+        orders:
+          $ref: '#/components/schemas/orders'
+        filters:
+          $ref: '#/components/schemas/filters'
+        id:
+          $ref: '#/components/schemas/id'
+        limit:
+          $ref: '#/components/schemas/limit'
+        offset:
+          $ref: '#/components/schemas/offset'
+        fetch_style:
+          $ref: '#/components/schemas/fetch_style'
+      required:
+        - fields
+        - orders
+        - filters
+        - offset
+      title: Получить сводку проведенных операций
     Bank_2.Methods.Referrals.ToBonus.Edit:
       type: object
       properties:
@@ -8313,6 +8943,66 @@ components:
         - sum
         - filters
       title: Перевод средств с реферального счета на бонусный
+    Bank_2.Methods.Requisites.ContractTariffId.Get:
+      type: object
+      properties:
+        contract_type:
+          type: string
+        fields:
+          $ref: '#/components/schemas/fields'
+        orders:
+          $ref: '#/components/schemas/orders'
+        filters:
+          $ref: '#/components/schemas/filters'
+        id:
+          $ref: '#/components/schemas/id'
+        limit:
+          $ref: '#/components/schemas/limit'
+        offset:
+          $ref: '#/components/schemas/offset'
+        fetch_style:
+          $ref: '#/components/schemas/fetch_style'
+      required:
+        - contract_type
+        - fields
+        - orders
+        - filters
+        - offset
+    Bank_2.Methods.Requisites.Print.Get:
+      type: object
+      properties:
+        target_id:
+          title: Id документа
+          type: string
+        type:
+          title: Тип документа enum(RequisitesDocuments::$availableDocumentsTypes)
+          type: string
+        signed:
+          title: Если true, то документ с подписью (не распространяется на договоры)
+          type: boolean
+        fields:
+          $ref: '#/components/schemas/fields'
+        orders:
+          $ref: '#/components/schemas/orders'
+        filters:
+          $ref: '#/components/schemas/filters'
+        id:
+          $ref: '#/components/schemas/id'
+        limit:
+          $ref: '#/components/schemas/limit'
+        offset:
+          $ref: '#/components/schemas/offset'
+        fetch_style:
+          $ref: '#/components/schemas/fetch_style'
+      required:
+        - target_id
+        - type
+        - signed
+        - fields
+        - orders
+        - filters
+        - offset
+      title: Скачать документ в формате PDF
     Bank_2.Methods.Requisites.PrintTotalReceipt.Get:
       type: object
       properties:
@@ -8354,6 +9044,54 @@ components:
         - filters
         - offset
       title: Акт сверки (акты по предоплате выводятся в одном платеже)
+    Bank_2.Methods.Requisites.PrintZip.Get:
+      type: object
+      properties:
+        targets_ids:
+          title: Id документов
+          description: Вместо targets_ids можно указывать набор параметров org_id, date1 и date2
+          nullable: true
+          allOf:
+            - $ref: '#/components/schemas/TV.API.Types.IntArray'
+        org_id:
+          nullable: true
+          type: string
+        date1:
+          nullable: true
+          allOf:
+            - $ref: '#/components/schemas/TV.API.Types.Date'
+        date2:
+          nullable: true
+          allOf:
+            - $ref: '#/components/schemas/TV.API.Types.Date'
+        type:
+          title: Тип документа enum(RequisitesDocuments::$availableDocumentsTypes)
+          type: string
+        signed:
+          title: Если true, то документ с подписью (не распространяется на договоры)
+          type: boolean
+        fields:
+          $ref: '#/components/schemas/fields'
+        orders:
+          $ref: '#/components/schemas/orders'
+        filters:
+          $ref: '#/components/schemas/filters'
+        id:
+          $ref: '#/components/schemas/id'
+        limit:
+          $ref: '#/components/schemas/limit'
+        offset:
+          $ref: '#/components/schemas/offset'
+        fetch_style:
+          $ref: '#/components/schemas/fetch_style'
+      required:
+        - type
+        - signed
+        - fields
+        - orders
+        - filters
+        - offset
+      title: Скачать архив документов в формате PDF
     Payments_2.Methods.Tariff.DelCard.Edit:
       type: object
       properties: {}

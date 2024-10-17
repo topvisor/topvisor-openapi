@@ -7,16 +7,19 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /**
-         * Отправка акта сверки в диадок
-         * @description Параметры см. в bank_2_requisites::protected_get_printTotalReceipt();
-         */
-        "Bank_2.Methods.Diadoc.SendTotalReceipt.Get": {
-            org_id: string;
-            date1: import('../../../../TV/API/Types/Date.ts').components['schemas']['TV.API.Types.Date'];
-            date2: import('../../../../TV/API/Types/Date.ts').components['schemas']['TV.API.Types.Date'];
-            org_kpp: string;
-            requisites_id?: string | null;
+        /** Скачать архив документов в формате PDF */
+        "Bank_2.Methods.Requisites.PrintZip.Get": {
+            /**
+             * Id документов
+             * @description Вместо targets_ids можно указывать набор параметров org_id, date1 и date2
+             */
+            targets_ids?: import('../../../../TV/API/Types/IntArray.ts').components['schemas']['TV.API.Types.IntArray'] | null;
+            org_id?: string | null;
+            date1?: import('../../../../TV/API/Types/Date.ts').components['schemas']['TV.API.Types.Date'] | null;
+            date2?: import('../../../../TV/API/Types/Date.ts').components['schemas']['TV.API.Types.Date'] | null;
+            /** Тип документа enum(RequisitesDocuments::$availableDocumentsTypes) */
+            type: string;
+            /** Если true, то документ с подписью (не распространяется на договоры) */
             signed: boolean;
             fields: import('../../../../TV/API/Params/FieldsTrait.ts').components['schemas']['TV.API.Params.FieldsTrait']['fields'];
             orders: import('../../../../TV/API/Params/OrdersTrait.ts').components['schemas']['TV.API.Params.OrdersTrait']['orders'];

@@ -1,19 +1,31 @@
 {
     "openapi": "3.0.0",
     "info": {
-        "title": "Topvisor/Bank_2.Methods.Diadoc.SendTotalReceipt.Get",
+        "title": "Topvisor/Bank_2.Methods.Requisites.PrintZip.Get",
         "version": "2.0.0"
     },
     "paths": {},
     "components": {
         "schemas": {
-            "Bank_2.Methods.Diadoc.SendTotalReceipt.Get": {
+            "Bank_2.Methods.Requisites.PrintZip.Get": {
                 "type": "object",
                 "properties": {
+                    "targets_ids": {
+                        "title": "Id документов",
+                        "description": "Вместо targets_ids можно указывать набор параметров org_id, date1 и date2",
+                        "nullable": true,
+                        "allOf": [
+                            {
+                                "$ref": "../../../../TV/API/Types/IntArray.json#/components/schemas/TV.API.Types.IntArray"
+                            }
+                        ]
+                    },
                     "org_id": {
+                        "nullable": true,
                         "type": "string"
                     },
                     "date1": {
+                        "nullable": true,
                         "allOf": [
                             {
                                 "$ref": "../../../../TV/API/Types/Date.json#/components/schemas/TV.API.Types.Date"
@@ -21,20 +33,19 @@
                         ]
                     },
                     "date2": {
+                        "nullable": true,
                         "allOf": [
                             {
                                 "$ref": "../../../../TV/API/Types/Date.json#/components/schemas/TV.API.Types.Date"
                             }
                         ]
                     },
-                    "org_kpp": {
-                        "type": "string"
-                    },
-                    "requisites_id": {
-                        "nullable": true,
+                    "type": {
+                        "title": "Тип документа enum(RequisitesDocuments::$availableDocumentsTypes)",
                         "type": "string"
                     },
                     "signed": {
+                        "title": "Если true, то документ с подписью (не распространяется на договоры)",
                         "type": "boolean"
                     },
                     "fields": {
@@ -60,18 +71,14 @@
                     }
                 },
                 "required": [
-                    "org_id",
-                    "date1",
-                    "date2",
-                    "org_kpp",
+                    "type",
                     "signed",
                     "fields",
                     "orders",
                     "filters",
                     "offset"
                 ],
-                "title": "Отправка акта сверки в диадок",
-                "description": "Параметры см. в bank_2_requisites::protected_get_printTotalReceipt();"
+                "title": "Скачать архив документов в формате PDF"
             }
         }
     }
