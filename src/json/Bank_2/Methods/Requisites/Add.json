@@ -32,13 +32,13 @@
                     },
                     "tariff_id": {
                         "title": "Id тарифа, для договоров, ассоциируемых с тарифом (например fl223)",
-                        "nullable": true,
                         "type": "integer"
                     }
                 },
                 "required": [
                     "data",
-                    "type"
+                    "type",
+                    "tariff_id"
                 ],
                 "title": "Добавить реквизиты"
             }

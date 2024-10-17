@@ -5983,11 +5983,11 @@ components:
             - $ref: '#/components/schemas/Bank_2.Types.Requisites.Type'
         tariff_id:
           title: Id тарифа, для договоров, ассоциируемых с тарифом (например fl223)
-          nullable: true
           type: integer
       required:
         - data
         - type
+        - tariff_id
       title: Добавить реквизиты
     Bank_2.Methods.Requisites.Del:
       type: object

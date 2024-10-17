@@ -12,7 +12,7 @@ export interface components {
             data: (string | number)[];
             type: import('../../Types/Requisites/Type.ts').components['schemas']['Bank_2.Types.Requisites.Type'];
             /** Id тарифа, для договоров, ассоциируемых с тарифом (например fl223) */
-            tariff_id?: number | null;
+            tariff_id: number;
         };
     };
     responses: never;
