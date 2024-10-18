@@ -9,7 +9,8 @@ export interface components {
     schemas: {
         /** Добавить реквизиты */
         "Bank_2.Methods.Requisites.Add": {
-            data: (string | number)[];
+            /** см. объект Bank_2\Objects\Requisites */
+            data: string;
             type: import('../../Types/Requisites/Type.ts').components['schemas']['Bank_2.Types.Requisites.Type'];
             /** Id тарифа, для договоров, ассоциируемых с тарифом (например fl223) */
             tariff_id: number;

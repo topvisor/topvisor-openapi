@@ -10,7 +10,8 @@ export interface components {
         /** Измениить реквизиты */
         "Bank_2.Methods.Requisites.Edit": {
             id: string;
-            data: (string | number)[];
+            /** см. объект Bank_2\Objects\Requisites */
+            data: string;
         };
     };
     responses: never;

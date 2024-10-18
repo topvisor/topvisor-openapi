@@ -5973,11 +5973,8 @@ components:
       type: object
       properties:
         data:
-          type: array
-          items:
-            oneOf:
-              - type: string
-              - type: number
+          title: см. объект Bank_2\Objects\Requisites
+          type: string
         type:
           allOf:
             - $ref: '#/components/schemas/Bank_2.Types.Requisites.Type'
@@ -6003,11 +6000,8 @@ components:
         id:
           type: string
         data:
-          type: array
-          items:
-            oneOf:
-              - type: string
-              - type: number
+          title: см. объект Bank_2\Objects\Requisites
+          type: string
       required:
         - id
         - data

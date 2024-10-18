@@ -11,17 +11,8 @@
                 "type": "object",
                 "properties": {
                     "data": {
-                        "type": "array",
-                        "items": {
-                            "oneOf": [
-                                {
-                                    "type": "string"
-                                },
-                                {
-                                    "type": "number"
-                                }
-                            ]
-                        }
+                        "title": "см. объект Bank_2\\Objects\\Requisites",
+                        "type": "string"
                     },
                     "type": {
                         "allOf": [
