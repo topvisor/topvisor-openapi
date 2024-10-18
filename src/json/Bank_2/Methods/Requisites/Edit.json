@@ -10,6 +10,9 @@
             "Bank_2.Methods.Requisites.Edit": {
                 "type": "object",
                 "properties": {
+                    "id": {
+                        "type": "string"
+                    },
                     "data": {
                         "type": "array",
                         "items": {
@@ -22,17 +25,11 @@
                                 }
                             ]
                         }
-                    },
-                    "filters": {
-                        "$ref": "../../../TV/API/Params/FiltersTrait.json#/components/schemas/TV.API.Params.FiltersTrait/properties/filters"
-                    },
-                    "id": {
-                        "$ref": "../../../TV/API/Params/FiltersTrait.json#/components/schemas/TV.API.Params.FiltersTrait/properties/id"
                     }
                 },
                 "required": [
-                    "data",
-                    "filters"
+                    "id",
+                    "data"
                 ],
                 "title": "Измениить реквизиты"
             }

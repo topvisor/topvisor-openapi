@@ -6000,19 +6000,17 @@ components:
     Bank_2.Methods.Requisites.Edit:
       type: object
       properties:
+        id:
+          type: string
         data:
           type: array
           items:
             oneOf:
               - type: string
               - type: number
-        filters:
-          $ref: '#/components/schemas/filters'
-        id:
-          $ref: '#/components/schemas/id'
       required:
+        - id
         - data
-        - filters
       title: Измениить реквизиты
     Bank_2.Methods.Requisites.Get:
       type: object

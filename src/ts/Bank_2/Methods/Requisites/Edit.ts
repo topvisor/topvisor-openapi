@@ -9,9 +9,8 @@ export interface components {
     schemas: {
         /** Измениить реквизиты */
         "Bank_2.Methods.Requisites.Edit": {
+            id: string;
             data: (string | number)[];
-            filters: import('../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['filters'];
-            id?: import('../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['id'];
         };
     };
     responses: never;
