@@ -27,7 +27,7 @@ export interface components {
             urls?: import('../../../TV/API/Types/UrlArray.ts').components['schemas']['TV.API.Types.UrlArray'] | null;
             /** Файл с содержимым для импорта, допускается формат XML (допустимы сжатые XML в .gz) */
             link_sitemap_xml?: import('../../../TV/API/Types/Url.ts').components['schemas']['TV.API.Types.Url'] | null;
-            tags?: import('../../../Tags_2/Types/Tags.ts').components['schemas']['Tags_2.Types.Tags'] | null;
+            tags?: import('../../../Tags_2/Types/TagsIds.ts').components['schemas']['Tags_2.Types.TagsIds'] | null;
             /** Очистить список URL перед импортом */
             reset: boolean;
             /**

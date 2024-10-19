@@ -4784,7 +4784,7 @@ components:
         - 1
         - 2
       title: Флаг активности
-    Tags_2.Types.Tag:
+    Tags_2.Types.TagId:
       type: string
       enum:
         - '1'
@@ -4807,16 +4807,16 @@ components:
         - '18'
         - '19'
         - '20'
-      title: Доступные теги
-    Tags_2.Types.Tags:
+      title: id тега
+    Tags_2.Types.TagsIds:
       type: array
       items:
-        $ref: '#/components/schemas/Tags_2.Types.Tag'
-      title: Массив номеров тегов
+        $ref: '#/components/schemas/Tags_2.Types.TagId'
+      title: Список id тегов
       description: |-
-        Тип массива Tags[]
+        Тип массива: TagId[]
 
-        @see Tags_2\Types\Tag
+        @see Tags_2\Types\TagId
     project_id:
       title: ID проекта
       type: integer
@@ -4852,7 +4852,7 @@ components:
         tags:
           nullable: true
           allOf:
-            - $ref: '#/components/schemas/Tags_2.Types.Tags'
+            - $ref: '#/components/schemas/Tags_2.Types.TagsIds'
         project_id:
           $ref: '#/components/schemas/project_id'
       required:
@@ -7004,7 +7004,7 @@ components:
         tags:
           nullable: true
           allOf:
-            - $ref: '#/components/schemas/Tags_2.Types.Tags'
+            - $ref: '#/components/schemas/Tags_2.Types.TagsIds'
         reset:
           title: Очистить список URL перед импортом
           type: boolean
@@ -7068,7 +7068,7 @@ components:
       properties:
         tags:
           allOf:
-            - $ref: '#/components/schemas/Tags_2.Types.Tags'
+            - $ref: '#/components/schemas/Tags_2.Types.TagsIds'
         action:
           allOf:
             - $ref: '#/components/schemas/Urls_2.Types.Tags.Action'
@@ -9261,7 +9261,7 @@ components:
           title: Доступные теги тикета
           nullable: true
           allOf:
-            - $ref: '#/components/schemas/Tags_2.Types.Tags'
+            - $ref: '#/components/schemas/Tags_2.Types.TagsIds'
         status:
           title: Статус тикета
           nullable: true

@@ -20,7 +20,7 @@ export interface components {
             indexing?: import('../Types/Flag.ts').components['schemas']['Urls_2.Types.Flag'] | null;
             /** Флаг активности в индексации */
             watcher?: import('../Types/Flag.ts').components['schemas']['Urls_2.Types.Flag'] | null;
-            tags?: import('../../Tags_2/Types/Tags.ts').components['schemas']['Tags_2.Types.Tags'] | null;
+            tags?: import('../../Tags_2/Types/TagsIds.ts').components['schemas']['Tags_2.Types.TagsIds'] | null;
             project_id: import('../../TV/API/Params/ProjectIdTrait.ts').components['schemas']['TV.API.Params.ProjectIdTrait']['project_id'];
         };
     };

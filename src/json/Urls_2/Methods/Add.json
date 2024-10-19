@@ -58,7 +58,7 @@
                         "nullable": true,
                         "allOf": [
                             {
-                                "$ref": "../../Tags_2/Types/Tags.json#/components/schemas/Tags_2.Types.Tags"
+                                "$ref": "../../Tags_2/Types/TagsIds.json#/components/schemas/Tags_2.Types.TagsIds"
                             }
                         ]
                     },

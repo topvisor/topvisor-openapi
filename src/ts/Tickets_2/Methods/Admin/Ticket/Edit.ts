@@ -15,7 +15,7 @@ export interface components {
             /** Номер задачи redmine, связанной с тикетом */
             task_id?: number | null;
             /** Доступные теги тикета */
-            tags?: import('../../../../Tags_2/Types/Tags.ts').components['schemas']['Tags_2.Types.Tags'] | null;
+            tags?: import('../../../../Tags_2/Types/TagsIds.ts').components['schemas']['Tags_2.Types.TagsIds'] | null;
             /** Статус тикета */
             status?: boolean | null;
         };
