@@ -7,7 +7,9 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
+        /** Получение id тарифа пользователя по типу контракта */
         "Bank_2.Methods.Requisites.ContractTariffId.Get": {
+            /** Тип контракта */
             contract_type: string;
             fields: import('../../../../TV/API/Params/FieldsTrait.ts').components['schemas']['TV.API.Params.FieldsTrait']['fields'];
             orders: import('../../../../TV/API/Params/OrdersTrait.ts').components['schemas']['TV.API.Params.OrdersTrait']['orders'];

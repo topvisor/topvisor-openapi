@@ -11,9 +11,11 @@
                 "type": "object",
                 "properties": {
                     "org_id": {
+                        "title": "Id организации",
                         "type": "string"
                     },
                     "date1": {
+                        "title": "Дата начала диапазона",
                         "allOf": [
                             {
                                 "$ref": "../../../../TV/API/Types/Date.json#/components/schemas/TV.API.Types.Date"
@@ -21,6 +23,7 @@
                         ]
                     },
                     "date2": {
+                        "title": "Дата конца диапазона",
                         "allOf": [
                             {
                                 "$ref": "../../../../TV/API/Types/Date.json#/components/schemas/TV.API.Types.Date"
@@ -28,13 +31,17 @@
                         ]
                     },
                     "org_kpp": {
+                        "title": "КПП организации",
                         "type": "string"
                     },
                     "requisites_id": {
+                        "title": "Id договора",
                         "nullable": true,
                         "type": "string"
                     },
                     "signed": {
+                        "title": "Использовать подпись",
+                        "description": "Если true, то документ с подписью (не распространяется на договоры)",
                         "type": "boolean"
                     },
                     "fields": {

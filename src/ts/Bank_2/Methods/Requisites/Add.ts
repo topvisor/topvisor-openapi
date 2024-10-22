@@ -7,7 +7,7 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Добавить реквизиты */
+        /** Добавиление реквизитов */
         "Bank_2.Methods.Requisites.Add": {
             /** см. объект Bank_2\Objects\Requisites */
             data: string;

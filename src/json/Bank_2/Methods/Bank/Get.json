@@ -11,6 +11,7 @@
                 "type": "object",
                 "properties": {
                     "bik": {
+                        "title": "БИК банка",
                         "type": "string"
                     },
                     "fields": {

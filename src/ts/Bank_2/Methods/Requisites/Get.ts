@@ -7,7 +7,7 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Получить список договоров */
+        /** Получение списка договоров */
         "Bank_2.Methods.Requisites.Get": {
             /** Добавить информацию о доступных контрагентах организации для ЭДО */
             include_edc_data: boolean;

@@ -7,8 +7,9 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Закрыть договор (оферту закрыть невозможно) */
+        /** Закрытие договора (оферту закрыть невозможно) */
         "Bank_2.Methods.Requisites.Del": {
+            /** Id реквезитов */
             id: string;
         };
     };

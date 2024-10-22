@@ -499,7 +499,8 @@ export interface paths {
         head?: never;
         patch?: never;
         trace?: never;
-    };
+    };  
+    /** Получение истории транзакций */
     "/get/bank_2/history/": {
         parameters: {
             query?: never;
@@ -516,7 +517,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Предоставить инфомацию по счету */
+    /** Предоставление инфомации по счету */
     "/get/bank_2/info/": {
         parameters: {
             query?: never;
@@ -533,7 +534,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Добавить реквизиты */
+    /** Добавиление реквизитов */
     "/add/bank_2/requisites/": {
         parameters: {
             query?: never;
@@ -550,7 +551,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Закрыть договор (оферту закрыть невозможно) */
+    /** Закрытие договора (оферту закрыть невозможно) */
     "/del/bank_2/requisites/": {
         parameters: {
             query?: never;
@@ -567,7 +568,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Измениить реквизиты */
+    /** Изменение реквизитов */
     "/edit/bank_2/requisites/": {
         parameters: {
             query?: never;
@@ -584,7 +585,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Получить список договоров */
+    /** Получение списка договоров */
     "/get/bank_2/requisites/": {
         parameters: {
             query?: never;
@@ -601,7 +602,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Запрос на получение юридического лица */
+    /** Получение данных юридического лица по ИНН */
     "/get/bank_2/ur/": {
         parameters: {
             query?: never;
@@ -1545,7 +1546,8 @@ export interface paths {
         head?: never;
         patch?: never;
         trace?: never;
-    };
+    };  
+    /** Получение id тарифа пользователя по типу контракта */
     "/get/bank_2/requisites/contractTariffId/": {
         parameters: {
             query?: never;
@@ -1562,7 +1564,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Скачать документ в формате PDF */
+    /** Скачивание документа в формате PDF */
     "/get/bank_2/requisites/print/": {
         parameters: {
             query?: never;
@@ -1579,7 +1581,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Акт сверки (акты по предоплате выводятся в одном платеже) */
+    /** Получение акта сверки (акты по предоплате выводятся в одном платеже) */
     "/get/bank_2/requisites/printTotalReceipt/": {
         parameters: {
             query?: never;
@@ -1596,7 +1598,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Скачать архив документов в формате PDF */
+    /** Скачивание архива документов в формате PDF */
     "/get/bank_2/requisites/printZip/": {
         parameters: {
             query?: never;

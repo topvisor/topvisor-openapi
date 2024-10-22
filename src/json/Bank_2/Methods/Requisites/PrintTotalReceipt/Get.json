@@ -11,6 +11,7 @@
                 "type": "object",
                 "properties": {
                     "date1": {
+                        "title": "Дата начала диапазона",
                         "allOf": [
                             {
                                 "$ref": "../../../../TV/API/Types/Date.json#/components/schemas/TV.API.Types.Date"
@@ -18,6 +19,7 @@
                         ]
                     },
                     "date2": {
+                        "title": "Дата конца диапазона",
                         "allOf": [
                             {
                                 "$ref": "../../../../TV/API/Types/Date.json#/components/schemas/TV.API.Types.Date"
@@ -25,6 +27,7 @@
                         ]
                     },
                     "org_id": {
+                        "title": "Id организации",
                         "type": "string"
                     },
                     "returnPdfDataForDiadoc": {
@@ -32,6 +35,8 @@
                         "type": "boolean"
                     },
                     "signed": {
+                        "title": "Использовать подпись",
+                        "description": "Если true, то документ с подписью (не распространяется на договоры)",
                         "type": "boolean"
                     },
                     "fields": {
@@ -67,7 +72,7 @@
                     "filters",
                     "offset"
                 ],
-                "title": "Акт сверки (акты по предоплате выводятся в одном платеже)"
+                "title": "Получение акта сверки (акты по предоплате выводятся в одном платеже)"
             }
         }
     }

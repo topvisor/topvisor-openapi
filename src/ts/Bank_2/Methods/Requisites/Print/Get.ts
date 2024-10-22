@@ -7,13 +7,16 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Скачать документ в формате PDF */
+        /** Скачивание документа в формате PDF */
         "Bank_2.Methods.Requisites.Print.Get": {
             /** Id документа */
             target_id: string;
             /** Тип документа enum(RequisitesDocuments::$availableDocumentsTypes) */
             type: string;
-            /** Если true, то документ с подписью (не распространяется на договоры) */
+            /**
+             * Использовать подпись
+             * @description Если true, то документ с подписью (не распространяется на договоры)
+             */
             signed: boolean;
             fields: import('../../../../TV/API/Params/FieldsTrait.ts').components['schemas']['TV.API.Params.FieldsTrait']['fields'];
             orders: import('../../../../TV/API/Params/OrdersTrait.ts').components['schemas']['TV.API.Params.OrdersTrait']['orders'];

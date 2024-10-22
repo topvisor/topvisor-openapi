@@ -7,13 +7,20 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Акт сверки (акты по предоплате выводятся в одном платеже) */
+        /** Получение акта сверки (акты по предоплате выводятся в одном платеже) */
         "Bank_2.Methods.Requisites.PrintTotalReceipt.Get": {
+            /** Дата начала диапазона */
             date1: import('../../../../TV/API/Types/Date.ts').components['schemas']['TV.API.Types.Date'];
+            /** Дата конца диапазона */
             date2: import('../../../../TV/API/Types/Date.ts').components['schemas']['TV.API.Types.Date'];
+            /** Id организации */
             org_id: string;
             /** Для внутреннего использования */
             returnPdfDataForDiadoc: boolean;
+            /**
+             * Использовать подпись
+             * @description Если true, то документ с подписью (не распространяется на договоры)
+             */
             signed: boolean;
             fields: import('../../../../TV/API/Params/FieldsTrait.ts').components['schemas']['TV.API.Params.FieldsTrait']['fields'];
             orders: import('../../../../TV/API/Params/OrdersTrait.ts').components['schemas']['TV.API.Params.OrdersTrait']['orders'];

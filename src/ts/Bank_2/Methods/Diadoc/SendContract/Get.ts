@@ -9,6 +9,7 @@ export interface components {
     schemas: {
         /** Отправка договора в диадок */
         "Bank_2.Methods.Diadoc.SendContract.Get": {
+            /** Id договора */
             requisites_id: string;
             fields: import('../../../../TV/API/Params/FieldsTrait.ts').components['schemas']['TV.API.Params.FieldsTrait']['fields'];
             orders: import('../../../../TV/API/Params/OrdersTrait.ts').components['schemas']['TV.API.Params.OrdersTrait']['orders'];

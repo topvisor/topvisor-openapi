@@ -11,6 +11,7 @@
                 "type": "object",
                 "properties": {
                     "contract_type": {
+                        "title": "Тип контракта",
                         "type": "string"
                     },
                     "fields": {
@@ -41,7 +42,8 @@
                     "orders",
                     "filters",
                     "offset"
-                ]
+                ],
+                "title": "Получение id тарифа пользователя по типу контракта"
             }
         }
     }

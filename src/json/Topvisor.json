@@ -1638,6 +1638,7 @@
                 "tags": [
                     "Bank_2"
                 ],
+                "summary": "Получение истории транзакций",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -1697,7 +1698,7 @@
                 "tags": [
                     "Bank_2"
                 ],
-                "summary": "Предоставить инфомацию по счету",
+                "summary": "Предоставление инфомации по счету",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -1768,7 +1769,7 @@
                 "tags": [
                     "Bank_2"
                 ],
-                "summary": "Добавить реквизиты",
+                "summary": "Добавиление реквизитов",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -1826,7 +1827,7 @@
                 "tags": [
                     "Bank_2"
                 ],
-                "summary": "Закрыть договор (оферту закрыть невозможно)",
+                "summary": "Закрытие договора (оферту закрыть невозможно)",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -1882,7 +1883,7 @@
                 "tags": [
                     "Bank_2"
                 ],
-                "summary": "Измениить реквизиты",
+                "summary": "Изменение реквизитов",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -1938,7 +1939,7 @@
                 "tags": [
                     "Bank_2"
                 ],
-                "summary": "Получить список договоров",
+                "summary": "Получение списка договоров",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -1998,7 +1999,7 @@
                 "tags": [
                     "Bank_2"
                 ],
-                "summary": "Запрос на получение юридического лица",
+                "summary": "Получение данных юридического лица по ИНН",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -5234,6 +5235,7 @@
                 "tags": [
                     "Bank_2"
                 ],
+                "summary": "Получение id тарифа пользователя по типу контракта",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -5292,7 +5294,7 @@
                 "tags": [
                     "Bank_2"
                 ],
-                "summary": "Скачать документ в формате PDF",
+                "summary": "Скачивание документа в формате PDF",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -5324,7 +5326,7 @@
                 "tags": [
                     "Bank_2"
                 ],
-                "summary": "Акт сверки (акты по предоплате выводятся в одном платеже)",
+                "summary": "Получение акта сверки (акты по предоплате выводятся в одном платеже)",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -5383,7 +5385,7 @@
                 "tags": [
                     "Bank_2"
                 ],
-                "summary": "Скачать архив документов в формате PDF",
+                "summary": "Скачивание архива документов в формате PDF",
                 "requestBody": {
                     "content": {
                         "application/json": {

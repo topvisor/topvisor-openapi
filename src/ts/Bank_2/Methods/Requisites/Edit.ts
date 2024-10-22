@@ -7,10 +7,14 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Измениить реквизиты */
+        /** Изменение реквизитов */
         "Bank_2.Methods.Requisites.Edit": {
+            /** Id реквезитов */
             id: string;
-            /** см. объект Bank_2\Objects\Requisites */
+            /**
+             * Данные реквезитов
+             * @description см. объект Bank_2\Objects\Requisites
+             */
             data: string;
         };
     };

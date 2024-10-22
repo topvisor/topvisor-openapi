@@ -12,11 +12,20 @@ export interface components {
          * @description Параметры см. в bank_2_requisites::protected_get_printTotalReceipt();
          */
         "Bank_2.Methods.Diadoc.SendTotalReceipt.Get": {
+            /** Id организации */
             org_id: string;
+            /** Дата начала диапазона */
             date1: import('../../../../TV/API/Types/Date.ts').components['schemas']['TV.API.Types.Date'];
+            /** Дата конца диапазона */
             date2: import('../../../../TV/API/Types/Date.ts').components['schemas']['TV.API.Types.Date'];
+            /** КПП организации */
             org_kpp: string;
+            /** Id договора */
             requisites_id?: string | null;
+            /**
+             * Использовать подпись
+             * @description Если true, то документ с подписью (не распространяется на договоры)
+             */
             signed: boolean;
             fields: import('../../../../TV/API/Params/FieldsTrait.ts').components['schemas']['TV.API.Params.FieldsTrait']['fields'];
             orders: import('../../../../TV/API/Params/OrdersTrait.ts').components['schemas']['TV.API.Params.OrdersTrait']['orders'];

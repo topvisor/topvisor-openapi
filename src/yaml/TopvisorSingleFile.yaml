@@ -1009,6 +1009,7 @@ paths:
       operationId: GetBank2History
       tags:
         - Bank_2
+      summary: Получение истории транзакций
       requestBody:
         content:
           application/json:
@@ -1040,7 +1041,7 @@ paths:
       operationId: GetBank2Info
       tags:
         - Bank_2
-      summary: Предоставить инфомацию по счету
+      summary: Предоставление инфомации по счету
       requestBody:
         content:
           application/json:
@@ -1076,7 +1077,7 @@ paths:
       operationId: AddBank2Requisites
       tags:
         - Bank_2
-      summary: Добавить реквизиты
+      summary: Добавиление реквизитов
       requestBody:
         content:
           application/json:
@@ -1107,7 +1108,7 @@ paths:
       operationId: DelBank2Requisites
       tags:
         - Bank_2
-      summary: Закрыть договор (оферту закрыть невозможно)
+      summary: Закрытие договора (оферту закрыть невозможно)
       requestBody:
         content:
           application/json:
@@ -1137,7 +1138,7 @@ paths:
       operationId: EditBank2Requisites
       tags:
         - Bank_2
-      summary: Измениить реквизиты
+      summary: Изменение реквизитов
       requestBody:
         content:
           application/json:
@@ -1167,7 +1168,7 @@ paths:
       operationId: GetBank2Requisites
       tags:
         - Bank_2
-      summary: Получить список договоров
+      summary: Получение списка договоров
       requestBody:
         content:
           application/json:
@@ -1199,7 +1200,7 @@ paths:
       operationId: GetBank2Ur
       tags:
         - Bank_2
-      summary: Запрос на получение юридического лица
+      summary: Получение данных юридического лица по ИНН
       requestBody:
         content:
           application/json:
@@ -2981,6 +2982,7 @@ paths:
       operationId: GetBank2RequisitesContractTariffId
       tags:
         - Bank_2
+      summary: Получение id тарифа пользователя по типу контракта
       requestBody:
         content:
           application/json:
@@ -3011,7 +3013,7 @@ paths:
       operationId: GetBank2RequisitesPrint
       tags:
         - Bank_2
-      summary: Скачать документ в формате PDF
+      summary: Скачивание документа в формате PDF
       requestBody:
         content:
           application/json:
@@ -3031,7 +3033,7 @@ paths:
       operationId: GetBank2RequisitesPrintTotalReceipt
       tags:
         - Bank_2
-      summary: Акт сверки (акты по предоплате выводятся в одном платеже)
+      summary: Получение акта сверки (акты по предоплате выводятся в одном платеже)
       requestBody:
         content:
           application/json:
@@ -3062,7 +3064,7 @@ paths:
       operationId: GetBank2RequisitesPrintZip
       tags:
         - Bank_2
-      summary: Скачать архив документов в формате PDF
+      summary: Скачивание архива документов в формате PDF
       requestBody:
         content:
           application/json:
@@ -5853,6 +5855,7 @@ components:
       type: object
       properties:
         bik:
+          title: БИК банка
           type: string
         fields:
           $ref: '#/components/schemas/fields'
@@ -5897,6 +5900,7 @@ components:
         - orders
         - filters
         - offset
+      title: Получение истории транзакций
     Models.BalanceHistory:
       properties:
         COUNT(*):
@@ -5957,7 +5961,7 @@ components:
         - orders
         - filters
         - offset
-      title: Предоставить инфомацию по счету
+      title: Предоставление инфомации по счету
     Bank_2.Types.Requisites.Type:
       type: string
       enum:
@@ -5969,6 +5973,7 @@ components:
         - domainsOffer
         - domainsPersonContract
         - domainsPersonOffer
+      title: Тип реквизитов
     Bank_2.Methods.Requisites.Add:
       type: object
       properties:
@@ -5985,27 +5990,30 @@ components:
         - data
         - type
         - tariff_id
-      title: Добавить реквизиты
+      title: Добавиление реквизитов
     Bank_2.Methods.Requisites.Del:
       type: object
       properties:
         id:
+          title: Id реквезитов
           type: string
       required:
         - id
-      title: Закрыть договор (оферту закрыть невозможно)
+      title: Закрытие договора (оферту закрыть невозможно)
     Bank_2.Methods.Requisites.Edit:
       type: object
       properties:
         id:
+          title: Id реквезитов
           type: string
         data:
-          title: см. объект Bank_2\Objects\Requisites
+          title: Данные реквезитов
+          description: см. объект Bank_2\Objects\Requisites
           type: string
       required:
         - id
         - data
-      title: Измениить реквизиты
+      title: Изменение реквизитов
     Bank_2.Methods.Requisites.Get:
       type: object
       properties:
@@ -6032,7 +6040,7 @@ components:
         - orders
         - filters
         - offset
-      title: Получить список договоров
+      title: Получение списка договоров
     Models.Requisites:
       properties:
         LABEL():
@@ -6064,6 +6072,7 @@ components:
       type: object
       properties:
         inn:
+          title: ИНН юридического лица
           type: string
         fields:
           $ref: '#/components/schemas/fields'
@@ -6085,7 +6094,7 @@ components:
         - orders
         - filters
         - offset
-      title: Запрос на получение юридического лица
+      title: Получение данных юридического лица по ИНН
     Comments_2.Methods.Like.Edit:
       type: object
       properties:
@@ -8939,6 +8948,7 @@ components:
       type: object
       properties:
         requisites_id:
+          title: Id договора
           type: string
         fields:
           $ref: '#/components/schemas/fields'
@@ -8965,19 +8975,26 @@ components:
       type: object
       properties:
         org_id:
+          title: Id организации
           type: string
         date1:
+          title: Дата начала диапазона
           allOf:
             - $ref: '#/components/schemas/TV.API.Types.Date'
         date2:
+          title: Дата конца диапазона
           allOf:
             - $ref: '#/components/schemas/TV.API.Types.Date'
         org_kpp:
+          title: КПП организации
           type: string
         requisites_id:
+          title: Id договора
           nullable: true
           type: string
         signed:
+          title: Использовать подпись
+          description: Если true, то документ с подписью (не распространяется на договоры)
           type: boolean
         fields:
           $ref: '#/components/schemas/fields'
@@ -9076,6 +9093,7 @@ components:
       type: object
       properties:
         contract_type:
+          title: Тип контракта
           type: string
         fields:
           $ref: '#/components/schemas/fields'
@@ -9097,6 +9115,7 @@ components:
         - orders
         - filters
         - offset
+      title: Получение id тарифа пользователя по типу контракта
     Bank_2.Methods.Requisites.Print.Get:
       type: object
       properties:
@@ -9107,7 +9126,8 @@ components:
           title: Тип документа enum(RequisitesDocuments::$availableDocumentsTypes)
           type: string
         signed:
-          title: Если true, то документ с подписью (не распространяется на договоры)
+          title: Использовать подпись
+          description: Если true, то документ с подписью (не распространяется на договоры)
           type: boolean
         fields:
           $ref: '#/components/schemas/fields'
@@ -9131,22 +9151,27 @@ components:
         - orders
         - filters
         - offset
-      title: Скачать документ в формате PDF
+      title: Скачивание документа в формате PDF
     Bank_2.Methods.Requisites.PrintTotalReceipt.Get:
       type: object
       properties:
         date1:
+          title: Дата начала диапазона
           allOf:
             - $ref: '#/components/schemas/TV.API.Types.Date'
         date2:
+          title: Дата конца диапазона
           allOf:
             - $ref: '#/components/schemas/TV.API.Types.Date'
         org_id:
+          title: Id организации
           type: string
         returnPdfDataForDiadoc:
           title: Для внутреннего использования
           type: boolean
         signed:
+          title: Использовать подпись
+          description: Если true, то документ с подписью (не распространяется на договоры)
           type: boolean
         fields:
           $ref: '#/components/schemas/fields'
@@ -9172,24 +9197,27 @@ components:
         - orders
         - filters
         - offset
-      title: Акт сверки (акты по предоплате выводятся в одном платеже)
+      title: Получение акта сверки (акты по предоплате выводятся в одном платеже)
     Bank_2.Methods.Requisites.PrintZip.Get:
       type: object
       properties:
         targets_ids:
-          title: Id документов
+          title: Список id документов
           description: Вместо targets_ids можно указывать набор параметров org_id, date1 и date2
           nullable: true
           allOf:
             - $ref: '#/components/schemas/TV.API.Types.IntArray'
         org_id:
+          title: Id организации
           nullable: true
           type: string
         date1:
+          title: Дата начала диапазона
           nullable: true
           allOf:
             - $ref: '#/components/schemas/TV.API.Types.Date'
         date2:
+          title: Дата конца диапазона
           nullable: true
           allOf:
             - $ref: '#/components/schemas/TV.API.Types.Date'
@@ -9197,7 +9225,8 @@ components:
           title: Тип документа enum(RequisitesDocuments::$availableDocumentsTypes)
           type: string
         signed:
-          title: Если true, то документ с подписью (не распространяется на договоры)
+          title: Использовать подпись
+          description: Если true, то документ с подписью (не распространяется на договоры)
           type: boolean
         fields:
           $ref: '#/components/schemas/fields'
@@ -9220,7 +9249,7 @@ components:
         - orders
         - filters
         - offset
-      title: Скачать архив документов в формате PDF
+      title: Скачивание архива документов в формате PDF
     Payments_2.Methods.Tariff.DelCard.Edit:
       type: object
       properties: {}

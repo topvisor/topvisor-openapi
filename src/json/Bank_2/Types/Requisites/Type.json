@@ -18,7 +18,8 @@
                     "domainsOffer",
                     "domainsPersonContract",
                     "domainsPersonOffer"
-                ]
+                ],
+                "title": "Тип реквизитов"
             }
         }
     }

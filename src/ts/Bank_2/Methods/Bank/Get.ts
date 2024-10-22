@@ -9,6 +9,7 @@ export interface components {
     schemas: {
         /** Получение данных банка по БИК */
         "Bank_2.Methods.Bank.Get": {
+            /** БИК банка */
             bik: string;
             fields: import('../../../TV/API/Params/FieldsTrait.ts').components['schemas']['TV.API.Params.FieldsTrait']['fields'];
             orders: import('../../../TV/API/Params/OrdersTrait.ts').components['schemas']['TV.API.Params.OrdersTrait']['orders'];

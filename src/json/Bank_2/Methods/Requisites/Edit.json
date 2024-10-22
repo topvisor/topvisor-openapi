@@ -11,10 +11,12 @@
                 "type": "object",
                 "properties": {
                     "id": {
+                        "title": "Id реквезитов",
                         "type": "string"
                     },
                     "data": {
-                        "title": "см. объект Bank_2\\Objects\\Requisites",
+                        "title": "Данные реквезитов",
+                        "description": "см. объект Bank_2\\Objects\\Requisites",
                         "type": "string"
                     }
                 },
@@ -22,7 +24,7 @@
                     "id",
                     "data"
                 ],
-                "title": "Измениить реквизиты"
+                "title": "Изменение реквизитов"
             }
         }
     }
