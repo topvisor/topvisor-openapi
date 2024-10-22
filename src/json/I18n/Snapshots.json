@@ -102,6 +102,12 @@
                     },
                     "Snippets_no_checking": {
                         "const": "<b>Snippets in Snapshots</b> aren't being collected. Turn this feature on in the project's settings."
+                    },
+                    "Snapshots_checks_in_progress_1": {
+                        "const": "You haven't collected snapshots for selected filters"
+                    },
+                    "Snapshots_checks_in_progress_2": {
+                        "const": "Collect snapshots to see SERP TOPs for your keywords and your competitors' keywords.<br>Your keyword rankings will be checked when you collect snippets.<br>📊 <a href=\"/snapshots/\" target=\"_blank\">Why you need to check SERP Top →</a>"
                     }
                 },
                 "required": []

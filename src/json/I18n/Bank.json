@@ -383,7 +383,7 @@
                         "const": "YooMoney"
                     },
                     "System_name_rk": {
-                        "const": "Robokassa (cards of non-Russian banks, Belorussian in particular)"
+                        "const": "Robokassa (cards of non-Russian banks)"
                     },
                     "System_name_qw": {
                         "const": "QIWI"

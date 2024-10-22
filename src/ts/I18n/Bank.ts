@@ -257,7 +257,7 @@ export interface components {
             /** @constant */
             System_name_ym?: "YooMoney";
             /** @constant */
-            System_name_rk?: "Robokassa (cards of non-Russian banks, Belorussian in particular)";
+            System_name_rk?: "Robokassa (cards of non-Russian banks)";
             /** @constant */
             System_name_qw?: "QIWI";
             /** @constant */
