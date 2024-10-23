@@ -369,6 +369,8 @@ export interface components {
             /** @constant */
             Guest_link?: "Guest link";
             /** @constant */
+            Guest_link_copied_to_clipboard?: "Guest link copied to clipboard";
+            /** @constant */
             Device_0?: "PC";
             /** @constant */
             Device_1?: "Tablet";

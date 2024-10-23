@@ -550,6 +550,9 @@
                     "Guest_link": {
                         "const": "Guest link"
                     },
+                    "Guest_link_copied_to_clipboard": {
+                        "const": "Guest link copied to clipboard"
+                    },
                     "Device_0": {
                         "const": "PC"
                     },
