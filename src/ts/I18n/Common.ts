@@ -859,8 +859,6 @@ export interface components {
             /** @constant */
             office?: "office";
             /** @constant */
-            Select_lang_info_2?: "You can select and set a preferred language later in the Account settings.";
-            /** @constant */
             Dot?: "Dot";
             /** @constant */
             Comma?: "Comma";

@@ -1285,9 +1285,6 @@
                     "office": {
                         "const": "office"
                     },
-                    "Select_lang_info_2": {
-                        "const": "You can select and set a preferred language later in the Account settings."
-                    },
                     "Dot": {
                         "const": "Dot"
                     },
