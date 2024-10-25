@@ -42,6 +42,7 @@ export interface components {
         Watcher: import('./I18n/Watcher.ts').components['schemas']['I18n.Watcher'];
         Widget: import('./I18n/Widget.ts').components['schemas']['I18n.Widget'];
         "Audit.Scan": import('./I18n/Audit/Scan.ts').components['schemas']['I18n.Audit.Scan'];
+        "Landings.Championship": import('./I18n/Landings/Championship.ts').components['schemas']['I18n.Landings.Championship'];
         "Landings.Jobs": import('./I18n/Landings/Jobs.ts').components['schemas']['I18n.Landings.Jobs'];
         "Landings.Price": import('./I18n/Landings/Price.ts').components['schemas']['I18n.Landings.Price'];
         "Landings.Promocode": import('./I18n/Landings/Promocode.ts').components['schemas']['I18n.Landings.Promocode'];
