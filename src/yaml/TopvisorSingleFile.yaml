@@ -3075,21 +3075,10 @@ paths:
         '200':
           description: ''
           content:
-            application/json:
+            application/octet-stream:
               schema:
-                oneOf:
-                  - allOf:
-                      - type: object
-                        properties:
-                          result: {}
-                        required:
-                          - result
-                      - $ref: '#/components/schemas/ResponseSuccess'
-                      - $ref: '#/components/schemas/Pagination'
-                  - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
+                type: string
+                format: binary
   /edit/payments_2/tariff/delCard/:
     post:
       operationId: EditPayments2TariffDelCard
