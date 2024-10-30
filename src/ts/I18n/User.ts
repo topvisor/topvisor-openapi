@@ -17,6 +17,8 @@ export interface components {
             /** @constant */
             password_updated?: "updated";
             /** @constant */
+            Theme?: "Тема оформления";
+            /** @constant */
             Encoding?: "Character encoding";
             /** @constant */
             Delimiter?: "Delimiter";

@@ -22,6 +22,9 @@
                     "password_updated": {
                         "const": "updated"
                     },
+                    "Theme": {
+                        "const": "Тема оформления"
+                    },
                     "Encoding": {
                         "const": "Character encoding"
                     },
