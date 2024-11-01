@@ -806,7 +806,7 @@
                         "const": "Important! This operation cannot be undone."
                     },
                     "Empty_field": {
-                        "const": "* Missing *"
+                        "const": "Missing"
                     },
                     "Notification": {
                         "const": "Notifications"
@@ -1371,6 +1371,12 @@
                     },
                     "Hide_access_settings": {
                         "const": "Hide access settings"
+                    },
+                    "Sort": {
+                        "const": "Sort"
+                    },
+                    "No_snippet": {
+                        "const": "No snippet"
                     }
                 },
                 "required": []

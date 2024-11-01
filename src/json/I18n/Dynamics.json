@@ -321,6 +321,30 @@
                     },
                     "Selected_time_is_hightload": {
                         "const": "<p>Selected period is the hight load.</p><p>If you need to get results in the morning, we recommend setting time from <i></i> to <i></i> in the morning.</p>"
+                    },
+                    "Delete_keyword": {
+                        "const": "Delete keyword"
+                    },
+                    "Recheck": {
+                        "const": "Recheck keyword ranking"
+                    },
+                    "Checking": {
+                        "const": "Tracking"
+                    },
+                    "Recheck_finish": {
+                        "const": "Ranking successfully rechecked"
+                    },
+                    "No_target_status": {
+                        "const": "Target link not added"
+                    },
+                    "No_result_target_status": {
+                        "const": "Search results not found"
+                    },
+                    "Bad_target_status": {
+                        "const": "Result does not match a target link"
+                    },
+                    "Good_target_status": {
+                        "const": "Result matches a target link"
                     }
                 },
                 "required": []

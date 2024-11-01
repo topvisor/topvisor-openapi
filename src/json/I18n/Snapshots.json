@@ -108,6 +108,9 @@
                     },
                     "Snapshots_checks_in_progress_2": {
                         "const": "Collect snapshots to see SERP TOPs for your keywords and your competitors' keywords.<br>Your keyword rankings will be checked when you collect snippets.<br>📊 <a href=\"/snapshots/\" target=\"_blank\">Why you need to check SERP Top →</a>"
+                    },
+                    "Open_keyword_snapshot": {
+                        "const": "Open keyword snapshot"
                     }
                 },
                 "required": []

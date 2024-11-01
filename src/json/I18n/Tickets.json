@@ -159,6 +159,12 @@
                     },
                     "Button_change_review": {
                         "const": "Change the feedback"
+                    },
+                    "Online": {
+                        "const": "Online"
+                    },
+                    "Visited": {
+                        "const": "Last seen"
                     }
                 },
                 "required": []

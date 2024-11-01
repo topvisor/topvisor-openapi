@@ -74,6 +74,8 @@ export interface components {
             Snapshots_checks_in_progress_1?: "You haven't collected snapshots for selected filters";
             /** @constant */
             Snapshots_checks_in_progress_2?: "Collect snapshots to see SERP TOPs for your keywords and your competitors' keywords.<br>Your keyword rankings will be checked when you collect snippets.<br>📊 <a href=\"/snapshots/\" target=\"_blank\">Why you need to check SERP Top →</a>";
+            /** @constant */
+            Open_keyword_snapshot?: "Open keyword snapshot";
         };
     };
     responses: never;

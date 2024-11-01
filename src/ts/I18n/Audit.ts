@@ -373,6 +373,8 @@ export interface components {
             Audit_bank_autocrawl_info?: "Funds reservation for audit with automatic website crawling, project";
             /** @constant */
             Audit_bank_autocrawl_unhold_info?: "Reservation refund";
+            /** @constant */
+            Delete_url?: "Delete URL";
         };
     };
     responses: never;

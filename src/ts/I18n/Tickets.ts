@@ -108,6 +108,10 @@ export interface components {
             Comment_title_bad?: "Tell us what was wrong — we'll do everything to get better!";
             /** @constant */
             Button_change_review?: "Change the feedback";
+            /** @constant */
+            Online?: "Online";
+            /** @constant */
+            Visited?: "Last seen";
         };
     };
     responses: never;

@@ -216,6 +216,22 @@ export interface components {
             Snippets_no_checking?: "<b>Snippets</b> aren't being collected. Turn this feature on in the project's settings.";
             /** @constant */
             Selected_time_is_hightload?: "<p>Selected period is the hight load.</p><p>If you need to get results in the morning, we recommend setting time from <i></i> to <i></i> in the morning.</p>";
+            /** @constant */
+            Delete_keyword?: "Delete keyword";
+            /** @constant */
+            Recheck?: "Recheck keyword ranking";
+            /** @constant */
+            Checking?: "Tracking";
+            /** @constant */
+            Recheck_finish?: "Ranking successfully rechecked";
+            /** @constant */
+            No_target_status?: "Target link not added";
+            /** @constant */
+            No_result_target_status?: "Search results not found";
+            /** @constant */
+            Bad_target_status?: "Result does not match a target link";
+            /** @constant */
+            Good_target_status?: "Result matches a target link";
         };
     };
     responses: never;

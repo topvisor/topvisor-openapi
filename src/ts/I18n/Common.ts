@@ -539,7 +539,7 @@ export interface components {
             /** @constant */
             Irreversible?: "Important! This operation cannot be undone.";
             /** @constant */
-            Empty_field?: "* Missing *";
+            Empty_field?: "Missing";
             /** @constant */
             Notification?: "Notifications";
             /** @constant */
@@ -916,6 +916,10 @@ export interface components {
             Access_settings?: "Access settings";
             /** @constant */
             Hide_access_settings?: "Hide access settings";
+            /** @constant */
+            Sort?: "Sort";
+            /** @constant */
+            No_snippet?: "No snippet";
         };
     };
     responses: never;
