@@ -67,7 +67,7 @@ export interface components {
             /** @constant */
             Text_new_ticket_1?: "Please describe the problem or ask a question";
             /** @constant */
-            Text_new_ticket_2?: "We will get back to you shortly";
+            Text_new_ticket_2?: "We will get back to you shortly 💙";
             /** @constant */
             Ticket_source_page?: "Ticket source page";
             /** @constant */
