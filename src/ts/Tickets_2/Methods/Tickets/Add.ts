@@ -19,7 +19,7 @@ export interface components {
             user_data?: (string | number)[] | null;
             /**
              * URL страницы, с которой отправлен тикет
-             * @description Не испоьзуется, если указан user_data
+             * @description Не используется, если указан user_data
              */
             resource?: string | null;
             /** Не проводить рассылку уведомлений */
