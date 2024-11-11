@@ -32,7 +32,7 @@
                         "const": "Full text"
                     },
                     "Only_with_changed": {
-                        "const": "With changes only"
+                        "const": "With changes"
                     },
                     "Header_start_short": {
                         "const": "Track"

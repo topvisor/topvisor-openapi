@@ -25,7 +25,7 @@ export interface components {
             /** @constant */
             Fulltext?: "Full text";
             /** @constant */
-            Only_with_changed?: "With changes only";
+            Only_with_changed?: "With changes";
             /** @constant */
             Header_start_short?: "Track";
             /** @constant */
