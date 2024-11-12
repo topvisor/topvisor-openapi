@@ -14,10 +14,17 @@
                         "title": "Отображать ли сумму с учетом скидки",
                         "default": 1,
                         "type": "integer"
+                    },
+                    "filters": {
+                        "$ref": "../../../../../TV/API/Params/FiltersTrait.json#/components/schemas/TV.API.Params.FiltersTrait/properties/filters"
+                    },
+                    "id": {
+                        "$ref": "../../../../../TV/API/Params/FiltersTrait.json#/components/schemas/TV.API.Params.FiltersTrait/properties/id"
                     }
                 },
                 "required": [
-                    "apply_discount"
+                    "apply_discount",
+                    "filters"
                 ],
                 "title": "Полуение стоимости проверки радара"
             }

@@ -21,11 +21,18 @@
                                 "$ref": "../../../../../Audit_2/Types/Sitemap/MaxPages.json#/components/schemas/Audit_2.Types.Sitemap.MaxPages"
                             }
                         ]
+                    },
+                    "filters": {
+                        "$ref": "../../../../../TV/API/Params/FiltersTrait.json#/components/schemas/TV.API.Params.FiltersTrait/properties/filters"
+                    },
+                    "id": {
+                        "$ref": "../../../../../TV/API/Params/FiltersTrait.json#/components/schemas/TV.API.Params.FiltersTrait/properties/id"
                     }
                 },
                 "required": [
                     "apply_discount",
-                    "max_pages"
+                    "max_pages",
+                    "filters"
                 ],
                 "title": "Полуение стоимости проверки карты сайта"
             }

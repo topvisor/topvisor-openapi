@@ -14,6 +14,8 @@ export interface components {
              * @default true
              */
             apply_discount: boolean;
+            filters: import('../../../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['filters'];
+            id?: import('../../../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['id'];
         };
     };
     responses: never;

@@ -15,6 +15,8 @@ export interface components {
              */
             apply_discount: number;
             max_pages: import('../../../../Types/Sitemap/MaxPages.ts').components['schemas']['Audit_2.Types.Sitemap.MaxPages'];
+            filters: import('../../../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['filters'];
+            id?: import('../../../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['id'];
         };
     };
     responses: never;

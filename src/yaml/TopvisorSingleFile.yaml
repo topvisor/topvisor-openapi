@@ -9393,8 +9393,13 @@ components:
           title: Отображать ли сумму с учетом скидки
           default: true
           type: boolean
+        filters:
+          $ref: '#/components/schemas/filters'
+        id:
+          $ref: '#/components/schemas/id'
       required:
         - apply_discount
+        - filters
       title: Получение стоимости проверки аудита
     Audit_2.Methods.Audit.Export.Links.Get:
       type: object
@@ -9590,8 +9595,13 @@ components:
           title: Отображать сумму с учетом скидки
           default: 1
           type: integer
+        filters:
+          $ref: '#/components/schemas/filters'
+        id:
+          $ref: '#/components/schemas/id'
       required:
         - apply_discount
+        - filters
       title: Полуение стоимости проверки индексации
     Audit_2.Methods.Indexing.Export.Links.Get:
       type: object
@@ -9763,9 +9773,14 @@ components:
         max_pages:
           allOf:
             - $ref: '#/components/schemas/Audit_2.Types.Sitemap.MaxPages'
+        filters:
+          $ref: '#/components/schemas/filters'
+        id:
+          $ref: '#/components/schemas/id'
       required:
         - apply_discount
         - max_pages
+        - filters
       title: Полуение стоимости проверки карты сайта
     Audit_2.Methods.Watcher.Checker.Go.Edit:
       type: object
@@ -9788,8 +9803,13 @@ components:
           title: Отображать ли сумму с учетом скидки
           default: 1
           type: integer
+        filters:
+          $ref: '#/components/schemas/filters'
+        id:
+          $ref: '#/components/schemas/id'
       required:
         - apply_discount
+        - filters
       title: Полуение стоимости проверки радара
     properties-check_id:
       title: ID проверки радара
