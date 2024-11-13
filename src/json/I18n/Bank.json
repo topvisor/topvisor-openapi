@@ -397,6 +397,9 @@
                     "System_name_sb": {
                         "const": "SberPay"
                     },
+                    "System_name_lp": {
+                        "const": "LeadPay"
+                    },
                     "Your_contract_expires_notice": {
                         "const": "Contract expiration notice"
                     },

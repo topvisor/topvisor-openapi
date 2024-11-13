@@ -267,6 +267,8 @@ export interface components {
             /** @constant */
             System_name_sb?: "SberPay";
             /** @constant */
+            System_name_lp?: "LeadPay";
+            /** @constant */
             Your_contract_expires_notice?: "Contract expiration notice";
             /** @constant */
             Earlier_contacts_closed_notice?: "Your earlier contract has been closed";

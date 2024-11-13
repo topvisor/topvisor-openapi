@@ -4485,6 +4485,7 @@ components:
         - pd_invoice
         - rk
         - pt
+        - lp
     Payments_2.Types.Country:
       type: string
       enum:
