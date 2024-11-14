@@ -398,7 +398,7 @@
                         "const": "SberPay"
                     },
                     "System_name_lp": {
-                        "const": "LeadPay (cards of non-Russian banks. All countries)"
+                        "const": "LeadPay (cards of non-Russian banks. All countries except Ukraine)"
                     },
                     "Your_contract_expires_notice": {
                         "const": "Contract expiration notice"

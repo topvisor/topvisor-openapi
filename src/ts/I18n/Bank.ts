@@ -267,7 +267,7 @@ export interface components {
             /** @constant */
             System_name_sb?: "SberPay";
             /** @constant */
-            System_name_lp?: "LeadPay (cards of non-Russian banks. All countries)";
+            System_name_lp?: "LeadPay (cards of non-Russian banks. All countries except Ukraine)";
             /** @constant */
             Your_contract_expires_notice?: "Contract expiration notice";
             /** @constant */
