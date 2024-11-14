@@ -343,6 +343,9 @@
                     "No_account_sign_up": {
                         "const": "No account? <a href=\".\" data-to-view=\"%toViewReg%\">Sign up</a>"
                     },
+                    "No_account": {
+                        "const": "No account?"
+                    },
                     "Through_registration_you_confirm_agreement_policy": {
                         "const": "By pressing Sign up you accept <a href=\"%hrefConfirm%\" target=\"_blank\">Terms and Conditions</a> and <a href=\"%hrefPrivacy%\" target=\"_blank\">Privacy Policy</a>"
                     },
@@ -355,8 +358,14 @@
                     "If_no_msg_check_spam_ask_support_notice": {
                         "const": "If you didn't receive a message, check a <b>Spam</b> folder or submit a ticket to <a href=\"%hrefCreateTicket%\">Customer support</a>"
                     },
+                    "If_no_msg": {
+                        "const": "If you didn't receive a message, check a <b>Spam</b> folder or submit a ticket to "
+                    },
+                    "support_notice": {
+                        "const": "Customer support"
+                    },
                     "Confirmation_link_sent_to_email": {
-                        "const": "A confirmation link has been sent to"
+                        "const": "A confirmation link has been sent to "
                     },
                     "Internal_error": {
                         "const": "Internal error occurred, please submit a report to the developers"
@@ -860,6 +869,9 @@
                         "const": "Sign up"
                     },
                     "Sign_up": {
+                        "const": "Sign up"
+                    },
+                    "Sign_up_2": {
                         "const": "Sign up"
                     },
                     "Sign_in": {

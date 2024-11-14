@@ -383,7 +383,7 @@
                         "const": "YooMoney"
                     },
                     "System_name_rk": {
-                        "const": "Robokassa (cards of non-Russian banks)"
+                        "const": "Robokassa (cards of non-Russian banks, except Ukraine, USA, Turkey, Belarus)"
                     },
                     "System_name_qw": {
                         "const": "QIWI"
@@ -398,7 +398,7 @@
                         "const": "SberPay"
                     },
                     "System_name_lp": {
-                        "const": "LeadPay"
+                        "const": "LeadPay (cards of non-Russian banks. All countries)"
                     },
                     "Your_contract_expires_notice": {
                         "const": "Contract expiration notice"

@@ -231,6 +231,8 @@ export interface components {
             /** @constant */
             No_account_sign_up?: "No account? <a href=\".\" data-to-view=\"%toViewReg%\">Sign up</a>";
             /** @constant */
+            No_account?: "No account?";
+            /** @constant */
             Through_registration_you_confirm_agreement_policy?: "By pressing Sign up you accept <a href=\"%hrefConfirm%\" target=\"_blank\">Terms and Conditions</a> and <a href=\"%hrefPrivacy%\" target=\"_blank\">Privacy Policy</a>";
             /** @constant */
             Already_have_account?: "Already have an account";
@@ -239,7 +241,11 @@ export interface components {
             /** @constant */
             If_no_msg_check_spam_ask_support_notice?: "If you didn't receive a message, check a <b>Spam</b> folder or submit a ticket to <a href=\"%hrefCreateTicket%\">Customer support</a>";
             /** @constant */
-            Confirmation_link_sent_to_email?: "A confirmation link has been sent to";
+            If_no_msg?: "If you didn't receive a message, check a <b>Spam</b> folder or submit a ticket to ";
+            /** @constant */
+            support_notice?: "Customer support";
+            /** @constant */
+            Confirmation_link_sent_to_email?: "A confirmation link has been sent to ";
             /** @constant */
             Internal_error?: "Internal error occurred, please submit a report to the developers";
             /** @constant */
@@ -576,6 +582,8 @@ export interface components {
             Signup?: "Sign up";
             /** @constant */
             Sign_up?: "Sign up";
+            /** @constant */
+            Sign_up_2?: "Sign up";
             /** @constant */
             Sign_in?: "Sign in";
             /** @constant */

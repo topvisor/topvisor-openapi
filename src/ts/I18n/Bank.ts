@@ -257,7 +257,7 @@ export interface components {
             /** @constant */
             System_name_ym?: "YooMoney";
             /** @constant */
-            System_name_rk?: "Robokassa (cards of non-Russian banks)";
+            System_name_rk?: "Robokassa (cards of non-Russian banks, except Ukraine, USA, Turkey, Belarus)";
             /** @constant */
             System_name_qw?: "QIWI";
             /** @constant */
@@ -267,7 +267,7 @@ export interface components {
             /** @constant */
             System_name_sb?: "SberPay";
             /** @constant */
-            System_name_lp?: "LeadPay";
+            System_name_lp?: "LeadPay (cards of non-Russian banks. All countries)";
             /** @constant */
             Your_contract_expires_notice?: "Contract expiration notice";
             /** @constant */
