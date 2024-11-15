@@ -529,6 +529,66 @@ paths:
             model:
               schema:
                 type: 'null'
+  /del/recurring_2/:
+    post:
+      operationId: DelRecurring2
+      tags:
+        - Recurring_2
+      summary: Удаление настроек автоопераций
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Recurring_2.Methods.Del'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result: {}
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
+  /edit/recurring_2/:
+    post:
+      operationId: EditRecurring2
+      tags:
+        - Recurring_2
+      summary: Настройка рекуррентного платежа
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Recurring_2.Methods.Edit'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result: {}
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
   /edit/tags_2/:
     post:
       operationId: EditTags2
@@ -1813,6 +1873,67 @@ paths:
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
+  /del/recurring_2/recurringCard/:
+    post:
+      operationId: DelRecurring2RecurringCard
+      tags:
+        - Recurring_2
+      summary: Удалить привязанную карту (system = card)
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Recurring_2.Methods.RecurringCard.Del'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result: {}
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
+  /get/recurring_2/recurringCard/:
+    post:
+      operationId: GetRecurring2RecurringCard
+      tags:
+        - Recurring_2
+      summary: Получение привязанных карт пользователя
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Recurring_2.Methods.RecurringCard.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result: {}
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                      - $ref: '#/components/schemas/Pagination'
                   - $ref: '#/components/schemas/ResponseError'
             model:
               schema:
@@ -4683,6 +4804,84 @@ components:
         - point_size
       title: Генерирует QR код по тексту
       description: Возвращает изображение в формате data:image/png;base64
+    Recurring_2.Types.Type:
+      type: string
+      enum:
+        - refill
+        - domainRenew
+      title: Тип рекуррентного платежа
+    TV.API.Types.Url:
+      type: string
+      title: |-
+        Краткий URL в punycode, не может содержать UTF-символы:
+        - без схемы
+        - без "www." в домене
+        - без слешей на конце
+        - без "<" и ">"
+      description: |-
+        Будет проивзедено автоматическое приведение к формату
+
+        Разрешен ввод пустой строки, для удаления значения url
+    Recurring_2.Methods.Del:
+      type: object
+      properties:
+        type:
+          allOf:
+            - $ref: '#/components/schemas/Recurring_2.Types.Type'
+        target:
+          title: Объект доменного платежа (в случае domainRenew - домен)
+          allOf:
+            - $ref: '#/components/schemas/TV.API.Types.Url'
+        filters:
+          $ref: '#/components/schemas/filters'
+        id:
+          $ref: '#/components/schemas/id'
+      required:
+        - type
+        - target
+        - filters
+      title: Удаление настроек автоопераций
+    Recurring_2.Types.System:
+      type: string
+      enum:
+        - card
+        - invoice
+      title: Платежная система рекуррентного платежа
+    Recurring_2.Methods.Edit:
+      type: object
+      properties:
+        system:
+          allOf:
+            - $ref: '#/components/schemas/Recurring_2.Types.System'
+        type:
+          allOf:
+            - $ref: '#/components/schemas/Recurring_2.Types.Type'
+        min_sum:
+          title: Сумма, при достижении которой произойдет автоплатеж
+          nullable: true
+          type: integer
+        refill_sum:
+          title: Cумма автоплатежа
+          nullable: true
+          type: integer
+        target:
+          title: Объект доменного платежа (в случае domainRenew - домен)
+          nullable: true
+          allOf:
+            - $ref: '#/components/schemas/TV.API.Types.Url'
+        cardId:
+          title: Id карты в системе Тинькофф
+          nullable: true
+          type: integer
+        filters:
+          $ref: '#/components/schemas/filters'
+        id:
+          $ref: '#/components/schemas/id'
+      required:
+        - system
+        - type
+        - filters
+      title: Настройка рекуррентного платежа
     Tags_2.Types.Type:
       type: string
       enum:
@@ -4756,18 +4955,6 @@ components:
         - filters
         - offset
       title: Получение списка тегов
-    TV.API.Types.Url:
-      type: string
-      title: |-
-        Краткий URL в punycode, не может содержать UTF-символы:
-        - без схемы
-        - без "www." в домене
-        - без слешей на конце
-        - без "<" и ">"
-      description: |-
-        Будет проивзедено автоматическое приведение к формату
-
-        Разрешен ввод пустой строки, для удаления значения url
     Urls_2.Types.Flag:
       type: integer
       enum:
@@ -6693,6 +6880,43 @@ components:
       required:
         - validation_url
       title: Валидация домена для подтверждения оплаты Apple Pay (system = card_ap)
+    Recurring_2.Methods.RecurringCard.Del:
+      type: object
+      properties:
+        card_id:
+          title: Id карты в системе Тинькофф
+          type: integer
+        filters:
+          $ref: '#/components/schemas/filters'
+        id:
+          $ref: '#/components/schemas/id'
+      required:
+        - card_id
+        - filters
+      title: Удалить привязанную карту (system = card)
+    Recurring_2.Methods.RecurringCard.Get:
+      type: object
+      properties:
+        fields:
+          $ref: '#/components/schemas/fields'
+        orders:
+          $ref: '#/components/schemas/orders'
+        filters:
+          $ref: '#/components/schemas/filters'
+        id:
+          $ref: '#/components/schemas/id'
+        limit:
+          $ref: '#/components/schemas/limit'
+        offset:
+          $ref: '#/components/schemas/offset'
+        fetch_style:
+          $ref: '#/components/schemas/fetch_style'
+      required:
+        - fields
+        - orders
+        - filters
+        - offset
+      title: Получение привязанных карт пользователя
     Tickets_2.Methods.Messages.Add:
       type: object
       properties:

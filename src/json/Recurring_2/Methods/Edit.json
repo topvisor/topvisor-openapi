@@ -1,0 +1,67 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Recurring_2.Methods.Edit",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Recurring_2.Methods.Edit": {
+                "type": "object",
+                "properties": {
+                    "system": {
+                        "allOf": [
+                            {
+                                "$ref": "../../Recurring_2/Types/System.json#/components/schemas/Recurring_2.Types.System"
+                            }
+                        ]
+                    },
+                    "type": {
+                        "allOf": [
+                            {
+                                "$ref": "../../Recurring_2/Types/Type.json#/components/schemas/Recurring_2.Types.Type"
+                            }
+                        ]
+                    },
+                    "min_sum": {
+                        "title": "Сумма, при достижении которой произойдет автоплатеж",
+                        "nullable": true,
+                        "type": "integer"
+                    },
+                    "refill_sum": {
+                        "title": "Cумма автоплатежа",
+                        "nullable": true,
+                        "type": "integer"
+                    },
+                    "target": {
+                        "title": "Объект доменного платежа (в случае domainRenew - домен)",
+                        "nullable": true,
+                        "allOf": [
+                            {
+                                "$ref": "../../TV/API/Types/Url.json#/components/schemas/TV.API.Types.Url"
+                            }
+                        ]
+                    },
+                    "cardId": {
+                        "title": "Id карты в системе Тинькофф",
+                        "nullable": true,
+                        "type": "integer"
+                    },
+                    "filters": {
+                        "$ref": "../../TV/API/Params/FiltersTrait.json#/components/schemas/TV.API.Params.FiltersTrait/properties/filters"
+                    },
+                    "id": {
+                        "$ref": "../../TV/API/Params/FiltersTrait.json#/components/schemas/TV.API.Params.FiltersTrait/properties/id"
+                    }
+                },
+                "required": [
+                    "system",
+                    "type",
+                    "filters"
+                ],
+                "title": "Настройка рекуррентного платежа"
+            }
+        }
+    }
+}
