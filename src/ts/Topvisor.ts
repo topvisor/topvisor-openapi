@@ -186,14 +186,14 @@ export interface paths {
         trace?: never;
     };  
     /**
-     * Создать платежку и перейти к оплате
-     * @description Возвратит id платежа, если указан параметр $return_id = true
+     * Создание платежки и переход к оплате
+     * @description Возвращает id платежа, если указан параметр $return_id = true
      *
-     *     Произведет редирект, если настроена форма оплаты на стороне платежной системы
+     *     Производит редирект, если настроена форма оплаты на стороне платежной системы
      *
-     *     Возвратит информацию о платеже, если ожидается вывод формы оплаты на сайте
+     *     Возвращает информацию о платеже, если ожидается вывод формы оплаты на сайте
      *
-     *     При ошибке произведет редирект на страницу с инофрмацией об ошибке
+     *     При ошибке производит редирект на страницу с инофрмацией об ошибке
      */
     "/add/payments_2/": {
         parameters: {
@@ -211,7 +211,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Получить список платежей */
+    /** Получение списка платежей */
     "/get/payments_2/": {
         parameters: {
             query?: never;
@@ -229,7 +229,7 @@ export interface paths {
         trace?: never;
     };  
     /**
-     * Генерирует QR код по тексту
+     * Генерация QR кода по тексту
      * @description Возвращает изображение в формате data:image/png;base64
      */
     "/get/qr_2/": {
@@ -282,7 +282,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Изменить параметры тегов */
+    /** Сохранение списка тегов */
     "/edit/tags_2/": {
         parameters: {
             query?: never;
@@ -407,7 +407,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Получить текст политики конфиденциальности */
+    /** Получение текста политики конфиденциальности */
     "/get/app_2/privacy/": {
         parameters: {
             query?: never;
@@ -882,7 +882,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Компании пользователя, через которых, были совершены платежи */
+    /** Получение компании пользователя, через которых, были совершены платежи */
     "/get/payments_2/companies/": {
         parameters: {
             query?: never;
@@ -899,7 +899,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Подписать контракт (только для админов) */
+    /** Подписание контракта (только для админов) */
     "/edit/payments_2/contractSign/": {
         parameters: {
             query?: never;
@@ -916,7 +916,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Изменить платежные реквизиты тарифа */
+    /** Изменение платежных реквизитов тарифа */
     "/edit/payments_2/nextRequisitesId/": {
         parameters: {
             query?: never;
@@ -933,7 +933,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Отправить заявка на подключение Тинькофф Бизнес */
+    /** Отправка заявки на подключение Тинькофф Бизнес */
     "/add/payments_2/urTinkoffCreateApplication/": {
         parameters: {
             query?: never;
@@ -1471,7 +1471,7 @@ export interface paths {
         trace?: never;
     };  
     /**
-     * Построить отчет по одному URL
+     * Построение отчета по одному URL
      * @description Отличия от get/audit_2/watcher:
      *     - отчет генерируется на основе объекта watcher_results, а не urls
      *     - параметры выбора периода отчета игнорируются
@@ -1581,7 +1581,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Получить сводку проведенных операций */
+    /** Получение сводки проведенных операций */
     "/get/bank_2/history/summary/": {
         parameters: {
             query?: never;
@@ -1683,7 +1683,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Отписаться от тарифа, оплаченного картой */
+    /** Отписка от тарифа, оплаченного картой */
     "/edit/payments_2/tariff/delCard/": {
         parameters: {
             query?: never;
@@ -1717,7 +1717,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Сменить тариф со следующего месяца */
+    /** Смена тарифа со следующего месяца */
     "/edit/payments_2/tariff/setNext/": {
         parameters: {
             query?: never;
@@ -1965,7 +1965,7 @@ export interface paths {
         trace?: never;
     };  
     /**
-     * Результаты анализа страницы
+     * Получение результатов анализа страницы
      * @deprecated
      */
     "/get/audit_2/audit/results/page/": {

@@ -7,7 +7,7 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Подписать контракт (только для админов) */
+        /** Подписание контракта (только для админов) */
         "Payments_2.Methods.ContractSign.Edit": {
             /** Номер договора/оферты для платежа */
             requisites_id: string;

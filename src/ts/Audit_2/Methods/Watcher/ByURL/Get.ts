@@ -8,7 +8,7 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         /**
-         * Построить отчет по одному URL
+         * Построение отчета по одному URL
          * @description Отличия от get/audit_2/watcher:
          *     - отчет генерируется на основе объекта watcher_results, а не urls
          *     - параметры выбора периода отчета игнорируются

@@ -7,7 +7,7 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Отписаться от тарифа, оплаченного картой */
+        /** Отписка от тарифа, оплаченного картой */
         "Payments_2.Methods.Tariff.DelCard.Edit": Record<string, never>;
     };
     responses: never;

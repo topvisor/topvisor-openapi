@@ -7,7 +7,7 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Изменить платежные реквизиты тарифа */
+        /** Изменение платежных реквизитов тарифа */
         "Payments_2.Methods.NextRequisitesId.Edit": {
             /** ID следующего запроса */
             next_requisites_id: string;

@@ -7,7 +7,7 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Изменить параметры тегов */
+        /** Сохранение списка тегов */
         "Tags_2.Methods.Edit": {
             type: import('../Types/Type.ts').components['schemas']['Tags_2.Types.Type'];
             /** Список тегов в формате:

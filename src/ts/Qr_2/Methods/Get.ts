@@ -8,7 +8,7 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         /**
-         * Генерирует QR код по тексту
+         * Генерация QR кода по тексту
          * @description Возвращает изображение в формате data:image/png;base64
          */
         "Qr_2.Methods.Get": {

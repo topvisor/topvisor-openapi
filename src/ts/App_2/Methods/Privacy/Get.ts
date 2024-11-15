@@ -7,7 +7,7 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Получить текст политики конфиденциальности */
+        /** Получение текста политики конфиденциальности */
         "App_2.Methods.Privacy.Get": {
             /** Язык страницы */
             lang?: import('../../../TV/API/Types/Lang.ts').components['schemas']['TV.API.Types.Lang'] | null;

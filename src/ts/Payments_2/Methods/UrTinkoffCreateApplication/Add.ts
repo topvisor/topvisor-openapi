@@ -7,7 +7,7 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Отправить заявка на подключение Тинькофф Бизнес */
+        /** Отправка заявки на подключение Тинькофф Бизнес */
         "Payments_2.Methods.UrTinkoffCreateApplication.Add": Record<string, never>;
     };
     responses: never;

@@ -432,15 +432,15 @@ paths:
       operationId: AddPayments2
       tags:
         - Payments_2
-      summary: Создать платежку и перейти к оплате
+      summary: Создание платежки и переход к оплате
       description: |-
-        Возвратит id платежа, если указан параметр $return_id = true
+        Возвращает id платежа, если указан параметр $return_id = true
 
-        Произведет редирект, если настроена форма оплаты на стороне платежной системы
+        Производит редирект, если настроена форма оплаты на стороне платежной системы
 
-        Возвратит информацию о платеже, если ожидается вывод формы оплаты на сайте
+        Возвращает информацию о платеже, если ожидается вывод формы оплаты на сайте
 
-        При ошибке произведет редирект на страницу с инофрмацией об ошибке
+        При ошибке производит редирект на страницу с инофрмацией об ошибке
       requestBody:
         content:
           application/json:
@@ -470,7 +470,7 @@ paths:
       operationId: GetPayments2
       tags:
         - Payments_2
-      summary: Получить список платежей
+      summary: Получение списка платежей
       requestBody:
         content:
           application/json:
@@ -502,7 +502,7 @@ paths:
       operationId: GetQr2
       tags:
         - Qr_2
-      summary: Генерирует QR код по тексту
+      summary: Генерация QR кода по тексту
       description: Возвращает изображение в формате data:image/png;base64
       requestBody:
         content:
@@ -594,7 +594,7 @@ paths:
       operationId: EditTags2
       tags:
         - Tags_2
-      summary: Изменить параметры тегов
+      summary: Сохранение списка тегов
       requestBody:
         content:
           application/json:
@@ -828,7 +828,7 @@ paths:
       operationId: GetApp2Privacy
       tags:
         - App_2
-      summary: Получить текст политики конфиденциальности
+      summary: Получение текста политики конфиденциальности
       requestBody:
         content:
           application/json:
@@ -1719,7 +1719,7 @@ paths:
       operationId: GetPayments2Companies
       tags:
         - Payments_2
-      summary: Компании пользователя, через которых, были совершены платежи
+      summary: Получение компании пользователя, через которых, были совершены платежи
       requestBody:
         content:
           application/json:
@@ -1754,7 +1754,7 @@ paths:
       operationId: EditPayments2ContractSign
       tags:
         - Payments_2
-      summary: Подписать контракт (только для админов)
+      summary: Подписание контракта (только для админов)
       requestBody:
         content:
           application/json:
@@ -1785,7 +1785,7 @@ paths:
       operationId: EditPayments2NextRequisitesId
       tags:
         - Payments_2
-      summary: Изменить платежные реквизиты тарифа
+      summary: Изменение платежных реквизитов тарифа
       requestBody:
         content:
           application/json:
@@ -1816,7 +1816,7 @@ paths:
       operationId: AddPayments2UrTinkoffCreateApplication
       tags:
         - Payments_2
-      summary: Отправить заявка на подключение Тинькофф Бизнес
+      summary: Отправка заявки на подключение Тинькофф Бизнес
       requestBody:
         content:
           application/json:
@@ -2843,7 +2843,7 @@ paths:
       operationId: GetAudit2WatcherByURL
       tags:
         - Audit_2
-      summary: Построить отчет по одному URL
+      summary: Построение отчета по одному URL
       description: |-
         Отличия от get/audit_2/watcher:
         - отчет генерируется на основе объекта watcher_results, а не urls
@@ -3036,7 +3036,7 @@ paths:
       operationId: GetBank2HistorySummary
       tags:
         - Bank_2
-      summary: Получить сводку проведенных операций
+      summary: Получение сводки проведенных операций
       requestBody:
         content:
           application/json:
@@ -3205,7 +3205,7 @@ paths:
       operationId: EditPayments2TariffDelCard
       tags:
         - Payments_2
-      summary: Отписаться от тарифа, оплаченного картой
+      summary: Отписка от тарифа, оплаченного картой
       requestBody:
         content:
           application/json:
@@ -3267,7 +3267,7 @@ paths:
       operationId: EditPayments2TariffSetNext
       tags:
         - Payments_2
-      summary: Сменить тариф со следующего месяца
+      summary: Смена тарифа со следующего месяца
       requestBody:
         content:
           application/json:
@@ -3733,7 +3733,7 @@ paths:
       operationId: GetAudit2AuditResultsPage
       tags:
         - Audit_2
-      summary: Результаты анализа страницы
+      summary: Получение результатов анализа страницы
       deprecated: true
       requestBody:
         content:
@@ -4687,15 +4687,15 @@ components:
         - phone
         - is_cancelable
         - return_id
-      title: Создать платежку и перейти к оплате
+      title: Создание платежки и переход к оплате
       description: |-
-        Возвратит id платежа, если указан параметр $return_id = true
+        Возвращает id платежа, если указан параметр $return_id = true
 
-        Произведет редирект, если настроена форма оплаты на стороне платежной системы
+        Производит редирект, если настроена форма оплаты на стороне платежной системы
 
-        Возвратит информацию о платеже, если ожидается вывод формы оплаты на сайте
+        Возвращает информацию о платеже, если ожидается вывод формы оплаты на сайте
 
-        При ошибке произведет редирект на страницу с инофрмацией об ошибке
+        При ошибке производит редирект на страницу с инофрмацией об ошибке
     Payments_2.Methods.Get:
       type: object
       properties:
@@ -4718,7 +4718,7 @@ components:
         - orders
         - filters
         - offset
-      title: Получить список платежей
+      title: Получение списка платежей
     Models.Payments:
       properties:
         COUNT(*):
@@ -4802,7 +4802,7 @@ components:
         - use_brand
         - use_logo_colors
         - point_size
-      title: Генерирует QR код по тексту
+      title: Генерация QR кода по тексту
       description: Возвращает изображение в формате data:image/png;base64
     Recurring_2.Types.Type:
       type: string
@@ -4924,7 +4924,7 @@ components:
         - type
         - tags
         - filters
-      title: Изменить параметры тегов
+      title: Сохранение списка тегов
     Tags_2.Methods.Get:
       type: object
       properties:
@@ -5285,7 +5285,7 @@ components:
           allOf:
             - $ref: '#/components/schemas/TV.API.Types.Lang'
       required: []
-      title: Получить текст политики конфиденциальности
+      title: Получение текста политики конфиденциальности
     Controller_2.Objects.Location:
       type: object
       properties: {}
@@ -6843,7 +6843,7 @@ components:
       type: object
       properties: {}
       required: []
-      title: Компании пользователя, через которых, были совершены платежи
+      title: Получение компании пользователя, через которых, были совершены платежи
     Payments_2.Methods.ContractSign.Edit:
       type: object
       properties:
@@ -6856,7 +6856,7 @@ components:
       required:
         - requisites_id
         - signed
-      title: Подписать контракт (только для админов)
+      title: Подписание контракта (только для админов)
     Payments_2.Methods.NextRequisitesId.Edit:
       type: object
       properties:
@@ -6865,12 +6865,12 @@ components:
           type: string
       required:
         - next_requisites_id
-      title: Изменить платежные реквизиты тарифа
+      title: Изменение платежных реквизитов тарифа
     Payments_2.Methods.UrTinkoffCreateApplication.Add:
       type: object
       properties: {}
       required: []
-      title: Отправить заявка на подключение Тинькофф Бизнес
+      title: Отправка заявки на подключение Тинькофф Бизнес
     Payments_2.Methods.ValidateMerchantCardAP.Get:
       type: object
       properties:
@@ -9053,7 +9053,7 @@ components:
         - filters
         - offset
         - project_id
-      title: Построить отчет по одному URL
+      title: Построение отчета по одному URL
       description: |-
         Отличия от get/audit_2/watcher:
         - отчет генерируется на основе объекта watcher_results, а не urls
@@ -9288,7 +9288,7 @@ components:
         - orders
         - filters
         - offset
-      title: Получить сводку проведенных операций
+      title: Получение сводки проведенных операций
     Bank_2.Methods.Referrals.ToBonus.Edit:
       type: object
       properties:
@@ -9468,7 +9468,7 @@ components:
       type: object
       properties: {}
       required: []
-      title: Отписаться от тарифа, оплаченного картой
+      title: Отписка от тарифа, оплаченного картой
     Payments_2.Methods.Tariff.NextToDiadoc.Edit:
       type: object
       properties:
@@ -9486,7 +9486,7 @@ components:
           type: string
       required:
         - id
-      title: Сменить тариф со следующего месяца
+      title: Смена тарифа со следующего месяца
     Tickets_2.Methods.Admin.Ticket.Edit:
       type: object
       properties:
@@ -9797,7 +9797,7 @@ components:
         - orders
         - project_id
         - check_id
-      title: Результаты анализа страницы
+      title: Получение результатов анализа страницы
       deprecated: true
     Audit_2.Methods.Indexing.Checker.Go.Edit:
       type: object
