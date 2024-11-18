@@ -19,7 +19,7 @@ export interface components {
              * Текст комментария
              * @description Если не текст указан, комментарий будет удален
              */
-            text: string;
+            text?: string;
         };
     };
     responses: never;

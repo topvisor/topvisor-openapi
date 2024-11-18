@@ -107,12 +107,7 @@
                 "required": [
                     "searchers_keys",
                     "output",
-                    "properties",
-                    "periodDays",
-                    "type_range",
-                    "count_dates",
-                    "project_id",
-                    "fields"
+                    "project_id"
                 ],
                 "title": "Экспорт результатов индексации",
                 "description": "Необходимо указать либо date1 и date2, либо dates (вместе указывать нельзя)"

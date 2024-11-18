@@ -34,8 +34,7 @@
                 "required": [
                     "project_id",
                     "service",
-                    "target_id",
-                    "text"
+                    "target_id"
                 ],
                 "title": "Добавление примечания"
             }

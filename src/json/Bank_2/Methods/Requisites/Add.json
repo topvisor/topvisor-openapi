@@ -28,8 +28,7 @@
                 },
                 "required": [
                     "data",
-                    "type",
-                    "tariff_id"
+                    "type"
                 ],
                 "title": "Добавиление реквизитов"
             }

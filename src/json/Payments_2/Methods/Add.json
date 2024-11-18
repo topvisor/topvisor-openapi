@@ -90,17 +90,7 @@
                 "required": [
                     "system",
                     "sum",
-                    "country",
-                    "requisites_id",
-                    "tariff_id",
-                    "tariff_count_month",
-                    "comment",
-                    "items",
-                    "card_id",
-                    "payment_data",
-                    "phone",
-                    "is_cancelable",
-                    "return_id"
+                    "country"
                 ],
                 "title": "Создание платежки и переход к оплате",
                 "description": "Возвращает id платежа, если указан параметр $return_id = true\n\nПроизводит редирект, если настроена форма оплаты на стороне платежной системы\n\nВозвращает информацию о платеже, если ожидается вывод формы оплаты на сайте\n\nПри ошибке производит редирект на страницу с инофрмацией об ошибке"

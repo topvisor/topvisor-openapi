@@ -22,7 +22,6 @@
                     }
                 },
                 "required": [
-                    "debug",
                     "filters"
                 ],
                 "title": "Запуск проверки аудита"

@@ -35,8 +35,7 @@
                 "required": [
                     "id",
                     "project_id",
-                    "service",
-                    "text"
+                    "service"
                 ],
                 "title": "Редактирование примечания"
             }

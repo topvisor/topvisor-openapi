@@ -37,7 +37,6 @@
                     }
                 },
                 "required": [
-                    "include_edc_data",
                     "fields",
                     "orders",
                     "filters",

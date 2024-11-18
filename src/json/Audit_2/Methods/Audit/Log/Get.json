@@ -64,11 +64,7 @@
                     }
                 },
                 "required": [
-                    "show_urls",
-                    "show_locations",
-                    "page",
                     "project_id",
-                    "offset",
                     "check_id"
                 ],
                 "title": "Получение данных проверенных ресурсов"

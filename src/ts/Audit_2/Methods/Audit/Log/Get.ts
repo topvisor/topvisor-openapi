@@ -14,9 +14,9 @@ export interface components {
             /** Фильтр по периоду */
             time2?: import('../../../../TV/API/Types/Datetime.ts').components['schemas']['TV.API.Types.Datetime'] | null;
             /** Добавить url к записям */
-            show_urls: boolean;
+            show_urls?: boolean;
             /** Добавить массив locations - адреса страницы и редиректы с HTTP кодами */
-            show_locations: boolean;
+            show_locations?: boolean;
             /** Фильтр по категориям кодов */
             http_codes_hundreds?: import('../../../../TV/API/Types/IntArray.ts').components['schemas']['TV.API.Types.IntArray'] | null;
             /**
@@ -26,7 +26,7 @@ export interface components {
             page: number;
             project_id: import('../../../../TV/API/Params/ProjectIdTrait.ts').components['schemas']['TV.API.Params.ProjectIdTrait']['project_id'];
             limit?: import('../../../../TV/API/Params/LimitTrait.ts').components['schemas']['TV.API.Params.LimitTrait']['limit'];
-            offset: import('../../../../TV/API/Params/OffsetTrait.ts').components['schemas']['TV.API.Params.OffsetTrait']['offset'];
+            offset?: import('../../../../TV/API/Params/OffsetTrait.ts').components['schemas']['TV.API.Params.OffsetTrait']['offset'];
             check_id: import('../../../Params/Audit/CheckIdTrait.ts').components['schemas']['Audit_2.Params.Audit.CheckIdTrait']['check_id'];
         };
     };

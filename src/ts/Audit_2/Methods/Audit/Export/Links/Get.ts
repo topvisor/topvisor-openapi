@@ -10,7 +10,7 @@ export interface components {
         /** Получение гостевой ссылки на просмотр аудита позиций */
         "Audit_2.Methods.Audit.Export.Links.Get": {
             /** Название просмотра (используется на странице с просмотром проверки) */
-            view_name: string;
+            view_name?: string;
             /** Шаблон просмотра (используется на странице с просмотром проверки) */
             view_template: (string | number)[];
             /** Логи фильтра по категориям кодов (используется на странице с просмотром проверки) */
@@ -18,7 +18,7 @@ export interface components {
             /** Тип сигнала просмотра (используется на странице с просмотром проверки) */
             view_signal_type: (string | number)[];
             /** Внешние ссылки (используется на странице с просмотром проверки) */
-            links_external: string;
+            links_external?: string;
             project_id: import('../../../../../TV/API/Params/ProjectIdTrait.ts').components['schemas']['TV.API.Params.ProjectIdTrait']['project_id'];
             check_id: import('../../../../Params/Audit/CheckIdTrait.ts').components['schemas']['Audit_2.Params.Audit.CheckIdTrait']['check_id'];
         };

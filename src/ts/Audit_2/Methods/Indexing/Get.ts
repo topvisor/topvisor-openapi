@@ -22,16 +22,16 @@ export interface components {
              */
             indexing_fields: (string | number)[];
             /** Вернуть ли заголовки отчета */
-            show_headers: boolean;
+            show_headers?: boolean;
             /** Вернуть ли суммарное количество страниц в индексе по URL */
-            show_counts_indexing: boolean;
+            show_counts_indexing?: boolean;
             /** Вернуть ли даты проверок */
-            show_exists_dates: boolean;
+            show_exists_dates?: boolean;
             /**
              * Фильтр по изменениям в указанной ПС в указанную дату
              * @description Формат записи: `{{ date }}:{{ searcher_key }}`
              */
-            filter_by_alert: string;
+            filter_by_alert?: string;
             /** Произвольные даты без использования диапазона */
             dates?: (string | number)[] | null;
             /** Дата начала диапазона */

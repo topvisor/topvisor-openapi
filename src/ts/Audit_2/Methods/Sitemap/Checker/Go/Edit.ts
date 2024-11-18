@@ -11,7 +11,7 @@ export interface components {
         "Audit_2.Methods.Sitemap.Checker.Go.Edit": {
             max_pages: import('../../../../Types/Sitemap/MaxPages.ts').components['schemas']['Audit_2.Types.Sitemap.MaxPages'];
             /** Запуск в режиме отладки */
-            debug: boolean;
+            debug?: boolean;
             filters: import('../../../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['filters'];
             id?: import('../../../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['id'];
         };

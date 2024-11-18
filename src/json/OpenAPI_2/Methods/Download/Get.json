@@ -16,9 +16,7 @@
                         "type": "string"
                     }
                 },
-                "required": [
-                    "format"
-                ],
+                "required": [],
                 "title": "Создать Open API схемы и скачать в zip",
                 "description": "В результате вернет zip файл в потоке вывода\n\n@see https://editor.swagger.io/ Редактор Open API"
             }

@@ -11,9 +11,9 @@ export interface components {
         "Tickets_2.Methods.Tickets.Get": {
             fields_messages?: (string | number)[] | null;
             /** Добавить в результат данные пользователей, написавших сообщения в тикеты */
-            show_messages_users: boolean;
+            show_messages_users?: boolean;
             /** Добавить в результат данные о том, что пишет собеседник */
-            show_writings: boolean;
+            show_writings?: boolean;
             fields: import('../../../TV/API/Params/FieldsTrait.ts').components['schemas']['TV.API.Params.FieldsTrait']['fields'];
             orders: import('../../../TV/API/Params/OrdersTrait.ts').components['schemas']['TV.API.Params.OrdersTrait']['orders'];
             filters: import('../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['filters'];

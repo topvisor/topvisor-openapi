@@ -14,7 +14,7 @@ export interface components {
             /** Текст сообщения */
             text: string;
             /** Не проводить рассылку уведомлений */
-            is_silent: boolean;
+            is_silent?: boolean;
         };
     };
     responses: never;

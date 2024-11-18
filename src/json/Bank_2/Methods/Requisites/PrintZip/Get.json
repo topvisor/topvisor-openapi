@@ -76,7 +76,6 @@
                 },
                 "required": [
                     "type",
-                    "signed",
                     "fields",
                     "orders",
                     "filters",

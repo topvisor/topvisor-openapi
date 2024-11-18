@@ -31,7 +31,6 @@
                 },
                 "required": [
                     "url",
-                    "orders",
                     "project_id",
                     "check_id"
                 ],

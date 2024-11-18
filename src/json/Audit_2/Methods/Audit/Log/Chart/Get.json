@@ -47,8 +47,6 @@
                     }
                 },
                 "required": [
-                    "page",
-                    "offset",
                     "project_id",
                     "check_id"
                 ],

@@ -30,9 +30,7 @@
                     }
                 },
                 "required": [
-                    "apply_discount",
-                    "max_pages",
-                    "filters"
+                    "max_pages"
                 ],
                 "title": "Полуение стоимости проверки карты сайта"
             }

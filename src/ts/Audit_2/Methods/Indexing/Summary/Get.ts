@@ -13,20 +13,20 @@ export interface components {
             dates: (string | number)[];
             searcher_key?: import('../../../Types/Indexing/SearcherKey.ts').components['schemas']['Audit_2.Types.Indexing.SearcherKey'] | null;
             /** Отобразить количество изменений */
-            show_counts_changes: boolean;
+            show_counts_changes?: boolean;
             /** Отобразить количество страниц в индексе */
-            show_counts_in_index: boolean;
+            show_counts_in_index?: boolean;
             /** Отобразить количество проверенных страниц */
-            show_counts_all: boolean;
+            show_counts_all?: boolean;
             /**
              * Вернуть данные в формате для графика
              * @description Недокументируемый параметр
              *
              *     @private
              */
-            forChart: boolean;
+            forChart?: boolean;
             project_id: import('../../../../TV/API/Params/ProjectIdTrait.ts').components['schemas']['TV.API.Params.ProjectIdTrait']['project_id'];
-            filters: import('../../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['filters'];
+            filters?: import('../../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['filters'];
             id?: import('../../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['id'];
         };
     };

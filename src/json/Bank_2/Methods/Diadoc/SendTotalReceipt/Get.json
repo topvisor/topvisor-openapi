@@ -70,8 +70,6 @@
                     "org_id",
                     "date1",
                     "date2",
-                    "org_kpp",
-                    "signed",
                     "fields",
                     "orders",
                     "filters",

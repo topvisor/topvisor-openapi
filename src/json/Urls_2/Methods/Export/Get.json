@@ -56,9 +56,6 @@
                 },
                 "required": [
                     "output",
-                    "show_fields_names",
-                    "show_fields_labels",
-                    "forClipboard",
                     "fields",
                     "orders",
                     "filters",

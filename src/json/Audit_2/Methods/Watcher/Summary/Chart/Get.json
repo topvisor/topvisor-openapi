@@ -59,10 +59,7 @@
                 },
                 "required": [
                     "checks_ids",
-                    "show_counts_changes",
-                    "forChart",
-                    "project_id",
-                    "filters"
+                    "project_id"
                 ],
                 "title": "Получение сводок радара для графика"
             }

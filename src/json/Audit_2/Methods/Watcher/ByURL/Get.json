@@ -77,9 +77,6 @@
                 },
                 "required": [
                     "url_id",
-                    "show_headers",
-                    "watcher_fields",
-                    "show_diff",
                     "watcher_type",
                     "fields",
                     "orders",

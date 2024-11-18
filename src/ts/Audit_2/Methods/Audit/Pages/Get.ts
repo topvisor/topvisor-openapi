@@ -12,7 +12,7 @@ export interface components {
             /** Тип отчета для фильтра по ресурсам страницы */
             filters_resources_target_type?: import('../../../Types/Audit/TargetType.ts').components['schemas']['Audit_2.Types.Audit.TargetType'] | null;
             /** Фильтр по ресурсам страницы, API fitlers для объекта, тип которого указан в filters_extra_target_type */
-            filters_resources: (string | number)[];
+            filters_resources?: (string | number)[];
             fields: import('../../../../TV/API/Params/FieldsTrait.ts').components['schemas']['TV.API.Params.FieldsTrait']['fields'];
             orders: import('../../../../TV/API/Params/OrdersTrait.ts').components['schemas']['TV.API.Params.OrdersTrait']['orders'];
             filters: import('../../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['filters'];

@@ -11,7 +11,7 @@ export interface components {
         "Bank_2.Methods.History.Export.Get": {
             output: string;
             /** Вывести итого по группам */
-            show_summary_by_groups: boolean;
+            show_summary_by_groups?: boolean;
             fields: import('../../../../TV/API/Params/FieldsTrait.ts').components['schemas']['TV.API.Params.FieldsTrait']['fields'];
             orders: import('../../../../TV/API/Params/OrdersTrait.ts').components['schemas']['TV.API.Params.OrdersTrait']['orders'];
             filters: import('../../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['filters'];

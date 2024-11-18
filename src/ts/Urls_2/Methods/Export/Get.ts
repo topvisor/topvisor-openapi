@@ -11,11 +11,11 @@ export interface components {
         "Urls_2.Methods.Export.Get": {
             output: import('../../Types/Export/Output.ts').components['schemas']['Urls_2.Types.Export.Output'];
             /** Вывести fieldName в заголовках столбцов (для CSV) */
-            show_fields_names: boolean;
+            show_fields_names?: boolean;
             /** Вывести fieldLabel в заголовках столбцов (для CSV) */
-            show_fields_labels: boolean;
+            show_fields_labels?: boolean;
             /** Вернуть данные в формате для копироваиня в буфер обмена */
-            forClipboard: boolean;
+            forClipboard?: boolean;
             fields: import('../../../TV/API/Params/FieldsTrait.ts').components['schemas']['TV.API.Params.FieldsTrait']['fields'];
             orders: import('../../../TV/API/Params/OrdersTrait.ts').components['schemas']['TV.API.Params.OrdersTrait']['orders'];
             filters: import('../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['filters'];

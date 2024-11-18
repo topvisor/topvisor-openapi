@@ -49,9 +49,7 @@
                     }
                 },
                 "required": [
-                    "view_name",
                     "fulltext",
-                    "changed",
                     "project_id",
                     "check_id"
                 ],

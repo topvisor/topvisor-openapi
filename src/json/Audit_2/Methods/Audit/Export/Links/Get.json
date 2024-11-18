@@ -68,11 +68,9 @@
                     }
                 },
                 "required": [
-                    "view_name",
                     "view_template",
                     "log_http_codes_hundreds",
                     "view_signal_type",
-                    "links_external",
                     "project_id",
                     "check_id"
                 ],

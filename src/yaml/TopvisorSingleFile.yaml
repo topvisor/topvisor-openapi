@@ -4337,7 +4337,6 @@ components:
         - project_id
         - service
         - target_id
-        - text
       title: Добавление примечания
     Annotations_2.Methods.Del:
       type: object
@@ -4378,7 +4377,6 @@ components:
         - id
         - project_id
         - service
-        - text
       title: Редактирование примечания
     fields:
       title: Список полей объекта, которые надо вернуть в результате
@@ -4537,7 +4535,6 @@ components:
           nullable: true
           type: integer
       required:
-        - subdomain
         - text
       title: Добавление комментария
     Comments_2.Methods.Del:
@@ -4581,8 +4578,7 @@ components:
           title: Получить ответы на комменатрий с id = reply_id (нельзя указывать совместно с page_url)
           nullable: true
           type: integer
-      required:
-        - subdomain
+      required: []
       title: Получение комментариев
       description: Возвращает набор комментариев со всеми подкомменатриями, limit, offset не виляют на получение вложенных комментариев
     Payments_2.Types.System:
@@ -4677,16 +4673,6 @@ components:
         - system
         - sum
         - country
-        - requisites_id
-        - tariff_id
-        - tariff_count_month
-        - comment
-        - items
-        - card_id
-        - payment_data
-        - phone
-        - is_cancelable
-        - return_id
       title: Создание платежки и переход к оплате
       description: |-
         Возвращает id платежа, если указан параметр $return_id = true
@@ -4798,10 +4784,6 @@ components:
           type: integer
       required:
         - text
-        - tpl_n
-        - use_brand
-        - use_logo_colors
-        - point_size
       title: Генерация QR кода по тексту
       description: Возвращает изображение в формате data:image/png;base64
     Recurring_2.Types.Type:
@@ -5723,14 +5705,6 @@ components:
           $ref: '#/components/schemas/project_id'
       required:
         - searchers_keys
-        - indexing_fields
-        - show_headers
-        - show_counts_indexing
-        - show_exists_dates
-        - filter_by_alert
-        - periodDays
-        - type_range
-        - count_dates
         - fields
         - orders
         - filters
@@ -6011,18 +5985,8 @@ components:
         offset:
           $ref: '#/components/schemas/offset'
       required:
-        - type_range
-        - count_ids
         - watcher_type
-        - watcher_fields
-        - show_headers
-        - show_diff
-        - show_counts_watcher
         - project_id
-        - fields
-        - filters
-        - orders
-        - offset
       title: Получение результатов проверок радара
       description: |-
         Отчет генерируется на основе объектов urls
@@ -6049,7 +6013,6 @@ components:
         fetch_style:
           $ref: '#/components/schemas/fetch_style'
       required:
-        - bik
         - fields
         - orders
         - filters
@@ -6166,7 +6129,6 @@ components:
       required:
         - data
         - type
-        - tariff_id
       title: Добавиление реквизитов
     Bank_2.Methods.Requisites.Del:
       type: object
@@ -6212,7 +6174,6 @@ components:
         fetch_style:
           $ref: '#/components/schemas/fetch_style'
       required:
-        - include_edc_data
         - fields
         - orders
         - filters
@@ -6447,7 +6408,6 @@ components:
         - days
         - hh
         - i
-        - 'on'
         - command
       title: Добавление задачи cron
     Models.CronCommands:
@@ -6636,8 +6596,7 @@ components:
             Можно не указывать, но в exec() он не может быть пустым
           default: Y-m-d H:i:s
           type: string
-      required:
-        - format
+      required: []
       title: Получение текущего времени
     Example_2.Types.Letter:
       type: string
@@ -6832,8 +6791,7 @@ components:
           title: Формат схемы Open API, json или yaml
           default: json
           type: string
-      required:
-        - format
+      required: []
       title: Создать Open API схемы и скачать в zip
       description: |-
         В результате вернет zip файл в потоке вывода
@@ -6932,7 +6890,6 @@ components:
       required:
         - ticket_id
         - text
-        - is_silent
       title: Добавление сообщения к тикиту
     Tickets_2.Types.Tickets.Type:
       type: string
@@ -7004,10 +6961,6 @@ components:
           type: integer
       required:
         - text
-        - type
-        - is_silent
-        - social_user_id
-        - task_id
       title: Создание тикета
     Tickets_2.Methods.Tickets.Edit:
       type: object
@@ -7054,8 +7007,6 @@ components:
         fetch_style:
           $ref: '#/components/schemas/fetch_style'
       required:
-        - show_messages_users
-        - show_writings
         - fields
         - orders
         - filters
@@ -7192,9 +7143,6 @@ components:
           $ref: '#/components/schemas/project_id'
       required:
         - output
-        - show_fields_names
-        - show_fields_labels
-        - forClipboard
         - fields
         - orders
         - filters
@@ -7267,8 +7215,6 @@ components:
         project_id:
           $ref: '#/components/schemas/project_id'
       required:
-        - reset
-        - setActiveByRegexpByType
         - project_id
       title: Импортирование urls
       description: |-
@@ -7630,7 +7576,6 @@ components:
         project_id:
           $ref: '#/components/schemas/project_id'
       required:
-        - show_raw_data
         - fields
         - orders
         - filters
@@ -8023,7 +7968,6 @@ components:
         - target_type
         - output
         - project_id
-        - fields
         - check_id
       title: Экспорт результатов проверки файла
     Audit_2.Methods.Audit.Images.Get:
@@ -8442,11 +8386,7 @@ components:
         check_id:
           $ref: '#/components/schemas/check_id'
       required:
-        - show_urls
-        - show_locations
-        - page
         - project_id
-        - offset
         - check_id
       title: Получение данных проверенных ресурсов
     Audit_2.Methods.Audit.Pages.Get:
@@ -8483,7 +8423,6 @@ components:
         check_id:
           $ref: '#/components/schemas/check_id'
       required:
-        - filters_resources
         - fields
         - orders
         - filters
@@ -8765,7 +8704,6 @@ components:
         check_id:
           $ref: '#/components/schemas/check_id'
       required:
-        - filter_check_type
         - fields
         - orders
         - filters
@@ -8869,12 +8807,7 @@ components:
       required:
         - searchers_keys
         - output
-        - properties
-        - periodDays
-        - type_range
-        - count_dates
         - project_id
-        - fields
       title: Экспорт результатов индексации
       description: Необходимо указать либо date1 и date2, либо dates (вместе указывать нельзя)
     Audit_2.Methods.Indexing.Links.Get:
@@ -8994,12 +8927,7 @@ components:
           $ref: '#/components/schemas/id'
       required:
         - dates
-        - show_counts_changes
-        - show_counts_in_index
-        - show_counts_all
-        - forChart
         - project_id
-        - filters
       title: Получение сводки индексации
     Audit_2.Methods.Watcher.ByURL.Get:
       type: object
@@ -9044,9 +8972,6 @@ components:
           $ref: '#/components/schemas/project_id'
       required:
         - url_id
-        - show_headers
-        - watcher_fields
-        - show_diff
         - watcher_type
         - fields
         - orders
@@ -9153,10 +9078,7 @@ components:
           $ref: '#/components/schemas/id'
       required:
         - checks_ids
-        - show_counts_changes
-        - forChart
         - project_id
-        - filters
       title: Получение сводки радара
     Bank_2.Methods.Diadoc.SendContract.Get:
       type: object
@@ -9228,8 +9150,6 @@ components:
         - org_id
         - date1
         - date2
-        - org_kpp
-        - signed
         - fields
         - orders
         - filters
@@ -9260,7 +9180,6 @@ components:
           $ref: '#/components/schemas/fetch_style'
       required:
         - output
-        - show_summary_by_groups
         - fields
         - orders
         - filters
@@ -9360,7 +9279,6 @@ components:
       required:
         - target_id
         - type
-        - signed
         - fields
         - orders
         - filters
@@ -9405,8 +9323,6 @@ components:
         - date1
         - date2
         - org_id
-        - returnPdfDataForDiadoc
-        - signed
         - fields
         - orders
         - filters
@@ -9458,7 +9374,6 @@ components:
           $ref: '#/components/schemas/fetch_style'
       required:
         - type
-        - signed
         - fields
         - orders
         - filters
@@ -9608,7 +9523,6 @@ components:
         id:
           $ref: '#/components/schemas/id'
       required:
-        - debug
         - filters
       title: Запуск проверки аудита
     Audit_2.Methods.Audit.Checker.Price.Get:
@@ -9622,9 +9536,7 @@ components:
           $ref: '#/components/schemas/filters'
         id:
           $ref: '#/components/schemas/id'
-      required:
-        - apply_discount
-        - filters
+      required: []
       title: Получение стоимости проверки аудита
     Audit_2.Methods.Audit.Export.Links.Get:
       type: object
@@ -9661,11 +9573,9 @@ components:
         check_id:
           $ref: '#/components/schemas/check_id'
       required:
-        - view_name
         - view_template
         - log_http_codes_hundreds
         - view_signal_type
-        - links_external
         - project_id
         - check_id
       title: Получение гостевой ссылки на просмотр аудита позиций
@@ -9725,8 +9635,6 @@ components:
         check_id:
           $ref: '#/components/schemas/check_id'
       required:
-        - page
-        - offset
         - project_id
         - check_id
       title: Получение данных для графика
@@ -9794,7 +9702,6 @@ components:
           $ref: '#/components/schemas/check_id'
       required:
         - url
-        - orders
         - project_id
         - check_id
       title: Получение результатов анализа страницы
@@ -9810,7 +9717,6 @@ components:
         id:
           $ref: '#/components/schemas/id'
       required:
-        - debug
         - filters
       title: Отправка проектов на проверку индексации
     Audit_2.Methods.Indexing.Checker.Price.Get:
@@ -9824,9 +9730,7 @@ components:
           $ref: '#/components/schemas/filters'
         id:
           $ref: '#/components/schemas/id'
-      required:
-        - apply_discount
-        - filters
+      required: []
       title: Полуение стоимости проверки индексации
     Audit_2.Methods.Indexing.Export.Links.Get:
       type: object
@@ -9953,12 +9857,7 @@ components:
           $ref: '#/components/schemas/id'
       required:
         - dates
-        - show_counts_changes
-        - show_counts_in_index
-        - show_counts_all
-        - forChart
         - project_id
-        - filters
       title: Получение сводок индексации для графика
     Audit_2.Types.Sitemap.MaxPages:
       type: string
@@ -9985,7 +9884,6 @@ components:
           $ref: '#/components/schemas/id'
       required:
         - max_pages
-        - debug
         - filters
       title: Отправка проектов на проверку карты сайта
     Audit_2.Methods.Sitemap.Checker.Price.Get:
@@ -10003,9 +9901,7 @@ components:
         id:
           $ref: '#/components/schemas/id'
       required:
-        - apply_discount
         - max_pages
-        - filters
       title: Полуение стоимости проверки карты сайта
     Audit_2.Methods.Watcher.Checker.Go.Edit:
       type: object
@@ -10018,7 +9914,6 @@ components:
         id:
           $ref: '#/components/schemas/id'
       required:
-        - debug
         - filters
       title: Отправка проектов на проверку радара
     Audit_2.Methods.Watcher.Checker.Price.Get:
@@ -10032,9 +9927,7 @@ components:
           $ref: '#/components/schemas/filters'
         id:
           $ref: '#/components/schemas/id'
-      required:
-        - apply_discount
-        - filters
+      required: []
       title: Полуение стоимости проверки радара
     properties-check_id:
       title: ID проверки радара
@@ -10065,9 +9958,7 @@ components:
         check_id:
           $ref: '#/components/schemas/properties-check_id'
       required:
-        - view_name
         - fulltext
-        - changed
         - project_id
         - check_id
       title: Создание гостевой ссылки на просмотр радара
@@ -10103,8 +9994,5 @@ components:
           $ref: '#/components/schemas/id'
       required:
         - checks_ids
-        - show_counts_changes
-        - forChart
         - project_id
-        - filters
       title: Получение сводок радара для графика

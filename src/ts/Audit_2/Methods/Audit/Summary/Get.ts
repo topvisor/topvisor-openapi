@@ -10,7 +10,7 @@ export interface components {
         /** Получение сводки о выполненном аудите */
         "Audit_2.Methods.Audit.Summary.Get": {
             /** Фильтр по состоянию сигнала (success, warning, error) */
-            filter_check_type: (string | number)[];
+            filter_check_type?: (string | number)[];
             filter_check_state?: import('../../../Types/Audit/Summary/FilterCheckState.ts').components['schemas']['Audit_2.Types.Audit.Summary.FilterCheckState'] | null;
             fields: import('../../../../TV/API/Params/FieldsTrait.ts').components['schemas']['TV.API.Params.FieldsTrait']['fields'];
             orders: import('../../../../TV/API/Params/OrdersTrait.ts').components['schemas']['TV.API.Params.OrdersTrait']['orders'];

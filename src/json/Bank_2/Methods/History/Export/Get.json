@@ -41,7 +41,6 @@
                 },
                 "required": [
                     "output",
-                    "show_summary_by_groups",
                     "fields",
                     "orders",
                     "filters",

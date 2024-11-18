@@ -18,7 +18,7 @@ export interface components {
             /** ID URL */
             url_id: number;
             /** Включать ли в результат названия столбцов */
-            show_headers: boolean;
+            show_headers?: boolean;
             /**
              * Выбор столбцов данных с результатами проверки
              * @default [
@@ -27,7 +27,7 @@ export interface components {
              *     ]
              */
             watcher_fields: (string | number)[];
-            show_diff: import('../../../Types/Watcher/ShowDiff.ts').components['schemas']['Audit_2.Types.Watcher.ShowDiff'];
+            show_diff?: import('../../../Types/Watcher/ShowDiff.ts').components['schemas']['Audit_2.Types.Watcher.ShowDiff'];
             watcher_type: import('../../../Types/Watcher/Type.ts').components['schemas']['Audit_2.Types.Watcher.Type'];
             fields: import('../../../../TV/API/Params/FieldsTrait.ts').components['schemas']['TV.API.Params.FieldsTrait']['fields'];
             orders: import('../../../../TV/API/Params/OrdersTrait.ts').components['schemas']['TV.API.Params.OrdersTrait']['orders'];

@@ -19,14 +19,14 @@ export interface components {
             /** Дата конца диапазона */
             date2: import('../../../../TV/API/Types/Date.ts').components['schemas']['TV.API.Types.Date'];
             /** КПП организации */
-            org_kpp: string;
+            org_kpp?: string;
             /** Id договора */
             requisites_id?: string | null;
             /**
              * Использовать подпись
              * @description Если true, то документ с подписью (не распространяется на договоры)
              */
-            signed: boolean;
+            signed?: boolean;
             fields: import('../../../../TV/API/Params/FieldsTrait.ts').components['schemas']['TV.API.Params.FieldsTrait']['fields'];
             orders: import('../../../../TV/API/Params/OrdersTrait.ts').components['schemas']['TV.API.Params.OrdersTrait']['orders'];
             filters: import('../../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['filters'];

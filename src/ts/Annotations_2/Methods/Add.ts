@@ -16,7 +16,7 @@ export interface components {
             /** Идентификатор отчета в сервисе */
             target_id: string;
             /** Комментарий, если не указан, комментарий добавлен не будет */
-            text: string;
+            text?: string;
         };
     };
     responses: never;

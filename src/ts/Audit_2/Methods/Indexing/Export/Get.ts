@@ -24,7 +24,7 @@ export interface components {
             /** Формат экспортируемого файла */
             output: import('../../../../TV/API/Types/ExportFormat.ts').components['schemas']['TV.API.Types.ExportFormat'];
             /** Настройки экспорта */
-            properties: (string | number)[];
+            properties?: (string | number)[];
             /** Произвольные даты без использования диапазона */
             dates?: (string | number)[] | null;
             /** Дата начала диапазона */
@@ -44,7 +44,7 @@ export interface components {
              */
             count_dates: number;
             project_id: import('../../../../TV/API/Params/ProjectIdTrait.ts').components['schemas']['TV.API.Params.ProjectIdTrait']['project_id'];
-            fields: import('../../../../TV/API/Params/FieldsTrait.ts').components['schemas']['TV.API.Params.FieldsTrait']['fields'];
+            fields?: import('../../../../TV/API/Params/FieldsTrait.ts').components['schemas']['TV.API.Params.FieldsTrait']['fields'];
         };
     };
     responses: never;

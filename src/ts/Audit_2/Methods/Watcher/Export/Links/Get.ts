@@ -10,7 +10,7 @@ export interface components {
         /** Создание гостевой ссылки на просмотр радара */
         "Audit_2.Methods.Watcher.Export.Links.Get": {
             /** Выбранный элемент в меню */
-            view_name: string;
+            view_name?: string;
             /** Выводить полные тексты (для вкладки контент) */
             fulltext: boolean;
             /** @default all */

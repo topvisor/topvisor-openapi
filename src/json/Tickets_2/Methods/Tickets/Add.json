@@ -83,11 +83,7 @@
                     }
                 },
                 "required": [
-                    "text",
-                    "type",
-                    "is_silent",
-                    "social_user_id",
-                    "task_id"
+                    "text"
                 ],
                 "title": "Создание тикета"
             }

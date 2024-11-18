@@ -10,7 +10,7 @@ export interface components {
         /** Отправка проектов на проверку индексации */
         "Audit_2.Methods.Indexing.Checker.Go.Edit": {
             /** Запуск в режиме отладки */
-            debug: boolean;
+            debug?: boolean;
             filters: import('../../../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['filters'];
             id?: import('../../../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['id'];
         };

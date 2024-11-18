@@ -25,8 +25,7 @@
                 },
                 "required": [
                     "ticket_id",
-                    "text",
-                    "is_silent"
+                    "text"
                 ],
                 "title": "Добавление сообщения к тикиту"
             }

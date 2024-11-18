@@ -14,7 +14,7 @@ export interface components {
          *     - в ответ будет добавлены значения robot_step и robot_count_tasks_allм */
         "Audit_2.Methods.Audit.Checks.Get": {
             /** Добавить в результат данные о незавершенной проверке */
-            show_raw_data: boolean;
+            show_raw_data?: boolean;
             fields: import('../../../../TV/API/Params/FieldsTrait.ts').components['schemas']['TV.API.Params.FieldsTrait']['fields'];
             orders: import('../../../../TV/API/Params/OrdersTrait.ts').components['schemas']['TV.API.Params.OrdersTrait']['orders'];
             filters: import('../../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['filters'];

@@ -29,12 +29,12 @@ export interface components {
             link_sitemap_xml?: import('../../../TV/API/Types/Url.ts').components['schemas']['TV.API.Types.Url'] | null;
             tags?: import('../../../Tags_2/Types/TagsIds.ts').components['schemas']['Tags_2.Types.TagsIds'] | null;
             /** Очистить список URL перед импортом */
-            reset: boolean;
+            reset?: boolean;
             /**
              * Недокументириуемый параметр
              * @description set(Audit_2\Types\Type => regexp)
              */
-            setActiveByRegexpByType: (string | number)[];
+            setActiveByRegexpByType?: (string | number)[];
             /** Флаг активности в карте сайта
              *     - 1 - присутствовал в прошлых версиях карты сайта */
             sitemap?: import('../../Types/Flag.ts').components['schemas']['Urls_2.Types.Flag'] | null;

@@ -61,12 +61,7 @@
                 },
                 "required": [
                     "dates",
-                    "show_counts_changes",
-                    "show_counts_in_index",
-                    "show_counts_all",
-                    "forChart",
-                    "project_id",
-                    "filters"
+                    "project_id"
                 ],
                 "title": "Получение сводок индексации для графика"
             }

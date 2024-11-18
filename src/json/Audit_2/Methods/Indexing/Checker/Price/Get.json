@@ -22,10 +22,7 @@
                         "$ref": "../../../../../TV/API/Params/FiltersTrait.json#/components/schemas/TV.API.Params.FiltersTrait/properties/id"
                     }
                 },
-                "required": [
-                    "apply_discount",
-                    "filters"
-                ],
+                "required": [],
                 "title": "Полуение стоимости проверки индексации"
             }
         }

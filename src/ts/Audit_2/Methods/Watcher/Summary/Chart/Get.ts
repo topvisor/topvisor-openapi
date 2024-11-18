@@ -14,11 +14,11 @@ export interface components {
             /** ID проверок */
             checks_ids: (string | number)[];
             /** Отобразить количество изменений по типам */
-            show_counts_changes: boolean;
+            show_counts_changes?: boolean;
             /** Недокументируемый параметр, данные для графика */
-            forChart: boolean;
+            forChart?: boolean;
             project_id: import('../../../../../TV/API/Params/ProjectIdTrait.ts').components['schemas']['TV.API.Params.ProjectIdTrait']['project_id'];
-            filters: import('../../../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['filters'];
+            filters?: import('../../../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['filters'];
             id?: import('../../../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['id'];
         };
     };

@@ -62,7 +62,6 @@
                     }
                 },
                 "required": [
-                    "filters_resources",
                     "fields",
                     "orders",
                     "filters",

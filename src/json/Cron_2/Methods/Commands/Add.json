@@ -48,7 +48,6 @@
                     "days",
                     "hh",
                     "i",
-                    "on",
                     "command"
                 ],
                 "title": "Добавление задачи cron"

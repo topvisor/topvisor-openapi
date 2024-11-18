@@ -48,7 +48,6 @@
                 "required": [
                     "target_id",
                     "type",
-                    "signed",
                     "fields",
                     "orders",
                     "filters",

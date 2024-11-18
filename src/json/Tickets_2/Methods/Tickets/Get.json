@@ -55,8 +55,6 @@
                     }
                 },
                 "required": [
-                    "show_messages_users",
-                    "show_writings",
                     "fields",
                     "orders",
                     "filters",

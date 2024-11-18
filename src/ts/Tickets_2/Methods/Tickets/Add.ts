@@ -23,14 +23,14 @@ export interface components {
              */
             resource?: string | null;
             /** Не проводить рассылку уведомлений */
-            is_silent: boolean;
+            is_silent?: boolean;
             /** Необходим только для незарегистрированных пользователей */
             email?: import('../../../TV/API/Types/Email.ts').components['schemas']['TV.API.Types.Email'] | null;
             /**
              * Id пользователя внутри социальной сети, из которой был отправлен тикет
              * @description Может быть в любом виде
              */
-            social_user_id: string;
+            social_user_id?: string;
             /**
              * Данные для авторизации в сервисе-конкуренте для переноса проектов
              * @description Недокументированный параметр
@@ -40,7 +40,7 @@ export interface components {
              * Номер задачи redmine, связанной с тикетом
              * @description Недокументированный параметр
              */
-            task_id: number;
+            task_id?: number;
         };
     };
     responses: never;
