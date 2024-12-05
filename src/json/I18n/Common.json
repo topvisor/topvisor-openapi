@@ -1168,6 +1168,9 @@
                     "TOP": {
                         "const": "TOP"
                     },
+                    "Top": {
+                        "const": "Top"
+                    },
                     "Phrases_dynamics": {
                         "const": "Keyword dynamics"
                     },
@@ -1176,6 +1179,9 @@
                     },
                     "Phrases_in_TOP": {
                         "const": "Keywords in TOP"
+                    },
+                    "Phrases_in_Top": {
+                        "const": "Keywords in Top"
                     },
                     "Page": {
                         "const": "Page"
@@ -1389,6 +1395,24 @@
                     },
                     "No_snippet": {
                         "const": "No snippet"
+                    },
+                    "Copied_to_clipboard": {
+                        "const": "Copied to clipboard"
+                    },
+                    "Cannot_copied_to_clipboard": {
+                        "const": "Cannot copied to clipboard"
+                    },
+                    "Copy_guest_link_manually": {
+                        "const": "Copy the guest link manually"
+                    },
+                    "Press_to_copy_1": {
+                        "const": "Press"
+                    },
+                    "Press_to_copy_2": {
+                        "const": "+C to copy a link"
+                    },
+                    "Guest_link_created": {
+                        "const": "Guest link created"
                     }
                 },
                 "required": []

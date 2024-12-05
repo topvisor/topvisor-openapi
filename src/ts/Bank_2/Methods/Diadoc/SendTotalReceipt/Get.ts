@@ -19,7 +19,7 @@ export interface components {
             /** Дата конца диапазона */
             date2: import('../../../../TV/API/Types/Date.ts').components['schemas']['TV.API.Types.Date'];
             /** КПП организации */
-            org_kpp?: string;
+            org_kpp?: string | null;
             /** Id договора */
             requisites_id?: string | null;
             /**

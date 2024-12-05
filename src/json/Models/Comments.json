@@ -43,6 +43,9 @@
                     "user_avatar": {
                         "nullable": true
                     },
+                    "author_alias": {
+                        "nullable": true
+                    },
                     "like": {
                         "nullable": true
                     }

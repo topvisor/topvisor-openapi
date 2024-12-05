@@ -43,6 +43,8 @@ export interface components {
             /** @constant */
             Magnet_tool?: "Magnet (keyword ideas)";
             /** @constant */
+            Semantic_core?: "Semantic core tools";
+            /** @constant */
             PPC_bid_manager?: "PPC Bid Manager";
             /** @constant */
             Competitor_research?: "Competitor research";

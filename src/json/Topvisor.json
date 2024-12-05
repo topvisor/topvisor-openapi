@@ -11,7 +11,7 @@
                 "tags": [
                     "Analytics_2"
                 ],
-                "summary": "Фиксация события",
+                "summary": "Фиксация события test",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -562,6 +562,9 @@
                                                 },
                                                 {
                                                     "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                },
+                                                {
+                                                    "$ref": "Pagination.json#/components/schemas/Pagination"
                                                 }
                                             ]
                                         },

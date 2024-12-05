@@ -32,6 +32,7 @@
                     },
                     "org_kpp": {
                         "title": "КПП организации",
+                        "nullable": true,
                         "type": "string"
                     },
                     "requisites_id": {

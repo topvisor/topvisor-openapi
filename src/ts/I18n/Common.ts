@@ -781,11 +781,15 @@ export interface components {
             /** @constant */
             TOP?: "TOP";
             /** @constant */
+            Top?: "Top";
+            /** @constant */
             Phrases_dynamics?: "Keyword dynamics";
             /** @constant */
             Project_settings?: "Project settings";
             /** @constant */
             Phrases_in_TOP?: "Keywords in TOP";
+            /** @constant */
+            Phrases_in_Top?: "Keywords in Top";
             /** @constant */
             Page?: "Page";
             /** @constant */
@@ -928,6 +932,18 @@ export interface components {
             Sort?: "Sort";
             /** @constant */
             No_snippet?: "No snippet";
+            /** @constant */
+            Copied_to_clipboard?: "Copied to clipboard";
+            /** @constant */
+            Cannot_copied_to_clipboard?: "Cannot copied to clipboard";
+            /** @constant */
+            Copy_guest_link_manually?: "Copy the guest link manually";
+            /** @constant */
+            Press_to_copy_1?: "Press";
+            /** @constant */
+            Press_to_copy_2?: "+C to copy a link";
+            /** @constant */
+            Guest_link_created?: "Guest link created";
         };
     };
     responses: never;

@@ -7,22 +7,11 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        "Models.Comments": {
-            id?: any;
-            site?: any;
-            subdomain?: any;
-            page_url?: any;
-            reply_id?: any;
-            user_id?: any;
-            time?: any;
-            text?: any;
-            count_likes?: any;
-            status?: any;
-            user_name?: any;
-            user_avatar?: any;
-            author_alias?: any;
-            like?: any;
-        };
+        /**
+         * id тега
+         * @enum {integer}
+         */
+        "Positions_2.Types.TypeRange": 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7;
     };
     responses: never;
     parameters: never;

@@ -117,7 +117,7 @@ paths:
       operationId: AddAnalytics2
       tags:
         - Analytics_2
-      summary: Фиксация события
+      summary: Фиксация события test
       requestBody:
         content:
           application/json:
@@ -423,6 +423,7 @@ paths:
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
+                      - $ref: '#/components/schemas/Pagination'
                   - $ref: '#/components/schemas/ResponseError'
             model:
               schema:
@@ -4241,7 +4242,7 @@ components:
           nullable: true
           type: integer
       required: []
-      title: Фиксация события
+      title: Фиксация события test
     TV.API.Types.StringArray:
       type: array
       items:
@@ -4578,7 +4579,25 @@ components:
           title: Получить ответы на комменатрий с id = reply_id (нельзя указывать совместно с page_url)
           nullable: true
           type: integer
-      required: []
+        fields:
+          $ref: '#/components/schemas/fields'
+        orders:
+          $ref: '#/components/schemas/orders'
+        filters:
+          $ref: '#/components/schemas/filters'
+        id:
+          $ref: '#/components/schemas/id'
+        limit:
+          $ref: '#/components/schemas/limit'
+        offset:
+          $ref: '#/components/schemas/offset'
+        fetch_style:
+          $ref: '#/components/schemas/fetch_style'
+      required:
+        - fields
+        - orders
+        - filters
+        - offset
       title: Получение комментариев
       description: Возвращает набор комментариев со всеми подкомменатриями, limit, offset не виляют на получение вложенных комментариев
     Payments_2.Types.System:
@@ -4603,6 +4622,7 @@ components:
         - rk
         - pt
         - lp
+        - ppg
     Payments_2.Types.Country:
       type: string
       enum:
@@ -9123,6 +9143,7 @@ components:
             - $ref: '#/components/schemas/TV.API.Types.Date'
         org_kpp:
           title: КПП организации
+          nullable: true
           type: string
         requisites_id:
           title: Id договора

@@ -7,7 +7,7 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Фиксация события */
+        /** Фиксация события test */
         "Analytics_2.Methods.Add": {
             /** Категория */
             ec?: string | null;

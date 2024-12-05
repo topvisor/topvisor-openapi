@@ -61,6 +61,9 @@
                     "Magnet_tool": {
                         "const": "Magnet (keyword ideas)"
                     },
+                    "Semantic_core": {
+                        "const": "Semantic core tools"
+                    },
                     "PPC_bid_manager": {
                         "const": "PPC Bid Manager"
                     },

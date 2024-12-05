@@ -269,6 +269,10 @@ export interface components {
             /** @constant */
             System_name_lp?: "LeadPay (cards of non-Russian banks. All countries except Ukraine)";
             /** @constant */
+            System_name_ppg?: "PayPro Global (cards of non-Russian banks, PayPal, Wire Transfer. All countries)";
+            /** @constant */
+            Ppg_product_name?: "Balance replenishment";
+            /** @constant */
             Your_contract_expires_notice?: "Contract expiration notice";
             /** @constant */
             Earlier_contacts_closed_notice?: "Your earlier contract has been closed";
@@ -542,6 +546,10 @@ export interface components {
             Get_closing_documents_by_mail?: "Get closing documents by mail";
             /** @constant */
             Get_closing_documents_by_mail_info?: "Check this box to receive closing documents by mail. We will send the registered mail with the Russian Post, you will need to receive it at your post office.<br><br>\n\t\tIf you want to receive the documents in electronic form, accept our invitation to join electronic document flow.<br><br>\n\t\tIf your accounting department do not see this invitation, contact us. Sometimes the original documents are not necessary, you can always get the copies under Invoices and warrants.";
+            /** @constant */
+            Confirm_document_removal?: "Are you sure you want to delete this document";
+            /** @constant */
+            Act?: "Act";
         };
     };
     responses: never;
