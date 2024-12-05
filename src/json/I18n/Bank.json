@@ -25,6 +25,9 @@
                     "Not_enough_balance": {
                         "const": "Insufficient balance in your account!"
                     },
+                    "Refill": {
+                        "const": "Balance replenishment"
+                    },
                     "Bonus_refill": {
                         "const": "Bonus for balance top-up"
                     },
@@ -402,9 +405,6 @@
                     },
                     "System_name_ppg": {
                         "const": "PayPro Global (cards of non-Russian banks, PayPal, Wire Transfer. All countries)"
-                    },
-                    "Ppg_product_name": {
-                        "const": "Balance replenishment"
                     },
                     "Your_contract_expires_notice": {
                         "const": "Contract expiration notice"

@@ -19,6 +19,8 @@ export interface components {
             /** @constant */
             Not_enough_balance?: "Insufficient balance in your account!";
             /** @constant */
+            Refill?: "Balance replenishment";
+            /** @constant */
             Bonus_refill?: "Bonus for balance top-up";
             /** @constant */
             Mail_address?: "Address";
@@ -270,8 +272,6 @@ export interface components {
             System_name_lp?: "LeadPay (cards of non-Russian banks. All countries except Ukraine)";
             /** @constant */
             System_name_ppg?: "PayPro Global (cards of non-Russian banks, PayPal, Wire Transfer. All countries)";
-            /** @constant */
-            Ppg_product_name?: "Balance replenishment";
             /** @constant */
             Your_contract_expires_notice?: "Contract expiration notice";
             /** @constant */
