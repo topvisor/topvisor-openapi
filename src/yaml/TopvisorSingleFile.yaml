@@ -2169,6 +2169,42 @@ paths:
               schema:
                 $ref: '#/components/schemas/Models.Urls'
                 description: Only for typescript, does not contain real data
+  /get/admin_2/actions/call/:
+    post:
+      operationId: GetAdmin2ActionsCall
+      tags:
+        - Admin_2
+      summary: Получение результата вызова actions-метода
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Admin_2.Methods.Actions.Call.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            type: array
+                            items:
+                              oneOf:
+                                - type: string
+                                - type: number
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                      - $ref: '#/components/schemas/Pagination'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
   /add/admin_2/users/promocodes/:
     post:
       operationId: AddAdmin2UsersPromocodes
@@ -3201,6 +3237,37 @@ paths:
               schema:
                 type: string
                 format: binary
+  /add/landings_2/hr/feedback/:
+    post:
+      operationId: AddLandings2HrFeedback
+      tags:
+        - Landings_2
+      summary: Отправление письма с лэндинга вакансий на hr@topvisor.com
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Landings_2.Methods.Hr.Feedback.Add'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            type: integer
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
   /edit/payments_2/tariff/delCard/:
     post:
       operationId: EditPayments2TariffDelCard
@@ -7273,6 +7340,37 @@ components:
         - filters
         - project_id
       title: Изменение тегов
+    Admin_2.Methods.Actions.Call.Get:
+      type: object
+      properties:
+        action:
+          title: Действие
+          nullable: true
+          type: string
+        test:
+          title: Является ли тестом
+          type: boolean
+        fields:
+          $ref: '#/components/schemas/fields'
+        orders:
+          $ref: '#/components/schemas/orders'
+        filters:
+          $ref: '#/components/schemas/filters'
+        id:
+          $ref: '#/components/schemas/id'
+        limit:
+          $ref: '#/components/schemas/limit'
+        offset:
+          $ref: '#/components/schemas/offset'
+        fetch_style:
+          $ref: '#/components/schemas/fetch_style'
+      required:
+        - test
+        - fields
+        - orders
+        - filters
+        - offset
+      title: Получение результата вызова actions-метода
     Admin_2.Methods.Users.Promocodes.Add:
       type: object
       properties:
@@ -9400,6 +9498,31 @@ components:
         - filters
         - offset
       title: Скачивание архива документов в формате PDF
+    Landings_2.Methods.Hr.Feedback.Add:
+      type: object
+      properties:
+        name:
+          title: Имя и фамилия
+          type: string
+        email:
+          title: Email
+          type: string
+        phone:
+          title: Номер телефона
+          type: string
+        telegram:
+          title: Ссылка на телеграм, можно укзать логин
+          type: string
+        comment:
+          title: Прикрепленное сообщение
+          type: string
+      required:
+        - name
+        - email
+        - phone
+        - telegram
+        - comment
+      title: Отправление письма с лэндинга вакансий на hr@topvisor.com
     Payments_2.Methods.Tariff.DelCard.Edit:
       type: object
       properties: {}

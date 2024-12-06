@@ -1129,6 +1129,23 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
+    /** Получение результата вызова actions-метода */
+    "/get/admin_2/actions/call/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["GetAdmin2ActionsCall"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
     /** Добавить промокоды к достижению */
     "/add/admin_2/users/promocodes/": {
         parameters: {
@@ -1677,6 +1694,23 @@ export interface paths {
         get?: never;
         put?: never;
         post: operations["GetBank2RequisitesPrintZip"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Отправление письма с лэндинга вакансий на hr@topvisor.com */
+    "/add/landings_2/hr/feedback/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["AddLandings2HrFeedback"];
         delete?: never;
         options?: never;
         head?: never;
@@ -3831,6 +3865,32 @@ export interface operations {
             };
         };
     };
+    GetAdmin2ActionsCall: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Admin_2/Methods/Actions/Call/Get.ts').components['schemas']['Admin_2.Methods.Actions.Call.Get'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: (string | number)[];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: null;
+                };
+            };
+        };
+    };
     AddAdmin2UsersPromocodes: {
         parameters: {
             query?: never;
@@ -4642,6 +4702,32 @@ export interface operations {
                 };
                 content: {
                     "application/octet-stream": string;
+                };
+            };
+        };
+    };
+    AddLandings2HrFeedback: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Landings_2/Methods/Hr/Feedback/Add.ts').components['schemas']['Landings_2.Methods.Hr.Feedback.Add'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: number;
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: null;
                 };
             };
         };
