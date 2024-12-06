@@ -68,7 +68,7 @@
                     "site": {
                         "allOf": [
                             {
-                                "$ref": "../../Controller_2/Objects/Sites/Site.json#/components/schemas/Controller_2.Objects.Sites.Site"
+                                "$ref": "../../TV/Core/Sites/Site.json#/components/schemas/TV.Core.Sites.Site"
                             }
                         ]
                     },

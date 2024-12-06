@@ -5449,7 +5449,7 @@ components:
               - type: number
       required:
         - items
-    Controller_2.Objects.Sites.Site:
+    TV.Core.Sites.Site:
       type: object
       properties: {}
       required: []
@@ -5489,7 +5489,7 @@ components:
               - type: number
         site:
           allOf:
-            - $ref: '#/components/schemas/Controller_2.Objects.Sites.Site'
+            - $ref: '#/components/schemas/TV.Core.Sites.Site'
         subdomain:
           type: string
         langContext:

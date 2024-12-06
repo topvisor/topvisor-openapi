@@ -15,7 +15,7 @@ export interface components {
             secondMenu: import('../../Tpl/Core/SecondMenu.ts').components['schemas']['Tpl.Core.SecondMenu'];
             leftMenu: import('../../Tpl/Core/LeftMenu.ts').components['schemas']['Tpl.Core.LeftMenu'];
             params: (string | number)[];
-            site: import('./Sites/Site.ts').components['schemas']['Controller_2.Objects.Sites.Site'];
+            site: import('../../TV/Core/Sites/Site.ts').components['schemas']['TV.Core.Sites.Site'];
             subdomain: string;
             langContext: string;
             langUrl: string;
