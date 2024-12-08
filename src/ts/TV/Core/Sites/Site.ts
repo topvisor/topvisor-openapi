@@ -7,7 +7,10 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** @property string host - Базовый домен сайта */
+        /**
+         * @property string host - Базовый домен сайта
+         * @description @property \TV\Objects\Config\Site config - настройки сайта
+         */
         "TV.Core.Sites.Site": Record<string, never>;
     };
     responses: never;

@@ -11,7 +11,8 @@
                 "type": "object",
                 "properties": {},
                 "required": [],
-                "title": "@property string host - Базовый домен сайта"
+                "title": "@property string host - Базовый домен сайта",
+                "description": "@property \\TV\\Objects\\Config\\Site config - настройки сайта"
             }
         }
     }
