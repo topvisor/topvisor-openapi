@@ -12,7 +12,7 @@
                 "properties": {},
                 "required": [],
                 "title": "@property string host - Базовый домен сайта",
-                "description": "@property Config\\Sites\\Topvisor\\Site config - Интерфейс конфигурации сайта, пример: `Config\\Sites\\{{ SiteName }}\\ConfigSite::class`"
+                "description": "@property TV\\Types\\Config\\Site config - Интерфейс конфигурации сайта, пример: `Config\\Sites\\{{ SiteName }}\\ConfigSite::class`"
             }
         }
     }
