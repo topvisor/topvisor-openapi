@@ -5521,7 +5521,7 @@ components:
       properties: {}
       required: []
       title: '@property string host - Базовый домен сайта'
-      description: '@property \TV\Objects\Config\Site config - настройки сайта'
+      description: '@property TV\Objects\Config\AbstractSite config - настройки сайта'
     Controller_2.Objects.TplEngine:
       type: object
       properties: {}

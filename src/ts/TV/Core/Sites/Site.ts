@@ -9,7 +9,7 @@ export interface components {
     schemas: {
         /**
          * @property string host - Базовый домен сайта
-         * @description @property \TV\Objects\Config\Site config - настройки сайта
+         * @description @property TV\Objects\Config\AbstractSite config - настройки сайта
          */
         "TV.Core.Sites.Site": Record<string, never>;
     };
