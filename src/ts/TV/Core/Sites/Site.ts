@@ -9,7 +9,7 @@ export interface components {
     schemas: {
         /**
          * @property string host - Базовый домен сайта
-         * @description @property TV\Objects\Config\AbstractSite config - настройки сайта
+         * @description @property Config\Sites\Topvisor\Site config - Интерфейс конфигурации сайта, пример: `Config\Sites\{{ SiteName }}\ConfigSite::class`
          */
         "TV.Core.Sites.Site": Record<string, never>;
     };
