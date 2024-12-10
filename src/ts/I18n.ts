@@ -35,6 +35,7 @@ export interface components {
         Thundo: import('./I18n/Thundo.ts').components['schemas']['I18n.Thundo'];
         Tickets: import('./I18n/Tickets.ts').components['schemas']['I18n.Tickets'];
         Tpvsr: import('./I18n/Tpvsr.ts').components['schemas']['I18n.Tpvsr'];
+        Tv: import('./I18n/Tv.ts').components['schemas']['I18n.Tv'];
         Units: import('./I18n/Units.ts').components['schemas']['I18n.Units'];
         Updates: import('./I18n/Updates.ts').components['schemas']['I18n.Updates'];
         User: import('./I18n/User.ts').components['schemas']['I18n.User'];

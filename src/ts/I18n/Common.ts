@@ -9,8 +9,6 @@ export interface components {
     schemas: {
         "I18n.Common": {
             /** @constant */
-            TV?: "ТV";
-            /** @constant */
             url_lang_prefix?: "";
             /** @constant */
             Page_404_text?: "Page Not Found";
@@ -832,6 +830,8 @@ export interface components {
             Project_dynamics?: "Keyword dynamics";
             /** @constant */
             Apometr?: "Updates";
+            /** @constant */
+            Apometr_title?: "Google and Yandex SERP tracking tool";
             /** @constant */
             Apometr_description?: "Google and Yandex updates calendar (SERP updates and changes). Get SERP updates alerts. SERP updates score for different locations and content types.";
             /** @constant */

@@ -91,6 +91,9 @@
             "Tpvsr": {
                 "$ref": "I18n/Tpvsr.json#/components/schemas/I18n.Tpvsr"
             },
+            "Tv": {
+                "$ref": "I18n/Tv.json#/components/schemas/I18n.Tv"
+            },
             "Units": {
                 "$ref": "I18n/Units.json#/components/schemas/I18n.Units"
             },

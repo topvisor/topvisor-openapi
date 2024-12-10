@@ -10,9 +10,6 @@
             "I18n.Common": {
                 "type": "object",
                 "properties": {
-                    "TV": {
-                        "const": "ТV"
-                    },
                     "url_lang_prefix": {
                         "const": ""
                     },
@@ -1245,6 +1242,9 @@
                     },
                     "Apometr": {
                         "const": "Updates"
+                    },
+                    "Apometr_title": {
+                        "const": "Google and Yandex SERP tracking tool"
                     },
                     "Apometr_description": {
                         "const": "Google and Yandex updates calendar (SERP updates and changes). Get SERP updates alerts. SERP updates score for different locations and content types."
