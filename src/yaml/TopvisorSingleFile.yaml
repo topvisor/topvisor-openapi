@@ -5518,10 +5518,16 @@ components:
         - items
     TV.Core.Sites.Site:
       type: object
-      properties: {}
-      required: []
-      title: '@property string host - Базовый домен сайта'
-      description: '@property TV\Types\Config\Site config - Интерфейс конфигурации сайта, пример: `Config\Sites\{{ SiteName }}\ConfigSite::class`'
+      properties:
+        host:
+          title: Базовый домен сайта
+          type: string
+        config:
+          title: '@type TV\Types\Config\Site config - Интерфейс конфигурации сайта, пример: `Config\Sites\{{ SiteName }}\ConfigSite::class`'
+          type: string
+      required:
+        - host
+        - config
     Controller_2.Objects.TplEngine:
       type: object
       properties: {}

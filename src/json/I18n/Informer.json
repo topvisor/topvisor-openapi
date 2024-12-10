@@ -13,6 +13,9 @@
                     "Type_balance": {
                         "const": "Balance"
                     },
+                    "Type_news": {
+                        "const": "Sevice news"
+                    },
                     "Type_tickets": {
                         "const": "Tickets"
                     },

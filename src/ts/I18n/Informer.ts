@@ -11,6 +11,8 @@ export interface components {
             /** @constant */
             Type_balance?: "Balance";
             /** @constant */
+            Type_news?: "Sevice news";
+            /** @constant */
             Type_tickets?: "Tickets";
             /** @constant */
             Type_yandex_update?: "Yandex update";
