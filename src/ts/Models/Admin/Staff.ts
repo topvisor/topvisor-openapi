@@ -10,6 +10,7 @@ export interface components {
         "Models.Admin.Staff": {
             "VACATIONS()"?: any;
             id?: any;
+            site?: any;
             name?: any;
             lang?: any;
             timezone?: any;

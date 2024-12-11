@@ -13,6 +13,9 @@
                         "nullable": true
                     },
                     "id": {},
+                    "site": {
+                        "nullable": true
+                    },
                     "name": {
                         "nullable": true
                     },
