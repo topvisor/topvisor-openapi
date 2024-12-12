@@ -34,7 +34,7 @@ export interface components {
             tplStaticPath: string;
             tplStatic: string;
             tplStaticRendered: string;
-            /** @default templates/pages/content.php */
+            /** @default pages/content.php */
             tplPath: string;
             tplRendered: string;
             tplSiteRendered: string;

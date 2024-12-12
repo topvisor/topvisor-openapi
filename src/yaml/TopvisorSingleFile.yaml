@@ -5608,7 +5608,7 @@ components:
         tplStaticRendered:
           type: string
         tplPath:
-          default: templates/pages/content.php
+          default: pages/content.php
           type: string
         tplRendered:
           type: string
