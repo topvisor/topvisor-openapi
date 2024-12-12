@@ -341,7 +341,7 @@
                         "const": "Index status report for"
                     },
                     "Indexing_need_config_1": {
-                        "const": "To check website index status"
+                        "const": "To check website index status "
                     },
                     "Indexing_need_config_2": {
                         "const": "set"

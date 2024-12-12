@@ -229,7 +229,7 @@ export interface components {
             /** @constant */
             Indexing_bank_info?: "Index status report for";
             /** @constant */
-            Indexing_need_config_1?: "To check website index status";
+            Indexing_need_config_1?: "To check website index status ";
             /** @constant */
             Indexing_need_config_2?: "set";
             /** @constant */
