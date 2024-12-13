@@ -10,6 +10,30 @@
             "I18n.Email": {
                 "type": "object",
                 "properties": {
+                    "User_registration_confirm": {
+                        "const": "Confirm your registration"
+                    },
+                    "User_accept_email_title": {
+                        "const": "Account details"
+                    },
+                    "User_PWD_msg_title2": {
+                        "const": "Password successfully changed"
+                    },
+                    "User_restore_access": {
+                        "const": "Recovering your password"
+                    },
+                    "User_project_access": {
+                        "const": "Access granted"
+                    },
+                    "User_registration_invite_mail_title": {
+                        "const": "Your friend invites you to sign up and get a double welcome bonus! 🤩"
+                    },
+                    "User_change_confirm": {
+                        "const": "Confirm your email"
+                    },
+                    "User_email_changed_msg": {
+                        "const": "Your email has been changed"
+                    },
                     "User_projects_rights_title": {
                         "const": "You have received access to the project."
                     },
@@ -51,6 +75,18 @@
                     },
                     "Got_indexed": {
                         "const": "New indexed"
+                    },
+                    "Tariff_due_to_expire": {
+                        "const": "Do not forget to renew your subscription"
+                    },
+                    "Dogovor": {
+                        "const": "User agreement"
+                    },
+                    "Ur_balance": {
+                        "const": "Balance is topped up"
+                    },
+                    "Payment_received": {
+                        "const": "Pyment has been received"
                     }
                 },
                 "required": []
