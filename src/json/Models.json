@@ -154,6 +154,9 @@
             "Models.Mentions.Searchers": {
                 "$ref": "Models/Mentions/Searchers.json#/components/schemas/Models.Mentions.Searchers"
             },
+            "Models.Projects.Folders": {
+                "$ref": "Models/Projects/Folders.json#/components/schemas/Models.Projects.Folders"
+            },
             "Models.Quizes.Questions": {
                 "$ref": "Models/Quizes/Questions.json#/components/schemas/Models.Quizes.Questions"
             },
