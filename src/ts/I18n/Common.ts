@@ -135,6 +135,8 @@ export interface components {
             /** @constant */
             of_project?: "of project";
             /** @constant */
+            Tool_digest?: "Tool digest (2024)";
+            /** @constant */
             Ticket?: "Ticket";
             /** @constant */
             Tickets?: "Tickets";

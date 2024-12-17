@@ -199,6 +199,9 @@
                     "of_project": {
                         "const": "of project"
                     },
+                    "Tool_digest": {
+                        "const": "Tool digest (2024)"
+                    },
                     "Ticket": {
                         "const": "Ticket"
                     },
