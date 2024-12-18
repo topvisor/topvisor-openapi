@@ -1382,10 +1382,7 @@
                         "const": "number"
                     },
                     "Invalid_url": {
-                        "const": "Invalid project URL"
-                    },
-                    "Invalid_url_2": {
-                        "const": "To change the URL, <a href=\"/support/start/ticket-request-system/#new-ticket\" target=\"_blank\" class=\"a\">submit a ticket</a>"
+                        "const": "Invalid URL format"
                     },
                     "Access_settings": {
                         "const": "Access settings"

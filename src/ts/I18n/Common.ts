@@ -923,9 +923,7 @@ export interface components {
             /** @constant */
             Count?: "number";
             /** @constant */
-            Invalid_url?: "Invalid project URL";
-            /** @constant */
-            Invalid_url_2?: "To change the URL, <a href=\"/support/start/ticket-request-system/#new-ticket\" target=\"_blank\" class=\"a\">submit a ticket</a>";
+            Invalid_url?: "Invalid URL format";
             /** @constant */
             Access_settings?: "Access settings";
             /** @constant */
