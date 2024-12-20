@@ -19,8 +19,6 @@ export interface components {
             /** @constant */
             Not_enough_balance?: "Insufficient balance in your account!";
             /** @constant */
-            Refill?: "Balance replenishment";
-            /** @constant */
             Bonus_refill?: "Bonus for balance top-up";
             /** @constant */
             Mail_address?: "Address";

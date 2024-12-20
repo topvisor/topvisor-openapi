@@ -25,9 +25,6 @@
                     "Not_enough_balance": {
                         "const": "Insufficient balance in your account!"
                     },
-                    "Refill": {
-                        "const": "Balance replenishment"
-                    },
                     "Bonus_refill": {
                         "const": "Bonus for balance top-up"
                     },
