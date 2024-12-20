@@ -23,7 +23,7 @@ export interface components {
             color?: any;
             image_url?: any;
             always_visible?: any;
-            limit?: any;
+            site?: any;
             code?: any;
             used?: any;
             date?: any;
