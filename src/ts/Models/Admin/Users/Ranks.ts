@@ -35,6 +35,7 @@ export interface components {
             only_new_users?: unknown;
             color?: unknown;
             always_visible?: unknown;
+            site?: unknown;
         };
     };
     responses: never;

@@ -52,6 +52,9 @@
                     "always_visible": {
                         "nullable": true
                     },
+                    "limit": {
+                        "nullable": true
+                    },
                     "code": {
                         "nullable": true
                     },

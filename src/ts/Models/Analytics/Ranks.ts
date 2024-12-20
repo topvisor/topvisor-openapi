@@ -16,6 +16,7 @@ export interface components {
             bonus_USD?: any;
             to_date?: any;
             limit?: any;
+            site?: any;
             code?: any;
             retention_week?: any;
             retention_month?: any;

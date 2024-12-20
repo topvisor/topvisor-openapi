@@ -87,6 +87,9 @@
                     },
                     "always_visible": {
                         "nullable": true
+                    },
+                    "site": {
+                        "nullable": true
                     }
                 }
             }

@@ -7845,6 +7845,8 @@ components:
           nullable: true
         always_visible:
           nullable: true
+        site:
+          nullable: true
     Admin_2.Methods.Users.Ranks.Edit:
       type: object
       properties:
