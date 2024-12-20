@@ -10,11 +10,6 @@
             "Projects_2.Methods.Folders.Get": {
                 "type": "object",
                 "properties": {
-                    "name": {
-                        "title": "Имя папки",
-                        "nullable": true,
-                        "type": "string"
-                    },
                     "fields": {
                         "$ref": "../../../TV/API/Params/FieldsTrait.json#/components/schemas/TV.API.Params.FieldsTrait/properties/fields"
                     },
