@@ -23,7 +23,7 @@ export interface components {
             /** Дата окончания диапазона */
             date2?: string | null;
             /** Тип диапазона дат */
-            type_range?: import('../../../../Types/Indexing/Export/TypeRange.ts').components['schemas']['Audit_2.Types.Indexing.Export.TypeRange'] | null;
+            type_range?: import('../../../../Types/Indexing/TypeRange.ts').components['schemas']['Audit_2.Types.Indexing.TypeRange'] | null;
             /** Сравнение диапазонов типов */
             type_range_compare?: string | null;
             /** Количество дней в диапазоне */

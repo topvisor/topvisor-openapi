@@ -45,7 +45,7 @@
                         "nullable": true,
                         "allOf": [
                             {
-                                "$ref": "../../../../Audit_2/Types/Indexing/Export/TypeRange.json#/components/schemas/Audit_2.Types.Indexing.Export.TypeRange"
+                                "$ref": "../../../../Audit_2/Types/Indexing/TypeRange.json#/components/schemas/Audit_2.Types.Indexing.TypeRange"
                             }
                         ]
                     },

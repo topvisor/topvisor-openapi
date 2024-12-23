@@ -5933,15 +5933,16 @@ components:
       type: string
       title: Дата
       example: '2000-01-01'
-    Audit_2.Types.Indexing.Export.TypeRange:
+    Audit_2.Types.Indexing.TypeRange:
       type: integer
       enum:
         - 0
+        - 1
         - 2
         - 3
         - 4
+        - 5
         - 7
-        - 100
       title: Тип диапазона индексации
     Audit_2.Methods.Indexing.Get:
       type: object
@@ -5998,7 +5999,7 @@ components:
           title: Тип диапазона дат
           default: 7
           allOf:
-            - $ref: '#/components/schemas/Audit_2.Types.Indexing.Export.TypeRange'
+            - $ref: '#/components/schemas/Audit_2.Types.Indexing.TypeRange'
         count_dates:
           title: Количество дней в диапазоне
           default: 60
@@ -9195,7 +9196,7 @@ components:
         type_range:
           default: 7
           allOf:
-            - $ref: '#/components/schemas/Audit_2.Types.Indexing.Export.TypeRange'
+            - $ref: '#/components/schemas/Audit_2.Types.Indexing.TypeRange'
         count_dates:
           title: Количество дней в диапазоне
           default: 60
@@ -9237,7 +9238,7 @@ components:
           default: 7
           nullable: true
           allOf:
-            - $ref: '#/components/schemas/Audit_2.Types.Indexing.Export.TypeRange'
+            - $ref: '#/components/schemas/Audit_2.Types.Indexing.TypeRange'
         count_dates:
           title: Количество дней в диапазоне
           nullable: true
@@ -10235,7 +10236,7 @@ components:
           title: Тип диапазона дат
           nullable: true
           allOf:
-            - $ref: '#/components/schemas/Audit_2.Types.Indexing.Export.TypeRange'
+            - $ref: '#/components/schemas/Audit_2.Types.Indexing.TypeRange'
         type_range_compare:
           title: Сравнение диапазонов типов
           nullable: true

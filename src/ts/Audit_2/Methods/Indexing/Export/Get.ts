@@ -37,7 +37,7 @@ export interface components {
              */
             periodDays: number;
             /** @default 7 */
-            type_range: import('../../../Types/Indexing/Export/TypeRange.ts').components['schemas']['Audit_2.Types.Indexing.Export.TypeRange'];
+            type_range: import('../../../Types/Indexing/TypeRange.ts').components['schemas']['Audit_2.Types.Indexing.TypeRange'];
             /**
              * Количество дней в диапазоне
              * @default 60

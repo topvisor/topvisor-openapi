@@ -11,6 +11,8 @@ export interface components {
             /** @constant */
             Contact_title?: "Got any questions? Contact us";
             /** @constant */
+            Contact_text?: "If you didn't find what you looked for in the Help Center, contact Support Team via Ticket System {{ telegramBotText }}\nor email <a href='mailto:{{ supportEmail }}' target='_blank'>{{ supportEmail }}</a>. We'll show how to find and set up the tool you need and answer all other questions.";
+            /** @constant */
             Contact?: "Contact us";
         };
     };
