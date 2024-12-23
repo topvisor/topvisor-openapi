@@ -5943,6 +5943,7 @@ components:
         - 4
         - 5
         - 7
+        - 100
       title: Тип диапазона индексации
     Audit_2.Methods.Indexing.Get:
       type: object
