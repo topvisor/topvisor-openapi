@@ -13,7 +13,7 @@ export interface components {
             /** @constant */
             User_accept_email_title?: "Account details";
             /** @constant */
-            User_accept_email_title_suffix_recommendations?: "";
+            user_accept_email_title_suffix_recommendations?: "";
             /** @constant */
             User_PWD_msg_title2?: "Password successfully changed";
             /** @constant */

@@ -16,7 +16,7 @@
                     "User_accept_email_title": {
                         "const": "Account details"
                     },
-                    "User_accept_email_title_suffix_recommendations": {
+                    "user_accept_email_title_suffix_recommendations": {
                         "const": ""
                     },
                     "User_PWD_msg_title2": {
