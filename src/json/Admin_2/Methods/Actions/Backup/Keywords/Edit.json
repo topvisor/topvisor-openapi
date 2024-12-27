@@ -1,0 +1,45 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Admin_2.Methods.Actions.Backup.Keywords.Edit",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Admin_2.Methods.Actions.Backup.Keywords.Edit": {
+                "type": "object",
+                "properties": {
+                    "projectId": {
+                        "title": "ID проекта",
+                        "type": "integer"
+                    },
+                    "type": {
+                        "title": "Тип",
+                        "description": "Может принимать одно из значений TYPES_SETTINGS_AVAILIBLE или TYPES_MOVE_AVAILIBLE",
+                        "type": "string"
+                    },
+                    "date": {
+                        "title": "Дата бекапа",
+                        "allOf": [
+                            {
+                                "$ref": "../../../../../TV/API/Types/Date.json#/components/schemas/TV.API.Types.Date"
+                            }
+                        ]
+                    },
+                    "test": {
+                        "title": "Являеется ли запуск - тестом",
+                        "type": "boolean"
+                    }
+                },
+                "required": [
+                    "projectId",
+                    "type",
+                    "date",
+                    "test"
+                ],
+                "title": "Востановление поисковых запросов из бэкапа"
+            }
+        }
+    }
+}

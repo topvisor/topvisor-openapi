@@ -753,6 +753,41 @@ paths:
               schema:
                 $ref: '#/components/schemas/Models.Urls'
                 description: Only for typescript, does not contain real data
+  /abstractregular/admin_2/actions/:
+    post:
+      operationId: AbstractregularAdmin2Actions
+      tags:
+        - Admin_2
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Admin_2.Methods.Actions.AbstractRegular'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            title: |-
+                              Запрещено делать публичной, это приведет к поломке preCall()
+
+                              В описании к функции отвечать на вопрос: `Что является результатом запроса?` Например: `Список пользователей`
+
+                              TODO: Автоматической проверки нет, не менять protected
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
   /get/annotations_2/my/:
     post:
       operationId: GetAnnotations2My
@@ -2265,17 +2300,17 @@ paths:
               schema:
                 $ref: '#/components/schemas/Models.Urls'
                 description: Only for typescript, does not contain real data
-  /get/admin_2/actions/call/:
+  /edit/admin_2/actions/bank/:
     post:
-      operationId: GetAdmin2ActionsCall
+      operationId: EditAdmin2ActionsBank
       tags:
         - Admin_2
-      summary: Получение результата вызова actions-метода
+      summary: Создание и проведение транзакции
       requestBody:
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/Admin_2.Methods.Actions.Call.Get'
+              $ref: '#/components/schemas/Admin_2.Methods.Actions.Bank.Edit'
         required: true
       responses:
         '200':
@@ -2288,15 +2323,196 @@ paths:
                       - type: object
                         properties:
                           result:
-                            type: array
-                            items:
-                              oneOf:
-                                - type: string
-                                - type: number
+                            $ref: '#/components/schemas/Admin_2.Objects.Actions.Result'
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
-                      - $ref: '#/components/schemas/Pagination'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
+  /del/admin_2/actions/payments/:
+    post:
+      operationId: DelAdmin2ActionsPayments
+      tags:
+        - Admin_2
+      summary: Отмена проведения счета
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Admin_2.Methods.Actions.Payments.Del'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            $ref: '#/components/schemas/Admin_2.Objects.Actions.Result'
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
+  /edit/admin_2/actions/payments/:
+    post:
+      operationId: EditAdmin2ActionsPayments
+      tags:
+        - Admin_2
+      summary: Проведение счета
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Admin_2.Methods.Actions.Payments.Edit'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            $ref: '#/components/schemas/Admin_2.Objects.Actions.Result'
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
+  /edit/admin_2/actions/positions/:
+    post:
+      operationId: EditAdmin2ActionsPositions
+      tags:
+        - Admin_2
+      summary: Востановление удаленной проверки
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Admin_2.Methods.Actions.Positions.Edit'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            $ref: '#/components/schemas/Admin_2.Objects.Actions.Result'
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
+  /edit/admin_2/actions/projects/:
+    post:
+      operationId: EditAdmin2ActionsProjects
+      tags:
+        - Admin_2
+      summary: Востановление удаленного проекта
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Admin_2.Methods.Actions.Projects.Edit'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            $ref: '#/components/schemas/Admin_2.Objects.Actions.Result'
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
+  /get/admin_2/actions/projects/:
+    post:
+      operationId: GetAdmin2ActionsProjects
+      tags:
+        - Admin_2
+      summary: Сбор статистики и трафика
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Admin_2.Methods.Actions.Projects.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            $ref: '#/components/schemas/Admin_2.Objects.Actions.Result'
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
+  /add/admin_2/actions/telegram/:
+    post:
+      operationId: AddAdmin2ActionsTelegram
+      tags:
+        - Admin_2
+      summary: Добавление бота в телеграм канал
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Admin_2.Methods.Actions.Telegram.Add'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            $ref: '#/components/schemas/Admin_2.Objects.Actions.Result'
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
                   - $ref: '#/components/schemas/ResponseError'
             model:
               schema:
@@ -3705,6 +3921,440 @@ paths:
             model:
               schema:
                 type: 'null'
+  /edit/admin_2/actions/account/currency/:
+    post:
+      operationId: EditAdmin2ActionsAccountCurrency
+      tags:
+        - Admin_2
+      summary: Изменение валюты пользователя
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Admin_2.Methods.Actions.Account.Currency.Edit'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            $ref: '#/components/schemas/Admin_2.Objects.Actions.Result'
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
+  /edit/admin_2/actions/backup/keywords/:
+    post:
+      operationId: EditAdmin2ActionsBackupKeywords
+      tags:
+        - Admin_2
+      summary: Востановление поисковых запросов из бэкапа
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Admin_2.Methods.Actions.Backup.Keywords.Edit'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            $ref: '#/components/schemas/Admin_2.Objects.Actions.Result'
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
+  /edit/admin_2/actions/backup/project/:
+    post:
+      operationId: EditAdmin2ActionsBackupProject
+      tags:
+        - Admin_2
+      summary: Востановление удаленного проекта
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Admin_2.Methods.Actions.Backup.Project.Edit'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            $ref: '#/components/schemas/Admin_2.Objects.Actions.Result'
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
+  /edit/admin_2/actions/bank/referral/:
+    post:
+      operationId: EditAdmin2ActionsBankReferral
+      tags:
+        - Admin_2
+      summary: Оплата реферального счета
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Admin_2.Methods.Actions.Bank.Referral.Edit'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            $ref: '#/components/schemas/Admin_2.Objects.Actions.Result'
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
+  /add/admin_2/actions/payments/diadoc/:
+    post:
+      operationId: AddAdmin2ActionsPaymentsDiadoc
+      tags:
+        - Admin_2
+      summary: Отправка акты в диадок
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Admin_2.Methods.Actions.Payments.Diadoc.Add'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            $ref: '#/components/schemas/Admin_2.Objects.Actions.Result'
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
+  /add/admin_2/actions/payments/notification/:
+    post:
+      operationId: AddAdmin2ActionsPaymentsNotification
+      tags:
+        - Admin_2
+      summary: Переотправка уведомление о поступивших платежах
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Admin_2.Methods.Actions.Payments.Notification.Add'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            $ref: '#/components/schemas/Admin_2.Objects.Actions.Result'
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
+  /add/admin_2/actions/positions/history/:
+    post:
+      operationId: AddAdmin2ActionsPositionsHistory
+      tags:
+        - Admin_2
+      summary: Импортирование историй позиций из CSV
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Admin_2.Methods.Actions.Positions.History.Add'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            $ref: '#/components/schemas/Admin_2.Objects.Actions.Result'
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
+  /edit/admin_2/actions/positions/status/:
+    post:
+      operationId: EditAdmin2ActionsPositionsStatus
+      tags:
+        - Admin_2
+      summary: Сброс статуса проверки позиций
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Admin_2.Methods.Actions.Positions.Status.Edit'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            $ref: '#/components/schemas/Admin_2.Objects.Actions.Result'
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
+  /edit/admin_2/actions/projects/domain/:
+    post:
+      operationId: EditAdmin2ActionsProjectsDomain
+      tags:
+        - Admin_2
+      summary: Изменение домена проекта
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Admin_2.Methods.Actions.Projects.Domain.Edit'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            $ref: '#/components/schemas/Admin_2.Objects.Actions.Result'
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
+  /edit/admin_2/actions/robot/checks/:
+    post:
+      operationId: EditAdmin2ActionsRobotChecks
+      tags:
+        - Admin_2
+      summary: Перевод проверок позиций яндекс
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Admin_2.Methods.Actions.Robot.Checks.Edit'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            $ref: '#/components/schemas/Admin_2.Objects.Actions.Result'
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
+  /edit/admin_2/actions/robot/priority/:
+    post:
+      operationId: EditAdmin2ActionsRobotPriority
+      tags:
+        - Admin_2
+      summary: Изменение приоритета задач
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Admin_2.Methods.Actions.Robot.Priority.Edit'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            $ref: '#/components/schemas/Admin_2.Objects.Actions.Result'
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
+  /edit/admin_2/actions/robot/task/:
+    post:
+      operationId: EditAdmin2ActionsRobotTask
+      tags:
+        - Admin_2
+      summary: Снаятие задачи с дэбага
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Admin_2.Methods.Actions.Robot.Task.Edit'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            $ref: '#/components/schemas/Admin_2.Objects.Actions.Result'
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
+  /del/admin_2/actions/slack/files/:
+    post:
+      operationId: DelAdmin2ActionsSlackFiles
+      tags:
+        - Admin_2
+      summary: Удаление файлов
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Admin_2.Methods.Actions.Slack.Files.Del'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            $ref: '#/components/schemas/Admin_2.Objects.Actions.Result'
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
+  /del/admin_2/actions/slack/messages/:
+    post:
+      operationId: DelAdmin2ActionsSlackMessages
+      tags:
+        - Admin_2
+      summary: Удаление сообщений
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Admin_2.Methods.Actions.Slack.Messages.Del'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            $ref: '#/components/schemas/Admin_2.Objects.Actions.Result'
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
   /get/admin_2/users/informer/subscriptions/:
     post:
       operationId: GetAdmin2UsersInformerSubscriptions
@@ -4448,6 +5098,37 @@ paths:
                                 - type: string
                                 - type: number
                             title: Сводки с количеством изменений по каждому типу проверки
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
+  /add/admin_2/actions/positions/history/copy/:
+    post:
+      operationId: AddAdmin2ActionsPositionsHistoryCopy
+      tags:
+        - Admin_2
+      summary: Копирование истории позиций
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Admin_2.Methods.Actions.Positions.History.Copy.Add'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            $ref: '#/components/schemas/Admin_2.Objects.Actions.Result'
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
@@ -5481,6 +6162,14 @@ components:
         - offset
         - project_id
       title: Получение списка urls проекта
+    Admin_2.Methods.Actions.AbstractRegular:
+      type: object
+      properties:
+        test:
+          title: Являеется ли запуск - тестом
+          type: boolean
+      required:
+        - test
     Annotations_2.Methods.My.Get:
       type: object
       properties:
@@ -7622,37 +8311,173 @@ components:
         - filters
         - project_id
       title: Изменение тегов
-    Admin_2.Methods.Actions.Call.Get:
+    Admin_2.Methods.Actions.Bank.Edit:
       type: object
       properties:
         action:
-          title: Действие
-          nullable: true
+          title: Операция
+          description: |-
+            - 2: бонусное пополнение
+            - 1: пополнение
+            - -1: списание
+          type: integer
+        userId:
+          title: ID пользователя
+          type: integer
+        sum:
+          title: Сумма
+          type: number
+        purpose:
+          title: Причина
           type: string
         test:
-          title: Является ли тестом
+          title: Являеется ли запуск - тестом
           type: boolean
-        fields:
-          $ref: '#/components/schemas/fields'
-        orders:
-          $ref: '#/components/schemas/orders'
-        filters:
-          $ref: '#/components/schemas/filters'
-        id:
-          $ref: '#/components/schemas/id'
-        limit:
-          $ref: '#/components/schemas/limit'
-        offset:
-          $ref: '#/components/schemas/offset'
-        fetch_style:
-          $ref: '#/components/schemas/fetch_style'
       required:
+        - action
+        - userId
+        - sum
+        - purpose
         - test
-        - fields
-        - orders
-        - filters
-        - offset
-      title: Получение результата вызова actions-метода
+      title: Создание и проведение транзакции
+    Admin_2.Objects.Actions.Result:
+      type: object
+      properties:
+        isTest:
+          title: Запущено ли дейсвтие в тестовом режиме
+          type: boolean
+        info:
+          title: Ассоциативный массив с информацией, связанной с выполняемым дейсвтием
+          type: array
+          items:
+            oneOf:
+              - type: string
+              - type: number
+        executionTime:
+          title: Время выполнения дейсвтия
+          type: number
+        memory:
+          title: Информация о затраченных ресурсавах при выполнении дейсвтия
+          type: array
+          items:
+            oneOf:
+              - type: string
+              - type: number
+      required:
+        - isTest
+        - info
+        - executionTime
+        - memory
+      title: Результат выполнения действия
+    Admin_2.Methods.Actions.Payments.Del:
+      type: object
+      properties:
+        userId:
+          title: ID пользователя
+          type: integer
+        paymentId:
+          title: ID платежа
+          type: integer
+        test:
+          title: Являеется ли запуск - тестом
+          type: boolean
+      required:
+        - userId
+        - paymentId
+        - test
+      title: Отмена проведения счета
+    Admin_2.Methods.Actions.Payments.Edit:
+      type: object
+      properties:
+        userId:
+          title: ID пользователя
+          type: integer
+        paymentId:
+          title: ID платежа
+          type: integer
+        sum:
+          title: Сумма
+          nullable: true
+          type: number
+        test:
+          title: Являеется ли запуск - тестом
+          type: boolean
+      required:
+        - userId
+        - paymentId
+        - test
+      title: Проведение счета
+    Admin_2.Methods.Actions.Positions.Edit:
+      type: object
+      properties:
+        projectId:
+          title: ID проекта
+          type: integer
+        date:
+          title: Дата
+          allOf:
+            - $ref: '#/components/schemas/TV.API.Types.Date'
+        test:
+          title: Являеется ли запуск - тестом
+          type: boolean
+      required:
+        - projectId
+        - date
+        - test
+      title: Востановление удаленной проверки
+    Admin_2.Methods.Actions.Projects.Edit:
+      type: object
+      properties:
+        projectId:
+          title: ID проекта
+          type: integer
+        test:
+          title: Являеется ли запуск - тестом
+          type: boolean
+      required:
+        - projectId
+        - test
+      title: Востановление удаленного проекта
+    Admin_2.Methods.Actions.Projects.Get:
+      type: object
+      properties:
+        projectId:
+          title: ID проекта
+          type: integer
+        date1:
+          title: С какой даты
+          nullable: true
+          allOf:
+            - $ref: '#/components/schemas/TV.API.Types.Date'
+        date2:
+          title: По какую дату
+          nullable: true
+          allOf:
+            - $ref: '#/components/schemas/TV.API.Types.Date'
+        test:
+          title: Являеется ли запуск - тестом
+          type: boolean
+      required:
+        - projectId
+        - test
+      title: Сбор статистики и трафика
+    Admin_2.Methods.Actions.Telegram.Add:
+      type: object
+      properties:
+        botName:
+          title: Название бота
+          type: string
+        chatId:
+          title: ID чата для добавления
+          type: string
+        test:
+          title: Являеется ли запуск - тестом
+          type: boolean
+      required:
+        - botName
+        - chatId
+        - test
+      title: Добавление бота в телеграм канал
     Admin_2.Methods.Users.Promocodes.Add:
       type: object
       properties:
@@ -9937,6 +10762,279 @@ components:
       required:
         - email
       title: Привязка email к аккаунту
+    Admin_2.Methods.Actions.Account.Currency.Edit:
+      type: object
+      properties:
+        userId:
+          title: ID пользователя
+          type: integer
+        currency:
+          title: Валюта
+          type: string
+        test:
+          title: Являеется ли запуск - тестом
+          type: boolean
+      required:
+        - userId
+        - currency
+        - test
+      title: Изменение валюты пользователя
+    Admin_2.Methods.Actions.Backup.Keywords.Edit:
+      type: object
+      properties:
+        projectId:
+          title: ID проекта
+          type: integer
+        type:
+          title: Тип
+          description: Может принимать одно из значений TYPES_SETTINGS_AVAILIBLE или TYPES_MOVE_AVAILIBLE
+          type: string
+        date:
+          title: Дата бекапа
+          allOf:
+            - $ref: '#/components/schemas/TV.API.Types.Date'
+        test:
+          title: Являеется ли запуск - тестом
+          type: boolean
+      required:
+        - projectId
+        - type
+        - date
+        - test
+      title: Востановление поисковых запросов из бэкапа
+    Admin_2.Methods.Actions.Backup.Project.Edit:
+      type: object
+      properties:
+        userId:
+          title: ID пользователя
+          type: integer
+        projectId:
+          title: ID проекта
+          type: integer
+        date:
+          title: Дата бекапа
+          allOf:
+            - $ref: '#/components/schemas/TV.API.Types.Date'
+        test:
+          title: Являеется ли запуск - тестом
+          type: boolean
+      required:
+        - userId
+        - projectId
+        - date
+        - test
+      title: Востановление удаленного проекта
+    Admin_2.Methods.Actions.Bank.Referral.Edit:
+      type: object
+      properties:
+        userId:
+          title: ID пользователя
+          type: integer
+        entityId:
+          title: ID акта
+          description: Укажите `sum=`, если API не раблотает и данных акта нет
+          nullable: true
+          type: string
+        date:
+          title: Дата акта в формате d.m.Y
+          type: string
+        pass:
+          title: Пароль в диадоке
+          type: string
+        test:
+          title: Являеется ли запуск - тестом
+          type: boolean
+      required:
+        - userId
+        - date
+        - pass
+        - test
+      title: Оплата реферального счета
+    Admin_2.Methods.Actions.Payments.Diadoc.Add:
+      type: object
+      properties:
+        userId:
+          title: ID пользователя
+          nullable: true
+          type: integer
+        paymentId:
+          title: ID платежа
+          type: integer
+        test:
+          title: Являеется ли запуск - тестом
+          type: boolean
+      required:
+        - paymentId
+        - test
+      title: Отправка акты в диадок
+    Admin_2.Methods.Actions.Payments.Notification.Add:
+      type: object
+      properties:
+        test:
+          title: Являеется ли запуск - тестом
+          type: boolean
+      required:
+        - test
+      title: Переотправка уведомление о поступивших платежах
+    Admin_2.Methods.Actions.Positions.History.Add:
+      type: object
+      properties:
+        csv:
+          title: Строка в формате csv
+          description: |-
+            Пример: ```
+            Запрос;2024-01-01;2024-01-01
+            Привет;5;5
+            Как дела;3;1
+            ```
+          nullable: true
+          type: string
+        projectId:
+          title: ID проекта
+          nullable: true
+          type: integer
+        regionIndex:
+          title: Индекс региона
+          nullable: true
+          type: integer
+        test:
+          title: Являеется ли запуск - тестом
+          type: boolean
+      required:
+        - test
+      title: Импортирование историй позиций из CSV
+    Admin_2.Methods.Actions.Positions.Status.Edit:
+      type: object
+      properties:
+        projectId:
+          title: ID проекта
+          type: integer
+        test:
+          title: Являеется ли запуск - тестом
+          type: boolean
+      required:
+        - projectId
+        - test
+      title: Сброс статуса проверки позиций
+    Admin_2.Methods.Actions.Projects.Domain.Edit:
+      type: object
+      properties:
+        userId:
+          title: ID пользователя
+          type: integer
+        projects:
+          title: Список для замены
+          description: |-
+            Пример: ```
+            example.com;example2.com
+            example3.com;example4.com
+            12345;example5.com
+            ```
+          type: string
+        needRenameProject:
+          title: Изменить ли имена проектов
+          type: boolean
+        test:
+          title: Являеется ли запуск - тестом
+          type: boolean
+      required:
+        - userId
+        - projects
+        - needRenameProject
+        - test
+      title: Изменение домена проекта
+    Admin_2.Methods.Actions.Robot.Checks.Edit:
+      type: object
+      properties:
+        modEngine:
+          title: Поисковик
+          type: string
+        test:
+          title: Являеется ли запуск - тестом
+          type: boolean
+      required:
+        - modEngine
+        - test
+      title: Перевод проверок позиций яндекс
+    Admin_2.Methods.Actions.Robot.Priority.Edit:
+      type: object
+      properties:
+        siteOrProjectId:
+          title: ID сайта или проекта
+          type: string
+        userId:
+          title: ID пользователя
+          type: integer
+        priority:
+          title: Приоритет
+          type: integer
+        for:
+          title: Для чего изменяется приоритет
+          default: positions
+          type: string
+        test:
+          title: Являеется ли запуск - тестом
+          type: boolean
+      required:
+        - siteOrProjectId
+        - userId
+        - priority
+        - test
+      title: Изменение приоритета задач
+    Admin_2.Methods.Actions.Robot.Task.Edit:
+      type: object
+      properties:
+        projectId:
+          title: ID проекта
+          type: integer
+        taskId:
+          title: ID задачи
+          nullable: true
+          type: integer
+        test:
+          title: Являеется ли запуск - тестом
+          type: boolean
+      required:
+        - projectId
+        - test
+      title: Снаятие задачи с дэбага
+    Admin_2.Methods.Actions.Slack.Files.Del:
+      type: object
+      properties:
+        token:
+          title: Токен
+          type: string
+        test:
+          title: Являеется ли запуск - тестом
+          type: boolean
+      required:
+        - token
+        - test
+      title: Удаление файлов
+    Admin_2.Methods.Actions.Slack.Messages.Del:
+      type: object
+      properties:
+        token:
+          title: Токен
+          type: string
+        channel:
+          title: Канал, в котором будут удалены сообщения
+          type: string
+        secunds:
+          title: Количество секунд
+          type: string
+        onlyMy:
+          default: 1
+          type: integer
+        test:
+          title: Являеется ли запуск - тестом
+          type: boolean
+      required:
+        - token
+        - channel
+        - secunds
+        - test
+      title: Удаление сообщений
     Admin_2.Methods.Users.Informer.Subscriptions.Get:
       type: object
       properties:
@@ -10466,3 +11564,24 @@ components:
         - checks_ids
         - project_id
       title: Получение сводок радара для графика
+    Admin_2.Methods.Actions.Positions.History.Copy.Add:
+      type: object
+      properties:
+        projectId:
+          title: Откуда скопировать
+          type: integer
+        projectId2:
+          title: Куда скопировать
+          type: integer
+        skipEmpty:
+          title: Пропустить пустые истории
+          type: integer
+        test:
+          title: Являеется ли запуск - тестом
+          type: boolean
+      required:
+        - projectId
+        - projectId2
+        - skipEmpty
+        - test
+      title: Копирование истории позиций

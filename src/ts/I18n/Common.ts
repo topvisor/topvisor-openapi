@@ -359,7 +359,7 @@ export interface components {
             /** @constant */
             Expand?: "Expand";
             /** @constant */
-            Important?: "Important";
+            Attention?: "Attention";
             /** @constant */
             from?: "from";
             /** @constant */

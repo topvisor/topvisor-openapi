@@ -535,8 +535,8 @@
                     "Expand": {
                         "const": "Expand"
                     },
-                    "Important": {
-                        "const": "Important"
+                    "Attention": {
+                        "const": "Attention"
                     },
                     "from": {
                         "const": "from"

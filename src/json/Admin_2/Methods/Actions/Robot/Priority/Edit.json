@@ -1,0 +1,45 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Admin_2.Methods.Actions.Robot.Priority.Edit",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Admin_2.Methods.Actions.Robot.Priority.Edit": {
+                "type": "object",
+                "properties": {
+                    "siteOrProjectId": {
+                        "title": "ID сайта или проекта",
+                        "type": "string"
+                    },
+                    "userId": {
+                        "title": "ID пользователя",
+                        "type": "integer"
+                    },
+                    "priority": {
+                        "title": "Приоритет",
+                        "type": "integer"
+                    },
+                    "for": {
+                        "title": "Для чего изменяется приоритет",
+                        "default": "positions",
+                        "type": "string"
+                    },
+                    "test": {
+                        "title": "Являеется ли запуск - тестом",
+                        "type": "boolean"
+                    }
+                },
+                "required": [
+                    "siteOrProjectId",
+                    "userId",
+                    "priority",
+                    "test"
+                ],
+                "title": "Изменение приоритета задач"
+            }
+        }
+    }
+}
