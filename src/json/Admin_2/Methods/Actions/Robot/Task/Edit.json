@@ -19,6 +19,10 @@
                         "nullable": true,
                         "type": "integer"
                     },
+                    "type": {
+                        "title": "Откуда снять задачу",
+                        "type": "string"
+                    },
                     "test": {
                         "title": "Являеется ли запуск - тестом",
                         "type": "boolean"
@@ -26,9 +30,10 @@
                 },
                 "required": [
                     "projectId",
+                    "type",
                     "test"
                 ],
-                "title": "Снаятие задачи с дэбага"
+                "title": "Снятие задачи с дэбага"
             }
         }
     }

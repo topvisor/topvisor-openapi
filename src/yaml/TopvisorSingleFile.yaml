@@ -4267,7 +4267,7 @@ paths:
       operationId: EditAdmin2ActionsRobotTask
       tags:
         - Admin_2
-      summary: Снаятие задачи с дэбага
+      summary: Снятие задачи с дэбага
       requestBody:
         content:
           application/json:
@@ -10991,13 +10991,17 @@ components:
           title: ID задачи
           nullable: true
           type: integer
+        type:
+          title: Откуда снять задачу
+          type: string
         test:
           title: Являеется ли запуск - тестом
           type: boolean
       required:
         - projectId
+        - type
         - test
-      title: Снаятие задачи с дэбага
+      title: Снятие задачи с дэбага
     Admin_2.Methods.Actions.Slack.Files.Del:
       type: object
       properties:

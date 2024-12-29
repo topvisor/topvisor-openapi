@@ -7,12 +7,14 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Снаятие задачи с дэбага */
+        /** Снятие задачи с дэбага */
         "Admin_2.Methods.Actions.Robot.Task.Edit": {
             /** ID проекта */
             projectId: number;
             /** ID задачи */
             taskId?: number | null;
+            /** Откуда снять задачу */
+            type: string;
             /** Являеется ли запуск - тестом */
             test: boolean;
         };

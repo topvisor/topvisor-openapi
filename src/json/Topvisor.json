@@ -7619,7 +7619,7 @@
                 "tags": [
                     "Admin_2"
                 ],
-                "summary": "Снаятие задачи с дэбага",
+                "summary": "Снятие задачи с дэбага",
                 "requestBody": {
                     "content": {
                         "application/json": {

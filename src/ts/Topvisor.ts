@@ -2263,7 +2263,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Снаятие задачи с дэбага */
+    /** Снятие задачи с дэбага */
     "/edit/admin_2/actions/robot/task/": {
         parameters: {
             query?: never;
