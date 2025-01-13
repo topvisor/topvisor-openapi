@@ -365,6 +365,12 @@ export interface components {
             /** @constant */
             Shortener_total_unique_clicks?: "Total unique clicks";
             /** @constant */
+            Shortener_QR_pixels?: "Pixels";
+            /** @constant */
+            Shortener_QR_labyrinth?: "Labyrinth";
+            /** @constant */
+            Shortener_use_brand?: "Use brand";
+            /** @constant */
             Hide_this_message?: "Hide this message";
             /** @constant */
             Need_to_top_up_balance?: "Top up your balance first";

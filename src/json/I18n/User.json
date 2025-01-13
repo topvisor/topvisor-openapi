@@ -544,6 +544,15 @@
                     "Shortener_total_unique_clicks": {
                         "const": "Total unique clicks"
                     },
+                    "Shortener_QR_pixels": {
+                        "const": "Pixels"
+                    },
+                    "Shortener_QR_labyrinth": {
+                        "const": "Labyrinth"
+                    },
+                    "Shortener_use_brand": {
+                        "const": "Use brand"
+                    },
                     "Hide_this_message": {
                         "const": "Hide this message"
                     },
