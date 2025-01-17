@@ -271,6 +271,9 @@
                     "No_data": {
                         "const": "No data found"
                     },
+                    "No_results": {
+                        "const": "No results"
+                    },
                     "Dynamics": {
                         "const": "Dynamics"
                     },

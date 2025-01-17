@@ -183,6 +183,8 @@ export interface components {
             /** @constant */
             No_data?: "No data found";
             /** @constant */
+            No_results?: "No results";
+            /** @constant */
             Dynamics?: "Dynamics";
             /** @constant */
             Country?: "Country";
