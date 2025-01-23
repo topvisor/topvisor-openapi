@@ -53,6 +53,7 @@ export interface components {
             message_files?: any;
             message_time?: any;
             message_noticed?: any;
+            user_site?: any;
         };
     };
     responses: never;

@@ -141,6 +141,9 @@
                     },
                     "message_noticed": {
                         "nullable": true
+                    },
+                    "user_site": {
+                        "nullable": true
                     }
                 }
             }
