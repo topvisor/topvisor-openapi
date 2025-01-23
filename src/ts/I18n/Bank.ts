@@ -267,9 +267,9 @@ export interface components {
             /** @constant */
             System_name_sb?: "SberPay";
             /** @constant */
-            System_name_lp?: "LeadPay (cards of non-Russian banks. All countries except Ukraine)";
+            System_name_lp?: "LeadPay (cards of Belarusian banks)";
             /** @constant */
-            System_name_ppg?: "PayPro Global (cards of non-Russian banks, PayPal, Wire Transfer. All countries)";
+            System_name_ppg?: "PayPro Global (cards of non-Russian banks, PayPal, Wire Transfer. All countries except Belarus)";
             /** @constant */
             Your_contract_expires_notice?: "Contract expiration notice";
             /** @constant */

@@ -1,0 +1,58 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Admin_2.Methods.Staff.Vacation.Add",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Admin_2.Methods.Staff.Vacation.Add": {
+                "type": "object",
+                "properties": {
+                    "user_id": {
+                        "title": "ID юзера",
+                        "type": "integer"
+                    },
+                    "date1": {
+                        "title": "Дата начала",
+                        "allOf": [
+                            {
+                                "$ref": "../../../../TV/API/Types/Date.json#/components/schemas/TV.API.Types.Date"
+                            }
+                        ]
+                    },
+                    "date2": {
+                        "title": "Дата окончания",
+                        "allOf": [
+                            {
+                                "$ref": "../../../../TV/API/Types/Date.json#/components/schemas/TV.API.Types.Date"
+                            }
+                        ]
+                    },
+                    "type": {
+                        "title": "Тип",
+                        "description": "- vacation\n- day_off",
+                        "type": "array",
+                        "items": {
+                            "oneOf": [
+                                {
+                                    "type": "string"
+                                },
+                                {
+                                    "type": "number"
+                                }
+                            ]
+                        }
+                    }
+                },
+                "required": [
+                    "user_id",
+                    "date1",
+                    "date2",
+                    "type"
+                ]
+            }
+        }
+    }
+}

@@ -788,6 +788,447 @@ paths:
             model:
               schema:
                 type: 'null'
+  /get/admin_2/ghost/:
+    post:
+      operationId: GetAdmin2Ghost
+      tags:
+        - Admin_2
+      summary: Получение доступа к акаунту пользователя в режиме "призрак"
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Admin_2.Methods.Ghost.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/octet-stream:
+              schema:
+                type: string
+                format: binary
+  /get/admin_2/i18n/:
+    post:
+      operationId: GetAdmin2I18n
+      tags:
+        - Admin_2
+      summary: Получение записей словаря
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Admin_2.Methods.I18n.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            type: array
+                            items:
+                              oneOf:
+                                - type: string
+                                - type: number
+                            title: '@return array{lang: string, category: string, name: string, value: string}'
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                      - $ref: '#/components/schemas/Pagination'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
+  /add/admin_2/informer/:
+    post:
+      operationId: AddAdmin2Informer
+      tags:
+        - Admin_2
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Admin_2.Methods.Informer.Add'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result: {}
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
+  /edit/admin_2/logs/:
+    post:
+      operationId: EditAdmin2Logs
+      tags:
+        - Admin_2
+      summary: Сохранение текстового файла лога
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Admin_2.Methods.Logs.Edit'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            type: integer
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
+  /get/admin_2/logs/:
+    post:
+      operationId: GetAdmin2Logs
+      tags:
+        - Admin_2
+      summary: Загрузка текстового файла лога
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Admin_2.Methods.Logs.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            type: string
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
+  /get/admin_2/ranks/:
+    post:
+      operationId: GetAdmin2Ranks
+      tags:
+        - Admin_2
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Admin_2.Methods.Ranks.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            type: array
+                            items:
+                              $ref: '#/components/schemas/Models.Analytics.Ranks'
+                              description: Only for typescript, does not contain real data
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                      - $ref: '#/components/schemas/Pagination'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                $ref: '#/components/schemas/Models.Analytics.Ranks'
+                description: Only for typescript, does not contain real data
+  /add/admin_2/staff/:
+    post:
+      operationId: AddAdmin2Staff
+      tags:
+        - Admin_2
+      summary: Добавление сотрудника
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Admin_2.Methods.Staff.Add'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            type: integer
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
+  /edit/admin_2/staff/:
+    post:
+      operationId: EditAdmin2Staff
+      tags:
+        - Admin_2
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Admin_2.Methods.Staff.Edit'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            type: integer
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
+  /get/admin_2/staff/:
+    post:
+      operationId: GetAdmin2Staff
+      tags:
+        - Admin_2
+      summary: Получение персонала, объект admin_staff
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Admin_2.Methods.Staff.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result: {}
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                      - $ref: '#/components/schemas/Pagination'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                $ref: '#/components/schemas/Models.Admin.Staff'
+                description: Only for typescript, does not contain real data
+  /edit/admin_2/tariffChangeExpire/:
+    post:
+      operationId: EditAdmin2TariffChangeExpire
+      tags:
+        - Admin_2
+      summary: Изменение даты следующего списания по тарифу
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Admin_2.Methods.TariffChangeExpire.Edit'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            type: integer
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
+  /get/admin_2/tpl/:
+    post:
+      operationId: GetAdmin2Tpl
+      tags:
+        - Admin_2
+      summary: Поиск HTML шаблонов
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Admin_2.Methods.Tpl.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            type: array
+                            items:
+                              oneOf:
+                                - type: string
+                                - type: number
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                      - $ref: '#/components/schemas/Pagination'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
+  /edit/admin_2/users/:
+    post:
+      operationId: EditAdmin2Users
+      tags:
+        - Admin_2
+      summary: Редактирование пользователей, объект admin_users
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Admin_2.Methods.Users.Edit'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result: {}
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                $ref: '#/components/schemas/Models.Admin.Users'
+                description: Only for typescript, does not contain real data
+  /get/admin_2/users/:
+    post:
+      operationId: GetAdmin2Users
+      tags:
+        - Admin_2
+      summary: Получение пользователей
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Admin_2.Methods.Users.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result: {}
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                      - $ref: '#/components/schemas/Pagination'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                $ref: '#/components/schemas/Models.Admin.Users'
+                description: Only for typescript, does not contain real data
+  /get/admin_2/votes/:
+    post:
+      operationId: GetAdmin2Votes
+      tags:
+        - Admin_2
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Admin_2.Methods.Votes.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            type: array
+                            items:
+                              $ref: '#/components/schemas/Models.Votes'
+                              description: Only for typescript, does not contain real data
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                      - $ref: '#/components/schemas/Pagination'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                $ref: '#/components/schemas/Models.Votes'
+                description: Only for typescript, does not contain real data
   /get/annotations_2/my/:
     post:
       operationId: GetAnnotations2My
@@ -2300,6 +2741,262 @@ paths:
               schema:
                 $ref: '#/components/schemas/Models.Urls'
                 description: Only for typescript, does not contain real data
+  /edit/admin_2/accounting/counteragents/:
+    post:
+      operationId: EditAdmin2AccountingCounteragents
+      tags:
+        - Admin_2
+      summary: Изменение параметров контрагента
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Admin_2.Methods.Accounting.Counteragents.Edit'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            type: integer
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
+  /get/admin_2/accounting/counteragents/:
+    post:
+      operationId: GetAdmin2AccountingCounteragents
+      tags:
+        - Admin_2
+      summary: Получение контрагента
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Admin_2.Methods.Accounting.Counteragents.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result: {}
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                      - $ref: '#/components/schemas/Pagination'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                $ref: '#/components/schemas/Models.Admin.Accounting.Counteragents'
+                description: Only for typescript, does not contain real data
+  /edit/admin_2/accounting/group/:
+    post:
+      operationId: EditAdmin2AccountingGroup
+      tags:
+        - Admin_2
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Admin_2.Methods.Accounting.Group.Edit'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            type: integer
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
+  /get/admin_2/accounting/group/:
+    post:
+      operationId: GetAdmin2AccountingGroup
+      tags:
+        - Admin_2
+      summary: Получение групп
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Admin_2.Methods.Accounting.Group.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            type: array
+                            items:
+                              $ref: '#/components/schemas/Models.EmptyModel'
+                              description: Only for typescript, does not contain real data
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                      - $ref: '#/components/schemas/Pagination'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                $ref: '#/components/schemas/Models.EmptyModel'
+                description: Only for typescript, does not contain real data
+  /add/admin_2/accounting/invoices/:
+    post:
+      operationId: AddAdmin2AccountingInvoices
+      tags:
+        - Admin_2
+      summary: Добавление счета на оплату
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Admin_2.Methods.Accounting.Invoices.Add'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            type: integer
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
+  /del/admin_2/accounting/invoices/:
+    post:
+      operationId: DelAdmin2AccountingInvoices
+      tags:
+        - Admin_2
+      summary: Отмена отправки счета. Разрешено только для счетов со статусом pending или sending
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Admin_2.Methods.Accounting.Invoices.Del'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            type: integer
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                $ref: '#/components/schemas/Models.Admin.Invoices'
+                description: Only for typescript, does not contain real data
+  /get/admin_2/accounting/invoices/:
+    post:
+      operationId: GetAdmin2AccountingInvoices
+      tags:
+        - Admin_2
+      summary: Получение счетов на оплату
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Admin_2.Methods.Accounting.Invoices.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result: {}
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                      - $ref: '#/components/schemas/Pagination'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                $ref: '#/components/schemas/Models.Admin.Invoices'
+                description: Only for typescript, does not contain real data
+  /get/admin_2/accounting/operations/:
+    post:
+      operationId: GetAdmin2AccountingOperations
+      tags:
+        - Admin_2
+      summary: Получение внутренних операций
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Admin_2.Methods.Accounting.Operations.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result: {}
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                      - $ref: '#/components/schemas/Pagination'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                $ref: '#/components/schemas/Models.EmptyModel'
+                description: Only for typescript, does not contain real data
   /edit/admin_2/actions/bank/:
     post:
       operationId: EditAdmin2ActionsBank
@@ -2517,12 +3214,887 @@ paths:
             model:
               schema:
                 type: 'null'
+  /get/admin_2/affiliate/referralProgramStats/:
+    post:
+      operationId: GetAdmin2AffiliateReferralProgramStats
+      tags:
+        - Admin_2
+      summary: Получение общей статистики по реферальной программе
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Admin_2.Methods.Affiliate.ReferralProgramStats.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            type: array
+                            items:
+                              oneOf:
+                                - type: string
+                                - type: number
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
+  /get/admin_2/affiliate/referralsByLevel/:
+    post:
+      operationId: GetAdmin2AffiliateReferralsByLevel
+      tags:
+        - Admin_2
+      summary: Получение сводки числа рефералов по своему уровню
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Admin_2.Methods.Affiliate.ReferralsByLevel.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            type: array
+                            items:
+                              oneOf:
+                                - type: string
+                                - type: number
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
+  /get/admin_2/affiliate/referrals/:
+    post:
+      operationId: GetAdmin2AffiliateReferrals
+      tags:
+        - Admin_2
+      summary: Получение сводки по новым рефералам
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Admin_2.Methods.Affiliate.Referrals.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            type: array
+                            items:
+                              oneOf:
+                                - type: string
+                                - type: number
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
+  /get/admin_2/affiliate/referrersByReferrals/:
+    post:
+      operationId: GetAdmin2AffiliateReferrersByReferrals
+      tags:
+        - Admin_2
+      summary: Получение сводки числа партнеров по числу рефералов
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Admin_2.Methods.Affiliate.ReferrersByReferrals.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            type: array
+                            items:
+                              oneOf:
+                                - type: string
+                                - type: number
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
+  /get/admin_2/affiliate/referrers/:
+    post:
+      operationId: GetAdmin2AffiliateReferrers
+      tags:
+        - Admin_2
+      summary: Получение сводки по новым партнерам
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Admin_2.Methods.Affiliate.Referrers.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result: {}
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
+  /get/admin_2/affiliate/referrersWithReferrals/:
+    post:
+      operationId: GetAdmin2AffiliateReferrersWithReferrals
+      tags:
+        - Admin_2
+      summary: Получение партнеров c кол-вом рефералов
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Admin_2.Methods.Affiliate.ReferrersWithReferrals.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            type: array
+                            items:
+                              $ref: '#/components/schemas/Models.EmptyModel'
+                              description: Only for typescript, does not contain real data
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                      - $ref: '#/components/schemas/Pagination'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                $ref: '#/components/schemas/Models.EmptyModel'
+                description: Only for typescript, does not contain real data
+  /get/admin_2/analytics/activity/:
+    post:
+      operationId: GetAdmin2AnalyticsActivity
+      tags:
+        - Admin_2
+      summary: |-
+        Получение активности пользователей по статусам активности
+        статусы активности:
+               1. Активный - клиент, который пополнял баланс в сервисе хотя бы раз. При этом трата средств в течение месяца не мнее 100 рублей (или $5).
+               2. Активный (новый) - в эту категорию попадают клиенты, которые первый раз перешли в статус "Активного клиента".
+               3. Активный (постоянный) - в эту категорию попадют клиенты, которые не меняли свой статус активности за последний месяц
+               4. Активный (вернувшийся) - в эту категорию попадют клиенты, которые вернули себе статус "Активный клиент".
+               5. Стал не активным - в эту категорию попадют клиенты, которые потеряли статус "Активного клиента" и на протяжении 2 месяцев не возвращали
+        себе этот статус.
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Admin_2.Methods.Analytics.Activity.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            type: array
+                            items:
+                              oneOf:
+                                - type: string
+                                - type: number
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                      - $ref: '#/components/schemas/Pagination'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
+  /get/admin_2/analytics/countOnlineUsers/:
+    post:
+      operationId: GetAdmin2AnalyticsCountOnlineUsers
+      tags:
+        - Admin_2
+      summary: Получение числа активных пользователей
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Admin_2.Methods.Analytics.CountOnlineUsers.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            type: array
+                            items:
+                              oneOf:
+                                - type: string
+                                - type: number
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
+  /get/admin_2/analytics/events/:
+    post:
+      operationId: GetAdmin2AnalyticsEvents
+      tags:
+        - Admin_2
+      summary: Получение мероприятий
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Admin_2.Methods.Analytics.Events.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result: {}
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                      - $ref: '#/components/schemas/Pagination'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                $ref: '#/components/schemas/Models.Analytics.Events'
+                description: Only for typescript, does not contain real data
+  /get/admin_2/analytics/payments/:
+    post:
+      operationId: GetAdmin2AnalyticsPayments
+      tags:
+        - Admin_2
+      summary: Получение суммы оплат за период
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Admin_2.Methods.Analytics.Payments.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            type: array
+                            items:
+                              oneOf:
+                                - type: string
+                                - type: number
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                      - $ref: '#/components/schemas/Pagination'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
+  /get/admin_2/analytics/services/:
+    post:
+      operationId: GetAdmin2AnalyticsServices
+      tags:
+        - Admin_2
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Admin_2.Methods.Analytics.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            type: array
+                            items:
+                              oneOf:
+                                - type: string
+                                - type: number
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                      - $ref: '#/components/schemas/Pagination'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
+  /get/admin_2/analytics/statistics/:
+    post:
+      operationId: GetAdmin2AnalyticsStatistics
+      tags:
+        - Admin_2
+      summary: Получение статистики
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Admin_2.Methods.Analytics.Statistics.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            type: array
+                            items:
+                              oneOf:
+                                - type: string
+                                - type: number
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
+  /abstractticketsstats/admin_2/analytics/tickets/:
+    post:
+      operationId: AbstractticketsstatsAdmin2AnalyticsTickets
+      tags:
+        - Admin_2
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Admin_2.Methods.Analytics.Tickets.AbstractTicketsStats'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            title: |-
+                              Запрещено делать публичной, это приведет к поломке preCall()
+
+                              В описании к функции отвечать на вопрос: `Что является результатом запроса?` Например: `Список пользователей`
+
+                              TODO: Автоматической проверки нет, не менять protected
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                      - $ref: '#/components/schemas/Pagination'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
+  /get/admin_2/analytics/tickets/:
+    post:
+      operationId: GetAdmin2AnalyticsTickets
+      tags:
+        - Admin_2
+      summary: Получение тикетов
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Admin_2.Methods.Analytics.Tickets.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            type: array
+                            items:
+                              $ref: '#/components/schemas/Models.Tickets'
+                              description: Only for typescript, does not contain real data
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                      - $ref: '#/components/schemas/Pagination'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                $ref: '#/components/schemas/Models.Tickets'
+                description: Only for typescript, does not contain real data
+  /get/admin_2/i18n/categories/:
+    post:
+      operationId: GetAdmin2I18nCategories
+      tags:
+        - Admin_2
+      summary: Получение категорий словаря
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Admin_2.Methods.I18n.Categories.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            type: array
+                            items:
+                              oneOf:
+                                - type: string
+                                - type: number
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                      - $ref: '#/components/schemas/Pagination'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
+  /get/admin_2/logs/system/:
+    post:
+      operationId: GetAdmin2LogsSystem
+      tags:
+        - Admin_2
+      summary: Получение данных из системного лога
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Admin_2.Methods.Logs.System.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            type: array
+                            items:
+                              oneOf:
+                                - type: string
+                                - type: number
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                      - $ref: '#/components/schemas/Pagination'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
+  /get/admin_2/ranks/activations/:
+    post:
+      operationId: GetAdmin2RanksActivations
+      tags:
+        - Admin_2
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Admin_2.Methods.Ranks.Activations.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result: {}
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                      - $ref: '#/components/schemas/Pagination'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                $ref: '#/components/schemas/Models.Analytics.RanksUsers'
+                description: Only for typescript, does not contain real data
+  /get/admin_2/slack/rate/:
+    post:
+      operationId: GetAdmin2SlackRate
+      tags:
+        - Admin_2
+      summary: Рейтинг по сообщениям в слеке за предыдущий месяц
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Admin_2.Methods.Slack.Rate.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            type: array
+                            items:
+                              oneOf:
+                                - type: string
+                                - type: number
+                            title: Cписок пользователей
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                      - $ref: '#/components/schemas/Pagination'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
+  /edit/admin_2/staff/access/:
+    post:
+      operationId: EditAdmin2StaffAccess
+      tags:
+        - Admin_2
+      summary: Настройка доступа
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Admin_2.Methods.Staff.Access.Edit'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            type: integer
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                $ref: '#/components/schemas/Models.CronCommands'
+                description: Only for typescript, does not contain real data
+  /get/admin_2/staff/byPost/:
+    post:
+      operationId: GetAdmin2StaffByPost
+      tags:
+        - Admin_2
+      summary: Получение из бд данные сотрудников указанного поста
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Admin_2.Methods.Staff.ByPost.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            type: array
+                            items:
+                              oneOf:
+                                - type: string
+                                - type: number
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
+  /get/admin_2/staff/contractPrint/:
+    post:
+      operationId: GetAdmin2StaffContractPrint
+      tags:
+        - Admin_2
+      summary: Печать договора
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Admin_2.Methods.Staff.ContractPrint.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/octet-stream:
+              schema:
+                type: string
+                format: binary
+  /get/admin_2/staff/posts/:
+    post:
+      operationId: GetAdmin2StaffPosts
+      tags:
+        - Admin_2
+      summary: ПОлучение возможных posts
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Admin_2.Methods.Staff.Posts.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            type: array
+                            items:
+                              oneOf:
+                                - type: string
+                                - type: number
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                      - $ref: '#/components/schemas/Pagination'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
+  /add/admin_2/staff/vacation/:
+    post:
+      operationId: AddAdmin2StaffVacation
+      tags:
+        - Admin_2
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Admin_2.Methods.Staff.Vacation.Add'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            type: integer
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
+  /del/admin_2/staff/vacation/:
+    post:
+      operationId: DelAdmin2StaffVacation
+      tags:
+        - Admin_2
+      summary: Удаление данных об отпуске
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Admin_2.Methods.Staff.Vacation.Del'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            type: integer
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
+  /get/admin_2/staff/vacationPrint/:
+    post:
+      operationId: GetAdmin2StaffVacationPrint
+      tags:
+        - Admin_2
+      summary: Печать заявления на отпуск
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Admin_2.Methods.Staff.VacationPrint.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/octet-stream:
+              schema:
+                type: string
+                format: binary
+  /get/admin_2/tpl/schema/:
+    post:
+      operationId: GetAdmin2TplSchema
+      tags:
+        - Admin_2
+      summary: Получение схему HTML шаблона
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Admin_2.Methods.Tpl.Schema.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            type: array
+                            items:
+                              oneOf:
+                                - type: string
+                                - type: number
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                      - $ref: '#/components/schemas/Pagination'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
   /add/admin_2/users/promocodes/:
     post:
       operationId: AddAdmin2UsersPromocodes
       tags:
         - Admin_2
-      summary: Добавить промокоды к достижению
+      summary: Добавление промокоды к достижению
       requestBody:
         content:
           application/json:
@@ -2555,7 +4127,7 @@ paths:
       operationId: GetAdmin2UsersPromocodes
       tags:
         - Admin_2
-      summary: Получить промокоды
+      summary: Получение промокодов
       description: |-
         В params хранится строка в формате:
         - {{ rank_id }}
@@ -2595,7 +4167,7 @@ paths:
       operationId: AddAdmin2UsersRanks
       tags:
         - Admin_2
-      summary: Добавить достижение
+      summary: Добавление достижение
       requestBody:
         content:
           application/json:
@@ -2627,7 +4199,7 @@ paths:
       operationId: EditAdmin2UsersRanks
       tags:
         - Admin_2
-      summary: Изменить достижение
+      summary: Измение достижение
       requestBody:
         content:
           application/json:
@@ -2659,7 +4231,7 @@ paths:
       operationId: GetAdmin2UsersRanks
       tags:
         - Admin_2
-      summary: Получить достижения
+      summary: Получение достижения
       requestBody:
         content:
           application/json:
@@ -3921,6 +5493,149 @@ paths:
             model:
               schema:
                 type: 'null'
+  /add/admin_2/accounting/group/filter/:
+    post:
+      operationId: AddAdmin2AccountingGroupFilter
+      tags:
+        - Admin_2
+      summary: Добавление фильтра группы
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Admin_2.Methods.Accounting.Group.Filter.Add'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result: {}
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
+  /del/admin_2/accounting/group/filter/:
+    post:
+      operationId: DelAdmin2AccountingGroupFilter
+      tags:
+        - Admin_2
+      summary: Удаление фильтра группы
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Admin_2.Methods.Accounting.Group.Filter.Del'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result: {}
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
+  /edit/admin_2/accounting/group/filter/:
+    post:
+      operationId: EditAdmin2AccountingGroupFilter
+      tags:
+        - Admin_2
+      summary: Изменение фильтра группы
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Admin_2.Methods.Accounting.Group.Filter.Edit'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result: {}
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
+  /get/admin_2/accounting/invoices/file/:
+    post:
+      operationId: GetAdmin2AccountingInvoicesFile
+      tags:
+        - Admin_2
+      summary: Cкачивание документа
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Admin_2.Methods.Accounting.Invoices.File.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/octet-stream:
+              schema:
+                type: string
+                format: binary
+  /get/admin_2/accounting/operations/export/:
+    post:
+      operationId: GetAdmin2AccountingOperationsExport
+      tags:
+        - Admin_2
+      summary: Скачивание реестра исходящих операций
+      description: |-
+        @POST string month - месяц в формате: YYYY-mm
+        столбцы CSV: 'Дата акта', 'Номер акта', 'Контрагент', 'ИНН', 'Товар/услуга', 'Номенклатура', 'Кол-во', 'Цена', 'НДС', 'Сумма', 'Способ оплаты'
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Admin_2.Methods.Accounting.Operations.Export.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result: {}
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
   /edit/admin_2/actions/account/currency/:
     post:
       operationId: EditAdmin2ActionsAccountCurrency
@@ -4355,12 +6070,563 @@ paths:
             model:
               schema:
                 type: 'null'
+  /get/admin_2/analytics/accounting/summaryForChart/:
+    post:
+      operationId: GetAdmin2AnalyticsAccountingSummaryForChart
+      tags:
+        - Admin_2
+      summary: Получение сводки по группам
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Admin_2.Methods.Analytics.Accounting.SummaryForChart.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            type: array
+                            items:
+                              oneOf:
+                                - type: string
+                                - type: number
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                      - $ref: '#/components/schemas/Pagination'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
+  /get/admin_2/analytics/activity/chartByPeriod/:
+    post:
+      operationId: GetAdmin2AnalyticsActivityChartByPeriod
+      tags:
+        - Admin_2
+      summary: Получение активности пользователей в формате для графика
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Admin_2.Methods.Analytics.Activity.ChartByPeriod.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            type: array
+                            items:
+                              oneOf:
+                                - type: string
+                                - type: number
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                      - $ref: '#/components/schemas/Pagination'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
+  /get/admin_2/analytics/competitors/summaryForOrdersChart/:
+    post:
+      operationId: GetAdmin2AnalyticsCompetitorsSummaryForOrdersChart
+      tags:
+        - Admin_2
+      summary: Получение конкурентов для графика
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Admin_2.Methods.Analytics.Competitors.SummaryForOrdersChart.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            type: array
+                            items:
+                              oneOf:
+                                - type: string
+                                - type: number
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                      - $ref: '#/components/schemas/Pagination'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
+  /get/admin_2/analytics/payments/systems/:
+    post:
+      operationId: GetAdmin2AnalyticsPaymentsSystems
+      tags:
+        - Admin_2
+      summary: Получение суммы оплат по системам платежей за период
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Admin_2.Methods.Analytics.Payments.Systems.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            type: array
+                            items:
+                              oneOf:
+                                - type: string
+                                - type: number
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                      - $ref: '#/components/schemas/Pagination'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
+  /get/admin_2/analytics/payments/tariff/:
+    post:
+      operationId: GetAdmin2AnalyticsPaymentsTariff
+      tags:
+        - Admin_2
+      summary: Получение суммы оплат по тарифам за период
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Admin_2.Methods.Analytics.Payments.Tariff.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            type: array
+                            items:
+                              oneOf:
+                                - type: string
+                                - type: number
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                      - $ref: '#/components/schemas/Pagination'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
+  /get/admin_2/analytics/positions/chartByDayByHourAuto/:
+    post:
+      operationId: GetAdmin2AnalyticsPositionsChartByDayByHourAuto
+      tags:
+        - Admin_2
+      summary: Получение числа автоматических проверока по дням по часам
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Admin_2.Methods.Analytics.Positions.ChartByDayByHourAuto.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            $ref: '#/components/schemas/stdClass'
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
+  /get/admin_2/analytics/positions/chartByHourAuto/:
+    post:
+      operationId: GetAdmin2AnalyticsPositionsChartByHourAuto
+      tags:
+        - Admin_2
+      summary: Получение числа автоматических проверок по часам
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Admin_2.Methods.Analytics.Positions.ChartByHourAuto.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            $ref: '#/components/schemas/stdClass'
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
+  /get/admin_2/analytics/positions/chartByHour/:
+    post:
+      operationId: GetAdmin2AnalyticsPositionsChartByHour
+      tags:
+        - Admin_2
+      summary: Получение числа проверок за месяц по часам
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Admin_2.Methods.Analytics.Positions.ChartByHour.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            $ref: '#/components/schemas/stdClass'
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
+  /get/admin_2/analytics/positions/chartCountUsersByHour/:
+    post:
+      operationId: GetAdmin2AnalyticsPositionsChartCountUsersByHour
+      tags:
+        - Admin_2
+      summary: Получение числа проверок по часам по пользователям
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Admin_2.Methods.Analytics.Positions.ChartCountUsersByHour.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            $ref: '#/components/schemas/stdClass'
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
+  /get/admin_2/analytics/tickets/chartByMigrations/:
+    post:
+      operationId: GetAdmin2AnalyticsTicketsChartByMigrations
+      tags:
+        - Admin_2
+      summary: Получение статистики тикетов по миграциям
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Admin_2.Methods.Analytics.Tickets.ChartByMigrations.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            type: array
+                            items:
+                              oneOf:
+                                - type: string
+                                - type: number
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                      - $ref: '#/components/schemas/Pagination'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
+  /get/admin_2/analytics/tickets/chartByNew/:
+    post:
+      operationId: GetAdmin2AnalyticsTicketsChartByNew
+      tags:
+        - Admin_2
+      summary: Получение статистики по кол-ву пользователей, открывших первый тикет
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Admin_2.Methods.Analytics.Tickets.ChartByNew.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            type: array
+                            items:
+                              oneOf:
+                                - type: string
+                                - type: number
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                      - $ref: '#/components/schemas/Pagination'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
+  /get/admin_2/analytics/tickets/chartByRates/:
+    post:
+      operationId: GetAdmin2AnalyticsTicketsChartByRates
+      tags:
+        - Admin_2
+      summary: Получение статистики тикетов по оценкам
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Admin_2.Methods.Analytics.Tickets.ChartByRates.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            type: array
+                            items:
+                              oneOf:
+                                - type: string
+                                - type: number
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                      - $ref: '#/components/schemas/Pagination'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
+  /get/admin_2/analytics/tickets/chartByTags/:
+    post:
+      operationId: GetAdmin2AnalyticsTicketsChartByTags
+      tags:
+        - Admin_2
+      summary: Получение статистику тикетов по тегам
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Admin_2.Methods.Analytics.Tickets.ChartByTags.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            type: array
+                            items:
+                              oneOf:
+                                - type: string
+                                - type: number
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                      - $ref: '#/components/schemas/Pagination'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
+  /get/admin_2/analytics/tickets/chartByWaitTime/:
+    post:
+      operationId: GetAdmin2AnalyticsTicketsChartByWaitTime
+      tags:
+        - Admin_2
+      summary: Получение статистики по среднему времени ожидания ответа на вопросы в тикетах
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Admin_2.Methods.Analytics.Tickets.ChartByWaitTime.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            type: array
+                            items:
+                              oneOf:
+                                - type: string
+                                - type: number
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                      - $ref: '#/components/schemas/Pagination'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
+  /get/admin_2/analytics/tickets/messages/:
+    post:
+      operationId: GetAdmin2AnalyticsTicketsMessages
+      tags:
+        - Admin_2
+      summary: Получение статистики ответов на тикеты
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Admin_2.Methods.Analytics.Tickets.Messages.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            type: array
+                            items:
+                              oneOf:
+                                - type: string
+                                - type: number
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                      - $ref: '#/components/schemas/Pagination'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
+  /edit/admin_2/logs/system/checked/:
+    post:
+      operationId: EditAdmin2LogsSystemChecked
+      tags:
+        - Admin_2
+      summary: Помечание лога как обработанного
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Admin_2.Methods.Logs.System.Checked.Edit'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            type: integer
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
   /get/admin_2/users/informer/subscriptions/:
     post:
       operationId: GetAdmin2UsersInformerSubscriptions
       tags:
         - Admin_2
-      summary: График с количеством подписок на рубрики с сегментцией по способам рассылки
+      summary: Получение графика с количеством подписок на рубрики с сегментцией по способам рассылки
       description: График кешируется, первый запрос может выполняться дольше
       requestBody:
         content:
@@ -6170,6 +8436,643 @@ components:
           type: boolean
       required:
         - test
+    Admin_2.Methods.Ghost.Get:
+      type: object
+      properties:
+        user_search:
+          title: UserId, email или ИНН пользователя (параметр взаимоисключающий с project_id)
+          nullable: true
+          type: string
+        redirect_to:
+          title: UserId, email или ИНН пользователя в аккаунт которого входим
+          nullable: true
+          type: string
+        project_id:
+          title: ID проекта пользователя (параметр взаимоисключающий с user_search)
+          nullable: true
+          type: integer
+        fields:
+          $ref: '#/components/schemas/fields'
+        orders:
+          $ref: '#/components/schemas/orders'
+        filters:
+          $ref: '#/components/schemas/filters'
+        id:
+          $ref: '#/components/schemas/id'
+        limit:
+          $ref: '#/components/schemas/limit'
+        offset:
+          $ref: '#/components/schemas/offset'
+        fetch_style:
+          $ref: '#/components/schemas/fetch_style'
+      required:
+        - fields
+        - orders
+        - filters
+        - offset
+      title: Получение доступа к акаунту пользователя в режиме "призрак"
+    TV.API.Types.Lang:
+      type: string
+      enum:
+        - ru
+        - en
+    Admin_2.Methods.I18n.Get:
+      type: object
+      properties:
+        lang:
+          title: Язык словаря
+          nullable: true
+          allOf:
+            - $ref: '#/components/schemas/TV.API.Types.Lang'
+        category:
+          title: Категория словаря
+          nullable: true
+          type: string
+        search:
+          title: Поиск по словарю
+          nullable: true
+          type: string
+        only_duplicates:
+          type: boolean
+        fields:
+          $ref: '#/components/schemas/fields'
+        orders:
+          $ref: '#/components/schemas/orders'
+        filters:
+          $ref: '#/components/schemas/filters'
+        id:
+          $ref: '#/components/schemas/id'
+        limit:
+          $ref: '#/components/schemas/limit'
+        offset:
+          $ref: '#/components/schemas/offset'
+        fetch_style:
+          $ref: '#/components/schemas/fetch_style'
+      required:
+        - fields
+        - orders
+        - filters
+        - offset
+      title: Получение записей словаря
+    TV.API.Types.IntArray:
+      type: array
+      items:
+        type: integer
+      title: 'Тип массива: int'
+      description: |-
+        Принимает: Любые целые числа и числа в строках
+
+        Хранит: int
+    Admin_2.Methods.Informer.Add:
+      type: object
+      properties:
+        type:
+          title: Тип рассылки
+          description: |-
+            - me
+            - admin
+            - news
+            - api
+          type: string
+        send_in:
+          title: Канал рассылки
+          description: |-
+            - all
+            - email
+            - informer
+          type: string
+        lang:
+          allOf:
+            - $ref: '#/components/schemas/TV.API.Types.Lang'
+        subject:
+          title: Объект отправки
+          type: string
+        preview_text:
+          title: Текст превью для письма
+          nullable: true
+          type: string
+        message:
+          title: |-
+            Текст письма
+            Обязательно для email
+          nullable: true
+          type: string
+        message_informer:
+          title: |-
+            Текст письма
+            Обязательно для informer
+          nullable: true
+          type: string
+        link:
+          title: Ссылка
+          nullable: true
+          type: string
+        link_text:
+          title: Текст для добавляемой ссылки для E-mail
+          nullable: true
+          type: string
+        users_ids:
+          title: Ограничение рассылки по id пользоваталей
+          nullable: true
+          allOf:
+            - $ref: '#/components/schemas/TV.API.Types.IntArray'
+        only_ur:
+          title: Ограничение рассылки по пользоваталям с договорами
+          nullable: true
+          type: boolean
+        debug:
+          title: Отладка email
+          nullable: true
+          type: boolean
+      required:
+        - type
+        - send_in
+        - lang
+        - subject
+    Admin_2.Methods.Logs.Edit:
+      type: object
+      properties:
+        log_file:
+          title: Файл лога
+          type: string
+        log_text:
+          title: Текст
+          type: string
+      required:
+        - log_file
+        - log_text
+      title: Сохранение текстового файла лога
+    Admin_2.Methods.Logs.Get:
+      type: object
+      properties:
+        log_file:
+          title: Файл лога
+          type: string
+      required:
+        - log_file
+      title: Загрузка текстового файла лога
+    Admin_2.Methods.Ranks.Get:
+      type: object
+      properties:
+        fields:
+          $ref: '#/components/schemas/fields'
+        orders:
+          $ref: '#/components/schemas/orders'
+        filters:
+          $ref: '#/components/schemas/filters'
+        id:
+          $ref: '#/components/schemas/id'
+        limit:
+          $ref: '#/components/schemas/limit'
+        offset:
+          $ref: '#/components/schemas/offset'
+        fetch_style:
+          $ref: '#/components/schemas/fetch_style'
+      required:
+        - fields
+        - orders
+        - filters
+        - offset
+    Models.Analytics.Ranks:
+      properties:
+        ACTIVATIONS():
+          nullable: true
+        id: {}
+        name_ru:
+          nullable: true
+        name_en:
+          nullable: true
+        bonus_RUB:
+          nullable: true
+        bonus_USD:
+          nullable: true
+        to_date:
+          nullable: true
+        limit:
+          nullable: true
+        site:
+          nullable: true
+        code:
+          nullable: true
+        retention_week:
+          nullable: true
+        retention_month:
+          nullable: true
+        payment_week:
+          nullable: true
+        payment_month:
+          nullable: true
+        payment_month_6:
+          nullable: true
+        payment_year:
+          nullable: true
+        new_user:
+          nullable: true
+        returned_user:
+          nullable: true
+        quitted_user:
+          nullable: true
+    TV.API.Types.Email:
+      type: string
+      title: E-mail
+      example: name@example.com
+    Admin_2.Methods.Staff.Add:
+      type: object
+      properties:
+        id:
+          title: Номер договора
+          type: integer
+        email:
+          title: Корпоративный e-mail
+          allOf:
+            - $ref: '#/components/schemas/TV.API.Types.Email'
+        staff_email:
+          title: Личный e-mail
+          allOf:
+            - $ref: '#/components/schemas/TV.API.Types.Email'
+        post:
+          title: Должность
+          type: string
+        surname:
+          title: Фамилия
+          type: string
+        name:
+          title: Имя
+          type: string
+        patronymic:
+          title: Отчество
+          type: string
+        post_2:
+          title: Должность (родительный падеж)
+          type: string
+        surname_2:
+          title: Фамилия (родительный падеж)
+          type: string
+        name_2:
+          title: Имя (родительный падеж)
+          type: string
+        patronymic_2:
+          title: Отчество (родительный падеж)
+          type: string
+        department:
+          title: Название отдела
+          type: string
+        posts:
+          title: Привелегии
+          type: array
+          items:
+            oneOf:
+              - type: string
+              - type: number
+      required:
+        - id
+        - email
+        - staff_email
+        - post
+        - surname
+        - name
+        - patronymic
+        - post_2
+        - surname_2
+        - name_2
+        - patronymic_2
+        - department
+        - posts
+      title: Добавление сотрудника
+    Admin_2.Methods.Staff.Edit:
+      type: object
+      properties:
+        id:
+          title: Номер договора
+          type: integer
+        email:
+          title: Корпоративный e-mail
+          allOf:
+            - $ref: '#/components/schemas/TV.API.Types.Email'
+        staff_email:
+          title: Личный e-mail
+          allOf:
+            - $ref: '#/components/schemas/TV.API.Types.Email'
+        post:
+          title: Должность
+          type: string
+        surname:
+          title: Фамилия
+          type: string
+        name:
+          title: Имя
+          type: string
+        patronymic:
+          title: Отчество
+          type: string
+        post_2:
+          title: Должность (родительный падеж)
+          type: string
+        surname_2:
+          title: Фамилия (родительный падеж)
+          type: string
+        name_2:
+          title: Имя (родительный падеж)
+          type: string
+        patronymic_2:
+          title: Отчество (родительный падеж)
+          type: string
+        department:
+          title: Название отдела
+          type: string
+        posts:
+          title: Привелегии
+          type: array
+          items:
+            oneOf:
+              - type: string
+              - type: number
+        group:
+          title: Группа
+          nullable: true
+          type: array
+          items:
+            oneOf:
+              - type: string
+              - type: number
+      required:
+        - id
+        - email
+        - staff_email
+        - post
+        - surname
+        - name
+        - patronymic
+        - post_2
+        - surname_2
+        - name_2
+        - patronymic_2
+        - department
+        - posts
+    Admin_2.Methods.Staff.Get:
+      type: object
+      properties:
+        fields:
+          $ref: '#/components/schemas/fields'
+        orders:
+          $ref: '#/components/schemas/orders'
+        filters:
+          $ref: '#/components/schemas/filters'
+        id:
+          $ref: '#/components/schemas/id'
+        limit:
+          $ref: '#/components/schemas/limit'
+        offset:
+          $ref: '#/components/schemas/offset'
+        fetch_style:
+          $ref: '#/components/schemas/fetch_style'
+      required:
+        - fields
+        - orders
+        - filters
+        - offset
+      title: Получение персонала, объект admin_staff
+    Models.Admin.Staff:
+      properties:
+        VACATIONS():
+          nullable: true
+        id: {}
+        site:
+          nullable: true
+        name:
+          nullable: true
+        lang:
+          nullable: true
+        timezone:
+          nullable: true
+        dateformat:
+          nullable: true
+        date_reg:
+          nullable: true
+        group:
+          nullable: true
+        phone:
+          nullable: true
+        email:
+          nullable: true
+        avatar:
+          nullable: true
+        staff_id:
+          nullable: true
+        staff_email:
+          nullable: true
+        staff_department:
+          nullable: true
+        staff_posts:
+          type: array
+          items:
+            oneOf:
+              - type: string
+              - type: number
+          nullable: true
+        staff_post:
+          nullable: true
+        staff_name:
+          nullable: true
+        staff_surname:
+          nullable: true
+        staff_patronymic:
+          nullable: true
+        staff_post_2:
+          nullable: true
+        staff_name_2:
+          nullable: true
+        staff_surname_2:
+          nullable: true
+        staff_patronymic_2:
+          nullable: true
+        staff_access:
+          nullable: true
+    TV.API.Types.Date:
+      type: string
+      title: Дата
+      example: '2000-01-01'
+    Admin_2.Methods.TariffChangeExpire.Edit:
+      type: object
+      properties:
+        expire:
+          title: Дата следующего списания по тарифу
+          allOf:
+            - $ref: '#/components/schemas/TV.API.Types.Date'
+        filters:
+          $ref: '#/components/schemas/filters'
+        id:
+          $ref: '#/components/schemas/id'
+      required:
+        - expire
+        - filters
+      title: Изменение даты следующего списания по тарифу
+    Admin_2.Methods.Tpl.Get:
+      type: object
+      properties:
+        tpl:
+          title: Путь к шаблону
+          type: string
+        fields:
+          $ref: '#/components/schemas/fields'
+        orders:
+          $ref: '#/components/schemas/orders'
+        filters:
+          $ref: '#/components/schemas/filters'
+        id:
+          $ref: '#/components/schemas/id'
+        limit:
+          $ref: '#/components/schemas/limit'
+        offset:
+          $ref: '#/components/schemas/offset'
+        fetch_style:
+          $ref: '#/components/schemas/fetch_style'
+      required:
+        - tpl
+        - fields
+        - orders
+        - filters
+        - offset
+      title: Поиск HTML шаблонов
+    Admin_2.Methods.Users.Edit:
+      type: object
+      properties:
+        deleted:
+          title: Удалить пользователя
+          nullable: true
+          type: boolean
+        filters:
+          $ref: '#/components/schemas/filters'
+        id:
+          $ref: '#/components/schemas/id'
+      required:
+        - filters
+      title: Редактирование пользователей, объект admin_users
+    Models.Admin.Users:
+      properties:
+        REQUISITES():
+          nullable: true
+        ORG_NAME():
+          nullable: true
+        id: {}
+        site:
+          nullable: true
+        currency:
+          nullable: true
+        name:
+          nullable: true
+        lang:
+          nullable: true
+        timezone:
+          nullable: true
+        dateformat:
+          nullable: true
+        date_reg:
+          nullable: true
+        page_reg:
+          nullable: true
+        has_EDF:
+          nullable: true
+        group:
+          nullable: true
+        phone:
+          nullable: true
+        email:
+          nullable: true
+        avatar:
+          nullable: true
+        deleted:
+          nullable: true
+        balance_all:
+          nullable: true
+        balance_bonus:
+          nullable: true
+        balance_plan:
+          nullable: true
+        plan_id:
+          nullable: true
+        status:
+          nullable: true
+        status_paid:
+          nullable: true
+        status_used:
+          nullable: true
+        sum_payments:
+          nullable: true
+        average_expenses_3:
+          nullable: true
+        plan_expire:
+          nullable: true
+        referrer_id:
+          nullable: true
+    Admin_2.Methods.Users.Get:
+      type: object
+      properties:
+        project:
+          title: Имя или id проекта
+          nullable: true
+          type: string
+        fields:
+          $ref: '#/components/schemas/fields'
+        orders:
+          $ref: '#/components/schemas/orders'
+        filters:
+          $ref: '#/components/schemas/filters'
+        id:
+          $ref: '#/components/schemas/id'
+        limit:
+          $ref: '#/components/schemas/limit'
+        offset:
+          $ref: '#/components/schemas/offset'
+        fetch_style:
+          $ref: '#/components/schemas/fetch_style'
+      required:
+        - fields
+        - orders
+        - filters
+        - offset
+      title: Получение пользователей
+    Admin_2.Methods.Votes.Get:
+      type: object
+      properties:
+        fields:
+          $ref: '#/components/schemas/fields'
+        orders:
+          $ref: '#/components/schemas/orders'
+        filters:
+          $ref: '#/components/schemas/filters'
+        id:
+          $ref: '#/components/schemas/id'
+        limit:
+          $ref: '#/components/schemas/limit'
+        offset:
+          $ref: '#/components/schemas/offset'
+        fetch_style:
+          $ref: '#/components/schemas/fetch_style'
+      required:
+        - fields
+        - orders
+        - filters
+        - offset
+    Models.Votes:
+      properties:
+        id: {}
+        site:
+          nullable: true
+        subdomain:
+          nullable: true
+        url:
+          nullable: true
+        user_id:
+          nullable: true
+        rate:
+          nullable: true
+        created_time:
+          nullable: true
+        comment:
+          nullable: true
+        is_viewed:
+          nullable: true
     Annotations_2.Methods.My.Get:
       type: object
       properties:
@@ -6216,11 +9119,6 @@ components:
         массива с сообщением (acceptAction),
         логической переменной (acceptEmail),
         null при неправильно введенном типе
-    TV.API.Types.Lang:
-      type: string
-      enum:
-        - ru
-        - en
     App_2.Methods.Privacy.Get:
       type: object
       properties:
@@ -6618,10 +9516,6 @@ components:
       items:
         $ref: '#/components/schemas/Audit_2.Types.Indexing.SearcherKey'
       title: Id поисковых систем для индексации
-    TV.API.Types.Date:
-      type: string
-      title: Дата
-      example: '2000-01-01'
     Audit_2.Types.Indexing.TypeRange:
       type: integer
       enum:
@@ -7538,15 +10432,6 @@ components:
         - filters
         - offset
       title: Получение списка имен сервисов, в которых есть команды cron
-    TV.API.Types.IntArray:
-      type: array
-      items:
-        type: integer
-      title: 'Тип массива: int'
-      description: |-
-        Принимает: Любые целые числа и числа в строках
-
-        Хранит: int
     TV.API.Types.BoolArray:
       type: array
       items:
@@ -7964,10 +10849,6 @@ components:
         - android
         - guest
       title: Откуда поступил тикет
-    TV.API.Types.Email:
-      type: string
-      title: E-mail
-      example: name@example.com
     Tickets_2.Methods.Tickets.Add:
       type: object
       properties:
@@ -8311,6 +11192,250 @@ components:
         - filters
         - project_id
       title: Изменение тегов
+    Admin_2.Methods.Accounting.Counteragents.Edit:
+      type: object
+      properties:
+        name:
+          type: string
+        document_number:
+          nullable: true
+          type: string
+        comments:
+          nullable: true
+          type: string
+        comments_2:
+          nullable: true
+          type: string
+      required:
+        - name
+      title: Изменение параметров контрагента
+    Admin_2.Methods.Accounting.Counteragents.Get:
+      type: object
+      properties:
+        fields:
+          $ref: '#/components/schemas/fields'
+        orders:
+          $ref: '#/components/schemas/orders'
+        filters:
+          $ref: '#/components/schemas/filters'
+        id:
+          $ref: '#/components/schemas/id'
+        limit:
+          $ref: '#/components/schemas/limit'
+        offset:
+          $ref: '#/components/schemas/offset'
+        fetch_style:
+          $ref: '#/components/schemas/fetch_style'
+      required:
+        - fields
+        - orders
+        - filters
+        - offset
+      title: Получение контрагента
+    Models.Admin.Accounting.Counteragents:
+      properties:
+        GROUPS_NAMES():
+          nullable: true
+        id:
+          type: integer
+        name:
+          type: string
+          nullable: true
+        inn:
+          type: string
+          nullable: true
+        document_number:
+          type: string
+          nullable: true
+        comments:
+          type: string
+          nullable: true
+        comments_2:
+          type: string
+          nullable: true
+        in_several_groups:
+          nullable: true
+        group_id:
+          nullable: true
+    Admin_2.Methods.Accounting.Group.Edit:
+      type: object
+      properties:
+        group_id:
+          title: Id группы
+          nullable: true
+          type: integer
+        name:
+          title: Имя группы (если передан group_id - будет редактирование имени группы)
+          nullable: true
+          type: string
+        priority:
+          title: Приоритет группы (если передан group_id - будет редактирование приоритета группы)
+          nullable: true
+          type: string
+        counteragent_name:
+          title: Имя контрагента (для фильтра)
+          nullable: true
+          type: string
+        counteragent_inn:
+          title: ИНН контрагента (для фильтра)
+          nullable: true
+          type: string
+        purpose:
+          title: Назначение операции (для фильтра)
+          nullable: true
+          type: string
+        type:
+          title: Тип
+          description: |-
+            - plus
+            - minus
+
+            Указывать, когда указывается одно из следующих полей [counteragent_name, counteragent_inn, purpose]
+          nullable: true
+          type: string
+      required: []
+    Admin_2.Methods.Accounting.Group.Get:
+      type: object
+      properties:
+        fields:
+          $ref: '#/components/schemas/fields'
+        orders:
+          $ref: '#/components/schemas/orders'
+        filters:
+          $ref: '#/components/schemas/filters'
+        id:
+          $ref: '#/components/schemas/id'
+        limit:
+          $ref: '#/components/schemas/limit'
+        offset:
+          $ref: '#/components/schemas/offset'
+        fetch_style:
+          $ref: '#/components/schemas/fetch_style'
+      required:
+        - fields
+        - orders
+        - filters
+        - offset
+      title: Получение групп
+    Models.EmptyModel:
+      properties: {}
+    Admin_2.Methods.Accounting.Invoices.Add:
+      type: object
+      properties:
+        document_date:
+          title: Дата документа
+          allOf:
+            - $ref: '#/components/schemas/TV.API.Types.Date'
+        document_number:
+          title: Номер документа
+          type: string
+        file_name:
+          title: Имя файла
+          type: string
+        file_data:
+          title: Данные файла
+          type: string
+        org_name:
+          title: Имя организации
+          type: string
+        inn:
+          title: ИНН
+          type: string
+        sum:
+          title: Сумма
+          type: number
+      required:
+        - document_date
+        - document_number
+        - file_name
+        - file_data
+        - org_name
+        - inn
+        - sum
+      title: Добавление счета на оплату
+    Admin_2.Methods.Accounting.Invoices.Del:
+      type: object
+      properties:
+        filters:
+          $ref: '#/components/schemas/filters'
+        id:
+          $ref: '#/components/schemas/id'
+      required:
+        - filters
+      title: Отмена отправки счета. Разрешено только для счетов со статусом pending или sending
+    Models.Admin.Invoices:
+      properties:
+        id: {}
+        time:
+          nullable: true
+        external_name:
+          nullable: true
+        external_id:
+          nullable: true
+        document_date:
+          nullable: true
+        document_number:
+          nullable: true
+        org_name:
+          nullable: true
+        inn:
+          nullable: true
+        sum:
+          nullable: true
+        file_name:
+          nullable: true
+        file_data:
+          nullable: true
+        user_id:
+          nullable: true
+        status:
+          nullable: true
+    Admin_2.Methods.Accounting.Invoices.Get:
+      type: object
+      properties:
+        fields:
+          $ref: '#/components/schemas/fields'
+        orders:
+          $ref: '#/components/schemas/orders'
+        filters:
+          $ref: '#/components/schemas/filters'
+        id:
+          $ref: '#/components/schemas/id'
+        limit:
+          $ref: '#/components/schemas/limit'
+        offset:
+          $ref: '#/components/schemas/offset'
+        fetch_style:
+          $ref: '#/components/schemas/fetch_style'
+      required:
+        - fields
+        - orders
+        - filters
+        - offset
+      title: Получение счетов на оплату
+    Admin_2.Methods.Accounting.Operations.Get:
+      type: object
+      properties:
+        fields:
+          $ref: '#/components/schemas/fields'
+        orders:
+          $ref: '#/components/schemas/orders'
+        filters:
+          $ref: '#/components/schemas/filters'
+        id:
+          $ref: '#/components/schemas/id'
+        limit:
+          $ref: '#/components/schemas/limit'
+        offset:
+          $ref: '#/components/schemas/offset'
+        fetch_style:
+          $ref: '#/components/schemas/fetch_style'
+      required:
+        - fields
+        - orders
+        - filters
+        - offset
+      title: Получение внутренних операций
     Admin_2.Methods.Actions.Bank.Edit:
       type: object
       properties:
@@ -8478,6 +11603,567 @@ components:
         - chatId
         - test
       title: Добавление бота в телеграм канал
+    Admin_2.Methods.Affiliate.ReferralProgramStats.Get:
+      type: object
+      properties: {}
+      required: []
+      title: Получение общей статистики по реферальной программе
+    TV.API.Types.Currency:
+      type: string
+      enum:
+        - RUB
+        - USD
+      title: Валюта
+      description: |-
+        Этот общий тип, не зависящий от контекста
+
+        Дополниетольно нужно проверять в API методах через site()->checkAllowCurrency() в функции check()
+    Admin_2.Methods.Affiliate.ReferralsByLevel.Get:
+      type: object
+      properties:
+        year:
+          title: Год для сводки
+          type: integer
+        currency:
+          title: Валюта реферало
+          allOf:
+            - $ref: '#/components/schemas/TV.API.Types.Currency'
+      required:
+        - year
+        - currency
+      title: Получение сводки числа рефералов по своему уровню
+    Admin_2.Methods.Affiliate.Referrals.Get:
+      type: object
+      properties:
+        year:
+          title: Год
+          default: 2013
+          type: integer
+        currency:
+          title: Валюта партнеров
+          allOf:
+            - $ref: '#/components/schemas/TV.API.Types.Currency'
+      required:
+        - currency
+      title: Получение сводки по новым рефералам
+    Admin_2.Methods.Affiliate.ReferrersByReferrals.Get:
+      type: object
+      properties:
+        year:
+          title: Год для сводки
+          type: integer
+        currency:
+          title: Валюта партнеров
+          allOf:
+            - $ref: '#/components/schemas/TV.API.Types.Currency'
+      required:
+        - year
+        - currency
+      title: Получение сводки числа партнеров по числу рефералов
+    Admin_2.Methods.Affiliate.Referrers.Get:
+      type: object
+      properties:
+        year:
+          title: Год
+          type: integer
+        currency:
+          title: Валюта партнеров
+          description: |-
+            - RUB
+             - USD
+          allOf:
+            - $ref: '#/components/schemas/TV.API.Types.Currency'
+      required:
+        - year
+        - currency
+      title: Получение сводки по новым партнерам
+    Admin_2.Methods.Affiliate.ReferrersWithReferrals.Get:
+      type: object
+      properties:
+        fields:
+          $ref: '#/components/schemas/fields'
+        orders:
+          $ref: '#/components/schemas/orders'
+        filters:
+          $ref: '#/components/schemas/filters'
+        id:
+          $ref: '#/components/schemas/id'
+        limit:
+          $ref: '#/components/schemas/limit'
+        offset:
+          $ref: '#/components/schemas/offset'
+        fetch_style:
+          $ref: '#/components/schemas/fetch_style'
+      required:
+        - fields
+        - orders
+        - filters
+        - offset
+      title: Получение партнеров c кол-вом рефералов
+    Admin_2.Methods.Analytics.Activity.Get:
+      type: object
+      properties:
+        currency:
+          allOf:
+            - $ref: '#/components/schemas/TV.API.Types.Currency'
+        limit:
+          title: Валюта
+          type: integer
+        date:
+          title: Дата
+          allOf:
+            - $ref: '#/components/schemas/TV.API.Types.Date'
+      required:
+        - currency
+        - limit
+        - date
+      title: |-
+        Получение активности пользователей по статусам активности
+        статусы активности:
+               1. Активный - клиент, который пополнял баланс в сервисе хотя бы раз. При этом трата средств в течение месяца не мнее 100 рублей (или $5).
+               2. Активный (новый) - в эту категорию попадают клиенты, которые первый раз перешли в статус "Активного клиента".
+               3. Активный (постоянный) - в эту категорию попадют клиенты, которые не меняли свой статус активности за последний месяц
+               4. Активный (вернувшийся) - в эту категорию попадют клиенты, которые вернули себе статус "Активный клиент".
+               5. Стал не активным - в эту категорию попадют клиенты, которые потеряли статус "Активного клиента" и на протяжении 2 месяцев не возвращали
+        себе этот статус.
+    Admin_2.Methods.Analytics.CountOnlineUsers.Get:
+      type: object
+      properties: {}
+      required: []
+      title: Получение числа активных пользователей
+    Admin_2.Methods.Analytics.Events.Get:
+      type: object
+      properties:
+        fields:
+          $ref: '#/components/schemas/fields'
+        orders:
+          $ref: '#/components/schemas/orders'
+        filters:
+          $ref: '#/components/schemas/filters'
+        id:
+          $ref: '#/components/schemas/id'
+        limit:
+          $ref: '#/components/schemas/limit'
+        offset:
+          $ref: '#/components/schemas/offset'
+        fetch_style:
+          $ref: '#/components/schemas/fetch_style'
+      required:
+        - fields
+        - orders
+        - filters
+        - offset
+      title: Получение мероприятий
+    Models.Analytics.Events:
+      properties:
+        COUNT:
+          nullable: true
+        COUNT_QUALIFIERS:
+          nullable: true
+          example:
+            need set qualifiers:
+              - action
+              - category
+              - label
+              - label_2
+              - label_3
+        time:
+          nullable: true
+        category:
+          nullable: true
+        action:
+          nullable: true
+        label:
+          nullable: true
+        label_2:
+          nullable: true
+        label_3:
+          nullable: true
+        user_id:
+          nullable: true
+        hash_id:
+          nullable: true
+    Admin_2.Types.Analytics.Segment:
+      type: string
+      enum:
+        - day
+        - month
+        - year
+      title: Имя сегмента, на которые делится период отчета
+      description: |-
+        Отчет делится на равные части - сегменты, за каждый сегмент выводится сводка с агрегацией по этому сегменту
+
+        Пример: вывод количества регистраций за каждый **месяц** в отчете
+    Admin_2.Methods.Analytics.Payments.Get:
+      type: object
+      properties:
+        period:
+          allOf:
+            - $ref: '#/components/schemas/Admin_2.Types.Analytics.Segment'
+        limit:
+          title: Длина периода
+          type: integer
+      required:
+        - period
+        - limit
+      title: Получение суммы оплат за период
+    Admin_2.Methods.Analytics.Get:
+      type: object
+      properties:
+        date:
+          title: Дата
+          allOf:
+            - $ref: '#/components/schemas/TV.API.Types.Date'
+        period:
+          allOf:
+            - $ref: '#/components/schemas/Admin_2.Types.Analytics.Segment'
+        currency:
+          allOf:
+            - $ref: '#/components/schemas/TV.API.Types.Currency'
+        field_name:
+          title: Имя поля
+          description: |-
+            - sum
+            - discount
+            - count_users
+          type: string
+        limit:
+          title: Длина периода
+          nullable: true
+          type: integer
+      required:
+        - date
+        - period
+        - currency
+        - field_name
+    Admin_2.Methods.Analytics.Statistics.Get:
+      type: object
+      properties: {}
+      required: []
+      title: Получение статистики
+    Admin_2.Methods.Analytics.Tickets.AbstractTicketsStats:
+      type: object
+      properties:
+        period:
+          allOf:
+            - $ref: '#/components/schemas/Admin_2.Types.Analytics.Segment'
+        limit:
+          title: Длина периода
+          type: integer
+        date:
+          title: Максимальная дата отчета
+          nullable: true
+          allOf:
+            - $ref: '#/components/schemas/TV.API.Types.Date'
+      required:
+        - period
+        - limit
+    Admin_2.Methods.Analytics.Tickets.Get:
+      type: object
+      properties:
+        fields:
+          $ref: '#/components/schemas/fields'
+        orders:
+          $ref: '#/components/schemas/orders'
+        filters:
+          $ref: '#/components/schemas/filters'
+        id:
+          $ref: '#/components/schemas/id'
+        limit:
+          $ref: '#/components/schemas/limit'
+        offset:
+          $ref: '#/components/schemas/offset'
+        fetch_style:
+          $ref: '#/components/schemas/fetch_style'
+      required:
+        - fields
+        - orders
+        - filters
+        - offset
+      title: Получение тикетов
+    Admin_2.Methods.I18n.Categories.Get:
+      type: object
+      properties:
+        fields:
+          $ref: '#/components/schemas/fields'
+        orders:
+          $ref: '#/components/schemas/orders'
+        filters:
+          $ref: '#/components/schemas/filters'
+        id:
+          $ref: '#/components/schemas/id'
+        limit:
+          $ref: '#/components/schemas/limit'
+        offset:
+          $ref: '#/components/schemas/offset'
+        fetch_style:
+          $ref: '#/components/schemas/fetch_style'
+      required:
+        - fields
+        - orders
+        - filters
+        - offset
+      title: Получение категорий словаря
+    Admin_2.Methods.Logs.System.Get:
+      type: object
+      properties:
+        fields:
+          $ref: '#/components/schemas/fields'
+        orders:
+          $ref: '#/components/schemas/orders'
+        filters:
+          $ref: '#/components/schemas/filters'
+        id:
+          $ref: '#/components/schemas/id'
+        limit:
+          $ref: '#/components/schemas/limit'
+        offset:
+          $ref: '#/components/schemas/offset'
+        fetch_style:
+          $ref: '#/components/schemas/fetch_style'
+      required:
+        - fields
+        - orders
+        - filters
+        - offset
+      title: Получение данных из системного лога
+    Admin_2.Methods.Ranks.Activations.Get:
+      type: object
+      properties:
+        fields:
+          $ref: '#/components/schemas/fields'
+        orders:
+          $ref: '#/components/schemas/orders'
+        filters:
+          $ref: '#/components/schemas/filters'
+        id:
+          $ref: '#/components/schemas/id'
+        limit:
+          $ref: '#/components/schemas/limit'
+        offset:
+          $ref: '#/components/schemas/offset'
+        fetch_style:
+          $ref: '#/components/schemas/fetch_style'
+      required:
+        - fields
+        - orders
+        - filters
+        - offset
+    Models.Analytics.RanksUsers:
+      properties:
+        code:
+          nullable: true
+        email:
+          nullable: true
+        rank:
+          nullable: true
+        retention_week:
+          nullable: true
+        retention_month:
+          nullable: true
+        payment_week:
+          nullable: true
+        payment_month:
+          nullable: true
+        payment_month_6:
+          nullable: true
+        payment_year:
+          nullable: true
+        new_user:
+          nullable: true
+        returned_user:
+          nullable: true
+        quitted_user:
+          nullable: true
+    Admin_2.Methods.Slack.Rate.Get:
+      type: object
+      properties:
+        fields:
+          $ref: '#/components/schemas/fields'
+        orders:
+          $ref: '#/components/schemas/orders'
+        filters:
+          $ref: '#/components/schemas/filters'
+        id:
+          $ref: '#/components/schemas/id'
+        limit:
+          $ref: '#/components/schemas/limit'
+        offset:
+          $ref: '#/components/schemas/offset'
+        fetch_style:
+          $ref: '#/components/schemas/fetch_style'
+      required:
+        - fields
+        - orders
+        - filters
+        - offset
+      title: Рейтинг по сообщениям в слеке за предыдущий месяц
+    Admin_2.Methods.Staff.Access.Edit:
+      type: object
+      properties:
+        user_id:
+          title: ID пользователя
+          type: integer
+        name:
+          title: Название доступа
+          description: |-
+            - ftp
+            - mysql
+            - vpn
+            - httpAuth
+          type: string
+        category:
+          title: Подкатегория доступа
+          type: string
+        value:
+          title: Выдать или забрать доступ
+          type: boolean
+        recreate:
+          title: Перевыдать доступ, сбросить пароль
+          nullable: true
+          type: boolean
+        login:
+          title: Логин администратора
+          nullable: true
+          type: string
+        password:
+          title: Пароль администратора
+          nullable: true
+          type: string
+        filters:
+          $ref: '#/components/schemas/filters'
+        id:
+          $ref: '#/components/schemas/id'
+      required:
+        - user_id
+        - name
+        - category
+        - value
+        - filters
+      title: Настройка доступа
+    Admin_2.Methods.Staff.ByPost.Get:
+      type: object
+      properties:
+        post:
+          title: Пост сотрудников
+          type: string
+      required:
+        - post
+      title: Получение из бд данные сотрудников указанного поста
+    Admin_2.Methods.Staff.ContractPrint.Get:
+      type: object
+      properties:
+        props:
+          title: Параметры, передаваемые в шаблон
+          type: array
+          items:
+            oneOf:
+              - type: string
+              - type: number
+      required:
+        - props
+      title: Печать договора
+    Admin_2.Methods.Staff.Posts.Get:
+      type: object
+      properties:
+        fields:
+          $ref: '#/components/schemas/fields'
+        orders:
+          $ref: '#/components/schemas/orders'
+        filters:
+          $ref: '#/components/schemas/filters'
+        id:
+          $ref: '#/components/schemas/id'
+        limit:
+          $ref: '#/components/schemas/limit'
+        offset:
+          $ref: '#/components/schemas/offset'
+        fetch_style:
+          $ref: '#/components/schemas/fetch_style'
+      required:
+        - fields
+        - orders
+        - filters
+        - offset
+      title: ПОлучение возможных posts
+    Admin_2.Methods.Staff.Vacation.Add:
+      type: object
+      properties:
+        user_id:
+          title: ID юзера
+          type: integer
+        date1:
+          title: Дата начала
+          allOf:
+            - $ref: '#/components/schemas/TV.API.Types.Date'
+        date2:
+          title: Дата окончания
+          allOf:
+            - $ref: '#/components/schemas/TV.API.Types.Date'
+        type:
+          title: Тип
+          description: |-
+            - vacation
+            - day_off
+          type: array
+          items:
+            oneOf:
+              - type: string
+              - type: number
+      required:
+        - user_id
+        - date1
+        - date2
+        - type
+    Admin_2.Methods.Staff.Vacation.Del:
+      type: object
+      properties:
+        id:
+          title: ID события
+          type: integer
+      required:
+        - id
+      title: Удаление данных об отпуске
+    Admin_2.Methods.Staff.VacationPrint.Get:
+      type: object
+      properties:
+        id:
+          type: integer
+      required:
+        - id
+      title: Печать заявления на отпуск
+    Admin_2.Methods.Tpl.Schema.Get:
+      type: object
+      properties:
+        tpl:
+          title: Путь к шаблону
+          type: string
+        lang:
+          title: Язык шаблона (при пустом значении используется язык пользователя)
+          nullable: true
+          allOf:
+            - $ref: '#/components/schemas/TV.API.Types.Lang'
+        fields:
+          $ref: '#/components/schemas/fields'
+        orders:
+          $ref: '#/components/schemas/orders'
+        filters:
+          $ref: '#/components/schemas/filters'
+        id:
+          $ref: '#/components/schemas/id'
+        limit:
+          $ref: '#/components/schemas/limit'
+        offset:
+          $ref: '#/components/schemas/offset'
+        fetch_style:
+          $ref: '#/components/schemas/fetch_style'
+      required:
+        - tpl
+        - fields
+        - orders
+        - filters
+        - offset
+      title: Получение схему HTML шаблона
     Admin_2.Methods.Users.Promocodes.Add:
       type: object
       properties:
@@ -8497,7 +12183,7 @@ components:
               - type: number
       required:
         - rank_id
-      title: Добавить промокоды к достижению
+      title: Добавление промокоды к достижению
     Models.Users.Verif:
       properties:
         email:
@@ -8534,7 +12220,7 @@ components:
         - orders
         - filters
         - offset
-      title: Получить промокоды
+      title: Получение промокодов
       description: |-
         В params хранится строка в формате:
         - {{ rank_id }}
@@ -8612,7 +12298,7 @@ components:
           nullable: true
           type: boolean
       required: []
-      title: Добавить достижение
+      title: Добавление достижение
     Models.Admin.Users.Ranks:
       properties:
         COUNT_CODES():
@@ -8741,7 +12427,7 @@ components:
           type: boolean
       required:
         - id
-      title: Изменить достижение
+      title: Измение достижение
     Admin_2.Methods.Users.Ranks.Get:
       type: object
       properties:
@@ -8764,7 +12450,7 @@ components:
         - orders
         - filters
         - offset
-      title: Получить достижения
+      title: Получение достижения
     check_id:
       title: ID проверки аудита
       type: integer
@@ -10762,6 +14448,110 @@ components:
       required:
         - email
       title: Привязка email к аккаунту
+    Admin_2.Methods.Accounting.Group.Filter.Add:
+      type: object
+      properties:
+        group_id:
+          title: Id группы
+          type: integer
+        type:
+          title: Тип
+          description: |-
+            - plus
+            - minus
+          type: string
+        counteragent_name:
+          title: Имя контрагента
+          type: string
+        counteragent_inn:
+          title: ИНН контрагента
+          type: string
+        purpose:
+          title: Назначение операции
+          nullable: true
+          type: string
+      required:
+        - group_id
+        - type
+        - counteragent_name
+        - counteragent_inn
+      title: Добавление фильтра группы
+    Admin_2.Methods.Accounting.Group.Filter.Del:
+      type: object
+      properties:
+        group_id:
+          title: ID группы
+          type: integer
+        filter_id:
+          title: ID фильтра
+          type: integer
+      required:
+        - group_id
+        - filter_id
+      title: Удаление фильтра группы
+    Admin_2.Methods.Accounting.Group.Filter.Edit:
+      type: object
+      properties:
+        filter_id:
+          title: ID фильтра
+          type: integer
+        type:
+          title: Тип
+          description: |-
+            - plus
+            - minus
+          type: string
+        counteragent_name:
+          title: Имя контрагента
+          type: string
+        counteragent_inn:
+          title: ИНН контрагента
+          type: string
+        purpose:
+          title: Назначение операции
+          nullable: true
+          type: string
+      required:
+        - filter_id
+        - type
+        - counteragent_name
+        - counteragent_inn
+      title: Изменение фильтра группы
+    Admin_2.Methods.Accounting.Invoices.File.Get:
+      type: object
+      properties:
+        fields:
+          $ref: '#/components/schemas/fields'
+        orders:
+          $ref: '#/components/schemas/orders'
+        filters:
+          $ref: '#/components/schemas/filters'
+        id:
+          $ref: '#/components/schemas/id'
+        limit:
+          $ref: '#/components/schemas/limit'
+        offset:
+          $ref: '#/components/schemas/offset'
+        fetch_style:
+          $ref: '#/components/schemas/fetch_style'
+      required:
+        - fields
+        - orders
+        - filters
+        - offset
+      title: Cкачивание документа
+    Admin_2.Methods.Accounting.Operations.Export.Get:
+      type: object
+      properties:
+        month:
+          title: Месяц
+          type: string
+      required:
+        - month
+      title: Скачивание реестра исходящих операций
+      description: |-
+        @POST string month - месяц в формате: YYYY-mm
+        столбцы CSV: 'Дата акта', 'Номер акта', 'Контрагент', 'ИНН', 'Товар/услуга', 'Номенклатура', 'Кол-во', 'Цена', 'НДС', 'Сумма', 'Способ оплаты'
     Admin_2.Methods.Actions.Account.Currency.Edit:
       type: object
       properties:
@@ -11039,6 +14829,276 @@ components:
         - secunds
         - test
       title: Удаление сообщений
+    Admin_2.Methods.Analytics.Accounting.SummaryForChart.Get:
+      type: object
+      properties:
+        period:
+          allOf:
+            - $ref: '#/components/schemas/Admin_2.Types.Analytics.Segment'
+        currency:
+          allOf:
+            - $ref: '#/components/schemas/TV.API.Types.Currency'
+        date:
+          title: Дата начала отсчета периода
+          allOf:
+            - $ref: '#/components/schemas/TV.API.Types.Date'
+        operations_type:
+          title: Тип операций (расход, приход, все операции)
+          description: |-
+            - profit: приход
+            - charges: расход
+          nullable: true
+          type: string
+        limit:
+          title: Длина периода
+          default: 12
+          type: integer
+        filters:
+          title: Фильтр по объектам групп, см. Admin_2\Accounting\Group
+          nullable: true
+          type: array
+          items:
+            oneOf:
+              - type: string
+              - type: number
+      required:
+        - period
+        - currency
+        - date
+      title: Получение сводки по группам
+    Admin_2.Methods.Analytics.Activity.ChartByPeriod.Get:
+      type: object
+      properties:
+        currency:
+          allOf:
+            - $ref: '#/components/schemas/TV.API.Types.Currency'
+        limit:
+          title: Валюта
+          type: integer
+        date:
+          title: Дата
+          allOf:
+            - $ref: '#/components/schemas/TV.API.Types.Date'
+      required:
+        - currency
+        - limit
+        - date
+      title: Получение активности пользователей в формате для графика
+    Admin_2.Methods.Analytics.Competitors.SummaryForOrdersChart.Get:
+      type: object
+      properties:
+        period:
+          allOf:
+            - $ref: '#/components/schemas/Admin_2.Types.Analytics.Segment'
+        limit:
+          title: Длина периода
+          type: integer
+        currency:
+          nullable: true
+          allOf:
+            - $ref: '#/components/schemas/TV.API.Types.Currency'
+        order_by_type:
+          title: Сортировать ли по типу
+          nullable: true
+          type: integer
+        region_index:
+          title: Инлекс региона
+          nullable: true
+          type: integer
+      required:
+        - period
+        - limit
+      title: Получение конкурентов для графика
+    Admin_2.Methods.Analytics.Payments.Systems.Get:
+      type: object
+      properties:
+        period:
+          allOf:
+            - $ref: '#/components/schemas/Admin_2.Types.Analytics.Segment'
+        currency:
+          allOf:
+            - $ref: '#/components/schemas/TV.API.Types.Currency'
+        limit:
+          title: Длина периода
+          type: integer
+      required:
+        - period
+        - currency
+        - limit
+      title: Получение суммы оплат по системам платежей за период
+    Admin_2.Methods.Analytics.Payments.Tariff.Get:
+      type: object
+      properties:
+        period:
+          allOf:
+            - $ref: '#/components/schemas/Admin_2.Types.Analytics.Segment'
+        currency:
+          allOf:
+            - $ref: '#/components/schemas/TV.API.Types.Currency'
+        limit:
+          title: Длина периода
+          type: integer
+      required:
+        - period
+        - currency
+        - limit
+      title: Получение суммы оплат по тарифам за период
+    Admin_2.Methods.Analytics.Positions.ChartByDayByHourAuto.Get:
+      type: object
+      properties: {}
+      required: []
+      title: Получение числа автоматических проверока по дням по часам
+    Admin_2.Methods.Analytics.Positions.ChartByHourAuto.Get:
+      type: object
+      properties: {}
+      required: []
+      title: Получение числа автоматических проверок по часам
+    Admin_2.Methods.Analytics.Positions.ChartByHour.Get:
+      type: object
+      properties: {}
+      required: []
+      title: Получение числа проверок за месяц по часам
+    Admin_2.Methods.Analytics.Positions.ChartCountUsersByHour.Get:
+      type: object
+      properties: {}
+      required: []
+      title: Получение числа проверок по часам по пользователям
+    Admin_2.Methods.Analytics.Tickets.ChartByMigrations.Get:
+      type: object
+      properties:
+        period:
+          allOf:
+            - $ref: '#/components/schemas/Admin_2.Types.Analytics.Segment'
+        limit:
+          title: Длина периода
+          type: integer
+        date:
+          title: Максимальная дата отчета
+          nullable: true
+          allOf:
+            - $ref: '#/components/schemas/TV.API.Types.Date'
+      required:
+        - period
+        - limit
+      title: Получение статистики тикетов по миграциям
+    Admin_2.Methods.Analytics.Tickets.ChartByNew.Get:
+      type: object
+      properties:
+        period:
+          allOf:
+            - $ref: '#/components/schemas/Admin_2.Types.Analytics.Segment'
+        limit:
+          title: Длина периода
+          type: integer
+        date:
+          title: Максимальная дата отчета
+          nullable: true
+          allOf:
+            - $ref: '#/components/schemas/TV.API.Types.Date'
+      required:
+        - period
+        - limit
+      title: Получение статистики по кол-ву пользователей, открывших первый тикет
+    Admin_2.Methods.Analytics.Tickets.ChartByRates.Get:
+      type: object
+      properties:
+        period:
+          allOf:
+            - $ref: '#/components/schemas/Admin_2.Types.Analytics.Segment'
+        limit:
+          title: Длина периода
+          type: integer
+        date:
+          title: Максимальная дата отчета
+          nullable: true
+          allOf:
+            - $ref: '#/components/schemas/TV.API.Types.Date'
+      required:
+        - period
+        - limit
+      title: Получение статистики тикетов по оценкам
+    Admin_2.Methods.Analytics.Tickets.ChartByTags.Get:
+      type: object
+      properties:
+        period:
+          allOf:
+            - $ref: '#/components/schemas/Admin_2.Types.Analytics.Segment'
+        limit:
+          title: Длина периода
+          type: integer
+        date:
+          title: Максимальная дата отчета
+          nullable: true
+          allOf:
+            - $ref: '#/components/schemas/TV.API.Types.Date'
+      required:
+        - period
+        - limit
+      title: Получение статистику тикетов по тегам
+    Admin_2.Methods.Analytics.Tickets.ChartByWaitTime.Get:
+      type: object
+      properties:
+        period:
+          allOf:
+            - $ref: '#/components/schemas/Admin_2.Types.Analytics.Segment'
+        limit:
+          title: Длина периода
+          type: integer
+        date:
+          title: Максимальная дата отчета
+          nullable: true
+          allOf:
+            - $ref: '#/components/schemas/TV.API.Types.Date'
+      required:
+        - period
+        - limit
+      title: Получение статистики по среднему времени ожидания ответа на вопросы в тикетах
+    Admin_2.Methods.Analytics.Tickets.Messages.Get:
+      type: object
+      properties:
+        fields:
+          title: Поля
+          description: |-
+            - date
+            - count_messages
+            - count_tickets
+            - count_messages_user:%userId%
+            - percent_messages_user:%userId%
+            - vacations_by_user_id
+          type: array
+          items:
+            oneOf:
+              - type: string
+              - type: number
+        period:
+          allOf:
+            - $ref: '#/components/schemas/Admin_2.Types.Analytics.Segment'
+        limit:
+          title: Длина периода
+          type: integer
+        date:
+          title: Максимальная дата отчета
+          nullable: true
+          allOf:
+            - $ref: '#/components/schemas/TV.API.Types.Date'
+      required:
+        - fields
+        - period
+        - limit
+      title: Получение статистики ответов на тикеты
+    Admin_2.Methods.Logs.System.Checked.Edit:
+      type: object
+      properties:
+        id:
+          title: ID лога
+          type: integer
+        checked:
+          title: Проверен ли лог
+          type: boolean
+      required:
+        - id
+        - checked
+      title: Помечание лога как обработанного
     Admin_2.Methods.Users.Informer.Subscriptions.Get:
       type: object
       properties:
@@ -11046,7 +15106,7 @@ components:
           nullable: true
           type: integer
       required: []
-      title: График с количеством подписок на рубрики с сегментцией по способам рассылки
+      title: Получение графика с количеством подписок на рубрики с сегментцией по способам рассылки
       description: График кешируется, первый запрос может выполняться дольше
     TV.Objects.Highcharts.Chart:
       type: object

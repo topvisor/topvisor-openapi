@@ -8,7 +8,7 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         /**
-         * Получить промокоды
+         * Получение промокодов
          * @description В params хранится строка в формате:
          *     - {{ rank_id }}
          *     - {{ rank_id }},single_code - для многоразового кода

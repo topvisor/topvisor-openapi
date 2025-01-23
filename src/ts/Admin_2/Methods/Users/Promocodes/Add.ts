@@ -7,7 +7,7 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Добавить промокоды к достижению */
+        /** Добавление промокоды к достижению */
         "Admin_2.Methods.Users.Promocodes.Add": {
             rank_id: number;
             /** single_code - многоразовый промокод */

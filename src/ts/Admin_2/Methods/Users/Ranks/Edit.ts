@@ -7,7 +7,7 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Изменить достижение */
+        /** Измение достижение */
         "Admin_2.Methods.Users.Ranks.Edit": {
             id: number;
             name_id?: string | null;

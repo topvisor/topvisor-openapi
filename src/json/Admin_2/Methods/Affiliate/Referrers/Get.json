@@ -1,0 +1,35 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Admin_2.Methods.Affiliate.Referrers.Get",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Admin_2.Methods.Affiliate.Referrers.Get": {
+                "type": "object",
+                "properties": {
+                    "year": {
+                        "title": "Год",
+                        "type": "integer"
+                    },
+                    "currency": {
+                        "title": "Валюта партнеров",
+                        "description": "- RUB\n - USD",
+                        "allOf": [
+                            {
+                                "$ref": "../../../../TV/API/Types/Currency.json#/components/schemas/TV.API.Types.Currency"
+                            }
+                        ]
+                    }
+                },
+                "required": [
+                    "year",
+                    "currency"
+                ],
+                "title": "Получение сводки по новым партнерам"
+            }
+        }
+    }
+}

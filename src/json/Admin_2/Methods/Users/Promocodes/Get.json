@@ -38,7 +38,7 @@
                     "filters",
                     "offset"
                 ],
-                "title": "Получить промокоды",
+                "title": "Получение промокодов",
                 "description": "В params хранится строка в формате:\n- {{ rank_id }}\n- {{ rank_id }},single_code - для многоразового кода"
             }
         }

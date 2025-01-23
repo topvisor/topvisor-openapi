@@ -383,6 +383,240 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
+    /** Получение доступа к акаунту пользователя в режиме "призрак" */
+    "/get/admin_2/ghost/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["GetAdmin2Ghost"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Получение записей словаря */
+    "/get/admin_2/i18n/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["GetAdmin2I18n"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/add/admin_2/informer/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["AddAdmin2Informer"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Сохранение текстового файла лога */
+    "/edit/admin_2/logs/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["EditAdmin2Logs"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Загрузка текстового файла лога */
+    "/get/admin_2/logs/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["GetAdmin2Logs"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/get/admin_2/ranks/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["GetAdmin2Ranks"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Добавление сотрудника */
+    "/add/admin_2/staff/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["AddAdmin2Staff"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/edit/admin_2/staff/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["EditAdmin2Staff"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Получение персонала, объект admin_staff */
+    "/get/admin_2/staff/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["GetAdmin2Staff"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Изменение даты следующего списания по тарифу */
+    "/edit/admin_2/tariffChangeExpire/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["EditAdmin2TariffChangeExpire"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Поиск HTML шаблонов */
+    "/get/admin_2/tpl/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["GetAdmin2Tpl"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Редактирование пользователей, объект admin_users */
+    "/edit/admin_2/users/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["EditAdmin2Users"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Получение пользователей */
+    "/get/admin_2/users/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["GetAdmin2Users"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/get/admin_2/votes/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["GetAdmin2Votes"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
     /** Получение всех своих примечаний по всем проектам и сервисам */
     "/get/annotations_2/my/": {
         parameters: {
@@ -1196,6 +1430,141 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
+    /** Изменение параметров контрагента */
+    "/edit/admin_2/accounting/counteragents/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["EditAdmin2AccountingCounteragents"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Получение контрагента */
+    "/get/admin_2/accounting/counteragents/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["GetAdmin2AccountingCounteragents"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/edit/admin_2/accounting/group/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["EditAdmin2AccountingGroup"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Получение групп */
+    "/get/admin_2/accounting/group/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["GetAdmin2AccountingGroup"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Добавление счета на оплату */
+    "/add/admin_2/accounting/invoices/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["AddAdmin2AccountingInvoices"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Отмена отправки счета. Разрешено только для счетов со статусом pending или sending */
+    "/del/admin_2/accounting/invoices/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["DelAdmin2AccountingInvoices"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Получение счетов на оплату */
+    "/get/admin_2/accounting/invoices/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["GetAdmin2AccountingInvoices"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Получение внутренних операций */
+    "/get/admin_2/accounting/operations/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["GetAdmin2AccountingOperations"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
     /** Создание и проведение транзакции */
     "/edit/admin_2/actions/bank/": {
         parameters: {
@@ -1315,7 +1684,452 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Добавить промокоды к достижению */
+    /** Получение общей статистики по реферальной программе */
+    "/get/admin_2/affiliate/referralProgramStats/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["GetAdmin2AffiliateReferralProgramStats"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Получение сводки числа рефералов по своему уровню */
+    "/get/admin_2/affiliate/referralsByLevel/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["GetAdmin2AffiliateReferralsByLevel"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Получение сводки по новым рефералам */
+    "/get/admin_2/affiliate/referrals/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["GetAdmin2AffiliateReferrals"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Получение сводки числа партнеров по числу рефералов */
+    "/get/admin_2/affiliate/referrersByReferrals/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["GetAdmin2AffiliateReferrersByReferrals"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Получение сводки по новым партнерам */
+    "/get/admin_2/affiliate/referrers/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["GetAdmin2AffiliateReferrers"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Получение партнеров c кол-вом рефералов */
+    "/get/admin_2/affiliate/referrersWithReferrals/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["GetAdmin2AffiliateReferrersWithReferrals"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Получение активности пользователей по статусам активности
+     *     статусы активности:
+     *            1. Активный - клиент, который пополнял баланс в сервисе хотя бы раз. При этом трата средств в течение месяца не мнее 100 рублей (или $5).
+     *            2. Активный (новый) - в эту категорию попадают клиенты, которые первый раз перешли в статус "Активного клиента".
+     *            3. Активный (постоянный) - в эту категорию попадют клиенты, которые не меняли свой статус активности за последний месяц
+     *            4. Активный (вернувшийся) - в эту категорию попадют клиенты, которые вернули себе статус "Активный клиент".
+     *            5. Стал не активным - в эту категорию попадют клиенты, которые потеряли статус "Активного клиента" и на протяжении 2 месяцев не возвращали
+     *     себе этот статус. */
+    "/get/admin_2/analytics/activity/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["GetAdmin2AnalyticsActivity"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Получение числа активных пользователей */
+    "/get/admin_2/analytics/countOnlineUsers/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["GetAdmin2AnalyticsCountOnlineUsers"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Получение мероприятий */
+    "/get/admin_2/analytics/events/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["GetAdmin2AnalyticsEvents"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Получение суммы оплат за период */
+    "/get/admin_2/analytics/payments/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["GetAdmin2AnalyticsPayments"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/get/admin_2/analytics/services/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["GetAdmin2AnalyticsServices"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Получение статистики */
+    "/get/admin_2/analytics/statistics/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["GetAdmin2AnalyticsStatistics"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/abstractticketsstats/admin_2/analytics/tickets/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["AbstractticketsstatsAdmin2AnalyticsTickets"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Получение тикетов */
+    "/get/admin_2/analytics/tickets/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["GetAdmin2AnalyticsTickets"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Получение категорий словаря */
+    "/get/admin_2/i18n/categories/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["GetAdmin2I18nCategories"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Получение данных из системного лога */
+    "/get/admin_2/logs/system/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["GetAdmin2LogsSystem"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/get/admin_2/ranks/activations/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["GetAdmin2RanksActivations"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Рейтинг по сообщениям в слеке за предыдущий месяц */
+    "/get/admin_2/slack/rate/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["GetAdmin2SlackRate"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Настройка доступа */
+    "/edit/admin_2/staff/access/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["EditAdmin2StaffAccess"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Получение из бд данные сотрудников указанного поста */
+    "/get/admin_2/staff/byPost/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["GetAdmin2StaffByPost"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Печать договора */
+    "/get/admin_2/staff/contractPrint/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["GetAdmin2StaffContractPrint"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/get/admin_2/staff/posts/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        /** ПОлучение возможных posts */
+        post: operations["GetAdmin2StaffPosts"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/add/admin_2/staff/vacation/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["AddAdmin2StaffVacation"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Удаление данных об отпуске */
+    "/del/admin_2/staff/vacation/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["DelAdmin2StaffVacation"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Печать заявления на отпуск */
+    "/get/admin_2/staff/vacationPrint/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["GetAdmin2StaffVacationPrint"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Получение схему HTML шаблона */
+    "/get/admin_2/tpl/schema/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["GetAdmin2TplSchema"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Добавление промокоды к достижению */
     "/add/admin_2/users/promocodes/": {
         parameters: {
             query?: never;
@@ -1333,7 +2147,7 @@ export interface paths {
         trace?: never;
     };  
     /**
-     * Получить промокоды
+     * Получение промокодов
      * @description В params хранится строка в формате:
      *     - {{ rank_id }}
      *     - {{ rank_id }},single_code - для многоразового кода
@@ -1354,7 +2168,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Добавить достижение */
+    /** Добавление достижение */
     "/add/admin_2/users/ranks/": {
         parameters: {
             query?: never;
@@ -1371,7 +2185,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Изменить достижение */
+    /** Измение достижение */
     "/edit/admin_2/users/ranks/": {
         parameters: {
             query?: never;
@@ -1388,7 +2202,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Получить достижения */
+    /** Получение достижения */
     "/get/admin_2/users/ranks/": {
         parameters: {
             query?: never;
@@ -2076,6 +2890,95 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
+    /** Добавление фильтра группы */
+    "/add/admin_2/accounting/group/filter/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["AddAdmin2AccountingGroupFilter"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Удаление фильтра группы */
+    "/del/admin_2/accounting/group/filter/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["DelAdmin2AccountingGroupFilter"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Изменение фильтра группы */
+    "/edit/admin_2/accounting/group/filter/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["EditAdmin2AccountingGroupFilter"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Cкачивание документа */
+    "/get/admin_2/accounting/invoices/file/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["GetAdmin2AccountingInvoicesFile"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /**
+     * Скачивание реестра исходящих операций
+     * @description @POST string month - месяц в формате: YYYY-mm
+     *     столбцы CSV: 'Дата акта', 'Номер акта', 'Контрагент', 'ИНН', 'Товар/услуга', 'Номенклатура', 'Кол-во', 'Цена', 'НДС', 'Сумма', 'Способ оплаты'
+     */
+    "/get/admin_2/accounting/operations/export/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["GetAdmin2AccountingOperationsExport"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
     /** Изменение валюты пользователя */
     "/edit/admin_2/actions/account/currency/": {
         parameters: {
@@ -2314,8 +3217,280 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
+    /** Получение сводки по группам */
+    "/get/admin_2/analytics/accounting/summaryForChart/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["GetAdmin2AnalyticsAccountingSummaryForChart"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Получение активности пользователей в формате для графика */
+    "/get/admin_2/analytics/activity/chartByPeriod/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["GetAdmin2AnalyticsActivityChartByPeriod"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Получение конкурентов для графика */
+    "/get/admin_2/analytics/competitors/summaryForOrdersChart/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["GetAdmin2AnalyticsCompetitorsSummaryForOrdersChart"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Получение суммы оплат по системам платежей за период */
+    "/get/admin_2/analytics/payments/systems/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["GetAdmin2AnalyticsPaymentsSystems"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Получение суммы оплат по тарифам за период */
+    "/get/admin_2/analytics/payments/tariff/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["GetAdmin2AnalyticsPaymentsTariff"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Получение числа автоматических проверока по дням по часам */
+    "/get/admin_2/analytics/positions/chartByDayByHourAuto/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["GetAdmin2AnalyticsPositionsChartByDayByHourAuto"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Получение числа автоматических проверок по часам */
+    "/get/admin_2/analytics/positions/chartByHourAuto/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["GetAdmin2AnalyticsPositionsChartByHourAuto"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Получение числа проверок за месяц по часам */
+    "/get/admin_2/analytics/positions/chartByHour/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["GetAdmin2AnalyticsPositionsChartByHour"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Получение числа проверок по часам по пользователям */
+    "/get/admin_2/analytics/positions/chartCountUsersByHour/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["GetAdmin2AnalyticsPositionsChartCountUsersByHour"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Получение статистики тикетов по миграциям */
+    "/get/admin_2/analytics/tickets/chartByMigrations/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["GetAdmin2AnalyticsTicketsChartByMigrations"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Получение статистики по кол-ву пользователей, открывших первый тикет */
+    "/get/admin_2/analytics/tickets/chartByNew/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["GetAdmin2AnalyticsTicketsChartByNew"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Получение статистики тикетов по оценкам */
+    "/get/admin_2/analytics/tickets/chartByRates/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["GetAdmin2AnalyticsTicketsChartByRates"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Получение статистику тикетов по тегам */
+    "/get/admin_2/analytics/tickets/chartByTags/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["GetAdmin2AnalyticsTicketsChartByTags"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Получение статистики по среднему времени ожидания ответа на вопросы в тикетах */
+    "/get/admin_2/analytics/tickets/chartByWaitTime/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["GetAdmin2AnalyticsTicketsChartByWaitTime"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Получение статистики ответов на тикеты */
+    "/get/admin_2/analytics/tickets/messages/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["GetAdmin2AnalyticsTicketsMessages"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Помечание лога как обработанного */
+    "/edit/admin_2/logs/system/checked/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["EditAdmin2LogsSystemChecked"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
     /**
-     * График с количеством подписок на рубрики с сегментцией по способам рассылки
+     * Получение графика с количеством подписок на рубрики с сегментцией по способам рассылки
      * @description График кешируется, первый запрос может выполняться дольше
      */
     "/get/admin_2/users/informer/subscriptions/": {
@@ -3244,6 +4419,368 @@ export interface operations {
                         result: unknown;
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
+                };
+            };
+        };
+    };
+    GetAdmin2Ghost: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Admin_2/Methods/Ghost/Get.ts').components['schemas']['Admin_2.Methods.Ghost.Get'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/octet-stream": string;
+                };
+            };
+        };
+    };
+    GetAdmin2I18n: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Admin_2/Methods/I18n/Get.ts').components['schemas']['Admin_2.Methods.I18n.Get'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        /** @return array{lang: string, category: string, name: string, value: string} */
+                        result: (string | number)[];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: null;
+                };
+            };
+        };
+    };
+    AddAdmin2Informer: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Admin_2/Methods/Informer/Add.ts').components['schemas']['Admin_2.Methods.Informer.Add'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: unknown;
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: null;
+                };
+            };
+        };
+    };
+    EditAdmin2Logs: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Admin_2/Methods/Logs/Edit.ts').components['schemas']['Admin_2.Methods.Logs.Edit'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: number;
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: null;
+                };
+            };
+        };
+    };
+    GetAdmin2Logs: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Admin_2/Methods/Logs/Get.ts').components['schemas']['Admin_2.Methods.Logs.Get'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: string;
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: null;
+                };
+            };
+        };
+    };
+    GetAdmin2Ranks: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Admin_2/Methods/Ranks/Get.ts').components['schemas']['Admin_2.Methods.Ranks.Get'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./Models/Analytics/Ranks.ts').components['schemas']['Models.Analytics.Ranks'][];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: import('./Models/Analytics/Ranks.ts').components['schemas']['Models.Analytics.Ranks'];
+                };
+            };
+        };
+    };
+    AddAdmin2Staff: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Admin_2/Methods/Staff/Add.ts').components['schemas']['Admin_2.Methods.Staff.Add'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: number;
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: null;
+                };
+            };
+        };
+    };
+    EditAdmin2Staff: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Admin_2/Methods/Staff/Edit.ts').components['schemas']['Admin_2.Methods.Staff.Edit'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: number;
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: null;
+                };
+            };
+        };
+    };
+    GetAdmin2Staff: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Admin_2/Methods/Staff/Get.ts').components['schemas']['Admin_2.Methods.Staff.Get'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: unknown;
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: import('./Models/Admin/Staff.ts').components['schemas']['Models.Admin.Staff'];
+                };
+            };
+        };
+    };
+    EditAdmin2TariffChangeExpire: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Admin_2/Methods/TariffChangeExpire/Edit.ts').components['schemas']['Admin_2.Methods.TariffChangeExpire.Edit'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: number;
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: null;
+                };
+            };
+        };
+    };
+    GetAdmin2Tpl: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Admin_2/Methods/Tpl/Get.ts').components['schemas']['Admin_2.Methods.Tpl.Get'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: (string | number)[];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: null;
+                };
+            };
+        };
+    };
+    EditAdmin2Users: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Admin_2/Methods/Users/Edit.ts').components['schemas']['Admin_2.Methods.Users.Edit'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: unknown;
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: import('./Models/Admin/Users.ts').components['schemas']['Models.Admin.Users'];
+                };
+            };
+        };
+    };
+    GetAdmin2Users: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Admin_2/Methods/Users/Get.ts').components['schemas']['Admin_2.Methods.Users.Get'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: unknown;
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: import('./Models/Admin/Users.ts').components['schemas']['Models.Admin.Users'];
+                };
+            };
+        };
+    };
+    GetAdmin2Votes: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Admin_2/Methods/Votes/Get.ts').components['schemas']['Admin_2.Methods.Votes.Get'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./Models/Votes.ts').components['schemas']['Models.Votes'][];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: import('./Models/Votes.ts').components['schemas']['Models.Votes'];
                 };
             };
         };
@@ -4453,6 +5990,214 @@ export interface operations {
             };
         };
     };
+    EditAdmin2AccountingCounteragents: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Admin_2/Methods/Accounting/Counteragents/Edit.ts').components['schemas']['Admin_2.Methods.Accounting.Counteragents.Edit'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: number;
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: null;
+                };
+            };
+        };
+    };
+    GetAdmin2AccountingCounteragents: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Admin_2/Methods/Accounting/Counteragents/Get.ts').components['schemas']['Admin_2.Methods.Accounting.Counteragents.Get'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: unknown;
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: import('./Models/Admin/Accounting/Counteragents.ts').components['schemas']['Models.Admin.Accounting.Counteragents'];
+                };
+            };
+        };
+    };
+    EditAdmin2AccountingGroup: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Admin_2/Methods/Accounting/Group/Edit.ts').components['schemas']['Admin_2.Methods.Accounting.Group.Edit'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: number;
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: null;
+                };
+            };
+        };
+    };
+    GetAdmin2AccountingGroup: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Admin_2/Methods/Accounting/Group/Get.ts').components['schemas']['Admin_2.Methods.Accounting.Group.Get'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./Models/EmptyModel.ts').components['schemas']['Models.EmptyModel'][];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: import('./Models/EmptyModel.ts').components['schemas']['Models.EmptyModel'];
+                };
+            };
+        };
+    };
+    AddAdmin2AccountingInvoices: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Admin_2/Methods/Accounting/Invoices/Add.ts').components['schemas']['Admin_2.Methods.Accounting.Invoices.Add'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: number;
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: null;
+                };
+            };
+        };
+    };
+    DelAdmin2AccountingInvoices: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Admin_2/Methods/Accounting/Invoices/Del.ts').components['schemas']['Admin_2.Methods.Accounting.Invoices.Del'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: number;
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: import('./Models/Admin/Invoices.ts').components['schemas']['Models.Admin.Invoices'];
+                };
+            };
+        };
+    };
+    GetAdmin2AccountingInvoices: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Admin_2/Methods/Accounting/Invoices/Get.ts').components['schemas']['Admin_2.Methods.Accounting.Invoices.Get'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: unknown;
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: import('./Models/Admin/Invoices.ts').components['schemas']['Models.Admin.Invoices'];
+                };
+            };
+        };
+    };
+    GetAdmin2AccountingOperations: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Admin_2/Methods/Accounting/Operations/Get.ts').components['schemas']['Admin_2.Methods.Accounting.Operations.Get'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: unknown;
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: import('./Models/EmptyModel.ts').components['schemas']['Models.EmptyModel'];
+                };
+            };
+        };
+    };
     EditAdmin2ActionsBank: {
         parameters: {
             query?: never;
@@ -4630,6 +6375,682 @@ export interface operations {
                     "application/json": ({
                         result: import('./Admin_2/Objects/Actions/Result.ts').components['schemas']['Admin_2.Objects.Actions.Result'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: null;
+                };
+            };
+        };
+    };
+    GetAdmin2AffiliateReferralProgramStats: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Admin_2/Methods/Affiliate/ReferralProgramStats/Get.ts').components['schemas']['Admin_2.Methods.Affiliate.ReferralProgramStats.Get'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: (string | number)[];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: null;
+                };
+            };
+        };
+    };
+    GetAdmin2AffiliateReferralsByLevel: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Admin_2/Methods/Affiliate/ReferralsByLevel/Get.ts').components['schemas']['Admin_2.Methods.Affiliate.ReferralsByLevel.Get'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: (string | number)[];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: null;
+                };
+            };
+        };
+    };
+    GetAdmin2AffiliateReferrals: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Admin_2/Methods/Affiliate/Referrals/Get.ts').components['schemas']['Admin_2.Methods.Affiliate.Referrals.Get'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: (string | number)[];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: null;
+                };
+            };
+        };
+    };
+    GetAdmin2AffiliateReferrersByReferrals: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Admin_2/Methods/Affiliate/ReferrersByReferrals/Get.ts').components['schemas']['Admin_2.Methods.Affiliate.ReferrersByReferrals.Get'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: (string | number)[];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: null;
+                };
+            };
+        };
+    };
+    GetAdmin2AffiliateReferrers: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Admin_2/Methods/Affiliate/Referrers/Get.ts').components['schemas']['Admin_2.Methods.Affiliate.Referrers.Get'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: unknown;
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: null;
+                };
+            };
+        };
+    };
+    GetAdmin2AffiliateReferrersWithReferrals: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Admin_2/Methods/Affiliate/ReferrersWithReferrals/Get.ts').components['schemas']['Admin_2.Methods.Affiliate.ReferrersWithReferrals.Get'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./Models/EmptyModel.ts').components['schemas']['Models.EmptyModel'][];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: import('./Models/EmptyModel.ts').components['schemas']['Models.EmptyModel'];
+                };
+            };
+        };
+    };
+    GetAdmin2AnalyticsActivity: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Admin_2/Methods/Analytics/Activity/Get.ts').components['schemas']['Admin_2.Methods.Analytics.Activity.Get'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: (string | number)[];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: null;
+                };
+            };
+        };
+    };
+    GetAdmin2AnalyticsCountOnlineUsers: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Admin_2/Methods/Analytics/CountOnlineUsers/Get.ts').components['schemas']['Admin_2.Methods.Analytics.CountOnlineUsers.Get'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: (string | number)[];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: null;
+                };
+            };
+        };
+    };
+    GetAdmin2AnalyticsEvents: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Admin_2/Methods/Analytics/Events/Get.ts').components['schemas']['Admin_2.Methods.Analytics.Events.Get'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: unknown;
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: import('./Models/Analytics/Events.ts').components['schemas']['Models.Analytics.Events'];
+                };
+            };
+        };
+    };
+    GetAdmin2AnalyticsPayments: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Admin_2/Methods/Analytics/Payments/Get.ts').components['schemas']['Admin_2.Methods.Analytics.Payments.Get'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: (string | number)[];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: null;
+                };
+            };
+        };
+    };
+    GetAdmin2AnalyticsServices: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Admin_2/Methods/Analytics/Get.ts').components['schemas']['Admin_2.Methods.Analytics.Get'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: (string | number)[];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: null;
+                };
+            };
+        };
+    };
+    GetAdmin2AnalyticsStatistics: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Admin_2/Methods/Analytics/Statistics/Get.ts').components['schemas']['Admin_2.Methods.Analytics.Statistics.Get'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: (string | number)[];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: null;
+                };
+            };
+        };
+    };
+    AbstractticketsstatsAdmin2AnalyticsTickets: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Admin_2/Methods/Analytics/Tickets/AbstractTicketsStats.ts').components['schemas']['Admin_2.Methods.Analytics.Tickets.AbstractTicketsStats'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        /** Запрещено делать публичной, это приведет к поломке preCall()
+                         *
+                         *     В описании к функции отвечать на вопрос: `Что является результатом запроса?` Например: `Список пользователей`
+                         *
+                         *     TODO: Автоматической проверки нет, не менять protected */
+                        result: unknown;
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: null;
+                };
+            };
+        };
+    };
+    GetAdmin2AnalyticsTickets: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Admin_2/Methods/Analytics/Tickets/Get.ts').components['schemas']['Admin_2.Methods.Analytics.Tickets.Get'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./Models/Tickets.ts').components['schemas']['Models.Tickets'][];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: import('./Models/Tickets.ts').components['schemas']['Models.Tickets'];
+                };
+            };
+        };
+    };
+    GetAdmin2I18nCategories: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Admin_2/Methods/I18n/Categories/Get.ts').components['schemas']['Admin_2.Methods.I18n.Categories.Get'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: (string | number)[];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: null;
+                };
+            };
+        };
+    };
+    GetAdmin2LogsSystem: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Admin_2/Methods/Logs/System/Get.ts').components['schemas']['Admin_2.Methods.Logs.System.Get'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: (string | number)[];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: null;
+                };
+            };
+        };
+    };
+    GetAdmin2RanksActivations: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Admin_2/Methods/Ranks/Activations/Get.ts').components['schemas']['Admin_2.Methods.Ranks.Activations.Get'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: unknown;
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: import('./Models/Analytics/RanksUsers.ts').components['schemas']['Models.Analytics.RanksUsers'];
+                };
+            };
+        };
+    };
+    GetAdmin2SlackRate: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Admin_2/Methods/Slack/Rate/Get.ts').components['schemas']['Admin_2.Methods.Slack.Rate.Get'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        /** Cписок пользователей */
+                        result: (string | number)[];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: null;
+                };
+            };
+        };
+    };
+    EditAdmin2StaffAccess: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Admin_2/Methods/Staff/Access/Edit.ts').components['schemas']['Admin_2.Methods.Staff.Access.Edit'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: number;
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: import('./Models/CronCommands.ts').components['schemas']['Models.CronCommands'];
+                };
+            };
+        };
+    };
+    GetAdmin2StaffByPost: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Admin_2/Methods/Staff/ByPost/Get.ts').components['schemas']['Admin_2.Methods.Staff.ByPost.Get'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: (string | number)[];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: null;
+                };
+            };
+        };
+    };
+    GetAdmin2StaffContractPrint: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Admin_2/Methods/Staff/ContractPrint/Get.ts').components['schemas']['Admin_2.Methods.Staff.ContractPrint.Get'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/octet-stream": string;
+                };
+            };
+        };
+    };
+    GetAdmin2StaffPosts: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Admin_2/Methods/Staff/Posts/Get.ts').components['schemas']['Admin_2.Methods.Staff.Posts.Get'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: (string | number)[];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: null;
+                };
+            };
+        };
+    };
+    AddAdmin2StaffVacation: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Admin_2/Methods/Staff/Vacation/Add.ts').components['schemas']['Admin_2.Methods.Staff.Vacation.Add'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: number;
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: null;
+                };
+            };
+        };
+    };
+    DelAdmin2StaffVacation: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Admin_2/Methods/Staff/Vacation/Del.ts').components['schemas']['Admin_2.Methods.Staff.Vacation.Del'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: number;
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: null;
+                };
+            };
+        };
+    };
+    GetAdmin2StaffVacationPrint: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Admin_2/Methods/Staff/VacationPrint/Get.ts').components['schemas']['Admin_2.Methods.Staff.VacationPrint.Get'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/octet-stream": string;
+                };
+            };
+        };
+    };
+    GetAdmin2TplSchema: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Admin_2/Methods/Tpl/Schema/Get.ts').components['schemas']['Admin_2.Methods.Tpl.Schema.Get'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: (string | number)[];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
             };
@@ -5764,6 +8185,133 @@ export interface operations {
             };
         };
     };
+    AddAdmin2AccountingGroupFilter: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Admin_2/Methods/Accounting/Group/Filter/Add.ts').components['schemas']['Admin_2.Methods.Accounting.Group.Filter.Add'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: unknown;
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: null;
+                };
+            };
+        };
+    };
+    DelAdmin2AccountingGroupFilter: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Admin_2/Methods/Accounting/Group/Filter/Del.ts').components['schemas']['Admin_2.Methods.Accounting.Group.Filter.Del'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: unknown;
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: null;
+                };
+            };
+        };
+    };
+    EditAdmin2AccountingGroupFilter: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Admin_2/Methods/Accounting/Group/Filter/Edit.ts').components['schemas']['Admin_2.Methods.Accounting.Group.Filter.Edit'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: unknown;
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: null;
+                };
+            };
+        };
+    };
+    GetAdmin2AccountingInvoicesFile: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Admin_2/Methods/Accounting/Invoices/File/Get.ts').components['schemas']['Admin_2.Methods.Accounting.Invoices.File.Get'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/octet-stream": string;
+                };
+            };
+        };
+    };
+    GetAdmin2AccountingOperationsExport: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Admin_2/Methods/Accounting/Operations/Export/Get.ts').components['schemas']['Admin_2.Methods.Accounting.Operations.Export.Get'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: unknown;
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: null;
+                };
+            };
+        };
+    };
     EditAdmin2ActionsAccountCurrency: {
         parameters: {
             query?: never;
@@ -6122,6 +8670,422 @@ export interface operations {
                 content: {
                     "application/json": ({
                         result: import('./Admin_2/Objects/Actions/Result.ts').components['schemas']['Admin_2.Objects.Actions.Result'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: null;
+                };
+            };
+        };
+    };
+    GetAdmin2AnalyticsAccountingSummaryForChart: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Admin_2/Methods/Analytics/Accounting/SummaryForChart/Get.ts').components['schemas']['Admin_2.Methods.Analytics.Accounting.SummaryForChart.Get'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: (string | number)[];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: null;
+                };
+            };
+        };
+    };
+    GetAdmin2AnalyticsActivityChartByPeriod: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Admin_2/Methods/Analytics/Activity/ChartByPeriod/Get.ts').components['schemas']['Admin_2.Methods.Analytics.Activity.ChartByPeriod.Get'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: (string | number)[];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: null;
+                };
+            };
+        };
+    };
+    GetAdmin2AnalyticsCompetitorsSummaryForOrdersChart: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Admin_2/Methods/Analytics/Competitors/SummaryForOrdersChart/Get.ts').components['schemas']['Admin_2.Methods.Analytics.Competitors.SummaryForOrdersChart.Get'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: (string | number)[];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: null;
+                };
+            };
+        };
+    };
+    GetAdmin2AnalyticsPaymentsSystems: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Admin_2/Methods/Analytics/Payments/Systems/Get.ts').components['schemas']['Admin_2.Methods.Analytics.Payments.Systems.Get'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: (string | number)[];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: null;
+                };
+            };
+        };
+    };
+    GetAdmin2AnalyticsPaymentsTariff: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Admin_2/Methods/Analytics/Payments/Tariff/Get.ts').components['schemas']['Admin_2.Methods.Analytics.Payments.Tariff.Get'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: (string | number)[];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: null;
+                };
+            };
+        };
+    };
+    GetAdmin2AnalyticsPositionsChartByDayByHourAuto: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Admin_2/Methods/Analytics/Positions/ChartByDayByHourAuto/Get.ts').components['schemas']['Admin_2.Methods.Analytics.Positions.ChartByDayByHourAuto.Get'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./stdClass.ts').components['schemas']['stdClass'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: null;
+                };
+            };
+        };
+    };
+    GetAdmin2AnalyticsPositionsChartByHourAuto: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Admin_2/Methods/Analytics/Positions/ChartByHourAuto/Get.ts').components['schemas']['Admin_2.Methods.Analytics.Positions.ChartByHourAuto.Get'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./stdClass.ts').components['schemas']['stdClass'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: null;
+                };
+            };
+        };
+    };
+    GetAdmin2AnalyticsPositionsChartByHour: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Admin_2/Methods/Analytics/Positions/ChartByHour/Get.ts').components['schemas']['Admin_2.Methods.Analytics.Positions.ChartByHour.Get'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./stdClass.ts').components['schemas']['stdClass'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: null;
+                };
+            };
+        };
+    };
+    GetAdmin2AnalyticsPositionsChartCountUsersByHour: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Admin_2/Methods/Analytics/Positions/ChartCountUsersByHour/Get.ts').components['schemas']['Admin_2.Methods.Analytics.Positions.ChartCountUsersByHour.Get'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./stdClass.ts').components['schemas']['stdClass'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: null;
+                };
+            };
+        };
+    };
+    GetAdmin2AnalyticsTicketsChartByMigrations: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Admin_2/Methods/Analytics/Tickets/ChartByMigrations/Get.ts').components['schemas']['Admin_2.Methods.Analytics.Tickets.ChartByMigrations.Get'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: (string | number)[];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: null;
+                };
+            };
+        };
+    };
+    GetAdmin2AnalyticsTicketsChartByNew: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Admin_2/Methods/Analytics/Tickets/ChartByNew/Get.ts').components['schemas']['Admin_2.Methods.Analytics.Tickets.ChartByNew.Get'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: (string | number)[];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: null;
+                };
+            };
+        };
+    };
+    GetAdmin2AnalyticsTicketsChartByRates: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Admin_2/Methods/Analytics/Tickets/ChartByRates/Get.ts').components['schemas']['Admin_2.Methods.Analytics.Tickets.ChartByRates.Get'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: (string | number)[];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: null;
+                };
+            };
+        };
+    };
+    GetAdmin2AnalyticsTicketsChartByTags: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Admin_2/Methods/Analytics/Tickets/ChartByTags/Get.ts').components['schemas']['Admin_2.Methods.Analytics.Tickets.ChartByTags.Get'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: (string | number)[];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: null;
+                };
+            };
+        };
+    };
+    GetAdmin2AnalyticsTicketsChartByWaitTime: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Admin_2/Methods/Analytics/Tickets/ChartByWaitTime/Get.ts').components['schemas']['Admin_2.Methods.Analytics.Tickets.ChartByWaitTime.Get'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: (string | number)[];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: null;
+                };
+            };
+        };
+    };
+    GetAdmin2AnalyticsTicketsMessages: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Admin_2/Methods/Analytics/Tickets/Messages/Get.ts').components['schemas']['Admin_2.Methods.Analytics.Tickets.Messages.Get'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: (string | number)[];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: null;
+                };
+            };
+        };
+    };
+    EditAdmin2LogsSystemChecked: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Admin_2/Methods/Logs/System/Checked/Edit.ts').components['schemas']['Admin_2.Methods.Logs.System.Checked.Edit'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: number;
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };

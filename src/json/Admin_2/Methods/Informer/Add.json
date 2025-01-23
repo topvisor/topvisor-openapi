@@ -1,0 +1,88 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Admin_2.Methods.Informer.Add",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Admin_2.Methods.Informer.Add": {
+                "type": "object",
+                "properties": {
+                    "type": {
+                        "title": "Тип рассылки",
+                        "description": "- me\n- admin\n- news\n- api",
+                        "type": "string"
+                    },
+                    "send_in": {
+                        "title": "Канал рассылки",
+                        "description": "- all\n- email\n- informer",
+                        "type": "string"
+                    },
+                    "lang": {
+                        "allOf": [
+                            {
+                                "$ref": "../../../TV/API/Types/Lang.json#/components/schemas/TV.API.Types.Lang"
+                            }
+                        ]
+                    },
+                    "subject": {
+                        "title": "Объект отправки",
+                        "type": "string"
+                    },
+                    "preview_text": {
+                        "title": "Текст превью для письма",
+                        "nullable": true,
+                        "type": "string"
+                    },
+                    "message": {
+                        "title": "Текст письма\nОбязательно для email",
+                        "nullable": true,
+                        "type": "string"
+                    },
+                    "message_informer": {
+                        "title": "Текст письма\nОбязательно для informer",
+                        "nullable": true,
+                        "type": "string"
+                    },
+                    "link": {
+                        "title": "Ссылка",
+                        "nullable": true,
+                        "type": "string"
+                    },
+                    "link_text": {
+                        "title": "Текст для добавляемой ссылки для E-mail",
+                        "nullable": true,
+                        "type": "string"
+                    },
+                    "users_ids": {
+                        "title": "Ограничение рассылки по id пользоваталей",
+                        "nullable": true,
+                        "allOf": [
+                            {
+                                "$ref": "../../../TV/API/Types/IntArray.json#/components/schemas/TV.API.Types.IntArray"
+                            }
+                        ]
+                    },
+                    "only_ur": {
+                        "title": "Ограничение рассылки по пользоваталям с договорами",
+                        "nullable": true,
+                        "type": "boolean"
+                    },
+                    "debug": {
+                        "title": "Отладка email",
+                        "nullable": true,
+                        "type": "boolean"
+                    }
+                },
+                "required": [
+                    "type",
+                    "send_in",
+                    "lang",
+                    "subject"
+                ]
+            }
+        }
+    }
+}

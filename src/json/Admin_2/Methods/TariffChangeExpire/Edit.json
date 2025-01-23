@@ -1,0 +1,36 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Admin_2.Methods.TariffChangeExpire.Edit",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Admin_2.Methods.TariffChangeExpire.Edit": {
+                "type": "object",
+                "properties": {
+                    "expire": {
+                        "title": "Дата следующего списания по тарифу",
+                        "allOf": [
+                            {
+                                "$ref": "../../../TV/API/Types/Date.json#/components/schemas/TV.API.Types.Date"
+                            }
+                        ]
+                    },
+                    "filters": {
+                        "$ref": "../../../TV/API/Params/FiltersTrait.json#/components/schemas/TV.API.Params.FiltersTrait/properties/filters"
+                    },
+                    "id": {
+                        "$ref": "../../../TV/API/Params/FiltersTrait.json#/components/schemas/TV.API.Params.FiltersTrait/properties/id"
+                    }
+                },
+                "required": [
+                    "expire",
+                    "filters"
+                ],
+                "title": "Изменение даты следующего списания по тарифу"
+            }
+        }
+    }
+}

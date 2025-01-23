@@ -1,0 +1,36 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Admin_2.Methods.Accounting.Counteragents.Edit",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Admin_2.Methods.Accounting.Counteragents.Edit": {
+                "type": "object",
+                "properties": {
+                    "name": {
+                        "type": "string"
+                    },
+                    "document_number": {
+                        "nullable": true,
+                        "type": "string"
+                    },
+                    "comments": {
+                        "nullable": true,
+                        "type": "string"
+                    },
+                    "comments_2": {
+                        "nullable": true,
+                        "type": "string"
+                    }
+                },
+                "required": [
+                    "name"
+                ],
+                "title": "Изменение параметров контрагента"
+            }
+        }
+    }
+}

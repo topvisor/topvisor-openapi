@@ -1,0 +1,30 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Admin_2.Methods.Logs.Edit",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Admin_2.Methods.Logs.Edit": {
+                "type": "object",
+                "properties": {
+                    "log_file": {
+                        "title": "Файл лога",
+                        "type": "string"
+                    },
+                    "log_text": {
+                        "title": "Текст",
+                        "type": "string"
+                    }
+                },
+                "required": [
+                    "log_file",
+                    "log_text"
+                ],
+                "title": "Сохранение текстового файла лога"
+            }
+        }
+    }
+}
