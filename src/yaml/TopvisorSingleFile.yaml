@@ -12875,6 +12875,10 @@ components:
           $ref: '#/components/schemas/project_id'
         fields:
           $ref: '#/components/schemas/fields'
+        filters:
+          $ref: '#/components/schemas/filters'
+        id:
+          $ref: '#/components/schemas/id'
         check_id:
           $ref: '#/components/schemas/check_id'
       required:
