@@ -10,6 +10,16 @@ export interface components {
         /** Экспорт результатов проверки файла */
         "Audit_2.Methods.Audit.Export.Get": {
             target_type: import('../../../Types/Audit/TargetType.ts').components['schemas']['Audit_2.Types.Audit.TargetType'];
+            /**
+             * Тип отчета для фильтра по ресурсам страницы
+             * @description Только для $target_type = pages
+             */
+            filters_resources_target_type?: import('../../../Types/Audit/TargetType.ts').components['schemas']['Audit_2.Types.Audit.TargetType'] | null;
+            /**
+             * Фильтр по ресурсам страницы, API fitlers для объекта, тип которого указан в filters_extra_target_type
+             * @description Только для $target_type = pages
+             */
+            filters_resources?: (string | number)[];
             /** Формат экспортируемого файла */
             output: import('../../../../TV/API/Types/ExportFormat.ts').components['schemas']['TV.API.Types.ExportFormat'];
             project_id: import('../../../../TV/API/Params/ProjectIdTrait.ts').components['schemas']['TV.API.Params.ProjectIdTrait']['project_id'];

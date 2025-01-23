@@ -17,6 +17,31 @@
                             }
                         ]
                     },
+                    "filters_resources_target_type": {
+                        "title": "Тип отчета для фильтра по ресурсам страницы",
+                        "description": "Только для $target_type = pages",
+                        "nullable": true,
+                        "allOf": [
+                            {
+                                "$ref": "../../../../Audit_2/Types/Audit/TargetType.json#/components/schemas/Audit_2.Types.Audit.TargetType"
+                            }
+                        ]
+                    },
+                    "filters_resources": {
+                        "title": "Фильтр по ресурсам страницы, API fitlers для объекта, тип которого указан в filters_extra_target_type",
+                        "description": "Только для $target_type = pages",
+                        "type": "array",
+                        "items": {
+                            "oneOf": [
+                                {
+                                    "type": "string"
+                                },
+                                {
+                                    "type": "number"
+                                }
+                            ]
+                        }
+                    },
                     "output": {
                         "title": "Формат экспортируемого файла",
                         "allOf": [
