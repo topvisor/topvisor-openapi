@@ -1,0 +1,40 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Projects_2.Methods.Competitors.On.Edit",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Projects_2.Methods.Competitors.On.Edit": {
+                "type": "object",
+                "properties": {
+                    "project_id": {
+                        "title": "ID проекта",
+                        "type": "integer"
+                    },
+                    "ids": {
+                        "title": "ID конкурентов",
+                        "allOf": [
+                            {
+                                "$ref": "../../../../TV/API/Types/IntArray.json#/components/schemas/TV.API.Types.IntArray"
+                            }
+                        ]
+                    },
+                    "on": {
+                        "title": "Активность проекта",
+                        "description": "- -1 - выключен\n- 0 - включен",
+                        "type": "integer"
+                    }
+                },
+                "required": [
+                    "project_id",
+                    "ids",
+                    "on"
+                ],
+                "title": "Включение/выключение конкурентов"
+            }
+        }
+    }
+}

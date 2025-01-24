@@ -1,0 +1,30 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Projects_2.Methods.Status.Registrar.Get",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Projects_2.Methods.Status.Registrar.Get": {
+                "type": "object",
+                "properties": {
+                    "domain": {
+                        "title": "Домен",
+                        "allOf": [
+                            {
+                                "$ref": "../../../../TV/API/Types/Url.json#/components/schemas/TV.API.Types.Url"
+                            }
+                        ]
+                    }
+                },
+                "required": [
+                    "domain"
+                ],
+                "title": "Получение информации о регистрации домена",
+                "description": "Возвращает объект с параметрами:\n- wait_time, если данные не готовы\n- created, если данные готовы\n- paidtill, если данные готовы"
+            }
+        }
+    }
+}

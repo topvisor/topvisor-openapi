@@ -2354,6 +2354,109 @@ paths:
             model:
               schema:
                 type: 'null'
+  /add/projects_2/competitors/:
+    post:
+      operationId: AddProjects2Competitors
+      tags:
+        - Projects_2
+      summary: Добавление конкурента
+      description: 'Ограничения: не более Projects_2\Competitors::MAX_COMPETITORS_PER_PROJECT конкурентов в одном проекте'
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Projects_2.Methods.Competitors.Add'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            type: array
+                            items:
+                              oneOf:
+                                - type: string
+                                - type: number
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
+  /del/projects_2/competitors/:
+    post:
+      operationId: DelProjects2Competitors
+      tags:
+        - Projects_2
+      summary: Удаление конкурентов
+      description: Обязательный параметр или ids или urls
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Projects_2.Methods.Competitors.Del'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            type: integer
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
+  /get/projects_2/competitors/:
+    post:
+      operationId: GetProjects2Competitors
+      tags:
+        - Projects_2
+      summary: Получение списка конкурентов
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Projects_2.Methods.Competitors.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            type: array
+                            items:
+                              oneOf:
+                                - type: string
+                                - type: number
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
   /add/projects_2/folders/:
     post:
       operationId: AddProjects2Folders
@@ -2450,6 +2553,41 @@ paths:
               schema:
                 $ref: '#/components/schemas/Models.Projects.Folders'
                 description: Only for typescript, does not contain real data
+  /get/projects_2/status/:
+    post:
+      operationId: GetProjects2Status
+      tags:
+        - Projects_2
+      summary: |-
+        Получение информации о домене и SSL сертификате
+        Возвращает объект с параметрами:
+        - domain_expire
+        - ssl_expire
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Projects_2.Methods.Status.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            $ref: '#/components/schemas/stdClass'
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
   /del/recurring_2/recurringCard/:
     post:
       operationId: DelRecurring2RecurringCard
@@ -5245,6 +5383,99 @@ paths:
             model:
               schema:
                 type: 'null'
+  /edit/projects_2/competitors/move/:
+    post:
+      operationId: EditProjects2CompetitorsMove
+      tags:
+        - Projects_2
+      summary: Перемещение конкурента (сортировка)
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Projects_2.Methods.Competitors.Move.Edit'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            type: integer
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
+  /edit/projects_2/competitors/name/:
+    post:
+      operationId: EditProjects2CompetitorsName
+      tags:
+        - Projects_2
+      summary: Установка имени конкурента
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Projects_2.Methods.Competitors.Name.Edit'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            type: integer
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
+  /edit/projects_2/competitors/on/:
+    post:
+      operationId: EditProjects2CompetitorsOn
+      tags:
+        - Projects_2
+      summary: Включение/выключение конкурентов
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Projects_2.Methods.Competitors.On.Edit'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            type: integer
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
   /edit/projects_2/folders/move/:
     post:
       operationId: EditProjects2FoldersMove
@@ -5329,6 +5560,149 @@ paths:
                       - type: object
                         properties:
                           result: {}
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
+  /get/projects_2/master/hintsCompetitors/:
+    post:
+      operationId: GetProjects2MasterHintsCompetitors
+      tags:
+        - Projects_2
+      summary: Получить подсазки конкурентов для добавления в проект
+      description: Доступ по API закрыт
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Projects_2.Methods.Master.HintsCompetitors.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            type: array
+                            items:
+                              oneOf:
+                                - type: string
+                                - type: number
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
+  /get/projects_2/master/hintsKeywords/:
+    post:
+      operationId: GetProjects2MasterHintsKeywords
+      tags:
+        - Projects_2
+      summary: |-
+        Получить подсазки запросов для добавления в проект
+        Доступ по API закрыт
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Projects_2.Methods.Master.HintsKeywords.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            type: array
+                            items:
+                              oneOf:
+                                - type: string
+                                - type: number
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
+  /get/projects_2/status/registrar/:
+    post:
+      operationId: GetProjects2StatusRegistrar
+      tags:
+        - Projects_2
+      summary: Получение информации о регистрации домена
+      description: |-
+        Возвращает объект с параметрами:
+        - wait_time, если данные не готовы
+        - created, если данные готовы
+        - paidtill, если данные готовы
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Projects_2.Methods.Status.Registrar.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            $ref: '#/components/schemas/stdClass'
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
+  /get/projects_2/status/ssl/:
+    post:
+      operationId: GetProjects2StatusSsl
+      tags:
+        - Projects_2
+      summary: |-
+        Получение информации об SSL сертификате
+        Возваращает объект с параметрами:
+        - expire
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Projects_2.Methods.Status.Ssl.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            $ref: '#/components/schemas/stdClass'
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
@@ -10730,6 +11104,102 @@ components:
       required:
         - validation_url
       title: Валидация домена для подтверждения оплаты Apple Pay (system = card_ap)
+    TV.API.Types.UrlShort:
+      type: string
+      title: |-
+        Краткий URL в punycode, не может содержать UTF-символы:
+        - без схемы
+        - без "www." в домене
+        - без слешей на конце
+        - без "<" и ">"
+      description: |-
+        Будет проивзедено автоматическое приведение к формату
+
+        Разрешен ввод пустой строки, для удаления значения url
+    TV.API.Types.UrlShortArray:
+      type: array
+      items:
+        $ref: '#/components/schemas/TV.API.Types.UrlShort'
+      title: 'Тип массива: UrlShort[]'
+      description: '@see UrlShort'
+    Projects_2.Methods.Competitors.Add:
+      type: object
+      properties:
+        project_id:
+          title: ID проекта
+          type: integer
+        urls:
+          title: Список url конкурентов
+          allOf:
+            - $ref: '#/components/schemas/TV.API.Types.UrlShortArray'
+        names:
+          title: Список имен конкурентов (если указан, должен быть такой же длины как urls)
+          nullable: true
+          type: array
+          items:
+            oneOf:
+              - type: string
+              - type: number
+      required:
+        - project_id
+        - urls
+      title: Добавление конкурента
+      description: 'Ограничения: не более Projects_2\Competitors::MAX_COMPETITORS_PER_PROJECT конкурентов в одном проекте'
+    TV.API.Types.UrlArray:
+      type: array
+      items:
+        $ref: '#/components/schemas/TV.API.Types.Url'
+      title: 'Тип массива: Url[]'
+      description: '@see Url'
+    Projects_2.Methods.Competitors.Del:
+      type: object
+      properties:
+        project_id:
+          title: ID проекта
+          type: integer
+        ids:
+          title: ID конкурентов
+          nullable: true
+          allOf:
+            - $ref: '#/components/schemas/TV.API.Types.IntArray'
+        urls:
+          title: Url конкурентов
+          nullable: true
+          allOf:
+            - $ref: '#/components/schemas/TV.API.Types.UrlArray'
+      required:
+        - project_id
+      title: Удаление конкурентов
+      description: Обязательный параметр или ids или urls
+    Projects_2.Methods.Competitors.Get:
+      type: object
+      properties:
+        fields:
+          default:
+            - id
+            - name
+            - site
+            - 'on'
+          nullable: true
+          type: array
+          items:
+            oneOf:
+              - type: string
+              - type: number
+        project_id:
+          title: ID проекта
+          type: integer
+        only_enabled:
+          title: Вернуть ли в результате только включенных конкурентов
+          nullable: true
+          type: boolean
+        include_project:
+          title: Включить ли в результат основной проект
+          nullable: true
+          type: boolean
+      required:
+        - project_id
+      title: Получение списка конкурентов
     Projects_2.Methods.Folders.Add:
       type: object
       properties:
@@ -10781,6 +11251,19 @@ components:
         - filters
         - offset
       title: Получение списка папок
+    Projects_2.Methods.Status.Get:
+      type: object
+      properties:
+        project_id:
+          title: ID проекта
+          type: integer
+      required:
+        - project_id
+      title: |-
+        Получение информации о домене и SSL сертификате
+        Возвращает объект с параметрами:
+        - domain_expire
+        - ssl_expire
     Recurring_2.Methods.RecurringCard.Del:
       type: object
       properties:
@@ -11090,12 +11573,6 @@ components:
         - offset
         - project_id
       title: Экспорт urls в определенном формате
-    TV.API.Types.UrlArray:
-      type: array
-      items:
-        $ref: '#/components/schemas/TV.API.Types.Url'
-      title: 'Тип массива: Url[]'
-      description: '@see Url'
     Urls_2.Methods.Import.Add:
       type: object
       properties:
@@ -14361,6 +14838,69 @@ components:
       required:
         - id
       title: Смена тарифа со следующего месяца
+    Projects_2.Methods.Competitors.Move.Edit:
+      type: object
+      properties:
+        project_id:
+          title: ID проекта
+          type: integer
+        id:
+          title: ID конкурента
+          type: integer
+        to_id:
+          title: Переместить к указанному конкуренту
+          type: integer
+        to_type:
+          title: Позиция перемещения
+          description: |-
+            - before
+            - after
+          default: after
+          nullable: true
+          type: string
+      required:
+        - project_id
+        - id
+        - to_id
+      title: Перемещение конкурента (сортировка)
+    Projects_2.Methods.Competitors.Name.Edit:
+      type: object
+      properties:
+        project_id:
+          title: ID проекта
+          type: integer
+        id:
+          title: ID конкурента
+          type: integer
+        name:
+          title: Имя
+          type: string
+      required:
+        - project_id
+        - id
+        - name
+      title: Установка имени конкурента
+    Projects_2.Methods.Competitors.On.Edit:
+      type: object
+      properties:
+        project_id:
+          title: ID проекта
+          type: integer
+        ids:
+          title: ID конкурентов
+          allOf:
+            - $ref: '#/components/schemas/TV.API.Types.IntArray'
+        'on':
+          title: Активность проекта
+          description: |-
+            - -1 - выключен
+            - 0 - включен
+          type: integer
+      required:
+        - project_id
+        - ids
+        - 'on'
+      title: Включение/выключение конкурентов
     Projects_2.Methods.Folders.Move.Edit:
       type: object
       properties:
@@ -14403,6 +14943,55 @@ components:
         - id
         - name
       title: Изменение имени папки
+    Projects_2.Methods.Master.HintsCompetitors.Get:
+      type: object
+      properties:
+        project_id:
+          title: ID проекта
+          type: integer
+      required:
+        - project_id
+      title: Получить подсазки конкурентов для добавления в проект
+      description: Доступ по API закрыт
+    Projects_2.Methods.Master.HintsKeywords.Get:
+      type: object
+      properties:
+        project_id:
+          title: ID проекта
+          type: integer
+      required:
+        - project_id
+      title: |-
+        Получить подсазки запросов для добавления в проект
+        Доступ по API закрыт
+    Projects_2.Methods.Status.Registrar.Get:
+      type: object
+      properties:
+        domain:
+          title: Домен
+          allOf:
+            - $ref: '#/components/schemas/TV.API.Types.Url'
+      required:
+        - domain
+      title: Получение информации о регистрации домена
+      description: |-
+        Возвращает объект с параметрами:
+        - wait_time, если данные не готовы
+        - created, если данные готовы
+        - paidtill, если данные готовы
+    Projects_2.Methods.Status.Ssl.Get:
+      type: object
+      properties:
+        domain:
+          title: Домен
+          allOf:
+            - $ref: '#/components/schemas/TV.API.Types.Url'
+      required:
+        - domain
+      title: |-
+        Получение информации об SSL сертификате
+        Возваращает объект с параметрами:
+        - expire
     Tickets_2.Methods.Admin.Ticket.Edit:
       type: object
       properties:

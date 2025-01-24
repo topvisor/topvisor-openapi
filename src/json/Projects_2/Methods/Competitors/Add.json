@@ -1,0 +1,50 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Projects_2.Methods.Competitors.Add",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Projects_2.Methods.Competitors.Add": {
+                "type": "object",
+                "properties": {
+                    "project_id": {
+                        "title": "ID проекта",
+                        "type": "integer"
+                    },
+                    "urls": {
+                        "title": "Список url конкурентов",
+                        "allOf": [
+                            {
+                                "$ref": "../../../TV/API/Types/UrlShortArray.json#/components/schemas/TV.API.Types.UrlShortArray"
+                            }
+                        ]
+                    },
+                    "names": {
+                        "title": "Список имен конкурентов (если указан, должен быть такой же длины как urls)",
+                        "nullable": true,
+                        "type": "array",
+                        "items": {
+                            "oneOf": [
+                                {
+                                    "type": "string"
+                                },
+                                {
+                                    "type": "number"
+                                }
+                            ]
+                        }
+                    }
+                },
+                "required": [
+                    "project_id",
+                    "urls"
+                ],
+                "title": "Добавление конкурента",
+                "description": "Ограничения: не более Projects_2\\Competitors::MAX_COMPETITORS_PER_PROJECT конкурентов в одном проекте"
+            }
+        }
+    }
+}
