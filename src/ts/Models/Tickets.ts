@@ -14,6 +14,7 @@ export interface components {
             "READED(0)"?: any;
             "READED(1)"?: any;
             id?: any;
+            site?: any;
             user_id?: any;
             social_user_id?: any;
             type?: any;
@@ -53,7 +54,6 @@ export interface components {
             message_files?: any;
             message_time?: any;
             message_noticed?: any;
-            user_site?: any;
         };
     };
     responses: never;

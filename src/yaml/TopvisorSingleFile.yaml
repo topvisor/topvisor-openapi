@@ -10964,6 +10964,8 @@ components:
         READED(1):
           nullable: true
         id: {}
+        site:
+          nullable: true
         user_id:
           nullable: true
         social_user_id:
@@ -11041,8 +11043,6 @@ components:
         message_time:
           nullable: true
         message_noticed:
-          nullable: true
-        user_site:
           nullable: true
     Urls_2.Types.Export.Output:
       type: string

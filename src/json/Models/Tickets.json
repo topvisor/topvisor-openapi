@@ -25,6 +25,9 @@
                         "nullable": true
                     },
                     "id": {},
+                    "site": {
+                        "nullable": true
+                    },
                     "user_id": {
                         "nullable": true
                     },
@@ -140,9 +143,6 @@
                         "nullable": true
                     },
                     "message_noticed": {
-                        "nullable": true
-                    },
-                    "user_site": {
                         "nullable": true
                     }
                 }
