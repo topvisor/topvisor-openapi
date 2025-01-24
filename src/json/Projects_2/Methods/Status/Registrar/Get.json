@@ -14,7 +14,7 @@
                         "title": "Домен",
                         "allOf": [
                             {
-                                "$ref": "../../../../TV/API/Types/Url.json#/components/schemas/TV.API.Types.Url"
+                                "$ref": "../../../../TV/API/Types/UrlShort.json#/components/schemas/TV.API.Types.UrlShort"
                             }
                         ]
                     }

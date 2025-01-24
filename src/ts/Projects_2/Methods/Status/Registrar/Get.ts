@@ -16,7 +16,7 @@ export interface components {
          */
         "Projects_2.Methods.Status.Registrar.Get": {
             /** Домен */
-            domain: import('../../../../TV/API/Types/Url.ts').components['schemas']['TV.API.Types.Url'];
+            domain: import('../../../../TV/API/Types/UrlShort.ts').components['schemas']['TV.API.Types.UrlShort'];
         };
     };
     responses: never;

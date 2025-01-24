@@ -14970,7 +14970,7 @@ components:
         domain:
           title: Домен
           allOf:
-            - $ref: '#/components/schemas/TV.API.Types.Url'
+            - $ref: '#/components/schemas/TV.API.Types.UrlShort'
       required:
         - domain
       title: Получение информации о регистрации домена
