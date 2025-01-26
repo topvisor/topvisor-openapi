@@ -617,28 +617,28 @@
                         "const": "Do not run setup wizard"
                     },
                     "Setup_rank_tracker": {
-                        "const": "Set up rank tracking"
+                        "const": "Set up Rank Tracker"
                     },
                     "Setup_audit": {
-                        "const": "Set up site audit"
+                        "const": "Set up Website Audit"
                     },
                     "Setup_audit_urls": {
                         "const": "Pages for audit"
                     },
                     "Setup_watcher": {
-                        "const": "Set up site watcher"
+                        "const": "Set up Watcher"
                     },
                     "Setup_watcher_urls": {
                         "const": "Pages for watcher"
                     },
                     "Setup_indexing": {
-                        "const": "Set up site indexing"
+                        "const": "Set up Index Checker"
                     },
                     "Setup_indexing_urls": {
                         "const": "Pages for indexing"
                     },
                     "Setup_sitemap": {
-                        "const": "Set up sitemap generation"
+                        "const": "Set up Sitemap Generator"
                     },
                     "Add_all_recommended": {
                         "const": "Add all recommended"

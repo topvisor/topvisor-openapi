@@ -413,21 +413,21 @@ export interface components {
             /** @constant */
             Skip_wizard?: "Do not run setup wizard";
             /** @constant */
-            Setup_rank_tracker?: "Set up rank tracking";
+            Setup_rank_tracker?: "Set up Rank Tracker";
             /** @constant */
-            Setup_audit?: "Set up site audit";
+            Setup_audit?: "Set up Website Audit";
             /** @constant */
             Setup_audit_urls?: "Pages for audit";
             /** @constant */
-            Setup_watcher?: "Set up site watcher";
+            Setup_watcher?: "Set up Watcher";
             /** @constant */
             Setup_watcher_urls?: "Pages for watcher";
             /** @constant */
-            Setup_indexing?: "Set up site indexing";
+            Setup_indexing?: "Set up Index Checker";
             /** @constant */
             Setup_indexing_urls?: "Pages for indexing";
             /** @constant */
-            Setup_sitemap?: "Set up sitemap generation";
+            Setup_sitemap?: "Set up Sitemap Generator";
             /** @constant */
             Add_all_recommended?: "Add all recommended";
             /** @constant */
