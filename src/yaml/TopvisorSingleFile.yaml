@@ -1763,6 +1763,42 @@ paths:
             model:
               schema:
                 type: 'null'
+  /get/comments_2/author/:
+    post:
+      operationId: GetComments2Author
+      tags:
+        - Comments_2
+      summary: Получение комментариев автора. Без вложенности
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Comments_2.Methods.Author.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            type: array
+                            items:
+                              oneOf:
+                                - type: string
+                                - type: number
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                      - $ref: '#/components/schemas/Pagination'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
   /edit/comments_2/like/:
     post:
       operationId: EditComments2Like
@@ -10508,6 +10544,23 @@ components:
         - filters
         - offset
       title: Получение данных юридического лица по ИНН
+    Comments_2.Methods.Author.Get:
+      type: object
+      properties:
+        userId:
+          title: ID автора
+          type: integer
+        limit:
+          title: Лимит
+          type: integer
+        offset:
+          title: Отступ
+          type: integer
+      required:
+        - userId
+        - limit
+        - offset
+      title: Получение комментариев автора. Без вложенности
     Comments_2.Methods.Like.Edit:
       type: object
       properties:

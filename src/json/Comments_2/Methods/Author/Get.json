@@ -1,0 +1,35 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Comments_2.Methods.Author.Get",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Comments_2.Methods.Author.Get": {
+                "type": "object",
+                "properties": {
+                    "userId": {
+                        "title": "ID автора",
+                        "type": "integer"
+                    },
+                    "limit": {
+                        "title": "Лимит",
+                        "type": "integer"
+                    },
+                    "offset": {
+                        "title": "Отступ",
+                        "type": "integer"
+                    }
+                },
+                "required": [
+                    "userId",
+                    "limit",
+                    "offset"
+                ],
+                "title": "Получение комментариев автора. Без вложенности"
+            }
+        }
+    }
+}
