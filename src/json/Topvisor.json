@@ -7228,7 +7228,7 @@
                             },
                             "model": {
                                 "schema": {
-                                    "$ref": "Models/CronCommands.json#/components/schemas/Models.CronCommands",
+                                    "$ref": "Models/Admin/Staff.json#/components/schemas/Models.Admin.Staff",
                                     "description": "Only for typescript, does not contain real data"
                                 }
                             }

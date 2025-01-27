@@ -7187,7 +7187,7 @@ export interface operations {
                     "application/json": ({
                         result: number;
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: import('./Models/CronCommands.ts').components['schemas']['Models.CronCommands'];
+                    model: import('./Models/Admin/Staff.ts').components['schemas']['Models.Admin.Staff'];
                 };
             };
         };

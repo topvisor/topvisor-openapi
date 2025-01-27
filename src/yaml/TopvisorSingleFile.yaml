@@ -4017,7 +4017,7 @@ paths:
                   - $ref: '#/components/schemas/ResponseError'
             model:
               schema:
-                $ref: '#/components/schemas/Models.CronCommands'
+                $ref: '#/components/schemas/Models.Admin.Staff'
                 description: Only for typescript, does not contain real data
   /get/admin_2/staff/byPost/:
     post:
