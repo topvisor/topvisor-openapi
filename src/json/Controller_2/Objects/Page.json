@@ -147,7 +147,7 @@
                         "type": "string"
                     },
                     "tplPath": {
-                        "default": "pages/content.php",
+                        "default": "mods/content.php",
                         "type": "string"
                     },
                     "tplRendered": {
