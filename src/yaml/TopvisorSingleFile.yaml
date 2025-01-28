@@ -16076,11 +16076,18 @@ components:
     Projects_2.Methods.Projects.Sort.Edit:
       type: object
       properties:
+        orders:
+          type: array
+          items:
+            oneOf:
+              - type: string
+              - type: number
         filters:
           $ref: '#/components/schemas/filters'
         id:
           $ref: '#/components/schemas/id'
       required:
+        - orders
         - filters
       title: Изменение сортировки проектов
     Projects_2.Methods.Projects.Tags.Edit:

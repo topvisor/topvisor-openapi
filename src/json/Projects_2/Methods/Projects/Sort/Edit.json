@@ -10,6 +10,19 @@
             "Projects_2.Methods.Projects.Sort.Edit": {
                 "type": "object",
                 "properties": {
+                    "orders": {
+                        "type": "array",
+                        "items": {
+                            "oneOf": [
+                                {
+                                    "type": "string"
+                                },
+                                {
+                                    "type": "number"
+                                }
+                            ]
+                        }
+                    },
                     "filters": {
                         "$ref": "../../../../TV/API/Params/FiltersTrait.json#/components/schemas/TV.API.Params.FiltersTrait/properties/filters"
                     },
@@ -18,6 +31,7 @@
                     }
                 },
                 "required": [
+                    "orders",
                     "filters"
                 ],
                 "title": "Изменение сортировки проектов"
