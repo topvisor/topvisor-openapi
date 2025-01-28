@@ -12083,7 +12083,7 @@ components:
         url:
           title: Url проекта (домен или url страницы)
           allOf:
-            - $ref: '#/components/schemas/TV.API.Types.Url'
+            - $ref: '#/components/schemas/TV.API.Types.UrlShort'
         name:
           title: Имя проекта (по умолчанию равен url проекта)
           nullable: true

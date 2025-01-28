@@ -10,7 +10,7 @@ export interface components {
         /** Добавление проекта */
         "Projects_2.Methods.Projects.Add": {
             /** Url проекта (домен или url страницы) */
-            url: import('../../../TV/API/Types/Url.ts').components['schemas']['TV.API.Types.Url'];
+            url: import('../../../TV/API/Types/UrlShort.ts').components['schemas']['TV.API.Types.UrlShort'];
             /** Имя проекта (по умолчанию равен url проекта) */
             name?: string | null;
             /**

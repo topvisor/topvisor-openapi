@@ -14,7 +14,7 @@
                         "title": "Url проекта (домен или url страницы)",
                         "allOf": [
                             {
-                                "$ref": "../../../TV/API/Types/Url.json#/components/schemas/TV.API.Types.Url"
+                                "$ref": "../../../TV/API/Types/UrlShort.json#/components/schemas/TV.API.Types.UrlShort"
                             }
                         ]
                     },
