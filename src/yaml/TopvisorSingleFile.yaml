@@ -582,7 +582,8 @@ paths:
                   - allOf:
                       - type: object
                         properties:
-                          result: {}
+                          result:
+                            type: integer
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
@@ -866,7 +867,12 @@ paths:
                   - allOf:
                       - type: object
                         properties:
-                          result: {}
+                          result:
+                            type: array
+                            items:
+                              oneOf:
+                                - type: string
+                                - type: number
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
@@ -3874,7 +3880,12 @@ paths:
                   - allOf:
                       - type: object
                         properties:
-                          result: {}
+                          result:
+                            type: array
+                            items:
+                              oneOf:
+                                - type: string
+                                - type: number
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
@@ -5285,6 +5296,10 @@ paths:
                       - type: object
                         properties:
                           result:
+                            type: array
+                            items:
+                              $ref: '#/components/schemas/Models.Watcher.Results'
+                              description: Only for typescript, does not contain real data
                             title: Отчет по одному URL
                         required:
                           - result
@@ -5389,7 +5404,8 @@ paths:
                   - allOf:
                       - type: object
                         properties:
-                          result: {}
+                          result:
+                            type: boolean
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
@@ -5421,7 +5437,8 @@ paths:
                   - allOf:
                       - type: object
                         properties:
-                          result: {}
+                          result:
+                            type: boolean
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
@@ -6339,7 +6356,8 @@ paths:
                   - allOf:
                       - type: object
                         properties:
-                          result: {}
+                          result:
+                            type: integer
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'

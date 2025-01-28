@@ -845,7 +845,9 @@
                                                 {
                                                     "type": "object",
                                                     "properties": {
-                                                        "result": {}
+                                                        "result": {
+                                                            "type": "integer"
+                                                        }
                                                     },
                                                     "required": [
                                                         "result"
@@ -1368,7 +1370,19 @@
                                                 {
                                                     "type": "object",
                                                     "properties": {
-                                                        "result": {}
+                                                        "result": {
+                                                            "type": "array",
+                                                            "items": {
+                                                                "oneOf": [
+                                                                    {
+                                                                        "type": "string"
+                                                                    },
+                                                                    {
+                                                                        "type": "number"
+                                                                    }
+                                                                ]
+                                                            }
+                                                        }
                                                     },
                                                     "required": [
                                                         "result"
@@ -6959,7 +6973,19 @@
                                                 {
                                                     "type": "object",
                                                     "properties": {
-                                                        "result": {}
+                                                        "result": {
+                                                            "type": "array",
+                                                            "items": {
+                                                                "oneOf": [
+                                                                    {
+                                                                        "type": "string"
+                                                                    },
+                                                                    {
+                                                                        "type": "number"
+                                                                    }
+                                                                ]
+                                                            }
+                                                        }
                                                     },
                                                     "required": [
                                                         "result"
@@ -9543,6 +9569,11 @@
                                                     "type": "object",
                                                     "properties": {
                                                         "result": {
+                                                            "type": "array",
+                                                            "items": {
+                                                                "$ref": "Models/Watcher/Results.json#/components/schemas/Models.Watcher.Results",
+                                                                "description": "Only for typescript, does not contain real data"
+                                                            },
                                                             "title": "Отчет по одному URL"
                                                         }
                                                     },
@@ -9742,7 +9773,9 @@
                                                 {
                                                     "type": "object",
                                                     "properties": {
-                                                        "result": {}
+                                                        "result": {
+                                                            "type": "boolean"
+                                                        }
                                                     },
                                                     "required": [
                                                         "result"
@@ -9802,7 +9835,9 @@
                                                 {
                                                     "type": "object",
                                                     "properties": {
-                                                        "result": {}
+                                                        "result": {
+                                                            "type": "boolean"
+                                                        }
                                                     },
                                                     "required": [
                                                         "result"
@@ -11504,7 +11539,9 @@
                                                 {
                                                     "type": "object",
                                                     "properties": {
-                                                        "result": {}
+                                                        "result": {
+                                                            "type": "integer"
+                                                        }
                                                     },
                                                     "required": [
                                                         "result"

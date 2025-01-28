@@ -4836,7 +4836,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: unknown;
+                        result: number;
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -5074,7 +5074,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: unknown;
+                        result: (string | number)[];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -7475,7 +7475,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: unknown;
+                        result: (string | number)[];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -8557,7 +8557,7 @@ export interface operations {
                 content: {
                     "application/json": ({
                         /** Отчет по одному URL */
-                        result: unknown;
+                        result: import('./Models/Watcher/Results.ts').components['schemas']['Models.Watcher.Results'][];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: import('./Models/Watcher/Results.ts').components['schemas']['Models.Watcher.Results'];
                 };
@@ -8637,7 +8637,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: unknown;
+                        result: boolean;
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -8663,7 +8663,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: unknown;
+                        result: boolean;
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -9434,7 +9434,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: unknown;
+                        result: number;
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
