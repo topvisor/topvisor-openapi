@@ -1,0 +1,34 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Projects_2.Methods.Projects.Url.Edit",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Projects_2.Methods.Projects.Url.Edit": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "title": "ID проекта",
+                        "type": "integer"
+                    },
+                    "url": {
+                        "title": "Новая ссылка",
+                        "allOf": [
+                            {
+                                "$ref": "../../../../TV/API/Types/Url.json#/components/schemas/TV.API.Types.Url"
+                            }
+                        ]
+                    }
+                },
+                "required": [
+                    "id",
+                    "url"
+                ],
+                "title": "Редактирование ссылки проекта"
+            }
+        }
+    }
+}

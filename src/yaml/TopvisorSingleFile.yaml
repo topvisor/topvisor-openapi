@@ -2390,6 +2390,134 @@ paths:
             model:
               schema:
                 type: 'null'
+  /add/projects_2/analytics/:
+    post:
+      operationId: AddProjects2Analytics
+      tags:
+        - Projects_2
+      summary: Добавление графика
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Projects_2.Methods.Analytics.Add'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            type: integer
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
+  /del/projects_2/analytics/:
+    post:
+      operationId: DelProjects2Analytics
+      tags:
+        - Projects_2
+      summary: Удаление графика
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Projects_2.Methods.Analytics.Del'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            type: integer
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
+  /edit/projects_2/analytics/:
+    post:
+      operationId: EditProjects2Analytics
+      tags:
+        - Projects_2
+      summary: Настройка графика
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Projects_2.Methods.Analytics.Edit'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            type: integer
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
+  /get/projects_2/analytics/:
+    post:
+      operationId: GetProjects2Analytics
+      tags:
+        - Projects_2
+      summary: Получение списка графиков
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Projects_2.Methods.Analytics.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            type: array
+                            items:
+                              oneOf:
+                                - type: string
+                                - type: number
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
   /add/projects_2/competitors/:
     post:
       operationId: AddProjects2Competitors
@@ -2589,6 +2717,202 @@ paths:
               schema:
                 $ref: '#/components/schemas/Models.Projects.Folders'
                 description: Only for typescript, does not contain real data
+  /add/projects_2/projects/:
+    post:
+      operationId: AddProjects2Projects
+      tags:
+        - Projects_2
+      summary: Добавление проекта
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Projects_2.Methods.Projects.Add'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result: {}
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
+  /del/projects_2/projects/:
+    post:
+      operationId: DelProjects2Projects
+      tags:
+        - Projects_2
+      summary: Удаление проектов
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Projects_2.Methods.Projects.Del'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            type: integer
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                $ref: '#/components/schemas/Models.Projects'
+                description: Only for typescript, does not contain real data
+  /get/projects_2/projects/:
+    post:
+      operationId: GetProjects2Projects
+      tags:
+        - Projects_2
+      summary: Получение списка проектов
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Projects_2.Methods.Projects.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            type: array
+                            items:
+                              $ref: '#/components/schemas/Models.Projects'
+                              description: Only for typescript, does not contain real data
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                      - $ref: '#/components/schemas/Pagination'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                $ref: '#/components/schemas/Models.Projects'
+                description: Only for typescript, does not contain real data
+  /del/projects_2/rights/:
+    post:
+      operationId: DelProjects2Rights
+      tags:
+        - Projects_2
+      summary: Удаление прав у пользователя
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Projects_2.Methods.Rights.Del'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            type: integer
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
+  /edit/projects_2/rights/:
+    post:
+      operationId: EditProjects2Rights
+      tags:
+        - Projects_2
+      summary: Изменение прав на проект
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Projects_2.Methods.Rights.Edit'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            type: integer
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                      - $ref: '#/components/schemas/Pagination'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
+  /get/projects_2/rights/:
+    post:
+      operationId: GetProjects2Rights
+      tags:
+        - Projects_2
+      summary: Получение информации о настройке прав и смене владельца
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Projects_2.Methods.Rights.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            type: array
+                            items:
+                              oneOf:
+                                - type: string
+                                - type: number
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
   /get/projects_2/status/:
     post:
       operationId: GetProjects2Status
@@ -5419,6 +5743,41 @@ paths:
             model:
               schema:
                 type: 'null'
+  /get/projects_2/analytics/graph/:
+    post:
+      operationId: GetProjects2AnalyticsGraph
+      tags:
+        - Projects_2
+      summary: Получение данных графика
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Projects_2.Methods.Analytics.Graph.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            type: array
+                            items:
+                              oneOf:
+                                - type: string
+                                - type: number
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
   /edit/projects_2/competitors/move/:
     post:
       operationId: EditProjects2CompetitorsMove
@@ -5669,6 +6028,318 @@ paths:
                               oneOf:
                                 - type: string
                                 - type: number
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
+  /add/projects_2/projects/copy/:
+    post:
+      operationId: AddProjects2ProjectsCopy
+      tags:
+        - Projects_2
+      summary: Копирование проекта
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Projects_2.Methods.Projects.Copy.Add'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            type: string
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
+  /edit/projects_2/projects/favorite/:
+    post:
+      operationId: EditProjects2ProjectsFavorite
+      tags:
+        - Projects_2
+      summary: Настройка избранных проектов
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Projects_2.Methods.Projects.Favorite.Edit'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            type: integer
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                $ref: '#/components/schemas/Models.Projects'
+                description: Only for typescript, does not contain real data
+  /edit/projects_2/projects/move/:
+    post:
+      operationId: EditProjects2ProjectsMove
+      tags:
+        - Projects_2
+      summary: Перемещение проекта (сортировка)
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Projects_2.Methods.Projects.Move.Edit'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            type: integer
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
+  /edit/projects_2/projects/name/:
+    post:
+      operationId: EditProjects2ProjectsName
+      tags:
+        - Projects_2
+      summary: Установка имени проекта
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Projects_2.Methods.Projects.Name.Edit'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            type: integer
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
+  /edit/projects_2/projects/on/:
+    post:
+      operationId: EditProjects2ProjectsOn
+      tags:
+        - Projects_2
+      summary: Редактирование "on" проектов
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Projects_2.Methods.Projects.On.Edit'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            type: integer
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                $ref: '#/components/schemas/Models.Projects'
+                description: Only for typescript, does not contain real data
+  /edit/projects_2/projects/sort/:
+    post:
+      operationId: EditProjects2ProjectsSort
+      tags:
+        - Projects_2
+      summary: Изменение сортировки проектов
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Projects_2.Methods.Projects.Sort.Edit'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            type: integer
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                $ref: '#/components/schemas/Models.Projects'
+                description: Only for typescript, does not contain real data
+  /edit/projects_2/projects/tags/:
+    post:
+      operationId: EditProjects2ProjectsTags
+      tags:
+        - Projects_2
+      summary: Редактирование тегов проектов
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Projects_2.Methods.Projects.Tags.Edit'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            type: integer
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
+  /edit/projects_2/projects/url/:
+    post:
+      operationId: EditProjects2ProjectsUrl
+      tags:
+        - Projects_2
+      summary: Редактирование ссылки проекта
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Projects_2.Methods.Projects.Url.Edit'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            type: integer
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
+  /del/projects_2/rights/changeOwner/:
+    post:
+      operationId: DelProjects2RightsChangeOwner
+      tags:
+        - Projects_2
+      summary: Отмена передачи проекта
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Projects_2.Methods.Rights.ChangeOwner.Del'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            type: integer
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
+  /edit/projects_2/rights/changeOwner/:
+    post:
+      operationId: EditProjects2RightsChangeOwner
+      tags:
+        - Projects_2
+      summary: Инициализация передачи проекта другому пользователю
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Projects_2.Methods.Rights.ChangeOwner.Edit'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result: {}
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
@@ -11157,6 +11828,108 @@ components:
       required:
         - validation_url
       title: Валидация домена для подтверждения оплаты Apple Pay (system = card_ap)
+    Projects_2.Types.Analytics.Axe:
+      type: integer
+      enum:
+        - 1
+        - 2
+        - 3
+        - 4
+        - 11
+        - 12
+        - 13
+      title: Номер метрики
+    Projects_2.Types.Analytics.Base:
+      type: integer
+      enum:
+        - 1
+        - 11
+        - 13
+        - 2
+        - 3
+        - 6
+        - 4
+        - 5
+        - 12
+      title: Тип группировки
+    Projects_2.Methods.Analytics.Add:
+      type: object
+      properties:
+        project_id:
+          title: ID проекта
+          type: integer
+        axe:
+          title: Номер метрики
+          allOf:
+            - $ref: '#/components/schemas/Projects_2.Types.Analytics.Axe'
+        base_filter:
+          title: Тип группировки
+          allOf:
+            - $ref: '#/components/schemas/Projects_2.Types.Analytics.Base'
+        insert_after_id:
+          title: Id графика, после которого нужно вставить новый график
+          nullable: true
+          type: integer
+        narrow:
+          title: Маленький график
+          nullable: true
+          type: integer
+        share:
+          title: Сделать график доступным другим пользователям проекта (может настраивать только владелец проекта)
+          nullable: true
+          type: integer
+      required:
+        - project_id
+        - axe
+        - base_filter
+      title: Добавление графика
+    Projects_2.Methods.Analytics.Del:
+      type: object
+      properties:
+        id:
+          title: ID графика
+          type: integer
+      required:
+        - id
+      title: Удаление графика
+    Projects_2.Methods.Analytics.Edit:
+      type: object
+      properties:
+        id:
+          title: ID графика
+          type: integer
+        data:
+          title: Данные графика
+          nullable: true
+          type: string
+        insert_after_id:
+          title: Id графика, после которого нужно вставить новый график
+          nullable: true
+          type: integer
+        narrow:
+          title: Маленький график
+          nullable: true
+          type: integer
+        share:
+          title: Сделать график доступным другим пользователям проекта (может настраивать только владелец проекта)
+          nullable: true
+          type: integer
+      required:
+        - id
+      title: Настройка графика
+    Projects_2.Methods.Analytics.Get:
+      type: object
+      properties:
+        project_id:
+          title: ID проекта
+          type: integer
+        id:
+          title: ID
+          nullable: true
+          type: integer
+      required:
+        - project_id
+      title: Получение списка графиков
     TV.API.Types.UrlShort:
       type: string
       title: |-
@@ -11304,6 +12077,163 @@ components:
         - filters
         - offset
       title: Получение списка папок
+    Projects_2.Methods.Projects.Add:
+      type: object
+      properties:
+        url:
+          title: Url проекта (домен или url страницы)
+          allOf:
+            - $ref: '#/components/schemas/TV.API.Types.Url'
+        name:
+          title: Имя проекта (по умолчанию равен url проекта)
+          nullable: true
+          type: string
+        tags:
+          title: enum(1..10) tags - теги проекта (по умолчанию - [1])
+          default:
+            - 1
+          nullable: true
+          type: array
+          items:
+            oneOf:
+              - type: string
+              - type: number
+        folder_id:
+          title: Id папки, к которой будет привязан проект
+          nullable: true
+          type: integer
+        'on':
+          title: Активность проекта
+          nullable: true
+          type: integer
+      required:
+        - url
+      title: Добавление проекта
+    Projects_2.Methods.Projects.Del:
+      type: object
+      properties:
+        filters:
+          $ref: '#/components/schemas/filters'
+        id:
+          $ref: '#/components/schemas/id'
+      required:
+        - filters
+      title: Удаление проектов
+    Projects_2.Methods.Projects.Get:
+      type: object
+      properties:
+        show_owner_balance:
+          title: Добавить ли в результаты баланс владельца для гостевых проектов
+          nullable: true
+          type: boolean
+        show_site_stat:
+          title: Добавить ли в результат дополнительно собираемую инфомрацию (Яндекс ИКС)
+          nullable: true
+          type: boolean
+        show_searchers_and_regions:
+          title: Добавить в результат список ПС и Регионов, привязанных к проекту
+          description: |-
+            - 1 - включенные
+            - 2 - все
+          type: integer
+        include_positions_summary_params:
+          title: Добавить в результат сводку с указанными параметрами
+          description: Параметры см. positions_2::get/summary
+          nullable: true
+          type: array
+          items:
+            oneOf:
+              - type: string
+              - type: number
+        fields:
+          $ref: '#/components/schemas/fields'
+        orders:
+          $ref: '#/components/schemas/orders'
+        filters:
+          $ref: '#/components/schemas/filters'
+        id:
+          $ref: '#/components/schemas/id'
+        limit:
+          $ref: '#/components/schemas/limit'
+        offset:
+          $ref: '#/components/schemas/offset'
+        fetch_style:
+          $ref: '#/components/schemas/fetch_style'
+      required:
+        - fields
+        - orders
+        - filters
+        - offset
+      title: Получение списка проектов
+    Projects_2.Methods.Rights.Del:
+      type: object
+      properties:
+        email:
+          title: Email пользователя (если пользователь не зарегистрирован будет выслано приглашение)
+          allOf:
+            - $ref: '#/components/schemas/TV.API.Types.Email'
+        projects_ids:
+          title: Вместо project_ids можно укзывать project_id
+          nullable: true
+          type: array
+          items:
+            oneOf:
+              - type: string
+              - type: number
+        project_id:
+          title: |-
+            ID проекта
+            Вместо project_id можно укзывать projects_ids
+          nullable: true
+          type: integer
+      required:
+        - email
+      title: Удаление прав у пользователя
+    Projects_2.Methods.Rights.Edit:
+      type: object
+      properties:
+        projects_ids:
+          title: Вместо project_ids можно укзывать project_id
+          nullable: true
+          type: array
+          items:
+            oneOf:
+              - type: string
+              - type: number
+        email:
+          title: Email пользователя (если пользователь не зарегистрирован будет выслано приглашение)
+          allOf:
+            - $ref: '#/components/schemas/TV.API.Types.Email'
+        rights:
+          title: Побитовая маска прав
+          nullable: true
+          allOf:
+            - $ref: '#/components/schemas/TV.API.Types.BoolArray'
+        project_id:
+          title: ID проекта
+          description: Вместо project_id можно укзывать projects_ids
+          nullable: true
+          type: integer
+        user_name:
+          title: Имя гостевого пользователя, назначаемое хозяином проекта
+          nullable: true
+          type: string
+        limit:
+          title: Лимит трат пользователем в месяц
+          nullable: true
+          type: number
+      required:
+        - email
+      title: Изменение прав на проект
+    Projects_2.Methods.Rights.Get:
+      type: object
+      properties:
+        project_id:
+          title: ID проекта
+          type: integer
+      required:
+        - project_id
+      title: Получение информации о настройке прав и смене владельца
     Projects_2.Methods.Status.Get:
       type: object
       properties:
@@ -14891,6 +15821,32 @@ components:
       required:
         - id
       title: Смена тарифа со следующего месяца
+    Projects_2.Methods.Analytics.Graph.Get:
+      type: object
+      properties:
+        project_id:
+          title: ID проекта
+          type: integer
+        axe:
+          title: Номер метрики
+          allOf:
+            - $ref: '#/components/schemas/Projects_2.Types.Analytics.Axe'
+        data:
+          title: Данные графика
+          type: array
+          items:
+            oneOf:
+              - type: string
+              - type: number
+        compare_axe:
+          title: Сравнение метрики
+          nullable: true
+          type: integer
+      required:
+        - project_id
+        - axe
+        - data
+      title: Получение данных графика
     Projects_2.Methods.Competitors.Move.Edit:
       type: object
       properties:
@@ -15017,6 +15973,159 @@ components:
       title: |-
         Получить подсазки запросов для добавления в проект
         Доступ по API закрыт
+    Projects_2.Methods.Projects.Copy.Add:
+      type: object
+      properties:
+        project_id:
+          title: ID проекта
+          type: integer
+        copy_keywords:
+          title: Копировать ли запросы проекта
+          nullable: true
+          type: boolean
+        copy_positions:
+          title: Копировать ли позиции по запросам проекта (если copy_keywords = 1)
+          nullable: true
+          type: boolean
+      required:
+        - project_id
+      title: Копирование проекта
+    Projects_2.Methods.Projects.Favorite.Edit:
+      type: object
+      properties:
+        favorite:
+          title: Флаг того, что проект ибранный
+          default: true
+          type: boolean
+        filters:
+          $ref: '#/components/schemas/filters'
+        id:
+          $ref: '#/components/schemas/id'
+      required:
+        - filters
+      title: Настройка избранных проектов
+    Projects_2.Methods.Projects.Move.Edit:
+      type: object
+      properties:
+        id:
+          title: ID проекта
+          type: integer
+        to_id:
+          title: Переместить к указанному проекту
+          type: integer
+        to_type:
+          title: |-
+            Позиция перемещения:
+            - before
+            - after
+          default: after
+          nullable: true
+          type: string
+      required:
+        - id
+        - to_id
+      title: Перемещение проекта (сортировка)
+    Projects_2.Methods.Projects.Name.Edit:
+      type: object
+      properties:
+        name:
+          title: Новое имя проекта
+          type: string
+        id:
+          title: ID проекта
+          type: integer
+      required:
+        - name
+        - id
+      title: Установка имени проекта
+    Projects_2.Methods.Projects.On.Edit:
+      type: object
+      properties:
+        'on':
+          title: |-
+            Активность проекта
+            - -1 - архив
+            - 0 - обычный
+          type: integer
+        filters:
+          $ref: '#/components/schemas/filters'
+        id:
+          $ref: '#/components/schemas/id'
+      required:
+        - 'on'
+        - filters
+      title: Редактирование "on" проектов
+    Projects_2.Methods.Projects.Sort.Edit:
+      type: object
+      properties:
+        filters:
+          $ref: '#/components/schemas/filters'
+        id:
+          $ref: '#/components/schemas/id'
+      required:
+        - filters
+      title: Изменение сортировки проектов
+    Projects_2.Methods.Projects.Tags.Edit:
+      type: object
+      properties:
+        tags:
+          title: enum(1..10) tags - теги проекта (по умолчанию - [1])
+          default:
+            - 1
+          nullable: true
+          type: array
+          items:
+            oneOf:
+              - type: string
+              - type: number
+        id:
+          title: ID проекта
+          type: integer
+      required:
+        - id
+      title: Редактирование тегов проектов
+    Projects_2.Methods.Projects.Url.Edit:
+      type: object
+      properties:
+        id:
+          title: ID проекта
+          type: integer
+        url:
+          title: Новая ссылка
+          allOf:
+            - $ref: '#/components/schemas/TV.API.Types.Url'
+      required:
+        - id
+        - url
+      title: Редактирование ссылки проекта
+    Projects_2.Methods.Rights.ChangeOwner.Del:
+      type: object
+      properties:
+        project_id:
+          title: ID проекта
+          type: integer
+        email:
+          title: Почта
+          allOf:
+            - $ref: '#/components/schemas/TV.API.Types.Email'
+      required:
+        - project_id
+        - email
+      title: Отмена передачи проекта
+    Projects_2.Methods.Rights.ChangeOwner.Edit:
+      type: object
+      properties:
+        project_id:
+          title: ID проекта
+          type: integer
+        email:
+          title: Почта
+          allOf:
+            - $ref: '#/components/schemas/TV.API.Types.Email'
+      required:
+        - project_id
+        - email
+      title: Инициализация передачи проекта другому пользователю
     Projects_2.Methods.Status.Registrar.Get:
       type: object
       properties:
