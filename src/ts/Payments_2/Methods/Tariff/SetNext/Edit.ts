@@ -10,7 +10,7 @@ export interface components {
         /** Смена тарифа со следующего месяца */
         "Payments_2.Methods.Tariff.SetNext.Edit": {
             /** Id тарифа */
-            id: string;
+            id: number;
         };
     };
     responses: never;

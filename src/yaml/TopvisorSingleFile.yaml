@@ -15835,7 +15835,7 @@ components:
       properties:
         id:
           title: Id тарифа
-          type: string
+          type: integer
       required:
         - id
       title: Смена тарифа со следующего месяца

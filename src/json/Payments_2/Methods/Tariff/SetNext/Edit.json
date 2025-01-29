@@ -12,7 +12,7 @@
                 "properties": {
                     "id": {
                         "title": "Id тарифа",
-                        "type": "string"
+                        "type": "integer"
                     }
                 },
                 "required": [
