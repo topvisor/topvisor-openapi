@@ -9,8 +9,18 @@
         "schemas": {
             "I18n.Admin": {
                 "type": "object",
-                "properties": {},
-                "required": []
+                "properties": {
+                    "Warning_message": {
+                        "const": ""
+                    },
+                    "Warning_message_admin": {
+                        "const": ""
+                    }
+                },
+                "required": [
+                    "Warning_message",
+                    "Warning_message_admin"
+                ]
             }
         }
     }

@@ -7,7 +7,36 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        "I18n.Tpvsr": Record<string, never>;
+        "I18n.Tpvsr": {
+            /** @constant */
+            Link_deleted: "Link deleted";
+            /** @constant */
+            Show_deleted_links: "Show deleted links";
+            /** @constant */
+            Show_favorite_links: "Show favorite links";
+            /** @constant */
+            Remove_link: "Delete link";
+            /** @constant */
+            Recover_link: "Restore link";
+            /** @constant */
+            Set_favorite: "Star link";
+            /** @constant */
+            Link_cannot_be_shortened: "URL cannot be shorten.";
+            /** @constant */
+            Link_blocked_roskomnadzor: "URL cannot be shorten (4). URL blocked by Roskomnadzor.";
+            /** @constant */
+            Sort_name_desc: "Title Z-A";
+            /** @constant */
+            Sort_name_asc: "Title A-Z";
+            /** @constant */
+            Sort_clicks_desc: "Clicks descending";
+            /** @constant */
+            Sort_clicks_asc: "Clicks ascending";
+            /** @constant */
+            Sort_date_asc: "By date from oldest to newest";
+            /** @constant */
+            Sort_date_desc: "By date from newest to oldest";
+        };
     };
     responses: never;
     parameters: never;

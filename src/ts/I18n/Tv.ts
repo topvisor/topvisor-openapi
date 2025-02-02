@@ -7,7 +7,10 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        "I18n.Tv": Record<string, never>;
+        "I18n.Tv": {
+            /** @constant */
+            TV: "ТV";
+        };
     };
     responses: never;
     parameters: never;

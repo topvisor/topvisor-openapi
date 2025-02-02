@@ -7,7 +7,10 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        "I18n.Analytics": Record<string, never>;
+        "I18n.Analytics": {
+            /** @constant */
+            Text_confirm_delete_widget: "Are you sure you want to delete this widget?";
+        };
     };
     responses: never;
     parameters: never;

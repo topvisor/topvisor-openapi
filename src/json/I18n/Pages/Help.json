@@ -9,8 +9,22 @@
         "schemas": {
             "I18n.Pages.Help": {
                 "type": "object",
-                "properties": {},
-                "required": []
+                "properties": {
+                    "Contact_title": {
+                        "const": "Got any questions? Contact us"
+                    },
+                    "Contact_text": {
+                        "const": "If you didn't find what you looked for in the Help Center, contact Support Team via Ticket System {{ telegramBotText }}\nor email <a href='mailto:{{ supportEmail }}' target='_blank'>{{ supportEmail }}</a>. We'll show how to find and set up the tool you need and answer all other questions."
+                    },
+                    "Contact": {
+                        "const": "Contact us"
+                    }
+                },
+                "required": [
+                    "Contact_title",
+                    "Contact_text",
+                    "Contact"
+                ]
             }
         }
     }

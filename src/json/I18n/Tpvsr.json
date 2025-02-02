@@ -9,8 +9,66 @@
         "schemas": {
             "I18n.Tpvsr": {
                 "type": "object",
-                "properties": {},
-                "required": []
+                "properties": {
+                    "Link_deleted": {
+                        "const": "Link deleted"
+                    },
+                    "Show_deleted_links": {
+                        "const": "Show deleted links"
+                    },
+                    "Show_favorite_links": {
+                        "const": "Show favorite links"
+                    },
+                    "Remove_link": {
+                        "const": "Delete link"
+                    },
+                    "Recover_link": {
+                        "const": "Restore link"
+                    },
+                    "Set_favorite": {
+                        "const": "Star link"
+                    },
+                    "Link_cannot_be_shortened": {
+                        "const": "URL cannot be shorten."
+                    },
+                    "Link_blocked_roskomnadzor": {
+                        "const": "URL cannot be shorten (4). URL blocked by Roskomnadzor."
+                    },
+                    "Sort_name_desc": {
+                        "const": "Title Z-A"
+                    },
+                    "Sort_name_asc": {
+                        "const": "Title A-Z"
+                    },
+                    "Sort_clicks_desc": {
+                        "const": "Clicks descending"
+                    },
+                    "Sort_clicks_asc": {
+                        "const": "Clicks ascending"
+                    },
+                    "Sort_date_asc": {
+                        "const": "By date from oldest to newest"
+                    },
+                    "Sort_date_desc": {
+                        "const": "By date from newest to oldest"
+                    }
+                },
+                "required": [
+                    "Link_deleted",
+                    "Show_deleted_links",
+                    "Show_favorite_links",
+                    "Remove_link",
+                    "Recover_link",
+                    "Set_favorite",
+                    "Link_cannot_be_shortened",
+                    "Link_blocked_roskomnadzor",
+                    "Sort_name_desc",
+                    "Sort_name_asc",
+                    "Sort_clicks_desc",
+                    "Sort_clicks_asc",
+                    "Sort_date_asc",
+                    "Sort_date_desc"
+                ]
             }
         }
     }

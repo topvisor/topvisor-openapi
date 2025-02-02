@@ -9,8 +9,146 @@
         "schemas": {
             "I18n.Snapshots": {
                 "type": "object",
-                "properties": {},
-                "required": []
+                "properties": {
+                    "Snippets_in_snapshots": {
+                        "const": "Snippets in snapshots"
+                    },
+                    "No_snapshots_these_dates_note": {
+                        "const": "No Snapshots saved for the applied filters and dates"
+                    },
+                    "Snapshots_for_keyword": {
+                        "const": "Snapshots of"
+                    },
+                    "Add_keyword_to_see_snapshot": {
+                        "const": "Add keyword to display search results Snapshot"
+                    },
+                    "Add_keyword_to_compare": {
+                        "const": "Add keyword to compare Snapshots"
+                    },
+                    "not_in_competitor_list": {
+                        "const": "not on the competitor list"
+                    },
+                    "in_competitor_list": {
+                        "const": "on the competitor list"
+                    },
+                    "To_manage_competitors_move": {
+                        "const": "To manage competitor websites, move to the"
+                    },
+                    "move_to_settings": {
+                        "const": "Rank Tracker page and press a gear icon on the toolbar"
+                    },
+                    "Read_competitor_help_article": {
+                        "const": "For more details read the Help center article <a href=\"/support/dynamics/competitors/\" target=\"_blank\">How to manage competitor websites?</a>"
+                    },
+                    "Competitor_website": {
+                        "const": "Competitor website"
+                    },
+                    "Save_snapshot_top_N": {
+                        "const": "Save a snapshot of TOP"
+                    },
+                    "Do_not_save": {
+                        "const": "Don't save"
+                    },
+                    "selected_keywords_only": {
+                        "const": "selected keywords only"
+                    },
+                    "Saved_list": {
+                        "const": "Saved list"
+                    },
+                    "First_40_keywords": {
+                        "const": "First 40 keywords"
+                    },
+                    "Save_list": {
+                        "const": "Save list"
+                    },
+                    "Clear_list": {
+                        "const": "Clear list"
+                    },
+                    "Highlight": {
+                        "const": "Highlight"
+                    },
+                    "Hide_domains": {
+                        "const": "Gray out selected domains"
+                    },
+                    "Hide_domains_comment": {
+                        "const": "Selected domains will be grayed out to make snapshots data reader-friendly and easy to analyze"
+                    },
+                    "Highlighting_error": {
+                        "const": "Operation failed. Invalid domains: "
+                    },
+                    "Competitor_URLs": {
+                        "const": "Competitor URLs"
+                    },
+                    "Add_to_competitors": {
+                        "const": "Add to competitors"
+                    },
+                    "Remove_from_competitors": {
+                        "const": "Remove from competitors"
+                    },
+                    "Added_competitors": {
+                        "const": "Added competitors"
+                    },
+                    "Compare_all_keywords": {
+                        "const": "Compare all keywords"
+                    },
+                    "Keyword_dynamics": {
+                        "const": "Keyword dynamics"
+                    },
+                    "Select_keyword": {
+                        "const": "Select keyword"
+                    },
+                    "Snippets_no_checked": {
+                        "const": "<b>Snippets in Snapshots</b> weren't collected on the selected dates."
+                    },
+                    "Snippets_no_checking": {
+                        "const": "<b>Snippets in Snapshots</b> aren't being collected. Turn this feature on in the project's settings."
+                    },
+                    "Snapshots_checks_in_progress_1": {
+                        "const": "You haven't collected snapshots for selected filters"
+                    },
+                    "Snapshots_checks_in_progress_2": {
+                        "const": "Collect snapshots to see SERP TOPs for your keywords and your competitors' keywords.<br>Your keyword rankings will be checked when you collect snippets.<br>📊 <a href=\"/snapshots/\" target=\"_blank\">Why you need to check SERP Top →</a>"
+                    },
+                    "Open_keyword_snapshot": {
+                        "const": "Open keyword snapshot"
+                    }
+                },
+                "required": [
+                    "Snippets_in_snapshots",
+                    "No_snapshots_these_dates_note",
+                    "Snapshots_for_keyword",
+                    "Add_keyword_to_see_snapshot",
+                    "Add_keyword_to_compare",
+                    "not_in_competitor_list",
+                    "in_competitor_list",
+                    "To_manage_competitors_move",
+                    "move_to_settings",
+                    "Read_competitor_help_article",
+                    "Competitor_website",
+                    "Save_snapshot_top_N",
+                    "Do_not_save",
+                    "selected_keywords_only",
+                    "Saved_list",
+                    "First_40_keywords",
+                    "Save_list",
+                    "Clear_list",
+                    "Highlight",
+                    "Hide_domains",
+                    "Hide_domains_comment",
+                    "Highlighting_error",
+                    "Competitor_URLs",
+                    "Add_to_competitors",
+                    "Remove_from_competitors",
+                    "Added_competitors",
+                    "Compare_all_keywords",
+                    "Keyword_dynamics",
+                    "Select_keyword",
+                    "Snippets_no_checked",
+                    "Snippets_no_checking",
+                    "Snapshots_checks_in_progress_1",
+                    "Snapshots_checks_in_progress_2",
+                    "Open_keyword_snapshot"
+                ]
             }
         }
     }

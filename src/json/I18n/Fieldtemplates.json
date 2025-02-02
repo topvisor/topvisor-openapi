@@ -9,8 +9,50 @@
         "schemas": {
             "I18n.Fieldtemplates": {
                 "type": "object",
-                "properties": {},
-                "required": []
+                "properties": {
+                    "Title": {
+                        "const": "Manage columns"
+                    },
+                    "Column": {
+                        "const": "Column"
+                    },
+                    "Last_columns_list": {
+                        "const": "List of recent columns"
+                    },
+                    "Save_as_new_template": {
+                        "const": "Save as new template"
+                    },
+                    "save_changes": {
+                        "const": "save changes"
+                    },
+                    "Added_columns": {
+                        "const": "Added columns"
+                    },
+                    "Columns_settings": {
+                        "const": "Column settings"
+                    },
+                    "Delete_columns": {
+                        "const": "Delete columns"
+                    },
+                    "No_columns_added": {
+                        "const": "No columns added"
+                    },
+                    "Advanced_options": {
+                        "const": "Advanced options"
+                    }
+                },
+                "required": [
+                    "Title",
+                    "Column",
+                    "Last_columns_list",
+                    "Save_as_new_template",
+                    "save_changes",
+                    "Added_columns",
+                    "Columns_settings",
+                    "Delete_columns",
+                    "No_columns_added",
+                    "Advanced_options"
+                ]
             }
         }
     }

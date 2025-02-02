@@ -7,7 +7,26 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        "I18n.Votes": Record<string, never>;
+        "I18n.Votes": {
+            /** @constant */
+            Question_is_article_useful: "Have you found what you were looking for?";
+            /** @constant */
+            Message_after_good_vote: "Thanks for the feedback! You can leave a comment below, but it's optional. You may write something nice.";
+            /** @constant */
+            Message_after_bad_vote: "Напишите, что вы искали, — мы поможем вам, а также постараемся добавить это в руководство.";
+            /** @constant */
+            Question_after_good_vote: "What did you like most?";
+            /** @constant */
+            Question_after_bad_vote: "What's been lacking in this guide?";
+            /** @constant */
+            Message_after_comment_good_vote: "We'll keep this up!";
+            /** @constant */
+            Message_after_comment_bad_vote: "We'll improve our service.";
+            /** @constant */
+            Submit: "Leave feedback";
+            /** @constant */
+            SendTicket: "Отправить тикет";
+        };
     };
     responses: never;
     parameters: never;

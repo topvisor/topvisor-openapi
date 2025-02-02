@@ -7,7 +7,22 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        "I18n.Sitemap": Record<string, never>;
+        "I18n.Sitemap": {
+            /** @constant */
+            Settings: "Tool settings";
+            /** @constant */
+            Popup_go_text_before_select: "Sitemap for <a href=\"#\" class=\"domain\" target=\"_blank\"></a> will contain up to:";
+            /** @constant */
+            Popup_go_text_before_price: "Project owner will be charged:";
+            /** @constant */
+            Max_pages: "MAX number of pages";
+            /** @constant */
+            Info_cost: "You will be charged";
+            /** @constant */
+            Hint_not_checks_text: "Sitemap hasn't  been generated yet.<br>🗺️ <a href=\"/support/sitemap/\" target=\"_blank\">Why you need to generate sitemap →</a>";
+            /** @constant */
+            Hint_not_checks_btn: "Generate sitemap";
+        };
     };
     responses: never;
     parameters: never;

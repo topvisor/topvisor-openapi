@@ -9,8 +9,14 @@
         "schemas": {
             "I18n.Landings": {
                 "type": "object",
-                "properties": {},
-                "required": []
+                "properties": {
+                    "No_card_needed": {
+                        "const": "No card needed"
+                    }
+                },
+                "required": [
+                    "No_card_needed"
+                ]
             }
         }
     }

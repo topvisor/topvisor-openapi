@@ -7,7 +7,24 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        "I18n.Projects.CheckButton": Record<string, never>;
+        "I18n.Projects.CheckButton": {
+            /** @constant */
+            Check_positions: "Check Rankings";
+            /** @constant */
+            Check_audit: "Run Audit";
+            /** @constant */
+            Check_watcher: "Track changes";
+            /** @constant */
+            Check_indexing: "Check indexing";
+            /** @constant */
+            Check_sitemap: "Generate sitemap";
+            /** @constant */
+            Last_check: "Last check";
+            /** @constant */
+            In_queue: "In queue";
+            /** @constant */
+            In_work: "In progress";
+        };
     };
     responses: never;
     parameters: never;

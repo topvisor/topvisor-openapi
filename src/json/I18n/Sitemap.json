@@ -9,8 +9,38 @@
         "schemas": {
             "I18n.Sitemap": {
                 "type": "object",
-                "properties": {},
-                "required": []
+                "properties": {
+                    "Settings": {
+                        "const": "Tool settings"
+                    },
+                    "Popup_go_text_before_select": {
+                        "const": "Sitemap for <a href=\"#\" class=\"domain\" target=\"_blank\"></a> will contain up to:"
+                    },
+                    "Popup_go_text_before_price": {
+                        "const": "Project owner will be charged:"
+                    },
+                    "Max_pages": {
+                        "const": "MAX number of pages"
+                    },
+                    "Info_cost": {
+                        "const": "You will be charged"
+                    },
+                    "Hint_not_checks_text": {
+                        "const": "Sitemap hasn't  been generated yet.<br>🗺️ <a href=\"/support/sitemap/\" target=\"_blank\">Why you need to generate sitemap →</a>"
+                    },
+                    "Hint_not_checks_btn": {
+                        "const": "Generate sitemap"
+                    }
+                },
+                "required": [
+                    "Settings",
+                    "Popup_go_text_before_select",
+                    "Popup_go_text_before_price",
+                    "Max_pages",
+                    "Info_cost",
+                    "Hint_not_checks_text",
+                    "Hint_not_checks_btn"
+                ]
             }
         }
     }

@@ -9,8 +9,103 @@
         "schemas": {
             "I18n.Watcher": {
                 "type": "object",
-                "properties": {},
-                "required": []
+                "properties": {
+                    "Settings": {
+                        "const": "Watcher settings"
+                    },
+                    "menu": {
+                        "const": {
+                            "http_codes": "HTTP Code",
+                            "title": "Title",
+                            "description": "Description",
+                            "h1": "H1 Header",
+                            "content": "Content"
+                        }
+                    },
+                    "Status_code": {
+                        "const": "Status"
+                    },
+                    "Without_changes": {
+                        "const": "Without changes"
+                    },
+                    "Fulltext": {
+                        "const": "Full text"
+                    },
+                    "Only_with_changed": {
+                        "const": "With changes"
+                    },
+                    "Header_start_short": {
+                        "const": "Track"
+                    },
+                    "Common_settings": {
+                        "const": "Common settings"
+                    },
+                    "Tracking": {
+                        "const": "Tracking"
+                    },
+                    "Cut_script": {
+                        "const": "Cut &lt;script&gt;"
+                    },
+                    "Scan_method": {
+                        "const": "Scan method"
+                    },
+                    "Strip_tags": {
+                        "const": "Text only / Cut tags"
+                    },
+                    "Change_history": {
+                        "const": "Change history: "
+                    },
+                    "Hints_settings": {
+                        "const": {
+                            "watcher_max_redirects": "",
+                            "watcher_user_agent": "User Agent can affect how the bot sees the site and how DDoS protection works.",
+                            "audit_page_delay": "",
+                            "audit_resource_delay": "",
+                            "audit_use_cookie": "Turn this feature on, if your DDoS protection uses cookies.<br><br>But it may cause more personalized information in checks and they could be distorted.",
+                            "server_location": "Change server location to access blocked websites.",
+                            "watcher_ignore_js": "",
+                            "watcher_types": {
+                                "title": "",
+                                "description": "",
+                                "h1": "",
+                                "content": ""
+                            },
+                            "watcher_strip_tags_from_result": ""
+                        }
+                    },
+                    "Hint_not_urls_text": {
+                        "const": "Add URLs to launch Watcher.<br>📡 <a href=\"/watcher/\" target=\"_blank\">How Website Watcher can help you →</a>"
+                    },
+                    "Hint_not_urls_btn": {
+                        "const": "URLs"
+                    },
+                    "Hint_not_checks_text": {
+                        "const": "You've never launched Watcher in this project.<br>📡 <a href=\"/watcher/\" target=\"_blank\">How Website Watcher can help you →</a>"
+                    },
+                    "Hint_not_checks_btn": {
+                        "const": "Launch Watcher"
+                    }
+                },
+                "required": [
+                    "Settings",
+                    "menu",
+                    "Status_code",
+                    "Without_changes",
+                    "Fulltext",
+                    "Only_with_changed",
+                    "Header_start_short",
+                    "Common_settings",
+                    "Tracking",
+                    "Cut_script",
+                    "Scan_method",
+                    "Strip_tags",
+                    "Change_history",
+                    "Hints_settings",
+                    "Hint_not_urls_text",
+                    "Hint_not_urls_btn",
+                    "Hint_not_checks_text",
+                    "Hint_not_checks_btn"
+                ]
             }
         }
     }
