@@ -836,7 +836,7 @@
                         "const": "Do not overwrite assigned target links"
                     },
                     "Sy_wordstat_max_pages": {
-                        "const": "MAX pages"
+                        "const": "Количество страниц (макс.)"
                     },
                     "Research_status": {
                         "const": "Keyword research status"

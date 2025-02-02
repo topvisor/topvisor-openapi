@@ -923,7 +923,7 @@ export interface components {
             /** @constant */
             Bar_pin?: "Pin bar";
             /** @constant */
-            Count?: "number";
+            Count?: "Number";
             /** @constant */
             Invalid_url?: "Invalid URL format";
             /** @constant */
@@ -946,6 +946,8 @@ export interface components {
             Press_to_copy_2?: "+C to copy a link";
             /** @constant */
             Guest_link_created?: "Guest link created";
+            /** @constant */
+            Need_fill_required_fields?: "Пожалуйста, запоните необходимые поля";
         };
     };
     responses: never;

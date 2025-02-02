@@ -559,7 +559,7 @@ export interface components {
             /** @constant */
             Do_not_overwrite_assigned_target_links?: "Do not overwrite assigned target links";
             /** @constant */
-            Sy_wordstat_max_pages?: "MAX pages";
+            Sy_wordstat_max_pages?: "Количество страниц (макс.)";
             /** @constant */
             Research_status?: "Keyword research status";
             /** @constant */
