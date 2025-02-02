@@ -8,9 +8,9 @@
 	},
 	"dependencies": {
 		"fs": "^0.0.1-security",
-		"openapi-typescript": "^7.3.3",
+		"openapi-typescript": "^7.6.1",
 		"path": "^0.12.7",
 		"path-normalize": "^6.0.13",
-		"yaml": "^2.4.5"
+		"yaml": "^2.7.0"
 	}
 }
