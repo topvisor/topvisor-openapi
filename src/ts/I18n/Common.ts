@@ -947,7 +947,7 @@ export interface components {
             /** @constant */
             Guest_link_created?: "Guest link created";
             /** @constant */
-            Need_fill_required_fields?: "Пожалуйста, запоните необходимые поля";
+            Need_fill_required_fields?: "Please fill in all required fields";
         };
     };
     responses: never;

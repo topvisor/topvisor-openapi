@@ -1418,7 +1418,7 @@
                         "const": "Guest link created"
                     },
                     "Need_fill_required_fields": {
-                        "const": "Пожалуйста, запоните необходимые поля"
+                        "const": "Please fill in all required fields"
                     }
                 },
                 "required": []
