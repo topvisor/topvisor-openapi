@@ -41,7 +41,18 @@
                         "const": "Advanced options"
                     }
                 },
-                "required": []
+                "required": [
+                    "Title",
+                    "Column",
+                    "Last_columns_list",
+                    "Save_as_new_template",
+                    "save_changes",
+                    "Added_columns",
+                    "Columns_settings",
+                    "Delete_columns",
+                    "No_columns_added",
+                    "Advanced_options"
+                ]
             }
         }
     }

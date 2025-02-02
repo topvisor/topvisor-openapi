@@ -68,7 +68,27 @@
                         "const": "Index updated on"
                     }
                 },
-                "required": []
+                "required": [
+                    "SERP_update_score",
+                    "confirmed_Yandex",
+                    "Calendar",
+                    "Informer",
+                    "Yandex_search_base_update",
+                    "SERP_changes",
+                    "Text_update",
+                    "Index_updated",
+                    "Comments",
+                    "Add_comment",
+                    "Sign_in_to_leave_comments",
+                    "Subscribe",
+                    "points",
+                    "Update",
+                    "Updates_calendar",
+                    "Yandex_update",
+                    "Yandex_text_update",
+                    "Yandex_SERP_update",
+                    "Index_updated_on"
+                ]
             }
         }
     }

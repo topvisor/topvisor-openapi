@@ -9,31 +9,31 @@ export interface components {
     schemas: {
         "I18n.Landings.Price": {
             /** @constant */
-            Depth?: "depth";
+            Depth: "depth";
             /** @constant */
-            of_results?: "results";
+            of_results: "results";
             /** @constant */
-            of_keywords?: "keywords";
+            of_keywords: "keywords";
             /** @constant */
-            of_pages?: "URLs";
+            of_pages: "URLs";
             /** @constant */
-            up_to?: "up to";
+            up_to: "up to";
             /** @constant */
-            from?: "from";
+            from: "from";
             /** @constant */
-            Without_discount?: "No discount";
+            Without_discount: "No discount";
             /** @constant */
-            What_is_a_tariff?: "What is a pricing plan (tariff)?";
+            What_is_a_tariff: "What is a pricing plan (tariff)?";
             /** @constant */
-            Rank_tracker_and_collecting_TOP?: "Rank Tracking and SERP Top";
+            Rank_tracker_and_collecting_TOP: "Rank Tracking and SERP Top";
             /** @constant */
-            Semantics?: "Semantics";
+            Semantics: "Semantics";
             /** @constant */
-            Technical_Seo?: "Technical SEO";
+            Technical_Seo: "Technical SEO";
             /** @constant */
-            Yandex_direct?: "Yandex Direct";
+            Yandex_direct: "Yandex Direct";
             /** @constant */
-            Account?: "Account";
+            Account: "Account";
         };
     };
     responses: never;

@@ -53,7 +53,23 @@
                         "const": "By date from newest to oldest"
                     }
                 },
-                "required": []
+                "required": [
+                    "Link_deleted",
+                    "Show_deleted_links",
+                    "Show_favorite_links",
+                    "Remove_link",
+                    "Recover_link",
+                    "Set_favorite",
+                    "Link_cannot_be_shortened",
+                    "Link_blocked_roskomnadzor",
+                    "Sort_name_desc",
+                    "Sort_name_asc",
+                    "Sort_clicks_desc",
+                    "Sort_clicks_asc",
+                    "Sort_date_asc",
+                    "Sort_date_desc",
+                    "Limit_exceeded"
+                ]
             }
         }
     }

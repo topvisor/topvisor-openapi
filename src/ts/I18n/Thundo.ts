@@ -9,9 +9,9 @@ export interface components {
     schemas: {
         "I18n.Thundo": {
             /** @constant */
-            Og_title?: "Thunder is coming";
+            Og_title: "Thunder is coming";
             /** @constant */
-            Og_description?: "Fasten your seatbelts, we're about to transform the view of how to do SEO!";
+            Og_description: "Fasten your seatbelts, we're about to transform the view of how to do SEO!";
         };
     };
     responses: never;

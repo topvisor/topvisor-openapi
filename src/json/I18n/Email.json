@@ -92,7 +92,35 @@
                         "const": "Pyment has been received"
                     }
                 },
-                "required": []
+                "required": [
+                    "User_registration_confirm",
+                    "User_accept_email_title",
+                    "user_accept_email_title_suffix_recommendations",
+                    "User_PWD_msg_title2",
+                    "User_restore_access",
+                    "User_project_access",
+                    "User_registration_invite_mail_title",
+                    "User_change_confirm",
+                    "User_email_changed_msg",
+                    "User_projects_rights_title",
+                    "User_projects_changeOwner_title",
+                    "Integration_expires",
+                    "Integration_has_expired1",
+                    "Integration_has_expired2",
+                    "Integration_access_error",
+                    "Project_report",
+                    "Indexing_informer_title",
+                    "Watcher_informer_title",
+                    "Sitemap_changes_to_sitemap_email",
+                    "Audit_informer_title",
+                    "Total_indexed",
+                    "Dropped_from_index",
+                    "Got_indexed",
+                    "Tariff_due_to_expire",
+                    "Dogovor",
+                    "Ur_balance",
+                    "Payment_received"
+                ]
             }
         }
     }

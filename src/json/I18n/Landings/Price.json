@@ -50,7 +50,23 @@
                         "const": "Account"
                     }
                 },
-                "required": []
+                "required": [
+                    "Depth",
+                    "of_results",
+                    "of_keywords",
+                    "of_pages",
+                    "up_to",
+                    "from",
+                    "Without_discount",
+                    "What_is_a_tariff",
+                    "Rank_tracker_and_collecting_TOP",
+                    "Semantics",
+                    "Technical_Seo",
+                    "Yandex_direct",
+                    "Account",
+                    "No_discount_on_tools",
+                    "On_all_tools"
+                ]
             }
         }
     }

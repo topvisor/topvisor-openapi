@@ -32,7 +32,15 @@
                         "const": "place"
                     }
                 },
-                "required": []
+                "required": [
+                    "Best_cases",
+                    "Main_competition",
+                    "Special_nominations",
+                    "Nomination",
+                    "Place",
+                    "Case_and_author",
+                    "place"
+                ]
             }
         }
     }

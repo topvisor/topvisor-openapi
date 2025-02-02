@@ -9,317 +9,317 @@ export interface components {
     schemas: {
         "I18n.Audit": {
             /** @constant */
-            Audit?: "Website audit";
+            Audit: "Website audit";
             /** @constant */
-            Indexing?: "Index status";
+            Indexing: "Index status";
             /** @constant */
-            Watcher?: "Website watcher";
+            Watcher: "Website watcher";
             /** @constant */
-            No_results?: "You haven't checked your website yet";
+            No_results: "You haven't checked your website yet";
             /** @constant */
-            Process_text?: "Scanning";
+            Process_text: "Scanning";
             /** @constant */
-            Header_h1?: "H1 Header";
+            Header_h1: "H1 Header";
             /** @constant */
-            Menu?: "Website SEO audit";
+            Menu: "Website SEO audit";
             /** @constant */
-            Associated_pages?: "Associated pages";
+            Associated_pages: "Associated pages";
             /** @constant */
-            String_length_short?: "Symb. count";
+            String_length_short: "Symb. count";
             /** @constant */
-            Filter_all?: "All";
+            Filter_all: "All";
             /** @constant */
-            Filter_with_warnings_or_errors?: "All with issues";
+            Filter_with_warnings_or_errors: "All with issues";
             /** @constant */
-            Filter_with_warnings?: "With warnings";
+            Filter_with_warnings: "With warnings";
             /** @constant */
-            Filter_with_errors?: "With errors";
+            Filter_with_errors: "With errors";
             /** @constant */
-            Filter_checks_changed?: "What's new";
+            Filter_checks_changed: "What's new";
             /** @constant */
-            Links_inner?: "Internal links";
+            Links_inner: "Internal links";
             /** @constant */
-            Links_external?: "External links";
+            Links_external: "External links";
             /** @constant */
-            Pages_to_check?: "Pages to check";
+            Pages_to_check: "Pages to check";
             /** @constant */
-            Generated_sitemap?: "Generated sitemap";
+            Generated_sitemap: "Generated sitemap";
             /** @constant */
-            Sitemap_not_found?: "Sitemap not found";
+            Sitemap_not_found: "Sitemap not found";
             /** @constant */
-            Sitemap_already_started_error?: "Sitemap already started";
+            Sitemap_already_started_error: "Sitemap already started";
             /** @constant */
-            Sitemap_gen?: "Sitemap generator";
+            Sitemap_gen: "Sitemap generator";
             /** @constant */
-            pages?: "pages";
+            pages: "pages";
             /** @constant */
-            Site_size?: "Web page count";
+            Site_size: "Web page count";
             /** @constant */
-            Header_start_short?: "Scan";
+            Header_start_short: "Scan";
             /** @constant */
-            Step1_gen?: "Generate";
+            Step1_gen: "Generate";
             /** @constant */
-            Step1_gen_notice?: "A valid map can be generated only with a valid robots.txt";
+            Step1_gen_notice: "A valid map can be generated only with a valid robots.txt";
             /** @constant */
-            Sitemap_bank_info?: "Sitemap generation for";
+            Sitemap_bank_info: "Sitemap generation for";
             /** @constant */
-            Audit_bank_info?: "Project audit for";
+            Audit_bank_info: "Project audit for";
             /** @constant */
-            Report?: "Report";
+            Report: "Report";
             /** @constant */
-            Header_browse?: "Summary";
+            Header_browse: "Summary";
             /** @constant */
-            Header_common?: "Common";
+            Header_common: "Common";
             /** @constant */
-            Count_pages_checked?: "Scanned pages";
+            Count_pages_checked: "Scanned pages";
             /** @constant */
-            Header_notices?: "Warnings";
+            Header_notices: "Warnings";
             /** @constant */
-            Header_warnings?: "Issues";
+            Header_warnings: "Issues";
             /** @constant */
-            Www_redirect?: "Redirects between";
+            Www_redirect: "Redirects between";
             /** @constant */
-            robots_txt_blocked?: "blocked by robots.txt";
+            robots_txt_blocked: "blocked by robots.txt";
             /** @constant */
-            refresh_redirect?: "blocked by <i>&lt;meta http-equiv=\"refresh\"&gt;</i>";
+            refresh_redirect: "blocked by <i>&lt;meta http-equiv=\"refresh\"&gt;</i>";
             /** @constant */
-            noindex?: "blocked by <i>&lt;meta name=\"robots\" content=\"noindex\"&gt;</i>";
+            noindex: "blocked by <i>&lt;meta name=\"robots\" content=\"noindex\"&gt;</i>";
             /** @constant */
-            redirect?: "redirects detected";
+            redirect: "redirects detected";
             /** @constant */
-            index_broken?: "loading error / incorrect server response code (for example, 404, 503)";
+            index_broken: "loading error / incorrect server response code (for example, 404, 503)";
             /** @constant */
-            title_empty?: "title is missing";
+            title_empty: "title is missing";
             /** @constant */
-            title_size?: "too short / long title";
+            title_size: "too short / long title";
             /** @constant */
-            title_dbl?: "duplicate title";
+            title_dbl: "duplicate title";
             /** @constant */
-            description_empty?: "description is missing";
+            description_empty: "description is missing";
             /** @constant */
-            description_size?: "too short / long description";
+            description_size: "too short / long description";
             /** @constant */
-            description_dbl?: "duplicate description";
+            description_dbl: "duplicate description";
             /** @constant */
-            links_empty_content?: "anchor or alternative (attribute <i>title=\"...\"</i>) text is missing";
+            links_empty_content: "anchor or alternative (attribute <i>title=\"...\"</i>) text is missing";
             /** @constant */
-            nofollow?: "attribute <i>rel=\"nofollow\"</i> is used";
+            nofollow: "attribute <i>rel=\"nofollow\"</i> is used";
             /** @constant */
-            links_broken?: "broken links";
+            links_broken: "broken links";
             /** @constant */
-            no_title?: "alternative text (attribute <i>alt=\"...\"</i>) is missing";
+            no_title: "alternative text (attribute <i>alt=\"...\"</i>) is missing";
             /** @constant */
-            images_broken?: "\"broken\" image";
+            images_broken: "\"broken\" image";
             /** @constant */
-            h1_empty?: "empty or missing H1 tag";
+            h1_empty: "empty or missing H1 tag";
             /** @constant */
-            no_lastmod?: "Last-Modified is missing";
+            no_lastmod: "Last-Modified is missing";
             /** @constant */
-            no_lastmod_since?: "If-Modified-Since not processed";
+            no_lastmod_since: "If-Modified-Since not processed";
             /** @constant */
-            Header_index?: "Index status";
+            Header_index: "Index status";
             /** @constant */
-            Status_code?: "Response code";
+            Status_code: "Response code";
             /** @constant */
-            Robots_txt_blocked_short?: "Blocked robots.txt";
+            Robots_txt_blocked_short: "Blocked robots.txt";
             /** @constant */
-            Header_snippet?: "Snippet";
+            Header_snippet: "Snippet";
             /** @constant */
-            Description?: "Meta-description (description)";
+            Description: "Meta-description (description)";
             /** @constant */
-            Snippet_title_dbl?: "Duplicate titles";
+            Snippet_title_dbl: "Duplicate titles";
             /** @constant */
-            Snippet_description_dbl?: "Duplicate descriptions";
+            Snippet_description_dbl: "Duplicate descriptions";
             /** @constant */
-            Header_links?: "Links";
+            Header_links: "Links";
             /** @constant */
-            Link_type?: "Type";
+            Link_type: "Type";
             /** @constant */
-            Link_content?: "Text (anchor)";
+            Link_content: "Text (anchor)";
             /** @constant */
-            Link_title?: "Text (title)";
+            Link_title: "Text (title)";
             /** @constant */
-            Link_pages?: "Pages";
+            Link_pages: "Pages";
             /** @constant */
-            Link_broken?: "\"Broken\"";
+            Link_broken: "\"Broken\"";
             /** @constant */
-            Link_image?: "Image";
+            Link_image: "Image";
             /** @constant */
-            Link_image2?: "Image";
+            Link_image2: "Image";
             /** @constant */
-            Link_text?: "Text";
+            Link_text: "Text";
             /** @constant */
-            Watcher_send_to_informer?: "Notification Center";
+            Watcher_send_to_informer: "Notification Center";
             /** @constant */
-            Generate_sitemap?: "Generate sitemap";
+            Generate_sitemap: "Generate sitemap";
             /** @constant */
-            Sitemap_generation?: "Sitemap generator";
+            Sitemap_generation: "Sitemap generator";
             /** @constant */
-            Sitemap_uploading?: "Sitemap uploader";
+            Sitemap_uploading: "Sitemap uploader";
             /** @constant */
-            Header_images?: "Images";
+            Header_images: "Images";
             /** @constant */
-            Image_alt?: "Alt-text";
+            Image_alt: "Alt-text";
             /** @constant */
-            Image_pages?: "Pages";
+            Image_pages: "Pages";
             /** @constant */
-            Image_size?: "Size";
+            Image_size: "Size";
             /** @constant */
-            Image_broken?: "\"Broken\"";
+            Image_broken: "\"Broken\"";
             /** @constant */
-            Header_content?: "Content";
+            Header_content: "Content";
             /** @constant */
-            Title_page?: "Page title (Title)";
+            Title_page: "Page title (Title)";
             /** @constant */
-            Header_pages_short?: "List of pages";
+            Header_pages_short: "List of pages";
             /** @constant */
-            Header_page?: "Page audit";
+            Header_page: "Page audit";
             /** @constant */
-            Page_to_disallow?: "Skip the page in the next reports";
+            Page_to_disallow: "Skip the page in the next reports";
             /** @constant */
-            Page_to_disallow_ok?: "The page will be skipped in the next reports";
+            Page_to_disallow_ok: "The page will be skipped in the next reports";
             /** @constant */
-            Page_redirects?: "Redirects";
+            Page_redirects: "Redirects";
             /** @constant */
-            Page_code?: "Page response code";
+            Page_code: "Page response code";
             /** @constant */
-            Page_robots_txt_blocked?: "Blocked by Robots.txt";
+            Page_robots_txt_blocked: "Blocked by Robots.txt";
             /** @constant */
-            Page_nofollow?: "Contains meta robots nofollow";
+            Page_nofollow: "Contains meta robots nofollow";
             /** @constant */
-            Page_noindex?: "Blocked by meta robots noindex";
+            Page_noindex: "Blocked by meta robots noindex";
             /** @constant */
-            Page_canonical?: "Contains rel=\"canonical\"";
+            Page_canonical: "Contains rel=\"canonical\"";
             /** @constant */
-            Page_alternate?: "Contains rel=\"alternate\"";
+            Page_alternate: "Contains rel=\"alternate\"";
             /** @constant */
-            Page_refresh?: "Contains meta refresh redirect";
+            Page_refresh: "Contains meta refresh redirect";
             /** @constant */
-            Page_string_length?: "Symbol count";
+            Page_string_length: "Symbol count";
             /** @constant */
-            Page_title_dbl?: "Duplicate title";
+            Page_title_dbl: "Duplicate title";
             /** @constant */
-            Page_description_dbl?: "Duplicate description";
+            Page_description_dbl: "Duplicate description";
             /** @constant */
-            Filter_changed?: "Changes";
+            Filter_changed: "Changes";
             /** @constant */
-            Filter_http_not_changed?: "Changes (HTTP code didn't change)";
+            Filter_http_not_changed: "Changes (HTTP code didn't change)";
             /** @constant */
-            Filter_check_selected?: "Only current report";
+            Filter_check_selected: "Only current report";
             /** @constant */
-            Filter_check_before?: "All until the applied date";
+            Filter_check_before: "All until the applied date";
             /** @constant */
-            Watcher_go?: "Check";
+            Watcher_go: "Check";
             /** @constant */
-            Watcher_process_text?: "Scanning";
+            Watcher_process_text: "Scanning";
             /** @constant */
-            Watcher_bank_info?: "Website watcher report for";
+            Watcher_bank_info: "Website watcher report for";
             /** @constant */
-            Watcher_need_config_1?: "To run Watcher";
+            Watcher_need_config_1: "To run Watcher";
             /** @constant */
-            Watcher_need_config_2?: "move to the settings";
+            Watcher_need_config_2: "move to the settings";
             /** @constant */
-            Watcher_need_config_3?: "and add a list of pages";
+            Watcher_need_config_3: "and add a list of pages";
             /** @constant */
-            Indexing_go?: "Scan";
+            Indexing_go: "Scan";
             /** @constant */
-            Indexing_check?: "Index checker";
+            Indexing_check: "Index checker";
             /** @constant */
-            Indexing_no_results?: "You haven't checked website index status yet";
+            Indexing_no_results: "You haven't checked website index status yet";
             /** @constant */
-            Indexing_bank_info?: "Index status report for";
+            Indexing_bank_info: "Index status report for";
             /** @constant */
-            Indexing_need_config_1?: "To check website index status ";
+            Indexing_need_config_1: "To check website index status ";
             /** @constant */
-            Indexing_need_config_2?: "set";
+            Indexing_need_config_2: "set";
             /** @constant */
-            Indexing_need_config_3?: "a list of pages to scan and select search engines";
+            Indexing_need_config_3: "a list of pages to scan and select search engines";
             /** @constant */
-            Pages_for_analyse_not_selected?: "Please add pages to scan in the settings";
+            Pages_for_analyse_not_selected: "Please add pages to scan in the settings";
             /** @constant */
-            Delete_url_by_regexp?: "Delete URLs by regexp match";
+            Delete_url_by_regexp: "Delete URLs by regexp match";
             /** @constant */
-            Report_limit_warning?: "*Report can contain up to 1000 records";
+            Report_limit_warning: "*Report can contain up to 1000 records";
             /** @constant */
-            Watcher_store_180_days?: "results are stored for 180 days";
+            Watcher_store_180_days: "results are stored for 180 days";
             /** @constant */
-            Watcher_selector_title?: "Select tracking method";
+            Watcher_selector_title: "Select tracking method";
             /** @constant */
-            Watcher_regexpr?: "Regular expression";
+            Watcher_regexpr: "Regular expression";
             /** @constant */
-            Download_archive_csv?: "CSV archive";
+            Download_archive_csv: "CSV archive";
             /** @constant */
-            Download_archive_pdf?: "PDF archive";
+            Download_archive_pdf: "PDF archive";
             /** @constant */
-            List_of_urls?: "List of URLs";
+            List_of_urls: "List of URLs";
             /** @constant */
-            Sitemap_xml_url?: "Sitemap.xml path";
+            Sitemap_xml_url: "Sitemap.xml path";
             /** @constant */
-            Sitemap_mail_sitemap?: "Sitemap";
+            Sitemap_mail_sitemap: "Sitemap";
             /** @constant */
-            Sitemap_mail_audit?: "Website audit";
+            Sitemap_mail_audit: "Website audit";
             /** @constant */
-            Sitemap_mail_indexing?: "Index checker";
+            Sitemap_mail_indexing: "Index checker";
             /** @constant */
-            Sitemap_mail_watcher?: "Website watcher";
+            Sitemap_mail_watcher: "Website watcher";
             /** @constant */
-            Retrieve_from_file?: "Retrieve from file";
+            Retrieve_from_file: "Retrieve from file";
             /** @constant */
-            Watcher_delete_title?: "Delete Website Watcher data ";
+            Watcher_delete_title: "Delete Website Watcher data ";
             /** @constant */
-            Watcher_delete_info1?: "Website Watcher report dated";
+            Watcher_delete_info1: "Website Watcher report dated";
             /** @constant */
-            Watcher_delete_info2?: "will be deleted. You cannot undo this action.";
+            Watcher_delete_info2: "will be deleted. You cannot undo this action.";
             /** @constant */
-            Watcher_ignore_options?: "Skip code";
+            Watcher_ignore_options: "Skip code";
             /** @constant */
-            Watcher_ignore_html?: "HTML code";
+            Watcher_ignore_html: "HTML code";
             /** @constant */
-            Watcher_ignore_js?: "javascript code";
+            Watcher_ignore_js: "javascript code";
             /** @constant */
-            Watcher_ignore_nothing?: "do not skip";
+            Watcher_ignore_nothing: "do not skip";
             /** @constant */
-            Watcher_track_button?: "Track changes";
+            Watcher_track_button: "Track changes";
             /** @constant */
-            Watcher_track_changes?: "Track changes";
+            Watcher_track_changes: "Track changes";
             /** @constant */
-            Watcher_tracking?: "Tracking changes of";
+            Watcher_tracking: "Tracking changes of";
             /** @constant */
-            Watcher_max_redirects_count?: "Max redirects";
+            Watcher_max_redirects_count: "Max redirects";
             /** @constant */
-            Watcher_already_started_error?: "Website Watcher already running";
+            Watcher_already_started_error: "Website Watcher already running";
             /** @constant */
-            Indexing_already_started_error?: "Index Checker already running";
+            Indexing_already_started_error: "Index Checker already running";
             /** @constant */
-            Sitemap_XML_link_not_match_host_error?: "Link to XML does not match project host";
+            Sitemap_XML_link_not_match_host_error: "Link to XML does not match project host";
             /** @constant */
-            Sitemap_required_columns_missing?: "Required URLs column missing";
+            Sitemap_required_columns_missing: "Required URLs column missing";
             /** @constant */
-            Delete_sitemap?: "Are you sure you want to delete all URLs?";
+            Delete_sitemap: "Are you sure you want to delete all URLs?";
             /** @constant */
-            URL_exists?: "This URL already exists";
+            URL_exists: "This URL already exists";
             /** @constant */
-            Remove_URL?: "Are you sure you want to delete the selected URL?";
+            Remove_URL: "Are you sure you want to delete the selected URL?";
             /** @constant */
-            Enter_URL_one_per_line?: "Enter a list of URLs (one per line), e.g:";
+            Enter_URL_one_per_line: "Enter a list of URLs (one per line), e.g:";
             /** @constant */
-            Content_tracking?: "Content tracking";
+            Content_tracking: "Content tracking";
             /** @constant */
-            Add_tags_use_regexp_notice?: "Add tags to website code or use regular expressions to track changes";
+            Add_tags_use_regexp_notice: "Add tags to website code or use regular expressions to track changes";
             /** @constant */
-            Use_cookie?: "Use cookie";
+            Use_cookie: "Use cookie";
             /** @constant */
-            Scan_images?: "Scan images";
+            Scan_images: "Scan images";
             /** @constant */
-            Scan_js?: "Scan JS";
+            Scan_js: "Scan JS";
             /** @constant */
-            Scan_css?: "Scan CSS";
+            Scan_css: "Scan CSS";
             /** @constant */
-            Scan_links?: "Scan links";
+            Scan_links: "Scan links";
             /** @constant */
-            Indexed_pages_with_no_snippet?: "Indexed pages without snippet";
+            Indexed_pages_with_no_snippet: "Indexed pages without snippet";
             /** @constant */
-            Hints_settings?: {
+            Hints_settings: {
                 audit_user_agent: "User Agent can affect how the bot sees the site and how DDoS protection works.";
                 audit_page_delay: "How often crawler can open site URLs. If the delay is small, audit will end faster, but the site can go down due to high load. The bigger is the delay, the longer the check will go.<br><br>The delay can increase, if you check Core Web Vitals. For CWV JS is executed, and you need wait for the full rendering of every URL, that takes at least 20 s.";
                 audit_resource_delay: "How often crawler can open site resources (images, JS, CSS). If the delay is small, audit will end faster, but the site can go down due to high load. The bigger is the delay, the longer the check will go.";
@@ -331,50 +331,50 @@ export interface components {
                 server_location: "Change server location to access blocked websites.";
             };
             /** @constant */
-            Server_location?: "Servers location";
+            Server_location: "Servers location";
             /** @constant */
-            Servers_locations?: {
+            Servers_locations: {
                 WESTERN_EUROPE: "Western Europe";
                 EASTERN_EUROPE: "Eastern Europe";
             };
             /** @constant */
-            Page_delay?: "Delay between URL requests (s)";
+            Page_delay: "Delay between URL requests (s)";
             /** @constant */
-            Resource_delay?: "Delay between resources requests (s)";
+            Resource_delay: "Delay between resources requests (s)";
             /** @constant */
-            API_key_1?: "Get free PageSpeed Insights API-key";
+            API_key_1: "Get free PageSpeed Insights API-key";
             /** @constant */
-            API_key_2?: "and paste it in the input field";
+            API_key_2: "and paste it in the input field";
             /** @constant */
-            Redirect_chain?: "Redirect chain";
+            Redirect_chain: "Redirect chain";
             /** @constant */
-            Search_URL?: "Search URL";
+            Search_URL: "Search URL";
             /** @constant */
-            Auto_collect?: "Crawl website";
+            Auto_collect: "Crawl website";
             /** @constant */
-            Add_by_hand?: "Add manually";
+            Add_by_hand: "Add manually";
             /** @constant */
-            Select_site_size?: "Choose website size";
+            Select_site_size: "Choose website size";
             /** @constant */
-            Please_select_site_size?: "Choose website size";
+            Please_select_site_size: "Choose website size";
             /** @constant */
-            Master_urls_auto_title?: "Maximum of pages for audit";
+            Master_urls_auto_title: "Maximum of pages for audit";
             /** @constant */
-            Master_urls_auto_alert?: "We'll check only the pages found during crawling. First you'll be charged the price for the maximum number of pages, but there can be less pages on the website. We'll refund the amount for the number of pages that hadn't been checked back on your balance.";
+            Master_urls_auto_alert: "We'll check only the pages found during crawling. First you'll be charged the price for the maximum number of pages, but there can be less pages on the website. We'll refund the amount for the number of pages that hadn't been checked back on your balance.";
             /** @constant */
-            Audit_go_alert_need_config?: "To perform audit you need to add URLs manually or enable website crawling, go to ";
+            Audit_go_alert_need_config: "To perform audit you need to add URLs manually or enable website crawling, go to ";
             /** @constant */
-            Audit_go_alert_by_hand?: "URLs for audit are added manually. To change the way of adding pages, go to";
+            Audit_go_alert_by_hand: "URLs for audit are added manually. To change the way of adding pages, go to";
             /** @constant */
-            Audit_go_alert_auto_collect_1?: "We'll check";
+            Audit_go_alert_auto_collect_1: "We'll check";
             /** @constant */
-            Audit_go_alert_auto_collect_2?: "URLs for audit are crawled automatically. To change the maximum number of pages for audit or add them manually, go to";
+            Audit_go_alert_auto_collect_2: "URLs for audit are crawled automatically. To change the maximum number of pages for audit or add them manually, go to";
             /** @constant */
-            Audit_bank_autocrawl_info?: "Funds reservation for audit with automatic website crawling, project";
+            Audit_bank_autocrawl_info: "Funds reservation for audit with automatic website crawling, project";
             /** @constant */
-            Audit_bank_autocrawl_unhold_info?: "Reservation refund";
+            Audit_bank_autocrawl_unhold_info: "Reservation refund";
             /** @constant */
-            Delete_url?: "Delete URL";
+            Delete_url: "Delete URL";
         };
     };
     responses: never;

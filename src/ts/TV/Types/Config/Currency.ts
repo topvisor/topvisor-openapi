@@ -10,93 +10,93 @@ export interface components {
         /** Интерфейс настроек валюты */
         "TV.Types.Config.Currency": {
             /** @constant */
-            GA_CU?: "No set";
+            GA_CU: "No set";
             /** @constant */
-            CU_LABEL?: "No set";
+            CU_LABEL: "No set";
             /** @constant */
-            CU_PREFIX?: "No set";
+            CU_PREFIX: "No set";
             /** @constant */
-            CU_PREFIX_ICO?: "No set";
+            CU_PREFIX_ICO: "No set";
             /** @constant */
-            CU_SUFFIX_ICO?: "No set";
+            CU_SUFFIX_ICO: "No set";
             /** @constant */
-            CU_PRECISION?: 10000;
+            CU_PRECISION: 10000;
             /** @constant */
-            QUERY_COST?: 10000;
+            QUERY_COST: 10000;
             /** @constant */
-            QUERY_COST_COMPETITORS?: 10000;
+            QUERY_COST_COMPETITORS: 10000;
             /** @constant */
-            QUERY_COST_SERP?: 10000;
+            QUERY_COST_SERP: 10000;
             /** @constant */
-            QUERY_COST_SNIPPET?: 10000;
+            QUERY_COST_SNIPPET: 10000;
             /** @constant */
-            QUERY_COST_SNAPSHOT?: 10000;
+            QUERY_COST_SNAPSHOT: 10000;
             /** @constant */
-            QUERY_COST_DEPTH_K?: 10000;
+            QUERY_COST_DEPTH_K: 10000;
             /** @constant */
-            EXPORT_ONE_RESULT_COST?: 10000;
+            EXPORT_ONE_RESULT_COST: 10000;
             /** @constant */
-            QUERY_COST_FREQUENCY?: 10000;
+            QUERY_COST_FREQUENCY: 10000;
             /** @constant */
-            SY_COST?: 10000;
+            SY_COST: 10000;
             /** @constant */
-            SY_HINTS_COST?: [
+            SY_HINTS_COST: [
                 10000,
                 10000,
                 10000
             ];
             /** @constant */
-            BROKER_COST?: 10000;
+            BROKER_COST: 10000;
             /** @constant */
-            CLASTER_COST?: 10000;
+            CLASTER_COST: 10000;
             /** @constant */
-            CLASTER_COST_10?: 10000;
+            CLASTER_COST_10: 10000;
             /** @constant */
-            CLASTER_COST_50?: 10000;
+            CLASTER_COST_50: 10000;
             /** @constant */
-            CLASTER_COST_250?: 10000;
+            CLASTER_COST_250: 10000;
             /** @constant */
-            CLASTER_CHANGE_COST?: 10000;
+            CLASTER_CHANGE_COST: 10000;
             /** @constant */
-            AUDIT_SITEMAP_100?: 10000;
+            AUDIT_SITEMAP_100: 10000;
             /** @constant */
-            AUDIT_SITEMAP_1000?: 10000;
+            AUDIT_SITEMAP_1000: 10000;
             /** @constant */
-            AUDIT_SITEMAP_10000?: 10000;
+            AUDIT_SITEMAP_10000: 10000;
             /** @constant */
-            AUDIT_SITEMAP_100000?: 10000;
+            AUDIT_SITEMAP_100000: 10000;
             /** @constant */
-            AUDIT_SITEMAP_150000?: 10000;
+            AUDIT_SITEMAP_150000: 10000;
             /** @constant */
-            AUDIT_SITEMAP_300000?: 10000;
+            AUDIT_SITEMAP_300000: 10000;
             /** @constant */
-            AUDIT_COST?: 10000;
+            AUDIT_COST: 10000;
             /** @constant */
-            AUDIT_COST_100?: 10000;
+            AUDIT_COST_100: 10000;
             /** @constant */
-            AUDIT_COST_1000?: 10000;
+            AUDIT_COST_1000: 10000;
             /** @constant */
-            AUDIT_COST_10000?: 10000;
+            AUDIT_COST_10000: 10000;
             /** @constant */
-            WATCHER_COST?: 10000;
+            WATCHER_COST: 10000;
             /** @constant */
-            INDEXING_COST?: 10000;
+            INDEXING_COST: 10000;
             /** @constant */
-            MENTIONS_COST?: 10000;
+            MENTIONS_COST: 10000;
             /** @constant */
-            COMPETITORS_COST?: 10000;
+            COMPETITORS_COST: 10000;
             /** @constant */
-            WEB_SCREENS_COST?: 10000;
+            WEB_SCREENS_COST: 10000;
             /** @constant */
-            DOMAINS_BUY_COST?: 10000;
+            DOMAINS_BUY_COST: 10000;
             /** @constant */
-            DOMAINS_RENEW_COST?: 10000;
+            DOMAINS_RENEW_COST: 10000;
             /** @constant */
-            DOMAINS_AUTH_INFO_PHONE_COST?: 10000;
+            DOMAINS_AUTH_INFO_PHONE_COST: 10000;
             /** @constant */
-            DOMAINS_AUTH_INFO_MAIL_COST?: 10000;
+            DOMAINS_AUTH_INFO_MAIL_COST: 10000;
             /** @constant */
-            TARIFF_NAMES?: [
+            TARIFF_NAMES: [
                 "No set",
                 "No set",
                 "No set",
@@ -104,7 +104,7 @@ export interface components {
                 "No set"
             ];
             /** @constant */
-            TARIFF_VALUES?: [
+            TARIFF_VALUES: [
                 10000,
                 10000,
                 10000,
@@ -112,7 +112,7 @@ export interface components {
                 10000
             ];
             /** @constant */
-            TARIFF_DISCOUNT?: [
+            TARIFF_DISCOUNT: [
                 0,
                 10,
                 15,

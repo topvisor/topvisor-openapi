@@ -23,7 +23,12 @@
                         "const": "Privacy Policy"
                     }
                 },
-                "required": []
+                "required": [
+                    "Link_to_resume_or_comment",
+                    "Submit_button_text",
+                    "Accept_user_agreement_text_befor_link",
+                    "Accept_user_agreement_link_text"
+                ]
             }
         }
     }

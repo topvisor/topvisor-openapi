@@ -9,109 +9,109 @@ export interface components {
     schemas: {
         "I18n.Tickets": {
             /** @constant */
-            Reply_Title?: "Ticket reply";
+            Reply_Title: "Ticket reply";
             /** @constant */
-            Reply_notice?: "When replying to the ticket, please do not change the topic";
+            Reply_notice: "When replying to the ticket, please do not change the topic";
             /** @constant */
-            Auto_message_title?: "Thank you, your ticket has been submitted";
+            Auto_message_title: "Thank you, your ticket has been submitted";
             /** @constant */
-            Open_tickets?: "Open";
+            Open_tickets: "Open";
             /** @constant */
-            Closed_tickets?: "Closed";
+            Closed_tickets: "Closed";
             /** @constant */
-            Close_ticket?: "Close ticket";
+            Close_ticket: "Close ticket";
             /** @constant */
-            Open_ticket?: "Open ticket";
+            Open_ticket: "Open ticket";
             /** @constant */
-            Add_to_favorites?: "Add to favorites";
+            Add_to_favorites: "Add to favorites";
             /** @constant */
-            Remove_from_favorites?: "Remove from favorites";
+            Remove_from_favorites: "Remove from favorites";
             /** @constant */
-            Continue_in_new_ticket?: "Continue in new ticket";
+            Continue_in_new_ticket: "Continue in new ticket";
             /** @constant */
-            Quote_message?: "Quote message";
+            Quote_message: "Quote message";
             /** @constant */
-            Edit_message?: "Edit message";
+            Edit_message: "Edit message";
             /** @constant */
-            Delete_message?: "Delete message";
+            Delete_message: "Delete message";
             /** @constant */
-            User_info?: "User info";
+            User_info: "User info";
             /** @constant */
-            Device?: "Device";
+            Device: "Device";
             /** @constant */
-            Browser?: "Browser";
+            Browser: "Browser";
             /** @constant */
-            Pricing_plan?: "Pricing plan";
+            Pricing_plan: "Pricing plan";
             /** @constant */
-            Edit_template?: "Edit template";
+            Edit_template: "Edit template";
             /** @constant */
-            Template_title?: "Title";
+            Template_title: "Title";
             /** @constant */
-            Add_msg?: "Write a message";
+            Add_msg: "Write a message";
             /** @constant */
-            Delete_template?: "Delete template";
+            Delete_template: "Delete template";
             /** @constant */
-            Found?: "Results";
+            Found: "Results";
             /** @constant */
-            Search_tickets?: "Search tickets";
+            Search_tickets: "Search tickets";
             /** @constant */
-            New_ticket?: "Create ticket";
+            New_ticket: "Create ticket";
             /** @constant */
-            Reopen_ticket?: "Reopen ticket";
+            Reopen_ticket: "Reopen ticket";
             /** @constant */
-            Text_welcome_1?: "Select a ticket or";
+            Text_welcome_1: "Select a ticket or";
             /** @constant */
-            Text_welcome_2?: "create a new one";
+            Text_welcome_2: "create a new one";
             /** @constant */
-            Text_welcome_3?: "to contact Customer Support";
+            Text_welcome_3: "to contact Customer Support";
             /** @constant */
-            Text_new_ticket_1?: "Please describe the problem or ask a question";
+            Text_new_ticket_1: "Please describe the problem or ask a question";
             /** @constant */
-            Text_new_ticket_2?: "We will get back to you shortly 💙";
+            Text_new_ticket_2: "We will get back to you shortly 💙";
             /** @constant */
-            Ticket_source_page?: "Ticket source page";
+            Ticket_source_page: "Ticket source page";
             /** @constant */
-            Sound_mute?: "Mute";
+            Sound_mute: "Mute";
             /** @constant */
-            Sound_pencil?: "Pencil";
+            Sound_pencil: "Pencil";
             /** @constant */
-            Sound_magic_wand?: "Magic wand";
+            Sound_magic_wand: "Magic wand";
             /** @constant */
-            Sound_bounce?: "Bounce";
+            Sound_bounce: "Bounce";
             /** @constant */
-            Sound_beep?: "Beep";
+            Sound_beep: "Beep";
             /** @constant */
-            Sound_xylophone?: "Xylophone";
+            Sound_xylophone: "Xylophone";
             /** @constant */
-            Sound_drums?: "Drums";
+            Sound_drums: "Drums";
             /** @constant */
-            Average_expenses?: "Average expenses";
+            Average_expenses: "Average expenses";
             /** @constant */
-            Bad?: "Bad";
+            Bad: "Bad";
             /** @constant */
-            Normal?: "OK";
+            Normal: "OK";
             /** @constant */
-            Good?: "Great!";
+            Good: "Great!";
             /** @constant */
-            Title_start?: "Rate how the Support did their part";
+            Title_start: "Rate how the Support did their part";
             /** @constant */
-            Title_finish?: "Thanks for the feedback!";
+            Title_finish: "Thanks for the feedback!";
             /** @constant */
-            Text_start?: "It'll help us to get better.";
+            Text_start: "It'll help us to get better.";
             /** @constant */
-            Text_good?: "We'll keep it up.";
+            Text_good: "We'll keep it up.";
             /** @constant */
-            Text_bad?: "We'll improve our service.";
+            Text_bad: "We'll improve our service.";
             /** @constant */
-            Comment_title_good?: "What did you particularly enjoy?";
+            Comment_title_good: "What did you particularly enjoy?";
             /** @constant */
-            Comment_title_bad?: "Tell us what was wrong — we'll do everything to get better!";
+            Comment_title_bad: "Tell us what was wrong — we'll do everything to get better!";
             /** @constant */
-            Button_change_review?: "Change the feedback";
+            Button_change_review: "Change the feedback";
             /** @constant */
-            Online?: "Online";
+            Online: "Online";
             /** @constant */
-            Visited?: "Last seen";
+            Visited: "Last seen";
         };
     };
     responses: never;

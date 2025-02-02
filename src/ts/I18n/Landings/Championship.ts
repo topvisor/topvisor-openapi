@@ -9,19 +9,19 @@ export interface components {
     schemas: {
         "I18n.Landings.Championship": {
             /** @constant */
-            Best_cases?: "Best cases";
+            Best_cases: "Best cases";
             /** @constant */
-            Main_competition?: "Main competition 🏆";
+            Main_competition: "Main competition 🏆";
             /** @constant */
-            Special_nominations?: "Special nominations 🏆";
+            Special_nominations: "Special nominations 🏆";
             /** @constant */
-            Nomination?: "Nomination";
+            Nomination: "Nomination";
             /** @constant */
-            Place?: "Place";
+            Place: "Place";
             /** @constant */
-            Case_and_author?: "Case and author";
+            Case_and_author: "Case and author";
             /** @constant */
-            place?: "place";
+            place: "place";
         };
     };
     responses: never;

@@ -47,7 +47,20 @@
                         "const": "Clustering by SERP Top"
                     }
                 },
-                "required": []
+                "required": [
+                    "Checking_positions",
+                    "Collecting_top_sites",
+                    "Technical_analysis",
+                    "Tracking_changes",
+                    "Semantic_core_research",
+                    "Volume_checker",
+                    "Index_checker",
+                    "Sitemap_generator",
+                    "Bid_manager",
+                    "Updates_scanner",
+                    "Shortener_url",
+                    "Clustering_top"
+                ]
             }
         }
     }

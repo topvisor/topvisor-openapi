@@ -110,7 +110,51 @@
                         "const": "successfully linked."
                     }
                 },
-                "required": []
+                "required": [
+                    "Panel_get_command_list",
+                    "Panel_enable_notifications",
+                    "Panel_disable_notifications",
+                    "Panel_pair_account",
+                    "Panel_unpair_account",
+                    "Panel_get_short_link",
+                    "Panel_back",
+                    "Panel_cancel",
+                    "Panel_main_menu",
+                    "Panel_select_lang",
+                    "Panel_eng",
+                    "Panel_rus",
+                    "Panel_i_subscribed",
+                    "Panel_subscribe",
+                    "Panel_open_materials",
+                    "Panel_library",
+                    "Message_chat_disabled",
+                    "Message_available_commands",
+                    "Message_available_commands_help",
+                    "Message_available_commands_start",
+                    "Message_available_commands_stop",
+                    "Message_available_commands_pair",
+                    "Message_available_commands_unpair",
+                    "Message_available_commands_tpvsr",
+                    "Message_start_text1",
+                    "Message_start_text2",
+                    "Message_start_apometer_text",
+                    "Message_stop_text",
+                    "Message_pair_done1",
+                    "Message_pair_done2",
+                    "Message_pair_authorize1",
+                    "Message_pair_authorize2",
+                    "Message_unpair",
+                    "Message_tpvsr",
+                    "Message_tpvsr_cancel",
+                    "Message_tpvsr_failure",
+                    "Message_tpvsr_cancel_done",
+                    "Message_join_authorize",
+                    "Message_join_done1",
+                    "Message_join_done2",
+                    "Message_check_journal_subscription",
+                    "Message_not_subscribed",
+                    "Message_subscribed"
+                ]
             }
         }
     }

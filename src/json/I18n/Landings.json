@@ -14,7 +14,9 @@
                         "const": "No card needed"
                     }
                 },
-                "required": []
+                "required": [
+                    "No_card_needed"
+                ]
             }
         }
     }

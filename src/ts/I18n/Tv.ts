@@ -9,7 +9,7 @@ export interface components {
     schemas: {
         "I18n.Tv": {
             /** @constant */
-            TV?: "ТV";
+            TV: "ТV";
         };
     };
     responses: never;

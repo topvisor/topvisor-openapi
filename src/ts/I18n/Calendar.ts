@@ -9,39 +9,39 @@ export interface components {
     schemas: {
         "I18n.Calendar": {
             /** @constant */
-            Dw_1?: "Mo";
+            Dw_1: "Mo";
             /** @constant */
-            Dw_2?: "Tu";
+            Dw_2: "Tu";
             /** @constant */
-            Dw_3?: "We";
+            Dw_3: "We";
             /** @constant */
-            Dw_4?: "Th";
+            Dw_4: "Th";
             /** @constant */
-            Dw_5?: "Fr";
+            Dw_5: "Fr";
             /** @constant */
-            Dw_6?: "Sa";
+            Dw_6: "Sa";
             /** @constant */
-            Dw_7?: "Su";
+            Dw_7: "Su";
             /** @constant */
-            Day_of_week_1?: "Monday";
+            Day_of_week_1: "Monday";
             /** @constant */
-            Day_of_week_2?: "Tuesday";
+            Day_of_week_2: "Tuesday";
             /** @constant */
-            Day_of_week_3?: "Wednesday";
+            Day_of_week_3: "Wednesday";
             /** @constant */
-            Day_of_week_4?: "Thursday";
+            Day_of_week_4: "Thursday";
             /** @constant */
-            Day_of_week_5?: "Friday";
+            Day_of_week_5: "Friday";
             /** @constant */
-            Day_of_week_6?: "Saturday";
+            Day_of_week_6: "Saturday";
             /** @constant */
-            Day_of_week_7?: "Sunday";
+            Day_of_week_7: "Sunday";
             /** @constant */
-            months?: "|january|february|march|april|may|june|july|august|september|october|november|december";
+            months: "|january|february|march|april|may|june|july|august|september|october|november|december";
             /** @constant */
-            of_months?: "|january|february|march|april|may|june|july|august|september|october|november|december";
+            of_months: "|january|february|march|april|may|june|july|august|september|october|november|december";
             /** @constant */
-            in_months?: "|january|february|march|april|may|june|july|august|september|october|november|december";
+            in_months: "|january|february|march|april|may|june|july|august|september|october|november|december";
         };
     };
     responses: never;

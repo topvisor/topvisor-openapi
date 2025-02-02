@@ -44,7 +44,21 @@
                         "const": "unsubscribe from API updates"
                     }
                 },
-                "required": []
+                "required": [
+                    "Link_not_available",
+                    "User_blocked",
+                    "Report_subscribe_canceled",
+                    "Report_subscribe_canceled1",
+                    "Report_subscribe_canceled2",
+                    "Informer_unsubscribe_news",
+                    "Informer_subscribe_balance",
+                    "Informer_unsubscribe_tickets",
+                    "Informer_unsubscribe_update",
+                    "Informer_unsubscribe_comments",
+                    "Informer_unsubscribe_api",
+                    "Informer_unsubscribe_journal",
+                    "Informer_unsubscribe_academy_news"
+                ]
             }
         }
     }

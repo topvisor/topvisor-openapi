@@ -9,945 +9,945 @@ export interface components {
     schemas: {
         "I18n.Common": {
             /** @constant */
-            url_lang_prefix?: "";
+            url_lang_prefix: "";
             /** @constant */
-            Page_404_text?: "Page Not Found";
+            Page_404_text: "Page Not Found";
             /** @constant */
-            Page_404_text2?: "You will be redirected <br> in";
+            Page_404_text2: "You will be redirected <br> in";
             /** @constant */
-            Page_404_sec?: "seconds";
+            Page_404_sec: "seconds";
             /** @constant */
-            Page_403_text?: "Access denied";
+            Page_403_text: "Access denied";
             /** @constant */
-            openApp_text?: "Page loading";
+            openApp_text: "Page loading";
             /** @constant */
-            openApp_text2?: "Open application";
+            openApp_text2: "Open application";
             /** @constant */
-            lang?: "en";
+            lang: "en";
             /** @constant */
-            lang_country?: "US";
+            lang_country: "US";
             /** @constant */
-            lang_url?: "";
+            lang_url: "";
             /** @constant */
-            alternate_lang?: "ru";
+            alternate_lang: "ru";
             /** @constant */
-            alternate_lang_country?: "RU";
+            alternate_lang_country: "RU";
             /** @constant */
-            alternate_lang_url?: "/ru";
+            alternate_lang_url: "/ru";
             /** @constant */
-            Lang_full?: "English";
+            Lang_full: "English";
             /** @constant */
-            language?: "language";
+            language: "language";
             /** @constant */
-            Language?: "Language";
+            Language: "Language";
             /** @constant */
-            locale?: "en_US";
+            locale: "en_US";
             /** @constant */
-            date_format?: "m/d/Y";
+            date_format: "m/d/Y";
             /** @constant */
-            Description?: "Tools for tracking, analyzing and measuring SEO performance";
+            Description: "Tools for tracking, analyzing and measuring SEO performance";
             /** @constant */
-            Og_description?: "Try out SEO & PPC Tools for keyword research, clustering, rank tracking and on-page optimization. Get better results from paid search and organic rankings!";
+            Og_description: "Try out SEO & PPC Tools for keyword research, clustering, rank tracking and on-page optimization. Get better results from paid search and organic rankings!";
             /** @constant */
-            Og_description_invite?: "SEO & PPC Tools for better marketing. Highly recommended!";
+            Og_description_invite: "SEO & PPC Tools for better marketing. Highly recommended!";
             /** @constant */
-            Ascending?: "Ascending";
+            Ascending: "Ascending";
             /** @constant */
-            Descending?: "Descending";
+            Descending: "Descending";
             /** @constant */
-            TV_address_street?: "Voronezhskaya ul.";
+            TV_address_street: "Voronezhskaya ul.";
             /** @constant */
-            Message_session_security_error?: "Session security error, please <a href=\"/\">refresh page</a> and try again";
+            Message_session_security_error: "Session security error, please <a href=\"/\">refresh page</a> and try again";
             /** @constant */
-            Message_dbh_remote?: "We're upgrading our servers. The service is temporarily unavailable. Please, try again later";
+            Message_dbh_remote: "We're upgrading our servers. The service is temporarily unavailable. Please, try again later";
             /** @constant */
-            Message_dbh_remote_error?: "We're upgrading our servers. Tasks creating is temporarily unavailable. Please, try again later";
+            Message_dbh_remote_error: "We're upgrading our servers. Tasks creating is temporarily unavailable. Please, try again later";
             /** @constant */
-            Message_ch_error?: "We're upgrading this module's server, please, try again later";
+            Message_ch_error: "We're upgrading this module's server, please, try again later";
             /** @constant */
-            Message_sp_error?: "We're upgrading this module's server, please, try again later";
+            Message_sp_error: "We're upgrading this module's server, please, try again later";
             /** @constant */
-            Every_day?: "Every day";
+            Every_day: "Every day";
             /** @constant */
-            time_a_0?: "times";
+            time_a_0: "times";
             /** @constant */
-            time_a_1?: "time";
+            time_a_1: "time";
             /** @constant */
-            time_a_2?: "times";
+            time_a_2: "times";
             /** @constant */
-            a_week?: "a week";
+            a_week: "a week";
             /** @constant */
-            a_month?: "a month";
+            a_month: "a month";
             /** @constant */
-            discount?: "discount";
+            discount: "discount";
             /** @constant */
-            month_short?: "mo";
+            month_short: "mo";
             /** @constant */
-            Balance?: "Balance";
+            Balance: "Balance";
             /** @constant */
-            Referrals?: "Affiliate program";
+            Referrals: "Affiliate program";
             /** @constant */
-            Organization?: "Organization";
+            Organization: "Organization";
             /** @constant */
-            Yes?: "Yes";
+            Yes: "Yes";
             /** @constant */
-            Exists?: "Exists";
+            Exists: "Exists";
             /** @constant */
-            No?: "No";
+            No: "No";
             /** @constant */
-            not?: "not";
+            not: "not";
             /** @constant */
-            and?: "and";
+            and: "and";
             /** @constant */
-            ruble?: "rub.";
+            ruble: "rub.";
             /** @constant */
-            for?: "for";
+            for: "for";
             /** @constant */
-            For?: "For";
+            For: "For";
             /** @constant */
-            Close?: "Close";
+            Close: "Close";
             /** @constant */
-            OK?: "OK";
+            OK: "OK";
             /** @constant */
-            Apply?: "OK";
+            Apply: "OK";
             /** @constant */
-            Choose?: "Apply";
+            Choose: "Apply";
             /** @constant */
-            Download?: "Download";
+            Download: "Download";
             /** @constant */
-            download?: "download";
+            download: "download";
             /** @constant */
-            Step?: "Step";
+            Step: "Step";
             /** @constant */
-            Continue?: "Continue";
+            Continue: "Continue";
             /** @constant */
-            Back?: "Back";
+            Back: "Back";
             /** @constant */
-            Next?: "Next";
+            Next: "Next";
             /** @constant */
-            Prev_page_short?: "Prev";
+            Prev_page_short: "Prev";
             /** @constant */
-            Next_page_short?: "Next";
+            Next_page_short: "Next";
             /** @constant */
-            project?: "project";
+            project: "project";
             /** @constant */
-            Project?: "Project";
+            Project: "Project";
             /** @constant */
-            of_project?: "of project";
+            of_project: "of project";
             /** @constant */
-            Tool_digest?: "Tool digest (2024)";
+            Tool_digest: "Tool digest (2024)";
             /** @constant */
-            Ticket?: "Ticket";
+            Ticket: "Ticket";
             /** @constant */
-            Tickets?: "Tickets";
+            Tickets: "Tickets";
             /** @constant */
-            All_tickets?: "All tickets";
+            All_tickets: "All tickets";
             /** @constant */
-            All_pages?: "All articles";
+            All_pages: "All articles";
             /** @constant */
-            Submit?: "Submit";
+            Submit: "Submit";
             /** @constant */
-            Tickets_page?: "\"Tickets\" page";
+            Tickets_page: "\"Tickets\" page";
             /** @constant */
-            Submitted?: "Submitted";
+            Submitted: "Submitted";
             /** @constant */
-            Created_at?: "Created";
+            Created_at: "Created";
             /** @constant */
-            Schet_number?: "No.";
+            Schet_number: "No.";
             /** @constant */
-            Cancel?: "Cancel";
+            Cancel: "Cancel";
             /** @constant */
-            Send?: "Send";
+            Send: "Send";
             /** @constant */
-            More?: "More";
+            More: "More";
             /** @constant */
-            Read_more?: "Read more";
+            Read_more: "Read more";
             /** @constant */
-            User?: "User";
+            User: "User";
             /** @constant */
-            Message?: "Message";
+            Message: "Message";
             /** @constant */
-            Message_not_sended?: "Message hasn't been sent";
+            Message_not_sended: "Message hasn't been sent";
             /** @constant */
-            Comment_not_deleted?: "Comment not removed";
+            Comment_not_deleted: "Comment not removed";
             /** @constant */
-            Link?: "Link";
+            Link: "Link";
             /** @constant */
-            Name?: "Name";
+            Name: "Name";
             /** @constant */
-            First_and_last_name?: "First and last name";
+            First_and_last_name: "First and last name";
             /** @constant */
-            Access_denied?: "Access denied";
+            Access_denied: "Access denied";
             /** @constant */
-            Access_error?: "Access error";
+            Access_error: "Access error";
             /** @constant */
-            No_data?: "No data found";
+            No_data: "No data found";
             /** @constant */
-            No_results?: "No results";
+            No_results: "No results";
             /** @constant */
-            Dynamics?: "Dynamics";
+            Dynamics: "Dynamics";
             /** @constant */
-            Country?: "Country";
+            Country: "Country";
             /** @constant */
-            Number?: "No.";
+            Number: "No.";
             /** @constant */
-            Number_word?: "Number";
+            Number_word: "Number";
             /** @constant */
-            CPC?: "CPC";
+            CPC: "CPC";
             /** @constant */
-            Clear?: "Clear";
+            Clear: "Clear";
             /** @constant */
-            Phone?: "Phone number";
+            Phone: "Phone number";
             /** @constant */
-            Email?: "Email";
+            Email: "Email";
             /** @constant */
-            Email_not_exist?: "The Email you entered doesn't exist";
+            Email_not_exist: "The Email you entered doesn't exist";
             /** @constant */
-            Password_incorrect?: "The password you entered is incorrect!";
+            Password_incorrect: "The password you entered is incorrect!";
             /** @constant */
-            Enter_email?: "Enter email";
+            Enter_email: "Enter email";
             /** @constant */
-            Enter_password?: "Enter password";
+            Enter_password: "Enter password";
             /** @constant */
-            Remember_me?: "Remember me";
+            Remember_me: "Remember me";
             /** @constant */
-            Forgot_password?: "Forgot your password?";
+            Forgot_password: "Forgot your password?";
             /** @constant */
-            Signup_now?: "Sign up now";
+            Signup_now: "Sign up now";
             /** @constant */
-            Sign_in_with?: "Sign in with";
+            Sign_in_with: "Sign in with";
             /** @constant */
-            Password_recovering?: "Recover password";
+            Password_recovering: "Recover password";
             /** @constant */
-            Recover_password?: "Recover password";
+            Recover_password: "Recover password";
             /** @constant */
-            Keywords_one_per_line?: "Keywords (each keyword on a new line)";
+            Keywords_one_per_line: "Keywords (each keyword on a new line)";
             /** @constant */
-            Add_se?: "Add a Search engine";
+            Add_se: "Add a Search engine";
             /** @constant */
-            Create_project?: "Create a project";
+            Create_project: "Create a project";
             /** @constant */
-            Creating?: "Creating...";
+            Creating: "Creating...";
             /** @constant */
-            Enter_valid_email_notice?: "Enter a valid E-mail address";
+            Enter_valid_email_notice: "Enter a valid E-mail address";
             /** @constant */
-            No_account_sign_up?: "No account? <a href=\".\" data-to-view=\"%toViewReg%\">Sign up</a>";
+            No_account_sign_up: "No account? <a href=\".\" data-to-view=\"%toViewReg%\">Sign up</a>";
             /** @constant */
-            No_account?: "No account?";
+            No_account: "No account?";
             /** @constant */
-            Through_registration_you_confirm_agreement_policy?: "By pressing Sign up you accept <a href=\"%hrefConfirm%\" target=\"_blank\">Terms and Conditions</a> and <a href=\"%hrefPrivacy%\" target=\"_blank\">Privacy Policy</a>";
+            Through_registration_you_confirm_agreement_policy: "By pressing Sign up you accept <a href=\"%hrefConfirm%\" target=\"_blank\">Terms and Conditions</a> and <a href=\"%hrefPrivacy%\" target=\"_blank\">Privacy Policy</a>";
             /** @constant */
-            Already_have_account?: "Already have an account";
+            Already_have_account: "Already have an account";
             /** @constant */
-            Try_again_or_sign_up?: "<a href=\".\" data-to-view=\"%toViewAuth%\">Log in</a> or <a href=\".\" data-to-view=\"%toViewReg%\">sign up</a>";
+            Try_again_or_sign_up: "<a href=\".\" data-to-view=\"%toViewAuth%\">Log in</a> or <a href=\".\" data-to-view=\"%toViewReg%\">sign up</a>";
             /** @constant */
-            If_no_msg_check_spam_ask_support_notice?: "If you didn't receive a message, check a <b>Spam</b> folder or submit a ticket to <a href=\"%hrefCreateTicket%\">Customer support</a>";
+            If_no_msg_check_spam_ask_support_notice: "If you didn't receive a message, check a <b>Spam</b> folder or submit a ticket to <a href=\"%hrefCreateTicket%\">Customer support</a>";
             /** @constant */
-            If_no_msg?: "If you didn't receive a message, check a <b>Spam</b> folder or submit a ticket to ";
+            If_no_msg: "If you didn't receive a message, check a <b>Spam</b> folder or submit a ticket to ";
             /** @constant */
-            support_notice?: "Customer support";
+            support_notice: "Customer support";
             /** @constant */
-            Confirmation_link_sent_to_email?: "A confirmation link has been sent to ";
+            Confirmation_link_sent_to_email: "A confirmation link has been sent to ";
             /** @constant */
-            Internal_error?: "Internal error occurred, please submit a report to the developers";
+            Internal_error: "Internal error occurred, please submit a report to the developers";
             /** @constant */
-            Unknown_error?: "Unknown error occurred, please try again later";
+            Unknown_error: "Unknown error occurred, please try again later";
             /** @constant */
-            Google_server_error?: "Google server error";
+            Google_server_error: "Google server error";
             /** @constant */
-            Yandex_API_server_error?: "Yandex.API server error";
+            Yandex_API_server_error: "Yandex.API server error";
             /** @constant */
-            Yandex_auth_error?: "Error occurred! Please, contact the project owner to resolve the issue!";
+            Yandex_auth_error: "Error occurred! Please, contact the project owner to resolve the issue!";
             /** @constant */
-            Request_error_required?: "Required parameter missing in the request";
+            Request_error_required: "Required parameter missing in the request";
             /** @constant */
-            Request_error_type?: "Passed parameter type mismatch";
+            Request_error_type: "Passed parameter type mismatch";
             /** @constant */
-            Request_error_value?: "Passed parameter value mismatch";
+            Request_error_value: "Passed parameter value mismatch";
             /** @constant */
-            Request_error_qualifiers?: "Passed qualifiers mismatch";
+            Request_error_qualifiers: "Passed qualifiers mismatch";
             /** @constant */
-            Error_regexp?: "Regular expression error";
+            Error_regexp: "Regular expression error";
             /** @constant */
-            Valid_characters?: "Valid characters";
+            Valid_characters: "Valid characters";
             /** @constant */
-            Bonus?: "Bonus";
+            Bonus: "Bonus";
             /** @constant */
-            or?: "or";
+            or: "or";
             /** @constant */
-            to?: "until";
+            to: "until";
             /** @constant */
-            to_1?: "to";
+            to_1: "to";
             /** @constant */
-            at?: "at";
+            at: "at";
             /** @constant */
-            To?: "Until";
+            To: "Until";
             /** @constant */
-            Until?: "Up to ";
+            Until: "Up to ";
             /** @constant */
-            next_count?: "next";
+            next_count: "next";
             /** @constant */
-            pages?: "pages";
+            pages: "pages";
             /** @constant */
-            pages_full?: "pages";
+            pages_full: "pages";
             /** @constant */
-            limit?: "display";
+            limit: "display";
             /** @constant */
-            by?: "by";
+            by: "by";
             /** @constant */
-            Path?: "Path";
+            Path: "Path";
             /** @constant */
-            Rule?: "Rule";
+            Rule: "Rule";
             /** @constant */
-            Allow?: "Allow";
+            Allow: "Allow";
             /** @constant */
-            Disallow?: "Forbid";
+            Disallow: "Forbid";
             /** @constant */
-            Allow_of_mask?: "Add mask matches from sitemap";
+            Allow_of_mask: "Add mask matches from sitemap";
             /** @constant */
-            Disallow_of_mask?: "Forbid the mask";
+            Disallow_of_mask: "Forbid the mask";
             /** @constant */
-            Search?: "Search";
+            Search: "Search";
             /** @constant */
-            Examples?: "Examples";
+            Examples: "Examples";
             /** @constant */
-            Begin?: "Start";
+            Begin: "Start";
             /** @constant */
-            Start_over?: "Start over";
+            Start_over: "Start over";
             /** @constant */
-            Export?: "Export";
+            Export: "Export";
             /** @constant */
-            Import?: "Import";
+            Import: "Import";
             /** @constant */
-            Off?: "Off";
+            Off: "Off";
             /** @constant */
-            Changes?: "Changes";
+            Changes: "Changes";
             /** @constant */
-            Change?: "Change";
+            Change: "Change";
             /** @constant */
-            Value?: "Value";
+            Value: "Value";
             /** @constant */
-            Hide?: "Hide";
+            Hide: "Hide";
             /** @constant */
-            Display?: "Display";
+            Display: "Display";
             /** @constant */
-            Save?: "Save";
+            Save: "Save";
             /** @constant */
-            Time?: "Time";
+            Time: "Time";
             /** @constant */
-            Loading?: "Loading";
+            Loading: "Loading";
             /** @constant */
-            CY?: "CY";
+            CY: "CY";
             /** @constant */
-            Broker?: "Bid manager";
+            Broker: "Bid manager";
             /** @constant */
-            Maintenance?: "Page is under maintenance";
+            Maintenance: "Page is under maintenance";
             /** @constant */
-            on_account?: "to account";
+            on_account: "to account";
             /** @constant */
-            on?: "to";
+            on: "to";
             /** @constant */
-            Tools?: "SEO Tools";
+            Tools: "SEO Tools";
             /** @constant */
-            Keyword_researcher?: "Keyword research tool";
+            Keyword_researcher: "Keyword research tool";
             /** @constant */
-            Rank_tracker?: "Rank tracker tool";
+            Rank_tracker: "Rank tracker tool";
             /** @constant */
-            Upload?: "Upload";
+            Upload: "Upload";
             /** @constant */
-            Hide_all?: "Hide all";
+            Hide_all: "Hide all";
             /** @constant */
-            Expand_all?: "Expand all";
+            Expand_all: "Expand all";
             /** @constant */
-            Expand?: "Expand";
+            Expand: "Expand";
             /** @constant */
-            Attention?: "Attention";
+            Attention: "Attention";
             /** @constant */
-            from?: "from";
+            from: "from";
             /** @constant */
-            from_1?: "from";
+            from_1: "from";
             /** @constant */
-            dated?: "dated";
+            dated: "dated";
             /** @constant */
-            fromDate?: "from";
+            fromDate: "from";
             /** @constant */
-            toDate?: "to";
+            toDate: "to";
             /** @constant */
-            SE?: "SE";
+            SE: "SE";
             /** @constant */
-            Guest_link?: "Guest link";
+            Guest_link: "Guest link";
             /** @constant */
-            Guest_link_copied_to_clipboard?: "Guest link copied to clipboard";
+            Guest_link_copied_to_clipboard: "Guest link copied to clipboard";
             /** @constant */
-            Device_0?: "PC";
+            Device_0: "PC";
             /** @constant */
-            Device_1?: "Tablet";
+            Device_1: "Tablet";
             /** @constant */
-            Device_2?: "Phone";
+            Device_2: "Phone";
             /** @constant */
-            Device_100?: "YandexBot/3.0";
+            Device_100: "YandexBot/3.0";
             /** @constant */
-            Device_102?: "YandexBot/3.0 (mobile)";
+            Device_102: "YandexBot/3.0 (mobile)";
             /** @constant */
-            Device_110?: "Googlebot/2.1";
+            Device_110: "Googlebot/2.1";
             /** @constant */
-            Device_112?: "Googlebot/2.1 (mobile)";
+            Device_112: "Googlebot/2.1 (mobile)";
             /** @constant */
-            Device_120?: "AdsBot-Google";
+            Device_120: "AdsBot-Google";
             /** @constant */
-            Device_122?: "AdsBot-Google-Mobile";
+            Device_122: "AdsBot-Google-Mobile";
             /** @constant */
-            Tag?: "Tag";
+            Tag: "Tag";
             /** @constant */
-            Tags?: "Tags";
+            Tags: "Tags";
             /** @constant */
-            All_tags?: "All tags";
+            All_tags: "All tags";
             /** @constant */
-            Charts?: "Charts";
+            Charts: "Charts";
             /** @constant */
-            All?: "All";
+            All: "All";
             /** @constant */
-            Selected?: "Selected";
+            Selected: "Selected";
             /** @constant */
-            Select?: "Select";
+            Select: "Select";
             /** @constant */
-            Select_all?: "Select all";
+            Select_all: "Select all";
             /** @constant */
-            Added?: "Added";
+            Added: "Added";
             /** @constant */
-            Deleted?: "Deleted";
+            Deleted: "Deleted";
             /** @constant */
-            Rename?: "Rename";
+            Rename: "Rename";
             /** @constant */
-            On_or_off?: "On / Off";
+            On_or_off: "On / Off";
             /** @constant */
-            Autoselect?: "Autoselect";
+            Autoselect: "Autoselect";
             /** @constant */
-            Open_project?: "Open project";
+            Open_project: "Open project";
             /** @constant */
-            Domain?: "Domain";
+            Domain: "Domain";
             /** @constant */
-            Domains?: "Domains";
+            Domains: "Domains";
             /** @constant */
-            Track?: "Track";
+            Track: "Track";
             /** @constant */
-            Check?: "Check";
+            Check: "Check";
             /** @constant */
-            Track_continued?: "Track";
+            Track_continued: "Track";
             /** @constant */
-            Telegram?: "Telegram";
+            Telegram: "Telegram";
             /** @constant */
-            Link_to_telegram?: "Link to Telegram";
+            Link_to_telegram: "Link to Telegram";
             /** @constant */
-            Other?: "Other";
+            Other: "Other";
             /** @constant */
-            Other_f?: "Other";
+            Other_f: "Other";
             /** @constant */
-            Proceed?: "Proceed";
+            Proceed: "Proceed";
             /** @constant */
-            Projects?: "Projects";
+            Projects: "Projects";
             /** @constant */
-            Metrika?: "Yandex.Metrica";
+            Metrika: "Yandex.Metrica";
             /** @constant */
-            Webmaster?: "Yandex.Webmaster";
+            Webmaster: "Yandex.Webmaster";
             /** @constant */
-            Yandex_Direct?: "Yandex Direct";
+            Yandex_Direct: "Yandex Direct";
             /** @constant */
-            YandexDirect?: "Yandex.Direct";
+            YandexDirect: "Yandex.Direct";
             /** @constant */
-            Yandex_Wordstat?: "Yandex Wordstat";
+            Yandex_Wordstat: "Yandex Wordstat";
             /** @constant */
-            Y_freq?: "Volume";
+            Y_freq: "Volume";
             /** @constant */
-            Y_freq2?: "\"Volume\"";
+            Y_freq2: "\"Volume\"";
             /** @constant */
-            Y_freq3?: "\"!Volume\"";
+            Y_freq3: "\"!Volume\"";
             /** @constant */
-            Y_freq5?: "\"[Volume]\"";
+            Y_freq5: "\"[Volume]\"";
             /** @constant */
-            Y_freq6?: "\"[!Volume]\"";
+            Y_freq6: "\"[!Volume]\"";
             /** @constant */
-            G_freq2?: "\"[Volume]\"";
+            G_freq2: "\"[Volume]\"";
             /** @constant */
-            M_freq2?: "\"Volume\"";
+            M_freq2: "\"Volume\"";
             /** @constant */
-            Y_price1?: "1st Premium";
+            Y_price1: "1st Premium";
             /** @constant */
-            Y_price2?: "2st Premium";
+            Y_price2: "2st Premium";
             /** @constant */
-            Y_price3?: "Premium";
+            Y_price3: "Premium";
             /** @constant */
-            Y_price4?: "1st place";
+            Y_price4: "1st place";
             /** @constant */
-            Y_price5?: "Guaranteed";
+            Y_price5: "Guaranteed";
             /** @constant */
-            G_price?: "Bid";
+            G_price: "Bid";
             /** @constant */
-            Search_engine?: "Search engine";
+            Search_engine: "Search engine";
             /** @constant */
-            Search_engines?: "Search engines";
+            Search_engines: "Search engines";
             /** @constant */
-            Region?: "Location";
+            Region: "Location";
             /** @constant */
-            region?: "location";
+            region: "location";
             /** @constant */
-            Selected_regions?: "Selected locations";
+            Selected_regions: "Selected locations";
             /** @constant */
-            Compare?: "Compare";
+            Compare: "Compare";
             /** @constant */
-            Folder?: "Folder";
+            Folder: "Folder";
             /** @constant */
-            Group?: "Group";
+            Group: "Group";
             /** @constant */
-            Visibility?: "Visibility";
+            Visibility: "Visibility";
             /** @constant */
-            Average?: "Avg.pos.";
+            Average: "Avg.pos.";
             /** @constant */
-            Average_position?: "Average position";
+            Average_position: "Average position";
             /** @constant */
-            Add?: "Add";
+            Add: "Add";
             /** @constant */
-            Create?: "Create";
+            Create: "Create";
             /** @constant */
-            Move?: "Move";
+            Move: "Move";
             /** @constant */
-            Delete?: "Delete";
+            Delete: "Delete";
             /** @constant */
-            Replace?: "Repalce";
+            Replace: "Repalce";
             /** @constant */
-            Restore?: "Restore";
+            Restore: "Restore";
             /** @constant */
-            Copy?: "Copy";
+            Copy: "Copy";
             /** @constant */
-            Copy2?: "Copy";
+            Copy2: "Copy";
             /** @constant */
-            Remove?: "Delete";
+            Remove: "Delete";
             /** @constant */
-            Charge?: "You will be charged";
+            Charge: "You will be charged";
             /** @constant */
-            confirm?: "confirm";
+            confirm: "confirm";
             /** @constant */
-            Confirm?: "Confirm";
+            Confirm: "Confirm";
             /** @constant */
-            Delete_selected?: "Delete selected";
+            Delete_selected: "Delete selected";
             /** @constant */
-            Delete_all?: "Delete all";
+            Delete_all: "Delete all";
             /** @constant */
-            Traffic?: "Traffic";
+            Traffic: "Traffic";
             /** @constant */
-            Positions?: "Rankings";
+            Positions: "Rankings";
             /** @constant */
-            Keyword?: "Keyword";
+            Keyword: "Keyword";
             /** @constant */
-            Key_word?: "Keyword";
+            Key_word: "Keyword";
             /** @constant */
-            Settings?: "Settings";
+            Settings: "Settings";
             /** @constant */
-            Settings_URL?: "URL Settings";
+            Settings_URL: "URL Settings";
             /** @constant */
-            Irreversible?: "Important! This operation cannot be undone.";
+            Irreversible: "Important! This operation cannot be undone.";
             /** @constant */
-            Empty_field?: "Missing";
+            Empty_field: "Missing";
             /** @constant */
-            Notification?: "Notifications";
+            Notification: "Notifications";
             /** @constant */
-            Personal_project?: "My project";
+            Personal_project: "My project";
             /** @constant */
-            Agreement?: "Terms of Service";
+            Agreement: "Terms of Service";
             /** @constant */
-            Period?: "Period";
+            Period: "Period";
             /** @constant */
-            Config_is_readonly?: "You cannot change project settings until tracking is completed";
+            Config_is_readonly: "You cannot change project settings until tracking is completed";
             /** @constant */
-            regions?: "locations";
+            regions: "locations";
             /** @constant */
-            types?: "types";
+            types: "types";
             /** @constant */
-            Select_date?: "Select date";
+            Select_date: "Select date";
             /** @constant */
-            Not_date?: "Not date";
+            Not_date: "Not date";
             /** @constant */
-            Close_window?: "Close window";
+            Close_window: "Close window";
             /** @constant */
-            Dashboard?: "Dashboard";
+            Dashboard: "Dashboard";
             /** @constant */
-            Support?: "Help center";
+            Support: "Help center";
             /** @constant */
-            Shortener?: "URL shortener";
+            Shortener: "URL shortener";
             /** @constant */
-            Journal?: "Journal";
+            Journal: "Journal";
             /** @constant */
-            Academy?: "Academy";
+            Academy: "Academy";
             /** @constant */
-            Pricing?: "Pricing";
+            Pricing: "Pricing";
             /** @constant */
-            Signup?: "Sign up";
+            Signup: "Sign up";
             /** @constant */
-            Sign_up?: "Sign up";
+            Sign_up: "Sign up";
             /** @constant */
-            Sign_up_2?: "Sign up";
+            Sign_up_2: "Sign up";
             /** @constant */
-            Sign_in?: "Sign in";
+            Sign_in: "Sign in";
             /** @constant */
-            Sign_in_account?: "Sign in";
+            Sign_in_account: "Sign in";
             /** @constant */
-            Sign_out?: "Sign out";
+            Sign_out: "Sign out";
             /** @constant */
-            Server_response?: "Server response";
+            Server_response: "Server response";
             /** @constant */
-            Red?: "Red";
+            Red: "Red";
             /** @constant */
-            Orange?: "Orange";
+            Orange: "Orange";
             /** @constant */
-            Yellow?: "Yellow";
+            Yellow: "Yellow";
             /** @constant */
-            Blue?: "Blue";
+            Blue: "Blue";
             /** @constant */
-            Purple?: "Purple";
+            Purple: "Purple";
             /** @constant */
-            Green?: "Green";
+            Green: "Green";
             /** @constant */
-            Magenta?: "Magenta";
+            Magenta: "Magenta";
             /** @constant */
-            Dark_blue?: "Dark blue";
+            Dark_blue: "Dark blue";
             /** @constant */
-            Turquoise?: "Turquoise";
+            Turquoise: "Turquoise";
             /** @constant */
-            Frequency?: "Volume";
+            Frequency: "Volume";
             /** @constant */
-            Moscow?: "Moscow";
+            Moscow: "Moscow";
             /** @constant */
-            Minsk?: "Minsk";
+            Minsk: "Minsk";
             /** @constant */
-            Kyiv?: "Kyiv";
+            Kyiv: "Kyiv";
             /** @constant */
-            London?: "London";
+            London: "London";
             /** @constant */
-            NewYork?: "New York";
+            NewYork: "New York";
             /** @constant */
-            StPetersburg?: "St. Petersburg";
+            StPetersburg: "St. Petersburg";
             /** @constant */
-            Almaty?: "Almaty";
+            Almaty: "Almaty";
             /** @constant */
-            Russia?: "Russia";
+            Russia: "Russia";
             /** @constant */
-            Ukraine?: "Ukraine";
+            Ukraine: "Ukraine";
             /** @constant */
-            Kazakhstan?: "Kazakhstan";
+            Kazakhstan: "Kazakhstan";
             /** @constant */
-            Belarus?: "Belarus";
+            Belarus: "Belarus";
             /** @constant */
-            Sum?: "Amount";
+            Sum: "Amount";
             /** @constant */
-            Date?: "Date";
+            Date: "Date";
             /** @constant */
-            Week?: "Week";
+            Week: "Week";
             /** @constant */
-            Month?: "Month";
+            Month: "Month";
             /** @constant */
-            month?: "month";
+            month: "month";
             /** @constant */
-            months?: "months";
+            months: "months";
             /** @constant */
-            months_mult?: "months";
+            months_mult: "months";
             /** @constant */
-            months_6?: "6 months";
+            months_6: "6 months";
             /** @constant */
-            Quarter?: "Quarter";
+            Quarter: "Quarter";
             /** @constant */
-            Year?: "Year";
+            Year: "Year";
             /** @constant */
-            Total?: "Total";
+            Total: "Total";
             /** @constant */
-            TOTAL?: "TOTAL";
+            TOTAL: "TOTAL";
             /** @constant */
-            Yandex_update?: "Yandex update";
+            Yandex_update: "Yandex update";
             /** @constant */
-            "\u0441ode"?: "code";
+            "\u0441ode": "code";
             /** @constant */
-            Thank_you?: "Thank you!";
+            Thank_you: "Thank you!";
             /** @constant */
-            Thank_you_for_using_our_tools?: "Thank you for using our tools";
+            Thank_you_for_using_our_tools: "Thank you for using our tools";
             /** @constant */
-            Since?: "Since";
+            Since: "Since";
             /** @constant */
-            Till?: "Till";
+            Till: "Till";
             /** @constant */
-            till?: "up to";
+            till: "up to";
             /** @constant */
-            Yandex?: "Yandex";
+            Yandex: "Yandex";
             /** @constant */
-            Position?: "Rank";
+            Position: "Rank";
             /** @constant */
-            Impressions?: "Impressions";
+            Impressions: "Impressions";
             /** @constant */
-            Demand?: "Demand";
+            Demand: "Demand";
             /** @constant */
-            FAQ?: "FAQ";
+            FAQ: "FAQ";
             /** @constant */
-            Frequently_asked_questions?: "Frequently asked questions";
+            Frequently_asked_questions: "Frequently asked questions";
             /** @constant */
-            Owner?: "Owner";
+            Owner: "Owner";
             /** @constant */
-            level?: "level";
+            level: "level";
             /** @constant */
-            No_payments?: "No payments yet";
+            No_payments: "No payments yet";
             /** @constant */
-            Show_legend?: "Show legend";
+            Show_legend: "Show legend";
             /** @constant */
-            Hide_legend?: "Hide legend";
+            Hide_legend: "Hide legend";
             /** @constant */
-            Menu_expand?: "Expand menu";
+            Menu_expand: "Expand menu";
             /** @constant */
-            Menu_unexpand?: "Minimize menu";
+            Menu_unexpand: "Minimize menu";
             /** @constant */
-            Menu_dynamics_search?: "Search";
+            Menu_dynamics_search: "Search";
             /** @constant */
-            Menu_dynamics?: "Rank Tracker";
+            Menu_dynamics: "Rank Tracker";
             /** @constant */
-            Menu_snapshots?: "SERP Snapshots";
+            Menu_snapshots: "SERP Snapshots";
             /** @constant */
-            Menu_competitors?: "My competitors";
+            Menu_competitors: "My competitors";
             /** @constant */
-            Menu_phrases?: "Keywords";
+            Menu_phrases: "Keywords";
             /** @constant */
-            Menu_audit?: "Audit";
+            Menu_audit: "Audit";
             /** @constant */
-            Menu_analytics?: "Overview";
+            Menu_analytics: "Overview";
             /** @constant */
-            Menu_PPC?: "PPC";
+            Menu_PPC: "PPC";
             /** @constant */
-            Menu_broker?: "Yandex.Direct";
+            Menu_broker: "Yandex.Direct";
             /** @constant */
-            Menu_settings?: "Settings";
+            Menu_settings: "Settings";
             /** @constant */
-            Menu_more?: "More";
+            Menu_more: "More";
             /** @constant */
-            Folders?: "Folders";
+            Folders: "Folders";
             /** @constant */
-            Groups?: "Groups";
+            Groups: "Groups";
             /** @constant */
-            Keywords?: "Keywords";
+            Keywords: "Keywords";
             /** @constant */
-            of_keywords?: "keywords";
+            of_keywords: "keywords";
             /** @constant */
-            of_folders?: "folders";
+            of_folders: "folders";
             /** @constant */
-            of_projects?: "projects";
+            of_projects: "projects";
             /** @constant */
-            of_project1?: "for project";
+            of_project1: "for project";
             /** @constant */
-            for_project?: "for project";
+            for_project: "for project";
             /** @constant */
-            competitor?: "competitor";
+            competitor: "competitor";
             /** @constant */
-            All_groups?: "All groups";
+            All_groups: "All groups";
             /** @constant */
-            All_folders?: "All folders";
+            All_folders: "All folders";
             /** @constant */
-            All_regions?: "All locations";
+            All_regions: "All locations";
             /** @constant */
-            All_searchers?: "All search engines";
+            All_searchers: "All search engines";
             /** @constant */
-            All_projects?: "All projects";
+            All_projects: "All projects";
             /** @constant */
-            Integration?: "Integration";
+            Integration: "Integration";
             /** @constant */
-            updates_days?: "update days";
+            updates_days: "update days";
             /** @constant */
-            whole_period?: "the entire period";
+            whole_period: "the entire period";
             /** @constant */
-            two_dates?: "two dates";
+            two_dates: "two dates";
             /** @constant */
-            Report_for_project?: "Project report for";
+            Report_for_project: "Project report for";
             /** @constant */
-            Interval?: "Time range";
+            Interval: "Time range";
             /** @constant */
-            competitors_comparison?: "compare with competitors";
+            competitors_comparison: "compare with competitors";
             /** @constant */
-            Searchers_comparison?: "Compare by search engine";
+            Searchers_comparison: "Compare by search engine";
             /** @constant */
-            Regions_comparison?: "Compare by location";
+            Regions_comparison: "Compare by location";
             /** @constant */
-            Browser_not_supported?: "Your browser is not supported!";
+            Browser_not_supported: "Your browser is not supported!";
             /** @constant */
-            Browser_settings?: "Browser settings";
+            Browser_settings: "Browser settings";
             /** @constant */
-            Service_may_go_unstable?: "Service might be unstable";
+            Service_may_go_unstable: "Service might be unstable";
             /** @constant */
-            Preferred_browser?: "Compatible browser is";
+            Preferred_browser: "Compatible browser is";
             /** @constant */
-            Comparison_by?: "Compare by";
+            Comparison_by: "Compare by";
             /** @constant */
-            Phrases?: "Keywords";
+            Phrases: "Keywords";
             /** @constant */
-            TOP?: "TOP";
+            TOP: "TOP";
             /** @constant */
-            Top?: "Top";
+            Top: "Top";
             /** @constant */
-            Phrases_dynamics?: "Keyword dynamics";
+            Phrases_dynamics: "Keyword dynamics";
             /** @constant */
-            Project_settings?: "Project settings";
+            Project_settings: "Project settings";
             /** @constant */
-            Phrases_in_TOP?: "Keywords in TOP";
+            Phrases_in_TOP: "Keywords in TOP";
             /** @constant */
-            Phrases_in_Top?: "Keywords in Top";
+            Phrases_in_Top: "Keywords in Top";
             /** @constant */
-            Page?: "Page";
+            Page: "Page";
             /** @constant */
-            page?: "page";
+            page: "page";
             /** @constant */
-            last_10_days?: "last 10 days";
+            last_10_days: "last 10 days";
             /** @constant */
-            last_month?: "last month";
+            last_month: "last month";
             /** @constant */
-            last_check?: "last update";
+            last_check: "last update";
             /** @constant */
-            last_two_dates?: "last 2 updates";
+            last_two_dates: "last 2 updates";
             /** @constant */
-            last_month_week_average?: "last month (week's average)";
+            last_month_week_average: "last month (week's average)";
             /** @constant */
-            also_searched?: "similar keywords";
+            also_searched: "similar keywords";
             /** @constant */
-            Sources?: "Sources";
+            Sources: "Sources";
             /** @constant */
-            Clicks?: "Clicks";
+            Clicks: "Clicks";
             /** @constant */
-            Other_dates?: "Other dates";
+            Other_dates: "Other dates";
             /** @constant */
-            Help_center?: "Help";
+            Help_center: "Help";
             /** @constant */
-            Help_center_welcome?: "Support Center";
+            Help_center_welcome: "Support Center";
             /** @constant */
-            Help_center_question?: "Got any questions?";
+            Help_center_question: "Got any questions?";
             /** @constant */
-            Run?: "Run";
+            Run: "Run";
             /** @constant */
-            Manage?: "Manage";
+            Manage: "Manage";
             /** @constant */
-            Missed_project_id?: "Project id is missing";
+            Missed_project_id: "Project id is missing";
             /** @constant */
-            Missed_project_id2?: "`Project_id` is missing";
+            Missed_project_id2: "`Project_id` is missing";
             /** @constant */
-            Project_analytics?: "Project analytics";
+            Project_analytics: "Project analytics";
             /** @constant */
-            Project_dynamics?: "Keyword dynamics";
+            Project_dynamics: "Keyword dynamics";
             /** @constant */
-            Apometr?: "Updates";
+            Apometr: "Updates";
             /** @constant */
-            Apometr_title?: "Google and Yandex SERP tracking tool";
+            Apometr_title: "Google and Yandex SERP tracking tool";
             /** @constant */
-            Apometr_description?: "Google and Yandex updates calendar (SERP updates and changes). Get SERP updates alerts. SERP updates score for different locations and content types.";
+            Apometr_description: "Google and Yandex updates calendar (SERP updates and changes). Get SERP updates alerts. SERP updates score for different locations and content types.";
             /** @constant */
-            Apometr_og_title?: "Google and Yandex SERP updates";
+            Apometr_og_title: "Google and Yandex SERP updates";
             /** @constant */
-            Apometr_og_description?: "SERP updates score for different locations and content types.";
+            Apometr_og_description: "SERP updates score for different locations and content types.";
             /** @constant */
-            Apometr_notice?: "Get update alerts";
+            Apometr_notice: "Get update alerts";
             /** @constant */
-            Pricing_title?: "Pricing";
+            Pricing_title: "Pricing";
             /** @constant */
-            Profile_title?: "Account";
+            Profile_title: "Account";
             /** @constant */
-            Bank_title?: "Bank";
+            Bank_title: "Bank";
             /** @constant */
-            Your_projects?: "Your projects";
+            Your_projects: "Your projects";
             /** @constant */
-            Incorrect_file_format?: "Invalid file format (expected: %availableExtensionsNames%)";
+            Incorrect_file_format: "Invalid file format (expected: %availableExtensionsNames%)";
             /** @constant */
-            Max_size?: "Maximum upload size exceeded (%maxSize%)";
+            Max_size: "Maximum upload size exceeded (%maxSize%)";
             /** @constant */
-            Audit?: "Website SEO Audit tool";
+            Audit: "Website SEO Audit tool";
             /** @constant */
-            Tutorial?: "Tutorials";
+            Tutorial: "Tutorials";
             /** @constant */
-            User_id?: "User ID";
+            User_id: "User ID";
             /** @constant */
-            Managing_executive?: "Managing executive";
+            Managing_executive: "Managing executive";
             /** @constant */
-            Pustovoit?: "Pustovoit";
+            Pustovoit: "Pustovoit";
             /** @constant */
-            Denis?: "Denis";
+            Denis: "Denis";
             /** @constant */
-            Anatolyevich?: "Anatolyevich";
+            Anatolyevich: "Anatolyevich";
             /** @constant */
-            CEO?: "Chief Executive Officer";
+            CEO: "Chief Executive Officer";
             /** @constant */
-            office?: "office";
+            office: "office";
             /** @constant */
-            Dot?: "Dot";
+            Dot: "Dot";
             /** @constant */
-            Comma?: "Comma";
+            Comma: "Comma";
             /** @constant */
-            Enter_manually?: "Add manually";
+            Enter_manually: "Add manually";
             /** @constant */
-            max_10_mb?: "max 10 Mb";
+            max_10_mb: "max 10 Mb";
             /** @constant */
-            Schedule_settings_checks?: "Checks schedule";
+            Schedule_settings_checks: "Checks schedule";
             /** @constant */
-            Schedule_settings_reports?: "Reports schedule";
+            Schedule_settings_reports: "Reports schedule";
             /** @constant */
-            Basic?: "Basic";
+            Basic: "Basic";
             /** @constant */
-            Address_IP?: "IP address";
+            Address_IP: "IP address";
             /** @constant */
-            Phone_number?: "Phone number";
+            Phone_number: "Phone number";
             /** @constant */
-            Recipient?: "Recipient";
+            Recipient: "Recipient";
             /** @constant */
-            Federal_act?: " Federal act";
+            Federal_act: " Federal act";
             /** @constant */
-            optional?: "optional";
+            optional: "optional";
             /** @constant */
-            Full_name_abbr?: "Full name";
+            Full_name_abbr: "Full name";
             /** @constant */
-            Mobile_phone?: "Mobile phone";
+            Mobile_phone: "Mobile phone";
             /** @constant */
-            not_found?: "not found";
+            not_found: "not found";
             /** @constant */
-            Try_to_reset_filters_or_search_archive_html?: "Try to <i class=\"a\" data-action=\"reset_filters\">reset</i> all filters<br><i class=\"archive_search\">\n\tor search <a href=\"/support/projects/archive\" target=\"_blank\" class=\"a\">Archived</a> projects</i>";
+            Try_to_reset_filters_or_search_archive_html: "Try to <i class=\"a\" data-action=\"reset_filters\">reset</i> all filters<br><i class=\"archive_search\">\n\tor search <a href=\"/support/projects/archive\" target=\"_blank\" class=\"a\">Archived</a> projects</i>";
             /** @constant */
-            Print?: "Print";
+            Print: "Print";
             /** @constant */
-            Contact_us?: "Contact us";
+            Contact_us: "Contact us";
             /** @constant */
-            Competitor_analysis?: "Competitor research";
+            Competitor_analysis: "Competitor research";
             /** @constant */
-            Refill_balance?: "Top up your balance";
+            Refill_balance: "Top up your balance";
             /** @constant */
-            Median?: "Median";
+            Median: "Median";
             /** @constant */
-            Reset?: "Reset";
+            Reset: "Reset";
             /** @constant */
-            View?: "View";
+            View: "View";
             /** @constant */
-            Bar_pin?: "Pin bar";
+            Bar_pin: "Pin bar";
             /** @constant */
-            Count?: "Number";
+            Count: "Number";
             /** @constant */
-            Invalid_url?: "Invalid URL format";
+            Invalid_url: "Invalid URL format";
             /** @constant */
-            Access_settings?: "Access settings";
+            Access_settings: "Access settings";
             /** @constant */
-            Hide_access_settings?: "Hide access settings";
+            Hide_access_settings: "Hide access settings";
             /** @constant */
-            Sort?: "Sort";
+            Sort: "Sort";
             /** @constant */
-            No_snippet?: "No snippet";
+            No_snippet: "No snippet";
             /** @constant */
-            Copied_to_clipboard?: "Copied to clipboard";
+            Copied_to_clipboard: "Copied to clipboard";
             /** @constant */
-            Cannot_copied_to_clipboard?: "Cannot copied to clipboard";
+            Cannot_copied_to_clipboard: "Cannot copied to clipboard";
             /** @constant */
-            Copy_guest_link_manually?: "Copy the guest link manually";
+            Copy_guest_link_manually: "Copy the guest link manually";
             /** @constant */
-            Press_to_copy_1?: "Press";
+            Press_to_copy_1: "Press";
             /** @constant */
-            Press_to_copy_2?: "+C to copy a link";
+            Press_to_copy_2: "+C to copy a link";
             /** @constant */
-            Guest_link_created?: "Guest link created";
+            Guest_link_created: "Guest link created";
             /** @constant */
-            Need_fill_required_fields?: "Please fill in all required fields";
+            Need_fill_required_fields: "Please fill in all required fields";
         };
     };
     responses: never;

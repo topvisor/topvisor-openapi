@@ -10,49 +10,49 @@ export interface components {
         /** Интерфейс настроек сайта */
         "TV.Types.Config.Site": {
             /** @constant */
-            ID?: "No set";
+            ID: "No set";
             /** @constant */
-            ID_ASSETS?: "No set";
+            ID_ASSETS: "No set";
             /** @constant */
-            HOST?: "No set";
+            HOST: "No set";
             /** @constant */
-            HOST_DEV?: "No set";
+            HOST_DEV: "No set";
             /** @constant */
-            LANGUAGES?: never[];
+            LANGUAGES: never[];
             /** @constant */
-            LANGUAGE_MAIN?: "No set";
+            LANGUAGE_MAIN: "No set";
             /** @constant */
-            LANGUAGES_ADDITIONAL?: never[];
+            LANGUAGES_ADDITIONAL: never[];
             /** @constant */
-            CURRENCIES?: [
+            CURRENCIES: [
                 "No set"
             ];
             /** @constant */
-            SUBDOMAINS?: never[];
+            SUBDOMAINS: never[];
             /** @constant */
-            THEMES?: never[];
+            THEMES: never[];
             /** @constant */
-            MAILING_EMAIL?: "No set";
+            MAILING_EMAIL: "No set";
             /** @constant */
-            MAILING_ALT_EMAIL?: "No set";
+            MAILING_ALT_EMAIL: "No set";
             /** @constant */
-            SUPPORT_EMAIL?: "No set";
+            SUPPORT_EMAIL: "No set";
             /** @constant */
-            NO_REPLY_EMAIL?: "No set";
+            NO_REPLY_EMAIL: "No set";
             /** @constant */
-            CLOSED_BY_MOD?: never[];
+            CLOSED_BY_MOD: never[];
             /** @constant */
-            INN?: "No set";
+            INN: "No set";
             /** @constant */
-            COUNTER_YANDEX?: "No set";
+            COUNTER_YANDEX: "No set";
             /** @constant */
-            COUNTER_YANDEX_JOURNAL?: "No set";
+            COUNTER_YANDEX_JOURNAL: "No set";
             /** @constant */
-            COUNTER_GOOGLE?: "No set";
+            COUNTER_GOOGLE: "No set";
             /** @constant */
-            COUNTER_GOOGLE_JOURNAL?: "No set";
+            COUNTER_GOOGLE_JOURNAL: "No set";
             /** @constant */
-            DIADOC_ID?: 10000;
+            DIADOC_ID: 10000;
         };
     };
     responses: never;

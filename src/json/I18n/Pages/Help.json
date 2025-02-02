@@ -20,7 +20,12 @@
                         "const": "Contact us"
                     }
                 },
-                "required": []
+                "required": [
+                    "Intro",
+                    "Contact_title",
+                    "Contact_text",
+                    "Contact"
+                ]
             }
         }
     }

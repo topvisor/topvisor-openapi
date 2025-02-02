@@ -17,7 +17,10 @@
                         "const": "To transfer control over a project, enter the user's email in the form below and click"
                     }
                 },
-                "required": []
+                "required": [
+                    "Change_project_owner_description",
+                    "Transfer_control_over_project"
+                ]
             }
         }
     }

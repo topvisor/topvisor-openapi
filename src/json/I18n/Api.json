@@ -44,7 +44,19 @@
                         "const": "PHP SDK example on GitHub"
                     }
                 },
-                "required": []
+                "required": [
+                    "View_in_API_explorer",
+                    "Add_parameter",
+                    "Add_parameter_array",
+                    "Select_data_to_return",
+                    "Add_filter",
+                    "Add_sorting",
+                    "Set_limit",
+                    "Set_offset",
+                    "Developer_documentation",
+                    "Ask_questions_get_answers",
+                    "PHP_SDK_example_githab"
+                ]
             }
         }
     }

@@ -9,9 +9,9 @@ export interface components {
     schemas: {
         "I18n.Admin": {
             /** @constant */
-            Warning_message?: "";
+            Warning_message: "";
             /** @constant */
-            Warning_message_admin?: "";
+            Warning_message_admin: "";
         };
     };
     responses: never;

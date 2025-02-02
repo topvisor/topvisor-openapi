@@ -32,7 +32,15 @@
                         "const": "Generate sitemap"
                     }
                 },
-                "required": []
+                "required": [
+                    "Settings",
+                    "Popup_go_text_before_select",
+                    "Popup_go_text_before_price",
+                    "Max_pages",
+                    "Info_cost",
+                    "Hint_not_checks_text",
+                    "Hint_not_checks_btn"
+                ]
             }
         }
     }

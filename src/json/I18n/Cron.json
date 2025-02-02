@@ -44,7 +44,19 @@
                         "const": "Enabled"
                     }
                 },
-                "required": []
+                "required": [
+                    "Field_command",
+                    "Field_description",
+                    "Field_days",
+                    "Field_hh",
+                    "Field_i",
+                    "Field_on",
+                    "Field_task_create_time",
+                    "Field_task_start_time",
+                    "Field_task_status",
+                    "Disabled",
+                    "Enabled"
+                ]
             }
         }
     }

@@ -76,7 +76,29 @@
                         "const": 10000
                     }
                 },
-                "required": [],
+                "required": [
+                    "ID",
+                    "ID_ASSETS",
+                    "HOST",
+                    "HOST_DEV",
+                    "LANGUAGES",
+                    "LANGUAGE_MAIN",
+                    "LANGUAGES_ADDITIONAL",
+                    "CURRENCIES",
+                    "SUBDOMAINS",
+                    "THEMES",
+                    "MAILING_EMAIL",
+                    "MAILING_ALT_EMAIL",
+                    "SUPPORT_EMAIL",
+                    "NO_REPLY_EMAIL",
+                    "CLOSED_BY_MOD",
+                    "INN",
+                    "COUNTER_YANDEX",
+                    "COUNTER_YANDEX_JOURNAL",
+                    "COUNTER_GOOGLE",
+                    "COUNTER_GOOGLE_JOURNAL",
+                    "DIADOC_ID"
+                ],
                 "title": "Интерфейс настроек сайта"
             }
         }

@@ -35,7 +35,16 @@
                         "const": "In progress"
                     }
                 },
-                "required": []
+                "required": [
+                    "Check_positions",
+                    "Check_audit",
+                    "Check_watcher",
+                    "Check_indexing",
+                    "Check_sitemap",
+                    "Last_check",
+                    "In_queue",
+                    "In_work"
+                ]
             }
         }
     }

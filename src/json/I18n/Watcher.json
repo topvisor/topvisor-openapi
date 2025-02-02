@@ -86,7 +86,26 @@
                         "const": "Launch Watcher"
                     }
                 },
-                "required": []
+                "required": [
+                    "Settings",
+                    "menu",
+                    "Status_code",
+                    "Without_changes",
+                    "Fulltext",
+                    "Only_with_changed",
+                    "Header_start_short",
+                    "Common_settings",
+                    "Tracking",
+                    "Cut_script",
+                    "Scan_method",
+                    "Strip_tags",
+                    "Change_history",
+                    "Hints_settings",
+                    "Hint_not_urls_text",
+                    "Hint_not_urls_btn",
+                    "Hint_not_checks_text",
+                    "Hint_not_checks_btn"
+                ]
             }
         }
     }

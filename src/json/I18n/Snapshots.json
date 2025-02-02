@@ -113,7 +113,42 @@
                         "const": "Open keyword snapshot"
                     }
                 },
-                "required": []
+                "required": [
+                    "Snippets_in_snapshots",
+                    "No_snapshots_these_dates_note",
+                    "Snapshots_for_keyword",
+                    "Add_keyword_to_see_snapshot",
+                    "Add_keyword_to_compare",
+                    "not_in_competitor_list",
+                    "in_competitor_list",
+                    "To_manage_competitors_move",
+                    "move_to_settings",
+                    "Read_competitor_help_article",
+                    "Competitor_website",
+                    "Save_snapshot_top_N",
+                    "Do_not_save",
+                    "selected_keywords_only",
+                    "Saved_list",
+                    "First_40_keywords",
+                    "Save_list",
+                    "Clear_list",
+                    "Highlight",
+                    "Hide_domains",
+                    "Hide_domains_comment",
+                    "Highlighting_error",
+                    "Competitor_URLs",
+                    "Add_to_competitors",
+                    "Remove_from_competitors",
+                    "Added_competitors",
+                    "Compare_all_keywords",
+                    "Keyword_dynamics",
+                    "Select_keyword",
+                    "Snippets_no_checked",
+                    "Snippets_no_checking",
+                    "Snapshots_checks_in_progress_1",
+                    "Snapshots_checks_in_progress_2",
+                    "Open_keyword_snapshot"
+                ]
             }
         }
     }

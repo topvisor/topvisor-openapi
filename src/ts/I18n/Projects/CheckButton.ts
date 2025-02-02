@@ -9,21 +9,21 @@ export interface components {
     schemas: {
         "I18n.Projects.CheckButton": {
             /** @constant */
-            Check_positions?: "Check Rankings";
+            Check_positions: "Check Rankings";
             /** @constant */
-            Check_audit?: "Run Audit";
+            Check_audit: "Run Audit";
             /** @constant */
-            Check_watcher?: "Track changes";
+            Check_watcher: "Track changes";
             /** @constant */
-            Check_indexing?: "Check indexing";
+            Check_indexing: "Check indexing";
             /** @constant */
-            Check_sitemap?: "Generate sitemap";
+            Check_sitemap: "Generate sitemap";
             /** @constant */
-            Last_check?: "Last check";
+            Last_check: "Last check";
             /** @constant */
-            In_queue?: "In queue";
+            In_queue: "In queue";
             /** @constant */
-            In_work?: "In progress";
+            In_work: "In progress";
         };
     };
     responses: never;

@@ -32,7 +32,17 @@
                         "const": "Privacy Policy"
                     }
                 },
-                "required": []
+                "required": [
+                    "Title",
+                    "Description",
+                    "OpenGraph_title",
+                    "OpenGraph_description",
+                    "Enter_promocode",
+                    "Promocode",
+                    "By_pressing_sign_up_you_accept",
+                    "Terms_and_conditions",
+                    "Privacy_policy"
+                ]
             }
         }
     }

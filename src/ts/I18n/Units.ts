@@ -9,11 +9,11 @@ export interface components {
     schemas: {
         "I18n.Units": {
             /** @constant */
-            s?: "s";
+            s: "s";
             /** @constant */
-            ms?: "ms";
+            ms: "ms";
             /** @constant */
-            KB?: "KB";
+            KB: "KB";
         };
     };
     responses: never;

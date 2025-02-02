@@ -32,7 +32,15 @@
                         "const": "Pustovoyt Denis Anatolievich"
                     }
                 },
-                "required": []
+                "required": [
+                    "Description",
+                    "Street_address",
+                    "Address_locality",
+                    "Address_region",
+                    "Address_country",
+                    "Contact_type",
+                    "General_manager"
+                ]
             }
         }
     }

@@ -38,7 +38,17 @@
                         "const": "Отправить тикет"
                     }
                 },
-                "required": []
+                "required": [
+                    "Question_is_article_useful",
+                    "Message_after_good_vote",
+                    "Message_after_bad_vote",
+                    "Question_after_good_vote",
+                    "Question_after_bad_vote",
+                    "Message_after_comment_good_vote",
+                    "Message_after_comment_bad_vote",
+                    "Submit",
+                    "SendTicket"
+                ]
             }
         }
     }

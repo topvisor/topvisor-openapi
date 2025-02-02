@@ -9,147 +9,147 @@ export interface components {
     schemas: {
         "I18n.Footer": {
             /** @constant */
-            Suggestions_tool?: "Search Suggestions Tool";
+            Suggestions_tool: "Search Suggestions Tool";
             /** @constant */
-            Rank_and_SERP_top_cheking?: "Rank and SERP Top checking";
+            Rank_and_SERP_top_cheking: "Rank and SERP Top checking";
             /** @constant */
-            Semantics?: "Semantics";
+            Semantics: "Semantics";
             /** @constant */
-            Technical_SEO?: "Technical SEO";
+            Technical_SEO: "Technical SEO";
             /** @constant */
-            Miscellaneous?: "Miscellaneous";
+            Miscellaneous: "Miscellaneous";
             /** @constant */
-            About_us?: "About us";
+            About_us: "About us";
             /** @constant */
-            Resources?: "Resources";
+            Resources: "Resources";
             /** @constant */
-            Questions?: "Got any questions?";
+            Questions: "Got any questions?";
             /** @constant */
-            Grouping_tool?: "Keyword Grouping Tool";
+            Grouping_tool: "Keyword Grouping Tool";
             /** @constant */
-            Research_tool?: "Keyword Research Tool";
+            Research_tool: "Keyword Research Tool";
             /** @constant */
-            Site_auditor?: "Website SEO Audit Tool";
+            Site_auditor: "Website SEO Audit Tool";
             /** @constant */
-            Site_watcher?: "Website Watcher (change tracking)";
+            Site_watcher: "Website Watcher (change tracking)";
             /** @constant */
-            SERP_snapshots_tool?: "SERP Snapshots Tool";
+            SERP_snapshots_tool: "SERP Snapshots Tool";
             /** @constant */
-            Index_checker_tool?: "Index Status checker";
+            Index_checker_tool: "Index Status checker";
             /** @constant */
-            Search_volume_tool?: "Search Volume Tool";
+            Search_volume_tool: "Search Volume Tool";
             /** @constant */
-            Sitemap_generator?: "Sitemap generator";
+            Sitemap_generator: "Sitemap generator";
             /** @constant */
-            Magnet_tool?: "Magnet (keyword ideas)";
+            Magnet_tool: "Magnet (keyword ideas)";
             /** @constant */
-            Semantic_core?: "Semantic core tools";
+            Semantic_core: "Semantic core tools";
             /** @constant */
-            PPC_bid_manager?: "PPC Bid Manager";
+            PPC_bid_manager: "PPC Bid Manager";
             /** @constant */
-            Competitor_research?: "Competitor research";
+            Competitor_research: "Competitor research";
             /** @constant */
-            Domain_name_transfer?: "Domain name transfer";
+            Domain_name_transfer: "Domain name transfer";
             /** @constant */
-            Domain_name_registration?: "Domain name registration";
+            Domain_name_registration: "Domain name registration";
             /** @constant */
-            Whois?: "Whois (Domain details)";
+            Whois: "Whois (Domain details)";
             /** @constant */
-            Case_championship?: "Case championship";
+            Case_championship: "Case championship";
             /** @constant */
-            Apometr_tool?: "Updates Scanner";
+            Apometr_tool: "Updates Scanner";
             /** @constant */
-            Reference?: "Reference";
+            Reference: "Reference";
             /** @constant */
-            API?: "API Documentation";
+            API: "API Documentation";
             /** @constant */
-            Referrals?: "Affiliate program";
+            Referrals: "Affiliate program";
             /** @constant */
-            Pricing?: "Tools and prices";
+            Pricing: "Tools and prices";
             /** @constant */
-            Sales?: "Sales";
+            Sales: "Sales";
             /** @constant */
-            Help?: "Help & Support";
+            Help: "Help & Support";
             /** @constant */
-            Help_center?: "Help Center";
+            Help_center: "Help Center";
             /** @constant */
-            Chat?: "Live Chat";
+            Chat: "Live Chat";
             /** @constant */
-            Join_vkontakte?: "Join us on Vkontakte";
+            Join_vkontakte: "Join us on Vkontakte";
             /** @constant */
-            Join_twitter?: "Follow us on Twitter";
+            Join_twitter: "Follow us on Twitter";
             /** @constant */
-            Join_telegram?: "Telegram channel";
+            Join_telegram: "Telegram channel";
             /** @constant */
-            Join_youtube?: "Youtube channel";
+            Join_youtube: "Youtube channel";
             /** @constant */
-            Website_rank_tracker?: "Rank Tracker Tool";
+            Website_rank_tracker: "Rank Tracker Tool";
             /** @constant */
-            Free_rank_checking?: "Free rank checker";
+            Free_rank_checking: "Free rank checker";
             /** @constant */
-            Cases?: "Best practices";
+            Cases: "Best practices";
             /** @constant */
-            URL_Shortener_policy?: "URL Shortener policy";
+            URL_Shortener_policy: "URL Shortener policy";
             /** @constant */
-            Privacy_policy?: "Privacy Policy";
+            Privacy_policy: "Privacy Policy";
             /** @constant */
-            Chrome_extension?: "Search results numbering extension for Google Chrome";
+            Chrome_extension: "Search results numbering extension for Google Chrome";
             /** @constant */
-            Firefox_extension?: "Search results numbering extension for Firefox";
+            Firefox_extension: "Search results numbering extension for Firefox";
             /** @constant */
-            Safari_extension?: "Safari extension";
+            Safari_extension: "Safari extension";
             /** @constant */
-            iOS_app?: "iOS Mobile app";
+            iOS_app: "iOS Mobile app";
             /** @constant */
-            Android_app?: "Android Mobile app";
+            Android_app: "Android Mobile app";
             /** @constant */
-            Electronic_workflow_system?: "Electronic document workflow";
+            Electronic_workflow_system: "Electronic document workflow";
             /** @constant */
-            Legal_payment?: "Company payment";
+            Legal_payment: "Company payment";
             /** @constant */
-            Support_ticket_system?: "Support Ticket System";
+            Support_ticket_system: "Support Ticket System";
             /** @constant */
-            Contact_details?: "Contact details";
+            Contact_details: "Contact details";
             /** @constant */
-            INN?: "INN";
+            INN: "INN";
             /** @constant */
-            KPP?: "KPP";
+            KPP: "KPP";
             /** @constant */
-            OGRN?: "OGRN";
+            OGRN: "OGRN";
             /** @constant */
-            OKVED?: "OKVED";
+            OKVED: "OKVED";
             /** @constant */
-            Business_card?: "Business card";
+            Business_card: "Business card";
             /** @constant */
-            Presentation?: "Presentation";
+            Presentation: "Presentation";
             /** @constant */
-            Cookie_policy?: "Cookie Policy";
+            Cookie_policy: "Cookie Policy";
             /** @constant */
-            Payment_methods?: "Payment Methods";
+            Payment_methods: "Payment Methods";
             /** @constant */
-            Mincom_accreditation?: "Certified by Ministry of Communications of Russia";
+            Mincom_accreditation: "Certified by Ministry of Communications of Russia";
             /** @constant */
-            Friends?: "Our Friends";
+            Friends: "Our Friends";
             /** @constant */
-            Trademark?: "Trademark";
+            Trademark: "Trademark";
             /** @constant */
-            included_into_Russian_software_register?: "included into Russian software register";
+            included_into_Russian_software_register: "included into Russian software register";
             /** @constant */
-            Contract_public_offer?: "Contract (public offer)";
+            Contract_public_offer: "Contract (public offer)";
             /** @constant */
-            Referral_program?: "Affiliate program";
+            Referral_program: "Affiliate program";
             /** @constant */
-            Referral_agreement?: "Affiliate offer agreement";
+            Referral_agreement: "Affiliate offer agreement";
             /** @constant */
-            Delegate_us_routine_slogan?: "Delegate us all routine and enjoy your job!";
+            Delegate_us_routine_slogan: "Delegate us all routine and enjoy your job!";
             /** @constant */
-            Social_links?: "Follow us";
+            Social_links: "Follow us";
             /** @constant */
-            Add_numbers_search_results?: "Numerate listings right on<br> the search results page";
+            Add_numbers_search_results: "Numerate listings right on<br> the search results page";
             /** @constant */
-            Install_for?: "Install for";
+            Install_for: "Install for";
             /** @constant */
-            Email_us_contact?: "We are eager to help! Email us";
+            Email_us_contact: "We are eager to help! Email us";
         };
     };
     responses: never;

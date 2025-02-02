@@ -14,7 +14,12 @@
                         "const": "ТV"
                     }
                 },
-                "required": []
+                "required": [
+                    "Name",
+                    "TV",
+                    "Organization",
+                    "Journal"
+                ]
             }
         }
     }

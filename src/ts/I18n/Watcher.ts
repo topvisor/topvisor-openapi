@@ -9,9 +9,9 @@ export interface components {
     schemas: {
         "I18n.Watcher": {
             /** @constant */
-            Settings?: "Watcher settings";
+            Settings: "Watcher settings";
             /** @constant */
-            menu?: {
+            menu: {
                 http_codes: "HTTP Code";
                 title: "Title";
                 description: "Description";
@@ -19,29 +19,29 @@ export interface components {
                 content: "Content";
             };
             /** @constant */
-            Status_code?: "Status";
+            Status_code: "Status";
             /** @constant */
-            Without_changes?: "Without changes";
+            Without_changes: "Without changes";
             /** @constant */
-            Fulltext?: "Full text";
+            Fulltext: "Full text";
             /** @constant */
-            Only_with_changed?: "With changes";
+            Only_with_changed: "With changes";
             /** @constant */
-            Header_start_short?: "Track";
+            Header_start_short: "Track";
             /** @constant */
-            Common_settings?: "Common settings";
+            Common_settings: "Common settings";
             /** @constant */
-            Tracking?: "Tracking";
+            Tracking: "Tracking";
             /** @constant */
-            Cut_script?: "Cut &lt;script&gt;";
+            Cut_script: "Cut &lt;script&gt;";
             /** @constant */
-            Scan_method?: "Scan method";
+            Scan_method: "Scan method";
             /** @constant */
-            Strip_tags?: "Text only / Cut tags";
+            Strip_tags: "Text only / Cut tags";
             /** @constant */
-            Change_history?: "Change history: ";
+            Change_history: "Change history: ";
             /** @constant */
-            Hints_settings?: {
+            Hints_settings: {
                 watcher_max_redirects: "";
                 watcher_user_agent: "User Agent can affect how the bot sees the site and how DDoS protection works.";
                 audit_page_delay: "";
@@ -58,13 +58,13 @@ export interface components {
                 watcher_strip_tags_from_result: "";
             };
             /** @constant */
-            Hint_not_urls_text?: "Add URLs to launch Watcher.<br>📡 <a href=\"/watcher/\" target=\"_blank\">How Website Watcher can help you →</a>";
+            Hint_not_urls_text: "Add URLs to launch Watcher.<br>📡 <a href=\"/watcher/\" target=\"_blank\">How Website Watcher can help you →</a>";
             /** @constant */
-            Hint_not_urls_btn?: "URLs";
+            Hint_not_urls_btn: "URLs";
             /** @constant */
-            Hint_not_checks_text?: "You've never launched Watcher in this project.<br>📡 <a href=\"/watcher/\" target=\"_blank\">How Website Watcher can help you →</a>";
+            Hint_not_checks_text: "You've never launched Watcher in this project.<br>📡 <a href=\"/watcher/\" target=\"_blank\">How Website Watcher can help you →</a>";
             /** @constant */
-            Hint_not_checks_btn?: "Launch Watcher";
+            Hint_not_checks_btn: "Launch Watcher";
         };
     };
     responses: never;

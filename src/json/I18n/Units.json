@@ -20,7 +20,11 @@
                         "const": "KB"
                     }
                 },
-                "required": []
+                "required": [
+                    "s",
+                    "ms",
+                    "KB"
+                ]
             }
         }
     }
