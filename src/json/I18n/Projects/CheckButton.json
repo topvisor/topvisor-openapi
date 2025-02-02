@@ -9,32 +9,7 @@
         "schemas": {
             "I18n.Projects.CheckButton": {
                 "type": "object",
-                "properties": {
-                    "Check_positions": {
-                        "const": "Check Rankings"
-                    },
-                    "Check_audit": {
-                        "const": "Run Audit"
-                    },
-                    "Check_watcher": {
-                        "const": "Track changes"
-                    },
-                    "Check_indexing": {
-                        "const": "Check indexing"
-                    },
-                    "Check_sitemap": {
-                        "const": "Generate sitemap"
-                    },
-                    "Last_check": {
-                        "const": "Last check"
-                    },
-                    "In_queue": {
-                        "const": "In queue"
-                    },
-                    "In_work": {
-                        "const": "In progress"
-                    }
-                },
+                "properties": {},
                 "required": []
             }
         }

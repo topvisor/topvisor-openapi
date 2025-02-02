@@ -7,14 +7,7 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        "I18n.Pages.Help": {
-            /** @constant */
-            Contact_title?: "Got any questions? Contact us";
-            /** @constant */
-            Contact_text?: "If you didn't find what you looked for in the Help Center, contact Support Team via Ticket System {{ telegramBotText }}\nor email <a href='mailto:{{ supportEmail }}' target='_blank'>{{ supportEmail }}</a>. We'll show how to find and set up the tool you need and answer all other questions.";
-            /** @constant */
-            Contact?: "Contact us";
-        };
+        "I18n.Pages.Help": Record<string, never>;
     };
     responses: never;
     parameters: never;

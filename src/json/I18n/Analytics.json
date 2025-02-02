@@ -9,11 +9,7 @@
         "schemas": {
             "I18n.Analytics": {
                 "type": "object",
-                "properties": {
-                    "Text_confirm_delete_widget": {
-                        "const": "Are you sure you want to delete this widget?"
-                    }
-                },
+                "properties": {},
                 "required": []
             }
         }

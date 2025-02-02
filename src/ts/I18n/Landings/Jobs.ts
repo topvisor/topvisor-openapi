@@ -7,16 +7,7 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        "I18n.Landings.Jobs": {
-            /** @constant */
-            Link_to_resume_or_comment?: "Link to your resume or a comment";
-            /** @constant */
-            Submit_button_text?: "I want to join!";
-            /** @constant */
-            Accept_user_agreement_text_befor_link?: "By submitting an application , I give my consent to the processing of private data in accordance with";
-            /** @constant */
-            Accept_user_agreement_link_text?: "Privacy Policy";
-        };
+        "I18n.Landings.Jobs": Record<string, never>;
     };
     responses: never;
     parameters: never;

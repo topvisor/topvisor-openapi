@@ -9,47 +9,7 @@
         "schemas": {
             "I18n.Landings.Price": {
                 "type": "object",
-                "properties": {
-                    "Depth": {
-                        "const": "depth"
-                    },
-                    "of_results": {
-                        "const": "results"
-                    },
-                    "of_keywords": {
-                        "const": "keywords"
-                    },
-                    "of_pages": {
-                        "const": "URLs"
-                    },
-                    "up_to": {
-                        "const": "up to"
-                    },
-                    "from": {
-                        "const": "from"
-                    },
-                    "Without_discount": {
-                        "const": "No discount"
-                    },
-                    "What_is_a_tariff": {
-                        "const": "What is a pricing plan (tariff)?"
-                    },
-                    "Rank_tracker_and_collecting_TOP": {
-                        "const": "Rank Tracking and SERP Top"
-                    },
-                    "Semantics": {
-                        "const": "Semantics"
-                    },
-                    "Technical_Seo": {
-                        "const": "Technical SEO"
-                    },
-                    "Yandex_direct": {
-                        "const": "Yandex Direct"
-                    },
-                    "Account": {
-                        "const": "Account"
-                    }
-                },
+                "properties": {},
                 "required": []
             }
         }

@@ -9,14 +9,7 @@
         "schemas": {
             "I18n.Thundo": {
                 "type": "object",
-                "properties": {
-                    "Og_title": {
-                        "const": "Thunder is coming"
-                    },
-                    "Og_description": {
-                        "const": "Fasten your seatbelts, we're about to transform the view of how to do SEO!"
-                    }
-                },
+                "properties": {},
                 "required": []
             }
         }

@@ -7,12 +7,7 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        "I18n.Thundo": {
-            /** @constant */
-            Og_title?: "Thunder is coming";
-            /** @constant */
-            Og_description?: "Fasten your seatbelts, we're about to transform the view of how to do SEO!";
-        };
+        "I18n.Thundo": Record<string, never>;
     };
     responses: never;
     parameters: never;

@@ -9,17 +9,7 @@
         "schemas": {
             "I18n.Units": {
                 "type": "object",
-                "properties": {
-                    "s": {
-                        "const": "s"
-                    },
-                    "ms": {
-                        "const": "ms"
-                    },
-                    "KB": {
-                        "const": "KB"
-                    }
-                },
+                "properties": {},
                 "required": []
             }
         }

@@ -9,41 +9,7 @@
         "schemas": {
             "I18n.Cron": {
                 "type": "object",
-                "properties": {
-                    "Field_command": {
-                        "const": "Сommand"
-                    },
-                    "Field_description": {
-                        "const": "Description"
-                    },
-                    "Field_days": {
-                        "const": "Days of the week"
-                    },
-                    "Field_hh": {
-                        "const": "Hours"
-                    },
-                    "Field_i": {
-                        "const": "Minutes"
-                    },
-                    "Field_on": {
-                        "const": "On/Off"
-                    },
-                    "Field_task_create_time": {
-                        "const": "Task created"
-                    },
-                    "Field_task_start_time": {
-                        "const": "Task runned"
-                    },
-                    "Field_task_status": {
-                        "const": "Execution status"
-                    },
-                    "Disabled": {
-                        "const": "Disabled"
-                    },
-                    "Enabled": {
-                        "const": "Enabled"
-                    }
-                },
+                "properties": {},
                 "required": []
             }
         }
