@@ -9,70 +9,70 @@ export interface components {
     schemas: {
         "I18n.Telegram": {
             /** @default Get list of commands */
-            Panel_get_command_list: string;
+            readonly Panel_get_command_list: string;
             /** @default Turn on notifications */
-            Panel_enable_notifications: string;
+            readonly Panel_enable_notifications: string;
             /** @default Turn off notifications */
-            Panel_disable_notifications: string;
+            readonly Panel_disable_notifications: string;
             /** @default Create short link */
-            Panel_get_short_link: string;
+            readonly Panel_get_short_link: string;
             /** @default Back */
-            Panel_back: string;
+            readonly Panel_back: string;
             /** @default Cancel */
-            Panel_cancel: string;
+            readonly Panel_cancel: string;
             /** @default Main menu */
-            Panel_main_menu: string;
+            readonly Panel_main_menu: string;
             /** @default Select language */
-            Panel_select_lang: string;
+            readonly Panel_select_lang: string;
             /** @default English */
-            Panel_eng: string;
+            readonly Panel_eng: string;
             /** @default Russian */
-            Panel_rus: string;
+            readonly Panel_rus: string;
             /** @default Already subscribed 😎 */
-            Panel_i_subscribed: string;
+            readonly Panel_i_subscribed: string;
             /** @default Subscribe */
-            Panel_subscribe: string;
+            readonly Panel_subscribe: string;
             /** @default Open materials 📚 */
-            Panel_open_materials: string;
+            readonly Panel_open_materials: string;
             /** @default Open library */
-            Panel_library: string;
+            readonly Panel_library: string;
             /** @default Message not received. To contact Customer Care and read replies, type /start */
-            Message_chat_disabled: string;
+            readonly Message_chat_disabled: string;
             /** @default Commands that I understand: */
-            Message_available_commands: string;
+            readonly Message_available_commands: string;
             /** @default Get list of commands */
-            Message_available_commands_help: string;
+            readonly Message_available_commands_help: string;
             /** @default Turn on notifications */
-            Message_available_commands_start: string;
+            readonly Message_available_commands_start: string;
             /** @default Turn off notifications */
-            Message_available_commands_stop: string;
+            readonly Message_available_commands_stop: string;
             /** @default Create short link */
-            Message_available_commands_tpvsr: string;
+            readonly Message_available_commands_tpvsr: string;
             /** @default Hi! I can send your questions to Customer Support and get replies. */
-            Message_start_text1: string;
+            readonly Message_start_text1: string;
             /** @default To get a list of commands that I understand, type /help. To contact support, send your question in the chat. */
-            Message_start_text2: string;
-            Message_start_apometer_text: string;
+            readonly Message_start_text2: string;
+            readonly Message_start_apometer_text: string;
             /** @default Notifications have been turned off. I'll stop sending you alerts and Customer Support replies. */
-            Message_stop_text: string;
+            readonly Message_stop_text: string;
             /** @default Your Telegram already linked to the account */
-            Message_pair_done1: string;
+            readonly Message_pair_done1: string;
             /** @default To remove account, type /unpair */
-            Message_pair_done2: string;
+            readonly Message_pair_done2: string;
             /** @default Account removed. */
-            Message_unpair: string;
+            readonly Message_unpair: string;
             /** @default Send me a URL to shorten. */
-            Message_tpvsr: string;
+            readonly Message_tpvsr: string;
             /** @default Type /cancel to step backwards. */
-            Message_tpvsr_cancel: string;
+            readonly Message_tpvsr_cancel: string;
             /** @default Link not shortened */
-            Message_tpvsr_failure: string;
+            readonly Message_tpvsr_failure: string;
             /** @default Link shortening canceled. */
-            Message_tpvsr_cancel_done: string;
+            readonly Message_tpvsr_cancel_done: string;
             /** @default Account */
-            Message_join_done1: string;
+            readonly Message_join_done1: string;
             /** @default successfully linked. */
-            Message_join_done2: string;
+            readonly Message_join_done2: string;
         };
     };
     responses: never;

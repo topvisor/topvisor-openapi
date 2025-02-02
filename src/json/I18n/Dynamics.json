@@ -12,450 +12,562 @@
                 "properties": {
                     "Number_keywords_better_ranks": {
                         "default": "Keywords that advanced in ranks",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Number_keywords_same_ranks": {
                         "default": "Keywords that didn't change ranks",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Number_keywords_drop_ranks": {
                         "default": "Keywords that dropped in ranks",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Search_table": {
                         "default": "Find in table",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Search_page": {
                         "default": "Find on page",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Snippets": {
                         "default": "Snippets",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Remove_results": {
                         "default": "Delete all results for the applied date",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "oneway_operation": {
                         "default": "this action cannot be undone",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Proceed_deleting_ask": {
                         "default": "Do you want to continue?",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Sort_by_target": {
                         "default": "By target URL",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Sort_by_default": {
                         "default": "Default settings",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Sort_by_relevant": {
                         "default": "By ranked URL",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Sort_by_position_change": {
                         "default": "Ranking dynamics over period",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Filter_by_tag": {
                         "default": "Filter by tag",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Set_target_for_group": {
                         "default": "Set target for group",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Send_email": {
                         "default": "Send to Email",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Target_URL": {
                         "default": "Target URL",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Rankings_updated_less_than_5minutes": {
                         "default": "You updated keyword ranks less than 5 minutes ago",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Add_keywords_locations_notice": {
                         "default": "Add keywords and select locations<br> in project settings",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Tasks_processing_notice": {
                         "default": "We're processing your tasks.",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Ranks_updating_notice": {
                         "default": "We're updating your keyword rankings.",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Updated": {
                         "default": "Last update",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Positions_snippets": {
                         "default": "Rankings and snippets",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Period_last_7_days": {
                         "default": "Last 7 days",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Period_last_10_days": {
                         "default": "Last 10 days",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Period_last_30_days": {
                         "default": "Last 30 days",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Any_dates": {
                         "default": "Optional dates",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Current_month": {
                         "default": "This month",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Previous_month": {
                         "default": "Previous month",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Last_year": {
                         "default": "Last year",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Random": {
                         "default": "Random",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Period_regular": {
                         "default": "Period",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Period_2_dates": {
                         "default": "Two dates",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Period_2_margin_dates": {
                         "default": "First and last date",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Period_2_latest_dates": {
                         "default": "Two latest dates",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Period_first_date": {
                         "default": "First date",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Period_last_date": {
                         "default": "Last date",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Period_1_date": {
                         "default": "One date",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Period_only_updates": {
                         "default": "Only Yandex updates",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Last_day_month": {
                         "default": "Last day of month",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Count_dates": {
                         "default": "Max dates",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Painting_0": {
                         "default": "Top, progress",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Painting_1": {
                         "default": "Improved, dropped",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Report_after_tracking_30min_1": {
                         "default": "After rank tracking",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Report_after_tracking_30min_2": {
                         "default": "in 30 minutes",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Display_week_average_ranking": {
                         "default": "Week's average",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Summary": {
                         "default": "Summary",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Show_graphics": {
                         "default": "Charts",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Target_equal_relevant": {
                         "default": "Target = Ranked",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Off_display_group_names": {
                         "default": "Hide group names",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "On_display_group_names": {
                         "default": "Show group names",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Display_group_names_above": {
                         "default": "Display names under groups",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Display_group_names_near": {
                         "default": "Display names near groups",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Show_global_volume": {
                         "default": "Display / Hide global search volume",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Remove_keyword": {
                         "default": "Are you sure you want to delete a selected keyword?",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Remove_history": {
                         "default": "Wipe data for the selected date",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Show_competitors": {
                         "default": "Competitors",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Hide_keywords_added_in_period": {
                         "default": "Hide keywords added within the applied period",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Only_keywords_added_in_period": {
                         "default": "Only keywords added within the applied period",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Show_keywords_added_in_period": {
                         "default": "All keywords",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "and_save_snapshots": {
                         "default": "snapshots collected",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Check_rankings": {
                         "default": "Check rankings of project",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Add_keywords_on_page": {
                         "default": "Add keywords on the page",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Keywords": {
                         "default": "Keywords",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Add_se_location_to_display_data": {
                         "default": "Add search engine and location to display data",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Number_of_visits": {
                         "default": "Number of visits",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Matches_relevant_URL": {
                         "default": "Matches ranked URL",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Not_Matches_relevant_URL": {
                         "default": "Doesn't match ranked URL",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Relevant_URL_change_history": {
                         "default": "Ranked URL history",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Relevant_URL_changes": {
                         "default": "Ranked URL changes",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Download": {
                         "default": "Download",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Date_order": {
                         "default": "Date order",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Chart_export": {
                         "default": "Chart export",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Calendar_legend_ranks_checked": {
                         "default": "Check",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Calendar_legend_yandex_update": {
                         "default": "Yandex update",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Sort_keywords": {
                         "default": "Sort",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Filter": {
                         "default": "Filter",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Not_filter": {
                         "default": "No filter",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Target_and_relevant_URL": {
                         "default": "Target and ranked URL",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Matches": {
                         "default": "Match",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Not_matches": {
                         "default": "Don't match",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Status_not_defined": {
                         "default": "Matching not defined",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Not_specified": {
                         "default": "Target not specified",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "with_featured_snippets": {
                         "default": "with Featured Snippets",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Pin_panel": {
                         "default": "Pin panel",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Pin_filters": {
                         "default": "Pin filters",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Pin_summary": {
                         "default": "Pin summary",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Customize_view": {
                         "default": "Customize view",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Color_theme": {
                         "default": "Color theme",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Highcharts_Export_PNG": {
                         "default": "Download PNG image",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Highcharts_Export_JPEG": {
                         "default": "Download JPEG image",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Highcharts_Export_PDF": {
                         "default": "Download PDF document",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Highcharts_Export_SVG": {
                         "default": "Download SVG image",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Highcharts_Export_Print": {
                         "default": "Print chart",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Highcharts_Export_CSV": {
                         "default": "Download CSV",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Summary_mode": {
                         "default": "Summary mode",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Default_summary_mode": {
                         "default": "Default",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Compact_summary_mode": {
                         "default": "Compact",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Columns_summary_mode": {
                         "default": "Columns",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "order": {
                         "default": "keyword ranking report",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Project_has_been_deleted": {
                         "default": "Project has been deleted",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Snippets_no_checked": {
                         "default": "<b>Snippets</b> weren't collected on the selected dates.",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Snippets_no_checking": {
                         "default": "<b>Snippets</b> aren't being collected. Turn this feature on in the project's settings.",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Selected_time_is_hightload": {
                         "default": "<p>Selected period is the hight load.</p><p>If you need to get results in the morning, we recommend setting time from <i></i> to <i></i> in the morning.</p>",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Delete_keyword": {
                         "default": "Delete keyword",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Recheck": {
                         "default": "Recheck keyword ranking",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Checking": {
                         "default": "Tracking",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Recheck_finish": {
                         "default": "Ranking successfully rechecked",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "No_target_status": {
                         "default": "Target link not added",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "No_result_target_status": {
                         "default": "Search results not found",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Bad_target_status": {
                         "default": "Result does not match a target link",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Good_target_status": {
                         "default": "Result matches a target link",
+                        "readOnly": true,
                         "type": "string"
                     }
                 },

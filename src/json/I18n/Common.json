@@ -11,1881 +11,2351 @@
                 "type": "object",
                 "properties": {
                     "url_lang_prefix": {
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Page_404_text": {
                         "default": "Page Not Found",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Page_404_text2": {
                         "default": "You will be redirected <br> in",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Page_404_sec": {
                         "default": "seconds",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Page_403_text": {
                         "default": "Access denied",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "openApp_text": {
                         "default": "Page loading",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "openApp_text2": {
                         "default": "Open application",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "lang": {
                         "default": "en",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "lang_country": {
                         "default": "US",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "lang_url": {
+                        "readOnly": true,
                         "type": "string"
                     },
                     "alternate_lang": {
                         "default": "ru",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "alternate_lang_country": {
                         "default": "RU",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "alternate_lang_url": {
                         "default": "/ru",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Lang_full": {
                         "default": "English",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "language": {
                         "default": "language",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Language": {
                         "default": "Language",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "locale": {
                         "default": "en_US",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "date_format": {
                         "default": "m/d/Y",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Description": {
                         "default": "Tools for tracking, analyzing and measuring SEO performance",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Og_description": {
                         "default": "Try out SEO & PPC Tools for keyword research, clustering, rank tracking and on-page optimization. Get better results from paid search and organic rankings!",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Og_description_invite": {
                         "default": "SEO & PPC Tools for better marketing. Highly recommended!",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Ascending": {
                         "default": "Ascending",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Descending": {
                         "default": "Descending",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "TV_address_street": {
                         "default": "Voronezhskaya ul.",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Message_session_security_error": {
                         "default": "Session security error, please <a href=\"/\">refresh page</a> and try again",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Message_dbh_remote": {
                         "default": "We're upgrading our servers. The service is temporarily unavailable. Please, try again later",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Message_dbh_remote_error": {
                         "default": "We're upgrading our servers. Tasks creating is temporarily unavailable. Please, try again later",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Message_ch_error": {
                         "default": "We're upgrading this module's server, please, try again later",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Message_sp_error": {
                         "default": "We're upgrading this module's server, please, try again later",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Every_day": {
                         "default": "Every day",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "time_a_0": {
                         "default": "times",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "time_a_1": {
                         "default": "time",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "time_a_2": {
                         "default": "times",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "a_week": {
                         "default": "a week",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "a_month": {
                         "default": "a month",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "discount": {
                         "default": "discount",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "month_short": {
                         "default": "mo",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Balance": {
                         "default": "Balance",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Referrals": {
                         "default": "Affiliate program",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Organization": {
                         "default": "Organization",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Yes": {
                         "default": "Yes",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Exists": {
                         "default": "Exists",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "No": {
                         "default": "No",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "not": {
                         "default": "not",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "and": {
                         "default": "and",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "ruble": {
                         "default": "rub.",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "for": {
                         "default": "for",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "For": {
                         "default": "For",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Close": {
                         "default": "Close",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "OK": {
                         "default": "OK",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Apply": {
                         "default": "OK",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Choose": {
                         "default": "Apply",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Download": {
                         "default": "Download",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "download": {
                         "default": "download",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Step": {
                         "default": "Step",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Continue": {
                         "default": "Continue",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Back": {
                         "default": "Back",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Next": {
                         "default": "Next",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Prev_page_short": {
                         "default": "Prev",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Next_page_short": {
                         "default": "Next",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "project": {
                         "default": "project",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Project": {
                         "default": "Project",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "of_project": {
                         "default": "of project",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Tool_digest": {
                         "default": "Tool digest (2024)",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Ticket": {
                         "default": "Ticket",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Tickets": {
                         "default": "Tickets",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "All_tickets": {
                         "default": "All tickets",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "All_pages": {
                         "default": "All articles",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Submit": {
                         "default": "Submit",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Tickets_page": {
                         "default": "\"Tickets\" page",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Submitted": {
                         "default": "Submitted",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Created_at": {
                         "default": "Created",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Schet_number": {
                         "default": "No.",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Cancel": {
                         "default": "Cancel",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Send": {
                         "default": "Send",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "More": {
                         "default": "More",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Read_more": {
                         "default": "Read more",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "User": {
                         "default": "User",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Message": {
                         "default": "Message",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Message_not_sended": {
                         "default": "Message hasn't been sent",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Comment_not_deleted": {
                         "default": "Comment not removed",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Link": {
                         "default": "Link",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Name": {
                         "default": "Name",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "First_and_last_name": {
                         "default": "First and last name",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Access_denied": {
                         "default": "Access denied",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Access_error": {
                         "default": "Access error",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "No_data": {
                         "default": "No data found",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "No_results": {
                         "default": "No results",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Dynamics": {
                         "default": "Dynamics",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Country": {
                         "default": "Country",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Number": {
                         "default": "No.",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Number_word": {
                         "default": "Number",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "CPC": {
                         "default": "CPC",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Clear": {
                         "default": "Clear",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Phone": {
                         "default": "Phone number",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Email": {
                         "default": "Email",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Email_not_exist": {
                         "default": "The Email you entered doesn't exist",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Password_incorrect": {
                         "default": "The password you entered is incorrect!",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Enter_email": {
                         "default": "Enter email",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Enter_password": {
                         "default": "Enter password",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Remember_me": {
                         "default": "Remember me",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Forgot_password": {
                         "default": "Forgot your password?",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Signup_now": {
                         "default": "Sign up now",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Sign_in_with": {
                         "default": "Sign in with",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Password_recovering": {
                         "default": "Recover password",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Recover_password": {
                         "default": "Recover password",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Keywords_one_per_line": {
                         "default": "Keywords (each keyword on a new line)",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Add_se": {
                         "default": "Add a Search engine",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Create_project": {
                         "default": "Create a project",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Creating": {
                         "default": "Creating...",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Enter_valid_email_notice": {
                         "default": "Enter a valid E-mail address",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "No_account_sign_up": {
                         "default": "No account? <a href=\".\" data-to-view=\"%toViewReg%\">Sign up</a>",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "No_account": {
                         "default": "No account?",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Through_registration_you_confirm_agreement_policy": {
                         "default": "By pressing Sign up you accept <a href=\"%hrefConfirm%\" target=\"_blank\">Terms and Conditions</a> and <a href=\"%hrefPrivacy%\" target=\"_blank\">Privacy Policy</a>",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Already_have_account": {
                         "default": "Already have an account",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Try_again_or_sign_up": {
                         "default": "<a href=\".\" data-to-view=\"%toViewAuth%\">Log in</a> or <a href=\".\" data-to-view=\"%toViewReg%\">sign up</a>",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "If_no_msg_check_spam_ask_support_notice": {
                         "default": "If you didn't receive a message, check a <b>Spam</b> folder or submit a ticket to <a href=\"%hrefCreateTicket%\">Customer support</a>",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "If_no_msg": {
                         "default": "If you didn't receive a message, check a <b>Spam</b> folder or submit a ticket to ",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "support_notice": {
                         "default": "Customer support",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Confirmation_link_sent_to_email": {
                         "default": "A confirmation link has been sent to ",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Internal_error": {
                         "default": "Internal error occurred, please submit a report to the developers",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Unknown_error": {
                         "default": "Unknown error occurred, please try again later",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Google_server_error": {
                         "default": "Google server error",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Yandex_API_server_error": {
                         "default": "Yandex.API server error",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Yandex_auth_error": {
                         "default": "Error occurred! Please, contact the project owner to resolve the issue!",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Request_error_required": {
                         "default": "Required parameter missing in the request",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Request_error_type": {
                         "default": "Passed parameter type mismatch",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Request_error_value": {
                         "default": "Passed parameter value mismatch",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Request_error_qualifiers": {
                         "default": "Passed qualifiers mismatch",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Error_regexp": {
                         "default": "Regular expression error",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Valid_characters": {
                         "default": "Valid characters",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Bonus": {
                         "default": "Bonus",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "or": {
                         "default": "or",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "to": {
                         "default": "until",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "to_1": {
                         "default": "to",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "at": {
                         "default": "at",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "To": {
                         "default": "Until",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Until": {
                         "default": "Up to ",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "next_count": {
                         "default": "next",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "pages": {
                         "default": "pages",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "pages_full": {
                         "default": "pages",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "limit": {
                         "default": "display",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "by": {
                         "default": "by",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Path": {
                         "default": "Path",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Rule": {
                         "default": "Rule",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Allow": {
                         "default": "Allow",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Disallow": {
                         "default": "Forbid",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Allow_of_mask": {
                         "default": "Add mask matches from sitemap",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Disallow_of_mask": {
                         "default": "Forbid the mask",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Search": {
                         "default": "Search",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Examples": {
                         "default": "Examples",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Begin": {
                         "default": "Start",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Start_over": {
                         "default": "Start over",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Export": {
                         "default": "Export",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Import": {
                         "default": "Import",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Off": {
                         "default": "Off",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Changes": {
                         "default": "Changes",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Change": {
                         "default": "Change",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Value": {
                         "default": "Value",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Hide": {
                         "default": "Hide",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Display": {
                         "default": "Display",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Save": {
                         "default": "Save",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Time": {
                         "default": "Time",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Loading": {
                         "default": "Loading",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "CY": {
                         "default": "CY",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Broker": {
                         "default": "Bid manager",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Maintenance": {
                         "default": "Page is under maintenance",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "on_account": {
                         "default": "to account",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "on": {
                         "default": "to",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Tools": {
                         "default": "SEO Tools",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Keyword_researcher": {
                         "default": "Keyword research tool",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Rank_tracker": {
                         "default": "Rank tracker tool",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Upload": {
                         "default": "Upload",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Hide_all": {
                         "default": "Hide all",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Expand_all": {
                         "default": "Expand all",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Expand": {
                         "default": "Expand",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Attention": {
                         "default": "Attention",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "from": {
                         "default": "from",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "from_1": {
                         "default": "from",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "dated": {
                         "default": "dated",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "fromDate": {
                         "default": "from",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "toDate": {
                         "default": "to",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "SE": {
                         "default": "SE",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Guest_link": {
                         "default": "Guest link",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Guest_link_copied_to_clipboard": {
                         "default": "Guest link copied to clipboard",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Device_0": {
                         "default": "PC",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Device_1": {
                         "default": "Tablet",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Device_2": {
                         "default": "Phone",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Device_100": {
                         "default": "YandexBot/3.0",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Device_102": {
                         "default": "YandexBot/3.0 (mobile)",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Device_110": {
                         "default": "Googlebot/2.1",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Device_112": {
                         "default": "Googlebot/2.1 (mobile)",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Device_120": {
                         "default": "AdsBot-Google",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Device_122": {
                         "default": "AdsBot-Google-Mobile",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Tag": {
                         "default": "Tag",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Tags": {
                         "default": "Tags",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "All_tags": {
                         "default": "All tags",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Charts": {
                         "default": "Charts",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "All": {
                         "default": "All",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Selected": {
                         "default": "Selected",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Select": {
                         "default": "Select",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Select_all": {
                         "default": "Select all",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Added": {
                         "default": "Added",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Deleted": {
                         "default": "Deleted",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Rename": {
                         "default": "Rename",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "On_or_off": {
                         "default": "On / Off",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Autoselect": {
                         "default": "Autoselect",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Open_project": {
                         "default": "Open project",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Domain": {
                         "default": "Domain",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Domains": {
                         "default": "Domains",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Track": {
                         "default": "Track",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Check": {
                         "default": "Check",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Track_continued": {
                         "default": "Track",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Telegram": {
                         "default": "Telegram",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Link_to_telegram": {
                         "default": "Link to Telegram",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Other": {
                         "default": "Other",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Other_f": {
                         "default": "Other",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Proceed": {
                         "default": "Proceed",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Projects": {
                         "default": "Projects",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Metrika": {
                         "default": "Yandex.Metrica",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Webmaster": {
                         "default": "Yandex.Webmaster",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Yandex_Direct": {
                         "default": "Yandex Direct",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "YandexDirect": {
                         "default": "Yandex.Direct",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Yandex_Wordstat": {
                         "default": "Yandex Wordstat",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Y_freq": {
                         "default": "Volume",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Y_freq2": {
                         "default": "\"Volume\"",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Y_freq3": {
                         "default": "\"!Volume\"",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Y_freq5": {
                         "default": "\"[Volume]\"",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Y_freq6": {
                         "default": "\"[!Volume]\"",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "G_freq2": {
                         "default": "\"[Volume]\"",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "M_freq2": {
                         "default": "\"Volume\"",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Y_price1": {
                         "default": "1st Premium",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Y_price2": {
                         "default": "2st Premium",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Y_price3": {
                         "default": "Premium",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Y_price4": {
                         "default": "1st place",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Y_price5": {
                         "default": "Guaranteed",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "G_price": {
                         "default": "Bid",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Search_engine": {
                         "default": "Search engine",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Search_engines": {
                         "default": "Search engines",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Region": {
                         "default": "Location",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "region": {
                         "default": "location",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Selected_regions": {
                         "default": "Selected locations",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Compare": {
                         "default": "Compare",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Folder": {
                         "default": "Folder",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Group": {
                         "default": "Group",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Visibility": {
                         "default": "Visibility",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Average": {
                         "default": "Avg.pos.",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Average_position": {
                         "default": "Average position",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Add": {
                         "default": "Add",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Create": {
                         "default": "Create",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Move": {
                         "default": "Move",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Delete": {
                         "default": "Delete",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Replace": {
                         "default": "Repalce",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Restore": {
                         "default": "Restore",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Copy": {
                         "default": "Copy",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Copy2": {
                         "default": "Copy",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Remove": {
                         "default": "Delete",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Charge": {
                         "default": "You will be charged",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "confirm": {
                         "default": "confirm",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Confirm": {
                         "default": "Confirm",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Delete_selected": {
                         "default": "Delete selected",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Delete_all": {
                         "default": "Delete all",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Traffic": {
                         "default": "Traffic",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Positions": {
                         "default": "Rankings",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Keyword": {
                         "default": "Keyword",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Key_word": {
                         "default": "Keyword",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Settings": {
                         "default": "Settings",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Settings_URL": {
                         "default": "URL Settings",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Irreversible": {
                         "default": "Important! This operation cannot be undone.",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Empty_field": {
                         "default": "Missing",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Notification": {
                         "default": "Notifications",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Personal_project": {
                         "default": "My project",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Agreement": {
                         "default": "Terms of Service",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Period": {
                         "default": "Period",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Config_is_readonly": {
                         "default": "You cannot change project settings until tracking is completed",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "regions": {
                         "default": "locations",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "types": {
                         "default": "types",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Select_date": {
                         "default": "Select date",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Not_date": {
                         "default": "Not date",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Close_window": {
                         "default": "Close window",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Dashboard": {
                         "default": "Dashboard",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Support": {
                         "default": "Help center",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Shortener": {
                         "default": "URL shortener",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Journal": {
                         "default": "Journal",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Academy": {
                         "default": "Academy",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Pricing": {
                         "default": "Pricing",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Signup": {
                         "default": "Sign up",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Sign_up": {
                         "default": "Sign up",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Sign_up_2": {
                         "default": "Sign up",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Sign_in": {
                         "default": "Sign in",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Sign_in_account": {
                         "default": "Sign in",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Sign_out": {
                         "default": "Sign out",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Server_response": {
                         "default": "Server response",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Red": {
                         "default": "Red",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Orange": {
                         "default": "Orange",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Yellow": {
                         "default": "Yellow",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Blue": {
                         "default": "Blue",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Purple": {
                         "default": "Purple",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Green": {
                         "default": "Green",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Magenta": {
                         "default": "Magenta",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Dark_blue": {
                         "default": "Dark blue",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Turquoise": {
                         "default": "Turquoise",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Frequency": {
                         "default": "Volume",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Moscow": {
                         "default": "Moscow",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Minsk": {
                         "default": "Minsk",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Kyiv": {
                         "default": "Kyiv",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "London": {
                         "default": "London",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "NewYork": {
                         "default": "New York",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "StPetersburg": {
                         "default": "St. Petersburg",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Almaty": {
                         "default": "Almaty",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Russia": {
                         "default": "Russia",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Ukraine": {
                         "default": "Ukraine",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Kazakhstan": {
                         "default": "Kazakhstan",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Belarus": {
                         "default": "Belarus",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Sum": {
                         "default": "Amount",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Date": {
                         "default": "Date",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Week": {
                         "default": "Week",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Month": {
                         "default": "Month",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "month": {
                         "default": "month",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "months": {
                         "default": "months",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "months_mult": {
                         "default": "months",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "months_6": {
                         "default": "6 months",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Quarter": {
                         "default": "Quarter",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Year": {
                         "default": "Year",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Total": {
                         "default": "Total",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "TOTAL": {
                         "default": "TOTAL",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Yandex_update": {
                         "default": "Yandex update",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "сode": {
                         "default": "code",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Thank_you": {
                         "default": "Thank you!",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Thank_you_for_using_our_tools": {
                         "default": "Thank you for using our tools",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Since": {
                         "default": "Since",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Till": {
                         "default": "Till",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "till": {
                         "default": "up to",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Yandex": {
                         "default": "Yandex",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Position": {
                         "default": "Rank",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Impressions": {
                         "default": "Impressions",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Demand": {
                         "default": "Demand",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "FAQ": {
                         "default": "FAQ",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Frequently_asked_questions": {
                         "default": "Frequently asked questions",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Owner": {
                         "default": "Owner",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "level": {
                         "default": "level",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "No_payments": {
                         "default": "No payments yet",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Show_legend": {
                         "default": "Show legend",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Hide_legend": {
                         "default": "Hide legend",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Menu_expand": {
                         "default": "Expand menu",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Menu_unexpand": {
                         "default": "Minimize menu",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Menu_dynamics_search": {
                         "default": "Search",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Menu_dynamics": {
                         "default": "Rank Tracker",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Menu_snapshots": {
                         "default": "SERP Snapshots",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Menu_competitors": {
                         "default": "My competitors",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Menu_phrases": {
                         "default": "Keywords",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Menu_audit": {
                         "default": "Audit",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Menu_analytics": {
                         "default": "Overview",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Menu_PPC": {
                         "default": "PPC",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Menu_broker": {
                         "default": "Yandex.Direct",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Menu_settings": {
                         "default": "Settings",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Menu_more": {
                         "default": "More",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Folders": {
                         "default": "Folders",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Groups": {
                         "default": "Groups",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Keywords": {
                         "default": "Keywords",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "of_keywords": {
                         "default": "keywords",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "of_folders": {
                         "default": "folders",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "of_projects": {
                         "default": "projects",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "of_project1": {
                         "default": "for project",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "for_project": {
                         "default": "for project",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "competitor": {
                         "default": "competitor",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "All_groups": {
                         "default": "All groups",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "All_folders": {
                         "default": "All folders",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "All_regions": {
                         "default": "All locations",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "All_searchers": {
                         "default": "All search engines",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "All_projects": {
                         "default": "All projects",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Integration": {
                         "default": "Integration",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "updates_days": {
                         "default": "update days",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "whole_period": {
                         "default": "the entire period",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "two_dates": {
                         "default": "two dates",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Report_for_project": {
                         "default": "Project report for",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Interval": {
                         "default": "Time range",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "competitors_comparison": {
                         "default": "compare with competitors",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Searchers_comparison": {
                         "default": "Compare by search engine",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Regions_comparison": {
                         "default": "Compare by location",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Browser_not_supported": {
                         "default": "Your browser is not supported!",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Browser_settings": {
                         "default": "Browser settings",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Service_may_go_unstable": {
                         "default": "Service might be unstable",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Preferred_browser": {
                         "default": "Compatible browser is",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Comparison_by": {
                         "default": "Compare by",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Phrases": {
                         "default": "Keywords",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "TOP": {
                         "default": "TOP",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Top": {
                         "default": "Top",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Phrases_dynamics": {
                         "default": "Keyword dynamics",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Project_settings": {
                         "default": "Project settings",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Phrases_in_TOP": {
                         "default": "Keywords in TOP",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Phrases_in_Top": {
                         "default": "Keywords in Top",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Page": {
                         "default": "Page",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "page": {
                         "default": "page",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "last_10_days": {
                         "default": "last 10 days",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "last_month": {
                         "default": "last month",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "last_check": {
                         "default": "last update",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "last_two_dates": {
                         "default": "last 2 updates",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "last_month_week_average": {
                         "default": "last month (week's average)",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "also_searched": {
                         "default": "similar keywords",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Sources": {
                         "default": "Sources",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Clicks": {
                         "default": "Clicks",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Other_dates": {
                         "default": "Other dates",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Help_center": {
                         "default": "Help",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Help_center_welcome": {
                         "default": "Support Center",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Help_center_question": {
                         "default": "Got any questions?",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Run": {
                         "default": "Run",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Manage": {
                         "default": "Manage",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Missed_project_id": {
                         "default": "Project id is missing",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Missed_project_id2": {
                         "default": "`Project_id` is missing",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Project_analytics": {
                         "default": "Project analytics",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Project_dynamics": {
                         "default": "Keyword dynamics",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Apometr": {
                         "default": "Updates",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Apometr_title": {
                         "default": "Google and Yandex SERP tracking tool",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Apometr_description": {
                         "default": "Google and Yandex updates calendar (SERP updates and changes). Get SERP updates alerts. SERP updates score for different locations and content types.",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Apometr_og_title": {
                         "default": "Google and Yandex SERP updates",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Apometr_og_description": {
                         "default": "SERP updates score for different locations and content types.",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Apometr_notice": {
                         "default": "Get update alerts",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Pricing_title": {
                         "default": "Pricing",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Profile_title": {
                         "default": "Account",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Bank_title": {
                         "default": "Bank",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Your_projects": {
                         "default": "Your projects",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Incorrect_file_format": {
                         "default": "Invalid file format (expected: %availableExtensionsNames%)",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Max_size": {
                         "default": "Maximum upload size exceeded (%maxSize%)",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Audit": {
                         "default": "Website SEO Audit tool",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Tutorial": {
                         "default": "Tutorials",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "User_id": {
                         "default": "User ID",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Managing_executive": {
                         "default": "Managing executive",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Pustovoit": {
                         "default": "Pustovoit",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Denis": {
                         "default": "Denis",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Anatolyevich": {
                         "default": "Anatolyevich",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "CEO": {
                         "default": "Chief Executive Officer",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "office": {
                         "default": "office",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Dot": {
                         "default": "Dot",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Comma": {
                         "default": "Comma",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Enter_manually": {
                         "default": "Add manually",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "max_10_mb": {
                         "default": "max 10 Mb",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Schedule_settings_checks": {
                         "default": "Checks schedule",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Schedule_settings_reports": {
                         "default": "Reports schedule",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Basic": {
                         "default": "Basic",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Address_IP": {
                         "default": "IP address",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Phone_number": {
                         "default": "Phone number",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Recipient": {
                         "default": "Recipient",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Federal_act": {
                         "default": " Federal act",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "optional": {
                         "default": "optional",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Full_name_abbr": {
                         "default": "Full name",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Mobile_phone": {
                         "default": "Mobile phone",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "not_found": {
                         "default": "not found",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Try_to_reset_filters_or_search_archive_html": {
                         "default": "Try to <i class=\"a\" data-action=\"reset_filters\">reset</i> all filters<br><i class=\"archive_search\">\n\tor search <a href=\"/support/projects/archive\" target=\"_blank\" class=\"a\">Archived</a> projects</i>",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Print": {
                         "default": "Print",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Contact_us": {
                         "default": "Contact us",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Competitor_analysis": {
                         "default": "Competitor research",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Refill_balance": {
                         "default": "Top up your balance",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Median": {
                         "default": "Median",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Reset": {
                         "default": "Reset",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "View": {
                         "default": "View",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Bar_pin": {
                         "default": "Pin bar",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Count": {
                         "default": "Number",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Invalid_url": {
                         "default": "Invalid URL format",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Access_settings": {
                         "default": "Access settings",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Hide_access_settings": {
                         "default": "Hide access settings",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Sort": {
                         "default": "Sort",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "No_snippet": {
                         "default": "No snippet",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Copied_to_clipboard": {
                         "default": "Copied to clipboard",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Cannot_copied_to_clipboard": {
                         "default": "Cannot copied to clipboard",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Copy_guest_link_manually": {
                         "default": "Copy the guest link manually",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Press_to_copy_1": {
                         "default": "Press",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Press_to_copy_2": {
                         "default": "+C to copy a link",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Guest_link_created": {
                         "default": "Guest link created",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Need_fill_required_fields": {
                         "default": "Please fill in all required fields",
+                        "readOnly": true,
                         "type": "string"
                     }
                 },

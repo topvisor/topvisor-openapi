@@ -13,78 +13,78 @@ export interface components {
              * Код валюты.
              * @default No set
              */
-            GA_CU: string;
+            readonly GA_CU: string;
             /**
              * Символ валюты.
              * @default No set
              */
-            CU_LABEL: string;
+            readonly CU_LABEL: string;
             /**
              * Префикс валюты.
              * @description `CU_PREFIX` и `getCUSuffix()` взаимоисключены, только один из них должен опредять не пустое значение
              * @default No set
              */
-            CU_PREFIX: string;
+            readonly CU_PREFIX: string;
             /**
              * Иконка префикса валюты.
              * @default No set
              */
-            CU_PREFIX_ICO: string;
+            readonly CU_PREFIX_ICO: string;
             /**
              * Иконка суффикса валюты.
              * @default No set
              */
-            CU_SUFFIX_ICO: string;
+            readonly CU_SUFFIX_ICO: string;
             /**
              * Точность валюты.
              * @default 10000
              */
-            CU_PRECISION: number;
+            readonly CU_PRECISION: number;
             /**
              * Стоимость запроса в валюте.
              * @default 10000
              */
-            QUERY_COST: number;
+            readonly QUERY_COST: number;
             /**
              * Стоимость запроса для конкурентов.
              * @default 10000
              */
-            QUERY_COST_COMPETITORS: number;
+            readonly QUERY_COST_COMPETITORS: number;
             /**
              * Стоимость запроса для SERP.
              * @default 10000
              */
-            QUERY_COST_SERP: number;
+            readonly QUERY_COST_SERP: number;
             /**
              * Стоимость запроса для сниппетов.
              * @default 10000
              */
-            QUERY_COST_SNIPPET: number;
+            readonly QUERY_COST_SNIPPET: number;
             /**
              * Стоимость запроса для снэпшота.
              * @default 10000
              */
-            QUERY_COST_SNAPSHOT: number;
+            readonly QUERY_COST_SNAPSHOT: number;
             /**
              * Глубина запроса.
              * @default 10000
              */
-            QUERY_COST_DEPTH_K: number;
+            readonly QUERY_COST_DEPTH_K: number;
             /**
              * Стоимость одного результата экспорта.
              * @default 10000
              */
-            EXPORT_ONE_RESULT_COST: number;
+            readonly EXPORT_ONE_RESULT_COST: number;
             /**
              * Частота запросов.
              * @default 10000
              */
-            QUERY_COST_FREQUENCY: number;
+            readonly QUERY_COST_FREQUENCY: number;
             /**
              * Стоимость SY.
              * @default 10000
              */
-            SY_COST: number;
+            readonly SY_COST: number;
             /**
              * Массив с подсказками стоимости.
              * @default [
@@ -93,132 +93,132 @@ export interface components {
              *       10000
              *     ]
              */
-            SY_HINTS_COST: (string | number)[];
+            readonly SY_HINTS_COST: (string | number)[];
             /**
              * Стоимость брокера.
              * @default 10000
              */
-            BROKER_COST: number;
+            readonly BROKER_COST: number;
             /**
              * Стоимость кластера.
              * @default 10000
              */
-            CLASTER_COST: number;
+            readonly CLASTER_COST: number;
             /**
              * Стоимость кластера для 10 единиц.
              * @default 10000
              */
-            CLASTER_COST_10: number;
+            readonly CLASTER_COST_10: number;
             /**
              * Стоимость кластера для 50 единиц.
              * @default 10000
              */
-            CLASTER_COST_50: number;
+            readonly CLASTER_COST_50: number;
             /**
              * Стоимость кластера для 250 единиц.
              * @default 10000
              */
-            CLASTER_COST_250: number;
+            readonly CLASTER_COST_250: number;
             /**
              * Стоимость изменения кластера.
              * @default 10000
              */
-            CLASTER_CHANGE_COST: number;
+            readonly CLASTER_CHANGE_COST: number;
             /**
              * Стоимость для audit_sitemap_100.
              * @default 10000
              */
-            AUDIT_SITEMAP_100: number;
+            readonly AUDIT_SITEMAP_100: number;
             /**
              * Стоимость для audit_sitemap_1000.
              * @default 10000
              */
-            AUDIT_SITEMAP_1000: number;
+            readonly AUDIT_SITEMAP_1000: number;
             /**
              * Стоимость для audit_sitemap_10000.
              * @default 10000
              */
-            AUDIT_SITEMAP_10000: number;
+            readonly AUDIT_SITEMAP_10000: number;
             /**
              * Стоимость для audit_sitemap_100000.
              * @default 10000
              */
-            AUDIT_SITEMAP_100000: number;
+            readonly AUDIT_SITEMAP_100000: number;
             /**
              * Стоимость для audit_sitemap_150000.
              * @default 10000
              */
-            AUDIT_SITEMAP_150000: number;
+            readonly AUDIT_SITEMAP_150000: number;
             /**
              * Стоимость для audit_sitemap_300000.
              * @default 10000
              */
-            AUDIT_SITEMAP_300000: number;
+            readonly AUDIT_SITEMAP_300000: number;
             /**
              * Стоимость для аудита.
              * @default 10000
              */
-            AUDIT_COST: number;
+            readonly AUDIT_COST: number;
             /**
              * Стоимость для аудита 100.
              * @default 10000
              */
-            AUDIT_COST_100: number;
+            readonly AUDIT_COST_100: number;
             /**
              * Стоимость для аудита 1000.
              * @default 10000
              */
-            AUDIT_COST_1000: number;
+            readonly AUDIT_COST_1000: number;
             /**
              * Стоимость для аудита 10000.
              * @default 10000
              */
-            AUDIT_COST_10000: number;
+            readonly AUDIT_COST_10000: number;
             /**
              * Стоимость наблюдателя.
              * @default 10000
              */
-            WATCHER_COST: number;
+            readonly WATCHER_COST: number;
             /**
              * Стоимость индексации.
              * @default 10000
              */
-            INDEXING_COST: number;
+            readonly INDEXING_COST: number;
             /**
              * Стоимость упоминаний.
              * @default 10000
              */
-            MENTIONS_COST: number;
+            readonly MENTIONS_COST: number;
             /**
              * Стоимость конкурентов.
              * @default 10000
              */
-            COMPETITORS_COST: number;
+            readonly COMPETITORS_COST: number;
             /**
              * Стоимость веб-скриншотов.
              * @default 10000
              */
-            WEB_SCREENS_COST: number;
+            readonly WEB_SCREENS_COST: number;
             /**
              * Стоимость покупки домена.
              * @default 10000
              */
-            DOMAINS_BUY_COST: number;
+            readonly DOMAINS_BUY_COST: number;
             /**
              * Стоимость продления домена.
              * @default 10000
              */
-            DOMAINS_RENEW_COST: number;
+            readonly DOMAINS_RENEW_COST: number;
             /**
              * Стоимость авторизации по телефону.
              * @default 10000
              */
-            DOMAINS_AUTH_INFO_PHONE_COST: number;
+            readonly DOMAINS_AUTH_INFO_PHONE_COST: number;
             /**
              * Стоимость авторизации по почте.
              * @default 10000
              */
-            DOMAINS_AUTH_INFO_MAIL_COST: number;
+            readonly DOMAINS_AUTH_INFO_MAIL_COST: number;
             /**
              * Массив тарифных планов.
              * @default [
@@ -229,7 +229,7 @@ export interface components {
              *       "No set"
              *     ]
              */
-            TARIFF_NAMES: (string | number)[];
+            readonly TARIFF_NAMES: (string | number)[];
             /**
              * Массив значений тарифов.
              * @default [
@@ -240,7 +240,7 @@ export interface components {
              *       10000
              *     ]
              */
-            TARIFF_VALUES: (string | number)[];
+            readonly TARIFF_VALUES: (string | number)[];
             /**
              * Массив скидок на тарифы.
              * @default [
@@ -251,7 +251,7 @@ export interface components {
              *       30
              *     ]
              */
-            TARIFF_DISCOUNT: (string | number)[];
+            readonly TARIFF_DISCOUNT: (string | number)[];
         };
     };
     responses: never;

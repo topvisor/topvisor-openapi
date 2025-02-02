@@ -9,19 +9,19 @@ export interface components {
     schemas: {
         "I18n.Sites.Topvisor.Organization": {
             /** @default All you need for SEO on one platform. Rank tracking and volume checking, website audit, keyword research. Cluster keywords by Top and track website changes. We make SEO easy for SEO specialists and digital marketers. */
-            Description: string;
+            readonly Description: string;
             /** @default Voronezhskaya st., 5A, Prisma office building, office 242 */
-            Street_address: string;
+            readonly Street_address: string;
             /** @default Saint Petersburg */
-            Address_locality: string;
+            readonly Address_locality: string;
             /** @default Leningrad region */
-            Address_region: string;
+            readonly Address_region: string;
             /** @default Russia */
-            Address_country: string;
+            readonly Address_country: string;
             /** @default Sales */
-            Contact_type: string;
+            readonly Contact_type: string;
             /** @default Pustovoyt Denis Anatolievich */
-            General_manager: string;
+            readonly General_manager: string;
         };
     };
     responses: never;

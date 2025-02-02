@@ -12,14 +12,17 @@
                 "properties": {
                     "Contact_title": {
                         "default": "Got any questions? Contact us",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Contact_text": {
                         "default": "If you didn't find what you looked for in the Help Center, contact Support Team via Ticket System {{ telegramBotText }}\nor email <a href='mailto:{{ supportEmail }}' target='_blank'>{{ supportEmail }}</a>. We'll show how to find and set up the tool you need and answer all other questions.",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Contact": {
                         "default": "Contact us",
+                        "readOnly": true,
                         "type": "string"
                     }
                 },

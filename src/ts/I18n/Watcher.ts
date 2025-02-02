@@ -9,7 +9,7 @@ export interface components {
     schemas: {
         "I18n.Watcher": {
             /** @default Watcher settings */
-            Settings: string;
+            readonly Settings: string;
             /** @default {
              *       "http_codes": "HTTP Code",
              *       "title": "Title",
@@ -17,29 +17,29 @@ export interface components {
              *       "h1": "H1 Header",
              *       "content": "Content"
              *     } */
-            menu: (string | number)[];
+            readonly menu: (string | number)[];
             /** @default Status */
-            Status_code: string;
+            readonly Status_code: string;
             /** @default Without changes */
-            Without_changes: string;
+            readonly Without_changes: string;
             /** @default Full text */
-            Fulltext: string;
+            readonly Fulltext: string;
             /** @default With changes */
-            Only_with_changed: string;
+            readonly Only_with_changed: string;
             /** @default Track */
-            Header_start_short: string;
+            readonly Header_start_short: string;
             /** @default Common settings */
-            Common_settings: string;
+            readonly Common_settings: string;
             /** @default Tracking */
-            Tracking: string;
+            readonly Tracking: string;
             /** @default Cut &lt;script&gt; */
-            Cut_script: string;
+            readonly Cut_script: string;
             /** @default Scan method */
-            Scan_method: string;
+            readonly Scan_method: string;
             /** @default Text only / Cut tags */
-            Strip_tags: string;
+            readonly Strip_tags: string;
             /** @default Change history:  */
-            Change_history: string;
+            readonly Change_history: string;
             /** @default {
              *       "watcher_max_redirects": "",
              *       "watcher_user_agent": "User Agent can affect how the bot sees the site and how DDoS protection works.",
@@ -56,15 +56,15 @@ export interface components {
              *       },
              *       "watcher_strip_tags_from_result": ""
              *     } */
-            Hints_settings: (string | number)[];
+            readonly Hints_settings: (string | number)[];
             /** @default Add URLs to launch Watcher.<br>📡 <a href="/watcher/" target="_blank">How Website Watcher can help you →</a> */
-            Hint_not_urls_text: string;
+            readonly Hint_not_urls_text: string;
             /** @default URLs */
-            Hint_not_urls_btn: string;
+            readonly Hint_not_urls_btn: string;
             /** @default You've never launched Watcher in this project.<br>📡 <a href="/watcher/" target="_blank">How Website Watcher can help you →</a> */
-            Hint_not_checks_text: string;
+            readonly Hint_not_checks_text: string;
             /** @default Launch Watcher */
-            Hint_not_checks_btn: string;
+            readonly Hint_not_checks_btn: string;
         };
     };
     responses: never;

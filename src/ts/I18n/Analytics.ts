@@ -9,7 +9,7 @@ export interface components {
     schemas: {
         "I18n.Analytics": {
             /** @default Are you sure you want to delete this widget? */
-            Text_confirm_delete_widget: string;
+            readonly Text_confirm_delete_widget: string;
         };
     };
     responses: never;

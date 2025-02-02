@@ -9,25 +9,25 @@ export interface components {
     schemas: {
         "I18n.Fieldtemplates": {
             /** @default Manage columns */
-            Title: string;
+            readonly Title: string;
             /** @default Column */
-            Column: string;
+            readonly Column: string;
             /** @default List of recent columns */
-            Last_columns_list: string;
+            readonly Last_columns_list: string;
             /** @default Save as new template */
-            Save_as_new_template: string;
+            readonly Save_as_new_template: string;
             /** @default save changes */
-            save_changes: string;
+            readonly save_changes: string;
             /** @default Added columns */
-            Added_columns: string;
+            readonly Added_columns: string;
             /** @default Column settings */
-            Columns_settings: string;
+            readonly Columns_settings: string;
             /** @default Delete columns */
-            Delete_columns: string;
+            readonly Delete_columns: string;
             /** @default No columns added */
-            No_columns_added: string;
+            readonly No_columns_added: string;
             /** @default Advanced options */
-            Advanced_options: string;
+            readonly Advanced_options: string;
         };
     };
     responses: never;

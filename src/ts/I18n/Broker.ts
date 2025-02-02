@@ -9,335 +9,335 @@ export interface components {
     schemas: {
         "I18n.Broker": {
             /** @default Filter */
-            Filter: string;
+            readonly Filter: string;
             /** @default All */
-            All: string;
+            readonly All: string;
             /** @default Active */
-            Active: string;
+            readonly Active: string;
             /** @default Inactive */
-            Inactive: string;
+            readonly Inactive: string;
             /** @default Draft */
-            Draft: string;
+            readonly Draft: string;
             /** @default This campaign has a "Draft" status.<br> You can manage only active ads */
-            Campaign_draft_status: string;
+            readonly Campaign_draft_status: string;
             /** @default Configured */
-            Configured: string;
+            readonly Configured: string;
             /** @default Not configured */
-            Not_configured: string;
+            readonly Not_configured: string;
             /** @default Min. bid 1st GP */
-            By_min_1GP: string;
+            readonly By_min_1GP: string;
             /** @default Min. bid GP */
-            By_min_GP: string;
+            readonly By_min_GP: string;
             /** @default Min. bid 1st SP */
-            By_min_1SP: string;
+            readonly By_min_1SP: string;
             /** @default Min. bid SP */
-            By_min_SP: string;
+            readonly By_min_SP: string;
             /** @default Min. bid */
-            Min_bid: string;
+            readonly Min_bid: string;
             /** @default This campaign has no ads or they<br> are not synced. */
-            No_ads: string;
+            readonly No_ads: string;
             /** @default Update the list */
-            Refresh_list: string;
+            readonly Refresh_list: string;
             /** @default All groups */
-            All_groups: string;
+            readonly All_groups: string;
             /** @default Display regions */
-            Regions: string;
+            readonly Regions: string;
             /** @default Ad № M */
-            Ad_number: string;
+            readonly Ad_number: string;
             /** @default Keyword */
-            Keyword: string;
+            readonly Keyword: string;
             /** @default Impressions */
-            Impressions: string;
+            readonly Impressions: string;
             /** @default Clicks */
-            Clicks: string;
+            readonly Clicks: string;
             /** @default Traffic volume / Bid */
-            Block_bid: string;
+            readonly Block_bid: string;
             /** @default Traffic volume */
-            Traffic_volume: string;
+            readonly Traffic_volume: string;
             /** @default CPC */
-            CPC: string;
+            readonly CPC: string;
             /** @default MAX bid */
-            MAX_price: string;
+            readonly MAX_price: string;
             /** @default if MAX price<br> preceeded */
-            if_MAX_price_preceeded: string;
+            readonly if_MAX_price_preceeded: string;
             /** @default units */
-            units: string;
+            readonly units: string;
             /** @default Next<br>bid */
-            New_bid: string;
+            readonly New_bid: string;
             /** @default Current<br>bid */
-            Current_bid: string;
+            readonly Current_bid: string;
             /** @default CPC on search<br> results page */
-            Cpc_search_results: string;
+            readonly Cpc_search_results: string;
             /** @default Apply to selected keywords */
-            Apply_to_selected_keywords: string;
+            readonly Apply_to_selected_keywords: string;
             /** @default   */
-            count: string;
+            readonly count: string;
             /** @default Adj */
-            Adjustment_short: string;
+            readonly Adjustment_short: string;
             /** @default Ad */
-            Advertising_short: string;
+            readonly Advertising_short: string;
             /** @default Select tactics */
-            Select_tactics: string;
+            readonly Select_tactics: string;
             /** @default Select traffic volume */
-            Select_traffic_volume: string;
+            readonly Select_traffic_volume: string;
             /** @default Select position */
-            Select_position: string;
+            readonly Select_position: string;
             /** @default Set price */
-            Set_price: string;
+            readonly Set_price: string;
             /** @default no more */
-            no_more: string;
+            readonly no_more: string;
             /** @default Apply to all campaigns */
-            Adjust_for_other_campaigns: string;
+            readonly Adjust_for_other_campaigns: string;
             /** @default Show / Hide keywords */
-            Show_hide_keywords: string;
+            readonly Show_hide_keywords: string;
             /** @default Show group keywords */
-            Show_group_keywords: string;
+            readonly Show_group_keywords: string;
             /** @default Select campaign */
-            Select_campaign: string;
+            readonly Select_campaign: string;
             /** @default Ad groups */
-            Ad_groups: string;
+            readonly Ad_groups: string;
             /** @default Schedule */
-            Schedule: string;
+            readonly Schedule: string;
             /** @default Journal */
-            Journal: string;
+            readonly Journal: string;
             /** @default Integration settings */
-            Integration_settings: string;
+            readonly Integration_settings: string;
             /** @default Key expires */
-            Key_expires: string;
+            readonly Key_expires: string;
             /** @default Yandex.Direct API limits */
-            Limits_API_direct: string;
+            readonly Limits_API_direct: string;
             /** @default Weekly budget forecast */
-            Weekly_budget_forecast: string;
+            readonly Weekly_budget_forecast: string;
             /** @default Update ad campaigns */
-            Update_list_campaigns: string;
+            readonly Update_list_campaigns: string;
             /** @default adjustments priced */
-            adjustments_for: string;
+            readonly adjustments_for: string;
             /** @default API limits */
-            API_limits: string;
+            readonly API_limits: string;
             /** @default Ad campaigns */
-            Ad_campaigns: string;
+            readonly Ad_campaigns: string;
             /** @default Status */
-            Status: string;
+            readonly Status: string;
             /** @default Direct<br> balance */
-            Direct_balance: string;
+            readonly Direct_balance: string;
             /** @default configured<br>(not configured) */
-            configured_notconfigured: string;
+            readonly configured_notconfigured: string;
             /** @default Bidding<br>cost */
-            Bidding_cost: string;
+            readonly Bidding_cost: string;
             /** @default Manage */
-            Management: string;
+            readonly Management: string;
             /** @default for all */
-            for_all: string;
+            readonly for_all: string;
             /** @default Bid adjustment */
-            Bid_adjustment: string;
+            readonly Bid_adjustment: string;
             /** @default Journal */
-            Journal_log: string;
+            readonly Journal_log: string;
             /** @default Automated&nbsp;bid strategy: bidding cannot be applied */
-            Automated_strategy: string;
+            readonly Automated_strategy: string;
             /** @default Bidding disabled */
-            Bidding_disabled: string;
+            readonly Bidding_disabled: string;
             /** @default Manage/Do not manage bids */
-            Adjust_not_adjust_bids: string;
+            readonly Adjust_not_adjust_bids: string;
             /** @default To manage bids for ad campaigns, */
-            Integrate_to_manage_bids_1: string;
+            readonly Integrate_to_manage_bids_1: string;
             /** @default integrate<br> */
-            Integrate_to_manage_bids_2: string;
+            readonly Integrate_to_manage_bids_2: string;
             /** @default your account with */
-            Integrate_to_manage_bids_3: string;
+            readonly Integrate_to_manage_bids_3: string;
             /** @default Turn on bidding for all campaigns */
-            Mass_turn_on_bidding: string;
+            readonly Mass_turn_on_bidding: string;
             /** @default On */
-            Turn_on: string;
+            readonly Turn_on: string;
             /** @default Off */
-            Turn_off: string;
+            readonly Turn_off: string;
             /** @default Schedule bidding */
-            Schedule_bidding: string;
+            readonly Schedule_bidding: string;
             /** @default Bulk campaign management */
-            Bulk_campaign_management: string;
+            readonly Bulk_campaign_management: string;
             /** @default Keyword is deleted */
-            Keyword_was_deleted: string;
+            readonly Keyword_was_deleted: string;
             /** @default in Google Ads */
-            in_Adwords: string;
+            readonly in_Adwords: string;
             /** @default Keywords with adjusted bids */
-            Keywords_bidding_applied: string;
+            readonly Keywords_bidding_applied: string;
             /** @default Keywords without adjusted bids */
-            Keywords_no_bidding_applied: string;
+            readonly Keywords_no_bidding_applied: string;
             /** @default Yandex.Direct server error */
-            Yandex_error: string;
+            readonly Yandex_error: string;
             /** @default No valid currency for this keyword found */
-            No_vaild_currency_for_keywords: string;
+            readonly No_vaild_currency_for_keywords: string;
             /** @default At the moment we support only real currency */
-            Support_only_real_currency_note: string;
+            readonly Support_only_real_currency_note: string;
             /** @default Array expected */
-            Expected_array: string;
+            readonly Expected_array: string;
             /** @default Bid management available only for campaigns with manual bidding strategy */
-            Bid_management_available_for_manual_note: string;
+            readonly Bid_management_available_for_manual_note: string;
             /** @default You have insufficient funds to manage bids for the project */
-            Low_balance_note: string;
+            readonly Low_balance_note: string;
             /** @default Project owner has insufficient funds */
-            Low_balance_owner_note: string;
+            readonly Low_balance_owner_note: string;
             /** @default Yandex.Direct bids are adjusted for the campaign */
-            Direct_bids_adjusted_for_note: string;
+            readonly Direct_bids_adjusted_for_note: string;
             /** @default in the project */
-            adjusted_for_project: string;
+            readonly adjusted_for_project: string;
             /** @default Enabled */
-            State_ENABLED: string;
+            readonly State_ENABLED: string;
             /** @default Paused */
-            State_PAUSED: string;
+            readonly State_PAUSED: string;
             /** @default Removed */
-            State_REMOVED: string;
+            readonly State_REMOVED: string;
             /** @default Unknown */
-            State_UNKNOWN: string;
+            readonly State_UNKNOWN: string;
             /** @default Never */
-            Frequency_never: string;
+            readonly Frequency_never: string;
             /** @default Daily */
-            Frequency_daily: string;
+            readonly Frequency_daily: string;
             /** @default Twice a day */
-            Frequency_daily_2: string;
+            readonly Frequency_daily_2: string;
             /** @default Every 4 hours */
-            Frequency_every_4_hours: string;
+            readonly Frequency_every_4_hours: string;
             /** @default Every hour */
-            Frequency_every_hour: string;
+            readonly Frequency_every_hour: string;
             /** @default Every 30 minutes */
-            Frequency_half_hour: string;
+            readonly Frequency_half_hour: string;
             /** @default Every 10 minutes */
-            Frequency_10_min: string;
+            readonly Frequency_10_min: string;
             /** @default Every 5 minutes */
-            Frequency_5_min: string;
+            readonly Frequency_5_min: string;
             /** @default times<br>a week */
-            times_a_week: string;
+            readonly times_a_week: string;
             /** @default Run bidding */
-            Start_managing_bids: string;
+            readonly Start_managing_bids: string;
             /** @default Manage bids */
-            Manage_bids: string;
+            readonly Manage_bids: string;
             /** @default Bidding schedule */
-            Bidding_schedule: string;
+            readonly Bidding_schedule: string;
             /** @default Do not manage disabled keywords */
-            No_manage_bids_of_suspended_keywords: string;
+            readonly No_manage_bids_of_suspended_keywords: string;
             /** @default this option cannot be combined with the "Stop impressions" tactic */
-            cannot_combine_option_with_no_impressions_tactics: string;
+            readonly cannot_combine_option_with_no_impressions_tactics: string;
             /** @default Bidding is active only with ad impressions enabled, ad status is checked automatically */
-            Bidding_on_when_impressions_on: string;
+            readonly Bidding_on_when_impressions_on: string;
             /** @default update */
-            update: string;
+            readonly update: string;
             /** @default Impressions schedule */
-            Impressions_schedule: string;
+            readonly Impressions_schedule: string;
             /** @default Schedule not uploaded yet. */
-            Schedule_not_uploaded: string;
+            readonly Schedule_not_uploaded: string;
             /** @default Campaign timezone */
-            Campaign_timezone: string;
+            readonly Campaign_timezone: string;
             /** @default Hours */
-            Hours: string;
+            readonly Hours: string;
             /** @default Show on weekend workdays */
-            Include_working_weekend: string;
+            readonly Include_working_weekend: string;
             /** @default Show on holidays */
-            Include_holidays: string;
+            readonly Include_holidays: string;
             /** @default Show since */
-            Show_since: string;
+            readonly Show_since: string;
             /** @default till */
-            show_till: string;
+            readonly show_till: string;
             /** @default do not show */
-            do_not_show: string;
+            readonly do_not_show: string;
             /** @default Campaign settings */
-            Campaign_settings: string;
+            readonly Campaign_settings: string;
             /** @default All campaigns */
-            All_campaigns: string;
+            readonly All_campaigns: string;
             /** @default Campaign */
-            Campaign: string;
+            readonly Campaign: string;
             /** @default Details */
-            Info: string;
+            readonly Info: string;
             /** @default risk bid */
-            risk_bid: string;
+            readonly risk_bid: string;
             /** @default 1 Спецразмещение */
-            First_place_premium: string;
+            readonly First_place_premium: string;
             /** @default 2 Спецразмещение */
-            Second_place_premium: string;
+            readonly Second_place_premium: string;
             /** @default 3 Спецразмещение */
-            Third_place_premium: string;
+            readonly Third_place_premium: string;
             /** @default Спецразмещение */
-            Premium_placement: string;
+            readonly Premium_placement: string;
             /** @default 1 место в Гарантии */
-            First_place: string;
+            readonly First_place: string;
             /** @default Гарантированные показы */
-            Guaranteed_placement: string;
+            readonly Guaranteed_placement: string;
             /** @default 1 место */
-            First_position: string;
+            readonly First_position: string;
             /** @default Вверху страницы */
-            Above_page: string;
+            readonly Above_page: string;
             /** @default Первая страница */
-            First_page: string;
+            readonly First_page: string;
             /** @default Traffic volume max. */
-            P11_0: string;
+            readonly P11_0: string;
             /** @default Traffic volume ~95% */
-            P12_0: string;
+            readonly P12_0: string;
             /** @default Traffic volume ~90% */
-            P13_0: string;
+            readonly P13_0: string;
             /** @default Traffic volume ~75% */
-            P1L_0: string;
+            readonly P1L_0: string;
             /** @default Traffic volume ~15% */
-            P21_0: string;
+            readonly P21_0: string;
             /** @default Traffic volume ~5% */
-            P2L_0: string;
+            readonly P2L_0: string;
             /** @default 1st position */
-            P11_1: string;
+            readonly P11_1: string;
             /** @default Top of page */
-            P1L_1: string;
+            readonly P1L_1: string;
             /** @default Suggested bid */
-            P21_1: string;
+            readonly P21_1: string;
             /** @default First page */
-            P2L_1: string;
+            readonly P2L_1: string;
             /** @default 1PP */
-            P11_0_short: string;
+            readonly P11_0_short: string;
             /** @default 2PP */
-            P12_0_short: string;
+            readonly P12_0_short: string;
             /** @default 3PP */
-            P13_0_short: string;
+            readonly P13_0_short: string;
             /** @default PP */
-            P1L_0_short: string;
+            readonly P1L_0_short: string;
             /** @default 1GP */
-            P21_0_short: string;
+            readonly P21_0_short: string;
             /** @default GP */
-            P2L_0_short: string;
+            readonly P2L_0_short: string;
             /** @default 1P */
-            P11_1_short: string;
+            readonly P11_1_short: string;
             /** @default ↑P */
-            P1L_1_short: string;
+            readonly P1L_1_short: string;
             /** @default SB */
-            P21_1_short: string;
+            readonly P21_1_short: string;
             /** @default ↓P */
-            P2L_1_short: string;
+            readonly P2L_1_short: string;
             /** @default MAX: set MAX bid */
-            Tactics_2_set_max_bid: string;
+            readonly Tactics_2_set_max_bid: string;
             /** @default Move ad down */
-            Tactics_2_lower_pos: string;
+            readonly Tactics_2_lower_pos: string;
             /** @default Set min bid */
-            Tactics_2_set_min_bid: string;
+            readonly Tactics_2_set_min_bid: string;
             /** @default Stop impressions */
-            Tactics_2_stop_impressions: string;
+            readonly Tactics_2_stop_impressions: string;
             /** @default ad is inactive */
-            impressions_disabled: string;
+            readonly impressions_disabled: string;
             /** @default set in MAX */
-            set_max: string;
+            readonly set_max: string;
             /** @default min bid */
-            set_min: string;
+            readonly set_min: string;
             /** @default old bid */
-            old_bid: string;
+            readonly old_bid: string;
             /** @default Lower position */
-            Lower_position: string;
+            readonly Lower_position: string;
             /** @default Select period */
-            Select_date: string;
+            readonly Select_date: string;
             /** @default Download bidding history */
-            Download_log: string;
+            readonly Download_log: string;
             /** @default Important! Bidding is available if you have a minimum balance of: */
-            Warinig_min_balance_for_bidding: string;
+            readonly Warinig_min_balance_for_bidding: string;
             /** @default This campaign already exists in another project */
-            Campaign_added_in_another_project: string;
+            readonly Campaign_added_in_another_project: string;
             /** @default Bidding is already activated for this campaign in another project */
-            Bidding_activated_for_campaign_in_another_project: string;
+            readonly Bidding_activated_for_campaign_in_another_project: string;
             /** @default in ano. project */
-            in_another_project: string;
+            readonly in_another_project: string;
             /** @default agency */
-            agency: string;
+            readonly agency: string;
         };
     };
     responses: never;

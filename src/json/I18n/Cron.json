@@ -12,46 +12,57 @@
                 "properties": {
                     "Field_command": {
                         "default": "Сommand",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Field_description": {
                         "default": "Description",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Field_days": {
                         "default": "Days of the week",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Field_hh": {
                         "default": "Hours",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Field_i": {
                         "default": "Minutes",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Field_on": {
                         "default": "On/Off",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Field_task_create_time": {
                         "default": "Task created",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Field_task_start_time": {
                         "default": "Task runned",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Field_task_status": {
                         "default": "Execution status",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Disabled": {
                         "default": "Disabled",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Enabled": {
                         "default": "Enabled",
+                        "readOnly": true,
                         "type": "string"
                     }
                 },

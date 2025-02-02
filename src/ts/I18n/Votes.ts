@@ -9,23 +9,23 @@ export interface components {
     schemas: {
         "I18n.Votes": {
             /** @default Have you found what you were looking for? */
-            Question_is_article_useful: string;
+            readonly Question_is_article_useful: string;
             /** @default Thanks for the feedback! You can leave a comment below, but it's optional. You may write something nice. */
-            Message_after_good_vote: string;
+            readonly Message_after_good_vote: string;
             /** @default Напишите, что вы искали, — мы поможем вам, а также постараемся добавить это в руководство. */
-            Message_after_bad_vote: string;
+            readonly Message_after_bad_vote: string;
             /** @default What did you like most? */
-            Question_after_good_vote: string;
+            readonly Question_after_good_vote: string;
             /** @default What's been lacking in this guide? */
-            Question_after_bad_vote: string;
+            readonly Question_after_bad_vote: string;
             /** @default We'll keep this up! */
-            Message_after_comment_good_vote: string;
+            readonly Message_after_comment_good_vote: string;
             /** @default We'll improve our service. */
-            Message_after_comment_bad_vote: string;
+            readonly Message_after_comment_bad_vote: string;
             /** @default Leave feedback */
-            Submit: string;
+            readonly Submit: string;
             /** @default Отправить тикет */
-            SendTicket: string;
+            readonly SendTicket: string;
         };
     };
     responses: never;

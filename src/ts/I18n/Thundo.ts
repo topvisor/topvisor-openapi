@@ -9,9 +9,9 @@ export interface components {
     schemas: {
         "I18n.Thundo": {
             /** @default Thunder is coming */
-            Og_title: string;
+            readonly Og_title: string;
             /** @default Fasten your seatbelts, we're about to transform the view of how to do SEO! */
-            Og_description: string;
+            readonly Og_description: string;
         };
     };
     responses: never;

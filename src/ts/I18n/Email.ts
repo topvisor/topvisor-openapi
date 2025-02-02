@@ -9,58 +9,58 @@ export interface components {
     schemas: {
         "I18n.Email": {
             /** @default Confirm your registration */
-            User_registration_confirm: string;
+            readonly User_registration_confirm: string;
             /** @default Account details */
-            User_accept_email_title: string;
-            user_accept_email_title_suffix_recommendations: string;
+            readonly User_accept_email_title: string;
+            readonly user_accept_email_title_suffix_recommendations: string;
             /** @default Password successfully changed */
-            User_PWD_msg_title2: string;
+            readonly User_PWD_msg_title2: string;
             /** @default Recovering your password */
-            User_restore_access: string;
+            readonly User_restore_access: string;
             /** @default Access granted */
-            User_project_access: string;
+            readonly User_project_access: string;
             /** @default Your friend invites you to sign up and get a double welcome bonus! 🤩 */
-            User_registration_invite_mail_title: string;
+            readonly User_registration_invite_mail_title: string;
             /** @default Confirm your email */
-            User_change_confirm: string;
+            readonly User_change_confirm: string;
             /** @default Your email has been changed */
-            User_email_changed_msg: string;
+            readonly User_email_changed_msg: string;
             /** @default You have received access to the project. */
-            User_projects_rights_title: string;
+            readonly User_projects_rights_title: string;
             /** @default Confirm project transfer. */
-            User_projects_changeOwner_title: string;
+            readonly User_projects_changeOwner_title: string;
             /** @default Update integration key */
-            Integration_expires: string;
+            readonly Integration_expires: string;
             /** @default Integration */
-            Integration_has_expired1: string;
+            readonly Integration_has_expired1: string;
             /** @default integration key has expired. */
-            Integration_has_expired2: string;
+            readonly Integration_has_expired2: string;
             /** @default integration error */
-            Integration_access_error: string;
+            readonly Integration_access_error: string;
             /** @default Report: Project dynamics. */
-            Project_report: string;
+            readonly Project_report: string;
             /** @default Index status: new changes detected. */
-            Indexing_informer_title: string;
+            readonly Indexing_informer_title: string;
             /** @default Website watcher: new changes detected. */
-            Watcher_informer_title: string;
+            readonly Watcher_informer_title: string;
             /** @default Sitemap: new changes detected. */
-            Sitemap_changes_to_sitemap_email: string;
+            readonly Sitemap_changes_to_sitemap_email: string;
             /** @default Website audit is completed. */
-            Audit_informer_title: string;
+            readonly Audit_informer_title: string;
             /** @default Total indexed */
-            Total_indexed: string;
+            readonly Total_indexed: string;
             /** @default Dropped from index */
-            Dropped_from_index: string;
+            readonly Dropped_from_index: string;
             /** @default New indexed */
-            Got_indexed: string;
+            readonly Got_indexed: string;
             /** @default Do not forget to renew your subscription */
-            Tariff_due_to_expire: string;
+            readonly Tariff_due_to_expire: string;
             /** @default User agreement */
-            Dogovor: string;
+            readonly Dogovor: string;
             /** @default Balance is topped up */
-            Ur_balance: string;
+            readonly Ur_balance: string;
             /** @default Pyment has been received */
-            Payment_received: string;
+            readonly Payment_received: string;
         };
     };
     responses: never;

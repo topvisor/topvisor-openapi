@@ -12,138 +12,172 @@
                 "properties": {
                     "Snippets_in_snapshots": {
                         "default": "Snippets in snapshots",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "No_snapshots_these_dates_note": {
                         "default": "No Snapshots saved for the applied filters and dates",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Snapshots_for_keyword": {
                         "default": "Snapshots of",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Add_keyword_to_see_snapshot": {
                         "default": "Add keyword to display search results Snapshot",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Add_keyword_to_compare": {
                         "default": "Add keyword to compare Snapshots",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "not_in_competitor_list": {
                         "default": "not on the competitor list",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "in_competitor_list": {
                         "default": "on the competitor list",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "To_manage_competitors_move": {
                         "default": "To manage competitor websites, move to the",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "move_to_settings": {
                         "default": "Rank Tracker page and press a gear icon on the toolbar",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Read_competitor_help_article": {
                         "default": "For more details read the Help center article <a href=\"/support/dynamics/competitors/\" target=\"_blank\">How to manage competitor websites?</a>",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Competitor_website": {
                         "default": "Competitor website",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Save_snapshot_top_N": {
                         "default": "Save a snapshot of TOP",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Do_not_save": {
                         "default": "Don't save",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "selected_keywords_only": {
                         "default": "selected keywords only",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Saved_list": {
                         "default": "Saved list",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "First_40_keywords": {
                         "default": "First 40 keywords",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Save_list": {
                         "default": "Save list",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Clear_list": {
                         "default": "Clear list",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Highlight": {
                         "default": "Highlight",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Hide_domains": {
                         "default": "Gray out selected domains",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Hide_domains_comment": {
                         "default": "Selected domains will be grayed out to make snapshots data reader-friendly and easy to analyze",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Highlighting_error": {
                         "default": "Operation failed. Invalid domains: ",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Competitor_URLs": {
                         "default": "Competitor URLs",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Add_to_competitors": {
                         "default": "Add to competitors",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Remove_from_competitors": {
                         "default": "Remove from competitors",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Added_competitors": {
                         "default": "Added competitors",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Compare_all_keywords": {
                         "default": "Compare all keywords",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Keyword_dynamics": {
                         "default": "Keyword dynamics",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Select_keyword": {
                         "default": "Select keyword",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Snippets_no_checked": {
                         "default": "<b>Snippets in Snapshots</b> weren't collected on the selected dates.",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Snippets_no_checking": {
                         "default": "<b>Snippets in Snapshots</b> aren't being collected. Turn this feature on in the project's settings.",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Snapshots_checks_in_progress_1": {
                         "default": "You haven't collected snapshots for selected filters",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Snapshots_checks_in_progress_2": {
                         "default": "Collect snapshots to see SERP TOPs for your keywords and your competitors' keywords.<br>Your keyword rankings will be checked when you collect snippets.<br>📊 <a href=\"/snapshots/\" target=\"_blank\">Why you need to check SERP Top →</a>",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Open_keyword_snapshot": {
                         "default": "Open keyword snapshot",
+                        "readOnly": true,
                         "type": "string"
                     }
                 },

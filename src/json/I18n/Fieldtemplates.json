@@ -12,42 +12,52 @@
                 "properties": {
                     "Title": {
                         "default": "Manage columns",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Column": {
                         "default": "Column",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Last_columns_list": {
                         "default": "List of recent columns",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Save_as_new_template": {
                         "default": "Save as new template",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "save_changes": {
                         "default": "save changes",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Added_columns": {
                         "default": "Added columns",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Columns_settings": {
                         "default": "Column settings",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Delete_columns": {
                         "default": "Delete columns",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "No_columns_added": {
                         "default": "No columns added",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Advanced_options": {
                         "default": "Advanced options",
+                        "readOnly": true,
                         "type": "string"
                     }
                 },

@@ -9,486 +9,486 @@ export interface components {
     schemas: {
         "I18n.User": {
             /** @default Account */
-            Account: string;
+            readonly Account: string;
             /** @default Name */
-            Name: string;
+            readonly Name: string;
             /** @default Password */
-            Password: string;
+            readonly Password: string;
             /** @default updated */
-            password_updated: string;
+            readonly password_updated: string;
             /** @default Тема оформления */
-            Theme: string;
+            readonly Theme: string;
             /** @default Character encoding */
-            Encoding: string;
+            readonly Encoding: string;
             /** @default Delimiter */
-            Delimiter: string;
+            readonly Delimiter: string;
             /** @default Decimal point */
-            Dec_point: string;
+            readonly Dec_point: string;
             /** @default Time zone */
-            Current_time: string;
+            readonly Current_time: string;
             /** @default Date format */
-            Date_format: string;
+            readonly Date_format: string;
             /** @default Push notifications */
-            Push_notifications: string;
+            readonly Push_notifications: string;
             /** @default Enabled */
-            Push_enabled: string;
+            readonly Push_enabled: string;
             /** @default Disabled */
-            Push_disabled: string;
+            readonly Push_disabled: string;
             /** @default You can turn off notifications in the browser settings */
-            Push_disable_browser: string;
+            readonly Push_disable_browser: string;
             /** @default You can turn on notifications in the browser settings */
-            Push_enable_browser: string;
+            readonly Push_enable_browser: string;
             /** @default Enable */
-            Push_enable: string;
+            readonly Push_enable: string;
             /** @default Linked accounts */
-            Link_account: string;
+            readonly Link_account: string;
             /** @default Remove -  */
-            Remove_account: string;
+            readonly Remove_account: string;
             /** @default API Key */
-            API_key: string;
+            readonly API_key: string;
             /** @default Not generated */
-            API_key_not_generated: string;
+            readonly API_key_not_generated: string;
             /** @default We have sent a confirmation message to  */
-            Confirmation_msg_notice_1: string;
+            readonly Confirmation_msg_notice_1: string;
             /** @default . Click a confirmation link to change your Email address. If you don't receive the message,<br> please check your Spam Email folder. */
-            Confirmation_msg_notice_2: string;
+            readonly Confirmation_msg_notice_2: string;
             /** @default . */
-            Confirmation_msg_notice_3: string;
+            readonly Confirmation_msg_notice_3: string;
             /** @default We've sent you a email change confirmation. Follow the link in the email to change your account email. */
-            Change_email_message: string;
+            readonly Change_email_message: string;
             /** @default to your account after card activation */
-            card_activation_notice: string;
+            readonly card_activation_notice: string;
             /** @default of all monthly payments are sent back to your account on the 1st day of each month */
-            Rank_cashback_notice: string;
+            readonly Rank_cashback_notice: string;
             /** @default Participant code */
-            Rank_participant_code: string;
+            readonly Rank_participant_code: string;
             /** @default Export */
-            Export: string;
+            readonly Export: string;
             /** @default Notification Center */
-            Informer: string;
+            readonly Informer: string;
             /** @default Balance reached */
-            Informer_balance_decrease: string;
+            readonly Informer_balance_decrease: string;
             /** @default New ticket replies */
-            Informer_new_ticket_response: string;
+            readonly Informer_new_ticket_response: string;
             /** @default 1 - Paid service. 1 SMS costs $0,01 */
-            Informer_sms_cost: string;
+            readonly Informer_sms_cost: string;
             /** @default Period */
-            Export_period: string;
+            readonly Export_period: string;
             /** @default Guest */
-            Guest_project: string;
+            readonly Guest_project: string;
             /** @default Archived */
-            Archived_project: string;
+            readonly Archived_project: string;
             /** @default Total keyword count */
-            Export_keywords_number: string;
+            readonly Export_keywords_number: string;
             /** @default Checked keyword rankings */
-            Export_tracked_ranks_number: string;
+            readonly Export_tracked_ranks_number: string;
             /** @default Export cost */
-            Export_cost: string;
+            readonly Export_cost: string;
             /** @default Prepare export */
-            Export_prepare: string;
+            readonly Export_prepare: string;
             /** @default Export */
-            Export_start: string;
+            readonly Export_start: string;
             /** @default Archives */
-            Archives: string;
+            readonly Archives: string;
             /** @default Account settings */
-            Menu_account: string;
+            readonly Menu_account: string;
             /** @default Notifications */
-            Menu_notifications: string;
+            readonly Menu_notifications: string;
             /** @default Bulk operations */
-            Menu_bulk_operations: string;
+            readonly Menu_bulk_operations: string;
             /** @default Account stats */
-            Menu_account_stats: string;
+            readonly Menu_account_stats: string;
             /** @default XML transfer */
-            Menu_XML_transfer: string;
+            readonly Menu_XML_transfer: string;
             /** @default New email */
-            New_email: string;
+            readonly New_email: string;
             /** @default Your password */
-            Current_pwd: string;
+            readonly Current_pwd: string;
             /** @default Update email address */
-            Change_email: string;
+            readonly Change_email: string;
             /** @default Update email address */
-            Email_change: string;
+            readonly Email_change: string;
             /** @default New password */
-            New_pwd: string;
+            readonly New_pwd: string;
             /** @default Confirm new password */
-            Confirm_new_pwd: string;
+            readonly Confirm_new_pwd: string;
             /** @default Change password */
-            Change_pwd: string;
+            readonly Change_pwd: string;
             /** @default Change password */
-            Pwd_change: string;
+            readonly Pwd_change: string;
             /** @default Branded reports */
-            White_label: string;
+            readonly White_label: string;
             /** @default Branded reports */
-            Branded_reports: string;
+            readonly Branded_reports: string;
             /** @default formats */
-            formats: string;
+            readonly formats: string;
             /** @default max. height */
-            max_height: string;
+            readonly max_height: string;
             /** @default User scripts */
-            User_scripts: string;
+            readonly User_scripts: string;
             /** @default Manage brand settings */
-            Brand_settings: string;
+            readonly Brand_settings: string;
             /** @default Company name */
-            Company_name: string;
+            readonly Company_name: string;
             /** @default Company logo */
-            Company_logo: string;
+            readonly Company_logo: string;
             /** @default Required company logo format is */
-            Logo_required_format_notice: string;
+            readonly Logo_required_format_notice: string;
             /** @default Required company logo size should be up to */
-            Logo_required_size_notice: string;
+            readonly Logo_required_size_notice: string;
             /** @default Max company logo height is */
-            Logo_required_height_notice: string;
+            readonly Logo_required_height_notice: string;
             /** @default At least one project update required to generate a report */
-            Cannot_form_report_without_updates: string;
+            readonly Cannot_form_report_without_updates: string;
             /** @default required image formats: .png, .svg */
-            logo_required_format: string;
+            readonly logo_required_format: string;
             /** @default required height: 50px */
-            logo_required_height: string;
+            readonly logo_required_height: string;
             /** @default * Link your email to get full access to all features */
-            Link_email_notice: string;
+            readonly Link_email_notice: string;
             /** @default  into this form */
-            to_password_form: string;
+            readonly to_password_form: string;
             /** @default ** to confirm that you are the account owner */
-            Confirm_owner_status_notice: string;
+            readonly Confirm_owner_status_notice: string;
             /** @default This name is too short */
-            Short_name: string;
+            readonly Short_name: string;
             /** @default This password is too short */
-            Pass_min_length: string;
+            readonly Pass_min_length: string;
             /** @default The passwords do not match! */
-            PWS_not_equal: string;
+            readonly PWS_not_equal: string;
             /** @default This email already exists */
-            Email_exists: string;
+            readonly Email_exists: string;
             /** @default This email exists in the system */
-            Email_exists2: string;
+            readonly Email_exists2: string;
             /** @default This email already exists. <br>In order to link it to this account enter your password from  */
-            Email_exists3: string;
+            readonly Email_exists3: string;
             /** @default Join e-mail */
-            Join_email: string;
+            readonly Join_email: string;
             /** @default Enter password for this e-mail */
-            Enter_password_for_email: string;
+            readonly Enter_password_for_email: string;
             /** @default Your email address has been successfully changed from  */
-            Email_changed_from_to: string;
+            readonly Email_changed_from_to: string;
             /** @default Invitation to  */
-            Registration_invite_sended_1: string;
+            readonly Registration_invite_sended_1: string;
             /** @default  was sent successfully */
-            Registration_invite_sended_2: string;
+            readonly Registration_invite_sended_2: string;
             /** @default Message hasn't been sent due to error */
-            Registration_invite_sended_error: string;
+            readonly Registration_invite_sended_error: string;
             /** @default Confirmation message sent to  */
-            System_reg_msg1: string;
+            readonly System_reg_msg1: string;
             /** @default   */
-            System_reg_msg2: string;
+            readonly System_reg_msg2: string;
             /** @default The code is invalid or has been used */
-            Invalid_code: string;
+            readonly Invalid_code: string;
             /** @default We have sent you password reset instructions */
-            Retrieve_system_msg: string;
+            readonly Retrieve_system_msg: string;
             /** @default Yandex XML authorization error */
-            Yandex_XML_auth_error: string;
+            readonly Yandex_XML_auth_error: string;
             /** @default Code is invalid or has been used */
-            Rank_code_not_available: string;
+            readonly Rank_code_not_available: string;
             /** @default You can activate achievement only once */
-            Rank_recurrent_sending_code_not_available: string;
+            readonly Rank_recurrent_sending_code_not_available: string;
             /** @default Activation period has expired */
-            Rank_date_expired: string;
+            readonly Rank_date_expired: string;
             /** @default Link your Twitter account to log in with Twitter. */
-            Twitter_error_binding_accounts1: string;
+            readonly Twitter_error_binding_accounts1: string;
             /** @default Otherwise, we will not be able to identify you in Twitter */
-            Twitter_error_binding_accounts2: string;
+            readonly Twitter_error_binding_accounts2: string;
             /** @default We couldn't find your login in Twitter, please submit a ticket and report the issue to Customer support */
-            Twitter_login_not_found: string;
+            readonly Twitter_login_not_found: string;
             /** @default Twitter server error */
-            Twitter_servers_error: string;
+            readonly Twitter_servers_error: string;
             /** @default Follow  */
-            Required_signing: string;
+            readonly Required_signing: string;
             /** @default Please retweet us */
-            Twitter_retweet_required: string;
+            readonly Twitter_retweet_required: string;
             /** @default Click Activate */
-            Push_button: string;
+            readonly Push_button: string;
             /** @default You lost achievement */
-            Rank_canceled: string;
+            readonly Rank_canceled: string;
             /** @default You lost the XML monster card */
-            XML_monster_deactivate_title: string;
+            readonly XML_monster_deactivate_title: string;
             /** @default Your "XML monster" card is no longer active as you are not transferring more limits than everyone else anymore */
-            XML_monster_deactivate_msg: string;
+            readonly XML_monster_deactivate_msg: string;
             /** @default You received the "XML monster" card! */
-            XML_monster_activate_title: string;
+            readonly XML_monster_activate_title: string;
             /** @default Your "XML monster" card is activated as you have transferred more XML limits than everyone else */
-            XML_monster_activate_msg: string;
+            readonly XML_monster_activate_msg: string;
             /** @default You lost the "PPC Chat member" achievement */
-            Rank_ppcchat_deactivate_title: string;
+            readonly Rank_ppcchat_deactivate_title: string;
             /** @default You lost the "SEO Chat member" achievement */
-            Rank_seochat_deactivate_title: string;
+            readonly Rank_seochat_deactivate_title: string;
             /** @default You received the "PPC Chat member" achievement! */
-            Rank_ppcchat_activate_title: string;
+            readonly Rank_ppcchat_activate_title: string;
             /** @default You received the "SEO Chat member" achievement! */
-            Rank_seochat_activate_title: string;
+            readonly Rank_seochat_activate_title: string;
             /** @default Retweet  */
-            Ranks_retweet: string;
+            readonly Ranks_retweet: string;
             /** @default Twitter follower */
-            Ranks_twitter_follower: string;
+            readonly Ranks_twitter_follower: string;
             /** @default Activate */
-            Ranks_activate: string;
+            readonly Ranks_activate: string;
             /** @default a post */
-            Ranks_twitter_post: string;
+            readonly Ranks_twitter_post: string;
             /** @default You need to complete all steps! */
-            Ranks_twitter_incomplete_notice: string;
+            readonly Ranks_twitter_incomplete_notice: string;
             /** @default Manage access */
-            Access: string;
+            readonly Access: string;
             /** @default Who can access */
-            Access_emails: string;
+            readonly Access_emails: string;
             /** @default View project */
-            Access_view_project: string;
+            readonly Access_view_project: string;
             /** @default Rank tracker */
-            Access_track_ranks: string;
+            readonly Access_track_ranks: string;
             /** @default Traffic data */
-            Access_view_traffic: string;
+            readonly Access_view_traffic: string;
             /** @default Analytics reports */
-            Access_view_analytics: string;
+            readonly Access_view_analytics: string;
             /** @default Search volume */
-            Access_view_AMS: string;
+            readonly Access_view_AMS: string;
             /** @default Project */
-            Access_project: string;
+            readonly Access_project: string;
             /** @default Restrict access */
-            Access_restrict: string;
+            readonly Access_restrict: string;
             /** @default Summary */
-            Access_view_summary: string;
+            readonly Access_view_summary: string;
             /** @default Apply to selected */
-            Access_apply_to_selected: string;
+            readonly Access_apply_to_selected: string;
             /** @default Grant access */
-            Access_grant_access: string;
+            readonly Access_grant_access: string;
             /** @default User email */
-            Access_user_email: string;
+            readonly Access_user_email: string;
             /** @default Guest link */
-            Access_guest_link: string;
-            Access_count: string;
+            readonly Access_guest_link: string;
+            readonly Access_count: string;
             /** @default Allow to pick dates */
-            Access_select_dates: string;
+            readonly Access_select_dates: string;
             /** @default Add user */
-            Access_add_user: string;
+            readonly Access_add_user: string;
             /** @default Project transfer */
-            Change_project_owner: string;
+            readonly Change_project_owner: string;
             /** @default Pending, until */
-            Pending_project_transfer_1: string;
+            readonly Pending_project_transfer_1: string;
             /** @default confirms project transfer. */
-            Pending_project_transfer_2: string;
+            readonly Pending_project_transfer_2: string;
             /** @default Transfer */
-            Transfer_project: string;
+            readonly Transfer_project: string;
             /** @default Manage access */
-            Access_manage: string;
+            readonly Access_manage: string;
             /** @default not connected */
-            integration_not_connected: string;
+            readonly integration_not_connected: string;
             /** @default Connect */
-            Integration_connect: string;
+            readonly Integration_connect: string;
             /** @default Key expires */
-            Integration_valid_till: string;
+            readonly Integration_valid_till: string;
             /** @default Select a counter */
-            Integration_counter_not_selected: string;
+            readonly Integration_counter_not_selected: string;
             /** @default No counters found */
-            Integration_no_counters_found: string;
+            readonly Integration_no_counters_found: string;
             /** @default Update */
-            Integration_get_fresh_data: string;
+            readonly Integration_get_fresh_data: string;
             /** @default Expires in */
-            Integration_expires_in: string;
+            readonly Integration_expires_in: string;
             /** @default days */
-            Integration_days_1: string;
+            readonly Integration_days_1: string;
             /** @default days */
-            Integration_days_2: string;
+            readonly Integration_days_2: string;
             /** @default days */
-            Integration_days_3: string;
+            readonly Integration_days_3: string;
             /** @default Extend */
-            Integration_extend: string;
+            readonly Integration_extend: string;
             /** @default Disconnect */
-            Integration_disconnect: string;
+            readonly Integration_disconnect: string;
             /** @default Integrate ad campaigns */
-            Integration_integrate_ad_campaigns: string;
+            readonly Integration_integrate_ad_campaigns: string;
             /** @default We found no available campaigns to manage in your account. */
-            Integration_no_campaigns_for_edit: string;
+            readonly Integration_no_campaigns_for_edit: string;
             /** @default Account */
-            Preferences: string;
+            readonly Preferences: string;
             /** @default account */
-            preferences: string;
+            readonly preferences: string;
             /** @default your account settings */
-            account_link: string;
+            readonly account_link: string;
             /** @default Bank */
-            Bank: string;
+            readonly Bank: string;
             /** @default Bulk operations */
-            Bulk_operations: string;
+            readonly Bulk_operations: string;
             /** @default We have emailed a password to */
-            Password_emailed: string;
+            readonly Password_emailed: string;
             /** @default We have sent a new password to */
-            Password_new_emailed: string;
+            readonly Password_new_emailed: string;
             /** @default You can change your password in  */
-            Change_password_notice: string;
+            readonly Change_password_notice: string;
             /** @default Widget */
-            Widget: string;
+            readonly Widget: string;
             /** @default Top */
-            Analytcis_top: string;
+            readonly Analytcis_top: string;
             /** @default Metric */
-            Analytcis_metric: string;
+            readonly Analytcis_metric: string;
             /** @default Keywords */
-            Analytcis_by_keywords: string;
+            readonly Analytcis_by_keywords: string;
             /** @default Group */
-            Analytcis_by_groups: string;
+            readonly Analytcis_by_groups: string;
             /** @default Folder */
-            Analytcis_by_folders: string;
+            readonly Analytcis_by_folders: string;
             /** @default Location */
-            Analytcis_by_locations: string;
+            readonly Analytcis_by_locations: string;
             /** @default Competitors */
-            Analytcis_by_competitors: string;
+            readonly Analytcis_by_competitors: string;
             /** @default Top */
-            Analytcis_by_top: string;
+            readonly Analytcis_by_top: string;
             /** @default Locations not selected */
-            Analytics_regions_not_selected: string;
+            readonly Analytics_regions_not_selected: string;
             /** @default By tag */
-            Analytcis_by_tag: string;
+            readonly Analytcis_by_tag: string;
             /** @default Minimize */
-            Analytics_narrow: string;
+            readonly Analytics_narrow: string;
             /** @default Expand */
-            Analytics_widen: string;
+            readonly Analytics_widen: string;
             /** @default Show the widget to guest users */
-            Analytics_show_widget_other_accounts: string;
+            readonly Analytics_show_widget_other_accounts: string;
             /** @default Short link */
-            Shortener_short_link: string;
+            readonly Shortener_short_link: string;
             /** @default Short links */
-            Shortener_short_links: string;
+            readonly Shortener_short_links: string;
             /** @default Paste URL http://... and press Enter */
-            Shortener_add_url_here: string;
+            readonly Shortener_add_url_here: string;
             /** @default Search URL... */
-            Shortener_search_url: string;
+            readonly Shortener_search_url: string;
             /** @default Shorten URLs and share compact links to webpages. Stats and analytics: visit count by source (social media and websites). */
-            Shortener_turn_long_to_short: string;
+            readonly Shortener_turn_long_to_short: string;
             /** @default Shorten links and share compact URLs. Quick, handy, stats! */
-            Shortener_turn_long_to_short_1: string;
+            readonly Shortener_turn_long_to_short_1: string;
             /** @default Total clicks */
-            Shortener_total_clicks: string;
+            readonly Shortener_total_clicks: string;
             /** @default Total unique clicks */
-            Shortener_total_unique_clicks: string;
+            readonly Shortener_total_unique_clicks: string;
             /** @default Pixels */
-            Shortener_QR_pixels: string;
+            readonly Shortener_QR_pixels: string;
             /** @default Labyrinth */
-            Shortener_QR_labyrinth: string;
+            readonly Shortener_QR_labyrinth: string;
             /** @default Use brand */
-            Shortener_use_brand: string;
+            readonly Shortener_use_brand: string;
             /** @default Hide this message */
-            Hide_this_message: string;
+            readonly Hide_this_message: string;
             /** @default Top up your balance first */
-            Need_to_top_up_balance: string;
+            readonly Need_to_top_up_balance: string;
             /** @default Your password was successfully changed! */
-            PWD_changed: string;
+            readonly PWD_changed: string;
             /** @default Change profile picture */
-            Change_profile_pic: string;
+            readonly Change_profile_pic: string;
             /** @default Upload */
-            Upload_pic: string;
+            readonly Upload_pic: string;
             /** @default Default (display the recent update first) */
-            Positions_reverse_dates_0: string;
+            readonly Positions_reverse_dates_0: string;
             /** @default Reverse (display the first update first) */
-            Positions_reverse_dates_1: string;
+            readonly Positions_reverse_dates_1: string;
             /** @default Date order */
-            Positions_reverse_dates_label: string;
+            readonly Positions_reverse_dates_label: string;
             /** @default Remember selected locations */
-            Remember_selected_locations: string;
+            readonly Remember_selected_locations: string;
             /** @default Addit. top segment */
-            Additional_top_segment: string;
+            readonly Additional_top_segment: string;
             /** @default Sign out of all accounts */
-            Sign_out_of_all_accounts: string;
+            readonly Sign_out_of_all_accounts: string;
             /** @default Apps */
-            Settings_header_apps: string;
+            readonly Settings_header_apps: string;
             /** @default Format */
-            Settings_header_format: string;
+            readonly Settings_header_format: string;
             /** @default Rank tracker */
-            Settings_header_rank_tracker: string;
+            readonly Settings_header_rank_tracker: string;
             /** @default Login */
-            Login: string;
+            readonly Login: string;
             /** @default Site */
-            Site: string;
+            readonly Site: string;
             /** @default Limit */
-            Limit: string;
+            readonly Limit: string;
             /** @default Used */
-            Used: string;
+            readonly Used: string;
             /** @default Project import */
-            Project_import: string;
+            readonly Project_import: string;
             /** @default Provide access details to the selected tool to transfer your projects */
-            Provide_access_details: string;
+            readonly Provide_access_details: string;
             /** @default Provide access details to the selected tool to transfer your projects */
-            Provide_access_to_service_for_transfer: string;
+            readonly Provide_access_to_service_for_transfer: string;
             /** @default Tool */
-            Service_to_transfer_from: string;
+            readonly Service_to_transfer_from: string;
             /** @default Tool name */
-            Service_other_name: string;
+            readonly Service_other_name: string;
             /** @default Import */
-            Import: string;
+            readonly Import: string;
             /** @default Projects to import */
-            Projects_to_import: string;
+            readonly Projects_to_import: string;
             /** @default Project name */
-            Project_name: string;
+            readonly Project_name: string;
             /** @default Migration */
-            Migration: string;
+            readonly Migration: string;
             /** @default Selected projects */
-            Selected_projects: string;
+            readonly Selected_projects: string;
             /** @default Active projects */
-            Active_projects: string;
+            readonly Active_projects: string;
             /** @default <p>Your migration request has been received and will be processed shortly.<br>Estimated time of project	import with ranking history is from 1 to 2 hours (weekdays).</p><p>We'll get back to you as soon as migration is completed.</p> */
-            Migration_request_accepted_notice: string;
+            readonly Migration_request_accepted_notice: string;
             /** @default These limits are already being used by their owner */
-            These_limits_already_being_used_by_owner: string;
+            readonly These_limits_already_being_used_by_owner: string;
             /** @default Invalid Email */
-            Invalid_email_error: string;
+            readonly Invalid_email_error: string;
             /** @default Maximum number of email addresses added */
-            Email_limit_error: string;
+            readonly Email_limit_error: string;
             /** @default achievements */
-            achievements_form1: string;
+            readonly achievements_form1: string;
             /** @default achievement */
-            achievements_form2: string;
+            readonly achievements_form2: string;
             /** @default achievements */
-            achievements_form3: string;
+            readonly achievements_form3: string;
             /** @default Decimal point */
-            Decimals: string;
+            readonly Decimals: string;
             /** @default Other */
-            Other_settings: string;
+            readonly Other_settings: string;
             /** @default After changing the key, access with the old key will be restricted. Do you want to continue? */
-            Unavailable_key_notice: string;
+            readonly Unavailable_key_notice: string;
             /** @default Linked accounts */
-            Linked_accounts: string;
+            readonly Linked_accounts: string;
             /** @default Vkontakte */
-            Vkontakte: string;
+            readonly Vkontakte: string;
             /** @default Save changes */
-            Save_changes: string;
+            readonly Save_changes: string;
             /** @default Change name */
-            Change_name: string;
+            readonly Change_name: string;
             /** @default Upload picture */
-            Update_picture: string;
+            readonly Update_picture: string;
             /** @default Edit picture */
-            Edit_picture: string;
+            readonly Edit_picture: string;
             /** @default Delete picture */
-            Delete_picture: string;
+            readonly Delete_picture: string;
             /** @default Current Email */
-            Current_email: string;
+            readonly Current_email: string;
             /** @default Your password */
-            Your_password: string;
+            readonly Your_password: string;
             /** @default Confirm new password */
-            Confirm_new_password: string;
+            readonly Confirm_new_password: string;
             /** @default Other */
-            Other_service: string;
+            readonly Other_service: string;
             /** @default Minimum balance */
-            Min_balance: string;
+            readonly Min_balance: string;
             /** @default Bio */
-            Bio: string;
+            readonly Bio: string;
             /** @default Please note that you should remove all guest projects from your account to change the currency. The access to the projects can only be shared between accounts with the same currency. */
-            Change_currency_guest_projects_notice: string;
+            readonly Change_currency_guest_projects_notice: string;
             /** @default User info */
-            User_info: string;
+            readonly User_info: string;
             /** @default Profile URL */
-            Profile_url: string;
+            readonly Profile_url: string;
             /** @default Promo text */
-            Promo_text: string;
+            readonly Promo_text: string;
             /** @default Promo button */
-            Promo_button: string;
+            readonly Promo_button: string;
             /** @default Text on the button */
-            Promo_button_text: string;
+            readonly Promo_button_text: string;
             /** @default Link on the button */
-            Promo_button_link: string;
+            readonly Promo_button_link: string;
             /** @default View the author's page */
-            View_the_author_page: string;
+            readonly View_the_author_page: string;
         };
     };
     responses: never;

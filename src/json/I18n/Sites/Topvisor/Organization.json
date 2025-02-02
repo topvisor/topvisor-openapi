@@ -12,30 +12,37 @@
                 "properties": {
                     "Description": {
                         "default": "All you need for SEO on one platform. Rank tracking and volume checking, website audit, keyword research. Cluster keywords by Top and track website changes. We make SEO easy for SEO specialists and digital marketers.",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Street_address": {
                         "default": "Voronezhskaya st., 5A, Prisma office building, office 242",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Address_locality": {
                         "default": "Saint Petersburg",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Address_region": {
                         "default": "Leningrad region",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Address_country": {
                         "default": "Russia",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Contact_type": {
                         "default": "Sales",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "General_manager": {
                         "default": "Pustovoyt Denis Anatolievich",
+                        "readOnly": true,
                         "type": "string"
                     }
                 },

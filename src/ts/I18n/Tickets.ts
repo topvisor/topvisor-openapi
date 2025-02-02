@@ -9,109 +9,109 @@ export interface components {
     schemas: {
         "I18n.Tickets": {
             /** @default Ticket reply */
-            Reply_Title: string;
+            readonly Reply_Title: string;
             /** @default When replying to the ticket, please do not change the topic */
-            Reply_notice: string;
+            readonly Reply_notice: string;
             /** @default Thank you, your ticket has been submitted */
-            Auto_message_title: string;
+            readonly Auto_message_title: string;
             /** @default Open */
-            Open_tickets: string;
+            readonly Open_tickets: string;
             /** @default Closed */
-            Closed_tickets: string;
+            readonly Closed_tickets: string;
             /** @default Close ticket */
-            Close_ticket: string;
+            readonly Close_ticket: string;
             /** @default Open ticket */
-            Open_ticket: string;
+            readonly Open_ticket: string;
             /** @default Add to favorites */
-            Add_to_favorites: string;
+            readonly Add_to_favorites: string;
             /** @default Remove from favorites */
-            Remove_from_favorites: string;
+            readonly Remove_from_favorites: string;
             /** @default Continue in new ticket */
-            Continue_in_new_ticket: string;
+            readonly Continue_in_new_ticket: string;
             /** @default Quote message */
-            Quote_message: string;
+            readonly Quote_message: string;
             /** @default Edit message */
-            Edit_message: string;
+            readonly Edit_message: string;
             /** @default Delete message */
-            Delete_message: string;
+            readonly Delete_message: string;
             /** @default User info */
-            User_info: string;
+            readonly User_info: string;
             /** @default Device */
-            Device: string;
+            readonly Device: string;
             /** @default Browser */
-            Browser: string;
+            readonly Browser: string;
             /** @default Pricing plan */
-            Pricing_plan: string;
+            readonly Pricing_plan: string;
             /** @default Edit template */
-            Edit_template: string;
+            readonly Edit_template: string;
             /** @default Title */
-            Template_title: string;
+            readonly Template_title: string;
             /** @default Write a message */
-            Add_msg: string;
+            readonly Add_msg: string;
             /** @default Delete template */
-            Delete_template: string;
+            readonly Delete_template: string;
             /** @default Results */
-            Found: string;
+            readonly Found: string;
             /** @default Search tickets */
-            Search_tickets: string;
+            readonly Search_tickets: string;
             /** @default Create ticket */
-            New_ticket: string;
+            readonly New_ticket: string;
             /** @default Reopen ticket */
-            Reopen_ticket: string;
+            readonly Reopen_ticket: string;
             /** @default Select a ticket or */
-            Text_welcome_1: string;
+            readonly Text_welcome_1: string;
             /** @default create a new one */
-            Text_welcome_2: string;
+            readonly Text_welcome_2: string;
             /** @default to contact Customer Support */
-            Text_welcome_3: string;
+            readonly Text_welcome_3: string;
             /** @default Please describe the problem or ask a question */
-            Text_new_ticket_1: string;
+            readonly Text_new_ticket_1: string;
             /** @default We will get back to you shortly 💙 */
-            Text_new_ticket_2: string;
+            readonly Text_new_ticket_2: string;
             /** @default Ticket source page */
-            Ticket_source_page: string;
+            readonly Ticket_source_page: string;
             /** @default Mute */
-            Sound_mute: string;
+            readonly Sound_mute: string;
             /** @default Pencil */
-            Sound_pencil: string;
+            readonly Sound_pencil: string;
             /** @default Magic wand */
-            Sound_magic_wand: string;
+            readonly Sound_magic_wand: string;
             /** @default Bounce */
-            Sound_bounce: string;
+            readonly Sound_bounce: string;
             /** @default Beep */
-            Sound_beep: string;
+            readonly Sound_beep: string;
             /** @default Xylophone */
-            Sound_xylophone: string;
+            readonly Sound_xylophone: string;
             /** @default Drums */
-            Sound_drums: string;
+            readonly Sound_drums: string;
             /** @default Average expenses */
-            Average_expenses: string;
+            readonly Average_expenses: string;
             /** @default Bad */
-            Bad: string;
+            readonly Bad: string;
             /** @default OK */
-            Normal: string;
+            readonly Normal: string;
             /** @default Great! */
-            Good: string;
+            readonly Good: string;
             /** @default Rate how the Support did their part */
-            Title_start: string;
+            readonly Title_start: string;
             /** @default Thanks for the feedback! */
-            Title_finish: string;
+            readonly Title_finish: string;
             /** @default It'll help us to get better. */
-            Text_start: string;
+            readonly Text_start: string;
             /** @default We'll keep it up. */
-            Text_good: string;
+            readonly Text_good: string;
             /** @default We'll improve our service. */
-            Text_bad: string;
+            readonly Text_bad: string;
             /** @default What did you particularly enjoy? */
-            Comment_title_good: string;
+            readonly Comment_title_good: string;
             /** @default Tell us what was wrong — we'll do everything to get better! */
-            Comment_title_bad: string;
+            readonly Comment_title_bad: string;
             /** @default Change the feedback */
-            Button_change_review: string;
+            readonly Button_change_review: string;
             /** @default Online */
-            Online: string;
+            readonly Online: string;
             /** @default Last seen */
-            Visited: string;
+            readonly Visited: string;
         };
     };
     responses: never;

@@ -12,286 +12,357 @@
                 "properties": {
                     "Suggestions_tool": {
                         "default": "Search Suggestions Tool",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Rank_and_SERP_top_cheking": {
                         "default": "Rank and SERP Top checking",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Semantics": {
                         "default": "Semantics",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Technical_SEO": {
                         "default": "Technical SEO",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Miscellaneous": {
                         "default": "Miscellaneous",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "About_us": {
                         "default": "About us",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Resources": {
                         "default": "Resources",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Questions": {
                         "default": "Got any questions?",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Grouping_tool": {
                         "default": "Keyword Grouping Tool",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Research_tool": {
                         "default": "Keyword Research Tool",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Site_auditor": {
                         "default": "Website SEO Audit Tool",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Site_watcher": {
                         "default": "Website Watcher (change tracking)",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "SERP_snapshots_tool": {
                         "default": "SERP Snapshots Tool",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Index_checker_tool": {
                         "default": "Index Status checker",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Search_volume_tool": {
                         "default": "Search Volume Tool",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Sitemap_generator": {
                         "default": "Sitemap generator",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Magnet_tool": {
                         "default": "Magnet (keyword ideas)",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Semantic_core": {
                         "default": "Semantic core tools",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "PPC_bid_manager": {
                         "default": "PPC Bid Manager",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Competitor_research": {
                         "default": "Competitor research",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Domain_name_transfer": {
                         "default": "Domain name transfer",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Domain_name_registration": {
                         "default": "Domain name registration",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Whois": {
                         "default": "Whois (Domain details)",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Case_championship": {
                         "default": "Case championship",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Apometr_tool": {
                         "default": "Updates Scanner",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Reference": {
                         "default": "Reference",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "API": {
                         "default": "API Documentation",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Referrals": {
                         "default": "Affiliate program",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Pricing": {
                         "default": "Tools and prices",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Sales": {
                         "default": "Sales",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Help": {
                         "default": "Help & Support",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Help_center": {
                         "default": "Help Center",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Chat": {
                         "default": "Live Chat",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Join_vkontakte": {
                         "default": "Join us on Vkontakte",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Join_twitter": {
                         "default": "Follow us on Twitter",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Join_telegram": {
                         "default": "Telegram channel",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Join_youtube": {
                         "default": "Youtube channel",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Website_rank_tracker": {
                         "default": "Rank Tracker Tool",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Free_rank_checking": {
                         "default": "Free rank checker",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Cases": {
                         "default": "Best practices",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "URL_Shortener_policy": {
                         "default": "URL Shortener policy",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Privacy_policy": {
                         "default": "Privacy Policy",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Chrome_extension": {
                         "default": "Search results numbering extension for Google Chrome",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Firefox_extension": {
                         "default": "Search results numbering extension for Firefox",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Safari_extension": {
                         "default": "Safari extension",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "iOS_app": {
                         "default": "iOS Mobile app",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Android_app": {
                         "default": "Android Mobile app",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Electronic_workflow_system": {
                         "default": "Electronic document workflow",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Legal_payment": {
                         "default": "Company payment",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Support_ticket_system": {
                         "default": "Support Ticket System",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Contact_details": {
                         "default": "Contact details",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "INN": {
                         "default": "INN",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "KPP": {
                         "default": "KPP",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "OGRN": {
                         "default": "OGRN",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "OKVED": {
                         "default": "OKVED",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Business_card": {
                         "default": "Business card",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Presentation": {
                         "default": "Presentation",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Cookie_policy": {
                         "default": "Cookie Policy",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Payment_methods": {
                         "default": "Payment Methods",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Mincom_accreditation": {
                         "default": "Certified by Ministry of Communications of Russia",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Friends": {
                         "default": "Our Friends",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Trademark": {
                         "default": "Trademark",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "included_into_Russian_software_register": {
                         "default": "included into Russian software register",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Contract_public_offer": {
                         "default": "Contract (public offer)",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Referral_program": {
                         "default": "Affiliate program",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Referral_agreement": {
                         "default": "Affiliate offer agreement",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Delegate_us_routine_slogan": {
                         "default": "Delegate us all routine and enjoy your job!",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Social_links": {
                         "default": "Follow us",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Add_numbers_search_results": {
                         "default": "Numerate listings right on<br> the search results page",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Install_for": {
                         "default": "Install for",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Email_us_contact": {
                         "default": "We are eager to help! Email us",
+                        "readOnly": true,
                         "type": "string"
                     }
                 },

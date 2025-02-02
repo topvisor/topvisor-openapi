@@ -9,19 +9,19 @@ export interface components {
     schemas: {
         "I18n.Sitemap": {
             /** @default Tool settings */
-            Settings: string;
+            readonly Settings: string;
             /** @default Sitemap for <a href="#" class="domain" target="_blank"></a> will contain up to: */
-            Popup_go_text_before_select: string;
+            readonly Popup_go_text_before_select: string;
             /** @default Project owner will be charged: */
-            Popup_go_text_before_price: string;
+            readonly Popup_go_text_before_price: string;
             /** @default MAX number of pages */
-            Max_pages: string;
+            readonly Max_pages: string;
             /** @default You will be charged */
-            Info_cost: string;
+            readonly Info_cost: string;
             /** @default Sitemap hasn't  been generated yet.<br>🗺️ <a href="/support/sitemap/" target="_blank">Why you need to generate sitemap →</a> */
-            Hint_not_checks_text: string;
+            readonly Hint_not_checks_text: string;
             /** @default Generate sitemap */
-            Hint_not_checks_btn: string;
+            readonly Hint_not_checks_btn: string;
         };
     };
     responses: never;

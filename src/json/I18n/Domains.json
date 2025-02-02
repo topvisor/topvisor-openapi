@@ -12,530 +12,662 @@
                 "properties": {
                     "Domain_registrar": {
                         "default": "Domain registrar",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Enter_domain_name": {
                         "default": "Enter the domain name",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Pick_up": {
                         "default": "Search",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Total": {
                         "default": "Total",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "No_domains_added": {
                         "default": "No domains added",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Domain_registration": {
                         "default": "Domain registration",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Select_admin_card": {
                         "default": "Select administrator card",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Domain_transfer": {
                         "default": "Domain transfer",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Select_agreement_to_transfer_domains": {
                         "default": "Select an agreement to transfer domains",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Enter_code_from_sms_of_previous_admin": {
                         "default": "Enter an SMS code sent to the previous administrator",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "My_domains": {
                         "default": "My domains",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Whois_tool": {
                         "default": "Whois lookup",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Export": {
                         "default": "Export",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Renew": {
                         "default": "Renew",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Custom_list_of_DNS_servers": {
                         "default": "Custom list of DNS servers",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Do_not_add_DNS_servers": {
                         "default": "Do not add DNS servers",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "DNS_settings": {
                         "default": "DNS settings",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Add_DNS_server": {
                         "default": "Add DNS server",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Save_changes": {
                         "default": "Save changes",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Administrator": {
                         "default": "Administrator",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Manage_domain": {
                         "default": "Manage domain",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Request_administrator_change": {
                         "default": "Request administrator change",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Transfer_to_another_registrar": {
                         "default": "Transfer to another registrar",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Enter_authcode_and_transfer": {
                         "default": "Enter Auth-code and start domain transfer",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Enter_code": {
                         "default": "Enter code",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Start_transfer": {
                         "default": "Start transfer",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Transfer_request_confirm": {
                         "default": "Transfer request: transfer domains to another registrar?",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Transfer": {
                         "default": "Transfer",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Request_domain_transfer_out": {
                         "default": "Request for a domain name transfer to another registrar",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "DNS_type": {
                         "default": "Type",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "DNS_name": {
                         "default": "Name",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "DNS_value": {
                         "default": "Value",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "DNS_priority": {
                         "default": "Priority",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "DNS_relative_weight": {
                         "default": "Relative weight",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "DNS_service_port": {
                         "default": "Service port",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "DNS_record": {
                         "default": "DNS record",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Save_DNS_record": {
                         "default": "Save DNS record",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Add_DNS_record": {
                         "default": "Add DNS record",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Payment_for_authcode_providing": {
                         "default": "Payment for generating Auth-Info code for domain",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Authinfo_code_for_domain_transfer": {
                         "default": "Auth-Info code for domain transfer",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Confirm_transfer": {
                         "default": "Confirm transfer",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Transfer_confirmation_link_sent_to_email": {
                         "default": "We've sent a link to confirm domain transfer to",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Authinfo_will_be_emailed_soon": {
                         "default": "We'll email you the Auth-Info code shortly",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Authinfo_will_be_sent_to_phone_soon": {
                         "default": "We'll send you an SMS with Auth-Info code shortly",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "your_domain": {
                         "default": "your domain",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "your_domains": {
                         "default": "your domains",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "You_need_to_renew_domains": {
                         "default": "You need to renew domains",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "You_need_to_renew_domain": {
                         "default": "You need to renew domain",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Registration_expired": {
                         "default": "Registration expired",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "renew_before": {
                         "default": "renew before",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Admin_change_status": {
                         "default": "Admin change status",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Link_and_code_sent_to_confirm_admin_change": {
                         "default": "We sent a code to your phone number. A message with a confirmation link is sent to a new admin email",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Domain_not_available_to_purchase": {
                         "default": "Domain not available to purchase",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Transaction_to_accept_domain_not_found": {
                         "default": "Transaction to accept domain not found",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Domain_autorenew_failed": {
                         "default": "Domain(s) auto-renew failed",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Invalid_message_to_administrator": {
                         "default": "Invalid message to administrator",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Message_failed_to_send": {
                         "default": "Message failed to send",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Try_in_an_hour": {
                         "default": "Try in an hour",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Messages_for_domain_administrator": {
                         "default": "Messages for the domain administrator",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Sender_details": {
                         "default": "Sender_details",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Domain_transfer_application_by_registered_mail": {
                         "default": "Application for a domain transfer by registered mail",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Domain_to_transfer": {
                         "default": "Domain to transfer",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Domain_transfer_application_form_for_individual_and_SP": {
                         "default": "Application form from an individual or individual entrepreneur for domain transfer to another registrar",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Domain_transfer_application_form_for_legal_entity": {
                         "default": "Application form from a legal entity for domain transfer to another registrar",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Autorenew_settings": {
                         "default": "Auto-renew settings",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Turn_off_domain_autorenew": {
                         "default": "Turn off domain auto-renew",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Turn_on_domain_autorenew": {
                         "default": "Turn on auto-renew",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Select_autorenew_payment_option": {
                         "default": "Select auto-renew payment option",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "We_charge_one_usd_to_link_card_notice": {
                         "default": "We will charge you $1 to link your card. The charge will be immediately removed and returned to your card",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Autorenew_status": {
                         "default": "Auto-renew status",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Select_another_payment_method_or_contact_support": {
                         "default": "Select another method of payment or contact support",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Autorenew_for_domain": {
                         "default": "Auto-renew for a domain name",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "successfully_enabled": {
                         "default": "successfully enabled",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "failed_to_enable": {
                         "default": "failed to enable",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Change_domain_administrator": {
                         "default": "Change domain administrator",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Change_administrator": {
                         "default": "Change administrator",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "turn_on": {
                         "default": "turn on",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Domains_to_accept": {
                         "default": "Domains to accept",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Admin_change_paid_by_previous_admin": {
                         "default": "Administrator change is paid by the previous administrator",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Control_code": {
                         "default": "Control code",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Accept_domain": {
                         "default": "Accept domain",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "By_accepting_domain_you_accept": {
                         "default": "By accepting domain you accept terms and conditions of",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "of_agreement": {
                         "default": "Agreement (public offer)",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Select_authinfo_code_delivery_option": {
                         "default": "Select how you want to get the Auth-Info code",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "To_email": {
                         "default": "To Email",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "free": {
                         "default": "free",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "paid": {
                         "default": "paid",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "to_phone_number": {
                         "default": "to phone number",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "By_registered_mail": {
                         "default": "By registered mail",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Get_authinfo_code": {
                         "default": "Get Auth-Info code",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Get_permission_to_transfer_administration_rights": {
                         "default": "Get permission to transfer administration rights",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Paperless_transfer_admin_rights_application_form_for_individual": {
                         "default": "Application form from an individual for a paperless transfer of administration rights",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Paperless_transfer_admin_rights_application_form_for_legal_entity": {
                         "default": "Application form from a legal entity for a paperless transfer of administration rights",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Domains_to_transfer_to_new_admin": {
                         "default": "Domains to transfer to a new administrator",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "New_administrator_email": {
                         "default": "New administrator email",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Select_payer_for_admin_change": {
                         "default": "The administrator change will be paid by",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "New_administrator": {
                         "default": "New administrator",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Me_current_administrator": {
                         "default": "Me (current administrator)",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Transfer_rights_to_domain_to_new_admin": {
                         "default": "Transfer rights to the domain to a new administrator",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Change_admin_by_sms_instruction": {
                         "default": "This email address will be added as a contact email for the domain names. We will email you a message with\n\ta link to enter a control code. We will send an SMS with a control code to a phone number <i class=\"phone\"></i>. Give this code to a new administrator. The\n\tadministrator change can be payed by a current or a new administrator. The administrator change costs 199 rubles.",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Choose_domain_name": {
                         "default": "Choose a .ru or .рф domain name",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Register": {
                         "default": "Register",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Verify_admin_details": {
                         "default": "Please make sure the administrator details you entered are correct",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Add_admin_details": {
                         "default": "Add administrator details",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Enter_domains_one_by_one_or": {
                         "default": "Enter domains one by one or",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Enter_domain": {
                         "default": "Enter domain",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Enter_authInfo_code": {
                         "default": "Enter authInfo code",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "upload_from_file": {
                         "default": "upload from file",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Make_sure_new_and_old_admin_details_match": {
                         "default": "Please make sure that the administrator personal details match\n\t administrator details in previous registrar account. If the details do not match, the domain name can be removed.",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Domains_to_transfer_and_renew": {
                         "default": "Domains to transfer and renew: <i class=\"count\">0 domains</i>",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Transfer_in_process": {
                         "default": "Transfer in progress",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "In_process": {
                         "default": "In progress",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Transfer_to_us": {
                         "default": "Transfer to us",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Transaction_finished_will_be_removed": {
                         "default": "Transcation finished and will be removed automatically",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Prepayment": {
                         "default": "Prepayment",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Request_to_transfer_domain_to_another_registrar": {
                         "default": "Request to transfer domain to another Registrar",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Notification_about_completed_registrar_operations": {
                         "default": "Notification about completed registrar operations",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Transferred_domains_number_not_match_authinfo_code_number": {
                         "default": "The number of transferred domains does not match the number of submitted authInfo codes",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Transfer_request_already_added": {
                         "default": "Transfer request already added",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Domain_admin_not_found": {
                         "default": "Domain administrator not found",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Transfer_not_available_try_later": {
                         "default": "Transfer is not available. Please, try later.",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Invalid_authinfo_or_domain": {
                         "default": "Invalid authInfo code or domain.",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Admin_details_not_match": {
                         "default": "Personal details of administrators do not match",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Error_in_admin_card_contact_support": {
                         "default": "Error in admin card occurred. Contact support.",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "CNS_Settings": {
                         "default": "CNS Settings",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Add_CNS_server": {
                         "default": "Add CNS server",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Contact_support": {
                         "default": "Contact support",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Get_confirmation_code": {
                         "default": "Get confirmation code",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Transfer_to_another_registrar_code_sent_to_email": {
                         "default": "Trasnfer to another registrar, the code has been to sent to your email",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Resend": {
                         "default": "Resend",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Domain_renewal_not_needed_refresh_page": {
                         "default": "Domain renewal not needed. Refresh page.",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Transfer_is_available_for_2nd_lvl_domains": {
                         "default": "Transfer is available for the second-level domains only",
+                        "readOnly": true,
                         "type": "string"
                     }
                 },

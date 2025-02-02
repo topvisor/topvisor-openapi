@@ -9,557 +9,557 @@ export interface components {
     schemas: {
         "I18n.Bank": {
             /** @default Credit */
-            Plus: string;
+            readonly Plus: string;
             /** @default Expenses */
-            Minus: string;
+            readonly Minus: string;
             /** @default Payment */
-            Payment: string;
+            readonly Payment: string;
             /** @default Incorrect sum! */
-            Incorrect_sum: string;
+            readonly Incorrect_sum: string;
             /** @default Insufficient balance in your account! */
-            Not_enough_balance: string;
+            readonly Not_enough_balance: string;
             /** @default Bonus for balance top-up */
-            Bonus_refill: string;
+            readonly Bonus_refill: string;
             /** @default Address */
-            Mail_address: string;
+            readonly Mail_address: string;
             /** @default Certificates */
-            Basis1: string;
+            readonly Basis1: string;
             /** @default Powers of attorney */
-            Basis2: string;
+            readonly Basis2: string;
             /** @default Management contract */
-            Basis3: string;
+            readonly Basis3: string;
             /** @default Transaction from the affiliate account to the system account */
-            Ref_action: string;
+            readonly Ref_action: string;
             /** @default bonus */
-            bonuses: string;
+            readonly bonuses: string;
             /** @default public offer */
-            public_offer: string;
+            readonly public_offer: string;
             /** @default under public offer */
-            by_public_offer: string;
+            readonly by_public_offer: string;
             /** @default contract */
-            dogovor: string;
+            readonly dogovor: string;
             /** @default under agreement */
-            by_dogovor: string;
+            readonly by_dogovor: string;
             /** @default Withdrawal to system account */
-            Info_system_withdrawal: string;
+            readonly Info_system_withdrawal: string;
             /** @default Refund by invoice */
-            Refund_by_invoice: string;
+            readonly Refund_by_invoice: string;
             /** @default Back to payment methods */
-            Return_to_payment: string;
+            readonly Return_to_payment: string;
             /** @default Your payment has been processed successfully. <br> Thank you for choosing our tools */
-            Payment_processed: string;
+            readonly Payment_processed: string;
             /** @default Sorry, payment failed.<br>Please, try another payment method or contact Customer Support. */
-            Payment_unsuccessful: string;
+            readonly Payment_unsuccessful: string;
             /** @default Bonus account */
-            Bonuses: string;
+            readonly Bonuses: string;
             /** @default Description */
-            Comment: string;
+            readonly Comment: string;
             /** @default Operation */
-            Operation: string;
+            readonly Operation: string;
             /** @default Pay */
-            Pay: string;
+            readonly Pay: string;
             /** @default Total */
-            Total_to_pay: string;
+            readonly Total_to_pay: string;
             /** @default Affiliate link */
-            Referral_link: string;
+            readonly Referral_link: string;
             /** @default Referrals */
-            Your_referrals: string;
+            readonly Your_referrals: string;
             /** @default Registered */
-            Referrals_registered: string;
+            readonly Referrals_registered: string;
             /** @default Turnover */
-            Referrals_turnover: string;
+            readonly Referrals_turnover: string;
             /** @default Last payment */
-            Referrals_last_payment: string;
+            readonly Referrals_last_payment: string;
             /** @default Income */
-            Income: string;
+            readonly Income: string;
             /** @default Select period */
-            Set_period: string;
+            readonly Set_period: string;
             /** @default We have a bonus for you! */
-            Referrals_bonus: string;
+            readonly Referrals_bonus: string;
             /** @default We'll gift social media referrals extra 200 free ranking updates! */
-            Referrals_bonus_info: string;
+            readonly Referrals_bonus_info: string;
             /** @default Share */
-            Share: string;
+            readonly Share: string;
             /** @default This address will be linked to your account as an affiliate address */
-            Referrals_attach_email: string;
+            readonly Referrals_attach_email: string;
             /** @default Share on social media */
-            Referrals_share: string;
+            readonly Referrals_share: string;
             /** @default Send invitation */
-            Referrals_send_email_invite: string;
+            readonly Referrals_send_email_invite: string;
             /** @default We have sent invitation email to */
-            Referrals_invitation_sent: string;
+            readonly Referrals_invitation_sent: string;
             /** @default Stats */
-            Referrals_stats: string;
+            readonly Referrals_stats: string;
             /** @default Referee level */
-            Referrals_level: string;
+            readonly Referrals_level: string;
             /** @default You earned */
-            Referrals_you_earned: string;
+            readonly Referrals_you_earned: string;
             /** @default To balance */
-            Referrals_withdraw_to_balance: string;
+            readonly Referrals_withdraw_to_balance: string;
             /** @default Withdraw */
-            Referrals_withdraw: string;
+            readonly Referrals_withdraw: string;
             /** @default Transfer */
-            Referrals_transfer: string;
+            readonly Referrals_transfer: string;
             /** @default Your earnings will be transferred to the bonus balance, you will not be able to withdraw it later.<br><br>
              *     	Do you want to continue? */
-            Referrals_confirm_funds_transfer_to_bonus_account_notice: string;
+            readonly Referrals_confirm_funds_transfer_to_bonus_account_notice: string;
             /** @default Referrals get levels that depend on the total amount paid. There are no limits on Referrals' levels or
              *     	the reward amount a Partner can get. But the reward accrues only during two years after Referral registration date.<br><br>
              *     	A Partner gets a reward each time a Referral reaches a new level on the Affiliate program. A reward is 100 rubles for the 1st
              *     	level and 10% of the new payments by a Referral for the next levels. */
-            Referrals_levels_description_title: string;
+            readonly Referrals_levels_description_title: string;
             /** @default Download invoice and act */
-            Referrals_download_invoice_act: string;
+            readonly Referrals_download_invoice_act: string;
             /** @default You can withdraw the amount from 5 000 rubles */
-            Referrals_withdrawal_available_from_amount_notice: string;
+            readonly Referrals_withdrawal_available_from_amount_notice: string;
             /** @default What is EDF, how can I use it? */
-            Referrals_link_to_EDF_setup_instruction: string;
+            readonly Referrals_link_to_EDF_setup_instruction: string;
             /** @default Visits */
-            Referrals_visits: string;
+            readonly Referrals_visits: string;
             /** @default Registrations */
-            Referrals_registrations: string;
+            readonly Referrals_registrations: string;
             /** @default Affiliate program member bank details */
-            Referrals_partner_bank_details: string;
+            readonly Referrals_partner_bank_details: string;
             /** @default Invitation from */
-            Referrals_invitation_from: string;
+            readonly Referrals_invitation_from: string;
             /** @default Transfer from referral balance to bonus balance */
-            Referrals_transfer_from_referral_to_bonus_balance: string;
+            readonly Referrals_transfer_from_referral_to_bonus_balance: string;
             /** @default You got your first referral! */
-            First_referral_email_title: string;
+            readonly First_referral_email_title: string;
             /** @default You already have %count_referrals% referrals. Keep it up! 🎉 */
-            New_referral_email_title: string;
+            readonly New_referral_email_title: string;
             /** @default You received a reward! Your referral reached a new level 🔥 */
-            Referrals_award_email_title: string;
+            readonly Referrals_award_email_title: string;
             /** @default As our partner, you have already earned %total_balance_ref% rubles. Keep it up! ? */
-            Referrals_total_amount_earned_email_title: string;
+            readonly Referrals_total_amount_earned_email_title: string;
             /** @default Account (Pricing plan) */
-            Account_plan: string;
+            readonly Account_plan: string;
             /** @default YOU SAVE */
-            Plan_discount: string;
+            readonly Plan_discount: string;
             /** @default you save */
-            discount: string;
+            readonly discount: string;
             /** @default You save */
-            Discount: string;
+            readonly Discount: string;
             /** @default per month */
-            plan_month: string;
+            readonly plan_month: string;
             /** @default Remove card */
-            Remove_card: string;
+            readonly Remove_card: string;
             /** @default Cancel subscription */
-            Cancel_subscription: string;
+            readonly Cancel_subscription: string;
             /** @default Save */
-            Link_card: string;
+            readonly Link_card: string;
             /** @default Your credit card is removed. You can add a credit card again at the end of the current billing period. */
-            Removed_card_notice: string;
+            readonly Removed_card_notice: string;
             /** @default pricing plan subscription fee */
-            plan_payment: string;
+            readonly plan_payment: string;
             /** @default Subscription failed to renew */
-            Extending_plan_failed: string;
+            readonly Extending_plan_failed: string;
             /** @default To restart your subscription  */
-            Extending_plan_notice: string;
+            readonly Extending_plan_notice: string;
             /** @default Choose a plan that works for you and save up to  */
-            Tariff_choose_plan: string;
+            readonly Tariff_choose_plan: string;
             /** @default Next plan */
-            Tariff_next_plan: string;
+            readonly Tariff_next_plan: string;
             /** @default Pricing Plan discount is valid until the end of the billing period.
              *     If unsubscribed, the discount is saved and corresponds to the selected Pricing Plan. The billing period is 1 calendar month.<br><br>
              *     You can select another payment method after unsubscribing from the Pricing Plan and at the end of the billing period of the Pricing Plan. */
-            Tariff_text: string;
+            readonly Tariff_text: string;
             /** @default Billing operations */
-            Billing_operations: string;
+            readonly Billing_operations: string;
             /** @default Rank tracker tool */
-            Service_tracking: string;
+            readonly Service_tracking: string;
             /** @default Keyword research tool */
-            Service_researcher: string;
+            readonly Service_researcher: string;
             /** @default Search suggestions tool */
-            Service_suggestions_tool: string;
+            readonly Service_suggestions_tool: string;
             /** @default Search volume tool */
-            Service_AMS_tracker: string;
+            readonly Service_AMS_tracker: string;
             /** @default Keyword clustering tool */
-            Service_clustering: string;
+            readonly Service_clustering: string;
             /** @default SEO audit tool */
-            Service_auditor: string;
+            readonly Service_auditor: string;
             /** @default SEO audit tool (hold) */
-            Service_auditor_hold: string;
+            readonly Service_auditor_hold: string;
             /** @default Website watcher */
-            Service_watcher: string;
+            readonly Service_watcher: string;
             /** @default Index checker tool */
-            Service_index_checker: string;
+            readonly Service_index_checker: string;
             /** @default Sitemap generator */
-            Service_sitemap: string;
+            readonly Service_sitemap: string;
             /** @default Bid manager<br>/1000 adjustments */
-            Service_broker: string;
+            readonly Service_broker: string;
             /** @default Bid manager */
-            Service_bid_manager: string;
+            readonly Service_bid_manager: string;
             /** @default Domain registration */
-            Service_domain_registration: string;
+            readonly Service_domain_registration: string;
             /** @default Web screenshots */
-            Service_web_screens: string;
+            readonly Service_web_screens: string;
             /** @default Domain renewal */
-            Service_domain_renewal: string;
+            readonly Service_domain_renewal: string;
             /** @default Payments of no type */
-            Service_payments_no_type: string;
+            readonly Service_payments_no_type: string;
             /** @default Projects export */
-            Service_export: string;
+            readonly Service_export: string;
             /** @default Registrar services */
-            Service_registrar_services: string;
+            readonly Service_registrar_services: string;
             /** @default Competitor research */
-            Service_competitors: string;
+            readonly Service_competitors: string;
             /** @default You can choose the right plan straight away after  */
-            Inform_choose_plan: string;
+            readonly Inform_choose_plan: string;
             /** @default signup */
-            register: string;
+            readonly register: string;
             /** @default Choose the right plan for your business on  */
-            Move_to_plan: string;
+            readonly Move_to_plan: string;
             /** @default billing page */
-            bank_page: string;
+            readonly bank_page: string;
             /** @default  rank updates per month */
-            inform_updates_per_month: string;
+            readonly inform_updates_per_month: string;
             /** @default There are insufficient funds in the personal account! */
-            Not_enough_personal_balance: string;
+            readonly Not_enough_personal_balance: string;
             /** @default Pricing plan fee */
-            Tariff_balance_activation: string;
+            readonly Tariff_balance_activation: string;
             /** @default Prepaid months (including current) */
-            Prepaid_months: string;
+            readonly Prepaid_months: string;
             /** @default paid earlier */
-            paid_earlier: string;
+            readonly paid_earlier: string;
             /** @default pricing plan */
-            pricing_plan: string;
+            readonly pricing_plan: string;
             /** @default Not enough funds to renew subscription */
-            Insufficient_balance_to_extend_plan: string;
+            readonly Insufficient_balance_to_extend_plan: string;
             /** @default Russian ruble */
-            Russian_ruble: string;
+            readonly Russian_ruble: string;
             /** @default US dollar */
-            US_dollar: string;
+            readonly US_dollar: string;
             /** @default Currency can be selected and changed only once before the first payment */
-            You_can_select_change_currency_once_before_first_payment_notice: string;
+            readonly You_can_select_change_currency_once_before_first_payment_notice: string;
             /** @default Payments will be accepted in the following currency */
-            Payments_willbe_made_in_currency: string;
+            readonly Payments_willbe_made_in_currency: string;
             /** @default Credit%systemType% - Payment TV-%paymentId% via "%systemName%"%contractInfo% */
-            Name_payment_log: string;
+            readonly Name_payment_log: string;
             /** @default 1-Month Subscription %tariffName% - plan - Payment TV-%paymentId% via "%systemName%"%contractInfo% */
-            Name_payment_log_tariff: string;
+            readonly Name_payment_log_tariff: string;
             /** @default Payment from account balance */
-            System_name_balance: string;
+            readonly System_name_balance: string;
             /** @default Credit card payment */
-            System_name_card: string;
+            readonly System_name_card: string;
             /** @default Wire transfer */
-            System_name_invoice: string;
+            readonly System_name_invoice: string;
             /** @default Wire transfer (T-Business) */
-            System_name_tinkoff_business: string;
+            readonly System_name_tinkoff_business: string;
             /** @default Apple Pay */
-            System_name_card_ap: string;
+            readonly System_name_card_ap: string;
             /** @default Google Pay */
-            System_name_card_gp: string;
+            readonly System_name_card_gp: string;
             /** @default iOS */
-            System_name_card_ios: string;
+            readonly System_name_card_ios: string;
             /** @default Android */
-            System_name_card_android: string;
+            readonly System_name_card_android: string;
             /** @default WebMoney */
-            System_name_wm2: string;
+            readonly System_name_wm2: string;
             /** @default PayPal */
-            System_name_pp: string;
+            readonly System_name_pp: string;
             /** @default Payture */
-            System_name_pt: string;
+            readonly System_name_pt: string;
             /** @default YooMoney */
-            System_name_ym: string;
+            readonly System_name_ym: string;
             /** @default Robokassa (cards of non-Russian banks, except Ukraine, USA, Turkey, Belarus) */
-            System_name_rk: string;
+            readonly System_name_rk: string;
             /** @default QIWI */
-            System_name_qw: string;
+            readonly System_name_qw: string;
             /** @default Paddle */
-            System_name_pd: string;
+            readonly System_name_pd: string;
             /** @default Paddle invoice */
-            System_name_pd_invoice: string;
+            readonly System_name_pd_invoice: string;
             /** @default SberPay */
-            System_name_sb: string;
+            readonly System_name_sb: string;
             /** @default LeadPay (cards of Belarusian banks) */
-            System_name_lp: string;
+            readonly System_name_lp: string;
             /** @default PayPro Global (cards of non-Russian banks, PayPal, Wire Transfer. All countries except Belarus) */
-            System_name_ppg: string;
+            readonly System_name_ppg: string;
             /** @default Contract expiration notice */
-            Your_contract_expires_notice: string;
+            readonly Your_contract_expires_notice: string;
             /** @default Your earlier contract has been closed */
-            Earlier_contacts_closed_notice: string;
+            readonly Earlier_contacts_closed_notice: string;
             /** @default TBank, Moscow */
-            Tinkoff_bank_details: string;
+            readonly Tinkoff_bank_details: string;
             /** @default Dear valued counterparty!
              *     Our company started using electronic document workflow system. We can issue and receive invoices, acts and receipts,
              *     keep all documents and correspondence in the e-format without issuing paper duplicates.
              *     If you would like to receive your documents in e-format via the electronic document workflow system, accept this invitation.
              *     Best regards, Denis Pustovoit */
-            Contragent_message: string;
+            readonly Contragent_message: string;
             /** @default for 1 month on the pricing plan */
-            for_1_month_on_pricing_plan: string;
+            readonly for_1_month_on_pricing_plan: string;
             /** @default TV- */
-            TV: string;
+            readonly TV: string;
             /** @default The services mentioned above have been completed in full and on time. The customer does not have any concerns regarding volume, quality, and delivery timing. */
-            Mentioned_services_completed_in_full_notice: string;
+            readonly Mentioned_services_completed_in_full_notice: string;
             /** @default Offer */
-            Offer: string;
+            readonly Offer: string;
             /** @default Contract offer */
-            Contract_offer: string;
+            readonly Contract_offer: string;
             /** @default Agreement */
-            Contract: string;
+            readonly Contract: string;
             /** @default Add payment details */
-            Add_payment_details: string;
+            readonly Add_payment_details: string;
             /** @default Individual */
-            Natural_person: string;
+            readonly Natural_person: string;
             /** @default Company */
-            Legal_person: string;
+            readonly Legal_person: string;
             /** @default Sole proprietor */
-            Sole_proprietor: string;
+            readonly Sole_proprietor: string;
             /** @default SP */
-            Sole_proprietor_short: string;
+            readonly Sole_proprietor_short: string;
             /** @default Status */
-            Status: string;
+            readonly Status: string;
             /** @default Pending / Unconfirmed */
-            Unconfirmed: string;
+            readonly Unconfirmed: string;
             /** @default Received (paused) */
-            Pause: string;
+            readonly Pause: string;
             /** @default Completed */
-            Confirmed: string;
+            readonly Confirmed: string;
             /** @default Pending payment */
-            Pending_payment: string;
+            readonly Pending_payment: string;
             /** @default Pre-paid and postponed */
-            Paid_and_postponed: string;
+            readonly Paid_and_postponed: string;
             /** @default Service acceptance act */
-            Service_acceptance_act: string;
+            readonly Service_acceptance_act: string;
             /** @default Payment confirmed */
-            Payment_confirmed: string;
+            readonly Payment_confirmed: string;
             /** @default Payment prepaid */
-            Payment_prepaid: string;
+            readonly Payment_prepaid: string;
             /** @default Payment canceled */
-            Payment_canceled: string;
+            readonly Payment_canceled: string;
             /** @default Payment refunded */
-            Payment_refunded: string;
+            readonly Payment_refunded: string;
             /** @default Create invoice */
-            Make_invoice: string;
+            readonly Make_invoice: string;
             /** @default Get invoice */
-            Get_payment_invoice: string;
+            readonly Get_payment_invoice: string;
             /** @default Card payment */
-            Card_payment: string;
+            readonly Card_payment: string;
             /** @default (Visa and Mastercard of Russian banks;<br>«Mir» of any banks) */
-            Card_payment_info: string;
+            readonly Card_payment_info: string;
             /** @default (Visa and Mastercard of non-Russian banks excluding Belarus;<br>American Express, PayPal) */
-            Paddle_info: string;
+            readonly Paddle_info: string;
             /** @default Pay with card. Processing time: 15 minutes. */
-            Pay_with_card_processing_time_15min: string;
+            readonly Pay_with_card_processing_time_15min: string;
             /** @default Project ID */
-            Project_id: string;
+            readonly Project_id: string;
             /** @default Project info */
-            Project_info: string;
+            readonly Project_info: string;
             /** @default Auto top-up */
-            Automatic_top_up: string;
+            readonly Automatic_top_up: string;
             /** @default Balance auto top-up */
-            Account_automatic_top_up: string;
+            readonly Account_automatic_top_up: string;
             /** @default When balance is below */
-            When_current_balance_reaches: string;
+            readonly When_current_balance_reaches: string;
             /** @default Top up balance by */
-            Top_up_balance_with: string;
+            readonly Top_up_balance_with: string;
             /** @default Top up domain account */
-            Domain_account_topup: string;
+            readonly Domain_account_topup: string;
             /** @default Minimum amount */
-            Amount_from: string;
+            readonly Amount_from: string;
             /** @default Subscribe for */
-            Subscribe_for_period: string;
+            readonly Subscribe_for_period: string;
             /** @default Invoice for */
-            Invoice_for: string;
+            readonly Invoice_for: string;
             /** @default select a plan above */
-            you_need_to_select_plan: string;
+            readonly you_need_to_select_plan: string;
             /** @default Subscribe to plan */
-            Subscribe_to_plan: string;
+            readonly Subscribe_to_plan: string;
             /** @default Change plan */
-            Change_plan: string;
+            readonly Change_plan: string;
             /** @default Payment status */
-            Payment_status: string;
+            readonly Payment_status: string;
             /** @default Individual */
-            Individual_no_banking_details: string;
+            readonly Individual_no_banking_details: string;
             /** @default Add company details */
-            Add_banking_details: string;
+            readonly Add_banking_details: string;
             /** @default Add administrator */
-            Add_admin: string;
+            readonly Add_admin: string;
             /** @default Edit agreement */
-            Edit_company_agreement: string;
+            readonly Edit_company_agreement: string;
             /** @default Edit administrator card */
-            Edit_admin_card: string;
+            readonly Edit_admin_card: string;
             /** @default Save bank details */
-            Save_bank_details: string;
+            readonly Save_bank_details: string;
             /** @default for 1 month */
-            for_1_month: string;
+            readonly for_1_month: string;
             /** @default active */
-            active: string;
+            readonly active: string;
             /** @default Cancel subscription */
-            Cancel_pricing_plan_subscription: string;
+            readonly Cancel_pricing_plan_subscription: string;
             /** @default Invoice created successfully */
-            Invoice_created_successfully: string;
+            readonly Invoice_created_successfully: string;
             /** @default Proceed to TBank account to sign a payment order */
-            Proceed_to_bank_account_to_sign_order: string;
+            readonly Proceed_to_bank_account_to_sign_order: string;
             /** @default Estimated processing time is 5 minutes */
-            Estimated_processing_time: string;
+            readonly Estimated_processing_time: string;
             /** @default Topup amount */
-            Topup_amount: string;
+            readonly Topup_amount: string;
             /** @default Top up balance */
-            Topup_balance: string;
+            readonly Topup_balance: string;
             /** @default Next payment */
-            Next_plan_payment: string;
+            readonly Next_plan_payment: string;
             /** @default of */
-            in_the_amount: string;
+            readonly in_the_amount: string;
             /** @default View payment warrants on the */
-            View_payment_warrants: string;
+            readonly View_payment_warrants: string;
             /** @default New card */
-            New_card: string;
+            readonly New_card: string;
             /** @default card */
-            card: string;
+            readonly card: string;
             /** @default T-Business (e-account) */
-            Tinkoff_business_e_account: string;
+            readonly Tinkoff_business_e_account: string;
             /** @default Get invoice via e-doc */
-            Get_invoice_via_Diadoc: string;
+            readonly Get_invoice_via_Diadoc: string;
             /** @default Create a T-Business account */
-            Register_in_Tinkoff_business: string;
+            readonly Register_in_Tinkoff_business: string;
             /** @default Best choice */
-            Best_option: string;
+            readonly Best_option: string;
             /** @default Get receipt to Email */
-            Get_receipt_to_email: string;
+            readonly Get_receipt_to_email: string;
             /** @default Company name */
-            Company_name: string;
+            readonly Company_name: string;
             /** @default Company address */
-            Company_address: string;
+            readonly Company_address: string;
             /** @default Country of residence */
-            Country_of_residence: string;
+            readonly Country_of_residence: string;
             /** @default Company name */
-            Organization_name: string;
+            readonly Organization_name: string;
             /** @default Company name in English */
-            Organization_english_name: string;
+            readonly Organization_english_name: string;
             /** @default OKPO */
-            OKPO: string;
+            readonly OKPO: string;
             /** @default Checking account */
-            Checking_account: string;
+            readonly Checking_account: string;
             /** @default BIC */
-            BIC: string;
+            readonly BIC: string;
             /** @default BIC of bank */
-            Bank_BIC: string;
+            readonly Bank_BIC: string;
             /** @default Name of bank */
-            Name_of_bank: string;
+            readonly Name_of_bank: string;
             /** @default Name */
-            Name_of_bank_short: string;
+            readonly Name_of_bank_short: string;
             /** @default for public companies and natural monopolies */
-            for_public_companies_and_monopolies: string;
+            readonly for_public_companies_and_monopolies: string;
             /** @default Legal address */
-            Legal_address: string;
+            readonly Legal_address: string;
             /** @default Postal address */
-            Postal_address: string;
+            readonly Postal_address: string;
             /** @default Postal code / Zip code */
-            Postal_code: string;
+            readonly Postal_code: string;
             /** @default City */
-            City: string;
+            readonly City: string;
             /** @default State / Province */
-            Region: string;
+            readonly Region: string;
             /** @default Correspondent bank details */
-            Correspondent_bank_details: string;
+            readonly Correspondent_bank_details: string;
             /** @default Bank corr. acc. */
-            corr_acc: string;
+            readonly corr_acc: string;
             /** @default corr. acc. */
-            corr_acc_short: string;
+            readonly corr_acc_short: string;
             /** @default IIC */
-            IIC: string;
+            readonly IIC: string;
             /** @default MFO */
-            MFO: string;
+            readonly MFO: string;
             /** @default Signatory full name */
-            Signatory_full_name: string;
+            readonly Signatory_full_name: string;
             /** @default Title */
-            Title: string;
+            readonly Title: string;
             /** @default Acts under */
-            Acts_under: string;
+            readonly Acts_under: string;
             /** @default Chart */
-            Of_chart: string;
+            readonly Of_chart: string;
             /** @default Certificate */
-            Of_certificate: string;
+            readonly Of_certificate: string;
             /** @default Power of attorney */
-            Of_power_of_attorney: string;
+            readonly Of_power_of_attorney: string;
             /** @default Contract of management */
-            Of_contract_of_management: string;
+            readonly Of_contract_of_management: string;
             /** @default Signatory full name in genitive case */
-            Signatory_full_name_genitive: string;
+            readonly Signatory_full_name_genitive: string;
             /** @default Title in genitive case */
-            Title_genitive: string;
+            readonly Title_genitive: string;
             /** @default Number of signatories */
-            Number_of_signatories: string;
+            readonly Number_of_signatories: string;
             /** @default Create T-Business account */
-            Create_Tinkoff_business_account: string;
+            readonly Create_Tinkoff_business_account: string;
             /** @default Domain registration or renewal ID%paymentId% */
-            Domain_registration_or_renewal: string;
+            readonly Domain_registration_or_renewal: string;
             /** @default You do not have enough funds to complete purchase */
-            Not_enough_money_for_purchase: string;
+            readonly Not_enough_money_for_purchase: string;
             /** @default Manage contract */
-            Manage_contract: string;
+            readonly Manage_contract: string;
             /** @default Cash receipts */
-            Cash_receipts: string;
+            readonly Cash_receipts: string;
             /** @default Reconciliation statement */
-            Reconciliation_statement: string;
+            readonly Reconciliation_statement: string;
             /** @default Download contract */
-            Download_contract: string;
+            readonly Download_contract: string;
             /** @default Sign contract via e-doc */
-            Sign_contract_via_diadoc: string;
+            readonly Sign_contract_via_diadoc: string;
             /** @default Connect Diadoc e-management */
-            Connect_to_diadoc: string;
+            readonly Connect_to_diadoc: string;
             /** @default Download envelope cover */
-            Download_envelope_cover: string;
+            readonly Download_envelope_cover: string;
             /** @default Receipts for the period */
-            Receipts_for_period: string;
+            readonly Receipts_for_period: string;
             /** @default Reconciliation statement for the period */
-            Reconciliation_statement_for_period: string;
+            readonly Reconciliation_statement_for_period: string;
             /** @default Send via e-doc */
-            Send_to_diadoc: string;
+            readonly Send_to_diadoc: string;
             /** @default Invoices and warrants */
-            Invoices_and_warrants: string;
+            readonly Invoices_and_warrants: string;
             /** @default Invoices and statements */
-            Invoices_and_acts: string;
+            readonly Invoices_and_acts: string;
             /** @default Bank history */
-            Operations: string;
+            readonly Operations: string;
             /** @default Invoice number */
-            Invoice_number: string;
+            readonly Invoice_number: string;
             /** @default Plan<br> not selected */
-            Plan_not_selected: string;
+            readonly Plan_not_selected: string;
             /** @default personal */
-            account_personal: string;
+            readonly account_personal: string;
             /** @default pricing plan */
-            account_pricing_plan: string;
+            readonly account_pricing_plan: string;
             /** @default bonus */
-            account_bonus: string;
+            readonly account_bonus: string;
             /** @default Software */
-            Software: string;
+            readonly Software: string;
             /** @default Invoice */
-            Invoice: string;
+            readonly Invoice: string;
             /** @default Tools and prices */
-            Tools_and_pricing: string;
+            readonly Tools_and_pricing: string;
             /** @default Start for free */
-            Start_for_free: string;
+            readonly Start_for_free: string;
             /** @default View full */
-            View_all_pricing_1: string;
+            readonly View_all_pricing_1: string;
             /** @default pricing */
-            View_all_pricing_2: string;
+            readonly View_all_pricing_2: string;
             /** @default Faster payments system */
-            Faster_payments_system: string;
+            readonly Faster_payments_system: string;
             /** @default QR code */
-            QR_code: string;
+            readonly QR_code: string;
             /** @default Full amount */
-            Full_amount: string;
+            readonly Full_amount: string;
             /** @default Funds will be transferred to the bonus account, you won't be able to withdraw it. */
-            Money_be_transferred_to_bonus_acc_no_withdraw: string;
+            readonly Money_be_transferred_to_bonus_acc_no_withdraw: string;
             /** @default Select amount to transfer (rub.) */
-            Select_amount_to_transfer: string;
+            readonly Select_amount_to_transfer: string;
             /** @default Do you want to continue? */
-            Do_you_want_continue: string;
+            readonly Do_you_want_continue: string;
             /** @default Get closing documents by mail */
-            Get_closing_documents_by_mail: string;
+            readonly Get_closing_documents_by_mail: string;
             /** @default Check this box to receive closing documents by mail. We will send the registered mail with the Russian Post, you will need to receive it at your post office.<br><br>
              *     		If you want to receive the documents in electronic form, accept our invitation to join electronic document flow.<br><br>
              *     		If your accounting department do not see this invitation, contact us. Sometimes the original documents are not necessary, you can always get the copies under Invoices and warrants. */
-            Get_closing_documents_by_mail_info: string;
+            readonly Get_closing_documents_by_mail_info: string;
             /** @default Are you sure you want to delete this document */
-            Confirm_document_removal: string;
+            readonly Confirm_document_removal: string;
             /** @default Act */
-            Act: string;
+            readonly Act: string;
         };
     };
     responses: never;

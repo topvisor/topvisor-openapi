@@ -9,11 +9,11 @@ export interface components {
     schemas: {
         "I18n.Audit.Scan": {
             /** @default Audit settings */
-            Settings: string;
+            readonly Settings: string;
             /** @default Please, add urls for checking */
-            Please_add_urls: string;
+            readonly Please_add_urls: string;
             /** @default bar */
-            bar: string;
+            readonly bar: string;
             /** @default {
              *       "log": "Scan Log",
              *       "summary": "Summary",
@@ -34,7 +34,7 @@ export interface components {
              *       "js/js": "JavaScript",
              *       "css/css": "CSS"
              *     } */
-            menu: (string | number)[];
+            readonly menu: (string | number)[];
             /** @default {
              *       "checking": "Checking...",
              *       "time_start": "Started time",
@@ -45,7 +45,7 @@ export interface components {
              *       "robot_step": "Current step",
              *       "robot_step_next": "Next step"
              *     } */
-            checkInfo: (string | number)[];
+            readonly checkInfo: (string | number)[];
             /** @default {
              *       "time_start": "",
              *       "time_finish": "",
@@ -54,7 +54,7 @@ export interface components {
              *       "step": "",
              *       "step_next": ""
              *     } */
-            checkInfoHints: (string | number)[];
+            readonly checkInfoHints: (string | number)[];
             /** @default {
              *       "genTasks": "Gen Tasks",
              *       "auditSitemap": "Sitemap",
@@ -67,7 +67,7 @@ export interface components {
              *       "save": "Saving",
              *       "closeTask": "Finishing"
              *     } */
-            checkSteps: (string | number)[];
+            readonly checkSteps: (string | number)[];
             /** @default {
              *       "count_pages": "Number of pages",
              *       "count_problems": "Number of problems",
@@ -75,131 +75,131 @@ export interface components {
              *       "count_4xx": "4XX",
              *       "count_5xx": "5XX"
              *     } */
-            summaryCharts: (string | number)[];
+            readonly summaryCharts: (string | number)[];
             /** @default Audit already started */
-            Already_started: string;
+            readonly Already_started: string;
             /** @default Filter, until the time: */
-            FilterTime2: string;
+            readonly FilterTime2: string;
             /** @default No response */
-            HTTPCodeHundred0: string;
+            readonly HTTPCodeHundred0: string;
             /** @default Text (content) */
-            FieldContent: string;
+            readonly FieldContent: string;
             /** @default Text (title) */
-            FieldTitle: string;
+            readonly FieldTitle: string;
             /** @default «Broken» */
-            FieldBroken: string;
+            readonly FieldBroken: string;
             /** @default Pages */
-            FieldCount: string;
+            readonly FieldCount: string;
             /** @default Status */
-            FieldHTTPCodes: string;
+            readonly FieldHTTPCodes: string;
             /** @default Duplicates
              *     Title */
-            FieldTitleDbl: string;
+            readonly FieldTitleDbl: string;
             /** @default Duplicates
              *     Description */
-            FieldDescriptionDbl: string;
+            readonly FieldDescriptionDbl: string;
             /** @default Back Links
              *     inner */
-            FieldBacklinksInnerCount: string;
+            readonly FieldBacklinksInnerCount: string;
             /** @default Text length */
-            FieldTextLength: string;
+            readonly FieldTextLength: string;
             /** @default Compress */
-            FieldCompression: string;
+            readonly FieldCompression: string;
             /** @default Cache type */
-            FieldCacheType: string;
+            readonly FieldCacheType: string;
             /** @default Cache time */
-            FieldCacheTime: string;
+            readonly FieldCacheTime: string;
             /** @default Cache validator */
-            FieldCacheValidator: string;
+            readonly FieldCacheValidator: string;
             /** @default Disallow
              *     robots.txt */
-            FieldRobotsTXTBlocked: string;
+            readonly FieldRobotsTXTBlocked: string;
             /** @default Allow
              *     robots.txt */
-            FieldCheckRobotsTXTAllowed: string;
+            readonly FieldCheckRobotsTXTAllowed: string;
             /** @default Exists
              *     sitemap.xml */
-            FieldSitemapXMLMention: string;
+            readonly FieldSitemapXMLMention: string;
             /** @default Links */
-            FieldLinksCount: string;
+            readonly FieldLinksCount: string;
             /** @default TLS version */
-            FieldTLSVersion: string;
+            readonly FieldTLSVersion: string;
             /** @default Cacheable */
-            FieldCacheable: string;
+            readonly FieldCacheable: string;
             /** @default Alt */
-            FieldAlt: string;
+            readonly FieldAlt: string;
             /** @default Size */
-            FieldSize: string;
+            readonly FieldSize: string;
             /** @default Extension */
-            FieldExtension: string;
+            readonly FieldExtension: string;
             /** @default Content-Type */
-            FieldContentType: string;
+            readonly FieldContentType: string;
             /** @default Modern Format */
-            FieldModernFormat: string;
+            readonly FieldModernFormat: string;
             /** @default Minified */
-            FieldMinified: string;
+            readonly FieldMinified: string;
             /** @default Render blocking */
-            FieldRenderBlocking: string;
+            readonly FieldRenderBlocking: string;
             /** @default Type */
-            FieldType: string;
+            readonly FieldType: string;
             /** @default Loading time */
-            FieldLoadingTime: string;
+            readonly FieldLoadingTime: string;
             /** @default All checks */
-            FilterSignalNone: string;
+            readonly FilterSignalNone: string;
             /** @default With warnings */
-            FilterSignalWarnings: string;
+            readonly FilterSignalWarnings: string;
             /** @default With erors */
-            FilterSignalErrors: string;
+            readonly FilterSignalErrors: string;
             /** @default All problems */
-            FilterSignalSignals: string;
+            readonly FilterSignalSignals: string;
             /** @default Pages with duplicates Title */
-            DialogPagesWithTitleDbl: string;
+            readonly DialogPagesWithTitleDbl: string;
             /** @default Pages with duplicates Desccription */
-            DialogPagesWithDescriptionDbl: string;
+            readonly DialogPagesWithDescriptionDbl: string;
             /** @default Pages with link */
-            DialogPagesWithLink: string;
+            readonly DialogPagesWithLink: string;
             /** @default Pages with image */
-            DialogPagesWithImage: string;
+            readonly DialogPagesWithImage: string;
             /** @default Pages with JavaScript */
-            DialogPagesWithJS: string;
+            readonly DialogPagesWithJS: string;
             /** @default Pages with CSS */
-            DialogPagesWithCSS: string;
+            readonly DialogPagesWithCSS: string;
             /** @default Summary Page */
-            DialogSummaryPage: string;
+            readonly DialogSummaryPage: string;
             /** @default Links on page */
-            DialogResources_links: string;
+            readonly DialogResources_links: string;
             /** @default Images on page */
-            DialogResources_images: string;
+            readonly DialogResources_images: string;
             /** @default CSS on page */
-            DialogResources_css: string;
+            readonly DialogResources_css: string;
             /** @default JS on page */
-            DialogResources_js: string;
+            readonly DialogResources_js: string;
             /** @default Category */
-            Category: string;
+            readonly Category: string;
             /** @default What is it? */
-            WhatIsIt: string;
+            readonly WhatIsIt: string;
             /** @default How to resolve it? */
-            HowToResolveIt: string;
+            readonly HowToResolveIt: string;
             /** @default Warnings */
-            Warnings: string;
+            readonly Warnings: string;
             /** @default Errors */
-            Errors: string;
+            readonly Errors: string;
             /** @default All problems */
-            Problems: string;
+            readonly Problems: string;
             /** @default Add URLs manually or enable website crawling to perform Website Audit.<br>🤖 <a href="/website-auditor/" target="_blank">What Website Audit shows →</a> */
-            Hint_not_urls_text: string;
+            readonly Hint_not_urls_text: string;
             /** @default Add URLs */
-            Hint_not_urls_btn: string;
+            readonly Hint_not_urls_btn: string;
             /** @default You've never launched Website Audit in this project.<br>🤖 <a href="/website-auditor/" target="_blank">What Website Audit shows →</a> */
-            Hint_not_checks_text: string;
+            readonly Hint_not_checks_text: string;
             /** @default Launch Website Audit */
-            Hint_not_checks_btn: string;
+            readonly Hint_not_checks_btn: string;
             /** @default You didn't specify PageSpeed Insights API&#8209;key when launching Website Audit. Add API-key */
-            Hint_not_PageSpeed_Insights_API_key_1: string;
+            readonly Hint_not_PageSpeed_Insights_API_key_1: string;
             /** @default in Audit Settings */
-            Hint_not_PageSpeed_Insights_API_key_2: string;
+            readonly Hint_not_PageSpeed_Insights_API_key_2: string;
             /** @default and launch Audit once more. */
-            Hint_not_PageSpeed_Insights_API_key_3: string;
+            readonly Hint_not_PageSpeed_Insights_API_key_3: string;
         };
     };
     responses: never;

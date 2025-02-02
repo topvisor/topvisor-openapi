@@ -9,33 +9,33 @@ export interface components {
     schemas: {
         "I18n.Tpvsr": {
             /** @default Link deleted */
-            Link_deleted: string;
+            readonly Link_deleted: string;
             /** @default Show deleted links */
-            Show_deleted_links: string;
+            readonly Show_deleted_links: string;
             /** @default Show favorite links */
-            Show_favorite_links: string;
+            readonly Show_favorite_links: string;
             /** @default Delete link */
-            Remove_link: string;
+            readonly Remove_link: string;
             /** @default Restore link */
-            Recover_link: string;
+            readonly Recover_link: string;
             /** @default Star link */
-            Set_favorite: string;
+            readonly Set_favorite: string;
             /** @default URL cannot be shorten. */
-            Link_cannot_be_shortened: string;
+            readonly Link_cannot_be_shortened: string;
             /** @default URL cannot be shorten (4). URL blocked by Roskomnadzor. */
-            Link_blocked_roskomnadzor: string;
+            readonly Link_blocked_roskomnadzor: string;
             /** @default Title Z-A */
-            Sort_name_desc: string;
+            readonly Sort_name_desc: string;
             /** @default Title A-Z */
-            Sort_name_asc: string;
+            readonly Sort_name_asc: string;
             /** @default Clicks descending */
-            Sort_clicks_desc: string;
+            readonly Sort_clicks_desc: string;
             /** @default Clicks ascending */
-            Sort_clicks_asc: string;
+            readonly Sort_clicks_asc: string;
             /** @default By date from oldest to newest */
-            Sort_date_asc: string;
+            readonly Sort_date_asc: string;
             /** @default By date from newest to oldest */
-            Sort_date_desc: string;
+            readonly Sort_date_desc: string;
         };
     };
     responses: never;

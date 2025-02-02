@@ -12,10 +12,12 @@
                 "properties": {
                     "Og_title": {
                         "default": "Thunder is coming",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Og_description": {
                         "default": "Fasten your seatbelts, we're about to transform the view of how to do SEO!",
+                        "readOnly": true,
                         "type": "string"
                     }
                 },

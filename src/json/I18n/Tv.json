@@ -12,6 +12,7 @@
                 "properties": {
                     "TV": {
                         "default": "ТV",
+                        "readOnly": true,
                         "type": "string"
                     }
                 },

@@ -12,46 +12,57 @@
                 "properties": {
                     "Link_not_available": {
                         "default": "This link is no longer active",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "User_blocked": {
                         "default": "Your user is blocked",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Report_subscribe_canceled": {
                         "default": "You successfully unsubscribed from project reports",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Report_subscribe_canceled1": {
                         "default": "Subscription to",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Report_subscribe_canceled2": {
                         "default": "is cancelled successfully",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Informer_unsubscribe_news": {
                         "default": "unsubscribe from news",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Informer_subscribe_balance": {
                         "default": "unsubscribe from low balance alerts",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Informer_unsubscribe_tickets": {
                         "default": "unsubscribe from new ticket replies",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Informer_unsubscribe_update": {
                         "default": "unsubscribe from Yandex updates",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Informer_unsubscribe_comments": {
                         "default": "unsubscribe from new comments",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Informer_unsubscribe_api": {
                         "default": "unsubscribe from API updates",
+                        "readOnly": true,
                         "type": "string"
                     }
                 },

@@ -12,6 +12,7 @@
                 "properties": {
                     "No_card_needed": {
                         "default": "No card needed",
+                        "readOnly": true,
                         "type": "string"
                     }
                 },

@@ -9,63 +9,63 @@ export interface components {
     schemas: {
         "I18n.Informer": {
             /** @default Balance */
-            Type_balance: string;
+            readonly Type_balance: string;
             /** @default Sevice news */
-            Type_news: string;
+            readonly Type_news: string;
             /** @default Tickets */
-            Type_tickets: string;
+            readonly Type_tickets: string;
             /** @default Yandex update */
-            Type_yandex_update: string;
+            readonly Type_yandex_update: string;
             /** @default New comment alerts */
-            Type_comments: string;
+            readonly Type_comments: string;
             /** @default API updates */
-            Type_api: string;
+            readonly Type_api: string;
             /** @default Unsubscribe */
-            Unsubscribe: string;
+            readonly Unsubscribe: string;
             /** @default Enter title and message text */
-            Enter_title_and_text: string;
+            readonly Enter_title_and_text: string;
             /** @default Emailing */
-            Log_text: string;
+            readonly Log_text: string;
             /** @default only for subscribers */
-            Log_text2: string;
+            readonly Log_text2: string;
             /** @default You received a new reply to your ticket */
-            Tickets_title: string;
+            readonly Tickets_title: string;
             /** @default Account balance alert */
-            Balance_title: string;
+            readonly Balance_title: string;
             /** @default Yandex search results updated */
-            Update_title: string;
+            readonly Update_title: string;
             /** @default You comment has a new reply! Join the discussion 😎 */
-            Comments_title: string;
+            readonly Comments_title: string;
             /** @default No notifications yet */
-            No_new_notifications: string;
+            readonly No_new_notifications: string;
             /** @default clear all */
-            clear_all: string;
+            readonly clear_all: string;
             /** @default Notifications */
-            Notifications: string;
+            readonly Notifications: string;
             /** @default Email */
-            Email: string;
+            readonly Email: string;
             /** @default Push */
-            Push: string;
+            readonly Push: string;
             /** @default Block */
-            Block: string;
+            readonly Block: string;
             /** @default Alerts */
-            Informer: string;
+            readonly Informer: string;
             /** @default Select all */
-            Select_all: string;
+            readonly Select_all: string;
             /** @default Clear all */
-            Clear_all: string;
+            readonly Clear_all: string;
             /** @default Comment replies */
-            Comment_replies: string;
+            readonly Comment_replies: string;
             /** @default  replied to you */
-            replied_to_you: string;
+            readonly replied_to_you: string;
             /** @default in comments on the post */
-            in_comments_on_the_post: string;
+            readonly in_comments_on_the_post: string;
             /** @default Email delivery has failed to this recipient */
-            Email_delivery_failure: string;
+            readonly Email_delivery_failure: string;
             /** @default unsubscribed from reports of projects */
-            email_unsubscribed_from_reports: string;
+            readonly email_unsubscribed_from_reports: string;
             /** @default You unsubscribed from emails to */
-            You_unsubscribed_from_emails: string;
+            readonly You_unsubscribed_from_emails: string;
         };
     };
     responses: never;

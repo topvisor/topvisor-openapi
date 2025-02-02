@@ -12,58 +12,72 @@
                 "properties": {
                     "Link_deleted": {
                         "default": "Link deleted",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Show_deleted_links": {
                         "default": "Show deleted links",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Show_favorite_links": {
                         "default": "Show favorite links",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Remove_link": {
                         "default": "Delete link",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Recover_link": {
                         "default": "Restore link",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Set_favorite": {
                         "default": "Star link",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Link_cannot_be_shortened": {
                         "default": "URL cannot be shorten.",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Link_blocked_roskomnadzor": {
                         "default": "URL cannot be shorten (4). URL blocked by Roskomnadzor.",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Sort_name_desc": {
                         "default": "Title Z-A",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Sort_name_asc": {
                         "default": "Title A-Z",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Sort_clicks_desc": {
                         "default": "Clicks descending",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Sort_clicks_asc": {
                         "default": "Clicks ascending",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Sort_date_asc": {
                         "default": "By date from oldest to newest",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Sort_date_desc": {
                         "default": "By date from newest to oldest",
+                        "readOnly": true,
                         "type": "string"
                     }
                 },

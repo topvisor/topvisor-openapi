@@ -9,19 +9,19 @@ export interface components {
     schemas: {
         "I18n.Landings.Promocode": {
             /** @default Topvior is online platform for SEO specialists and marketers with all essential tools for analyzing website's visibility in search engines. */
-            Description: string;
+            readonly Description: string;
             /** @default Enter promocode */
-            OpenGraph_title: string;
+            readonly OpenGraph_title: string;
             /** @default Enter promocode */
-            Enter_promocode: string;
+            readonly Enter_promocode: string;
             /** @default Promocode */
-            Promocode: string;
+            readonly Promocode: string;
             /** @default By pressing Sign up you accept */
-            By_pressing_sign_up_you_accept: string;
+            readonly By_pressing_sign_up_you_accept: string;
             /** @default Terms and Conditions */
-            Terms_and_conditions: string;
+            readonly Terms_and_conditions: string;
             /** @default Privacy Policy */
-            Privacy_policy: string;
+            readonly Privacy_policy: string;
         };
     };
     responses: never;

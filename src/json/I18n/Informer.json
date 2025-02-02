@@ -12,118 +12,147 @@
                 "properties": {
                     "Type_balance": {
                         "default": "Balance",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Type_news": {
                         "default": "Sevice news",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Type_tickets": {
                         "default": "Tickets",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Type_yandex_update": {
                         "default": "Yandex update",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Type_comments": {
                         "default": "New comment alerts",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Type_api": {
                         "default": "API updates",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Unsubscribe": {
                         "default": "Unsubscribe",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Enter_title_and_text": {
                         "default": "Enter title and message text",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Log_text": {
                         "default": "Emailing",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Log_text2": {
                         "default": "only for subscribers",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Tickets_title": {
                         "default": "You received a new reply to your ticket",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Balance_title": {
                         "default": "Account balance alert",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Update_title": {
                         "default": "Yandex search results updated",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Comments_title": {
                         "default": "You comment has a new reply! Join the discussion 😎",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "No_new_notifications": {
                         "default": "No notifications yet",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "clear_all": {
                         "default": "clear all",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Notifications": {
                         "default": "Notifications",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Email": {
                         "default": "Email",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Push": {
                         "default": "Push",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Block": {
                         "default": "Block",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Informer": {
                         "default": "Alerts",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Select_all": {
                         "default": "Select all",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Clear_all": {
                         "default": "Clear all",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Comment_replies": {
                         "default": "Comment replies",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "replied_to_you": {
                         "default": " replied to you",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "in_comments_on_the_post": {
                         "default": "in comments on the post",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Email_delivery_failure": {
                         "default": "Email delivery has failed to this recipient",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "email_unsubscribed_from_reports": {
                         "default": "unsubscribed from reports of projects",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "You_unsubscribed_from_emails": {
                         "default": "You unsubscribed from emails to",
+                        "readOnly": true,
                         "type": "string"
                     }
                 },

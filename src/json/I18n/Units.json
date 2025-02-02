@@ -12,14 +12,17 @@
                 "properties": {
                     "s": {
                         "default": "s",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "ms": {
                         "default": "ms",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "KB": {
                         "default": "KB",
+                        "readOnly": true,
                         "type": "string"
                     }
                 },

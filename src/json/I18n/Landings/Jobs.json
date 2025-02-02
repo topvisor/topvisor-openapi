@@ -12,18 +12,22 @@
                 "properties": {
                     "Link_to_resume_or_comment": {
                         "default": "Link to your resume or a comment",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Submit_button_text": {
                         "default": "I want to join!",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Accept_user_agreement_text_befor_link": {
                         "default": "By submitting an application , I give my consent to the processing of private data in accordance with",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Accept_user_agreement_link_text": {
                         "default": "Privacy Policy",
+                        "readOnly": true,
                         "type": "string"
                     }
                 },

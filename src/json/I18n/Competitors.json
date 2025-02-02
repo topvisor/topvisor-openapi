@@ -12,630 +12,787 @@
                 "properties": {
                     "Competitor_analysis": {
                         "default": "Competitor research",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Powerful_tool_for_competitve_analysis": {
                         "default": "Powerful tool for comprehensive competitve reserach",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Results_on_serp": {
                         "default": "Total search results count",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Keywords": {
                         "default": "Keywords",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Keyword": {
                         "default": "Keyword",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Traffic": {
                         "default": "Traffic",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Common": {
                         "default": "Common",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Unique": {
                         "default": "Unique",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Chart": {
                         "default": "Chart",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Summary": {
                         "default": "Summary",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Summary_data": {
                         "default": "Summary data",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Get_report": {
                         "default": "Create report",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Expand": {
                         "default": "Expand",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Expand_report": {
                         "default": "Expand report",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Domain_or_URL": {
                         "default": "Domain or URL",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Enter_domain_or_URL": {
                         "default": "Enter domain or URL",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Enter_keyword": {
                         "default": "Enter keyword",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Create_report": {
                         "default": "Create report",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Report_created": {
                         "default": "Report created",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Structure": {
                         "default": "Structure",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Search_results": {
                         "default": "Search results",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Related_keywords": {
                         "default": "Related keywords",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Word_forms": {
                         "default": "Word forms",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Organic_results": {
                         "default": "Organic results",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "organic_results": {
                         "default": "organic",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Ads": {
                         "default": "Ads",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "ads": {
                         "default": "ads",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Unique_keywords": {
                         "default": "Unique keywords",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "All_keywords": {
                         "default": "All keywords",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Common_keywords": {
                         "default": "Common keywords",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Cost": {
                         "default": "Cost",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Volume": {
                         "default": "Volume",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Count": {
                         "default": "Count",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "My_reports": {
                         "default": "My reports",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Domain_keywords": {
                         "default": "Domain keywords",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Domain_ad_texts": {
                         "default": "Domain ad texts",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Competitors_in_organic_paid_search": {
                         "default": "Competitors in organic & paid search",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Competitors_keywords": {
                         "default": "Competitor's keywords",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Competitors_ad_texts": {
                         "default": "Competitor's ad texts",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Basic_report": {
                         "default": "Basic",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Select_report_type": {
                         "default": "Select a report type",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "domain_and_competitors_list": {
                         "default": "domain and list of competitors",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "purchased": {
                         "default": "purchased",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Add_competitor_keywords": {
                         "default": "Add competitor keywords",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "you_can_purchase_later": {
                         "default": "multi reports",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Checklist_keywords_paid_and_organic": {
                         "default": "Keywords (Paid + Organic)",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Keyword_performance_indicators": {
                         "default": "Keyword performance indicators",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Snippets_and_ads": {
                         "default": "Snippet and ads",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Website_URLs_visible_in_search": {
                         "default": "Website URLs in SERP",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Compare_data_with_competitors": {
                         "default": "Compare data with competitors",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Group_export_of_competitors": {
                         "default": "Competitors group export",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Keyword_cloud": {
                         "default": "Keyword cloud",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "CPC": {
                         "default": "CPC",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Keywords_by_URL": {
                         "default": "Keywords by URL",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Competitor_research_level": {
                         "default": "Competitor research level",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "List_of_competitors_and_intersection": {
                         "default": "List of competitors and intersection",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Competitors_level_info": {
                         "default": "A list of likely competitors will be included in the report without this option.<br><br>\n\t\tAdd competitor keywords to your report for quick access to keywords and snippets.<br><br>\n\t\tThe higher is the selected research level, the fewer pools of competitor keywords with a lower intersection level will be in the report.<br><br>\n\t\tIf you are not sure yet which level to select, you can buy the advanced report later on the <b>Competitors</b> page.",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "level_purchased": {
                         "default": "level purchased",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "included": {
                         "default": "included",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "in_the_report": {
                         "default": "in the report",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Total": {
                         "default": "Total",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Competitors_list": {
                         "default": "List of competitors",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Keywords_list": {
                         "default": "List of keywords",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Keywords_of_competitors": {
                         "default": "Competitors keywords",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "To_project": {
                         "default": "To project",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "To_your_project": {
                         "default": "To your project",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Export_keywords_to_project": {
                         "default": "Export keywords to the project",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "To_export_keywords_to_project": {
                         "default": "Export keywords to the project",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Select_project": {
                         "default": "Select a project",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Automated_grouping": {
                         "default": "Automated grouping",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "If_these_keywords_already_added": {
                         "default": "If these keywords already exist in the project",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Keywords_total": {
                         "default": "Total",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Keywords_common": {
                         "default": "Common",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Keywords_unique": {
                         "default": "Unique",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Keywords_intersection": {
                         "default": "Intersection",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Keywords_volume": {
                         "default": "Volume",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Keywords_impressions": {
                         "default": "Impressions",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Keywords_avg_rank": {
                         "default": "Average",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Keywords_median_rank": {
                         "default": "Median",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Keywords_traffic": {
                         "default": "Traffic",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Keywords_cost": {
                         "default": "Cost",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Keywords_count": {
                         "default": "Keywords",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Keywords_relevance": {
                         "default": "Relevance",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Competitor": {
                         "default": "Competitor",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Elements": {
                         "default": "Elements",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "No_elements": {
                         "default": "No elements",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Elements_object_card": {
                         "default": "Object card",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Elements_featured_snippet": {
                         "default": "Featured snippet",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Elements_goods": {
                         "default": "Goods",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Elements_map": {
                         "default": "Map",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Elements_video": {
                         "default": "Video",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Elements_images": {
                         "default": "Images",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Elements_news": {
                         "default": "News",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Elements_calc": {
                         "default": "Formulas",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Elements_knowledge_panel": {
                         "default": "Knowledge panel",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Elements_dictionary": {
                         "default": "Dictionary",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Elements_definitions": {
                         "default": "Definitions",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Elements_travel": {
                         "default": "Travel",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Elements_calculator": {
                         "default": "Calculator",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Elements_related_searches": {
                         "default": "Related keywords",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Elements_ad_top": {
                         "default": "Ad at the page top",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Elements_ad_bottom": {
                         "default": "Ad at the page bottom",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Elements_ad_goods": {
                         "default": "Ad - goods",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Elements_recipes": {
                         "default": "Recipes",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Elements_health": {
                         "default": "Health",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Elements_food": {
                         "default": "Food, delivery, recipes",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Elements_media": {
                         "default": "Media",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Elements_yandex_services": {
                         "default": "Yandex services",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Elements_interactive": {
                         "default": "Charts etc.",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "reversed": {
                         "default": "reversed",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Rank_from_last_check": {
                         "default": "Rank from last check",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Snippet_title": {
                         "default": "Snippet title",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Snippet_body": {
                         "default": "Snippet body",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Results_count": {
                         "default": "Results",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Ad_type": {
                         "default": "Ad type",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Traffic_forecast_depends_on_impressions_and_rank": {
                         "default": "Traffic forecast<br>Depends on the number of impressions and a website rank",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Potential_ad_cost_depends_on_CPC_and_traffic": {
                         "default": "Potential ad cost based on traffic forecast. Сalculated by multiplying Traffic and CPC.",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Pages": {
                         "default": "Pages",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Results_menu": {
                         "default": "Results menu",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Website_topic": {
                         "default": "Topic",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Search_URL_keyword": {
                         "default": "Search URL / Keyword",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Expires_in": {
                         "default": "Expires in",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Keyword_search_volume": {
                         "default": "Keyword search volume",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Keyword_rank": {
                         "default": "Keyword rank",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Keywords_to_export": {
                         "default": "Keywords to export",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Intersection_label": {
                         "default": "Keyword intersection percentage",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Relevance_label": {
                         "default": "Relevance of two websites",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Set_target_URLs_automatically": {
                         "default": "Set target URLs automatically",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Traffic_forecast": {
                         "default": "Traffic forecast",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Traffic_volume": {
                         "default": "Traffic volume",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "No_data_to_display": {
                         "default": "No data to display",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "List_of_leaders": {
                         "default": "List of leaders",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Leaders_keywords": {
                         "default": "Leaders keywords",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Intersection_level": {
                         "default": "Intersection level",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Question_phrases": {
                         "default": "Question phrases",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Fix_word_order": {
                         "default": "Fix word order",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Exact_match": {
                         "default": "Exact match",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Leader": {
                         "default": "Leader",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Commercial_word_forms": {
                         "default": "Commercial word forms",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Keyword_has_broad_thematic_database_specify_keyword": {
                         "default": "Keyword has broad thematic database, specify keyword to get a more accurate report",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Wordforms_thematic_keywords_leaders_list": {
                         "default": "Word forms, thematic keywords and <br>list of leaders",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Search_volume_keyword_cost_seasonality": {
                         "default": "Seasonal search volume and keyword cost",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Research_by_word_form": {
                         "default": "Research by word form",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Research_by_thematic": {
                         "default": "Research by topic",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "by_thematic": {
                         "default": "by topic",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Organic_top_50_ads_by_thematics": {
                         "default": "TOP 50 organic results + Ads on topic",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Topic_leaders_list": {
                         "default": "List of topic leaders",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Snippets_ads_of_topic_leaders": {
                         "default": "Snippets and ads of topic leaders",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Bulk_export_of_leaders_keywords": {
                         "default": "Bulk export of leader keywords",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Competitor_research": {
                         "default": "Competitor research",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Leaders_analysis": {
                         "default": "Leader research",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Leaders": {
                         "default": "Leaders",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Word_count": {
                         "default": "Word count",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Length": {
                         "default": "Length",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Intersection_level_required": {
                         "default": "Intersection level required",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Download_keywords_snippets_after_purchase": {
                         "default": "After purchase, you can download keywords and snippets of this and other competitors with the intersection level %intersection% in one click and compare their data with the main domain on this report.",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Results_not_found": {
                         "default": "There's no report by such URL or keyword in our database. This means the URL doesn't rank in TOP-50 for high volume keywords or that the keyword has <5 volume in Yandex and Google at the same time.<br><br>To find the competitors that rank for the keywords in your project with My competitors tool, follow <a href=\"/support/rankings/snapshots/competitors/\">this manual.</a>",
+                        "readOnly": true,
                         "type": "string"
                     }
                 },

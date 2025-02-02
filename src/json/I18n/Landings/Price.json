@@ -12,54 +12,67 @@
                 "properties": {
                     "Depth": {
                         "default": "depth",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "of_results": {
                         "default": "results",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "of_keywords": {
                         "default": "keywords",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "of_pages": {
                         "default": "URLs",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "up_to": {
                         "default": "up to",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "from": {
                         "default": "from",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Without_discount": {
                         "default": "No discount",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "What_is_a_tariff": {
                         "default": "What is a pricing plan (tariff)?",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Rank_tracker_and_collecting_TOP": {
                         "default": "Rank Tracking and SERP Top",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Semantics": {
                         "default": "Semantics",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Technical_Seo": {
                         "default": "Technical SEO",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Yandex_direct": {
                         "default": "Yandex Direct",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Account": {
                         "default": "Account",
+                        "readOnly": true,
                         "type": "string"
                     }
                 },

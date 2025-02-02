@@ -9,43 +9,43 @@ export interface components {
     schemas: {
         "I18n.Updates": {
             /** @default SERP update score */
-            SERP_update_score: string;
+            readonly SERP_update_score: string;
             /** @default update confirmed by Yandex */
-            confirmed_Yandex: string;
+            readonly confirmed_Yandex: string;
             /** @default updates calendar */
-            Calendar: string;
+            readonly Calendar: string;
             /** @default Website informer */
-            Informer: string;
+            readonly Informer: string;
             /** @default Yandex search base update */
-            Yandex_search_base_update: string;
+            readonly Yandex_search_base_update: string;
             /** @default SERP change */
-            SERP_changes: string;
+            readonly SERP_changes: string;
             /** @default  Text update: index <span class="top-only-pc">updated</span> on  */
-            Text_update: string;
+            readonly Text_update: string;
             /** @default Index updated on  */
-            Index_updated: string;
+            readonly Index_updated: string;
             /** @default Comments */
-            Comments: string;
+            readonly Comments: string;
             /** @default Add comment */
-            Add_comment: string;
+            readonly Add_comment: string;
             /** @default <a href="." class="btn">Sign in</a> to leave comments */
-            Sign_in_to_leave_comments: string;
+            readonly Sign_in_to_leave_comments: string;
             /** @default Subscribe */
-            Subscribe: string;
+            readonly Subscribe: string;
             /** @default points */
-            points: string;
+            readonly points: string;
             /** @default Update */
-            Update: string;
+            readonly Update: string;
             /** @default Updates calendar */
-            Updates_calendar: string;
+            readonly Updates_calendar: string;
             /** @default Yandex update */
-            Yandex_update: string;
+            readonly Yandex_update: string;
             /** @default Yandex text update */
-            Yandex_text_update: string;
+            readonly Yandex_text_update: string;
             /** @default Yandex SERP update */
-            Yandex_SERP_update: string;
+            readonly Yandex_SERP_update: string;
             /** @default Index updated on */
-            Index_updated_on: string;
+            readonly Index_updated_on: string;
         };
     };
     responses: never;

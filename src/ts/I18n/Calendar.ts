@@ -9,39 +9,39 @@ export interface components {
     schemas: {
         "I18n.Calendar": {
             /** @default Mo */
-            Dw_1: string;
+            readonly Dw_1: string;
             /** @default Tu */
-            Dw_2: string;
+            readonly Dw_2: string;
             /** @default We */
-            Dw_3: string;
+            readonly Dw_3: string;
             /** @default Th */
-            Dw_4: string;
+            readonly Dw_4: string;
             /** @default Fr */
-            Dw_5: string;
+            readonly Dw_5: string;
             /** @default Sa */
-            Dw_6: string;
+            readonly Dw_6: string;
             /** @default Su */
-            Dw_7: string;
+            readonly Dw_7: string;
             /** @default Monday */
-            Day_of_week_1: string;
+            readonly Day_of_week_1: string;
             /** @default Tuesday */
-            Day_of_week_2: string;
+            readonly Day_of_week_2: string;
             /** @default Wednesday */
-            Day_of_week_3: string;
+            readonly Day_of_week_3: string;
             /** @default Thursday */
-            Day_of_week_4: string;
+            readonly Day_of_week_4: string;
             /** @default Friday */
-            Day_of_week_5: string;
+            readonly Day_of_week_5: string;
             /** @default Saturday */
-            Day_of_week_6: string;
+            readonly Day_of_week_6: string;
             /** @default Sunday */
-            Day_of_week_7: string;
+            readonly Day_of_week_7: string;
             /** @default |january|february|march|april|may|june|july|august|september|october|november|december */
-            months: string;
+            readonly months: string;
             /** @default |january|february|march|april|may|june|july|august|september|october|november|december */
-            of_months: string;
+            readonly of_months: string;
             /** @default |january|february|march|april|may|june|july|august|september|october|november|december */
-            in_months: string;
+            readonly in_months: string;
         };
     };
     responses: never;

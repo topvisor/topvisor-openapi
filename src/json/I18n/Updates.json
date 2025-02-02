@@ -12,78 +12,97 @@
                 "properties": {
                     "SERP_update_score": {
                         "default": "SERP update score",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "confirmed_Yandex": {
                         "default": "update confirmed by Yandex",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Calendar": {
                         "default": "updates calendar",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Informer": {
                         "default": "Website informer",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Yandex_search_base_update": {
                         "default": "Yandex search base update",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "SERP_changes": {
                         "default": "SERP change",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Text_update": {
                         "default": " Text update: index <span class=\"top-only-pc\">updated</span> on ",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Index_updated": {
                         "default": "Index updated on ",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Comments": {
                         "default": "Comments",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Add_comment": {
                         "default": "Add comment",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Sign_in_to_leave_comments": {
                         "default": "<a href=\".\" class=\"btn\">Sign in</a> to leave comments",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Subscribe": {
                         "default": "Subscribe",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "points": {
                         "default": "points",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Update": {
                         "default": "Update",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Updates_calendar": {
                         "default": "Updates calendar",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Yandex_update": {
                         "default": "Yandex update",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Yandex_text_update": {
                         "default": "Yandex text update",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Yandex_SERP_update": {
                         "default": "Yandex SERP update",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Index_updated_on": {
                         "default": "Index updated on",
+                        "readOnly": true,
                         "type": "string"
                     }
                 },

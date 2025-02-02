@@ -12,6 +12,7 @@
                 "properties": {
                     "Text_confirm_delete_widget": {
                         "default": "Are you sure you want to delete this widget?",
+                        "readOnly": true,
                         "type": "string"
                     }
                 },

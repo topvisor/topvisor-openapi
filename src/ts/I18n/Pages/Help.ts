@@ -9,12 +9,12 @@ export interface components {
     schemas: {
         "I18n.Pages.Help": {
             /** @default Got any questions? Contact us */
-            Contact_title: string;
+            readonly Contact_title: string;
             /** @default If you didn't find what you looked for in the Help Center, contact Support Team via Ticket System {{ telegramBotText }}
              *     or email <a href='mailto:{{ supportEmail }}' target='_blank'>{{ supportEmail }}</a>. We'll show how to find and set up the tool you need and answer all other questions. */
-            Contact_text: string;
+            readonly Contact_text: string;
             /** @default Contact us */
-            Contact: string;
+            readonly Contact: string;
         };
     };
     responses: never;

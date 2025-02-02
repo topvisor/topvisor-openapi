@@ -9,315 +9,315 @@ export interface components {
     schemas: {
         "I18n.Audit": {
             /** @default Website audit */
-            Audit: string;
+            readonly Audit: string;
             /** @default Index status */
-            Indexing: string;
+            readonly Indexing: string;
             /** @default Website watcher */
-            Watcher: string;
+            readonly Watcher: string;
             /** @default You haven't checked your website yet */
-            No_results: string;
+            readonly No_results: string;
             /** @default Scanning */
-            Process_text: string;
+            readonly Process_text: string;
             /** @default H1 Header */
-            Header_h1: string;
+            readonly Header_h1: string;
             /** @default Website SEO audit */
-            Menu: string;
+            readonly Menu: string;
             /** @default Associated pages */
-            Associated_pages: string;
+            readonly Associated_pages: string;
             /** @default Symb. count */
-            String_length_short: string;
+            readonly String_length_short: string;
             /** @default All */
-            Filter_all: string;
+            readonly Filter_all: string;
             /** @default All with issues */
-            Filter_with_warnings_or_errors: string;
+            readonly Filter_with_warnings_or_errors: string;
             /** @default With warnings */
-            Filter_with_warnings: string;
+            readonly Filter_with_warnings: string;
             /** @default With errors */
-            Filter_with_errors: string;
+            readonly Filter_with_errors: string;
             /** @default What's new */
-            Filter_checks_changed: string;
+            readonly Filter_checks_changed: string;
             /** @default Internal links */
-            Links_inner: string;
+            readonly Links_inner: string;
             /** @default External links */
-            Links_external: string;
+            readonly Links_external: string;
             /** @default Pages to check */
-            Pages_to_check: string;
+            readonly Pages_to_check: string;
             /** @default Generated sitemap */
-            Generated_sitemap: string;
+            readonly Generated_sitemap: string;
             /** @default Sitemap not found */
-            Sitemap_not_found: string;
+            readonly Sitemap_not_found: string;
             /** @default Sitemap already started */
-            Sitemap_already_started_error: string;
+            readonly Sitemap_already_started_error: string;
             /** @default Sitemap generator */
-            Sitemap_gen: string;
+            readonly Sitemap_gen: string;
             /** @default pages */
-            pages: string;
+            readonly pages: string;
             /** @default Web page count */
-            Site_size: string;
+            readonly Site_size: string;
             /** @default Scan */
-            Header_start_short: string;
+            readonly Header_start_short: string;
             /** @default Generate */
-            Step1_gen: string;
+            readonly Step1_gen: string;
             /** @default A valid map can be generated only with a valid robots.txt */
-            Step1_gen_notice: string;
+            readonly Step1_gen_notice: string;
             /** @default Sitemap generation for */
-            Sitemap_bank_info: string;
+            readonly Sitemap_bank_info: string;
             /** @default Project audit for */
-            Audit_bank_info: string;
+            readonly Audit_bank_info: string;
             /** @default Report */
-            Report: string;
+            readonly Report: string;
             /** @default Summary */
-            Header_browse: string;
+            readonly Header_browse: string;
             /** @default Common */
-            Header_common: string;
+            readonly Header_common: string;
             /** @default Scanned pages */
-            Count_pages_checked: string;
+            readonly Count_pages_checked: string;
             /** @default Warnings */
-            Header_notices: string;
+            readonly Header_notices: string;
             /** @default Issues */
-            Header_warnings: string;
+            readonly Header_warnings: string;
             /** @default Redirects between */
-            Www_redirect: string;
+            readonly Www_redirect: string;
             /** @default blocked by robots.txt */
-            robots_txt_blocked: string;
+            readonly robots_txt_blocked: string;
             /** @default blocked by <i>&lt;meta http-equiv="refresh"&gt;</i> */
-            refresh_redirect: string;
+            readonly refresh_redirect: string;
             /** @default blocked by <i>&lt;meta name="robots" content="noindex"&gt;</i> */
-            noindex: string;
+            readonly noindex: string;
             /** @default redirects detected */
-            redirect: string;
+            readonly redirect: string;
             /** @default loading error / incorrect server response code (for example, 404, 503) */
-            index_broken: string;
+            readonly index_broken: string;
             /** @default title is missing */
-            title_empty: string;
+            readonly title_empty: string;
             /** @default too short / long title */
-            title_size: string;
+            readonly title_size: string;
             /** @default duplicate title */
-            title_dbl: string;
+            readonly title_dbl: string;
             /** @default description is missing */
-            description_empty: string;
+            readonly description_empty: string;
             /** @default too short / long description */
-            description_size: string;
+            readonly description_size: string;
             /** @default duplicate description */
-            description_dbl: string;
+            readonly description_dbl: string;
             /** @default anchor or alternative (attribute <i>title="..."</i>) text is missing */
-            links_empty_content: string;
+            readonly links_empty_content: string;
             /** @default attribute <i>rel="nofollow"</i> is used */
-            nofollow: string;
+            readonly nofollow: string;
             /** @default broken links */
-            links_broken: string;
+            readonly links_broken: string;
             /** @default alternative text (attribute <i>alt="..."</i>) is missing */
-            no_title: string;
+            readonly no_title: string;
             /** @default "broken" image */
-            images_broken: string;
+            readonly images_broken: string;
             /** @default empty or missing H1 tag */
-            h1_empty: string;
+            readonly h1_empty: string;
             /** @default Last-Modified is missing */
-            no_lastmod: string;
+            readonly no_lastmod: string;
             /** @default If-Modified-Since not processed */
-            no_lastmod_since: string;
+            readonly no_lastmod_since: string;
             /** @default Index status */
-            Header_index: string;
+            readonly Header_index: string;
             /** @default Response code */
-            Status_code: string;
+            readonly Status_code: string;
             /** @default Blocked robots.txt */
-            Robots_txt_blocked_short: string;
+            readonly Robots_txt_blocked_short: string;
             /** @default Snippet */
-            Header_snippet: string;
+            readonly Header_snippet: string;
             /** @default Meta-description (description) */
-            Description: string;
+            readonly Description: string;
             /** @default Duplicate titles */
-            Snippet_title_dbl: string;
+            readonly Snippet_title_dbl: string;
             /** @default Duplicate descriptions */
-            Snippet_description_dbl: string;
+            readonly Snippet_description_dbl: string;
             /** @default Links */
-            Header_links: string;
+            readonly Header_links: string;
             /** @default Type */
-            Link_type: string;
+            readonly Link_type: string;
             /** @default Text (anchor) */
-            Link_content: string;
+            readonly Link_content: string;
             /** @default Text (title) */
-            Link_title: string;
+            readonly Link_title: string;
             /** @default Pages */
-            Link_pages: string;
+            readonly Link_pages: string;
             /** @default "Broken" */
-            Link_broken: string;
+            readonly Link_broken: string;
             /** @default Image */
-            Link_image: string;
+            readonly Link_image: string;
             /** @default Image */
-            Link_image2: string;
+            readonly Link_image2: string;
             /** @default Text */
-            Link_text: string;
+            readonly Link_text: string;
             /** @default Notification Center */
-            Watcher_send_to_informer: string;
+            readonly Watcher_send_to_informer: string;
             /** @default Generate sitemap */
-            Generate_sitemap: string;
+            readonly Generate_sitemap: string;
             /** @default Sitemap generator */
-            Sitemap_generation: string;
+            readonly Sitemap_generation: string;
             /** @default Sitemap uploader */
-            Sitemap_uploading: string;
+            readonly Sitemap_uploading: string;
             /** @default Images */
-            Header_images: string;
+            readonly Header_images: string;
             /** @default Alt-text */
-            Image_alt: string;
+            readonly Image_alt: string;
             /** @default Pages */
-            Image_pages: string;
+            readonly Image_pages: string;
             /** @default Size */
-            Image_size: string;
+            readonly Image_size: string;
             /** @default "Broken" */
-            Image_broken: string;
+            readonly Image_broken: string;
             /** @default Content */
-            Header_content: string;
+            readonly Header_content: string;
             /** @default Page title (Title) */
-            Title_page: string;
+            readonly Title_page: string;
             /** @default List of pages */
-            Header_pages_short: string;
+            readonly Header_pages_short: string;
             /** @default Page audit */
-            Header_page: string;
+            readonly Header_page: string;
             /** @default Skip the page in the next reports */
-            Page_to_disallow: string;
+            readonly Page_to_disallow: string;
             /** @default The page will be skipped in the next reports */
-            Page_to_disallow_ok: string;
+            readonly Page_to_disallow_ok: string;
             /** @default Redirects */
-            Page_redirects: string;
+            readonly Page_redirects: string;
             /** @default Page response code */
-            Page_code: string;
+            readonly Page_code: string;
             /** @default Blocked by Robots.txt */
-            Page_robots_txt_blocked: string;
+            readonly Page_robots_txt_blocked: string;
             /** @default Contains meta robots nofollow */
-            Page_nofollow: string;
+            readonly Page_nofollow: string;
             /** @default Blocked by meta robots noindex */
-            Page_noindex: string;
+            readonly Page_noindex: string;
             /** @default Contains rel="canonical" */
-            Page_canonical: string;
+            readonly Page_canonical: string;
             /** @default Contains rel="alternate" */
-            Page_alternate: string;
+            readonly Page_alternate: string;
             /** @default Contains meta refresh redirect */
-            Page_refresh: string;
+            readonly Page_refresh: string;
             /** @default Symbol count */
-            Page_string_length: string;
+            readonly Page_string_length: string;
             /** @default Duplicate title */
-            Page_title_dbl: string;
+            readonly Page_title_dbl: string;
             /** @default Duplicate description */
-            Page_description_dbl: string;
+            readonly Page_description_dbl: string;
             /** @default Changes */
-            Filter_changed: string;
+            readonly Filter_changed: string;
             /** @default Changes (HTTP code didn't change) */
-            Filter_http_not_changed: string;
+            readonly Filter_http_not_changed: string;
             /** @default Only current report */
-            Filter_check_selected: string;
+            readonly Filter_check_selected: string;
             /** @default All until the applied date */
-            Filter_check_before: string;
+            readonly Filter_check_before: string;
             /** @default Check */
-            Watcher_go: string;
+            readonly Watcher_go: string;
             /** @default Scanning */
-            Watcher_process_text: string;
+            readonly Watcher_process_text: string;
             /** @default Website watcher report for */
-            Watcher_bank_info: string;
+            readonly Watcher_bank_info: string;
             /** @default To run Watcher */
-            Watcher_need_config_1: string;
+            readonly Watcher_need_config_1: string;
             /** @default move to the settings */
-            Watcher_need_config_2: string;
+            readonly Watcher_need_config_2: string;
             /** @default and add a list of pages */
-            Watcher_need_config_3: string;
+            readonly Watcher_need_config_3: string;
             /** @default Scan */
-            Indexing_go: string;
+            readonly Indexing_go: string;
             /** @default Index checker */
-            Indexing_check: string;
+            readonly Indexing_check: string;
             /** @default You haven't checked website index status yet */
-            Indexing_no_results: string;
+            readonly Indexing_no_results: string;
             /** @default Index status report for */
-            Indexing_bank_info: string;
+            readonly Indexing_bank_info: string;
             /** @default To check website index status  */
-            Indexing_need_config_1: string;
+            readonly Indexing_need_config_1: string;
             /** @default set */
-            Indexing_need_config_2: string;
+            readonly Indexing_need_config_2: string;
             /** @default a list of pages to scan and select search engines */
-            Indexing_need_config_3: string;
+            readonly Indexing_need_config_3: string;
             /** @default Please add pages to scan in the settings */
-            Pages_for_analyse_not_selected: string;
+            readonly Pages_for_analyse_not_selected: string;
             /** @default Delete URLs by regexp match */
-            Delete_url_by_regexp: string;
+            readonly Delete_url_by_regexp: string;
             /** @default *Report can contain up to 1000 records */
-            Report_limit_warning: string;
+            readonly Report_limit_warning: string;
             /** @default results are stored for 180 days */
-            Watcher_store_180_days: string;
+            readonly Watcher_store_180_days: string;
             /** @default Select tracking method */
-            Watcher_selector_title: string;
+            readonly Watcher_selector_title: string;
             /** @default Regular expression */
-            Watcher_regexpr: string;
+            readonly Watcher_regexpr: string;
             /** @default CSV archive */
-            Download_archive_csv: string;
+            readonly Download_archive_csv: string;
             /** @default PDF archive */
-            Download_archive_pdf: string;
+            readonly Download_archive_pdf: string;
             /** @default List of URLs */
-            List_of_urls: string;
+            readonly List_of_urls: string;
             /** @default Sitemap.xml path */
-            Sitemap_xml_url: string;
+            readonly Sitemap_xml_url: string;
             /** @default Sitemap */
-            Sitemap_mail_sitemap: string;
+            readonly Sitemap_mail_sitemap: string;
             /** @default Website audit */
-            Sitemap_mail_audit: string;
+            readonly Sitemap_mail_audit: string;
             /** @default Index checker */
-            Sitemap_mail_indexing: string;
+            readonly Sitemap_mail_indexing: string;
             /** @default Website watcher */
-            Sitemap_mail_watcher: string;
+            readonly Sitemap_mail_watcher: string;
             /** @default Retrieve from file */
-            Retrieve_from_file: string;
+            readonly Retrieve_from_file: string;
             /** @default Delete Website Watcher data  */
-            Watcher_delete_title: string;
+            readonly Watcher_delete_title: string;
             /** @default Website Watcher report dated */
-            Watcher_delete_info1: string;
+            readonly Watcher_delete_info1: string;
             /** @default will be deleted. You cannot undo this action. */
-            Watcher_delete_info2: string;
+            readonly Watcher_delete_info2: string;
             /** @default Skip code */
-            Watcher_ignore_options: string;
+            readonly Watcher_ignore_options: string;
             /** @default HTML code */
-            Watcher_ignore_html: string;
+            readonly Watcher_ignore_html: string;
             /** @default javascript code */
-            Watcher_ignore_js: string;
+            readonly Watcher_ignore_js: string;
             /** @default do not skip */
-            Watcher_ignore_nothing: string;
+            readonly Watcher_ignore_nothing: string;
             /** @default Track changes */
-            Watcher_track_button: string;
+            readonly Watcher_track_button: string;
             /** @default Track changes */
-            Watcher_track_changes: string;
+            readonly Watcher_track_changes: string;
             /** @default Tracking changes of */
-            Watcher_tracking: string;
+            readonly Watcher_tracking: string;
             /** @default Max redirects */
-            Watcher_max_redirects_count: string;
+            readonly Watcher_max_redirects_count: string;
             /** @default Website Watcher already running */
-            Watcher_already_started_error: string;
+            readonly Watcher_already_started_error: string;
             /** @default Index Checker already running */
-            Indexing_already_started_error: string;
+            readonly Indexing_already_started_error: string;
             /** @default Link to XML does not match project host */
-            Sitemap_XML_link_not_match_host_error: string;
+            readonly Sitemap_XML_link_not_match_host_error: string;
             /** @default Required URLs column missing */
-            Sitemap_required_columns_missing: string;
+            readonly Sitemap_required_columns_missing: string;
             /** @default Are you sure you want to delete all URLs? */
-            Delete_sitemap: string;
+            readonly Delete_sitemap: string;
             /** @default This URL already exists */
-            URL_exists: string;
+            readonly URL_exists: string;
             /** @default Are you sure you want to delete the selected URL? */
-            Remove_URL: string;
+            readonly Remove_URL: string;
             /** @default Enter a list of URLs (one per line), e.g: */
-            Enter_URL_one_per_line: string;
+            readonly Enter_URL_one_per_line: string;
             /** @default Content tracking */
-            Content_tracking: string;
+            readonly Content_tracking: string;
             /** @default Add tags to website code or use regular expressions to track changes */
-            Add_tags_use_regexp_notice: string;
+            readonly Add_tags_use_regexp_notice: string;
             /** @default Use cookie */
-            Use_cookie: string;
+            readonly Use_cookie: string;
             /** @default Scan images */
-            Scan_images: string;
+            readonly Scan_images: string;
             /** @default Scan JS */
-            Scan_js: string;
+            readonly Scan_js: string;
             /** @default Scan CSS */
-            Scan_css: string;
+            readonly Scan_css: string;
             /** @default Scan links */
-            Scan_links: string;
+            readonly Scan_links: string;
             /** @default Indexed pages without snippet */
-            Indexed_pages_with_no_snippet: string;
+            readonly Indexed_pages_with_no_snippet: string;
             /** @default {
              *       "audit_user_agent": "User Agent can affect how the bot sees the site and how DDoS protection works.",
              *       "audit_page_delay": "How often crawler can open site URLs. If the delay is small, audit will end faster, but the site can go down due to high load. The bigger is the delay, the longer the check will go.<br><br>The delay can increase, if you check Core Web Vitals. For CWV JS is executed, and you need wait for the full rendering of every URL, that takes at least 20 s.",
@@ -329,52 +329,52 @@ export interface components {
              *       "audit_scan_links": "",
              *       "server_location": "Change server location to access blocked websites."
              *     } */
-            Hints_settings: (string | number)[];
+            readonly Hints_settings: (string | number)[];
             /** @default Servers location */
-            Server_location: string;
+            readonly Server_location: string;
             /** @default {
              *       "WESTERN_EUROPE": "Western Europe",
              *       "EASTERN_EUROPE": "Eastern Europe"
              *     } */
-            Servers_locations: (string | number)[];
+            readonly Servers_locations: (string | number)[];
             /** @default Delay between URL requests (s) */
-            Page_delay: string;
+            readonly Page_delay: string;
             /** @default Delay between resources requests (s) */
-            Resource_delay: string;
+            readonly Resource_delay: string;
             /** @default Get free PageSpeed Insights API-key */
-            API_key_1: string;
+            readonly API_key_1: string;
             /** @default and paste it in the input field */
-            API_key_2: string;
+            readonly API_key_2: string;
             /** @default Redirect chain */
-            Redirect_chain: string;
+            readonly Redirect_chain: string;
             /** @default Search URL */
-            Search_URL: string;
+            readonly Search_URL: string;
             /** @default Crawl website */
-            Auto_collect: string;
+            readonly Auto_collect: string;
             /** @default Add manually */
-            Add_by_hand: string;
+            readonly Add_by_hand: string;
             /** @default Choose website size */
-            Select_site_size: string;
+            readonly Select_site_size: string;
             /** @default Choose website size */
-            Please_select_site_size: string;
+            readonly Please_select_site_size: string;
             /** @default Maximum of pages for audit */
-            Master_urls_auto_title: string;
+            readonly Master_urls_auto_title: string;
             /** @default We'll check only the pages found during crawling. First you'll be charged the price for the maximum number of pages, but there can be less pages on the website. We'll refund the amount for the number of pages that hadn't been checked back on your balance. */
-            Master_urls_auto_alert: string;
+            readonly Master_urls_auto_alert: string;
             /** @default To perform audit you need to add URLs manually or enable website crawling, go to  */
-            Audit_go_alert_need_config: string;
+            readonly Audit_go_alert_need_config: string;
             /** @default URLs for audit are added manually. To change the way of adding pages, go to */
-            Audit_go_alert_by_hand: string;
+            readonly Audit_go_alert_by_hand: string;
             /** @default We'll check */
-            Audit_go_alert_auto_collect_1: string;
+            readonly Audit_go_alert_auto_collect_1: string;
             /** @default URLs for audit are crawled automatically. To change the maximum number of pages for audit or add them manually, go to */
-            Audit_go_alert_auto_collect_2: string;
+            readonly Audit_go_alert_auto_collect_2: string;
             /** @default Funds reservation for audit with automatic website crawling, project */
-            Audit_bank_autocrawl_info: string;
+            readonly Audit_bank_autocrawl_info: string;
             /** @default Reservation refund */
-            Audit_bank_autocrawl_unhold_info: string;
+            readonly Audit_bank_autocrawl_unhold_info: string;
             /** @default Delete URL */
-            Delete_url: string;
+            readonly Delete_url: string;
         };
     };
     responses: never;

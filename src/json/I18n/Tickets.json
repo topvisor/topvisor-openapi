@@ -12,210 +12,262 @@
                 "properties": {
                     "Reply_Title": {
                         "default": "Ticket reply",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Reply_notice": {
                         "default": "When replying to the ticket, please do not change the topic",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Auto_message_title": {
                         "default": "Thank you, your ticket has been submitted",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Open_tickets": {
                         "default": "Open",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Closed_tickets": {
                         "default": "Closed",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Close_ticket": {
                         "default": "Close ticket",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Open_ticket": {
                         "default": "Open ticket",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Add_to_favorites": {
                         "default": "Add to favorites",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Remove_from_favorites": {
                         "default": "Remove from favorites",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Continue_in_new_ticket": {
                         "default": "Continue in new ticket",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Quote_message": {
                         "default": "Quote message",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Edit_message": {
                         "default": "Edit message",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Delete_message": {
                         "default": "Delete message",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "User_info": {
                         "default": "User info",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Device": {
                         "default": "Device",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Browser": {
                         "default": "Browser",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Pricing_plan": {
                         "default": "Pricing plan",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Edit_template": {
                         "default": "Edit template",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Template_title": {
                         "default": "Title",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Add_msg": {
                         "default": "Write a message",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Delete_template": {
                         "default": "Delete template",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Found": {
                         "default": "Results",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Search_tickets": {
                         "default": "Search tickets",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "New_ticket": {
                         "default": "Create ticket",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Reopen_ticket": {
                         "default": "Reopen ticket",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Text_welcome_1": {
                         "default": "Select a ticket or",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Text_welcome_2": {
                         "default": "create a new one",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Text_welcome_3": {
                         "default": "to contact Customer Support",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Text_new_ticket_1": {
                         "default": "Please describe the problem or ask a question",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Text_new_ticket_2": {
                         "default": "We will get back to you shortly 💙",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Ticket_source_page": {
                         "default": "Ticket source page",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Sound_mute": {
                         "default": "Mute",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Sound_pencil": {
                         "default": "Pencil",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Sound_magic_wand": {
                         "default": "Magic wand",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Sound_bounce": {
                         "default": "Bounce",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Sound_beep": {
                         "default": "Beep",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Sound_xylophone": {
                         "default": "Xylophone",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Sound_drums": {
                         "default": "Drums",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Average_expenses": {
                         "default": "Average expenses",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Bad": {
                         "default": "Bad",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Normal": {
                         "default": "OK",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Good": {
                         "default": "Great!",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Title_start": {
                         "default": "Rate how the Support did their part",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Title_finish": {
                         "default": "Thanks for the feedback!",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Text_start": {
                         "default": "It'll help us to get better.",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Text_good": {
                         "default": "We'll keep it up.",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Text_bad": {
                         "default": "We'll improve our service.",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Comment_title_good": {
                         "default": "What did you particularly enjoy?",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Comment_title_bad": {
                         "default": "Tell us what was wrong — we'll do everything to get better!",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Button_change_review": {
                         "default": "Change the feedback",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Online": {
                         "default": "Online",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Visited": {
                         "default": "Last seen",
+                        "readOnly": true,
                         "type": "string"
                     }
                 },

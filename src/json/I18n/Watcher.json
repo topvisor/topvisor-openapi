@@ -12,6 +12,7 @@
                 "properties": {
                     "Settings": {
                         "default": "Watcher settings",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "menu": {
@@ -22,6 +23,7 @@
                             "h1": "H1 Header",
                             "content": "Content"
                         },
+                        "readOnly": true,
                         "type": "array",
                         "items": {
                             "oneOf": [
@@ -36,46 +38,57 @@
                     },
                     "Status_code": {
                         "default": "Status",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Without_changes": {
                         "default": "Without changes",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Fulltext": {
                         "default": "Full text",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Only_with_changed": {
                         "default": "With changes",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Header_start_short": {
                         "default": "Track",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Common_settings": {
                         "default": "Common settings",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Tracking": {
                         "default": "Tracking",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Cut_script": {
                         "default": "Cut &lt;script&gt;",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Scan_method": {
                         "default": "Scan method",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Strip_tags": {
                         "default": "Text only / Cut tags",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Change_history": {
                         "default": "Change history: ",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Hints_settings": {
@@ -95,6 +108,7 @@
                             },
                             "watcher_strip_tags_from_result": ""
                         },
+                        "readOnly": true,
                         "type": "array",
                         "items": {
                             "oneOf": [
@@ -109,18 +123,22 @@
                     },
                     "Hint_not_urls_text": {
                         "default": "Add URLs to launch Watcher.<br>📡 <a href=\"/watcher/\" target=\"_blank\">How Website Watcher can help you →</a>",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Hint_not_urls_btn": {
                         "default": "URLs",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Hint_not_checks_text": {
                         "default": "You've never launched Watcher in this project.<br>📡 <a href=\"/watcher/\" target=\"_blank\">How Website Watcher can help you →</a>",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Hint_not_checks_btn": {
                         "default": "Launch Watcher",
+                        "readOnly": true,
                         "type": "string"
                     }
                 },

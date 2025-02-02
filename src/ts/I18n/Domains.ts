@@ -9,272 +9,272 @@ export interface components {
     schemas: {
         "I18n.Domains": {
             /** @default Domain registrar */
-            Domain_registrar: string;
+            readonly Domain_registrar: string;
             /** @default Enter the domain name */
-            Enter_domain_name: string;
+            readonly Enter_domain_name: string;
             /** @default Search */
-            Pick_up: string;
+            readonly Pick_up: string;
             /** @default Total */
-            Total: string;
+            readonly Total: string;
             /** @default No domains added */
-            No_domains_added: string;
+            readonly No_domains_added: string;
             /** @default Domain registration */
-            Domain_registration: string;
+            readonly Domain_registration: string;
             /** @default Select administrator card */
-            Select_admin_card: string;
+            readonly Select_admin_card: string;
             /** @default Domain transfer */
-            Domain_transfer: string;
+            readonly Domain_transfer: string;
             /** @default Select an agreement to transfer domains */
-            Select_agreement_to_transfer_domains: string;
+            readonly Select_agreement_to_transfer_domains: string;
             /** @default Enter an SMS code sent to the previous administrator */
-            Enter_code_from_sms_of_previous_admin: string;
+            readonly Enter_code_from_sms_of_previous_admin: string;
             /** @default My domains */
-            My_domains: string;
+            readonly My_domains: string;
             /** @default Whois lookup */
-            Whois_tool: string;
+            readonly Whois_tool: string;
             /** @default Export */
-            Export: string;
+            readonly Export: string;
             /** @default Renew */
-            Renew: string;
+            readonly Renew: string;
             /** @default Custom list of DNS servers */
-            Custom_list_of_DNS_servers: string;
+            readonly Custom_list_of_DNS_servers: string;
             /** @default Do not add DNS servers */
-            Do_not_add_DNS_servers: string;
+            readonly Do_not_add_DNS_servers: string;
             /** @default DNS settings */
-            DNS_settings: string;
+            readonly DNS_settings: string;
             /** @default Add DNS server */
-            Add_DNS_server: string;
+            readonly Add_DNS_server: string;
             /** @default Save changes */
-            Save_changes: string;
+            readonly Save_changes: string;
             /** @default Administrator */
-            Administrator: string;
+            readonly Administrator: string;
             /** @default Manage domain */
-            Manage_domain: string;
+            readonly Manage_domain: string;
             /** @default Request administrator change */
-            Request_administrator_change: string;
+            readonly Request_administrator_change: string;
             /** @default Transfer to another registrar */
-            Transfer_to_another_registrar: string;
+            readonly Transfer_to_another_registrar: string;
             /** @default Enter Auth-code and start domain transfer */
-            Enter_authcode_and_transfer: string;
+            readonly Enter_authcode_and_transfer: string;
             /** @default Enter code */
-            Enter_code: string;
+            readonly Enter_code: string;
             /** @default Start transfer */
-            Start_transfer: string;
+            readonly Start_transfer: string;
             /** @default Transfer request: transfer domains to another registrar? */
-            Transfer_request_confirm: string;
+            readonly Transfer_request_confirm: string;
             /** @default Transfer */
-            Transfer: string;
+            readonly Transfer: string;
             /** @default Request for a domain name transfer to another registrar */
-            Request_domain_transfer_out: string;
+            readonly Request_domain_transfer_out: string;
             /** @default Type */
-            DNS_type: string;
+            readonly DNS_type: string;
             /** @default Name */
-            DNS_name: string;
+            readonly DNS_name: string;
             /** @default Value */
-            DNS_value: string;
+            readonly DNS_value: string;
             /** @default Priority */
-            DNS_priority: string;
+            readonly DNS_priority: string;
             /** @default Relative weight */
-            DNS_relative_weight: string;
+            readonly DNS_relative_weight: string;
             /** @default Service port */
-            DNS_service_port: string;
+            readonly DNS_service_port: string;
             /** @default DNS record */
-            DNS_record: string;
+            readonly DNS_record: string;
             /** @default Save DNS record */
-            Save_DNS_record: string;
+            readonly Save_DNS_record: string;
             /** @default Add DNS record */
-            Add_DNS_record: string;
+            readonly Add_DNS_record: string;
             /** @default Payment for generating Auth-Info code for domain */
-            Payment_for_authcode_providing: string;
+            readonly Payment_for_authcode_providing: string;
             /** @default Auth-Info code for domain transfer */
-            Authinfo_code_for_domain_transfer: string;
+            readonly Authinfo_code_for_domain_transfer: string;
             /** @default Confirm transfer */
-            Confirm_transfer: string;
+            readonly Confirm_transfer: string;
             /** @default We've sent a link to confirm domain transfer to */
-            Transfer_confirmation_link_sent_to_email: string;
+            readonly Transfer_confirmation_link_sent_to_email: string;
             /** @default We'll email you the Auth-Info code shortly */
-            Authinfo_will_be_emailed_soon: string;
+            readonly Authinfo_will_be_emailed_soon: string;
             /** @default We'll send you an SMS with Auth-Info code shortly */
-            Authinfo_will_be_sent_to_phone_soon: string;
+            readonly Authinfo_will_be_sent_to_phone_soon: string;
             /** @default your domain */
-            your_domain: string;
+            readonly your_domain: string;
             /** @default your domains */
-            your_domains: string;
+            readonly your_domains: string;
             /** @default You need to renew domains */
-            You_need_to_renew_domains: string;
+            readonly You_need_to_renew_domains: string;
             /** @default You need to renew domain */
-            You_need_to_renew_domain: string;
+            readonly You_need_to_renew_domain: string;
             /** @default Registration expired */
-            Registration_expired: string;
+            readonly Registration_expired: string;
             /** @default renew before */
-            renew_before: string;
+            readonly renew_before: string;
             /** @default Admin change status */
-            Admin_change_status: string;
+            readonly Admin_change_status: string;
             /** @default We sent a code to your phone number. A message with a confirmation link is sent to a new admin email */
-            Link_and_code_sent_to_confirm_admin_change: string;
+            readonly Link_and_code_sent_to_confirm_admin_change: string;
             /** @default Domain not available to purchase */
-            Domain_not_available_to_purchase: string;
+            readonly Domain_not_available_to_purchase: string;
             /** @default Transaction to accept domain not found */
-            Transaction_to_accept_domain_not_found: string;
+            readonly Transaction_to_accept_domain_not_found: string;
             /** @default Domain(s) auto-renew failed */
-            Domain_autorenew_failed: string;
+            readonly Domain_autorenew_failed: string;
             /** @default Invalid message to administrator */
-            Invalid_message_to_administrator: string;
+            readonly Invalid_message_to_administrator: string;
             /** @default Message failed to send */
-            Message_failed_to_send: string;
+            readonly Message_failed_to_send: string;
             /** @default Try in an hour */
-            Try_in_an_hour: string;
+            readonly Try_in_an_hour: string;
             /** @default Messages for the domain administrator */
-            Messages_for_domain_administrator: string;
+            readonly Messages_for_domain_administrator: string;
             /** @default Sender_details */
-            Sender_details: string;
+            readonly Sender_details: string;
             /** @default Application for a domain transfer by registered mail */
-            Domain_transfer_application_by_registered_mail: string;
+            readonly Domain_transfer_application_by_registered_mail: string;
             /** @default Domain to transfer */
-            Domain_to_transfer: string;
+            readonly Domain_to_transfer: string;
             /** @default Application form from an individual or individual entrepreneur for domain transfer to another registrar */
-            Domain_transfer_application_form_for_individual_and_SP: string;
+            readonly Domain_transfer_application_form_for_individual_and_SP: string;
             /** @default Application form from a legal entity for domain transfer to another registrar */
-            Domain_transfer_application_form_for_legal_entity: string;
+            readonly Domain_transfer_application_form_for_legal_entity: string;
             /** @default Auto-renew settings */
-            Autorenew_settings: string;
+            readonly Autorenew_settings: string;
             /** @default Turn off domain auto-renew */
-            Turn_off_domain_autorenew: string;
+            readonly Turn_off_domain_autorenew: string;
             /** @default Turn on auto-renew */
-            Turn_on_domain_autorenew: string;
+            readonly Turn_on_domain_autorenew: string;
             /** @default Select auto-renew payment option */
-            Select_autorenew_payment_option: string;
+            readonly Select_autorenew_payment_option: string;
             /** @default We will charge you $1 to link your card. The charge will be immediately removed and returned to your card */
-            We_charge_one_usd_to_link_card_notice: string;
+            readonly We_charge_one_usd_to_link_card_notice: string;
             /** @default Auto-renew status */
-            Autorenew_status: string;
+            readonly Autorenew_status: string;
             /** @default Select another method of payment or contact support */
-            Select_another_payment_method_or_contact_support: string;
+            readonly Select_another_payment_method_or_contact_support: string;
             /** @default Auto-renew for a domain name */
-            Autorenew_for_domain: string;
+            readonly Autorenew_for_domain: string;
             /** @default successfully enabled */
-            successfully_enabled: string;
+            readonly successfully_enabled: string;
             /** @default failed to enable */
-            failed_to_enable: string;
+            readonly failed_to_enable: string;
             /** @default Change domain administrator */
-            Change_domain_administrator: string;
+            readonly Change_domain_administrator: string;
             /** @default Change administrator */
-            Change_administrator: string;
+            readonly Change_administrator: string;
             /** @default turn on */
-            turn_on: string;
+            readonly turn_on: string;
             /** @default Domains to accept */
-            Domains_to_accept: string;
+            readonly Domains_to_accept: string;
             /** @default Administrator change is paid by the previous administrator */
-            Admin_change_paid_by_previous_admin: string;
+            readonly Admin_change_paid_by_previous_admin: string;
             /** @default Control code */
-            Control_code: string;
+            readonly Control_code: string;
             /** @default Accept domain */
-            Accept_domain: string;
+            readonly Accept_domain: string;
             /** @default By accepting domain you accept terms and conditions of */
-            By_accepting_domain_you_accept: string;
+            readonly By_accepting_domain_you_accept: string;
             /** @default Agreement (public offer) */
-            of_agreement: string;
+            readonly of_agreement: string;
             /** @default Select how you want to get the Auth-Info code */
-            Select_authinfo_code_delivery_option: string;
+            readonly Select_authinfo_code_delivery_option: string;
             /** @default To Email */
-            To_email: string;
+            readonly To_email: string;
             /** @default free */
-            free: string;
+            readonly free: string;
             /** @default paid */
-            paid: string;
+            readonly paid: string;
             /** @default to phone number */
-            to_phone_number: string;
+            readonly to_phone_number: string;
             /** @default By registered mail */
-            By_registered_mail: string;
+            readonly By_registered_mail: string;
             /** @default Get Auth-Info code */
-            Get_authinfo_code: string;
+            readonly Get_authinfo_code: string;
             /** @default Get permission to transfer administration rights */
-            Get_permission_to_transfer_administration_rights: string;
+            readonly Get_permission_to_transfer_administration_rights: string;
             /** @default Application form from an individual for a paperless transfer of administration rights */
-            Paperless_transfer_admin_rights_application_form_for_individual: string;
+            readonly Paperless_transfer_admin_rights_application_form_for_individual: string;
             /** @default Application form from a legal entity for a paperless transfer of administration rights */
-            Paperless_transfer_admin_rights_application_form_for_legal_entity: string;
+            readonly Paperless_transfer_admin_rights_application_form_for_legal_entity: string;
             /** @default Domains to transfer to a new administrator */
-            Domains_to_transfer_to_new_admin: string;
+            readonly Domains_to_transfer_to_new_admin: string;
             /** @default New administrator email */
-            New_administrator_email: string;
+            readonly New_administrator_email: string;
             /** @default The administrator change will be paid by */
-            Select_payer_for_admin_change: string;
+            readonly Select_payer_for_admin_change: string;
             /** @default New administrator */
-            New_administrator: string;
+            readonly New_administrator: string;
             /** @default Me (current administrator) */
-            Me_current_administrator: string;
+            readonly Me_current_administrator: string;
             /** @default Transfer rights to the domain to a new administrator */
-            Transfer_rights_to_domain_to_new_admin: string;
+            readonly Transfer_rights_to_domain_to_new_admin: string;
             /** @default This email address will be added as a contact email for the domain names. We will email you a message with
              *     	a link to enter a control code. We will send an SMS with a control code to a phone number <i class="phone"></i>. Give this code to a new administrator. The
              *     	administrator change can be payed by a current or a new administrator. The administrator change costs 199 rubles. */
-            Change_admin_by_sms_instruction: string;
+            readonly Change_admin_by_sms_instruction: string;
             /** @default Choose a .ru or .рф domain name */
-            Choose_domain_name: string;
+            readonly Choose_domain_name: string;
             /** @default Register */
-            Register: string;
+            readonly Register: string;
             /** @default Please make sure the administrator details you entered are correct */
-            Verify_admin_details: string;
+            readonly Verify_admin_details: string;
             /** @default Add administrator details */
-            Add_admin_details: string;
+            readonly Add_admin_details: string;
             /** @default Enter domains one by one or */
-            Enter_domains_one_by_one_or: string;
+            readonly Enter_domains_one_by_one_or: string;
             /** @default Enter domain */
-            Enter_domain: string;
+            readonly Enter_domain: string;
             /** @default Enter authInfo code */
-            Enter_authInfo_code: string;
+            readonly Enter_authInfo_code: string;
             /** @default upload from file */
-            upload_from_file: string;
+            readonly upload_from_file: string;
             /** @default Please make sure that the administrator personal details match
              *     	 administrator details in previous registrar account. If the details do not match, the domain name can be removed. */
-            Make_sure_new_and_old_admin_details_match: string;
+            readonly Make_sure_new_and_old_admin_details_match: string;
             /** @default Domains to transfer and renew: <i class="count">0 domains</i> */
-            Domains_to_transfer_and_renew: string;
+            readonly Domains_to_transfer_and_renew: string;
             /** @default Transfer in progress */
-            Transfer_in_process: string;
+            readonly Transfer_in_process: string;
             /** @default In progress */
-            In_process: string;
+            readonly In_process: string;
             /** @default Transfer to us */
-            Transfer_to_us: string;
+            readonly Transfer_to_us: string;
             /** @default Transcation finished and will be removed automatically */
-            Transaction_finished_will_be_removed: string;
+            readonly Transaction_finished_will_be_removed: string;
             /** @default Prepayment */
-            Prepayment: string;
+            readonly Prepayment: string;
             /** @default Request to transfer domain to another Registrar */
-            Request_to_transfer_domain_to_another_registrar: string;
+            readonly Request_to_transfer_domain_to_another_registrar: string;
             /** @default Notification about completed registrar operations */
-            Notification_about_completed_registrar_operations: string;
+            readonly Notification_about_completed_registrar_operations: string;
             /** @default The number of transferred domains does not match the number of submitted authInfo codes */
-            Transferred_domains_number_not_match_authinfo_code_number: string;
+            readonly Transferred_domains_number_not_match_authinfo_code_number: string;
             /** @default Transfer request already added */
-            Transfer_request_already_added: string;
+            readonly Transfer_request_already_added: string;
             /** @default Domain administrator not found */
-            Domain_admin_not_found: string;
+            readonly Domain_admin_not_found: string;
             /** @default Transfer is not available. Please, try later. */
-            Transfer_not_available_try_later: string;
+            readonly Transfer_not_available_try_later: string;
             /** @default Invalid authInfo code or domain. */
-            Invalid_authinfo_or_domain: string;
+            readonly Invalid_authinfo_or_domain: string;
             /** @default Personal details of administrators do not match */
-            Admin_details_not_match: string;
+            readonly Admin_details_not_match: string;
             /** @default Error in admin card occurred. Contact support. */
-            Error_in_admin_card_contact_support: string;
+            readonly Error_in_admin_card_contact_support: string;
             /** @default CNS Settings */
-            CNS_Settings: string;
+            readonly CNS_Settings: string;
             /** @default Add CNS server */
-            Add_CNS_server: string;
+            readonly Add_CNS_server: string;
             /** @default Contact support */
-            Contact_support: string;
+            readonly Contact_support: string;
             /** @default Get confirmation code */
-            Get_confirmation_code: string;
+            readonly Get_confirmation_code: string;
             /** @default Trasnfer to another registrar, the code has been to sent to your email */
-            Transfer_to_another_registrar_code_sent_to_email: string;
+            readonly Transfer_to_another_registrar_code_sent_to_email: string;
             /** @default Resend */
-            Resend: string;
+            readonly Resend: string;
             /** @default Domain renewal not needed. Refresh page. */
-            Domain_renewal_not_needed_refresh_page: string;
+            readonly Domain_renewal_not_needed_refresh_page: string;
             /** @default Transfer is available for the second-level domains only */
-            Transfer_is_available_for_2nd_lvl_domains: string;
+            readonly Transfer_is_available_for_2nd_lvl_domains: string;
         };
     };
     responses: never;

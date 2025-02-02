@@ -14,26 +14,31 @@
                         "title": "Ключ домена",
                         "description": "Используется в путях файлов и в БД",
                         "default": "No set",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "ID_ASSETS": {
                         "title": "Аббревиатура ключа домена",
                         "description": "Используется в путях публичных ресурсов, например для файлов на CDN",
                         "default": "No set",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "HOST": {
                         "title": "Основной хост",
                         "default": "No set",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "HOST_DEV": {
                         "title": "Основной хост для разработки",
                         "default": "No set",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "LANGUAGES": {
                         "title": "Список поддерживаемых языков, ISO 639-1",
+                        "readOnly": true,
                         "type": "array",
                         "items": {
                             "oneOf": [
@@ -49,11 +54,13 @@
                     "LANGUAGE_MAIN": {
                         "title": "Оснвоной язык, ISO 639-1",
                         "default": "No set",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "LANGUAGES_ADDITIONAL": {
                         "title": "Список дополнительных языков, ISO 639-1",
                         "description": "При генерации url дополнительный язык добавляется в начало url в модуле контента\n\nАналогично `self::LANGUAGES`, без `self::LANGUAGE_MAIN`",
+                        "readOnly": true,
                         "type": "array",
                         "items": {
                             "oneOf": [
@@ -71,6 +78,7 @@
                         "default": [
                             "No set"
                         ],
+                        "readOnly": true,
                         "type": "array",
                         "items": {
                             "oneOf": [
@@ -86,6 +94,7 @@
                     "SUBDOMAINS": {
                         "title": "Список поддоменов",
                         "description": "Примеры:\n- `''` для основного домена `example.com`\n- `'subdomain'` для поддомена `subdomain.example.com`",
+                        "readOnly": true,
                         "type": "array",
                         "items": {
                             "oneOf": [
@@ -100,6 +109,7 @@
                     },
                     "THEMES": {
                         "title": "Список поддерживаемых тем оформления",
+                        "readOnly": true,
                         "type": "array",
                         "items": {
                             "oneOf": [
@@ -116,27 +126,32 @@
                         "title": "Почта рассыльщика",
                         "description": "Она же используется в тикетнице",
                         "default": "No set",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "MAILING_ALT_EMAIL": {
                         "title": "Альтернативная почта рассыльщика",
                         "description": "Используется, если нужно отправлять почту от имени другого домена\n\nДанная почта должна быть настроена на пересылку всех писем на MAILING_EMAIL",
                         "default": "No set",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "SUPPORT_EMAIL": {
                         "title": "Почта поддержки, обычно alias MAILING_EMAIL",
                         "default": "No set",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "NO_REPLY_EMAIL": {
                         "title": "Почта рассыльщика, без приема ответов",
                         "default": "No set",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "CLOSED_BY_MOD": {
                         "title": "Словарь модулей, доступ к которым надо закрыть",
                         "description": "Формат ключа: `{{ page param 1 }}`, `{{ page param 1 }}/{{ page param 2 }}`\n\nЗначение: всегда true, значение игнорируется\n\n@see Controller_2\\Objects\\Page::params",
+                        "readOnly": true,
                         "type": "array",
                         "items": {
                             "oneOf": [
@@ -151,30 +166,36 @@
                     },
                     "INN": {
                         "default": "No set",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "COUNTER_YANDEX": {
                         "title": "Счетчик Яндекс метрики",
                         "default": "No set",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "COUNTER_YANDEX_JOURNAL": {
                         "title": "Счетчик Яндекс метрики для модуля Журнал",
                         "default": "No set",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "COUNTER_GOOGLE": {
                         "title": "Счетчик Google Аналитики",
                         "default": "No set",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "COUNTER_GOOGLE_JOURNAL": {
                         "title": "Счетчик Google Аналитики для модуля Журнал",
                         "default": "No set",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "DIADOC_ID": {
                         "default": 10000,
+                        "readOnly": true,
                         "type": "integer"
                     }
                 },

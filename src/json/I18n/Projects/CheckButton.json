@@ -12,34 +12,42 @@
                 "properties": {
                     "Check_positions": {
                         "default": "Check Rankings",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Check_audit": {
                         "default": "Run Audit",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Check_watcher": {
                         "default": "Track changes",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Check_indexing": {
                         "default": "Check indexing",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Check_sitemap": {
                         "default": "Generate sitemap",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Last_check": {
                         "default": "Last check",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "In_queue": {
                         "default": "In queue",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "In_work": {
                         "default": "In progress",
+                        "readOnly": true,
                         "type": "string"
                     }
                 },

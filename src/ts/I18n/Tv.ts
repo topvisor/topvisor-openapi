@@ -9,7 +9,7 @@ export interface components {
     schemas: {
         "I18n.Tv": {
             /** @default ТV */
-            TV: string;
+            readonly TV: string;
         };
     };
     responses: never;

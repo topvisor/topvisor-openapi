@@ -9,322 +9,322 @@ export interface components {
     schemas: {
         "I18n.Competitors": {
             /** @default Competitor research */
-            Competitor_analysis: string;
+            readonly Competitor_analysis: string;
             /** @default Powerful tool for comprehensive competitve reserach */
-            Powerful_tool_for_competitve_analysis: string;
+            readonly Powerful_tool_for_competitve_analysis: string;
             /** @default Total search results count */
-            Results_on_serp: string;
+            readonly Results_on_serp: string;
             /** @default Keywords */
-            Keywords: string;
+            readonly Keywords: string;
             /** @default Keyword */
-            Keyword: string;
+            readonly Keyword: string;
             /** @default Traffic */
-            Traffic: string;
+            readonly Traffic: string;
             /** @default Common */
-            Common: string;
+            readonly Common: string;
             /** @default Unique */
-            Unique: string;
+            readonly Unique: string;
             /** @default Chart */
-            Chart: string;
+            readonly Chart: string;
             /** @default Summary */
-            Summary: string;
+            readonly Summary: string;
             /** @default Summary data */
-            Summary_data: string;
+            readonly Summary_data: string;
             /** @default Create report */
-            Get_report: string;
+            readonly Get_report: string;
             /** @default Expand */
-            Expand: string;
+            readonly Expand: string;
             /** @default Expand report */
-            Expand_report: string;
+            readonly Expand_report: string;
             /** @default Domain or URL */
-            Domain_or_URL: string;
+            readonly Domain_or_URL: string;
             /** @default Enter domain or URL */
-            Enter_domain_or_URL: string;
+            readonly Enter_domain_or_URL: string;
             /** @default Enter keyword */
-            Enter_keyword: string;
+            readonly Enter_keyword: string;
             /** @default Create report */
-            Create_report: string;
+            readonly Create_report: string;
             /** @default Report created */
-            Report_created: string;
+            readonly Report_created: string;
             /** @default Structure */
-            Structure: string;
+            readonly Structure: string;
             /** @default Search results */
-            Search_results: string;
+            readonly Search_results: string;
             /** @default Related keywords */
-            Related_keywords: string;
+            readonly Related_keywords: string;
             /** @default Word forms */
-            Word_forms: string;
+            readonly Word_forms: string;
             /** @default Organic results */
-            Organic_results: string;
+            readonly Organic_results: string;
             /** @default organic */
-            organic_results: string;
+            readonly organic_results: string;
             /** @default Ads */
-            Ads: string;
+            readonly Ads: string;
             /** @default ads */
-            ads: string;
+            readonly ads: string;
             /** @default Unique keywords */
-            Unique_keywords: string;
+            readonly Unique_keywords: string;
             /** @default All keywords */
-            All_keywords: string;
+            readonly All_keywords: string;
             /** @default Common keywords */
-            Common_keywords: string;
+            readonly Common_keywords: string;
             /** @default Cost */
-            Cost: string;
+            readonly Cost: string;
             /** @default Volume */
-            Volume: string;
+            readonly Volume: string;
             /** @default Count */
-            Count: string;
+            readonly Count: string;
             /** @default My reports */
-            My_reports: string;
+            readonly My_reports: string;
             /** @default Domain keywords */
-            Domain_keywords: string;
+            readonly Domain_keywords: string;
             /** @default Domain ad texts */
-            Domain_ad_texts: string;
+            readonly Domain_ad_texts: string;
             /** @default Competitors in organic & paid search */
-            Competitors_in_organic_paid_search: string;
+            readonly Competitors_in_organic_paid_search: string;
             /** @default Competitor's keywords */
-            Competitors_keywords: string;
+            readonly Competitors_keywords: string;
             /** @default Competitor's ad texts */
-            Competitors_ad_texts: string;
+            readonly Competitors_ad_texts: string;
             /** @default Basic */
-            Basic_report: string;
+            readonly Basic_report: string;
             /** @default Select a report type */
-            Select_report_type: string;
+            readonly Select_report_type: string;
             /** @default domain and list of competitors */
-            domain_and_competitors_list: string;
+            readonly domain_and_competitors_list: string;
             /** @default purchased */
-            purchased: string;
+            readonly purchased: string;
             /** @default Add competitor keywords */
-            Add_competitor_keywords: string;
+            readonly Add_competitor_keywords: string;
             /** @default multi reports */
-            you_can_purchase_later: string;
+            readonly you_can_purchase_later: string;
             /** @default Keywords (Paid + Organic) */
-            Checklist_keywords_paid_and_organic: string;
+            readonly Checklist_keywords_paid_and_organic: string;
             /** @default Keyword performance indicators */
-            Keyword_performance_indicators: string;
+            readonly Keyword_performance_indicators: string;
             /** @default Snippet and ads */
-            Snippets_and_ads: string;
+            readonly Snippets_and_ads: string;
             /** @default Website URLs in SERP */
-            Website_URLs_visible_in_search: string;
+            readonly Website_URLs_visible_in_search: string;
             /** @default Compare data with competitors */
-            Compare_data_with_competitors: string;
+            readonly Compare_data_with_competitors: string;
             /** @default Competitors group export */
-            Group_export_of_competitors: string;
+            readonly Group_export_of_competitors: string;
             /** @default Keyword cloud */
-            Keyword_cloud: string;
+            readonly Keyword_cloud: string;
             /** @default CPC */
-            CPC: string;
+            readonly CPC: string;
             /** @default Keywords by URL */
-            Keywords_by_URL: string;
+            readonly Keywords_by_URL: string;
             /** @default Competitor research level */
-            Competitor_research_level: string;
+            readonly Competitor_research_level: string;
             /** @default List of competitors and intersection */
-            List_of_competitors_and_intersection: string;
+            readonly List_of_competitors_and_intersection: string;
             /** @default A list of likely competitors will be included in the report without this option.<br><br>
              *     		Add competitor keywords to your report for quick access to keywords and snippets.<br><br>
              *     		The higher is the selected research level, the fewer pools of competitor keywords with a lower intersection level will be in the report.<br><br>
              *     		If you are not sure yet which level to select, you can buy the advanced report later on the <b>Competitors</b> page. */
-            Competitors_level_info: string;
+            readonly Competitors_level_info: string;
             /** @default level purchased */
-            level_purchased: string;
+            readonly level_purchased: string;
             /** @default included */
-            included: string;
+            readonly included: string;
             /** @default in the report */
-            in_the_report: string;
+            readonly in_the_report: string;
             /** @default Total */
-            Total: string;
+            readonly Total: string;
             /** @default List of competitors */
-            Competitors_list: string;
+            readonly Competitors_list: string;
             /** @default List of keywords */
-            Keywords_list: string;
+            readonly Keywords_list: string;
             /** @default Competitors keywords */
-            Keywords_of_competitors: string;
+            readonly Keywords_of_competitors: string;
             /** @default To project */
-            To_project: string;
+            readonly To_project: string;
             /** @default To your project */
-            To_your_project: string;
+            readonly To_your_project: string;
             /** @default Export keywords to the project */
-            Export_keywords_to_project: string;
+            readonly Export_keywords_to_project: string;
             /** @default Export keywords to the project */
-            To_export_keywords_to_project: string;
+            readonly To_export_keywords_to_project: string;
             /** @default Select a project */
-            Select_project: string;
+            readonly Select_project: string;
             /** @default Automated grouping */
-            Automated_grouping: string;
+            readonly Automated_grouping: string;
             /** @default If these keywords already exist in the project */
-            If_these_keywords_already_added: string;
+            readonly If_these_keywords_already_added: string;
             /** @default Total */
-            Keywords_total: string;
+            readonly Keywords_total: string;
             /** @default Common */
-            Keywords_common: string;
+            readonly Keywords_common: string;
             /** @default Unique */
-            Keywords_unique: string;
+            readonly Keywords_unique: string;
             /** @default Intersection */
-            Keywords_intersection: string;
+            readonly Keywords_intersection: string;
             /** @default Volume */
-            Keywords_volume: string;
+            readonly Keywords_volume: string;
             /** @default Impressions */
-            Keywords_impressions: string;
+            readonly Keywords_impressions: string;
             /** @default Average */
-            Keywords_avg_rank: string;
+            readonly Keywords_avg_rank: string;
             /** @default Median */
-            Keywords_median_rank: string;
+            readonly Keywords_median_rank: string;
             /** @default Traffic */
-            Keywords_traffic: string;
+            readonly Keywords_traffic: string;
             /** @default Cost */
-            Keywords_cost: string;
+            readonly Keywords_cost: string;
             /** @default Keywords */
-            Keywords_count: string;
+            readonly Keywords_count: string;
             /** @default Relevance */
-            Keywords_relevance: string;
+            readonly Keywords_relevance: string;
             /** @default Competitor */
-            Competitor: string;
+            readonly Competitor: string;
             /** @default Elements */
-            Elements: string;
+            readonly Elements: string;
             /** @default No elements */
-            No_elements: string;
+            readonly No_elements: string;
             /** @default Object card */
-            Elements_object_card: string;
+            readonly Elements_object_card: string;
             /** @default Featured snippet */
-            Elements_featured_snippet: string;
+            readonly Elements_featured_snippet: string;
             /** @default Goods */
-            Elements_goods: string;
+            readonly Elements_goods: string;
             /** @default Map */
-            Elements_map: string;
+            readonly Elements_map: string;
             /** @default Video */
-            Elements_video: string;
+            readonly Elements_video: string;
             /** @default Images */
-            Elements_images: string;
+            readonly Elements_images: string;
             /** @default News */
-            Elements_news: string;
+            readonly Elements_news: string;
             /** @default Formulas */
-            Elements_calc: string;
+            readonly Elements_calc: string;
             /** @default Knowledge panel */
-            Elements_knowledge_panel: string;
+            readonly Elements_knowledge_panel: string;
             /** @default Dictionary */
-            Elements_dictionary: string;
+            readonly Elements_dictionary: string;
             /** @default Definitions */
-            Elements_definitions: string;
+            readonly Elements_definitions: string;
             /** @default Travel */
-            Elements_travel: string;
+            readonly Elements_travel: string;
             /** @default Calculator */
-            Elements_calculator: string;
+            readonly Elements_calculator: string;
             /** @default Related keywords */
-            Elements_related_searches: string;
+            readonly Elements_related_searches: string;
             /** @default Ad at the page top */
-            Elements_ad_top: string;
+            readonly Elements_ad_top: string;
             /** @default Ad at the page bottom */
-            Elements_ad_bottom: string;
+            readonly Elements_ad_bottom: string;
             /** @default Ad - goods */
-            Elements_ad_goods: string;
+            readonly Elements_ad_goods: string;
             /** @default Recipes */
-            Elements_recipes: string;
+            readonly Elements_recipes: string;
             /** @default Health */
-            Elements_health: string;
+            readonly Elements_health: string;
             /** @default Food, delivery, recipes */
-            Elements_food: string;
+            readonly Elements_food: string;
             /** @default Media */
-            Elements_media: string;
+            readonly Elements_media: string;
             /** @default Yandex services */
-            Elements_yandex_services: string;
+            readonly Elements_yandex_services: string;
             /** @default Charts etc. */
-            Elements_interactive: string;
+            readonly Elements_interactive: string;
             /** @default reversed */
-            reversed: string;
+            readonly reversed: string;
             /** @default Rank from last check */
-            Rank_from_last_check: string;
+            readonly Rank_from_last_check: string;
             /** @default Snippet title */
-            Snippet_title: string;
+            readonly Snippet_title: string;
             /** @default Snippet body */
-            Snippet_body: string;
+            readonly Snippet_body: string;
             /** @default Results */
-            Results_count: string;
+            readonly Results_count: string;
             /** @default Ad type */
-            Ad_type: string;
+            readonly Ad_type: string;
             /** @default Traffic forecast<br>Depends on the number of impressions and a website rank */
-            Traffic_forecast_depends_on_impressions_and_rank: string;
+            readonly Traffic_forecast_depends_on_impressions_and_rank: string;
             /** @default Potential ad cost based on traffic forecast. Сalculated by multiplying Traffic and CPC. */
-            Potential_ad_cost_depends_on_CPC_and_traffic: string;
+            readonly Potential_ad_cost_depends_on_CPC_and_traffic: string;
             /** @default Pages */
-            Pages: string;
+            readonly Pages: string;
             /** @default Results menu */
-            Results_menu: string;
+            readonly Results_menu: string;
             /** @default Topic */
-            Website_topic: string;
+            readonly Website_topic: string;
             /** @default Search URL / Keyword */
-            Search_URL_keyword: string;
+            readonly Search_URL_keyword: string;
             /** @default Expires in */
-            Expires_in: string;
+            readonly Expires_in: string;
             /** @default Keyword search volume */
-            Keyword_search_volume: string;
+            readonly Keyword_search_volume: string;
             /** @default Keyword rank */
-            Keyword_rank: string;
+            readonly Keyword_rank: string;
             /** @default Keywords to export */
-            Keywords_to_export: string;
+            readonly Keywords_to_export: string;
             /** @default Keyword intersection percentage */
-            Intersection_label: string;
+            readonly Intersection_label: string;
             /** @default Relevance of two websites */
-            Relevance_label: string;
+            readonly Relevance_label: string;
             /** @default Set target URLs automatically */
-            Set_target_URLs_automatically: string;
+            readonly Set_target_URLs_automatically: string;
             /** @default Traffic forecast */
-            Traffic_forecast: string;
+            readonly Traffic_forecast: string;
             /** @default Traffic volume */
-            Traffic_volume: string;
+            readonly Traffic_volume: string;
             /** @default No data to display */
-            No_data_to_display: string;
+            readonly No_data_to_display: string;
             /** @default List of leaders */
-            List_of_leaders: string;
+            readonly List_of_leaders: string;
             /** @default Leaders keywords */
-            Leaders_keywords: string;
+            readonly Leaders_keywords: string;
             /** @default Intersection level */
-            Intersection_level: string;
+            readonly Intersection_level: string;
             /** @default Question phrases */
-            Question_phrases: string;
+            readonly Question_phrases: string;
             /** @default Fix word order */
-            Fix_word_order: string;
+            readonly Fix_word_order: string;
             /** @default Exact match */
-            Exact_match: string;
+            readonly Exact_match: string;
             /** @default Leader */
-            Leader: string;
+            readonly Leader: string;
             /** @default Commercial word forms */
-            Commercial_word_forms: string;
+            readonly Commercial_word_forms: string;
             /** @default Keyword has broad thematic database, specify keyword to get a more accurate report */
-            Keyword_has_broad_thematic_database_specify_keyword: string;
+            readonly Keyword_has_broad_thematic_database_specify_keyword: string;
             /** @default Word forms, thematic keywords and <br>list of leaders */
-            Wordforms_thematic_keywords_leaders_list: string;
+            readonly Wordforms_thematic_keywords_leaders_list: string;
             /** @default Seasonal search volume and keyword cost */
-            Search_volume_keyword_cost_seasonality: string;
+            readonly Search_volume_keyword_cost_seasonality: string;
             /** @default Research by word form */
-            Research_by_word_form: string;
+            readonly Research_by_word_form: string;
             /** @default Research by topic */
-            Research_by_thematic: string;
+            readonly Research_by_thematic: string;
             /** @default by topic */
-            by_thematic: string;
+            readonly by_thematic: string;
             /** @default TOP 50 organic results + Ads on topic */
-            Organic_top_50_ads_by_thematics: string;
+            readonly Organic_top_50_ads_by_thematics: string;
             /** @default List of topic leaders */
-            Topic_leaders_list: string;
+            readonly Topic_leaders_list: string;
             /** @default Snippets and ads of topic leaders */
-            Snippets_ads_of_topic_leaders: string;
+            readonly Snippets_ads_of_topic_leaders: string;
             /** @default Bulk export of leader keywords */
-            Bulk_export_of_leaders_keywords: string;
+            readonly Bulk_export_of_leaders_keywords: string;
             /** @default Competitor research */
-            Competitor_research: string;
+            readonly Competitor_research: string;
             /** @default Leader research */
-            Leaders_analysis: string;
+            readonly Leaders_analysis: string;
             /** @default Leaders */
-            Leaders: string;
+            readonly Leaders: string;
             /** @default Word count */
-            Word_count: string;
+            readonly Word_count: string;
             /** @default Length */
-            Length: string;
+            readonly Length: string;
             /** @default Intersection level required */
-            Intersection_level_required: string;
+            readonly Intersection_level_required: string;
             /** @default After purchase, you can download keywords and snippets of this and other competitors with the intersection level %intersection% in one click and compare their data with the main domain on this report. */
-            Download_keywords_snippets_after_purchase: string;
+            readonly Download_keywords_snippets_after_purchase: string;
             /** @default There's no report by such URL or keyword in our database. This means the URL doesn't rank in TOP-50 for high volume keywords or that the keyword has <5 volume in Yandex and Google at the same time.<br><br>To find the competitors that rank for the keywords in your project with My competitors tool, follow <a href="/support/rankings/snapshots/competitors/">this manual.</a> */
-            Results_not_found: string;
+            readonly Results_not_found: string;
         };
     };
     responses: never;

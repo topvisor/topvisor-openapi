@@ -12,133 +12,166 @@
                 "properties": {
                     "Panel_get_command_list": {
                         "default": "Get list of commands",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Panel_enable_notifications": {
                         "default": "Turn on notifications",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Panel_disable_notifications": {
                         "default": "Turn off notifications",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Panel_get_short_link": {
                         "default": "Create short link",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Panel_back": {
                         "default": "Back",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Panel_cancel": {
                         "default": "Cancel",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Panel_main_menu": {
                         "default": "Main menu",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Panel_select_lang": {
                         "default": "Select language",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Panel_eng": {
                         "default": "English",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Panel_rus": {
                         "default": "Russian",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Panel_i_subscribed": {
                         "default": "Already subscribed 😎",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Panel_subscribe": {
                         "default": "Subscribe",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Panel_open_materials": {
                         "default": "Open materials 📚",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Panel_library": {
                         "default": "Open library",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Message_chat_disabled": {
                         "default": "Message not received. To contact Customer Care and read replies, type /start",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Message_available_commands": {
                         "default": "Commands that I understand:",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Message_available_commands_help": {
                         "default": "Get list of commands",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Message_available_commands_start": {
                         "default": "Turn on notifications",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Message_available_commands_stop": {
                         "default": "Turn off notifications",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Message_available_commands_tpvsr": {
                         "default": "Create short link",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Message_start_text1": {
                         "default": "Hi! I can send your questions to Customer Support and get replies.",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Message_start_text2": {
                         "default": "To get a list of commands that I understand, type /help. To contact support, send your question in the chat.",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Message_start_apometer_text": {
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Message_stop_text": {
                         "default": "Notifications have been turned off. I'll stop sending you alerts and Customer Support replies.",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Message_pair_done1": {
                         "default": "Your Telegram already linked to the account",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Message_pair_done2": {
                         "default": "To remove account, type /unpair",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Message_unpair": {
                         "default": "Account removed.",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Message_tpvsr": {
                         "default": "Send me a URL to shorten.",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Message_tpvsr_cancel": {
                         "default": "Type /cancel to step backwards.",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Message_tpvsr_failure": {
                         "default": "Link not shortened",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Message_tpvsr_cancel_done": {
                         "default": "Link shortening canceled.",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Message_join_done1": {
                         "default": "Account",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Message_join_done2": {
                         "default": "successfully linked.",
+                        "readOnly": true,
                         "type": "string"
                     }
                 },

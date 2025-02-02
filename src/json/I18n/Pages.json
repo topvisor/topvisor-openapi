@@ -12,50 +12,62 @@
                 "properties": {
                     "Checking_positions": {
                         "default": "Rank Checking and Rank Tracking",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Collecting_top_sites": {
                         "default": "SERP Top Checker",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Technical_analysis": {
                         "default": "SEO Website Audit",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Tracking_changes": {
                         "default": "Changer Tracker and Meta Tag Exractor",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Semantic_core_research": {
                         "default": "Semantic Core Research",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Volume_checker": {
                         "default": "Volume Checker",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Index_checker": {
                         "default": "Index Checker",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Sitemap_generator": {
                         "default": "Sitemap generator",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Bid_manager": {
                         "default": "Bid Manager",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Updates_scanner": {
                         "default": "Updates Scanner",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Shortener_url": {
                         "default": "URL Shortener",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Clustering_top": {
                         "default": "Clustering by SERP Top",
+                        "readOnly": true,
                         "type": "string"
                     }
                 },

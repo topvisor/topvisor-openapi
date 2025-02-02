@@ -12,38 +12,47 @@
                 "properties": {
                     "Question_is_article_useful": {
                         "default": "Have you found what you were looking for?",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Message_after_good_vote": {
                         "default": "Thanks for the feedback! You can leave a comment below, but it's optional. You may write something nice.",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Message_after_bad_vote": {
                         "default": "Напишите, что вы искали, — мы поможем вам, а также постараемся добавить это в руководство.",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Question_after_good_vote": {
                         "default": "What did you like most?",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Question_after_bad_vote": {
                         "default": "What's been lacking in this guide?",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Message_after_comment_good_vote": {
                         "default": "We'll keep this up!",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Message_after_comment_bad_vote": {
                         "default": "We'll improve our service.",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Submit": {
                         "default": "Leave feedback",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "SendTicket": {
                         "default": "Отправить тикет",
+                        "readOnly": true,
                         "type": "string"
                     }
                 },

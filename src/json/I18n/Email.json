@@ -12,109 +12,136 @@
                 "properties": {
                     "User_registration_confirm": {
                         "default": "Confirm your registration",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "User_accept_email_title": {
                         "default": "Account details",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "user_accept_email_title_suffix_recommendations": {
+                        "readOnly": true,
                         "type": "string"
                     },
                     "User_PWD_msg_title2": {
                         "default": "Password successfully changed",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "User_restore_access": {
                         "default": "Recovering your password",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "User_project_access": {
                         "default": "Access granted",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "User_registration_invite_mail_title": {
                         "default": "Your friend invites you to sign up and get a double welcome bonus! 🤩",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "User_change_confirm": {
                         "default": "Confirm your email",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "User_email_changed_msg": {
                         "default": "Your email has been changed",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "User_projects_rights_title": {
                         "default": "You have received access to the project.",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "User_projects_changeOwner_title": {
                         "default": "Confirm project transfer.",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Integration_expires": {
                         "default": "Update integration key",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Integration_has_expired1": {
                         "default": "Integration",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Integration_has_expired2": {
                         "default": "integration key has expired.",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Integration_access_error": {
                         "default": "integration error",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Project_report": {
                         "default": "Report: Project dynamics.",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Indexing_informer_title": {
                         "default": "Index status: new changes detected.",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Watcher_informer_title": {
                         "default": "Website watcher: new changes detected.",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Sitemap_changes_to_sitemap_email": {
                         "default": "Sitemap: new changes detected.",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Audit_informer_title": {
                         "default": "Website audit is completed.",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Total_indexed": {
                         "default": "Total indexed",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Dropped_from_index": {
                         "default": "Dropped from index",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Got_indexed": {
                         "default": "New indexed",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Tariff_due_to_expire": {
                         "default": "Do not forget to renew your subscription",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Dogovor": {
                         "default": "User agreement",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Ur_balance": {
                         "default": "Balance is topped up",
+                        "readOnly": true,
                         "type": "string"
                     },
                     "Payment_received": {
                         "default": "Pyment has been received",
+                        "readOnly": true,
                         "type": "string"
                     }
                 },

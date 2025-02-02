@@ -8,945 +8,945 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         "I18n.Common": {
-            url_lang_prefix: string;
+            readonly url_lang_prefix: string;
             /** @default Page Not Found */
-            Page_404_text: string;
+            readonly Page_404_text: string;
             /** @default You will be redirected <br> in */
-            Page_404_text2: string;
+            readonly Page_404_text2: string;
             /** @default seconds */
-            Page_404_sec: string;
+            readonly Page_404_sec: string;
             /** @default Access denied */
-            Page_403_text: string;
+            readonly Page_403_text: string;
             /** @default Page loading */
-            openApp_text: string;
+            readonly openApp_text: string;
             /** @default Open application */
-            openApp_text2: string;
+            readonly openApp_text2: string;
             /** @default en */
-            lang: string;
+            readonly lang: string;
             /** @default US */
-            lang_country: string;
-            lang_url: string;
+            readonly lang_country: string;
+            readonly lang_url: string;
             /** @default ru */
-            alternate_lang: string;
+            readonly alternate_lang: string;
             /** @default RU */
-            alternate_lang_country: string;
+            readonly alternate_lang_country: string;
             /** @default /ru */
-            alternate_lang_url: string;
+            readonly alternate_lang_url: string;
             /** @default English */
-            Lang_full: string;
+            readonly Lang_full: string;
             /** @default language */
-            language: string;
+            readonly language: string;
             /** @default Language */
-            Language: string;
+            readonly Language: string;
             /** @default en_US */
-            locale: string;
+            readonly locale: string;
             /** @default m/d/Y */
-            date_format: string;
+            readonly date_format: string;
             /** @default Tools for tracking, analyzing and measuring SEO performance */
-            Description: string;
+            readonly Description: string;
             /** @default Try out SEO & PPC Tools for keyword research, clustering, rank tracking and on-page optimization. Get better results from paid search and organic rankings! */
-            Og_description: string;
+            readonly Og_description: string;
             /** @default SEO & PPC Tools for better marketing. Highly recommended! */
-            Og_description_invite: string;
+            readonly Og_description_invite: string;
             /** @default Ascending */
-            Ascending: string;
+            readonly Ascending: string;
             /** @default Descending */
-            Descending: string;
+            readonly Descending: string;
             /** @default Voronezhskaya ul. */
-            TV_address_street: string;
+            readonly TV_address_street: string;
             /** @default Session security error, please <a href="/">refresh page</a> and try again */
-            Message_session_security_error: string;
+            readonly Message_session_security_error: string;
             /** @default We're upgrading our servers. The service is temporarily unavailable. Please, try again later */
-            Message_dbh_remote: string;
+            readonly Message_dbh_remote: string;
             /** @default We're upgrading our servers. Tasks creating is temporarily unavailable. Please, try again later */
-            Message_dbh_remote_error: string;
+            readonly Message_dbh_remote_error: string;
             /** @default We're upgrading this module's server, please, try again later */
-            Message_ch_error: string;
+            readonly Message_ch_error: string;
             /** @default We're upgrading this module's server, please, try again later */
-            Message_sp_error: string;
+            readonly Message_sp_error: string;
             /** @default Every day */
-            Every_day: string;
+            readonly Every_day: string;
             /** @default times */
-            time_a_0: string;
+            readonly time_a_0: string;
             /** @default time */
-            time_a_1: string;
+            readonly time_a_1: string;
             /** @default times */
-            time_a_2: string;
+            readonly time_a_2: string;
             /** @default a week */
-            a_week: string;
+            readonly a_week: string;
             /** @default a month */
-            a_month: string;
+            readonly a_month: string;
             /** @default discount */
-            discount: string;
+            readonly discount: string;
             /** @default mo */
-            month_short: string;
+            readonly month_short: string;
             /** @default Balance */
-            Balance: string;
+            readonly Balance: string;
             /** @default Affiliate program */
-            Referrals: string;
+            readonly Referrals: string;
             /** @default Organization */
-            Organization: string;
+            readonly Organization: string;
             /** @default Yes */
-            Yes: string;
+            readonly Yes: string;
             /** @default Exists */
-            Exists: string;
+            readonly Exists: string;
             /** @default No */
-            No: string;
+            readonly No: string;
             /** @default not */
-            not: string;
+            readonly not: string;
             /** @default and */
-            and: string;
+            readonly and: string;
             /** @default rub. */
-            ruble: string;
+            readonly ruble: string;
             /** @default for */
-            for: string;
+            readonly for: string;
             /** @default For */
-            For: string;
+            readonly For: string;
             /** @default Close */
-            Close: string;
+            readonly Close: string;
             /** @default OK */
-            OK: string;
+            readonly OK: string;
             /** @default OK */
-            Apply: string;
+            readonly Apply: string;
             /** @default Apply */
-            Choose: string;
+            readonly Choose: string;
             /** @default Download */
-            Download: string;
+            readonly Download: string;
             /** @default download */
-            download: string;
+            readonly download: string;
             /** @default Step */
-            Step: string;
+            readonly Step: string;
             /** @default Continue */
-            Continue: string;
+            readonly Continue: string;
             /** @default Back */
-            Back: string;
+            readonly Back: string;
             /** @default Next */
-            Next: string;
+            readonly Next: string;
             /** @default Prev */
-            Prev_page_short: string;
+            readonly Prev_page_short: string;
             /** @default Next */
-            Next_page_short: string;
+            readonly Next_page_short: string;
             /** @default project */
-            project: string;
+            readonly project: string;
             /** @default Project */
-            Project: string;
+            readonly Project: string;
             /** @default of project */
-            of_project: string;
+            readonly of_project: string;
             /** @default Tool digest (2024) */
-            Tool_digest: string;
+            readonly Tool_digest: string;
             /** @default Ticket */
-            Ticket: string;
+            readonly Ticket: string;
             /** @default Tickets */
-            Tickets: string;
+            readonly Tickets: string;
             /** @default All tickets */
-            All_tickets: string;
+            readonly All_tickets: string;
             /** @default All articles */
-            All_pages: string;
+            readonly All_pages: string;
             /** @default Submit */
-            Submit: string;
+            readonly Submit: string;
             /** @default "Tickets" page */
-            Tickets_page: string;
+            readonly Tickets_page: string;
             /** @default Submitted */
-            Submitted: string;
+            readonly Submitted: string;
             /** @default Created */
-            Created_at: string;
+            readonly Created_at: string;
             /** @default No. */
-            Schet_number: string;
+            readonly Schet_number: string;
             /** @default Cancel */
-            Cancel: string;
+            readonly Cancel: string;
             /** @default Send */
-            Send: string;
+            readonly Send: string;
             /** @default More */
-            More: string;
+            readonly More: string;
             /** @default Read more */
-            Read_more: string;
+            readonly Read_more: string;
             /** @default User */
-            User: string;
+            readonly User: string;
             /** @default Message */
-            Message: string;
+            readonly Message: string;
             /** @default Message hasn't been sent */
-            Message_not_sended: string;
+            readonly Message_not_sended: string;
             /** @default Comment not removed */
-            Comment_not_deleted: string;
+            readonly Comment_not_deleted: string;
             /** @default Link */
-            Link: string;
+            readonly Link: string;
             /** @default Name */
-            Name: string;
+            readonly Name: string;
             /** @default First and last name */
-            First_and_last_name: string;
+            readonly First_and_last_name: string;
             /** @default Access denied */
-            Access_denied: string;
+            readonly Access_denied: string;
             /** @default Access error */
-            Access_error: string;
+            readonly Access_error: string;
             /** @default No data found */
-            No_data: string;
+            readonly No_data: string;
             /** @default No results */
-            No_results: string;
+            readonly No_results: string;
             /** @default Dynamics */
-            Dynamics: string;
+            readonly Dynamics: string;
             /** @default Country */
-            Country: string;
+            readonly Country: string;
             /** @default No. */
-            Number: string;
+            readonly Number: string;
             /** @default Number */
-            Number_word: string;
+            readonly Number_word: string;
             /** @default CPC */
-            CPC: string;
+            readonly CPC: string;
             /** @default Clear */
-            Clear: string;
+            readonly Clear: string;
             /** @default Phone number */
-            Phone: string;
+            readonly Phone: string;
             /** @default Email */
-            Email: string;
+            readonly Email: string;
             /** @default The Email you entered doesn't exist */
-            Email_not_exist: string;
+            readonly Email_not_exist: string;
             /** @default The password you entered is incorrect! */
-            Password_incorrect: string;
+            readonly Password_incorrect: string;
             /** @default Enter email */
-            Enter_email: string;
+            readonly Enter_email: string;
             /** @default Enter password */
-            Enter_password: string;
+            readonly Enter_password: string;
             /** @default Remember me */
-            Remember_me: string;
+            readonly Remember_me: string;
             /** @default Forgot your password? */
-            Forgot_password: string;
+            readonly Forgot_password: string;
             /** @default Sign up now */
-            Signup_now: string;
+            readonly Signup_now: string;
             /** @default Sign in with */
-            Sign_in_with: string;
+            readonly Sign_in_with: string;
             /** @default Recover password */
-            Password_recovering: string;
+            readonly Password_recovering: string;
             /** @default Recover password */
-            Recover_password: string;
+            readonly Recover_password: string;
             /** @default Keywords (each keyword on a new line) */
-            Keywords_one_per_line: string;
+            readonly Keywords_one_per_line: string;
             /** @default Add a Search engine */
-            Add_se: string;
+            readonly Add_se: string;
             /** @default Create a project */
-            Create_project: string;
+            readonly Create_project: string;
             /** @default Creating... */
-            Creating: string;
+            readonly Creating: string;
             /** @default Enter a valid E-mail address */
-            Enter_valid_email_notice: string;
+            readonly Enter_valid_email_notice: string;
             /** @default No account? <a href="." data-to-view="%toViewReg%">Sign up</a> */
-            No_account_sign_up: string;
+            readonly No_account_sign_up: string;
             /** @default No account? */
-            No_account: string;
+            readonly No_account: string;
             /** @default By pressing Sign up you accept <a href="%hrefConfirm%" target="_blank">Terms and Conditions</a> and <a href="%hrefPrivacy%" target="_blank">Privacy Policy</a> */
-            Through_registration_you_confirm_agreement_policy: string;
+            readonly Through_registration_you_confirm_agreement_policy: string;
             /** @default Already have an account */
-            Already_have_account: string;
+            readonly Already_have_account: string;
             /** @default <a href="." data-to-view="%toViewAuth%">Log in</a> or <a href="." data-to-view="%toViewReg%">sign up</a> */
-            Try_again_or_sign_up: string;
+            readonly Try_again_or_sign_up: string;
             /** @default If you didn't receive a message, check a <b>Spam</b> folder or submit a ticket to <a href="%hrefCreateTicket%">Customer support</a> */
-            If_no_msg_check_spam_ask_support_notice: string;
+            readonly If_no_msg_check_spam_ask_support_notice: string;
             /** @default If you didn't receive a message, check a <b>Spam</b> folder or submit a ticket to  */
-            If_no_msg: string;
+            readonly If_no_msg: string;
             /** @default Customer support */
-            support_notice: string;
+            readonly support_notice: string;
             /** @default A confirmation link has been sent to  */
-            Confirmation_link_sent_to_email: string;
+            readonly Confirmation_link_sent_to_email: string;
             /** @default Internal error occurred, please submit a report to the developers */
-            Internal_error: string;
+            readonly Internal_error: string;
             /** @default Unknown error occurred, please try again later */
-            Unknown_error: string;
+            readonly Unknown_error: string;
             /** @default Google server error */
-            Google_server_error: string;
+            readonly Google_server_error: string;
             /** @default Yandex.API server error */
-            Yandex_API_server_error: string;
+            readonly Yandex_API_server_error: string;
             /** @default Error occurred! Please, contact the project owner to resolve the issue! */
-            Yandex_auth_error: string;
+            readonly Yandex_auth_error: string;
             /** @default Required parameter missing in the request */
-            Request_error_required: string;
+            readonly Request_error_required: string;
             /** @default Passed parameter type mismatch */
-            Request_error_type: string;
+            readonly Request_error_type: string;
             /** @default Passed parameter value mismatch */
-            Request_error_value: string;
+            readonly Request_error_value: string;
             /** @default Passed qualifiers mismatch */
-            Request_error_qualifiers: string;
+            readonly Request_error_qualifiers: string;
             /** @default Regular expression error */
-            Error_regexp: string;
+            readonly Error_regexp: string;
             /** @default Valid characters */
-            Valid_characters: string;
+            readonly Valid_characters: string;
             /** @default Bonus */
-            Bonus: string;
+            readonly Bonus: string;
             /** @default or */
-            or: string;
+            readonly or: string;
             /** @default until */
-            to: string;
+            readonly to: string;
             /** @default to */
-            to_1: string;
+            readonly to_1: string;
             /** @default at */
-            at: string;
+            readonly at: string;
             /** @default Until */
-            To: string;
+            readonly To: string;
             /** @default Up to  */
-            Until: string;
+            readonly Until: string;
             /** @default next */
-            next_count: string;
+            readonly next_count: string;
             /** @default pages */
-            pages: string;
+            readonly pages: string;
             /** @default pages */
-            pages_full: string;
+            readonly pages_full: string;
             /** @default display */
-            limit: string;
+            readonly limit: string;
             /** @default by */
-            by: string;
+            readonly by: string;
             /** @default Path */
-            Path: string;
+            readonly Path: string;
             /** @default Rule */
-            Rule: string;
+            readonly Rule: string;
             /** @default Allow */
-            Allow: string;
+            readonly Allow: string;
             /** @default Forbid */
-            Disallow: string;
+            readonly Disallow: string;
             /** @default Add mask matches from sitemap */
-            Allow_of_mask: string;
+            readonly Allow_of_mask: string;
             /** @default Forbid the mask */
-            Disallow_of_mask: string;
+            readonly Disallow_of_mask: string;
             /** @default Search */
-            Search: string;
+            readonly Search: string;
             /** @default Examples */
-            Examples: string;
+            readonly Examples: string;
             /** @default Start */
-            Begin: string;
+            readonly Begin: string;
             /** @default Start over */
-            Start_over: string;
+            readonly Start_over: string;
             /** @default Export */
-            Export: string;
+            readonly Export: string;
             /** @default Import */
-            Import: string;
+            readonly Import: string;
             /** @default Off */
-            Off: string;
+            readonly Off: string;
             /** @default Changes */
-            Changes: string;
+            readonly Changes: string;
             /** @default Change */
-            Change: string;
+            readonly Change: string;
             /** @default Value */
-            Value: string;
+            readonly Value: string;
             /** @default Hide */
-            Hide: string;
+            readonly Hide: string;
             /** @default Display */
-            Display: string;
+            readonly Display: string;
             /** @default Save */
-            Save: string;
+            readonly Save: string;
             /** @default Time */
-            Time: string;
+            readonly Time: string;
             /** @default Loading */
-            Loading: string;
+            readonly Loading: string;
             /** @default CY */
-            CY: string;
+            readonly CY: string;
             /** @default Bid manager */
-            Broker: string;
+            readonly Broker: string;
             /** @default Page is under maintenance */
-            Maintenance: string;
+            readonly Maintenance: string;
             /** @default to account */
-            on_account: string;
+            readonly on_account: string;
             /** @default to */
-            on: string;
+            readonly on: string;
             /** @default SEO Tools */
-            Tools: string;
+            readonly Tools: string;
             /** @default Keyword research tool */
-            Keyword_researcher: string;
+            readonly Keyword_researcher: string;
             /** @default Rank tracker tool */
-            Rank_tracker: string;
+            readonly Rank_tracker: string;
             /** @default Upload */
-            Upload: string;
+            readonly Upload: string;
             /** @default Hide all */
-            Hide_all: string;
+            readonly Hide_all: string;
             /** @default Expand all */
-            Expand_all: string;
+            readonly Expand_all: string;
             /** @default Expand */
-            Expand: string;
+            readonly Expand: string;
             /** @default Attention */
-            Attention: string;
+            readonly Attention: string;
             /** @default from */
-            from: string;
+            readonly from: string;
             /** @default from */
-            from_1: string;
+            readonly from_1: string;
             /** @default dated */
-            dated: string;
+            readonly dated: string;
             /** @default from */
-            fromDate: string;
+            readonly fromDate: string;
             /** @default to */
-            toDate: string;
+            readonly toDate: string;
             /** @default SE */
-            SE: string;
+            readonly SE: string;
             /** @default Guest link */
-            Guest_link: string;
+            readonly Guest_link: string;
             /** @default Guest link copied to clipboard */
-            Guest_link_copied_to_clipboard: string;
+            readonly Guest_link_copied_to_clipboard: string;
             /** @default PC */
-            Device_0: string;
+            readonly Device_0: string;
             /** @default Tablet */
-            Device_1: string;
+            readonly Device_1: string;
             /** @default Phone */
-            Device_2: string;
+            readonly Device_2: string;
             /** @default YandexBot/3.0 */
-            Device_100: string;
+            readonly Device_100: string;
             /** @default YandexBot/3.0 (mobile) */
-            Device_102: string;
+            readonly Device_102: string;
             /** @default Googlebot/2.1 */
-            Device_110: string;
+            readonly Device_110: string;
             /** @default Googlebot/2.1 (mobile) */
-            Device_112: string;
+            readonly Device_112: string;
             /** @default AdsBot-Google */
-            Device_120: string;
+            readonly Device_120: string;
             /** @default AdsBot-Google-Mobile */
-            Device_122: string;
+            readonly Device_122: string;
             /** @default Tag */
-            Tag: string;
+            readonly Tag: string;
             /** @default Tags */
-            Tags: string;
+            readonly Tags: string;
             /** @default All tags */
-            All_tags: string;
+            readonly All_tags: string;
             /** @default Charts */
-            Charts: string;
+            readonly Charts: string;
             /** @default All */
-            All: string;
+            readonly All: string;
             /** @default Selected */
-            Selected: string;
+            readonly Selected: string;
             /** @default Select */
-            Select: string;
+            readonly Select: string;
             /** @default Select all */
-            Select_all: string;
+            readonly Select_all: string;
             /** @default Added */
-            Added: string;
+            readonly Added: string;
             /** @default Deleted */
-            Deleted: string;
+            readonly Deleted: string;
             /** @default Rename */
-            Rename: string;
+            readonly Rename: string;
             /** @default On / Off */
-            On_or_off: string;
+            readonly On_or_off: string;
             /** @default Autoselect */
-            Autoselect: string;
+            readonly Autoselect: string;
             /** @default Open project */
-            Open_project: string;
+            readonly Open_project: string;
             /** @default Domain */
-            Domain: string;
+            readonly Domain: string;
             /** @default Domains */
-            Domains: string;
+            readonly Domains: string;
             /** @default Track */
-            Track: string;
+            readonly Track: string;
             /** @default Check */
-            Check: string;
+            readonly Check: string;
             /** @default Track */
-            Track_continued: string;
+            readonly Track_continued: string;
             /** @default Telegram */
-            Telegram: string;
+            readonly Telegram: string;
             /** @default Link to Telegram */
-            Link_to_telegram: string;
+            readonly Link_to_telegram: string;
             /** @default Other */
-            Other: string;
+            readonly Other: string;
             /** @default Other */
-            Other_f: string;
+            readonly Other_f: string;
             /** @default Proceed */
-            Proceed: string;
+            readonly Proceed: string;
             /** @default Projects */
-            Projects: string;
+            readonly Projects: string;
             /** @default Yandex.Metrica */
-            Metrika: string;
+            readonly Metrika: string;
             /** @default Yandex.Webmaster */
-            Webmaster: string;
+            readonly Webmaster: string;
             /** @default Yandex Direct */
-            Yandex_Direct: string;
+            readonly Yandex_Direct: string;
             /** @default Yandex.Direct */
-            YandexDirect: string;
+            readonly YandexDirect: string;
             /** @default Yandex Wordstat */
-            Yandex_Wordstat: string;
+            readonly Yandex_Wordstat: string;
             /** @default Volume */
-            Y_freq: string;
+            readonly Y_freq: string;
             /** @default "Volume" */
-            Y_freq2: string;
+            readonly Y_freq2: string;
             /** @default "!Volume" */
-            Y_freq3: string;
+            readonly Y_freq3: string;
             /** @default "[Volume]" */
-            Y_freq5: string;
+            readonly Y_freq5: string;
             /** @default "[!Volume]" */
-            Y_freq6: string;
+            readonly Y_freq6: string;
             /** @default "[Volume]" */
-            G_freq2: string;
+            readonly G_freq2: string;
             /** @default "Volume" */
-            M_freq2: string;
+            readonly M_freq2: string;
             /** @default 1st Premium */
-            Y_price1: string;
+            readonly Y_price1: string;
             /** @default 2st Premium */
-            Y_price2: string;
+            readonly Y_price2: string;
             /** @default Premium */
-            Y_price3: string;
+            readonly Y_price3: string;
             /** @default 1st place */
-            Y_price4: string;
+            readonly Y_price4: string;
             /** @default Guaranteed */
-            Y_price5: string;
+            readonly Y_price5: string;
             /** @default Bid */
-            G_price: string;
+            readonly G_price: string;
             /** @default Search engine */
-            Search_engine: string;
+            readonly Search_engine: string;
             /** @default Search engines */
-            Search_engines: string;
+            readonly Search_engines: string;
             /** @default Location */
-            Region: string;
+            readonly Region: string;
             /** @default location */
-            region: string;
+            readonly region: string;
             /** @default Selected locations */
-            Selected_regions: string;
+            readonly Selected_regions: string;
             /** @default Compare */
-            Compare: string;
+            readonly Compare: string;
             /** @default Folder */
-            Folder: string;
+            readonly Folder: string;
             /** @default Group */
-            Group: string;
+            readonly Group: string;
             /** @default Visibility */
-            Visibility: string;
+            readonly Visibility: string;
             /** @default Avg.pos. */
-            Average: string;
+            readonly Average: string;
             /** @default Average position */
-            Average_position: string;
+            readonly Average_position: string;
             /** @default Add */
-            Add: string;
+            readonly Add: string;
             /** @default Create */
-            Create: string;
+            readonly Create: string;
             /** @default Move */
-            Move: string;
+            readonly Move: string;
             /** @default Delete */
-            Delete: string;
+            readonly Delete: string;
             /** @default Repalce */
-            Replace: string;
+            readonly Replace: string;
             /** @default Restore */
-            Restore: string;
+            readonly Restore: string;
             /** @default Copy */
-            Copy: string;
+            readonly Copy: string;
             /** @default Copy */
-            Copy2: string;
+            readonly Copy2: string;
             /** @default Delete */
-            Remove: string;
+            readonly Remove: string;
             /** @default You will be charged */
-            Charge: string;
+            readonly Charge: string;
             /** @default confirm */
-            confirm: string;
+            readonly confirm: string;
             /** @default Confirm */
-            Confirm: string;
+            readonly Confirm: string;
             /** @default Delete selected */
-            Delete_selected: string;
+            readonly Delete_selected: string;
             /** @default Delete all */
-            Delete_all: string;
+            readonly Delete_all: string;
             /** @default Traffic */
-            Traffic: string;
+            readonly Traffic: string;
             /** @default Rankings */
-            Positions: string;
+            readonly Positions: string;
             /** @default Keyword */
-            Keyword: string;
+            readonly Keyword: string;
             /** @default Keyword */
-            Key_word: string;
+            readonly Key_word: string;
             /** @default Settings */
-            Settings: string;
+            readonly Settings: string;
             /** @default URL Settings */
-            Settings_URL: string;
+            readonly Settings_URL: string;
             /** @default Important! This operation cannot be undone. */
-            Irreversible: string;
+            readonly Irreversible: string;
             /** @default Missing */
-            Empty_field: string;
+            readonly Empty_field: string;
             /** @default Notifications */
-            Notification: string;
+            readonly Notification: string;
             /** @default My project */
-            Personal_project: string;
+            readonly Personal_project: string;
             /** @default Terms of Service */
-            Agreement: string;
+            readonly Agreement: string;
             /** @default Period */
-            Period: string;
+            readonly Period: string;
             /** @default You cannot change project settings until tracking is completed */
-            Config_is_readonly: string;
+            readonly Config_is_readonly: string;
             /** @default locations */
-            regions: string;
+            readonly regions: string;
             /** @default types */
-            types: string;
+            readonly types: string;
             /** @default Select date */
-            Select_date: string;
+            readonly Select_date: string;
             /** @default Not date */
-            Not_date: string;
+            readonly Not_date: string;
             /** @default Close window */
-            Close_window: string;
+            readonly Close_window: string;
             /** @default Dashboard */
-            Dashboard: string;
+            readonly Dashboard: string;
             /** @default Help center */
-            Support: string;
+            readonly Support: string;
             /** @default URL shortener */
-            Shortener: string;
+            readonly Shortener: string;
             /** @default Journal */
-            Journal: string;
+            readonly Journal: string;
             /** @default Academy */
-            Academy: string;
+            readonly Academy: string;
             /** @default Pricing */
-            Pricing: string;
+            readonly Pricing: string;
             /** @default Sign up */
-            Signup: string;
+            readonly Signup: string;
             /** @default Sign up */
-            Sign_up: string;
+            readonly Sign_up: string;
             /** @default Sign up */
-            Sign_up_2: string;
+            readonly Sign_up_2: string;
             /** @default Sign in */
-            Sign_in: string;
+            readonly Sign_in: string;
             /** @default Sign in */
-            Sign_in_account: string;
+            readonly Sign_in_account: string;
             /** @default Sign out */
-            Sign_out: string;
+            readonly Sign_out: string;
             /** @default Server response */
-            Server_response: string;
+            readonly Server_response: string;
             /** @default Red */
-            Red: string;
+            readonly Red: string;
             /** @default Orange */
-            Orange: string;
+            readonly Orange: string;
             /** @default Yellow */
-            Yellow: string;
+            readonly Yellow: string;
             /** @default Blue */
-            Blue: string;
+            readonly Blue: string;
             /** @default Purple */
-            Purple: string;
+            readonly Purple: string;
             /** @default Green */
-            Green: string;
+            readonly Green: string;
             /** @default Magenta */
-            Magenta: string;
+            readonly Magenta: string;
             /** @default Dark blue */
-            Dark_blue: string;
+            readonly Dark_blue: string;
             /** @default Turquoise */
-            Turquoise: string;
+            readonly Turquoise: string;
             /** @default Volume */
-            Frequency: string;
+            readonly Frequency: string;
             /** @default Moscow */
-            Moscow: string;
+            readonly Moscow: string;
             /** @default Minsk */
-            Minsk: string;
+            readonly Minsk: string;
             /** @default Kyiv */
-            Kyiv: string;
+            readonly Kyiv: string;
             /** @default London */
-            London: string;
+            readonly London: string;
             /** @default New York */
-            NewYork: string;
+            readonly NewYork: string;
             /** @default St. Petersburg */
-            StPetersburg: string;
+            readonly StPetersburg: string;
             /** @default Almaty */
-            Almaty: string;
+            readonly Almaty: string;
             /** @default Russia */
-            Russia: string;
+            readonly Russia: string;
             /** @default Ukraine */
-            Ukraine: string;
+            readonly Ukraine: string;
             /** @default Kazakhstan */
-            Kazakhstan: string;
+            readonly Kazakhstan: string;
             /** @default Belarus */
-            Belarus: string;
+            readonly Belarus: string;
             /** @default Amount */
-            Sum: string;
+            readonly Sum: string;
             /** @default Date */
-            Date: string;
+            readonly Date: string;
             /** @default Week */
-            Week: string;
+            readonly Week: string;
             /** @default Month */
-            Month: string;
+            readonly Month: string;
             /** @default month */
-            month: string;
+            readonly month: string;
             /** @default months */
-            months: string;
+            readonly months: string;
             /** @default months */
-            months_mult: string;
+            readonly months_mult: string;
             /** @default 6 months */
-            months_6: string;
+            readonly months_6: string;
             /** @default Quarter */
-            Quarter: string;
+            readonly Quarter: string;
             /** @default Year */
-            Year: string;
+            readonly Year: string;
             /** @default Total */
-            Total: string;
+            readonly Total: string;
             /** @default TOTAL */
-            TOTAL: string;
+            readonly TOTAL: string;
             /** @default Yandex update */
-            Yandex_update: string;
+            readonly Yandex_update: string;
             /** @default code */
-            "\u0441ode": string;
+            readonly "\u0441ode": string;
             /** @default Thank you! */
-            Thank_you: string;
+            readonly Thank_you: string;
             /** @default Thank you for using our tools */
-            Thank_you_for_using_our_tools: string;
+            readonly Thank_you_for_using_our_tools: string;
             /** @default Since */
-            Since: string;
+            readonly Since: string;
             /** @default Till */
-            Till: string;
+            readonly Till: string;
             /** @default up to */
-            till: string;
+            readonly till: string;
             /** @default Yandex */
-            Yandex: string;
+            readonly Yandex: string;
             /** @default Rank */
-            Position: string;
+            readonly Position: string;
             /** @default Impressions */
-            Impressions: string;
+            readonly Impressions: string;
             /** @default Demand */
-            Demand: string;
+            readonly Demand: string;
             /** @default FAQ */
-            FAQ: string;
+            readonly FAQ: string;
             /** @default Frequently asked questions */
-            Frequently_asked_questions: string;
+            readonly Frequently_asked_questions: string;
             /** @default Owner */
-            Owner: string;
+            readonly Owner: string;
             /** @default level */
-            level: string;
+            readonly level: string;
             /** @default No payments yet */
-            No_payments: string;
+            readonly No_payments: string;
             /** @default Show legend */
-            Show_legend: string;
+            readonly Show_legend: string;
             /** @default Hide legend */
-            Hide_legend: string;
+            readonly Hide_legend: string;
             /** @default Expand menu */
-            Menu_expand: string;
+            readonly Menu_expand: string;
             /** @default Minimize menu */
-            Menu_unexpand: string;
+            readonly Menu_unexpand: string;
             /** @default Search */
-            Menu_dynamics_search: string;
+            readonly Menu_dynamics_search: string;
             /** @default Rank Tracker */
-            Menu_dynamics: string;
+            readonly Menu_dynamics: string;
             /** @default SERP Snapshots */
-            Menu_snapshots: string;
+            readonly Menu_snapshots: string;
             /** @default My competitors */
-            Menu_competitors: string;
+            readonly Menu_competitors: string;
             /** @default Keywords */
-            Menu_phrases: string;
+            readonly Menu_phrases: string;
             /** @default Audit */
-            Menu_audit: string;
+            readonly Menu_audit: string;
             /** @default Overview */
-            Menu_analytics: string;
+            readonly Menu_analytics: string;
             /** @default PPC */
-            Menu_PPC: string;
+            readonly Menu_PPC: string;
             /** @default Yandex.Direct */
-            Menu_broker: string;
+            readonly Menu_broker: string;
             /** @default Settings */
-            Menu_settings: string;
+            readonly Menu_settings: string;
             /** @default More */
-            Menu_more: string;
+            readonly Menu_more: string;
             /** @default Folders */
-            Folders: string;
+            readonly Folders: string;
             /** @default Groups */
-            Groups: string;
+            readonly Groups: string;
             /** @default Keywords */
-            Keywords: string;
+            readonly Keywords: string;
             /** @default keywords */
-            of_keywords: string;
+            readonly of_keywords: string;
             /** @default folders */
-            of_folders: string;
+            readonly of_folders: string;
             /** @default projects */
-            of_projects: string;
+            readonly of_projects: string;
             /** @default for project */
-            of_project1: string;
+            readonly of_project1: string;
             /** @default for project */
-            for_project: string;
+            readonly for_project: string;
             /** @default competitor */
-            competitor: string;
+            readonly competitor: string;
             /** @default All groups */
-            All_groups: string;
+            readonly All_groups: string;
             /** @default All folders */
-            All_folders: string;
+            readonly All_folders: string;
             /** @default All locations */
-            All_regions: string;
+            readonly All_regions: string;
             /** @default All search engines */
-            All_searchers: string;
+            readonly All_searchers: string;
             /** @default All projects */
-            All_projects: string;
+            readonly All_projects: string;
             /** @default Integration */
-            Integration: string;
+            readonly Integration: string;
             /** @default update days */
-            updates_days: string;
+            readonly updates_days: string;
             /** @default the entire period */
-            whole_period: string;
+            readonly whole_period: string;
             /** @default two dates */
-            two_dates: string;
+            readonly two_dates: string;
             /** @default Project report for */
-            Report_for_project: string;
+            readonly Report_for_project: string;
             /** @default Time range */
-            Interval: string;
+            readonly Interval: string;
             /** @default compare with competitors */
-            competitors_comparison: string;
+            readonly competitors_comparison: string;
             /** @default Compare by search engine */
-            Searchers_comparison: string;
+            readonly Searchers_comparison: string;
             /** @default Compare by location */
-            Regions_comparison: string;
+            readonly Regions_comparison: string;
             /** @default Your browser is not supported! */
-            Browser_not_supported: string;
+            readonly Browser_not_supported: string;
             /** @default Browser settings */
-            Browser_settings: string;
+            readonly Browser_settings: string;
             /** @default Service might be unstable */
-            Service_may_go_unstable: string;
+            readonly Service_may_go_unstable: string;
             /** @default Compatible browser is */
-            Preferred_browser: string;
+            readonly Preferred_browser: string;
             /** @default Compare by */
-            Comparison_by: string;
+            readonly Comparison_by: string;
             /** @default Keywords */
-            Phrases: string;
+            readonly Phrases: string;
             /** @default TOP */
-            TOP: string;
+            readonly TOP: string;
             /** @default Top */
-            Top: string;
+            readonly Top: string;
             /** @default Keyword dynamics */
-            Phrases_dynamics: string;
+            readonly Phrases_dynamics: string;
             /** @default Project settings */
-            Project_settings: string;
+            readonly Project_settings: string;
             /** @default Keywords in TOP */
-            Phrases_in_TOP: string;
+            readonly Phrases_in_TOP: string;
             /** @default Keywords in Top */
-            Phrases_in_Top: string;
+            readonly Phrases_in_Top: string;
             /** @default Page */
-            Page: string;
+            readonly Page: string;
             /** @default page */
-            page: string;
+            readonly page: string;
             /** @default last 10 days */
-            last_10_days: string;
+            readonly last_10_days: string;
             /** @default last month */
-            last_month: string;
+            readonly last_month: string;
             /** @default last update */
-            last_check: string;
+            readonly last_check: string;
             /** @default last 2 updates */
-            last_two_dates: string;
+            readonly last_two_dates: string;
             /** @default last month (week's average) */
-            last_month_week_average: string;
+            readonly last_month_week_average: string;
             /** @default similar keywords */
-            also_searched: string;
+            readonly also_searched: string;
             /** @default Sources */
-            Sources: string;
+            readonly Sources: string;
             /** @default Clicks */
-            Clicks: string;
+            readonly Clicks: string;
             /** @default Other dates */
-            Other_dates: string;
+            readonly Other_dates: string;
             /** @default Help */
-            Help_center: string;
+            readonly Help_center: string;
             /** @default Support Center */
-            Help_center_welcome: string;
+            readonly Help_center_welcome: string;
             /** @default Got any questions? */
-            Help_center_question: string;
+            readonly Help_center_question: string;
             /** @default Run */
-            Run: string;
+            readonly Run: string;
             /** @default Manage */
-            Manage: string;
+            readonly Manage: string;
             /** @default Project id is missing */
-            Missed_project_id: string;
+            readonly Missed_project_id: string;
             /** @default `Project_id` is missing */
-            Missed_project_id2: string;
+            readonly Missed_project_id2: string;
             /** @default Project analytics */
-            Project_analytics: string;
+            readonly Project_analytics: string;
             /** @default Keyword dynamics */
-            Project_dynamics: string;
+            readonly Project_dynamics: string;
             /** @default Updates */
-            Apometr: string;
+            readonly Apometr: string;
             /** @default Google and Yandex SERP tracking tool */
-            Apometr_title: string;
+            readonly Apometr_title: string;
             /** @default Google and Yandex updates calendar (SERP updates and changes). Get SERP updates alerts. SERP updates score for different locations and content types. */
-            Apometr_description: string;
+            readonly Apometr_description: string;
             /** @default Google and Yandex SERP updates */
-            Apometr_og_title: string;
+            readonly Apometr_og_title: string;
             /** @default SERP updates score for different locations and content types. */
-            Apometr_og_description: string;
+            readonly Apometr_og_description: string;
             /** @default Get update alerts */
-            Apometr_notice: string;
+            readonly Apometr_notice: string;
             /** @default Pricing */
-            Pricing_title: string;
+            readonly Pricing_title: string;
             /** @default Account */
-            Profile_title: string;
+            readonly Profile_title: string;
             /** @default Bank */
-            Bank_title: string;
+            readonly Bank_title: string;
             /** @default Your projects */
-            Your_projects: string;
+            readonly Your_projects: string;
             /** @default Invalid file format (expected: %availableExtensionsNames%) */
-            Incorrect_file_format: string;
+            readonly Incorrect_file_format: string;
             /** @default Maximum upload size exceeded (%maxSize%) */
-            Max_size: string;
+            readonly Max_size: string;
             /** @default Website SEO Audit tool */
-            Audit: string;
+            readonly Audit: string;
             /** @default Tutorials */
-            Tutorial: string;
+            readonly Tutorial: string;
             /** @default User ID */
-            User_id: string;
+            readonly User_id: string;
             /** @default Managing executive */
-            Managing_executive: string;
+            readonly Managing_executive: string;
             /** @default Pustovoit */
-            Pustovoit: string;
+            readonly Pustovoit: string;
             /** @default Denis */
-            Denis: string;
+            readonly Denis: string;
             /** @default Anatolyevich */
-            Anatolyevich: string;
+            readonly Anatolyevich: string;
             /** @default Chief Executive Officer */
-            CEO: string;
+            readonly CEO: string;
             /** @default office */
-            office: string;
+            readonly office: string;
             /** @default Dot */
-            Dot: string;
+            readonly Dot: string;
             /** @default Comma */
-            Comma: string;
+            readonly Comma: string;
             /** @default Add manually */
-            Enter_manually: string;
+            readonly Enter_manually: string;
             /** @default max 10 Mb */
-            max_10_mb: string;
+            readonly max_10_mb: string;
             /** @default Checks schedule */
-            Schedule_settings_checks: string;
+            readonly Schedule_settings_checks: string;
             /** @default Reports schedule */
-            Schedule_settings_reports: string;
+            readonly Schedule_settings_reports: string;
             /** @default Basic */
-            Basic: string;
+            readonly Basic: string;
             /** @default IP address */
-            Address_IP: string;
+            readonly Address_IP: string;
             /** @default Phone number */
-            Phone_number: string;
+            readonly Phone_number: string;
             /** @default Recipient */
-            Recipient: string;
+            readonly Recipient: string;
             /** @default  Federal act */
-            Federal_act: string;
+            readonly Federal_act: string;
             /** @default optional */
-            optional: string;
+            readonly optional: string;
             /** @default Full name */
-            Full_name_abbr: string;
+            readonly Full_name_abbr: string;
             /** @default Mobile phone */
-            Mobile_phone: string;
+            readonly Mobile_phone: string;
             /** @default not found */
-            not_found: string;
+            readonly not_found: string;
             /** @default Try to <i class="a" data-action="reset_filters">reset</i> all filters<br><i class="archive_search">
              *     	or search <a href="/support/projects/archive" target="_blank" class="a">Archived</a> projects</i> */
-            Try_to_reset_filters_or_search_archive_html: string;
+            readonly Try_to_reset_filters_or_search_archive_html: string;
             /** @default Print */
-            Print: string;
+            readonly Print: string;
             /** @default Contact us */
-            Contact_us: string;
+            readonly Contact_us: string;
             /** @default Competitor research */
-            Competitor_analysis: string;
+            readonly Competitor_analysis: string;
             /** @default Top up your balance */
-            Refill_balance: string;
+            readonly Refill_balance: string;
             /** @default Median */
-            Median: string;
+            readonly Median: string;
             /** @default Reset */
-            Reset: string;
+            readonly Reset: string;
             /** @default View */
-            View: string;
+            readonly View: string;
             /** @default Pin bar */
-            Bar_pin: string;
+            readonly Bar_pin: string;
             /** @default Number */
-            Count: string;
+            readonly Count: string;
             /** @default Invalid URL format */
-            Invalid_url: string;
+            readonly Invalid_url: string;
             /** @default Access settings */
-            Access_settings: string;
+            readonly Access_settings: string;
             /** @default Hide access settings */
-            Hide_access_settings: string;
+            readonly Hide_access_settings: string;
             /** @default Sort */
-            Sort: string;
+            readonly Sort: string;
             /** @default No snippet */
-            No_snippet: string;
+            readonly No_snippet: string;
             /** @default Copied to clipboard */
-            Copied_to_clipboard: string;
+            readonly Copied_to_clipboard: string;
             /** @default Cannot copied to clipboard */
-            Cannot_copied_to_clipboard: string;
+            readonly Cannot_copied_to_clipboard: string;
             /** @default Copy the guest link manually */
-            Copy_guest_link_manually: string;
+            readonly Copy_guest_link_manually: string;
             /** @default Press */
-            Press_to_copy_1: string;
+            readonly Press_to_copy_1: string;
             /** @default +C to copy a link */
-            Press_to_copy_2: string;
+            readonly Press_to_copy_2: string;
             /** @default Guest link created */
-            Guest_link_created: string;
+            readonly Guest_link_created: string;
             /** @default Please fill in all required fields */
-            Need_fill_required_fields: string;
+            readonly Need_fill_required_fields: string;
         };
     };
     responses: never;

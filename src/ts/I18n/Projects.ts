@@ -9,467 +9,467 @@ export interface components {
     schemas: {
         "I18n.Projects": {
             /** @default Add project */
-            Add_project_title: string;
+            readonly Add_project_title: string;
             /** @default Enter project name */
-            Enter_project_name: string;
+            readonly Enter_project_name: string;
             /** @default Project URL */
-            Site: string;
+            readonly Site: string;
             /** @default Keywords */
-            Keywords: string;
+            readonly Keywords: string;
             /** @default Bid manager */
-            Broker: string;
+            readonly Broker: string;
             /** @default Analytics and reports */
-            Analytics: string;
+            readonly Analytics: string;
             /** @default Enter website or webpage URL */
-            Add_project_url: string;
+            readonly Add_project_url: string;
             /** @default Delete project */
-            Del_project_title: string;
+            readonly Del_project_title: string;
             /** @default Are you sure you want to delete project */
-            Del_project_question: string;
+            readonly Del_project_question: string;
             /** @default Are you sure you want to delete the selected projects? */
-            Del_selected_projects_question: string;
+            readonly Del_selected_projects_question: string;
             /** @default Are you sure you want to delete this project?<br><br>Projects will be moved to the root folder */
-            Del_folder_question: string;
+            readonly Del_folder_question: string;
             /** @default Check Rankings */
-            Check_positions: string;
+            readonly Check_positions: string;
             /** @default Apply filter and check rankings (search engine / location / folder / group) */
-            Check_positions_with_filter: string;
+            readonly Check_positions_with_filter: string;
             /** @default Domain not specified, check "site" parameter */
-            domain_missed: string;
+            readonly domain_missed: string;
             /** @default Invalid domain name */
-            Incorrect_domain: string;
+            readonly Incorrect_domain: string;
             /** @default You can't change project owner access settings */
-            owner_rights_error: string;
+            readonly owner_rights_error: string;
             /** @default We are assigning project tasks, settings will be available within a minute */
-            Edit_positions_notice_to_wait: string;
+            readonly Edit_positions_notice_to_wait: string;
             /** @default Search engine provider missed */
-            Searcher_missed: string;
+            readonly Searcher_missed: string;
             /** @default This search engine already added to the project */
-            Searcher_exists: string;
+            readonly Searcher_exists: string;
             /** @default Location with applied settings already added */
-            Region_exists: string;
+            readonly Region_exists: string;
             /** @default You can't add this location */
-            Region_not_available: string;
+            readonly Region_not_available: string;
             /** @default Youtube rank tracking is not available for this project */
-            Project_not_available_for_Youtube: string;
+            readonly Project_not_available_for_Youtube: string;
             /** @default Search engine not found */
-            Searcher_not_found: string;
+            readonly Searcher_not_found: string;
             /** @default You are the project owner already */
-            You_are_owner: string;
+            readonly You_are_owner: string;
             /** @default Add to favorites */
-            Add_to_favorites: string;
+            readonly Add_to_favorites: string;
             /** @default This user doesn't exist */
-            User_not_exists: string;
+            readonly User_not_exists: string;
             /** @default You received full access to the project */
-            ChangeOwner_message1: string;
+            readonly ChangeOwner_message1: string;
             /** @default To accept project transfer and start working on it, click "Accept project". */
-            ChangeOwner_message2: string;
+            readonly ChangeOwner_message2: string;
             /** @default Accept project */
-            ChangeOwner_message3: string;
+            readonly ChangeOwner_message3: string;
             /** @default Project transfer */
-            ChangeOwner_title: string;
+            readonly ChangeOwner_title: string;
             /** @default The project was delegated by the user who is no longer a project owner. */
-            AcceptChangeOwner_msg1: string;
+            readonly AcceptChangeOwner_msg1: string;
             /** @default You have become the project owner of */
-            AcceptChangeOwner_msg2: string;
+            readonly AcceptChangeOwner_msg2: string;
             /** @default Add competitors */
-            Competitors_add: string;
+            readonly Competitors_add: string;
             /** @default Add competitors */
-            Competitors_add2: string;
+            readonly Competitors_add2: string;
             /** @default Keyword research cost */
-            Competitors_price_1: string;
+            readonly Competitors_price_1: string;
             /** @default $ */
-            Competitors_price_2: string;
+            readonly Competitors_price_2: string;
             /** @default Competitor site not specified */
-            Competitor_site_missed: string;
+            readonly Competitor_site_missed: string;
             /** @default Competitor already exists */
-            Competitor_double: string;
+            readonly Competitor_double: string;
             /** @default Invalid data format */
-            Competitor_Wrong_data: string;
+            readonly Competitor_Wrong_data: string;
             /** @default Competitor must match youtube.com* wildcard */
-            Youtube_competitor_error: string;
+            readonly Youtube_competitor_error: string;
             /** @default You can't add more than 250 competitors */
-            Competitor_count_error: string;
+            readonly Competitor_count_error: string;
             /** @default Check campaign access and API permission */
-            Check_campaigns_acess_and_API_permission: string;
+            readonly Check_campaigns_acess_and_API_permission: string;
             /** @default Project owner will be charged */
-            Sum_for_pay: string;
+            readonly Sum_for_pay: string;
             /** @default Visits on Yandex */
-            Visits_in_yandex: string;
+            readonly Visits_in_yandex: string;
             /** @default Visits on Google */
-            Visits_in_google: string;
+            readonly Visits_in_google: string;
             /** @default Visits on Mail.ru */
-            Visits_in_mail: string;
+            readonly Visits_in_mail: string;
             /** @default You will be charged */
-            Info_cost: string;
+            readonly Info_cost: string;
             /** @default Last check */
-            Last_update: string;
+            readonly Last_update: string;
             /** @default TOP 10/11-30/30+ */
-            Keywords_in_top: string;
+            readonly Keywords_in_top: string;
             /** @default Dynamics */
-            Dynamics: string;
+            readonly Dynamics: string;
             /** @default Traffic in SE */
-            Traffic: string;
+            readonly Traffic: string;
             /** @default Index status */
-            Indexed: string;
+            readonly Indexed: string;
             /** @default Links */
-            Links: string;
+            readonly Links: string;
             /** @default Avg.pos. */
-            Average_position: string;
+            readonly Average_position: string;
             /** @default Vis-ty */
-            Visibility: string;
+            readonly Visibility: string;
             /** @default Domain registration */
-            Register_domain: string;
+            readonly Register_domain: string;
             /** @default Archive */
-            Archive_project: string;
+            readonly Archive_project: string;
             /** @default Restore */
-            Unarchive_project: string;
+            readonly Unarchive_project: string;
             /** @default Renew */
-            Extend: string;
+            readonly Extend: string;
             /** @default Renew your domain */
-            Extend_domain: string;
+            readonly Extend_domain: string;
             /** @default Transfer your domain */
-            Transfer_domain: string;
+            readonly Transfer_domain: string;
             /** @default Y: */
-            Yandex_short: string;
+            readonly Yandex_short: string;
             /** @default SQI */
-            Yandex_SQI: string;
+            readonly Yandex_SQI: string;
             /** @default Default tag */
-            No_tag: string;
+            readonly No_tag: string;
             /** @default Edit */
-            Edit: string;
+            readonly Edit: string;
             /** @default My projects */
-            My_projects: string;
+            readonly My_projects: string;
             /** @default Scheduled update */
-            Scheduled_update: string;
+            readonly Scheduled_update: string;
             /** @default Manual update */
-            Manual_update: string;
+            readonly Manual_update: string;
             /** @default Guest projects */
-            Guest_projects: string;
+            readonly Guest_projects: string;
             /** @default My and guest projects */
-            Guest_my_projects: string;
+            readonly Guest_my_projects: string;
             /** @default Archived projects */
-            Archived_projects: string;
+            readonly Archived_projects: string;
             /** @default Add project */
-            Add_project: string;
+            readonly Add_project: string;
             /** @default Current registrar */
-            Current_registrar: string;
+            readonly Current_registrar: string;
             /** @default You are going to archive your project. Archived projects are suspended and unavailable. */
-            Info_archived: string;
+            readonly Info_archived: string;
             /** @default You are going to archive the <i class="one">project</i><i class="several">selected projects</i>. Archived projects are suspended and unavailable. */
-            Info_archived_html: string;
+            readonly Info_archived_html: string;
             /** @default Do you really want to restore this project from the archive? */
-            Accept_unarchive: string;
+            readonly Accept_unarchive: string;
             /** @default Do you really want to restore the <i class="one">project</i><i class="several">selected projects</i>? */
-            Info_unarchive_html: string;
+            readonly Info_unarchive_html: string;
             /** @default Archive */
-            Archive: string;
+            readonly Archive: string;
             /** @default Restore */
-            Unarchive: string;
+            readonly Unarchive: string;
             /** @default Check Rankings */
-            Info_bulk_update: string;
+            readonly Info_bulk_update: string;
             /** @default Check Rankings */
-            Bulk_update: string;
+            readonly Bulk_update: string;
             /** @default There are no projects available for bulk update */
-            No_bulk_update_projects: string;
+            readonly No_bulk_update_projects: string;
             /** @default Registered */
-            Registration_date: string;
+            readonly Registration_date: string;
             /** @default Domain expires */
-            Domain_valid_until: string;
+            readonly Domain_valid_until: string;
             /** @default Deleted */
-            Deleted_date: string;
+            readonly Deleted_date: string;
             /** @default Domain to renew after */
-            Domain_extended_time: string;
+            readonly Domain_extended_time: string;
             /** @default Your<br>domain renewal costs */
-            Extend_current_cost: string;
+            readonly Extend_current_cost: string;
             /** @default Renew your domain with <br>  */
-            Extend_axelname: string;
+            readonly Extend_axelname: string;
             /** @default Update the key */
-            Update_tpa: string;
+            readonly Update_tpa: string;
             /** @default Copy project and main settings */
-            Copy_with_settings: string;
+            readonly Copy_with_settings: string;
             /** @default Copy keywords */
-            Copy_keywords: string;
+            readonly Copy_keywords: string;
             /** @default Copy keyword ranking history */
-            Copy_dynamics: string;
+            readonly Copy_dynamics: string;
             /** @default Copy */
-            Copy: string;
+            readonly Copy: string;
             /** @default Copy */
-            A_copy: string;
+            readonly A_copy: string;
             /** @default Copy project */
-            Copy_project: string;
+            readonly Copy_project: string;
             /** @default On days of week */
-            Report_on_weekdays: string;
+            readonly Report_on_weekdays: string;
             /** @default Custom frequency */
-            Report_custom_frequency: string;
+            readonly Report_custom_frequency: string;
             /** @default Send competition report */
-            Send_competitor_report: string;
+            readonly Send_competitor_report: string;
             /** @default Report format */
-            Report_format: string;
+            readonly Report_format: string;
             /** @default Test report */
-            Send_test_report: string;
+            readonly Send_test_report: string;
             /** @default Test report has been successfully sent to your email */
-            Test_report_sent_email: string;
+            readonly Test_report_sent_email: string;
             /** @default Test report successfully sent */
-            Test_report_sent: string;
+            readonly Test_report_sent: string;
             /** @default Add user */
-            Access_add_user: string;
+            readonly Access_add_user: string;
             /** @default company logo */
-            company_logo: string;
+            readonly company_logo: string;
             /** @default Do not run scheduled update if rankings were checked on demand less than 12 hours ago */
-            Settings_no_automated_update_if_manual: string;
+            readonly Settings_no_automated_update_if_manual: string;
             /** @default On dates */
-            Settings_particular_days: string;
+            readonly Settings_particular_days: string;
             /** @default After Yandex updates */
-            After_updates: string;
+            readonly After_updates: string;
             /** @default After Yandex update */
-            After_update: string;
+            readonly After_update: string;
             /** @default immediately */
-            immediately: string;
+            readonly immediately: string;
             /** @default in %hour% h. */
-            in_hour: string;
+            readonly in_hour: string;
             /** @default On demand */
-            Settings_on_demand: string;
+            readonly Settings_on_demand: string;
             /** @default Tool settings */
-            Advanced_options: string;
+            readonly Advanced_options: string;
             /** @default Do not collect */
-            Do_not_collect: string;
+            readonly Do_not_collect: string;
             /** @default Collect */
-            Collect: string;
+            readonly Collect: string;
             /** @default Subdomains */
-            Subdomains: string;
+            readonly Subdomains: string;
             /** @default Do not check */
-            Subdomains_do_not_check: string;
+            readonly Subdomains_do_not_check: string;
             /** @default Check */
-            Subdomains_check: string;
+            readonly Subdomains_check: string;
             /** @default Search filter */
-            Search_filter: string;
+            readonly Search_filter: string;
             /** @default Do not filter */
-            Do_not_filter: string;
+            readonly Do_not_filter: string;
             /** @default Moderate */
-            Moderate_filtering: string;
+            readonly Moderate_filtering: string;
             /** @default Family search */
-            Family_search: string;
+            readonly Family_search: string;
             /** @default Spelling */
-            Spelling: string;
+            readonly Spelling: string;
             /** @default Do not correct */
-            Do_not_correct_spelling: string;
+            readonly Do_not_correct_spelling: string;
             /** @default Correct */
-            Correct_spelling: string;
+            readonly Correct_spelling: string;
             /** @default Traffic segmentation */
-            Traffic_segmentation: string;
+            readonly Traffic_segmentation: string;
             /** @default By region */
-            Local_traffic: string;
+            readonly Local_traffic: string;
             /** @default Global */
-            Global_traffic: string;
+            readonly Global_traffic: string;
             /** @default Pick search engine */
-            Select_se: string;
+            readonly Select_se: string;
             /** @default Denied */
-            Integrate_denied: string;
+            readonly Integrate_denied: string;
             /** @default You seem to be logged out of your account */
-            Integrate_account_locked: string;
+            readonly Integrate_account_locked: string;
             /** @default Schedule */
-            Schedule: string;
+            readonly Schedule: string;
             /** @default Competitors */
-            Competitors: string;
+            readonly Competitors: string;
             /** @default competitors */
-            of_competitors: string;
+            readonly of_competitors: string;
             /** @default Access */
-            Access: string;
+            readonly Access: string;
             /** @default Project is archived, access to features is limited. */
-            Project_archived_notice: string;
+            readonly Project_archived_notice: string;
             /** @default Projects inactive during 180 days are archived automatically */
-            Project_archived_90days_notice: string;
+            readonly Project_archived_90days_notice: string;
             /** @default Projects are archived */
-            Projects_archived: string;
+            readonly Projects_archived: string;
             /** @default Popular */
-            Popular: string;
+            readonly Popular: string;
             /** @default Other */
-            Other: string;
+            readonly Other: string;
             /** @default Select project */
-            Select_project: string;
+            readonly Select_project: string;
             /** @default List of projects */
-            To_list_of_projects: string;
+            readonly To_list_of_projects: string;
             /** @default Search projects */
-            Search_projects: string;
+            readonly Search_projects: string;
             /** @default Project transfer */
-            Delegation: string;
+            readonly Delegation: string;
             /** @default Enable/Disable all competitors */
-            Activate_deactivate_competitors: string;
+            readonly Activate_deactivate_competitors: string;
             /** @default Are you sure you want to wipe all competitors? */
-            Wipe_all_competitors: string;
+            readonly Wipe_all_competitors: string;
             /** @default Wipe competitors */
-            Wipe_competitors_note: string;
+            readonly Wipe_competitors_note: string;
             /** @default Reporting period */
-            Reporting_period: string;
+            readonly Reporting_period: string;
             /** @default Do not ask me again */
-            Do_not_ask: string;
+            readonly Do_not_ask: string;
             /** @default To accept a project <b>%project_name%</b> transfer, click the message */
-            To_accept_project_click_msg: string;
+            readonly To_accept_project_click_msg: string;
             /** @default Send to */
-            Reports_send_to_address: string;
+            readonly Reports_send_to_address: string;
             /** @default Tools */
-            Checks: string;
+            readonly Checks: string;
             /** @default Reports */
-            Reports: string;
+            readonly Reports: string;
             /** @default Share project */
-            Access_to_project: string;
+            readonly Access_to_project: string;
             /** @default Transfer project */
-            Transfer_project: string;
+            readonly Transfer_project: string;
             /** @default Do not apply branding */
-            Do_not_brand: string;
+            readonly Do_not_brand: string;
             /** @default Show your account balance */
-            Show_account_balance: string;
+            readonly Show_account_balance: string;
             /** @default Previous step */
-            To_previous_step: string;
+            readonly To_previous_step: string;
             /** @default Next */
-            Next: string;
+            readonly Next: string;
             /** @default Keyword import */
-            Keyword_import: string;
+            readonly Keyword_import: string;
             /** @default Add competitors */
-            Competitor_settings: string;
+            readonly Competitor_settings: string;
             /** @default Search engines and locations */
-            Se_and_locations: string;
+            readonly Se_and_locations: string;
             /** @default Completed */
-            Completed: string;
+            readonly Completed: string;
             /** @default Track rankings */
-            Track_rankings: string;
+            readonly Track_rankings: string;
             /** @default Start site audit */
-            Start_audit: string;
+            readonly Start_audit: string;
             /** @default Start watcher */
-            Start_watcher: string;
+            readonly Start_watcher: string;
             /** @default Start indexing */
-            Start_indexing: string;
+            readonly Start_indexing: string;
             /** @default Sitemap generator */
-            Start_sitemap: string;
+            readonly Start_sitemap: string;
             /** @default Main settings */
-            Main_settings: string;
+            readonly Main_settings: string;
             /** @default Create project */
-            Create_project: string;
+            readonly Create_project: string;
             /** @default Select a project type, add a URL and a name */
-            Select_type_add_name_url: string;
+            readonly Select_type_add_name_url: string;
             /** @default Enter the URL of a channel (youtube.com/@user) or a video (youtube.com/watch?v=...) */
-            Enter_youtube_URL: string;
+            readonly Enter_youtube_URL: string;
             /** @default Enter app URL */
-            Enter_app_URL: string;
+            readonly Enter_app_URL: string;
             /** @default Enter domain (example.com) or page URL (example.com/page/) */
-            Enter_domain_or_page: string;
+            readonly Enter_domain_or_page: string;
             /** @default Site or webpage */
-            Site_or_page: string;
+            readonly Site_or_page: string;
             /** @default Enter project name */
-            Add_project_name: string;
+            readonly Add_project_name: string;
             /** @default Created */
-            Created_date: string;
+            readonly Created_date: string;
             /** @default Project owner */
-            Project_owner: string;
+            readonly Project_owner: string;
             /** @default Add keywords */
-            Add_keywords: string;
+            readonly Add_keywords: string;
             /** @default Add keywords */
-            Add_keywords_button: string;
+            readonly Add_keywords_button: string;
             /** @default Keywords */
-            Keywords_for_import: string;
+            readonly Keywords_for_import: string;
             /** @default Enter keywords, one per line */
-            Enter_keywords_one_per_line: string;
+            readonly Enter_keywords_one_per_line: string;
             /** @default Keyword ideas */
-            Recommended_keywords: string;
+            readonly Recommended_keywords: string;
             /** @default Add selected */
-            Add_selected: string;
+            readonly Add_selected: string;
             /** @default Added keywords */
-            Added_keywords: string;
+            readonly Added_keywords: string;
             /** @default Group and manage tags at */
-            Group_manage_tags_on_page: string;
+            readonly Group_manage_tags_on_page: string;
             /** @default see */
-            see: string;
+            readonly see: string;
             /** @default Add competitors */
-            Add_competitors: string;
+            readonly Add_competitors: string;
             /** @default My competitors */
-            My_competitors: string;
+            readonly My_competitors: string;
             /** @default Competitor URL */
-            Competitor_URL: string;
+            readonly Competitor_URL: string;
             /** @default Competitor name */
-            Competitor_name: string;
+            readonly Competitor_name: string;
             /** @default Find competitors */
-            Find_competitors: string;
+            readonly Find_competitors: string;
             /** @default Suggested competitors */
-            Suggested_competitors: string;
+            readonly Suggested_competitors: string;
             /** @default Check search volume */
-            Get_search_volume: string;
+            readonly Get_search_volume: string;
             /** @default Check keyword rankings */
-            Check_keyword_rankings: string;
+            readonly Check_keyword_rankings: string;
             /** @default Project setup completed */
-            Project_setup_completed: string;
+            readonly Project_setup_completed: string;
             /** @default Add search engines and locations */
-            Add_search_engines_and_locations: string;
+            readonly Add_search_engines_and_locations: string;
             /** @default Select search engine */
-            Select_search_engine: string;
+            readonly Select_search_engine: string;
             /** @default Press a search engine icon and add a location */
-            Press_search_engine_icon_to_add_location: string;
+            readonly Press_search_engine_icon_to_add_location: string;
             /** @default You can manage added locations in project settings */
-            You_can_manage_locations_in_settings: string;
+            readonly You_can_manage_locations_in_settings: string;
             /** @default Enter Location or its Yandex code */
-            Enter_location_or_yandex_code: string;
+            readonly Enter_location_or_yandex_code: string;
             /** @default Locations */
-            Locations: string;
+            readonly Locations: string;
             /** @default Do not run setup wizard */
-            Skip_wizard: string;
+            readonly Skip_wizard: string;
             /** @default Set up Rank Tracker */
-            Setup_rank_tracker: string;
+            readonly Setup_rank_tracker: string;
             /** @default Set up Website Audit */
-            Setup_audit: string;
+            readonly Setup_audit: string;
             /** @default Pages for audit */
-            Setup_audit_urls: string;
+            readonly Setup_audit_urls: string;
             /** @default Set up Watcher */
-            Setup_watcher: string;
+            readonly Setup_watcher: string;
             /** @default Pages for watcher */
-            Setup_watcher_urls: string;
+            readonly Setup_watcher_urls: string;
             /** @default Set up Index Checker */
-            Setup_indexing: string;
+            readonly Setup_indexing: string;
             /** @default Pages for indexing */
-            Setup_indexing_urls: string;
+            readonly Setup_indexing_urls: string;
             /** @default Set up Sitemap Generator */
-            Setup_sitemap: string;
+            readonly Setup_sitemap: string;
             /** @default Add all recommended */
-            Add_all_recommended: string;
+            readonly Add_all_recommended: string;
             /** @default Delete keywords from the orginal project */
-            Delete_keywords_from_orginal_project: string;
+            readonly Delete_keywords_from_orginal_project: string;
             /** @default Name */
-            Project_name: string;
+            readonly Project_name: string;
             /** @default Selected */
-            Project_projects_selected: string;
+            readonly Project_projects_selected: string;
             /** @default Create your first project */
-            Create_your_first_project: string;
+            readonly Create_your_first_project: string;
             /** @default No projects match filter */
-            No_projects_match_filter: string;
+            readonly No_projects_match_filter: string;
             /** @default Enter folder name */
-            Enter_folder_name: string;
+            readonly Enter_folder_name: string;
             /** @default No tasks found. Add keywords, a search engine and a location in the project settings */
-            Add_keywords_se_locations_to_check_notice: string;
+            readonly Add_keywords_se_locations_to_check_notice: string;
             /** @default Summary by location */
-            Summary_by_location: string;
+            readonly Summary_by_location: string;
             /** @default Project type */
-            Project_type: string;
+            readonly Project_type: string;
             /** @default Project folder */
-            Project_folder: string;
+            readonly Project_folder: string;
             /** @default Selected project type */
-            Selected_project_type: string;
+            readonly Selected_project_type: string;
             /** @default Project owner will be charged */
-            Cost_for_guest_project_owner: string;
+            readonly Cost_for_guest_project_owner: string;
             /** @default Move to folder */
-            Move_to_folder: string;
+            readonly Move_to_folder: string;
             /** @default Open in new tab */
-            Open_in_new_tab: string;
+            readonly Open_in_new_tab: string;
             /** @default In queue */
-            In_queue: string;
+            readonly In_queue: string;
             /** @default In progress */
-            In_progress: string;
+            readonly In_progress: string;
             /** @default Number of URLs */
-            URL_count: string;
+            readonly URL_count: string;
             /** @default Username */
-            Username: string;
+            readonly Username: string;
             /** @default Spent */
-            Spent: string;
+            readonly Spent: string;
             /** @default Spend limit */
-            Spend_limit: string;
+            readonly Spend_limit: string;
         };
     };
     responses: never;
