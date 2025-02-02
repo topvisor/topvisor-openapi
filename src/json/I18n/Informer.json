@@ -11,91 +11,120 @@
                 "type": "object",
                 "properties": {
                     "Type_balance": {
-                        "const": "Balance"
+                        "const": "Balance",
+                        "readOnly": true
                     },
                     "Type_news": {
-                        "const": "Sevice news"
+                        "const": "Sevice news",
+                        "readOnly": true
                     },
                     "Type_tickets": {
-                        "const": "Tickets"
+                        "const": "Tickets",
+                        "readOnly": true
                     },
                     "Type_yandex_update": {
-                        "const": "Yandex update"
+                        "const": "Yandex update",
+                        "readOnly": true
                     },
                     "Type_comments": {
-                        "const": "New comment alerts"
+                        "const": "New comment alerts",
+                        "readOnly": true
                     },
                     "Type_api": {
-                        "const": "API updates"
+                        "const": "API updates",
+                        "readOnly": true
                     },
                     "Unsubscribe": {
-                        "const": "Unsubscribe"
+                        "const": "Unsubscribe",
+                        "readOnly": true
                     },
                     "Enter_title_and_text": {
-                        "const": "Enter title and message text"
+                        "const": "Enter title and message text",
+                        "readOnly": true
                     },
                     "Log_text": {
-                        "const": "Emailing"
+                        "const": "Emailing",
+                        "readOnly": true
                     },
                     "Log_text2": {
-                        "const": "only for subscribers"
+                        "const": "only for subscribers",
+                        "readOnly": true
                     },
                     "Tickets_title": {
-                        "const": "You received a new reply to your ticket"
+                        "const": "You received a new reply to your ticket",
+                        "readOnly": true
                     },
                     "Balance_title": {
-                        "const": "Account balance alert"
+                        "const": "Account balance alert",
+                        "readOnly": true
                     },
                     "Update_title": {
-                        "const": "Yandex search results updated"
+                        "const": "Yandex search results updated",
+                        "readOnly": true
                     },
                     "Comments_title": {
-                        "const": "You comment has a new reply! Join the discussion 😎"
+                        "const": "You comment has a new reply! Join the discussion 😎",
+                        "readOnly": true
                     },
                     "No_new_notifications": {
-                        "const": "No notifications yet"
+                        "const": "No notifications yet",
+                        "readOnly": true
                     },
                     "clear_all": {
-                        "const": "clear all"
+                        "const": "clear all",
+                        "readOnly": true
                     },
                     "Notifications": {
-                        "const": "Notifications"
+                        "const": "Notifications",
+                        "readOnly": true
                     },
                     "Email": {
-                        "const": "Email"
+                        "const": "Email",
+                        "readOnly": true
                     },
                     "Push": {
-                        "const": "Push"
+                        "const": "Push",
+                        "readOnly": true
                     },
                     "Block": {
-                        "const": "Block"
+                        "const": "Block",
+                        "readOnly": true
                     },
                     "Informer": {
-                        "const": "Alerts"
+                        "const": "Alerts",
+                        "readOnly": true
                     },
                     "Select_all": {
-                        "const": "Select all"
+                        "const": "Select all",
+                        "readOnly": true
                     },
                     "Clear_all": {
-                        "const": "Clear all"
+                        "const": "Clear all",
+                        "readOnly": true
                     },
                     "Comment_replies": {
-                        "const": "Comment replies"
+                        "const": "Comment replies",
+                        "readOnly": true
                     },
                     "replied_to_you": {
-                        "const": " replied to you"
+                        "const": " replied to you",
+                        "readOnly": true
                     },
                     "in_comments_on_the_post": {
-                        "const": "in comments on the post"
+                        "const": "in comments on the post",
+                        "readOnly": true
                     },
                     "Email_delivery_failure": {
-                        "const": "Email delivery has failed to this recipient"
+                        "const": "Email delivery has failed to this recipient",
+                        "readOnly": true
                     },
                     "email_unsubscribed_from_reports": {
-                        "const": "unsubscribed from reports of projects"
+                        "const": "unsubscribed from reports of projects",
+                        "readOnly": true
                     },
                     "You_unsubscribed_from_emails": {
-                        "const": "You unsubscribed from emails to"
+                        "const": "You unsubscribed from emails to",
+                        "readOnly": true
                     }
                 },
                 "required": [

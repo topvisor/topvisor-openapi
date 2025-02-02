@@ -11,46 +11,60 @@
                 "type": "object",
                 "properties": {
                     "Link_deleted": {
-                        "const": "Link deleted"
+                        "const": "Link deleted",
+                        "readOnly": true
                     },
                     "Show_deleted_links": {
-                        "const": "Show deleted links"
+                        "const": "Show deleted links",
+                        "readOnly": true
                     },
                     "Show_favorite_links": {
-                        "const": "Show favorite links"
+                        "const": "Show favorite links",
+                        "readOnly": true
                     },
                     "Remove_link": {
-                        "const": "Delete link"
+                        "const": "Delete link",
+                        "readOnly": true
                     },
                     "Recover_link": {
-                        "const": "Restore link"
+                        "const": "Restore link",
+                        "readOnly": true
                     },
                     "Set_favorite": {
-                        "const": "Star link"
+                        "const": "Star link",
+                        "readOnly": true
                     },
                     "Link_cannot_be_shortened": {
-                        "const": "URL cannot be shorten."
+                        "const": "URL cannot be shorten.",
+                        "readOnly": true
                     },
                     "Link_blocked_roskomnadzor": {
-                        "const": "URL cannot be shorten (4). URL blocked by Roskomnadzor."
+                        "const": "URL cannot be shorten (4). URL blocked by Roskomnadzor.",
+                        "readOnly": true
                     },
                     "Sort_name_desc": {
-                        "const": "Title Z-A"
+                        "const": "Title Z-A",
+                        "readOnly": true
                     },
                     "Sort_name_asc": {
-                        "const": "Title A-Z"
+                        "const": "Title A-Z",
+                        "readOnly": true
                     },
                     "Sort_clicks_desc": {
-                        "const": "Clicks descending"
+                        "const": "Clicks descending",
+                        "readOnly": true
                     },
                     "Sort_clicks_asc": {
-                        "const": "Clicks ascending"
+                        "const": "Clicks ascending",
+                        "readOnly": true
                     },
                     "Sort_date_asc": {
-                        "const": "By date from oldest to newest"
+                        "const": "By date from oldest to newest",
+                        "readOnly": true
                     },
                     "Sort_date_desc": {
-                        "const": "By date from newest to oldest"
+                        "const": "By date from newest to oldest",
+                        "readOnly": true
                     }
                 },
                 "required": [

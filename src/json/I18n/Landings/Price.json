@@ -11,43 +11,56 @@
                 "type": "object",
                 "properties": {
                     "Depth": {
-                        "const": "depth"
+                        "const": "depth",
+                        "readOnly": true
                     },
                     "of_results": {
-                        "const": "results"
+                        "const": "results",
+                        "readOnly": true
                     },
                     "of_keywords": {
-                        "const": "keywords"
+                        "const": "keywords",
+                        "readOnly": true
                     },
                     "of_pages": {
-                        "const": "URLs"
+                        "const": "URLs",
+                        "readOnly": true
                     },
                     "up_to": {
-                        "const": "up to"
+                        "const": "up to",
+                        "readOnly": true
                     },
                     "from": {
-                        "const": "from"
+                        "const": "from",
+                        "readOnly": true
                     },
                     "Without_discount": {
-                        "const": "No discount"
+                        "const": "No discount",
+                        "readOnly": true
                     },
                     "What_is_a_tariff": {
-                        "const": "What is a pricing plan (tariff)?"
+                        "const": "What is a pricing plan (tariff)?",
+                        "readOnly": true
                     },
                     "Rank_tracker_and_collecting_TOP": {
-                        "const": "Rank Tracking and SERP Top"
+                        "const": "Rank Tracking and SERP Top",
+                        "readOnly": true
                     },
                     "Semantics": {
-                        "const": "Semantics"
+                        "const": "Semantics",
+                        "readOnly": true
                     },
                     "Technical_Seo": {
-                        "const": "Technical SEO"
+                        "const": "Technical SEO",
+                        "readOnly": true
                     },
                     "Yandex_direct": {
-                        "const": "Yandex Direct"
+                        "const": "Yandex Direct",
+                        "readOnly": true
                     },
                     "Account": {
-                        "const": "Account"
+                        "const": "Account",
+                        "readOnly": true
                     }
                 },
                 "required": [

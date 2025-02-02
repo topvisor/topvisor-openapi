@@ -9,109 +9,109 @@ export interface components {
     schemas: {
         "I18n.Tickets": {
             /** @constant */
-            Reply_Title: "Ticket reply";
+            readonly Reply_Title: "Ticket reply";
             /** @constant */
-            Reply_notice: "When replying to the ticket, please do not change the topic";
+            readonly Reply_notice: "When replying to the ticket, please do not change the topic";
             /** @constant */
-            Auto_message_title: "Thank you, your ticket has been submitted";
+            readonly Auto_message_title: "Thank you, your ticket has been submitted";
             /** @constant */
-            Open_tickets: "Open";
+            readonly Open_tickets: "Open";
             /** @constant */
-            Closed_tickets: "Closed";
+            readonly Closed_tickets: "Closed";
             /** @constant */
-            Close_ticket: "Close ticket";
+            readonly Close_ticket: "Close ticket";
             /** @constant */
-            Open_ticket: "Open ticket";
+            readonly Open_ticket: "Open ticket";
             /** @constant */
-            Add_to_favorites: "Add to favorites";
+            readonly Add_to_favorites: "Add to favorites";
             /** @constant */
-            Remove_from_favorites: "Remove from favorites";
+            readonly Remove_from_favorites: "Remove from favorites";
             /** @constant */
-            Continue_in_new_ticket: "Continue in new ticket";
+            readonly Continue_in_new_ticket: "Continue in new ticket";
             /** @constant */
-            Quote_message: "Quote message";
+            readonly Quote_message: "Quote message";
             /** @constant */
-            Edit_message: "Edit message";
+            readonly Edit_message: "Edit message";
             /** @constant */
-            Delete_message: "Delete message";
+            readonly Delete_message: "Delete message";
             /** @constant */
-            User_info: "User info";
+            readonly User_info: "User info";
             /** @constant */
-            Device: "Device";
+            readonly Device: "Device";
             /** @constant */
-            Browser: "Browser";
+            readonly Browser: "Browser";
             /** @constant */
-            Pricing_plan: "Pricing plan";
+            readonly Pricing_plan: "Pricing plan";
             /** @constant */
-            Edit_template: "Edit template";
+            readonly Edit_template: "Edit template";
             /** @constant */
-            Template_title: "Title";
+            readonly Template_title: "Title";
             /** @constant */
-            Add_msg: "Write a message";
+            readonly Add_msg: "Write a message";
             /** @constant */
-            Delete_template: "Delete template";
+            readonly Delete_template: "Delete template";
             /** @constant */
-            Found: "Results";
+            readonly Found: "Results";
             /** @constant */
-            Search_tickets: "Search tickets";
+            readonly Search_tickets: "Search tickets";
             /** @constant */
-            New_ticket: "Create ticket";
+            readonly New_ticket: "Create ticket";
             /** @constant */
-            Reopen_ticket: "Reopen ticket";
+            readonly Reopen_ticket: "Reopen ticket";
             /** @constant */
-            Text_welcome_1: "Select a ticket or";
+            readonly Text_welcome_1: "Select a ticket or";
             /** @constant */
-            Text_welcome_2: "create a new one";
+            readonly Text_welcome_2: "create a new one";
             /** @constant */
-            Text_welcome_3: "to contact Customer Support";
+            readonly Text_welcome_3: "to contact Customer Support";
             /** @constant */
-            Text_new_ticket_1: "Please describe the problem or ask a question";
+            readonly Text_new_ticket_1: "Please describe the problem or ask a question";
             /** @constant */
-            Text_new_ticket_2: "We will get back to you shortly 💙";
+            readonly Text_new_ticket_2: "We will get back to you shortly 💙";
             /** @constant */
-            Ticket_source_page: "Ticket source page";
+            readonly Ticket_source_page: "Ticket source page";
             /** @constant */
-            Sound_mute: "Mute";
+            readonly Sound_mute: "Mute";
             /** @constant */
-            Sound_pencil: "Pencil";
+            readonly Sound_pencil: "Pencil";
             /** @constant */
-            Sound_magic_wand: "Magic wand";
+            readonly Sound_magic_wand: "Magic wand";
             /** @constant */
-            Sound_bounce: "Bounce";
+            readonly Sound_bounce: "Bounce";
             /** @constant */
-            Sound_beep: "Beep";
+            readonly Sound_beep: "Beep";
             /** @constant */
-            Sound_xylophone: "Xylophone";
+            readonly Sound_xylophone: "Xylophone";
             /** @constant */
-            Sound_drums: "Drums";
+            readonly Sound_drums: "Drums";
             /** @constant */
-            Average_expenses: "Average expenses";
+            readonly Average_expenses: "Average expenses";
             /** @constant */
-            Bad: "Bad";
+            readonly Bad: "Bad";
             /** @constant */
-            Normal: "OK";
+            readonly Normal: "OK";
             /** @constant */
-            Good: "Great!";
+            readonly Good: "Great!";
             /** @constant */
-            Title_start: "Rate how the Support did their part";
+            readonly Title_start: "Rate how the Support did their part";
             /** @constant */
-            Title_finish: "Thanks for the feedback!";
+            readonly Title_finish: "Thanks for the feedback!";
             /** @constant */
-            Text_start: "It'll help us to get better.";
+            readonly Text_start: "It'll help us to get better.";
             /** @constant */
-            Text_good: "We'll keep it up.";
+            readonly Text_good: "We'll keep it up.";
             /** @constant */
-            Text_bad: "We'll improve our service.";
+            readonly Text_bad: "We'll improve our service.";
             /** @constant */
-            Comment_title_good: "What did you particularly enjoy?";
+            readonly Comment_title_good: "What did you particularly enjoy?";
             /** @constant */
-            Comment_title_bad: "Tell us what was wrong — we'll do everything to get better!";
+            readonly Comment_title_bad: "Tell us what was wrong — we'll do everything to get better!";
             /** @constant */
-            Button_change_review: "Change the feedback";
+            readonly Button_change_review: "Change the feedback";
             /** @constant */
-            Online: "Online";
+            readonly Online: "Online";
             /** @constant */
-            Visited: "Last seen";
+            readonly Visited: "Last seen";
         };
     };
     responses: never;

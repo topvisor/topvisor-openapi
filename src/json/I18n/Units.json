@@ -11,13 +11,16 @@
                 "type": "object",
                 "properties": {
                     "s": {
-                        "const": "s"
+                        "const": "s",
+                        "readOnly": true
                     },
                     "ms": {
-                        "const": "ms"
+                        "const": "ms",
+                        "readOnly": true
                     },
                     "KB": {
-                        "const": "KB"
+                        "const": "KB",
+                        "readOnly": true
                     }
                 },
                 "required": [

@@ -11,7 +11,8 @@
                 "type": "object",
                 "properties": {
                     "Text_confirm_delete_widget": {
-                        "const": "Are you sure you want to delete this widget?"
+                        "const": "Are you sure you want to delete this widget?",
+                        "readOnly": true
                     }
                 },
                 "required": [

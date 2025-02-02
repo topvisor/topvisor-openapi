@@ -11,34 +11,44 @@
                 "type": "object",
                 "properties": {
                     "Title": {
-                        "const": "Manage columns"
+                        "const": "Manage columns",
+                        "readOnly": true
                     },
                     "Column": {
-                        "const": "Column"
+                        "const": "Column",
+                        "readOnly": true
                     },
                     "Last_columns_list": {
-                        "const": "List of recent columns"
+                        "const": "List of recent columns",
+                        "readOnly": true
                     },
                     "Save_as_new_template": {
-                        "const": "Save as new template"
+                        "const": "Save as new template",
+                        "readOnly": true
                     },
                     "save_changes": {
-                        "const": "save changes"
+                        "const": "save changes",
+                        "readOnly": true
                     },
                     "Added_columns": {
-                        "const": "Added columns"
+                        "const": "Added columns",
+                        "readOnly": true
                     },
                     "Columns_settings": {
-                        "const": "Column settings"
+                        "const": "Column settings",
+                        "readOnly": true
                     },
                     "Delete_columns": {
-                        "const": "Delete columns"
+                        "const": "Delete columns",
+                        "readOnly": true
                     },
                     "No_columns_added": {
-                        "const": "No columns added"
+                        "const": "No columns added",
+                        "readOnly": true
                     },
                     "Advanced_options": {
-                        "const": "Advanced options"
+                        "const": "Advanced options",
+                        "readOnly": true
                     }
                 },
                 "required": [

@@ -11,1414 +11,1884 @@
                 "type": "object",
                 "properties": {
                     "url_lang_prefix": {
-                        "const": ""
+                        "const": "",
+                        "readOnly": true
                     },
                     "Page_404_text": {
-                        "const": "Page Not Found"
+                        "const": "Page Not Found",
+                        "readOnly": true
                     },
                     "Page_404_text2": {
-                        "const": "You will be redirected <br> in"
+                        "const": "You will be redirected <br> in",
+                        "readOnly": true
                     },
                     "Page_404_sec": {
-                        "const": "seconds"
+                        "const": "seconds",
+                        "readOnly": true
                     },
                     "Page_403_text": {
-                        "const": "Access denied"
+                        "const": "Access denied",
+                        "readOnly": true
                     },
                     "openApp_text": {
-                        "const": "Page loading"
+                        "const": "Page loading",
+                        "readOnly": true
                     },
                     "openApp_text2": {
-                        "const": "Open application"
+                        "const": "Open application",
+                        "readOnly": true
                     },
                     "lang": {
-                        "const": "en"
+                        "const": "en",
+                        "readOnly": true
                     },
                     "lang_country": {
-                        "const": "US"
+                        "const": "US",
+                        "readOnly": true
                     },
                     "lang_url": {
-                        "const": ""
+                        "const": "",
+                        "readOnly": true
                     },
                     "alternate_lang": {
-                        "const": "ru"
+                        "const": "ru",
+                        "readOnly": true
                     },
                     "alternate_lang_country": {
-                        "const": "RU"
+                        "const": "RU",
+                        "readOnly": true
                     },
                     "alternate_lang_url": {
-                        "const": "/ru"
+                        "const": "/ru",
+                        "readOnly": true
                     },
                     "Lang_full": {
-                        "const": "English"
+                        "const": "English",
+                        "readOnly": true
                     },
                     "language": {
-                        "const": "language"
+                        "const": "language",
+                        "readOnly": true
                     },
                     "Language": {
-                        "const": "Language"
+                        "const": "Language",
+                        "readOnly": true
                     },
                     "locale": {
-                        "const": "en_US"
+                        "const": "en_US",
+                        "readOnly": true
                     },
                     "date_format": {
-                        "const": "m/d/Y"
+                        "const": "m/d/Y",
+                        "readOnly": true
                     },
                     "Description": {
-                        "const": "Tools for tracking, analyzing and measuring SEO performance"
+                        "const": "Tools for tracking, analyzing and measuring SEO performance",
+                        "readOnly": true
                     },
                     "Og_description": {
-                        "const": "Try out SEO & PPC Tools for keyword research, clustering, rank tracking and on-page optimization. Get better results from paid search and organic rankings!"
+                        "const": "Try out SEO & PPC Tools for keyword research, clustering, rank tracking and on-page optimization. Get better results from paid search and organic rankings!",
+                        "readOnly": true
                     },
                     "Og_description_invite": {
-                        "const": "SEO & PPC Tools for better marketing. Highly recommended!"
+                        "const": "SEO & PPC Tools for better marketing. Highly recommended!",
+                        "readOnly": true
                     },
                     "Ascending": {
-                        "const": "Ascending"
+                        "const": "Ascending",
+                        "readOnly": true
                     },
                     "Descending": {
-                        "const": "Descending"
+                        "const": "Descending",
+                        "readOnly": true
                     },
                     "TV_address_street": {
-                        "const": "Voronezhskaya ul."
+                        "const": "Voronezhskaya ul.",
+                        "readOnly": true
                     },
                     "Message_session_security_error": {
-                        "const": "Session security error, please <a href=\"/\">refresh page</a> and try again"
+                        "const": "Session security error, please <a href=\"/\">refresh page</a> and try again",
+                        "readOnly": true
                     },
                     "Message_dbh_remote": {
-                        "const": "We're upgrading our servers. The service is temporarily unavailable. Please, try again later"
+                        "const": "We're upgrading our servers. The service is temporarily unavailable. Please, try again later",
+                        "readOnly": true
                     },
                     "Message_dbh_remote_error": {
-                        "const": "We're upgrading our servers. Tasks creating is temporarily unavailable. Please, try again later"
+                        "const": "We're upgrading our servers. Tasks creating is temporarily unavailable. Please, try again later",
+                        "readOnly": true
                     },
                     "Message_ch_error": {
-                        "const": "We're upgrading this module's server, please, try again later"
+                        "const": "We're upgrading this module's server, please, try again later",
+                        "readOnly": true
                     },
                     "Message_sp_error": {
-                        "const": "We're upgrading this module's server, please, try again later"
+                        "const": "We're upgrading this module's server, please, try again later",
+                        "readOnly": true
                     },
                     "Every_day": {
-                        "const": "Every day"
+                        "const": "Every day",
+                        "readOnly": true
                     },
                     "time_a_0": {
-                        "const": "times"
+                        "const": "times",
+                        "readOnly": true
                     },
                     "time_a_1": {
-                        "const": "time"
+                        "const": "time",
+                        "readOnly": true
                     },
                     "time_a_2": {
-                        "const": "times"
+                        "const": "times",
+                        "readOnly": true
                     },
                     "a_week": {
-                        "const": "a week"
+                        "const": "a week",
+                        "readOnly": true
                     },
                     "a_month": {
-                        "const": "a month"
+                        "const": "a month",
+                        "readOnly": true
                     },
                     "discount": {
-                        "const": "discount"
+                        "const": "discount",
+                        "readOnly": true
                     },
                     "month_short": {
-                        "const": "mo"
+                        "const": "mo",
+                        "readOnly": true
                     },
                     "Balance": {
-                        "const": "Balance"
+                        "const": "Balance",
+                        "readOnly": true
                     },
                     "Referrals": {
-                        "const": "Affiliate program"
+                        "const": "Affiliate program",
+                        "readOnly": true
                     },
                     "Organization": {
-                        "const": "Organization"
+                        "const": "Organization",
+                        "readOnly": true
                     },
                     "Yes": {
-                        "const": "Yes"
+                        "const": "Yes",
+                        "readOnly": true
                     },
                     "Exists": {
-                        "const": "Exists"
+                        "const": "Exists",
+                        "readOnly": true
                     },
                     "No": {
-                        "const": "No"
+                        "const": "No",
+                        "readOnly": true
                     },
                     "not": {
-                        "const": "not"
+                        "const": "not",
+                        "readOnly": true
                     },
                     "and": {
-                        "const": "and"
+                        "const": "and",
+                        "readOnly": true
                     },
                     "ruble": {
-                        "const": "rub."
+                        "const": "rub.",
+                        "readOnly": true
                     },
                     "for": {
-                        "const": "for"
+                        "const": "for",
+                        "readOnly": true
                     },
                     "For": {
-                        "const": "For"
+                        "const": "For",
+                        "readOnly": true
                     },
                     "Close": {
-                        "const": "Close"
+                        "const": "Close",
+                        "readOnly": true
                     },
                     "OK": {
-                        "const": "OK"
+                        "const": "OK",
+                        "readOnly": true
                     },
                     "Apply": {
-                        "const": "OK"
+                        "const": "OK",
+                        "readOnly": true
                     },
                     "Choose": {
-                        "const": "Apply"
+                        "const": "Apply",
+                        "readOnly": true
                     },
                     "Download": {
-                        "const": "Download"
+                        "const": "Download",
+                        "readOnly": true
                     },
                     "download": {
-                        "const": "download"
+                        "const": "download",
+                        "readOnly": true
                     },
                     "Step": {
-                        "const": "Step"
+                        "const": "Step",
+                        "readOnly": true
                     },
                     "Continue": {
-                        "const": "Continue"
+                        "const": "Continue",
+                        "readOnly": true
                     },
                     "Back": {
-                        "const": "Back"
+                        "const": "Back",
+                        "readOnly": true
                     },
                     "Next": {
-                        "const": "Next"
+                        "const": "Next",
+                        "readOnly": true
                     },
                     "Prev_page_short": {
-                        "const": "Prev"
+                        "const": "Prev",
+                        "readOnly": true
                     },
                     "Next_page_short": {
-                        "const": "Next"
+                        "const": "Next",
+                        "readOnly": true
                     },
                     "project": {
-                        "const": "project"
+                        "const": "project",
+                        "readOnly": true
                     },
                     "Project": {
-                        "const": "Project"
+                        "const": "Project",
+                        "readOnly": true
                     },
                     "of_project": {
-                        "const": "of project"
+                        "const": "of project",
+                        "readOnly": true
                     },
                     "Tool_digest": {
-                        "const": "Tool digest (2024)"
+                        "const": "Tool digest (2024)",
+                        "readOnly": true
                     },
                     "Ticket": {
-                        "const": "Ticket"
+                        "const": "Ticket",
+                        "readOnly": true
                     },
                     "Tickets": {
-                        "const": "Tickets"
+                        "const": "Tickets",
+                        "readOnly": true
                     },
                     "All_tickets": {
-                        "const": "All tickets"
+                        "const": "All tickets",
+                        "readOnly": true
                     },
                     "All_pages": {
-                        "const": "All articles"
+                        "const": "All articles",
+                        "readOnly": true
                     },
                     "Submit": {
-                        "const": "Submit"
+                        "const": "Submit",
+                        "readOnly": true
                     },
                     "Tickets_page": {
-                        "const": "\"Tickets\" page"
+                        "const": "\"Tickets\" page",
+                        "readOnly": true
                     },
                     "Submitted": {
-                        "const": "Submitted"
+                        "const": "Submitted",
+                        "readOnly": true
                     },
                     "Created_at": {
-                        "const": "Created"
+                        "const": "Created",
+                        "readOnly": true
                     },
                     "Schet_number": {
-                        "const": "No."
+                        "const": "No.",
+                        "readOnly": true
                     },
                     "Cancel": {
-                        "const": "Cancel"
+                        "const": "Cancel",
+                        "readOnly": true
                     },
                     "Send": {
-                        "const": "Send"
+                        "const": "Send",
+                        "readOnly": true
                     },
                     "More": {
-                        "const": "More"
+                        "const": "More",
+                        "readOnly": true
                     },
                     "Read_more": {
-                        "const": "Read more"
+                        "const": "Read more",
+                        "readOnly": true
                     },
                     "User": {
-                        "const": "User"
+                        "const": "User",
+                        "readOnly": true
                     },
                     "Message": {
-                        "const": "Message"
+                        "const": "Message",
+                        "readOnly": true
                     },
                     "Message_not_sended": {
-                        "const": "Message hasn't been sent"
+                        "const": "Message hasn't been sent",
+                        "readOnly": true
                     },
                     "Comment_not_deleted": {
-                        "const": "Comment not removed"
+                        "const": "Comment not removed",
+                        "readOnly": true
                     },
                     "Link": {
-                        "const": "Link"
+                        "const": "Link",
+                        "readOnly": true
                     },
                     "Name": {
-                        "const": "Name"
+                        "const": "Name",
+                        "readOnly": true
                     },
                     "First_and_last_name": {
-                        "const": "First and last name"
+                        "const": "First and last name",
+                        "readOnly": true
                     },
                     "Access_denied": {
-                        "const": "Access denied"
+                        "const": "Access denied",
+                        "readOnly": true
                     },
                     "Access_error": {
-                        "const": "Access error"
+                        "const": "Access error",
+                        "readOnly": true
                     },
                     "No_data": {
-                        "const": "No data found"
+                        "const": "No data found",
+                        "readOnly": true
                     },
                     "No_results": {
-                        "const": "No results"
+                        "const": "No results",
+                        "readOnly": true
                     },
                     "Dynamics": {
-                        "const": "Dynamics"
+                        "const": "Dynamics",
+                        "readOnly": true
                     },
                     "Country": {
-                        "const": "Country"
+                        "const": "Country",
+                        "readOnly": true
                     },
                     "Number": {
-                        "const": "No."
+                        "const": "No.",
+                        "readOnly": true
                     },
                     "Number_word": {
-                        "const": "Number"
+                        "const": "Number",
+                        "readOnly": true
                     },
                     "CPC": {
-                        "const": "CPC"
+                        "const": "CPC",
+                        "readOnly": true
                     },
                     "Clear": {
-                        "const": "Clear"
+                        "const": "Clear",
+                        "readOnly": true
                     },
                     "Phone": {
-                        "const": "Phone number"
+                        "const": "Phone number",
+                        "readOnly": true
                     },
                     "Email": {
-                        "const": "Email"
+                        "const": "Email",
+                        "readOnly": true
                     },
                     "Email_not_exist": {
-                        "const": "The Email you entered doesn't exist"
+                        "const": "The Email you entered doesn't exist",
+                        "readOnly": true
                     },
                     "Password_incorrect": {
-                        "const": "The password you entered is incorrect!"
+                        "const": "The password you entered is incorrect!",
+                        "readOnly": true
                     },
                     "Enter_email": {
-                        "const": "Enter email"
+                        "const": "Enter email",
+                        "readOnly": true
                     },
                     "Enter_password": {
-                        "const": "Enter password"
+                        "const": "Enter password",
+                        "readOnly": true
                     },
                     "Remember_me": {
-                        "const": "Remember me"
+                        "const": "Remember me",
+                        "readOnly": true
                     },
                     "Forgot_password": {
-                        "const": "Forgot your password?"
+                        "const": "Forgot your password?",
+                        "readOnly": true
                     },
                     "Signup_now": {
-                        "const": "Sign up now"
+                        "const": "Sign up now",
+                        "readOnly": true
                     },
                     "Sign_in_with": {
-                        "const": "Sign in with"
+                        "const": "Sign in with",
+                        "readOnly": true
                     },
                     "Password_recovering": {
-                        "const": "Recover password"
+                        "const": "Recover password",
+                        "readOnly": true
                     },
                     "Recover_password": {
-                        "const": "Recover password"
+                        "const": "Recover password",
+                        "readOnly": true
                     },
                     "Keywords_one_per_line": {
-                        "const": "Keywords (each keyword on a new line)"
+                        "const": "Keywords (each keyword on a new line)",
+                        "readOnly": true
                     },
                     "Add_se": {
-                        "const": "Add a Search engine"
+                        "const": "Add a Search engine",
+                        "readOnly": true
                     },
                     "Create_project": {
-                        "const": "Create a project"
+                        "const": "Create a project",
+                        "readOnly": true
                     },
                     "Creating": {
-                        "const": "Creating..."
+                        "const": "Creating...",
+                        "readOnly": true
                     },
                     "Enter_valid_email_notice": {
-                        "const": "Enter a valid E-mail address"
+                        "const": "Enter a valid E-mail address",
+                        "readOnly": true
                     },
                     "No_account_sign_up": {
-                        "const": "No account? <a href=\".\" data-to-view=\"%toViewReg%\">Sign up</a>"
+                        "const": "No account? <a href=\".\" data-to-view=\"%toViewReg%\">Sign up</a>",
+                        "readOnly": true
                     },
                     "No_account": {
-                        "const": "No account?"
+                        "const": "No account?",
+                        "readOnly": true
                     },
                     "Through_registration_you_confirm_agreement_policy": {
-                        "const": "By pressing Sign up you accept <a href=\"%hrefConfirm%\" target=\"_blank\">Terms and Conditions</a> and <a href=\"%hrefPrivacy%\" target=\"_blank\">Privacy Policy</a>"
+                        "const": "By pressing Sign up you accept <a href=\"%hrefConfirm%\" target=\"_blank\">Terms and Conditions</a> and <a href=\"%hrefPrivacy%\" target=\"_blank\">Privacy Policy</a>",
+                        "readOnly": true
                     },
                     "Already_have_account": {
-                        "const": "Already have an account"
+                        "const": "Already have an account",
+                        "readOnly": true
                     },
                     "Try_again_or_sign_up": {
-                        "const": "<a href=\".\" data-to-view=\"%toViewAuth%\">Log in</a> or <a href=\".\" data-to-view=\"%toViewReg%\">sign up</a>"
+                        "const": "<a href=\".\" data-to-view=\"%toViewAuth%\">Log in</a> or <a href=\".\" data-to-view=\"%toViewReg%\">sign up</a>",
+                        "readOnly": true
                     },
                     "If_no_msg_check_spam_ask_support_notice": {
-                        "const": "If you didn't receive a message, check a <b>Spam</b> folder or submit a ticket to <a href=\"%hrefCreateTicket%\">Customer support</a>"
+                        "const": "If you didn't receive a message, check a <b>Spam</b> folder or submit a ticket to <a href=\"%hrefCreateTicket%\">Customer support</a>",
+                        "readOnly": true
                     },
                     "If_no_msg": {
-                        "const": "If you didn't receive a message, check a <b>Spam</b> folder or submit a ticket to "
+                        "const": "If you didn't receive a message, check a <b>Spam</b> folder or submit a ticket to ",
+                        "readOnly": true
                     },
                     "support_notice": {
-                        "const": "Customer support"
+                        "const": "Customer support",
+                        "readOnly": true
                     },
                     "Confirmation_link_sent_to_email": {
-                        "const": "A confirmation link has been sent to "
+                        "const": "A confirmation link has been sent to ",
+                        "readOnly": true
                     },
                     "Internal_error": {
-                        "const": "Internal error occurred, please submit a report to the developers"
+                        "const": "Internal error occurred, please submit a report to the developers",
+                        "readOnly": true
                     },
                     "Unknown_error": {
-                        "const": "Unknown error occurred, please try again later"
+                        "const": "Unknown error occurred, please try again later",
+                        "readOnly": true
                     },
                     "Google_server_error": {
-                        "const": "Google server error"
+                        "const": "Google server error",
+                        "readOnly": true
                     },
                     "Yandex_API_server_error": {
-                        "const": "Yandex.API server error"
+                        "const": "Yandex.API server error",
+                        "readOnly": true
                     },
                     "Yandex_auth_error": {
-                        "const": "Error occurred! Please, contact the project owner to resolve the issue!"
+                        "const": "Error occurred! Please, contact the project owner to resolve the issue!",
+                        "readOnly": true
                     },
                     "Request_error_required": {
-                        "const": "Required parameter missing in the request"
+                        "const": "Required parameter missing in the request",
+                        "readOnly": true
                     },
                     "Request_error_type": {
-                        "const": "Passed parameter type mismatch"
+                        "const": "Passed parameter type mismatch",
+                        "readOnly": true
                     },
                     "Request_error_value": {
-                        "const": "Passed parameter value mismatch"
+                        "const": "Passed parameter value mismatch",
+                        "readOnly": true
                     },
                     "Request_error_qualifiers": {
-                        "const": "Passed qualifiers mismatch"
+                        "const": "Passed qualifiers mismatch",
+                        "readOnly": true
                     },
                     "Error_regexp": {
-                        "const": "Regular expression error"
+                        "const": "Regular expression error",
+                        "readOnly": true
                     },
                     "Valid_characters": {
-                        "const": "Valid characters"
+                        "const": "Valid characters",
+                        "readOnly": true
                     },
                     "Bonus": {
-                        "const": "Bonus"
+                        "const": "Bonus",
+                        "readOnly": true
                     },
                     "or": {
-                        "const": "or"
+                        "const": "or",
+                        "readOnly": true
                     },
                     "to": {
-                        "const": "until"
+                        "const": "until",
+                        "readOnly": true
                     },
                     "to_1": {
-                        "const": "to"
+                        "const": "to",
+                        "readOnly": true
                     },
                     "at": {
-                        "const": "at"
+                        "const": "at",
+                        "readOnly": true
                     },
                     "To": {
-                        "const": "Until"
+                        "const": "Until",
+                        "readOnly": true
                     },
                     "Until": {
-                        "const": "Up to "
+                        "const": "Up to ",
+                        "readOnly": true
                     },
                     "next_count": {
-                        "const": "next"
+                        "const": "next",
+                        "readOnly": true
                     },
                     "pages": {
-                        "const": "pages"
+                        "const": "pages",
+                        "readOnly": true
                     },
                     "pages_full": {
-                        "const": "pages"
+                        "const": "pages",
+                        "readOnly": true
                     },
                     "limit": {
-                        "const": "display"
+                        "const": "display",
+                        "readOnly": true
                     },
                     "by": {
-                        "const": "by"
+                        "const": "by",
+                        "readOnly": true
                     },
                     "Path": {
-                        "const": "Path"
+                        "const": "Path",
+                        "readOnly": true
                     },
                     "Rule": {
-                        "const": "Rule"
+                        "const": "Rule",
+                        "readOnly": true
                     },
                     "Allow": {
-                        "const": "Allow"
+                        "const": "Allow",
+                        "readOnly": true
                     },
                     "Disallow": {
-                        "const": "Forbid"
+                        "const": "Forbid",
+                        "readOnly": true
                     },
                     "Allow_of_mask": {
-                        "const": "Add mask matches from sitemap"
+                        "const": "Add mask matches from sitemap",
+                        "readOnly": true
                     },
                     "Disallow_of_mask": {
-                        "const": "Forbid the mask"
+                        "const": "Forbid the mask",
+                        "readOnly": true
                     },
                     "Search": {
-                        "const": "Search"
+                        "const": "Search",
+                        "readOnly": true
                     },
                     "Examples": {
-                        "const": "Examples"
+                        "const": "Examples",
+                        "readOnly": true
                     },
                     "Begin": {
-                        "const": "Start"
+                        "const": "Start",
+                        "readOnly": true
                     },
                     "Start_over": {
-                        "const": "Start over"
+                        "const": "Start over",
+                        "readOnly": true
                     },
                     "Export": {
-                        "const": "Export"
+                        "const": "Export",
+                        "readOnly": true
                     },
                     "Import": {
-                        "const": "Import"
+                        "const": "Import",
+                        "readOnly": true
                     },
                     "Off": {
-                        "const": "Off"
+                        "const": "Off",
+                        "readOnly": true
                     },
                     "Changes": {
-                        "const": "Changes"
+                        "const": "Changes",
+                        "readOnly": true
                     },
                     "Change": {
-                        "const": "Change"
+                        "const": "Change",
+                        "readOnly": true
                     },
                     "Value": {
-                        "const": "Value"
+                        "const": "Value",
+                        "readOnly": true
                     },
                     "Hide": {
-                        "const": "Hide"
+                        "const": "Hide",
+                        "readOnly": true
                     },
                     "Display": {
-                        "const": "Display"
+                        "const": "Display",
+                        "readOnly": true
                     },
                     "Save": {
-                        "const": "Save"
+                        "const": "Save",
+                        "readOnly": true
                     },
                     "Time": {
-                        "const": "Time"
+                        "const": "Time",
+                        "readOnly": true
                     },
                     "Loading": {
-                        "const": "Loading"
+                        "const": "Loading",
+                        "readOnly": true
                     },
                     "CY": {
-                        "const": "CY"
+                        "const": "CY",
+                        "readOnly": true
                     },
                     "Broker": {
-                        "const": "Bid manager"
+                        "const": "Bid manager",
+                        "readOnly": true
                     },
                     "Maintenance": {
-                        "const": "Page is under maintenance"
+                        "const": "Page is under maintenance",
+                        "readOnly": true
                     },
                     "on_account": {
-                        "const": "to account"
+                        "const": "to account",
+                        "readOnly": true
                     },
                     "on": {
-                        "const": "to"
+                        "const": "to",
+                        "readOnly": true
                     },
                     "Tools": {
-                        "const": "SEO Tools"
+                        "const": "SEO Tools",
+                        "readOnly": true
                     },
                     "Keyword_researcher": {
-                        "const": "Keyword research tool"
+                        "const": "Keyword research tool",
+                        "readOnly": true
                     },
                     "Rank_tracker": {
-                        "const": "Rank tracker tool"
+                        "const": "Rank tracker tool",
+                        "readOnly": true
                     },
                     "Upload": {
-                        "const": "Upload"
+                        "const": "Upload",
+                        "readOnly": true
                     },
                     "Hide_all": {
-                        "const": "Hide all"
+                        "const": "Hide all",
+                        "readOnly": true
                     },
                     "Expand_all": {
-                        "const": "Expand all"
+                        "const": "Expand all",
+                        "readOnly": true
                     },
                     "Expand": {
-                        "const": "Expand"
+                        "const": "Expand",
+                        "readOnly": true
                     },
                     "Attention": {
-                        "const": "Attention"
+                        "const": "Attention",
+                        "readOnly": true
                     },
                     "from": {
-                        "const": "from"
+                        "const": "from",
+                        "readOnly": true
                     },
                     "from_1": {
-                        "const": "from"
+                        "const": "from",
+                        "readOnly": true
                     },
                     "dated": {
-                        "const": "dated"
+                        "const": "dated",
+                        "readOnly": true
                     },
                     "fromDate": {
-                        "const": "from"
+                        "const": "from",
+                        "readOnly": true
                     },
                     "toDate": {
-                        "const": "to"
+                        "const": "to",
+                        "readOnly": true
                     },
                     "SE": {
-                        "const": "SE"
+                        "const": "SE",
+                        "readOnly": true
                     },
                     "Guest_link": {
-                        "const": "Guest link"
+                        "const": "Guest link",
+                        "readOnly": true
                     },
                     "Guest_link_copied_to_clipboard": {
-                        "const": "Guest link copied to clipboard"
+                        "const": "Guest link copied to clipboard",
+                        "readOnly": true
                     },
                     "Device_0": {
-                        "const": "PC"
+                        "const": "PC",
+                        "readOnly": true
                     },
                     "Device_1": {
-                        "const": "Tablet"
+                        "const": "Tablet",
+                        "readOnly": true
                     },
                     "Device_2": {
-                        "const": "Phone"
+                        "const": "Phone",
+                        "readOnly": true
                     },
                     "Device_100": {
-                        "const": "YandexBot/3.0"
+                        "const": "YandexBot/3.0",
+                        "readOnly": true
                     },
                     "Device_102": {
-                        "const": "YandexBot/3.0 (mobile)"
+                        "const": "YandexBot/3.0 (mobile)",
+                        "readOnly": true
                     },
                     "Device_110": {
-                        "const": "Googlebot/2.1"
+                        "const": "Googlebot/2.1",
+                        "readOnly": true
                     },
                     "Device_112": {
-                        "const": "Googlebot/2.1 (mobile)"
+                        "const": "Googlebot/2.1 (mobile)",
+                        "readOnly": true
                     },
                     "Device_120": {
-                        "const": "AdsBot-Google"
+                        "const": "AdsBot-Google",
+                        "readOnly": true
                     },
                     "Device_122": {
-                        "const": "AdsBot-Google-Mobile"
+                        "const": "AdsBot-Google-Mobile",
+                        "readOnly": true
                     },
                     "Tag": {
-                        "const": "Tag"
+                        "const": "Tag",
+                        "readOnly": true
                     },
                     "Tags": {
-                        "const": "Tags"
+                        "const": "Tags",
+                        "readOnly": true
                     },
                     "All_tags": {
-                        "const": "All tags"
+                        "const": "All tags",
+                        "readOnly": true
                     },
                     "Charts": {
-                        "const": "Charts"
+                        "const": "Charts",
+                        "readOnly": true
                     },
                     "All": {
-                        "const": "All"
+                        "const": "All",
+                        "readOnly": true
                     },
                     "Selected": {
-                        "const": "Selected"
+                        "const": "Selected",
+                        "readOnly": true
                     },
                     "Select": {
-                        "const": "Select"
+                        "const": "Select",
+                        "readOnly": true
                     },
                     "Select_all": {
-                        "const": "Select all"
+                        "const": "Select all",
+                        "readOnly": true
                     },
                     "Added": {
-                        "const": "Added"
+                        "const": "Added",
+                        "readOnly": true
                     },
                     "Deleted": {
-                        "const": "Deleted"
+                        "const": "Deleted",
+                        "readOnly": true
                     },
                     "Rename": {
-                        "const": "Rename"
+                        "const": "Rename",
+                        "readOnly": true
                     },
                     "On_or_off": {
-                        "const": "On / Off"
+                        "const": "On / Off",
+                        "readOnly": true
                     },
                     "Autoselect": {
-                        "const": "Autoselect"
+                        "const": "Autoselect",
+                        "readOnly": true
                     },
                     "Open_project": {
-                        "const": "Open project"
+                        "const": "Open project",
+                        "readOnly": true
                     },
                     "Domain": {
-                        "const": "Domain"
+                        "const": "Domain",
+                        "readOnly": true
                     },
                     "Domains": {
-                        "const": "Domains"
+                        "const": "Domains",
+                        "readOnly": true
                     },
                     "Track": {
-                        "const": "Track"
+                        "const": "Track",
+                        "readOnly": true
                     },
                     "Check": {
-                        "const": "Check"
+                        "const": "Check",
+                        "readOnly": true
                     },
                     "Track_continued": {
-                        "const": "Track"
+                        "const": "Track",
+                        "readOnly": true
                     },
                     "Telegram": {
-                        "const": "Telegram"
+                        "const": "Telegram",
+                        "readOnly": true
                     },
                     "Link_to_telegram": {
-                        "const": "Link to Telegram"
+                        "const": "Link to Telegram",
+                        "readOnly": true
                     },
                     "Other": {
-                        "const": "Other"
+                        "const": "Other",
+                        "readOnly": true
                     },
                     "Other_f": {
-                        "const": "Other"
+                        "const": "Other",
+                        "readOnly": true
                     },
                     "Proceed": {
-                        "const": "Proceed"
+                        "const": "Proceed",
+                        "readOnly": true
                     },
                     "Projects": {
-                        "const": "Projects"
+                        "const": "Projects",
+                        "readOnly": true
                     },
                     "Metrika": {
-                        "const": "Yandex.Metrica"
+                        "const": "Yandex.Metrica",
+                        "readOnly": true
                     },
                     "Webmaster": {
-                        "const": "Yandex.Webmaster"
+                        "const": "Yandex.Webmaster",
+                        "readOnly": true
                     },
                     "Yandex_Direct": {
-                        "const": "Yandex Direct"
+                        "const": "Yandex Direct",
+                        "readOnly": true
                     },
                     "YandexDirect": {
-                        "const": "Yandex.Direct"
+                        "const": "Yandex.Direct",
+                        "readOnly": true
                     },
                     "Yandex_Wordstat": {
-                        "const": "Yandex Wordstat"
+                        "const": "Yandex Wordstat",
+                        "readOnly": true
                     },
                     "Y_freq": {
-                        "const": "Volume"
+                        "const": "Volume",
+                        "readOnly": true
                     },
                     "Y_freq2": {
-                        "const": "\"Volume\""
+                        "const": "\"Volume\"",
+                        "readOnly": true
                     },
                     "Y_freq3": {
-                        "const": "\"!Volume\""
+                        "const": "\"!Volume\"",
+                        "readOnly": true
                     },
                     "Y_freq5": {
-                        "const": "\"[Volume]\""
+                        "const": "\"[Volume]\"",
+                        "readOnly": true
                     },
                     "Y_freq6": {
-                        "const": "\"[!Volume]\""
+                        "const": "\"[!Volume]\"",
+                        "readOnly": true
                     },
                     "G_freq2": {
-                        "const": "\"[Volume]\""
+                        "const": "\"[Volume]\"",
+                        "readOnly": true
                     },
                     "M_freq2": {
-                        "const": "\"Volume\""
+                        "const": "\"Volume\"",
+                        "readOnly": true
                     },
                     "Y_price1": {
-                        "const": "1st Premium"
+                        "const": "1st Premium",
+                        "readOnly": true
                     },
                     "Y_price2": {
-                        "const": "2st Premium"
+                        "const": "2st Premium",
+                        "readOnly": true
                     },
                     "Y_price3": {
-                        "const": "Premium"
+                        "const": "Premium",
+                        "readOnly": true
                     },
                     "Y_price4": {
-                        "const": "1st place"
+                        "const": "1st place",
+                        "readOnly": true
                     },
                     "Y_price5": {
-                        "const": "Guaranteed"
+                        "const": "Guaranteed",
+                        "readOnly": true
                     },
                     "G_price": {
-                        "const": "Bid"
+                        "const": "Bid",
+                        "readOnly": true
                     },
                     "Search_engine": {
-                        "const": "Search engine"
+                        "const": "Search engine",
+                        "readOnly": true
                     },
                     "Search_engines": {
-                        "const": "Search engines"
+                        "const": "Search engines",
+                        "readOnly": true
                     },
                     "Region": {
-                        "const": "Location"
+                        "const": "Location",
+                        "readOnly": true
                     },
                     "region": {
-                        "const": "location"
+                        "const": "location",
+                        "readOnly": true
                     },
                     "Selected_regions": {
-                        "const": "Selected locations"
+                        "const": "Selected locations",
+                        "readOnly": true
                     },
                     "Compare": {
-                        "const": "Compare"
+                        "const": "Compare",
+                        "readOnly": true
                     },
                     "Folder": {
-                        "const": "Folder"
+                        "const": "Folder",
+                        "readOnly": true
                     },
                     "Group": {
-                        "const": "Group"
+                        "const": "Group",
+                        "readOnly": true
                     },
                     "Visibility": {
-                        "const": "Visibility"
+                        "const": "Visibility",
+                        "readOnly": true
                     },
                     "Average": {
-                        "const": "Avg.pos."
+                        "const": "Avg.pos.",
+                        "readOnly": true
                     },
                     "Average_position": {
-                        "const": "Average position"
+                        "const": "Average position",
+                        "readOnly": true
                     },
                     "Add": {
-                        "const": "Add"
+                        "const": "Add",
+                        "readOnly": true
                     },
                     "Create": {
-                        "const": "Create"
+                        "const": "Create",
+                        "readOnly": true
                     },
                     "Move": {
-                        "const": "Move"
+                        "const": "Move",
+                        "readOnly": true
                     },
                     "Delete": {
-                        "const": "Delete"
+                        "const": "Delete",
+                        "readOnly": true
                     },
                     "Replace": {
-                        "const": "Repalce"
+                        "const": "Repalce",
+                        "readOnly": true
                     },
                     "Restore": {
-                        "const": "Restore"
+                        "const": "Restore",
+                        "readOnly": true
                     },
                     "Copy": {
-                        "const": "Copy"
+                        "const": "Copy",
+                        "readOnly": true
                     },
                     "Copy2": {
-                        "const": "Copy"
+                        "const": "Copy",
+                        "readOnly": true
                     },
                     "Remove": {
-                        "const": "Delete"
+                        "const": "Delete",
+                        "readOnly": true
                     },
                     "Charge": {
-                        "const": "You will be charged"
+                        "const": "You will be charged",
+                        "readOnly": true
                     },
                     "confirm": {
-                        "const": "confirm"
+                        "const": "confirm",
+                        "readOnly": true
                     },
                     "Confirm": {
-                        "const": "Confirm"
+                        "const": "Confirm",
+                        "readOnly": true
                     },
                     "Delete_selected": {
-                        "const": "Delete selected"
+                        "const": "Delete selected",
+                        "readOnly": true
                     },
                     "Delete_all": {
-                        "const": "Delete all"
+                        "const": "Delete all",
+                        "readOnly": true
                     },
                     "Traffic": {
-                        "const": "Traffic"
+                        "const": "Traffic",
+                        "readOnly": true
                     },
                     "Positions": {
-                        "const": "Rankings"
+                        "const": "Rankings",
+                        "readOnly": true
                     },
                     "Keyword": {
-                        "const": "Keyword"
+                        "const": "Keyword",
+                        "readOnly": true
                     },
                     "Key_word": {
-                        "const": "Keyword"
+                        "const": "Keyword",
+                        "readOnly": true
                     },
                     "Settings": {
-                        "const": "Settings"
+                        "const": "Settings",
+                        "readOnly": true
                     },
                     "Settings_URL": {
-                        "const": "URL Settings"
+                        "const": "URL Settings",
+                        "readOnly": true
                     },
                     "Irreversible": {
-                        "const": "Important! This operation cannot be undone."
+                        "const": "Important! This operation cannot be undone.",
+                        "readOnly": true
                     },
                     "Empty_field": {
-                        "const": "Missing"
+                        "const": "Missing",
+                        "readOnly": true
                     },
                     "Notification": {
-                        "const": "Notifications"
+                        "const": "Notifications",
+                        "readOnly": true
                     },
                     "Personal_project": {
-                        "const": "My project"
+                        "const": "My project",
+                        "readOnly": true
                     },
                     "Agreement": {
-                        "const": "Terms of Service"
+                        "const": "Terms of Service",
+                        "readOnly": true
                     },
                     "Period": {
-                        "const": "Period"
+                        "const": "Period",
+                        "readOnly": true
                     },
                     "Config_is_readonly": {
-                        "const": "You cannot change project settings until tracking is completed"
+                        "const": "You cannot change project settings until tracking is completed",
+                        "readOnly": true
                     },
                     "regions": {
-                        "const": "locations"
+                        "const": "locations",
+                        "readOnly": true
                     },
                     "types": {
-                        "const": "types"
+                        "const": "types",
+                        "readOnly": true
                     },
                     "Select_date": {
-                        "const": "Select date"
+                        "const": "Select date",
+                        "readOnly": true
                     },
                     "Not_date": {
-                        "const": "Not date"
+                        "const": "Not date",
+                        "readOnly": true
                     },
                     "Close_window": {
-                        "const": "Close window"
+                        "const": "Close window",
+                        "readOnly": true
                     },
                     "Dashboard": {
-                        "const": "Dashboard"
+                        "const": "Dashboard",
+                        "readOnly": true
                     },
                     "Support": {
-                        "const": "Help center"
+                        "const": "Help center",
+                        "readOnly": true
                     },
                     "Shortener": {
-                        "const": "URL shortener"
+                        "const": "URL shortener",
+                        "readOnly": true
                     },
                     "Journal": {
-                        "const": "Journal"
+                        "const": "Journal",
+                        "readOnly": true
                     },
                     "Academy": {
-                        "const": "Academy"
+                        "const": "Academy",
+                        "readOnly": true
                     },
                     "Pricing": {
-                        "const": "Pricing"
+                        "const": "Pricing",
+                        "readOnly": true
                     },
                     "Signup": {
-                        "const": "Sign up"
+                        "const": "Sign up",
+                        "readOnly": true
                     },
                     "Sign_up": {
-                        "const": "Sign up"
+                        "const": "Sign up",
+                        "readOnly": true
                     },
                     "Sign_up_2": {
-                        "const": "Sign up"
+                        "const": "Sign up",
+                        "readOnly": true
                     },
                     "Sign_in": {
-                        "const": "Sign in"
+                        "const": "Sign in",
+                        "readOnly": true
                     },
                     "Sign_in_account": {
-                        "const": "Sign in"
+                        "const": "Sign in",
+                        "readOnly": true
                     },
                     "Sign_out": {
-                        "const": "Sign out"
+                        "const": "Sign out",
+                        "readOnly": true
                     },
                     "Server_response": {
-                        "const": "Server response"
+                        "const": "Server response",
+                        "readOnly": true
                     },
                     "Red": {
-                        "const": "Red"
+                        "const": "Red",
+                        "readOnly": true
                     },
                     "Orange": {
-                        "const": "Orange"
+                        "const": "Orange",
+                        "readOnly": true
                     },
                     "Yellow": {
-                        "const": "Yellow"
+                        "const": "Yellow",
+                        "readOnly": true
                     },
                     "Blue": {
-                        "const": "Blue"
+                        "const": "Blue",
+                        "readOnly": true
                     },
                     "Purple": {
-                        "const": "Purple"
+                        "const": "Purple",
+                        "readOnly": true
                     },
                     "Green": {
-                        "const": "Green"
+                        "const": "Green",
+                        "readOnly": true
                     },
                     "Magenta": {
-                        "const": "Magenta"
+                        "const": "Magenta",
+                        "readOnly": true
                     },
                     "Dark_blue": {
-                        "const": "Dark blue"
+                        "const": "Dark blue",
+                        "readOnly": true
                     },
                     "Turquoise": {
-                        "const": "Turquoise"
+                        "const": "Turquoise",
+                        "readOnly": true
                     },
                     "Frequency": {
-                        "const": "Volume"
+                        "const": "Volume",
+                        "readOnly": true
                     },
                     "Moscow": {
-                        "const": "Moscow"
+                        "const": "Moscow",
+                        "readOnly": true
                     },
                     "Minsk": {
-                        "const": "Minsk"
+                        "const": "Minsk",
+                        "readOnly": true
                     },
                     "Kyiv": {
-                        "const": "Kyiv"
+                        "const": "Kyiv",
+                        "readOnly": true
                     },
                     "London": {
-                        "const": "London"
+                        "const": "London",
+                        "readOnly": true
                     },
                     "NewYork": {
-                        "const": "New York"
+                        "const": "New York",
+                        "readOnly": true
                     },
                     "StPetersburg": {
-                        "const": "St. Petersburg"
+                        "const": "St. Petersburg",
+                        "readOnly": true
                     },
                     "Almaty": {
-                        "const": "Almaty"
+                        "const": "Almaty",
+                        "readOnly": true
                     },
                     "Russia": {
-                        "const": "Russia"
+                        "const": "Russia",
+                        "readOnly": true
                     },
                     "Ukraine": {
-                        "const": "Ukraine"
+                        "const": "Ukraine",
+                        "readOnly": true
                     },
                     "Kazakhstan": {
-                        "const": "Kazakhstan"
+                        "const": "Kazakhstan",
+                        "readOnly": true
                     },
                     "Belarus": {
-                        "const": "Belarus"
+                        "const": "Belarus",
+                        "readOnly": true
                     },
                     "Sum": {
-                        "const": "Amount"
+                        "const": "Amount",
+                        "readOnly": true
                     },
                     "Date": {
-                        "const": "Date"
+                        "const": "Date",
+                        "readOnly": true
                     },
                     "Week": {
-                        "const": "Week"
+                        "const": "Week",
+                        "readOnly": true
                     },
                     "Month": {
-                        "const": "Month"
+                        "const": "Month",
+                        "readOnly": true
                     },
                     "month": {
-                        "const": "month"
+                        "const": "month",
+                        "readOnly": true
                     },
                     "months": {
-                        "const": "months"
+                        "const": "months",
+                        "readOnly": true
                     },
                     "months_mult": {
-                        "const": "months"
+                        "const": "months",
+                        "readOnly": true
                     },
                     "months_6": {
-                        "const": "6 months"
+                        "const": "6 months",
+                        "readOnly": true
                     },
                     "Quarter": {
-                        "const": "Quarter"
+                        "const": "Quarter",
+                        "readOnly": true
                     },
                     "Year": {
-                        "const": "Year"
+                        "const": "Year",
+                        "readOnly": true
                     },
                     "Total": {
-                        "const": "Total"
+                        "const": "Total",
+                        "readOnly": true
                     },
                     "TOTAL": {
-                        "const": "TOTAL"
+                        "const": "TOTAL",
+                        "readOnly": true
                     },
                     "Yandex_update": {
-                        "const": "Yandex update"
+                        "const": "Yandex update",
+                        "readOnly": true
                     },
                     "сode": {
-                        "const": "code"
+                        "const": "code",
+                        "readOnly": true
                     },
                     "Thank_you": {
-                        "const": "Thank you!"
+                        "const": "Thank you!",
+                        "readOnly": true
                     },
                     "Thank_you_for_using_our_tools": {
-                        "const": "Thank you for using our tools"
+                        "const": "Thank you for using our tools",
+                        "readOnly": true
                     },
                     "Since": {
-                        "const": "Since"
+                        "const": "Since",
+                        "readOnly": true
                     },
                     "Till": {
-                        "const": "Till"
+                        "const": "Till",
+                        "readOnly": true
                     },
                     "till": {
-                        "const": "up to"
+                        "const": "up to",
+                        "readOnly": true
                     },
                     "Yandex": {
-                        "const": "Yandex"
+                        "const": "Yandex",
+                        "readOnly": true
                     },
                     "Position": {
-                        "const": "Rank"
+                        "const": "Rank",
+                        "readOnly": true
                     },
                     "Impressions": {
-                        "const": "Impressions"
+                        "const": "Impressions",
+                        "readOnly": true
                     },
                     "Demand": {
-                        "const": "Demand"
+                        "const": "Demand",
+                        "readOnly": true
                     },
                     "FAQ": {
-                        "const": "FAQ"
+                        "const": "FAQ",
+                        "readOnly": true
                     },
                     "Frequently_asked_questions": {
-                        "const": "Frequently asked questions"
+                        "const": "Frequently asked questions",
+                        "readOnly": true
                     },
                     "Owner": {
-                        "const": "Owner"
+                        "const": "Owner",
+                        "readOnly": true
                     },
                     "level": {
-                        "const": "level"
+                        "const": "level",
+                        "readOnly": true
                     },
                     "No_payments": {
-                        "const": "No payments yet"
+                        "const": "No payments yet",
+                        "readOnly": true
                     },
                     "Show_legend": {
-                        "const": "Show legend"
+                        "const": "Show legend",
+                        "readOnly": true
                     },
                     "Hide_legend": {
-                        "const": "Hide legend"
+                        "const": "Hide legend",
+                        "readOnly": true
                     },
                     "Menu_expand": {
-                        "const": "Expand menu"
+                        "const": "Expand menu",
+                        "readOnly": true
                     },
                     "Menu_unexpand": {
-                        "const": "Minimize menu"
+                        "const": "Minimize menu",
+                        "readOnly": true
                     },
                     "Menu_dynamics_search": {
-                        "const": "Search"
+                        "const": "Search",
+                        "readOnly": true
                     },
                     "Menu_dynamics": {
-                        "const": "Rank Tracker"
+                        "const": "Rank Tracker",
+                        "readOnly": true
                     },
                     "Menu_snapshots": {
-                        "const": "SERP Snapshots"
+                        "const": "SERP Snapshots",
+                        "readOnly": true
                     },
                     "Menu_competitors": {
-                        "const": "My competitors"
+                        "const": "My competitors",
+                        "readOnly": true
                     },
                     "Menu_phrases": {
-                        "const": "Keywords"
+                        "const": "Keywords",
+                        "readOnly": true
                     },
                     "Menu_audit": {
-                        "const": "Audit"
+                        "const": "Audit",
+                        "readOnly": true
                     },
                     "Menu_analytics": {
-                        "const": "Overview"
+                        "const": "Overview",
+                        "readOnly": true
                     },
                     "Menu_PPC": {
-                        "const": "PPC"
+                        "const": "PPC",
+                        "readOnly": true
                     },
                     "Menu_broker": {
-                        "const": "Yandex.Direct"
+                        "const": "Yandex.Direct",
+                        "readOnly": true
                     },
                     "Menu_settings": {
-                        "const": "Settings"
+                        "const": "Settings",
+                        "readOnly": true
                     },
                     "Menu_more": {
-                        "const": "More"
+                        "const": "More",
+                        "readOnly": true
                     },
                     "Folders": {
-                        "const": "Folders"
+                        "const": "Folders",
+                        "readOnly": true
                     },
                     "Groups": {
-                        "const": "Groups"
+                        "const": "Groups",
+                        "readOnly": true
                     },
                     "Keywords": {
-                        "const": "Keywords"
+                        "const": "Keywords",
+                        "readOnly": true
                     },
                     "of_keywords": {
-                        "const": "keywords"
+                        "const": "keywords",
+                        "readOnly": true
                     },
                     "of_folders": {
-                        "const": "folders"
+                        "const": "folders",
+                        "readOnly": true
                     },
                     "of_projects": {
-                        "const": "projects"
+                        "const": "projects",
+                        "readOnly": true
                     },
                     "of_project1": {
-                        "const": "for project"
+                        "const": "for project",
+                        "readOnly": true
                     },
                     "for_project": {
-                        "const": "for project"
+                        "const": "for project",
+                        "readOnly": true
                     },
                     "competitor": {
-                        "const": "competitor"
+                        "const": "competitor",
+                        "readOnly": true
                     },
                     "All_groups": {
-                        "const": "All groups"
+                        "const": "All groups",
+                        "readOnly": true
                     },
                     "All_folders": {
-                        "const": "All folders"
+                        "const": "All folders",
+                        "readOnly": true
                     },
                     "All_regions": {
-                        "const": "All locations"
+                        "const": "All locations",
+                        "readOnly": true
                     },
                     "All_searchers": {
-                        "const": "All search engines"
+                        "const": "All search engines",
+                        "readOnly": true
                     },
                     "All_projects": {
-                        "const": "All projects"
+                        "const": "All projects",
+                        "readOnly": true
                     },
                     "Integration": {
-                        "const": "Integration"
+                        "const": "Integration",
+                        "readOnly": true
                     },
                     "updates_days": {
-                        "const": "update days"
+                        "const": "update days",
+                        "readOnly": true
                     },
                     "whole_period": {
-                        "const": "the entire period"
+                        "const": "the entire period",
+                        "readOnly": true
                     },
                     "two_dates": {
-                        "const": "two dates"
+                        "const": "two dates",
+                        "readOnly": true
                     },
                     "Report_for_project": {
-                        "const": "Project report for"
+                        "const": "Project report for",
+                        "readOnly": true
                     },
                     "Interval": {
-                        "const": "Time range"
+                        "const": "Time range",
+                        "readOnly": true
                     },
                     "competitors_comparison": {
-                        "const": "compare with competitors"
+                        "const": "compare with competitors",
+                        "readOnly": true
                     },
                     "Searchers_comparison": {
-                        "const": "Compare by search engine"
+                        "const": "Compare by search engine",
+                        "readOnly": true
                     },
                     "Regions_comparison": {
-                        "const": "Compare by location"
+                        "const": "Compare by location",
+                        "readOnly": true
                     },
                     "Browser_not_supported": {
-                        "const": "Your browser is not supported!"
+                        "const": "Your browser is not supported!",
+                        "readOnly": true
                     },
                     "Browser_settings": {
-                        "const": "Browser settings"
+                        "const": "Browser settings",
+                        "readOnly": true
                     },
                     "Service_may_go_unstable": {
-                        "const": "Service might be unstable"
+                        "const": "Service might be unstable",
+                        "readOnly": true
                     },
                     "Preferred_browser": {
-                        "const": "Compatible browser is"
+                        "const": "Compatible browser is",
+                        "readOnly": true
                     },
                     "Comparison_by": {
-                        "const": "Compare by"
+                        "const": "Compare by",
+                        "readOnly": true
                     },
                     "Phrases": {
-                        "const": "Keywords"
+                        "const": "Keywords",
+                        "readOnly": true
                     },
                     "TOP": {
-                        "const": "TOP"
+                        "const": "TOP",
+                        "readOnly": true
                     },
                     "Top": {
-                        "const": "Top"
+                        "const": "Top",
+                        "readOnly": true
                     },
                     "Phrases_dynamics": {
-                        "const": "Keyword dynamics"
+                        "const": "Keyword dynamics",
+                        "readOnly": true
                     },
                     "Project_settings": {
-                        "const": "Project settings"
+                        "const": "Project settings",
+                        "readOnly": true
                     },
                     "Phrases_in_TOP": {
-                        "const": "Keywords in TOP"
+                        "const": "Keywords in TOP",
+                        "readOnly": true
                     },
                     "Phrases_in_Top": {
-                        "const": "Keywords in Top"
+                        "const": "Keywords in Top",
+                        "readOnly": true
                     },
                     "Page": {
-                        "const": "Page"
+                        "const": "Page",
+                        "readOnly": true
                     },
                     "page": {
-                        "const": "page"
+                        "const": "page",
+                        "readOnly": true
                     },
                     "last_10_days": {
-                        "const": "last 10 days"
+                        "const": "last 10 days",
+                        "readOnly": true
                     },
                     "last_month": {
-                        "const": "last month"
+                        "const": "last month",
+                        "readOnly": true
                     },
                     "last_check": {
-                        "const": "last update"
+                        "const": "last update",
+                        "readOnly": true
                     },
                     "last_two_dates": {
-                        "const": "last 2 updates"
+                        "const": "last 2 updates",
+                        "readOnly": true
                     },
                     "last_month_week_average": {
-                        "const": "last month (week's average)"
+                        "const": "last month (week's average)",
+                        "readOnly": true
                     },
                     "also_searched": {
-                        "const": "similar keywords"
+                        "const": "similar keywords",
+                        "readOnly": true
                     },
                     "Sources": {
-                        "const": "Sources"
+                        "const": "Sources",
+                        "readOnly": true
                     },
                     "Clicks": {
-                        "const": "Clicks"
+                        "const": "Clicks",
+                        "readOnly": true
                     },
                     "Other_dates": {
-                        "const": "Other dates"
+                        "const": "Other dates",
+                        "readOnly": true
                     },
                     "Help_center": {
-                        "const": "Help"
+                        "const": "Help",
+                        "readOnly": true
                     },
                     "Help_center_welcome": {
-                        "const": "Support Center"
+                        "const": "Support Center",
+                        "readOnly": true
                     },
                     "Help_center_question": {
-                        "const": "Got any questions?"
+                        "const": "Got any questions?",
+                        "readOnly": true
                     },
                     "Run": {
-                        "const": "Run"
+                        "const": "Run",
+                        "readOnly": true
                     },
                     "Manage": {
-                        "const": "Manage"
+                        "const": "Manage",
+                        "readOnly": true
                     },
                     "Missed_project_id": {
-                        "const": "Project id is missing"
+                        "const": "Project id is missing",
+                        "readOnly": true
                     },
                     "Missed_project_id2": {
-                        "const": "`Project_id` is missing"
+                        "const": "`Project_id` is missing",
+                        "readOnly": true
                     },
                     "Project_analytics": {
-                        "const": "Project analytics"
+                        "const": "Project analytics",
+                        "readOnly": true
                     },
                     "Project_dynamics": {
-                        "const": "Keyword dynamics"
+                        "const": "Keyword dynamics",
+                        "readOnly": true
                     },
                     "Apometr": {
-                        "const": "Updates"
+                        "const": "Updates",
+                        "readOnly": true
                     },
                     "Apometr_title": {
-                        "const": "Google and Yandex SERP tracking tool"
+                        "const": "Google and Yandex SERP tracking tool",
+                        "readOnly": true
                     },
                     "Apometr_description": {
-                        "const": "Google and Yandex updates calendar (SERP updates and changes). Get SERP updates alerts. SERP updates score for different locations and content types."
+                        "const": "Google and Yandex updates calendar (SERP updates and changes). Get SERP updates alerts. SERP updates score for different locations and content types.",
+                        "readOnly": true
                     },
                     "Apometr_og_title": {
-                        "const": "Google and Yandex SERP updates"
+                        "const": "Google and Yandex SERP updates",
+                        "readOnly": true
                     },
                     "Apometr_og_description": {
-                        "const": "SERP updates score for different locations and content types."
+                        "const": "SERP updates score for different locations and content types.",
+                        "readOnly": true
                     },
                     "Apometr_notice": {
-                        "const": "Get update alerts"
+                        "const": "Get update alerts",
+                        "readOnly": true
                     },
                     "Pricing_title": {
-                        "const": "Pricing"
+                        "const": "Pricing",
+                        "readOnly": true
                     },
                     "Profile_title": {
-                        "const": "Account"
+                        "const": "Account",
+                        "readOnly": true
                     },
                     "Bank_title": {
-                        "const": "Bank"
+                        "const": "Bank",
+                        "readOnly": true
                     },
                     "Your_projects": {
-                        "const": "Your projects"
+                        "const": "Your projects",
+                        "readOnly": true
                     },
                     "Incorrect_file_format": {
-                        "const": "Invalid file format (expected: %availableExtensionsNames%)"
+                        "const": "Invalid file format (expected: %availableExtensionsNames%)",
+                        "readOnly": true
                     },
                     "Max_size": {
-                        "const": "Maximum upload size exceeded (%maxSize%)"
+                        "const": "Maximum upload size exceeded (%maxSize%)",
+                        "readOnly": true
                     },
                     "Audit": {
-                        "const": "Website SEO Audit tool"
+                        "const": "Website SEO Audit tool",
+                        "readOnly": true
                     },
                     "Tutorial": {
-                        "const": "Tutorials"
+                        "const": "Tutorials",
+                        "readOnly": true
                     },
                     "User_id": {
-                        "const": "User ID"
+                        "const": "User ID",
+                        "readOnly": true
                     },
                     "Managing_executive": {
-                        "const": "Managing executive"
+                        "const": "Managing executive",
+                        "readOnly": true
                     },
                     "Pustovoit": {
-                        "const": "Pustovoit"
+                        "const": "Pustovoit",
+                        "readOnly": true
                     },
                     "Denis": {
-                        "const": "Denis"
+                        "const": "Denis",
+                        "readOnly": true
                     },
                     "Anatolyevich": {
-                        "const": "Anatolyevich"
+                        "const": "Anatolyevich",
+                        "readOnly": true
                     },
                     "CEO": {
-                        "const": "Chief Executive Officer"
+                        "const": "Chief Executive Officer",
+                        "readOnly": true
                     },
                     "office": {
-                        "const": "office"
+                        "const": "office",
+                        "readOnly": true
                     },
                     "Dot": {
-                        "const": "Dot"
+                        "const": "Dot",
+                        "readOnly": true
                     },
                     "Comma": {
-                        "const": "Comma"
+                        "const": "Comma",
+                        "readOnly": true
                     },
                     "Enter_manually": {
-                        "const": "Add manually"
+                        "const": "Add manually",
+                        "readOnly": true
                     },
                     "max_10_mb": {
-                        "const": "max 10 Mb"
+                        "const": "max 10 Mb",
+                        "readOnly": true
                     },
                     "Schedule_settings_checks": {
-                        "const": "Checks schedule"
+                        "const": "Checks schedule",
+                        "readOnly": true
                     },
                     "Schedule_settings_reports": {
-                        "const": "Reports schedule"
+                        "const": "Reports schedule",
+                        "readOnly": true
                     },
                     "Basic": {
-                        "const": "Basic"
+                        "const": "Basic",
+                        "readOnly": true
                     },
                     "Address_IP": {
-                        "const": "IP address"
+                        "const": "IP address",
+                        "readOnly": true
                     },
                     "Phone_number": {
-                        "const": "Phone number"
+                        "const": "Phone number",
+                        "readOnly": true
                     },
                     "Recipient": {
-                        "const": "Recipient"
+                        "const": "Recipient",
+                        "readOnly": true
                     },
                     "Federal_act": {
-                        "const": " Federal act"
+                        "const": " Federal act",
+                        "readOnly": true
                     },
                     "optional": {
-                        "const": "optional"
+                        "const": "optional",
+                        "readOnly": true
                     },
                     "Full_name_abbr": {
-                        "const": "Full name"
+                        "const": "Full name",
+                        "readOnly": true
                     },
                     "Mobile_phone": {
-                        "const": "Mobile phone"
+                        "const": "Mobile phone",
+                        "readOnly": true
                     },
                     "not_found": {
-                        "const": "not found"
+                        "const": "not found",
+                        "readOnly": true
                     },
                     "Try_to_reset_filters_or_search_archive_html": {
-                        "const": "Try to <i class=\"a\" data-action=\"reset_filters\">reset</i> all filters<br><i class=\"archive_search\">\n\tor search <a href=\"/support/projects/archive\" target=\"_blank\" class=\"a\">Archived</a> projects</i>"
+                        "const": "Try to <i class=\"a\" data-action=\"reset_filters\">reset</i> all filters<br><i class=\"archive_search\">\n\tor search <a href=\"/support/projects/archive\" target=\"_blank\" class=\"a\">Archived</a> projects</i>",
+                        "readOnly": true
                     },
                     "Print": {
-                        "const": "Print"
+                        "const": "Print",
+                        "readOnly": true
                     },
                     "Contact_us": {
-                        "const": "Contact us"
+                        "const": "Contact us",
+                        "readOnly": true
                     },
                     "Competitor_analysis": {
-                        "const": "Competitor research"
+                        "const": "Competitor research",
+                        "readOnly": true
                     },
                     "Refill_balance": {
-                        "const": "Top up your balance"
+                        "const": "Top up your balance",
+                        "readOnly": true
                     },
                     "Median": {
-                        "const": "Median"
+                        "const": "Median",
+                        "readOnly": true
                     },
                     "Reset": {
-                        "const": "Reset"
+                        "const": "Reset",
+                        "readOnly": true
                     },
                     "View": {
-                        "const": "View"
+                        "const": "View",
+                        "readOnly": true
                     },
                     "Bar_pin": {
-                        "const": "Pin bar"
+                        "const": "Pin bar",
+                        "readOnly": true
                     },
                     "Count": {
-                        "const": "Number"
+                        "const": "Number",
+                        "readOnly": true
                     },
                     "Invalid_url": {
-                        "const": "Invalid URL format"
+                        "const": "Invalid URL format",
+                        "readOnly": true
                     },
                     "Access_settings": {
-                        "const": "Access settings"
+                        "const": "Access settings",
+                        "readOnly": true
                     },
                     "Hide_access_settings": {
-                        "const": "Hide access settings"
+                        "const": "Hide access settings",
+                        "readOnly": true
                     },
                     "Sort": {
-                        "const": "Sort"
+                        "const": "Sort",
+                        "readOnly": true
                     },
                     "No_snippet": {
-                        "const": "No snippet"
+                        "const": "No snippet",
+                        "readOnly": true
                     },
                     "Copied_to_clipboard": {
-                        "const": "Copied to clipboard"
+                        "const": "Copied to clipboard",
+                        "readOnly": true
                     },
                     "Cannot_copied_to_clipboard": {
-                        "const": "Cannot copied to clipboard"
+                        "const": "Cannot copied to clipboard",
+                        "readOnly": true
                     },
                     "Copy_guest_link_manually": {
-                        "const": "Copy the guest link manually"
+                        "const": "Copy the guest link manually",
+                        "readOnly": true
                     },
                     "Press_to_copy_1": {
-                        "const": "Press"
+                        "const": "Press",
+                        "readOnly": true
                     },
                     "Press_to_copy_2": {
-                        "const": "+C to copy a link"
+                        "const": "+C to copy a link",
+                        "readOnly": true
                     },
                     "Guest_link_created": {
-                        "const": "Guest link created"
+                        "const": "Guest link created",
+                        "readOnly": true
                     },
                     "Need_fill_required_fields": {
-                        "const": "Please fill in all required fields"
+                        "const": "Please fill in all required fields",
+                        "readOnly": true
                     }
                 },
                 "required": [

@@ -11,37 +11,48 @@
                 "type": "object",
                 "properties": {
                     "View_in_API_explorer": {
-                        "const": "View in API explorer"
+                        "const": "View in API explorer",
+                        "readOnly": true
                     },
                     "Add_parameter": {
-                        "const": "Add parameter"
+                        "const": "Add parameter",
+                        "readOnly": true
                     },
                     "Add_parameter_array": {
-                        "const": "Add parameter (array)"
+                        "const": "Add parameter (array)",
+                        "readOnly": true
                     },
                     "Select_data_to_return": {
-                        "const": "Select data to return (fields)"
+                        "const": "Select data to return (fields)",
+                        "readOnly": true
                     },
                     "Add_filter": {
-                        "const": "Add a filter (filters item)"
+                        "const": "Add a filter (filters item)",
+                        "readOnly": true
                     },
                     "Add_sorting": {
-                        "const": "Add sorting (orders item)"
+                        "const": "Add sorting (orders item)",
+                        "readOnly": true
                     },
                     "Set_limit": {
-                        "const": "Set limit"
+                        "const": "Set limit",
+                        "readOnly": true
                     },
                     "Set_offset": {
-                        "const": "Set offset"
+                        "const": "Set offset",
+                        "readOnly": true
                     },
                     "Developer_documentation": {
-                        "const": "API Documentation"
+                        "const": "API Documentation",
+                        "readOnly": true
                     },
                     "Ask_questions_get_answers": {
-                        "const": "Search documentation"
+                        "const": "Search documentation",
+                        "readOnly": true
                     },
                     "PHP_SDK_example_githab": {
-                        "const": "PHP SDK example on GitHub"
+                        "const": "PHP SDK example on GitHub",
+                        "readOnly": true
                     }
                 },
                 "required": [

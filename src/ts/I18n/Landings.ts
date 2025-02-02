@@ -9,7 +9,7 @@ export interface components {
     schemas: {
         "I18n.Landings": {
             /** @constant */
-            No_card_needed: "No card needed";
+            readonly No_card_needed: "No card needed";
         };
     };
     responses: never;

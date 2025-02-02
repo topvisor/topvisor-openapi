@@ -11,31 +11,40 @@
                 "type": "object",
                 "properties": {
                     "Question_is_article_useful": {
-                        "const": "Have you found what you were looking for?"
+                        "const": "Have you found what you were looking for?",
+                        "readOnly": true
                     },
                     "Message_after_good_vote": {
-                        "const": "Thanks for the feedback! You can leave a comment below, but it's optional. You may write something nice."
+                        "const": "Thanks for the feedback! You can leave a comment below, but it's optional. You may write something nice.",
+                        "readOnly": true
                     },
                     "Message_after_bad_vote": {
-                        "const": "Напишите, что вы искали, — мы поможем вам, а также постараемся добавить это в руководство."
+                        "const": "Напишите, что вы искали, — мы поможем вам, а также постараемся добавить это в руководство.",
+                        "readOnly": true
                     },
                     "Question_after_good_vote": {
-                        "const": "What did you like most?"
+                        "const": "What did you like most?",
+                        "readOnly": true
                     },
                     "Question_after_bad_vote": {
-                        "const": "What's been lacking in this guide?"
+                        "const": "What's been lacking in this guide?",
+                        "readOnly": true
                     },
                     "Message_after_comment_good_vote": {
-                        "const": "We'll keep this up!"
+                        "const": "We'll keep this up!",
+                        "readOnly": true
                     },
                     "Message_after_comment_bad_vote": {
-                        "const": "We'll improve our service."
+                        "const": "We'll improve our service.",
+                        "readOnly": true
                     },
                     "Submit": {
-                        "const": "Leave feedback"
+                        "const": "Leave feedback",
+                        "readOnly": true
                     },
                     "SendTicket": {
-                        "const": "Отправить тикет"
+                        "const": "Отправить тикет",
+                        "readOnly": true
                     }
                 },
                 "required": [

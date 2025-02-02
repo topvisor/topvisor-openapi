@@ -9,43 +9,43 @@ export interface components {
     schemas: {
         "I18n.Updates": {
             /** @constant */
-            SERP_update_score: "SERP update score";
+            readonly SERP_update_score: "SERP update score";
             /** @constant */
-            confirmed_Yandex: "update confirmed by Yandex";
+            readonly confirmed_Yandex: "update confirmed by Yandex";
             /** @constant */
-            Calendar: "updates calendar";
+            readonly Calendar: "updates calendar";
             /** @constant */
-            Informer: "Website informer";
+            readonly Informer: "Website informer";
             /** @constant */
-            Yandex_search_base_update: "Yandex search base update";
+            readonly Yandex_search_base_update: "Yandex search base update";
             /** @constant */
-            SERP_changes: "SERP change";
+            readonly SERP_changes: "SERP change";
             /** @constant */
-            Text_update: " Text update: index <span class=\"top-only-pc\">updated</span> on ";
+            readonly Text_update: " Text update: index <span class=\"top-only-pc\">updated</span> on ";
             /** @constant */
-            Index_updated: "Index updated on ";
+            readonly Index_updated: "Index updated on ";
             /** @constant */
-            Comments: "Comments";
+            readonly Comments: "Comments";
             /** @constant */
-            Add_comment: "Add comment";
+            readonly Add_comment: "Add comment";
             /** @constant */
-            Sign_in_to_leave_comments: "<a href=\".\" class=\"btn\">Sign in</a> to leave comments";
+            readonly Sign_in_to_leave_comments: "<a href=\".\" class=\"btn\">Sign in</a> to leave comments";
             /** @constant */
-            Subscribe: "Subscribe";
+            readonly Subscribe: "Subscribe";
             /** @constant */
-            points: "points";
+            readonly points: "points";
             /** @constant */
-            Update: "Update";
+            readonly Update: "Update";
             /** @constant */
-            Updates_calendar: "Updates calendar";
+            readonly Updates_calendar: "Updates calendar";
             /** @constant */
-            Yandex_update: "Yandex update";
+            readonly Yandex_update: "Yandex update";
             /** @constant */
-            Yandex_text_update: "Yandex text update";
+            readonly Yandex_text_update: "Yandex text update";
             /** @constant */
-            Yandex_SERP_update: "Yandex SERP update";
+            readonly Yandex_SERP_update: "Yandex SERP update";
             /** @constant */
-            Index_updated_on: "Index updated on";
+            readonly Index_updated_on: "Index updated on";
         };
     };
     responses: never;

@@ -9,13 +9,13 @@ export interface components {
     schemas: {
         "I18n.Landings.Jobs": {
             /** @constant */
-            Link_to_resume_or_comment: "Link to your resume or a comment";
+            readonly Link_to_resume_or_comment: "Link to your resume or a comment";
             /** @constant */
-            Submit_button_text: "I want to join!";
+            readonly Submit_button_text: "I want to join!";
             /** @constant */
-            Accept_user_agreement_text_befor_link: "By submitting an application , I give my consent to the processing of private data in accordance with";
+            readonly Accept_user_agreement_text_befor_link: "By submitting an application , I give my consent to the processing of private data in accordance with";
             /** @constant */
-            Accept_user_agreement_link_text: "Privacy Policy";
+            readonly Accept_user_agreement_link_text: "Privacy Policy";
         };
     };
     responses: never;

@@ -9,27 +9,27 @@ export interface components {
     schemas: {
         "I18n.Cron": {
             /** @constant */
-            Field_command: "Сommand";
+            readonly Field_command: "Сommand";
             /** @constant */
-            Field_description: "Description";
+            readonly Field_description: "Description";
             /** @constant */
-            Field_days: "Days of the week";
+            readonly Field_days: "Days of the week";
             /** @constant */
-            Field_hh: "Hours";
+            readonly Field_hh: "Hours";
             /** @constant */
-            Field_i: "Minutes";
+            readonly Field_i: "Minutes";
             /** @constant */
-            Field_on: "On/Off";
+            readonly Field_on: "On/Off";
             /** @constant */
-            Field_task_create_time: "Task created";
+            readonly Field_task_create_time: "Task created";
             /** @constant */
-            Field_task_start_time: "Task runned";
+            readonly Field_task_start_time: "Task runned";
             /** @constant */
-            Field_task_status: "Execution status";
+            readonly Field_task_status: "Execution status";
             /** @constant */
-            Disabled: "Disabled";
+            readonly Disabled: "Disabled";
             /** @constant */
-            Enabled: "Enabled";
+            readonly Enabled: "Enabled";
         };
     };
     responses: never;

@@ -9,71 +9,71 @@ export interface components {
     schemas: {
         "I18n.Telegram": {
             /** @constant */
-            Panel_get_command_list: "Get list of commands";
+            readonly Panel_get_command_list: "Get list of commands";
             /** @constant */
-            Panel_enable_notifications: "Turn on notifications";
+            readonly Panel_enable_notifications: "Turn on notifications";
             /** @constant */
-            Panel_disable_notifications: "Turn off notifications";
+            readonly Panel_disable_notifications: "Turn off notifications";
             /** @constant */
-            Panel_get_short_link: "Create short link";
+            readonly Panel_get_short_link: "Create short link";
             /** @constant */
-            Panel_back: "Back";
+            readonly Panel_back: "Back";
             /** @constant */
-            Panel_cancel: "Cancel";
+            readonly Panel_cancel: "Cancel";
             /** @constant */
-            Panel_main_menu: "Main menu";
+            readonly Panel_main_menu: "Main menu";
             /** @constant */
-            Panel_select_lang: "Select language";
+            readonly Panel_select_lang: "Select language";
             /** @constant */
-            Panel_eng: "English";
+            readonly Panel_eng: "English";
             /** @constant */
-            Panel_rus: "Russian";
+            readonly Panel_rus: "Russian";
             /** @constant */
-            Panel_i_subscribed: "Already subscribed 😎";
+            readonly Panel_i_subscribed: "Already subscribed 😎";
             /** @constant */
-            Panel_subscribe: "Subscribe";
+            readonly Panel_subscribe: "Subscribe";
             /** @constant */
-            Panel_open_materials: "Open materials 📚";
+            readonly Panel_open_materials: "Open materials 📚";
             /** @constant */
-            Panel_library: "Open library";
+            readonly Panel_library: "Open library";
             /** @constant */
-            Message_chat_disabled: "Message not received. To contact Customer Care and read replies, type /start";
+            readonly Message_chat_disabled: "Message not received. To contact Customer Care and read replies, type /start";
             /** @constant */
-            Message_available_commands: "Commands that I understand:";
+            readonly Message_available_commands: "Commands that I understand:";
             /** @constant */
-            Message_available_commands_help: "Get list of commands";
+            readonly Message_available_commands_help: "Get list of commands";
             /** @constant */
-            Message_available_commands_start: "Turn on notifications";
+            readonly Message_available_commands_start: "Turn on notifications";
             /** @constant */
-            Message_available_commands_stop: "Turn off notifications";
+            readonly Message_available_commands_stop: "Turn off notifications";
             /** @constant */
-            Message_available_commands_tpvsr: "Create short link";
+            readonly Message_available_commands_tpvsr: "Create short link";
             /** @constant */
-            Message_start_text1: "Hi! I can send your questions to Customer Support and get replies.";
+            readonly Message_start_text1: "Hi! I can send your questions to Customer Support and get replies.";
             /** @constant */
-            Message_start_text2: "To get a list of commands that I understand, type /help. To contact support, send your question in the chat.";
+            readonly Message_start_text2: "To get a list of commands that I understand, type /help. To contact support, send your question in the chat.";
             /** @constant */
-            Message_start_apometer_text: "";
+            readonly Message_start_apometer_text: "";
             /** @constant */
-            Message_stop_text: "Notifications have been turned off. I'll stop sending you alerts and Customer Support replies.";
+            readonly Message_stop_text: "Notifications have been turned off. I'll stop sending you alerts and Customer Support replies.";
             /** @constant */
-            Message_pair_done1: "Your Telegram already linked to the account";
+            readonly Message_pair_done1: "Your Telegram already linked to the account";
             /** @constant */
-            Message_pair_done2: "To remove account, type /unpair";
+            readonly Message_pair_done2: "To remove account, type /unpair";
             /** @constant */
-            Message_unpair: "Account removed.";
+            readonly Message_unpair: "Account removed.";
             /** @constant */
-            Message_tpvsr: "Send me a URL to shorten.";
+            readonly Message_tpvsr: "Send me a URL to shorten.";
             /** @constant */
-            Message_tpvsr_cancel: "Type /cancel to step backwards.";
+            readonly Message_tpvsr_cancel: "Type /cancel to step backwards.";
             /** @constant */
-            Message_tpvsr_failure: "Link not shortened";
+            readonly Message_tpvsr_failure: "Link not shortened";
             /** @constant */
-            Message_tpvsr_cancel_done: "Link shortening canceled.";
+            readonly Message_tpvsr_cancel_done: "Link shortening canceled.";
             /** @constant */
-            Message_join_done1: "Account";
+            readonly Message_join_done1: "Account";
             /** @constant */
-            Message_join_done2: "successfully linked.";
+            readonly Message_join_done2: "successfully linked.";
         };
     };
     responses: never;

@@ -11,40 +11,52 @@
                 "type": "object",
                 "properties": {
                     "Checking_positions": {
-                        "const": "Rank Checking and Rank Tracking"
+                        "const": "Rank Checking and Rank Tracking",
+                        "readOnly": true
                     },
                     "Collecting_top_sites": {
-                        "const": "SERP Top Checker"
+                        "const": "SERP Top Checker",
+                        "readOnly": true
                     },
                     "Technical_analysis": {
-                        "const": "SEO Website Audit"
+                        "const": "SEO Website Audit",
+                        "readOnly": true
                     },
                     "Tracking_changes": {
-                        "const": "Changer Tracker and Meta Tag Exractor"
+                        "const": "Changer Tracker and Meta Tag Exractor",
+                        "readOnly": true
                     },
                     "Semantic_core_research": {
-                        "const": "Semantic Core Research"
+                        "const": "Semantic Core Research",
+                        "readOnly": true
                     },
                     "Volume_checker": {
-                        "const": "Volume Checker"
+                        "const": "Volume Checker",
+                        "readOnly": true
                     },
                     "Index_checker": {
-                        "const": "Index Checker"
+                        "const": "Index Checker",
+                        "readOnly": true
                     },
                     "Sitemap_generator": {
-                        "const": "Sitemap generator"
+                        "const": "Sitemap generator",
+                        "readOnly": true
                     },
                     "Bid_manager": {
-                        "const": "Bid Manager"
+                        "const": "Bid Manager",
+                        "readOnly": true
                     },
                     "Updates_scanner": {
-                        "const": "Updates Scanner"
+                        "const": "Updates Scanner",
+                        "readOnly": true
                     },
                     "Shortener_url": {
-                        "const": "URL Shortener"
+                        "const": "URL Shortener",
+                        "readOnly": true
                     },
                     "Clustering_top": {
-                        "const": "Clustering by SERP Top"
+                        "const": "Clustering by SERP Top",
+                        "readOnly": true
                     }
                 },
                 "required": [

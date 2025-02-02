@@ -11,55 +11,72 @@
                 "type": "object",
                 "properties": {
                     "Dw_1": {
-                        "const": "Mo"
+                        "const": "Mo",
+                        "readOnly": true
                     },
                     "Dw_2": {
-                        "const": "Tu"
+                        "const": "Tu",
+                        "readOnly": true
                     },
                     "Dw_3": {
-                        "const": "We"
+                        "const": "We",
+                        "readOnly": true
                     },
                     "Dw_4": {
-                        "const": "Th"
+                        "const": "Th",
+                        "readOnly": true
                     },
                     "Dw_5": {
-                        "const": "Fr"
+                        "const": "Fr",
+                        "readOnly": true
                     },
                     "Dw_6": {
-                        "const": "Sa"
+                        "const": "Sa",
+                        "readOnly": true
                     },
                     "Dw_7": {
-                        "const": "Su"
+                        "const": "Su",
+                        "readOnly": true
                     },
                     "Day_of_week_1": {
-                        "const": "Monday"
+                        "const": "Monday",
+                        "readOnly": true
                     },
                     "Day_of_week_2": {
-                        "const": "Tuesday"
+                        "const": "Tuesday",
+                        "readOnly": true
                     },
                     "Day_of_week_3": {
-                        "const": "Wednesday"
+                        "const": "Wednesday",
+                        "readOnly": true
                     },
                     "Day_of_week_4": {
-                        "const": "Thursday"
+                        "const": "Thursday",
+                        "readOnly": true
                     },
                     "Day_of_week_5": {
-                        "const": "Friday"
+                        "const": "Friday",
+                        "readOnly": true
                     },
                     "Day_of_week_6": {
-                        "const": "Saturday"
+                        "const": "Saturday",
+                        "readOnly": true
                     },
                     "Day_of_week_7": {
-                        "const": "Sunday"
+                        "const": "Sunday",
+                        "readOnly": true
                     },
                     "months": {
-                        "const": "|january|february|march|april|may|june|july|august|september|october|november|december"
+                        "const": "|january|february|march|april|may|june|july|august|september|october|november|december",
+                        "readOnly": true
                     },
                     "of_months": {
-                        "const": "|january|february|march|april|may|june|july|august|september|october|november|december"
+                        "const": "|january|february|march|april|may|june|july|august|september|october|november|december",
+                        "readOnly": true
                     },
                     "in_months": {
-                        "const": "|january|february|march|april|may|june|july|august|september|october|november|december"
+                        "const": "|january|february|march|april|may|june|july|august|september|october|november|december",
+                        "readOnly": true
                     }
                 },
                 "required": [

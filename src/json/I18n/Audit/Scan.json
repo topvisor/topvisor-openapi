@@ -11,13 +11,16 @@
                 "type": "object",
                 "properties": {
                     "Settings": {
-                        "const": "Audit settings"
+                        "const": "Audit settings",
+                        "readOnly": true
                     },
                     "Please_add_urls": {
-                        "const": "Please, add urls for checking"
+                        "const": "Please, add urls for checking",
+                        "readOnly": true
                     },
                     "bar": {
-                        "const": "bar"
+                        "const": "bar",
+                        "readOnly": true
                     },
                     "menu": {
                         "const": {
@@ -39,7 +42,8 @@
                             "images/images": "Images",
                             "js/js": "JavaScript",
                             "css/css": "CSS"
-                        }
+                        },
+                        "readOnly": true
                     },
                     "checkInfo": {
                         "const": {
@@ -51,7 +55,8 @@
                             "count_all": "Count finished",
                             "robot_step": "Current step",
                             "robot_step_next": "Next step"
-                        }
+                        },
+                        "readOnly": true
                     },
                     "checkInfoHints": {
                         "const": {
@@ -61,7 +66,8 @@
                             "count_all": "",
                             "step": "",
                             "step_next": ""
-                        }
+                        },
+                        "readOnly": true
                     },
                     "checkSteps": {
                         "const": {
@@ -75,7 +81,8 @@
                             "auditAnalyze": "Analyze",
                             "save": "Saving",
                             "closeTask": "Finishing"
-                        }
+                        },
+                        "readOnly": true
                     },
                     "summaryCharts": {
                         "const": {
@@ -84,184 +91,244 @@
                             "count_3xx": "3XX",
                             "count_4xx": "4XX",
                             "count_5xx": "5XX"
-                        }
+                        },
+                        "readOnly": true
                     },
                     "Already_started": {
-                        "const": "Audit already started"
+                        "const": "Audit already started",
+                        "readOnly": true
                     },
                     "FilterTime2": {
-                        "const": "Filter, until the time:"
+                        "const": "Filter, until the time:",
+                        "readOnly": true
                     },
                     "HTTPCodeHundred0": {
-                        "const": "No response"
+                        "const": "No response",
+                        "readOnly": true
                     },
                     "FieldContent": {
-                        "const": "Text (content)"
+                        "const": "Text (content)",
+                        "readOnly": true
                     },
                     "FieldTitle": {
-                        "const": "Text (title)"
+                        "const": "Text (title)",
+                        "readOnly": true
                     },
                     "FieldBroken": {
-                        "const": "«Broken»"
+                        "const": "«Broken»",
+                        "readOnly": true
                     },
                     "FieldCount": {
-                        "const": "Pages"
+                        "const": "Pages",
+                        "readOnly": true
                     },
                     "FieldHTTPCodes": {
-                        "const": "Status"
+                        "const": "Status",
+                        "readOnly": true
                     },
                     "FieldTitleDbl": {
-                        "const": "Duplicates\nTitle"
+                        "const": "Duplicates\nTitle",
+                        "readOnly": true
                     },
                     "FieldDescriptionDbl": {
-                        "const": "Duplicates\nDescription"
+                        "const": "Duplicates\nDescription",
+                        "readOnly": true
                     },
                     "FieldBacklinksInnerCount": {
-                        "const": "Back Links\ninner"
+                        "const": "Back Links\ninner",
+                        "readOnly": true
                     },
                     "FieldTextLength": {
-                        "const": "Text length"
+                        "const": "Text length",
+                        "readOnly": true
                     },
                     "FieldCompression": {
-                        "const": "Compress"
+                        "const": "Compress",
+                        "readOnly": true
                     },
                     "FieldCacheType": {
-                        "const": "Cache type"
+                        "const": "Cache type",
+                        "readOnly": true
                     },
                     "FieldCacheTime": {
-                        "const": "Cache time"
+                        "const": "Cache time",
+                        "readOnly": true
                     },
                     "FieldCacheValidator": {
-                        "const": "Cache validator"
+                        "const": "Cache validator",
+                        "readOnly": true
                     },
                     "FieldRobotsTXTBlocked": {
-                        "const": "Disallow\nrobots.txt"
+                        "const": "Disallow\nrobots.txt",
+                        "readOnly": true
                     },
                     "FieldCheckRobotsTXTAllowed": {
-                        "const": "Allow\nrobots.txt"
+                        "const": "Allow\nrobots.txt",
+                        "readOnly": true
                     },
                     "FieldSitemapXMLMention": {
-                        "const": "Exists\nsitemap.xml"
+                        "const": "Exists\nsitemap.xml",
+                        "readOnly": true
                     },
                     "FieldLinksCount": {
-                        "const": "Links"
+                        "const": "Links",
+                        "readOnly": true
                     },
                     "FieldTLSVersion": {
-                        "const": "TLS version"
+                        "const": "TLS version",
+                        "readOnly": true
                     },
                     "FieldCacheable": {
-                        "const": "Cacheable"
+                        "const": "Cacheable",
+                        "readOnly": true
                     },
                     "FieldAlt": {
-                        "const": "Alt"
+                        "const": "Alt",
+                        "readOnly": true
                     },
                     "FieldSize": {
-                        "const": "Size"
+                        "const": "Size",
+                        "readOnly": true
                     },
                     "FieldExtension": {
-                        "const": "Extension"
+                        "const": "Extension",
+                        "readOnly": true
                     },
                     "FieldContentType": {
-                        "const": "Content-Type"
+                        "const": "Content-Type",
+                        "readOnly": true
                     },
                     "FieldModernFormat": {
-                        "const": "Modern Format"
+                        "const": "Modern Format",
+                        "readOnly": true
                     },
                     "FieldMinified": {
-                        "const": "Minified"
+                        "const": "Minified",
+                        "readOnly": true
                     },
                     "FieldRenderBlocking": {
-                        "const": "Render blocking"
+                        "const": "Render blocking",
+                        "readOnly": true
                     },
                     "FieldType": {
-                        "const": "Type"
+                        "const": "Type",
+                        "readOnly": true
                     },
                     "FieldLoadingTime": {
-                        "const": "Loading time"
+                        "const": "Loading time",
+                        "readOnly": true
                     },
                     "FilterSignalNone": {
-                        "const": "All checks"
+                        "const": "All checks",
+                        "readOnly": true
                     },
                     "FilterSignalWarnings": {
-                        "const": "With warnings"
+                        "const": "With warnings",
+                        "readOnly": true
                     },
                     "FilterSignalErrors": {
-                        "const": "With erors"
+                        "const": "With erors",
+                        "readOnly": true
                     },
                     "FilterSignalSignals": {
-                        "const": "All problems"
+                        "const": "All problems",
+                        "readOnly": true
                     },
                     "DialogPagesWithTitleDbl": {
-                        "const": "Pages with duplicates Title"
+                        "const": "Pages with duplicates Title",
+                        "readOnly": true
                     },
                     "DialogPagesWithDescriptionDbl": {
-                        "const": "Pages with duplicates Desccription"
+                        "const": "Pages with duplicates Desccription",
+                        "readOnly": true
                     },
                     "DialogPagesWithLink": {
-                        "const": "Pages with link"
+                        "const": "Pages with link",
+                        "readOnly": true
                     },
                     "DialogPagesWithImage": {
-                        "const": "Pages with image"
+                        "const": "Pages with image",
+                        "readOnly": true
                     },
                     "DialogPagesWithJS": {
-                        "const": "Pages with JavaScript"
+                        "const": "Pages with JavaScript",
+                        "readOnly": true
                     },
                     "DialogPagesWithCSS": {
-                        "const": "Pages with CSS"
+                        "const": "Pages with CSS",
+                        "readOnly": true
                     },
                     "DialogSummaryPage": {
-                        "const": "Summary Page"
+                        "const": "Summary Page",
+                        "readOnly": true
                     },
                     "DialogResources_links": {
-                        "const": "Links on page"
+                        "const": "Links on page",
+                        "readOnly": true
                     },
                     "DialogResources_images": {
-                        "const": "Images on page"
+                        "const": "Images on page",
+                        "readOnly": true
                     },
                     "DialogResources_css": {
-                        "const": "CSS on page"
+                        "const": "CSS on page",
+                        "readOnly": true
                     },
                     "DialogResources_js": {
-                        "const": "JS on page"
+                        "const": "JS on page",
+                        "readOnly": true
                     },
                     "Category": {
-                        "const": "Category"
+                        "const": "Category",
+                        "readOnly": true
                     },
                     "WhatIsIt": {
-                        "const": "What is it?"
+                        "const": "What is it?",
+                        "readOnly": true
                     },
                     "HowToResolveIt": {
-                        "const": "How to resolve it?"
+                        "const": "How to resolve it?",
+                        "readOnly": true
                     },
                     "Warnings": {
-                        "const": "Warnings"
+                        "const": "Warnings",
+                        "readOnly": true
                     },
                     "Errors": {
-                        "const": "Errors"
+                        "const": "Errors",
+                        "readOnly": true
                     },
                     "Problems": {
-                        "const": "All problems"
+                        "const": "All problems",
+                        "readOnly": true
                     },
                     "Hint_not_urls_text": {
-                        "const": "Add URLs manually or enable website crawling to perform Website Audit.<br>🤖 <a href=\"/website-auditor/\" target=\"_blank\">What Website Audit shows →</a>"
+                        "const": "Add URLs manually or enable website crawling to perform Website Audit.<br>🤖 <a href=\"/website-auditor/\" target=\"_blank\">What Website Audit shows →</a>",
+                        "readOnly": true
                     },
                     "Hint_not_urls_btn": {
-                        "const": "Add URLs"
+                        "const": "Add URLs",
+                        "readOnly": true
                     },
                     "Hint_not_checks_text": {
-                        "const": "You've never launched Website Audit in this project.<br>🤖 <a href=\"/website-auditor/\" target=\"_blank\">What Website Audit shows →</a>"
+                        "const": "You've never launched Website Audit in this project.<br>🤖 <a href=\"/website-auditor/\" target=\"_blank\">What Website Audit shows →</a>",
+                        "readOnly": true
                     },
                     "Hint_not_checks_btn": {
-                        "const": "Launch Website Audit"
+                        "const": "Launch Website Audit",
+                        "readOnly": true
                     },
                     "Hint_not_PageSpeed_Insights_API_key_1": {
-                        "const": "You didn't specify PageSpeed Insights API&#8209;key when launching Website Audit. Add API-key"
+                        "const": "You didn't specify PageSpeed Insights API&#8209;key when launching Website Audit. Add API-key",
+                        "readOnly": true
                     },
                     "Hint_not_PageSpeed_Insights_API_key_2": {
-                        "const": "in Audit Settings"
+                        "const": "in Audit Settings",
+                        "readOnly": true
                     },
                     "Hint_not_PageSpeed_Insights_API_key_3": {
-                        "const": "and launch Audit once more."
+                        "const": "and launch Audit once more.",
+                        "readOnly": true
                     }
                 },
                 "required": [

@@ -11,37 +11,48 @@
                 "type": "object",
                 "properties": {
                     "Field_command": {
-                        "const": "Сommand"
+                        "const": "Сommand",
+                        "readOnly": true
                     },
                     "Field_description": {
-                        "const": "Description"
+                        "const": "Description",
+                        "readOnly": true
                     },
                     "Field_days": {
-                        "const": "Days of the week"
+                        "const": "Days of the week",
+                        "readOnly": true
                     },
                     "Field_hh": {
-                        "const": "Hours"
+                        "const": "Hours",
+                        "readOnly": true
                     },
                     "Field_i": {
-                        "const": "Minutes"
+                        "const": "Minutes",
+                        "readOnly": true
                     },
                     "Field_on": {
-                        "const": "On/Off"
+                        "const": "On/Off",
+                        "readOnly": true
                     },
                     "Field_task_create_time": {
-                        "const": "Task created"
+                        "const": "Task created",
+                        "readOnly": true
                     },
                     "Field_task_start_time": {
-                        "const": "Task runned"
+                        "const": "Task runned",
+                        "readOnly": true
                     },
                     "Field_task_status": {
-                        "const": "Execution status"
+                        "const": "Execution status",
+                        "readOnly": true
                     },
                     "Disabled": {
-                        "const": "Disabled"
+                        "const": "Disabled",
+                        "readOnly": true
                     },
                     "Enabled": {
-                        "const": "Enabled"
+                        "const": "Enabled",
+                        "readOnly": true
                     }
                 },
                 "required": [

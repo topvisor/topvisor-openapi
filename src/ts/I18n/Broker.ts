@@ -9,335 +9,335 @@ export interface components {
     schemas: {
         "I18n.Broker": {
             /** @constant */
-            Filter: "Filter";
+            readonly Filter: "Filter";
             /** @constant */
-            All: "All";
+            readonly All: "All";
             /** @constant */
-            Active: "Active";
+            readonly Active: "Active";
             /** @constant */
-            Inactive: "Inactive";
+            readonly Inactive: "Inactive";
             /** @constant */
-            Draft: "Draft";
+            readonly Draft: "Draft";
             /** @constant */
-            Campaign_draft_status: "This campaign has a \"Draft\" status.<br> You can manage only active ads";
+            readonly Campaign_draft_status: "This campaign has a \"Draft\" status.<br> You can manage only active ads";
             /** @constant */
-            Configured: "Configured";
+            readonly Configured: "Configured";
             /** @constant */
-            Not_configured: "Not configured";
+            readonly Not_configured: "Not configured";
             /** @constant */
-            By_min_1GP: "Min. bid 1st GP";
+            readonly By_min_1GP: "Min. bid 1st GP";
             /** @constant */
-            By_min_GP: "Min. bid GP";
+            readonly By_min_GP: "Min. bid GP";
             /** @constant */
-            By_min_1SP: "Min. bid 1st SP";
+            readonly By_min_1SP: "Min. bid 1st SP";
             /** @constant */
-            By_min_SP: "Min. bid SP";
+            readonly By_min_SP: "Min. bid SP";
             /** @constant */
-            Min_bid: "Min. bid";
+            readonly Min_bid: "Min. bid";
             /** @constant */
-            No_ads: "This campaign has no ads or they<br> are not synced.";
+            readonly No_ads: "This campaign has no ads or they<br> are not synced.";
             /** @constant */
-            Refresh_list: "Update the list";
+            readonly Refresh_list: "Update the list";
             /** @constant */
-            All_groups: "All groups";
+            readonly All_groups: "All groups";
             /** @constant */
-            Regions: "Display regions";
+            readonly Regions: "Display regions";
             /** @constant */
-            Ad_number: "Ad № M";
+            readonly Ad_number: "Ad № M";
             /** @constant */
-            Keyword: "Keyword";
+            readonly Keyword: "Keyword";
             /** @constant */
-            Impressions: "Impressions";
+            readonly Impressions: "Impressions";
             /** @constant */
-            Clicks: "Clicks";
+            readonly Clicks: "Clicks";
             /** @constant */
-            Block_bid: "Traffic volume / Bid";
+            readonly Block_bid: "Traffic volume / Bid";
             /** @constant */
-            Traffic_volume: "Traffic volume";
+            readonly Traffic_volume: "Traffic volume";
             /** @constant */
-            CPC: "CPC";
+            readonly CPC: "CPC";
             /** @constant */
-            MAX_price: "MAX bid";
+            readonly MAX_price: "MAX bid";
             /** @constant */
-            if_MAX_price_preceeded: "if MAX price<br> preceeded";
+            readonly if_MAX_price_preceeded: "if MAX price<br> preceeded";
             /** @constant */
-            units: "units";
+            readonly units: "units";
             /** @constant */
-            New_bid: "Next<br>bid";
+            readonly New_bid: "Next<br>bid";
             /** @constant */
-            Current_bid: "Current<br>bid";
+            readonly Current_bid: "Current<br>bid";
             /** @constant */
-            Cpc_search_results: "CPC on search<br> results page";
+            readonly Cpc_search_results: "CPC on search<br> results page";
             /** @constant */
-            Apply_to_selected_keywords: "Apply to selected keywords";
+            readonly Apply_to_selected_keywords: "Apply to selected keywords";
             /** @constant */
-            count: " ";
+            readonly count: " ";
             /** @constant */
-            Adjustment_short: "Adj";
+            readonly Adjustment_short: "Adj";
             /** @constant */
-            Advertising_short: "Ad";
+            readonly Advertising_short: "Ad";
             /** @constant */
-            Select_tactics: "Select tactics";
+            readonly Select_tactics: "Select tactics";
             /** @constant */
-            Select_traffic_volume: "Select traffic volume";
+            readonly Select_traffic_volume: "Select traffic volume";
             /** @constant */
-            Select_position: "Select position";
+            readonly Select_position: "Select position";
             /** @constant */
-            Set_price: "Set price";
+            readonly Set_price: "Set price";
             /** @constant */
-            no_more: "no more";
+            readonly no_more: "no more";
             /** @constant */
-            Adjust_for_other_campaigns: "Apply to all campaigns";
+            readonly Adjust_for_other_campaigns: "Apply to all campaigns";
             /** @constant */
-            Show_hide_keywords: "Show / Hide keywords";
+            readonly Show_hide_keywords: "Show / Hide keywords";
             /** @constant */
-            Show_group_keywords: "Show group keywords";
+            readonly Show_group_keywords: "Show group keywords";
             /** @constant */
-            Select_campaign: "Select campaign";
+            readonly Select_campaign: "Select campaign";
             /** @constant */
-            Ad_groups: "Ad groups";
+            readonly Ad_groups: "Ad groups";
             /** @constant */
-            Schedule: "Schedule";
+            readonly Schedule: "Schedule";
             /** @constant */
-            Journal: "Journal";
+            readonly Journal: "Journal";
             /** @constant */
-            Integration_settings: "Integration settings";
+            readonly Integration_settings: "Integration settings";
             /** @constant */
-            Key_expires: "Key expires";
+            readonly Key_expires: "Key expires";
             /** @constant */
-            Limits_API_direct: "Yandex.Direct API limits";
+            readonly Limits_API_direct: "Yandex.Direct API limits";
             /** @constant */
-            Weekly_budget_forecast: "Weekly budget forecast";
+            readonly Weekly_budget_forecast: "Weekly budget forecast";
             /** @constant */
-            Update_list_campaigns: "Update ad campaigns";
+            readonly Update_list_campaigns: "Update ad campaigns";
             /** @constant */
-            adjustments_for: "adjustments priced";
+            readonly adjustments_for: "adjustments priced";
             /** @constant */
-            API_limits: "API limits";
+            readonly API_limits: "API limits";
             /** @constant */
-            Ad_campaigns: "Ad campaigns";
+            readonly Ad_campaigns: "Ad campaigns";
             /** @constant */
-            Status: "Status";
+            readonly Status: "Status";
             /** @constant */
-            Direct_balance: "Direct<br> balance";
+            readonly Direct_balance: "Direct<br> balance";
             /** @constant */
-            configured_notconfigured: "configured<br>(not configured)";
+            readonly configured_notconfigured: "configured<br>(not configured)";
             /** @constant */
-            Bidding_cost: "Bidding<br>cost";
+            readonly Bidding_cost: "Bidding<br>cost";
             /** @constant */
-            Management: "Manage";
+            readonly Management: "Manage";
             /** @constant */
-            for_all: "for all";
+            readonly for_all: "for all";
             /** @constant */
-            Bid_adjustment: "Bid adjustment";
+            readonly Bid_adjustment: "Bid adjustment";
             /** @constant */
-            Journal_log: "Journal";
+            readonly Journal_log: "Journal";
             /** @constant */
-            Automated_strategy: "Automated&nbsp;bid strategy: bidding cannot be applied";
+            readonly Automated_strategy: "Automated&nbsp;bid strategy: bidding cannot be applied";
             /** @constant */
-            Bidding_disabled: "Bidding disabled";
+            readonly Bidding_disabled: "Bidding disabled";
             /** @constant */
-            Adjust_not_adjust_bids: "Manage/Do not manage bids";
+            readonly Adjust_not_adjust_bids: "Manage/Do not manage bids";
             /** @constant */
-            Integrate_to_manage_bids_1: "To manage bids for ad campaigns,";
+            readonly Integrate_to_manage_bids_1: "To manage bids for ad campaigns,";
             /** @constant */
-            Integrate_to_manage_bids_2: "integrate<br>";
+            readonly Integrate_to_manage_bids_2: "integrate<br>";
             /** @constant */
-            Integrate_to_manage_bids_3: "your account with";
+            readonly Integrate_to_manage_bids_3: "your account with";
             /** @constant */
-            Mass_turn_on_bidding: "Turn on bidding for all campaigns";
+            readonly Mass_turn_on_bidding: "Turn on bidding for all campaigns";
             /** @constant */
-            Turn_on: "On";
+            readonly Turn_on: "On";
             /** @constant */
-            Turn_off: "Off";
+            readonly Turn_off: "Off";
             /** @constant */
-            Schedule_bidding: "Schedule bidding";
+            readonly Schedule_bidding: "Schedule bidding";
             /** @constant */
-            Bulk_campaign_management: "Bulk campaign management";
+            readonly Bulk_campaign_management: "Bulk campaign management";
             /** @constant */
-            Keyword_was_deleted: "Keyword is deleted";
+            readonly Keyword_was_deleted: "Keyword is deleted";
             /** @constant */
-            in_Adwords: "in Google Ads";
+            readonly in_Adwords: "in Google Ads";
             /** @constant */
-            Keywords_bidding_applied: "Keywords with adjusted bids";
+            readonly Keywords_bidding_applied: "Keywords with adjusted bids";
             /** @constant */
-            Keywords_no_bidding_applied: "Keywords without adjusted bids";
+            readonly Keywords_no_bidding_applied: "Keywords without adjusted bids";
             /** @constant */
-            Yandex_error: "Yandex.Direct server error";
+            readonly Yandex_error: "Yandex.Direct server error";
             /** @constant */
-            No_vaild_currency_for_keywords: "No valid currency for this keyword found";
+            readonly No_vaild_currency_for_keywords: "No valid currency for this keyword found";
             /** @constant */
-            Support_only_real_currency_note: "At the moment we support only real currency";
+            readonly Support_only_real_currency_note: "At the moment we support only real currency";
             /** @constant */
-            Expected_array: "Array expected";
+            readonly Expected_array: "Array expected";
             /** @constant */
-            Bid_management_available_for_manual_note: "Bid management available only for campaigns with manual bidding strategy";
+            readonly Bid_management_available_for_manual_note: "Bid management available only for campaigns with manual bidding strategy";
             /** @constant */
-            Low_balance_note: "You have insufficient funds to manage bids for the project";
+            readonly Low_balance_note: "You have insufficient funds to manage bids for the project";
             /** @constant */
-            Low_balance_owner_note: "Project owner has insufficient funds";
+            readonly Low_balance_owner_note: "Project owner has insufficient funds";
             /** @constant */
-            Direct_bids_adjusted_for_note: "Yandex.Direct bids are adjusted for the campaign";
+            readonly Direct_bids_adjusted_for_note: "Yandex.Direct bids are adjusted for the campaign";
             /** @constant */
-            adjusted_for_project: "in the project";
+            readonly adjusted_for_project: "in the project";
             /** @constant */
-            State_ENABLED: "Enabled";
+            readonly State_ENABLED: "Enabled";
             /** @constant */
-            State_PAUSED: "Paused";
+            readonly State_PAUSED: "Paused";
             /** @constant */
-            State_REMOVED: "Removed";
+            readonly State_REMOVED: "Removed";
             /** @constant */
-            State_UNKNOWN: "Unknown";
+            readonly State_UNKNOWN: "Unknown";
             /** @constant */
-            Frequency_never: "Never";
+            readonly Frequency_never: "Never";
             /** @constant */
-            Frequency_daily: "Daily";
+            readonly Frequency_daily: "Daily";
             /** @constant */
-            Frequency_daily_2: "Twice a day";
+            readonly Frequency_daily_2: "Twice a day";
             /** @constant */
-            Frequency_every_4_hours: "Every 4 hours";
+            readonly Frequency_every_4_hours: "Every 4 hours";
             /** @constant */
-            Frequency_every_hour: "Every hour";
+            readonly Frequency_every_hour: "Every hour";
             /** @constant */
-            Frequency_half_hour: "Every 30 minutes";
+            readonly Frequency_half_hour: "Every 30 minutes";
             /** @constant */
-            Frequency_10_min: "Every 10 minutes";
+            readonly Frequency_10_min: "Every 10 minutes";
             /** @constant */
-            Frequency_5_min: "Every 5 minutes";
+            readonly Frequency_5_min: "Every 5 minutes";
             /** @constant */
-            times_a_week: "times<br>a week";
+            readonly times_a_week: "times<br>a week";
             /** @constant */
-            Start_managing_bids: "Run bidding";
+            readonly Start_managing_bids: "Run bidding";
             /** @constant */
-            Manage_bids: "Manage bids";
+            readonly Manage_bids: "Manage bids";
             /** @constant */
-            Bidding_schedule: "Bidding schedule";
+            readonly Bidding_schedule: "Bidding schedule";
             /** @constant */
-            No_manage_bids_of_suspended_keywords: "Do not manage disabled keywords";
+            readonly No_manage_bids_of_suspended_keywords: "Do not manage disabled keywords";
             /** @constant */
-            cannot_combine_option_with_no_impressions_tactics: "this option cannot be combined with the \"Stop impressions\" tactic";
+            readonly cannot_combine_option_with_no_impressions_tactics: "this option cannot be combined with the \"Stop impressions\" tactic";
             /** @constant */
-            Bidding_on_when_impressions_on: "Bidding is active only with ad impressions enabled, ad status is checked automatically";
+            readonly Bidding_on_when_impressions_on: "Bidding is active only with ad impressions enabled, ad status is checked automatically";
             /** @constant */
-            update: "update";
+            readonly update: "update";
             /** @constant */
-            Impressions_schedule: "Impressions schedule";
+            readonly Impressions_schedule: "Impressions schedule";
             /** @constant */
-            Schedule_not_uploaded: "Schedule not uploaded yet.";
+            readonly Schedule_not_uploaded: "Schedule not uploaded yet.";
             /** @constant */
-            Campaign_timezone: "Campaign timezone";
+            readonly Campaign_timezone: "Campaign timezone";
             /** @constant */
-            Hours: "Hours";
+            readonly Hours: "Hours";
             /** @constant */
-            Include_working_weekend: "Show on weekend workdays";
+            readonly Include_working_weekend: "Show on weekend workdays";
             /** @constant */
-            Include_holidays: "Show on holidays";
+            readonly Include_holidays: "Show on holidays";
             /** @constant */
-            Show_since: "Show since";
+            readonly Show_since: "Show since";
             /** @constant */
-            show_till: "till";
+            readonly show_till: "till";
             /** @constant */
-            do_not_show: "do not show";
+            readonly do_not_show: "do not show";
             /** @constant */
-            Campaign_settings: "Campaign settings";
+            readonly Campaign_settings: "Campaign settings";
             /** @constant */
-            All_campaigns: "All campaigns";
+            readonly All_campaigns: "All campaigns";
             /** @constant */
-            Campaign: "Campaign";
+            readonly Campaign: "Campaign";
             /** @constant */
-            Info: "Details";
+            readonly Info: "Details";
             /** @constant */
-            risk_bid: "risk bid";
+            readonly risk_bid: "risk bid";
             /** @constant */
-            First_place_premium: "1 Спецразмещение";
+            readonly First_place_premium: "1 Спецразмещение";
             /** @constant */
-            Second_place_premium: "2 Спецразмещение";
+            readonly Second_place_premium: "2 Спецразмещение";
             /** @constant */
-            Third_place_premium: "3 Спецразмещение";
+            readonly Third_place_premium: "3 Спецразмещение";
             /** @constant */
-            Premium_placement: "Спецразмещение";
+            readonly Premium_placement: "Спецразмещение";
             /** @constant */
-            First_place: "1 место в Гарантии";
+            readonly First_place: "1 место в Гарантии";
             /** @constant */
-            Guaranteed_placement: "Гарантированные показы";
+            readonly Guaranteed_placement: "Гарантированные показы";
             /** @constant */
-            First_position: "1 место";
+            readonly First_position: "1 место";
             /** @constant */
-            Above_page: "Вверху страницы";
+            readonly Above_page: "Вверху страницы";
             /** @constant */
-            First_page: "Первая страница";
+            readonly First_page: "Первая страница";
             /** @constant */
-            P11_0: "Traffic volume max.";
+            readonly P11_0: "Traffic volume max.";
             /** @constant */
-            P12_0: "Traffic volume ~95%";
+            readonly P12_0: "Traffic volume ~95%";
             /** @constant */
-            P13_0: "Traffic volume ~90%";
+            readonly P13_0: "Traffic volume ~90%";
             /** @constant */
-            P1L_0: "Traffic volume ~75%";
+            readonly P1L_0: "Traffic volume ~75%";
             /** @constant */
-            P21_0: "Traffic volume ~15%";
+            readonly P21_0: "Traffic volume ~15%";
             /** @constant */
-            P2L_0: "Traffic volume ~5%";
+            readonly P2L_0: "Traffic volume ~5%";
             /** @constant */
-            P11_1: "1st position";
+            readonly P11_1: "1st position";
             /** @constant */
-            P1L_1: "Top of page";
+            readonly P1L_1: "Top of page";
             /** @constant */
-            P21_1: "Suggested bid";
+            readonly P21_1: "Suggested bid";
             /** @constant */
-            P2L_1: "First page";
+            readonly P2L_1: "First page";
             /** @constant */
-            P11_0_short: "1PP";
+            readonly P11_0_short: "1PP";
             /** @constant */
-            P12_0_short: "2PP";
+            readonly P12_0_short: "2PP";
             /** @constant */
-            P13_0_short: "3PP";
+            readonly P13_0_short: "3PP";
             /** @constant */
-            P1L_0_short: "PP";
+            readonly P1L_0_short: "PP";
             /** @constant */
-            P21_0_short: "1GP";
+            readonly P21_0_short: "1GP";
             /** @constant */
-            P2L_0_short: "GP";
+            readonly P2L_0_short: "GP";
             /** @constant */
-            P11_1_short: "1P";
+            readonly P11_1_short: "1P";
             /** @constant */
-            P1L_1_short: "↑P";
+            readonly P1L_1_short: "↑P";
             /** @constant */
-            P21_1_short: "SB";
+            readonly P21_1_short: "SB";
             /** @constant */
-            P2L_1_short: "↓P";
+            readonly P2L_1_short: "↓P";
             /** @constant */
-            Tactics_2_set_max_bid: "MAX: set MAX bid";
+            readonly Tactics_2_set_max_bid: "MAX: set MAX bid";
             /** @constant */
-            Tactics_2_lower_pos: "Move ad down";
+            readonly Tactics_2_lower_pos: "Move ad down";
             /** @constant */
-            Tactics_2_set_min_bid: "Set min bid";
+            readonly Tactics_2_set_min_bid: "Set min bid";
             /** @constant */
-            Tactics_2_stop_impressions: "Stop impressions";
+            readonly Tactics_2_stop_impressions: "Stop impressions";
             /** @constant */
-            impressions_disabled: "ad is inactive";
+            readonly impressions_disabled: "ad is inactive";
             /** @constant */
-            set_max: "set in MAX";
+            readonly set_max: "set in MAX";
             /** @constant */
-            set_min: "min bid";
+            readonly set_min: "min bid";
             /** @constant */
-            old_bid: "old bid";
+            readonly old_bid: "old bid";
             /** @constant */
-            Lower_position: "Lower position";
+            readonly Lower_position: "Lower position";
             /** @constant */
-            Select_date: "Select period";
+            readonly Select_date: "Select period";
             /** @constant */
-            Download_log: "Download bidding history";
+            readonly Download_log: "Download bidding history";
             /** @constant */
-            Warinig_min_balance_for_bidding: "Important! Bidding is available if you have a minimum balance of:";
+            readonly Warinig_min_balance_for_bidding: "Important! Bidding is available if you have a minimum balance of:";
             /** @constant */
-            Campaign_added_in_another_project: "This campaign already exists in another project";
+            readonly Campaign_added_in_another_project: "This campaign already exists in another project";
             /** @constant */
-            Bidding_activated_for_campaign_in_another_project: "Bidding is already activated for this campaign in another project";
+            readonly Bidding_activated_for_campaign_in_another_project: "Bidding is already activated for this campaign in another project";
             /** @constant */
-            in_another_project: "in ano. project";
+            readonly in_another_project: "in ano. project";
             /** @constant */
-            agency: "agency";
+            readonly agency: "agency";
         };
     };
     responses: never;

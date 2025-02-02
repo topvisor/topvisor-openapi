@@ -9,27 +9,27 @@ export interface components {
     schemas: {
         "I18n.Api": {
             /** @constant */
-            View_in_API_explorer: "View in API explorer";
+            readonly View_in_API_explorer: "View in API explorer";
             /** @constant */
-            Add_parameter: "Add parameter";
+            readonly Add_parameter: "Add parameter";
             /** @constant */
-            Add_parameter_array: "Add parameter (array)";
+            readonly Add_parameter_array: "Add parameter (array)";
             /** @constant */
-            Select_data_to_return: "Select data to return (fields)";
+            readonly Select_data_to_return: "Select data to return (fields)";
             /** @constant */
-            Add_filter: "Add a filter (filters item)";
+            readonly Add_filter: "Add a filter (filters item)";
             /** @constant */
-            Add_sorting: "Add sorting (orders item)";
+            readonly Add_sorting: "Add sorting (orders item)";
             /** @constant */
-            Set_limit: "Set limit";
+            readonly Set_limit: "Set limit";
             /** @constant */
-            Set_offset: "Set offset";
+            readonly Set_offset: "Set offset";
             /** @constant */
-            Developer_documentation: "API Documentation";
+            readonly Developer_documentation: "API Documentation";
             /** @constant */
-            Ask_questions_get_answers: "Search documentation";
+            readonly Ask_questions_get_answers: "Search documentation";
             /** @constant */
-            PHP_SDK_example_githab: "PHP SDK example on GitHub";
+            readonly PHP_SDK_example_githab: "PHP SDK example on GitHub";
         };
     };
     responses: never;

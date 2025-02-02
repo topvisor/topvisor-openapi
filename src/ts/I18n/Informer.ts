@@ -9,63 +9,63 @@ export interface components {
     schemas: {
         "I18n.Informer": {
             /** @constant */
-            Type_balance: "Balance";
+            readonly Type_balance: "Balance";
             /** @constant */
-            Type_news: "Sevice news";
+            readonly Type_news: "Sevice news";
             /** @constant */
-            Type_tickets: "Tickets";
+            readonly Type_tickets: "Tickets";
             /** @constant */
-            Type_yandex_update: "Yandex update";
+            readonly Type_yandex_update: "Yandex update";
             /** @constant */
-            Type_comments: "New comment alerts";
+            readonly Type_comments: "New comment alerts";
             /** @constant */
-            Type_api: "API updates";
+            readonly Type_api: "API updates";
             /** @constant */
-            Unsubscribe: "Unsubscribe";
+            readonly Unsubscribe: "Unsubscribe";
             /** @constant */
-            Enter_title_and_text: "Enter title and message text";
+            readonly Enter_title_and_text: "Enter title and message text";
             /** @constant */
-            Log_text: "Emailing";
+            readonly Log_text: "Emailing";
             /** @constant */
-            Log_text2: "only for subscribers";
+            readonly Log_text2: "only for subscribers";
             /** @constant */
-            Tickets_title: "You received a new reply to your ticket";
+            readonly Tickets_title: "You received a new reply to your ticket";
             /** @constant */
-            Balance_title: "Account balance alert";
+            readonly Balance_title: "Account balance alert";
             /** @constant */
-            Update_title: "Yandex search results updated";
+            readonly Update_title: "Yandex search results updated";
             /** @constant */
-            Comments_title: "You comment has a new reply! Join the discussion 😎";
+            readonly Comments_title: "You comment has a new reply! Join the discussion 😎";
             /** @constant */
-            No_new_notifications: "No notifications yet";
+            readonly No_new_notifications: "No notifications yet";
             /** @constant */
-            clear_all: "clear all";
+            readonly clear_all: "clear all";
             /** @constant */
-            Notifications: "Notifications";
+            readonly Notifications: "Notifications";
             /** @constant */
-            Email: "Email";
+            readonly Email: "Email";
             /** @constant */
-            Push: "Push";
+            readonly Push: "Push";
             /** @constant */
-            Block: "Block";
+            readonly Block: "Block";
             /** @constant */
-            Informer: "Alerts";
+            readonly Informer: "Alerts";
             /** @constant */
-            Select_all: "Select all";
+            readonly Select_all: "Select all";
             /** @constant */
-            Clear_all: "Clear all";
+            readonly Clear_all: "Clear all";
             /** @constant */
-            Comment_replies: "Comment replies";
+            readonly Comment_replies: "Comment replies";
             /** @constant */
-            replied_to_you: " replied to you";
+            readonly replied_to_you: " replied to you";
             /** @constant */
-            in_comments_on_the_post: "in comments on the post";
+            readonly in_comments_on_the_post: "in comments on the post";
             /** @constant */
-            Email_delivery_failure: "Email delivery has failed to this recipient";
+            readonly Email_delivery_failure: "Email delivery has failed to this recipient";
             /** @constant */
-            email_unsubscribed_from_reports: "unsubscribed from reports of projects";
+            readonly email_unsubscribed_from_reports: "unsubscribed from reports of projects";
             /** @constant */
-            You_unsubscribed_from_emails: "You unsubscribed from emails to";
+            readonly You_unsubscribed_from_emails: "You unsubscribed from emails to";
         };
     };
     responses: never;

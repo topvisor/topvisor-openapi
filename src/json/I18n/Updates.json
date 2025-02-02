@@ -11,61 +11,80 @@
                 "type": "object",
                 "properties": {
                     "SERP_update_score": {
-                        "const": "SERP update score"
+                        "const": "SERP update score",
+                        "readOnly": true
                     },
                     "confirmed_Yandex": {
-                        "const": "update confirmed by Yandex"
+                        "const": "update confirmed by Yandex",
+                        "readOnly": true
                     },
                     "Calendar": {
-                        "const": "updates calendar"
+                        "const": "updates calendar",
+                        "readOnly": true
                     },
                     "Informer": {
-                        "const": "Website informer"
+                        "const": "Website informer",
+                        "readOnly": true
                     },
                     "Yandex_search_base_update": {
-                        "const": "Yandex search base update"
+                        "const": "Yandex search base update",
+                        "readOnly": true
                     },
                     "SERP_changes": {
-                        "const": "SERP change"
+                        "const": "SERP change",
+                        "readOnly": true
                     },
                     "Text_update": {
-                        "const": " Text update: index <span class=\"top-only-pc\">updated</span> on "
+                        "const": " Text update: index <span class=\"top-only-pc\">updated</span> on ",
+                        "readOnly": true
                     },
                     "Index_updated": {
-                        "const": "Index updated on "
+                        "const": "Index updated on ",
+                        "readOnly": true
                     },
                     "Comments": {
-                        "const": "Comments"
+                        "const": "Comments",
+                        "readOnly": true
                     },
                     "Add_comment": {
-                        "const": "Add comment"
+                        "const": "Add comment",
+                        "readOnly": true
                     },
                     "Sign_in_to_leave_comments": {
-                        "const": "<a href=\".\" class=\"btn\">Sign in</a> to leave comments"
+                        "const": "<a href=\".\" class=\"btn\">Sign in</a> to leave comments",
+                        "readOnly": true
                     },
                     "Subscribe": {
-                        "const": "Subscribe"
+                        "const": "Subscribe",
+                        "readOnly": true
                     },
                     "points": {
-                        "const": "points"
+                        "const": "points",
+                        "readOnly": true
                     },
                     "Update": {
-                        "const": "Update"
+                        "const": "Update",
+                        "readOnly": true
                     },
                     "Updates_calendar": {
-                        "const": "Updates calendar"
+                        "const": "Updates calendar",
+                        "readOnly": true
                     },
                     "Yandex_update": {
-                        "const": "Yandex update"
+                        "const": "Yandex update",
+                        "readOnly": true
                     },
                     "Yandex_text_update": {
-                        "const": "Yandex text update"
+                        "const": "Yandex text update",
+                        "readOnly": true
                     },
                     "Yandex_SERP_update": {
-                        "const": "Yandex SERP update"
+                        "const": "Yandex SERP update",
+                        "readOnly": true
                     },
                     "Index_updated_on": {
-                        "const": "Index updated on"
+                        "const": "Index updated on",
+                        "readOnly": true
                     }
                 },
                 "required": [

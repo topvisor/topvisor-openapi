@@ -11,727 +11,968 @@
                 "type": "object",
                 "properties": {
                     "Account": {
-                        "const": "Account"
+                        "const": "Account",
+                        "readOnly": true
                     },
                     "Name": {
-                        "const": "Name"
+                        "const": "Name",
+                        "readOnly": true
                     },
                     "Password": {
-                        "const": "Password"
+                        "const": "Password",
+                        "readOnly": true
                     },
                     "password_updated": {
-                        "const": "updated"
+                        "const": "updated",
+                        "readOnly": true
                     },
                     "Theme": {
-                        "const": "Тема оформления"
+                        "const": "Тема оформления",
+                        "readOnly": true
                     },
                     "Encoding": {
-                        "const": "Character encoding"
+                        "const": "Character encoding",
+                        "readOnly": true
                     },
                     "Delimiter": {
-                        "const": "Delimiter"
+                        "const": "Delimiter",
+                        "readOnly": true
                     },
                     "Dec_point": {
-                        "const": "Decimal point"
+                        "const": "Decimal point",
+                        "readOnly": true
                     },
                     "Current_time": {
-                        "const": "Time zone"
+                        "const": "Time zone",
+                        "readOnly": true
                     },
                     "Date_format": {
-                        "const": "Date format"
+                        "const": "Date format",
+                        "readOnly": true
                     },
                     "Push_notifications": {
-                        "const": "Push notifications"
+                        "const": "Push notifications",
+                        "readOnly": true
                     },
                     "Push_enabled": {
-                        "const": "Enabled"
+                        "const": "Enabled",
+                        "readOnly": true
                     },
                     "Push_disabled": {
-                        "const": "Disabled"
+                        "const": "Disabled",
+                        "readOnly": true
                     },
                     "Push_disable_browser": {
-                        "const": "You can turn off notifications in the browser settings"
+                        "const": "You can turn off notifications in the browser settings",
+                        "readOnly": true
                     },
                     "Push_enable_browser": {
-                        "const": "You can turn on notifications in the browser settings"
+                        "const": "You can turn on notifications in the browser settings",
+                        "readOnly": true
                     },
                     "Push_enable": {
-                        "const": "Enable"
+                        "const": "Enable",
+                        "readOnly": true
                     },
                     "Link_account": {
-                        "const": "Linked accounts"
+                        "const": "Linked accounts",
+                        "readOnly": true
                     },
                     "Remove_account": {
-                        "const": "Remove - "
+                        "const": "Remove - ",
+                        "readOnly": true
                     },
                     "API_key": {
-                        "const": "API Key"
+                        "const": "API Key",
+                        "readOnly": true
                     },
                     "API_key_not_generated": {
-                        "const": "Not generated"
+                        "const": "Not generated",
+                        "readOnly": true
                     },
                     "Confirmation_msg_notice_1": {
-                        "const": "We have sent a confirmation message to "
+                        "const": "We have sent a confirmation message to ",
+                        "readOnly": true
                     },
                     "Confirmation_msg_notice_2": {
-                        "const": ". Click a confirmation link to change your Email address. If you don't receive the message,<br> please check your Spam Email folder."
+                        "const": ". Click a confirmation link to change your Email address. If you don't receive the message,<br> please check your Spam Email folder.",
+                        "readOnly": true
                     },
                     "Confirmation_msg_notice_3": {
-                        "const": "."
+                        "const": ".",
+                        "readOnly": true
                     },
                     "Change_email_message": {
-                        "const": "We've sent you a email change confirmation. Follow the link in the email to change your account email."
+                        "const": "We've sent you a email change confirmation. Follow the link in the email to change your account email.",
+                        "readOnly": true
                     },
                     "card_activation_notice": {
-                        "const": "to your account after card activation"
+                        "const": "to your account after card activation",
+                        "readOnly": true
                     },
                     "Rank_cashback_notice": {
-                        "const": "of all monthly payments are sent back to your account on the 1st day of each month"
+                        "const": "of all monthly payments are sent back to your account on the 1st day of each month",
+                        "readOnly": true
                     },
                     "Rank_participant_code": {
-                        "const": "Participant code"
+                        "const": "Participant code",
+                        "readOnly": true
                     },
                     "Export": {
-                        "const": "Export"
+                        "const": "Export",
+                        "readOnly": true
                     },
                     "Informer": {
-                        "const": "Notification Center"
+                        "const": "Notification Center",
+                        "readOnly": true
                     },
                     "Informer_balance_decrease": {
-                        "const": "Balance reached"
+                        "const": "Balance reached",
+                        "readOnly": true
                     },
                     "Informer_new_ticket_response": {
-                        "const": "New ticket replies"
+                        "const": "New ticket replies",
+                        "readOnly": true
                     },
                     "Informer_sms_cost": {
-                        "const": "1 - Paid service. 1 SMS costs $0,01"
+                        "const": "1 - Paid service. 1 SMS costs $0,01",
+                        "readOnly": true
                     },
                     "Export_period": {
-                        "const": "Period"
+                        "const": "Period",
+                        "readOnly": true
                     },
                     "Guest_project": {
-                        "const": "Guest"
+                        "const": "Guest",
+                        "readOnly": true
                     },
                     "Archived_project": {
-                        "const": "Archived"
+                        "const": "Archived",
+                        "readOnly": true
                     },
                     "Export_keywords_number": {
-                        "const": "Total keyword count"
+                        "const": "Total keyword count",
+                        "readOnly": true
                     },
                     "Export_tracked_ranks_number": {
-                        "const": "Checked keyword rankings"
+                        "const": "Checked keyword rankings",
+                        "readOnly": true
                     },
                     "Export_cost": {
-                        "const": "Export cost"
+                        "const": "Export cost",
+                        "readOnly": true
                     },
                     "Export_prepare": {
-                        "const": "Prepare export"
+                        "const": "Prepare export",
+                        "readOnly": true
                     },
                     "Export_start": {
-                        "const": "Export"
+                        "const": "Export",
+                        "readOnly": true
                     },
                     "Archives": {
-                        "const": "Archives"
+                        "const": "Archives",
+                        "readOnly": true
                     },
                     "Menu_account": {
-                        "const": "Account settings"
+                        "const": "Account settings",
+                        "readOnly": true
                     },
                     "Menu_notifications": {
-                        "const": "Notifications"
+                        "const": "Notifications",
+                        "readOnly": true
                     },
                     "Menu_bulk_operations": {
-                        "const": "Bulk operations"
+                        "const": "Bulk operations",
+                        "readOnly": true
                     },
                     "Menu_account_stats": {
-                        "const": "Account stats"
+                        "const": "Account stats",
+                        "readOnly": true
                     },
                     "Menu_XML_transfer": {
-                        "const": "XML transfer"
+                        "const": "XML transfer",
+                        "readOnly": true
                     },
                     "New_email": {
-                        "const": "New email"
+                        "const": "New email",
+                        "readOnly": true
                     },
                     "Current_pwd": {
-                        "const": "Your password"
+                        "const": "Your password",
+                        "readOnly": true
                     },
                     "Change_email": {
-                        "const": "Update email address"
+                        "const": "Update email address",
+                        "readOnly": true
                     },
                     "Email_change": {
-                        "const": "Update email address"
+                        "const": "Update email address",
+                        "readOnly": true
                     },
                     "New_pwd": {
-                        "const": "New password"
+                        "const": "New password",
+                        "readOnly": true
                     },
                     "Confirm_new_pwd": {
-                        "const": "Confirm new password"
+                        "const": "Confirm new password",
+                        "readOnly": true
                     },
                     "Change_pwd": {
-                        "const": "Change password"
+                        "const": "Change password",
+                        "readOnly": true
                     },
                     "Pwd_change": {
-                        "const": "Change password"
+                        "const": "Change password",
+                        "readOnly": true
                     },
                     "White_label": {
-                        "const": "Branded reports"
+                        "const": "Branded reports",
+                        "readOnly": true
                     },
                     "Branded_reports": {
-                        "const": "Branded reports"
+                        "const": "Branded reports",
+                        "readOnly": true
                     },
                     "formats": {
-                        "const": "formats"
+                        "const": "formats",
+                        "readOnly": true
                     },
                     "max_height": {
-                        "const": "max. height"
+                        "const": "max. height",
+                        "readOnly": true
                     },
                     "User_scripts": {
-                        "const": "User scripts"
+                        "const": "User scripts",
+                        "readOnly": true
                     },
                     "Brand_settings": {
-                        "const": "Manage brand settings"
+                        "const": "Manage brand settings",
+                        "readOnly": true
                     },
                     "Company_name": {
-                        "const": "Company name"
+                        "const": "Company name",
+                        "readOnly": true
                     },
                     "Company_logo": {
-                        "const": "Company logo"
+                        "const": "Company logo",
+                        "readOnly": true
                     },
                     "Logo_required_format_notice": {
-                        "const": "Required company logo format is"
+                        "const": "Required company logo format is",
+                        "readOnly": true
                     },
                     "Logo_required_size_notice": {
-                        "const": "Required company logo size should be up to"
+                        "const": "Required company logo size should be up to",
+                        "readOnly": true
                     },
                     "Logo_required_height_notice": {
-                        "const": "Max company logo height is"
+                        "const": "Max company logo height is",
+                        "readOnly": true
                     },
                     "Cannot_form_report_without_updates": {
-                        "const": "At least one project update required to generate a report"
+                        "const": "At least one project update required to generate a report",
+                        "readOnly": true
                     },
                     "logo_required_format": {
-                        "const": "required image formats: .png, .svg"
+                        "const": "required image formats: .png, .svg",
+                        "readOnly": true
                     },
                     "logo_required_height": {
-                        "const": "required height: 50px"
+                        "const": "required height: 50px",
+                        "readOnly": true
                     },
                     "Link_email_notice": {
-                        "const": "* Link your email to get full access to all features"
+                        "const": "* Link your email to get full access to all features",
+                        "readOnly": true
                     },
                     "to_password_form": {
-                        "const": " into this form"
+                        "const": " into this form",
+                        "readOnly": true
                     },
                     "Confirm_owner_status_notice": {
-                        "const": "** to confirm that you are the account owner"
+                        "const": "** to confirm that you are the account owner",
+                        "readOnly": true
                     },
                     "Short_name": {
-                        "const": "This name is too short"
+                        "const": "This name is too short",
+                        "readOnly": true
                     },
                     "Pass_min_length": {
-                        "const": "This password is too short"
+                        "const": "This password is too short",
+                        "readOnly": true
                     },
                     "PWS_not_equal": {
-                        "const": "The passwords do not match!"
+                        "const": "The passwords do not match!",
+                        "readOnly": true
                     },
                     "Email_exists": {
-                        "const": "This email already exists"
+                        "const": "This email already exists",
+                        "readOnly": true
                     },
                     "Email_exists2": {
-                        "const": "This email exists in the system"
+                        "const": "This email exists in the system",
+                        "readOnly": true
                     },
                     "Email_exists3": {
-                        "const": "This email already exists. <br>In order to link it to this account enter your password from "
+                        "const": "This email already exists. <br>In order to link it to this account enter your password from ",
+                        "readOnly": true
                     },
                     "Join_email": {
-                        "const": "Join e-mail"
+                        "const": "Join e-mail",
+                        "readOnly": true
                     },
                     "Enter_password_for_email": {
-                        "const": "Enter password for this e-mail"
+                        "const": "Enter password for this e-mail",
+                        "readOnly": true
                     },
                     "Email_changed_from_to": {
-                        "const": "Your email address has been successfully changed from "
+                        "const": "Your email address has been successfully changed from ",
+                        "readOnly": true
                     },
                     "Registration_invite_sended_1": {
-                        "const": "Invitation to "
+                        "const": "Invitation to ",
+                        "readOnly": true
                     },
                     "Registration_invite_sended_2": {
-                        "const": " was sent successfully"
+                        "const": " was sent successfully",
+                        "readOnly": true
                     },
                     "Registration_invite_sended_error": {
-                        "const": "Message hasn't been sent due to error"
+                        "const": "Message hasn't been sent due to error",
+                        "readOnly": true
                     },
                     "System_reg_msg1": {
-                        "const": "Confirmation message sent to "
+                        "const": "Confirmation message sent to ",
+                        "readOnly": true
                     },
                     "System_reg_msg2": {
-                        "const": " "
+                        "const": " ",
+                        "readOnly": true
                     },
                     "Invalid_code": {
-                        "const": "The code is invalid or has been used"
+                        "const": "The code is invalid or has been used",
+                        "readOnly": true
                     },
                     "Retrieve_system_msg": {
-                        "const": "We have sent you password reset instructions"
+                        "const": "We have sent you password reset instructions",
+                        "readOnly": true
                     },
                     "Yandex_XML_auth_error": {
-                        "const": "Yandex XML authorization error"
+                        "const": "Yandex XML authorization error",
+                        "readOnly": true
                     },
                     "Rank_code_not_available": {
-                        "const": "Code is invalid or has been used"
+                        "const": "Code is invalid or has been used",
+                        "readOnly": true
                     },
                     "Rank_recurrent_sending_code_not_available": {
-                        "const": "You can activate achievement only once"
+                        "const": "You can activate achievement only once",
+                        "readOnly": true
                     },
                     "Rank_date_expired": {
-                        "const": "Activation period has expired"
+                        "const": "Activation period has expired",
+                        "readOnly": true
                     },
                     "Twitter_error_binding_accounts1": {
-                        "const": "Link your Twitter account to log in with Twitter."
+                        "const": "Link your Twitter account to log in with Twitter.",
+                        "readOnly": true
                     },
                     "Twitter_error_binding_accounts2": {
-                        "const": "Otherwise, we will not be able to identify you in Twitter"
+                        "const": "Otherwise, we will not be able to identify you in Twitter",
+                        "readOnly": true
                     },
                     "Twitter_login_not_found": {
-                        "const": "We couldn't find your login in Twitter, please submit a ticket and report the issue to Customer support"
+                        "const": "We couldn't find your login in Twitter, please submit a ticket and report the issue to Customer support",
+                        "readOnly": true
                     },
                     "Twitter_servers_error": {
-                        "const": "Twitter server error"
+                        "const": "Twitter server error",
+                        "readOnly": true
                     },
                     "Required_signing": {
-                        "const": "Follow "
+                        "const": "Follow ",
+                        "readOnly": true
                     },
                     "Twitter_retweet_required": {
-                        "const": "Please retweet us"
+                        "const": "Please retweet us",
+                        "readOnly": true
                     },
                     "Push_button": {
-                        "const": "Click Activate"
+                        "const": "Click Activate",
+                        "readOnly": true
                     },
                     "Rank_canceled": {
-                        "const": "You lost achievement"
+                        "const": "You lost achievement",
+                        "readOnly": true
                     },
                     "XML_monster_deactivate_title": {
-                        "const": "You lost the XML monster card"
+                        "const": "You lost the XML monster card",
+                        "readOnly": true
                     },
                     "XML_monster_deactivate_msg": {
-                        "const": "Your \"XML monster\" card is no longer active as you are not transferring more limits than everyone else anymore"
+                        "const": "Your \"XML monster\" card is no longer active as you are not transferring more limits than everyone else anymore",
+                        "readOnly": true
                     },
                     "XML_monster_activate_title": {
-                        "const": "You received the \"XML monster\" card!"
+                        "const": "You received the \"XML monster\" card!",
+                        "readOnly": true
                     },
                     "XML_monster_activate_msg": {
-                        "const": "Your \"XML monster\" card is activated as you have transferred more XML limits than everyone else"
+                        "const": "Your \"XML monster\" card is activated as you have transferred more XML limits than everyone else",
+                        "readOnly": true
                     },
                     "Rank_ppcchat_deactivate_title": {
-                        "const": "You lost the \"PPC Chat member\" achievement"
+                        "const": "You lost the \"PPC Chat member\" achievement",
+                        "readOnly": true
                     },
                     "Rank_seochat_deactivate_title": {
-                        "const": "You lost the \"SEO Chat member\" achievement"
+                        "const": "You lost the \"SEO Chat member\" achievement",
+                        "readOnly": true
                     },
                     "Rank_ppcchat_activate_title": {
-                        "const": "You received the \"PPC Chat member\" achievement!"
+                        "const": "You received the \"PPC Chat member\" achievement!",
+                        "readOnly": true
                     },
                     "Rank_seochat_activate_title": {
-                        "const": "You received the \"SEO Chat member\" achievement!"
+                        "const": "You received the \"SEO Chat member\" achievement!",
+                        "readOnly": true
                     },
                     "Ranks_retweet": {
-                        "const": "Retweet "
+                        "const": "Retweet ",
+                        "readOnly": true
                     },
                     "Ranks_twitter_follower": {
-                        "const": "Twitter follower"
+                        "const": "Twitter follower",
+                        "readOnly": true
                     },
                     "Ranks_activate": {
-                        "const": "Activate"
+                        "const": "Activate",
+                        "readOnly": true
                     },
                     "Ranks_twitter_post": {
-                        "const": "a post"
+                        "const": "a post",
+                        "readOnly": true
                     },
                     "Ranks_twitter_incomplete_notice": {
-                        "const": "You need to complete all steps!"
+                        "const": "You need to complete all steps!",
+                        "readOnly": true
                     },
                     "Access": {
-                        "const": "Manage access"
+                        "const": "Manage access",
+                        "readOnly": true
                     },
                     "Access_emails": {
-                        "const": "Who can access"
+                        "const": "Who can access",
+                        "readOnly": true
                     },
                     "Access_view_project": {
-                        "const": "View project"
+                        "const": "View project",
+                        "readOnly": true
                     },
                     "Access_track_ranks": {
-                        "const": "Rank tracker"
+                        "const": "Rank tracker",
+                        "readOnly": true
                     },
                     "Access_view_traffic": {
-                        "const": "Traffic data"
+                        "const": "Traffic data",
+                        "readOnly": true
                     },
                     "Access_view_analytics": {
-                        "const": "Analytics reports"
+                        "const": "Analytics reports",
+                        "readOnly": true
                     },
                     "Access_view_AMS": {
-                        "const": "Search volume"
+                        "const": "Search volume",
+                        "readOnly": true
                     },
                     "Access_project": {
-                        "const": "Project"
+                        "const": "Project",
+                        "readOnly": true
                     },
                     "Access_restrict": {
-                        "const": "Restrict access"
+                        "const": "Restrict access",
+                        "readOnly": true
                     },
                     "Access_view_summary": {
-                        "const": "Summary"
+                        "const": "Summary",
+                        "readOnly": true
                     },
                     "Access_apply_to_selected": {
-                        "const": "Apply to selected"
+                        "const": "Apply to selected",
+                        "readOnly": true
                     },
                     "Access_grant_access": {
-                        "const": "Grant access"
+                        "const": "Grant access",
+                        "readOnly": true
                     },
                     "Access_user_email": {
-                        "const": "User email"
+                        "const": "User email",
+                        "readOnly": true
                     },
                     "Access_guest_link": {
-                        "const": "Guest link"
+                        "const": "Guest link",
+                        "readOnly": true
                     },
                     "Access_count": {
-                        "const": ""
+                        "const": "",
+                        "readOnly": true
                     },
                     "Access_select_dates": {
-                        "const": "Allow to pick dates"
+                        "const": "Allow to pick dates",
+                        "readOnly": true
                     },
                     "Access_add_user": {
-                        "const": "Add user"
+                        "const": "Add user",
+                        "readOnly": true
                     },
                     "Change_project_owner": {
-                        "const": "Project transfer"
+                        "const": "Project transfer",
+                        "readOnly": true
                     },
                     "Pending_project_transfer_1": {
-                        "const": "Pending, until"
+                        "const": "Pending, until",
+                        "readOnly": true
                     },
                     "Pending_project_transfer_2": {
-                        "const": "confirms project transfer."
+                        "const": "confirms project transfer.",
+                        "readOnly": true
                     },
                     "Transfer_project": {
-                        "const": "Transfer"
+                        "const": "Transfer",
+                        "readOnly": true
                     },
                     "Access_manage": {
-                        "const": "Manage access"
+                        "const": "Manage access",
+                        "readOnly": true
                     },
                     "integration_not_connected": {
-                        "const": "not connected"
+                        "const": "not connected",
+                        "readOnly": true
                     },
                     "Integration_connect": {
-                        "const": "Connect"
+                        "const": "Connect",
+                        "readOnly": true
                     },
                     "Integration_valid_till": {
-                        "const": "Key expires"
+                        "const": "Key expires",
+                        "readOnly": true
                     },
                     "Integration_counter_not_selected": {
-                        "const": "Select a counter"
+                        "const": "Select a counter",
+                        "readOnly": true
                     },
                     "Integration_no_counters_found": {
-                        "const": "No counters found"
+                        "const": "No counters found",
+                        "readOnly": true
                     },
                     "Integration_get_fresh_data": {
-                        "const": "Update"
+                        "const": "Update",
+                        "readOnly": true
                     },
                     "Integration_expires_in": {
-                        "const": "Expires in"
+                        "const": "Expires in",
+                        "readOnly": true
                     },
                     "Integration_days_1": {
-                        "const": "days"
+                        "const": "days",
+                        "readOnly": true
                     },
                     "Integration_days_2": {
-                        "const": "days"
+                        "const": "days",
+                        "readOnly": true
                     },
                     "Integration_days_3": {
-                        "const": "days"
+                        "const": "days",
+                        "readOnly": true
                     },
                     "Integration_extend": {
-                        "const": "Extend"
+                        "const": "Extend",
+                        "readOnly": true
                     },
                     "Integration_disconnect": {
-                        "const": "Disconnect"
+                        "const": "Disconnect",
+                        "readOnly": true
                     },
                     "Integration_integrate_ad_campaigns": {
-                        "const": "Integrate ad campaigns"
+                        "const": "Integrate ad campaigns",
+                        "readOnly": true
                     },
                     "Integration_no_campaigns_for_edit": {
-                        "const": "We found no available campaigns to manage in your account."
+                        "const": "We found no available campaigns to manage in your account.",
+                        "readOnly": true
                     },
                     "Preferences": {
-                        "const": "Account"
+                        "const": "Account",
+                        "readOnly": true
                     },
                     "preferences": {
-                        "const": "account"
+                        "const": "account",
+                        "readOnly": true
                     },
                     "account_link": {
-                        "const": "your account settings"
+                        "const": "your account settings",
+                        "readOnly": true
                     },
                     "Bank": {
-                        "const": "Bank"
+                        "const": "Bank",
+                        "readOnly": true
                     },
                     "Bulk_operations": {
-                        "const": "Bulk operations"
+                        "const": "Bulk operations",
+                        "readOnly": true
                     },
                     "Password_emailed": {
-                        "const": "We have emailed a password to"
+                        "const": "We have emailed a password to",
+                        "readOnly": true
                     },
                     "Password_new_emailed": {
-                        "const": "We have sent a new password to"
+                        "const": "We have sent a new password to",
+                        "readOnly": true
                     },
                     "Change_password_notice": {
-                        "const": "You can change your password in "
+                        "const": "You can change your password in ",
+                        "readOnly": true
                     },
                     "Widget": {
-                        "const": "Widget"
+                        "const": "Widget",
+                        "readOnly": true
                     },
                     "Analytcis_top": {
-                        "const": "Top"
+                        "const": "Top",
+                        "readOnly": true
                     },
                     "Analytcis_metric": {
-                        "const": "Metric"
+                        "const": "Metric",
+                        "readOnly": true
                     },
                     "Analytcis_by_keywords": {
-                        "const": "Keywords"
+                        "const": "Keywords",
+                        "readOnly": true
                     },
                     "Analytcis_by_groups": {
-                        "const": "Group"
+                        "const": "Group",
+                        "readOnly": true
                     },
                     "Analytcis_by_folders": {
-                        "const": "Folder"
+                        "const": "Folder",
+                        "readOnly": true
                     },
                     "Analytcis_by_locations": {
-                        "const": "Location"
+                        "const": "Location",
+                        "readOnly": true
                     },
                     "Analytcis_by_competitors": {
-                        "const": "Competitors"
+                        "const": "Competitors",
+                        "readOnly": true
                     },
                     "Analytcis_by_top": {
-                        "const": "Top"
+                        "const": "Top",
+                        "readOnly": true
                     },
                     "Analytics_regions_not_selected": {
-                        "const": "Locations not selected"
+                        "const": "Locations not selected",
+                        "readOnly": true
                     },
                     "Analytcis_by_tag": {
-                        "const": "By tag"
+                        "const": "By tag",
+                        "readOnly": true
                     },
                     "Analytics_narrow": {
-                        "const": "Minimize"
+                        "const": "Minimize",
+                        "readOnly": true
                     },
                     "Analytics_widen": {
-                        "const": "Expand"
+                        "const": "Expand",
+                        "readOnly": true
                     },
                     "Analytics_show_widget_other_accounts": {
-                        "const": "Show the widget to guest users"
+                        "const": "Show the widget to guest users",
+                        "readOnly": true
                     },
                     "Shortener_short_link": {
-                        "const": "Short link"
+                        "const": "Short link",
+                        "readOnly": true
                     },
                     "Shortener_short_links": {
-                        "const": "Short links"
+                        "const": "Short links",
+                        "readOnly": true
                     },
                     "Shortener_add_url_here": {
-                        "const": "Paste URL http://... and press Enter"
+                        "const": "Paste URL http://... and press Enter",
+                        "readOnly": true
                     },
                     "Shortener_search_url": {
-                        "const": "Search URL..."
+                        "const": "Search URL...",
+                        "readOnly": true
                     },
                     "Shortener_turn_long_to_short": {
-                        "const": "Shorten URLs and share compact links to webpages. Stats and analytics: visit count by source (social media and websites)."
+                        "const": "Shorten URLs and share compact links to webpages. Stats and analytics: visit count by source (social media and websites).",
+                        "readOnly": true
                     },
                     "Shortener_turn_long_to_short_1": {
-                        "const": "Shorten links and share compact URLs. Quick, handy, stats!"
+                        "const": "Shorten links and share compact URLs. Quick, handy, stats!",
+                        "readOnly": true
                     },
                     "Shortener_total_clicks": {
-                        "const": "Total clicks"
+                        "const": "Total clicks",
+                        "readOnly": true
                     },
                     "Shortener_total_unique_clicks": {
-                        "const": "Total unique clicks"
+                        "const": "Total unique clicks",
+                        "readOnly": true
                     },
                     "Shortener_QR_pixels": {
-                        "const": "Pixels"
+                        "const": "Pixels",
+                        "readOnly": true
                     },
                     "Shortener_QR_labyrinth": {
-                        "const": "Labyrinth"
+                        "const": "Labyrinth",
+                        "readOnly": true
                     },
                     "Shortener_use_brand": {
-                        "const": "Use brand"
+                        "const": "Use brand",
+                        "readOnly": true
                     },
                     "Hide_this_message": {
-                        "const": "Hide this message"
+                        "const": "Hide this message",
+                        "readOnly": true
                     },
                     "Need_to_top_up_balance": {
-                        "const": "Top up your balance first"
+                        "const": "Top up your balance first",
+                        "readOnly": true
                     },
                     "PWD_changed": {
-                        "const": "Your password was successfully changed!"
+                        "const": "Your password was successfully changed!",
+                        "readOnly": true
                     },
                     "Change_profile_pic": {
-                        "const": "Change profile picture"
+                        "const": "Change profile picture",
+                        "readOnly": true
                     },
                     "Upload_pic": {
-                        "const": "Upload"
+                        "const": "Upload",
+                        "readOnly": true
                     },
                     "Positions_reverse_dates_0": {
-                        "const": "Default (display the recent update first)"
+                        "const": "Default (display the recent update first)",
+                        "readOnly": true
                     },
                     "Positions_reverse_dates_1": {
-                        "const": "Reverse (display the first update first)"
+                        "const": "Reverse (display the first update first)",
+                        "readOnly": true
                     },
                     "Positions_reverse_dates_label": {
-                        "const": "Date order"
+                        "const": "Date order",
+                        "readOnly": true
                     },
                     "Remember_selected_locations": {
-                        "const": "Remember selected locations"
+                        "const": "Remember selected locations",
+                        "readOnly": true
                     },
                     "Additional_top_segment": {
-                        "const": "Addit. top segment"
+                        "const": "Addit. top segment",
+                        "readOnly": true
                     },
                     "Sign_out_of_all_accounts": {
-                        "const": "Sign out of all accounts"
+                        "const": "Sign out of all accounts",
+                        "readOnly": true
                     },
                     "Settings_header_apps": {
-                        "const": "Apps"
+                        "const": "Apps",
+                        "readOnly": true
                     },
                     "Settings_header_format": {
-                        "const": "Format"
+                        "const": "Format",
+                        "readOnly": true
                     },
                     "Settings_header_rank_tracker": {
-                        "const": "Rank tracker"
+                        "const": "Rank tracker",
+                        "readOnly": true
                     },
                     "Login": {
-                        "const": "Login"
+                        "const": "Login",
+                        "readOnly": true
                     },
                     "Site": {
-                        "const": "Site"
+                        "const": "Site",
+                        "readOnly": true
                     },
                     "Limit": {
-                        "const": "Limit"
+                        "const": "Limit",
+                        "readOnly": true
                     },
                     "Used": {
-                        "const": "Used"
+                        "const": "Used",
+                        "readOnly": true
                     },
                     "Project_import": {
-                        "const": "Project import"
+                        "const": "Project import",
+                        "readOnly": true
                     },
                     "Provide_access_details": {
-                        "const": "Provide access details to the selected tool to transfer your projects"
+                        "const": "Provide access details to the selected tool to transfer your projects",
+                        "readOnly": true
                     },
                     "Provide_access_to_service_for_transfer": {
-                        "const": "Provide access details to the selected tool to transfer your projects"
+                        "const": "Provide access details to the selected tool to transfer your projects",
+                        "readOnly": true
                     },
                     "Service_to_transfer_from": {
-                        "const": "Tool"
+                        "const": "Tool",
+                        "readOnly": true
                     },
                     "Service_other_name": {
-                        "const": "Tool name"
+                        "const": "Tool name",
+                        "readOnly": true
                     },
                     "Import": {
-                        "const": "Import"
+                        "const": "Import",
+                        "readOnly": true
                     },
                     "Projects_to_import": {
-                        "const": "Projects to import"
+                        "const": "Projects to import",
+                        "readOnly": true
                     },
                     "Project_name": {
-                        "const": "Project name"
+                        "const": "Project name",
+                        "readOnly": true
                     },
                     "Migration": {
-                        "const": "Migration"
+                        "const": "Migration",
+                        "readOnly": true
                     },
                     "Selected_projects": {
-                        "const": "Selected projects"
+                        "const": "Selected projects",
+                        "readOnly": true
                     },
                     "Active_projects": {
-                        "const": "Active projects"
+                        "const": "Active projects",
+                        "readOnly": true
                     },
                     "Migration_request_accepted_notice": {
-                        "const": "<p>Your migration request has been received and will be processed shortly.<br>Estimated time of project\timport with ranking history is from 1 to 2 hours (weekdays).</p><p>We'll get back to you as soon as migration is completed.</p>"
+                        "const": "<p>Your migration request has been received and will be processed shortly.<br>Estimated time of project\timport with ranking history is from 1 to 2 hours (weekdays).</p><p>We'll get back to you as soon as migration is completed.</p>",
+                        "readOnly": true
                     },
                     "These_limits_already_being_used_by_owner": {
-                        "const": "These limits are already being used by their owner"
+                        "const": "These limits are already being used by their owner",
+                        "readOnly": true
                     },
                     "Invalid_email_error": {
-                        "const": "Invalid Email"
+                        "const": "Invalid Email",
+                        "readOnly": true
                     },
                     "Email_limit_error": {
-                        "const": "Maximum number of email addresses added"
+                        "const": "Maximum number of email addresses added",
+                        "readOnly": true
                     },
                     "achievements_form1": {
-                        "const": "achievements"
+                        "const": "achievements",
+                        "readOnly": true
                     },
                     "achievements_form2": {
-                        "const": "achievement"
+                        "const": "achievement",
+                        "readOnly": true
                     },
                     "achievements_form3": {
-                        "const": "achievements"
+                        "const": "achievements",
+                        "readOnly": true
                     },
                     "Decimals": {
-                        "const": "Decimal point"
+                        "const": "Decimal point",
+                        "readOnly": true
                     },
                     "Other_settings": {
-                        "const": "Other"
+                        "const": "Other",
+                        "readOnly": true
                     },
                     "Unavailable_key_notice": {
-                        "const": "After changing the key, access with the old key will be restricted. Do you want to continue?"
+                        "const": "After changing the key, access with the old key will be restricted. Do you want to continue?",
+                        "readOnly": true
                     },
                     "Linked_accounts": {
-                        "const": "Linked accounts"
+                        "const": "Linked accounts",
+                        "readOnly": true
                     },
                     "Vkontakte": {
-                        "const": "Vkontakte"
+                        "const": "Vkontakte",
+                        "readOnly": true
                     },
                     "Save_changes": {
-                        "const": "Save changes"
+                        "const": "Save changes",
+                        "readOnly": true
                     },
                     "Change_name": {
-                        "const": "Change name"
+                        "const": "Change name",
+                        "readOnly": true
                     },
                     "Update_picture": {
-                        "const": "Upload picture"
+                        "const": "Upload picture",
+                        "readOnly": true
                     },
                     "Edit_picture": {
-                        "const": "Edit picture"
+                        "const": "Edit picture",
+                        "readOnly": true
                     },
                     "Delete_picture": {
-                        "const": "Delete picture"
+                        "const": "Delete picture",
+                        "readOnly": true
                     },
                     "Current_email": {
-                        "const": "Current Email"
+                        "const": "Current Email",
+                        "readOnly": true
                     },
                     "Your_password": {
-                        "const": "Your password"
+                        "const": "Your password",
+                        "readOnly": true
                     },
                     "Confirm_new_password": {
-                        "const": "Confirm new password"
+                        "const": "Confirm new password",
+                        "readOnly": true
                     },
                     "Other_service": {
-                        "const": "Other"
+                        "const": "Other",
+                        "readOnly": true
                     },
                     "Min_balance": {
-                        "const": "Minimum balance"
+                        "const": "Minimum balance",
+                        "readOnly": true
                     },
                     "Bio": {
-                        "const": "Bio"
+                        "const": "Bio",
+                        "readOnly": true
                     },
                     "Change_currency_guest_projects_notice": {
-                        "const": "Please note that you should remove all guest projects from your account to change the currency. The access to the projects can only be shared between accounts with the same currency."
+                        "const": "Please note that you should remove all guest projects from your account to change the currency. The access to the projects can only be shared between accounts with the same currency.",
+                        "readOnly": true
                     },
                     "User_info": {
-                        "const": "User info"
+                        "const": "User info",
+                        "readOnly": true
                     },
                     "Profile_url": {
-                        "const": "Profile URL"
+                        "const": "Profile URL",
+                        "readOnly": true
                     },
                     "Promo_text": {
-                        "const": "Promo text"
+                        "const": "Promo text",
+                        "readOnly": true
                     },
                     "Promo_button": {
-                        "const": "Promo button"
+                        "const": "Promo button",
+                        "readOnly": true
                     },
                     "Promo_button_text": {
-                        "const": "Text on the button"
+                        "const": "Text on the button",
+                        "readOnly": true
                     },
                     "Promo_button_link": {
-                        "const": "Link on the button"
+                        "const": "Link on the button",
+                        "readOnly": true
                     },
                     "View_the_author_page": {
-                        "const": "View the author's page"
+                        "const": "View the author's page",
+                        "readOnly": true
                     }
                 },
                 "required": [

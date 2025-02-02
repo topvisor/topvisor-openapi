@@ -9,269 +9,269 @@ export interface components {
     schemas: {
         "I18n.Domains": {
             /** @constant */
-            Domain_registrar: "Domain registrar";
+            readonly Domain_registrar: "Domain registrar";
             /** @constant */
-            Enter_domain_name: "Enter the domain name";
+            readonly Enter_domain_name: "Enter the domain name";
             /** @constant */
-            Pick_up: "Search";
+            readonly Pick_up: "Search";
             /** @constant */
-            Total: "Total";
+            readonly Total: "Total";
             /** @constant */
-            No_domains_added: "No domains added";
+            readonly No_domains_added: "No domains added";
             /** @constant */
-            Domain_registration: "Domain registration";
+            readonly Domain_registration: "Domain registration";
             /** @constant */
-            Select_admin_card: "Select administrator card";
+            readonly Select_admin_card: "Select administrator card";
             /** @constant */
-            Domain_transfer: "Domain transfer";
+            readonly Domain_transfer: "Domain transfer";
             /** @constant */
-            Select_agreement_to_transfer_domains: "Select an agreement to transfer domains";
+            readonly Select_agreement_to_transfer_domains: "Select an agreement to transfer domains";
             /** @constant */
-            Enter_code_from_sms_of_previous_admin: "Enter an SMS code sent to the previous administrator";
+            readonly Enter_code_from_sms_of_previous_admin: "Enter an SMS code sent to the previous administrator";
             /** @constant */
-            My_domains: "My domains";
+            readonly My_domains: "My domains";
             /** @constant */
-            Whois_tool: "Whois lookup";
+            readonly Whois_tool: "Whois lookup";
             /** @constant */
-            Export: "Export";
+            readonly Export: "Export";
             /** @constant */
-            Renew: "Renew";
+            readonly Renew: "Renew";
             /** @constant */
-            Custom_list_of_DNS_servers: "Custom list of DNS servers";
+            readonly Custom_list_of_DNS_servers: "Custom list of DNS servers";
             /** @constant */
-            Do_not_add_DNS_servers: "Do not add DNS servers";
+            readonly Do_not_add_DNS_servers: "Do not add DNS servers";
             /** @constant */
-            DNS_settings: "DNS settings";
+            readonly DNS_settings: "DNS settings";
             /** @constant */
-            Add_DNS_server: "Add DNS server";
+            readonly Add_DNS_server: "Add DNS server";
             /** @constant */
-            Save_changes: "Save changes";
+            readonly Save_changes: "Save changes";
             /** @constant */
-            Administrator: "Administrator";
+            readonly Administrator: "Administrator";
             /** @constant */
-            Manage_domain: "Manage domain";
+            readonly Manage_domain: "Manage domain";
             /** @constant */
-            Request_administrator_change: "Request administrator change";
+            readonly Request_administrator_change: "Request administrator change";
             /** @constant */
-            Transfer_to_another_registrar: "Transfer to another registrar";
+            readonly Transfer_to_another_registrar: "Transfer to another registrar";
             /** @constant */
-            Enter_authcode_and_transfer: "Enter Auth-code and start domain transfer";
+            readonly Enter_authcode_and_transfer: "Enter Auth-code and start domain transfer";
             /** @constant */
-            Enter_code: "Enter code";
+            readonly Enter_code: "Enter code";
             /** @constant */
-            Start_transfer: "Start transfer";
+            readonly Start_transfer: "Start transfer";
             /** @constant */
-            Transfer_request_confirm: "Transfer request: transfer domains to another registrar?";
+            readonly Transfer_request_confirm: "Transfer request: transfer domains to another registrar?";
             /** @constant */
-            Transfer: "Transfer";
+            readonly Transfer: "Transfer";
             /** @constant */
-            Request_domain_transfer_out: "Request for a domain name transfer to another registrar";
+            readonly Request_domain_transfer_out: "Request for a domain name transfer to another registrar";
             /** @constant */
-            DNS_type: "Type";
+            readonly DNS_type: "Type";
             /** @constant */
-            DNS_name: "Name";
+            readonly DNS_name: "Name";
             /** @constant */
-            DNS_value: "Value";
+            readonly DNS_value: "Value";
             /** @constant */
-            DNS_priority: "Priority";
+            readonly DNS_priority: "Priority";
             /** @constant */
-            DNS_relative_weight: "Relative weight";
+            readonly DNS_relative_weight: "Relative weight";
             /** @constant */
-            DNS_service_port: "Service port";
+            readonly DNS_service_port: "Service port";
             /** @constant */
-            DNS_record: "DNS record";
+            readonly DNS_record: "DNS record";
             /** @constant */
-            Save_DNS_record: "Save DNS record";
+            readonly Save_DNS_record: "Save DNS record";
             /** @constant */
-            Add_DNS_record: "Add DNS record";
+            readonly Add_DNS_record: "Add DNS record";
             /** @constant */
-            Payment_for_authcode_providing: "Payment for generating Auth-Info code for domain";
+            readonly Payment_for_authcode_providing: "Payment for generating Auth-Info code for domain";
             /** @constant */
-            Authinfo_code_for_domain_transfer: "Auth-Info code for domain transfer";
+            readonly Authinfo_code_for_domain_transfer: "Auth-Info code for domain transfer";
             /** @constant */
-            Confirm_transfer: "Confirm transfer";
+            readonly Confirm_transfer: "Confirm transfer";
             /** @constant */
-            Transfer_confirmation_link_sent_to_email: "We've sent a link to confirm domain transfer to";
+            readonly Transfer_confirmation_link_sent_to_email: "We've sent a link to confirm domain transfer to";
             /** @constant */
-            Authinfo_will_be_emailed_soon: "We'll email you the Auth-Info code shortly";
+            readonly Authinfo_will_be_emailed_soon: "We'll email you the Auth-Info code shortly";
             /** @constant */
-            Authinfo_will_be_sent_to_phone_soon: "We'll send you an SMS with Auth-Info code shortly";
+            readonly Authinfo_will_be_sent_to_phone_soon: "We'll send you an SMS with Auth-Info code shortly";
             /** @constant */
-            your_domain: "your domain";
+            readonly your_domain: "your domain";
             /** @constant */
-            your_domains: "your domains";
+            readonly your_domains: "your domains";
             /** @constant */
-            You_need_to_renew_domains: "You need to renew domains";
+            readonly You_need_to_renew_domains: "You need to renew domains";
             /** @constant */
-            You_need_to_renew_domain: "You need to renew domain";
+            readonly You_need_to_renew_domain: "You need to renew domain";
             /** @constant */
-            Registration_expired: "Registration expired";
+            readonly Registration_expired: "Registration expired";
             /** @constant */
-            renew_before: "renew before";
+            readonly renew_before: "renew before";
             /** @constant */
-            Admin_change_status: "Admin change status";
+            readonly Admin_change_status: "Admin change status";
             /** @constant */
-            Link_and_code_sent_to_confirm_admin_change: "We sent a code to your phone number. A message with a confirmation link is sent to a new admin email";
+            readonly Link_and_code_sent_to_confirm_admin_change: "We sent a code to your phone number. A message with a confirmation link is sent to a new admin email";
             /** @constant */
-            Domain_not_available_to_purchase: "Domain not available to purchase";
+            readonly Domain_not_available_to_purchase: "Domain not available to purchase";
             /** @constant */
-            Transaction_to_accept_domain_not_found: "Transaction to accept domain not found";
+            readonly Transaction_to_accept_domain_not_found: "Transaction to accept domain not found";
             /** @constant */
-            Domain_autorenew_failed: "Domain(s) auto-renew failed";
+            readonly Domain_autorenew_failed: "Domain(s) auto-renew failed";
             /** @constant */
-            Invalid_message_to_administrator: "Invalid message to administrator";
+            readonly Invalid_message_to_administrator: "Invalid message to administrator";
             /** @constant */
-            Message_failed_to_send: "Message failed to send";
+            readonly Message_failed_to_send: "Message failed to send";
             /** @constant */
-            Try_in_an_hour: "Try in an hour";
+            readonly Try_in_an_hour: "Try in an hour";
             /** @constant */
-            Messages_for_domain_administrator: "Messages for the domain administrator";
+            readonly Messages_for_domain_administrator: "Messages for the domain administrator";
             /** @constant */
-            Sender_details: "Sender_details";
+            readonly Sender_details: "Sender_details";
             /** @constant */
-            Domain_transfer_application_by_registered_mail: "Application for a domain transfer by registered mail";
+            readonly Domain_transfer_application_by_registered_mail: "Application for a domain transfer by registered mail";
             /** @constant */
-            Domain_to_transfer: "Domain to transfer";
+            readonly Domain_to_transfer: "Domain to transfer";
             /** @constant */
-            Domain_transfer_application_form_for_individual_and_SP: "Application form from an individual or individual entrepreneur for domain transfer to another registrar";
+            readonly Domain_transfer_application_form_for_individual_and_SP: "Application form from an individual or individual entrepreneur for domain transfer to another registrar";
             /** @constant */
-            Domain_transfer_application_form_for_legal_entity: "Application form from a legal entity for domain transfer to another registrar";
+            readonly Domain_transfer_application_form_for_legal_entity: "Application form from a legal entity for domain transfer to another registrar";
             /** @constant */
-            Autorenew_settings: "Auto-renew settings";
+            readonly Autorenew_settings: "Auto-renew settings";
             /** @constant */
-            Turn_off_domain_autorenew: "Turn off domain auto-renew";
+            readonly Turn_off_domain_autorenew: "Turn off domain auto-renew";
             /** @constant */
-            Turn_on_domain_autorenew: "Turn on auto-renew";
+            readonly Turn_on_domain_autorenew: "Turn on auto-renew";
             /** @constant */
-            Select_autorenew_payment_option: "Select auto-renew payment option";
+            readonly Select_autorenew_payment_option: "Select auto-renew payment option";
             /** @constant */
-            We_charge_one_usd_to_link_card_notice: "We will charge you $1 to link your card. The charge will be immediately removed and returned to your card";
+            readonly We_charge_one_usd_to_link_card_notice: "We will charge you $1 to link your card. The charge will be immediately removed and returned to your card";
             /** @constant */
-            Autorenew_status: "Auto-renew status";
+            readonly Autorenew_status: "Auto-renew status";
             /** @constant */
-            Select_another_payment_method_or_contact_support: "Select another method of payment or contact support";
+            readonly Select_another_payment_method_or_contact_support: "Select another method of payment or contact support";
             /** @constant */
-            Autorenew_for_domain: "Auto-renew for a domain name";
+            readonly Autorenew_for_domain: "Auto-renew for a domain name";
             /** @constant */
-            successfully_enabled: "successfully enabled";
+            readonly successfully_enabled: "successfully enabled";
             /** @constant */
-            failed_to_enable: "failed to enable";
+            readonly failed_to_enable: "failed to enable";
             /** @constant */
-            Change_domain_administrator: "Change domain administrator";
+            readonly Change_domain_administrator: "Change domain administrator";
             /** @constant */
-            Change_administrator: "Change administrator";
+            readonly Change_administrator: "Change administrator";
             /** @constant */
-            turn_on: "turn on";
+            readonly turn_on: "turn on";
             /** @constant */
-            Domains_to_accept: "Domains to accept";
+            readonly Domains_to_accept: "Domains to accept";
             /** @constant */
-            Admin_change_paid_by_previous_admin: "Administrator change is paid by the previous administrator";
+            readonly Admin_change_paid_by_previous_admin: "Administrator change is paid by the previous administrator";
             /** @constant */
-            Control_code: "Control code";
+            readonly Control_code: "Control code";
             /** @constant */
-            Accept_domain: "Accept domain";
+            readonly Accept_domain: "Accept domain";
             /** @constant */
-            By_accepting_domain_you_accept: "By accepting domain you accept terms and conditions of";
+            readonly By_accepting_domain_you_accept: "By accepting domain you accept terms and conditions of";
             /** @constant */
-            of_agreement: "Agreement (public offer)";
+            readonly of_agreement: "Agreement (public offer)";
             /** @constant */
-            Select_authinfo_code_delivery_option: "Select how you want to get the Auth-Info code";
+            readonly Select_authinfo_code_delivery_option: "Select how you want to get the Auth-Info code";
             /** @constant */
-            To_email: "To Email";
+            readonly To_email: "To Email";
             /** @constant */
-            free: "free";
+            readonly free: "free";
             /** @constant */
-            paid: "paid";
+            readonly paid: "paid";
             /** @constant */
-            to_phone_number: "to phone number";
+            readonly to_phone_number: "to phone number";
             /** @constant */
-            By_registered_mail: "By registered mail";
+            readonly By_registered_mail: "By registered mail";
             /** @constant */
-            Get_authinfo_code: "Get Auth-Info code";
+            readonly Get_authinfo_code: "Get Auth-Info code";
             /** @constant */
-            Get_permission_to_transfer_administration_rights: "Get permission to transfer administration rights";
+            readonly Get_permission_to_transfer_administration_rights: "Get permission to transfer administration rights";
             /** @constant */
-            Paperless_transfer_admin_rights_application_form_for_individual: "Application form from an individual for a paperless transfer of administration rights";
+            readonly Paperless_transfer_admin_rights_application_form_for_individual: "Application form from an individual for a paperless transfer of administration rights";
             /** @constant */
-            Paperless_transfer_admin_rights_application_form_for_legal_entity: "Application form from a legal entity for a paperless transfer of administration rights";
+            readonly Paperless_transfer_admin_rights_application_form_for_legal_entity: "Application form from a legal entity for a paperless transfer of administration rights";
             /** @constant */
-            Domains_to_transfer_to_new_admin: "Domains to transfer to a new administrator";
+            readonly Domains_to_transfer_to_new_admin: "Domains to transfer to a new administrator";
             /** @constant */
-            New_administrator_email: "New administrator email";
+            readonly New_administrator_email: "New administrator email";
             /** @constant */
-            Select_payer_for_admin_change: "The administrator change will be paid by";
+            readonly Select_payer_for_admin_change: "The administrator change will be paid by";
             /** @constant */
-            New_administrator: "New administrator";
+            readonly New_administrator: "New administrator";
             /** @constant */
-            Me_current_administrator: "Me (current administrator)";
+            readonly Me_current_administrator: "Me (current administrator)";
             /** @constant */
-            Transfer_rights_to_domain_to_new_admin: "Transfer rights to the domain to a new administrator";
+            readonly Transfer_rights_to_domain_to_new_admin: "Transfer rights to the domain to a new administrator";
             /** @constant */
-            Change_admin_by_sms_instruction: "This email address will be added as a contact email for the domain names. We will email you a message with\n\ta link to enter a control code. We will send an SMS with a control code to a phone number <i class=\"phone\"></i>. Give this code to a new administrator. The\n\tadministrator change can be payed by a current or a new administrator. The administrator change costs 199 rubles.";
+            readonly Change_admin_by_sms_instruction: "This email address will be added as a contact email for the domain names. We will email you a message with\n\ta link to enter a control code. We will send an SMS with a control code to a phone number <i class=\"phone\"></i>. Give this code to a new administrator. The\n\tadministrator change can be payed by a current or a new administrator. The administrator change costs 199 rubles.";
             /** @constant */
-            Choose_domain_name: "Choose a .ru or .рф domain name";
+            readonly Choose_domain_name: "Choose a .ru or .рф domain name";
             /** @constant */
-            Register: "Register";
+            readonly Register: "Register";
             /** @constant */
-            Verify_admin_details: "Please make sure the administrator details you entered are correct";
+            readonly Verify_admin_details: "Please make sure the administrator details you entered are correct";
             /** @constant */
-            Add_admin_details: "Add administrator details";
+            readonly Add_admin_details: "Add administrator details";
             /** @constant */
-            Enter_domains_one_by_one_or: "Enter domains one by one or";
+            readonly Enter_domains_one_by_one_or: "Enter domains one by one or";
             /** @constant */
-            Enter_domain: "Enter domain";
+            readonly Enter_domain: "Enter domain";
             /** @constant */
-            Enter_authInfo_code: "Enter authInfo code";
+            readonly Enter_authInfo_code: "Enter authInfo code";
             /** @constant */
-            upload_from_file: "upload from file";
+            readonly upload_from_file: "upload from file";
             /** @constant */
-            Make_sure_new_and_old_admin_details_match: "Please make sure that the administrator personal details match\n\t administrator details in previous registrar account. If the details do not match, the domain name can be removed.";
+            readonly Make_sure_new_and_old_admin_details_match: "Please make sure that the administrator personal details match\n\t administrator details in previous registrar account. If the details do not match, the domain name can be removed.";
             /** @constant */
-            Domains_to_transfer_and_renew: "Domains to transfer and renew: <i class=\"count\">0 domains</i>";
+            readonly Domains_to_transfer_and_renew: "Domains to transfer and renew: <i class=\"count\">0 domains</i>";
             /** @constant */
-            Transfer_in_process: "Transfer in progress";
+            readonly Transfer_in_process: "Transfer in progress";
             /** @constant */
-            In_process: "In progress";
+            readonly In_process: "In progress";
             /** @constant */
-            Transfer_to_us: "Transfer to us";
+            readonly Transfer_to_us: "Transfer to us";
             /** @constant */
-            Transaction_finished_will_be_removed: "Transcation finished and will be removed automatically";
+            readonly Transaction_finished_will_be_removed: "Transcation finished and will be removed automatically";
             /** @constant */
-            Prepayment: "Prepayment";
+            readonly Prepayment: "Prepayment";
             /** @constant */
-            Request_to_transfer_domain_to_another_registrar: "Request to transfer domain to another Registrar";
+            readonly Request_to_transfer_domain_to_another_registrar: "Request to transfer domain to another Registrar";
             /** @constant */
-            Notification_about_completed_registrar_operations: "Notification about completed registrar operations";
+            readonly Notification_about_completed_registrar_operations: "Notification about completed registrar operations";
             /** @constant */
-            Transferred_domains_number_not_match_authinfo_code_number: "The number of transferred domains does not match the number of submitted authInfo codes";
+            readonly Transferred_domains_number_not_match_authinfo_code_number: "The number of transferred domains does not match the number of submitted authInfo codes";
             /** @constant */
-            Transfer_request_already_added: "Transfer request already added";
+            readonly Transfer_request_already_added: "Transfer request already added";
             /** @constant */
-            Domain_admin_not_found: "Domain administrator not found";
+            readonly Domain_admin_not_found: "Domain administrator not found";
             /** @constant */
-            Transfer_not_available_try_later: "Transfer is not available. Please, try later.";
+            readonly Transfer_not_available_try_later: "Transfer is not available. Please, try later.";
             /** @constant */
-            Invalid_authinfo_or_domain: "Invalid authInfo code or domain.";
+            readonly Invalid_authinfo_or_domain: "Invalid authInfo code or domain.";
             /** @constant */
-            Admin_details_not_match: "Personal details of administrators do not match";
+            readonly Admin_details_not_match: "Personal details of administrators do not match";
             /** @constant */
-            Error_in_admin_card_contact_support: "Error in admin card occurred. Contact support.";
+            readonly Error_in_admin_card_contact_support: "Error in admin card occurred. Contact support.";
             /** @constant */
-            CNS_Settings: "CNS Settings";
+            readonly CNS_Settings: "CNS Settings";
             /** @constant */
-            Add_CNS_server: "Add CNS server";
+            readonly Add_CNS_server: "Add CNS server";
             /** @constant */
-            Contact_support: "Contact support";
+            readonly Contact_support: "Contact support";
             /** @constant */
-            Get_confirmation_code: "Get confirmation code";
+            readonly Get_confirmation_code: "Get confirmation code";
             /** @constant */
-            Transfer_to_another_registrar_code_sent_to_email: "Trasnfer to another registrar, the code has been to sent to your email";
+            readonly Transfer_to_another_registrar_code_sent_to_email: "Trasnfer to another registrar, the code has been to sent to your email";
             /** @constant */
-            Resend: "Resend";
+            readonly Resend: "Resend";
             /** @constant */
-            Domain_renewal_not_needed_refresh_page: "Domain renewal not needed. Refresh page.";
+            readonly Domain_renewal_not_needed_refresh_page: "Domain renewal not needed. Refresh page.";
             /** @constant */
-            Transfer_is_available_for_2nd_lvl_domains: "Transfer is available for the second-level domains only";
+            readonly Transfer_is_available_for_2nd_lvl_domains: "Transfer is available for the second-level domains only";
         };
     };
     responses: never;

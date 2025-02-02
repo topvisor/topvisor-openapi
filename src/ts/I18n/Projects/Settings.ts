@@ -9,9 +9,9 @@ export interface components {
     schemas: {
         "I18n.Projects.Settings": {
             /** @constant */
-            Change_project_owner_description: "Change of project owner is a procedure that results in the change of the Project Owner in the service. Write-offs of funds for services provided by the service as a result of one actions or another will be made on behalf of the new owner. All operations with the project, including restoration of access to it if necessary, will be possible only on behalf of the new person.";
+            readonly Change_project_owner_description: "Change of project owner is a procedure that results in the change of the Project Owner in the service. Write-offs of funds for services provided by the service as a result of one actions or another will be made on behalf of the new owner. All operations with the project, including restoration of access to it if necessary, will be possible only on behalf of the new person.";
             /** @constant */
-            Transfer_control_over_project: "To transfer control over a project, enter the user's email in the form below and click";
+            readonly Transfer_control_over_project: "To transfer control over a project, enter the user's email in the form below and click";
         };
     };
     responses: never;

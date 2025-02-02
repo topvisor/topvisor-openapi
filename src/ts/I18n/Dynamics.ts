@@ -9,229 +9,229 @@ export interface components {
     schemas: {
         "I18n.Dynamics": {
             /** @constant */
-            Number_keywords_better_ranks: "Keywords that advanced in ranks";
+            readonly Number_keywords_better_ranks: "Keywords that advanced in ranks";
             /** @constant */
-            Number_keywords_same_ranks: "Keywords that didn't change ranks";
+            readonly Number_keywords_same_ranks: "Keywords that didn't change ranks";
             /** @constant */
-            Number_keywords_drop_ranks: "Keywords that dropped in ranks";
+            readonly Number_keywords_drop_ranks: "Keywords that dropped in ranks";
             /** @constant */
-            Search_table: "Find in table";
+            readonly Search_table: "Find in table";
             /** @constant */
-            Search_page: "Find on page";
+            readonly Search_page: "Find on page";
             /** @constant */
-            Snippets: "Snippets";
+            readonly Snippets: "Snippets";
             /** @constant */
-            Remove_results: "Delete all results for the applied date";
+            readonly Remove_results: "Delete all results for the applied date";
             /** @constant */
-            oneway_operation: "this action cannot be undone";
+            readonly oneway_operation: "this action cannot be undone";
             /** @constant */
-            Proceed_deleting_ask: "Do you want to continue?";
+            readonly Proceed_deleting_ask: "Do you want to continue?";
             /** @constant */
-            Sort_by_target: "By target URL";
+            readonly Sort_by_target: "By target URL";
             /** @constant */
-            Sort_by_default: "Default settings";
+            readonly Sort_by_default: "Default settings";
             /** @constant */
-            Sort_by_relevant: "By ranked URL";
+            readonly Sort_by_relevant: "By ranked URL";
             /** @constant */
-            Sort_by_position_change: "Ranking dynamics over period";
+            readonly Sort_by_position_change: "Ranking dynamics over period";
             /** @constant */
-            Filter_by_tag: "Filter by tag";
+            readonly Filter_by_tag: "Filter by tag";
             /** @constant */
-            Set_target_for_group: "Set target for group";
+            readonly Set_target_for_group: "Set target for group";
             /** @constant */
-            Send_email: "Send to Email";
+            readonly Send_email: "Send to Email";
             /** @constant */
-            Target_URL: "Target URL";
+            readonly Target_URL: "Target URL";
             /** @constant */
-            Rankings_updated_less_than_5minutes: "You updated keyword ranks less than 5 minutes ago";
+            readonly Rankings_updated_less_than_5minutes: "You updated keyword ranks less than 5 minutes ago";
             /** @constant */
-            Add_keywords_locations_notice: "Add keywords and select locations<br> in project settings";
+            readonly Add_keywords_locations_notice: "Add keywords and select locations<br> in project settings";
             /** @constant */
-            Tasks_processing_notice: "We're processing your tasks.";
+            readonly Tasks_processing_notice: "We're processing your tasks.";
             /** @constant */
-            Ranks_updating_notice: "We're updating your keyword rankings.";
+            readonly Ranks_updating_notice: "We're updating your keyword rankings.";
             /** @constant */
-            Updated: "Last update";
+            readonly Updated: "Last update";
             /** @constant */
-            Positions_snippets: "Rankings and snippets";
+            readonly Positions_snippets: "Rankings and snippets";
             /** @constant */
-            Period_last_7_days: "Last 7 days";
+            readonly Period_last_7_days: "Last 7 days";
             /** @constant */
-            Period_last_10_days: "Last 10 days";
+            readonly Period_last_10_days: "Last 10 days";
             /** @constant */
-            Period_last_30_days: "Last 30 days";
+            readonly Period_last_30_days: "Last 30 days";
             /** @constant */
-            Any_dates: "Optional dates";
+            readonly Any_dates: "Optional dates";
             /** @constant */
-            Current_month: "This month";
+            readonly Current_month: "This month";
             /** @constant */
-            Previous_month: "Previous month";
+            readonly Previous_month: "Previous month";
             /** @constant */
-            Last_year: "Last year";
+            readonly Last_year: "Last year";
             /** @constant */
-            Random: "Random";
+            readonly Random: "Random";
             /** @constant */
-            Period_regular: "Period";
+            readonly Period_regular: "Period";
             /** @constant */
-            Period_2_dates: "Two dates";
+            readonly Period_2_dates: "Two dates";
             /** @constant */
-            Period_2_margin_dates: "First and last date";
+            readonly Period_2_margin_dates: "First and last date";
             /** @constant */
-            Period_2_latest_dates: "Two latest dates";
+            readonly Period_2_latest_dates: "Two latest dates";
             /** @constant */
-            Period_first_date: "First date";
+            readonly Period_first_date: "First date";
             /** @constant */
-            Period_last_date: "Last date";
+            readonly Period_last_date: "Last date";
             /** @constant */
-            Period_1_date: "One date";
+            readonly Period_1_date: "One date";
             /** @constant */
-            Period_only_updates: "Only Yandex updates";
+            readonly Period_only_updates: "Only Yandex updates";
             /** @constant */
-            Last_day_month: "Last day of month";
+            readonly Last_day_month: "Last day of month";
             /** @constant */
-            Count_dates: "Max dates";
+            readonly Count_dates: "Max dates";
             /** @constant */
-            Painting_0: "Top, progress";
+            readonly Painting_0: "Top, progress";
             /** @constant */
-            Painting_1: "Improved, dropped";
+            readonly Painting_1: "Improved, dropped";
             /** @constant */
-            Report_after_tracking_30min_1: "After rank tracking";
+            readonly Report_after_tracking_30min_1: "After rank tracking";
             /** @constant */
-            Report_after_tracking_30min_2: "in 30 minutes";
+            readonly Report_after_tracking_30min_2: "in 30 minutes";
             /** @constant */
-            Display_week_average_ranking: "Week's average";
+            readonly Display_week_average_ranking: "Week's average";
             /** @constant */
-            Summary: "Summary";
+            readonly Summary: "Summary";
             /** @constant */
-            Show_graphics: "Charts";
+            readonly Show_graphics: "Charts";
             /** @constant */
-            Target_equal_relevant: "Target = Ranked";
+            readonly Target_equal_relevant: "Target = Ranked";
             /** @constant */
-            Off_display_group_names: "Hide group names";
+            readonly Off_display_group_names: "Hide group names";
             /** @constant */
-            On_display_group_names: "Show group names";
+            readonly On_display_group_names: "Show group names";
             /** @constant */
-            Display_group_names_above: "Display names under groups";
+            readonly Display_group_names_above: "Display names under groups";
             /** @constant */
-            Display_group_names_near: "Display names near groups";
+            readonly Display_group_names_near: "Display names near groups";
             /** @constant */
-            Show_global_volume: "Display / Hide global search volume";
+            readonly Show_global_volume: "Display / Hide global search volume";
             /** @constant */
-            Remove_keyword: "Are you sure you want to delete a selected keyword?";
+            readonly Remove_keyword: "Are you sure you want to delete a selected keyword?";
             /** @constant */
-            Remove_history: "Wipe data for the selected date";
+            readonly Remove_history: "Wipe data for the selected date";
             /** @constant */
-            Show_competitors: "Competitors";
+            readonly Show_competitors: "Competitors";
             /** @constant */
-            Hide_keywords_added_in_period: "Hide keywords added within the applied period";
+            readonly Hide_keywords_added_in_period: "Hide keywords added within the applied period";
             /** @constant */
-            Only_keywords_added_in_period: "Only keywords added within the applied period";
+            readonly Only_keywords_added_in_period: "Only keywords added within the applied period";
             /** @constant */
-            Show_keywords_added_in_period: "All keywords";
+            readonly Show_keywords_added_in_period: "All keywords";
             /** @constant */
-            and_save_snapshots: "snapshots collected";
+            readonly and_save_snapshots: "snapshots collected";
             /** @constant */
-            Check_rankings: "Check rankings of project";
+            readonly Check_rankings: "Check rankings of project";
             /** @constant */
-            Add_keywords_on_page: "Add keywords on the page";
+            readonly Add_keywords_on_page: "Add keywords on the page";
             /** @constant */
-            Keywords: "Keywords";
+            readonly Keywords: "Keywords";
             /** @constant */
-            Add_se_location_to_display_data: "Add search engine and location to display data";
+            readonly Add_se_location_to_display_data: "Add search engine and location to display data";
             /** @constant */
-            Number_of_visits: "Number of visits";
+            readonly Number_of_visits: "Number of visits";
             /** @constant */
-            Matches_relevant_URL: "Matches ranked URL";
+            readonly Matches_relevant_URL: "Matches ranked URL";
             /** @constant */
-            Not_Matches_relevant_URL: "Doesn't match ranked URL";
+            readonly Not_Matches_relevant_URL: "Doesn't match ranked URL";
             /** @constant */
-            Relevant_URL_change_history: "Ranked URL history";
+            readonly Relevant_URL_change_history: "Ranked URL history";
             /** @constant */
-            Relevant_URL_changes: "Ranked URL changes";
+            readonly Relevant_URL_changes: "Ranked URL changes";
             /** @constant */
-            Download: "Download";
+            readonly Download: "Download";
             /** @constant */
-            Date_order: "Date order";
+            readonly Date_order: "Date order";
             /** @constant */
-            Chart_export: "Chart export";
+            readonly Chart_export: "Chart export";
             /** @constant */
-            Calendar_legend_ranks_checked: "Check";
+            readonly Calendar_legend_ranks_checked: "Check";
             /** @constant */
-            Calendar_legend_yandex_update: "Yandex update";
+            readonly Calendar_legend_yandex_update: "Yandex update";
             /** @constant */
-            Sort_keywords: "Sort";
+            readonly Sort_keywords: "Sort";
             /** @constant */
-            Filter: "Filter";
+            readonly Filter: "Filter";
             /** @constant */
-            Not_filter: "No filter";
+            readonly Not_filter: "No filter";
             /** @constant */
-            Target_and_relevant_URL: "Target and ranked URL";
+            readonly Target_and_relevant_URL: "Target and ranked URL";
             /** @constant */
-            Matches: "Match";
+            readonly Matches: "Match";
             /** @constant */
-            Not_matches: "Don't match";
+            readonly Not_matches: "Don't match";
             /** @constant */
-            Status_not_defined: "Matching not defined";
+            readonly Status_not_defined: "Matching not defined";
             /** @constant */
-            Not_specified: "Target not specified";
+            readonly Not_specified: "Target not specified";
             /** @constant */
-            with_featured_snippets: "with Featured Snippets";
+            readonly with_featured_snippets: "with Featured Snippets";
             /** @constant */
-            Pin_panel: "Pin panel";
+            readonly Pin_panel: "Pin panel";
             /** @constant */
-            Pin_filters: "Pin filters";
+            readonly Pin_filters: "Pin filters";
             /** @constant */
-            Pin_summary: "Pin summary";
+            readonly Pin_summary: "Pin summary";
             /** @constant */
-            Customize_view: "Customize view";
+            readonly Customize_view: "Customize view";
             /** @constant */
-            Color_theme: "Color theme";
+            readonly Color_theme: "Color theme";
             /** @constant */
-            Highcharts_Export_PNG: "Download PNG image";
+            readonly Highcharts_Export_PNG: "Download PNG image";
             /** @constant */
-            Highcharts_Export_JPEG: "Download JPEG image";
+            readonly Highcharts_Export_JPEG: "Download JPEG image";
             /** @constant */
-            Highcharts_Export_PDF: "Download PDF document";
+            readonly Highcharts_Export_PDF: "Download PDF document";
             /** @constant */
-            Highcharts_Export_SVG: "Download SVG image";
+            readonly Highcharts_Export_SVG: "Download SVG image";
             /** @constant */
-            Highcharts_Export_Print: "Print chart";
+            readonly Highcharts_Export_Print: "Print chart";
             /** @constant */
-            Highcharts_Export_CSV: "Download CSV";
+            readonly Highcharts_Export_CSV: "Download CSV";
             /** @constant */
-            Summary_mode: "Summary mode";
+            readonly Summary_mode: "Summary mode";
             /** @constant */
-            Default_summary_mode: "Default";
+            readonly Default_summary_mode: "Default";
             /** @constant */
-            Compact_summary_mode: "Compact";
+            readonly Compact_summary_mode: "Compact";
             /** @constant */
-            Columns_summary_mode: "Columns";
+            readonly Columns_summary_mode: "Columns";
             /** @constant */
-            order: "keyword ranking report";
+            readonly order: "keyword ranking report";
             /** @constant */
-            Project_has_been_deleted: "Project has been deleted";
+            readonly Project_has_been_deleted: "Project has been deleted";
             /** @constant */
-            Snippets_no_checked: "<b>Snippets</b> weren't collected on the selected dates.";
+            readonly Snippets_no_checked: "<b>Snippets</b> weren't collected on the selected dates.";
             /** @constant */
-            Snippets_no_checking: "<b>Snippets</b> aren't being collected. Turn this feature on in the project's settings.";
+            readonly Snippets_no_checking: "<b>Snippets</b> aren't being collected. Turn this feature on in the project's settings.";
             /** @constant */
-            Selected_time_is_hightload: "<p>Selected period is the hight load.</p><p>If you need to get results in the morning, we recommend setting time from <i></i> to <i></i> in the morning.</p>";
+            readonly Selected_time_is_hightload: "<p>Selected period is the hight load.</p><p>If you need to get results in the morning, we recommend setting time from <i></i> to <i></i> in the morning.</p>";
             /** @constant */
-            Delete_keyword: "Delete keyword";
+            readonly Delete_keyword: "Delete keyword";
             /** @constant */
-            Recheck: "Recheck keyword ranking";
+            readonly Recheck: "Recheck keyword ranking";
             /** @constant */
-            Checking: "Tracking";
+            readonly Checking: "Tracking";
             /** @constant */
-            Recheck_finish: "Ranking successfully rechecked";
+            readonly Recheck_finish: "Ranking successfully rechecked";
             /** @constant */
-            No_target_status: "Target link not added";
+            readonly No_target_status: "Target link not added";
             /** @constant */
-            No_result_target_status: "Search results not found";
+            readonly No_result_target_status: "Search results not found";
             /** @constant */
-            Bad_target_status: "Result does not match a target link";
+            readonly Bad_target_status: "Result does not match a target link";
             /** @constant */
-            Good_target_status: "Result matches a target link";
+            readonly Good_target_status: "Result matches a target link";
         };
     };
     responses: never;

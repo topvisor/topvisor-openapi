@@ -9,573 +9,573 @@ export interface components {
     schemas: {
         "I18n.Keywords": {
             /** @constant */
-            Average: "Average";
+            readonly Average: "Average";
             /** @constant */
-            phrase_missed: "Keyword not selected";
+            readonly phrase_missed: "Keyword not selected";
             /** @constant */
-            group_not_exists: "Group not found in the project";
+            readonly group_not_exists: "Group not found in the project";
             /** @constant */
-            keyword_not_exists: "Keyword not found in the project";
+            readonly keyword_not_exists: "Keyword not found in the project";
             /** @constant */
-            incorrect_phrase: "Invalid keyword";
+            readonly incorrect_phrase: "Invalid keyword";
             /** @constant */
-            phrase_exists: "This keyword already exists";
+            readonly phrase_exists: "This keyword already exists";
             /** @constant */
-            import_error_columns: "The number of columns in some lines doesn't match the number in other lines.";
+            readonly import_error_columns: "The number of columns in some lines doesn't match the number in other lines.";
             /** @constant */
-            import_error_columns2: " If you import keywords from a CSV file, please place all keywords with special characters (comma (,), semicolon (;)) in double quotation marks (\")";
+            readonly import_error_columns2: " If you import keywords from a CSV file, please place all keywords with special characters (comma (,), semicolon (;)) in double quotation marks (\")";
             /** @constant */
-            import_error1: "You haven't selected keywords to import";
+            readonly import_error1: "You haven't selected keywords to import";
             /** @constant */
-            Add_phrase: "Add keyword";
+            readonly Add_phrase: "Add keyword";
             /** @constant */
-            Add_group: "Add new group";
+            readonly Add_group: "Add new group";
             /** @constant */
-            New_folder: "New folder";
+            readonly New_folder: "New folder";
             /** @constant */
-            New_group: "New group";
+            readonly New_group: "New group";
             /** @constant */
-            Access_error: "Keyword not found or access denied";
+            readonly Access_error: "Keyword not found or access denied";
             /** @constant */
-            CSV_group: "Group";
+            readonly CSV_group: "Group";
             /** @constant */
-            CSV_phrase: "Keyword";
+            readonly CSV_phrase: "Keyword";
             /** @constant */
-            CSV_rel: "Ranked page";
+            readonly CSV_rel: "Ranked page";
             /** @constant */
-            CSV_snippet_title: "Snippet titles";
+            readonly CSV_snippet_title: "Snippet titles";
             /** @constant */
-            CSV_snippet: "Snippet";
+            readonly CSV_snippet: "Snippet";
             /** @constant */
-            CSV_target: "Target URL";
+            readonly CSV_target: "Target URL";
             /** @constant */
-            CSV_visits: "Traffic";
+            readonly CSV_visits: "Traffic";
             /** @constant */
-            CSV_google_price: "Bid";
+            readonly CSV_google_price: "Bid";
             /** @constant */
-            CSV_yandex_price1: "1-st Premium placement";
+            readonly CSV_yandex_price1: "1-st Premium placement";
             /** @constant */
-            CSV_yandex_price2: "2-st Premium placement";
+            readonly CSV_yandex_price2: "2-st Premium placement";
             /** @constant */
-            CSV_yandex_price3: "Premium placement";
+            readonly CSV_yandex_price3: "Premium placement";
             /** @constant */
-            CSV_yandex_price4: "1st place";
+            readonly CSV_yandex_price4: "1st place";
             /** @constant */
-            CSV_yandex_price5: "Guaranteed";
+            readonly CSV_yandex_price5: "Guaranteed";
             /** @constant */
-            Targets_error: "Target URLs not changed";
+            readonly Targets_error: "Target URLs not changed";
             /** @constant */
-            Group_changing_denied: "You can't edit this group!";
+            readonly Group_changing_denied: "You can't edit this group!";
             /** @constant */
-            Filtered_group: "Filtered group";
+            readonly Filtered_group: "Filtered group";
             /** @constant */
-            Export_dynamics_by_date: "Project export for";
+            readonly Export_dynamics_by_date: "Project export for";
             /** @constant */
-            Export_Balance_notify: "Cannot prepare export. There are not enough funds in your account.";
+            readonly Export_Balance_notify: "Cannot prepare export. There are not enough funds in your account.";
             /** @constant */
-            Export_HTML_comparison_not_available: "html comparison is not available yet";
+            readonly Export_HTML_comparison_not_available: "html comparison is not available yet";
             /** @constant */
-            Reports_unsubscribing1: "Unsubscribe ";
+            readonly Reports_unsubscribing1: "Unsubscribe ";
             /** @constant */
-            Reports_unsubscribing2: "from project reports";
+            readonly Reports_unsubscribing2: "from project reports";
             /** @constant */
-            Project_report: "Project report for";
+            readonly Project_report: "Project report for";
             /** @constant */
-            project_report_msg: "dated";
+            readonly project_report_msg: "dated";
             /** @constant */
-            project_has_archived: "The project is not active. You can recover it in the projects list";
+            readonly project_has_archived: "The project is not active. You can recover it in the projects list";
             /** @constant */
-            Not_enough_balance_for_check_position: "there are not enough funds in your account to track keyword rankings";
+            readonly Not_enough_balance_for_check_position: "there are not enough funds in your account to track keyword rankings";
             /** @constant */
-            Refill_balance: "Top up balance";
+            readonly Refill_balance: "Top up balance";
             /** @constant */
-            Not_enough_owner_balance: "The project owner has insufficient funds to complete the task. Contact the owner of the project ";
+            readonly Not_enough_owner_balance: "The project owner has insufficient funds to complete the task. Contact the owner of the project ";
             /** @constant */
-            Not_enough_owner_balance2: " and ask them to top up their balance.";
+            readonly Not_enough_owner_balance2: " and ask them to top up their balance.";
             /** @constant */
-            Not_enough_balance_limit: "You used up the limit on checks the project's owner gave you. Contact the owner via ";
+            readonly Not_enough_balance_limit: "You used up the limit on checks the project's owner gave you. Contact the owner via ";
             /** @constant */
-            Not_enough_balance_limit2: " if you need to raise the limit";
+            readonly Not_enough_balance_limit2: " if you need to raise the limit";
             /** @constant */
-            Position_check: "Keyword rank check of";
+            readonly Position_check: "Keyword rank check of";
             /** @constant */
-            Position_check_with_snippet: "Track ranks and collect snippets";
+            readonly Position_check_with_snippet: "Track ranks and collect snippets";
             /** @constant */
-            Positions_check: "Keyword ranking report for";
+            readonly Positions_check: "Keyword ranking report for";
             /** @constant */
-            Positions_select_se: "Add search engines in project settings";
+            readonly Positions_select_se: "Add search engines in project settings";
             /** @constant */
-            Positions_check_with_snippets: "Keyword ranking and snippets report for";
+            readonly Positions_check_with_snippets: "Keyword ranking and snippets report for";
             /** @constant */
-            Keyword_ranking_already_started: "Keyword ranking already started";
+            readonly Keyword_ranking_already_started: "Keyword ranking already started";
             /** @constant */
-            Not_enough_balance_for_check_positions: "You do not have enough funds in your account to track keyword rankings";
+            readonly Not_enough_balance_for_check_positions: "You do not have enough funds in your account to track keyword rankings";
             /** @constant */
-            Short_keywords: "Keywords are too short";
+            readonly Short_keywords: "Keywords are too short";
             /** @constant */
-            Semantic_kernel_composition: "Keyword research";
+            readonly Semantic_kernel_composition: "Keyword research";
             /** @constant */
-            Semantic_kernel_composition_by_hints: "Keyword suggestions harvest";
+            readonly Semantic_kernel_composition_by_hints: "Keyword suggestions harvest";
             /** @constant */
-            Provider_incorrect: "`Provider` is incorrect";
+            readonly Provider_incorrect: "`Provider` is incorrect";
             /** @constant */
-            Not_enough_balance: "There are not enough funds in your account";
+            readonly Not_enough_balance: "There are not enough funds in your account";
             /** @constant */
-            Unchecked_wordstat_is_missing1: "Skipped search volume data in project";
+            readonly Unchecked_wordstat_is_missing1: "Skipped search volume data in project";
             /** @constant */
-            Unchecked_wordstat_is_missing2: "for applied locations and search volume types there's no";
+            readonly Unchecked_wordstat_is_missing2: "for applied locations and search volume types there's no";
             /** @constant */
-            No_phrases_or_regions1: "The project has";
+            readonly No_phrases_or_regions1: "The project has";
             /** @constant */
-            No_phrases_or_regions2: "no keywords or locations and search volume types are not selected";
+            readonly No_phrases_or_regions2: "no keywords or locations and search volume types are not selected";
             /** @constant */
-            Wordstat_check: "Search volume tracking for:";
+            readonly Wordstat_check: "Search volume tracking for:";
             /** @constant */
-            depth: "research depth";
+            readonly depth: "research depth";
             /** @constant */
-            Claster_delay: "Assigning project tasks.<br>Clustering tool will be available within a minute";
+            readonly Claster_delay: "Assigning project tasks.<br>Clustering tool will be available within a minute";
             /** @constant */
-            Claster_task_bank: "Keyword clustering";
+            readonly Claster_task_bank: "Keyword clustering";
             /** @constant */
-            Claster_task_change_bank: "Re-calculate clustering cost";
+            readonly Claster_task_change_bank: "Re-calculate clustering cost";
             /** @constant */
-            Claster_already_doing: "Clustering is in process";
+            readonly Claster_already_doing: "Clustering is in process";
             /** @constant */
-            Claster_not_exists_last_results: "Previous keyword clustering results not found";
+            readonly Claster_not_exists_last_results: "Previous keyword clustering results not found";
             /** @constant */
-            for_keyword: "to each keyword";
+            readonly for_keyword: "to each keyword";
             /** @constant */
-            Get_group_search_volume: "Get group search volume";
+            readonly Get_group_search_volume: "Get group search volume";
             /** @constant */
-            Export_group: "Export from group";
+            readonly Export_group: "Export from group";
             /** @constant */
-            Export_to_project: "Copy to another project";
+            readonly Export_to_project: "Copy to another project";
             /** @constant */
-            Move_to_project: "Move to another project";
+            readonly Move_to_project: "Move to another project";
             /** @constant */
-            Block_mode_unavailable_notice: "Block mode is not available if you have over 6 000 keywords or too many groups";
+            readonly Block_mode_unavailable_notice: "Block mode is not available if you have over 6 000 keywords or too many groups";
             /** @constant */
-            Block_mode: "Block mode";
+            readonly Block_mode: "Block mode";
             /** @constant */
-            Table_mode: "Table mode";
+            readonly Table_mode: "Table mode";
             /** @constant */
-            Tags: "Tag No.";
+            readonly Tags: "Tag No.";
             /** @constant */
-            Tags_names: "Tags";
+            readonly Tags_names: "Tags";
             /** @constant */
-            Tags_disable: "Disable";
+            readonly Tags_disable: "Disable";
             /** @constant */
-            Set_tag: "Add tag";
+            readonly Set_tag: "Add tag";
             /** @constant */
-            Remove_tag: "Remove tags";
+            readonly Remove_tag: "Remove tags";
             /** @constant */
-            Add_tags: "Add tags";
+            readonly Add_tags: "Add tags";
             /** @constant */
-            Remove_tags: "Remove tags";
+            readonly Remove_tags: "Remove tags";
             /** @constant */
-            Set_tags: "Replace tags";
+            readonly Set_tags: "Replace tags";
             /** @constant */
-            Import: "Keyword import";
+            readonly Import: "Keyword import";
             /** @constant */
-            Export: "Keyword export";
+            readonly Export: "Keyword export";
             /** @constant */
-            Target: "Target URL";
+            readonly Target: "Target URL";
             /** @constant */
-            Target_status: "Target URL status";
+            readonly Target_status: "Target URL status";
             /** @constant */
-            Relevant_page: "Ranked URL";
+            readonly Relevant_page: "Ranked URL";
             /** @constant */
-            CPC: "CPC";
+            readonly CPC: "CPC";
             /** @constant */
-            Visits: "Traffic";
+            readonly Visits: "Traffic";
             /** @constant */
-            Snippet: "Snippet";
+            readonly Snippet: "Snippet";
             /** @constant */
-            Research: "Research keywords";
+            readonly Research: "Research keywords";
             /** @constant */
-            Research_suggestions: "Collect keyword suggestions";
+            readonly Research_suggestions: "Collect keyword suggestions";
             /** @constant */
-            Research_keywords_se: "Research keywords";
+            readonly Research_keywords_se: "Research keywords";
             /** @constant */
-            Research_keywords_traffic: "Magnet tool";
+            readonly Research_keywords_traffic: "Magnet tool";
             /** @constant */
-            To_research: "Research";
+            readonly To_research: "Research";
             /** @constant */
-            Group_number: "Groups";
+            readonly Group_number: "Groups";
             /** @constant */
-            Keyword_number: "Keywords";
+            readonly Keyword_number: "Keywords";
             /** @constant */
-            Turn_on: "On";
+            readonly Turn_on: "On";
             /** @constant */
-            Turn_off: "Off";
+            readonly Turn_off: "Off";
             /** @constant */
-            Enable_all_groups: "Turn on all groups";
+            readonly Enable_all_groups: "Turn on all groups";
             /** @constant */
-            Disable_all_groups: "Turn off all groups";
+            readonly Disable_all_groups: "Turn off all groups";
             /** @constant */
-            Select_all: "Select all";
+            readonly Select_all: "Select all";
             /** @constant */
-            Select_groups: "Select groups";
+            readonly Select_groups: "Select groups";
             /** @constant */
-            Highlight: "Select";
+            readonly Highlight: "Select";
             /** @constant */
-            Trash_bin: "Trash bin";
+            readonly Trash_bin: "Trash bin";
             /** @constant */
-            Filter: "Filter";
+            readonly Filter: "Filter";
             /** @constant */
-            Search_keyword: "Search keyword";
+            readonly Search_keyword: "Search keyword";
             /** @constant */
-            Get_search_volume: "Get search volume";
+            readonly Get_search_volume: "Get search volume";
             /** @constant */
-            Clustering_tool: "Keyword clustering";
+            readonly Clustering_tool: "Keyword clustering";
             /** @constant */
-            SE_location: "Search engine / Location";
+            readonly SE_location: "Search engine / Location";
             /** @constant */
-            Select_location: "Select location";
+            readonly Select_location: "Select location";
             /** @constant */
-            Select_another_location: "Select another location";
+            readonly Select_another_location: "Select another location";
             /** @constant */
-            Clustering_level: "Clustering level";
+            readonly Clustering_level: "Clustering level";
             /** @constant */
-            Clustering_level_groups_relation: "Higher level clustering produces more groups with fewer keywords in every group.";
+            readonly Clustering_level_groups_relation: "Higher level clustering produces more groups with fewer keywords in every group.";
             /** @constant */
-            Clustering_changes_order_notice: "<b>Important!</b><br>Keyword clustering changes groups and keyword order in your project.<br> After clustering, keyword groups will be automatically disabled.";
+            readonly Clustering_changes_order_notice: "<b>Important!</b><br>Keyword clustering changes groups and keyword order in your project.<br> After clustering, keyword groups will be automatically disabled.";
             /** @constant */
-            Clustering_rel_notice: "Before grouping keywords by page relevance, make sure that you have checked<br> keyword rankings in the applied search engine and location.";
+            readonly Clustering_rel_notice: "Before grouping keywords by page relevance, make sure that you have checked<br> keyword rankings in the applied search engine and location.";
             /** @constant */
-            Cluster: "Clustering";
+            readonly Cluster: "Clustering";
             /** @constant */
-            Cluster_TOP10: "Keyword clustering by TOP10";
+            readonly Cluster_TOP10: "Keyword clustering by TOP10";
             /** @constant */
-            Cluster_relevant_url: "Grouping by page relevance";
+            readonly Cluster_relevant_url: "Grouping by page relevance";
             /** @constant */
-            Cluster_target_url: "Grouping by target URLs";
+            readonly Cluster_target_url: "Grouping by target URLs";
             /** @constant */
-            Before_grouping_setup_target_urls: "Before grouping, make sure that target URLs are assigned";
+            readonly Before_grouping_setup_target_urls: "Before grouping, make sure that target URLs are assigned";
             /** @constant */
-            Change_clustering_level: "Change clustering level";
+            readonly Change_clustering_level: "Change clustering level";
             /** @constant */
-            Bounce_rate: "Bounce";
+            readonly Bounce_rate: "Bounce";
             /** @constant */
-            Pages_view: "Pages";
+            readonly Pages_view: "Pages";
             /** @constant */
-            Time: "Time";
+            readonly Time: "Time";
             /** @constant */
-            Del_group: "Delete group";
+            readonly Del_group: "Delete group";
             /** @constant */
-            Sort_keywords: "Sort keywords";
+            readonly Sort_keywords: "Sort keywords";
             /** @constant */
-            Filter_phrases: "Filter keywords";
+            readonly Filter_phrases: "Filter keywords";
             /** @constant */
-            On_Off_group: "Enable / Disable a group";
+            readonly On_Off_group: "Enable / Disable a group";
             /** @constant */
-            Move_to_new_group: "Move to a new group";
+            readonly Move_to_new_group: "Move to a new group";
             /** @constant */
-            Delete_group_warning: "<b>Important!</b><br>If you delete a group, all keywords in the group will be deleted immediately.";
+            readonly Delete_group_warning: "<b>Important!</b><br>If you delete a group, all keywords in the group will be deleted immediately.";
             /** @constant */
-            Each_keyword_on_new_line: "Keywords (each keyword on a new line)";
+            readonly Each_keyword_on_new_line: "Keywords (each keyword on a new line)";
             /** @constant */
-            Source: "Source";
+            readonly Source: "Source";
             /** @constant */
-            Phrases_on_new_line: "Phrases (each one on a new line)";
+            readonly Phrases_on_new_line: "Phrases (each one on a new line)";
             /** @constant */
-            Import_to_group: "Import into group";
+            readonly Import_to_group: "Import into group";
             /** @constant */
-            Skip_duplicates: "Skip duplicates";
+            readonly Skip_duplicates: "Skip duplicates";
             /** @constant */
-            Move_duplicates: "Move duplicates";
+            readonly Move_duplicates: "Move duplicates";
             /** @constant */
-            Move_duplicates_another_group: "Move duplicates to another group";
+            readonly Move_duplicates_another_group: "Move duplicates to another group";
             /** @constant */
-            Move_duplicates_another_group_name: "Where move duplicates?";
+            readonly Move_duplicates_another_group_name: "Where move duplicates?";
             /** @constant */
-            Match_type: "Match type";
+            readonly Match_type: "Match type";
             /** @constant */
-            Match_type_broad: "Volume";
+            readonly Match_type_broad: "Volume";
             /** @constant */
-            Match_type_phrase: "Volume";
+            readonly Match_type_phrase: "Volume";
             /** @constant */
-            Match_type_exact: "Volume";
+            readonly Match_type_exact: "Volume";
             /** @constant */
-            Match_type_strict: "Strict";
+            readonly Match_type_strict: "Strict";
             /** @constant */
-            By_location: "For locations";
+            readonly By_location: "For locations";
             /** @constant */
-            Skip_tracked_searches: "Skip collected search volume data";
+            readonly Skip_tracked_searches: "Skip collected search volume data";
             /** @constant */
-            Check_active_groups_only: "Check active groups only";
+            readonly Check_active_groups_only: "Check active groups only";
             /** @constant */
-            By_total_searches: "By search volume";
+            readonly By_total_searches: "By search volume";
             /** @constant */
-            By_rank: "By keyword rank (applied SE and Location)";
+            readonly By_rank: "By keyword rank (applied SE and Location)";
             /** @constant */
-            Sort_groups_by_searches: "Sort groups by total search volume";
+            readonly Sort_groups_by_searches: "Sort groups by total search volume";
             /** @constant */
-            Sort_keywords_by_searches: "Sort keywords in groups by search volume";
+            readonly Sort_keywords_by_searches: "Sort keywords in groups by search volume";
             /** @constant */
-            Sort_groups_alphabetically: "Sort groups alphabetically";
+            readonly Sort_groups_alphabetically: "Sort groups alphabetically";
             /** @constant */
-            Sort_groups_by_date: "Sort groups by creation date";
+            readonly Sort_groups_by_date: "Sort groups by creation date";
             /** @constant */
-            Delete_empty_groups: "Delete empty groups";
+            readonly Delete_empty_groups: "Delete empty groups";
             /** @constant */
-            Delete_inactive_groups: "Delete inactive groups";
+            readonly Delete_inactive_groups: "Delete inactive groups";
             /** @constant */
-            Delete_groups_keywords: "Wipe all groups and keywords";
+            readonly Delete_groups_keywords: "Wipe all groups and keywords";
             /** @constant */
-            Set_color_tag: "Add color tag";
+            readonly Set_color_tag: "Add color tag";
             /** @constant */
-            Group_name: "Group name";
+            readonly Group_name: "Group name";
             /** @constant */
-            move_to: "Move to the group";
+            readonly move_to: "Move to the group";
             /** @constant */
-            Filter_applied_to_selected_se_notice_1: "Filter will be applied to the selected search engine and location. Before applying the filter, check search volume.";
+            readonly Filter_applied_to_selected_se_notice_1: "Filter will be applied to the selected search engine and location. Before applying the filter, check search volume.";
             /** @constant */
-            Ranks_tracked_date: "Rankings checked";
+            readonly Ranks_tracked_date: "Rankings checked";
             /** @constant */
-            Ranks_missing_in_serp: "Keyword not found in search results";
+            readonly Ranks_missing_in_serp: "Keyword not found in search results";
             /** @constant */
-            Filter_applied_to_selected_se_notice_2: "Filter will be applied to the selected search engine and location. Before applying the filter, check keyword rankings.";
+            readonly Filter_applied_to_selected_se_notice_2: "Filter will be applied to the selected search engine and location. Before applying the filter, check keyword rankings.";
             /** @constant */
-            Groups_will_sort_alpahbetically: "Groups will be sorted alphabetically";
+            readonly Groups_will_sort_alpahbetically: "Groups will be sorted alphabetically";
             /** @constant */
-            Groups_will_sort_by_date: "Groups will be sorted by creation date";
+            readonly Groups_will_sort_by_date: "Groups will be sorted by creation date";
             /** @constant */
-            Groups_without_keywords_will_delete: "All empty groups will be wiped!";
+            readonly Groups_without_keywords_will_delete: "All empty groups will be wiped!";
             /** @constant */
-            Groups_keywords_will_delete: "All groups and keywords will be wiped immediately. You can't undo this action.";
+            readonly Groups_keywords_will_delete: "All groups and keywords will be wiped immediately. You can't undo this action.";
             /** @constant */
-            Inactive_groups_will_be_deleted: "All inactive groups will be wiped!";
+            readonly Inactive_groups_will_be_deleted: "All inactive groups will be wiped!";
             /** @constant */
-            Filters_bulk_actions: "Filters / Bulk operations";
+            readonly Filters_bulk_actions: "Filters / Bulk operations";
             /** @constant */
-            Copy_group: "Export group";
+            readonly Copy_group: "Export group";
             /** @constant */
-            to_project: "to the project";
+            readonly to_project: "to the project";
             /** @constant */
-            Your_account: "You";
+            readonly Your_account: "You";
             /** @constant */
-            project_owner: "Project owner";
+            readonly project_owner: "Project owner";
             /** @constant */
-            will_be_charged: "will be charged";
+            readonly will_be_charged: "will be charged";
             /** @constant */
-            from_charged: "";
+            readonly from_charged: "";
             /** @constant */
-            Suggestions_depth: "Nesting level";
+            readonly Suggestions_depth: "Nesting level";
             /** @constant */
-            Move_gathered_single_group: "Band up all collected keywords within a single group";
+            readonly Move_gathered_single_group: "Band up all collected keywords within a single group";
             /** @constant */
-            Search_uri: "Search a URI";
+            readonly Search_uri: "Search a URI";
             /** @constant */
-            Add_to_group: "Add to group";
+            readonly Add_to_group: "Add to group";
             /** @constant */
-            Integrate_to_use_the_tool_1: "To use the tool";
+            readonly Integrate_to_use_the_tool_1: "To use the tool";
             /** @constant */
-            Integrate_to_use_the_tool_2: "integrate";
+            readonly Integrate_to_use_the_tool_2: "integrate";
             /** @constant */
-            Integrate_to_use_the_tool_3: "your account with Google Analytics, Google Search Console or Yandex Metrica";
+            readonly Integrate_to_use_the_tool_3: "your account with Google Analytics, Google Search Console or Yandex Metrica";
             /** @constant */
-            Methods_of_research: "Methods";
+            readonly Methods_of_research: "Methods";
             /** @constant */
-            Popular: "Popular";
+            readonly Popular: "Popular";
             /** @constant */
-            Other: "Other";
+            readonly Other: "Other";
             /** @constant */
-            Clustering_in_process: "Clustering";
+            readonly Clustering_in_process: "Clustering";
             /** @constant */
-            Clustering_type: "Clustering type";
+            readonly Clustering_type: "Clustering type";
             /** @constant */
-            Name_az: "Name A-Z";
+            readonly Name_az: "Name A-Z";
             /** @constant */
-            Name_za: "Name Z-A";
+            readonly Name_za: "Name Z-A";
             /** @constant */
-            Apply_to_selected: "Apply to selected keywords";
+            readonly Apply_to_selected: "Apply to selected keywords";
             /** @constant */
-            items_number: "keyword(s)";
+            readonly items_number: "keyword(s)";
             /** @constant */
-            Assign_target: "Assign target URL";
+            readonly Assign_target: "Assign target URL";
             /** @constant */
-            Landing_enter_URL: "Enter URL";
+            readonly Landing_enter_URL: "Enter URL";
             /** @constant */
-            Reset: "Cancel";
+            readonly Reset: "Cancel";
             /** @constant */
-            Without_region: "Global";
+            readonly Without_region: "Global";
             /** @constant */
-            Total_exact_ams: "Total search volume of a keyword group";
+            readonly Total_exact_ams: "Total search volume of a keyword group";
             /** @constant */
-            Total_exact_ams_of_project: "Total search volume of keywords in project";
+            readonly Total_exact_ams_of_project: "Total search volume of keywords in project";
             /** @constant */
-            Find_replace: "Find and replace";
+            readonly Find_replace: "Find and replace";
             /** @constant */
-            Find_replace_target_links: "Find and replace target URLs";
+            readonly Find_replace_target_links: "Find and replace target URLs";
             /** @constant */
-            Move_by_substrings: "Move keywords by substring";
+            readonly Move_by_substrings: "Move keywords by substring";
             /** @constant */
-            Move_by_substrings_whole_words: "Whole words";
+            readonly Move_by_substrings_whole_words: "Whole words";
             /** @constant */
-            Move_by_substrings_info: "All keywords in which at least one of the specified substrings is found will be moved to the specified group. Example: When specifying the \"a\" substring, all keywords with the letter \"a\" will be moved.";
+            readonly Move_by_substrings_info: "All keywords in which at least one of the specified substrings is found will be moved to the specified group. Example: When specifying the \"a\" substring, all keywords with the letter \"a\" will be moved.";
             /** @constant */
-            Filter_short: "F";
+            readonly Filter_short: "F";
             /** @constant */
-            Tag: "Tag";
+            readonly Tag: "Tag";
             /** @constant */
-            Change: "Change";
+            readonly Change: "Change";
             /** @constant */
-            Find: "Find";
+            readonly Find: "Find";
             /** @constant */
-            Replace: " Replace with";
+            readonly Replace: " Replace with";
             /** @constant */
-            Add_keyword_to_replace: "Add words or phrases to replace";
+            readonly Add_keyword_to_replace: "Add words or phrases to replace";
             /** @constant */
-            Keyword_will_be_replaced: "These words or phrases will be automatically replaced.";
+            readonly Keyword_will_be_replaced: "These words or phrases will be automatically replaced.";
             /** @constant */
-            Tetris_points: "Points";
+            readonly Tetris_points: "Points";
             /** @constant */
-            Tetris_best_score: "Best score";
+            readonly Tetris_best_score: "Best score";
             /** @constant */
-            Tetris_game_over: "Game over";
+            readonly Tetris_game_over: "Game over";
             /** @constant */
-            Tetris_play_again: "Play again";
+            readonly Tetris_play_again: "Play again";
             /** @constant */
-            Hints_data_sources: "Sources";
+            readonly Hints_data_sources: "Sources";
             /** @constant */
-            CONTROLLER_Phrases_added: "You have successfully added keywords";
+            readonly CONTROLLER_Phrases_added: "You have successfully added keywords";
             /** @constant */
-            CONTROLLER_phrases_missed: "skipped duplicate keywords";
+            readonly CONTROLLER_phrases_missed: "skipped duplicate keywords";
             /** @constant */
-            CONTROLLER_phrases_moved: "moved (changed) keywords";
+            readonly CONTROLLER_phrases_moved: "moved (changed) keywords";
             /** @constant */
-            CONTROLLER_Semantic_kernel: "Keywords";
+            readonly CONTROLLER_Semantic_kernel: "Keywords";
             /** @constant */
-            Folder_max_depth: "Nested folder limit";
+            readonly Folder_max_depth: "Nested folder limit";
             /** @constant */
-            Choose_searcher: "Select search engine";
+            readonly Choose_searcher: "Select search engine";
             /** @constant */
-            Choose_region: "Select location";
+            readonly Choose_region: "Select location";
             /** @constant */
-            Choose_regions: "Select locations";
+            readonly Choose_regions: "Select locations";
             /** @constant */
-            Choose_searcher_and_region: "Select search engine and location";
+            readonly Choose_searcher_and_region: "Select search engine and location";
             /** @constant */
-            Choose_competitor: "Select competitor";
+            readonly Choose_competitor: "Select competitor";
             /** @constant */
-            Choose_group: "Choose group";
+            readonly Choose_group: "Choose group";
             /** @constant */
-            Main_project: "My project";
+            readonly Main_project: "My project";
             /** @constant */
-            Without_relevant_url: "No ranked URL";
+            readonly Without_relevant_url: "No ranked URL";
             /** @constant */
-            Not_checked: "Not tracked";
+            readonly Not_checked: "Not tracked";
             /** @constant */
-            Set_phrases_minus: "Exclude all phrases with negative keywords (Google and Yandex)";
+            readonly Set_phrases_minus: "Exclude all phrases with negative keywords (Google and Yandex)";
             /** @constant */
-            Negative_words: "Negative keywords";
+            readonly Negative_words: "Negative keywords";
             /** @constant */
-            Check_old_searches: "Update expired search volume";
+            readonly Check_old_searches: "Update expired search volume";
             /** @constant */
-            Group_id: "Group id";
+            readonly Group_id: "Group id";
             /** @constant */
-            Project_id: "Project id";
+            readonly Project_id: "Project id";
             /** @constant */
-            Keyword_id: "Keyword id";
+            readonly Keyword_id: "Keyword id";
             /** @constant */
-            Keyword_folder_id: "Keyword folder id";
+            readonly Keyword_folder_id: "Keyword folder id";
             /** @constant */
-            Folder_path: "Folder";
+            readonly Folder_path: "Folder";
             /** @constant */
-            Keyword_rank: "Keyword rank";
+            readonly Keyword_rank: "Keyword rank";
             /** @constant */
-            Keyword_count: "Keyword count";
+            readonly Keyword_count: "Keyword count";
             /** @constant */
-            Sorting_order: "Sorting order";
+            readonly Sorting_order: "Sorting order";
             /** @constant */
-            Keyword_clustering_completed: "Keyword clustering completed";
+            readonly Keyword_clustering_completed: "Keyword clustering completed";
             /** @constant */
-            Send_to_email: "Send to Email";
+            readonly Send_to_email: "Send to Email";
             /** @constant */
-            Data_will_be_pulled_for: "Collect data for";
+            readonly Data_will_be_pulled_for: "Collect data for";
             /** @constant */
-            total_count: "; total count";
+            readonly total_count: "; total count";
             /** @constant */
-            Enter_keywords: "Enter keywords";
+            readonly Enter_keywords: "Enter keywords";
             /** @constant */
-            Upload_from_file: "Upload from file";
+            readonly Upload_from_file: "Upload from file";
             /** @constant */
-            Selected: "Selected";
+            readonly Selected: "Selected";
             /** @constant */
-            Keyword_export: "Keyword export";
+            readonly Keyword_export: "Keyword export";
             /** @constant */
-            Group_export: "Group export";
+            readonly Group_export: "Group export";
             /** @constant */
-            Copy_to_clipboard: "Copy to clipboard";
+            readonly Copy_to_clipboard: "Copy to clipboard";
             /** @constant */
-            Copy_to_clipboard_up_to: "Copy to clipboard (up to %max% keywords)";
+            readonly Copy_to_clipboard_up_to: "Copy to clipboard (up to %max% keywords)";
             /** @constant */
-            To_copy_and_move: "Copy and transfer";
+            readonly To_copy_and_move: "Copy and transfer";
             /** @constant */
-            To_delete_keywords_warning: "<b>Important!</b><br>Are you sure you want to delete selected keywords?";
+            readonly To_delete_keywords_warning: "<b>Important!</b><br>Are you sure you want to delete selected keywords?";
             /** @constant */
-            To_delete_folder_warning: "<b>Important!</b><br><br>If you delete a folder, its contents (subfolders, groups, keywords) will be deleted immediately";
+            readonly To_delete_folder_warning: "<b>Important!</b><br><br>If you delete a folder, its contents (subfolders, groups, keywords) will be deleted immediately";
             /** @constant */
-            Restore_selected_keywords: "Restore selected keywords";
+            readonly Restore_selected_keywords: "Restore selected keywords";
             /** @constant */
-            Restore_selected_folders: "Restore selected folders";
+            readonly Restore_selected_folders: "Restore selected folders";
             /** @constant */
-            Restore_selected_groups_restores_contents: "If you restore the group, all folders and keywords in the group will be restored immediately";
+            readonly Restore_selected_groups_restores_contents: "If you restore the group, all folders and keywords in the group will be restored immediately";
             /** @constant */
-            Restore: "Restore";
+            readonly Restore: "Restore";
             /** @constant */
-            or_drag_here: "or drag and drop here";
+            readonly or_drag_here: "or drag and drop here";
             /** @constant */
-            txt_csv_max_size: "(txt or csv - max 10 Mb)";
+            readonly txt_csv_max_size: "(txt or csv - max 10 Mb)";
             /** @constant */
-            Drop_file: "Drop file";
+            readonly Drop_file: "Drop file";
             /** @constant */
-            File_uploaded: "File uploaded";
+            readonly File_uploaded: "File uploaded";
             /** @constant */
-            Disable_floating_bar: "Disable floating bar";
+            readonly Disable_floating_bar: "Disable floating bar";
             /** @constant */
-            Temporary_bin: "Temporary bin";
+            readonly Temporary_bin: "Temporary bin";
             /** @constant */
-            Set_target_equals_relevant: "Assign Target = Ranked URL from the last check";
+            readonly Set_target_equals_relevant: "Assign Target = Ranked URL from the last check";
             /** @constant */
-            Import_target_links: "Import target links";
+            readonly Import_target_links: "Import target links";
             /** @constant */
-            Total_selected: "Total selected keywords";
+            readonly Total_selected: "Total selected keywords";
             /** @constant */
-            Keyword_length: "Keyword length";
+            readonly Keyword_length: "Keyword length";
             /** @constant */
-            XSLX_tabs: "XLSX (Tabs)";
+            readonly XSLX_tabs: "XLSX (Tabs)";
             /** @constant */
-            Prepare: "Prepare";
+            readonly Prepare: "Prepare";
             /** @constant */
-            Enter_name_of_new_group: "Enter a name of a new group";
+            readonly Enter_name_of_new_group: "Enter a name of a new group";
             /** @constant */
-            Manage_columns: "Manage columns";
+            readonly Manage_columns: "Manage columns";
             /** @constant */
-            Max_period_one_year: "Max period - 1 year";
+            readonly Max_period_one_year: "Max period - 1 year";
             /** @constant */
-            Target_equals_relevant_lastcheck_in_location: "Target = Ranked URL from the last check in the location";
+            readonly Target_equals_relevant_lastcheck_in_location: "Target = Ranked URL from the last check in the location";
             /** @constant */
-            Do_not_overwrite_assigned_target_links: "Do not overwrite assigned target links";
+            readonly Do_not_overwrite_assigned_target_links: "Do not overwrite assigned target links";
             /** @constant */
-            Sy_wordstat_max_pages: "Количество страниц (макс.)";
+            readonly Sy_wordstat_max_pages: "Количество страниц (макс.)";
             /** @constant */
-            Research_status: "Keyword research status";
+            readonly Research_status: "Keyword research status";
             /** @constant */
-            Activity_status: "Group activity status";
+            readonly Activity_status: "Group activity status";
             /** @constant */
-            No_target_URL: "No Target URL";
+            readonly No_target_URL: "No Target URL";
             /** @constant */
-            Move_keywords_to_another_project: "Move to another project";
+            readonly Move_keywords_to_another_project: "Move to another project";
             /** @constant */
-            Move_group_and_delete_from_orginal_project: "Transfer (delete from the orginal project)";
+            readonly Move_group_and_delete_from_orginal_project: "Transfer (delete from the orginal project)";
             /** @constant */
-            Keywords_to_transfer_and_delete_from_project: "To transfer and delete from the original project";
+            readonly Keywords_to_transfer_and_delete_from_project: "To transfer and delete from the original project";
             /** @constant */
-            Remove_pluses_fullstops_commas_apostrophes_quotes: "Remove plus symbols, full stops, commas, apostrophes, quotes";
+            readonly Remove_pluses_fullstops_commas_apostrophes_quotes: "Remove plus symbols, full stops, commas, apostrophes, quotes";
             /** @constant */
-            HintVolumeNoCollected: "Volume isn't collected. Follow <a href=\"/ru/support/keywords/volume/\" target=\"_blank\">this manual</a> to collect volume.<br><br>\nFor some keywords search volume is displayed because we store volume in a common database without linking it to a particular user: if other users checked it, it would be automatically pulled from the database. But note that such volume could be outdated.";
+            readonly HintVolumeNoCollected: "Volume isn't collected. Follow <a href=\"/ru/support/keywords/volume/\" target=\"_blank\">this manual</a> to collect volume.<br><br>\nFor some keywords search volume is displayed because we store volume in a common database without linking it to a particular user: if other users checked it, it would be automatically pulled from the database. But note that such volume could be outdated.";
         };
     };
     responses: never;

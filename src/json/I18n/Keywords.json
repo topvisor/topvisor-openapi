@@ -11,856 +11,1140 @@
                 "type": "object",
                 "properties": {
                     "Average": {
-                        "const": "Average"
+                        "const": "Average",
+                        "readOnly": true
                     },
                     "phrase_missed": {
-                        "const": "Keyword not selected"
+                        "const": "Keyword not selected",
+                        "readOnly": true
                     },
                     "group_not_exists": {
-                        "const": "Group not found in the project"
+                        "const": "Group not found in the project",
+                        "readOnly": true
                     },
                     "keyword_not_exists": {
-                        "const": "Keyword not found in the project"
+                        "const": "Keyword not found in the project",
+                        "readOnly": true
                     },
                     "incorrect_phrase": {
-                        "const": "Invalid keyword"
+                        "const": "Invalid keyword",
+                        "readOnly": true
                     },
                     "phrase_exists": {
-                        "const": "This keyword already exists"
+                        "const": "This keyword already exists",
+                        "readOnly": true
                     },
                     "import_error_columns": {
-                        "const": "The number of columns in some lines doesn't match the number in other lines."
+                        "const": "The number of columns in some lines doesn't match the number in other lines.",
+                        "readOnly": true
                     },
                     "import_error_columns2": {
-                        "const": " If you import keywords from a CSV file, please place all keywords with special characters (comma (,), semicolon (;)) in double quotation marks (\")"
+                        "const": " If you import keywords from a CSV file, please place all keywords with special characters (comma (,), semicolon (;)) in double quotation marks (\")",
+                        "readOnly": true
                     },
                     "import_error1": {
-                        "const": "You haven't selected keywords to import"
+                        "const": "You haven't selected keywords to import",
+                        "readOnly": true
                     },
                     "Add_phrase": {
-                        "const": "Add keyword"
+                        "const": "Add keyword",
+                        "readOnly": true
                     },
                     "Add_group": {
-                        "const": "Add new group"
+                        "const": "Add new group",
+                        "readOnly": true
                     },
                     "New_folder": {
-                        "const": "New folder"
+                        "const": "New folder",
+                        "readOnly": true
                     },
                     "New_group": {
-                        "const": "New group"
+                        "const": "New group",
+                        "readOnly": true
                     },
                     "Access_error": {
-                        "const": "Keyword not found or access denied"
+                        "const": "Keyword not found or access denied",
+                        "readOnly": true
                     },
                     "CSV_group": {
-                        "const": "Group"
+                        "const": "Group",
+                        "readOnly": true
                     },
                     "CSV_phrase": {
-                        "const": "Keyword"
+                        "const": "Keyword",
+                        "readOnly": true
                     },
                     "CSV_rel": {
-                        "const": "Ranked page"
+                        "const": "Ranked page",
+                        "readOnly": true
                     },
                     "CSV_snippet_title": {
-                        "const": "Snippet titles"
+                        "const": "Snippet titles",
+                        "readOnly": true
                     },
                     "CSV_snippet": {
-                        "const": "Snippet"
+                        "const": "Snippet",
+                        "readOnly": true
                     },
                     "CSV_target": {
-                        "const": "Target URL"
+                        "const": "Target URL",
+                        "readOnly": true
                     },
                     "CSV_visits": {
-                        "const": "Traffic"
+                        "const": "Traffic",
+                        "readOnly": true
                     },
                     "CSV_google_price": {
-                        "const": "Bid"
+                        "const": "Bid",
+                        "readOnly": true
                     },
                     "CSV_yandex_price1": {
-                        "const": "1-st Premium placement"
+                        "const": "1-st Premium placement",
+                        "readOnly": true
                     },
                     "CSV_yandex_price2": {
-                        "const": "2-st Premium placement"
+                        "const": "2-st Premium placement",
+                        "readOnly": true
                     },
                     "CSV_yandex_price3": {
-                        "const": "Premium placement"
+                        "const": "Premium placement",
+                        "readOnly": true
                     },
                     "CSV_yandex_price4": {
-                        "const": "1st place"
+                        "const": "1st place",
+                        "readOnly": true
                     },
                     "CSV_yandex_price5": {
-                        "const": "Guaranteed"
+                        "const": "Guaranteed",
+                        "readOnly": true
                     },
                     "Targets_error": {
-                        "const": "Target URLs not changed"
+                        "const": "Target URLs not changed",
+                        "readOnly": true
                     },
                     "Group_changing_denied": {
-                        "const": "You can't edit this group!"
+                        "const": "You can't edit this group!",
+                        "readOnly": true
                     },
                     "Filtered_group": {
-                        "const": "Filtered group"
+                        "const": "Filtered group",
+                        "readOnly": true
                     },
                     "Export_dynamics_by_date": {
-                        "const": "Project export for"
+                        "const": "Project export for",
+                        "readOnly": true
                     },
                     "Export_Balance_notify": {
-                        "const": "Cannot prepare export. There are not enough funds in your account."
+                        "const": "Cannot prepare export. There are not enough funds in your account.",
+                        "readOnly": true
                     },
                     "Export_HTML_comparison_not_available": {
-                        "const": "html comparison is not available yet"
+                        "const": "html comparison is not available yet",
+                        "readOnly": true
                     },
                     "Reports_unsubscribing1": {
-                        "const": "Unsubscribe "
+                        "const": "Unsubscribe ",
+                        "readOnly": true
                     },
                     "Reports_unsubscribing2": {
-                        "const": "from project reports"
+                        "const": "from project reports",
+                        "readOnly": true
                     },
                     "Project_report": {
-                        "const": "Project report for"
+                        "const": "Project report for",
+                        "readOnly": true
                     },
                     "project_report_msg": {
-                        "const": "dated"
+                        "const": "dated",
+                        "readOnly": true
                     },
                     "project_has_archived": {
-                        "const": "The project is not active. You can recover it in the projects list"
+                        "const": "The project is not active. You can recover it in the projects list",
+                        "readOnly": true
                     },
                     "Not_enough_balance_for_check_position": {
-                        "const": "there are not enough funds in your account to track keyword rankings"
+                        "const": "there are not enough funds in your account to track keyword rankings",
+                        "readOnly": true
                     },
                     "Refill_balance": {
-                        "const": "Top up balance"
+                        "const": "Top up balance",
+                        "readOnly": true
                     },
                     "Not_enough_owner_balance": {
-                        "const": "The project owner has insufficient funds to complete the task. Contact the owner of the project "
+                        "const": "The project owner has insufficient funds to complete the task. Contact the owner of the project ",
+                        "readOnly": true
                     },
                     "Not_enough_owner_balance2": {
-                        "const": " and ask them to top up their balance."
+                        "const": " and ask them to top up their balance.",
+                        "readOnly": true
                     },
                     "Not_enough_balance_limit": {
-                        "const": "You used up the limit on checks the project's owner gave you. Contact the owner via "
+                        "const": "You used up the limit on checks the project's owner gave you. Contact the owner via ",
+                        "readOnly": true
                     },
                     "Not_enough_balance_limit2": {
-                        "const": " if you need to raise the limit"
+                        "const": " if you need to raise the limit",
+                        "readOnly": true
                     },
                     "Position_check": {
-                        "const": "Keyword rank check of"
+                        "const": "Keyword rank check of",
+                        "readOnly": true
                     },
                     "Position_check_with_snippet": {
-                        "const": "Track ranks and collect snippets"
+                        "const": "Track ranks and collect snippets",
+                        "readOnly": true
                     },
                     "Positions_check": {
-                        "const": "Keyword ranking report for"
+                        "const": "Keyword ranking report for",
+                        "readOnly": true
                     },
                     "Positions_select_se": {
-                        "const": "Add search engines in project settings"
+                        "const": "Add search engines in project settings",
+                        "readOnly": true
                     },
                     "Positions_check_with_snippets": {
-                        "const": "Keyword ranking and snippets report for"
+                        "const": "Keyword ranking and snippets report for",
+                        "readOnly": true
                     },
                     "Keyword_ranking_already_started": {
-                        "const": "Keyword ranking already started"
+                        "const": "Keyword ranking already started",
+                        "readOnly": true
                     },
                     "Not_enough_balance_for_check_positions": {
-                        "const": "You do not have enough funds in your account to track keyword rankings"
+                        "const": "You do not have enough funds in your account to track keyword rankings",
+                        "readOnly": true
                     },
                     "Short_keywords": {
-                        "const": "Keywords are too short"
+                        "const": "Keywords are too short",
+                        "readOnly": true
                     },
                     "Semantic_kernel_composition": {
-                        "const": "Keyword research"
+                        "const": "Keyword research",
+                        "readOnly": true
                     },
                     "Semantic_kernel_composition_by_hints": {
-                        "const": "Keyword suggestions harvest"
+                        "const": "Keyword suggestions harvest",
+                        "readOnly": true
                     },
                     "Provider_incorrect": {
-                        "const": "`Provider` is incorrect"
+                        "const": "`Provider` is incorrect",
+                        "readOnly": true
                     },
                     "Not_enough_balance": {
-                        "const": "There are not enough funds in your account"
+                        "const": "There are not enough funds in your account",
+                        "readOnly": true
                     },
                     "Unchecked_wordstat_is_missing1": {
-                        "const": "Skipped search volume data in project"
+                        "const": "Skipped search volume data in project",
+                        "readOnly": true
                     },
                     "Unchecked_wordstat_is_missing2": {
-                        "const": "for applied locations and search volume types there's no"
+                        "const": "for applied locations and search volume types there's no",
+                        "readOnly": true
                     },
                     "No_phrases_or_regions1": {
-                        "const": "The project has"
+                        "const": "The project has",
+                        "readOnly": true
                     },
                     "No_phrases_or_regions2": {
-                        "const": "no keywords or locations and search volume types are not selected"
+                        "const": "no keywords or locations and search volume types are not selected",
+                        "readOnly": true
                     },
                     "Wordstat_check": {
-                        "const": "Search volume tracking for:"
+                        "const": "Search volume tracking for:",
+                        "readOnly": true
                     },
                     "depth": {
-                        "const": "research depth"
+                        "const": "research depth",
+                        "readOnly": true
                     },
                     "Claster_delay": {
-                        "const": "Assigning project tasks.<br>Clustering tool will be available within a minute"
+                        "const": "Assigning project tasks.<br>Clustering tool will be available within a minute",
+                        "readOnly": true
                     },
                     "Claster_task_bank": {
-                        "const": "Keyword clustering"
+                        "const": "Keyword clustering",
+                        "readOnly": true
                     },
                     "Claster_task_change_bank": {
-                        "const": "Re-calculate clustering cost"
+                        "const": "Re-calculate clustering cost",
+                        "readOnly": true
                     },
                     "Claster_already_doing": {
-                        "const": "Clustering is in process"
+                        "const": "Clustering is in process",
+                        "readOnly": true
                     },
                     "Claster_not_exists_last_results": {
-                        "const": "Previous keyword clustering results not found"
+                        "const": "Previous keyword clustering results not found",
+                        "readOnly": true
                     },
                     "for_keyword": {
-                        "const": "to each keyword"
+                        "const": "to each keyword",
+                        "readOnly": true
                     },
                     "Get_group_search_volume": {
-                        "const": "Get group search volume"
+                        "const": "Get group search volume",
+                        "readOnly": true
                     },
                     "Export_group": {
-                        "const": "Export from group"
+                        "const": "Export from group",
+                        "readOnly": true
                     },
                     "Export_to_project": {
-                        "const": "Copy to another project"
+                        "const": "Copy to another project",
+                        "readOnly": true
                     },
                     "Move_to_project": {
-                        "const": "Move to another project"
+                        "const": "Move to another project",
+                        "readOnly": true
                     },
                     "Block_mode_unavailable_notice": {
-                        "const": "Block mode is not available if you have over 6 000 keywords or too many groups"
+                        "const": "Block mode is not available if you have over 6 000 keywords or too many groups",
+                        "readOnly": true
                     },
                     "Block_mode": {
-                        "const": "Block mode"
+                        "const": "Block mode",
+                        "readOnly": true
                     },
                     "Table_mode": {
-                        "const": "Table mode"
+                        "const": "Table mode",
+                        "readOnly": true
                     },
                     "Tags": {
-                        "const": "Tag No."
+                        "const": "Tag No.",
+                        "readOnly": true
                     },
                     "Tags_names": {
-                        "const": "Tags"
+                        "const": "Tags",
+                        "readOnly": true
                     },
                     "Tags_disable": {
-                        "const": "Disable"
+                        "const": "Disable",
+                        "readOnly": true
                     },
                     "Set_tag": {
-                        "const": "Add tag"
+                        "const": "Add tag",
+                        "readOnly": true
                     },
                     "Remove_tag": {
-                        "const": "Remove tags"
+                        "const": "Remove tags",
+                        "readOnly": true
                     },
                     "Add_tags": {
-                        "const": "Add tags"
+                        "const": "Add tags",
+                        "readOnly": true
                     },
                     "Remove_tags": {
-                        "const": "Remove tags"
+                        "const": "Remove tags",
+                        "readOnly": true
                     },
                     "Set_tags": {
-                        "const": "Replace tags"
+                        "const": "Replace tags",
+                        "readOnly": true
                     },
                     "Import": {
-                        "const": "Keyword import"
+                        "const": "Keyword import",
+                        "readOnly": true
                     },
                     "Export": {
-                        "const": "Keyword export"
+                        "const": "Keyword export",
+                        "readOnly": true
                     },
                     "Target": {
-                        "const": "Target URL"
+                        "const": "Target URL",
+                        "readOnly": true
                     },
                     "Target_status": {
-                        "const": "Target URL status"
+                        "const": "Target URL status",
+                        "readOnly": true
                     },
                     "Relevant_page": {
-                        "const": "Ranked URL"
+                        "const": "Ranked URL",
+                        "readOnly": true
                     },
                     "CPC": {
-                        "const": "CPC"
+                        "const": "CPC",
+                        "readOnly": true
                     },
                     "Visits": {
-                        "const": "Traffic"
+                        "const": "Traffic",
+                        "readOnly": true
                     },
                     "Snippet": {
-                        "const": "Snippet"
+                        "const": "Snippet",
+                        "readOnly": true
                     },
                     "Research": {
-                        "const": "Research keywords"
+                        "const": "Research keywords",
+                        "readOnly": true
                     },
                     "Research_suggestions": {
-                        "const": "Collect keyword suggestions"
+                        "const": "Collect keyword suggestions",
+                        "readOnly": true
                     },
                     "Research_keywords_se": {
-                        "const": "Research keywords"
+                        "const": "Research keywords",
+                        "readOnly": true
                     },
                     "Research_keywords_traffic": {
-                        "const": "Magnet tool"
+                        "const": "Magnet tool",
+                        "readOnly": true
                     },
                     "To_research": {
-                        "const": "Research"
+                        "const": "Research",
+                        "readOnly": true
                     },
                     "Group_number": {
-                        "const": "Groups"
+                        "const": "Groups",
+                        "readOnly": true
                     },
                     "Keyword_number": {
-                        "const": "Keywords"
+                        "const": "Keywords",
+                        "readOnly": true
                     },
                     "Turn_on": {
-                        "const": "On"
+                        "const": "On",
+                        "readOnly": true
                     },
                     "Turn_off": {
-                        "const": "Off"
+                        "const": "Off",
+                        "readOnly": true
                     },
                     "Enable_all_groups": {
-                        "const": "Turn on all groups"
+                        "const": "Turn on all groups",
+                        "readOnly": true
                     },
                     "Disable_all_groups": {
-                        "const": "Turn off all groups"
+                        "const": "Turn off all groups",
+                        "readOnly": true
                     },
                     "Select_all": {
-                        "const": "Select all"
+                        "const": "Select all",
+                        "readOnly": true
                     },
                     "Select_groups": {
-                        "const": "Select groups"
+                        "const": "Select groups",
+                        "readOnly": true
                     },
                     "Highlight": {
-                        "const": "Select"
+                        "const": "Select",
+                        "readOnly": true
                     },
                     "Trash_bin": {
-                        "const": "Trash bin"
+                        "const": "Trash bin",
+                        "readOnly": true
                     },
                     "Filter": {
-                        "const": "Filter"
+                        "const": "Filter",
+                        "readOnly": true
                     },
                     "Search_keyword": {
-                        "const": "Search keyword"
+                        "const": "Search keyword",
+                        "readOnly": true
                     },
                     "Get_search_volume": {
-                        "const": "Get search volume"
+                        "const": "Get search volume",
+                        "readOnly": true
                     },
                     "Clustering_tool": {
-                        "const": "Keyword clustering"
+                        "const": "Keyword clustering",
+                        "readOnly": true
                     },
                     "SE_location": {
-                        "const": "Search engine / Location"
+                        "const": "Search engine / Location",
+                        "readOnly": true
                     },
                     "Select_location": {
-                        "const": "Select location"
+                        "const": "Select location",
+                        "readOnly": true
                     },
                     "Select_another_location": {
-                        "const": "Select another location"
+                        "const": "Select another location",
+                        "readOnly": true
                     },
                     "Clustering_level": {
-                        "const": "Clustering level"
+                        "const": "Clustering level",
+                        "readOnly": true
                     },
                     "Clustering_level_groups_relation": {
-                        "const": "Higher level clustering produces more groups with fewer keywords in every group."
+                        "const": "Higher level clustering produces more groups with fewer keywords in every group.",
+                        "readOnly": true
                     },
                     "Clustering_changes_order_notice": {
-                        "const": "<b>Important!</b><br>Keyword clustering changes groups and keyword order in your project.<br> After clustering, keyword groups will be automatically disabled."
+                        "const": "<b>Important!</b><br>Keyword clustering changes groups and keyword order in your project.<br> After clustering, keyword groups will be automatically disabled.",
+                        "readOnly": true
                     },
                     "Clustering_rel_notice": {
-                        "const": "Before grouping keywords by page relevance, make sure that you have checked<br> keyword rankings in the applied search engine and location."
+                        "const": "Before grouping keywords by page relevance, make sure that you have checked<br> keyword rankings in the applied search engine and location.",
+                        "readOnly": true
                     },
                     "Cluster": {
-                        "const": "Clustering"
+                        "const": "Clustering",
+                        "readOnly": true
                     },
                     "Cluster_TOP10": {
-                        "const": "Keyword clustering by TOP10"
+                        "const": "Keyword clustering by TOP10",
+                        "readOnly": true
                     },
                     "Cluster_relevant_url": {
-                        "const": "Grouping by page relevance"
+                        "const": "Grouping by page relevance",
+                        "readOnly": true
                     },
                     "Cluster_target_url": {
-                        "const": "Grouping by target URLs"
+                        "const": "Grouping by target URLs",
+                        "readOnly": true
                     },
                     "Before_grouping_setup_target_urls": {
-                        "const": "Before grouping, make sure that target URLs are assigned"
+                        "const": "Before grouping, make sure that target URLs are assigned",
+                        "readOnly": true
                     },
                     "Change_clustering_level": {
-                        "const": "Change clustering level"
+                        "const": "Change clustering level",
+                        "readOnly": true
                     },
                     "Bounce_rate": {
-                        "const": "Bounce"
+                        "const": "Bounce",
+                        "readOnly": true
                     },
                     "Pages_view": {
-                        "const": "Pages"
+                        "const": "Pages",
+                        "readOnly": true
                     },
                     "Time": {
-                        "const": "Time"
+                        "const": "Time",
+                        "readOnly": true
                     },
                     "Del_group": {
-                        "const": "Delete group"
+                        "const": "Delete group",
+                        "readOnly": true
                     },
                     "Sort_keywords": {
-                        "const": "Sort keywords"
+                        "const": "Sort keywords",
+                        "readOnly": true
                     },
                     "Filter_phrases": {
-                        "const": "Filter keywords"
+                        "const": "Filter keywords",
+                        "readOnly": true
                     },
                     "On_Off_group": {
-                        "const": "Enable / Disable a group"
+                        "const": "Enable / Disable a group",
+                        "readOnly": true
                     },
                     "Move_to_new_group": {
-                        "const": "Move to a new group"
+                        "const": "Move to a new group",
+                        "readOnly": true
                     },
                     "Delete_group_warning": {
-                        "const": "<b>Important!</b><br>If you delete a group, all keywords in the group will be deleted immediately."
+                        "const": "<b>Important!</b><br>If you delete a group, all keywords in the group will be deleted immediately.",
+                        "readOnly": true
                     },
                     "Each_keyword_on_new_line": {
-                        "const": "Keywords (each keyword on a new line)"
+                        "const": "Keywords (each keyword on a new line)",
+                        "readOnly": true
                     },
                     "Source": {
-                        "const": "Source"
+                        "const": "Source",
+                        "readOnly": true
                     },
                     "Phrases_on_new_line": {
-                        "const": "Phrases (each one on a new line)"
+                        "const": "Phrases (each one on a new line)",
+                        "readOnly": true
                     },
                     "Import_to_group": {
-                        "const": "Import into group"
+                        "const": "Import into group",
+                        "readOnly": true
                     },
                     "Skip_duplicates": {
-                        "const": "Skip duplicates"
+                        "const": "Skip duplicates",
+                        "readOnly": true
                     },
                     "Move_duplicates": {
-                        "const": "Move duplicates"
+                        "const": "Move duplicates",
+                        "readOnly": true
                     },
                     "Move_duplicates_another_group": {
-                        "const": "Move duplicates to another group"
+                        "const": "Move duplicates to another group",
+                        "readOnly": true
                     },
                     "Move_duplicates_another_group_name": {
-                        "const": "Where move duplicates?"
+                        "const": "Where move duplicates?",
+                        "readOnly": true
                     },
                     "Match_type": {
-                        "const": "Match type"
+                        "const": "Match type",
+                        "readOnly": true
                     },
                     "Match_type_broad": {
-                        "const": "Volume"
+                        "const": "Volume",
+                        "readOnly": true
                     },
                     "Match_type_phrase": {
-                        "const": "Volume"
+                        "const": "Volume",
+                        "readOnly": true
                     },
                     "Match_type_exact": {
-                        "const": "Volume"
+                        "const": "Volume",
+                        "readOnly": true
                     },
                     "Match_type_strict": {
-                        "const": "Strict"
+                        "const": "Strict",
+                        "readOnly": true
                     },
                     "By_location": {
-                        "const": "For locations"
+                        "const": "For locations",
+                        "readOnly": true
                     },
                     "Skip_tracked_searches": {
-                        "const": "Skip collected search volume data"
+                        "const": "Skip collected search volume data",
+                        "readOnly": true
                     },
                     "Check_active_groups_only": {
-                        "const": "Check active groups only"
+                        "const": "Check active groups only",
+                        "readOnly": true
                     },
                     "By_total_searches": {
-                        "const": "By search volume"
+                        "const": "By search volume",
+                        "readOnly": true
                     },
                     "By_rank": {
-                        "const": "By keyword rank (applied SE and Location)"
+                        "const": "By keyword rank (applied SE and Location)",
+                        "readOnly": true
                     },
                     "Sort_groups_by_searches": {
-                        "const": "Sort groups by total search volume"
+                        "const": "Sort groups by total search volume",
+                        "readOnly": true
                     },
                     "Sort_keywords_by_searches": {
-                        "const": "Sort keywords in groups by search volume"
+                        "const": "Sort keywords in groups by search volume",
+                        "readOnly": true
                     },
                     "Sort_groups_alphabetically": {
-                        "const": "Sort groups alphabetically"
+                        "const": "Sort groups alphabetically",
+                        "readOnly": true
                     },
                     "Sort_groups_by_date": {
-                        "const": "Sort groups by creation date"
+                        "const": "Sort groups by creation date",
+                        "readOnly": true
                     },
                     "Delete_empty_groups": {
-                        "const": "Delete empty groups"
+                        "const": "Delete empty groups",
+                        "readOnly": true
                     },
                     "Delete_inactive_groups": {
-                        "const": "Delete inactive groups"
+                        "const": "Delete inactive groups",
+                        "readOnly": true
                     },
                     "Delete_groups_keywords": {
-                        "const": "Wipe all groups and keywords"
+                        "const": "Wipe all groups and keywords",
+                        "readOnly": true
                     },
                     "Set_color_tag": {
-                        "const": "Add color tag"
+                        "const": "Add color tag",
+                        "readOnly": true
                     },
                     "Group_name": {
-                        "const": "Group name"
+                        "const": "Group name",
+                        "readOnly": true
                     },
                     "move_to": {
-                        "const": "Move to the group"
+                        "const": "Move to the group",
+                        "readOnly": true
                     },
                     "Filter_applied_to_selected_se_notice_1": {
-                        "const": "Filter will be applied to the selected search engine and location. Before applying the filter, check search volume."
+                        "const": "Filter will be applied to the selected search engine and location. Before applying the filter, check search volume.",
+                        "readOnly": true
                     },
                     "Ranks_tracked_date": {
-                        "const": "Rankings checked"
+                        "const": "Rankings checked",
+                        "readOnly": true
                     },
                     "Ranks_missing_in_serp": {
-                        "const": "Keyword not found in search results"
+                        "const": "Keyword not found in search results",
+                        "readOnly": true
                     },
                     "Filter_applied_to_selected_se_notice_2": {
-                        "const": "Filter will be applied to the selected search engine and location. Before applying the filter, check keyword rankings."
+                        "const": "Filter will be applied to the selected search engine and location. Before applying the filter, check keyword rankings.",
+                        "readOnly": true
                     },
                     "Groups_will_sort_alpahbetically": {
-                        "const": "Groups will be sorted alphabetically"
+                        "const": "Groups will be sorted alphabetically",
+                        "readOnly": true
                     },
                     "Groups_will_sort_by_date": {
-                        "const": "Groups will be sorted by creation date"
+                        "const": "Groups will be sorted by creation date",
+                        "readOnly": true
                     },
                     "Groups_without_keywords_will_delete": {
-                        "const": "All empty groups will be wiped!"
+                        "const": "All empty groups will be wiped!",
+                        "readOnly": true
                     },
                     "Groups_keywords_will_delete": {
-                        "const": "All groups and keywords will be wiped immediately. You can't undo this action."
+                        "const": "All groups and keywords will be wiped immediately. You can't undo this action.",
+                        "readOnly": true
                     },
                     "Inactive_groups_will_be_deleted": {
-                        "const": "All inactive groups will be wiped!"
+                        "const": "All inactive groups will be wiped!",
+                        "readOnly": true
                     },
                     "Filters_bulk_actions": {
-                        "const": "Filters / Bulk operations"
+                        "const": "Filters / Bulk operations",
+                        "readOnly": true
                     },
                     "Copy_group": {
-                        "const": "Export group"
+                        "const": "Export group",
+                        "readOnly": true
                     },
                     "to_project": {
-                        "const": "to the project"
+                        "const": "to the project",
+                        "readOnly": true
                     },
                     "Your_account": {
-                        "const": "You"
+                        "const": "You",
+                        "readOnly": true
                     },
                     "project_owner": {
-                        "const": "Project owner"
+                        "const": "Project owner",
+                        "readOnly": true
                     },
                     "will_be_charged": {
-                        "const": "will be charged"
+                        "const": "will be charged",
+                        "readOnly": true
                     },
                     "from_charged": {
-                        "const": ""
+                        "const": "",
+                        "readOnly": true
                     },
                     "Suggestions_depth": {
-                        "const": "Nesting level"
+                        "const": "Nesting level",
+                        "readOnly": true
                     },
                     "Move_gathered_single_group": {
-                        "const": "Band up all collected keywords within a single group"
+                        "const": "Band up all collected keywords within a single group",
+                        "readOnly": true
                     },
                     "Search_uri": {
-                        "const": "Search a URI"
+                        "const": "Search a URI",
+                        "readOnly": true
                     },
                     "Add_to_group": {
-                        "const": "Add to group"
+                        "const": "Add to group",
+                        "readOnly": true
                     },
                     "Integrate_to_use_the_tool_1": {
-                        "const": "To use the tool"
+                        "const": "To use the tool",
+                        "readOnly": true
                     },
                     "Integrate_to_use_the_tool_2": {
-                        "const": "integrate"
+                        "const": "integrate",
+                        "readOnly": true
                     },
                     "Integrate_to_use_the_tool_3": {
-                        "const": "your account with Google Analytics, Google Search Console or Yandex Metrica"
+                        "const": "your account with Google Analytics, Google Search Console or Yandex Metrica",
+                        "readOnly": true
                     },
                     "Methods_of_research": {
-                        "const": "Methods"
+                        "const": "Methods",
+                        "readOnly": true
                     },
                     "Popular": {
-                        "const": "Popular"
+                        "const": "Popular",
+                        "readOnly": true
                     },
                     "Other": {
-                        "const": "Other"
+                        "const": "Other",
+                        "readOnly": true
                     },
                     "Clustering_in_process": {
-                        "const": "Clustering"
+                        "const": "Clustering",
+                        "readOnly": true
                     },
                     "Clustering_type": {
-                        "const": "Clustering type"
+                        "const": "Clustering type",
+                        "readOnly": true
                     },
                     "Name_az": {
-                        "const": "Name A-Z"
+                        "const": "Name A-Z",
+                        "readOnly": true
                     },
                     "Name_za": {
-                        "const": "Name Z-A"
+                        "const": "Name Z-A",
+                        "readOnly": true
                     },
                     "Apply_to_selected": {
-                        "const": "Apply to selected keywords"
+                        "const": "Apply to selected keywords",
+                        "readOnly": true
                     },
                     "items_number": {
-                        "const": "keyword(s)"
+                        "const": "keyword(s)",
+                        "readOnly": true
                     },
                     "Assign_target": {
-                        "const": "Assign target URL"
+                        "const": "Assign target URL",
+                        "readOnly": true
                     },
                     "Landing_enter_URL": {
-                        "const": "Enter URL"
+                        "const": "Enter URL",
+                        "readOnly": true
                     },
                     "Reset": {
-                        "const": "Cancel"
+                        "const": "Cancel",
+                        "readOnly": true
                     },
                     "Without_region": {
-                        "const": "Global"
+                        "const": "Global",
+                        "readOnly": true
                     },
                     "Total_exact_ams": {
-                        "const": "Total search volume of a keyword group"
+                        "const": "Total search volume of a keyword group",
+                        "readOnly": true
                     },
                     "Total_exact_ams_of_project": {
-                        "const": "Total search volume of keywords in project"
+                        "const": "Total search volume of keywords in project",
+                        "readOnly": true
                     },
                     "Find_replace": {
-                        "const": "Find and replace"
+                        "const": "Find and replace",
+                        "readOnly": true
                     },
                     "Find_replace_target_links": {
-                        "const": "Find and replace target URLs"
+                        "const": "Find and replace target URLs",
+                        "readOnly": true
                     },
                     "Move_by_substrings": {
-                        "const": "Move keywords by substring"
+                        "const": "Move keywords by substring",
+                        "readOnly": true
                     },
                     "Move_by_substrings_whole_words": {
-                        "const": "Whole words"
+                        "const": "Whole words",
+                        "readOnly": true
                     },
                     "Move_by_substrings_info": {
-                        "const": "All keywords in which at least one of the specified substrings is found will be moved to the specified group. Example: When specifying the \"a\" substring, all keywords with the letter \"a\" will be moved."
+                        "const": "All keywords in which at least one of the specified substrings is found will be moved to the specified group. Example: When specifying the \"a\" substring, all keywords with the letter \"a\" will be moved.",
+                        "readOnly": true
                     },
                     "Filter_short": {
-                        "const": "F"
+                        "const": "F",
+                        "readOnly": true
                     },
                     "Tag": {
-                        "const": "Tag"
+                        "const": "Tag",
+                        "readOnly": true
                     },
                     "Change": {
-                        "const": "Change"
+                        "const": "Change",
+                        "readOnly": true
                     },
                     "Find": {
-                        "const": "Find"
+                        "const": "Find",
+                        "readOnly": true
                     },
                     "Replace": {
-                        "const": " Replace with"
+                        "const": " Replace with",
+                        "readOnly": true
                     },
                     "Add_keyword_to_replace": {
-                        "const": "Add words or phrases to replace"
+                        "const": "Add words or phrases to replace",
+                        "readOnly": true
                     },
                     "Keyword_will_be_replaced": {
-                        "const": "These words or phrases will be automatically replaced."
+                        "const": "These words or phrases will be automatically replaced.",
+                        "readOnly": true
                     },
                     "Tetris_points": {
-                        "const": "Points"
+                        "const": "Points",
+                        "readOnly": true
                     },
                     "Tetris_best_score": {
-                        "const": "Best score"
+                        "const": "Best score",
+                        "readOnly": true
                     },
                     "Tetris_game_over": {
-                        "const": "Game over"
+                        "const": "Game over",
+                        "readOnly": true
                     },
                     "Tetris_play_again": {
-                        "const": "Play again"
+                        "const": "Play again",
+                        "readOnly": true
                     },
                     "Hints_data_sources": {
-                        "const": "Sources"
+                        "const": "Sources",
+                        "readOnly": true
                     },
                     "CONTROLLER_Phrases_added": {
-                        "const": "You have successfully added keywords"
+                        "const": "You have successfully added keywords",
+                        "readOnly": true
                     },
                     "CONTROLLER_phrases_missed": {
-                        "const": "skipped duplicate keywords"
+                        "const": "skipped duplicate keywords",
+                        "readOnly": true
                     },
                     "CONTROLLER_phrases_moved": {
-                        "const": "moved (changed) keywords"
+                        "const": "moved (changed) keywords",
+                        "readOnly": true
                     },
                     "CONTROLLER_Semantic_kernel": {
-                        "const": "Keywords"
+                        "const": "Keywords",
+                        "readOnly": true
                     },
                     "Folder_max_depth": {
-                        "const": "Nested folder limit"
+                        "const": "Nested folder limit",
+                        "readOnly": true
                     },
                     "Choose_searcher": {
-                        "const": "Select search engine"
+                        "const": "Select search engine",
+                        "readOnly": true
                     },
                     "Choose_region": {
-                        "const": "Select location"
+                        "const": "Select location",
+                        "readOnly": true
                     },
                     "Choose_regions": {
-                        "const": "Select locations"
+                        "const": "Select locations",
+                        "readOnly": true
                     },
                     "Choose_searcher_and_region": {
-                        "const": "Select search engine and location"
+                        "const": "Select search engine and location",
+                        "readOnly": true
                     },
                     "Choose_competitor": {
-                        "const": "Select competitor"
+                        "const": "Select competitor",
+                        "readOnly": true
                     },
                     "Choose_group": {
-                        "const": "Choose group"
+                        "const": "Choose group",
+                        "readOnly": true
                     },
                     "Main_project": {
-                        "const": "My project"
+                        "const": "My project",
+                        "readOnly": true
                     },
                     "Without_relevant_url": {
-                        "const": "No ranked URL"
+                        "const": "No ranked URL",
+                        "readOnly": true
                     },
                     "Not_checked": {
-                        "const": "Not tracked"
+                        "const": "Not tracked",
+                        "readOnly": true
                     },
                     "Set_phrases_minus": {
-                        "const": "Exclude all phrases with negative keywords (Google and Yandex)"
+                        "const": "Exclude all phrases with negative keywords (Google and Yandex)",
+                        "readOnly": true
                     },
                     "Negative_words": {
-                        "const": "Negative keywords"
+                        "const": "Negative keywords",
+                        "readOnly": true
                     },
                     "Check_old_searches": {
-                        "const": "Update expired search volume"
+                        "const": "Update expired search volume",
+                        "readOnly": true
                     },
                     "Group_id": {
-                        "const": "Group id"
+                        "const": "Group id",
+                        "readOnly": true
                     },
                     "Project_id": {
-                        "const": "Project id"
+                        "const": "Project id",
+                        "readOnly": true
                     },
                     "Keyword_id": {
-                        "const": "Keyword id"
+                        "const": "Keyword id",
+                        "readOnly": true
                     },
                     "Keyword_folder_id": {
-                        "const": "Keyword folder id"
+                        "const": "Keyword folder id",
+                        "readOnly": true
                     },
                     "Folder_path": {
-                        "const": "Folder"
+                        "const": "Folder",
+                        "readOnly": true
                     },
                     "Keyword_rank": {
-                        "const": "Keyword rank"
+                        "const": "Keyword rank",
+                        "readOnly": true
                     },
                     "Keyword_count": {
-                        "const": "Keyword count"
+                        "const": "Keyword count",
+                        "readOnly": true
                     },
                     "Sorting_order": {
-                        "const": "Sorting order"
+                        "const": "Sorting order",
+                        "readOnly": true
                     },
                     "Keyword_clustering_completed": {
-                        "const": "Keyword clustering completed"
+                        "const": "Keyword clustering completed",
+                        "readOnly": true
                     },
                     "Send_to_email": {
-                        "const": "Send to Email"
+                        "const": "Send to Email",
+                        "readOnly": true
                     },
                     "Data_will_be_pulled_for": {
-                        "const": "Collect data for"
+                        "const": "Collect data for",
+                        "readOnly": true
                     },
                     "total_count": {
-                        "const": "; total count"
+                        "const": "; total count",
+                        "readOnly": true
                     },
                     "Enter_keywords": {
-                        "const": "Enter keywords"
+                        "const": "Enter keywords",
+                        "readOnly": true
                     },
                     "Upload_from_file": {
-                        "const": "Upload from file"
+                        "const": "Upload from file",
+                        "readOnly": true
                     },
                     "Selected": {
-                        "const": "Selected"
+                        "const": "Selected",
+                        "readOnly": true
                     },
                     "Keyword_export": {
-                        "const": "Keyword export"
+                        "const": "Keyword export",
+                        "readOnly": true
                     },
                     "Group_export": {
-                        "const": "Group export"
+                        "const": "Group export",
+                        "readOnly": true
                     },
                     "Copy_to_clipboard": {
-                        "const": "Copy to clipboard"
+                        "const": "Copy to clipboard",
+                        "readOnly": true
                     },
                     "Copy_to_clipboard_up_to": {
-                        "const": "Copy to clipboard (up to %max% keywords)"
+                        "const": "Copy to clipboard (up to %max% keywords)",
+                        "readOnly": true
                     },
                     "To_copy_and_move": {
-                        "const": "Copy and transfer"
+                        "const": "Copy and transfer",
+                        "readOnly": true
                     },
                     "To_delete_keywords_warning": {
-                        "const": "<b>Important!</b><br>Are you sure you want to delete selected keywords?"
+                        "const": "<b>Important!</b><br>Are you sure you want to delete selected keywords?",
+                        "readOnly": true
                     },
                     "To_delete_folder_warning": {
-                        "const": "<b>Important!</b><br><br>If you delete a folder, its contents (subfolders, groups, keywords) will be deleted immediately"
+                        "const": "<b>Important!</b><br><br>If you delete a folder, its contents (subfolders, groups, keywords) will be deleted immediately",
+                        "readOnly": true
                     },
                     "Restore_selected_keywords": {
-                        "const": "Restore selected keywords"
+                        "const": "Restore selected keywords",
+                        "readOnly": true
                     },
                     "Restore_selected_folders": {
-                        "const": "Restore selected folders"
+                        "const": "Restore selected folders",
+                        "readOnly": true
                     },
                     "Restore_selected_groups_restores_contents": {
-                        "const": "If you restore the group, all folders and keywords in the group will be restored immediately"
+                        "const": "If you restore the group, all folders and keywords in the group will be restored immediately",
+                        "readOnly": true
                     },
                     "Restore": {
-                        "const": "Restore"
+                        "const": "Restore",
+                        "readOnly": true
                     },
                     "or_drag_here": {
-                        "const": "or drag and drop here"
+                        "const": "or drag and drop here",
+                        "readOnly": true
                     },
                     "txt_csv_max_size": {
-                        "const": "(txt or csv - max 10 Mb)"
+                        "const": "(txt or csv - max 10 Mb)",
+                        "readOnly": true
                     },
                     "Drop_file": {
-                        "const": "Drop file"
+                        "const": "Drop file",
+                        "readOnly": true
                     },
                     "File_uploaded": {
-                        "const": "File uploaded"
+                        "const": "File uploaded",
+                        "readOnly": true
                     },
                     "Disable_floating_bar": {
-                        "const": "Disable floating bar"
+                        "const": "Disable floating bar",
+                        "readOnly": true
                     },
                     "Temporary_bin": {
-                        "const": "Temporary bin"
+                        "const": "Temporary bin",
+                        "readOnly": true
                     },
                     "Set_target_equals_relevant": {
-                        "const": "Assign Target = Ranked URL from the last check"
+                        "const": "Assign Target = Ranked URL from the last check",
+                        "readOnly": true
                     },
                     "Import_target_links": {
-                        "const": "Import target links"
+                        "const": "Import target links",
+                        "readOnly": true
                     },
                     "Total_selected": {
-                        "const": "Total selected keywords"
+                        "const": "Total selected keywords",
+                        "readOnly": true
                     },
                     "Keyword_length": {
-                        "const": "Keyword length"
+                        "const": "Keyword length",
+                        "readOnly": true
                     },
                     "XSLX_tabs": {
-                        "const": "XLSX (Tabs)"
+                        "const": "XLSX (Tabs)",
+                        "readOnly": true
                     },
                     "Prepare": {
-                        "const": "Prepare"
+                        "const": "Prepare",
+                        "readOnly": true
                     },
                     "Enter_name_of_new_group": {
-                        "const": "Enter a name of a new group"
+                        "const": "Enter a name of a new group",
+                        "readOnly": true
                     },
                     "Manage_columns": {
-                        "const": "Manage columns"
+                        "const": "Manage columns",
+                        "readOnly": true
                     },
                     "Max_period_one_year": {
-                        "const": "Max period - 1 year"
+                        "const": "Max period - 1 year",
+                        "readOnly": true
                     },
                     "Target_equals_relevant_lastcheck_in_location": {
-                        "const": "Target = Ranked URL from the last check in the location"
+                        "const": "Target = Ranked URL from the last check in the location",
+                        "readOnly": true
                     },
                     "Do_not_overwrite_assigned_target_links": {
-                        "const": "Do not overwrite assigned target links"
+                        "const": "Do not overwrite assigned target links",
+                        "readOnly": true
                     },
                     "Sy_wordstat_max_pages": {
-                        "const": "Количество страниц (макс.)"
+                        "const": "Количество страниц (макс.)",
+                        "readOnly": true
                     },
                     "Research_status": {
-                        "const": "Keyword research status"
+                        "const": "Keyword research status",
+                        "readOnly": true
                     },
                     "Activity_status": {
-                        "const": "Group activity status"
+                        "const": "Group activity status",
+                        "readOnly": true
                     },
                     "No_target_URL": {
-                        "const": "No Target URL"
+                        "const": "No Target URL",
+                        "readOnly": true
                     },
                     "Move_keywords_to_another_project": {
-                        "const": "Move to another project"
+                        "const": "Move to another project",
+                        "readOnly": true
                     },
                     "Move_group_and_delete_from_orginal_project": {
-                        "const": "Transfer (delete from the orginal project)"
+                        "const": "Transfer (delete from the orginal project)",
+                        "readOnly": true
                     },
                     "Keywords_to_transfer_and_delete_from_project": {
-                        "const": "To transfer and delete from the original project"
+                        "const": "To transfer and delete from the original project",
+                        "readOnly": true
                     },
                     "Remove_pluses_fullstops_commas_apostrophes_quotes": {
-                        "const": "Remove plus symbols, full stops, commas, apostrophes, quotes"
+                        "const": "Remove plus symbols, full stops, commas, apostrophes, quotes",
+                        "readOnly": true
                     },
                     "HintVolumeNoCollected": {
-                        "const": "Volume isn't collected. Follow <a href=\"/ru/support/keywords/volume/\" target=\"_blank\">this manual</a> to collect volume.<br><br>\nFor some keywords search volume is displayed because we store volume in a common database without linking it to a particular user: if other users checked it, it would be automatically pulled from the database. But note that such volume could be outdated."
+                        "const": "Volume isn't collected. Follow <a href=\"/ru/support/keywords/volume/\" target=\"_blank\">this manual</a> to collect volume.<br><br>\nFor some keywords search volume is displayed because we store volume in a common database without linking it to a particular user: if other users checked it, it would be automatically pulled from the database. But note that such volume could be outdated.",
+                        "readOnly": true
                     }
                 },
                 "required": [

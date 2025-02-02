@@ -11,28 +11,36 @@
                 "type": "object",
                 "properties": {
                     "Check_positions": {
-                        "const": "Check Rankings"
+                        "const": "Check Rankings",
+                        "readOnly": true
                     },
                     "Check_audit": {
-                        "const": "Run Audit"
+                        "const": "Run Audit",
+                        "readOnly": true
                     },
                     "Check_watcher": {
-                        "const": "Track changes"
+                        "const": "Track changes",
+                        "readOnly": true
                     },
                     "Check_indexing": {
-                        "const": "Check indexing"
+                        "const": "Check indexing",
+                        "readOnly": true
                     },
                     "Check_sitemap": {
-                        "const": "Generate sitemap"
+                        "const": "Generate sitemap",
+                        "readOnly": true
                     },
                     "Last_check": {
-                        "const": "Last check"
+                        "const": "Last check",
+                        "readOnly": true
                     },
                     "In_queue": {
-                        "const": "In queue"
+                        "const": "In queue",
+                        "readOnly": true
                     },
                     "In_work": {
-                        "const": "In progress"
+                        "const": "In progress",
+                        "readOnly": true
                     }
                 },
                 "required": [

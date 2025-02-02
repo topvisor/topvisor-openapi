@@ -11,10 +11,12 @@
                 "type": "object",
                 "properties": {
                     "Warning_message": {
-                        "const": ""
+                        "const": "",
+                        "readOnly": true
                     },
                     "Warning_message_admin": {
-                        "const": ""
+                        "const": "",
+                        "readOnly": true
                     }
                 },
                 "required": [

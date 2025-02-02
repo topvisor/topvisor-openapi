@@ -11,106 +11,140 @@
                 "type": "object",
                 "properties": {
                     "Snippets_in_snapshots": {
-                        "const": "Snippets in snapshots"
+                        "const": "Snippets in snapshots",
+                        "readOnly": true
                     },
                     "No_snapshots_these_dates_note": {
-                        "const": "No Snapshots saved for the applied filters and dates"
+                        "const": "No Snapshots saved for the applied filters and dates",
+                        "readOnly": true
                     },
                     "Snapshots_for_keyword": {
-                        "const": "Snapshots of"
+                        "const": "Snapshots of",
+                        "readOnly": true
                     },
                     "Add_keyword_to_see_snapshot": {
-                        "const": "Add keyword to display search results Snapshot"
+                        "const": "Add keyword to display search results Snapshot",
+                        "readOnly": true
                     },
                     "Add_keyword_to_compare": {
-                        "const": "Add keyword to compare Snapshots"
+                        "const": "Add keyword to compare Snapshots",
+                        "readOnly": true
                     },
                     "not_in_competitor_list": {
-                        "const": "not on the competitor list"
+                        "const": "not on the competitor list",
+                        "readOnly": true
                     },
                     "in_competitor_list": {
-                        "const": "on the competitor list"
+                        "const": "on the competitor list",
+                        "readOnly": true
                     },
                     "To_manage_competitors_move": {
-                        "const": "To manage competitor websites, move to the"
+                        "const": "To manage competitor websites, move to the",
+                        "readOnly": true
                     },
                     "move_to_settings": {
-                        "const": "Rank Tracker page and press a gear icon on the toolbar"
+                        "const": "Rank Tracker page and press a gear icon on the toolbar",
+                        "readOnly": true
                     },
                     "Read_competitor_help_article": {
-                        "const": "For more details read the Help center article <a href=\"/support/dynamics/competitors/\" target=\"_blank\">How to manage competitor websites?</a>"
+                        "const": "For more details read the Help center article <a href=\"/support/dynamics/competitors/\" target=\"_blank\">How to manage competitor websites?</a>",
+                        "readOnly": true
                     },
                     "Competitor_website": {
-                        "const": "Competitor website"
+                        "const": "Competitor website",
+                        "readOnly": true
                     },
                     "Save_snapshot_top_N": {
-                        "const": "Save a snapshot of TOP"
+                        "const": "Save a snapshot of TOP",
+                        "readOnly": true
                     },
                     "Do_not_save": {
-                        "const": "Don't save"
+                        "const": "Don't save",
+                        "readOnly": true
                     },
                     "selected_keywords_only": {
-                        "const": "selected keywords only"
+                        "const": "selected keywords only",
+                        "readOnly": true
                     },
                     "Saved_list": {
-                        "const": "Saved list"
+                        "const": "Saved list",
+                        "readOnly": true
                     },
                     "First_40_keywords": {
-                        "const": "First 40 keywords"
+                        "const": "First 40 keywords",
+                        "readOnly": true
                     },
                     "Save_list": {
-                        "const": "Save list"
+                        "const": "Save list",
+                        "readOnly": true
                     },
                     "Clear_list": {
-                        "const": "Clear list"
+                        "const": "Clear list",
+                        "readOnly": true
                     },
                     "Highlight": {
-                        "const": "Highlight"
+                        "const": "Highlight",
+                        "readOnly": true
                     },
                     "Hide_domains": {
-                        "const": "Gray out selected domains"
+                        "const": "Gray out selected domains",
+                        "readOnly": true
                     },
                     "Hide_domains_comment": {
-                        "const": "Selected domains will be grayed out to make snapshots data reader-friendly and easy to analyze"
+                        "const": "Selected domains will be grayed out to make snapshots data reader-friendly and easy to analyze",
+                        "readOnly": true
                     },
                     "Highlighting_error": {
-                        "const": "Operation failed. Invalid domains: "
+                        "const": "Operation failed. Invalid domains: ",
+                        "readOnly": true
                     },
                     "Competitor_URLs": {
-                        "const": "Competitor URLs"
+                        "const": "Competitor URLs",
+                        "readOnly": true
                     },
                     "Add_to_competitors": {
-                        "const": "Add to competitors"
+                        "const": "Add to competitors",
+                        "readOnly": true
                     },
                     "Remove_from_competitors": {
-                        "const": "Remove from competitors"
+                        "const": "Remove from competitors",
+                        "readOnly": true
                     },
                     "Added_competitors": {
-                        "const": "Added competitors"
+                        "const": "Added competitors",
+                        "readOnly": true
                     },
                     "Compare_all_keywords": {
-                        "const": "Compare all keywords"
+                        "const": "Compare all keywords",
+                        "readOnly": true
                     },
                     "Keyword_dynamics": {
-                        "const": "Keyword dynamics"
+                        "const": "Keyword dynamics",
+                        "readOnly": true
                     },
                     "Select_keyword": {
-                        "const": "Select keyword"
+                        "const": "Select keyword",
+                        "readOnly": true
                     },
                     "Snippets_no_checked": {
-                        "const": "<b>Snippets in Snapshots</b> weren't collected on the selected dates."
+                        "const": "<b>Snippets in Snapshots</b> weren't collected on the selected dates.",
+                        "readOnly": true
                     },
                     "Snippets_no_checking": {
-                        "const": "<b>Snippets in Snapshots</b> aren't being collected. Turn this feature on in the project's settings."
+                        "const": "<b>Snippets in Snapshots</b> aren't being collected. Turn this feature on in the project's settings.",
+                        "readOnly": true
                     },
                     "Snapshots_checks_in_progress_1": {
-                        "const": "You haven't collected snapshots for selected filters"
+                        "const": "You haven't collected snapshots for selected filters",
+                        "readOnly": true
                     },
                     "Snapshots_checks_in_progress_2": {
-                        "const": "Collect snapshots to see SERP TOPs for your keywords and your competitors' keywords.<br>Your keyword rankings will be checked when you collect snippets.<br>📊 <a href=\"/snapshots/\" target=\"_blank\">Why you need to check SERP Top →</a>"
+                        "const": "Collect snapshots to see SERP TOPs for your keywords and your competitors' keywords.<br>Your keyword rankings will be checked when you collect snippets.<br>📊 <a href=\"/snapshots/\" target=\"_blank\">Why you need to check SERP Top →</a>",
+                        "readOnly": true
                     },
                     "Open_keyword_snapshot": {
-                        "const": "Open keyword snapshot"
+                        "const": "Open keyword snapshot",
+                        "readOnly": true
                     }
                 },
                 "required": [

@@ -11,25 +11,32 @@
                 "type": "object",
                 "properties": {
                     "Settings": {
-                        "const": "Tool settings"
+                        "const": "Tool settings",
+                        "readOnly": true
                     },
                     "Popup_go_text_before_select": {
-                        "const": "Sitemap for <a href=\"#\" class=\"domain\" target=\"_blank\"></a> will contain up to:"
+                        "const": "Sitemap for <a href=\"#\" class=\"domain\" target=\"_blank\"></a> will contain up to:",
+                        "readOnly": true
                     },
                     "Popup_go_text_before_price": {
-                        "const": "Project owner will be charged:"
+                        "const": "Project owner will be charged:",
+                        "readOnly": true
                     },
                     "Max_pages": {
-                        "const": "MAX number of pages"
+                        "const": "MAX number of pages",
+                        "readOnly": true
                     },
                     "Info_cost": {
-                        "const": "You will be charged"
+                        "const": "You will be charged",
+                        "readOnly": true
                     },
                     "Hint_not_checks_text": {
-                        "const": "Sitemap hasn't  been generated yet.<br>🗺️ <a href=\"/support/sitemap/\" target=\"_blank\">Why you need to generate sitemap →</a>"
+                        "const": "Sitemap hasn't  been generated yet.<br>🗺️ <a href=\"/support/sitemap/\" target=\"_blank\">Why you need to generate sitemap →</a>",
+                        "readOnly": true
                     },
                     "Hint_not_checks_btn": {
-                        "const": "Generate sitemap"
+                        "const": "Generate sitemap",
+                        "readOnly": true
                     }
                 },
                 "required": [

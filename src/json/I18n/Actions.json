@@ -11,37 +11,48 @@
                 "type": "object",
                 "properties": {
                     "Link_not_available": {
-                        "const": "This link is no longer active"
+                        "const": "This link is no longer active",
+                        "readOnly": true
                     },
                     "User_blocked": {
-                        "const": "Your user is blocked"
+                        "const": "Your user is blocked",
+                        "readOnly": true
                     },
                     "Report_subscribe_canceled": {
-                        "const": "You successfully unsubscribed from project reports"
+                        "const": "You successfully unsubscribed from project reports",
+                        "readOnly": true
                     },
                     "Report_subscribe_canceled1": {
-                        "const": "Subscription to"
+                        "const": "Subscription to",
+                        "readOnly": true
                     },
                     "Report_subscribe_canceled2": {
-                        "const": "is cancelled successfully"
+                        "const": "is cancelled successfully",
+                        "readOnly": true
                     },
                     "Informer_unsubscribe_news": {
-                        "const": "unsubscribe from news"
+                        "const": "unsubscribe from news",
+                        "readOnly": true
                     },
                     "Informer_subscribe_balance": {
-                        "const": "unsubscribe from low balance alerts"
+                        "const": "unsubscribe from low balance alerts",
+                        "readOnly": true
                     },
                     "Informer_unsubscribe_tickets": {
-                        "const": "unsubscribe from new ticket replies"
+                        "const": "unsubscribe from new ticket replies",
+                        "readOnly": true
                     },
                     "Informer_unsubscribe_update": {
-                        "const": "unsubscribe from Yandex updates"
+                        "const": "unsubscribe from Yandex updates",
+                        "readOnly": true
                     },
                     "Informer_unsubscribe_comments": {
-                        "const": "unsubscribe from new comments"
+                        "const": "unsubscribe from new comments",
+                        "readOnly": true
                     },
                     "Informer_unsubscribe_api": {
-                        "const": "unsubscribe from API updates"
+                        "const": "unsubscribe from API updates",
+                        "readOnly": true
                     }
                 },
                 "required": [

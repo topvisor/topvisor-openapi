@@ -9,13 +9,13 @@ export interface components {
     schemas: {
         "I18n.Audit.Scan": {
             /** @constant */
-            Settings: "Audit settings";
+            readonly Settings: "Audit settings";
             /** @constant */
-            Please_add_urls: "Please, add urls for checking";
+            readonly Please_add_urls: "Please, add urls for checking";
             /** @constant */
-            bar: "bar";
+            readonly bar: "bar";
             /** @constant */
-            menu: {
+            readonly menu: {
                 log: "Scan Log";
                 summary: "Summary";
                 pages: "Pages";
@@ -36,7 +36,7 @@ export interface components {
                 "css/css": "CSS";
             };
             /** @constant */
-            checkInfo: {
+            readonly checkInfo: {
                 checking: "Checking...";
                 time_start: "Started time";
                 time_finish: "Finished time";
@@ -47,7 +47,7 @@ export interface components {
                 robot_step_next: "Next step";
             };
             /** @constant */
-            checkInfoHints: {
+            readonly checkInfoHints: {
                 time_start: "";
                 time_finish: "";
                 "DURATION()": "";
@@ -56,7 +56,7 @@ export interface components {
                 step_next: "";
             };
             /** @constant */
-            checkSteps: {
+            readonly checkSteps: {
                 genTasks: "Gen Tasks";
                 auditSitemap: "Sitemap";
                 auditPages: "Check pages";
@@ -69,7 +69,7 @@ export interface components {
                 closeTask: "Finishing";
             };
             /** @constant */
-            summaryCharts: {
+            readonly summaryCharts: {
                 count_pages: "Number of pages";
                 count_problems: "Number of problems";
                 count_3xx: "3XX";
@@ -77,123 +77,123 @@ export interface components {
                 count_5xx: "5XX";
             };
             /** @constant */
-            Already_started: "Audit already started";
+            readonly Already_started: "Audit already started";
             /** @constant */
-            FilterTime2: "Filter, until the time:";
+            readonly FilterTime2: "Filter, until the time:";
             /** @constant */
-            HTTPCodeHundred0: "No response";
+            readonly HTTPCodeHundred0: "No response";
             /** @constant */
-            FieldContent: "Text (content)";
+            readonly FieldContent: "Text (content)";
             /** @constant */
-            FieldTitle: "Text (title)";
+            readonly FieldTitle: "Text (title)";
             /** @constant */
-            FieldBroken: "«Broken»";
+            readonly FieldBroken: "«Broken»";
             /** @constant */
-            FieldCount: "Pages";
+            readonly FieldCount: "Pages";
             /** @constant */
-            FieldHTTPCodes: "Status";
+            readonly FieldHTTPCodes: "Status";
             /** @constant */
-            FieldTitleDbl: "Duplicates\nTitle";
+            readonly FieldTitleDbl: "Duplicates\nTitle";
             /** @constant */
-            FieldDescriptionDbl: "Duplicates\nDescription";
+            readonly FieldDescriptionDbl: "Duplicates\nDescription";
             /** @constant */
-            FieldBacklinksInnerCount: "Back Links\ninner";
+            readonly FieldBacklinksInnerCount: "Back Links\ninner";
             /** @constant */
-            FieldTextLength: "Text length";
+            readonly FieldTextLength: "Text length";
             /** @constant */
-            FieldCompression: "Compress";
+            readonly FieldCompression: "Compress";
             /** @constant */
-            FieldCacheType: "Cache type";
+            readonly FieldCacheType: "Cache type";
             /** @constant */
-            FieldCacheTime: "Cache time";
+            readonly FieldCacheTime: "Cache time";
             /** @constant */
-            FieldCacheValidator: "Cache validator";
+            readonly FieldCacheValidator: "Cache validator";
             /** @constant */
-            FieldRobotsTXTBlocked: "Disallow\nrobots.txt";
+            readonly FieldRobotsTXTBlocked: "Disallow\nrobots.txt";
             /** @constant */
-            FieldCheckRobotsTXTAllowed: "Allow\nrobots.txt";
+            readonly FieldCheckRobotsTXTAllowed: "Allow\nrobots.txt";
             /** @constant */
-            FieldSitemapXMLMention: "Exists\nsitemap.xml";
+            readonly FieldSitemapXMLMention: "Exists\nsitemap.xml";
             /** @constant */
-            FieldLinksCount: "Links";
+            readonly FieldLinksCount: "Links";
             /** @constant */
-            FieldTLSVersion: "TLS version";
+            readonly FieldTLSVersion: "TLS version";
             /** @constant */
-            FieldCacheable: "Cacheable";
+            readonly FieldCacheable: "Cacheable";
             /** @constant */
-            FieldAlt: "Alt";
+            readonly FieldAlt: "Alt";
             /** @constant */
-            FieldSize: "Size";
+            readonly FieldSize: "Size";
             /** @constant */
-            FieldExtension: "Extension";
+            readonly FieldExtension: "Extension";
             /** @constant */
-            FieldContentType: "Content-Type";
+            readonly FieldContentType: "Content-Type";
             /** @constant */
-            FieldModernFormat: "Modern Format";
+            readonly FieldModernFormat: "Modern Format";
             /** @constant */
-            FieldMinified: "Minified";
+            readonly FieldMinified: "Minified";
             /** @constant */
-            FieldRenderBlocking: "Render blocking";
+            readonly FieldRenderBlocking: "Render blocking";
             /** @constant */
-            FieldType: "Type";
+            readonly FieldType: "Type";
             /** @constant */
-            FieldLoadingTime: "Loading time";
+            readonly FieldLoadingTime: "Loading time";
             /** @constant */
-            FilterSignalNone: "All checks";
+            readonly FilterSignalNone: "All checks";
             /** @constant */
-            FilterSignalWarnings: "With warnings";
+            readonly FilterSignalWarnings: "With warnings";
             /** @constant */
-            FilterSignalErrors: "With erors";
+            readonly FilterSignalErrors: "With erors";
             /** @constant */
-            FilterSignalSignals: "All problems";
+            readonly FilterSignalSignals: "All problems";
             /** @constant */
-            DialogPagesWithTitleDbl: "Pages with duplicates Title";
+            readonly DialogPagesWithTitleDbl: "Pages with duplicates Title";
             /** @constant */
-            DialogPagesWithDescriptionDbl: "Pages with duplicates Desccription";
+            readonly DialogPagesWithDescriptionDbl: "Pages with duplicates Desccription";
             /** @constant */
-            DialogPagesWithLink: "Pages with link";
+            readonly DialogPagesWithLink: "Pages with link";
             /** @constant */
-            DialogPagesWithImage: "Pages with image";
+            readonly DialogPagesWithImage: "Pages with image";
             /** @constant */
-            DialogPagesWithJS: "Pages with JavaScript";
+            readonly DialogPagesWithJS: "Pages with JavaScript";
             /** @constant */
-            DialogPagesWithCSS: "Pages with CSS";
+            readonly DialogPagesWithCSS: "Pages with CSS";
             /** @constant */
-            DialogSummaryPage: "Summary Page";
+            readonly DialogSummaryPage: "Summary Page";
             /** @constant */
-            DialogResources_links: "Links on page";
+            readonly DialogResources_links: "Links on page";
             /** @constant */
-            DialogResources_images: "Images on page";
+            readonly DialogResources_images: "Images on page";
             /** @constant */
-            DialogResources_css: "CSS on page";
+            readonly DialogResources_css: "CSS on page";
             /** @constant */
-            DialogResources_js: "JS on page";
+            readonly DialogResources_js: "JS on page";
             /** @constant */
-            Category: "Category";
+            readonly Category: "Category";
             /** @constant */
-            WhatIsIt: "What is it?";
+            readonly WhatIsIt: "What is it?";
             /** @constant */
-            HowToResolveIt: "How to resolve it?";
+            readonly HowToResolveIt: "How to resolve it?";
             /** @constant */
-            Warnings: "Warnings";
+            readonly Warnings: "Warnings";
             /** @constant */
-            Errors: "Errors";
+            readonly Errors: "Errors";
             /** @constant */
-            Problems: "All problems";
+            readonly Problems: "All problems";
             /** @constant */
-            Hint_not_urls_text: "Add URLs manually or enable website crawling to perform Website Audit.<br>🤖 <a href=\"/website-auditor/\" target=\"_blank\">What Website Audit shows →</a>";
+            readonly Hint_not_urls_text: "Add URLs manually or enable website crawling to perform Website Audit.<br>🤖 <a href=\"/website-auditor/\" target=\"_blank\">What Website Audit shows →</a>";
             /** @constant */
-            Hint_not_urls_btn: "Add URLs";
+            readonly Hint_not_urls_btn: "Add URLs";
             /** @constant */
-            Hint_not_checks_text: "You've never launched Website Audit in this project.<br>🤖 <a href=\"/website-auditor/\" target=\"_blank\">What Website Audit shows →</a>";
+            readonly Hint_not_checks_text: "You've never launched Website Audit in this project.<br>🤖 <a href=\"/website-auditor/\" target=\"_blank\">What Website Audit shows →</a>";
             /** @constant */
-            Hint_not_checks_btn: "Launch Website Audit";
+            readonly Hint_not_checks_btn: "Launch Website Audit";
             /** @constant */
-            Hint_not_PageSpeed_Insights_API_key_1: "You didn't specify PageSpeed Insights API&#8209;key when launching Website Audit. Add API-key";
+            readonly Hint_not_PageSpeed_Insights_API_key_1: "You didn't specify PageSpeed Insights API&#8209;key when launching Website Audit. Add API-key";
             /** @constant */
-            Hint_not_PageSpeed_Insights_API_key_2: "in Audit Settings";
+            readonly Hint_not_PageSpeed_Insights_API_key_2: "in Audit Settings";
             /** @constant */
-            Hint_not_PageSpeed_Insights_API_key_3: "and launch Audit once more.";
+            readonly Hint_not_PageSpeed_Insights_API_key_3: "and launch Audit once more.";
         };
     };
     responses: never;
