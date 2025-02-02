@@ -1,0 +1,84 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/TV.Types.Config.Site",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "TV.Types.Config.Site": {
+                "type": "object",
+                "properties": {
+                    "ID": {
+                        "const": "No set"
+                    },
+                    "ID_ASSETS": {
+                        "const": "No set"
+                    },
+                    "HOST": {
+                        "const": "No set"
+                    },
+                    "HOST_DEV": {
+                        "const": "No set"
+                    },
+                    "LANGUAGES": {
+                        "const": []
+                    },
+                    "LANGUAGE_MAIN": {
+                        "const": "No set"
+                    },
+                    "LANGUAGES_ADDITIONAL": {
+                        "const": []
+                    },
+                    "CURRENCIES": {
+                        "const": [
+                            "No set"
+                        ]
+                    },
+                    "SUBDOMAINS": {
+                        "const": []
+                    },
+                    "THEMES": {
+                        "const": []
+                    },
+                    "MAILING_EMAIL": {
+                        "const": "No set"
+                    },
+                    "MAILING_ALT_EMAIL": {
+                        "const": "No set"
+                    },
+                    "SUPPORT_EMAIL": {
+                        "const": "No set"
+                    },
+                    "NO_REPLY_EMAIL": {
+                        "const": "No set"
+                    },
+                    "CLOSED_BY_MOD": {
+                        "const": []
+                    },
+                    "INN": {
+                        "const": "No set"
+                    },
+                    "COUNTER_YANDEX": {
+                        "const": "No set"
+                    },
+                    "COUNTER_YANDEX_JOURNAL": {
+                        "const": "No set"
+                    },
+                    "COUNTER_GOOGLE": {
+                        "const": "No set"
+                    },
+                    "COUNTER_GOOGLE_JOURNAL": {
+                        "const": "No set"
+                    },
+                    "DIADOC_ID": {
+                        "const": 10000
+                    }
+                },
+                "required": [],
+                "title": "Интерфейс настроек сайта"
+            }
+        }
+    }
+}
