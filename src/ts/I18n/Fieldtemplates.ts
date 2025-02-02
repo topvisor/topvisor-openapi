@@ -8,26 +8,26 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         "I18n.Fieldtemplates": {
-            /** @constant */
-            Title: "Manage columns";
-            /** @constant */
-            Column: "Column";
-            /** @constant */
-            Last_columns_list: "List of recent columns";
-            /** @constant */
-            Save_as_new_template: "Save as new template";
-            /** @constant */
-            save_changes: "save changes";
-            /** @constant */
-            Added_columns: "Added columns";
-            /** @constant */
-            Columns_settings: "Column settings";
-            /** @constant */
-            Delete_columns: "Delete columns";
-            /** @constant */
-            No_columns_added: "No columns added";
-            /** @constant */
-            Advanced_options: "Advanced options";
+            /** @default Manage columns */
+            Title: string;
+            /** @default Column */
+            Column: string;
+            /** @default List of recent columns */
+            Last_columns_list: string;
+            /** @default Save as new template */
+            Save_as_new_template: string;
+            /** @default save changes */
+            save_changes: string;
+            /** @default Added columns */
+            Added_columns: string;
+            /** @default Column settings */
+            Columns_settings: string;
+            /** @default Delete columns */
+            Delete_columns: string;
+            /** @default No columns added */
+            No_columns_added: string;
+            /** @default Advanced options */
+            Advanced_options: string;
         };
     };
     responses: never;

@@ -11,31 +11,40 @@
                 "type": "object",
                 "properties": {
                     "Question_is_article_useful": {
-                        "const": "Have you found what you were looking for?"
+                        "default": "Have you found what you were looking for?",
+                        "type": "string"
                     },
                     "Message_after_good_vote": {
-                        "const": "Thanks for the feedback! You can leave a comment below, but it's optional. You may write something nice."
+                        "default": "Thanks for the feedback! You can leave a comment below, but it's optional. You may write something nice.",
+                        "type": "string"
                     },
                     "Message_after_bad_vote": {
-                        "const": "Напишите, что вы искали, — мы поможем вам, а также постараемся добавить это в руководство."
+                        "default": "Напишите, что вы искали, — мы поможем вам, а также постараемся добавить это в руководство.",
+                        "type": "string"
                     },
                     "Question_after_good_vote": {
-                        "const": "What did you like most?"
+                        "default": "What did you like most?",
+                        "type": "string"
                     },
                     "Question_after_bad_vote": {
-                        "const": "What's been lacking in this guide?"
+                        "default": "What's been lacking in this guide?",
+                        "type": "string"
                     },
                     "Message_after_comment_good_vote": {
-                        "const": "We'll keep this up!"
+                        "default": "We'll keep this up!",
+                        "type": "string"
                     },
                     "Message_after_comment_bad_vote": {
-                        "const": "We'll improve our service."
+                        "default": "We'll improve our service.",
+                        "type": "string"
                     },
                     "Submit": {
-                        "const": "Leave feedback"
+                        "default": "Leave feedback",
+                        "type": "string"
                     },
                     "SendTicket": {
-                        "const": "Отправить тикет"
+                        "default": "Отправить тикет",
+                        "type": "string"
                     }
                 },
                 "required": [

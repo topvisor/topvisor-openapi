@@ -8,30 +8,30 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         "I18n.Pages": {
-            /** @constant */
-            Checking_positions: "Rank Checking and Rank Tracking";
-            /** @constant */
-            Collecting_top_sites: "SERP Top Checker";
-            /** @constant */
-            Technical_analysis: "SEO Website Audit";
-            /** @constant */
-            Tracking_changes: "Changer Tracker and Meta Tag Exractor";
-            /** @constant */
-            Semantic_core_research: "Semantic Core Research";
-            /** @constant */
-            Volume_checker: "Volume Checker";
-            /** @constant */
-            Index_checker: "Index Checker";
-            /** @constant */
-            Sitemap_generator: "Sitemap generator";
-            /** @constant */
-            Bid_manager: "Bid Manager";
-            /** @constant */
-            Updates_scanner: "Updates Scanner";
-            /** @constant */
-            Shortener_url: "URL Shortener";
-            /** @constant */
-            Clustering_top: "Clustering by SERP Top";
+            /** @default Rank Checking and Rank Tracking */
+            Checking_positions: string;
+            /** @default SERP Top Checker */
+            Collecting_top_sites: string;
+            /** @default SEO Website Audit */
+            Technical_analysis: string;
+            /** @default Changer Tracker and Meta Tag Exractor */
+            Tracking_changes: string;
+            /** @default Semantic Core Research */
+            Semantic_core_research: string;
+            /** @default Volume Checker */
+            Volume_checker: string;
+            /** @default Index Checker */
+            Index_checker: string;
+            /** @default Sitemap generator */
+            Sitemap_generator: string;
+            /** @default Bid Manager */
+            Bid_manager: string;
+            /** @default Updates Scanner */
+            Updates_scanner: string;
+            /** @default URL Shortener */
+            Shortener_url: string;
+            /** @default Clustering by SERP Top */
+            Clustering_top: string;
         };
     };
     responses: never;

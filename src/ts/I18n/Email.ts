@@ -8,60 +8,59 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         "I18n.Email": {
-            /** @constant */
-            User_registration_confirm: "Confirm your registration";
-            /** @constant */
-            User_accept_email_title: "Account details";
-            /** @constant */
-            user_accept_email_title_suffix_recommendations: "";
-            /** @constant */
-            User_PWD_msg_title2: "Password successfully changed";
-            /** @constant */
-            User_restore_access: "Recovering your password";
-            /** @constant */
-            User_project_access: "Access granted";
-            /** @constant */
-            User_registration_invite_mail_title: "Your friend invites you to sign up and get a double welcome bonus! 🤩";
-            /** @constant */
-            User_change_confirm: "Confirm your email";
-            /** @constant */
-            User_email_changed_msg: "Your email has been changed";
-            /** @constant */
-            User_projects_rights_title: "You have received access to the project.";
-            /** @constant */
-            User_projects_changeOwner_title: "Confirm project transfer.";
-            /** @constant */
-            Integration_expires: "Update integration key";
-            /** @constant */
-            Integration_has_expired1: "Integration";
-            /** @constant */
-            Integration_has_expired2: "integration key has expired.";
-            /** @constant */
-            Integration_access_error: "integration error";
-            /** @constant */
-            Project_report: "Report: Project dynamics.";
-            /** @constant */
-            Indexing_informer_title: "Index status: new changes detected.";
-            /** @constant */
-            Watcher_informer_title: "Website watcher: new changes detected.";
-            /** @constant */
-            Sitemap_changes_to_sitemap_email: "Sitemap: new changes detected.";
-            /** @constant */
-            Audit_informer_title: "Website audit is completed.";
-            /** @constant */
-            Total_indexed: "Total indexed";
-            /** @constant */
-            Dropped_from_index: "Dropped from index";
-            /** @constant */
-            Got_indexed: "New indexed";
-            /** @constant */
-            Tariff_due_to_expire: "Do not forget to renew your subscription";
-            /** @constant */
-            Dogovor: "User agreement";
-            /** @constant */
-            Ur_balance: "Balance is topped up";
-            /** @constant */
-            Payment_received: "Pyment has been received";
+            /** @default Confirm your registration */
+            User_registration_confirm: string;
+            /** @default Account details */
+            User_accept_email_title: string;
+            user_accept_email_title_suffix_recommendations: string;
+            /** @default Password successfully changed */
+            User_PWD_msg_title2: string;
+            /** @default Recovering your password */
+            User_restore_access: string;
+            /** @default Access granted */
+            User_project_access: string;
+            /** @default Your friend invites you to sign up and get a double welcome bonus! 🤩 */
+            User_registration_invite_mail_title: string;
+            /** @default Confirm your email */
+            User_change_confirm: string;
+            /** @default Your email has been changed */
+            User_email_changed_msg: string;
+            /** @default You have received access to the project. */
+            User_projects_rights_title: string;
+            /** @default Confirm project transfer. */
+            User_projects_changeOwner_title: string;
+            /** @default Update integration key */
+            Integration_expires: string;
+            /** @default Integration */
+            Integration_has_expired1: string;
+            /** @default integration key has expired. */
+            Integration_has_expired2: string;
+            /** @default integration error */
+            Integration_access_error: string;
+            /** @default Report: Project dynamics. */
+            Project_report: string;
+            /** @default Index status: new changes detected. */
+            Indexing_informer_title: string;
+            /** @default Website watcher: new changes detected. */
+            Watcher_informer_title: string;
+            /** @default Sitemap: new changes detected. */
+            Sitemap_changes_to_sitemap_email: string;
+            /** @default Website audit is completed. */
+            Audit_informer_title: string;
+            /** @default Total indexed */
+            Total_indexed: string;
+            /** @default Dropped from index */
+            Dropped_from_index: string;
+            /** @default New indexed */
+            Got_indexed: string;
+            /** @default Do not forget to renew your subscription */
+            Tariff_due_to_expire: string;
+            /** @default User agreement */
+            Dogovor: string;
+            /** @default Balance is topped up */
+            Ur_balance: string;
+            /** @default Pyment has been received */
+            Payment_received: string;
         };
     };
     responses: never;

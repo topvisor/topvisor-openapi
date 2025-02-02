@@ -8,28 +8,28 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         "I18n.Api": {
-            /** @constant */
-            View_in_API_explorer: "View in API explorer";
-            /** @constant */
-            Add_parameter: "Add parameter";
-            /** @constant */
-            Add_parameter_array: "Add parameter (array)";
-            /** @constant */
-            Select_data_to_return: "Select data to return (fields)";
-            /** @constant */
-            Add_filter: "Add a filter (filters item)";
-            /** @constant */
-            Add_sorting: "Add sorting (orders item)";
-            /** @constant */
-            Set_limit: "Set limit";
-            /** @constant */
-            Set_offset: "Set offset";
-            /** @constant */
-            Developer_documentation: "API Documentation";
-            /** @constant */
-            Ask_questions_get_answers: "Search documentation";
-            /** @constant */
-            PHP_SDK_example_githab: "PHP SDK example on GitHub";
+            /** @default View in API explorer */
+            View_in_API_explorer: string;
+            /** @default Add parameter */
+            Add_parameter: string;
+            /** @default Add parameter (array) */
+            Add_parameter_array: string;
+            /** @default Select data to return (fields) */
+            Select_data_to_return: string;
+            /** @default Add a filter (filters item) */
+            Add_filter: string;
+            /** @default Add sorting (orders item) */
+            Add_sorting: string;
+            /** @default Set limit */
+            Set_limit: string;
+            /** @default Set offset */
+            Set_offset: string;
+            /** @default API Documentation */
+            Developer_documentation: string;
+            /** @default Search documentation */
+            Ask_questions_get_answers: string;
+            /** @default PHP SDK example on GitHub */
+            PHP_SDK_example_githab: string;
         };
     };
     responses: never;

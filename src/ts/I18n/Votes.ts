@@ -8,24 +8,24 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         "I18n.Votes": {
-            /** @constant */
-            Question_is_article_useful: "Have you found what you were looking for?";
-            /** @constant */
-            Message_after_good_vote: "Thanks for the feedback! You can leave a comment below, but it's optional. You may write something nice.";
-            /** @constant */
-            Message_after_bad_vote: "Напишите, что вы искали, — мы поможем вам, а также постараемся добавить это в руководство.";
-            /** @constant */
-            Question_after_good_vote: "What did you like most?";
-            /** @constant */
-            Question_after_bad_vote: "What's been lacking in this guide?";
-            /** @constant */
-            Message_after_comment_good_vote: "We'll keep this up!";
-            /** @constant */
-            Message_after_comment_bad_vote: "We'll improve our service.";
-            /** @constant */
-            Submit: "Leave feedback";
-            /** @constant */
-            SendTicket: "Отправить тикет";
+            /** @default Have you found what you were looking for? */
+            Question_is_article_useful: string;
+            /** @default Thanks for the feedback! You can leave a comment below, but it's optional. You may write something nice. */
+            Message_after_good_vote: string;
+            /** @default Напишите, что вы искали, — мы поможем вам, а также постараемся добавить это в руководство. */
+            Message_after_bad_vote: string;
+            /** @default What did you like most? */
+            Question_after_good_vote: string;
+            /** @default What's been lacking in this guide? */
+            Question_after_bad_vote: string;
+            /** @default We'll keep this up! */
+            Message_after_comment_good_vote: string;
+            /** @default We'll improve our service. */
+            Message_after_comment_bad_vote: string;
+            /** @default Leave feedback */
+            Submit: string;
+            /** @default Отправить тикет */
+            SendTicket: string;
         };
     };
     responses: never;

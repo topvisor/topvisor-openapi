@@ -11,69 +11,171 @@
                 "type": "object",
                 "properties": {
                     "ID": {
-                        "const": "No set"
+                        "title": "Ключ домена",
+                        "description": "Используется в путях файлов и в БД",
+                        "default": "No set",
+                        "type": "string"
                     },
                     "ID_ASSETS": {
-                        "const": "No set"
+                        "title": "Аббревиатура ключа домена",
+                        "description": "Используется в путях публичных ресурсов, например для файлов на CDN",
+                        "default": "No set",
+                        "type": "string"
                     },
                     "HOST": {
-                        "const": "No set"
+                        "title": "Основной хост",
+                        "default": "No set",
+                        "type": "string"
                     },
                     "HOST_DEV": {
-                        "const": "No set"
+                        "title": "Основной хост для разработки",
+                        "default": "No set",
+                        "type": "string"
                     },
                     "LANGUAGES": {
-                        "const": []
+                        "title": "Список поддерживаемых языков, ISO 639-1",
+                        "type": "array",
+                        "items": {
+                            "oneOf": [
+                                {
+                                    "type": "string"
+                                },
+                                {
+                                    "type": "number"
+                                }
+                            ]
+                        }
                     },
                     "LANGUAGE_MAIN": {
-                        "const": "No set"
+                        "title": "Оснвоной язык, ISO 639-1",
+                        "default": "No set",
+                        "type": "string"
                     },
                     "LANGUAGES_ADDITIONAL": {
-                        "const": []
+                        "title": "Список дополнительных языков, ISO 639-1",
+                        "description": "При генерации url дополнительный язык добавляется в начало url в модуле контента\n\nАналогично `self::LANGUAGES`, без `self::LANGUAGE_MAIN`",
+                        "type": "array",
+                        "items": {
+                            "oneOf": [
+                                {
+                                    "type": "string"
+                                },
+                                {
+                                    "type": "number"
+                                }
+                            ]
+                        }
                     },
                     "CURRENCIES": {
-                        "const": [
+                        "title": "Список валют, используемых на сайте",
+                        "default": [
                             "No set"
-                        ]
+                        ],
+                        "type": "array",
+                        "items": {
+                            "oneOf": [
+                                {
+                                    "type": "string"
+                                },
+                                {
+                                    "type": "number"
+                                }
+                            ]
+                        }
                     },
                     "SUBDOMAINS": {
-                        "const": []
+                        "title": "Список поддоменов",
+                        "description": "Примеры:\n- `''` для основного домена `example.com`\n- `'subdomain'` для поддомена `subdomain.example.com`",
+                        "type": "array",
+                        "items": {
+                            "oneOf": [
+                                {
+                                    "type": "string"
+                                },
+                                {
+                                    "type": "number"
+                                }
+                            ]
+                        }
                     },
                     "THEMES": {
-                        "const": []
+                        "title": "Список поддерживаемых тем оформления",
+                        "type": "array",
+                        "items": {
+                            "oneOf": [
+                                {
+                                    "type": "string"
+                                },
+                                {
+                                    "type": "number"
+                                }
+                            ]
+                        }
                     },
                     "MAILING_EMAIL": {
-                        "const": "No set"
+                        "title": "Почта рассыльщика",
+                        "description": "Она же используется в тикетнице",
+                        "default": "No set",
+                        "type": "string"
                     },
                     "MAILING_ALT_EMAIL": {
-                        "const": "No set"
+                        "title": "Альтернативная почта рассыльщика",
+                        "description": "Используется, если нужно отправлять почту от имени другого домена\n\nДанная почта должна быть настроена на пересылку всех писем на MAILING_EMAIL",
+                        "default": "No set",
+                        "type": "string"
                     },
                     "SUPPORT_EMAIL": {
-                        "const": "No set"
+                        "title": "Почта поддержки, обычно alias MAILING_EMAIL",
+                        "default": "No set",
+                        "type": "string"
                     },
                     "NO_REPLY_EMAIL": {
-                        "const": "No set"
+                        "title": "Почта рассыльщика, без приема ответов",
+                        "default": "No set",
+                        "type": "string"
                     },
                     "CLOSED_BY_MOD": {
-                        "const": []
+                        "title": "Словарь модулей, доступ к которым надо закрыть",
+                        "description": "Формат ключа: `{{ page param 1 }}`, `{{ page param 1 }}/{{ page param 2 }}`\n\nЗначение: всегда true, значение игнорируется\n\n@see Controller_2\\Objects\\Page::params",
+                        "type": "array",
+                        "items": {
+                            "oneOf": [
+                                {
+                                    "type": "string"
+                                },
+                                {
+                                    "type": "number"
+                                }
+                            ]
+                        }
                     },
                     "INN": {
-                        "const": "No set"
+                        "default": "No set",
+                        "type": "string"
                     },
                     "COUNTER_YANDEX": {
-                        "const": "No set"
+                        "title": "Счетчик Яндекс метрики",
+                        "default": "No set",
+                        "type": "string"
                     },
                     "COUNTER_YANDEX_JOURNAL": {
-                        "const": "No set"
+                        "title": "Счетчик Яндекс метрики для модуля Журнал",
+                        "default": "No set",
+                        "type": "string"
                     },
                     "COUNTER_GOOGLE": {
-                        "const": "No set"
+                        "title": "Счетчик Google Аналитики",
+                        "default": "No set",
+                        "type": "string"
                     },
                     "COUNTER_GOOGLE_JOURNAL": {
-                        "const": "No set"
+                        "title": "Счетчик Google Аналитики для модуля Журнал",
+                        "default": "No set",
+                        "type": "string"
                     },
                     "DIADOC_ID": {
-                        "const": 10000
+                        "default": 10000,
+                        "type": "integer"
                     }
                 },
                 "required": [

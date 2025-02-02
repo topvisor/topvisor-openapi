@@ -8,20 +8,20 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         "I18n.Landings.Championship": {
-            /** @constant */
-            Best_cases: "Best cases";
-            /** @constant */
-            Main_competition: "Main competition 🏆";
-            /** @constant */
-            Special_nominations: "Special nominations 🏆";
-            /** @constant */
-            Nomination: "Nomination";
-            /** @constant */
-            Place: "Place";
-            /** @constant */
-            Case_and_author: "Case and author";
-            /** @constant */
-            place: "place";
+            /** @default Best cases */
+            Best_cases: string;
+            /** @default Main competition 🏆 */
+            Main_competition: string;
+            /** @default Special nominations 🏆 */
+            Special_nominations: string;
+            /** @default Nomination */
+            Nomination: string;
+            /** @default Place */
+            Place: string;
+            /** @default Case and author */
+            Case_and_author: string;
+            /** @default place */
+            place: string;
         };
     };
     responses: never;

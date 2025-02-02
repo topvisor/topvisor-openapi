@@ -8,12 +8,13 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         "I18n.Pages.Help": {
-            /** @constant */
-            Contact_title: "Got any questions? Contact us";
-            /** @constant */
-            Contact_text: "If you didn't find what you looked for in the Help Center, contact Support Team via Ticket System {{ telegramBotText }}\nor email <a href='mailto:{{ supportEmail }}' target='_blank'>{{ supportEmail }}</a>. We'll show how to find and set up the tool you need and answer all other questions.";
-            /** @constant */
-            Contact: "Contact us";
+            /** @default Got any questions? Contact us */
+            Contact_title: string;
+            /** @default If you didn't find what you looked for in the Help Center, contact Support Team via Ticket System {{ telegramBotText }}
+             *     or email <a href='mailto:{{ supportEmail }}' target='_blank'>{{ supportEmail }}</a>. We'll show how to find and set up the tool you need and answer all other questions. */
+            Contact_text: string;
+            /** @default Contact us */
+            Contact: string;
         };
     };
     responses: never;

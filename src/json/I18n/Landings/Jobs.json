@@ -11,16 +11,20 @@
                 "type": "object",
                 "properties": {
                     "Link_to_resume_or_comment": {
-                        "const": "Link to your resume or a comment"
+                        "default": "Link to your resume or a comment",
+                        "type": "string"
                     },
                     "Submit_button_text": {
-                        "const": "I want to join!"
+                        "default": "I want to join!",
+                        "type": "string"
                     },
                     "Accept_user_agreement_text_befor_link": {
-                        "const": "By submitting an application , I give my consent to the processing of private data in accordance with"
+                        "default": "By submitting an application , I give my consent to the processing of private data in accordance with",
+                        "type": "string"
                     },
                     "Accept_user_agreement_link_text": {
-                        "const": "Privacy Policy"
+                        "default": "Privacy Policy",
+                        "type": "string"
                     }
                 },
                 "required": [

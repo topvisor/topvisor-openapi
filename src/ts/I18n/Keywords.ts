@@ -8,574 +8,574 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         "I18n.Keywords": {
-            /** @constant */
-            Average: "Average";
-            /** @constant */
-            phrase_missed: "Keyword not selected";
-            /** @constant */
-            group_not_exists: "Group not found in the project";
-            /** @constant */
-            keyword_not_exists: "Keyword not found in the project";
-            /** @constant */
-            incorrect_phrase: "Invalid keyword";
-            /** @constant */
-            phrase_exists: "This keyword already exists";
-            /** @constant */
-            import_error_columns: "The number of columns in some lines doesn't match the number in other lines.";
-            /** @constant */
-            import_error_columns2: " If you import keywords from a CSV file, please place all keywords with special characters (comma (,), semicolon (;)) in double quotation marks (\")";
-            /** @constant */
-            import_error1: "You haven't selected keywords to import";
-            /** @constant */
-            Add_phrase: "Add keyword";
-            /** @constant */
-            Add_group: "Add new group";
-            /** @constant */
-            New_folder: "New folder";
-            /** @constant */
-            New_group: "New group";
-            /** @constant */
-            Access_error: "Keyword not found or access denied";
-            /** @constant */
-            CSV_group: "Group";
-            /** @constant */
-            CSV_phrase: "Keyword";
-            /** @constant */
-            CSV_rel: "Ranked page";
-            /** @constant */
-            CSV_snippet_title: "Snippet titles";
-            /** @constant */
-            CSV_snippet: "Snippet";
-            /** @constant */
-            CSV_target: "Target URL";
-            /** @constant */
-            CSV_visits: "Traffic";
-            /** @constant */
-            CSV_google_price: "Bid";
-            /** @constant */
-            CSV_yandex_price1: "1-st Premium placement";
-            /** @constant */
-            CSV_yandex_price2: "2-st Premium placement";
-            /** @constant */
-            CSV_yandex_price3: "Premium placement";
-            /** @constant */
-            CSV_yandex_price4: "1st place";
-            /** @constant */
-            CSV_yandex_price5: "Guaranteed";
-            /** @constant */
-            Targets_error: "Target URLs not changed";
-            /** @constant */
-            Group_changing_denied: "You can't edit this group!";
-            /** @constant */
-            Filtered_group: "Filtered group";
-            /** @constant */
-            Export_dynamics_by_date: "Project export for";
-            /** @constant */
-            Export_Balance_notify: "Cannot prepare export. There are not enough funds in your account.";
-            /** @constant */
-            Export_HTML_comparison_not_available: "html comparison is not available yet";
-            /** @constant */
-            Reports_unsubscribing1: "Unsubscribe ";
-            /** @constant */
-            Reports_unsubscribing2: "from project reports";
-            /** @constant */
-            Project_report: "Project report for";
-            /** @constant */
-            project_report_msg: "dated";
-            /** @constant */
-            project_has_archived: "The project is not active. You can recover it in the projects list";
-            /** @constant */
-            Not_enough_balance_for_check_position: "there are not enough funds in your account to track keyword rankings";
-            /** @constant */
-            Refill_balance: "Top up balance";
-            /** @constant */
-            Not_enough_owner_balance: "The project owner has insufficient funds to complete the task. Contact the owner of the project ";
-            /** @constant */
-            Not_enough_owner_balance2: " and ask them to top up their balance.";
-            /** @constant */
-            Not_enough_balance_limit: "You used up the limit on checks the project's owner gave you. Contact the owner via ";
-            /** @constant */
-            Not_enough_balance_limit2: " if you need to raise the limit";
-            /** @constant */
-            Position_check: "Keyword rank check of";
-            /** @constant */
-            Position_check_with_snippet: "Track ranks and collect snippets";
-            /** @constant */
-            Positions_check: "Keyword ranking report for";
-            /** @constant */
-            Positions_select_se: "Add search engines in project settings";
-            /** @constant */
-            Positions_check_with_snippets: "Keyword ranking and snippets report for";
-            /** @constant */
-            Keyword_ranking_already_started: "Keyword ranking already started";
-            /** @constant */
-            Not_enough_balance_for_check_positions: "You do not have enough funds in your account to track keyword rankings";
-            /** @constant */
-            Short_keywords: "Keywords are too short";
-            /** @constant */
-            Semantic_kernel_composition: "Keyword research";
-            /** @constant */
-            Semantic_kernel_composition_by_hints: "Keyword suggestions harvest";
-            /** @constant */
-            Provider_incorrect: "`Provider` is incorrect";
-            /** @constant */
-            Not_enough_balance: "There are not enough funds in your account";
-            /** @constant */
-            Unchecked_wordstat_is_missing1: "Skipped search volume data in project";
-            /** @constant */
-            Unchecked_wordstat_is_missing2: "for applied locations and search volume types there's no";
-            /** @constant */
-            No_phrases_or_regions1: "The project has";
-            /** @constant */
-            No_phrases_or_regions2: "no keywords or locations and search volume types are not selected";
-            /** @constant */
-            Wordstat_check: "Search volume tracking for:";
-            /** @constant */
-            depth: "research depth";
-            /** @constant */
-            Claster_delay: "Assigning project tasks.<br>Clustering tool will be available within a minute";
-            /** @constant */
-            Claster_task_bank: "Keyword clustering";
-            /** @constant */
-            Claster_task_change_bank: "Re-calculate clustering cost";
-            /** @constant */
-            Claster_already_doing: "Clustering is in process";
-            /** @constant */
-            Claster_not_exists_last_results: "Previous keyword clustering results not found";
-            /** @constant */
-            for_keyword: "to each keyword";
-            /** @constant */
-            Get_group_search_volume: "Get group search volume";
-            /** @constant */
-            Export_group: "Export from group";
-            /** @constant */
-            Export_to_project: "Copy to another project";
-            /** @constant */
-            Move_to_project: "Move to another project";
-            /** @constant */
-            Block_mode_unavailable_notice: "Block mode is not available if you have over 6 000 keywords or too many groups";
-            /** @constant */
-            Block_mode: "Block mode";
-            /** @constant */
-            Table_mode: "Table mode";
-            /** @constant */
-            Tags: "Tag No.";
-            /** @constant */
-            Tags_names: "Tags";
-            /** @constant */
-            Tags_disable: "Disable";
-            /** @constant */
-            Set_tag: "Add tag";
-            /** @constant */
-            Remove_tag: "Remove tags";
-            /** @constant */
-            Add_tags: "Add tags";
-            /** @constant */
-            Remove_tags: "Remove tags";
-            /** @constant */
-            Set_tags: "Replace tags";
-            /** @constant */
-            Import: "Keyword import";
-            /** @constant */
-            Export: "Keyword export";
-            /** @constant */
-            Target: "Target URL";
-            /** @constant */
-            Target_status: "Target URL status";
-            /** @constant */
-            Relevant_page: "Ranked URL";
-            /** @constant */
-            CPC: "CPC";
-            /** @constant */
-            Visits: "Traffic";
-            /** @constant */
-            Snippet: "Snippet";
-            /** @constant */
-            Research: "Research keywords";
-            /** @constant */
-            Research_suggestions: "Collect keyword suggestions";
-            /** @constant */
-            Research_keywords_se: "Research keywords";
-            /** @constant */
-            Research_keywords_traffic: "Magnet tool";
-            /** @constant */
-            To_research: "Research";
-            /** @constant */
-            Group_number: "Groups";
-            /** @constant */
-            Keyword_number: "Keywords";
-            /** @constant */
-            Turn_on: "On";
-            /** @constant */
-            Turn_off: "Off";
-            /** @constant */
-            Enable_all_groups: "Turn on all groups";
-            /** @constant */
-            Disable_all_groups: "Turn off all groups";
-            /** @constant */
-            Select_all: "Select all";
-            /** @constant */
-            Select_groups: "Select groups";
-            /** @constant */
-            Highlight: "Select";
-            /** @constant */
-            Trash_bin: "Trash bin";
-            /** @constant */
-            Filter: "Filter";
-            /** @constant */
-            Search_keyword: "Search keyword";
-            /** @constant */
-            Get_search_volume: "Get search volume";
-            /** @constant */
-            Clustering_tool: "Keyword clustering";
-            /** @constant */
-            SE_location: "Search engine / Location";
-            /** @constant */
-            Select_location: "Select location";
-            /** @constant */
-            Select_another_location: "Select another location";
-            /** @constant */
-            Clustering_level: "Clustering level";
-            /** @constant */
-            Clustering_level_groups_relation: "Higher level clustering produces more groups with fewer keywords in every group.";
-            /** @constant */
-            Clustering_changes_order_notice: "<b>Important!</b><br>Keyword clustering changes groups and keyword order in your project.<br> After clustering, keyword groups will be automatically disabled.";
-            /** @constant */
-            Clustering_rel_notice: "Before grouping keywords by page relevance, make sure that you have checked<br> keyword rankings in the applied search engine and location.";
-            /** @constant */
-            Cluster: "Clustering";
-            /** @constant */
-            Cluster_TOP10: "Keyword clustering by TOP10";
-            /** @constant */
-            Cluster_relevant_url: "Grouping by page relevance";
-            /** @constant */
-            Cluster_target_url: "Grouping by target URLs";
-            /** @constant */
-            Before_grouping_setup_target_urls: "Before grouping, make sure that target URLs are assigned";
-            /** @constant */
-            Change_clustering_level: "Change clustering level";
-            /** @constant */
-            Bounce_rate: "Bounce";
-            /** @constant */
-            Pages_view: "Pages";
-            /** @constant */
-            Time: "Time";
-            /** @constant */
-            Del_group: "Delete group";
-            /** @constant */
-            Sort_keywords: "Sort keywords";
-            /** @constant */
-            Filter_phrases: "Filter keywords";
-            /** @constant */
-            On_Off_group: "Enable / Disable a group";
-            /** @constant */
-            Move_to_new_group: "Move to a new group";
-            /** @constant */
-            Delete_group_warning: "<b>Important!</b><br>If you delete a group, all keywords in the group will be deleted immediately.";
-            /** @constant */
-            Each_keyword_on_new_line: "Keywords (each keyword on a new line)";
-            /** @constant */
-            Source: "Source";
-            /** @constant */
-            Phrases_on_new_line: "Phrases (each one on a new line)";
-            /** @constant */
-            Import_to_group: "Import into group";
-            /** @constant */
-            Skip_duplicates: "Skip duplicates";
-            /** @constant */
-            Move_duplicates: "Move duplicates";
-            /** @constant */
-            Move_duplicates_another_group: "Move duplicates to another group";
-            /** @constant */
-            Move_duplicates_another_group_name: "Where move duplicates?";
-            /** @constant */
-            Match_type: "Match type";
-            /** @constant */
-            Match_type_broad: "Volume";
-            /** @constant */
-            Match_type_phrase: "Volume";
-            /** @constant */
-            Match_type_exact: "Volume";
-            /** @constant */
-            Match_type_strict: "Strict";
-            /** @constant */
-            By_location: "For locations";
-            /** @constant */
-            Skip_tracked_searches: "Skip collected search volume data";
-            /** @constant */
-            Check_active_groups_only: "Check active groups only";
-            /** @constant */
-            By_total_searches: "By search volume";
-            /** @constant */
-            By_rank: "By keyword rank (applied SE and Location)";
-            /** @constant */
-            Sort_groups_by_searches: "Sort groups by total search volume";
-            /** @constant */
-            Sort_keywords_by_searches: "Sort keywords in groups by search volume";
-            /** @constant */
-            Sort_groups_alphabetically: "Sort groups alphabetically";
-            /** @constant */
-            Sort_groups_by_date: "Sort groups by creation date";
-            /** @constant */
-            Delete_empty_groups: "Delete empty groups";
-            /** @constant */
-            Delete_inactive_groups: "Delete inactive groups";
-            /** @constant */
-            Delete_groups_keywords: "Wipe all groups and keywords";
-            /** @constant */
-            Set_color_tag: "Add color tag";
-            /** @constant */
-            Group_name: "Group name";
-            /** @constant */
-            move_to: "Move to the group";
-            /** @constant */
-            Filter_applied_to_selected_se_notice_1: "Filter will be applied to the selected search engine and location. Before applying the filter, check search volume.";
-            /** @constant */
-            Ranks_tracked_date: "Rankings checked";
-            /** @constant */
-            Ranks_missing_in_serp: "Keyword not found in search results";
-            /** @constant */
-            Filter_applied_to_selected_se_notice_2: "Filter will be applied to the selected search engine and location. Before applying the filter, check keyword rankings.";
-            /** @constant */
-            Groups_will_sort_alpahbetically: "Groups will be sorted alphabetically";
-            /** @constant */
-            Groups_will_sort_by_date: "Groups will be sorted by creation date";
-            /** @constant */
-            Groups_without_keywords_will_delete: "All empty groups will be wiped!";
-            /** @constant */
-            Groups_keywords_will_delete: "All groups and keywords will be wiped immediately. You can't undo this action.";
-            /** @constant */
-            Inactive_groups_will_be_deleted: "All inactive groups will be wiped!";
-            /** @constant */
-            Filters_bulk_actions: "Filters / Bulk operations";
-            /** @constant */
-            Copy_group: "Export group";
-            /** @constant */
-            to_project: "to the project";
-            /** @constant */
-            Your_account: "You";
-            /** @constant */
-            project_owner: "Project owner";
-            /** @constant */
-            will_be_charged: "will be charged";
-            /** @constant */
-            from_charged: "";
-            /** @constant */
-            Suggestions_depth: "Nesting level";
-            /** @constant */
-            Move_gathered_single_group: "Band up all collected keywords within a single group";
-            /** @constant */
-            Search_uri: "Search a URI";
-            /** @constant */
-            Add_to_group: "Add to group";
-            /** @constant */
-            Integrate_to_use_the_tool_1: "To use the tool";
-            /** @constant */
-            Integrate_to_use_the_tool_2: "integrate";
-            /** @constant */
-            Integrate_to_use_the_tool_3: "your account with Google Analytics, Google Search Console or Yandex Metrica";
-            /** @constant */
-            Methods_of_research: "Methods";
-            /** @constant */
-            Popular: "Popular";
-            /** @constant */
-            Other: "Other";
-            /** @constant */
-            Clustering_in_process: "Clustering";
-            /** @constant */
-            Clustering_type: "Clustering type";
-            /** @constant */
-            Name_az: "Name A-Z";
-            /** @constant */
-            Name_za: "Name Z-A";
-            /** @constant */
-            Apply_to_selected: "Apply to selected keywords";
-            /** @constant */
-            items_number: "keyword(s)";
-            /** @constant */
-            Assign_target: "Assign target URL";
-            /** @constant */
-            Landing_enter_URL: "Enter URL";
-            /** @constant */
-            Reset: "Cancel";
-            /** @constant */
-            Without_region: "Global";
-            /** @constant */
-            Total_exact_ams: "Total search volume of a keyword group";
-            /** @constant */
-            Total_exact_ams_of_project: "Total search volume of keywords in project";
-            /** @constant */
-            Find_replace: "Find and replace";
-            /** @constant */
-            Find_replace_target_links: "Find and replace target URLs";
-            /** @constant */
-            Move_by_substrings: "Move keywords by substring";
-            /** @constant */
-            Move_by_substrings_whole_words: "Whole words";
-            /** @constant */
-            Move_by_substrings_info: "All keywords in which at least one of the specified substrings is found will be moved to the specified group. Example: When specifying the \"a\" substring, all keywords with the letter \"a\" will be moved.";
-            /** @constant */
-            Filter_short: "F";
-            /** @constant */
-            Tag: "Tag";
-            /** @constant */
-            Change: "Change";
-            /** @constant */
-            Find: "Find";
-            /** @constant */
-            Replace: " Replace with";
-            /** @constant */
-            Add_keyword_to_replace: "Add words or phrases to replace";
-            /** @constant */
-            Keyword_will_be_replaced: "These words or phrases will be automatically replaced.";
-            /** @constant */
-            Tetris_points: "Points";
-            /** @constant */
-            Tetris_best_score: "Best score";
-            /** @constant */
-            Tetris_game_over: "Game over";
-            /** @constant */
-            Tetris_play_again: "Play again";
-            /** @constant */
-            Hints_data_sources: "Sources";
-            /** @constant */
-            CONTROLLER_Phrases_added: "You have successfully added keywords";
-            /** @constant */
-            CONTROLLER_phrases_missed: "skipped duplicate keywords";
-            /** @constant */
-            CONTROLLER_phrases_moved: "moved (changed) keywords";
-            /** @constant */
-            CONTROLLER_Semantic_kernel: "Keywords";
-            /** @constant */
-            Folder_max_depth: "Nested folder limit";
-            /** @constant */
-            Choose_searcher: "Select search engine";
-            /** @constant */
-            Choose_region: "Select location";
-            /** @constant */
-            Choose_regions: "Select locations";
-            /** @constant */
-            Choose_searcher_and_region: "Select search engine and location";
-            /** @constant */
-            Choose_competitor: "Select competitor";
-            /** @constant */
-            Choose_group: "Choose group";
-            /** @constant */
-            Main_project: "My project";
-            /** @constant */
-            Without_relevant_url: "No ranked URL";
-            /** @constant */
-            Not_checked: "Not tracked";
-            /** @constant */
-            Set_phrases_minus: "Exclude all phrases with negative keywords (Google and Yandex)";
-            /** @constant */
-            Negative_words: "Negative keywords";
-            /** @constant */
-            Check_old_searches: "Update expired search volume";
-            /** @constant */
-            Group_id: "Group id";
-            /** @constant */
-            Project_id: "Project id";
-            /** @constant */
-            Keyword_id: "Keyword id";
-            /** @constant */
-            Keyword_folder_id: "Keyword folder id";
-            /** @constant */
-            Folder_path: "Folder";
-            /** @constant */
-            Keyword_rank: "Keyword rank";
-            /** @constant */
-            Keyword_count: "Keyword count";
-            /** @constant */
-            Sorting_order: "Sorting order";
-            /** @constant */
-            Keyword_clustering_completed: "Keyword clustering completed";
-            /** @constant */
-            Send_to_email: "Send to Email";
-            /** @constant */
-            Data_will_be_pulled_for: "Collect data for";
-            /** @constant */
-            total_count: "; total count";
-            /** @constant */
-            Enter_keywords: "Enter keywords";
-            /** @constant */
-            Upload_from_file: "Upload from file";
-            /** @constant */
-            Selected: "Selected";
-            /** @constant */
-            Keyword_export: "Keyword export";
-            /** @constant */
-            Group_export: "Group export";
-            /** @constant */
-            Copy_to_clipboard: "Copy to clipboard";
-            /** @constant */
-            Copy_to_clipboard_up_to: "Copy to clipboard (up to %max% keywords)";
-            /** @constant */
-            To_copy_and_move: "Copy and transfer";
-            /** @constant */
-            To_delete_keywords_warning: "<b>Important!</b><br>Are you sure you want to delete selected keywords?";
-            /** @constant */
-            To_delete_folder_warning: "<b>Important!</b><br><br>If you delete a folder, its contents (subfolders, groups, keywords) will be deleted immediately";
-            /** @constant */
-            Restore_selected_keywords: "Restore selected keywords";
-            /** @constant */
-            Restore_selected_folders: "Restore selected folders";
-            /** @constant */
-            Restore_selected_groups_restores_contents: "If you restore the group, all folders and keywords in the group will be restored immediately";
-            /** @constant */
-            Restore: "Restore";
-            /** @constant */
-            or_drag_here: "or drag and drop here";
-            /** @constant */
-            txt_csv_max_size: "(txt or csv - max 10 Mb)";
-            /** @constant */
-            Drop_file: "Drop file";
-            /** @constant */
-            File_uploaded: "File uploaded";
-            /** @constant */
-            Disable_floating_bar: "Disable floating bar";
-            /** @constant */
-            Temporary_bin: "Temporary bin";
-            /** @constant */
-            Set_target_equals_relevant: "Assign Target = Ranked URL from the last check";
-            /** @constant */
-            Import_target_links: "Import target links";
-            /** @constant */
-            Total_selected: "Total selected keywords";
-            /** @constant */
-            Keyword_length: "Keyword length";
-            /** @constant */
-            XSLX_tabs: "XLSX (Tabs)";
-            /** @constant */
-            Prepare: "Prepare";
-            /** @constant */
-            Enter_name_of_new_group: "Enter a name of a new group";
-            /** @constant */
-            Manage_columns: "Manage columns";
-            /** @constant */
-            Max_period_one_year: "Max period - 1 year";
-            /** @constant */
-            Target_equals_relevant_lastcheck_in_location: "Target = Ranked URL from the last check in the location";
-            /** @constant */
-            Do_not_overwrite_assigned_target_links: "Do not overwrite assigned target links";
-            /** @constant */
-            Sy_wordstat_max_pages: "Количество страниц (макс.)";
-            /** @constant */
-            Research_status: "Keyword research status";
-            /** @constant */
-            Activity_status: "Group activity status";
-            /** @constant */
-            No_target_URL: "No Target URL";
-            /** @constant */
-            Move_keywords_to_another_project: "Move to another project";
-            /** @constant */
-            Move_group_and_delete_from_orginal_project: "Transfer (delete from the orginal project)";
-            /** @constant */
-            Keywords_to_transfer_and_delete_from_project: "To transfer and delete from the original project";
-            /** @constant */
-            Remove_pluses_fullstops_commas_apostrophes_quotes: "Remove plus symbols, full stops, commas, apostrophes, quotes";
-            /** @constant */
-            HintVolumeNoCollected: "Volume isn't collected. Follow <a href=\"/ru/support/keywords/volume/\" target=\"_blank\">this manual</a> to collect volume.<br><br>\nFor some keywords search volume is displayed because we store volume in a common database without linking it to a particular user: if other users checked it, it would be automatically pulled from the database. But note that such volume could be outdated.";
+            /** @default Average */
+            Average: string;
+            /** @default Keyword not selected */
+            phrase_missed: string;
+            /** @default Group not found in the project */
+            group_not_exists: string;
+            /** @default Keyword not found in the project */
+            keyword_not_exists: string;
+            /** @default Invalid keyword */
+            incorrect_phrase: string;
+            /** @default This keyword already exists */
+            phrase_exists: string;
+            /** @default The number of columns in some lines doesn't match the number in other lines. */
+            import_error_columns: string;
+            /** @default  If you import keywords from a CSV file, please place all keywords with special characters (comma (,), semicolon (;)) in double quotation marks (") */
+            import_error_columns2: string;
+            /** @default You haven't selected keywords to import */
+            import_error1: string;
+            /** @default Add keyword */
+            Add_phrase: string;
+            /** @default Add new group */
+            Add_group: string;
+            /** @default New folder */
+            New_folder: string;
+            /** @default New group */
+            New_group: string;
+            /** @default Keyword not found or access denied */
+            Access_error: string;
+            /** @default Group */
+            CSV_group: string;
+            /** @default Keyword */
+            CSV_phrase: string;
+            /** @default Ranked page */
+            CSV_rel: string;
+            /** @default Snippet titles */
+            CSV_snippet_title: string;
+            /** @default Snippet */
+            CSV_snippet: string;
+            /** @default Target URL */
+            CSV_target: string;
+            /** @default Traffic */
+            CSV_visits: string;
+            /** @default Bid */
+            CSV_google_price: string;
+            /** @default 1-st Premium placement */
+            CSV_yandex_price1: string;
+            /** @default 2-st Premium placement */
+            CSV_yandex_price2: string;
+            /** @default Premium placement */
+            CSV_yandex_price3: string;
+            /** @default 1st place */
+            CSV_yandex_price4: string;
+            /** @default Guaranteed */
+            CSV_yandex_price5: string;
+            /** @default Target URLs not changed */
+            Targets_error: string;
+            /** @default You can't edit this group! */
+            Group_changing_denied: string;
+            /** @default Filtered group */
+            Filtered_group: string;
+            /** @default Project export for */
+            Export_dynamics_by_date: string;
+            /** @default Cannot prepare export. There are not enough funds in your account. */
+            Export_Balance_notify: string;
+            /** @default html comparison is not available yet */
+            Export_HTML_comparison_not_available: string;
+            /** @default Unsubscribe  */
+            Reports_unsubscribing1: string;
+            /** @default from project reports */
+            Reports_unsubscribing2: string;
+            /** @default Project report for */
+            Project_report: string;
+            /** @default dated */
+            project_report_msg: string;
+            /** @default The project is not active. You can recover it in the projects list */
+            project_has_archived: string;
+            /** @default there are not enough funds in your account to track keyword rankings */
+            Not_enough_balance_for_check_position: string;
+            /** @default Top up balance */
+            Refill_balance: string;
+            /** @default The project owner has insufficient funds to complete the task. Contact the owner of the project  */
+            Not_enough_owner_balance: string;
+            /** @default  and ask them to top up their balance. */
+            Not_enough_owner_balance2: string;
+            /** @default You used up the limit on checks the project's owner gave you. Contact the owner via  */
+            Not_enough_balance_limit: string;
+            /** @default  if you need to raise the limit */
+            Not_enough_balance_limit2: string;
+            /** @default Keyword rank check of */
+            Position_check: string;
+            /** @default Track ranks and collect snippets */
+            Position_check_with_snippet: string;
+            /** @default Keyword ranking report for */
+            Positions_check: string;
+            /** @default Add search engines in project settings */
+            Positions_select_se: string;
+            /** @default Keyword ranking and snippets report for */
+            Positions_check_with_snippets: string;
+            /** @default Keyword ranking already started */
+            Keyword_ranking_already_started: string;
+            /** @default You do not have enough funds in your account to track keyword rankings */
+            Not_enough_balance_for_check_positions: string;
+            /** @default Keywords are too short */
+            Short_keywords: string;
+            /** @default Keyword research */
+            Semantic_kernel_composition: string;
+            /** @default Keyword suggestions harvest */
+            Semantic_kernel_composition_by_hints: string;
+            /** @default `Provider` is incorrect */
+            Provider_incorrect: string;
+            /** @default There are not enough funds in your account */
+            Not_enough_balance: string;
+            /** @default Skipped search volume data in project */
+            Unchecked_wordstat_is_missing1: string;
+            /** @default for applied locations and search volume types there's no */
+            Unchecked_wordstat_is_missing2: string;
+            /** @default The project has */
+            No_phrases_or_regions1: string;
+            /** @default no keywords or locations and search volume types are not selected */
+            No_phrases_or_regions2: string;
+            /** @default Search volume tracking for: */
+            Wordstat_check: string;
+            /** @default research depth */
+            depth: string;
+            /** @default Assigning project tasks.<br>Clustering tool will be available within a minute */
+            Claster_delay: string;
+            /** @default Keyword clustering */
+            Claster_task_bank: string;
+            /** @default Re-calculate clustering cost */
+            Claster_task_change_bank: string;
+            /** @default Clustering is in process */
+            Claster_already_doing: string;
+            /** @default Previous keyword clustering results not found */
+            Claster_not_exists_last_results: string;
+            /** @default to each keyword */
+            for_keyword: string;
+            /** @default Get group search volume */
+            Get_group_search_volume: string;
+            /** @default Export from group */
+            Export_group: string;
+            /** @default Copy to another project */
+            Export_to_project: string;
+            /** @default Move to another project */
+            Move_to_project: string;
+            /** @default Block mode is not available if you have over 6 000 keywords or too many groups */
+            Block_mode_unavailable_notice: string;
+            /** @default Block mode */
+            Block_mode: string;
+            /** @default Table mode */
+            Table_mode: string;
+            /** @default Tag No. */
+            Tags: string;
+            /** @default Tags */
+            Tags_names: string;
+            /** @default Disable */
+            Tags_disable: string;
+            /** @default Add tag */
+            Set_tag: string;
+            /** @default Remove tags */
+            Remove_tag: string;
+            /** @default Add tags */
+            Add_tags: string;
+            /** @default Remove tags */
+            Remove_tags: string;
+            /** @default Replace tags */
+            Set_tags: string;
+            /** @default Keyword import */
+            Import: string;
+            /** @default Keyword export */
+            Export: string;
+            /** @default Target URL */
+            Target: string;
+            /** @default Target URL status */
+            Target_status: string;
+            /** @default Ranked URL */
+            Relevant_page: string;
+            /** @default CPC */
+            CPC: string;
+            /** @default Traffic */
+            Visits: string;
+            /** @default Snippet */
+            Snippet: string;
+            /** @default Research keywords */
+            Research: string;
+            /** @default Collect keyword suggestions */
+            Research_suggestions: string;
+            /** @default Research keywords */
+            Research_keywords_se: string;
+            /** @default Magnet tool */
+            Research_keywords_traffic: string;
+            /** @default Research */
+            To_research: string;
+            /** @default Groups */
+            Group_number: string;
+            /** @default Keywords */
+            Keyword_number: string;
+            /** @default On */
+            Turn_on: string;
+            /** @default Off */
+            Turn_off: string;
+            /** @default Turn on all groups */
+            Enable_all_groups: string;
+            /** @default Turn off all groups */
+            Disable_all_groups: string;
+            /** @default Select all */
+            Select_all: string;
+            /** @default Select groups */
+            Select_groups: string;
+            /** @default Select */
+            Highlight: string;
+            /** @default Trash bin */
+            Trash_bin: string;
+            /** @default Filter */
+            Filter: string;
+            /** @default Search keyword */
+            Search_keyword: string;
+            /** @default Get search volume */
+            Get_search_volume: string;
+            /** @default Keyword clustering */
+            Clustering_tool: string;
+            /** @default Search engine / Location */
+            SE_location: string;
+            /** @default Select location */
+            Select_location: string;
+            /** @default Select another location */
+            Select_another_location: string;
+            /** @default Clustering level */
+            Clustering_level: string;
+            /** @default Higher level clustering produces more groups with fewer keywords in every group. */
+            Clustering_level_groups_relation: string;
+            /** @default <b>Important!</b><br>Keyword clustering changes groups and keyword order in your project.<br> After clustering, keyword groups will be automatically disabled. */
+            Clustering_changes_order_notice: string;
+            /** @default Before grouping keywords by page relevance, make sure that you have checked<br> keyword rankings in the applied search engine and location. */
+            Clustering_rel_notice: string;
+            /** @default Clustering */
+            Cluster: string;
+            /** @default Keyword clustering by TOP10 */
+            Cluster_TOP10: string;
+            /** @default Grouping by page relevance */
+            Cluster_relevant_url: string;
+            /** @default Grouping by target URLs */
+            Cluster_target_url: string;
+            /** @default Before grouping, make sure that target URLs are assigned */
+            Before_grouping_setup_target_urls: string;
+            /** @default Change clustering level */
+            Change_clustering_level: string;
+            /** @default Bounce */
+            Bounce_rate: string;
+            /** @default Pages */
+            Pages_view: string;
+            /** @default Time */
+            Time: string;
+            /** @default Delete group */
+            Del_group: string;
+            /** @default Sort keywords */
+            Sort_keywords: string;
+            /** @default Filter keywords */
+            Filter_phrases: string;
+            /** @default Enable / Disable a group */
+            On_Off_group: string;
+            /** @default Move to a new group */
+            Move_to_new_group: string;
+            /** @default <b>Important!</b><br>If you delete a group, all keywords in the group will be deleted immediately. */
+            Delete_group_warning: string;
+            /** @default Keywords (each keyword on a new line) */
+            Each_keyword_on_new_line: string;
+            /** @default Source */
+            Source: string;
+            /** @default Phrases (each one on a new line) */
+            Phrases_on_new_line: string;
+            /** @default Import into group */
+            Import_to_group: string;
+            /** @default Skip duplicates */
+            Skip_duplicates: string;
+            /** @default Move duplicates */
+            Move_duplicates: string;
+            /** @default Move duplicates to another group */
+            Move_duplicates_another_group: string;
+            /** @default Where move duplicates? */
+            Move_duplicates_another_group_name: string;
+            /** @default Match type */
+            Match_type: string;
+            /** @default Volume */
+            Match_type_broad: string;
+            /** @default Volume */
+            Match_type_phrase: string;
+            /** @default Volume */
+            Match_type_exact: string;
+            /** @default Strict */
+            Match_type_strict: string;
+            /** @default For locations */
+            By_location: string;
+            /** @default Skip collected search volume data */
+            Skip_tracked_searches: string;
+            /** @default Check active groups only */
+            Check_active_groups_only: string;
+            /** @default By search volume */
+            By_total_searches: string;
+            /** @default By keyword rank (applied SE and Location) */
+            By_rank: string;
+            /** @default Sort groups by total search volume */
+            Sort_groups_by_searches: string;
+            /** @default Sort keywords in groups by search volume */
+            Sort_keywords_by_searches: string;
+            /** @default Sort groups alphabetically */
+            Sort_groups_alphabetically: string;
+            /** @default Sort groups by creation date */
+            Sort_groups_by_date: string;
+            /** @default Delete empty groups */
+            Delete_empty_groups: string;
+            /** @default Delete inactive groups */
+            Delete_inactive_groups: string;
+            /** @default Wipe all groups and keywords */
+            Delete_groups_keywords: string;
+            /** @default Add color tag */
+            Set_color_tag: string;
+            /** @default Group name */
+            Group_name: string;
+            /** @default Move to the group */
+            move_to: string;
+            /** @default Filter will be applied to the selected search engine and location. Before applying the filter, check search volume. */
+            Filter_applied_to_selected_se_notice_1: string;
+            /** @default Rankings checked */
+            Ranks_tracked_date: string;
+            /** @default Keyword not found in search results */
+            Ranks_missing_in_serp: string;
+            /** @default Filter will be applied to the selected search engine and location. Before applying the filter, check keyword rankings. */
+            Filter_applied_to_selected_se_notice_2: string;
+            /** @default Groups will be sorted alphabetically */
+            Groups_will_sort_alpahbetically: string;
+            /** @default Groups will be sorted by creation date */
+            Groups_will_sort_by_date: string;
+            /** @default All empty groups will be wiped! */
+            Groups_without_keywords_will_delete: string;
+            /** @default All groups and keywords will be wiped immediately. You can't undo this action. */
+            Groups_keywords_will_delete: string;
+            /** @default All inactive groups will be wiped! */
+            Inactive_groups_will_be_deleted: string;
+            /** @default Filters / Bulk operations */
+            Filters_bulk_actions: string;
+            /** @default Export group */
+            Copy_group: string;
+            /** @default to the project */
+            to_project: string;
+            /** @default You */
+            Your_account: string;
+            /** @default Project owner */
+            project_owner: string;
+            /** @default will be charged */
+            will_be_charged: string;
+            from_charged: string;
+            /** @default Nesting level */
+            Suggestions_depth: string;
+            /** @default Band up all collected keywords within a single group */
+            Move_gathered_single_group: string;
+            /** @default Search a URI */
+            Search_uri: string;
+            /** @default Add to group */
+            Add_to_group: string;
+            /** @default To use the tool */
+            Integrate_to_use_the_tool_1: string;
+            /** @default integrate */
+            Integrate_to_use_the_tool_2: string;
+            /** @default your account with Google Analytics, Google Search Console or Yandex Metrica */
+            Integrate_to_use_the_tool_3: string;
+            /** @default Methods */
+            Methods_of_research: string;
+            /** @default Popular */
+            Popular: string;
+            /** @default Other */
+            Other: string;
+            /** @default Clustering */
+            Clustering_in_process: string;
+            /** @default Clustering type */
+            Clustering_type: string;
+            /** @default Name A-Z */
+            Name_az: string;
+            /** @default Name Z-A */
+            Name_za: string;
+            /** @default Apply to selected keywords */
+            Apply_to_selected: string;
+            /** @default keyword(s) */
+            items_number: string;
+            /** @default Assign target URL */
+            Assign_target: string;
+            /** @default Enter URL */
+            Landing_enter_URL: string;
+            /** @default Cancel */
+            Reset: string;
+            /** @default Global */
+            Without_region: string;
+            /** @default Total search volume of a keyword group */
+            Total_exact_ams: string;
+            /** @default Total search volume of keywords in project */
+            Total_exact_ams_of_project: string;
+            /** @default Find and replace */
+            Find_replace: string;
+            /** @default Find and replace target URLs */
+            Find_replace_target_links: string;
+            /** @default Move keywords by substring */
+            Move_by_substrings: string;
+            /** @default Whole words */
+            Move_by_substrings_whole_words: string;
+            /** @default All keywords in which at least one of the specified substrings is found will be moved to the specified group. Example: When specifying the "a" substring, all keywords with the letter "a" will be moved. */
+            Move_by_substrings_info: string;
+            /** @default F */
+            Filter_short: string;
+            /** @default Tag */
+            Tag: string;
+            /** @default Change */
+            Change: string;
+            /** @default Find */
+            Find: string;
+            /** @default  Replace with */
+            Replace: string;
+            /** @default Add words or phrases to replace */
+            Add_keyword_to_replace: string;
+            /** @default These words or phrases will be automatically replaced. */
+            Keyword_will_be_replaced: string;
+            /** @default Points */
+            Tetris_points: string;
+            /** @default Best score */
+            Tetris_best_score: string;
+            /** @default Game over */
+            Tetris_game_over: string;
+            /** @default Play again */
+            Tetris_play_again: string;
+            /** @default Sources */
+            Hints_data_sources: string;
+            /** @default You have successfully added keywords */
+            CONTROLLER_Phrases_added: string;
+            /** @default skipped duplicate keywords */
+            CONTROLLER_phrases_missed: string;
+            /** @default moved (changed) keywords */
+            CONTROLLER_phrases_moved: string;
+            /** @default Keywords */
+            CONTROLLER_Semantic_kernel: string;
+            /** @default Nested folder limit */
+            Folder_max_depth: string;
+            /** @default Select search engine */
+            Choose_searcher: string;
+            /** @default Select location */
+            Choose_region: string;
+            /** @default Select locations */
+            Choose_regions: string;
+            /** @default Select search engine and location */
+            Choose_searcher_and_region: string;
+            /** @default Select competitor */
+            Choose_competitor: string;
+            /** @default Choose group */
+            Choose_group: string;
+            /** @default My project */
+            Main_project: string;
+            /** @default No ranked URL */
+            Without_relevant_url: string;
+            /** @default Not tracked */
+            Not_checked: string;
+            /** @default Exclude all phrases with negative keywords (Google and Yandex) */
+            Set_phrases_minus: string;
+            /** @default Negative keywords */
+            Negative_words: string;
+            /** @default Update expired search volume */
+            Check_old_searches: string;
+            /** @default Group id */
+            Group_id: string;
+            /** @default Project id */
+            Project_id: string;
+            /** @default Keyword id */
+            Keyword_id: string;
+            /** @default Keyword folder id */
+            Keyword_folder_id: string;
+            /** @default Folder */
+            Folder_path: string;
+            /** @default Keyword rank */
+            Keyword_rank: string;
+            /** @default Keyword count */
+            Keyword_count: string;
+            /** @default Sorting order */
+            Sorting_order: string;
+            /** @default Keyword clustering completed */
+            Keyword_clustering_completed: string;
+            /** @default Send to Email */
+            Send_to_email: string;
+            /** @default Collect data for */
+            Data_will_be_pulled_for: string;
+            /** @default ; total count */
+            total_count: string;
+            /** @default Enter keywords */
+            Enter_keywords: string;
+            /** @default Upload from file */
+            Upload_from_file: string;
+            /** @default Selected */
+            Selected: string;
+            /** @default Keyword export */
+            Keyword_export: string;
+            /** @default Group export */
+            Group_export: string;
+            /** @default Copy to clipboard */
+            Copy_to_clipboard: string;
+            /** @default Copy to clipboard (up to %max% keywords) */
+            Copy_to_clipboard_up_to: string;
+            /** @default Copy and transfer */
+            To_copy_and_move: string;
+            /** @default <b>Important!</b><br>Are you sure you want to delete selected keywords? */
+            To_delete_keywords_warning: string;
+            /** @default <b>Important!</b><br><br>If you delete a folder, its contents (subfolders, groups, keywords) will be deleted immediately */
+            To_delete_folder_warning: string;
+            /** @default Restore selected keywords */
+            Restore_selected_keywords: string;
+            /** @default Restore selected folders */
+            Restore_selected_folders: string;
+            /** @default If you restore the group, all folders and keywords in the group will be restored immediately */
+            Restore_selected_groups_restores_contents: string;
+            /** @default Restore */
+            Restore: string;
+            /** @default or drag and drop here */
+            or_drag_here: string;
+            /** @default (txt or csv - max 10 Mb) */
+            txt_csv_max_size: string;
+            /** @default Drop file */
+            Drop_file: string;
+            /** @default File uploaded */
+            File_uploaded: string;
+            /** @default Disable floating bar */
+            Disable_floating_bar: string;
+            /** @default Temporary bin */
+            Temporary_bin: string;
+            /** @default Assign Target = Ranked URL from the last check */
+            Set_target_equals_relevant: string;
+            /** @default Import target links */
+            Import_target_links: string;
+            /** @default Total selected keywords */
+            Total_selected: string;
+            /** @default Keyword length */
+            Keyword_length: string;
+            /** @default XLSX (Tabs) */
+            XSLX_tabs: string;
+            /** @default Prepare */
+            Prepare: string;
+            /** @default Enter a name of a new group */
+            Enter_name_of_new_group: string;
+            /** @default Manage columns */
+            Manage_columns: string;
+            /** @default Max period - 1 year */
+            Max_period_one_year: string;
+            /** @default Target = Ranked URL from the last check in the location */
+            Target_equals_relevant_lastcheck_in_location: string;
+            /** @default Do not overwrite assigned target links */
+            Do_not_overwrite_assigned_target_links: string;
+            /** @default Количество страниц (макс.) */
+            Sy_wordstat_max_pages: string;
+            /** @default Keyword research status */
+            Research_status: string;
+            /** @default Group activity status */
+            Activity_status: string;
+            /** @default No Target URL */
+            No_target_URL: string;
+            /** @default Move to another project */
+            Move_keywords_to_another_project: string;
+            /** @default Transfer (delete from the orginal project) */
+            Move_group_and_delete_from_orginal_project: string;
+            /** @default To transfer and delete from the original project */
+            Keywords_to_transfer_and_delete_from_project: string;
+            /** @default Remove plus symbols, full stops, commas, apostrophes, quotes */
+            Remove_pluses_fullstops_commas_apostrophes_quotes: string;
+            /** @default Volume isn't collected. Follow <a href="/ru/support/keywords/volume/" target="_blank">this manual</a> to collect volume.<br><br>
+             *     For some keywords search volume is displayed because we store volume in a common database without linking it to a particular user: if other users checked it, it would be automatically pulled from the database. But note that such volume could be outdated. */
+            HintVolumeNoCollected: string;
         };
     };
     responses: never;

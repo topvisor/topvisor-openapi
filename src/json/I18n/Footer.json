@@ -11,217 +11,288 @@
                 "type": "object",
                 "properties": {
                     "Suggestions_tool": {
-                        "const": "Search Suggestions Tool"
+                        "default": "Search Suggestions Tool",
+                        "type": "string"
                     },
                     "Rank_and_SERP_top_cheking": {
-                        "const": "Rank and SERP Top checking"
+                        "default": "Rank and SERP Top checking",
+                        "type": "string"
                     },
                     "Semantics": {
-                        "const": "Semantics"
+                        "default": "Semantics",
+                        "type": "string"
                     },
                     "Technical_SEO": {
-                        "const": "Technical SEO"
+                        "default": "Technical SEO",
+                        "type": "string"
                     },
                     "Miscellaneous": {
-                        "const": "Miscellaneous"
+                        "default": "Miscellaneous",
+                        "type": "string"
                     },
                     "About_us": {
-                        "const": "About us"
+                        "default": "About us",
+                        "type": "string"
                     },
                     "Resources": {
-                        "const": "Resources"
+                        "default": "Resources",
+                        "type": "string"
                     },
                     "Questions": {
-                        "const": "Got any questions?"
+                        "default": "Got any questions?",
+                        "type": "string"
                     },
                     "Grouping_tool": {
-                        "const": "Keyword Grouping Tool"
+                        "default": "Keyword Grouping Tool",
+                        "type": "string"
                     },
                     "Research_tool": {
-                        "const": "Keyword Research Tool"
+                        "default": "Keyword Research Tool",
+                        "type": "string"
                     },
                     "Site_auditor": {
-                        "const": "Website SEO Audit Tool"
+                        "default": "Website SEO Audit Tool",
+                        "type": "string"
                     },
                     "Site_watcher": {
-                        "const": "Website Watcher (change tracking)"
+                        "default": "Website Watcher (change tracking)",
+                        "type": "string"
                     },
                     "SERP_snapshots_tool": {
-                        "const": "SERP Snapshots Tool"
+                        "default": "SERP Snapshots Tool",
+                        "type": "string"
                     },
                     "Index_checker_tool": {
-                        "const": "Index Status checker"
+                        "default": "Index Status checker",
+                        "type": "string"
                     },
                     "Search_volume_tool": {
-                        "const": "Search Volume Tool"
+                        "default": "Search Volume Tool",
+                        "type": "string"
                     },
                     "Sitemap_generator": {
-                        "const": "Sitemap generator"
+                        "default": "Sitemap generator",
+                        "type": "string"
                     },
                     "Magnet_tool": {
-                        "const": "Magnet (keyword ideas)"
+                        "default": "Magnet (keyword ideas)",
+                        "type": "string"
                     },
                     "Semantic_core": {
-                        "const": "Semantic core tools"
+                        "default": "Semantic core tools",
+                        "type": "string"
                     },
                     "PPC_bid_manager": {
-                        "const": "PPC Bid Manager"
+                        "default": "PPC Bid Manager",
+                        "type": "string"
                     },
                     "Competitor_research": {
-                        "const": "Competitor research"
+                        "default": "Competitor research",
+                        "type": "string"
                     },
                     "Domain_name_transfer": {
-                        "const": "Domain name transfer"
+                        "default": "Domain name transfer",
+                        "type": "string"
                     },
                     "Domain_name_registration": {
-                        "const": "Domain name registration"
+                        "default": "Domain name registration",
+                        "type": "string"
                     },
                     "Whois": {
-                        "const": "Whois (Domain details)"
+                        "default": "Whois (Domain details)",
+                        "type": "string"
                     },
                     "Case_championship": {
-                        "const": "Case championship"
+                        "default": "Case championship",
+                        "type": "string"
                     },
                     "Apometr_tool": {
-                        "const": "Updates Scanner"
+                        "default": "Updates Scanner",
+                        "type": "string"
                     },
                     "Reference": {
-                        "const": "Reference"
+                        "default": "Reference",
+                        "type": "string"
                     },
                     "API": {
-                        "const": "API Documentation"
+                        "default": "API Documentation",
+                        "type": "string"
                     },
                     "Referrals": {
-                        "const": "Affiliate program"
+                        "default": "Affiliate program",
+                        "type": "string"
                     },
                     "Pricing": {
-                        "const": "Tools and prices"
+                        "default": "Tools and prices",
+                        "type": "string"
                     },
                     "Sales": {
-                        "const": "Sales"
+                        "default": "Sales",
+                        "type": "string"
                     },
                     "Help": {
-                        "const": "Help & Support"
+                        "default": "Help & Support",
+                        "type": "string"
                     },
                     "Help_center": {
-                        "const": "Help Center"
+                        "default": "Help Center",
+                        "type": "string"
                     },
                     "Chat": {
-                        "const": "Live Chat"
+                        "default": "Live Chat",
+                        "type": "string"
                     },
                     "Join_vkontakte": {
-                        "const": "Join us on Vkontakte"
+                        "default": "Join us on Vkontakte",
+                        "type": "string"
                     },
                     "Join_twitter": {
-                        "const": "Follow us on Twitter"
+                        "default": "Follow us on Twitter",
+                        "type": "string"
                     },
                     "Join_telegram": {
-                        "const": "Telegram channel"
+                        "default": "Telegram channel",
+                        "type": "string"
                     },
                     "Join_youtube": {
-                        "const": "Youtube channel"
+                        "default": "Youtube channel",
+                        "type": "string"
                     },
                     "Website_rank_tracker": {
-                        "const": "Rank Tracker Tool"
+                        "default": "Rank Tracker Tool",
+                        "type": "string"
                     },
                     "Free_rank_checking": {
-                        "const": "Free rank checker"
+                        "default": "Free rank checker",
+                        "type": "string"
                     },
                     "Cases": {
-                        "const": "Best practices"
+                        "default": "Best practices",
+                        "type": "string"
                     },
                     "URL_Shortener_policy": {
-                        "const": "URL Shortener policy"
+                        "default": "URL Shortener policy",
+                        "type": "string"
                     },
                     "Privacy_policy": {
-                        "const": "Privacy Policy"
+                        "default": "Privacy Policy",
+                        "type": "string"
                     },
                     "Chrome_extension": {
-                        "const": "Search results numbering extension for Google Chrome"
+                        "default": "Search results numbering extension for Google Chrome",
+                        "type": "string"
                     },
                     "Firefox_extension": {
-                        "const": "Search results numbering extension for Firefox"
+                        "default": "Search results numbering extension for Firefox",
+                        "type": "string"
                     },
                     "Safari_extension": {
-                        "const": "Safari extension"
+                        "default": "Safari extension",
+                        "type": "string"
                     },
                     "iOS_app": {
-                        "const": "iOS Mobile app"
+                        "default": "iOS Mobile app",
+                        "type": "string"
                     },
                     "Android_app": {
-                        "const": "Android Mobile app"
+                        "default": "Android Mobile app",
+                        "type": "string"
                     },
                     "Electronic_workflow_system": {
-                        "const": "Electronic document workflow"
+                        "default": "Electronic document workflow",
+                        "type": "string"
                     },
                     "Legal_payment": {
-                        "const": "Company payment"
+                        "default": "Company payment",
+                        "type": "string"
                     },
                     "Support_ticket_system": {
-                        "const": "Support Ticket System"
+                        "default": "Support Ticket System",
+                        "type": "string"
                     },
                     "Contact_details": {
-                        "const": "Contact details"
+                        "default": "Contact details",
+                        "type": "string"
                     },
                     "INN": {
-                        "const": "INN"
+                        "default": "INN",
+                        "type": "string"
                     },
                     "KPP": {
-                        "const": "KPP"
+                        "default": "KPP",
+                        "type": "string"
                     },
                     "OGRN": {
-                        "const": "OGRN"
+                        "default": "OGRN",
+                        "type": "string"
                     },
                     "OKVED": {
-                        "const": "OKVED"
+                        "default": "OKVED",
+                        "type": "string"
                     },
                     "Business_card": {
-                        "const": "Business card"
+                        "default": "Business card",
+                        "type": "string"
                     },
                     "Presentation": {
-                        "const": "Presentation"
+                        "default": "Presentation",
+                        "type": "string"
                     },
                     "Cookie_policy": {
-                        "const": "Cookie Policy"
+                        "default": "Cookie Policy",
+                        "type": "string"
                     },
                     "Payment_methods": {
-                        "const": "Payment Methods"
+                        "default": "Payment Methods",
+                        "type": "string"
                     },
                     "Mincom_accreditation": {
-                        "const": "Certified by Ministry of Communications of Russia"
+                        "default": "Certified by Ministry of Communications of Russia",
+                        "type": "string"
                     },
                     "Friends": {
-                        "const": "Our Friends"
+                        "default": "Our Friends",
+                        "type": "string"
                     },
                     "Trademark": {
-                        "const": "Trademark"
+                        "default": "Trademark",
+                        "type": "string"
                     },
                     "included_into_Russian_software_register": {
-                        "const": "included into Russian software register"
+                        "default": "included into Russian software register",
+                        "type": "string"
                     },
                     "Contract_public_offer": {
-                        "const": "Contract (public offer)"
+                        "default": "Contract (public offer)",
+                        "type": "string"
                     },
                     "Referral_program": {
-                        "const": "Affiliate program"
+                        "default": "Affiliate program",
+                        "type": "string"
                     },
                     "Referral_agreement": {
-                        "const": "Affiliate offer agreement"
+                        "default": "Affiliate offer agreement",
+                        "type": "string"
                     },
                     "Delegate_us_routine_slogan": {
-                        "const": "Delegate us all routine and enjoy your job!"
+                        "default": "Delegate us all routine and enjoy your job!",
+                        "type": "string"
                     },
                     "Social_links": {
-                        "const": "Follow us"
+                        "default": "Follow us",
+                        "type": "string"
                     },
                     "Add_numbers_search_results": {
-                        "const": "Numerate listings right on<br> the search results page"
+                        "default": "Numerate listings right on<br> the search results page",
+                        "type": "string"
                     },
                     "Install_for": {
-                        "const": "Install for"
+                        "default": "Install for",
+                        "type": "string"
                     },
                     "Email_us_contact": {
-                        "const": "We are eager to help! Email us"
+                        "default": "We are eager to help! Email us",
+                        "type": "string"
                     }
                 },
                 "required": [

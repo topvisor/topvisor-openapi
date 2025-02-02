@@ -8,110 +8,110 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         "I18n.Tickets": {
-            /** @constant */
-            Reply_Title: "Ticket reply";
-            /** @constant */
-            Reply_notice: "When replying to the ticket, please do not change the topic";
-            /** @constant */
-            Auto_message_title: "Thank you, your ticket has been submitted";
-            /** @constant */
-            Open_tickets: "Open";
-            /** @constant */
-            Closed_tickets: "Closed";
-            /** @constant */
-            Close_ticket: "Close ticket";
-            /** @constant */
-            Open_ticket: "Open ticket";
-            /** @constant */
-            Add_to_favorites: "Add to favorites";
-            /** @constant */
-            Remove_from_favorites: "Remove from favorites";
-            /** @constant */
-            Continue_in_new_ticket: "Continue in new ticket";
-            /** @constant */
-            Quote_message: "Quote message";
-            /** @constant */
-            Edit_message: "Edit message";
-            /** @constant */
-            Delete_message: "Delete message";
-            /** @constant */
-            User_info: "User info";
-            /** @constant */
-            Device: "Device";
-            /** @constant */
-            Browser: "Browser";
-            /** @constant */
-            Pricing_plan: "Pricing plan";
-            /** @constant */
-            Edit_template: "Edit template";
-            /** @constant */
-            Template_title: "Title";
-            /** @constant */
-            Add_msg: "Write a message";
-            /** @constant */
-            Delete_template: "Delete template";
-            /** @constant */
-            Found: "Results";
-            /** @constant */
-            Search_tickets: "Search tickets";
-            /** @constant */
-            New_ticket: "Create ticket";
-            /** @constant */
-            Reopen_ticket: "Reopen ticket";
-            /** @constant */
-            Text_welcome_1: "Select a ticket or";
-            /** @constant */
-            Text_welcome_2: "create a new one";
-            /** @constant */
-            Text_welcome_3: "to contact Customer Support";
-            /** @constant */
-            Text_new_ticket_1: "Please describe the problem or ask a question";
-            /** @constant */
-            Text_new_ticket_2: "We will get back to you shortly 💙";
-            /** @constant */
-            Ticket_source_page: "Ticket source page";
-            /** @constant */
-            Sound_mute: "Mute";
-            /** @constant */
-            Sound_pencil: "Pencil";
-            /** @constant */
-            Sound_magic_wand: "Magic wand";
-            /** @constant */
-            Sound_bounce: "Bounce";
-            /** @constant */
-            Sound_beep: "Beep";
-            /** @constant */
-            Sound_xylophone: "Xylophone";
-            /** @constant */
-            Sound_drums: "Drums";
-            /** @constant */
-            Average_expenses: "Average expenses";
-            /** @constant */
-            Bad: "Bad";
-            /** @constant */
-            Normal: "OK";
-            /** @constant */
-            Good: "Great!";
-            /** @constant */
-            Title_start: "Rate how the Support did their part";
-            /** @constant */
-            Title_finish: "Thanks for the feedback!";
-            /** @constant */
-            Text_start: "It'll help us to get better.";
-            /** @constant */
-            Text_good: "We'll keep it up.";
-            /** @constant */
-            Text_bad: "We'll improve our service.";
-            /** @constant */
-            Comment_title_good: "What did you particularly enjoy?";
-            /** @constant */
-            Comment_title_bad: "Tell us what was wrong — we'll do everything to get better!";
-            /** @constant */
-            Button_change_review: "Change the feedback";
-            /** @constant */
-            Online: "Online";
-            /** @constant */
-            Visited: "Last seen";
+            /** @default Ticket reply */
+            Reply_Title: string;
+            /** @default When replying to the ticket, please do not change the topic */
+            Reply_notice: string;
+            /** @default Thank you, your ticket has been submitted */
+            Auto_message_title: string;
+            /** @default Open */
+            Open_tickets: string;
+            /** @default Closed */
+            Closed_tickets: string;
+            /** @default Close ticket */
+            Close_ticket: string;
+            /** @default Open ticket */
+            Open_ticket: string;
+            /** @default Add to favorites */
+            Add_to_favorites: string;
+            /** @default Remove from favorites */
+            Remove_from_favorites: string;
+            /** @default Continue in new ticket */
+            Continue_in_new_ticket: string;
+            /** @default Quote message */
+            Quote_message: string;
+            /** @default Edit message */
+            Edit_message: string;
+            /** @default Delete message */
+            Delete_message: string;
+            /** @default User info */
+            User_info: string;
+            /** @default Device */
+            Device: string;
+            /** @default Browser */
+            Browser: string;
+            /** @default Pricing plan */
+            Pricing_plan: string;
+            /** @default Edit template */
+            Edit_template: string;
+            /** @default Title */
+            Template_title: string;
+            /** @default Write a message */
+            Add_msg: string;
+            /** @default Delete template */
+            Delete_template: string;
+            /** @default Results */
+            Found: string;
+            /** @default Search tickets */
+            Search_tickets: string;
+            /** @default Create ticket */
+            New_ticket: string;
+            /** @default Reopen ticket */
+            Reopen_ticket: string;
+            /** @default Select a ticket or */
+            Text_welcome_1: string;
+            /** @default create a new one */
+            Text_welcome_2: string;
+            /** @default to contact Customer Support */
+            Text_welcome_3: string;
+            /** @default Please describe the problem or ask a question */
+            Text_new_ticket_1: string;
+            /** @default We will get back to you shortly 💙 */
+            Text_new_ticket_2: string;
+            /** @default Ticket source page */
+            Ticket_source_page: string;
+            /** @default Mute */
+            Sound_mute: string;
+            /** @default Pencil */
+            Sound_pencil: string;
+            /** @default Magic wand */
+            Sound_magic_wand: string;
+            /** @default Bounce */
+            Sound_bounce: string;
+            /** @default Beep */
+            Sound_beep: string;
+            /** @default Xylophone */
+            Sound_xylophone: string;
+            /** @default Drums */
+            Sound_drums: string;
+            /** @default Average expenses */
+            Average_expenses: string;
+            /** @default Bad */
+            Bad: string;
+            /** @default OK */
+            Normal: string;
+            /** @default Great! */
+            Good: string;
+            /** @default Rate how the Support did their part */
+            Title_start: string;
+            /** @default Thanks for the feedback! */
+            Title_finish: string;
+            /** @default It'll help us to get better. */
+            Text_start: string;
+            /** @default We'll keep it up. */
+            Text_good: string;
+            /** @default We'll improve our service. */
+            Text_bad: string;
+            /** @default What did you particularly enjoy? */
+            Comment_title_good: string;
+            /** @default Tell us what was wrong — we'll do everything to get better! */
+            Comment_title_bad: string;
+            /** @default Change the feedback */
+            Button_change_review: string;
+            /** @default Online */
+            Online: string;
+            /** @default Last seen */
+            Visited: string;
         };
     };
     responses: never;

@@ -8,192 +8,198 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         "I18n.Audit.Scan": {
-            /** @constant */
-            Settings: "Audit settings";
-            /** @constant */
-            Please_add_urls: "Please, add urls for checking";
-            /** @constant */
-            bar: "bar";
-            /** @constant */
-            menu: {
-                log: "Scan Log";
-                summary: "Summary";
-                pages: "Pages";
-                links: "Links";
-                images: "Images";
-                js: "JavaScript";
-                css: "CSS";
-                "domain/common": "Common";
-                "pages/summary": "Pages";
-                "pages/indexing": "Indexing";
-                "pages/content": "Content";
-                "pages/schema": "Structured Data";
-                "pages/webVitals": "Performance (Core Web Vitals)";
-                "pages/og": "Open Graph";
-                "links/links": "Links";
-                "images/images": "Images";
-                "js/js": "JavaScript";
-                "css/css": "CSS";
-            };
-            /** @constant */
-            checkInfo: {
-                checking: "Checking...";
-                time_start: "Started time";
-                time_finish: "Finished time";
-                "DURATION()": "Duration";
-                count_pages: "Pages in audit";
-                count_all: "Count finished";
-                robot_step: "Current step";
-                robot_step_next: "Next step";
-            };
-            /** @constant */
-            checkInfoHints: {
-                time_start: "";
-                time_finish: "";
-                "DURATION()": "";
-                count_all: "";
-                step: "";
-                step_next: "";
-            };
-            /** @constant */
-            checkSteps: {
-                genTasks: "Gen Tasks";
-                auditSitemap: "Sitemap";
-                auditPages: "Check pages";
-                auditImages: "Check images";
-                auditLinks: "Check links";
-                auditJS: "Check JS";
-                auditCSS: "Check CSS";
-                auditAnalyze: "Analyze";
-                save: "Saving";
-                closeTask: "Finishing";
-            };
-            /** @constant */
-            summaryCharts: {
-                count_pages: "Number of pages";
-                count_problems: "Number of problems";
-                count_3xx: "3XX";
-                count_4xx: "4XX";
-                count_5xx: "5XX";
-            };
-            /** @constant */
-            Already_started: "Audit already started";
-            /** @constant */
-            FilterTime2: "Filter, until the time:";
-            /** @constant */
-            HTTPCodeHundred0: "No response";
-            /** @constant */
-            FieldContent: "Text (content)";
-            /** @constant */
-            FieldTitle: "Text (title)";
-            /** @constant */
-            FieldBroken: "«Broken»";
-            /** @constant */
-            FieldCount: "Pages";
-            /** @constant */
-            FieldHTTPCodes: "Status";
-            /** @constant */
-            FieldTitleDbl: "Duplicates\nTitle";
-            /** @constant */
-            FieldDescriptionDbl: "Duplicates\nDescription";
-            /** @constant */
-            FieldBacklinksInnerCount: "Back Links\ninner";
-            /** @constant */
-            FieldTextLength: "Text length";
-            /** @constant */
-            FieldCompression: "Compress";
-            /** @constant */
-            FieldCacheType: "Cache type";
-            /** @constant */
-            FieldCacheTime: "Cache time";
-            /** @constant */
-            FieldCacheValidator: "Cache validator";
-            /** @constant */
-            FieldRobotsTXTBlocked: "Disallow\nrobots.txt";
-            /** @constant */
-            FieldCheckRobotsTXTAllowed: "Allow\nrobots.txt";
-            /** @constant */
-            FieldSitemapXMLMention: "Exists\nsitemap.xml";
-            /** @constant */
-            FieldLinksCount: "Links";
-            /** @constant */
-            FieldTLSVersion: "TLS version";
-            /** @constant */
-            FieldCacheable: "Cacheable";
-            /** @constant */
-            FieldAlt: "Alt";
-            /** @constant */
-            FieldSize: "Size";
-            /** @constant */
-            FieldExtension: "Extension";
-            /** @constant */
-            FieldContentType: "Content-Type";
-            /** @constant */
-            FieldModernFormat: "Modern Format";
-            /** @constant */
-            FieldMinified: "Minified";
-            /** @constant */
-            FieldRenderBlocking: "Render blocking";
-            /** @constant */
-            FieldType: "Type";
-            /** @constant */
-            FieldLoadingTime: "Loading time";
-            /** @constant */
-            FilterSignalNone: "All checks";
-            /** @constant */
-            FilterSignalWarnings: "With warnings";
-            /** @constant */
-            FilterSignalErrors: "With erors";
-            /** @constant */
-            FilterSignalSignals: "All problems";
-            /** @constant */
-            DialogPagesWithTitleDbl: "Pages with duplicates Title";
-            /** @constant */
-            DialogPagesWithDescriptionDbl: "Pages with duplicates Desccription";
-            /** @constant */
-            DialogPagesWithLink: "Pages with link";
-            /** @constant */
-            DialogPagesWithImage: "Pages with image";
-            /** @constant */
-            DialogPagesWithJS: "Pages with JavaScript";
-            /** @constant */
-            DialogPagesWithCSS: "Pages with CSS";
-            /** @constant */
-            DialogSummaryPage: "Summary Page";
-            /** @constant */
-            DialogResources_links: "Links on page";
-            /** @constant */
-            DialogResources_images: "Images on page";
-            /** @constant */
-            DialogResources_css: "CSS on page";
-            /** @constant */
-            DialogResources_js: "JS on page";
-            /** @constant */
-            Category: "Category";
-            /** @constant */
-            WhatIsIt: "What is it?";
-            /** @constant */
-            HowToResolveIt: "How to resolve it?";
-            /** @constant */
-            Warnings: "Warnings";
-            /** @constant */
-            Errors: "Errors";
-            /** @constant */
-            Problems: "All problems";
-            /** @constant */
-            Hint_not_urls_text: "Add URLs manually or enable website crawling to perform Website Audit.<br>🤖 <a href=\"/website-auditor/\" target=\"_blank\">What Website Audit shows →</a>";
-            /** @constant */
-            Hint_not_urls_btn: "Add URLs";
-            /** @constant */
-            Hint_not_checks_text: "You've never launched Website Audit in this project.<br>🤖 <a href=\"/website-auditor/\" target=\"_blank\">What Website Audit shows →</a>";
-            /** @constant */
-            Hint_not_checks_btn: "Launch Website Audit";
-            /** @constant */
-            Hint_not_PageSpeed_Insights_API_key_1: "You didn't specify PageSpeed Insights API&#8209;key when launching Website Audit. Add API-key";
-            /** @constant */
-            Hint_not_PageSpeed_Insights_API_key_2: "in Audit Settings";
-            /** @constant */
-            Hint_not_PageSpeed_Insights_API_key_3: "and launch Audit once more.";
+            /** @default Audit settings */
+            Settings: string;
+            /** @default Please, add urls for checking */
+            Please_add_urls: string;
+            /** @default bar */
+            bar: string;
+            /** @default {
+             *       "log": "Scan Log",
+             *       "summary": "Summary",
+             *       "pages": "Pages",
+             *       "links": "Links",
+             *       "images": "Images",
+             *       "js": "JavaScript",
+             *       "css": "CSS",
+             *       "domain/common": "Common",
+             *       "pages/summary": "Pages",
+             *       "pages/indexing": "Indexing",
+             *       "pages/content": "Content",
+             *       "pages/schema": "Structured Data",
+             *       "pages/webVitals": "Performance (Core Web Vitals)",
+             *       "pages/og": "Open Graph",
+             *       "links/links": "Links",
+             *       "images/images": "Images",
+             *       "js/js": "JavaScript",
+             *       "css/css": "CSS"
+             *     } */
+            menu: (string | number)[];
+            /** @default {
+             *       "checking": "Checking...",
+             *       "time_start": "Started time",
+             *       "time_finish": "Finished time",
+             *       "DURATION()": "Duration",
+             *       "count_pages": "Pages in audit",
+             *       "count_all": "Count finished",
+             *       "robot_step": "Current step",
+             *       "robot_step_next": "Next step"
+             *     } */
+            checkInfo: (string | number)[];
+            /** @default {
+             *       "time_start": "",
+             *       "time_finish": "",
+             *       "DURATION()": "",
+             *       "count_all": "",
+             *       "step": "",
+             *       "step_next": ""
+             *     } */
+            checkInfoHints: (string | number)[];
+            /** @default {
+             *       "genTasks": "Gen Tasks",
+             *       "auditSitemap": "Sitemap",
+             *       "auditPages": "Check pages",
+             *       "auditImages": "Check images",
+             *       "auditLinks": "Check links",
+             *       "auditJS": "Check JS",
+             *       "auditCSS": "Check CSS",
+             *       "auditAnalyze": "Analyze",
+             *       "save": "Saving",
+             *       "closeTask": "Finishing"
+             *     } */
+            checkSteps: (string | number)[];
+            /** @default {
+             *       "count_pages": "Number of pages",
+             *       "count_problems": "Number of problems",
+             *       "count_3xx": "3XX",
+             *       "count_4xx": "4XX",
+             *       "count_5xx": "5XX"
+             *     } */
+            summaryCharts: (string | number)[];
+            /** @default Audit already started */
+            Already_started: string;
+            /** @default Filter, until the time: */
+            FilterTime2: string;
+            /** @default No response */
+            HTTPCodeHundred0: string;
+            /** @default Text (content) */
+            FieldContent: string;
+            /** @default Text (title) */
+            FieldTitle: string;
+            /** @default «Broken» */
+            FieldBroken: string;
+            /** @default Pages */
+            FieldCount: string;
+            /** @default Status */
+            FieldHTTPCodes: string;
+            /** @default Duplicates
+             *     Title */
+            FieldTitleDbl: string;
+            /** @default Duplicates
+             *     Description */
+            FieldDescriptionDbl: string;
+            /** @default Back Links
+             *     inner */
+            FieldBacklinksInnerCount: string;
+            /** @default Text length */
+            FieldTextLength: string;
+            /** @default Compress */
+            FieldCompression: string;
+            /** @default Cache type */
+            FieldCacheType: string;
+            /** @default Cache time */
+            FieldCacheTime: string;
+            /** @default Cache validator */
+            FieldCacheValidator: string;
+            /** @default Disallow
+             *     robots.txt */
+            FieldRobotsTXTBlocked: string;
+            /** @default Allow
+             *     robots.txt */
+            FieldCheckRobotsTXTAllowed: string;
+            /** @default Exists
+             *     sitemap.xml */
+            FieldSitemapXMLMention: string;
+            /** @default Links */
+            FieldLinksCount: string;
+            /** @default TLS version */
+            FieldTLSVersion: string;
+            /** @default Cacheable */
+            FieldCacheable: string;
+            /** @default Alt */
+            FieldAlt: string;
+            /** @default Size */
+            FieldSize: string;
+            /** @default Extension */
+            FieldExtension: string;
+            /** @default Content-Type */
+            FieldContentType: string;
+            /** @default Modern Format */
+            FieldModernFormat: string;
+            /** @default Minified */
+            FieldMinified: string;
+            /** @default Render blocking */
+            FieldRenderBlocking: string;
+            /** @default Type */
+            FieldType: string;
+            /** @default Loading time */
+            FieldLoadingTime: string;
+            /** @default All checks */
+            FilterSignalNone: string;
+            /** @default With warnings */
+            FilterSignalWarnings: string;
+            /** @default With erors */
+            FilterSignalErrors: string;
+            /** @default All problems */
+            FilterSignalSignals: string;
+            /** @default Pages with duplicates Title */
+            DialogPagesWithTitleDbl: string;
+            /** @default Pages with duplicates Desccription */
+            DialogPagesWithDescriptionDbl: string;
+            /** @default Pages with link */
+            DialogPagesWithLink: string;
+            /** @default Pages with image */
+            DialogPagesWithImage: string;
+            /** @default Pages with JavaScript */
+            DialogPagesWithJS: string;
+            /** @default Pages with CSS */
+            DialogPagesWithCSS: string;
+            /** @default Summary Page */
+            DialogSummaryPage: string;
+            /** @default Links on page */
+            DialogResources_links: string;
+            /** @default Images on page */
+            DialogResources_images: string;
+            /** @default CSS on page */
+            DialogResources_css: string;
+            /** @default JS on page */
+            DialogResources_js: string;
+            /** @default Category */
+            Category: string;
+            /** @default What is it? */
+            WhatIsIt: string;
+            /** @default How to resolve it? */
+            HowToResolveIt: string;
+            /** @default Warnings */
+            Warnings: string;
+            /** @default Errors */
+            Errors: string;
+            /** @default All problems */
+            Problems: string;
+            /** @default Add URLs manually or enable website crawling to perform Website Audit.<br>🤖 <a href="/website-auditor/" target="_blank">What Website Audit shows →</a> */
+            Hint_not_urls_text: string;
+            /** @default Add URLs */
+            Hint_not_urls_btn: string;
+            /** @default You've never launched Website Audit in this project.<br>🤖 <a href="/website-auditor/" target="_blank">What Website Audit shows →</a> */
+            Hint_not_checks_text: string;
+            /** @default Launch Website Audit */
+            Hint_not_checks_btn: string;
+            /** @default You didn't specify PageSpeed Insights API&#8209;key when launching Website Audit. Add API-key */
+            Hint_not_PageSpeed_Insights_API_key_1: string;
+            /** @default in Audit Settings */
+            Hint_not_PageSpeed_Insights_API_key_2: string;
+            /** @default and launch Audit once more. */
+            Hint_not_PageSpeed_Insights_API_key_3: string;
         };
     };
     responses: never;

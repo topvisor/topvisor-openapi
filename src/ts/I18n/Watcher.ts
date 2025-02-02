@@ -8,63 +8,63 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         "I18n.Watcher": {
-            /** @constant */
-            Settings: "Watcher settings";
-            /** @constant */
-            menu: {
-                http_codes: "HTTP Code";
-                title: "Title";
-                description: "Description";
-                h1: "H1 Header";
-                content: "Content";
-            };
-            /** @constant */
-            Status_code: "Status";
-            /** @constant */
-            Without_changes: "Without changes";
-            /** @constant */
-            Fulltext: "Full text";
-            /** @constant */
-            Only_with_changed: "With changes";
-            /** @constant */
-            Header_start_short: "Track";
-            /** @constant */
-            Common_settings: "Common settings";
-            /** @constant */
-            Tracking: "Tracking";
-            /** @constant */
-            Cut_script: "Cut &lt;script&gt;";
-            /** @constant */
-            Scan_method: "Scan method";
-            /** @constant */
-            Strip_tags: "Text only / Cut tags";
-            /** @constant */
-            Change_history: "Change history: ";
-            /** @constant */
-            Hints_settings: {
-                watcher_max_redirects: "";
-                watcher_user_agent: "User Agent can affect how the bot sees the site and how DDoS protection works.";
-                audit_page_delay: "";
-                audit_resource_delay: "";
-                audit_use_cookie: "Turn this feature on, if your DDoS protection uses cookies.<br><br>But it may cause more personalized information in checks and they could be distorted.";
-                server_location: "Change server location to access blocked websites.";
-                watcher_ignore_js: "";
-                watcher_types: {
-                    title: "";
-                    description: "";
-                    h1: "";
-                    content: "";
-                };
-                watcher_strip_tags_from_result: "";
-            };
-            /** @constant */
-            Hint_not_urls_text: "Add URLs to launch Watcher.<br>📡 <a href=\"/watcher/\" target=\"_blank\">How Website Watcher can help you →</a>";
-            /** @constant */
-            Hint_not_urls_btn: "URLs";
-            /** @constant */
-            Hint_not_checks_text: "You've never launched Watcher in this project.<br>📡 <a href=\"/watcher/\" target=\"_blank\">How Website Watcher can help you →</a>";
-            /** @constant */
-            Hint_not_checks_btn: "Launch Watcher";
+            /** @default Watcher settings */
+            Settings: string;
+            /** @default {
+             *       "http_codes": "HTTP Code",
+             *       "title": "Title",
+             *       "description": "Description",
+             *       "h1": "H1 Header",
+             *       "content": "Content"
+             *     } */
+            menu: (string | number)[];
+            /** @default Status */
+            Status_code: string;
+            /** @default Without changes */
+            Without_changes: string;
+            /** @default Full text */
+            Fulltext: string;
+            /** @default With changes */
+            Only_with_changed: string;
+            /** @default Track */
+            Header_start_short: string;
+            /** @default Common settings */
+            Common_settings: string;
+            /** @default Tracking */
+            Tracking: string;
+            /** @default Cut &lt;script&gt; */
+            Cut_script: string;
+            /** @default Scan method */
+            Scan_method: string;
+            /** @default Text only / Cut tags */
+            Strip_tags: string;
+            /** @default Change history:  */
+            Change_history: string;
+            /** @default {
+             *       "watcher_max_redirects": "",
+             *       "watcher_user_agent": "User Agent can affect how the bot sees the site and how DDoS protection works.",
+             *       "audit_page_delay": "",
+             *       "audit_resource_delay": "",
+             *       "audit_use_cookie": "Turn this feature on, if your DDoS protection uses cookies.<br><br>But it may cause more personalized information in checks and they could be distorted.",
+             *       "server_location": "Change server location to access blocked websites.",
+             *       "watcher_ignore_js": "",
+             *       "watcher_types": {
+             *         "title": "",
+             *         "description": "",
+             *         "h1": "",
+             *         "content": ""
+             *       },
+             *       "watcher_strip_tags_from_result": ""
+             *     } */
+            Hints_settings: (string | number)[];
+            /** @default Add URLs to launch Watcher.<br>📡 <a href="/watcher/" target="_blank">How Website Watcher can help you →</a> */
+            Hint_not_urls_text: string;
+            /** @default URLs */
+            Hint_not_urls_btn: string;
+            /** @default You've never launched Watcher in this project.<br>📡 <a href="/watcher/" target="_blank">How Website Watcher can help you →</a> */
+            Hint_not_checks_text: string;
+            /** @default Launch Watcher */
+            Hint_not_checks_btn: string;
         };
     };
     responses: never;

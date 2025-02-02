@@ -11,85 +11,111 @@
                 "type": "object",
                 "properties": {
                     "User_registration_confirm": {
-                        "const": "Confirm your registration"
+                        "default": "Confirm your registration",
+                        "type": "string"
                     },
                     "User_accept_email_title": {
-                        "const": "Account details"
+                        "default": "Account details",
+                        "type": "string"
                     },
                     "user_accept_email_title_suffix_recommendations": {
-                        "const": ""
+                        "type": "string"
                     },
                     "User_PWD_msg_title2": {
-                        "const": "Password successfully changed"
+                        "default": "Password successfully changed",
+                        "type": "string"
                     },
                     "User_restore_access": {
-                        "const": "Recovering your password"
+                        "default": "Recovering your password",
+                        "type": "string"
                     },
                     "User_project_access": {
-                        "const": "Access granted"
+                        "default": "Access granted",
+                        "type": "string"
                     },
                     "User_registration_invite_mail_title": {
-                        "const": "Your friend invites you to sign up and get a double welcome bonus! 🤩"
+                        "default": "Your friend invites you to sign up and get a double welcome bonus! 🤩",
+                        "type": "string"
                     },
                     "User_change_confirm": {
-                        "const": "Confirm your email"
+                        "default": "Confirm your email",
+                        "type": "string"
                     },
                     "User_email_changed_msg": {
-                        "const": "Your email has been changed"
+                        "default": "Your email has been changed",
+                        "type": "string"
                     },
                     "User_projects_rights_title": {
-                        "const": "You have received access to the project."
+                        "default": "You have received access to the project.",
+                        "type": "string"
                     },
                     "User_projects_changeOwner_title": {
-                        "const": "Confirm project transfer."
+                        "default": "Confirm project transfer.",
+                        "type": "string"
                     },
                     "Integration_expires": {
-                        "const": "Update integration key"
+                        "default": "Update integration key",
+                        "type": "string"
                     },
                     "Integration_has_expired1": {
-                        "const": "Integration"
+                        "default": "Integration",
+                        "type": "string"
                     },
                     "Integration_has_expired2": {
-                        "const": "integration key has expired."
+                        "default": "integration key has expired.",
+                        "type": "string"
                     },
                     "Integration_access_error": {
-                        "const": "integration error"
+                        "default": "integration error",
+                        "type": "string"
                     },
                     "Project_report": {
-                        "const": "Report: Project dynamics."
+                        "default": "Report: Project dynamics.",
+                        "type": "string"
                     },
                     "Indexing_informer_title": {
-                        "const": "Index status: new changes detected."
+                        "default": "Index status: new changes detected.",
+                        "type": "string"
                     },
                     "Watcher_informer_title": {
-                        "const": "Website watcher: new changes detected."
+                        "default": "Website watcher: new changes detected.",
+                        "type": "string"
                     },
                     "Sitemap_changes_to_sitemap_email": {
-                        "const": "Sitemap: new changes detected."
+                        "default": "Sitemap: new changes detected.",
+                        "type": "string"
                     },
                     "Audit_informer_title": {
-                        "const": "Website audit is completed."
+                        "default": "Website audit is completed.",
+                        "type": "string"
                     },
                     "Total_indexed": {
-                        "const": "Total indexed"
+                        "default": "Total indexed",
+                        "type": "string"
                     },
                     "Dropped_from_index": {
-                        "const": "Dropped from index"
+                        "default": "Dropped from index",
+                        "type": "string"
                     },
                     "Got_indexed": {
-                        "const": "New indexed"
+                        "default": "New indexed",
+                        "type": "string"
                     },
                     "Tariff_due_to_expire": {
-                        "const": "Do not forget to renew your subscription"
+                        "default": "Do not forget to renew your subscription",
+                        "type": "string"
                     },
                     "Dogovor": {
-                        "const": "User agreement"
+                        "default": "User agreement",
+                        "type": "string"
                     },
                     "Ur_balance": {
-                        "const": "Balance is topped up"
+                        "default": "Balance is topped up",
+                        "type": "string"
                     },
                     "Payment_received": {
-                        "const": "Pyment has been received"
+                        "default": "Pyment has been received",
+                        "type": "string"
                     }
                 },
                 "required": [

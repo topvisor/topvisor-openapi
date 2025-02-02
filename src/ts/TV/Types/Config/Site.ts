@@ -9,50 +9,115 @@ export interface components {
     schemas: {
         /** Интерфейс настроек сайта */
         "TV.Types.Config.Site": {
-            /** @constant */
-            ID: "No set";
-            /** @constant */
-            ID_ASSETS: "No set";
-            /** @constant */
-            HOST: "No set";
-            /** @constant */
-            HOST_DEV: "No set";
-            /** @constant */
-            LANGUAGES: never[];
-            /** @constant */
-            LANGUAGE_MAIN: "No set";
-            /** @constant */
-            LANGUAGES_ADDITIONAL: never[];
-            /** @constant */
-            CURRENCIES: [
-                "No set"
-            ];
-            /** @constant */
-            SUBDOMAINS: never[];
-            /** @constant */
-            THEMES: never[];
-            /** @constant */
-            MAILING_EMAIL: "No set";
-            /** @constant */
-            MAILING_ALT_EMAIL: "No set";
-            /** @constant */
-            SUPPORT_EMAIL: "No set";
-            /** @constant */
-            NO_REPLY_EMAIL: "No set";
-            /** @constant */
-            CLOSED_BY_MOD: never[];
-            /** @constant */
-            INN: "No set";
-            /** @constant */
-            COUNTER_YANDEX: "No set";
-            /** @constant */
-            COUNTER_YANDEX_JOURNAL: "No set";
-            /** @constant */
-            COUNTER_GOOGLE: "No set";
-            /** @constant */
-            COUNTER_GOOGLE_JOURNAL: "No set";
-            /** @constant */
-            DIADOC_ID: 10000;
+            /**
+             * Ключ домена
+             * @description Используется в путях файлов и в БД
+             * @default No set
+             */
+            ID: string;
+            /**
+             * Аббревиатура ключа домена
+             * @description Используется в путях публичных ресурсов, например для файлов на CDN
+             * @default No set
+             */
+            ID_ASSETS: string;
+            /**
+             * Основной хост
+             * @default No set
+             */
+            HOST: string;
+            /**
+             * Основной хост для разработки
+             * @default No set
+             */
+            HOST_DEV: string;
+            /** Список поддерживаемых языков, ISO 639-1 */
+            LANGUAGES: (string | number)[];
+            /**
+             * Оснвоной язык, ISO 639-1
+             * @default No set
+             */
+            LANGUAGE_MAIN: string;
+            /**
+             * Список дополнительных языков, ISO 639-1
+             * @description При генерации url дополнительный язык добавляется в начало url в модуле контента
+             *
+             *     Аналогично `self::LANGUAGES`, без `self::LANGUAGE_MAIN`
+             */
+            LANGUAGES_ADDITIONAL: (string | number)[];
+            /**
+             * Список валют, используемых на сайте
+             * @default [
+             *       "No set"
+             *     ]
+             */
+            CURRENCIES: (string | number)[];
+            /**
+             * Список поддоменов
+             * @description Примеры:
+             *     - `''` для основного домена `example.com`
+             *     - `'subdomain'` для поддомена `subdomain.example.com`
+             */
+            SUBDOMAINS: (string | number)[];
+            /** Список поддерживаемых тем оформления */
+            THEMES: (string | number)[];
+            /**
+             * Почта рассыльщика
+             * @description Она же используется в тикетнице
+             * @default No set
+             */
+            MAILING_EMAIL: string;
+            /**
+             * Альтернативная почта рассыльщика
+             * @description Используется, если нужно отправлять почту от имени другого домена
+             *
+             *     Данная почта должна быть настроена на пересылку всех писем на MAILING_EMAIL
+             * @default No set
+             */
+            MAILING_ALT_EMAIL: string;
+            /**
+             * Почта поддержки, обычно alias MAILING_EMAIL
+             * @default No set
+             */
+            SUPPORT_EMAIL: string;
+            /**
+             * Почта рассыльщика, без приема ответов
+             * @default No set
+             */
+            NO_REPLY_EMAIL: string;
+            /**
+             * Словарь модулей, доступ к которым надо закрыть
+             * @description Формат ключа: `{{ page param 1 }}`, `{{ page param 1 }}/{{ page param 2 }}`
+             *
+             *     Значение: всегда true, значение игнорируется
+             *
+             *     @see Controller_2\Objects\Page::params
+             */
+            CLOSED_BY_MOD: (string | number)[];
+            /** @default No set */
+            INN: string;
+            /**
+             * Счетчик Яндекс метрики
+             * @default No set
+             */
+            COUNTER_YANDEX: string;
+            /**
+             * Счетчик Яндекс метрики для модуля Журнал
+             * @default No set
+             */
+            COUNTER_YANDEX_JOURNAL: string;
+            /**
+             * Счетчик Google Аналитики
+             * @default No set
+             */
+            COUNTER_GOOGLE: string;
+            /**
+             * Счетчик Google Аналитики для модуля Журнал
+             * @default No set
+             */
+            COUNTER_GOOGLE_JOURNAL: string;
+            /** @default 10000 */
+            DIADOC_ID: number;
         };
     };
     responses: never;

@@ -11,499 +11,664 @@
                 "type": "object",
                 "properties": {
                     "Filter": {
-                        "const": "Filter"
+                        "default": "Filter",
+                        "type": "string"
                     },
                     "All": {
-                        "const": "All"
+                        "default": "All",
+                        "type": "string"
                     },
                     "Active": {
-                        "const": "Active"
+                        "default": "Active",
+                        "type": "string"
                     },
                     "Inactive": {
-                        "const": "Inactive"
+                        "default": "Inactive",
+                        "type": "string"
                     },
                     "Draft": {
-                        "const": "Draft"
+                        "default": "Draft",
+                        "type": "string"
                     },
                     "Campaign_draft_status": {
-                        "const": "This campaign has a \"Draft\" status.<br> You can manage only active ads"
+                        "default": "This campaign has a \"Draft\" status.<br> You can manage only active ads",
+                        "type": "string"
                     },
                     "Configured": {
-                        "const": "Configured"
+                        "default": "Configured",
+                        "type": "string"
                     },
                     "Not_configured": {
-                        "const": "Not configured"
+                        "default": "Not configured",
+                        "type": "string"
                     },
                     "By_min_1GP": {
-                        "const": "Min. bid 1st GP"
+                        "default": "Min. bid 1st GP",
+                        "type": "string"
                     },
                     "By_min_GP": {
-                        "const": "Min. bid GP"
+                        "default": "Min. bid GP",
+                        "type": "string"
                     },
                     "By_min_1SP": {
-                        "const": "Min. bid 1st SP"
+                        "default": "Min. bid 1st SP",
+                        "type": "string"
                     },
                     "By_min_SP": {
-                        "const": "Min. bid SP"
+                        "default": "Min. bid SP",
+                        "type": "string"
                     },
                     "Min_bid": {
-                        "const": "Min. bid"
+                        "default": "Min. bid",
+                        "type": "string"
                     },
                     "No_ads": {
-                        "const": "This campaign has no ads or they<br> are not synced."
+                        "default": "This campaign has no ads or they<br> are not synced.",
+                        "type": "string"
                     },
                     "Refresh_list": {
-                        "const": "Update the list"
+                        "default": "Update the list",
+                        "type": "string"
                     },
                     "All_groups": {
-                        "const": "All groups"
+                        "default": "All groups",
+                        "type": "string"
                     },
                     "Regions": {
-                        "const": "Display regions"
+                        "default": "Display regions",
+                        "type": "string"
                     },
                     "Ad_number": {
-                        "const": "Ad № M"
+                        "default": "Ad № M",
+                        "type": "string"
                     },
                     "Keyword": {
-                        "const": "Keyword"
+                        "default": "Keyword",
+                        "type": "string"
                     },
                     "Impressions": {
-                        "const": "Impressions"
+                        "default": "Impressions",
+                        "type": "string"
                     },
                     "Clicks": {
-                        "const": "Clicks"
+                        "default": "Clicks",
+                        "type": "string"
                     },
                     "Block_bid": {
-                        "const": "Traffic volume / Bid"
+                        "default": "Traffic volume / Bid",
+                        "type": "string"
                     },
                     "Traffic_volume": {
-                        "const": "Traffic volume"
+                        "default": "Traffic volume",
+                        "type": "string"
                     },
                     "CPC": {
-                        "const": "CPC"
+                        "default": "CPC",
+                        "type": "string"
                     },
                     "MAX_price": {
-                        "const": "MAX bid"
+                        "default": "MAX bid",
+                        "type": "string"
                     },
                     "if_MAX_price_preceeded": {
-                        "const": "if MAX price<br> preceeded"
+                        "default": "if MAX price<br> preceeded",
+                        "type": "string"
                     },
                     "units": {
-                        "const": "units"
+                        "default": "units",
+                        "type": "string"
                     },
                     "New_bid": {
-                        "const": "Next<br>bid"
+                        "default": "Next<br>bid",
+                        "type": "string"
                     },
                     "Current_bid": {
-                        "const": "Current<br>bid"
+                        "default": "Current<br>bid",
+                        "type": "string"
                     },
                     "Cpc_search_results": {
-                        "const": "CPC on search<br> results page"
+                        "default": "CPC on search<br> results page",
+                        "type": "string"
                     },
                     "Apply_to_selected_keywords": {
-                        "const": "Apply to selected keywords"
+                        "default": "Apply to selected keywords",
+                        "type": "string"
                     },
                     "count": {
-                        "const": " "
+                        "default": " ",
+                        "type": "string"
                     },
                     "Adjustment_short": {
-                        "const": "Adj"
+                        "default": "Adj",
+                        "type": "string"
                     },
                     "Advertising_short": {
-                        "const": "Ad"
+                        "default": "Ad",
+                        "type": "string"
                     },
                     "Select_tactics": {
-                        "const": "Select tactics"
+                        "default": "Select tactics",
+                        "type": "string"
                     },
                     "Select_traffic_volume": {
-                        "const": "Select traffic volume"
+                        "default": "Select traffic volume",
+                        "type": "string"
                     },
                     "Select_position": {
-                        "const": "Select position"
+                        "default": "Select position",
+                        "type": "string"
                     },
                     "Set_price": {
-                        "const": "Set price"
+                        "default": "Set price",
+                        "type": "string"
                     },
                     "no_more": {
-                        "const": "no more"
+                        "default": "no more",
+                        "type": "string"
                     },
                     "Adjust_for_other_campaigns": {
-                        "const": "Apply to all campaigns"
+                        "default": "Apply to all campaigns",
+                        "type": "string"
                     },
                     "Show_hide_keywords": {
-                        "const": "Show / Hide keywords"
+                        "default": "Show / Hide keywords",
+                        "type": "string"
                     },
                     "Show_group_keywords": {
-                        "const": "Show group keywords"
+                        "default": "Show group keywords",
+                        "type": "string"
                     },
                     "Select_campaign": {
-                        "const": "Select campaign"
+                        "default": "Select campaign",
+                        "type": "string"
                     },
                     "Ad_groups": {
-                        "const": "Ad groups"
+                        "default": "Ad groups",
+                        "type": "string"
                     },
                     "Schedule": {
-                        "const": "Schedule"
+                        "default": "Schedule",
+                        "type": "string"
                     },
                     "Journal": {
-                        "const": "Journal"
+                        "default": "Journal",
+                        "type": "string"
                     },
                     "Integration_settings": {
-                        "const": "Integration settings"
+                        "default": "Integration settings",
+                        "type": "string"
                     },
                     "Key_expires": {
-                        "const": "Key expires"
+                        "default": "Key expires",
+                        "type": "string"
                     },
                     "Limits_API_direct": {
-                        "const": "Yandex.Direct API limits"
+                        "default": "Yandex.Direct API limits",
+                        "type": "string"
                     },
                     "Weekly_budget_forecast": {
-                        "const": "Weekly budget forecast"
+                        "default": "Weekly budget forecast",
+                        "type": "string"
                     },
                     "Update_list_campaigns": {
-                        "const": "Update ad campaigns"
+                        "default": "Update ad campaigns",
+                        "type": "string"
                     },
                     "adjustments_for": {
-                        "const": "adjustments priced"
+                        "default": "adjustments priced",
+                        "type": "string"
                     },
                     "API_limits": {
-                        "const": "API limits"
+                        "default": "API limits",
+                        "type": "string"
                     },
                     "Ad_campaigns": {
-                        "const": "Ad campaigns"
+                        "default": "Ad campaigns",
+                        "type": "string"
                     },
                     "Status": {
-                        "const": "Status"
+                        "default": "Status",
+                        "type": "string"
                     },
                     "Direct_balance": {
-                        "const": "Direct<br> balance"
+                        "default": "Direct<br> balance",
+                        "type": "string"
                     },
                     "configured_notconfigured": {
-                        "const": "configured<br>(not configured)"
+                        "default": "configured<br>(not configured)",
+                        "type": "string"
                     },
                     "Bidding_cost": {
-                        "const": "Bidding<br>cost"
+                        "default": "Bidding<br>cost",
+                        "type": "string"
                     },
                     "Management": {
-                        "const": "Manage"
+                        "default": "Manage",
+                        "type": "string"
                     },
                     "for_all": {
-                        "const": "for all"
+                        "default": "for all",
+                        "type": "string"
                     },
                     "Bid_adjustment": {
-                        "const": "Bid adjustment"
+                        "default": "Bid adjustment",
+                        "type": "string"
                     },
                     "Journal_log": {
-                        "const": "Journal"
+                        "default": "Journal",
+                        "type": "string"
                     },
                     "Automated_strategy": {
-                        "const": "Automated&nbsp;bid strategy: bidding cannot be applied"
+                        "default": "Automated&nbsp;bid strategy: bidding cannot be applied",
+                        "type": "string"
                     },
                     "Bidding_disabled": {
-                        "const": "Bidding disabled"
+                        "default": "Bidding disabled",
+                        "type": "string"
                     },
                     "Adjust_not_adjust_bids": {
-                        "const": "Manage/Do not manage bids"
+                        "default": "Manage/Do not manage bids",
+                        "type": "string"
                     },
                     "Integrate_to_manage_bids_1": {
-                        "const": "To manage bids for ad campaigns,"
+                        "default": "To manage bids for ad campaigns,",
+                        "type": "string"
                     },
                     "Integrate_to_manage_bids_2": {
-                        "const": "integrate<br>"
+                        "default": "integrate<br>",
+                        "type": "string"
                     },
                     "Integrate_to_manage_bids_3": {
-                        "const": "your account with"
+                        "default": "your account with",
+                        "type": "string"
                     },
                     "Mass_turn_on_bidding": {
-                        "const": "Turn on bidding for all campaigns"
+                        "default": "Turn on bidding for all campaigns",
+                        "type": "string"
                     },
                     "Turn_on": {
-                        "const": "On"
+                        "default": "On",
+                        "type": "string"
                     },
                     "Turn_off": {
-                        "const": "Off"
+                        "default": "Off",
+                        "type": "string"
                     },
                     "Schedule_bidding": {
-                        "const": "Schedule bidding"
+                        "default": "Schedule bidding",
+                        "type": "string"
                     },
                     "Bulk_campaign_management": {
-                        "const": "Bulk campaign management"
+                        "default": "Bulk campaign management",
+                        "type": "string"
                     },
                     "Keyword_was_deleted": {
-                        "const": "Keyword is deleted"
+                        "default": "Keyword is deleted",
+                        "type": "string"
                     },
                     "in_Adwords": {
-                        "const": "in Google Ads"
+                        "default": "in Google Ads",
+                        "type": "string"
                     },
                     "Keywords_bidding_applied": {
-                        "const": "Keywords with adjusted bids"
+                        "default": "Keywords with adjusted bids",
+                        "type": "string"
                     },
                     "Keywords_no_bidding_applied": {
-                        "const": "Keywords without adjusted bids"
+                        "default": "Keywords without adjusted bids",
+                        "type": "string"
                     },
                     "Yandex_error": {
-                        "const": "Yandex.Direct server error"
+                        "default": "Yandex.Direct server error",
+                        "type": "string"
                     },
                     "No_vaild_currency_for_keywords": {
-                        "const": "No valid currency for this keyword found"
+                        "default": "No valid currency for this keyword found",
+                        "type": "string"
                     },
                     "Support_only_real_currency_note": {
-                        "const": "At the moment we support only real currency"
+                        "default": "At the moment we support only real currency",
+                        "type": "string"
                     },
                     "Expected_array": {
-                        "const": "Array expected"
+                        "default": "Array expected",
+                        "type": "string"
                     },
                     "Bid_management_available_for_manual_note": {
-                        "const": "Bid management available only for campaigns with manual bidding strategy"
+                        "default": "Bid management available only for campaigns with manual bidding strategy",
+                        "type": "string"
                     },
                     "Low_balance_note": {
-                        "const": "You have insufficient funds to manage bids for the project"
+                        "default": "You have insufficient funds to manage bids for the project",
+                        "type": "string"
                     },
                     "Low_balance_owner_note": {
-                        "const": "Project owner has insufficient funds"
+                        "default": "Project owner has insufficient funds",
+                        "type": "string"
                     },
                     "Direct_bids_adjusted_for_note": {
-                        "const": "Yandex.Direct bids are adjusted for the campaign"
+                        "default": "Yandex.Direct bids are adjusted for the campaign",
+                        "type": "string"
                     },
                     "adjusted_for_project": {
-                        "const": "in the project"
+                        "default": "in the project",
+                        "type": "string"
                     },
                     "State_ENABLED": {
-                        "const": "Enabled"
+                        "default": "Enabled",
+                        "type": "string"
                     },
                     "State_PAUSED": {
-                        "const": "Paused"
+                        "default": "Paused",
+                        "type": "string"
                     },
                     "State_REMOVED": {
-                        "const": "Removed"
+                        "default": "Removed",
+                        "type": "string"
                     },
                     "State_UNKNOWN": {
-                        "const": "Unknown"
+                        "default": "Unknown",
+                        "type": "string"
                     },
                     "Frequency_never": {
-                        "const": "Never"
+                        "default": "Never",
+                        "type": "string"
                     },
                     "Frequency_daily": {
-                        "const": "Daily"
+                        "default": "Daily",
+                        "type": "string"
                     },
                     "Frequency_daily_2": {
-                        "const": "Twice a day"
+                        "default": "Twice a day",
+                        "type": "string"
                     },
                     "Frequency_every_4_hours": {
-                        "const": "Every 4 hours"
+                        "default": "Every 4 hours",
+                        "type": "string"
                     },
                     "Frequency_every_hour": {
-                        "const": "Every hour"
+                        "default": "Every hour",
+                        "type": "string"
                     },
                     "Frequency_half_hour": {
-                        "const": "Every 30 minutes"
+                        "default": "Every 30 minutes",
+                        "type": "string"
                     },
                     "Frequency_10_min": {
-                        "const": "Every 10 minutes"
+                        "default": "Every 10 minutes",
+                        "type": "string"
                     },
                     "Frequency_5_min": {
-                        "const": "Every 5 minutes"
+                        "default": "Every 5 minutes",
+                        "type": "string"
                     },
                     "times_a_week": {
-                        "const": "times<br>a week"
+                        "default": "times<br>a week",
+                        "type": "string"
                     },
                     "Start_managing_bids": {
-                        "const": "Run bidding"
+                        "default": "Run bidding",
+                        "type": "string"
                     },
                     "Manage_bids": {
-                        "const": "Manage bids"
+                        "default": "Manage bids",
+                        "type": "string"
                     },
                     "Bidding_schedule": {
-                        "const": "Bidding schedule"
+                        "default": "Bidding schedule",
+                        "type": "string"
                     },
                     "No_manage_bids_of_suspended_keywords": {
-                        "const": "Do not manage disabled keywords"
+                        "default": "Do not manage disabled keywords",
+                        "type": "string"
                     },
                     "cannot_combine_option_with_no_impressions_tactics": {
-                        "const": "this option cannot be combined with the \"Stop impressions\" tactic"
+                        "default": "this option cannot be combined with the \"Stop impressions\" tactic",
+                        "type": "string"
                     },
                     "Bidding_on_when_impressions_on": {
-                        "const": "Bidding is active only with ad impressions enabled, ad status is checked automatically"
+                        "default": "Bidding is active only with ad impressions enabled, ad status is checked automatically",
+                        "type": "string"
                     },
                     "update": {
-                        "const": "update"
+                        "default": "update",
+                        "type": "string"
                     },
                     "Impressions_schedule": {
-                        "const": "Impressions schedule"
+                        "default": "Impressions schedule",
+                        "type": "string"
                     },
                     "Schedule_not_uploaded": {
-                        "const": "Schedule not uploaded yet."
+                        "default": "Schedule not uploaded yet.",
+                        "type": "string"
                     },
                     "Campaign_timezone": {
-                        "const": "Campaign timezone"
+                        "default": "Campaign timezone",
+                        "type": "string"
                     },
                     "Hours": {
-                        "const": "Hours"
+                        "default": "Hours",
+                        "type": "string"
                     },
                     "Include_working_weekend": {
-                        "const": "Show on weekend workdays"
+                        "default": "Show on weekend workdays",
+                        "type": "string"
                     },
                     "Include_holidays": {
-                        "const": "Show on holidays"
+                        "default": "Show on holidays",
+                        "type": "string"
                     },
                     "Show_since": {
-                        "const": "Show since"
+                        "default": "Show since",
+                        "type": "string"
                     },
                     "show_till": {
-                        "const": "till"
+                        "default": "till",
+                        "type": "string"
                     },
                     "do_not_show": {
-                        "const": "do not show"
+                        "default": "do not show",
+                        "type": "string"
                     },
                     "Campaign_settings": {
-                        "const": "Campaign settings"
+                        "default": "Campaign settings",
+                        "type": "string"
                     },
                     "All_campaigns": {
-                        "const": "All campaigns"
+                        "default": "All campaigns",
+                        "type": "string"
                     },
                     "Campaign": {
-                        "const": "Campaign"
+                        "default": "Campaign",
+                        "type": "string"
                     },
                     "Info": {
-                        "const": "Details"
+                        "default": "Details",
+                        "type": "string"
                     },
                     "risk_bid": {
-                        "const": "risk bid"
+                        "default": "risk bid",
+                        "type": "string"
                     },
                     "First_place_premium": {
-                        "const": "1 Спецразмещение"
+                        "default": "1 Спецразмещение",
+                        "type": "string"
                     },
                     "Second_place_premium": {
-                        "const": "2 Спецразмещение"
+                        "default": "2 Спецразмещение",
+                        "type": "string"
                     },
                     "Third_place_premium": {
-                        "const": "3 Спецразмещение"
+                        "default": "3 Спецразмещение",
+                        "type": "string"
                     },
                     "Premium_placement": {
-                        "const": "Спецразмещение"
+                        "default": "Спецразмещение",
+                        "type": "string"
                     },
                     "First_place": {
-                        "const": "1 место в Гарантии"
+                        "default": "1 место в Гарантии",
+                        "type": "string"
                     },
                     "Guaranteed_placement": {
-                        "const": "Гарантированные показы"
+                        "default": "Гарантированные показы",
+                        "type": "string"
                     },
                     "First_position": {
-                        "const": "1 место"
+                        "default": "1 место",
+                        "type": "string"
                     },
                     "Above_page": {
-                        "const": "Вверху страницы"
+                        "default": "Вверху страницы",
+                        "type": "string"
                     },
                     "First_page": {
-                        "const": "Первая страница"
+                        "default": "Первая страница",
+                        "type": "string"
                     },
                     "P11_0": {
-                        "const": "Traffic volume max."
+                        "default": "Traffic volume max.",
+                        "type": "string"
                     },
                     "P12_0": {
-                        "const": "Traffic volume ~95%"
+                        "default": "Traffic volume ~95%",
+                        "type": "string"
                     },
                     "P13_0": {
-                        "const": "Traffic volume ~90%"
+                        "default": "Traffic volume ~90%",
+                        "type": "string"
                     },
                     "P1L_0": {
-                        "const": "Traffic volume ~75%"
+                        "default": "Traffic volume ~75%",
+                        "type": "string"
                     },
                     "P21_0": {
-                        "const": "Traffic volume ~15%"
+                        "default": "Traffic volume ~15%",
+                        "type": "string"
                     },
                     "P2L_0": {
-                        "const": "Traffic volume ~5%"
+                        "default": "Traffic volume ~5%",
+                        "type": "string"
                     },
                     "P11_1": {
-                        "const": "1st position"
+                        "default": "1st position",
+                        "type": "string"
                     },
                     "P1L_1": {
-                        "const": "Top of page"
+                        "default": "Top of page",
+                        "type": "string"
                     },
                     "P21_1": {
-                        "const": "Suggested bid"
+                        "default": "Suggested bid",
+                        "type": "string"
                     },
                     "P2L_1": {
-                        "const": "First page"
+                        "default": "First page",
+                        "type": "string"
                     },
                     "P11_0_short": {
-                        "const": "1PP"
+                        "default": "1PP",
+                        "type": "string"
                     },
                     "P12_0_short": {
-                        "const": "2PP"
+                        "default": "2PP",
+                        "type": "string"
                     },
                     "P13_0_short": {
-                        "const": "3PP"
+                        "default": "3PP",
+                        "type": "string"
                     },
                     "P1L_0_short": {
-                        "const": "PP"
+                        "default": "PP",
+                        "type": "string"
                     },
                     "P21_0_short": {
-                        "const": "1GP"
+                        "default": "1GP",
+                        "type": "string"
                     },
                     "P2L_0_short": {
-                        "const": "GP"
+                        "default": "GP",
+                        "type": "string"
                     },
                     "P11_1_short": {
-                        "const": "1P"
+                        "default": "1P",
+                        "type": "string"
                     },
                     "P1L_1_short": {
-                        "const": "↑P"
+                        "default": "↑P",
+                        "type": "string"
                     },
                     "P21_1_short": {
-                        "const": "SB"
+                        "default": "SB",
+                        "type": "string"
                     },
                     "P2L_1_short": {
-                        "const": "↓P"
+                        "default": "↓P",
+                        "type": "string"
                     },
                     "Tactics_2_set_max_bid": {
-                        "const": "MAX: set MAX bid"
+                        "default": "MAX: set MAX bid",
+                        "type": "string"
                     },
                     "Tactics_2_lower_pos": {
-                        "const": "Move ad down"
+                        "default": "Move ad down",
+                        "type": "string"
                     },
                     "Tactics_2_set_min_bid": {
-                        "const": "Set min bid"
+                        "default": "Set min bid",
+                        "type": "string"
                     },
                     "Tactics_2_stop_impressions": {
-                        "const": "Stop impressions"
+                        "default": "Stop impressions",
+                        "type": "string"
                     },
                     "impressions_disabled": {
-                        "const": "ad is inactive"
+                        "default": "ad is inactive",
+                        "type": "string"
                     },
                     "set_max": {
-                        "const": "set in MAX"
+                        "default": "set in MAX",
+                        "type": "string"
                     },
                     "set_min": {
-                        "const": "min bid"
+                        "default": "min bid",
+                        "type": "string"
                     },
                     "old_bid": {
-                        "const": "old bid"
+                        "default": "old bid",
+                        "type": "string"
                     },
                     "Lower_position": {
-                        "const": "Lower position"
+                        "default": "Lower position",
+                        "type": "string"
                     },
                     "Select_date": {
-                        "const": "Select period"
+                        "default": "Select period",
+                        "type": "string"
                     },
                     "Download_log": {
-                        "const": "Download bidding history"
+                        "default": "Download bidding history",
+                        "type": "string"
                     },
                     "Warinig_min_balance_for_bidding": {
-                        "const": "Important! Bidding is available if you have a minimum balance of:"
+                        "default": "Important! Bidding is available if you have a minimum balance of:",
+                        "type": "string"
                     },
                     "Campaign_added_in_another_project": {
-                        "const": "This campaign already exists in another project"
+                        "default": "This campaign already exists in another project",
+                        "type": "string"
                     },
                     "Bidding_activated_for_campaign_in_another_project": {
-                        "const": "Bidding is already activated for this campaign in another project"
+                        "default": "Bidding is already activated for this campaign in another project",
+                        "type": "string"
                     },
                     "in_another_project": {
-                        "const": "in ano. project"
+                        "default": "in ano. project",
+                        "type": "string"
                     },
                     "agency": {
-                        "const": "agency"
+                        "default": "agency",
+                        "type": "string"
                     }
                 },
                 "required": [

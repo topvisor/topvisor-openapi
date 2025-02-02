@@ -8,26 +8,26 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         "I18n.Indexing": {
-            /** @constant */
-            Settings: "Tool settings";
-            /** @constant */
-            Header_start_short: "Check";
-            /** @constant */
-            Hint_not_searchers_text: "Pick <b>Search engines</b> to launch a check.<br>🌐 <a href=\"/support/indexed/\" target=\"_blank\">Why you need to check indexing →</a>";
-            /** @constant */
-            Hint_not_searchers_btn: "Manage";
-            /** @constant */
-            Hint_not_urls_text: "Add URLs to launch Indexing.<br>🌐 <a href=\"/support/indexed/\" target=\"_blank\">Why you need to check indexing →</a>";
-            /** @constant */
-            Hint_not_urls_btn: "URLs";
-            /** @constant */
-            Hint_not_checks_text: "You've never launched Indexing in this project.<br>🌐 <a href=\"/support/indexed/\" target=\"_blank\">Why you need to check indexing →</a>";
-            /** @constant */
-            Hint_not_checks_btn: "Launch Indexing";
-            /** @constant */
-            Hint_not_data_text: "No data found with current filter.<br>Try a different filter selection.<br>🌐 <a href=\"/support/indexed/\" target=\"_blank\">Why you need to check indexing →</a>";
-            /** @constant */
-            Hint_not_dates_with_checks_text: "You haven't checked indexing within the selected period for the current search engine.<br>Select another search engine or period.<br>🌐 <a href=\"/support/indexed/\" target=\"_blank\">Why you need to check indexing →</a>";
+            /** @default Tool settings */
+            Settings: string;
+            /** @default Check */
+            Header_start_short: string;
+            /** @default Pick <b>Search engines</b> to launch a check.<br>🌐 <a href="/support/indexed/" target="_blank">Why you need to check indexing →</a> */
+            Hint_not_searchers_text: string;
+            /** @default Manage */
+            Hint_not_searchers_btn: string;
+            /** @default Add URLs to launch Indexing.<br>🌐 <a href="/support/indexed/" target="_blank">Why you need to check indexing →</a> */
+            Hint_not_urls_text: string;
+            /** @default URLs */
+            Hint_not_urls_btn: string;
+            /** @default You've never launched Indexing in this project.<br>🌐 <a href="/support/indexed/" target="_blank">Why you need to check indexing →</a> */
+            Hint_not_checks_text: string;
+            /** @default Launch Indexing */
+            Hint_not_checks_btn: string;
+            /** @default No data found with current filter.<br>Try a different filter selection.<br>🌐 <a href="/support/indexed/" target="_blank">Why you need to check indexing →</a> */
+            Hint_not_data_text: string;
+            /** @default You haven't checked indexing within the selected period for the current search engine.<br>Select another search engine or period.<br>🌐 <a href="/support/indexed/" target="_blank">Why you need to check indexing →</a> */
+            Hint_not_dates_with_checks_text: string;
         };
     };
     responses: never;

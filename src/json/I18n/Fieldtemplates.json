@@ -11,34 +11,44 @@
                 "type": "object",
                 "properties": {
                     "Title": {
-                        "const": "Manage columns"
+                        "default": "Manage columns",
+                        "type": "string"
                     },
                     "Column": {
-                        "const": "Column"
+                        "default": "Column",
+                        "type": "string"
                     },
                     "Last_columns_list": {
-                        "const": "List of recent columns"
+                        "default": "List of recent columns",
+                        "type": "string"
                     },
                     "Save_as_new_template": {
-                        "const": "Save as new template"
+                        "default": "Save as new template",
+                        "type": "string"
                     },
                     "save_changes": {
-                        "const": "save changes"
+                        "default": "save changes",
+                        "type": "string"
                     },
                     "Added_columns": {
-                        "const": "Added columns"
+                        "default": "Added columns",
+                        "type": "string"
                     },
                     "Columns_settings": {
-                        "const": "Column settings"
+                        "default": "Column settings",
+                        "type": "string"
                     },
                     "Delete_columns": {
-                        "const": "Delete columns"
+                        "default": "Delete columns",
+                        "type": "string"
                     },
                     "No_columns_added": {
-                        "const": "No columns added"
+                        "default": "No columns added",
+                        "type": "string"
                     },
                     "Advanced_options": {
-                        "const": "Advanced options"
+                        "default": "Advanced options",
+                        "type": "string"
                     }
                 },
                 "required": [

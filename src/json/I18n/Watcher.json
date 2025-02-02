@@ -11,52 +11,75 @@
                 "type": "object",
                 "properties": {
                     "Settings": {
-                        "const": "Watcher settings"
+                        "default": "Watcher settings",
+                        "type": "string"
                     },
                     "menu": {
-                        "const": {
+                        "default": {
                             "http_codes": "HTTP Code",
                             "title": "Title",
                             "description": "Description",
                             "h1": "H1 Header",
                             "content": "Content"
+                        },
+                        "type": "array",
+                        "items": {
+                            "oneOf": [
+                                {
+                                    "type": "string"
+                                },
+                                {
+                                    "type": "number"
+                                }
+                            ]
                         }
                     },
                     "Status_code": {
-                        "const": "Status"
+                        "default": "Status",
+                        "type": "string"
                     },
                     "Without_changes": {
-                        "const": "Without changes"
+                        "default": "Without changes",
+                        "type": "string"
                     },
                     "Fulltext": {
-                        "const": "Full text"
+                        "default": "Full text",
+                        "type": "string"
                     },
                     "Only_with_changed": {
-                        "const": "With changes"
+                        "default": "With changes",
+                        "type": "string"
                     },
                     "Header_start_short": {
-                        "const": "Track"
+                        "default": "Track",
+                        "type": "string"
                     },
                     "Common_settings": {
-                        "const": "Common settings"
+                        "default": "Common settings",
+                        "type": "string"
                     },
                     "Tracking": {
-                        "const": "Tracking"
+                        "default": "Tracking",
+                        "type": "string"
                     },
                     "Cut_script": {
-                        "const": "Cut &lt;script&gt;"
+                        "default": "Cut &lt;script&gt;",
+                        "type": "string"
                     },
                     "Scan_method": {
-                        "const": "Scan method"
+                        "default": "Scan method",
+                        "type": "string"
                     },
                     "Strip_tags": {
-                        "const": "Text only / Cut tags"
+                        "default": "Text only / Cut tags",
+                        "type": "string"
                     },
                     "Change_history": {
-                        "const": "Change history: "
+                        "default": "Change history: ",
+                        "type": "string"
                     },
                     "Hints_settings": {
-                        "const": {
+                        "default": {
                             "watcher_max_redirects": "",
                             "watcher_user_agent": "User Agent can affect how the bot sees the site and how DDoS protection works.",
                             "audit_page_delay": "",
@@ -71,19 +94,34 @@
                                 "content": ""
                             },
                             "watcher_strip_tags_from_result": ""
+                        },
+                        "type": "array",
+                        "items": {
+                            "oneOf": [
+                                {
+                                    "type": "string"
+                                },
+                                {
+                                    "type": "number"
+                                }
+                            ]
                         }
                     },
                     "Hint_not_urls_text": {
-                        "const": "Add URLs to launch Watcher.<br>📡 <a href=\"/watcher/\" target=\"_blank\">How Website Watcher can help you →</a>"
+                        "default": "Add URLs to launch Watcher.<br>📡 <a href=\"/watcher/\" target=\"_blank\">How Website Watcher can help you →</a>",
+                        "type": "string"
                     },
                     "Hint_not_urls_btn": {
-                        "const": "URLs"
+                        "default": "URLs",
+                        "type": "string"
                     },
                     "Hint_not_checks_text": {
-                        "const": "You've never launched Watcher in this project.<br>📡 <a href=\"/watcher/\" target=\"_blank\">How Website Watcher can help you →</a>"
+                        "default": "You've never launched Watcher in this project.<br>📡 <a href=\"/watcher/\" target=\"_blank\">How Website Watcher can help you →</a>",
+                        "type": "string"
                     },
                     "Hint_not_checks_btn": {
-                        "const": "Launch Watcher"
+                        "default": "Launch Watcher",
+                        "type": "string"
                     }
                 },
                 "required": [

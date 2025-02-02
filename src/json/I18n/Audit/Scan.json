@@ -11,16 +11,19 @@
                 "type": "object",
                 "properties": {
                     "Settings": {
-                        "const": "Audit settings"
+                        "default": "Audit settings",
+                        "type": "string"
                     },
                     "Please_add_urls": {
-                        "const": "Please, add urls for checking"
+                        "default": "Please, add urls for checking",
+                        "type": "string"
                     },
                     "bar": {
-                        "const": "bar"
+                        "default": "bar",
+                        "type": "string"
                     },
                     "menu": {
-                        "const": {
+                        "default": {
                             "log": "Scan Log",
                             "summary": "Summary",
                             "pages": "Pages",
@@ -39,10 +42,21 @@
                             "images/images": "Images",
                             "js/js": "JavaScript",
                             "css/css": "CSS"
+                        },
+                        "type": "array",
+                        "items": {
+                            "oneOf": [
+                                {
+                                    "type": "string"
+                                },
+                                {
+                                    "type": "number"
+                                }
+                            ]
                         }
                     },
                     "checkInfo": {
-                        "const": {
+                        "default": {
                             "checking": "Checking...",
                             "time_start": "Started time",
                             "time_finish": "Finished time",
@@ -51,20 +65,42 @@
                             "count_all": "Count finished",
                             "robot_step": "Current step",
                             "robot_step_next": "Next step"
+                        },
+                        "type": "array",
+                        "items": {
+                            "oneOf": [
+                                {
+                                    "type": "string"
+                                },
+                                {
+                                    "type": "number"
+                                }
+                            ]
                         }
                     },
                     "checkInfoHints": {
-                        "const": {
+                        "default": {
                             "time_start": "",
                             "time_finish": "",
                             "DURATION()": "",
                             "count_all": "",
                             "step": "",
                             "step_next": ""
+                        },
+                        "type": "array",
+                        "items": {
+                            "oneOf": [
+                                {
+                                    "type": "string"
+                                },
+                                {
+                                    "type": "number"
+                                }
+                            ]
                         }
                     },
                     "checkSteps": {
-                        "const": {
+                        "default": {
                             "genTasks": "Gen Tasks",
                             "auditSitemap": "Sitemap",
                             "auditPages": "Check pages",
@@ -75,193 +111,274 @@
                             "auditAnalyze": "Analyze",
                             "save": "Saving",
                             "closeTask": "Finishing"
+                        },
+                        "type": "array",
+                        "items": {
+                            "oneOf": [
+                                {
+                                    "type": "string"
+                                },
+                                {
+                                    "type": "number"
+                                }
+                            ]
                         }
                     },
                     "summaryCharts": {
-                        "const": {
+                        "default": {
                             "count_pages": "Number of pages",
                             "count_problems": "Number of problems",
                             "count_3xx": "3XX",
                             "count_4xx": "4XX",
                             "count_5xx": "5XX"
+                        },
+                        "type": "array",
+                        "items": {
+                            "oneOf": [
+                                {
+                                    "type": "string"
+                                },
+                                {
+                                    "type": "number"
+                                }
+                            ]
                         }
                     },
                     "Already_started": {
-                        "const": "Audit already started"
+                        "default": "Audit already started",
+                        "type": "string"
                     },
                     "FilterTime2": {
-                        "const": "Filter, until the time:"
+                        "default": "Filter, until the time:",
+                        "type": "string"
                     },
                     "HTTPCodeHundred0": {
-                        "const": "No response"
+                        "default": "No response",
+                        "type": "string"
                     },
                     "FieldContent": {
-                        "const": "Text (content)"
+                        "default": "Text (content)",
+                        "type": "string"
                     },
                     "FieldTitle": {
-                        "const": "Text (title)"
+                        "default": "Text (title)",
+                        "type": "string"
                     },
                     "FieldBroken": {
-                        "const": "«Broken»"
+                        "default": "«Broken»",
+                        "type": "string"
                     },
                     "FieldCount": {
-                        "const": "Pages"
+                        "default": "Pages",
+                        "type": "string"
                     },
                     "FieldHTTPCodes": {
-                        "const": "Status"
+                        "default": "Status",
+                        "type": "string"
                     },
                     "FieldTitleDbl": {
-                        "const": "Duplicates\nTitle"
+                        "default": "Duplicates\nTitle",
+                        "type": "string"
                     },
                     "FieldDescriptionDbl": {
-                        "const": "Duplicates\nDescription"
+                        "default": "Duplicates\nDescription",
+                        "type": "string"
                     },
                     "FieldBacklinksInnerCount": {
-                        "const": "Back Links\ninner"
+                        "default": "Back Links\ninner",
+                        "type": "string"
                     },
                     "FieldTextLength": {
-                        "const": "Text length"
+                        "default": "Text length",
+                        "type": "string"
                     },
                     "FieldCompression": {
-                        "const": "Compress"
+                        "default": "Compress",
+                        "type": "string"
                     },
                     "FieldCacheType": {
-                        "const": "Cache type"
+                        "default": "Cache type",
+                        "type": "string"
                     },
                     "FieldCacheTime": {
-                        "const": "Cache time"
+                        "default": "Cache time",
+                        "type": "string"
                     },
                     "FieldCacheValidator": {
-                        "const": "Cache validator"
+                        "default": "Cache validator",
+                        "type": "string"
                     },
                     "FieldRobotsTXTBlocked": {
-                        "const": "Disallow\nrobots.txt"
+                        "default": "Disallow\nrobots.txt",
+                        "type": "string"
                     },
                     "FieldCheckRobotsTXTAllowed": {
-                        "const": "Allow\nrobots.txt"
+                        "default": "Allow\nrobots.txt",
+                        "type": "string"
                     },
                     "FieldSitemapXMLMention": {
-                        "const": "Exists\nsitemap.xml"
+                        "default": "Exists\nsitemap.xml",
+                        "type": "string"
                     },
                     "FieldLinksCount": {
-                        "const": "Links"
+                        "default": "Links",
+                        "type": "string"
                     },
                     "FieldTLSVersion": {
-                        "const": "TLS version"
+                        "default": "TLS version",
+                        "type": "string"
                     },
                     "FieldCacheable": {
-                        "const": "Cacheable"
+                        "default": "Cacheable",
+                        "type": "string"
                     },
                     "FieldAlt": {
-                        "const": "Alt"
+                        "default": "Alt",
+                        "type": "string"
                     },
                     "FieldSize": {
-                        "const": "Size"
+                        "default": "Size",
+                        "type": "string"
                     },
                     "FieldExtension": {
-                        "const": "Extension"
+                        "default": "Extension",
+                        "type": "string"
                     },
                     "FieldContentType": {
-                        "const": "Content-Type"
+                        "default": "Content-Type",
+                        "type": "string"
                     },
                     "FieldModernFormat": {
-                        "const": "Modern Format"
+                        "default": "Modern Format",
+                        "type": "string"
                     },
                     "FieldMinified": {
-                        "const": "Minified"
+                        "default": "Minified",
+                        "type": "string"
                     },
                     "FieldRenderBlocking": {
-                        "const": "Render blocking"
+                        "default": "Render blocking",
+                        "type": "string"
                     },
                     "FieldType": {
-                        "const": "Type"
+                        "default": "Type",
+                        "type": "string"
                     },
                     "FieldLoadingTime": {
-                        "const": "Loading time"
+                        "default": "Loading time",
+                        "type": "string"
                     },
                     "FilterSignalNone": {
-                        "const": "All checks"
+                        "default": "All checks",
+                        "type": "string"
                     },
                     "FilterSignalWarnings": {
-                        "const": "With warnings"
+                        "default": "With warnings",
+                        "type": "string"
                     },
                     "FilterSignalErrors": {
-                        "const": "With erors"
+                        "default": "With erors",
+                        "type": "string"
                     },
                     "FilterSignalSignals": {
-                        "const": "All problems"
+                        "default": "All problems",
+                        "type": "string"
                     },
                     "DialogPagesWithTitleDbl": {
-                        "const": "Pages with duplicates Title"
+                        "default": "Pages with duplicates Title",
+                        "type": "string"
                     },
                     "DialogPagesWithDescriptionDbl": {
-                        "const": "Pages with duplicates Desccription"
+                        "default": "Pages with duplicates Desccription",
+                        "type": "string"
                     },
                     "DialogPagesWithLink": {
-                        "const": "Pages with link"
+                        "default": "Pages with link",
+                        "type": "string"
                     },
                     "DialogPagesWithImage": {
-                        "const": "Pages with image"
+                        "default": "Pages with image",
+                        "type": "string"
                     },
                     "DialogPagesWithJS": {
-                        "const": "Pages with JavaScript"
+                        "default": "Pages with JavaScript",
+                        "type": "string"
                     },
                     "DialogPagesWithCSS": {
-                        "const": "Pages with CSS"
+                        "default": "Pages with CSS",
+                        "type": "string"
                     },
                     "DialogSummaryPage": {
-                        "const": "Summary Page"
+                        "default": "Summary Page",
+                        "type": "string"
                     },
                     "DialogResources_links": {
-                        "const": "Links on page"
+                        "default": "Links on page",
+                        "type": "string"
                     },
                     "DialogResources_images": {
-                        "const": "Images on page"
+                        "default": "Images on page",
+                        "type": "string"
                     },
                     "DialogResources_css": {
-                        "const": "CSS on page"
+                        "default": "CSS on page",
+                        "type": "string"
                     },
                     "DialogResources_js": {
-                        "const": "JS on page"
+                        "default": "JS on page",
+                        "type": "string"
                     },
                     "Category": {
-                        "const": "Category"
+                        "default": "Category",
+                        "type": "string"
                     },
                     "WhatIsIt": {
-                        "const": "What is it?"
+                        "default": "What is it?",
+                        "type": "string"
                     },
                     "HowToResolveIt": {
-                        "const": "How to resolve it?"
+                        "default": "How to resolve it?",
+                        "type": "string"
                     },
                     "Warnings": {
-                        "const": "Warnings"
+                        "default": "Warnings",
+                        "type": "string"
                     },
                     "Errors": {
-                        "const": "Errors"
+                        "default": "Errors",
+                        "type": "string"
                     },
                     "Problems": {
-                        "const": "All problems"
+                        "default": "All problems",
+                        "type": "string"
                     },
                     "Hint_not_urls_text": {
-                        "const": "Add URLs manually or enable website crawling to perform Website Audit.<br>🤖 <a href=\"/website-auditor/\" target=\"_blank\">What Website Audit shows →</a>"
+                        "default": "Add URLs manually or enable website crawling to perform Website Audit.<br>🤖 <a href=\"/website-auditor/\" target=\"_blank\">What Website Audit shows →</a>",
+                        "type": "string"
                     },
                     "Hint_not_urls_btn": {
-                        "const": "Add URLs"
+                        "default": "Add URLs",
+                        "type": "string"
                     },
                     "Hint_not_checks_text": {
-                        "const": "You've never launched Website Audit in this project.<br>🤖 <a href=\"/website-auditor/\" target=\"_blank\">What Website Audit shows →</a>"
+                        "default": "You've never launched Website Audit in this project.<br>🤖 <a href=\"/website-auditor/\" target=\"_blank\">What Website Audit shows →</a>",
+                        "type": "string"
                     },
                     "Hint_not_checks_btn": {
-                        "const": "Launch Website Audit"
+                        "default": "Launch Website Audit",
+                        "type": "string"
                     },
                     "Hint_not_PageSpeed_Insights_API_key_1": {
-                        "const": "You didn't specify PageSpeed Insights API&#8209;key when launching Website Audit. Add API-key"
+                        "default": "You didn't specify PageSpeed Insights API&#8209;key when launching Website Audit. Add API-key",
+                        "type": "string"
                     },
                     "Hint_not_PageSpeed_Insights_API_key_2": {
-                        "const": "in Audit Settings"
+                        "default": "in Audit Settings",
+                        "type": "string"
                     },
                     "Hint_not_PageSpeed_Insights_API_key_3": {
-                        "const": "and launch Audit once more."
+                        "default": "and launch Audit once more.",
+                        "type": "string"
                     }
                 },
                 "required": [

@@ -11,34 +11,44 @@
                 "type": "object",
                 "properties": {
                     "Settings": {
-                        "const": "Tool settings"
+                        "default": "Tool settings",
+                        "type": "string"
                     },
                     "Header_start_short": {
-                        "const": "Check"
+                        "default": "Check",
+                        "type": "string"
                     },
                     "Hint_not_searchers_text": {
-                        "const": "Pick <b>Search engines</b> to launch a check.<br>🌐 <a href=\"/support/indexed/\" target=\"_blank\">Why you need to check indexing →</a>"
+                        "default": "Pick <b>Search engines</b> to launch a check.<br>🌐 <a href=\"/support/indexed/\" target=\"_blank\">Why you need to check indexing →</a>",
+                        "type": "string"
                     },
                     "Hint_not_searchers_btn": {
-                        "const": "Manage"
+                        "default": "Manage",
+                        "type": "string"
                     },
                     "Hint_not_urls_text": {
-                        "const": "Add URLs to launch Indexing.<br>🌐 <a href=\"/support/indexed/\" target=\"_blank\">Why you need to check indexing →</a>"
+                        "default": "Add URLs to launch Indexing.<br>🌐 <a href=\"/support/indexed/\" target=\"_blank\">Why you need to check indexing →</a>",
+                        "type": "string"
                     },
                     "Hint_not_urls_btn": {
-                        "const": "URLs"
+                        "default": "URLs",
+                        "type": "string"
                     },
                     "Hint_not_checks_text": {
-                        "const": "You've never launched Indexing in this project.<br>🌐 <a href=\"/support/indexed/\" target=\"_blank\">Why you need to check indexing →</a>"
+                        "default": "You've never launched Indexing in this project.<br>🌐 <a href=\"/support/indexed/\" target=\"_blank\">Why you need to check indexing →</a>",
+                        "type": "string"
                     },
                     "Hint_not_checks_btn": {
-                        "const": "Launch Indexing"
+                        "default": "Launch Indexing",
+                        "type": "string"
                     },
                     "Hint_not_data_text": {
-                        "const": "No data found with current filter.<br>Try a different filter selection.<br>🌐 <a href=\"/support/indexed/\" target=\"_blank\">Why you need to check indexing →</a>"
+                        "default": "No data found with current filter.<br>Try a different filter selection.<br>🌐 <a href=\"/support/indexed/\" target=\"_blank\">Why you need to check indexing →</a>",
+                        "type": "string"
                     },
                     "Hint_not_dates_with_checks_text": {
-                        "const": "You haven't checked indexing within the selected period for the current search engine.<br>Select another search engine or period.<br>🌐 <a href=\"/support/indexed/\" target=\"_blank\">Why you need to check indexing →</a>"
+                        "default": "You haven't checked indexing within the selected period for the current search engine.<br>Select another search engine or period.<br>🌐 <a href=\"/support/indexed/\" target=\"_blank\">Why you need to check indexing →</a>",
+                        "type": "string"
                     }
                 },
                 "required": [

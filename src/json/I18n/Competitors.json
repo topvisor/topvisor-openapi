@@ -11,475 +11,632 @@
                 "type": "object",
                 "properties": {
                     "Competitor_analysis": {
-                        "const": "Competitor research"
+                        "default": "Competitor research",
+                        "type": "string"
                     },
                     "Powerful_tool_for_competitve_analysis": {
-                        "const": "Powerful tool for comprehensive competitve reserach"
+                        "default": "Powerful tool for comprehensive competitve reserach",
+                        "type": "string"
                     },
                     "Results_on_serp": {
-                        "const": "Total search results count"
+                        "default": "Total search results count",
+                        "type": "string"
                     },
                     "Keywords": {
-                        "const": "Keywords"
+                        "default": "Keywords",
+                        "type": "string"
                     },
                     "Keyword": {
-                        "const": "Keyword"
+                        "default": "Keyword",
+                        "type": "string"
                     },
                     "Traffic": {
-                        "const": "Traffic"
+                        "default": "Traffic",
+                        "type": "string"
                     },
                     "Common": {
-                        "const": "Common"
+                        "default": "Common",
+                        "type": "string"
                     },
                     "Unique": {
-                        "const": "Unique"
+                        "default": "Unique",
+                        "type": "string"
                     },
                     "Chart": {
-                        "const": "Chart"
+                        "default": "Chart",
+                        "type": "string"
                     },
                     "Summary": {
-                        "const": "Summary"
+                        "default": "Summary",
+                        "type": "string"
                     },
                     "Summary_data": {
-                        "const": "Summary data"
+                        "default": "Summary data",
+                        "type": "string"
                     },
                     "Get_report": {
-                        "const": "Create report"
+                        "default": "Create report",
+                        "type": "string"
                     },
                     "Expand": {
-                        "const": "Expand"
+                        "default": "Expand",
+                        "type": "string"
                     },
                     "Expand_report": {
-                        "const": "Expand report"
+                        "default": "Expand report",
+                        "type": "string"
                     },
                     "Domain_or_URL": {
-                        "const": "Domain or URL"
+                        "default": "Domain or URL",
+                        "type": "string"
                     },
                     "Enter_domain_or_URL": {
-                        "const": "Enter domain or URL"
+                        "default": "Enter domain or URL",
+                        "type": "string"
                     },
                     "Enter_keyword": {
-                        "const": "Enter keyword"
+                        "default": "Enter keyword",
+                        "type": "string"
                     },
                     "Create_report": {
-                        "const": "Create report"
+                        "default": "Create report",
+                        "type": "string"
                     },
                     "Report_created": {
-                        "const": "Report created"
+                        "default": "Report created",
+                        "type": "string"
                     },
                     "Structure": {
-                        "const": "Structure"
+                        "default": "Structure",
+                        "type": "string"
                     },
                     "Search_results": {
-                        "const": "Search results"
+                        "default": "Search results",
+                        "type": "string"
                     },
                     "Related_keywords": {
-                        "const": "Related keywords"
+                        "default": "Related keywords",
+                        "type": "string"
                     },
                     "Word_forms": {
-                        "const": "Word forms"
+                        "default": "Word forms",
+                        "type": "string"
                     },
                     "Organic_results": {
-                        "const": "Organic results"
+                        "default": "Organic results",
+                        "type": "string"
                     },
                     "organic_results": {
-                        "const": "organic"
+                        "default": "organic",
+                        "type": "string"
                     },
                     "Ads": {
-                        "const": "Ads"
+                        "default": "Ads",
+                        "type": "string"
                     },
                     "ads": {
-                        "const": "ads"
+                        "default": "ads",
+                        "type": "string"
                     },
                     "Unique_keywords": {
-                        "const": "Unique keywords"
+                        "default": "Unique keywords",
+                        "type": "string"
                     },
                     "All_keywords": {
-                        "const": "All keywords"
+                        "default": "All keywords",
+                        "type": "string"
                     },
                     "Common_keywords": {
-                        "const": "Common keywords"
+                        "default": "Common keywords",
+                        "type": "string"
                     },
                     "Cost": {
-                        "const": "Cost"
+                        "default": "Cost",
+                        "type": "string"
                     },
                     "Volume": {
-                        "const": "Volume"
+                        "default": "Volume",
+                        "type": "string"
                     },
                     "Count": {
-                        "const": "Count"
+                        "default": "Count",
+                        "type": "string"
                     },
                     "My_reports": {
-                        "const": "My reports"
+                        "default": "My reports",
+                        "type": "string"
                     },
                     "Domain_keywords": {
-                        "const": "Domain keywords"
+                        "default": "Domain keywords",
+                        "type": "string"
                     },
                     "Domain_ad_texts": {
-                        "const": "Domain ad texts"
+                        "default": "Domain ad texts",
+                        "type": "string"
                     },
                     "Competitors_in_organic_paid_search": {
-                        "const": "Competitors in organic & paid search"
+                        "default": "Competitors in organic & paid search",
+                        "type": "string"
                     },
                     "Competitors_keywords": {
-                        "const": "Competitor's keywords"
+                        "default": "Competitor's keywords",
+                        "type": "string"
                     },
                     "Competitors_ad_texts": {
-                        "const": "Competitor's ad texts"
+                        "default": "Competitor's ad texts",
+                        "type": "string"
                     },
                     "Basic_report": {
-                        "const": "Basic"
+                        "default": "Basic",
+                        "type": "string"
                     },
                     "Select_report_type": {
-                        "const": "Select a report type"
+                        "default": "Select a report type",
+                        "type": "string"
                     },
                     "domain_and_competitors_list": {
-                        "const": "domain and list of competitors"
+                        "default": "domain and list of competitors",
+                        "type": "string"
                     },
                     "purchased": {
-                        "const": "purchased"
+                        "default": "purchased",
+                        "type": "string"
                     },
                     "Add_competitor_keywords": {
-                        "const": "Add competitor keywords"
+                        "default": "Add competitor keywords",
+                        "type": "string"
                     },
                     "you_can_purchase_later": {
-                        "const": "multi reports"
+                        "default": "multi reports",
+                        "type": "string"
                     },
                     "Checklist_keywords_paid_and_organic": {
-                        "const": "Keywords (Paid + Organic)"
+                        "default": "Keywords (Paid + Organic)",
+                        "type": "string"
                     },
                     "Keyword_performance_indicators": {
-                        "const": "Keyword performance indicators"
+                        "default": "Keyword performance indicators",
+                        "type": "string"
                     },
                     "Snippets_and_ads": {
-                        "const": "Snippet and ads"
+                        "default": "Snippet and ads",
+                        "type": "string"
                     },
                     "Website_URLs_visible_in_search": {
-                        "const": "Website URLs in SERP"
+                        "default": "Website URLs in SERP",
+                        "type": "string"
                     },
                     "Compare_data_with_competitors": {
-                        "const": "Compare data with competitors"
+                        "default": "Compare data with competitors",
+                        "type": "string"
                     },
                     "Group_export_of_competitors": {
-                        "const": "Competitors group export"
+                        "default": "Competitors group export",
+                        "type": "string"
                     },
                     "Keyword_cloud": {
-                        "const": "Keyword cloud"
+                        "default": "Keyword cloud",
+                        "type": "string"
                     },
                     "CPC": {
-                        "const": "CPC"
+                        "default": "CPC",
+                        "type": "string"
                     },
                     "Keywords_by_URL": {
-                        "const": "Keywords by URL"
+                        "default": "Keywords by URL",
+                        "type": "string"
                     },
                     "Competitor_research_level": {
-                        "const": "Competitor research level"
+                        "default": "Competitor research level",
+                        "type": "string"
                     },
                     "List_of_competitors_and_intersection": {
-                        "const": "List of competitors and intersection"
+                        "default": "List of competitors and intersection",
+                        "type": "string"
                     },
                     "Competitors_level_info": {
-                        "const": "A list of likely competitors will be included in the report without this option.<br><br>\n\t\tAdd competitor keywords to your report for quick access to keywords and snippets.<br><br>\n\t\tThe higher is the selected research level, the fewer pools of competitor keywords with a lower intersection level will be in the report.<br><br>\n\t\tIf you are not sure yet which level to select, you can buy the advanced report later on the <b>Competitors</b> page."
+                        "default": "A list of likely competitors will be included in the report without this option.<br><br>\n\t\tAdd competitor keywords to your report for quick access to keywords and snippets.<br><br>\n\t\tThe higher is the selected research level, the fewer pools of competitor keywords with a lower intersection level will be in the report.<br><br>\n\t\tIf you are not sure yet which level to select, you can buy the advanced report later on the <b>Competitors</b> page.",
+                        "type": "string"
                     },
                     "level_purchased": {
-                        "const": "level purchased"
+                        "default": "level purchased",
+                        "type": "string"
                     },
                     "included": {
-                        "const": "included"
+                        "default": "included",
+                        "type": "string"
                     },
                     "in_the_report": {
-                        "const": "in the report"
+                        "default": "in the report",
+                        "type": "string"
                     },
                     "Total": {
-                        "const": "Total"
+                        "default": "Total",
+                        "type": "string"
                     },
                     "Competitors_list": {
-                        "const": "List of competitors"
+                        "default": "List of competitors",
+                        "type": "string"
                     },
                     "Keywords_list": {
-                        "const": "List of keywords"
+                        "default": "List of keywords",
+                        "type": "string"
                     },
                     "Keywords_of_competitors": {
-                        "const": "Competitors keywords"
+                        "default": "Competitors keywords",
+                        "type": "string"
                     },
                     "To_project": {
-                        "const": "To project"
+                        "default": "To project",
+                        "type": "string"
                     },
                     "To_your_project": {
-                        "const": "To your project"
+                        "default": "To your project",
+                        "type": "string"
                     },
                     "Export_keywords_to_project": {
-                        "const": "Export keywords to the project"
+                        "default": "Export keywords to the project",
+                        "type": "string"
                     },
                     "To_export_keywords_to_project": {
-                        "const": "Export keywords to the project"
+                        "default": "Export keywords to the project",
+                        "type": "string"
                     },
                     "Select_project": {
-                        "const": "Select a project"
+                        "default": "Select a project",
+                        "type": "string"
                     },
                     "Automated_grouping": {
-                        "const": "Automated grouping"
+                        "default": "Automated grouping",
+                        "type": "string"
                     },
                     "If_these_keywords_already_added": {
-                        "const": "If these keywords already exist in the project"
+                        "default": "If these keywords already exist in the project",
+                        "type": "string"
                     },
                     "Keywords_total": {
-                        "const": "Total"
+                        "default": "Total",
+                        "type": "string"
                     },
                     "Keywords_common": {
-                        "const": "Common"
+                        "default": "Common",
+                        "type": "string"
                     },
                     "Keywords_unique": {
-                        "const": "Unique"
+                        "default": "Unique",
+                        "type": "string"
                     },
                     "Keywords_intersection": {
-                        "const": "Intersection"
+                        "default": "Intersection",
+                        "type": "string"
                     },
                     "Keywords_volume": {
-                        "const": "Volume"
+                        "default": "Volume",
+                        "type": "string"
                     },
                     "Keywords_impressions": {
-                        "const": "Impressions"
+                        "default": "Impressions",
+                        "type": "string"
                     },
                     "Keywords_avg_rank": {
-                        "const": "Average"
+                        "default": "Average",
+                        "type": "string"
                     },
                     "Keywords_median_rank": {
-                        "const": "Median"
+                        "default": "Median",
+                        "type": "string"
                     },
                     "Keywords_traffic": {
-                        "const": "Traffic"
+                        "default": "Traffic",
+                        "type": "string"
                     },
                     "Keywords_cost": {
-                        "const": "Cost"
+                        "default": "Cost",
+                        "type": "string"
                     },
                     "Keywords_count": {
-                        "const": "Keywords"
+                        "default": "Keywords",
+                        "type": "string"
                     },
                     "Keywords_relevance": {
-                        "const": "Relevance"
+                        "default": "Relevance",
+                        "type": "string"
                     },
                     "Competitor": {
-                        "const": "Competitor"
+                        "default": "Competitor",
+                        "type": "string"
                     },
                     "Elements": {
-                        "const": "Elements"
+                        "default": "Elements",
+                        "type": "string"
                     },
                     "No_elements": {
-                        "const": "No elements"
+                        "default": "No elements",
+                        "type": "string"
                     },
                     "Elements_object_card": {
-                        "const": "Object card"
+                        "default": "Object card",
+                        "type": "string"
                     },
                     "Elements_featured_snippet": {
-                        "const": "Featured snippet"
+                        "default": "Featured snippet",
+                        "type": "string"
                     },
                     "Elements_goods": {
-                        "const": "Goods"
+                        "default": "Goods",
+                        "type": "string"
                     },
                     "Elements_map": {
-                        "const": "Map"
+                        "default": "Map",
+                        "type": "string"
                     },
                     "Elements_video": {
-                        "const": "Video"
+                        "default": "Video",
+                        "type": "string"
                     },
                     "Elements_images": {
-                        "const": "Images"
+                        "default": "Images",
+                        "type": "string"
                     },
                     "Elements_news": {
-                        "const": "News"
+                        "default": "News",
+                        "type": "string"
                     },
                     "Elements_calc": {
-                        "const": "Formulas"
+                        "default": "Formulas",
+                        "type": "string"
                     },
                     "Elements_knowledge_panel": {
-                        "const": "Knowledge panel"
+                        "default": "Knowledge panel",
+                        "type": "string"
                     },
                     "Elements_dictionary": {
-                        "const": "Dictionary"
+                        "default": "Dictionary",
+                        "type": "string"
                     },
                     "Elements_definitions": {
-                        "const": "Definitions"
+                        "default": "Definitions",
+                        "type": "string"
                     },
                     "Elements_travel": {
-                        "const": "Travel"
+                        "default": "Travel",
+                        "type": "string"
                     },
                     "Elements_calculator": {
-                        "const": "Calculator"
+                        "default": "Calculator",
+                        "type": "string"
                     },
                     "Elements_related_searches": {
-                        "const": "Related keywords"
+                        "default": "Related keywords",
+                        "type": "string"
                     },
                     "Elements_ad_top": {
-                        "const": "Ad at the page top"
+                        "default": "Ad at the page top",
+                        "type": "string"
                     },
                     "Elements_ad_bottom": {
-                        "const": "Ad at the page bottom"
+                        "default": "Ad at the page bottom",
+                        "type": "string"
                     },
                     "Elements_ad_goods": {
-                        "const": "Ad - goods"
+                        "default": "Ad - goods",
+                        "type": "string"
                     },
                     "Elements_recipes": {
-                        "const": "Recipes"
+                        "default": "Recipes",
+                        "type": "string"
                     },
                     "Elements_health": {
-                        "const": "Health"
+                        "default": "Health",
+                        "type": "string"
                     },
                     "Elements_food": {
-                        "const": "Food, delivery, recipes"
+                        "default": "Food, delivery, recipes",
+                        "type": "string"
                     },
                     "Elements_media": {
-                        "const": "Media"
+                        "default": "Media",
+                        "type": "string"
                     },
                     "Elements_yandex_services": {
-                        "const": "Yandex services"
+                        "default": "Yandex services",
+                        "type": "string"
                     },
                     "Elements_interactive": {
-                        "const": "Charts etc."
+                        "default": "Charts etc.",
+                        "type": "string"
                     },
                     "reversed": {
-                        "const": "reversed"
+                        "default": "reversed",
+                        "type": "string"
                     },
                     "Rank_from_last_check": {
-                        "const": "Rank from last check"
+                        "default": "Rank from last check",
+                        "type": "string"
                     },
                     "Snippet_title": {
-                        "const": "Snippet title"
+                        "default": "Snippet title",
+                        "type": "string"
                     },
                     "Snippet_body": {
-                        "const": "Snippet body"
+                        "default": "Snippet body",
+                        "type": "string"
                     },
                     "Results_count": {
-                        "const": "Results"
+                        "default": "Results",
+                        "type": "string"
                     },
                     "Ad_type": {
-                        "const": "Ad type"
+                        "default": "Ad type",
+                        "type": "string"
                     },
                     "Traffic_forecast_depends_on_impressions_and_rank": {
-                        "const": "Traffic forecast<br>Depends on the number of impressions and a website rank"
+                        "default": "Traffic forecast<br>Depends on the number of impressions and a website rank",
+                        "type": "string"
                     },
                     "Potential_ad_cost_depends_on_CPC_and_traffic": {
-                        "const": "Potential ad cost based on traffic forecast. Сalculated by multiplying Traffic and CPC."
+                        "default": "Potential ad cost based on traffic forecast. Сalculated by multiplying Traffic and CPC.",
+                        "type": "string"
                     },
                     "Pages": {
-                        "const": "Pages"
+                        "default": "Pages",
+                        "type": "string"
                     },
                     "Results_menu": {
-                        "const": "Results menu"
+                        "default": "Results menu",
+                        "type": "string"
                     },
                     "Website_topic": {
-                        "const": "Topic"
+                        "default": "Topic",
+                        "type": "string"
                     },
                     "Search_URL_keyword": {
-                        "const": "Search URL / Keyword"
+                        "default": "Search URL / Keyword",
+                        "type": "string"
                     },
                     "Expires_in": {
-                        "const": "Expires in"
+                        "default": "Expires in",
+                        "type": "string"
                     },
                     "Keyword_search_volume": {
-                        "const": "Keyword search volume"
+                        "default": "Keyword search volume",
+                        "type": "string"
                     },
                     "Keyword_rank": {
-                        "const": "Keyword rank"
+                        "default": "Keyword rank",
+                        "type": "string"
                     },
                     "Keywords_to_export": {
-                        "const": "Keywords to export"
+                        "default": "Keywords to export",
+                        "type": "string"
                     },
                     "Intersection_label": {
-                        "const": "Keyword intersection percentage"
+                        "default": "Keyword intersection percentage",
+                        "type": "string"
                     },
                     "Relevance_label": {
-                        "const": "Relevance of two websites"
+                        "default": "Relevance of two websites",
+                        "type": "string"
                     },
                     "Set_target_URLs_automatically": {
-                        "const": "Set target URLs automatically"
+                        "default": "Set target URLs automatically",
+                        "type": "string"
                     },
                     "Traffic_forecast": {
-                        "const": "Traffic forecast"
+                        "default": "Traffic forecast",
+                        "type": "string"
                     },
                     "Traffic_volume": {
-                        "const": "Traffic volume"
+                        "default": "Traffic volume",
+                        "type": "string"
                     },
                     "No_data_to_display": {
-                        "const": "No data to display"
+                        "default": "No data to display",
+                        "type": "string"
                     },
                     "List_of_leaders": {
-                        "const": "List of leaders"
+                        "default": "List of leaders",
+                        "type": "string"
                     },
                     "Leaders_keywords": {
-                        "const": "Leaders keywords"
+                        "default": "Leaders keywords",
+                        "type": "string"
                     },
                     "Intersection_level": {
-                        "const": "Intersection level"
+                        "default": "Intersection level",
+                        "type": "string"
                     },
                     "Question_phrases": {
-                        "const": "Question phrases"
+                        "default": "Question phrases",
+                        "type": "string"
                     },
                     "Fix_word_order": {
-                        "const": "Fix word order"
+                        "default": "Fix word order",
+                        "type": "string"
                     },
                     "Exact_match": {
-                        "const": "Exact match"
+                        "default": "Exact match",
+                        "type": "string"
                     },
                     "Leader": {
-                        "const": "Leader"
+                        "default": "Leader",
+                        "type": "string"
                     },
                     "Commercial_word_forms": {
-                        "const": "Commercial word forms"
+                        "default": "Commercial word forms",
+                        "type": "string"
                     },
                     "Keyword_has_broad_thematic_database_specify_keyword": {
-                        "const": "Keyword has broad thematic database, specify keyword to get a more accurate report"
+                        "default": "Keyword has broad thematic database, specify keyword to get a more accurate report",
+                        "type": "string"
                     },
                     "Wordforms_thematic_keywords_leaders_list": {
-                        "const": "Word forms, thematic keywords and <br>list of leaders"
+                        "default": "Word forms, thematic keywords and <br>list of leaders",
+                        "type": "string"
                     },
                     "Search_volume_keyword_cost_seasonality": {
-                        "const": "Seasonal search volume and keyword cost"
+                        "default": "Seasonal search volume and keyword cost",
+                        "type": "string"
                     },
                     "Research_by_word_form": {
-                        "const": "Research by word form"
+                        "default": "Research by word form",
+                        "type": "string"
                     },
                     "Research_by_thematic": {
-                        "const": "Research by topic"
+                        "default": "Research by topic",
+                        "type": "string"
                     },
                     "by_thematic": {
-                        "const": "by topic"
+                        "default": "by topic",
+                        "type": "string"
                     },
                     "Organic_top_50_ads_by_thematics": {
-                        "const": "TOP 50 organic results + Ads on topic"
+                        "default": "TOP 50 organic results + Ads on topic",
+                        "type": "string"
                     },
                     "Topic_leaders_list": {
-                        "const": "List of topic leaders"
+                        "default": "List of topic leaders",
+                        "type": "string"
                     },
                     "Snippets_ads_of_topic_leaders": {
-                        "const": "Snippets and ads of topic leaders"
+                        "default": "Snippets and ads of topic leaders",
+                        "type": "string"
                     },
                     "Bulk_export_of_leaders_keywords": {
-                        "const": "Bulk export of leader keywords"
+                        "default": "Bulk export of leader keywords",
+                        "type": "string"
                     },
                     "Competitor_research": {
-                        "const": "Competitor research"
+                        "default": "Competitor research",
+                        "type": "string"
                     },
                     "Leaders_analysis": {
-                        "const": "Leader research"
+                        "default": "Leader research",
+                        "type": "string"
                     },
                     "Leaders": {
-                        "const": "Leaders"
+                        "default": "Leaders",
+                        "type": "string"
                     },
                     "Word_count": {
-                        "const": "Word count"
+                        "default": "Word count",
+                        "type": "string"
                     },
                     "Length": {
-                        "const": "Length"
+                        "default": "Length",
+                        "type": "string"
                     },
                     "Intersection_level_required": {
-                        "const": "Intersection level required"
+                        "default": "Intersection level required",
+                        "type": "string"
                     },
                     "Download_keywords_snippets_after_purchase": {
-                        "const": "After purchase, you can download keywords and snippets of this and other competitors with the intersection level %intersection% in one click and compare their data with the main domain on this report."
+                        "default": "After purchase, you can download keywords and snippets of this and other competitors with the intersection level %intersection% in one click and compare their data with the main domain on this report.",
+                        "type": "string"
                     },
                     "Results_not_found": {
-                        "const": "There's no report by such URL or keyword in our database. This means the URL doesn't rank in TOP-50 for high volume keywords or that the keyword has <5 volume in Yandex and Google at the same time.<br><br>To find the competitors that rank for the keywords in your project with My competitors tool, follow <a href=\"/support/rankings/snapshots/competitors/\">this manual.</a>"
+                        "default": "There's no report by such URL or keyword in our database. This means the URL doesn't rank in TOP-50 for high volume keywords or that the keyword has <5 volume in Yandex and Google at the same time.<br><br>To find the competitors that rank for the keywords in your project with My competitors tool, follow <a href=\"/support/rankings/snapshots/competitors/\">this manual.</a>",
+                        "type": "string"
                     }
                 },
                 "required": [

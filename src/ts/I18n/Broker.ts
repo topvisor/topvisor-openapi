@@ -8,336 +8,336 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         "I18n.Broker": {
-            /** @constant */
-            Filter: "Filter";
-            /** @constant */
-            All: "All";
-            /** @constant */
-            Active: "Active";
-            /** @constant */
-            Inactive: "Inactive";
-            /** @constant */
-            Draft: "Draft";
-            /** @constant */
-            Campaign_draft_status: "This campaign has a \"Draft\" status.<br> You can manage only active ads";
-            /** @constant */
-            Configured: "Configured";
-            /** @constant */
-            Not_configured: "Not configured";
-            /** @constant */
-            By_min_1GP: "Min. bid 1st GP";
-            /** @constant */
-            By_min_GP: "Min. bid GP";
-            /** @constant */
-            By_min_1SP: "Min. bid 1st SP";
-            /** @constant */
-            By_min_SP: "Min. bid SP";
-            /** @constant */
-            Min_bid: "Min. bid";
-            /** @constant */
-            No_ads: "This campaign has no ads or they<br> are not synced.";
-            /** @constant */
-            Refresh_list: "Update the list";
-            /** @constant */
-            All_groups: "All groups";
-            /** @constant */
-            Regions: "Display regions";
-            /** @constant */
-            Ad_number: "Ad № M";
-            /** @constant */
-            Keyword: "Keyword";
-            /** @constant */
-            Impressions: "Impressions";
-            /** @constant */
-            Clicks: "Clicks";
-            /** @constant */
-            Block_bid: "Traffic volume / Bid";
-            /** @constant */
-            Traffic_volume: "Traffic volume";
-            /** @constant */
-            CPC: "CPC";
-            /** @constant */
-            MAX_price: "MAX bid";
-            /** @constant */
-            if_MAX_price_preceeded: "if MAX price<br> preceeded";
-            /** @constant */
-            units: "units";
-            /** @constant */
-            New_bid: "Next<br>bid";
-            /** @constant */
-            Current_bid: "Current<br>bid";
-            /** @constant */
-            Cpc_search_results: "CPC on search<br> results page";
-            /** @constant */
-            Apply_to_selected_keywords: "Apply to selected keywords";
-            /** @constant */
-            count: " ";
-            /** @constant */
-            Adjustment_short: "Adj";
-            /** @constant */
-            Advertising_short: "Ad";
-            /** @constant */
-            Select_tactics: "Select tactics";
-            /** @constant */
-            Select_traffic_volume: "Select traffic volume";
-            /** @constant */
-            Select_position: "Select position";
-            /** @constant */
-            Set_price: "Set price";
-            /** @constant */
-            no_more: "no more";
-            /** @constant */
-            Adjust_for_other_campaigns: "Apply to all campaigns";
-            /** @constant */
-            Show_hide_keywords: "Show / Hide keywords";
-            /** @constant */
-            Show_group_keywords: "Show group keywords";
-            /** @constant */
-            Select_campaign: "Select campaign";
-            /** @constant */
-            Ad_groups: "Ad groups";
-            /** @constant */
-            Schedule: "Schedule";
-            /** @constant */
-            Journal: "Journal";
-            /** @constant */
-            Integration_settings: "Integration settings";
-            /** @constant */
-            Key_expires: "Key expires";
-            /** @constant */
-            Limits_API_direct: "Yandex.Direct API limits";
-            /** @constant */
-            Weekly_budget_forecast: "Weekly budget forecast";
-            /** @constant */
-            Update_list_campaigns: "Update ad campaigns";
-            /** @constant */
-            adjustments_for: "adjustments priced";
-            /** @constant */
-            API_limits: "API limits";
-            /** @constant */
-            Ad_campaigns: "Ad campaigns";
-            /** @constant */
-            Status: "Status";
-            /** @constant */
-            Direct_balance: "Direct<br> balance";
-            /** @constant */
-            configured_notconfigured: "configured<br>(not configured)";
-            /** @constant */
-            Bidding_cost: "Bidding<br>cost";
-            /** @constant */
-            Management: "Manage";
-            /** @constant */
-            for_all: "for all";
-            /** @constant */
-            Bid_adjustment: "Bid adjustment";
-            /** @constant */
-            Journal_log: "Journal";
-            /** @constant */
-            Automated_strategy: "Automated&nbsp;bid strategy: bidding cannot be applied";
-            /** @constant */
-            Bidding_disabled: "Bidding disabled";
-            /** @constant */
-            Adjust_not_adjust_bids: "Manage/Do not manage bids";
-            /** @constant */
-            Integrate_to_manage_bids_1: "To manage bids for ad campaigns,";
-            /** @constant */
-            Integrate_to_manage_bids_2: "integrate<br>";
-            /** @constant */
-            Integrate_to_manage_bids_3: "your account with";
-            /** @constant */
-            Mass_turn_on_bidding: "Turn on bidding for all campaigns";
-            /** @constant */
-            Turn_on: "On";
-            /** @constant */
-            Turn_off: "Off";
-            /** @constant */
-            Schedule_bidding: "Schedule bidding";
-            /** @constant */
-            Bulk_campaign_management: "Bulk campaign management";
-            /** @constant */
-            Keyword_was_deleted: "Keyword is deleted";
-            /** @constant */
-            in_Adwords: "in Google Ads";
-            /** @constant */
-            Keywords_bidding_applied: "Keywords with adjusted bids";
-            /** @constant */
-            Keywords_no_bidding_applied: "Keywords without adjusted bids";
-            /** @constant */
-            Yandex_error: "Yandex.Direct server error";
-            /** @constant */
-            No_vaild_currency_for_keywords: "No valid currency for this keyword found";
-            /** @constant */
-            Support_only_real_currency_note: "At the moment we support only real currency";
-            /** @constant */
-            Expected_array: "Array expected";
-            /** @constant */
-            Bid_management_available_for_manual_note: "Bid management available only for campaigns with manual bidding strategy";
-            /** @constant */
-            Low_balance_note: "You have insufficient funds to manage bids for the project";
-            /** @constant */
-            Low_balance_owner_note: "Project owner has insufficient funds";
-            /** @constant */
-            Direct_bids_adjusted_for_note: "Yandex.Direct bids are adjusted for the campaign";
-            /** @constant */
-            adjusted_for_project: "in the project";
-            /** @constant */
-            State_ENABLED: "Enabled";
-            /** @constant */
-            State_PAUSED: "Paused";
-            /** @constant */
-            State_REMOVED: "Removed";
-            /** @constant */
-            State_UNKNOWN: "Unknown";
-            /** @constant */
-            Frequency_never: "Never";
-            /** @constant */
-            Frequency_daily: "Daily";
-            /** @constant */
-            Frequency_daily_2: "Twice a day";
-            /** @constant */
-            Frequency_every_4_hours: "Every 4 hours";
-            /** @constant */
-            Frequency_every_hour: "Every hour";
-            /** @constant */
-            Frequency_half_hour: "Every 30 minutes";
-            /** @constant */
-            Frequency_10_min: "Every 10 minutes";
-            /** @constant */
-            Frequency_5_min: "Every 5 minutes";
-            /** @constant */
-            times_a_week: "times<br>a week";
-            /** @constant */
-            Start_managing_bids: "Run bidding";
-            /** @constant */
-            Manage_bids: "Manage bids";
-            /** @constant */
-            Bidding_schedule: "Bidding schedule";
-            /** @constant */
-            No_manage_bids_of_suspended_keywords: "Do not manage disabled keywords";
-            /** @constant */
-            cannot_combine_option_with_no_impressions_tactics: "this option cannot be combined with the \"Stop impressions\" tactic";
-            /** @constant */
-            Bidding_on_when_impressions_on: "Bidding is active only with ad impressions enabled, ad status is checked automatically";
-            /** @constant */
-            update: "update";
-            /** @constant */
-            Impressions_schedule: "Impressions schedule";
-            /** @constant */
-            Schedule_not_uploaded: "Schedule not uploaded yet.";
-            /** @constant */
-            Campaign_timezone: "Campaign timezone";
-            /** @constant */
-            Hours: "Hours";
-            /** @constant */
-            Include_working_weekend: "Show on weekend workdays";
-            /** @constant */
-            Include_holidays: "Show on holidays";
-            /** @constant */
-            Show_since: "Show since";
-            /** @constant */
-            show_till: "till";
-            /** @constant */
-            do_not_show: "do not show";
-            /** @constant */
-            Campaign_settings: "Campaign settings";
-            /** @constant */
-            All_campaigns: "All campaigns";
-            /** @constant */
-            Campaign: "Campaign";
-            /** @constant */
-            Info: "Details";
-            /** @constant */
-            risk_bid: "risk bid";
-            /** @constant */
-            First_place_premium: "1 Спецразмещение";
-            /** @constant */
-            Second_place_premium: "2 Спецразмещение";
-            /** @constant */
-            Third_place_premium: "3 Спецразмещение";
-            /** @constant */
-            Premium_placement: "Спецразмещение";
-            /** @constant */
-            First_place: "1 место в Гарантии";
-            /** @constant */
-            Guaranteed_placement: "Гарантированные показы";
-            /** @constant */
-            First_position: "1 место";
-            /** @constant */
-            Above_page: "Вверху страницы";
-            /** @constant */
-            First_page: "Первая страница";
-            /** @constant */
-            P11_0: "Traffic volume max.";
-            /** @constant */
-            P12_0: "Traffic volume ~95%";
-            /** @constant */
-            P13_0: "Traffic volume ~90%";
-            /** @constant */
-            P1L_0: "Traffic volume ~75%";
-            /** @constant */
-            P21_0: "Traffic volume ~15%";
-            /** @constant */
-            P2L_0: "Traffic volume ~5%";
-            /** @constant */
-            P11_1: "1st position";
-            /** @constant */
-            P1L_1: "Top of page";
-            /** @constant */
-            P21_1: "Suggested bid";
-            /** @constant */
-            P2L_1: "First page";
-            /** @constant */
-            P11_0_short: "1PP";
-            /** @constant */
-            P12_0_short: "2PP";
-            /** @constant */
-            P13_0_short: "3PP";
-            /** @constant */
-            P1L_0_short: "PP";
-            /** @constant */
-            P21_0_short: "1GP";
-            /** @constant */
-            P2L_0_short: "GP";
-            /** @constant */
-            P11_1_short: "1P";
-            /** @constant */
-            P1L_1_short: "↑P";
-            /** @constant */
-            P21_1_short: "SB";
-            /** @constant */
-            P2L_1_short: "↓P";
-            /** @constant */
-            Tactics_2_set_max_bid: "MAX: set MAX bid";
-            /** @constant */
-            Tactics_2_lower_pos: "Move ad down";
-            /** @constant */
-            Tactics_2_set_min_bid: "Set min bid";
-            /** @constant */
-            Tactics_2_stop_impressions: "Stop impressions";
-            /** @constant */
-            impressions_disabled: "ad is inactive";
-            /** @constant */
-            set_max: "set in MAX";
-            /** @constant */
-            set_min: "min bid";
-            /** @constant */
-            old_bid: "old bid";
-            /** @constant */
-            Lower_position: "Lower position";
-            /** @constant */
-            Select_date: "Select period";
-            /** @constant */
-            Download_log: "Download bidding history";
-            /** @constant */
-            Warinig_min_balance_for_bidding: "Important! Bidding is available if you have a minimum balance of:";
-            /** @constant */
-            Campaign_added_in_another_project: "This campaign already exists in another project";
-            /** @constant */
-            Bidding_activated_for_campaign_in_another_project: "Bidding is already activated for this campaign in another project";
-            /** @constant */
-            in_another_project: "in ano. project";
-            /** @constant */
-            agency: "agency";
+            /** @default Filter */
+            Filter: string;
+            /** @default All */
+            All: string;
+            /** @default Active */
+            Active: string;
+            /** @default Inactive */
+            Inactive: string;
+            /** @default Draft */
+            Draft: string;
+            /** @default This campaign has a "Draft" status.<br> You can manage only active ads */
+            Campaign_draft_status: string;
+            /** @default Configured */
+            Configured: string;
+            /** @default Not configured */
+            Not_configured: string;
+            /** @default Min. bid 1st GP */
+            By_min_1GP: string;
+            /** @default Min. bid GP */
+            By_min_GP: string;
+            /** @default Min. bid 1st SP */
+            By_min_1SP: string;
+            /** @default Min. bid SP */
+            By_min_SP: string;
+            /** @default Min. bid */
+            Min_bid: string;
+            /** @default This campaign has no ads or they<br> are not synced. */
+            No_ads: string;
+            /** @default Update the list */
+            Refresh_list: string;
+            /** @default All groups */
+            All_groups: string;
+            /** @default Display regions */
+            Regions: string;
+            /** @default Ad № M */
+            Ad_number: string;
+            /** @default Keyword */
+            Keyword: string;
+            /** @default Impressions */
+            Impressions: string;
+            /** @default Clicks */
+            Clicks: string;
+            /** @default Traffic volume / Bid */
+            Block_bid: string;
+            /** @default Traffic volume */
+            Traffic_volume: string;
+            /** @default CPC */
+            CPC: string;
+            /** @default MAX bid */
+            MAX_price: string;
+            /** @default if MAX price<br> preceeded */
+            if_MAX_price_preceeded: string;
+            /** @default units */
+            units: string;
+            /** @default Next<br>bid */
+            New_bid: string;
+            /** @default Current<br>bid */
+            Current_bid: string;
+            /** @default CPC on search<br> results page */
+            Cpc_search_results: string;
+            /** @default Apply to selected keywords */
+            Apply_to_selected_keywords: string;
+            /** @default   */
+            count: string;
+            /** @default Adj */
+            Adjustment_short: string;
+            /** @default Ad */
+            Advertising_short: string;
+            /** @default Select tactics */
+            Select_tactics: string;
+            /** @default Select traffic volume */
+            Select_traffic_volume: string;
+            /** @default Select position */
+            Select_position: string;
+            /** @default Set price */
+            Set_price: string;
+            /** @default no more */
+            no_more: string;
+            /** @default Apply to all campaigns */
+            Adjust_for_other_campaigns: string;
+            /** @default Show / Hide keywords */
+            Show_hide_keywords: string;
+            /** @default Show group keywords */
+            Show_group_keywords: string;
+            /** @default Select campaign */
+            Select_campaign: string;
+            /** @default Ad groups */
+            Ad_groups: string;
+            /** @default Schedule */
+            Schedule: string;
+            /** @default Journal */
+            Journal: string;
+            /** @default Integration settings */
+            Integration_settings: string;
+            /** @default Key expires */
+            Key_expires: string;
+            /** @default Yandex.Direct API limits */
+            Limits_API_direct: string;
+            /** @default Weekly budget forecast */
+            Weekly_budget_forecast: string;
+            /** @default Update ad campaigns */
+            Update_list_campaigns: string;
+            /** @default adjustments priced */
+            adjustments_for: string;
+            /** @default API limits */
+            API_limits: string;
+            /** @default Ad campaigns */
+            Ad_campaigns: string;
+            /** @default Status */
+            Status: string;
+            /** @default Direct<br> balance */
+            Direct_balance: string;
+            /** @default configured<br>(not configured) */
+            configured_notconfigured: string;
+            /** @default Bidding<br>cost */
+            Bidding_cost: string;
+            /** @default Manage */
+            Management: string;
+            /** @default for all */
+            for_all: string;
+            /** @default Bid adjustment */
+            Bid_adjustment: string;
+            /** @default Journal */
+            Journal_log: string;
+            /** @default Automated&nbsp;bid strategy: bidding cannot be applied */
+            Automated_strategy: string;
+            /** @default Bidding disabled */
+            Bidding_disabled: string;
+            /** @default Manage/Do not manage bids */
+            Adjust_not_adjust_bids: string;
+            /** @default To manage bids for ad campaigns, */
+            Integrate_to_manage_bids_1: string;
+            /** @default integrate<br> */
+            Integrate_to_manage_bids_2: string;
+            /** @default your account with */
+            Integrate_to_manage_bids_3: string;
+            /** @default Turn on bidding for all campaigns */
+            Mass_turn_on_bidding: string;
+            /** @default On */
+            Turn_on: string;
+            /** @default Off */
+            Turn_off: string;
+            /** @default Schedule bidding */
+            Schedule_bidding: string;
+            /** @default Bulk campaign management */
+            Bulk_campaign_management: string;
+            /** @default Keyword is deleted */
+            Keyword_was_deleted: string;
+            /** @default in Google Ads */
+            in_Adwords: string;
+            /** @default Keywords with adjusted bids */
+            Keywords_bidding_applied: string;
+            /** @default Keywords without adjusted bids */
+            Keywords_no_bidding_applied: string;
+            /** @default Yandex.Direct server error */
+            Yandex_error: string;
+            /** @default No valid currency for this keyword found */
+            No_vaild_currency_for_keywords: string;
+            /** @default At the moment we support only real currency */
+            Support_only_real_currency_note: string;
+            /** @default Array expected */
+            Expected_array: string;
+            /** @default Bid management available only for campaigns with manual bidding strategy */
+            Bid_management_available_for_manual_note: string;
+            /** @default You have insufficient funds to manage bids for the project */
+            Low_balance_note: string;
+            /** @default Project owner has insufficient funds */
+            Low_balance_owner_note: string;
+            /** @default Yandex.Direct bids are adjusted for the campaign */
+            Direct_bids_adjusted_for_note: string;
+            /** @default in the project */
+            adjusted_for_project: string;
+            /** @default Enabled */
+            State_ENABLED: string;
+            /** @default Paused */
+            State_PAUSED: string;
+            /** @default Removed */
+            State_REMOVED: string;
+            /** @default Unknown */
+            State_UNKNOWN: string;
+            /** @default Never */
+            Frequency_never: string;
+            /** @default Daily */
+            Frequency_daily: string;
+            /** @default Twice a day */
+            Frequency_daily_2: string;
+            /** @default Every 4 hours */
+            Frequency_every_4_hours: string;
+            /** @default Every hour */
+            Frequency_every_hour: string;
+            /** @default Every 30 minutes */
+            Frequency_half_hour: string;
+            /** @default Every 10 minutes */
+            Frequency_10_min: string;
+            /** @default Every 5 minutes */
+            Frequency_5_min: string;
+            /** @default times<br>a week */
+            times_a_week: string;
+            /** @default Run bidding */
+            Start_managing_bids: string;
+            /** @default Manage bids */
+            Manage_bids: string;
+            /** @default Bidding schedule */
+            Bidding_schedule: string;
+            /** @default Do not manage disabled keywords */
+            No_manage_bids_of_suspended_keywords: string;
+            /** @default this option cannot be combined with the "Stop impressions" tactic */
+            cannot_combine_option_with_no_impressions_tactics: string;
+            /** @default Bidding is active only with ad impressions enabled, ad status is checked automatically */
+            Bidding_on_when_impressions_on: string;
+            /** @default update */
+            update: string;
+            /** @default Impressions schedule */
+            Impressions_schedule: string;
+            /** @default Schedule not uploaded yet. */
+            Schedule_not_uploaded: string;
+            /** @default Campaign timezone */
+            Campaign_timezone: string;
+            /** @default Hours */
+            Hours: string;
+            /** @default Show on weekend workdays */
+            Include_working_weekend: string;
+            /** @default Show on holidays */
+            Include_holidays: string;
+            /** @default Show since */
+            Show_since: string;
+            /** @default till */
+            show_till: string;
+            /** @default do not show */
+            do_not_show: string;
+            /** @default Campaign settings */
+            Campaign_settings: string;
+            /** @default All campaigns */
+            All_campaigns: string;
+            /** @default Campaign */
+            Campaign: string;
+            /** @default Details */
+            Info: string;
+            /** @default risk bid */
+            risk_bid: string;
+            /** @default 1 Спецразмещение */
+            First_place_premium: string;
+            /** @default 2 Спецразмещение */
+            Second_place_premium: string;
+            /** @default 3 Спецразмещение */
+            Third_place_premium: string;
+            /** @default Спецразмещение */
+            Premium_placement: string;
+            /** @default 1 место в Гарантии */
+            First_place: string;
+            /** @default Гарантированные показы */
+            Guaranteed_placement: string;
+            /** @default 1 место */
+            First_position: string;
+            /** @default Вверху страницы */
+            Above_page: string;
+            /** @default Первая страница */
+            First_page: string;
+            /** @default Traffic volume max. */
+            P11_0: string;
+            /** @default Traffic volume ~95% */
+            P12_0: string;
+            /** @default Traffic volume ~90% */
+            P13_0: string;
+            /** @default Traffic volume ~75% */
+            P1L_0: string;
+            /** @default Traffic volume ~15% */
+            P21_0: string;
+            /** @default Traffic volume ~5% */
+            P2L_0: string;
+            /** @default 1st position */
+            P11_1: string;
+            /** @default Top of page */
+            P1L_1: string;
+            /** @default Suggested bid */
+            P21_1: string;
+            /** @default First page */
+            P2L_1: string;
+            /** @default 1PP */
+            P11_0_short: string;
+            /** @default 2PP */
+            P12_0_short: string;
+            /** @default 3PP */
+            P13_0_short: string;
+            /** @default PP */
+            P1L_0_short: string;
+            /** @default 1GP */
+            P21_0_short: string;
+            /** @default GP */
+            P2L_0_short: string;
+            /** @default 1P */
+            P11_1_short: string;
+            /** @default ↑P */
+            P1L_1_short: string;
+            /** @default SB */
+            P21_1_short: string;
+            /** @default ↓P */
+            P2L_1_short: string;
+            /** @default MAX: set MAX bid */
+            Tactics_2_set_max_bid: string;
+            /** @default Move ad down */
+            Tactics_2_lower_pos: string;
+            /** @default Set min bid */
+            Tactics_2_set_min_bid: string;
+            /** @default Stop impressions */
+            Tactics_2_stop_impressions: string;
+            /** @default ad is inactive */
+            impressions_disabled: string;
+            /** @default set in MAX */
+            set_max: string;
+            /** @default min bid */
+            set_min: string;
+            /** @default old bid */
+            old_bid: string;
+            /** @default Lower position */
+            Lower_position: string;
+            /** @default Select period */
+            Select_date: string;
+            /** @default Download bidding history */
+            Download_log: string;
+            /** @default Important! Bidding is available if you have a minimum balance of: */
+            Warinig_min_balance_for_bidding: string;
+            /** @default This campaign already exists in another project */
+            Campaign_added_in_another_project: string;
+            /** @default Bidding is already activated for this campaign in another project */
+            Bidding_activated_for_campaign_in_another_project: string;
+            /** @default in ano. project */
+            in_another_project: string;
+            /** @default agency */
+            agency: string;
         };
     };
     responses: never;

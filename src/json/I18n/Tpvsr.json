@@ -11,46 +11,60 @@
                 "type": "object",
                 "properties": {
                     "Link_deleted": {
-                        "const": "Link deleted"
+                        "default": "Link deleted",
+                        "type": "string"
                     },
                     "Show_deleted_links": {
-                        "const": "Show deleted links"
+                        "default": "Show deleted links",
+                        "type": "string"
                     },
                     "Show_favorite_links": {
-                        "const": "Show favorite links"
+                        "default": "Show favorite links",
+                        "type": "string"
                     },
                     "Remove_link": {
-                        "const": "Delete link"
+                        "default": "Delete link",
+                        "type": "string"
                     },
                     "Recover_link": {
-                        "const": "Restore link"
+                        "default": "Restore link",
+                        "type": "string"
                     },
                     "Set_favorite": {
-                        "const": "Star link"
+                        "default": "Star link",
+                        "type": "string"
                     },
                     "Link_cannot_be_shortened": {
-                        "const": "URL cannot be shorten."
+                        "default": "URL cannot be shorten.",
+                        "type": "string"
                     },
                     "Link_blocked_roskomnadzor": {
-                        "const": "URL cannot be shorten (4). URL blocked by Roskomnadzor."
+                        "default": "URL cannot be shorten (4). URL blocked by Roskomnadzor.",
+                        "type": "string"
                     },
                     "Sort_name_desc": {
-                        "const": "Title Z-A"
+                        "default": "Title Z-A",
+                        "type": "string"
                     },
                     "Sort_name_asc": {
-                        "const": "Title A-Z"
+                        "default": "Title A-Z",
+                        "type": "string"
                     },
                     "Sort_clicks_desc": {
-                        "const": "Clicks descending"
+                        "default": "Clicks descending",
+                        "type": "string"
                     },
                     "Sort_clicks_asc": {
-                        "const": "Clicks ascending"
+                        "default": "Clicks ascending",
+                        "type": "string"
                     },
                     "Sort_date_asc": {
-                        "const": "By date from oldest to newest"
+                        "default": "By date from oldest to newest",
+                        "type": "string"
                     },
                     "Sort_date_desc": {
-                        "const": "By date from newest to oldest"
+                        "default": "By date from newest to oldest",
+                        "type": "string"
                     }
                 },
                 "required": [

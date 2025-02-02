@@ -11,43 +11,56 @@
                 "type": "object",
                 "properties": {
                     "Depth": {
-                        "const": "depth"
+                        "default": "depth",
+                        "type": "string"
                     },
                     "of_results": {
-                        "const": "results"
+                        "default": "results",
+                        "type": "string"
                     },
                     "of_keywords": {
-                        "const": "keywords"
+                        "default": "keywords",
+                        "type": "string"
                     },
                     "of_pages": {
-                        "const": "URLs"
+                        "default": "URLs",
+                        "type": "string"
                     },
                     "up_to": {
-                        "const": "up to"
+                        "default": "up to",
+                        "type": "string"
                     },
                     "from": {
-                        "const": "from"
+                        "default": "from",
+                        "type": "string"
                     },
                     "Without_discount": {
-                        "const": "No discount"
+                        "default": "No discount",
+                        "type": "string"
                     },
                     "What_is_a_tariff": {
-                        "const": "What is a pricing plan (tariff)?"
+                        "default": "What is a pricing plan (tariff)?",
+                        "type": "string"
                     },
                     "Rank_tracker_and_collecting_TOP": {
-                        "const": "Rank Tracking and SERP Top"
+                        "default": "Rank Tracking and SERP Top",
+                        "type": "string"
                     },
                     "Semantics": {
-                        "const": "Semantics"
+                        "default": "Semantics",
+                        "type": "string"
                     },
                     "Technical_Seo": {
-                        "const": "Technical SEO"
+                        "default": "Technical SEO",
+                        "type": "string"
                     },
                     "Yandex_direct": {
-                        "const": "Yandex Direct"
+                        "default": "Yandex Direct",
+                        "type": "string"
                     },
                     "Account": {
-                        "const": "Account"
+                        "default": "Account",
+                        "type": "string"
                     }
                 },
                 "required": [

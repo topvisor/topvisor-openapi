@@ -8,12 +8,12 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         "I18n.Units": {
-            /** @constant */
-            s: "s";
-            /** @constant */
-            ms: "ms";
-            /** @constant */
-            KB: "KB";
+            /** @default s */
+            s: string;
+            /** @default ms */
+            ms: string;
+            /** @default KB */
+            KB: string;
         };
     };
     responses: never;

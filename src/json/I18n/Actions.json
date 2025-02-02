@@ -11,37 +11,48 @@
                 "type": "object",
                 "properties": {
                     "Link_not_available": {
-                        "const": "This link is no longer active"
+                        "default": "This link is no longer active",
+                        "type": "string"
                     },
                     "User_blocked": {
-                        "const": "Your user is blocked"
+                        "default": "Your user is blocked",
+                        "type": "string"
                     },
                     "Report_subscribe_canceled": {
-                        "const": "You successfully unsubscribed from project reports"
+                        "default": "You successfully unsubscribed from project reports",
+                        "type": "string"
                     },
                     "Report_subscribe_canceled1": {
-                        "const": "Subscription to"
+                        "default": "Subscription to",
+                        "type": "string"
                     },
                     "Report_subscribe_canceled2": {
-                        "const": "is cancelled successfully"
+                        "default": "is cancelled successfully",
+                        "type": "string"
                     },
                     "Informer_unsubscribe_news": {
-                        "const": "unsubscribe from news"
+                        "default": "unsubscribe from news",
+                        "type": "string"
                     },
                     "Informer_subscribe_balance": {
-                        "const": "unsubscribe from low balance alerts"
+                        "default": "unsubscribe from low balance alerts",
+                        "type": "string"
                     },
                     "Informer_unsubscribe_tickets": {
-                        "const": "unsubscribe from new ticket replies"
+                        "default": "unsubscribe from new ticket replies",
+                        "type": "string"
                     },
                     "Informer_unsubscribe_update": {
-                        "const": "unsubscribe from Yandex updates"
+                        "default": "unsubscribe from Yandex updates",
+                        "type": "string"
                     },
                     "Informer_unsubscribe_comments": {
-                        "const": "unsubscribe from new comments"
+                        "default": "unsubscribe from new comments",
+                        "type": "string"
                     },
                     "Informer_unsubscribe_api": {
-                        "const": "unsubscribe from API updates"
+                        "default": "unsubscribe from API updates",
+                        "type": "string"
                     }
                 },
                 "required": [

@@ -11,472 +11,627 @@
                 "type": "object",
                 "properties": {
                     "Audit": {
-                        "const": "Website audit"
+                        "default": "Website audit",
+                        "type": "string"
                     },
                     "Indexing": {
-                        "const": "Index status"
+                        "default": "Index status",
+                        "type": "string"
                     },
                     "Watcher": {
-                        "const": "Website watcher"
+                        "default": "Website watcher",
+                        "type": "string"
                     },
                     "No_results": {
-                        "const": "You haven't checked your website yet"
+                        "default": "You haven't checked your website yet",
+                        "type": "string"
                     },
                     "Process_text": {
-                        "const": "Scanning"
+                        "default": "Scanning",
+                        "type": "string"
                     },
                     "Header_h1": {
-                        "const": "H1 Header"
+                        "default": "H1 Header",
+                        "type": "string"
                     },
                     "Menu": {
-                        "const": "Website SEO audit"
+                        "default": "Website SEO audit",
+                        "type": "string"
                     },
                     "Associated_pages": {
-                        "const": "Associated pages"
+                        "default": "Associated pages",
+                        "type": "string"
                     },
                     "String_length_short": {
-                        "const": "Symb. count"
+                        "default": "Symb. count",
+                        "type": "string"
                     },
                     "Filter_all": {
-                        "const": "All"
+                        "default": "All",
+                        "type": "string"
                     },
                     "Filter_with_warnings_or_errors": {
-                        "const": "All with issues"
+                        "default": "All with issues",
+                        "type": "string"
                     },
                     "Filter_with_warnings": {
-                        "const": "With warnings"
+                        "default": "With warnings",
+                        "type": "string"
                     },
                     "Filter_with_errors": {
-                        "const": "With errors"
+                        "default": "With errors",
+                        "type": "string"
                     },
                     "Filter_checks_changed": {
-                        "const": "What's new"
+                        "default": "What's new",
+                        "type": "string"
                     },
                     "Links_inner": {
-                        "const": "Internal links"
+                        "default": "Internal links",
+                        "type": "string"
                     },
                     "Links_external": {
-                        "const": "External links"
+                        "default": "External links",
+                        "type": "string"
                     },
                     "Pages_to_check": {
-                        "const": "Pages to check"
+                        "default": "Pages to check",
+                        "type": "string"
                     },
                     "Generated_sitemap": {
-                        "const": "Generated sitemap"
+                        "default": "Generated sitemap",
+                        "type": "string"
                     },
                     "Sitemap_not_found": {
-                        "const": "Sitemap not found"
+                        "default": "Sitemap not found",
+                        "type": "string"
                     },
                     "Sitemap_already_started_error": {
-                        "const": "Sitemap already started"
+                        "default": "Sitemap already started",
+                        "type": "string"
                     },
                     "Sitemap_gen": {
-                        "const": "Sitemap generator"
+                        "default": "Sitemap generator",
+                        "type": "string"
                     },
                     "pages": {
-                        "const": "pages"
+                        "default": "pages",
+                        "type": "string"
                     },
                     "Site_size": {
-                        "const": "Web page count"
+                        "default": "Web page count",
+                        "type": "string"
                     },
                     "Header_start_short": {
-                        "const": "Scan"
+                        "default": "Scan",
+                        "type": "string"
                     },
                     "Step1_gen": {
-                        "const": "Generate"
+                        "default": "Generate",
+                        "type": "string"
                     },
                     "Step1_gen_notice": {
-                        "const": "A valid map can be generated only with a valid robots.txt"
+                        "default": "A valid map can be generated only with a valid robots.txt",
+                        "type": "string"
                     },
                     "Sitemap_bank_info": {
-                        "const": "Sitemap generation for"
+                        "default": "Sitemap generation for",
+                        "type": "string"
                     },
                     "Audit_bank_info": {
-                        "const": "Project audit for"
+                        "default": "Project audit for",
+                        "type": "string"
                     },
                     "Report": {
-                        "const": "Report"
+                        "default": "Report",
+                        "type": "string"
                     },
                     "Header_browse": {
-                        "const": "Summary"
+                        "default": "Summary",
+                        "type": "string"
                     },
                     "Header_common": {
-                        "const": "Common"
+                        "default": "Common",
+                        "type": "string"
                     },
                     "Count_pages_checked": {
-                        "const": "Scanned pages"
+                        "default": "Scanned pages",
+                        "type": "string"
                     },
                     "Header_notices": {
-                        "const": "Warnings"
+                        "default": "Warnings",
+                        "type": "string"
                     },
                     "Header_warnings": {
-                        "const": "Issues"
+                        "default": "Issues",
+                        "type": "string"
                     },
                     "Www_redirect": {
-                        "const": "Redirects between"
+                        "default": "Redirects between",
+                        "type": "string"
                     },
                     "robots_txt_blocked": {
-                        "const": "blocked by robots.txt"
+                        "default": "blocked by robots.txt",
+                        "type": "string"
                     },
                     "refresh_redirect": {
-                        "const": "blocked by <i>&lt;meta http-equiv=\"refresh\"&gt;</i>"
+                        "default": "blocked by <i>&lt;meta http-equiv=\"refresh\"&gt;</i>",
+                        "type": "string"
                     },
                     "noindex": {
-                        "const": "blocked by <i>&lt;meta name=\"robots\" content=\"noindex\"&gt;</i>"
+                        "default": "blocked by <i>&lt;meta name=\"robots\" content=\"noindex\"&gt;</i>",
+                        "type": "string"
                     },
                     "redirect": {
-                        "const": "redirects detected"
+                        "default": "redirects detected",
+                        "type": "string"
                     },
                     "index_broken": {
-                        "const": "loading error / incorrect server response code (for example, 404, 503)"
+                        "default": "loading error / incorrect server response code (for example, 404, 503)",
+                        "type": "string"
                     },
                     "title_empty": {
-                        "const": "title is missing"
+                        "default": "title is missing",
+                        "type": "string"
                     },
                     "title_size": {
-                        "const": "too short / long title"
+                        "default": "too short / long title",
+                        "type": "string"
                     },
                     "title_dbl": {
-                        "const": "duplicate title"
+                        "default": "duplicate title",
+                        "type": "string"
                     },
                     "description_empty": {
-                        "const": "description is missing"
+                        "default": "description is missing",
+                        "type": "string"
                     },
                     "description_size": {
-                        "const": "too short / long description"
+                        "default": "too short / long description",
+                        "type": "string"
                     },
                     "description_dbl": {
-                        "const": "duplicate description"
+                        "default": "duplicate description",
+                        "type": "string"
                     },
                     "links_empty_content": {
-                        "const": "anchor or alternative (attribute <i>title=\"...\"</i>) text is missing"
+                        "default": "anchor or alternative (attribute <i>title=\"...\"</i>) text is missing",
+                        "type": "string"
                     },
                     "nofollow": {
-                        "const": "attribute <i>rel=\"nofollow\"</i> is used"
+                        "default": "attribute <i>rel=\"nofollow\"</i> is used",
+                        "type": "string"
                     },
                     "links_broken": {
-                        "const": "broken links"
+                        "default": "broken links",
+                        "type": "string"
                     },
                     "no_title": {
-                        "const": "alternative text (attribute <i>alt=\"...\"</i>) is missing"
+                        "default": "alternative text (attribute <i>alt=\"...\"</i>) is missing",
+                        "type": "string"
                     },
                     "images_broken": {
-                        "const": "\"broken\" image"
+                        "default": "\"broken\" image",
+                        "type": "string"
                     },
                     "h1_empty": {
-                        "const": "empty or missing H1 tag"
+                        "default": "empty or missing H1 tag",
+                        "type": "string"
                     },
                     "no_lastmod": {
-                        "const": "Last-Modified is missing"
+                        "default": "Last-Modified is missing",
+                        "type": "string"
                     },
                     "no_lastmod_since": {
-                        "const": "If-Modified-Since not processed"
+                        "default": "If-Modified-Since not processed",
+                        "type": "string"
                     },
                     "Header_index": {
-                        "const": "Index status"
+                        "default": "Index status",
+                        "type": "string"
                     },
                     "Status_code": {
-                        "const": "Response code"
+                        "default": "Response code",
+                        "type": "string"
                     },
                     "Robots_txt_blocked_short": {
-                        "const": "Blocked robots.txt"
+                        "default": "Blocked robots.txt",
+                        "type": "string"
                     },
                     "Header_snippet": {
-                        "const": "Snippet"
+                        "default": "Snippet",
+                        "type": "string"
                     },
                     "Description": {
-                        "const": "Meta-description (description)"
+                        "default": "Meta-description (description)",
+                        "type": "string"
                     },
                     "Snippet_title_dbl": {
-                        "const": "Duplicate titles"
+                        "default": "Duplicate titles",
+                        "type": "string"
                     },
                     "Snippet_description_dbl": {
-                        "const": "Duplicate descriptions"
+                        "default": "Duplicate descriptions",
+                        "type": "string"
                     },
                     "Header_links": {
-                        "const": "Links"
+                        "default": "Links",
+                        "type": "string"
                     },
                     "Link_type": {
-                        "const": "Type"
+                        "default": "Type",
+                        "type": "string"
                     },
                     "Link_content": {
-                        "const": "Text (anchor)"
+                        "default": "Text (anchor)",
+                        "type": "string"
                     },
                     "Link_title": {
-                        "const": "Text (title)"
+                        "default": "Text (title)",
+                        "type": "string"
                     },
                     "Link_pages": {
-                        "const": "Pages"
+                        "default": "Pages",
+                        "type": "string"
                     },
                     "Link_broken": {
-                        "const": "\"Broken\""
+                        "default": "\"Broken\"",
+                        "type": "string"
                     },
                     "Link_image": {
-                        "const": "Image"
+                        "default": "Image",
+                        "type": "string"
                     },
                     "Link_image2": {
-                        "const": "Image"
+                        "default": "Image",
+                        "type": "string"
                     },
                     "Link_text": {
-                        "const": "Text"
+                        "default": "Text",
+                        "type": "string"
                     },
                     "Watcher_send_to_informer": {
-                        "const": "Notification Center"
+                        "default": "Notification Center",
+                        "type": "string"
                     },
                     "Generate_sitemap": {
-                        "const": "Generate sitemap"
+                        "default": "Generate sitemap",
+                        "type": "string"
                     },
                     "Sitemap_generation": {
-                        "const": "Sitemap generator"
+                        "default": "Sitemap generator",
+                        "type": "string"
                     },
                     "Sitemap_uploading": {
-                        "const": "Sitemap uploader"
+                        "default": "Sitemap uploader",
+                        "type": "string"
                     },
                     "Header_images": {
-                        "const": "Images"
+                        "default": "Images",
+                        "type": "string"
                     },
                     "Image_alt": {
-                        "const": "Alt-text"
+                        "default": "Alt-text",
+                        "type": "string"
                     },
                     "Image_pages": {
-                        "const": "Pages"
+                        "default": "Pages",
+                        "type": "string"
                     },
                     "Image_size": {
-                        "const": "Size"
+                        "default": "Size",
+                        "type": "string"
                     },
                     "Image_broken": {
-                        "const": "\"Broken\""
+                        "default": "\"Broken\"",
+                        "type": "string"
                     },
                     "Header_content": {
-                        "const": "Content"
+                        "default": "Content",
+                        "type": "string"
                     },
                     "Title_page": {
-                        "const": "Page title (Title)"
+                        "default": "Page title (Title)",
+                        "type": "string"
                     },
                     "Header_pages_short": {
-                        "const": "List of pages"
+                        "default": "List of pages",
+                        "type": "string"
                     },
                     "Header_page": {
-                        "const": "Page audit"
+                        "default": "Page audit",
+                        "type": "string"
                     },
                     "Page_to_disallow": {
-                        "const": "Skip the page in the next reports"
+                        "default": "Skip the page in the next reports",
+                        "type": "string"
                     },
                     "Page_to_disallow_ok": {
-                        "const": "The page will be skipped in the next reports"
+                        "default": "The page will be skipped in the next reports",
+                        "type": "string"
                     },
                     "Page_redirects": {
-                        "const": "Redirects"
+                        "default": "Redirects",
+                        "type": "string"
                     },
                     "Page_code": {
-                        "const": "Page response code"
+                        "default": "Page response code",
+                        "type": "string"
                     },
                     "Page_robots_txt_blocked": {
-                        "const": "Blocked by Robots.txt"
+                        "default": "Blocked by Robots.txt",
+                        "type": "string"
                     },
                     "Page_nofollow": {
-                        "const": "Contains meta robots nofollow"
+                        "default": "Contains meta robots nofollow",
+                        "type": "string"
                     },
                     "Page_noindex": {
-                        "const": "Blocked by meta robots noindex"
+                        "default": "Blocked by meta robots noindex",
+                        "type": "string"
                     },
                     "Page_canonical": {
-                        "const": "Contains rel=\"canonical\""
+                        "default": "Contains rel=\"canonical\"",
+                        "type": "string"
                     },
                     "Page_alternate": {
-                        "const": "Contains rel=\"alternate\""
+                        "default": "Contains rel=\"alternate\"",
+                        "type": "string"
                     },
                     "Page_refresh": {
-                        "const": "Contains meta refresh redirect"
+                        "default": "Contains meta refresh redirect",
+                        "type": "string"
                     },
                     "Page_string_length": {
-                        "const": "Symbol count"
+                        "default": "Symbol count",
+                        "type": "string"
                     },
                     "Page_title_dbl": {
-                        "const": "Duplicate title"
+                        "default": "Duplicate title",
+                        "type": "string"
                     },
                     "Page_description_dbl": {
-                        "const": "Duplicate description"
+                        "default": "Duplicate description",
+                        "type": "string"
                     },
                     "Filter_changed": {
-                        "const": "Changes"
+                        "default": "Changes",
+                        "type": "string"
                     },
                     "Filter_http_not_changed": {
-                        "const": "Changes (HTTP code didn't change)"
+                        "default": "Changes (HTTP code didn't change)",
+                        "type": "string"
                     },
                     "Filter_check_selected": {
-                        "const": "Only current report"
+                        "default": "Only current report",
+                        "type": "string"
                     },
                     "Filter_check_before": {
-                        "const": "All until the applied date"
+                        "default": "All until the applied date",
+                        "type": "string"
                     },
                     "Watcher_go": {
-                        "const": "Check"
+                        "default": "Check",
+                        "type": "string"
                     },
                     "Watcher_process_text": {
-                        "const": "Scanning"
+                        "default": "Scanning",
+                        "type": "string"
                     },
                     "Watcher_bank_info": {
-                        "const": "Website watcher report for"
+                        "default": "Website watcher report for",
+                        "type": "string"
                     },
                     "Watcher_need_config_1": {
-                        "const": "To run Watcher"
+                        "default": "To run Watcher",
+                        "type": "string"
                     },
                     "Watcher_need_config_2": {
-                        "const": "move to the settings"
+                        "default": "move to the settings",
+                        "type": "string"
                     },
                     "Watcher_need_config_3": {
-                        "const": "and add a list of pages"
+                        "default": "and add a list of pages",
+                        "type": "string"
                     },
                     "Indexing_go": {
-                        "const": "Scan"
+                        "default": "Scan",
+                        "type": "string"
                     },
                     "Indexing_check": {
-                        "const": "Index checker"
+                        "default": "Index checker",
+                        "type": "string"
                     },
                     "Indexing_no_results": {
-                        "const": "You haven't checked website index status yet"
+                        "default": "You haven't checked website index status yet",
+                        "type": "string"
                     },
                     "Indexing_bank_info": {
-                        "const": "Index status report for"
+                        "default": "Index status report for",
+                        "type": "string"
                     },
                     "Indexing_need_config_1": {
-                        "const": "To check website index status "
+                        "default": "To check website index status ",
+                        "type": "string"
                     },
                     "Indexing_need_config_2": {
-                        "const": "set"
+                        "default": "set",
+                        "type": "string"
                     },
                     "Indexing_need_config_3": {
-                        "const": "a list of pages to scan and select search engines"
+                        "default": "a list of pages to scan and select search engines",
+                        "type": "string"
                     },
                     "Pages_for_analyse_not_selected": {
-                        "const": "Please add pages to scan in the settings"
+                        "default": "Please add pages to scan in the settings",
+                        "type": "string"
                     },
                     "Delete_url_by_regexp": {
-                        "const": "Delete URLs by regexp match"
+                        "default": "Delete URLs by regexp match",
+                        "type": "string"
                     },
                     "Report_limit_warning": {
-                        "const": "*Report can contain up to 1000 records"
+                        "default": "*Report can contain up to 1000 records",
+                        "type": "string"
                     },
                     "Watcher_store_180_days": {
-                        "const": "results are stored for 180 days"
+                        "default": "results are stored for 180 days",
+                        "type": "string"
                     },
                     "Watcher_selector_title": {
-                        "const": "Select tracking method"
+                        "default": "Select tracking method",
+                        "type": "string"
                     },
                     "Watcher_regexpr": {
-                        "const": "Regular expression"
+                        "default": "Regular expression",
+                        "type": "string"
                     },
                     "Download_archive_csv": {
-                        "const": "CSV archive"
+                        "default": "CSV archive",
+                        "type": "string"
                     },
                     "Download_archive_pdf": {
-                        "const": "PDF archive"
+                        "default": "PDF archive",
+                        "type": "string"
                     },
                     "List_of_urls": {
-                        "const": "List of URLs"
+                        "default": "List of URLs",
+                        "type": "string"
                     },
                     "Sitemap_xml_url": {
-                        "const": "Sitemap.xml path"
+                        "default": "Sitemap.xml path",
+                        "type": "string"
                     },
                     "Sitemap_mail_sitemap": {
-                        "const": "Sitemap"
+                        "default": "Sitemap",
+                        "type": "string"
                     },
                     "Sitemap_mail_audit": {
-                        "const": "Website audit"
+                        "default": "Website audit",
+                        "type": "string"
                     },
                     "Sitemap_mail_indexing": {
-                        "const": "Index checker"
+                        "default": "Index checker",
+                        "type": "string"
                     },
                     "Sitemap_mail_watcher": {
-                        "const": "Website watcher"
+                        "default": "Website watcher",
+                        "type": "string"
                     },
                     "Retrieve_from_file": {
-                        "const": "Retrieve from file"
+                        "default": "Retrieve from file",
+                        "type": "string"
                     },
                     "Watcher_delete_title": {
-                        "const": "Delete Website Watcher data "
+                        "default": "Delete Website Watcher data ",
+                        "type": "string"
                     },
                     "Watcher_delete_info1": {
-                        "const": "Website Watcher report dated"
+                        "default": "Website Watcher report dated",
+                        "type": "string"
                     },
                     "Watcher_delete_info2": {
-                        "const": "will be deleted. You cannot undo this action."
+                        "default": "will be deleted. You cannot undo this action.",
+                        "type": "string"
                     },
                     "Watcher_ignore_options": {
-                        "const": "Skip code"
+                        "default": "Skip code",
+                        "type": "string"
                     },
                     "Watcher_ignore_html": {
-                        "const": "HTML code"
+                        "default": "HTML code",
+                        "type": "string"
                     },
                     "Watcher_ignore_js": {
-                        "const": "javascript code"
+                        "default": "javascript code",
+                        "type": "string"
                     },
                     "Watcher_ignore_nothing": {
-                        "const": "do not skip"
+                        "default": "do not skip",
+                        "type": "string"
                     },
                     "Watcher_track_button": {
-                        "const": "Track changes"
+                        "default": "Track changes",
+                        "type": "string"
                     },
                     "Watcher_track_changes": {
-                        "const": "Track changes"
+                        "default": "Track changes",
+                        "type": "string"
                     },
                     "Watcher_tracking": {
-                        "const": "Tracking changes of"
+                        "default": "Tracking changes of",
+                        "type": "string"
                     },
                     "Watcher_max_redirects_count": {
-                        "const": "Max redirects"
+                        "default": "Max redirects",
+                        "type": "string"
                     },
                     "Watcher_already_started_error": {
-                        "const": "Website Watcher already running"
+                        "default": "Website Watcher already running",
+                        "type": "string"
                     },
                     "Indexing_already_started_error": {
-                        "const": "Index Checker already running"
+                        "default": "Index Checker already running",
+                        "type": "string"
                     },
                     "Sitemap_XML_link_not_match_host_error": {
-                        "const": "Link to XML does not match project host"
+                        "default": "Link to XML does not match project host",
+                        "type": "string"
                     },
                     "Sitemap_required_columns_missing": {
-                        "const": "Required URLs column missing"
+                        "default": "Required URLs column missing",
+                        "type": "string"
                     },
                     "Delete_sitemap": {
-                        "const": "Are you sure you want to delete all URLs?"
+                        "default": "Are you sure you want to delete all URLs?",
+                        "type": "string"
                     },
                     "URL_exists": {
-                        "const": "This URL already exists"
+                        "default": "This URL already exists",
+                        "type": "string"
                     },
                     "Remove_URL": {
-                        "const": "Are you sure you want to delete the selected URL?"
+                        "default": "Are you sure you want to delete the selected URL?",
+                        "type": "string"
                     },
                     "Enter_URL_one_per_line": {
-                        "const": "Enter a list of URLs (one per line), e.g:"
+                        "default": "Enter a list of URLs (one per line), e.g:",
+                        "type": "string"
                     },
                     "Content_tracking": {
-                        "const": "Content tracking"
+                        "default": "Content tracking",
+                        "type": "string"
                     },
                     "Add_tags_use_regexp_notice": {
-                        "const": "Add tags to website code or use regular expressions to track changes"
+                        "default": "Add tags to website code or use regular expressions to track changes",
+                        "type": "string"
                     },
                     "Use_cookie": {
-                        "const": "Use cookie"
+                        "default": "Use cookie",
+                        "type": "string"
                     },
                     "Scan_images": {
-                        "const": "Scan images"
+                        "default": "Scan images",
+                        "type": "string"
                     },
                     "Scan_js": {
-                        "const": "Scan JS"
+                        "default": "Scan JS",
+                        "type": "string"
                     },
                     "Scan_css": {
-                        "const": "Scan CSS"
+                        "default": "Scan CSS",
+                        "type": "string"
                     },
                     "Scan_links": {
-                        "const": "Scan links"
+                        "default": "Scan links",
+                        "type": "string"
                     },
                     "Indexed_pages_with_no_snippet": {
-                        "const": "Indexed pages without snippet"
+                        "default": "Indexed pages without snippet",
+                        "type": "string"
                     },
                     "Hints_settings": {
-                        "const": {
+                        "default": {
                             "audit_user_agent": "User Agent can affect how the bot sees the site and how DDoS protection works.",
                             "audit_page_delay": "How often crawler can open site URLs. If the delay is small, audit will end faster, but the site can go down due to high load. The bigger is the delay, the longer the check will go.<br><br>The delay can increase, if you check Core Web Vitals. For CWV JS is executed, and you need wait for the full rendering of every URL, that takes at least 20 s.",
                             "audit_resource_delay": "How often crawler can open site resources (images, JS, CSS). If the delay is small, audit will end faster, but the site can go down due to high load. The bigger is the delay, the longer the check will go.",
@@ -486,73 +641,115 @@
                             "audit_scan_css": "",
                             "audit_scan_links": "",
                             "server_location": "Change server location to access blocked websites."
+                        },
+                        "type": "array",
+                        "items": {
+                            "oneOf": [
+                                {
+                                    "type": "string"
+                                },
+                                {
+                                    "type": "number"
+                                }
+                            ]
                         }
                     },
                     "Server_location": {
-                        "const": "Servers location"
+                        "default": "Servers location",
+                        "type": "string"
                     },
                     "Servers_locations": {
-                        "const": {
+                        "default": {
                             "WESTERN_EUROPE": "Western Europe",
                             "EASTERN_EUROPE": "Eastern Europe"
+                        },
+                        "type": "array",
+                        "items": {
+                            "oneOf": [
+                                {
+                                    "type": "string"
+                                },
+                                {
+                                    "type": "number"
+                                }
+                            ]
                         }
                     },
                     "Page_delay": {
-                        "const": "Delay between URL requests (s)"
+                        "default": "Delay between URL requests (s)",
+                        "type": "string"
                     },
                     "Resource_delay": {
-                        "const": "Delay between resources requests (s)"
+                        "default": "Delay between resources requests (s)",
+                        "type": "string"
                     },
                     "API_key_1": {
-                        "const": "Get free PageSpeed Insights API-key"
+                        "default": "Get free PageSpeed Insights API-key",
+                        "type": "string"
                     },
                     "API_key_2": {
-                        "const": "and paste it in the input field"
+                        "default": "and paste it in the input field",
+                        "type": "string"
                     },
                     "Redirect_chain": {
-                        "const": "Redirect chain"
+                        "default": "Redirect chain",
+                        "type": "string"
                     },
                     "Search_URL": {
-                        "const": "Search URL"
+                        "default": "Search URL",
+                        "type": "string"
                     },
                     "Auto_collect": {
-                        "const": "Crawl website"
+                        "default": "Crawl website",
+                        "type": "string"
                     },
                     "Add_by_hand": {
-                        "const": "Add manually"
+                        "default": "Add manually",
+                        "type": "string"
                     },
                     "Select_site_size": {
-                        "const": "Choose website size"
+                        "default": "Choose website size",
+                        "type": "string"
                     },
                     "Please_select_site_size": {
-                        "const": "Choose website size"
+                        "default": "Choose website size",
+                        "type": "string"
                     },
                     "Master_urls_auto_title": {
-                        "const": "Maximum of pages for audit"
+                        "default": "Maximum of pages for audit",
+                        "type": "string"
                     },
                     "Master_urls_auto_alert": {
-                        "const": "We'll check only the pages found during crawling. First you'll be charged the price for the maximum number of pages, but there can be less pages on the website. We'll refund the amount for the number of pages that hadn't been checked back on your balance."
+                        "default": "We'll check only the pages found during crawling. First you'll be charged the price for the maximum number of pages, but there can be less pages on the website. We'll refund the amount for the number of pages that hadn't been checked back on your balance.",
+                        "type": "string"
                     },
                     "Audit_go_alert_need_config": {
-                        "const": "To perform audit you need to add URLs manually or enable website crawling, go to "
+                        "default": "To perform audit you need to add URLs manually or enable website crawling, go to ",
+                        "type": "string"
                     },
                     "Audit_go_alert_by_hand": {
-                        "const": "URLs for audit are added manually. To change the way of adding pages, go to"
+                        "default": "URLs for audit are added manually. To change the way of adding pages, go to",
+                        "type": "string"
                     },
                     "Audit_go_alert_auto_collect_1": {
-                        "const": "We'll check"
+                        "default": "We'll check",
+                        "type": "string"
                     },
                     "Audit_go_alert_auto_collect_2": {
-                        "const": "URLs for audit are crawled automatically. To change the maximum number of pages for audit or add them manually, go to"
+                        "default": "URLs for audit are crawled automatically. To change the maximum number of pages for audit or add them manually, go to",
+                        "type": "string"
                     },
                     "Audit_bank_autocrawl_info": {
-                        "const": "Funds reservation for audit with automatic website crawling, project"
+                        "default": "Funds reservation for audit with automatic website crawling, project",
+                        "type": "string"
                     },
                     "Audit_bank_autocrawl_unhold_info": {
-                        "const": "Reservation refund"
+                        "default": "Reservation refund",
+                        "type": "string"
                     },
                     "Delete_url": {
-                        "const": "Delete URL"
+                        "default": "Delete URL",
+                        "type": "string"
                     }
                 },
                 "required": [

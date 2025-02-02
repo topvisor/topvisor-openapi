@@ -8,32 +8,32 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         "I18n.Landings.Price": {
-            /** @constant */
-            Depth: "depth";
-            /** @constant */
-            of_results: "results";
-            /** @constant */
-            of_keywords: "keywords";
-            /** @constant */
-            of_pages: "URLs";
-            /** @constant */
-            up_to: "up to";
-            /** @constant */
-            from: "from";
-            /** @constant */
-            Without_discount: "No discount";
-            /** @constant */
-            What_is_a_tariff: "What is a pricing plan (tariff)?";
-            /** @constant */
-            Rank_tracker_and_collecting_TOP: "Rank Tracking and SERP Top";
-            /** @constant */
-            Semantics: "Semantics";
-            /** @constant */
-            Technical_Seo: "Technical SEO";
-            /** @constant */
-            Yandex_direct: "Yandex Direct";
-            /** @constant */
-            Account: "Account";
+            /** @default depth */
+            Depth: string;
+            /** @default results */
+            of_results: string;
+            /** @default keywords */
+            of_keywords: string;
+            /** @default URLs */
+            of_pages: string;
+            /** @default up to */
+            up_to: string;
+            /** @default from */
+            from: string;
+            /** @default No discount */
+            Without_discount: string;
+            /** @default What is a pricing plan (tariff)? */
+            What_is_a_tariff: string;
+            /** @default Rank Tracking and SERP Top */
+            Rank_tracker_and_collecting_TOP: string;
+            /** @default Semantics */
+            Semantics: string;
+            /** @default Technical SEO */
+            Technical_Seo: string;
+            /** @default Yandex Direct */
+            Yandex_direct: string;
+            /** @default Account */
+            Account: string;
         };
     };
     responses: never;

@@ -11,37 +11,48 @@
                 "type": "object",
                 "properties": {
                     "Field_command": {
-                        "const": "Сommand"
+                        "default": "Сommand",
+                        "type": "string"
                     },
                     "Field_description": {
-                        "const": "Description"
+                        "default": "Description",
+                        "type": "string"
                     },
                     "Field_days": {
-                        "const": "Days of the week"
+                        "default": "Days of the week",
+                        "type": "string"
                     },
                     "Field_hh": {
-                        "const": "Hours"
+                        "default": "Hours",
+                        "type": "string"
                     },
                     "Field_i": {
-                        "const": "Minutes"
+                        "default": "Minutes",
+                        "type": "string"
                     },
                     "Field_on": {
-                        "const": "On/Off"
+                        "default": "On/Off",
+                        "type": "string"
                     },
                     "Field_task_create_time": {
-                        "const": "Task created"
+                        "default": "Task created",
+                        "type": "string"
                     },
                     "Field_task_start_time": {
-                        "const": "Task runned"
+                        "default": "Task runned",
+                        "type": "string"
                     },
                     "Field_task_status": {
-                        "const": "Execution status"
+                        "default": "Execution status",
+                        "type": "string"
                     },
                     "Disabled": {
-                        "const": "Disabled"
+                        "default": "Disabled",
+                        "type": "string"
                     },
                     "Enabled": {
-                        "const": "Enabled"
+                        "default": "Enabled",
+                        "type": "string"
                     }
                 },
                 "required": [

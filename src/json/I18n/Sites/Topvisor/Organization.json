@@ -11,25 +11,32 @@
                 "type": "object",
                 "properties": {
                     "Description": {
-                        "const": "All you need for SEO on one platform. Rank tracking and volume checking, website audit, keyword research. Cluster keywords by Top and track website changes. We make SEO easy for SEO specialists and digital marketers."
+                        "default": "All you need for SEO on one platform. Rank tracking and volume checking, website audit, keyword research. Cluster keywords by Top and track website changes. We make SEO easy for SEO specialists and digital marketers.",
+                        "type": "string"
                     },
                     "Street_address": {
-                        "const": "Voronezhskaya st., 5A, Prisma office building, office 242"
+                        "default": "Voronezhskaya st., 5A, Prisma office building, office 242",
+                        "type": "string"
                     },
                     "Address_locality": {
-                        "const": "Saint Petersburg"
+                        "default": "Saint Petersburg",
+                        "type": "string"
                     },
                     "Address_region": {
-                        "const": "Leningrad region"
+                        "default": "Leningrad region",
+                        "type": "string"
                     },
                     "Address_country": {
-                        "const": "Russia"
+                        "default": "Russia",
+                        "type": "string"
                     },
                     "Contact_type": {
-                        "const": "Sales"
+                        "default": "Sales",
+                        "type": "string"
                     },
                     "General_manager": {
-                        "const": "Pustovoyt Denis Anatolievich"
+                        "default": "Pustovoyt Denis Anatolievich",
+                        "type": "string"
                     }
                 },
                 "required": [

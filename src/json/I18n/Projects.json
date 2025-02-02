@@ -11,697 +11,928 @@
                 "type": "object",
                 "properties": {
                     "Add_project_title": {
-                        "const": "Add project"
+                        "default": "Add project",
+                        "type": "string"
                     },
                     "Enter_project_name": {
-                        "const": "Enter project name"
+                        "default": "Enter project name",
+                        "type": "string"
                     },
                     "Site": {
-                        "const": "Project URL"
+                        "default": "Project URL",
+                        "type": "string"
                     },
                     "Keywords": {
-                        "const": "Keywords"
+                        "default": "Keywords",
+                        "type": "string"
                     },
                     "Broker": {
-                        "const": "Bid manager"
+                        "default": "Bid manager",
+                        "type": "string"
                     },
                     "Analytics": {
-                        "const": "Analytics and reports"
+                        "default": "Analytics and reports",
+                        "type": "string"
                     },
                     "Add_project_url": {
-                        "const": "Enter website or webpage URL"
+                        "default": "Enter website or webpage URL",
+                        "type": "string"
                     },
                     "Del_project_title": {
-                        "const": "Delete project"
+                        "default": "Delete project",
+                        "type": "string"
                     },
                     "Del_project_question": {
-                        "const": "Are you sure you want to delete project"
+                        "default": "Are you sure you want to delete project",
+                        "type": "string"
                     },
                     "Del_selected_projects_question": {
-                        "const": "Are you sure you want to delete the selected projects?"
+                        "default": "Are you sure you want to delete the selected projects?",
+                        "type": "string"
                     },
                     "Del_folder_question": {
-                        "const": "Are you sure you want to delete this project?<br><br>Projects will be moved to the root folder"
+                        "default": "Are you sure you want to delete this project?<br><br>Projects will be moved to the root folder",
+                        "type": "string"
                     },
                     "Check_positions": {
-                        "const": "Check Rankings"
+                        "default": "Check Rankings",
+                        "type": "string"
                     },
                     "Check_positions_with_filter": {
-                        "const": "Apply filter and check rankings (search engine / location / folder / group)"
+                        "default": "Apply filter and check rankings (search engine / location / folder / group)",
+                        "type": "string"
                     },
                     "domain_missed": {
-                        "const": "Domain not specified, check \"site\" parameter"
+                        "default": "Domain not specified, check \"site\" parameter",
+                        "type": "string"
                     },
                     "Incorrect_domain": {
-                        "const": "Invalid domain name"
+                        "default": "Invalid domain name",
+                        "type": "string"
                     },
                     "owner_rights_error": {
-                        "const": "You can't change project owner access settings"
+                        "default": "You can't change project owner access settings",
+                        "type": "string"
                     },
                     "Edit_positions_notice_to_wait": {
-                        "const": "We are assigning project tasks, settings will be available within a minute"
+                        "default": "We are assigning project tasks, settings will be available within a minute",
+                        "type": "string"
                     },
                     "Searcher_missed": {
-                        "const": "Search engine provider missed"
+                        "default": "Search engine provider missed",
+                        "type": "string"
                     },
                     "Searcher_exists": {
-                        "const": "This search engine already added to the project"
+                        "default": "This search engine already added to the project",
+                        "type": "string"
                     },
                     "Region_exists": {
-                        "const": "Location with applied settings already added"
+                        "default": "Location with applied settings already added",
+                        "type": "string"
                     },
                     "Region_not_available": {
-                        "const": "You can't add this location"
+                        "default": "You can't add this location",
+                        "type": "string"
                     },
                     "Project_not_available_for_Youtube": {
-                        "const": "Youtube rank tracking is not available for this project"
+                        "default": "Youtube rank tracking is not available for this project",
+                        "type": "string"
                     },
                     "Searcher_not_found": {
-                        "const": "Search engine not found"
+                        "default": "Search engine not found",
+                        "type": "string"
                     },
                     "You_are_owner": {
-                        "const": "You are the project owner already"
+                        "default": "You are the project owner already",
+                        "type": "string"
                     },
                     "Add_to_favorites": {
-                        "const": "Add to favorites"
+                        "default": "Add to favorites",
+                        "type": "string"
                     },
                     "User_not_exists": {
-                        "const": "This user doesn't exist"
+                        "default": "This user doesn't exist",
+                        "type": "string"
                     },
                     "ChangeOwner_message1": {
-                        "const": "You received full access to the project"
+                        "default": "You received full access to the project",
+                        "type": "string"
                     },
                     "ChangeOwner_message2": {
-                        "const": "To accept project transfer and start working on it, click \"Accept project\"."
+                        "default": "To accept project transfer and start working on it, click \"Accept project\".",
+                        "type": "string"
                     },
                     "ChangeOwner_message3": {
-                        "const": "Accept project"
+                        "default": "Accept project",
+                        "type": "string"
                     },
                     "ChangeOwner_title": {
-                        "const": "Project transfer"
+                        "default": "Project transfer",
+                        "type": "string"
                     },
                     "AcceptChangeOwner_msg1": {
-                        "const": "The project was delegated by the user who is no longer a project owner."
+                        "default": "The project was delegated by the user who is no longer a project owner.",
+                        "type": "string"
                     },
                     "AcceptChangeOwner_msg2": {
-                        "const": "You have become the project owner of"
+                        "default": "You have become the project owner of",
+                        "type": "string"
                     },
                     "Competitors_add": {
-                        "const": "Add competitors"
+                        "default": "Add competitors",
+                        "type": "string"
                     },
                     "Competitors_add2": {
-                        "const": "Add competitors"
+                        "default": "Add competitors",
+                        "type": "string"
                     },
                     "Competitors_price_1": {
-                        "const": "Keyword research cost"
+                        "default": "Keyword research cost",
+                        "type": "string"
                     },
                     "Competitors_price_2": {
-                        "const": "$"
+                        "default": "$",
+                        "type": "string"
                     },
                     "Competitor_site_missed": {
-                        "const": "Competitor site not specified"
+                        "default": "Competitor site not specified",
+                        "type": "string"
                     },
                     "Competitor_double": {
-                        "const": "Competitor already exists"
+                        "default": "Competitor already exists",
+                        "type": "string"
                     },
                     "Competitor_Wrong_data": {
-                        "const": "Invalid data format"
+                        "default": "Invalid data format",
+                        "type": "string"
                     },
                     "Youtube_competitor_error": {
-                        "const": "Competitor must match youtube.com* wildcard"
+                        "default": "Competitor must match youtube.com* wildcard",
+                        "type": "string"
                     },
                     "Competitor_count_error": {
-                        "const": "You can't add more than 250 competitors"
+                        "default": "You can't add more than 250 competitors",
+                        "type": "string"
                     },
                     "Check_campaigns_acess_and_API_permission": {
-                        "const": "Check campaign access and API permission"
+                        "default": "Check campaign access and API permission",
+                        "type": "string"
                     },
                     "Sum_for_pay": {
-                        "const": "Project owner will be charged"
+                        "default": "Project owner will be charged",
+                        "type": "string"
                     },
                     "Visits_in_yandex": {
-                        "const": "Visits on Yandex"
+                        "default": "Visits on Yandex",
+                        "type": "string"
                     },
                     "Visits_in_google": {
-                        "const": "Visits on Google"
+                        "default": "Visits on Google",
+                        "type": "string"
                     },
                     "Visits_in_mail": {
-                        "const": "Visits on Mail.ru"
+                        "default": "Visits on Mail.ru",
+                        "type": "string"
                     },
                     "Info_cost": {
-                        "const": "You will be charged"
+                        "default": "You will be charged",
+                        "type": "string"
                     },
                     "Last_update": {
-                        "const": "Last check"
+                        "default": "Last check",
+                        "type": "string"
                     },
                     "Keywords_in_top": {
-                        "const": "TOP 10/11-30/30+"
+                        "default": "TOP 10/11-30/30+",
+                        "type": "string"
                     },
                     "Dynamics": {
-                        "const": "Dynamics"
+                        "default": "Dynamics",
+                        "type": "string"
                     },
                     "Traffic": {
-                        "const": "Traffic in SE"
+                        "default": "Traffic in SE",
+                        "type": "string"
                     },
                     "Indexed": {
-                        "const": "Index status"
+                        "default": "Index status",
+                        "type": "string"
                     },
                     "Links": {
-                        "const": "Links"
+                        "default": "Links",
+                        "type": "string"
                     },
                     "Average_position": {
-                        "const": "Avg.pos."
+                        "default": "Avg.pos.",
+                        "type": "string"
                     },
                     "Visibility": {
-                        "const": "Vis-ty"
+                        "default": "Vis-ty",
+                        "type": "string"
                     },
                     "Register_domain": {
-                        "const": "Domain registration"
+                        "default": "Domain registration",
+                        "type": "string"
                     },
                     "Archive_project": {
-                        "const": "Archive"
+                        "default": "Archive",
+                        "type": "string"
                     },
                     "Unarchive_project": {
-                        "const": "Restore"
+                        "default": "Restore",
+                        "type": "string"
                     },
                     "Extend": {
-                        "const": "Renew"
+                        "default": "Renew",
+                        "type": "string"
                     },
                     "Extend_domain": {
-                        "const": "Renew your domain"
+                        "default": "Renew your domain",
+                        "type": "string"
                     },
                     "Transfer_domain": {
-                        "const": "Transfer your domain"
+                        "default": "Transfer your domain",
+                        "type": "string"
                     },
                     "Yandex_short": {
-                        "const": "Y:"
+                        "default": "Y:",
+                        "type": "string"
                     },
                     "Yandex_SQI": {
-                        "const": "SQI"
+                        "default": "SQI",
+                        "type": "string"
                     },
                     "No_tag": {
-                        "const": "Default tag"
+                        "default": "Default tag",
+                        "type": "string"
                     },
                     "Edit": {
-                        "const": "Edit"
+                        "default": "Edit",
+                        "type": "string"
                     },
                     "My_projects": {
-                        "const": "My projects"
+                        "default": "My projects",
+                        "type": "string"
                     },
                     "Scheduled_update": {
-                        "const": "Scheduled update"
+                        "default": "Scheduled update",
+                        "type": "string"
                     },
                     "Manual_update": {
-                        "const": "Manual update"
+                        "default": "Manual update",
+                        "type": "string"
                     },
                     "Guest_projects": {
-                        "const": "Guest projects"
+                        "default": "Guest projects",
+                        "type": "string"
                     },
                     "Guest_my_projects": {
-                        "const": "My and guest projects"
+                        "default": "My and guest projects",
+                        "type": "string"
                     },
                     "Archived_projects": {
-                        "const": "Archived projects"
+                        "default": "Archived projects",
+                        "type": "string"
                     },
                     "Add_project": {
-                        "const": "Add project"
+                        "default": "Add project",
+                        "type": "string"
                     },
                     "Current_registrar": {
-                        "const": "Current registrar"
+                        "default": "Current registrar",
+                        "type": "string"
                     },
                     "Info_archived": {
-                        "const": "You are going to archive your project. Archived projects are suspended and unavailable."
+                        "default": "You are going to archive your project. Archived projects are suspended and unavailable.",
+                        "type": "string"
                     },
                     "Info_archived_html": {
-                        "const": "You are going to archive the <i class=\"one\">project</i><i class=\"several\">selected projects</i>. Archived projects are suspended and unavailable."
+                        "default": "You are going to archive the <i class=\"one\">project</i><i class=\"several\">selected projects</i>. Archived projects are suspended and unavailable.",
+                        "type": "string"
                     },
                     "Accept_unarchive": {
-                        "const": "Do you really want to restore this project from the archive?"
+                        "default": "Do you really want to restore this project from the archive?",
+                        "type": "string"
                     },
                     "Info_unarchive_html": {
-                        "const": "Do you really want to restore the <i class=\"one\">project</i><i class=\"several\">selected projects</i>?"
+                        "default": "Do you really want to restore the <i class=\"one\">project</i><i class=\"several\">selected projects</i>?",
+                        "type": "string"
                     },
                     "Archive": {
-                        "const": "Archive"
+                        "default": "Archive",
+                        "type": "string"
                     },
                     "Unarchive": {
-                        "const": "Restore"
+                        "default": "Restore",
+                        "type": "string"
                     },
                     "Info_bulk_update": {
-                        "const": "Check Rankings"
+                        "default": "Check Rankings",
+                        "type": "string"
                     },
                     "Bulk_update": {
-                        "const": "Check Rankings"
+                        "default": "Check Rankings",
+                        "type": "string"
                     },
                     "No_bulk_update_projects": {
-                        "const": "There are no projects available for bulk update"
+                        "default": "There are no projects available for bulk update",
+                        "type": "string"
                     },
                     "Registration_date": {
-                        "const": "Registered"
+                        "default": "Registered",
+                        "type": "string"
                     },
                     "Domain_valid_until": {
-                        "const": "Domain expires"
+                        "default": "Domain expires",
+                        "type": "string"
                     },
                     "Deleted_date": {
-                        "const": "Deleted"
+                        "default": "Deleted",
+                        "type": "string"
                     },
                     "Domain_extended_time": {
-                        "const": "Domain to renew after"
+                        "default": "Domain to renew after",
+                        "type": "string"
                     },
                     "Extend_current_cost": {
-                        "const": "Your<br>domain renewal costs"
+                        "default": "Your<br>domain renewal costs",
+                        "type": "string"
                     },
                     "Extend_axelname": {
-                        "const": "Renew your domain with <br> "
+                        "default": "Renew your domain with <br> ",
+                        "type": "string"
                     },
                     "Update_tpa": {
-                        "const": "Update the key"
+                        "default": "Update the key",
+                        "type": "string"
                     },
                     "Copy_with_settings": {
-                        "const": "Copy project and main settings"
+                        "default": "Copy project and main settings",
+                        "type": "string"
                     },
                     "Copy_keywords": {
-                        "const": "Copy keywords"
+                        "default": "Copy keywords",
+                        "type": "string"
                     },
                     "Copy_dynamics": {
-                        "const": "Copy keyword ranking history"
+                        "default": "Copy keyword ranking history",
+                        "type": "string"
                     },
                     "Copy": {
-                        "const": "Copy"
+                        "default": "Copy",
+                        "type": "string"
                     },
                     "A_copy": {
-                        "const": "Copy"
+                        "default": "Copy",
+                        "type": "string"
                     },
                     "Copy_project": {
-                        "const": "Copy project"
+                        "default": "Copy project",
+                        "type": "string"
                     },
                     "Report_on_weekdays": {
-                        "const": "On days of week"
+                        "default": "On days of week",
+                        "type": "string"
                     },
                     "Report_custom_frequency": {
-                        "const": "Custom frequency"
+                        "default": "Custom frequency",
+                        "type": "string"
                     },
                     "Send_competitor_report": {
-                        "const": "Send competition report"
+                        "default": "Send competition report",
+                        "type": "string"
                     },
                     "Report_format": {
-                        "const": "Report format"
+                        "default": "Report format",
+                        "type": "string"
                     },
                     "Send_test_report": {
-                        "const": "Test report"
+                        "default": "Test report",
+                        "type": "string"
                     },
                     "Test_report_sent_email": {
-                        "const": "Test report has been successfully sent to your email"
+                        "default": "Test report has been successfully sent to your email",
+                        "type": "string"
                     },
                     "Test_report_sent": {
-                        "const": "Test report successfully sent"
+                        "default": "Test report successfully sent",
+                        "type": "string"
                     },
                     "Access_add_user": {
-                        "const": "Add user"
+                        "default": "Add user",
+                        "type": "string"
                     },
                     "company_logo": {
-                        "const": "company logo"
+                        "default": "company logo",
+                        "type": "string"
                     },
                     "Settings_no_automated_update_if_manual": {
-                        "const": "Do not run scheduled update if rankings were checked on demand less than 12 hours ago"
+                        "default": "Do not run scheduled update if rankings were checked on demand less than 12 hours ago",
+                        "type": "string"
                     },
                     "Settings_particular_days": {
-                        "const": "On dates"
+                        "default": "On dates",
+                        "type": "string"
                     },
                     "After_updates": {
-                        "const": "After Yandex updates"
+                        "default": "After Yandex updates",
+                        "type": "string"
                     },
                     "After_update": {
-                        "const": "After Yandex update"
+                        "default": "After Yandex update",
+                        "type": "string"
                     },
                     "immediately": {
-                        "const": "immediately"
+                        "default": "immediately",
+                        "type": "string"
                     },
                     "in_hour": {
-                        "const": "in %hour% h."
+                        "default": "in %hour% h.",
+                        "type": "string"
                     },
                     "Settings_on_demand": {
-                        "const": "On demand"
+                        "default": "On demand",
+                        "type": "string"
                     },
                     "Advanced_options": {
-                        "const": "Tool settings"
+                        "default": "Tool settings",
+                        "type": "string"
                     },
                     "Do_not_collect": {
-                        "const": "Do not collect"
+                        "default": "Do not collect",
+                        "type": "string"
                     },
                     "Collect": {
-                        "const": "Collect"
+                        "default": "Collect",
+                        "type": "string"
                     },
                     "Subdomains": {
-                        "const": "Subdomains"
+                        "default": "Subdomains",
+                        "type": "string"
                     },
                     "Subdomains_do_not_check": {
-                        "const": "Do not check"
+                        "default": "Do not check",
+                        "type": "string"
                     },
                     "Subdomains_check": {
-                        "const": "Check"
+                        "default": "Check",
+                        "type": "string"
                     },
                     "Search_filter": {
-                        "const": "Search filter"
+                        "default": "Search filter",
+                        "type": "string"
                     },
                     "Do_not_filter": {
-                        "const": "Do not filter"
+                        "default": "Do not filter",
+                        "type": "string"
                     },
                     "Moderate_filtering": {
-                        "const": "Moderate"
+                        "default": "Moderate",
+                        "type": "string"
                     },
                     "Family_search": {
-                        "const": "Family search"
+                        "default": "Family search",
+                        "type": "string"
                     },
                     "Spelling": {
-                        "const": "Spelling"
+                        "default": "Spelling",
+                        "type": "string"
                     },
                     "Do_not_correct_spelling": {
-                        "const": "Do not correct"
+                        "default": "Do not correct",
+                        "type": "string"
                     },
                     "Correct_spelling": {
-                        "const": "Correct"
+                        "default": "Correct",
+                        "type": "string"
                     },
                     "Traffic_segmentation": {
-                        "const": "Traffic segmentation"
+                        "default": "Traffic segmentation",
+                        "type": "string"
                     },
                     "Local_traffic": {
-                        "const": "By region"
+                        "default": "By region",
+                        "type": "string"
                     },
                     "Global_traffic": {
-                        "const": "Global"
+                        "default": "Global",
+                        "type": "string"
                     },
                     "Select_se": {
-                        "const": "Pick search engine"
+                        "default": "Pick search engine",
+                        "type": "string"
                     },
                     "Integrate_denied": {
-                        "const": "Denied"
+                        "default": "Denied",
+                        "type": "string"
                     },
                     "Integrate_account_locked": {
-                        "const": "You seem to be logged out of your account"
+                        "default": "You seem to be logged out of your account",
+                        "type": "string"
                     },
                     "Schedule": {
-                        "const": "Schedule"
+                        "default": "Schedule",
+                        "type": "string"
                     },
                     "Competitors": {
-                        "const": "Competitors"
+                        "default": "Competitors",
+                        "type": "string"
                     },
                     "of_competitors": {
-                        "const": "competitors"
+                        "default": "competitors",
+                        "type": "string"
                     },
                     "Access": {
-                        "const": "Access"
+                        "default": "Access",
+                        "type": "string"
                     },
                     "Project_archived_notice": {
-                        "const": "Project is archived, access to features is limited."
+                        "default": "Project is archived, access to features is limited.",
+                        "type": "string"
                     },
                     "Project_archived_90days_notice": {
-                        "const": "Projects inactive during 180 days are archived automatically"
+                        "default": "Projects inactive during 180 days are archived automatically",
+                        "type": "string"
                     },
                     "Projects_archived": {
-                        "const": "Projects are archived"
+                        "default": "Projects are archived",
+                        "type": "string"
                     },
                     "Popular": {
-                        "const": "Popular"
+                        "default": "Popular",
+                        "type": "string"
                     },
                     "Other": {
-                        "const": "Other"
+                        "default": "Other",
+                        "type": "string"
                     },
                     "Select_project": {
-                        "const": "Select project"
+                        "default": "Select project",
+                        "type": "string"
                     },
                     "To_list_of_projects": {
-                        "const": "List of projects"
+                        "default": "List of projects",
+                        "type": "string"
                     },
                     "Search_projects": {
-                        "const": "Search projects"
+                        "default": "Search projects",
+                        "type": "string"
                     },
                     "Delegation": {
-                        "const": "Project transfer"
+                        "default": "Project transfer",
+                        "type": "string"
                     },
                     "Activate_deactivate_competitors": {
-                        "const": "Enable/Disable all competitors"
+                        "default": "Enable/Disable all competitors",
+                        "type": "string"
                     },
                     "Wipe_all_competitors": {
-                        "const": "Are you sure you want to wipe all competitors?"
+                        "default": "Are you sure you want to wipe all competitors?",
+                        "type": "string"
                     },
                     "Wipe_competitors_note": {
-                        "const": "Wipe competitors"
+                        "default": "Wipe competitors",
+                        "type": "string"
                     },
                     "Reporting_period": {
-                        "const": "Reporting period"
+                        "default": "Reporting period",
+                        "type": "string"
                     },
                     "Do_not_ask": {
-                        "const": "Do not ask me again"
+                        "default": "Do not ask me again",
+                        "type": "string"
                     },
                     "To_accept_project_click_msg": {
-                        "const": "To accept a project <b>%project_name%</b> transfer, click the message"
+                        "default": "To accept a project <b>%project_name%</b> transfer, click the message",
+                        "type": "string"
                     },
                     "Reports_send_to_address": {
-                        "const": "Send to"
+                        "default": "Send to",
+                        "type": "string"
                     },
                     "Checks": {
-                        "const": "Tools"
+                        "default": "Tools",
+                        "type": "string"
                     },
                     "Reports": {
-                        "const": "Reports"
+                        "default": "Reports",
+                        "type": "string"
                     },
                     "Access_to_project": {
-                        "const": "Share project"
+                        "default": "Share project",
+                        "type": "string"
                     },
                     "Transfer_project": {
-                        "const": "Transfer project"
+                        "default": "Transfer project",
+                        "type": "string"
                     },
                     "Do_not_brand": {
-                        "const": "Do not apply branding"
+                        "default": "Do not apply branding",
+                        "type": "string"
                     },
                     "Show_account_balance": {
-                        "const": "Show your account balance"
+                        "default": "Show your account balance",
+                        "type": "string"
                     },
                     "To_previous_step": {
-                        "const": "Previous step"
+                        "default": "Previous step",
+                        "type": "string"
                     },
                     "Next": {
-                        "const": "Next"
+                        "default": "Next",
+                        "type": "string"
                     },
                     "Keyword_import": {
-                        "const": "Keyword import"
+                        "default": "Keyword import",
+                        "type": "string"
                     },
                     "Competitor_settings": {
-                        "const": "Add competitors"
+                        "default": "Add competitors",
+                        "type": "string"
                     },
                     "Se_and_locations": {
-                        "const": "Search engines and locations"
+                        "default": "Search engines and locations",
+                        "type": "string"
                     },
                     "Completed": {
-                        "const": "Completed"
+                        "default": "Completed",
+                        "type": "string"
                     },
                     "Track_rankings": {
-                        "const": "Track rankings"
+                        "default": "Track rankings",
+                        "type": "string"
                     },
                     "Start_audit": {
-                        "const": "Start site audit"
+                        "default": "Start site audit",
+                        "type": "string"
                     },
                     "Start_watcher": {
-                        "const": "Start watcher"
+                        "default": "Start watcher",
+                        "type": "string"
                     },
                     "Start_indexing": {
-                        "const": "Start indexing"
+                        "default": "Start indexing",
+                        "type": "string"
                     },
                     "Start_sitemap": {
-                        "const": "Sitemap generator"
+                        "default": "Sitemap generator",
+                        "type": "string"
                     },
                     "Main_settings": {
-                        "const": "Main settings"
+                        "default": "Main settings",
+                        "type": "string"
                     },
                     "Create_project": {
-                        "const": "Create project"
+                        "default": "Create project",
+                        "type": "string"
                     },
                     "Select_type_add_name_url": {
-                        "const": "Select a project type, add a URL and a name"
+                        "default": "Select a project type, add a URL and a name",
+                        "type": "string"
                     },
                     "Enter_youtube_URL": {
-                        "const": "Enter the URL of a channel (youtube.com/@user) or a video (youtube.com/watch?v=...)"
+                        "default": "Enter the URL of a channel (youtube.com/@user) or a video (youtube.com/watch?v=...)",
+                        "type": "string"
                     },
                     "Enter_app_URL": {
-                        "const": "Enter app URL"
+                        "default": "Enter app URL",
+                        "type": "string"
                     },
                     "Enter_domain_or_page": {
-                        "const": "Enter domain (example.com) or page URL (example.com/page/)"
+                        "default": "Enter domain (example.com) or page URL (example.com/page/)",
+                        "type": "string"
                     },
                     "Site_or_page": {
-                        "const": "Site or webpage"
+                        "default": "Site or webpage",
+                        "type": "string"
                     },
                     "Add_project_name": {
-                        "const": "Enter project name"
+                        "default": "Enter project name",
+                        "type": "string"
                     },
                     "Created_date": {
-                        "const": "Created"
+                        "default": "Created",
+                        "type": "string"
                     },
                     "Project_owner": {
-                        "const": "Project owner"
+                        "default": "Project owner",
+                        "type": "string"
                     },
                     "Add_keywords": {
-                        "const": "Add keywords"
+                        "default": "Add keywords",
+                        "type": "string"
                     },
                     "Add_keywords_button": {
-                        "const": "Add keywords"
+                        "default": "Add keywords",
+                        "type": "string"
                     },
                     "Keywords_for_import": {
-                        "const": "Keywords"
+                        "default": "Keywords",
+                        "type": "string"
                     },
                     "Enter_keywords_one_per_line": {
-                        "const": "Enter keywords, one per line"
+                        "default": "Enter keywords, one per line",
+                        "type": "string"
                     },
                     "Recommended_keywords": {
-                        "const": "Keyword ideas"
+                        "default": "Keyword ideas",
+                        "type": "string"
                     },
                     "Add_selected": {
-                        "const": "Add selected"
+                        "default": "Add selected",
+                        "type": "string"
                     },
                     "Added_keywords": {
-                        "const": "Added keywords"
+                        "default": "Added keywords",
+                        "type": "string"
                     },
                     "Group_manage_tags_on_page": {
-                        "const": "Group and manage tags at"
+                        "default": "Group and manage tags at",
+                        "type": "string"
                     },
                     "see": {
-                        "const": "see"
+                        "default": "see",
+                        "type": "string"
                     },
                     "Add_competitors": {
-                        "const": "Add competitors"
+                        "default": "Add competitors",
+                        "type": "string"
                     },
                     "My_competitors": {
-                        "const": "My competitors"
+                        "default": "My competitors",
+                        "type": "string"
                     },
                     "Competitor_URL": {
-                        "const": "Competitor URL"
+                        "default": "Competitor URL",
+                        "type": "string"
                     },
                     "Competitor_name": {
-                        "const": "Competitor name"
+                        "default": "Competitor name",
+                        "type": "string"
                     },
                     "Find_competitors": {
-                        "const": "Find competitors"
+                        "default": "Find competitors",
+                        "type": "string"
                     },
                     "Suggested_competitors": {
-                        "const": "Suggested competitors"
+                        "default": "Suggested competitors",
+                        "type": "string"
                     },
                     "Get_search_volume": {
-                        "const": "Check search volume"
+                        "default": "Check search volume",
+                        "type": "string"
                     },
                     "Check_keyword_rankings": {
-                        "const": "Check keyword rankings"
+                        "default": "Check keyword rankings",
+                        "type": "string"
                     },
                     "Project_setup_completed": {
-                        "const": "Project setup completed"
+                        "default": "Project setup completed",
+                        "type": "string"
                     },
                     "Add_search_engines_and_locations": {
-                        "const": "Add search engines and locations"
+                        "default": "Add search engines and locations",
+                        "type": "string"
                     },
                     "Select_search_engine": {
-                        "const": "Select search engine"
+                        "default": "Select search engine",
+                        "type": "string"
                     },
                     "Press_search_engine_icon_to_add_location": {
-                        "const": "Press a search engine icon and add a location"
+                        "default": "Press a search engine icon and add a location",
+                        "type": "string"
                     },
                     "You_can_manage_locations_in_settings": {
-                        "const": "You can manage added locations in project settings"
+                        "default": "You can manage added locations in project settings",
+                        "type": "string"
                     },
                     "Enter_location_or_yandex_code": {
-                        "const": "Enter Location or its Yandex code"
+                        "default": "Enter Location or its Yandex code",
+                        "type": "string"
                     },
                     "Locations": {
-                        "const": "Locations"
+                        "default": "Locations",
+                        "type": "string"
                     },
                     "Skip_wizard": {
-                        "const": "Do not run setup wizard"
+                        "default": "Do not run setup wizard",
+                        "type": "string"
                     },
                     "Setup_rank_tracker": {
-                        "const": "Set up Rank Tracker"
+                        "default": "Set up Rank Tracker",
+                        "type": "string"
                     },
                     "Setup_audit": {
-                        "const": "Set up Website Audit"
+                        "default": "Set up Website Audit",
+                        "type": "string"
                     },
                     "Setup_audit_urls": {
-                        "const": "Pages for audit"
+                        "default": "Pages for audit",
+                        "type": "string"
                     },
                     "Setup_watcher": {
-                        "const": "Set up Watcher"
+                        "default": "Set up Watcher",
+                        "type": "string"
                     },
                     "Setup_watcher_urls": {
-                        "const": "Pages for watcher"
+                        "default": "Pages for watcher",
+                        "type": "string"
                     },
                     "Setup_indexing": {
-                        "const": "Set up Index Checker"
+                        "default": "Set up Index Checker",
+                        "type": "string"
                     },
                     "Setup_indexing_urls": {
-                        "const": "Pages for indexing"
+                        "default": "Pages for indexing",
+                        "type": "string"
                     },
                     "Setup_sitemap": {
-                        "const": "Set up Sitemap Generator"
+                        "default": "Set up Sitemap Generator",
+                        "type": "string"
                     },
                     "Add_all_recommended": {
-                        "const": "Add all recommended"
+                        "default": "Add all recommended",
+                        "type": "string"
                     },
                     "Delete_keywords_from_orginal_project": {
-                        "const": "Delete keywords from the orginal project"
+                        "default": "Delete keywords from the orginal project",
+                        "type": "string"
                     },
                     "Project_name": {
-                        "const": "Name"
+                        "default": "Name",
+                        "type": "string"
                     },
                     "Project_projects_selected": {
-                        "const": "Selected"
+                        "default": "Selected",
+                        "type": "string"
                     },
                     "Create_your_first_project": {
-                        "const": "Create your first project"
+                        "default": "Create your first project",
+                        "type": "string"
                     },
                     "No_projects_match_filter": {
-                        "const": "No projects match filter"
+                        "default": "No projects match filter",
+                        "type": "string"
                     },
                     "Enter_folder_name": {
-                        "const": "Enter folder name"
+                        "default": "Enter folder name",
+                        "type": "string"
                     },
                     "Add_keywords_se_locations_to_check_notice": {
-                        "const": "No tasks found. Add keywords, a search engine and a location in the project settings"
+                        "default": "No tasks found. Add keywords, a search engine and a location in the project settings",
+                        "type": "string"
                     },
                     "Summary_by_location": {
-                        "const": "Summary by location"
+                        "default": "Summary by location",
+                        "type": "string"
                     },
                     "Project_type": {
-                        "const": "Project type"
+                        "default": "Project type",
+                        "type": "string"
                     },
                     "Project_folder": {
-                        "const": "Project folder"
+                        "default": "Project folder",
+                        "type": "string"
                     },
                     "Selected_project_type": {
-                        "const": "Selected project type"
+                        "default": "Selected project type",
+                        "type": "string"
                     },
                     "Cost_for_guest_project_owner": {
-                        "const": "Project owner will be charged"
+                        "default": "Project owner will be charged",
+                        "type": "string"
                     },
                     "Move_to_folder": {
-                        "const": "Move to folder"
+                        "default": "Move to folder",
+                        "type": "string"
                     },
                     "Open_in_new_tab": {
-                        "const": "Open in new tab"
+                        "default": "Open in new tab",
+                        "type": "string"
                     },
                     "In_queue": {
-                        "const": "In queue"
+                        "default": "In queue",
+                        "type": "string"
                     },
                     "In_progress": {
-                        "const": "In progress"
+                        "default": "In progress",
+                        "type": "string"
                     },
                     "URL_count": {
-                        "const": "Number of URLs"
+                        "default": "Number of URLs",
+                        "type": "string"
                     },
                     "Username": {
-                        "const": "Username"
+                        "default": "Username",
+                        "type": "string"
                     },
                     "Spent": {
-                        "const": "Spent"
+                        "default": "Spent",
+                        "type": "string"
                     },
                     "Spend_limit": {
-                        "const": "Spend limit"
+                        "default": "Spend limit",
+                        "type": "string"
                     }
                 },
                 "required": [

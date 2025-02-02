@@ -11,55 +11,72 @@
                 "type": "object",
                 "properties": {
                     "Dw_1": {
-                        "const": "Mo"
+                        "default": "Mo",
+                        "type": "string"
                     },
                     "Dw_2": {
-                        "const": "Tu"
+                        "default": "Tu",
+                        "type": "string"
                     },
                     "Dw_3": {
-                        "const": "We"
+                        "default": "We",
+                        "type": "string"
                     },
                     "Dw_4": {
-                        "const": "Th"
+                        "default": "Th",
+                        "type": "string"
                     },
                     "Dw_5": {
-                        "const": "Fr"
+                        "default": "Fr",
+                        "type": "string"
                     },
                     "Dw_6": {
-                        "const": "Sa"
+                        "default": "Sa",
+                        "type": "string"
                     },
                     "Dw_7": {
-                        "const": "Su"
+                        "default": "Su",
+                        "type": "string"
                     },
                     "Day_of_week_1": {
-                        "const": "Monday"
+                        "default": "Monday",
+                        "type": "string"
                     },
                     "Day_of_week_2": {
-                        "const": "Tuesday"
+                        "default": "Tuesday",
+                        "type": "string"
                     },
                     "Day_of_week_3": {
-                        "const": "Wednesday"
+                        "default": "Wednesday",
+                        "type": "string"
                     },
                     "Day_of_week_4": {
-                        "const": "Thursday"
+                        "default": "Thursday",
+                        "type": "string"
                     },
                     "Day_of_week_5": {
-                        "const": "Friday"
+                        "default": "Friday",
+                        "type": "string"
                     },
                     "Day_of_week_6": {
-                        "const": "Saturday"
+                        "default": "Saturday",
+                        "type": "string"
                     },
                     "Day_of_week_7": {
-                        "const": "Sunday"
+                        "default": "Sunday",
+                        "type": "string"
                     },
                     "months": {
-                        "const": "|january|february|march|april|may|june|july|august|september|october|november|december"
+                        "default": "|january|february|march|april|may|june|july|august|september|october|november|december",
+                        "type": "string"
                     },
                     "of_months": {
-                        "const": "|january|february|march|april|may|june|july|august|september|october|november|december"
+                        "default": "|january|february|march|april|may|june|july|august|september|october|november|december",
+                        "type": "string"
                     },
                     "in_months": {
-                        "const": "|january|february|march|april|may|june|july|august|september|october|november|december"
+                        "default": "|january|february|march|april|may|june|july|august|september|october|november|december",
+                        "type": "string"
                     }
                 },
                 "required": [

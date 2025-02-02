@@ -11,13 +11,16 @@
                 "type": "object",
                 "properties": {
                     "s": {
-                        "const": "s"
+                        "default": "s",
+                        "type": "string"
                     },
                     "ms": {
-                        "const": "ms"
+                        "default": "ms",
+                        "type": "string"
                     },
                     "KB": {
-                        "const": "KB"
+                        "default": "KB",
+                        "type": "string"
                     }
                 },
                 "required": [

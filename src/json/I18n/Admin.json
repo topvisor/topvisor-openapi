@@ -11,10 +11,10 @@
                 "type": "object",
                 "properties": {
                     "Warning_message": {
-                        "const": ""
+                        "type": "string"
                     },
                     "Warning_message_admin": {
-                        "const": ""
+                        "type": "string"
                     }
                 },
                 "required": [

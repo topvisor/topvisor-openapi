@@ -11,25 +11,32 @@
                 "type": "object",
                 "properties": {
                     "Description": {
-                        "const": "Topvior is online platform for SEO specialists and marketers with all essential tools for analyzing website's visibility in search engines."
+                        "default": "Topvior is online platform for SEO specialists and marketers with all essential tools for analyzing website's visibility in search engines.",
+                        "type": "string"
                     },
                     "OpenGraph_title": {
-                        "const": "Enter promocode"
+                        "default": "Enter promocode",
+                        "type": "string"
                     },
                     "Enter_promocode": {
-                        "const": "Enter promocode"
+                        "default": "Enter promocode",
+                        "type": "string"
                     },
                     "Promocode": {
-                        "const": "Promocode"
+                        "default": "Promocode",
+                        "type": "string"
                     },
                     "By_pressing_sign_up_you_accept": {
-                        "const": "By pressing Sign up you accept"
+                        "default": "By pressing Sign up you accept",
+                        "type": "string"
                     },
                     "Terms_and_conditions": {
-                        "const": "Terms and Conditions"
+                        "default": "Terms and Conditions",
+                        "type": "string"
                     },
                     "Privacy_policy": {
-                        "const": "Privacy Policy"
+                        "default": "Privacy Policy",
+                        "type": "string"
                     }
                 },
                 "required": [

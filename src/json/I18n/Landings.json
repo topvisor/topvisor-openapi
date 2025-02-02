@@ -11,7 +11,8 @@
                 "type": "object",
                 "properties": {
                     "No_card_needed": {
-                        "const": "No card needed"
+                        "default": "No card needed",
+                        "type": "string"
                     }
                 },
                 "required": [

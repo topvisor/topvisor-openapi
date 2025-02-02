@@ -11,37 +11,48 @@
                 "type": "object",
                 "properties": {
                     "View_in_API_explorer": {
-                        "const": "View in API explorer"
+                        "default": "View in API explorer",
+                        "type": "string"
                     },
                     "Add_parameter": {
-                        "const": "Add parameter"
+                        "default": "Add parameter",
+                        "type": "string"
                     },
                     "Add_parameter_array": {
-                        "const": "Add parameter (array)"
+                        "default": "Add parameter (array)",
+                        "type": "string"
                     },
                     "Select_data_to_return": {
-                        "const": "Select data to return (fields)"
+                        "default": "Select data to return (fields)",
+                        "type": "string"
                     },
                     "Add_filter": {
-                        "const": "Add a filter (filters item)"
+                        "default": "Add a filter (filters item)",
+                        "type": "string"
                     },
                     "Add_sorting": {
-                        "const": "Add sorting (orders item)"
+                        "default": "Add sorting (orders item)",
+                        "type": "string"
                     },
                     "Set_limit": {
-                        "const": "Set limit"
+                        "default": "Set limit",
+                        "type": "string"
                     },
                     "Set_offset": {
-                        "const": "Set offset"
+                        "default": "Set offset",
+                        "type": "string"
                     },
                     "Developer_documentation": {
-                        "const": "API Documentation"
+                        "default": "API Documentation",
+                        "type": "string"
                     },
                     "Ask_questions_get_answers": {
-                        "const": "Search documentation"
+                        "default": "Search documentation",
+                        "type": "string"
                     },
                     "PHP_SDK_example_githab": {
-                        "const": "PHP SDK example on GitHub"
+                        "default": "PHP SDK example on GitHub",
+                        "type": "string"
                     }
                 },
                 "required": [

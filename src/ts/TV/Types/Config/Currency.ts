@@ -9,116 +9,249 @@ export interface components {
     schemas: {
         /** Интерфейс настроек валюты */
         "TV.Types.Config.Currency": {
-            /** @constant */
-            GA_CU: "No set";
-            /** @constant */
-            CU_LABEL: "No set";
-            /** @constant */
-            CU_PREFIX: "No set";
-            /** @constant */
-            CU_PREFIX_ICO: "No set";
-            /** @constant */
-            CU_SUFFIX_ICO: "No set";
-            /** @constant */
-            CU_PRECISION: 10000;
-            /** @constant */
-            QUERY_COST: 10000;
-            /** @constant */
-            QUERY_COST_COMPETITORS: 10000;
-            /** @constant */
-            QUERY_COST_SERP: 10000;
-            /** @constant */
-            QUERY_COST_SNIPPET: 10000;
-            /** @constant */
-            QUERY_COST_SNAPSHOT: 10000;
-            /** @constant */
-            QUERY_COST_DEPTH_K: 10000;
-            /** @constant */
-            EXPORT_ONE_RESULT_COST: 10000;
-            /** @constant */
-            QUERY_COST_FREQUENCY: 10000;
-            /** @constant */
-            SY_COST: 10000;
-            /** @constant */
-            SY_HINTS_COST: [
-                10000,
-                10000,
-                10000
-            ];
-            /** @constant */
-            BROKER_COST: 10000;
-            /** @constant */
-            CLASTER_COST: 10000;
-            /** @constant */
-            CLASTER_COST_10: 10000;
-            /** @constant */
-            CLASTER_COST_50: 10000;
-            /** @constant */
-            CLASTER_COST_250: 10000;
-            /** @constant */
-            CLASTER_CHANGE_COST: 10000;
-            /** @constant */
-            AUDIT_SITEMAP_100: 10000;
-            /** @constant */
-            AUDIT_SITEMAP_1000: 10000;
-            /** @constant */
-            AUDIT_SITEMAP_10000: 10000;
-            /** @constant */
-            AUDIT_SITEMAP_100000: 10000;
-            /** @constant */
-            AUDIT_SITEMAP_150000: 10000;
-            /** @constant */
-            AUDIT_SITEMAP_300000: 10000;
-            /** @constant */
-            AUDIT_COST: 10000;
-            /** @constant */
-            AUDIT_COST_100: 10000;
-            /** @constant */
-            AUDIT_COST_1000: 10000;
-            /** @constant */
-            AUDIT_COST_10000: 10000;
-            /** @constant */
-            WATCHER_COST: 10000;
-            /** @constant */
-            INDEXING_COST: 10000;
-            /** @constant */
-            MENTIONS_COST: 10000;
-            /** @constant */
-            COMPETITORS_COST: 10000;
-            /** @constant */
-            WEB_SCREENS_COST: 10000;
-            /** @constant */
-            DOMAINS_BUY_COST: 10000;
-            /** @constant */
-            DOMAINS_RENEW_COST: 10000;
-            /** @constant */
-            DOMAINS_AUTH_INFO_PHONE_COST: 10000;
-            /** @constant */
-            DOMAINS_AUTH_INFO_MAIL_COST: 10000;
-            /** @constant */
-            TARIFF_NAMES: [
-                "No set",
-                "No set",
-                "No set",
-                "No set",
-                "No set"
-            ];
-            /** @constant */
-            TARIFF_VALUES: [
-                10000,
-                10000,
-                10000,
-                10000,
-                10000
-            ];
-            /** @constant */
-            TARIFF_DISCOUNT: [
-                0,
-                10,
-                15,
-                20,
-                30
-            ];
+            /**
+             * Код валюты.
+             * @default No set
+             */
+            GA_CU: string;
+            /**
+             * Символ валюты.
+             * @default No set
+             */
+            CU_LABEL: string;
+            /**
+             * Префикс валюты.
+             * @description `CU_PREFIX` и `getCUSuffix()` взаимоисключены, только один из них должен опредять не пустое значение
+             * @default No set
+             */
+            CU_PREFIX: string;
+            /**
+             * Иконка префикса валюты.
+             * @default No set
+             */
+            CU_PREFIX_ICO: string;
+            /**
+             * Иконка суффикса валюты.
+             * @default No set
+             */
+            CU_SUFFIX_ICO: string;
+            /**
+             * Точность валюты.
+             * @default 10000
+             */
+            CU_PRECISION: number;
+            /**
+             * Стоимость запроса в валюте.
+             * @default 10000
+             */
+            QUERY_COST: number;
+            /**
+             * Стоимость запроса для конкурентов.
+             * @default 10000
+             */
+            QUERY_COST_COMPETITORS: number;
+            /**
+             * Стоимость запроса для SERP.
+             * @default 10000
+             */
+            QUERY_COST_SERP: number;
+            /**
+             * Стоимость запроса для сниппетов.
+             * @default 10000
+             */
+            QUERY_COST_SNIPPET: number;
+            /**
+             * Стоимость запроса для снэпшота.
+             * @default 10000
+             */
+            QUERY_COST_SNAPSHOT: number;
+            /**
+             * Глубина запроса.
+             * @default 10000
+             */
+            QUERY_COST_DEPTH_K: number;
+            /**
+             * Стоимость одного результата экспорта.
+             * @default 10000
+             */
+            EXPORT_ONE_RESULT_COST: number;
+            /**
+             * Частота запросов.
+             * @default 10000
+             */
+            QUERY_COST_FREQUENCY: number;
+            /**
+             * Стоимость SY.
+             * @default 10000
+             */
+            SY_COST: number;
+            /**
+             * Массив с подсказками стоимости.
+             * @default [
+             *       10000,
+             *       10000,
+             *       10000
+             *     ]
+             */
+            SY_HINTS_COST: (string | number)[];
+            /**
+             * Стоимость брокера.
+             * @default 10000
+             */
+            BROKER_COST: number;
+            /**
+             * Стоимость кластера.
+             * @default 10000
+             */
+            CLASTER_COST: number;
+            /**
+             * Стоимость кластера для 10 единиц.
+             * @default 10000
+             */
+            CLASTER_COST_10: number;
+            /**
+             * Стоимость кластера для 50 единиц.
+             * @default 10000
+             */
+            CLASTER_COST_50: number;
+            /**
+             * Стоимость кластера для 250 единиц.
+             * @default 10000
+             */
+            CLASTER_COST_250: number;
+            /**
+             * Стоимость изменения кластера.
+             * @default 10000
+             */
+            CLASTER_CHANGE_COST: number;
+            /**
+             * Стоимость для audit_sitemap_100.
+             * @default 10000
+             */
+            AUDIT_SITEMAP_100: number;
+            /**
+             * Стоимость для audit_sitemap_1000.
+             * @default 10000
+             */
+            AUDIT_SITEMAP_1000: number;
+            /**
+             * Стоимость для audit_sitemap_10000.
+             * @default 10000
+             */
+            AUDIT_SITEMAP_10000: number;
+            /**
+             * Стоимость для audit_sitemap_100000.
+             * @default 10000
+             */
+            AUDIT_SITEMAP_100000: number;
+            /**
+             * Стоимость для audit_sitemap_150000.
+             * @default 10000
+             */
+            AUDIT_SITEMAP_150000: number;
+            /**
+             * Стоимость для audit_sitemap_300000.
+             * @default 10000
+             */
+            AUDIT_SITEMAP_300000: number;
+            /**
+             * Стоимость для аудита.
+             * @default 10000
+             */
+            AUDIT_COST: number;
+            /**
+             * Стоимость для аудита 100.
+             * @default 10000
+             */
+            AUDIT_COST_100: number;
+            /**
+             * Стоимость для аудита 1000.
+             * @default 10000
+             */
+            AUDIT_COST_1000: number;
+            /**
+             * Стоимость для аудита 10000.
+             * @default 10000
+             */
+            AUDIT_COST_10000: number;
+            /**
+             * Стоимость наблюдателя.
+             * @default 10000
+             */
+            WATCHER_COST: number;
+            /**
+             * Стоимость индексации.
+             * @default 10000
+             */
+            INDEXING_COST: number;
+            /**
+             * Стоимость упоминаний.
+             * @default 10000
+             */
+            MENTIONS_COST: number;
+            /**
+             * Стоимость конкурентов.
+             * @default 10000
+             */
+            COMPETITORS_COST: number;
+            /**
+             * Стоимость веб-скриншотов.
+             * @default 10000
+             */
+            WEB_SCREENS_COST: number;
+            /**
+             * Стоимость покупки домена.
+             * @default 10000
+             */
+            DOMAINS_BUY_COST: number;
+            /**
+             * Стоимость продления домена.
+             * @default 10000
+             */
+            DOMAINS_RENEW_COST: number;
+            /**
+             * Стоимость авторизации по телефону.
+             * @default 10000
+             */
+            DOMAINS_AUTH_INFO_PHONE_COST: number;
+            /**
+             * Стоимость авторизации по почте.
+             * @default 10000
+             */
+            DOMAINS_AUTH_INFO_MAIL_COST: number;
+            /**
+             * Массив тарифных планов.
+             * @default [
+             *       "No set",
+             *       "No set",
+             *       "No set",
+             *       "No set",
+             *       "No set"
+             *     ]
+             */
+            TARIFF_NAMES: (string | number)[];
+            /**
+             * Массив значений тарифов.
+             * @default [
+             *       10000,
+             *       10000,
+             *       10000,
+             *       10000,
+             *       10000
+             *     ]
+             */
+            TARIFF_VALUES: (string | number)[];
+            /**
+             * Массив скидок на тарифы.
+             * @default [
+             *       0,
+             *       10,
+             *       15,
+             *       20,
+             *       30
+             *     ]
+             */
+            TARIFF_DISCOUNT: (string | number)[];
         };
     };
     responses: never;

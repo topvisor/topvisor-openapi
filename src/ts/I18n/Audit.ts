@@ -8,373 +8,373 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         "I18n.Audit": {
-            /** @constant */
-            Audit: "Website audit";
-            /** @constant */
-            Indexing: "Index status";
-            /** @constant */
-            Watcher: "Website watcher";
-            /** @constant */
-            No_results: "You haven't checked your website yet";
-            /** @constant */
-            Process_text: "Scanning";
-            /** @constant */
-            Header_h1: "H1 Header";
-            /** @constant */
-            Menu: "Website SEO audit";
-            /** @constant */
-            Associated_pages: "Associated pages";
-            /** @constant */
-            String_length_short: "Symb. count";
-            /** @constant */
-            Filter_all: "All";
-            /** @constant */
-            Filter_with_warnings_or_errors: "All with issues";
-            /** @constant */
-            Filter_with_warnings: "With warnings";
-            /** @constant */
-            Filter_with_errors: "With errors";
-            /** @constant */
-            Filter_checks_changed: "What's new";
-            /** @constant */
-            Links_inner: "Internal links";
-            /** @constant */
-            Links_external: "External links";
-            /** @constant */
-            Pages_to_check: "Pages to check";
-            /** @constant */
-            Generated_sitemap: "Generated sitemap";
-            /** @constant */
-            Sitemap_not_found: "Sitemap not found";
-            /** @constant */
-            Sitemap_already_started_error: "Sitemap already started";
-            /** @constant */
-            Sitemap_gen: "Sitemap generator";
-            /** @constant */
-            pages: "pages";
-            /** @constant */
-            Site_size: "Web page count";
-            /** @constant */
-            Header_start_short: "Scan";
-            /** @constant */
-            Step1_gen: "Generate";
-            /** @constant */
-            Step1_gen_notice: "A valid map can be generated only with a valid robots.txt";
-            /** @constant */
-            Sitemap_bank_info: "Sitemap generation for";
-            /** @constant */
-            Audit_bank_info: "Project audit for";
-            /** @constant */
-            Report: "Report";
-            /** @constant */
-            Header_browse: "Summary";
-            /** @constant */
-            Header_common: "Common";
-            /** @constant */
-            Count_pages_checked: "Scanned pages";
-            /** @constant */
-            Header_notices: "Warnings";
-            /** @constant */
-            Header_warnings: "Issues";
-            /** @constant */
-            Www_redirect: "Redirects between";
-            /** @constant */
-            robots_txt_blocked: "blocked by robots.txt";
-            /** @constant */
-            refresh_redirect: "blocked by <i>&lt;meta http-equiv=\"refresh\"&gt;</i>";
-            /** @constant */
-            noindex: "blocked by <i>&lt;meta name=\"robots\" content=\"noindex\"&gt;</i>";
-            /** @constant */
-            redirect: "redirects detected";
-            /** @constant */
-            index_broken: "loading error / incorrect server response code (for example, 404, 503)";
-            /** @constant */
-            title_empty: "title is missing";
-            /** @constant */
-            title_size: "too short / long title";
-            /** @constant */
-            title_dbl: "duplicate title";
-            /** @constant */
-            description_empty: "description is missing";
-            /** @constant */
-            description_size: "too short / long description";
-            /** @constant */
-            description_dbl: "duplicate description";
-            /** @constant */
-            links_empty_content: "anchor or alternative (attribute <i>title=\"...\"</i>) text is missing";
-            /** @constant */
-            nofollow: "attribute <i>rel=\"nofollow\"</i> is used";
-            /** @constant */
-            links_broken: "broken links";
-            /** @constant */
-            no_title: "alternative text (attribute <i>alt=\"...\"</i>) is missing";
-            /** @constant */
-            images_broken: "\"broken\" image";
-            /** @constant */
-            h1_empty: "empty or missing H1 tag";
-            /** @constant */
-            no_lastmod: "Last-Modified is missing";
-            /** @constant */
-            no_lastmod_since: "If-Modified-Since not processed";
-            /** @constant */
-            Header_index: "Index status";
-            /** @constant */
-            Status_code: "Response code";
-            /** @constant */
-            Robots_txt_blocked_short: "Blocked robots.txt";
-            /** @constant */
-            Header_snippet: "Snippet";
-            /** @constant */
-            Description: "Meta-description (description)";
-            /** @constant */
-            Snippet_title_dbl: "Duplicate titles";
-            /** @constant */
-            Snippet_description_dbl: "Duplicate descriptions";
-            /** @constant */
-            Header_links: "Links";
-            /** @constant */
-            Link_type: "Type";
-            /** @constant */
-            Link_content: "Text (anchor)";
-            /** @constant */
-            Link_title: "Text (title)";
-            /** @constant */
-            Link_pages: "Pages";
-            /** @constant */
-            Link_broken: "\"Broken\"";
-            /** @constant */
-            Link_image: "Image";
-            /** @constant */
-            Link_image2: "Image";
-            /** @constant */
-            Link_text: "Text";
-            /** @constant */
-            Watcher_send_to_informer: "Notification Center";
-            /** @constant */
-            Generate_sitemap: "Generate sitemap";
-            /** @constant */
-            Sitemap_generation: "Sitemap generator";
-            /** @constant */
-            Sitemap_uploading: "Sitemap uploader";
-            /** @constant */
-            Header_images: "Images";
-            /** @constant */
-            Image_alt: "Alt-text";
-            /** @constant */
-            Image_pages: "Pages";
-            /** @constant */
-            Image_size: "Size";
-            /** @constant */
-            Image_broken: "\"Broken\"";
-            /** @constant */
-            Header_content: "Content";
-            /** @constant */
-            Title_page: "Page title (Title)";
-            /** @constant */
-            Header_pages_short: "List of pages";
-            /** @constant */
-            Header_page: "Page audit";
-            /** @constant */
-            Page_to_disallow: "Skip the page in the next reports";
-            /** @constant */
-            Page_to_disallow_ok: "The page will be skipped in the next reports";
-            /** @constant */
-            Page_redirects: "Redirects";
-            /** @constant */
-            Page_code: "Page response code";
-            /** @constant */
-            Page_robots_txt_blocked: "Blocked by Robots.txt";
-            /** @constant */
-            Page_nofollow: "Contains meta robots nofollow";
-            /** @constant */
-            Page_noindex: "Blocked by meta robots noindex";
-            /** @constant */
-            Page_canonical: "Contains rel=\"canonical\"";
-            /** @constant */
-            Page_alternate: "Contains rel=\"alternate\"";
-            /** @constant */
-            Page_refresh: "Contains meta refresh redirect";
-            /** @constant */
-            Page_string_length: "Symbol count";
-            /** @constant */
-            Page_title_dbl: "Duplicate title";
-            /** @constant */
-            Page_description_dbl: "Duplicate description";
-            /** @constant */
-            Filter_changed: "Changes";
-            /** @constant */
-            Filter_http_not_changed: "Changes (HTTP code didn't change)";
-            /** @constant */
-            Filter_check_selected: "Only current report";
-            /** @constant */
-            Filter_check_before: "All until the applied date";
-            /** @constant */
-            Watcher_go: "Check";
-            /** @constant */
-            Watcher_process_text: "Scanning";
-            /** @constant */
-            Watcher_bank_info: "Website watcher report for";
-            /** @constant */
-            Watcher_need_config_1: "To run Watcher";
-            /** @constant */
-            Watcher_need_config_2: "move to the settings";
-            /** @constant */
-            Watcher_need_config_3: "and add a list of pages";
-            /** @constant */
-            Indexing_go: "Scan";
-            /** @constant */
-            Indexing_check: "Index checker";
-            /** @constant */
-            Indexing_no_results: "You haven't checked website index status yet";
-            /** @constant */
-            Indexing_bank_info: "Index status report for";
-            /** @constant */
-            Indexing_need_config_1: "To check website index status ";
-            /** @constant */
-            Indexing_need_config_2: "set";
-            /** @constant */
-            Indexing_need_config_3: "a list of pages to scan and select search engines";
-            /** @constant */
-            Pages_for_analyse_not_selected: "Please add pages to scan in the settings";
-            /** @constant */
-            Delete_url_by_regexp: "Delete URLs by regexp match";
-            /** @constant */
-            Report_limit_warning: "*Report can contain up to 1000 records";
-            /** @constant */
-            Watcher_store_180_days: "results are stored for 180 days";
-            /** @constant */
-            Watcher_selector_title: "Select tracking method";
-            /** @constant */
-            Watcher_regexpr: "Regular expression";
-            /** @constant */
-            Download_archive_csv: "CSV archive";
-            /** @constant */
-            Download_archive_pdf: "PDF archive";
-            /** @constant */
-            List_of_urls: "List of URLs";
-            /** @constant */
-            Sitemap_xml_url: "Sitemap.xml path";
-            /** @constant */
-            Sitemap_mail_sitemap: "Sitemap";
-            /** @constant */
-            Sitemap_mail_audit: "Website audit";
-            /** @constant */
-            Sitemap_mail_indexing: "Index checker";
-            /** @constant */
-            Sitemap_mail_watcher: "Website watcher";
-            /** @constant */
-            Retrieve_from_file: "Retrieve from file";
-            /** @constant */
-            Watcher_delete_title: "Delete Website Watcher data ";
-            /** @constant */
-            Watcher_delete_info1: "Website Watcher report dated";
-            /** @constant */
-            Watcher_delete_info2: "will be deleted. You cannot undo this action.";
-            /** @constant */
-            Watcher_ignore_options: "Skip code";
-            /** @constant */
-            Watcher_ignore_html: "HTML code";
-            /** @constant */
-            Watcher_ignore_js: "javascript code";
-            /** @constant */
-            Watcher_ignore_nothing: "do not skip";
-            /** @constant */
-            Watcher_track_button: "Track changes";
-            /** @constant */
-            Watcher_track_changes: "Track changes";
-            /** @constant */
-            Watcher_tracking: "Tracking changes of";
-            /** @constant */
-            Watcher_max_redirects_count: "Max redirects";
-            /** @constant */
-            Watcher_already_started_error: "Website Watcher already running";
-            /** @constant */
-            Indexing_already_started_error: "Index Checker already running";
-            /** @constant */
-            Sitemap_XML_link_not_match_host_error: "Link to XML does not match project host";
-            /** @constant */
-            Sitemap_required_columns_missing: "Required URLs column missing";
-            /** @constant */
-            Delete_sitemap: "Are you sure you want to delete all URLs?";
-            /** @constant */
-            URL_exists: "This URL already exists";
-            /** @constant */
-            Remove_URL: "Are you sure you want to delete the selected URL?";
-            /** @constant */
-            Enter_URL_one_per_line: "Enter a list of URLs (one per line), e.g:";
-            /** @constant */
-            Content_tracking: "Content tracking";
-            /** @constant */
-            Add_tags_use_regexp_notice: "Add tags to website code or use regular expressions to track changes";
-            /** @constant */
-            Use_cookie: "Use cookie";
-            /** @constant */
-            Scan_images: "Scan images";
-            /** @constant */
-            Scan_js: "Scan JS";
-            /** @constant */
-            Scan_css: "Scan CSS";
-            /** @constant */
-            Scan_links: "Scan links";
-            /** @constant */
-            Indexed_pages_with_no_snippet: "Indexed pages without snippet";
-            /** @constant */
-            Hints_settings: {
-                audit_user_agent: "User Agent can affect how the bot sees the site and how DDoS protection works.";
-                audit_page_delay: "How often crawler can open site URLs. If the delay is small, audit will end faster, but the site can go down due to high load. The bigger is the delay, the longer the check will go.<br><br>The delay can increase, if you check Core Web Vitals. For CWV JS is executed, and you need wait for the full rendering of every URL, that takes at least 20 s.";
-                audit_resource_delay: "How often crawler can open site resources (images, JS, CSS). If the delay is small, audit will end faster, but the site can go down due to high load. The bigger is the delay, the longer the check will go.";
-                audit_use_cookie: "Turn this feature on, if your DDoS protection uses cookies.<br><br>But it may cause more personalized information in checks and they could be distorted.";
-                audit_scan_images: "";
-                audit_scan_js: "";
-                audit_scan_css: "";
-                audit_scan_links: "";
-                server_location: "Change server location to access blocked websites.";
-            };
-            /** @constant */
-            Server_location: "Servers location";
-            /** @constant */
-            Servers_locations: {
-                WESTERN_EUROPE: "Western Europe";
-                EASTERN_EUROPE: "Eastern Europe";
-            };
-            /** @constant */
-            Page_delay: "Delay between URL requests (s)";
-            /** @constant */
-            Resource_delay: "Delay between resources requests (s)";
-            /** @constant */
-            API_key_1: "Get free PageSpeed Insights API-key";
-            /** @constant */
-            API_key_2: "and paste it in the input field";
-            /** @constant */
-            Redirect_chain: "Redirect chain";
-            /** @constant */
-            Search_URL: "Search URL";
-            /** @constant */
-            Auto_collect: "Crawl website";
-            /** @constant */
-            Add_by_hand: "Add manually";
-            /** @constant */
-            Select_site_size: "Choose website size";
-            /** @constant */
-            Please_select_site_size: "Choose website size";
-            /** @constant */
-            Master_urls_auto_title: "Maximum of pages for audit";
-            /** @constant */
-            Master_urls_auto_alert: "We'll check only the pages found during crawling. First you'll be charged the price for the maximum number of pages, but there can be less pages on the website. We'll refund the amount for the number of pages that hadn't been checked back on your balance.";
-            /** @constant */
-            Audit_go_alert_need_config: "To perform audit you need to add URLs manually or enable website crawling, go to ";
-            /** @constant */
-            Audit_go_alert_by_hand: "URLs for audit are added manually. To change the way of adding pages, go to";
-            /** @constant */
-            Audit_go_alert_auto_collect_1: "We'll check";
-            /** @constant */
-            Audit_go_alert_auto_collect_2: "URLs for audit are crawled automatically. To change the maximum number of pages for audit or add them manually, go to";
-            /** @constant */
-            Audit_bank_autocrawl_info: "Funds reservation for audit with automatic website crawling, project";
-            /** @constant */
-            Audit_bank_autocrawl_unhold_info: "Reservation refund";
-            /** @constant */
-            Delete_url: "Delete URL";
+            /** @default Website audit */
+            Audit: string;
+            /** @default Index status */
+            Indexing: string;
+            /** @default Website watcher */
+            Watcher: string;
+            /** @default You haven't checked your website yet */
+            No_results: string;
+            /** @default Scanning */
+            Process_text: string;
+            /** @default H1 Header */
+            Header_h1: string;
+            /** @default Website SEO audit */
+            Menu: string;
+            /** @default Associated pages */
+            Associated_pages: string;
+            /** @default Symb. count */
+            String_length_short: string;
+            /** @default All */
+            Filter_all: string;
+            /** @default All with issues */
+            Filter_with_warnings_or_errors: string;
+            /** @default With warnings */
+            Filter_with_warnings: string;
+            /** @default With errors */
+            Filter_with_errors: string;
+            /** @default What's new */
+            Filter_checks_changed: string;
+            /** @default Internal links */
+            Links_inner: string;
+            /** @default External links */
+            Links_external: string;
+            /** @default Pages to check */
+            Pages_to_check: string;
+            /** @default Generated sitemap */
+            Generated_sitemap: string;
+            /** @default Sitemap not found */
+            Sitemap_not_found: string;
+            /** @default Sitemap already started */
+            Sitemap_already_started_error: string;
+            /** @default Sitemap generator */
+            Sitemap_gen: string;
+            /** @default pages */
+            pages: string;
+            /** @default Web page count */
+            Site_size: string;
+            /** @default Scan */
+            Header_start_short: string;
+            /** @default Generate */
+            Step1_gen: string;
+            /** @default A valid map can be generated only with a valid robots.txt */
+            Step1_gen_notice: string;
+            /** @default Sitemap generation for */
+            Sitemap_bank_info: string;
+            /** @default Project audit for */
+            Audit_bank_info: string;
+            /** @default Report */
+            Report: string;
+            /** @default Summary */
+            Header_browse: string;
+            /** @default Common */
+            Header_common: string;
+            /** @default Scanned pages */
+            Count_pages_checked: string;
+            /** @default Warnings */
+            Header_notices: string;
+            /** @default Issues */
+            Header_warnings: string;
+            /** @default Redirects between */
+            Www_redirect: string;
+            /** @default blocked by robots.txt */
+            robots_txt_blocked: string;
+            /** @default blocked by <i>&lt;meta http-equiv="refresh"&gt;</i> */
+            refresh_redirect: string;
+            /** @default blocked by <i>&lt;meta name="robots" content="noindex"&gt;</i> */
+            noindex: string;
+            /** @default redirects detected */
+            redirect: string;
+            /** @default loading error / incorrect server response code (for example, 404, 503) */
+            index_broken: string;
+            /** @default title is missing */
+            title_empty: string;
+            /** @default too short / long title */
+            title_size: string;
+            /** @default duplicate title */
+            title_dbl: string;
+            /** @default description is missing */
+            description_empty: string;
+            /** @default too short / long description */
+            description_size: string;
+            /** @default duplicate description */
+            description_dbl: string;
+            /** @default anchor or alternative (attribute <i>title="..."</i>) text is missing */
+            links_empty_content: string;
+            /** @default attribute <i>rel="nofollow"</i> is used */
+            nofollow: string;
+            /** @default broken links */
+            links_broken: string;
+            /** @default alternative text (attribute <i>alt="..."</i>) is missing */
+            no_title: string;
+            /** @default "broken" image */
+            images_broken: string;
+            /** @default empty or missing H1 tag */
+            h1_empty: string;
+            /** @default Last-Modified is missing */
+            no_lastmod: string;
+            /** @default If-Modified-Since not processed */
+            no_lastmod_since: string;
+            /** @default Index status */
+            Header_index: string;
+            /** @default Response code */
+            Status_code: string;
+            /** @default Blocked robots.txt */
+            Robots_txt_blocked_short: string;
+            /** @default Snippet */
+            Header_snippet: string;
+            /** @default Meta-description (description) */
+            Description: string;
+            /** @default Duplicate titles */
+            Snippet_title_dbl: string;
+            /** @default Duplicate descriptions */
+            Snippet_description_dbl: string;
+            /** @default Links */
+            Header_links: string;
+            /** @default Type */
+            Link_type: string;
+            /** @default Text (anchor) */
+            Link_content: string;
+            /** @default Text (title) */
+            Link_title: string;
+            /** @default Pages */
+            Link_pages: string;
+            /** @default "Broken" */
+            Link_broken: string;
+            /** @default Image */
+            Link_image: string;
+            /** @default Image */
+            Link_image2: string;
+            /** @default Text */
+            Link_text: string;
+            /** @default Notification Center */
+            Watcher_send_to_informer: string;
+            /** @default Generate sitemap */
+            Generate_sitemap: string;
+            /** @default Sitemap generator */
+            Sitemap_generation: string;
+            /** @default Sitemap uploader */
+            Sitemap_uploading: string;
+            /** @default Images */
+            Header_images: string;
+            /** @default Alt-text */
+            Image_alt: string;
+            /** @default Pages */
+            Image_pages: string;
+            /** @default Size */
+            Image_size: string;
+            /** @default "Broken" */
+            Image_broken: string;
+            /** @default Content */
+            Header_content: string;
+            /** @default Page title (Title) */
+            Title_page: string;
+            /** @default List of pages */
+            Header_pages_short: string;
+            /** @default Page audit */
+            Header_page: string;
+            /** @default Skip the page in the next reports */
+            Page_to_disallow: string;
+            /** @default The page will be skipped in the next reports */
+            Page_to_disallow_ok: string;
+            /** @default Redirects */
+            Page_redirects: string;
+            /** @default Page response code */
+            Page_code: string;
+            /** @default Blocked by Robots.txt */
+            Page_robots_txt_blocked: string;
+            /** @default Contains meta robots nofollow */
+            Page_nofollow: string;
+            /** @default Blocked by meta robots noindex */
+            Page_noindex: string;
+            /** @default Contains rel="canonical" */
+            Page_canonical: string;
+            /** @default Contains rel="alternate" */
+            Page_alternate: string;
+            /** @default Contains meta refresh redirect */
+            Page_refresh: string;
+            /** @default Symbol count */
+            Page_string_length: string;
+            /** @default Duplicate title */
+            Page_title_dbl: string;
+            /** @default Duplicate description */
+            Page_description_dbl: string;
+            /** @default Changes */
+            Filter_changed: string;
+            /** @default Changes (HTTP code didn't change) */
+            Filter_http_not_changed: string;
+            /** @default Only current report */
+            Filter_check_selected: string;
+            /** @default All until the applied date */
+            Filter_check_before: string;
+            /** @default Check */
+            Watcher_go: string;
+            /** @default Scanning */
+            Watcher_process_text: string;
+            /** @default Website watcher report for */
+            Watcher_bank_info: string;
+            /** @default To run Watcher */
+            Watcher_need_config_1: string;
+            /** @default move to the settings */
+            Watcher_need_config_2: string;
+            /** @default and add a list of pages */
+            Watcher_need_config_3: string;
+            /** @default Scan */
+            Indexing_go: string;
+            /** @default Index checker */
+            Indexing_check: string;
+            /** @default You haven't checked website index status yet */
+            Indexing_no_results: string;
+            /** @default Index status report for */
+            Indexing_bank_info: string;
+            /** @default To check website index status  */
+            Indexing_need_config_1: string;
+            /** @default set */
+            Indexing_need_config_2: string;
+            /** @default a list of pages to scan and select search engines */
+            Indexing_need_config_3: string;
+            /** @default Please add pages to scan in the settings */
+            Pages_for_analyse_not_selected: string;
+            /** @default Delete URLs by regexp match */
+            Delete_url_by_regexp: string;
+            /** @default *Report can contain up to 1000 records */
+            Report_limit_warning: string;
+            /** @default results are stored for 180 days */
+            Watcher_store_180_days: string;
+            /** @default Select tracking method */
+            Watcher_selector_title: string;
+            /** @default Regular expression */
+            Watcher_regexpr: string;
+            /** @default CSV archive */
+            Download_archive_csv: string;
+            /** @default PDF archive */
+            Download_archive_pdf: string;
+            /** @default List of URLs */
+            List_of_urls: string;
+            /** @default Sitemap.xml path */
+            Sitemap_xml_url: string;
+            /** @default Sitemap */
+            Sitemap_mail_sitemap: string;
+            /** @default Website audit */
+            Sitemap_mail_audit: string;
+            /** @default Index checker */
+            Sitemap_mail_indexing: string;
+            /** @default Website watcher */
+            Sitemap_mail_watcher: string;
+            /** @default Retrieve from file */
+            Retrieve_from_file: string;
+            /** @default Delete Website Watcher data  */
+            Watcher_delete_title: string;
+            /** @default Website Watcher report dated */
+            Watcher_delete_info1: string;
+            /** @default will be deleted. You cannot undo this action. */
+            Watcher_delete_info2: string;
+            /** @default Skip code */
+            Watcher_ignore_options: string;
+            /** @default HTML code */
+            Watcher_ignore_html: string;
+            /** @default javascript code */
+            Watcher_ignore_js: string;
+            /** @default do not skip */
+            Watcher_ignore_nothing: string;
+            /** @default Track changes */
+            Watcher_track_button: string;
+            /** @default Track changes */
+            Watcher_track_changes: string;
+            /** @default Tracking changes of */
+            Watcher_tracking: string;
+            /** @default Max redirects */
+            Watcher_max_redirects_count: string;
+            /** @default Website Watcher already running */
+            Watcher_already_started_error: string;
+            /** @default Index Checker already running */
+            Indexing_already_started_error: string;
+            /** @default Link to XML does not match project host */
+            Sitemap_XML_link_not_match_host_error: string;
+            /** @default Required URLs column missing */
+            Sitemap_required_columns_missing: string;
+            /** @default Are you sure you want to delete all URLs? */
+            Delete_sitemap: string;
+            /** @default This URL already exists */
+            URL_exists: string;
+            /** @default Are you sure you want to delete the selected URL? */
+            Remove_URL: string;
+            /** @default Enter a list of URLs (one per line), e.g: */
+            Enter_URL_one_per_line: string;
+            /** @default Content tracking */
+            Content_tracking: string;
+            /** @default Add tags to website code or use regular expressions to track changes */
+            Add_tags_use_regexp_notice: string;
+            /** @default Use cookie */
+            Use_cookie: string;
+            /** @default Scan images */
+            Scan_images: string;
+            /** @default Scan JS */
+            Scan_js: string;
+            /** @default Scan CSS */
+            Scan_css: string;
+            /** @default Scan links */
+            Scan_links: string;
+            /** @default Indexed pages without snippet */
+            Indexed_pages_with_no_snippet: string;
+            /** @default {
+             *       "audit_user_agent": "User Agent can affect how the bot sees the site and how DDoS protection works.",
+             *       "audit_page_delay": "How often crawler can open site URLs. If the delay is small, audit will end faster, but the site can go down due to high load. The bigger is the delay, the longer the check will go.<br><br>The delay can increase, if you check Core Web Vitals. For CWV JS is executed, and you need wait for the full rendering of every URL, that takes at least 20 s.",
+             *       "audit_resource_delay": "How often crawler can open site resources (images, JS, CSS). If the delay is small, audit will end faster, but the site can go down due to high load. The bigger is the delay, the longer the check will go.",
+             *       "audit_use_cookie": "Turn this feature on, if your DDoS protection uses cookies.<br><br>But it may cause more personalized information in checks and they could be distorted.",
+             *       "audit_scan_images": "",
+             *       "audit_scan_js": "",
+             *       "audit_scan_css": "",
+             *       "audit_scan_links": "",
+             *       "server_location": "Change server location to access blocked websites."
+             *     } */
+            Hints_settings: (string | number)[];
+            /** @default Servers location */
+            Server_location: string;
+            /** @default {
+             *       "WESTERN_EUROPE": "Western Europe",
+             *       "EASTERN_EUROPE": "Eastern Europe"
+             *     } */
+            Servers_locations: (string | number)[];
+            /** @default Delay between URL requests (s) */
+            Page_delay: string;
+            /** @default Delay between resources requests (s) */
+            Resource_delay: string;
+            /** @default Get free PageSpeed Insights API-key */
+            API_key_1: string;
+            /** @default and paste it in the input field */
+            API_key_2: string;
+            /** @default Redirect chain */
+            Redirect_chain: string;
+            /** @default Search URL */
+            Search_URL: string;
+            /** @default Crawl website */
+            Auto_collect: string;
+            /** @default Add manually */
+            Add_by_hand: string;
+            /** @default Choose website size */
+            Select_site_size: string;
+            /** @default Choose website size */
+            Please_select_site_size: string;
+            /** @default Maximum of pages for audit */
+            Master_urls_auto_title: string;
+            /** @default We'll check only the pages found during crawling. First you'll be charged the price for the maximum number of pages, but there can be less pages on the website. We'll refund the amount for the number of pages that hadn't been checked back on your balance. */
+            Master_urls_auto_alert: string;
+            /** @default To perform audit you need to add URLs manually or enable website crawling, go to  */
+            Audit_go_alert_need_config: string;
+            /** @default URLs for audit are added manually. To change the way of adding pages, go to */
+            Audit_go_alert_by_hand: string;
+            /** @default We'll check */
+            Audit_go_alert_auto_collect_1: string;
+            /** @default URLs for audit are crawled automatically. To change the maximum number of pages for audit or add them manually, go to */
+            Audit_go_alert_auto_collect_2: string;
+            /** @default Funds reservation for audit with automatic website crawling, project */
+            Audit_bank_autocrawl_info: string;
+            /** @default Reservation refund */
+            Audit_bank_autocrawl_unhold_info: string;
+            /** @default Delete URL */
+            Delete_url: string;
         };
     };
     responses: never;

@@ -11,91 +11,120 @@
                 "type": "object",
                 "properties": {
                     "Type_balance": {
-                        "const": "Balance"
+                        "default": "Balance",
+                        "type": "string"
                     },
                     "Type_news": {
-                        "const": "Sevice news"
+                        "default": "Sevice news",
+                        "type": "string"
                     },
                     "Type_tickets": {
-                        "const": "Tickets"
+                        "default": "Tickets",
+                        "type": "string"
                     },
                     "Type_yandex_update": {
-                        "const": "Yandex update"
+                        "default": "Yandex update",
+                        "type": "string"
                     },
                     "Type_comments": {
-                        "const": "New comment alerts"
+                        "default": "New comment alerts",
+                        "type": "string"
                     },
                     "Type_api": {
-                        "const": "API updates"
+                        "default": "API updates",
+                        "type": "string"
                     },
                     "Unsubscribe": {
-                        "const": "Unsubscribe"
+                        "default": "Unsubscribe",
+                        "type": "string"
                     },
                     "Enter_title_and_text": {
-                        "const": "Enter title and message text"
+                        "default": "Enter title and message text",
+                        "type": "string"
                     },
                     "Log_text": {
-                        "const": "Emailing"
+                        "default": "Emailing",
+                        "type": "string"
                     },
                     "Log_text2": {
-                        "const": "only for subscribers"
+                        "default": "only for subscribers",
+                        "type": "string"
                     },
                     "Tickets_title": {
-                        "const": "You received a new reply to your ticket"
+                        "default": "You received a new reply to your ticket",
+                        "type": "string"
                     },
                     "Balance_title": {
-                        "const": "Account balance alert"
+                        "default": "Account balance alert",
+                        "type": "string"
                     },
                     "Update_title": {
-                        "const": "Yandex search results updated"
+                        "default": "Yandex search results updated",
+                        "type": "string"
                     },
                     "Comments_title": {
-                        "const": "You comment has a new reply! Join the discussion 😎"
+                        "default": "You comment has a new reply! Join the discussion 😎",
+                        "type": "string"
                     },
                     "No_new_notifications": {
-                        "const": "No notifications yet"
+                        "default": "No notifications yet",
+                        "type": "string"
                     },
                     "clear_all": {
-                        "const": "clear all"
+                        "default": "clear all",
+                        "type": "string"
                     },
                     "Notifications": {
-                        "const": "Notifications"
+                        "default": "Notifications",
+                        "type": "string"
                     },
                     "Email": {
-                        "const": "Email"
+                        "default": "Email",
+                        "type": "string"
                     },
                     "Push": {
-                        "const": "Push"
+                        "default": "Push",
+                        "type": "string"
                     },
                     "Block": {
-                        "const": "Block"
+                        "default": "Block",
+                        "type": "string"
                     },
                     "Informer": {
-                        "const": "Alerts"
+                        "default": "Alerts",
+                        "type": "string"
                     },
                     "Select_all": {
-                        "const": "Select all"
+                        "default": "Select all",
+                        "type": "string"
                     },
                     "Clear_all": {
-                        "const": "Clear all"
+                        "default": "Clear all",
+                        "type": "string"
                     },
                     "Comment_replies": {
-                        "const": "Comment replies"
+                        "default": "Comment replies",
+                        "type": "string"
                     },
                     "replied_to_you": {
-                        "const": " replied to you"
+                        "default": " replied to you",
+                        "type": "string"
                     },
                     "in_comments_on_the_post": {
-                        "const": "in comments on the post"
+                        "default": "in comments on the post",
+                        "type": "string"
                     },
                     "Email_delivery_failure": {
-                        "const": "Email delivery has failed to this recipient"
+                        "default": "Email delivery has failed to this recipient",
+                        "type": "string"
                     },
                     "email_unsubscribed_from_reports": {
-                        "const": "unsubscribed from reports of projects"
+                        "default": "unsubscribed from reports of projects",
+                        "type": "string"
                     },
                     "You_unsubscribed_from_emails": {
-                        "const": "You unsubscribed from emails to"
+                        "default": "You unsubscribed from emails to",
+                        "type": "string"
                     }
                 },
                 "required": [

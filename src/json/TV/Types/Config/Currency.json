@@ -11,158 +11,287 @@
                 "type": "object",
                 "properties": {
                     "GA_CU": {
-                        "const": "No set"
+                        "title": "Код валюты.",
+                        "default": "No set",
+                        "type": "string"
                     },
                     "CU_LABEL": {
-                        "const": "No set"
+                        "title": "Символ валюты.",
+                        "default": "No set",
+                        "type": "string"
                     },
                     "CU_PREFIX": {
-                        "const": "No set"
+                        "title": "Префикс валюты.",
+                        "description": "`CU_PREFIX` и `getCUSuffix()` взаимоисключены, только один из них должен опредять не пустое значение",
+                        "default": "No set",
+                        "type": "string"
                     },
                     "CU_PREFIX_ICO": {
-                        "const": "No set"
+                        "title": "Иконка префикса валюты.",
+                        "default": "No set",
+                        "type": "string"
                     },
                     "CU_SUFFIX_ICO": {
-                        "const": "No set"
+                        "title": "Иконка суффикса валюты.",
+                        "default": "No set",
+                        "type": "string"
                     },
                     "CU_PRECISION": {
-                        "const": 10000
+                        "title": "Точность валюты.",
+                        "default": 10000,
+                        "type": "integer"
                     },
                     "QUERY_COST": {
-                        "const": 10000
+                        "title": "Стоимость запроса в валюте.",
+                        "default": 10000,
+                        "type": "number"
                     },
                     "QUERY_COST_COMPETITORS": {
-                        "const": 10000
+                        "title": "Стоимость запроса для конкурентов.",
+                        "default": 10000,
+                        "type": "number"
                     },
                     "QUERY_COST_SERP": {
-                        "const": 10000
+                        "title": "Стоимость запроса для SERP.",
+                        "default": 10000,
+                        "type": "number"
                     },
                     "QUERY_COST_SNIPPET": {
-                        "const": 10000
+                        "title": "Стоимость запроса для сниппетов.",
+                        "default": 10000,
+                        "type": "number"
                     },
                     "QUERY_COST_SNAPSHOT": {
-                        "const": 10000
+                        "title": "Стоимость запроса для снэпшота.",
+                        "default": 10000,
+                        "type": "number"
                     },
                     "QUERY_COST_DEPTH_K": {
-                        "const": 10000
+                        "title": "Глубина запроса.",
+                        "default": 10000,
+                        "type": "integer"
                     },
                     "EXPORT_ONE_RESULT_COST": {
-                        "const": 10000
+                        "title": "Стоимость одного результата экспорта.",
+                        "default": 10000,
+                        "type": "number"
                     },
                     "QUERY_COST_FREQUENCY": {
-                        "const": 10000
+                        "title": "Частота запросов.",
+                        "default": 10000,
+                        "type": "number"
                     },
                     "SY_COST": {
-                        "const": 10000
+                        "title": "Стоимость SY.",
+                        "default": 10000,
+                        "type": "number"
                     },
                     "SY_HINTS_COST": {
-                        "const": [
+                        "title": "Массив с подсказками стоимости.",
+                        "default": [
                             10000,
                             10000,
                             10000
-                        ]
+                        ],
+                        "type": "array",
+                        "items": {
+                            "oneOf": [
+                                {
+                                    "type": "string"
+                                },
+                                {
+                                    "type": "number"
+                                }
+                            ]
+                        }
                     },
                     "BROKER_COST": {
-                        "const": 10000
+                        "title": "Стоимость брокера.",
+                        "default": 10000,
+                        "type": "number"
                     },
                     "CLASTER_COST": {
-                        "const": 10000
+                        "title": "Стоимость кластера.",
+                        "default": 10000,
+                        "type": "number"
                     },
                     "CLASTER_COST_10": {
-                        "const": 10000
+                        "title": "Стоимость кластера для 10 единиц.",
+                        "default": 10000,
+                        "type": "number"
                     },
                     "CLASTER_COST_50": {
-                        "const": 10000
+                        "title": "Стоимость кластера для 50 единиц.",
+                        "default": 10000,
+                        "type": "number"
                     },
                     "CLASTER_COST_250": {
-                        "const": 10000
+                        "title": "Стоимость кластера для 250 единиц.",
+                        "default": 10000,
+                        "type": "number"
                     },
                     "CLASTER_CHANGE_COST": {
-                        "const": 10000
+                        "title": "Стоимость изменения кластера.",
+                        "default": 10000,
+                        "type": "number"
                     },
                     "AUDIT_SITEMAP_100": {
-                        "const": 10000
+                        "title": "Стоимость для audit_sitemap_100.",
+                        "default": 10000,
+                        "type": "number"
                     },
                     "AUDIT_SITEMAP_1000": {
-                        "const": 10000
+                        "title": "Стоимость для audit_sitemap_1000.",
+                        "default": 10000,
+                        "type": "number"
                     },
                     "AUDIT_SITEMAP_10000": {
-                        "const": 10000
+                        "title": "Стоимость для audit_sitemap_10000.",
+                        "default": 10000,
+                        "type": "number"
                     },
                     "AUDIT_SITEMAP_100000": {
-                        "const": 10000
+                        "title": "Стоимость для audit_sitemap_100000.",
+                        "default": 10000,
+                        "type": "number"
                     },
                     "AUDIT_SITEMAP_150000": {
-                        "const": 10000
+                        "title": "Стоимость для audit_sitemap_150000.",
+                        "default": 10000,
+                        "type": "number"
                     },
                     "AUDIT_SITEMAP_300000": {
-                        "const": 10000
+                        "title": "Стоимость для audit_sitemap_300000.",
+                        "default": 10000,
+                        "type": "number"
                     },
                     "AUDIT_COST": {
-                        "const": 10000
+                        "title": "Стоимость для аудита.",
+                        "default": 10000,
+                        "type": "number"
                     },
                     "AUDIT_COST_100": {
-                        "const": 10000
+                        "title": "Стоимость для аудита 100.",
+                        "default": 10000,
+                        "type": "number"
                     },
                     "AUDIT_COST_1000": {
-                        "const": 10000
+                        "title": "Стоимость для аудита 1000.",
+                        "default": 10000,
+                        "type": "number"
                     },
                     "AUDIT_COST_10000": {
-                        "const": 10000
+                        "title": "Стоимость для аудита 10000.",
+                        "default": 10000,
+                        "type": "number"
                     },
                     "WATCHER_COST": {
-                        "const": 10000
+                        "title": "Стоимость наблюдателя.",
+                        "default": 10000,
+                        "type": "number"
                     },
                     "INDEXING_COST": {
-                        "const": 10000
+                        "title": "Стоимость индексации.",
+                        "default": 10000,
+                        "type": "number"
                     },
                     "MENTIONS_COST": {
-                        "const": 10000
+                        "title": "Стоимость упоминаний.",
+                        "default": 10000,
+                        "type": "number"
                     },
                     "COMPETITORS_COST": {
-                        "const": 10000
+                        "title": "Стоимость конкурентов.",
+                        "default": 10000,
+                        "type": "number"
                     },
                     "WEB_SCREENS_COST": {
-                        "const": 10000
+                        "title": "Стоимость веб-скриншотов.",
+                        "default": 10000,
+                        "type": "number"
                     },
                     "DOMAINS_BUY_COST": {
-                        "const": 10000
+                        "title": "Стоимость покупки домена.",
+                        "default": 10000,
+                        "type": "number"
                     },
                     "DOMAINS_RENEW_COST": {
-                        "const": 10000
+                        "title": "Стоимость продления домена.",
+                        "default": 10000,
+                        "type": "number"
                     },
                     "DOMAINS_AUTH_INFO_PHONE_COST": {
-                        "const": 10000
+                        "title": "Стоимость авторизации по телефону.",
+                        "default": 10000,
+                        "type": "number"
                     },
                     "DOMAINS_AUTH_INFO_MAIL_COST": {
-                        "const": 10000
+                        "title": "Стоимость авторизации по почте.",
+                        "default": 10000,
+                        "type": "number"
                     },
                     "TARIFF_NAMES": {
-                        "const": [
+                        "title": "Массив тарифных планов.",
+                        "default": [
                             "No set",
                             "No set",
                             "No set",
                             "No set",
                             "No set"
-                        ]
+                        ],
+                        "type": "array",
+                        "items": {
+                            "oneOf": [
+                                {
+                                    "type": "string"
+                                },
+                                {
+                                    "type": "number"
+                                }
+                            ]
+                        }
                     },
                     "TARIFF_VALUES": {
-                        "const": [
+                        "title": "Массив значений тарифов.",
+                        "default": [
                             10000,
                             10000,
                             10000,
                             10000,
                             10000
-                        ]
+                        ],
+                        "type": "array",
+                        "items": {
+                            "oneOf": [
+                                {
+                                    "type": "string"
+                                },
+                                {
+                                    "type": "number"
+                                }
+                            ]
+                        }
                     },
                     "TARIFF_DISCOUNT": {
-                        "const": [
+                        "title": "Массив скидок на тарифы.",
+                        "default": [
                             0,
                             10,
                             15,
                             20,
                             30
-                        ]
+                        ],
+                        "type": "array",
+                        "items": {
+                            "oneOf": [
+                                {
+                                    "type": "string"
+                                },
+                                {
+                                    "type": "number"
+                                }
+                            ]
+                        }
                     }
                 },
                 "required": [

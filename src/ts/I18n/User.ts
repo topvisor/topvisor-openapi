@@ -8,488 +8,487 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         "I18n.User": {
-            /** @constant */
-            Account: "Account";
-            /** @constant */
-            Name: "Name";
-            /** @constant */
-            Password: "Password";
-            /** @constant */
-            password_updated: "updated";
-            /** @constant */
-            Theme: "Тема оформления";
-            /** @constant */
-            Encoding: "Character encoding";
-            /** @constant */
-            Delimiter: "Delimiter";
-            /** @constant */
-            Dec_point: "Decimal point";
-            /** @constant */
-            Current_time: "Time zone";
-            /** @constant */
-            Date_format: "Date format";
-            /** @constant */
-            Push_notifications: "Push notifications";
-            /** @constant */
-            Push_enabled: "Enabled";
-            /** @constant */
-            Push_disabled: "Disabled";
-            /** @constant */
-            Push_disable_browser: "You can turn off notifications in the browser settings";
-            /** @constant */
-            Push_enable_browser: "You can turn on notifications in the browser settings";
-            /** @constant */
-            Push_enable: "Enable";
-            /** @constant */
-            Link_account: "Linked accounts";
-            /** @constant */
-            Remove_account: "Remove - ";
-            /** @constant */
-            API_key: "API Key";
-            /** @constant */
-            API_key_not_generated: "Not generated";
-            /** @constant */
-            Confirmation_msg_notice_1: "We have sent a confirmation message to ";
-            /** @constant */
-            Confirmation_msg_notice_2: ". Click a confirmation link to change your Email address. If you don't receive the message,<br> please check your Spam Email folder.";
-            /** @constant */
-            Confirmation_msg_notice_3: ".";
-            /** @constant */
-            Change_email_message: "We've sent you a email change confirmation. Follow the link in the email to change your account email.";
-            /** @constant */
-            card_activation_notice: "to your account after card activation";
-            /** @constant */
-            Rank_cashback_notice: "of all monthly payments are sent back to your account on the 1st day of each month";
-            /** @constant */
-            Rank_participant_code: "Participant code";
-            /** @constant */
-            Export: "Export";
-            /** @constant */
-            Informer: "Notification Center";
-            /** @constant */
-            Informer_balance_decrease: "Balance reached";
-            /** @constant */
-            Informer_new_ticket_response: "New ticket replies";
-            /** @constant */
-            Informer_sms_cost: "1 - Paid service. 1 SMS costs $0,01";
-            /** @constant */
-            Export_period: "Period";
-            /** @constant */
-            Guest_project: "Guest";
-            /** @constant */
-            Archived_project: "Archived";
-            /** @constant */
-            Export_keywords_number: "Total keyword count";
-            /** @constant */
-            Export_tracked_ranks_number: "Checked keyword rankings";
-            /** @constant */
-            Export_cost: "Export cost";
-            /** @constant */
-            Export_prepare: "Prepare export";
-            /** @constant */
-            Export_start: "Export";
-            /** @constant */
-            Archives: "Archives";
-            /** @constant */
-            Menu_account: "Account settings";
-            /** @constant */
-            Menu_notifications: "Notifications";
-            /** @constant */
-            Menu_bulk_operations: "Bulk operations";
-            /** @constant */
-            Menu_account_stats: "Account stats";
-            /** @constant */
-            Menu_XML_transfer: "XML transfer";
-            /** @constant */
-            New_email: "New email";
-            /** @constant */
-            Current_pwd: "Your password";
-            /** @constant */
-            Change_email: "Update email address";
-            /** @constant */
-            Email_change: "Update email address";
-            /** @constant */
-            New_pwd: "New password";
-            /** @constant */
-            Confirm_new_pwd: "Confirm new password";
-            /** @constant */
-            Change_pwd: "Change password";
-            /** @constant */
-            Pwd_change: "Change password";
-            /** @constant */
-            White_label: "Branded reports";
-            /** @constant */
-            Branded_reports: "Branded reports";
-            /** @constant */
-            formats: "formats";
-            /** @constant */
-            max_height: "max. height";
-            /** @constant */
-            User_scripts: "User scripts";
-            /** @constant */
-            Brand_settings: "Manage brand settings";
-            /** @constant */
-            Company_name: "Company name";
-            /** @constant */
-            Company_logo: "Company logo";
-            /** @constant */
-            Logo_required_format_notice: "Required company logo format is";
-            /** @constant */
-            Logo_required_size_notice: "Required company logo size should be up to";
-            /** @constant */
-            Logo_required_height_notice: "Max company logo height is";
-            /** @constant */
-            Cannot_form_report_without_updates: "At least one project update required to generate a report";
-            /** @constant */
-            logo_required_format: "required image formats: .png, .svg";
-            /** @constant */
-            logo_required_height: "required height: 50px";
-            /** @constant */
-            Link_email_notice: "* Link your email to get full access to all features";
-            /** @constant */
-            to_password_form: " into this form";
-            /** @constant */
-            Confirm_owner_status_notice: "** to confirm that you are the account owner";
-            /** @constant */
-            Short_name: "This name is too short";
-            /** @constant */
-            Pass_min_length: "This password is too short";
-            /** @constant */
-            PWS_not_equal: "The passwords do not match!";
-            /** @constant */
-            Email_exists: "This email already exists";
-            /** @constant */
-            Email_exists2: "This email exists in the system";
-            /** @constant */
-            Email_exists3: "This email already exists. <br>In order to link it to this account enter your password from ";
-            /** @constant */
-            Join_email: "Join e-mail";
-            /** @constant */
-            Enter_password_for_email: "Enter password for this e-mail";
-            /** @constant */
-            Email_changed_from_to: "Your email address has been successfully changed from ";
-            /** @constant */
-            Registration_invite_sended_1: "Invitation to ";
-            /** @constant */
-            Registration_invite_sended_2: " was sent successfully";
-            /** @constant */
-            Registration_invite_sended_error: "Message hasn't been sent due to error";
-            /** @constant */
-            System_reg_msg1: "Confirmation message sent to ";
-            /** @constant */
-            System_reg_msg2: " ";
-            /** @constant */
-            Invalid_code: "The code is invalid or has been used";
-            /** @constant */
-            Retrieve_system_msg: "We have sent you password reset instructions";
-            /** @constant */
-            Yandex_XML_auth_error: "Yandex XML authorization error";
-            /** @constant */
-            Rank_code_not_available: "Code is invalid or has been used";
-            /** @constant */
-            Rank_recurrent_sending_code_not_available: "You can activate achievement only once";
-            /** @constant */
-            Rank_date_expired: "Activation period has expired";
-            /** @constant */
-            Twitter_error_binding_accounts1: "Link your Twitter account to log in with Twitter.";
-            /** @constant */
-            Twitter_error_binding_accounts2: "Otherwise, we will not be able to identify you in Twitter";
-            /** @constant */
-            Twitter_login_not_found: "We couldn't find your login in Twitter, please submit a ticket and report the issue to Customer support";
-            /** @constant */
-            Twitter_servers_error: "Twitter server error";
-            /** @constant */
-            Required_signing: "Follow ";
-            /** @constant */
-            Twitter_retweet_required: "Please retweet us";
-            /** @constant */
-            Push_button: "Click Activate";
-            /** @constant */
-            Rank_canceled: "You lost achievement";
-            /** @constant */
-            XML_monster_deactivate_title: "You lost the XML monster card";
-            /** @constant */
-            XML_monster_deactivate_msg: "Your \"XML monster\" card is no longer active as you are not transferring more limits than everyone else anymore";
-            /** @constant */
-            XML_monster_activate_title: "You received the \"XML monster\" card!";
-            /** @constant */
-            XML_monster_activate_msg: "Your \"XML monster\" card is activated as you have transferred more XML limits than everyone else";
-            /** @constant */
-            Rank_ppcchat_deactivate_title: "You lost the \"PPC Chat member\" achievement";
-            /** @constant */
-            Rank_seochat_deactivate_title: "You lost the \"SEO Chat member\" achievement";
-            /** @constant */
-            Rank_ppcchat_activate_title: "You received the \"PPC Chat member\" achievement!";
-            /** @constant */
-            Rank_seochat_activate_title: "You received the \"SEO Chat member\" achievement!";
-            /** @constant */
-            Ranks_retweet: "Retweet ";
-            /** @constant */
-            Ranks_twitter_follower: "Twitter follower";
-            /** @constant */
-            Ranks_activate: "Activate";
-            /** @constant */
-            Ranks_twitter_post: "a post";
-            /** @constant */
-            Ranks_twitter_incomplete_notice: "You need to complete all steps!";
-            /** @constant */
-            Access: "Manage access";
-            /** @constant */
-            Access_emails: "Who can access";
-            /** @constant */
-            Access_view_project: "View project";
-            /** @constant */
-            Access_track_ranks: "Rank tracker";
-            /** @constant */
-            Access_view_traffic: "Traffic data";
-            /** @constant */
-            Access_view_analytics: "Analytics reports";
-            /** @constant */
-            Access_view_AMS: "Search volume";
-            /** @constant */
-            Access_project: "Project";
-            /** @constant */
-            Access_restrict: "Restrict access";
-            /** @constant */
-            Access_view_summary: "Summary";
-            /** @constant */
-            Access_apply_to_selected: "Apply to selected";
-            /** @constant */
-            Access_grant_access: "Grant access";
-            /** @constant */
-            Access_user_email: "User email";
-            /** @constant */
-            Access_guest_link: "Guest link";
-            /** @constant */
-            Access_count: "";
-            /** @constant */
-            Access_select_dates: "Allow to pick dates";
-            /** @constant */
-            Access_add_user: "Add user";
-            /** @constant */
-            Change_project_owner: "Project transfer";
-            /** @constant */
-            Pending_project_transfer_1: "Pending, until";
-            /** @constant */
-            Pending_project_transfer_2: "confirms project transfer.";
-            /** @constant */
-            Transfer_project: "Transfer";
-            /** @constant */
-            Access_manage: "Manage access";
-            /** @constant */
-            integration_not_connected: "not connected";
-            /** @constant */
-            Integration_connect: "Connect";
-            /** @constant */
-            Integration_valid_till: "Key expires";
-            /** @constant */
-            Integration_counter_not_selected: "Select a counter";
-            /** @constant */
-            Integration_no_counters_found: "No counters found";
-            /** @constant */
-            Integration_get_fresh_data: "Update";
-            /** @constant */
-            Integration_expires_in: "Expires in";
-            /** @constant */
-            Integration_days_1: "days";
-            /** @constant */
-            Integration_days_2: "days";
-            /** @constant */
-            Integration_days_3: "days";
-            /** @constant */
-            Integration_extend: "Extend";
-            /** @constant */
-            Integration_disconnect: "Disconnect";
-            /** @constant */
-            Integration_integrate_ad_campaigns: "Integrate ad campaigns";
-            /** @constant */
-            Integration_no_campaigns_for_edit: "We found no available campaigns to manage in your account.";
-            /** @constant */
-            Preferences: "Account";
-            /** @constant */
-            preferences: "account";
-            /** @constant */
-            account_link: "your account settings";
-            /** @constant */
-            Bank: "Bank";
-            /** @constant */
-            Bulk_operations: "Bulk operations";
-            /** @constant */
-            Password_emailed: "We have emailed a password to";
-            /** @constant */
-            Password_new_emailed: "We have sent a new password to";
-            /** @constant */
-            Change_password_notice: "You can change your password in ";
-            /** @constant */
-            Widget: "Widget";
-            /** @constant */
-            Analytcis_top: "Top";
-            /** @constant */
-            Analytcis_metric: "Metric";
-            /** @constant */
-            Analytcis_by_keywords: "Keywords";
-            /** @constant */
-            Analytcis_by_groups: "Group";
-            /** @constant */
-            Analytcis_by_folders: "Folder";
-            /** @constant */
-            Analytcis_by_locations: "Location";
-            /** @constant */
-            Analytcis_by_competitors: "Competitors";
-            /** @constant */
-            Analytcis_by_top: "Top";
-            /** @constant */
-            Analytics_regions_not_selected: "Locations not selected";
-            /** @constant */
-            Analytcis_by_tag: "By tag";
-            /** @constant */
-            Analytics_narrow: "Minimize";
-            /** @constant */
-            Analytics_widen: "Expand";
-            /** @constant */
-            Analytics_show_widget_other_accounts: "Show the widget to guest users";
-            /** @constant */
-            Shortener_short_link: "Short link";
-            /** @constant */
-            Shortener_short_links: "Short links";
-            /** @constant */
-            Shortener_add_url_here: "Paste URL http://... and press Enter";
-            /** @constant */
-            Shortener_search_url: "Search URL...";
-            /** @constant */
-            Shortener_turn_long_to_short: "Shorten URLs and share compact links to webpages. Stats and analytics: visit count by source (social media and websites).";
-            /** @constant */
-            Shortener_turn_long_to_short_1: "Shorten links and share compact URLs. Quick, handy, stats!";
-            /** @constant */
-            Shortener_total_clicks: "Total clicks";
-            /** @constant */
-            Shortener_total_unique_clicks: "Total unique clicks";
-            /** @constant */
-            Shortener_QR_pixels: "Pixels";
-            /** @constant */
-            Shortener_QR_labyrinth: "Labyrinth";
-            /** @constant */
-            Shortener_use_brand: "Use brand";
-            /** @constant */
-            Hide_this_message: "Hide this message";
-            /** @constant */
-            Need_to_top_up_balance: "Top up your balance first";
-            /** @constant */
-            PWD_changed: "Your password was successfully changed!";
-            /** @constant */
-            Change_profile_pic: "Change profile picture";
-            /** @constant */
-            Upload_pic: "Upload";
-            /** @constant */
-            Positions_reverse_dates_0: "Default (display the recent update first)";
-            /** @constant */
-            Positions_reverse_dates_1: "Reverse (display the first update first)";
-            /** @constant */
-            Positions_reverse_dates_label: "Date order";
-            /** @constant */
-            Remember_selected_locations: "Remember selected locations";
-            /** @constant */
-            Additional_top_segment: "Addit. top segment";
-            /** @constant */
-            Sign_out_of_all_accounts: "Sign out of all accounts";
-            /** @constant */
-            Settings_header_apps: "Apps";
-            /** @constant */
-            Settings_header_format: "Format";
-            /** @constant */
-            Settings_header_rank_tracker: "Rank tracker";
-            /** @constant */
-            Login: "Login";
-            /** @constant */
-            Site: "Site";
-            /** @constant */
-            Limit: "Limit";
-            /** @constant */
-            Used: "Used";
-            /** @constant */
-            Project_import: "Project import";
-            /** @constant */
-            Provide_access_details: "Provide access details to the selected tool to transfer your projects";
-            /** @constant */
-            Provide_access_to_service_for_transfer: "Provide access details to the selected tool to transfer your projects";
-            /** @constant */
-            Service_to_transfer_from: "Tool";
-            /** @constant */
-            Service_other_name: "Tool name";
-            /** @constant */
-            Import: "Import";
-            /** @constant */
-            Projects_to_import: "Projects to import";
-            /** @constant */
-            Project_name: "Project name";
-            /** @constant */
-            Migration: "Migration";
-            /** @constant */
-            Selected_projects: "Selected projects";
-            /** @constant */
-            Active_projects: "Active projects";
-            /** @constant */
-            Migration_request_accepted_notice: "<p>Your migration request has been received and will be processed shortly.<br>Estimated time of project\timport with ranking history is from 1 to 2 hours (weekdays).</p><p>We'll get back to you as soon as migration is completed.</p>";
-            /** @constant */
-            These_limits_already_being_used_by_owner: "These limits are already being used by their owner";
-            /** @constant */
-            Invalid_email_error: "Invalid Email";
-            /** @constant */
-            Email_limit_error: "Maximum number of email addresses added";
-            /** @constant */
-            achievements_form1: "achievements";
-            /** @constant */
-            achievements_form2: "achievement";
-            /** @constant */
-            achievements_form3: "achievements";
-            /** @constant */
-            Decimals: "Decimal point";
-            /** @constant */
-            Other_settings: "Other";
-            /** @constant */
-            Unavailable_key_notice: "After changing the key, access with the old key will be restricted. Do you want to continue?";
-            /** @constant */
-            Linked_accounts: "Linked accounts";
-            /** @constant */
-            Vkontakte: "Vkontakte";
-            /** @constant */
-            Save_changes: "Save changes";
-            /** @constant */
-            Change_name: "Change name";
-            /** @constant */
-            Update_picture: "Upload picture";
-            /** @constant */
-            Edit_picture: "Edit picture";
-            /** @constant */
-            Delete_picture: "Delete picture";
-            /** @constant */
-            Current_email: "Current Email";
-            /** @constant */
-            Your_password: "Your password";
-            /** @constant */
-            Confirm_new_password: "Confirm new password";
-            /** @constant */
-            Other_service: "Other";
-            /** @constant */
-            Min_balance: "Minimum balance";
-            /** @constant */
-            Bio: "Bio";
-            /** @constant */
-            Change_currency_guest_projects_notice: "Please note that you should remove all guest projects from your account to change the currency. The access to the projects can only be shared between accounts with the same currency.";
-            /** @constant */
-            User_info: "User info";
-            /** @constant */
-            Profile_url: "Profile URL";
-            /** @constant */
-            Promo_text: "Promo text";
-            /** @constant */
-            Promo_button: "Promo button";
-            /** @constant */
-            Promo_button_text: "Text on the button";
-            /** @constant */
-            Promo_button_link: "Link on the button";
-            /** @constant */
-            View_the_author_page: "View the author's page";
+            /** @default Account */
+            Account: string;
+            /** @default Name */
+            Name: string;
+            /** @default Password */
+            Password: string;
+            /** @default updated */
+            password_updated: string;
+            /** @default Тема оформления */
+            Theme: string;
+            /** @default Character encoding */
+            Encoding: string;
+            /** @default Delimiter */
+            Delimiter: string;
+            /** @default Decimal point */
+            Dec_point: string;
+            /** @default Time zone */
+            Current_time: string;
+            /** @default Date format */
+            Date_format: string;
+            /** @default Push notifications */
+            Push_notifications: string;
+            /** @default Enabled */
+            Push_enabled: string;
+            /** @default Disabled */
+            Push_disabled: string;
+            /** @default You can turn off notifications in the browser settings */
+            Push_disable_browser: string;
+            /** @default You can turn on notifications in the browser settings */
+            Push_enable_browser: string;
+            /** @default Enable */
+            Push_enable: string;
+            /** @default Linked accounts */
+            Link_account: string;
+            /** @default Remove -  */
+            Remove_account: string;
+            /** @default API Key */
+            API_key: string;
+            /** @default Not generated */
+            API_key_not_generated: string;
+            /** @default We have sent a confirmation message to  */
+            Confirmation_msg_notice_1: string;
+            /** @default . Click a confirmation link to change your Email address. If you don't receive the message,<br> please check your Spam Email folder. */
+            Confirmation_msg_notice_2: string;
+            /** @default . */
+            Confirmation_msg_notice_3: string;
+            /** @default We've sent you a email change confirmation. Follow the link in the email to change your account email. */
+            Change_email_message: string;
+            /** @default to your account after card activation */
+            card_activation_notice: string;
+            /** @default of all monthly payments are sent back to your account on the 1st day of each month */
+            Rank_cashback_notice: string;
+            /** @default Participant code */
+            Rank_participant_code: string;
+            /** @default Export */
+            Export: string;
+            /** @default Notification Center */
+            Informer: string;
+            /** @default Balance reached */
+            Informer_balance_decrease: string;
+            /** @default New ticket replies */
+            Informer_new_ticket_response: string;
+            /** @default 1 - Paid service. 1 SMS costs $0,01 */
+            Informer_sms_cost: string;
+            /** @default Period */
+            Export_period: string;
+            /** @default Guest */
+            Guest_project: string;
+            /** @default Archived */
+            Archived_project: string;
+            /** @default Total keyword count */
+            Export_keywords_number: string;
+            /** @default Checked keyword rankings */
+            Export_tracked_ranks_number: string;
+            /** @default Export cost */
+            Export_cost: string;
+            /** @default Prepare export */
+            Export_prepare: string;
+            /** @default Export */
+            Export_start: string;
+            /** @default Archives */
+            Archives: string;
+            /** @default Account settings */
+            Menu_account: string;
+            /** @default Notifications */
+            Menu_notifications: string;
+            /** @default Bulk operations */
+            Menu_bulk_operations: string;
+            /** @default Account stats */
+            Menu_account_stats: string;
+            /** @default XML transfer */
+            Menu_XML_transfer: string;
+            /** @default New email */
+            New_email: string;
+            /** @default Your password */
+            Current_pwd: string;
+            /** @default Update email address */
+            Change_email: string;
+            /** @default Update email address */
+            Email_change: string;
+            /** @default New password */
+            New_pwd: string;
+            /** @default Confirm new password */
+            Confirm_new_pwd: string;
+            /** @default Change password */
+            Change_pwd: string;
+            /** @default Change password */
+            Pwd_change: string;
+            /** @default Branded reports */
+            White_label: string;
+            /** @default Branded reports */
+            Branded_reports: string;
+            /** @default formats */
+            formats: string;
+            /** @default max. height */
+            max_height: string;
+            /** @default User scripts */
+            User_scripts: string;
+            /** @default Manage brand settings */
+            Brand_settings: string;
+            /** @default Company name */
+            Company_name: string;
+            /** @default Company logo */
+            Company_logo: string;
+            /** @default Required company logo format is */
+            Logo_required_format_notice: string;
+            /** @default Required company logo size should be up to */
+            Logo_required_size_notice: string;
+            /** @default Max company logo height is */
+            Logo_required_height_notice: string;
+            /** @default At least one project update required to generate a report */
+            Cannot_form_report_without_updates: string;
+            /** @default required image formats: .png, .svg */
+            logo_required_format: string;
+            /** @default required height: 50px */
+            logo_required_height: string;
+            /** @default * Link your email to get full access to all features */
+            Link_email_notice: string;
+            /** @default  into this form */
+            to_password_form: string;
+            /** @default ** to confirm that you are the account owner */
+            Confirm_owner_status_notice: string;
+            /** @default This name is too short */
+            Short_name: string;
+            /** @default This password is too short */
+            Pass_min_length: string;
+            /** @default The passwords do not match! */
+            PWS_not_equal: string;
+            /** @default This email already exists */
+            Email_exists: string;
+            /** @default This email exists in the system */
+            Email_exists2: string;
+            /** @default This email already exists. <br>In order to link it to this account enter your password from  */
+            Email_exists3: string;
+            /** @default Join e-mail */
+            Join_email: string;
+            /** @default Enter password for this e-mail */
+            Enter_password_for_email: string;
+            /** @default Your email address has been successfully changed from  */
+            Email_changed_from_to: string;
+            /** @default Invitation to  */
+            Registration_invite_sended_1: string;
+            /** @default  was sent successfully */
+            Registration_invite_sended_2: string;
+            /** @default Message hasn't been sent due to error */
+            Registration_invite_sended_error: string;
+            /** @default Confirmation message sent to  */
+            System_reg_msg1: string;
+            /** @default   */
+            System_reg_msg2: string;
+            /** @default The code is invalid or has been used */
+            Invalid_code: string;
+            /** @default We have sent you password reset instructions */
+            Retrieve_system_msg: string;
+            /** @default Yandex XML authorization error */
+            Yandex_XML_auth_error: string;
+            /** @default Code is invalid or has been used */
+            Rank_code_not_available: string;
+            /** @default You can activate achievement only once */
+            Rank_recurrent_sending_code_not_available: string;
+            /** @default Activation period has expired */
+            Rank_date_expired: string;
+            /** @default Link your Twitter account to log in with Twitter. */
+            Twitter_error_binding_accounts1: string;
+            /** @default Otherwise, we will not be able to identify you in Twitter */
+            Twitter_error_binding_accounts2: string;
+            /** @default We couldn't find your login in Twitter, please submit a ticket and report the issue to Customer support */
+            Twitter_login_not_found: string;
+            /** @default Twitter server error */
+            Twitter_servers_error: string;
+            /** @default Follow  */
+            Required_signing: string;
+            /** @default Please retweet us */
+            Twitter_retweet_required: string;
+            /** @default Click Activate */
+            Push_button: string;
+            /** @default You lost achievement */
+            Rank_canceled: string;
+            /** @default You lost the XML monster card */
+            XML_monster_deactivate_title: string;
+            /** @default Your "XML monster" card is no longer active as you are not transferring more limits than everyone else anymore */
+            XML_monster_deactivate_msg: string;
+            /** @default You received the "XML monster" card! */
+            XML_monster_activate_title: string;
+            /** @default Your "XML monster" card is activated as you have transferred more XML limits than everyone else */
+            XML_monster_activate_msg: string;
+            /** @default You lost the "PPC Chat member" achievement */
+            Rank_ppcchat_deactivate_title: string;
+            /** @default You lost the "SEO Chat member" achievement */
+            Rank_seochat_deactivate_title: string;
+            /** @default You received the "PPC Chat member" achievement! */
+            Rank_ppcchat_activate_title: string;
+            /** @default You received the "SEO Chat member" achievement! */
+            Rank_seochat_activate_title: string;
+            /** @default Retweet  */
+            Ranks_retweet: string;
+            /** @default Twitter follower */
+            Ranks_twitter_follower: string;
+            /** @default Activate */
+            Ranks_activate: string;
+            /** @default a post */
+            Ranks_twitter_post: string;
+            /** @default You need to complete all steps! */
+            Ranks_twitter_incomplete_notice: string;
+            /** @default Manage access */
+            Access: string;
+            /** @default Who can access */
+            Access_emails: string;
+            /** @default View project */
+            Access_view_project: string;
+            /** @default Rank tracker */
+            Access_track_ranks: string;
+            /** @default Traffic data */
+            Access_view_traffic: string;
+            /** @default Analytics reports */
+            Access_view_analytics: string;
+            /** @default Search volume */
+            Access_view_AMS: string;
+            /** @default Project */
+            Access_project: string;
+            /** @default Restrict access */
+            Access_restrict: string;
+            /** @default Summary */
+            Access_view_summary: string;
+            /** @default Apply to selected */
+            Access_apply_to_selected: string;
+            /** @default Grant access */
+            Access_grant_access: string;
+            /** @default User email */
+            Access_user_email: string;
+            /** @default Guest link */
+            Access_guest_link: string;
+            Access_count: string;
+            /** @default Allow to pick dates */
+            Access_select_dates: string;
+            /** @default Add user */
+            Access_add_user: string;
+            /** @default Project transfer */
+            Change_project_owner: string;
+            /** @default Pending, until */
+            Pending_project_transfer_1: string;
+            /** @default confirms project transfer. */
+            Pending_project_transfer_2: string;
+            /** @default Transfer */
+            Transfer_project: string;
+            /** @default Manage access */
+            Access_manage: string;
+            /** @default not connected */
+            integration_not_connected: string;
+            /** @default Connect */
+            Integration_connect: string;
+            /** @default Key expires */
+            Integration_valid_till: string;
+            /** @default Select a counter */
+            Integration_counter_not_selected: string;
+            /** @default No counters found */
+            Integration_no_counters_found: string;
+            /** @default Update */
+            Integration_get_fresh_data: string;
+            /** @default Expires in */
+            Integration_expires_in: string;
+            /** @default days */
+            Integration_days_1: string;
+            /** @default days */
+            Integration_days_2: string;
+            /** @default days */
+            Integration_days_3: string;
+            /** @default Extend */
+            Integration_extend: string;
+            /** @default Disconnect */
+            Integration_disconnect: string;
+            /** @default Integrate ad campaigns */
+            Integration_integrate_ad_campaigns: string;
+            /** @default We found no available campaigns to manage in your account. */
+            Integration_no_campaigns_for_edit: string;
+            /** @default Account */
+            Preferences: string;
+            /** @default account */
+            preferences: string;
+            /** @default your account settings */
+            account_link: string;
+            /** @default Bank */
+            Bank: string;
+            /** @default Bulk operations */
+            Bulk_operations: string;
+            /** @default We have emailed a password to */
+            Password_emailed: string;
+            /** @default We have sent a new password to */
+            Password_new_emailed: string;
+            /** @default You can change your password in  */
+            Change_password_notice: string;
+            /** @default Widget */
+            Widget: string;
+            /** @default Top */
+            Analytcis_top: string;
+            /** @default Metric */
+            Analytcis_metric: string;
+            /** @default Keywords */
+            Analytcis_by_keywords: string;
+            /** @default Group */
+            Analytcis_by_groups: string;
+            /** @default Folder */
+            Analytcis_by_folders: string;
+            /** @default Location */
+            Analytcis_by_locations: string;
+            /** @default Competitors */
+            Analytcis_by_competitors: string;
+            /** @default Top */
+            Analytcis_by_top: string;
+            /** @default Locations not selected */
+            Analytics_regions_not_selected: string;
+            /** @default By tag */
+            Analytcis_by_tag: string;
+            /** @default Minimize */
+            Analytics_narrow: string;
+            /** @default Expand */
+            Analytics_widen: string;
+            /** @default Show the widget to guest users */
+            Analytics_show_widget_other_accounts: string;
+            /** @default Short link */
+            Shortener_short_link: string;
+            /** @default Short links */
+            Shortener_short_links: string;
+            /** @default Paste URL http://... and press Enter */
+            Shortener_add_url_here: string;
+            /** @default Search URL... */
+            Shortener_search_url: string;
+            /** @default Shorten URLs and share compact links to webpages. Stats and analytics: visit count by source (social media and websites). */
+            Shortener_turn_long_to_short: string;
+            /** @default Shorten links and share compact URLs. Quick, handy, stats! */
+            Shortener_turn_long_to_short_1: string;
+            /** @default Total clicks */
+            Shortener_total_clicks: string;
+            /** @default Total unique clicks */
+            Shortener_total_unique_clicks: string;
+            /** @default Pixels */
+            Shortener_QR_pixels: string;
+            /** @default Labyrinth */
+            Shortener_QR_labyrinth: string;
+            /** @default Use brand */
+            Shortener_use_brand: string;
+            /** @default Hide this message */
+            Hide_this_message: string;
+            /** @default Top up your balance first */
+            Need_to_top_up_balance: string;
+            /** @default Your password was successfully changed! */
+            PWD_changed: string;
+            /** @default Change profile picture */
+            Change_profile_pic: string;
+            /** @default Upload */
+            Upload_pic: string;
+            /** @default Default (display the recent update first) */
+            Positions_reverse_dates_0: string;
+            /** @default Reverse (display the first update first) */
+            Positions_reverse_dates_1: string;
+            /** @default Date order */
+            Positions_reverse_dates_label: string;
+            /** @default Remember selected locations */
+            Remember_selected_locations: string;
+            /** @default Addit. top segment */
+            Additional_top_segment: string;
+            /** @default Sign out of all accounts */
+            Sign_out_of_all_accounts: string;
+            /** @default Apps */
+            Settings_header_apps: string;
+            /** @default Format */
+            Settings_header_format: string;
+            /** @default Rank tracker */
+            Settings_header_rank_tracker: string;
+            /** @default Login */
+            Login: string;
+            /** @default Site */
+            Site: string;
+            /** @default Limit */
+            Limit: string;
+            /** @default Used */
+            Used: string;
+            /** @default Project import */
+            Project_import: string;
+            /** @default Provide access details to the selected tool to transfer your projects */
+            Provide_access_details: string;
+            /** @default Provide access details to the selected tool to transfer your projects */
+            Provide_access_to_service_for_transfer: string;
+            /** @default Tool */
+            Service_to_transfer_from: string;
+            /** @default Tool name */
+            Service_other_name: string;
+            /** @default Import */
+            Import: string;
+            /** @default Projects to import */
+            Projects_to_import: string;
+            /** @default Project name */
+            Project_name: string;
+            /** @default Migration */
+            Migration: string;
+            /** @default Selected projects */
+            Selected_projects: string;
+            /** @default Active projects */
+            Active_projects: string;
+            /** @default <p>Your migration request has been received and will be processed shortly.<br>Estimated time of project	import with ranking history is from 1 to 2 hours (weekdays).</p><p>We'll get back to you as soon as migration is completed.</p> */
+            Migration_request_accepted_notice: string;
+            /** @default These limits are already being used by their owner */
+            These_limits_already_being_used_by_owner: string;
+            /** @default Invalid Email */
+            Invalid_email_error: string;
+            /** @default Maximum number of email addresses added */
+            Email_limit_error: string;
+            /** @default achievements */
+            achievements_form1: string;
+            /** @default achievement */
+            achievements_form2: string;
+            /** @default achievements */
+            achievements_form3: string;
+            /** @default Decimal point */
+            Decimals: string;
+            /** @default Other */
+            Other_settings: string;
+            /** @default After changing the key, access with the old key will be restricted. Do you want to continue? */
+            Unavailable_key_notice: string;
+            /** @default Linked accounts */
+            Linked_accounts: string;
+            /** @default Vkontakte */
+            Vkontakte: string;
+            /** @default Save changes */
+            Save_changes: string;
+            /** @default Change name */
+            Change_name: string;
+            /** @default Upload picture */
+            Update_picture: string;
+            /** @default Edit picture */
+            Edit_picture: string;
+            /** @default Delete picture */
+            Delete_picture: string;
+            /** @default Current Email */
+            Current_email: string;
+            /** @default Your password */
+            Your_password: string;
+            /** @default Confirm new password */
+            Confirm_new_password: string;
+            /** @default Other */
+            Other_service: string;
+            /** @default Minimum balance */
+            Min_balance: string;
+            /** @default Bio */
+            Bio: string;
+            /** @default Please note that you should remove all guest projects from your account to change the currency. The access to the projects can only be shared between accounts with the same currency. */
+            Change_currency_guest_projects_notice: string;
+            /** @default User info */
+            User_info: string;
+            /** @default Profile URL */
+            Profile_url: string;
+            /** @default Promo text */
+            Promo_text: string;
+            /** @default Promo button */
+            Promo_button: string;
+            /** @default Text on the button */
+            Promo_button_text: string;
+            /** @default Link on the button */
+            Promo_button_link: string;
+            /** @default View the author's page */
+            View_the_author_page: string;
         };
     };
     responses: never;

@@ -8,148 +8,148 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         "I18n.Footer": {
-            /** @constant */
-            Suggestions_tool: "Search Suggestions Tool";
-            /** @constant */
-            Rank_and_SERP_top_cheking: "Rank and SERP Top checking";
-            /** @constant */
-            Semantics: "Semantics";
-            /** @constant */
-            Technical_SEO: "Technical SEO";
-            /** @constant */
-            Miscellaneous: "Miscellaneous";
-            /** @constant */
-            About_us: "About us";
-            /** @constant */
-            Resources: "Resources";
-            /** @constant */
-            Questions: "Got any questions?";
-            /** @constant */
-            Grouping_tool: "Keyword Grouping Tool";
-            /** @constant */
-            Research_tool: "Keyword Research Tool";
-            /** @constant */
-            Site_auditor: "Website SEO Audit Tool";
-            /** @constant */
-            Site_watcher: "Website Watcher (change tracking)";
-            /** @constant */
-            SERP_snapshots_tool: "SERP Snapshots Tool";
-            /** @constant */
-            Index_checker_tool: "Index Status checker";
-            /** @constant */
-            Search_volume_tool: "Search Volume Tool";
-            /** @constant */
-            Sitemap_generator: "Sitemap generator";
-            /** @constant */
-            Magnet_tool: "Magnet (keyword ideas)";
-            /** @constant */
-            Semantic_core: "Semantic core tools";
-            /** @constant */
-            PPC_bid_manager: "PPC Bid Manager";
-            /** @constant */
-            Competitor_research: "Competitor research";
-            /** @constant */
-            Domain_name_transfer: "Domain name transfer";
-            /** @constant */
-            Domain_name_registration: "Domain name registration";
-            /** @constant */
-            Whois: "Whois (Domain details)";
-            /** @constant */
-            Case_championship: "Case championship";
-            /** @constant */
-            Apometr_tool: "Updates Scanner";
-            /** @constant */
-            Reference: "Reference";
-            /** @constant */
-            API: "API Documentation";
-            /** @constant */
-            Referrals: "Affiliate program";
-            /** @constant */
-            Pricing: "Tools and prices";
-            /** @constant */
-            Sales: "Sales";
-            /** @constant */
-            Help: "Help & Support";
-            /** @constant */
-            Help_center: "Help Center";
-            /** @constant */
-            Chat: "Live Chat";
-            /** @constant */
-            Join_vkontakte: "Join us on Vkontakte";
-            /** @constant */
-            Join_twitter: "Follow us on Twitter";
-            /** @constant */
-            Join_telegram: "Telegram channel";
-            /** @constant */
-            Join_youtube: "Youtube channel";
-            /** @constant */
-            Website_rank_tracker: "Rank Tracker Tool";
-            /** @constant */
-            Free_rank_checking: "Free rank checker";
-            /** @constant */
-            Cases: "Best practices";
-            /** @constant */
-            URL_Shortener_policy: "URL Shortener policy";
-            /** @constant */
-            Privacy_policy: "Privacy Policy";
-            /** @constant */
-            Chrome_extension: "Search results numbering extension for Google Chrome";
-            /** @constant */
-            Firefox_extension: "Search results numbering extension for Firefox";
-            /** @constant */
-            Safari_extension: "Safari extension";
-            /** @constant */
-            iOS_app: "iOS Mobile app";
-            /** @constant */
-            Android_app: "Android Mobile app";
-            /** @constant */
-            Electronic_workflow_system: "Electronic document workflow";
-            /** @constant */
-            Legal_payment: "Company payment";
-            /** @constant */
-            Support_ticket_system: "Support Ticket System";
-            /** @constant */
-            Contact_details: "Contact details";
-            /** @constant */
-            INN: "INN";
-            /** @constant */
-            KPP: "KPP";
-            /** @constant */
-            OGRN: "OGRN";
-            /** @constant */
-            OKVED: "OKVED";
-            /** @constant */
-            Business_card: "Business card";
-            /** @constant */
-            Presentation: "Presentation";
-            /** @constant */
-            Cookie_policy: "Cookie Policy";
-            /** @constant */
-            Payment_methods: "Payment Methods";
-            /** @constant */
-            Mincom_accreditation: "Certified by Ministry of Communications of Russia";
-            /** @constant */
-            Friends: "Our Friends";
-            /** @constant */
-            Trademark: "Trademark";
-            /** @constant */
-            included_into_Russian_software_register: "included into Russian software register";
-            /** @constant */
-            Contract_public_offer: "Contract (public offer)";
-            /** @constant */
-            Referral_program: "Affiliate program";
-            /** @constant */
-            Referral_agreement: "Affiliate offer agreement";
-            /** @constant */
-            Delegate_us_routine_slogan: "Delegate us all routine and enjoy your job!";
-            /** @constant */
-            Social_links: "Follow us";
-            /** @constant */
-            Add_numbers_search_results: "Numerate listings right on<br> the search results page";
-            /** @constant */
-            Install_for: "Install for";
-            /** @constant */
-            Email_us_contact: "We are eager to help! Email us";
+            /** @default Search Suggestions Tool */
+            Suggestions_tool: string;
+            /** @default Rank and SERP Top checking */
+            Rank_and_SERP_top_cheking: string;
+            /** @default Semantics */
+            Semantics: string;
+            /** @default Technical SEO */
+            Technical_SEO: string;
+            /** @default Miscellaneous */
+            Miscellaneous: string;
+            /** @default About us */
+            About_us: string;
+            /** @default Resources */
+            Resources: string;
+            /** @default Got any questions? */
+            Questions: string;
+            /** @default Keyword Grouping Tool */
+            Grouping_tool: string;
+            /** @default Keyword Research Tool */
+            Research_tool: string;
+            /** @default Website SEO Audit Tool */
+            Site_auditor: string;
+            /** @default Website Watcher (change tracking) */
+            Site_watcher: string;
+            /** @default SERP Snapshots Tool */
+            SERP_snapshots_tool: string;
+            /** @default Index Status checker */
+            Index_checker_tool: string;
+            /** @default Search Volume Tool */
+            Search_volume_tool: string;
+            /** @default Sitemap generator */
+            Sitemap_generator: string;
+            /** @default Magnet (keyword ideas) */
+            Magnet_tool: string;
+            /** @default Semantic core tools */
+            Semantic_core: string;
+            /** @default PPC Bid Manager */
+            PPC_bid_manager: string;
+            /** @default Competitor research */
+            Competitor_research: string;
+            /** @default Domain name transfer */
+            Domain_name_transfer: string;
+            /** @default Domain name registration */
+            Domain_name_registration: string;
+            /** @default Whois (Domain details) */
+            Whois: string;
+            /** @default Case championship */
+            Case_championship: string;
+            /** @default Updates Scanner */
+            Apometr_tool: string;
+            /** @default Reference */
+            Reference: string;
+            /** @default API Documentation */
+            API: string;
+            /** @default Affiliate program */
+            Referrals: string;
+            /** @default Tools and prices */
+            Pricing: string;
+            /** @default Sales */
+            Sales: string;
+            /** @default Help & Support */
+            Help: string;
+            /** @default Help Center */
+            Help_center: string;
+            /** @default Live Chat */
+            Chat: string;
+            /** @default Join us on Vkontakte */
+            Join_vkontakte: string;
+            /** @default Follow us on Twitter */
+            Join_twitter: string;
+            /** @default Telegram channel */
+            Join_telegram: string;
+            /** @default Youtube channel */
+            Join_youtube: string;
+            /** @default Rank Tracker Tool */
+            Website_rank_tracker: string;
+            /** @default Free rank checker */
+            Free_rank_checking: string;
+            /** @default Best practices */
+            Cases: string;
+            /** @default URL Shortener policy */
+            URL_Shortener_policy: string;
+            /** @default Privacy Policy */
+            Privacy_policy: string;
+            /** @default Search results numbering extension for Google Chrome */
+            Chrome_extension: string;
+            /** @default Search results numbering extension for Firefox */
+            Firefox_extension: string;
+            /** @default Safari extension */
+            Safari_extension: string;
+            /** @default iOS Mobile app */
+            iOS_app: string;
+            /** @default Android Mobile app */
+            Android_app: string;
+            /** @default Electronic document workflow */
+            Electronic_workflow_system: string;
+            /** @default Company payment */
+            Legal_payment: string;
+            /** @default Support Ticket System */
+            Support_ticket_system: string;
+            /** @default Contact details */
+            Contact_details: string;
+            /** @default INN */
+            INN: string;
+            /** @default KPP */
+            KPP: string;
+            /** @default OGRN */
+            OGRN: string;
+            /** @default OKVED */
+            OKVED: string;
+            /** @default Business card */
+            Business_card: string;
+            /** @default Presentation */
+            Presentation: string;
+            /** @default Cookie Policy */
+            Cookie_policy: string;
+            /** @default Payment Methods */
+            Payment_methods: string;
+            /** @default Certified by Ministry of Communications of Russia */
+            Mincom_accreditation: string;
+            /** @default Our Friends */
+            Friends: string;
+            /** @default Trademark */
+            Trademark: string;
+            /** @default included into Russian software register */
+            included_into_Russian_software_register: string;
+            /** @default Contract (public offer) */
+            Contract_public_offer: string;
+            /** @default Affiliate program */
+            Referral_program: string;
+            /** @default Affiliate offer agreement */
+            Referral_agreement: string;
+            /** @default Delegate us all routine and enjoy your job! */
+            Delegate_us_routine_slogan: string;
+            /** @default Follow us */
+            Social_links: string;
+            /** @default Numerate listings right on<br> the search results page */
+            Add_numbers_search_results: string;
+            /** @default Install for */
+            Install_for: string;
+            /** @default We are eager to help! Email us */
+            Email_us_contact: string;
         };
     };
     responses: never;

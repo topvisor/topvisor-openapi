@@ -11,103 +11,135 @@
                 "type": "object",
                 "properties": {
                     "Panel_get_command_list": {
-                        "const": "Get list of commands"
+                        "default": "Get list of commands",
+                        "type": "string"
                     },
                     "Panel_enable_notifications": {
-                        "const": "Turn on notifications"
+                        "default": "Turn on notifications",
+                        "type": "string"
                     },
                     "Panel_disable_notifications": {
-                        "const": "Turn off notifications"
+                        "default": "Turn off notifications",
+                        "type": "string"
                     },
                     "Panel_get_short_link": {
-                        "const": "Create short link"
+                        "default": "Create short link",
+                        "type": "string"
                     },
                     "Panel_back": {
-                        "const": "Back"
+                        "default": "Back",
+                        "type": "string"
                     },
                     "Panel_cancel": {
-                        "const": "Cancel"
+                        "default": "Cancel",
+                        "type": "string"
                     },
                     "Panel_main_menu": {
-                        "const": "Main menu"
+                        "default": "Main menu",
+                        "type": "string"
                     },
                     "Panel_select_lang": {
-                        "const": "Select language"
+                        "default": "Select language",
+                        "type": "string"
                     },
                     "Panel_eng": {
-                        "const": "English"
+                        "default": "English",
+                        "type": "string"
                     },
                     "Panel_rus": {
-                        "const": "Russian"
+                        "default": "Russian",
+                        "type": "string"
                     },
                     "Panel_i_subscribed": {
-                        "const": "Already subscribed 😎"
+                        "default": "Already subscribed 😎",
+                        "type": "string"
                     },
                     "Panel_subscribe": {
-                        "const": "Subscribe"
+                        "default": "Subscribe",
+                        "type": "string"
                     },
                     "Panel_open_materials": {
-                        "const": "Open materials 📚"
+                        "default": "Open materials 📚",
+                        "type": "string"
                     },
                     "Panel_library": {
-                        "const": "Open library"
+                        "default": "Open library",
+                        "type": "string"
                     },
                     "Message_chat_disabled": {
-                        "const": "Message not received. To contact Customer Care and read replies, type /start"
+                        "default": "Message not received. To contact Customer Care and read replies, type /start",
+                        "type": "string"
                     },
                     "Message_available_commands": {
-                        "const": "Commands that I understand:"
+                        "default": "Commands that I understand:",
+                        "type": "string"
                     },
                     "Message_available_commands_help": {
-                        "const": "Get list of commands"
+                        "default": "Get list of commands",
+                        "type": "string"
                     },
                     "Message_available_commands_start": {
-                        "const": "Turn on notifications"
+                        "default": "Turn on notifications",
+                        "type": "string"
                     },
                     "Message_available_commands_stop": {
-                        "const": "Turn off notifications"
+                        "default": "Turn off notifications",
+                        "type": "string"
                     },
                     "Message_available_commands_tpvsr": {
-                        "const": "Create short link"
+                        "default": "Create short link",
+                        "type": "string"
                     },
                     "Message_start_text1": {
-                        "const": "Hi! I can send your questions to Customer Support and get replies."
+                        "default": "Hi! I can send your questions to Customer Support and get replies.",
+                        "type": "string"
                     },
                     "Message_start_text2": {
-                        "const": "To get a list of commands that I understand, type /help. To contact support, send your question in the chat."
+                        "default": "To get a list of commands that I understand, type /help. To contact support, send your question in the chat.",
+                        "type": "string"
                     },
                     "Message_start_apometer_text": {
-                        "const": ""
+                        "type": "string"
                     },
                     "Message_stop_text": {
-                        "const": "Notifications have been turned off. I'll stop sending you alerts and Customer Support replies."
+                        "default": "Notifications have been turned off. I'll stop sending you alerts and Customer Support replies.",
+                        "type": "string"
                     },
                     "Message_pair_done1": {
-                        "const": "Your Telegram already linked to the account"
+                        "default": "Your Telegram already linked to the account",
+                        "type": "string"
                     },
                     "Message_pair_done2": {
-                        "const": "To remove account, type /unpair"
+                        "default": "To remove account, type /unpair",
+                        "type": "string"
                     },
                     "Message_unpair": {
-                        "const": "Account removed."
+                        "default": "Account removed.",
+                        "type": "string"
                     },
                     "Message_tpvsr": {
-                        "const": "Send me a URL to shorten."
+                        "default": "Send me a URL to shorten.",
+                        "type": "string"
                     },
                     "Message_tpvsr_cancel": {
-                        "const": "Type /cancel to step backwards."
+                        "default": "Type /cancel to step backwards.",
+                        "type": "string"
                     },
                     "Message_tpvsr_failure": {
-                        "const": "Link not shortened"
+                        "default": "Link not shortened",
+                        "type": "string"
                     },
                     "Message_tpvsr_cancel_done": {
-                        "const": "Link shortening canceled."
+                        "default": "Link shortening canceled.",
+                        "type": "string"
                     },
                     "Message_join_done1": {
-                        "const": "Account"
+                        "default": "Account",
+                        "type": "string"
                     },
                     "Message_join_done2": {
-                        "const": "successfully linked."
+                        "default": "successfully linked.",
+                        "type": "string"
                     }
                 },
                 "required": [

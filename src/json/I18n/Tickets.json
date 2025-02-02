@@ -11,160 +11,212 @@
                 "type": "object",
                 "properties": {
                     "Reply_Title": {
-                        "const": "Ticket reply"
+                        "default": "Ticket reply",
+                        "type": "string"
                     },
                     "Reply_notice": {
-                        "const": "When replying to the ticket, please do not change the topic"
+                        "default": "When replying to the ticket, please do not change the topic",
+                        "type": "string"
                     },
                     "Auto_message_title": {
-                        "const": "Thank you, your ticket has been submitted"
+                        "default": "Thank you, your ticket has been submitted",
+                        "type": "string"
                     },
                     "Open_tickets": {
-                        "const": "Open"
+                        "default": "Open",
+                        "type": "string"
                     },
                     "Closed_tickets": {
-                        "const": "Closed"
+                        "default": "Closed",
+                        "type": "string"
                     },
                     "Close_ticket": {
-                        "const": "Close ticket"
+                        "default": "Close ticket",
+                        "type": "string"
                     },
                     "Open_ticket": {
-                        "const": "Open ticket"
+                        "default": "Open ticket",
+                        "type": "string"
                     },
                     "Add_to_favorites": {
-                        "const": "Add to favorites"
+                        "default": "Add to favorites",
+                        "type": "string"
                     },
                     "Remove_from_favorites": {
-                        "const": "Remove from favorites"
+                        "default": "Remove from favorites",
+                        "type": "string"
                     },
                     "Continue_in_new_ticket": {
-                        "const": "Continue in new ticket"
+                        "default": "Continue in new ticket",
+                        "type": "string"
                     },
                     "Quote_message": {
-                        "const": "Quote message"
+                        "default": "Quote message",
+                        "type": "string"
                     },
                     "Edit_message": {
-                        "const": "Edit message"
+                        "default": "Edit message",
+                        "type": "string"
                     },
                     "Delete_message": {
-                        "const": "Delete message"
+                        "default": "Delete message",
+                        "type": "string"
                     },
                     "User_info": {
-                        "const": "User info"
+                        "default": "User info",
+                        "type": "string"
                     },
                     "Device": {
-                        "const": "Device"
+                        "default": "Device",
+                        "type": "string"
                     },
                     "Browser": {
-                        "const": "Browser"
+                        "default": "Browser",
+                        "type": "string"
                     },
                     "Pricing_plan": {
-                        "const": "Pricing plan"
+                        "default": "Pricing plan",
+                        "type": "string"
                     },
                     "Edit_template": {
-                        "const": "Edit template"
+                        "default": "Edit template",
+                        "type": "string"
                     },
                     "Template_title": {
-                        "const": "Title"
+                        "default": "Title",
+                        "type": "string"
                     },
                     "Add_msg": {
-                        "const": "Write a message"
+                        "default": "Write a message",
+                        "type": "string"
                     },
                     "Delete_template": {
-                        "const": "Delete template"
+                        "default": "Delete template",
+                        "type": "string"
                     },
                     "Found": {
-                        "const": "Results"
+                        "default": "Results",
+                        "type": "string"
                     },
                     "Search_tickets": {
-                        "const": "Search tickets"
+                        "default": "Search tickets",
+                        "type": "string"
                     },
                     "New_ticket": {
-                        "const": "Create ticket"
+                        "default": "Create ticket",
+                        "type": "string"
                     },
                     "Reopen_ticket": {
-                        "const": "Reopen ticket"
+                        "default": "Reopen ticket",
+                        "type": "string"
                     },
                     "Text_welcome_1": {
-                        "const": "Select a ticket or"
+                        "default": "Select a ticket or",
+                        "type": "string"
                     },
                     "Text_welcome_2": {
-                        "const": "create a new one"
+                        "default": "create a new one",
+                        "type": "string"
                     },
                     "Text_welcome_3": {
-                        "const": "to contact Customer Support"
+                        "default": "to contact Customer Support",
+                        "type": "string"
                     },
                     "Text_new_ticket_1": {
-                        "const": "Please describe the problem or ask a question"
+                        "default": "Please describe the problem or ask a question",
+                        "type": "string"
                     },
                     "Text_new_ticket_2": {
-                        "const": "We will get back to you shortly 💙"
+                        "default": "We will get back to you shortly 💙",
+                        "type": "string"
                     },
                     "Ticket_source_page": {
-                        "const": "Ticket source page"
+                        "default": "Ticket source page",
+                        "type": "string"
                     },
                     "Sound_mute": {
-                        "const": "Mute"
+                        "default": "Mute",
+                        "type": "string"
                     },
                     "Sound_pencil": {
-                        "const": "Pencil"
+                        "default": "Pencil",
+                        "type": "string"
                     },
                     "Sound_magic_wand": {
-                        "const": "Magic wand"
+                        "default": "Magic wand",
+                        "type": "string"
                     },
                     "Sound_bounce": {
-                        "const": "Bounce"
+                        "default": "Bounce",
+                        "type": "string"
                     },
                     "Sound_beep": {
-                        "const": "Beep"
+                        "default": "Beep",
+                        "type": "string"
                     },
                     "Sound_xylophone": {
-                        "const": "Xylophone"
+                        "default": "Xylophone",
+                        "type": "string"
                     },
                     "Sound_drums": {
-                        "const": "Drums"
+                        "default": "Drums",
+                        "type": "string"
                     },
                     "Average_expenses": {
-                        "const": "Average expenses"
+                        "default": "Average expenses",
+                        "type": "string"
                     },
                     "Bad": {
-                        "const": "Bad"
+                        "default": "Bad",
+                        "type": "string"
                     },
                     "Normal": {
-                        "const": "OK"
+                        "default": "OK",
+                        "type": "string"
                     },
                     "Good": {
-                        "const": "Great!"
+                        "default": "Great!",
+                        "type": "string"
                     },
                     "Title_start": {
-                        "const": "Rate how the Support did their part"
+                        "default": "Rate how the Support did their part",
+                        "type": "string"
                     },
                     "Title_finish": {
-                        "const": "Thanks for the feedback!"
+                        "default": "Thanks for the feedback!",
+                        "type": "string"
                     },
                     "Text_start": {
-                        "const": "It'll help us to get better."
+                        "default": "It'll help us to get better.",
+                        "type": "string"
                     },
                     "Text_good": {
-                        "const": "We'll keep it up."
+                        "default": "We'll keep it up.",
+                        "type": "string"
                     },
                     "Text_bad": {
-                        "const": "We'll improve our service."
+                        "default": "We'll improve our service.",
+                        "type": "string"
                     },
                     "Comment_title_good": {
-                        "const": "What did you particularly enjoy?"
+                        "default": "What did you particularly enjoy?",
+                        "type": "string"
                     },
                     "Comment_title_bad": {
-                        "const": "Tell us what was wrong — we'll do everything to get better!"
+                        "default": "Tell us what was wrong — we'll do everything to get better!",
+                        "type": "string"
                     },
                     "Button_change_review": {
-                        "const": "Change the feedback"
+                        "default": "Change the feedback",
+                        "type": "string"
                     },
                     "Online": {
-                        "const": "Online"
+                        "default": "Online",
+                        "type": "string"
                     },
                     "Visited": {
-                        "const": "Last seen"
+                        "default": "Last seen",
+                        "type": "string"
                     }
                 },
                 "required": [

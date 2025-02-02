@@ -11,340 +11,452 @@
                 "type": "object",
                 "properties": {
                     "Number_keywords_better_ranks": {
-                        "const": "Keywords that advanced in ranks"
+                        "default": "Keywords that advanced in ranks",
+                        "type": "string"
                     },
                     "Number_keywords_same_ranks": {
-                        "const": "Keywords that didn't change ranks"
+                        "default": "Keywords that didn't change ranks",
+                        "type": "string"
                     },
                     "Number_keywords_drop_ranks": {
-                        "const": "Keywords that dropped in ranks"
+                        "default": "Keywords that dropped in ranks",
+                        "type": "string"
                     },
                     "Search_table": {
-                        "const": "Find in table"
+                        "default": "Find in table",
+                        "type": "string"
                     },
                     "Search_page": {
-                        "const": "Find on page"
+                        "default": "Find on page",
+                        "type": "string"
                     },
                     "Snippets": {
-                        "const": "Snippets"
+                        "default": "Snippets",
+                        "type": "string"
                     },
                     "Remove_results": {
-                        "const": "Delete all results for the applied date"
+                        "default": "Delete all results for the applied date",
+                        "type": "string"
                     },
                     "oneway_operation": {
-                        "const": "this action cannot be undone"
+                        "default": "this action cannot be undone",
+                        "type": "string"
                     },
                     "Proceed_deleting_ask": {
-                        "const": "Do you want to continue?"
+                        "default": "Do you want to continue?",
+                        "type": "string"
                     },
                     "Sort_by_target": {
-                        "const": "By target URL"
+                        "default": "By target URL",
+                        "type": "string"
                     },
                     "Sort_by_default": {
-                        "const": "Default settings"
+                        "default": "Default settings",
+                        "type": "string"
                     },
                     "Sort_by_relevant": {
-                        "const": "By ranked URL"
+                        "default": "By ranked URL",
+                        "type": "string"
                     },
                     "Sort_by_position_change": {
-                        "const": "Ranking dynamics over period"
+                        "default": "Ranking dynamics over period",
+                        "type": "string"
                     },
                     "Filter_by_tag": {
-                        "const": "Filter by tag"
+                        "default": "Filter by tag",
+                        "type": "string"
                     },
                     "Set_target_for_group": {
-                        "const": "Set target for group"
+                        "default": "Set target for group",
+                        "type": "string"
                     },
                     "Send_email": {
-                        "const": "Send to Email"
+                        "default": "Send to Email",
+                        "type": "string"
                     },
                     "Target_URL": {
-                        "const": "Target URL"
+                        "default": "Target URL",
+                        "type": "string"
                     },
                     "Rankings_updated_less_than_5minutes": {
-                        "const": "You updated keyword ranks less than 5 minutes ago"
+                        "default": "You updated keyword ranks less than 5 minutes ago",
+                        "type": "string"
                     },
                     "Add_keywords_locations_notice": {
-                        "const": "Add keywords and select locations<br> in project settings"
+                        "default": "Add keywords and select locations<br> in project settings",
+                        "type": "string"
                     },
                     "Tasks_processing_notice": {
-                        "const": "We're processing your tasks."
+                        "default": "We're processing your tasks.",
+                        "type": "string"
                     },
                     "Ranks_updating_notice": {
-                        "const": "We're updating your keyword rankings."
+                        "default": "We're updating your keyword rankings.",
+                        "type": "string"
                     },
                     "Updated": {
-                        "const": "Last update"
+                        "default": "Last update",
+                        "type": "string"
                     },
                     "Positions_snippets": {
-                        "const": "Rankings and snippets"
+                        "default": "Rankings and snippets",
+                        "type": "string"
                     },
                     "Period_last_7_days": {
-                        "const": "Last 7 days"
+                        "default": "Last 7 days",
+                        "type": "string"
                     },
                     "Period_last_10_days": {
-                        "const": "Last 10 days"
+                        "default": "Last 10 days",
+                        "type": "string"
                     },
                     "Period_last_30_days": {
-                        "const": "Last 30 days"
+                        "default": "Last 30 days",
+                        "type": "string"
                     },
                     "Any_dates": {
-                        "const": "Optional dates"
+                        "default": "Optional dates",
+                        "type": "string"
                     },
                     "Current_month": {
-                        "const": "This month"
+                        "default": "This month",
+                        "type": "string"
                     },
                     "Previous_month": {
-                        "const": "Previous month"
+                        "default": "Previous month",
+                        "type": "string"
                     },
                     "Last_year": {
-                        "const": "Last year"
+                        "default": "Last year",
+                        "type": "string"
                     },
                     "Random": {
-                        "const": "Random"
+                        "default": "Random",
+                        "type": "string"
                     },
                     "Period_regular": {
-                        "const": "Period"
+                        "default": "Period",
+                        "type": "string"
                     },
                     "Period_2_dates": {
-                        "const": "Two dates"
+                        "default": "Two dates",
+                        "type": "string"
                     },
                     "Period_2_margin_dates": {
-                        "const": "First and last date"
+                        "default": "First and last date",
+                        "type": "string"
                     },
                     "Period_2_latest_dates": {
-                        "const": "Two latest dates"
+                        "default": "Two latest dates",
+                        "type": "string"
                     },
                     "Period_first_date": {
-                        "const": "First date"
+                        "default": "First date",
+                        "type": "string"
                     },
                     "Period_last_date": {
-                        "const": "Last date"
+                        "default": "Last date",
+                        "type": "string"
                     },
                     "Period_1_date": {
-                        "const": "One date"
+                        "default": "One date",
+                        "type": "string"
                     },
                     "Period_only_updates": {
-                        "const": "Only Yandex updates"
+                        "default": "Only Yandex updates",
+                        "type": "string"
                     },
                     "Last_day_month": {
-                        "const": "Last day of month"
+                        "default": "Last day of month",
+                        "type": "string"
                     },
                     "Count_dates": {
-                        "const": "Max dates"
+                        "default": "Max dates",
+                        "type": "string"
                     },
                     "Painting_0": {
-                        "const": "Top, progress"
+                        "default": "Top, progress",
+                        "type": "string"
                     },
                     "Painting_1": {
-                        "const": "Improved, dropped"
+                        "default": "Improved, dropped",
+                        "type": "string"
                     },
                     "Report_after_tracking_30min_1": {
-                        "const": "After rank tracking"
+                        "default": "After rank tracking",
+                        "type": "string"
                     },
                     "Report_after_tracking_30min_2": {
-                        "const": "in 30 minutes"
+                        "default": "in 30 minutes",
+                        "type": "string"
                     },
                     "Display_week_average_ranking": {
-                        "const": "Week's average"
+                        "default": "Week's average",
+                        "type": "string"
                     },
                     "Summary": {
-                        "const": "Summary"
+                        "default": "Summary",
+                        "type": "string"
                     },
                     "Show_graphics": {
-                        "const": "Charts"
+                        "default": "Charts",
+                        "type": "string"
                     },
                     "Target_equal_relevant": {
-                        "const": "Target = Ranked"
+                        "default": "Target = Ranked",
+                        "type": "string"
                     },
                     "Off_display_group_names": {
-                        "const": "Hide group names"
+                        "default": "Hide group names",
+                        "type": "string"
                     },
                     "On_display_group_names": {
-                        "const": "Show group names"
+                        "default": "Show group names",
+                        "type": "string"
                     },
                     "Display_group_names_above": {
-                        "const": "Display names under groups"
+                        "default": "Display names under groups",
+                        "type": "string"
                     },
                     "Display_group_names_near": {
-                        "const": "Display names near groups"
+                        "default": "Display names near groups",
+                        "type": "string"
                     },
                     "Show_global_volume": {
-                        "const": "Display / Hide global search volume"
+                        "default": "Display / Hide global search volume",
+                        "type": "string"
                     },
                     "Remove_keyword": {
-                        "const": "Are you sure you want to delete a selected keyword?"
+                        "default": "Are you sure you want to delete a selected keyword?",
+                        "type": "string"
                     },
                     "Remove_history": {
-                        "const": "Wipe data for the selected date"
+                        "default": "Wipe data for the selected date",
+                        "type": "string"
                     },
                     "Show_competitors": {
-                        "const": "Competitors"
+                        "default": "Competitors",
+                        "type": "string"
                     },
                     "Hide_keywords_added_in_period": {
-                        "const": "Hide keywords added within the applied period"
+                        "default": "Hide keywords added within the applied period",
+                        "type": "string"
                     },
                     "Only_keywords_added_in_period": {
-                        "const": "Only keywords added within the applied period"
+                        "default": "Only keywords added within the applied period",
+                        "type": "string"
                     },
                     "Show_keywords_added_in_period": {
-                        "const": "All keywords"
+                        "default": "All keywords",
+                        "type": "string"
                     },
                     "and_save_snapshots": {
-                        "const": "snapshots collected"
+                        "default": "snapshots collected",
+                        "type": "string"
                     },
                     "Check_rankings": {
-                        "const": "Check rankings of project"
+                        "default": "Check rankings of project",
+                        "type": "string"
                     },
                     "Add_keywords_on_page": {
-                        "const": "Add keywords on the page"
+                        "default": "Add keywords on the page",
+                        "type": "string"
                     },
                     "Keywords": {
-                        "const": "Keywords"
+                        "default": "Keywords",
+                        "type": "string"
                     },
                     "Add_se_location_to_display_data": {
-                        "const": "Add search engine and location to display data"
+                        "default": "Add search engine and location to display data",
+                        "type": "string"
                     },
                     "Number_of_visits": {
-                        "const": "Number of visits"
+                        "default": "Number of visits",
+                        "type": "string"
                     },
                     "Matches_relevant_URL": {
-                        "const": "Matches ranked URL"
+                        "default": "Matches ranked URL",
+                        "type": "string"
                     },
                     "Not_Matches_relevant_URL": {
-                        "const": "Doesn't match ranked URL"
+                        "default": "Doesn't match ranked URL",
+                        "type": "string"
                     },
                     "Relevant_URL_change_history": {
-                        "const": "Ranked URL history"
+                        "default": "Ranked URL history",
+                        "type": "string"
                     },
                     "Relevant_URL_changes": {
-                        "const": "Ranked URL changes"
+                        "default": "Ranked URL changes",
+                        "type": "string"
                     },
                     "Download": {
-                        "const": "Download"
+                        "default": "Download",
+                        "type": "string"
                     },
                     "Date_order": {
-                        "const": "Date order"
+                        "default": "Date order",
+                        "type": "string"
                     },
                     "Chart_export": {
-                        "const": "Chart export"
+                        "default": "Chart export",
+                        "type": "string"
                     },
                     "Calendar_legend_ranks_checked": {
-                        "const": "Check"
+                        "default": "Check",
+                        "type": "string"
                     },
                     "Calendar_legend_yandex_update": {
-                        "const": "Yandex update"
+                        "default": "Yandex update",
+                        "type": "string"
                     },
                     "Sort_keywords": {
-                        "const": "Sort"
+                        "default": "Sort",
+                        "type": "string"
                     },
                     "Filter": {
-                        "const": "Filter"
+                        "default": "Filter",
+                        "type": "string"
                     },
                     "Not_filter": {
-                        "const": "No filter"
+                        "default": "No filter",
+                        "type": "string"
                     },
                     "Target_and_relevant_URL": {
-                        "const": "Target and ranked URL"
+                        "default": "Target and ranked URL",
+                        "type": "string"
                     },
                     "Matches": {
-                        "const": "Match"
+                        "default": "Match",
+                        "type": "string"
                     },
                     "Not_matches": {
-                        "const": "Don't match"
+                        "default": "Don't match",
+                        "type": "string"
                     },
                     "Status_not_defined": {
-                        "const": "Matching not defined"
+                        "default": "Matching not defined",
+                        "type": "string"
                     },
                     "Not_specified": {
-                        "const": "Target not specified"
+                        "default": "Target not specified",
+                        "type": "string"
                     },
                     "with_featured_snippets": {
-                        "const": "with Featured Snippets"
+                        "default": "with Featured Snippets",
+                        "type": "string"
                     },
                     "Pin_panel": {
-                        "const": "Pin panel"
+                        "default": "Pin panel",
+                        "type": "string"
                     },
                     "Pin_filters": {
-                        "const": "Pin filters"
+                        "default": "Pin filters",
+                        "type": "string"
                     },
                     "Pin_summary": {
-                        "const": "Pin summary"
+                        "default": "Pin summary",
+                        "type": "string"
                     },
                     "Customize_view": {
-                        "const": "Customize view"
+                        "default": "Customize view",
+                        "type": "string"
                     },
                     "Color_theme": {
-                        "const": "Color theme"
+                        "default": "Color theme",
+                        "type": "string"
                     },
                     "Highcharts_Export_PNG": {
-                        "const": "Download PNG image"
+                        "default": "Download PNG image",
+                        "type": "string"
                     },
                     "Highcharts_Export_JPEG": {
-                        "const": "Download JPEG image"
+                        "default": "Download JPEG image",
+                        "type": "string"
                     },
                     "Highcharts_Export_PDF": {
-                        "const": "Download PDF document"
+                        "default": "Download PDF document",
+                        "type": "string"
                     },
                     "Highcharts_Export_SVG": {
-                        "const": "Download SVG image"
+                        "default": "Download SVG image",
+                        "type": "string"
                     },
                     "Highcharts_Export_Print": {
-                        "const": "Print chart"
+                        "default": "Print chart",
+                        "type": "string"
                     },
                     "Highcharts_Export_CSV": {
-                        "const": "Download CSV"
+                        "default": "Download CSV",
+                        "type": "string"
                     },
                     "Summary_mode": {
-                        "const": "Summary mode"
+                        "default": "Summary mode",
+                        "type": "string"
                     },
                     "Default_summary_mode": {
-                        "const": "Default"
+                        "default": "Default",
+                        "type": "string"
                     },
                     "Compact_summary_mode": {
-                        "const": "Compact"
+                        "default": "Compact",
+                        "type": "string"
                     },
                     "Columns_summary_mode": {
-                        "const": "Columns"
+                        "default": "Columns",
+                        "type": "string"
                     },
                     "order": {
-                        "const": "keyword ranking report"
+                        "default": "keyword ranking report",
+                        "type": "string"
                     },
                     "Project_has_been_deleted": {
-                        "const": "Project has been deleted"
+                        "default": "Project has been deleted",
+                        "type": "string"
                     },
                     "Snippets_no_checked": {
-                        "const": "<b>Snippets</b> weren't collected on the selected dates."
+                        "default": "<b>Snippets</b> weren't collected on the selected dates.",
+                        "type": "string"
                     },
                     "Snippets_no_checking": {
-                        "const": "<b>Snippets</b> aren't being collected. Turn this feature on in the project's settings."
+                        "default": "<b>Snippets</b> aren't being collected. Turn this feature on in the project's settings.",
+                        "type": "string"
                     },
                     "Selected_time_is_hightload": {
-                        "const": "<p>Selected period is the hight load.</p><p>If you need to get results in the morning, we recommend setting time from <i></i> to <i></i> in the morning.</p>"
+                        "default": "<p>Selected period is the hight load.</p><p>If you need to get results in the morning, we recommend setting time from <i></i> to <i></i> in the morning.</p>",
+                        "type": "string"
                     },
                     "Delete_keyword": {
-                        "const": "Delete keyword"
+                        "default": "Delete keyword",
+                        "type": "string"
                     },
                     "Recheck": {
-                        "const": "Recheck keyword ranking"
+                        "default": "Recheck keyword ranking",
+                        "type": "string"
                     },
                     "Checking": {
-                        "const": "Tracking"
+                        "default": "Tracking",
+                        "type": "string"
                     },
                     "Recheck_finish": {
-                        "const": "Ranking successfully rechecked"
+                        "default": "Ranking successfully rechecked",
+                        "type": "string"
                     },
                     "No_target_status": {
-                        "const": "Target link not added"
+                        "default": "Target link not added",
+                        "type": "string"
                     },
                     "No_result_target_status": {
-                        "const": "Search results not found"
+                        "default": "Search results not found",
+                        "type": "string"
                     },
                     "Bad_target_status": {
-                        "const": "Result does not match a target link"
+                        "default": "Result does not match a target link",
+                        "type": "string"
                     },
                     "Good_target_status": {
-                        "const": "Result matches a target link"
+                        "default": "Result matches a target link",
+                        "type": "string"
                     }
                 },
                 "required": [

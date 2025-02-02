@@ -11,40 +11,52 @@
                 "type": "object",
                 "properties": {
                     "Checking_positions": {
-                        "const": "Rank Checking and Rank Tracking"
+                        "default": "Rank Checking and Rank Tracking",
+                        "type": "string"
                     },
                     "Collecting_top_sites": {
-                        "const": "SERP Top Checker"
+                        "default": "SERP Top Checker",
+                        "type": "string"
                     },
                     "Technical_analysis": {
-                        "const": "SEO Website Audit"
+                        "default": "SEO Website Audit",
+                        "type": "string"
                     },
                     "Tracking_changes": {
-                        "const": "Changer Tracker and Meta Tag Exractor"
+                        "default": "Changer Tracker and Meta Tag Exractor",
+                        "type": "string"
                     },
                     "Semantic_core_research": {
-                        "const": "Semantic Core Research"
+                        "default": "Semantic Core Research",
+                        "type": "string"
                     },
                     "Volume_checker": {
-                        "const": "Volume Checker"
+                        "default": "Volume Checker",
+                        "type": "string"
                     },
                     "Index_checker": {
-                        "const": "Index Checker"
+                        "default": "Index Checker",
+                        "type": "string"
                     },
                     "Sitemap_generator": {
-                        "const": "Sitemap generator"
+                        "default": "Sitemap generator",
+                        "type": "string"
                     },
                     "Bid_manager": {
-                        "const": "Bid Manager"
+                        "default": "Bid Manager",
+                        "type": "string"
                     },
                     "Updates_scanner": {
-                        "const": "Updates Scanner"
+                        "default": "Updates Scanner",
+                        "type": "string"
                     },
                     "Shortener_url": {
-                        "const": "URL Shortener"
+                        "default": "URL Shortener",
+                        "type": "string"
                     },
                     "Clustering_top": {
-                        "const": "Clustering by SERP Top"
+                        "default": "Clustering by SERP Top",
+                        "type": "string"
                     }
                 },
                 "required": [

@@ -11,25 +11,32 @@
                 "type": "object",
                 "properties": {
                     "Best_cases": {
-                        "const": "Best cases"
+                        "default": "Best cases",
+                        "type": "string"
                     },
                     "Main_competition": {
-                        "const": "Main competition 🏆"
+                        "default": "Main competition 🏆",
+                        "type": "string"
                     },
                     "Special_nominations": {
-                        "const": "Special nominations 🏆"
+                        "default": "Special nominations 🏆",
+                        "type": "string"
                     },
                     "Nomination": {
-                        "const": "Nomination"
+                        "default": "Nomination",
+                        "type": "string"
                     },
                     "Place": {
-                        "const": "Place"
+                        "default": "Place",
+                        "type": "string"
                     },
                     "Case_and_author": {
-                        "const": "Case and author"
+                        "default": "Case and author",
+                        "type": "string"
                     },
                     "place": {
-                        "const": "place"
+                        "default": "place",
+                        "type": "string"
                     }
                 },
                 "required": [
