@@ -7,12 +7,7 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        "I18n.Admin": {
-            /** @constant */
-            Warning_message: "";
-            /** @constant */
-            Warning_message_admin: "";
-        };
+        "I18n.Admin": Record<string, never>;
     };
     responses: never;
     parameters: never;

@@ -9,56 +9,8 @@
         "schemas": {
             "I18n.Actions": {
                 "type": "object",
-                "properties": {
-                    "Link_not_available": {
-                        "const": "This link is no longer active"
-                    },
-                    "User_blocked": {
-                        "const": "Your user is blocked"
-                    },
-                    "Report_subscribe_canceled": {
-                        "const": "You successfully unsubscribed from project reports"
-                    },
-                    "Report_subscribe_canceled1": {
-                        "const": "Subscription to"
-                    },
-                    "Report_subscribe_canceled2": {
-                        "const": "is cancelled successfully"
-                    },
-                    "Informer_unsubscribe_news": {
-                        "const": "unsubscribe from news"
-                    },
-                    "Informer_subscribe_balance": {
-                        "const": "unsubscribe from low balance alerts"
-                    },
-                    "Informer_unsubscribe_tickets": {
-                        "const": "unsubscribe from new ticket replies"
-                    },
-                    "Informer_unsubscribe_update": {
-                        "const": "unsubscribe from Yandex updates"
-                    },
-                    "Informer_unsubscribe_comments": {
-                        "const": "unsubscribe from new comments"
-                    },
-                    "Informer_unsubscribe_api": {
-                        "const": "unsubscribe from API updates"
-                    }
-                },
-                "required": [
-                    "Link_not_available",
-                    "User_blocked",
-                    "Report_subscribe_canceled",
-                    "Report_subscribe_canceled1",
-                    "Report_subscribe_canceled2",
-                    "Informer_unsubscribe_news",
-                    "Informer_subscribe_balance",
-                    "Informer_unsubscribe_tickets",
-                    "Informer_unsubscribe_update",
-                    "Informer_unsubscribe_comments",
-                    "Informer_unsubscribe_api",
-                    "Informer_unsubscribe_journal",
-                    "Informer_unsubscribe_academy_news"
-                ]
+                "properties": {},
+                "required": []
             }
         }
     }
