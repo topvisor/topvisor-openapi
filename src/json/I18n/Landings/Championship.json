@@ -9,7 +9,29 @@
         "schemas": {
             "I18n.Landings.Championship": {
                 "type": "object",
-                "properties": {},
+                "properties": {
+                    "Best_cases": {
+                        "const": "Best cases"
+                    },
+                    "Main_competition": {
+                        "const": "Main competition 🏆"
+                    },
+                    "Special_nominations": {
+                        "const": "Special nominations 🏆"
+                    },
+                    "Nomination": {
+                        "const": "Nomination"
+                    },
+                    "Place": {
+                        "const": "Place"
+                    },
+                    "Case_and_author": {
+                        "const": "Case and author"
+                    },
+                    "place": {
+                        "const": "place"
+                    }
+                },
                 "required": []
             }
         }

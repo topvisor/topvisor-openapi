@@ -9,7 +9,107 @@
         "schemas": {
             "I18n.Telegram": {
                 "type": "object",
-                "properties": {},
+                "properties": {
+                    "Panel_get_command_list": {
+                        "const": "Get list of commands"
+                    },
+                    "Panel_enable_notifications": {
+                        "const": "Turn on notifications"
+                    },
+                    "Panel_disable_notifications": {
+                        "const": "Turn off notifications"
+                    },
+                    "Panel_get_short_link": {
+                        "const": "Create short link"
+                    },
+                    "Panel_back": {
+                        "const": "Back"
+                    },
+                    "Panel_cancel": {
+                        "const": "Cancel"
+                    },
+                    "Panel_main_menu": {
+                        "const": "Main menu"
+                    },
+                    "Panel_select_lang": {
+                        "const": "Select language"
+                    },
+                    "Panel_eng": {
+                        "const": "English"
+                    },
+                    "Panel_rus": {
+                        "const": "Russian"
+                    },
+                    "Panel_i_subscribed": {
+                        "const": "Already subscribed 😎"
+                    },
+                    "Panel_subscribe": {
+                        "const": "Subscribe"
+                    },
+                    "Panel_open_materials": {
+                        "const": "Open materials 📚"
+                    },
+                    "Panel_library": {
+                        "const": "Open library"
+                    },
+                    "Message_chat_disabled": {
+                        "const": "Message not received. To contact Customer Care and read replies, type /start"
+                    },
+                    "Message_available_commands": {
+                        "const": "Commands that I understand:"
+                    },
+                    "Message_available_commands_help": {
+                        "const": "Get list of commands"
+                    },
+                    "Message_available_commands_start": {
+                        "const": "Turn on notifications"
+                    },
+                    "Message_available_commands_stop": {
+                        "const": "Turn off notifications"
+                    },
+                    "Message_available_commands_tpvsr": {
+                        "const": "Create short link"
+                    },
+                    "Message_start_text1": {
+                        "const": "Hi! I can send your questions to Customer Support and get replies."
+                    },
+                    "Message_start_text2": {
+                        "const": "To get a list of commands that I understand, type /help. To contact support, send your question in the chat."
+                    },
+                    "Message_start_apometer_text": {
+                        "const": ""
+                    },
+                    "Message_stop_text": {
+                        "const": "Notifications have been turned off. I'll stop sending you alerts and Customer Support replies."
+                    },
+                    "Message_pair_done1": {
+                        "const": "Your Telegram already linked to the account"
+                    },
+                    "Message_pair_done2": {
+                        "const": "To remove account, type /unpair"
+                    },
+                    "Message_unpair": {
+                        "const": "Account removed."
+                    },
+                    "Message_tpvsr": {
+                        "const": "Send me a URL to shorten."
+                    },
+                    "Message_tpvsr_cancel": {
+                        "const": "Type /cancel to step backwards."
+                    },
+                    "Message_tpvsr_failure": {
+                        "const": "Link not shortened"
+                    },
+                    "Message_tpvsr_cancel_done": {
+                        "const": "Link shortening canceled."
+                    },
+                    "Message_join_done1": {
+                        "const": "Account"
+                    },
+                    "Message_join_done2": {
+                        "const": "successfully linked."
+                    }
+                },
                 "required": []
             }
         }

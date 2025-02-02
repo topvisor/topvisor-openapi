@@ -7,7 +7,32 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        "I18n.Pages": Record<string, never>;
+        "I18n.Pages": {
+            /** @constant */
+            Checking_positions?: "Rank Checking and Rank Tracking";
+            /** @constant */
+            Collecting_top_sites?: "SERP Top Checker";
+            /** @constant */
+            Technical_analysis?: "SEO Website Audit";
+            /** @constant */
+            Tracking_changes?: "Changer Tracker and Meta Tag Exractor";
+            /** @constant */
+            Semantic_core_research?: "Semantic Core Research";
+            /** @constant */
+            Volume_checker?: "Volume Checker";
+            /** @constant */
+            Index_checker?: "Index Checker";
+            /** @constant */
+            Sitemap_generator?: "Sitemap generator";
+            /** @constant */
+            Bid_manager?: "Bid Manager";
+            /** @constant */
+            Updates_scanner?: "Updates Scanner";
+            /** @constant */
+            Shortener_url?: "URL Shortener";
+            /** @constant */
+            Clustering_top?: "Clustering by SERP Top";
+        };
     };
     responses: never;
     parameters: never;

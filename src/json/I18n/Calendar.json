@@ -9,7 +9,59 @@
         "schemas": {
             "I18n.Calendar": {
                 "type": "object",
-                "properties": {},
+                "properties": {
+                    "Dw_1": {
+                        "const": "Mo"
+                    },
+                    "Dw_2": {
+                        "const": "Tu"
+                    },
+                    "Dw_3": {
+                        "const": "We"
+                    },
+                    "Dw_4": {
+                        "const": "Th"
+                    },
+                    "Dw_5": {
+                        "const": "Fr"
+                    },
+                    "Dw_6": {
+                        "const": "Sa"
+                    },
+                    "Dw_7": {
+                        "const": "Su"
+                    },
+                    "Day_of_week_1": {
+                        "const": "Monday"
+                    },
+                    "Day_of_week_2": {
+                        "const": "Tuesday"
+                    },
+                    "Day_of_week_3": {
+                        "const": "Wednesday"
+                    },
+                    "Day_of_week_4": {
+                        "const": "Thursday"
+                    },
+                    "Day_of_week_5": {
+                        "const": "Friday"
+                    },
+                    "Day_of_week_6": {
+                        "const": "Saturday"
+                    },
+                    "Day_of_week_7": {
+                        "const": "Sunday"
+                    },
+                    "months": {
+                        "const": "|january|february|march|april|may|june|july|august|september|october|november|december"
+                    },
+                    "of_months": {
+                        "const": "|january|february|march|april|may|june|july|august|september|october|november|december"
+                    },
+                    "in_months": {
+                        "const": "|january|february|march|april|may|june|july|august|september|october|november|december"
+                    }
+                },
                 "required": []
             }
         }

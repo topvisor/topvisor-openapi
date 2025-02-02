@@ -7,7 +7,34 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        "I18n.Landings.Price": Record<string, never>;
+        "I18n.Landings.Price": {
+            /** @constant */
+            Depth?: "depth";
+            /** @constant */
+            of_results?: "results";
+            /** @constant */
+            of_keywords?: "keywords";
+            /** @constant */
+            of_pages?: "URLs";
+            /** @constant */
+            up_to?: "up to";
+            /** @constant */
+            from?: "from";
+            /** @constant */
+            Without_discount?: "No discount";
+            /** @constant */
+            What_is_a_tariff?: "What is a pricing plan (tariff)?";
+            /** @constant */
+            Rank_tracker_and_collecting_TOP?: "Rank Tracking and SERP Top";
+            /** @constant */
+            Semantics?: "Semantics";
+            /** @constant */
+            Technical_Seo?: "Technical SEO";
+            /** @constant */
+            Yandex_direct?: "Yandex Direct";
+            /** @constant */
+            Account?: "Account";
+        };
     };
     responses: never;
     parameters: never;

@@ -9,7 +9,11 @@
         "schemas": {
             "I18n.Tv": {
                 "type": "object",
-                "properties": {},
+                "properties": {
+                    "TV": {
+                        "const": "ТV"
+                    }
+                },
                 "required": []
             }
         }

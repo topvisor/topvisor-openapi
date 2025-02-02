@@ -9,7 +9,41 @@
         "schemas": {
             "I18n.Api": {
                 "type": "object",
-                "properties": {},
+                "properties": {
+                    "View_in_API_explorer": {
+                        "const": "View in API explorer"
+                    },
+                    "Add_parameter": {
+                        "const": "Add parameter"
+                    },
+                    "Add_parameter_array": {
+                        "const": "Add parameter (array)"
+                    },
+                    "Select_data_to_return": {
+                        "const": "Select data to return (fields)"
+                    },
+                    "Add_filter": {
+                        "const": "Add a filter (filters item)"
+                    },
+                    "Add_sorting": {
+                        "const": "Add sorting (orders item)"
+                    },
+                    "Set_limit": {
+                        "const": "Set limit"
+                    },
+                    "Set_offset": {
+                        "const": "Set offset"
+                    },
+                    "Developer_documentation": {
+                        "const": "API Documentation"
+                    },
+                    "Ask_questions_get_answers": {
+                        "const": "Search documentation"
+                    },
+                    "PHP_SDK_example_githab": {
+                        "const": "PHP SDK example on GitHub"
+                    }
+                },
                 "required": []
             }
         }

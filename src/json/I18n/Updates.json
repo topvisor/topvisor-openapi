@@ -9,7 +9,65 @@
         "schemas": {
             "I18n.Updates": {
                 "type": "object",
-                "properties": {},
+                "properties": {
+                    "SERP_update_score": {
+                        "const": "SERP update score"
+                    },
+                    "confirmed_Yandex": {
+                        "const": "update confirmed by Yandex"
+                    },
+                    "Calendar": {
+                        "const": "updates calendar"
+                    },
+                    "Informer": {
+                        "const": "Website informer"
+                    },
+                    "Yandex_search_base_update": {
+                        "const": "Yandex search base update"
+                    },
+                    "SERP_changes": {
+                        "const": "SERP change"
+                    },
+                    "Text_update": {
+                        "const": " Text update: index <span class=\"top-only-pc\">updated</span> on "
+                    },
+                    "Index_updated": {
+                        "const": "Index updated on "
+                    },
+                    "Comments": {
+                        "const": "Comments"
+                    },
+                    "Add_comment": {
+                        "const": "Add comment"
+                    },
+                    "Sign_in_to_leave_comments": {
+                        "const": "<a href=\".\" class=\"btn\">Sign in</a> to leave comments"
+                    },
+                    "Subscribe": {
+                        "const": "Subscribe"
+                    },
+                    "points": {
+                        "const": "points"
+                    },
+                    "Update": {
+                        "const": "Update"
+                    },
+                    "Updates_calendar": {
+                        "const": "Updates calendar"
+                    },
+                    "Yandex_update": {
+                        "const": "Yandex update"
+                    },
+                    "Yandex_text_update": {
+                        "const": "Yandex text update"
+                    },
+                    "Yandex_SERP_update": {
+                        "const": "Yandex SERP update"
+                    },
+                    "Index_updated_on": {
+                        "const": "Index updated on"
+                    }
+                },
                 "required": []
             }
         }

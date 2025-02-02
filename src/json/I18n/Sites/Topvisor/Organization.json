@@ -9,7 +9,29 @@
         "schemas": {
             "I18n.Sites.Topvisor.Organization": {
                 "type": "object",
-                "properties": {},
+                "properties": {
+                    "Description": {
+                        "const": "All you need for SEO on one platform. Rank tracking and volume checking, website audit, keyword research. Cluster keywords by Top and track website changes. We make SEO easy for SEO specialists and digital marketers."
+                    },
+                    "Street_address": {
+                        "const": "Voronezhskaya st., 5A, Prisma office building, office 242"
+                    },
+                    "Address_locality": {
+                        "const": "Saint Petersburg"
+                    },
+                    "Address_region": {
+                        "const": "Leningrad region"
+                    },
+                    "Address_country": {
+                        "const": "Russia"
+                    },
+                    "Contact_type": {
+                        "const": "Sales"
+                    },
+                    "General_manager": {
+                        "const": "Pustovoyt Denis Anatolievich"
+                    }
+                },
                 "required": []
             }
         }

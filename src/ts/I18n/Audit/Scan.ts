@@ -7,7 +7,194 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        "I18n.Audit.Scan": Record<string, never>;
+        "I18n.Audit.Scan": {
+            /** @constant */
+            Settings?: "Audit settings";
+            /** @constant */
+            Please_add_urls?: "Please, add urls for checking";
+            /** @constant */
+            bar?: "bar";
+            /** @constant */
+            menu?: {
+                log: "Scan Log";
+                summary: "Summary";
+                pages: "Pages";
+                links: "Links";
+                images: "Images";
+                js: "JavaScript";
+                css: "CSS";
+                "domain/common": "Common";
+                "pages/summary": "Pages";
+                "pages/indexing": "Indexing";
+                "pages/content": "Content";
+                "pages/schema": "Structured Data";
+                "pages/webVitals": "Performance (Core Web Vitals)";
+                "pages/og": "Open Graph";
+                "links/links": "Links";
+                "images/images": "Images";
+                "js/js": "JavaScript";
+                "css/css": "CSS";
+            };
+            /** @constant */
+            checkInfo?: {
+                checking: "Checking...";
+                time_start: "Started time";
+                time_finish: "Finished time";
+                "DURATION()": "Duration";
+                count_pages: "Pages in audit";
+                count_all: "Count finished";
+                robot_step: "Current step";
+                robot_step_next: "Next step";
+            };
+            /** @constant */
+            checkInfoHints?: {
+                time_start: "";
+                time_finish: "";
+                "DURATION()": "";
+                count_all: "";
+                step: "";
+                step_next: "";
+            };
+            /** @constant */
+            checkSteps?: {
+                genTasks: "Gen Tasks";
+                auditSitemap: "Sitemap";
+                auditPages: "Check pages";
+                auditImages: "Check images";
+                auditLinks: "Check links";
+                auditJS: "Check JS";
+                auditCSS: "Check CSS";
+                auditAnalyze: "Analyze";
+                save: "Saving";
+                closeTask: "Finishing";
+            };
+            /** @constant */
+            summaryCharts?: {
+                count_pages: "Number of pages";
+                count_problems: "Number of problems";
+                count_3xx: "3XX";
+                count_4xx: "4XX";
+                count_5xx: "5XX";
+            };
+            /** @constant */
+            Already_started?: "Audit already started";
+            /** @constant */
+            FilterTime2?: "Filter, until the time:";
+            /** @constant */
+            HTTPCodeHundred0?: "No response";
+            /** @constant */
+            FieldContent?: "Text (content)";
+            /** @constant */
+            FieldTitle?: "Text (title)";
+            /** @constant */
+            FieldBroken?: "«Broken»";
+            /** @constant */
+            FieldCount?: "Pages";
+            /** @constant */
+            FieldHTTPCodes?: "Status";
+            /** @constant */
+            FieldTitleDbl?: "Duplicates\nTitle";
+            /** @constant */
+            FieldDescriptionDbl?: "Duplicates\nDescription";
+            /** @constant */
+            FieldBacklinksInnerCount?: "Back Links\ninner";
+            /** @constant */
+            FieldTextLength?: "Text length";
+            /** @constant */
+            FieldCompression?: "Compress";
+            /** @constant */
+            FieldCacheType?: "Cache type";
+            /** @constant */
+            FieldCacheTime?: "Cache time";
+            /** @constant */
+            FieldCacheValidator?: "Cache validator";
+            /** @constant */
+            FieldRobotsTXTBlocked?: "Disallow\nrobots.txt";
+            /** @constant */
+            FieldCheckRobotsTXTAllowed?: "Allow\nrobots.txt";
+            /** @constant */
+            FieldSitemapXMLMention?: "Exists\nsitemap.xml";
+            /** @constant */
+            FieldLinksCount?: "Links";
+            /** @constant */
+            FieldTLSVersion?: "TLS version";
+            /** @constant */
+            FieldCacheable?: "Cacheable";
+            /** @constant */
+            FieldAlt?: "Alt";
+            /** @constant */
+            FieldSize?: "Size";
+            /** @constant */
+            FieldExtension?: "Extension";
+            /** @constant */
+            FieldContentType?: "Content-Type";
+            /** @constant */
+            FieldModernFormat?: "Modern Format";
+            /** @constant */
+            FieldMinified?: "Minified";
+            /** @constant */
+            FieldRenderBlocking?: "Render blocking";
+            /** @constant */
+            FieldType?: "Type";
+            /** @constant */
+            FieldLoadingTime?: "Loading time";
+            /** @constant */
+            FilterSignalNone?: "All checks";
+            /** @constant */
+            FilterSignalWarnings?: "With warnings";
+            /** @constant */
+            FilterSignalErrors?: "With erors";
+            /** @constant */
+            FilterSignalSignals?: "All problems";
+            /** @constant */
+            DialogPagesWithTitleDbl?: "Pages with duplicates Title";
+            /** @constant */
+            DialogPagesWithDescriptionDbl?: "Pages with duplicates Desccription";
+            /** @constant */
+            DialogPagesWithLink?: "Pages with link";
+            /** @constant */
+            DialogPagesWithImage?: "Pages with image";
+            /** @constant */
+            DialogPagesWithJS?: "Pages with JavaScript";
+            /** @constant */
+            DialogPagesWithCSS?: "Pages with CSS";
+            /** @constant */
+            DialogSummaryPage?: "Summary Page";
+            /** @constant */
+            DialogResources_links?: "Links on page";
+            /** @constant */
+            DialogResources_images?: "Images on page";
+            /** @constant */
+            DialogResources_css?: "CSS on page";
+            /** @constant */
+            DialogResources_js?: "JS on page";
+            /** @constant */
+            Category?: "Category";
+            /** @constant */
+            WhatIsIt?: "What is it?";
+            /** @constant */
+            HowToResolveIt?: "How to resolve it?";
+            /** @constant */
+            Warnings?: "Warnings";
+            /** @constant */
+            Errors?: "Errors";
+            /** @constant */
+            Problems?: "All problems";
+            /** @constant */
+            Hint_not_urls_text?: "Add URLs manually or enable website crawling to perform Website Audit.<br>🤖 <a href=\"/website-auditor/\" target=\"_blank\">What Website Audit shows →</a>";
+            /** @constant */
+            Hint_not_urls_btn?: "Add URLs";
+            /** @constant */
+            Hint_not_checks_text?: "You've never launched Website Audit in this project.<br>🤖 <a href=\"/website-auditor/\" target=\"_blank\">What Website Audit shows →</a>";
+            /** @constant */
+            Hint_not_checks_btn?: "Launch Website Audit";
+            /** @constant */
+            Hint_not_PageSpeed_Insights_API_key_1?: "You didn't specify PageSpeed Insights API&#8209;key when launching Website Audit. Add API-key";
+            /** @constant */
+            Hint_not_PageSpeed_Insights_API_key_2?: "in Audit Settings";
+            /** @constant */
+            Hint_not_PageSpeed_Insights_API_key_3?: "and launch Audit once more.";
+        };
     };
     responses: never;
     parameters: never;

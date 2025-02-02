@@ -9,7 +9,89 @@
         "schemas": {
             "I18n.Email": {
                 "type": "object",
-                "properties": {},
+                "properties": {
+                    "User_registration_confirm": {
+                        "const": "Confirm your registration"
+                    },
+                    "User_accept_email_title": {
+                        "const": "Account details"
+                    },
+                    "user_accept_email_title_suffix_recommendations": {
+                        "const": ""
+                    },
+                    "User_PWD_msg_title2": {
+                        "const": "Password successfully changed"
+                    },
+                    "User_restore_access": {
+                        "const": "Recovering your password"
+                    },
+                    "User_project_access": {
+                        "const": "Access granted"
+                    },
+                    "User_registration_invite_mail_title": {
+                        "const": "Your friend invites you to sign up and get a double welcome bonus! 🤩"
+                    },
+                    "User_change_confirm": {
+                        "const": "Confirm your email"
+                    },
+                    "User_email_changed_msg": {
+                        "const": "Your email has been changed"
+                    },
+                    "User_projects_rights_title": {
+                        "const": "You have received access to the project."
+                    },
+                    "User_projects_changeOwner_title": {
+                        "const": "Confirm project transfer."
+                    },
+                    "Integration_expires": {
+                        "const": "Update integration key"
+                    },
+                    "Integration_has_expired1": {
+                        "const": "Integration"
+                    },
+                    "Integration_has_expired2": {
+                        "const": "integration key has expired."
+                    },
+                    "Integration_access_error": {
+                        "const": "integration error"
+                    },
+                    "Project_report": {
+                        "const": "Report: Project dynamics."
+                    },
+                    "Indexing_informer_title": {
+                        "const": "Index status: new changes detected."
+                    },
+                    "Watcher_informer_title": {
+                        "const": "Website watcher: new changes detected."
+                    },
+                    "Sitemap_changes_to_sitemap_email": {
+                        "const": "Sitemap: new changes detected."
+                    },
+                    "Audit_informer_title": {
+                        "const": "Website audit is completed."
+                    },
+                    "Total_indexed": {
+                        "const": "Total indexed"
+                    },
+                    "Dropped_from_index": {
+                        "const": "Dropped from index"
+                    },
+                    "Got_indexed": {
+                        "const": "New indexed"
+                    },
+                    "Tariff_due_to_expire": {
+                        "const": "Do not forget to renew your subscription"
+                    },
+                    "Dogovor": {
+                        "const": "User agreement"
+                    },
+                    "Ur_balance": {
+                        "const": "Balance is topped up"
+                    },
+                    "Payment_received": {
+                        "const": "Pyment has been received"
+                    }
+                },
                 "required": []
             }
         }

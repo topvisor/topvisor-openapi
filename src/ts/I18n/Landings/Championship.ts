@@ -7,7 +7,22 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        "I18n.Landings.Championship": Record<string, never>;
+        "I18n.Landings.Championship": {
+            /** @constant */
+            Best_cases?: "Best cases";
+            /** @constant */
+            Main_competition?: "Main competition 🏆";
+            /** @constant */
+            Special_nominations?: "Special nominations 🏆";
+            /** @constant */
+            Nomination?: "Nomination";
+            /** @constant */
+            Place?: "Place";
+            /** @constant */
+            Case_and_author?: "Case and author";
+            /** @constant */
+            place?: "place";
+        };
     };
     responses: never;
     parameters: never;
