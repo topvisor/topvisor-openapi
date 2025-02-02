@@ -8,64 +8,64 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         "I18n.Informer": {
-            /** @default Balance */
-            readonly Type_balance: string;
-            /** @default Sevice news */
-            readonly Type_news: string;
-            /** @default Tickets */
-            readonly Type_tickets: string;
-            /** @default Yandex update */
-            readonly Type_yandex_update: string;
-            /** @default New comment alerts */
-            readonly Type_comments: string;
-            /** @default API updates */
-            readonly Type_api: string;
-            /** @default Unsubscribe */
-            readonly Unsubscribe: string;
-            /** @default Enter title and message text */
-            readonly Enter_title_and_text: string;
-            /** @default Emailing */
-            readonly Log_text: string;
-            /** @default only for subscribers */
-            readonly Log_text2: string;
-            /** @default You received a new reply to your ticket */
-            readonly Tickets_title: string;
-            /** @default Account balance alert */
-            readonly Balance_title: string;
-            /** @default Yandex search results updated */
-            readonly Update_title: string;
-            /** @default You comment has a new reply! Join the discussion 😎 */
-            readonly Comments_title: string;
-            /** @default No notifications yet */
-            readonly No_new_notifications: string;
-            /** @default clear all */
-            readonly clear_all: string;
-            /** @default Notifications */
-            readonly Notifications: string;
-            /** @default Email */
-            readonly Email: string;
-            /** @default Push */
-            readonly Push: string;
-            /** @default Block */
-            readonly Block: string;
-            /** @default Alerts */
-            readonly Informer: string;
-            /** @default Select all */
-            readonly Select_all: string;
-            /** @default Clear all */
-            readonly Clear_all: string;
-            /** @default Comment replies */
-            readonly Comment_replies: string;
-            /** @default  replied to you */
-            readonly replied_to_you: string;
-            /** @default in comments on the post */
-            readonly in_comments_on_the_post: string;
-            /** @default Email delivery has failed to this recipient */
-            readonly Email_delivery_failure: string;
-            /** @default unsubscribed from reports of projects */
-            readonly email_unsubscribed_from_reports: string;
-            /** @default You unsubscribed from emails to */
-            readonly You_unsubscribed_from_emails: string;
+            /** @constant */
+            Type_balance: "Balance";
+            /** @constant */
+            Type_news: "Sevice news";
+            /** @constant */
+            Type_tickets: "Tickets";
+            /** @constant */
+            Type_yandex_update: "Yandex update";
+            /** @constant */
+            Type_comments: "New comment alerts";
+            /** @constant */
+            Type_api: "API updates";
+            /** @constant */
+            Unsubscribe: "Unsubscribe";
+            /** @constant */
+            Enter_title_and_text: "Enter title and message text";
+            /** @constant */
+            Log_text: "Emailing";
+            /** @constant */
+            Log_text2: "only for subscribers";
+            /** @constant */
+            Tickets_title: "You received a new reply to your ticket";
+            /** @constant */
+            Balance_title: "Account balance alert";
+            /** @constant */
+            Update_title: "Yandex search results updated";
+            /** @constant */
+            Comments_title: "You comment has a new reply! Join the discussion 😎";
+            /** @constant */
+            No_new_notifications: "No notifications yet";
+            /** @constant */
+            clear_all: "clear all";
+            /** @constant */
+            Notifications: "Notifications";
+            /** @constant */
+            Email: "Email";
+            /** @constant */
+            Push: "Push";
+            /** @constant */
+            Block: "Block";
+            /** @constant */
+            Informer: "Alerts";
+            /** @constant */
+            Select_all: "Select all";
+            /** @constant */
+            Clear_all: "Clear all";
+            /** @constant */
+            Comment_replies: "Comment replies";
+            /** @constant */
+            replied_to_you: " replied to you";
+            /** @constant */
+            in_comments_on_the_post: "in comments on the post";
+            /** @constant */
+            Email_delivery_failure: "Email delivery has failed to this recipient";
+            /** @constant */
+            email_unsubscribed_from_reports: "unsubscribed from reports of projects";
+            /** @constant */
+            You_unsubscribed_from_emails: "You unsubscribed from emails to";
         };
     };
     responses: never;

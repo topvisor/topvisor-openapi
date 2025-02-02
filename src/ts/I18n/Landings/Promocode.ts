@@ -8,20 +8,20 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         "I18n.Landings.Promocode": {
-            /** @default Topvior is online platform for SEO specialists and marketers with all essential tools for analyzing website's visibility in search engines. */
-            readonly Description: string;
-            /** @default Enter promocode */
-            readonly OpenGraph_title: string;
-            /** @default Enter promocode */
-            readonly Enter_promocode: string;
-            /** @default Promocode */
-            readonly Promocode: string;
-            /** @default By pressing Sign up you accept */
-            readonly By_pressing_sign_up_you_accept: string;
-            /** @default Terms and Conditions */
-            readonly Terms_and_conditions: string;
-            /** @default Privacy Policy */
-            readonly Privacy_policy: string;
+            /** @constant */
+            Description: "Topvior is online platform for SEO specialists and marketers with all essential tools for analyzing website's visibility in search engines.";
+            /** @constant */
+            OpenGraph_title: "Enter promocode";
+            /** @constant */
+            Enter_promocode: "Enter promocode";
+            /** @constant */
+            Promocode: "Promocode";
+            /** @constant */
+            By_pressing_sign_up_you_accept: "By pressing Sign up you accept";
+            /** @constant */
+            Terms_and_conditions: "Terms and Conditions";
+            /** @constant */
+            Privacy_policy: "Privacy Policy";
         };
     };
     responses: never;

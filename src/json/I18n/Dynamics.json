@@ -11,564 +11,340 @@
                 "type": "object",
                 "properties": {
                     "Number_keywords_better_ranks": {
-                        "default": "Keywords that advanced in ranks",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Keywords that advanced in ranks"
                     },
                     "Number_keywords_same_ranks": {
-                        "default": "Keywords that didn't change ranks",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Keywords that didn't change ranks"
                     },
                     "Number_keywords_drop_ranks": {
-                        "default": "Keywords that dropped in ranks",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Keywords that dropped in ranks"
                     },
                     "Search_table": {
-                        "default": "Find in table",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Find in table"
                     },
                     "Search_page": {
-                        "default": "Find on page",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Find on page"
                     },
                     "Snippets": {
-                        "default": "Snippets",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Snippets"
                     },
                     "Remove_results": {
-                        "default": "Delete all results for the applied date",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Delete all results for the applied date"
                     },
                     "oneway_operation": {
-                        "default": "this action cannot be undone",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "this action cannot be undone"
                     },
                     "Proceed_deleting_ask": {
-                        "default": "Do you want to continue?",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Do you want to continue?"
                     },
                     "Sort_by_target": {
-                        "default": "By target URL",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "By target URL"
                     },
                     "Sort_by_default": {
-                        "default": "Default settings",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Default settings"
                     },
                     "Sort_by_relevant": {
-                        "default": "By ranked URL",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "By ranked URL"
                     },
                     "Sort_by_position_change": {
-                        "default": "Ranking dynamics over period",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Ranking dynamics over period"
                     },
                     "Filter_by_tag": {
-                        "default": "Filter by tag",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Filter by tag"
                     },
                     "Set_target_for_group": {
-                        "default": "Set target for group",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Set target for group"
                     },
                     "Send_email": {
-                        "default": "Send to Email",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Send to Email"
                     },
                     "Target_URL": {
-                        "default": "Target URL",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Target URL"
                     },
                     "Rankings_updated_less_than_5minutes": {
-                        "default": "You updated keyword ranks less than 5 minutes ago",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "You updated keyword ranks less than 5 minutes ago"
                     },
                     "Add_keywords_locations_notice": {
-                        "default": "Add keywords and select locations<br> in project settings",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Add keywords and select locations<br> in project settings"
                     },
                     "Tasks_processing_notice": {
-                        "default": "We're processing your tasks.",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "We're processing your tasks."
                     },
                     "Ranks_updating_notice": {
-                        "default": "We're updating your keyword rankings.",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "We're updating your keyword rankings."
                     },
                     "Updated": {
-                        "default": "Last update",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Last update"
                     },
                     "Positions_snippets": {
-                        "default": "Rankings and snippets",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Rankings and snippets"
                     },
                     "Period_last_7_days": {
-                        "default": "Last 7 days",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Last 7 days"
                     },
                     "Period_last_10_days": {
-                        "default": "Last 10 days",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Last 10 days"
                     },
                     "Period_last_30_days": {
-                        "default": "Last 30 days",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Last 30 days"
                     },
                     "Any_dates": {
-                        "default": "Optional dates",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Optional dates"
                     },
                     "Current_month": {
-                        "default": "This month",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "This month"
                     },
                     "Previous_month": {
-                        "default": "Previous month",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Previous month"
                     },
                     "Last_year": {
-                        "default": "Last year",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Last year"
                     },
                     "Random": {
-                        "default": "Random",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Random"
                     },
                     "Period_regular": {
-                        "default": "Period",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Period"
                     },
                     "Period_2_dates": {
-                        "default": "Two dates",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Two dates"
                     },
                     "Period_2_margin_dates": {
-                        "default": "First and last date",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "First and last date"
                     },
                     "Period_2_latest_dates": {
-                        "default": "Two latest dates",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Two latest dates"
                     },
                     "Period_first_date": {
-                        "default": "First date",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "First date"
                     },
                     "Period_last_date": {
-                        "default": "Last date",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Last date"
                     },
                     "Period_1_date": {
-                        "default": "One date",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "One date"
                     },
                     "Period_only_updates": {
-                        "default": "Only Yandex updates",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Only Yandex updates"
                     },
                     "Last_day_month": {
-                        "default": "Last day of month",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Last day of month"
                     },
                     "Count_dates": {
-                        "default": "Max dates",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Max dates"
                     },
                     "Painting_0": {
-                        "default": "Top, progress",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Top, progress"
                     },
                     "Painting_1": {
-                        "default": "Improved, dropped",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Improved, dropped"
                     },
                     "Report_after_tracking_30min_1": {
-                        "default": "After rank tracking",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "After rank tracking"
                     },
                     "Report_after_tracking_30min_2": {
-                        "default": "in 30 minutes",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "in 30 minutes"
                     },
                     "Display_week_average_ranking": {
-                        "default": "Week's average",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Week's average"
                     },
                     "Summary": {
-                        "default": "Summary",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Summary"
                     },
                     "Show_graphics": {
-                        "default": "Charts",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Charts"
                     },
                     "Target_equal_relevant": {
-                        "default": "Target = Ranked",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Target = Ranked"
                     },
                     "Off_display_group_names": {
-                        "default": "Hide group names",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Hide group names"
                     },
                     "On_display_group_names": {
-                        "default": "Show group names",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Show group names"
                     },
                     "Display_group_names_above": {
-                        "default": "Display names under groups",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Display names under groups"
                     },
                     "Display_group_names_near": {
-                        "default": "Display names near groups",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Display names near groups"
                     },
                     "Show_global_volume": {
-                        "default": "Display / Hide global search volume",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Display / Hide global search volume"
                     },
                     "Remove_keyword": {
-                        "default": "Are you sure you want to delete a selected keyword?",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Are you sure you want to delete a selected keyword?"
                     },
                     "Remove_history": {
-                        "default": "Wipe data for the selected date",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Wipe data for the selected date"
                     },
                     "Show_competitors": {
-                        "default": "Competitors",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Competitors"
                     },
                     "Hide_keywords_added_in_period": {
-                        "default": "Hide keywords added within the applied period",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Hide keywords added within the applied period"
                     },
                     "Only_keywords_added_in_period": {
-                        "default": "Only keywords added within the applied period",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Only keywords added within the applied period"
                     },
                     "Show_keywords_added_in_period": {
-                        "default": "All keywords",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "All keywords"
                     },
                     "and_save_snapshots": {
-                        "default": "snapshots collected",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "snapshots collected"
                     },
                     "Check_rankings": {
-                        "default": "Check rankings of project",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Check rankings of project"
                     },
                     "Add_keywords_on_page": {
-                        "default": "Add keywords on the page",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Add keywords on the page"
                     },
                     "Keywords": {
-                        "default": "Keywords",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Keywords"
                     },
                     "Add_se_location_to_display_data": {
-                        "default": "Add search engine and location to display data",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Add search engine and location to display data"
                     },
                     "Number_of_visits": {
-                        "default": "Number of visits",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Number of visits"
                     },
                     "Matches_relevant_URL": {
-                        "default": "Matches ranked URL",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Matches ranked URL"
                     },
                     "Not_Matches_relevant_URL": {
-                        "default": "Doesn't match ranked URL",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Doesn't match ranked URL"
                     },
                     "Relevant_URL_change_history": {
-                        "default": "Ranked URL history",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Ranked URL history"
                     },
                     "Relevant_URL_changes": {
-                        "default": "Ranked URL changes",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Ranked URL changes"
                     },
                     "Download": {
-                        "default": "Download",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Download"
                     },
                     "Date_order": {
-                        "default": "Date order",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Date order"
                     },
                     "Chart_export": {
-                        "default": "Chart export",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Chart export"
                     },
                     "Calendar_legend_ranks_checked": {
-                        "default": "Check",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Check"
                     },
                     "Calendar_legend_yandex_update": {
-                        "default": "Yandex update",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Yandex update"
                     },
                     "Sort_keywords": {
-                        "default": "Sort",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Sort"
                     },
                     "Filter": {
-                        "default": "Filter",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Filter"
                     },
                     "Not_filter": {
-                        "default": "No filter",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "No filter"
                     },
                     "Target_and_relevant_URL": {
-                        "default": "Target and ranked URL",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Target and ranked URL"
                     },
                     "Matches": {
-                        "default": "Match",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Match"
                     },
                     "Not_matches": {
-                        "default": "Don't match",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Don't match"
                     },
                     "Status_not_defined": {
-                        "default": "Matching not defined",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Matching not defined"
                     },
                     "Not_specified": {
-                        "default": "Target not specified",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Target not specified"
                     },
                     "with_featured_snippets": {
-                        "default": "with Featured Snippets",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "with Featured Snippets"
                     },
                     "Pin_panel": {
-                        "default": "Pin panel",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Pin panel"
                     },
                     "Pin_filters": {
-                        "default": "Pin filters",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Pin filters"
                     },
                     "Pin_summary": {
-                        "default": "Pin summary",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Pin summary"
                     },
                     "Customize_view": {
-                        "default": "Customize view",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Customize view"
                     },
                     "Color_theme": {
-                        "default": "Color theme",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Color theme"
                     },
                     "Highcharts_Export_PNG": {
-                        "default": "Download PNG image",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Download PNG image"
                     },
                     "Highcharts_Export_JPEG": {
-                        "default": "Download JPEG image",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Download JPEG image"
                     },
                     "Highcharts_Export_PDF": {
-                        "default": "Download PDF document",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Download PDF document"
                     },
                     "Highcharts_Export_SVG": {
-                        "default": "Download SVG image",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Download SVG image"
                     },
                     "Highcharts_Export_Print": {
-                        "default": "Print chart",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Print chart"
                     },
                     "Highcharts_Export_CSV": {
-                        "default": "Download CSV",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Download CSV"
                     },
                     "Summary_mode": {
-                        "default": "Summary mode",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Summary mode"
                     },
                     "Default_summary_mode": {
-                        "default": "Default",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Default"
                     },
                     "Compact_summary_mode": {
-                        "default": "Compact",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Compact"
                     },
                     "Columns_summary_mode": {
-                        "default": "Columns",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Columns"
                     },
                     "order": {
-                        "default": "keyword ranking report",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "keyword ranking report"
                     },
                     "Project_has_been_deleted": {
-                        "default": "Project has been deleted",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Project has been deleted"
                     },
                     "Snippets_no_checked": {
-                        "default": "<b>Snippets</b> weren't collected on the selected dates.",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "<b>Snippets</b> weren't collected on the selected dates."
                     },
                     "Snippets_no_checking": {
-                        "default": "<b>Snippets</b> aren't being collected. Turn this feature on in the project's settings.",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "<b>Snippets</b> aren't being collected. Turn this feature on in the project's settings."
                     },
                     "Selected_time_is_hightload": {
-                        "default": "<p>Selected period is the hight load.</p><p>If you need to get results in the morning, we recommend setting time from <i></i> to <i></i> in the morning.</p>",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "<p>Selected period is the hight load.</p><p>If you need to get results in the morning, we recommend setting time from <i></i> to <i></i> in the morning.</p>"
                     },
                     "Delete_keyword": {
-                        "default": "Delete keyword",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Delete keyword"
                     },
                     "Recheck": {
-                        "default": "Recheck keyword ranking",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Recheck keyword ranking"
                     },
                     "Checking": {
-                        "default": "Tracking",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Tracking"
                     },
                     "Recheck_finish": {
-                        "default": "Ranking successfully rechecked",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Ranking successfully rechecked"
                     },
                     "No_target_status": {
-                        "default": "Target link not added",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Target link not added"
                     },
                     "No_result_target_status": {
-                        "default": "Search results not found",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Search results not found"
                     },
                     "Bad_target_status": {
-                        "default": "Result does not match a target link",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Result does not match a target link"
                     },
                     "Good_target_status": {
-                        "default": "Result matches a target link",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Result matches a target link"
                     }
                 },
                 "required": [

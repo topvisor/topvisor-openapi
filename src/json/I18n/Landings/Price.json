@@ -11,69 +11,43 @@
                 "type": "object",
                 "properties": {
                     "Depth": {
-                        "default": "depth",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "depth"
                     },
                     "of_results": {
-                        "default": "results",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "results"
                     },
                     "of_keywords": {
-                        "default": "keywords",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "keywords"
                     },
                     "of_pages": {
-                        "default": "URLs",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "URLs"
                     },
                     "up_to": {
-                        "default": "up to",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "up to"
                     },
                     "from": {
-                        "default": "from",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "from"
                     },
                     "Without_discount": {
-                        "default": "No discount",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "No discount"
                     },
                     "What_is_a_tariff": {
-                        "default": "What is a pricing plan (tariff)?",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "What is a pricing plan (tariff)?"
                     },
                     "Rank_tracker_and_collecting_TOP": {
-                        "default": "Rank Tracking and SERP Top",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Rank Tracking and SERP Top"
                     },
                     "Semantics": {
-                        "default": "Semantics",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Semantics"
                     },
                     "Technical_Seo": {
-                        "default": "Technical SEO",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Technical SEO"
                     },
                     "Yandex_direct": {
-                        "default": "Yandex Direct",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Yandex Direct"
                     },
                     "Account": {
-                        "default": "Account",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Account"
                     }
                 },
                 "required": [

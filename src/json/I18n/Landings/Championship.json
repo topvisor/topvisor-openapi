@@ -11,39 +11,25 @@
                 "type": "object",
                 "properties": {
                     "Best_cases": {
-                        "default": "Best cases",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Best cases"
                     },
                     "Main_competition": {
-                        "default": "Main competition 🏆",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Main competition 🏆"
                     },
                     "Special_nominations": {
-                        "default": "Special nominations 🏆",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Special nominations 🏆"
                     },
                     "Nomination": {
-                        "default": "Nomination",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Nomination"
                     },
                     "Place": {
-                        "default": "Place",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Place"
                     },
                     "Case_and_author": {
-                        "default": "Case and author",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Case and author"
                     },
                     "place": {
-                        "default": "place",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "place"
                     }
                 },
                 "required": [

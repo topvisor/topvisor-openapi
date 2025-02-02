@@ -8,28 +8,28 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         "I18n.Cron": {
-            /** @default Сommand */
-            readonly Field_command: string;
-            /** @default Description */
-            readonly Field_description: string;
-            /** @default Days of the week */
-            readonly Field_days: string;
-            /** @default Hours */
-            readonly Field_hh: string;
-            /** @default Minutes */
-            readonly Field_i: string;
-            /** @default On/Off */
-            readonly Field_on: string;
-            /** @default Task created */
-            readonly Field_task_create_time: string;
-            /** @default Task runned */
-            readonly Field_task_start_time: string;
-            /** @default Execution status */
-            readonly Field_task_status: string;
-            /** @default Disabled */
-            readonly Disabled: string;
-            /** @default Enabled */
-            readonly Enabled: string;
+            /** @constant */
+            Field_command: "Сommand";
+            /** @constant */
+            Field_description: "Description";
+            /** @constant */
+            Field_days: "Days of the week";
+            /** @constant */
+            Field_hh: "Hours";
+            /** @constant */
+            Field_i: "Minutes";
+            /** @constant */
+            Field_on: "On/Off";
+            /** @constant */
+            Field_task_create_time: "Task created";
+            /** @constant */
+            Field_task_start_time: "Task runned";
+            /** @constant */
+            Field_task_status: "Execution status";
+            /** @constant */
+            Disabled: "Disabled";
+            /** @constant */
+            Enabled: "Enabled";
         };
     };
     responses: never;

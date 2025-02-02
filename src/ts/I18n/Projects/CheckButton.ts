@@ -8,22 +8,22 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         "I18n.Projects.CheckButton": {
-            /** @default Check Rankings */
-            readonly Check_positions: string;
-            /** @default Run Audit */
-            readonly Check_audit: string;
-            /** @default Track changes */
-            readonly Check_watcher: string;
-            /** @default Check indexing */
-            readonly Check_indexing: string;
-            /** @default Generate sitemap */
-            readonly Check_sitemap: string;
-            /** @default Last check */
-            readonly Last_check: string;
-            /** @default In queue */
-            readonly In_queue: string;
-            /** @default In progress */
-            readonly In_work: string;
+            /** @constant */
+            Check_positions: "Check Rankings";
+            /** @constant */
+            Check_audit: "Run Audit";
+            /** @constant */
+            Check_watcher: "Track changes";
+            /** @constant */
+            Check_indexing: "Check indexing";
+            /** @constant */
+            Check_sitemap: "Generate sitemap";
+            /** @constant */
+            Last_check: "Last check";
+            /** @constant */
+            In_queue: "In queue";
+            /** @constant */
+            In_work: "In progress";
         };
     };
     responses: never;

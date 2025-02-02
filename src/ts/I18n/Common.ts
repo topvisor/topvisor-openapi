@@ -8,945 +8,946 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         "I18n.Common": {
-            readonly url_lang_prefix: string;
-            /** @default Page Not Found */
-            readonly Page_404_text: string;
-            /** @default You will be redirected <br> in */
-            readonly Page_404_text2: string;
-            /** @default seconds */
-            readonly Page_404_sec: string;
-            /** @default Access denied */
-            readonly Page_403_text: string;
-            /** @default Page loading */
-            readonly openApp_text: string;
-            /** @default Open application */
-            readonly openApp_text2: string;
-            /** @default en */
-            readonly lang: string;
-            /** @default US */
-            readonly lang_country: string;
-            readonly lang_url: string;
-            /** @default ru */
-            readonly alternate_lang: string;
-            /** @default RU */
-            readonly alternate_lang_country: string;
-            /** @default /ru */
-            readonly alternate_lang_url: string;
-            /** @default English */
-            readonly Lang_full: string;
-            /** @default language */
-            readonly language: string;
-            /** @default Language */
-            readonly Language: string;
-            /** @default en_US */
-            readonly locale: string;
-            /** @default m/d/Y */
-            readonly date_format: string;
-            /** @default Tools for tracking, analyzing and measuring SEO performance */
-            readonly Description: string;
-            /** @default Try out SEO & PPC Tools for keyword research, clustering, rank tracking and on-page optimization. Get better results from paid search and organic rankings! */
-            readonly Og_description: string;
-            /** @default SEO & PPC Tools for better marketing. Highly recommended! */
-            readonly Og_description_invite: string;
-            /** @default Ascending */
-            readonly Ascending: string;
-            /** @default Descending */
-            readonly Descending: string;
-            /** @default Voronezhskaya ul. */
-            readonly TV_address_street: string;
-            /** @default Session security error, please <a href="/">refresh page</a> and try again */
-            readonly Message_session_security_error: string;
-            /** @default We're upgrading our servers. The service is temporarily unavailable. Please, try again later */
-            readonly Message_dbh_remote: string;
-            /** @default We're upgrading our servers. Tasks creating is temporarily unavailable. Please, try again later */
-            readonly Message_dbh_remote_error: string;
-            /** @default We're upgrading this module's server, please, try again later */
-            readonly Message_ch_error: string;
-            /** @default We're upgrading this module's server, please, try again later */
-            readonly Message_sp_error: string;
-            /** @default Every day */
-            readonly Every_day: string;
-            /** @default times */
-            readonly time_a_0: string;
-            /** @default time */
-            readonly time_a_1: string;
-            /** @default times */
-            readonly time_a_2: string;
-            /** @default a week */
-            readonly a_week: string;
-            /** @default a month */
-            readonly a_month: string;
-            /** @default discount */
-            readonly discount: string;
-            /** @default mo */
-            readonly month_short: string;
-            /** @default Balance */
-            readonly Balance: string;
-            /** @default Affiliate program */
-            readonly Referrals: string;
-            /** @default Organization */
-            readonly Organization: string;
-            /** @default Yes */
-            readonly Yes: string;
-            /** @default Exists */
-            readonly Exists: string;
-            /** @default No */
-            readonly No: string;
-            /** @default not */
-            readonly not: string;
-            /** @default and */
-            readonly and: string;
-            /** @default rub. */
-            readonly ruble: string;
-            /** @default for */
-            readonly for: string;
-            /** @default For */
-            readonly For: string;
-            /** @default Close */
-            readonly Close: string;
-            /** @default OK */
-            readonly OK: string;
-            /** @default OK */
-            readonly Apply: string;
-            /** @default Apply */
-            readonly Choose: string;
-            /** @default Download */
-            readonly Download: string;
-            /** @default download */
-            readonly download: string;
-            /** @default Step */
-            readonly Step: string;
-            /** @default Continue */
-            readonly Continue: string;
-            /** @default Back */
-            readonly Back: string;
-            /** @default Next */
-            readonly Next: string;
-            /** @default Prev */
-            readonly Prev_page_short: string;
-            /** @default Next */
-            readonly Next_page_short: string;
-            /** @default project */
-            readonly project: string;
-            /** @default Project */
-            readonly Project: string;
-            /** @default of project */
-            readonly of_project: string;
-            /** @default Tool digest (2024) */
-            readonly Tool_digest: string;
-            /** @default Ticket */
-            readonly Ticket: string;
-            /** @default Tickets */
-            readonly Tickets: string;
-            /** @default All tickets */
-            readonly All_tickets: string;
-            /** @default All articles */
-            readonly All_pages: string;
-            /** @default Submit */
-            readonly Submit: string;
-            /** @default "Tickets" page */
-            readonly Tickets_page: string;
-            /** @default Submitted */
-            readonly Submitted: string;
-            /** @default Created */
-            readonly Created_at: string;
-            /** @default No. */
-            readonly Schet_number: string;
-            /** @default Cancel */
-            readonly Cancel: string;
-            /** @default Send */
-            readonly Send: string;
-            /** @default More */
-            readonly More: string;
-            /** @default Read more */
-            readonly Read_more: string;
-            /** @default User */
-            readonly User: string;
-            /** @default Message */
-            readonly Message: string;
-            /** @default Message hasn't been sent */
-            readonly Message_not_sended: string;
-            /** @default Comment not removed */
-            readonly Comment_not_deleted: string;
-            /** @default Link */
-            readonly Link: string;
-            /** @default Name */
-            readonly Name: string;
-            /** @default First and last name */
-            readonly First_and_last_name: string;
-            /** @default Access denied */
-            readonly Access_denied: string;
-            /** @default Access error */
-            readonly Access_error: string;
-            /** @default No data found */
-            readonly No_data: string;
-            /** @default No results */
-            readonly No_results: string;
-            /** @default Dynamics */
-            readonly Dynamics: string;
-            /** @default Country */
-            readonly Country: string;
-            /** @default No. */
-            readonly Number: string;
-            /** @default Number */
-            readonly Number_word: string;
-            /** @default CPC */
-            readonly CPC: string;
-            /** @default Clear */
-            readonly Clear: string;
-            /** @default Phone number */
-            readonly Phone: string;
-            /** @default Email */
-            readonly Email: string;
-            /** @default The Email you entered doesn't exist */
-            readonly Email_not_exist: string;
-            /** @default The password you entered is incorrect! */
-            readonly Password_incorrect: string;
-            /** @default Enter email */
-            readonly Enter_email: string;
-            /** @default Enter password */
-            readonly Enter_password: string;
-            /** @default Remember me */
-            readonly Remember_me: string;
-            /** @default Forgot your password? */
-            readonly Forgot_password: string;
-            /** @default Sign up now */
-            readonly Signup_now: string;
-            /** @default Sign in with */
-            readonly Sign_in_with: string;
-            /** @default Recover password */
-            readonly Password_recovering: string;
-            /** @default Recover password */
-            readonly Recover_password: string;
-            /** @default Keywords (each keyword on a new line) */
-            readonly Keywords_one_per_line: string;
-            /** @default Add a Search engine */
-            readonly Add_se: string;
-            /** @default Create a project */
-            readonly Create_project: string;
-            /** @default Creating... */
-            readonly Creating: string;
-            /** @default Enter a valid E-mail address */
-            readonly Enter_valid_email_notice: string;
-            /** @default No account? <a href="." data-to-view="%toViewReg%">Sign up</a> */
-            readonly No_account_sign_up: string;
-            /** @default No account? */
-            readonly No_account: string;
-            /** @default By pressing Sign up you accept <a href="%hrefConfirm%" target="_blank">Terms and Conditions</a> and <a href="%hrefPrivacy%" target="_blank">Privacy Policy</a> */
-            readonly Through_registration_you_confirm_agreement_policy: string;
-            /** @default Already have an account */
-            readonly Already_have_account: string;
-            /** @default <a href="." data-to-view="%toViewAuth%">Log in</a> or <a href="." data-to-view="%toViewReg%">sign up</a> */
-            readonly Try_again_or_sign_up: string;
-            /** @default If you didn't receive a message, check a <b>Spam</b> folder or submit a ticket to <a href="%hrefCreateTicket%">Customer support</a> */
-            readonly If_no_msg_check_spam_ask_support_notice: string;
-            /** @default If you didn't receive a message, check a <b>Spam</b> folder or submit a ticket to  */
-            readonly If_no_msg: string;
-            /** @default Customer support */
-            readonly support_notice: string;
-            /** @default A confirmation link has been sent to  */
-            readonly Confirmation_link_sent_to_email: string;
-            /** @default Internal error occurred, please submit a report to the developers */
-            readonly Internal_error: string;
-            /** @default Unknown error occurred, please try again later */
-            readonly Unknown_error: string;
-            /** @default Google server error */
-            readonly Google_server_error: string;
-            /** @default Yandex.API server error */
-            readonly Yandex_API_server_error: string;
-            /** @default Error occurred! Please, contact the project owner to resolve the issue! */
-            readonly Yandex_auth_error: string;
-            /** @default Required parameter missing in the request */
-            readonly Request_error_required: string;
-            /** @default Passed parameter type mismatch */
-            readonly Request_error_type: string;
-            /** @default Passed parameter value mismatch */
-            readonly Request_error_value: string;
-            /** @default Passed qualifiers mismatch */
-            readonly Request_error_qualifiers: string;
-            /** @default Regular expression error */
-            readonly Error_regexp: string;
-            /** @default Valid characters */
-            readonly Valid_characters: string;
-            /** @default Bonus */
-            readonly Bonus: string;
-            /** @default or */
-            readonly or: string;
-            /** @default until */
-            readonly to: string;
-            /** @default to */
-            readonly to_1: string;
-            /** @default at */
-            readonly at: string;
-            /** @default Until */
-            readonly To: string;
-            /** @default Up to  */
-            readonly Until: string;
-            /** @default next */
-            readonly next_count: string;
-            /** @default pages */
-            readonly pages: string;
-            /** @default pages */
-            readonly pages_full: string;
-            /** @default display */
-            readonly limit: string;
-            /** @default by */
-            readonly by: string;
-            /** @default Path */
-            readonly Path: string;
-            /** @default Rule */
-            readonly Rule: string;
-            /** @default Allow */
-            readonly Allow: string;
-            /** @default Forbid */
-            readonly Disallow: string;
-            /** @default Add mask matches from sitemap */
-            readonly Allow_of_mask: string;
-            /** @default Forbid the mask */
-            readonly Disallow_of_mask: string;
-            /** @default Search */
-            readonly Search: string;
-            /** @default Examples */
-            readonly Examples: string;
-            /** @default Start */
-            readonly Begin: string;
-            /** @default Start over */
-            readonly Start_over: string;
-            /** @default Export */
-            readonly Export: string;
-            /** @default Import */
-            readonly Import: string;
-            /** @default Off */
-            readonly Off: string;
-            /** @default Changes */
-            readonly Changes: string;
-            /** @default Change */
-            readonly Change: string;
-            /** @default Value */
-            readonly Value: string;
-            /** @default Hide */
-            readonly Hide: string;
-            /** @default Display */
-            readonly Display: string;
-            /** @default Save */
-            readonly Save: string;
-            /** @default Time */
-            readonly Time: string;
-            /** @default Loading */
-            readonly Loading: string;
-            /** @default CY */
-            readonly CY: string;
-            /** @default Bid manager */
-            readonly Broker: string;
-            /** @default Page is under maintenance */
-            readonly Maintenance: string;
-            /** @default to account */
-            readonly on_account: string;
-            /** @default to */
-            readonly on: string;
-            /** @default SEO Tools */
-            readonly Tools: string;
-            /** @default Keyword research tool */
-            readonly Keyword_researcher: string;
-            /** @default Rank tracker tool */
-            readonly Rank_tracker: string;
-            /** @default Upload */
-            readonly Upload: string;
-            /** @default Hide all */
-            readonly Hide_all: string;
-            /** @default Expand all */
-            readonly Expand_all: string;
-            /** @default Expand */
-            readonly Expand: string;
-            /** @default Attention */
-            readonly Attention: string;
-            /** @default from */
-            readonly from: string;
-            /** @default from */
-            readonly from_1: string;
-            /** @default dated */
-            readonly dated: string;
-            /** @default from */
-            readonly fromDate: string;
-            /** @default to */
-            readonly toDate: string;
-            /** @default SE */
-            readonly SE: string;
-            /** @default Guest link */
-            readonly Guest_link: string;
-            /** @default Guest link copied to clipboard */
-            readonly Guest_link_copied_to_clipboard: string;
-            /** @default PC */
-            readonly Device_0: string;
-            /** @default Tablet */
-            readonly Device_1: string;
-            /** @default Phone */
-            readonly Device_2: string;
-            /** @default YandexBot/3.0 */
-            readonly Device_100: string;
-            /** @default YandexBot/3.0 (mobile) */
-            readonly Device_102: string;
-            /** @default Googlebot/2.1 */
-            readonly Device_110: string;
-            /** @default Googlebot/2.1 (mobile) */
-            readonly Device_112: string;
-            /** @default AdsBot-Google */
-            readonly Device_120: string;
-            /** @default AdsBot-Google-Mobile */
-            readonly Device_122: string;
-            /** @default Tag */
-            readonly Tag: string;
-            /** @default Tags */
-            readonly Tags: string;
-            /** @default All tags */
-            readonly All_tags: string;
-            /** @default Charts */
-            readonly Charts: string;
-            /** @default All */
-            readonly All: string;
-            /** @default Selected */
-            readonly Selected: string;
-            /** @default Select */
-            readonly Select: string;
-            /** @default Select all */
-            readonly Select_all: string;
-            /** @default Added */
-            readonly Added: string;
-            /** @default Deleted */
-            readonly Deleted: string;
-            /** @default Rename */
-            readonly Rename: string;
-            /** @default On / Off */
-            readonly On_or_off: string;
-            /** @default Autoselect */
-            readonly Autoselect: string;
-            /** @default Open project */
-            readonly Open_project: string;
-            /** @default Domain */
-            readonly Domain: string;
-            /** @default Domains */
-            readonly Domains: string;
-            /** @default Track */
-            readonly Track: string;
-            /** @default Check */
-            readonly Check: string;
-            /** @default Track */
-            readonly Track_continued: string;
-            /** @default Telegram */
-            readonly Telegram: string;
-            /** @default Link to Telegram */
-            readonly Link_to_telegram: string;
-            /** @default Other */
-            readonly Other: string;
-            /** @default Other */
-            readonly Other_f: string;
-            /** @default Proceed */
-            readonly Proceed: string;
-            /** @default Projects */
-            readonly Projects: string;
-            /** @default Yandex.Metrica */
-            readonly Metrika: string;
-            /** @default Yandex.Webmaster */
-            readonly Webmaster: string;
-            /** @default Yandex Direct */
-            readonly Yandex_Direct: string;
-            /** @default Yandex.Direct */
-            readonly YandexDirect: string;
-            /** @default Yandex Wordstat */
-            readonly Yandex_Wordstat: string;
-            /** @default Volume */
-            readonly Y_freq: string;
-            /** @default "Volume" */
-            readonly Y_freq2: string;
-            /** @default "!Volume" */
-            readonly Y_freq3: string;
-            /** @default "[Volume]" */
-            readonly Y_freq5: string;
-            /** @default "[!Volume]" */
-            readonly Y_freq6: string;
-            /** @default "[Volume]" */
-            readonly G_freq2: string;
-            /** @default "Volume" */
-            readonly M_freq2: string;
-            /** @default 1st Premium */
-            readonly Y_price1: string;
-            /** @default 2st Premium */
-            readonly Y_price2: string;
-            /** @default Premium */
-            readonly Y_price3: string;
-            /** @default 1st place */
-            readonly Y_price4: string;
-            /** @default Guaranteed */
-            readonly Y_price5: string;
-            /** @default Bid */
-            readonly G_price: string;
-            /** @default Search engine */
-            readonly Search_engine: string;
-            /** @default Search engines */
-            readonly Search_engines: string;
-            /** @default Location */
-            readonly Region: string;
-            /** @default location */
-            readonly region: string;
-            /** @default Selected locations */
-            readonly Selected_regions: string;
-            /** @default Compare */
-            readonly Compare: string;
-            /** @default Folder */
-            readonly Folder: string;
-            /** @default Group */
-            readonly Group: string;
-            /** @default Visibility */
-            readonly Visibility: string;
-            /** @default Avg.pos. */
-            readonly Average: string;
-            /** @default Average position */
-            readonly Average_position: string;
-            /** @default Add */
-            readonly Add: string;
-            /** @default Create */
-            readonly Create: string;
-            /** @default Move */
-            readonly Move: string;
-            /** @default Delete */
-            readonly Delete: string;
-            /** @default Repalce */
-            readonly Replace: string;
-            /** @default Restore */
-            readonly Restore: string;
-            /** @default Copy */
-            readonly Copy: string;
-            /** @default Copy */
-            readonly Copy2: string;
-            /** @default Delete */
-            readonly Remove: string;
-            /** @default You will be charged */
-            readonly Charge: string;
-            /** @default confirm */
-            readonly confirm: string;
-            /** @default Confirm */
-            readonly Confirm: string;
-            /** @default Delete selected */
-            readonly Delete_selected: string;
-            /** @default Delete all */
-            readonly Delete_all: string;
-            /** @default Traffic */
-            readonly Traffic: string;
-            /** @default Rankings */
-            readonly Positions: string;
-            /** @default Keyword */
-            readonly Keyword: string;
-            /** @default Keyword */
-            readonly Key_word: string;
-            /** @default Settings */
-            readonly Settings: string;
-            /** @default URL Settings */
-            readonly Settings_URL: string;
-            /** @default Important! This operation cannot be undone. */
-            readonly Irreversible: string;
-            /** @default Missing */
-            readonly Empty_field: string;
-            /** @default Notifications */
-            readonly Notification: string;
-            /** @default My project */
-            readonly Personal_project: string;
-            /** @default Terms of Service */
-            readonly Agreement: string;
-            /** @default Period */
-            readonly Period: string;
-            /** @default You cannot change project settings until tracking is completed */
-            readonly Config_is_readonly: string;
-            /** @default locations */
-            readonly regions: string;
-            /** @default types */
-            readonly types: string;
-            /** @default Select date */
-            readonly Select_date: string;
-            /** @default Not date */
-            readonly Not_date: string;
-            /** @default Close window */
-            readonly Close_window: string;
-            /** @default Dashboard */
-            readonly Dashboard: string;
-            /** @default Help center */
-            readonly Support: string;
-            /** @default URL shortener */
-            readonly Shortener: string;
-            /** @default Journal */
-            readonly Journal: string;
-            /** @default Academy */
-            readonly Academy: string;
-            /** @default Pricing */
-            readonly Pricing: string;
-            /** @default Sign up */
-            readonly Signup: string;
-            /** @default Sign up */
-            readonly Sign_up: string;
-            /** @default Sign up */
-            readonly Sign_up_2: string;
-            /** @default Sign in */
-            readonly Sign_in: string;
-            /** @default Sign in */
-            readonly Sign_in_account: string;
-            /** @default Sign out */
-            readonly Sign_out: string;
-            /** @default Server response */
-            readonly Server_response: string;
-            /** @default Red */
-            readonly Red: string;
-            /** @default Orange */
-            readonly Orange: string;
-            /** @default Yellow */
-            readonly Yellow: string;
-            /** @default Blue */
-            readonly Blue: string;
-            /** @default Purple */
-            readonly Purple: string;
-            /** @default Green */
-            readonly Green: string;
-            /** @default Magenta */
-            readonly Magenta: string;
-            /** @default Dark blue */
-            readonly Dark_blue: string;
-            /** @default Turquoise */
-            readonly Turquoise: string;
-            /** @default Volume */
-            readonly Frequency: string;
-            /** @default Moscow */
-            readonly Moscow: string;
-            /** @default Minsk */
-            readonly Minsk: string;
-            /** @default Kyiv */
-            readonly Kyiv: string;
-            /** @default London */
-            readonly London: string;
-            /** @default New York */
-            readonly NewYork: string;
-            /** @default St. Petersburg */
-            readonly StPetersburg: string;
-            /** @default Almaty */
-            readonly Almaty: string;
-            /** @default Russia */
-            readonly Russia: string;
-            /** @default Ukraine */
-            readonly Ukraine: string;
-            /** @default Kazakhstan */
-            readonly Kazakhstan: string;
-            /** @default Belarus */
-            readonly Belarus: string;
-            /** @default Amount */
-            readonly Sum: string;
-            /** @default Date */
-            readonly Date: string;
-            /** @default Week */
-            readonly Week: string;
-            /** @default Month */
-            readonly Month: string;
-            /** @default month */
-            readonly month: string;
-            /** @default months */
-            readonly months: string;
-            /** @default months */
-            readonly months_mult: string;
-            /** @default 6 months */
-            readonly months_6: string;
-            /** @default Quarter */
-            readonly Quarter: string;
-            /** @default Year */
-            readonly Year: string;
-            /** @default Total */
-            readonly Total: string;
-            /** @default TOTAL */
-            readonly TOTAL: string;
-            /** @default Yandex update */
-            readonly Yandex_update: string;
-            /** @default code */
-            readonly "\u0441ode": string;
-            /** @default Thank you! */
-            readonly Thank_you: string;
-            /** @default Thank you for using our tools */
-            readonly Thank_you_for_using_our_tools: string;
-            /** @default Since */
-            readonly Since: string;
-            /** @default Till */
-            readonly Till: string;
-            /** @default up to */
-            readonly till: string;
-            /** @default Yandex */
-            readonly Yandex: string;
-            /** @default Rank */
-            readonly Position: string;
-            /** @default Impressions */
-            readonly Impressions: string;
-            /** @default Demand */
-            readonly Demand: string;
-            /** @default FAQ */
-            readonly FAQ: string;
-            /** @default Frequently asked questions */
-            readonly Frequently_asked_questions: string;
-            /** @default Owner */
-            readonly Owner: string;
-            /** @default level */
-            readonly level: string;
-            /** @default No payments yet */
-            readonly No_payments: string;
-            /** @default Show legend */
-            readonly Show_legend: string;
-            /** @default Hide legend */
-            readonly Hide_legend: string;
-            /** @default Expand menu */
-            readonly Menu_expand: string;
-            /** @default Minimize menu */
-            readonly Menu_unexpand: string;
-            /** @default Search */
-            readonly Menu_dynamics_search: string;
-            /** @default Rank Tracker */
-            readonly Menu_dynamics: string;
-            /** @default SERP Snapshots */
-            readonly Menu_snapshots: string;
-            /** @default My competitors */
-            readonly Menu_competitors: string;
-            /** @default Keywords */
-            readonly Menu_phrases: string;
-            /** @default Audit */
-            readonly Menu_audit: string;
-            /** @default Overview */
-            readonly Menu_analytics: string;
-            /** @default PPC */
-            readonly Menu_PPC: string;
-            /** @default Yandex.Direct */
-            readonly Menu_broker: string;
-            /** @default Settings */
-            readonly Menu_settings: string;
-            /** @default More */
-            readonly Menu_more: string;
-            /** @default Folders */
-            readonly Folders: string;
-            /** @default Groups */
-            readonly Groups: string;
-            /** @default Keywords */
-            readonly Keywords: string;
-            /** @default keywords */
-            readonly of_keywords: string;
-            /** @default folders */
-            readonly of_folders: string;
-            /** @default projects */
-            readonly of_projects: string;
-            /** @default for project */
-            readonly of_project1: string;
-            /** @default for project */
-            readonly for_project: string;
-            /** @default competitor */
-            readonly competitor: string;
-            /** @default All groups */
-            readonly All_groups: string;
-            /** @default All folders */
-            readonly All_folders: string;
-            /** @default All locations */
-            readonly All_regions: string;
-            /** @default All search engines */
-            readonly All_searchers: string;
-            /** @default All projects */
-            readonly All_projects: string;
-            /** @default Integration */
-            readonly Integration: string;
-            /** @default update days */
-            readonly updates_days: string;
-            /** @default the entire period */
-            readonly whole_period: string;
-            /** @default two dates */
-            readonly two_dates: string;
-            /** @default Project report for */
-            readonly Report_for_project: string;
-            /** @default Time range */
-            readonly Interval: string;
-            /** @default compare with competitors */
-            readonly competitors_comparison: string;
-            /** @default Compare by search engine */
-            readonly Searchers_comparison: string;
-            /** @default Compare by location */
-            readonly Regions_comparison: string;
-            /** @default Your browser is not supported! */
-            readonly Browser_not_supported: string;
-            /** @default Browser settings */
-            readonly Browser_settings: string;
-            /** @default Service might be unstable */
-            readonly Service_may_go_unstable: string;
-            /** @default Compatible browser is */
-            readonly Preferred_browser: string;
-            /** @default Compare by */
-            readonly Comparison_by: string;
-            /** @default Keywords */
-            readonly Phrases: string;
-            /** @default TOP */
-            readonly TOP: string;
-            /** @default Top */
-            readonly Top: string;
-            /** @default Keyword dynamics */
-            readonly Phrases_dynamics: string;
-            /** @default Project settings */
-            readonly Project_settings: string;
-            /** @default Keywords in TOP */
-            readonly Phrases_in_TOP: string;
-            /** @default Keywords in Top */
-            readonly Phrases_in_Top: string;
-            /** @default Page */
-            readonly Page: string;
-            /** @default page */
-            readonly page: string;
-            /** @default last 10 days */
-            readonly last_10_days: string;
-            /** @default last month */
-            readonly last_month: string;
-            /** @default last update */
-            readonly last_check: string;
-            /** @default last 2 updates */
-            readonly last_two_dates: string;
-            /** @default last month (week's average) */
-            readonly last_month_week_average: string;
-            /** @default similar keywords */
-            readonly also_searched: string;
-            /** @default Sources */
-            readonly Sources: string;
-            /** @default Clicks */
-            readonly Clicks: string;
-            /** @default Other dates */
-            readonly Other_dates: string;
-            /** @default Help */
-            readonly Help_center: string;
-            /** @default Support Center */
-            readonly Help_center_welcome: string;
-            /** @default Got any questions? */
-            readonly Help_center_question: string;
-            /** @default Run */
-            readonly Run: string;
-            /** @default Manage */
-            readonly Manage: string;
-            /** @default Project id is missing */
-            readonly Missed_project_id: string;
-            /** @default `Project_id` is missing */
-            readonly Missed_project_id2: string;
-            /** @default Project analytics */
-            readonly Project_analytics: string;
-            /** @default Keyword dynamics */
-            readonly Project_dynamics: string;
-            /** @default Updates */
-            readonly Apometr: string;
-            /** @default Google and Yandex SERP tracking tool */
-            readonly Apometr_title: string;
-            /** @default Google and Yandex updates calendar (SERP updates and changes). Get SERP updates alerts. SERP updates score for different locations and content types. */
-            readonly Apometr_description: string;
-            /** @default Google and Yandex SERP updates */
-            readonly Apometr_og_title: string;
-            /** @default SERP updates score for different locations and content types. */
-            readonly Apometr_og_description: string;
-            /** @default Get update alerts */
-            readonly Apometr_notice: string;
-            /** @default Pricing */
-            readonly Pricing_title: string;
-            /** @default Account */
-            readonly Profile_title: string;
-            /** @default Bank */
-            readonly Bank_title: string;
-            /** @default Your projects */
-            readonly Your_projects: string;
-            /** @default Invalid file format (expected: %availableExtensionsNames%) */
-            readonly Incorrect_file_format: string;
-            /** @default Maximum upload size exceeded (%maxSize%) */
-            readonly Max_size: string;
-            /** @default Website SEO Audit tool */
-            readonly Audit: string;
-            /** @default Tutorials */
-            readonly Tutorial: string;
-            /** @default User ID */
-            readonly User_id: string;
-            /** @default Managing executive */
-            readonly Managing_executive: string;
-            /** @default Pustovoit */
-            readonly Pustovoit: string;
-            /** @default Denis */
-            readonly Denis: string;
-            /** @default Anatolyevich */
-            readonly Anatolyevich: string;
-            /** @default Chief Executive Officer */
-            readonly CEO: string;
-            /** @default office */
-            readonly office: string;
-            /** @default Dot */
-            readonly Dot: string;
-            /** @default Comma */
-            readonly Comma: string;
-            /** @default Add manually */
-            readonly Enter_manually: string;
-            /** @default max 10 Mb */
-            readonly max_10_mb: string;
-            /** @default Checks schedule */
-            readonly Schedule_settings_checks: string;
-            /** @default Reports schedule */
-            readonly Schedule_settings_reports: string;
-            /** @default Basic */
-            readonly Basic: string;
-            /** @default IP address */
-            readonly Address_IP: string;
-            /** @default Phone number */
-            readonly Phone_number: string;
-            /** @default Recipient */
-            readonly Recipient: string;
-            /** @default  Federal act */
-            readonly Federal_act: string;
-            /** @default optional */
-            readonly optional: string;
-            /** @default Full name */
-            readonly Full_name_abbr: string;
-            /** @default Mobile phone */
-            readonly Mobile_phone: string;
-            /** @default not found */
-            readonly not_found: string;
-            /** @default Try to <i class="a" data-action="reset_filters">reset</i> all filters<br><i class="archive_search">
-             *     	or search <a href="/support/projects/archive" target="_blank" class="a">Archived</a> projects</i> */
-            readonly Try_to_reset_filters_or_search_archive_html: string;
-            /** @default Print */
-            readonly Print: string;
-            /** @default Contact us */
-            readonly Contact_us: string;
-            /** @default Competitor research */
-            readonly Competitor_analysis: string;
-            /** @default Top up your balance */
-            readonly Refill_balance: string;
-            /** @default Median */
-            readonly Median: string;
-            /** @default Reset */
-            readonly Reset: string;
-            /** @default View */
-            readonly View: string;
-            /** @default Pin bar */
-            readonly Bar_pin: string;
-            /** @default Number */
-            readonly Count: string;
-            /** @default Invalid URL format */
-            readonly Invalid_url: string;
-            /** @default Access settings */
-            readonly Access_settings: string;
-            /** @default Hide access settings */
-            readonly Hide_access_settings: string;
-            /** @default Sort */
-            readonly Sort: string;
-            /** @default No snippet */
-            readonly No_snippet: string;
-            /** @default Copied to clipboard */
-            readonly Copied_to_clipboard: string;
-            /** @default Cannot copied to clipboard */
-            readonly Cannot_copied_to_clipboard: string;
-            /** @default Copy the guest link manually */
-            readonly Copy_guest_link_manually: string;
-            /** @default Press */
-            readonly Press_to_copy_1: string;
-            /** @default +C to copy a link */
-            readonly Press_to_copy_2: string;
-            /** @default Guest link created */
-            readonly Guest_link_created: string;
-            /** @default Please fill in all required fields */
-            readonly Need_fill_required_fields: string;
+            /** @constant */
+            url_lang_prefix: "";
+            /** @constant */
+            Page_404_text: "Page Not Found";
+            /** @constant */
+            Page_404_text2: "You will be redirected <br> in";
+            /** @constant */
+            Page_404_sec: "seconds";
+            /** @constant */
+            Page_403_text: "Access denied";
+            /** @constant */
+            openApp_text: "Page loading";
+            /** @constant */
+            openApp_text2: "Open application";
+            /** @constant */
+            lang: "en";
+            /** @constant */
+            lang_country: "US";
+            /** @constant */
+            lang_url: "";
+            /** @constant */
+            alternate_lang: "ru";
+            /** @constant */
+            alternate_lang_country: "RU";
+            /** @constant */
+            alternate_lang_url: "/ru";
+            /** @constant */
+            Lang_full: "English";
+            /** @constant */
+            language: "language";
+            /** @constant */
+            Language: "Language";
+            /** @constant */
+            locale: "en_US";
+            /** @constant */
+            date_format: "m/d/Y";
+            /** @constant */
+            Description: "Tools for tracking, analyzing and measuring SEO performance";
+            /** @constant */
+            Og_description: "Try out SEO & PPC Tools for keyword research, clustering, rank tracking and on-page optimization. Get better results from paid search and organic rankings!";
+            /** @constant */
+            Og_description_invite: "SEO & PPC Tools for better marketing. Highly recommended!";
+            /** @constant */
+            Ascending: "Ascending";
+            /** @constant */
+            Descending: "Descending";
+            /** @constant */
+            TV_address_street: "Voronezhskaya ul.";
+            /** @constant */
+            Message_session_security_error: "Session security error, please <a href=\"/\">refresh page</a> and try again";
+            /** @constant */
+            Message_dbh_remote: "We're upgrading our servers. The service is temporarily unavailable. Please, try again later";
+            /** @constant */
+            Message_dbh_remote_error: "We're upgrading our servers. Tasks creating is temporarily unavailable. Please, try again later";
+            /** @constant */
+            Message_ch_error: "We're upgrading this module's server, please, try again later";
+            /** @constant */
+            Message_sp_error: "We're upgrading this module's server, please, try again later";
+            /** @constant */
+            Every_day: "Every day";
+            /** @constant */
+            time_a_0: "times";
+            /** @constant */
+            time_a_1: "time";
+            /** @constant */
+            time_a_2: "times";
+            /** @constant */
+            a_week: "a week";
+            /** @constant */
+            a_month: "a month";
+            /** @constant */
+            discount: "discount";
+            /** @constant */
+            month_short: "mo";
+            /** @constant */
+            Balance: "Balance";
+            /** @constant */
+            Referrals: "Affiliate program";
+            /** @constant */
+            Organization: "Organization";
+            /** @constant */
+            Yes: "Yes";
+            /** @constant */
+            Exists: "Exists";
+            /** @constant */
+            No: "No";
+            /** @constant */
+            not: "not";
+            /** @constant */
+            and: "and";
+            /** @constant */
+            ruble: "rub.";
+            /** @constant */
+            for: "for";
+            /** @constant */
+            For: "For";
+            /** @constant */
+            Close: "Close";
+            /** @constant */
+            OK: "OK";
+            /** @constant */
+            Apply: "OK";
+            /** @constant */
+            Choose: "Apply";
+            /** @constant */
+            Download: "Download";
+            /** @constant */
+            download: "download";
+            /** @constant */
+            Step: "Step";
+            /** @constant */
+            Continue: "Continue";
+            /** @constant */
+            Back: "Back";
+            /** @constant */
+            Next: "Next";
+            /** @constant */
+            Prev_page_short: "Prev";
+            /** @constant */
+            Next_page_short: "Next";
+            /** @constant */
+            project: "project";
+            /** @constant */
+            Project: "Project";
+            /** @constant */
+            of_project: "of project";
+            /** @constant */
+            Tool_digest: "Tool digest (2024)";
+            /** @constant */
+            Ticket: "Ticket";
+            /** @constant */
+            Tickets: "Tickets";
+            /** @constant */
+            All_tickets: "All tickets";
+            /** @constant */
+            All_pages: "All articles";
+            /** @constant */
+            Submit: "Submit";
+            /** @constant */
+            Tickets_page: "\"Tickets\" page";
+            /** @constant */
+            Submitted: "Submitted";
+            /** @constant */
+            Created_at: "Created";
+            /** @constant */
+            Schet_number: "No.";
+            /** @constant */
+            Cancel: "Cancel";
+            /** @constant */
+            Send: "Send";
+            /** @constant */
+            More: "More";
+            /** @constant */
+            Read_more: "Read more";
+            /** @constant */
+            User: "User";
+            /** @constant */
+            Message: "Message";
+            /** @constant */
+            Message_not_sended: "Message hasn't been sent";
+            /** @constant */
+            Comment_not_deleted: "Comment not removed";
+            /** @constant */
+            Link: "Link";
+            /** @constant */
+            Name: "Name";
+            /** @constant */
+            First_and_last_name: "First and last name";
+            /** @constant */
+            Access_denied: "Access denied";
+            /** @constant */
+            Access_error: "Access error";
+            /** @constant */
+            No_data: "No data found";
+            /** @constant */
+            No_results: "No results";
+            /** @constant */
+            Dynamics: "Dynamics";
+            /** @constant */
+            Country: "Country";
+            /** @constant */
+            Number: "No.";
+            /** @constant */
+            Number_word: "Number";
+            /** @constant */
+            CPC: "CPC";
+            /** @constant */
+            Clear: "Clear";
+            /** @constant */
+            Phone: "Phone number";
+            /** @constant */
+            Email: "Email";
+            /** @constant */
+            Email_not_exist: "The Email you entered doesn't exist";
+            /** @constant */
+            Password_incorrect: "The password you entered is incorrect!";
+            /** @constant */
+            Enter_email: "Enter email";
+            /** @constant */
+            Enter_password: "Enter password";
+            /** @constant */
+            Remember_me: "Remember me";
+            /** @constant */
+            Forgot_password: "Forgot your password?";
+            /** @constant */
+            Signup_now: "Sign up now";
+            /** @constant */
+            Sign_in_with: "Sign in with";
+            /** @constant */
+            Password_recovering: "Recover password";
+            /** @constant */
+            Recover_password: "Recover password";
+            /** @constant */
+            Keywords_one_per_line: "Keywords (each keyword on a new line)";
+            /** @constant */
+            Add_se: "Add a Search engine";
+            /** @constant */
+            Create_project: "Create a project";
+            /** @constant */
+            Creating: "Creating...";
+            /** @constant */
+            Enter_valid_email_notice: "Enter a valid E-mail address";
+            /** @constant */
+            No_account_sign_up: "No account? <a href=\".\" data-to-view=\"%toViewReg%\">Sign up</a>";
+            /** @constant */
+            No_account: "No account?";
+            /** @constant */
+            Through_registration_you_confirm_agreement_policy: "By pressing Sign up you accept <a href=\"%hrefConfirm%\" target=\"_blank\">Terms and Conditions</a> and <a href=\"%hrefPrivacy%\" target=\"_blank\">Privacy Policy</a>";
+            /** @constant */
+            Already_have_account: "Already have an account";
+            /** @constant */
+            Try_again_or_sign_up: "<a href=\".\" data-to-view=\"%toViewAuth%\">Log in</a> or <a href=\".\" data-to-view=\"%toViewReg%\">sign up</a>";
+            /** @constant */
+            If_no_msg_check_spam_ask_support_notice: "If you didn't receive a message, check a <b>Spam</b> folder or submit a ticket to <a href=\"%hrefCreateTicket%\">Customer support</a>";
+            /** @constant */
+            If_no_msg: "If you didn't receive a message, check a <b>Spam</b> folder or submit a ticket to ";
+            /** @constant */
+            support_notice: "Customer support";
+            /** @constant */
+            Confirmation_link_sent_to_email: "A confirmation link has been sent to ";
+            /** @constant */
+            Internal_error: "Internal error occurred, please submit a report to the developers";
+            /** @constant */
+            Unknown_error: "Unknown error occurred, please try again later";
+            /** @constant */
+            Google_server_error: "Google server error";
+            /** @constant */
+            Yandex_API_server_error: "Yandex.API server error";
+            /** @constant */
+            Yandex_auth_error: "Error occurred! Please, contact the project owner to resolve the issue!";
+            /** @constant */
+            Request_error_required: "Required parameter missing in the request";
+            /** @constant */
+            Request_error_type: "Passed parameter type mismatch";
+            /** @constant */
+            Request_error_value: "Passed parameter value mismatch";
+            /** @constant */
+            Request_error_qualifiers: "Passed qualifiers mismatch";
+            /** @constant */
+            Error_regexp: "Regular expression error";
+            /** @constant */
+            Valid_characters: "Valid characters";
+            /** @constant */
+            Bonus: "Bonus";
+            /** @constant */
+            or: "or";
+            /** @constant */
+            to: "until";
+            /** @constant */
+            to_1: "to";
+            /** @constant */
+            at: "at";
+            /** @constant */
+            To: "Until";
+            /** @constant */
+            Until: "Up to ";
+            /** @constant */
+            next_count: "next";
+            /** @constant */
+            pages: "pages";
+            /** @constant */
+            pages_full: "pages";
+            /** @constant */
+            limit: "display";
+            /** @constant */
+            by: "by";
+            /** @constant */
+            Path: "Path";
+            /** @constant */
+            Rule: "Rule";
+            /** @constant */
+            Allow: "Allow";
+            /** @constant */
+            Disallow: "Forbid";
+            /** @constant */
+            Allow_of_mask: "Add mask matches from sitemap";
+            /** @constant */
+            Disallow_of_mask: "Forbid the mask";
+            /** @constant */
+            Search: "Search";
+            /** @constant */
+            Examples: "Examples";
+            /** @constant */
+            Begin: "Start";
+            /** @constant */
+            Start_over: "Start over";
+            /** @constant */
+            Export: "Export";
+            /** @constant */
+            Import: "Import";
+            /** @constant */
+            Off: "Off";
+            /** @constant */
+            Changes: "Changes";
+            /** @constant */
+            Change: "Change";
+            /** @constant */
+            Value: "Value";
+            /** @constant */
+            Hide: "Hide";
+            /** @constant */
+            Display: "Display";
+            /** @constant */
+            Save: "Save";
+            /** @constant */
+            Time: "Time";
+            /** @constant */
+            Loading: "Loading";
+            /** @constant */
+            CY: "CY";
+            /** @constant */
+            Broker: "Bid manager";
+            /** @constant */
+            Maintenance: "Page is under maintenance";
+            /** @constant */
+            on_account: "to account";
+            /** @constant */
+            on: "to";
+            /** @constant */
+            Tools: "SEO Tools";
+            /** @constant */
+            Keyword_researcher: "Keyword research tool";
+            /** @constant */
+            Rank_tracker: "Rank tracker tool";
+            /** @constant */
+            Upload: "Upload";
+            /** @constant */
+            Hide_all: "Hide all";
+            /** @constant */
+            Expand_all: "Expand all";
+            /** @constant */
+            Expand: "Expand";
+            /** @constant */
+            Attention: "Attention";
+            /** @constant */
+            from: "from";
+            /** @constant */
+            from_1: "from";
+            /** @constant */
+            dated: "dated";
+            /** @constant */
+            fromDate: "from";
+            /** @constant */
+            toDate: "to";
+            /** @constant */
+            SE: "SE";
+            /** @constant */
+            Guest_link: "Guest link";
+            /** @constant */
+            Guest_link_copied_to_clipboard: "Guest link copied to clipboard";
+            /** @constant */
+            Device_0: "PC";
+            /** @constant */
+            Device_1: "Tablet";
+            /** @constant */
+            Device_2: "Phone";
+            /** @constant */
+            Device_100: "YandexBot/3.0";
+            /** @constant */
+            Device_102: "YandexBot/3.0 (mobile)";
+            /** @constant */
+            Device_110: "Googlebot/2.1";
+            /** @constant */
+            Device_112: "Googlebot/2.1 (mobile)";
+            /** @constant */
+            Device_120: "AdsBot-Google";
+            /** @constant */
+            Device_122: "AdsBot-Google-Mobile";
+            /** @constant */
+            Tag: "Tag";
+            /** @constant */
+            Tags: "Tags";
+            /** @constant */
+            All_tags: "All tags";
+            /** @constant */
+            Charts: "Charts";
+            /** @constant */
+            All: "All";
+            /** @constant */
+            Selected: "Selected";
+            /** @constant */
+            Select: "Select";
+            /** @constant */
+            Select_all: "Select all";
+            /** @constant */
+            Added: "Added";
+            /** @constant */
+            Deleted: "Deleted";
+            /** @constant */
+            Rename: "Rename";
+            /** @constant */
+            On_or_off: "On / Off";
+            /** @constant */
+            Autoselect: "Autoselect";
+            /** @constant */
+            Open_project: "Open project";
+            /** @constant */
+            Domain: "Domain";
+            /** @constant */
+            Domains: "Domains";
+            /** @constant */
+            Track: "Track";
+            /** @constant */
+            Check: "Check";
+            /** @constant */
+            Track_continued: "Track";
+            /** @constant */
+            Telegram: "Telegram";
+            /** @constant */
+            Link_to_telegram: "Link to Telegram";
+            /** @constant */
+            Other: "Other";
+            /** @constant */
+            Other_f: "Other";
+            /** @constant */
+            Proceed: "Proceed";
+            /** @constant */
+            Projects: "Projects";
+            /** @constant */
+            Metrika: "Yandex.Metrica";
+            /** @constant */
+            Webmaster: "Yandex.Webmaster";
+            /** @constant */
+            Yandex_Direct: "Yandex Direct";
+            /** @constant */
+            YandexDirect: "Yandex.Direct";
+            /** @constant */
+            Yandex_Wordstat: "Yandex Wordstat";
+            /** @constant */
+            Y_freq: "Volume";
+            /** @constant */
+            Y_freq2: "\"Volume\"";
+            /** @constant */
+            Y_freq3: "\"!Volume\"";
+            /** @constant */
+            Y_freq5: "\"[Volume]\"";
+            /** @constant */
+            Y_freq6: "\"[!Volume]\"";
+            /** @constant */
+            G_freq2: "\"[Volume]\"";
+            /** @constant */
+            M_freq2: "\"Volume\"";
+            /** @constant */
+            Y_price1: "1st Premium";
+            /** @constant */
+            Y_price2: "2st Premium";
+            /** @constant */
+            Y_price3: "Premium";
+            /** @constant */
+            Y_price4: "1st place";
+            /** @constant */
+            Y_price5: "Guaranteed";
+            /** @constant */
+            G_price: "Bid";
+            /** @constant */
+            Search_engine: "Search engine";
+            /** @constant */
+            Search_engines: "Search engines";
+            /** @constant */
+            Region: "Location";
+            /** @constant */
+            region: "location";
+            /** @constant */
+            Selected_regions: "Selected locations";
+            /** @constant */
+            Compare: "Compare";
+            /** @constant */
+            Folder: "Folder";
+            /** @constant */
+            Group: "Group";
+            /** @constant */
+            Visibility: "Visibility";
+            /** @constant */
+            Average: "Avg.pos.";
+            /** @constant */
+            Average_position: "Average position";
+            /** @constant */
+            Add: "Add";
+            /** @constant */
+            Create: "Create";
+            /** @constant */
+            Move: "Move";
+            /** @constant */
+            Delete: "Delete";
+            /** @constant */
+            Replace: "Repalce";
+            /** @constant */
+            Restore: "Restore";
+            /** @constant */
+            Copy: "Copy";
+            /** @constant */
+            Copy2: "Copy";
+            /** @constant */
+            Remove: "Delete";
+            /** @constant */
+            Charge: "You will be charged";
+            /** @constant */
+            confirm: "confirm";
+            /** @constant */
+            Confirm: "Confirm";
+            /** @constant */
+            Delete_selected: "Delete selected";
+            /** @constant */
+            Delete_all: "Delete all";
+            /** @constant */
+            Traffic: "Traffic";
+            /** @constant */
+            Positions: "Rankings";
+            /** @constant */
+            Keyword: "Keyword";
+            /** @constant */
+            Key_word: "Keyword";
+            /** @constant */
+            Settings: "Settings";
+            /** @constant */
+            Settings_URL: "URL Settings";
+            /** @constant */
+            Irreversible: "Important! This operation cannot be undone.";
+            /** @constant */
+            Empty_field: "Missing";
+            /** @constant */
+            Notification: "Notifications";
+            /** @constant */
+            Personal_project: "My project";
+            /** @constant */
+            Agreement: "Terms of Service";
+            /** @constant */
+            Period: "Period";
+            /** @constant */
+            Config_is_readonly: "You cannot change project settings until tracking is completed";
+            /** @constant */
+            regions: "locations";
+            /** @constant */
+            types: "types";
+            /** @constant */
+            Select_date: "Select date";
+            /** @constant */
+            Not_date: "Not date";
+            /** @constant */
+            Close_window: "Close window";
+            /** @constant */
+            Dashboard: "Dashboard";
+            /** @constant */
+            Support: "Help center";
+            /** @constant */
+            Shortener: "URL shortener";
+            /** @constant */
+            Journal: "Journal";
+            /** @constant */
+            Academy: "Academy";
+            /** @constant */
+            Pricing: "Pricing";
+            /** @constant */
+            Signup: "Sign up";
+            /** @constant */
+            Sign_up: "Sign up";
+            /** @constant */
+            Sign_up_2: "Sign up";
+            /** @constant */
+            Sign_in: "Sign in";
+            /** @constant */
+            Sign_in_account: "Sign in";
+            /** @constant */
+            Sign_out: "Sign out";
+            /** @constant */
+            Server_response: "Server response";
+            /** @constant */
+            Red: "Red";
+            /** @constant */
+            Orange: "Orange";
+            /** @constant */
+            Yellow: "Yellow";
+            /** @constant */
+            Blue: "Blue";
+            /** @constant */
+            Purple: "Purple";
+            /** @constant */
+            Green: "Green";
+            /** @constant */
+            Magenta: "Magenta";
+            /** @constant */
+            Dark_blue: "Dark blue";
+            /** @constant */
+            Turquoise: "Turquoise";
+            /** @constant */
+            Frequency: "Volume";
+            /** @constant */
+            Moscow: "Moscow";
+            /** @constant */
+            Minsk: "Minsk";
+            /** @constant */
+            Kyiv: "Kyiv";
+            /** @constant */
+            London: "London";
+            /** @constant */
+            NewYork: "New York";
+            /** @constant */
+            StPetersburg: "St. Petersburg";
+            /** @constant */
+            Almaty: "Almaty";
+            /** @constant */
+            Russia: "Russia";
+            /** @constant */
+            Ukraine: "Ukraine";
+            /** @constant */
+            Kazakhstan: "Kazakhstan";
+            /** @constant */
+            Belarus: "Belarus";
+            /** @constant */
+            Sum: "Amount";
+            /** @constant */
+            Date: "Date";
+            /** @constant */
+            Week: "Week";
+            /** @constant */
+            Month: "Month";
+            /** @constant */
+            month: "month";
+            /** @constant */
+            months: "months";
+            /** @constant */
+            months_mult: "months";
+            /** @constant */
+            months_6: "6 months";
+            /** @constant */
+            Quarter: "Quarter";
+            /** @constant */
+            Year: "Year";
+            /** @constant */
+            Total: "Total";
+            /** @constant */
+            TOTAL: "TOTAL";
+            /** @constant */
+            Yandex_update: "Yandex update";
+            /** @constant */
+            "\u0441ode": "code";
+            /** @constant */
+            Thank_you: "Thank you!";
+            /** @constant */
+            Thank_you_for_using_our_tools: "Thank you for using our tools";
+            /** @constant */
+            Since: "Since";
+            /** @constant */
+            Till: "Till";
+            /** @constant */
+            till: "up to";
+            /** @constant */
+            Yandex: "Yandex";
+            /** @constant */
+            Position: "Rank";
+            /** @constant */
+            Impressions: "Impressions";
+            /** @constant */
+            Demand: "Demand";
+            /** @constant */
+            FAQ: "FAQ";
+            /** @constant */
+            Frequently_asked_questions: "Frequently asked questions";
+            /** @constant */
+            Owner: "Owner";
+            /** @constant */
+            level: "level";
+            /** @constant */
+            No_payments: "No payments yet";
+            /** @constant */
+            Show_legend: "Show legend";
+            /** @constant */
+            Hide_legend: "Hide legend";
+            /** @constant */
+            Menu_expand: "Expand menu";
+            /** @constant */
+            Menu_unexpand: "Minimize menu";
+            /** @constant */
+            Menu_dynamics_search: "Search";
+            /** @constant */
+            Menu_dynamics: "Rank Tracker";
+            /** @constant */
+            Menu_snapshots: "SERP Snapshots";
+            /** @constant */
+            Menu_competitors: "My competitors";
+            /** @constant */
+            Menu_phrases: "Keywords";
+            /** @constant */
+            Menu_audit: "Audit";
+            /** @constant */
+            Menu_analytics: "Overview";
+            /** @constant */
+            Menu_PPC: "PPC";
+            /** @constant */
+            Menu_broker: "Yandex.Direct";
+            /** @constant */
+            Menu_settings: "Settings";
+            /** @constant */
+            Menu_more: "More";
+            /** @constant */
+            Folders: "Folders";
+            /** @constant */
+            Groups: "Groups";
+            /** @constant */
+            Keywords: "Keywords";
+            /** @constant */
+            of_keywords: "keywords";
+            /** @constant */
+            of_folders: "folders";
+            /** @constant */
+            of_projects: "projects";
+            /** @constant */
+            of_project1: "for project";
+            /** @constant */
+            for_project: "for project";
+            /** @constant */
+            competitor: "competitor";
+            /** @constant */
+            All_groups: "All groups";
+            /** @constant */
+            All_folders: "All folders";
+            /** @constant */
+            All_regions: "All locations";
+            /** @constant */
+            All_searchers: "All search engines";
+            /** @constant */
+            All_projects: "All projects";
+            /** @constant */
+            Integration: "Integration";
+            /** @constant */
+            updates_days: "update days";
+            /** @constant */
+            whole_period: "the entire period";
+            /** @constant */
+            two_dates: "two dates";
+            /** @constant */
+            Report_for_project: "Project report for";
+            /** @constant */
+            Interval: "Time range";
+            /** @constant */
+            competitors_comparison: "compare with competitors";
+            /** @constant */
+            Searchers_comparison: "Compare by search engine";
+            /** @constant */
+            Regions_comparison: "Compare by location";
+            /** @constant */
+            Browser_not_supported: "Your browser is not supported!";
+            /** @constant */
+            Browser_settings: "Browser settings";
+            /** @constant */
+            Service_may_go_unstable: "Service might be unstable";
+            /** @constant */
+            Preferred_browser: "Compatible browser is";
+            /** @constant */
+            Comparison_by: "Compare by";
+            /** @constant */
+            Phrases: "Keywords";
+            /** @constant */
+            TOP: "TOP";
+            /** @constant */
+            Top: "Top";
+            /** @constant */
+            Phrases_dynamics: "Keyword dynamics";
+            /** @constant */
+            Project_settings: "Project settings";
+            /** @constant */
+            Phrases_in_TOP: "Keywords in TOP";
+            /** @constant */
+            Phrases_in_Top: "Keywords in Top";
+            /** @constant */
+            Page: "Page";
+            /** @constant */
+            page: "page";
+            /** @constant */
+            last_10_days: "last 10 days";
+            /** @constant */
+            last_month: "last month";
+            /** @constant */
+            last_check: "last update";
+            /** @constant */
+            last_two_dates: "last 2 updates";
+            /** @constant */
+            last_month_week_average: "last month (week's average)";
+            /** @constant */
+            also_searched: "similar keywords";
+            /** @constant */
+            Sources: "Sources";
+            /** @constant */
+            Clicks: "Clicks";
+            /** @constant */
+            Other_dates: "Other dates";
+            /** @constant */
+            Help_center: "Help";
+            /** @constant */
+            Help_center_welcome: "Support Center";
+            /** @constant */
+            Help_center_question: "Got any questions?";
+            /** @constant */
+            Run: "Run";
+            /** @constant */
+            Manage: "Manage";
+            /** @constant */
+            Missed_project_id: "Project id is missing";
+            /** @constant */
+            Missed_project_id2: "`Project_id` is missing";
+            /** @constant */
+            Project_analytics: "Project analytics";
+            /** @constant */
+            Project_dynamics: "Keyword dynamics";
+            /** @constant */
+            Apometr: "Updates";
+            /** @constant */
+            Apometr_title: "Google and Yandex SERP tracking tool";
+            /** @constant */
+            Apometr_description: "Google and Yandex updates calendar (SERP updates and changes). Get SERP updates alerts. SERP updates score for different locations and content types.";
+            /** @constant */
+            Apometr_og_title: "Google and Yandex SERP updates";
+            /** @constant */
+            Apometr_og_description: "SERP updates score for different locations and content types.";
+            /** @constant */
+            Apometr_notice: "Get update alerts";
+            /** @constant */
+            Pricing_title: "Pricing";
+            /** @constant */
+            Profile_title: "Account";
+            /** @constant */
+            Bank_title: "Bank";
+            /** @constant */
+            Your_projects: "Your projects";
+            /** @constant */
+            Incorrect_file_format: "Invalid file format (expected: %availableExtensionsNames%)";
+            /** @constant */
+            Max_size: "Maximum upload size exceeded (%maxSize%)";
+            /** @constant */
+            Audit: "Website SEO Audit tool";
+            /** @constant */
+            Tutorial: "Tutorials";
+            /** @constant */
+            User_id: "User ID";
+            /** @constant */
+            Managing_executive: "Managing executive";
+            /** @constant */
+            Pustovoit: "Pustovoit";
+            /** @constant */
+            Denis: "Denis";
+            /** @constant */
+            Anatolyevich: "Anatolyevich";
+            /** @constant */
+            CEO: "Chief Executive Officer";
+            /** @constant */
+            office: "office";
+            /** @constant */
+            Dot: "Dot";
+            /** @constant */
+            Comma: "Comma";
+            /** @constant */
+            Enter_manually: "Add manually";
+            /** @constant */
+            max_10_mb: "max 10 Mb";
+            /** @constant */
+            Schedule_settings_checks: "Checks schedule";
+            /** @constant */
+            Schedule_settings_reports: "Reports schedule";
+            /** @constant */
+            Basic: "Basic";
+            /** @constant */
+            Address_IP: "IP address";
+            /** @constant */
+            Phone_number: "Phone number";
+            /** @constant */
+            Recipient: "Recipient";
+            /** @constant */
+            Federal_act: " Federal act";
+            /** @constant */
+            optional: "optional";
+            /** @constant */
+            Full_name_abbr: "Full name";
+            /** @constant */
+            Mobile_phone: "Mobile phone";
+            /** @constant */
+            not_found: "not found";
+            /** @constant */
+            Try_to_reset_filters_or_search_archive_html: "Try to <i class=\"a\" data-action=\"reset_filters\">reset</i> all filters<br><i class=\"archive_search\">\n\tor search <a href=\"/support/projects/archive\" target=\"_blank\" class=\"a\">Archived</a> projects</i>";
+            /** @constant */
+            Print: "Print";
+            /** @constant */
+            Contact_us: "Contact us";
+            /** @constant */
+            Competitor_analysis: "Competitor research";
+            /** @constant */
+            Refill_balance: "Top up your balance";
+            /** @constant */
+            Median: "Median";
+            /** @constant */
+            Reset: "Reset";
+            /** @constant */
+            View: "View";
+            /** @constant */
+            Bar_pin: "Pin bar";
+            /** @constant */
+            Count: "Number";
+            /** @constant */
+            Invalid_url: "Invalid URL format";
+            /** @constant */
+            Access_settings: "Access settings";
+            /** @constant */
+            Hide_access_settings: "Hide access settings";
+            /** @constant */
+            Sort: "Sort";
+            /** @constant */
+            No_snippet: "No snippet";
+            /** @constant */
+            Copied_to_clipboard: "Copied to clipboard";
+            /** @constant */
+            Cannot_copied_to_clipboard: "Cannot copied to clipboard";
+            /** @constant */
+            Copy_guest_link_manually: "Copy the guest link manually";
+            /** @constant */
+            Press_to_copy_1: "Press";
+            /** @constant */
+            Press_to_copy_2: "+C to copy a link";
+            /** @constant */
+            Guest_link_created: "Guest link created";
+            /** @constant */
+            Need_fill_required_fields: "Please fill in all required fields";
         };
     };
     responses: never;

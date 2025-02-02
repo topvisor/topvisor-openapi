@@ -11,54 +11,34 @@
                 "type": "object",
                 "properties": {
                     "Title": {
-                        "default": "Manage columns",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Manage columns"
                     },
                     "Column": {
-                        "default": "Column",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Column"
                     },
                     "Last_columns_list": {
-                        "default": "List of recent columns",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "List of recent columns"
                     },
                     "Save_as_new_template": {
-                        "default": "Save as new template",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Save as new template"
                     },
                     "save_changes": {
-                        "default": "save changes",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "save changes"
                     },
                     "Added_columns": {
-                        "default": "Added columns",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Added columns"
                     },
                     "Columns_settings": {
-                        "default": "Column settings",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Column settings"
                     },
                     "Delete_columns": {
-                        "default": "Delete columns",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Delete columns"
                     },
                     "No_columns_added": {
-                        "default": "No columns added",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "No columns added"
                     },
                     "Advanced_options": {
-                        "default": "Advanced options",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Advanced options"
                     }
                 },
                 "required": [

@@ -8,20 +8,20 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         "I18n.Sitemap": {
-            /** @default Tool settings */
-            readonly Settings: string;
-            /** @default Sitemap for <a href="#" class="domain" target="_blank"></a> will contain up to: */
-            readonly Popup_go_text_before_select: string;
-            /** @default Project owner will be charged: */
-            readonly Popup_go_text_before_price: string;
-            /** @default MAX number of pages */
-            readonly Max_pages: string;
-            /** @default You will be charged */
-            readonly Info_cost: string;
-            /** @default Sitemap hasn't  been generated yet.<br>🗺️ <a href="/support/sitemap/" target="_blank">Why you need to generate sitemap →</a> */
-            readonly Hint_not_checks_text: string;
-            /** @default Generate sitemap */
-            readonly Hint_not_checks_btn: string;
+            /** @constant */
+            Settings: "Tool settings";
+            /** @constant */
+            Popup_go_text_before_select: "Sitemap for <a href=\"#\" class=\"domain\" target=\"_blank\"></a> will contain up to:";
+            /** @constant */
+            Popup_go_text_before_price: "Project owner will be charged:";
+            /** @constant */
+            Max_pages: "MAX number of pages";
+            /** @constant */
+            Info_cost: "You will be charged";
+            /** @constant */
+            Hint_not_checks_text: "Sitemap hasn't  been generated yet.<br>🗺️ <a href=\"/support/sitemap/\" target=\"_blank\">Why you need to generate sitemap →</a>";
+            /** @constant */
+            Hint_not_checks_btn: "Generate sitemap";
         };
     };
     responses: never;

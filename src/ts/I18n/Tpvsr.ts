@@ -8,34 +8,34 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         "I18n.Tpvsr": {
-            /** @default Link deleted */
-            readonly Link_deleted: string;
-            /** @default Show deleted links */
-            readonly Show_deleted_links: string;
-            /** @default Show favorite links */
-            readonly Show_favorite_links: string;
-            /** @default Delete link */
-            readonly Remove_link: string;
-            /** @default Restore link */
-            readonly Recover_link: string;
-            /** @default Star link */
-            readonly Set_favorite: string;
-            /** @default URL cannot be shorten. */
-            readonly Link_cannot_be_shortened: string;
-            /** @default URL cannot be shorten (4). URL blocked by Roskomnadzor. */
-            readonly Link_blocked_roskomnadzor: string;
-            /** @default Title Z-A */
-            readonly Sort_name_desc: string;
-            /** @default Title A-Z */
-            readonly Sort_name_asc: string;
-            /** @default Clicks descending */
-            readonly Sort_clicks_desc: string;
-            /** @default Clicks ascending */
-            readonly Sort_clicks_asc: string;
-            /** @default By date from oldest to newest */
-            readonly Sort_date_asc: string;
-            /** @default By date from newest to oldest */
-            readonly Sort_date_desc: string;
+            /** @constant */
+            Link_deleted: "Link deleted";
+            /** @constant */
+            Show_deleted_links: "Show deleted links";
+            /** @constant */
+            Show_favorite_links: "Show favorite links";
+            /** @constant */
+            Remove_link: "Delete link";
+            /** @constant */
+            Recover_link: "Restore link";
+            /** @constant */
+            Set_favorite: "Star link";
+            /** @constant */
+            Link_cannot_be_shortened: "URL cannot be shorten.";
+            /** @constant */
+            Link_blocked_roskomnadzor: "URL cannot be shorten (4). URL blocked by Roskomnadzor.";
+            /** @constant */
+            Sort_name_desc: "Title Z-A";
+            /** @constant */
+            Sort_name_asc: "Title A-Z";
+            /** @constant */
+            Sort_clicks_desc: "Clicks descending";
+            /** @constant */
+            Sort_clicks_asc: "Clicks ascending";
+            /** @constant */
+            Sort_date_asc: "By date from oldest to newest";
+            /** @constant */
+            Sort_date_desc: "By date from newest to oldest";
         };
     };
     responses: never;

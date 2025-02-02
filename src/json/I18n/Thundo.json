@@ -11,14 +11,10 @@
                 "type": "object",
                 "properties": {
                     "Og_title": {
-                        "default": "Thunder is coming",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Thunder is coming"
                     },
                     "Og_description": {
-                        "default": "Fasten your seatbelts, we're about to transform the view of how to do SEO!",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Fasten your seatbelts, we're about to transform the view of how to do SEO!"
                     }
                 },
                 "required": [

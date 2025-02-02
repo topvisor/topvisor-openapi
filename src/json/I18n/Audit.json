@@ -11,782 +11,472 @@
                 "type": "object",
                 "properties": {
                     "Audit": {
-                        "default": "Website audit",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Website audit"
                     },
                     "Indexing": {
-                        "default": "Index status",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Index status"
                     },
                     "Watcher": {
-                        "default": "Website watcher",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Website watcher"
                     },
                     "No_results": {
-                        "default": "You haven't checked your website yet",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "You haven't checked your website yet"
                     },
                     "Process_text": {
-                        "default": "Scanning",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Scanning"
                     },
                     "Header_h1": {
-                        "default": "H1 Header",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "H1 Header"
                     },
                     "Menu": {
-                        "default": "Website SEO audit",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Website SEO audit"
                     },
                     "Associated_pages": {
-                        "default": "Associated pages",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Associated pages"
                     },
                     "String_length_short": {
-                        "default": "Symb. count",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Symb. count"
                     },
                     "Filter_all": {
-                        "default": "All",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "All"
                     },
                     "Filter_with_warnings_or_errors": {
-                        "default": "All with issues",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "All with issues"
                     },
                     "Filter_with_warnings": {
-                        "default": "With warnings",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "With warnings"
                     },
                     "Filter_with_errors": {
-                        "default": "With errors",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "With errors"
                     },
                     "Filter_checks_changed": {
-                        "default": "What's new",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "What's new"
                     },
                     "Links_inner": {
-                        "default": "Internal links",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Internal links"
                     },
                     "Links_external": {
-                        "default": "External links",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "External links"
                     },
                     "Pages_to_check": {
-                        "default": "Pages to check",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Pages to check"
                     },
                     "Generated_sitemap": {
-                        "default": "Generated sitemap",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Generated sitemap"
                     },
                     "Sitemap_not_found": {
-                        "default": "Sitemap not found",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Sitemap not found"
                     },
                     "Sitemap_already_started_error": {
-                        "default": "Sitemap already started",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Sitemap already started"
                     },
                     "Sitemap_gen": {
-                        "default": "Sitemap generator",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Sitemap generator"
                     },
                     "pages": {
-                        "default": "pages",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "pages"
                     },
                     "Site_size": {
-                        "default": "Web page count",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Web page count"
                     },
                     "Header_start_short": {
-                        "default": "Scan",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Scan"
                     },
                     "Step1_gen": {
-                        "default": "Generate",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Generate"
                     },
                     "Step1_gen_notice": {
-                        "default": "A valid map can be generated only with a valid robots.txt",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "A valid map can be generated only with a valid robots.txt"
                     },
                     "Sitemap_bank_info": {
-                        "default": "Sitemap generation for",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Sitemap generation for"
                     },
                     "Audit_bank_info": {
-                        "default": "Project audit for",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Project audit for"
                     },
                     "Report": {
-                        "default": "Report",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Report"
                     },
                     "Header_browse": {
-                        "default": "Summary",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Summary"
                     },
                     "Header_common": {
-                        "default": "Common",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Common"
                     },
                     "Count_pages_checked": {
-                        "default": "Scanned pages",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Scanned pages"
                     },
                     "Header_notices": {
-                        "default": "Warnings",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Warnings"
                     },
                     "Header_warnings": {
-                        "default": "Issues",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Issues"
                     },
                     "Www_redirect": {
-                        "default": "Redirects between",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Redirects between"
                     },
                     "robots_txt_blocked": {
-                        "default": "blocked by robots.txt",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "blocked by robots.txt"
                     },
                     "refresh_redirect": {
-                        "default": "blocked by <i>&lt;meta http-equiv=\"refresh\"&gt;</i>",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "blocked by <i>&lt;meta http-equiv=\"refresh\"&gt;</i>"
                     },
                     "noindex": {
-                        "default": "blocked by <i>&lt;meta name=\"robots\" content=\"noindex\"&gt;</i>",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "blocked by <i>&lt;meta name=\"robots\" content=\"noindex\"&gt;</i>"
                     },
                     "redirect": {
-                        "default": "redirects detected",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "redirects detected"
                     },
                     "index_broken": {
-                        "default": "loading error / incorrect server response code (for example, 404, 503)",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "loading error / incorrect server response code (for example, 404, 503)"
                     },
                     "title_empty": {
-                        "default": "title is missing",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "title is missing"
                     },
                     "title_size": {
-                        "default": "too short / long title",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "too short / long title"
                     },
                     "title_dbl": {
-                        "default": "duplicate title",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "duplicate title"
                     },
                     "description_empty": {
-                        "default": "description is missing",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "description is missing"
                     },
                     "description_size": {
-                        "default": "too short / long description",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "too short / long description"
                     },
                     "description_dbl": {
-                        "default": "duplicate description",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "duplicate description"
                     },
                     "links_empty_content": {
-                        "default": "anchor or alternative (attribute <i>title=\"...\"</i>) text is missing",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "anchor or alternative (attribute <i>title=\"...\"</i>) text is missing"
                     },
                     "nofollow": {
-                        "default": "attribute <i>rel=\"nofollow\"</i> is used",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "attribute <i>rel=\"nofollow\"</i> is used"
                     },
                     "links_broken": {
-                        "default": "broken links",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "broken links"
                     },
                     "no_title": {
-                        "default": "alternative text (attribute <i>alt=\"...\"</i>) is missing",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "alternative text (attribute <i>alt=\"...\"</i>) is missing"
                     },
                     "images_broken": {
-                        "default": "\"broken\" image",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "\"broken\" image"
                     },
                     "h1_empty": {
-                        "default": "empty or missing H1 tag",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "empty or missing H1 tag"
                     },
                     "no_lastmod": {
-                        "default": "Last-Modified is missing",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Last-Modified is missing"
                     },
                     "no_lastmod_since": {
-                        "default": "If-Modified-Since not processed",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "If-Modified-Since not processed"
                     },
                     "Header_index": {
-                        "default": "Index status",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Index status"
                     },
                     "Status_code": {
-                        "default": "Response code",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Response code"
                     },
                     "Robots_txt_blocked_short": {
-                        "default": "Blocked robots.txt",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Blocked robots.txt"
                     },
                     "Header_snippet": {
-                        "default": "Snippet",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Snippet"
                     },
                     "Description": {
-                        "default": "Meta-description (description)",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Meta-description (description)"
                     },
                     "Snippet_title_dbl": {
-                        "default": "Duplicate titles",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Duplicate titles"
                     },
                     "Snippet_description_dbl": {
-                        "default": "Duplicate descriptions",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Duplicate descriptions"
                     },
                     "Header_links": {
-                        "default": "Links",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Links"
                     },
                     "Link_type": {
-                        "default": "Type",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Type"
                     },
                     "Link_content": {
-                        "default": "Text (anchor)",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Text (anchor)"
                     },
                     "Link_title": {
-                        "default": "Text (title)",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Text (title)"
                     },
                     "Link_pages": {
-                        "default": "Pages",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Pages"
                     },
                     "Link_broken": {
-                        "default": "\"Broken\"",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "\"Broken\""
                     },
                     "Link_image": {
-                        "default": "Image",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Image"
                     },
                     "Link_image2": {
-                        "default": "Image",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Image"
                     },
                     "Link_text": {
-                        "default": "Text",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Text"
                     },
                     "Watcher_send_to_informer": {
-                        "default": "Notification Center",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Notification Center"
                     },
                     "Generate_sitemap": {
-                        "default": "Generate sitemap",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Generate sitemap"
                     },
                     "Sitemap_generation": {
-                        "default": "Sitemap generator",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Sitemap generator"
                     },
                     "Sitemap_uploading": {
-                        "default": "Sitemap uploader",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Sitemap uploader"
                     },
                     "Header_images": {
-                        "default": "Images",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Images"
                     },
                     "Image_alt": {
-                        "default": "Alt-text",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Alt-text"
                     },
                     "Image_pages": {
-                        "default": "Pages",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Pages"
                     },
                     "Image_size": {
-                        "default": "Size",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Size"
                     },
                     "Image_broken": {
-                        "default": "\"Broken\"",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "\"Broken\""
                     },
                     "Header_content": {
-                        "default": "Content",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Content"
                     },
                     "Title_page": {
-                        "default": "Page title (Title)",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Page title (Title)"
                     },
                     "Header_pages_short": {
-                        "default": "List of pages",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "List of pages"
                     },
                     "Header_page": {
-                        "default": "Page audit",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Page audit"
                     },
                     "Page_to_disallow": {
-                        "default": "Skip the page in the next reports",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Skip the page in the next reports"
                     },
                     "Page_to_disallow_ok": {
-                        "default": "The page will be skipped in the next reports",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "The page will be skipped in the next reports"
                     },
                     "Page_redirects": {
-                        "default": "Redirects",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Redirects"
                     },
                     "Page_code": {
-                        "default": "Page response code",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Page response code"
                     },
                     "Page_robots_txt_blocked": {
-                        "default": "Blocked by Robots.txt",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Blocked by Robots.txt"
                     },
                     "Page_nofollow": {
-                        "default": "Contains meta robots nofollow",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Contains meta robots nofollow"
                     },
                     "Page_noindex": {
-                        "default": "Blocked by meta robots noindex",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Blocked by meta robots noindex"
                     },
                     "Page_canonical": {
-                        "default": "Contains rel=\"canonical\"",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Contains rel=\"canonical\""
                     },
                     "Page_alternate": {
-                        "default": "Contains rel=\"alternate\"",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Contains rel=\"alternate\""
                     },
                     "Page_refresh": {
-                        "default": "Contains meta refresh redirect",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Contains meta refresh redirect"
                     },
                     "Page_string_length": {
-                        "default": "Symbol count",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Symbol count"
                     },
                     "Page_title_dbl": {
-                        "default": "Duplicate title",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Duplicate title"
                     },
                     "Page_description_dbl": {
-                        "default": "Duplicate description",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Duplicate description"
                     },
                     "Filter_changed": {
-                        "default": "Changes",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Changes"
                     },
                     "Filter_http_not_changed": {
-                        "default": "Changes (HTTP code didn't change)",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Changes (HTTP code didn't change)"
                     },
                     "Filter_check_selected": {
-                        "default": "Only current report",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Only current report"
                     },
                     "Filter_check_before": {
-                        "default": "All until the applied date",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "All until the applied date"
                     },
                     "Watcher_go": {
-                        "default": "Check",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Check"
                     },
                     "Watcher_process_text": {
-                        "default": "Scanning",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Scanning"
                     },
                     "Watcher_bank_info": {
-                        "default": "Website watcher report for",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Website watcher report for"
                     },
                     "Watcher_need_config_1": {
-                        "default": "To run Watcher",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "To run Watcher"
                     },
                     "Watcher_need_config_2": {
-                        "default": "move to the settings",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "move to the settings"
                     },
                     "Watcher_need_config_3": {
-                        "default": "and add a list of pages",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "and add a list of pages"
                     },
                     "Indexing_go": {
-                        "default": "Scan",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Scan"
                     },
                     "Indexing_check": {
-                        "default": "Index checker",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Index checker"
                     },
                     "Indexing_no_results": {
-                        "default": "You haven't checked website index status yet",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "You haven't checked website index status yet"
                     },
                     "Indexing_bank_info": {
-                        "default": "Index status report for",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Index status report for"
                     },
                     "Indexing_need_config_1": {
-                        "default": "To check website index status ",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "To check website index status "
                     },
                     "Indexing_need_config_2": {
-                        "default": "set",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "set"
                     },
                     "Indexing_need_config_3": {
-                        "default": "a list of pages to scan and select search engines",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "a list of pages to scan and select search engines"
                     },
                     "Pages_for_analyse_not_selected": {
-                        "default": "Please add pages to scan in the settings",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Please add pages to scan in the settings"
                     },
                     "Delete_url_by_regexp": {
-                        "default": "Delete URLs by regexp match",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Delete URLs by regexp match"
                     },
                     "Report_limit_warning": {
-                        "default": "*Report can contain up to 1000 records",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "*Report can contain up to 1000 records"
                     },
                     "Watcher_store_180_days": {
-                        "default": "results are stored for 180 days",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "results are stored for 180 days"
                     },
                     "Watcher_selector_title": {
-                        "default": "Select tracking method",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Select tracking method"
                     },
                     "Watcher_regexpr": {
-                        "default": "Regular expression",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Regular expression"
                     },
                     "Download_archive_csv": {
-                        "default": "CSV archive",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "CSV archive"
                     },
                     "Download_archive_pdf": {
-                        "default": "PDF archive",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "PDF archive"
                     },
                     "List_of_urls": {
-                        "default": "List of URLs",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "List of URLs"
                     },
                     "Sitemap_xml_url": {
-                        "default": "Sitemap.xml path",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Sitemap.xml path"
                     },
                     "Sitemap_mail_sitemap": {
-                        "default": "Sitemap",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Sitemap"
                     },
                     "Sitemap_mail_audit": {
-                        "default": "Website audit",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Website audit"
                     },
                     "Sitemap_mail_indexing": {
-                        "default": "Index checker",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Index checker"
                     },
                     "Sitemap_mail_watcher": {
-                        "default": "Website watcher",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Website watcher"
                     },
                     "Retrieve_from_file": {
-                        "default": "Retrieve from file",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Retrieve from file"
                     },
                     "Watcher_delete_title": {
-                        "default": "Delete Website Watcher data ",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Delete Website Watcher data "
                     },
                     "Watcher_delete_info1": {
-                        "default": "Website Watcher report dated",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Website Watcher report dated"
                     },
                     "Watcher_delete_info2": {
-                        "default": "will be deleted. You cannot undo this action.",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "will be deleted. You cannot undo this action."
                     },
                     "Watcher_ignore_options": {
-                        "default": "Skip code",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Skip code"
                     },
                     "Watcher_ignore_html": {
-                        "default": "HTML code",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "HTML code"
                     },
                     "Watcher_ignore_js": {
-                        "default": "javascript code",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "javascript code"
                     },
                     "Watcher_ignore_nothing": {
-                        "default": "do not skip",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "do not skip"
                     },
                     "Watcher_track_button": {
-                        "default": "Track changes",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Track changes"
                     },
                     "Watcher_track_changes": {
-                        "default": "Track changes",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Track changes"
                     },
                     "Watcher_tracking": {
-                        "default": "Tracking changes of",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Tracking changes of"
                     },
                     "Watcher_max_redirects_count": {
-                        "default": "Max redirects",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Max redirects"
                     },
                     "Watcher_already_started_error": {
-                        "default": "Website Watcher already running",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Website Watcher already running"
                     },
                     "Indexing_already_started_error": {
-                        "default": "Index Checker already running",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Index Checker already running"
                     },
                     "Sitemap_XML_link_not_match_host_error": {
-                        "default": "Link to XML does not match project host",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Link to XML does not match project host"
                     },
                     "Sitemap_required_columns_missing": {
-                        "default": "Required URLs column missing",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Required URLs column missing"
                     },
                     "Delete_sitemap": {
-                        "default": "Are you sure you want to delete all URLs?",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Are you sure you want to delete all URLs?"
                     },
                     "URL_exists": {
-                        "default": "This URL already exists",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "This URL already exists"
                     },
                     "Remove_URL": {
-                        "default": "Are you sure you want to delete the selected URL?",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Are you sure you want to delete the selected URL?"
                     },
                     "Enter_URL_one_per_line": {
-                        "default": "Enter a list of URLs (one per line), e.g:",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Enter a list of URLs (one per line), e.g:"
                     },
                     "Content_tracking": {
-                        "default": "Content tracking",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Content tracking"
                     },
                     "Add_tags_use_regexp_notice": {
-                        "default": "Add tags to website code or use regular expressions to track changes",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Add tags to website code or use regular expressions to track changes"
                     },
                     "Use_cookie": {
-                        "default": "Use cookie",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Use cookie"
                     },
                     "Scan_images": {
-                        "default": "Scan images",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Scan images"
                     },
                     "Scan_js": {
-                        "default": "Scan JS",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Scan JS"
                     },
                     "Scan_css": {
-                        "default": "Scan CSS",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Scan CSS"
                     },
                     "Scan_links": {
-                        "default": "Scan links",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Scan links"
                     },
                     "Indexed_pages_with_no_snippet": {
-                        "default": "Indexed pages without snippet",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Indexed pages without snippet"
                     },
                     "Hints_settings": {
-                        "default": {
+                        "const": {
                             "audit_user_agent": "User Agent can affect how the bot sees the site and how DDoS protection works.",
                             "audit_page_delay": "How often crawler can open site URLs. If the delay is small, audit will end faster, but the site can go down due to high load. The bigger is the delay, the longer the check will go.<br><br>The delay can increase, if you check Core Web Vitals. For CWV JS is executed, and you need wait for the full rendering of every URL, that takes at least 20 s.",
                             "audit_resource_delay": "How often crawler can open site resources (images, JS, CSS). If the delay is small, audit will end faster, but the site can go down due to high load. The bigger is the delay, the longer the check will go.",
@@ -796,137 +486,73 @@
                             "audit_scan_css": "",
                             "audit_scan_links": "",
                             "server_location": "Change server location to access blocked websites."
-                        },
-                        "readOnly": true,
-                        "type": "array",
-                        "items": {
-                            "oneOf": [
-                                {
-                                    "type": "string"
-                                },
-                                {
-                                    "type": "number"
-                                }
-                            ]
                         }
                     },
                     "Server_location": {
-                        "default": "Servers location",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Servers location"
                     },
                     "Servers_locations": {
-                        "default": {
+                        "const": {
                             "WESTERN_EUROPE": "Western Europe",
                             "EASTERN_EUROPE": "Eastern Europe"
-                        },
-                        "readOnly": true,
-                        "type": "array",
-                        "items": {
-                            "oneOf": [
-                                {
-                                    "type": "string"
-                                },
-                                {
-                                    "type": "number"
-                                }
-                            ]
                         }
                     },
                     "Page_delay": {
-                        "default": "Delay between URL requests (s)",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Delay between URL requests (s)"
                     },
                     "Resource_delay": {
-                        "default": "Delay between resources requests (s)",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Delay between resources requests (s)"
                     },
                     "API_key_1": {
-                        "default": "Get free PageSpeed Insights API-key",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Get free PageSpeed Insights API-key"
                     },
                     "API_key_2": {
-                        "default": "and paste it in the input field",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "and paste it in the input field"
                     },
                     "Redirect_chain": {
-                        "default": "Redirect chain",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Redirect chain"
                     },
                     "Search_URL": {
-                        "default": "Search URL",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Search URL"
                     },
                     "Auto_collect": {
-                        "default": "Crawl website",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Crawl website"
                     },
                     "Add_by_hand": {
-                        "default": "Add manually",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Add manually"
                     },
                     "Select_site_size": {
-                        "default": "Choose website size",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Choose website size"
                     },
                     "Please_select_site_size": {
-                        "default": "Choose website size",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Choose website size"
                     },
                     "Master_urls_auto_title": {
-                        "default": "Maximum of pages for audit",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Maximum of pages for audit"
                     },
                     "Master_urls_auto_alert": {
-                        "default": "We'll check only the pages found during crawling. First you'll be charged the price for the maximum number of pages, but there can be less pages on the website. We'll refund the amount for the number of pages that hadn't been checked back on your balance.",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "We'll check only the pages found during crawling. First you'll be charged the price for the maximum number of pages, but there can be less pages on the website. We'll refund the amount for the number of pages that hadn't been checked back on your balance."
                     },
                     "Audit_go_alert_need_config": {
-                        "default": "To perform audit you need to add URLs manually or enable website crawling, go to ",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "To perform audit you need to add URLs manually or enable website crawling, go to "
                     },
                     "Audit_go_alert_by_hand": {
-                        "default": "URLs for audit are added manually. To change the way of adding pages, go to",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "URLs for audit are added manually. To change the way of adding pages, go to"
                     },
                     "Audit_go_alert_auto_collect_1": {
-                        "default": "We'll check",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "We'll check"
                     },
                     "Audit_go_alert_auto_collect_2": {
-                        "default": "URLs for audit are crawled automatically. To change the maximum number of pages for audit or add them manually, go to",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "URLs for audit are crawled automatically. To change the maximum number of pages for audit or add them manually, go to"
                     },
                     "Audit_bank_autocrawl_info": {
-                        "default": "Funds reservation for audit with automatic website crawling, project",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Funds reservation for audit with automatic website crawling, project"
                     },
                     "Audit_bank_autocrawl_unhold_info": {
-                        "default": "Reservation refund",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Reservation refund"
                     },
                     "Delete_url": {
-                        "default": "Delete URL",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Delete URL"
                     }
                 },
                 "required": [

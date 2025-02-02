@@ -8,8 +8,8 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         "I18n.Landings": {
-            /** @default No card needed */
-            readonly No_card_needed: string;
+            /** @constant */
+            No_card_needed: "No card needed";
         };
     };
     responses: never;

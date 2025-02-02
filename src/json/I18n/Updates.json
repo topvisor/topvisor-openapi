@@ -11,99 +11,61 @@
                 "type": "object",
                 "properties": {
                     "SERP_update_score": {
-                        "default": "SERP update score",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "SERP update score"
                     },
                     "confirmed_Yandex": {
-                        "default": "update confirmed by Yandex",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "update confirmed by Yandex"
                     },
                     "Calendar": {
-                        "default": "updates calendar",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "updates calendar"
                     },
                     "Informer": {
-                        "default": "Website informer",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Website informer"
                     },
                     "Yandex_search_base_update": {
-                        "default": "Yandex search base update",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Yandex search base update"
                     },
                     "SERP_changes": {
-                        "default": "SERP change",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "SERP change"
                     },
                     "Text_update": {
-                        "default": " Text update: index <span class=\"top-only-pc\">updated</span> on ",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": " Text update: index <span class=\"top-only-pc\">updated</span> on "
                     },
                     "Index_updated": {
-                        "default": "Index updated on ",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Index updated on "
                     },
                     "Comments": {
-                        "default": "Comments",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Comments"
                     },
                     "Add_comment": {
-                        "default": "Add comment",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Add comment"
                     },
                     "Sign_in_to_leave_comments": {
-                        "default": "<a href=\".\" class=\"btn\">Sign in</a> to leave comments",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "<a href=\".\" class=\"btn\">Sign in</a> to leave comments"
                     },
                     "Subscribe": {
-                        "default": "Subscribe",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Subscribe"
                     },
                     "points": {
-                        "default": "points",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "points"
                     },
                     "Update": {
-                        "default": "Update",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Update"
                     },
                     "Updates_calendar": {
-                        "default": "Updates calendar",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Updates calendar"
                     },
                     "Yandex_update": {
-                        "default": "Yandex update",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Yandex update"
                     },
                     "Yandex_text_update": {
-                        "default": "Yandex text update",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Yandex text update"
                     },
                     "Yandex_SERP_update": {
-                        "default": "Yandex SERP update",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Yandex SERP update"
                     },
                     "Index_updated_on": {
-                        "default": "Index updated on",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Index updated on"
                     }
                 },
                 "required": [

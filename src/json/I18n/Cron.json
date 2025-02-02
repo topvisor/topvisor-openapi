@@ -11,59 +11,37 @@
                 "type": "object",
                 "properties": {
                     "Field_command": {
-                        "default": "Сommand",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Сommand"
                     },
                     "Field_description": {
-                        "default": "Description",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Description"
                     },
                     "Field_days": {
-                        "default": "Days of the week",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Days of the week"
                     },
                     "Field_hh": {
-                        "default": "Hours",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Hours"
                     },
                     "Field_i": {
-                        "default": "Minutes",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Minutes"
                     },
                     "Field_on": {
-                        "default": "On/Off",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "On/Off"
                     },
                     "Field_task_create_time": {
-                        "default": "Task created",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Task created"
                     },
                     "Field_task_start_time": {
-                        "default": "Task runned",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Task runned"
                     },
                     "Field_task_status": {
-                        "default": "Execution status",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Execution status"
                     },
                     "Disabled": {
-                        "default": "Disabled",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Disabled"
                     },
                     "Enabled": {
-                        "default": "Enabled",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Enabled"
                     }
                 },
                 "required": [

@@ -11,39 +11,25 @@
                 "type": "object",
                 "properties": {
                     "Settings": {
-                        "default": "Tool settings",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Tool settings"
                     },
                     "Popup_go_text_before_select": {
-                        "default": "Sitemap for <a href=\"#\" class=\"domain\" target=\"_blank\"></a> will contain up to:",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Sitemap for <a href=\"#\" class=\"domain\" target=\"_blank\"></a> will contain up to:"
                     },
                     "Popup_go_text_before_price": {
-                        "default": "Project owner will be charged:",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Project owner will be charged:"
                     },
                     "Max_pages": {
-                        "default": "MAX number of pages",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "MAX number of pages"
                     },
                     "Info_cost": {
-                        "default": "You will be charged",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "You will be charged"
                     },
                     "Hint_not_checks_text": {
-                        "default": "Sitemap hasn't  been generated yet.<br>🗺️ <a href=\"/support/sitemap/\" target=\"_blank\">Why you need to generate sitemap →</a>",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Sitemap hasn't  been generated yet.<br>🗺️ <a href=\"/support/sitemap/\" target=\"_blank\">Why you need to generate sitemap →</a>"
                     },
                     "Hint_not_checks_btn": {
-                        "default": "Generate sitemap",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Generate sitemap"
                     }
                 },
                 "required": [

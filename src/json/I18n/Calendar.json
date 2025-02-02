@@ -11,89 +11,55 @@
                 "type": "object",
                 "properties": {
                     "Dw_1": {
-                        "default": "Mo",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Mo"
                     },
                     "Dw_2": {
-                        "default": "Tu",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Tu"
                     },
                     "Dw_3": {
-                        "default": "We",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "We"
                     },
                     "Dw_4": {
-                        "default": "Th",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Th"
                     },
                     "Dw_5": {
-                        "default": "Fr",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Fr"
                     },
                     "Dw_6": {
-                        "default": "Sa",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Sa"
                     },
                     "Dw_7": {
-                        "default": "Su",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Su"
                     },
                     "Day_of_week_1": {
-                        "default": "Monday",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Monday"
                     },
                     "Day_of_week_2": {
-                        "default": "Tuesday",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Tuesday"
                     },
                     "Day_of_week_3": {
-                        "default": "Wednesday",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Wednesday"
                     },
                     "Day_of_week_4": {
-                        "default": "Thursday",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Thursday"
                     },
                     "Day_of_week_5": {
-                        "default": "Friday",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Friday"
                     },
                     "Day_of_week_6": {
-                        "default": "Saturday",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Saturday"
                     },
                     "Day_of_week_7": {
-                        "default": "Sunday",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Sunday"
                     },
                     "months": {
-                        "default": "|january|february|march|april|may|june|july|august|september|october|november|december",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "|january|february|march|april|may|june|july|august|september|october|november|december"
                     },
                     "of_months": {
-                        "default": "|january|february|march|april|may|june|july|august|september|october|november|december",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "|january|february|march|april|may|june|july|august|september|october|november|december"
                     },
                     "in_months": {
-                        "default": "|january|february|march|april|may|june|july|august|september|october|november|december",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "|january|february|march|april|may|june|july|august|september|october|november|december"
                     }
                 },
                 "required": [

@@ -8,468 +8,468 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         "I18n.Projects": {
-            /** @default Add project */
-            readonly Add_project_title: string;
-            /** @default Enter project name */
-            readonly Enter_project_name: string;
-            /** @default Project URL */
-            readonly Site: string;
-            /** @default Keywords */
-            readonly Keywords: string;
-            /** @default Bid manager */
-            readonly Broker: string;
-            /** @default Analytics and reports */
-            readonly Analytics: string;
-            /** @default Enter website or webpage URL */
-            readonly Add_project_url: string;
-            /** @default Delete project */
-            readonly Del_project_title: string;
-            /** @default Are you sure you want to delete project */
-            readonly Del_project_question: string;
-            /** @default Are you sure you want to delete the selected projects? */
-            readonly Del_selected_projects_question: string;
-            /** @default Are you sure you want to delete this project?<br><br>Projects will be moved to the root folder */
-            readonly Del_folder_question: string;
-            /** @default Check Rankings */
-            readonly Check_positions: string;
-            /** @default Apply filter and check rankings (search engine / location / folder / group) */
-            readonly Check_positions_with_filter: string;
-            /** @default Domain not specified, check "site" parameter */
-            readonly domain_missed: string;
-            /** @default Invalid domain name */
-            readonly Incorrect_domain: string;
-            /** @default You can't change project owner access settings */
-            readonly owner_rights_error: string;
-            /** @default We are assigning project tasks, settings will be available within a minute */
-            readonly Edit_positions_notice_to_wait: string;
-            /** @default Search engine provider missed */
-            readonly Searcher_missed: string;
-            /** @default This search engine already added to the project */
-            readonly Searcher_exists: string;
-            /** @default Location with applied settings already added */
-            readonly Region_exists: string;
-            /** @default You can't add this location */
-            readonly Region_not_available: string;
-            /** @default Youtube rank tracking is not available for this project */
-            readonly Project_not_available_for_Youtube: string;
-            /** @default Search engine not found */
-            readonly Searcher_not_found: string;
-            /** @default You are the project owner already */
-            readonly You_are_owner: string;
-            /** @default Add to favorites */
-            readonly Add_to_favorites: string;
-            /** @default This user doesn't exist */
-            readonly User_not_exists: string;
-            /** @default You received full access to the project */
-            readonly ChangeOwner_message1: string;
-            /** @default To accept project transfer and start working on it, click "Accept project". */
-            readonly ChangeOwner_message2: string;
-            /** @default Accept project */
-            readonly ChangeOwner_message3: string;
-            /** @default Project transfer */
-            readonly ChangeOwner_title: string;
-            /** @default The project was delegated by the user who is no longer a project owner. */
-            readonly AcceptChangeOwner_msg1: string;
-            /** @default You have become the project owner of */
-            readonly AcceptChangeOwner_msg2: string;
-            /** @default Add competitors */
-            readonly Competitors_add: string;
-            /** @default Add competitors */
-            readonly Competitors_add2: string;
-            /** @default Keyword research cost */
-            readonly Competitors_price_1: string;
-            /** @default $ */
-            readonly Competitors_price_2: string;
-            /** @default Competitor site not specified */
-            readonly Competitor_site_missed: string;
-            /** @default Competitor already exists */
-            readonly Competitor_double: string;
-            /** @default Invalid data format */
-            readonly Competitor_Wrong_data: string;
-            /** @default Competitor must match youtube.com* wildcard */
-            readonly Youtube_competitor_error: string;
-            /** @default You can't add more than 250 competitors */
-            readonly Competitor_count_error: string;
-            /** @default Check campaign access and API permission */
-            readonly Check_campaigns_acess_and_API_permission: string;
-            /** @default Project owner will be charged */
-            readonly Sum_for_pay: string;
-            /** @default Visits on Yandex */
-            readonly Visits_in_yandex: string;
-            /** @default Visits on Google */
-            readonly Visits_in_google: string;
-            /** @default Visits on Mail.ru */
-            readonly Visits_in_mail: string;
-            /** @default You will be charged */
-            readonly Info_cost: string;
-            /** @default Last check */
-            readonly Last_update: string;
-            /** @default TOP 10/11-30/30+ */
-            readonly Keywords_in_top: string;
-            /** @default Dynamics */
-            readonly Dynamics: string;
-            /** @default Traffic in SE */
-            readonly Traffic: string;
-            /** @default Index status */
-            readonly Indexed: string;
-            /** @default Links */
-            readonly Links: string;
-            /** @default Avg.pos. */
-            readonly Average_position: string;
-            /** @default Vis-ty */
-            readonly Visibility: string;
-            /** @default Domain registration */
-            readonly Register_domain: string;
-            /** @default Archive */
-            readonly Archive_project: string;
-            /** @default Restore */
-            readonly Unarchive_project: string;
-            /** @default Renew */
-            readonly Extend: string;
-            /** @default Renew your domain */
-            readonly Extend_domain: string;
-            /** @default Transfer your domain */
-            readonly Transfer_domain: string;
-            /** @default Y: */
-            readonly Yandex_short: string;
-            /** @default SQI */
-            readonly Yandex_SQI: string;
-            /** @default Default tag */
-            readonly No_tag: string;
-            /** @default Edit */
-            readonly Edit: string;
-            /** @default My projects */
-            readonly My_projects: string;
-            /** @default Scheduled update */
-            readonly Scheduled_update: string;
-            /** @default Manual update */
-            readonly Manual_update: string;
-            /** @default Guest projects */
-            readonly Guest_projects: string;
-            /** @default My and guest projects */
-            readonly Guest_my_projects: string;
-            /** @default Archived projects */
-            readonly Archived_projects: string;
-            /** @default Add project */
-            readonly Add_project: string;
-            /** @default Current registrar */
-            readonly Current_registrar: string;
-            /** @default You are going to archive your project. Archived projects are suspended and unavailable. */
-            readonly Info_archived: string;
-            /** @default You are going to archive the <i class="one">project</i><i class="several">selected projects</i>. Archived projects are suspended and unavailable. */
-            readonly Info_archived_html: string;
-            /** @default Do you really want to restore this project from the archive? */
-            readonly Accept_unarchive: string;
-            /** @default Do you really want to restore the <i class="one">project</i><i class="several">selected projects</i>? */
-            readonly Info_unarchive_html: string;
-            /** @default Archive */
-            readonly Archive: string;
-            /** @default Restore */
-            readonly Unarchive: string;
-            /** @default Check Rankings */
-            readonly Info_bulk_update: string;
-            /** @default Check Rankings */
-            readonly Bulk_update: string;
-            /** @default There are no projects available for bulk update */
-            readonly No_bulk_update_projects: string;
-            /** @default Registered */
-            readonly Registration_date: string;
-            /** @default Domain expires */
-            readonly Domain_valid_until: string;
-            /** @default Deleted */
-            readonly Deleted_date: string;
-            /** @default Domain to renew after */
-            readonly Domain_extended_time: string;
-            /** @default Your<br>domain renewal costs */
-            readonly Extend_current_cost: string;
-            /** @default Renew your domain with <br>  */
-            readonly Extend_axelname: string;
-            /** @default Update the key */
-            readonly Update_tpa: string;
-            /** @default Copy project and main settings */
-            readonly Copy_with_settings: string;
-            /** @default Copy keywords */
-            readonly Copy_keywords: string;
-            /** @default Copy keyword ranking history */
-            readonly Copy_dynamics: string;
-            /** @default Copy */
-            readonly Copy: string;
-            /** @default Copy */
-            readonly A_copy: string;
-            /** @default Copy project */
-            readonly Copy_project: string;
-            /** @default On days of week */
-            readonly Report_on_weekdays: string;
-            /** @default Custom frequency */
-            readonly Report_custom_frequency: string;
-            /** @default Send competition report */
-            readonly Send_competitor_report: string;
-            /** @default Report format */
-            readonly Report_format: string;
-            /** @default Test report */
-            readonly Send_test_report: string;
-            /** @default Test report has been successfully sent to your email */
-            readonly Test_report_sent_email: string;
-            /** @default Test report successfully sent */
-            readonly Test_report_sent: string;
-            /** @default Add user */
-            readonly Access_add_user: string;
-            /** @default company logo */
-            readonly company_logo: string;
-            /** @default Do not run scheduled update if rankings were checked on demand less than 12 hours ago */
-            readonly Settings_no_automated_update_if_manual: string;
-            /** @default On dates */
-            readonly Settings_particular_days: string;
-            /** @default After Yandex updates */
-            readonly After_updates: string;
-            /** @default After Yandex update */
-            readonly After_update: string;
-            /** @default immediately */
-            readonly immediately: string;
-            /** @default in %hour% h. */
-            readonly in_hour: string;
-            /** @default On demand */
-            readonly Settings_on_demand: string;
-            /** @default Tool settings */
-            readonly Advanced_options: string;
-            /** @default Do not collect */
-            readonly Do_not_collect: string;
-            /** @default Collect */
-            readonly Collect: string;
-            /** @default Subdomains */
-            readonly Subdomains: string;
-            /** @default Do not check */
-            readonly Subdomains_do_not_check: string;
-            /** @default Check */
-            readonly Subdomains_check: string;
-            /** @default Search filter */
-            readonly Search_filter: string;
-            /** @default Do not filter */
-            readonly Do_not_filter: string;
-            /** @default Moderate */
-            readonly Moderate_filtering: string;
-            /** @default Family search */
-            readonly Family_search: string;
-            /** @default Spelling */
-            readonly Spelling: string;
-            /** @default Do not correct */
-            readonly Do_not_correct_spelling: string;
-            /** @default Correct */
-            readonly Correct_spelling: string;
-            /** @default Traffic segmentation */
-            readonly Traffic_segmentation: string;
-            /** @default By region */
-            readonly Local_traffic: string;
-            /** @default Global */
-            readonly Global_traffic: string;
-            /** @default Pick search engine */
-            readonly Select_se: string;
-            /** @default Denied */
-            readonly Integrate_denied: string;
-            /** @default You seem to be logged out of your account */
-            readonly Integrate_account_locked: string;
-            /** @default Schedule */
-            readonly Schedule: string;
-            /** @default Competitors */
-            readonly Competitors: string;
-            /** @default competitors */
-            readonly of_competitors: string;
-            /** @default Access */
-            readonly Access: string;
-            /** @default Project is archived, access to features is limited. */
-            readonly Project_archived_notice: string;
-            /** @default Projects inactive during 180 days are archived automatically */
-            readonly Project_archived_90days_notice: string;
-            /** @default Projects are archived */
-            readonly Projects_archived: string;
-            /** @default Popular */
-            readonly Popular: string;
-            /** @default Other */
-            readonly Other: string;
-            /** @default Select project */
-            readonly Select_project: string;
-            /** @default List of projects */
-            readonly To_list_of_projects: string;
-            /** @default Search projects */
-            readonly Search_projects: string;
-            /** @default Project transfer */
-            readonly Delegation: string;
-            /** @default Enable/Disable all competitors */
-            readonly Activate_deactivate_competitors: string;
-            /** @default Are you sure you want to wipe all competitors? */
-            readonly Wipe_all_competitors: string;
-            /** @default Wipe competitors */
-            readonly Wipe_competitors_note: string;
-            /** @default Reporting period */
-            readonly Reporting_period: string;
-            /** @default Do not ask me again */
-            readonly Do_not_ask: string;
-            /** @default To accept a project <b>%project_name%</b> transfer, click the message */
-            readonly To_accept_project_click_msg: string;
-            /** @default Send to */
-            readonly Reports_send_to_address: string;
-            /** @default Tools */
-            readonly Checks: string;
-            /** @default Reports */
-            readonly Reports: string;
-            /** @default Share project */
-            readonly Access_to_project: string;
-            /** @default Transfer project */
-            readonly Transfer_project: string;
-            /** @default Do not apply branding */
-            readonly Do_not_brand: string;
-            /** @default Show your account balance */
-            readonly Show_account_balance: string;
-            /** @default Previous step */
-            readonly To_previous_step: string;
-            /** @default Next */
-            readonly Next: string;
-            /** @default Keyword import */
-            readonly Keyword_import: string;
-            /** @default Add competitors */
-            readonly Competitor_settings: string;
-            /** @default Search engines and locations */
-            readonly Se_and_locations: string;
-            /** @default Completed */
-            readonly Completed: string;
-            /** @default Track rankings */
-            readonly Track_rankings: string;
-            /** @default Start site audit */
-            readonly Start_audit: string;
-            /** @default Start watcher */
-            readonly Start_watcher: string;
-            /** @default Start indexing */
-            readonly Start_indexing: string;
-            /** @default Sitemap generator */
-            readonly Start_sitemap: string;
-            /** @default Main settings */
-            readonly Main_settings: string;
-            /** @default Create project */
-            readonly Create_project: string;
-            /** @default Select a project type, add a URL and a name */
-            readonly Select_type_add_name_url: string;
-            /** @default Enter the URL of a channel (youtube.com/@user) or a video (youtube.com/watch?v=...) */
-            readonly Enter_youtube_URL: string;
-            /** @default Enter app URL */
-            readonly Enter_app_URL: string;
-            /** @default Enter domain (example.com) or page URL (example.com/page/) */
-            readonly Enter_domain_or_page: string;
-            /** @default Site or webpage */
-            readonly Site_or_page: string;
-            /** @default Enter project name */
-            readonly Add_project_name: string;
-            /** @default Created */
-            readonly Created_date: string;
-            /** @default Project owner */
-            readonly Project_owner: string;
-            /** @default Add keywords */
-            readonly Add_keywords: string;
-            /** @default Add keywords */
-            readonly Add_keywords_button: string;
-            /** @default Keywords */
-            readonly Keywords_for_import: string;
-            /** @default Enter keywords, one per line */
-            readonly Enter_keywords_one_per_line: string;
-            /** @default Keyword ideas */
-            readonly Recommended_keywords: string;
-            /** @default Add selected */
-            readonly Add_selected: string;
-            /** @default Added keywords */
-            readonly Added_keywords: string;
-            /** @default Group and manage tags at */
-            readonly Group_manage_tags_on_page: string;
-            /** @default see */
-            readonly see: string;
-            /** @default Add competitors */
-            readonly Add_competitors: string;
-            /** @default My competitors */
-            readonly My_competitors: string;
-            /** @default Competitor URL */
-            readonly Competitor_URL: string;
-            /** @default Competitor name */
-            readonly Competitor_name: string;
-            /** @default Find competitors */
-            readonly Find_competitors: string;
-            /** @default Suggested competitors */
-            readonly Suggested_competitors: string;
-            /** @default Check search volume */
-            readonly Get_search_volume: string;
-            /** @default Check keyword rankings */
-            readonly Check_keyword_rankings: string;
-            /** @default Project setup completed */
-            readonly Project_setup_completed: string;
-            /** @default Add search engines and locations */
-            readonly Add_search_engines_and_locations: string;
-            /** @default Select search engine */
-            readonly Select_search_engine: string;
-            /** @default Press a search engine icon and add a location */
-            readonly Press_search_engine_icon_to_add_location: string;
-            /** @default You can manage added locations in project settings */
-            readonly You_can_manage_locations_in_settings: string;
-            /** @default Enter Location or its Yandex code */
-            readonly Enter_location_or_yandex_code: string;
-            /** @default Locations */
-            readonly Locations: string;
-            /** @default Do not run setup wizard */
-            readonly Skip_wizard: string;
-            /** @default Set up Rank Tracker */
-            readonly Setup_rank_tracker: string;
-            /** @default Set up Website Audit */
-            readonly Setup_audit: string;
-            /** @default Pages for audit */
-            readonly Setup_audit_urls: string;
-            /** @default Set up Watcher */
-            readonly Setup_watcher: string;
-            /** @default Pages for watcher */
-            readonly Setup_watcher_urls: string;
-            /** @default Set up Index Checker */
-            readonly Setup_indexing: string;
-            /** @default Pages for indexing */
-            readonly Setup_indexing_urls: string;
-            /** @default Set up Sitemap Generator */
-            readonly Setup_sitemap: string;
-            /** @default Add all recommended */
-            readonly Add_all_recommended: string;
-            /** @default Delete keywords from the orginal project */
-            readonly Delete_keywords_from_orginal_project: string;
-            /** @default Name */
-            readonly Project_name: string;
-            /** @default Selected */
-            readonly Project_projects_selected: string;
-            /** @default Create your first project */
-            readonly Create_your_first_project: string;
-            /** @default No projects match filter */
-            readonly No_projects_match_filter: string;
-            /** @default Enter folder name */
-            readonly Enter_folder_name: string;
-            /** @default No tasks found. Add keywords, a search engine and a location in the project settings */
-            readonly Add_keywords_se_locations_to_check_notice: string;
-            /** @default Summary by location */
-            readonly Summary_by_location: string;
-            /** @default Project type */
-            readonly Project_type: string;
-            /** @default Project folder */
-            readonly Project_folder: string;
-            /** @default Selected project type */
-            readonly Selected_project_type: string;
-            /** @default Project owner will be charged */
-            readonly Cost_for_guest_project_owner: string;
-            /** @default Move to folder */
-            readonly Move_to_folder: string;
-            /** @default Open in new tab */
-            readonly Open_in_new_tab: string;
-            /** @default In queue */
-            readonly In_queue: string;
-            /** @default In progress */
-            readonly In_progress: string;
-            /** @default Number of URLs */
-            readonly URL_count: string;
-            /** @default Username */
-            readonly Username: string;
-            /** @default Spent */
-            readonly Spent: string;
-            /** @default Spend limit */
-            readonly Spend_limit: string;
+            /** @constant */
+            Add_project_title: "Add project";
+            /** @constant */
+            Enter_project_name: "Enter project name";
+            /** @constant */
+            Site: "Project URL";
+            /** @constant */
+            Keywords: "Keywords";
+            /** @constant */
+            Broker: "Bid manager";
+            /** @constant */
+            Analytics: "Analytics and reports";
+            /** @constant */
+            Add_project_url: "Enter website or webpage URL";
+            /** @constant */
+            Del_project_title: "Delete project";
+            /** @constant */
+            Del_project_question: "Are you sure you want to delete project";
+            /** @constant */
+            Del_selected_projects_question: "Are you sure you want to delete the selected projects?";
+            /** @constant */
+            Del_folder_question: "Are you sure you want to delete this project?<br><br>Projects will be moved to the root folder";
+            /** @constant */
+            Check_positions: "Check Rankings";
+            /** @constant */
+            Check_positions_with_filter: "Apply filter and check rankings (search engine / location / folder / group)";
+            /** @constant */
+            domain_missed: "Domain not specified, check \"site\" parameter";
+            /** @constant */
+            Incorrect_domain: "Invalid domain name";
+            /** @constant */
+            owner_rights_error: "You can't change project owner access settings";
+            /** @constant */
+            Edit_positions_notice_to_wait: "We are assigning project tasks, settings will be available within a minute";
+            /** @constant */
+            Searcher_missed: "Search engine provider missed";
+            /** @constant */
+            Searcher_exists: "This search engine already added to the project";
+            /** @constant */
+            Region_exists: "Location with applied settings already added";
+            /** @constant */
+            Region_not_available: "You can't add this location";
+            /** @constant */
+            Project_not_available_for_Youtube: "Youtube rank tracking is not available for this project";
+            /** @constant */
+            Searcher_not_found: "Search engine not found";
+            /** @constant */
+            You_are_owner: "You are the project owner already";
+            /** @constant */
+            Add_to_favorites: "Add to favorites";
+            /** @constant */
+            User_not_exists: "This user doesn't exist";
+            /** @constant */
+            ChangeOwner_message1: "You received full access to the project";
+            /** @constant */
+            ChangeOwner_message2: "To accept project transfer and start working on it, click \"Accept project\".";
+            /** @constant */
+            ChangeOwner_message3: "Accept project";
+            /** @constant */
+            ChangeOwner_title: "Project transfer";
+            /** @constant */
+            AcceptChangeOwner_msg1: "The project was delegated by the user who is no longer a project owner.";
+            /** @constant */
+            AcceptChangeOwner_msg2: "You have become the project owner of";
+            /** @constant */
+            Competitors_add: "Add competitors";
+            /** @constant */
+            Competitors_add2: "Add competitors";
+            /** @constant */
+            Competitors_price_1: "Keyword research cost";
+            /** @constant */
+            Competitors_price_2: "$";
+            /** @constant */
+            Competitor_site_missed: "Competitor site not specified";
+            /** @constant */
+            Competitor_double: "Competitor already exists";
+            /** @constant */
+            Competitor_Wrong_data: "Invalid data format";
+            /** @constant */
+            Youtube_competitor_error: "Competitor must match youtube.com* wildcard";
+            /** @constant */
+            Competitor_count_error: "You can't add more than 250 competitors";
+            /** @constant */
+            Check_campaigns_acess_and_API_permission: "Check campaign access and API permission";
+            /** @constant */
+            Sum_for_pay: "Project owner will be charged";
+            /** @constant */
+            Visits_in_yandex: "Visits on Yandex";
+            /** @constant */
+            Visits_in_google: "Visits on Google";
+            /** @constant */
+            Visits_in_mail: "Visits on Mail.ru";
+            /** @constant */
+            Info_cost: "You will be charged";
+            /** @constant */
+            Last_update: "Last check";
+            /** @constant */
+            Keywords_in_top: "TOP 10/11-30/30+";
+            /** @constant */
+            Dynamics: "Dynamics";
+            /** @constant */
+            Traffic: "Traffic in SE";
+            /** @constant */
+            Indexed: "Index status";
+            /** @constant */
+            Links: "Links";
+            /** @constant */
+            Average_position: "Avg.pos.";
+            /** @constant */
+            Visibility: "Vis-ty";
+            /** @constant */
+            Register_domain: "Domain registration";
+            /** @constant */
+            Archive_project: "Archive";
+            /** @constant */
+            Unarchive_project: "Restore";
+            /** @constant */
+            Extend: "Renew";
+            /** @constant */
+            Extend_domain: "Renew your domain";
+            /** @constant */
+            Transfer_domain: "Transfer your domain";
+            /** @constant */
+            Yandex_short: "Y:";
+            /** @constant */
+            Yandex_SQI: "SQI";
+            /** @constant */
+            No_tag: "Default tag";
+            /** @constant */
+            Edit: "Edit";
+            /** @constant */
+            My_projects: "My projects";
+            /** @constant */
+            Scheduled_update: "Scheduled update";
+            /** @constant */
+            Manual_update: "Manual update";
+            /** @constant */
+            Guest_projects: "Guest projects";
+            /** @constant */
+            Guest_my_projects: "My and guest projects";
+            /** @constant */
+            Archived_projects: "Archived projects";
+            /** @constant */
+            Add_project: "Add project";
+            /** @constant */
+            Current_registrar: "Current registrar";
+            /** @constant */
+            Info_archived: "You are going to archive your project. Archived projects are suspended and unavailable.";
+            /** @constant */
+            Info_archived_html: "You are going to archive the <i class=\"one\">project</i><i class=\"several\">selected projects</i>. Archived projects are suspended and unavailable.";
+            /** @constant */
+            Accept_unarchive: "Do you really want to restore this project from the archive?";
+            /** @constant */
+            Info_unarchive_html: "Do you really want to restore the <i class=\"one\">project</i><i class=\"several\">selected projects</i>?";
+            /** @constant */
+            Archive: "Archive";
+            /** @constant */
+            Unarchive: "Restore";
+            /** @constant */
+            Info_bulk_update: "Check Rankings";
+            /** @constant */
+            Bulk_update: "Check Rankings";
+            /** @constant */
+            No_bulk_update_projects: "There are no projects available for bulk update";
+            /** @constant */
+            Registration_date: "Registered";
+            /** @constant */
+            Domain_valid_until: "Domain expires";
+            /** @constant */
+            Deleted_date: "Deleted";
+            /** @constant */
+            Domain_extended_time: "Domain to renew after";
+            /** @constant */
+            Extend_current_cost: "Your<br>domain renewal costs";
+            /** @constant */
+            Extend_axelname: "Renew your domain with <br> ";
+            /** @constant */
+            Update_tpa: "Update the key";
+            /** @constant */
+            Copy_with_settings: "Copy project and main settings";
+            /** @constant */
+            Copy_keywords: "Copy keywords";
+            /** @constant */
+            Copy_dynamics: "Copy keyword ranking history";
+            /** @constant */
+            Copy: "Copy";
+            /** @constant */
+            A_copy: "Copy";
+            /** @constant */
+            Copy_project: "Copy project";
+            /** @constant */
+            Report_on_weekdays: "On days of week";
+            /** @constant */
+            Report_custom_frequency: "Custom frequency";
+            /** @constant */
+            Send_competitor_report: "Send competition report";
+            /** @constant */
+            Report_format: "Report format";
+            /** @constant */
+            Send_test_report: "Test report";
+            /** @constant */
+            Test_report_sent_email: "Test report has been successfully sent to your email";
+            /** @constant */
+            Test_report_sent: "Test report successfully sent";
+            /** @constant */
+            Access_add_user: "Add user";
+            /** @constant */
+            company_logo: "company logo";
+            /** @constant */
+            Settings_no_automated_update_if_manual: "Do not run scheduled update if rankings were checked on demand less than 12 hours ago";
+            /** @constant */
+            Settings_particular_days: "On dates";
+            /** @constant */
+            After_updates: "After Yandex updates";
+            /** @constant */
+            After_update: "After Yandex update";
+            /** @constant */
+            immediately: "immediately";
+            /** @constant */
+            in_hour: "in %hour% h.";
+            /** @constant */
+            Settings_on_demand: "On demand";
+            /** @constant */
+            Advanced_options: "Tool settings";
+            /** @constant */
+            Do_not_collect: "Do not collect";
+            /** @constant */
+            Collect: "Collect";
+            /** @constant */
+            Subdomains: "Subdomains";
+            /** @constant */
+            Subdomains_do_not_check: "Do not check";
+            /** @constant */
+            Subdomains_check: "Check";
+            /** @constant */
+            Search_filter: "Search filter";
+            /** @constant */
+            Do_not_filter: "Do not filter";
+            /** @constant */
+            Moderate_filtering: "Moderate";
+            /** @constant */
+            Family_search: "Family search";
+            /** @constant */
+            Spelling: "Spelling";
+            /** @constant */
+            Do_not_correct_spelling: "Do not correct";
+            /** @constant */
+            Correct_spelling: "Correct";
+            /** @constant */
+            Traffic_segmentation: "Traffic segmentation";
+            /** @constant */
+            Local_traffic: "By region";
+            /** @constant */
+            Global_traffic: "Global";
+            /** @constant */
+            Select_se: "Pick search engine";
+            /** @constant */
+            Integrate_denied: "Denied";
+            /** @constant */
+            Integrate_account_locked: "You seem to be logged out of your account";
+            /** @constant */
+            Schedule: "Schedule";
+            /** @constant */
+            Competitors: "Competitors";
+            /** @constant */
+            of_competitors: "competitors";
+            /** @constant */
+            Access: "Access";
+            /** @constant */
+            Project_archived_notice: "Project is archived, access to features is limited.";
+            /** @constant */
+            Project_archived_90days_notice: "Projects inactive during 180 days are archived automatically";
+            /** @constant */
+            Projects_archived: "Projects are archived";
+            /** @constant */
+            Popular: "Popular";
+            /** @constant */
+            Other: "Other";
+            /** @constant */
+            Select_project: "Select project";
+            /** @constant */
+            To_list_of_projects: "List of projects";
+            /** @constant */
+            Search_projects: "Search projects";
+            /** @constant */
+            Delegation: "Project transfer";
+            /** @constant */
+            Activate_deactivate_competitors: "Enable/Disable all competitors";
+            /** @constant */
+            Wipe_all_competitors: "Are you sure you want to wipe all competitors?";
+            /** @constant */
+            Wipe_competitors_note: "Wipe competitors";
+            /** @constant */
+            Reporting_period: "Reporting period";
+            /** @constant */
+            Do_not_ask: "Do not ask me again";
+            /** @constant */
+            To_accept_project_click_msg: "To accept a project <b>%project_name%</b> transfer, click the message";
+            /** @constant */
+            Reports_send_to_address: "Send to";
+            /** @constant */
+            Checks: "Tools";
+            /** @constant */
+            Reports: "Reports";
+            /** @constant */
+            Access_to_project: "Share project";
+            /** @constant */
+            Transfer_project: "Transfer project";
+            /** @constant */
+            Do_not_brand: "Do not apply branding";
+            /** @constant */
+            Show_account_balance: "Show your account balance";
+            /** @constant */
+            To_previous_step: "Previous step";
+            /** @constant */
+            Next: "Next";
+            /** @constant */
+            Keyword_import: "Keyword import";
+            /** @constant */
+            Competitor_settings: "Add competitors";
+            /** @constant */
+            Se_and_locations: "Search engines and locations";
+            /** @constant */
+            Completed: "Completed";
+            /** @constant */
+            Track_rankings: "Track rankings";
+            /** @constant */
+            Start_audit: "Start site audit";
+            /** @constant */
+            Start_watcher: "Start watcher";
+            /** @constant */
+            Start_indexing: "Start indexing";
+            /** @constant */
+            Start_sitemap: "Sitemap generator";
+            /** @constant */
+            Main_settings: "Main settings";
+            /** @constant */
+            Create_project: "Create project";
+            /** @constant */
+            Select_type_add_name_url: "Select a project type, add a URL and a name";
+            /** @constant */
+            Enter_youtube_URL: "Enter the URL of a channel (youtube.com/@user) or a video (youtube.com/watch?v=...)";
+            /** @constant */
+            Enter_app_URL: "Enter app URL";
+            /** @constant */
+            Enter_domain_or_page: "Enter domain (example.com) or page URL (example.com/page/)";
+            /** @constant */
+            Site_or_page: "Site or webpage";
+            /** @constant */
+            Add_project_name: "Enter project name";
+            /** @constant */
+            Created_date: "Created";
+            /** @constant */
+            Project_owner: "Project owner";
+            /** @constant */
+            Add_keywords: "Add keywords";
+            /** @constant */
+            Add_keywords_button: "Add keywords";
+            /** @constant */
+            Keywords_for_import: "Keywords";
+            /** @constant */
+            Enter_keywords_one_per_line: "Enter keywords, one per line";
+            /** @constant */
+            Recommended_keywords: "Keyword ideas";
+            /** @constant */
+            Add_selected: "Add selected";
+            /** @constant */
+            Added_keywords: "Added keywords";
+            /** @constant */
+            Group_manage_tags_on_page: "Group and manage tags at";
+            /** @constant */
+            see: "see";
+            /** @constant */
+            Add_competitors: "Add competitors";
+            /** @constant */
+            My_competitors: "My competitors";
+            /** @constant */
+            Competitor_URL: "Competitor URL";
+            /** @constant */
+            Competitor_name: "Competitor name";
+            /** @constant */
+            Find_competitors: "Find competitors";
+            /** @constant */
+            Suggested_competitors: "Suggested competitors";
+            /** @constant */
+            Get_search_volume: "Check search volume";
+            /** @constant */
+            Check_keyword_rankings: "Check keyword rankings";
+            /** @constant */
+            Project_setup_completed: "Project setup completed";
+            /** @constant */
+            Add_search_engines_and_locations: "Add search engines and locations";
+            /** @constant */
+            Select_search_engine: "Select search engine";
+            /** @constant */
+            Press_search_engine_icon_to_add_location: "Press a search engine icon and add a location";
+            /** @constant */
+            You_can_manage_locations_in_settings: "You can manage added locations in project settings";
+            /** @constant */
+            Enter_location_or_yandex_code: "Enter Location or its Yandex code";
+            /** @constant */
+            Locations: "Locations";
+            /** @constant */
+            Skip_wizard: "Do not run setup wizard";
+            /** @constant */
+            Setup_rank_tracker: "Set up Rank Tracker";
+            /** @constant */
+            Setup_audit: "Set up Website Audit";
+            /** @constant */
+            Setup_audit_urls: "Pages for audit";
+            /** @constant */
+            Setup_watcher: "Set up Watcher";
+            /** @constant */
+            Setup_watcher_urls: "Pages for watcher";
+            /** @constant */
+            Setup_indexing: "Set up Index Checker";
+            /** @constant */
+            Setup_indexing_urls: "Pages for indexing";
+            /** @constant */
+            Setup_sitemap: "Set up Sitemap Generator";
+            /** @constant */
+            Add_all_recommended: "Add all recommended";
+            /** @constant */
+            Delete_keywords_from_orginal_project: "Delete keywords from the orginal project";
+            /** @constant */
+            Project_name: "Name";
+            /** @constant */
+            Project_projects_selected: "Selected";
+            /** @constant */
+            Create_your_first_project: "Create your first project";
+            /** @constant */
+            No_projects_match_filter: "No projects match filter";
+            /** @constant */
+            Enter_folder_name: "Enter folder name";
+            /** @constant */
+            Add_keywords_se_locations_to_check_notice: "No tasks found. Add keywords, a search engine and a location in the project settings";
+            /** @constant */
+            Summary_by_location: "Summary by location";
+            /** @constant */
+            Project_type: "Project type";
+            /** @constant */
+            Project_folder: "Project folder";
+            /** @constant */
+            Selected_project_type: "Selected project type";
+            /** @constant */
+            Cost_for_guest_project_owner: "Project owner will be charged";
+            /** @constant */
+            Move_to_folder: "Move to folder";
+            /** @constant */
+            Open_in_new_tab: "Open in new tab";
+            /** @constant */
+            In_queue: "In queue";
+            /** @constant */
+            In_progress: "In progress";
+            /** @constant */
+            URL_count: "Number of URLs";
+            /** @constant */
+            Username: "Username";
+            /** @constant */
+            Spent: "Spent";
+            /** @constant */
+            Spend_limit: "Spend limit";
         };
     };
     responses: never;

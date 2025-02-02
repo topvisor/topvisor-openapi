@@ -11,39 +11,25 @@
                 "type": "object",
                 "properties": {
                     "Description": {
-                        "default": "All you need for SEO on one platform. Rank tracking and volume checking, website audit, keyword research. Cluster keywords by Top and track website changes. We make SEO easy for SEO specialists and digital marketers.",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "All you need for SEO on one platform. Rank tracking and volume checking, website audit, keyword research. Cluster keywords by Top and track website changes. We make SEO easy for SEO specialists and digital marketers."
                     },
                     "Street_address": {
-                        "default": "Voronezhskaya st., 5A, Prisma office building, office 242",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Voronezhskaya st., 5A, Prisma office building, office 242"
                     },
                     "Address_locality": {
-                        "default": "Saint Petersburg",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Saint Petersburg"
                     },
                     "Address_region": {
-                        "default": "Leningrad region",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Leningrad region"
                     },
                     "Address_country": {
-                        "default": "Russia",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Russia"
                     },
                     "Contact_type": {
-                        "default": "Sales",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Sales"
                     },
                     "General_manager": {
-                        "default": "Pustovoyt Denis Anatolievich",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Pustovoyt Denis Anatolievich"
                     }
                 },
                 "required": [

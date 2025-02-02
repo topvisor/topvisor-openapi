@@ -8,8 +8,8 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         "I18n.Analytics": {
-            /** @default Are you sure you want to delete this widget? */
-            readonly Text_confirm_delete_widget: string;
+            /** @constant */
+            Text_confirm_delete_widget: "Are you sure you want to delete this widget?";
         };
     };
     responses: never;

@@ -11,22 +11,16 @@
                 "type": "object",
                 "properties": {
                     "Settings": {
-                        "default": "Audit settings",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Audit settings"
                     },
                     "Please_add_urls": {
-                        "default": "Please, add urls for checking",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Please, add urls for checking"
                     },
                     "bar": {
-                        "default": "bar",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "bar"
                     },
                     "menu": {
-                        "default": {
+                        "const": {
                             "log": "Scan Log",
                             "summary": "Summary",
                             "pages": "Pages",
@@ -45,22 +39,10 @@
                             "images/images": "Images",
                             "js/js": "JavaScript",
                             "css/css": "CSS"
-                        },
-                        "readOnly": true,
-                        "type": "array",
-                        "items": {
-                            "oneOf": [
-                                {
-                                    "type": "string"
-                                },
-                                {
-                                    "type": "number"
-                                }
-                            ]
                         }
                     },
                     "checkInfo": {
-                        "default": {
+                        "const": {
                             "checking": "Checking...",
                             "time_start": "Started time",
                             "time_finish": "Finished time",
@@ -69,44 +51,20 @@
                             "count_all": "Count finished",
                             "robot_step": "Current step",
                             "robot_step_next": "Next step"
-                        },
-                        "readOnly": true,
-                        "type": "array",
-                        "items": {
-                            "oneOf": [
-                                {
-                                    "type": "string"
-                                },
-                                {
-                                    "type": "number"
-                                }
-                            ]
                         }
                     },
                     "checkInfoHints": {
-                        "default": {
+                        "const": {
                             "time_start": "",
                             "time_finish": "",
                             "DURATION()": "",
                             "count_all": "",
                             "step": "",
                             "step_next": ""
-                        },
-                        "readOnly": true,
-                        "type": "array",
-                        "items": {
-                            "oneOf": [
-                                {
-                                    "type": "string"
-                                },
-                                {
-                                    "type": "number"
-                                }
-                            ]
                         }
                     },
                     "checkSteps": {
-                        "default": {
+                        "const": {
                             "genTasks": "Gen Tasks",
                             "auditSitemap": "Sitemap",
                             "auditPages": "Check pages",
@@ -117,335 +75,193 @@
                             "auditAnalyze": "Analyze",
                             "save": "Saving",
                             "closeTask": "Finishing"
-                        },
-                        "readOnly": true,
-                        "type": "array",
-                        "items": {
-                            "oneOf": [
-                                {
-                                    "type": "string"
-                                },
-                                {
-                                    "type": "number"
-                                }
-                            ]
                         }
                     },
                     "summaryCharts": {
-                        "default": {
+                        "const": {
                             "count_pages": "Number of pages",
                             "count_problems": "Number of problems",
                             "count_3xx": "3XX",
                             "count_4xx": "4XX",
                             "count_5xx": "5XX"
-                        },
-                        "readOnly": true,
-                        "type": "array",
-                        "items": {
-                            "oneOf": [
-                                {
-                                    "type": "string"
-                                },
-                                {
-                                    "type": "number"
-                                }
-                            ]
                         }
                     },
                     "Already_started": {
-                        "default": "Audit already started",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Audit already started"
                     },
                     "FilterTime2": {
-                        "default": "Filter, until the time:",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Filter, until the time:"
                     },
                     "HTTPCodeHundred0": {
-                        "default": "No response",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "No response"
                     },
                     "FieldContent": {
-                        "default": "Text (content)",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Text (content)"
                     },
                     "FieldTitle": {
-                        "default": "Text (title)",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Text (title)"
                     },
                     "FieldBroken": {
-                        "default": "«Broken»",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "«Broken»"
                     },
                     "FieldCount": {
-                        "default": "Pages",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Pages"
                     },
                     "FieldHTTPCodes": {
-                        "default": "Status",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Status"
                     },
                     "FieldTitleDbl": {
-                        "default": "Duplicates\nTitle",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Duplicates\nTitle"
                     },
                     "FieldDescriptionDbl": {
-                        "default": "Duplicates\nDescription",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Duplicates\nDescription"
                     },
                     "FieldBacklinksInnerCount": {
-                        "default": "Back Links\ninner",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Back Links\ninner"
                     },
                     "FieldTextLength": {
-                        "default": "Text length",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Text length"
                     },
                     "FieldCompression": {
-                        "default": "Compress",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Compress"
                     },
                     "FieldCacheType": {
-                        "default": "Cache type",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Cache type"
                     },
                     "FieldCacheTime": {
-                        "default": "Cache time",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Cache time"
                     },
                     "FieldCacheValidator": {
-                        "default": "Cache validator",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Cache validator"
                     },
                     "FieldRobotsTXTBlocked": {
-                        "default": "Disallow\nrobots.txt",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Disallow\nrobots.txt"
                     },
                     "FieldCheckRobotsTXTAllowed": {
-                        "default": "Allow\nrobots.txt",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Allow\nrobots.txt"
                     },
                     "FieldSitemapXMLMention": {
-                        "default": "Exists\nsitemap.xml",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Exists\nsitemap.xml"
                     },
                     "FieldLinksCount": {
-                        "default": "Links",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Links"
                     },
                     "FieldTLSVersion": {
-                        "default": "TLS version",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "TLS version"
                     },
                     "FieldCacheable": {
-                        "default": "Cacheable",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Cacheable"
                     },
                     "FieldAlt": {
-                        "default": "Alt",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Alt"
                     },
                     "FieldSize": {
-                        "default": "Size",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Size"
                     },
                     "FieldExtension": {
-                        "default": "Extension",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Extension"
                     },
                     "FieldContentType": {
-                        "default": "Content-Type",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Content-Type"
                     },
                     "FieldModernFormat": {
-                        "default": "Modern Format",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Modern Format"
                     },
                     "FieldMinified": {
-                        "default": "Minified",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Minified"
                     },
                     "FieldRenderBlocking": {
-                        "default": "Render blocking",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Render blocking"
                     },
                     "FieldType": {
-                        "default": "Type",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Type"
                     },
                     "FieldLoadingTime": {
-                        "default": "Loading time",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Loading time"
                     },
                     "FilterSignalNone": {
-                        "default": "All checks",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "All checks"
                     },
                     "FilterSignalWarnings": {
-                        "default": "With warnings",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "With warnings"
                     },
                     "FilterSignalErrors": {
-                        "default": "With erors",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "With erors"
                     },
                     "FilterSignalSignals": {
-                        "default": "All problems",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "All problems"
                     },
                     "DialogPagesWithTitleDbl": {
-                        "default": "Pages with duplicates Title",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Pages with duplicates Title"
                     },
                     "DialogPagesWithDescriptionDbl": {
-                        "default": "Pages with duplicates Desccription",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Pages with duplicates Desccription"
                     },
                     "DialogPagesWithLink": {
-                        "default": "Pages with link",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Pages with link"
                     },
                     "DialogPagesWithImage": {
-                        "default": "Pages with image",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Pages with image"
                     },
                     "DialogPagesWithJS": {
-                        "default": "Pages with JavaScript",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Pages with JavaScript"
                     },
                     "DialogPagesWithCSS": {
-                        "default": "Pages with CSS",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Pages with CSS"
                     },
                     "DialogSummaryPage": {
-                        "default": "Summary Page",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Summary Page"
                     },
                     "DialogResources_links": {
-                        "default": "Links on page",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Links on page"
                     },
                     "DialogResources_images": {
-                        "default": "Images on page",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Images on page"
                     },
                     "DialogResources_css": {
-                        "default": "CSS on page",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "CSS on page"
                     },
                     "DialogResources_js": {
-                        "default": "JS on page",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "JS on page"
                     },
                     "Category": {
-                        "default": "Category",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Category"
                     },
                     "WhatIsIt": {
-                        "default": "What is it?",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "What is it?"
                     },
                     "HowToResolveIt": {
-                        "default": "How to resolve it?",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "How to resolve it?"
                     },
                     "Warnings": {
-                        "default": "Warnings",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Warnings"
                     },
                     "Errors": {
-                        "default": "Errors",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Errors"
                     },
                     "Problems": {
-                        "default": "All problems",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "All problems"
                     },
                     "Hint_not_urls_text": {
-                        "default": "Add URLs manually or enable website crawling to perform Website Audit.<br>🤖 <a href=\"/website-auditor/\" target=\"_blank\">What Website Audit shows →</a>",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Add URLs manually or enable website crawling to perform Website Audit.<br>🤖 <a href=\"/website-auditor/\" target=\"_blank\">What Website Audit shows →</a>"
                     },
                     "Hint_not_urls_btn": {
-                        "default": "Add URLs",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Add URLs"
                     },
                     "Hint_not_checks_text": {
-                        "default": "You've never launched Website Audit in this project.<br>🤖 <a href=\"/website-auditor/\" target=\"_blank\">What Website Audit shows →</a>",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "You've never launched Website Audit in this project.<br>🤖 <a href=\"/website-auditor/\" target=\"_blank\">What Website Audit shows →</a>"
                     },
                     "Hint_not_checks_btn": {
-                        "default": "Launch Website Audit",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Launch Website Audit"
                     },
                     "Hint_not_PageSpeed_Insights_API_key_1": {
-                        "default": "You didn't specify PageSpeed Insights API&#8209;key when launching Website Audit. Add API-key",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "You didn't specify PageSpeed Insights API&#8209;key when launching Website Audit. Add API-key"
                     },
                     "Hint_not_PageSpeed_Insights_API_key_2": {
-                        "default": "in Audit Settings",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "in Audit Settings"
                     },
                     "Hint_not_PageSpeed_Insights_API_key_3": {
-                        "default": "and launch Audit once more.",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "and launch Audit once more."
                     }
                 },
                 "required": [

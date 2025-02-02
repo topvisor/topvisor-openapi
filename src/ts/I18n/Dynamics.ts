@@ -8,230 +8,230 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         "I18n.Dynamics": {
-            /** @default Keywords that advanced in ranks */
-            readonly Number_keywords_better_ranks: string;
-            /** @default Keywords that didn't change ranks */
-            readonly Number_keywords_same_ranks: string;
-            /** @default Keywords that dropped in ranks */
-            readonly Number_keywords_drop_ranks: string;
-            /** @default Find in table */
-            readonly Search_table: string;
-            /** @default Find on page */
-            readonly Search_page: string;
-            /** @default Snippets */
-            readonly Snippets: string;
-            /** @default Delete all results for the applied date */
-            readonly Remove_results: string;
-            /** @default this action cannot be undone */
-            readonly oneway_operation: string;
-            /** @default Do you want to continue? */
-            readonly Proceed_deleting_ask: string;
-            /** @default By target URL */
-            readonly Sort_by_target: string;
-            /** @default Default settings */
-            readonly Sort_by_default: string;
-            /** @default By ranked URL */
-            readonly Sort_by_relevant: string;
-            /** @default Ranking dynamics over period */
-            readonly Sort_by_position_change: string;
-            /** @default Filter by tag */
-            readonly Filter_by_tag: string;
-            /** @default Set target for group */
-            readonly Set_target_for_group: string;
-            /** @default Send to Email */
-            readonly Send_email: string;
-            /** @default Target URL */
-            readonly Target_URL: string;
-            /** @default You updated keyword ranks less than 5 minutes ago */
-            readonly Rankings_updated_less_than_5minutes: string;
-            /** @default Add keywords and select locations<br> in project settings */
-            readonly Add_keywords_locations_notice: string;
-            /** @default We're processing your tasks. */
-            readonly Tasks_processing_notice: string;
-            /** @default We're updating your keyword rankings. */
-            readonly Ranks_updating_notice: string;
-            /** @default Last update */
-            readonly Updated: string;
-            /** @default Rankings and snippets */
-            readonly Positions_snippets: string;
-            /** @default Last 7 days */
-            readonly Period_last_7_days: string;
-            /** @default Last 10 days */
-            readonly Period_last_10_days: string;
-            /** @default Last 30 days */
-            readonly Period_last_30_days: string;
-            /** @default Optional dates */
-            readonly Any_dates: string;
-            /** @default This month */
-            readonly Current_month: string;
-            /** @default Previous month */
-            readonly Previous_month: string;
-            /** @default Last year */
-            readonly Last_year: string;
-            /** @default Random */
-            readonly Random: string;
-            /** @default Period */
-            readonly Period_regular: string;
-            /** @default Two dates */
-            readonly Period_2_dates: string;
-            /** @default First and last date */
-            readonly Period_2_margin_dates: string;
-            /** @default Two latest dates */
-            readonly Period_2_latest_dates: string;
-            /** @default First date */
-            readonly Period_first_date: string;
-            /** @default Last date */
-            readonly Period_last_date: string;
-            /** @default One date */
-            readonly Period_1_date: string;
-            /** @default Only Yandex updates */
-            readonly Period_only_updates: string;
-            /** @default Last day of month */
-            readonly Last_day_month: string;
-            /** @default Max dates */
-            readonly Count_dates: string;
-            /** @default Top, progress */
-            readonly Painting_0: string;
-            /** @default Improved, dropped */
-            readonly Painting_1: string;
-            /** @default After rank tracking */
-            readonly Report_after_tracking_30min_1: string;
-            /** @default in 30 minutes */
-            readonly Report_after_tracking_30min_2: string;
-            /** @default Week's average */
-            readonly Display_week_average_ranking: string;
-            /** @default Summary */
-            readonly Summary: string;
-            /** @default Charts */
-            readonly Show_graphics: string;
-            /** @default Target = Ranked */
-            readonly Target_equal_relevant: string;
-            /** @default Hide group names */
-            readonly Off_display_group_names: string;
-            /** @default Show group names */
-            readonly On_display_group_names: string;
-            /** @default Display names under groups */
-            readonly Display_group_names_above: string;
-            /** @default Display names near groups */
-            readonly Display_group_names_near: string;
-            /** @default Display / Hide global search volume */
-            readonly Show_global_volume: string;
-            /** @default Are you sure you want to delete a selected keyword? */
-            readonly Remove_keyword: string;
-            /** @default Wipe data for the selected date */
-            readonly Remove_history: string;
-            /** @default Competitors */
-            readonly Show_competitors: string;
-            /** @default Hide keywords added within the applied period */
-            readonly Hide_keywords_added_in_period: string;
-            /** @default Only keywords added within the applied period */
-            readonly Only_keywords_added_in_period: string;
-            /** @default All keywords */
-            readonly Show_keywords_added_in_period: string;
-            /** @default snapshots collected */
-            readonly and_save_snapshots: string;
-            /** @default Check rankings of project */
-            readonly Check_rankings: string;
-            /** @default Add keywords on the page */
-            readonly Add_keywords_on_page: string;
-            /** @default Keywords */
-            readonly Keywords: string;
-            /** @default Add search engine and location to display data */
-            readonly Add_se_location_to_display_data: string;
-            /** @default Number of visits */
-            readonly Number_of_visits: string;
-            /** @default Matches ranked URL */
-            readonly Matches_relevant_URL: string;
-            /** @default Doesn't match ranked URL */
-            readonly Not_Matches_relevant_URL: string;
-            /** @default Ranked URL history */
-            readonly Relevant_URL_change_history: string;
-            /** @default Ranked URL changes */
-            readonly Relevant_URL_changes: string;
-            /** @default Download */
-            readonly Download: string;
-            /** @default Date order */
-            readonly Date_order: string;
-            /** @default Chart export */
-            readonly Chart_export: string;
-            /** @default Check */
-            readonly Calendar_legend_ranks_checked: string;
-            /** @default Yandex update */
-            readonly Calendar_legend_yandex_update: string;
-            /** @default Sort */
-            readonly Sort_keywords: string;
-            /** @default Filter */
-            readonly Filter: string;
-            /** @default No filter */
-            readonly Not_filter: string;
-            /** @default Target and ranked URL */
-            readonly Target_and_relevant_URL: string;
-            /** @default Match */
-            readonly Matches: string;
-            /** @default Don't match */
-            readonly Not_matches: string;
-            /** @default Matching not defined */
-            readonly Status_not_defined: string;
-            /** @default Target not specified */
-            readonly Not_specified: string;
-            /** @default with Featured Snippets */
-            readonly with_featured_snippets: string;
-            /** @default Pin panel */
-            readonly Pin_panel: string;
-            /** @default Pin filters */
-            readonly Pin_filters: string;
-            /** @default Pin summary */
-            readonly Pin_summary: string;
-            /** @default Customize view */
-            readonly Customize_view: string;
-            /** @default Color theme */
-            readonly Color_theme: string;
-            /** @default Download PNG image */
-            readonly Highcharts_Export_PNG: string;
-            /** @default Download JPEG image */
-            readonly Highcharts_Export_JPEG: string;
-            /** @default Download PDF document */
-            readonly Highcharts_Export_PDF: string;
-            /** @default Download SVG image */
-            readonly Highcharts_Export_SVG: string;
-            /** @default Print chart */
-            readonly Highcharts_Export_Print: string;
-            /** @default Download CSV */
-            readonly Highcharts_Export_CSV: string;
-            /** @default Summary mode */
-            readonly Summary_mode: string;
-            /** @default Default */
-            readonly Default_summary_mode: string;
-            /** @default Compact */
-            readonly Compact_summary_mode: string;
-            /** @default Columns */
-            readonly Columns_summary_mode: string;
-            /** @default keyword ranking report */
-            readonly order: string;
-            /** @default Project has been deleted */
-            readonly Project_has_been_deleted: string;
-            /** @default <b>Snippets</b> weren't collected on the selected dates. */
-            readonly Snippets_no_checked: string;
-            /** @default <b>Snippets</b> aren't being collected. Turn this feature on in the project's settings. */
-            readonly Snippets_no_checking: string;
-            /** @default <p>Selected period is the hight load.</p><p>If you need to get results in the morning, we recommend setting time from <i></i> to <i></i> in the morning.</p> */
-            readonly Selected_time_is_hightload: string;
-            /** @default Delete keyword */
-            readonly Delete_keyword: string;
-            /** @default Recheck keyword ranking */
-            readonly Recheck: string;
-            /** @default Tracking */
-            readonly Checking: string;
-            /** @default Ranking successfully rechecked */
-            readonly Recheck_finish: string;
-            /** @default Target link not added */
-            readonly No_target_status: string;
-            /** @default Search results not found */
-            readonly No_result_target_status: string;
-            /** @default Result does not match a target link */
-            readonly Bad_target_status: string;
-            /** @default Result matches a target link */
-            readonly Good_target_status: string;
+            /** @constant */
+            Number_keywords_better_ranks: "Keywords that advanced in ranks";
+            /** @constant */
+            Number_keywords_same_ranks: "Keywords that didn't change ranks";
+            /** @constant */
+            Number_keywords_drop_ranks: "Keywords that dropped in ranks";
+            /** @constant */
+            Search_table: "Find in table";
+            /** @constant */
+            Search_page: "Find on page";
+            /** @constant */
+            Snippets: "Snippets";
+            /** @constant */
+            Remove_results: "Delete all results for the applied date";
+            /** @constant */
+            oneway_operation: "this action cannot be undone";
+            /** @constant */
+            Proceed_deleting_ask: "Do you want to continue?";
+            /** @constant */
+            Sort_by_target: "By target URL";
+            /** @constant */
+            Sort_by_default: "Default settings";
+            /** @constant */
+            Sort_by_relevant: "By ranked URL";
+            /** @constant */
+            Sort_by_position_change: "Ranking dynamics over period";
+            /** @constant */
+            Filter_by_tag: "Filter by tag";
+            /** @constant */
+            Set_target_for_group: "Set target for group";
+            /** @constant */
+            Send_email: "Send to Email";
+            /** @constant */
+            Target_URL: "Target URL";
+            /** @constant */
+            Rankings_updated_less_than_5minutes: "You updated keyword ranks less than 5 minutes ago";
+            /** @constant */
+            Add_keywords_locations_notice: "Add keywords and select locations<br> in project settings";
+            /** @constant */
+            Tasks_processing_notice: "We're processing your tasks.";
+            /** @constant */
+            Ranks_updating_notice: "We're updating your keyword rankings.";
+            /** @constant */
+            Updated: "Last update";
+            /** @constant */
+            Positions_snippets: "Rankings and snippets";
+            /** @constant */
+            Period_last_7_days: "Last 7 days";
+            /** @constant */
+            Period_last_10_days: "Last 10 days";
+            /** @constant */
+            Period_last_30_days: "Last 30 days";
+            /** @constant */
+            Any_dates: "Optional dates";
+            /** @constant */
+            Current_month: "This month";
+            /** @constant */
+            Previous_month: "Previous month";
+            /** @constant */
+            Last_year: "Last year";
+            /** @constant */
+            Random: "Random";
+            /** @constant */
+            Period_regular: "Period";
+            /** @constant */
+            Period_2_dates: "Two dates";
+            /** @constant */
+            Period_2_margin_dates: "First and last date";
+            /** @constant */
+            Period_2_latest_dates: "Two latest dates";
+            /** @constant */
+            Period_first_date: "First date";
+            /** @constant */
+            Period_last_date: "Last date";
+            /** @constant */
+            Period_1_date: "One date";
+            /** @constant */
+            Period_only_updates: "Only Yandex updates";
+            /** @constant */
+            Last_day_month: "Last day of month";
+            /** @constant */
+            Count_dates: "Max dates";
+            /** @constant */
+            Painting_0: "Top, progress";
+            /** @constant */
+            Painting_1: "Improved, dropped";
+            /** @constant */
+            Report_after_tracking_30min_1: "After rank tracking";
+            /** @constant */
+            Report_after_tracking_30min_2: "in 30 minutes";
+            /** @constant */
+            Display_week_average_ranking: "Week's average";
+            /** @constant */
+            Summary: "Summary";
+            /** @constant */
+            Show_graphics: "Charts";
+            /** @constant */
+            Target_equal_relevant: "Target = Ranked";
+            /** @constant */
+            Off_display_group_names: "Hide group names";
+            /** @constant */
+            On_display_group_names: "Show group names";
+            /** @constant */
+            Display_group_names_above: "Display names under groups";
+            /** @constant */
+            Display_group_names_near: "Display names near groups";
+            /** @constant */
+            Show_global_volume: "Display / Hide global search volume";
+            /** @constant */
+            Remove_keyword: "Are you sure you want to delete a selected keyword?";
+            /** @constant */
+            Remove_history: "Wipe data for the selected date";
+            /** @constant */
+            Show_competitors: "Competitors";
+            /** @constant */
+            Hide_keywords_added_in_period: "Hide keywords added within the applied period";
+            /** @constant */
+            Only_keywords_added_in_period: "Only keywords added within the applied period";
+            /** @constant */
+            Show_keywords_added_in_period: "All keywords";
+            /** @constant */
+            and_save_snapshots: "snapshots collected";
+            /** @constant */
+            Check_rankings: "Check rankings of project";
+            /** @constant */
+            Add_keywords_on_page: "Add keywords on the page";
+            /** @constant */
+            Keywords: "Keywords";
+            /** @constant */
+            Add_se_location_to_display_data: "Add search engine and location to display data";
+            /** @constant */
+            Number_of_visits: "Number of visits";
+            /** @constant */
+            Matches_relevant_URL: "Matches ranked URL";
+            /** @constant */
+            Not_Matches_relevant_URL: "Doesn't match ranked URL";
+            /** @constant */
+            Relevant_URL_change_history: "Ranked URL history";
+            /** @constant */
+            Relevant_URL_changes: "Ranked URL changes";
+            /** @constant */
+            Download: "Download";
+            /** @constant */
+            Date_order: "Date order";
+            /** @constant */
+            Chart_export: "Chart export";
+            /** @constant */
+            Calendar_legend_ranks_checked: "Check";
+            /** @constant */
+            Calendar_legend_yandex_update: "Yandex update";
+            /** @constant */
+            Sort_keywords: "Sort";
+            /** @constant */
+            Filter: "Filter";
+            /** @constant */
+            Not_filter: "No filter";
+            /** @constant */
+            Target_and_relevant_URL: "Target and ranked URL";
+            /** @constant */
+            Matches: "Match";
+            /** @constant */
+            Not_matches: "Don't match";
+            /** @constant */
+            Status_not_defined: "Matching not defined";
+            /** @constant */
+            Not_specified: "Target not specified";
+            /** @constant */
+            with_featured_snippets: "with Featured Snippets";
+            /** @constant */
+            Pin_panel: "Pin panel";
+            /** @constant */
+            Pin_filters: "Pin filters";
+            /** @constant */
+            Pin_summary: "Pin summary";
+            /** @constant */
+            Customize_view: "Customize view";
+            /** @constant */
+            Color_theme: "Color theme";
+            /** @constant */
+            Highcharts_Export_PNG: "Download PNG image";
+            /** @constant */
+            Highcharts_Export_JPEG: "Download JPEG image";
+            /** @constant */
+            Highcharts_Export_PDF: "Download PDF document";
+            /** @constant */
+            Highcharts_Export_SVG: "Download SVG image";
+            /** @constant */
+            Highcharts_Export_Print: "Print chart";
+            /** @constant */
+            Highcharts_Export_CSV: "Download CSV";
+            /** @constant */
+            Summary_mode: "Summary mode";
+            /** @constant */
+            Default_summary_mode: "Default";
+            /** @constant */
+            Compact_summary_mode: "Compact";
+            /** @constant */
+            Columns_summary_mode: "Columns";
+            /** @constant */
+            order: "keyword ranking report";
+            /** @constant */
+            Project_has_been_deleted: "Project has been deleted";
+            /** @constant */
+            Snippets_no_checked: "<b>Snippets</b> weren't collected on the selected dates.";
+            /** @constant */
+            Snippets_no_checking: "<b>Snippets</b> aren't being collected. Turn this feature on in the project's settings.";
+            /** @constant */
+            Selected_time_is_hightload: "<p>Selected period is the hight load.</p><p>If you need to get results in the morning, we recommend setting time from <i></i> to <i></i> in the morning.</p>";
+            /** @constant */
+            Delete_keyword: "Delete keyword";
+            /** @constant */
+            Recheck: "Recheck keyword ranking";
+            /** @constant */
+            Checking: "Tracking";
+            /** @constant */
+            Recheck_finish: "Ranking successfully rechecked";
+            /** @constant */
+            No_target_status: "Target link not added";
+            /** @constant */
+            No_result_target_status: "Search results not found";
+            /** @constant */
+            Bad_target_status: "Result does not match a target link";
+            /** @constant */
+            Good_target_status: "Result matches a target link";
         };
     };
     responses: never;

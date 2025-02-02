@@ -11,1423 +11,856 @@
                 "type": "object",
                 "properties": {
                     "Average": {
-                        "default": "Average",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Average"
                     },
                     "phrase_missed": {
-                        "default": "Keyword not selected",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Keyword not selected"
                     },
                     "group_not_exists": {
-                        "default": "Group not found in the project",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Group not found in the project"
                     },
                     "keyword_not_exists": {
-                        "default": "Keyword not found in the project",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Keyword not found in the project"
                     },
                     "incorrect_phrase": {
-                        "default": "Invalid keyword",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Invalid keyword"
                     },
                     "phrase_exists": {
-                        "default": "This keyword already exists",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "This keyword already exists"
                     },
                     "import_error_columns": {
-                        "default": "The number of columns in some lines doesn't match the number in other lines.",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "The number of columns in some lines doesn't match the number in other lines."
                     },
                     "import_error_columns2": {
-                        "default": " If you import keywords from a CSV file, please place all keywords with special characters (comma (,), semicolon (;)) in double quotation marks (\")",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": " If you import keywords from a CSV file, please place all keywords with special characters (comma (,), semicolon (;)) in double quotation marks (\")"
                     },
                     "import_error1": {
-                        "default": "You haven't selected keywords to import",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "You haven't selected keywords to import"
                     },
                     "Add_phrase": {
-                        "default": "Add keyword",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Add keyword"
                     },
                     "Add_group": {
-                        "default": "Add new group",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Add new group"
                     },
                     "New_folder": {
-                        "default": "New folder",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "New folder"
                     },
                     "New_group": {
-                        "default": "New group",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "New group"
                     },
                     "Access_error": {
-                        "default": "Keyword not found or access denied",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Keyword not found or access denied"
                     },
                     "CSV_group": {
-                        "default": "Group",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Group"
                     },
                     "CSV_phrase": {
-                        "default": "Keyword",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Keyword"
                     },
                     "CSV_rel": {
-                        "default": "Ranked page",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Ranked page"
                     },
                     "CSV_snippet_title": {
-                        "default": "Snippet titles",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Snippet titles"
                     },
                     "CSV_snippet": {
-                        "default": "Snippet",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Snippet"
                     },
                     "CSV_target": {
-                        "default": "Target URL",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Target URL"
                     },
                     "CSV_visits": {
-                        "default": "Traffic",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Traffic"
                     },
                     "CSV_google_price": {
-                        "default": "Bid",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Bid"
                     },
                     "CSV_yandex_price1": {
-                        "default": "1-st Premium placement",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "1-st Premium placement"
                     },
                     "CSV_yandex_price2": {
-                        "default": "2-st Premium placement",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "2-st Premium placement"
                     },
                     "CSV_yandex_price3": {
-                        "default": "Premium placement",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Premium placement"
                     },
                     "CSV_yandex_price4": {
-                        "default": "1st place",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "1st place"
                     },
                     "CSV_yandex_price5": {
-                        "default": "Guaranteed",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Guaranteed"
                     },
                     "Targets_error": {
-                        "default": "Target URLs not changed",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Target URLs not changed"
                     },
                     "Group_changing_denied": {
-                        "default": "You can't edit this group!",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "You can't edit this group!"
                     },
                     "Filtered_group": {
-                        "default": "Filtered group",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Filtered group"
                     },
                     "Export_dynamics_by_date": {
-                        "default": "Project export for",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Project export for"
                     },
                     "Export_Balance_notify": {
-                        "default": "Cannot prepare export. There are not enough funds in your account.",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Cannot prepare export. There are not enough funds in your account."
                     },
                     "Export_HTML_comparison_not_available": {
-                        "default": "html comparison is not available yet",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "html comparison is not available yet"
                     },
                     "Reports_unsubscribing1": {
-                        "default": "Unsubscribe ",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Unsubscribe "
                     },
                     "Reports_unsubscribing2": {
-                        "default": "from project reports",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "from project reports"
                     },
                     "Project_report": {
-                        "default": "Project report for",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Project report for"
                     },
                     "project_report_msg": {
-                        "default": "dated",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "dated"
                     },
                     "project_has_archived": {
-                        "default": "The project is not active. You can recover it in the projects list",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "The project is not active. You can recover it in the projects list"
                     },
                     "Not_enough_balance_for_check_position": {
-                        "default": "there are not enough funds in your account to track keyword rankings",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "there are not enough funds in your account to track keyword rankings"
                     },
                     "Refill_balance": {
-                        "default": "Top up balance",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Top up balance"
                     },
                     "Not_enough_owner_balance": {
-                        "default": "The project owner has insufficient funds to complete the task. Contact the owner of the project ",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "The project owner has insufficient funds to complete the task. Contact the owner of the project "
                     },
                     "Not_enough_owner_balance2": {
-                        "default": " and ask them to top up their balance.",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": " and ask them to top up their balance."
                     },
                     "Not_enough_balance_limit": {
-                        "default": "You used up the limit on checks the project's owner gave you. Contact the owner via ",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "You used up the limit on checks the project's owner gave you. Contact the owner via "
                     },
                     "Not_enough_balance_limit2": {
-                        "default": " if you need to raise the limit",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": " if you need to raise the limit"
                     },
                     "Position_check": {
-                        "default": "Keyword rank check of",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Keyword rank check of"
                     },
                     "Position_check_with_snippet": {
-                        "default": "Track ranks and collect snippets",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Track ranks and collect snippets"
                     },
                     "Positions_check": {
-                        "default": "Keyword ranking report for",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Keyword ranking report for"
                     },
                     "Positions_select_se": {
-                        "default": "Add search engines in project settings",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Add search engines in project settings"
                     },
                     "Positions_check_with_snippets": {
-                        "default": "Keyword ranking and snippets report for",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Keyword ranking and snippets report for"
                     },
                     "Keyword_ranking_already_started": {
-                        "default": "Keyword ranking already started",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Keyword ranking already started"
                     },
                     "Not_enough_balance_for_check_positions": {
-                        "default": "You do not have enough funds in your account to track keyword rankings",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "You do not have enough funds in your account to track keyword rankings"
                     },
                     "Short_keywords": {
-                        "default": "Keywords are too short",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Keywords are too short"
                     },
                     "Semantic_kernel_composition": {
-                        "default": "Keyword research",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Keyword research"
                     },
                     "Semantic_kernel_composition_by_hints": {
-                        "default": "Keyword suggestions harvest",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Keyword suggestions harvest"
                     },
                     "Provider_incorrect": {
-                        "default": "`Provider` is incorrect",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "`Provider` is incorrect"
                     },
                     "Not_enough_balance": {
-                        "default": "There are not enough funds in your account",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "There are not enough funds in your account"
                     },
                     "Unchecked_wordstat_is_missing1": {
-                        "default": "Skipped search volume data in project",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Skipped search volume data in project"
                     },
                     "Unchecked_wordstat_is_missing2": {
-                        "default": "for applied locations and search volume types there's no",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "for applied locations and search volume types there's no"
                     },
                     "No_phrases_or_regions1": {
-                        "default": "The project has",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "The project has"
                     },
                     "No_phrases_or_regions2": {
-                        "default": "no keywords or locations and search volume types are not selected",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "no keywords or locations and search volume types are not selected"
                     },
                     "Wordstat_check": {
-                        "default": "Search volume tracking for:",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Search volume tracking for:"
                     },
                     "depth": {
-                        "default": "research depth",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "research depth"
                     },
                     "Claster_delay": {
-                        "default": "Assigning project tasks.<br>Clustering tool will be available within a minute",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Assigning project tasks.<br>Clustering tool will be available within a minute"
                     },
                     "Claster_task_bank": {
-                        "default": "Keyword clustering",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Keyword clustering"
                     },
                     "Claster_task_change_bank": {
-                        "default": "Re-calculate clustering cost",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Re-calculate clustering cost"
                     },
                     "Claster_already_doing": {
-                        "default": "Clustering is in process",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Clustering is in process"
                     },
                     "Claster_not_exists_last_results": {
-                        "default": "Previous keyword clustering results not found",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Previous keyword clustering results not found"
                     },
                     "for_keyword": {
-                        "default": "to each keyword",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "to each keyword"
                     },
                     "Get_group_search_volume": {
-                        "default": "Get group search volume",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Get group search volume"
                     },
                     "Export_group": {
-                        "default": "Export from group",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Export from group"
                     },
                     "Export_to_project": {
-                        "default": "Copy to another project",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Copy to another project"
                     },
                     "Move_to_project": {
-                        "default": "Move to another project",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Move to another project"
                     },
                     "Block_mode_unavailable_notice": {
-                        "default": "Block mode is not available if you have over 6 000 keywords or too many groups",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Block mode is not available if you have over 6 000 keywords or too many groups"
                     },
                     "Block_mode": {
-                        "default": "Block mode",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Block mode"
                     },
                     "Table_mode": {
-                        "default": "Table mode",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Table mode"
                     },
                     "Tags": {
-                        "default": "Tag No.",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Tag No."
                     },
                     "Tags_names": {
-                        "default": "Tags",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Tags"
                     },
                     "Tags_disable": {
-                        "default": "Disable",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Disable"
                     },
                     "Set_tag": {
-                        "default": "Add tag",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Add tag"
                     },
                     "Remove_tag": {
-                        "default": "Remove tags",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Remove tags"
                     },
                     "Add_tags": {
-                        "default": "Add tags",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Add tags"
                     },
                     "Remove_tags": {
-                        "default": "Remove tags",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Remove tags"
                     },
                     "Set_tags": {
-                        "default": "Replace tags",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Replace tags"
                     },
                     "Import": {
-                        "default": "Keyword import",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Keyword import"
                     },
                     "Export": {
-                        "default": "Keyword export",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Keyword export"
                     },
                     "Target": {
-                        "default": "Target URL",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Target URL"
                     },
                     "Target_status": {
-                        "default": "Target URL status",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Target URL status"
                     },
                     "Relevant_page": {
-                        "default": "Ranked URL",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Ranked URL"
                     },
                     "CPC": {
-                        "default": "CPC",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "CPC"
                     },
                     "Visits": {
-                        "default": "Traffic",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Traffic"
                     },
                     "Snippet": {
-                        "default": "Snippet",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Snippet"
                     },
                     "Research": {
-                        "default": "Research keywords",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Research keywords"
                     },
                     "Research_suggestions": {
-                        "default": "Collect keyword suggestions",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Collect keyword suggestions"
                     },
                     "Research_keywords_se": {
-                        "default": "Research keywords",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Research keywords"
                     },
                     "Research_keywords_traffic": {
-                        "default": "Magnet tool",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Magnet tool"
                     },
                     "To_research": {
-                        "default": "Research",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Research"
                     },
                     "Group_number": {
-                        "default": "Groups",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Groups"
                     },
                     "Keyword_number": {
-                        "default": "Keywords",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Keywords"
                     },
                     "Turn_on": {
-                        "default": "On",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "On"
                     },
                     "Turn_off": {
-                        "default": "Off",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Off"
                     },
                     "Enable_all_groups": {
-                        "default": "Turn on all groups",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Turn on all groups"
                     },
                     "Disable_all_groups": {
-                        "default": "Turn off all groups",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Turn off all groups"
                     },
                     "Select_all": {
-                        "default": "Select all",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Select all"
                     },
                     "Select_groups": {
-                        "default": "Select groups",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Select groups"
                     },
                     "Highlight": {
-                        "default": "Select",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Select"
                     },
                     "Trash_bin": {
-                        "default": "Trash bin",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Trash bin"
                     },
                     "Filter": {
-                        "default": "Filter",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Filter"
                     },
                     "Search_keyword": {
-                        "default": "Search keyword",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Search keyword"
                     },
                     "Get_search_volume": {
-                        "default": "Get search volume",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Get search volume"
                     },
                     "Clustering_tool": {
-                        "default": "Keyword clustering",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Keyword clustering"
                     },
                     "SE_location": {
-                        "default": "Search engine / Location",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Search engine / Location"
                     },
                     "Select_location": {
-                        "default": "Select location",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Select location"
                     },
                     "Select_another_location": {
-                        "default": "Select another location",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Select another location"
                     },
                     "Clustering_level": {
-                        "default": "Clustering level",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Clustering level"
                     },
                     "Clustering_level_groups_relation": {
-                        "default": "Higher level clustering produces more groups with fewer keywords in every group.",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Higher level clustering produces more groups with fewer keywords in every group."
                     },
                     "Clustering_changes_order_notice": {
-                        "default": "<b>Important!</b><br>Keyword clustering changes groups and keyword order in your project.<br> After clustering, keyword groups will be automatically disabled.",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "<b>Important!</b><br>Keyword clustering changes groups and keyword order in your project.<br> After clustering, keyword groups will be automatically disabled."
                     },
                     "Clustering_rel_notice": {
-                        "default": "Before grouping keywords by page relevance, make sure that you have checked<br> keyword rankings in the applied search engine and location.",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Before grouping keywords by page relevance, make sure that you have checked<br> keyword rankings in the applied search engine and location."
                     },
                     "Cluster": {
-                        "default": "Clustering",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Clustering"
                     },
                     "Cluster_TOP10": {
-                        "default": "Keyword clustering by TOP10",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Keyword clustering by TOP10"
                     },
                     "Cluster_relevant_url": {
-                        "default": "Grouping by page relevance",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Grouping by page relevance"
                     },
                     "Cluster_target_url": {
-                        "default": "Grouping by target URLs",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Grouping by target URLs"
                     },
                     "Before_grouping_setup_target_urls": {
-                        "default": "Before grouping, make sure that target URLs are assigned",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Before grouping, make sure that target URLs are assigned"
                     },
                     "Change_clustering_level": {
-                        "default": "Change clustering level",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Change clustering level"
                     },
                     "Bounce_rate": {
-                        "default": "Bounce",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Bounce"
                     },
                     "Pages_view": {
-                        "default": "Pages",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Pages"
                     },
                     "Time": {
-                        "default": "Time",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Time"
                     },
                     "Del_group": {
-                        "default": "Delete group",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Delete group"
                     },
                     "Sort_keywords": {
-                        "default": "Sort keywords",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Sort keywords"
                     },
                     "Filter_phrases": {
-                        "default": "Filter keywords",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Filter keywords"
                     },
                     "On_Off_group": {
-                        "default": "Enable / Disable a group",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Enable / Disable a group"
                     },
                     "Move_to_new_group": {
-                        "default": "Move to a new group",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Move to a new group"
                     },
                     "Delete_group_warning": {
-                        "default": "<b>Important!</b><br>If you delete a group, all keywords in the group will be deleted immediately.",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "<b>Important!</b><br>If you delete a group, all keywords in the group will be deleted immediately."
                     },
                     "Each_keyword_on_new_line": {
-                        "default": "Keywords (each keyword on a new line)",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Keywords (each keyword on a new line)"
                     },
                     "Source": {
-                        "default": "Source",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Source"
                     },
                     "Phrases_on_new_line": {
-                        "default": "Phrases (each one on a new line)",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Phrases (each one on a new line)"
                     },
                     "Import_to_group": {
-                        "default": "Import into group",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Import into group"
                     },
                     "Skip_duplicates": {
-                        "default": "Skip duplicates",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Skip duplicates"
                     },
                     "Move_duplicates": {
-                        "default": "Move duplicates",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Move duplicates"
                     },
                     "Move_duplicates_another_group": {
-                        "default": "Move duplicates to another group",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Move duplicates to another group"
                     },
                     "Move_duplicates_another_group_name": {
-                        "default": "Where move duplicates?",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Where move duplicates?"
                     },
                     "Match_type": {
-                        "default": "Match type",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Match type"
                     },
                     "Match_type_broad": {
-                        "default": "Volume",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Volume"
                     },
                     "Match_type_phrase": {
-                        "default": "Volume",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Volume"
                     },
                     "Match_type_exact": {
-                        "default": "Volume",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Volume"
                     },
                     "Match_type_strict": {
-                        "default": "Strict",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Strict"
                     },
                     "By_location": {
-                        "default": "For locations",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "For locations"
                     },
                     "Skip_tracked_searches": {
-                        "default": "Skip collected search volume data",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Skip collected search volume data"
                     },
                     "Check_active_groups_only": {
-                        "default": "Check active groups only",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Check active groups only"
                     },
                     "By_total_searches": {
-                        "default": "By search volume",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "By search volume"
                     },
                     "By_rank": {
-                        "default": "By keyword rank (applied SE and Location)",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "By keyword rank (applied SE and Location)"
                     },
                     "Sort_groups_by_searches": {
-                        "default": "Sort groups by total search volume",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Sort groups by total search volume"
                     },
                     "Sort_keywords_by_searches": {
-                        "default": "Sort keywords in groups by search volume",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Sort keywords in groups by search volume"
                     },
                     "Sort_groups_alphabetically": {
-                        "default": "Sort groups alphabetically",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Sort groups alphabetically"
                     },
                     "Sort_groups_by_date": {
-                        "default": "Sort groups by creation date",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Sort groups by creation date"
                     },
                     "Delete_empty_groups": {
-                        "default": "Delete empty groups",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Delete empty groups"
                     },
                     "Delete_inactive_groups": {
-                        "default": "Delete inactive groups",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Delete inactive groups"
                     },
                     "Delete_groups_keywords": {
-                        "default": "Wipe all groups and keywords",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Wipe all groups and keywords"
                     },
                     "Set_color_tag": {
-                        "default": "Add color tag",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Add color tag"
                     },
                     "Group_name": {
-                        "default": "Group name",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Group name"
                     },
                     "move_to": {
-                        "default": "Move to the group",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Move to the group"
                     },
                     "Filter_applied_to_selected_se_notice_1": {
-                        "default": "Filter will be applied to the selected search engine and location. Before applying the filter, check search volume.",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Filter will be applied to the selected search engine and location. Before applying the filter, check search volume."
                     },
                     "Ranks_tracked_date": {
-                        "default": "Rankings checked",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Rankings checked"
                     },
                     "Ranks_missing_in_serp": {
-                        "default": "Keyword not found in search results",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Keyword not found in search results"
                     },
                     "Filter_applied_to_selected_se_notice_2": {
-                        "default": "Filter will be applied to the selected search engine and location. Before applying the filter, check keyword rankings.",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Filter will be applied to the selected search engine and location. Before applying the filter, check keyword rankings."
                     },
                     "Groups_will_sort_alpahbetically": {
-                        "default": "Groups will be sorted alphabetically",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Groups will be sorted alphabetically"
                     },
                     "Groups_will_sort_by_date": {
-                        "default": "Groups will be sorted by creation date",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Groups will be sorted by creation date"
                     },
                     "Groups_without_keywords_will_delete": {
-                        "default": "All empty groups will be wiped!",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "All empty groups will be wiped!"
                     },
                     "Groups_keywords_will_delete": {
-                        "default": "All groups and keywords will be wiped immediately. You can't undo this action.",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "All groups and keywords will be wiped immediately. You can't undo this action."
                     },
                     "Inactive_groups_will_be_deleted": {
-                        "default": "All inactive groups will be wiped!",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "All inactive groups will be wiped!"
                     },
                     "Filters_bulk_actions": {
-                        "default": "Filters / Bulk operations",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Filters / Bulk operations"
                     },
                     "Copy_group": {
-                        "default": "Export group",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Export group"
                     },
                     "to_project": {
-                        "default": "to the project",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "to the project"
                     },
                     "Your_account": {
-                        "default": "You",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "You"
                     },
                     "project_owner": {
-                        "default": "Project owner",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Project owner"
                     },
                     "will_be_charged": {
-                        "default": "will be charged",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "will be charged"
                     },
                     "from_charged": {
-                        "readOnly": true,
-                        "type": "string"
+                        "const": ""
                     },
                     "Suggestions_depth": {
-                        "default": "Nesting level",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Nesting level"
                     },
                     "Move_gathered_single_group": {
-                        "default": "Band up all collected keywords within a single group",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Band up all collected keywords within a single group"
                     },
                     "Search_uri": {
-                        "default": "Search a URI",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Search a URI"
                     },
                     "Add_to_group": {
-                        "default": "Add to group",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Add to group"
                     },
                     "Integrate_to_use_the_tool_1": {
-                        "default": "To use the tool",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "To use the tool"
                     },
                     "Integrate_to_use_the_tool_2": {
-                        "default": "integrate",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "integrate"
                     },
                     "Integrate_to_use_the_tool_3": {
-                        "default": "your account with Google Analytics, Google Search Console or Yandex Metrica",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "your account with Google Analytics, Google Search Console or Yandex Metrica"
                     },
                     "Methods_of_research": {
-                        "default": "Methods",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Methods"
                     },
                     "Popular": {
-                        "default": "Popular",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Popular"
                     },
                     "Other": {
-                        "default": "Other",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Other"
                     },
                     "Clustering_in_process": {
-                        "default": "Clustering",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Clustering"
                     },
                     "Clustering_type": {
-                        "default": "Clustering type",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Clustering type"
                     },
                     "Name_az": {
-                        "default": "Name A-Z",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Name A-Z"
                     },
                     "Name_za": {
-                        "default": "Name Z-A",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Name Z-A"
                     },
                     "Apply_to_selected": {
-                        "default": "Apply to selected keywords",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Apply to selected keywords"
                     },
                     "items_number": {
-                        "default": "keyword(s)",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "keyword(s)"
                     },
                     "Assign_target": {
-                        "default": "Assign target URL",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Assign target URL"
                     },
                     "Landing_enter_URL": {
-                        "default": "Enter URL",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Enter URL"
                     },
                     "Reset": {
-                        "default": "Cancel",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Cancel"
                     },
                     "Without_region": {
-                        "default": "Global",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Global"
                     },
                     "Total_exact_ams": {
-                        "default": "Total search volume of a keyword group",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Total search volume of a keyword group"
                     },
                     "Total_exact_ams_of_project": {
-                        "default": "Total search volume of keywords in project",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Total search volume of keywords in project"
                     },
                     "Find_replace": {
-                        "default": "Find and replace",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Find and replace"
                     },
                     "Find_replace_target_links": {
-                        "default": "Find and replace target URLs",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Find and replace target URLs"
                     },
                     "Move_by_substrings": {
-                        "default": "Move keywords by substring",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Move keywords by substring"
                     },
                     "Move_by_substrings_whole_words": {
-                        "default": "Whole words",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Whole words"
                     },
                     "Move_by_substrings_info": {
-                        "default": "All keywords in which at least one of the specified substrings is found will be moved to the specified group. Example: When specifying the \"a\" substring, all keywords with the letter \"a\" will be moved.",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "All keywords in which at least one of the specified substrings is found will be moved to the specified group. Example: When specifying the \"a\" substring, all keywords with the letter \"a\" will be moved."
                     },
                     "Filter_short": {
-                        "default": "F",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "F"
                     },
                     "Tag": {
-                        "default": "Tag",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Tag"
                     },
                     "Change": {
-                        "default": "Change",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Change"
                     },
                     "Find": {
-                        "default": "Find",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Find"
                     },
                     "Replace": {
-                        "default": " Replace with",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": " Replace with"
                     },
                     "Add_keyword_to_replace": {
-                        "default": "Add words or phrases to replace",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Add words or phrases to replace"
                     },
                     "Keyword_will_be_replaced": {
-                        "default": "These words or phrases will be automatically replaced.",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "These words or phrases will be automatically replaced."
                     },
                     "Tetris_points": {
-                        "default": "Points",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Points"
                     },
                     "Tetris_best_score": {
-                        "default": "Best score",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Best score"
                     },
                     "Tetris_game_over": {
-                        "default": "Game over",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Game over"
                     },
                     "Tetris_play_again": {
-                        "default": "Play again",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Play again"
                     },
                     "Hints_data_sources": {
-                        "default": "Sources",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Sources"
                     },
                     "CONTROLLER_Phrases_added": {
-                        "default": "You have successfully added keywords",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "You have successfully added keywords"
                     },
                     "CONTROLLER_phrases_missed": {
-                        "default": "skipped duplicate keywords",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "skipped duplicate keywords"
                     },
                     "CONTROLLER_phrases_moved": {
-                        "default": "moved (changed) keywords",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "moved (changed) keywords"
                     },
                     "CONTROLLER_Semantic_kernel": {
-                        "default": "Keywords",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Keywords"
                     },
                     "Folder_max_depth": {
-                        "default": "Nested folder limit",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Nested folder limit"
                     },
                     "Choose_searcher": {
-                        "default": "Select search engine",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Select search engine"
                     },
                     "Choose_region": {
-                        "default": "Select location",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Select location"
                     },
                     "Choose_regions": {
-                        "default": "Select locations",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Select locations"
                     },
                     "Choose_searcher_and_region": {
-                        "default": "Select search engine and location",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Select search engine and location"
                     },
                     "Choose_competitor": {
-                        "default": "Select competitor",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Select competitor"
                     },
                     "Choose_group": {
-                        "default": "Choose group",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Choose group"
                     },
                     "Main_project": {
-                        "default": "My project",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "My project"
                     },
                     "Without_relevant_url": {
-                        "default": "No ranked URL",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "No ranked URL"
                     },
                     "Not_checked": {
-                        "default": "Not tracked",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Not tracked"
                     },
                     "Set_phrases_minus": {
-                        "default": "Exclude all phrases with negative keywords (Google and Yandex)",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Exclude all phrases with negative keywords (Google and Yandex)"
                     },
                     "Negative_words": {
-                        "default": "Negative keywords",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Negative keywords"
                     },
                     "Check_old_searches": {
-                        "default": "Update expired search volume",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Update expired search volume"
                     },
                     "Group_id": {
-                        "default": "Group id",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Group id"
                     },
                     "Project_id": {
-                        "default": "Project id",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Project id"
                     },
                     "Keyword_id": {
-                        "default": "Keyword id",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Keyword id"
                     },
                     "Keyword_folder_id": {
-                        "default": "Keyword folder id",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Keyword folder id"
                     },
                     "Folder_path": {
-                        "default": "Folder",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Folder"
                     },
                     "Keyword_rank": {
-                        "default": "Keyword rank",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Keyword rank"
                     },
                     "Keyword_count": {
-                        "default": "Keyword count",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Keyword count"
                     },
                     "Sorting_order": {
-                        "default": "Sorting order",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Sorting order"
                     },
                     "Keyword_clustering_completed": {
-                        "default": "Keyword clustering completed",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Keyword clustering completed"
                     },
                     "Send_to_email": {
-                        "default": "Send to Email",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Send to Email"
                     },
                     "Data_will_be_pulled_for": {
-                        "default": "Collect data for",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Collect data for"
                     },
                     "total_count": {
-                        "default": "; total count",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "; total count"
                     },
                     "Enter_keywords": {
-                        "default": "Enter keywords",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Enter keywords"
                     },
                     "Upload_from_file": {
-                        "default": "Upload from file",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Upload from file"
                     },
                     "Selected": {
-                        "default": "Selected",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Selected"
                     },
                     "Keyword_export": {
-                        "default": "Keyword export",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Keyword export"
                     },
                     "Group_export": {
-                        "default": "Group export",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Group export"
                     },
                     "Copy_to_clipboard": {
-                        "default": "Copy to clipboard",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Copy to clipboard"
                     },
                     "Copy_to_clipboard_up_to": {
-                        "default": "Copy to clipboard (up to %max% keywords)",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Copy to clipboard (up to %max% keywords)"
                     },
                     "To_copy_and_move": {
-                        "default": "Copy and transfer",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Copy and transfer"
                     },
                     "To_delete_keywords_warning": {
-                        "default": "<b>Important!</b><br>Are you sure you want to delete selected keywords?",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "<b>Important!</b><br>Are you sure you want to delete selected keywords?"
                     },
                     "To_delete_folder_warning": {
-                        "default": "<b>Important!</b><br><br>If you delete a folder, its contents (subfolders, groups, keywords) will be deleted immediately",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "<b>Important!</b><br><br>If you delete a folder, its contents (subfolders, groups, keywords) will be deleted immediately"
                     },
                     "Restore_selected_keywords": {
-                        "default": "Restore selected keywords",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Restore selected keywords"
                     },
                     "Restore_selected_folders": {
-                        "default": "Restore selected folders",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Restore selected folders"
                     },
                     "Restore_selected_groups_restores_contents": {
-                        "default": "If you restore the group, all folders and keywords in the group will be restored immediately",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "If you restore the group, all folders and keywords in the group will be restored immediately"
                     },
                     "Restore": {
-                        "default": "Restore",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Restore"
                     },
                     "or_drag_here": {
-                        "default": "or drag and drop here",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "or drag and drop here"
                     },
                     "txt_csv_max_size": {
-                        "default": "(txt or csv - max 10 Mb)",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "(txt or csv - max 10 Mb)"
                     },
                     "Drop_file": {
-                        "default": "Drop file",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Drop file"
                     },
                     "File_uploaded": {
-                        "default": "File uploaded",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "File uploaded"
                     },
                     "Disable_floating_bar": {
-                        "default": "Disable floating bar",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Disable floating bar"
                     },
                     "Temporary_bin": {
-                        "default": "Temporary bin",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Temporary bin"
                     },
                     "Set_target_equals_relevant": {
-                        "default": "Assign Target = Ranked URL from the last check",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Assign Target = Ranked URL from the last check"
                     },
                     "Import_target_links": {
-                        "default": "Import target links",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Import target links"
                     },
                     "Total_selected": {
-                        "default": "Total selected keywords",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Total selected keywords"
                     },
                     "Keyword_length": {
-                        "default": "Keyword length",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Keyword length"
                     },
                     "XSLX_tabs": {
-                        "default": "XLSX (Tabs)",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "XLSX (Tabs)"
                     },
                     "Prepare": {
-                        "default": "Prepare",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Prepare"
                     },
                     "Enter_name_of_new_group": {
-                        "default": "Enter a name of a new group",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Enter a name of a new group"
                     },
                     "Manage_columns": {
-                        "default": "Manage columns",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Manage columns"
                     },
                     "Max_period_one_year": {
-                        "default": "Max period - 1 year",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Max period - 1 year"
                     },
                     "Target_equals_relevant_lastcheck_in_location": {
-                        "default": "Target = Ranked URL from the last check in the location",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Target = Ranked URL from the last check in the location"
                     },
                     "Do_not_overwrite_assigned_target_links": {
-                        "default": "Do not overwrite assigned target links",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Do not overwrite assigned target links"
                     },
                     "Sy_wordstat_max_pages": {
-                        "default": "Количество страниц (макс.)",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Количество страниц (макс.)"
                     },
                     "Research_status": {
-                        "default": "Keyword research status",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Keyword research status"
                     },
                     "Activity_status": {
-                        "default": "Group activity status",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Group activity status"
                     },
                     "No_target_URL": {
-                        "default": "No Target URL",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "No Target URL"
                     },
                     "Move_keywords_to_another_project": {
-                        "default": "Move to another project",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Move to another project"
                     },
                     "Move_group_and_delete_from_orginal_project": {
-                        "default": "Transfer (delete from the orginal project)",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Transfer (delete from the orginal project)"
                     },
                     "Keywords_to_transfer_and_delete_from_project": {
-                        "default": "To transfer and delete from the original project",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "To transfer and delete from the original project"
                     },
                     "Remove_pluses_fullstops_commas_apostrophes_quotes": {
-                        "default": "Remove plus symbols, full stops, commas, apostrophes, quotes",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Remove plus symbols, full stops, commas, apostrophes, quotes"
                     },
                     "HintVolumeNoCollected": {
-                        "default": "Volume isn't collected. Follow <a href=\"/ru/support/keywords/volume/\" target=\"_blank\">this manual</a> to collect volume.<br><br>\nFor some keywords search volume is displayed because we store volume in a common database without linking it to a particular user: if other users checked it, it would be automatically pulled from the database. But note that such volume could be outdated.",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Volume isn't collected. Follow <a href=\"/ru/support/keywords/volume/\" target=\"_blank\">this manual</a> to collect volume.<br><br>\nFor some keywords search volume is displayed because we store volume in a common database without linking it to a particular user: if other users checked it, it would be automatically pulled from the database. But note that such volume could be outdated."
                     }
                 },
                 "required": [

@@ -11,9 +11,7 @@
                 "type": "object",
                 "properties": {
                     "TV": {
-                        "default": "ТV",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "ТV"
                     }
                 },
                 "required": [

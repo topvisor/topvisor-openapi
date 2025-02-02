@@ -11,74 +11,46 @@
                 "type": "object",
                 "properties": {
                     "Link_deleted": {
-                        "default": "Link deleted",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Link deleted"
                     },
                     "Show_deleted_links": {
-                        "default": "Show deleted links",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Show deleted links"
                     },
                     "Show_favorite_links": {
-                        "default": "Show favorite links",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Show favorite links"
                     },
                     "Remove_link": {
-                        "default": "Delete link",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Delete link"
                     },
                     "Recover_link": {
-                        "default": "Restore link",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Restore link"
                     },
                     "Set_favorite": {
-                        "default": "Star link",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Star link"
                     },
                     "Link_cannot_be_shortened": {
-                        "default": "URL cannot be shorten.",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "URL cannot be shorten."
                     },
                     "Link_blocked_roskomnadzor": {
-                        "default": "URL cannot be shorten (4). URL blocked by Roskomnadzor.",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "URL cannot be shorten (4). URL blocked by Roskomnadzor."
                     },
                     "Sort_name_desc": {
-                        "default": "Title Z-A",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Title Z-A"
                     },
                     "Sort_name_asc": {
-                        "default": "Title A-Z",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Title A-Z"
                     },
                     "Sort_clicks_desc": {
-                        "default": "Clicks descending",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Clicks descending"
                     },
                     "Sort_clicks_asc": {
-                        "default": "Clicks ascending",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Clicks ascending"
                     },
                     "Sort_date_asc": {
-                        "default": "By date from oldest to newest",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "By date from oldest to newest"
                     },
                     "Sort_date_desc": {
-                        "default": "By date from newest to oldest",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "By date from newest to oldest"
                     }
                 },
                 "required": [

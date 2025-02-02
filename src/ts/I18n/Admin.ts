@@ -8,8 +8,10 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         "I18n.Admin": {
-            readonly Warning_message: string;
-            readonly Warning_message_admin: string;
+            /** @constant */
+            Warning_message: "";
+            /** @constant */
+            Warning_message_admin: "";
         };
     };
     responses: never;

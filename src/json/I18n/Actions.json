@@ -11,59 +11,37 @@
                 "type": "object",
                 "properties": {
                     "Link_not_available": {
-                        "default": "This link is no longer active",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "This link is no longer active"
                     },
                     "User_blocked": {
-                        "default": "Your user is blocked",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Your user is blocked"
                     },
                     "Report_subscribe_canceled": {
-                        "default": "You successfully unsubscribed from project reports",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "You successfully unsubscribed from project reports"
                     },
                     "Report_subscribe_canceled1": {
-                        "default": "Subscription to",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Subscription to"
                     },
                     "Report_subscribe_canceled2": {
-                        "default": "is cancelled successfully",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "is cancelled successfully"
                     },
                     "Informer_unsubscribe_news": {
-                        "default": "unsubscribe from news",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "unsubscribe from news"
                     },
                     "Informer_subscribe_balance": {
-                        "default": "unsubscribe from low balance alerts",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "unsubscribe from low balance alerts"
                     },
                     "Informer_unsubscribe_tickets": {
-                        "default": "unsubscribe from new ticket replies",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "unsubscribe from new ticket replies"
                     },
                     "Informer_unsubscribe_update": {
-                        "default": "unsubscribe from Yandex updates",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "unsubscribe from Yandex updates"
                     },
                     "Informer_unsubscribe_comments": {
-                        "default": "unsubscribe from new comments",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "unsubscribe from new comments"
                     },
                     "Informer_unsubscribe_api": {
-                        "default": "unsubscribe from API updates",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "unsubscribe from API updates"
                     }
                 },
                 "required": [

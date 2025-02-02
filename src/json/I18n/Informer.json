@@ -11,149 +11,91 @@
                 "type": "object",
                 "properties": {
                     "Type_balance": {
-                        "default": "Balance",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Balance"
                     },
                     "Type_news": {
-                        "default": "Sevice news",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Sevice news"
                     },
                     "Type_tickets": {
-                        "default": "Tickets",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Tickets"
                     },
                     "Type_yandex_update": {
-                        "default": "Yandex update",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Yandex update"
                     },
                     "Type_comments": {
-                        "default": "New comment alerts",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "New comment alerts"
                     },
                     "Type_api": {
-                        "default": "API updates",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "API updates"
                     },
                     "Unsubscribe": {
-                        "default": "Unsubscribe",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Unsubscribe"
                     },
                     "Enter_title_and_text": {
-                        "default": "Enter title and message text",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Enter title and message text"
                     },
                     "Log_text": {
-                        "default": "Emailing",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Emailing"
                     },
                     "Log_text2": {
-                        "default": "only for subscribers",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "only for subscribers"
                     },
                     "Tickets_title": {
-                        "default": "You received a new reply to your ticket",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "You received a new reply to your ticket"
                     },
                     "Balance_title": {
-                        "default": "Account balance alert",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Account balance alert"
                     },
                     "Update_title": {
-                        "default": "Yandex search results updated",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Yandex search results updated"
                     },
                     "Comments_title": {
-                        "default": "You comment has a new reply! Join the discussion 😎",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "You comment has a new reply! Join the discussion 😎"
                     },
                     "No_new_notifications": {
-                        "default": "No notifications yet",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "No notifications yet"
                     },
                     "clear_all": {
-                        "default": "clear all",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "clear all"
                     },
                     "Notifications": {
-                        "default": "Notifications",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Notifications"
                     },
                     "Email": {
-                        "default": "Email",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Email"
                     },
                     "Push": {
-                        "default": "Push",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Push"
                     },
                     "Block": {
-                        "default": "Block",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Block"
                     },
                     "Informer": {
-                        "default": "Alerts",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Alerts"
                     },
                     "Select_all": {
-                        "default": "Select all",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Select all"
                     },
                     "Clear_all": {
-                        "default": "Clear all",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Clear all"
                     },
                     "Comment_replies": {
-                        "default": "Comment replies",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Comment replies"
                     },
                     "replied_to_you": {
-                        "default": " replied to you",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": " replied to you"
                     },
                     "in_comments_on_the_post": {
-                        "default": "in comments on the post",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "in comments on the post"
                     },
                     "Email_delivery_failure": {
-                        "default": "Email delivery has failed to this recipient",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Email delivery has failed to this recipient"
                     },
                     "email_unsubscribed_from_reports": {
-                        "default": "unsubscribed from reports of projects",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "unsubscribed from reports of projects"
                     },
                     "You_unsubscribed_from_emails": {
-                        "default": "You unsubscribed from emails to",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "You unsubscribed from emails to"
                     }
                 },
                 "required": [

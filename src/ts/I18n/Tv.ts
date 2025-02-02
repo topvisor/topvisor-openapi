@@ -8,8 +8,8 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         "I18n.Tv": {
-            /** @default ТV */
-            readonly TV: string;
+            /** @constant */
+            TV: "ТV";
         };
     };
     responses: never;

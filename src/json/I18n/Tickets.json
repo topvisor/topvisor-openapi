@@ -11,264 +11,160 @@
                 "type": "object",
                 "properties": {
                     "Reply_Title": {
-                        "default": "Ticket reply",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Ticket reply"
                     },
                     "Reply_notice": {
-                        "default": "When replying to the ticket, please do not change the topic",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "When replying to the ticket, please do not change the topic"
                     },
                     "Auto_message_title": {
-                        "default": "Thank you, your ticket has been submitted",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Thank you, your ticket has been submitted"
                     },
                     "Open_tickets": {
-                        "default": "Open",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Open"
                     },
                     "Closed_tickets": {
-                        "default": "Closed",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Closed"
                     },
                     "Close_ticket": {
-                        "default": "Close ticket",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Close ticket"
                     },
                     "Open_ticket": {
-                        "default": "Open ticket",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Open ticket"
                     },
                     "Add_to_favorites": {
-                        "default": "Add to favorites",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Add to favorites"
                     },
                     "Remove_from_favorites": {
-                        "default": "Remove from favorites",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Remove from favorites"
                     },
                     "Continue_in_new_ticket": {
-                        "default": "Continue in new ticket",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Continue in new ticket"
                     },
                     "Quote_message": {
-                        "default": "Quote message",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Quote message"
                     },
                     "Edit_message": {
-                        "default": "Edit message",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Edit message"
                     },
                     "Delete_message": {
-                        "default": "Delete message",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Delete message"
                     },
                     "User_info": {
-                        "default": "User info",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "User info"
                     },
                     "Device": {
-                        "default": "Device",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Device"
                     },
                     "Browser": {
-                        "default": "Browser",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Browser"
                     },
                     "Pricing_plan": {
-                        "default": "Pricing plan",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Pricing plan"
                     },
                     "Edit_template": {
-                        "default": "Edit template",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Edit template"
                     },
                     "Template_title": {
-                        "default": "Title",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Title"
                     },
                     "Add_msg": {
-                        "default": "Write a message",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Write a message"
                     },
                     "Delete_template": {
-                        "default": "Delete template",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Delete template"
                     },
                     "Found": {
-                        "default": "Results",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Results"
                     },
                     "Search_tickets": {
-                        "default": "Search tickets",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Search tickets"
                     },
                     "New_ticket": {
-                        "default": "Create ticket",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Create ticket"
                     },
                     "Reopen_ticket": {
-                        "default": "Reopen ticket",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Reopen ticket"
                     },
                     "Text_welcome_1": {
-                        "default": "Select a ticket or",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Select a ticket or"
                     },
                     "Text_welcome_2": {
-                        "default": "create a new one",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "create a new one"
                     },
                     "Text_welcome_3": {
-                        "default": "to contact Customer Support",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "to contact Customer Support"
                     },
                     "Text_new_ticket_1": {
-                        "default": "Please describe the problem or ask a question",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Please describe the problem or ask a question"
                     },
                     "Text_new_ticket_2": {
-                        "default": "We will get back to you shortly 💙",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "We will get back to you shortly 💙"
                     },
                     "Ticket_source_page": {
-                        "default": "Ticket source page",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Ticket source page"
                     },
                     "Sound_mute": {
-                        "default": "Mute",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Mute"
                     },
                     "Sound_pencil": {
-                        "default": "Pencil",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Pencil"
                     },
                     "Sound_magic_wand": {
-                        "default": "Magic wand",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Magic wand"
                     },
                     "Sound_bounce": {
-                        "default": "Bounce",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Bounce"
                     },
                     "Sound_beep": {
-                        "default": "Beep",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Beep"
                     },
                     "Sound_xylophone": {
-                        "default": "Xylophone",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Xylophone"
                     },
                     "Sound_drums": {
-                        "default": "Drums",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Drums"
                     },
                     "Average_expenses": {
-                        "default": "Average expenses",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Average expenses"
                     },
                     "Bad": {
-                        "default": "Bad",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Bad"
                     },
                     "Normal": {
-                        "default": "OK",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "OK"
                     },
                     "Good": {
-                        "default": "Great!",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Great!"
                     },
                     "Title_start": {
-                        "default": "Rate how the Support did their part",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Rate how the Support did their part"
                     },
                     "Title_finish": {
-                        "default": "Thanks for the feedback!",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Thanks for the feedback!"
                     },
                     "Text_start": {
-                        "default": "It'll help us to get better.",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "It'll help us to get better."
                     },
                     "Text_good": {
-                        "default": "We'll keep it up.",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "We'll keep it up."
                     },
                     "Text_bad": {
-                        "default": "We'll improve our service.",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "We'll improve our service."
                     },
                     "Comment_title_good": {
-                        "default": "What did you particularly enjoy?",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "What did you particularly enjoy?"
                     },
                     "Comment_title_bad": {
-                        "default": "Tell us what was wrong — we'll do everything to get better!",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Tell us what was wrong — we'll do everything to get better!"
                     },
                     "Button_change_review": {
-                        "default": "Change the feedback",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Change the feedback"
                     },
                     "Online": {
-                        "default": "Online",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Online"
                     },
                     "Visited": {
-                        "default": "Last seen",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Last seen"
                     }
                 },
                 "required": [

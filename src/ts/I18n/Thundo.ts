@@ -8,10 +8,10 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         "I18n.Thundo": {
-            /** @default Thunder is coming */
-            readonly Og_title: string;
-            /** @default Fasten your seatbelts, we're about to transform the view of how to do SEO! */
-            readonly Og_description: string;
+            /** @constant */
+            Og_title: "Thunder is coming";
+            /** @constant */
+            Og_description: "Fasten your seatbelts, we're about to transform the view of how to do SEO!";
         };
     };
     responses: never;

@@ -11,2352 +11,1414 @@
                 "type": "object",
                 "properties": {
                     "url_lang_prefix": {
-                        "readOnly": true,
-                        "type": "string"
+                        "const": ""
                     },
                     "Page_404_text": {
-                        "default": "Page Not Found",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Page Not Found"
                     },
                     "Page_404_text2": {
-                        "default": "You will be redirected <br> in",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "You will be redirected <br> in"
                     },
                     "Page_404_sec": {
-                        "default": "seconds",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "seconds"
                     },
                     "Page_403_text": {
-                        "default": "Access denied",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Access denied"
                     },
                     "openApp_text": {
-                        "default": "Page loading",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Page loading"
                     },
                     "openApp_text2": {
-                        "default": "Open application",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Open application"
                     },
                     "lang": {
-                        "default": "en",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "en"
                     },
                     "lang_country": {
-                        "default": "US",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "US"
                     },
                     "lang_url": {
-                        "readOnly": true,
-                        "type": "string"
+                        "const": ""
                     },
                     "alternate_lang": {
-                        "default": "ru",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "ru"
                     },
                     "alternate_lang_country": {
-                        "default": "RU",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "RU"
                     },
                     "alternate_lang_url": {
-                        "default": "/ru",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "/ru"
                     },
                     "Lang_full": {
-                        "default": "English",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "English"
                     },
                     "language": {
-                        "default": "language",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "language"
                     },
                     "Language": {
-                        "default": "Language",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Language"
                     },
                     "locale": {
-                        "default": "en_US",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "en_US"
                     },
                     "date_format": {
-                        "default": "m/d/Y",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "m/d/Y"
                     },
                     "Description": {
-                        "default": "Tools for tracking, analyzing and measuring SEO performance",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Tools for tracking, analyzing and measuring SEO performance"
                     },
                     "Og_description": {
-                        "default": "Try out SEO & PPC Tools for keyword research, clustering, rank tracking and on-page optimization. Get better results from paid search and organic rankings!",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Try out SEO & PPC Tools for keyword research, clustering, rank tracking and on-page optimization. Get better results from paid search and organic rankings!"
                     },
                     "Og_description_invite": {
-                        "default": "SEO & PPC Tools for better marketing. Highly recommended!",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "SEO & PPC Tools for better marketing. Highly recommended!"
                     },
                     "Ascending": {
-                        "default": "Ascending",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Ascending"
                     },
                     "Descending": {
-                        "default": "Descending",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Descending"
                     },
                     "TV_address_street": {
-                        "default": "Voronezhskaya ul.",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Voronezhskaya ul."
                     },
                     "Message_session_security_error": {
-                        "default": "Session security error, please <a href=\"/\">refresh page</a> and try again",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Session security error, please <a href=\"/\">refresh page</a> and try again"
                     },
                     "Message_dbh_remote": {
-                        "default": "We're upgrading our servers. The service is temporarily unavailable. Please, try again later",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "We're upgrading our servers. The service is temporarily unavailable. Please, try again later"
                     },
                     "Message_dbh_remote_error": {
-                        "default": "We're upgrading our servers. Tasks creating is temporarily unavailable. Please, try again later",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "We're upgrading our servers. Tasks creating is temporarily unavailable. Please, try again later"
                     },
                     "Message_ch_error": {
-                        "default": "We're upgrading this module's server, please, try again later",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "We're upgrading this module's server, please, try again later"
                     },
                     "Message_sp_error": {
-                        "default": "We're upgrading this module's server, please, try again later",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "We're upgrading this module's server, please, try again later"
                     },
                     "Every_day": {
-                        "default": "Every day",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Every day"
                     },
                     "time_a_0": {
-                        "default": "times",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "times"
                     },
                     "time_a_1": {
-                        "default": "time",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "time"
                     },
                     "time_a_2": {
-                        "default": "times",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "times"
                     },
                     "a_week": {
-                        "default": "a week",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "a week"
                     },
                     "a_month": {
-                        "default": "a month",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "a month"
                     },
                     "discount": {
-                        "default": "discount",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "discount"
                     },
                     "month_short": {
-                        "default": "mo",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "mo"
                     },
                     "Balance": {
-                        "default": "Balance",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Balance"
                     },
                     "Referrals": {
-                        "default": "Affiliate program",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Affiliate program"
                     },
                     "Organization": {
-                        "default": "Organization",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Organization"
                     },
                     "Yes": {
-                        "default": "Yes",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Yes"
                     },
                     "Exists": {
-                        "default": "Exists",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Exists"
                     },
                     "No": {
-                        "default": "No",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "No"
                     },
                     "not": {
-                        "default": "not",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "not"
                     },
                     "and": {
-                        "default": "and",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "and"
                     },
                     "ruble": {
-                        "default": "rub.",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "rub."
                     },
                     "for": {
-                        "default": "for",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "for"
                     },
                     "For": {
-                        "default": "For",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "For"
                     },
                     "Close": {
-                        "default": "Close",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Close"
                     },
                     "OK": {
-                        "default": "OK",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "OK"
                     },
                     "Apply": {
-                        "default": "OK",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "OK"
                     },
                     "Choose": {
-                        "default": "Apply",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Apply"
                     },
                     "Download": {
-                        "default": "Download",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Download"
                     },
                     "download": {
-                        "default": "download",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "download"
                     },
                     "Step": {
-                        "default": "Step",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Step"
                     },
                     "Continue": {
-                        "default": "Continue",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Continue"
                     },
                     "Back": {
-                        "default": "Back",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Back"
                     },
                     "Next": {
-                        "default": "Next",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Next"
                     },
                     "Prev_page_short": {
-                        "default": "Prev",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Prev"
                     },
                     "Next_page_short": {
-                        "default": "Next",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Next"
                     },
                     "project": {
-                        "default": "project",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "project"
                     },
                     "Project": {
-                        "default": "Project",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Project"
                     },
                     "of_project": {
-                        "default": "of project",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "of project"
                     },
                     "Tool_digest": {
-                        "default": "Tool digest (2024)",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Tool digest (2024)"
                     },
                     "Ticket": {
-                        "default": "Ticket",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Ticket"
                     },
                     "Tickets": {
-                        "default": "Tickets",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Tickets"
                     },
                     "All_tickets": {
-                        "default": "All tickets",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "All tickets"
                     },
                     "All_pages": {
-                        "default": "All articles",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "All articles"
                     },
                     "Submit": {
-                        "default": "Submit",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Submit"
                     },
                     "Tickets_page": {
-                        "default": "\"Tickets\" page",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "\"Tickets\" page"
                     },
                     "Submitted": {
-                        "default": "Submitted",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Submitted"
                     },
                     "Created_at": {
-                        "default": "Created",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Created"
                     },
                     "Schet_number": {
-                        "default": "No.",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "No."
                     },
                     "Cancel": {
-                        "default": "Cancel",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Cancel"
                     },
                     "Send": {
-                        "default": "Send",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Send"
                     },
                     "More": {
-                        "default": "More",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "More"
                     },
                     "Read_more": {
-                        "default": "Read more",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Read more"
                     },
                     "User": {
-                        "default": "User",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "User"
                     },
                     "Message": {
-                        "default": "Message",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Message"
                     },
                     "Message_not_sended": {
-                        "default": "Message hasn't been sent",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Message hasn't been sent"
                     },
                     "Comment_not_deleted": {
-                        "default": "Comment not removed",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Comment not removed"
                     },
                     "Link": {
-                        "default": "Link",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Link"
                     },
                     "Name": {
-                        "default": "Name",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Name"
                     },
                     "First_and_last_name": {
-                        "default": "First and last name",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "First and last name"
                     },
                     "Access_denied": {
-                        "default": "Access denied",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Access denied"
                     },
                     "Access_error": {
-                        "default": "Access error",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Access error"
                     },
                     "No_data": {
-                        "default": "No data found",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "No data found"
                     },
                     "No_results": {
-                        "default": "No results",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "No results"
                     },
                     "Dynamics": {
-                        "default": "Dynamics",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Dynamics"
                     },
                     "Country": {
-                        "default": "Country",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Country"
                     },
                     "Number": {
-                        "default": "No.",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "No."
                     },
                     "Number_word": {
-                        "default": "Number",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Number"
                     },
                     "CPC": {
-                        "default": "CPC",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "CPC"
                     },
                     "Clear": {
-                        "default": "Clear",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Clear"
                     },
                     "Phone": {
-                        "default": "Phone number",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Phone number"
                     },
                     "Email": {
-                        "default": "Email",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Email"
                     },
                     "Email_not_exist": {
-                        "default": "The Email you entered doesn't exist",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "The Email you entered doesn't exist"
                     },
                     "Password_incorrect": {
-                        "default": "The password you entered is incorrect!",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "The password you entered is incorrect!"
                     },
                     "Enter_email": {
-                        "default": "Enter email",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Enter email"
                     },
                     "Enter_password": {
-                        "default": "Enter password",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Enter password"
                     },
                     "Remember_me": {
-                        "default": "Remember me",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Remember me"
                     },
                     "Forgot_password": {
-                        "default": "Forgot your password?",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Forgot your password?"
                     },
                     "Signup_now": {
-                        "default": "Sign up now",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Sign up now"
                     },
                     "Sign_in_with": {
-                        "default": "Sign in with",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Sign in with"
                     },
                     "Password_recovering": {
-                        "default": "Recover password",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Recover password"
                     },
                     "Recover_password": {
-                        "default": "Recover password",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Recover password"
                     },
                     "Keywords_one_per_line": {
-                        "default": "Keywords (each keyword on a new line)",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Keywords (each keyword on a new line)"
                     },
                     "Add_se": {
-                        "default": "Add a Search engine",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Add a Search engine"
                     },
                     "Create_project": {
-                        "default": "Create a project",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Create a project"
                     },
                     "Creating": {
-                        "default": "Creating...",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Creating..."
                     },
                     "Enter_valid_email_notice": {
-                        "default": "Enter a valid E-mail address",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Enter a valid E-mail address"
                     },
                     "No_account_sign_up": {
-                        "default": "No account? <a href=\".\" data-to-view=\"%toViewReg%\">Sign up</a>",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "No account? <a href=\".\" data-to-view=\"%toViewReg%\">Sign up</a>"
                     },
                     "No_account": {
-                        "default": "No account?",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "No account?"
                     },
                     "Through_registration_you_confirm_agreement_policy": {
-                        "default": "By pressing Sign up you accept <a href=\"%hrefConfirm%\" target=\"_blank\">Terms and Conditions</a> and <a href=\"%hrefPrivacy%\" target=\"_blank\">Privacy Policy</a>",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "By pressing Sign up you accept <a href=\"%hrefConfirm%\" target=\"_blank\">Terms and Conditions</a> and <a href=\"%hrefPrivacy%\" target=\"_blank\">Privacy Policy</a>"
                     },
                     "Already_have_account": {
-                        "default": "Already have an account",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Already have an account"
                     },
                     "Try_again_or_sign_up": {
-                        "default": "<a href=\".\" data-to-view=\"%toViewAuth%\">Log in</a> or <a href=\".\" data-to-view=\"%toViewReg%\">sign up</a>",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "<a href=\".\" data-to-view=\"%toViewAuth%\">Log in</a> or <a href=\".\" data-to-view=\"%toViewReg%\">sign up</a>"
                     },
                     "If_no_msg_check_spam_ask_support_notice": {
-                        "default": "If you didn't receive a message, check a <b>Spam</b> folder or submit a ticket to <a href=\"%hrefCreateTicket%\">Customer support</a>",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "If you didn't receive a message, check a <b>Spam</b> folder or submit a ticket to <a href=\"%hrefCreateTicket%\">Customer support</a>"
                     },
                     "If_no_msg": {
-                        "default": "If you didn't receive a message, check a <b>Spam</b> folder or submit a ticket to ",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "If you didn't receive a message, check a <b>Spam</b> folder or submit a ticket to "
                     },
                     "support_notice": {
-                        "default": "Customer support",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Customer support"
                     },
                     "Confirmation_link_sent_to_email": {
-                        "default": "A confirmation link has been sent to ",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "A confirmation link has been sent to "
                     },
                     "Internal_error": {
-                        "default": "Internal error occurred, please submit a report to the developers",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Internal error occurred, please submit a report to the developers"
                     },
                     "Unknown_error": {
-                        "default": "Unknown error occurred, please try again later",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Unknown error occurred, please try again later"
                     },
                     "Google_server_error": {
-                        "default": "Google server error",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Google server error"
                     },
                     "Yandex_API_server_error": {
-                        "default": "Yandex.API server error",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Yandex.API server error"
                     },
                     "Yandex_auth_error": {
-                        "default": "Error occurred! Please, contact the project owner to resolve the issue!",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Error occurred! Please, contact the project owner to resolve the issue!"
                     },
                     "Request_error_required": {
-                        "default": "Required parameter missing in the request",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Required parameter missing in the request"
                     },
                     "Request_error_type": {
-                        "default": "Passed parameter type mismatch",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Passed parameter type mismatch"
                     },
                     "Request_error_value": {
-                        "default": "Passed parameter value mismatch",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Passed parameter value mismatch"
                     },
                     "Request_error_qualifiers": {
-                        "default": "Passed qualifiers mismatch",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Passed qualifiers mismatch"
                     },
                     "Error_regexp": {
-                        "default": "Regular expression error",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Regular expression error"
                     },
                     "Valid_characters": {
-                        "default": "Valid characters",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Valid characters"
                     },
                     "Bonus": {
-                        "default": "Bonus",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Bonus"
                     },
                     "or": {
-                        "default": "or",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "or"
                     },
                     "to": {
-                        "default": "until",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "until"
                     },
                     "to_1": {
-                        "default": "to",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "to"
                     },
                     "at": {
-                        "default": "at",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "at"
                     },
                     "To": {
-                        "default": "Until",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Until"
                     },
                     "Until": {
-                        "default": "Up to ",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Up to "
                     },
                     "next_count": {
-                        "default": "next",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "next"
                     },
                     "pages": {
-                        "default": "pages",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "pages"
                     },
                     "pages_full": {
-                        "default": "pages",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "pages"
                     },
                     "limit": {
-                        "default": "display",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "display"
                     },
                     "by": {
-                        "default": "by",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "by"
                     },
                     "Path": {
-                        "default": "Path",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Path"
                     },
                     "Rule": {
-                        "default": "Rule",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Rule"
                     },
                     "Allow": {
-                        "default": "Allow",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Allow"
                     },
                     "Disallow": {
-                        "default": "Forbid",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Forbid"
                     },
                     "Allow_of_mask": {
-                        "default": "Add mask matches from sitemap",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Add mask matches from sitemap"
                     },
                     "Disallow_of_mask": {
-                        "default": "Forbid the mask",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Forbid the mask"
                     },
                     "Search": {
-                        "default": "Search",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Search"
                     },
                     "Examples": {
-                        "default": "Examples",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Examples"
                     },
                     "Begin": {
-                        "default": "Start",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Start"
                     },
                     "Start_over": {
-                        "default": "Start over",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Start over"
                     },
                     "Export": {
-                        "default": "Export",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Export"
                     },
                     "Import": {
-                        "default": "Import",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Import"
                     },
                     "Off": {
-                        "default": "Off",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Off"
                     },
                     "Changes": {
-                        "default": "Changes",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Changes"
                     },
                     "Change": {
-                        "default": "Change",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Change"
                     },
                     "Value": {
-                        "default": "Value",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Value"
                     },
                     "Hide": {
-                        "default": "Hide",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Hide"
                     },
                     "Display": {
-                        "default": "Display",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Display"
                     },
                     "Save": {
-                        "default": "Save",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Save"
                     },
                     "Time": {
-                        "default": "Time",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Time"
                     },
                     "Loading": {
-                        "default": "Loading",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Loading"
                     },
                     "CY": {
-                        "default": "CY",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "CY"
                     },
                     "Broker": {
-                        "default": "Bid manager",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Bid manager"
                     },
                     "Maintenance": {
-                        "default": "Page is under maintenance",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Page is under maintenance"
                     },
                     "on_account": {
-                        "default": "to account",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "to account"
                     },
                     "on": {
-                        "default": "to",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "to"
                     },
                     "Tools": {
-                        "default": "SEO Tools",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "SEO Tools"
                     },
                     "Keyword_researcher": {
-                        "default": "Keyword research tool",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Keyword research tool"
                     },
                     "Rank_tracker": {
-                        "default": "Rank tracker tool",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Rank tracker tool"
                     },
                     "Upload": {
-                        "default": "Upload",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Upload"
                     },
                     "Hide_all": {
-                        "default": "Hide all",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Hide all"
                     },
                     "Expand_all": {
-                        "default": "Expand all",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Expand all"
                     },
                     "Expand": {
-                        "default": "Expand",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Expand"
                     },
                     "Attention": {
-                        "default": "Attention",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Attention"
                     },
                     "from": {
-                        "default": "from",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "from"
                     },
                     "from_1": {
-                        "default": "from",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "from"
                     },
                     "dated": {
-                        "default": "dated",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "dated"
                     },
                     "fromDate": {
-                        "default": "from",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "from"
                     },
                     "toDate": {
-                        "default": "to",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "to"
                     },
                     "SE": {
-                        "default": "SE",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "SE"
                     },
                     "Guest_link": {
-                        "default": "Guest link",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Guest link"
                     },
                     "Guest_link_copied_to_clipboard": {
-                        "default": "Guest link copied to clipboard",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Guest link copied to clipboard"
                     },
                     "Device_0": {
-                        "default": "PC",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "PC"
                     },
                     "Device_1": {
-                        "default": "Tablet",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Tablet"
                     },
                     "Device_2": {
-                        "default": "Phone",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Phone"
                     },
                     "Device_100": {
-                        "default": "YandexBot/3.0",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "YandexBot/3.0"
                     },
                     "Device_102": {
-                        "default": "YandexBot/3.0 (mobile)",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "YandexBot/3.0 (mobile)"
                     },
                     "Device_110": {
-                        "default": "Googlebot/2.1",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Googlebot/2.1"
                     },
                     "Device_112": {
-                        "default": "Googlebot/2.1 (mobile)",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Googlebot/2.1 (mobile)"
                     },
                     "Device_120": {
-                        "default": "AdsBot-Google",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "AdsBot-Google"
                     },
                     "Device_122": {
-                        "default": "AdsBot-Google-Mobile",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "AdsBot-Google-Mobile"
                     },
                     "Tag": {
-                        "default": "Tag",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Tag"
                     },
                     "Tags": {
-                        "default": "Tags",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Tags"
                     },
                     "All_tags": {
-                        "default": "All tags",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "All tags"
                     },
                     "Charts": {
-                        "default": "Charts",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Charts"
                     },
                     "All": {
-                        "default": "All",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "All"
                     },
                     "Selected": {
-                        "default": "Selected",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Selected"
                     },
                     "Select": {
-                        "default": "Select",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Select"
                     },
                     "Select_all": {
-                        "default": "Select all",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Select all"
                     },
                     "Added": {
-                        "default": "Added",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Added"
                     },
                     "Deleted": {
-                        "default": "Deleted",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Deleted"
                     },
                     "Rename": {
-                        "default": "Rename",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Rename"
                     },
                     "On_or_off": {
-                        "default": "On / Off",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "On / Off"
                     },
                     "Autoselect": {
-                        "default": "Autoselect",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Autoselect"
                     },
                     "Open_project": {
-                        "default": "Open project",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Open project"
                     },
                     "Domain": {
-                        "default": "Domain",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Domain"
                     },
                     "Domains": {
-                        "default": "Domains",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Domains"
                     },
                     "Track": {
-                        "default": "Track",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Track"
                     },
                     "Check": {
-                        "default": "Check",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Check"
                     },
                     "Track_continued": {
-                        "default": "Track",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Track"
                     },
                     "Telegram": {
-                        "default": "Telegram",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Telegram"
                     },
                     "Link_to_telegram": {
-                        "default": "Link to Telegram",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Link to Telegram"
                     },
                     "Other": {
-                        "default": "Other",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Other"
                     },
                     "Other_f": {
-                        "default": "Other",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Other"
                     },
                     "Proceed": {
-                        "default": "Proceed",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Proceed"
                     },
                     "Projects": {
-                        "default": "Projects",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Projects"
                     },
                     "Metrika": {
-                        "default": "Yandex.Metrica",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Yandex.Metrica"
                     },
                     "Webmaster": {
-                        "default": "Yandex.Webmaster",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Yandex.Webmaster"
                     },
                     "Yandex_Direct": {
-                        "default": "Yandex Direct",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Yandex Direct"
                     },
                     "YandexDirect": {
-                        "default": "Yandex.Direct",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Yandex.Direct"
                     },
                     "Yandex_Wordstat": {
-                        "default": "Yandex Wordstat",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Yandex Wordstat"
                     },
                     "Y_freq": {
-                        "default": "Volume",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Volume"
                     },
                     "Y_freq2": {
-                        "default": "\"Volume\"",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "\"Volume\""
                     },
                     "Y_freq3": {
-                        "default": "\"!Volume\"",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "\"!Volume\""
                     },
                     "Y_freq5": {
-                        "default": "\"[Volume]\"",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "\"[Volume]\""
                     },
                     "Y_freq6": {
-                        "default": "\"[!Volume]\"",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "\"[!Volume]\""
                     },
                     "G_freq2": {
-                        "default": "\"[Volume]\"",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "\"[Volume]\""
                     },
                     "M_freq2": {
-                        "default": "\"Volume\"",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "\"Volume\""
                     },
                     "Y_price1": {
-                        "default": "1st Premium",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "1st Premium"
                     },
                     "Y_price2": {
-                        "default": "2st Premium",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "2st Premium"
                     },
                     "Y_price3": {
-                        "default": "Premium",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Premium"
                     },
                     "Y_price4": {
-                        "default": "1st place",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "1st place"
                     },
                     "Y_price5": {
-                        "default": "Guaranteed",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Guaranteed"
                     },
                     "G_price": {
-                        "default": "Bid",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Bid"
                     },
                     "Search_engine": {
-                        "default": "Search engine",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Search engine"
                     },
                     "Search_engines": {
-                        "default": "Search engines",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Search engines"
                     },
                     "Region": {
-                        "default": "Location",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Location"
                     },
                     "region": {
-                        "default": "location",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "location"
                     },
                     "Selected_regions": {
-                        "default": "Selected locations",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Selected locations"
                     },
                     "Compare": {
-                        "default": "Compare",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Compare"
                     },
                     "Folder": {
-                        "default": "Folder",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Folder"
                     },
                     "Group": {
-                        "default": "Group",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Group"
                     },
                     "Visibility": {
-                        "default": "Visibility",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Visibility"
                     },
                     "Average": {
-                        "default": "Avg.pos.",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Avg.pos."
                     },
                     "Average_position": {
-                        "default": "Average position",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Average position"
                     },
                     "Add": {
-                        "default": "Add",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Add"
                     },
                     "Create": {
-                        "default": "Create",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Create"
                     },
                     "Move": {
-                        "default": "Move",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Move"
                     },
                     "Delete": {
-                        "default": "Delete",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Delete"
                     },
                     "Replace": {
-                        "default": "Repalce",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Repalce"
                     },
                     "Restore": {
-                        "default": "Restore",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Restore"
                     },
                     "Copy": {
-                        "default": "Copy",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Copy"
                     },
                     "Copy2": {
-                        "default": "Copy",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Copy"
                     },
                     "Remove": {
-                        "default": "Delete",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Delete"
                     },
                     "Charge": {
-                        "default": "You will be charged",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "You will be charged"
                     },
                     "confirm": {
-                        "default": "confirm",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "confirm"
                     },
                     "Confirm": {
-                        "default": "Confirm",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Confirm"
                     },
                     "Delete_selected": {
-                        "default": "Delete selected",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Delete selected"
                     },
                     "Delete_all": {
-                        "default": "Delete all",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Delete all"
                     },
                     "Traffic": {
-                        "default": "Traffic",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Traffic"
                     },
                     "Positions": {
-                        "default": "Rankings",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Rankings"
                     },
                     "Keyword": {
-                        "default": "Keyword",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Keyword"
                     },
                     "Key_word": {
-                        "default": "Keyword",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Keyword"
                     },
                     "Settings": {
-                        "default": "Settings",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Settings"
                     },
                     "Settings_URL": {
-                        "default": "URL Settings",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "URL Settings"
                     },
                     "Irreversible": {
-                        "default": "Important! This operation cannot be undone.",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Important! This operation cannot be undone."
                     },
                     "Empty_field": {
-                        "default": "Missing",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Missing"
                     },
                     "Notification": {
-                        "default": "Notifications",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Notifications"
                     },
                     "Personal_project": {
-                        "default": "My project",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "My project"
                     },
                     "Agreement": {
-                        "default": "Terms of Service",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Terms of Service"
                     },
                     "Period": {
-                        "default": "Period",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Period"
                     },
                     "Config_is_readonly": {
-                        "default": "You cannot change project settings until tracking is completed",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "You cannot change project settings until tracking is completed"
                     },
                     "regions": {
-                        "default": "locations",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "locations"
                     },
                     "types": {
-                        "default": "types",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "types"
                     },
                     "Select_date": {
-                        "default": "Select date",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Select date"
                     },
                     "Not_date": {
-                        "default": "Not date",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Not date"
                     },
                     "Close_window": {
-                        "default": "Close window",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Close window"
                     },
                     "Dashboard": {
-                        "default": "Dashboard",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Dashboard"
                     },
                     "Support": {
-                        "default": "Help center",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Help center"
                     },
                     "Shortener": {
-                        "default": "URL shortener",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "URL shortener"
                     },
                     "Journal": {
-                        "default": "Journal",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Journal"
                     },
                     "Academy": {
-                        "default": "Academy",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Academy"
                     },
                     "Pricing": {
-                        "default": "Pricing",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Pricing"
                     },
                     "Signup": {
-                        "default": "Sign up",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Sign up"
                     },
                     "Sign_up": {
-                        "default": "Sign up",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Sign up"
                     },
                     "Sign_up_2": {
-                        "default": "Sign up",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Sign up"
                     },
                     "Sign_in": {
-                        "default": "Sign in",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Sign in"
                     },
                     "Sign_in_account": {
-                        "default": "Sign in",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Sign in"
                     },
                     "Sign_out": {
-                        "default": "Sign out",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Sign out"
                     },
                     "Server_response": {
-                        "default": "Server response",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Server response"
                     },
                     "Red": {
-                        "default": "Red",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Red"
                     },
                     "Orange": {
-                        "default": "Orange",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Orange"
                     },
                     "Yellow": {
-                        "default": "Yellow",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Yellow"
                     },
                     "Blue": {
-                        "default": "Blue",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Blue"
                     },
                     "Purple": {
-                        "default": "Purple",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Purple"
                     },
                     "Green": {
-                        "default": "Green",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Green"
                     },
                     "Magenta": {
-                        "default": "Magenta",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Magenta"
                     },
                     "Dark_blue": {
-                        "default": "Dark blue",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Dark blue"
                     },
                     "Turquoise": {
-                        "default": "Turquoise",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Turquoise"
                     },
                     "Frequency": {
-                        "default": "Volume",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Volume"
                     },
                     "Moscow": {
-                        "default": "Moscow",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Moscow"
                     },
                     "Minsk": {
-                        "default": "Minsk",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Minsk"
                     },
                     "Kyiv": {
-                        "default": "Kyiv",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Kyiv"
                     },
                     "London": {
-                        "default": "London",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "London"
                     },
                     "NewYork": {
-                        "default": "New York",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "New York"
                     },
                     "StPetersburg": {
-                        "default": "St. Petersburg",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "St. Petersburg"
                     },
                     "Almaty": {
-                        "default": "Almaty",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Almaty"
                     },
                     "Russia": {
-                        "default": "Russia",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Russia"
                     },
                     "Ukraine": {
-                        "default": "Ukraine",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Ukraine"
                     },
                     "Kazakhstan": {
-                        "default": "Kazakhstan",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Kazakhstan"
                     },
                     "Belarus": {
-                        "default": "Belarus",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Belarus"
                     },
                     "Sum": {
-                        "default": "Amount",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Amount"
                     },
                     "Date": {
-                        "default": "Date",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Date"
                     },
                     "Week": {
-                        "default": "Week",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Week"
                     },
                     "Month": {
-                        "default": "Month",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Month"
                     },
                     "month": {
-                        "default": "month",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "month"
                     },
                     "months": {
-                        "default": "months",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "months"
                     },
                     "months_mult": {
-                        "default": "months",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "months"
                     },
                     "months_6": {
-                        "default": "6 months",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "6 months"
                     },
                     "Quarter": {
-                        "default": "Quarter",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Quarter"
                     },
                     "Year": {
-                        "default": "Year",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Year"
                     },
                     "Total": {
-                        "default": "Total",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Total"
                     },
                     "TOTAL": {
-                        "default": "TOTAL",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "TOTAL"
                     },
                     "Yandex_update": {
-                        "default": "Yandex update",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Yandex update"
                     },
                     "сode": {
-                        "default": "code",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "code"
                     },
                     "Thank_you": {
-                        "default": "Thank you!",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Thank you!"
                     },
                     "Thank_you_for_using_our_tools": {
-                        "default": "Thank you for using our tools",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Thank you for using our tools"
                     },
                     "Since": {
-                        "default": "Since",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Since"
                     },
                     "Till": {
-                        "default": "Till",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Till"
                     },
                     "till": {
-                        "default": "up to",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "up to"
                     },
                     "Yandex": {
-                        "default": "Yandex",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Yandex"
                     },
                     "Position": {
-                        "default": "Rank",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Rank"
                     },
                     "Impressions": {
-                        "default": "Impressions",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Impressions"
                     },
                     "Demand": {
-                        "default": "Demand",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Demand"
                     },
                     "FAQ": {
-                        "default": "FAQ",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "FAQ"
                     },
                     "Frequently_asked_questions": {
-                        "default": "Frequently asked questions",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Frequently asked questions"
                     },
                     "Owner": {
-                        "default": "Owner",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Owner"
                     },
                     "level": {
-                        "default": "level",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "level"
                     },
                     "No_payments": {
-                        "default": "No payments yet",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "No payments yet"
                     },
                     "Show_legend": {
-                        "default": "Show legend",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Show legend"
                     },
                     "Hide_legend": {
-                        "default": "Hide legend",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Hide legend"
                     },
                     "Menu_expand": {
-                        "default": "Expand menu",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Expand menu"
                     },
                     "Menu_unexpand": {
-                        "default": "Minimize menu",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Minimize menu"
                     },
                     "Menu_dynamics_search": {
-                        "default": "Search",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Search"
                     },
                     "Menu_dynamics": {
-                        "default": "Rank Tracker",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Rank Tracker"
                     },
                     "Menu_snapshots": {
-                        "default": "SERP Snapshots",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "SERP Snapshots"
                     },
                     "Menu_competitors": {
-                        "default": "My competitors",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "My competitors"
                     },
                     "Menu_phrases": {
-                        "default": "Keywords",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Keywords"
                     },
                     "Menu_audit": {
-                        "default": "Audit",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Audit"
                     },
                     "Menu_analytics": {
-                        "default": "Overview",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Overview"
                     },
                     "Menu_PPC": {
-                        "default": "PPC",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "PPC"
                     },
                     "Menu_broker": {
-                        "default": "Yandex.Direct",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Yandex.Direct"
                     },
                     "Menu_settings": {
-                        "default": "Settings",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Settings"
                     },
                     "Menu_more": {
-                        "default": "More",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "More"
                     },
                     "Folders": {
-                        "default": "Folders",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Folders"
                     },
                     "Groups": {
-                        "default": "Groups",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Groups"
                     },
                     "Keywords": {
-                        "default": "Keywords",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Keywords"
                     },
                     "of_keywords": {
-                        "default": "keywords",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "keywords"
                     },
                     "of_folders": {
-                        "default": "folders",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "folders"
                     },
                     "of_projects": {
-                        "default": "projects",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "projects"
                     },
                     "of_project1": {
-                        "default": "for project",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "for project"
                     },
                     "for_project": {
-                        "default": "for project",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "for project"
                     },
                     "competitor": {
-                        "default": "competitor",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "competitor"
                     },
                     "All_groups": {
-                        "default": "All groups",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "All groups"
                     },
                     "All_folders": {
-                        "default": "All folders",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "All folders"
                     },
                     "All_regions": {
-                        "default": "All locations",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "All locations"
                     },
                     "All_searchers": {
-                        "default": "All search engines",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "All search engines"
                     },
                     "All_projects": {
-                        "default": "All projects",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "All projects"
                     },
                     "Integration": {
-                        "default": "Integration",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Integration"
                     },
                     "updates_days": {
-                        "default": "update days",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "update days"
                     },
                     "whole_period": {
-                        "default": "the entire period",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "the entire period"
                     },
                     "two_dates": {
-                        "default": "two dates",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "two dates"
                     },
                     "Report_for_project": {
-                        "default": "Project report for",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Project report for"
                     },
                     "Interval": {
-                        "default": "Time range",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Time range"
                     },
                     "competitors_comparison": {
-                        "default": "compare with competitors",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "compare with competitors"
                     },
                     "Searchers_comparison": {
-                        "default": "Compare by search engine",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Compare by search engine"
                     },
                     "Regions_comparison": {
-                        "default": "Compare by location",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Compare by location"
                     },
                     "Browser_not_supported": {
-                        "default": "Your browser is not supported!",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Your browser is not supported!"
                     },
                     "Browser_settings": {
-                        "default": "Browser settings",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Browser settings"
                     },
                     "Service_may_go_unstable": {
-                        "default": "Service might be unstable",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Service might be unstable"
                     },
                     "Preferred_browser": {
-                        "default": "Compatible browser is",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Compatible browser is"
                     },
                     "Comparison_by": {
-                        "default": "Compare by",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Compare by"
                     },
                     "Phrases": {
-                        "default": "Keywords",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Keywords"
                     },
                     "TOP": {
-                        "default": "TOP",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "TOP"
                     },
                     "Top": {
-                        "default": "Top",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Top"
                     },
                     "Phrases_dynamics": {
-                        "default": "Keyword dynamics",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Keyword dynamics"
                     },
                     "Project_settings": {
-                        "default": "Project settings",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Project settings"
                     },
                     "Phrases_in_TOP": {
-                        "default": "Keywords in TOP",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Keywords in TOP"
                     },
                     "Phrases_in_Top": {
-                        "default": "Keywords in Top",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Keywords in Top"
                     },
                     "Page": {
-                        "default": "Page",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Page"
                     },
                     "page": {
-                        "default": "page",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "page"
                     },
                     "last_10_days": {
-                        "default": "last 10 days",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "last 10 days"
                     },
                     "last_month": {
-                        "default": "last month",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "last month"
                     },
                     "last_check": {
-                        "default": "last update",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "last update"
                     },
                     "last_two_dates": {
-                        "default": "last 2 updates",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "last 2 updates"
                     },
                     "last_month_week_average": {
-                        "default": "last month (week's average)",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "last month (week's average)"
                     },
                     "also_searched": {
-                        "default": "similar keywords",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "similar keywords"
                     },
                     "Sources": {
-                        "default": "Sources",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Sources"
                     },
                     "Clicks": {
-                        "default": "Clicks",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Clicks"
                     },
                     "Other_dates": {
-                        "default": "Other dates",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Other dates"
                     },
                     "Help_center": {
-                        "default": "Help",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Help"
                     },
                     "Help_center_welcome": {
-                        "default": "Support Center",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Support Center"
                     },
                     "Help_center_question": {
-                        "default": "Got any questions?",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Got any questions?"
                     },
                     "Run": {
-                        "default": "Run",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Run"
                     },
                     "Manage": {
-                        "default": "Manage",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Manage"
                     },
                     "Missed_project_id": {
-                        "default": "Project id is missing",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Project id is missing"
                     },
                     "Missed_project_id2": {
-                        "default": "`Project_id` is missing",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "`Project_id` is missing"
                     },
                     "Project_analytics": {
-                        "default": "Project analytics",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Project analytics"
                     },
                     "Project_dynamics": {
-                        "default": "Keyword dynamics",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Keyword dynamics"
                     },
                     "Apometr": {
-                        "default": "Updates",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Updates"
                     },
                     "Apometr_title": {
-                        "default": "Google and Yandex SERP tracking tool",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Google and Yandex SERP tracking tool"
                     },
                     "Apometr_description": {
-                        "default": "Google and Yandex updates calendar (SERP updates and changes). Get SERP updates alerts. SERP updates score for different locations and content types.",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Google and Yandex updates calendar (SERP updates and changes). Get SERP updates alerts. SERP updates score for different locations and content types."
                     },
                     "Apometr_og_title": {
-                        "default": "Google and Yandex SERP updates",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Google and Yandex SERP updates"
                     },
                     "Apometr_og_description": {
-                        "default": "SERP updates score for different locations and content types.",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "SERP updates score for different locations and content types."
                     },
                     "Apometr_notice": {
-                        "default": "Get update alerts",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Get update alerts"
                     },
                     "Pricing_title": {
-                        "default": "Pricing",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Pricing"
                     },
                     "Profile_title": {
-                        "default": "Account",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Account"
                     },
                     "Bank_title": {
-                        "default": "Bank",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Bank"
                     },
                     "Your_projects": {
-                        "default": "Your projects",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Your projects"
                     },
                     "Incorrect_file_format": {
-                        "default": "Invalid file format (expected: %availableExtensionsNames%)",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Invalid file format (expected: %availableExtensionsNames%)"
                     },
                     "Max_size": {
-                        "default": "Maximum upload size exceeded (%maxSize%)",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Maximum upload size exceeded (%maxSize%)"
                     },
                     "Audit": {
-                        "default": "Website SEO Audit tool",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Website SEO Audit tool"
                     },
                     "Tutorial": {
-                        "default": "Tutorials",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Tutorials"
                     },
                     "User_id": {
-                        "default": "User ID",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "User ID"
                     },
                     "Managing_executive": {
-                        "default": "Managing executive",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Managing executive"
                     },
                     "Pustovoit": {
-                        "default": "Pustovoit",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Pustovoit"
                     },
                     "Denis": {
-                        "default": "Denis",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Denis"
                     },
                     "Anatolyevich": {
-                        "default": "Anatolyevich",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Anatolyevich"
                     },
                     "CEO": {
-                        "default": "Chief Executive Officer",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Chief Executive Officer"
                     },
                     "office": {
-                        "default": "office",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "office"
                     },
                     "Dot": {
-                        "default": "Dot",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Dot"
                     },
                     "Comma": {
-                        "default": "Comma",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Comma"
                     },
                     "Enter_manually": {
-                        "default": "Add manually",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Add manually"
                     },
                     "max_10_mb": {
-                        "default": "max 10 Mb",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "max 10 Mb"
                     },
                     "Schedule_settings_checks": {
-                        "default": "Checks schedule",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Checks schedule"
                     },
                     "Schedule_settings_reports": {
-                        "default": "Reports schedule",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Reports schedule"
                     },
                     "Basic": {
-                        "default": "Basic",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Basic"
                     },
                     "Address_IP": {
-                        "default": "IP address",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "IP address"
                     },
                     "Phone_number": {
-                        "default": "Phone number",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Phone number"
                     },
                     "Recipient": {
-                        "default": "Recipient",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Recipient"
                     },
                     "Federal_act": {
-                        "default": " Federal act",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": " Federal act"
                     },
                     "optional": {
-                        "default": "optional",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "optional"
                     },
                     "Full_name_abbr": {
-                        "default": "Full name",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Full name"
                     },
                     "Mobile_phone": {
-                        "default": "Mobile phone",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Mobile phone"
                     },
                     "not_found": {
-                        "default": "not found",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "not found"
                     },
                     "Try_to_reset_filters_or_search_archive_html": {
-                        "default": "Try to <i class=\"a\" data-action=\"reset_filters\">reset</i> all filters<br><i class=\"archive_search\">\n\tor search <a href=\"/support/projects/archive\" target=\"_blank\" class=\"a\">Archived</a> projects</i>",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Try to <i class=\"a\" data-action=\"reset_filters\">reset</i> all filters<br><i class=\"archive_search\">\n\tor search <a href=\"/support/projects/archive\" target=\"_blank\" class=\"a\">Archived</a> projects</i>"
                     },
                     "Print": {
-                        "default": "Print",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Print"
                     },
                     "Contact_us": {
-                        "default": "Contact us",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Contact us"
                     },
                     "Competitor_analysis": {
-                        "default": "Competitor research",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Competitor research"
                     },
                     "Refill_balance": {
-                        "default": "Top up your balance",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Top up your balance"
                     },
                     "Median": {
-                        "default": "Median",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Median"
                     },
                     "Reset": {
-                        "default": "Reset",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Reset"
                     },
                     "View": {
-                        "default": "View",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "View"
                     },
                     "Bar_pin": {
-                        "default": "Pin bar",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Pin bar"
                     },
                     "Count": {
-                        "default": "Number",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Number"
                     },
                     "Invalid_url": {
-                        "default": "Invalid URL format",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Invalid URL format"
                     },
                     "Access_settings": {
-                        "default": "Access settings",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Access settings"
                     },
                     "Hide_access_settings": {
-                        "default": "Hide access settings",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Hide access settings"
                     },
                     "Sort": {
-                        "default": "Sort",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Sort"
                     },
                     "No_snippet": {
-                        "default": "No snippet",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "No snippet"
                     },
                     "Copied_to_clipboard": {
-                        "default": "Copied to clipboard",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Copied to clipboard"
                     },
                     "Cannot_copied_to_clipboard": {
-                        "default": "Cannot copied to clipboard",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Cannot copied to clipboard"
                     },
                     "Copy_guest_link_manually": {
-                        "default": "Copy the guest link manually",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Copy the guest link manually"
                     },
                     "Press_to_copy_1": {
-                        "default": "Press",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Press"
                     },
                     "Press_to_copy_2": {
-                        "default": "+C to copy a link",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "+C to copy a link"
                     },
                     "Guest_link_created": {
-                        "default": "Guest link created",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Guest link created"
                     },
                     "Need_fill_required_fields": {
-                        "default": "Please fill in all required fields",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Please fill in all required fields"
                     }
                 },
                 "required": [

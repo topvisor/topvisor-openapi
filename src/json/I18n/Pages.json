@@ -11,64 +11,40 @@
                 "type": "object",
                 "properties": {
                     "Checking_positions": {
-                        "default": "Rank Checking and Rank Tracking",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Rank Checking and Rank Tracking"
                     },
                     "Collecting_top_sites": {
-                        "default": "SERP Top Checker",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "SERP Top Checker"
                     },
                     "Technical_analysis": {
-                        "default": "SEO Website Audit",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "SEO Website Audit"
                     },
                     "Tracking_changes": {
-                        "default": "Changer Tracker and Meta Tag Exractor",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Changer Tracker and Meta Tag Exractor"
                     },
                     "Semantic_core_research": {
-                        "default": "Semantic Core Research",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Semantic Core Research"
                     },
                     "Volume_checker": {
-                        "default": "Volume Checker",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Volume Checker"
                     },
                     "Index_checker": {
-                        "default": "Index Checker",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Index Checker"
                     },
                     "Sitemap_generator": {
-                        "default": "Sitemap generator",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Sitemap generator"
                     },
                     "Bid_manager": {
-                        "default": "Bid Manager",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Bid Manager"
                     },
                     "Updates_scanner": {
-                        "default": "Updates Scanner",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Updates Scanner"
                     },
                     "Shortener_url": {
-                        "default": "URL Shortener",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "URL Shortener"
                     },
                     "Clustering_top": {
-                        "default": "Clustering by SERP Top",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Clustering by SERP Top"
                     }
                 },
                 "required": [

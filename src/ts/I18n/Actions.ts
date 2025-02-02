@@ -8,28 +8,28 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         "I18n.Actions": {
-            /** @default This link is no longer active */
-            readonly Link_not_available: string;
-            /** @default Your user is blocked */
-            readonly User_blocked: string;
-            /** @default You successfully unsubscribed from project reports */
-            readonly Report_subscribe_canceled: string;
-            /** @default Subscription to */
-            readonly Report_subscribe_canceled1: string;
-            /** @default is cancelled successfully */
-            readonly Report_subscribe_canceled2: string;
-            /** @default unsubscribe from news */
-            readonly Informer_unsubscribe_news: string;
-            /** @default unsubscribe from low balance alerts */
-            readonly Informer_subscribe_balance: string;
-            /** @default unsubscribe from new ticket replies */
-            readonly Informer_unsubscribe_tickets: string;
-            /** @default unsubscribe from Yandex updates */
-            readonly Informer_unsubscribe_update: string;
-            /** @default unsubscribe from new comments */
-            readonly Informer_unsubscribe_comments: string;
-            /** @default unsubscribe from API updates */
-            readonly Informer_unsubscribe_api: string;
+            /** @constant */
+            Link_not_available: "This link is no longer active";
+            /** @constant */
+            User_blocked: "Your user is blocked";
+            /** @constant */
+            Report_subscribe_canceled: "You successfully unsubscribed from project reports";
+            /** @constant */
+            Report_subscribe_canceled1: "Subscription to";
+            /** @constant */
+            Report_subscribe_canceled2: "is cancelled successfully";
+            /** @constant */
+            Informer_unsubscribe_news: "unsubscribe from news";
+            /** @constant */
+            Informer_subscribe_balance: "unsubscribe from low balance alerts";
+            /** @constant */
+            Informer_unsubscribe_tickets: "unsubscribe from new ticket replies";
+            /** @constant */
+            Informer_unsubscribe_update: "unsubscribe from Yandex updates";
+            /** @constant */
+            Informer_unsubscribe_comments: "unsubscribe from new comments";
+            /** @constant */
+            Informer_unsubscribe_api: "unsubscribe from API updates";
         };
     };
     responses: never;

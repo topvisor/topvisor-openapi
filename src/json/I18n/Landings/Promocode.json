@@ -11,39 +11,25 @@
                 "type": "object",
                 "properties": {
                     "Description": {
-                        "default": "Topvior is online platform for SEO specialists and marketers with all essential tools for analyzing website's visibility in search engines.",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Topvior is online platform for SEO specialists and marketers with all essential tools for analyzing website's visibility in search engines."
                     },
                     "OpenGraph_title": {
-                        "default": "Enter promocode",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Enter promocode"
                     },
                     "Enter_promocode": {
-                        "default": "Enter promocode",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Enter promocode"
                     },
                     "Promocode": {
-                        "default": "Promocode",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Promocode"
                     },
                     "By_pressing_sign_up_you_accept": {
-                        "default": "By pressing Sign up you accept",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "By pressing Sign up you accept"
                     },
                     "Terms_and_conditions": {
-                        "default": "Terms and Conditions",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Terms and Conditions"
                     },
                     "Privacy_policy": {
-                        "default": "Privacy Policy",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Privacy Policy"
                     }
                 },
                 "required": [

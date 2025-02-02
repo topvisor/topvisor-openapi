@@ -8,40 +8,40 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         "I18n.Calendar": {
-            /** @default Mo */
-            readonly Dw_1: string;
-            /** @default Tu */
-            readonly Dw_2: string;
-            /** @default We */
-            readonly Dw_3: string;
-            /** @default Th */
-            readonly Dw_4: string;
-            /** @default Fr */
-            readonly Dw_5: string;
-            /** @default Sa */
-            readonly Dw_6: string;
-            /** @default Su */
-            readonly Dw_7: string;
-            /** @default Monday */
-            readonly Day_of_week_1: string;
-            /** @default Tuesday */
-            readonly Day_of_week_2: string;
-            /** @default Wednesday */
-            readonly Day_of_week_3: string;
-            /** @default Thursday */
-            readonly Day_of_week_4: string;
-            /** @default Friday */
-            readonly Day_of_week_5: string;
-            /** @default Saturday */
-            readonly Day_of_week_6: string;
-            /** @default Sunday */
-            readonly Day_of_week_7: string;
-            /** @default |january|february|march|april|may|june|july|august|september|october|november|december */
-            readonly months: string;
-            /** @default |january|february|march|april|may|june|july|august|september|october|november|december */
-            readonly of_months: string;
-            /** @default |january|february|march|april|may|june|july|august|september|october|november|december */
-            readonly in_months: string;
+            /** @constant */
+            Dw_1: "Mo";
+            /** @constant */
+            Dw_2: "Tu";
+            /** @constant */
+            Dw_3: "We";
+            /** @constant */
+            Dw_4: "Th";
+            /** @constant */
+            Dw_5: "Fr";
+            /** @constant */
+            Dw_6: "Sa";
+            /** @constant */
+            Dw_7: "Su";
+            /** @constant */
+            Day_of_week_1: "Monday";
+            /** @constant */
+            Day_of_week_2: "Tuesday";
+            /** @constant */
+            Day_of_week_3: "Wednesday";
+            /** @constant */
+            Day_of_week_4: "Thursday";
+            /** @constant */
+            Day_of_week_5: "Friday";
+            /** @constant */
+            Day_of_week_6: "Saturday";
+            /** @constant */
+            Day_of_week_7: "Sunday";
+            /** @constant */
+            months: "|january|february|march|april|may|june|july|august|september|october|november|december";
+            /** @constant */
+            of_months: "|january|february|march|april|may|june|july|august|september|october|november|december";
+            /** @constant */
+            in_months: "|january|february|march|april|may|june|july|august|september|october|november|december";
         };
     };
     responses: never;

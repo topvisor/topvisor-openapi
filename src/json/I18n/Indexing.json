@@ -11,54 +11,34 @@
                 "type": "object",
                 "properties": {
                     "Settings": {
-                        "default": "Tool settings",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Tool settings"
                     },
                     "Header_start_short": {
-                        "default": "Check",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Check"
                     },
                     "Hint_not_searchers_text": {
-                        "default": "Pick <b>Search engines</b> to launch a check.<br>🌐 <a href=\"/support/indexed/\" target=\"_blank\">Why you need to check indexing →</a>",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Pick <b>Search engines</b> to launch a check.<br>🌐 <a href=\"/support/indexed/\" target=\"_blank\">Why you need to check indexing →</a>"
                     },
                     "Hint_not_searchers_btn": {
-                        "default": "Manage",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Manage"
                     },
                     "Hint_not_urls_text": {
-                        "default": "Add URLs to launch Indexing.<br>🌐 <a href=\"/support/indexed/\" target=\"_blank\">Why you need to check indexing →</a>",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Add URLs to launch Indexing.<br>🌐 <a href=\"/support/indexed/\" target=\"_blank\">Why you need to check indexing →</a>"
                     },
                     "Hint_not_urls_btn": {
-                        "default": "URLs",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "URLs"
                     },
                     "Hint_not_checks_text": {
-                        "default": "You've never launched Indexing in this project.<br>🌐 <a href=\"/support/indexed/\" target=\"_blank\">Why you need to check indexing →</a>",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "You've never launched Indexing in this project.<br>🌐 <a href=\"/support/indexed/\" target=\"_blank\">Why you need to check indexing →</a>"
                     },
                     "Hint_not_checks_btn": {
-                        "default": "Launch Indexing",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Launch Indexing"
                     },
                     "Hint_not_data_text": {
-                        "default": "No data found with current filter.<br>Try a different filter selection.<br>🌐 <a href=\"/support/indexed/\" target=\"_blank\">Why you need to check indexing →</a>",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "No data found with current filter.<br>Try a different filter selection.<br>🌐 <a href=\"/support/indexed/\" target=\"_blank\">Why you need to check indexing →</a>"
                     },
                     "Hint_not_dates_with_checks_text": {
-                        "default": "You haven't checked indexing within the selected period for the current search engine.<br>Select another search engine or period.<br>🌐 <a href=\"/support/indexed/\" target=\"_blank\">Why you need to check indexing →</a>",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "You haven't checked indexing within the selected period for the current search engine.<br>Select another search engine or period.<br>🌐 <a href=\"/support/indexed/\" target=\"_blank\">Why you need to check indexing →</a>"
                     }
                 },
                 "required": [

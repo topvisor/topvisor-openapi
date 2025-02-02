@@ -11,88 +11,52 @@
                 "type": "object",
                 "properties": {
                     "Settings": {
-                        "default": "Watcher settings",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Watcher settings"
                     },
                     "menu": {
-                        "default": {
+                        "const": {
                             "http_codes": "HTTP Code",
                             "title": "Title",
                             "description": "Description",
                             "h1": "H1 Header",
                             "content": "Content"
-                        },
-                        "readOnly": true,
-                        "type": "array",
-                        "items": {
-                            "oneOf": [
-                                {
-                                    "type": "string"
-                                },
-                                {
-                                    "type": "number"
-                                }
-                            ]
                         }
                     },
                     "Status_code": {
-                        "default": "Status",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Status"
                     },
                     "Without_changes": {
-                        "default": "Without changes",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Without changes"
                     },
                     "Fulltext": {
-                        "default": "Full text",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Full text"
                     },
                     "Only_with_changed": {
-                        "default": "With changes",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "With changes"
                     },
                     "Header_start_short": {
-                        "default": "Track",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Track"
                     },
                     "Common_settings": {
-                        "default": "Common settings",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Common settings"
                     },
                     "Tracking": {
-                        "default": "Tracking",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Tracking"
                     },
                     "Cut_script": {
-                        "default": "Cut &lt;script&gt;",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Cut &lt;script&gt;"
                     },
                     "Scan_method": {
-                        "default": "Scan method",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Scan method"
                     },
                     "Strip_tags": {
-                        "default": "Text only / Cut tags",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Text only / Cut tags"
                     },
                     "Change_history": {
-                        "default": "Change history: ",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Change history: "
                     },
                     "Hints_settings": {
-                        "default": {
+                        "const": {
                             "watcher_max_redirects": "",
                             "watcher_user_agent": "User Agent can affect how the bot sees the site and how DDoS protection works.",
                             "audit_page_delay": "",
@@ -107,39 +71,19 @@
                                 "content": ""
                             },
                             "watcher_strip_tags_from_result": ""
-                        },
-                        "readOnly": true,
-                        "type": "array",
-                        "items": {
-                            "oneOf": [
-                                {
-                                    "type": "string"
-                                },
-                                {
-                                    "type": "number"
-                                }
-                            ]
                         }
                     },
                     "Hint_not_urls_text": {
-                        "default": "Add URLs to launch Watcher.<br>📡 <a href=\"/watcher/\" target=\"_blank\">How Website Watcher can help you →</a>",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Add URLs to launch Watcher.<br>📡 <a href=\"/watcher/\" target=\"_blank\">How Website Watcher can help you →</a>"
                     },
                     "Hint_not_urls_btn": {
-                        "default": "URLs",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "URLs"
                     },
                     "Hint_not_checks_text": {
-                        "default": "You've never launched Watcher in this project.<br>📡 <a href=\"/watcher/\" target=\"_blank\">How Website Watcher can help you →</a>",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "You've never launched Watcher in this project.<br>📡 <a href=\"/watcher/\" target=\"_blank\">How Website Watcher can help you →</a>"
                     },
                     "Hint_not_checks_btn": {
-                        "default": "Launch Watcher",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Launch Watcher"
                     }
                 },
                 "required": [

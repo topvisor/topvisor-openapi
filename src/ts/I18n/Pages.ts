@@ -8,30 +8,30 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         "I18n.Pages": {
-            /** @default Rank Checking and Rank Tracking */
-            readonly Checking_positions: string;
-            /** @default SERP Top Checker */
-            readonly Collecting_top_sites: string;
-            /** @default SEO Website Audit */
-            readonly Technical_analysis: string;
-            /** @default Changer Tracker and Meta Tag Exractor */
-            readonly Tracking_changes: string;
-            /** @default Semantic Core Research */
-            readonly Semantic_core_research: string;
-            /** @default Volume Checker */
-            readonly Volume_checker: string;
-            /** @default Index Checker */
-            readonly Index_checker: string;
-            /** @default Sitemap generator */
-            readonly Sitemap_generator: string;
-            /** @default Bid Manager */
-            readonly Bid_manager: string;
-            /** @default Updates Scanner */
-            readonly Updates_scanner: string;
-            /** @default URL Shortener */
-            readonly Shortener_url: string;
-            /** @default Clustering by SERP Top */
-            readonly Clustering_top: string;
+            /** @constant */
+            Checking_positions: "Rank Checking and Rank Tracking";
+            /** @constant */
+            Collecting_top_sites: "SERP Top Checker";
+            /** @constant */
+            Technical_analysis: "SEO Website Audit";
+            /** @constant */
+            Tracking_changes: "Changer Tracker and Meta Tag Exractor";
+            /** @constant */
+            Semantic_core_research: "Semantic Core Research";
+            /** @constant */
+            Volume_checker: "Volume Checker";
+            /** @constant */
+            Index_checker: "Index Checker";
+            /** @constant */
+            Sitemap_generator: "Sitemap generator";
+            /** @constant */
+            Bid_manager: "Bid Manager";
+            /** @constant */
+            Updates_scanner: "Updates Scanner";
+            /** @constant */
+            Shortener_url: "URL Shortener";
+            /** @constant */
+            Clustering_top: "Clustering by SERP Top";
         };
     };
     responses: never;

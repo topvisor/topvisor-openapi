@@ -11,1354 +11,814 @@
                 "type": "object",
                 "properties": {
                     "Plus": {
-                        "default": "Credit",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Credit"
                     },
                     "Minus": {
-                        "default": "Expenses",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Expenses"
                     },
                     "Payment": {
-                        "default": "Payment",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Payment"
                     },
                     "Incorrect_sum": {
-                        "default": "Incorrect sum!",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Incorrect sum!"
                     },
                     "Not_enough_balance": {
-                        "default": "Insufficient balance in your account!",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Insufficient balance in your account!"
                     },
                     "Bonus_refill": {
-                        "default": "Bonus for balance top-up",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Bonus for balance top-up"
                     },
                     "Mail_address": {
-                        "default": "Address",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Address"
                     },
                     "Basis1": {
-                        "default": "Certificates",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Certificates"
                     },
                     "Basis2": {
-                        "default": "Powers of attorney",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Powers of attorney"
                     },
                     "Basis3": {
-                        "default": "Management contract",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Management contract"
                     },
                     "Ref_action": {
-                        "default": "Transaction from the affiliate account to the system account",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Transaction from the affiliate account to the system account"
                     },
                     "bonuses": {
-                        "default": "bonus",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "bonus"
                     },
                     "public_offer": {
-                        "default": "public offer",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "public offer"
                     },
                     "by_public_offer": {
-                        "default": "under public offer",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "under public offer"
                     },
                     "dogovor": {
-                        "default": "contract",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "contract"
                     },
                     "by_dogovor": {
-                        "default": "under agreement",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "under agreement"
                     },
                     "Info_system_withdrawal": {
-                        "default": "Withdrawal to system account",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Withdrawal to system account"
                     },
                     "Refund_by_invoice": {
-                        "default": "Refund by invoice",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Refund by invoice"
                     },
                     "Return_to_payment": {
-                        "default": "Back to payment methods",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Back to payment methods"
                     },
                     "Payment_processed": {
-                        "default": "Your payment has been processed successfully. <br> Thank you for choosing our tools",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Your payment has been processed successfully. <br> Thank you for choosing our tools"
                     },
                     "Payment_unsuccessful": {
-                        "default": "Sorry, payment failed.<br>Please, try another payment method or contact Customer Support.",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Sorry, payment failed.<br>Please, try another payment method or contact Customer Support."
                     },
                     "Bonuses": {
-                        "default": "Bonus account",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Bonus account"
                     },
                     "Comment": {
-                        "default": "Description",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Description"
                     },
                     "Operation": {
-                        "default": "Operation",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Operation"
                     },
                     "Pay": {
-                        "default": "Pay",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Pay"
                     },
                     "Total_to_pay": {
-                        "default": "Total",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Total"
                     },
                     "Referral_link": {
-                        "default": "Affiliate link",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Affiliate link"
                     },
                     "Your_referrals": {
-                        "default": "Referrals",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Referrals"
                     },
                     "Referrals_registered": {
-                        "default": "Registered",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Registered"
                     },
                     "Referrals_turnover": {
-                        "default": "Turnover",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Turnover"
                     },
                     "Referrals_last_payment": {
-                        "default": "Last payment",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Last payment"
                     },
                     "Income": {
-                        "default": "Income",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Income"
                     },
                     "Set_period": {
-                        "default": "Select period",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Select period"
                     },
                     "Referrals_bonus": {
-                        "default": "We have a bonus for you!",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "We have a bonus for you!"
                     },
                     "Referrals_bonus_info": {
-                        "default": "We'll gift social media referrals extra 200 free ranking updates!",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "We'll gift social media referrals extra 200 free ranking updates!"
                     },
                     "Share": {
-                        "default": "Share",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Share"
                     },
                     "Referrals_attach_email": {
-                        "default": "This address will be linked to your account as an affiliate address",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "This address will be linked to your account as an affiliate address"
                     },
                     "Referrals_share": {
-                        "default": "Share on social media",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Share on social media"
                     },
                     "Referrals_send_email_invite": {
-                        "default": "Send invitation",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Send invitation"
                     },
                     "Referrals_invitation_sent": {
-                        "default": "We have sent invitation email to",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "We have sent invitation email to"
                     },
                     "Referrals_stats": {
-                        "default": "Stats",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Stats"
                     },
                     "Referrals_level": {
-                        "default": "Referee level",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Referee level"
                     },
                     "Referrals_you_earned": {
-                        "default": "You earned",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "You earned"
                     },
                     "Referrals_withdraw_to_balance": {
-                        "default": "To balance",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "To balance"
                     },
                     "Referrals_withdraw": {
-                        "default": "Withdraw",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Withdraw"
                     },
                     "Referrals_transfer": {
-                        "default": "Transfer",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Transfer"
                     },
                     "Referrals_confirm_funds_transfer_to_bonus_account_notice": {
-                        "default": "Your earnings will be transferred to the bonus balance, you will not be able to withdraw it later.<br><br>\n\tDo you want to continue?",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Your earnings will be transferred to the bonus balance, you will not be able to withdraw it later.<br><br>\n\tDo you want to continue?"
                     },
                     "Referrals_levels_description_title": {
-                        "default": "Referrals get levels that depend on the total amount paid. There are no limits on Referrals' levels or\n\tthe reward amount a Partner can get. But the reward accrues only during two years after Referral registration date.<br><br>\n\tA Partner gets a reward each time a Referral reaches a new level on the Affiliate program. A reward is 100 rubles for the 1st\n\tlevel and 10% of the new payments by a Referral for the next levels.",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Referrals get levels that depend on the total amount paid. There are no limits on Referrals' levels or\n\tthe reward amount a Partner can get. But the reward accrues only during two years after Referral registration date.<br><br>\n\tA Partner gets a reward each time a Referral reaches a new level on the Affiliate program. A reward is 100 rubles for the 1st\n\tlevel and 10% of the new payments by a Referral for the next levels."
                     },
                     "Referrals_download_invoice_act": {
-                        "default": "Download invoice and act",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Download invoice and act"
                     },
                     "Referrals_withdrawal_available_from_amount_notice": {
-                        "default": "You can withdraw the amount from 5 000 rubles",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "You can withdraw the amount from 5 000 rubles"
                     },
                     "Referrals_link_to_EDF_setup_instruction": {
-                        "default": "What is EDF, how can I use it?",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "What is EDF, how can I use it?"
                     },
                     "Referrals_visits": {
-                        "default": "Visits",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Visits"
                     },
                     "Referrals_registrations": {
-                        "default": "Registrations",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Registrations"
                     },
                     "Referrals_partner_bank_details": {
-                        "default": "Affiliate program member bank details",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Affiliate program member bank details"
                     },
                     "Referrals_invitation_from": {
-                        "default": "Invitation from",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Invitation from"
                     },
                     "Referrals_transfer_from_referral_to_bonus_balance": {
-                        "default": "Transfer from referral balance to bonus balance",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Transfer from referral balance to bonus balance"
                     },
                     "First_referral_email_title": {
-                        "default": "You got your first referral!",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "You got your first referral!"
                     },
                     "New_referral_email_title": {
-                        "default": "You already have %count_referrals% referrals. Keep it up! 🎉",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "You already have %count_referrals% referrals. Keep it up! 🎉"
                     },
                     "Referrals_award_email_title": {
-                        "default": "You received a reward! Your referral reached a new level 🔥",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "You received a reward! Your referral reached a new level 🔥"
                     },
                     "Referrals_total_amount_earned_email_title": {
-                        "default": "As our partner, you have already earned %total_balance_ref% rubles. Keep it up! ?",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "As our partner, you have already earned %total_balance_ref% rubles. Keep it up! ?"
                     },
                     "Account_plan": {
-                        "default": "Account (Pricing plan)",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Account (Pricing plan)"
                     },
                     "Plan_discount": {
-                        "default": "YOU SAVE",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "YOU SAVE"
                     },
                     "discount": {
-                        "default": "you save",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "you save"
                     },
                     "Discount": {
-                        "default": "You save",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "You save"
                     },
                     "plan_month": {
-                        "default": "per month",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "per month"
                     },
                     "Remove_card": {
-                        "default": "Remove card",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Remove card"
                     },
                     "Cancel_subscription": {
-                        "default": "Cancel subscription",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Cancel subscription"
                     },
                     "Link_card": {
-                        "default": "Save",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Save"
                     },
                     "Removed_card_notice": {
-                        "default": "Your credit card is removed. You can add a credit card again at the end of the current billing period.",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Your credit card is removed. You can add a credit card again at the end of the current billing period."
                     },
                     "plan_payment": {
-                        "default": "pricing plan subscription fee",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "pricing plan subscription fee"
                     },
                     "Extending_plan_failed": {
-                        "default": "Subscription failed to renew",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Subscription failed to renew"
                     },
                     "Extending_plan_notice": {
-                        "default": "To restart your subscription ",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "To restart your subscription "
                     },
                     "Tariff_choose_plan": {
-                        "default": "Choose a plan that works for you and save up to ",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Choose a plan that works for you and save up to "
                     },
                     "Tariff_next_plan": {
-                        "default": "Next plan",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Next plan"
                     },
                     "Tariff_text": {
-                        "default": "Pricing Plan discount is valid until the end of the billing period.\nIf unsubscribed, the discount is saved and corresponds to the selected Pricing Plan. The billing period is 1 calendar month.<br><br>\nYou can select another payment method after unsubscribing from the Pricing Plan and at the end of the billing period of the Pricing Plan.",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Pricing Plan discount is valid until the end of the billing period.\nIf unsubscribed, the discount is saved and corresponds to the selected Pricing Plan. The billing period is 1 calendar month.<br><br>\nYou can select another payment method after unsubscribing from the Pricing Plan and at the end of the billing period of the Pricing Plan."
                     },
                     "Billing_operations": {
-                        "default": "Billing operations",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Billing operations"
                     },
                     "Service_tracking": {
-                        "default": "Rank tracker tool",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Rank tracker tool"
                     },
                     "Service_researcher": {
-                        "default": "Keyword research tool",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Keyword research tool"
                     },
                     "Service_suggestions_tool": {
-                        "default": "Search suggestions tool",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Search suggestions tool"
                     },
                     "Service_AMS_tracker": {
-                        "default": "Search volume tool",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Search volume tool"
                     },
                     "Service_clustering": {
-                        "default": "Keyword clustering tool",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Keyword clustering tool"
                     },
                     "Service_auditor": {
-                        "default": "SEO audit tool",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "SEO audit tool"
                     },
                     "Service_auditor_hold": {
-                        "default": "SEO audit tool (hold)",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "SEO audit tool (hold)"
                     },
                     "Service_watcher": {
-                        "default": "Website watcher",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Website watcher"
                     },
                     "Service_index_checker": {
-                        "default": "Index checker tool",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Index checker tool"
                     },
                     "Service_sitemap": {
-                        "default": "Sitemap generator",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Sitemap generator"
                     },
                     "Service_broker": {
-                        "default": "Bid manager<br>/1000 adjustments",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Bid manager<br>/1000 adjustments"
                     },
                     "Service_bid_manager": {
-                        "default": "Bid manager",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Bid manager"
                     },
                     "Service_domain_registration": {
-                        "default": "Domain registration",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Domain registration"
                     },
                     "Service_web_screens": {
-                        "default": "Web screenshots",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Web screenshots"
                     },
                     "Service_domain_renewal": {
-                        "default": "Domain renewal",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Domain renewal"
                     },
                     "Service_payments_no_type": {
-                        "default": "Payments of no type",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Payments of no type"
                     },
                     "Service_export": {
-                        "default": "Projects export",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Projects export"
                     },
                     "Service_registrar_services": {
-                        "default": "Registrar services",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Registrar services"
                     },
                     "Service_competitors": {
-                        "default": "Competitor research",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Competitor research"
                     },
                     "Inform_choose_plan": {
-                        "default": "You can choose the right plan straight away after ",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "You can choose the right plan straight away after "
                     },
                     "register": {
-                        "default": "signup",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "signup"
                     },
                     "Move_to_plan": {
-                        "default": "Choose the right plan for your business on ",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Choose the right plan for your business on "
                     },
                     "bank_page": {
-                        "default": "billing page",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "billing page"
                     },
                     "inform_updates_per_month": {
-                        "default": " rank updates per month",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": " rank updates per month"
                     },
                     "Not_enough_personal_balance": {
-                        "default": "There are insufficient funds in the personal account!",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "There are insufficient funds in the personal account!"
                     },
                     "Tariff_balance_activation": {
-                        "default": "Pricing plan fee",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Pricing plan fee"
                     },
                     "Prepaid_months": {
-                        "default": "Prepaid months (including current)",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Prepaid months (including current)"
                     },
                     "paid_earlier": {
-                        "default": "paid earlier",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "paid earlier"
                     },
                     "pricing_plan": {
-                        "default": "pricing plan",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "pricing plan"
                     },
                     "Insufficient_balance_to_extend_plan": {
-                        "default": "Not enough funds to renew subscription",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Not enough funds to renew subscription"
                     },
                     "Russian_ruble": {
-                        "default": "Russian ruble",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Russian ruble"
                     },
                     "US_dollar": {
-                        "default": "US dollar",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "US dollar"
                     },
                     "You_can_select_change_currency_once_before_first_payment_notice": {
-                        "default": "Currency can be selected and changed only once before the first payment",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Currency can be selected and changed only once before the first payment"
                     },
                     "Payments_willbe_made_in_currency": {
-                        "default": "Payments will be accepted in the following currency",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Payments will be accepted in the following currency"
                     },
                     "Name_payment_log": {
-                        "default": "Credit%systemType% - Payment TV-%paymentId% via \"%systemName%\"%contractInfo%",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Credit%systemType% - Payment TV-%paymentId% via \"%systemName%\"%contractInfo%"
                     },
                     "Name_payment_log_tariff": {
-                        "default": "1-Month Subscription %tariffName% - plan - Payment TV-%paymentId% via \"%systemName%\"%contractInfo%",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "1-Month Subscription %tariffName% - plan - Payment TV-%paymentId% via \"%systemName%\"%contractInfo%"
                     },
                     "System_name_balance": {
-                        "default": "Payment from account balance",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Payment from account balance"
                     },
                     "System_name_card": {
-                        "default": "Credit card payment",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Credit card payment"
                     },
                     "System_name_invoice": {
-                        "default": "Wire transfer",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Wire transfer"
                     },
                     "System_name_tinkoff_business": {
-                        "default": "Wire transfer (T-Business)",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Wire transfer (T-Business)"
                     },
                     "System_name_card_ap": {
-                        "default": "Apple Pay",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Apple Pay"
                     },
                     "System_name_card_gp": {
-                        "default": "Google Pay",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Google Pay"
                     },
                     "System_name_card_ios": {
-                        "default": "iOS",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "iOS"
                     },
                     "System_name_card_android": {
-                        "default": "Android",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Android"
                     },
                     "System_name_wm2": {
-                        "default": "WebMoney",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "WebMoney"
                     },
                     "System_name_pp": {
-                        "default": "PayPal",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "PayPal"
                     },
                     "System_name_pt": {
-                        "default": "Payture",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Payture"
                     },
                     "System_name_ym": {
-                        "default": "YooMoney",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "YooMoney"
                     },
                     "System_name_rk": {
-                        "default": "Robokassa (cards of non-Russian banks, except Ukraine, USA, Turkey, Belarus)",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Robokassa (cards of non-Russian banks, except Ukraine, USA, Turkey, Belarus)"
                     },
                     "System_name_qw": {
-                        "default": "QIWI",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "QIWI"
                     },
                     "System_name_pd": {
-                        "default": "Paddle",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Paddle"
                     },
                     "System_name_pd_invoice": {
-                        "default": "Paddle invoice",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Paddle invoice"
                     },
                     "System_name_sb": {
-                        "default": "SberPay",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "SberPay"
                     },
                     "System_name_lp": {
-                        "default": "LeadPay (cards of Belarusian banks)",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "LeadPay (cards of Belarusian banks)"
                     },
                     "System_name_ppg": {
-                        "default": "PayPro Global (cards of non-Russian banks, PayPal, Wire Transfer. All countries except Belarus)",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "PayPro Global (cards of non-Russian banks, PayPal, Wire Transfer. All countries except Belarus)"
                     },
                     "Your_contract_expires_notice": {
-                        "default": "Contract expiration notice",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Contract expiration notice"
                     },
                     "Earlier_contacts_closed_notice": {
-                        "default": "Your earlier contract has been closed",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Your earlier contract has been closed"
                     },
                     "Tinkoff_bank_details": {
-                        "default": "TBank, Moscow",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "TBank, Moscow"
                     },
                     "Contragent_message": {
-                        "default": "Dear valued counterparty!\nOur company started using electronic document workflow system. We can issue and receive invoices, acts and receipts,\nkeep all documents and correspondence in the e-format without issuing paper duplicates.\nIf you would like to receive your documents in e-format via the electronic document workflow system, accept this invitation.\nBest regards, Denis Pustovoit",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Dear valued counterparty!\nOur company started using electronic document workflow system. We can issue and receive invoices, acts and receipts,\nkeep all documents and correspondence in the e-format without issuing paper duplicates.\nIf you would like to receive your documents in e-format via the electronic document workflow system, accept this invitation.\nBest regards, Denis Pustovoit"
                     },
                     "for_1_month_on_pricing_plan": {
-                        "default": "for 1 month on the pricing plan",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "for 1 month on the pricing plan"
                     },
                     "TV": {
-                        "default": "TV-",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "TV-"
                     },
                     "Mentioned_services_completed_in_full_notice": {
-                        "default": "The services mentioned above have been completed in full and on time. The customer does not have any concerns regarding volume, quality, and delivery timing.",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "The services mentioned above have been completed in full and on time. The customer does not have any concerns regarding volume, quality, and delivery timing."
                     },
                     "Offer": {
-                        "default": "Offer",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Offer"
                     },
                     "Contract_offer": {
-                        "default": "Contract offer",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Contract offer"
                     },
                     "Contract": {
-                        "default": "Agreement",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Agreement"
                     },
                     "Add_payment_details": {
-                        "default": "Add payment details",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Add payment details"
                     },
                     "Natural_person": {
-                        "default": "Individual",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Individual"
                     },
                     "Legal_person": {
-                        "default": "Company",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Company"
                     },
                     "Sole_proprietor": {
-                        "default": "Sole proprietor",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Sole proprietor"
                     },
                     "Sole_proprietor_short": {
-                        "default": "SP",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "SP"
                     },
                     "Status": {
-                        "default": "Status",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Status"
                     },
                     "Unconfirmed": {
-                        "default": "Pending / Unconfirmed",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Pending / Unconfirmed"
                     },
                     "Pause": {
-                        "default": "Received (paused)",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Received (paused)"
                     },
                     "Confirmed": {
-                        "default": "Completed",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Completed"
                     },
                     "Pending_payment": {
-                        "default": "Pending payment",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Pending payment"
                     },
                     "Paid_and_postponed": {
-                        "default": "Pre-paid and postponed",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Pre-paid and postponed"
                     },
                     "Service_acceptance_act": {
-                        "default": "Service acceptance act",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Service acceptance act"
                     },
                     "Payment_confirmed": {
-                        "default": "Payment confirmed",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Payment confirmed"
                     },
                     "Payment_prepaid": {
-                        "default": "Payment prepaid",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Payment prepaid"
                     },
                     "Payment_canceled": {
-                        "default": "Payment canceled",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Payment canceled"
                     },
                     "Payment_refunded": {
-                        "default": "Payment refunded",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Payment refunded"
                     },
                     "Make_invoice": {
-                        "default": "Create invoice",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Create invoice"
                     },
                     "Get_payment_invoice": {
-                        "default": "Get invoice",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Get invoice"
                     },
                     "Card_payment": {
-                        "default": "Card payment",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Card payment"
                     },
                     "Card_payment_info": {
-                        "default": "(Visa and Mastercard of Russian banks;<br>«Mir» of any banks)",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "(Visa and Mastercard of Russian banks;<br>«Mir» of any banks)"
                     },
                     "Paddle_info": {
-                        "default": "(Visa and Mastercard of non-Russian banks excluding Belarus;<br>American Express, PayPal)",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "(Visa and Mastercard of non-Russian banks excluding Belarus;<br>American Express, PayPal)"
                     },
                     "Pay_with_card_processing_time_15min": {
-                        "default": "Pay with card. Processing time: 15 minutes.",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Pay with card. Processing time: 15 minutes."
                     },
                     "Project_id": {
-                        "default": "Project ID",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Project ID"
                     },
                     "Project_info": {
-                        "default": "Project info",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Project info"
                     },
                     "Automatic_top_up": {
-                        "default": "Auto top-up",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Auto top-up"
                     },
                     "Account_automatic_top_up": {
-                        "default": "Balance auto top-up",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Balance auto top-up"
                     },
                     "When_current_balance_reaches": {
-                        "default": "When balance is below",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "When balance is below"
                     },
                     "Top_up_balance_with": {
-                        "default": "Top up balance by",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Top up balance by"
                     },
                     "Domain_account_topup": {
-                        "default": "Top up domain account",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Top up domain account"
                     },
                     "Amount_from": {
-                        "default": "Minimum amount",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Minimum amount"
                     },
                     "Subscribe_for_period": {
-                        "default": "Subscribe for",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Subscribe for"
                     },
                     "Invoice_for": {
-                        "default": "Invoice for",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Invoice for"
                     },
                     "you_need_to_select_plan": {
-                        "default": "select a plan above",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "select a plan above"
                     },
                     "Subscribe_to_plan": {
-                        "default": "Subscribe to plan",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Subscribe to plan"
                     },
                     "Change_plan": {
-                        "default": "Change plan",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Change plan"
                     },
                     "Payment_status": {
-                        "default": "Payment status",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Payment status"
                     },
                     "Individual_no_banking_details": {
-                        "default": "Individual",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Individual"
                     },
                     "Add_banking_details": {
-                        "default": "Add company details",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Add company details"
                     },
                     "Add_admin": {
-                        "default": "Add administrator",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Add administrator"
                     },
                     "Edit_company_agreement": {
-                        "default": "Edit agreement",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Edit agreement"
                     },
                     "Edit_admin_card": {
-                        "default": "Edit administrator card",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Edit administrator card"
                     },
                     "Save_bank_details": {
-                        "default": "Save bank details",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Save bank details"
                     },
                     "for_1_month": {
-                        "default": "for 1 month",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "for 1 month"
                     },
                     "active": {
-                        "default": "active",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "active"
                     },
                     "Cancel_pricing_plan_subscription": {
-                        "default": "Cancel subscription",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Cancel subscription"
                     },
                     "Invoice_created_successfully": {
-                        "default": "Invoice created successfully",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Invoice created successfully"
                     },
                     "Proceed_to_bank_account_to_sign_order": {
-                        "default": "Proceed to TBank account to sign a payment order",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Proceed to TBank account to sign a payment order"
                     },
                     "Estimated_processing_time": {
-                        "default": "Estimated processing time is 5 minutes",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Estimated processing time is 5 minutes"
                     },
                     "Topup_amount": {
-                        "default": "Topup amount",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Topup amount"
                     },
                     "Topup_balance": {
-                        "default": "Top up balance",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Top up balance"
                     },
                     "Next_plan_payment": {
-                        "default": "Next payment",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Next payment"
                     },
                     "in_the_amount": {
-                        "default": "of",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "of"
                     },
                     "View_payment_warrants": {
-                        "default": "View payment warrants on the",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "View payment warrants on the"
                     },
                     "New_card": {
-                        "default": "New card",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "New card"
                     },
                     "card": {
-                        "default": "card",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "card"
                     },
                     "Tinkoff_business_e_account": {
-                        "default": "T-Business (e-account)",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "T-Business (e-account)"
                     },
                     "Get_invoice_via_Diadoc": {
-                        "default": "Get invoice via e-doc",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Get invoice via e-doc"
                     },
                     "Register_in_Tinkoff_business": {
-                        "default": "Create a T-Business account",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Create a T-Business account"
                     },
                     "Best_option": {
-                        "default": "Best choice",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Best choice"
                     },
                     "Get_receipt_to_email": {
-                        "default": "Get receipt to Email",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Get receipt to Email"
                     },
                     "Company_name": {
-                        "default": "Company name",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Company name"
                     },
                     "Company_address": {
-                        "default": "Company address",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Company address"
                     },
                     "Country_of_residence": {
-                        "default": "Country of residence",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Country of residence"
                     },
                     "Organization_name": {
-                        "default": "Company name",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Company name"
                     },
                     "Organization_english_name": {
-                        "default": "Company name in English",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Company name in English"
                     },
                     "OKPO": {
-                        "default": "OKPO",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "OKPO"
                     },
                     "Checking_account": {
-                        "default": "Checking account",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Checking account"
                     },
                     "BIC": {
-                        "default": "BIC",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "BIC"
                     },
                     "Bank_BIC": {
-                        "default": "BIC of bank",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "BIC of bank"
                     },
                     "Name_of_bank": {
-                        "default": "Name of bank",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Name of bank"
                     },
                     "Name_of_bank_short": {
-                        "default": "Name",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Name"
                     },
                     "for_public_companies_and_monopolies": {
-                        "default": "for public companies and natural monopolies",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "for public companies and natural monopolies"
                     },
                     "Legal_address": {
-                        "default": "Legal address",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Legal address"
                     },
                     "Postal_address": {
-                        "default": "Postal address",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Postal address"
                     },
                     "Postal_code": {
-                        "default": "Postal code / Zip code",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Postal code / Zip code"
                     },
                     "City": {
-                        "default": "City",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "City"
                     },
                     "Region": {
-                        "default": "State / Province",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "State / Province"
                     },
                     "Correspondent_bank_details": {
-                        "default": "Correspondent bank details",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Correspondent bank details"
                     },
                     "corr_acc": {
-                        "default": "Bank corr. acc.",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Bank corr. acc."
                     },
                     "corr_acc_short": {
-                        "default": "corr. acc.",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "corr. acc."
                     },
                     "IIC": {
-                        "default": "IIC",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "IIC"
                     },
                     "MFO": {
-                        "default": "MFO",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "MFO"
                     },
                     "Signatory_full_name": {
-                        "default": "Signatory full name",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Signatory full name"
                     },
                     "Title": {
-                        "default": "Title",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Title"
                     },
                     "Acts_under": {
-                        "default": "Acts under",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Acts under"
                     },
                     "Of_chart": {
-                        "default": "Chart",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Chart"
                     },
                     "Of_certificate": {
-                        "default": "Certificate",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Certificate"
                     },
                     "Of_power_of_attorney": {
-                        "default": "Power of attorney",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Power of attorney"
                     },
                     "Of_contract_of_management": {
-                        "default": "Contract of management",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Contract of management"
                     },
                     "Signatory_full_name_genitive": {
-                        "default": "Signatory full name in genitive case",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Signatory full name in genitive case"
                     },
                     "Title_genitive": {
-                        "default": "Title in genitive case",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Title in genitive case"
                     },
                     "Number_of_signatories": {
-                        "default": "Number of signatories",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Number of signatories"
                     },
                     "Create_Tinkoff_business_account": {
-                        "default": "Create T-Business account",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Create T-Business account"
                     },
                     "Domain_registration_or_renewal": {
-                        "default": "Domain registration or renewal ID%paymentId%",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Domain registration or renewal ID%paymentId%"
                     },
                     "Not_enough_money_for_purchase": {
-                        "default": "You do not have enough funds to complete purchase",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "You do not have enough funds to complete purchase"
                     },
                     "Manage_contract": {
-                        "default": "Manage contract",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Manage contract"
                     },
                     "Cash_receipts": {
-                        "default": "Cash receipts",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Cash receipts"
                     },
                     "Reconciliation_statement": {
-                        "default": "Reconciliation statement",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Reconciliation statement"
                     },
                     "Download_contract": {
-                        "default": "Download contract",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Download contract"
                     },
                     "Sign_contract_via_diadoc": {
-                        "default": "Sign contract via e-doc",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Sign contract via e-doc"
                     },
                     "Connect_to_diadoc": {
-                        "default": "Connect Diadoc e-management",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Connect Diadoc e-management"
                     },
                     "Download_envelope_cover": {
-                        "default": "Download envelope cover",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Download envelope cover"
                     },
                     "Receipts_for_period": {
-                        "default": "Receipts for the period",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Receipts for the period"
                     },
                     "Reconciliation_statement_for_period": {
-                        "default": "Reconciliation statement for the period",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Reconciliation statement for the period"
                     },
                     "Send_to_diadoc": {
-                        "default": "Send via e-doc",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Send via e-doc"
                     },
                     "Invoices_and_warrants": {
-                        "default": "Invoices and warrants",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Invoices and warrants"
                     },
                     "Invoices_and_acts": {
-                        "default": "Invoices and statements",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Invoices and statements"
                     },
                     "Operations": {
-                        "default": "Bank history",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Bank history"
                     },
                     "Invoice_number": {
-                        "default": "Invoice number",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Invoice number"
                     },
                     "Plan_not_selected": {
-                        "default": "Plan<br> not selected",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Plan<br> not selected"
                     },
                     "account_personal": {
-                        "default": "personal",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "personal"
                     },
                     "account_pricing_plan": {
-                        "default": "pricing plan",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "pricing plan"
                     },
                     "account_bonus": {
-                        "default": "bonus",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "bonus"
                     },
                     "Software": {
-                        "default": "Software",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Software"
                     },
                     "Invoice": {
-                        "default": "Invoice",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Invoice"
                     },
                     "Tools_and_pricing": {
-                        "default": "Tools and prices",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Tools and prices"
                     },
                     "Start_for_free": {
-                        "default": "Start for free",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Start for free"
                     },
                     "View_all_pricing_1": {
-                        "default": "View full",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "View full"
                     },
                     "View_all_pricing_2": {
-                        "default": "pricing",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "pricing"
                     },
                     "Faster_payments_system": {
-                        "default": "Faster payments system",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Faster payments system"
                     },
                     "QR_code": {
-                        "default": "QR code",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "QR code"
                     },
                     "Full_amount": {
-                        "default": "Full amount",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Full amount"
                     },
                     "Money_be_transferred_to_bonus_acc_no_withdraw": {
-                        "default": "Funds will be transferred to the bonus account, you won't be able to withdraw it.",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Funds will be transferred to the bonus account, you won't be able to withdraw it."
                     },
                     "Select_amount_to_transfer": {
-                        "default": "Select amount to transfer (rub.)",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Select amount to transfer (rub.)"
                     },
                     "Do_you_want_continue": {
-                        "default": "Do you want to continue?",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Do you want to continue?"
                     },
                     "Get_closing_documents_by_mail": {
-                        "default": "Get closing documents by mail",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Get closing documents by mail"
                     },
                     "Get_closing_documents_by_mail_info": {
-                        "default": "Check this box to receive closing documents by mail. We will send the registered mail with the Russian Post, you will need to receive it at your post office.<br><br>\n\t\tIf you want to receive the documents in electronic form, accept our invitation to join electronic document flow.<br><br>\n\t\tIf your accounting department do not see this invitation, contact us. Sometimes the original documents are not necessary, you can always get the copies under Invoices and warrants.",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Check this box to receive closing documents by mail. We will send the registered mail with the Russian Post, you will need to receive it at your post office.<br><br>\n\t\tIf you want to receive the documents in electronic form, accept our invitation to join electronic document flow.<br><br>\n\t\tIf your accounting department do not see this invitation, contact us. Sometimes the original documents are not necessary, you can always get the copies under Invoices and warrants."
                     },
                     "Confirm_document_removal": {
-                        "default": "Are you sure you want to delete this document",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Are you sure you want to delete this document"
                     },
                     "Act": {
-                        "default": "Act",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Act"
                     }
                 },
                 "required": [

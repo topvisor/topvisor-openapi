@@ -8,74 +8,74 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         "I18n.Snapshots": {
-            /** @default Snippets in snapshots */
-            readonly Snippets_in_snapshots: string;
-            /** @default No Snapshots saved for the applied filters and dates */
-            readonly No_snapshots_these_dates_note: string;
-            /** @default Snapshots of */
-            readonly Snapshots_for_keyword: string;
-            /** @default Add keyword to display search results Snapshot */
-            readonly Add_keyword_to_see_snapshot: string;
-            /** @default Add keyword to compare Snapshots */
-            readonly Add_keyword_to_compare: string;
-            /** @default not on the competitor list */
-            readonly not_in_competitor_list: string;
-            /** @default on the competitor list */
-            readonly in_competitor_list: string;
-            /** @default To manage competitor websites, move to the */
-            readonly To_manage_competitors_move: string;
-            /** @default Rank Tracker page and press a gear icon on the toolbar */
-            readonly move_to_settings: string;
-            /** @default For more details read the Help center article <a href="/support/dynamics/competitors/" target="_blank">How to manage competitor websites?</a> */
-            readonly Read_competitor_help_article: string;
-            /** @default Competitor website */
-            readonly Competitor_website: string;
-            /** @default Save a snapshot of TOP */
-            readonly Save_snapshot_top_N: string;
-            /** @default Don't save */
-            readonly Do_not_save: string;
-            /** @default selected keywords only */
-            readonly selected_keywords_only: string;
-            /** @default Saved list */
-            readonly Saved_list: string;
-            /** @default First 40 keywords */
-            readonly First_40_keywords: string;
-            /** @default Save list */
-            readonly Save_list: string;
-            /** @default Clear list */
-            readonly Clear_list: string;
-            /** @default Highlight */
-            readonly Highlight: string;
-            /** @default Gray out selected domains */
-            readonly Hide_domains: string;
-            /** @default Selected domains will be grayed out to make snapshots data reader-friendly and easy to analyze */
-            readonly Hide_domains_comment: string;
-            /** @default Operation failed. Invalid domains:  */
-            readonly Highlighting_error: string;
-            /** @default Competitor URLs */
-            readonly Competitor_URLs: string;
-            /** @default Add to competitors */
-            readonly Add_to_competitors: string;
-            /** @default Remove from competitors */
-            readonly Remove_from_competitors: string;
-            /** @default Added competitors */
-            readonly Added_competitors: string;
-            /** @default Compare all keywords */
-            readonly Compare_all_keywords: string;
-            /** @default Keyword dynamics */
-            readonly Keyword_dynamics: string;
-            /** @default Select keyword */
-            readonly Select_keyword: string;
-            /** @default <b>Snippets in Snapshots</b> weren't collected on the selected dates. */
-            readonly Snippets_no_checked: string;
-            /** @default <b>Snippets in Snapshots</b> aren't being collected. Turn this feature on in the project's settings. */
-            readonly Snippets_no_checking: string;
-            /** @default You haven't collected snapshots for selected filters */
-            readonly Snapshots_checks_in_progress_1: string;
-            /** @default Collect snapshots to see SERP TOPs for your keywords and your competitors' keywords.<br>Your keyword rankings will be checked when you collect snippets.<br>📊 <a href="/snapshots/" target="_blank">Why you need to check SERP Top →</a> */
-            readonly Snapshots_checks_in_progress_2: string;
-            /** @default Open keyword snapshot */
-            readonly Open_keyword_snapshot: string;
+            /** @constant */
+            Snippets_in_snapshots: "Snippets in snapshots";
+            /** @constant */
+            No_snapshots_these_dates_note: "No Snapshots saved for the applied filters and dates";
+            /** @constant */
+            Snapshots_for_keyword: "Snapshots of";
+            /** @constant */
+            Add_keyword_to_see_snapshot: "Add keyword to display search results Snapshot";
+            /** @constant */
+            Add_keyword_to_compare: "Add keyword to compare Snapshots";
+            /** @constant */
+            not_in_competitor_list: "not on the competitor list";
+            /** @constant */
+            in_competitor_list: "on the competitor list";
+            /** @constant */
+            To_manage_competitors_move: "To manage competitor websites, move to the";
+            /** @constant */
+            move_to_settings: "Rank Tracker page and press a gear icon on the toolbar";
+            /** @constant */
+            Read_competitor_help_article: "For more details read the Help center article <a href=\"/support/dynamics/competitors/\" target=\"_blank\">How to manage competitor websites?</a>";
+            /** @constant */
+            Competitor_website: "Competitor website";
+            /** @constant */
+            Save_snapshot_top_N: "Save a snapshot of TOP";
+            /** @constant */
+            Do_not_save: "Don't save";
+            /** @constant */
+            selected_keywords_only: "selected keywords only";
+            /** @constant */
+            Saved_list: "Saved list";
+            /** @constant */
+            First_40_keywords: "First 40 keywords";
+            /** @constant */
+            Save_list: "Save list";
+            /** @constant */
+            Clear_list: "Clear list";
+            /** @constant */
+            Highlight: "Highlight";
+            /** @constant */
+            Hide_domains: "Gray out selected domains";
+            /** @constant */
+            Hide_domains_comment: "Selected domains will be grayed out to make snapshots data reader-friendly and easy to analyze";
+            /** @constant */
+            Highlighting_error: "Operation failed. Invalid domains: ";
+            /** @constant */
+            Competitor_URLs: "Competitor URLs";
+            /** @constant */
+            Add_to_competitors: "Add to competitors";
+            /** @constant */
+            Remove_from_competitors: "Remove from competitors";
+            /** @constant */
+            Added_competitors: "Added competitors";
+            /** @constant */
+            Compare_all_keywords: "Compare all keywords";
+            /** @constant */
+            Keyword_dynamics: "Keyword dynamics";
+            /** @constant */
+            Select_keyword: "Select keyword";
+            /** @constant */
+            Snippets_no_checked: "<b>Snippets in Snapshots</b> weren't collected on the selected dates.";
+            /** @constant */
+            Snippets_no_checking: "<b>Snippets in Snapshots</b> aren't being collected. Turn this feature on in the project's settings.";
+            /** @constant */
+            Snapshots_checks_in_progress_1: "You haven't collected snapshots for selected filters";
+            /** @constant */
+            Snapshots_checks_in_progress_2: "Collect snapshots to see SERP TOPs for your keywords and your competitors' keywords.<br>Your keyword rankings will be checked when you collect snippets.<br>📊 <a href=\"/snapshots/\" target=\"_blank\">Why you need to check SERP Top →</a>";
+            /** @constant */
+            Open_keyword_snapshot: "Open keyword snapshot";
         };
     };
     responses: never;

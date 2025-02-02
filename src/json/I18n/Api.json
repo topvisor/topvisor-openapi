@@ -11,59 +11,37 @@
                 "type": "object",
                 "properties": {
                     "View_in_API_explorer": {
-                        "default": "View in API explorer",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "View in API explorer"
                     },
                     "Add_parameter": {
-                        "default": "Add parameter",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Add parameter"
                     },
                     "Add_parameter_array": {
-                        "default": "Add parameter (array)",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Add parameter (array)"
                     },
                     "Select_data_to_return": {
-                        "default": "Select data to return (fields)",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Select data to return (fields)"
                     },
                     "Add_filter": {
-                        "default": "Add a filter (filters item)",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Add a filter (filters item)"
                     },
                     "Add_sorting": {
-                        "default": "Add sorting (orders item)",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Add sorting (orders item)"
                     },
                     "Set_limit": {
-                        "default": "Set limit",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Set limit"
                     },
                     "Set_offset": {
-                        "default": "Set offset",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Set offset"
                     },
                     "Developer_documentation": {
-                        "default": "API Documentation",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "API Documentation"
                     },
                     "Ask_questions_get_answers": {
-                        "default": "Search documentation",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Search documentation"
                     },
                     "PHP_SDK_example_githab": {
-                        "default": "PHP SDK example on GitHub",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "PHP SDK example on GitHub"
                     }
                 },
                 "required": [

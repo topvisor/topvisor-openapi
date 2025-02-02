@@ -11,138 +11,85 @@
                 "type": "object",
                 "properties": {
                     "User_registration_confirm": {
-                        "default": "Confirm your registration",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Confirm your registration"
                     },
                     "User_accept_email_title": {
-                        "default": "Account details",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Account details"
                     },
                     "user_accept_email_title_suffix_recommendations": {
-                        "readOnly": true,
-                        "type": "string"
+                        "const": ""
                     },
                     "User_PWD_msg_title2": {
-                        "default": "Password successfully changed",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Password successfully changed"
                     },
                     "User_restore_access": {
-                        "default": "Recovering your password",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Recovering your password"
                     },
                     "User_project_access": {
-                        "default": "Access granted",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Access granted"
                     },
                     "User_registration_invite_mail_title": {
-                        "default": "Your friend invites you to sign up and get a double welcome bonus! 🤩",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Your friend invites you to sign up and get a double welcome bonus! 🤩"
                     },
                     "User_change_confirm": {
-                        "default": "Confirm your email",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Confirm your email"
                     },
                     "User_email_changed_msg": {
-                        "default": "Your email has been changed",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Your email has been changed"
                     },
                     "User_projects_rights_title": {
-                        "default": "You have received access to the project.",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "You have received access to the project."
                     },
                     "User_projects_changeOwner_title": {
-                        "default": "Confirm project transfer.",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Confirm project transfer."
                     },
                     "Integration_expires": {
-                        "default": "Update integration key",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Update integration key"
                     },
                     "Integration_has_expired1": {
-                        "default": "Integration",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Integration"
                     },
                     "Integration_has_expired2": {
-                        "default": "integration key has expired.",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "integration key has expired."
                     },
                     "Integration_access_error": {
-                        "default": "integration error",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "integration error"
                     },
                     "Project_report": {
-                        "default": "Report: Project dynamics.",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Report: Project dynamics."
                     },
                     "Indexing_informer_title": {
-                        "default": "Index status: new changes detected.",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Index status: new changes detected."
                     },
                     "Watcher_informer_title": {
-                        "default": "Website watcher: new changes detected.",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Website watcher: new changes detected."
                     },
                     "Sitemap_changes_to_sitemap_email": {
-                        "default": "Sitemap: new changes detected.",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Sitemap: new changes detected."
                     },
                     "Audit_informer_title": {
-                        "default": "Website audit is completed.",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Website audit is completed."
                     },
                     "Total_indexed": {
-                        "default": "Total indexed",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Total indexed"
                     },
                     "Dropped_from_index": {
-                        "default": "Dropped from index",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Dropped from index"
                     },
                     "Got_indexed": {
-                        "default": "New indexed",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "New indexed"
                     },
                     "Tariff_due_to_expire": {
-                        "default": "Do not forget to renew your subscription",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Do not forget to renew your subscription"
                     },
                     "Dogovor": {
-                        "default": "User agreement",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "User agreement"
                     },
                     "Ur_balance": {
-                        "default": "Balance is topped up",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Balance is topped up"
                     },
                     "Payment_received": {
-                        "default": "Pyment has been received",
-                        "readOnly": true,
-                        "type": "string"
+                        "const": "Pyment has been received"
                     }
                 },
                 "required": [

@@ -8,44 +8,44 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         "I18n.Updates": {
-            /** @default SERP update score */
-            readonly SERP_update_score: string;
-            /** @default update confirmed by Yandex */
-            readonly confirmed_Yandex: string;
-            /** @default updates calendar */
-            readonly Calendar: string;
-            /** @default Website informer */
-            readonly Informer: string;
-            /** @default Yandex search base update */
-            readonly Yandex_search_base_update: string;
-            /** @default SERP change */
-            readonly SERP_changes: string;
-            /** @default  Text update: index <span class="top-only-pc">updated</span> on  */
-            readonly Text_update: string;
-            /** @default Index updated on  */
-            readonly Index_updated: string;
-            /** @default Comments */
-            readonly Comments: string;
-            /** @default Add comment */
-            readonly Add_comment: string;
-            /** @default <a href="." class="btn">Sign in</a> to leave comments */
-            readonly Sign_in_to_leave_comments: string;
-            /** @default Subscribe */
-            readonly Subscribe: string;
-            /** @default points */
-            readonly points: string;
-            /** @default Update */
-            readonly Update: string;
-            /** @default Updates calendar */
-            readonly Updates_calendar: string;
-            /** @default Yandex update */
-            readonly Yandex_update: string;
-            /** @default Yandex text update */
-            readonly Yandex_text_update: string;
-            /** @default Yandex SERP update */
-            readonly Yandex_SERP_update: string;
-            /** @default Index updated on */
-            readonly Index_updated_on: string;
+            /** @constant */
+            SERP_update_score: "SERP update score";
+            /** @constant */
+            confirmed_Yandex: "update confirmed by Yandex";
+            /** @constant */
+            Calendar: "updates calendar";
+            /** @constant */
+            Informer: "Website informer";
+            /** @constant */
+            Yandex_search_base_update: "Yandex search base update";
+            /** @constant */
+            SERP_changes: "SERP change";
+            /** @constant */
+            Text_update: " Text update: index <span class=\"top-only-pc\">updated</span> on ";
+            /** @constant */
+            Index_updated: "Index updated on ";
+            /** @constant */
+            Comments: "Comments";
+            /** @constant */
+            Add_comment: "Add comment";
+            /** @constant */
+            Sign_in_to_leave_comments: "<a href=\".\" class=\"btn\">Sign in</a> to leave comments";
+            /** @constant */
+            Subscribe: "Subscribe";
+            /** @constant */
+            points: "points";
+            /** @constant */
+            Update: "Update";
+            /** @constant */
+            Updates_calendar: "Updates calendar";
+            /** @constant */
+            Yandex_update: "Yandex update";
+            /** @constant */
+            Yandex_text_update: "Yandex text update";
+            /** @constant */
+            Yandex_SERP_update: "Yandex SERP update";
+            /** @constant */
+            Index_updated_on: "Index updated on";
         };
     };
     responses: never;

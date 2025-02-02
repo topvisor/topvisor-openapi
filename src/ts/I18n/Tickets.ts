@@ -8,110 +8,110 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         "I18n.Tickets": {
-            /** @default Ticket reply */
-            readonly Reply_Title: string;
-            /** @default When replying to the ticket, please do not change the topic */
-            readonly Reply_notice: string;
-            /** @default Thank you, your ticket has been submitted */
-            readonly Auto_message_title: string;
-            /** @default Open */
-            readonly Open_tickets: string;
-            /** @default Closed */
-            readonly Closed_tickets: string;
-            /** @default Close ticket */
-            readonly Close_ticket: string;
-            /** @default Open ticket */
-            readonly Open_ticket: string;
-            /** @default Add to favorites */
-            readonly Add_to_favorites: string;
-            /** @default Remove from favorites */
-            readonly Remove_from_favorites: string;
-            /** @default Continue in new ticket */
-            readonly Continue_in_new_ticket: string;
-            /** @default Quote message */
-            readonly Quote_message: string;
-            /** @default Edit message */
-            readonly Edit_message: string;
-            /** @default Delete message */
-            readonly Delete_message: string;
-            /** @default User info */
-            readonly User_info: string;
-            /** @default Device */
-            readonly Device: string;
-            /** @default Browser */
-            readonly Browser: string;
-            /** @default Pricing plan */
-            readonly Pricing_plan: string;
-            /** @default Edit template */
-            readonly Edit_template: string;
-            /** @default Title */
-            readonly Template_title: string;
-            /** @default Write a message */
-            readonly Add_msg: string;
-            /** @default Delete template */
-            readonly Delete_template: string;
-            /** @default Results */
-            readonly Found: string;
-            /** @default Search tickets */
-            readonly Search_tickets: string;
-            /** @default Create ticket */
-            readonly New_ticket: string;
-            /** @default Reopen ticket */
-            readonly Reopen_ticket: string;
-            /** @default Select a ticket or */
-            readonly Text_welcome_1: string;
-            /** @default create a new one */
-            readonly Text_welcome_2: string;
-            /** @default to contact Customer Support */
-            readonly Text_welcome_3: string;
-            /** @default Please describe the problem or ask a question */
-            readonly Text_new_ticket_1: string;
-            /** @default We will get back to you shortly 💙 */
-            readonly Text_new_ticket_2: string;
-            /** @default Ticket source page */
-            readonly Ticket_source_page: string;
-            /** @default Mute */
-            readonly Sound_mute: string;
-            /** @default Pencil */
-            readonly Sound_pencil: string;
-            /** @default Magic wand */
-            readonly Sound_magic_wand: string;
-            /** @default Bounce */
-            readonly Sound_bounce: string;
-            /** @default Beep */
-            readonly Sound_beep: string;
-            /** @default Xylophone */
-            readonly Sound_xylophone: string;
-            /** @default Drums */
-            readonly Sound_drums: string;
-            /** @default Average expenses */
-            readonly Average_expenses: string;
-            /** @default Bad */
-            readonly Bad: string;
-            /** @default OK */
-            readonly Normal: string;
-            /** @default Great! */
-            readonly Good: string;
-            /** @default Rate how the Support did their part */
-            readonly Title_start: string;
-            /** @default Thanks for the feedback! */
-            readonly Title_finish: string;
-            /** @default It'll help us to get better. */
-            readonly Text_start: string;
-            /** @default We'll keep it up. */
-            readonly Text_good: string;
-            /** @default We'll improve our service. */
-            readonly Text_bad: string;
-            /** @default What did you particularly enjoy? */
-            readonly Comment_title_good: string;
-            /** @default Tell us what was wrong — we'll do everything to get better! */
-            readonly Comment_title_bad: string;
-            /** @default Change the feedback */
-            readonly Button_change_review: string;
-            /** @default Online */
-            readonly Online: string;
-            /** @default Last seen */
-            readonly Visited: string;
+            /** @constant */
+            Reply_Title: "Ticket reply";
+            /** @constant */
+            Reply_notice: "When replying to the ticket, please do not change the topic";
+            /** @constant */
+            Auto_message_title: "Thank you, your ticket has been submitted";
+            /** @constant */
+            Open_tickets: "Open";
+            /** @constant */
+            Closed_tickets: "Closed";
+            /** @constant */
+            Close_ticket: "Close ticket";
+            /** @constant */
+            Open_ticket: "Open ticket";
+            /** @constant */
+            Add_to_favorites: "Add to favorites";
+            /** @constant */
+            Remove_from_favorites: "Remove from favorites";
+            /** @constant */
+            Continue_in_new_ticket: "Continue in new ticket";
+            /** @constant */
+            Quote_message: "Quote message";
+            /** @constant */
+            Edit_message: "Edit message";
+            /** @constant */
+            Delete_message: "Delete message";
+            /** @constant */
+            User_info: "User info";
+            /** @constant */
+            Device: "Device";
+            /** @constant */
+            Browser: "Browser";
+            /** @constant */
+            Pricing_plan: "Pricing plan";
+            /** @constant */
+            Edit_template: "Edit template";
+            /** @constant */
+            Template_title: "Title";
+            /** @constant */
+            Add_msg: "Write a message";
+            /** @constant */
+            Delete_template: "Delete template";
+            /** @constant */
+            Found: "Results";
+            /** @constant */
+            Search_tickets: "Search tickets";
+            /** @constant */
+            New_ticket: "Create ticket";
+            /** @constant */
+            Reopen_ticket: "Reopen ticket";
+            /** @constant */
+            Text_welcome_1: "Select a ticket or";
+            /** @constant */
+            Text_welcome_2: "create a new one";
+            /** @constant */
+            Text_welcome_3: "to contact Customer Support";
+            /** @constant */
+            Text_new_ticket_1: "Please describe the problem or ask a question";
+            /** @constant */
+            Text_new_ticket_2: "We will get back to you shortly 💙";
+            /** @constant */
+            Ticket_source_page: "Ticket source page";
+            /** @constant */
+            Sound_mute: "Mute";
+            /** @constant */
+            Sound_pencil: "Pencil";
+            /** @constant */
+            Sound_magic_wand: "Magic wand";
+            /** @constant */
+            Sound_bounce: "Bounce";
+            /** @constant */
+            Sound_beep: "Beep";
+            /** @constant */
+            Sound_xylophone: "Xylophone";
+            /** @constant */
+            Sound_drums: "Drums";
+            /** @constant */
+            Average_expenses: "Average expenses";
+            /** @constant */
+            Bad: "Bad";
+            /** @constant */
+            Normal: "OK";
+            /** @constant */
+            Good: "Great!";
+            /** @constant */
+            Title_start: "Rate how the Support did their part";
+            /** @constant */
+            Title_finish: "Thanks for the feedback!";
+            /** @constant */
+            Text_start: "It'll help us to get better.";
+            /** @constant */
+            Text_good: "We'll keep it up.";
+            /** @constant */
+            Text_bad: "We'll improve our service.";
+            /** @constant */
+            Comment_title_good: "What did you particularly enjoy?";
+            /** @constant */
+            Comment_title_bad: "Tell us what was wrong — we'll do everything to get better!";
+            /** @constant */
+            Button_change_review: "Change the feedback";
+            /** @constant */
+            Online: "Online";
+            /** @constant */
+            Visited: "Last seen";
         };
     };
     responses: never;
