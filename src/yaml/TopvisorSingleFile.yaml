@@ -12371,8 +12371,11 @@ components:
             - $ref: '#/components/schemas/TV.API.Types.Email'
         social_user_id:
           title: Id пользователя внутри социальной сети, из которой был отправлен тикет
-          description: Может быть в любом виде
-          type: string
+          description: |-
+            Может быть в любом виде
+
+            @type string | int
+          nullable: true
         secret:
           title: Данные для авторизации в сервисе-конкуренте для переноса проектов
           description: Недокументированный параметр

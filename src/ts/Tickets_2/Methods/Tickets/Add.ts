@@ -29,8 +29,10 @@ export interface components {
             /**
              * Id пользователя внутри социальной сети, из которой был отправлен тикет
              * @description Может быть в любом виде
+             *
+             *     @type string | int
              */
-            social_user_id?: string;
+            social_user_id?: unknown;
             /**
              * Данные для авторизации в сервисе-конкуренте для переноса проектов
              * @description Недокументированный параметр
