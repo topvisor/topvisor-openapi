@@ -10,9 +10,9 @@ export interface components {
         /** Изменение приоритета задач */
         "Admin_2.Methods.Actions.Robot.Priority.Edit": {
             /** ID сайта или проекта */
-            siteOrProjectId: string;
+            siteOrProjectId?: string | null;
             /** ID пользователя */
-            userId: number;
+            userId?: number | null;
             /** Приоритет */
             priority: number;
             /**

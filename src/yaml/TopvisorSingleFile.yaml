@@ -16547,9 +16547,11 @@ components:
       properties:
         siteOrProjectId:
           title: ID сайта или проекта
+          nullable: true
           type: string
         userId:
           title: ID пользователя
+          nullable: true
           type: integer
         priority:
           title: Приоритет
@@ -16562,8 +16564,6 @@ components:
           title: Являеется ли запуск - тестом
           type: boolean
       required:
-        - siteOrProjectId
-        - userId
         - priority
         - test
       title: Изменение приоритета задач

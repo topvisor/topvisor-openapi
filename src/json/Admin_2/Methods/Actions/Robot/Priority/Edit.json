@@ -12,10 +12,12 @@
                 "properties": {
                     "siteOrProjectId": {
                         "title": "ID сайта или проекта",
+                        "nullable": true,
                         "type": "string"
                     },
                     "userId": {
                         "title": "ID пользователя",
+                        "nullable": true,
                         "type": "integer"
                     },
                     "priority": {
@@ -33,8 +35,6 @@
                     }
                 },
                 "required": [
-                    "siteOrProjectId",
-                    "userId",
                     "priority",
                     "test"
                 ],
