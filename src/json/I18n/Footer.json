@@ -178,6 +178,10 @@
                         "const": "Privacy Policy",
                         "readOnly": true
                     },
+                    "Privacy_policy_consent": {
+                        "const": "Privacy Policy consent",
+                        "readOnly": true
+                    },
                     "Chrome_extension": {
                         "const": "Search results numbering extension for Google Chrome",
                         "readOnly": true
@@ -338,6 +342,7 @@
                     "Cases",
                     "URL_Shortener_policy",
                     "Privacy_policy",
+                    "Privacy_policy_consent",
                     "Chrome_extension",
                     "Firefox_extension",
                     "Safari_extension",

@@ -93,6 +93,8 @@ export interface components {
             /** @constant */
             readonly Privacy_policy: "Privacy Policy";
             /** @constant */
+            readonly Privacy_policy_consent: "Privacy Policy consent";
+            /** @constant */
             readonly Chrome_extension: "Search results numbering extension for Google Chrome";
             /** @constant */
             readonly Firefox_extension: "Search results numbering extension for Firefox";
