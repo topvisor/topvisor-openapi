@@ -463,7 +463,7 @@
                         "readOnly": true
                     },
                     "Through_registration_you_confirm_agreement_policy": {
-                        "const": "By pressing Sign up you accept <a href=\"%hrefConfirm%\" target=\"_blank\">Terms and Conditions</a>, give <a href=\"%hrefPrivacy-consent%\" target=\"_blank\">Privacy Policy consent</a> and confirm you acquainted yourself with <a href=\"%hrefPrivacy%\" target=\"_blank\">Privacy Policy</a>",
+                        "const": "By pressing Sign up you accept <a href=\"%hrefConfirm%\" target=\"_blank\">Terms and Conditions</a>, give <a href=\"%hrefPrivacy-consent%\" target=\"_blank\">Privacy Policy and mailing consent</a> and confirm you acquainted yourself with <a href=\"%hrefPrivacy%\" target=\"_blank\">Privacy Policy</a>",
                         "readOnly": true
                     },
                     "Already_have_account": {
