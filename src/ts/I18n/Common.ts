@@ -235,7 +235,7 @@ export interface components {
             /** @constant */
             readonly No_account: "No account?";
             /** @constant */
-            readonly Through_registration_you_confirm_agreement_policy: "By pressing Sign up you accept <a href=\"%hrefConfirm%\" target=\"_blank\">Terms and Conditions</a>, give <a href=\"%hrefPrivacy-consent%\" target=\"_blank\">Privacy Policy and mailing consent</a> and confirm you acquainted yourself with <a href=\"%hrefPrivacy%\" target=\"_blank\">Privacy Policy</a>";
+            readonly Through_registration_you_confirm_agreement_policy: "By pressing Sign up you accept <a href=\"%hrefConfirm%\" target=\"_blank\">Terms and Conditions</a> and give <a href=\"%hrefPrivacy-consent%\" target=\"_blank\">Privacy Policy and mailing consent</a>";
             /** @constant */
             readonly Already_have_account: "Already have an account";
             /** @constant */
