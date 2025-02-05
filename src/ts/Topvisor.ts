@@ -366,6 +366,40 @@ export interface paths {
         head?: never;
         patch?: never;
         trace?: never;
+    };  
+    /** Оставление отзыва */
+    "/add/votes_2/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["AddVotes2"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Получение своих отзывов */
+    "/get/votes_2/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["GetVotes2"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
     };
     "/abstractregular/admin_2/actions/": {
         parameters: {
@@ -1688,6 +1722,26 @@ export interface paths {
         get?: never;
         put?: never;
         post: operations["EditUrls2Tags"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /**
+     * Добавление комментария к отзыву
+     * @description Оставить комментарий можно в течение часа поосле выставления оценки
+     */
+    "/edit/votes_2/comment/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["EditVotes2Comment"];
         delete?: never;
         options?: never;
         head?: never;
@@ -4974,6 +5028,58 @@ export interface operations {
             };
         };
     };
+    AddVotes2: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Votes_2/Methods/Add.ts').components['schemas']['Votes_2.Methods.Add'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: number;
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: import('./Models/Votes.ts').components['schemas']['Models.Votes'];
+                };
+            };
+        };
+    };
+    GetVotes2: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Votes_2/Methods/Get.ts').components['schemas']['Votes_2.Methods.Get'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./Models/Votes.ts').components['schemas']['Models.Votes'][];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: import('./Models/Votes.ts').components['schemas']['Models.Votes'];
+                };
+            };
+        };
+    };
     AbstractregularAdmin2Actions: {
         parameters: {
             query?: never;
@@ -6958,6 +7064,32 @@ export interface operations {
                         result: number;
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: import('./Models/Urls.ts').components['schemas']['Models.Urls'];
+                };
+            };
+        };
+    };
+    EditVotes2Comment: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Votes_2/Methods/Comment/Edit.ts').components['schemas']['Votes_2.Methods.Comment.Edit'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: number;
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: null;
                 };
             };
         };

@@ -1181,6 +1181,131 @@
                 }
             }
         },
+        "/add/votes_2/": {
+            "post": {
+                "operationId": "AddVotes2",
+                "tags": [
+                    "Votes_2"
+                ],
+                "summary": "Оставление отзыва",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Votes_2/Methods/Add.json#/components/schemas/Votes_2.Methods.Add"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "oneOf": [
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "type": "integer"
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "result"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
+                                        }
+                                    ]
+                                }
+                            },
+                            "model": {
+                                "schema": {
+                                    "$ref": "Models/Votes.json#/components/schemas/Models.Votes",
+                                    "description": "Only for typescript, does not contain real data"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/get/votes_2/": {
+            "post": {
+                "operationId": "GetVotes2",
+                "tags": [
+                    "Votes_2"
+                ],
+                "summary": "Получение своих отзывов",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Votes_2/Methods/Get.json#/components/schemas/Votes_2.Methods.Get"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "oneOf": [
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "type": "array",
+                                                            "items": {
+                                                                "$ref": "Models/Votes.json#/components/schemas/Models.Votes",
+                                                                "description": "Only for typescript, does not contain real data"
+                                                            }
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "result"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                },
+                                                {
+                                                    "$ref": "Pagination.json#/components/schemas/Pagination"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
+                                        }
+                                    ]
+                                }
+                            },
+                            "model": {
+                                "schema": {
+                                    "$ref": "Models/Votes.json#/components/schemas/Models.Votes",
+                                    "description": "Only for typescript, does not contain real data"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
         "/abstractregular/admin_2/actions/": {
             "post": {
                 "operationId": "AbstractregularAdmin2Actions",
@@ -5781,6 +5906,65 @@
                                 "schema": {
                                     "$ref": "Models/Urls.json#/components/schemas/Models.Urls",
                                     "description": "Only for typescript, does not contain real data"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/edit/votes_2/comment/": {
+            "post": {
+                "operationId": "EditVotes2Comment",
+                "tags": [
+                    "Votes_2"
+                ],
+                "summary": "Добавление комментария к отзыву",
+                "description": "Оставить комментарий можно в течение часа поосле выставления оценки",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Votes_2/Methods/Comment/Edit.json#/components/schemas/Votes_2.Methods.Comment.Edit"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "oneOf": [
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "type": "integer"
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "result"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
+                                        }
+                                    ]
+                                }
+                            },
+                            "model": {
+                                "schema": {
+                                    "type": "null"
                                 }
                             }
                         }
