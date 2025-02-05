@@ -10,9 +10,9 @@ export interface components {
         /** Отправка акты в диадок */
         "Admin_2.Methods.Actions.Payments.Diadoc.Add": {
             /** ID пользователя */
-            userId?: number | null;
+            userId: number;
             /** ID платежа */
-            paymentId: number;
+            paymentId?: number | null;
             /** Являеется ли запуск - тестом */
             test: boolean;
         };

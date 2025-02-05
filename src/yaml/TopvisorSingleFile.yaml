@@ -16444,16 +16444,16 @@ components:
       properties:
         userId:
           title: ID пользователя
-          nullable: true
           type: integer
         paymentId:
           title: ID платежа
+          nullable: true
           type: integer
         test:
           title: Являеется ли запуск - тестом
           type: boolean
       required:
-        - paymentId
+        - userId
         - test
       title: Отправка акты в диадок
     Admin_2.Methods.Actions.Payments.Notification.Add:

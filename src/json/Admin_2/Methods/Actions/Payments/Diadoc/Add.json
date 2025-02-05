@@ -12,11 +12,11 @@
                 "properties": {
                     "userId": {
                         "title": "ID пользователя",
-                        "nullable": true,
                         "type": "integer"
                     },
                     "paymentId": {
                         "title": "ID платежа",
+                        "nullable": true,
                         "type": "integer"
                     },
                     "test": {
@@ -25,7 +25,7 @@
                     }
                 },
                 "required": [
-                    "paymentId",
+                    "userId",
                     "test"
                 ],
                 "title": "Отправка акты в диадок"
