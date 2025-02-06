@@ -11,7 +11,7 @@
                 "type": "object",
                 "properties": {
                     "Description": {
-                        "const": "Topvior is online platform for SEO specialists and marketers with all essential tools for analyzing website's visibility in search engines.",
+                        "const": "Here you can enter a promocode and get a bonus. You can get a promocode via mailing, social networks or in person on conferences where we take part.",
                         "readOnly": true
                     },
                     "OpenGraph_title": {
