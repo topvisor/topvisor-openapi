@@ -57,7 +57,6 @@
                     },
                     "type_range": {
                         "title": "Тип диапазона дат",
-                        "nullable": true,
                         "allOf": [
                             {
                                 "$ref": "../../../../../Audit_2/Types/Indexing/TypeRange.json#/components/schemas/Audit_2.Types.Indexing.TypeRange"
@@ -66,7 +65,6 @@
                     },
                     "type_range_compare": {
                         "title": "Тип диапазона дат (при сравнении)",
-                        "nullable": true,
                         "allOf": [
                             {
                                 "$ref": "../../../../../Audit_2/Types/Indexing/TypeRange.json#/components/schemas/Audit_2.Types.Indexing.TypeRange"
@@ -117,6 +115,8 @@
                     }
                 },
                 "required": [
+                    "type_range",
+                    "type_range_compare",
                     "project_id"
                 ],
                 "title": "Получение гостевой ссылки на просмотр индексации",
