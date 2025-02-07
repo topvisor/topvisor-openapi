@@ -2464,6 +2464,96 @@ paths:
             model:
               schema:
                 type: 'null'
+  /add/positions_2/searchers/:
+    post:
+      operationId: AddPositions2Searchers
+      tags:
+        - Positions_2
+      summary: Добавление ПС
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Positions_2.Methods.Searchers.Add'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result: {}
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
+  /del/positions_2/searchers/:
+    post:
+      operationId: DelPositions2Searchers
+      tags:
+        - Positions_2
+      summary: Удаление ПС
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Positions_2.Methods.Searchers.Del'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result: {}
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
+  /edit/positions_2/settings/:
+    post:
+      operationId: EditPositions2Settings
+      tags:
+        - Positions_2
+      summary: Установка общих настроек проверки позиций проекта
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Positions_2.Methods.Settings.Edit'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result: {}
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
   /add/projects_2/analytics/:
     post:
       operationId: AddProjects2Analytics
@@ -5860,6 +5950,157 @@ paths:
             model:
               schema:
                 type: 'null'
+  /edit/positions_2/searchers/enabled/:
+    post:
+      operationId: EditPositions2SearchersEnabled
+      tags:
+        - Positions_2
+      summary: Включение/выключение ПС
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Positions_2.Methods.Searchers.Enabled.Edit'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result: {}
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
+  /add/positions_2/searchers/regions/:
+    post:
+      operationId: AddPositions2SearchersRegions
+      tags:
+        - Positions_2
+      summary: Добавление региона
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Positions_2.Methods.Searchers.Regions.Add'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result: {}
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
+  /del/positions_2/searchers/regions/:
+    post:
+      operationId: DelPositions2SearchersRegions
+      tags:
+        - Positions_2
+      summary: Удаление региона
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Positions_2.Methods.Searchers.Regions.Del'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result: {}
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
+  /edit/positions_2/searchers/regions/:
+    post:
+      operationId: EditPositions2SearchersRegions
+      tags:
+        - Positions_2
+      summary: Изменение региона
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Positions_2.Methods.Searchers.Regions.Edit'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            type: integer
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
+  /edit/positions_2/searchers/sort/:
+    post:
+      operationId: EditPositions2SearchersSort
+      tags:
+        - Positions_2
+      summary: Настройка сортировки ПС
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Positions_2.Methods.Searchers.Sort.Edit'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result: {}
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
   /get/projects_2/analytics/graph/:
     post:
       operationId: GetProjects2AnalyticsGraph
@@ -8563,6 +8804,88 @@ paths:
                                 - type: string
                                 - type: number
                             title: Сводки с количеством изменений по каждому типу проверки
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
+  /get/positions_2/searchers/regions/export/:
+    post:
+      operationId: GetPositions2SearchersRegionsExport
+      tags:
+        - Positions_2
+      summary: Экспорт регионов (CSV)
+      description: '- searcher_key, name_or_key (название или код)[, country_code (2 буквенный код страны), lang, device, depth]'
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Positions_2.Methods.Searchers.Regions.Export.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/octet-stream:
+              schema:
+                type: string
+                format: binary
+  /add/positions_2/searchers/regions/import/:
+    post:
+      operationId: AddPositions2SearchersRegionsImport
+      tags:
+        - Positions_2
+      summary: Импорт регионов (CSV)
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Positions_2.Methods.Searchers.Regions.Import.Add'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            type: integer
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
+  /edit/positions_2/searchers/regions/sort/:
+    post:
+      operationId: EditPositions2SearchersRegionsSort
+      tags:
+        - Positions_2
+      summary: Настройка сортировки регионов
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Positions_2.Methods.Searchers.Regions.Sort.Edit'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result: {}
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
@@ -11999,6 +12322,132 @@ components:
       required:
         - validation_url
       title: Валидация домена для подтверждения оплаты Apple Pay (system = card_ap)
+    Positions_2.Types.SearcherKey:
+      type: integer
+      enum:
+        - 0
+        - 1
+        - 2
+        - 3
+        - 4
+        - 5
+        - 6
+        - 7
+        - 8
+        - 9
+        - 20
+        - 21
+      title: Ключ ПС
+    Positions_2.Methods.Searchers.Add:
+      type: object
+      properties:
+        project_id:
+          title: Id проекта
+          type: integer
+        searcher_key:
+          title: Ключ ПС
+          allOf:
+            - $ref: '#/components/schemas/Positions_2.Types.SearcherKey'
+      required:
+        - project_id
+        - searcher_key
+      title: Добавление ПС
+    Positions_2.Methods.Searchers.Del:
+      type: object
+      properties:
+        project_id:
+          title: Id проекта
+          type: integer
+        searcher_key:
+          title: Id проекта
+          allOf:
+            - $ref: '#/components/schemas/Positions_2.Types.SearcherKey'
+        filters:
+          $ref: '#/components/schemas/filters'
+        id:
+          $ref: '#/components/schemas/id'
+      required:
+        - project_id
+        - searcher_key
+        - filters
+      title: Удаление ПС
+    Positions_2.Types.Settings.GuestLinkRight:
+      type: string
+      enum:
+        - volume
+        - frequency
+        - visitors
+        - dates
+        - summary
+        - graphics
+        - competitors
+      title: Право для гостевых ссылок
+    Positions_2.Types.Settings.GuestLinkRights:
+      type: array
+      items:
+        $ref: '#/components/schemas/Positions_2.Types.Settings.GuestLinkRight'
+      title: Права для гостевых ссылок
+    Positions_2.Methods.Settings.Edit:
+      type: object
+      properties:
+        project_id:
+          title: Id проекта
+          type: integer
+        with_snippets:
+          title: Собирать ли снипиты
+          nullable: true
+          type: boolean
+        do_snapshots:
+          title: Глубина сбора снимков
+          description: |-
+            enum(0..9)
+            - 0: не собирать
+            - 1: 10
+            - 8: 80
+            - 9: 100
+          nullable: true
+          type: integer
+        do_snapshots_with_snippets:
+          title: Собирать ли сниппеты в снимках
+          nullable: true
+          type: boolean
+        subdomains:
+          title: Учитывать ли поддомены при проверке
+          description: '- 1: находить позиции сайта, являющиеся поддоменом к основному'
+          nullable: true
+          type: boolean
+        filter:
+          title: Ограничения
+          description: |-
+            - 0: без ограничений
+            - 1: умеренный
+            - 2: семейный поиск
+          nullable: true
+          type: integer
+        auto_correct:
+          title: Учитывать ли регион
+          nullable: true
+          type: boolean
+        common_traffic:
+          title: Способ получения трафика
+          description: |-
+            - 0: с учетом регионов
+            - 1: без учета регионов
+          nullable: true
+          type: boolean
+        guest_link_right:
+          title: Права для гостевых ссылок
+          nullable: true
+          allOf:
+            - $ref: '#/components/schemas/Positions_2.Types.Settings.GuestLinkRights'
+        filters:
+          $ref: '#/components/schemas/filters'
+        id:
+          $ref: '#/components/schemas/id'
+      required:
+        - project_id
+        - filters
+      title: Установка общих настроек проверки позиций проекта
     Projects_2.Types.Analytics.Axe:
       type: integer
       enum:
@@ -16009,6 +16458,158 @@ components:
       required:
         - id
       title: Смена тарифа со следующего месяца
+    Positions_2.Methods.Searchers.Enabled.Edit:
+      type: object
+      properties:
+        project_id:
+          title: Id проекта
+          type: integer
+        searcher_key:
+          title: Ключ ПС
+          allOf:
+            - $ref: '#/components/schemas/Positions_2.Types.SearcherKey'
+        enabled:
+          title: |-
+            - 1 - включить
+            - 0 - выключить
+          type: integer
+        filters:
+          $ref: '#/components/schemas/filters'
+        id:
+          $ref: '#/components/schemas/id'
+      required:
+        - project_id
+        - searcher_key
+        - enabled
+        - filters
+      title: Включение/выключение ПС
+    Positions_2.Types.RegionDevice:
+      type: integer
+      enum:
+        - 0
+        - 1
+        - 2
+      title: Устройство региона
+    Positions_2.Methods.Searchers.Regions.Add:
+      type: object
+      properties:
+        project_id:
+          title: Id проекта
+          type: integer
+        searcher_key:
+          title: Ключ ПС
+          allOf:
+            - $ref: '#/components/schemas/Positions_2.Types.SearcherKey'
+        region_key:
+          title: Ключ региона
+          description: Для разных ПС список доступных регионов может быть разный
+          type: integer
+        region_lang:
+          title: Язык региона
+          description: Для разных ПС список языков разный
+          nullable: true
+          type: string
+        region_device:
+          title: Устройство региона
+          allOf:
+            - $ref: '#/components/schemas/Positions_2.Types.RegionDevice'
+        region_depth:
+          title: Глубина региона
+          description: |-
+            - 1-3 для Яндекса (ПК)
+            - 1-10 для Google
+            - 1-3 для GooglePlay
+          default: 1
+          type: integer
+      required:
+        - project_id
+        - searcher_key
+        - region_key
+      title: Добавление региона
+    Positions_2.Methods.Searchers.Regions.Del:
+      type: object
+      properties:
+        project_id:
+          title: Id проекта
+          type: integer
+        region_index:
+          title: Регион, который требуется удалить
+          type: integer
+        filters:
+          $ref: '#/components/schemas/filters'
+        id:
+          $ref: '#/components/schemas/id'
+      required:
+        - project_id
+        - region_index
+        - filters
+      title: Удаление региона
+    Positions_2.Methods.Searchers.Regions.Edit:
+      type: object
+      properties:
+        project_id:
+          title: Id проекта
+          type: integer
+        region_index:
+          title: Регион, который требуется изменить
+          type: integer
+        region_lang:
+          title: Язык региона
+          description: Для разных ПС список языков разный
+          nullable: true
+          type: string
+        region_device:
+          title: Устройство региона
+          allOf:
+            - $ref: '#/components/schemas/Positions_2.Types.RegionDevice'
+        region_depth:
+          title: Глубина региона
+          description: |-
+            - 1-3 для Яндекса (ПК)
+            - 1-10 для Google
+            - 1-3 для GooglePlay
+          default: 1
+          type: integer
+        enabled:
+          title: Включен
+          type: boolean
+        region_key:
+          title: Ключ региона
+          nullable: true
+          type: integer
+        filters:
+          $ref: '#/components/schemas/filters'
+        id:
+          $ref: '#/components/schemas/id'
+      required:
+        - project_id
+        - region_index
+        - filters
+      title: Изменение региона
+    Positions_2.Types.SearchersKeys:
+      type: array
+      items:
+        $ref: '#/components/schemas/Positions_2.Types.SearcherKey'
+      title: Ключи ПС
+    Positions_2.Methods.Searchers.Sort.Edit:
+      type: object
+      properties:
+        project_id:
+          title: Id проекта
+          type: integer
+        searchers_keys:
+          title: Ключи ПС
+          nullable: true
+          allOf:
+            - $ref: '#/components/schemas/Positions_2.Types.SearchersKeys'
+        filters:
+          $ref: '#/components/schemas/filters'
+        id:
+          $ref: '#/components/schemas/id'
+      required:
+        - project_id
+        - filters
+      title: Настройка сортировки ПС
     Projects_2.Methods.Analytics.Graph.Get:
       type: object
       properties:
@@ -17594,6 +18195,77 @@ components:
         - checks_ids
         - project_id
       title: Получение сводок радара для графика
+    Positions_2.Methods.Searchers.Regions.Export.Get:
+      type: object
+      properties:
+        project_id:
+          title: Id проекта
+          type: integer
+        fields:
+          $ref: '#/components/schemas/fields'
+        orders:
+          $ref: '#/components/schemas/orders'
+        filters:
+          $ref: '#/components/schemas/filters'
+        id:
+          $ref: '#/components/schemas/id'
+        limit:
+          $ref: '#/components/schemas/limit'
+        offset:
+          $ref: '#/components/schemas/offset'
+        fetch_style:
+          $ref: '#/components/schemas/fetch_style'
+      required:
+        - project_id
+        - fields
+        - orders
+        - filters
+        - offset
+      title: Экспорт регионов (CSV)
+      description: '- searcher_key, name_or_key (название или код)[, country_code (2 буквенный код страны), lang, device, depth]'
+    Positions_2.Methods.Searchers.Regions.Import.Add:
+      type: object
+      properties:
+        project_id:
+          title: Id проекта
+          type: integer
+        regions:
+          title: Массив регионов в формате CSV
+          description: |-
+            array regions - массив регионов в формате CSV
+            file(csv) regions - файл с содержимым для импорта в формат CSV
+            - нельзя передавать regions одновременно в виде массива и в виде файла
+
+            формат csv (от 2 до 6 столбцов):
+            - searcher_key, name_or_key (название или код)[, country_code (2 буквенный код страны), lang, device, depth]
+          nullable: true
+      required:
+        - project_id
+      title: Импорт регионов (CSV)
+    Positions_2.Methods.Searchers.Regions.Sort.Edit:
+      type: object
+      properties:
+        project_id:
+          title: Id проекта
+          type: integer
+        searcher_key:
+          title: Ключ ПС
+          allOf:
+            - $ref: '#/components/schemas/Positions_2.Types.SearcherKey'
+        regions_indexes:
+          title: Ключи регионов
+          allOf:
+            - $ref: '#/components/schemas/TV.API.Types.IntArray'
+        filters:
+          $ref: '#/components/schemas/filters'
+        id:
+          $ref: '#/components/schemas/id'
+      required:
+        - project_id
+        - searcher_key
+        - regions_indexes
+        - filters
+      title: Настройка сортировки регионов
     Admin_2.Methods.Actions.Positions.History.Copy.Add:
       type: object
       properties:

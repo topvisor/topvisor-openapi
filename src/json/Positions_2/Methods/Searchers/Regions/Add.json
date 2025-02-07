@@ -1,0 +1,60 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Positions_2.Methods.Searchers.Regions.Add",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Positions_2.Methods.Searchers.Regions.Add": {
+                "type": "object",
+                "properties": {
+                    "project_id": {
+                        "title": "Id проекта",
+                        "type": "integer"
+                    },
+                    "searcher_key": {
+                        "title": "Ключ ПС",
+                        "allOf": [
+                            {
+                                "$ref": "../../../../Positions_2/Types/SearcherKey.json#/components/schemas/Positions_2.Types.SearcherKey"
+                            }
+                        ]
+                    },
+                    "region_key": {
+                        "title": "Ключ региона",
+                        "description": "Для разных ПС список доступных регионов может быть разный",
+                        "type": "integer"
+                    },
+                    "region_lang": {
+                        "title": "Язык региона",
+                        "description": "Для разных ПС список языков разный",
+                        "nullable": true,
+                        "type": "string"
+                    },
+                    "region_device": {
+                        "title": "Устройство региона",
+                        "allOf": [
+                            {
+                                "$ref": "../../../../Positions_2/Types/RegionDevice.json#/components/schemas/Positions_2.Types.RegionDevice"
+                            }
+                        ]
+                    },
+                    "region_depth": {
+                        "title": "Глубина региона",
+                        "description": "- 1-3 для Яндекса (ПК)\n- 1-10 для Google\n- 1-3 для GooglePlay",
+                        "default": 1,
+                        "type": "integer"
+                    }
+                },
+                "required": [
+                    "project_id",
+                    "searcher_key",
+                    "region_key"
+                ],
+                "title": "Добавление региона"
+            }
+        }
+    }
+}
