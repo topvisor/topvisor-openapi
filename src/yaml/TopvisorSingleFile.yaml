@@ -17368,12 +17368,10 @@ components:
             - $ref: '#/components/schemas/Audit_2.Types.Indexing.TypeRange'
         type_range_compare:
           title: Сравнение диапазонов типов
-          nullable: true
-          type: string
+          type: integer
         count_dates:
           title: Количество дней в диапазоне
-          nullable: true
-          type: string
+          type: integer
         tags_ids:
           title: ID тегов
           nullable: true
