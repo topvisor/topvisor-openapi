@@ -65,8 +65,13 @@
                         ]
                     },
                     "type_range_compare": {
-                        "title": "Сравнение диапазонов типов",
-                        "type": "integer"
+                        "title": "Тип диапазона дат (при сравнении)",
+                        "nullable": true,
+                        "allOf": [
+                            {
+                                "$ref": "../../../../../Audit_2/Types/Indexing/TypeRange.json#/components/schemas/Audit_2.Types.Indexing.TypeRange"
+                            }
+                        ]
                     },
                     "count_dates": {
                         "title": "Количество дней в диапазоне",

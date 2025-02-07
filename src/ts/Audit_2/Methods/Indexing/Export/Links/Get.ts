@@ -24,8 +24,8 @@ export interface components {
             date2?: string | null;
             /** Тип диапазона дат */
             type_range?: import('../../../../Types/Indexing/TypeRange.ts').components['schemas']['Audit_2.Types.Indexing.TypeRange'] | null;
-            /** Сравнение диапазонов типов */
-            type_range_compare?: number;
+            /** Тип диапазона дат (при сравнении) */
+            type_range_compare?: import('../../../../Types/Indexing/TypeRange.ts').components['schemas']['Audit_2.Types.Indexing.TypeRange'] | null;
             /** Количество дней в диапазоне */
             count_dates?: number;
             /** ID тегов */
