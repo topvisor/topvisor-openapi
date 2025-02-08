@@ -12327,8 +12327,6 @@ components:
       enum:
         - 0
         - 1
-        - 2
-        - 3
         - 4
         - 5
         - 6
@@ -12337,7 +12335,7 @@ components:
         - 9
         - 20
         - 21
-      title: Ключ ПС
+      title: Id поисковой системы для проверки позиций
     Positions_2.Methods.Searchers.Add:
       type: object
       properties:
@@ -16590,7 +16588,7 @@ components:
       type: array
       items:
         $ref: '#/components/schemas/Positions_2.Types.SearcherKey'
-      title: Ключи ПС
+      title: Id поисковых системы для проверки позиций
     Positions_2.Methods.Searchers.Sort.Edit:
       type: object
       properties:

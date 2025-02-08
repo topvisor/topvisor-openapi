@@ -11,7 +11,7 @@ export interface components {
          * id тега
          * @enum {integer}
          */
-        "Positions_2.Types.TypeRange": 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7;
+        "Positions_2.Types.TypeRange": 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 100;
     };
     responses: never;
     parameters: never;

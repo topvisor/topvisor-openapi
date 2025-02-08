@@ -7,7 +7,7 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Ключи ПС */
+        /** Id поисковых системы для проверки позиций */
         "Positions_2.Types.SearchersKeys": import('./SearcherKey.ts').components['schemas']['Positions_2.Types.SearcherKey'][];
     };
     responses: never;

@@ -12,7 +12,7 @@
                 "items": {
                     "$ref": "../../Positions_2/Types/SearcherKey.json#/components/schemas/Positions_2.Types.SearcherKey"
                 },
-                "title": "Ключи ПС"
+                "title": "Id поисковых системы для проверки позиций"
             }
         }
     }
