@@ -13152,6 +13152,7 @@ components:
           type: boolean
         forClipboard:
           title: Вернуть данные в формате для копироваиня в буфер обмена
+          description: Не более 2000 результатов
           type: boolean
         fields:
           $ref: '#/components/schemas/fields'
