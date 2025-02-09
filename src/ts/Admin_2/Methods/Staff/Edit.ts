@@ -35,7 +35,7 @@ export interface components {
             /** Привелегии */
             posts: (string | number)[];
             /** Группа */
-            group?: (string | number)[] | null;
+            group?: number | null;
         };
     };
     responses: never;

@@ -83,17 +83,7 @@
                     "group": {
                         "title": "Группа",
                         "nullable": true,
-                        "type": "array",
-                        "items": {
-                            "oneOf": [
-                                {
-                                    "type": "string"
-                                },
-                                {
-                                    "type": "number"
-                                }
-                            ]
-                        }
+                        "type": "integer"
                     }
                 },
                 "required": [
