@@ -11,7 +11,7 @@ export interface components {
          * Id поисковой системы для индексации
          * @enum {string}
          */
-        "Audit_2.Types.Indexing.SearcherKey": "0" | "1" | "5" | "6";
+        "Audit_2.Types.Indexing.SearcherKey": "0" | "1" | "5";
     };
     responses: never;
     parameters: never;

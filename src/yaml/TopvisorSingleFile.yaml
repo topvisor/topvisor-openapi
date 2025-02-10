@@ -11213,7 +11213,6 @@ components:
         - '0'
         - '1'
         - '5'
-        - '6'
       title: Id поисковой системы для индексации
     Audit_2.Types.Indexing.SearcherKeys:
       type: array
