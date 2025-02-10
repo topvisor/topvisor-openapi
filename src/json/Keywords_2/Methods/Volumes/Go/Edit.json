@@ -1,0 +1,72 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Keywords_2.Methods.Volumes.Go.Edit",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Keywords_2.Methods.Volumes.Go.Edit": {
+                "type": "object",
+                "properties": {
+                    "project_id": {
+                        "title": "Id проекта",
+                        "type": "integer"
+                    },
+                    "no_recheck": {
+                        "title": "Проверять ли запросы",
+                        "description": "- 0: проверять\n- 1: не проверять запросы с актуальной частотой\n- 2: не проверять запросы с частотой",
+                        "nullable": true,
+                        "type": "integer"
+                    },
+                    "check_all_regions": {
+                        "title": "Запустить проверку по всем регионам проекта (только Яндекс и Google)",
+                        "type": "boolean"
+                    },
+                    "target_type": {
+                        "title": "Тип объекта фильтрации",
+                        "default": "keywords",
+                        "type": "string"
+                    },
+                    "qualifiers": {
+                        "title": "Объекты определителей частоты (параметр не обязатален, если check_all_regions = true)",
+                        "description": "- int qualifier.region_key - ключ региона\n- enum(0, 1) qualifier.searcher_key - ключ ПС\n- enum(1, 2, 3, 5, 6) qualifier.type - индекс тип частоты (для Яндекс 1, 2, 3, 5 или 6, для Google всегда 3)",
+                        "nullable": true,
+                        "type": "array",
+                        "items": {
+                            "oneOf": [
+                                {
+                                    "type": "string"
+                                },
+                                {
+                                    "type": "number"
+                                }
+                            ]
+                        }
+                    },
+                    "currency": {
+                        "title": "Валюта",
+                        "nullable": true,
+                        "allOf": [
+                            {
+                                "$ref": "../../../../TV/API/Types/Currency.json#/components/schemas/TV.API.Types.Currency"
+                            }
+                        ]
+                    },
+                    "filters": {
+                        "$ref": "../../../../TV/API/Params/FiltersTrait.json#/components/schemas/TV.API.Params.FiltersTrait/properties/filters"
+                    },
+                    "id": {
+                        "$ref": "../../../../TV/API/Params/FiltersTrait.json#/components/schemas/TV.API.Params.FiltersTrait/properties/id"
+                    }
+                },
+                "required": [
+                    "project_id",
+                    "filters"
+                ],
+                "title": "Постановка задачи на проверку частоты запросов"
+            }
+        }
+    }
+}

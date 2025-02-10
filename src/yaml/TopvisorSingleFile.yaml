@@ -2277,6 +2277,71 @@ paths:
               schema:
                 $ref: '#/components/schemas/Models.Projects'
                 description: Only for typescript, does not contain real data
+  /get/keywords_2/keywords/:
+    post:
+      operationId: GetKeywords2Keywords
+      tags:
+        - Keywords_2
+      summary: Получение списка запросов проекта
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Keywords_2.Methods.Keywords.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result: {}
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                      - $ref: '#/components/schemas/Pagination'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                $ref: '#/components/schemas/Models.Keywords'
+                description: Only for typescript, does not contain real data
+  /get/keywords_2/volumes/:
+    post:
+      operationId: GetKeywords2Volumes
+      tags:
+        - Keywords_2
+      summary: Получение частоты проекта или одной группы
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Keywords_2.Methods.Volumes.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            type: number
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                      - $ref: '#/components/schemas/Pagination'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                $ref: '#/components/schemas/Models.Groups'
+                description: Only for typescript, does not contain real data
   /get/openapi_2/download/:
     post:
       operationId: GetOpenapi2Download
@@ -5826,6 +5891,74 @@ paths:
               schema:
                 type: string
                 format: binary
+  /edit/keywords_2/volumes/go/:
+    post:
+      operationId: EditKeywords2VolumesGo
+      tags:
+        - Keywords_2
+      summary: Постановка задачи на проверку частоты запросов
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Keywords_2.Methods.Volumes.Go.Edit'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            type: integer
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
+  /get/keywords_2/volumes/price/:
+    post:
+      operationId: GetKeywords2VolumesPrice
+      tags:
+        - Keywords_2
+      summary: Получение стоимости проверки частоты проектов
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Keywords_2.Methods.Volumes.Price.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            type: array
+                            items:
+                              oneOf:
+                                - type: string
+                                - type: number
+                            title: '@throws Exception'
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                      - $ref: '#/components/schemas/Pagination'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
   /add/landings_2/hr/feedback/:
     post:
       operationId: AddLandings2HrFeedback
@@ -12264,6 +12397,240 @@ components:
           nullable: true
         pos_summary_visibility:
           nullable: true
+    Keywords_2.Methods.Keywords.Get:
+      type: object
+      properties:
+        project_id:
+          title: Id проекта
+          type: integer
+        group_folder_id_depth:
+          title: При фильтрации по ID папок также искать в подпапках
+          type: boolean
+        show_trash:
+          title: Проверить корзину
+          type: boolean
+        fields:
+          $ref: '#/components/schemas/fields'
+        orders:
+          $ref: '#/components/schemas/orders'
+        filters:
+          $ref: '#/components/schemas/filters'
+        id:
+          $ref: '#/components/schemas/id'
+        limit:
+          $ref: '#/components/schemas/limit'
+        offset:
+          $ref: '#/components/schemas/offset'
+        fetch_style:
+          $ref: '#/components/schemas/fetch_style'
+      required:
+        - project_id
+        - fields
+        - orders
+        - filters
+        - offset
+      title: Получение списка запросов проекта
+    Models.Keywords:
+      properties:
+        COUNT(*):
+          nullable: true
+        LENGTH(name):
+          nullable: true
+        tagsNames():
+          nullable: true
+        id: {}
+        phrase_id:
+          nullable: true
+        project_id:
+          nullable: true
+        group_id:
+          nullable: true
+        tags:
+          nullable: true
+        target:
+          nullable: true
+        ord:
+          nullable: true
+        name:
+          nullable: true
+        group_name:
+          nullable: true
+        group_on:
+          nullable: true
+        group_ord:
+          nullable: true
+        group_folder_id:
+          nullable: true
+        group_folder_path:
+          nullable: true
+        group_folder_ord:
+          nullable: true
+        target_status:
+          nullable: true
+          example:
+            need set qualifiers:
+              - region_index
+        position:
+          type: integer
+          nullable: true
+          example:
+            need set qualifiers:
+              - date
+              - project_id
+              - region_index
+        relevant_url:
+          type: string
+          nullable: true
+          example:
+            need set qualifiers:
+              - date
+              - project_id
+              - region_index
+        snippet_title:
+          type: string
+          nullable: true
+          example:
+            need set qualifiers:
+              - date
+              - project_id
+              - region_index
+        snippet_body:
+          type: string
+          nullable: true
+          example:
+            need set qualifiers:
+              - date
+              - project_id
+              - region_index
+        snippet_ext:
+          type: string
+          nullable: true
+          example:
+            need set qualifiers:
+              - date
+              - project_id
+              - region_index
+        visitors:
+          type: integer
+          nullable: true
+          example:
+            need set qualifiers:
+              - date
+              - project_id
+              - region_index
+        positionStatus:
+          nullable: true
+          example:
+            need set qualifiers:
+              - region_index
+        volume:
+          nullable: true
+          example:
+            need set qualifiers:
+              - region_key
+              - searcher_key
+              - type
+        cost_forecast:
+          nullable: true
+          example:
+            need set qualifiers:
+              - position
+              - region_key
+              - searcher_key
+    Keywords_2.Methods.Volumes.Get:
+      type: object
+      properties:
+        project_id:
+          title: Id проекта
+          type: integer
+        searcher_key:
+          title: Ключ поисковика
+          type: integer
+        region_key:
+          title: Ключ региона
+          type: integer
+        type:
+          title: Индекс тип частоты
+          type: integer
+        group_id:
+          title: Id группы
+          nullable: true
+          type: integer
+        fields:
+          $ref: '#/components/schemas/fields'
+        orders:
+          $ref: '#/components/schemas/orders'
+        filters:
+          $ref: '#/components/schemas/filters'
+        id:
+          $ref: '#/components/schemas/id'
+        limit:
+          $ref: '#/components/schemas/limit'
+        offset:
+          $ref: '#/components/schemas/offset'
+        fetch_style:
+          $ref: '#/components/schemas/fetch_style'
+      required:
+        - project_id
+        - searcher_key
+        - region_key
+        - type
+        - fields
+        - orders
+        - filters
+        - offset
+      title: Получение частоты проекта или одной группы
+    Models.Groups:
+      properties:
+        COUNT(*):
+          nullable: true
+        id: {}
+        project_id:
+          nullable: true
+        folder_id:
+          nullable: true
+        name:
+          nullable: true
+        'on':
+          nullable: true
+        status:
+          nullable: true
+        ord:
+          nullable: true
+        folder_path:
+          nullable: true
+        folder_ord:
+          nullable: true
+        count_keywords:
+          nullable: true
+        volume:
+          nullable: true
+          example:
+            need set qualifiers:
+              - region_key
+              - searcher_key
+              - type
+        POSITIONS_AVG():
+          nullable: true
+          example:
+            need set qualifiers:
+              - date
+              - project_id
+              - region_index
+        POSITIONS_TOP10():
+          nullable: true
+          example:
+            need set qualifiers:
+              - date
+              - project_id
+              - region_index
+        POSITIONS_VISIBILITY():
+          nullable: true
+          example:
+            need set qualifiers:
+              - date
+              - project_id
+              - region_index
     OpenAPI_2.Methods.Download.Get:
       type: object
       properties:
@@ -16404,6 +16771,110 @@ components:
         - filters
         - offset
       title: Скачивание архива документов в формате PDF
+    Keywords_2.Methods.Volumes.Go.Edit:
+      type: object
+      properties:
+        project_id:
+          title: Id проекта
+          type: integer
+        no_recheck:
+          title: Проверять ли запросы
+          description: |-
+            - 0: проверять
+            - 1: не проверять запросы с актуальной частотой
+            - 2: не проверять запросы с частотой
+          nullable: true
+          type: integer
+        check_all_regions:
+          title: Запустить проверку по всем регионам проекта (только Яндекс и Google)
+          type: boolean
+        target_type:
+          title: Тип объекта фильтрации
+          default: keywords
+          type: string
+        qualifiers:
+          title: Объекты определителей частоты (параметр не обязатален, если check_all_regions = true)
+          description: |-
+            - int qualifier.region_key - ключ региона
+            - enum(0, 1) qualifier.searcher_key - ключ ПС
+            - enum(1, 2, 3, 5, 6) qualifier.type - индекс тип частоты (для Яндекс 1, 2, 3, 5 или 6, для Google всегда 3)
+          nullable: true
+          type: array
+          items:
+            oneOf:
+              - type: string
+              - type: number
+        currency:
+          title: Валюта
+          nullable: true
+          allOf:
+            - $ref: '#/components/schemas/TV.API.Types.Currency'
+        filters:
+          $ref: '#/components/schemas/filters'
+        id:
+          $ref: '#/components/schemas/id'
+      required:
+        - project_id
+        - filters
+      title: Постановка задачи на проверку частоты запросов
+    Keywords_2.Methods.Volumes.Price.Get:
+      type: object
+      properties:
+        project_id:
+          title: Id проекта
+          type: integer
+        no_recheck:
+          title: Проверять ли запросы
+          description: |-
+            - 0: проверять
+            - 1: не проверять запросы с актуальной частотой
+            - 2: не проверять запросы с частотой
+          nullable: true
+          type: integer
+        apply_discount:
+          title: Отображать ли сумму с учетом скидки
+          default: 1
+          type: integer
+        check_all_regions:
+          title: Запустить проверку по всем регионам проекта (только Яндекс и Google)
+          type: boolean
+        target_type:
+          title: Тип объекта фильтрации
+          default: keywords
+          type: string
+        qualifiers:
+          title: Объекты определителей частоты (параметр не обязатален, если check_all_regions = true)
+          description: |-
+            - int qualifier.region_key - ключ региона
+            - enum(0, 1) qualifier.searcher_key - ключ ПС
+            - enum(1, 2, 3, 5, 6) qualifier.type - индекс тип частоты (для Яндекс 1, 2, 3, 5 или 6, для Google всегда 3)
+          nullable: true
+          type: array
+          items:
+            oneOf:
+              - type: string
+              - type: number
+        fields:
+          $ref: '#/components/schemas/fields'
+        orders:
+          $ref: '#/components/schemas/orders'
+        filters:
+          $ref: '#/components/schemas/filters'
+        id:
+          $ref: '#/components/schemas/id'
+        limit:
+          $ref: '#/components/schemas/limit'
+        offset:
+          $ref: '#/components/schemas/offset'
+        fetch_style:
+          $ref: '#/components/schemas/fetch_style'
+      required:
+        - project_id
+        - fields
+        - orders
+        - filters
+        - offset
+      title: Получение стоимости проверки частоты проектов
     Landings_2.Methods.Hr.Feedback.Add:
       type: object
       properties:
