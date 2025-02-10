@@ -11,7 +11,7 @@ export interface components {
          * Id поисковой системы для проверки позиций
          * @enum {integer}
          */
-        "Positions_2.Types.SearcherKey": 0 | 1 | 4 | 5 | 6 | 7 | 8 | 9 | 20 | 21;
+        "Positions_2.Types.SearcherKey": 0 | 1 | 4 | 5 | 7 | 8 | 9 | 20 | 21;
     };
     responses: never;
     parameters: never;
