@@ -3238,6 +3238,106 @@ paths:
             model:
               schema:
                 type: 'null'
+  /add/tickets_2/files/:
+    post:
+      operationId: AddTickets2Files
+      tags:
+        - Tickets_2
+      summary: Загрузка файла на сервер
+      description: Процесс создания сообщения в тикет не завершен
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Tickets_2.Methods.Files.Add'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            type: integer
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
+  /del/tickets_2/files/:
+    post:
+      operationId: DelTickets2Files
+      tags:
+        - Tickets_2
+      summary: Удаление временных файлов для тикета
+      description: Процесс создания поста не завершен
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Tickets_2.Methods.Files.Del'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            type: integer
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
+  /get/tickets_2/files/:
+    post:
+      operationId: GetTickets2Files
+      tags:
+        - Tickets_2
+      summary: Получение списка временных файлов, загруженных для тикета
+      description: Процесс создания поста не завершен
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Tickets_2.Methods.Files.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            type: array
+                            items:
+                              oneOf:
+                                - type: string
+                                - type: number
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
   /add/tickets_2/messages/:
     post:
       operationId: AddTickets2Messages
@@ -3263,6 +3363,37 @@ paths:
                           result:
                             type: integer
                             title: Id добавленного сообщения
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
+  /edit/tickets_2/rate/:
+    post:
+      operationId: EditTickets2Rate
+      tags:
+        - Tickets_2
+      summary: Дать оценку тикету
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Tickets_2.Methods.Rate.Edit'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            type: integer
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
@@ -6909,6 +7040,196 @@ paths:
             model:
               schema:
                 type: 'null'
+  /del/tickets_2/admin/message/:
+    post:
+      operationId: DelTickets2AdminMessage
+      tags:
+        - Tickets_2
+      summary: Удаление ответа в тикете, только для админов
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Tickets_2.Methods.Admin.Message.Del'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            type: integer
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
+  /edit/tickets_2/admin/message/:
+    post:
+      operationId: EditTickets2AdminMessage
+      tags:
+        - Tickets_2
+      summary: Редактирование текста ответа в тикете, только для админов
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Tickets_2.Methods.Admin.Message.Edit'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            type: integer
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
+  /add/tickets_2/admin/templates/:
+    post:
+      operationId: AddTickets2AdminTemplates
+      tags:
+        - Tickets_2
+      summary: Добавление шаблона тикета
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Tickets_2.Methods.Admin.Templates.Add'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            type: integer
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
+  /del/tickets_2/admin/templates/:
+    post:
+      operationId: DelTickets2AdminTemplates
+      tags:
+        - Tickets_2
+      summary: Удаление шаблона
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Tickets_2.Methods.Admin.Templates.Del'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            type: integer
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
+  /edit/tickets_2/admin/templates/:
+    post:
+      operationId: EditTickets2AdminTemplates
+      tags:
+        - Tickets_2
+      summary: Изменение шаблона
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Tickets_2.Methods.Admin.Templates.Edit'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            type: integer
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
+  /get/tickets_2/admin/templates/:
+    post:
+      operationId: GetTickets2AdminTemplates
+      tags:
+        - Tickets_2
+      summary: Получение шаблона тикета
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Tickets_2.Methods.Admin.Templates.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            type: array
+                            items:
+                              oneOf:
+                                - type: string
+                                - type: number
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
   /edit/tickets_2/admin/ticket/:
     post:
       operationId: EditTickets2AdminTicket
@@ -6971,6 +7292,139 @@ paths:
             model:
               schema:
                 type: 'null'
+  /get/tickets_2/admin/user/:
+    post:
+      operationId: GetTickets2AdminUser
+      tags:
+        - Tickets_2
+      summary: Получение инфомрации о пользователе
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Tickets_2.Methods.Admin.User.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            type: array
+                            items:
+                              oneOf:
+                                - type: string
+                                - type: number
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
+  /edit/tickets_2/admin/userId/:
+    post:
+      operationId: EditTickets2AdminUserId
+      tags:
+        - Tickets_2
+      summary: Установка userId для тикетов без userId
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Tickets_2.Methods.Admin.UserId.Edit'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            type: integer
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
+  /get/tickets_2/tickets/adminComment/:
+    post:
+      operationId: GetTickets2TicketsAdminComment
+      tags:
+        - Tickets_2
+      summary: Редактирваоние комменатрий админа
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Tickets_2.Methods.Tickets.AdminComment.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            type: integer
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
+  /get/tickets_2/tickets/info/:
+    post:
+      operationId: GetTickets2TicketsInfo
+      tags:
+        - Tickets_2
+      summary: Получение краткой информации о тикетах
+      description: id последнего непрочитанного тикета, число непрочитанных тикетов
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Tickets_2.Methods.Tickets.Info.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            type: array
+                            items:
+                              oneOf:
+                                - type: string
+                                - type: number
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
   /edit/tickets_2/tickets/setReaded/:
     post:
       operationId: EditTickets2TicketsSetReaded
@@ -6995,6 +7449,36 @@ paths:
                         properties:
                           result:
                             type: integer
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
+  /edit/tickets_2/tickets/writing/:
+    post:
+      operationId: EditTickets2TicketsWriting
+      tags:
+        - Tickets_2
+      summary: Написание текста
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Tickets_2.Methods.Tickets.Writing.Edit'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result: {}
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
@@ -9019,6 +9503,37 @@ paths:
                       - type: object
                         properties:
                           result: {}
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
+  /edit/tickets_2/admin/templates/sort/:
+    post:
+      operationId: EditTickets2AdminTemplatesSort
+      tags:
+        - Tickets_2
+      summary: Изменение сортировки шаблонов
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Tickets_2.Methods.Admin.Templates.Sort.Edit'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            type: integer
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
@@ -13263,6 +13778,32 @@ components:
         - filters
         - offset
       title: Получение привязанных карт пользователя
+    Tickets_2.Methods.Files.Add:
+      type: object
+      properties:
+        filename:
+          title: Имя файла
+          type: string
+      required:
+        - filename
+      title: Загрузка файла на сервер
+      description: Процесс создания сообщения в тикет не завершен
+    Tickets_2.Methods.Files.Del:
+      type: object
+      properties:
+        name:
+          title: Название дирректории
+          type: string
+      required:
+        - name
+      title: Удаление временных файлов для тикета
+      description: Процесс создания поста не завершен
+    Tickets_2.Methods.Files.Get:
+      type: object
+      properties: {}
+      required: []
+      title: Получение списка временных файлов, загруженных для тикета
+      description: Процесс создания поста не завершен
     Tickets_2.Methods.Messages.Add:
       type: object
       properties:
@@ -13279,6 +13820,24 @@ components:
         - ticket_id
         - text
       title: Добавление сообщения к тикиту
+    Tickets_2.Methods.Rate.Edit:
+      type: object
+      properties:
+        id:
+          title: ID тикета
+          type: integer
+        rate:
+          title: Оценка
+          description: Принимает оценку от 1 до 3
+          nullable: true
+          type: integer
+        comment:
+          title: Комментарий
+          nullable: true
+          type: string
+      required:
+        - id
+      title: Дать оценку тикету
     Tickets_2.Types.Tickets.Type:
       type: string
       enum:
@@ -17414,6 +17973,76 @@ components:
         Получение информации об SSL сертификате
         Возваращает объект с параметрами:
         - expire
+    Tickets_2.Methods.Admin.Message.Del:
+      type: object
+      properties:
+        id:
+          title: ID ответа
+          type: integer
+      required:
+        - id
+      title: Удаление ответа в тикете, только для админов
+    Tickets_2.Methods.Admin.Message.Edit:
+      type: object
+      properties:
+        id:
+          title: ID редактируемого поста тикета
+          type: integer
+        text:
+          title: Текст сообщения
+          type: string
+      required:
+        - id
+        - text
+      title: Редактирование текста ответа в тикете, только для админов
+    Tickets_2.Methods.Admin.Templates.Add:
+      type: object
+      properties:
+        name:
+          title: Название
+          type: string
+        text:
+          title: Текст
+          type: string
+      required:
+        - name
+        - text
+      title: Добавление шаблона тикета
+    Tickets_2.Methods.Admin.Templates.Del:
+      type: object
+      properties:
+        id:
+          title: ID шаблона
+          type: integer
+      required:
+        - id
+      title: Удаление шаблона
+    Tickets_2.Methods.Admin.Templates.Edit:
+      type: object
+      properties:
+        id:
+          title: ID шаблона
+          type: integer
+        name:
+          title: Название
+          type: string
+        text:
+          title: Текст
+          type: string
+      required:
+        - id
+        - name
+        - text
+      title: Изменение шаблона
+    Tickets_2.Methods.Admin.Templates.Get:
+      type: object
+      properties:
+        search:
+          title: Текст для поиска
+          nullable: true
+          type: string
+      required: []
+      title: Получение шаблона тикета
     Tickets_2.Methods.Admin.Ticket.Edit:
       type: object
       properties:
@@ -17449,6 +18078,47 @@ components:
       required:
         - filters
       title: Перенос последниего сообщения (до 1 сообщения автора) в новый тикет
+    Tickets_2.Methods.Admin.User.Get:
+      type: object
+      properties:
+        id:
+          title: ID пользователя
+          type: integer
+      required:
+        - id
+      title: Получение инфомрации о пользователе
+    Tickets_2.Methods.Admin.UserId.Edit:
+      type: object
+      properties:
+        id:
+          title: ID тикета
+          type: integer
+        user_id:
+          title: ID юзера для установки
+          type: integer
+      required:
+        - id
+        - user_id
+      title: Установка userId для тикетов без userId
+    Tickets_2.Methods.Tickets.AdminComment.Get:
+      type: object
+      properties:
+        id:
+          title: ID тикета
+          type: integer
+        comment:
+          title: Комментарий
+          nullable: true
+          type: string
+      required:
+        - id
+      title: Редактирваоние комменатрий админа
+    Tickets_2.Methods.Tickets.Info.Get:
+      type: object
+      properties: {}
+      required: []
+      title: Получение краткой информации о тикетах
+      description: id последнего непрочитанного тикета, число непрочитанных тикетов
     Tickets_2.Methods.Tickets.SetReaded.Edit:
       type: object
       properties:
@@ -17459,6 +18129,23 @@ components:
       required:
         - filters
       title: Пометка тикета как "прочитанный" для автора тикета или админов
+    Tickets_2.Methods.Tickets.Writing.Edit:
+      type: object
+      properties:
+        id:
+          title: ID тикета
+          type: integer
+        text:
+          title: Текст
+          description: |-
+            text = '' - отмена написания
+
+            text = null - написания со скрытым содержимым (без текста)
+          nullable: true
+          type: string
+      required:
+        - id
+      title: Написание текста
     Urls_2.Methods.Import.RecognizeLinkSitemapXml.Get:
       type: object
       properties:
@@ -18730,6 +19417,16 @@ components:
         - regions_indexes
         - filters
       title: Настройка сортировки регионов
+    Tickets_2.Methods.Admin.Templates.Sort.Edit:
+      type: object
+      properties:
+        ids:
+          title: ID шаблонов
+          allOf:
+            - $ref: '#/components/schemas/TV.API.Types.IntArray'
+      required:
+        - ids
+      title: Изменение сортировки шаблонов
     Admin_2.Methods.Actions.Positions.History.Copy.Add:
       type: object
       properties:

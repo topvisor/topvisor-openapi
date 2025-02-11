@@ -1,0 +1,36 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Tickets_2.Methods.Rate.Edit",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Tickets_2.Methods.Rate.Edit": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "title": "ID тикета",
+                        "type": "integer"
+                    },
+                    "rate": {
+                        "title": "Оценка",
+                        "description": "Принимает оценку от 1 до 3",
+                        "nullable": true,
+                        "type": "integer"
+                    },
+                    "comment": {
+                        "title": "Комментарий",
+                        "nullable": true,
+                        "type": "string"
+                    }
+                },
+                "required": [
+                    "id"
+                ],
+                "title": "Дать оценку тикету"
+            }
+        }
+    }
+}

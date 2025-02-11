@@ -1,0 +1,19 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Tickets_2.Methods.Files.Get",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Tickets_2.Methods.Files.Get": {
+                "type": "object",
+                "properties": {},
+                "required": [],
+                "title": "Получение списка временных файлов, загруженных для тикета",
+                "description": "Процесс создания поста не завершен"
+            }
+        }
+    }
+}
