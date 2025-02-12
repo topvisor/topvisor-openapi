@@ -7358,9 +7358,9 @@ paths:
             model:
               schema:
                 type: 'null'
-  /get/tickets_2/tickets/adminComment/:
+  /edit/tickets_2/tickets/adminComment/:
     post:
-      operationId: GetTickets2TicketsAdminComment
+      operationId: EditTickets2TicketsAdminComment
       tags:
         - Tickets_2
       summary: Редактирваоние комменатрий админа
@@ -7368,7 +7368,7 @@ paths:
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/Tickets_2.Methods.Tickets.AdminComment.Get'
+              $ref: '#/components/schemas/Tickets_2.Methods.Tickets.AdminComment.Edit'
         required: true
       responses:
         '200':
@@ -18100,7 +18100,7 @@ components:
         - id
         - user_id
       title: Установка userId для тикетов без userId
-    Tickets_2.Methods.Tickets.AdminComment.Get:
+    Tickets_2.Methods.Tickets.AdminComment.Edit:
       type: object
       properties:
         id:

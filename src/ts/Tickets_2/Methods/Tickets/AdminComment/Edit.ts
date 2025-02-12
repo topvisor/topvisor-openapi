@@ -8,7 +8,7 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         /** Редактирваоние комменатрий админа */
-        "Tickets_2.Methods.Tickets.AdminComment.Get": {
+        "Tickets_2.Methods.Tickets.AdminComment.Edit": {
             /** ID тикета */
             id: number;
             /** Комментарий */

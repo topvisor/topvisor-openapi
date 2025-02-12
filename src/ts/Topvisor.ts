@@ -3893,7 +3893,7 @@ export interface paths {
         trace?: never;
     };  
     /** Редактирваоние комменатрий админа */
-    "/get/tickets_2/tickets/adminComment/": {
+    "/edit/tickets_2/tickets/adminComment/": {
         parameters: {
             query?: never;
             header?: never;
@@ -3902,7 +3902,7 @@ export interface paths {
         };
         get?: never;
         put?: never;
-        post: operations["GetTickets2TicketsAdminComment"];
+        post: operations["EditTickets2TicketsAdminComment"];
         delete?: never;
         options?: never;
         head?: never;
@@ -10844,7 +10844,7 @@ export interface operations {
             };
         };
     };
-    GetTickets2TicketsAdminComment: {
+    EditTickets2TicketsAdminComment: {
         parameters: {
             query?: never;
             header?: never;
@@ -10853,7 +10853,7 @@ export interface operations {
         };
         requestBody: {
             content: {
-                "application/json": import('./Tickets_2/Methods/Tickets/AdminComment/Get.ts').components['schemas']['Tickets_2.Methods.Tickets.AdminComment.Get'];
+                "application/json": import('./Tickets_2/Methods/Tickets/AdminComment/Edit.ts').components['schemas']['Tickets_2.Methods.Tickets.AdminComment.Edit'];
             };
         };
         responses: {

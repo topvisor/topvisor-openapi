@@ -13416,9 +13416,9 @@
                 }
             }
         },
-        "/get/tickets_2/tickets/adminComment/": {
+        "/edit/tickets_2/tickets/adminComment/": {
             "post": {
-                "operationId": "GetTickets2TicketsAdminComment",
+                "operationId": "EditTickets2TicketsAdminComment",
                 "tags": [
                     "Tickets_2"
                 ],
@@ -13427,7 +13427,7 @@
                     "content": {
                         "application/json": {
                             "schema": {
-                                "$ref": "Tickets_2/Methods/Tickets/AdminComment/Get.json#/components/schemas/Tickets_2.Methods.Tickets.AdminComment.Get"
+                                "$ref": "Tickets_2/Methods/Tickets/AdminComment/Edit.json#/components/schemas/Tickets_2.Methods.Tickets.AdminComment.Edit"
                             }
                         }
                     },

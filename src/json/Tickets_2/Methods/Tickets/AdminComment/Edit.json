@@ -1,13 +1,13 @@
 {
     "openapi": "3.0.0",
     "info": {
-        "title": "Topvisor/Tickets_2.Methods.Tickets.AdminComment.Get",
+        "title": "Topvisor/Tickets_2.Methods.Tickets.AdminComment.Edit",
         "version": "2.0.0"
     },
     "paths": {},
     "components": {
         "schemas": {
-            "Tickets_2.Methods.Tickets.AdminComment.Get": {
+            "Tickets_2.Methods.Tickets.AdminComment.Edit": {
                 "type": "object",
                 "properties": {
                     "id": {
