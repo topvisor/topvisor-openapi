@@ -14607,18 +14607,18 @@ components:
     Admin_2.Methods.Actions.Telegram.Add:
       type: object
       properties:
-        bot_name:
+        botName:
           title: Название бота
           type: string
-        chat_id:
+        chatId:
           title: ID чата для добавления
           type: string
         test:
           title: Являеется ли запуск - тестом
           type: boolean
       required:
-        - bot_name
-        - chat_id
+        - botName
+        - chatId
         - test
       title: Добавление бота в телеграм канал
     Admin_2.Methods.Affiliate.ReferralProgramStats.Get:

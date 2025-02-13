@@ -10,11 +10,11 @@
             "Admin_2.Methods.Actions.Telegram.Add": {
                 "type": "object",
                 "properties": {
-                    "bot_name": {
+                    "botName": {
                         "title": "Название бота",
                         "type": "string"
                     },
-                    "chat_id": {
+                    "chatId": {
                         "title": "ID чата для добавления",
                         "type": "string"
                     },
@@ -24,8 +24,8 @@
                     }
                 },
                 "required": [
-                    "bot_name",
-                    "chat_id",
+                    "botName",
+                    "chatId",
                     "test"
                 ],
                 "title": "Добавление бота в телеграм канал"
