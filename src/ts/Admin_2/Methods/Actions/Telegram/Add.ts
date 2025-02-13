@@ -10,9 +10,9 @@ export interface components {
         /** Добавление бота в телеграм канал */
         "Admin_2.Methods.Actions.Telegram.Add": {
             /** Название бота */
-            botName: string;
+            bot_name: string;
             /** ID чата для добавления */
-            chatId: string;
+            chat_id: string;
             /** Являеется ли запуск - тестом */
             test: boolean;
         };
