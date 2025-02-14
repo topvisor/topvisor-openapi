@@ -46,6 +46,9 @@
                     "author_alias": {
                         "nullable": true
                     },
+                    "author_count_pages": {
+                        "nullable": true
+                    },
                     "like": {
                         "nullable": true
                     }

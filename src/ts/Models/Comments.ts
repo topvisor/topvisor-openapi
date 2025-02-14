@@ -21,6 +21,7 @@ export interface components {
             user_name?: any;
             user_avatar?: any;
             author_alias?: any;
+            author_count_pages?: any;
             like?: any;
         };
     };
