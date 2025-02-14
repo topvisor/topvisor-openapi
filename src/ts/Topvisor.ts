@@ -4171,23 +4171,6 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Переотправка уведомление о поступивших платежах */
-    "/add/admin_2/actions/payments/notification/": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        get?: never;
-        put?: never;
-        post: operations["AddAdmin2ActionsPaymentsNotification"];
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
-    };  
     /** Импортирование историй позиций из CSV */
     "/add/admin_2/actions/positions/history/": {
         parameters: {
@@ -11243,32 +11226,6 @@ export interface operations {
         requestBody: {
             content: {
                 "application/json": import('./Admin_2/Methods/Actions/Payments/Diadoc/Add.ts').components['schemas']['Admin_2.Methods.Actions.Payments.Diadoc.Add'];
-            };
-        };
-        responses: {
-            200: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/json": ({
-                        result: import('./Admin_2/Objects/Actions/Result.ts').components['schemas']['Admin_2.Objects.Actions.Result'];
-                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
-                };
-            };
-        };
-    };
-    AddAdmin2ActionsPaymentsNotification: {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        requestBody: {
-            content: {
-                "application/json": import('./Admin_2/Methods/Actions/Payments/Notification/Add.ts').components['schemas']['Admin_2.Methods.Actions.Payments.Notification.Add'];
             };
         };
         responses: {

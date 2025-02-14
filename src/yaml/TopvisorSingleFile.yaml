@@ -7850,37 +7850,6 @@ paths:
             model:
               schema:
                 type: 'null'
-  /add/admin_2/actions/payments/notification/:
-    post:
-      operationId: AddAdmin2ActionsPaymentsNotification
-      tags:
-        - Admin_2
-      summary: Переотправка уведомление о поступивших платежах
-      requestBody:
-        content:
-          application/json:
-            schema:
-              $ref: '#/components/schemas/Admin_2.Methods.Actions.Payments.Notification.Add'
-        required: true
-      responses:
-        '200':
-          description: ''
-          content:
-            application/json:
-              schema:
-                oneOf:
-                  - allOf:
-                      - type: object
-                        properties:
-                          result:
-                            $ref: '#/components/schemas/Admin_2.Objects.Actions.Result'
-                        required:
-                          - result
-                      - $ref: '#/components/schemas/ResponseSuccess'
-                  - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /add/admin_2/actions/positions/history/:
     post:
       operationId: AddAdmin2ActionsPositionsHistory
@@ -18375,15 +18344,6 @@ components:
         - userId
         - test
       title: Отправка акты в диадок
-    Admin_2.Methods.Actions.Payments.Notification.Add:
-      type: object
-      properties:
-        test:
-          title: Являеется ли запуск - тестом
-          type: boolean
-      required:
-        - test
-      title: Переотправка уведомление о поступивших платежах
     Admin_2.Methods.Actions.Positions.History.Add:
       type: object
       properties:
