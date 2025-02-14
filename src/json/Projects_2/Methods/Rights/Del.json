@@ -19,7 +19,8 @@
                         ]
                     },
                     "projects_ids": {
-                        "title": "Вместо project_ids можно укзывать project_id",
+                        "title": "ID проектов",
+                        "description": "Вместо project_ids можно укзывать project_id",
                         "nullable": true,
                         "type": "array",
                         "items": {
@@ -34,7 +35,8 @@
                         }
                     },
                     "project_id": {
-                        "title": "ID проекта\nВместо project_id можно укзывать projects_ids",
+                        "title": "ID проекта",
+                        "description": "Вместо project_id можно укзывать projects_ids",
                         "nullable": true,
                         "type": "integer"
                     }
