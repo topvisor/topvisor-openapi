@@ -19,19 +19,16 @@ export interface components {
              */
             region_lang?: string | null;
             /** Устройство региона */
-            region_device?: import('../../../Types/RegionDevice.ts').components['schemas']['Positions_2.Types.RegionDevice'];
+            region_device?: import('../../../Types/RegionDevice.ts').components['schemas']['Positions_2.Types.RegionDevice'] | null;
             /**
              * Глубина региона
              * @description - 1-3 для Яндекса (ПК)
              *     - 1-10 для Google
              *     - 1-3 для GooglePlay
-             * @default 1
              */
-            region_depth: number;
+            region_depth?: number | null;
             /** Включен */
-            enabled?: boolean;
-            /** Ключ региона */
-            region_key?: number | null;
+            enabled?: boolean | null;
             filters: import('../../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['filters'];
             id?: import('../../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['id'];
         };

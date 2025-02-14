@@ -13203,14 +13203,14 @@ components:
       type: integer
       enum:
         - 0
+        - 20
+        - 21
         - 1
         - 4
         - 5
         - 7
         - 8
         - 9
-        - 20
-        - 21
       title: Id поисковой системы для проверки позиций
     Positions_2.Methods.Searchers.Add:
       type: object
@@ -17583,6 +17583,7 @@ components:
           type: string
         region_device:
           title: Устройство региона
+          nullable: true
           allOf:
             - $ref: '#/components/schemas/Positions_2.Types.RegionDevice'
         region_depth:
@@ -17591,15 +17592,12 @@ components:
             - 1-3 для Яндекса (ПК)
             - 1-10 для Google
             - 1-3 для GooglePlay
-          default: 1
+          nullable: true
           type: integer
         enabled:
           title: Включен
-          type: boolean
-        region_key:
-          title: Ключ региона
           nullable: true
-          type: integer
+          type: boolean
         filters:
           $ref: '#/components/schemas/filters'
         id:
