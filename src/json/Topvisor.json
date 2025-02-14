@@ -17513,6 +17513,10 @@
             "description": "models"
         },
         {
+            "name": "Oauth_2",
+            "description": "oauth_2"
+        },
+        {
             "name": "Openapi_2",
             "description": "openapi_2"
         },
