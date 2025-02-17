@@ -16,12 +16,6 @@ export interface components {
             readonly Enter_promocode: "Enter promocode";
             /** @constant */
             readonly Promocode: "Promocode";
-            /** @constant */
-            readonly By_pressing_sign_up_you_accept: "By pressing Sign up you accept";
-            /** @constant */
-            readonly Terms_and_conditions: "Terms and Conditions";
-            /** @constant */
-            readonly Privacy_policy: "Privacy Policy";
         };
     };
     responses: never;

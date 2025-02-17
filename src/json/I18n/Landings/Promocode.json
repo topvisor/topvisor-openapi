@@ -25,28 +25,13 @@
                     "Promocode": {
                         "const": "Promocode",
                         "readOnly": true
-                    },
-                    "By_pressing_sign_up_you_accept": {
-                        "const": "By pressing Sign up you accept",
-                        "readOnly": true
-                    },
-                    "Terms_and_conditions": {
-                        "const": "Terms and Conditions",
-                        "readOnly": true
-                    },
-                    "Privacy_policy": {
-                        "const": "Privacy Policy",
-                        "readOnly": true
                     }
                 },
                 "required": [
                     "Description",
                     "OpenGraph_title",
                     "Enter_promocode",
-                    "Promocode",
-                    "By_pressing_sign_up_you_accept",
-                    "Terms_and_conditions",
-                    "Privacy_policy"
+                    "Promocode"
                 ]
             }
         }
