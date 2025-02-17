@@ -470,6 +470,8 @@ export interface components {
             readonly Spent: "Spent";
             /** @constant */
             readonly Spend_limit: "Spend limit";
+            /** @constant */
+            readonly Change_url_no_available: "The project URL must match the previously configured site\nThe URL cannot be changed to an address leading to another resource.";
         };
     };
     responses: never;

@@ -933,6 +933,10 @@
                     "Spend_limit": {
                         "const": "Spend limit",
                         "readOnly": true
+                    },
+                    "Change_url_no_available": {
+                        "const": "The project URL must match the previously configured site\nThe URL cannot be changed to an address leading to another resource.",
+                        "readOnly": true
                     }
                 },
                 "required": [
@@ -1166,7 +1170,8 @@
                     "URL_count",
                     "Username",
                     "Spent",
-                    "Spend_limit"
+                    "Spend_limit",
+                    "Change_url_no_available"
                 ]
             }
         }
