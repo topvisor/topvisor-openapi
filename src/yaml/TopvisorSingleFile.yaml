@@ -13436,12 +13436,6 @@ components:
         - urls
       title: Добавление конкурента
       description: 'Ограничения: не более Projects_2\Competitors::MAX_COMPETITORS_PER_PROJECT конкурентов в одном проекте'
-    TV.API.Types.UrlArray:
-      type: array
-      items:
-        $ref: '#/components/schemas/TV.API.Types.Url'
-      title: 'Тип массива: Url[]'
-      description: '@see Url'
     Projects_2.Methods.Competitors.Del:
       type: object
       properties:
@@ -13457,7 +13451,7 @@ components:
           title: Url конкурентов
           nullable: true
           allOf:
-            - $ref: '#/components/schemas/TV.API.Types.UrlArray'
+            - $ref: '#/components/schemas/TV.API.Types.UrlShortArray'
       required:
         - project_id
       title: Удаление конкурентов
@@ -14069,6 +14063,12 @@ components:
         - offset
         - project_id
       title: Экспорт urls в определенном формате
+    TV.API.Types.UrlArray:
+      type: array
+      items:
+        $ref: '#/components/schemas/TV.API.Types.Url'
+      title: 'Тип массива: Url[]'
+      description: '@see Url'
     Urls_2.Methods.Import.Add:
       type: object
       properties:
@@ -17881,7 +17881,7 @@ components:
         url:
           title: Новая ссылка
           allOf:
-            - $ref: '#/components/schemas/TV.API.Types.Url'
+            - $ref: '#/components/schemas/TV.API.Types.UrlShort'
       required:
         - id
         - url

@@ -28,7 +28,7 @@
                         "nullable": true,
                         "allOf": [
                             {
-                                "$ref": "../../../TV/API/Types/UrlArray.json#/components/schemas/TV.API.Types.UrlArray"
+                                "$ref": "../../../TV/API/Types/UrlShortArray.json#/components/schemas/TV.API.Types.UrlShortArray"
                             }
                         ]
                     }

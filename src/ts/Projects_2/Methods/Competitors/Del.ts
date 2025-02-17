@@ -17,7 +17,7 @@ export interface components {
             /** ID конкурентов */
             ids?: import('../../../TV/API/Types/IntArray.ts').components['schemas']['TV.API.Types.IntArray'] | null;
             /** Url конкурентов */
-            urls?: import('../../../TV/API/Types/UrlArray.ts').components['schemas']['TV.API.Types.UrlArray'] | null;
+            urls?: import('../../../TV/API/Types/UrlShortArray.ts').components['schemas']['TV.API.Types.UrlShortArray'] | null;
         };
     };
     responses: never;

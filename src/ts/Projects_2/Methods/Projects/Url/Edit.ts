@@ -12,7 +12,7 @@ export interface components {
             /** ID проекта */
             id: number;
             /** Новая ссылка */
-            url: import('../../../../TV/API/Types/Url.ts').components['schemas']['TV.API.Types.Url'];
+            url: import('../../../../TV/API/Types/UrlShort.ts').components['schemas']['TV.API.Types.UrlShort'];
         };
     };
     responses: never;
