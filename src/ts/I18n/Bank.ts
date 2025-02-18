@@ -269,6 +269,8 @@ export interface components {
             /** @constant */
             readonly System_name_lp: "LeadPay (cards of Belarusian banks)";
             /** @constant */
+            readonly System_name_pr: "Prodamus (cards of Belarusian banks)";
+            /** @constant */
             readonly System_name_ppg: "PayPro Global (cards of non-Russian banks, PayPal, Wire Transfer. All countries except Belarus)";
             /** @constant */
             readonly Your_contract_expires_notice: "Contract expiration notice";

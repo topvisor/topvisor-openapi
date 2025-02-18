@@ -9965,6 +9965,7 @@ components:
         - pt
         - lp
         - ppg
+        - pr
     Payments_2.Types.Country:
       type: string
       enum:

@@ -530,6 +530,10 @@
                         "const": "LeadPay (cards of Belarusian banks)",
                         "readOnly": true
                     },
+                    "System_name_pr": {
+                        "const": "Prodamus (cards of Belarusian banks)",
+                        "readOnly": true
+                    },
                     "System_name_ppg": {
                         "const": "PayPro Global (cards of non-Russian banks, PayPal, Wire Transfer. All countries except Belarus)",
                         "readOnly": true
@@ -1222,6 +1226,7 @@
                     "System_name_pd_invoice",
                     "System_name_sb",
                     "System_name_lp",
+                    "System_name_pr",
                     "System_name_ppg",
                     "Your_contract_expires_notice",
                     "Earlier_contacts_closed_notice",
