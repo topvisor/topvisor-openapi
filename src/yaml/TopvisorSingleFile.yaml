@@ -1970,6 +1970,236 @@ paths:
               schema:
                 $ref: '#/components/schemas/Models.Content.Authors'
                 description: Only for typescript, does not contain real data
+  /abstactregular/content_2/redirects/:
+    post:
+      operationId: AbstactregularContent2Redirects
+      tags:
+        - Content_2
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Content_2.Methods.Redirects.AbstactRegular'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            title: |-
+                              Запрещено делать публичной, это приведет к поломке preCall()
+
+                              В описании к функции отвечать на вопрос: `Что является результатом запроса?` Например: `Список пользователей`
+
+                              TODO: Автоматической проверки нет, не менять protected
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
+  /add/content_2/redirects/:
+    post:
+      operationId: AddContent2Redirects
+      tags:
+        - Content_2
+      summary: Добавление правила редиректа (для админов)
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Content_2.Methods.Redirects.Add'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            type: integer
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
+  /del/content_2/redirects/:
+    post:
+      operationId: DelContent2Redirects
+      tags:
+        - Content_2
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Content_2.Methods.Redirects.Del'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            type: integer
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
+  /edit/content_2/redirects/:
+    post:
+      operationId: EditContent2Redirects
+      tags:
+        - Content_2
+      summary: Изменение правила редиректа (для админов)
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Content_2.Methods.Redirects.Edit'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            type: integer
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
+  /get/content_2/redirects/:
+    post:
+      operationId: GetContent2Redirects
+      tags:
+        - Content_2
+      summary: Получение списка правил (для админов)
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Content_2.Methods.Redirects.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            type: array
+                            items:
+                              $ref: '#/components/schemas/Models.ContentsRedirects'
+                              description: Only for typescript, does not contain real data
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                      - $ref: '#/components/schemas/Pagination'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                $ref: '#/components/schemas/Models.ContentsRedirects'
+                description: Only for typescript, does not contain real data
+  /get/content_2/rss/:
+    post:
+      operationId: GetContent2Rss
+      tags:
+        - Content_2
+      summary: Получение RSS раздела сайта
+      description: 'Для выборки страниц используется модель: Pages'
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Content_2.Methods.Rss.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            type: string
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                      - $ref: '#/components/schemas/Pagination'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                $ref: '#/components/schemas/Models.Pages'
+                description: Only for typescript, does not contain real data
+  /get/content_2/sitemap/:
+    post:
+      operationId: GetContent2Sitemap
+      tags:
+        - Content_2
+      summary: Получение xml карты сайта
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Content_2.Methods.Sitemap.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            type: string
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                      - $ref: '#/components/schemas/Pagination'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                $ref: '#/components/schemas/Models.Pages'
+                description: Only for typescript, does not contain real data
   /add/cron_2/commands/:
     post:
       operationId: AddCron2Commands
@@ -6024,6 +6254,253 @@ paths:
               schema:
                 type: string
                 format: binary
+  /get/content_2/journal/articles/:
+    post:
+      operationId: GetContent2JournalArticles
+      tags:
+        - Content_2
+      summary: Получение статьи
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Content_2.Methods.Journal.Articles.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            type: array
+                            items:
+                              $ref: '#/components/schemas/Models.Pages'
+                              description: Only for typescript, does not contain real data
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                      - $ref: '#/components/schemas/Pagination'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                $ref: '#/components/schemas/Models.Pages'
+                description: Only for typescript, does not contain real data
+  /get/content_2/journal/bookmarksAuthors/:
+    post:
+      operationId: GetContent2JournalBookmarksAuthors
+      tags:
+        - Content_2
+      summary: Получение закладок авторов
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Content_2.Methods.Journal.BookmarksAuthors.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            type: array
+                            items:
+                              $ref: '#/components/schemas/Models.Pages'
+                              description: Only for typescript, does not contain real data
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                      - $ref: '#/components/schemas/Pagination'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                $ref: '#/components/schemas/Models.Pages'
+                description: Only for typescript, does not contain real data
+  /get/content_2/journal/bookmarks/:
+    post:
+      operationId: GetContent2JournalBookmarks
+      tags:
+        - Content_2
+      summary: Получение закладок
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Content_2.Methods.Journal.Bookmarks.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            type: array
+                            items:
+                              $ref: '#/components/schemas/Models.Pages'
+                              description: Only for typescript, does not contain real data
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                      - $ref: '#/components/schemas/Pagination'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                $ref: '#/components/schemas/Models.Pages'
+                description: Only for typescript, does not contain real data
+  /get/content_2/journal/course/:
+    post:
+      operationId: GetContent2JournalCourse
+      tags:
+        - Content_2
+      summary: Получение инофрмации о курсах
+      description: Параметры выборки основаны на модели Models\Pages
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Content_2.Methods.Journal.Course.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            type: array
+                            items:
+                              $ref: '#/components/schemas/Models.Pages'
+                              description: Only for typescript, does not contain real data
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                      - $ref: '#/components/schemas/Pagination'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                $ref: '#/components/schemas/Models.Pages'
+                description: Only for typescript, does not contain real data
+  /get/content_2/journal/rubrics/:
+    post:
+      operationId: GetContent2JournalRubrics
+      tags:
+        - Content_2
+      summary: Получение рубрики
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Content_2.Methods.Journal.Rubrics.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            type: array
+                            items:
+                              $ref: '#/components/schemas/Models.Pages'
+                              description: Only for typescript, does not contain real data
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                      - $ref: '#/components/schemas/Pagination'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                $ref: '#/components/schemas/Models.Pages'
+                description: Only for typescript, does not contain real data
+  /edit/content_2/journal/subscribe/:
+    post:
+      operationId: EditContent2JournalSubscribe
+      tags:
+        - Content_2
+      summary: Изменение состояния подписки на рассылку журнала
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Content_2.Methods.Journal.Subscribe.Edit'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            type: integer
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
+  /get/content_2/support/menu/:
+    post:
+      operationId: GetContent2SupportMenu
+      tags:
+        - Content_2
+      summary: Получение меню справки
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Content_2.Methods.Support.Menu.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            type: array
+                            items:
+                              oneOf:
+                                - type: string
+                                - type: number
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
   /edit/keywords_2/volumes/go/:
     post:
       operationId: EditKeywords2VolumesGo
@@ -9399,6 +9876,221 @@ paths:
             model:
               schema:
                 type: 'null'
+  /add/content_2/journal/course/certificates/:
+    post:
+      operationId: AddContent2JournalCourseCertificates
+      tags:
+        - Content_2
+      summary: Создание сертификата
+      description: Можно создавать только для пройденных курсов
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Content_2.Methods.Journal.Course.Certificates.Add'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            type: integer
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                $ref: '#/components/schemas/Models.Pages'
+                description: Only for typescript, does not contain real data
+  /edit/content_2/journal/course/certificates/:
+    post:
+      operationId: EditContent2JournalCourseCertificates
+      tags:
+        - Content_2
+      summary: Изменение сертификата
+      description: Можно менять только имя, если оно не указано
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Content_2.Methods.Journal.Course.Certificates.Edit'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            type: integer
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
+  /get/content_2/journal/course/certificates/:
+    post:
+      operationId: GetContent2JournalCourseCertificates
+      tags:
+        - Content_2
+      summary: Получение своего сертификата
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Content_2.Methods.Journal.Course.Certificates.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            type: array
+                            items:
+                              oneOf:
+                                - type: string
+                                - type: number
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
+  /get/content_2/journal/course/chapters/:
+    post:
+      operationId: GetContent2JournalCourseChapters
+      tags:
+        - Content_2
+      summary: Получение модулей курса
+      description: |-
+        Дополнительные поля:
+         - lessons - см. includeLessons()
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Content_2.Methods.Journal.Course.Chapters.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            type: array
+                            items:
+                              $ref: '#/components/schemas/Models.Pages'
+                              description: Only for typescript, does not contain real data
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                      - $ref: '#/components/schemas/Pagination'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                $ref: '#/components/schemas/Models.Pages'
+                description: Only for typescript, does not contain real data
+  /get/content_2/journal/dictionary/articlesByLetter/:
+    post:
+      operationId: GetContent2JournalDictionaryArticlesByLetter
+      tags:
+        - Content_2
+      summary: |-
+        Получение списка страниц по буквам для модуля SEO словарь
+        Результат функции кешируется
+      description: '@return array<string, array{url: string, h1: string}> - массив с ключом "Буква" и значением массив страниц Pages'
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Content_2.Methods.Journal.Dictionary.ArticlesByLetter.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            type: array
+                            items:
+                              $ref: '#/components/schemas/Models.Pages'
+                              description: Only for typescript, does not contain real data
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                      - $ref: '#/components/schemas/Pagination'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                $ref: '#/components/schemas/Models.Pages'
+                description: Only for typescript, does not contain real data
+  /get/content_2/journal/dictionary/wordOfday/:
+    post:
+      operationId: GetContent2JournalDictionaryWordOfday
+      tags:
+        - Content_2
+      summary: Получение стаьи для "Слово дня" в модуле SEO словарь
+      description: '@return (array<string, array{url: string, menu_name: string, description: string, count_views: integer}> | null)'
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Content_2.Methods.Journal.Dictionary.WordOfday.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            type: array
+                            items:
+                              $ref: '#/components/schemas/Models.Pages'
+                              description: Only for typescript, does not contain real data
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                      - $ref: '#/components/schemas/Pagination'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                $ref: '#/components/schemas/Models.Pages'
+                description: Only for typescript, does not contain real data
   /get/positions_2/searchers/regions/export/:
     post:
       operationId: GetPositions2SearchersRegionsExport
@@ -9536,6 +10228,71 @@ paths:
                         properties:
                           result:
                             $ref: '#/components/schemas/Admin_2.Objects.Actions.Result'
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
+  /get/content_2/journal/course/certificates/byID/:
+    post:
+      operationId: GetContent2JournalCourseCertificatesByID
+      tags:
+        - Content_2
+      summary: Получение сертификата по id
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Content_2.Methods.Journal.Course.Certificates.ByID.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            type: array
+                            items:
+                              oneOf:
+                                - type: string
+                                - type: number
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
+  /get/content_2/journal/course/certificates/image/:
+    post:
+      operationId: GetContent2JournalCourseCertificatesImage
+      tags:
+        - Content_2
+      summary: Получение сертификата в виде изображения
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Content_2.Methods.Journal.Course.Certificates.Image.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result: {}
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
@@ -12458,6 +13215,307 @@ components:
         bookmark_author:
           type: integer
           nullable: true
+    Content_2.Methods.Redirects.AbstactRegular:
+      type: object
+      properties:
+        site:
+          title: Сайт
+          description: |-
+            * topvisor
+            * thundo
+          type: string
+        subdomain:
+          title: С поддомена
+          description: |-
+            * 'journal'
+            * ''
+          type: string
+        path_mask:
+          title: с пути (маска, * - любой символ)
+          type: string
+      required:
+        - site
+        - subdomain
+        - path_mask
+    Content_2.Methods.Redirects.Add:
+      type: object
+      properties:
+        redirect_path:
+          title: На путь
+          type: string
+        redirect_subdomain:
+          title: На поддомен
+          type: string
+        site:
+          title: Сайт
+          description: |-
+            * topvisor
+            * thundo
+          type: string
+        subdomain:
+          title: С поддомена
+          description: |-
+            * 'journal'
+            * ''
+          type: string
+        path_mask:
+          title: с пути (маска, * - любой символ)
+          type: string
+      required:
+        - redirect_path
+        - redirect_subdomain
+        - site
+        - subdomain
+        - path_mask
+      title: Добавление правила редиректа (для админов)
+    Content_2.Methods.Redirects.Del:
+      type: object
+      properties:
+        site:
+          title: Сайт
+          description: |-
+            * topvisor
+            * thundo
+          type: string
+        subdomain:
+          title: С поддомена
+          description: |-
+            * 'journal'
+            * ''
+          type: string
+        path_mask:
+          title: с пути (маска, * - любой символ)
+          type: string
+      required:
+        - site
+        - subdomain
+        - path_mask
+    Content_2.Methods.Redirects.Edit:
+      type: object
+      properties:
+        redirect_path:
+          title: На путь
+          type: string
+        redirect_subdomain:
+          title: На поддомен
+          type: string
+        site:
+          title: Сайт
+          description: |-
+            * topvisor
+            * thundo
+          type: string
+        subdomain:
+          title: С поддомена
+          description: |-
+            * 'journal'
+            * ''
+          type: string
+        path_mask:
+          title: с пути (маска, * - любой символ)
+          type: string
+      required:
+        - redirect_path
+        - redirect_subdomain
+        - site
+        - subdomain
+        - path_mask
+      title: Изменение правила редиректа (для админов)
+    Content_2.Methods.Redirects.Get:
+      type: object
+      properties:
+        fields:
+          $ref: '#/components/schemas/fields'
+        orders:
+          $ref: '#/components/schemas/orders'
+        filters:
+          $ref: '#/components/schemas/filters'
+        id:
+          $ref: '#/components/schemas/id'
+        limit:
+          $ref: '#/components/schemas/limit'
+        offset:
+          $ref: '#/components/schemas/offset'
+        fetch_style:
+          $ref: '#/components/schemas/fetch_style'
+      required:
+        - fields
+        - orders
+        - filters
+        - offset
+      title: Получение списка правил (для админов)
+    Models.ContentsRedirects:
+      properties:
+        PATH_MASK():
+          nullable: true
+        PATH_MASK_SLASHES_COUNT():
+          nullable: true
+        site:
+          nullable: true
+        subdomain:
+          nullable: true
+        redirect_subdomain:
+          nullable: true
+        redirect_path:
+          nullable: true
+    Content_2.Methods.Rss.Get:
+      type: object
+      properties:
+        url:
+          title: Страницы раздела сайта в формате XML RSS
+          default: /
+          nullable: true
+          type: string
+        fields:
+          $ref: '#/components/schemas/fields'
+        orders:
+          $ref: '#/components/schemas/orders'
+        filters:
+          $ref: '#/components/schemas/filters'
+        id:
+          $ref: '#/components/schemas/id'
+        limit:
+          $ref: '#/components/schemas/limit'
+        offset:
+          $ref: '#/components/schemas/offset'
+        fetch_style:
+          $ref: '#/components/schemas/fetch_style'
+      required:
+        - fields
+        - orders
+        - filters
+        - offset
+      title: Получение RSS раздела сайта
+      description: 'Для выборки страниц используется модель: Pages'
+    Models.Pages:
+      properties:
+        COUNT(*):
+          nullable: true
+        RAND():
+          nullable: true
+        DURATION():
+          nullable: true
+        WORD_COUNT():
+          nullable: true
+        HTML_RAW():
+          nullable: true
+        AUTHOR_LIKES():
+          nullable: true
+        AUTHOR_VIEWS():
+          nullable: true
+        AUTHOR_UNIQUE_VIEWS():
+          nullable: true
+        USERS_IDS():
+          nullable: true
+        site:
+          nullable: true
+        subdomain:
+          nullable: true
+        url:
+          nullable: true
+        lang:
+          nullable: true
+        parent_url:
+          nullable: true
+        user_id:
+          nullable: true
+        user_id_2:
+          nullable: true
+        user_id_3:
+          nullable: true
+        create:
+          nullable: true
+        publish_time:
+          nullable: true
+        noindex:
+          nullable: true
+        theme:
+          nullable: true
+        quiz_id:
+          nullable: true
+        state:
+          nullable: true
+        required_posts_any:
+          nullable: true
+        h1:
+          nullable: true
+        title:
+          nullable: true
+        description:
+          nullable: true
+        intro:
+          nullable: true
+        html:
+          nullable: true
+        text:
+          nullable: true
+        menu_name:
+          nullable: true
+        order:
+          nullable: true
+        image:
+          nullable: true
+        og_json:
+          nullable: true
+        og:
+          nullable: true
+        tags:
+          nullable: true
+        count_views:
+          nullable: true
+        count_unique_views:
+          nullable: true
+        count_comments:
+          nullable: true
+        count_likes:
+          nullable: true
+        rubric_name:
+          nullable: true
+        user_name:
+          nullable: true
+        user_avatar:
+          nullable: true
+        user_description:
+          nullable: true
+        author_alias:
+          nullable: true
+        author_promo_text:
+          nullable: true
+        author_promo_label:
+          nullable: true
+        author_promo_link:
+          nullable: true
+        view:
+          nullable: true
+        like:
+          nullable: true
+        bookmark:
+          nullable: true
+        bookmark_author:
+          nullable: true
+    Content_2.Methods.Sitemap.Get:
+      type: object
+      properties:
+        fields:
+          $ref: '#/components/schemas/fields'
+        orders:
+          $ref: '#/components/schemas/orders'
+        filters:
+          $ref: '#/components/schemas/filters'
+        id:
+          $ref: '#/components/schemas/id'
+        limit:
+          $ref: '#/components/schemas/limit'
+        offset:
+          $ref: '#/components/schemas/offset'
+        fetch_style:
+          $ref: '#/components/schemas/fetch_style'
+      required:
+        - fields
+        - orders
+        - filters
+        - offset
+      title: Получение xml карты сайта
     Cron_2.Types.Day:
       type: string
       enum:
@@ -17301,6 +18359,148 @@ components:
         - filters
         - offset
       title: Скачивание архива документов в формате PDF
+    Content_2.Methods.Journal.Articles.Get:
+      type: object
+      properties:
+        fields:
+          $ref: '#/components/schemas/fields'
+        orders:
+          $ref: '#/components/schemas/orders'
+        filters:
+          $ref: '#/components/schemas/filters'
+        id:
+          $ref: '#/components/schemas/id'
+        limit:
+          $ref: '#/components/schemas/limit'
+        offset:
+          $ref: '#/components/schemas/offset'
+        fetch_style:
+          $ref: '#/components/schemas/fetch_style'
+      required:
+        - fields
+        - orders
+        - filters
+        - offset
+      title: Получение статьи
+    Content_2.Methods.Journal.BookmarksAuthors.Get:
+      type: object
+      properties:
+        fields:
+          $ref: '#/components/schemas/fields'
+        orders:
+          $ref: '#/components/schemas/orders'
+        filters:
+          $ref: '#/components/schemas/filters'
+        id:
+          $ref: '#/components/schemas/id'
+        limit:
+          $ref: '#/components/schemas/limit'
+        offset:
+          $ref: '#/components/schemas/offset'
+        fetch_style:
+          $ref: '#/components/schemas/fetch_style'
+      required:
+        - fields
+        - orders
+        - filters
+        - offset
+      title: Получение закладок авторов
+    Content_2.Methods.Journal.Bookmarks.Get:
+      type: object
+      properties:
+        fields:
+          $ref: '#/components/schemas/fields'
+        orders:
+          $ref: '#/components/schemas/orders'
+        filters:
+          $ref: '#/components/schemas/filters'
+        id:
+          $ref: '#/components/schemas/id'
+        limit:
+          $ref: '#/components/schemas/limit'
+        offset:
+          $ref: '#/components/schemas/offset'
+        fetch_style:
+          $ref: '#/components/schemas/fetch_style'
+      required:
+        - fields
+        - orders
+        - filters
+        - offset
+      title: Получение закладок
+    Content_2.Methods.Journal.Course.Get:
+      type: object
+      properties:
+        lessons_url:
+          title: Ссылка на урок для поулчения pageChapter и pageLesson
+          nullable: true
+          type: string
+        fields:
+          $ref: '#/components/schemas/fields'
+        orders:
+          $ref: '#/components/schemas/orders'
+        filters:
+          $ref: '#/components/schemas/filters'
+        id:
+          $ref: '#/components/schemas/id'
+        limit:
+          $ref: '#/components/schemas/limit'
+        offset:
+          $ref: '#/components/schemas/offset'
+        fetch_style:
+          $ref: '#/components/schemas/fetch_style'
+      required:
+        - fields
+        - orders
+        - filters
+        - offset
+      title: Получение инофрмации о курсах
+      description: Параметры выборки основаны на модели Models\Pages
+    Content_2.Methods.Journal.Rubrics.Get:
+      type: object
+      properties:
+        fields:
+          $ref: '#/components/schemas/fields'
+        orders:
+          $ref: '#/components/schemas/orders'
+        filters:
+          $ref: '#/components/schemas/filters'
+        id:
+          $ref: '#/components/schemas/id'
+        limit:
+          $ref: '#/components/schemas/limit'
+        offset:
+          $ref: '#/components/schemas/offset'
+        fetch_style:
+          $ref: '#/components/schemas/fetch_style'
+      required:
+        - fields
+        - orders
+        - filters
+        - offset
+      title: Получение рубрики
+    Content_2.Methods.Journal.Subscribe.Edit:
+      type: object
+      properties:
+        subscribe:
+          title: |-
+            Подписаться/отписаться
+            * 1: подписаться
+            * 0: отписаться
+          type: boolean
+        filters:
+          $ref: '#/components/schemas/filters'
+        id:
+          $ref: '#/components/schemas/id'
+      required:
+        - subscribe
+        - filters
+      title: Изменение состояния подписки на рассылку журнала
+    Content_2.Methods.Support.Menu.Get:
+      type: object
+      properties: {}
+      required: []
+      title: Получение меню справки
     Keywords_2.Methods.Volumes.Go.Edit:
       type: object
       properties:
@@ -19307,6 +20507,119 @@ components:
         - checks_ids
         - project_id
       title: Получение сводок радара для графика
+    Content_2.Methods.Journal.Course.Certificates.Add:
+      type: object
+      properties:
+        course_url:
+          title: Url курса относительно домена
+          type: string
+        user_name:
+          title: Имя на кого выписывается сертификат
+          type: string
+      required:
+        - course_url
+        - user_name
+      title: Создание сертификата
+      description: Можно создавать только для пройденных курсов
+    Content_2.Methods.Journal.Course.Certificates.Edit:
+      type: object
+      properties:
+        course_url:
+          title: Url курса относительно домена
+          type: string
+        user_name:
+          title: Имя на кого выписывается сертификат
+          type: string
+      required:
+        - course_url
+        - user_name
+      title: Изменение сертификата
+      description: Можно менять только имя, если оно не указано
+    Content_2.Methods.Journal.Course.Certificates.Get:
+      type: object
+      properties:
+        course_url:
+          title: Url курса относительно домена
+          type: string
+      required:
+        - course_url
+      title: Получение своего сертификата
+    Content_2.Methods.Journal.Course.Chapters.Get:
+      type: object
+      properties:
+        fields:
+          $ref: '#/components/schemas/fields'
+        orders:
+          $ref: '#/components/schemas/orders'
+        filters:
+          $ref: '#/components/schemas/filters'
+        id:
+          $ref: '#/components/schemas/id'
+        limit:
+          $ref: '#/components/schemas/limit'
+        offset:
+          $ref: '#/components/schemas/offset'
+        fetch_style:
+          $ref: '#/components/schemas/fetch_style'
+      required:
+        - fields
+        - orders
+        - filters
+        - offset
+      title: Получение модулей курса
+      description: |-
+        Дополнительные поля:
+         - lessons - см. includeLessons()
+    Content_2.Methods.Journal.Dictionary.ArticlesByLetter.Get:
+      type: object
+      properties:
+        fields:
+          $ref: '#/components/schemas/fields'
+        orders:
+          $ref: '#/components/schemas/orders'
+        filters:
+          $ref: '#/components/schemas/filters'
+        id:
+          $ref: '#/components/schemas/id'
+        limit:
+          $ref: '#/components/schemas/limit'
+        offset:
+          $ref: '#/components/schemas/offset'
+        fetch_style:
+          $ref: '#/components/schemas/fetch_style'
+      required:
+        - fields
+        - orders
+        - filters
+        - offset
+      title: |-
+        Получение списка страниц по буквам для модуля SEO словарь
+        Результат функции кешируется
+      description: '@return array<string, array{url: string, h1: string}> - массив с ключом "Буква" и значением массив страниц Pages'
+    Content_2.Methods.Journal.Dictionary.WordOfday.Get:
+      type: object
+      properties:
+        fields:
+          $ref: '#/components/schemas/fields'
+        orders:
+          $ref: '#/components/schemas/orders'
+        filters:
+          $ref: '#/components/schemas/filters'
+        id:
+          $ref: '#/components/schemas/id'
+        limit:
+          $ref: '#/components/schemas/limit'
+        offset:
+          $ref: '#/components/schemas/offset'
+        fetch_style:
+          $ref: '#/components/schemas/fetch_style'
+      required:
+        - fields
+        - orders
+        - filters
+        - offset
+      title: Получение стаьи для "Слово дня" в модуле SEO словарь
+      description: '@return (array<string, array{url: string, menu_name: string, description: string, count_views: integer}> | null)'
     Positions_2.Methods.Searchers.Regions.Export.Get:
       type: object
       properties:
@@ -19409,3 +20722,39 @@ components:
         - skipEmpty
         - test
       title: Копирование истории позиций
+    Content_2.Methods.Journal.Course.Certificates.ByID.Get:
+      type: object
+      properties:
+        id:
+          title: Id сертификата
+          type: integer
+      required:
+        - id
+      title: Получение сертификата по id
+    Content_2.Methods.Journal.Course.Certificates.Image.Get:
+      type: object
+      properties:
+        format:
+          title: Формат файла
+          description: |-
+            * pdf
+            * png
+          type: string
+        output:
+          title: Возвращаемый формат
+          description: |-
+            * dataURL: вернуть в ответе как Data URL
+            * inline вывести файл как есть
+          nullable: true
+          type: string
+        dpr:
+          title: devicePixelRatio, см. в js window.devicePixelRatio, имеет смысл для format = png
+          nullable: true
+          type: number
+        id:
+          title: Id сертификата
+          type: integer
+      required:
+        - format
+        - id
+      title: Получение сертификата в виде изображения

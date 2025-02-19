@@ -1,0 +1,32 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Content_2.Methods.Journal.Subscribe.Edit",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Content_2.Methods.Journal.Subscribe.Edit": {
+                "type": "object",
+                "properties": {
+                    "subscribe": {
+                        "title": "Подписаться/отписаться\n* 1: подписаться\n* 0: отписаться",
+                        "type": "boolean"
+                    },
+                    "filters": {
+                        "$ref": "../../../../TV/API/Params/FiltersTrait.json#/components/schemas/TV.API.Params.FiltersTrait/properties/filters"
+                    },
+                    "id": {
+                        "$ref": "../../../../TV/API/Params/FiltersTrait.json#/components/schemas/TV.API.Params.FiltersTrait/properties/id"
+                    }
+                },
+                "required": [
+                    "subscribe",
+                    "filters"
+                ],
+                "title": "Изменение состояния подписки на рассылку журнала"
+            }
+        }
+    }
+}

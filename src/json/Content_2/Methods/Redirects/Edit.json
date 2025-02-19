@@ -1,0 +1,47 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Content_2.Methods.Redirects.Edit",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Content_2.Methods.Redirects.Edit": {
+                "type": "object",
+                "properties": {
+                    "redirect_path": {
+                        "title": "На путь",
+                        "type": "string"
+                    },
+                    "redirect_subdomain": {
+                        "title": "На поддомен",
+                        "type": "string"
+                    },
+                    "site": {
+                        "title": "Сайт",
+                        "description": "* topvisor\n* thundo",
+                        "type": "string"
+                    },
+                    "subdomain": {
+                        "title": "С поддомена",
+                        "description": "* 'journal'\n* ''",
+                        "type": "string"
+                    },
+                    "path_mask": {
+                        "title": "с пути (маска, * - любой символ)",
+                        "type": "string"
+                    }
+                },
+                "required": [
+                    "redirect_path",
+                    "redirect_subdomain",
+                    "site",
+                    "subdomain",
+                    "path_mask"
+                ],
+                "title": "Изменение правила редиректа (для админов)"
+            }
+        }
+    }
+}
