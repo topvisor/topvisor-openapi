@@ -7,10 +7,9 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /**
-         * Получение RSS раздела сайта
-         * @description Для выборки страниц используется модель: Pages
-         */
+        /** Получение RSS раздела сайта
+         *
+         *     Для выборки страниц используется модель: Pages */
         "Content_2.Methods.Rss.Get": {
             /**
              * Страницы раздела сайта в формате XML RSS

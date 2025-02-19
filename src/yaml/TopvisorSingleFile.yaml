@@ -331,8 +331,9 @@ paths:
       operationId: DelComments2
       tags:
         - Comments_2
-      summary: Удаление комментария
-      description: |-
+      summary: |-
+        Удаление комментария
+
         Удалять комментарии можно только в течение ограниченного времени
 
         Админы могут удалять комментарии в любое время
@@ -366,8 +367,10 @@ paths:
       operationId: EditComments2
       tags:
         - Comments_2
-      summary: Изменение комментария
-      description: Изменять комментарий можно только в течение ограниченного времени
+      summary: |-
+        Изменение комментария
+
+        Изменять комментарий можно только в течение ограниченного времени
       requestBody:
         content:
           application/json:
@@ -398,8 +401,10 @@ paths:
       operationId: GetComments2
       tags:
         - Comments_2
-      summary: Получение комментариев
-      description: Возвращает набор комментариев со всеми подкомменатриями, limit, offset не виляют на получение вложенных комментариев
+      summary: |-
+        Получение комментариев
+
+        Возвращает набор комментариев со всеми подкомменатриями, limit, offset не виляют на получение вложенных комментариев
       requestBody:
         content:
           application/json:
@@ -435,8 +440,9 @@ paths:
       operationId: AddPayments2
       tags:
         - Payments_2
-      summary: Создание платежки и переход к оплате
-      description: |-
+      summary: |-
+        Создание платежки и переход к оплате
+
         Возвращает id платежа, если указан параметр $return_id = true
 
         Производит редирект, если настроена форма оплаты на стороне платежной системы
@@ -505,8 +511,10 @@ paths:
       operationId: GetQr2
       tags:
         - Qr_2
-      summary: Генерация QR кода по тексту
-      description: Возвращает изображение в формате data:image/png;base64
+      summary: |-
+        Генерация QR кода по тексту
+
+        Возвращает изображение в формате data:image/png;base64
       requestBody:
         content:
           application/json:
@@ -847,6 +855,8 @@ paths:
                         properties:
                           result:
                             title: |-
+                              Непосредтсвенный вызов API функции
+
                               Запрещено делать публичной, это приведет к поломке preCall()
 
                               В описании к функции отвечать на вопрос: `Что является результатом запроса?` Например: `Список пользователей`
@@ -1346,8 +1356,9 @@ paths:
       operationId: GetApp2Actions
       tags:
         - App_2
-      summary: Получение данных подтверждения
-      description: |-
+      summary: |-
+        Получение данных подтверждения
+
         Возвращает результат подтверждения в виде
         массива с сообщением (acceptAction),
         логической переменной (acceptEmail),
@@ -1444,8 +1455,10 @@ paths:
       operationId: GetAudit2Indexing
       tags:
         - Audit_2
-      summary: Получение отчета по проверке индексации
-      description: Необходимо указать либо date1 и date2, либо dates (вместе указывать нельзя)
+      summary: |-
+        Получение отчета по проверке индексации
+
+        Необходимо указать либо date1 и date2, либо dates (вместе указывать нельзя)
       requestBody:
         content:
           application/json:
@@ -1550,8 +1563,9 @@ paths:
       operationId: GetAudit2Watcher
       tags:
         - Audit_2
-      summary: Получение результатов проверок радара
-      description: |-
+      summary: |-
+        Получение результатов проверок радара
+
         Отчет генерируется на основе объектов urls
 
         Необходимо указать либо check_id1 и check_id2, либо checks_ids (вместе указывать нельзя)
@@ -1880,8 +1894,10 @@ paths:
       operationId: EditComments2Like
       tags:
         - Comments_2
-      summary: Редактирование статуса лайка для комментария
-      description: Возвращает результат редактирования статуса лайка
+      summary: |-
+        Редактирование статуса лайка для комментария
+
+        Возвращает результат редактирования статуса лайка
       requestBody:
         content:
           application/json:
@@ -1993,6 +2009,8 @@ paths:
                         properties:
                           result:
                             title: |-
+                              Непосредтсвенный вызов API функции
+
                               Запрещено делать публичной, это приведет к поломке preCall()
 
                               В описании к функции отвечать на вопрос: `Что является результатом запроса?` Например: `Список пользователей`
@@ -2138,8 +2156,10 @@ paths:
       operationId: GetContent2Rss
       tags:
         - Content_2
-      summary: Получение RSS раздела сайта
-      description: 'Для выборки страниц используется модель: Pages'
+      summary: |-
+        Получение RSS раздела сайта
+
+        Для выборки страниц используется модель: Pages
       requestBody:
         content:
           application/json:
@@ -2579,11 +2599,11 @@ paths:
       operationId: GetOpenapi2Download
       tags:
         - Openapi_2
-      summary: Создать Open API схемы и скачать в zip
-      description: |-
-        В результате вернет zip файл в потоке вывода
+      summary: |-
+        Создать Open API схемы и скачать в zip
 
-        @see https://editor.swagger.io/ Редактор Open API
+        В результате вернет zip файл в потоке вывода
+      description: '@see https://editor.swagger.io/ Редактор Open API'
       requestBody:
         content:
           application/json:
@@ -2984,8 +3004,10 @@ paths:
       operationId: AddProjects2Competitors
       tags:
         - Projects_2
-      summary: Добавление конкурента
-      description: 'Ограничения: не более Projects_2\Competitors::MAX_COMPETITORS_PER_PROJECT конкурентов в одном проекте'
+      summary: |-
+        Добавление конкурента
+
+        Ограничения: не более Projects_2\Competitors::MAX_COMPETITORS_PER_PROJECT конкурентов в одном проекте
       requestBody:
         content:
           application/json:
@@ -3020,8 +3042,10 @@ paths:
       operationId: DelProjects2Competitors
       tags:
         - Projects_2
-      summary: Удаление конкурентов
-      description: Обязательный параметр или ids или urls
+      summary: |-
+        Удаление конкурентов
+
+        Обязательный параметр или ids или urls
       requestBody:
         content:
           application/json:
@@ -3475,8 +3499,10 @@ paths:
       operationId: AddTickets2Files
       tags:
         - Tickets_2
-      summary: Загрузка файла на сервер
-      description: Процесс создания сообщения в тикет не завершен
+      summary: |-
+        Загрузка файла на сервер
+
+        Процесс создания сообщения в тикет не завершен
       requestBody:
         content:
           application/json:
@@ -3507,8 +3533,10 @@ paths:
       operationId: DelTickets2Files
       tags:
         - Tickets_2
-      summary: Удаление временных файлов для тикета
-      description: Процесс создания поста не завершен
+      summary: |-
+        Удаление временных файлов для тикета
+
+        Процесс создания поста не завершен
       requestBody:
         content:
           application/json:
@@ -3539,8 +3567,10 @@ paths:
       operationId: GetTickets2Files
       tags:
         - Tickets_2
-      summary: Получение списка временных файлов, загруженных для тикета
-      description: Процесс создания поста не завершен
+      summary: |-
+        Получение списка временных файлов, загруженных для тикета
+
+        Процесс создания поста не завершен
       requestBody:
         content:
           application/json:
@@ -3757,8 +3787,9 @@ paths:
       operationId: AddUrls2Import
       tags:
         - Urls_2
-      summary: Импортирование urls
-      description: |-
+      summary: |-
+        Импортирование urls
+
         Доступные поля для импорта:
         - url
         - sitemap
@@ -3789,7 +3820,7 @@ paths:
                                 - type: string
                                 - type: number
                             title: |-
-                              @return ?array{countSended: int, countDuplicated: int, countAdded: int, countChanged: int}
+                              @return ?array{'countSended': int, 'countDuplicated': int, 'countAdded': int, 'countChanged': int}
 
                               @throws Exception
                         required:
@@ -3836,8 +3867,10 @@ paths:
       operationId: EditVotes2Comment
       tags:
         - Votes_2
-      summary: Добавление комментария к отзыву
-      description: Оставить комментарий можно в течение часа поосле выставления оценки
+      summary: |-
+        Добавление комментария к отзыву
+
+        Оставить комментарий можно в течение часа поосле выставления оценки
       requestBody:
         content:
           application/json:
@@ -4787,6 +4820,8 @@ paths:
                         properties:
                           result:
                             title: |-
+                              Непосредтсвенный вызов API функции
+
                               Запрещено делать публичной, это приведет к поломке preCall()
 
                               В описании к функции отвечать на вопрос: `Что является результатом запроса?` Например: `Список пользователей`
@@ -5254,8 +5289,9 @@ paths:
       operationId: GetAdmin2UsersPromocodes
       tags:
         - Admin_2
-      summary: Получение промокодов
-      description: |-
+      summary: |-
+        Получение промокодов
+
         В params хранится строка в формате:
         - {{ rank_id }}
         - {{ rank_id }},single_code - для многоразового кода
@@ -5734,6 +5770,8 @@ paths:
                               $ref: '#/components/schemas/Models.Audit.Checks'
                               description: Only for typescript, does not contain real data
                             title: |-
+                              Сводка о выполненном аудите
+
                               Возвращает объект со сводкой по категориям, пример:
                                - `$res['all']['all']['count_checks_success']` - количество пройденных проверок во всех категориях
                                - `$res['pages']['indexing']['count_checks_success']` - количество пройденных проверок в категории Страницы / Индексация
@@ -5789,8 +5827,10 @@ paths:
       operationId: GetAudit2IndexingExport
       tags:
         - Audit_2
-      summary: Экспорт результатов индексации
-      description: Необходимо указать либо date1 и date2, либо dates (вместе указывать нельзя)
+      summary: |-
+        Экспорт результатов индексации
+
+        Необходимо указать либо date1 и date2, либо dates (вместе указывать нельзя)
       requestBody:
         content:
           application/json:
@@ -5822,8 +5862,10 @@ paths:
       operationId: GetAudit2IndexingLinks
       tags:
         - Audit_2
-      summary: Создание гостевой ссылки на просмотр позиций
-      description: Необходимо указать либо date1 и date2, либо dates (вместе указывать нельзя)
+      summary: |-
+        Создание гостевой ссылки на просмотр позиций
+
+        Необходимо указать либо date1 и date2, либо dates (вместе указывать нельзя)
       requestBody:
         content:
           application/json:
@@ -5891,8 +5933,9 @@ paths:
       operationId: GetAudit2WatcherByURL
       tags:
         - Audit_2
-      summary: Построение отчета по одному URL
-      description: |-
+      summary: |-
+        Построение отчета по одному URL
+
         Отличия от get/audit_2/watcher:
         - отчет генерируется на основе объекта watcher_results, а не urls
         - параметры выбора периода отчета игнорируются
@@ -6037,8 +6080,10 @@ paths:
       operationId: GetBank2DiadocSendTotalReceipt
       tags:
         - Bank_2
-      summary: Отправка акта сверки в диадок
-      description: Параметры см. в bank_2_requisites::protected_get_printTotalReceipt();
+      summary: |-
+        Отправка акта сверки в диадок
+
+        Параметры см. в bank_2_requisites::protected_get_printTotalReceipt();
       requestBody:
         content:
           application/json:
@@ -6367,8 +6412,10 @@ paths:
       operationId: GetContent2JournalCourse
       tags:
         - Content_2
-      summary: Получение инофрмации о курсах
-      description: Параметры выборки основаны на модели Models\Pages
+      summary: |-
+        Получение инофрмации о курсах
+
+        Параметры выборки основаны на модели Models\Pages
       requestBody:
         content:
           application/json:
@@ -7007,8 +7054,10 @@ paths:
       operationId: EditProjects2FoldersMoveFolder
       tags:
         - Projects_2
-      summary: Переместить папку
-      description: Вложенные папки запрещены, поэтому перемещение происходит только в пределах одного списка
+      summary: |-
+        Переместить папку
+
+        Вложенные папки запрещены, поэтому перемещение происходит только в пределах одного списка
       requestBody:
         content:
           application/json:
@@ -7068,8 +7117,10 @@ paths:
       operationId: GetProjects2MasterHintsCompetitors
       tags:
         - Projects_2
-      summary: Получить подсазки конкурентов для добавления в проект
-      description: Доступ по API закрыт
+      summary: |-
+        Получить подсазки конкурентов для добавления в проект
+
+        Доступ по API закрыт
       requestBody:
         content:
           application/json:
@@ -7454,8 +7505,9 @@ paths:
       operationId: GetProjects2StatusRegistrar
       tags:
         - Projects_2
-      summary: Получение информации о регистрации домена
-      description: |-
+      summary: |-
+        Получение информации о регистрации домена
+
         Возвращает объект с параметрами:
         - wait_time, если данные не готовы
         - created, если данные готовы
@@ -7873,8 +7925,10 @@ paths:
       operationId: GetTickets2TicketsInfo
       tags:
         - Tickets_2
-      summary: Получение краткой информации о тикетах
-      description: id последнего непрочитанного тикета, число непрочитанных тикетов
+      summary: |-
+        Получение краткой информации о тикетах
+
+        id последнего непрочитанного тикета, число непрочитанных тикетов
       requestBody:
         content:
           application/json:
@@ -9131,8 +9185,10 @@ paths:
       operationId: GetAdmin2UsersInformerSubscriptions
       tags:
         - Admin_2
-      summary: Получение графика с количеством подписок на рубрики с сегментцией по способам рассылки
-      description: График кешируется, первый запрос может выполняться дольше
+      summary: |-
+        Получение графика с количеством подписок на рубрики с сегментцией по способам рассылки
+
+        График кешируется, первый запрос может выполняться дольше
       requestBody:
         content:
           application/json:
@@ -9226,7 +9282,7 @@ paths:
                               $ref: '#/components/schemas/Models.Projects'
                               description: Only for typescript, does not contain real data
                             title: |-
-                              @return array{pricesByUsers: array<int, array{projectsIds: int[], price: float}>}
+                              @return array{pricesByUsers: array<int, array{projectsIds: int[], price: float}>} 
 
                               ```
                               {
@@ -9325,7 +9381,10 @@ paths:
                         properties:
                           result:
                             $ref: '#/components/schemas/stdClass'
-                            title: Вернет null, если ошибки на роботе нет
+                            title: |-
+                              Информацией о текущей ошибке на роботе
+
+                              Вернет null, если ошибки на роботе нет
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
@@ -9519,7 +9578,7 @@ paths:
                               $ref: '#/components/schemas/Models.Projects'
                               description: Only for typescript, does not contain real data
                             title: |-
-                              @return array{pricesByUsers: array<int, array{projectsIds: int[], price: float}>}
+                              @return array{pricesByUsers: array<int, array{projectsIds: int[], price: float}>} 
 
                               ```
                               {
@@ -9546,8 +9605,10 @@ paths:
       operationId: GetAudit2IndexingExportLinks
       tags:
         - Audit_2
-      summary: Получение гостевой ссылки на просмотр индексации
-      description: Необходимо указать либо date1 и date2, либо dates (вместе указывать нельзя)
+      summary: |-
+        Получение гостевой ссылки на просмотр индексации
+
+        Необходимо указать либо date1 и date2, либо dates (вместе указывать нельзя)
       requestBody:
         content:
           application/json:
@@ -9697,7 +9758,7 @@ paths:
                               $ref: '#/components/schemas/Models.Projects'
                               description: Only for typescript, does not contain real data
                             title: |-
-                              @return array{pricesByUsers: array<int, array{projectsIds: int[], price: float}>}
+                              @return array{pricesByUsers: array<int, array{projectsIds: int[], price: float}>} 
 
                               ```
                               {
@@ -9786,7 +9847,7 @@ paths:
                               $ref: '#/components/schemas/Models.Projects'
                               description: Only for typescript, does not contain real data
                             title: |-
-                              @return array{pricesByUsers: array<int, array{projectsIds: int[], price: float}>}
+                              @return array{pricesByUsers: array<int, array{projectsIds: int[], price: float}>} 
 
                               ```
                               {
@@ -9881,8 +9942,10 @@ paths:
       operationId: AddContent2JournalCourseCertificates
       tags:
         - Content_2
-      summary: Создание сертификата
-      description: Можно создавать только для пройденных курсов
+      summary: |-
+        Создание сертификата
+
+         Можно создавать только для пройденных курсов
       requestBody:
         content:
           application/json:
@@ -9914,8 +9977,10 @@ paths:
       operationId: EditContent2JournalCourseCertificates
       tags:
         - Content_2
-      summary: Изменение сертификата
-      description: Можно менять только имя, если оно не указано
+      summary: |-
+        Изменение сертификата
+
+        Можно менять только имя, если оно не указано
       requestBody:
         content:
           application/json:
@@ -9963,12 +10028,7 @@ paths:
                   - allOf:
                       - type: object
                         properties:
-                          result:
-                            type: array
-                            items:
-                              oneOf:
-                                - type: string
-                                - type: number
+                          result: {}
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
@@ -9981,8 +10041,9 @@ paths:
       operationId: GetContent2JournalCourseChapters
       tags:
         - Content_2
-      summary: Получение модулей курса
-      description: |-
+      summary: |-
+        Получение модулей курса
+
         Дополнительные поля:
          - lessons - см. includeLessons()
       requestBody:
@@ -10096,8 +10157,10 @@ paths:
       operationId: GetPositions2SearchersRegionsExport
       tags:
         - Positions_2
-      summary: Экспорт регионов (CSV)
-      description: '- searcher_key, name_or_key (название или код)[, country_code (2 буквенный код страны), lang, device, depth]'
+      summary: |-
+        Экспорт регионов (CSV)
+
+        - searcher_key, name_or_key (название или код)[, country_code (2 буквенный код страны), lang, device, depth]
       requestBody:
         content:
           application/json:
@@ -10351,8 +10414,10 @@ components:
       type: object
       properties:
         errors:
-          title: Результат ответа API метода
-          description: Тип результата зависит от типа запроса и его настроек
+          title: |-
+            Результат ответа API метода
+
+            Тип результата зависит от типа запроса и его настроек
           nullable: true
           type: 'null'
         messages:
@@ -10370,8 +10435,10 @@ components:
       type: object
       properties:
         code:
-          title: Код ошибки
-          description: Код ошибки 0 - deprecated
+          title: |-
+            Код ошибки
+
+            Код ошибки 0 - deprecated
           type: integer
         string:
           title: Описание ошибки
@@ -10470,8 +10537,10 @@ components:
           allOf:
             - $ref: '#/components/schemas/Annotations_2.Types.ServiceName'
         text:
-          title: Текст комментария
-          description: Если не текст указан, комментарий будет удален
+          title: |-
+            Текст комментария
+
+            Если не текст указан, комментарий будет удален
           type: string
       required:
         - id
@@ -10479,40 +10548,41 @@ components:
         - service
       title: Редактирование примечания
     fields:
-      title: Список полей объекта, которые надо вернуть в результате
-      description: |-
+      title: |-
+        Список полей объекта, которые надо вернуть в результате
+
         Если запрос поддерижвает параметр fetch_style, формат ответа может быть разным, fields будет влиять на содержание данных в этом ответе
 
         Использует поля модели
-
-        @see AbstractMethod::MODEL
+      description: '@see AbstractMethod::MODEL'
       type: array
       items:
         oneOf:
           - type: string
           - type: number
     orders:
-      title: Список полей объекта, по которым необходимо выполнить сортировку
-      description: |-
+      title: |-
+        Список полей объекта, по которым необходимо выполнить сортировку
+
         Поля могут быть строками или объектом: {name: string, direction: 'ASC' | 'DESC', orderValues: array}
 
         Использует поля модели
-
-        @see AbstractMethod::MODEL
+      description: '@see AbstractMethod::MODEL'
       type: array
       items:
         oneOf:
           - type: string
           - type: number
     filters:
-      title: Список фильтров по полям объекта
-      description: |-
+      title: |-
+        Список фильтров по полям объекта
+
         {name: string, operator: Field::AVAILABLE_OPERATORS, values: array}
 
         Использует поля модели
 
         Поля обязатлеьное, если $id не указан
-
+      description: |-
         @see AbstractMethod::MODEL
         @see Field::AVAILABLE_OPERATORS
       type: array
@@ -10521,27 +10591,34 @@ components:
           - type: string
           - type: number
     id:
-      title: Id объекта, для фильтрации объектов по id
-      description: Только для моделей с полем id
+      title: |-
+        Id объекта, для фильтрации объектов по id
+
+        Только для моделей с полем id
       nullable: true
       type: integer
     limit:
-      title: Количество объектов, которые необходимо получить в результате
-      description: Используется в паре с offset
+      title: |-
+        Количество объектов, которые необходимо получить в результате
+
+        Используется в паре с offset
       nullable: true
       type: integer
     offset:
-      title: Число объектов, которое необходимо пропустить при получении резальтата
-      description: Используется в паре с limit
+      title: |-
+        Число объектов, которое необходимо пропустить при получении резальтата
+
+        Используется в паре с limit
       type: integer
     fetch_style:
-      title: 'Определяет формат результата: коллекция, объект, значение'
-      description: |-
+      title: |-
+        Определяет формат результата: коллекция, объект, значение
+
         Примеры:
         - fetchAll - получить коллекцию объектов
         - fetch - получить один объект
         - fetchColumn - получить свойсвто объекта
-
+      description: |-
         @see Selector::AVAILABLE_FETCH_STYLES
         @see Selector::execFetch() - см. реализацию
       nullable: true
@@ -10597,8 +10674,10 @@ components:
       type: object
       properties:
         nextOffset:
-          title: Смещение для получения следующий порции данных
-          description: Вернется только в случае существования следующей порции
+          title: |-
+            Смещение для получения следующий порции данных
+
+            Вернется только в случае существования следующей порции
           nullable: true
           type: integer
         total:
@@ -10645,8 +10724,9 @@ components:
           type: integer
       required:
         - id
-      title: Удаление комментария
-      description: |-
+      title: |-
+        Удаление комментария
+
         Удалять комментарии можно только в течение ограниченного времени
 
         Админы могут удалять комментарии в любое время
@@ -10662,8 +10742,10 @@ components:
       required:
         - id
         - text
-      title: Изменение комментария
-      description: Изменять комментарий можно только в течение ограниченного времени
+      title: |-
+        Изменение комментария
+
+        Изменять комментарий можно только в течение ограниченного времени
     Comments_2.Methods.Get:
       type: object
       properties:
@@ -10697,8 +10779,10 @@ components:
         - orders
         - filters
         - offset
-      title: Получение комментариев
-      description: Возвращает набор комментариев со всеми подкомменатриями, limit, offset не виляют на получение вложенных комментариев
+      title: |-
+        Получение комментариев
+
+        Возвращает набор комментариев со всеми подкомменатриями, limit, offset не виляют на получение вложенных комментариев
     Payments_2.Types.System:
       type: string
       enum:
@@ -10752,8 +10836,9 @@ components:
           title: ID тарифа (если указан, сумма будет переопределена)
           type: integer
         tariff_count_month:
-          title: Число предоплаченных месяцев по тарифу
-          description: |-
+          title: |-
+            Число предоплаченных месяцев по тарифу
+
             Примеры:
             - при оплате тарифа на 1 месяц должен быть равен 1
             - при оплате тарифа на 2 месяца должен быть равен 2
@@ -10793,8 +10878,9 @@ components:
         - system
         - sum
         - country
-      title: Создание платежки и переход к оплате
-      description: |-
+      title: |-
+        Создание платежки и переход к оплате
+
         Возвращает id платежа, если указан параметр $return_id = true
 
         Производит редирект, если настроена форма оплаты на стороне платежной системы
@@ -10877,8 +10963,9 @@ components:
           title: Кодируемый текст
           type: string
         tpl_n:
-          title: Кодируемый текст
-          description: |-
+          title: |-
+            Кодируемый текст
+
             - 0 - черно-белый
             - 1 - шашечки
             - 2 - группы с закруглениями
@@ -10904,8 +10991,10 @@ components:
           type: integer
       required:
         - text
-      title: Генерация QR кода по тексту
-      description: Возвращает изображение в формате data:image/png;base64
+      title: |-
+        Генерация QR кода по тексту
+
+        Возвращает изображение в формате data:image/png;base64
     Recurring_2.Types.Type:
       type: string
       enum:
@@ -10920,7 +11009,7 @@ components:
         - без "www." в домене
         - без слешей на конце
         - без "<" и ">"
-      description: |-
+
         Будет проивзедено автоматическое приведение к формату
 
         Разрешен ввод пустой строки, для удаления значения url
@@ -11093,11 +11182,11 @@ components:
       type: array
       items:
         $ref: '#/components/schemas/Tags_2.Types.TagId'
-      title: Список id тегов
-      description: |-
-        Тип массива: TagId[]
+      title: |-
+        Список id тегов
 
-        @see Tags_2\Types\TagId
+        Тип массива: TagId[]
+      description: '@see Tags_2\Types\TagId'
     project_id:
       title: ID проекта
       type: integer
@@ -11489,8 +11578,9 @@ components:
       type: array
       items:
         type: integer
-      title: 'Тип массива: int'
-      description: |-
+      title: |-
+        Тип массива: int
+
         Принимает: Любые целые числа и числа в строках
 
         Хранит: int
@@ -11498,16 +11588,18 @@ components:
       type: object
       properties:
         type:
-          title: Тип рассылки
-          description: |-
+          title: |-
+            Тип рассылки
+
             - me
             - admin
             - news
             - api
           type: string
         send_in:
-          title: Канал рассылки
-          description: |-
+          title: |-
+            Канал рассылки
+
             - all
             - email
             - informer
@@ -12061,8 +12153,9 @@ components:
       required:
         - email
         - code
-      title: Получение данных подтверждения
-      description: |-
+      title: |-
+        Получение данных подтверждения
+
         Возвращает результат подтверждения в виде
         массива с сообщением (acceptAction),
         логической переменной (acceptEmail),
@@ -12289,8 +12382,10 @@ components:
       type: object
       properties: {}
       required: []
-      title: Движок работы с шаблонизатором
-      description: Является неотъемлемой частью Page
+      title: |-
+        Движок работы с шаблонизатором
+
+        Является неотъемлемой частью Page
     Controller_2.Objects.Page:
       type: object
       properties:
@@ -12482,8 +12577,10 @@ components:
           allOf:
             - $ref: '#/components/schemas/Audit_2.Types.Indexing.SearcherKeys'
         indexing_fields:
-          title: Список полей индексации, которые необъодимо получить
-          description: См. поля indexing_* в объекте Urls
+          title: |-
+            Список полей индексации, которые необъодимо получить
+
+            См. поля indexing_* в объекте Urls
           default:
             - data
           type: array
@@ -12501,8 +12598,10 @@ components:
           title: Вернуть ли даты проверок
           type: boolean
         filter_by_alert:
-          title: Фильтр по изменениям в указанной ПС в указанную дату
-          description: 'Формат записи: `{{ date }}:{{ searcher_key }}`'
+          title: |-
+            Фильтр по изменениям в указанной ПС в указанную дату
+
+            Формат записи: `{{ date }}:{{ searcher_key }}`
           type: string
         dates:
           title: Произвольные даты без использования диапазона
@@ -12558,8 +12657,10 @@ components:
         - filters
         - offset
         - project_id
-      title: Получение отчета по проверке индексации
-      description: Необходимо указать либо date1 и date2, либо dates (вместе указывать нельзя)
+      title: |-
+        Получение отчета по проверке индексации
+
+        Необходимо указать либо date1 и date2, либо dates (вместе указывать нельзя)
     Audit_2.Types.Settings.WatcherType:
       type: string
       enum:
@@ -12575,8 +12676,9 @@ components:
       title: Типы отчетов радара
     TV.API.Types.RegExp:
       type: string
-      title: Регулярное выражение
-      description: |
+      title: |-
+        Регулярное выражение
+
         Пустое значение разрешено
 
         Управляющие символы "/" в начале и в конце строки будут удалены
@@ -12591,11 +12693,11 @@ components:
       type: object
       properties:
         audit_user_agent:
-          title: User-Agent (аудит)
-          description: |-
-            Можно указать id устройства
+          title: |-
+            User-Agent (аудит)
 
-            @see Audit_2\Types\Settings\Device
+            Можно указать id устройства
+          description: '@see Audit_2\Types\Settings\Device'
           nullable: true
           type: string
         audit_use_cookie:
@@ -12653,11 +12755,11 @@ components:
           allOf:
             - $ref: '#/components/schemas/Audit_2.Types.Indexing.SearcherKeys'
         watcher_user_agent:
-          title: User-Agent (радар)
-          description: |-
-            Можно указать id устройства
+          title: |-
+            User-Agent (радар)
 
-            @see Audit_2\Types\Settings\Device
+            Можно указать id устройства
+          description: '@see Audit_2\Types\Settings\Device'
           nullable: true
           type: string
         watcher_max_redirects:
@@ -12669,11 +12771,11 @@ components:
           allOf:
             - $ref: '#/components/schemas/Audit_2.Types.Settings.WatcherTypes'
         watcher_regexp:
-          title: Регулярное выражение для сбора контента (радар)
-          description: |-
-            Если не указано, будут ипользоваться теги разметки
+          title: |-
+            Регулярное выражение для сбора контента (радар)
 
-            @see https://topvisor.com/support/watcher/settings/#tags
+            Если не указано, будут ипользоваться теги разметки
+          description: '@see https://topvisor.com/support/watcher/settings/#tags'
           nullable: true
           allOf:
             - $ref: '#/components/schemas/TV.API.Types.RegExp'
@@ -12835,8 +12937,9 @@ components:
       required:
         - watcher_type
         - project_id
-      title: Получение результатов проверок радара
-      description: |-
+      title: |-
+        Получение результатов проверок радара
+
         Отчет генерируется на основе объектов urls
 
         Необходимо указать либо check_id1 и check_id2, либо checks_ids (вместе указывать нельзя)
@@ -12994,8 +13097,10 @@ components:
           title: Id реквезитов
           type: string
         data:
-          title: Данные реквезитов
-          description: см. объект Bank_2\Objects\Requisites
+          title: |-
+            Данные реквезитов
+
+            см. объект Bank_2\Objects\Requisites
           type: string
       required:
         - id
@@ -13113,14 +13218,18 @@ components:
       required:
         - id
         - like
-      title: Редактирование статуса лайка для комментария
-      description: Возвращает результат редактирования статуса лайка
+      title: |-
+        Редактирование статуса лайка для комментария
+
+        Возвращает результат редактирования статуса лайка
     Content_2.Methods.Authors.Edit:
       type: object
       properties:
         alias:
-          title: Имя для url страницы автора
-          description: Только латинские буквы, цифры и символ дефиса
+          title: |-
+            Имя для url страницы автора
+
+            Только латинские буквы, цифры и символ дефиса
           nullable: true
           type: string
         promo_text:
@@ -13219,14 +13328,16 @@ components:
       type: object
       properties:
         site:
-          title: Сайт
-          description: |-
+          title: |-
+            Сайт
+
             * topvisor
             * thundo
           type: string
         subdomain:
-          title: С поддомена
-          description: |-
+          title: |-
+            С поддомена
+
             * 'journal'
             * ''
           type: string
@@ -13247,14 +13358,16 @@ components:
           title: На поддомен
           type: string
         site:
-          title: Сайт
-          description: |-
+          title: |-
+            Сайт
+
             * topvisor
             * thundo
           type: string
         subdomain:
-          title: С поддомена
-          description: |-
+          title: |-
+            С поддомена
+
             * 'journal'
             * ''
           type: string
@@ -13272,14 +13385,16 @@ components:
       type: object
       properties:
         site:
-          title: Сайт
-          description: |-
+          title: |-
+            Сайт
+
             * topvisor
             * thundo
           type: string
         subdomain:
-          title: С поддомена
-          description: |-
+          title: |-
+            С поддомена
+
             * 'journal'
             * ''
           type: string
@@ -13300,14 +13415,16 @@ components:
           title: На поддомен
           type: string
         site:
-          title: Сайт
-          description: |-
+          title: |-
+            Сайт
+
             * topvisor
             * thundo
           type: string
         subdomain:
-          title: С поддомена
-          description: |-
+          title: |-
+            С поддомена
+
             * 'journal'
             * ''
           type: string
@@ -13385,8 +13502,10 @@ components:
         - orders
         - filters
         - offset
-      title: Получение RSS раздела сайта
-      description: 'Для выборки страниц используется модель: Pages'
+      title: |-
+        Получение RSS раздела сайта
+
+        Для выборки страниц используется модель: Pages
     Models.Pages:
       properties:
         COUNT(*):
@@ -13534,15 +13653,17 @@ components:
       title: Дни недели, в которые должен производиться запуск cron
     Cron_2.Types.Hour:
       type: string
-      title: Час в который должен производиться запуск cron
-      description: |-
+      title: |-
+        Час в который должен производиться запуск cron
+
         Пустое значение зарезервированно для запуска cron каждый час
 
         Значение должно находиться в диапазоне от 0 до 23 включительно
     Cron_2.Types.Minute:
       type: string
-      title: Минута или интервал в минутах в который должен производиться запуск cron
-      description: |-
+      title: |-
+        Минута или интервал в минутах в который должен производиться запуск cron
+
         Значение должно находится в диапазоне от 0 до 59 включительно
 
         Если значение является интервалом, в начало ставится символ '*'
@@ -13701,8 +13822,9 @@ components:
       type: array
       items:
         type: boolean
-      title: 'Тип массива: boolean'
-      description: |-
+      title: |-
+        Тип массива: boolean
+
         Принимает: 0|1|false|true
 
         Хранит: false|true
@@ -13716,8 +13838,9 @@ components:
       type: array
       items:
         $ref: '#/components/schemas/Example_2.Types.Number'
-      title: 'Тип: enum'
-      description: |-
+      title: |-
+        Тип: enum
+
         Принимает: 0|1|false|true
 
         Хранит: false|true
@@ -13746,8 +13869,9 @@ components:
       type: object
       properties:
         format:
-          title: Формат даты
-          description: |-
+          title: |-
+            Формат даты
+
             Не обязательный параметр строкового типа со значением по умолчанию
 
             Можно не указывать, но в exec() он не может быть пустым
@@ -13782,8 +13906,9 @@ components:
       type: object
       properties:
         name:
-          title: Имя проекта
-          description: |-
+          title: |-
+            Имя проекта
+
             Используется для фильтрации по имени проекта, см. self::exec()
 
             Не обязательный параметр метода строкового типа
@@ -14183,11 +14308,11 @@ components:
           default: json
           type: string
       required: []
-      title: Создать Open API схемы и скачать в zip
-      description: |-
-        В результате вернет zip файл в потоке вывода
+      title: |-
+        Создать Open API схемы и скачать в zip
 
-        @see https://editor.swagger.io/ Редактор Open API
+        В результате вернет zip файл в потоке вывода
+      description: '@see https://editor.swagger.io/ Редактор Open API'
     Payments_2.Methods.Companies.Get:
       type: object
       properties: {}
@@ -14302,8 +14427,9 @@ components:
           nullable: true
           type: boolean
         do_snapshots:
-          title: Глубина сбора снимков
-          description: |-
+          title: |-
+            Глубина сбора снимков
+
             enum(0..9)
             - 0: не собирать
             - 1: 10
@@ -14316,13 +14442,16 @@ components:
           nullable: true
           type: boolean
         subdomains:
-          title: Учитывать ли поддомены при проверке
-          description: '- 1: находить позиции сайта, являющиеся поддоменом к основному'
+          title: |-
+            Учитывать ли поддомены при проверке
+
+            - 1: находить позиции сайта, являющиеся поддоменом к основному
           nullable: true
           type: boolean
         filter:
-          title: Ограничения
-          description: |-
+          title: |-
+            Ограничения
+
             - 0: без ограничений
             - 1: умеренный
             - 2: семейный поиск
@@ -14333,8 +14462,9 @@ components:
           nullable: true
           type: boolean
         common_traffic:
-          title: Способ получения трафика
-          description: |-
+          title: |-
+            Способ получения трафика
+
             - 0: с учетом регионов
             - 1: без учета регионов
           nullable: true
@@ -14462,7 +14592,7 @@ components:
         - без "www." в домене
         - без слешей на конце
         - без "<" и ">"
-      description: |-
+
         Будет проивзедено автоматическое приведение к формату
 
         Разрешен ввод пустой строки, для удаления значения url
@@ -14493,8 +14623,10 @@ components:
       required:
         - project_id
         - urls
-      title: Добавление конкурента
-      description: 'Ограничения: не более Projects_2\Competitors::MAX_COMPETITORS_PER_PROJECT конкурентов в одном проекте'
+      title: |-
+        Добавление конкурента
+
+        Ограничения: не более Projects_2\Competitors::MAX_COMPETITORS_PER_PROJECT конкурентов в одном проекте
     Projects_2.Methods.Competitors.Del:
       type: object
       properties:
@@ -14513,8 +14645,10 @@ components:
             - $ref: '#/components/schemas/TV.API.Types.UrlShortArray'
       required:
         - project_id
-      title: Удаление конкурентов
-      description: Обязательный параметр или ids или urls
+      title: |-
+        Удаление конкурентов
+
+        Обязательный параметр или ids или urls
     Projects_2.Methods.Competitors.Get:
       type: object
       properties:
@@ -14649,14 +14783,17 @@ components:
           nullable: true
           type: boolean
         show_searchers_and_regions:
-          title: Добавить в результат список ПС и Регионов, привязанных к проекту
-          description: |-
+          title: |-
+            Добавить в результат список ПС и Регионов, привязанных к проекту
+
             - 1 - включенные
             - 2 - все
           type: integer
         include_positions_summary_params:
-          title: Добавить в результат сводку с указанными параметрами
-          description: Параметры см. positions_2::get/summary
+          title: |-
+            Добавить в результат сводку с указанными параметрами
+
+            Параметры см. positions_2::get/summary
           nullable: true
           type: array
           items:
@@ -14691,8 +14828,10 @@ components:
           allOf:
             - $ref: '#/components/schemas/TV.API.Types.Email'
         projects_ids:
-          title: ID проектов
-          description: Вместо project_ids можно укзывать project_id
+          title: |-
+            ID проектов
+
+            Вместо project_ids можно укзывать project_id
           nullable: true
           type: array
           items:
@@ -14700,8 +14839,10 @@ components:
               - type: string
               - type: number
         project_id:
-          title: ID проекта
-          description: Вместо project_id можно укзывать projects_ids
+          title: |-
+            ID проекта
+
+            Вместо project_id можно укзывать projects_ids
           nullable: true
           type: integer
       required:
@@ -14728,8 +14869,10 @@ components:
           allOf:
             - $ref: '#/components/schemas/TV.API.Types.BoolArray'
         project_id:
-          title: ID проекта
-          description: Вместо project_id можно укзывать projects_ids
+          title: |-
+            ID проекта
+
+            Вместо project_id можно укзывать projects_ids
           nullable: true
           type: integer
         user_name:
@@ -14810,8 +14953,10 @@ components:
           type: string
       required:
         - filename
-      title: Загрузка файла на сервер
-      description: Процесс создания сообщения в тикет не завершен
+      title: |-
+        Загрузка файла на сервер
+
+        Процесс создания сообщения в тикет не завершен
     Tickets_2.Methods.Files.Del:
       type: object
       properties:
@@ -14820,14 +14965,18 @@ components:
           type: string
       required:
         - name
-      title: Удаление временных файлов для тикета
-      description: Процесс создания поста не завершен
+      title: |-
+        Удаление временных файлов для тикета
+
+        Процесс создания поста не завершен
     Tickets_2.Methods.Files.Get:
       type: object
       properties: {}
       required: []
-      title: Получение списка временных файлов, загруженных для тикета
-      description: Процесс создания поста не завершен
+      title: |-
+        Получение списка временных файлов, загруженных для тикета
+
+        Процесс создания поста не завершен
     Tickets_2.Methods.Messages.Add:
       type: object
       properties:
@@ -14851,8 +15000,10 @@ components:
           title: ID тикета
           type: integer
         rate:
-          title: Оценка
-          description: Принимает оценку от 1 до 3
+          title: |-
+            Оценка
+
+            Принимает оценку от 1 до 3
           nullable: true
           type: integer
         comment:
@@ -14901,8 +15052,10 @@ components:
               - type: string
               - type: number
         resource:
-          title: URL страницы, с которой отправлен тикет
-          description: Не используется, если указан user_data
+          title: |-
+            URL страницы, с которой отправлен тикет
+
+            Не используется, если указан user_data
           nullable: true
           type: string
         is_silent:
@@ -14914,20 +15067,24 @@ components:
           allOf:
             - $ref: '#/components/schemas/TV.API.Types.Email'
         social_user_id:
-          title: Id пользователя внутри социальной сети, из которой был отправлен тикет
-          description: |-
-            Может быть в любом виде
+          title: |-
+            Id пользователя внутри социальной сети, из которой был отправлен тикет
 
-            @type string | int
+            Может быть в любом виде
+          description: '@type string | int'
           nullable: true
         secret:
-          title: Данные для авторизации в сервисе-конкуренте для переноса проектов
-          description: Недокументированный параметр
+          title: |-
+            Данные для авторизации в сервисе-конкуренте для переноса проектов
+
+            Недокументированный параметр
           nullable: true
           type: string
         task_id:
-          title: Номер задачи redmine, связанной с тикетом
-          description: Недокументированный параметр
+          title: |-
+            Номер задачи redmine, связанной с тикетом
+
+            Недокументированный параметр
           type: integer
       required:
         - text
@@ -15095,8 +15252,10 @@ components:
           title: Вывести fieldLabel в заголовках столбцов (для CSV)
           type: boolean
         forClipboard:
-          title: Вернуть данные в формате для копироваиня в буфер обмена
-          description: Не более 2000 результатов
+          title: |-
+            Вернуть данные в формате для копироваиня в буфер обмена
+
+            Не более 2000 результатов
           type: boolean
         fields:
           $ref: '#/components/schemas/fields'
@@ -15132,8 +15291,9 @@ components:
       type: object
       properties:
         urls:
-          title: Список URL соответствующих домену проекта, допускается формат CSV
-          description: |-
+          title: |-
+            Список URL соответствующих домену проекта, допускается формат CSV
+
             Можно передать в виде файла с именем urls, допускаются форматы CSV и XML (допустимы сжатые XML в .gz)
 
             Нельзя передавать одновременно в виде массива и в виде файла или использовать совместно с link_sitemap_xml
@@ -15153,8 +15313,10 @@ components:
           title: Очистить список URL перед импортом
           type: boolean
         setActiveByRegexpByType:
-          title: Недокументириуемый параметр
-          description: set(Audit_2\Types\Type => regexp)
+          title: |-
+            Недокументириуемый параметр
+
+            set(Audit_2\Types\Type => regexp)
           type: array
           items:
             oneOf:
@@ -15189,8 +15351,9 @@ components:
           $ref: '#/components/schemas/project_id'
       required:
         - project_id
-      title: Импортирование urls
-      description: |-
+      title: |-
+        Импортирование urls
+
         Доступные поля для импорта:
         - url
         - sitemap
@@ -15238,8 +15401,10 @@ components:
       required:
         - id
         - comment
-      title: Добавление комментария к отзыву
-      description: Оставить комментарий можно в течение часа поосле выставления оценки
+      title: |-
+        Добавление комментария к отзыву
+
+        Оставить комментарий можно в течение часа поосле выставления оценки
     Admin_2.Methods.Accounting.Counteragents.Edit:
       type: object
       properties:
@@ -15333,8 +15498,9 @@ components:
           nullable: true
           type: string
         type:
-          title: Тип
-          description: |-
+          title: |-
+            Тип
+
             - plus
             - minus
 
@@ -15488,8 +15654,9 @@ components:
       type: object
       properties:
         action:
-          title: Операция
-          description: |-
+          title: |-
+            Операция
+
             - 2: бонусное пополнение
             - 1: пополнение
             - -1: списание
@@ -15661,8 +15828,9 @@ components:
       enum:
         - RUB
         - USD
-      title: Валюта
-      description: |-
+      title: |-
+        Валюта
+
         Этот общий тип, не зависящий от контекста
 
         Дополниетольно нужно проверять в API методах через site()->checkAllowCurrency() в функции check()
@@ -15715,9 +15883,10 @@ components:
           title: Год
           type: integer
         currency:
-          title: Валюта партнеров
-          description: |-
-            - RUB
+          title: |-
+            Валюта партнеров
+
+             - RUB
              - USD
           allOf:
             - $ref: '#/components/schemas/TV.API.Types.Currency'
@@ -15837,8 +16006,9 @@ components:
         - day
         - month
         - year
-      title: Имя сегмента, на которые делится период отчета
-      description: |-
+      title: |-
+        Имя сегмента, на которые делится период отчета
+
         Отчет делится на равные части - сегменты, за каждый сегмент выводится сводка с агрегацией по этому сегменту
 
         Пример: вывод количества регистраций за каждый **месяц** в отчете
@@ -15869,8 +16039,9 @@ components:
           allOf:
             - $ref: '#/components/schemas/TV.API.Types.Currency'
         field_name:
-          title: Имя поля
-          description: |-
+          title: |-
+            Имя поля
+
             - sum
             - discount
             - count_users
@@ -16053,8 +16224,9 @@ components:
           title: ID пользователя
           type: integer
         name:
-          title: Название доступа
-          description: |-
+          title: |-
+            Название доступа
+
             - ftp
             - mysql
             - vpn
@@ -16149,8 +16321,9 @@ components:
           allOf:
             - $ref: '#/components/schemas/TV.API.Types.Date'
         type:
-          title: Тип
-          description: |-
+          title: |-
+            Тип
+
             - vacation
             - day_off
           type: array
@@ -16268,8 +16441,9 @@ components:
         - orders
         - filters
         - offset
-      title: Получение промокодов
-      description: |-
+      title: |-
+        Получение промокодов
+
         В params хранится строка в формате:
         - {{ rank_id }}
         - {{ rank_id }},single_code - для многоразового кода
@@ -16916,14 +17090,18 @@ components:
           allOf:
             - $ref: '#/components/schemas/Audit_2.Types.Audit.TargetType'
         filters_resources_target_type:
-          title: Тип отчета для фильтра по ресурсам страницы
-          description: Только для $target_type = pages
+          title: |-
+            Тип отчета для фильтра по ресурсам страницы
+
+            Только для $target_type = pages
           nullable: true
           allOf:
             - $ref: '#/components/schemas/Audit_2.Types.Audit.TargetType'
         filters_resources:
-          title: Фильтр по ресурсам страницы, API fitlers для объекта, тип которого указан в filters_extra_target_type
-          description: Только для $target_type = pages
+          title: |-
+            Фильтр по ресурсам страницы, API fitlers для объекта, тип которого указан в filters_extra_target_type
+
+            Только для $target_type = pages
           type: array
           items:
             oneOf:
@@ -17731,11 +17909,11 @@ components:
           allOf:
             - $ref: '#/components/schemas/Audit_2.Types.Indexing.SearcherKeys'
         returnFilenameFromFolder:
-          title: Если указан, файл будет сохранен в указанной папке и будет возвращен путь к файлу
-          description: |-
-            Для внутреннего использования
+          title: |-
+            Если указан, файл будет сохранен в указанной папке и будет возвращен путь к файлу
 
-            @private
+            Для внутреннего использования
+          description: '@private'
           nullable: true
           type: string
         output:
@@ -17787,8 +17965,10 @@ components:
         - searchers_keys
         - output
         - project_id
-      title: Экспорт результатов индексации
-      description: Необходимо указать либо date1 и date2, либо dates (вместе указывать нельзя)
+      title: |-
+        Экспорт результатов индексации
+
+        Необходимо указать либо date1 и date2, либо dates (вместе указывать нельзя)
     Audit_2.Methods.Indexing.Links.Get:
       type: object
       properties:
@@ -17866,8 +18046,10 @@ components:
       required:
         - template_date_range
         - project_id
-      title: Создание гостевой ссылки на просмотр позиций
-      description: Необходимо указать либо date1 и date2, либо dates (вместе указывать нельзя)
+      title: |-
+        Создание гостевой ссылки на просмотр позиций
+
+        Необходимо указать либо date1 и date2, либо dates (вместе указывать нельзя)
     Audit_2.Methods.Indexing.Summary.Get:
       type: object
       properties:
@@ -17892,11 +18074,11 @@ components:
           title: Отобразить количество проверенных страниц
           type: boolean
         forChart:
-          title: Вернуть данные в формате для графика
-          description: |-
-            Недокументируемый параметр
+          title: |-
+            Вернуть данные в формате для графика
 
-            @private
+            Недокументируемый параметр
+          description: '@private'
           type: boolean
         project_id:
           $ref: '#/components/schemas/project_id'
@@ -17957,8 +18139,9 @@ components:
         - filters
         - offset
         - project_id
-      title: Построение отчета по одному URL
-      description: |-
+      title: |-
+        Построение отчета по одному URL
+
         Отличия от get/audit_2/watcher:
         - отчет генерируется на основе объекта watcher_results, а не urls
         - параметры выбора периода отчета игнорируются
@@ -18109,8 +18292,10 @@ components:
           nullable: true
           type: string
         signed:
-          title: Использовать подпись
-          description: Если true, то документ с подписью (не распространяется на договоры)
+          title: |-
+            Использовать подпись
+
+            Если true, то документ с подписью (не распространяется на договоры)
           type: boolean
         fields:
           $ref: '#/components/schemas/fields'
@@ -18134,8 +18319,10 @@ components:
         - orders
         - filters
         - offset
-      title: Отправка акта сверки в диадок
-      description: Параметры см. в bank_2_requisites::protected_get_printTotalReceipt();
+      title: |-
+        Отправка акта сверки в диадок
+
+        Параметры см. в bank_2_requisites::protected_get_printTotalReceipt();
     Bank_2.Methods.History.Export.Get:
       type: object
       properties:
@@ -18239,8 +18426,10 @@ components:
           title: Тип документа enum(RequisitesDocuments::$availableDocumentsTypes)
           type: string
         signed:
-          title: Использовать подпись
-          description: Если true, то документ с подписью (не распространяется на договоры)
+          title: |-
+            Использовать подпись
+
+            Если true, то документ с подписью (не распространяется на договоры)
           type: boolean
         fields:
           $ref: '#/components/schemas/fields'
@@ -18282,8 +18471,10 @@ components:
           title: Для внутреннего использования
           type: boolean
         signed:
-          title: Использовать подпись
-          description: Если true, то документ с подписью (не распространяется на договоры)
+          title: |-
+            Использовать подпись
+
+            Если true, то документ с подписью (не распространяется на договоры)
           type: boolean
         fields:
           $ref: '#/components/schemas/fields'
@@ -18312,8 +18503,10 @@ components:
       type: object
       properties:
         targets_ids:
-          title: Список id документов
-          description: Вместо targets_ids можно указывать набор параметров org_id, date1 и date2
+          title: |-
+            Список id документов
+
+            Вместо targets_ids можно указывать набор параметров org_id, date1 и date2
           nullable: true
           allOf:
             - $ref: '#/components/schemas/TV.API.Types.IntArray'
@@ -18335,8 +18528,10 @@ components:
           title: Тип документа enum(RequisitesDocuments::$availableDocumentsTypes)
           type: string
         signed:
-          title: Использовать подпись
-          description: Если true, то документ с подписью (не распространяется на договоры)
+          title: |-
+            Использовать подпись
+
+            Если true, то документ с подписью (не распространяется на договоры)
           type: boolean
         fields:
           $ref: '#/components/schemas/fields'
@@ -18454,8 +18649,10 @@ components:
         - orders
         - filters
         - offset
-      title: Получение инофрмации о курсах
-      description: Параметры выборки основаны на модели Models\Pages
+      title: |-
+        Получение инофрмации о курсах
+
+        Параметры выборки основаны на модели Models\Pages
     Content_2.Methods.Journal.Rubrics.Get:
       type: object
       properties:
@@ -18508,8 +18705,9 @@ components:
           title: Id проекта
           type: integer
         no_recheck:
-          title: Проверять ли запросы
-          description: |-
+          title: |-
+            Проверять ли запросы
+
             - 0: проверять
             - 1: не проверять запросы с актуальной частотой
             - 2: не проверять запросы с частотой
@@ -18523,8 +18721,9 @@ components:
           default: keywords
           type: string
         qualifiers:
-          title: Объекты определителей частоты (параметр не обязатален, если check_all_regions = true)
-          description: |-
+          title: |-
+            Объекты определителей частоты (параметр не обязатален, если check_all_regions = true)
+
             - int qualifier.region_key - ключ региона
             - enum(0, 1) qualifier.searcher_key - ключ ПС
             - enum(1, 2, 3, 5, 6) qualifier.type - индекс тип частоты (для Яндекс 1, 2, 3, 5 или 6, для Google всегда 3)
@@ -18554,8 +18753,9 @@ components:
           title: Id проекта
           type: integer
         no_recheck:
-          title: Проверять ли запросы
-          description: |-
+          title: |-
+            Проверять ли запросы
+
             - 0: проверять
             - 1: не проверять запросы с актуальной частотой
             - 2: не проверять запросы с частотой
@@ -18573,8 +18773,9 @@ components:
           default: keywords
           type: string
         qualifiers:
-          title: Объекты определителей частоты (параметр не обязатален, если check_all_regions = true)
-          description: |-
+          title: |-
+            Объекты определителей частоты (параметр не обязатален, если check_all_regions = true)
+
             - int qualifier.region_key - ключ региона
             - enum(0, 1) qualifier.searcher_key - ключ ПС
             - enum(1, 2, 3, 5, 6) qualifier.type - индекс тип частоты (для Яндекс 1, 2, 3, 5 или 6, для Google всегда 3)
@@ -18696,12 +18897,16 @@ components:
           allOf:
             - $ref: '#/components/schemas/Positions_2.Types.SearcherKey'
         region_key:
-          title: Ключ региона
-          description: Для разных ПС список доступных регионов может быть разный
+          title: |-
+            Ключ региона
+
+            Для разных ПС список доступных регионов может быть разный
           type: integer
         region_lang:
-          title: Язык региона
-          description: Для разных ПС список языков разный
+          title: |-
+            Язык региона
+
+            Для разных ПС список языков разный
           nullable: true
           type: string
         region_device:
@@ -18709,8 +18914,9 @@ components:
           allOf:
             - $ref: '#/components/schemas/Positions_2.Types.RegionDevice'
         region_depth:
-          title: Глубина региона
-          description: |-
+          title: |-
+            Глубина региона
+
             - 1-3 для Яндекса (ПК)
             - 1-10 для Google
             - 1-3 для GooglePlay
@@ -18749,8 +18955,10 @@ components:
           title: Регион, который требуется изменить
           type: integer
         region_lang:
-          title: Язык региона
-          description: Для разных ПС список языков разный
+          title: |-
+            Язык региона
+
+            Для разных ПС список языков разный
           nullable: true
           type: string
         region_device:
@@ -18759,8 +18967,9 @@ components:
           allOf:
             - $ref: '#/components/schemas/Positions_2.Types.RegionDevice'
         region_depth:
-          title: Глубина региона
-          description: |-
+          title: |-
+            Глубина региона
+
             - 1-3 для Яндекса (ПК)
             - 1-10 для Google
             - 1-3 для GooglePlay
@@ -18842,8 +19051,9 @@ components:
           title: Переместить к указанному конкуренту
           type: integer
         to_type:
-          title: Позиция перемещения
-          description: |-
+          title: |-
+            Позиция перемещения
+
             - before
             - after
           default: after
@@ -18882,8 +19092,9 @@ components:
           allOf:
             - $ref: '#/components/schemas/TV.API.Types.IntArray'
         'on':
-          title: Активность проекта
-          description: |-
+          title: |-
+            Активность проекта
+
             - -1 - выключен
             - 0 - включен
           type: integer
@@ -18913,14 +19124,18 @@ components:
           title: Id папки, которую надо перенести
           type: integer
         insert_after_id:
-          title: Id папки, после которой надо разместить перемещаемую папку
-          description: Укажите 0, если надо переместить папку в начало списка
+          title: |-
+            Id папки, после которой надо разместить перемещаемую папку
+
+            Укажите 0, если надо переместить папку в начало списка
           type: integer
       required:
         - id
         - insert_after_id
-      title: Переместить папку
-      description: Вложенные папки запрещены, поэтому перемещение происходит только в пределах одного списка
+      title: |-
+        Переместить папку
+
+        Вложенные папки запрещены, поэтому перемещение происходит только в пределах одного списка
     Projects_2.Methods.Folders.Name.Edit:
       type: object
       properties:
@@ -18942,8 +19157,10 @@ components:
           type: integer
       required:
         - project_id
-      title: Получить подсазки конкурентов для добавления в проект
-      description: Доступ по API закрыт
+      title: |-
+        Получить подсазки конкурентов для добавления в проект
+
+        Доступ по API закрыт
     Projects_2.Methods.Master.HintsKeywords.Get:
       type: object
       properties:
@@ -19124,8 +19341,9 @@ components:
             - $ref: '#/components/schemas/TV.API.Types.UrlShort'
       required:
         - domain
-      title: Получение информации о регистрации домена
-      description: |-
+      title: |-
+        Получение информации о регистрации домена
+
         Возвращает объект с параметрами:
         - wait_time, если данные не готовы
         - created, если данные готовы
@@ -19287,8 +19505,10 @@ components:
       type: object
       properties: {}
       required: []
-      title: Получение краткой информации о тикетах
-      description: id последнего непрочитанного тикета, число непрочитанных тикетов
+      title: |-
+        Получение краткой информации о тикетах
+
+        id последнего непрочитанного тикета, число непрочитанных тикетов
     Tickets_2.Methods.Tickets.SetReaded.Edit:
       type: object
       properties:
@@ -19306,8 +19526,9 @@ components:
           title: ID тикета
           type: integer
         text:
-          title: Текст
-          description: |-
+          title: |-
+            Текст
+
             text = '' - отмена написания
 
             text = null - написания со скрытым содержимым (без текста)
@@ -19343,8 +19564,9 @@ components:
           title: Id группы
           type: integer
         type:
-          title: Тип
-          description: |-
+          title: |-
+            Тип
+
             - plus
             - minus
           type: string
@@ -19384,8 +19606,9 @@ components:
           title: ID фильтра
           type: integer
         type:
-          title: Тип
-          description: |-
+          title: |-
+            Тип
+
             - plus
             - minus
           type: string
@@ -19464,8 +19687,10 @@ components:
           title: ID проекта
           type: integer
         type:
-          title: Тип
-          description: Может принимать одно из значений TYPES_SETTINGS_AVAILIBLE или TYPES_MOVE_AVAILIBLE
+          title: |-
+            Тип
+
+            Может принимать одно из значений TYPES_SETTINGS_AVAILIBLE или TYPES_MOVE_AVAILIBLE
           type: string
         date:
           title: Дата бекапа
@@ -19509,8 +19734,10 @@ components:
           title: ID пользователя
           type: integer
         entityId:
-          title: ID акта
-          description: Укажите `sum=`, если API не раблотает и данных акта нет
+          title: |-
+            ID акта
+
+            Укажите `sum=`, если API не раблотает и данных акта нет
           nullable: true
           type: string
         date:
@@ -19549,8 +19776,9 @@ components:
       type: object
       properties:
         csv:
-          title: Строка в формате csv
-          description: |-
+          title: |-
+            Строка в формате csv
+
             Пример: ```
             Запрос;2024-01-01;2024-01-01
             Привет;5;5
@@ -19592,8 +19820,9 @@ components:
           title: ID пользователя
           type: integer
         projects:
-          title: Список для замены
-          description: |-
+          title: |-
+            Список для замены
+
             Пример: ```
             example.com;example2.com
             example3.com;example4.com
@@ -19722,8 +19951,9 @@ components:
           allOf:
             - $ref: '#/components/schemas/TV.API.Types.Date'
         operations_type:
-          title: Тип операций (расход, приход, все операции)
-          description: |-
+          title: |-
+            Тип операций (расход, приход, все операции)
+
             - profit: приход
             - charges: расход
           nullable: true
@@ -19936,8 +20166,9 @@ components:
       type: object
       properties:
         fields:
-          title: Поля
-          description: |-
+          title: |-
+            Поля
+
             - date
             - count_messages
             - count_tickets
@@ -19985,22 +20216,27 @@ components:
           nullable: true
           type: integer
       required: []
-      title: Получение графика с количеством подписок на рубрики с сегментцией по способам рассылки
-      description: График кешируется, первый запрос может выполняться дольше
+      title: |-
+        Получение графика с количеством подписок на рубрики с сегментцией по способам рассылки
+
+        График кешируется, первый запрос может выполняться дольше
     TV.Objects.Highcharts.Chart:
       type: object
       properties:
         categories:
-          title: Категории
-          description: Для обчных графиков это значения на оси X
+          title: |-
+            Категории
+
+            Для обчных графиков это значения на оси X
           type: array
           items:
             oneOf:
               - type: string
               - type: number
         series:
-          title: Набор серий
-          description: |-
+          title: |-
+            Набор серий
+
             Серия - это объект, выводимый на графике, например линия.
 
             Серия обязательно должна иметь поле data, в котором перечисляются значения для категорий. Значения должны идти в таком же порядке, что и
@@ -20021,8 +20257,10 @@ components:
         - categories
         - series
         - additionalData
-      title: Сокращенный тип с данными для вывода hightcharts
-      description: https://www.highcharts.com/
+      title: |-
+        Сокращенный тип с данными для вывода hightcharts
+
+        https://www.highcharts.com/
     Audit_2.Methods.Audit.Checker.Go.Edit:
       type: object
       properties:
@@ -20311,8 +20549,10 @@ components:
         - type_range
         - type_range_compare
         - project_id
-      title: Получение гостевой ссылки на просмотр индексации
-      description: Необходимо указать либо date1 и date2, либо dates (вместе указывать нельзя)
+      title: |-
+        Получение гостевой ссылки на просмотр индексации
+
+        Необходимо указать либо date1 и date2, либо dates (вместе указывать нельзя)
     Export_2.Types.Repository.Name:
       type: string
       enum:
@@ -20354,11 +20594,11 @@ components:
           title: Отобразить количество проверенных страниц
           type: boolean
         forChart:
-          title: Вернуть данные в формате для графика
-          description: |-
-            Недокументируемый параметр
+          title: |-
+            Вернуть данные в формате для графика
 
-            @private
+            Недокументируемый параметр
+          description: '@private'
           type: boolean
         project_id:
           $ref: '#/components/schemas/project_id'
@@ -20519,8 +20759,10 @@ components:
       required:
         - course_url
         - user_name
-      title: Создание сертификата
-      description: Можно создавать только для пройденных курсов
+      title: |-
+        Создание сертификата
+
+         Можно создавать только для пройденных курсов
     Content_2.Methods.Journal.Course.Certificates.Edit:
       type: object
       properties:
@@ -20533,8 +20775,10 @@ components:
       required:
         - course_url
         - user_name
-      title: Изменение сертификата
-      description: Можно менять только имя, если оно не указано
+      title: |-
+        Изменение сертификата
+
+        Можно менять только имя, если оно не указано
     Content_2.Methods.Journal.Course.Certificates.Get:
       type: object
       properties:
@@ -20566,8 +20810,9 @@ components:
         - orders
         - filters
         - offset
-      title: Получение модулей курса
-      description: |-
+      title: |-
+        Получение модулей курса
+
         Дополнительные поля:
          - lessons - см. includeLessons()
     Content_2.Methods.Journal.Dictionary.ArticlesByLetter.Get:
@@ -20646,8 +20891,10 @@ components:
         - orders
         - filters
         - offset
-      title: Экспорт регионов (CSV)
-      description: '- searcher_key, name_or_key (название или код)[, country_code (2 буквенный код страны), lang, device, depth]'
+      title: |-
+        Экспорт регионов (CSV)
+
+        - searcher_key, name_or_key (название или код)[, country_code (2 буквенный код страны), lang, device, depth]
     Positions_2.Methods.Searchers.Regions.Import.Add:
       type: object
       properties:
@@ -20655,8 +20902,9 @@ components:
           title: Id проекта
           type: integer
         regions:
-          title: Массив регионов в формате CSV
-          description: |-
+          title: |-
+            Массив регионов в формате CSV
+
             array regions - массив регионов в формате CSV
             file(csv) regions - файл с содержимым для импорта в формат CSV
             - нельзя передавать regions одновременно в виде массива и в виде файла
@@ -20735,14 +20983,16 @@ components:
       type: object
       properties:
         format:
-          title: Формат файла
-          description: |-
+          title: |-
+            Формат файла
+
             * pdf
             * png
           type: string
         output:
-          title: Возвращаемый формат
-          description: |-
+          title: |-
+            Возвращаемый формат
+
             * dataURL: вернуть в ответе как Data URL
             * inline вывести файл как есть
           nullable: true

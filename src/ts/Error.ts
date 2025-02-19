@@ -9,10 +9,9 @@ export interface components {
     schemas: {
         /** Информация об ошибке */
         Error: {
-            /**
-             * Код ошибки
-             * @description Код ошибки 0 - deprecated
-             */
+            /** Код ошибки
+             *
+             *     Код ошибки 0 - deprecated */
             code: number;
             /** Описание ошибки */
             string: string;

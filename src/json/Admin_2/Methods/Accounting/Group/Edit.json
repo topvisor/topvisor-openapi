@@ -41,8 +41,7 @@
                         "type": "string"
                     },
                     "type": {
-                        "title": "Тип",
-                        "description": "- plus\n- minus\n\nУказывать, когда указывается одно из следующих полей [counteragent_name, counteragent_inn, purpose]",
+                        "title": "Тип\n\n- plus\n- minus\n\nУказывать, когда указывается одно из следующих полей [counteragent_name, counteragent_inn, purpose]",
                         "nullable": true,
                         "type": "string"
                     }

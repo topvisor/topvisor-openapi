@@ -13,21 +13,20 @@ export interface components {
             project_id: number;
             /** Ключ ПС */
             searcher_key: import('../../../Types/SearcherKey.ts').components['schemas']['Positions_2.Types.SearcherKey'];
-            /**
-             * Ключ региона
-             * @description Для разных ПС список доступных регионов может быть разный
-             */
+            /** Ключ региона
+             *
+             *     Для разных ПС список доступных регионов может быть разный */
             region_key: number;
-            /**
-             * Язык региона
-             * @description Для разных ПС список языков разный
-             */
+            /** Язык региона
+             *
+             *     Для разных ПС список языков разный */
             region_lang?: string | null;
             /** Устройство региона */
             region_device?: import('../../../Types/RegionDevice.ts').components['schemas']['Positions_2.Types.RegionDevice'];
             /**
              * Глубина региона
-             * @description - 1-3 для Яндекса (ПК)
+             *
+             *     - 1-3 для Яндекса (ПК)
              *     - 1-10 для Google
              *     - 1-3 для GooglePlay
              * @default 1

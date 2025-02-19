@@ -7,12 +7,11 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /**
-         * Тип массива: boolean
-         * @description Принимает: 0|1|false|true
+        /** Тип массива: boolean
          *
-         *     Хранит: false|true
-         */
+         *     Принимает: 0|1|false|true
+         *
+         *     Хранит: false|true */
         "TV.API.Types.BoolArray": boolean[];
     };
     responses: never;

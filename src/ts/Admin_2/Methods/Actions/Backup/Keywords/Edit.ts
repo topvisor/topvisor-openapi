@@ -11,10 +11,9 @@ export interface components {
         "Admin_2.Methods.Actions.Backup.Keywords.Edit": {
             /** ID проекта */
             projectId: number;
-            /**
-             * Тип
-             * @description Может принимать одно из значений TYPES_SETTINGS_AVAILIBLE или TYPES_MOVE_AVAILIBLE
-             */
+            /** Тип
+             *
+             *     Может принимать одно из значений TYPES_SETTINGS_AVAILIBLE или TYPES_MOVE_AVAILIBLE */
             type: string;
             /** Дата бекапа */
             date: import('../../../../../TV/API/Types/Date.ts').components['schemas']['TV.API.Types.Date'];

@@ -7,18 +7,17 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /**
-         * Экспорт результатов индексации
-         * @description Необходимо указать либо date1 и date2, либо dates (вместе указывать нельзя)
-         */
+        /** Экспорт результатов индексации
+         *
+         *     Необходимо указать либо date1 и date2, либо dates (вместе указывать нельзя) */
         "Audit_2.Methods.Indexing.Export.Get": {
             /** Поисковые системы */
             searchers_keys: import('../../../Types/Indexing/SearcherKeys.ts').components['schemas']['Audit_2.Types.Indexing.SearcherKeys'];
             /**
              * Если указан, файл будет сохранен в указанной папке и будет возвращен путь к файлу
-             * @description Для внутреннего использования
              *
-             *     @private
+             *     Для внутреннего использования
+             * @description @private
              */
             returnFilenameFromFolder?: string | null;
             /** Формат экспортируемого файла */

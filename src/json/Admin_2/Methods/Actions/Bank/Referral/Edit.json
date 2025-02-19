@@ -15,8 +15,7 @@
                         "type": "integer"
                     },
                     "entityId": {
-                        "title": "ID акта",
-                        "description": "Укажите `sum=`, если API не раблотает и данных акта нет",
+                        "title": "ID акта\n\nУкажите `sum=`, если API не раблотает и данных акта нет",
                         "nullable": true,
                         "type": "string"
                     },

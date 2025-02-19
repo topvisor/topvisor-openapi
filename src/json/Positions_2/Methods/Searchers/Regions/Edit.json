@@ -19,8 +19,7 @@
                         "type": "integer"
                     },
                     "region_lang": {
-                        "title": "Язык региона",
-                        "description": "Для разных ПС список языков разный",
+                        "title": "Язык региона\n\nДля разных ПС список языков разный",
                         "nullable": true,
                         "type": "string"
                     },
@@ -34,8 +33,7 @@
                         ]
                     },
                     "region_depth": {
-                        "title": "Глубина региона",
-                        "description": "- 1-3 для Яндекса (ПК)\n- 1-10 для Google\n- 1-3 для GooglePlay",
+                        "title": "Глубина региона\n\n- 1-3 для Яндекса (ПК)\n- 1-10 для Google\n- 1-3 для GooglePlay",
                         "nullable": true,
                         "type": "integer"
                     },

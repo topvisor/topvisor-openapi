@@ -11,13 +11,11 @@
                 "type": "object",
                 "properties": {
                     "format": {
-                        "title": "Формат файла",
-                        "description": "* pdf\n* png",
+                        "title": "Формат файла\n\n* pdf\n* png",
                         "type": "string"
                     },
                     "output": {
-                        "title": "Возвращаемый формат",
-                        "description": "* dataURL: вернуть в ответе как Data URL\n* inline вывести файл как есть",
+                        "title": "Возвращаемый формат\n\n* dataURL: вернуть в ответе как Data URL\n* inline вывести файл как есть",
                         "nullable": true,
                         "type": "string"
                     },

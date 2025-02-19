@@ -12,12 +12,11 @@ export interface components {
             date: import('../../../TV/API/Types/Date.ts').components['schemas']['TV.API.Types.Date'];
             period: import('../../Types/Analytics/Segment.ts').components['schemas']['Admin_2.Types.Analytics.Segment'];
             currency: import('../../../TV/API/Types/Currency.ts').components['schemas']['TV.API.Types.Currency'];
-            /**
-             * Имя поля
-             * @description - sum
+            /** Имя поля
+             *
+             *     - sum
              *     - discount
-             *     - count_users
-             */
+             *     - count_users */
             field_name: string;
             /** Длина периода */
             limit?: number | null;

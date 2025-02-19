@@ -11,14 +11,13 @@ export interface components {
         "Admin_2.Methods.Actions.Projects.Domain.Edit": {
             /** ID пользователя */
             userId: number;
-            /**
-             * Список для замены
-             * @description Пример: ```
+            /** Список для замены
+             *
+             *     Пример: ```
              *     example.com;example2.com
              *     example3.com;example4.com
              *     12345;example5.com
-             *     ```
-             */
+             *     ``` */
             projects: string;
             /** Изменить ли имена проектов */
             needRenameProject: boolean;

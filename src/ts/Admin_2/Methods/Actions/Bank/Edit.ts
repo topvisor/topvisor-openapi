@@ -9,12 +9,11 @@ export interface components {
     schemas: {
         /** Создание и проведение транзакции */
         "Admin_2.Methods.Actions.Bank.Edit": {
-            /**
-             * Операция
-             * @description - 2: бонусное пополнение
+            /** Операция
+             *
+             *     - 2: бонусное пополнение
              *     - 1: пополнение
-             *     - -1: списание
-             */
+             *     - -1: списание */
             action: number;
             /** ID пользователя */
             userId: number;

@@ -20,13 +20,12 @@ export interface components {
             counteragent_inn?: string | null;
             /** Назначение операции (для фильтра) */
             purpose?: string | null;
-            /**
-             * Тип
-             * @description - plus
+            /** Тип
+             *
+             *     - plus
              *     - minus
              *
-             *     Указывать, когда указывается одно из следующих полей [counteragent_name, counteragent_inn, purpose]
-             */
+             *     Указывать, когда указывается одно из следующих полей [counteragent_name, counteragent_inn, purpose] */
             type?: string | null;
         };
     };

@@ -11,9 +11,9 @@ export interface components {
         "Audit_2.Methods.Settings.Edit": {
             /**
              * User-Agent (аудит)
-             * @description Можно указать id устройства
              *
-             *     @see Audit_2\Types\Settings\Device
+             *     Можно указать id устройства
+             * @description @see Audit_2\Types\Settings\Device
              */
             audit_user_agent?: string | null;
             /** Сохранять куки между запросами (аудит) */
@@ -44,9 +44,9 @@ export interface components {
             indexing_searchers_keys?: import('../../Types/Indexing/SearcherKeys.ts').components['schemas']['Audit_2.Types.Indexing.SearcherKeys'] | null;
             /**
              * User-Agent (радар)
-             * @description Можно указать id устройства
              *
-             *     @see Audit_2\Types\Settings\Device
+             *     Можно указать id устройства
+             * @description @see Audit_2\Types\Settings\Device
              */
             watcher_user_agent?: string | null;
             watcher_max_redirects?: number | null;
@@ -54,9 +54,9 @@ export interface components {
             watcher_types?: import('../../Types/Settings/WatcherTypes.ts').components['schemas']['Audit_2.Types.Settings.WatcherTypes'] | null;
             /**
              * Регулярное выражение для сбора контента (радар)
-             * @description Если не указано, будут ипользоваться теги разметки
              *
-             *     @see https://topvisor.com/support/watcher/settings/#tags
+             *     Если не указано, будут ипользоваться теги разметки
+             * @description @see https://topvisor.com/support/watcher/settings/#tags
              */
             watcher_regexp?: import('../../../TV/API/Types/RegExp.ts').components['schemas']['TV.API.Types.RegExp'] | null;
             /** Вырезать из кода страницы javascript (радар) */

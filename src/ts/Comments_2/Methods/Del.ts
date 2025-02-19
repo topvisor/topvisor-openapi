@@ -7,12 +7,11 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /**
-         * Удаление комментария
-         * @description Удалять комментарии можно только в течение ограниченного времени
+        /** Удаление комментария
          *
-         *     Админы могут удалять комментарии в любое время
-         */
+         *     Удалять комментарии можно только в течение ограниченного времени
+         *
+         *     Админы могут удалять комментарии в любое время */
         "Comments_2.Methods.Del": {
             /** ID комментария */
             id: number;

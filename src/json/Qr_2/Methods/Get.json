@@ -15,8 +15,7 @@
                         "type": "string"
                     },
                     "tpl_n": {
-                        "title": "Кодируемый текст",
-                        "description": "- 0 - черно-белый\n- 1 - шашечки\n- 2 - группы с закруглениями",
+                        "title": "Кодируемый текст\n\n- 0 - черно-белый\n- 1 - шашечки\n- 2 - группы с закруглениями",
                         "allOf": [
                             {
                                 "$ref": "../../Qr_2/Types/TplN.json#/components/schemas/Qr_2.Types.TplN"
@@ -55,8 +54,7 @@
                 "required": [
                     "text"
                 ],
-                "title": "Генерация QR кода по тексту",
-                "description": "Возвращает изображение в формате data:image/png;base64"
+                "title": "Генерация QR кода по тексту\n\nВозвращает изображение в формате data:image/png;base64"
             }
         }
     }

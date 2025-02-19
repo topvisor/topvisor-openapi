@@ -38,8 +38,7 @@
                     "filters",
                     "offset"
                 ],
-                "title": "Получение модулей курса",
-                "description": "Дополнительные поля:\n - lessons - см. includeLessons()"
+                "title": "Получение модулей курса\n\nДополнительные поля:\n - lessons - см. includeLessons()"
             }
         }
     }

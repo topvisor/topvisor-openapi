@@ -15,8 +15,7 @@
                         "type": "integer"
                     },
                     "currency": {
-                        "title": "Валюта партнеров",
-                        "description": "- RUB\n - USD",
+                        "title": "Валюта партнеров\n\n - RUB\n - USD",
                         "allOf": [
                             {
                                 "$ref": "../../../../TV/API/Types/Currency.json#/components/schemas/TV.API.Types.Currency"

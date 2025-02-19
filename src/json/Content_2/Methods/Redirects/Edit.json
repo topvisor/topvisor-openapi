@@ -19,13 +19,11 @@
                         "type": "string"
                     },
                     "site": {
-                        "title": "Сайт",
-                        "description": "* topvisor\n* thundo",
+                        "title": "Сайт\n\n* topvisor\n* thundo",
                         "type": "string"
                     },
                     "subdomain": {
-                        "title": "С поддомена",
-                        "description": "* 'journal'\n* ''",
+                        "title": "С поддомена\n\n* 'journal'\n* ''",
                         "type": "string"
                     },
                     "path_mask": {

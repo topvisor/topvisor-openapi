@@ -11,8 +11,7 @@
                 "type": "object",
                 "properties": {
                     "fields": {
-                        "title": "Поля",
-                        "description": "- date\n- count_messages\n- count_tickets\n- count_messages_user:%userId%\n- percent_messages_user:%userId%\n- vacations_by_user_id",
+                        "title": "Поля\n\n- date\n- count_messages\n- count_tickets\n- count_messages_user:%userId%\n- percent_messages_user:%userId%\n- vacations_by_user_id",
                         "type": "array",
                         "items": {
                             "oneOf": [

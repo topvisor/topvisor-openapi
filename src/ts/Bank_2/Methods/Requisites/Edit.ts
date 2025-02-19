@@ -11,10 +11,9 @@ export interface components {
         "Bank_2.Methods.Requisites.Edit": {
             /** Id реквезитов */
             id: string;
-            /**
-             * Данные реквезитов
-             * @description см. объект Bank_2\Objects\Requisites
-             */
+            /** Данные реквезитов
+             *
+             *     см. объект Bank_2\Objects\Requisites */
             data: string;
         };
     };

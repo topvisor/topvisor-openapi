@@ -20,9 +20,9 @@ export interface components {
             show_counts_all?: boolean;
             /**
              * Вернуть данные в формате для графика
-             * @description Недокументируемый параметр
              *
-             *     @private
+             *     Недокументируемый параметр
+             * @description @private
              */
             forChart?: boolean;
             project_id: import('../../../../TV/API/Params/ProjectIdTrait.ts').components['schemas']['TV.API.Params.ProjectIdTrait']['project_id'];

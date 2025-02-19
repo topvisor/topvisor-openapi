@@ -13,16 +13,14 @@ export interface components {
             show_owner_balance?: boolean | null;
             /** Добавить ли в результат дополнительно собираемую инфомрацию (Яндекс ИКС) */
             show_site_stat?: boolean | null;
-            /**
-             * Добавить в результат список ПС и Регионов, привязанных к проекту
-             * @description - 1 - включенные
-             *     - 2 - все
-             */
+            /** Добавить в результат список ПС и Регионов, привязанных к проекту
+             *
+             *     - 1 - включенные
+             *     - 2 - все */
             show_searchers_and_regions?: number;
-            /**
-             * Добавить в результат сводку с указанными параметрами
-             * @description Параметры см. positions_2::get/summary
-             */
+            /** Добавить в результат сводку с указанными параметрами
+             *
+             *     Параметры см. positions_2::get/summary */
             include_positions_summary_params?: (string | number)[] | null;
             fields: import('../../../TV/API/Params/FieldsTrait.ts').components['schemas']['TV.API.Params.FieldsTrait']['fields'];
             orders: import('../../../TV/API/Params/OrdersTrait.ts').components['schemas']['TV.API.Params.OrdersTrait']['orders'];

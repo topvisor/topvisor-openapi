@@ -10,12 +10,12 @@ export interface components {
         "TV.API.Params.FetchStyleTrait": {
             /**
              * Определяет формат результата: коллекция, объект, значение
-             * @description Примеры:
+             *
+             *     Примеры:
              *     - fetchAll - получить коллекцию объектов
              *     - fetch - получить один объект
              *     - fetchColumn - получить свойсвто объекта
-             *
-             *     @see Selector::AVAILABLE_FETCH_STYLES
+             * @description @see Selector::AVAILABLE_FETCH_STYLES
              *     @see Selector::execFetch() - см. реализацию
              */
             fetch_style?: string | null;

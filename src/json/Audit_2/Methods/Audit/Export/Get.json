@@ -18,8 +18,7 @@
                         ]
                     },
                     "filters_resources_target_type": {
-                        "title": "Тип отчета для фильтра по ресурсам страницы",
-                        "description": "Только для $target_type = pages",
+                        "title": "Тип отчета для фильтра по ресурсам страницы\n\nТолько для $target_type = pages",
                         "nullable": true,
                         "allOf": [
                             {
@@ -28,8 +27,7 @@
                         ]
                     },
                     "filters_resources": {
-                        "title": "Фильтр по ресурсам страницы, API fitlers для объекта, тип которого указан в filters_extra_target_type",
-                        "description": "Только для $target_type = pages",
+                        "title": "Фильтр по ресурсам страницы, API fitlers для объекта, тип которого указан в filters_extra_target_type\n\nТолько для $target_type = pages",
                         "type": "array",
                         "items": {
                             "oneOf": [

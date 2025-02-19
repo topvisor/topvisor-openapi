@@ -11,13 +11,12 @@ export interface components {
         "Admin_2.Methods.Staff.Access.Edit": {
             /** ID пользователя */
             user_id: number;
-            /**
-             * Название доступа
-             * @description - ftp
+            /** Название доступа
+             *
+             *     - ftp
              *     - mysql
              *     - vpn
-             *     - httpAuth
-             */
+             *     - httpAuth */
             name: string;
             /** Подкатегория доступа */
             category: string;

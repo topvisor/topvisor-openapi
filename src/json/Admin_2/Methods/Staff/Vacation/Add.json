@@ -31,8 +31,7 @@
                         ]
                     },
                     "type": {
-                        "title": "Тип",
-                        "description": "- vacation\n- day_off",
+                        "title": "Тип\n\n- vacation\n- day_off",
                         "type": "array",
                         "items": {
                             "oneOf": [

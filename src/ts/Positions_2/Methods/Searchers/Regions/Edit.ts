@@ -13,19 +13,17 @@ export interface components {
             project_id: number;
             /** Регион, который требуется изменить */
             region_index: number;
-            /**
-             * Язык региона
-             * @description Для разных ПС список языков разный
-             */
+            /** Язык региона
+             *
+             *     Для разных ПС список языков разный */
             region_lang?: string | null;
             /** Устройство региона */
             region_device?: import('../../../Types/RegionDevice.ts').components['schemas']['Positions_2.Types.RegionDevice'] | null;
-            /**
-             * Глубина региона
-             * @description - 1-3 для Яндекса (ПК)
+            /** Глубина региона
+             *
+             *     - 1-3 для Яндекса (ПК)
              *     - 1-10 для Google
-             *     - 1-3 для GooglePlay
-             */
+             *     - 1-3 для GooglePlay */
             region_depth?: number | null;
             /** Включен */
             enabled?: boolean | null;

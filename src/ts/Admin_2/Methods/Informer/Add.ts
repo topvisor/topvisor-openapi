@@ -8,20 +8,18 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         "Admin_2.Methods.Informer.Add": {
-            /**
-             * Тип рассылки
-             * @description - me
+            /** Тип рассылки
+             *
+             *     - me
              *     - admin
              *     - news
-             *     - api
-             */
+             *     - api */
             type: string;
-            /**
-             * Канал рассылки
-             * @description - all
+            /** Канал рассылки
+             *
+             *     - all
              *     - email
-             *     - informer
-             */
+             *     - informer */
             send_in: string;
             lang: import('../../../TV/API/Types/Lang.ts').components['schemas']['TV.API.Types.Lang'];
             /** Объект отправки */

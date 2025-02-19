@@ -13,36 +13,32 @@ export interface components {
             project_id: number;
             /** Собирать ли снипиты */
             with_snippets?: boolean | null;
-            /**
-             * Глубина сбора снимков
-             * @description enum(0..9)
+            /** Глубина сбора снимков
+             *
+             *     enum(0..9)
              *     - 0: не собирать
              *     - 1: 10
              *     - 8: 80
-             *     - 9: 100
-             */
+             *     - 9: 100 */
             do_snapshots?: number | null;
             /** Собирать ли сниппеты в снимках */
             do_snapshots_with_snippets?: boolean | null;
-            /**
-             * Учитывать ли поддомены при проверке
-             * @description - 1: находить позиции сайта, являющиеся поддоменом к основному
-             */
+            /** Учитывать ли поддомены при проверке
+             *
+             *     - 1: находить позиции сайта, являющиеся поддоменом к основному */
             subdomains?: boolean | null;
-            /**
-             * Ограничения
-             * @description - 0: без ограничений
+            /** Ограничения
+             *
+             *     - 0: без ограничений
              *     - 1: умеренный
-             *     - 2: семейный поиск
-             */
+             *     - 2: семейный поиск */
             filter?: number | null;
             /** Учитывать ли регион */
             auto_correct?: boolean | null;
-            /**
-             * Способ получения трафика
-             * @description - 0: с учетом регионов
-             *     - 1: без учета регионов
-             */
+            /** Способ получения трафика
+             *
+             *     - 0: с учетом регионов
+             *     - 1: без учета регионов */
             common_traffic?: boolean | null;
             /** Права для гостевых ссылок */
             guest_link_right?: import('../../Types/Settings/GuestLinkRights.ts').components['schemas']['Positions_2.Types.Settings.GuestLinkRights'] | null;

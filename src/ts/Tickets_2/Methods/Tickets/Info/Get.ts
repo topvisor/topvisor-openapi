@@ -7,10 +7,9 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /**
-         * Получение краткой информации о тикетах
-         * @description id последнего непрочитанного тикета, число непрочитанных тикетов
-         */
+        /** Получение краткой информации о тикетах
+         *
+         *     id последнего непрочитанного тикета, число непрочитанных тикетов */
         "Tickets_2.Methods.Tickets.Info.Get": Record<string, never>;
     };
     responses: never;

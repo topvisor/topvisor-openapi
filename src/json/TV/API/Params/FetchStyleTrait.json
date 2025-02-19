@@ -11,8 +11,8 @@
                 "type": "object",
                 "properties": {
                     "fetch_style": {
-                        "title": "Определяет формат результата: коллекция, объект, значение",
-                        "description": "Примеры:\n- fetchAll - получить коллекцию объектов\n- fetch - получить один объект\n- fetchColumn - получить свойсвто объекта\n\n@see Selector::AVAILABLE_FETCH_STYLES\n@see Selector::execFetch() - см. реализацию",
+                        "title": "Определяет формат результата: коллекция, объект, значение\n\nПримеры:\n- fetchAll - получить коллекцию объектов\n- fetch - получить один объект\n- fetchColumn - получить свойсвто объекта",
+                        "description": "@see Selector::AVAILABLE_FETCH_STYLES\n@see Selector::execFetch() - см. реализацию",
                         "nullable": true,
                         "type": "string"
                     }

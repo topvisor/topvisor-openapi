@@ -11,11 +11,10 @@ export interface components {
         "Admin_2.Methods.Accounting.Group.Filter.Add": {
             /** Id группы */
             group_id: number;
-            /**
-             * Тип
-             * @description - plus
-             *     - minus
-             */
+            /** Тип
+             *
+             *     - plus
+             *     - minus */
             type: string;
             /** Имя контрагента */
             counteragent_name: string;

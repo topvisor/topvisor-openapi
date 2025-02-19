@@ -13,10 +13,9 @@ export interface components {
             target_id: string;
             /** Тип документа enum(RequisitesDocuments::$availableDocumentsTypes) */
             type: string;
-            /**
-             * Использовать подпись
-             * @description Если true, то документ с подписью (не распространяется на договоры)
-             */
+            /** Использовать подпись
+             *
+             *     Если true, то документ с подписью (не распространяется на договоры) */
             signed?: boolean;
             fields: import('../../../../TV/API/Params/FieldsTrait.ts').components['schemas']['TV.API.Params.FieldsTrait']['fields'];
             orders: import('../../../../TV/API/Params/OrdersTrait.ts').components['schemas']['TV.API.Params.OrdersTrait']['orders'];

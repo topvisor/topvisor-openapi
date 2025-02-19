@@ -7,10 +7,9 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /**
-         * Получение гостевой ссылки на просмотр индексации
-         * @description Необходимо указать либо date1 и date2, либо dates (вместе указывать нельзя)
-         */
+        /** Получение гостевой ссылки на просмотр индексации
+         *
+         *     Необходимо указать либо date1 и date2, либо dates (вместе указывать нельзя) */
         "Audit_2.Methods.Indexing.Export.Links.Get": {
             /** Поисковые ключи */
             searchers_keys?: (string | number)[] | null;

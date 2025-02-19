@@ -45,8 +45,8 @@
                         "type": "boolean"
                     },
                     "forChart": {
-                        "title": "Вернуть данные в формате для графика",
-                        "description": "Недокументируемый параметр\n\n@private",
+                        "title": "Вернуть данные в формате для графика\n\nНедокументируемый параметр",
+                        "description": "@private",
                         "type": "boolean"
                     },
                     "project_id": {

@@ -10,11 +10,11 @@ export interface components {
         "TV.API.Params.OrdersTrait": {
             /**
              * Список полей объекта, по которым необходимо выполнить сортировку
-             * @description Поля могут быть строками или объектом: {name: string, direction: 'ASC' | 'DESC', orderValues: array}
+             *
+             *     Поля могут быть строками или объектом: {name: string, direction: 'ASC' | 'DESC', orderValues: array}
              *
              *     Использует поля модели
-             *
-             *     @see AbstractMethod::MODEL
+             * @description @see AbstractMethod::MODEL
              */
             orders: (string | number)[];
         };

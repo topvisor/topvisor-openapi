@@ -7,10 +7,9 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /**
-         * Отправка акта сверки в диадок
-         * @description Параметры см. в bank_2_requisites::protected_get_printTotalReceipt();
-         */
+        /** Отправка акта сверки в диадок
+         *
+         *     Параметры см. в bank_2_requisites::protected_get_printTotalReceipt(); */
         "Bank_2.Methods.Diadoc.SendTotalReceipt.Get": {
             /** Id организации */
             org_id: string;
@@ -22,10 +21,9 @@ export interface components {
             org_kpp?: string | null;
             /** Id договора */
             requisites_id?: string | null;
-            /**
-             * Использовать подпись
-             * @description Если true, то документ с подписью (не распространяется на договоры)
-             */
+            /** Использовать подпись
+             *
+             *     Если true, то документ с подписью (не распространяется на договоры) */
             signed?: boolean;
             fields: import('../../../../TV/API/Params/FieldsTrait.ts').components['schemas']['TV.API.Params.FieldsTrait']['fields'];
             orders: import('../../../../TV/API/Params/OrdersTrait.ts').components['schemas']['TV.API.Params.OrdersTrait']['orders'];

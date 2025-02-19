@@ -400,8 +400,7 @@
                 "tags": [
                     "Comments_2"
                 ],
-                "summary": "Удаление комментария",
-                "description": "Удалять комментарии можно только в течение ограниченного времени\n\nАдмины могут удалять комментарии в любое время",
+                "summary": "Удаление комментария\n\nУдалять комментарии можно только в течение ограниченного времени\n\nАдмины могут удалять комментарии в любое время",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -459,8 +458,7 @@
                 "tags": [
                     "Comments_2"
                 ],
-                "summary": "Изменение комментария",
-                "description": "Изменять комментарий можно только в течение ограниченного времени",
+                "summary": "Изменение комментария\n\nИзменять комментарий можно только в течение ограниченного времени",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -518,8 +516,7 @@
                 "tags": [
                     "Comments_2"
                 ],
-                "summary": "Получение комментариев",
-                "description": "Возвращает набор комментариев со всеми подкомменатриями, limit, offset не виляют на получение вложенных комментариев",
+                "summary": "Получение комментариев\n\nВозвращает набор комментариев со всеми подкомменатриями, limit, offset не виляют на получение вложенных комментариев",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -590,8 +587,7 @@
                 "tags": [
                     "Payments_2"
                 ],
-                "summary": "Создание платежки и переход к оплате",
-                "description": "Возвращает id платежа, если указан параметр $return_id = true\n\nПроизводит редирект, если настроена форма оплаты на стороне платежной системы\n\nВозвращает информацию о платеже, если ожидается вывод формы оплаты на сайте\n\nПри ошибке производит редирект на страницу с инофрмацией об ошибке",
+                "summary": "Создание платежки и переход к оплате\n\nВозвращает id платежа, если указан параметр $return_id = true\n\nПроизводит редирект, если настроена форма оплаты на стороне платежной системы\n\nВозвращает информацию о платеже, если ожидается вывод формы оплаты на сайте\n\nПри ошибке производит редирект на страницу с инофрмацией об ошибке",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -707,8 +703,7 @@
                 "tags": [
                     "Qr_2"
                 ],
-                "summary": "Генерация QR кода по тексту",
-                "description": "Возвращает изображение в формате data:image/png;base64",
+                "summary": "Генерация QR кода по тексту\n\nВозвращает изображение в формате data:image/png;base64",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -1335,7 +1330,7 @@
                                                     "type": "object",
                                                     "properties": {
                                                         "result": {
-                                                            "title": "Запрещено делать публичной, это приведет к поломке preCall()\n\nВ описании к функции отвечать на вопрос: `Что является результатом запроса?` Например: `Список пользователей`\n\nTODO: Автоматической проверки нет, не менять protected"
+                                                            "title": "Непосредтсвенный вызов API функции\n\nЗапрещено делать публичной, это приведет к поломке preCall()\n\nВ описании к функции отвечать на вопрос: `Что является результатом запроса?` Например: `Список пользователей`\n\nTODO: Автоматической проверки нет, не менять protected"
                                                         }
                                                     },
                                                     "required": [
@@ -2273,8 +2268,7 @@
                 "tags": [
                     "App_2"
                 ],
-                "summary": "Получение данных подтверждения",
-                "description": "Возвращает результат подтверждения в виде\nмассива с сообщением (acceptAction),\nлогической переменной (acceptEmail),\nnull при неправильно введенном типе",
+                "summary": "Получение данных подтверждения\n\nВозвращает результат подтверждения в виде\nмассива с сообщением (acceptAction),\nлогической переменной (acceptEmail),\nnull при неправильно введенном типе",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -2447,8 +2441,7 @@
                 "tags": [
                     "Audit_2"
                 ],
-                "summary": "Получение отчета по проверке индексации",
-                "description": "Необходимо указать либо date1 и date2, либо dates (вместе указывать нельзя)",
+                "summary": "Получение отчета по проверке индексации\n\nНеобходимо указать либо date1 и date2, либо dates (вместе указывать нельзя)",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -2643,8 +2636,7 @@
                 "tags": [
                     "Audit_2"
                 ],
-                "summary": "Получение результатов проверок радара",
-                "description": "Отчет генерируется на основе объектов urls\n\nНеобходимо указать либо check_id1 и check_id2, либо checks_ids (вместе указывать нельзя)",
+                "summary": "Получение результатов проверок радара\n\nОтчет генерируется на основе объектов urls\n\nНеобходимо указать либо check_id1 и check_id2, либо checks_ids (вместе указывать нельзя)",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -3266,8 +3258,7 @@
                 "tags": [
                     "Comments_2"
                 ],
-                "summary": "Редактирование статуса лайка для комментария",
-                "description": "Возвращает результат редактирования статуса лайка",
+                "summary": "Редактирование статуса лайка для комментария\n\nВозвращает результат редактирования статуса лайка",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -3466,7 +3457,7 @@
                                                     "type": "object",
                                                     "properties": {
                                                         "result": {
-                                                            "title": "Запрещено делать публичной, это приведет к поломке preCall()\n\nВ описании к функции отвечать на вопрос: `Что является результатом запроса?` Например: `Список пользователей`\n\nTODO: Автоматической проверки нет, не менять protected"
+                                                            "title": "Непосредтсвенный вызов API функции\n\nЗапрещено делать публичной, это приведет к поломке preCall()\n\nВ описании к функции отвечать на вопрос: `Что является результатом запроса?` Например: `Список пользователей`\n\nTODO: Автоматической проверки нет, не менять protected"
                                                         }
                                                     },
                                                     "required": [
@@ -3739,8 +3730,7 @@
                 "tags": [
                     "Content_2"
                 ],
-                "summary": "Получение RSS раздела сайта",
-                "description": "Для выборки страниц используется модель: Pages",
+                "summary": "Получение RSS раздела сайта\n\nДля выборки страниц используется модель: Pages",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -4559,8 +4549,8 @@
                 "tags": [
                     "Openapi_2"
                 ],
-                "summary": "Создать Open API схемы и скачать в zip",
-                "description": "В результате вернет zip файл в потоке вывода\n\n@see https://editor.swagger.io/ Редактор Open API",
+                "summary": "Создать Open API схемы и скачать в zip\n\nВ результате вернет zip файл в потоке вывода",
+                "description": "@see https://editor.swagger.io/ Редактор Open API",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -5312,8 +5302,7 @@
                 "tags": [
                     "Projects_2"
                 ],
-                "summary": "Добавление конкурента",
-                "description": "Ограничения: не более Projects_2\\Competitors::MAX_COMPETITORS_PER_PROJECT конкурентов в одном проекте",
+                "summary": "Добавление конкурента\n\nОграничения: не более Projects_2\\Competitors::MAX_COMPETITORS_PER_PROJECT конкурентов в одном проекте",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -5381,8 +5370,7 @@
                 "tags": [
                     "Projects_2"
                 ],
-                "summary": "Удаление конкурентов",
-                "description": "Обязательный параметр или ids или urls",
+                "summary": "Удаление конкурентов\n\nОбязательный параметр или ids или urls",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -6227,8 +6215,7 @@
                 "tags": [
                     "Tickets_2"
                 ],
-                "summary": "Загрузка файла на сервер",
-                "description": "Процесс создания сообщения в тикет не завершен",
+                "summary": "Загрузка файла на сервер\n\nПроцесс создания сообщения в тикет не завершен",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -6286,8 +6273,7 @@
                 "tags": [
                     "Tickets_2"
                 ],
-                "summary": "Удаление временных файлов для тикета",
-                "description": "Процесс создания поста не завершен",
+                "summary": "Удаление временных файлов для тикета\n\nПроцесс создания поста не завершен",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -6345,8 +6331,7 @@
                 "tags": [
                     "Tickets_2"
                 ],
-                "summary": "Получение списка временных файлов, загруженных для тикета",
-                "description": "Процесс создания поста не завершен",
+                "summary": "Получение списка временных файлов, загруженных для тикета\n\nПроцесс создания поста не завершен",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -6746,8 +6731,7 @@
                 "tags": [
                     "Urls_2"
                 ],
-                "summary": "Импортирование urls",
-                "description": "Доступные поля для импорта:\n- url\n- sitemap\n- audit\n- indexing\n- watcher\n- tags",
+                "summary": "Импортирование urls\n\nДоступные поля для импорта:\n- url\n- sitemap\n- audit\n- indexing\n- watcher\n- tags",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -6782,7 +6766,7 @@
                                                                     }
                                                                 ]
                                                             },
-                                                            "title": "@return ?array{countSended: int, countDuplicated: int, countAdded: int, countChanged: int}\n\n@throws Exception"
+                                                            "title": "@return ?array{'countSended': int, 'countDuplicated': int, 'countAdded': int, 'countChanged': int}\n\n@throws Exception"
                                                         }
                                                     },
                                                     "required": [
@@ -6875,8 +6859,7 @@
                 "tags": [
                     "Votes_2"
                 ],
-                "summary": "Добавление комментария к отзыву",
-                "description": "Оставить комментарий можно в течение часа поосле выставления оценки",
+                "summary": "Добавление комментария к отзыву\n\nОставить комментарий можно в течение часа поосле выставления оценки",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -8655,7 +8638,7 @@
                                                     "type": "object",
                                                     "properties": {
                                                         "result": {
-                                                            "title": "Запрещено делать публичной, это приведет к поломке preCall()\n\nВ описании к функции отвечать на вопрос: `Что является результатом запроса?` Например: `Список пользователей`\n\nTODO: Автоматической проверки нет, не менять protected"
+                                                            "title": "Непосредтсвенный вызов API функции\n\nЗапрещено делать публичной, это приведет к поломке preCall()\n\nВ описании к функции отвечать на вопрос: `Что является результатом запроса?` Например: `Список пользователей`\n\nTODO: Автоматической проверки нет, не менять protected"
                                                         }
                                                     },
                                                     "required": [
@@ -9539,8 +9522,7 @@
                 "tags": [
                     "Admin_2"
                 ],
-                "summary": "Получение промокодов",
-                "description": "В params хранится строка в формате:\n- {{ rank_id }}\n- {{ rank_id }},single_code - для многоразового кода",
+                "summary": "Получение промокодов\n\nВ params хранится строка в формате:\n- {{ rank_id }}\n- {{ rank_id }},single_code - для многоразового кода",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -10390,7 +10372,7 @@
                                                                 "$ref": "Models/Audit/Checks.json#/components/schemas/Models.Audit.Checks",
                                                                 "description": "Only for typescript, does not contain real data"
                                                             },
-                                                            "title": "Возвращает объект со сводкой по категориям, пример:\n - `$res['all']['all']['count_checks_success']` - количество пройденных проверок во всех категориях\n - `$res['pages']['indexing']['count_checks_success']` - количество пройденных проверок в категории Страницы / Индексация\n - `$res['all']['all']['count_checks_success']` - количество пройденных проверок во всех категориях"
+                                                            "title": "Сводка о выполненном аудите\n\nВозвращает объект со сводкой по категориям, пример:\n - `$res['all']['all']['count_checks_success']` - количество пройденных проверок во всех категориях\n - `$res['pages']['indexing']['count_checks_success']` - количество пройденных проверок в категории Страницы / Индексация\n - `$res['all']['all']['count_checks_success']` - количество пройденных проверок во всех категориях"
                                                         }
                                                     },
                                                     "required": [
@@ -10495,8 +10477,7 @@
                 "tags": [
                     "Audit_2"
                 ],
-                "summary": "Экспорт результатов индексации",
-                "description": "Необходимо указать либо date1 и date2, либо dates (вместе указывать нельзя)",
+                "summary": "Экспорт результатов индексации\n\nНеобходимо указать либо date1 и date2, либо dates (вместе указывать нельзя)",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -10555,8 +10536,7 @@
                 "tags": [
                     "Audit_2"
                 ],
-                "summary": "Создание гостевой ссылки на просмотр позиций",
-                "description": "Необходимо указать либо date1 и date2, либо dates (вместе указывать нельзя)",
+                "summary": "Создание гостевой ссылки на просмотр позиций\n\nНеобходимо указать либо date1 и date2, либо dates (вместе указывать нельзя)",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -10684,8 +10664,7 @@
                 "tags": [
                     "Audit_2"
                 ],
-                "summary": "Построение отчета по одному URL",
-                "description": "Отличия от get/audit_2/watcher:\n- отчет генерируется на основе объекта watcher_results, а не urls\n- параметры выбора периода отчета игнорируются\n- выбор прверок регулируется параметрами запроса filters, limit и offset",
+                "summary": "Построение отчета по одному URL\n\nОтличия от get/audit_2/watcher:\n- отчет генерируется на основе объекта watcher_results, а не urls\n- параметры выбора периода отчета игнорируются\n- выбор прверок регулируется параметрами запроса filters, limit и offset",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -10951,8 +10930,7 @@
                 "tags": [
                     "Bank_2"
                 ],
-                "summary": "Отправка акта сверки в диадок",
-                "description": "Параметры см. в bank_2_requisites::protected_get_printTotalReceipt();",
+                "summary": "Отправка акта сверки в диадок\n\nПараметры см. в bank_2_requisites::protected_get_printTotalReceipt();",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -11549,8 +11527,7 @@
                 "tags": [
                     "Content_2"
                 ],
-                "summary": "Получение инофрмации о курсах",
-                "description": "Параметры выборки основаны на модели Models\\Pages",
+                "summary": "Получение инофрмации о курсах\n\nПараметры выборки основаны на модели Models\\Pages",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -12750,8 +12727,7 @@
                 "tags": [
                     "Projects_2"
                 ],
-                "summary": "Переместить папку",
-                "description": "Вложенные папки запрещены, поэтому перемещение происходит только в пределах одного списка",
+                "summary": "Переместить папку\n\nВложенные папки запрещены, поэтому перемещение происходит только в пределах одного списка",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -12863,8 +12839,7 @@
                 "tags": [
                     "Projects_2"
                 ],
-                "summary": "Получить подсазки конкурентов для добавления в проект",
-                "description": "Доступ по API закрыт",
+                "summary": "Получить подсазки конкурентов для добавления в проект\n\nДоступ по API закрыт",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -13583,8 +13558,7 @@
                 "tags": [
                     "Projects_2"
                 ],
-                "summary": "Получение информации о регистрации домена",
-                "description": "Возвращает объект с параметрами:\n- wait_time, если данные не готовы\n- created, если данные готовы\n- paidtill, если данные готовы",
+                "summary": "Получение информации о регистрации домена\n\nВозвращает объект с параметрами:\n- wait_time, если данные не готовы\n- created, если данные готовы\n- paidtill, если данные готовы",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -14358,8 +14332,7 @@
                 "tags": [
                     "Tickets_2"
                 ],
-                "summary": "Получение краткой информации о тикетах",
-                "description": "id последнего непрочитанного тикета, число непрочитанных тикетов",
+                "summary": "Получение краткой информации о тикетах\n\nid последнего непрочитанного тикета, число непрочитанных тикетов",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -16741,8 +16714,7 @@
                 "tags": [
                     "Admin_2"
                 ],
-                "summary": "Получение графика с количеством подписок на рубрики с сегментцией по способам рассылки",
-                "description": "График кешируется, первый запрос может выполняться дольше",
+                "summary": "Получение графика с количеством подписок на рубрики с сегментцией по способам рассылки\n\nГрафик кешируется, первый запрос может выполняться дольше",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -16894,7 +16866,7 @@
                                                                 "$ref": "Models/Projects.json#/components/schemas/Models.Projects",
                                                                 "description": "Only for typescript, does not contain real data"
                                                             },
-                                                            "title": "@return array{pricesByUsers: array<int, array{projectsIds: int[], price: float}>}\n\n```\n{\n    \"pricesByUsers\": {\n            \"{{userId}}\": {\n                \"projectsIds\": [],\n                \"price\": float,\n                \"priceOriginal\": float\n            }\n    }\n }\n```\n\n@throws Exception"
+                                                            "title": "@return array{pricesByUsers: array<int, array{projectsIds: int[], price: float}>} \n\n```\n{\n    \"pricesByUsers\": {\n            \"{{userId}}\": {\n                \"projectsIds\": [],\n                \"price\": float,\n                \"priceOriginal\": float\n            }\n    }\n }\n```\n\n@throws Exception"
                                                         }
                                                     },
                                                     "required": [
@@ -17045,7 +17017,7 @@
                                                     "properties": {
                                                         "result": {
                                                             "$ref": "stdClass.json#/components/schemas/stdClass",
-                                                            "title": "Вернет null, если ошибки на роботе нет"
+                                                            "title": "Информацией о текущей ошибке на роботе\n\nВернет null, если ошибки на роботе нет"
                                                         }
                                                     },
                                                     "required": [
@@ -17375,7 +17347,7 @@
                                                                 "$ref": "Models/Projects.json#/components/schemas/Models.Projects",
                                                                 "description": "Only for typescript, does not contain real data"
                                                             },
-                                                            "title": "@return array{pricesByUsers: array<int, array{projectsIds: int[], price: float}>}\n\n```\n{\n   \"pricesByUsers\": {\n       \"{{userId}}\": {\n           \"projectsIds\": [],\n           \"price\": float\n       }\n   }\n}\n```\n\n@throws Exception"
+                                                            "title": "@return array{pricesByUsers: array<int, array{projectsIds: int[], price: float}>} \n\n```\n{\n   \"pricesByUsers\": {\n       \"{{userId}}\": {\n           \"projectsIds\": [],\n           \"price\": float\n       }\n   }\n}\n```\n\n@throws Exception"
                                                         }
                                                     },
                                                     "required": [
@@ -17410,8 +17382,7 @@
                 "tags": [
                     "Audit_2"
                 ],
-                "summary": "Получение гостевой ссылки на просмотр индексации",
-                "description": "Необходимо указать либо date1 и date2, либо dates (вместе указывать нельзя)",
+                "summary": "Получение гостевой ссылки на просмотр индексации\n\nНеобходимо указать либо date1 и date2, либо dates (вместе указывать нельзя)",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -17664,7 +17635,7 @@
                                                                 "$ref": "Models/Projects.json#/components/schemas/Models.Projects",
                                                                 "description": "Only for typescript, does not contain real data"
                                                             },
-                                                            "title": "@return array{pricesByUsers: array<int, array{projectsIds: int[], price: float}>}\n\n```\n{\n   \"pricesByUsers\": {\n       \"{{userId}}\": {\n           \"projectsIds\": [],\n           \"price\": float\n       }\n   }\n}\n```\n\n@throws Exception"
+                                                            "title": "@return array{pricesByUsers: array<int, array{projectsIds: int[], price: float}>} \n\n```\n{\n   \"pricesByUsers\": {\n       \"{{userId}}\": {\n           \"projectsIds\": [],\n           \"price\": float\n       }\n   }\n}\n```\n\n@throws Exception"
                                                         }
                                                     },
                                                     "required": [
@@ -17792,7 +17763,7 @@
                                                                 "$ref": "Models/Projects.json#/components/schemas/Models.Projects",
                                                                 "description": "Only for typescript, does not contain real data"
                                                             },
-                                                            "title": "@return array{pricesByUsers: array<int, array{projectsIds: int[], price: float}>}\n\n```\n{\n   \"pricesByUsers\": {\n       \"{{userId}}\": {\n           \"projectsIds\": [],\n           \"price\": float\n       }\n   }\n}\n```\n\n@throws Exception"
+                                                            "title": "@return array{pricesByUsers: array<int, array{projectsIds: int[], price: float}>} \n\n```\n{\n   \"pricesByUsers\": {\n       \"{{userId}}\": {\n           \"projectsIds\": [],\n           \"price\": float\n       }\n   }\n}\n```\n\n@throws Exception"
                                                         }
                                                     },
                                                     "required": [
@@ -17955,8 +17926,7 @@
                 "tags": [
                     "Content_2"
                 ],
-                "summary": "Создание сертификата",
-                "description": "Можно создавать только для пройденных курсов",
+                "summary": "Создание сертификата\n\n Можно создавать только для пройденных курсов",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -18015,8 +17985,7 @@
                 "tags": [
                     "Content_2"
                 ],
-                "summary": "Изменение сертификата",
-                "description": "Можно менять только имя, если оно не указано",
+                "summary": "Изменение сертификата\n\nМожно менять только имя, если оно не указано",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -18097,19 +18066,7 @@
                                                 {
                                                     "type": "object",
                                                     "properties": {
-                                                        "result": {
-                                                            "type": "array",
-                                                            "items": {
-                                                                "oneOf": [
-                                                                    {
-                                                                        "type": "string"
-                                                                    },
-                                                                    {
-                                                                        "type": "number"
-                                                                    }
-                                                                ]
-                                                            }
-                                                        }
+                                                        "result": {}
                                                     },
                                                     "required": [
                                                         "result"
@@ -18142,8 +18099,7 @@
                 "tags": [
                     "Content_2"
                 ],
-                "summary": "Получение модулей курса",
-                "description": "Дополнительные поля:\n - lessons - см. includeLessons()",
+                "summary": "Получение модулей курса\n\nДополнительные поля:\n - lessons - см. includeLessons()",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -18343,8 +18299,7 @@
                 "tags": [
                     "Positions_2"
                 ],
-                "summary": "Экспорт регионов (CSV)",
-                "description": "- searcher_key, name_or_key (название или код)[, country_code (2 буквенный код страны), lang, device, depth]",
+                "summary": "Экспорт регионов (CSV)\n\n- searcher_key, name_or_key (название или код)[, country_code (2 буквенный код страны), lang, device, depth]",
                 "requestBody": {
                     "content": {
                         "application/json": {

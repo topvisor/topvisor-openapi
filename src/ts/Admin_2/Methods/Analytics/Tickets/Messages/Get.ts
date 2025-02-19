@@ -9,15 +9,14 @@ export interface components {
     schemas: {
         /** Получение статистики ответов на тикеты */
         "Admin_2.Methods.Analytics.Tickets.Messages.Get": {
-            /**
-             * Поля
-             * @description - date
+            /** Поля
+             *
+             *     - date
              *     - count_messages
              *     - count_tickets
              *     - count_messages_user:%userId%
              *     - percent_messages_user:%userId%
-             *     - vacations_by_user_id
-             */
+             *     - vacations_by_user_id */
             fields: (string | number)[];
             period: import('../../../../Types/Analytics/Segment.ts').components['schemas']['Admin_2.Types.Analytics.Segment'];
             /** Длина периода */

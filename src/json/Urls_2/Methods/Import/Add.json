@@ -11,8 +11,7 @@
                 "type": "object",
                 "properties": {
                     "urls": {
-                        "title": "Список URL соответствующих домену проекта, допускается формат CSV",
-                        "description": "Можно передать в виде файла с именем urls, допускаются форматы CSV и XML (допустимы сжатые XML в .gz)\n\nНельзя передавать одновременно в виде массива и в виде файла или использовать совместно с link_sitemap_xml",
+                        "title": "Список URL соответствующих домену проекта, допускается формат CSV\n\nМожно передать в виде файла с именем urls, допускаются форматы CSV и XML (допустимы сжатые XML в .gz)\n\nНельзя передавать одновременно в виде массива и в виде файла или использовать совместно с link_sitemap_xml",
                         "nullable": true,
                         "allOf": [
                             {
@@ -42,8 +41,7 @@
                         "type": "boolean"
                     },
                     "setActiveByRegexpByType": {
-                        "title": "Недокументириуемый параметр",
-                        "description": "set(Audit_2\\Types\\Type => regexp)",
+                        "title": "Недокументириуемый параметр\n\nset(Audit_2\\Types\\Type => regexp)",
                         "type": "array",
                         "items": {
                             "oneOf": [
@@ -103,8 +101,7 @@
                 "required": [
                     "project_id"
                 ],
-                "title": "Импортирование urls",
-                "description": "Доступные поля для импорта:\n- url\n- sitemap\n- audit\n- indexing\n- watcher\n- tags"
+                "title": "Импортирование urls\n\nДоступные поля для импорта:\n- url\n- sitemap\n- audit\n- indexing\n- watcher\n- tags"
             }
         }
     }

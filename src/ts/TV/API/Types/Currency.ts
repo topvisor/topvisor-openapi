@@ -9,7 +9,8 @@ export interface components {
     schemas: {
         /**
          * Валюта
-         * @description Этот общий тип, не зависящий от контекста
+         *
+         *     Этот общий тип, не зависящий от контекста
          *
          *     Дополниетольно нужно проверять в API методах через site()->checkAllowCurrency() в функции check()
          * @enum {string}

@@ -15,8 +15,7 @@
                         "type": "integer"
                     },
                     "text": {
-                        "title": "Текст",
-                        "description": "text = '' - отмена написания\n\ntext = null - написания со скрытым содержимым (без текста)",
+                        "title": "Текст\n\ntext = '' - отмена написания\n\ntext = null - написания со скрытым содержимым (без текста)",
                         "nullable": true,
                         "type": "string"
                     }

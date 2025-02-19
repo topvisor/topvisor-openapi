@@ -9,10 +9,10 @@ export interface components {
     schemas: {
         /**
          * Регулярное выражение
-         * @description Пустое значение разрешено
+         *
+         *     Пустое значение разрешено
          *
          *     Управляющие символы "/" в начале и в конце строки будут удалены
-         *
          * @example /^year_(\d\d\d\d)$/
          */
         "TV.API.Types.RegExp": string;

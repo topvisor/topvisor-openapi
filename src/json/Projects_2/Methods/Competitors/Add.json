@@ -42,8 +42,7 @@
                     "project_id",
                     "urls"
                 ],
-                "title": "Добавление конкурента",
-                "description": "Ограничения: не более Projects_2\\Competitors::MAX_COMPETITORS_PER_PROJECT конкурентов в одном проекте"
+                "title": "Добавление конкурента\n\nОграничения: не более Projects_2\\Competitors::MAX_COMPETITORS_PER_PROJECT конкурентов в одном проекте"
             }
         }
     }

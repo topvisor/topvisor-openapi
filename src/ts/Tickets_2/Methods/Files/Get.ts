@@ -7,10 +7,9 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /**
-         * Получение списка временных файлов, загруженных для тикета
-         * @description Процесс создания поста не завершен
-         */
+        /** Получение списка временных файлов, загруженных для тикета
+         *
+         *     Процесс создания поста не завершен */
         "Tickets_2.Methods.Files.Get": Record<string, never>;
     };
     responses: never;

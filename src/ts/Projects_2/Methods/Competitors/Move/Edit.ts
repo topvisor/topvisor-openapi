@@ -17,7 +17,8 @@ export interface components {
             to_id: number;
             /**
              * Позиция перемещения
-             * @description - before
+             *
+             *     - before
              *     - after
              * @default after
              */

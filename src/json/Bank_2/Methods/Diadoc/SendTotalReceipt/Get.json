@@ -41,8 +41,7 @@
                         "type": "string"
                     },
                     "signed": {
-                        "title": "Использовать подпись",
-                        "description": "Если true, то документ с подписью (не распространяется на договоры)",
+                        "title": "Использовать подпись\n\nЕсли true, то документ с подписью (не распространяется на договоры)",
                         "type": "boolean"
                     },
                     "fields": {
@@ -76,8 +75,7 @@
                     "filters",
                     "offset"
                 ],
-                "title": "Отправка акта сверки в диадок",
-                "description": "Параметры см. в bank_2_requisites::protected_get_printTotalReceipt();"
+                "title": "Отправка акта сверки в диадок\n\nПараметры см. в bank_2_requisites::protected_get_printTotalReceipt();"
             }
         }
     }

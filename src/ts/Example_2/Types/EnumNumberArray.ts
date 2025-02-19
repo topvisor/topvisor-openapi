@@ -7,12 +7,11 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /**
-         * Тип: enum
-         * @description Принимает: 0|1|false|true
+        /** Тип: enum
          *
-         *     Хранит: false|true
-         */
+         *     Принимает: 0|1|false|true
+         *
+         *     Хранит: false|true */
         "Example_2.Types.EnumNumberArray": import('./Number.ts').components['schemas']['Example_2.Types.Number'][];
     };
     responses: never;

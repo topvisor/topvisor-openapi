@@ -23,8 +23,7 @@
                         "type": "string"
                     },
                     "CU_PREFIX": {
-                        "title": "Префикс валюты.",
-                        "description": "`CU_PREFIX` и `getCUSuffix()` взаимоисключены, только один из них должен опредять не пустое значение",
+                        "title": "Префикс валюты.\n\n`CU_PREFIX` и `getCUSuffix()` взаимоисключены, только один из них должен опредять не пустое значение",
                         "default": "No set",
                         "readOnly": true,
                         "type": "string"

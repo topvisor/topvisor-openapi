@@ -11,13 +11,11 @@
                 "type": "object",
                 "properties": {
                     "type": {
-                        "title": "Тип рассылки",
-                        "description": "- me\n- admin\n- news\n- api",
+                        "title": "Тип рассылки\n\n- me\n- admin\n- news\n- api",
                         "type": "string"
                     },
                     "send_in": {
-                        "title": "Канал рассылки",
-                        "description": "- all\n- email\n- informer",
+                        "title": "Канал рассылки\n\n- all\n- email\n- informer",
                         "type": "string"
                     },
                     "lang": {

@@ -7,19 +7,17 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /**
-         * Генерация QR кода по тексту
-         * @description Возвращает изображение в формате data:image/png;base64
-         */
+        /** Генерация QR кода по тексту
+         *
+         *     Возвращает изображение в формате data:image/png;base64 */
         "Qr_2.Methods.Get": {
             /** Кодируемый текст */
             text: string;
-            /**
-             * Кодируемый текст
-             * @description - 0 - черно-белый
+            /** Кодируемый текст
+             *
+             *     - 0 - черно-белый
              *     - 1 - шашечки
-             *     - 2 - группы с закруглениями
-             */
+             *     - 2 - группы с закруглениями */
             tpl_n?: import('../Types/TplN.ts').components['schemas']['Qr_2.Types.TplN'];
             /** Использовать ли брендированное лого */
             use_brand?: boolean;

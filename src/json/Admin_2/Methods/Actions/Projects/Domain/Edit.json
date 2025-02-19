@@ -15,8 +15,7 @@
                         "type": "integer"
                     },
                     "projects": {
-                        "title": "Список для замены",
-                        "description": "Пример: ```\nexample.com;example2.com\nexample3.com;example4.com\n12345;example5.com\n```",
+                        "title": "Список для замены\n\nПример: ```\nexample.com;example2.com\nexample3.com;example4.com\n12345;example5.com\n```",
                         "type": "string"
                     },
                     "needRenameProject": {

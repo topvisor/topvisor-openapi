@@ -9,9 +9,9 @@ export interface components {
     schemas: {
         /**
          * Создать Open API схемы и скачать в zip
-         * @description В результате вернет zip файл в потоке вывода
          *
-         *     @see https://editor.swagger.io/ Редактор Open API
+         *     В результате вернет zip файл в потоке вывода
+         * @description @see https://editor.swagger.io/ Редактор Open API
          */
         "OpenAPI_2.Methods.Download.Get": {
             /**

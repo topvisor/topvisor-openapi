@@ -7,23 +7,20 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /**
-         * Сокращенный тип с данными для вывода hightcharts
-         * @description https://www.highcharts.com/
-         */
+        /** Сокращенный тип с данными для вывода hightcharts
+         *
+         *     https://www.highcharts.com/ */
         "TV.Objects.Highcharts.Chart": {
-            /**
-             * Категории
-             * @description Для обчных графиков это значения на оси X
-             */
+            /** Категории
+             *
+             *     Для обчных графиков это значения на оси X */
             categories: (string | number)[];
-            /**
-             * Набор серий
-             * @description Серия - это объект, выводимый на графике, например линия.
+            /** Набор серий
+             *
+             *     Серия - это объект, выводимый на графике, например линия.
              *
              *     Серия обязательно должна иметь поле data, в котором перечисляются значения для категорий. Значения должны идти в таком же порядке, что и
-             *     категории
-             */
+             *     категории */
             series: (string | number)[];
             /** Дополнительгная информация */
             additionalData: (string | number)[];

@@ -8,17 +8,15 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         "Content_2.Methods.Redirects.AbstactRegular": {
-            /**
-             * Сайт
-             * @description * topvisor
-             *     * thundo
-             */
+            /** Сайт
+             *
+             *     * topvisor
+             *     * thundo */
             site: string;
-            /**
-             * С поддомена
-             * @description * 'journal'
-             *     * ''
-             */
+            /** С поддомена
+             *
+             *     * 'journal'
+             *     * '' */
             subdomain: string;
             /** с пути (маска, * - любой символ) */
             path_mask: string;

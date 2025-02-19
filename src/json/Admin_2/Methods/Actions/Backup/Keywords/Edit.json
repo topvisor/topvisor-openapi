@@ -15,8 +15,7 @@
                         "type": "integer"
                     },
                     "type": {
-                        "title": "Тип",
-                        "description": "Может принимать одно из значений TYPES_SETTINGS_AVAILIBLE или TYPES_MOVE_AVAILIBLE",
+                        "title": "Тип\n\nМожет принимать одно из значений TYPES_SETTINGS_AVAILIBLE или TYPES_MOVE_AVAILIBLE",
                         "type": "string"
                     },
                     "date": {

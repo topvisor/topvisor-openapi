@@ -7,12 +7,11 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /**
-         * Получение результатов проверок радара
-         * @description Отчет генерируется на основе объектов urls
+        /** Получение результатов проверок радара
          *
-         *     Необходимо указать либо check_id1 и check_id2, либо checks_ids (вместе указывать нельзя)
-         */
+         *     Отчет генерируется на основе объектов urls
+         *
+         *     Необходимо указать либо check_id1 и check_id2, либо checks_ids (вместе указывать нельзя) */
         "Audit_2.Methods.Watcher.Get": {
             /** ID проверок в произвольном порядке */
             checks_ids?: (string | number)[] | null;

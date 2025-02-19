@@ -33,8 +33,7 @@
                         ]
                     },
                     "field_name": {
-                        "title": "Имя поля",
-                        "description": "- sum\n- discount\n- count_users",
+                        "title": "Имя поля\n\n- sum\n- discount\n- count_users",
                         "type": "string"
                     },
                     "limit": {

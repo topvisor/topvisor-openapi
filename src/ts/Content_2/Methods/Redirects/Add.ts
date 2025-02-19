@@ -13,17 +13,15 @@ export interface components {
             redirect_path: string;
             /** На поддомен */
             redirect_subdomain: string;
-            /**
-             * Сайт
-             * @description * topvisor
-             *     * thundo
-             */
+            /** Сайт
+             *
+             *     * topvisor
+             *     * thundo */
             site: string;
-            /**
-             * С поддомена
-             * @description * 'journal'
-             *     * ''
-             */
+            /** С поддомена
+             *
+             *     * 'journal'
+             *     * '' */
             subdomain: string;
             /** с пути (маска, * - любой символ) */
             path_mask: string;

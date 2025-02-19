@@ -11,13 +11,15 @@ export interface components {
         "TV.Types.Config.Site": {
             /**
              * Ключ домена
-             * @description Используется в путях файлов и в БД
+             *
+             *     Используется в путях файлов и в БД
              * @default No set
              */
             readonly ID: string;
             /**
              * Аббревиатура ключа домена
-             * @description Используется в путях публичных ресурсов, например для файлов на CDN
+             *
+             *     Используется в путях публичных ресурсов, например для файлов на CDN
              * @default No set
              */
             readonly ID_ASSETS: string;
@@ -38,12 +40,11 @@ export interface components {
              * @default No set
              */
             readonly LANGUAGE_MAIN: string;
-            /**
-             * Список дополнительных языков, ISO 639-1
-             * @description При генерации url дополнительный язык добавляется в начало url в модуле контента
+            /** Список дополнительных языков, ISO 639-1
              *
-             *     Аналогично `self::LANGUAGES`, без `self::LANGUAGE_MAIN`
-             */
+             *     При генерации url дополнительный язык добавляется в начало url в модуле контента
+             *
+             *     Аналогично `self::LANGUAGES`, без `self::LANGUAGE_MAIN` */
             readonly LANGUAGES_ADDITIONAL: (string | number)[];
             /**
              * Список валют, используемых на сайте
@@ -52,24 +53,25 @@ export interface components {
              *     ]
              */
             readonly CURRENCIES: (string | number)[];
-            /**
-             * Список поддоменов
-             * @description Примеры:
+            /** Список поддоменов
+             *
+             *     Примеры:
              *     - `''` для основного домена `example.com`
-             *     - `'subdomain'` для поддомена `subdomain.example.com`
-             */
+             *     - `'subdomain'` для поддомена `subdomain.example.com` */
             readonly SUBDOMAINS: (string | number)[];
             /** Список поддерживаемых тем оформления */
             readonly THEMES: (string | number)[];
             /**
              * Почта рассыльщика
-             * @description Она же используется в тикетнице
+             *
+             *     Она же используется в тикетнице
              * @default No set
              */
             readonly MAILING_EMAIL: string;
             /**
              * Альтернативная почта рассыльщика
-             * @description Используется, если нужно отправлять почту от имени другого домена
+             *
+             *     Используется, если нужно отправлять почту от имени другого домена
              *
              *     Данная почта должна быть настроена на пересылку всех писем на MAILING_EMAIL
              * @default No set
@@ -87,11 +89,11 @@ export interface components {
             readonly NO_REPLY_EMAIL: string;
             /**
              * Словарь модулей, доступ к которым надо закрыть
-             * @description Формат ключа: `{{ page param 1 }}`, `{{ page param 1 }}/{{ page param 2 }}`
+             *
+             *     Формат ключа: `{{ page param 1 }}`, `{{ page param 1 }}/{{ page param 2 }}`
              *
              *     Значение: всегда true, значение игнорируется
-             *
-             *     @see Controller_2\Objects\Page::params
+             * @description @see Controller_2\Objects\Page::params
              */
             readonly CLOSED_BY_MOD: (string | number)[];
             /** @default No set */

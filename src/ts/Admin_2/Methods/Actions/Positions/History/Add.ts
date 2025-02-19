@@ -9,14 +9,13 @@ export interface components {
     schemas: {
         /** Импортирование историй позиций из CSV */
         "Admin_2.Methods.Actions.Positions.History.Add": {
-            /**
-             * Строка в формате csv
-             * @description Пример: ```
+            /** Строка в формате csv
+             *
+             *     Пример: ```
              *     Запрос;2024-01-01;2024-01-01
              *     Привет;5;5
              *     Как дела;3;1
-             *     ```
-             */
+             *     ``` */
             csv?: string | null;
             /** ID проекта */
             projectId?: number | null;

@@ -23,8 +23,7 @@
                         "type": "integer"
                     },
                     "to_type": {
-                        "title": "Позиция перемещения",
-                        "description": "- before\n- after",
+                        "title": "Позиция перемещения\n\n- before\n- after",
                         "default": "after",
                         "nullable": true,
                         "type": "string"

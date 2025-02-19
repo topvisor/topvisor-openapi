@@ -7,13 +7,12 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /**
-         * Построение отчета по одному URL
-         * @description Отличия от get/audit_2/watcher:
+        /** Построение отчета по одному URL
+         *
+         *     Отличия от get/audit_2/watcher:
          *     - отчет генерируется на основе объекта watcher_results, а не urls
          *     - параметры выбора периода отчета игнорируются
-         *     - выбор прверок регулируется параметрами запроса filters, limit и offset
-         */
+         *     - выбор прверок регулируется параметрами запроса filters, limit и offset */
         "Audit_2.Methods.Watcher.ByURL.Get": {
             /** ID URL */
             url_id: number;

@@ -15,8 +15,7 @@
                         "type": "string"
                     },
                     "data": {
-                        "title": "Данные реквезитов",
-                        "description": "см. объект Bank_2\\Objects\\Requisites",
+                        "title": "Данные реквезитов\n\nсм. объект Bank_2\\Objects\\Requisites",
                         "type": "string"
                     }
                 },

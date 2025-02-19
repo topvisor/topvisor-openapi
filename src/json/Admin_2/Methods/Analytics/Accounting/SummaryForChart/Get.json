@@ -33,8 +33,7 @@
                         ]
                     },
                     "operations_type": {
-                        "title": "Тип операций (расход, приход, все операции)",
-                        "description": "- profit: приход\n- charges: расход",
+                        "title": "Тип операций (расход, приход, все операции)\n\n- profit: приход\n- charges: расход",
                         "nullable": true,
                         "type": "string"
                     },

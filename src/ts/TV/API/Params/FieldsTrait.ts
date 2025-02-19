@@ -10,11 +10,11 @@ export interface components {
         "TV.API.Params.FieldsTrait": {
             /**
              * Список полей объекта, которые надо вернуть в результате
-             * @description Если запрос поддерижвает параметр fetch_style, формат ответа может быть разным, fields будет влиять на содержание данных в этом ответе
+             *
+             *     Если запрос поддерижвает параметр fetch_style, формат ответа может быть разным, fields будет влиять на содержание данных в этом ответе
              *
              *     Использует поля модели
-             *
-             *     @see AbstractMethod::MODEL
+             * @description @see AbstractMethod::MODEL
              */
             fields: (string | number)[];
         };

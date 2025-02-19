@@ -17,10 +17,9 @@ export interface components {
             lang?: import('../../../TV/API/Types/Lang.ts').components['schemas']['TV.API.Types.Lang'] | null;
             /** Данные среды пользователя */
             user_data?: (string | number)[] | null;
-            /**
-             * URL страницы, с которой отправлен тикет
-             * @description Не используется, если указан user_data
-             */
+            /** URL страницы, с которой отправлен тикет
+             *
+             *     Не используется, если указан user_data */
             resource?: string | null;
             /** Не проводить рассылку уведомлений */
             is_silent?: boolean;
@@ -28,20 +27,18 @@ export interface components {
             email?: import('../../../TV/API/Types/Email.ts').components['schemas']['TV.API.Types.Email'] | null;
             /**
              * Id пользователя внутри социальной сети, из которой был отправлен тикет
-             * @description Может быть в любом виде
              *
-             *     @type string | int
+             *     Может быть в любом виде
+             * @description @type string | int
              */
             social_user_id?: unknown;
-            /**
-             * Данные для авторизации в сервисе-конкуренте для переноса проектов
-             * @description Недокументированный параметр
-             */
+            /** Данные для авторизации в сервисе-конкуренте для переноса проектов
+             *
+             *     Недокументированный параметр */
             secret?: string | null;
-            /**
-             * Номер задачи redmine, связанной с тикетом
-             * @description Недокументированный параметр
-             */
+            /** Номер задачи redmine, связанной с тикетом
+             *
+             *     Недокументированный параметр */
             task_id?: number;
         };
     };

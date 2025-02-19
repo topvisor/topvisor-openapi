@@ -9,7 +9,8 @@ export interface components {
     schemas: {
         /**
          * Рубрика рассылки
-         * @description На каждый тип рассылки оформляется отдельная подписка
+         *
+         *     На каждый тип рассылки оформляется отдельная подписка
          * @enum {string}
          */
         "Informer_2.Types.Rubric": "news" | "balance" | "tickets" | "yandex-update" | "comments" | "api" | "journal" | "academy";

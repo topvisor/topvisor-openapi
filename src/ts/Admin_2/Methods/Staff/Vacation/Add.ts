@@ -14,11 +14,10 @@ export interface components {
             date1: import('../../../../TV/API/Types/Date.ts').components['schemas']['TV.API.Types.Date'];
             /** Дата окончания */
             date2: import('../../../../TV/API/Types/Date.ts').components['schemas']['TV.API.Types.Date'];
-            /**
-             * Тип
-             * @description - vacation
-             *     - day_off
-             */
+            /** Тип
+             *
+             *     - vacation
+             *     - day_off */
             type: (string | number)[];
         };
     };

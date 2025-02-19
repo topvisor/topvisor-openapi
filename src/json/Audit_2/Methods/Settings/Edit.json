@@ -11,8 +11,8 @@
                 "type": "object",
                 "properties": {
                     "audit_user_agent": {
-                        "title": "User-Agent (аудит)",
-                        "description": "Можно указать id устройства\n\n@see Audit_2\\Types\\Settings\\Device",
+                        "title": "User-Agent (аудит)\n\nМожно указать id устройства",
+                        "description": "@see Audit_2\\Types\\Settings\\Device",
                         "nullable": true,
                         "type": "string"
                     },
@@ -90,8 +90,8 @@
                         ]
                     },
                     "watcher_user_agent": {
-                        "title": "User-Agent (радар)",
-                        "description": "Можно указать id устройства\n\n@see Audit_2\\Types\\Settings\\Device",
+                        "title": "User-Agent (радар)\n\nМожно указать id устройства",
+                        "description": "@see Audit_2\\Types\\Settings\\Device",
                         "nullable": true,
                         "type": "string"
                     },
@@ -109,8 +109,8 @@
                         ]
                     },
                     "watcher_regexp": {
-                        "title": "Регулярное выражение для сбора контента (радар)",
-                        "description": "Если не указано, будут ипользоваться теги разметки\n\n@see https://topvisor.com/support/watcher/settings/#tags",
+                        "title": "Регулярное выражение для сбора контента (радар)\n\nЕсли не указано, будут ипользоваться теги разметки",
+                        "description": "@see https://topvisor.com/support/watcher/settings/#tags",
                         "nullable": true,
                         "allOf": [
                             {

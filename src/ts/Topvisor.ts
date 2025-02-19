@@ -123,12 +123,11 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /**
-     * Удаление комментария
-     * @description Удалять комментарии можно только в течение ограниченного времени
+    /** Удаление комментария
      *
-     *     Админы могут удалять комментарии в любое время
-     */
+     *     Удалять комментарии можно только в течение ограниченного времени
+     *
+     *     Админы могут удалять комментарии в любое время */
     "/del/comments_2/": {
         parameters: {
             query?: never;
@@ -145,10 +144,9 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /**
-     * Изменение комментария
-     * @description Изменять комментарий можно только в течение ограниченного времени
-     */
+    /** Изменение комментария
+     *
+     *     Изменять комментарий можно только в течение ограниченного времени */
     "/edit/comments_2/": {
         parameters: {
             query?: never;
@@ -165,10 +163,9 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /**
-     * Получение комментариев
-     * @description Возвращает набор комментариев со всеми подкомменатриями, limit, offset не виляют на получение вложенных комментариев
-     */
+    /** Получение комментариев
+     *
+     *     Возвращает набор комментариев со всеми подкомменатриями, limit, offset не виляют на получение вложенных комментариев */
     "/get/comments_2/": {
         parameters: {
             query?: never;
@@ -185,16 +182,15 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /**
-     * Создание платежки и переход к оплате
-     * @description Возвращает id платежа, если указан параметр $return_id = true
+    /** Создание платежки и переход к оплате
+     *
+     *     Возвращает id платежа, если указан параметр $return_id = true
      *
      *     Производит редирект, если настроена форма оплаты на стороне платежной системы
      *
      *     Возвращает информацию о платеже, если ожидается вывод формы оплаты на сайте
      *
-     *     При ошибке производит редирект на страницу с инофрмацией об ошибке
-     */
+     *     При ошибке производит редирект на страницу с инофрмацией об ошибке */
     "/add/payments_2/": {
         parameters: {
             query?: never;
@@ -228,10 +224,9 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /**
-     * Генерация QR кода по тексту
-     * @description Возвращает изображение в формате data:image/png;base64
-     */
+    /** Генерация QR кода по тексту
+     *
+     *     Возвращает изображение в формате data:image/png;base64 */
     "/get/qr_2/": {
         parameters: {
             query?: never;
@@ -668,13 +663,12 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /**
-     * Получение данных подтверждения
-     * @description Возвращает результат подтверждения в виде
+    /** Получение данных подтверждения
+     *
+     *     Возвращает результат подтверждения в виде
      *     массива с сообщением (acceptAction),
      *     логической переменной (acceptEmail),
-     *     null при неправильно введенном типе
-     */
+     *     null при неправильно введенном типе */
     "/get/app_2/actions/": {
         parameters: {
             query?: never;
@@ -725,10 +719,9 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /**
-     * Получение отчета по проверке индексации
-     * @description Необходимо указать либо date1 и date2, либо dates (вместе указывать нельзя)
-     */
+    /** Получение отчета по проверке индексации
+     *
+     *     Необходимо указать либо date1 и date2, либо dates (вместе указывать нельзя) */
     "/get/audit_2/indexing/": {
         parameters: {
             query?: never;
@@ -779,12 +772,11 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /**
-     * Получение результатов проверок радара
-     * @description Отчет генерируется на основе объектов urls
+    /** Получение результатов проверок радара
      *
-     *     Необходимо указать либо check_id1 и check_id2, либо checks_ids (вместе указывать нельзя)
-     */
+     *     Отчет генерируется на основе объектов urls
+     *
+     *     Необходимо указать либо check_id1 и check_id2, либо checks_ids (вместе указывать нельзя) */
     "/get/audit_2/watcher/": {
         parameters: {
             query?: never;
@@ -954,10 +946,9 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /**
-     * Редактирование статуса лайка для комментария
-     * @description Возвращает результат редактирования статуса лайка
-     */
+    /** Редактирование статуса лайка для комментария
+     *
+     *     Возвращает результат редактирования статуса лайка */
     "/edit/comments_2/like/": {
         parameters: {
             query?: never;
@@ -1091,10 +1082,9 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /**
-     * Получение RSS раздела сайта
-     * @description Для выборки страниц используется модель: Pages
-     */
+    /** Получение RSS раздела сайта
+     *
+     *     Для выборки страниц используется модель: Pages */
     "/get/content_2/rss/": {
         parameters: {
             query?: never;
@@ -1317,9 +1307,9 @@ export interface paths {
     };  
     /**
      * Создать Open API схемы и скачать в zip
-     * @description В результате вернет zip файл в потоке вывода
      *
-     *     @see https://editor.swagger.io/ Редактор Open API
+     *     В результате вернет zip файл в потоке вывода
+     * @description @see https://editor.swagger.io/ Редактор Open API
      */
     "/get/openapi_2/download/": {
         parameters: {
@@ -1541,10 +1531,9 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /**
-     * Добавление конкурента
-     * @description Ограничения: не более Projects_2\Competitors::MAX_COMPETITORS_PER_PROJECT конкурентов в одном проекте
-     */
+    /** Добавление конкурента
+     *
+     *     Ограничения: не более Projects_2\Competitors::MAX_COMPETITORS_PER_PROJECT конкурентов в одном проекте */
     "/add/projects_2/competitors/": {
         parameters: {
             query?: never;
@@ -1561,10 +1550,9 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /**
-     * Удаление конкурентов
-     * @description Обязательный параметр или ids или urls
-     */
+    /** Удаление конкурентов
+     *
+     *     Обязательный параметр или ids или urls */
     "/del/projects_2/competitors/": {
         parameters: {
             query?: never;
@@ -1805,10 +1793,9 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /**
-     * Загрузка файла на сервер
-     * @description Процесс создания сообщения в тикет не завершен
-     */
+    /** Загрузка файла на сервер
+     *
+     *     Процесс создания сообщения в тикет не завершен */
     "/add/tickets_2/files/": {
         parameters: {
             query?: never;
@@ -1825,10 +1812,9 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /**
-     * Удаление временных файлов для тикета
-     * @description Процесс создания поста не завершен
-     */
+    /** Удаление временных файлов для тикета
+     *
+     *     Процесс создания поста не завершен */
     "/del/tickets_2/files/": {
         parameters: {
             query?: never;
@@ -1845,10 +1831,9 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /**
-     * Получение списка временных файлов, загруженных для тикета
-     * @description Процесс создания поста не завершен
-     */
+    /** Получение списка временных файлов, загруженных для тикета
+     *
+     *     Процесс создания поста не завершен */
     "/get/tickets_2/files/": {
         parameters: {
             query?: never;
@@ -1967,16 +1952,15 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /**
-     * Импортирование urls
-     * @description Доступные поля для импорта:
+    /** Импортирование urls
+     *
+     *     Доступные поля для импорта:
      *     - url
      *     - sitemap
      *     - audit
      *     - indexing
      *     - watcher
-     *     - tags
-     */
+     *     - tags */
     "/add/urls_2/import/": {
         parameters: {
             query?: never;
@@ -2010,10 +1994,9 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /**
-     * Добавление комментария к отзыву
-     * @description Оставить комментарий можно в течение часа поосле выставления оценки
-     */
+    /** Добавление комментария к отзыву
+     *
+     *     Оставить комментарий можно в течение часа поосле выставления оценки */
     "/edit/votes_2/comment/": {
         parameters: {
             query?: never;
@@ -2746,12 +2729,11 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /**
-     * Получение промокодов
-     * @description В params хранится строка в формате:
+    /** Получение промокодов
+     *
+     *     В params хранится строка в формате:
      *     - {{ rank_id }}
-     *     - {{ rank_id }},single_code - для многоразового кода
-     */
+     *     - {{ rank_id }},single_code - для многоразового кода */
     "/get/admin_2/users/promocodes/": {
         parameters: {
             query?: never;
@@ -3013,10 +2995,9 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /**
-     * Экспорт результатов индексации
-     * @description Необходимо указать либо date1 и date2, либо dates (вместе указывать нельзя)
-     */
+    /** Экспорт результатов индексации
+     *
+     *     Необходимо указать либо date1 и date2, либо dates (вместе указывать нельзя) */
     "/get/audit_2/indexing/export/": {
         parameters: {
             query?: never;
@@ -3033,10 +3014,9 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /**
-     * Создание гостевой ссылки на просмотр позиций
-     * @description Необходимо указать либо date1 и date2, либо dates (вместе указывать нельзя)
-     */
+    /** Создание гостевой ссылки на просмотр позиций
+     *
+     *     Необходимо указать либо date1 и date2, либо dates (вместе указывать нельзя) */
     "/get/audit_2/indexing/links/": {
         parameters: {
             query?: never;
@@ -3070,13 +3050,12 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /**
-     * Построение отчета по одному URL
-     * @description Отличия от get/audit_2/watcher:
+    /** Построение отчета по одному URL
+     *
+     *     Отличия от get/audit_2/watcher:
      *     - отчет генерируется на основе объекта watcher_results, а не urls
      *     - параметры выбора периода отчета игнорируются
-     *     - выбор прверок регулируется параметрами запроса filters, limit и offset
-     */
+     *     - выбор прверок регулируется параметрами запроса filters, limit и offset */
     "/get/audit_2/watcher/byURL/": {
         parameters: {
             query?: never;
@@ -3144,10 +3123,9 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /**
-     * Отправка акта сверки в диадок
-     * @description Параметры см. в bank_2_requisites::protected_get_printTotalReceipt();
-     */
+    /** Отправка акта сверки в диадок
+     *
+     *     Параметры см. в bank_2_requisites::protected_get_printTotalReceipt(); */
     "/get/bank_2/diadoc/sendTotalReceipt/": {
         parameters: {
             query?: never;
@@ -3334,10 +3312,9 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /**
-     * Получение инофрмации о курсах
-     * @description Параметры выборки основаны на модели Models\Pages
-     */
+    /** Получение инофрмации о курсах
+     *
+     *     Параметры выборки основаны на модели Models\Pages */
     "/get/content_2/journal/course/": {
         parameters: {
             query?: never;
@@ -3677,10 +3654,9 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /**
-     * Переместить папку
-     * @description Вложенные папки запрещены, поэтому перемещение происходит только в пределах одного списка
-     */
+    /** Переместить папку
+     *
+     *     Вложенные папки запрещены, поэтому перемещение происходит только в пределах одного списка */
     "/edit/projects_2/folders/moveFolder/": {
         parameters: {
             query?: never;
@@ -3714,10 +3690,9 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /**
-     * Получить подсазки конкурентов для добавления в проект
-     * @description Доступ по API закрыт
-     */
+    /** Получить подсазки конкурентов для добавления в проект
+     *
+     *     Доступ по API закрыт */
     "/get/projects_2/master/hintsCompetitors/": {
         parameters: {
             query?: never;
@@ -3922,13 +3897,12 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /**
-     * Получение информации о регистрации домена
-     * @description Возвращает объект с параметрами:
+    /** Получение информации о регистрации домена
+     *
+     *     Возвращает объект с параметрами:
      *     - wait_time, если данные не готовы
      *     - created, если данные готовы
-     *     - paidtill, если данные готовы
-     */
+     *     - paidtill, если данные готовы */
     "/get/projects_2/status/registrar/": {
         parameters: {
             query?: never;
@@ -4151,10 +4125,9 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /**
-     * Получение краткой информации о тикетах
-     * @description id последнего непрочитанного тикета, число непрочитанных тикетов
-     */
+    /** Получение краткой информации о тикетах
+     *
+     *     id последнего непрочитанного тикета, число непрочитанных тикетов */
     "/get/tickets_2/tickets/info/": {
         parameters: {
             query?: never;
@@ -4821,10 +4794,9 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /**
-     * Получение графика с количеством подписок на рубрики с сегментцией по способам рассылки
-     * @description График кешируется, первый запрос может выполняться дольше
-     */
+    /** Получение графика с количеством подписок на рубрики с сегментцией по способам рассылки
+     *
+     *     График кешируется, первый запрос может выполняться дольше */
     "/get/admin_2/users/informer/subscriptions/": {
         parameters: {
             query?: never;
@@ -5020,10 +4992,9 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /**
-     * Получение гостевой ссылки на просмотр индексации
-     * @description Необходимо указать либо date1 и date2, либо dates (вместе указывать нельзя)
-     */
+    /** Получение гостевой ссылки на просмотр индексации
+     *
+     *     Необходимо указать либо date1 и date2, либо dates (вместе указывать нельзя) */
     "/get/audit_2/indexing/export/links/": {
         parameters: {
             query?: never;
@@ -5176,10 +5147,9 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /**
-     * Создание сертификата
-     * @description Можно создавать только для пройденных курсов
-     */
+    /** Создание сертификата
+     *
+     *      Можно создавать только для пройденных курсов */
     "/add/content_2/journal/course/certificates/": {
         parameters: {
             query?: never;
@@ -5196,10 +5166,9 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /**
-     * Изменение сертификата
-     * @description Можно менять только имя, если оно не указано
-     */
+    /** Изменение сертификата
+     *
+     *     Можно менять только имя, если оно не указано */
     "/edit/content_2/journal/course/certificates/": {
         parameters: {
             query?: never;
@@ -5233,11 +5202,10 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /**
-     * Получение модулей курса
-     * @description Дополнительные поля:
-     *      - lessons - см. includeLessons()
-     */
+    /** Получение модулей курса
+     *
+     *     Дополнительные поля:
+     *      - lessons - см. includeLessons() */
     "/get/content_2/journal/course/chapters/": {
         parameters: {
             query?: never;
@@ -5295,10 +5263,9 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /**
-     * Экспорт регионов (CSV)
-     * @description - searcher_key, name_or_key (название или код)[, country_code (2 буквенный код страны), lang, device, depth]
-     */
+    /** Экспорт регионов (CSV)
+     *
+     *     - searcher_key, name_or_key (название или код)[, country_code (2 буквенный код страны), lang, device, depth] */
     "/get/positions_2/searchers/regions/export/": {
         parameters: {
             query?: never;
@@ -6019,7 +5986,9 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        /** Запрещено делать публичной, это приведет к поломке preCall()
+                        /** Непосредтсвенный вызов API функции
+                         *
+                         *     Запрещено делать публичной, это приведет к поломке preCall()
                          *
                          *     В описании к функции отвечать на вопрос: `Что является результатом запроса?` Например: `Список пользователей`
                          *
@@ -6937,7 +6906,9 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        /** Запрещено делать публичной, это приведет к поломке preCall()
+                        /** Непосредтсвенный вызов API функции
+                         *
+                         *     Запрещено делать публичной, это приведет к поломке preCall()
                          *
                          *     В описании к функции отвечать на вопрос: `Что является результатом запроса?` Например: `Список пользователей`
                          *
@@ -8373,7 +8344,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        /** @return ?array{countSended: int, countDuplicated: int, countAdded: int, countChanged: int}
+                        /** @return ?array{'countSended': int, 'countDuplicated': int, 'countAdded': int, 'countChanged': int}
                          *
                          *     @throws Exception */
                         result: (string | number)[];
@@ -9156,7 +9127,9 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        /** Запрещено делать публичной, это приведет к поломке preCall()
+                        /** Непосредтсвенный вызов API функции
+                         *
+                         *     Запрещено делать публичной, это приведет к поломке preCall()
                          *
                          *     В описании к функции отвечать на вопрос: `Что является результатом запроса?` Например: `Список пользователей`
                          *
@@ -9891,7 +9864,9 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        /** Возвращает объект со сводкой по категориям, пример:
+                        /** Сводка о выполненном аудите
+                         *
+                         *     Возвращает объект со сводкой по категориям, пример:
                          *      - `$res['all']['all']['count_checks_success']` - количество пройденных проверок во всех категориях
                          *      - `$res['pages']['indexing']['count_checks_success']` - количество пройденных проверок в категории Страницы / Индексация
                          *      - `$res['all']['all']['count_checks_success']` - количество пройденных проверок во всех категориях */
@@ -12797,7 +12772,9 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        /** Вернет null, если ошибки на роботе нет */
+                        /** Информацией о текущей ошибке на роботе
+                         *
+                         *     Вернет null, если ошибки на роботе нет */
                         result: import('./stdClass.ts').components['schemas']['stdClass'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
@@ -13306,7 +13283,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: (string | number)[];
+                        result: unknown;
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };

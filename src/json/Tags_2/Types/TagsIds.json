@@ -12,8 +12,8 @@
                 "items": {
                     "$ref": "../../Tags_2/Types/TagId.json#/components/schemas/Tags_2.Types.TagId"
                 },
-                "title": "Список id тегов",
-                "description": "Тип массива: TagId[]\n\n@see Tags_2\\Types\\TagId"
+                "title": "Список id тегов\n\nТип массива: TagId[]",
+                "description": "@see Tags_2\\Types\\TagId"
             }
         }
     }

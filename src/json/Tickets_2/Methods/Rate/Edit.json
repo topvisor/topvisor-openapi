@@ -15,8 +15,7 @@
                         "type": "integer"
                     },
                     "rate": {
-                        "title": "Оценка",
-                        "description": "Принимает оценку от 1 до 3",
+                        "title": "Оценка\n\nПринимает оценку от 1 до 3",
                         "nullable": true,
                         "type": "integer"
                     },

@@ -11,10 +11,9 @@ export interface components {
         "Tickets_2.Methods.Rate.Edit": {
             /** ID тикета */
             id: number;
-            /**
-             * Оценка
-             * @description Принимает оценку от 1 до 3
-             */
+            /** Оценка
+             *
+             *     Принимает оценку от 1 до 3 */
             rate?: number | null;
             /** Комментарий */
             comment?: string | null;

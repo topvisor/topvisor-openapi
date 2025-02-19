@@ -15,8 +15,7 @@
                         "type": "integer"
                     },
                     "type": {
-                        "title": "Тип",
-                        "description": "- plus\n- minus",
+                        "title": "Тип\n\n- plus\n- minus",
                         "type": "string"
                     },
                     "counteragent_name": {

@@ -43,8 +43,7 @@
                         ]
                     },
                     "project_id": {
-                        "title": "ID проекта",
-                        "description": "Вместо project_id можно укзывать projects_ids",
+                        "title": "ID проекта\n\nВместо project_id можно укзывать projects_ids",
                         "nullable": true,
                         "type": "integer"
                     },

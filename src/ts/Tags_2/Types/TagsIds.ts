@@ -9,9 +9,9 @@ export interface components {
     schemas: {
         /**
          * Список id тегов
-         * @description Тип массива: TagId[]
          *
-         *     @see Tags_2\Types\TagId
+         *     Тип массива: TagId[]
+         * @description @see Tags_2\Types\TagId
          */
         "Tags_2.Types.TagsIds": import('./TagId.ts').components['schemas']['Tags_2.Types.TagId'][];
     };
