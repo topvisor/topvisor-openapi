@@ -742,10 +742,6 @@
                         "const": "your account with Google Analytics, Google Search Console or Yandex Metrica",
                         "readOnly": true
                     },
-                    "Methods_of_research": {
-                        "const": "Methods",
-                        "readOnly": true
-                    },
                     "Popular": {
                         "const": "Popular",
                         "readOnly": true
@@ -1145,6 +1141,14 @@
                     "HintVolumeNoCollected": {
                         "const": "Volume isn't collected. Follow <a href=\"/ru/support/keywords/volume/\" target=\"_blank\">this manual</a> to collect volume.<br><br>\nFor some keywords search volume is displayed because we store volume in a common database without linking it to a particular user: if other users checked it, it would be automatically pulled from the database. But note that such volume could be outdated.",
                         "readOnly": true
+                    },
+                    "Collect_settings": {
+                        "const": "Collect settings",
+                        "readOnly": true
+                    },
+                    "Collect_hint_methods": {
+                        "const": "Auto substitutions",
+                        "readOnly": true
                     }
                 },
                 "required": [
@@ -1331,7 +1335,6 @@
                     "Integrate_to_use_the_tool_1",
                     "Integrate_to_use_the_tool_2",
                     "Integrate_to_use_the_tool_3",
-                    "Methods_of_research",
                     "Popular",
                     "Other",
                     "Clustering_in_process",
@@ -1431,7 +1434,9 @@
                     "Move_group_and_delete_from_orginal_project",
                     "Keywords_to_transfer_and_delete_from_project",
                     "Remove_pluses_fullstops_commas_apostrophes_quotes",
-                    "HintVolumeNoCollected"
+                    "HintVolumeNoCollected",
+                    "Collect_settings",
+                    "Collect_hint_methods"
                 ]
             }
         }
