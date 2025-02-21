@@ -14789,12 +14789,17 @@ components:
             - 1 - включенные
             - 2 - все
           type: integer
+        include_positions_summary:
+          title: Добавить в результат сводку
+          nullable: true
+          type: boolean
         include_positions_summary_params:
           title: |-
             Добавить в результат сводку с указанными параметрами
 
             Параметры см. positions_2::get/summary
           nullable: true
+          deprecated: true
           type: array
           items:
             oneOf:

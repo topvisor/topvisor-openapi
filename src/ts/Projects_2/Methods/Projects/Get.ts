@@ -18,9 +18,14 @@ export interface components {
              *     - 1 - включенные
              *     - 2 - все */
             show_searchers_and_regions?: number;
-            /** Добавить в результат сводку с указанными параметрами
+            /** Добавить в результат сводку */
+            include_positions_summary?: boolean | null;
+            /**
+             * Добавить в результат сводку с указанными параметрами
              *
-             *     Параметры см. positions_2::get/summary */
+             *     Параметры см. positions_2::get/summary
+             * @deprecated
+             */
             include_positions_summary_params?: (string | number)[] | null;
             fields: import('../../../TV/API/Params/FieldsTrait.ts').components['schemas']['TV.API.Params.FieldsTrait']['fields'];
             orders: import('../../../TV/API/Params/OrdersTrait.ts').components['schemas']['TV.API.Params.OrdersTrait']['orders'];

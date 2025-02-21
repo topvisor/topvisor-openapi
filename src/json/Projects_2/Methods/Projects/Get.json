@@ -24,9 +24,15 @@
                         "title": "Добавить в результат список ПС и Регионов, привязанных к проекту\n\n- 1 - включенные\n- 2 - все",
                         "type": "integer"
                     },
+                    "include_positions_summary": {
+                        "title": "Добавить в результат сводку",
+                        "nullable": true,
+                        "type": "boolean"
+                    },
                     "include_positions_summary_params": {
                         "title": "Добавить в результат сводку с указанными параметрами\n\nПараметры см. positions_2::get/summary",
                         "nullable": true,
+                        "deprecated": true,
                         "type": "array",
                         "items": {
                             "oneOf": [
