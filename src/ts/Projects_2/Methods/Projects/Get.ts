@@ -18,12 +18,13 @@ export interface components {
              *     - 1 - включенные
              *     - 2 - все */
             show_searchers_and_regions?: number;
-            /** Добавить в результат сводку */
+            /**
+             * Добавить в результат сводку проверки позиций
+             * @description @see /get/positions_2/summary/
+             */
             include_positions_summary?: boolean | null;
             /**
              * Добавить в результат сводку с указанными параметрами
-             *
-             *     Параметры см. positions_2::get/summary
              * @deprecated
              */
             include_positions_summary_params?: (string | number)[] | null;

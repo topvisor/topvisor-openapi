@@ -14790,14 +14790,12 @@ components:
             - 2 - все
           type: integer
         include_positions_summary:
-          title: Добавить в результат сводку
+          title: Добавить в результат сводку проверки позиций
+          description: '@see /get/positions_2/summary/'
           nullable: true
           type: boolean
         include_positions_summary_params:
-          title: |-
-            Добавить в результат сводку с указанными параметрами
-
-            Параметры см. positions_2::get/summary
+          title: Добавить в результат сводку с указанными параметрами
           nullable: true
           deprecated: true
           type: array
