@@ -1853,9 +1853,9 @@ paths:
             model:
               schema:
                 type: 'null'
-  /get/comments_2/author/:
+  /get/comments_2/byAuthor/:
     post:
-      operationId: GetComments2Author
+      operationId: GetComments2ByAuthor
       tags:
         - Comments_2
       summary: Получение комментариев автора. Без вложенности
@@ -1863,7 +1863,7 @@ paths:
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/Comments_2.Methods.Author.Get'
+              $ref: '#/components/schemas/Comments_2.Methods.ByAuthor.Get'
         required: true
       responses:
         '200':
@@ -1878,9 +1878,8 @@ paths:
                           result:
                             type: array
                             items:
-                              oneOf:
-                                - type: string
-                                - type: number
+                              $ref: '#/components/schemas/Models.Comments'
+                              description: Only for typescript, does not contain real data
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
@@ -1888,7 +1887,8 @@ paths:
                   - $ref: '#/components/schemas/ResponseError'
             model:
               schema:
-                type: 'null'
+                $ref: '#/components/schemas/Models.Comments'
+                description: Only for typescript, does not contain real data
   /edit/comments_2/like/:
     post:
       operationId: EditComments2Like
@@ -13186,23 +13186,66 @@ components:
         - filters
         - offset
       title: Получение данных юридического лица по ИНН
-    Comments_2.Methods.Author.Get:
+    Comments_2.Methods.ByAuthor.Get:
       type: object
       properties:
-        userId:
+        user_id:
           title: ID автора
           type: integer
+        fields:
+          $ref: '#/components/schemas/fields'
+        orders:
+          $ref: '#/components/schemas/orders'
+        filters:
+          $ref: '#/components/schemas/filters'
+        id:
+          $ref: '#/components/schemas/id'
         limit:
-          title: Лимит
-          type: integer
+          $ref: '#/components/schemas/limit'
         offset:
-          title: Отступ
-          type: integer
+          $ref: '#/components/schemas/offset'
+        fetch_style:
+          $ref: '#/components/schemas/fetch_style'
       required:
-        - userId
-        - limit
+        - user_id
+        - fields
+        - orders
+        - filters
         - offset
       title: Получение комментариев автора. Без вложенности
+    Models.Comments:
+      properties:
+        id: {}
+        site:
+          nullable: true
+        subdomain:
+          nullable: true
+        page_url:
+          nullable: true
+        reply_id:
+          nullable: true
+        user_id:
+          nullable: true
+        time:
+          nullable: true
+        text:
+          nullable: true
+        count_likes:
+          nullable: true
+        status:
+          nullable: true
+        user_name:
+          nullable: true
+        user_avatar:
+          nullable: true
+        author_alias:
+          nullable: true
+        author_count_pages:
+          nullable: true
+        like:
+          nullable: true
+        page_title:
+          nullable: true
     Comments_2.Methods.Like.Edit:
       type: object
       properties:

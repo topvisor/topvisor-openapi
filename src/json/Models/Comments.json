@@ -51,6 +51,9 @@
                     },
                     "like": {
                         "nullable": true
+                    },
+                    "page_title": {
+                        "nullable": true
                     }
                 }
             }

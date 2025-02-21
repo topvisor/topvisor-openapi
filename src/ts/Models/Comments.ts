@@ -23,6 +23,7 @@ export interface components {
             author_alias?: any;
             author_count_pages?: any;
             like?: any;
+            page_title?: any;
         };
     };
     responses: never;

@@ -3181,9 +3181,9 @@
                 }
             }
         },
-        "/get/comments_2/author/": {
+        "/get/comments_2/byAuthor/": {
             "post": {
-                "operationId": "GetComments2Author",
+                "operationId": "GetComments2ByAuthor",
                 "tags": [
                     "Comments_2"
                 ],
@@ -3192,7 +3192,7 @@
                     "content": {
                         "application/json": {
                             "schema": {
-                                "$ref": "Comments_2/Methods/Author/Get.json#/components/schemas/Comments_2.Methods.Author.Get"
+                                "$ref": "Comments_2/Methods/ByAuthor/Get.json#/components/schemas/Comments_2.Methods.ByAuthor.Get"
                             }
                         }
                     },
@@ -3213,14 +3213,8 @@
                                                         "result": {
                                                             "type": "array",
                                                             "items": {
-                                                                "oneOf": [
-                                                                    {
-                                                                        "type": "string"
-                                                                    },
-                                                                    {
-                                                                        "type": "number"
-                                                                    }
-                                                                ]
+                                                                "$ref": "Models/Comments.json#/components/schemas/Models.Comments",
+                                                                "description": "Only for typescript, does not contain real data"
                                                             }
                                                         }
                                                     },
@@ -3244,7 +3238,8 @@
                             },
                             "model": {
                                 "schema": {
-                                    "type": "null"
+                                    "$ref": "Models/Comments.json#/components/schemas/Models.Comments",
+                                    "description": "Only for typescript, does not contain real data"
                                 }
                             }
                         }

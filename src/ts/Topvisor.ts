@@ -930,7 +930,7 @@ export interface paths {
         trace?: never;
     };  
     /** Получение комментариев автора. Без вложенности */
-    "/get/comments_2/author/": {
+    "/get/comments_2/byAuthor/": {
         parameters: {
             query?: never;
             header?: never;
@@ -939,7 +939,7 @@ export interface paths {
         };
         get?: never;
         put?: never;
-        post: operations["GetComments2Author"];
+        post: operations["GetComments2ByAuthor"];
         delete?: never;
         options?: never;
         head?: never;
@@ -6783,7 +6783,7 @@ export interface operations {
             };
         };
     };
-    GetComments2Author: {
+    GetComments2ByAuthor: {
         parameters: {
             query?: never;
             header?: never;
@@ -6792,7 +6792,7 @@ export interface operations {
         };
         requestBody: {
             content: {
-                "application/json": import('./Comments_2/Methods/Author/Get.ts').components['schemas']['Comments_2.Methods.Author.Get'];
+                "application/json": import('./Comments_2/Methods/ByAuthor/Get.ts').components['schemas']['Comments_2.Methods.ByAuthor.Get'];
             };
         };
         responses: {
@@ -6802,9 +6802,9 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: (string | number)[];
+                        result: import('./Models/Comments.ts').components['schemas']['Models.Comments'][];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
+                    model: import('./Models/Comments.ts').components['schemas']['Models.Comments'];
                 };
             };
         };
