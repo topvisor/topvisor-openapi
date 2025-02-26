@@ -77,6 +77,54 @@
                     "in_months": {
                         "const": "|january|february|march|april|may|june|july|august|september|october|november|december",
                         "readOnly": true
+                    },
+                    "January": {
+                        "const": "January",
+                        "readOnly": true
+                    },
+                    "Febuary": {
+                        "const": "February",
+                        "readOnly": true
+                    },
+                    "March": {
+                        "const": "March",
+                        "readOnly": true
+                    },
+                    "April": {
+                        "const": "April",
+                        "readOnly": true
+                    },
+                    "May": {
+                        "const": "May",
+                        "readOnly": true
+                    },
+                    "June": {
+                        "const": "June",
+                        "readOnly": true
+                    },
+                    "July": {
+                        "const": "July",
+                        "readOnly": true
+                    },
+                    "August": {
+                        "const": "August",
+                        "readOnly": true
+                    },
+                    "September": {
+                        "const": "September",
+                        "readOnly": true
+                    },
+                    "October": {
+                        "const": "October",
+                        "readOnly": true
+                    },
+                    "November": {
+                        "const": "November",
+                        "readOnly": true
+                    },
+                    "December": {
+                        "const": "December",
+                        "readOnly": true
                     }
                 },
                 "required": [
@@ -96,7 +144,19 @@
                     "Day_of_week_7",
                     "months",
                     "of_months",
-                    "in_months"
+                    "in_months",
+                    "January",
+                    "Febuary",
+                    "March",
+                    "April",
+                    "May",
+                    "June",
+                    "July",
+                    "August",
+                    "September",
+                    "October",
+                    "November",
+                    "December"
                 ]
             }
         }

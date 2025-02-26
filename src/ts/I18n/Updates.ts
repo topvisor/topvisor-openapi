@@ -46,6 +46,10 @@ export interface components {
             readonly Yandex_SERP_update: "Yandex SERP update";
             /** @constant */
             readonly Index_updated_on: "Index updated on";
+            /** @constant */
+            readonly of_Yandex: "Yandex";
+            /** @constant */
+            readonly Go_to_statictics: "Перейти к статистике за этот день";
         };
     };
     responses: never;

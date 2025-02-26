@@ -42,6 +42,30 @@ export interface components {
             readonly of_months: "|january|february|march|april|may|june|july|august|september|october|november|december";
             /** @constant */
             readonly in_months: "|january|february|march|april|may|june|july|august|september|october|november|december";
+            /** @constant */
+            readonly January: "January";
+            /** @constant */
+            readonly Febuary: "February";
+            /** @constant */
+            readonly March: "March";
+            /** @constant */
+            readonly April: "April";
+            /** @constant */
+            readonly May: "May";
+            /** @constant */
+            readonly June: "June";
+            /** @constant */
+            readonly July: "July";
+            /** @constant */
+            readonly August: "August";
+            /** @constant */
+            readonly September: "September";
+            /** @constant */
+            readonly October: "October";
+            /** @constant */
+            readonly November: "November";
+            /** @constant */
+            readonly December: "December";
         };
     };
     responses: never;

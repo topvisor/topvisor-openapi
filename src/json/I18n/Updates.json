@@ -85,6 +85,14 @@
                     "Index_updated_on": {
                         "const": "Index updated on",
                         "readOnly": true
+                    },
+                    "of_Yandex": {
+                        "const": "Yandex",
+                        "readOnly": true
+                    },
+                    "Go_to_statictics": {
+                        "const": "Перейти к статистике за этот день",
+                        "readOnly": true
                     }
                 },
                 "required": [
@@ -106,7 +114,9 @@
                     "Yandex_update",
                     "Yandex_text_update",
                     "Yandex_SERP_update",
-                    "Index_updated_on"
+                    "Index_updated_on",
+                    "of_Yandex",
+                    "Go_to_statictics"
                 ]
             }
         }
