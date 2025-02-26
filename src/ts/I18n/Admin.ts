@@ -9,8 +9,6 @@ export interface components {
     schemas: {
         "I18n.Admin": {
             /** @constant */
-            readonly Warning_message: "";
-            /** @constant */
             readonly Warning_message_admin: "";
         };
     };

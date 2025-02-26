@@ -10,17 +10,12 @@
             "I18n.Admin": {
                 "type": "object",
                 "properties": {
-                    "Warning_message": {
-                        "const": "",
-                        "readOnly": true
-                    },
                     "Warning_message_admin": {
                         "const": "",
                         "readOnly": true
                     }
                 },
                 "required": [
-                    "Warning_message",
                     "Warning_message_admin"
                 ]
             }
