@@ -14994,6 +14994,64 @@
                 }
             }
         },
+        "/add/admin_2/actions/backup/loader/": {
+            "post": {
+                "operationId": "AddAdmin2ActionsBackupLoader",
+                "tags": [
+                    "Admin_2"
+                ],
+                "summary": "Загрузить и разместить бекап в БД бекапов",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Admin_2/Methods/Actions/Backup/Loader/Add.json#/components/schemas/Admin_2.Methods.Actions.Backup.Loader.Add"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "oneOf": [
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "$ref": "Admin_2/Objects/Actions/Result.json#/components/schemas/Admin_2.Objects.Actions.Result"
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "result"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
+                                        }
+                                    ]
+                                }
+                            },
+                            "model": {
+                                "schema": {
+                                    "type": "null"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
         "/edit/admin_2/actions/backup/project/": {
             "post": {
                 "operationId": "EditAdmin2ActionsBackupProject",

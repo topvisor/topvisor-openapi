@@ -4335,6 +4335,23 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
+    /** Загрузить и разместить бекап в БД бекапов */
+    "/add/admin_2/actions/backup/loader/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["AddAdmin2ActionsBackupLoader"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
     /** Востановление удаленного проекта */
     "/edit/admin_2/actions/backup/project/": {
         parameters: {
@@ -11887,6 +11904,32 @@ export interface operations {
         requestBody: {
             content: {
                 "application/json": import('./Admin_2/Methods/Actions/Backup/Keywords/Edit.ts').components['schemas']['Admin_2.Methods.Actions.Backup.Keywords.Edit'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./Admin_2/Objects/Actions/Result.ts').components['schemas']['Admin_2.Objects.Actions.Result'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: null;
+                };
+            };
+        };
+    };
+    AddAdmin2ActionsBackupLoader: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Admin_2/Methods/Actions/Backup/Loader/Add.ts').components['schemas']['Admin_2.Methods.Actions.Backup.Loader.Add'];
             };
         };
         responses: {

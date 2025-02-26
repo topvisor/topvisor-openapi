@@ -8288,6 +8288,37 @@ paths:
             model:
               schema:
                 type: 'null'
+  /add/admin_2/actions/backup/loader/:
+    post:
+      operationId: AddAdmin2ActionsBackupLoader
+      tags:
+        - Admin_2
+      summary: Загрузить и разместить бекап в БД бекапов
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Admin_2.Methods.Actions.Backup.Loader.Add'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            $ref: '#/components/schemas/Admin_2.Objects.Actions.Result'
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
   /edit/admin_2/actions/backup/project/:
     post:
       operationId: EditAdmin2ActionsBackupProject
@@ -19751,6 +19782,50 @@ components:
         - date
         - test
       title: Востановление поисковых запросов из бэкапа
+    Admin_2.Methods.Actions.Backup.Loader.Add:
+      type: object
+      properties:
+        passAdminActions:
+          type: string
+        server_name:
+          title: Сервер, с которого делались бекапы
+          type: string
+        db_name:
+          title: Тип БД
+          type: string
+        table_name:
+          title: Имя таблицы
+          type: string
+        date:
+          title: Дата бекапа чата для добавления
+          allOf:
+            - $ref: '#/components/schemas/TV.API.Types.Date'
+        regexp:
+          title: |-
+            Регулярное выражение для импорта только нужных блоков INSERT
+
+            Бекапы хрянятся в .sql файлах с INSERT командами, в одном INSERT может быть много строк
+          nullable: true
+          allOf:
+            - $ref: '#/components/schemas/TV.API.Types.RegExp'
+        task_key:
+          title: |-
+            Ключ задачи, участвует в генерации имени БД бекапа
+
+            Может потребоваться в случае выполнения одновременных бекапов одной и тоже же таблицы за одну и ту же дату
+          nullable: true
+          type: string
+        test:
+          title: Являеется ли запуск - тестом
+          type: boolean
+      required:
+        - passAdminActions
+        - server_name
+        - db_name
+        - table_name
+        - date
+        - test
+      title: Загрузить и разместить бекап в БД бекапов
     Admin_2.Methods.Actions.Backup.Project.Edit:
       type: object
       properties:
