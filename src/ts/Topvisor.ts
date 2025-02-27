@@ -4336,7 +4336,7 @@ export interface paths {
         trace?: never;
     };  
     /** Загрузить и разместить бекап в БД бекапов */
-    "/add/admin_2/actions/backup/loader/": {
+    "/edit/admin_2/actions/backup/loader/": {
         parameters: {
             query?: never;
             header?: never;
@@ -4345,7 +4345,7 @@ export interface paths {
         };
         get?: never;
         put?: never;
-        post: operations["AddAdmin2ActionsBackupLoader"];
+        post: operations["EditAdmin2ActionsBackupLoader"];
         delete?: never;
         options?: never;
         head?: never;
@@ -11920,7 +11920,7 @@ export interface operations {
             };
         };
     };
-    AddAdmin2ActionsBackupLoader: {
+    EditAdmin2ActionsBackupLoader: {
         parameters: {
             query?: never;
             header?: never;
@@ -11929,7 +11929,7 @@ export interface operations {
         };
         requestBody: {
             content: {
-                "application/json": import('./Admin_2/Methods/Actions/Backup/Loader/Add.ts').components['schemas']['Admin_2.Methods.Actions.Backup.Loader.Add'];
+                "application/json": import('./Admin_2/Methods/Actions/Backup/Loader/Edit.ts').components['schemas']['Admin_2.Methods.Actions.Backup.Loader.Edit'];
             };
         };
         responses: {

@@ -1,16 +1,16 @@
 {
     "openapi": "3.0.0",
     "info": {
-        "title": "Topvisor/Admin_2.Methods.Actions.Backup.Loader.Add",
+        "title": "Topvisor/Admin_2.Methods.Actions.Backup.Loader.Edit",
         "version": "2.0.0"
     },
     "paths": {},
     "components": {
         "schemas": {
-            "Admin_2.Methods.Actions.Backup.Loader.Add": {
+            "Admin_2.Methods.Actions.Backup.Loader.Edit": {
                 "type": "object",
                 "properties": {
-                    "passAdminActions": {
+                    "pass_admin_actions": {
                         "type": "string"
                     },
                     "server_name": {
@@ -53,7 +53,7 @@
                     }
                 },
                 "required": [
-                    "passAdminActions",
+                    "pass_admin_actions",
                     "server_name",
                     "db_name",
                     "table_name",

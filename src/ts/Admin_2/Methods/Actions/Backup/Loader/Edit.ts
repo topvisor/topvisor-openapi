@@ -8,8 +8,8 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         /** Загрузить и разместить бекап в БД бекапов */
-        "Admin_2.Methods.Actions.Backup.Loader.Add": {
-            passAdminActions: string;
+        "Admin_2.Methods.Actions.Backup.Loader.Edit": {
+            pass_admin_actions: string;
             /** Сервер, с которого делались бекапы */
             server_name: string;
             /** Тип БД */

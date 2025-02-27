@@ -8288,9 +8288,9 @@ paths:
             model:
               schema:
                 type: 'null'
-  /add/admin_2/actions/backup/loader/:
+  /edit/admin_2/actions/backup/loader/:
     post:
-      operationId: AddAdmin2ActionsBackupLoader
+      operationId: EditAdmin2ActionsBackupLoader
       tags:
         - Admin_2
       summary: Загрузить и разместить бекап в БД бекапов
@@ -8298,7 +8298,7 @@ paths:
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/Admin_2.Methods.Actions.Backup.Loader.Add'
+              $ref: '#/components/schemas/Admin_2.Methods.Actions.Backup.Loader.Edit'
         required: true
       responses:
         '200':
@@ -19782,10 +19782,10 @@ components:
         - date
         - test
       title: Востановление поисковых запросов из бэкапа
-    Admin_2.Methods.Actions.Backup.Loader.Add:
+    Admin_2.Methods.Actions.Backup.Loader.Edit:
       type: object
       properties:
-        passAdminActions:
+        pass_admin_actions:
           type: string
         server_name:
           title: Сервер, с которого делались бекапы
@@ -19819,7 +19819,7 @@ components:
           title: Являеется ли запуск - тестом
           type: boolean
       required:
-        - passAdminActions
+        - pass_admin_actions
         - server_name
         - db_name
         - table_name

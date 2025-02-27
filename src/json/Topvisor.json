@@ -14994,9 +14994,9 @@
                 }
             }
         },
-        "/add/admin_2/actions/backup/loader/": {
+        "/edit/admin_2/actions/backup/loader/": {
             "post": {
-                "operationId": "AddAdmin2ActionsBackupLoader",
+                "operationId": "EditAdmin2ActionsBackupLoader",
                 "tags": [
                     "Admin_2"
                 ],
@@ -15005,7 +15005,7 @@
                     "content": {
                         "application/json": {
                             "schema": {
-                                "$ref": "Admin_2/Methods/Actions/Backup/Loader/Add.json#/components/schemas/Admin_2.Methods.Actions.Backup.Loader.Add"
+                                "$ref": "Admin_2/Methods/Actions/Backup/Loader/Edit.json#/components/schemas/Admin_2.Methods.Actions.Backup.Loader.Edit"
                             }
                         }
                     },
