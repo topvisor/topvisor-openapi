@@ -21,7 +21,7 @@ export interface components {
             /** Регулярное выражение для импорта только нужных блоков INSERT
              *
              *     Бекапы хрянятся в .sql файлах с INSERT командами, в одном INSERT может быть много строк */
-            regexp?: import('../../../../../TV/API/Types/RegExp.ts').components['schemas']['TV.API.Types.RegExp'] | null;
+            insert_filter_regexp?: import('../../../../../TV/API/Types/RegExp.ts').components['schemas']['TV.API.Types.RegExp'] | null;
             /** Ключ задачи, участвует в генерации имени БД бекапа
              *
              *     Может потребоваться в случае выполнения одновременных бекапов одной и тоже же таблицы за одну и ту же дату */

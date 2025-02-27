@@ -33,7 +33,7 @@
                             }
                         ]
                     },
-                    "regexp": {
+                    "insert_filter_regexp": {
                         "title": "Регулярное выражение для импорта только нужных блоков INSERT\n\nБекапы хрянятся в .sql файлах с INSERT командами, в одном INSERT может быть много строк",
                         "nullable": true,
                         "allOf": [

@@ -19800,7 +19800,7 @@ components:
           title: Дата бекапа чата для добавления
           allOf:
             - $ref: '#/components/schemas/TV.API.Types.Date'
-        regexp:
+        insert_filter_regexp:
           title: |-
             Регулярное выражение для импорта только нужных блоков INSERT
 
