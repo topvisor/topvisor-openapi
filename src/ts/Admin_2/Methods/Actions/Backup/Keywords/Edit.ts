@@ -9,8 +9,15 @@ export interface components {
     schemas: {
         /** Востановление поисковых запросов из бэкапа */
         "Admin_2.Methods.Actions.Backup.Keywords.Edit": {
+            pass_admin_actions: string;
+            /** Этап:
+             *     - 1: Загрузить и подготовить бекапы
+             *     - 2: Выполнить восстановление */
+            step: number;
+            /** Сервер, с которого делались бекапы */
+            server_name: string;
             /** ID проекта */
-            projectId: number;
+            project_id: number;
             /** Тип
              *
              *     Может принимать одно из значений TYPES_SETTINGS_AVAILIBLE или TYPES_MOVE_AVAILIBLE */

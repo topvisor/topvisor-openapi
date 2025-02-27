@@ -19760,7 +19760,18 @@ components:
     Admin_2.Methods.Actions.Backup.Keywords.Edit:
       type: object
       properties:
-        projectId:
+        pass_admin_actions:
+          type: string
+        step:
+          title: |-
+            Этап:
+            - 1: Загрузить и подготовить бекапы
+            - 2: Выполнить восстановление
+          type: integer
+        server_name:
+          title: Сервер, с которого делались бекапы
+          type: string
+        project_id:
           title: ID проекта
           type: integer
         type:
@@ -19777,7 +19788,10 @@ components:
           title: Являеется ли запуск - тестом
           type: boolean
       required:
-        - projectId
+        - pass_admin_actions
+        - step
+        - server_name
+        - project_id
         - type
         - date
         - test
