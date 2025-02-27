@@ -25,8 +25,6 @@ export interface components {
             /** @constant */
             readonly Set_offset: "Set offset";
             /** @constant */
-            readonly Developer_documentation: "API Documentation";
-            /** @constant */
             readonly Ask_questions_get_answers: "Search documentation";
             /** @constant */
             readonly PHP_SDK_example_githab: "PHP SDK example on GitHub";
