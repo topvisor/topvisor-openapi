@@ -11774,6 +11774,75 @@
                 }
             }
         },
+        "/add/keywords_2/keywords/import/": {
+            "post": {
+                "operationId": "AddKeywords2KeywordsImport",
+                "tags": [
+                    "Keywords_2"
+                ],
+                "summary": "Импорт запросов (по необходимости зависимых с ними групп и папок)\n\nДоступные поля для импорта: group_folder_path|group_name|name|tags|target поля перекрывают аналогичные параметры в запросе",
+                "description": "@see Keywords_2\\Mods\\Keywords\\Import::fromHandle()",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Keywords_2/Methods/Keywords/Import/Add.json#/components/schemas/Keywords_2.Methods.Keywords.Import.Add"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "oneOf": [
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "type": "array",
+                                                            "items": {
+                                                                "oneOf": [
+                                                                    {
+                                                                        "type": "string"
+                                                                    },
+                                                                    {
+                                                                        "type": "number"
+                                                                    }
+                                                                ]
+                                                            }
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "result"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
+                                        }
+                                    ]
+                                }
+                            },
+                            "model": {
+                                "schema": {
+                                    "type": "null"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
         "/edit/keywords_2/volumes/go/": {
             "post": {
                 "operationId": "EditKeywords2VolumesGo",

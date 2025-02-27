@@ -3382,6 +3382,28 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
+    /**
+     * Импорт запросов (по необходимости зависимых с ними групп и папок)
+     *
+     *     Доступные поля для импорта: group_folder_path|group_name|name|tags|target поля перекрывают аналогичные параметры в запросе
+     * @description @see Keywords_2\Mods\Keywords\Import::fromHandle()
+     */
+    "/add/keywords_2/keywords/import/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["AddKeywords2KeywordsImport"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
     /** Постановка задачи на проверку частоты запросов */
     "/edit/keywords_2/volumes/go/": {
         parameters: {
@@ -10474,6 +10496,32 @@ export interface operations {
         requestBody: {
             content: {
                 "application/json": import('./Content_2/Methods/Support/Menu/Get.ts').components['schemas']['Content_2.Methods.Support.Menu.Get'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: (string | number)[];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: null;
+                };
+            };
+        };
+    };
+    AddKeywords2KeywordsImport: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Keywords_2/Methods/Keywords/Import/Add.ts').components['schemas']['Keywords_2.Methods.Keywords.Import.Add'];
             };
         };
         responses: {
