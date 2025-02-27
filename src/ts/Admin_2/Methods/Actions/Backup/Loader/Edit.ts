@@ -12,7 +12,7 @@ export interface components {
             pass_admin_actions: string;
             /** Сервер, с которого делались бекапы */
             server_name: string;
-            /** Тип БД */
+            /** Имя БД */
             db_name: string;
             /** Имя таблицы */
             table_name: string;

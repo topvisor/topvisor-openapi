@@ -19791,7 +19791,7 @@ components:
           title: Сервер, с которого делались бекапы
           type: string
         db_name:
-          title: Тип БД
+          title: Имя БД
           type: string
         table_name:
           title: Имя таблицы
@@ -19829,10 +19829,21 @@ components:
     Admin_2.Methods.Actions.Backup.Project.Edit:
       type: object
       properties:
-        userId:
+        pass_admin_actions:
+          type: string
+        step:
+          title: |-
+            Этап:
+            - 1: Загрузить и подготовить бекапы
+            - 2: Выполнить восстановление
+          type: integer
+        server_name:
+          title: Сервер, с которого делались бекапы
+          type: string
+        user_id:
           title: ID пользователя
           type: integer
-        projectId:
+        project_id:
           title: ID проекта
           type: integer
         date:
@@ -19843,8 +19854,11 @@ components:
           title: Являеется ли запуск - тестом
           type: boolean
       required:
-        - userId
-        - projectId
+        - pass_admin_actions
+        - step
+        - server_name
+        - user_id
+        - project_id
         - date
         - test
       title: Востановление удаленного проекта

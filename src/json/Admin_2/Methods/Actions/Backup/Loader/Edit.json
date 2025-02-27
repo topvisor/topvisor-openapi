@@ -18,7 +18,7 @@
                         "type": "string"
                     },
                     "db_name": {
-                        "title": "Тип БД",
+                        "title": "Имя БД",
                         "type": "string"
                     },
                     "table_name": {

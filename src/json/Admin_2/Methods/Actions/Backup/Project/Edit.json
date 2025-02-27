@@ -10,11 +10,22 @@
             "Admin_2.Methods.Actions.Backup.Project.Edit": {
                 "type": "object",
                 "properties": {
-                    "userId": {
+                    "pass_admin_actions": {
+                        "type": "string"
+                    },
+                    "step": {
+                        "title": "Этап:\n- 1: Загрузить и подготовить бекапы\n- 2: Выполнить восстановление",
+                        "type": "integer"
+                    },
+                    "server_name": {
+                        "title": "Сервер, с которого делались бекапы",
+                        "type": "string"
+                    },
+                    "user_id": {
                         "title": "ID пользователя",
                         "type": "integer"
                     },
-                    "projectId": {
+                    "project_id": {
                         "title": "ID проекта",
                         "type": "integer"
                     },
@@ -32,8 +43,11 @@
                     }
                 },
                 "required": [
-                    "userId",
-                    "projectId",
+                    "pass_admin_actions",
+                    "step",
+                    "server_name",
+                    "user_id",
+                    "project_id",
                     "date",
                     "test"
                 ],

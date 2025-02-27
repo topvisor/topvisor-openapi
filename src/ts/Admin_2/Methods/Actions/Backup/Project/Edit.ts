@@ -9,10 +9,17 @@ export interface components {
     schemas: {
         /** Востановление удаленного проекта */
         "Admin_2.Methods.Actions.Backup.Project.Edit": {
+            pass_admin_actions: string;
+            /** Этап:
+             *     - 1: Загрузить и подготовить бекапы
+             *     - 2: Выполнить восстановление */
+            step: number;
+            /** Сервер, с которого делались бекапы */
+            server_name: string;
             /** ID пользователя */
-            userId: number;
+            user_id: number;
             /** ID проекта */
-            projectId: number;
+            project_id: number;
             /** Дата бекапа */
             date: import('../../../../../TV/API/Types/Date.ts').components['schemas']['TV.API.Types.Date'];
             /** Являеется ли запуск - тестом */
