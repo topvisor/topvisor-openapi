@@ -1623,7 +1623,7 @@
                         "readOnly": true
                     },
                     "Help_center": {
-                        "const": "Help",
+                        "const": "Help center",
                         "readOnly": true
                     },
                     "Help_center_welcome": {
