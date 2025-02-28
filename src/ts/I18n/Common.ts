@@ -815,7 +815,7 @@ export interface components {
             /** @constant */
             readonly Other_dates: "Other dates";
             /** @constant */
-            readonly Help_center: "Help center";
+            readonly Help_center: "Help Center";
             /** @constant */
             readonly Help_center_welcome: "Support Center";
             /** @constant */
