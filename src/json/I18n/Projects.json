@@ -937,6 +937,18 @@
                     "Change_url_no_available": {
                         "const": "The project URL must match the previously configured site\nThe URL cannot be changed to an address leading to another resource.",
                         "readOnly": true
+                    },
+                    "Sort_by_search_engine": {
+                        "const": "By search engine",
+                        "readOnly": true
+                    },
+                    "Sort_by_yande_region_code": {
+                        "const": "By Yandex region code (lr)",
+                        "readOnly": true
+                    },
+                    "Sort_by_lphabetically": {
+                        "const": "Alphabetically",
+                        "readOnly": true
                     }
                 },
                 "required": [
@@ -1171,7 +1183,10 @@
                     "Username",
                     "Spent",
                     "Spend_limit",
-                    "Change_url_no_available"
+                    "Change_url_no_available",
+                    "Sort_by_search_engine",
+                    "Sort_by_yande_region_code",
+                    "Sort_by_lphabetically"
                 ]
             }
         }
