@@ -949,6 +949,10 @@
                     "Sort_by_lphabetically": {
                         "const": "Alphabetically",
                         "readOnly": true
+                    },
+                    "Project_url": {
+                        "const": "Project URL",
+                        "readOnly": true
                     }
                 },
                 "required": [
@@ -1186,7 +1190,8 @@
                     "Change_url_no_available",
                     "Sort_by_search_engine",
                     "Sort_by_yande_region_code",
-                    "Sort_by_lphabetically"
+                    "Sort_by_lphabetically",
+                    "Project_url"
                 ]
             }
         }

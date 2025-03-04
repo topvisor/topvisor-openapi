@@ -478,6 +478,8 @@ export interface components {
             readonly Sort_by_yande_region_code: "By Yandex region code (lr)";
             /** @constant */
             readonly Sort_by_lphabetically: "Alphabetically";
+            /** @constant */
+            readonly Project_url: "Project URL";
         };
     };
     responses: never;
