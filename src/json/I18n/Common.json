@@ -318,6 +318,10 @@
                         "const": "Read more",
                         "readOnly": true
                     },
+                    "Read_more2": {
+                        "const": "Read more",
+                        "readOnly": true
+                    },
                     "User": {
                         "const": "User",
                         "readOnly": true
@@ -1969,6 +1973,7 @@
                     "Send",
                     "More",
                     "Read_more",
+                    "Read_more2",
                     "User",
                     "Message",
                     "Message_not_sended",

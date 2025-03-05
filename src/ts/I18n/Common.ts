@@ -163,6 +163,8 @@ export interface components {
             /** @constant */
             readonly Read_more: "Read more";
             /** @constant */
+            readonly Read_more2: "Read more";
+            /** @constant */
             readonly User: "User";
             /** @constant */
             readonly Message: "Message";
