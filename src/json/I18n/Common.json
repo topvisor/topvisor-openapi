@@ -1695,7 +1695,7 @@
                         "readOnly": true
                     },
                     "Bank_title": {
-                        "const": "Bank",
+                        "const": "Billing",
                         "readOnly": true
                     },
                     "Your_projects": {

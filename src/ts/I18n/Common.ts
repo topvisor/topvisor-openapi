@@ -851,7 +851,7 @@ export interface components {
             /** @constant */
             readonly Profile_title: "Account";
             /** @constant */
-            readonly Bank_title: "Bank";
+            readonly Bank_title: "Billing";
             /** @constant */
             readonly Your_projects: "Your projects";
             /** @constant */
