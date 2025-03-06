@@ -615,7 +615,7 @@
                         "readOnly": true
                     },
                     "Bank": {
-                        "const": "Bank",
+                        "const": "Billing",
                         "readOnly": true
                     },
                     "Bulk_operations": {

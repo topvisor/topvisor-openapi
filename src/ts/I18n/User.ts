@@ -311,7 +311,7 @@ export interface components {
             /** @constant */
             readonly account_link: "your account settings";
             /** @constant */
-            readonly Bank: "Bank";
+            readonly Bank: "Billing";
             /** @constant */
             readonly Bulk_operations: "Bulk operations";
             /** @constant */
