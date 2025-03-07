@@ -507,7 +507,7 @@ export interface components {
             /** @constant */
             readonly Invoices_and_acts: "Invoices and statements";
             /** @constant */
-            readonly Operations: "Bank history";
+            readonly Operations: "Billing history";
             /** @constant */
             readonly Invoice_number: "Invoice number";
             /** @constant */

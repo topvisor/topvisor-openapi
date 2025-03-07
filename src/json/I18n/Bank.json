@@ -1007,7 +1007,7 @@
                         "readOnly": true
                     },
                     "Operations": {
-                        "const": "Bank history",
+                        "const": "Billing history",
                         "readOnly": true
                     },
                     "Invoice_number": {
