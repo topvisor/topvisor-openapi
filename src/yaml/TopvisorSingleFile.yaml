@@ -2529,6 +2529,43 @@ paths:
               schema:
                 $ref: '#/components/schemas/Models.Projects'
                 description: Only for typescript, does not contain real data
+  /abstractregular/keywords_2/collect/:
+    post:
+      operationId: AbstractregularKeywords2Collect
+      tags:
+        - Keywords_2
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Keywords_2.Methods.Collect.AbstractRegular'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            title: |-
+                              Непосредтсвенный вызов API функции
+
+                              Запрещено делать публичной, это приведет к поломке preCall()
+
+                              В описании к функции отвечать на вопрос: `Что является результатом запроса?` Например: `Список пользователей`
+
+                              TODO: Автоматической проверки нет, не менять protected
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
   /get/keywords_2/keywords/:
     post:
       operationId: GetKeywords2Keywords
@@ -6541,6 +6578,79 @@ paths:
                               oneOf:
                                 - type: string
                                 - type: number
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
+  /edit/keywords_2/collect/go/:
+    post:
+      operationId: EditKeywords2CollectGo
+      tags:
+        - Keywords_2
+      summary: Постановка задачи на подбор запросов
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Keywords_2.Methods.Collect.Go.Edit'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            type: array
+                            items:
+                              oneOf:
+                                - type: string
+                                - type: number
+                            title: Массив созданных групп
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
+  /get/keywords_2/collect/price/:
+    post:
+      operationId: GetKeywords2CollectPrice
+      tags:
+        - Keywords_2
+      summary: Получение стоимости подбора запросов
+      description: '@see Keywords_2\Methods\Collect\AbstractRegular'
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Keywords_2.Methods.Collect.Price.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            type: array
+                            items:
+                              oneOf:
+                                - type: string
+                                - type: number
+                            title: '@return array{pricesByUsers: array<string, array{price: float, priceOriginal: float, qualifiers: array{region_key: int, searcher_key: (0 | 1 | 5 | 100 | 101 | 102 | 104 | 105 | 106), region_lang?: (string | null), also_searched?: (int | null), depth?: (int | null), hint_depth: (1 | 2 | 3), hint_generators: array<(''letter'' | ''letter_ru'' | ''number'' | ''space'')>}, comment: string}>}'
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
@@ -14179,6 +14289,77 @@ components:
           nullable: true
         pos_summary_visibility:
           nullable: true
+    Keywords_2.Types.Collect.ToType:
+      type: string
+      enum:
+        - in_folder
+        - in_folder_last
+      title: Куда добавлять добавляемые группы
+    TV.API.Types.Currency:
+      type: string
+      enum:
+        - RUB
+        - USD
+      title: |-
+        Валюта
+
+        Этот общий тип, не зависящий от контекста
+
+        Дополниетольно нужно проверять в API методах через site()->checkAllowCurrency() в функции check()
+    Keywords_2.Methods.Collect.AbstractRegular:
+      type: object
+      properties:
+        project_id:
+          title: ID проекта
+          type: integer
+        keywords:
+          title: Список исходных запросов
+          type: array
+          items:
+            oneOf:
+              - type: string
+              - type: number
+        qualifiers:
+          title: Объекты определителей настроек ПС и регионов
+          description: '@var array<int, array{region_key: int, searcher_key: (0 | 1 | 5 | 100 | 101 | 102 | 104 | 105 | 106), region_lang?: (string | null), also_searched?: (int | null), depth?: (int | null), hint_depth: (1 | 2 | 3), hint_generators: array<(''letter'' | ''letter_ru'' | ''number'' | ''space'')>}>'
+          type: array
+          items:
+            oneOf:
+              - type: string
+              - type: number
+        keywords_minus:
+          title: Минус фразы (только для searcher_key = 0 и searcher_key = 1)
+          type: array
+          items:
+            oneOf:
+              - type: string
+              - type: number
+        to_group_id:
+          title: Id группы для размещения подобранных запросов
+          nullable: true
+          type: integer
+        to_id:
+          title: Id папки для новых групп
+          type: integer
+        to_type:
+          default: in_folder_last
+          nullable: true
+          allOf:
+            - $ref: '#/components/schemas/Keywords_2.Types.Collect.ToType'
+        in_one_group:
+          title: Собирать все запросы в одну группу (не несет смысл, если указан to_group_id)
+          type: boolean
+        currency:
+          nullable: true
+          allOf:
+            - $ref: '#/components/schemas/TV.API.Types.Currency'
+        debug:
+          nullable: true
+          type: string
+      required:
+        - project_id
+        - keywords
+        - qualifiers
     Keywords_2.Methods.Keywords.Get:
       type: object
       properties:
@@ -15939,17 +16120,6 @@ components:
       properties: {}
       required: []
       title: Получение общей статистики по реферальной программе
-    TV.API.Types.Currency:
-      type: string
-      enum:
-        - RUB
-        - USD
-      title: |-
-        Валюта
-
-        Этот общий тип, не зависящий от контекста
-
-        Дополниетольно нужно проверять в API методах через site()->checkAllowCurrency() в функции check()
     Admin_2.Methods.Affiliate.ReferralsByLevel.Get:
       type: object
       properties:
@@ -18814,6 +18984,121 @@ components:
       properties: {}
       required: []
       title: Получение меню справки
+    Keywords_2.Methods.Collect.Go.Edit:
+      type: object
+      properties:
+        project_id:
+          title: ID проекта
+          type: integer
+        keywords:
+          title: Список исходных запросов
+          type: array
+          items:
+            oneOf:
+              - type: string
+              - type: number
+        qualifiers:
+          title: Объекты определителей настроек ПС и регионов
+          description: '@var array<int, array{region_key: int, searcher_key: (0 | 1 | 5 | 100 | 101 | 102 | 104 | 105 | 106), region_lang?: (string | null), also_searched?: (int | null), depth?: (int | null), hint_depth: (1 | 2 | 3), hint_generators: array<(''letter'' | ''letter_ru'' | ''number'' | ''space'')>}>'
+          type: array
+          items:
+            oneOf:
+              - type: string
+              - type: number
+        keywords_minus:
+          title: Минус фразы (только для searcher_key = 0 и searcher_key = 1)
+          type: array
+          items:
+            oneOf:
+              - type: string
+              - type: number
+        to_group_id:
+          title: Id группы для размещения подобранных запросов
+          nullable: true
+          type: integer
+        to_id:
+          title: Id папки для новых групп
+          type: integer
+        to_type:
+          default: in_folder_last
+          nullable: true
+          allOf:
+            - $ref: '#/components/schemas/Keywords_2.Types.Collect.ToType'
+        in_one_group:
+          title: Собирать все запросы в одну группу (не несет смысл, если указан to_group_id)
+          type: boolean
+        currency:
+          nullable: true
+          allOf:
+            - $ref: '#/components/schemas/TV.API.Types.Currency'
+        debug:
+          nullable: true
+          type: string
+      required:
+        - project_id
+        - keywords
+        - qualifiers
+      title: Постановка задачи на подбор запросов
+    Keywords_2.Methods.Collect.Price.Get:
+      type: object
+      properties:
+        apply_discount:
+          title: 'Отображать сумму с учетом скидки (по умолчанию: 1)'
+          default: true
+          type: boolean
+        project_id:
+          title: ID проекта
+          type: integer
+        keywords:
+          title: Список исходных запросов
+          type: array
+          items:
+            oneOf:
+              - type: string
+              - type: number
+        qualifiers:
+          title: Объекты определителей настроек ПС и регионов
+          description: '@var array<int, array{region_key: int, searcher_key: (0 | 1 | 5 | 100 | 101 | 102 | 104 | 105 | 106), region_lang?: (string | null), also_searched?: (int | null), depth?: (int | null), hint_depth: (1 | 2 | 3), hint_generators: array<(''letter'' | ''letter_ru'' | ''number'' | ''space'')>}>'
+          type: array
+          items:
+            oneOf:
+              - type: string
+              - type: number
+        keywords_minus:
+          title: Минус фразы (только для searcher_key = 0 и searcher_key = 1)
+          type: array
+          items:
+            oneOf:
+              - type: string
+              - type: number
+        to_group_id:
+          title: Id группы для размещения подобранных запросов
+          nullable: true
+          type: integer
+        to_id:
+          title: Id папки для новых групп
+          type: integer
+        to_type:
+          default: in_folder_last
+          nullable: true
+          allOf:
+            - $ref: '#/components/schemas/Keywords_2.Types.Collect.ToType'
+        in_one_group:
+          title: Собирать все запросы в одну группу (не несет смысл, если указан to_group_id)
+          type: boolean
+        currency:
+          nullable: true
+          allOf:
+            - $ref: '#/components/schemas/TV.API.Types.Currency'
+        debug:
+          nullable: true
+          type: string
+      required:
+        - project_id
+        - keywords
+        - qualifiers
+      title: Получение стоимости подбора запросов
+      description: '@see Keywords_2\Methods\Collect\AbstractRegular'
     Keywords_2.Methods.Keywords.Import.Add:
       type: object
       properties:

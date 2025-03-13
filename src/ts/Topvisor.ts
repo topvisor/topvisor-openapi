@@ -1270,6 +1270,22 @@ export interface paths {
         head?: never;
         patch?: never;
         trace?: never;
+    };
+    "/abstractregular/keywords_2/collect/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["AbstractregularKeywords2Collect"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
     };  
     /** Получение списка запросов проекта */
     "/get/keywords_2/keywords/": {
@@ -3376,6 +3392,43 @@ export interface paths {
         get?: never;
         put?: never;
         post: operations["GetContent2SupportMenu"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Постановка задачи на подбор запросов */
+    "/edit/keywords_2/collect/go/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["EditKeywords2CollectGo"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /**
+     * Получение стоимости подбора запросов
+     * @description @see Keywords_2\Methods\Collect\AbstractRegular
+     */
+    "/get/keywords_2/collect/price/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["GetKeywords2CollectPrice"];
         delete?: never;
         options?: never;
         head?: never;
@@ -7353,6 +7406,39 @@ export interface operations {
             };
         };
     };
+    AbstractregularKeywords2Collect: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Keywords_2/Methods/Collect/AbstractRegular.ts').components['schemas']['Keywords_2.Methods.Collect.AbstractRegular'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        /** Непосредтсвенный вызов API функции
+                         *
+                         *     Запрещено делать публичной, это приведет к поломке preCall()
+                         *
+                         *     В описании к функции отвечать на вопрос: `Что является результатом запроса?` Например: `Список пользователей`
+                         *
+                         *     TODO: Автоматической проверки нет, не менять protected */
+                        result: unknown;
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: null;
+                };
+            };
+        };
+    };
     GetKeywords2Keywords: {
         parameters: {
             query?: never;
@@ -10505,6 +10591,60 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
+                        result: (string | number)[];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: null;
+                };
+            };
+        };
+    };
+    EditKeywords2CollectGo: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Keywords_2/Methods/Collect/Go/Edit.ts').components['schemas']['Keywords_2.Methods.Collect.Go.Edit'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        /** Массив созданных групп */
+                        result: (string | number)[];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: null;
+                };
+            };
+        };
+    };
+    GetKeywords2CollectPrice: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Keywords_2/Methods/Collect/Price/Get.ts').components['schemas']['Keywords_2.Methods.Collect.Price.Get'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        /** @return array{pricesByUsers: array<string, array{price: float, priceOriginal: float, qualifiers: array{region_key: int, searcher_key: (0 | 1 | 5 | 100 | 101 | 102 | 104 | 105 | 106), region_lang?: (string | null), also_searched?: (int | null), depth?: (int | null), hint_depth: (1 | 2 | 3), hint_generators: array<('letter' | 'letter_ru' | 'number' | 'space')>}, comment: string}>} */
                         result: (string | number)[];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
