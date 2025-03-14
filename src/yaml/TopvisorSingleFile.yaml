@@ -21528,6 +21528,10 @@ components:
             oneOf:
               - type: string
               - type: number
+        apply_discount:
+          title: 'Отображать сумму с учетом скидки (по умолчанию: 1)'
+          default: true
+          type: boolean
         collection_type:
           title: Каким типом расширять группу
           allOf:

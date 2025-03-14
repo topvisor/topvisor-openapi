@@ -13,6 +13,11 @@ export interface components {
             project_id: number;
             /** Минус фразы */
             keywords_minus?: (string | number)[] | null;
+            /**
+             * Отображать сумму с учетом скидки (по умолчанию: 1)
+             * @default true
+             */
+            apply_discount: boolean;
             /** Каким типом расширять группу */
             collection_type: import('../../../../Types/Collect/CollectionType.ts').components['schemas']['Keywords_2.Types.Collect.CollectionType'];
             /**
