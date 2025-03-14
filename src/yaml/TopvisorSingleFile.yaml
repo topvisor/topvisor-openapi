@@ -10332,6 +10332,77 @@ paths:
               schema:
                 $ref: '#/components/schemas/Models.Pages'
                 description: Only for typescript, does not contain real data
+  /edit/keywords_2/collect/ext/go/:
+    post:
+      operationId: EditKeywords2CollectExtGo
+      tags:
+        - Keywords_2
+      summary: Постановка задачи на расширение группы
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Keywords_2.Methods.Collect.Ext.Go.Edit'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            type: array
+                            items:
+                              oneOf:
+                                - type: string
+                                - type: number
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
+  /get/keywords_2/collect/ext/price/:
+    post:
+      operationId: GetKeywords2CollectExtPrice
+      tags:
+        - Keywords_2
+      summary: Получение цены на расширение группы
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Keywords_2.Methods.Collect.Ext.Price.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            type: array
+                            items:
+                              oneOf:
+                                - type: string
+                                - type: number
+                            title: '@return array{pricesByUsers: array<string, array{price: float, priceOriginal: float, qualifiers: array{region_key: int, searcher_key: (0 | 1 | 5 | 100 | 101 | 102 | 104 | 105 | 106), region_lang?: (string | null), also_searched?: (int | null), depth?: (int | null), hint_depth: (1 | 2 | 3), hint_generators: array<(''letter'' | ''letter_ru'' | ''number'' | ''space'')>}, comment: string}>}'
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
   /get/positions_2/searchers/regions/export/:
     post:
       operationId: GetPositions2SearchersRegionsExport
@@ -21401,6 +21472,83 @@ components:
         - offset
       title: Получение стаьи для "Слово дня" в модуле SEO словарь
       description: '@return (array<string, array{url: string, menu_name: string, description: string, count_views: integer}> | null)'
+    Keywords_2.Types.Collect.CollectionType:
+      type: string
+      enum:
+        - groupName
+        - groupNameWithKeywords
+        - keywords
+      title: По каким параметрам расширять группу
+    Keywords_2.Methods.Collect.Ext.Go.Edit:
+      type: object
+      properties:
+        project_id:
+          title: ID проекта
+          type: integer
+        keywords_minus:
+          title: Минус фразы
+          nullable: true
+          type: array
+          items:
+            oneOf:
+              - type: string
+              - type: number
+        collection_type:
+          title: Каким типом расширять группу
+          allOf:
+            - $ref: '#/components/schemas/Keywords_2.Types.Collect.CollectionType'
+        qualifiers:
+          title: Объекты определителей настроек ПС и регионов
+          description: '@var array<int, array{region_key: int, searcher_key: (0 | 1 | 5 | 100 | 101 | 102 | 104 | 105 | 106), region_lang?: (string | null), also_searched?: (int | null), depth?: (int | null), hint_depth: (1 | 2 | 3), hint_generators: array<(''letter'' | ''letter_ru'' | ''number'' | ''space'')>}>'
+          type: array
+          items:
+            oneOf:
+              - type: string
+              - type: number
+        filters:
+          $ref: '#/components/schemas/filters'
+        id:
+          $ref: '#/components/schemas/id'
+      required:
+        - project_id
+        - collection_type
+        - qualifiers
+      title: Постановка задачи на расширение группы
+    Keywords_2.Methods.Collect.Ext.Price.Get:
+      type: object
+      properties:
+        project_id:
+          title: ID проекта
+          type: integer
+        keywords_minus:
+          title: Минус фразы
+          nullable: true
+          type: array
+          items:
+            oneOf:
+              - type: string
+              - type: number
+        collection_type:
+          title: Каким типом расширять группу
+          allOf:
+            - $ref: '#/components/schemas/Keywords_2.Types.Collect.CollectionType'
+        qualifiers:
+          title: Объекты определителей настроек ПС и регионов
+          description: '@var array<int, array{region_key: int, searcher_key: (0 | 1 | 5 | 100 | 101 | 102 | 104 | 105 | 106), region_lang?: (string | null), also_searched?: (int | null), depth?: (int | null), hint_depth: (1 | 2 | 3), hint_generators: array<(''letter'' | ''letter_ru'' | ''number'' | ''space'')>}>'
+          type: array
+          items:
+            oneOf:
+              - type: string
+              - type: number
+        filters:
+          $ref: '#/components/schemas/filters'
+        id:
+          $ref: '#/components/schemas/id'
+      required:
+        - project_id
+        - collection_type
+        - qualifiers
+      title: Получение цены на расширение группы
     Positions_2.Methods.Searchers.Regions.Export.Get:
       type: object
       properties:
