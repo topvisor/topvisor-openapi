@@ -806,8 +806,8 @@
                         "const": "You can manage added locations in project settings",
                         "readOnly": true
                     },
-                    "Enter_location_or_yandex_code": {
-                        "const": "Enter Location or its Yandex code",
+                    "Enter_location": {
+                        "const": "Enter Location",
                         "readOnly": true
                     },
                     "Locations": {
@@ -1155,7 +1155,7 @@
                     "Select_search_engine",
                     "Press_search_engine_icon_to_add_location",
                     "You_can_manage_locations_in_settings",
-                    "Enter_location_or_yandex_code",
+                    "Enter_location",
                     "Locations",
                     "Skip_wizard",
                     "Setup_rank_tracker",
