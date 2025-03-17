@@ -1,21 +1,26 @@
 {
     "openapi": "3.0.0",
     "info": {
-        "title": "Topvisor/I18n.Admin",
+        "title": "Topvisor/I18n.Sites.Thundo.Admin",
         "version": "2.0.0"
     },
     "paths": {},
     "components": {
         "schemas": {
-            "I18n.Admin": {
+            "I18n.Sites.Thundo.Admin": {
                 "type": "object",
                 "properties": {
+                    "Warning_message": {
+                        "const": "",
+                        "readOnly": true
+                    },
                     "Warning_message_admin": {
                         "const": "",
                         "readOnly": true
                     }
                 },
                 "required": [
+                    "Warning_message",
                     "Warning_message_admin"
                 ]
             }

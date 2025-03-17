@@ -13,9 +13,6 @@
             "Actions": {
                 "$ref": "I18n/Actions.json#/components/schemas/I18n.Actions"
             },
-            "Admin": {
-                "$ref": "I18n/Admin.json#/components/schemas/I18n.Admin"
-            },
             "Analytics": {
                 "$ref": "I18n/Analytics.json#/components/schemas/I18n.Analytics"
             },
@@ -141,6 +138,12 @@
             },
             "Audit.Scan.Checks": {
                 "$ref": "I18n/Audit/Scan/Checks.json#/components/schemas/I18n.Audit.Scan.Checks"
+            },
+            "Sites.Thundo.Admin": {
+                "$ref": "I18n/Sites/Thundo/Admin.json#/components/schemas/I18n.Sites.Thundo.Admin"
+            },
+            "Sites.Topvisor.Admin": {
+                "$ref": "I18n/Sites/Topvisor/Admin.json#/components/schemas/I18n.Sites.Topvisor.Admin"
             },
             "Sites.Topvisor.Organization": {
                 "$ref": "I18n/Sites/Topvisor/Organization.json#/components/schemas/I18n.Sites.Topvisor.Organization"

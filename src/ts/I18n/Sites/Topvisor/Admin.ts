@@ -7,7 +7,7 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        "I18n.Admin": {
+        "I18n.Sites.Topvisor.Admin": {
             /** @constant */
             readonly Warning_message_admin: "";
         };

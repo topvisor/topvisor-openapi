@@ -9,7 +9,6 @@ export interface components {
     schemas: {
         Common: import('./I18n/Common.ts').components['schemas']['I18n.Common'];
         Actions: import('./I18n/Actions.ts').components['schemas']['I18n.Actions'];
-        Admin: import('./I18n/Admin.ts').components['schemas']['I18n.Admin'];
         Analytics: import('./I18n/Analytics.ts').components['schemas']['I18n.Analytics'];
         Api: import('./I18n/Api.ts').components['schemas']['I18n.Api'];
         Audit: import('./I18n/Audit.ts').components['schemas']['I18n.Audit'];
@@ -52,6 +51,8 @@ export interface components {
         "Projects.CheckButton": import('./I18n/Projects/CheckButton.ts').components['schemas']['I18n.Projects.CheckButton'];
         "Projects.Settings": import('./I18n/Projects/Settings.ts').components['schemas']['I18n.Projects.Settings'];
         "Audit.Scan.Checks": import('./I18n/Audit/Scan/Checks.ts').components['schemas']['I18n.Audit.Scan.Checks'];
+        "Sites.Thundo.Admin": import('./I18n/Sites/Thundo/Admin.ts').components['schemas']['I18n.Sites.Thundo.Admin'];
+        "Sites.Topvisor.Admin": import('./I18n/Sites/Topvisor/Admin.ts').components['schemas']['I18n.Sites.Topvisor.Admin'];
         "Sites.Topvisor.Organization": import('./I18n/Sites/Topvisor/Organization.ts').components['schemas']['I18n.Sites.Topvisor.Organization'];
     };
     responses: never;
