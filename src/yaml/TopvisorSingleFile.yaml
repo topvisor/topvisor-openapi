@@ -10354,12 +10354,7 @@ paths:
                   - allOf:
                       - type: object
                         properties:
-                          result:
-                            type: array
-                            items:
-                              oneOf:
-                                - type: string
-                                - type: number
+                          result: {}
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
@@ -10390,11 +10385,6 @@ paths:
                       - type: object
                         properties:
                           result:
-                            type: array
-                            items:
-                              oneOf:
-                                - type: string
-                                - type: number
                             title: '@return array{pricesByUsers: array<string, array{price: float, priceOriginal: float, qualifiers: array{region_key: int, searcher_key: (0 | 1 | 5 | 100 | 101 | 102 | 104 | 105 | 106), region_lang?: (string | null), also_searched?: (int | null), depth?: (int | null), hint_depth: (1 | 2 | 3), hint_generators: array<(''letter'' | ''letter_ru'' | ''number'' | ''space'')>}, comment: string}>}'
                         required:
                           - result

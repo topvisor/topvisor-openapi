@@ -13652,7 +13652,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: (string | number)[];
+                        result: unknown;
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -13679,7 +13679,7 @@ export interface operations {
                 content: {
                     "application/json": ({
                         /** @return array{pricesByUsers: array<string, array{price: float, priceOriginal: float, qualifiers: array{region_key: int, searcher_key: (0 | 1 | 5 | 100 | 101 | 102 | 104 | 105 | 106), region_lang?: (string | null), also_searched?: (int | null), depth?: (int | null), hint_depth: (1 | 2 | 3), hint_generators: array<('letter' | 'letter_ru' | 'number' | 'space')>}, comment: string}>} */
-                        result: (string | number)[];
+                        result: unknown;
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
