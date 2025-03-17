@@ -45,17 +45,7 @@
                     "qualifiers": {
                         "title": "Объекты определителей настроек ПС и регионов",
                         "description": "@var array<int, array{region_key: int, searcher_key: (0 | 1 | 5 | 100 | 101 | 102 | 104 | 105 | 106), region_lang?: (string | null), also_searched?: (int | null), depth?: (int | null), hint_depth: (1 | 2 | 3), hint_generators: array<('letter' | 'letter_ru' | 'number' | 'space')>}>",
-                        "type": "array",
-                        "items": {
-                            "oneOf": [
-                                {
-                                    "type": "string"
-                                },
-                                {
-                                    "type": "number"
-                                }
-                            ]
-                        }
+                        "nullable": true
                     },
                     "filters": {
                         "$ref": "../../../../../TV/API/Params/FiltersTrait.json#/components/schemas/TV.API.Params.FiltersTrait/properties/filters"
@@ -66,8 +56,7 @@
                 },
                 "required": [
                     "project_id",
-                    "collection_type",
-                    "qualifiers"
+                    "collection_type"
                 ],
                 "title": "Получение цены на расширение группы"
             }
