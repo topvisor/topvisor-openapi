@@ -407,7 +407,7 @@ export interface components {
             /** @constant */
             readonly You_can_manage_locations_in_settings: "You can manage added locations in project settings";
             /** @constant */
-            readonly Enter_location: "Enter Location";
+            readonly Enter_location_or_yandex_code: "Enter Location or its Yandex code";
             /** @constant */
             readonly Locations: "Locations";
             /** @constant */
