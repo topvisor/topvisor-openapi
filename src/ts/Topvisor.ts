@@ -2660,7 +2660,8 @@ export interface paths {
         head?: never;
         patch?: never;
         trace?: never;
-    };
+    };  
+    /** Добавление отпуска для сотрудника */
     "/add/admin_2/staff/vacation/": {
         parameters: {
             query?: never;

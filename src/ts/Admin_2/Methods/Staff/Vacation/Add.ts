@@ -7,6 +7,7 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
+        /** Добавление отпуска для сотрудника */
         "Admin_2.Methods.Staff.Vacation.Add": {
             /** ID юзера */
             user_id: number;
