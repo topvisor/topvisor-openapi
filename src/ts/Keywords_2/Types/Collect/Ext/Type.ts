@@ -11,7 +11,7 @@ export interface components {
          * По каким параметрам расширять группу
          * @enum {string}
          */
-        "Keywords_2.Types.Collect.CollectionType": "groupName" | "groupNameWithKeywords" | "keywords";
+        "Keywords_2.Types.Collect.Ext.Type": "groupName" | "groupNameWithKeywords" | "keywords";
     };
     responses: never;
     parameters: never;

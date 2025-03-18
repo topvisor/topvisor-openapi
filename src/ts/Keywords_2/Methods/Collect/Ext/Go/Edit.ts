@@ -14,7 +14,7 @@ export interface components {
             /** Минус фразы */
             keywords_minus?: (string | number)[] | null;
             /** Каким типом расширять группу */
-            collection_type: import('../../../../Types/Collect/CollectionType.ts').components['schemas']['Keywords_2.Types.Collect.CollectionType'];
+            type: import('../../../../Types/Collect/Ext/Type.ts').components['schemas']['Keywords_2.Types.Collect.Ext.Type'];
             /**
              * Объекты определителей настроек ПС и регионов
              * @description @var array<int, array{region_key: int, searcher_key: (0 | 1 | 5 | 100 | 101 | 102 | 104 | 105 | 106), region_lang?: (string | null), also_searched?: (int | null), depth?: (int | null), hint_depth: (1 | 2 | 3), hint_generators: array<('letter' | 'letter_ru' | 'number' | 'space')>}>

@@ -29,11 +29,11 @@
                             ]
                         }
                     },
-                    "collection_type": {
+                    "type": {
                         "title": "Каким типом расширять группу",
                         "allOf": [
                             {
-                                "$ref": "../../../../../Keywords_2/Types/Collect/CollectionType.json#/components/schemas/Keywords_2.Types.Collect.CollectionType"
+                                "$ref": "../../../../../Keywords_2/Types/Collect/Ext/Type.json#/components/schemas/Keywords_2.Types.Collect.Ext.Type"
                             }
                         ]
                     },
@@ -51,7 +51,7 @@
                 },
                 "required": [
                     "project_id",
-                    "collection_type"
+                    "type"
                 ],
                 "title": "Постановка задачи на расширение группы"
             }

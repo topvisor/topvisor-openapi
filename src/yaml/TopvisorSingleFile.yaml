@@ -21462,7 +21462,7 @@ components:
         - offset
       title: Получение стаьи для "Слово дня" в модуле SEO словарь
       description: '@return (array<string, array{url: string, menu_name: string, description: string, count_views: integer}> | null)'
-    Keywords_2.Types.Collect.CollectionType:
+    Keywords_2.Types.Collect.Ext.Type:
       type: string
       enum:
         - groupName
@@ -21483,10 +21483,10 @@ components:
             oneOf:
               - type: string
               - type: number
-        collection_type:
+        type:
           title: Каким типом расширять группу
           allOf:
-            - $ref: '#/components/schemas/Keywords_2.Types.Collect.CollectionType'
+            - $ref: '#/components/schemas/Keywords_2.Types.Collect.Ext.Type'
         qualifiers:
           title: Объекты определителей настроек ПС и регионов
           description: '@var array<int, array{region_key: int, searcher_key: (0 | 1 | 5 | 100 | 101 | 102 | 104 | 105 | 106), region_lang?: (string | null), also_searched?: (int | null), depth?: (int | null), hint_depth: (1 | 2 | 3), hint_generators: array<(''letter'' | ''letter_ru'' | ''number'' | ''space'')>}>'
@@ -21497,7 +21497,7 @@ components:
           $ref: '#/components/schemas/id'
       required:
         - project_id
-        - collection_type
+        - type
       title: Постановка задачи на расширение группы
     Keywords_2.Methods.Collect.Ext.Price.Get:
       type: object
@@ -21517,10 +21517,10 @@ components:
           title: 'Отображать сумму с учетом скидки (по умолчанию: 1)'
           default: true
           type: boolean
-        collection_type:
+        type:
           title: Каким типом расширять группу
           allOf:
-            - $ref: '#/components/schemas/Keywords_2.Types.Collect.CollectionType'
+            - $ref: '#/components/schemas/Keywords_2.Types.Collect.Ext.Type'
         qualifiers:
           title: Объекты определителей настроек ПС и регионов
           description: '@var array<int, array{region_key: int, searcher_key: (0 | 1 | 5 | 100 | 101 | 102 | 104 | 105 | 106), region_lang?: (string | null), also_searched?: (int | null), depth?: (int | null), hint_depth: (1 | 2 | 3), hint_generators: array<(''letter'' | ''letter_ru'' | ''number'' | ''space'')>}>'
@@ -21531,7 +21531,7 @@ components:
           $ref: '#/components/schemas/id'
       required:
         - project_id
-        - collection_type
+        - type
       title: Получение цены на расширение группы
     Positions_2.Methods.Searchers.Regions.Export.Get:
       type: object
