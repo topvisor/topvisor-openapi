@@ -1,0 +1,60 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Content_2.Methods.Apometr.History.Get",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Content_2.Methods.Apometr.History.Get": {
+                "type": "object",
+                "properties": {
+                    "region_index": {
+                        "title": "Индекс региона",
+                        "nullable": true,
+                        "type": "integer"
+                    },
+                    "searcher_key": {
+                        "allOf": [
+                            {
+                                "$ref": "../../../../Positions_2/Types/SearcherKey.json#/components/schemas/Positions_2.Types.SearcherKey"
+                            }
+                        ]
+                    },
+                    "region_key": {
+                        "title": "Ключ региона",
+                        "type": "integer"
+                    },
+                    "region_lang": {
+                        "title": "Язык региона",
+                        "default": "ru",
+                        "type": "string"
+                    },
+                    "region_device": {
+                        "allOf": [
+                            {
+                                "$ref": "../../../../Content_2/Types/Apometr/RegionDevice.json#/components/schemas/Content_2.Types.Apometr.RegionDevice"
+                            }
+                        ]
+                    },
+                    "date": {
+                        "title": "Дата",
+                        "nullable": true,
+                        "allOf": [
+                            {
+                                "$ref": "../../../../TV/API/Types/Date.json#/components/schemas/TV.API.Types.Date"
+                            }
+                        ]
+                    },
+                    "avg": {
+                        "title": "Вернуть только средние значения по всем тематикам",
+                        "type": "boolean"
+                    }
+                },
+                "required": [],
+                "title": "Получение истории шторма за период в 2 суток"
+            }
+        }
+    }
+}

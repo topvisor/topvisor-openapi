@@ -1,0 +1,21 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Content_2.Types.Apometr.RegionDevice",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Content_2.Types.Apometr.RegionDevice": {
+                "type": "integer",
+                "enum": [
+                    0,
+                    1,
+                    2
+                ],
+                "title": "Устройство региона"
+            }
+        }
+    }
+}

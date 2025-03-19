@@ -6337,6 +6337,107 @@ paths:
               schema:
                 type: string
                 format: binary
+  /get/content_2/apometr/calendar/:
+    post:
+      operationId: GetContent2ApometrCalendar
+      tags:
+        - Content_2
+      summary: Получение календаря апдейтов
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Content_2.Methods.Apometr.Calendar.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            type: array
+                            items:
+                              oneOf:
+                                - type: string
+                                - type: number
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
+  /get/content_2/apometr/history/:
+    post:
+      operationId: GetContent2ApometrHistory
+      tags:
+        - Content_2
+      summary: Получение истории шторма за период в 2 суток
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Content_2.Methods.Apometr.History.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            type: array
+                            items:
+                              oneOf:
+                                - type: string
+                                - type: number
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
+  /get/content_2/apometr/updates/:
+    post:
+      operationId: GetContent2ApometrUpdates
+      tags:
+        - Content_2
+      summary: Получение апдейтов
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Content_2.Methods.Apometr.Updates.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result: {}
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                      - $ref: '#/components/schemas/Pagination'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
   /get/content_2/journal/articles/:
     post:
       operationId: GetContent2JournalArticles
@@ -10114,6 +10215,114 @@ paths:
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
+  /get/content_2/apometr/text/calendar/:
+    post:
+      operationId: GetContent2ApometrTextCalendar
+      tags:
+        - Content_2
+      summary: Получение календаря текстовых апдейтов
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Content_2.Methods.Apometr.Text.Calendar.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            type: array
+                            items:
+                              oneOf:
+                                - type: string
+                                - type: number
+                            title: '@return array<string, array<string, int>>'
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
+  /get/content_2/apometr/text/updates/:
+    post:
+      operationId: GetContent2ApometrTextUpdates
+      tags:
+        - Content_2
+      summary: Получение текстовых апдейтов
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Content_2.Methods.Apometr.Text.Updates.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            type: array
+                            items:
+                              oneOf:
+                                - type: string
+                                - type: number
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                      - $ref: '#/components/schemas/Pagination'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
+  /get/content_2/apometr/updates/dates/:
+    post:
+      operationId: GetContent2ApometrUpdatesDates
+      tags:
+        - Content_2
+      summary: Получение дат апдейтов
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Content_2.Methods.Apometr.Updates.Dates.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            type: array
+                            items:
+                              oneOf:
+                                - type: string
+                                - type: number
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                      - $ref: '#/components/schemas/Pagination'
                   - $ref: '#/components/schemas/ResponseError'
             model:
               schema:
@@ -18903,6 +19112,101 @@ components:
         - filters
         - offset
       title: Скачивание архива документов в формате PDF
+    Content_2.Types.Apometr.RegionDevice:
+      type: integer
+      enum:
+        - 0
+        - 1
+        - 2
+      title: Устройство региона
+    Content_2.Types.Apometr.Action:
+      type: string
+      enum:
+        - '0'
+        - xml
+      title: Тип выдачи
+    Content_2.Methods.Apometr.Calendar.Get:
+      type: object
+      properties:
+        region_index:
+          title: |-
+            Индекс региона
+
+            Если не задан нужно задать параметры searcher_key, region_key, region_lang, region_device
+          nullable: true
+          type: integer
+        searcher_key:
+          nullable: true
+          allOf:
+            - $ref: '#/components/schemas/Positions_2.Types.SearcherKey'
+        region_key:
+          title: Ключ региона
+          nullable: true
+          type: integer
+        region_lang:
+          title: Язык региона
+          nullable: true
+          type: string
+        region_device:
+          nullable: true
+          allOf:
+            - $ref: '#/components/schemas/Content_2.Types.Apometr.RegionDevice'
+        action:
+          allOf:
+            - $ref: '#/components/schemas/Content_2.Types.Apometr.Action'
+        date_month:
+          title: Дата, определяющая месяц, в формате YYYY-MM-01
+          nullable: true
+          allOf:
+            - $ref: '#/components/schemas/TV.API.Types.Date'
+      required: []
+      title: Получение календаря апдейтов
+    Content_2.Methods.Apometr.History.Get:
+      type: object
+      properties:
+        region_index:
+          title: Индекс региона
+          nullable: true
+          type: integer
+        searcher_key:
+          allOf:
+            - $ref: '#/components/schemas/Positions_2.Types.SearcherKey'
+        region_key:
+          title: Ключ региона
+          type: integer
+        region_lang:
+          title: Язык региона
+          default: ru
+          type: string
+        region_device:
+          allOf:
+            - $ref: '#/components/schemas/Content_2.Types.Apometr.RegionDevice'
+        date:
+          title: Дата
+          nullable: true
+          allOf:
+            - $ref: '#/components/schemas/TV.API.Types.Date'
+        avg:
+          title: Вернуть только средние значения по всем тематикам
+          type: boolean
+      required: []
+      title: Получение истории шторма за период в 2 суток
+    Content_2.Methods.Apometr.Updates.Get:
+      type: object
+      properties:
+        limit:
+          nullable: true
+          type: integer
+        searcher_key:
+          allOf:
+            - $ref: '#/components/schemas/Positions_2.Types.SearcherKey'
+        date:
+          nullable: true
+          allOf:
+            - $ref: '#/components/schemas/TV.API.Types.Date'
+      required:
+        - searcher_key
+      title: Получение апдейтов
     Content_2.Methods.Journal.Articles.Get:
       type: object
       properties:
@@ -21346,6 +21650,56 @@ components:
         - checks_ids
         - project_id
       title: Получение сводок радара для графика
+    Content_2.Methods.Apometr.Text.Calendar.Get:
+      type: object
+      properties:
+        date:
+          title: Дата календаря
+          nullable: true
+          allOf:
+            - $ref: '#/components/schemas/TV.API.Types.Date'
+      required: []
+      title: Получение календаря текстовых апдейтов
+    Content_2.Methods.Apometr.Text.Updates.Get:
+      type: object
+      properties:
+        limit:
+          nullable: true
+          type: integer
+        searcher_key:
+          allOf:
+            - $ref: '#/components/schemas/Positions_2.Types.SearcherKey'
+        date:
+          nullable: true
+          allOf:
+            - $ref: '#/components/schemas/TV.API.Types.Date'
+        fields:
+          $ref: '#/components/schemas/fields'
+        orders:
+          $ref: '#/components/schemas/orders'
+        filters:
+          $ref: '#/components/schemas/filters'
+        id:
+          $ref: '#/components/schemas/id'
+        offset:
+          $ref: '#/components/schemas/offset'
+        fetch_style:
+          $ref: '#/components/schemas/fetch_style'
+      required:
+        - searcher_key
+        - fields
+        - orders
+        - filters
+        - offset
+      title: Получение текстовых апдейтов
+    Content_2.Methods.Apometr.Updates.Dates.Get:
+      type: object
+      properties:
+        limit:
+          nullable: true
+          type: integer
+      required: []
+      title: Получение дат апдейтов
     Content_2.Methods.Journal.Course.Certificates.Add:
       type: object
       properties:
