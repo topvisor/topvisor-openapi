@@ -11,7 +11,7 @@
                 "type": "object",
                 "properties": {
                     "limit": {
-                        "nullable": true,
+                        "default": 100,
                         "type": "integer"
                     },
                     "searcher_key": {

@@ -19264,7 +19264,7 @@ components:
       type: object
       properties:
         limit:
-          nullable: true
+          default: 100
           type: integer
         searcher_key:
           allOf:
@@ -21733,7 +21733,7 @@ components:
       type: object
       properties:
         limit:
-          nullable: true
+          default: 100
           type: integer
         searcher_key:
           allOf:
@@ -21742,24 +21742,8 @@ components:
           nullable: true
           allOf:
             - $ref: '#/components/schemas/TV.API.Types.Date'
-        fields:
-          $ref: '#/components/schemas/fields'
-        orders:
-          $ref: '#/components/schemas/orders'
-        filters:
-          $ref: '#/components/schemas/filters'
-        id:
-          $ref: '#/components/schemas/id'
-        offset:
-          $ref: '#/components/schemas/offset'
-        fetch_style:
-          $ref: '#/components/schemas/fetch_style'
       required:
         - searcher_key
-        - fields
-        - orders
-        - filters
-        - offset
       title: Получение текстовых апдейтов
     Content_2.Methods.Apometr.Updates.Dates.Get:
       type: object

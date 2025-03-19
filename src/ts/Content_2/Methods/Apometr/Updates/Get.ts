@@ -9,7 +9,8 @@ export interface components {
     schemas: {
         /** Получение апдейтов */
         "Content_2.Methods.Apometr.Updates.Get": {
-            limit?: number | null;
+            /** @default 100 */
+            limit: number;
             searcher_key: import('../../../../Positions_2/Types/SearcherKey.ts').components['schemas']['Positions_2.Types.SearcherKey'];
             date?: import('../../../../TV/API/Types/Date.ts').components['schemas']['TV.API.Types.Date'] | null;
         };
