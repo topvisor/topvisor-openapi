@@ -1254,6 +1254,23 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
+    /** Метод с примерами параметров типа Object */
+    "/get/example_2/object/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["GetExample2Object"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
     /** Получение списка проектов */
     "/get/example_2/projects/": {
         parameters: {
@@ -7500,6 +7517,33 @@ export interface operations {
         requestBody: {
             content: {
                 "application/json": import('./Example_2/Methods/Enum/Get.ts').components['schemas']['Example_2.Methods.Enum.Get'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        /** Ассоциативный результирующий массив, с данными, переданными в метод */
+                        result: (string | number)[];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: null;
+                };
+            };
+        };
+    };
+    GetExample2Object: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Example_2/Methods/Object/Get.ts').components['schemas']['Example_2.Methods.Object.Get'];
             };
         };
         responses: {

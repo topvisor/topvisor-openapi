@@ -2493,6 +2493,42 @@ paths:
             model:
               schema:
                 type: 'null'
+  /get/example_2/object/:
+    post:
+      operationId: GetExample2Object
+      tags:
+        - Example_2
+      summary: Метод с примерами параметров типа Object
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Example_2.Methods.Object.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            type: array
+                            items:
+                              oneOf:
+                                - type: string
+                                - type: number
+                            title: Ассоциативный результирующий массив, с данными, переданными в метод
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
   /get/example_2/projects/:
     post:
       operationId: GetExample2Projects
@@ -14396,6 +14432,39 @@ components:
         - number2
         - letter
       title: Метод с примерами параметров типа Enum
+    Example_2.Objects.Address:
+      type: object
+      properties:
+        city:
+          type: string
+        street:
+          nullable: true
+          type: string
+      required:
+        - city
+    Example_2.Objects.User:
+      type: object
+      properties:
+        name:
+          type: string
+        age:
+          type: integer
+        address:
+          allOf:
+            - $ref: '#/components/schemas/Example_2.Objects.Address'
+      required:
+        - name
+        - age
+        - address
+    Example_2.Methods.Object.Get:
+      type: object
+      properties:
+        user:
+          allOf:
+            - $ref: '#/components/schemas/Example_2.Objects.User'
+      required:
+        - user
+      title: Метод с примерами параметров типа Object
     Example_2.Methods.Projects.Get:
       type: object
       properties:

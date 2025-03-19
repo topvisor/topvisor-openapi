@@ -4350,6 +4350,75 @@
                 }
             }
         },
+        "/get/example_2/object/": {
+            "post": {
+                "operationId": "GetExample2Object",
+                "tags": [
+                    "Example_2"
+                ],
+                "summary": "Метод с примерами параметров типа Object",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Example_2/Methods/Object/Get.json#/components/schemas/Example_2.Methods.Object.Get"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "oneOf": [
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "type": "array",
+                                                            "items": {
+                                                                "oneOf": [
+                                                                    {
+                                                                        "type": "string"
+                                                                    },
+                                                                    {
+                                                                        "type": "number"
+                                                                    }
+                                                                ]
+                                                            },
+                                                            "title": "Ассоциативный результирующий массив, с данными, переданными в метод"
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "result"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
+                                        }
+                                    ]
+                                }
+                            },
+                            "model": {
+                                "schema": {
+                                    "type": "null"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
         "/get/example_2/projects/": {
             "post": {
                 "operationId": "GetExample2Projects",
