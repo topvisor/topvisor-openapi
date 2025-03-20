@@ -121,7 +121,7 @@ export interface components {
             /** @constant */
             readonly OKVED: "OKVED";
             /** @constant */
-            readonly Business_card: "About us";
+            readonly Business_card: "Our company";
             /** @constant */
             readonly Presentation: "Presentation";
             /** @constant */
