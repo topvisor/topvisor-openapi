@@ -235,7 +235,7 @@
                         "readOnly": true
                     },
                     "Business_card": {
-                        "const": "Business card",
+                        "const": "About us",
                         "readOnly": true
                     },
                     "Presentation": {
