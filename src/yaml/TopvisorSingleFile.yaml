@@ -13108,7 +13108,7 @@ components:
           nullable: true
           allOf:
             - $ref: '#/components/schemas/TV.API.Types.Date'
-        periodDays:
+        period_days:
           title: Период в днях
           default: 7
           type: integer
@@ -18572,7 +18572,7 @@ components:
           nullable: true
           allOf:
             - $ref: '#/components/schemas/TV.API.Types.Date'
-        periodDays:
+        period_days:
           title: Период в днях
           default: 7
           type: integer

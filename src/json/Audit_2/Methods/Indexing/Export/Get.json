@@ -79,7 +79,7 @@
                             }
                         ]
                     },
-                    "periodDays": {
+                    "period_days": {
                         "title": "Период в днях",
                         "default": 7,
                         "type": "integer"

@@ -41,7 +41,7 @@ export interface components {
              * Период в днях
              * @default 7
              */
-            periodDays: number;
+            period_days: number;
             /**
              * Тип диапазона дат
              * @default 7
