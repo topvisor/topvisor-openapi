@@ -13,17 +13,10 @@
                     "sum": {
                         "title": "Cумма для перевода",
                         "type": "string"
-                    },
-                    "filters": {
-                        "$ref": "../../../../TV/API/Params/FiltersTrait.json#/components/schemas/TV.API.Params.FiltersTrait/properties/filters"
-                    },
-                    "id": {
-                        "$ref": "../../../../TV/API/Params/FiltersTrait.json#/components/schemas/TV.API.Params.FiltersTrait/properties/id"
                     }
                 },
                 "required": [
-                    "sum",
-                    "filters"
+                    "sum"
                 ],
                 "title": "Перевод средств с реферального счета на бонусный"
             }

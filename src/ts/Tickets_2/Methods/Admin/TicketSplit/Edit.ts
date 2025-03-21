@@ -9,8 +9,8 @@ export interface components {
     schemas: {
         /** Перенос последниего сообщения (до 1 сообщения автора) в новый тикет */
         "Tickets_2.Methods.Admin.TicketSplit.Edit": {
-            filters: import('../../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['filters'];
-            id?: import('../../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['id'];
+            /** Id тикета */
+            id: number;
         };
     };
     responses: never;

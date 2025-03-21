@@ -24,18 +24,11 @@
                                 "$ref": "../../TV/API/Types/Url.json#/components/schemas/TV.API.Types.Url"
                             }
                         ]
-                    },
-                    "filters": {
-                        "$ref": "../../TV/API/Params/FiltersTrait.json#/components/schemas/TV.API.Params.FiltersTrait/properties/filters"
-                    },
-                    "id": {
-                        "$ref": "../../TV/API/Params/FiltersTrait.json#/components/schemas/TV.API.Params.FiltersTrait/properties/id"
                     }
                 },
                 "required": [
                     "type",
-                    "target",
-                    "filters"
+                    "target"
                 ],
                 "title": "Удаление настроек автоопераций"
             }

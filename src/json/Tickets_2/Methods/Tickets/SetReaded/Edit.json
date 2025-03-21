@@ -10,15 +10,13 @@
             "Tickets_2.Methods.Tickets.SetReaded.Edit": {
                 "type": "object",
                 "properties": {
-                    "filters": {
-                        "$ref": "../../../../TV/API/Params/FiltersTrait.json#/components/schemas/TV.API.Params.FiltersTrait/properties/filters"
-                    },
                     "id": {
-                        "$ref": "../../../../TV/API/Params/FiltersTrait.json#/components/schemas/TV.API.Params.FiltersTrait/properties/id"
+                        "title": "Id тикета",
+                        "type": "integer"
                     }
                 },
                 "required": [
-                    "filters"
+                    "id"
                 ],
                 "title": "Пометка тикета как \"прочитанный\" для автора тикета или админов"
             }

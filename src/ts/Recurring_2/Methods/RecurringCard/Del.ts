@@ -11,8 +11,6 @@ export interface components {
         "Recurring_2.Methods.RecurringCard.Del": {
             /** Id карты в системе Тинькофф */
             card_id: number;
-            filters: import('../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['filters'];
-            id?: import('../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['id'];
         };
     };
     responses: never;

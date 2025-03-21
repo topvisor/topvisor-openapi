@@ -11,8 +11,6 @@ export interface components {
         "Admin_2.Methods.TariffChangeExpire.Edit": {
             /** Дата следующего списания по тарифу */
             expire: import('../../../TV/API/Types/Date.ts').components['schemas']['TV.API.Types.Date'];
-            filters: import('../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['filters'];
-            id?: import('../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['id'];
         };
     };
     responses: never;

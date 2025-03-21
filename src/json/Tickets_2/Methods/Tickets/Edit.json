@@ -10,20 +10,18 @@
             "Tickets_2.Methods.Tickets.Edit": {
                 "type": "object",
                 "properties": {
+                    "id": {
+                        "title": "Id тикета",
+                        "type": "integer"
+                    },
                     "status": {
                         "title": "Флаг того, что тикет закрыт",
                         "nullable": true,
                         "type": "boolean"
-                    },
-                    "filters": {
-                        "$ref": "../../../TV/API/Params/FiltersTrait.json#/components/schemas/TV.API.Params.FiltersTrait/properties/filters"
-                    },
-                    "id": {
-                        "$ref": "../../../TV/API/Params/FiltersTrait.json#/components/schemas/TV.API.Params.FiltersTrait/properties/id"
                     }
                 },
                 "required": [
-                    "filters"
+                    "id"
                 ],
                 "title": "Редактирование тикета"
             }

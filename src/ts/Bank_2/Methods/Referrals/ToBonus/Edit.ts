@@ -11,8 +11,6 @@ export interface components {
         "Bank_2.Methods.Referrals.ToBonus.Edit": {
             /** Cумма для перевода */
             sum: string;
-            filters: import('../../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['filters'];
-            id?: import('../../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['id'];
         };
     };
     responses: never;

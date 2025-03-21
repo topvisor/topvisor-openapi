@@ -9,10 +9,10 @@ export interface components {
     schemas: {
         /** Редактирование тикета */
         "Tickets_2.Methods.Tickets.Edit": {
+            /** Id тикета */
+            id: number;
             /** Флаг того, что тикет закрыт */
             status?: boolean | null;
-            filters: import('../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['filters'];
-            id?: import('../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['id'];
         };
     };
     responses: never;

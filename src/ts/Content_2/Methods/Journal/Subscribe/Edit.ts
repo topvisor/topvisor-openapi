@@ -13,8 +13,6 @@ export interface components {
              *     * 1: подписаться
              *     * 0: отписаться */
             subscribe: boolean;
-            filters: import('../../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['filters'];
-            id?: import('../../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['id'];
         };
     };
     responses: never;

@@ -20,8 +20,6 @@ export interface components {
              *     </code> */
             tags: (string | number)[];
             project_id?: number | null;
-            filters: import('../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['filters'];
-            id?: import('../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['id'];
         };
     };
     responses: never;

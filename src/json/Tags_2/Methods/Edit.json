@@ -34,18 +34,11 @@
                     "project_id": {
                         "nullable": true,
                         "type": "integer"
-                    },
-                    "filters": {
-                        "$ref": "../../TV/API/Params/FiltersTrait.json#/components/schemas/TV.API.Params.FiltersTrait/properties/filters"
-                    },
-                    "id": {
-                        "$ref": "../../TV/API/Params/FiltersTrait.json#/components/schemas/TV.API.Params.FiltersTrait/properties/id"
                     }
                 },
                 "required": [
                     "type",
-                    "tags",
-                    "filters"
+                    "tags"
                 ],
                 "title": "Сохранение списка тегов"
             }

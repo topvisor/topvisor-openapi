@@ -13,17 +13,10 @@
                     "subscribe": {
                         "title": "Подписаться/отписаться\n* 1: подписаться\n* 0: отписаться",
                         "type": "boolean"
-                    },
-                    "filters": {
-                        "$ref": "../../../../TV/API/Params/FiltersTrait.json#/components/schemas/TV.API.Params.FiltersTrait/properties/filters"
-                    },
-                    "id": {
-                        "$ref": "../../../../TV/API/Params/FiltersTrait.json#/components/schemas/TV.API.Params.FiltersTrait/properties/id"
                     }
                 },
                 "required": [
-                    "subscribe",
-                    "filters"
+                    "subscribe"
                 ],
                 "title": "Изменение состояния подписки на рассылку журнала"
             }

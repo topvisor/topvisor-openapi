@@ -9,8 +9,8 @@ export interface components {
     schemas: {
         /** Пометка тикета как "прочитанный" для автора тикета или админов */
         "Tickets_2.Methods.Tickets.SetReaded.Edit": {
-            filters: import('../../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['filters'];
-            id?: import('../../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['id'];
+            /** Id тикета */
+            id: number;
         };
     };
     responses: never;

@@ -49,35 +49,10 @@
                     "signed": {
                         "title": "Использовать подпись\n\nЕсли true, то документ с подписью (не распространяется на договоры)",
                         "type": "boolean"
-                    },
-                    "fields": {
-                        "$ref": "../../../../TV/API/Params/FieldsTrait.json#/components/schemas/TV.API.Params.FieldsTrait/properties/fields"
-                    },
-                    "orders": {
-                        "$ref": "../../../../TV/API/Params/OrdersTrait.json#/components/schemas/TV.API.Params.OrdersTrait/properties/orders"
-                    },
-                    "filters": {
-                        "$ref": "../../../../TV/API/Params/FiltersTrait.json#/components/schemas/TV.API.Params.FiltersTrait/properties/filters"
-                    },
-                    "id": {
-                        "$ref": "../../../../TV/API/Params/FiltersTrait.json#/components/schemas/TV.API.Params.FiltersTrait/properties/id"
-                    },
-                    "limit": {
-                        "$ref": "../../../../TV/API/Params/LimitTrait.json#/components/schemas/TV.API.Params.LimitTrait/properties/limit"
-                    },
-                    "offset": {
-                        "$ref": "../../../../TV/API/Params/OffsetTrait.json#/components/schemas/TV.API.Params.OffsetTrait/properties/offset"
-                    },
-                    "fetch_style": {
-                        "$ref": "../../../../TV/API/Params/FetchStyleTrait.json#/components/schemas/TV.API.Params.FetchStyleTrait/properties/fetch_style"
                     }
                 },
                 "required": [
-                    "type",
-                    "fields",
-                    "orders",
-                    "filters",
-                    "offset"
+                    "type"
                 ],
                 "title": "Скачивание архива документов в формате PDF"
             }

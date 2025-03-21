@@ -13,17 +13,10 @@
                     "card_id": {
                         "title": "Id карты в системе Тинькофф",
                         "type": "integer"
-                    },
-                    "filters": {
-                        "$ref": "../../../TV/API/Params/FiltersTrait.json#/components/schemas/TV.API.Params.FiltersTrait/properties/filters"
-                    },
-                    "id": {
-                        "$ref": "../../../TV/API/Params/FiltersTrait.json#/components/schemas/TV.API.Params.FiltersTrait/properties/id"
                     }
                 },
                 "required": [
-                    "card_id",
-                    "filters"
+                    "card_id"
                 ],
                 "title": "Удалить привязанную карту (system = card)"
             }

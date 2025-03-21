@@ -19,8 +19,6 @@ export interface components {
             target?: import('../../TV/API/Types/Url.ts').components['schemas']['TV.API.Types.Url'] | null;
             /** Id карты в системе Тинькофф */
             cardId?: number | null;
-            filters: import('../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['filters'];
-            id?: import('../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['id'];
         };
     };
     responses: never;
