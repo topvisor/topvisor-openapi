@@ -1690,6 +1690,7 @@ paths:
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
+                      - $ref: '#/components/schemas/Pagination'
                   - $ref: '#/components/schemas/ResponseError'
             model:
               schema:
@@ -13447,7 +13448,23 @@ components:
       properties:
         fields:
           $ref: '#/components/schemas/fields'
-      required: []
+        orders:
+          $ref: '#/components/schemas/orders'
+        filters:
+          $ref: '#/components/schemas/filters'
+        id:
+          $ref: '#/components/schemas/id'
+        limit:
+          $ref: '#/components/schemas/limit'
+        offset:
+          $ref: '#/components/schemas/offset'
+        fetch_style:
+          $ref: '#/components/schemas/fetch_style'
+      required:
+        - fields
+        - orders
+        - filters
+        - offset
       title: Предоставление инфомации по счету
     Bank_2.Types.Requisites.Type:
       type: string
