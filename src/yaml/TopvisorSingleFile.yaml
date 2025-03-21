@@ -12823,6 +12823,12 @@ components:
         location:
           allOf:
             - $ref: '#/components/schemas/Controller_2.Objects.Location'
+        _GET:
+          type: array
+          items:
+            oneOf:
+              - type: string
+              - type: number
         openGraph:
           allOf:
             - $ref: '#/components/schemas/Controller_2.Objects.OpenGraph'
@@ -12923,6 +12929,7 @@ components:
           type: string
       required:
         - location
+        - _GET
         - openGraph
         - options
         - article

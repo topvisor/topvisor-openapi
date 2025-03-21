@@ -17,6 +17,19 @@
                             }
                         ]
                     },
+                    "_GET": {
+                        "type": "array",
+                        "items": {
+                            "oneOf": [
+                                {
+                                    "type": "string"
+                                },
+                                {
+                                    "type": "number"
+                                }
+                            ]
+                        }
+                    },
                     "openGraph": {
                         "allOf": [
                             {
@@ -203,6 +216,7 @@
                 },
                 "required": [
                     "location",
+                    "_GET",
                     "openGraph",
                     "options",
                     "article",

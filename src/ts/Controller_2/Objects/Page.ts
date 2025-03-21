@@ -9,6 +9,7 @@ export interface components {
     schemas: {
         "Controller_2.Objects.Page": {
             location: import('./Location.ts').components['schemas']['Controller_2.Objects.Location'];
+            _GET: (string | number)[];
             openGraph: import('./OpenGraph.ts').components['schemas']['Controller_2.Objects.OpenGraph'];
             options: import('./Page/Options.ts').components['schemas']['Controller_2.Objects.Page.Options'];
             article: import('./Page/Article.ts').components['schemas']['Controller_2.Objects.Page.Article'];
