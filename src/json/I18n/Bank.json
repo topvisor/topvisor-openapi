@@ -1093,6 +1093,10 @@
                     "Act": {
                         "const": "Act",
                         "readOnly": true
+                    },
+                    "Dialog_subscription_title": {
+                        "const": "Subscribe to {{ siteName }} Pricing Plan",
+                        "readOnly": true
                     }
                 },
                 "required": [
@@ -1366,7 +1370,8 @@
                     "Get_closing_documents_by_mail",
                     "Get_closing_documents_by_mail_info",
                     "Confirm_document_removal",
-                    "Act"
+                    "Act",
+                    "Dialog_subscription_title"
                 ]
             }
         }

@@ -550,6 +550,8 @@ export interface components {
             readonly Confirm_document_removal: "Are you sure you want to delete this document";
             /** @constant */
             readonly Act: "Act";
+            /** @constant */
+            readonly Dialog_subscription_title: "Subscribe to {{ siteName }} Pricing Plan";
         };
     };
     responses: never;
