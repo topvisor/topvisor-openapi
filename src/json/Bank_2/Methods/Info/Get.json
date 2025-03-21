@@ -9,7 +9,11 @@
         "schemas": {
             "Bank_2.Methods.Info.Get": {
                 "type": "object",
-                "properties": {},
+                "properties": {
+                    "fields": {
+                        "$ref": "../../../TV/API/Params/FieldsTrait.json#/components/schemas/TV.API.Params.FieldsTrait/properties/fields"
+                    }
+                },
                 "required": [],
                 "title": "Предоставление инфомации по счету"
             }

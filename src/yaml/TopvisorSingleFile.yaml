@@ -13444,7 +13444,9 @@ components:
           nullable: true
     Bank_2.Methods.Info.Get:
       type: object
-      properties: {}
+      properties:
+        fields:
+          $ref: '#/components/schemas/fields'
       required: []
       title: Предоставление инфомации по счету
     Bank_2.Types.Requisites.Type:
