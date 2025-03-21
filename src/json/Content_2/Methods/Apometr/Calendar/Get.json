@@ -37,7 +37,7 @@
                         "nullable": true,
                         "allOf": [
                             {
-                                "$ref": "../../../../Content_2/Types/Apometr/RegionDevice.json#/components/schemas/Content_2.Types.Apometr.RegionDevice"
+                                "$ref": "../../../../Positions_2/Types/RegionDevice.json#/components/schemas/Positions_2.Types.RegionDevice"
                             }
                         ]
                     },

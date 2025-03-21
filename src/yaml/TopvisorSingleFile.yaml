@@ -18825,12 +18825,12 @@ components:
       required:
         - type
       title: Скачивание архива документов в формате PDF
-    Content_2.Types.Apometr.RegionDevice:
-      type: integer
+    Positions_2.Types.RegionDevice:
+      type: string
       enum:
-        - 0
-        - 1
-        - 2
+        - '0'
+        - '1'
+        - '2'
       title: Устройство региона
     Content_2.Types.Apometr.Action:
       type: string
@@ -18863,7 +18863,7 @@ components:
         region_device:
           nullable: true
           allOf:
-            - $ref: '#/components/schemas/Content_2.Types.Apometr.RegionDevice'
+            - $ref: '#/components/schemas/Positions_2.Types.RegionDevice'
         action:
           allOf:
             - $ref: '#/components/schemas/Content_2.Types.Apometr.Action'
@@ -18893,7 +18893,7 @@ components:
           type: string
         region_device:
           allOf:
-            - $ref: '#/components/schemas/Content_2.Types.Apometr.RegionDevice'
+            - $ref: '#/components/schemas/Positions_2.Types.RegionDevice'
         date:
           title: Дата
           nullable: true
@@ -19403,13 +19403,6 @@ components:
         - enabled
         - filters
       title: Включение/выключение ПС
-    Positions_2.Types.RegionDevice:
-      type: integer
-      enum:
-        - 0
-        - 1
-        - 2
-      title: Устройство региона
     Positions_2.Methods.Searchers.Regions.Add:
       type: object
       properties:

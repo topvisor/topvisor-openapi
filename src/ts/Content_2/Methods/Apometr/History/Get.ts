@@ -19,7 +19,7 @@ export interface components {
              * @default ru
              */
             region_lang: string;
-            region_device?: import('../../../Types/Apometr/RegionDevice.ts').components['schemas']['Content_2.Types.Apometr.RegionDevice'];
+            region_device?: import('../../../../Positions_2/Types/RegionDevice.ts').components['schemas']['Positions_2.Types.RegionDevice'];
             /** Дата */
             date?: import('../../../../TV/API/Types/Date.ts').components['schemas']['TV.API.Types.Date'] | null;
             /** Вернуть только средние значения по всем тематикам */

@@ -8,11 +8,11 @@
     "components": {
         "schemas": {
             "Positions_2.Types.RegionDevice": {
-                "type": "integer",
+                "type": "string",
                 "enum": [
-                    0,
-                    1,
-                    2
+                    "0",
+                    "1",
+                    "2"
                 ],
                 "title": "Устройство региона"
             }

@@ -18,7 +18,7 @@ export interface components {
             region_key?: number | null;
             /** Язык региона */
             region_lang?: string | null;
-            region_device?: import('../../../Types/Apometr/RegionDevice.ts').components['schemas']['Content_2.Types.Apometr.RegionDevice'] | null;
+            region_device?: import('../../../../Positions_2/Types/RegionDevice.ts').components['schemas']['Positions_2.Types.RegionDevice'] | null;
             action?: import('../../../Types/Apometr/Action.ts').components['schemas']['Content_2.Types.Apometr.Action'];
             /** Дата, определяющая месяц, в формате YYYY-MM-01 */
             date_month?: import('../../../../TV/API/Types/Date.ts').components['schemas']['TV.API.Types.Date'] | null;
