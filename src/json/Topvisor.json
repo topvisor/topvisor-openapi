@@ -9098,7 +9098,7 @@
                                                                     }
                                                                 ]
                                                             },
-                                                            "title": "Cписок пользователей"
+                                                            "title": "Список пользователей"
                                                         }
                                                     },
                                                     "required": [
@@ -9294,7 +9294,7 @@
                 "tags": [
                     "Admin_2"
                 ],
-                "summary": "ПОлучение возможных posts",
+                "summary": "Получение возможных posts",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -15325,7 +15325,7 @@
                 "tags": [
                     "Admin_2"
                 ],
-                "summary": "Cкачивание документа",
+                "summary": "Скачивание документа",
                 "requestBody": {
                     "content": {
                         "application/json": {

@@ -5075,7 +5075,7 @@ paths:
                               oneOf:
                                 - type: string
                                 - type: number
-                            title: Cписок пользователей
+                            title: Список пользователей
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
@@ -5176,7 +5176,7 @@ paths:
       operationId: GetAdmin2StaffPosts
       tags:
         - Admin_2
-      summary: ПОлучение возможных posts
+      summary: Получение возможных posts
       requestBody:
         content:
           application/json:
@@ -8465,7 +8465,7 @@ paths:
       operationId: GetAdmin2AccountingInvoicesFile
       tags:
         - Admin_2
-      summary: Cкачивание документа
+      summary: Скачивание документа
       requestBody:
         content:
           application/json:
@@ -16931,7 +16931,7 @@ components:
         - orders
         - filters
         - offset
-      title: ПОлучение возможных posts
+      title: Получение возможных posts
     Admin_2.Methods.Staff.Vacation.Add:
       type: object
       properties:
@@ -20550,7 +20550,7 @@ components:
         - orders
         - filters
         - offset
-      title: Cкачивание документа
+      title: Скачивание документа
     Admin_2.Methods.Accounting.Operations.Export.Get:
       type: object
       properties:

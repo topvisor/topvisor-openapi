@@ -2670,7 +2670,7 @@ export interface paths {
         };
         get?: never;
         put?: never;
-        /** ПОлучение возможных posts */
+        /** Получение возможных posts */
         post: operations["GetAdmin2StaffPosts"];
         delete?: never;
         options?: never;
@@ -4407,7 +4407,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Cкачивание документа */
+    /** Скачивание документа */
     "/get/admin_2/accounting/invoices/file/": {
         parameters: {
             query?: never;
@@ -9570,7 +9570,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        /** Cписок пользователей */
+                        /** Список пользователей */
                         result: (string | number)[];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
