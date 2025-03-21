@@ -18833,11 +18833,11 @@ components:
         - type
       title: Скачивание архива документов в формате PDF
     Positions_2.Types.RegionDevice:
-      type: string
+      type: integer
       enum:
-        - '0'
-        - '1'
-        - '2'
+        - 0
+        - 1
+        - 2
       title: Устройство региона
     Content_2.Types.Apometr.Action:
       type: string

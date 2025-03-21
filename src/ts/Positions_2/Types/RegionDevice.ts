@@ -9,9 +9,9 @@ export interface components {
     schemas: {
         /**
          * Устройство региона
-         * @enum {string}
+         * @enum {integer}
          */
-        "Positions_2.Types.RegionDevice": "0" | "1" | "2";
+        "Positions_2.Types.RegionDevice": 0 | 1 | 2;
     };
     responses: never;
     parameters: never;
