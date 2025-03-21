@@ -11552,7 +11552,7 @@ components:
           nullable: true
           type: integer
         refill_sum:
-          title: Cумма автоплатежа
+          title: Сумма автоплатежа
           nullable: true
           type: integer
         target:
@@ -18727,7 +18727,7 @@ components:
       type: object
       properties:
         sum:
-          title: Cумма для перевода
+          title: Сумма для перевода
           type: string
       required:
         - sum

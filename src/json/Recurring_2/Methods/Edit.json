@@ -30,7 +30,7 @@
                         "type": "integer"
                     },
                     "refill_sum": {
-                        "title": "Cумма автоплатежа",
+                        "title": "Сумма автоплатежа",
                         "nullable": true,
                         "type": "integer"
                     },
