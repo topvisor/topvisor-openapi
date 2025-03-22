@@ -9,7 +9,7 @@ export interface components {
     schemas: {
         /** Перевод средств с реферального счета на бонусный */
         "Bank_2.Methods.Referrals.ToBonus.Edit": {
-            /** Сумма для перевода */
+            /** Cумма для перевода */
             sum: string;
         };
     };

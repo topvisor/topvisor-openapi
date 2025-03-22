@@ -13,7 +13,7 @@ export interface components {
             type: import('../Types/Type.ts').components['schemas']['Recurring_2.Types.Type'];
             /** Сумма, при достижении которой произойдет автоплатеж */
             min_sum?: number | null;
-            /** Сумма автоплатежа */
+            /** Cумма автоплатежа */
             refill_sum?: number | null;
             /** Объект доменного платежа (в случае domainRenew - домен) */
             target?: import('../../TV/API/Types/Url.ts').components['schemas']['TV.API.Types.Url'] | null;

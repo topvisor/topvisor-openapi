@@ -11,7 +11,7 @@
                 "type": "object",
                 "properties": {
                     "sum": {
-                        "title": "Сумма для перевода",
+                        "title": "Cумма для перевода",
                         "type": "string"
                     }
                 },
