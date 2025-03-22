@@ -1792,6 +1792,23 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
+    /** Получение списка задач */
+    "/get/projects_2/tasks/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["GetProjects2Tasks"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
     /** Удалить привязанную карту (system = card) */
     "/del/recurring_2/recurringCard/": {
         parameters: {
@@ -4082,6 +4099,23 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
+    /** Создание задачи */
+    "/add/projects_2/tasks/volumes/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["AddProjects2TasksVolumes"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
     /** Удаление ответа в тикете, только для админов */
     "/del/tickets_2/admin/message/": {
         parameters: {
@@ -5556,6 +5590,23 @@ export interface paths {
         get?: never;
         put?: never;
         post: operations["EditPositions2SearchersRegionsSort"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Получение статуса проверки частоты задачи */
+    "/get/projects_2/tasks/volumes/status/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["GetProjects2TasksVolumesStatus"];
         delete?: never;
         options?: never;
         head?: never;
@@ -8341,6 +8392,32 @@ export interface operations {
                     "application/json": ({
                         result: import('./stdClass.ts').components['schemas']['stdClass'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: null;
+                };
+            };
+        };
+    };
+    GetProjects2Tasks: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Projects_2/Methods/Tasks/Get.ts').components['schemas']['Projects_2.Methods.Tasks.Get'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: unknown;
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
             };
@@ -11770,6 +11847,32 @@ export interface operations {
             };
         };
     };
+    AddProjects2TasksVolumes: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Projects_2/Methods/Tasks/Volumes/Add.ts').components['schemas']['Projects_2.Methods.Tasks.Volumes.Add'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: unknown;
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: null;
+                };
+            };
+        };
+    };
     DelTickets2AdminMessage: {
         parameters: {
             query?: never;
@@ -14061,6 +14164,32 @@ export interface operations {
                         result: unknown;
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
+                };
+            };
+        };
+    };
+    GetProjects2TasksVolumesStatus: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Projects_2/Methods/Tasks/Volumes/Status/Get.ts').components['schemas']['Projects_2.Methods.Tasks.Volumes.Status.Get'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: unknown;
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: import('./Models/Projects.ts').components['schemas']['Models.Projects'];
                 };
             };
         };

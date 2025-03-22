@@ -1,13 +1,13 @@
 {
     "openapi": "3.0.0",
     "info": {
-        "title": "Topvisor/Projects_2.Methods.Projects.Get",
+        "title": "Topvisor/Projects_2.Methods.Tasks.Get",
         "version": "2.0.0"
     },
     "paths": {},
     "components": {
         "schemas": {
-            "Projects_2.Methods.Projects.Get": {
+            "Projects_2.Methods.Tasks.Get": {
                 "type": "object",
                 "properties": {
                     "show_owner_balance": {
@@ -27,27 +27,6 @@
                     "include_positions_summary": {
                         "title": "Добавить в результат сводку проверки позиций",
                         "description": "@see /get/positions_2/summary/",
-                        "nullable": true,
-                        "type": "boolean"
-                    },
-                    "include_positions_summary_params": {
-                        "title": "Добавить в результат сводку с указанными параметрами",
-                        "nullable": true,
-                        "deprecated": true,
-                        "type": "array",
-                        "items": {
-                            "oneOf": [
-                                {
-                                    "type": "string"
-                                },
-                                {
-                                    "type": "number"
-                                }
-                            ]
-                        }
-                    },
-                    "is_task": {
-                        "title": "Является ли проект задачей",
                         "nullable": true,
                         "type": "boolean"
                     },
@@ -79,7 +58,7 @@
                     "filters",
                     "offset"
                 ],
-                "title": "Получение списка проектов"
+                "title": "Получение списка задач"
             }
         }
     }

@@ -10,6 +10,10 @@
             "Projects_2.Methods.Projects.Del": {
                 "type": "object",
                 "properties": {
+                    "is_tasks": {
+                        "title": "Является ли проект - задачей",
+                        "type": "boolean"
+                    },
                     "filters": {
                         "$ref": "../../../TV/API/Params/FiltersTrait.json#/components/schemas/TV.API.Params.FiltersTrait/properties/filters"
                     },

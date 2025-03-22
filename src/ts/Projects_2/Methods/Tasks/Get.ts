@@ -7,8 +7,8 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Получение списка проектов */
-        "Projects_2.Methods.Projects.Get": {
+        /** Получение списка задач */
+        "Projects_2.Methods.Tasks.Get": {
             /** Добавить ли в результаты баланс владельца для гостевых проектов */
             show_owner_balance?: boolean | null;
             /** Добавить ли в результат дополнительно собираемую инфомрацию (Яндекс ИКС) */
@@ -23,13 +23,6 @@ export interface components {
              * @description @see /get/positions_2/summary/
              */
             include_positions_summary?: boolean | null;
-            /**
-             * Добавить в результат сводку с указанными параметрами
-             * @deprecated
-             */
-            include_positions_summary_params?: (string | number)[] | null;
-            /** Является ли проект задачей */
-            is_task?: boolean | null;
             fields: import('../../../TV/API/Params/FieldsTrait.ts').components['schemas']['TV.API.Params.FieldsTrait']['fields'];
             orders: import('../../../TV/API/Params/OrdersTrait.ts').components['schemas']['TV.API.Params.OrdersTrait']['orders'];
             filters: import('../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['filters'];

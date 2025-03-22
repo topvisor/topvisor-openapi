@@ -24,6 +24,8 @@ export interface components {
             folder_id?: number | null;
             /** Активность проекта */
             on?: number | null;
+            /** Является ли проект задачей */
+            is_task?: boolean | null;
         };
     };
     responses: never;

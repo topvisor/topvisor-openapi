@@ -50,6 +50,11 @@
                         "title": "Активность проекта",
                         "nullable": true,
                         "type": "integer"
+                    },
+                    "is_task": {
+                        "title": "Является ли проект задачей",
+                        "nullable": true,
+                        "type": "boolean"
                     }
                 },
                 "required": [

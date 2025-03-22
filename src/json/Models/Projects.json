@@ -145,6 +145,9 @@
                     "guest_link_right": {
                         "nullable": true
                     },
+                    "is_task": {
+                        "nullable": true
+                    },
                     "count_keywords": {
                         "nullable": true
                     },

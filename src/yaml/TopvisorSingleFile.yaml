@@ -3501,6 +3501,37 @@ paths:
             model:
               schema:
                 type: 'null'
+  /get/projects_2/tasks/:
+    post:
+      operationId: GetProjects2Tasks
+      tags:
+        - Projects_2
+      summary: Получение списка задач
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Projects_2.Methods.Tasks.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result: {}
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                      - $ref: '#/components/schemas/Pagination'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
   /del/recurring_2/recurringCard/:
     post:
       operationId: DelRecurring2RecurringCard
@@ -7843,6 +7874,36 @@ paths:
             model:
               schema:
                 type: 'null'
+  /add/projects_2/tasks/volumes/:
+    post:
+      operationId: AddProjects2TasksVolumes
+      tags:
+        - Projects_2
+      summary: Создание задачи
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Projects_2.Methods.Tasks.Volumes.Add'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result: {}
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
   /del/tickets_2/admin/message/:
     post:
       operationId: DelTickets2AdminMessage
@@ -10708,6 +10769,38 @@ paths:
             model:
               schema:
                 type: 'null'
+  /get/projects_2/tasks/volumes/status/:
+    post:
+      operationId: GetProjects2TasksVolumesStatus
+      tags:
+        - Projects_2
+      summary: Получение статуса проверки частоты задачи
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Projects_2.Methods.Tasks.Volumes.Status.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result: {}
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                      - $ref: '#/components/schemas/Pagination'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                $ref: '#/components/schemas/Models.Projects'
+                description: Only for typescript, does not contain real data
   /edit/tickets_2/admin/templates/sort/:
     post:
       operationId: EditTickets2AdminTemplatesSort
@@ -14473,6 +14566,8 @@ components:
           nullable: true
         guest_link_right:
           nullable: true
+        is_task:
+          nullable: true
         count_keywords:
           nullable: true
         right:
@@ -15274,12 +15369,19 @@ components:
           title: Активность проекта
           nullable: true
           type: integer
+        is_task:
+          title: Является ли проект задачей
+          nullable: true
+          type: boolean
       required:
         - url
       title: Добавление проекта
     Projects_2.Methods.Projects.Del:
       type: object
       properties:
+        is_tasks:
+          title: Является ли проект - задачей
+          type: boolean
         filters:
           $ref: '#/components/schemas/filters'
         id:
@@ -15319,6 +15421,10 @@ components:
             oneOf:
               - type: string
               - type: number
+        is_task:
+          title: Является ли проект задачей
+          nullable: true
+          type: boolean
         fields:
           $ref: '#/components/schemas/fields'
         orders:
@@ -15427,6 +15533,49 @@ components:
         Возвращает объект с параметрами:
         - domain_expire
         - ssl_expire
+    Projects_2.Methods.Tasks.Get:
+      type: object
+      properties:
+        show_owner_balance:
+          title: Добавить ли в результаты баланс владельца для гостевых проектов
+          nullable: true
+          type: boolean
+        show_site_stat:
+          title: Добавить ли в результат дополнительно собираемую инфомрацию (Яндекс ИКС)
+          nullable: true
+          type: boolean
+        show_searchers_and_regions:
+          title: |-
+            Добавить в результат список ПС и Регионов, привязанных к проекту
+
+            - 1 - включенные
+            - 2 - все
+          type: integer
+        include_positions_summary:
+          title: Добавить в результат сводку проверки позиций
+          description: '@see /get/positions_2/summary/'
+          nullable: true
+          type: boolean
+        fields:
+          $ref: '#/components/schemas/fields'
+        orders:
+          $ref: '#/components/schemas/orders'
+        filters:
+          $ref: '#/components/schemas/filters'
+        id:
+          $ref: '#/components/schemas/id'
+        limit:
+          $ref: '#/components/schemas/limit'
+        offset:
+          $ref: '#/components/schemas/offset'
+        fetch_style:
+          $ref: '#/components/schemas/fetch_style'
+      required:
+        - fields
+        - orders
+        - filters
+        - offset
+      title: Получение списка задач
     Recurring_2.Methods.RecurringCard.Del:
       type: object
       properties:
@@ -19885,6 +20034,93 @@ components:
         Получение информации об SSL сертификате
         Возваращает объект с параметрами:
         - expire
+    Keywords_2.Types.Region:
+      type: object
+      properties:
+        key:
+          title: Ключ региона
+          type: integer
+        searcher_key:
+          title: Ключ поисковика
+          allOf:
+            - $ref: '#/components/schemas/Positions_2.Types.SearcherKey'
+        lang:
+          title: |-
+            Язык региона
+
+            Для каждой ПС доступен разный
+          nullable: true
+          type: string
+        types:
+          title: Тип проверки частот. Для гугла всегда 3
+          type: array
+          items:
+            oneOf:
+              - type: string
+              - type: number
+        device:
+          title: Девайс
+          nullable: true
+          allOf:
+            - $ref: '#/components/schemas/Positions_2.Types.RegionDevice'
+        depth:
+          title: |-
+            Глубина региона
+
+            - 1-3 для Яндекса (ПК)
+            - 1-10 для Google
+            - 1-3 для GooglePlay
+          default: 1
+          type: integer
+      required:
+        - key
+        - searcher_key
+        - types
+        - depth
+    Keywords_2.Types.RegionsArray:
+      type: array
+      items:
+        $ref: '#/components/schemas/Keywords_2.Types.Region'
+      title: Массив регионов
+    Projects_2.Methods.Tasks.Volumes.Add:
+      type: object
+      properties:
+        url:
+          title: Url проекта (домен или url страницы)
+          allOf:
+            - $ref: '#/components/schemas/TV.API.Types.UrlShort'
+        keywords:
+          title: |-
+            Массив ключевых запросов в формате CSV
+
+            - array keywords - массив ключевых запросов, допускается формат CSV
+          type: array
+          items:
+            oneOf:
+              - type: string
+              - type: number
+        remove_special_chars:
+          title: 'Вырезать ли плюсы, точки, запятые, апострофы, кавычки (по умолчанию: 0 - не вырезать)'
+          nullable: true
+          type: boolean
+        no_recheck:
+          title: |-
+            Проверять ли запросы
+
+            - 0: проверять
+            - 1: не проверять запросы с актуальной частотой
+            - 2: не проверять запросы с частотой
+          nullable: true
+          type: integer
+        regions:
+          title: Объекты определителей частоты (параметр не обязатален, если check_all_regions = true)
+          allOf:
+            - $ref: '#/components/schemas/Keywords_2.Types.RegionsArray'
+      required:
+        - url
+        - keywords
+        - regions
+      title: Создание задачи
     Tickets_2.Methods.Admin.Message.Del:
       type: object
       properties:
@@ -21638,6 +21874,33 @@ components:
         - regions_indexes
         - filters
       title: Настройка сортировки регионов
+    Projects_2.Methods.Tasks.Volumes.Status.Get:
+      type: object
+      properties:
+        project_id:
+          title: Id проекта
+          type: integer
+        fields:
+          $ref: '#/components/schemas/fields'
+        orders:
+          $ref: '#/components/schemas/orders'
+        filters:
+          $ref: '#/components/schemas/filters'
+        id:
+          $ref: '#/components/schemas/id'
+        limit:
+          $ref: '#/components/schemas/limit'
+        offset:
+          $ref: '#/components/schemas/offset'
+        fetch_style:
+          $ref: '#/components/schemas/fetch_style'
+      required:
+        - project_id
+        - fields
+        - orders
+        - filters
+        - offset
+      title: Получение статуса проверки частоты задачи
     Tickets_2.Methods.Admin.Templates.Sort.Edit:
       type: object
       properties:

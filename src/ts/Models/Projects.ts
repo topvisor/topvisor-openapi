@@ -53,6 +53,7 @@ export interface components {
             report_last_time?: any;
             common_traffic?: any;
             guest_link_right?: any;
+            is_task?: any;
             count_keywords?: any;
             right?: any;
             ord?: any;
