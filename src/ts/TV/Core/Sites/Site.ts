@@ -17,6 +17,7 @@ export interface components {
              * @description @type array{
              *         yandex_client_id:string,
              *         yandex_client_id_auth:string,
+             *         yandex_client_secret:string,
              *         google_client_id:string,
              *         google_client_secret:string,
              *         sms_client:string,
