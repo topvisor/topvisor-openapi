@@ -9,6 +9,8 @@ export interface components {
     schemas: {
         "I18n.Sites.Topvisor.Admin": {
             /** @constant */
+            readonly Warning_message: "";
+            /** @constant */
             readonly Warning_message_admin: "";
         };
     };
