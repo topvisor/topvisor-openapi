@@ -18854,6 +18854,14 @@ components:
         show_summary_by_groups:
           title: Вывести итого по группам
           type: boolean
+        fields:
+          $ref: '#/components/schemas/fields'
+        filters:
+          $ref: '#/components/schemas/filters'
+        id:
+          $ref: '#/components/schemas/id'
+        fetch_style:
+          $ref: '#/components/schemas/fetch_style'
       required:
         - output
       title: Экспорт лога банка

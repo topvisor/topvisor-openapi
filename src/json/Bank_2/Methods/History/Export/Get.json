@@ -16,6 +16,18 @@
                     "show_summary_by_groups": {
                         "title": "Вывести итого по группам",
                         "type": "boolean"
+                    },
+                    "fields": {
+                        "$ref": "../../../../TV/API/Params/FieldsTrait.json#/components/schemas/TV.API.Params.FieldsTrait/properties/fields"
+                    },
+                    "filters": {
+                        "$ref": "../../../../TV/API/Params/FiltersTrait.json#/components/schemas/TV.API.Params.FiltersTrait/properties/filters"
+                    },
+                    "id": {
+                        "$ref": "../../../../TV/API/Params/FiltersTrait.json#/components/schemas/TV.API.Params.FiltersTrait/properties/id"
+                    },
+                    "fetch_style": {
+                        "$ref": "../../../../TV/API/Params/FetchStyleTrait.json#/components/schemas/TV.API.Params.FetchStyleTrait/properties/fetch_style"
                     }
                 },
                 "required": [
