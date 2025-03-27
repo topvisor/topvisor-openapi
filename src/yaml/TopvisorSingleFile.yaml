@@ -18860,6 +18860,12 @@ components:
           $ref: '#/components/schemas/filters'
         id:
           $ref: '#/components/schemas/id'
+        orders:
+          $ref: '#/components/schemas/orders'
+        limit:
+          $ref: '#/components/schemas/limit'
+        offset:
+          $ref: '#/components/schemas/offset'
         fetch_style:
           $ref: '#/components/schemas/fetch_style'
       required:
