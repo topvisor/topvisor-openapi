@@ -32,6 +32,14 @@ export interface components {
             qualifiers?: (string | number)[] | null;
             /** Валюта */
             currency?: import('../../../../TV/API/Types/Currency.ts').components['schemas']['TV.API.Types.Currency'] | null;
+            /** При фильтрации по ID папок также искать в подпапках
+             *
+             *     Для объекта фильтрации типа keywords */
+            group_folder_id_depth?: boolean;
+            /** Проверить корзину
+             *
+             *     Для объекта фильтрации типа keywords */
+            show_trash?: boolean;
             fields?: import('../../../../TV/API/Params/FieldsTrait.ts').components['schemas']['TV.API.Params.FieldsTrait']['fields'];
             orders?: import('../../../../TV/API/Params/OrdersTrait.ts').components['schemas']['TV.API.Params.OrdersTrait']['orders'];
             filters?: import('../../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['filters'];

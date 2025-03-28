@@ -19450,6 +19450,18 @@ components:
           nullable: true
           allOf:
             - $ref: '#/components/schemas/TV.API.Types.Currency'
+        group_folder_id_depth:
+          title: |-
+            При фильтрации по ID папок также искать в подпапках
+
+            Для объекта фильтрации типа keywords
+          type: boolean
+        show_trash:
+          title: |-
+            Проверить корзину
+
+            Для объекта фильтрации типа keywords
+          type: boolean
         fields:
           $ref: '#/components/schemas/fields'
         orders:

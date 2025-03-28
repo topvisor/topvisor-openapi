@@ -52,6 +52,14 @@
                             }
                         ]
                     },
+                    "group_folder_id_depth": {
+                        "title": "При фильтрации по ID папок также искать в подпапках\n\nДля объекта фильтрации типа keywords",
+                        "type": "boolean"
+                    },
+                    "show_trash": {
+                        "title": "Проверить корзину\n\nДля объекта фильтрации типа keywords",
+                        "type": "boolean"
+                    },
                     "fields": {
                         "$ref": "../../../../TV/API/Params/FieldsTrait.json#/components/schemas/TV.API.Params.FieldsTrait/properties/fields"
                     },
