@@ -12355,6 +12355,9 @@
                                                 },
                                                 {
                                                     "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                },
+                                                {
+                                                    "$ref": "Pagination.json#/components/schemas/Pagination"
                                                 }
                                             ]
                                         },
@@ -12424,6 +12427,9 @@
                                                 },
                                                 {
                                                     "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                },
+                                                {
+                                                    "$ref": "Pagination.json#/components/schemas/Pagination"
                                                 }
                                             ]
                                         },

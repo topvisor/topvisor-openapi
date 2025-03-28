@@ -6879,6 +6879,7 @@ paths:
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
+                      - $ref: '#/components/schemas/Pagination'
                   - $ref: '#/components/schemas/ResponseError'
             model:
               schema:
@@ -6915,6 +6916,7 @@ paths:
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
+                      - $ref: '#/components/schemas/Pagination'
                   - $ref: '#/components/schemas/ResponseError'
             model:
               schema:
@@ -19448,10 +19450,20 @@ components:
           nullable: true
           allOf:
             - $ref: '#/components/schemas/TV.API.Types.Currency'
+        fields:
+          $ref: '#/components/schemas/fields'
+        orders:
+          $ref: '#/components/schemas/orders'
         filters:
           $ref: '#/components/schemas/filters'
         id:
           $ref: '#/components/schemas/id'
+        limit:
+          $ref: '#/components/schemas/limit'
+        offset:
+          $ref: '#/components/schemas/offset'
+        fetch_style:
+          $ref: '#/components/schemas/fetch_style'
       required:
         - project_id
       title: Постановка задачи на проверку частоты запросов
@@ -19494,10 +19506,20 @@ components:
             oneOf:
               - type: string
               - type: number
+        fields:
+          $ref: '#/components/schemas/fields'
+        orders:
+          $ref: '#/components/schemas/orders'
         filters:
           $ref: '#/components/schemas/filters'
         id:
           $ref: '#/components/schemas/id'
+        limit:
+          $ref: '#/components/schemas/limit'
+        offset:
+          $ref: '#/components/schemas/offset'
+        fetch_style:
+          $ref: '#/components/schemas/fetch_style'
       required:
         - project_id
       title: Получение стоимости проверки частоты проектов
