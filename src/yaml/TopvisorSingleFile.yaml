@@ -6425,6 +6425,42 @@ paths:
             model:
               schema:
                 type: 'null'
+  /get/content_2/apometr/cHHistory/:
+    post:
+      operationId: GetContent2ApometrCHHistory
+      tags:
+        - Content_2
+      summary: Получение истории urls, найденых в выдаче, по запросу за конкретную проверку
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Content_2.Methods.Apometr.CHHistory.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            type: array
+                            items:
+                              $ref: '#/components/schemas/Models.Apometr.History'
+                              description: Only for typescript, does not contain real data
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                      - $ref: '#/components/schemas/Pagination'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                $ref: '#/components/schemas/Models.Apometr.History'
+                description: Only for typescript, does not contain real data
   /get/content_2/apometr/history/:
     post:
       operationId: GetContent2ApometrHistory
@@ -6460,6 +6496,38 @@ paths:
             model:
               schema:
                 type: 'null'
+  /get/content_2/apometr/keywords/:
+    post:
+      operationId: GetContent2ApometrKeywords
+      tags:
+        - Content_2
+      summary: Получение поисковых запросов апометра
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Content_2.Methods.Apometr.Keywords.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result: {}
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                      - $ref: '#/components/schemas/Pagination'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                $ref: '#/components/schemas/Models.Apometr.Keywords'
+                description: Only for typescript, does not contain real data
   /get/content_2/apometr/updates/:
     post:
       operationId: GetContent2ApometrUpdates
@@ -19047,6 +19115,60 @@ components:
             - $ref: '#/components/schemas/TV.API.Types.Date'
       required: []
       title: Получение календаря апдейтов
+    Content_2.Methods.Apometr.CHHistory.Get:
+      type: object
+      properties:
+        datetime:
+          title: Дата и время проверки
+          allOf:
+            - $ref: '#/components/schemas/TV.API.Types.Datetime'
+        region_index:
+          title: Индекс региона
+          type: integer
+        action:
+          allOf:
+            - $ref: '#/components/schemas/Content_2.Types.Apometr.Action'
+        fields:
+          $ref: '#/components/schemas/fields'
+        orders:
+          $ref: '#/components/schemas/orders'
+        filters:
+          $ref: '#/components/schemas/filters'
+        id:
+          $ref: '#/components/schemas/id'
+        limit:
+          $ref: '#/components/schemas/limit'
+        offset:
+          $ref: '#/components/schemas/offset'
+        fetch_style:
+          $ref: '#/components/schemas/fetch_style'
+      required:
+        - datetime
+        - region_index
+        - action
+        - fields
+        - orders
+        - filters
+        - offset
+      title: Получение истории urls, найденых в выдаче, по запросу за конкретную проверку
+    Models.Apometr.History:
+      properties:
+        time:
+          nullable: true
+        action:
+          nullable: true
+        region_index:
+          nullable: true
+        keyword_id:
+          nullable: true
+        url:
+          nullable: true
+        position:
+          nullable: true
+        d:
+          nullable: true
+        d_day:
+          nullable: true
     Content_2.Methods.Apometr.History.Get:
       type: object
       properties:
@@ -19077,6 +19199,38 @@ components:
           type: boolean
       required: []
       title: Получение истории шторма за период в 2 суток
+    Content_2.Methods.Apometr.Keywords.Get:
+      type: object
+      properties:
+        fields:
+          $ref: '#/components/schemas/fields'
+        orders:
+          $ref: '#/components/schemas/orders'
+        filters:
+          $ref: '#/components/schemas/filters'
+        id:
+          $ref: '#/components/schemas/id'
+        limit:
+          $ref: '#/components/schemas/limit'
+        offset:
+          $ref: '#/components/schemas/offset'
+        fetch_style:
+          $ref: '#/components/schemas/fetch_style'
+      required:
+        - fields
+        - orders
+        - filters
+        - offset
+      title: Получение поисковых запросов апометра
+    Models.Apometr.Keywords:
+      properties:
+        id: {}
+        lang:
+          nullable: true
+        name:
+          nullable: true
+        pool_id:
+          nullable: true
     Content_2.Methods.Apometr.Updates.Get:
       type: object
       properties:

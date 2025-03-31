@@ -11525,6 +11525,72 @@
                 }
             }
         },
+        "/get/content_2/apometr/cHHistory/": {
+            "post": {
+                "operationId": "GetContent2ApometrCHHistory",
+                "tags": [
+                    "Content_2"
+                ],
+                "summary": "Получение истории urls, найденых в выдаче, по запросу за конкретную проверку",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Content_2/Methods/Apometr/CHHistory/Get.json#/components/schemas/Content_2.Methods.Apometr.CHHistory.Get"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "oneOf": [
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "type": "array",
+                                                            "items": {
+                                                                "$ref": "Models/Apometr/History.json#/components/schemas/Models.Apometr.History",
+                                                                "description": "Only for typescript, does not contain real data"
+                                                            }
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "result"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                },
+                                                {
+                                                    "$ref": "Pagination.json#/components/schemas/Pagination"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
+                                        }
+                                    ]
+                                }
+                            },
+                            "model": {
+                                "schema": {
+                                    "$ref": "Models/Apometr/History.json#/components/schemas/Models.Apometr.History",
+                                    "description": "Only for typescript, does not contain real data"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
         "/get/content_2/apometr/history/": {
             "post": {
                 "operationId": "GetContent2ApometrHistory",
@@ -11586,6 +11652,66 @@
                             "model": {
                                 "schema": {
                                     "type": "null"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/get/content_2/apometr/keywords/": {
+            "post": {
+                "operationId": "GetContent2ApometrKeywords",
+                "tags": [
+                    "Content_2"
+                ],
+                "summary": "Получение поисковых запросов апометра",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Content_2/Methods/Apometr/Keywords/Get.json#/components/schemas/Content_2.Methods.Apometr.Keywords.Get"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "oneOf": [
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {}
+                                                    },
+                                                    "required": [
+                                                        "result"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                },
+                                                {
+                                                    "$ref": "Pagination.json#/components/schemas/Pagination"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
+                                        }
+                                    ]
+                                }
+                            },
+                            "model": {
+                                "schema": {
+                                    "$ref": "Models/Apometr/Keywords.json#/components/schemas/Models.Apometr.Keywords",
+                                    "description": "Only for typescript, does not contain real data"
                                 }
                             }
                         }

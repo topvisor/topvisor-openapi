@@ -33,6 +33,8 @@ export interface components {
         "Models.Analytics.Events": import('./Models/Analytics/Events.ts').components['schemas']['Models.Analytics.Events'];
         "Models.Analytics.Ranks": import('./Models/Analytics/Ranks.ts').components['schemas']['Models.Analytics.Ranks'];
         "Models.Analytics.RanksUsers": import('./Models/Analytics/RanksUsers.ts').components['schemas']['Models.Analytics.RanksUsers'];
+        "Models.Apometr.History": import('./Models/Apometr/History.ts').components['schemas']['Models.Apometr.History'];
+        "Models.Apometr.Keywords": import('./Models/Apometr/Keywords.ts').components['schemas']['Models.Apometr.Keywords'];
         "Models.Audit.Checks": import('./Models/Audit/Checks.ts').components['schemas']['Models.Audit.Checks'];
         "Models.Audit.Css": import('./Models/Audit/Css.ts').components['schemas']['Models.Audit.Css'];
         "Models.Audit.Images": import('./Models/Audit/Images.ts').components['schemas']['Models.Audit.Images'];

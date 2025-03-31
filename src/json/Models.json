@@ -85,6 +85,12 @@
             "Models.Analytics.RanksUsers": {
                 "$ref": "Models/Analytics/RanksUsers.json#/components/schemas/Models.Analytics.RanksUsers"
             },
+            "Models.Apometr.History": {
+                "$ref": "Models/Apometr/History.json#/components/schemas/Models.Apometr.History"
+            },
+            "Models.Apometr.Keywords": {
+                "$ref": "Models/Apometr/Keywords.json#/components/schemas/Models.Apometr.Keywords"
+            },
             "Models.Audit.Checks": {
                 "$ref": "Models/Audit/Checks.json#/components/schemas/Models.Audit.Checks"
             },

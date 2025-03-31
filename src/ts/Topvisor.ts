@@ -3329,6 +3329,23 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
+    /** Получение истории urls, найденых в выдаче, по запросу за конкретную проверку */
+    "/get/content_2/apometr/cHHistory/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["GetContent2ApometrCHHistory"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
     /** Получение истории шторма за период в 2 суток */
     "/get/content_2/apometr/history/": {
         parameters: {
@@ -3340,6 +3357,23 @@ export interface paths {
         get?: never;
         put?: never;
         post: operations["GetContent2ApometrHistory"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Получение поисковых запросов апометра */
+    "/get/content_2/apometr/keywords/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["GetContent2ApometrKeywords"];
         delete?: never;
         options?: never;
         head?: never;
@@ -10700,6 +10734,32 @@ export interface operations {
             };
         };
     };
+    GetContent2ApometrCHHistory: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Content_2/Methods/Apometr/CHHistory/Get.ts').components['schemas']['Content_2.Methods.Apometr.CHHistory.Get'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./Models/Apometr/History.ts').components['schemas']['Models.Apometr.History'][];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: import('./Models/Apometr/History.ts').components['schemas']['Models.Apometr.History'];
+                };
+            };
+        };
+    };
     GetContent2ApometrHistory: {
         parameters: {
             query?: never;
@@ -10722,6 +10782,32 @@ export interface operations {
                         result: (string | number)[];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
+                };
+            };
+        };
+    };
+    GetContent2ApometrKeywords: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Content_2/Methods/Apometr/Keywords/Get.ts').components['schemas']['Content_2.Methods.Apometr.Keywords.Get'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: unknown;
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: import('./Models/Apometr/Keywords.ts').components['schemas']['Models.Apometr.Keywords'];
                 };
             };
         };
