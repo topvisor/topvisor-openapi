@@ -1,0 +1,19 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Keywords_2.Objects.Collect.Ext.QualifiersArray",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Keywords_2.Objects.Collect.Ext.QualifiersArray": {
+                "type": "array",
+                "items": {
+                    "$ref": "../../../../Keywords_2/Objects/Collect/Ext/Qualifier.json#/components/schemas/Keywords_2.Objects.Collect.Ext.Qualifier"
+                },
+                "title": "Массив определителей региона"
+            }
+        }
+    }
+}

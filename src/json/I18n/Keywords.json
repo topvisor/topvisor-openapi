@@ -1153,6 +1153,34 @@
                     "Collect_hint_methods": {
                         "const": "Auto substitutions",
                         "readOnly": true
+                    },
+                    "Extension_of_groups": {
+                        "const": "Расширение групп",
+                        "readOnly": true
+                    },
+                    "Extend_the_group": {
+                        "const": "Расширить группу",
+                        "readOnly": true
+                    },
+                    "Selected_groups_for_extension": {
+                        "const": "Выбрано групп для расширения",
+                        "readOnly": true
+                    },
+                    "Collect_type": {
+                        "const": "Тип подбора",
+                        "readOnly": true
+                    },
+                    "Use_only_group_name": {
+                        "const": "Использовать только название группы",
+                        "readOnly": true
+                    },
+                    "Use_group_requests_only": {
+                        "const": "Использовать только запросы группы",
+                        "readOnly": true
+                    },
+                    "Use_group_name_and_queries": {
+                        "const": "Использовать название и запросы группы",
+                        "readOnly": true
                     }
                 },
                 "required": [
@@ -1441,7 +1469,14 @@
                     "Remove_pluses_fullstops_commas_apostrophes_quotes",
                     "HintVolumeNoCollected",
                     "Collect_settings",
-                    "Collect_hint_methods"
+                    "Collect_hint_methods",
+                    "Extension_of_groups",
+                    "Extend_the_group",
+                    "Selected_groups_for_extension",
+                    "Collect_type",
+                    "Use_only_group_name",
+                    "Use_group_requests_only",
+                    "Use_group_name_and_queries"
                 ]
             }
         }

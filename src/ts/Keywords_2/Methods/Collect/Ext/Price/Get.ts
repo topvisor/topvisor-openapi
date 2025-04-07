@@ -20,11 +20,8 @@ export interface components {
             apply_discount: boolean;
             /** Каким типом расширять группу */
             type: import('../../../../Types/Collect/Ext/Type.ts').components['schemas']['Keywords_2.Types.Collect.Ext.Type'];
-            /**
-             * Объекты определителей настроек ПС и регионов
-             * @description @var array<int, array{region_key: int, searcher_key: (0 | 1 | 5 | 100 | 101 | 102 | 104 | 105 | 106), region_lang?: (string | null), also_searched?: (int | null), depth?: (int | null), hint_depth: (1 | 2 | 3), hint_generators: array<('letter' | 'letter_ru' | 'number' | 'space')>}>
-             */
-            qualifiers?: unknown;
+            /** Объекты определителей настроек ПС и регионов */
+            qualifiers: import('../../../../Objects/Collect/Ext/QualifiersArray.ts').components['schemas']['Keywords_2.Objects.Collect.Ext.QualifiersArray'];
             filters?: import('../../../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['filters'];
             id?: import('../../../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['id'];
         };

@@ -1,0 +1,36 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Keywords_2.Objects.Collect.Ext.Qualifier",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Keywords_2.Objects.Collect.Ext.Qualifier": {
+                "type": "object",
+                "properties": {
+                    "region_key": {
+                        "type": "integer"
+                    },
+                    "searcher_key": {
+                        "allOf": [
+                            {
+                                "$ref": "../../../../Positions_2/Types/SearcherKey.json#/components/schemas/Positions_2.Types.SearcherKey"
+                            }
+                        ]
+                    },
+                    "region_lang": {
+                        "nullable": true,
+                        "type": "string"
+                    }
+                },
+                "required": [
+                    "region_key",
+                    "searcher_key"
+                ],
+                "title": "Определитель региона"
+            }
+        }
+    }
+}

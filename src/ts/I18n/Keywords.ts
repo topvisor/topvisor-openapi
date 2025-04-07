@@ -580,6 +580,20 @@ export interface components {
             readonly Collect_settings: "Collect settings";
             /** @constant */
             readonly Collect_hint_methods: "Auto substitutions";
+            /** @constant */
+            readonly Extension_of_groups: "Расширение групп";
+            /** @constant */
+            readonly Extend_the_group: "Расширить группу";
+            /** @constant */
+            readonly Selected_groups_for_extension: "Выбрано групп для расширения";
+            /** @constant */
+            readonly Collect_type: "Тип подбора";
+            /** @constant */
+            readonly Use_only_group_name: "Использовать только название группы";
+            /** @constant */
+            readonly Use_group_requests_only: "Использовать только запросы группы";
+            /** @constant */
+            readonly Use_group_name_and_queries: "Использовать название и запросы группы";
         };
     };
     responses: never;

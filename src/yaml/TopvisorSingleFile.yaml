@@ -21939,6 +21939,26 @@ components:
         - groupNameWithKeywords
         - keywords
       title: По каким параметрам расширять группу
+    Keywords_2.Objects.Collect.Ext.Qualifier:
+      type: object
+      properties:
+        region_key:
+          type: integer
+        searcher_key:
+          allOf:
+            - $ref: '#/components/schemas/Positions_2.Types.SearcherKey'
+        region_lang:
+          nullable: true
+          type: string
+      required:
+        - region_key
+        - searcher_key
+      title: Определитель региона
+    Keywords_2.Objects.Collect.Ext.QualifiersArray:
+      type: array
+      items:
+        $ref: '#/components/schemas/Keywords_2.Objects.Collect.Ext.Qualifier'
+      title: Массив определителей региона
     Keywords_2.Methods.Collect.Ext.Go.Edit:
       type: object
       properties:
@@ -21959,8 +21979,8 @@ components:
             - $ref: '#/components/schemas/Keywords_2.Types.Collect.Ext.Type'
         qualifiers:
           title: Объекты определителей настроек ПС и регионов
-          description: '@var array<int, array{region_key: int, searcher_key: (0 | 1 | 5 | 100 | 101 | 102 | 104 | 105 | 106), region_lang?: (string | null), also_searched?: (int | null), depth?: (int | null), hint_depth: (1 | 2 | 3), hint_generators: array<(''letter'' | ''letter_ru'' | ''number'' | ''space'')>}>'
-          nullable: true
+          allOf:
+            - $ref: '#/components/schemas/Keywords_2.Objects.Collect.Ext.QualifiersArray'
         filters:
           $ref: '#/components/schemas/filters'
         id:
@@ -21968,6 +21988,7 @@ components:
       required:
         - project_id
         - type
+        - qualifiers
       title: Постановка задачи на расширение группы
     Keywords_2.Methods.Collect.Ext.Price.Get:
       type: object
@@ -21993,8 +22014,8 @@ components:
             - $ref: '#/components/schemas/Keywords_2.Types.Collect.Ext.Type'
         qualifiers:
           title: Объекты определителей настроек ПС и регионов
-          description: '@var array<int, array{region_key: int, searcher_key: (0 | 1 | 5 | 100 | 101 | 102 | 104 | 105 | 106), region_lang?: (string | null), also_searched?: (int | null), depth?: (int | null), hint_depth: (1 | 2 | 3), hint_generators: array<(''letter'' | ''letter_ru'' | ''number'' | ''space'')>}>'
-          nullable: true
+          allOf:
+            - $ref: '#/components/schemas/Keywords_2.Objects.Collect.Ext.QualifiersArray'
         filters:
           $ref: '#/components/schemas/filters'
         id:
@@ -22002,6 +22023,7 @@ components:
       required:
         - project_id
         - type
+        - qualifiers
       title: Получение цены на расширение группы
     Positions_2.Methods.Searchers.Regions.Export.Get:
       type: object
