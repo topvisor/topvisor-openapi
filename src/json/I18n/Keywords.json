@@ -451,7 +451,7 @@
                         "readOnly": true
                     },
                     "SE_location": {
-                        "const": "Search engine / Location",
+                        "const": "Search engine and location",
                         "readOnly": true
                     },
                     "Select_location": {
@@ -471,7 +471,7 @@
                         "readOnly": true
                     },
                     "Clustering_changes_order_notice": {
-                        "const": "<b>Important!</b><br>Keyword clustering changes groups and keyword order in your project.<br> After clustering, keyword groups will be automatically disabled.",
+                        "const": "Important!<br>Keyword clustering changes groups and keyword order in your project. After clustering, keyword groups will be automatically disabled.",
                         "readOnly": true
                     },
                     "Clustering_rel_notice": {
@@ -978,6 +978,10 @@
                         "const": "Send to Email",
                         "readOnly": true
                     },
+                    "Cluster_and_send_clustering_tables_to_email": {
+                        "const": "Cluster core and send results to email",
+                        "readOnly": true
+                    },
                     "Data_will_be_pulled_for": {
                         "const": "Collect data for",
                         "readOnly": true
@@ -1180,6 +1184,14 @@
                     },
                     "Use_group_name_and_queries": {
                         "const": "Использовать название и запросы группы",
+                        "readOnly": true
+                    },
+                    "Cluster_core": {
+                        "const": "Cluster core",
+                        "readOnly": true
+                    },
+                    "Cluster_by_the_highest_level": {
+                        "const": "Кластеризовать по самой сильной степени подбора",
                         "readOnly": true
                     }
                 },
@@ -1426,6 +1438,7 @@
                     "Sorting_order",
                     "Keyword_clustering_completed",
                     "Send_to_email",
+                    "Cluster_and_send_clustering_tables_to_email",
                     "Data_will_be_pulled_for",
                     "total_count",
                     "Enter_keywords",
@@ -1476,7 +1489,9 @@
                     "Collect_type",
                     "Use_only_group_name",
                     "Use_group_requests_only",
-                    "Use_group_name_and_queries"
+                    "Use_group_name_and_queries",
+                    "Cluster_core",
+                    "Cluster_by_the_highest_level"
                 ]
             }
         }

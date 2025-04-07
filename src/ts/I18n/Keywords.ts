@@ -229,7 +229,7 @@ export interface components {
             /** @constant */
             readonly Clustering_tool: "Keyword clustering";
             /** @constant */
-            readonly SE_location: "Search engine / Location";
+            readonly SE_location: "Search engine and location";
             /** @constant */
             readonly Select_location: "Select location";
             /** @constant */
@@ -239,7 +239,7 @@ export interface components {
             /** @constant */
             readonly Clustering_level_groups_relation: "Higher level clustering produces more groups with fewer keywords in every group.";
             /** @constant */
-            readonly Clustering_changes_order_notice: "<b>Important!</b><br>Keyword clustering changes groups and keyword order in your project.<br> After clustering, keyword groups will be automatically disabled.";
+            readonly Clustering_changes_order_notice: "Important!<br>Keyword clustering changes groups and keyword order in your project. After clustering, keyword groups will be automatically disabled.";
             /** @constant */
             readonly Clustering_rel_notice: "Before grouping keywords by page relevance, make sure that you have checked<br> keyword rankings in the applied search engine and location.";
             /** @constant */
@@ -493,6 +493,8 @@ export interface components {
             /** @constant */
             readonly Send_to_email: "Send to Email";
             /** @constant */
+            readonly Cluster_and_send_clustering_tables_to_email: "Cluster core and send results to email";
+            /** @constant */
             readonly Data_will_be_pulled_for: "Collect data for";
             /** @constant */
             readonly total_count: "; total count";
@@ -594,6 +596,10 @@ export interface components {
             readonly Use_group_requests_only: "Использовать только запросы группы";
             /** @constant */
             readonly Use_group_name_and_queries: "Использовать название и запросы группы";
+            /** @constant */
+            readonly Cluster_core: "Cluster core";
+            /** @constant */
+            readonly Cluster_by_the_highest_level: "Кластеризовать по самой сильной степени подбора";
         };
     };
     responses: never;
