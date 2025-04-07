@@ -451,7 +451,7 @@
                         "readOnly": true
                     },
                     "SE_location": {
-                        "const": "Search engine and location",
+                        "const": "Search engine / Location",
                         "readOnly": true
                     },
                     "Select_location": {
@@ -471,7 +471,7 @@
                         "readOnly": true
                     },
                     "Clustering_changes_order_notice": {
-                        "const": "Important!<br>Keyword clustering changes groups and keyword order in your project. After clustering, keyword groups will be automatically disabled.",
+                        "const": "<b>Important!</b><br>Keyword clustering changes groups and keyword order in your project.<br> After clustering, keyword groups will be automatically disabled.",
                         "readOnly": true
                     },
                     "Clustering_rel_notice": {
@@ -1115,7 +1115,7 @@
                         "readOnly": true
                     },
                     "Sy_wordstat_max_pages": {
-                        "const": "MAX pages",
+                        "const": "Количество страниц (макс.)",
                         "readOnly": true
                     },
                     "Research_status": {

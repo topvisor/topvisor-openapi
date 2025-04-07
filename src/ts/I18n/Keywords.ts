@@ -229,7 +229,7 @@ export interface components {
             /** @constant */
             readonly Clustering_tool: "Keyword clustering";
             /** @constant */
-            readonly SE_location: "Search engine and location";
+            readonly SE_location: "Search engine / Location";
             /** @constant */
             readonly Select_location: "Select location";
             /** @constant */
@@ -239,7 +239,7 @@ export interface components {
             /** @constant */
             readonly Clustering_level_groups_relation: "Higher level clustering produces more groups with fewer keywords in every group.";
             /** @constant */
-            readonly Clustering_changes_order_notice: "Important!<br>Keyword clustering changes groups and keyword order in your project. After clustering, keyword groups will be automatically disabled.";
+            readonly Clustering_changes_order_notice: "<b>Important!</b><br>Keyword clustering changes groups and keyword order in your project.<br> After clustering, keyword groups will be automatically disabled.";
             /** @constant */
             readonly Clustering_rel_notice: "Before grouping keywords by page relevance, make sure that you have checked<br> keyword rankings in the applied search engine and location.";
             /** @constant */
@@ -561,7 +561,7 @@ export interface components {
             /** @constant */
             readonly Do_not_overwrite_assigned_target_links: "Do not overwrite assigned target links";
             /** @constant */
-            readonly Sy_wordstat_max_pages: "MAX pages";
+            readonly Sy_wordstat_max_pages: "Количество страниц (макс.)";
             /** @constant */
             readonly Research_status: "Keyword research status";
             /** @constant */
