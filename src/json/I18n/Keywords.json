@@ -1191,7 +1191,7 @@
                         "readOnly": true
                     },
                     "Cluster_by_the_highest_level": {
-                        "const": "Cluster by the highest level",
+                        "const": "Clustering will be done by the highest level.",
                         "readOnly": true
                     },
                     "Wait_while_clustering": {

@@ -599,7 +599,7 @@ export interface components {
             /** @constant */
             readonly Cluster_core: "Cluster semantic core";
             /** @constant */
-            readonly Cluster_by_the_highest_level: "Cluster by the highest level";
+            readonly Cluster_by_the_highest_level: "Clustering will be done by the highest level.";
             /** @constant */
             readonly Wait_while_clustering: "We're enchanting your semantic core. Please wait a bit.";
         };
