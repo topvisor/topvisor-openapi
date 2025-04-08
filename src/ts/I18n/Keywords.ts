@@ -591,11 +591,11 @@ export interface components {
             /** @constant */
             readonly Collect_type: "What to use for expansion";
             /** @constant */
-            readonly Use_only_group_name: "Only group name";
+            readonly Use_only_group_name: "Only group names";
             /** @constant */
             readonly Use_group_requests_only: "Only keywords in groups";
             /** @constant */
-            readonly Use_group_name_and_queries: "Use both group name and keywords";
+            readonly Use_group_name_and_queries: "Use both group names and keywords";
             /** @constant */
             readonly Cluster_core: "Cluster semantic core";
             /** @constant */

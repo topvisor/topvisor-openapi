@@ -1175,7 +1175,7 @@
                         "readOnly": true
                     },
                     "Use_only_group_name": {
-                        "const": "Only group name",
+                        "const": "Only group names",
                         "readOnly": true
                     },
                     "Use_group_requests_only": {
@@ -1183,7 +1183,7 @@
                         "readOnly": true
                     },
                     "Use_group_name_and_queries": {
-                        "const": "Use both group name and keywords",
+                        "const": "Use both group names and keywords",
                         "readOnly": true
                     },
                     "Cluster_core": {
