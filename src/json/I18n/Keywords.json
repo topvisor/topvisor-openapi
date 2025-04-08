@@ -1115,7 +1115,7 @@
                         "readOnly": true
                     },
                     "Sy_wordstat_max_pages": {
-                        "const": "Количество страниц (макс.)",
+                        "const": "MAX pages",
                         "readOnly": true
                     },
                     "Research_status": {
