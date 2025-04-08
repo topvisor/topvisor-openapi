@@ -471,7 +471,7 @@
                         "readOnly": true
                     },
                     "Clustering_changes_order_notice": {
-                        "const": "<b>Important!</b><br>Keyword clustering changes groups and keyword order in your project.<br> After clustering, keyword groups will be automatically disabled.",
+                        "const": "<b>Important!</b><br>Keyword clustering changes groups and keyword order in your project. Clustering is <b>irreversible</b>. After clustering, keyword groups will be automatically disabled.",
                         "readOnly": true
                     },
                     "Clustering_rel_notice": {

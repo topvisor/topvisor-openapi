@@ -239,7 +239,7 @@ export interface components {
             /** @constant */
             readonly Clustering_level_groups_relation: "Higher level clustering produces more groups with fewer keywords in every group.";
             /** @constant */
-            readonly Clustering_changes_order_notice: "<b>Important!</b><br>Keyword clustering changes groups and keyword order in your project.<br> After clustering, keyword groups will be automatically disabled.";
+            readonly Clustering_changes_order_notice: "<b>Important!</b><br>Keyword clustering changes groups and keyword order in your project. Clustering is <b>irreversible</b>. After clustering, keyword groups will be automatically disabled.";
             /** @constant */
             readonly Clustering_rel_notice: "Before grouping keywords by page relevance, make sure that you have checked<br> keyword rankings in the applied search engine and location.";
             /** @constant */
