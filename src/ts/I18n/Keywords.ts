@@ -493,7 +493,7 @@ export interface components {
             /** @constant */
             readonly Send_to_email: "Send to Email";
             /** @constant */
-            readonly Cluster_and_send_clustering_tables_to_email: "Cluster core and send results to email";
+            readonly Cluster_and_send_clustering_tables_to_email: "Cluster semantic core and send results to email";
             /** @constant */
             readonly Data_will_be_pulled_for: "Collect data for";
             /** @constant */
@@ -597,7 +597,7 @@ export interface components {
             /** @constant */
             readonly Use_group_name_and_queries: "Использовать название и запросы группы";
             /** @constant */
-            readonly Cluster_core: "Cluster core";
+            readonly Cluster_core: "Cluster semantic core";
             /** @constant */
             readonly Cluster_by_the_highest_level: "Кластеризовать по самой сильной степени подбора";
         };

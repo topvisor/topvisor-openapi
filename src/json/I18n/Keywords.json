@@ -979,7 +979,7 @@
                         "readOnly": true
                     },
                     "Cluster_and_send_clustering_tables_to_email": {
-                        "const": "Cluster core and send results to email",
+                        "const": "Cluster semantic core and send results to email",
                         "readOnly": true
                     },
                     "Data_will_be_pulled_for": {
@@ -1187,7 +1187,7 @@
                         "readOnly": true
                     },
                     "Cluster_core": {
-                        "const": "Cluster core",
+                        "const": "Cluster semantic core",
                         "readOnly": true
                     },
                     "Cluster_by_the_highest_level": {
