@@ -1159,31 +1159,31 @@
                         "readOnly": true
                     },
                     "Extension_of_groups": {
-                        "const": "Расширение групп",
+                        "const": "Groups expansion",
                         "readOnly": true
                     },
                     "Extend_the_group": {
-                        "const": "Расширить группу",
+                        "const": "Expand group",
                         "readOnly": true
                     },
                     "Selected_groups_for_extension": {
-                        "const": "Выбрано групп для расширения",
+                        "const": "Groups selected for expansion",
                         "readOnly": true
                     },
                     "Collect_type": {
-                        "const": "Тип подбора",
+                        "const": "What to use for expansion",
                         "readOnly": true
                     },
                     "Use_only_group_name": {
-                        "const": "Использовать только название группы",
+                        "const": "Only group name",
                         "readOnly": true
                     },
                     "Use_group_requests_only": {
-                        "const": "Использовать только запросы группы",
+                        "const": "Only keywords in groups",
                         "readOnly": true
                     },
                     "Use_group_name_and_queries": {
-                        "const": "Использовать название и запросы группы",
+                        "const": "Use both group name and keywords",
                         "readOnly": true
                     },
                     "Cluster_core": {
@@ -1191,7 +1191,11 @@
                         "readOnly": true
                     },
                     "Cluster_by_the_highest_level": {
-                        "const": "Кластеризовать по самой сильной степени подбора",
+                        "const": "Cluster by the highest level",
+                        "readOnly": true
+                    },
+                    "Wait_while_clustering": {
+                        "const": "We're enchanting your semantic core. Please wait a bit.",
                         "readOnly": true
                     }
                 },
@@ -1491,7 +1495,8 @@
                     "Use_group_requests_only",
                     "Use_group_name_and_queries",
                     "Cluster_core",
-                    "Cluster_by_the_highest_level"
+                    "Cluster_by_the_highest_level",
+                    "Wait_while_clustering"
                 ]
             }
         }

@@ -583,23 +583,25 @@ export interface components {
             /** @constant */
             readonly Collect_hint_methods: "Auto substitutions";
             /** @constant */
-            readonly Extension_of_groups: "Расширение групп";
+            readonly Extension_of_groups: "Groups expansion";
             /** @constant */
-            readonly Extend_the_group: "Расширить группу";
+            readonly Extend_the_group: "Expand group";
             /** @constant */
-            readonly Selected_groups_for_extension: "Выбрано групп для расширения";
+            readonly Selected_groups_for_extension: "Groups selected for expansion";
             /** @constant */
-            readonly Collect_type: "Тип подбора";
+            readonly Collect_type: "What to use for expansion";
             /** @constant */
-            readonly Use_only_group_name: "Использовать только название группы";
+            readonly Use_only_group_name: "Only group name";
             /** @constant */
-            readonly Use_group_requests_only: "Использовать только запросы группы";
+            readonly Use_group_requests_only: "Only keywords in groups";
             /** @constant */
-            readonly Use_group_name_and_queries: "Использовать название и запросы группы";
+            readonly Use_group_name_and_queries: "Use both group name and keywords";
             /** @constant */
             readonly Cluster_core: "Cluster semantic core";
             /** @constant */
-            readonly Cluster_by_the_highest_level: "Кластеризовать по самой сильной степени подбора";
+            readonly Cluster_by_the_highest_level: "Cluster by the highest level";
+            /** @constant */
+            readonly Wait_while_clustering: "We're enchanting your semantic core. Please wait a bit.";
         };
     };
     responses: never;
