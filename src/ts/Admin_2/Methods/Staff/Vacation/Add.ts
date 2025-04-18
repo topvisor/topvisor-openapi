@@ -12,15 +12,20 @@ export interface components {
             /** ID юзера */
             user_id: number;
             /** Дата начала */
-            date1: import('../../../../TV/API/Types/Date.ts').components['schemas']['TV.API.Types.Date'];
+            date1: components["schemas"]["TV.API.Types.Date"];
             /** Дата окончания */
-            date2: import('../../../../TV/API/Types/Date.ts').components['schemas']['TV.API.Types.Date'];
+            date2: components["schemas"]["TV.API.Types.Date"];
             /** Тип
              *
              *     - vacation
              *     - day_off */
             type: (string | number)[];
         };
+        /**
+         * Дата
+         * @example 2000-01-01
+         */
+        "TV.API.Types.Date": string;
     };
     responses: never;
     parameters: never;

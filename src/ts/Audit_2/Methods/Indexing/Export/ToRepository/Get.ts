@@ -9,9 +9,16 @@ export interface components {
     schemas: {
         /** Экспорт файла в хранилище */
         "Audit_2.Methods.Indexing.Export.ToRepository.Get": {
-            repository: import('../../../../../Export_2/Types/Repository/Name.ts').components['schemas']['Export_2.Types.Repository.Name'];
-            project_id: import('../../../../../TV/API/Params/ProjectIdTrait.ts').components['schemas']['TV.API.Params.ProjectIdTrait']['project_id'];
+            repository: components["schemas"]["Export_2.Types.Repository.Name"];
+            project_id: components["schemas"]["project_id"];
         };
+        /**
+         * Хранилище для экспорта
+         * @enum {string}
+         */
+        "Export_2.Types.Repository.Name": "gdrive";
+        /** ID проекта */
+        project_id: number;
     };
     responses: never;
     parameters: never;

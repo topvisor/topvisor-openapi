@@ -11,7 +11,7 @@ export interface components {
         "Content_2.Methods.Apometr.History.Get": {
             /** Индекс региона */
             region_index?: number | null;
-            searcher_key?: import('../../../../Positions_2/Types/SearcherKey.ts').components['schemas']['Positions_2.Types.SearcherKey'];
+            searcher_key?: components["schemas"]["Positions_2.Types.SearcherKey"];
             /** Ключ региона */
             region_key?: number;
             /**
@@ -19,12 +19,27 @@ export interface components {
              * @default ru
              */
             region_lang: string;
-            region_device?: import('../../../../Positions_2/Types/RegionDevice.ts').components['schemas']['Positions_2.Types.RegionDevice'];
+            region_device?: components["schemas"]["Positions_2.Types.RegionDevice"];
             /** Дата */
-            date?: import('../../../../TV/API/Types/Date.ts').components['schemas']['TV.API.Types.Date'] | null;
+            date?: components["schemas"]["TV.API.Types.Date"] | null;
             /** Вернуть только средние значения по всем тематикам */
             avg?: boolean;
         };
+        /**
+         * Id поисковой системы для проверки позиций
+         * @enum {integer}
+         */
+        "Positions_2.Types.SearcherKey": 0 | 20 | 21 | 1 | 4 | 5 | 7 | 8 | 9;
+        /**
+         * Устройство региона
+         * @enum {integer}
+         */
+        "Positions_2.Types.RegionDevice": 0 | 1 | 2;
+        /**
+         * Дата
+         * @example 2000-01-01
+         */
+        "TV.API.Types.Date": string;
     };
     responses: never;
     parameters: never;

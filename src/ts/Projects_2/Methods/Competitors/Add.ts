@@ -14,10 +14,25 @@ export interface components {
             /** ID проекта */
             project_id: number;
             /** Список url конкурентов */
-            urls: import('../../../TV/API/Types/UrlShortArray.ts').components['schemas']['TV.API.Types.UrlShortArray'];
+            urls: components["schemas"]["TV.API.Types.UrlShortArray"];
             /** Список имен конкурентов (если указан, должен быть такой же длины как urls) */
             names?: (string | number)[] | null;
         };
+        /** Краткий URL в punycode, не может содержать UTF-символы:
+         *     - без схемы
+         *     - без "www." в домене
+         *     - без слешей на конце
+         *     - без "<" и ">"
+         *
+         *     Будет проивзедено автоматическое приведение к формату
+         *
+         *     Разрешен ввод пустой строки, для удаления значения url */
+        "TV.API.Types.UrlShort": string;
+        /**
+         * Тип массива: UrlShort[]
+         * @description @see UrlShort
+         */
+        "TV.API.Types.UrlShortArray": components["schemas"]["TV.API.Types.UrlShort"][];
     };
     responses: never;
     parameters: never;

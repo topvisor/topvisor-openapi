@@ -12,9 +12,9 @@ export interface components {
             /** Вместо project_ids можно укзывать project_id */
             projects_ids?: (string | number)[] | null;
             /** Email пользователя (если пользователь не зарегистрирован будет выслано приглашение) */
-            email: import('../../../TV/API/Types/Email.ts').components['schemas']['TV.API.Types.Email'];
+            email: components["schemas"]["TV.API.Types.Email"];
             /** Побитовая маска прав */
-            rights?: import('../../../TV/API/Types/BoolArray.ts').components['schemas']['TV.API.Types.BoolArray'] | null;
+            rights?: components["schemas"]["TV.API.Types.BoolArray"] | null;
             /** ID проекта
              *
              *     Вместо project_id можно укзывать projects_ids */
@@ -24,6 +24,17 @@ export interface components {
             /** Лимит трат пользователем в месяц */
             limit?: number | null;
         };
+        /**
+         * E-mail
+         * @example name@example.com
+         */
+        "TV.API.Types.Email": string;
+        /** Тип массива: boolean
+         *
+         *     Принимает: 0|1|false|true
+         *
+         *     Хранит: false|true */
+        "TV.API.Types.BoolArray": boolean[];
     };
     responses: never;
     parameters: never;

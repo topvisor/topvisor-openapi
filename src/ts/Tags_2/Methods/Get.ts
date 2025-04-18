@@ -9,9 +9,14 @@ export interface components {
     schemas: {
         /** Получение списка тегов */
         "Tags_2.Methods.Get": {
-            type: import('../Types/Type.ts').components['schemas']['Tags_2.Types.Type'];
+            type: components["schemas"]["Tags_2.Types.Type"];
             project_id?: number | null;
         };
+        /**
+         * Тип тега, к каким объектам применяется
+         * @enum {string}
+         */
+        "Tags_2.Types.Type": "tickets" | "projects" | "keywords" | "snippets" | "shortLinks" | "urls";
     };
     responses: never;
     parameters: never;

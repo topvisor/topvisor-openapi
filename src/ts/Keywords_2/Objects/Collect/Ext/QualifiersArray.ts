@@ -8,7 +8,18 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         /** Массив определителей региона */
-        "Keywords_2.Objects.Collect.Ext.QualifiersArray": import('./Qualifier.ts').components['schemas']['Keywords_2.Objects.Collect.Ext.Qualifier'][];
+        "Keywords_2.Objects.Collect.Ext.QualifiersArray": components["schemas"]["Keywords_2.Objects.Collect.Ext.Qualifier"][];
+        /**
+         * Id поисковой системы для проверки позиций
+         * @enum {integer}
+         */
+        "Positions_2.Types.SearcherKey": 0 | 20 | 21 | 1 | 4 | 5 | 7 | 8 | 9;
+        /** Определитель региона */
+        "Keywords_2.Objects.Collect.Ext.Qualifier": {
+            region_key: number;
+            searcher_key: components["schemas"]["Positions_2.Types.SearcherKey"];
+            region_lang?: string | null;
+        };
     };
     responses: never;
     parameters: never;

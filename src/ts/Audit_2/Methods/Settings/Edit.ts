@@ -39,9 +39,9 @@ export interface components {
             /** Лимит страниц при автоматическом проходе по сайту (аудит) */
             audit_auto_collect_pages_limit?: number | null;
             /** Страница, с которой начинается автоматический сбор URL (аудит) */
-            audit_auto_collect_pages_start_url?: import('../../../TV/API/Types/Url.ts').components['schemas']['TV.API.Types.Url'] | null;
+            audit_auto_collect_pages_start_url?: components["schemas"]["TV.API.Types.Url"] | null;
             /** Поисковые системы (индексация) */
-            indexing_searchers_keys?: import('../../Types/Indexing/SearcherKeys.ts').components['schemas']['Audit_2.Types.Indexing.SearcherKeys'] | null;
+            indexing_searchers_keys?: components["schemas"]["Audit_2.Types.Indexing.SearcherKeys"] | null;
             /**
              * User-Agent (радар)
              *
@@ -51,23 +51,63 @@ export interface components {
             watcher_user_agent?: string | null;
             watcher_max_redirects?: number | null;
             /** Типы отчетов, которые необходимо построить (радар) */
-            watcher_types?: import('../../Types/Settings/WatcherTypes.ts').components['schemas']['Audit_2.Types.Settings.WatcherTypes'] | null;
+            watcher_types?: components["schemas"]["Audit_2.Types.Settings.WatcherTypes"] | null;
             /**
              * Регулярное выражение для сбора контента (радар)
              *
              *     Если не указано, будут ипользоваться теги разметки
              * @description @see https://topvisor.com/support/watcher/settings/#tags
              */
-            watcher_regexp?: import('../../../TV/API/Types/RegExp.ts').components['schemas']['TV.API.Types.RegExp'] | null;
+            watcher_regexp?: components["schemas"]["TV.API.Types.RegExp"] | null;
             /** Вырезать из кода страницы javascript (радар) */
             watcher_ignore_js?: boolean | null;
             /** Вырезать из результатов html-тэги (радар) */
             watcher_strip_tags_from_result?: boolean | null;
             /** Дополнитлеьные cookies (радар) */
             watcher_cookies?: string | null;
-            server_location?: import('../../Types/Settings/ServerLocation.ts').components['schemas']['Audit_2.Types.Settings.ServerLocation'] | null;
-            project_id: import('../../../TV/API/Params/ProjectIdTrait.ts').components['schemas']['TV.API.Params.ProjectIdTrait']['project_id'];
+            server_location?: components["schemas"]["Audit_2.Types.Settings.ServerLocation"] | null;
+            project_id: components["schemas"]["project_id"];
         };
+        /** Краткий URL в punycode, не может содержать UTF-символы:
+         *     - без схемы
+         *     - без "www." в домене
+         *     - без слешей на конце
+         *     - без "<" и ">"
+         *
+         *     Будет проивзедено автоматическое приведение к формату
+         *
+         *     Разрешен ввод пустой строки, для удаления значения url */
+        "TV.API.Types.Url": string;
+        /**
+         * Id поисковой системы для индексации
+         * @enum {string}
+         */
+        "Audit_2.Types.Indexing.SearcherKey": "0" | "1" | "5";
+        /** Id поисковых систем для индексации */
+        "Audit_2.Types.Indexing.SearcherKeys": components["schemas"]["Audit_2.Types.Indexing.SearcherKey"][];
+        /**
+         * Тип отчета радара
+         * @enum {string}
+         */
+        "Audit_2.Types.Settings.WatcherType": "title" | "description" | "h1" | "content";
+        /** Типы отчетов радара */
+        "Audit_2.Types.Settings.WatcherTypes": components["schemas"]["Audit_2.Types.Settings.WatcherType"][];
+        /**
+         * Регулярное выражение
+         *
+         *     Пустое значение разрешено
+         *
+         *     Управляющие символы "/" в начале и в конце строки будут удалены
+         * @example /^year_(\d\d\d\d)$/
+         */
+        "TV.API.Types.RegExp": string;
+        /**
+         * Местоположение сервера для выполнения задач инструментов аудита
+         * @enum {string}
+         */
+        "Audit_2.Types.Settings.ServerLocation": "EASTERN_EUROPE" | "WESTERN_EUROPE";
+        /** ID проекта */
+        project_id: number;
     };
     responses: never;
     parameters: never;

@@ -10,7 +10,11 @@ export interface components {
         "Example_2.Objects.User": {
             name: string;
             age: number;
-            address: import('./Address.ts').components['schemas']['Example_2.Objects.Address'];
+            address: components["schemas"]["Example_2.Objects.Address"];
+        };
+        "Example_2.Objects.Address": {
+            city: string;
+            street?: string | null;
         };
     };
     responses: never;

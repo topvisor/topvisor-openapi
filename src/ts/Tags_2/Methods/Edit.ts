@@ -9,7 +9,7 @@ export interface components {
     schemas: {
         /** Сохранение списка тегов */
         "Tags_2.Methods.Edit": {
-            type: import('../Types/Type.ts').components['schemas']['Tags_2.Types.Type'];
+            type: components["schemas"]["Tags_2.Types.Type"];
             /** Список тегов в формате:
              *     <code>
              *     {
@@ -21,6 +21,11 @@ export interface components {
             tags: (string | number)[];
             project_id?: number | null;
         };
+        /**
+         * Тип тега, к каким объектам применяется
+         * @enum {string}
+         */
+        "Tags_2.Types.Type": "tickets" | "projects" | "keywords" | "snippets" | "shortLinks" | "urls";
     };
     responses: never;
     parameters: never;

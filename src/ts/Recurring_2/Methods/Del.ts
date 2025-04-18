@@ -9,10 +9,25 @@ export interface components {
     schemas: {
         /** Удаление настроек автоопераций */
         "Recurring_2.Methods.Del": {
-            type: import('../Types/Type.ts').components['schemas']['Recurring_2.Types.Type'];
+            type: components["schemas"]["Recurring_2.Types.Type"];
             /** Объект доменного платежа (в случае domainRenew - домен) */
-            target: import('../../TV/API/Types/Url.ts').components['schemas']['TV.API.Types.Url'];
+            target: components["schemas"]["TV.API.Types.Url"];
         };
+        /**
+         * Тип рекуррентного платежа
+         * @enum {string}
+         */
+        "Recurring_2.Types.Type": "refill" | "domainRenew";
+        /** Краткий URL в punycode, не может содержать UTF-символы:
+         *     - без схемы
+         *     - без "www." в домене
+         *     - без слешей на конце
+         *     - без "<" и ">"
+         *
+         *     Будет проивзедено автоматическое приведение к формату
+         *
+         *     Разрешен ввод пустой строки, для удаления значения url */
+        "TV.API.Types.Url": string;
     };
     responses: never;
     parameters: never;

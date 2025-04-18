@@ -13,16 +13,36 @@ export interface components {
              *
              *     Если не задан нужно задать параметры searcher_key, region_key, region_lang, region_device */
             region_index?: number | null;
-            searcher_key?: import('../../../../Positions_2/Types/SearcherKey.ts').components['schemas']['Positions_2.Types.SearcherKey'] | null;
+            searcher_key?: components["schemas"]["Positions_2.Types.SearcherKey"] | null;
             /** Ключ региона */
             region_key?: number | null;
             /** Язык региона */
             region_lang?: string | null;
-            region_device?: import('../../../../Positions_2/Types/RegionDevice.ts').components['schemas']['Positions_2.Types.RegionDevice'] | null;
-            action?: import('../../../Types/Apometr/Action.ts').components['schemas']['Content_2.Types.Apometr.Action'];
+            region_device?: components["schemas"]["Positions_2.Types.RegionDevice"] | null;
+            action?: components["schemas"]["Content_2.Types.Apometr.Action"];
             /** Дата, определяющая месяц, в формате YYYY-MM-01 */
-            date_month?: import('../../../../TV/API/Types/Date.ts').components['schemas']['TV.API.Types.Date'] | null;
+            date_month?: components["schemas"]["TV.API.Types.Date"] | null;
         };
+        /**
+         * Id поисковой системы для проверки позиций
+         * @enum {integer}
+         */
+        "Positions_2.Types.SearcherKey": 0 | 20 | 21 | 1 | 4 | 5 | 7 | 8 | 9;
+        /**
+         * Устройство региона
+         * @enum {integer}
+         */
+        "Positions_2.Types.RegionDevice": 0 | 1 | 2;
+        /**
+         * Тип выдачи
+         * @enum {string}
+         */
+        "Content_2.Types.Apometr.Action": "0" | "xml";
+        /**
+         * Дата
+         * @example 2000-01-01
+         */
+        "TV.API.Types.Date": string;
     };
     responses: never;
     parameters: never;

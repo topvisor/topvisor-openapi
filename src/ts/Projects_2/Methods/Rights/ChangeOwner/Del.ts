@@ -12,8 +12,13 @@ export interface components {
             /** ID проекта */
             project_id: number;
             /** Почта */
-            email: import('../../../../TV/API/Types/Email.ts').components['schemas']['TV.API.Types.Email'];
+            email: components["schemas"]["TV.API.Types.Email"];
         };
+        /**
+         * E-mail
+         * @example name@example.com
+         */
+        "TV.API.Types.Email": string;
     };
     responses: never;
     parameters: never;

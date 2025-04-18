@@ -21,7 +21,7 @@ export interface components {
              *     - email
              *     - informer */
             send_in: string;
-            lang: import('../../../TV/API/Types/Lang.ts').components['schemas']['TV.API.Types.Lang'];
+            lang: components["schemas"]["TV.API.Types.Lang"];
             /** Объект отправки */
             subject: string;
             /** Текст превью для письма */
@@ -37,12 +37,20 @@ export interface components {
             /** Текст для добавляемой ссылки для E-mail */
             link_text?: string | null;
             /** Ограничение рассылки по id пользоваталей */
-            users_ids?: import('../../../TV/API/Types/IntArray.ts').components['schemas']['TV.API.Types.IntArray'] | null;
+            users_ids?: components["schemas"]["TV.API.Types.IntArray"] | null;
             /** Ограничение рассылки по пользоваталям с договорами */
             only_ur?: boolean | null;
             /** Отладка email */
             debug?: boolean | null;
         };
+        /** @enum {string} */
+        "TV.API.Types.Lang": "ru" | "en";
+        /** Тип массива: int
+         *
+         *     Принимает: Любые целые числа и числа в строках
+         *
+         *     Хранит: int */
+        "TV.API.Types.IntArray": number[];
     };
     responses: never;
     parameters: never;

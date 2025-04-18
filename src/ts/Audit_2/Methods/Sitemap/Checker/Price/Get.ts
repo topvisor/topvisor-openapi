@@ -14,10 +14,31 @@ export interface components {
              * @default 1
              */
             apply_discount: number;
-            max_pages: import('../../../../Types/Sitemap/MaxPages.ts').components['schemas']['Audit_2.Types.Sitemap.MaxPages'];
-            filters?: import('../../../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['filters'];
-            id?: import('../../../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['id'];
+            max_pages: components["schemas"]["Audit_2.Types.Sitemap.MaxPages"];
+            filters?: components["schemas"]["filters"];
+            id?: components["schemas"]["id"];
         };
+        /**
+         * Максимальное количество страниц для генерации карты сайта
+         * @enum {string}
+         */
+        "Audit_2.Types.Sitemap.MaxPages": "100" | "1000" | "10000" | "100000" | "150000" | "300000";
+        /**
+         * Список фильтров по полям объекта
+         *
+         *     {name: string, operator: Field::AVAILABLE_OPERATORS, values: array}
+         *
+         *     Использует поля модели
+         *
+         *     Поля обязатлеьное, если $id не указан
+         * @description @see AbstractMethod::MODEL
+         *     @see Field::AVAILABLE_OPERATORS
+         */
+        filters: (string | number)[];
+        /** Id объекта, для фильтрации объектов по id
+         *
+         *     Только для моделей с полем id */
+        id: number | null;
     };
     responses: never;
     parameters: never;

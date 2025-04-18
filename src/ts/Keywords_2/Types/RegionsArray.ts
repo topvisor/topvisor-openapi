@@ -8,7 +8,40 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         /** Массив регионов */
-        "Keywords_2.Types.RegionsArray": import('./Region.ts').components['schemas']['Keywords_2.Types.Region'][];
+        "Keywords_2.Types.RegionsArray": components["schemas"]["Keywords_2.Types.Region"][];
+        /**
+         * Id поисковой системы для проверки позиций
+         * @enum {integer}
+         */
+        "Positions_2.Types.SearcherKey": 0 | 20 | 21 | 1 | 4 | 5 | 7 | 8 | 9;
+        /**
+         * Устройство региона
+         * @enum {integer}
+         */
+        "Positions_2.Types.RegionDevice": 0 | 1 | 2;
+        "Keywords_2.Types.Region": {
+            /** Ключ региона */
+            key: number;
+            /** Ключ поисковика */
+            searcher_key: components["schemas"]["Positions_2.Types.SearcherKey"];
+            /** Язык региона
+             *
+             *     Для каждой ПС доступен разный */
+            lang?: string | null;
+            /** Тип проверки частот. Для гугла всегда 3 */
+            types: (string | number)[];
+            /** Девайс */
+            device?: components["schemas"]["Positions_2.Types.RegionDevice"] | null;
+            /**
+             * Глубина региона
+             *
+             *     - 1-3 для Яндекса (ПК)
+             *     - 1-10 для Google
+             *     - 1-3 для GooglePlay
+             * @default 1
+             */
+            depth: number;
+        };
     };
     responses: never;
     parameters: never;
