@@ -8,15 +8,15 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         "Controller_2.Objects.Page": {
-            location: components["schemas"]["Controller_2.Objects.Location"];
+            location: import('./Location.ts').components['schemas']['Controller_2.Objects.Location'];
             _GET: (string | number)[];
-            openGraph: components["schemas"]["Controller_2.Objects.OpenGraph"];
-            options: components["schemas"]["Controller_2.Objects.Page.Options"];
-            article: components["schemas"]["Controller_2.Objects.Page.Article"];
-            secondMenu: components["schemas"]["Tpl.Core.SecondMenu"];
-            leftMenu: components["schemas"]["Tpl.Core.LeftMenu"];
+            openGraph: import('./OpenGraph.ts').components['schemas']['Controller_2.Objects.OpenGraph'];
+            options: import('./Page/Options.ts').components['schemas']['Controller_2.Objects.Page.Options'];
+            article: import('./Page/Article.ts').components['schemas']['Controller_2.Objects.Page.Article'];
+            secondMenu: import('../../Tpl/Core/SecondMenu.ts').components['schemas']['Tpl.Core.SecondMenu'];
+            leftMenu: import('../../Tpl/Core/LeftMenu.ts').components['schemas']['Tpl.Core.LeftMenu'];
             params: (string | number)[];
-            site: components["schemas"]["TV.Core.Sites.Site"];
+            site: import('../../TV/Core/Sites/Site.ts').components['schemas']['TV.Core.Sites.Site'];
             subdomain: string;
             langContext: string;
             langUrl: string;
@@ -31,7 +31,7 @@ export interface components {
             redirect: string;
             /** @default 302 */
             redirectCode: number;
-            tplEngine: components["schemas"]["Controller_2.Objects.TplEngine"];
+            tplEngine: import('./TplEngine.ts').components['schemas']['Controller_2.Objects.TplEngine'];
             tplStaticPath: string;
             tplStatic: string;
             tplStaticRendered: string;
@@ -48,99 +48,6 @@ export interface components {
             v: string;
             vJS: string;
         };
-        "Controller_2.Objects.Location": Record<string, never>;
-        "Controller_2.Objects.OpenGraph": Record<string, never>;
-        "Controller_2.Objects.Page.Options": {
-            title: string;
-            description: string;
-            keywords: string;
-            noindex: boolean;
-            canonical: string;
-            alternates: (string | number)[];
-        };
-        "Controller_2.Objects.Page.Article": {
-            /** @default module */
-            type: string;
-            duration?: string | null;
-            word_count?: string | null;
-            htmlRaw: string;
-            url: string;
-            parent_url: string;
-            publish_time?: string | null;
-            h1: string;
-            description?: string | null;
-            menu_name?: string | null;
-            intro?: string | null;
-            html: string;
-            image: string;
-            tags: (string | number)[];
-            count_views: number;
-            count_unique_views?: number | null;
-            count_likes: number;
-            count_comments?: number | null;
-            theme: string;
-            noindex: boolean;
-            quiz_id: string;
-            /** @default ACTIVE */
-            state: string;
-            rubric_name: string;
-            user_id: number;
-            user_name?: string | null;
-            user_description: string;
-            user_avatar: string;
-            view: number;
-            like: number;
-            bookmark: string;
-            bookmark_author: string;
-            author_alias: string;
-            user_id_2?: number | null;
-            user_id_3?: number | null;
-        };
-        "Tpl.Core.SecondMenu": Record<string, never>;
-        "Tpl.Core.LeftMenu": {
-            items: (string | number)[];
-        };
-        "TV.Core.Sites.Site": {
-            /** Базовый домен сайта */
-            host: string;
-            /** @type class-string<TV\Types\Config\Site> config - Интерфейс конфигурации сайта, пример: `Config\Sites\{{ SiteName }}\ConfigSite::class` */
-            config: string;
-            /**
-             * Настройки интеграций
-             * @description @type array{
-             *         yandex_client_id:string,
-             *         yandex_client_id_auth:string,
-             *         yandex_client_secret:string,
-             *         google_client_id:string,
-             *         google_client_secret:string,
-             *         sms_client:string,
-             *         selectel_api_key:string,
-             *         vk_pixel_id:string,
-             *         vk_group_id:string,
-             *         vk_service_token:string,
-             *         vk_group_token:string,
-             *         telegram_token:string,
-             *         telegram_token_apometr:string,
-             *         tinkoff_business_token:string,
-             *         tinkoff_openapi_token:string,
-             *         tinkoff_security_key:string,
-             *         tinkoff_ap_cert_pass:string,
-             *         tinkoff_partner_key:string,
-             *         tinkoff_partner_secret:string,
-             *         botan_token_TopvisorBot:string,
-             *         botan_token_ApometrBot:string,
-             *         diadoc:string,
-             *         fbAppId:string,
-             *         fbTokens:array,
-             *         twTokens:array
-             *     }
-             */
-            configTPA: (string | number)[];
-        };
-        /** Движок работы с шаблонизатором
-         *
-         *     Является неотъемлемой частью Page */
-        "Controller_2.Objects.TplEngine": Record<string, never>;
     };
     responses: never;
     parameters: never;

@@ -8,12 +8,7 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         /** Права для гостевых ссылок */
-        "Positions_2.Types.Settings.GuestLinkRights": components["schemas"]["Positions_2.Types.Settings.GuestLinkRight"][];
-        /**
-         * Право для гостевых ссылок
-         * @enum {string}
-         */
-        "Positions_2.Types.Settings.GuestLinkRight": "volume" | "frequency" | "visitors" | "dates" | "summary" | "graphics" | "competitors";
+        "Positions_2.Types.Settings.GuestLinkRights": import('./GuestLinkRight.ts').components['schemas']['Positions_2.Types.Settings.GuestLinkRight'][];
     };
     responses: never;
     parameters: never;

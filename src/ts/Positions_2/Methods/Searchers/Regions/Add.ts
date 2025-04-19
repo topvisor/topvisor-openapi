@@ -12,7 +12,7 @@ export interface components {
             /** Id проекта */
             project_id: number;
             /** Ключ ПС */
-            searcher_key: components["schemas"]["Positions_2.Types.SearcherKey"];
+            searcher_key: import('../../../Types/SearcherKey.ts').components['schemas']['Positions_2.Types.SearcherKey'];
             /** Ключ региона
              *
              *     Для разных ПС список доступных регионов может быть разный */
@@ -22,7 +22,7 @@ export interface components {
              *     Для разных ПС список языков разный */
             region_lang?: string | null;
             /** Устройство региона */
-            region_device?: components["schemas"]["Positions_2.Types.RegionDevice"];
+            region_device?: import('../../../Types/RegionDevice.ts').components['schemas']['Positions_2.Types.RegionDevice'];
             /**
              * Глубина региона
              *
@@ -33,16 +33,6 @@ export interface components {
              */
             region_depth: number;
         };
-        /**
-         * Id поисковой системы для проверки позиций
-         * @enum {integer}
-         */
-        "Positions_2.Types.SearcherKey": 0 | 20 | 21 | 1 | 4 | 5 | 7 | 8 | 9;
-        /**
-         * Устройство региона
-         * @enum {integer}
-         */
-        "Positions_2.Types.RegionDevice": 0 | 1 | 2;
     };
     responses: never;
     parameters: never;

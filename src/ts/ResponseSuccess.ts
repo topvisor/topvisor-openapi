@@ -14,10 +14,8 @@ export interface components {
              *     Тип результата зависит от типа запроса и его настроек */
             errors?: null | null;
             /** Список ообщений, полученных при выполнении запроса */
-            messages?: components["schemas"]["TV.API.Types.StringArray"] | null;
+            messages?: import('./TV/API/Types/StringArray.ts').components['schemas']['TV.API.Types.StringArray'] | null;
         };
-        /** Тип массива: string[] */
-        "TV.API.Types.StringArray": string[];
     };
     responses: never;
     parameters: never;

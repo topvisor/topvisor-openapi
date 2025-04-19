@@ -22,9 +22,9 @@ export interface components {
             /** Дата окончания диапазона */
             date2?: string | null;
             /** Тип диапазона дат */
-            type_range: components["schemas"]["Audit_2.Types.Indexing.TypeRange"];
+            type_range: import('../../../../Types/Indexing/TypeRange.ts').components['schemas']['Audit_2.Types.Indexing.TypeRange'];
             /** Тип диапазона дат (при сравнении) */
-            type_range_compare: components["schemas"]["Audit_2.Types.Indexing.TypeRange"];
+            type_range_compare: import('../../../../Types/Indexing/TypeRange.ts').components['schemas']['Audit_2.Types.Indexing.TypeRange'];
             /** Количество дней в диапазоне */
             count_dates?: number;
             /** ID тегов */
@@ -33,15 +33,8 @@ export interface components {
             data_sort?: (string | number)[] | null;
             /** Применение изменений только для */
             only_changed_for?: string | null;
-            project_id: components["schemas"]["project_id"];
+            project_id: import('../../../../../TV/API/Params/ProjectIdTrait.ts').components['schemas']['TV.API.Params.ProjectIdTrait']['project_id'];
         };
-        /**
-         * Тип диапазона индексации
-         * @enum {integer}
-         */
-        "Audit_2.Types.Indexing.TypeRange": 0 | 1 | 2 | 3 | 4 | 5 | 7 | 100;
-        /** ID проекта */
-        project_id: number;
     };
     responses: never;
     parameters: never;

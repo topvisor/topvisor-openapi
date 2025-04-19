@@ -11,15 +11,10 @@ export interface components {
         "Bank_2.Methods.Requisites.Add": {
             /** см. объект Bank_2\Objects\Requisites */
             data: string;
-            type: components["schemas"]["Bank_2.Types.Requisites.Type"];
+            type: import('../../Types/Requisites/Type.ts').components['schemas']['Bank_2.Types.Requisites.Type'];
             /** Id тарифа, для договоров, ассоциируемых с тарифом (например fl223) */
             tariff_id?: number;
         };
-        /**
-         * Тип реквизитов
-         * @enum {string}
-         */
-        "Bank_2.Types.Requisites.Type": "contract" | "offer" | "partnerOffer" | "fl223" | "domainsContract" | "domainsOffer" | "domainsPersonContract" | "domainsPersonOffer";
     };
     responses: never;
     parameters: never;

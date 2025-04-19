@@ -33,26 +33,12 @@ export interface components {
             /** Id папки для новых групп */
             to_id?: number;
             /** @default in_folder_last */
-            to_type: components["schemas"]["Keywords_2.Types.Collect.ToType"];
+            to_type: import('../../../Types/Collect/ToType.ts').components['schemas']['Keywords_2.Types.Collect.ToType'];
             /** Собирать все запросы в одну группу (не несет смысл, если указан to_group_id) */
             in_one_group?: boolean;
-            currency?: components["schemas"]["TV.API.Types.Currency"] | null;
+            currency?: import('../../../../TV/API/Types/Currency.ts').components['schemas']['TV.API.Types.Currency'] | null;
             debug?: string | null;
         };
-        /**
-         * Куда добавлять добавляемые группы
-         * @enum {string}
-         */
-        "Keywords_2.Types.Collect.ToType": "in_folder" | "in_folder_last";
-        /**
-         * Валюта
-         *
-         *     Этот общий тип, не зависящий от контекста
-         *
-         *     Дополниетольно нужно проверять в API методах через site()->checkAllowCurrency() в функции check()
-         * @enum {string}
-         */
-        "TV.API.Types.Currency": "RUB" | "USD";
     };
     responses: never;
     parameters: never;

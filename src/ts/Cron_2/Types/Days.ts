@@ -8,12 +8,7 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         /** Дни недели, в которые должен производиться запуск cron */
-        "Cron_2.Types.Days": components["schemas"]["Cron_2.Types.Day"][];
-        /**
-         * День недели, в который должен производиться запуск cron
-         * @enum {string}
-         */
-        "Cron_2.Types.Day": "1" | "2" | "3" | "4" | "5" | "6" | "7";
+        "Cron_2.Types.Days": import('./Day.ts').components['schemas']['Cron_2.Types.Day'][];
     };
     responses: never;
     parameters: never;

@@ -10,14 +10,8 @@ export interface components {
         /** Изменение сортировки шаблонов */
         "Tickets_2.Methods.Admin.Templates.Sort.Edit": {
             /** ID шаблонов */
-            ids: components["schemas"]["TV.API.Types.IntArray"];
+            ids: import('../../../../../TV/API/Types/IntArray.ts').components['schemas']['TV.API.Types.IntArray'];
         };
-        /** Тип массива: int
-         *
-         *     Принимает: Любые целые числа и числа в строках
-         *
-         *     Хранит: int */
-        "TV.API.Types.IntArray": number[];
     };
     responses: never;
     parameters: never;

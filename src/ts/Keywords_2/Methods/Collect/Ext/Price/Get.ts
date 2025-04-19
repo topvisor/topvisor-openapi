@@ -19,46 +19,12 @@ export interface components {
              */
             apply_discount: boolean;
             /** Каким типом расширять группу */
-            type: components["schemas"]["Keywords_2.Types.Collect.Ext.Type"];
+            type: import('../../../../Types/Collect/Ext/Type.ts').components['schemas']['Keywords_2.Types.Collect.Ext.Type'];
             /** Объекты определителей настроек ПС и регионов */
-            qualifiers: components["schemas"]["Keywords_2.Objects.Collect.Ext.QualifiersArray"];
-            filters?: components["schemas"]["filters"];
-            id?: components["schemas"]["id"];
+            qualifiers: import('../../../../Objects/Collect/Ext/QualifiersArray.ts').components['schemas']['Keywords_2.Objects.Collect.Ext.QualifiersArray'];
+            filters?: import('../../../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['filters'];
+            id?: import('../../../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['id'];
         };
-        /**
-         * По каким параметрам расширять группу
-         * @enum {string}
-         */
-        "Keywords_2.Types.Collect.Ext.Type": "groupName" | "groupNameWithKeywords" | "keywords";
-        /**
-         * Id поисковой системы для проверки позиций
-         * @enum {integer}
-         */
-        "Positions_2.Types.SearcherKey": 0 | 20 | 21 | 1 | 4 | 5 | 7 | 8 | 9;
-        /** Определитель региона */
-        "Keywords_2.Objects.Collect.Ext.Qualifier": {
-            region_key: number;
-            searcher_key: components["schemas"]["Positions_2.Types.SearcherKey"];
-            region_lang?: string | null;
-        };
-        /** Массив определителей региона */
-        "Keywords_2.Objects.Collect.Ext.QualifiersArray": components["schemas"]["Keywords_2.Objects.Collect.Ext.Qualifier"][];
-        /**
-         * Список фильтров по полям объекта
-         *
-         *     {name: string, operator: Field::AVAILABLE_OPERATORS, values: array}
-         *
-         *     Использует поля модели
-         *
-         *     Поля обязатлеьное, если $id не указан
-         * @description @see AbstractMethod::MODEL
-         *     @see Field::AVAILABLE_OPERATORS
-         */
-        filters: (string | number)[];
-        /** Id объекта, для фильтрации объектов по id
-         *
-         *     Только для моделей с полем id */
-        id: number | null;
     };
     responses: never;
     parameters: never;

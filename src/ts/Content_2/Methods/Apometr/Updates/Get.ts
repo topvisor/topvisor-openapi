@@ -11,19 +11,9 @@ export interface components {
         "Content_2.Methods.Apometr.Updates.Get": {
             /** @default 100 */
             limit: number;
-            searcher_key: components["schemas"]["Positions_2.Types.SearcherKey"];
-            date?: components["schemas"]["TV.API.Types.Date"] | null;
+            searcher_key: import('../../../../Positions_2/Types/SearcherKey.ts').components['schemas']['Positions_2.Types.SearcherKey'];
+            date?: import('../../../../TV/API/Types/Date.ts').components['schemas']['TV.API.Types.Date'] | null;
         };
-        /**
-         * Id поисковой системы для проверки позиций
-         * @enum {integer}
-         */
-        "Positions_2.Types.SearcherKey": 0 | 20 | 21 | 1 | 4 | 5 | 7 | 8 | 9;
-        /**
-         * Дата
-         * @example 2000-01-01
-         */
-        "TV.API.Types.Date": string;
     };
     responses: never;
     parameters: never;

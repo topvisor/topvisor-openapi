@@ -9,29 +9,11 @@ export interface components {
     schemas: {
         /** Получение суммы оплат по тарифам за период */
         "Admin_2.Methods.Analytics.Payments.Tariff.Get": {
-            period: components["schemas"]["Admin_2.Types.Analytics.Segment"];
-            currency: components["schemas"]["TV.API.Types.Currency"];
+            period: import('../../../../Types/Analytics/Segment.ts').components['schemas']['Admin_2.Types.Analytics.Segment'];
+            currency: import('../../../../../TV/API/Types/Currency.ts').components['schemas']['TV.API.Types.Currency'];
             /** Длина периода */
             limit: number;
         };
-        /**
-         * Имя сегмента, на которые делится период отчета
-         *
-         *     Отчет делится на равные части - сегменты, за каждый сегмент выводится сводка с агрегацией по этому сегменту
-         *
-         *     Пример: вывод количества регистраций за каждый **месяц** в отчете
-         * @enum {string}
-         */
-        "Admin_2.Types.Analytics.Segment": "day" | "month" | "year";
-        /**
-         * Валюта
-         *
-         *     Этот общий тип, не зависящий от контекста
-         *
-         *     Дополниетольно нужно проверять в API методах через site()->checkAllowCurrency() в функции check()
-         * @enum {string}
-         */
-        "TV.API.Types.Currency": "RUB" | "USD";
     };
     responses: never;
     parameters: never;

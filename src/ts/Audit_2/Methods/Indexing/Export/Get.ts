@@ -12,7 +12,7 @@ export interface components {
          *     Необходимо указать либо date1 и date2, либо dates (вместе указывать нельзя) */
         "Audit_2.Methods.Indexing.Export.Get": {
             /** Поисковые системы */
-            searchers_keys: components["schemas"]["Audit_2.Types.Indexing.SearcherKeys"];
+            searchers_keys: import('../../../Types/Indexing/SearcherKeys.ts').components['schemas']['Audit_2.Types.Indexing.SearcherKeys'];
             /**
              * Если указан, файл будет сохранен в указанной папке и будет возвращен путь к файлу
              *
@@ -21,60 +21,30 @@ export interface components {
              */
             returnFilenameFromFolder?: string | null;
             /** Формат экспортируемого файла */
-            output: components["schemas"]["TV.API.Types.ExportFormat"];
+            output: import('../../../../TV/API/Types/ExportFormat.ts').components['schemas']['TV.API.Types.ExportFormat'];
             /** Настройки экспорта */
             properties?: (string | number)[];
             /** Произвольные даты без использования диапазона */
             dates?: (string | number)[] | null;
             /** Дата начала диапазона */
-            date1?: components["schemas"]["TV.API.Types.Date"] | null;
+            date1?: import('../../../../TV/API/Types/Date.ts').components['schemas']['TV.API.Types.Date'] | null;
             /** Дата окончания диапазона */
-            date2?: components["schemas"]["TV.API.Types.Date"] | null;
+            date2?: import('../../../../TV/API/Types/Date.ts').components['schemas']['TV.API.Types.Date'] | null;
             /**
              * Период в днях
              * @default 7
              */
             period_days: number;
             /** @default 7 */
-            type_range: components["schemas"]["Audit_2.Types.Indexing.TypeRange"];
+            type_range: import('../../../Types/Indexing/TypeRange.ts').components['schemas']['Audit_2.Types.Indexing.TypeRange'];
             /**
              * Количество дней в диапазоне
              * @default 60
              */
             count_dates: number;
-            project_id: components["schemas"]["project_id"];
-            fields?: components["schemas"]["fields"];
+            project_id: import('../../../../TV/API/Params/ProjectIdTrait.ts').components['schemas']['TV.API.Params.ProjectIdTrait']['project_id'];
+            fields?: import('../../../../TV/API/Params/FieldsTrait.ts').components['schemas']['TV.API.Params.FieldsTrait']['fields'];
         };
-        /**
-         * Id поисковой системы для индексации
-         * @enum {string}
-         */
-        "Audit_2.Types.Indexing.SearcherKey": "0" | "1" | "5";
-        /** Id поисковых систем для индексации */
-        "Audit_2.Types.Indexing.SearcherKeys": components["schemas"]["Audit_2.Types.Indexing.SearcherKey"][];
-        /** @enum {string} */
-        "TV.API.Types.ExportFormat": "csv" | "xlsx";
-        /**
-         * Дата
-         * @example 2000-01-01
-         */
-        "TV.API.Types.Date": string;
-        /**
-         * Тип диапазона индексации
-         * @enum {integer}
-         */
-        "Audit_2.Types.Indexing.TypeRange": 0 | 1 | 2 | 3 | 4 | 5 | 7 | 100;
-        /** ID проекта */
-        project_id: number;
-        /**
-         * Список полей объекта, которые надо вернуть в результате
-         *
-         *     Если запрос поддерижвает параметр fetch_style, формат ответа может быть разным, fields будет влиять на содержание данных в этом ответе
-         *
-         *     Использует поля модели
-         * @description @see AbstractMethod::MODEL
-         */
-        fields: (string | number)[];
     };
     responses: never;
     parameters: never;

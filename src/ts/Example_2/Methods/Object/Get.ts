@@ -9,16 +9,7 @@ export interface components {
     schemas: {
         /** Метод с примерами параметров типа Object */
         "Example_2.Methods.Object.Get": {
-            user: components["schemas"]["Example_2.Objects.User"];
-        };
-        "Example_2.Objects.Address": {
-            city: string;
-            street?: string | null;
-        };
-        "Example_2.Objects.User": {
-            name: string;
-            age: number;
-            address: components["schemas"]["Example_2.Objects.Address"];
+            user: import('../../Objects/User.ts').components['schemas']['Example_2.Objects.User'];
         };
     };
     responses: never;

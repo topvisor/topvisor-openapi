@@ -11,12 +11,7 @@ export interface components {
          * Тип массива: Datetime[]
          * @description @see Datetime
          */
-        "TV.API.Types.DatetimeArray": components["schemas"]["TV.API.Types.Datetime"][];
-        /**
-         * Дата с временем
-         * @example 2000-01-01 00:00:00
-         */
-        "TV.API.Types.Datetime": string;
+        "TV.API.Types.DatetimeArray": import('./Datetime.ts').components['schemas']['TV.API.Types.Datetime'][];
     };
     responses: never;
     parameters: never;

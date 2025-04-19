@@ -11,17 +11,7 @@ export interface components {
          * Тип массива: Url[]
          * @description @see Url
          */
-        "TV.API.Types.UrlArray": components["schemas"]["TV.API.Types.Url"][];
-        /** Краткий URL в punycode, не может содержать UTF-символы:
-         *     - без схемы
-         *     - без "www." в домене
-         *     - без слешей на конце
-         *     - без "<" и ">"
-         *
-         *     Будет проивзедено автоматическое приведение к формату
-         *
-         *     Разрешен ввод пустой строки, для удаления значения url */
-        "TV.API.Types.Url": string;
+        "TV.API.Types.UrlArray": import('./Url.ts').components['schemas']['TV.API.Types.Url'][];
     };
     responses: never;
     parameters: never;

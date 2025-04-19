@@ -45,20 +45,8 @@ export interface components {
             /** Вырезать ли плюсы, точки, запятые, апострофы, кавычки (по умолчанию: 0 - не вырезать) */
             remove_special_chars?: boolean | null;
             /** Массив номеров тегов */
-            tags?: components["schemas"]["Tags_2.Types.TagsIds"] | null;
+            tags?: import('../../../../Tags_2/Types/TagsIds.ts').components['schemas']['Tags_2.Types.TagsIds'] | null;
         };
-        /**
-         * Id тега
-         * @enum {string}
-         */
-        "Tags_2.Types.TagId": "1" | "2" | "3" | "4" | "5" | "6" | "7" | "8" | "9" | "10" | "11" | "12" | "13" | "14" | "15" | "16" | "17" | "18" | "19" | "20";
-        /**
-         * Список id тегов
-         *
-         *     Тип массива: TagId[]
-         * @description @see Tags_2\Types\TagId
-         */
-        "Tags_2.Types.TagsIds": components["schemas"]["Tags_2.Types.TagId"][];
     };
     responses: never;
     parameters: never;

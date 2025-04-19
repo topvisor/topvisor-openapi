@@ -10,14 +10,9 @@ export interface components {
         /** Определитель региона */
         "Keywords_2.Objects.Collect.Ext.Qualifier": {
             region_key: number;
-            searcher_key: components["schemas"]["Positions_2.Types.SearcherKey"];
+            searcher_key: import('../../../../Positions_2/Types/SearcherKey.ts').components['schemas']['Positions_2.Types.SearcherKey'];
             region_lang?: string | null;
         };
-        /**
-         * Id поисковой системы для проверки позиций
-         * @enum {integer}
-         */
-        "Positions_2.Types.SearcherKey": 0 | 20 | 21 | 1 | 4 | 5 | 7 | 8 | 9;
     };
     responses: never;
     parameters: never;
