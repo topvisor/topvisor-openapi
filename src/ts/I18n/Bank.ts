@@ -349,8 +349,6 @@ export interface components {
             /** @constant */
             readonly Top_up_balance_with: "Top up balance by";
             /** @constant */
-            readonly Domain_account_topup: "Top up domain account";
-            /** @constant */
             readonly Amount_from: "Minimum amount";
             /** @constant */
             readonly Subscribe_for_period: "Subscribe for";

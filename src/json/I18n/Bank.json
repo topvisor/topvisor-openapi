@@ -690,10 +690,6 @@
                         "const": "Top up balance by",
                         "readOnly": true
                     },
-                    "Domain_account_topup": {
-                        "const": "Top up domain account",
-                        "readOnly": true
-                    },
                     "Amount_from": {
                         "const": "Minimum amount",
                         "readOnly": true
@@ -1270,7 +1266,6 @@
                     "Account_automatic_top_up",
                     "When_current_balance_reaches",
                     "Top_up_balance_with",
-                    "Domain_account_topup",
                     "Amount_from",
                     "Subscribe_for_period",
                     "Invoice_for",
