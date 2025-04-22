@@ -647,7 +647,7 @@
                         "readOnly": true
                     },
                     "Competitor_settings": {
-                        "const": "Add competitors",
+                        "const": "Set competitors",
                         "readOnly": true
                     },
                     "Se_and_locations": {

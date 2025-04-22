@@ -327,7 +327,7 @@ export interface components {
             /** @constant */
             readonly Keyword_import: "Keyword import";
             /** @constant */
-            readonly Competitor_settings: "Add competitors";
+            readonly Competitor_settings: "Set competitors";
             /** @constant */
             readonly Se_and_locations: "Search engines and locations";
             /** @constant */
