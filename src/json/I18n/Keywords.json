@@ -1197,6 +1197,10 @@
                     "Wait_while_clustering": {
                         "const": "We're enchanting your semantic core. Please wait a bit.",
                         "readOnly": true
+                    },
+                    "Root_folder": {
+                        "const": "Root folder",
+                        "readOnly": true
                     }
                 },
                 "required": [
@@ -1496,7 +1500,8 @@
                     "Use_group_name_and_queries",
                     "Cluster_core",
                     "Cluster_by_the_highest_level",
-                    "Wait_while_clustering"
+                    "Wait_while_clustering",
+                    "Root_folder"
                 ]
             }
         }

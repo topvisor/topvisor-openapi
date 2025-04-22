@@ -602,6 +602,8 @@ export interface components {
             readonly Cluster_by_the_highest_level: "Clustering will be done by the highest level.";
             /** @constant */
             readonly Wait_while_clustering: "We're enchanting your semantic core. Please wait a bit.";
+            /** @constant */
+            readonly Root_folder: "Root folder";
         };
     };
     responses: never;
