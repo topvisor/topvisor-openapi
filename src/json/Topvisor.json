@@ -2810,7 +2810,7 @@
                 "tags": [
                     "Bank_2"
                 ],
-                "summary": "Предоставление инфомации по счету",
+                "summary": "Получение инфомации о балансе",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -2844,7 +2844,8 @@
                                                                         "type": "number"
                                                                     }
                                                                 ]
-                                                            }
+                                                            },
+                                                            "title": "@var array{balance_all: float, balance_personal: float, balance_bonus: float, balance_plan: float, tariff: array, subscription?: Bank_2\\Objects\\Subscriptions\\Subscription}"
                                                         }
                                                     },
                                                     "required": [

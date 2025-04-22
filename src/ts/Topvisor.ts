@@ -827,7 +827,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Предоставление инфомации по счету */
+    /** Получение инфомации о балансе */
     "/get/bank_2/info/": {
         parameters: {
             query?: never;
@@ -6977,6 +6977,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
+                        /** @var array{balance_all: float, balance_personal: float, balance_bonus: float, balance_plan: float, tariff: array, subscription?: Bank_2\Objects\Subscriptions\Subscription} */
                         result: (string | number)[];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;

@@ -1664,7 +1664,7 @@ paths:
       operationId: GetBank2Info
       tags:
         - Bank_2
-      summary: Предоставление инфомации по счету
+      summary: Получение инфомации о балансе
       requestBody:
         content:
           application/json:
@@ -1687,6 +1687,7 @@ paths:
                               oneOf:
                                 - type: string
                                 - type: number
+                            title: '@var array{balance_all: float, balance_personal: float, balance_bonus: float, balance_plan: float, tariff: array, subscription?: Bank_2\Objects\Subscriptions\Subscription}'
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
@@ -13631,7 +13632,7 @@ components:
         - orders
         - filters
         - offset
-      title: Предоставление инфомации по счету
+      title: Получение инфомации о балансе
     Bank_2.Types.Requisites.Type:
       type: string
       enum:
