@@ -135,8 +135,6 @@ export interface components {
             /** @constant */
             readonly of_project: "of project";
             /** @constant */
-            readonly Tool_digest: "Tool digest (2024)";
-            /** @constant */
             readonly Ticket: "Ticket";
             /** @constant */
             readonly Tickets: "Tickets";

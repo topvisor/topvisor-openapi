@@ -262,10 +262,6 @@
                         "const": "of project",
                         "readOnly": true
                     },
-                    "Tool_digest": {
-                        "const": "Tool digest (2024)",
-                        "readOnly": true
-                    },
                     "Ticket": {
                         "const": "Ticket",
                         "readOnly": true
@@ -1959,7 +1955,6 @@
                     "project",
                     "Project",
                     "of_project",
-                    "Tool_digest",
                     "Ticket",
                     "Tickets",
                     "All_tickets",
