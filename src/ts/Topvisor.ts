@@ -738,7 +738,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Применение наастроек Анализа сайта */
+    /** Применение настроек Анализа сайта */
     "/edit/audit_2/settings/": {
         parameters: {
             query?: never;

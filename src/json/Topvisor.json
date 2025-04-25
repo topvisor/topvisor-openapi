@@ -2494,7 +2494,7 @@
                 "tags": [
                     "Audit_2"
                 ],
-                "summary": "Применение наастроек Анализа сайта",
+                "summary": "Применение настроек Анализа сайта",
                 "requestBody": {
                     "content": {
                         "application/json": {

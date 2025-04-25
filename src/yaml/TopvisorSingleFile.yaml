@@ -1492,7 +1492,7 @@ paths:
       operationId: EditAudit2Settings
       tags:
         - Audit_2
-      summary: Применение наастроек Анализа сайта
+      summary: Применение настроек Анализа сайта
       requestBody:
         content:
           application/json:
@@ -13397,7 +13397,7 @@ components:
           $ref: '#/components/schemas/project_id'
       required:
         - project_id
-      title: Применение наастроек Анализа сайта
+      title: Применение настроек Анализа сайта
     Audit_2.Types.Settings.FieldName:
       type: string
       enum:

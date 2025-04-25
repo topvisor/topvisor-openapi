@@ -7,7 +7,7 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Применение наастроек Анализа сайта */
+        /** Применение настроек Анализа сайта */
         "Audit_2.Methods.Settings.Edit": {
             /**
              * User-Agent (аудит)
