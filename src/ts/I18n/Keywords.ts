@@ -239,7 +239,7 @@ export interface components {
             /** @constant */
             readonly Clustering_level_groups_relation: "Higher level clustering produces more groups with fewer keywords in every group.";
             /** @constant */
-            readonly Clustering_changes_order_notice: "<b>Important!</b><br>Keyword clustering changes groups and keyword order in your project. Clustering is <b>irreversible</b>. After clustering, keyword groups will be automatically disabled.";
+            readonly Clustering_changes_order_notice: "<b>Important!</b><br>Keyword clustering changes groups and keyword order in your project.<br> After clustering, keyword groups will be automatically disabled.";
             /** @constant */
             readonly Clustering_rel_notice: "Before grouping keywords by page relevance, make sure that you have checked<br> keyword rankings in the applied search engine and location.";
             /** @constant */
@@ -493,8 +493,6 @@ export interface components {
             /** @constant */
             readonly Send_to_email: "Send to Email";
             /** @constant */
-            readonly Cluster_and_send_clustering_tables_to_email: "Cluster semantic core and send results to email";
-            /** @constant */
             readonly Data_will_be_pulled_for: "Collect data for";
             /** @constant */
             readonly total_count: "; total count";
@@ -604,6 +602,12 @@ export interface components {
             readonly Wait_while_clustering: "We're enchanting your semantic core. Please wait a bit.";
             /** @constant */
             readonly Root_folder: "Root folder";
+            /** @constant */
+            readonly Groups_with_keywords: "Groups (with keywords)";
+            /** @constant */
+            readonly Type_of_volume_needed_for_visibility: "Check this type of Search Volume to calculate Visibility for";
+            /** @constant */
+            readonly Check_all_wordstats: "Check all wordstats";
         };
     };
     responses: never;

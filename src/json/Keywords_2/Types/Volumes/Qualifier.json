@@ -1,0 +1,35 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Keywords_2.Types.Volumes.Qualifier",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Keywords_2.Types.Volumes.Qualifier": {
+                "type": "object",
+                "properties": {
+                    "region_key": {
+                        "title": "Ключ региона",
+                        "type": "integer"
+                    },
+                    "searcher_key": {
+                        "title": "Ключ поисковой системы (0 - Яндекс, 1 - Google)",
+                        "type": "integer"
+                    },
+                    "type": {
+                        "title": "Тип частоты (для Яндекса: 1, 2, 3, 5 или 6; для Google: 3)",
+                        "type": "integer"
+                    }
+                },
+                "required": [
+                    "region_key",
+                    "searcher_key",
+                    "type"
+                ],
+                "title": "Определитель с настройками региона для проверки частоты запросов"
+            }
+        }
+    }
+}
