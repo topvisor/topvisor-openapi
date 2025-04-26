@@ -112,6 +112,9 @@
             "Audit.Scan": {
                 "$ref": "I18n/Audit/Scan.json#/components/schemas/I18n.Audit.Scan"
             },
+            "Bank.Subscription": {
+                "$ref": "I18n/Bank/Subscription.json#/components/schemas/I18n.Bank.Subscription"
+            },
             "Landings.Championship": {
                 "$ref": "I18n/Landings/Championship.json#/components/schemas/I18n.Landings.Championship"
             },

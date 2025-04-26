@@ -1,0 +1,69 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/I18n.Bank.Subscription",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "I18n.Bank.Subscription": {
+                "type": "object",
+                "properties": {
+                    "Texts_by_limit_name": {
+                        "const": {
+                            "positions_check": {
+                                "name": "Rank checks",
+                                "description": "Example description"
+                            },
+                            "positions_check_manual": {
+                                "name": "Manual rechecks",
+                                "description": ""
+                            },
+                            "keywords_volumes": {
+                                "name": "Search volume",
+                                "description": ""
+                            },
+                            "keywords_collect": {
+                                "name": "Keyword research",
+                                "description": ""
+                            },
+                            "keywords_collect_hint": {
+                                "name": "Search suggestions",
+                                "description": ""
+                            },
+                            "projects": {
+                                "name": "Projects",
+                                "description": ""
+                            },
+                            "projects_rights": {
+                                "name": "Guest Users",
+                                "description": ""
+                            },
+                            "positions_tasks": {
+                                "name": "Rank total tasks",
+                                "description": ""
+                            },
+                            "projects_competitors": {
+                                "name": "Competitors",
+                                "description": ""
+                            },
+                            "projects_archive": {
+                                "name": "Archived projects",
+                                "description": ""
+                            },
+                            "api": {
+                                "name": "API",
+                                "description": ""
+                            }
+                        },
+                        "readOnly": true
+                    }
+                },
+                "required": [
+                    "Texts_by_limit_name"
+                ]
+            }
+        }
+    }
+}

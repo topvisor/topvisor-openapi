@@ -10,6 +10,10 @@
             "Bank_2.Methods.Info.Get": {
                 "type": "object",
                 "properties": {
+                    "subscription_show_limits": {
+                        "title": "Отобразить лимиты при возвращении подписки",
+                        "type": "boolean"
+                    },
                     "fields": {
                         "$ref": "../../../TV/API/Params/FieldsTrait.json#/components/schemas/TV.API.Params.FieldsTrait/properties/fields"
                     },

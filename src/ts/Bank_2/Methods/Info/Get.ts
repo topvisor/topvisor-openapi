@@ -9,6 +9,8 @@ export interface components {
     schemas: {
         /** Получение инфомации о балансе */
         "Bank_2.Methods.Info.Get": {
+            /** Отобразить лимиты при возвращении подписки */
+            subscription_show_limits?: boolean;
             fields: import('../../../TV/API/Params/FieldsTrait.ts').components['schemas']['TV.API.Params.FieldsTrait']['fields'];
             orders: import('../../../TV/API/Params/OrdersTrait.ts').components['schemas']['TV.API.Params.OrdersTrait']['orders'];
             filters: import('../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['filters'];

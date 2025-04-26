@@ -1687,7 +1687,7 @@ paths:
                               oneOf:
                                 - type: string
                                 - type: number
-                            title: '@var array{balance_all: float, balance_personal: float, balance_bonus: float, balance_plan: float, tariff: array, subscription?: Bank_2\Objects\Subscriptions\Subscription}'
+                            title: '@return array{balance_all: float, balance_personal: float, balance_bonus: float, balance_plan: float, tariff: array, subscription?: Bank_2\Objects\Subscriptions\Subscription}'
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
@@ -13613,6 +13613,9 @@ components:
     Bank_2.Methods.Info.Get:
       type: object
       properties:
+        subscription_show_limits:
+          title: Отобразить лимиты при возвращении подписки
+          type: boolean
         fields:
           $ref: '#/components/schemas/fields'
         orders:
