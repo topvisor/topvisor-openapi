@@ -2414,7 +2414,7 @@ paths:
                               oneOf:
                                 - type: string
                                 - type: number
-                            title: Ассоциативный результирующий массив, с данными, переданными в метод и результатом genSet()
+                            title: Ассоциативный массив с результирующими переданными параетрами, и результатоми implodeQuotes() и genSet()
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
@@ -2481,7 +2481,7 @@ paths:
                               oneOf:
                                 - type: string
                                 - type: number
-                            title: Ассоциативный результирующий массив, с данными, переданными в метод
+                            title: Ассоциативный массив с результирующими переданными параетрами и результатом genSet()
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
@@ -2517,7 +2517,7 @@ paths:
                               oneOf:
                                 - type: string
                                 - type: number
-                            title: Ассоциативный результирующий массив, с данными, переданными в метод
+                            title: Ассоциативный массив с результирующими переданными параетрами и результатом genSet()
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
@@ -14489,6 +14489,9 @@ components:
       properties:
         name:
           type: string
+        email:
+          allOf:
+            - $ref: '#/components/schemas/TV.API.Types.Email'
         age:
           type: integer
         address:
@@ -14496,6 +14499,7 @@ components:
             - $ref: '#/components/schemas/Example_2.Objects.Address'
       required:
         - name
+        - email
         - age
         - address
     Example_2.Methods.Object.Get:

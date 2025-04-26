@@ -7559,7 +7559,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        /** Ассоциативный результирующий массив, с данными, переданными в метод и результатом genSet() */
+                        /** Ассоциативный массив с результирующими переданными параетрами, и результатоми implodeQuotes() и genSet() */
                         result: (string | number)[];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
@@ -7612,7 +7612,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        /** Ассоциативный результирующий массив, с данными, переданными в метод */
+                        /** Ассоциативный массив с результирующими переданными параетрами и результатом genSet() */
                         result: (string | number)[];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
@@ -7639,7 +7639,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        /** Ассоциативный результирующий массив, с данными, переданными в метод */
+                        /** Ассоциативный массив с результирующими переданными параетрами и результатом genSet() */
                         result: (string | number)[];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;

@@ -9,6 +9,7 @@ export interface components {
     schemas: {
         "Example_2.Objects.User": {
             name: string;
+            email: import('../../TV/API/Types/Email.ts').components['schemas']['TV.API.Types.Email'];
             age: number;
             address: import('./Address.ts').components['schemas']['Example_2.Objects.Address'];
         };

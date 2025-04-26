@@ -13,6 +13,13 @@
                     "name": {
                         "type": "string"
                     },
+                    "email": {
+                        "allOf": [
+                            {
+                                "$ref": "../../TV/API/Types/Email.json#/components/schemas/TV.API.Types.Email"
+                            }
+                        ]
+                    },
                     "age": {
                         "type": "integer"
                     },
@@ -26,6 +33,7 @@
                 },
                 "required": [
                     "name",
+                    "email",
                     "age",
                     "address"
                 ]
