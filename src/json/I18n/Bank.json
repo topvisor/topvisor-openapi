@@ -30,6 +30,10 @@
                         "const": "Insufficient balance in your account!",
                         "readOnly": true
                     },
+                    "Refill": {
+                        "const": "Balance replenishment in Topvisor",
+                        "readOnly": true
+                    },
                     "Bonus_refill": {
                         "const": "Bonus for balance top-up",
                         "readOnly": true
@@ -72,6 +76,14 @@
                     },
                     "by_dogovor": {
                         "const": "under agreement",
+                        "readOnly": true
+                    },
+                    "Info_bonus": {
+                        "const": "Topvisor bonus credit",
+                        "readOnly": true
+                    },
+                    "Info_system_cash": {
+                        "const": "Topvisor bonus credit",
                         "readOnly": true
                     },
                     "Info_system_withdrawal": {
@@ -212,6 +224,10 @@
                     },
                     "Referrals_link_to_EDF_setup_instruction": {
                         "const": "What is EDF, how can I use it?",
+                        "readOnly": true
+                    },
+                    "Referrals_send_documents_to_get_payout_comment": {
+                        "const": "Send downloaded documents to Topvisor Co., Ltd (Tax ID 4726000897) via e-document workflow. We will make a payout within a working day.",
                         "readOnly": true
                     },
                     "Referrals_visits": {
@@ -450,6 +466,22 @@
                         "const": "Payments will be accepted in the following currency",
                         "readOnly": true
                     },
+                    "Name_payment": {
+                        "const": "Topvisor Software - Payment TV-%paymentId%",
+                        "readOnly": true
+                    },
+                    "Name_payment_tariff": {
+                        "const": "Topvisor Software 1-Month Subscription %tariffName% plan - Payment TV-%paymentId%",
+                        "readOnly": true
+                    },
+                    "Name_payment_short": {
+                        "const": "Topvisor Software TV-%paymentId%",
+                        "readOnly": true
+                    },
+                    "Name_payment_tariff_short": {
+                        "const": "Topvisor Software 1-Month %tariffName% plan TV-%paymentId%",
+                        "readOnly": true
+                    },
                     "Name_payment_log": {
                         "const": "Credit%systemType% - Payment TV-%paymentId% via \"%systemName%\"%contractInfo%",
                         "readOnly": true
@@ -560,6 +592,10 @@
                     },
                     "TV": {
                         "const": "TV-",
+                        "readOnly": true
+                    },
+                    "Grant_right_to_use_Topvisor": {
+                        "const": "Right to use Topvisor software under contract",
                         "readOnly": true
                     },
                     "Mentioned_services_completed_in_full_notice": {
@@ -690,6 +726,14 @@
                         "const": "Top up balance by",
                         "readOnly": true
                     },
+                    "Topvisor_soft_account_topup": {
+                        "const": "Top up Topvisor account",
+                        "readOnly": true
+                    },
+                    "Subscribe_Topvisor_plan": {
+                        "const": "Subscribe to Topvisor plan",
+                        "readOnly": true
+                    },
                     "Amount_from": {
                         "const": "Minimum amount",
                         "readOnly": true
@@ -740,6 +784,10 @@
                     },
                     "Save_bank_details": {
                         "const": "Save bank details",
+                        "readOnly": true
+                    },
+                    "Discount_active_after_payment_plan_autorenewed_notice": {
+                        "const": "Discount for Topvisor software will be activated after your payment is credited to the Pricing plan balance account. A selected plan is renewed automatically. The Pricing plan balance gets zeroed out in the end of each month.",
                         "readOnly": true
                     },
                     "for_1_month": {
@@ -800,6 +848,10 @@
                     },
                     "Get_invoice_via_Diadoc": {
                         "const": "Get invoice via e-doc",
+                        "readOnly": true
+                    },
+                    "to_Topvisor_balance": {
+                        "const": "to Topvisor balance",
                         "readOnly": true
                     },
                     "Register_in_Tinkoff_business": {

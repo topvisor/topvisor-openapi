@@ -10,8 +10,20 @@
             "I18n.Tv": {
                 "type": "object",
                 "properties": {
+                    "Name": {
+                        "const": "Topvisor",
+                        "readOnly": true
+                    },
                     "TV": {
                         "const": "ТV",
+                        "readOnly": true
+                    },
+                    "Organization": {
+                        "const": "Topvisor Co., Ltd.",
+                        "readOnly": true
+                    },
+                    "Journal": {
+                        "const": "Topvisor–Journal",
                         "readOnly": true
                     }
                 },

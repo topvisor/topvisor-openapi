@@ -9,7 +9,13 @@ export interface components {
     schemas: {
         "I18n.Tv": {
             /** @constant */
+            readonly Name?: "Topvisor";
+            /** @constant */
             readonly TV: "ТV";
+            /** @constant */
+            readonly Organization?: "Topvisor Co., Ltd.";
+            /** @constant */
+            readonly Journal?: "Topvisor–Journal";
         };
     };
     responses: never;

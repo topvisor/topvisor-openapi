@@ -10,12 +10,20 @@
             "I18n.Landings.Promocode": {
                 "type": "object",
                 "properties": {
+                    "Title": {
+                        "const": "Enter promocode to get bonus - Topvisor",
+                        "readOnly": true
+                    },
                     "Description": {
                         "const": "Here you can enter a promocode and get a bonus. You can get a promocode via mailing, social networks or in person on conferences where we take part.",
                         "readOnly": true
                     },
                     "OpenGraph_title": {
                         "const": "Enter promocode",
+                        "readOnly": true
+                    },
+                    "OpenGraph_description": {
+                        "const": "And get bonus on Topvisor",
                         "readOnly": true
                     },
                     "Enter_promocode": {

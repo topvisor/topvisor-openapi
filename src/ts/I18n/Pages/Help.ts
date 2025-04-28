@@ -9,6 +9,8 @@ export interface components {
     schemas: {
         "I18n.Pages.Help": {
             /** @constant */
+            readonly Intro?: "Detailed guides on setting up all Topvisor tools. Tips and advice that will make your workflow efficient to the max.";
+            /** @constant */
             readonly Contact_title: "Got any questions? Contact us";
             /** @constant */
             readonly Contact_text: "If you didn't find what you looked for in the Help Center, contact Support Team via Ticket System {{ telegramBotText }}\nor email <a href='mailto:{{ supportEmail }}' target='_blank'>{{ supportEmail }}</a>. We'll show how to find and set up the tool you need and answer all other questions.";

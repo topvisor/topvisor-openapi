@@ -110,6 +110,10 @@
                         "const": "Updates Scanner",
                         "readOnly": true
                     },
+                    "Apometr_tool_Thundo": {
+                        "const": "ThundoStorm (Google Updates)",
+                        "readOnly": true
+                    },
                     "Reference": {
                         "const": "Reference",
                         "readOnly": true
@@ -124,6 +128,10 @@
                     },
                     "Pricing": {
                         "const": "Tools and prices",
+                        "readOnly": true
+                    },
+                    "Jobs": {
+                        "const": "Work in Topvisor",
                         "readOnly": true
                     },
                     "Sales": {
@@ -296,6 +304,14 @@
                     },
                     "Email_us_contact": {
                         "const": "We are eager to help! Email us",
+                        "readOnly": true
+                    },
+                    "Topvisor_Ltd": {
+                        "const": "Topvisor Ltd.",
+                        "readOnly": true
+                    },
+                    "Thundo_Ltd": {
+                        "const": "Thundo Ltd.",
                         "readOnly": true
                     }
                 },

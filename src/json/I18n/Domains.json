@@ -66,6 +66,10 @@
                         "const": "Renew",
                         "readOnly": true
                     },
+                    "Topvisor_DNS_servers": {
+                        "const": "Topvisor DNS servers",
+                        "readOnly": true
+                    },
                     "Custom_list_of_DNS_servers": {
                         "const": "Custom list of DNS servers",
                         "readOnly": true
@@ -162,8 +166,16 @@
                         "const": "Add DNS record",
                         "readOnly": true
                     },
+                    "Confirm_domain_transfer_title_email": {
+                        "const": "Topvisor: confirm domain transfer",
+                        "readOnly": true
+                    },
                     "Payment_for_authcode_providing": {
                         "const": "Payment for generating Auth-Info code for domain",
+                        "readOnly": true
+                    },
+                    "Authinfo_code_for_domain_transfer_email_title": {
+                        "const": "Topvisor: Auth-Info code for domain transfer",
                         "readOnly": true
                     },
                     "Authinfo_code_for_domain_transfer": {
@@ -426,6 +438,10 @@
                         "const": "Add administrator details",
                         "readOnly": true
                     },
+                    "Domain_transfer_to_Topvisor": {
+                        "const": "Domain transfer to Topvisor",
+                        "readOnly": true
+                    },
                     "Enter_domains_one_by_one_or": {
                         "const": "Enter domains one by one or",
                         "readOnly": true
@@ -486,6 +502,10 @@
                         "const": "Transfer request already added",
                         "readOnly": true
                     },
+                    "This_domain_not_supported_by_us": {
+                        "const": "This domain is not supported by Topvisor",
+                        "readOnly": true
+                    },
                     "Domain_admin_not_found": {
                         "const": "Domain administrator not found",
                         "readOnly": true
@@ -504,6 +524,10 @@
                     },
                     "Error_in_admin_card_contact_support": {
                         "const": "Error in admin card occurred. Contact support.",
+                        "readOnly": true
+                    },
+                    "Topvisor_free_DNS_servers": {
+                        "const": "Topvisor free DNS servers",
                         "readOnly": true
                     },
                     "CNS_Settings": {

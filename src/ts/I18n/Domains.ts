@@ -37,6 +37,8 @@ export interface components {
             /** @constant */
             readonly Renew: "Renew";
             /** @constant */
+            readonly Topvisor_DNS_servers?: "Topvisor DNS servers";
+            /** @constant */
             readonly Custom_list_of_DNS_servers: "Custom list of DNS servers";
             /** @constant */
             readonly Do_not_add_DNS_servers: "Do not add DNS servers";
@@ -85,7 +87,11 @@ export interface components {
             /** @constant */
             readonly Add_DNS_record: "Add DNS record";
             /** @constant */
+            readonly Confirm_domain_transfer_title_email?: "Topvisor: confirm domain transfer";
+            /** @constant */
             readonly Payment_for_authcode_providing: "Payment for generating Auth-Info code for domain";
+            /** @constant */
+            readonly Authinfo_code_for_domain_transfer_email_title?: "Topvisor: Auth-Info code for domain transfer";
             /** @constant */
             readonly Authinfo_code_for_domain_transfer: "Auth-Info code for domain transfer";
             /** @constant */
@@ -217,6 +223,8 @@ export interface components {
             /** @constant */
             readonly Add_admin_details: "Add administrator details";
             /** @constant */
+            readonly Domain_transfer_to_Topvisor?: "Domain transfer to Topvisor";
+            /** @constant */
             readonly Enter_domains_one_by_one_or: "Enter domains one by one or";
             /** @constant */
             readonly Enter_domain: "Enter domain";
@@ -247,6 +255,8 @@ export interface components {
             /** @constant */
             readonly Transfer_request_already_added: "Transfer request already added";
             /** @constant */
+            readonly This_domain_not_supported_by_us?: "This domain is not supported by Topvisor";
+            /** @constant */
             readonly Domain_admin_not_found: "Domain administrator not found";
             /** @constant */
             readonly Transfer_not_available_try_later: "Transfer is not available. Please, try later.";
@@ -256,6 +266,8 @@ export interface components {
             readonly Admin_details_not_match: "Personal details of administrators do not match";
             /** @constant */
             readonly Error_in_admin_card_contact_support: "Error in admin card occurred. Contact support.";
+            /** @constant */
+            readonly Topvisor_free_DNS_servers?: "Topvisor free DNS servers";
             /** @constant */
             readonly CNS_Settings: "CNS Settings";
             /** @constant */

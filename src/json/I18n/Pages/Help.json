@@ -10,6 +10,10 @@
             "I18n.Pages.Help": {
                 "type": "object",
                 "properties": {
+                    "Intro": {
+                        "const": "Detailed guides on setting up all Topvisor tools. Tips and advice that will make your workflow efficient to the max.",
+                        "readOnly": true
+                    },
                     "Contact_title": {
                         "const": "Got any questions? Contact us",
                         "readOnly": true

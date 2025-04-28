@@ -13,6 +13,8 @@ export interface components {
             /** @constant */
             readonly Type_news: "Sevice news";
             /** @constant */
+            readonly Type_academy?: "Topvisor-Academy";
+            /** @constant */
             readonly Type_tickets: "Tickets";
             /** @constant */
             readonly Type_yandex_update: "Yandex update";
@@ -20,6 +22,8 @@ export interface components {
             readonly Type_comments: "New comment alerts";
             /** @constant */
             readonly Type_api: "API updates";
+            /** @constant */
+            readonly Type_journal?: "Topvisor–Journal";
             /** @constant */
             readonly Unsubscribe: "Unsubscribe";
             /** @constant */

@@ -36,6 +36,8 @@ export interface components {
             readonly Sort_date_asc: "By date from oldest to newest";
             /** @constant */
             readonly Sort_date_desc: "By date from newest to oldest";
+            /** @constant */
+            readonly Limit_exceeded?: "Free URL Shortener limit reached! To use free URL Shortener, top up your balance within a year. You can use funds on your balance to pay for any Topvisor tools and features.";
         };
     };
     responses: never;

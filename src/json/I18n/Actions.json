@@ -53,6 +53,14 @@
                     "Informer_unsubscribe_api": {
                         "const": "unsubscribe from API updates",
                         "readOnly": true
+                    },
+                    "Informer_unsubscribe_journal": {
+                        "const": "unsubscribe from Topvisor–Journal",
+                        "readOnly": true
+                    },
+                    "Informer_unsubscribe_academy_news": {
+                        "const": "unsubscribe from Topvisor-academy news",
+                        "readOnly": true
                     }
                 },
                 "required": [

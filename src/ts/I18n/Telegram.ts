@@ -15,6 +15,10 @@ export interface components {
             /** @constant */
             readonly Panel_disable_notifications: "Turn off notifications";
             /** @constant */
+            readonly Panel_pair_account?: "Link Topvisor account";
+            /** @constant */
+            readonly Panel_unpair_account?: "Remove Topvisor account";
+            /** @constant */
             readonly Panel_get_short_link: "Create short link";
             /** @constant */
             readonly Panel_back: "Back";
@@ -47,6 +51,10 @@ export interface components {
             /** @constant */
             readonly Message_available_commands_stop: "Turn off notifications";
             /** @constant */
+            readonly Message_available_commands_pair?: "Link Topvisor account";
+            /** @constant */
+            readonly Message_available_commands_unpair?: "Remove Topvisor account";
+            /** @constant */
             readonly Message_available_commands_tpvsr: "Create short link";
             /** @constant */
             readonly Message_start_text1: "Hi! I can send your questions to Customer Support and get replies.";
@@ -61,6 +69,10 @@ export interface components {
             /** @constant */
             readonly Message_pair_done2: "To remove account, type /unpair";
             /** @constant */
+            readonly Message_pair_authorize1?: "Sign in to Topvisor and click the <a href=\"https://topvisor.com/income/telegram/join/";
+            /** @constant */
+            readonly Message_pair_authorize2?: "\">ссылке</a> to link your Telegram to the Topvisor account";
+            /** @constant */
             readonly Message_unpair: "Account removed.";
             /** @constant */
             readonly Message_tpvsr: "Send me a URL to shorten.";
@@ -71,9 +83,17 @@ export interface components {
             /** @constant */
             readonly Message_tpvsr_cancel_done: "Link shortening canceled.";
             /** @constant */
+            readonly Message_join_authorize?: "Sign in to Topvisor and try to link your account again.";
+            /** @constant */
             readonly Message_join_done1: "Account";
             /** @constant */
             readonly Message_join_done2: "successfully linked.";
+            /** @constant */
+            readonly Message_check_journal_subscription?: "You are in the library of useful content from Topvisor-Journal. Checkin you library card 🧐";
+            /** @constant */
+            readonly Message_not_subscribed?: "It seems you are not reading the Topvisor-Journal channel yet 😳🕶🤏\nSubscribe to get a bunch of useful things 🔥";
+            /** @constant */
+            readonly Message_subscribed?: "You are already reading the Topvisor-Journal channel. Access is open 😎\nDon’t unsubscribe - we are constantly adding useful materials ✍️";
         };
     };
     responses: never;

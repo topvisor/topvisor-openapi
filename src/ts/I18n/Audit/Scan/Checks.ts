@@ -233,6 +233,13 @@ export interface components {
                 resolve: "Check if there is lang attribute in the page source code and fill it in. If there's text on different languages on a page, you can indicate lang for each language.";
             };
             /** @constant */
+            readonly pages_check_schema_exists?: {
+                title: "Structured data found";
+                title_negative: "Structured data not found";
+                description: "Structured data (or semantic markup) helps to boost a page's relevance by target keywords, make more clickable snippets and adapt content for different devices.\n\t\tTopvisor checks for RDFa, JSON-LD and Microdata markups.";
+                resolve: "Check pages' source code, add schema markup the format that fits your website, and then its properties (e.g. address and contacts).";
+            };
+            /** @constant */
             readonly pages_check_fcp_max: {
                 title: "Good FCP (First Contentful Paint)";
                 title_negative: "Poor FCP (First Contentful Paint)";
@@ -287,6 +294,13 @@ export interface components {
                 title_negative: "Poor TTFB (Time to First Byte)";
                 description: "TTFB (Time To First Byte) is the time from when a browser sends a request to when the first byte of a response from the server arrives. TTFB should be <500 ms.\n\t\tLong server response time negatively affects page rankings and user experience.";
                 resolve: "TTFB depends on many factors such as website caching, database optimization and server performance. To improve TTFB check technical performance of the website.";
+            };
+            /** @constant */
+            readonly pages_check_compression_exists?: {
+                title: "Compression found (Content-Encoding)";
+                title_negative: "Compression not found (Content-Encoding)";
+                description: "When you compress a page and its content it reduces its weight — and therefore the loadtime. The longer a page loads, the more negatively it affects rankings and user experience.\n\t\tTopvisor checks compression by Content-Encoding header — it contains a list of page's encodings and their loading order.";
+                resolve: "Check if there's a Content-Encoding header in pages' response headers.";
             };
             /** @constant */
             readonly pages_check_og_title_exists: {
@@ -478,6 +492,13 @@ export interface components {
                 resolve: "TTFB depends on many factors such as website caching, database optimization and server performance. To improve TTFB check technical performance of the website.";
             };
             /** @constant */
+            readonly css_check_compression_exists?: {
+                title: "Compression found (Content-Encoding)";
+                title_negative: "Compression not found (Content-Encoding)";
+                description: "When you compress page resources it reduces its weight — and therefore the loadtime. The longer a page loads, the more negatively it affects rankings and user experience. Topvisor checks compression by Content-Encoding header — it contains a list of page's encodings and their loading order.";
+                resolve: "Check if there's a Content-Encoding header in pages' response headers.";
+            };
+            /** @constant */
             readonly css_check_cacheable: {
                 title: "Browser caching";
                 title_negative: "No browser caching";
@@ -525,6 +546,13 @@ export interface components {
                 title_negative: "Poor TTFB (Time to First Byte)";
                 description: "TTFB (Time To First Byte) is the time from when a browser sends a request to when the first byte of a response from the server arrives. TTFB should be <500 ms. Long server response time negatively affects user experience — they may not wait for the page to open correctly while resources are loading and leave the page.";
                 resolve: "TTFB depends on many factors such as website caching, database optimization and server performance. To improve TTFB check technical performance of the website.";
+            };
+            /** @constant */
+            readonly js_check_compression_exists?: {
+                title: "Compression found (Content-Encoding)";
+                title_negative: "Compression not found (Content-Encoding)";
+                description: "When you compress page resources it reduces its weight — and therefore the loadtime. The longer a page loads, the more negatively it affects rankings and user experience. Topvisor checks compression by Content-Encoding header — it contains a list of page's encodings and their loading order.";
+                resolve: "Check if there's a Content-Encoding header in pages' response headers.";
             };
             /** @constant */
             readonly js_check_cacheable: {

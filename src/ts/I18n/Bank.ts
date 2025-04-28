@@ -19,6 +19,8 @@ export interface components {
             /** @constant */
             readonly Not_enough_balance: "Insufficient balance in your account!";
             /** @constant */
+            readonly Refill?: "Balance replenishment in Topvisor";
+            /** @constant */
             readonly Bonus_refill: "Bonus for balance top-up";
             /** @constant */
             readonly Mail_address: "Address";
@@ -40,6 +42,10 @@ export interface components {
             readonly dogovor: "contract";
             /** @constant */
             readonly by_dogovor: "under agreement";
+            /** @constant */
+            readonly Info_bonus?: "Topvisor bonus credit";
+            /** @constant */
+            readonly Info_system_cash?: "Topvisor bonus credit";
             /** @constant */
             readonly Info_system_withdrawal: "Withdrawal to system account";
             /** @constant */
@@ -110,6 +116,8 @@ export interface components {
             readonly Referrals_withdrawal_available_from_amount_notice: "You can withdraw the amount from 5 000 rubles";
             /** @constant */
             readonly Referrals_link_to_EDF_setup_instruction: "What is EDF, how can I use it?";
+            /** @constant */
+            readonly Referrals_send_documents_to_get_payout_comment?: "Send downloaded documents to Topvisor Co., Ltd (Tax ID 4726000897) via e-document workflow. We will make a payout within a working day.";
             /** @constant */
             readonly Referrals_visits: "Visits";
             /** @constant */
@@ -229,6 +237,14 @@ export interface components {
             /** @constant */
             readonly Payments_willbe_made_in_currency: "Payments will be accepted in the following currency";
             /** @constant */
+            readonly Name_payment?: "Topvisor Software - Payment TV-%paymentId%";
+            /** @constant */
+            readonly Name_payment_tariff?: "Topvisor Software 1-Month Subscription %tariffName% plan - Payment TV-%paymentId%";
+            /** @constant */
+            readonly Name_payment_short?: "Topvisor Software TV-%paymentId%";
+            /** @constant */
+            readonly Name_payment_tariff_short?: "Topvisor Software 1-Month %tariffName% plan TV-%paymentId%";
+            /** @constant */
             readonly Name_payment_log: "Credit%systemType% - Payment TV-%paymentId% via \"%systemName%\"%contractInfo%";
             /** @constant */
             readonly Name_payment_log_tariff: "1-Month Subscription %tariffName% - plan - Payment TV-%paymentId% via \"%systemName%\"%contractInfo%";
@@ -284,6 +300,8 @@ export interface components {
             readonly for_1_month_on_pricing_plan: "for 1 month on the pricing plan";
             /** @constant */
             readonly TV: "TV-";
+            /** @constant */
+            readonly Grant_right_to_use_Topvisor?: "Right to use Topvisor software under contract";
             /** @constant */
             readonly Mentioned_services_completed_in_full_notice: "The services mentioned above have been completed in full and on time. The customer does not have any concerns regarding volume, quality, and delivery timing.";
             /** @constant */
@@ -349,6 +367,10 @@ export interface components {
             /** @constant */
             readonly Top_up_balance_with: "Top up balance by";
             /** @constant */
+            readonly Topvisor_soft_account_topup?: "Top up Topvisor account";
+            /** @constant */
+            readonly Subscribe_Topvisor_plan?: "Subscribe to Topvisor plan";
+            /** @constant */
             readonly Amount_from: "Minimum amount";
             /** @constant */
             readonly Subscribe_for_period: "Subscribe for";
@@ -374,6 +396,8 @@ export interface components {
             readonly Edit_admin_card: "Edit administrator card";
             /** @constant */
             readonly Save_bank_details: "Save bank details";
+            /** @constant */
+            readonly Discount_active_after_payment_plan_autorenewed_notice?: "Discount for Topvisor software will be activated after your payment is credited to the Pricing plan balance account. A selected plan is renewed automatically. The Pricing plan balance gets zeroed out in the end of each month.";
             /** @constant */
             readonly for_1_month: "for 1 month";
             /** @constant */
@@ -404,6 +428,8 @@ export interface components {
             readonly Tinkoff_business_e_account: "T-Business (e-account)";
             /** @constant */
             readonly Get_invoice_via_Diadoc: "Get invoice via e-doc";
+            /** @constant */
+            readonly to_Topvisor_balance?: "to Topvisor balance";
             /** @constant */
             readonly Register_in_Tinkoff_business: "Create a T-Business account";
             /** @constant */

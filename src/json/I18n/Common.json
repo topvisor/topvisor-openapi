@@ -262,6 +262,10 @@
                         "const": "of project",
                         "readOnly": true
                     },
+                    "Tool_digest": {
+                        "const": "Google Year at Topvisor",
+                        "readOnly": true
+                    },
                     "Ticket": {
                         "const": "Ticket",
                         "readOnly": true
@@ -784,6 +788,14 @@
                     },
                     "Device_122": {
                         "const": "AdsBot-Google-Mobile",
+                        "readOnly": true
+                    },
+                    "Device_200": {
+                        "const": "TopvisorBot",
+                        "readOnly": true
+                    },
+                    "Device_202": {
+                        "const": "TopvisorBot (mobile)",
                         "readOnly": true
                     },
                     "Tag": {

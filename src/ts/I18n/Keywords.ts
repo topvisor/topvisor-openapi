@@ -107,6 +107,8 @@ export interface components {
             /** @constant */
             readonly Positions_check_with_snippets: "Keyword ranking and snippets report for";
             /** @constant */
+            readonly Project_has_no_tasks?: "Add keywords: <a href=\"/project/keywords/%projectId%\">https://topvisor.com/project/keywords/%projectId%</a>. Add search engines and locations: <a href=\"/project/settings/%projectId%\">https://topvisor.com/project/settings/%projectId%</a>";
+            /** @constant */
             readonly Keyword_ranking_already_started: "Keyword ranking already started";
             /** @constant */
             readonly Not_enough_balance_for_check_positions: "You do not have enough funds in your account to track keyword rankings";

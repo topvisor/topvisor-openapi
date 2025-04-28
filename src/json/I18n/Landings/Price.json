@@ -61,6 +61,14 @@
                     "Account": {
                         "const": "Account",
                         "readOnly": true
+                    },
+                    "No_discount_on_tools": {
+                        "const": "No discount on Topvisor tools",
+                        "readOnly": true
+                    },
+                    "On_all_tools": {
+                        "const": "on Topvisor tools",
+                        "readOnly": true
                     }
                 },
                 "required": [

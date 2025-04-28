@@ -30,6 +30,10 @@ export interface components {
             readonly Informer_unsubscribe_comments: "unsubscribe from new comments";
             /** @constant */
             readonly Informer_unsubscribe_api: "unsubscribe from API updates";
+            /** @constant */
+            readonly Informer_unsubscribe_journal?: "unsubscribe from Topvisor–Journal";
+            /** @constant */
+            readonly Informer_unsubscribe_academy_news?: "unsubscribe from Topvisor-academy news";
         };
     };
     responses: never;

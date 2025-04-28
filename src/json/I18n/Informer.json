@@ -18,6 +18,10 @@
                         "const": "Sevice news",
                         "readOnly": true
                     },
+                    "Type_academy": {
+                        "const": "Topvisor-Academy",
+                        "readOnly": true
+                    },
                     "Type_tickets": {
                         "const": "Tickets",
                         "readOnly": true
@@ -32,6 +36,10 @@
                     },
                     "Type_api": {
                         "const": "API updates",
+                        "readOnly": true
+                    },
+                    "Type_journal": {
+                        "const": "Topvisor–Journal",
                         "readOnly": true
                     },
                     "Unsubscribe": {

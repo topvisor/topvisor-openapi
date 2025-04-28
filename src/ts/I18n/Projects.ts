@@ -55,6 +55,8 @@ export interface components {
             /** @constant */
             readonly Searcher_not_found: "Search engine not found";
             /** @constant */
+            readonly Delegating_impossible2?: "You cannot give this user access to the project: currency in your accounts should be the same.\nAccount currency can be changed before the first payment with this instruction: https://topvisor.com/support/bank/currency/";
+            /** @constant */
             readonly You_are_owner: "You are the project owner already";
             /** @constant */
             readonly Add_to_favorites: "Add to favorites";
@@ -438,6 +440,8 @@ export interface components {
             readonly Project_projects_selected: "Selected";
             /** @constant */
             readonly Create_your_first_project: "Create your first project";
+            /** @constant */
+            readonly Topvisor_general_info_tip?: "9 tools for SEO and marketing.<br>Check keyword rankings, research keywords, track changes to webpages and much more.";
             /** @constant */
             readonly No_projects_match_filter: "No projects match filter";
             /** @constant */

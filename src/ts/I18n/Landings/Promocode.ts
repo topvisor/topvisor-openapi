@@ -9,9 +9,13 @@ export interface components {
     schemas: {
         "I18n.Landings.Promocode": {
             /** @constant */
+            readonly Title?: "Enter promocode to get bonus - Topvisor";
+            /** @constant */
             readonly Description: "Here you can enter a promocode and get a bonus. You can get a promocode via mailing, social networks or in person on conferences where we take part.";
             /** @constant */
             readonly OpenGraph_title: "Enter promocode";
+            /** @constant */
+            readonly OpenGraph_description?: "And get bonus on Topvisor";
             /** @constant */
             readonly Enter_promocode: "Enter promocode";
             /** @constant */

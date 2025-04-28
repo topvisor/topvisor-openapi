@@ -34,6 +34,10 @@ export interface components {
             readonly Yandex_direct: "Yandex Direct";
             /** @constant */
             readonly Account: "Account";
+            /** @constant */
+            readonly No_discount_on_tools?: "No discount on Topvisor tools";
+            /** @constant */
+            readonly On_all_tools?: "on Topvisor tools";
         };
     };
     responses: never;

@@ -102,6 +102,10 @@
                         "const": "Search engine not found",
                         "readOnly": true
                     },
+                    "Delegating_impossible2": {
+                        "const": "You cannot give this user access to the project: currency in your accounts should be the same.\nAccount currency can be changed before the first payment with this instruction: https://topvisor.com/support/bank/currency/",
+                        "readOnly": true
+                    },
                     "You_are_owner": {
                         "const": "You are the project owner already",
                         "readOnly": true
@@ -868,6 +872,10 @@
                     },
                     "Create_your_first_project": {
                         "const": "Create your first project",
+                        "readOnly": true
+                    },
+                    "Topvisor_general_info_tip": {
+                        "const": "9 tools for SEO and marketing.<br>Check keyword rankings, research keywords, track changes to webpages and much more.",
                         "readOnly": true
                     },
                     "No_projects_match_filter": {

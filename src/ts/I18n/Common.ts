@@ -135,6 +135,8 @@ export interface components {
             /** @constant */
             readonly of_project: "of project";
             /** @constant */
+            readonly Tool_digest?: "Google Year at Topvisor";
+            /** @constant */
             readonly Ticket: "Ticket";
             /** @constant */
             readonly Tickets: "Tickets";
@@ -396,6 +398,10 @@ export interface components {
             readonly Device_120: "AdsBot-Google";
             /** @constant */
             readonly Device_122: "AdsBot-Google-Mobile";
+            /** @constant */
+            readonly Device_200?: "TopvisorBot";
+            /** @constant */
+            readonly Device_202?: "TopvisorBot (mobile)";
             /** @constant */
             readonly Tag: "Tag";
             /** @constant */

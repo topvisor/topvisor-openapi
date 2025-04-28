@@ -430,12 +430,28 @@
                         "const": "You lost the \"SEO Chat member\" achievement",
                         "readOnly": true
                     },
+                    "Rank_topvisor_deactivate_title": {
+                        "const": "😢 You lost the \"Telegram's subscriber\" achievement",
+                        "readOnly": true
+                    },
                     "Rank_ppcchat_activate_title": {
                         "const": "You received the \"PPC Chat member\" achievement!",
                         "readOnly": true
                     },
                     "Rank_seochat_activate_title": {
                         "const": "You received the \"SEO Chat member\" achievement!",
+                        "readOnly": true
+                    },
+                    "Rank_topvisor_activate_title": {
+                        "const": "🎉 You received the \"Telegram's subscriber\" achievement!",
+                        "readOnly": true
+                    },
+                    "Ranks_link_twitter": {
+                        "const": "Link your Twitter account to Topvisor",
+                        "readOnly": true
+                    },
+                    "Ranks_follow_twitter": {
+                        "const": "Follow the official Topvisor account ",
                         "readOnly": true
                     },
                     "Ranks_retweet": {
@@ -698,6 +714,10 @@
                         "const": "Short links",
                         "readOnly": true
                     },
+                    "Shortener_url_shortener": {
+                        "const": "Topvisor URL Shortener: customize, share and track your links!",
+                        "readOnly": true
+                    },
                     "Shortener_add_url_here": {
                         "const": "Paste URL http://... and press Enter",
                         "readOnly": true
@@ -830,6 +850,10 @@
                         "const": "Import",
                         "readOnly": true
                     },
+                    "Import_to_Topvisor": {
+                        "const": "Import",
+                        "readOnly": true
+                    },
                     "Projects_to_import": {
                         "const": "Projects to import",
                         "readOnly": true
@@ -948,6 +972,10 @@
                     },
                     "User_info": {
                         "const": "User info",
+                        "readOnly": true
+                    },
+                    "Type_journal": {
+                        "const": "Topvisor–Journal",
                         "readOnly": true
                     },
                     "Profile_url": {

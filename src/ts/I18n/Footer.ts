@@ -59,6 +59,8 @@ export interface components {
             /** @constant */
             readonly Apometr_tool: "Updates Scanner";
             /** @constant */
+            readonly Apometr_tool_Thundo?: "ThundoStorm (Google Updates)";
+            /** @constant */
             readonly Reference: "Reference";
             /** @constant */
             readonly API: "API Documentation";
@@ -66,6 +68,8 @@ export interface components {
             readonly Referrals: "Affiliate program";
             /** @constant */
             readonly Pricing: "Tools and prices";
+            /** @constant */
+            readonly Jobs?: "Work in Topvisor";
             /** @constant */
             readonly Sales: "Sales";
             /** @constant */
@@ -152,6 +156,10 @@ export interface components {
             readonly Install_for: "Install for";
             /** @constant */
             readonly Email_us_contact: "We are eager to help! Email us";
+            /** @constant */
+            readonly Topvisor_Ltd?: "Topvisor Ltd.";
+            /** @constant */
+            readonly Thundo_Ltd?: "Thundo Ltd.";
         };
     };
     responses: never;

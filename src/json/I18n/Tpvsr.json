@@ -65,6 +65,10 @@
                     "Sort_date_desc": {
                         "const": "By date from newest to oldest",
                         "readOnly": true
+                    },
+                    "Limit_exceeded": {
+                        "const": "Free URL Shortener limit reached! To use free URL Shortener, top up your balance within a year. You can use funds on your balance to pay for any Topvisor tools and features.",
+                        "readOnly": true
                     }
                 },
                 "required": [

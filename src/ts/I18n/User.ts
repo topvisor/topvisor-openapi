@@ -219,9 +219,17 @@ export interface components {
             /** @constant */
             readonly Rank_seochat_deactivate_title: "You lost the \"SEO Chat member\" achievement";
             /** @constant */
+            readonly Rank_topvisor_deactivate_title?: "😢 You lost the \"Telegram's subscriber\" achievement";
+            /** @constant */
             readonly Rank_ppcchat_activate_title: "You received the \"PPC Chat member\" achievement!";
             /** @constant */
             readonly Rank_seochat_activate_title: "You received the \"SEO Chat member\" achievement!";
+            /** @constant */
+            readonly Rank_topvisor_activate_title?: "🎉 You received the \"Telegram's subscriber\" achievement!";
+            /** @constant */
+            readonly Ranks_link_twitter?: "Link your Twitter account to Topvisor";
+            /** @constant */
+            readonly Ranks_follow_twitter?: "Follow the official Topvisor account ";
             /** @constant */
             readonly Ranks_retweet: "Retweet ";
             /** @constant */
@@ -353,6 +361,8 @@ export interface components {
             /** @constant */
             readonly Shortener_short_links: "Short links";
             /** @constant */
+            readonly Shortener_url_shortener?: "Topvisor URL Shortener: customize, share and track your links!";
+            /** @constant */
             readonly Shortener_add_url_here: "Paste URL http://... and press Enter";
             /** @constant */
             readonly Shortener_search_url: "Search URL...";
@@ -419,6 +429,8 @@ export interface components {
             /** @constant */
             readonly Import: "Import";
             /** @constant */
+            readonly Import_to_Topvisor?: "Import";
+            /** @constant */
             readonly Projects_to_import: "Projects to import";
             /** @constant */
             readonly Project_name: "Project name";
@@ -478,6 +490,8 @@ export interface components {
             readonly Change_currency_guest_projects_notice: "Please note that you should remove all guest projects from your account to change the currency. The access to the projects can only be shared between accounts with the same currency.";
             /** @constant */
             readonly User_info: "User info";
+            /** @constant */
+            readonly Type_journal?: "Topvisor–Journal";
             /** @constant */
             readonly Profile_url: "Profile URL";
             /** @constant */
