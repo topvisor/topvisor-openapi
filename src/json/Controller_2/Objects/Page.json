@@ -107,6 +107,16 @@
                         "default": "regular",
                         "type": "string"
                     },
+                    "topPanelStyling": {
+                        "title": "Стиль шапки",
+                        "default": "default",
+                        "type": "string"
+                    },
+                    "topPanelSeparation": {
+                        "title": "Разделитель шапки",
+                        "default": "default",
+                        "type": "string"
+                    },
                     "jsonLDs": {
                         "type": "array",
                         "items": {
@@ -231,6 +241,8 @@
                     "mod",
                     "subMod",
                     "theme",
+                    "topPanelStyling",
+                    "topPanelSeparation",
                     "jsonLDs",
                     "htmlAttributes",
                     "logo",

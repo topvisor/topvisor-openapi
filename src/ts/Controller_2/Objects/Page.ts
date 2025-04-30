@@ -25,6 +25,16 @@ export interface components {
             subMod: string;
             /** @default regular */
             theme: string;
+            /**
+             * Стиль шапки
+             * @default default
+             */
+            topPanelStyling: string;
+            /**
+             * Разделитель шапки
+             * @default default
+             */
+            topPanelSeparation: string;
             jsonLDs: (string | number)[];
             htmlAttributes: (string | number)[];
             logo: string;
