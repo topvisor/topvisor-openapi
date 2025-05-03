@@ -9,9 +9,9 @@ export interface components {
     schemas: {
         /**
          * Назначение списания/пополнения в банке
-         * @enum {integer}
+         * @enum {string}
          */
-        "Bank_2.Types.Target": 7 | 9 | 10 | 8 | 5 | 3 | 2 | 19 | 6 | 17 | 11 | 18 | 12 | 0 | 1 | 15 | 4;
+        "Bank_2.Types.Target": "auditAudit" | "auditIndexing" | "auditSitemap" | "auditWatcher" | "broker" | "checkVolumes" | "checkPositions" | "checkSnapshots" | "claster" | "competitors" | "export" | "holdAudit" | "mentions" | "system" | "webScreens" | "wordstat";
     };
     responses: never;
     parameters: never;
