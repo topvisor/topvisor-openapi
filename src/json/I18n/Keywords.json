@@ -134,10 +134,6 @@
                         "const": "Project export for",
                         "readOnly": true
                     },
-                    "Export_Balance_notify": {
-                        "const": "Cannot prepare export. There are not enough funds in your account.",
-                        "readOnly": true
-                    },
                     "Export_HTML_comparison_not_available": {
                         "const": "html comparison is not available yet",
                         "readOnly": true
@@ -1247,7 +1243,6 @@
                     "Group_changing_denied",
                     "Filtered_group",
                     "Export_dynamics_by_date",
-                    "Export_Balance_notify",
                     "Export_HTML_comparison_not_available",
                     "Reports_unsubscribing1",
                     "Reports_unsubscribing2",

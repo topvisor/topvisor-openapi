@@ -71,8 +71,6 @@ export interface components {
             /** @constant */
             readonly Export_dynamics_by_date: "Project export for";
             /** @constant */
-            readonly Export_Balance_notify: "Cannot prepare export. There are not enough funds in your account.";
-            /** @constant */
             readonly Export_HTML_comparison_not_available: "html comparison is not available yet";
             /** @constant */
             readonly Reports_unsubscribing1: "Unsubscribe ";
