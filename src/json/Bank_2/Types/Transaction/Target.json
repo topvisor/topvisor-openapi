@@ -10,7 +10,7 @@
             "Bank_2.Types.Transaction.Target": {
                 "type": "string",
                 "enum": [
-                    "auditAudit",
+                    "audit",
                     "auditIndexing",
                     "auditSitemap",
                     "auditWatcher",
