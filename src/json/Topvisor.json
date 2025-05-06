@@ -17705,7 +17705,7 @@
                                                                 "$ref": "Models/Projects.json#/components/schemas/Models.Projects",
                                                                 "description": "Only for typescript, does not contain real data"
                                                             },
-                                                            "title": "@return array{pricesByUsers: array<int, array{projectsIds: int[], price: float}>} \n\n```\n{\n    \"pricesByUsers\": {\n            \"{{userId}}\": {\n                \"projectsIds\": [],\n                \"price\": float,\n                \"priceOriginal\": float\n            }\n    }\n }\n```\n\n@throws Exception"
+                                                            "title": "@return array{pricesByUsers: array<int, array{projectsIds: int[], price: float, priceOriginal: float}>}\n@throws Exception"
                                                         }
                                                     },
                                                     "required": [
@@ -18059,7 +18059,7 @@
                                                                     }
                                                                 ]
                                                             },
-                                                            "title": "Результаты анализа страницы\n```\n{\n       \"result\": {\n           'page_in_filter': bool,\n           'index': => int,\n           'snippet': => string,\n           'content': => string\n       }\n}\n```"
+                                                            "title": "@return array{result: array{page_in_filter: bool, index: int, snippet: string, content: string}}\n@throws Exception"
                                                         }
                                                     },
                                                     "required": [
@@ -18186,7 +18186,7 @@
                                                                 "$ref": "Models/Projects.json#/components/schemas/Models.Projects",
                                                                 "description": "Only for typescript, does not contain real data"
                                                             },
-                                                            "title": "@return array{pricesByUsers: array<int, array{projectsIds: int[], price: float}>} \n\n```\n{\n   \"pricesByUsers\": {\n       \"{{userId}}\": {\n           \"projectsIds\": [],\n           \"price\": float\n       }\n   }\n}\n```\n\n@throws Exception"
+                                                            "title": "@return array{pricesByUsers: array<int, array{projectsIds: int[], price: float}>}\n@throws Exception"
                                                         }
                                                     },
                                                     "required": [
@@ -18474,7 +18474,7 @@
                                                                 "$ref": "Models/Projects.json#/components/schemas/Models.Projects",
                                                                 "description": "Only for typescript, does not contain real data"
                                                             },
-                                                            "title": "@return array{pricesByUsers: array<int, array{projectsIds: int[], price: float}>} \n\n```\n{\n   \"pricesByUsers\": {\n       \"{{userId}}\": {\n           \"projectsIds\": [],\n           \"price\": float\n       }\n   }\n}\n```\n\n@throws Exception"
+                                                            "title": "@return array{pricesByUsers: array<int, array{projectsIds: int[], price: float}>}\n@throws Exception"
                                                         }
                                                     },
                                                     "required": [
@@ -18602,7 +18602,7 @@
                                                                 "$ref": "Models/Projects.json#/components/schemas/Models.Projects",
                                                                 "description": "Only for typescript, does not contain real data"
                                                             },
-                                                            "title": "@return array{pricesByUsers: array<int, array{projectsIds: int[], price: float}>} \n\n```\n{\n   \"pricesByUsers\": {\n       \"{{userId}}\": {\n           \"projectsIds\": [],\n           \"price\": float\n       }\n   }\n}\n```\n\n@throws Exception"
+                                                            "title": "@return array{pricesByUsers: array<int, array{projectsIds: int[], price: float}>}\n@throws Exception"
                                                         }
                                                     },
                                                     "required": [

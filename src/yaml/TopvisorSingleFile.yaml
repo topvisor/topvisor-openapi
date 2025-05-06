@@ -9748,20 +9748,7 @@ paths:
                               $ref: '#/components/schemas/Models.Projects'
                               description: Only for typescript, does not contain real data
                             title: |-
-                              @return array{pricesByUsers: array<int, array{projectsIds: int[], price: float}>} 
-
-                              ```
-                              {
-                                  "pricesByUsers": {
-                                          "{{userId}}": {
-                                              "projectsIds": [],
-                                              "price": float,
-                                              "priceOriginal": float
-                                          }
-                                  }
-                               }
-                              ```
-
+                              @return array{pricesByUsers: array<int, array{projectsIds: int[], price: float, priceOriginal: float}>}
                               @throws Exception
                         required:
                           - result
@@ -9959,17 +9946,8 @@ paths:
                                 - type: string
                                 - type: number
                             title: |-
-                              Результаты анализа страницы
-                              ```
-                              {
-                                     "result": {
-                                         'page_in_filter': bool,
-                                         'index': => int,
-                                         'snippet': => string,
-                                         'content': => string
-                                     }
-                              }
-                              ```
+                              @return array{result: array{page_in_filter: bool, index: int, snippet: string, content: string}}
+                              @throws Exception
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
@@ -10044,19 +10022,7 @@ paths:
                               $ref: '#/components/schemas/Models.Projects'
                               description: Only for typescript, does not contain real data
                             title: |-
-                              @return array{pricesByUsers: array<int, array{projectsIds: int[], price: float}>} 
-
-                              ```
-                              {
-                                 "pricesByUsers": {
-                                     "{{userId}}": {
-                                         "projectsIds": [],
-                                         "price": float
-                                     }
-                                 }
-                              }
-                              ```
-
+                              @return array{pricesByUsers: array<int, array{projectsIds: int[], price: float}>}
                               @throws Exception
                         required:
                           - result
@@ -10224,19 +10190,7 @@ paths:
                               $ref: '#/components/schemas/Models.Projects'
                               description: Only for typescript, does not contain real data
                             title: |-
-                              @return array{pricesByUsers: array<int, array{projectsIds: int[], price: float}>} 
-
-                              ```
-                              {
-                                 "pricesByUsers": {
-                                     "{{userId}}": {
-                                         "projectsIds": [],
-                                         "price": float
-                                     }
-                                 }
-                              }
-                              ```
-
+                              @return array{pricesByUsers: array<int, array{projectsIds: int[], price: float}>}
                               @throws Exception
                         required:
                           - result
@@ -10313,19 +10267,7 @@ paths:
                               $ref: '#/components/schemas/Models.Projects'
                               description: Only for typescript, does not contain real data
                             title: |-
-                              @return array{pricesByUsers: array<int, array{projectsIds: int[], price: float}>} 
-
-                              ```
-                              {
-                                 "pricesByUsers": {
-                                     "{{userId}}": {
-                                         "projectsIds": [],
-                                         "price": float
-                                     }
-                                 }
-                              }
-                              ```
-
+                              @return array{pricesByUsers: array<int, array{projectsIds: int[], price: float}>}
                               @throws Exception
                         required:
                           - result

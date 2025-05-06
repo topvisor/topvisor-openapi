@@ -13403,20 +13403,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        /** @return array{pricesByUsers: array<int, array{projectsIds: int[], price: float}>}
-                         *
-                         *     ```
-                         *     {
-                         *         "pricesByUsers": {
-                         *                 "{{userId}}": {
-                         *                     "projectsIds": [],
-                         *                     "price": float,
-                         *                     "priceOriginal": float
-                         *                 }
-                         *         }
-                         *      }
-                         *     ```
-                         *
+                        /** @return array{pricesByUsers: array<int, array{projectsIds: int[], price: float, priceOriginal: float}>}
                          *     @throws Exception */
                         result: import('./Models/Projects.ts').components['schemas']['Models.Projects'][];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
@@ -13578,17 +13565,8 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        /** Результаты анализа страницы
-                         *     ```
-                         *     {
-                         *            "result": {
-                         *                'page_in_filter': bool,
-                         *                'index': => int,
-                         *                'snippet': => string,
-                         *                'content': => string
-                         *            }
-                         *     }
-                         *     ``` */
+                        /** @return array{result: array{page_in_filter: bool, index: int, snippet: string, content: string}}
+                         *     @throws Exception */
                         result: (string | number)[];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
@@ -13645,18 +13623,6 @@ export interface operations {
                 content: {
                     "application/json": ({
                         /** @return array{pricesByUsers: array<int, array{projectsIds: int[], price: float}>}
-                         *
-                         *     ```
-                         *     {
-                         *        "pricesByUsers": {
-                         *            "{{userId}}": {
-                         *                "projectsIds": [],
-                         *                "price": float
-                         *            }
-                         *        }
-                         *     }
-                         *     ```
-                         *
                          *     @throws Exception */
                         result: import('./Models/Projects.ts').components['schemas']['Models.Projects'][];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
@@ -13792,18 +13758,6 @@ export interface operations {
                 content: {
                     "application/json": ({
                         /** @return array{pricesByUsers: array<int, array{projectsIds: int[], price: float}>}
-                         *
-                         *     ```
-                         *     {
-                         *        "pricesByUsers": {
-                         *            "{{userId}}": {
-                         *                "projectsIds": [],
-                         *                "price": float
-                         *            }
-                         *        }
-                         *     }
-                         *     ```
-                         *
                          *     @throws Exception */
                         result: import('./Models/Projects.ts').components['schemas']['Models.Projects'][];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
@@ -13861,18 +13815,6 @@ export interface operations {
                 content: {
                     "application/json": ({
                         /** @return array{pricesByUsers: array<int, array{projectsIds: int[], price: float}>}
-                         *
-                         *     ```
-                         *     {
-                         *        "pricesByUsers": {
-                         *            "{{userId}}": {
-                         *                "projectsIds": [],
-                         *                "price": float
-                         *            }
-                         *        }
-                         *     }
-                         *     ```
-                         *
                          *     @throws Exception */
                         result: import('./Models/Projects.ts').components['schemas']['Models.Projects'][];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
