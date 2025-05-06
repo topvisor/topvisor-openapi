@@ -831,6 +831,37 @@ paths:
               schema:
                 $ref: '#/components/schemas/Models.Votes'
                 description: Only for typescript, does not contain real data
+  /get/webscreens_2/:
+    post:
+      operationId: GetWebscreens2
+      tags:
+        - Webscreens_2
+      summary: Получение скриншота (платная функция)
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Webscreens_2.Methods.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            type: 'null'
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
   /abstractregular/admin_2/actions/:
     post:
       operationId: AbstractregularAdmin2Actions
@@ -12119,6 +12150,65 @@ components:
         - filters
         - offset
       title: Получение своих отзывов
+    Webscreens_2.Methods.Get:
+      type: object
+      properties:
+        url:
+          allOf:
+            - $ref: '#/components/schemas/TV.API.Types.Url'
+        w:
+          title: Ширина экрна
+          type: integer
+        h:
+          title: Высота экрна
+          type: integer
+        timeout_ms:
+          title: Таймаут, от 1 до 30000
+          default: 1500
+          type: integer
+        full_page:
+          title: |-
+            Cделать ли полноразмерный скриншот страницы
+
+            Параметры clip и full_page нельзя использовать одновременно
+          type: boolean
+        lang:
+          title: Язык браузера, например ru, по умолчанию язык пользователя
+          nullable: true
+          type: string
+        clip_w:
+          title: |-
+            Ширины фрагмента
+
+            Параметры clip и full_page нельзя использовать одновременно
+          nullable: true
+          type: integer
+        clip_h:
+          title: |-
+            Высота фрашгмента
+
+            Параметры clip и full_page нельзя использовать одновременно
+          nullable: true
+          type: integer
+        clip_x:
+          title: |-
+            Координата x фрагмента
+
+            Параметры clip и full_page нельзя использовать одновременно
+          nullable: true
+          type: integer
+        clip_y:
+          title: |-
+            Координата y фрагмента
+
+            Параметры clip и full_page нельзя использовать одновременно
+          nullable: true
+          type: integer
+      required:
+        - url
+        - w
+        - h
+      title: Получение скриншота (платная функция)
     Admin_2.Methods.Actions.AbstractRegular:
       type: object
       properties:

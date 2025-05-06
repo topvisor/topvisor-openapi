@@ -395,6 +395,23 @@ export interface paths {
         head?: never;
         patch?: never;
         trace?: never;
+    };  
+    /** Получение скриншота (платная функция) */
+    "/get/webscreens_2/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["GetWebscreens2"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
     };
     "/abstractregular/admin_2/actions/": {
         parameters: {
@@ -6294,6 +6311,32 @@ export interface operations {
                         result: import('./Models/Votes.ts').components['schemas']['Models.Votes'][];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: import('./Models/Votes.ts').components['schemas']['Models.Votes'];
+                };
+            };
+        };
+    };
+    GetWebscreens2: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Webscreens_2/Methods/Get.ts').components['schemas']['Webscreens_2.Methods.Get'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: null;
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: null;
                 };
             };
         };
