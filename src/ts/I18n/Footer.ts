@@ -81,9 +81,15 @@ export interface components {
             /** @constant */
             readonly Join_vkontakte: "Join us on Vkontakte";
             /** @constant */
-            readonly Join_twitter: "Follow us on Twitter";
+            readonly Join_twitter: "Follow us on X";
             /** @constant */
             readonly Join_telegram: "Telegram channel";
+            /** @constant */
+            readonly Join_facebook: "Follow us on Facebook";
+            /** @constant */
+            readonly Join_instagram: "Follow us on Instagram";
+            /** @constant */
+            readonly Join_threads: "Follow us on Threads";
             /** @constant */
             readonly Join_youtube: "Youtube channel";
             /** @constant */

@@ -155,11 +155,23 @@
                         "readOnly": true
                     },
                     "Join_twitter": {
-                        "const": "Follow us on Twitter",
+                        "const": "Follow us on X",
                         "readOnly": true
                     },
                     "Join_telegram": {
                         "const": "Telegram channel",
+                        "readOnly": true
+                    },
+                    "Join_facebook": {
+                        "const": "Follow us on Facebook",
+                        "readOnly": true
+                    },
+                    "Join_instagram": {
+                        "const": "Follow us on Instagram",
+                        "readOnly": true
+                    },
+                    "Join_threads": {
+                        "const": "Follow us on Threads",
                         "readOnly": true
                     },
                     "Join_youtube": {
@@ -352,6 +364,9 @@
                     "Join_vkontakte",
                     "Join_twitter",
                     "Join_telegram",
+                    "Join_facebook",
+                    "Join_instagram",
+                    "Join_threads",
                     "Join_youtube",
                     "Website_rank_tracker",
                     "Free_rank_checking",
