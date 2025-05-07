@@ -25,7 +25,7 @@ export interface components {
             /** @constant */
             readonly Questions: "Got any questions?";
             /** @constant */
-            readonly Grouping_tool: "Keyword Clustering by Top-10";
+            readonly Grouping_tool: "Keyword Clustering";
             /** @constant */
             readonly Research_tool: "Keyword Research";
             /** @constant */

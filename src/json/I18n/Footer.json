@@ -43,7 +43,7 @@
                         "readOnly": true
                     },
                     "Grouping_tool": {
-                        "const": "Keyword Clustering by Top-10",
+                        "const": "Keyword Clustering",
                         "readOnly": true
                     },
                     "Research_tool": {
