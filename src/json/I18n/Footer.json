@@ -159,7 +159,7 @@
                         "readOnly": true
                     },
                     "Join_telegram": {
-                        "const": "Telegram channel",
+                        "const": "Subscribe to Telegram channel",
                         "readOnly": true
                     },
                     "Join_facebook": {

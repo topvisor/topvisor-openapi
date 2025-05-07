@@ -83,7 +83,7 @@ export interface components {
             /** @constant */
             readonly Join_twitter: "Follow us on X";
             /** @constant */
-            readonly Join_telegram: "Telegram channel";
+            readonly Join_telegram: "Subscribe to Telegram channel";
             /** @constant */
             readonly Join_facebook: "Follow us on Facebook";
             /** @constant */
