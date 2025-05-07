@@ -11,7 +11,7 @@
                 "type": "object",
                 "properties": {
                     "Suggestions_tool": {
-                        "const": "Search Suggestions Tool",
+                        "const": "Search Suggestions",
                         "readOnly": true
                     },
                     "Rank_and_SERP_top_cheking": {
@@ -43,39 +43,39 @@
                         "readOnly": true
                     },
                     "Grouping_tool": {
-                        "const": "Keyword Grouping Tool",
+                        "const": "Keyword Clustering by Top-10",
                         "readOnly": true
                     },
                     "Research_tool": {
-                        "const": "Keyword Research Tool",
+                        "const": "Keyword Research",
                         "readOnly": true
                     },
                     "Site_auditor": {
-                        "const": "Website SEO Audit Tool",
+                        "const": "Website SEO Audit",
                         "readOnly": true
                     },
                     "Site_watcher": {
-                        "const": "Website Watcher (change tracking)",
+                        "const": "Website Watcher (tracking changes)",
                         "readOnly": true
                     },
                     "SERP_snapshots_tool": {
-                        "const": "SERP Snapshots Tool",
+                        "const": "SERP Top Checker",
                         "readOnly": true
                     },
                     "Index_checker_tool": {
-                        "const": "Index Status checker",
+                        "const": "Index Status Checker",
                         "readOnly": true
                     },
                     "Search_volume_tool": {
-                        "const": "Search Volume Tool",
+                        "const": "Search Volume Checker",
                         "readOnly": true
                     },
                     "Sitemap_generator": {
-                        "const": "Sitemap generator",
+                        "const": "Sitemap Generator",
                         "readOnly": true
                     },
                     "Magnet_tool": {
-                        "const": "Magnet (keyword ideas)",
+                        "const": "Keywords from Your Site",
                         "readOnly": true
                     },
                     "Semantic_core": {
@@ -179,7 +179,7 @@
                         "readOnly": true
                     },
                     "Website_rank_tracker": {
-                        "const": "Rank Tracker Tool",
+                        "const": "Rank Tracker",
                         "readOnly": true
                     },
                     "Free_rank_checking": {

@@ -9,7 +9,7 @@ export interface components {
     schemas: {
         "I18n.Footer": {
             /** @constant */
-            readonly Suggestions_tool: "Search Suggestions Tool";
+            readonly Suggestions_tool: "Search Suggestions";
             /** @constant */
             readonly Rank_and_SERP_top_cheking: "Rank and SERP Top checking";
             /** @constant */
@@ -25,23 +25,23 @@ export interface components {
             /** @constant */
             readonly Questions: "Got any questions?";
             /** @constant */
-            readonly Grouping_tool: "Keyword Grouping Tool";
+            readonly Grouping_tool: "Keyword Clustering by Top-10";
             /** @constant */
-            readonly Research_tool: "Keyword Research Tool";
+            readonly Research_tool: "Keyword Research";
             /** @constant */
-            readonly Site_auditor: "Website SEO Audit Tool";
+            readonly Site_auditor: "Website SEO Audit";
             /** @constant */
-            readonly Site_watcher: "Website Watcher (change tracking)";
+            readonly Site_watcher: "Website Watcher (tracking changes)";
             /** @constant */
-            readonly SERP_snapshots_tool: "SERP Snapshots Tool";
+            readonly SERP_snapshots_tool: "SERP Top Checker";
             /** @constant */
-            readonly Index_checker_tool: "Index Status checker";
+            readonly Index_checker_tool: "Index Status Checker";
             /** @constant */
-            readonly Search_volume_tool: "Search Volume Tool";
+            readonly Search_volume_tool: "Search Volume Checker";
             /** @constant */
-            readonly Sitemap_generator: "Sitemap generator";
+            readonly Sitemap_generator: "Sitemap Generator";
             /** @constant */
-            readonly Magnet_tool: "Magnet (keyword ideas)";
+            readonly Magnet_tool: "Keywords from Your Site";
             /** @constant */
             readonly Semantic_core: "Semantic core tools";
             /** @constant */
@@ -93,7 +93,7 @@ export interface components {
             /** @constant */
             readonly Join_youtube: "Youtube channel";
             /** @constant */
-            readonly Website_rank_tracker: "Rank Tracker Tool";
+            readonly Website_rank_tracker: "Rank Tracker";
             /** @constant */
             readonly Free_rank_checking: "Free rank checker";
             /** @constant */
