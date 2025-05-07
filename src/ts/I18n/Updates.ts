@@ -23,6 +23,8 @@ export interface components {
             /** @constant */
             readonly Text_update: " Text update: index <span class=\"top-only-pc\">updated</span> on ";
             /** @constant */
+            readonly Text_update2: "Text update: index updated on ";
+            /** @constant */
             readonly Index_updated: "Index updated on ";
             /** @constant */
             readonly Comments: "Comments";
@@ -49,7 +51,49 @@ export interface components {
             /** @constant */
             readonly of_Yandex: "Yandex";
             /** @constant */
+            readonly All_categories: "All categories";
+            /** @constant */
+            readonly Auto_moto: "Auto, motor";
+            /** @constant */
+            readonly Logistics: "Car rent, taxi, logistics";
+            /** @constant */
+            readonly Beauty_and_health: "Beauty and health";
+            /** @constant */
+            readonly Furniture: "Windows, furniture";
+            /** @constant */
+            readonly Real_estate: "Real estate";
+            /** @constant */
+            readonly Clothes_and_accessories: "Clothes and accessories";
+            /** @constant */
+            readonly Online_games: "Online games";
+            /** @constant */
+            readonly Industrial_equipment: "Industrial equipment and machines";
+            /** @constant */
+            readonly Web_development: "Web and SEO";
+            /** @constant */
+            readonly Renovations: "Home improvement, building materials and tools";
+            /** @constant */
+            readonly Insurance: "Insurance";
+            /** @constant */
+            readonly Tourism: "Tourism and traveling";
+            /** @constant */
+            readonly Finance: "Finances";
+            /** @constant */
+            readonly Electronics: "Electronic and household appliances";
+            /** @constant */
+            readonly Legal_services: "Legal services";
+            /** @constant */
             readonly Go_to_statictics: "Перейти к статистике за этот день";
+            /** @constant */
+            readonly Apometr_info: "Апометр — инструмент для определения изменений и&nbsp;обновлений поисковой выдачи с&nbsp;детализацией по&nbsp;тематикам. Проверка изменений происходит каждые 3 часа. Степень изменения выдачи приведена к шкале 0&nbsp;–&nbsp;10 баллов. Подробнее про работу Апометра можно почитать <a href=\"{{ hrefSupport }}\" target=\"_blank\">в&nbsp;Справке.</a>";
+            /** @constant */
+            readonly Updates_yandex_telegram: "Апдейты Яндекса в Telegram";
+            /** @constant */
+            readonly Updates_yandex_X: "Апдейты Яндекса в X";
+            /** @constant */
+            readonly Share_link: "Скопировать ссылку";
+            /** @constant */
+            readonly Embed_widget: "Embed widget";
         };
     };
     responses: never;

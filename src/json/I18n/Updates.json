@@ -38,6 +38,10 @@
                         "const": " Text update: index <span class=\"top-only-pc\">updated</span> on ",
                         "readOnly": true
                     },
+                    "Text_update2": {
+                        "const": "Text update: index updated on ",
+                        "readOnly": true
+                    },
                     "Index_updated": {
                         "const": "Index updated on ",
                         "readOnly": true
@@ -90,8 +94,92 @@
                         "const": "Yandex",
                         "readOnly": true
                     },
+                    "All_categories": {
+                        "const": "All categories",
+                        "readOnly": true
+                    },
+                    "Auto_moto": {
+                        "const": "Auto, motor",
+                        "readOnly": true
+                    },
+                    "Logistics": {
+                        "const": "Car rent, taxi, logistics",
+                        "readOnly": true
+                    },
+                    "Beauty_and_health": {
+                        "const": "Beauty and health",
+                        "readOnly": true
+                    },
+                    "Furniture": {
+                        "const": "Windows, furniture",
+                        "readOnly": true
+                    },
+                    "Real_estate": {
+                        "const": "Real estate",
+                        "readOnly": true
+                    },
+                    "Clothes_and_accessories": {
+                        "const": "Clothes and accessories",
+                        "readOnly": true
+                    },
+                    "Online_games": {
+                        "const": "Online games",
+                        "readOnly": true
+                    },
+                    "Industrial_equipment": {
+                        "const": "Industrial equipment and machines",
+                        "readOnly": true
+                    },
+                    "Web_development": {
+                        "const": "Web and SEO",
+                        "readOnly": true
+                    },
+                    "Renovations": {
+                        "const": "Home improvement, building materials and tools",
+                        "readOnly": true
+                    },
+                    "Insurance": {
+                        "const": "Insurance",
+                        "readOnly": true
+                    },
+                    "Tourism": {
+                        "const": "Tourism and traveling",
+                        "readOnly": true
+                    },
+                    "Finance": {
+                        "const": "Finances",
+                        "readOnly": true
+                    },
+                    "Electronics": {
+                        "const": "Electronic and household appliances",
+                        "readOnly": true
+                    },
+                    "Legal_services": {
+                        "const": "Legal services",
+                        "readOnly": true
+                    },
                     "Go_to_statictics": {
                         "const": "Перейти к статистике за этот день",
+                        "readOnly": true
+                    },
+                    "Apometr_info": {
+                        "const": "Апометр — инструмент для определения изменений и&nbsp;обновлений поисковой выдачи с&nbsp;детализацией по&nbsp;тематикам. Проверка изменений происходит каждые 3 часа. Степень изменения выдачи приведена к шкале 0&nbsp;–&nbsp;10 баллов. Подробнее про работу Апометра можно почитать <a href=\"{{ hrefSupport }}\" target=\"_blank\">в&nbsp;Справке.</a>",
+                        "readOnly": true
+                    },
+                    "Updates_yandex_telegram": {
+                        "const": "Апдейты Яндекса в Telegram",
+                        "readOnly": true
+                    },
+                    "Updates_yandex_X": {
+                        "const": "Апдейты Яндекса в X",
+                        "readOnly": true
+                    },
+                    "Share_link": {
+                        "const": "Скопировать ссылку",
+                        "readOnly": true
+                    },
+                    "Embed_widget": {
+                        "const": "Embed widget",
                         "readOnly": true
                     }
                 },
@@ -103,6 +191,7 @@
                     "Yandex_search_base_update",
                     "SERP_changes",
                     "Text_update",
+                    "Text_update2",
                     "Index_updated",
                     "Comments",
                     "Add_comment",
@@ -116,7 +205,28 @@
                     "Yandex_SERP_update",
                     "Index_updated_on",
                     "of_Yandex",
-                    "Go_to_statictics"
+                    "All_categories",
+                    "Auto_moto",
+                    "Logistics",
+                    "Beauty_and_health",
+                    "Furniture",
+                    "Real_estate",
+                    "Clothes_and_accessories",
+                    "Online_games",
+                    "Industrial_equipment",
+                    "Web_development",
+                    "Renovations",
+                    "Insurance",
+                    "Tourism",
+                    "Finance",
+                    "Electronics",
+                    "Legal_services",
+                    "Go_to_statictics",
+                    "Apometr_info",
+                    "Updates_yandex_telegram",
+                    "Updates_yandex_X",
+                    "Share_link",
+                    "Embed_widget"
                 ]
             }
         }
