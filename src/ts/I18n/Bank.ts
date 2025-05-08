@@ -19,7 +19,17 @@ export interface components {
             /** @constant */
             readonly Not_enough_balance: "Insufficient balance in your account!";
             /** @constant */
-            readonly Refill?: "Balance replenishment in Topvisor";
+            readonly Not_enough_owner_balance_short: "The project owner has insufficient funds to complete the task";
+            /** @constant */
+            readonly Not_enough_owner_balance: "The project owner has insufficient funds to complete the task. Contact the owner of the project ";
+            /** @constant */
+            readonly Not_enough_owner_balance2: " and ask them to top up their balance.";
+            /** @constant */
+            readonly Not_enough_balance_limit: "You used up the limit on checks the project's owner gave you. Contact the owner via ";
+            /** @constant */
+            readonly Not_enough_balance_limit2: " if you need to raise the limit";
+            /** @constant */
+            readonly Refill_balance: "Top up balance";
             /** @constant */
             readonly Bonus_refill: "Bonus for balance top-up";
             /** @constant */
@@ -216,8 +226,6 @@ export interface components {
             readonly bank_page: "billing page";
             /** @constant */
             readonly inform_updates_per_month: " rank updates per month";
-            /** @constant */
-            readonly Not_enough_personal_balance: "There are insufficient funds in the personal account!";
             /** @constant */
             readonly Tariff_balance_activation: "Pricing plan fee";
             /** @constant */

@@ -30,8 +30,28 @@
                         "const": "Insufficient balance in your account!",
                         "readOnly": true
                     },
-                    "Refill": {
-                        "const": "Balance replenishment in Topvisor",
+                    "Not_enough_owner_balance_short": {
+                        "const": "The project owner has insufficient funds to complete the task",
+                        "readOnly": true
+                    },
+                    "Not_enough_owner_balance": {
+                        "const": "The project owner has insufficient funds to complete the task. Contact the owner of the project ",
+                        "readOnly": true
+                    },
+                    "Not_enough_owner_balance2": {
+                        "const": " and ask them to top up their balance.",
+                        "readOnly": true
+                    },
+                    "Not_enough_balance_limit": {
+                        "const": "You used up the limit on checks the project's owner gave you. Contact the owner via ",
+                        "readOnly": true
+                    },
+                    "Not_enough_balance_limit2": {
+                        "const": " if you need to raise the limit",
+                        "readOnly": true
+                    },
+                    "Refill_balance": {
+                        "const": "Top up balance",
                         "readOnly": true
                     },
                     "Bonus_refill": {
@@ -424,10 +444,6 @@
                     },
                     "inform_updates_per_month": {
                         "const": " rank updates per month",
-                        "readOnly": true
-                    },
-                    "Not_enough_personal_balance": {
-                        "const": "There are insufficient funds in the personal account!",
                         "readOnly": true
                     },
                     "Tariff_balance_activation": {
@@ -1153,6 +1169,12 @@
                     "Payment",
                     "Incorrect_sum",
                     "Not_enough_balance",
+                    "Not_enough_owner_balance_short",
+                    "Not_enough_owner_balance",
+                    "Not_enough_owner_balance2",
+                    "Not_enough_balance_limit",
+                    "Not_enough_balance_limit2",
+                    "Refill_balance",
                     "Bonus_refill",
                     "Mail_address",
                     "Basis1",
@@ -1248,7 +1270,6 @@
                     "Move_to_plan",
                     "bank_page",
                     "inform_updates_per_month",
-                    "Not_enough_personal_balance",
                     "Tariff_balance_activation",
                     "Prepaid_months",
                     "paid_earlier",
