@@ -17705,7 +17705,7 @@
                                                                 "$ref": "Models/Projects.json#/components/schemas/Models.Projects",
                                                                 "description": "Only for typescript, does not contain real data"
                                                             },
-                                                            "title": "@return array{pricesByUsers: array<int, array{projectsIds: int[], price: float, priceOriginal: float}>}\n@throws Exception"
+                                                            "title": "@return array{pricesByUsers: array<int, array{projectsIds: int[], price: float, priceOriginal: float}>}\n\n@throws Exception"
                                                         }
                                                     },
                                                     "required": [
@@ -18186,7 +18186,7 @@
                                                                 "$ref": "Models/Projects.json#/components/schemas/Models.Projects",
                                                                 "description": "Only for typescript, does not contain real data"
                                                             },
-                                                            "title": "@return array{pricesByUsers: array<int, array{projectsIds: int[], price: float}>}\n@throws Exception"
+                                                            "title": "@return array{pricesByUsers: array<int, array{projectsIds: int[], price: float}>}\n\n@throws Exception"
                                                         }
                                                     },
                                                     "required": [
@@ -18474,7 +18474,7 @@
                                                                 "$ref": "Models/Projects.json#/components/schemas/Models.Projects",
                                                                 "description": "Only for typescript, does not contain real data"
                                                             },
-                                                            "title": "@return array{pricesByUsers: array<int, array{projectsIds: int[], price: float}>}\n@throws Exception"
+                                                            "title": "@return array{pricesByUsers: array<int, array{projectsIds: int[], price: float}>}\n\n@throws Exception"
                                                         }
                                                     },
                                                     "required": [

@@ -12,8 +12,8 @@
                 "enum": [
                     "object",
                     "object_by_project",
-                    "service_monthly",
-                    "service_daily",
+                    "action_monthly",
+                    "action_daily",
                     "access"
                 ],
                 "title": "Тип лимита\n\nХарактеризует на какой тип действия будет применяться ограничение и как часто оно будет обновляться",

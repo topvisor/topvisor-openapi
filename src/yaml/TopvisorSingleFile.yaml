@@ -9749,6 +9749,7 @@ paths:
                               description: Only for typescript, does not contain real data
                             title: |-
                               @return array{pricesByUsers: array<int, array{projectsIds: int[], price: float, priceOriginal: float}>}
+
                               @throws Exception
                         required:
                           - result
@@ -10023,6 +10024,7 @@ paths:
                               description: Only for typescript, does not contain real data
                             title: |-
                               @return array{pricesByUsers: array<int, array{projectsIds: int[], price: float}>}
+
                               @throws Exception
                         required:
                           - result
@@ -10191,6 +10193,7 @@ paths:
                               description: Only for typescript, does not contain real data
                             title: |-
                               @return array{pricesByUsers: array<int, array{projectsIds: int[], price: float}>}
+
                               @throws Exception
                         required:
                           - result
@@ -21343,7 +21346,11 @@ components:
       type: object
       properties:
         debug:
-          title: Запуск в режиме отладки
+          title: |-
+            Запуск в режиме отладки
+
+            Только для админов
+          description: '@private'
           type: boolean
         filters:
           $ref: '#/components/schemas/filters'

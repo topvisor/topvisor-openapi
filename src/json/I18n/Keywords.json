@@ -162,26 +162,6 @@
                         "const": "there are not enough funds in your account to track keyword rankings",
                         "readOnly": true
                     },
-                    "Refill_balance": {
-                        "const": "Top up balance",
-                        "readOnly": true
-                    },
-                    "Not_enough_owner_balance": {
-                        "const": "The project owner has insufficient funds to complete the task. Contact the owner of the project ",
-                        "readOnly": true
-                    },
-                    "Not_enough_owner_balance2": {
-                        "const": " and ask them to top up their balance.",
-                        "readOnly": true
-                    },
-                    "Not_enough_balance_limit": {
-                        "const": "You used up the limit on checks the project's owner gave you. Contact the owner via ",
-                        "readOnly": true
-                    },
-                    "Not_enough_balance_limit2": {
-                        "const": " if you need to raise the limit",
-                        "readOnly": true
-                    },
                     "Position_check": {
                         "const": "Keyword rank check of",
                         "readOnly": true
@@ -1250,11 +1230,6 @@
                     "project_report_msg",
                     "project_has_archived",
                     "Not_enough_balance_for_check_position",
-                    "Refill_balance",
-                    "Not_enough_owner_balance",
-                    "Not_enough_owner_balance2",
-                    "Not_enough_balance_limit",
-                    "Not_enough_balance_limit2",
                     "Position_check",
                     "Position_check_with_snippet",
                     "Positions_check",

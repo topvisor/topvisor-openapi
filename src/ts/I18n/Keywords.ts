@@ -85,16 +85,6 @@ export interface components {
             /** @constant */
             readonly Not_enough_balance_for_check_position: "there are not enough funds in your account to track keyword rankings";
             /** @constant */
-            readonly Refill_balance: "Top up balance";
-            /** @constant */
-            readonly Not_enough_owner_balance: "The project owner has insufficient funds to complete the task. Contact the owner of the project ";
-            /** @constant */
-            readonly Not_enough_owner_balance2: " and ask them to top up their balance.";
-            /** @constant */
-            readonly Not_enough_balance_limit: "You used up the limit on checks the project's owner gave you. Contact the owner via ";
-            /** @constant */
-            readonly Not_enough_balance_limit2: " if you need to raise the limit";
-            /** @constant */
             readonly Position_check: "Keyword rank check of";
             /** @constant */
             readonly Position_check_with_snippet: "Track ranks and collect snippets";

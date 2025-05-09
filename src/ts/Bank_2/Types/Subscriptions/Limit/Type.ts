@@ -14,7 +14,7 @@ export interface components {
          * @description @see \Services\Bank_2\Objects\Subscriptions\Limit
          * @enum {string}
          */
-        "Bank_2.Types.Subscriptions.Limit.Type": "object" | "object_by_project" | "service_monthly" | "service_daily" | "access";
+        "Bank_2.Types.Subscriptions.Limit.Type": "object" | "object_by_project" | "action_monthly" | "action_daily" | "access";
     };
     responses: never;
     parameters: never;

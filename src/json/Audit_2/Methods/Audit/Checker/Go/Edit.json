@@ -11,7 +11,8 @@
                 "type": "object",
                 "properties": {
                     "debug": {
-                        "title": "Запуск в режиме отладки",
+                        "title": "Запуск в режиме отладки\n\nТолько для админов",
+                        "description": "@private",
                         "type": "boolean"
                     },
                     "filters": {

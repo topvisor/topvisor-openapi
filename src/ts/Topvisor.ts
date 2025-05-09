@@ -13404,6 +13404,7 @@ export interface operations {
                 content: {
                     "application/json": ({
                         /** @return array{pricesByUsers: array<int, array{projectsIds: int[], price: float, priceOriginal: float}>}
+                         *
                          *     @throws Exception */
                         result: import('./Models/Projects.ts').components['schemas']['Models.Projects'][];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
@@ -13623,6 +13624,7 @@ export interface operations {
                 content: {
                     "application/json": ({
                         /** @return array{pricesByUsers: array<int, array{projectsIds: int[], price: float}>}
+                         *
                          *     @throws Exception */
                         result: import('./Models/Projects.ts').components['schemas']['Models.Projects'][];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
@@ -13758,6 +13760,7 @@ export interface operations {
                 content: {
                     "application/json": ({
                         /** @return array{pricesByUsers: array<int, array{projectsIds: int[], price: float}>}
+                         *
                          *     @throws Exception */
                         result: import('./Models/Projects.ts').components['schemas']['Models.Projects'][];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
