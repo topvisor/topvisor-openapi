@@ -12866,6 +12866,124 @@
                 }
             }
         },
+        "/_edit/positions_2/checker/go/": {
+            "post": {
+                "operationId": "EditPositions2CheckerGo",
+                "tags": [
+                    "Positions_2"
+                ],
+                "summary": "Отправка проектов на проверку позиций",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Positions_2/Methods/Checker/Go/_Edit.json#/components/schemas/Positions_2.Methods.Checker.Go._Edit"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "oneOf": [
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "title": "@return object{projectIds: int[]} Список id проектов, отрпавленных на проверку"
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "result"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
+                                        }
+                                    ]
+                                }
+                            },
+                            "model": {
+                                "schema": {
+                                    "$ref": "Models/Projects.json#/components/schemas/Models.Projects",
+                                    "description": "Only for typescript, does not contain real data"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/get/positions_2/checker/price/": {
+            "post": {
+                "operationId": "GetPositions2CheckerPrice",
+                "tags": [
+                    "Positions_2"
+                ],
+                "summary": "Отправка проектов на проверку позиций",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Positions_2/Methods/Checker/Price/Get.json#/components/schemas/Positions_2.Methods.Checker.Price.Get"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "oneOf": [
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "title": "@return object{pricesByUsers: object{int: object{projectsIds: [], price: float, priceOriginal: float}}} Список id проектов, отрпавленных на проверку"
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "result"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
+                                        }
+                                    ]
+                                }
+                            },
+                            "model": {
+                                "schema": {
+                                    "$ref": "Models/Projects.json#/components/schemas/Models.Projects",
+                                    "description": "Only for typescript, does not contain real data"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
         "/edit/positions_2/searchers/enabled/": {
             "post": {
                 "operationId": "EditPositions2SearchersEnabled",

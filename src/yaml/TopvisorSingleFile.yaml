@@ -7145,6 +7145,70 @@ paths:
             model:
               schema:
                 type: 'null'
+  /_edit/positions_2/checker/go/:
+    post:
+      operationId: EditPositions2CheckerGo
+      tags:
+        - Positions_2
+      summary: Отправка проектов на проверку позиций
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Positions_2.Methods.Checker.Go._Edit'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            title: '@return object{projectIds: int[]} Список id проектов, отрпавленных на проверку'
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                $ref: '#/components/schemas/Models.Projects'
+                description: Only for typescript, does not contain real data
+  /get/positions_2/checker/price/:
+    post:
+      operationId: GetPositions2CheckerPrice
+      tags:
+        - Positions_2
+      summary: Отправка проектов на проверку позиций
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Positions_2.Methods.Checker.Price.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            title: '@return object{pricesByUsers: object{int: object{projectsIds: [], price: float, priceOriginal: float}}} Список id проектов, отрпавленных на проверку'
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                $ref: '#/components/schemas/Models.Projects'
+                description: Only for typescript, does not contain real data
   /edit/positions_2/searchers/enabled/:
     post:
       operationId: EditPositions2SearchersEnabled
@@ -12113,7 +12177,7 @@ components:
           type: integer
         full_page:
           title: |-
-            Cделать ли полноразмерный скриншот страницы
+            Сделать ли полноразмерный скриншот страницы
 
             Параметры clip и full_page нельзя использовать одновременно
           type: boolean
@@ -19785,6 +19849,118 @@ components:
       required:
         - id
       title: Смена тарифа со следующего месяца
+    Positions_2.Methods.Checker.Go._Edit:
+      type: object
+      properties:
+        debug:
+          title: |-
+            Запуск в режиме отладки
+
+            Только для админов
+          description: '@private'
+          type: boolean
+        regions_indexes:
+          title: Проверка с учетом фильтра по регионам
+          nullable: true
+          allOf:
+            - $ref: '#/components/schemas/TV.API.Types.IntArray'
+        folders_ids:
+          title: Проверка с учетом фильтра по папкам
+          nullable: true
+          allOf:
+            - $ref: '#/components/schemas/TV.API.Types.IntArray'
+        folders_ids_depth:
+          title: При фильтрации по ID папок также проверять в подпапках
+          description: '@type bool'
+          type: boolean
+        groups_ids:
+          title: Проверка с учетом фильтра по группам (сочетается с фильтром folders_ids по логике И)
+          nullable: true
+          allOf:
+            - $ref: '#/components/schemas/TV.API.Types.IntArray'
+        do_snapshots:
+          title: |-
+            Глубина проверки снимка (перекрывает аналогичное значение в настройках проекта)
+
+            9 - означет глубину 10
+
+            enum(0, 2, 3, 5, 9)
+
+            TODO: сдлеать enum
+          nullable: true
+          type: integer
+        keyword_id:
+          title: |-
+            Проверка одного запроса
+
+            - не допускается при массовой проверке проектов
+            - требует указания одного `regions_indexes`
+            - не допускается совместное использование с `folders_ids`, `groups_ids` и `do_snapshots`
+          nullable: true
+          type: integer
+        filters:
+          $ref: '#/components/schemas/filters'
+        id:
+          $ref: '#/components/schemas/id'
+      required:
+        - filters
+      title: Отправка проектов на проверку позиций
+    Positions_2.Methods.Checker.Price.Get:
+      type: object
+      properties:
+        debug:
+          title: |-
+            Запуск в режиме отладки
+
+            Только для админов
+          description: '@private'
+          type: boolean
+        regions_indexes:
+          title: Проверка с учетом фильтра по регионам
+          nullable: true
+          allOf:
+            - $ref: '#/components/schemas/TV.API.Types.IntArray'
+        folders_ids:
+          title: Проверка с учетом фильтра по папкам
+          nullable: true
+          allOf:
+            - $ref: '#/components/schemas/TV.API.Types.IntArray'
+        folders_ids_depth:
+          title: При фильтрации по ID папок также проверять в подпапках
+          description: '@type bool'
+          type: boolean
+        groups_ids:
+          title: Проверка с учетом фильтра по группам (сочетается с фильтром folders_ids по логике И)
+          nullable: true
+          allOf:
+            - $ref: '#/components/schemas/TV.API.Types.IntArray'
+        do_snapshots:
+          title: |-
+            Глубина проверки снимка (перекрывает аналогичное значение в настройках проекта)
+
+            9 - означет глубину 10
+
+            enum(0, 2, 3, 5, 9)
+
+            TODO: сдлеать enum
+          nullable: true
+          type: integer
+        keyword_id:
+          title: |-
+            Проверка одного запроса
+
+            - не допускается при массовой проверке проектов
+            - требует указания одного `regions_indexes`
+            - не допускается совместное использование с `folders_ids`, `groups_ids` и `do_snapshots`
+          nullable: true
+          type: integer
+        filters:
+          $ref: '#/components/schemas/filters'
+        id:
+          $ref: '#/components/schemas/id'
+      required:
+        - filters
+      title: Отправка проектов на проверку позиций
     Positions_2.Methods.Searchers.Enabled.Edit:
       type: object
       properties:

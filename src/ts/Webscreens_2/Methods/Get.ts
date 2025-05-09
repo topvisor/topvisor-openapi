@@ -19,7 +19,7 @@ export interface components {
              * @default 1500
              */
             timeout_ms: number;
-            /** Cделать ли полноразмерный скриншот страницы
+            /** Сделать ли полноразмерный скриншот страницы
              *
              *     Параметры clip и full_page нельзя использовать одновременно */
             full_page?: boolean;

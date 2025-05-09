@@ -3696,6 +3696,40 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
+    /** Отправка проектов на проверку позиций */
+    "/_edit/positions_2/checker/go/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["EditPositions2CheckerGo"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Отправка проектов на проверку позиций */
+    "/get/positions_2/checker/price/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["GetPositions2CheckerPrice"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
     /** Включение/выключение ПС */
     "/edit/positions_2/searchers/enabled/": {
         parameters: {
@@ -11297,6 +11331,60 @@ export interface operations {
                         result: number;
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
+                };
+            };
+        };
+    };
+    EditPositions2CheckerGo: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Positions_2/Methods/Checker/Go/_Edit.ts').components['schemas']['Positions_2.Methods.Checker.Go._Edit'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        /** @return object{projectIds: int[]} Список id проектов, отрпавленных на проверку */
+                        result: unknown;
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: import('./Models/Projects.ts').components['schemas']['Models.Projects'];
+                };
+            };
+        };
+    };
+    GetPositions2CheckerPrice: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Positions_2/Methods/Checker/Price/Get.ts').components['schemas']['Positions_2.Methods.Checker.Price.Get'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        /** @return object{pricesByUsers: object{int: object{projectsIds: [], price: float, priceOriginal: float}}} Список id проектов, отрпавленных на проверку */
+                        result: unknown;
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: import('./Models/Projects.ts').components['schemas']['Models.Projects'];
                 };
             };
         };
