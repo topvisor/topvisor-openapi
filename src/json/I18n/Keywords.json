@@ -575,7 +575,7 @@
                         "readOnly": true
                     },
                     "Skip_tracked_searches": {
-                        "const": "Skip collected search volume data",
+                        "const": "Skip keywords with any search volume",
                         "readOnly": true
                     },
                     "Check_active_groups_only": {
@@ -915,7 +915,7 @@
                         "readOnly": true
                     },
                     "Check_old_searches": {
-                        "const": "Update expired search volume",
+                        "const": "Skip keywords with actual search volume",
                         "readOnly": true
                     },
                     "Group_id": {

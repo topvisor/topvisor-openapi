@@ -291,7 +291,7 @@ export interface components {
             /** @constant */
             readonly By_location: "For locations";
             /** @constant */
-            readonly Skip_tracked_searches: "Skip collected search volume data";
+            readonly Skip_tracked_searches: "Skip keywords with any search volume";
             /** @constant */
             readonly Check_active_groups_only: "Check active groups only";
             /** @constant */
@@ -461,7 +461,7 @@ export interface components {
             /** @constant */
             readonly Negative_words: "Negative keywords";
             /** @constant */
-            readonly Check_old_searches: "Update expired search volume";
+            readonly Check_old_searches: "Skip keywords with actual search volume";
             /** @constant */
             readonly Group_id: "Group id";
             /** @constant */
