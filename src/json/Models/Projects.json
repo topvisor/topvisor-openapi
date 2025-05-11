@@ -204,6 +204,14 @@
                     },
                     "pos_summary_visibility": {
                         "nullable": true
+                    },
+                    "audit_auto_collect_pages": {
+                        "type": "integer",
+                        "nullable": true
+                    },
+                    "audit_auto_collect_pages_limit": {
+                        "type": "integer",
+                        "nullable": true
                     }
                 }
             }

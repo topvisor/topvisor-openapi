@@ -7182,7 +7182,7 @@ paths:
       operationId: GetPositions2CheckerPrice
       tags:
         - Positions_2
-      summary: Отправка проектов на проверку позиций
+      summary: Информация о стоимости запуска проверки позиций по проектам
       requestBody:
         content:
           application/json:
@@ -9768,14 +9768,7 @@ paths:
                       - type: object
                         properties:
                           result:
-                            type: array
-                            items:
-                              $ref: '#/components/schemas/Models.Projects'
-                              description: Only for typescript, does not contain real data
-                            title: |-
-                              @return array{projectIds: int[]}
-
-                              @throws Exception
+                            title: '@return object{projectIds: int[]} Список id проектов, отрпавленных на проверку'
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
@@ -9789,7 +9782,7 @@ paths:
       operationId: GetAudit2AuditCheckerPrice
       tags:
         - Audit_2
-      summary: Получение стоимости проверки аудита
+      summary: Информация о стоимости запуска аудита по проектам
       requestBody:
         content:
           application/json:
@@ -9807,14 +9800,7 @@ paths:
                       - type: object
                         properties:
                           result:
-                            type: array
-                            items:
-                              $ref: '#/components/schemas/Models.Projects'
-                              description: Only for typescript, does not contain real data
-                            title: |-
-                              @return array{pricesByUsers: array<int, array{projectsIds: int[], price: float, priceOriginal: float}>}
-
-                              @throws Exception
+                            title: '@throws Exception'
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
@@ -14788,6 +14774,12 @@ components:
         pos_summary_avg:
           nullable: true
         pos_summary_visibility:
+          nullable: true
+        audit_auto_collect_pages:
+          type: integer
+          nullable: true
+        audit_auto_collect_pages_limit:
+          type: integer
           nullable: true
     Keywords_2.Types.Collect.ToType:
       type: string
@@ -19960,7 +19952,7 @@ components:
           $ref: '#/components/schemas/id'
       required:
         - filters
-      title: Отправка проектов на проверку позиций
+      title: Информация о стоимости запуска проверки позиций по проектам
     Positions_2.Methods.Searchers.Enabled.Edit:
       type: object
       properties:
@@ -21538,16 +21530,20 @@ components:
     Audit_2.Methods.Audit.Checker.Price.Get:
       type: object
       properties:
-        apply_discount:
-          title: Отображать ли сумму с учетом скидки
-          default: true
+        debug:
+          title: |-
+            Запуск в режиме отладки
+
+            Только для админов
+          description: '@private'
           type: boolean
         filters:
           $ref: '#/components/schemas/filters'
         id:
           $ref: '#/components/schemas/id'
-      required: []
-      title: Получение стоимости проверки аудита
+      required:
+        - filters
+      title: Информация о стоимости запуска аудита по проектам
     Audit_2.Methods.Audit.Export.Links.Get:
       type: object
       properties:

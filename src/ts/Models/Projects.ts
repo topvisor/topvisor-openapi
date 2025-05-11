@@ -73,6 +73,8 @@ export interface components {
             pos_summary_down?: any;
             pos_summary_avg?: any;
             pos_summary_visibility?: any;
+            audit_auto_collect_pages?: number | null;
+            audit_auto_collect_pages_limit?: number | null;
         };
     };
     responses: never;

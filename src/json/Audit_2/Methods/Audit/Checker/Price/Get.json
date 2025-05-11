@@ -10,9 +10,9 @@
             "Audit_2.Methods.Audit.Checker.Price.Get": {
                 "type": "object",
                 "properties": {
-                    "apply_discount": {
-                        "title": "Отображать ли сумму с учетом скидки",
-                        "default": true,
+                    "debug": {
+                        "title": "Запуск в режиме отладки\n\nТолько для админов",
+                        "description": "@private",
                         "type": "boolean"
                     },
                     "filters": {
@@ -22,8 +22,10 @@
                         "$ref": "../../../../../TV/API/Params/FiltersTrait.json#/components/schemas/TV.API.Params.FiltersTrait/properties/id"
                     }
                 },
-                "required": [],
-                "title": "Получение стоимости проверки аудита"
+                "required": [
+                    "filters"
+                ],
+                "title": "Информация о стоимости запуска аудита по проектам"
             }
         }
     }

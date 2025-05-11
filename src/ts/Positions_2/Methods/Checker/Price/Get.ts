@@ -7,7 +7,7 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Отправка проектов на проверку позиций */
+        /** Информация о стоимости запуска проверки позиций по проектам */
         "Positions_2.Methods.Checker.Price.Get": {
             /**
              * Запуск в режиме отладки
