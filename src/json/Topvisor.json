@@ -18225,12 +18225,7 @@
                                                     "type": "object",
                                                     "properties": {
                                                         "result": {
-                                                            "type": "array",
-                                                            "items": {
-                                                                "$ref": "Models/Projects.json#/components/schemas/Models.Projects",
-                                                                "description": "Only for typescript, does not contain real data"
-                                                            },
-                                                            "title": "@return array{projectIds: int[]}\n\n@throws Exception"
+                                                            "title": "@return object{projectIds: int[]} Список id проектов, отрпавленных на проверку"
                                                         }
                                                     },
                                                     "required": [
@@ -18265,7 +18260,7 @@
                 "tags": [
                     "Audit_2"
                 ],
-                "summary": "Полуение стоимости проверки индексации",
+                "summary": "Информация о стоимости запуска индексации по проектам",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -18289,12 +18284,7 @@
                                                     "type": "object",
                                                     "properties": {
                                                         "result": {
-                                                            "type": "array",
-                                                            "items": {
-                                                                "$ref": "Models/Projects.json#/components/schemas/Models.Projects",
-                                                                "description": "Only for typescript, does not contain real data"
-                                                            },
-                                                            "title": "@return array{pricesByUsers: array<int, array{projectsIds: int[], price: float}>}\n\n@throws Exception"
+                                                            "title": "@throws Exception"
                                                         }
                                                     },
                                                     "required": [

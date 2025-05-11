@@ -10,10 +10,10 @@
             "Audit_2.Methods.Indexing.Checker.Price.Get": {
                 "type": "object",
                 "properties": {
-                    "apply_discount": {
-                        "title": "Отображать сумму с учетом скидки",
-                        "default": 1,
-                        "type": "integer"
+                    "debug": {
+                        "title": "Запуск в режиме отладки\n\n Только для админов",
+                        "description": "@private",
+                        "type": "boolean"
                     },
                     "filters": {
                         "$ref": "../../../../../TV/API/Params/FiltersTrait.json#/components/schemas/TV.API.Params.FiltersTrait/properties/filters"
@@ -22,8 +22,10 @@
                         "$ref": "../../../../../TV/API/Params/FiltersTrait.json#/components/schemas/TV.API.Params.FiltersTrait/properties/id"
                     }
                 },
-                "required": [],
-                "title": "Полуение стоимости проверки индексации"
+                "required": [
+                    "filters"
+                ],
+                "title": "Информация о стоимости запуска индексации по проектам"
             }
         }
     }

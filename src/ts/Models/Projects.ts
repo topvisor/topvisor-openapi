@@ -73,8 +73,10 @@ export interface components {
             pos_summary_down?: any;
             pos_summary_avg?: any;
             pos_summary_visibility?: any;
+            audit_server_location?: any;
             audit_auto_collect_pages?: number | null;
             audit_auto_collect_pages_limit?: number | null;
+            indexing_searchers_keys?: (string | number)[] | null;
         };
     };
     responses: never;
