@@ -10,16 +10,17 @@
             "Audit_2.Methods.Sitemap.Checker.Go.Edit": {
                 "type": "object",
                 "properties": {
+                    "debug": {
+                        "title": "Запуск в режиме отладки\n\n Только для админов",
+                        "description": "@private",
+                        "type": "boolean"
+                    },
                     "max_pages": {
                         "allOf": [
                             {
                                 "$ref": "../../../../../Audit_2/Types/Sitemap/MaxPages.json#/components/schemas/Audit_2.Types.Sitemap.MaxPages"
                             }
                         ]
-                    },
-                    "debug": {
-                        "title": "Запуск в режиме отладки",
-                        "type": "boolean"
                     },
                     "filters": {
                         "$ref": "../../../../../TV/API/Params/FiltersTrait.json#/components/schemas/TV.API.Params.FiltersTrait/properties/filters"

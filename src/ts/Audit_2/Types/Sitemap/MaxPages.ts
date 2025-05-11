@@ -8,10 +8,14 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         /**
-         * Максимальное количество страниц для генерации карты сайта
-         * @enum {string}
+         * Предполагаемое число страниц на вашем сайте
+         *
+         *     Выбираейте приблизительное занчение, например 100, 1000 или 10000 в зависимсоти от размеров вашего сйта
+         *
+         *     Это значение влияет на стоимость генерации карты сайта
+         * @enum {integer}
          */
-        "Audit_2.Types.Sitemap.MaxPages": "100" | "1000" | "10000" | "100000" | "150000" | "300000";
+        "Audit_2.Types.Sitemap.MaxPages": 100 | 1000 | 10000 | 100000 | 150000 | 300000;
     };
     responses: never;
     parameters: never;

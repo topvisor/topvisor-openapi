@@ -7,15 +7,17 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Полуение стоимости проверки карты сайта */
+        /** Информация о стоимости запуска индексации по проектам */
         "Audit_2.Methods.Sitemap.Checker.Price.Get": {
             /**
-             * Отображать ли сумму с учетом скидки
-             * @default 1
+             * Запуск в режиме отладки
+             *
+             *      Только для админов
+             * @description @private
              */
-            apply_discount: number;
+            debug?: boolean;
             max_pages: import('../../../../Types/Sitemap/MaxPages.ts').components['schemas']['Audit_2.Types.Sitemap.MaxPages'];
-            filters?: import('../../../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['filters'];
+            filters: import('../../../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['filters'];
             id?: import('../../../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['id'];
         };
     };

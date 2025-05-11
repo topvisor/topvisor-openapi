@@ -9,9 +9,14 @@ export interface components {
     schemas: {
         /** Отправка проектов на проверку карты сайта */
         "Audit_2.Methods.Sitemap.Checker.Go.Edit": {
-            max_pages: import('../../../../Types/Sitemap/MaxPages.ts').components['schemas']['Audit_2.Types.Sitemap.MaxPages'];
-            /** Запуск в режиме отладки */
+            /**
+             * Запуск в режиме отладки
+             *
+             *      Только для админов
+             * @description @private
+             */
             debug?: boolean;
+            max_pages: import('../../../../Types/Sitemap/MaxPages.ts').components['schemas']['Audit_2.Types.Sitemap.MaxPages'];
             filters: import('../../../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['filters'];
             id?: import('../../../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['id'];
         };

@@ -10,10 +10,10 @@
             "Audit_2.Methods.Sitemap.Checker.Price.Get": {
                 "type": "object",
                 "properties": {
-                    "apply_discount": {
-                        "title": "Отображать ли сумму с учетом скидки",
-                        "default": 1,
-                        "type": "integer"
+                    "debug": {
+                        "title": "Запуск в режиме отладки\n\n Только для админов",
+                        "description": "@private",
+                        "type": "boolean"
                     },
                     "max_pages": {
                         "allOf": [
@@ -30,9 +30,10 @@
                     }
                 },
                 "required": [
-                    "max_pages"
+                    "max_pages",
+                    "filters"
                 ],
-                "title": "Полуение стоимости проверки карты сайта"
+                "title": "Информация о стоимости запуска индексации по проектам"
             }
         }
     }
