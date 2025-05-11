@@ -246,30 +246,6 @@
                         "readOnly": true,
                         "type": "number"
                     },
-                    "DOMAINS_BUY_COST": {
-                        "title": "Стоимость покупки домена.",
-                        "default": 10000,
-                        "readOnly": true,
-                        "type": "number"
-                    },
-                    "DOMAINS_RENEW_COST": {
-                        "title": "Стоимость продления домена.",
-                        "default": 10000,
-                        "readOnly": true,
-                        "type": "number"
-                    },
-                    "DOMAINS_AUTH_INFO_PHONE_COST": {
-                        "title": "Стоимость авторизации по телефону.",
-                        "default": 10000,
-                        "readOnly": true,
-                        "type": "number"
-                    },
-                    "DOMAINS_AUTH_INFO_MAIL_COST": {
-                        "title": "Стоимость авторизации по почте.",
-                        "default": 10000,
-                        "readOnly": true,
-                        "type": "number"
-                    },
                     "TARIFF_NAMES": {
                         "title": "Массив тарифных планов.",
                         "default": [
@@ -375,10 +351,6 @@
                     "MENTIONS_COST",
                     "COMPETITORS_COST",
                     "WEB_SCREENS_COST",
-                    "DOMAINS_BUY_COST",
-                    "DOMAINS_RENEW_COST",
-                    "DOMAINS_AUTH_INFO_PHONE_COST",
-                    "DOMAINS_AUTH_INFO_MAIL_COST",
                     "TARIFF_NAMES",
                     "TARIFF_VALUES",
                     "TARIFF_DISCOUNT"

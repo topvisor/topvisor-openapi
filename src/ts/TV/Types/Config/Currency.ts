@@ -201,26 +201,6 @@ export interface components {
              */
             readonly WEB_SCREENS_COST: number;
             /**
-             * Стоимость покупки домена.
-             * @default 10000
-             */
-            readonly DOMAINS_BUY_COST: number;
-            /**
-             * Стоимость продления домена.
-             * @default 10000
-             */
-            readonly DOMAINS_RENEW_COST: number;
-            /**
-             * Стоимость авторизации по телефону.
-             * @default 10000
-             */
-            readonly DOMAINS_AUTH_INFO_PHONE_COST: number;
-            /**
-             * Стоимость авторизации по почте.
-             * @default 10000
-             */
-            readonly DOMAINS_AUTH_INFO_MAIL_COST: number;
-            /**
              * Массив тарифных планов.
              * @default [
              *       "No set",
