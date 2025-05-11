@@ -847,21 +847,10 @@ paths:
         '200':
           description: ''
           content:
-            application/json:
+            application/octet-stream:
               schema:
-                oneOf:
-                  - allOf:
-                      - type: object
-                        properties:
-                          result:
-                            type: 'null'
-                        required:
-                          - result
-                      - $ref: '#/components/schemas/ResponseSuccess'
-                  - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
+                type: string
+                format: binary
   /abstractregular/admin_2/actions/:
     post:
       operationId: AbstractregularAdmin2Actions
