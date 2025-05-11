@@ -7,14 +7,16 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Полуение стоимости проверки радара */
+        /** Информация о стоимости запуска индексации по проектам */
         "Audit_2.Methods.Watcher.Checker.Price.Get": {
             /**
-             * Отображать ли сумму с учетом скидки
-             * @default 1
+             * Запуск в режиме отладки
+             *
+             *      Только для админов
+             * @description @private
              */
-            apply_discount: number;
-            filters?: import('../../../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['filters'];
+            debug?: boolean;
+            filters: import('../../../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['filters'];
             id?: import('../../../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['id'];
         };
     };

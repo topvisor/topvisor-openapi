@@ -77,6 +77,7 @@ export interface components {
             audit_auto_collect_pages?: number | null;
             audit_auto_collect_pages_limit?: number | null;
             indexing_searchers_keys?: (string | number)[] | null;
+            watcher_types?: (string | number)[] | null;
         };
     };
     responses: never;

@@ -10262,14 +10262,7 @@ paths:
                       - type: object
                         properties:
                           result:
-                            type: array
-                            items:
-                              $ref: '#/components/schemas/Models.Projects'
-                              description: Only for typescript, does not contain real data
-                            title: |-
-                              @return array{projectIds: int[]}
-
-                              @throws Exception
+                            title: '@return array{projectIds: int[]} Список id проектов, отрпавленных на проверку'
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
@@ -10283,7 +10276,7 @@ paths:
       operationId: GetAudit2WatcherCheckerPrice
       tags:
         - Audit_2
-      summary: Полуение стоимости проверки радара
+      summary: Информация о стоимости запуска индексации по проектам
       requestBody:
         content:
           application/json:
@@ -10301,13 +10294,7 @@ paths:
                       - type: object
                         properties:
                           result:
-                            type: array
-                            items:
-                              $ref: '#/components/schemas/Models.Projects'
-                              description: Only for typescript, does not contain real data
-                            title: |-
-                              @return array{pricesByUsers: array<int, array{projectsIds: int[], price: float}>}
-                              @throws Exception
+                            title: '@throws Exception'
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
@@ -14770,6 +14757,13 @@ components:
           type: integer
           nullable: true
         indexing_searchers_keys:
+          type: array
+          items:
+            oneOf:
+              - type: string
+              - type: number
+          nullable: true
+        watcher_types:
           type: array
           items:
             oneOf:
@@ -21918,7 +21912,11 @@ components:
       type: object
       properties:
         debug:
-          title: Запуск в режиме отладки
+          title: |-
+            Запуск в режиме отладки
+
+             Только для админов
+          description: '@private'
           type: boolean
         filters:
           $ref: '#/components/schemas/filters'
@@ -21930,16 +21928,20 @@ components:
     Audit_2.Methods.Watcher.Checker.Price.Get:
       type: object
       properties:
-        apply_discount:
-          title: Отображать ли сумму с учетом скидки
-          default: 1
-          type: integer
+        debug:
+          title: |-
+            Запуск в режиме отладки
+
+             Только для админов
+          description: '@private'
+          type: boolean
         filters:
           $ref: '#/components/schemas/filters'
         id:
           $ref: '#/components/schemas/id'
-      required: []
-      title: Полуение стоимости проверки радара
+      required:
+        - filters
+      title: Информация о стоимости запуска индексации по проектам
     properties-check_id:
       title: ID проверки радара
       type: integer

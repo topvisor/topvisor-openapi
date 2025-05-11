@@ -5376,7 +5376,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Полуение стоимости проверки радара */
+    /** Информация о стоимости запуска индексации по проектам */
     "/get/audit_2/watcher/checker/price/": {
         parameters: {
             query?: never;
@@ -13868,10 +13868,8 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        /** @return array{projectIds: int[]}
-                         *
-                         *     @throws Exception */
-                        result: import('./Models/Projects.ts').components['schemas']['Models.Projects'][];
+                        /** @return array{projectIds: int[]} Список id проектов, отрпавленных на проверку */
+                        result: unknown;
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: import('./Models/Projects.ts').components['schemas']['Models.Projects'];
                 };
@@ -13897,9 +13895,8 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        /** @return array{pricesByUsers: array<int, array{projectsIds: int[], price: float}>}
-                         *     @throws Exception */
-                        result: import('./Models/Projects.ts').components['schemas']['Models.Projects'][];
+                        /** @throws Exception */
+                        result: unknown;
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: import('./Models/Projects.ts').components['schemas']['Models.Projects'];
                 };
