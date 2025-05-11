@@ -8,7 +8,7 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         /** Отправка проектов на проверку позиций */
-        "Positions_2.Methods.Checker.Go._Edit": {
+        "Positions_2.Methods.Checker.Go.Edit": {
             /**
              * Запуск в режиме отладки
              *

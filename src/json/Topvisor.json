@@ -12866,7 +12866,7 @@
                 }
             }
         },
-        "/_edit/positions_2/checker/go/": {
+        "/edit/positions_2/checker/go/": {
             "post": {
                 "operationId": "EditPositions2CheckerGo",
                 "tags": [
@@ -12877,7 +12877,7 @@
                     "content": {
                         "application/json": {
                             "schema": {
-                                "$ref": "Positions_2/Methods/Checker/Go/_Edit.json#/components/schemas/Positions_2.Methods.Checker.Go._Edit"
+                                "$ref": "Positions_2/Methods/Checker/Go/Edit.json#/components/schemas/Positions_2.Methods.Checker.Go.Edit"
                             }
                         }
                     },

@@ -7145,7 +7145,7 @@ paths:
             model:
               schema:
                 type: 'null'
-  /_edit/positions_2/checker/go/:
+  /edit/positions_2/checker/go/:
     post:
       operationId: EditPositions2CheckerGo
       tags:
@@ -7155,7 +7155,7 @@ paths:
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/Positions_2.Methods.Checker.Go._Edit'
+              $ref: '#/components/schemas/Positions_2.Methods.Checker.Go.Edit'
         required: true
       responses:
         '200':
@@ -19849,7 +19849,7 @@ components:
       required:
         - id
       title: Смена тарифа со следующего месяца
-    Positions_2.Methods.Checker.Go._Edit:
+    Positions_2.Methods.Checker.Go.Edit:
       type: object
       properties:
         debug:

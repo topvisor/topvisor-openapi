@@ -3697,7 +3697,7 @@ export interface paths {
         trace?: never;
     };  
     /** Отправка проектов на проверку позиций */
-    "/_edit/positions_2/checker/go/": {
+    "/edit/positions_2/checker/go/": {
         parameters: {
             query?: never;
             header?: never;
@@ -11344,7 +11344,7 @@ export interface operations {
         };
         requestBody: {
             content: {
-                "application/json": import('./Positions_2/Methods/Checker/Go/_Edit.ts').components['schemas']['Positions_2.Methods.Checker.Go._Edit'];
+                "application/json": import('./Positions_2/Methods/Checker/Go/Edit.ts').components['schemas']['Positions_2.Methods.Checker.Go.Edit'];
             };
         };
         responses: {
