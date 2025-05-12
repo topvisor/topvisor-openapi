@@ -381,7 +381,7 @@ export interface components {
             /** @constant */
             readonly Amount_from: "Minimum amount";
             /** @constant */
-            readonly Subscribe_for_period: "Subscribe for";
+            readonly Subscribe_for_period: "Subscribe period";
             /** @constant */
             readonly Invoice_for: "Invoice for";
             /** @constant */

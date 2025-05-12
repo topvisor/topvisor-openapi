@@ -755,7 +755,7 @@
                         "readOnly": true
                     },
                     "Subscribe_for_period": {
-                        "const": "Subscribe for",
+                        "const": "Subscribe period",
                         "readOnly": true
                     },
                     "Invoice_for": {
