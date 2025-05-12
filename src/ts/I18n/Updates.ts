@@ -85,7 +85,7 @@ export interface components {
             /** @constant */
             readonly Go_to_statictics: "Go to statistics of the day";
             /** @constant */
-            readonly Apometr_info: "Updates Scanner is a tool that detects changes and updates in organic search results split by topics. We check SERP every 3 hours and measure changes on a 10-point scale. <a href=\"{{ hrefSupport }}\" target=\"_blank\">More on Updates Scanner →.</a>";
+            readonly Apometr_info: "Updates Scanner is a tool that detects changes and updates in organic search results split by topics. We check SERP every 3 hours and measure changes on a 10-point scale. <a href=\"{{ hrefSupport }}\" target=\"_blank\">More on Updates Scanner →</a>";
             /** @constant */
             readonly Updates_yandex_telegram: "Yandex Updates in Telegram";
             /** @constant */
