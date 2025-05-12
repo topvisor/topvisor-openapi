@@ -7189,7 +7189,7 @@ paths:
                       - type: object
                         properties:
                           result:
-                            title: '@return object{pricesByUsers: object{int: object{projectsIds: [], price: float, priceOriginal: float}}} Список id проектов, отрпавленных на проверку'
+                            title: '@return object{pricesByUsers: object{int: object{projectsIds: [], price: float, priceOriginal: float}}}'
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
@@ -13193,7 +13193,7 @@ components:
         - '0'
         - '1'
         - '5'
-      title: Id поисковой системы для индексации
+      title: Ключ поисковой системы для индексации
     Audit_2.Types.Indexing.SearcherKeys:
       type: array
       items:
@@ -14826,7 +14826,7 @@ components:
           title: При фильтрации по ID папок также искать в подпапках
           type: boolean
         show_trash:
-          title: Проверить корзину
+          title: Искать в корзине
           type: boolean
         fields:
           $ref: '#/components/schemas/fields'
@@ -15116,7 +15116,7 @@ components:
         - 7
         - 8
         - 9
-      title: Id поисковой системы для проверки позиций
+      title: Ключ поисковой системы для проверки позиций
     Positions_2.Methods.Searchers.Add:
       type: object
       properties:

@@ -19,7 +19,7 @@
                         "type": "boolean"
                     },
                     "show_trash": {
-                        "title": "Проверить корзину",
+                        "title": "Искать в корзине",
                         "type": "boolean"
                     },
                     "fields": {

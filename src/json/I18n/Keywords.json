@@ -1187,7 +1187,7 @@
                         "readOnly": true
                     },
                     "Check_all_wordstats": {
-                        "const": "Check all wordstats",
+                        "const": "Check all keywords",
                         "readOnly": true
                     }
                 },

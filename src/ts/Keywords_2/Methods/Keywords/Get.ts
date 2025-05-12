@@ -13,7 +13,7 @@ export interface components {
             project_id: number;
             /** При фильтрации по ID папок также искать в подпапках */
             group_folder_id_depth?: boolean;
-            /** Проверить корзину */
+            /** Искать в корзине */
             show_trash?: boolean;
             fields: import('../../../TV/API/Params/FieldsTrait.ts').components['schemas']['TV.API.Params.FieldsTrait']['fields'];
             orders: import('../../../TV/API/Params/OrdersTrait.ts').components['schemas']['TV.API.Params.OrdersTrait']['orders'];

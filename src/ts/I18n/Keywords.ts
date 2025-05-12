@@ -597,7 +597,7 @@ export interface components {
             /** @constant */
             readonly Type_of_volume_needed_for_visibility: "Check this type of Search Volume to calculate Visibility for";
             /** @constant */
-            readonly Check_all_wordstats: "Check all wordstats";
+            readonly Check_all_wordstats: "Check all keywords";
         };
     };
     responses: never;

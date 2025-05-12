@@ -12929,7 +12929,7 @@
                                                     "type": "object",
                                                     "properties": {
                                                         "result": {
-                                                            "title": "@return object{pricesByUsers: object{int: object{projectsIds: [], price: float, priceOriginal: float}}} Список id проектов, отрпавленных на проверку"
+                                                            "title": "@return object{pricesByUsers: object{int: object{projectsIds: [], price: float, priceOriginal: float}}}"
                                                         }
                                                     },
                                                     "required": [

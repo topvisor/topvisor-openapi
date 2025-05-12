@@ -11378,7 +11378,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        /** @return object{pricesByUsers: object{int: object{projectsIds: [], price: float, priceOriginal: float}}} Список id проектов, отрпавленных на проверку */
+                        /** @return object{pricesByUsers: object{int: object{projectsIds: [], price: float, priceOriginal: float}}} */
                         result: unknown;
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: import('./Models/Projects.ts').components['schemas']['Models.Projects'];
