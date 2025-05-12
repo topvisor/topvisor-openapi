@@ -10,20 +10,30 @@
             "Keywords_2.Types.Volumes.Qualifier": {
                 "type": "object",
                 "properties": {
+                    "id": {
+                        "title": "Строковй идентификатор определителя",
+                        "type": "string"
+                    },
                     "region_key": {
-                        "title": "Ключ региона",
                         "type": "integer"
                     },
                     "searcher_key": {
-                        "title": "Ключ поисковой системы (0 - Яндекс, 1 - Google)",
-                        "type": "integer"
+                        "allOf": [
+                            {
+                                "$ref": "../../../Keywords_2/Types/Volumes/SearcherKey.json#/components/schemas/Keywords_2.Types.Volumes.SearcherKey"
+                            }
+                        ]
                     },
                     "type": {
-                        "title": "Тип частоты (для Яндекса: 1, 2, 3, 5 или 6; для Google: 3)",
-                        "type": "integer"
+                        "allOf": [
+                            {
+                                "$ref": "../../../Keywords_2/Types/Volumes/Type.json#/components/schemas/Keywords_2.Types.Volumes.Type"
+                            }
+                        ]
                     }
                 },
                 "required": [
+                    "id",
                     "region_key",
                     "searcher_key",
                     "type"

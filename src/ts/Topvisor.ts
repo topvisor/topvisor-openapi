@@ -3611,7 +3611,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Получение стоимости проверки частоты проектов */
+    /** Информация о стоимости запуска проверки позиций по проектам */
     "/get/keywords_2/volumes/price/": {
         parameters: {
             query?: never;
@@ -11194,9 +11194,10 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: number;
-                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
+                        /** @return ?int */
+                        result: unknown;
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: import('./Models/Keywords.ts').components['schemas']['Models.Keywords'];
                 };
             };
         };
@@ -11220,10 +11221,10 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        /** @throws Exception */
-                        result: (string | number)[];
-                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
+                        /** @return object{pricesByUsers: object{int: object{projectsIds: [], price: float, priceOriginal: float}}} */
+                        result: unknown;
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: import('./Models/Keywords.ts').components['schemas']['Models.Keywords'];
                 };
             };
         };

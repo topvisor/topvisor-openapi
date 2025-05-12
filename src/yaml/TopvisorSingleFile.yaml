@@ -6964,21 +6964,21 @@ paths:
                       - type: object
                         properties:
                           result:
-                            type: integer
+                            title: '@return ?int'
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
-                      - $ref: '#/components/schemas/Pagination'
                   - $ref: '#/components/schemas/ResponseError'
             model:
               schema:
-                type: 'null'
+                $ref: '#/components/schemas/Models.Keywords'
+                description: Only for typescript, does not contain real data
   /get/keywords_2/volumes/price/:
     post:
       operationId: GetKeywords2VolumesPrice
       tags:
         - Keywords_2
-      summary: Получение стоимости проверки частоты проектов
+      summary: Информация о стоимости запуска проверки позиций по проектам
       requestBody:
         content:
           application/json:
@@ -6996,20 +6996,15 @@ paths:
                       - type: object
                         properties:
                           result:
-                            type: array
-                            items:
-                              oneOf:
-                                - type: string
-                                - type: number
-                            title: '@throws Exception'
+                            title: '@return object{pricesByUsers: object{int: object{projectsIds: [], price: float, priceOriginal: float}}}'
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
-                      - $ref: '#/components/schemas/Pagination'
                   - $ref: '#/components/schemas/ResponseError'
             model:
               schema:
-                type: 'null'
+                $ref: '#/components/schemas/Models.Keywords'
+                description: Only for typescript, does not contain real data
   /add/landings_2/hr/feedback/:
     post:
       operationId: AddLandings2HrFeedback
@@ -19632,131 +19627,127 @@ components:
 
         Доступные поля для импорта: group_folder_path|group_name|name|tags|target поля перекрывают аналогичные параметры в запросе
       description: '@see Keywords_2\Mods\Keywords\Import::fromHandle()'
+    Keywords_2.Types.Volumes.NoRecheck:
+      type: integer
+      enum:
+        - 0
+        - 1
+        - 2
+      title: Какие запросы следует пропусить при перепроверке частоты
+    Keywords_2.Types.Volumes.SearcherKey:
+      type: integer
+      enum:
+        - 0
+        - 1
+      title: Ключ поисковой системы для проверки частоты
+    Keywords_2.Types.Volumes.Type:
+      type: integer
+      enum:
+        - 1
+        - 2
+        - 3
+        - 5
+        - 6
+      title: Тип частоты
+    Keywords_2.Types.Volumes.Qualifier:
+      type: object
+      properties:
+        id:
+          title: Строковй идентификатор определителя
+          type: string
+        region_key:
+          type: integer
+        searcher_key:
+          allOf:
+            - $ref: '#/components/schemas/Keywords_2.Types.Volumes.SearcherKey'
+        type:
+          allOf:
+            - $ref: '#/components/schemas/Keywords_2.Types.Volumes.Type'
+      required:
+        - id
+        - region_key
+        - searcher_key
+        - type
+      title: Определитель с настройками региона для проверки частоты запросов
+    Keywords_2.Types.Volumes.Qualifiers:
+      type: array
+      items:
+        $ref: '#/components/schemas/Keywords_2.Types.Volumes.Qualifier'
+      title: Определители проверки частоты
     Keywords_2.Methods.Volumes.Go.Edit:
       type: object
       properties:
+        debug:
+          title: |-
+            Запуск в режиме отладки
+
+            Только для админов
+          description: '@private'
+          type: boolean
         project_id:
           title: Id проекта
           type: integer
         no_recheck:
-          title: |-
-            Проверять ли запросы
-
-            - 0: проверять
-            - 1: не проверять запросы с актуальной частотой
-            - 2: не проверять запросы с частотой
           nullable: true
-          type: integer
-        check_all_regions:
-          title: Запустить проверку по всем регионам проекта (только Яндекс и Google)
-          type: boolean
+          allOf:
+            - $ref: '#/components/schemas/Keywords_2.Types.Volumes.NoRecheck'
         target_type:
           title: Тип объекта фильтрации
           default: keywords
           type: string
         qualifiers:
-          title: |-
-            Объекты определителей частоты (параметр не обязатален, если check_all_regions = true)
-
-            - int qualifier.region_key - ключ региона
-            - enum(0, 1) qualifier.searcher_key - ключ ПС
-            - enum(1, 2, 3, 5, 6) qualifier.type - индекс тип частоты (для Яндекс 1, 2, 3, 5 или 6, для Google всегда 3)
-          nullable: true
-          type: array
-          items:
-            oneOf:
-              - type: string
-              - type: number
-        currency:
-          title: Валюта
-          nullable: true
+          title: Список регионов с настройками для проверки частоты
+          description: '@type Keywords_2\Types\Volumes\Qualifier[]'
           allOf:
-            - $ref: '#/components/schemas/TV.API.Types.Currency'
+            - $ref: '#/components/schemas/Keywords_2.Types.Volumes.Qualifiers'
         group_folder_id_depth:
-          title: |-
-            При фильтрации по ID папок также искать в подпапках
-
-            Для объекта фильтрации типа keywords
+          title: При фильтрации по ID папок также искать в подпапках
           type: boolean
-        show_trash:
-          title: |-
-            Проверить корзину
-
-            Для объекта фильтрации типа keywords
-          type: boolean
-        fields:
-          $ref: '#/components/schemas/fields'
-        orders:
-          $ref: '#/components/schemas/orders'
         filters:
           $ref: '#/components/schemas/filters'
         id:
           $ref: '#/components/schemas/id'
-        limit:
-          $ref: '#/components/schemas/limit'
-        offset:
-          $ref: '#/components/schemas/offset'
-        fetch_style:
-          $ref: '#/components/schemas/fetch_style'
       required:
         - project_id
+        - qualifiers
       title: Постановка задачи на проверку частоты запросов
     Keywords_2.Methods.Volumes.Price.Get:
       type: object
       properties:
+        debug:
+          title: |-
+            Запуск в режиме отладки
+
+            Только для админов
+          description: '@private'
+          type: boolean
         project_id:
           title: Id проекта
           type: integer
         no_recheck:
-          title: |-
-            Проверять ли запросы
-
-            - 0: проверять
-            - 1: не проверять запросы с актуальной частотой
-            - 2: не проверять запросы с частотой
           nullable: true
-          type: integer
-        apply_discount:
-          title: Отображать ли сумму с учетом скидки
-          default: 1
-          type: integer
-        check_all_regions:
-          title: Запустить проверку по всем регионам проекта (только Яндекс и Google)
-          type: boolean
+          allOf:
+            - $ref: '#/components/schemas/Keywords_2.Types.Volumes.NoRecheck'
         target_type:
           title: Тип объекта фильтрации
           default: keywords
           type: string
         qualifiers:
-          title: |-
-            Объекты определителей частоты (параметр не обязатален, если check_all_regions = true)
-
-            - int qualifier.region_key - ключ региона
-            - enum(0, 1) qualifier.searcher_key - ключ ПС
-            - enum(1, 2, 3, 5, 6) qualifier.type - индекс тип частоты (для Яндекс 1, 2, 3, 5 или 6, для Google всегда 3)
-          nullable: true
-          type: array
-          items:
-            oneOf:
-              - type: string
-              - type: number
-        fields:
-          $ref: '#/components/schemas/fields'
-        orders:
-          $ref: '#/components/schemas/orders'
+          title: Список регионов с настройками для проверки частоты
+          description: '@type Keywords_2\Types\Volumes\Qualifier[]'
+          allOf:
+            - $ref: '#/components/schemas/Keywords_2.Types.Volumes.Qualifiers'
+        group_folder_id_depth:
+          title: При фильтрации по ID папок также искать в подпапках
+          type: boolean
         filters:
           $ref: '#/components/schemas/filters'
         id:
           $ref: '#/components/schemas/id'
-        limit:
-          $ref: '#/components/schemas/limit'
-        offset:
-          $ref: '#/components/schemas/offset'
-        fetch_style:
-          $ref: '#/components/schemas/fetch_style'
       required:
         - project_id
-      title: Получение стоимости проверки частоты проектов
+        - qualifiers
+      title: Информация о стоимости запуска проверки позиций по проектам
     Landings_2.Methods.Hr.Feedback.Add:
       type: object
       properties:

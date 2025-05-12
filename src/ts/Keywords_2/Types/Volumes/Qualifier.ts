@@ -9,12 +9,11 @@ export interface components {
     schemas: {
         /** Определитель с настройками региона для проверки частоты запросов */
         "Keywords_2.Types.Volumes.Qualifier": {
-            /** Ключ региона */
+            /** Строковй идентификатор определителя */
+            id: string;
             region_key: number;
-            /** Ключ поисковой системы (0 - Яндекс, 1 - Google) */
-            searcher_key: number;
-            /** Тип частоты (для Яндекса: 1, 2, 3, 5 или 6; для Google: 3) */
-            type: number;
+            searcher_key: import('./SearcherKey.ts').components['schemas']['Keywords_2.Types.Volumes.SearcherKey'];
+            type: import('./Type.ts').components['schemas']['Keywords_2.Types.Volumes.Type'];
         };
     };
     responses: never;

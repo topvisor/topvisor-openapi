@@ -12505,7 +12505,7 @@
                                                     "type": "object",
                                                     "properties": {
                                                         "result": {
-                                                            "type": "integer"
+                                                            "title": "@return ?int"
                                                         }
                                                     },
                                                     "required": [
@@ -12514,9 +12514,6 @@
                                                 },
                                                 {
                                                     "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
-                                                },
-                                                {
-                                                    "$ref": "Pagination.json#/components/schemas/Pagination"
                                                 }
                                             ]
                                         },
@@ -12528,7 +12525,8 @@
                             },
                             "model": {
                                 "schema": {
-                                    "type": "null"
+                                    "$ref": "Models/Keywords.json#/components/schemas/Models.Keywords",
+                                    "description": "Only for typescript, does not contain real data"
                                 }
                             }
                         }
@@ -12542,7 +12540,7 @@
                 "tags": [
                     "Keywords_2"
                 ],
-                "summary": "Получение стоимости проверки частоты проектов",
+                "summary": "Информация о стоимости запуска проверки позиций по проектам",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -12566,18 +12564,7 @@
                                                     "type": "object",
                                                     "properties": {
                                                         "result": {
-                                                            "type": "array",
-                                                            "items": {
-                                                                "oneOf": [
-                                                                    {
-                                                                        "type": "string"
-                                                                    },
-                                                                    {
-                                                                        "type": "number"
-                                                                    }
-                                                                ]
-                                                            },
-                                                            "title": "@throws Exception"
+                                                            "title": "@return object{pricesByUsers: object{int: object{projectsIds: [], price: float, priceOriginal: float}}}"
                                                         }
                                                     },
                                                     "required": [
@@ -12586,9 +12573,6 @@
                                                 },
                                                 {
                                                     "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
-                                                },
-                                                {
-                                                    "$ref": "Pagination.json#/components/schemas/Pagination"
                                                 }
                                             ]
                                         },
@@ -12600,7 +12584,8 @@
                             },
                             "model": {
                                 "schema": {
-                                    "type": "null"
+                                    "$ref": "Models/Keywords.json#/components/schemas/Models.Keywords",
+                                    "description": "Only for typescript, does not contain real data"
                                 }
                             }
                         }

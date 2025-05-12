@@ -10,18 +10,22 @@
             "Keywords_2.Methods.Volumes.Go.Edit": {
                 "type": "object",
                 "properties": {
+                    "debug": {
+                        "title": "Запуск в режиме отладки\n\nТолько для админов",
+                        "description": "@private",
+                        "type": "boolean"
+                    },
                     "project_id": {
                         "title": "Id проекта",
                         "type": "integer"
                     },
                     "no_recheck": {
-                        "title": "Проверять ли запросы\n\n- 0: проверять\n- 1: не проверять запросы с актуальной частотой\n- 2: не проверять запросы с частотой",
                         "nullable": true,
-                        "type": "integer"
-                    },
-                    "check_all_regions": {
-                        "title": "Запустить проверку по всем регионам проекта (только Яндекс и Google)",
-                        "type": "boolean"
+                        "allOf": [
+                            {
+                                "$ref": "../../../../Keywords_2/Types/Volumes/NoRecheck.json#/components/schemas/Keywords_2.Types.Volumes.NoRecheck"
+                            }
+                        ]
                     },
                     "target_type": {
                         "title": "Тип объекта фильтрации",
@@ -29,61 +33,28 @@
                         "type": "string"
                     },
                     "qualifiers": {
-                        "title": "Объекты определителей частоты (параметр не обязатален, если check_all_regions = true)\n\n- int qualifier.region_key - ключ региона\n- enum(0, 1) qualifier.searcher_key - ключ ПС\n- enum(1, 2, 3, 5, 6) qualifier.type - индекс тип частоты (для Яндекс 1, 2, 3, 5 или 6, для Google всегда 3)",
-                        "nullable": true,
-                        "type": "array",
-                        "items": {
-                            "oneOf": [
-                                {
-                                    "type": "string"
-                                },
-                                {
-                                    "type": "number"
-                                }
-                            ]
-                        }
-                    },
-                    "currency": {
-                        "title": "Валюта",
-                        "nullable": true,
+                        "title": "Список регионов с настройками для проверки частоты",
+                        "description": "@type Keywords_2\\Types\\Volumes\\Qualifier[]",
                         "allOf": [
                             {
-                                "$ref": "../../../../TV/API/Types/Currency.json#/components/schemas/TV.API.Types.Currency"
+                                "$ref": "../../../../Keywords_2/Types/Volumes/Qualifiers.json#/components/schemas/Keywords_2.Types.Volumes.Qualifiers"
                             }
                         ]
                     },
                     "group_folder_id_depth": {
-                        "title": "При фильтрации по ID папок также искать в подпапках\n\nДля объекта фильтрации типа keywords",
+                        "title": "При фильтрации по ID папок также искать в подпапках",
                         "type": "boolean"
-                    },
-                    "show_trash": {
-                        "title": "Проверить корзину\n\nДля объекта фильтрации типа keywords",
-                        "type": "boolean"
-                    },
-                    "fields": {
-                        "$ref": "../../../../TV/API/Params/FieldsTrait.json#/components/schemas/TV.API.Params.FieldsTrait/properties/fields"
-                    },
-                    "orders": {
-                        "$ref": "../../../../TV/API/Params/OrdersTrait.json#/components/schemas/TV.API.Params.OrdersTrait/properties/orders"
                     },
                     "filters": {
                         "$ref": "../../../../TV/API/Params/FiltersTrait.json#/components/schemas/TV.API.Params.FiltersTrait/properties/filters"
                     },
                     "id": {
                         "$ref": "../../../../TV/API/Params/FiltersTrait.json#/components/schemas/TV.API.Params.FiltersTrait/properties/id"
-                    },
-                    "limit": {
-                        "$ref": "../../../../TV/API/Params/LimitTrait.json#/components/schemas/TV.API.Params.LimitTrait/properties/limit"
-                    },
-                    "offset": {
-                        "$ref": "../../../../TV/API/Params/OffsetTrait.json#/components/schemas/TV.API.Params.OffsetTrait/properties/offset"
-                    },
-                    "fetch_style": {
-                        "$ref": "../../../../TV/API/Params/FetchStyleTrait.json#/components/schemas/TV.API.Params.FetchStyleTrait/properties/fetch_style"
                     }
                 },
                 "required": [
-                    "project_id"
+                    "project_id",
+                    "qualifiers"
                 ],
                 "title": "Постановка задачи на проверку частоты запросов"
             }
