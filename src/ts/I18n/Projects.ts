@@ -291,6 +291,8 @@ export interface components {
             /** @constant */
             readonly Select_project: "Select project";
             /** @constant */
+            readonly List_of_projects: "List of projects";
+            /** @constant */
             readonly To_list_of_projects: "List of projects";
             /** @constant */
             readonly Search_projects: "Search projects";

@@ -574,6 +574,10 @@
                         "const": "Select project",
                         "readOnly": true
                     },
+                    "List_of_projects": {
+                        "const": "List of projects",
+                        "readOnly": true
+                    },
                     "To_list_of_projects": {
                         "const": "List of projects",
                         "readOnly": true
@@ -1104,6 +1108,7 @@
                     "Popular",
                     "Other",
                     "Select_project",
+                    "List_of_projects",
                     "To_list_of_projects",
                     "Search_projects",
                     "Delegation",
