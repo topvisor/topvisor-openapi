@@ -1179,7 +1179,7 @@
                         "readOnly": true
                     },
                     "Groups_with_keywords": {
-                        "const": "Groups (with keywords)",
+                        "const": "Groups with keywords",
                         "readOnly": true
                     },
                     "Type_of_volume_needed_for_visibility": {

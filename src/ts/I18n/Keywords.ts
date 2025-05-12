@@ -593,7 +593,7 @@ export interface components {
             /** @constant */
             readonly Root_folder: "Root folder";
             /** @constant */
-            readonly Groups_with_keywords: "Groups (with keywords)";
+            readonly Groups_with_keywords: "Groups with keywords";
             /** @constant */
             readonly Type_of_volume_needed_for_visibility: "Check this type of Search Volume to calculate Visibility for";
             /** @constant */
