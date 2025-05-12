@@ -83,15 +83,15 @@ export interface components {
             /** @constant */
             readonly Legal_services: "Legal services";
             /** @constant */
-            readonly Go_to_statictics: "Перейти к статистике за этот день";
+            readonly Go_to_statictics: "Go to statistics of the day";
             /** @constant */
-            readonly Apometr_info: "Апометр — инструмент для определения изменений и&nbsp;обновлений поисковой выдачи с&nbsp;детализацией по&nbsp;тематикам. Проверка изменений происходит каждые 3 часа. Степень изменения выдачи приведена к шкале 0&nbsp;–&nbsp;10 баллов. Подробнее про работу Апометра можно почитать <a href=\"{{ hrefSupport }}\" target=\"_blank\">в&nbsp;Справке.</a>";
+            readonly Apometr_info: "Updates Scanner is a tool that detects changes and updates in organic search results split by topics. We check SERP every 3 hours and measure changes on a 10-point scale. <a href=\"{{ hrefSupport }}\" target=\"_blank\">More on Updates Scanner →.</a>";
             /** @constant */
-            readonly Updates_yandex_telegram: "Апдейты Яндекса в Telegram";
+            readonly Updates_yandex_telegram: "Yandex Updates in Telegram";
             /** @constant */
-            readonly Updates_yandex_X: "Апдейты Яндекса в X";
+            readonly Updates_yandex_X: "Yandex Updates in X";
             /** @constant */
-            readonly Share_link: "Скопировать ссылку";
+            readonly Share_link: "Copy link";
             /** @constant */
             readonly Embed_widget: "Embed widget";
         };

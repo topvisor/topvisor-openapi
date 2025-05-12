@@ -159,23 +159,23 @@
                         "readOnly": true
                     },
                     "Go_to_statictics": {
-                        "const": "Перейти к статистике за этот день",
+                        "const": "Go to statistics of the day",
                         "readOnly": true
                     },
                     "Apometr_info": {
-                        "const": "Апометр — инструмент для определения изменений и&nbsp;обновлений поисковой выдачи с&nbsp;детализацией по&nbsp;тематикам. Проверка изменений происходит каждые 3 часа. Степень изменения выдачи приведена к шкале 0&nbsp;–&nbsp;10 баллов. Подробнее про работу Апометра можно почитать <a href=\"{{ hrefSupport }}\" target=\"_blank\">в&nbsp;Справке.</a>",
+                        "const": "Updates Scanner is a tool that detects changes and updates in organic search results split by topics. We check SERP every 3 hours and measure changes on a 10-point scale. <a href=\"{{ hrefSupport }}\" target=\"_blank\">More on Updates Scanner →.</a>",
                         "readOnly": true
                     },
                     "Updates_yandex_telegram": {
-                        "const": "Апдейты Яндекса в Telegram",
+                        "const": "Yandex Updates in Telegram",
                         "readOnly": true
                     },
                     "Updates_yandex_X": {
-                        "const": "Апдейты Яндекса в X",
+                        "const": "Yandex Updates in X",
                         "readOnly": true
                     },
                     "Share_link": {
-                        "const": "Скопировать ссылку",
+                        "const": "Copy link",
                         "readOnly": true
                     },
                     "Embed_widget": {
