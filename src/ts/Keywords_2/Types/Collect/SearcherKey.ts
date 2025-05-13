@@ -7,8 +7,11 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Массив определителей региона */
-        "Keywords_2.Objects.Collect.Ext.QualifiersArray": import('./Qualifier.ts').components['schemas']['Keywords_2.Objects.Collect.Ext.Qualifier'][];
+        /**
+         * Ключ поисковой системы для проверки частоты
+         * @enum {integer}
+         */
+        "Keywords_2.Types.Collect.SearcherKey": 0 | 1 | 5 | 104 | 100 | 101 | 105;
     };
     responses: never;
     parameters: never;

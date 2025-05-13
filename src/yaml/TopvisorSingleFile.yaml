@@ -14748,6 +14748,63 @@ components:
               - type: string
               - type: number
           nullable: true
+    Keywords_2.Types.Collect.SearcherKey:
+      type: integer
+      enum:
+        - 0
+        - 1
+        - 5
+        - 104
+        - 100
+        - 101
+        - 105
+      title: Ключ поисковой системы для проверки частоты
+    Keywords_2.Types.Collect.HintGenerator:
+      type: string
+      enum:
+        - letter
+        - letter_ru
+        - number
+        - space
+      title: Тип метода перебора
+    Keywords_2.Types.Collect.HintGenerators:
+      type: array
+      items:
+        $ref: '#/components/schemas/Keywords_2.Types.Collect.HintGenerator'
+      title: Типы метода перебора
+    Keywords_2.Types.Collect.Qualifier:
+      type: object
+      properties:
+        region_key:
+          type: integer
+        searcher_key:
+          allOf:
+            - $ref: '#/components/schemas/Keywords_2.Types.Collect.SearcherKey'
+        region_lang:
+          nullable: true
+          type: string
+        also_searched:
+          nullable: true
+          type: boolean
+        depth:
+          nullable: true
+          type: integer
+        hint_depth:
+          nullable: true
+          type: integer
+        hint_generators:
+          nullable: true
+          allOf:
+            - $ref: '#/components/schemas/Keywords_2.Types.Collect.HintGenerators'
+      required:
+        - region_key
+        - searcher_key
+      title: Определитель с настройками для подбора
+    Keywords_2.Types.Collect.Qualifiers:
+      type: array
+      items:
+        $ref: '#/components/schemas/Keywords_2.Types.Collect.Qualifier'
+      title: Определители с настройками для подбора
     Keywords_2.Types.Collect.ToType:
       type: string
       enum:
@@ -14780,12 +14837,8 @@ components:
               - type: number
         qualifiers:
           title: Объекты определителей настроек ПС и регионов
-          description: '@var array<int, array{region_key: int, searcher_key: (0 | 1 | 5 | 100 | 101 | 102 | 104 | 105 | 106), region_lang?: (string | null), also_searched?: (int | null), depth?: (int | null), hint_depth: (1 | 2 | 3), hint_generators: array<(''letter'' | ''letter_ru'' | ''number'' | ''space'')>}>'
-          type: array
-          items:
-            oneOf:
-              - type: string
-              - type: number
+          allOf:
+            - $ref: '#/components/schemas/Keywords_2.Types.Collect.Qualifiers'
         keywords_minus:
           title: Минус фразы (только для searcher_key = 0 и searcher_key = 1)
           type: array
@@ -19480,12 +19533,8 @@ components:
               - type: number
         qualifiers:
           title: Объекты определителей настроек ПС и регионов
-          description: '@var array<int, array{region_key: int, searcher_key: (0 | 1 | 5 | 100 | 101 | 102 | 104 | 105 | 106), region_lang?: (string | null), also_searched?: (int | null), depth?: (int | null), hint_depth: (1 | 2 | 3), hint_generators: array<(''letter'' | ''letter_ru'' | ''number'' | ''space'')>}>'
-          type: array
-          items:
-            oneOf:
-              - type: string
-              - type: number
+          allOf:
+            - $ref: '#/components/schemas/Keywords_2.Types.Collect.Qualifiers'
         keywords_minus:
           title: Минус фразы (только для searcher_key = 0 и searcher_key = 1)
           type: array
@@ -19539,12 +19588,8 @@ components:
               - type: number
         qualifiers:
           title: Объекты определителей настроек ПС и регионов
-          description: '@var array<int, array{region_key: int, searcher_key: (0 | 1 | 5 | 100 | 101 | 102 | 104 | 105 | 106), region_lang?: (string | null), also_searched?: (int | null), depth?: (int | null), hint_depth: (1 | 2 | 3), hint_generators: array<(''letter'' | ''letter_ru'' | ''number'' | ''space'')>}>'
-          type: array
-          items:
-            oneOf:
-              - type: string
-              - type: number
+          allOf:
+            - $ref: '#/components/schemas/Keywords_2.Types.Collect.Qualifiers'
         keywords_minus:
           title: Минус фразы (только для searcher_key = 0 и searcher_key = 1)
           type: array
@@ -22183,26 +22228,6 @@ components:
         - groupNameWithKeywords
         - keywords
       title: По каким параметрам расширять группу
-    Keywords_2.Objects.Collect.Ext.Qualifier:
-      type: object
-      properties:
-        region_key:
-          type: integer
-        searcher_key:
-          allOf:
-            - $ref: '#/components/schemas/Positions_2.Types.SearcherKey'
-        region_lang:
-          nullable: true
-          type: string
-      required:
-        - region_key
-        - searcher_key
-      title: Определитель региона
-    Keywords_2.Objects.Collect.Ext.QualifiersArray:
-      type: array
-      items:
-        $ref: '#/components/schemas/Keywords_2.Objects.Collect.Ext.Qualifier'
-      title: Массив определителей региона
     Keywords_2.Methods.Collect.Ext.Go.Edit:
       type: object
       properties:
@@ -22224,7 +22249,7 @@ components:
         qualifiers:
           title: Объекты определителей настроек ПС и регионов
           allOf:
-            - $ref: '#/components/schemas/Keywords_2.Objects.Collect.Ext.QualifiersArray'
+            - $ref: '#/components/schemas/Keywords_2.Types.Collect.Qualifiers'
         filters:
           $ref: '#/components/schemas/filters'
         id:
@@ -22259,7 +22284,7 @@ components:
         qualifiers:
           title: Объекты определителей настроек ПС и регионов
           allOf:
-            - $ref: '#/components/schemas/Keywords_2.Objects.Collect.Ext.QualifiersArray'
+            - $ref: '#/components/schemas/Keywords_2.Types.Collect.Qualifiers'
         filters:
           $ref: '#/components/schemas/filters'
         id:

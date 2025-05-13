@@ -13,11 +13,8 @@ export interface components {
             project_id: number;
             /** Список исходных запросов */
             keywords: (string | number)[];
-            /**
-             * Объекты определителей настроек ПС и регионов
-             * @description @var array<int, array{region_key: int, searcher_key: (0 | 1 | 5 | 100 | 101 | 102 | 104 | 105 | 106), region_lang?: (string | null), also_searched?: (int | null), depth?: (int | null), hint_depth: (1 | 2 | 3), hint_generators: array<('letter' | 'letter_ru' | 'number' | 'space')>}>
-             */
-            qualifiers: (string | number)[];
+            /** Объекты определителей настроек ПС и регионов */
+            qualifiers: import('../../../Types/Collect/Qualifiers.ts').components['schemas']['Keywords_2.Types.Collect.Qualifiers'];
             /** Минус фразы (только для searcher_key = 0 и searcher_key = 1) */
             keywords_minus?: (string | number)[];
             /** Id группы для размещения подобранных запросов */

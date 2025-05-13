@@ -41,7 +41,7 @@
                         "title": "Объекты определителей настроек ПС и регионов",
                         "allOf": [
                             {
-                                "$ref": "../../../../../Keywords_2/Objects/Collect/Ext/QualifiersArray.json#/components/schemas/Keywords_2.Objects.Collect.Ext.QualifiersArray"
+                                "$ref": "../../../../../Keywords_2/Types/Collect/Qualifiers.json#/components/schemas/Keywords_2.Types.Collect.Qualifiers"
                             }
                         ]
                     },

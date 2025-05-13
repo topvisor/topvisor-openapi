@@ -7,11 +7,15 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Определитель региона */
-        "Keywords_2.Objects.Collect.Ext.Qualifier": {
+        /** Определитель с настройками для подбора */
+        "Keywords_2.Types.Collect.Qualifier": {
             region_key: number;
-            searcher_key: import('../../../../Positions_2/Types/SearcherKey.ts').components['schemas']['Positions_2.Types.SearcherKey'];
+            searcher_key: import('./SearcherKey.ts').components['schemas']['Keywords_2.Types.Collect.SearcherKey'];
             region_lang?: string | null;
+            also_searched?: boolean | null;
+            depth?: number | null;
+            hint_depth?: number | null;
+            hint_generators?: import('./HintGenerators.ts').components['schemas']['Keywords_2.Types.Collect.HintGenerators'] | null;
         };
     };
     responses: never;

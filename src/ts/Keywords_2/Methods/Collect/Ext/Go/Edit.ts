@@ -16,7 +16,7 @@ export interface components {
             /** Каким типом расширять группу */
             type: import('../../../../Types/Collect/Ext/Type.ts').components['schemas']['Keywords_2.Types.Collect.Ext.Type'];
             /** Объекты определителей настроек ПС и регионов */
-            qualifiers: import('../../../../Objects/Collect/Ext/QualifiersArray.ts').components['schemas']['Keywords_2.Objects.Collect.Ext.QualifiersArray'];
+            qualifiers: import('../../../../Types/Collect/Qualifiers.ts').components['schemas']['Keywords_2.Types.Collect.Qualifiers'];
             filters?: import('../../../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['filters'];
             id?: import('../../../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['id'];
         };
