@@ -6964,7 +6964,7 @@ paths:
                       - type: object
                         properties:
                           result:
-                            title: '@return ?int'
+                            title: '@throws Exception'
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'

@@ -12505,7 +12505,7 @@
                                                     "type": "object",
                                                     "properties": {
                                                         "result": {
-                                                            "title": "@return ?int"
+                                                            "title": "@throws Exception"
                                                         }
                                                     },
                                                     "required": [

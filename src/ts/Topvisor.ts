@@ -11194,7 +11194,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        /** @return ?int */
+                        /** @throws Exception */
                         result: unknown;
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: import('./Models/Keywords.ts').components['schemas']['Models.Keywords'];
