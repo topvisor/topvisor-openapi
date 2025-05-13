@@ -365,6 +365,10 @@ export interface components {
             /** @constant */
             readonly Integrate_to_use_the_tool_3: "your account with Google Analytics, Google Search Console or Yandex Metrica";
             /** @constant */
+            readonly Integrate_to_use_the_tool_3_without_yandex: "your account with Google Analytics, Google Search Console";
+            /** @constant */
+            readonly Integrate_to_use_the_tool_aditional: "";
+            /** @constant */
             readonly Methods_of_research: "Methods";
             /** @constant */
             readonly Popular: "Popular";

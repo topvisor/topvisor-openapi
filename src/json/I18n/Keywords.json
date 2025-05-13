@@ -722,6 +722,14 @@
                         "const": "your account with Google Analytics, Google Search Console or Yandex Metrica",
                         "readOnly": true
                     },
+                    "Integrate_to_use_the_tool_3_without_yandex": {
+                        "const": "your account with Google Analytics, Google Search Console",
+                        "readOnly": true
+                    },
+                    "Integrate_to_use_the_tool_aditional": {
+                        "const": "",
+                        "readOnly": true
+                    },
                     "Methods_of_research": {
                         "const": "Methods",
                         "readOnly": true
@@ -1369,6 +1377,8 @@
                     "Integrate_to_use_the_tool_1",
                     "Integrate_to_use_the_tool_2",
                     "Integrate_to_use_the_tool_3",
+                    "Integrate_to_use_the_tool_3_without_yandex",
+                    "Integrate_to_use_the_tool_aditional",
                     "Methods_of_research",
                     "Popular",
                     "Other",

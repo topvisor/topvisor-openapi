@@ -814,7 +814,7 @@
                         "const": "You can manage added locations in project settings",
                         "readOnly": true
                     },
-                    "Enter_location_or_yandex_code": {
+                    "Enter_location_or_lr": {
                         "const": "Enter Location or its Yandex code",
                         "readOnly": true
                     },
@@ -964,6 +964,10 @@
                     },
                     "Project_url": {
                         "const": "Project URL",
+                        "readOnly": true
+                    },
+                    "Enter_location": {
+                        "const": "Enter location",
                         "readOnly": true
                     }
                 },
@@ -1168,7 +1172,7 @@
                     "Select_search_engine",
                     "Press_search_engine_icon_to_add_location",
                     "You_can_manage_locations_in_settings",
-                    "Enter_location_or_yandex_code",
+                    "Enter_location_or_lr",
                     "Locations",
                     "Skip_wizard",
                     "Setup_rank_tracker",
@@ -1204,7 +1208,8 @@
                     "Sort_by_search_engine",
                     "Sort_by_yande_region_code",
                     "Sort_by_lphabetically",
-                    "Project_url"
+                    "Project_url",
+                    "Enter_location"
                 ]
             }
         }
