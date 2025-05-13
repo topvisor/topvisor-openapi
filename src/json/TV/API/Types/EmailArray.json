@@ -13,7 +13,7 @@
                     "$ref": "../../../TV/API/Types/Email.json#/components/schemas/TV.API.Types.Email"
                 },
                 "title": "Тип массива: Email[]",
-                "description": "@see Email"
+                "description": "@extends AbstractStringArray<Email>\n@method Email[] getValues()\n@method Email current()\n@see \\TV\\API\\Types\\Email"
             }
         }
     }

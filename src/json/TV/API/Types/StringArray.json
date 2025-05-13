@@ -12,7 +12,8 @@
                 "items": {
                     "type": "string"
                 },
-                "title": "Тип массива: string[]"
+                "title": "Тип массива: string[]",
+                "description": "@extends AbstractTypedArray<string>\n@method string[] getValues()\n@method string current()"
             }
         }
     }

@@ -13,7 +13,7 @@
                     "$ref": "../../../TV/API/Types/UrlUTF.json#/components/schemas/TV.API.Types.UrlUTF"
                 },
                 "title": "Тип массива: UrlUTF[]",
-                "description": "@see UrlUTF"
+                "description": "@extends AbstractStringArray<UrlUTF>\n@method UrlUTF[] getValues()\n@method UrlUTF current()\n@see \\TV\\API\\Types\\UrlUTF"
             }
         }
     }

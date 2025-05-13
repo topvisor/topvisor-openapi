@@ -12,7 +12,8 @@
                 "items": {
                     "$ref": "../../../TV/API/Types/UrlShortUTF.json#/components/schemas/TV.API.Types.UrlShortUTF"
                 },
-                "title": "Тип массива: UrlShortUTF[]"
+                "title": "Тип массива: UrlShortUTF[]",
+                "description": "@extends AbstractStringArray<UrlShortUTF>\n@method UrlShortUTF[] getValues()\n@method UrlShortUTF current()\n@see \\TV\\API\\Types\\UrlShortUTF"
             }
         }
     }

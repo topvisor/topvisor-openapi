@@ -7,11 +7,14 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Тип массива: int
+        /**
+         * Тип массива: int
          *
          *     Принимает: Любые целые числа и числа в строках
-         *
-         *     Хранит: int */
+         * @description @extends AbstractTypedArray<int>
+         *     @method int[] getValues()
+         *     @method int current()
+         */
         "TV.API.Types.IntArray": number[];
     };
     responses: never;

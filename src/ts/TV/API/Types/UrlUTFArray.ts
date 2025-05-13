@@ -9,7 +9,10 @@ export interface components {
     schemas: {
         /**
          * Тип массива: UrlUTF[]
-         * @description @see UrlUTF
+         * @description @extends AbstractStringArray<UrlUTF>
+         *     @method UrlUTF[] getValues()
+         *     @method UrlUTF current()
+         *     @see \TV\API\Types\UrlUTF
          */
         "TV.API.Types.UrlUTFArray": import('./UrlUTF.ts').components['schemas']['TV.API.Types.UrlUTF'][];
     };

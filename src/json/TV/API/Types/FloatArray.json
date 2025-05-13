@@ -13,6 +13,7 @@
                     "type": "number"
                 },
                 "title": "Тип: float[]",
+                "description": "\n@extends AbstractTypedArray<float>\n@method float[] getValues()\n@method float current()",
                 "deprecated": true
             }
         }

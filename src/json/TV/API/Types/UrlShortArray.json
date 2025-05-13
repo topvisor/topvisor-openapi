@@ -13,7 +13,7 @@
                     "$ref": "../../../TV/API/Types/UrlShort.json#/components/schemas/TV.API.Types.UrlShort"
                 },
                 "title": "Тип массива: UrlShort[]",
-                "description": "@see UrlShort"
+                "description": "@extends AbstractStringArray<UrlShort>\n@method UrlShort[] getValues()\n@method UrlShort current()\n@see \\TV\\API\\Types\\UrlShort"
             }
         }
     }

@@ -9,7 +9,10 @@ export interface components {
     schemas: {
         /**
          * Тип массива: Url[]
-         * @description @see Url
+         * @description @extends AbstractStringArray<Url>
+         *     @method Url[] getValues()
+         *     @method Url current()
+         *     @see \TV\API\Types\Url
          */
         "TV.API.Types.UrlArray": import('./Url.ts').components['schemas']['TV.API.Types.Url'][];
     };

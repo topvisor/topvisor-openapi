@@ -10,6 +10,10 @@ export interface components {
         /**
          * Тип: float[]
          * @deprecated
+         * @description
+         *     @extends AbstractTypedArray<float>
+         *     @method float[] getValues()
+         *     @method float current()
          */
         "TV.API.Types.FloatArray": number[];
     };

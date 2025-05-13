@@ -34,7 +34,6 @@
                     },
                     "qualifiers": {
                         "title": "Список регионов с настройками для проверки частоты",
-                        "description": "@type Keywords_2\\Types\\Volumes\\Qualifier[]",
                         "allOf": [
                             {
                                 "$ref": "../../../../Keywords_2/Types/Volumes/Qualifiers.json#/components/schemas/Keywords_2.Types.Volumes.Qualifiers"

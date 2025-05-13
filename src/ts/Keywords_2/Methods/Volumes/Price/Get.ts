@@ -24,10 +24,7 @@ export interface components {
              * @default keywords
              */
             target_type: string;
-            /**
-             * Список регионов с настройками для проверки частоты
-             * @description @type Keywords_2\Types\Volumes\Qualifier[]
-             */
+            /** Список регионов с настройками для проверки частоты */
             qualifiers: import('../../../Types/Volumes/Qualifiers.ts').components['schemas']['Keywords_2.Types.Volumes.Qualifiers'];
             /** При фильтрации по ID папок также искать в подпапках */
             group_folder_id_depth?: boolean;

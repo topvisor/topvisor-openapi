@@ -7,7 +7,14 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Определители проверки частоты */
+        /**
+         * Определители проверки частоты
+         * @description @extends AbstractStringArray<Qualifier>
+         *     @method Qualifier[] getValues()
+         *     @method Qualifier current()
+         *     @method Qualifier offsetGet()
+         *     @see \TV\API\Types\Qualifier
+         */
         "Keywords_2.Types.Volumes.Qualifiers": import('./Qualifier.ts').components['schemas']['Keywords_2.Types.Volumes.Qualifier'][];
     };
     responses: never;

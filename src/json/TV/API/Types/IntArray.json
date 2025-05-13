@@ -12,7 +12,8 @@
                 "items": {
                     "type": "integer"
                 },
-                "title": "Тип массива: int\n\nПринимает: Любые целые числа и числа в строках\n\nХранит: int"
+                "title": "Тип массива: int\n\nПринимает: Любые целые числа и числа в строках",
+                "description": "@extends AbstractTypedArray<int>\n@method int[] getValues()\n@method int current()"
             }
         }
     }

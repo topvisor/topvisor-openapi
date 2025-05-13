@@ -11010,6 +11010,10 @@ components:
       items:
         type: string
       title: 'Тип массива: string[]'
+      description: |-
+        @extends AbstractTypedArray<string>
+        @method string[] getValues()
+        @method string current()
     ResponseSuccess:
       type: object
       properties:
@@ -12223,8 +12227,10 @@ components:
         Тип массива: int
 
         Принимает: Любые целые числа и числа в строках
-
-        Хранит: int
+      description: |-
+        @extends AbstractTypedArray<int>
+        @method int[] getValues()
+        @method int current()
     Admin_2.Methods.Informer.Add:
       type: object
       properties:
@@ -14439,8 +14445,10 @@ components:
         Тип массива: boolean
 
         Принимает: 0|1|false|true
-
-        Хранит: false|true
+      description: |-
+        @extends AbstractTypedArray<boolean>
+        @method bool[] getValues()
+        @method bool current()
     Example_2.Types.Number:
       type: integer
       enum:
@@ -15346,7 +15354,11 @@ components:
       items:
         $ref: '#/components/schemas/TV.API.Types.UrlShort'
       title: 'Тип массива: UrlShort[]'
-      description: '@see UrlShort'
+      description: |-
+        @extends AbstractStringArray<UrlShort>
+        @method UrlShort[] getValues()
+        @method UrlShort current()
+        @see \TV\API\Types\UrlShort
     Projects_2.Methods.Competitors.Add:
       type: object
       properties:
@@ -16064,7 +16076,11 @@ components:
       items:
         $ref: '#/components/schemas/TV.API.Types.Url'
       title: 'Тип массива: Url[]'
-      description: '@see Url'
+      description: |-
+        @extends AbstractStringArray<Url>
+        @method Url[] getValues()
+        @method Url current()
+        @see \TV\API\Types\Url
     Urls_2.Methods.Import.Add:
       type: object
       properties:
@@ -19674,6 +19690,12 @@ components:
       items:
         $ref: '#/components/schemas/Keywords_2.Types.Volumes.Qualifier'
       title: Определители проверки частоты
+      description: |-
+        @extends AbstractStringArray<Qualifier>
+        @method Qualifier[] getValues()
+        @method Qualifier current()
+        @method Qualifier offsetGet()
+        @see \TV\API\Types\Qualifier
     Keywords_2.Methods.Volumes.Go.Edit:
       type: object
       properties:
@@ -19697,7 +19719,6 @@ components:
           type: string
         qualifiers:
           title: Список регионов с настройками для проверки частоты
-          description: '@type Keywords_2\Types\Volumes\Qualifier[]'
           allOf:
             - $ref: '#/components/schemas/Keywords_2.Types.Volumes.Qualifiers'
         group_folder_id_depth:
@@ -19734,7 +19755,6 @@ components:
           type: string
         qualifiers:
           title: Список регионов с настройками для проверки частоты
-          description: '@type Keywords_2\Types\Volumes\Qualifier[]'
           allOf:
             - $ref: '#/components/schemas/Keywords_2.Types.Volumes.Qualifiers'
         group_folder_id_depth:
