@@ -19718,9 +19718,18 @@ components:
           default: keywords
           type: string
         qualifiers:
-          title: Список регионов с настройками для проверки частоты
+          title: |-
+            Список регионов с настройками для проверки частоты
+
+            - Обязателен, если `set_qualifiers_for_visibility` != `true`
+            - Нельзя указывать, если `set_qualifiers_for_visibility` = `true`
+          nullable: true
           allOf:
             - $ref: '#/components/schemas/Keywords_2.Types.Volumes.Qualifiers'
+        set_qualifiers_for_visibility:
+          title: Проверить частоты для всех регионов с нужным типом для расчета видимости
+          nullable: true
+          type: boolean
         group_folder_id_depth:
           title: При фильтрации по ID папок также искать в подпапках
           type: boolean
@@ -19730,7 +19739,6 @@ components:
           $ref: '#/components/schemas/id'
       required:
         - project_id
-        - qualifiers
       title: Постановка задачи на проверку частоты запросов
     Keywords_2.Methods.Volumes.Price.Get:
       type: object
@@ -19754,9 +19762,18 @@ components:
           default: keywords
           type: string
         qualifiers:
-          title: Список регионов с настройками для проверки частоты
+          title: |-
+            Список регионов с настройками для проверки частоты
+
+            - Обязателен, если `set_qualifiers_for_visibility` != `true`
+            - Нельзя указывать, если `set_qualifiers_for_visibility` = `true`
+          nullable: true
           allOf:
             - $ref: '#/components/schemas/Keywords_2.Types.Volumes.Qualifiers'
+        set_qualifiers_for_visibility:
+          title: Проверить частоты для всех регионов с нужным типом для расчета видимости
+          nullable: true
+          type: boolean
         group_folder_id_depth:
           title: При фильтрации по ID папок также искать в подпапках
           type: boolean
@@ -19766,7 +19783,6 @@ components:
           $ref: '#/components/schemas/id'
       required:
         - project_id
-        - qualifiers
       title: Информация о стоимости запуска проверки позиций по проектам
     Landings_2.Methods.Hr.Feedback.Add:
       type: object

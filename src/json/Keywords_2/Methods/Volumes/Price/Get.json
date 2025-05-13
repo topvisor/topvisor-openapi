@@ -33,12 +33,18 @@
                         "type": "string"
                     },
                     "qualifiers": {
-                        "title": "Список регионов с настройками для проверки частоты",
+                        "title": "Список регионов с настройками для проверки частоты\n\n- Обязателен, если `set_qualifiers_for_visibility` != `true`\n- Нельзя указывать, если `set_qualifiers_for_visibility` = `true`",
+                        "nullable": true,
                         "allOf": [
                             {
                                 "$ref": "../../../../Keywords_2/Types/Volumes/Qualifiers.json#/components/schemas/Keywords_2.Types.Volumes.Qualifiers"
                             }
                         ]
+                    },
+                    "set_qualifiers_for_visibility": {
+                        "title": "Проверить частоты для всех регионов с нужным типом для расчета видимости",
+                        "nullable": true,
+                        "type": "boolean"
                     },
                     "group_folder_id_depth": {
                         "title": "При фильтрации по ID папок также искать в подпапках",
@@ -52,8 +58,7 @@
                     }
                 },
                 "required": [
-                    "project_id",
-                    "qualifiers"
+                    "project_id"
                 ],
                 "title": "Информация о стоимости запуска проверки позиций по проектам"
             }
