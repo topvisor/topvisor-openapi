@@ -33,6 +33,14 @@ export interface components {
              * @default No set
              */
             readonly HOST_DEV: string;
+            /**
+             * Тип биллинга по умолчанию
+             *
+             *     - balance
+             *     - limits
+             * @default balance
+             */
+            readonly DEFAULT_BANK_TYPE: string;
             /** Список поддерживаемых языков, ISO 639-1 */
             readonly LANGUAGES: (string | number)[];
             /**

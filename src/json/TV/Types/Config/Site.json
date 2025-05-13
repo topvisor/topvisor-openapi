@@ -34,6 +34,12 @@
                         "readOnly": true,
                         "type": "string"
                     },
+                    "DEFAULT_BANK_TYPE": {
+                        "title": "Тип биллинга по умолчанию\n\n- balance\n- limits",
+                        "default": "balance",
+                        "readOnly": true,
+                        "type": "string"
+                    },
                     "LANGUAGES": {
                         "title": "Список поддерживаемых языков, ISO 639-1",
                         "readOnly": true,
@@ -198,6 +204,7 @@
                     "ID_ASSETS",
                     "HOST",
                     "HOST_DEV",
+                    "DEFAULT_BANK_TYPE",
                     "LANGUAGES",
                     "LANGUAGE_MAIN",
                     "LANGUAGES_ADDITIONAL",
