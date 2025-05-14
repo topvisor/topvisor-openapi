@@ -12,17 +12,12 @@ export interface components {
             /** ID проекта */
             projectId: number;
             /** С какой даты */
-            date1?: components["schemas"]["TV.API.Types.Date"] | null;
+            date1?: import('../../../../TV/API/Types/Date.ts').components['schemas']['TV.API.Types.Date'] | null;
             /** По какую дату */
-            date2?: components["schemas"]["TV.API.Types.Date"] | null;
+            date2?: import('../../../../TV/API/Types/Date.ts').components['schemas']['TV.API.Types.Date'] | null;
             /** Являеется ли запуск - тестом */
             test: boolean;
         };
-        /**
-         * Дата
-         * @example 2000-01-01
-         */
-        "TV.API.Types.Date": string;
     };
     responses: never;
     parameters: never;

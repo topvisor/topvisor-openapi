@@ -9,7 +9,7 @@ export interface components {
     schemas: {
         /** Получение скриншота (платная функция) */
         "Webscreens_2.Methods.Get": {
-            url: components["schemas"]["TV.API.Types.Url"];
+            url: import('../../TV/API/Types/Url.ts').components['schemas']['TV.API.Types.Url'];
             /** Ширина экрна */
             w: number;
             /** Высота экрна */
@@ -42,16 +42,6 @@ export interface components {
              *     Параметры clip и full_page нельзя использовать одновременно */
             clip_y?: number | null;
         };
-        /** Краткий URL в punycode, не может содержать UTF-символы:
-         *     - без схемы
-         *     - без "www." в домене
-         *     - без слешей на конце
-         *     - без "<" и ">"
-         *
-         *     Будет проивзедено автоматическое приведение к формату
-         *
-         *     Разрешен ввод пустой строки, для удаления значения url */
-        "TV.API.Types.Url": string;
     };
     responses: never;
     parameters: never;

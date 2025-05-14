@@ -9,37 +9,17 @@ export interface components {
     schemas: {
         /** Настройка рекуррентного платежа */
         "Recurring_2.Methods.Edit": {
-            system: components["schemas"]["Recurring_2.Types.System"];
-            type: components["schemas"]["Recurring_2.Types.Type"];
+            system: import('../Types/System.ts').components['schemas']['Recurring_2.Types.System'];
+            type: import('../Types/Type.ts').components['schemas']['Recurring_2.Types.Type'];
             /** Сумма, при достижении которой произойдет автоплатеж */
             min_sum?: number | null;
             /** Cумма автоплатежа */
             refill_sum?: number | null;
             /** Объект доменного платежа (в случае domainRenew - домен) */
-            target?: components["schemas"]["TV.API.Types.Url"] | null;
+            target?: import('../../TV/API/Types/Url.ts').components['schemas']['TV.API.Types.Url'] | null;
             /** Id карты в системе Тинькофф */
             cardId?: number | null;
         };
-        /**
-         * Платежная система рекуррентного платежа
-         * @enum {string}
-         */
-        "Recurring_2.Types.System": "card" | "invoice";
-        /**
-         * Тип рекуррентного платежа
-         * @enum {string}
-         */
-        "Recurring_2.Types.Type": "refill" | "domainRenew";
-        /** Краткий URL в punycode, не может содержать UTF-символы:
-         *     - без схемы
-         *     - без "www." в домене
-         *     - без слешей на конце
-         *     - без "<" и ">"
-         *
-         *     Будет проивзедено автоматическое приведение к формату
-         *
-         *     Разрешен ввод пустой строки, для удаления значения url */
-        "TV.API.Types.Url": string;
     };
     responses: never;
     parameters: never;

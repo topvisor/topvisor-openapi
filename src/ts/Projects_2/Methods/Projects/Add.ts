@@ -10,7 +10,7 @@ export interface components {
         /** Добавление проекта */
         "Projects_2.Methods.Projects.Add": {
             /** Url проекта (домен или url страницы) */
-            url: components["schemas"]["TV.API.Types.UrlShort"];
+            url: import('../../../TV/API/Types/UrlShort.ts').components['schemas']['TV.API.Types.UrlShort'];
             /** Имя проекта (по умолчанию равен url проекта) */
             name?: string | null;
             /**
@@ -27,16 +27,6 @@ export interface components {
             /** Является ли проект задачей */
             is_task?: boolean | null;
         };
-        /** Краткий URL в punycode, не может содержать UTF-символы:
-         *     - без схемы
-         *     - без "www." в домене
-         *     - без слешей на конце
-         *     - без "<" и ">"
-         *
-         *     Будет проивзедено автоматическое приведение к формату
-         *
-         *     Разрешен ввод пустой строки, для удаления значения url */
-        "TV.API.Types.UrlShort": string;
     };
     responses: never;
     parameters: never;

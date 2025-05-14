@@ -17,16 +17,16 @@ export interface components {
              */
             debug?: boolean;
             /** Проверка с учетом фильтра по регионам */
-            regions_indexes?: components["schemas"]["TV.API.Types.IntArray"] | null;
+            regions_indexes?: import('../../../../TV/API/Types/IntArray.ts').components['schemas']['TV.API.Types.IntArray'] | null;
             /** Проверка с учетом фильтра по папкам */
-            folders_ids?: components["schemas"]["TV.API.Types.IntArray"] | null;
+            folders_ids?: import('../../../../TV/API/Types/IntArray.ts').components['schemas']['TV.API.Types.IntArray'] | null;
             /**
              * При фильтрации по ID папок также проверять в подпапках
              * @description @type bool
              */
             folders_ids_depth?: boolean;
             /** Проверка с учетом фильтра по группам (сочетается с фильтром folders_ids по логике И) */
-            groups_ids?: components["schemas"]["TV.API.Types.IntArray"] | null;
+            groups_ids?: import('../../../../TV/API/Types/IntArray.ts').components['schemas']['TV.API.Types.IntArray'] | null;
             /** Глубина проверки снимка (перекрывает аналогичное значение в настройках проекта)
              *
              *     9 - означет глубину 10
@@ -41,34 +41,9 @@ export interface components {
              *     - требует указания одного `regions_indexes`
              *     - не допускается совместное использование с `folders_ids`, `groups_ids` и `do_snapshots` */
             keyword_id?: number | null;
-            filters: components["schemas"]["filters"];
-            id?: components["schemas"]["id"];
+            filters: import('../../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['filters'];
+            id?: import('../../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['id'];
         };
-        /**
-         * Тип массива: int
-         *
-         *     Принимает: Любые целые числа и числа в строках
-         * @description @extends AbstractTypedArray<int>
-         *     @method int[] getValues()
-         *     @method int current()
-         */
-        "TV.API.Types.IntArray": number[];
-        /**
-         * Список фильтров по полям объекта
-         *
-         *     {name: string, operator: Field::AVAILABLE_OPERATORS, values: array}
-         *
-         *     Использует поля модели
-         *
-         *     Поля обязатлеьное, если $id не указан
-         * @description @see AbstractMethod::MODEL
-         *     @see Field::AVAILABLE_OPERATORS
-         */
-        filters: (string | number)[];
-        /** Id объекта, для фильтрации объектов по id
-         *
-         *     Только для моделей с полем id */
-        id: number | null;
     };
     responses: never;
     parameters: never;

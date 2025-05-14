@@ -12,15 +12,10 @@ export interface components {
             /** ID проекта */
             projectId: number;
             /** Дата */
-            date: components["schemas"]["TV.API.Types.Date"];
+            date: import('../../../../TV/API/Types/Date.ts').components['schemas']['TV.API.Types.Date'];
             /** Являеется ли запуск - тестом */
             test: boolean;
         };
-        /**
-         * Дата
-         * @example 2000-01-01
-         */
-        "TV.API.Types.Date": string;
     };
     responses: never;
     parameters: never;

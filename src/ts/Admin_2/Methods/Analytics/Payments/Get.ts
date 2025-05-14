@@ -9,19 +9,10 @@ export interface components {
     schemas: {
         /** Получение суммы оплат за период */
         "Admin_2.Methods.Analytics.Payments.Get": {
-            period: components["schemas"]["Admin_2.Types.Analytics.Segment"];
+            period: import('../../../Types/Analytics/Segment.ts').components['schemas']['Admin_2.Types.Analytics.Segment'];
             /** Длина периода */
             limit: number;
         };
-        /**
-         * Имя сегмента, на которые делится период отчета
-         *
-         *     Отчет делится на равные части - сегменты, за каждый сегмент выводится сводка с агрегацией по этому сегменту
-         *
-         *     Пример: вывод количества регистраций за каждый **месяц** в отчете
-         * @enum {string}
-         */
-        "Admin_2.Types.Analytics.Segment": "day" | "month" | "year";
     };
     responses: never;
     parameters: never;

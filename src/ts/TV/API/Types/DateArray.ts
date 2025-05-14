@@ -14,12 +14,7 @@ export interface components {
          *     @method Date current()
          *     @see \TV\API\Types\Date
          */
-        "TV.API.Types.DateArray": components["schemas"]["TV.API.Types.Date"][];
-        /**
-         * Дата
-         * @example 2000-01-01
-         */
-        "TV.API.Types.Date": string;
+        "TV.API.Types.DateArray": import('./Date.ts').components['schemas']['TV.API.Types.Date'][];
     };
     responses: never;
     parameters: never;

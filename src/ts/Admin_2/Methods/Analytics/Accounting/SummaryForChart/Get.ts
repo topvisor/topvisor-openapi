@@ -9,10 +9,10 @@ export interface components {
     schemas: {
         /** Получение сводки по группам */
         "Admin_2.Methods.Analytics.Accounting.SummaryForChart.Get": {
-            period: components["schemas"]["Admin_2.Types.Analytics.Segment"];
-            currency: components["schemas"]["TV.API.Types.Currency"];
+            period: import('../../../../Types/Analytics/Segment.ts').components['schemas']['Admin_2.Types.Analytics.Segment'];
+            currency: import('../../../../../TV/API/Types/Currency.ts').components['schemas']['TV.API.Types.Currency'];
             /** Дата начала отсчета периода */
-            date: components["schemas"]["TV.API.Types.Date"];
+            date: import('../../../../../TV/API/Types/Date.ts').components['schemas']['TV.API.Types.Date'];
             /** Тип операций (расход, приход, все операции)
              *
              *     - profit: приход
@@ -26,29 +26,6 @@ export interface components {
             /** Фильтр по объектам групп, см. Admin_2\Accounting\Group */
             filters?: (string | number)[] | null;
         };
-        /**
-         * Имя сегмента, на которые делится период отчета
-         *
-         *     Отчет делится на равные части - сегменты, за каждый сегмент выводится сводка с агрегацией по этому сегменту
-         *
-         *     Пример: вывод количества регистраций за каждый **месяц** в отчете
-         * @enum {string}
-         */
-        "Admin_2.Types.Analytics.Segment": "day" | "month" | "year";
-        /**
-         * Валюта
-         *
-         *     Этот общий тип, не зависящий от контекста
-         *
-         *     Дополниетольно нужно проверять в API методах через site()->checkAllowCurrency() в функции check()
-         * @enum {string}
-         */
-        "TV.API.Types.Currency": "RUB" | "USD";
-        /**
-         * Дата
-         * @example 2000-01-01
-         */
-        "TV.API.Types.Date": string;
     };
     responses: never;
     parameters: never;

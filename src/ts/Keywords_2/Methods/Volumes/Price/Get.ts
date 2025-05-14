@@ -18,7 +18,7 @@ export interface components {
             debug?: boolean;
             /** Id проекта */
             project_id: number;
-            no_recheck?: components["schemas"]["Keywords_2.Types.Volumes.NoRecheck"] | null;
+            no_recheck?: import('../../../Types/Volumes/NoRecheck.ts').components['schemas']['Keywords_2.Types.Volumes.NoRecheck'] | null;
             /**
              * Тип объекта фильтрации
              * @default keywords
@@ -28,62 +28,14 @@ export interface components {
              *
              *     - Обязателен, если `set_qualifiers_for_visibility` != `true`
              *     - Нельзя указывать, если `set_qualifiers_for_visibility` = `true` */
-            qualifiers?: components["schemas"]["Keywords_2.Types.Volumes.Qualifiers"] | null;
+            qualifiers?: import('../../../Types/Volumes/Qualifiers.ts').components['schemas']['Keywords_2.Types.Volumes.Qualifiers'] | null;
             /** Проверить частоты для всех регионов с нужным типом для расчета видимости */
             set_qualifiers_for_visibility?: boolean | null;
             /** При фильтрации по ID папок также искать в подпапках */
             group_folder_id_depth?: boolean;
-            filters?: components["schemas"]["filters"];
-            id?: components["schemas"]["id"];
+            filters?: import('../../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['filters'];
+            id?: import('../../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['id'];
         };
-        /**
-         * Какие запросы следует пропусить при перепроверке частоты
-         * @enum {integer}
-         */
-        "Keywords_2.Types.Volumes.NoRecheck": 0 | 1 | 2;
-        /**
-         * Ключ поисковой системы для проверки частоты
-         * @enum {integer}
-         */
-        "Keywords_2.Types.Volumes.SearcherKey": 0 | 1;
-        /**
-         * Тип частоты
-         * @enum {integer}
-         */
-        "Keywords_2.Types.Volumes.Type": 1 | 2 | 3 | 5 | 6;
-        /** Определитель с настройками региона для проверки частоты запросов */
-        "Keywords_2.Types.Volumes.Qualifier": {
-            /** Строковй идентификатор определителя */
-            id: string;
-            region_key: number;
-            searcher_key: components["schemas"]["Keywords_2.Types.Volumes.SearcherKey"];
-            type: components["schemas"]["Keywords_2.Types.Volumes.Type"];
-        };
-        /**
-         * Определители проверки частоты
-         * @description @extends AbstractStringArray<Qualifier>
-         *     @method Qualifier[] getValues()
-         *     @method Qualifier current()
-         *     @method Qualifier offsetGet()
-         *     @see \TV\API\Types\Qualifier
-         */
-        "Keywords_2.Types.Volumes.Qualifiers": components["schemas"]["Keywords_2.Types.Volumes.Qualifier"][];
-        /**
-         * Список фильтров по полям объекта
-         *
-         *     {name: string, operator: Field::AVAILABLE_OPERATORS, values: array}
-         *
-         *     Использует поля модели
-         *
-         *     Поля обязатлеьное, если $id не указан
-         * @description @see AbstractMethod::MODEL
-         *     @see Field::AVAILABLE_OPERATORS
-         */
-        filters: (string | number)[];
-        /** Id объекта, для фильтрации объектов по id
-         *
-         *     Только для моделей с полем id */
-        id: number | null;
     };
     responses: never;
     parameters: never;
