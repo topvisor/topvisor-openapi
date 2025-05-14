@@ -13657,8 +13657,6 @@ components:
           nullable: true
         TOTAL():
           nullable: true
-        currency:
-          nullable: true
         plus:
           nullable: true
         sum_group:
@@ -13669,6 +13667,14 @@ components:
         by_user_id:
           nullable: true
         sum:
+          nullable: true
+        discount:
+          nullable: true
+        currency:
+          nullable: true
+        limits:
+          nullable: true
+        limit_name:
           nullable: true
         type:
           nullable: true

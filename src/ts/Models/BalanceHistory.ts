@@ -10,12 +10,15 @@ export interface components {
         "Models.BalanceHistory": {
             "COUNT(*)"?: any;
             "TOTAL()"?: any;
-            currency?: any;
             plus?: any;
             sum_group?: any;
             user_id?: number | null;
             by_user_id?: any;
             sum?: any;
+            discount?: any;
+            currency?: any;
+            limits?: any;
+            limit_name?: any;
             type?: any;
             info?: any;
             target?: any;

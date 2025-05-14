@@ -15,9 +15,6 @@
                     "TOTAL()": {
                         "nullable": true
                     },
-                    "currency": {
-                        "nullable": true
-                    },
                     "plus": {
                         "nullable": true
                     },
@@ -32,6 +29,18 @@
                         "nullable": true
                     },
                     "sum": {
+                        "nullable": true
+                    },
+                    "discount": {
+                        "nullable": true
+                    },
+                    "currency": {
+                        "nullable": true
+                    },
+                    "limits": {
+                        "nullable": true
+                    },
+                    "limit_name": {
                         "nullable": true
                     },
                     "type": {
