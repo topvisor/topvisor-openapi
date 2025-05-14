@@ -9,7 +9,22 @@ export interface components {
     schemas: {
         /** Метод с примерами параметров типа Object */
         "Example_2.Methods.Object.Get": {
-            user: import('../../Objects/User.ts').components['schemas']['Example_2.Objects.User'];
+            user: components["schemas"]["Example_2.Objects.User"];
+        };
+        /**
+         * E-mail
+         * @example name@example.com
+         */
+        "TV.API.Types.Email": string;
+        "Example_2.Objects.Address": {
+            city: string;
+            street?: string | null;
+        };
+        "Example_2.Objects.User": {
+            name: string;
+            email: components["schemas"]["TV.API.Types.Email"];
+            age: number;
+            address: components["schemas"]["Example_2.Objects.Address"];
         };
     };
     responses: never;

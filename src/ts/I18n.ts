@@ -7,54 +7,6614 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        Common: import('./I18n/Common.ts').components['schemas']['I18n.Common'];
-        Actions: import('./I18n/Actions.ts').components['schemas']['I18n.Actions'];
-        Analytics: import('./I18n/Analytics.ts').components['schemas']['I18n.Analytics'];
-        Api: import('./I18n/Api.ts').components['schemas']['I18n.Api'];
-        Audit: import('./I18n/Audit.ts').components['schemas']['I18n.Audit'];
-        Bank: import('./I18n/Bank.ts').components['schemas']['I18n.Bank'];
-        Broker: import('./I18n/Broker.ts').components['schemas']['I18n.Broker'];
-        Calendar: import('./I18n/Calendar.ts').components['schemas']['I18n.Calendar'];
-        Competitors: import('./I18n/Competitors.ts').components['schemas']['I18n.Competitors'];
-        Cron: import('./I18n/Cron.ts').components['schemas']['I18n.Cron'];
-        Domains: import('./I18n/Domains.ts').components['schemas']['I18n.Domains'];
-        Dynamics: import('./I18n/Dynamics.ts').components['schemas']['I18n.Dynamics'];
-        Email: import('./I18n/Email.ts').components['schemas']['I18n.Email'];
-        Fieldtemplates: import('./I18n/Fieldtemplates.ts').components['schemas']['I18n.Fieldtemplates'];
-        Footer: import('./I18n/Footer.ts').components['schemas']['I18n.Footer'];
-        Indexing: import('./I18n/Indexing.ts').components['schemas']['I18n.Indexing'];
-        Informer: import('./I18n/Informer.ts').components['schemas']['I18n.Informer'];
-        Keywords: import('./I18n/Keywords.ts').components['schemas']['I18n.Keywords'];
-        Landings: import('./I18n/Landings.ts').components['schemas']['I18n.Landings'];
-        Projects: import('./I18n/Projects.ts').components['schemas']['I18n.Projects'];
-        Robot: import('./I18n/Robot.ts').components['schemas']['I18n.Robot'];
-        Sitemap: import('./I18n/Sitemap.ts').components['schemas']['I18n.Sitemap'];
-        Snapshots: import('./I18n/Snapshots.ts').components['schemas']['I18n.Snapshots'];
-        Telegram: import('./I18n/Telegram.ts').components['schemas']['I18n.Telegram'];
-        Thundo: import('./I18n/Thundo.ts').components['schemas']['I18n.Thundo'];
-        Tickets: import('./I18n/Tickets.ts').components['schemas']['I18n.Tickets'];
-        Tpvsr: import('./I18n/Tpvsr.ts').components['schemas']['I18n.Tpvsr'];
-        Tv: import('./I18n/Tv.ts').components['schemas']['I18n.Tv'];
-        Units: import('./I18n/Units.ts').components['schemas']['I18n.Units'];
-        Updates: import('./I18n/Updates.ts').components['schemas']['I18n.Updates'];
-        User: import('./I18n/User.ts').components['schemas']['I18n.User'];
-        Votes: import('./I18n/Votes.ts').components['schemas']['I18n.Votes'];
-        Watcher: import('./I18n/Watcher.ts').components['schemas']['I18n.Watcher'];
-        Widget: import('./I18n/Widget.ts').components['schemas']['I18n.Widget'];
-        "Audit.Scan": import('./I18n/Audit/Scan.ts').components['schemas']['I18n.Audit.Scan'];
-        "Bank.Subscription": import('./I18n/Bank/Subscription.ts').components['schemas']['I18n.Bank.Subscription'];
-        "Landings.Championship": import('./I18n/Landings/Championship.ts').components['schemas']['I18n.Landings.Championship'];
-        "Landings.Jobs": import('./I18n/Landings/Jobs.ts').components['schemas']['I18n.Landings.Jobs'];
-        "Landings.Price": import('./I18n/Landings/Price.ts').components['schemas']['I18n.Landings.Price'];
-        "Landings.Promocode": import('./I18n/Landings/Promocode.ts').components['schemas']['I18n.Landings.Promocode'];
-        "Pages.Help": import('./I18n/Pages/Help.ts').components['schemas']['I18n.Pages.Help'];
-        Pages: import('./I18n/Pages.ts').components['schemas']['I18n.Pages'];
-        "Projects.CheckButton": import('./I18n/Projects/CheckButton.ts').components['schemas']['I18n.Projects.CheckButton'];
-        "Projects.Settings": import('./I18n/Projects/Settings.ts').components['schemas']['I18n.Projects.Settings'];
-        "Audit.Scan.Checks": import('./I18n/Audit/Scan/Checks.ts').components['schemas']['I18n.Audit.Scan.Checks'];
-        "Sites.Thundo.Admin": import('./I18n/Sites/Thundo/Admin.ts').components['schemas']['I18n.Sites.Thundo.Admin'];
-        "Sites.Topvisor.Admin": import('./I18n/Sites/Topvisor/Admin.ts').components['schemas']['I18n.Sites.Topvisor.Admin'];
-        "Sites.Topvisor.Organization": import('./I18n/Sites/Topvisor/Organization.ts').components['schemas']['I18n.Sites.Topvisor.Organization'];
+        Common: components["schemas"]["I18n.Common"];
+        Actions: components["schemas"]["I18n.Actions"];
+        Analytics: components["schemas"]["I18n.Analytics"];
+        Api: components["schemas"]["I18n.Api"];
+        Audit: components["schemas"]["I18n.Audit"];
+        Bank: components["schemas"]["I18n.Bank"];
+        Broker: components["schemas"]["I18n.Broker"];
+        Calendar: components["schemas"]["I18n.Calendar"];
+        Competitors: components["schemas"]["I18n.Competitors"];
+        Cron: components["schemas"]["I18n.Cron"];
+        Domains: components["schemas"]["I18n.Domains"];
+        Dynamics: components["schemas"]["I18n.Dynamics"];
+        Email: components["schemas"]["I18n.Email"];
+        Fieldtemplates: components["schemas"]["I18n.Fieldtemplates"];
+        Footer: components["schemas"]["I18n.Footer"];
+        Indexing: components["schemas"]["I18n.Indexing"];
+        Informer: components["schemas"]["I18n.Informer"];
+        Keywords: components["schemas"]["I18n.Keywords"];
+        Landings: components["schemas"]["I18n.Landings"];
+        Projects: components["schemas"]["I18n.Projects"];
+        Robot: components["schemas"]["I18n.Robot"];
+        Sitemap: components["schemas"]["I18n.Sitemap"];
+        Snapshots: components["schemas"]["I18n.Snapshots"];
+        Telegram: components["schemas"]["I18n.Telegram"];
+        Thundo: components["schemas"]["I18n.Thundo"];
+        Tickets: components["schemas"]["I18n.Tickets"];
+        Tpvsr: components["schemas"]["I18n.Tpvsr"];
+        Tv: components["schemas"]["I18n.Tv"];
+        Units: components["schemas"]["I18n.Units"];
+        Updates: components["schemas"]["I18n.Updates"];
+        User: components["schemas"]["I18n.User"];
+        Votes: components["schemas"]["I18n.Votes"];
+        Watcher: components["schemas"]["I18n.Watcher"];
+        Widget: components["schemas"]["I18n.Widget"];
+        "Audit.Scan": components["schemas"]["I18n.Audit.Scan"];
+        "Bank.Subscription": components["schemas"]["I18n.Bank.Subscription"];
+        "Landings.Championship": components["schemas"]["I18n.Landings.Championship"];
+        "Landings.Jobs": components["schemas"]["I18n.Landings.Jobs"];
+        "Landings.Price": components["schemas"]["I18n.Landings.Price"];
+        "Landings.Promocode": components["schemas"]["I18n.Landings.Promocode"];
+        "Pages.Help": components["schemas"]["I18n.Pages.Help"];
+        Pages: components["schemas"]["I18n.Pages"];
+        "Projects.CheckButton": components["schemas"]["I18n.Projects.CheckButton"];
+        "Projects.Settings": components["schemas"]["I18n.Projects.Settings"];
+        "Audit.Scan.Checks": components["schemas"]["I18n.Audit.Scan.Checks"];
+        "Sites.Thundo.Admin": components["schemas"]["I18n.Sites.Thundo.Admin"];
+        "Sites.Topvisor.Admin": components["schemas"]["I18n.Sites.Topvisor.Admin"];
+        "Sites.Topvisor.Organization": components["schemas"]["I18n.Sites.Topvisor.Organization"];
+        "I18n.Common": {
+            /** @constant */
+            readonly url_lang_prefix: "";
+            /** @constant */
+            readonly Page_404_text: "Page Not Found";
+            /** @constant */
+            readonly Page_404_text2: "You will be redirected <br> in";
+            /** @constant */
+            readonly Page_404_sec: "seconds";
+            /** @constant */
+            readonly Page_403_text: "Access denied";
+            /** @constant */
+            readonly openApp_text: "Page loading";
+            /** @constant */
+            readonly openApp_text2: "Open application";
+            /** @constant */
+            readonly lang: "en";
+            /** @constant */
+            readonly lang_country: "US";
+            /** @constant */
+            readonly lang_url: "";
+            /** @constant */
+            readonly alternate_lang: "ru";
+            /** @constant */
+            readonly alternate_lang_country: "RU";
+            /** @constant */
+            readonly alternate_lang_url: "/ru";
+            /** @constant */
+            readonly Lang_full: "English";
+            /** @constant */
+            readonly language: "language";
+            /** @constant */
+            readonly Language: "Language";
+            /** @constant */
+            readonly locale: "en_US";
+            /** @constant */
+            readonly date_format: "m/d/Y";
+            /** @constant */
+            readonly Description: "Tools for tracking, analyzing and measuring SEO performance";
+            /** @constant */
+            readonly Og_description: "Try out SEO & PPC Tools for keyword research, clustering, rank tracking and on-page optimization. Get better results from paid search and organic rankings!";
+            /** @constant */
+            readonly Og_description_invite: "SEO & PPC Tools for better marketing. Highly recommended!";
+            /** @constant */
+            readonly Ascending: "Ascending";
+            /** @constant */
+            readonly Descending: "Descending";
+            /** @constant */
+            readonly TV_address_street: "Voronezhskaya ul.";
+            /** @constant */
+            readonly Message_session_security_error: "Session security error, please <a href=\"/\">refresh page</a> and try again";
+            /** @constant */
+            readonly Message_dbh_remote: "We're upgrading our servers. The service is temporarily unavailable. Please, try again later";
+            /** @constant */
+            readonly Message_dbh_remote_error: "We're upgrading our servers. Tasks creating is temporarily unavailable. Please, try again later";
+            /** @constant */
+            readonly Message_ch_error: "We're upgrading this module's server, please, try again later";
+            /** @constant */
+            readonly Message_sp_error: "We're upgrading this module's server, please, try again later";
+            /** @constant */
+            readonly Every_day: "Every day";
+            /** @constant */
+            readonly time_a_0: "times";
+            /** @constant */
+            readonly time_a_1: "time";
+            /** @constant */
+            readonly time_a_2: "times";
+            /** @constant */
+            readonly a_week: "a week";
+            /** @constant */
+            readonly a_month: "a month";
+            /** @constant */
+            readonly discount: "discount";
+            /** @constant */
+            readonly month_short: "mo";
+            /** @constant */
+            readonly Balance: "Balance";
+            /** @constant */
+            readonly Referrals: "Affiliate program";
+            /** @constant */
+            readonly Organization: "Organization";
+            /** @constant */
+            readonly Yes: "Yes";
+            /** @constant */
+            readonly Exists: "Exists";
+            /** @constant */
+            readonly No: "No";
+            /** @constant */
+            readonly not: "not";
+            /** @constant */
+            readonly and: "and";
+            /** @constant */
+            readonly ruble: "rub.";
+            /** @constant */
+            readonly for: "for";
+            /** @constant */
+            readonly For: "For";
+            /** @constant */
+            readonly Close: "Close";
+            /** @constant */
+            readonly OK: "OK";
+            /** @constant */
+            readonly Apply: "OK";
+            /** @constant */
+            readonly Choose: "Apply";
+            /** @constant */
+            readonly Download: "Download";
+            /** @constant */
+            readonly download: "download";
+            /** @constant */
+            readonly Step: "Step";
+            /** @constant */
+            readonly Continue: "Continue";
+            /** @constant */
+            readonly Back: "Back";
+            /** @constant */
+            readonly Next: "Next";
+            /** @constant */
+            readonly Prev_page_short: "Prev";
+            /** @constant */
+            readonly Next_page_short: "Next";
+            /** @constant */
+            readonly project: "project";
+            /** @constant */
+            readonly Project: "Project";
+            /** @constant */
+            readonly of_project: "of project";
+            /** @constant */
+            readonly Tool_digest?: "Google Year at Topvisor";
+            /** @constant */
+            readonly Ticket: "Ticket";
+            /** @constant */
+            readonly Tickets: "Tickets";
+            /** @constant */
+            readonly All_tickets: "All tickets";
+            /** @constant */
+            readonly All_pages: "All articles";
+            /** @constant */
+            readonly Submit: "Submit";
+            /** @constant */
+            readonly Tickets_page: "\"Tickets\" page";
+            /** @constant */
+            readonly Submitted: "Submitted";
+            /** @constant */
+            readonly Created_at: "Created";
+            /** @constant */
+            readonly Schet_number: "No.";
+            /** @constant */
+            readonly Cancel: "Cancel";
+            /** @constant */
+            readonly Send: "Send";
+            /** @constant */
+            readonly More: "More";
+            /** @constant */
+            readonly Read_more: "Read more";
+            /** @constant */
+            readonly Read_more2: "Read more";
+            /** @constant */
+            readonly User: "User";
+            /** @constant */
+            readonly Message: "Message";
+            /** @constant */
+            readonly Message_not_sended: "Message hasn't been sent";
+            /** @constant */
+            readonly Comment_not_deleted: "Comment not removed";
+            /** @constant */
+            readonly Link: "Link";
+            /** @constant */
+            readonly Name: "Name";
+            /** @constant */
+            readonly First_and_last_name: "First and last name";
+            /** @constant */
+            readonly Access_denied: "Access denied";
+            /** @constant */
+            readonly Access_error: "Access error";
+            /** @constant */
+            readonly No_data: "No data found";
+            /** @constant */
+            readonly No_results: "No results";
+            /** @constant */
+            readonly Dynamics: "Dynamics";
+            /** @constant */
+            readonly Country: "Country";
+            /** @constant */
+            readonly Number: "No.";
+            /** @constant */
+            readonly Number_word: "Number";
+            /** @constant */
+            readonly CPC: "CPC";
+            /** @constant */
+            readonly Clear: "Clear";
+            /** @constant */
+            readonly Phone: "Phone number";
+            /** @constant */
+            readonly Email: "Email";
+            /** @constant */
+            readonly Email_not_exist: "The Email you entered doesn't exist";
+            /** @constant */
+            readonly Password_incorrect: "The password you entered is incorrect!";
+            /** @constant */
+            readonly Enter_email: "Enter email";
+            /** @constant */
+            readonly Enter_password: "Enter password";
+            /** @constant */
+            readonly Remember_me: "Remember me";
+            /** @constant */
+            readonly Forgot_password: "Forgot your password?";
+            /** @constant */
+            readonly Signup_now: "Sign up now";
+            /** @constant */
+            readonly Sign_in_with: "Sign in with";
+            /** @constant */
+            readonly Password_recovering: "Recover password";
+            /** @constant */
+            readonly Recover_password: "Recover password";
+            /** @constant */
+            readonly Keywords_one_per_line: "Keywords (each keyword on a new line)";
+            /** @constant */
+            readonly Add_se: "Add a Search engine";
+            /** @constant */
+            readonly Create_project: "Create a project";
+            /** @constant */
+            readonly Creating: "Creating...";
+            /** @constant */
+            readonly Enter_valid_email_notice: "Enter a valid E-mail address";
+            /** @constant */
+            readonly No_account_sign_up: "No account? <a href=\".\" data-to-view=\"%toViewReg%\">Sign up</a>";
+            /** @constant */
+            readonly No_account: "No account?";
+            /** @constant */
+            readonly Through_registration_you_confirm_agreement_policy: "By pressing Sign up you accept <a href=\"{{ hrefConfirm }}\" target=\"_blank\">Terms and Conditions</a> and give <a href=\"{{ hrefPrivacy }}\" target=\"_blank\">Privacy Policy and mailing consent</a>";
+            /** @constant */
+            readonly Already_have_account: "Already have an account";
+            /** @constant */
+            readonly Try_again_or_sign_up: "<a href=\".\" data-to-view=\"%toViewAuth%\">Log in</a> or <a href=\".\" data-to-view=\"%toViewReg%\">sign up</a>";
+            /** @constant */
+            readonly If_no_msg_check_spam_ask_support_notice: "If you didn't receive a message, check a <b>Spam</b> folder or submit a ticket to <a href=\"%hrefCreateTicket%\">Customer support</a>";
+            /** @constant */
+            readonly If_no_msg: "If you didn't receive a message, check a <b>Spam</b> folder or submit a ticket to ";
+            /** @constant */
+            readonly support_notice: "Customer support";
+            /** @constant */
+            readonly Confirmation_link_sent_to_email: "A confirmation link has been sent to ";
+            /** @constant */
+            readonly Internal_error: "Internal error occurred, please submit a report to the developers";
+            /** @constant */
+            readonly Unknown_error: "Unknown error occurred, please try again later";
+            /** @constant */
+            readonly Google_server_error: "Google server error";
+            /** @constant */
+            readonly Yandex_API_server_error: "Yandex.API server error";
+            /** @constant */
+            readonly Yandex_auth_error: "Error occurred! Please, contact the project owner to resolve the issue!";
+            /** @constant */
+            readonly Request_error_required: "Required parameter missing in the request";
+            /** @constant */
+            readonly Request_error_type: "Passed parameter type mismatch";
+            /** @constant */
+            readonly Request_error_value: "Passed parameter value mismatch";
+            /** @constant */
+            readonly Request_error_qualifiers: "Passed qualifiers mismatch";
+            /** @constant */
+            readonly Error_regexp: "Regular expression error";
+            /** @constant */
+            readonly Valid_characters: "Valid characters";
+            /** @constant */
+            readonly Bonus: "Bonus";
+            /** @constant */
+            readonly or: "or";
+            /** @constant */
+            readonly to: "until";
+            /** @constant */
+            readonly to_1: "to";
+            /** @constant */
+            readonly at: "at";
+            /** @constant */
+            readonly To: "Until";
+            /** @constant */
+            readonly Until: "Up to ";
+            /** @constant */
+            readonly next_count: "next";
+            /** @constant */
+            readonly pages: "pages";
+            /** @constant */
+            readonly pages_full: "pages";
+            /** @constant */
+            readonly limit: "display";
+            /** @constant */
+            readonly by: "by";
+            /** @constant */
+            readonly Path: "Path";
+            /** @constant */
+            readonly Rule: "Rule";
+            /** @constant */
+            readonly Allow: "Allow";
+            /** @constant */
+            readonly Disallow: "Forbid";
+            /** @constant */
+            readonly Allow_of_mask: "Add mask matches from sitemap";
+            /** @constant */
+            readonly Disallow_of_mask: "Forbid the mask";
+            /** @constant */
+            readonly Search: "Search";
+            /** @constant */
+            readonly Examples: "Examples";
+            /** @constant */
+            readonly Begin: "Start";
+            /** @constant */
+            readonly Start_over: "Start over";
+            /** @constant */
+            readonly Export: "Export";
+            /** @constant */
+            readonly Import: "Import";
+            /** @constant */
+            readonly Off: "Off";
+            /** @constant */
+            readonly Changes: "Changes";
+            /** @constant */
+            readonly Change: "Change";
+            /** @constant */
+            readonly Value: "Value";
+            /** @constant */
+            readonly Hide: "Hide";
+            /** @constant */
+            readonly Display: "Display";
+            /** @constant */
+            readonly Save: "Save";
+            /** @constant */
+            readonly Time: "Time";
+            /** @constant */
+            readonly Loading: "Loading";
+            /** @constant */
+            readonly CY: "CY";
+            /** @constant */
+            readonly Broker: "Bid manager";
+            /** @constant */
+            readonly Maintenance: "Page is under maintenance";
+            /** @constant */
+            readonly on_account: "to account";
+            /** @constant */
+            readonly on: "to";
+            /** @constant */
+            readonly Tools: "SEO Tools";
+            /** @constant */
+            readonly Keyword_researcher: "Keyword research tool";
+            /** @constant */
+            readonly Rank_tracker: "Rank tracker tool";
+            /** @constant */
+            readonly Upload: "Upload";
+            /** @constant */
+            readonly Hide_all: "Hide all";
+            /** @constant */
+            readonly Expand_all: "Expand all";
+            /** @constant */
+            readonly Expand: "Expand";
+            /** @constant */
+            readonly Attention: "Attention";
+            /** @constant */
+            readonly from: "from";
+            /** @constant */
+            readonly from_1: "from";
+            /** @constant */
+            readonly dated: "dated";
+            /** @constant */
+            readonly fromDate: "from";
+            /** @constant */
+            readonly toDate: "to";
+            /** @constant */
+            readonly SE: "SE";
+            /** @constant */
+            readonly Guest_link: "Guest link";
+            /** @constant */
+            readonly Guest_link_copied_to_clipboard: "Guest link copied to clipboard";
+            /** @constant */
+            readonly Device_0: "PC";
+            /** @constant */
+            readonly Device_1: "Tablet";
+            /** @constant */
+            readonly Device_2: "Phone";
+            /** @constant */
+            readonly Device_100: "YandexBot/3.0";
+            /** @constant */
+            readonly Device_102: "YandexBot/3.0 (mobile)";
+            /** @constant */
+            readonly Device_110: "Googlebot/2.1";
+            /** @constant */
+            readonly Device_112: "Googlebot/2.1 (mobile)";
+            /** @constant */
+            readonly Device_120: "AdsBot-Google";
+            /** @constant */
+            readonly Device_122: "AdsBot-Google-Mobile";
+            /** @constant */
+            readonly Device_200?: "TopvisorBot";
+            /** @constant */
+            readonly Device_202?: "TopvisorBot (mobile)";
+            /** @constant */
+            readonly Tag: "Tag";
+            /** @constant */
+            readonly Tags: "Tags";
+            /** @constant */
+            readonly All_tags: "All tags";
+            /** @constant */
+            readonly Charts: "Charts";
+            /** @constant */
+            readonly All: "All";
+            /** @constant */
+            readonly Selected: "Selected";
+            /** @constant */
+            readonly Select: "Select";
+            /** @constant */
+            readonly Select_all: "Select all";
+            /** @constant */
+            readonly Added: "Added";
+            /** @constant */
+            readonly Deleted: "Deleted";
+            /** @constant */
+            readonly Rename: "Rename";
+            /** @constant */
+            readonly On_or_off: "On / Off";
+            /** @constant */
+            readonly Autoselect: "Autoselect";
+            /** @constant */
+            readonly Open_project: "Open project";
+            /** @constant */
+            readonly Domain: "Domain";
+            /** @constant */
+            readonly Domains: "Domains";
+            /** @constant */
+            readonly Track: "Track";
+            /** @constant */
+            readonly Check: "Check";
+            /** @constant */
+            readonly Track_continued: "Track";
+            /** @constant */
+            readonly Telegram: "Telegram";
+            /** @constant */
+            readonly Link_to_telegram: "Link to Telegram";
+            /** @constant */
+            readonly Other: "Other";
+            /** @constant */
+            readonly Other_f: "Other";
+            /** @constant */
+            readonly Proceed: "Proceed";
+            /** @constant */
+            readonly Projects: "Projects";
+            /** @constant */
+            readonly Metrika: "Yandex.Metrica";
+            /** @constant */
+            readonly Webmaster: "Yandex.Webmaster";
+            /** @constant */
+            readonly Yandex_Direct: "Yandex Direct";
+            /** @constant */
+            readonly YandexDirect: "Yandex.Direct";
+            /** @constant */
+            readonly Yandex_Wordstat: "Yandex Wordstat";
+            /** @constant */
+            readonly Y_freq: "Volume";
+            /** @constant */
+            readonly Y_freq2: "\"Volume\"";
+            /** @constant */
+            readonly Y_freq3: "\"!Volume\"";
+            /** @constant */
+            readonly Y_freq5: "\"[Volume]\"";
+            /** @constant */
+            readonly Y_freq6: "\"[!Volume]\"";
+            /** @constant */
+            readonly G_freq2: "\"[Volume]\"";
+            /** @constant */
+            readonly M_freq2: "\"Volume\"";
+            /** @constant */
+            readonly Y_price1: "1st Premium";
+            /** @constant */
+            readonly Y_price2: "2st Premium";
+            /** @constant */
+            readonly Y_price3: "Premium";
+            /** @constant */
+            readonly Y_price4: "1st place";
+            /** @constant */
+            readonly Y_price5: "Guaranteed";
+            /** @constant */
+            readonly G_price: "Bid";
+            /** @constant */
+            readonly Search_engine: "Search engine";
+            /** @constant */
+            readonly Search_engines: "Search engines";
+            /** @constant */
+            readonly Region: "Location";
+            /** @constant */
+            readonly region: "location";
+            /** @constant */
+            readonly Selected_regions: "Selected locations";
+            /** @constant */
+            readonly Compare: "Compare";
+            /** @constant */
+            readonly Folder: "Folder";
+            /** @constant */
+            readonly Group: "Group";
+            /** @constant */
+            readonly Visibility: "Visibility";
+            /** @constant */
+            readonly Average: "Avg.pos.";
+            /** @constant */
+            readonly Average_position: "Average position";
+            /** @constant */
+            readonly Add: "Add";
+            /** @constant */
+            readonly Create: "Create";
+            /** @constant */
+            readonly Move: "Move";
+            /** @constant */
+            readonly Delete: "Delete";
+            /** @constant */
+            readonly Replace: "Repalce";
+            /** @constant */
+            readonly Restore: "Restore";
+            /** @constant */
+            readonly Copy: "Copy";
+            /** @constant */
+            readonly Copy2: "Copy";
+            /** @constant */
+            readonly Remove: "Delete";
+            /** @constant */
+            readonly Charge: "You will be charged";
+            /** @constant */
+            readonly confirm: "confirm";
+            /** @constant */
+            readonly Confirm: "Confirm";
+            /** @constant */
+            readonly Delete_selected: "Delete selected";
+            /** @constant */
+            readonly Delete_all: "Delete all";
+            /** @constant */
+            readonly Traffic: "Traffic";
+            /** @constant */
+            readonly Positions: "Rankings";
+            /** @constant */
+            readonly Keyword: "Keyword";
+            /** @constant */
+            readonly Key_word: "Keyword";
+            /** @constant */
+            readonly Settings: "Settings";
+            /** @constant */
+            readonly Settings_URL: "URL Settings";
+            /** @constant */
+            readonly Irreversible: "Important! This operation cannot be undone.";
+            /** @constant */
+            readonly Empty_field: "Missing";
+            /** @constant */
+            readonly Notification: "Notifications";
+            /** @constant */
+            readonly Personal_project: "My project";
+            /** @constant */
+            readonly Agreement: "Terms of Service";
+            /** @constant */
+            readonly Period: "Period";
+            /** @constant */
+            readonly Config_is_readonly: "You cannot change project settings until tracking is completed";
+            /** @constant */
+            readonly regions: "locations";
+            /** @constant */
+            readonly types: "types";
+            /** @constant */
+            readonly Select_date: "Select date";
+            /** @constant */
+            readonly Not_date: "Not date";
+            /** @constant */
+            readonly Close_window: "Close window";
+            /** @constant */
+            readonly Dashboard: "Dashboard";
+            /** @constant */
+            readonly Support: "Help center";
+            /** @constant */
+            readonly Shortener: "URL shortener";
+            /** @constant */
+            readonly Journal: "Journal";
+            /** @constant */
+            readonly Academy: "Academy";
+            /** @constant */
+            readonly Pricing: "Pricing";
+            /** @constant */
+            readonly Signup: "Sign up";
+            /** @constant */
+            readonly Sign_up: "Sign up";
+            /** @constant */
+            readonly Sign_up_2: "Sign up";
+            /** @constant */
+            readonly Sign_in: "Sign in";
+            /** @constant */
+            readonly Sign_in_account: "Sign in";
+            /** @constant */
+            readonly Sign_out: "Sign out";
+            /** @constant */
+            readonly Server_response: "Server response";
+            /** @constant */
+            readonly Red: "Red";
+            /** @constant */
+            readonly Orange: "Orange";
+            /** @constant */
+            readonly Yellow: "Yellow";
+            /** @constant */
+            readonly Blue: "Blue";
+            /** @constant */
+            readonly Purple: "Purple";
+            /** @constant */
+            readonly Green: "Green";
+            /** @constant */
+            readonly Magenta: "Magenta";
+            /** @constant */
+            readonly Dark_blue: "Dark blue";
+            /** @constant */
+            readonly Turquoise: "Turquoise";
+            /** @constant */
+            readonly Frequency: "Volume";
+            /** @constant */
+            readonly Moscow: "Moscow";
+            /** @constant */
+            readonly Minsk: "Minsk";
+            /** @constant */
+            readonly Kyiv: "Kyiv";
+            /** @constant */
+            readonly London: "London";
+            /** @constant */
+            readonly NewYork: "New York";
+            /** @constant */
+            readonly StPetersburg: "St. Petersburg";
+            /** @constant */
+            readonly Almaty: "Almaty";
+            /** @constant */
+            readonly Russia: "Russia";
+            /** @constant */
+            readonly Ukraine: "Ukraine";
+            /** @constant */
+            readonly Kazakhstan: "Kazakhstan";
+            /** @constant */
+            readonly Belarus: "Belarus";
+            /** @constant */
+            readonly Sum: "Amount";
+            /** @constant */
+            readonly Date: "Date";
+            /** @constant */
+            readonly Week: "Week";
+            /** @constant */
+            readonly Month: "Month";
+            /** @constant */
+            readonly month: "month";
+            /** @constant */
+            readonly months: "months";
+            /** @constant */
+            readonly months_mult: "months";
+            /** @constant */
+            readonly months_6: "6 months";
+            /** @constant */
+            readonly Quarter: "Quarter";
+            /** @constant */
+            readonly Year: "Year";
+            /** @constant */
+            readonly Total: "Total";
+            /** @constant */
+            readonly TOTAL: "TOTAL";
+            /** @constant */
+            readonly Yandex_update: "Yandex update";
+            /** @constant */
+            readonly "\u0441ode": "code";
+            /** @constant */
+            readonly Thank_you: "Thank you!";
+            /** @constant */
+            readonly Thank_you_for_using_our_tools: "Thank you for using our tools";
+            /** @constant */
+            readonly Since: "Since";
+            /** @constant */
+            readonly Till: "Till";
+            /** @constant */
+            readonly till: "up to";
+            /** @constant */
+            readonly Yandex: "Yandex";
+            /** @constant */
+            readonly Position: "Rank";
+            /** @constant */
+            readonly Impressions: "Impressions";
+            /** @constant */
+            readonly Demand: "Demand";
+            /** @constant */
+            readonly FAQ: "FAQ";
+            /** @constant */
+            readonly Frequently_asked_questions: "Frequently asked questions";
+            /** @constant */
+            readonly Owner: "Owner";
+            /** @constant */
+            readonly level: "level";
+            /** @constant */
+            readonly No_payments: "No payments yet";
+            /** @constant */
+            readonly Show_legend: "Show legend";
+            /** @constant */
+            readonly Hide_legend: "Hide legend";
+            /** @constant */
+            readonly Menu_expand: "Expand menu";
+            /** @constant */
+            readonly Menu_unexpand: "Minimize menu";
+            /** @constant */
+            readonly Menu_dynamics_search: "Search";
+            /** @constant */
+            readonly Menu_dynamics: "Rank Tracker";
+            /** @constant */
+            readonly Menu_snapshots: "SERP Snapshots";
+            /** @constant */
+            readonly Menu_competitors: "My competitors";
+            /** @constant */
+            readonly Menu_phrases: "Keywords";
+            /** @constant */
+            readonly Menu_audit: "Audit";
+            /** @constant */
+            readonly Menu_analytics: "Overview";
+            /** @constant */
+            readonly Menu_PPC: "PPC";
+            /** @constant */
+            readonly Menu_broker: "Yandex.Direct";
+            /** @constant */
+            readonly Menu_settings: "Settings";
+            /** @constant */
+            readonly Menu_more: "More";
+            /** @constant */
+            readonly Folders: "Folders";
+            /** @constant */
+            readonly Groups: "Groups";
+            /** @constant */
+            readonly Keywords: "Keywords";
+            /** @constant */
+            readonly of_keywords: "keywords";
+            /** @constant */
+            readonly of_folders: "folders";
+            /** @constant */
+            readonly of_projects: "projects";
+            /** @constant */
+            readonly of_project1: "for project";
+            /** @constant */
+            readonly for_project: "for project";
+            /** @constant */
+            readonly competitor: "competitor";
+            /** @constant */
+            readonly All_groups: "All groups";
+            /** @constant */
+            readonly All_folders: "All folders";
+            /** @constant */
+            readonly All_regions: "All locations";
+            /** @constant */
+            readonly All_searchers: "All search engines";
+            /** @constant */
+            readonly All_projects: "All projects";
+            /** @constant */
+            readonly Integration: "Integration";
+            /** @constant */
+            readonly updates_days: "update days";
+            /** @constant */
+            readonly whole_period: "the entire period";
+            /** @constant */
+            readonly two_dates: "two dates";
+            /** @constant */
+            readonly Report_for_project: "Project report for";
+            /** @constant */
+            readonly Interval: "Time range";
+            /** @constant */
+            readonly competitors_comparison: "compare with competitors";
+            /** @constant */
+            readonly Searchers_comparison: "Compare by search engine";
+            /** @constant */
+            readonly Regions_comparison: "Compare by location";
+            /** @constant */
+            readonly Browser_not_supported: "Your browser is not supported!";
+            /** @constant */
+            readonly Browser_settings: "Browser settings";
+            /** @constant */
+            readonly Service_may_go_unstable: "Service might be unstable";
+            /** @constant */
+            readonly Preferred_browser: "Compatible browser is";
+            /** @constant */
+            readonly Comparison_by: "Compare by";
+            /** @constant */
+            readonly Phrases: "Keywords";
+            /** @constant */
+            readonly TOP: "TOP";
+            /** @constant */
+            readonly Top: "Top";
+            /** @constant */
+            readonly Phrases_dynamics: "Keyword dynamics";
+            /** @constant */
+            readonly Project_settings: "Project settings";
+            /** @constant */
+            readonly Phrases_in_TOP: "Keywords in TOP";
+            /** @constant */
+            readonly Phrases_in_Top: "Keywords in Top";
+            /** @constant */
+            readonly Page: "Page";
+            /** @constant */
+            readonly page: "page";
+            /** @constant */
+            readonly last_10_days: "last 10 days";
+            /** @constant */
+            readonly last_month: "last month";
+            /** @constant */
+            readonly last_check: "last update";
+            /** @constant */
+            readonly last_two_dates: "last 2 updates";
+            /** @constant */
+            readonly last_month_week_average: "last month (week's average)";
+            /** @constant */
+            readonly also_searched: "similar keywords";
+            /** @constant */
+            readonly Sources: "Sources";
+            /** @constant */
+            readonly Clicks: "Clicks";
+            /** @constant */
+            readonly Other_dates: "Other dates";
+            /** @constant */
+            readonly Help_center: "Help Center";
+            /** @constant */
+            readonly Help_center_welcome: "Support Center";
+            /** @constant */
+            readonly Help_center_question: "Got any questions?";
+            /** @constant */
+            readonly Run: "Run";
+            /** @constant */
+            readonly Manage: "Manage";
+            /** @constant */
+            readonly Missed_project_id: "Project id is missing";
+            /** @constant */
+            readonly Missed_project_id2: "`Project_id` is missing";
+            /** @constant */
+            readonly Project_analytics: "Project analytics";
+            /** @constant */
+            readonly Project_dynamics: "Keyword dynamics";
+            /** @constant */
+            readonly Apometr: "Updates";
+            /** @constant */
+            readonly Apometr_title: "Google and Yandex SERP tracking tool";
+            /** @constant */
+            readonly Apometr_description: "Google and Yandex updates calendar (SERP updates and changes). Get SERP updates alerts. SERP updates score for different locations and content types.";
+            /** @constant */
+            readonly Apometr_og_title: "Google and Yandex SERP updates";
+            /** @constant */
+            readonly Apometr_og_description: "SERP updates score for different locations and content types.";
+            /** @constant */
+            readonly Apometr_notice: "Get update alerts";
+            /** @constant */
+            readonly Pricing_title: "Pricing";
+            /** @constant */
+            readonly Profile_title: "Account";
+            /** @constant */
+            readonly Bank_title: "Billing";
+            /** @constant */
+            readonly Your_projects: "Your projects";
+            /** @constant */
+            readonly Incorrect_file_format: "Invalid file format (expected: %availableExtensionsNames%)";
+            /** @constant */
+            readonly Max_size: "Maximum upload size exceeded (%maxSize%)";
+            /** @constant */
+            readonly Audit: "Website SEO Audit tool";
+            /** @constant */
+            readonly Tutorial: "Tutorials";
+            /** @constant */
+            readonly User_id: "User ID";
+            /** @constant */
+            readonly Managing_executive: "Managing executive";
+            /** @constant */
+            readonly Pustovoit: "Pustovoit";
+            /** @constant */
+            readonly Denis: "Denis";
+            /** @constant */
+            readonly Anatolyevich: "Anatolyevich";
+            /** @constant */
+            readonly CEO: "Chief Executive Officer";
+            /** @constant */
+            readonly office: "office";
+            /** @constant */
+            readonly Dot: "Dot";
+            /** @constant */
+            readonly Comma: "Comma";
+            /** @constant */
+            readonly Enter_manually: "Add manually";
+            /** @constant */
+            readonly max_10_mb: "max 10 Mb";
+            /** @constant */
+            readonly Schedule_settings_checks: "Checks schedule";
+            /** @constant */
+            readonly Schedule_settings_reports: "Reports schedule";
+            /** @constant */
+            readonly Basic: "Basic";
+            /** @constant */
+            readonly Address_IP: "IP address";
+            /** @constant */
+            readonly Phone_number: "Phone number";
+            /** @constant */
+            readonly Recipient: "Recipient";
+            /** @constant */
+            readonly Federal_act: " Federal act";
+            /** @constant */
+            readonly optional: "optional";
+            /** @constant */
+            readonly Full_name_abbr: "Full name";
+            /** @constant */
+            readonly Mobile_phone: "Mobile phone";
+            /** @constant */
+            readonly not_found: "not found";
+            /** @constant */
+            readonly Try_to_reset_filters_or_search_archive_html: "Try to <i class=\"a\" data-action=\"reset_filters\">reset</i> all filters<br><i class=\"archive_search\">\n\tor search <a href=\"/support/projects/archive\" target=\"_blank\" class=\"a\">Archived</a> projects</i>";
+            /** @constant */
+            readonly Print: "Print";
+            /** @constant */
+            readonly Contact_us: "Contact us";
+            /** @constant */
+            readonly Competitor_analysis: "Competitor research";
+            /** @constant */
+            readonly Refill_balance: "Top up your balance";
+            /** @constant */
+            readonly Median: "Median";
+            /** @constant */
+            readonly Reset: "Reset";
+            /** @constant */
+            readonly View: "View";
+            /** @constant */
+            readonly Bar_pin: "Pin bar";
+            /** @constant */
+            readonly Count: "Number";
+            /** @constant */
+            readonly Invalid_url: "Invalid URL format";
+            /** @constant */
+            readonly Access_settings: "Access settings";
+            /** @constant */
+            readonly Hide_access_settings: "Hide access settings";
+            /** @constant */
+            readonly Sort: "Sort";
+            /** @constant */
+            readonly No_snippet: "No snippet";
+            /** @constant */
+            readonly Copied_to_clipboard: "Copied to clipboard";
+            /** @constant */
+            readonly Cannot_copied_to_clipboard: "Cannot copied to clipboard";
+            /** @constant */
+            readonly Copy_guest_link_manually: "Copy the guest link manually";
+            /** @constant */
+            readonly Press_to_copy_1: "Press";
+            /** @constant */
+            readonly Press_to_copy_2: "+C to copy a link";
+            /** @constant */
+            readonly Guest_link_created: "Guest link created";
+            /** @constant */
+            readonly Need_fill_required_fields: "Please fill in all required fields";
+        };
+        "I18n.Actions": {
+            /** @constant */
+            readonly Link_not_available: "This link is no longer active";
+            /** @constant */
+            readonly User_blocked: "Your user is blocked";
+            /** @constant */
+            readonly Report_subscribe_canceled: "You successfully unsubscribed from project reports";
+            /** @constant */
+            readonly Report_subscribe_canceled1: "Subscription to";
+            /** @constant */
+            readonly Report_subscribe_canceled2: "is cancelled successfully";
+            /** @constant */
+            readonly Informer_unsubscribe_news: "unsubscribe from news";
+            /** @constant */
+            readonly Informer_subscribe_balance: "unsubscribe from low balance alerts";
+            /** @constant */
+            readonly Informer_unsubscribe_tickets: "unsubscribe from new ticket replies";
+            /** @constant */
+            readonly Informer_unsubscribe_update: "unsubscribe from Yandex updates";
+            /** @constant */
+            readonly Informer_unsubscribe_comments: "unsubscribe from new comments";
+            /** @constant */
+            readonly Informer_unsubscribe_api: "unsubscribe from API updates";
+            /** @constant */
+            readonly Informer_unsubscribe_journal?: "unsubscribe from Topvisor–Journal";
+            /** @constant */
+            readonly Informer_unsubscribe_academy_news?: "unsubscribe from Topvisor-academy news";
+        };
+        "I18n.Analytics": {
+            /** @constant */
+            readonly Text_confirm_delete_widget: "Are you sure you want to delete this widget?";
+        };
+        "I18n.Api": {
+            /** @constant */
+            readonly View_in_API_explorer: "View in API explorer";
+            /** @constant */
+            readonly Add_parameter: "Add parameter";
+            /** @constant */
+            readonly Add_parameter_array: "Add parameter (array)";
+            /** @constant */
+            readonly Select_data_to_return: "Select data to return (fields)";
+            /** @constant */
+            readonly Add_filter: "Add a filter (filters item)";
+            /** @constant */
+            readonly Add_sorting: "Add sorting (orders item)";
+            /** @constant */
+            readonly Set_limit: "Set limit";
+            /** @constant */
+            readonly Set_offset: "Set offset";
+            /** @constant */
+            readonly Ask_questions_get_answers: "Search documentation";
+            /** @constant */
+            readonly PHP_SDK_example_githab: "PHP SDK example on GitHub";
+        };
+        "I18n.Audit": {
+            /** @constant */
+            readonly Audit: "Website audit";
+            /** @constant */
+            readonly Indexing: "Index status";
+            /** @constant */
+            readonly Watcher: "Website watcher";
+            /** @constant */
+            readonly No_results: "You haven't checked your website yet";
+            /** @constant */
+            readonly Process_text: "Scanning";
+            /** @constant */
+            readonly Header_h1: "H1 Header";
+            /** @constant */
+            readonly Menu: "Website SEO audit";
+            /** @constant */
+            readonly Associated_pages: "Associated pages";
+            /** @constant */
+            readonly String_length_short: "Symb. count";
+            /** @constant */
+            readonly Filter_all: "All";
+            /** @constant */
+            readonly Filter_with_warnings_or_errors: "All with issues";
+            /** @constant */
+            readonly Filter_with_warnings: "With warnings";
+            /** @constant */
+            readonly Filter_with_errors: "With errors";
+            /** @constant */
+            readonly Filter_checks_changed: "What's new";
+            /** @constant */
+            readonly Links_inner: "Internal links";
+            /** @constant */
+            readonly Links_external: "External links";
+            /** @constant */
+            readonly Pages_to_check: "Pages to check";
+            /** @constant */
+            readonly Generated_sitemap: "Generated sitemap";
+            /** @constant */
+            readonly Sitemap_not_found: "Sitemap not found";
+            /** @constant */
+            readonly Sitemap_already_started_error: "Sitemap already started";
+            /** @constant */
+            readonly Sitemap_gen: "Sitemap generator";
+            /** @constant */
+            readonly pages: "pages";
+            /** @constant */
+            readonly Site_size: "Web page count";
+            /** @constant */
+            readonly Header_start_short: "Scan";
+            /** @constant */
+            readonly Step1_gen: "Generate";
+            /** @constant */
+            readonly Step1_gen_notice: "A valid map can be generated only with a valid robots.txt";
+            /** @constant */
+            readonly Sitemap_bank_info: "Sitemap generation for";
+            /** @constant */
+            readonly Audit_bank_info: "Project audit for";
+            /** @constant */
+            readonly Report: "Report";
+            /** @constant */
+            readonly Header_browse: "Summary";
+            /** @constant */
+            readonly Header_common: "Common";
+            /** @constant */
+            readonly Count_pages_checked: "Scanned pages";
+            /** @constant */
+            readonly Header_notices: "Warnings";
+            /** @constant */
+            readonly Header_warnings: "Issues";
+            /** @constant */
+            readonly Www_redirect: "Redirects between";
+            /** @constant */
+            readonly robots_txt_blocked: "blocked by robots.txt";
+            /** @constant */
+            readonly refresh_redirect: "blocked by <i>&lt;meta http-equiv=\"refresh\"&gt;</i>";
+            /** @constant */
+            readonly noindex: "blocked by <i>&lt;meta name=\"robots\" content=\"noindex\"&gt;</i>";
+            /** @constant */
+            readonly redirect: "redirects detected";
+            /** @constant */
+            readonly index_broken: "loading error / incorrect server response code (for example, 404, 503)";
+            /** @constant */
+            readonly title_empty: "title is missing";
+            /** @constant */
+            readonly title_size: "too short / long title";
+            /** @constant */
+            readonly title_dbl: "duplicate title";
+            /** @constant */
+            readonly description_empty: "description is missing";
+            /** @constant */
+            readonly description_size: "too short / long description";
+            /** @constant */
+            readonly description_dbl: "duplicate description";
+            /** @constant */
+            readonly links_empty_content: "anchor or alternative (attribute <i>title=\"...\"</i>) text is missing";
+            /** @constant */
+            readonly nofollow: "attribute <i>rel=\"nofollow\"</i> is used";
+            /** @constant */
+            readonly links_broken: "broken links";
+            /** @constant */
+            readonly no_title: "alternative text (attribute <i>alt=\"...\"</i>) is missing";
+            /** @constant */
+            readonly images_broken: "\"broken\" image";
+            /** @constant */
+            readonly h1_empty: "empty or missing H1 tag";
+            /** @constant */
+            readonly no_lastmod: "Last-Modified is missing";
+            /** @constant */
+            readonly no_lastmod_since: "If-Modified-Since not processed";
+            /** @constant */
+            readonly Header_index: "Index status";
+            /** @constant */
+            readonly Status_code: "Response code";
+            /** @constant */
+            readonly Robots_txt_blocked_short: "Blocked robots.txt";
+            /** @constant */
+            readonly Header_snippet: "Snippet";
+            /** @constant */
+            readonly Description: "Meta-description (description)";
+            /** @constant */
+            readonly Snippet_title_dbl: "Duplicate titles";
+            /** @constant */
+            readonly Snippet_description_dbl: "Duplicate descriptions";
+            /** @constant */
+            readonly Header_links: "Links";
+            /** @constant */
+            readonly Link_type: "Type";
+            /** @constant */
+            readonly Link_content: "Text (anchor)";
+            /** @constant */
+            readonly Link_title: "Text (title)";
+            /** @constant */
+            readonly Link_pages: "Pages";
+            /** @constant */
+            readonly Link_broken: "\"Broken\"";
+            /** @constant */
+            readonly Link_image: "Image";
+            /** @constant */
+            readonly Link_image2: "Image";
+            /** @constant */
+            readonly Link_text: "Text";
+            /** @constant */
+            readonly Watcher_send_to_informer: "Notification Center";
+            /** @constant */
+            readonly Generate_sitemap: "Generate sitemap";
+            /** @constant */
+            readonly Sitemap_generation: "Sitemap generator";
+            /** @constant */
+            readonly Sitemap_uploading: "Sitemap uploader";
+            /** @constant */
+            readonly Header_images: "Images";
+            /** @constant */
+            readonly Image_alt: "Alt-text";
+            /** @constant */
+            readonly Image_pages: "Pages";
+            /** @constant */
+            readonly Image_size: "Size";
+            /** @constant */
+            readonly Image_broken: "\"Broken\"";
+            /** @constant */
+            readonly Header_content: "Content";
+            /** @constant */
+            readonly Title_page: "Page title (Title)";
+            /** @constant */
+            readonly Header_pages_short: "List of pages";
+            /** @constant */
+            readonly Header_page: "Page audit";
+            /** @constant */
+            readonly Page_to_disallow: "Skip the page in the next reports";
+            /** @constant */
+            readonly Page_to_disallow_ok: "The page will be skipped in the next reports";
+            /** @constant */
+            readonly Page_redirects: "Redirects";
+            /** @constant */
+            readonly Page_code: "Page response code";
+            /** @constant */
+            readonly Page_robots_txt_blocked: "Blocked by Robots.txt";
+            /** @constant */
+            readonly Page_nofollow: "Contains meta robots nofollow";
+            /** @constant */
+            readonly Page_noindex: "Blocked by meta robots noindex";
+            /** @constant */
+            readonly Page_canonical: "Contains rel=\"canonical\"";
+            /** @constant */
+            readonly Page_alternate: "Contains rel=\"alternate\"";
+            /** @constant */
+            readonly Page_refresh: "Contains meta refresh redirect";
+            /** @constant */
+            readonly Page_string_length: "Symbol count";
+            /** @constant */
+            readonly Page_title_dbl: "Duplicate title";
+            /** @constant */
+            readonly Page_description_dbl: "Duplicate description";
+            /** @constant */
+            readonly Filter_changed: "Changes";
+            /** @constant */
+            readonly Filter_http_not_changed: "Changes (HTTP code didn't change)";
+            /** @constant */
+            readonly Filter_check_selected: "Only current report";
+            /** @constant */
+            readonly Filter_check_before: "All until the applied date";
+            /** @constant */
+            readonly Watcher_go: "Check";
+            /** @constant */
+            readonly Watcher_process_text: "Scanning";
+            /** @constant */
+            readonly Watcher_bank_info: "Website watcher report for";
+            /** @constant */
+            readonly Watcher_need_config_1: "To run Watcher";
+            /** @constant */
+            readonly Watcher_need_config_2: "move to the settings";
+            /** @constant */
+            readonly Watcher_need_config_3: "and add a list of pages";
+            /** @constant */
+            readonly Indexing_go: "Scan";
+            /** @constant */
+            readonly Indexing_check: "Index checker";
+            /** @constant */
+            readonly Indexing_no_results: "You haven't checked website index status yet";
+            /** @constant */
+            readonly Indexing_bank_info: "Index status report for";
+            /** @constant */
+            readonly Indexing_need_config_1: "To check website index status ";
+            /** @constant */
+            readonly Indexing_need_config_2: "set";
+            /** @constant */
+            readonly Indexing_need_config_3: "a list of pages to scan and select search engines";
+            /** @constant */
+            readonly Pages_for_analyse_not_selected: "Please add pages to scan in the settings";
+            /** @constant */
+            readonly Delete_url_by_regexp: "Delete URLs by regexp match";
+            /** @constant */
+            readonly Report_limit_warning: "*Report can contain up to 1000 records";
+            /** @constant */
+            readonly Watcher_store_180_days: "results are stored for 180 days";
+            /** @constant */
+            readonly Watcher_selector_title: "Select tracking method";
+            /** @constant */
+            readonly Watcher_regexpr: "Regular expression";
+            /** @constant */
+            readonly Download_archive_csv: "CSV archive";
+            /** @constant */
+            readonly Download_archive_pdf: "PDF archive";
+            /** @constant */
+            readonly List_of_urls: "List of URLs";
+            /** @constant */
+            readonly Sitemap_xml_url: "Sitemap.xml path";
+            /** @constant */
+            readonly Sitemap_mail_sitemap: "Sitemap";
+            /** @constant */
+            readonly Sitemap_mail_audit: "Website audit";
+            /** @constant */
+            readonly Sitemap_mail_indexing: "Index checker";
+            /** @constant */
+            readonly Sitemap_mail_watcher: "Website watcher";
+            /** @constant */
+            readonly Retrieve_from_file: "Retrieve from file";
+            /** @constant */
+            readonly Watcher_delete_title: "Delete Website Watcher data ";
+            /** @constant */
+            readonly Watcher_delete_info1: "Website Watcher report dated";
+            /** @constant */
+            readonly Watcher_delete_info2: "will be deleted. You cannot undo this action.";
+            /** @constant */
+            readonly Watcher_ignore_options: "Skip code";
+            /** @constant */
+            readonly Watcher_ignore_html: "HTML code";
+            /** @constant */
+            readonly Watcher_ignore_js: "javascript code";
+            /** @constant */
+            readonly Watcher_ignore_nothing: "do not skip";
+            /** @constant */
+            readonly Watcher_track_button: "Track changes";
+            /** @constant */
+            readonly Watcher_track_changes: "Track changes";
+            /** @constant */
+            readonly Watcher_tracking: "Tracking changes of";
+            /** @constant */
+            readonly Watcher_max_redirects_count: "Max redirects";
+            /** @constant */
+            readonly Watcher_already_started_error: "Website Watcher already running";
+            /** @constant */
+            readonly Indexing_already_started_error: "Index Checker already running";
+            /** @constant */
+            readonly Sitemap_XML_link_not_match_host_error: "Link to XML does not match project host";
+            /** @constant */
+            readonly Sitemap_required_columns_missing: "Required URLs column missing";
+            /** @constant */
+            readonly Delete_sitemap: "Are you sure you want to delete all URLs?";
+            /** @constant */
+            readonly URL_exists: "This URL already exists";
+            /** @constant */
+            readonly Remove_URL: "Are you sure you want to delete the selected URL?";
+            /** @constant */
+            readonly Enter_URL_one_per_line: "Enter a list of URLs (one per line), e.g:";
+            /** @constant */
+            readonly Content_tracking: "Content tracking";
+            /** @constant */
+            readonly Add_tags_use_regexp_notice: "Add tags to website code or use regular expressions to track changes";
+            /** @constant */
+            readonly Use_cookie: "Use cookie";
+            /** @constant */
+            readonly Scan_images: "Scan images";
+            /** @constant */
+            readonly Scan_js: "Scan JS";
+            /** @constant */
+            readonly Scan_css: "Scan CSS";
+            /** @constant */
+            readonly Scan_links: "Scan links";
+            /** @constant */
+            readonly Indexed_pages_with_no_snippet: "Indexed pages without snippet";
+            /** @constant */
+            readonly Hints_settings: {
+                audit_user_agent: "User Agent can affect how the bot sees the site and how DDoS protection works.";
+                audit_page_delay: "How often crawler can open site URLs. If the delay is small, audit will end faster, but the site can go down due to high load. The bigger is the delay, the longer the check will go.<br><br>The delay can increase, if you check Core Web Vitals. For CWV JS is executed, and you need wait for the full rendering of every URL, that takes at least 20 s.";
+                audit_resource_delay: "How often crawler can open site resources (images, JS, CSS). If the delay is small, audit will end faster, but the site can go down due to high load. The bigger is the delay, the longer the check will go.";
+                audit_use_cookie: "Turn this feature on, if your DDoS protection uses cookies.<br><br>But it may cause more personalized information in checks and they could be distorted.";
+                audit_scan_images: "";
+                audit_scan_js: "";
+                audit_scan_css: "";
+                audit_scan_links: "";
+                server_location: "Change server location to access blocked websites.";
+            };
+            /** @constant */
+            readonly Server_location: "Servers location";
+            /** @constant */
+            readonly Servers_locations: {
+                WESTERN_EUROPE: "Western Europe";
+                EASTERN_EUROPE: "Eastern Europe";
+            };
+            /** @constant */
+            readonly Page_delay: "Delay between URL requests (s)";
+            /** @constant */
+            readonly Resource_delay: "Delay between resources requests (s)";
+            /** @constant */
+            readonly API_key_1: "Get free PageSpeed Insights API-key";
+            /** @constant */
+            readonly API_key_2: "and paste it in the input field";
+            /** @constant */
+            readonly Redirect_chain: "Redirect chain";
+            /** @constant */
+            readonly Search_URL: "Search URL";
+            /** @constant */
+            readonly Auto_collect: "Crawl website";
+            /** @constant */
+            readonly Add_by_hand: "Add manually";
+            /** @constant */
+            readonly Select_site_size: "Choose website size";
+            /** @constant */
+            readonly Please_select_site_size: "Choose website size";
+            /** @constant */
+            readonly Master_urls_auto_title: "Maximum of pages for audit";
+            /** @constant */
+            readonly Master_urls_auto_alert: "We'll check only the pages found during crawling. First you'll be charged the price for the maximum number of pages, but there can be less pages on the website. We'll refund the amount for the number of pages that hadn't been checked back on your balance.";
+            /** @constant */
+            readonly Audit_go_alert_need_config: "To perform audit you need to add URLs manually or enable website crawling, go to ";
+            /** @constant */
+            readonly Audit_go_alert_by_hand: "URLs for audit are added manually. To change the way of adding pages, go to";
+            /** @constant */
+            readonly Audit_go_alert_auto_collect_1: "We'll check";
+            /** @constant */
+            readonly Audit_go_alert_auto_collect_2: "URLs for audit are crawled automatically. To change the maximum number of pages for audit or add them manually, go to";
+            /** @constant */
+            readonly Audit_bank_autocrawl_info: "Funds reservation for audit with automatic website crawling, project";
+            /** @constant */
+            readonly Audit_bank_autocrawl_unhold_info: "Reservation refund";
+            /** @constant */
+            readonly Delete_url: "Delete URL";
+        };
+        "I18n.Bank": {
+            /** @constant */
+            readonly Plus: "Credit";
+            /** @constant */
+            readonly Minus: "Expenses";
+            /** @constant */
+            readonly Payment: "Payment";
+            /** @constant */
+            readonly Incorrect_sum: "Incorrect sum!";
+            /** @constant */
+            readonly Not_enough_balance: "Insufficient balance in your account!";
+            /** @constant */
+            readonly Not_enough_owner_balance_short: "The project owner has insufficient funds to complete the task";
+            /** @constant */
+            readonly Not_enough_owner_balance: "The project owner has insufficient funds to complete the task. Contact the owner of the project ";
+            /** @constant */
+            readonly Not_enough_owner_balance2: " and ask them to top up their balance.";
+            /** @constant */
+            readonly Not_enough_balance_limit: "You used up the limit on checks the project's owner gave you. Contact the owner via ";
+            /** @constant */
+            readonly Not_enough_balance_limit2: " if you need to raise the limit";
+            /** @constant */
+            readonly Refill_balance: "Top up balance";
+            /** @constant */
+            readonly Bonus_refill: "Bonus for balance top-up";
+            /** @constant */
+            readonly Mail_address: "Address";
+            /** @constant */
+            readonly Basis1: "Certificates";
+            /** @constant */
+            readonly Basis2: "Powers of attorney";
+            /** @constant */
+            readonly Basis3: "Management contract";
+            /** @constant */
+            readonly Ref_action: "Transaction from the affiliate account to the system account";
+            /** @constant */
+            readonly bonuses: "bonus";
+            /** @constant */
+            readonly public_offer: "public offer";
+            /** @constant */
+            readonly by_public_offer: "under public offer";
+            /** @constant */
+            readonly dogovor: "contract";
+            /** @constant */
+            readonly by_dogovor: "under agreement";
+            /** @constant */
+            readonly Info_bonus?: "Topvisor bonus credit";
+            /** @constant */
+            readonly Info_system_cash?: "Topvisor bonus credit";
+            /** @constant */
+            readonly Info_system_withdrawal: "Withdrawal to system account";
+            /** @constant */
+            readonly Refund_by_invoice: "Refund by invoice";
+            /** @constant */
+            readonly Return_to_payment: "Back to payment methods";
+            /** @constant */
+            readonly Payment_processed: "Your payment has been processed successfully. <br> Thank you for choosing our tools";
+            /** @constant */
+            readonly Payment_unsuccessful: "Sorry, payment failed.<br>Please, try another payment method or contact Customer Support.";
+            /** @constant */
+            readonly Bonuses: "Bonus account";
+            /** @constant */
+            readonly Comment: "Description";
+            /** @constant */
+            readonly Operation: "Operation";
+            /** @constant */
+            readonly Pay: "Pay";
+            /** @constant */
+            readonly Total_to_pay: "Total";
+            /** @constant */
+            readonly Referral_link: "Affiliate link";
+            /** @constant */
+            readonly Your_referrals: "Referrals";
+            /** @constant */
+            readonly Referrals_registered: "Registered";
+            /** @constant */
+            readonly Referrals_turnover: "Turnover";
+            /** @constant */
+            readonly Referrals_last_payment: "Last payment";
+            /** @constant */
+            readonly Income: "Income";
+            /** @constant */
+            readonly Set_period: "Select period";
+            /** @constant */
+            readonly Referrals_bonus: "We have a bonus for you!";
+            /** @constant */
+            readonly Referrals_bonus_info: "We'll gift social media referrals extra 200 free ranking updates!";
+            /** @constant */
+            readonly Share: "Share";
+            /** @constant */
+            readonly Referrals_attach_email: "This address will be linked to your account as an affiliate address";
+            /** @constant */
+            readonly Referrals_share: "Share on social media";
+            /** @constant */
+            readonly Referrals_send_email_invite: "Send invitation";
+            /** @constant */
+            readonly Referrals_invitation_sent: "We have sent invitation email to";
+            /** @constant */
+            readonly Referrals_stats: "Stats";
+            /** @constant */
+            readonly Referrals_level: "Referee level";
+            /** @constant */
+            readonly Referrals_you_earned: "You earned";
+            /** @constant */
+            readonly Referrals_withdraw_to_balance: "To balance";
+            /** @constant */
+            readonly Referrals_withdraw: "Withdraw";
+            /** @constant */
+            readonly Referrals_transfer: "Transfer";
+            /** @constant */
+            readonly Referrals_confirm_funds_transfer_to_bonus_account_notice: "Your earnings will be transferred to the bonus balance, you will not be able to withdraw it later.<br><br>\n\tDo you want to continue?";
+            /** @constant */
+            readonly Referrals_levels_description_title: "Referrals get levels that depend on the total amount paid. There are no limits on Referrals' levels or\n\tthe reward amount a Partner can get. But the reward accrues only during two years after Referral registration date.<br><br>\n\tA Partner gets a reward each time a Referral reaches a new level on the Affiliate program. A reward is 100 rubles for the 1st\n\tlevel and 10% of the new payments by a Referral for the next levels.";
+            /** @constant */
+            readonly Referrals_download_invoice_act: "Download invoice and act";
+            /** @constant */
+            readonly Referrals_withdrawal_available_from_amount_notice: "You can withdraw the amount from 5 000 rubles";
+            /** @constant */
+            readonly Referrals_link_to_EDF_setup_instruction: "What is EDF, how can I use it?";
+            /** @constant */
+            readonly Referrals_send_documents_to_get_payout_comment?: "Send downloaded documents to Topvisor Co., Ltd (Tax ID 4726000897) via e-document workflow. We will make a payout within a working day.";
+            /** @constant */
+            readonly Referrals_visits: "Visits";
+            /** @constant */
+            readonly Referrals_registrations: "Registrations";
+            /** @constant */
+            readonly Referrals_partner_bank_details: "Affiliate program member bank details";
+            /** @constant */
+            readonly Referrals_invitation_from: "Invitation from";
+            /** @constant */
+            readonly Referrals_transfer_from_referral_to_bonus_balance: "Transfer from referral balance to bonus balance";
+            /** @constant */
+            readonly First_referral_email_title: "You got your first referral!";
+            /** @constant */
+            readonly New_referral_email_title: "You already have %count_referrals% referrals. Keep it up! 🎉";
+            /** @constant */
+            readonly Referrals_award_email_title: "You received a reward! Your referral reached a new level 🔥";
+            /** @constant */
+            readonly Referrals_total_amount_earned_email_title: "As our partner, you have already earned %total_balance_ref% rubles. Keep it up! ?";
+            /** @constant */
+            readonly Account_plan: "Account (Pricing plan)";
+            /** @constant */
+            readonly Plan_discount: "YOU SAVE";
+            /** @constant */
+            readonly discount: "you save";
+            /** @constant */
+            readonly Discount: "You save";
+            /** @constant */
+            readonly plan_month: "per month";
+            /** @constant */
+            readonly Remove_card: "Remove card";
+            /** @constant */
+            readonly Cancel_subscription: "Cancel subscription";
+            /** @constant */
+            readonly Link_card: "Save";
+            /** @constant */
+            readonly Removed_card_notice: "Your credit card is removed. You can add a credit card again at the end of the current billing period.";
+            /** @constant */
+            readonly plan_payment: "pricing plan subscription fee";
+            /** @constant */
+            readonly Extending_plan_failed: "Subscription failed to renew";
+            /** @constant */
+            readonly Extending_plan_notice: "To restart your subscription ";
+            /** @constant */
+            readonly Tariff_choose_plan: "Choose a plan that works for you and save up to ";
+            /** @constant */
+            readonly Tariff_next_plan: "Next plan";
+            /** @constant */
+            readonly Tariff_text: "Pricing Plan discount is valid until the end of the billing period.\nIf unsubscribed, the discount is saved and corresponds to the selected Pricing Plan. The billing period is 1 calendar month.<br><br>\nYou can select another payment method after unsubscribing from the Pricing Plan and at the end of the billing period of the Pricing Plan.";
+            /** @constant */
+            readonly Billing_operations: "Billing operations";
+            /** @constant */
+            readonly Service_tracking: "Rank tracker tool";
+            /** @constant */
+            readonly Service_researcher: "Keyword research tool";
+            /** @constant */
+            readonly Service_suggestions_tool: "Search suggestions tool";
+            /** @constant */
+            readonly Service_AMS_tracker: "Search volume tool";
+            /** @constant */
+            readonly Service_clustering: "Keyword clustering tool";
+            /** @constant */
+            readonly Service_auditor: "SEO audit tool";
+            /** @constant */
+            readonly Service_auditor_hold: "SEO audit tool (hold)";
+            /** @constant */
+            readonly Service_watcher: "Website watcher";
+            /** @constant */
+            readonly Service_index_checker: "Index checker tool";
+            /** @constant */
+            readonly Service_sitemap: "Sitemap generator";
+            /** @constant */
+            readonly Service_broker: "Bid manager<br>/1000 adjustments";
+            /** @constant */
+            readonly Service_bid_manager: "Bid manager";
+            /** @constant */
+            readonly Service_domain_registration: "Domain registration";
+            /** @constant */
+            readonly Service_web_screens: "Web screenshots";
+            /** @constant */
+            readonly Service_domain_renewal: "Domain renewal";
+            /** @constant */
+            readonly Service_payments_no_type: "Payments of no type";
+            /** @constant */
+            readonly Service_export: "Projects export";
+            /** @constant */
+            readonly Service_registrar_services: "Registrar services";
+            /** @constant */
+            readonly Service_competitors: "Competitor research";
+            /** @constant */
+            readonly Inform_choose_plan: "You can choose the right plan straight away after ";
+            /** @constant */
+            readonly register: "signup";
+            /** @constant */
+            readonly Move_to_plan: "Choose the right plan for your business on ";
+            /** @constant */
+            readonly bank_page: "billing page";
+            /** @constant */
+            readonly inform_updates_per_month: " rank updates per month";
+            /** @constant */
+            readonly Tariff_balance_activation: "Pricing plan fee";
+            /** @constant */
+            readonly Prepaid_months: "Prepaid months (including current)";
+            /** @constant */
+            readonly paid_earlier: "paid earlier";
+            /** @constant */
+            readonly pricing_plan: "pricing plan";
+            /** @constant */
+            readonly Insufficient_balance_to_extend_plan: "Not enough funds to renew subscription";
+            /** @constant */
+            readonly Russian_ruble: "Russian ruble";
+            /** @constant */
+            readonly US_dollar: "US dollar";
+            /** @constant */
+            readonly You_can_select_change_currency_once_before_first_payment_notice: "Currency can be selected and changed only once before the first payment";
+            /** @constant */
+            readonly Payments_willbe_made_in_currency: "Payments will be accepted in the following currency";
+            /** @constant */
+            readonly Name_payment?: "Topvisor Software - Payment TV-%paymentId%";
+            /** @constant */
+            readonly Name_payment_tariff?: "Topvisor Software 1-Month Subscription %tariffName% plan - Payment TV-%paymentId%";
+            /** @constant */
+            readonly Name_payment_short?: "Topvisor Software TV-%paymentId%";
+            /** @constant */
+            readonly Name_payment_tariff_short?: "Topvisor Software 1-Month %tariffName% plan TV-%paymentId%";
+            /** @constant */
+            readonly Name_payment_log: "Credit%systemType% - Payment TV-%paymentId% via \"%systemName%\"%contractInfo%";
+            /** @constant */
+            readonly Name_payment_log_tariff: "1-Month Subscription %tariffName% - plan - Payment TV-%paymentId% via \"%systemName%\"%contractInfo%";
+            /** @constant */
+            readonly System_name_balance: "Payment from account balance";
+            /** @constant */
+            readonly System_name_card: "Credit card payment";
+            /** @constant */
+            readonly System_name_invoice: "Wire transfer";
+            /** @constant */
+            readonly System_name_tinkoff_business: "Wire transfer (T-Business)";
+            /** @constant */
+            readonly System_name_card_ap: "Apple Pay";
+            /** @constant */
+            readonly System_name_card_gp: "Google Pay";
+            /** @constant */
+            readonly System_name_card_ios: "iOS";
+            /** @constant */
+            readonly System_name_card_android: "Android";
+            /** @constant */
+            readonly System_name_wm2: "WebMoney";
+            /** @constant */
+            readonly System_name_pp: "PayPal";
+            /** @constant */
+            readonly System_name_pt: "Payture";
+            /** @constant */
+            readonly System_name_ym: "YooMoney";
+            /** @constant */
+            readonly System_name_rk: "Robokassa (cards of non-Russian banks, except Ukraine, USA, Turkey, Belarus)";
+            /** @constant */
+            readonly System_name_qw: "QIWI";
+            /** @constant */
+            readonly System_name_pd: "Paddle";
+            /** @constant */
+            readonly System_name_pd_invoice: "Paddle invoice";
+            /** @constant */
+            readonly System_name_sb: "SberPay";
+            /** @constant */
+            readonly System_name_lp: "LeadPay (cards of Belarusian banks)";
+            /** @constant */
+            readonly System_name_pr: "Prodamus (cards of Belarusian banks)";
+            /** @constant */
+            readonly System_name_ppg: "PayPro Global (cards of non-Russian banks, PayPal, Wire Transfer. All countries except Belarus)";
+            /** @constant */
+            readonly Your_contract_expires_notice: "Contract expiration notice";
+            /** @constant */
+            readonly Earlier_contacts_closed_notice: "Your earlier contract has been closed";
+            /** @constant */
+            readonly Tinkoff_bank_details: "TBank, Moscow";
+            /** @constant */
+            readonly Contragent_message: "Dear valued counterparty!\nOur company started using electronic document workflow system. We can issue and receive invoices, acts and receipts,\nkeep all documents and correspondence in the e-format without issuing paper duplicates.\nIf you would like to receive your documents in e-format via the electronic document workflow system, accept this invitation.\nBest regards, Denis Pustovoit";
+            /** @constant */
+            readonly for_1_month_on_pricing_plan: "for 1 month on the pricing plan";
+            /** @constant */
+            readonly TV: "TV-";
+            /** @constant */
+            readonly Grant_right_to_use_Topvisor?: "Right to use Topvisor software under contract";
+            /** @constant */
+            readonly Mentioned_services_completed_in_full_notice: "The services mentioned above have been completed in full and on time. The customer does not have any concerns regarding volume, quality, and delivery timing.";
+            /** @constant */
+            readonly Offer: "Offer";
+            /** @constant */
+            readonly Contract_offer: "Contract offer";
+            /** @constant */
+            readonly Contract: "Agreement";
+            /** @constant */
+            readonly Add_payment_details: "Add payment details";
+            /** @constant */
+            readonly Natural_person: "Individual";
+            /** @constant */
+            readonly Legal_person: "Company";
+            /** @constant */
+            readonly Sole_proprietor: "Sole proprietor";
+            /** @constant */
+            readonly Sole_proprietor_short: "SP";
+            /** @constant */
+            readonly Status: "Status";
+            /** @constant */
+            readonly Unconfirmed: "Pending / Unconfirmed";
+            /** @constant */
+            readonly Pause: "Received (paused)";
+            /** @constant */
+            readonly Confirmed: "Completed";
+            /** @constant */
+            readonly Pending_payment: "Pending payment";
+            /** @constant */
+            readonly Paid_and_postponed: "Pre-paid and postponed";
+            /** @constant */
+            readonly Service_acceptance_act: "Service acceptance act";
+            /** @constant */
+            readonly Payment_confirmed: "Payment confirmed";
+            /** @constant */
+            readonly Payment_prepaid: "Payment prepaid";
+            /** @constant */
+            readonly Payment_canceled: "Payment canceled";
+            /** @constant */
+            readonly Payment_refunded: "Payment refunded";
+            /** @constant */
+            readonly Make_invoice: "Create invoice";
+            /** @constant */
+            readonly Get_payment_invoice: "Get invoice";
+            /** @constant */
+            readonly Card_payment: "Card payment";
+            /** @constant */
+            readonly Card_payment_info: "(Visa and Mastercard of Russian banks;<br>«Mir» of any banks)";
+            /** @constant */
+            readonly Paddle_info: "(Visa and Mastercard of non-Russian banks excluding Belarus;<br>American Express, PayPal)";
+            /** @constant */
+            readonly Pay_with_card_processing_time_15min: "Pay with card. Processing time: 15 minutes.";
+            /** @constant */
+            readonly Project_id: "Project ID";
+            /** @constant */
+            readonly Project_info: "Project info";
+            /** @constant */
+            readonly Automatic_top_up: "Auto top-up";
+            /** @constant */
+            readonly Account_automatic_top_up: "Balance auto top-up";
+            /** @constant */
+            readonly When_current_balance_reaches: "When balance is below";
+            /** @constant */
+            readonly Top_up_balance_with: "Top up balance by";
+            /** @constant */
+            readonly Topvisor_soft_account_topup?: "Top up Topvisor account";
+            /** @constant */
+            readonly Subscribe_Topvisor_plan?: "Subscribe to Topvisor plan";
+            /** @constant */
+            readonly Amount_from: "Minimum amount";
+            /** @constant */
+            readonly Subscribe_for_period: "Subscribe period";
+            /** @constant */
+            readonly Invoice_for: "Invoice for";
+            /** @constant */
+            readonly you_need_to_select_plan: "select a plan above";
+            /** @constant */
+            readonly Subscribe_to_plan: "Subscribe to plan";
+            /** @constant */
+            readonly Change_plan: "Change plan";
+            /** @constant */
+            readonly Payment_status: "Payment status";
+            /** @constant */
+            readonly Individual_no_banking_details: "Individual";
+            /** @constant */
+            readonly Add_banking_details: "Add company details";
+            /** @constant */
+            readonly Add_admin: "Add administrator";
+            /** @constant */
+            readonly Edit_company_agreement: "Edit agreement";
+            /** @constant */
+            readonly Edit_admin_card: "Edit administrator card";
+            /** @constant */
+            readonly Save_bank_details: "Save bank details";
+            /** @constant */
+            readonly Discount_active_after_payment_plan_autorenewed_notice?: "Discount for Topvisor software will be activated after your payment is credited to the Pricing plan balance account. A selected plan is renewed automatically. The Pricing plan balance gets zeroed out in the end of each month.";
+            /** @constant */
+            readonly for_1_month: "for 1 month";
+            /** @constant */
+            readonly active: "active";
+            /** @constant */
+            readonly Cancel_pricing_plan_subscription: "Cancel subscription";
+            /** @constant */
+            readonly Invoice_created_successfully: "Invoice created successfully";
+            /** @constant */
+            readonly Proceed_to_bank_account_to_sign_order: "Proceed to TBank account to sign a payment order";
+            /** @constant */
+            readonly Estimated_processing_time: "Estimated processing time is 5 minutes";
+            /** @constant */
+            readonly Topup_amount: "Topup amount";
+            /** @constant */
+            readonly Topup_balance: "Top up balance";
+            /** @constant */
+            readonly Next_plan_payment: "Next payment";
+            /** @constant */
+            readonly in_the_amount: "of";
+            /** @constant */
+            readonly View_payment_warrants: "View payment warrants on the";
+            /** @constant */
+            readonly New_card: "New card";
+            /** @constant */
+            readonly card: "card";
+            /** @constant */
+            readonly Tinkoff_business_e_account: "T-Business (e-account)";
+            /** @constant */
+            readonly Get_invoice_via_Diadoc: "Get invoice via e-doc";
+            /** @constant */
+            readonly to_Topvisor_balance?: "to Topvisor balance";
+            /** @constant */
+            readonly Register_in_Tinkoff_business: "Create a T-Business account";
+            /** @constant */
+            readonly Best_option: "Best choice";
+            /** @constant */
+            readonly Get_receipt_to_email: "Get receipt to Email";
+            /** @constant */
+            readonly Company_name: "Company name";
+            /** @constant */
+            readonly Company_address: "Company address";
+            /** @constant */
+            readonly Country_of_residence: "Country of residence";
+            /** @constant */
+            readonly Organization_name: "Company name";
+            /** @constant */
+            readonly Organization_english_name: "Company name in English";
+            /** @constant */
+            readonly OKPO: "OKPO";
+            /** @constant */
+            readonly Checking_account: "Checking account";
+            /** @constant */
+            readonly BIC: "BIC";
+            /** @constant */
+            readonly Bank_BIC: "BIC of bank";
+            /** @constant */
+            readonly Name_of_bank: "Name of bank";
+            /** @constant */
+            readonly Name_of_bank_short: "Name";
+            /** @constant */
+            readonly for_public_companies_and_monopolies: "for public companies and natural monopolies";
+            /** @constant */
+            readonly Legal_address: "Legal address";
+            /** @constant */
+            readonly Postal_address: "Postal address";
+            /** @constant */
+            readonly Postal_code: "Postal code / Zip code";
+            /** @constant */
+            readonly City: "City";
+            /** @constant */
+            readonly Region: "State / Province";
+            /** @constant */
+            readonly Correspondent_bank_details: "Correspondent bank details";
+            /** @constant */
+            readonly corr_acc: "Bank corr. acc.";
+            /** @constant */
+            readonly corr_acc_short: "corr. acc.";
+            /** @constant */
+            readonly IIC: "IIC";
+            /** @constant */
+            readonly MFO: "MFO";
+            /** @constant */
+            readonly Signatory_full_name: "Signatory full name";
+            /** @constant */
+            readonly Title: "Title";
+            /** @constant */
+            readonly Acts_under: "Acts under";
+            /** @constant */
+            readonly Of_chart: "Chart";
+            /** @constant */
+            readonly Of_certificate: "Certificate";
+            /** @constant */
+            readonly Of_power_of_attorney: "Power of attorney";
+            /** @constant */
+            readonly Of_contract_of_management: "Contract of management";
+            /** @constant */
+            readonly Signatory_full_name_genitive: "Signatory full name in genitive case";
+            /** @constant */
+            readonly Title_genitive: "Title in genitive case";
+            /** @constant */
+            readonly Number_of_signatories: "Number of signatories";
+            /** @constant */
+            readonly Create_Tinkoff_business_account: "Create T-Business account";
+            /** @constant */
+            readonly Domain_registration_or_renewal: "Domain registration or renewal ID%paymentId%";
+            /** @constant */
+            readonly Not_enough_money_for_purchase: "You do not have enough funds to complete purchase";
+            /** @constant */
+            readonly Manage_contract: "Manage contract";
+            /** @constant */
+            readonly Cash_receipts: "Cash receipts";
+            /** @constant */
+            readonly Reconciliation_statement: "Reconciliation statement";
+            /** @constant */
+            readonly Download_contract: "Download contract";
+            /** @constant */
+            readonly Sign_contract_via_diadoc: "Sign contract via e-doc";
+            /** @constant */
+            readonly Connect_to_diadoc: "Connect Diadoc e-management";
+            /** @constant */
+            readonly Download_envelope_cover: "Download envelope cover";
+            /** @constant */
+            readonly Receipts_for_period: "Receipts for the period";
+            /** @constant */
+            readonly Reconciliation_statement_for_period: "Reconciliation statement for the period";
+            /** @constant */
+            readonly Send_to_diadoc: "Send via e-doc";
+            /** @constant */
+            readonly Invoices_and_warrants: "Invoices and warrants";
+            /** @constant */
+            readonly Invoices_and_acts: "Invoices and statements";
+            /** @constant */
+            readonly Operations: "Billing history";
+            /** @constant */
+            readonly Invoice_number: "Invoice number";
+            /** @constant */
+            readonly Plan_not_selected: "Plan<br> not selected";
+            /** @constant */
+            readonly account_personal: "personal";
+            /** @constant */
+            readonly account_pricing_plan: "pricing plan";
+            /** @constant */
+            readonly account_bonus: "bonus";
+            /** @constant */
+            readonly Software: "Software";
+            /** @constant */
+            readonly Invoice: "Invoice";
+            /** @constant */
+            readonly Tools_and_pricing: "Tools and prices";
+            /** @constant */
+            readonly Start_for_free: "Start for free";
+            /** @constant */
+            readonly View_all_pricing_1: "View full";
+            /** @constant */
+            readonly View_all_pricing_2: "pricing";
+            /** @constant */
+            readonly Faster_payments_system: "Faster payments system";
+            /** @constant */
+            readonly QR_code: "QR code";
+            /** @constant */
+            readonly Full_amount: "Full amount";
+            /** @constant */
+            readonly Money_be_transferred_to_bonus_acc_no_withdraw: "Funds will be transferred to the bonus account, you won't be able to withdraw it.";
+            /** @constant */
+            readonly Select_amount_to_transfer: "Select amount to transfer (rub.)";
+            /** @constant */
+            readonly Do_you_want_continue: "Do you want to continue?";
+            /** @constant */
+            readonly Get_closing_documents_by_mail: "Get closing documents by mail";
+            /** @constant */
+            readonly Get_closing_documents_by_mail_info: "Check this box to receive closing documents by mail. We will send the registered mail with the Russian Post, you will need to receive it at your post office.<br><br>\n\t\tIf you want to receive the documents in electronic form, accept our invitation to join electronic document flow.<br><br>\n\t\tIf your accounting department do not see this invitation, contact us. Sometimes the original documents are not necessary, you can always get the copies under Invoices and warrants.";
+            /** @constant */
+            readonly Confirm_document_removal: "Are you sure you want to delete this document";
+            /** @constant */
+            readonly Act: "Act";
+            /** @constant */
+            readonly Dialog_subscription_title: "Subscribe to {{ siteName }} Pricing Plan";
+        };
+        "I18n.Broker": {
+            /** @constant */
+            readonly Filter: "Filter";
+            /** @constant */
+            readonly All: "All";
+            /** @constant */
+            readonly Active: "Active";
+            /** @constant */
+            readonly Inactive: "Inactive";
+            /** @constant */
+            readonly Draft: "Draft";
+            /** @constant */
+            readonly Campaign_draft_status: "This campaign has a \"Draft\" status.<br> You can manage only active ads";
+            /** @constant */
+            readonly Configured: "Configured";
+            /** @constant */
+            readonly Not_configured: "Not configured";
+            /** @constant */
+            readonly By_min_1GP: "Min. bid 1st GP";
+            /** @constant */
+            readonly By_min_GP: "Min. bid GP";
+            /** @constant */
+            readonly By_min_1SP: "Min. bid 1st SP";
+            /** @constant */
+            readonly By_min_SP: "Min. bid SP";
+            /** @constant */
+            readonly Min_bid: "Min. bid";
+            /** @constant */
+            readonly No_ads: "This campaign has no ads or they<br> are not synced.";
+            /** @constant */
+            readonly Refresh_list: "Update the list";
+            /** @constant */
+            readonly All_groups: "All groups";
+            /** @constant */
+            readonly Regions: "Display regions";
+            /** @constant */
+            readonly Ad_number: "Ad № M";
+            /** @constant */
+            readonly Keyword: "Keyword";
+            /** @constant */
+            readonly Impressions: "Impressions";
+            /** @constant */
+            readonly Clicks: "Clicks";
+            /** @constant */
+            readonly Block_bid: "Traffic volume / Bid";
+            /** @constant */
+            readonly Traffic_volume: "Traffic volume";
+            /** @constant */
+            readonly CPC: "CPC";
+            /** @constant */
+            readonly MAX_price: "MAX bid";
+            /** @constant */
+            readonly if_MAX_price_preceeded: "if MAX price<br> preceeded";
+            /** @constant */
+            readonly units: "units";
+            /** @constant */
+            readonly New_bid: "Next<br>bid";
+            /** @constant */
+            readonly Current_bid: "Current<br>bid";
+            /** @constant */
+            readonly Cpc_search_results: "CPC on search<br> results page";
+            /** @constant */
+            readonly Apply_to_selected_keywords: "Apply to selected keywords";
+            /** @constant */
+            readonly count: " ";
+            /** @constant */
+            readonly Adjustment_short: "Adj";
+            /** @constant */
+            readonly Advertising_short: "Ad";
+            /** @constant */
+            readonly Select_tactics: "Select tactics";
+            /** @constant */
+            readonly Select_traffic_volume: "Select traffic volume";
+            /** @constant */
+            readonly Select_position: "Select position";
+            /** @constant */
+            readonly Set_price: "Set price";
+            /** @constant */
+            readonly no_more: "no more";
+            /** @constant */
+            readonly Adjust_for_other_campaigns: "Apply to all campaigns";
+            /** @constant */
+            readonly Show_hide_keywords: "Show / Hide keywords";
+            /** @constant */
+            readonly Show_group_keywords: "Show group keywords";
+            /** @constant */
+            readonly Select_campaign: "Select campaign";
+            /** @constant */
+            readonly Ad_groups: "Ad groups";
+            /** @constant */
+            readonly Schedule: "Schedule";
+            /** @constant */
+            readonly Journal: "Journal";
+            /** @constant */
+            readonly Integration_settings: "Integration settings";
+            /** @constant */
+            readonly Key_expires: "Key expires";
+            /** @constant */
+            readonly Limits_API_direct: "Yandex.Direct API limits";
+            /** @constant */
+            readonly Weekly_budget_forecast: "Weekly budget forecast";
+            /** @constant */
+            readonly Update_list_campaigns: "Update ad campaigns";
+            /** @constant */
+            readonly adjustments_for: "adjustments priced";
+            /** @constant */
+            readonly API_limits: "API limits";
+            /** @constant */
+            readonly Ad_campaigns: "Ad campaigns";
+            /** @constant */
+            readonly Status: "Status";
+            /** @constant */
+            readonly Direct_balance: "Direct<br> balance";
+            /** @constant */
+            readonly configured_notconfigured: "configured<br>(not configured)";
+            /** @constant */
+            readonly Bidding_cost: "Bidding<br>cost";
+            /** @constant */
+            readonly Management: "Manage";
+            /** @constant */
+            readonly for_all: "for all";
+            /** @constant */
+            readonly Bid_adjustment: "Bid adjustment";
+            /** @constant */
+            readonly Journal_log: "Journal";
+            /** @constant */
+            readonly Automated_strategy: "Automated&nbsp;bid strategy: bidding cannot be applied";
+            /** @constant */
+            readonly Bidding_disabled: "Bidding disabled";
+            /** @constant */
+            readonly Adjust_not_adjust_bids: "Manage/Do not manage bids";
+            /** @constant */
+            readonly Integrate_to_manage_bids_1: "To manage bids for ad campaigns,";
+            /** @constant */
+            readonly Integrate_to_manage_bids_2: "integrate<br>";
+            /** @constant */
+            readonly Integrate_to_manage_bids_3: "your account with";
+            /** @constant */
+            readonly Mass_turn_on_bidding: "Turn on bidding for all campaigns";
+            /** @constant */
+            readonly Turn_on: "On";
+            /** @constant */
+            readonly Turn_off: "Off";
+            /** @constant */
+            readonly Schedule_bidding: "Schedule bidding";
+            /** @constant */
+            readonly Bulk_campaign_management: "Bulk campaign management";
+            /** @constant */
+            readonly Keyword_was_deleted: "Keyword is deleted";
+            /** @constant */
+            readonly in_Adwords: "in Google Ads";
+            /** @constant */
+            readonly Keywords_bidding_applied: "Keywords with adjusted bids";
+            /** @constant */
+            readonly Keywords_no_bidding_applied: "Keywords without adjusted bids";
+            /** @constant */
+            readonly Yandex_error: "Yandex.Direct server error";
+            /** @constant */
+            readonly No_vaild_currency_for_keywords: "No valid currency for this keyword found";
+            /** @constant */
+            readonly Support_only_real_currency_note: "At the moment we support only real currency";
+            /** @constant */
+            readonly Expected_array: "Array expected";
+            /** @constant */
+            readonly Bid_management_available_for_manual_note: "Bid management available only for campaigns with manual bidding strategy";
+            /** @constant */
+            readonly Low_balance_note: "You have insufficient funds to manage bids for the project";
+            /** @constant */
+            readonly Low_balance_owner_note: "Project owner has insufficient funds";
+            /** @constant */
+            readonly Direct_bids_adjusted_for_note: "Yandex.Direct bids are adjusted for the campaign";
+            /** @constant */
+            readonly adjusted_for_project: "in the project";
+            /** @constant */
+            readonly State_ENABLED: "Enabled";
+            /** @constant */
+            readonly State_PAUSED: "Paused";
+            /** @constant */
+            readonly State_REMOVED: "Removed";
+            /** @constant */
+            readonly State_UNKNOWN: "Unknown";
+            /** @constant */
+            readonly Frequency_never: "Never";
+            /** @constant */
+            readonly Frequency_daily: "Daily";
+            /** @constant */
+            readonly Frequency_daily_2: "Twice a day";
+            /** @constant */
+            readonly Frequency_every_4_hours: "Every 4 hours";
+            /** @constant */
+            readonly Frequency_every_hour: "Every hour";
+            /** @constant */
+            readonly Frequency_half_hour: "Every 30 minutes";
+            /** @constant */
+            readonly Frequency_10_min: "Every 10 minutes";
+            /** @constant */
+            readonly Frequency_5_min: "Every 5 minutes";
+            /** @constant */
+            readonly times_a_week: "times<br>a week";
+            /** @constant */
+            readonly Start_managing_bids: "Run bidding";
+            /** @constant */
+            readonly Manage_bids: "Manage bids";
+            /** @constant */
+            readonly Bidding_schedule: "Bidding schedule";
+            /** @constant */
+            readonly No_manage_bids_of_suspended_keywords: "Do not manage disabled keywords";
+            /** @constant */
+            readonly cannot_combine_option_with_no_impressions_tactics: "this option cannot be combined with the \"Stop impressions\" tactic";
+            /** @constant */
+            readonly Bidding_on_when_impressions_on: "Bidding is active only with ad impressions enabled, ad status is checked automatically";
+            /** @constant */
+            readonly update: "update";
+            /** @constant */
+            readonly Impressions_schedule: "Impressions schedule";
+            /** @constant */
+            readonly Schedule_not_uploaded: "Schedule not uploaded yet.";
+            /** @constant */
+            readonly Campaign_timezone: "Campaign timezone";
+            /** @constant */
+            readonly Hours: "Hours";
+            /** @constant */
+            readonly Include_working_weekend: "Show on weekend workdays";
+            /** @constant */
+            readonly Include_holidays: "Show on holidays";
+            /** @constant */
+            readonly Show_since: "Show since";
+            /** @constant */
+            readonly show_till: "till";
+            /** @constant */
+            readonly do_not_show: "do not show";
+            /** @constant */
+            readonly Campaign_settings: "Campaign settings";
+            /** @constant */
+            readonly All_campaigns: "All campaigns";
+            /** @constant */
+            readonly Campaign: "Campaign";
+            /** @constant */
+            readonly Info: "Details";
+            /** @constant */
+            readonly risk_bid: "risk bid";
+            /** @constant */
+            readonly First_place_premium: "1 Спецразмещение";
+            /** @constant */
+            readonly Second_place_premium: "2 Спецразмещение";
+            /** @constant */
+            readonly Third_place_premium: "3 Спецразмещение";
+            /** @constant */
+            readonly Premium_placement: "Спецразмещение";
+            /** @constant */
+            readonly First_place: "1 место в Гарантии";
+            /** @constant */
+            readonly Guaranteed_placement: "Гарантированные показы";
+            /** @constant */
+            readonly First_position: "1 место";
+            /** @constant */
+            readonly Above_page: "Вверху страницы";
+            /** @constant */
+            readonly First_page: "Первая страница";
+            /** @constant */
+            readonly P11_0: "Traffic volume max.";
+            /** @constant */
+            readonly P12_0: "Traffic volume ~95%";
+            /** @constant */
+            readonly P13_0: "Traffic volume ~90%";
+            /** @constant */
+            readonly P1L_0: "Traffic volume ~75%";
+            /** @constant */
+            readonly P21_0: "Traffic volume ~15%";
+            /** @constant */
+            readonly P2L_0: "Traffic volume ~5%";
+            /** @constant */
+            readonly P11_1: "1st position";
+            /** @constant */
+            readonly P1L_1: "Top of page";
+            /** @constant */
+            readonly P21_1: "Suggested bid";
+            /** @constant */
+            readonly P2L_1: "First page";
+            /** @constant */
+            readonly P11_0_short: "1PP";
+            /** @constant */
+            readonly P12_0_short: "2PP";
+            /** @constant */
+            readonly P13_0_short: "3PP";
+            /** @constant */
+            readonly P1L_0_short: "PP";
+            /** @constant */
+            readonly P21_0_short: "1GP";
+            /** @constant */
+            readonly P2L_0_short: "GP";
+            /** @constant */
+            readonly P11_1_short: "1P";
+            /** @constant */
+            readonly P1L_1_short: "↑P";
+            /** @constant */
+            readonly P21_1_short: "SB";
+            /** @constant */
+            readonly P2L_1_short: "↓P";
+            /** @constant */
+            readonly Tactics_2_set_max_bid: "MAX: set MAX bid";
+            /** @constant */
+            readonly Tactics_2_lower_pos: "Move ad down";
+            /** @constant */
+            readonly Tactics_2_set_min_bid: "Set min bid";
+            /** @constant */
+            readonly Tactics_2_stop_impressions: "Stop impressions";
+            /** @constant */
+            readonly impressions_disabled: "ad is inactive";
+            /** @constant */
+            readonly set_max: "set in MAX";
+            /** @constant */
+            readonly set_min: "min bid";
+            /** @constant */
+            readonly old_bid: "old bid";
+            /** @constant */
+            readonly Lower_position: "Lower position";
+            /** @constant */
+            readonly Select_date: "Select period";
+            /** @constant */
+            readonly Download_log: "Download bidding history";
+            /** @constant */
+            readonly Warinig_min_balance_for_bidding: "Important! Bidding is available if you have a minimum balance of:";
+            /** @constant */
+            readonly Campaign_added_in_another_project: "This campaign already exists in another project";
+            /** @constant */
+            readonly Bidding_activated_for_campaign_in_another_project: "Bidding is already activated for this campaign in another project";
+            /** @constant */
+            readonly in_another_project: "in ano. project";
+            /** @constant */
+            readonly agency: "agency";
+        };
+        "I18n.Calendar": {
+            /** @constant */
+            readonly Dw_1: "Mo";
+            /** @constant */
+            readonly Dw_2: "Tu";
+            /** @constant */
+            readonly Dw_3: "We";
+            /** @constant */
+            readonly Dw_4: "Th";
+            /** @constant */
+            readonly Dw_5: "Fr";
+            /** @constant */
+            readonly Dw_6: "Sa";
+            /** @constant */
+            readonly Dw_7: "Su";
+            /** @constant */
+            readonly Day_of_week_1: "Monday";
+            /** @constant */
+            readonly Day_of_week_2: "Tuesday";
+            /** @constant */
+            readonly Day_of_week_3: "Wednesday";
+            /** @constant */
+            readonly Day_of_week_4: "Thursday";
+            /** @constant */
+            readonly Day_of_week_5: "Friday";
+            /** @constant */
+            readonly Day_of_week_6: "Saturday";
+            /** @constant */
+            readonly Day_of_week_7: "Sunday";
+            /** @constant */
+            readonly months: "|january|february|march|april|may|june|july|august|september|october|november|december";
+            /** @constant */
+            readonly of_months: "|january|february|march|april|may|june|july|august|september|october|november|december";
+            /** @constant */
+            readonly in_months: "|january|february|march|april|may|june|july|august|september|october|november|december";
+            /** @constant */
+            readonly January: "January";
+            /** @constant */
+            readonly Febuary: "February";
+            /** @constant */
+            readonly March: "March";
+            /** @constant */
+            readonly April: "April";
+            /** @constant */
+            readonly May: "May";
+            /** @constant */
+            readonly June: "June";
+            /** @constant */
+            readonly July: "July";
+            /** @constant */
+            readonly August: "August";
+            /** @constant */
+            readonly September: "September";
+            /** @constant */
+            readonly October: "October";
+            /** @constant */
+            readonly November: "November";
+            /** @constant */
+            readonly December: "December";
+        };
+        "I18n.Competitors": {
+            /** @constant */
+            readonly Competitor_analysis: "Competitor research";
+            /** @constant */
+            readonly Powerful_tool_for_competitve_analysis: "Powerful tool for comprehensive competitve reserach";
+            /** @constant */
+            readonly Results_on_serp: "Total search results count";
+            /** @constant */
+            readonly Keywords: "Keywords";
+            /** @constant */
+            readonly Keyword: "Keyword";
+            /** @constant */
+            readonly Traffic: "Traffic";
+            /** @constant */
+            readonly Common: "Common";
+            /** @constant */
+            readonly Unique: "Unique";
+            /** @constant */
+            readonly Chart: "Chart";
+            /** @constant */
+            readonly Summary: "Summary";
+            /** @constant */
+            readonly Summary_data: "Summary data";
+            /** @constant */
+            readonly Get_report: "Create report";
+            /** @constant */
+            readonly Expand: "Expand";
+            /** @constant */
+            readonly Expand_report: "Expand report";
+            /** @constant */
+            readonly Domain_or_URL: "Domain or URL";
+            /** @constant */
+            readonly Enter_domain_or_URL: "Enter domain or URL";
+            /** @constant */
+            readonly Enter_keyword: "Enter keyword";
+            /** @constant */
+            readonly Create_report: "Create report";
+            /** @constant */
+            readonly Report_created: "Report created";
+            /** @constant */
+            readonly Structure: "Structure";
+            /** @constant */
+            readonly Search_results: "Search results";
+            /** @constant */
+            readonly Related_keywords: "Related keywords";
+            /** @constant */
+            readonly Word_forms: "Word forms";
+            /** @constant */
+            readonly Organic_results: "Organic results";
+            /** @constant */
+            readonly organic_results: "organic";
+            /** @constant */
+            readonly Ads: "Ads";
+            /** @constant */
+            readonly ads: "ads";
+            /** @constant */
+            readonly Unique_keywords: "Unique keywords";
+            /** @constant */
+            readonly All_keywords: "All keywords";
+            /** @constant */
+            readonly Common_keywords: "Common keywords";
+            /** @constant */
+            readonly Cost: "Cost";
+            /** @constant */
+            readonly Volume: "Volume";
+            /** @constant */
+            readonly Count: "Count";
+            /** @constant */
+            readonly My_reports: "My reports";
+            /** @constant */
+            readonly Domain_keywords: "Domain keywords";
+            /** @constant */
+            readonly Domain_ad_texts: "Domain ad texts";
+            /** @constant */
+            readonly Competitors_in_organic_paid_search: "Competitors in organic & paid search";
+            /** @constant */
+            readonly Competitors_keywords: "Competitor's keywords";
+            /** @constant */
+            readonly Competitors_ad_texts: "Competitor's ad texts";
+            /** @constant */
+            readonly Basic_report: "Basic";
+            /** @constant */
+            readonly Select_report_type: "Select a report type";
+            /** @constant */
+            readonly domain_and_competitors_list: "domain and list of competitors";
+            /** @constant */
+            readonly purchased: "purchased";
+            /** @constant */
+            readonly Add_competitor_keywords: "Add competitor keywords";
+            /** @constant */
+            readonly you_can_purchase_later: "multi reports";
+            /** @constant */
+            readonly Checklist_keywords_paid_and_organic: "Keywords (Paid + Organic)";
+            /** @constant */
+            readonly Keyword_performance_indicators: "Keyword performance indicators";
+            /** @constant */
+            readonly Snippets_and_ads: "Snippet and ads";
+            /** @constant */
+            readonly Website_URLs_visible_in_search: "Website URLs in SERP";
+            /** @constant */
+            readonly Compare_data_with_competitors: "Compare data with competitors";
+            /** @constant */
+            readonly Group_export_of_competitors: "Competitors group export";
+            /** @constant */
+            readonly Keyword_cloud: "Keyword cloud";
+            /** @constant */
+            readonly CPC: "CPC";
+            /** @constant */
+            readonly Keywords_by_URL: "Keywords by URL";
+            /** @constant */
+            readonly Competitor_research_level: "Competitor research level";
+            /** @constant */
+            readonly List_of_competitors_and_intersection: "List of competitors and intersection";
+            /** @constant */
+            readonly Competitors_level_info: "A list of likely competitors will be included in the report without this option.<br><br>\n\t\tAdd competitor keywords to your report for quick access to keywords and snippets.<br><br>\n\t\tThe higher is the selected research level, the fewer pools of competitor keywords with a lower intersection level will be in the report.<br><br>\n\t\tIf you are not sure yet which level to select, you can buy the advanced report later on the <b>Competitors</b> page.";
+            /** @constant */
+            readonly level_purchased: "level purchased";
+            /** @constant */
+            readonly included: "included";
+            /** @constant */
+            readonly in_the_report: "in the report";
+            /** @constant */
+            readonly Total: "Total";
+            /** @constant */
+            readonly Competitors_list: "List of competitors";
+            /** @constant */
+            readonly Keywords_list: "List of keywords";
+            /** @constant */
+            readonly Keywords_of_competitors: "Competitors keywords";
+            /** @constant */
+            readonly To_project: "To project";
+            /** @constant */
+            readonly To_your_project: "To your project";
+            /** @constant */
+            readonly Export_keywords_to_project: "Export keywords to the project";
+            /** @constant */
+            readonly To_export_keywords_to_project: "Export keywords to the project";
+            /** @constant */
+            readonly Select_project: "Select a project";
+            /** @constant */
+            readonly Automated_grouping: "Automated grouping";
+            /** @constant */
+            readonly If_these_keywords_already_added: "If these keywords already exist in the project";
+            /** @constant */
+            readonly Keywords_total: "Total";
+            /** @constant */
+            readonly Keywords_common: "Common";
+            /** @constant */
+            readonly Keywords_unique: "Unique";
+            /** @constant */
+            readonly Keywords_intersection: "Intersection";
+            /** @constant */
+            readonly Keywords_volume: "Volume";
+            /** @constant */
+            readonly Keywords_impressions: "Impressions";
+            /** @constant */
+            readonly Keywords_avg_rank: "Average";
+            /** @constant */
+            readonly Keywords_median_rank: "Median";
+            /** @constant */
+            readonly Keywords_traffic: "Traffic";
+            /** @constant */
+            readonly Keywords_cost: "Cost";
+            /** @constant */
+            readonly Keywords_count: "Keywords";
+            /** @constant */
+            readonly Keywords_relevance: "Relevance";
+            /** @constant */
+            readonly Competitor: "Competitor";
+            /** @constant */
+            readonly Elements: "Elements";
+            /** @constant */
+            readonly No_elements: "No elements";
+            /** @constant */
+            readonly Elements_object_card: "Object card";
+            /** @constant */
+            readonly Elements_featured_snippet: "Featured snippet";
+            /** @constant */
+            readonly Elements_goods: "Goods";
+            /** @constant */
+            readonly Elements_map: "Map";
+            /** @constant */
+            readonly Elements_video: "Video";
+            /** @constant */
+            readonly Elements_images: "Images";
+            /** @constant */
+            readonly Elements_news: "News";
+            /** @constant */
+            readonly Elements_calc: "Formulas";
+            /** @constant */
+            readonly Elements_knowledge_panel: "Knowledge panel";
+            /** @constant */
+            readonly Elements_dictionary: "Dictionary";
+            /** @constant */
+            readonly Elements_definitions: "Definitions";
+            /** @constant */
+            readonly Elements_travel: "Travel";
+            /** @constant */
+            readonly Elements_calculator: "Calculator";
+            /** @constant */
+            readonly Elements_related_searches: "Related keywords";
+            /** @constant */
+            readonly Elements_ad_top: "Ad at the page top";
+            /** @constant */
+            readonly Elements_ad_bottom: "Ad at the page bottom";
+            /** @constant */
+            readonly Elements_ad_goods: "Ad - goods";
+            /** @constant */
+            readonly Elements_recipes: "Recipes";
+            /** @constant */
+            readonly Elements_health: "Health";
+            /** @constant */
+            readonly Elements_food: "Food, delivery, recipes";
+            /** @constant */
+            readonly Elements_media: "Media";
+            /** @constant */
+            readonly Elements_yandex_services: "Yandex services";
+            /** @constant */
+            readonly Elements_interactive: "Charts etc.";
+            /** @constant */
+            readonly reversed: "reversed";
+            /** @constant */
+            readonly Rank_from_last_check: "Rank from last check";
+            /** @constant */
+            readonly Snippet_title: "Snippet title";
+            /** @constant */
+            readonly Snippet_body: "Snippet body";
+            /** @constant */
+            readonly Results_count: "Results";
+            /** @constant */
+            readonly Ad_type: "Ad type";
+            /** @constant */
+            readonly Traffic_forecast_depends_on_impressions_and_rank: "Traffic forecast<br>Depends on the number of impressions and a website rank";
+            /** @constant */
+            readonly Potential_ad_cost_depends_on_CPC_and_traffic: "Potential ad cost based on traffic forecast. Сalculated by multiplying Traffic and CPC.";
+            /** @constant */
+            readonly Pages: "Pages";
+            /** @constant */
+            readonly Results_menu: "Results menu";
+            /** @constant */
+            readonly Website_topic: "Topic";
+            /** @constant */
+            readonly Search_URL_keyword: "Search URL / Keyword";
+            /** @constant */
+            readonly Expires_in: "Expires in";
+            /** @constant */
+            readonly Keyword_search_volume: "Keyword search volume";
+            /** @constant */
+            readonly Keyword_rank: "Keyword rank";
+            /** @constant */
+            readonly Keywords_to_export: "Keywords to export";
+            /** @constant */
+            readonly Intersection_label: "Keyword intersection percentage";
+            /** @constant */
+            readonly Relevance_label: "Relevance of two websites";
+            /** @constant */
+            readonly Set_target_URLs_automatically: "Set target URLs automatically";
+            /** @constant */
+            readonly Traffic_forecast: "Traffic forecast";
+            /** @constant */
+            readonly Traffic_volume: "Traffic volume";
+            /** @constant */
+            readonly No_data_to_display: "No data to display";
+            /** @constant */
+            readonly List_of_leaders: "List of leaders";
+            /** @constant */
+            readonly Leaders_keywords: "Leaders keywords";
+            /** @constant */
+            readonly Intersection_level: "Intersection level";
+            /** @constant */
+            readonly Question_phrases: "Question phrases";
+            /** @constant */
+            readonly Fix_word_order: "Fix word order";
+            /** @constant */
+            readonly Exact_match: "Exact match";
+            /** @constant */
+            readonly Leader: "Leader";
+            /** @constant */
+            readonly Commercial_word_forms: "Commercial word forms";
+            /** @constant */
+            readonly Keyword_has_broad_thematic_database_specify_keyword: "Keyword has broad thematic database, specify keyword to get a more accurate report";
+            /** @constant */
+            readonly Wordforms_thematic_keywords_leaders_list: "Word forms, thematic keywords and <br>list of leaders";
+            /** @constant */
+            readonly Search_volume_keyword_cost_seasonality: "Seasonal search volume and keyword cost";
+            /** @constant */
+            readonly Research_by_word_form: "Research by word form";
+            /** @constant */
+            readonly Research_by_thematic: "Research by topic";
+            /** @constant */
+            readonly by_thematic: "by topic";
+            /** @constant */
+            readonly Organic_top_50_ads_by_thematics: "TOP 50 organic results + Ads on topic";
+            /** @constant */
+            readonly Topic_leaders_list: "List of topic leaders";
+            /** @constant */
+            readonly Snippets_ads_of_topic_leaders: "Snippets and ads of topic leaders";
+            /** @constant */
+            readonly Bulk_export_of_leaders_keywords: "Bulk export of leader keywords";
+            /** @constant */
+            readonly Competitor_research: "Competitor research";
+            /** @constant */
+            readonly Leaders_analysis: "Leader research";
+            /** @constant */
+            readonly Leaders: "Leaders";
+            /** @constant */
+            readonly Word_count: "Word count";
+            /** @constant */
+            readonly Length: "Length";
+            /** @constant */
+            readonly Intersection_level_required: "Intersection level required";
+            /** @constant */
+            readonly Download_keywords_snippets_after_purchase: "After purchase, you can download keywords and snippets of this and other competitors with the intersection level %intersection% in one click and compare their data with the main domain on this report.";
+            /** @constant */
+            readonly Results_not_found: "There's no report by such URL or keyword in our database. This means the URL doesn't rank in TOP-50 for high volume keywords or that the keyword has <5 volume in Yandex and Google at the same time.<br><br>To find the competitors that rank for the keywords in your project with My competitors tool, follow <a href=\"/support/rankings/snapshots/competitors/\">this manual.</a>";
+        };
+        "I18n.Cron": {
+            /** @constant */
+            readonly Field_command: "Сommand";
+            /** @constant */
+            readonly Field_description: "Description";
+            /** @constant */
+            readonly Field_days: "Days of the week";
+            /** @constant */
+            readonly Field_hh: "Hours";
+            /** @constant */
+            readonly Field_i: "Minutes";
+            /** @constant */
+            readonly Field_on: "On/Off";
+            /** @constant */
+            readonly Field_task_create_time: "Task created";
+            /** @constant */
+            readonly Field_task_start_time: "Task runned";
+            /** @constant */
+            readonly Field_task_status: "Execution status";
+            /** @constant */
+            readonly Disabled: "Disabled";
+            /** @constant */
+            readonly Enabled: "Enabled";
+        };
+        "I18n.Domains": {
+            /** @constant */
+            readonly Domain_registrar: "Domain registrar";
+            /** @constant */
+            readonly Enter_domain_name: "Enter the domain name";
+            /** @constant */
+            readonly Pick_up: "Search";
+            /** @constant */
+            readonly Total: "Total";
+            /** @constant */
+            readonly No_domains_added: "No domains added";
+            /** @constant */
+            readonly Domain_registration: "Domain registration";
+            /** @constant */
+            readonly Select_admin_card: "Select administrator card";
+            /** @constant */
+            readonly Domain_transfer: "Domain transfer";
+            /** @constant */
+            readonly Select_agreement_to_transfer_domains: "Select an agreement to transfer domains";
+            /** @constant */
+            readonly Enter_code_from_sms_of_previous_admin: "Enter an SMS code sent to the previous administrator";
+            /** @constant */
+            readonly My_domains: "My domains";
+            /** @constant */
+            readonly Whois_tool: "Whois lookup";
+            /** @constant */
+            readonly Export: "Export";
+            /** @constant */
+            readonly Renew: "Renew";
+            /** @constant */
+            readonly Topvisor_DNS_servers?: "Topvisor DNS servers";
+            /** @constant */
+            readonly Custom_list_of_DNS_servers: "Custom list of DNS servers";
+            /** @constant */
+            readonly Do_not_add_DNS_servers: "Do not add DNS servers";
+            /** @constant */
+            readonly DNS_settings: "DNS settings";
+            /** @constant */
+            readonly Add_DNS_server: "Add DNS server";
+            /** @constant */
+            readonly Save_changes: "Save changes";
+            /** @constant */
+            readonly Administrator: "Administrator";
+            /** @constant */
+            readonly Manage_domain: "Manage domain";
+            /** @constant */
+            readonly Request_administrator_change: "Request administrator change";
+            /** @constant */
+            readonly Transfer_to_another_registrar: "Transfer to another registrar";
+            /** @constant */
+            readonly Enter_authcode_and_transfer: "Enter Auth-code and start domain transfer";
+            /** @constant */
+            readonly Enter_code: "Enter code";
+            /** @constant */
+            readonly Start_transfer: "Start transfer";
+            /** @constant */
+            readonly Transfer_request_confirm: "Transfer request: transfer domains to another registrar?";
+            /** @constant */
+            readonly Transfer: "Transfer";
+            /** @constant */
+            readonly Request_domain_transfer_out: "Request for a domain name transfer to another registrar";
+            /** @constant */
+            readonly DNS_type: "Type";
+            /** @constant */
+            readonly DNS_name: "Name";
+            /** @constant */
+            readonly DNS_value: "Value";
+            /** @constant */
+            readonly DNS_priority: "Priority";
+            /** @constant */
+            readonly DNS_relative_weight: "Relative weight";
+            /** @constant */
+            readonly DNS_service_port: "Service port";
+            /** @constant */
+            readonly DNS_record: "DNS record";
+            /** @constant */
+            readonly Save_DNS_record: "Save DNS record";
+            /** @constant */
+            readonly Add_DNS_record: "Add DNS record";
+            /** @constant */
+            readonly Confirm_domain_transfer_title_email?: "Topvisor: confirm domain transfer";
+            /** @constant */
+            readonly Payment_for_authcode_providing: "Payment for generating Auth-Info code for domain";
+            /** @constant */
+            readonly Authinfo_code_for_domain_transfer_email_title?: "Topvisor: Auth-Info code for domain transfer";
+            /** @constant */
+            readonly Authinfo_code_for_domain_transfer: "Auth-Info code for domain transfer";
+            /** @constant */
+            readonly Confirm_transfer: "Confirm transfer";
+            /** @constant */
+            readonly Transfer_confirmation_link_sent_to_email: "We've sent a link to confirm domain transfer to";
+            /** @constant */
+            readonly Authinfo_will_be_emailed_soon: "We'll email you the Auth-Info code shortly";
+            /** @constant */
+            readonly Authinfo_will_be_sent_to_phone_soon: "We'll send you an SMS with Auth-Info code shortly";
+            /** @constant */
+            readonly your_domain: "your domain";
+            /** @constant */
+            readonly your_domains: "your domains";
+            /** @constant */
+            readonly You_need_to_renew_domains: "You need to renew domains";
+            /** @constant */
+            readonly You_need_to_renew_domain: "You need to renew domain";
+            /** @constant */
+            readonly Registration_expired: "Registration expired";
+            /** @constant */
+            readonly renew_before: "renew before";
+            /** @constant */
+            readonly Admin_change_status: "Admin change status";
+            /** @constant */
+            readonly Link_and_code_sent_to_confirm_admin_change: "We sent a code to your phone number. A message with a confirmation link is sent to a new admin email";
+            /** @constant */
+            readonly Domain_not_available_to_purchase: "Domain not available to purchase";
+            /** @constant */
+            readonly Transaction_to_accept_domain_not_found: "Transaction to accept domain not found";
+            /** @constant */
+            readonly Domain_autorenew_failed: "Domain(s) auto-renew failed";
+            /** @constant */
+            readonly Invalid_message_to_administrator: "Invalid message to administrator";
+            /** @constant */
+            readonly Message_failed_to_send: "Message failed to send";
+            /** @constant */
+            readonly Try_in_an_hour: "Try in an hour";
+            /** @constant */
+            readonly Messages_for_domain_administrator: "Messages for the domain administrator";
+            /** @constant */
+            readonly Sender_details: "Sender_details";
+            /** @constant */
+            readonly Domain_transfer_application_by_registered_mail: "Application for a domain transfer by registered mail";
+            /** @constant */
+            readonly Domain_to_transfer: "Domain to transfer";
+            /** @constant */
+            readonly Domain_transfer_application_form_for_individual_and_SP: "Application form from an individual or individual entrepreneur for domain transfer to another registrar";
+            /** @constant */
+            readonly Domain_transfer_application_form_for_legal_entity: "Application form from a legal entity for domain transfer to another registrar";
+            /** @constant */
+            readonly Autorenew_settings: "Auto-renew settings";
+            /** @constant */
+            readonly Turn_off_domain_autorenew: "Turn off domain auto-renew";
+            /** @constant */
+            readonly Turn_on_domain_autorenew: "Turn on auto-renew";
+            /** @constant */
+            readonly Select_autorenew_payment_option: "Select auto-renew payment option";
+            /** @constant */
+            readonly We_charge_one_usd_to_link_card_notice: "We will charge you $1 to link your card. The charge will be immediately removed and returned to your card";
+            /** @constant */
+            readonly Autorenew_status: "Auto-renew status";
+            /** @constant */
+            readonly Select_another_payment_method_or_contact_support: "Select another method of payment or contact support";
+            /** @constant */
+            readonly Autorenew_for_domain: "Auto-renew for a domain name";
+            /** @constant */
+            readonly successfully_enabled: "successfully enabled";
+            /** @constant */
+            readonly failed_to_enable: "failed to enable";
+            /** @constant */
+            readonly Change_domain_administrator: "Change domain administrator";
+            /** @constant */
+            readonly Change_administrator: "Change administrator";
+            /** @constant */
+            readonly turn_on: "turn on";
+            /** @constant */
+            readonly Domains_to_accept: "Domains to accept";
+            /** @constant */
+            readonly Admin_change_paid_by_previous_admin: "Administrator change is paid by the previous administrator";
+            /** @constant */
+            readonly Control_code: "Control code";
+            /** @constant */
+            readonly Accept_domain: "Accept domain";
+            /** @constant */
+            readonly By_accepting_domain_you_accept: "By accepting domain you accept terms and conditions of";
+            /** @constant */
+            readonly of_agreement: "Agreement (public offer)";
+            /** @constant */
+            readonly Select_authinfo_code_delivery_option: "Select how you want to get the Auth-Info code";
+            /** @constant */
+            readonly To_email: "To Email";
+            /** @constant */
+            readonly free: "free";
+            /** @constant */
+            readonly paid: "paid";
+            /** @constant */
+            readonly to_phone_number: "to phone number";
+            /** @constant */
+            readonly By_registered_mail: "By registered mail";
+            /** @constant */
+            readonly Get_authinfo_code: "Get Auth-Info code";
+            /** @constant */
+            readonly Get_permission_to_transfer_administration_rights: "Get permission to transfer administration rights";
+            /** @constant */
+            readonly Paperless_transfer_admin_rights_application_form_for_individual: "Application form from an individual for a paperless transfer of administration rights";
+            /** @constant */
+            readonly Paperless_transfer_admin_rights_application_form_for_legal_entity: "Application form from a legal entity for a paperless transfer of administration rights";
+            /** @constant */
+            readonly Domains_to_transfer_to_new_admin: "Domains to transfer to a new administrator";
+            /** @constant */
+            readonly New_administrator_email: "New administrator email";
+            /** @constant */
+            readonly Select_payer_for_admin_change: "The administrator change will be paid by";
+            /** @constant */
+            readonly New_administrator: "New administrator";
+            /** @constant */
+            readonly Me_current_administrator: "Me (current administrator)";
+            /** @constant */
+            readonly Transfer_rights_to_domain_to_new_admin: "Transfer rights to the domain to a new administrator";
+            /** @constant */
+            readonly Change_admin_by_sms_instruction: "This email address will be added as a contact email for the domain names. We will email you a message with\n\ta link to enter a control code. We will send an SMS with a control code to a phone number <i class=\"phone\"></i>. Give this code to a new administrator. The\n\tadministrator change can be payed by a current or a new administrator. The administrator change costs 199 rubles.";
+            /** @constant */
+            readonly Choose_domain_name: "Choose a .ru or .рф domain name";
+            /** @constant */
+            readonly Register: "Register";
+            /** @constant */
+            readonly Verify_admin_details: "Please make sure the administrator details you entered are correct";
+            /** @constant */
+            readonly Add_admin_details: "Add administrator details";
+            /** @constant */
+            readonly Domain_transfer_to_Topvisor?: "Domain transfer to Topvisor";
+            /** @constant */
+            readonly Enter_domains_one_by_one_or: "Enter domains one by one or";
+            /** @constant */
+            readonly Enter_domain: "Enter domain";
+            /** @constant */
+            readonly Enter_authInfo_code: "Enter authInfo code";
+            /** @constant */
+            readonly upload_from_file: "upload from file";
+            /** @constant */
+            readonly Make_sure_new_and_old_admin_details_match: "Please make sure that the administrator personal details match\n\t administrator details in previous registrar account. If the details do not match, the domain name can be removed.";
+            /** @constant */
+            readonly Domains_to_transfer_and_renew: "Domains to transfer and renew: <i class=\"count\">0 domains</i>";
+            /** @constant */
+            readonly Transfer_in_process: "Transfer in progress";
+            /** @constant */
+            readonly In_process: "In progress";
+            /** @constant */
+            readonly Transfer_to_us: "Transfer to us";
+            /** @constant */
+            readonly Transaction_finished_will_be_removed: "Transcation finished and will be removed automatically";
+            /** @constant */
+            readonly Prepayment: "Prepayment";
+            /** @constant */
+            readonly Request_to_transfer_domain_to_another_registrar: "Request to transfer domain to another Registrar";
+            /** @constant */
+            readonly Notification_about_completed_registrar_operations: "Notification about completed registrar operations";
+            /** @constant */
+            readonly Transferred_domains_number_not_match_authinfo_code_number: "The number of transferred domains does not match the number of submitted authInfo codes";
+            /** @constant */
+            readonly Transfer_request_already_added: "Transfer request already added";
+            /** @constant */
+            readonly This_domain_not_supported_by_us?: "This domain is not supported by Topvisor";
+            /** @constant */
+            readonly Domain_admin_not_found: "Domain administrator not found";
+            /** @constant */
+            readonly Transfer_not_available_try_later: "Transfer is not available. Please, try later.";
+            /** @constant */
+            readonly Invalid_authinfo_or_domain: "Invalid authInfo code or domain.";
+            /** @constant */
+            readonly Admin_details_not_match: "Personal details of administrators do not match";
+            /** @constant */
+            readonly Error_in_admin_card_contact_support: "Error in admin card occurred. Contact support.";
+            /** @constant */
+            readonly Topvisor_free_DNS_servers?: "Topvisor free DNS servers";
+            /** @constant */
+            readonly CNS_Settings: "CNS Settings";
+            /** @constant */
+            readonly Add_CNS_server: "Add CNS server";
+            /** @constant */
+            readonly Contact_support: "Contact support";
+            /** @constant */
+            readonly Get_confirmation_code: "Get confirmation code";
+            /** @constant */
+            readonly Transfer_to_another_registrar_code_sent_to_email: "Trasnfer to another registrar, the code has been to sent to your email";
+            /** @constant */
+            readonly Resend: "Resend";
+            /** @constant */
+            readonly Domain_renewal_not_needed_refresh_page: "Domain renewal not needed. Refresh page.";
+            /** @constant */
+            readonly Transfer_is_available_for_2nd_lvl_domains: "Transfer is available for the second-level domains only";
+        };
+        "I18n.Dynamics": {
+            /** @constant */
+            readonly Number_keywords_better_ranks: "Keywords that advanced in ranks";
+            /** @constant */
+            readonly Number_keywords_same_ranks: "Keywords that didn't change ranks";
+            /** @constant */
+            readonly Number_keywords_drop_ranks: "Keywords that dropped in ranks";
+            /** @constant */
+            readonly Search_table: "Find in table";
+            /** @constant */
+            readonly Search_page: "Find on page";
+            /** @constant */
+            readonly Snippets: "Snippets";
+            /** @constant */
+            readonly Remove_results: "Delete all results for the applied date";
+            /** @constant */
+            readonly oneway_operation: "this action cannot be undone";
+            /** @constant */
+            readonly Proceed_deleting_ask: "Do you want to continue?";
+            /** @constant */
+            readonly Sort_by_target: "By target URL";
+            /** @constant */
+            readonly Sort_by_default: "Default settings";
+            /** @constant */
+            readonly Sort_by_relevant: "By ranked URL";
+            /** @constant */
+            readonly Sort_by_position_change: "Ranking dynamics over period";
+            /** @constant */
+            readonly Filter_by_tag: "Filter by tag";
+            /** @constant */
+            readonly Set_target_for_group: "Set target for group";
+            /** @constant */
+            readonly Send_email: "Send to Email";
+            /** @constant */
+            readonly Target_URL: "Target URL";
+            /** @constant */
+            readonly Rankings_updated_less_than_5minutes: "You updated keyword ranks less than 5 minutes ago";
+            /** @constant */
+            readonly Add_keywords_locations_notice: "Add keywords and select locations<br> in project settings";
+            /** @constant */
+            readonly Tasks_processing_notice: "We're processing your tasks.";
+            /** @constant */
+            readonly Ranks_updating_notice: "We're updating your keyword rankings.";
+            /** @constant */
+            readonly Updated: "Last update";
+            /** @constant */
+            readonly Positions_snippets: "Rankings and snippets";
+            /** @constant */
+            readonly Period_last_7_days: "Last 7 days";
+            /** @constant */
+            readonly Period_last_10_days: "Last 10 days";
+            /** @constant */
+            readonly Period_last_30_days: "Last 30 days";
+            /** @constant */
+            readonly Any_dates: "Optional dates";
+            /** @constant */
+            readonly Current_month: "This month";
+            /** @constant */
+            readonly Previous_month: "Previous month";
+            /** @constant */
+            readonly Last_year: "Last year";
+            /** @constant */
+            readonly Random: "Random";
+            /** @constant */
+            readonly Period_regular: "Period";
+            /** @constant */
+            readonly Period_2_dates: "Two dates";
+            /** @constant */
+            readonly Period_2_margin_dates: "First and last date";
+            /** @constant */
+            readonly Period_2_latest_dates: "Two latest dates";
+            /** @constant */
+            readonly Period_first_date: "First date";
+            /** @constant */
+            readonly Period_last_date: "Last date";
+            /** @constant */
+            readonly Period_1_date: "One date";
+            /** @constant */
+            readonly Period_only_updates: "Only Yandex updates";
+            /** @constant */
+            readonly Last_day_month: "Last day of month";
+            /** @constant */
+            readonly Count_dates: "Max dates";
+            /** @constant */
+            readonly Painting_0: "Top, progress";
+            /** @constant */
+            readonly Painting_1: "Improved, dropped";
+            /** @constant */
+            readonly Report_after_tracking_30min_1: "After rank tracking";
+            /** @constant */
+            readonly Report_after_tracking_30min_2: "in 30 minutes";
+            /** @constant */
+            readonly Display_week_average_ranking: "Week's average";
+            /** @constant */
+            readonly Summary: "Summary";
+            /** @constant */
+            readonly Show_graphics: "Charts";
+            /** @constant */
+            readonly Target_equal_relevant: "Target = Ranked";
+            /** @constant */
+            readonly Off_display_group_names: "Hide group names";
+            /** @constant */
+            readonly On_display_group_names: "Show group names";
+            /** @constant */
+            readonly Display_group_names_above: "Display names under groups";
+            /** @constant */
+            readonly Display_group_names_near: "Display names near groups";
+            /** @constant */
+            readonly Show_global_volume: "Display / Hide global search volume";
+            /** @constant */
+            readonly Remove_keyword: "Are you sure you want to delete a selected keyword?";
+            /** @constant */
+            readonly Remove_history: "Wipe data for the selected date";
+            /** @constant */
+            readonly Show_competitors: "Competitors";
+            /** @constant */
+            readonly Hide_keywords_added_in_period: "Hide keywords added within the applied period";
+            /** @constant */
+            readonly Only_keywords_added_in_period: "Only keywords added within the applied period";
+            /** @constant */
+            readonly Show_keywords_added_in_period: "All keywords";
+            /** @constant */
+            readonly and_save_snapshots: "snapshots collected";
+            /** @constant */
+            readonly Check_rankings: "Check rankings of project";
+            /** @constant */
+            readonly Add_keywords_on_page: "Add keywords on the page";
+            /** @constant */
+            readonly Keywords: "Keywords";
+            /** @constant */
+            readonly Add_se_location_to_display_data: "Add search engine and location to display data";
+            /** @constant */
+            readonly Number_of_visits: "Number of visits";
+            /** @constant */
+            readonly Matches_relevant_URL: "Matches ranked URL";
+            /** @constant */
+            readonly Not_Matches_relevant_URL: "Doesn't match ranked URL";
+            /** @constant */
+            readonly Relevant_URL_change_history: "Ranked URL history";
+            /** @constant */
+            readonly Relevant_URL_changes: "Ranked URL changes";
+            /** @constant */
+            readonly Download: "Download";
+            /** @constant */
+            readonly Date_order: "Date order";
+            /** @constant */
+            readonly Chart_export: "Chart export";
+            /** @constant */
+            readonly Calendar_legend_ranks_checked: "Check";
+            /** @constant */
+            readonly Calendar_legend_yandex_update: "Yandex update";
+            /** @constant */
+            readonly Sort_keywords: "Sort";
+            /** @constant */
+            readonly Filter: "Filter";
+            /** @constant */
+            readonly Not_filter: "No filter";
+            /** @constant */
+            readonly Target_and_relevant_URL: "Target and ranked URL";
+            /** @constant */
+            readonly Matches: "Match";
+            /** @constant */
+            readonly Not_matches: "Don't match";
+            /** @constant */
+            readonly Status_not_defined: "Matching not defined";
+            /** @constant */
+            readonly Not_specified: "Target not specified";
+            /** @constant */
+            readonly with_featured_snippets: "with Featured Snippets";
+            /** @constant */
+            readonly Pin_panel: "Pin panel";
+            /** @constant */
+            readonly Pin_filters: "Pin filters";
+            /** @constant */
+            readonly Pin_summary: "Pin summary";
+            /** @constant */
+            readonly Customize_view: "Customize view";
+            /** @constant */
+            readonly Color_theme: "Color theme";
+            /** @constant */
+            readonly Highcharts_Export_PNG: "Download PNG image";
+            /** @constant */
+            readonly Highcharts_Export_JPEG: "Download JPEG image";
+            /** @constant */
+            readonly Highcharts_Export_PDF: "Download PDF document";
+            /** @constant */
+            readonly Highcharts_Export_SVG: "Download SVG image";
+            /** @constant */
+            readonly Highcharts_Export_Print: "Print chart";
+            /** @constant */
+            readonly Highcharts_Export_CSV: "Download CSV";
+            /** @constant */
+            readonly Summary_mode: "Summary mode";
+            /** @constant */
+            readonly Default_summary_mode: "Default";
+            /** @constant */
+            readonly Compact_summary_mode: "Compact";
+            /** @constant */
+            readonly Columns_summary_mode: "Columns";
+            /** @constant */
+            readonly order: "keyword ranking report";
+            /** @constant */
+            readonly Project_has_been_deleted: "Project has been deleted";
+            /** @constant */
+            readonly Snippets_no_checked: "<b>Snippets</b> weren't collected on the selected dates.";
+            /** @constant */
+            readonly Snippets_no_checking: "<b>Snippets</b> aren't being collected. Turn this feature on in the project's settings.";
+            /** @constant */
+            readonly Selected_time_is_hightload: "<p>Selected period is the hight load.</p><p>If you need to get results in the morning, we recommend setting time from <i></i> to <i></i> in the morning.</p>";
+            /** @constant */
+            readonly Delete_keyword: "Delete keyword";
+            /** @constant */
+            readonly Recheck: "Recheck keyword ranking";
+            /** @constant */
+            readonly Checking: "Tracking";
+            /** @constant */
+            readonly Recheck_finish: "Ranking successfully rechecked";
+            /** @constant */
+            readonly No_target_status: "Target link not added";
+            /** @constant */
+            readonly No_result_target_status: "Search results not found";
+            /** @constant */
+            readonly Bad_target_status: "Result does not match a target link";
+            /** @constant */
+            readonly Good_target_status: "Result matches a target link";
+        };
+        "I18n.Email": {
+            /** @constant */
+            readonly User_registration_confirm: "Confirm your registration";
+            /** @constant */
+            readonly User_accept_email_title: "Account details";
+            /** @constant */
+            readonly user_accept_email_title_suffix_recommendations: "";
+            /** @constant */
+            readonly User_PWD_msg_title2: "Password successfully changed";
+            /** @constant */
+            readonly User_restore_access: "Recovering your password";
+            /** @constant */
+            readonly User_project_access: "Access granted";
+            /** @constant */
+            readonly User_registration_invite_mail_title: "Your friend invites you to sign up and get a double welcome bonus! 🤩";
+            /** @constant */
+            readonly User_change_confirm: "Confirm your email";
+            /** @constant */
+            readonly User_email_changed_msg: "Your email has been changed";
+            /** @constant */
+            readonly User_projects_rights_title: "You have received access to the project.";
+            /** @constant */
+            readonly User_projects_changeOwner_title: "Confirm project transfer.";
+            /** @constant */
+            readonly Integration_expires: "Update integration key";
+            /** @constant */
+            readonly Integration_has_expired1: "Integration";
+            /** @constant */
+            readonly Integration_has_expired2: "integration key has expired.";
+            /** @constant */
+            readonly Integration_access_error: "integration error";
+            /** @constant */
+            readonly Project_report: "Report: Project dynamics.";
+            /** @constant */
+            readonly Indexing_informer_title: "Index status: new changes detected.";
+            /** @constant */
+            readonly Watcher_informer_title: "Website watcher: new changes detected.";
+            /** @constant */
+            readonly Sitemap_changes_to_sitemap_email: "Sitemap: new changes detected.";
+            /** @constant */
+            readonly Audit_informer_title: "Website audit is completed.";
+            /** @constant */
+            readonly Total_indexed: "Total indexed";
+            /** @constant */
+            readonly Dropped_from_index: "Dropped from index";
+            /** @constant */
+            readonly Got_indexed: "New indexed";
+            /** @constant */
+            readonly Tariff_due_to_expire: "Do not forget to renew your subscription";
+            /** @constant */
+            readonly Dogovor: "User agreement";
+            /** @constant */
+            readonly Ur_balance: "Balance is topped up";
+            /** @constant */
+            readonly Payment_received: "Pyment has been received";
+        };
+        "I18n.Fieldtemplates": {
+            /** @constant */
+            readonly Title: "Manage columns";
+            /** @constant */
+            readonly Column: "Column";
+            /** @constant */
+            readonly Last_columns_list: "List of recent columns";
+            /** @constant */
+            readonly Save_as_new_template: "Save as new template";
+            /** @constant */
+            readonly save_changes: "save changes";
+            /** @constant */
+            readonly Added_columns: "Added columns";
+            /** @constant */
+            readonly Columns_settings: "Column settings";
+            /** @constant */
+            readonly Delete_columns: "Delete columns";
+            /** @constant */
+            readonly No_columns_added: "No columns added";
+            /** @constant */
+            readonly Advanced_options: "Advanced options";
+        };
+        "I18n.Footer": {
+            /** @constant */
+            readonly Suggestions_tool: "Search Suggestions";
+            /** @constant */
+            readonly Rank_and_SERP_top_cheking: "Rank and SERP Top checking";
+            /** @constant */
+            readonly Semantics: "Semantics";
+            /** @constant */
+            readonly Technical_SEO: "Technical SEO";
+            /** @constant */
+            readonly Miscellaneous: "Miscellaneous";
+            /** @constant */
+            readonly About_us: "About us";
+            /** @constant */
+            readonly Resources: "Resources";
+            /** @constant */
+            readonly Questions: "Got any questions?";
+            /** @constant */
+            readonly Grouping_tool: "Keyword Clustering";
+            /** @constant */
+            readonly Research_tool: "Keyword Research";
+            /** @constant */
+            readonly Site_auditor: "Website SEO Audit";
+            /** @constant */
+            readonly Site_watcher: "Website Watcher (tracking changes)";
+            /** @constant */
+            readonly SERP_snapshots_tool: "SERP Top Checker";
+            /** @constant */
+            readonly Index_checker_tool: "Index Status Checker";
+            /** @constant */
+            readonly Search_volume_tool: "Search Volume Checker";
+            /** @constant */
+            readonly Sitemap_generator: "Sitemap Generator";
+            /** @constant */
+            readonly Magnet_tool: "Keywords from Your Site";
+            /** @constant */
+            readonly Semantic_core: "Semantic core tools";
+            /** @constant */
+            readonly PPC_bid_manager: "PPC Bid Manager";
+            /** @constant */
+            readonly Competitor_research: "Competitor research";
+            /** @constant */
+            readonly Domain_name_transfer: "Domain name transfer";
+            /** @constant */
+            readonly Domain_name_registration: "Domain name registration";
+            /** @constant */
+            readonly Whois: "Whois (Domain details)";
+            /** @constant */
+            readonly Case_championship: "Case championship";
+            /** @constant */
+            readonly Apometr_tool: "Updates Scanner";
+            /** @constant */
+            readonly Apometr_tool_Thundo?: "ThundoStorm (Google Updates)";
+            /** @constant */
+            readonly Reference: "Reference";
+            /** @constant */
+            readonly API: "API Documentation";
+            /** @constant */
+            readonly Referrals: "Affiliate program";
+            /** @constant */
+            readonly Pricing: "Tools and prices";
+            /** @constant */
+            readonly Jobs?: "Work in Topvisor";
+            /** @constant */
+            readonly Sales: "Sales";
+            /** @constant */
+            readonly Help: "Help & Support";
+            /** @constant */
+            readonly Help_center: "Help Center";
+            /** @constant */
+            readonly Chat: "Live Chat";
+            /** @constant */
+            readonly Join_vkontakte: "Join us on Vkontakte";
+            /** @constant */
+            readonly Join_twitter: "Follow us on X";
+            /** @constant */
+            readonly Join_telegram: "Subscribe to Telegram channel";
+            /** @constant */
+            readonly Join_facebook: "Follow us on Facebook";
+            /** @constant */
+            readonly Join_instagram: "Follow us on Instagram";
+            /** @constant */
+            readonly Join_threads: "Follow us on Threads";
+            /** @constant */
+            readonly Join_youtube: "Youtube channel";
+            /** @constant */
+            readonly Website_rank_tracker: "Rank Tracker";
+            /** @constant */
+            readonly Free_rank_checking: "Free rank checker";
+            /** @constant */
+            readonly Cases: "Best practices";
+            /** @constant */
+            readonly URL_Shortener_policy: "URL Shortener policy";
+            /** @constant */
+            readonly Privacy_policy: "Privacy Policy";
+            /** @constant */
+            readonly Privacy_policy_consent: "Privacy Policy consent";
+            /** @constant */
+            readonly Chrome_extension: "Search results numbering extension for Google Chrome";
+            /** @constant */
+            readonly Firefox_extension: "Search results numbering extension for Firefox";
+            /** @constant */
+            readonly Safari_extension: "Safari extension";
+            /** @constant */
+            readonly iOS_app: "iOS Mobile app";
+            /** @constant */
+            readonly Android_app: "Android Mobile app";
+            /** @constant */
+            readonly Electronic_workflow_system: "Electronic document workflow";
+            /** @constant */
+            readonly Legal_payment: "Company payment";
+            /** @constant */
+            readonly Support_ticket_system: "Support Ticket System";
+            /** @constant */
+            readonly Contact_details: "Contact details";
+            /** @constant */
+            readonly INN: "INN";
+            /** @constant */
+            readonly KPP: "KPP";
+            /** @constant */
+            readonly OGRN: "OGRN";
+            /** @constant */
+            readonly OKVED: "OKVED";
+            /** @constant */
+            readonly Business_card: "Our company";
+            /** @constant */
+            readonly Presentation: "Presentation";
+            /** @constant */
+            readonly Cookie_policy: "Cookie Policy";
+            /** @constant */
+            readonly Payment_methods: "Payment Methods";
+            /** @constant */
+            readonly Mincom_accreditation: "Certified by Ministry of Communications of Russia";
+            /** @constant */
+            readonly Friends: "Our Friends";
+            /** @constant */
+            readonly Trademark: "Trademark";
+            /** @constant */
+            readonly included_into_Russian_software_register: "included into Russian software register";
+            /** @constant */
+            readonly Contract_public_offer: "Contract (public offer)";
+            /** @constant */
+            readonly Referral_program: "Affiliate program";
+            /** @constant */
+            readonly Referral_agreement: "Affiliate offer agreement";
+            /** @constant */
+            readonly Delegate_us_routine_slogan: "Delegate us all routine and enjoy your job!";
+            /** @constant */
+            readonly Social_links: "Follow us";
+            /** @constant */
+            readonly Add_numbers_search_results: "Numerate listings right on<br> the search results page";
+            /** @constant */
+            readonly Install_for: "Install for";
+            /** @constant */
+            readonly Email_us_contact: "We are eager to help! Email us";
+            /** @constant */
+            readonly Topvisor_Ltd?: "Topvisor Ltd.";
+            /** @constant */
+            readonly Thundo_Ltd?: "Thundo Ltd.";
+        };
+        "I18n.Indexing": {
+            /** @constant */
+            readonly Settings: "Tool settings";
+            /** @constant */
+            readonly Header_start_short: "Check";
+            /** @constant */
+            readonly Hint_not_searchers_text: "Pick <b>Search engines</b> to launch a check.<br>🌐 <a href=\"/support/indexed/\" target=\"_blank\">Why you need to check indexing →</a>";
+            /** @constant */
+            readonly Hint_not_searchers_btn: "Manage";
+            /** @constant */
+            readonly Hint_not_urls_text: "Add URLs to launch Indexing.<br>🌐 <a href=\"/support/indexed/\" target=\"_blank\">Why you need to check indexing →</a>";
+            /** @constant */
+            readonly Hint_not_urls_btn: "URLs";
+            /** @constant */
+            readonly Hint_not_checks_text: "You've never launched Indexing in this project.<br>🌐 <a href=\"/support/indexed/\" target=\"_blank\">Why you need to check indexing →</a>";
+            /** @constant */
+            readonly Hint_not_checks_btn: "Launch Indexing";
+            /** @constant */
+            readonly Hint_not_data_text: "No data found with current filter.<br>Try a different filter selection.<br>🌐 <a href=\"/support/indexed/\" target=\"_blank\">Why you need to check indexing →</a>";
+            /** @constant */
+            readonly Hint_not_dates_with_checks_text: "You haven't checked indexing within the selected period for the current search engine.<br>Select another search engine or period.<br>🌐 <a href=\"/support/indexed/\" target=\"_blank\">Why you need to check indexing →</a>";
+        };
+        "I18n.Informer": {
+            /** @constant */
+            readonly Type_balance: "Balance";
+            /** @constant */
+            readonly Type_news: "Sevice news";
+            /** @constant */
+            readonly Type_academy?: "Topvisor-Academy";
+            /** @constant */
+            readonly Type_tickets: "Tickets";
+            /** @constant */
+            readonly Type_yandex_update: "Yandex update";
+            /** @constant */
+            readonly Type_comments: "New comment alerts";
+            /** @constant */
+            readonly Type_api: "API updates";
+            /** @constant */
+            readonly Type_journal?: "Topvisor–Journal";
+            /** @constant */
+            readonly Unsubscribe: "Unsubscribe";
+            /** @constant */
+            readonly Enter_title_and_text: "Enter title and message text";
+            /** @constant */
+            readonly Log_text: "Emailing";
+            /** @constant */
+            readonly Log_text2: "only for subscribers";
+            /** @constant */
+            readonly Tickets_title: "You received a new reply to your ticket";
+            /** @constant */
+            readonly Balance_title: "Account balance alert";
+            /** @constant */
+            readonly Update_title: "Yandex search results updated";
+            /** @constant */
+            readonly Comments_title: "You comment has a new reply! Join the discussion 😎";
+            /** @constant */
+            readonly No_new_notifications: "No notifications yet";
+            /** @constant */
+            readonly clear_all: "clear all";
+            /** @constant */
+            readonly Notifications: "Notifications";
+            /** @constant */
+            readonly Email: "Email";
+            /** @constant */
+            readonly Push: "Push";
+            /** @constant */
+            readonly Block: "Block";
+            /** @constant */
+            readonly Informer: "Alerts";
+            /** @constant */
+            readonly Select_all: "Select all";
+            /** @constant */
+            readonly Clear_all: "Clear all";
+            /** @constant */
+            readonly Comment_replies: "Comment replies";
+            /** @constant */
+            readonly replied_to_you: " replied to you";
+            /** @constant */
+            readonly in_comments_on_the_post: "in comments on the post";
+            /** @constant */
+            readonly Email_delivery_failure: "Email delivery has failed to this recipient";
+            /** @constant */
+            readonly email_unsubscribed_from_reports: "unsubscribed from reports of projects";
+            /** @constant */
+            readonly You_unsubscribed_from_emails: "You unsubscribed from emails to";
+        };
+        "I18n.Keywords": {
+            /** @constant */
+            readonly Average: "Average";
+            /** @constant */
+            readonly phrase_missed: "Keyword not selected";
+            /** @constant */
+            readonly group_not_exists: "Group not found in the project";
+            /** @constant */
+            readonly keyword_not_exists: "Keyword not found in the project";
+            /** @constant */
+            readonly incorrect_phrase: "Invalid keyword";
+            /** @constant */
+            readonly phrase_exists: "This keyword already exists";
+            /** @constant */
+            readonly import_error_columns: "The number of columns in some lines doesn't match the number in other lines.";
+            /** @constant */
+            readonly import_error_columns2: " If you import keywords from a CSV file, please place all keywords with special characters (comma (,), semicolon (;)) in double quotation marks (\")";
+            /** @constant */
+            readonly import_error1: "You haven't selected keywords to import";
+            /** @constant */
+            readonly Add_phrase: "Add keyword";
+            /** @constant */
+            readonly Add_group: "Add new group";
+            /** @constant */
+            readonly New_folder: "New folder";
+            /** @constant */
+            readonly New_group: "New group";
+            /** @constant */
+            readonly Access_error: "Keyword not found or access denied";
+            /** @constant */
+            readonly CSV_group: "Group";
+            /** @constant */
+            readonly CSV_phrase: "Keyword";
+            /** @constant */
+            readonly CSV_rel: "Ranked page";
+            /** @constant */
+            readonly CSV_snippet_title: "Snippet titles";
+            /** @constant */
+            readonly CSV_snippet: "Snippet";
+            /** @constant */
+            readonly CSV_target: "Target URL";
+            /** @constant */
+            readonly CSV_visits: "Traffic";
+            /** @constant */
+            readonly CSV_google_price: "Bid";
+            /** @constant */
+            readonly CSV_yandex_price1: "1-st Premium placement";
+            /** @constant */
+            readonly CSV_yandex_price2: "2-st Premium placement";
+            /** @constant */
+            readonly CSV_yandex_price3: "Premium placement";
+            /** @constant */
+            readonly CSV_yandex_price4: "1st place";
+            /** @constant */
+            readonly CSV_yandex_price5: "Guaranteed";
+            /** @constant */
+            readonly Targets_error: "Target URLs not changed";
+            /** @constant */
+            readonly Group_changing_denied: "You can't edit this group!";
+            /** @constant */
+            readonly Filtered_group: "Filtered group";
+            /** @constant */
+            readonly Export_dynamics_by_date: "Project export for";
+            /** @constant */
+            readonly Export_HTML_comparison_not_available: "html comparison is not available yet";
+            /** @constant */
+            readonly Reports_unsubscribing1: "Unsubscribe ";
+            /** @constant */
+            readonly Reports_unsubscribing2: "from project reports";
+            /** @constant */
+            readonly Project_report: "Project report for";
+            /** @constant */
+            readonly project_report_msg: "dated";
+            /** @constant */
+            readonly project_has_archived: "The project is not active. You can recover it in the projects list";
+            /** @constant */
+            readonly Not_enough_balance_for_check_position: "there are not enough funds in your account to track keyword rankings";
+            /** @constant */
+            readonly Position_check: "Keyword rank check of";
+            /** @constant */
+            readonly Position_check_with_snippet: "Track ranks and collect snippets";
+            /** @constant */
+            readonly Positions_check: "Keyword ranking report for";
+            /** @constant */
+            readonly Positions_select_se: "Add search engines in project settings";
+            /** @constant */
+            readonly Positions_check_with_snippets: "Keyword ranking and snippets report for";
+            /** @constant */
+            readonly Project_has_no_tasks?: "Add keywords: <a href=\"/project/keywords/%projectId%\">https://topvisor.com/project/keywords/%projectId%</a>. Add search engines and locations: <a href=\"/project/settings/%projectId%\">https://topvisor.com/project/settings/%projectId%</a>";
+            /** @constant */
+            readonly Keyword_ranking_already_started: "Keyword ranking already started";
+            /** @constant */
+            readonly Not_enough_balance_for_check_positions: "You do not have enough funds in your account to track keyword rankings";
+            /** @constant */
+            readonly Short_keywords: "Keywords are too short";
+            /** @constant */
+            readonly Semantic_kernel_composition: "Keyword research";
+            /** @constant */
+            readonly Semantic_kernel_composition_by_hints: "Keyword suggestions harvest";
+            /** @constant */
+            readonly Provider_incorrect: "`Provider` is incorrect";
+            /** @constant */
+            readonly Not_enough_balance: "There are not enough funds in your account";
+            /** @constant */
+            readonly Unchecked_wordstat_is_missing1: "Skipped search volume data in project";
+            /** @constant */
+            readonly Unchecked_wordstat_is_missing2: "for applied locations and search volume types there's no";
+            /** @constant */
+            readonly No_phrases_or_regions1: "The project has";
+            /** @constant */
+            readonly No_phrases_or_regions2: "no keywords or locations and search volume types are not selected";
+            /** @constant */
+            readonly Wordstat_check: "Search volume tracking for:";
+            /** @constant */
+            readonly depth: "research depth";
+            /** @constant */
+            readonly Claster_delay: "Assigning project tasks.<br>Clustering tool will be available within a minute";
+            /** @constant */
+            readonly Claster_task_bank: "Keyword clustering";
+            /** @constant */
+            readonly Claster_task_change_bank: "Re-calculate clustering cost";
+            /** @constant */
+            readonly Claster_already_doing: "Clustering is in process";
+            /** @constant */
+            readonly Claster_not_exists_last_results: "Previous keyword clustering results not found";
+            /** @constant */
+            readonly for_keyword: "to each keyword";
+            /** @constant */
+            readonly Get_group_search_volume: "Get group search volume";
+            /** @constant */
+            readonly Export_group: "Export from group";
+            /** @constant */
+            readonly Export_to_project: "Copy to another project";
+            /** @constant */
+            readonly Move_to_project: "Move to another project";
+            /** @constant */
+            readonly Block_mode_unavailable_notice: "Block mode is not available if you have over 6 000 keywords or too many groups";
+            /** @constant */
+            readonly Block_mode: "Block mode";
+            /** @constant */
+            readonly Table_mode: "Table mode";
+            /** @constant */
+            readonly Tags: "Tag No.";
+            /** @constant */
+            readonly Tags_names: "Tags";
+            /** @constant */
+            readonly Tags_disable: "Disable";
+            /** @constant */
+            readonly Set_tag: "Add tag";
+            /** @constant */
+            readonly Remove_tag: "Remove tags";
+            /** @constant */
+            readonly Add_tags: "Add tags";
+            /** @constant */
+            readonly Remove_tags: "Remove tags";
+            /** @constant */
+            readonly Set_tags: "Replace tags";
+            /** @constant */
+            readonly Import: "Keyword import";
+            /** @constant */
+            readonly Export: "Keyword export";
+            /** @constant */
+            readonly Target: "Target URL";
+            /** @constant */
+            readonly Target_status: "Target URL status";
+            /** @constant */
+            readonly Relevant_page: "Ranked URL";
+            /** @constant */
+            readonly CPC: "CPC";
+            /** @constant */
+            readonly Visits: "Traffic";
+            /** @constant */
+            readonly Snippet: "Snippet";
+            /** @constant */
+            readonly Research: "Research keywords";
+            /** @constant */
+            readonly Research_suggestions: "Collect keyword suggestions";
+            /** @constant */
+            readonly Research_keywords_se: "Research keywords";
+            /** @constant */
+            readonly Research_keywords_traffic: "Magnet tool";
+            /** @constant */
+            readonly To_research: "Research";
+            /** @constant */
+            readonly Group_number: "Groups";
+            /** @constant */
+            readonly Keyword_number: "Keywords";
+            /** @constant */
+            readonly Turn_on: "On";
+            /** @constant */
+            readonly Turn_off: "Off";
+            /** @constant */
+            readonly Enable_all_groups: "Turn on all groups";
+            /** @constant */
+            readonly Disable_all_groups: "Turn off all groups";
+            /** @constant */
+            readonly Select_all: "Select all";
+            /** @constant */
+            readonly Select_groups: "Select groups";
+            /** @constant */
+            readonly Highlight: "Select";
+            /** @constant */
+            readonly Trash_bin: "Trash bin";
+            /** @constant */
+            readonly Filter: "Filter";
+            /** @constant */
+            readonly Search_keyword: "Search keyword";
+            /** @constant */
+            readonly Get_search_volume: "Get search volume";
+            /** @constant */
+            readonly Clustering_tool: "Keyword clustering";
+            /** @constant */
+            readonly SE_location: "Search engine / Location";
+            /** @constant */
+            readonly Select_location: "Select location";
+            /** @constant */
+            readonly Select_another_location: "Select another location";
+            /** @constant */
+            readonly Clustering_level: "Clustering level";
+            /** @constant */
+            readonly Clustering_level_groups_relation: "Higher level clustering produces more groups with fewer keywords in every group.";
+            /** @constant */
+            readonly Clustering_changes_order_notice: "<b>Important!</b><br>Keyword clustering changes groups and keyword order in your project.<br> After clustering, keyword groups will be automatically disabled.";
+            /** @constant */
+            readonly Clustering_rel_notice: "Before grouping keywords by page relevance, make sure that you have checked<br> keyword rankings in the applied search engine and location.";
+            /** @constant */
+            readonly Cluster: "Clustering";
+            /** @constant */
+            readonly Cluster_TOP10: "Keyword clustering by TOP10";
+            /** @constant */
+            readonly Cluster_relevant_url: "Grouping by page relevance";
+            /** @constant */
+            readonly Cluster_target_url: "Grouping by target URLs";
+            /** @constant */
+            readonly Before_grouping_setup_target_urls: "Before grouping, make sure that target URLs are assigned";
+            /** @constant */
+            readonly Change_clustering_level: "Change clustering level";
+            /** @constant */
+            readonly Bounce_rate: "Bounce";
+            /** @constant */
+            readonly Pages_view: "Pages";
+            /** @constant */
+            readonly Time: "Time";
+            /** @constant */
+            readonly Del_group: "Delete group";
+            /** @constant */
+            readonly Sort_keywords: "Sort keywords";
+            /** @constant */
+            readonly Filter_phrases: "Filter keywords";
+            /** @constant */
+            readonly On_Off_group: "Enable / Disable a group";
+            /** @constant */
+            readonly Move_to_new_group: "Move to a new group";
+            /** @constant */
+            readonly Delete_group_warning: "<b>Important!</b><br>If you delete a group, all keywords in the group will be deleted immediately.";
+            /** @constant */
+            readonly Each_keyword_on_new_line: "Keywords (each keyword on a new line)";
+            /** @constant */
+            readonly Source: "Source";
+            /** @constant */
+            readonly Phrases_on_new_line: "Phrases (each one on a new line)";
+            /** @constant */
+            readonly Import_to_group: "Import into group";
+            /** @constant */
+            readonly Skip_duplicates: "Skip duplicates";
+            /** @constant */
+            readonly Move_duplicates: "Move duplicates";
+            /** @constant */
+            readonly Move_duplicates_another_group: "Move duplicates to another group";
+            /** @constant */
+            readonly Move_duplicates_another_group_name: "Where move duplicates?";
+            /** @constant */
+            readonly Match_type: "Match type";
+            /** @constant */
+            readonly Match_type_broad: "Volume";
+            /** @constant */
+            readonly Match_type_phrase: "Volume";
+            /** @constant */
+            readonly Match_type_exact: "Volume";
+            /** @constant */
+            readonly Match_type_strict: "Strict";
+            /** @constant */
+            readonly By_location: "For locations";
+            /** @constant */
+            readonly Skip_tracked_searches: "Skip keywords with any search volume";
+            /** @constant */
+            readonly Check_active_groups_only: "Check active groups only";
+            /** @constant */
+            readonly By_total_searches: "By search volume";
+            /** @constant */
+            readonly By_rank: "By keyword rank (applied SE and Location)";
+            /** @constant */
+            readonly Sort_groups_by_searches: "Sort groups by total search volume";
+            /** @constant */
+            readonly Sort_keywords_by_searches: "Sort keywords in groups by search volume";
+            /** @constant */
+            readonly Sort_groups_alphabetically: "Sort groups alphabetically";
+            /** @constant */
+            readonly Sort_groups_by_date: "Sort groups by creation date";
+            /** @constant */
+            readonly Delete_empty_groups: "Delete empty groups";
+            /** @constant */
+            readonly Delete_inactive_groups: "Delete inactive groups";
+            /** @constant */
+            readonly Delete_groups_keywords: "Wipe all groups and keywords";
+            /** @constant */
+            readonly Set_color_tag: "Add color tag";
+            /** @constant */
+            readonly Group_name: "Group name";
+            /** @constant */
+            readonly move_to: "Move to the group";
+            /** @constant */
+            readonly Filter_applied_to_selected_se_notice_1: "Filter will be applied to the selected search engine and location. Before applying the filter, check search volume.";
+            /** @constant */
+            readonly Ranks_tracked_date: "Rankings checked";
+            /** @constant */
+            readonly Ranks_missing_in_serp: "Keyword not found in search results";
+            /** @constant */
+            readonly Filter_applied_to_selected_se_notice_2: "Filter will be applied to the selected search engine and location. Before applying the filter, check keyword rankings.";
+            /** @constant */
+            readonly Groups_will_sort_alpahbetically: "Groups will be sorted alphabetically";
+            /** @constant */
+            readonly Groups_will_sort_by_date: "Groups will be sorted by creation date";
+            /** @constant */
+            readonly Groups_without_keywords_will_delete: "All empty groups will be wiped!";
+            /** @constant */
+            readonly Groups_keywords_will_delete: "All groups and keywords will be wiped immediately. You can't undo this action.";
+            /** @constant */
+            readonly Inactive_groups_will_be_deleted: "All inactive groups will be wiped!";
+            /** @constant */
+            readonly Filters_bulk_actions: "Filters / Bulk operations";
+            /** @constant */
+            readonly Copy_group: "Export group";
+            /** @constant */
+            readonly to_project: "to the project";
+            /** @constant */
+            readonly Your_account: "You";
+            /** @constant */
+            readonly project_owner: "Project owner";
+            /** @constant */
+            readonly will_be_charged: "will be charged";
+            /** @constant */
+            readonly from_charged: "";
+            /** @constant */
+            readonly Suggestions_depth: "Nesting level";
+            /** @constant */
+            readonly Move_gathered_single_group: "Band up all collected keywords within a single group";
+            /** @constant */
+            readonly Search_uri: "Search a URI";
+            /** @constant */
+            readonly Add_to_group: "Add to group";
+            /** @constant */
+            readonly Integrate_to_use_the_tool_1: "To use the tool";
+            /** @constant */
+            readonly Integrate_to_use_the_tool_2: "integrate";
+            /** @constant */
+            readonly Integrate_to_use_the_tool_3: "your account with Google Analytics, Google Search Console or Yandex Metrica";
+            /** @constant */
+            readonly Integrate_to_use_the_tool_3_without_yandex: "your account with Google Analytics, Google Search Console";
+            /** @constant */
+            readonly Integrate_to_use_the_tool_aditional: "";
+            /** @constant */
+            readonly Methods_of_research: "Methods";
+            /** @constant */
+            readonly Popular: "Popular";
+            /** @constant */
+            readonly Other: "Other";
+            /** @constant */
+            readonly Clustering_in_process: "Clustering";
+            /** @constant */
+            readonly Clustering_type: "Clustering type";
+            /** @constant */
+            readonly Name_az: "Name A-Z";
+            /** @constant */
+            readonly Name_za: "Name Z-A";
+            /** @constant */
+            readonly Apply_to_selected: "Apply to selected keywords";
+            /** @constant */
+            readonly items_number: "keyword(s)";
+            /** @constant */
+            readonly Assign_target: "Assign target URL";
+            /** @constant */
+            readonly Landing_enter_URL: "Enter URL";
+            /** @constant */
+            readonly Reset: "Cancel";
+            /** @constant */
+            readonly Without_region: "Global";
+            /** @constant */
+            readonly Total_exact_ams: "Total search volume of a keyword group";
+            /** @constant */
+            readonly Total_exact_ams_of_project: "Total search volume of keywords in project";
+            /** @constant */
+            readonly Find_replace: "Find and replace";
+            /** @constant */
+            readonly Find_replace_target_links: "Find and replace target URLs";
+            /** @constant */
+            readonly Move_by_substrings: "Move keywords by substring";
+            /** @constant */
+            readonly Move_by_substrings_whole_words: "Whole words";
+            /** @constant */
+            readonly Move_by_substrings_info: "All keywords in which at least one of the specified substrings is found will be moved to the specified group. Example: When specifying the \"a\" substring, all keywords with the letter \"a\" will be moved.";
+            /** @constant */
+            readonly Filter_short: "F";
+            /** @constant */
+            readonly Tag: "Tag";
+            /** @constant */
+            readonly Change: "Change";
+            /** @constant */
+            readonly Find: "Find";
+            /** @constant */
+            readonly Replace: " Replace with";
+            /** @constant */
+            readonly Add_keyword_to_replace: "Add words or phrases to replace";
+            /** @constant */
+            readonly Keyword_will_be_replaced: "These words or phrases will be automatically replaced.";
+            /** @constant */
+            readonly Tetris_points: "Points";
+            /** @constant */
+            readonly Tetris_best_score: "Best score";
+            /** @constant */
+            readonly Tetris_game_over: "Game over";
+            /** @constant */
+            readonly Tetris_play_again: "Play again";
+            /** @constant */
+            readonly Hints_data_sources: "Sources";
+            /** @constant */
+            readonly CONTROLLER_Phrases_added: "You have successfully added keywords";
+            /** @constant */
+            readonly CONTROLLER_phrases_missed: "skipped duplicate keywords";
+            /** @constant */
+            readonly CONTROLLER_phrases_moved: "moved (changed) keywords";
+            /** @constant */
+            readonly CONTROLLER_Semantic_kernel: "Keywords";
+            /** @constant */
+            readonly Folder_max_depth: "Nested folder limit";
+            /** @constant */
+            readonly Choose_searcher: "Select search engine";
+            /** @constant */
+            readonly Choose_region: "Select location";
+            /** @constant */
+            readonly Choose_regions: "Select locations";
+            /** @constant */
+            readonly Choose_searcher_and_region: "Select search engine and location";
+            /** @constant */
+            readonly Choose_competitor: "Select competitor";
+            /** @constant */
+            readonly Choose_group: "Choose group";
+            /** @constant */
+            readonly Main_project: "My project";
+            /** @constant */
+            readonly Without_relevant_url: "No ranked URL";
+            /** @constant */
+            readonly Not_checked: "Not tracked";
+            /** @constant */
+            readonly Set_phrases_minus: "Exclude all phrases with negative keywords (Google and Yandex)";
+            /** @constant */
+            readonly Negative_words: "Negative keywords";
+            /** @constant */
+            readonly Check_old_searches: "Skip keywords with actual search volume";
+            /** @constant */
+            readonly Group_id: "Group id";
+            /** @constant */
+            readonly Project_id: "Project id";
+            /** @constant */
+            readonly Keyword_id: "Keyword id";
+            /** @constant */
+            readonly Keyword_folder_id: "Keyword folder id";
+            /** @constant */
+            readonly Folder_path: "Folder";
+            /** @constant */
+            readonly Keyword_rank: "Keyword rank";
+            /** @constant */
+            readonly Keyword_count: "Keyword count";
+            /** @constant */
+            readonly Sorting_order: "Sorting order";
+            /** @constant */
+            readonly Keyword_clustering_completed: "Keyword clustering completed";
+            /** @constant */
+            readonly Send_to_email: "Send to Email";
+            /** @constant */
+            readonly Data_will_be_pulled_for: "Collect data for";
+            /** @constant */
+            readonly total_count: "; total count";
+            /** @constant */
+            readonly Enter_keywords: "Enter keywords";
+            /** @constant */
+            readonly Upload_from_file: "Upload from file";
+            /** @constant */
+            readonly Selected: "Selected";
+            /** @constant */
+            readonly Keyword_export: "Keyword export";
+            /** @constant */
+            readonly Group_export: "Group export";
+            /** @constant */
+            readonly Copy_to_clipboard: "Copy to clipboard";
+            /** @constant */
+            readonly Copy_to_clipboard_up_to: "Copy to clipboard (up to %max% keywords)";
+            /** @constant */
+            readonly To_copy_and_move: "Copy and transfer";
+            /** @constant */
+            readonly To_delete_keywords_warning: "<b>Important!</b><br>Are you sure you want to delete selected keywords?";
+            /** @constant */
+            readonly To_delete_folder_warning: "<b>Important!</b><br><br>If you delete a folder, its contents (subfolders, groups, keywords) will be deleted immediately";
+            /** @constant */
+            readonly Restore_selected_keywords: "Restore selected keywords";
+            /** @constant */
+            readonly Restore_selected_folders: "Restore selected folders";
+            /** @constant */
+            readonly Restore_selected_groups_restores_contents: "If you restore the group, all folders and keywords in the group will be restored immediately";
+            /** @constant */
+            readonly Restore: "Restore";
+            /** @constant */
+            readonly or_drag_here: "or drag and drop here";
+            /** @constant */
+            readonly txt_csv_max_size: "(txt or csv - max 10 Mb)";
+            /** @constant */
+            readonly Drop_file: "Drop file";
+            /** @constant */
+            readonly File_uploaded: "File uploaded";
+            /** @constant */
+            readonly Disable_floating_bar: "Disable floating bar";
+            /** @constant */
+            readonly Temporary_bin: "Temporary bin";
+            /** @constant */
+            readonly Set_target_equals_relevant: "Assign Target = Ranked URL from the last check";
+            /** @constant */
+            readonly Import_target_links: "Import target links";
+            /** @constant */
+            readonly Total_selected: "Total selected keywords";
+            /** @constant */
+            readonly Keyword_length: "Keyword length";
+            /** @constant */
+            readonly XSLX_tabs: "XLSX (Tabs)";
+            /** @constant */
+            readonly Prepare: "Prepare";
+            /** @constant */
+            readonly Enter_name_of_new_group: "Enter a name of a new group";
+            /** @constant */
+            readonly Manage_columns: "Manage columns";
+            /** @constant */
+            readonly Max_period_one_year: "Max period - 1 year";
+            /** @constant */
+            readonly Target_equals_relevant_lastcheck_in_location: "Target = Ranked URL from the last check in the location";
+            /** @constant */
+            readonly Do_not_overwrite_assigned_target_links: "Do not overwrite assigned target links";
+            /** @constant */
+            readonly Sy_wordstat_max_pages: "MAX pages";
+            /** @constant */
+            readonly Research_status: "Keyword research status";
+            /** @constant */
+            readonly Activity_status: "Group activity status";
+            /** @constant */
+            readonly No_target_URL: "No Target URL";
+            /** @constant */
+            readonly Move_keywords_to_another_project: "Move to another project";
+            /** @constant */
+            readonly Move_group_and_delete_from_orginal_project: "Transfer (delete from the orginal project)";
+            /** @constant */
+            readonly Keywords_to_transfer_and_delete_from_project: "To transfer and delete from the original project";
+            /** @constant */
+            readonly Remove_pluses_fullstops_commas_apostrophes_quotes: "Remove plus symbols, full stops, commas, apostrophes, quotes";
+            /** @constant */
+            readonly HintVolumeNoCollected: "Volume isn't collected. Follow <a href=\"/ru/support/keywords/volume/\" target=\"_blank\">this manual</a> to collect volume.<br><br>\nFor some keywords search volume is displayed because we store volume in a common database without linking it to a particular user: if other users checked it, it would be automatically pulled from the database. But note that such volume could be outdated.";
+            /** @constant */
+            readonly Collect_settings: "Collect settings";
+            /** @constant */
+            readonly Collect_hint_methods: "Auto substitutions";
+            /** @constant */
+            readonly Extension_of_groups: "Groups expansion";
+            /** @constant */
+            readonly Extend_the_group: "Expand group";
+            /** @constant */
+            readonly Selected_groups_for_extension: "Groups selected for expansion";
+            /** @constant */
+            readonly Collect_type: "What to use for expansion";
+            /** @constant */
+            readonly Use_only_group_name: "Only group names";
+            /** @constant */
+            readonly Use_group_requests_only: "Only keywords in groups";
+            /** @constant */
+            readonly Use_group_name_and_queries: "Use both group names and keywords";
+            /** @constant */
+            readonly Cluster_core: "Cluster semantic core";
+            /** @constant */
+            readonly Cluster_by_the_highest_level: "Clustering will be done by the highest level.";
+            /** @constant */
+            readonly Wait_while_clustering: "We're enchanting your semantic core. Please wait a bit.";
+            /** @constant */
+            readonly Root_folder: "Root folder";
+            /** @constant */
+            readonly Groups_with_keywords: "Groups with keywords";
+            /** @constant */
+            readonly Type_of_volume_needed_for_visibility: "Check this type of Search Volume to calculate Visibility for";
+            /** @constant */
+            readonly Check_all_wordstats: "Check all keywords";
+        };
+        "I18n.Landings": {
+            /** @constant */
+            readonly No_card_needed: "No card needed";
+        };
+        "I18n.Projects": {
+            /** @constant */
+            readonly Add_project_title: "Add project";
+            /** @constant */
+            readonly Enter_project_name: "Enter project name";
+            /** @constant */
+            readonly Site: "Project URL";
+            /** @constant */
+            readonly Keywords: "Keywords";
+            /** @constant */
+            readonly Broker: "Bid manager";
+            /** @constant */
+            readonly Analytics: "Analytics and reports";
+            /** @constant */
+            readonly Add_project_url: "Enter website or webpage URL";
+            /** @constant */
+            readonly Del_project_title: "Delete project";
+            /** @constant */
+            readonly Del_project_question: "Are you sure you want to delete project";
+            /** @constant */
+            readonly Del_selected_projects_question: "Are you sure you want to delete the selected projects?";
+            /** @constant */
+            readonly Del_folder_question: "Are you sure you want to delete this project?<br><br>Projects will be moved to the root folder";
+            /** @constant */
+            readonly Check_positions: "Check Rankings";
+            /** @constant */
+            readonly Check_positions_with_filter: "Apply filter and check rankings (search engine / location / folder / group)";
+            /** @constant */
+            readonly domain_missed: "Domain not specified, check \"site\" parameter";
+            /** @constant */
+            readonly Incorrect_domain: "Invalid domain name";
+            /** @constant */
+            readonly owner_rights_error: "You can't change project owner access settings";
+            /** @constant */
+            readonly Edit_positions_notice_to_wait: "We are assigning project tasks, settings will be available within a minute";
+            /** @constant */
+            readonly Searcher_missed: "Search engine provider missed";
+            /** @constant */
+            readonly Searcher_exists: "This search engine already added to the project";
+            /** @constant */
+            readonly Region_exists: "Location with applied settings already added";
+            /** @constant */
+            readonly Region_not_available: "You can't add this location";
+            /** @constant */
+            readonly Project_not_available_for_Youtube: "Youtube rank tracking is not available for this project";
+            /** @constant */
+            readonly Searcher_not_found: "Search engine not found";
+            /** @constant */
+            readonly Delegating_impossible2?: "You cannot give this user access to the project: currency in your accounts should be the same.\nAccount currency can be changed before the first payment with this instruction: https://topvisor.com/support/bank/currency/";
+            /** @constant */
+            readonly You_are_owner: "You are the project owner already";
+            /** @constant */
+            readonly Add_to_favorites: "Add to favorites";
+            /** @constant */
+            readonly User_not_exists: "This user doesn't exist";
+            /** @constant */
+            readonly ChangeOwner_message1: "You received full access to the project";
+            /** @constant */
+            readonly ChangeOwner_message2: "To accept project transfer and start working on it, click \"Accept project\".";
+            /** @constant */
+            readonly ChangeOwner_message3: "Accept project";
+            /** @constant */
+            readonly ChangeOwner_title: "Project transfer";
+            /** @constant */
+            readonly AcceptChangeOwner_msg1: "The project was delegated by the user who is no longer a project owner.";
+            /** @constant */
+            readonly AcceptChangeOwner_msg2: "You have become the project owner of";
+            /** @constant */
+            readonly Competitors_add: "Add competitors";
+            /** @constant */
+            readonly Competitors_add2: "Add competitors";
+            /** @constant */
+            readonly Competitors_price_1: "Keyword research cost";
+            /** @constant */
+            readonly Competitors_price_2: "$";
+            /** @constant */
+            readonly Competitor_site_missed: "Competitor site not specified";
+            /** @constant */
+            readonly Competitor_double: "Competitor already exists";
+            /** @constant */
+            readonly Competitor_Wrong_data: "Invalid data format";
+            /** @constant */
+            readonly Youtube_competitor_error: "Competitor must match youtube.com* wildcard";
+            /** @constant */
+            readonly Competitor_count_error: "You can't add more than 250 competitors";
+            /** @constant */
+            readonly Check_campaigns_acess_and_API_permission: "Check campaign access and API permission";
+            /** @constant */
+            readonly Sum_for_pay: "Project owner will be charged";
+            /** @constant */
+            readonly Visits_in_yandex: "Visits on Yandex";
+            /** @constant */
+            readonly Visits_in_google: "Visits on Google";
+            /** @constant */
+            readonly Visits_in_mail: "Visits on Mail.ru";
+            /** @constant */
+            readonly Info_cost: "You will be charged";
+            /** @constant */
+            readonly Last_update: "Last check";
+            /** @constant */
+            readonly Keywords_in_top: "TOP 10/11-30/30+";
+            /** @constant */
+            readonly Dynamics: "Dynamics";
+            /** @constant */
+            readonly Traffic: "Traffic in SE";
+            /** @constant */
+            readonly Indexed: "Index status";
+            /** @constant */
+            readonly Links: "Links";
+            /** @constant */
+            readonly Average_position: "Avg.pos.";
+            /** @constant */
+            readonly Visibility: "Vis-ty";
+            /** @constant */
+            readonly Register_domain: "Domain registration";
+            /** @constant */
+            readonly Archive_project: "Archive";
+            /** @constant */
+            readonly Unarchive_project: "Restore";
+            /** @constant */
+            readonly Extend: "Renew";
+            /** @constant */
+            readonly Extend_domain: "Renew your domain";
+            /** @constant */
+            readonly Transfer_domain: "Transfer your domain";
+            /** @constant */
+            readonly Yandex_short: "Y:";
+            /** @constant */
+            readonly Yandex_SQI: "SQI";
+            /** @constant */
+            readonly No_tag: "Default tag";
+            /** @constant */
+            readonly Edit: "Edit";
+            /** @constant */
+            readonly My_projects: "My projects";
+            /** @constant */
+            readonly Scheduled_update: "Scheduled update";
+            /** @constant */
+            readonly Manual_update: "Manual update";
+            /** @constant */
+            readonly Guest_projects: "Guest projects";
+            /** @constant */
+            readonly Guest_my_projects: "My and guest projects";
+            /** @constant */
+            readonly Archived_projects: "Archived projects";
+            /** @constant */
+            readonly Add_project: "Add project";
+            /** @constant */
+            readonly Current_registrar: "Current registrar";
+            /** @constant */
+            readonly Info_archived: "You are going to archive your project. Archived projects are suspended and unavailable.";
+            /** @constant */
+            readonly Info_archived_html: "You are going to archive the <i class=\"one\">project</i><i class=\"several\">selected projects</i>. Archived projects are suspended and unavailable.";
+            /** @constant */
+            readonly Accept_unarchive: "Do you really want to restore this project from the archive?";
+            /** @constant */
+            readonly Info_unarchive_html: "Do you really want to restore the <i class=\"one\">project</i><i class=\"several\">selected projects</i>?";
+            /** @constant */
+            readonly Archive: "Archive";
+            /** @constant */
+            readonly Unarchive: "Restore";
+            /** @constant */
+            readonly Info_bulk_update: "Check Rankings";
+            /** @constant */
+            readonly Bulk_update: "Check Rankings";
+            /** @constant */
+            readonly No_bulk_update_projects: "There are no projects available for bulk update";
+            /** @constant */
+            readonly Registration_date: "Registered";
+            /** @constant */
+            readonly Domain_valid_until: "Domain expires";
+            /** @constant */
+            readonly Deleted_date: "Deleted";
+            /** @constant */
+            readonly Domain_extended_time: "Domain to renew after";
+            /** @constant */
+            readonly Extend_current_cost: "Your<br>domain renewal costs";
+            /** @constant */
+            readonly Extend_axelname: "Renew your domain with <br> ";
+            /** @constant */
+            readonly Update_tpa: "Update the key";
+            /** @constant */
+            readonly Copy_with_settings: "Copy project and main settings";
+            /** @constant */
+            readonly Copy_keywords: "Copy keywords";
+            /** @constant */
+            readonly Copy_dynamics: "Copy keyword ranking history";
+            /** @constant */
+            readonly Copy: "Copy";
+            /** @constant */
+            readonly A_copy: "Copy";
+            /** @constant */
+            readonly Copy_project: "Copy project";
+            /** @constant */
+            readonly Report_on_weekdays: "On days of week";
+            /** @constant */
+            readonly Report_custom_frequency: "Custom frequency";
+            /** @constant */
+            readonly Send_competitor_report: "Send competition report";
+            /** @constant */
+            readonly Report_format: "Report format";
+            /** @constant */
+            readonly Send_test_report: "Test report";
+            /** @constant */
+            readonly Test_report_sent_email: "Test report has been successfully sent to your email";
+            /** @constant */
+            readonly Test_report_sent: "Test report successfully sent";
+            /** @constant */
+            readonly Access_add_user: "Add user";
+            /** @constant */
+            readonly company_logo: "company logo";
+            /** @constant */
+            readonly Settings_no_automated_update_if_manual: "Do not run scheduled update if rankings were checked on demand less than 12 hours ago";
+            /** @constant */
+            readonly Settings_particular_days: "On dates";
+            /** @constant */
+            readonly After_updates: "After Yandex updates";
+            /** @constant */
+            readonly After_update: "After Yandex update";
+            /** @constant */
+            readonly immediately: "immediately";
+            /** @constant */
+            readonly in_hour: "in %hour% h.";
+            /** @constant */
+            readonly Settings_on_demand: "On demand";
+            /** @constant */
+            readonly Advanced_options: "Tool settings";
+            /** @constant */
+            readonly Do_not_collect: "Do not collect";
+            /** @constant */
+            readonly Collect: "Collect";
+            /** @constant */
+            readonly Subdomains: "Subdomains";
+            /** @constant */
+            readonly Subdomains_do_not_check: "Do not check";
+            /** @constant */
+            readonly Subdomains_check: "Check";
+            /** @constant */
+            readonly Search_filter: "Search filter";
+            /** @constant */
+            readonly Do_not_filter: "Do not filter";
+            /** @constant */
+            readonly Moderate_filtering: "Moderate";
+            /** @constant */
+            readonly Family_search: "Family search";
+            /** @constant */
+            readonly Spelling: "Spelling";
+            /** @constant */
+            readonly Do_not_correct_spelling: "Do not correct";
+            /** @constant */
+            readonly Correct_spelling: "Correct";
+            /** @constant */
+            readonly Traffic_segmentation: "Traffic segmentation";
+            /** @constant */
+            readonly Local_traffic: "By region";
+            /** @constant */
+            readonly Global_traffic: "Global";
+            /** @constant */
+            readonly Select_se: "Pick search engine";
+            /** @constant */
+            readonly Integrate_denied: "Denied";
+            /** @constant */
+            readonly Integrate_account_locked: "You seem to be logged out of your account";
+            /** @constant */
+            readonly Schedule: "Schedule";
+            /** @constant */
+            readonly Competitors: "Competitors";
+            /** @constant */
+            readonly of_competitors: "competitors";
+            /** @constant */
+            readonly Access: "Access";
+            /** @constant */
+            readonly Project_archived_notice: "Project is archived, access to features is limited.";
+            /** @constant */
+            readonly Project_archived_90days_notice: "Projects inactive during 180 days are archived automatically";
+            /** @constant */
+            readonly Projects_archived: "Projects are archived";
+            /** @constant */
+            readonly Popular: "Popular";
+            /** @constant */
+            readonly Other: "Other";
+            /** @constant */
+            readonly Select_project: "Select project";
+            /** @constant */
+            readonly List_of_projects: "List of projects";
+            /** @constant */
+            readonly To_list_of_projects: "List of projects";
+            /** @constant */
+            readonly Search_projects: "Search projects";
+            /** @constant */
+            readonly Delegation: "Project transfer";
+            /** @constant */
+            readonly Activate_deactivate_competitors: "Enable/Disable all competitors";
+            /** @constant */
+            readonly Wipe_all_competitors: "Are you sure you want to wipe all competitors?";
+            /** @constant */
+            readonly Wipe_competitors_note: "Wipe competitors";
+            /** @constant */
+            readonly Reporting_period: "Reporting period";
+            /** @constant */
+            readonly Do_not_ask: "Do not ask me again";
+            /** @constant */
+            readonly To_accept_project_click_msg: "To accept a project <b>%project_name%</b> transfer, click the message";
+            /** @constant */
+            readonly Reports_send_to_address: "Send to";
+            /** @constant */
+            readonly Checks: "Tools";
+            /** @constant */
+            readonly Reports: "Reports";
+            /** @constant */
+            readonly Access_to_project: "Share project";
+            /** @constant */
+            readonly Transfer_project: "Transfer project";
+            /** @constant */
+            readonly Do_not_brand: "Do not apply branding";
+            /** @constant */
+            readonly Show_account_balance: "Show your account balance";
+            /** @constant */
+            readonly To_previous_step: "Previous step";
+            /** @constant */
+            readonly Next: "Next";
+            /** @constant */
+            readonly Keyword_import: "Keyword import";
+            /** @constant */
+            readonly Competitor_settings: "Set competitors";
+            /** @constant */
+            readonly Se_and_locations: "Search engines and locations";
+            /** @constant */
+            readonly Completed: "Completed";
+            /** @constant */
+            readonly Track_rankings: "Track rankings";
+            /** @constant */
+            readonly Start_audit: "Start site audit";
+            /** @constant */
+            readonly Start_watcher: "Start watcher";
+            /** @constant */
+            readonly Start_indexing: "Start indexing";
+            /** @constant */
+            readonly Start_sitemap: "Sitemap generator";
+            /** @constant */
+            readonly Main_settings: "Main settings";
+            /** @constant */
+            readonly Create_project: "Create project";
+            /** @constant */
+            readonly Select_type_add_name_url: "Select a project type, add a URL and a name";
+            /** @constant */
+            readonly Enter_youtube_URL: "Enter the URL of a channel (youtube.com/@user) or a video (youtube.com/watch?v=...)";
+            /** @constant */
+            readonly Enter_app_URL: "Enter app URL";
+            /** @constant */
+            readonly Enter_domain_or_page: "Enter domain (example.com) or page URL (example.com/page/)";
+            /** @constant */
+            readonly Site_or_page: "Site or webpage";
+            /** @constant */
+            readonly Add_project_name: "Enter project name";
+            /** @constant */
+            readonly Created_date: "Created";
+            /** @constant */
+            readonly Project_owner: "Project owner";
+            /** @constant */
+            readonly Add_keywords: "Add keywords";
+            /** @constant */
+            readonly Add_keywords_button: "Add keywords";
+            /** @constant */
+            readonly Keywords_for_import: "Keywords";
+            /** @constant */
+            readonly Enter_keywords_one_per_line: "Enter keywords, one per line";
+            /** @constant */
+            readonly Recommended_keywords: "Keyword ideas";
+            /** @constant */
+            readonly Add_selected: "Add selected";
+            /** @constant */
+            readonly Added_keywords: "Added keywords";
+            /** @constant */
+            readonly Group_manage_tags_on_page: "Group and manage tags at";
+            /** @constant */
+            readonly see: "see";
+            /** @constant */
+            readonly Add_competitors: "Add competitors";
+            /** @constant */
+            readonly My_competitors: "My competitors";
+            /** @constant */
+            readonly Competitor_URL: "Competitor URL";
+            /** @constant */
+            readonly Competitor_name: "Competitor name";
+            /** @constant */
+            readonly Find_competitors: "Find competitors";
+            /** @constant */
+            readonly Suggested_competitors: "Suggested competitors";
+            /** @constant */
+            readonly Get_search_volume: "Check search volume";
+            /** @constant */
+            readonly Check_keyword_rankings: "Check keyword rankings";
+            /** @constant */
+            readonly Project_setup_completed: "Project setup completed";
+            /** @constant */
+            readonly Add_search_engines_and_locations: "Add search engines and locations";
+            /** @constant */
+            readonly Select_search_engine: "Select search engine";
+            /** @constant */
+            readonly Press_search_engine_icon_to_add_location: "Press a search engine icon and add a location";
+            /** @constant */
+            readonly You_can_manage_locations_in_settings: "You can manage added locations in project settings";
+            /** @constant */
+            readonly Enter_location_or_lr: "Enter Location or its Yandex code";
+            /** @constant */
+            readonly Locations: "Locations";
+            /** @constant */
+            readonly Skip_wizard: "Do not run setup wizard";
+            /** @constant */
+            readonly Setup_rank_tracker: "Set up Rank Tracker";
+            /** @constant */
+            readonly Setup_audit: "Set up Website Audit";
+            /** @constant */
+            readonly Setup_audit_urls: "Pages for audit";
+            /** @constant */
+            readonly Setup_watcher: "Set up Watcher";
+            /** @constant */
+            readonly Setup_watcher_urls: "Pages for watcher";
+            /** @constant */
+            readonly Setup_indexing: "Set up Index Checker";
+            /** @constant */
+            readonly Setup_indexing_urls: "Pages for indexing";
+            /** @constant */
+            readonly Setup_sitemap: "Set up Sitemap Generator";
+            /** @constant */
+            readonly Add_all_recommended: "Add all recommended";
+            /** @constant */
+            readonly Delete_keywords_from_orginal_project: "Delete keywords from the orginal project";
+            /** @constant */
+            readonly Project_name: "Name";
+            /** @constant */
+            readonly Project_projects_selected: "Selected";
+            /** @constant */
+            readonly Create_your_first_project: "Create your first project";
+            /** @constant */
+            readonly Topvisor_general_info_tip?: "9 tools for SEO and marketing.<br>Check keyword rankings, research keywords, track changes to webpages and much more.";
+            /** @constant */
+            readonly No_projects_match_filter: "No projects match filter";
+            /** @constant */
+            readonly Enter_folder_name: "Enter folder name";
+            /** @constant */
+            readonly Add_keywords_se_locations_to_check_notice: "No tasks found. Add keywords, a search engine and a location in the project settings";
+            /** @constant */
+            readonly Summary_by_location: "Summary by location";
+            /** @constant */
+            readonly Project_type: "Project type";
+            /** @constant */
+            readonly Project_folder: "Project folder";
+            /** @constant */
+            readonly Selected_project_type: "Selected project type";
+            /** @constant */
+            readonly Cost_for_guest_project_owner: "Project owner will be charged";
+            /** @constant */
+            readonly Move_to_folder: "Move to folder";
+            /** @constant */
+            readonly Open_in_new_tab: "Open in new tab";
+            /** @constant */
+            readonly In_queue: "In queue";
+            /** @constant */
+            readonly In_progress: "In progress";
+            /** @constant */
+            readonly URL_count: "Number of URLs";
+            /** @constant */
+            readonly Username: "Username";
+            /** @constant */
+            readonly Spent: "Spent";
+            /** @constant */
+            readonly Spend_limit: "Spend limit";
+            /** @constant */
+            readonly Change_url_no_available: "The project URL must match the previously configured site\nThe URL cannot be changed to an address leading to another resource.";
+            /** @constant */
+            readonly Sort_by_search_engine: "By search engine";
+            /** @constant */
+            readonly Sort_by_yande_region_code: "By Yandex region code (lr)";
+            /** @constant */
+            readonly Sort_by_lphabetically: "Alphabetically";
+            /** @constant */
+            readonly Project_url: "Project URL";
+            /** @constant */
+            readonly Enter_location: "Enter location";
+        };
+        "I18n.Robot": Record<string, never>;
+        "I18n.Sitemap": {
+            /** @constant */
+            readonly Settings: "Tool settings";
+            /** @constant */
+            readonly Popup_go_text_before_select: "Sitemap for <a href=\"#\" class=\"domain\" target=\"_blank\"></a> will contain up to:";
+            /** @constant */
+            readonly Popup_go_text_before_price: "Project owner will be charged:";
+            /** @constant */
+            readonly Max_pages: "MAX number of pages";
+            /** @constant */
+            readonly Info_cost: "You will be charged";
+            /** @constant */
+            readonly Hint_not_checks_text: "Sitemap hasn't  been generated yet.<br>🗺️ <a href=\"/support/sitemap/\" target=\"_blank\">Why you need to generate sitemap →</a>";
+            /** @constant */
+            readonly Hint_not_checks_btn: "Generate sitemap";
+        };
+        "I18n.Snapshots": {
+            /** @constant */
+            readonly Snippets_in_snapshots: "Snippets in snapshots";
+            /** @constant */
+            readonly No_snapshots_these_dates_note: "No Snapshots saved for the applied filters and dates";
+            /** @constant */
+            readonly Snapshots_for_keyword: "Snapshots of";
+            /** @constant */
+            readonly Add_keyword_to_see_snapshot: "Add keyword to display search results Snapshot";
+            /** @constant */
+            readonly Add_keyword_to_compare: "Add keyword to compare Snapshots";
+            /** @constant */
+            readonly not_in_competitor_list: "not on the competitor list";
+            /** @constant */
+            readonly in_competitor_list: "on the competitor list";
+            /** @constant */
+            readonly To_manage_competitors_move: "To manage competitor websites, move to the";
+            /** @constant */
+            readonly move_to_settings: "Rank Tracker page and press a gear icon on the toolbar";
+            /** @constant */
+            readonly Read_competitor_help_article: "For more details read the Help center article <a href=\"/support/dynamics/competitors/\" target=\"_blank\">How to manage competitor websites?</a>";
+            /** @constant */
+            readonly Competitor_website: "Competitor website";
+            /** @constant */
+            readonly Save_snapshot_top_N: "Save a snapshot of TOP";
+            /** @constant */
+            readonly Do_not_save: "Don't save";
+            /** @constant */
+            readonly selected_keywords_only: "selected keywords only";
+            /** @constant */
+            readonly Saved_list: "Saved list";
+            /** @constant */
+            readonly First_40_keywords: "First 40 keywords";
+            /** @constant */
+            readonly Save_list: "Save list";
+            /** @constant */
+            readonly Clear_list: "Clear list";
+            /** @constant */
+            readonly Highlight: "Highlight";
+            /** @constant */
+            readonly Hide_domains: "Gray out selected domains";
+            /** @constant */
+            readonly Hide_domains_comment: "Selected domains will be grayed out to make snapshots data reader-friendly and easy to analyze";
+            /** @constant */
+            readonly Highlighting_error: "Operation failed. Invalid domains: ";
+            /** @constant */
+            readonly Competitor_URLs: "Competitor URLs";
+            /** @constant */
+            readonly Add_to_competitors: "Add to competitors";
+            /** @constant */
+            readonly Remove_from_competitors: "Remove from competitors";
+            /** @constant */
+            readonly Added_competitors: "Added competitors";
+            /** @constant */
+            readonly Compare_all_keywords: "Compare all keywords";
+            /** @constant */
+            readonly Keyword_dynamics: "Keyword dynamics";
+            /** @constant */
+            readonly Select_keyword: "Select keyword";
+            /** @constant */
+            readonly Snippets_no_checked: "<b>Snippets in Snapshots</b> weren't collected on the selected dates.";
+            /** @constant */
+            readonly Snippets_no_checking: "<b>Snippets in Snapshots</b> aren't being collected. Turn this feature on in the project's settings.";
+            /** @constant */
+            readonly Snapshots_checks_in_progress_1: "You haven't collected snapshots for selected filters";
+            /** @constant */
+            readonly Snapshots_checks_in_progress_2: "Collect snapshots to see SERP TOPs for your keywords and your competitors' keywords.<br>Your keyword rankings will be checked when you collect snippets.<br>📊 <a href=\"/snapshots/\" target=\"_blank\">Why you need to check SERP Top →</a>";
+            /** @constant */
+            readonly Open_keyword_snapshot: "Open keyword snapshot";
+        };
+        "I18n.Telegram": {
+            /** @constant */
+            readonly Panel_get_command_list: "Get list of commands";
+            /** @constant */
+            readonly Panel_enable_notifications: "Turn on notifications";
+            /** @constant */
+            readonly Panel_disable_notifications: "Turn off notifications";
+            /** @constant */
+            readonly Panel_pair_account?: "Link Topvisor account";
+            /** @constant */
+            readonly Panel_unpair_account?: "Remove Topvisor account";
+            /** @constant */
+            readonly Panel_get_short_link: "Create short link";
+            /** @constant */
+            readonly Panel_back: "Back";
+            /** @constant */
+            readonly Panel_cancel: "Cancel";
+            /** @constant */
+            readonly Panel_main_menu: "Main menu";
+            /** @constant */
+            readonly Panel_select_lang: "Select language";
+            /** @constant */
+            readonly Panel_eng: "English";
+            /** @constant */
+            readonly Panel_rus: "Russian";
+            /** @constant */
+            readonly Panel_i_subscribed: "Already subscribed 😎";
+            /** @constant */
+            readonly Panel_subscribe: "Subscribe";
+            /** @constant */
+            readonly Panel_open_materials: "Open materials 📚";
+            /** @constant */
+            readonly Panel_library: "Open library";
+            /** @constant */
+            readonly Message_chat_disabled: "Message not received. To contact Customer Care and read replies, type /start";
+            /** @constant */
+            readonly Message_available_commands: "Commands that I understand:";
+            /** @constant */
+            readonly Message_available_commands_help: "Get list of commands";
+            /** @constant */
+            readonly Message_available_commands_start: "Turn on notifications";
+            /** @constant */
+            readonly Message_available_commands_stop: "Turn off notifications";
+            /** @constant */
+            readonly Message_available_commands_pair?: "Link Topvisor account";
+            /** @constant */
+            readonly Message_available_commands_unpair?: "Remove Topvisor account";
+            /** @constant */
+            readonly Message_available_commands_tpvsr: "Create short link";
+            /** @constant */
+            readonly Message_start_text1: "Hi! I can send your questions to Customer Support and get replies.";
+            /** @constant */
+            readonly Message_start_text2: "To get a list of commands that I understand, type /help. To contact support, send your question in the chat.";
+            /** @constant */
+            readonly Message_start_apometer_text: "";
+            /** @constant */
+            readonly Message_stop_text: "Notifications have been turned off. I'll stop sending you alerts and Customer Support replies.";
+            /** @constant */
+            readonly Message_pair_done1: "Your Telegram already linked to the account";
+            /** @constant */
+            readonly Message_pair_done2: "To remove account, type /unpair";
+            /** @constant */
+            readonly Message_pair_authorize1?: "Sign in to Topvisor and click the <a href=\"https://topvisor.com/income/telegram/join/";
+            /** @constant */
+            readonly Message_pair_authorize2?: "\">ссылке</a> to link your Telegram to the Topvisor account";
+            /** @constant */
+            readonly Message_unpair: "Account removed.";
+            /** @constant */
+            readonly Message_tpvsr: "Send me a URL to shorten.";
+            /** @constant */
+            readonly Message_tpvsr_cancel: "Type /cancel to step backwards.";
+            /** @constant */
+            readonly Message_tpvsr_failure: "Link not shortened";
+            /** @constant */
+            readonly Message_tpvsr_cancel_done: "Link shortening canceled.";
+            /** @constant */
+            readonly Message_join_authorize?: "Sign in to Topvisor and try to link your account again.";
+            /** @constant */
+            readonly Message_join_done1: "Account";
+            /** @constant */
+            readonly Message_join_done2: "successfully linked.";
+            /** @constant */
+            readonly Message_check_journal_subscription?: "You are in the library of useful content from Topvisor-Journal. Checkin you library card 🧐";
+            /** @constant */
+            readonly Message_not_subscribed?: "It seems you are not reading the Topvisor-Journal channel yet 😳🕶🤏\nSubscribe to get a bunch of useful things 🔥";
+            /** @constant */
+            readonly Message_subscribed?: "You are already reading the Topvisor-Journal channel. Access is open 😎\nDon’t unsubscribe - we are constantly adding useful materials ✍️";
+        };
+        "I18n.Thundo": {
+            /** @constant */
+            readonly Og_title: "Thunder is coming";
+            /** @constant */
+            readonly Og_description: "Fasten your seatbelts, we're about to transform the view of how to do SEO!";
+        };
+        "I18n.Tickets": {
+            /** @constant */
+            readonly Reply_Title: "Ticket reply";
+            /** @constant */
+            readonly Reply_notice: "When replying to the ticket, please do not change the topic";
+            /** @constant */
+            readonly Auto_message_title: "Thank you, your ticket has been submitted";
+            /** @constant */
+            readonly Open_tickets: "Open";
+            /** @constant */
+            readonly Closed_tickets: "Closed";
+            /** @constant */
+            readonly Close_ticket: "Close ticket";
+            /** @constant */
+            readonly Open_ticket: "Open ticket";
+            /** @constant */
+            readonly Add_to_favorites: "Add to favorites";
+            /** @constant */
+            readonly Remove_from_favorites: "Remove from favorites";
+            /** @constant */
+            readonly Continue_in_new_ticket: "Continue in new ticket";
+            /** @constant */
+            readonly Quote_message: "Quote message";
+            /** @constant */
+            readonly Edit_message: "Edit message";
+            /** @constant */
+            readonly Delete_message: "Delete message";
+            /** @constant */
+            readonly User_info: "User info";
+            /** @constant */
+            readonly Device: "Device";
+            /** @constant */
+            readonly Browser: "Browser";
+            /** @constant */
+            readonly Pricing_plan: "Pricing plan";
+            /** @constant */
+            readonly Edit_template: "Edit template";
+            /** @constant */
+            readonly Template_title: "Title";
+            /** @constant */
+            readonly Add_msg: "Write a message";
+            /** @constant */
+            readonly Delete_template: "Delete template";
+            /** @constant */
+            readonly Found: "Results";
+            /** @constant */
+            readonly Search_tickets: "Search tickets";
+            /** @constant */
+            readonly New_ticket: "Create ticket";
+            /** @constant */
+            readonly Reopen_ticket: "Reopen ticket";
+            /** @constant */
+            readonly Text_welcome_1: "Select a ticket or";
+            /** @constant */
+            readonly Text_welcome_2: "create a new one";
+            /** @constant */
+            readonly Text_welcome_3: "to contact Customer Support";
+            /** @constant */
+            readonly Text_new_ticket_1: "Please describe the problem or ask a question";
+            /** @constant */
+            readonly Text_new_ticket_2: "We will get back to you shortly 💙";
+            /** @constant */
+            readonly Ticket_source_page: "Ticket source page";
+            /** @constant */
+            readonly Sound_mute: "Mute";
+            /** @constant */
+            readonly Sound_pencil: "Pencil";
+            /** @constant */
+            readonly Sound_magic_wand: "Magic wand";
+            /** @constant */
+            readonly Sound_bounce: "Bounce";
+            /** @constant */
+            readonly Sound_beep: "Beep";
+            /** @constant */
+            readonly Sound_xylophone: "Xylophone";
+            /** @constant */
+            readonly Sound_drums: "Drums";
+            /** @constant */
+            readonly Average_expenses: "Average expenses";
+            /** @constant */
+            readonly Bad: "Bad";
+            /** @constant */
+            readonly Normal: "OK";
+            /** @constant */
+            readonly Good: "Great!";
+            /** @constant */
+            readonly Title_start: "Rate how the Support did their part";
+            /** @constant */
+            readonly Title_finish: "Thanks for the feedback!";
+            /** @constant */
+            readonly Text_start: "It'll help us to get better.";
+            /** @constant */
+            readonly Text_good: "We'll keep it up.";
+            /** @constant */
+            readonly Text_bad: "We'll improve our service.";
+            /** @constant */
+            readonly Comment_title_good: "What did you particularly enjoy?";
+            /** @constant */
+            readonly Comment_title_bad: "Tell us what was wrong — we'll do everything to get better!";
+            /** @constant */
+            readonly Button_change_review: "Change the feedback";
+            /** @constant */
+            readonly Online: "Online";
+            /** @constant */
+            readonly Visited: "Last seen";
+        };
+        "I18n.Tpvsr": {
+            /** @constant */
+            readonly Link_deleted: "Link deleted";
+            /** @constant */
+            readonly Show_deleted_links: "Show deleted links";
+            /** @constant */
+            readonly Show_favorite_links: "Show favorite links";
+            /** @constant */
+            readonly Remove_link: "Delete link";
+            /** @constant */
+            readonly Recover_link: "Restore link";
+            /** @constant */
+            readonly Set_favorite: "Star link";
+            /** @constant */
+            readonly Link_cannot_be_shortened: "URL cannot be shorten.";
+            /** @constant */
+            readonly Link_blocked_roskomnadzor: "URL cannot be shorten (4). URL blocked by Roskomnadzor.";
+            /** @constant */
+            readonly Sort_name_desc: "Title Z-A";
+            /** @constant */
+            readonly Sort_name_asc: "Title A-Z";
+            /** @constant */
+            readonly Sort_clicks_desc: "Clicks descending";
+            /** @constant */
+            readonly Sort_clicks_asc: "Clicks ascending";
+            /** @constant */
+            readonly Sort_date_asc: "By date from oldest to newest";
+            /** @constant */
+            readonly Sort_date_desc: "By date from newest to oldest";
+            /** @constant */
+            readonly Limit_exceeded?: "Free URL Shortener limit reached! To use free URL Shortener, top up your balance within a year. You can use funds on your balance to pay for any Topvisor tools and features.";
+        };
+        "I18n.Tv": {
+            /** @constant */
+            readonly Name?: "Topvisor";
+            /** @constant */
+            readonly TV: "ТV";
+            /** @constant */
+            readonly Organization?: "Topvisor Co., Ltd.";
+            /** @constant */
+            readonly Journal?: "Topvisor–Journal";
+        };
+        "I18n.Units": {
+            /** @constant */
+            readonly s: "s";
+            /** @constant */
+            readonly ms: "ms";
+            /** @constant */
+            readonly KB: "KB";
+        };
+        "I18n.Updates": {
+            /** @constant */
+            readonly SERP_update_score: "SERP update score";
+            /** @constant */
+            readonly confirmed_Yandex: "update confirmed by Yandex";
+            /** @constant */
+            readonly Calendar: "updates calendar";
+            /** @constant */
+            readonly Informer: "Website informer";
+            /** @constant */
+            readonly Yandex_search_base_update: "Yandex search base update";
+            /** @constant */
+            readonly SERP_changes: "SERP change";
+            /** @constant */
+            readonly Text_update: " Text update: index <span class=\"top-only-pc\">updated</span> on ";
+            /** @constant */
+            readonly Text_update2: "Text update: index updated on ";
+            /** @constant */
+            readonly Index_updated: "Index updated on ";
+            /** @constant */
+            readonly Comments: "Comments";
+            /** @constant */
+            readonly Add_comment: "Add comment";
+            /** @constant */
+            readonly Sign_in_to_leave_comments: "<a href=\".\" class=\"btn\">Sign in</a> to leave comments";
+            /** @constant */
+            readonly Subscribe: "Subscribe";
+            /** @constant */
+            readonly points: "points";
+            /** @constant */
+            readonly Update: "Update";
+            /** @constant */
+            readonly Updates_calendar: "Updates calendar";
+            /** @constant */
+            readonly Yandex_update: "Yandex update";
+            /** @constant */
+            readonly Yandex_text_update: "Yandex text update";
+            /** @constant */
+            readonly Yandex_SERP_update: "Yandex SERP update";
+            /** @constant */
+            readonly Index_updated_on: "Index updated on";
+            /** @constant */
+            readonly of_Yandex: "Yandex";
+            /** @constant */
+            readonly All_categories: "All categories";
+            /** @constant */
+            readonly Auto_moto: "Auto, motor";
+            /** @constant */
+            readonly Logistics: "Car rent, taxi, logistics";
+            /** @constant */
+            readonly Beauty_and_health: "Beauty and health";
+            /** @constant */
+            readonly Furniture: "Windows, furniture";
+            /** @constant */
+            readonly Real_estate: "Real estate";
+            /** @constant */
+            readonly Clothes_and_accessories: "Clothes and accessories";
+            /** @constant */
+            readonly Online_games: "Online games";
+            /** @constant */
+            readonly Industrial_equipment: "Industrial equipment and machines";
+            /** @constant */
+            readonly Web_development: "Web and SEO";
+            /** @constant */
+            readonly Renovations: "Home improvement, building materials and tools";
+            /** @constant */
+            readonly Insurance: "Insurance";
+            /** @constant */
+            readonly Tourism: "Tourism and traveling";
+            /** @constant */
+            readonly Finance: "Finances";
+            /** @constant */
+            readonly Electronics: "Electronic and household appliances";
+            /** @constant */
+            readonly Legal_services: "Legal services";
+            /** @constant */
+            readonly Go_to_statictics: "Go to statistics of the day";
+            /** @constant */
+            readonly Apometr_info: "Updates Scanner is a tool that detects changes and updates in organic search results split by topics. We check SERP every 3 hours and measure changes on a 10-point scale. <a href=\"{{ hrefSupport }}\" target=\"_blank\">More on Updates Scanner →</a>";
+            /** @constant */
+            readonly Updates_yandex_telegram: "Yandex Updates in Telegram";
+            /** @constant */
+            readonly Updates_yandex_X: "Yandex Updates in X";
+            /** @constant */
+            readonly Share_link: "Copy link";
+            /** @constant */
+            readonly Embed_widget: "Embed widget";
+        };
+        "I18n.User": {
+            /** @constant */
+            readonly Account: "Account";
+            /** @constant */
+            readonly Name: "Name";
+            /** @constant */
+            readonly Password: "Password";
+            /** @constant */
+            readonly password_updated: "updated";
+            /** @constant */
+            readonly Theme: "Тема оформления";
+            /** @constant */
+            readonly Encoding: "Character encoding";
+            /** @constant */
+            readonly Delimiter: "Delimiter";
+            /** @constant */
+            readonly Dec_point: "Decimal point";
+            /** @constant */
+            readonly Current_time: "Time zone";
+            /** @constant */
+            readonly Date_format: "Date format";
+            /** @constant */
+            readonly Push_notifications: "Push notifications";
+            /** @constant */
+            readonly Push_enabled: "Enabled";
+            /** @constant */
+            readonly Push_disabled: "Disabled";
+            /** @constant */
+            readonly Push_disable_browser: "You can turn off notifications in the browser settings";
+            /** @constant */
+            readonly Push_enable_browser: "You can turn on notifications in the browser settings";
+            /** @constant */
+            readonly Push_enable: "Enable";
+            /** @constant */
+            readonly Link_account: "Linked accounts";
+            /** @constant */
+            readonly Remove_account: "Remove - ";
+            /** @constant */
+            readonly API_key: "API Key";
+            /** @constant */
+            readonly API_key_not_generated: "Not generated";
+            /** @constant */
+            readonly Confirmation_msg_notice_1: "We have sent a confirmation message to ";
+            /** @constant */
+            readonly Confirmation_msg_notice_2: ". Click a confirmation link to change your Email address. If you don't receive the message,<br> please check your Spam Email folder.";
+            /** @constant */
+            readonly Confirmation_msg_notice_3: ".";
+            /** @constant */
+            readonly Change_email_message: "We've sent you a email change confirmation. Follow the link in the email to change your account email.";
+            /** @constant */
+            readonly card_activation_notice: "to your account after card activation";
+            /** @constant */
+            readonly Rank_cashback_notice: "of all monthly payments are sent back to your account on the 1st day of each month";
+            /** @constant */
+            readonly Rank_participant_code: "Participant code";
+            /** @constant */
+            readonly Export: "Export";
+            /** @constant */
+            readonly Informer: "Notification Center";
+            /** @constant */
+            readonly Informer_balance_decrease: "Balance reached";
+            /** @constant */
+            readonly Informer_new_ticket_response: "New ticket replies";
+            /** @constant */
+            readonly Informer_sms_cost: "1 - Paid service. 1 SMS costs $0,01";
+            /** @constant */
+            readonly Export_period: "Period";
+            /** @constant */
+            readonly Guest_project: "Guest";
+            /** @constant */
+            readonly Archived_project: "Archived";
+            /** @constant */
+            readonly Export_keywords_number: "Total keyword count";
+            /** @constant */
+            readonly Export_tracked_ranks_number: "Checked keyword rankings";
+            /** @constant */
+            readonly Export_cost: "Export cost";
+            /** @constant */
+            readonly Export_prepare: "Prepare export";
+            /** @constant */
+            readonly Export_start: "Export";
+            /** @constant */
+            readonly Archives: "Archives";
+            /** @constant */
+            readonly Menu_account: "Account settings";
+            /** @constant */
+            readonly Menu_notifications: "Notifications";
+            /** @constant */
+            readonly Menu_bulk_operations: "Bulk operations";
+            /** @constant */
+            readonly Menu_account_stats: "Account stats";
+            /** @constant */
+            readonly Menu_XML_transfer: "XML transfer";
+            /** @constant */
+            readonly New_email: "New email";
+            /** @constant */
+            readonly Current_pwd: "Your password";
+            /** @constant */
+            readonly Change_email: "Update email address";
+            /** @constant */
+            readonly Email_change: "Update email address";
+            /** @constant */
+            readonly New_pwd: "New password";
+            /** @constant */
+            readonly Confirm_new_pwd: "Confirm new password";
+            /** @constant */
+            readonly Change_pwd: "Change password";
+            /** @constant */
+            readonly Pwd_change: "Change password";
+            /** @constant */
+            readonly White_label: "Branded reports";
+            /** @constant */
+            readonly Branded_reports: "Branded reports";
+            /** @constant */
+            readonly formats: "formats";
+            /** @constant */
+            readonly max_height: "max. height";
+            /** @constant */
+            readonly User_scripts: "User scripts";
+            /** @constant */
+            readonly Brand_settings: "Manage brand settings";
+            /** @constant */
+            readonly Company_name: "Company name";
+            /** @constant */
+            readonly Company_logo: "Company logo";
+            /** @constant */
+            readonly Logo_required_format_notice: "Required company logo format is";
+            /** @constant */
+            readonly Logo_required_size_notice: "Required company logo size should be up to";
+            /** @constant */
+            readonly Logo_required_height_notice: "Max company logo height is";
+            /** @constant */
+            readonly Cannot_form_report_without_updates: "At least one project update required to generate a report";
+            /** @constant */
+            readonly logo_required_format: "required image formats: .png, .svg";
+            /** @constant */
+            readonly logo_required_height: "required height: 50px";
+            /** @constant */
+            readonly Link_email_notice: "* Link your email to get full access to all features";
+            /** @constant */
+            readonly to_password_form: " into this form";
+            /** @constant */
+            readonly Confirm_owner_status_notice: "** to confirm that you are the account owner";
+            /** @constant */
+            readonly Short_name: "This name is too short";
+            /** @constant */
+            readonly Pass_min_length: "This password is too short";
+            /** @constant */
+            readonly PWS_not_equal: "The passwords do not match!";
+            /** @constant */
+            readonly Email_exists: "This email already exists";
+            /** @constant */
+            readonly Email_exists2: "This email exists in the system";
+            /** @constant */
+            readonly Email_exists3: "This email already exists. <br>In order to link it to this account enter your password from ";
+            /** @constant */
+            readonly Join_email: "Join e-mail";
+            /** @constant */
+            readonly Enter_password_for_email: "Enter password for this e-mail";
+            /** @constant */
+            readonly Email_changed_from_to: "Your email address has been successfully changed from ";
+            /** @constant */
+            readonly Registration_invite_sended_1: "Invitation to ";
+            /** @constant */
+            readonly Registration_invite_sended_2: " was sent successfully";
+            /** @constant */
+            readonly Registration_invite_sended_error: "Message hasn't been sent due to error";
+            /** @constant */
+            readonly System_reg_msg1: "Confirmation message sent to ";
+            /** @constant */
+            readonly System_reg_msg2: " ";
+            /** @constant */
+            readonly Invalid_code: "The code is invalid or has been used";
+            /** @constant */
+            readonly Retrieve_system_msg: "We have sent you password reset instructions";
+            /** @constant */
+            readonly Yandex_XML_auth_error: "Yandex XML authorization error";
+            /** @constant */
+            readonly Rank_code_not_available: "Code is invalid or has been used";
+            /** @constant */
+            readonly Rank_recurrent_sending_code_not_available: "You can activate achievement only once";
+            /** @constant */
+            readonly Rank_date_expired: "Activation period has expired";
+            /** @constant */
+            readonly Twitter_error_binding_accounts1: "Link your Twitter account to log in with Twitter.";
+            /** @constant */
+            readonly Twitter_error_binding_accounts2: "Otherwise, we will not be able to identify you in Twitter";
+            /** @constant */
+            readonly Twitter_login_not_found: "We couldn't find your login in Twitter, please submit a ticket and report the issue to Customer support";
+            /** @constant */
+            readonly Twitter_servers_error: "Twitter server error";
+            /** @constant */
+            readonly Required_signing: "Follow ";
+            /** @constant */
+            readonly Twitter_retweet_required: "Please retweet us";
+            /** @constant */
+            readonly Push_button: "Click Activate";
+            /** @constant */
+            readonly Rank_canceled: "You lost achievement";
+            /** @constant */
+            readonly XML_monster_deactivate_title: "You lost the XML monster card";
+            /** @constant */
+            readonly XML_monster_deactivate_msg: "Your \"XML monster\" card is no longer active as you are not transferring more limits than everyone else anymore";
+            /** @constant */
+            readonly XML_monster_activate_title: "You received the \"XML monster\" card!";
+            /** @constant */
+            readonly XML_monster_activate_msg: "Your \"XML monster\" card is activated as you have transferred more XML limits than everyone else";
+            /** @constant */
+            readonly Rank_ppcchat_deactivate_title: "You lost the \"PPC Chat member\" achievement";
+            /** @constant */
+            readonly Rank_seochat_deactivate_title: "You lost the \"SEO Chat member\" achievement";
+            /** @constant */
+            readonly Rank_topvisor_deactivate_title?: "😢 You lost the \"Telegram's subscriber\" achievement";
+            /** @constant */
+            readonly Rank_ppcchat_activate_title: "You received the \"PPC Chat member\" achievement!";
+            /** @constant */
+            readonly Rank_seochat_activate_title: "You received the \"SEO Chat member\" achievement!";
+            /** @constant */
+            readonly Rank_topvisor_activate_title?: "🎉 You received the \"Telegram's subscriber\" achievement!";
+            /** @constant */
+            readonly Ranks_link_twitter?: "Link your Twitter account to Topvisor";
+            /** @constant */
+            readonly Ranks_follow_twitter?: "Follow the official Topvisor account ";
+            /** @constant */
+            readonly Ranks_retweet: "Retweet ";
+            /** @constant */
+            readonly Ranks_twitter_follower: "Twitter follower";
+            /** @constant */
+            readonly Ranks_activate: "Activate";
+            /** @constant */
+            readonly Ranks_twitter_post: "a post";
+            /** @constant */
+            readonly Ranks_twitter_incomplete_notice: "You need to complete all steps!";
+            /** @constant */
+            readonly Access: "Manage access";
+            /** @constant */
+            readonly Access_emails: "Who can access";
+            /** @constant */
+            readonly Access_view_project: "View project";
+            /** @constant */
+            readonly Access_track_ranks: "Rank tracker";
+            /** @constant */
+            readonly Access_view_traffic: "Traffic data";
+            /** @constant */
+            readonly Access_view_analytics: "Analytics reports";
+            /** @constant */
+            readonly Access_view_AMS: "Search volume";
+            /** @constant */
+            readonly Access_project: "Project";
+            /** @constant */
+            readonly Access_restrict: "Restrict access";
+            /** @constant */
+            readonly Access_view_summary: "Summary";
+            /** @constant */
+            readonly Access_apply_to_selected: "Apply to selected";
+            /** @constant */
+            readonly Access_grant_access: "Grant access";
+            /** @constant */
+            readonly Access_user_email: "User email";
+            /** @constant */
+            readonly Access_guest_link: "Guest link";
+            /** @constant */
+            readonly Access_count: "";
+            /** @constant */
+            readonly Access_select_dates: "Allow to pick dates";
+            /** @constant */
+            readonly Access_add_user: "Add user";
+            /** @constant */
+            readonly Change_project_owner: "Project transfer";
+            /** @constant */
+            readonly Pending_project_transfer_1: "Pending, until";
+            /** @constant */
+            readonly Pending_project_transfer_2: "confirms project transfer.";
+            /** @constant */
+            readonly Transfer_project: "Transfer";
+            /** @constant */
+            readonly Access_manage: "Manage access";
+            /** @constant */
+            readonly integration_not_connected: "not connected";
+            /** @constant */
+            readonly Integration_connect: "Connect";
+            /** @constant */
+            readonly Integration_valid_till: "Key expires";
+            /** @constant */
+            readonly Integration_counter_not_selected: "Select a counter";
+            /** @constant */
+            readonly Integration_no_counters_found: "No counters found";
+            /** @constant */
+            readonly Integration_get_fresh_data: "Update";
+            /** @constant */
+            readonly Integration_expires_in: "Expires in";
+            /** @constant */
+            readonly Integration_days_1: "days";
+            /** @constant */
+            readonly Integration_days_2: "days";
+            /** @constant */
+            readonly Integration_days_3: "days";
+            /** @constant */
+            readonly Integration_extend: "Extend";
+            /** @constant */
+            readonly Integration_disconnect: "Disconnect";
+            /** @constant */
+            readonly Integration_integrate_ad_campaigns: "Integrate ad campaigns";
+            /** @constant */
+            readonly Integration_no_campaigns_for_edit: "We found no available campaigns to manage in your account.";
+            /** @constant */
+            readonly Preferences: "Account";
+            /** @constant */
+            readonly preferences: "account";
+            /** @constant */
+            readonly account_link: "your account settings";
+            /** @constant */
+            readonly Bank: "Billing";
+            /** @constant */
+            readonly Bulk_operations: "Bulk operations";
+            /** @constant */
+            readonly Password_emailed: "We have emailed a password to";
+            /** @constant */
+            readonly Password_new_emailed: "We have sent a new password to";
+            /** @constant */
+            readonly Change_password_notice: "You can change your password in ";
+            /** @constant */
+            readonly Widget: "Widget";
+            /** @constant */
+            readonly Analytcis_top: "Top";
+            /** @constant */
+            readonly Analytcis_metric: "Metric";
+            /** @constant */
+            readonly Analytcis_by_keywords: "Keywords";
+            /** @constant */
+            readonly Analytcis_by_groups: "Group";
+            /** @constant */
+            readonly Analytcis_by_folders: "Folder";
+            /** @constant */
+            readonly Analytcis_by_locations: "Location";
+            /** @constant */
+            readonly Analytcis_by_competitors: "Competitors";
+            /** @constant */
+            readonly Analytcis_by_top: "Top";
+            /** @constant */
+            readonly Analytics_regions_not_selected: "Locations not selected";
+            /** @constant */
+            readonly Analytcis_by_tag: "By tag";
+            /** @constant */
+            readonly Analytics_narrow: "Minimize";
+            /** @constant */
+            readonly Analytics_widen: "Expand";
+            /** @constant */
+            readonly Analytics_show_widget_other_accounts: "Show the widget to guest users";
+            /** @constant */
+            readonly Shortener_short_link: "Short link";
+            /** @constant */
+            readonly Shortener_short_links: "Short links";
+            /** @constant */
+            readonly Shortener_url_shortener?: "Topvisor URL Shortener: customize, share and track your links!";
+            /** @constant */
+            readonly Shortener_add_url_here: "Paste URL http://... and press Enter";
+            /** @constant */
+            readonly Shortener_search_url: "Search URL...";
+            /** @constant */
+            readonly Shortener_turn_long_to_short: "Shorten URLs and share compact links to webpages. Stats and analytics: visit count by source (social media and websites).";
+            /** @constant */
+            readonly Shortener_turn_long_to_short_1: "Shorten links and share compact URLs. Quick, handy, stats!";
+            /** @constant */
+            readonly Shortener_total_clicks: "Total clicks";
+            /** @constant */
+            readonly Shortener_total_unique_clicks: "Total unique clicks";
+            /** @constant */
+            readonly Shortener_QR_pixels: "Pixels";
+            /** @constant */
+            readonly Shortener_QR_labyrinth: "Labyrinth";
+            /** @constant */
+            readonly Shortener_use_brand: "Use brand";
+            /** @constant */
+            readonly Hide_this_message: "Hide this message";
+            /** @constant */
+            readonly Need_to_top_up_balance: "Top up your balance first";
+            /** @constant */
+            readonly PWD_changed: "Your password was successfully changed!";
+            /** @constant */
+            readonly Change_profile_pic: "Change profile picture";
+            /** @constant */
+            readonly Upload_pic: "Upload";
+            /** @constant */
+            readonly Positions_reverse_dates_0: "Default (display the recent update first)";
+            /** @constant */
+            readonly Positions_reverse_dates_1: "Reverse (display the first update first)";
+            /** @constant */
+            readonly Positions_reverse_dates_label: "Date order";
+            /** @constant */
+            readonly Remember_selected_locations: "Remember selected locations";
+            /** @constant */
+            readonly Additional_top_segment: "Addit. top segment";
+            /** @constant */
+            readonly Sign_out_of_all_accounts: "Sign out of all accounts";
+            /** @constant */
+            readonly Settings_header_apps: "Apps";
+            /** @constant */
+            readonly Settings_header_format: "Format";
+            /** @constant */
+            readonly Settings_header_rank_tracker: "Rank tracker";
+            /** @constant */
+            readonly Login: "Login";
+            /** @constant */
+            readonly Site: "Site";
+            /** @constant */
+            readonly Limit: "Limit";
+            /** @constant */
+            readonly Used: "Used";
+            /** @constant */
+            readonly Project_import: "Project import";
+            /** @constant */
+            readonly Provide_access_details: "Provide access details to the selected tool to transfer your projects";
+            /** @constant */
+            readonly Provide_access_to_service_for_transfer: "Provide access details to the selected tool to transfer your projects";
+            /** @constant */
+            readonly Service_to_transfer_from: "Tool";
+            /** @constant */
+            readonly Service_other_name: "Tool name";
+            /** @constant */
+            readonly Import: "Import";
+            /** @constant */
+            readonly Import_to_Topvisor?: "Import";
+            /** @constant */
+            readonly Projects_to_import: "Projects to import";
+            /** @constant */
+            readonly Project_name: "Project name";
+            /** @constant */
+            readonly Migration: "Migration";
+            /** @constant */
+            readonly Selected_projects: "Selected projects";
+            /** @constant */
+            readonly Active_projects: "Active projects";
+            /** @constant */
+            readonly Migration_request_accepted_notice: "<p>Your migration request has been received and will be processed shortly.<br>Estimated time of project\timport with ranking history is from 1 to 2 hours (weekdays).</p><p>We'll get back to you as soon as migration is completed.</p>";
+            /** @constant */
+            readonly These_limits_already_being_used_by_owner: "These limits are already being used by their owner";
+            /** @constant */
+            readonly Invalid_email_error: "Invalid Email";
+            /** @constant */
+            readonly Email_limit_error: "Maximum number of email addresses added";
+            /** @constant */
+            readonly achievements_form1: "achievements";
+            /** @constant */
+            readonly achievements_form2: "achievement";
+            /** @constant */
+            readonly achievements_form3: "achievements";
+            /** @constant */
+            readonly Decimals: "Decimal point";
+            /** @constant */
+            readonly Other_settings: "Other";
+            /** @constant */
+            readonly Unavailable_key_notice: "After changing the key, access with the old key will be restricted. Do you want to continue?";
+            /** @constant */
+            readonly Linked_accounts: "Linked accounts";
+            /** @constant */
+            readonly Vkontakte: "Vkontakte";
+            /** @constant */
+            readonly Save_changes: "Save changes";
+            /** @constant */
+            readonly Change_name: "Change name";
+            /** @constant */
+            readonly Update_picture: "Upload picture";
+            /** @constant */
+            readonly Edit_picture: "Edit picture";
+            /** @constant */
+            readonly Delete_picture: "Delete picture";
+            /** @constant */
+            readonly Current_email: "Current Email";
+            /** @constant */
+            readonly Your_password: "Your password";
+            /** @constant */
+            readonly Confirm_new_password: "Confirm new password";
+            /** @constant */
+            readonly Other_service: "Other";
+            /** @constant */
+            readonly Min_balance: "Minimum balance";
+            /** @constant */
+            readonly Bio: "Bio";
+            /** @constant */
+            readonly Change_currency_guest_projects_notice: "Please note that you should remove all guest projects from your account to change the currency. The access to the projects can only be shared between accounts with the same currency.";
+            /** @constant */
+            readonly User_info: "User info";
+            /** @constant */
+            readonly Type_journal?: "Topvisor–Journal";
+            /** @constant */
+            readonly Profile_url: "Profile URL";
+            /** @constant */
+            readonly Promo_text: "Promo text";
+            /** @constant */
+            readonly Promo_button: "Promo button";
+            /** @constant */
+            readonly Promo_button_text: "Text on the button";
+            /** @constant */
+            readonly Promo_button_link: "Link on the button";
+            /** @constant */
+            readonly View_the_author_page: "View the author's page";
+        };
+        "I18n.Votes": {
+            /** @constant */
+            readonly Question_is_article_useful: "Have you found what you were looking for?";
+            /** @constant */
+            readonly Message_after_good_vote: "Thanks for the feedback! You can leave a comment below, but it's optional. You may write something nice.";
+            /** @constant */
+            readonly Message_after_bad_vote: "Напишите, что вы искали, — мы поможем вам, а также постараемся добавить это в руководство.";
+            /** @constant */
+            readonly Question_after_good_vote: "What did you like most?";
+            /** @constant */
+            readonly Question_after_bad_vote: "What's been lacking in this guide?";
+            /** @constant */
+            readonly Message_after_comment_good_vote: "We'll keep this up!";
+            /** @constant */
+            readonly Message_after_comment_bad_vote: "We'll improve our service.";
+            /** @constant */
+            readonly Submit: "Leave feedback";
+            /** @constant */
+            readonly SendTicket: "Отправить тикет";
+        };
+        "I18n.Watcher": {
+            /** @constant */
+            readonly Settings: "Watcher settings";
+            /** @constant */
+            readonly menu: {
+                http_codes: "HTTP Code";
+                title: "Title";
+                description: "Description";
+                h1: "H1 Header";
+                content: "Content";
+            };
+            /** @constant */
+            readonly Status_code: "Status";
+            /** @constant */
+            readonly Without_changes: "Without changes";
+            /** @constant */
+            readonly Fulltext: "Full text";
+            /** @constant */
+            readonly Only_with_changed: "With changes";
+            /** @constant */
+            readonly Header_start_short: "Track";
+            /** @constant */
+            readonly Common_settings: "Common settings";
+            /** @constant */
+            readonly Tracking: "Tracking";
+            /** @constant */
+            readonly Cut_script: "Cut &lt;script&gt;";
+            /** @constant */
+            readonly Scan_method: "Scan method";
+            /** @constant */
+            readonly Strip_tags: "Text only / Cut tags";
+            /** @constant */
+            readonly Change_history: "Change history: ";
+            /** @constant */
+            readonly Hints_settings: {
+                watcher_max_redirects: "";
+                watcher_user_agent: "User Agent can affect how the bot sees the site and how DDoS protection works.";
+                audit_page_delay: "";
+                audit_resource_delay: "";
+                audit_use_cookie: "Turn this feature on, if your DDoS protection uses cookies.<br><br>But it may cause more personalized information in checks and they could be distorted.";
+                server_location: "Change server location to access blocked websites.";
+                watcher_ignore_js: "";
+                watcher_types: {
+                    title: "";
+                    description: "";
+                    h1: "";
+                    content: "";
+                };
+                watcher_strip_tags_from_result: "";
+            };
+            /** @constant */
+            readonly Hint_not_urls_text: "Add URLs to launch Watcher.<br>📡 <a href=\"/watcher/\" target=\"_blank\">How Website Watcher can help you →</a>";
+            /** @constant */
+            readonly Hint_not_urls_btn: "URLs";
+            /** @constant */
+            readonly Hint_not_checks_text: "You've never launched Watcher in this project.<br>📡 <a href=\"/watcher/\" target=\"_blank\">How Website Watcher can help you →</a>";
+            /** @constant */
+            readonly Hint_not_checks_btn: "Launch Watcher";
+        };
+        "I18n.Widget": Record<string, never>;
+        "I18n.Audit.Scan": {
+            /** @constant */
+            readonly Settings: "Audit settings";
+            /** @constant */
+            readonly Please_add_urls: "Please, add urls for checking";
+            /** @constant */
+            readonly bar: "bar";
+            /** @constant */
+            readonly menu: {
+                log: "Scan Log";
+                summary: "Summary";
+                pages: "Pages";
+                links: "Links";
+                images: "Images";
+                js: "JavaScript";
+                css: "CSS";
+                "domain/common": "Common";
+                "pages/summary": "Pages";
+                "pages/indexing": "Indexing";
+                "pages/content": "Content";
+                "pages/schema": "Structured Data";
+                "pages/webVitals": "Performance (Core Web Vitals)";
+                "pages/og": "Open Graph";
+                "links/links": "Links";
+                "images/images": "Images";
+                "js/js": "JavaScript";
+                "css/css": "CSS";
+            };
+            /** @constant */
+            readonly checkInfo: {
+                checking: "Checking...";
+                time_start: "Started time";
+                time_finish: "Finished time";
+                "DURATION()": "Duration";
+                count_pages: "Pages in audit";
+                count_all: "Count finished";
+                robot_step: "Current step";
+                robot_step_next: "Next step";
+            };
+            /** @constant */
+            readonly checkInfoHints: {
+                time_start: "";
+                time_finish: "";
+                "DURATION()": "";
+                count_all: "";
+                step: "";
+                step_next: "";
+            };
+            /** @constant */
+            readonly checkSteps: {
+                genTasks: "Gen Tasks";
+                auditSitemap: "Sitemap";
+                auditPages: "Check pages";
+                auditImages: "Check images";
+                auditLinks: "Check links";
+                auditJS: "Check JS";
+                auditCSS: "Check CSS";
+                auditAnalyze: "Analyze";
+                save: "Saving";
+                closeTask: "Finishing";
+            };
+            /** @constant */
+            readonly summaryCharts: {
+                count_pages: "Number of pages";
+                count_problems: "Number of problems";
+                count_3xx: "3XX";
+                count_4xx: "4XX";
+                count_5xx: "5XX";
+            };
+            /** @constant */
+            readonly Already_started: "Audit already started";
+            /** @constant */
+            readonly FilterTime2: "Filter, until the time:";
+            /** @constant */
+            readonly HTTPCodeHundred0: "No response";
+            /** @constant */
+            readonly FieldContent: "Text (content)";
+            /** @constant */
+            readonly FieldTitle: "Text (title)";
+            /** @constant */
+            readonly FieldBroken: "«Broken»";
+            /** @constant */
+            readonly FieldCount: "Pages";
+            /** @constant */
+            readonly FieldHTTPCodes: "Status";
+            /** @constant */
+            readonly FieldTitleDbl: "Duplicates\nTitle";
+            /** @constant */
+            readonly FieldDescriptionDbl: "Duplicates\nDescription";
+            /** @constant */
+            readonly FieldBacklinksInnerCount: "Back Links\ninner";
+            /** @constant */
+            readonly FieldTextLength: "Text length";
+            /** @constant */
+            readonly FieldCompression: "Compress";
+            /** @constant */
+            readonly FieldCacheType: "Cache type";
+            /** @constant */
+            readonly FieldCacheTime: "Cache time";
+            /** @constant */
+            readonly FieldCacheValidator: "Cache validator";
+            /** @constant */
+            readonly FieldRobotsTXTBlocked: "Disallow\nrobots.txt";
+            /** @constant */
+            readonly FieldCheckRobotsTXTAllowed: "Allow\nrobots.txt";
+            /** @constant */
+            readonly FieldSitemapXMLMention: "Exists\nsitemap.xml";
+            /** @constant */
+            readonly FieldLinksCount: "Links";
+            /** @constant */
+            readonly FieldTLSVersion: "TLS version";
+            /** @constant */
+            readonly FieldCacheable: "Cacheable";
+            /** @constant */
+            readonly FieldAlt: "Alt";
+            /** @constant */
+            readonly FieldSize: "Size";
+            /** @constant */
+            readonly FieldExtension: "Extension";
+            /** @constant */
+            readonly FieldContentType: "Content-Type";
+            /** @constant */
+            readonly FieldModernFormat: "Modern Format";
+            /** @constant */
+            readonly FieldMinified: "Minified";
+            /** @constant */
+            readonly FieldRenderBlocking: "Render blocking";
+            /** @constant */
+            readonly FieldType: "Type";
+            /** @constant */
+            readonly FieldLoadingTime: "Loading time";
+            /** @constant */
+            readonly FilterSignalNone: "All checks";
+            /** @constant */
+            readonly FilterSignalWarnings: "With warnings";
+            /** @constant */
+            readonly FilterSignalErrors: "With erors";
+            /** @constant */
+            readonly FilterSignalSignals: "All problems";
+            /** @constant */
+            readonly DialogPagesWithTitleDbl: "Pages with duplicates Title";
+            /** @constant */
+            readonly DialogPagesWithDescriptionDbl: "Pages with duplicates Desccription";
+            /** @constant */
+            readonly DialogPagesWithLink: "Pages with link";
+            /** @constant */
+            readonly DialogPagesWithImage: "Pages with image";
+            /** @constant */
+            readonly DialogPagesWithJS: "Pages with JavaScript";
+            /** @constant */
+            readonly DialogPagesWithCSS: "Pages with CSS";
+            /** @constant */
+            readonly DialogSummaryPage: "Summary Page";
+            /** @constant */
+            readonly DialogResources_links: "Links on page";
+            /** @constant */
+            readonly DialogResources_images: "Images on page";
+            /** @constant */
+            readonly DialogResources_css: "CSS on page";
+            /** @constant */
+            readonly DialogResources_js: "JS on page";
+            /** @constant */
+            readonly Category: "Category";
+            /** @constant */
+            readonly WhatIsIt: "What is it?";
+            /** @constant */
+            readonly HowToResolveIt: "How to resolve it?";
+            /** @constant */
+            readonly Warnings: "Warnings";
+            /** @constant */
+            readonly Errors: "Errors";
+            /** @constant */
+            readonly Problems: "All problems";
+            /** @constant */
+            readonly Hint_not_urls_text: "Add URLs manually or enable website crawling to perform Website Audit.<br>🤖 <a href=\"/website-auditor/\" target=\"_blank\">What Website Audit shows →</a>";
+            /** @constant */
+            readonly Hint_not_urls_btn: "Add URLs";
+            /** @constant */
+            readonly Hint_not_checks_text: "You've never launched Website Audit in this project.<br>🤖 <a href=\"/website-auditor/\" target=\"_blank\">What Website Audit shows →</a>";
+            /** @constant */
+            readonly Hint_not_checks_btn: "Launch Website Audit";
+            /** @constant */
+            readonly Hint_not_PageSpeed_Insights_API_key_1: "You didn't specify PageSpeed Insights API&#8209;key when launching Website Audit. Add API-key";
+            /** @constant */
+            readonly Hint_not_PageSpeed_Insights_API_key_2: "in Audit Settings";
+            /** @constant */
+            readonly Hint_not_PageSpeed_Insights_API_key_3: "and launch Audit once more.";
+        };
+        "I18n.Bank.Subscription": {
+            /** @constant */
+            readonly Texts_by_limit_name: {
+                positions_check: {
+                    name: "Rank checks";
+                    description: "Example description";
+                };
+                positions_check_manual: {
+                    name: "Manual rechecks";
+                    description: "";
+                };
+                keywords_volumes: {
+                    name: "Search volume";
+                    description: "";
+                };
+                keywords_collect: {
+                    name: "Keyword research";
+                    description: "";
+                };
+                keywords_collect_hint: {
+                    name: "Search suggestions";
+                    description: "";
+                };
+                projects: {
+                    name: "Projects";
+                    description: "";
+                };
+                projects_rights: {
+                    name: "Guest Users";
+                    description: "";
+                };
+                positions_tasks: {
+                    name: "Rank total tasks";
+                    description: "";
+                };
+                projects_competitors: {
+                    name: "Competitors";
+                    description: "";
+                };
+                projects_archive: {
+                    name: "Archived projects";
+                    description: "";
+                };
+                api: {
+                    name: "API";
+                    description: "";
+                };
+            };
+        };
+        "I18n.Landings.Championship": {
+            /** @constant */
+            readonly Best_cases: "Best cases";
+            /** @constant */
+            readonly Main_competition: "Main competition 🏆";
+            /** @constant */
+            readonly Special_nominations: "Special nominations 🏆";
+            /** @constant */
+            readonly Nomination: "Nomination";
+            /** @constant */
+            readonly Place: "Place";
+            /** @constant */
+            readonly Case_and_author: "Case and author";
+            /** @constant */
+            readonly place: "place";
+        };
+        "I18n.Landings.Jobs": {
+            /** @constant */
+            readonly Link_to_resume_or_comment: "Link to your resume or a comment";
+            /** @constant */
+            readonly Submit_button_text: "I want to join!";
+            /** @constant */
+            readonly Accept_user_agreement_text_befor_link: "By submitting an application , I give my consent to the processing of private data in accordance with";
+            /** @constant */
+            readonly Accept_user_agreement_link_text: "Privacy Policy";
+        };
+        "I18n.Landings.Price": {
+            /** @constant */
+            readonly Depth: "depth";
+            /** @constant */
+            readonly of_results: "results";
+            /** @constant */
+            readonly of_keywords: "keywords";
+            /** @constant */
+            readonly of_pages: "URLs";
+            /** @constant */
+            readonly up_to: "up to";
+            /** @constant */
+            readonly from: "from";
+            /** @constant */
+            readonly Without_discount: "No discount";
+            /** @constant */
+            readonly What_is_a_tariff: "What is a pricing plan (tariff)?";
+            /** @constant */
+            readonly Rank_tracker_and_collecting_TOP: "Rank Tracking and SERP Top";
+            /** @constant */
+            readonly Semantics: "Semantics";
+            /** @constant */
+            readonly Technical_Seo: "Technical SEO";
+            /** @constant */
+            readonly Yandex_direct: "Yandex Direct";
+            /** @constant */
+            readonly Account: "Account";
+            /** @constant */
+            readonly No_discount_on_tools?: "No discount on Topvisor tools";
+            /** @constant */
+            readonly On_all_tools?: "on Topvisor tools";
+        };
+        "I18n.Landings.Promocode": {
+            /** @constant */
+            readonly Title?: "Enter promocode to get bonus - Topvisor";
+            /** @constant */
+            readonly Description: "Here you can enter a promocode and get a bonus. You can get a promocode via mailing, social networks or in person on conferences where we take part.";
+            /** @constant */
+            readonly OpenGraph_title: "Enter promocode";
+            /** @constant */
+            readonly OpenGraph_description?: "And get bonus on Topvisor";
+            /** @constant */
+            readonly Enter_promocode: "Enter promocode";
+            /** @constant */
+            readonly Promocode: "Promocode";
+        };
+        "I18n.Pages.Help": {
+            /** @constant */
+            readonly Intro?: "Detailed guides on setting up all Topvisor tools. Tips and advice that will make your workflow efficient to the max.";
+            /** @constant */
+            readonly Contact_title: "Got any questions? Contact us";
+            /** @constant */
+            readonly Contact_text: "If you didn't find what you looked for in the Help Center, contact Support Team via Ticket System {{ telegramBotText }}\nor email <a href='mailto:{{ supportEmail }}' target='_blank'>{{ supportEmail }}</a>. We'll show how to find and set up the tool you need and answer all other questions.";
+            /** @constant */
+            readonly Contact: "Contact us";
+        };
+        "I18n.Pages": {
+            /** @constant */
+            readonly Checking_positions: "Rank Checking and Rank Tracking";
+            /** @constant */
+            readonly Collecting_top_sites: "SERP Top Checker";
+            /** @constant */
+            readonly Technical_analysis: "SEO Website Audit";
+            /** @constant */
+            readonly Tracking_changes: "Changer Tracker and Meta Tag Exractor";
+            /** @constant */
+            readonly Semantic_core_research: "Semantic Core Research";
+            /** @constant */
+            readonly Volume_checker: "Volume Checker";
+            /** @constant */
+            readonly Index_checker: "Index Checker";
+            /** @constant */
+            readonly Sitemap_generator: "Sitemap generator";
+            /** @constant */
+            readonly Bid_manager: "Bid Manager";
+            /** @constant */
+            readonly Updates_scanner: "Updates Scanner";
+            /** @constant */
+            readonly Shortener_url: "URL Shortener";
+            /** @constant */
+            readonly Clustering_top: "Clustering by SERP Top";
+        };
+        "I18n.Projects.CheckButton": {
+            /** @constant */
+            readonly Check_positions: "Check Rankings";
+            /** @constant */
+            readonly Check_audit: "Run Audit";
+            /** @constant */
+            readonly Check_watcher: "Track changes";
+            /** @constant */
+            readonly Check_indexing: "Check indexing";
+            /** @constant */
+            readonly Check_sitemap: "Generate sitemap";
+            /** @constant */
+            readonly Last_check: "Last check";
+            /** @constant */
+            readonly In_queue: "In queue";
+            /** @constant */
+            readonly In_work: "In progress";
+        };
+        "I18n.Projects.Settings": {
+            /** @constant */
+            readonly Change_project_owner_description: "Change of project owner is a procedure that results in the change of the Project Owner in the service. Write-offs of funds for services provided by the service as a result of one actions or another will be made on behalf of the new owner. All operations with the project, including restoration of access to it if necessary, will be possible only on behalf of the new person.";
+            /** @constant */
+            readonly Transfer_control_over_project: "To transfer control over a project, enter the user's email in the form below and click";
+        };
+        "I18n.Audit.Scan.Checks": {
+            /** @constant */
+            readonly domain_check_rkn_no_ban: {
+                title: "Website wasn't found in Roskomnadzor's register of banned websites";
+                title_negative: "Website was found in Roskomnadzor's register of banned websites";
+                description: "Roskomnadzor blocks websites containing information banned in the Russian Federation.";
+                resolve: "Contact Roskomnadzor to explain the reasons for the ban. Remove or edit the content that caused the ban,\n\t\tand then contact Roskomnadzor so that they remove the website from the registry. You can also create a mirror site while the ban is on and redirect to it.\n\t\t<a href=\"https://rkn.gov.ru/treatments/p459/p750/\" target=\"_blank\">Contact Roskomnadzor →</a>";
+            };
+            /** @constant */
+            readonly domain_check_webmaster_no_errors: {
+                title: "No fatal problems in Yandex.Webmaster";
+                title_negative: "Fatal problems in Yandex.Webmaster";
+                description: "Fatal — a category of problems when the website is diagnosed by Yandex.Webmaster. Because of them the website or its URLs can be excluded from Yandex search results.";
+                resolve: "Check the website for fatal problems: the main page returns an error; failed to connect to the server due to DNS error;\n\t\tthe website is closed for indexing in robots.txt; violations or security problems have been detected. Fix the errors according to Yandex's instructions and wait for Webmaster to recheck the website.";
+            };
+            /** @constant */
+            readonly domain_check_robots_txt_exists: {
+                title: "robots.txt found";
+                title_negative: "robots.txt not found";
+                description: "robots.txt tells search engine crawlers which pages they can access. If there are errors in robots.txt, crawlers will never know\n\t\twhich URLs to handle, and the website may be removed from index.";
+                resolve: "Check the location of the robot.txt — it should live at the root of the website (e.g., https://www.example.com/robots.txt). Check the file's HTTP status code. You need code 200 — it means the file is available. We also highly recommend to read\n\t\t<a href=\"https://yandex.ru/support/webmaster/controlling-robot/robots-txt.html?lang=en\" target=\"_blank\">Yandex</a> and <a href=\"https://developers.google.com/search/docs/crawling-indexing/robots/intro\" target=\"_blank\">Google</a> official guides on robots.txt.";
+            };
+            /** @constant */
+            readonly domain_check_sitemap_xml_exists: {
+                title: "sitemap.xml found";
+                title_negative: "sitemap.xml not found";
+                description: "Sitemap.xml is a file with links to website's pages and resources. It tells search engines website's live structure and the relationships between URLs. If a search engine doesn't find the file, it may skip pages while indexing.";
+                resolve: "Check the link to sitemap.xml — it should live in robots.txt. The file may not be available for indexing;\n\t\tсheck the file's HTTP status code. You need code 200 — it means the file is available. We also recommend reading\n\t\t<a href=\"https://yandex.ru/support/webmaster/controlling-robot/sitemap.html\" target=\"_blank\">Yandex</a> and <a href=\"https://developers.google.com/search/docs/crawling-indexing/sitemaps/overview\" target=\"_blank\">Google</a> official sitemap.xml guides.";
+            };
+            /** @constant */
+            readonly domain_check_www_redirect_exists: {
+                title: "www redirect found";
+                title_negative: "No www redirect";
+                description: "Search engines consider URLs with and without www as different pages. We check redirects this way: we send requests to http://www.example.com/ and http://example.com/. If the final protocol (or redirecting URL) is the same, there will be no warning.\n\t\tRegardless of which domain is the main one — with www or viсe versa — set up the redirect, otherwise it may lead to negative impact on rankings and cause duplicate content issues.";
+                resolve: "Set up redirect to the version that should be the main one.";
+            };
+            /** @constant */
+            readonly domain_check_ssl_redirect_exists: {
+                title: "HTTP/HTTPS redirect found";
+                title_negative: "No HTTP/HTTPS redirect";
+                description: "Search engines consider URLs with HTTP and HTTPS as different pages. We check redirects this way: we send requests to http://example.com/ and https://example.com/. If the final protocol (or redirecting URL) is the same, there will be no warning.\n\t\tAlso HTTPS protocol supports secure encryption. Google <a href=\"https://developers.google.com/search/blog/2014/08/https-as-ranking-signal\" target=\"_blank\">considers HTTPS a ranking factor</a>, so it's strictly recommended to do use HTTPS.";
+                resolve: "Set up redirect from HTTP to HTTPS.";
+            };
+            /** @constant */
+            readonly domain_check_tls_exists: {
+                title: "SSL/TLS certificates are up to date";
+                title_negative: "SSL/TLS certificates are outdated";
+                description: "TLS and SSL certificates provide secure data transfer, so users on the website won't be notified the connection is insecure.\n\t\tSSLv2, SSLv3, TLS 1.0, TLS 1.1 certificates are outdated and insecure.";
+                resolve: "Check the certificate's current version (it should be TLS 1.3). Add the certificate version update to the server's configuration file.\n\t\tThis may require updating the server and OpenSSL library.";
+            };
+            /** @constant */
+            readonly pages_check_http_code_200: {
+                title: "Successful status code (200)";
+                title_negative: "Invalid status code";
+                description: "When you follow a link, server sends HTTP code to the browser indicating whether a request has been completed. Code 200 indicates the request has been successfully completed and a user opened website without problems.\n\t\tIf a browser gets any other status code, users will be redirected or the page won't open.";
+                resolve: "Check if the URL you entered is correct.";
+            };
+            /** @constant */
+            readonly pages_check_redirects_not_exists: {
+                title: "No redirect";
+                title_negative: "Redirect (3ХХ status code)";
+                description: "Each redirect is an additional browser HTTP request. It increases pages' loadtime and negatively affects rankings. Search engines would rather\n\t\trank higher acceptor URL (the one the redirect points to) than donor URL (the one with redirect). A redirect itself is not an error and they are often set up deliberately.\n\t\tHowever, as a rule you don't need to analyze pages with redirects — analyze actual pages, i.e. the ones redirects point to.";
+                resolve: "Replace the link with the URL the redirect points to.";
+            };
+            /** @constant */
+            readonly pages_check_redirects_many_not_exists: {
+                title: "No redirect chains";
+                title_negative: "Redirect chain";
+                description: "Redirect chain occurs when there's more than 3 URLs in redirection series. Many redirects would take a long time to load, and users may not wait for a destination acceptor URL to open.";
+                resolve: "Replace the link with the last URL in the redirect chain.";
+            };
+            /** @constant */
+            readonly pages_check_url_length: {
+                title: "URLs not too long";
+                title_negative: "URL too long";
+                description: "Short URL with understandable words is easier to remember, to copy, it has higher click-through rate (CTR) and, therefore, higher rankings. We consider URL too long if it has more than 80 characters.";
+                resolve: "Make human-readable short SEO friendly URLs: use understandable words which correlate with page's content and are easily remembered.";
+            };
+            /** @constant */
+            readonly pages_check_cacheable: {
+                title: "Browser caching";
+                title_negative: "No browser caching";
+                description: "When browser loads a page for the first time, it saves it in the cache, so that it can open it faster next time. If there is no browser caching, a page would be loaded again from scratch each time, which can negatively affect user experience.\n\t\tTo identify whether there is browser caching or not, we use a complex check that takes into account all cache-related headers. \n\t\tThere are three main reasons why the check can fail: no-store directive in Cache-Control header, past time in Expires header or server doesn't respond with 304 status code.";
+                resolve: "Check HTTP headers that form caching on the server.";
+            };
+            /** @constant */
+            readonly pages_check_http_resources_count: {
+                title: "No mixed content (https to http)";
+                title_negative: "Mixed content (https to http)";
+                description: "Mixed content occurs when a URL is loaded by secure HTTPS protocol, but some its links or resources (images, scripts, etc.) — by insecure HTTP. Search engines can process HTTP-resources differently, and browsers may block such resources or display warning the connection is insecure.";
+                resolve: "Make sure all resources on the page are loaded by secure HTTPS protocol. Perhaps, you're using external libraries that load by HTTP.";
+            };
+            /** @constant */
+            readonly pages_check_robots_txt_allowed: {
+                title: "Allowed by robots.txt";
+                title_negative: "Blocked by robots.txt";
+                description: "robots.txt tells search engines which URLs they can access and index while crawling the website.\n\t\tIf URL is blocked by robots.txt, it most likely won't rank but it still can index in SERP if there are any links to it from another pages.\n\t\tIf you don't want pages to index it's better to use noindex directive instead of blocking them by robots.txt. ";
+                resolve: "Check disallows in robots.txt; they block search engines from accessing the page.";
+            };
+            /** @constant */
+            readonly pages_check_sitemap_xml_exists: {
+                title: "URLs are in sitemap.xml";
+                title_negative: "URL not found in sitemap.xml";
+                description: "sitemap.xml contains website's URLs and tells search engines its current structure. If there's no link to a URL in sitemap.xml, search engines might skip and don't index it.\n\t\tIt may not be an error if pages are irrelevant, for example if they have 3XX status code. Such pages shouldn't be in sitemap.xml and analyzed. You can delete them in Tool Settings.";
+                resolve: "Check if there's the URL you need in sitemap.xml and add it.";
+            };
+            /** @constant */
+            readonly pages_check_sitemap_xml_exists_with_canonical: {
+                title: "URLs in sitemap.xml are canonical";
+                title_negative: "Non-canonical URL in sitemap.xml";
+                description: "Search engines group URLs with the same canonical together and show in SERP most relevant one.\n\t\tIf there's no canonical or it's the same as the page address, the URL will be considered canonical.\n\t\tThe check fails if the URL is in sitemap.xml and has another URL in link rel=\"canonical\".";
+                resolve: "Only canonical pages should be in sitemap.xml. If URL is a duplicate, remove it from sitemap.xml.";
+            };
+            /** @constant */
+            readonly pages_check_sitemap_included_none_blocked: {
+                title: "No blocked URLs in sitemap.xml";
+                title_negative: "Blocked URL in sitemap.xml";
+                description: "sitemap.xml and robots.txt should be reconciled: pages blocked in robots.txt must be removed from sitemap.xml or unblocked.";
+                resolve: "Check if URL is blocked in robots.txt. If necessary, remove the URL from sitemap.xml or unblock it.";
+            };
+            /** @constant */
+            readonly pages_check_noindex_off: {
+                title: "Not blocked by meta tag robots noindex/none or X-Robots-Tag: noindex/none";
+                title_negative: "Blocked by meta tag robots noindex/none or X-Robots-Tag: noindex/none";
+                description: "Some pages such as sorting, filters, pagination should be blocked from indexing, as well as service pages, duplicates and pages under construction.\n\t\tYou can do this by using noindex/none meta tags and X-Robots-Tag: noindex/none headers.\n\t\tIf the page is blocked from indexing, it doesn't need a detailed analysis so you can delete it from future checks in Tool Setting.";
+                resolve: "Check meta tags and page headers; if pages need to be ranked, replace them with index/all. Also check official guides on\n\t\thow to block indexing from <a href=\"https://yandex.ru/support/webmaster/controlling-robot/meta-robots.html?lang=en#meta-robots\" target=\"_blank\">Yandex</a> and <a href=\"https://developers.google.com/search/docs/crawling-indexing/block-indexing\" target=\"_blank\">Google</a>.";
+            };
+            /** @constant */
+            readonly pages_check_nofollow_off: {
+                title: "Links are not blocked by meta tag robots nofollow or X-Robots-Tag: nofollow";
+                title_negative: "Links are blocked by meta tag robots nofollow or X-Robots-Tag: nofollow";
+                description: "nofollow blocks links on pages for search engine crawlers. They don't follow such links and acceptor website don't get link weight.\n\t\tEven if a crawler does follow a link, nofollow will show the acceptor website isn't thrustworthy.\n\t\tSearch engines can find these links on other pages and websites, but nofollow will negatively affect its rankings.";
+                resolve: "Check meta tags and page headers; if you want crawlers to index the links, remove nofollow. Also check official guides on\n\t\thow to block link indexing from <a href=\"https://yandex.ru/support/webmaster/adding-site/indexing-prohibition.html#indexing-prohibition__link\" target=\"_blank\">Yandex</a> and <a href=\"https://developers.google.com/search/docs/crawling-indexing/qualify-outbound-links\" target=\"_blank\">Google</a>.";
+            };
+            /** @constant */
+            readonly pages_check_canonical_exists: {
+                title: "URLs have canonical";
+                title_negative: "No canonical";
+                description: "Search engines may consider pages with the same content without canonical URL as duplicates and penalize them. If there are canonicals, search engine will group pages together and rank most relevant one.\n\t\tWe consider that a page has canonical if it has no canonical (it's canonical to oiself) or there's a URL in link rel=\"canonical\". Check fails if there're duplicates (URLs with tha same Title or Description) which canonicals are absent or different. In that case search engine can incorrectly define which URL it should rank.";
+                resolve: "Add rel=\"canonical\" to necessary URLs and specify canonical URL. Also check official guides on\n\t\tcanonicals from <a href=\"https://yandex.ru/support/webmaster/robot-workings/canonical.html\" target=\"_blank\">Yandex</a> and <a href=\"https://developers.google.com/search/docs/crawling-indexing/consolidate-duplicate-urls\" target=\"_blank\">Google</a>.";
+            };
+            /** @constant */
+            readonly pages_check_alternate: {
+                title: "Valid alternates";
+                title_negative: "Invalid alternate";
+                description: "alternate tag helps search engines to identify the same pages in different languages for different locations.\n\t\tWe consider alternate valid if it has href attribute and one of attributes hreflang, type or media.";
+                resolve: "Fix invalid alternate by specifying href attribute and one of attributes hreflang, type or media. Also check official guides on\n\t\tworking with localized versions of the page from <a href=\"https://yandex.ru/support/webmaster/yandex-indexing/locale-pages.html\" target=\"_blank\">Yandex</a> and <a href=\"https://developers.google.com/search/docs/specialty/international/localized-versions\" target=\"_blank\">Google</a>.";
+            };
+            /** @constant */
+            readonly pages_check_links_exists: {
+                title: "URLs have outbound links";
+                title_negative: "No outbound links";
+                description: "Outbound links help search engines find other pages on the website. If there's no links on the page, it's a dead end: crawlers and users will have no choice but to leave the website.";
+                resolve: "Add links to other website pages such as header, footer, breadcrumbs or recommended pages.";
+            };
+            /** @constant */
+            readonly pages_check_refresh_not_exists: {
+                title: "No meta refresh redirect";
+                title_negative: "Meta refresh redirect";
+                description: "Meta refresh redirect tag means the user will be redirected to another page after some time.\n\t\tW3C doesn't recommend to use refresh redirect as you can't know how much time a user would need to read the text on the page. Also some browsers don't support refresh tag.";
+                resolve: "Replace the refresh redirect tag with 301 redirect.";
+            };
+            /** @constant */
+            readonly pages_check_title_exists: {
+                title: "Title found";
+                title_negative: "Title not found";
+                description: "Title tag is displayed as a title in search results. It also appears in the browser tab and elsewhere. It contains key information about the page content;\n\t\tsearch engines determine its relevance by the title.";
+                resolve: "Check if there is a title tag in the page source code and fill it in — if there's a tag but it's empty, the check will be failed. Avoid generalities and unnecessary non-informative words.";
+            };
+            /** @constant */
+            readonly pages_check_title_is_unique: {
+                title: "No Title duplicates";
+                title_negative: "Title duplicates";
+                description: "If Title is duplicated, it will be more difficult for search engines to determine which page is the the most relevant one. It may consider one of the pages a duplicate and drop it from SERP.";
+                resolve: "Check which URLs have duplicating Titles and rewrite them to make each Title unique. To see such URLs, click on the number in the column <b>URL</b>, and then on the number in the column <b>Duplicates / Title</b>.";
+            };
+            /** @constant */
+            readonly pages_check_title_length_max: {
+                title: "Title not too long";
+                title_negative: "Title too long ";
+                description: "We consider title tag long if it has more than 80 characters. Search engines would cut off such long Titles in SERP. Cropped Title negatively affects CTR.";
+                resolve: "See which URLs have long Title and rewrite it so that it can stay within 80 characters.";
+            };
+            /** @constant */
+            readonly pages_check_description_exists: {
+                title: "Description found";
+                title_negative: "Description not found";
+                description: "Search engines use Description metatag to describe a page in the search results. Description may end up in the snippet, but search engine can grab something from page content,\n\t\tif it considers description to convey the content poorly. Description affects URLs' CTR in SERP.";
+                resolve: "Check if there is a description tag in the page source code and fill it in — if there's a tag but it's empty, the check will be failed. Focus on text relevance and avoid keyword stuffing (spamming).";
+            };
+            /** @constant */
+            readonly pages_check_description_is_unique: {
+                title: "No Description duplicates";
+                title_negative: "Description duplicates";
+                description: "If the text in Description tag isn't unique, search engines won't grab it for a snippet in search results. It may affect page relevance and its rankings.\n\t\tTo see URLs with description duplicates click on the number in the column <b>URL</b>, and then on the number in the column <b>Duplicates / Description</b>.";
+                resolve: "Check which URLs have duplicating Descriptions and rewrite them to make each description unique.";
+            };
+            /** @constant */
+            readonly pages_check_description_length_min: {
+                title: "Description not too short";
+                title_negative: "Short Description";
+                description: "Description should stay within 150-250 characters. If a description is shorter, search engines may consider it uninformative and replace with something from the page content.";
+                resolve: "See URLs with short Descriptions and rewrite them so that all Descriptions have at least 150 characters.";
+            };
+            /** @constant */
+            readonly pages_check_description_length_max: {
+                title: "Description not too long";
+                title_negative: "Long Description";
+                description: "Description should stay within 150-250 characters. Description which doesn't exceed 250 characters won't be cut in search results. Cropped Description negatively affects user experience.";
+                resolve: "See URLs with long Descriptions and rewrite them so that they meet the 250 characters limit.";
+            };
+            /** @constant */
+            readonly pages_check_h1_exists: {
+                title: "H1 found";
+                title_negative: "H1 not found";
+                description: "H1–H6 headings are used to represent page structure. H1 is the main heading indicating the topic of all page content; it helps search engines to determine page relevance.";
+                resolve: "Check if there is a H1 heading in the page source code and fill it in — if there's a heading but it's empty, the check will be failed. Look up to text relevance, don't use Title as H1.";
+            };
+            /** @constant */
+            readonly pages_check_html_lang_exists: {
+                title: "lang found";
+                title_negative: "lang not found";
+                description: "lang attribute contains page language. lang helps browsers correctly display characters which differ in different languages (i. o. quotes).";
+                resolve: "Check if there is lang attribute in the page source code and fill it in. If there's text on different languages on a page, you can indicate lang for each language.";
+            };
+            /** @constant */
+            readonly pages_check_schema_exists?: {
+                title: "Structured data found";
+                title_negative: "Structured data not found";
+                description: "Structured data (or semantic markup) helps to boost a page's relevance by target keywords, make more clickable snippets and adapt content for different devices.\n\t\tTopvisor checks for RDFa, JSON-LD and Microdata markups.";
+                resolve: "Check pages' source code, add schema markup the format that fits your website, and then its properties (e.g. address and contacts).";
+            };
+            /** @constant */
+            readonly pages_check_fcp_max: {
+                title: "Good FCP (First Contentful Paint)";
+                title_negative: "Poor FCP (First Contentful Paint)";
+                description: "FCP (First Contentful Paint) is the time from when a user starts loading the page to when any part of the page's content appears on the screen.\n\t\tFCP should be <1600 ms for desktop and <3000 ms for mobile devices.\n\t\tWe check for the metric only if you've added PageSpeed Insights API-key in Tool Settings. If there's no key, there won't be any data on Core Web Vitals.";
+                resolve: "To improve FCP, work on page loadtime: check TTFB, don't use lazy loading for recources above the fold, avoid redirects. <a href=\"https://web.dev/articles/fcp?hl=en\" target=\"_blank\">More on FCP in developers' guidelines →</a>";
+            };
+            /** @constant */
+            readonly pages_check_si_max: {
+                title: "Good SI (Speed Index)";
+                title_negative: "Poor SI (Speed Index)";
+                description: "SI (Speed Index) is the time a page need for content to be visually displayed.\n\t\tSI should be <2300 ms for desktop and <5800 ms for mobile devices.\n\t\tWe check for the metric only if you've added PageSpeed Insights API-key in Tool Settings. If there's no key, there won't be any data on Core Web Vitals.";
+                resolve: "Make content appear faster: minify JS и CSS files, optimize images, defer loading of rarely used scripts.";
+            };
+            /** @constant */
+            readonly pages_check_lcp_max: {
+                title: "Good LCP (Largest Contentful Paint)";
+                title_negative: "Poor LCP (Largest Contentful Paint)";
+                description: "LCP (Largest Contentful Paint) is the render time of the largest image or text block visible within the viewport.\n\t\tLCP should be <2,5 s after loading starts.\n\t\tWe check for the metric only if you've added PageSpeed Insights API-key in Tool Settings. If there's no key, there won't be any data on Core Web Vitals.";
+                resolve: "Compress heavy content (i.g., images) or add lazy loading in URLs HTML code. If that doesn't work, pay attention to TTFB and check if JavaScript and CSS rendering is blocked. <a href=\"https://web.dev/articles/lcp?hl=en\" target=\"_blank\">More on LCP in developers' guidelines →</a>";
+            };
+            /** @constant */
+            readonly pages_check_tbt_max: {
+                title: "Good TBT (Total Blocking Time)";
+                title_negative: "Poor TBT (Total Blocking Time)";
+                description: "TBT (Total Blocking Time) is the time a page can't respond to user input (mouse clicking, screen tapping or keyboard pressing). \n\t\tTBT should be <350 ms for desktop and <600 ms for mobile devices.\n\t\tWe check for the metric only if you've added PageSpeed Insights API-key in Tool Settings. If there's no key, there won't be any data on Core Web Vitals.";
+                resolve: "Defer execution of unnecessary JavaScript code, minify JS-files. <a href=\"https://web.dev/articles/tbt?hl=en\" target=\"_blank\">More on TBT in developers' guidelines →</a>";
+            };
+            /** @constant */
+            readonly pages_check_cls_max: {
+                title: "Good CLS (Cumulative Layout Shift)";
+                title_negative: "Poor CLS (Cumulative Layout Shift)";
+                description: "CLS (Cumulative Layout Shift) is the largest burst of the unexpected layout shift.\n\t\tCLS should be <0,1% of shifting.\n\t\tWe check for the metric only if you've added PageSpeed Insights API-key in Tool Settings. If there's no key, there won't be any data on Core Web Vitals.";
+                resolve: "Check if the page is correctly adapted for different devices and animation settings. Add size attributes for images and videos if necessary. <a href=\"https://web.dev/articles/cls?hl=en\" target=\"_blank\">More on CLS in developers' guidelines →</a>";
+            };
+            /** @constant */
+            readonly pages_check_fid_max: {
+                title: "Good FID (First Input Delay)";
+                title_negative: "Poor FID (First Input Delay)";
+                description: "FID (First Input Delay) is the time a server responds after the first user interaction (i.g., pressing a button or following a link).\n\t\tFID should be <100 ms.\n\t\tWe check for the metric only if you've added PageSpeed Insights API-key in Tool Settings. If there's no key, there won't be any data on Core Web Vitals.";
+                resolve: "Check JavaScript execution time and try to reduce it. Break code snippets running >50 ms into smaller tasks. Postpone unused JavaScript by using async or defer tags. <a href=\"https://web.dev/articles/fid?hl=en\" target=\"_blank\">More on FID in developers' guidelines →</a>";
+            };
+            /** @constant */
+            readonly pages_check_inp_max: {
+                title: "Good INP (Interaction to Next Paint)";
+                title_negative: "Poor INP (Interaction to Next Paint)";
+                description: "INP (Interaction to Next Paint) is a metric that assesses page responsiveness on user actions (clicks, taps, keyboard interactions). Good INP means that the page quickly responses on such actions as opening sidemenu or adding an item to a cart. INP should be <200 ms.\n\t\tWe check for the metric only if you've added PageSpeed Insights API-key in Tool Settings. If there's no key, there won't be any data on Core Web Vitals.";
+                resolve: "Check JavaScript execution time and try to reduce it. Check if styles are more complicated than necessary. <a href=\"https://web.dev/articles/inp?hl=en\" target=\"_blank\">More on INP in developers' guidelines →</a>";
+            };
+            /** @constant */
+            readonly pages_check_ttfb_max: {
+                title: "Good TTFB (Time to First Byte)";
+                title_negative: "Poor TTFB (Time to First Byte)";
+                description: "TTFB (Time To First Byte) is the time from when a browser sends a request to when the first byte of a response from the server arrives. TTFB should be <500 ms.\n\t\tLong server response time negatively affects page rankings and user experience.";
+                resolve: "TTFB depends on many factors such as website caching, database optimization and server performance. To improve TTFB check technical performance of the website.";
+            };
+            /** @constant */
+            readonly pages_check_compression_exists?: {
+                title: "Compression found (Content-Encoding)";
+                title_negative: "Compression not found (Content-Encoding)";
+                description: "When you compress a page and its content it reduces its weight — and therefore the loadtime. The longer a page loads, the more negatively it affects rankings and user experience.\n\t\tTopvisor checks compression by Content-Encoding header — it contains a list of page's encodings and their loading order.";
+                resolve: "Check if there's a Content-Encoding header in pages' response headers.";
+            };
+            /** @constant */
+            readonly pages_check_og_title_exists: {
+                title: "og:title found";
+                title_negative: "og:title not found";
+                description: "Open Graph is a meta tag markup that allows to create an attractive preview of a page when publishing a link on social media.\n\t\tMeta tag og:title stands for a header and Title tag.";
+                resolve: "Check the page HTML-code and add og:title meta tag. Don't make og:title too long — headers on socials are much shorter than in search. <a href=\"https://yandex.ru/support/webmaster/open-graph/?lang=en\" target=\"_blank\">More on Open Graph in the official Yandex guide →</a>";
+            };
+            /** @constant */
+            readonly pages_check_og_description_exists: {
+                title: "og:description found";
+                title_negative: "og:description not found";
+                description: "Open Graph is a meta tag markup that allows to create an attractive preview of a page when publishing a link on social media.\n\t\tMeta tag og:description contains a brief description of the page content and stands for Description tag.";
+                resolve: "Check the page HTML-code and add og:description. Don't make og:description too long — headers on socials are much shorter than in search. <a href=\"https://yandex.ru/support/webmaster/open-graph/?lang=en\" target=\"_blank\">More on Open Graph in the official Yandex guide →</a>";
+            };
+            /** @constant */
+            readonly pages_check_og_image_exists: {
+                title: "og:image found";
+                title_negative: "og:image not found";
+                description: "Open Graph is a meta tag markup that allows to create an attractive preview of a page when publishing a link on social media.\n\t\tog:image meta tag contains the image that will be displayed in the page preview.";
+                resolve: "Check the page HTML-code and add og:image. Specify the image URL in the meta tag. Image size should be >1200x630 px and weigh <5 Mb — such image will look good in most social networks. <a href=\"https://yandex.ru/support/webmaster/open-graph/?lang=en\" target=\"_blank\">More on Open Graph in the official Yandex guide →</a>";
+            };
+            /** @constant */
+            readonly pages_check_og_url_exists: {
+                title: "og:url found";
+                title_negative: "og:url not found";
+                description: "Open Graph is a meta tag markup that allows to create an attractive preview of a page when publishing a link on social media.\n\t\tog:url meta tag contains the canonical URL where user will land after clicking the preview.";
+                resolve: "Check the page HTML-code and add og:url. In the meta tag there should be the target URL a user should land on after following the link in preview. <a href=\"https://yandex.ru/support/webmaster/open-graph/?lang=en\" target=\"_blank\">More on Open Graph in the official Yandex guide →</a>";
+            };
+            /** @constant */
+            readonly pages_check_og_url_canonical: {
+                title: "og:url matches canonical";
+                title_negative: "og:url doesn't match canonical";
+                description: "Canonical URL helps search engines to identify target URL among similar URLs.\n\t\tIn Open Graph markup og:url should match canonical so that if users click a preview link they will land on a target URL.";
+                resolve: "Check og:url meta tag and add a canonical URL in it. <a href=\"https://yandex.ru/support/webmaster/open-graph/?lang=en\" target=\"_blank\">More on Open Graph in the official Yandex guide →</a>";
+            };
+            /** @constant */
+            readonly links_check_http_code_200: {
+                title: "Successful status code (200)";
+                title_negative: "Invalid status code";
+                description: "When user follows a link, server sends HTTP code to the browser indicating whether a request has been completed.\n\t\tCode 200 indicates the request has been successfully completed and a user followed a link without problems. If a browser gets any other status code, users will be redirected or a link won't open.";
+                resolve: "Check if the link URL is correct.";
+            };
+            /** @constant */
+            readonly links_check_redirects_not_exists: {
+                title: "No redirect";
+                title_negative: "Redirect (3ХХ status code)";
+                description: "Each redirect is an additional browser HTTP request. It increases pages' loadtime and negatively affects user experience — they may not wait for the page to load.";
+                resolve: "Replace the link with the URL the redirect points to.";
+            };
+            /** @constant */
+            readonly links_check_redirects_many_not_exists: {
+                title: "No redirect chains";
+                title_negative: "Redirect chain";
+                description: "Redirect chain occurs when there's more than 3 URLs in redirection series. Many redirects would take a long time to load, and users may not wait for a destination acceptor URL to open.";
+                resolve: "Replace the link with the last URL in the redirect chain.";
+            };
+            /** @constant */
+            readonly links_check_ttfb_max: {
+                title: "Good TTFB (Time to First Byte)";
+                title_negative: "Poor TTFB (Time to First Byte)";
+                description: "TTFB (Time To First Byte) is the time from when a browser sends a request to when the first byte of a response from the server arrives. TTFB should be <500 ms. Long server response time negatively affects user experience — they may not wait for the page to open.";
+                resolve: "TTFB depends on many factors such as website caching, database optimization and server performance. To improve TTFB check technical performance of the website.";
+            };
+            /** @constant */
+            readonly links_check_url_slash_unique: {
+                title: "No double slashes in URL";
+                title_negative: "Double slash in URL";
+                description: "Even if a user successfully opens a page with double slashes, it may be misleading for search engines. Pages with one slash and two slashes will be considered two different but similar pages. Example of the wrong URL: https://site.com//";
+                resolve: "Remove the duplicate slash from links URL.";
+            };
+            /** @constant */
+            readonly links_check_url_format_good: {
+                title: "No capital letters or spaces in URL";
+                title_negative: "Capital letters or spaces in URL";
+                description: "It's better to make URLs for users to remember easier, so there shouldn't be capital letters in URLs. As for spaces, they can't be contained in URLs and will be replaced by a + or %20, making URLs harder for users to read.\n\t\tAlso, the percent symbol, as well as ampersand, dollar and other symbols can prevent the correct indexing of the page.";
+                resolve: "Remove capital letters and spaces from links URLs. Don't forget to set up redirects from the old to new URLs.";
+            };
+            /** @constant */
+            readonly links_check_title_or_content_exists: {
+                title: "Text anchors found";
+                title_negative: "Text anchors or titles not found";
+                description: "Anchor is the visible text of a link. Search engines analyze anchors and use them to determine the page relevance.\n\t\tFor example, if links have too many anchors with commercial intent keywords, it will negatively affect rankings. And if there's no anchor at all, search engines won't take it into account. If there's the same link with different anchors on a page, they all would be displayed in the table.";
+                resolve: "Add anchor text inside the link tag or title attribute.";
+            };
+            /** @constant */
+            readonly links_check_nofollow_off: {
+                title: "Crawlers are allowed to follow links (no nofollow)";
+                title_negative: "Crawlers are not allowed to follow links (nofollow found)";
+                description: "nofollow attribute doesn't allow search crawlers to follow links, and they won't give link weight to a website.\n\t\tEven if a crawler does follow a link, nofollow will show the acceptor website isn't thrustworthy.\n\t\tSearch engines can find these links on other pages and websites, but nofollow will negatively affect its rankings.";
+                resolve: "If you want crawlers to index the links, remove nofollow. Also check official guides on\n\t\thow to block link indexing from <a href=\"https://yandex.ru/support/webmaster/adding-site/indexing-prohibition.html#indexing-prohibition__link\" target=\"_blank\">Yandex</a> and <a href=\"https://developers.google.com/search/docs/crawling-indexing/qualify-outbound-links\" target=\"_blank\">Google</a>.";
+            };
+            /** @constant */
+            readonly images_check_http_code_200: {
+                title: "Successful status code (200)";
+                title_negative: "Invalid status code";
+                description: "When a browser loads an image on the page, server sends HTTP code indicating whether a request has been completed.\n\t\tCode 200 indicates the request has been successfully completed — an image is displayed. If a browser gets any other status code, an image won't open.";
+                resolve: "Check if the image URL is correct.";
+            };
+            /** @constant */
+            readonly images_check_redirects_not_exists: {
+                title: "No redirect";
+                title_negative: "Redirect (3ХХ status code)";
+                description: "Each redirect is an additional browser HTTP request. It increases pages' loadtime and negatively affects user experience — they may not wait for the image to load.";
+                resolve: "Replace the link to the image with the URL the redirect points to.";
+            };
+            /** @constant */
+            readonly images_check_redirects_many_not_exists: {
+                title: "No redirect chains";
+                title_negative: "Redirect chain";
+                description: "Redirect chain occurs when there's more than 3 URLs in redirection series. Many redirects would take a long time to load, and it would negatively affects user experience — while destination image would be in the process of loading, the image could be displayed incorrectly, and users would leave the page.";
+                resolve: "Replace the link to the image with the last URL in the redirect chain.";
+            };
+            /** @constant */
+            readonly images_check_ttfb_max: {
+                title: "Good TTFB (Time to First Byte)";
+                title_negative: "Poor TTFB (Time to First Byte)";
+                description: "TTFB (Time To First Byte) is the time from when a browser sends a request to when the first byte of a response from the server arrives. TTFB should be <500 ms. Long server response time negatively affects user experience — they may not wait for the image to open and leave the page.";
+                resolve: "TTFB depends on many factors such as website caching, database optimization and server performance. To improve TTFB check technical performance of the website.";
+            };
+            /** @constant */
+            readonly images_check_cacheable: {
+                title: "Browser caching";
+                title_negative: "No browser caching";
+                description: "When browser loads a page for the first time, it saves it in the cache, so that it can open it faster next time. If there is no browser caching, a page and its resources would be loaded again from scratch each time, which can negatively affect user experience.\n\t\tTo identify whether resources on the page have browser caching or not, we use a complex check that takes into account all cache-related headers.\n\t\tThere are three main reasons why the check can fail: no-store directive in Cache-Control header, past time in Expires header or server doesn't respond with 304 status code.";
+                resolve: "Check HTTP headers that form caching on the server.";
+            };
+            /** @constant */
+            readonly images_check_alt_exists: {
+                title: "alt text found";
+                title_negative: "alt text not found";
+                description: "If an image didn't load, user would see alt text instead. Also, search engines use this text for image search ranging.";
+                resolve: "Check if there's text in alt attribute of img tag.";
+            };
+            /** @constant */
+            readonly images_check_alt_length_max: {
+                title: "alt text not too long";
+                title_negative: "alt text too long";
+                description: "Search engines can ignore alt text if it is too long. There shouldn't be too many commercial intent keywords: crawlers may consider it keyword stuffing.";
+                resolve: "Make alt text shorter so that there's only the gist of what is pictured on the image.";
+            };
+            /** @constant */
+            readonly images_check_size_max: {
+                title: "Images not too big";
+                title_negative: "Images too big";
+                description: "The less is images weight, the faster they will load and the faster will load the page as a whole, especially on mobile devices. Images should be <500 Kb for .gif and <100 Kb for other formats.";
+                resolve: "Reduce images weight — you can compress them in special converters.";
+            };
+            /** @constant */
+            readonly images_check_robots_disallow_off: {
+                title: "Allowed by robots.txt";
+                title_negative: "Blocked by robots.txt";
+                description: "robots.txt tells search engines which URLs they can access and index while crawling the website.\n\t\tIf an image is blocked by robots.txt, it most likely won't rank.";
+                resolve: "Check disallows in robots.txt; they block search engines from accessing the image.";
+            };
+            /** @constant */
+            readonly images_check_modern_format: {
+                title: "Modern image format";
+                title_negative: "Outdated image format";
+                description: "We consider outdated formats JPEG and PNG. New formats JPEG 2000, JPEG XR and WebP show much better quality and compressing performance comparing with their old counterparts.";
+                resolve: "Replace images with outdated formats with new ones.";
+            };
+            /** @constant */
+            readonly css_check_http_code_200: {
+                title: "Successful status code (200)";
+                title_negative: "Invalid status code";
+                description: "When a browser loads page resources, server sends HTTP code indicating whether a request has been completed.\n\t\tCode 200 indicates the request has been successfully completed. If a browser gets any other status code, resources won't be loaded.";
+                resolve: "Check if the resource URL is correct.";
+            };
+            /** @constant */
+            readonly css_check_redirects_not_exists: {
+                title: "No redirect";
+                title_negative: "Redirect (3ХХ status code)";
+                description: "Each redirect is an additional browser HTTP request. It increases pages' loadtime and negatively affects user experience — they may not wait for resources to load.";
+                resolve: "Replace the link to resources with the URL the redirect points to.";
+            };
+            /** @constant */
+            readonly css_check_redirects_many_not_exists: {
+                title: "No redirect chains";
+                title_negative: "Redirect chain";
+                description: "Redirect chain occurs when there's more than 3 URLs in redirection series. Many redirects would take a long time to load, and it would negatively affects user experience — while destination resource would be in the process of loading, page content could be displayed incorrectly, and users would leave the page.";
+                resolve: "Replace the link to resources with the last URL in the redirect chain.";
+            };
+            /** @constant */
+            readonly css_check_ttfb_max: {
+                title: "Good TTFB (Time to First Byte)";
+                title_negative: "Poor TTFB (Time to First Byte)";
+                description: "TTFB (Time To First Byte) is the time from when a browser sends a request to when the first byte of a response from the server arrives. TTFB should be <500 ms. Long server response time negatively affects user experience — they may not wait for the page to open correctly while resources are loading and leave the page.";
+                resolve: "TTFB depends on many factors such as website caching, database optimization and server performance. To improve TTFB check technical performance of the website.";
+            };
+            /** @constant */
+            readonly css_check_compression_exists?: {
+                title: "Compression found (Content-Encoding)";
+                title_negative: "Compression not found (Content-Encoding)";
+                description: "When you compress page resources it reduces its weight — and therefore the loadtime. The longer a page loads, the more negatively it affects rankings and user experience. Topvisor checks compression by Content-Encoding header — it contains a list of page's encodings and their loading order.";
+                resolve: "Check if there's a Content-Encoding header in pages' response headers.";
+            };
+            /** @constant */
+            readonly css_check_cacheable: {
+                title: "Browser caching";
+                title_negative: "No browser caching";
+                description: "When browser loads a page for the first time, it saves it in the cache, so that it can open it faster next time. If there is no browser caching, a page and its resources would be loaded again from scratch each time, which can negatively affect user experience.\n\t\tTo identify whether resources on the page have browser caching or not, we use a complex check that takes into account all cache-related headers.\n\t\tThere are three main reasons why the check can fail: no-store directive in Cache-Control header, past time in Expires header or server doesn't respond with 304 status code.";
+                resolve: "Check HTTP headers that form caching on the server.";
+            };
+            /** @constant */
+            readonly css_check_is_minified: {
+                title: "Minified";
+                title_negative: "Not minified";
+                description: "Minification allows you to reduce file size by removing unnecessary characters: spaces, comments, indentation, etc. This reduces code size and speeds up loading without affecting functionality.\n\t\tIf you've added PageSpeed Insights API-key in Tool Settings, we'll take results from there. If there's no key, we'll try to minify files ourselves and compare results by weight.";
+                resolve: "Minify files. This can be done manually or by automatic minifiers.";
+            };
+            /** @constant */
+            readonly css_check_no_render_blocking: {
+                title: "Doesn't block rendering";
+                title_negative: "Render blocking";
+                description: "Rendering is the process of converting JavaScript code into HTML readable by search engines. Unlike ordinary ones, SPA-websites look like JS-files which contains HTML-code instead of looking like HTML markup alone.\n\t\tAfter requesting JS-files, HTML markup in browser is formed which a search engine can \"read\". If files don't be rendered, search engines won't see page content.\n\t\tWe check render blocking if you've added PageSpeed Insights API-key in Tool Settings. If there's no key, we don't check rendering.";
+                resolve: "Check what can block file rendering. Use minification and encoding to reduce file size.";
+            };
+            /** @constant */
+            readonly js_check_http_code_200: {
+                title: "Successful status code (200)";
+                title_negative: "Invalid status code";
+                description: "When a browser loads page resources, server sends HTTP code indicating whether a request has been completed.\n\t\tCode 200 indicates the request has been successfully completed. If a browser gets any other status code, resources won't be loaded.";
+                resolve: "Check if the resource URL is correct.";
+            };
+            /** @constant */
+            readonly js_check_redirects_not_exists: {
+                title: "No redirect";
+                title_negative: "Redirect (3ХХ status code)";
+                description: "Each redirect is an additional browser HTTP request. It increases pages' loadtime and negatively affects user experience — they may not wait for resources to load.";
+                resolve: "Replace the link to resources with the URL the redirect points to.";
+            };
+            /** @constant */
+            readonly js_check_redirects_many_not_exists: {
+                title: "No redirect chains";
+                title_negative: "Redirect chain";
+                description: "Redirect chain occurs when there's more than 3 URLs in redirection series. Many redirects would take a long time to load, and it would negatively affects user experience — while destination resource would be in the process of loading, page content could be displayed incorrectly, and users would leave the page.";
+                resolve: "Replace the link to resources with the last URL in the redirect chain.";
+            };
+            /** @constant */
+            readonly js_check_ttfb_max: {
+                title: "Good TTFB (Time to First Byte)";
+                title_negative: "Poor TTFB (Time to First Byte)";
+                description: "TTFB (Time To First Byte) is the time from when a browser sends a request to when the first byte of a response from the server arrives. TTFB should be <500 ms. Long server response time negatively affects user experience — they may not wait for the page to open correctly while resources are loading and leave the page.";
+                resolve: "TTFB depends on many factors such as website caching, database optimization and server performance. To improve TTFB check technical performance of the website.";
+            };
+            /** @constant */
+            readonly js_check_compression_exists?: {
+                title: "Compression found (Content-Encoding)";
+                title_negative: "Compression not found (Content-Encoding)";
+                description: "When you compress page resources it reduces its weight — and therefore the loadtime. The longer a page loads, the more negatively it affects rankings and user experience. Topvisor checks compression by Content-Encoding header — it contains a list of page's encodings and their loading order.";
+                resolve: "Check if there's a Content-Encoding header in pages' response headers.";
+            };
+            /** @constant */
+            readonly js_check_cacheable: {
+                title: "Browser caching";
+                title_negative: "No browser caching";
+                description: "When browser loads a page for the first time, it saves it in the cache, so that it can open it faster next time. If there is no browser caching, a page and its resources would be loaded again from scratch each time, which can negatively affect user experience.\n\t\tTo identify whether resources on the page have browser caching or not, we use a complex check that takes into account all cache-related headers.\n\t\tThere are three main reasons why the check can fail: no-store directive in Cache-Control header, past time in Expires header or server doesn't respond with 304 status code.";
+                resolve: "Check HTTP headers that form caching on the server.";
+            };
+            /** @constant */
+            readonly js_check_is_minified: {
+                title: "Minified";
+                title_negative: "Not minified";
+                description: "Minification allows you to reduce file size by removing unnecessary characters: spaces, comments, indentation, etc. This reduces code size and speeds up loading without affecting functionality.\n\t\tIf you've added PageSpeed Insights API-key in Tool Settings, we'll take results from there. If there's no key, we'll try to minify files ourselves and compare results by weight.";
+                resolve: "Minify files. This can be done manually or by automatic minifiers.";
+            };
+            /** @constant */
+            readonly js_check_no_render_blocking: {
+                title: "Doesn't block rendering";
+                title_negative: "Render blocking";
+                description: "Rendering is the process of converting JavaScript code into HTML readable by search engines. Unlike ordinary ones, SPA-websites look like JS-files which contains HTML-code instead of looking like HTML markup alone.\n\t\tAfter requesting JS-files, HTML markup in browser is formed which a search engine can \"read\". If files don't be rendered, search engines won't see page content.\n\t\tWe check render blocking if you've added PageSpeed Insights API-key in Tool Settings. If there's no key, we don't check rendering.";
+                resolve: "Check what can block file rendering. Use minification and encoding to reduce file size.";
+            };
+        };
+        "I18n.Sites.Thundo.Admin": {
+            /** @constant */
+            readonly Warning_message: "";
+            /** @constant */
+            readonly Warning_message_admin: "";
+        };
+        "I18n.Sites.Topvisor.Admin": {
+            /** @constant */
+            readonly Warning_message: "";
+            /** @constant */
+            readonly Warning_message_admin: "";
+        };
+        "I18n.Sites.Topvisor.Organization": {
+            /** @constant */
+            readonly Description: "All you need for SEO on one platform. Rank tracking and volume checking, website audit, keyword research. Cluster keywords by Top and track website changes. We make SEO easy for SEO specialists and digital marketers.";
+            /** @constant */
+            readonly Street_address: "Voronezhskaya st., 5A, Prisma office building, office 242";
+            /** @constant */
+            readonly Address_locality: "Saint Petersburg";
+            /** @constant */
+            readonly Address_region: "Leningrad region";
+            /** @constant */
+            readonly Address_country: "Russia";
+            /** @constant */
+            readonly Contact_type: "Sales";
+            /** @constant */
+            readonly General_manager: "Pustovoyt Denis Anatolievich";
+        };
     };
     responses: never;
     parameters: never;

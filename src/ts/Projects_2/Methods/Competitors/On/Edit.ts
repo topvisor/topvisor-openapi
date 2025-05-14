@@ -12,13 +12,22 @@ export interface components {
             /** ID проекта */
             project_id: number;
             /** ID конкурентов */
-            ids: import('../../../../TV/API/Types/IntArray.ts').components['schemas']['TV.API.Types.IntArray'];
+            ids: components["schemas"]["TV.API.Types.IntArray"];
             /** Активность проекта
              *
              *     - -1 - выключен
              *     - 0 - включен */
             on: number;
         };
+        /**
+         * Тип массива: int
+         *
+         *     Принимает: Любые целые числа и числа в строках
+         * @description @extends AbstractTypedArray<int>
+         *     @method int[] getValues()
+         *     @method int current()
+         */
+        "TV.API.Types.IntArray": number[];
     };
     responses: never;
     parameters: never;

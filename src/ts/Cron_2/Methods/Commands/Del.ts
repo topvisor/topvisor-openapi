@@ -9,10 +9,28 @@ export interface components {
     schemas: {
         /** Удаление задачи cron */
         "Cron_2.Methods.Commands.Del": {
-            filters: import('../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['filters'];
-            id?: import('../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['id'];
-            command: import('../../Params/CommandTrait.ts').components['schemas']['Cron_2.Params.CommandTrait']['command'];
+            filters: components["schemas"]["filters"];
+            id?: components["schemas"]["id"];
+            command: components["schemas"]["command"];
         };
+        /**
+         * Список фильтров по полям объекта
+         *
+         *     {name: string, operator: Field::AVAILABLE_OPERATORS, values: array}
+         *
+         *     Использует поля модели
+         *
+         *     Поля обязатлеьное, если $id не указан
+         * @description @see AbstractMethod::MODEL
+         *     @see Field::AVAILABLE_OPERATORS
+         */
+        filters: (string | number)[];
+        /** Id объекта, для фильтрации объектов по id
+         *
+         *     Только для моделей с полем id */
+        id: number | null;
+        /** Имя команды cron */
+        command: string;
     };
     responses: never;
     parameters: never;

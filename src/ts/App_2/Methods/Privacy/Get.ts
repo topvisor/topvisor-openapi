@@ -10,8 +10,10 @@ export interface components {
         /** Получение текста политики конфиденциальности */
         "App_2.Methods.Privacy.Get": {
             /** Язык страницы */
-            lang?: import('../../../TV/API/Types/Lang.ts').components['schemas']['TV.API.Types.Lang'] | null;
+            lang?: components["schemas"]["TV.API.Types.Lang"] | null;
         };
+        /** @enum {string} */
+        "TV.API.Types.Lang": "ru" | "en";
     };
     responses: never;
     parameters: never;

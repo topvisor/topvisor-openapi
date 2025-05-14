@@ -10,7 +10,7 @@ export interface components {
         /** Создание задачи */
         "Projects_2.Methods.Tasks.Volumes.Add": {
             /** Url проекта (домен или url страницы) */
-            url: import('../../../../TV/API/Types/UrlShort.ts').components['schemas']['TV.API.Types.UrlShort'];
+            url: components["schemas"]["TV.API.Types.UrlShort"];
             /** Массив ключевых запросов в формате CSV
              *
              *     - array keywords - массив ключевых запросов, допускается формат CSV */
@@ -24,8 +24,53 @@ export interface components {
              *     - 2: не проверять запросы с частотой */
             no_recheck?: number | null;
             /** Объекты определителей частоты (параметр не обязатален, если check_all_regions = true) */
-            regions: import('../../../../Keywords_2/Types/RegionsArray.ts').components['schemas']['Keywords_2.Types.RegionsArray'];
+            regions: components["schemas"]["Keywords_2.Types.RegionsArray"];
         };
+        /** Краткий URL в punycode, не может содержать UTF-символы:
+         *     - без схемы
+         *     - без "www." в домене
+         *     - без слешей на конце
+         *     - без "<" и ">"
+         *
+         *     Будет проивзедено автоматическое приведение к формату
+         *
+         *     Разрешен ввод пустой строки, для удаления значения url */
+        "TV.API.Types.UrlShort": string;
+        /**
+         * Ключ поисковой системы для проверки позиций
+         * @enum {integer}
+         */
+        "Positions_2.Types.SearcherKey": 0 | 20 | 21 | 1 | 4 | 5 | 7 | 8 | 9;
+        /**
+         * Устройство региона
+         * @enum {integer}
+         */
+        "Positions_2.Types.RegionDevice": 0 | 1 | 2;
+        "Keywords_2.Types.Region": {
+            /** Ключ региона */
+            key: number;
+            /** Ключ поисковика */
+            searcher_key: components["schemas"]["Positions_2.Types.SearcherKey"];
+            /** Язык региона
+             *
+             *     Для каждой ПС доступен разный */
+            lang?: string | null;
+            /** Тип проверки частот. Для гугла всегда 3 */
+            types: (string | number)[];
+            /** Девайс */
+            device?: components["schemas"]["Positions_2.Types.RegionDevice"] | null;
+            /**
+             * Глубина региона
+             *
+             *     - 1-3 для Яндекса (ПК)
+             *     - 1-10 для Google
+             *     - 1-3 для GooglePlay
+             * @default 1
+             */
+            depth: number;
+        };
+        /** Массив регионов */
+        "Keywords_2.Types.RegionsArray": components["schemas"]["Keywords_2.Types.Region"][];
     };
     responses: never;
     parameters: never;

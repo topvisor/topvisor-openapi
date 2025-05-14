@@ -12,12 +12,17 @@ export interface components {
             /** ID проекта */
             project_id: number;
             /** Номер метрики */
-            axe: import('../../../Types/Analytics/Axe.ts').components['schemas']['Projects_2.Types.Analytics.Axe'];
+            axe: components["schemas"]["Projects_2.Types.Analytics.Axe"];
             /** Данные графика */
             data: (string | number)[];
             /** Сравнение метрики */
             compare_axe?: number | null;
         };
+        /**
+         * Номер метрики
+         * @enum {integer}
+         */
+        "Projects_2.Types.Analytics.Axe": 1 | 2 | 3 | 4 | 11 | 12 | 13;
     };
     responses: never;
     parameters: never;

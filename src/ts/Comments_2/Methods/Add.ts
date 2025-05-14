@@ -9,7 +9,7 @@ export interface components {
     schemas: {
         /** Добавление комментария */
         "Comments_2.Methods.Add": {
-            subdomain?: import('../../TV/API/Types/Topvisor/Subdomain.ts').components['schemas']['TV.API.Types.Topvisor.Subdomain'];
+            subdomain?: components["schemas"]["TV.API.Types.Topvisor.Subdomain"];
             /** Текст комментария */
             text: string;
             /** Адрес страницы (нельзя указывать совместно с reply_id) */
@@ -17,6 +17,8 @@ export interface components {
             /** Привязать к комментарию с id = reply_id  (нельзя указывать совместно с page_url) */
             reply_id?: number | null;
         };
+        /** @enum {string} */
+        "TV.API.Types.Topvisor.Subdomain": "" | "journal";
     };
     responses: never;
     parameters: never;

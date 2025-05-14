@@ -9,12 +9,26 @@ export interface components {
     schemas: {
         /** Получение активности пользователей в формате для графика */
         "Admin_2.Methods.Analytics.Activity.ChartByPeriod.Get": {
-            currency: import('../../../../../TV/API/Types/Currency.ts').components['schemas']['TV.API.Types.Currency'];
+            currency: components["schemas"]["TV.API.Types.Currency"];
             /** Валюта */
             limit: number;
             /** Дата */
-            date: import('../../../../../TV/API/Types/Date.ts').components['schemas']['TV.API.Types.Date'];
+            date: components["schemas"]["TV.API.Types.Date"];
         };
+        /**
+         * Валюта
+         *
+         *     Этот общий тип, не зависящий от контекста
+         *
+         *     Дополниетольно нужно проверять в API методах через site()->checkAllowCurrency() в функции check()
+         * @enum {string}
+         */
+        "TV.API.Types.Currency": "RUB" | "USD";
+        /**
+         * Дата
+         * @example 2000-01-01
+         */
+        "TV.API.Types.Date": string;
     };
     responses: never;
     parameters: never;

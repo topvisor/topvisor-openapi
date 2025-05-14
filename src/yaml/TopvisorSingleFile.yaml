@@ -6411,6 +6411,41 @@ paths:
               schema:
                 type: string
                 format: binary
+  /get/bank_2/subscriptions/plans/:
+    post:
+      operationId: GetBank2SubscriptionsPlans
+      tags:
+        - Bank_2
+      summary: Получение интерфейсов настройки всех планов подписки
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Bank_2.Methods.Subscriptions.Plans.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            type: array
+                            items:
+                              oneOf:
+                                - type: string
+                                - type: number
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
   /get/content_2/apometr/calendar/:
     post:
       operationId: GetContent2ApometrCalendar
@@ -19198,6 +19233,11 @@ components:
       required:
         - type
       title: Скачивание архива документов в формате PDF
+    Bank_2.Methods.Subscriptions.Plans.Get:
+      type: object
+      properties: {}
+      required: []
+      title: Получение интерфейсов настройки всех планов подписки
     Positions_2.Types.RegionDevice:
       type: integer
       enum:

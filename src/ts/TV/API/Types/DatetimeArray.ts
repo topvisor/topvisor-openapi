@@ -14,7 +14,12 @@ export interface components {
          *     @method Datetime current()
          *     @see \TV\API\Types\Datetime
          */
-        "TV.API.Types.DatetimeArray": import('./Datetime.ts').components['schemas']['TV.API.Types.Datetime'][];
+        "TV.API.Types.DatetimeArray": components["schemas"]["TV.API.Types.Datetime"][];
+        /**
+         * Дата с временем
+         * @example 2000-01-01 00:00:00
+         */
+        "TV.API.Types.Datetime": string;
     };
     responses: never;
     parameters: never;

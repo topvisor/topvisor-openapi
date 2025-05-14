@@ -15,8 +15,17 @@ export interface components {
              */
             year: number;
             /** Валюта партнеров */
-            currency: import('../../../../TV/API/Types/Currency.ts').components['schemas']['TV.API.Types.Currency'];
+            currency: components["schemas"]["TV.API.Types.Currency"];
         };
+        /**
+         * Валюта
+         *
+         *     Этот общий тип, не зависящий от контекста
+         *
+         *     Дополниетольно нужно проверять в API методах через site()->checkAllowCurrency() в функции check()
+         * @enum {string}
+         */
+        "TV.API.Types.Currency": "RUB" | "USD";
     };
     responses: never;
     parameters: never;

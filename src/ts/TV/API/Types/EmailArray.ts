@@ -14,7 +14,12 @@ export interface components {
          *     @method Email current()
          *     @see \TV\API\Types\Email
          */
-        "TV.API.Types.EmailArray": import('./Email.ts').components['schemas']['TV.API.Types.Email'][];
+        "TV.API.Types.EmailArray": components["schemas"]["TV.API.Types.Email"][];
+        /**
+         * E-mail
+         * @example name@example.com
+         */
+        "TV.API.Types.Email": string;
     };
     responses: never;
     parameters: never;

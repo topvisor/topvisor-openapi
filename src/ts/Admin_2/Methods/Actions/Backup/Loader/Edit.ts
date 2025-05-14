@@ -17,11 +17,11 @@ export interface components {
             /** Имя таблицы */
             table_name: string;
             /** Дата бекапа чата для добавления */
-            date: import('../../../../../TV/API/Types/Date.ts').components['schemas']['TV.API.Types.Date'];
+            date: components["schemas"]["TV.API.Types.Date"];
             /** Регулярное выражение для импорта только нужных блоков INSERT
              *
              *     Бекапы хрянятся в .sql файлах с INSERT командами, в одном INSERT может быть много строк */
-            insert_filter_regexp?: import('../../../../../TV/API/Types/RegExp.ts').components['schemas']['TV.API.Types.RegExp'] | null;
+            insert_filter_regexp?: components["schemas"]["TV.API.Types.RegExp"] | null;
             /** Ключ задачи, участвует в генерации имени БД бекапа
              *
              *     Может потребоваться в случае выполнения одновременных бекапов одной и тоже же таблицы за одну и ту же дату */
@@ -29,6 +29,20 @@ export interface components {
             /** Являеется ли запуск - тестом */
             test: boolean;
         };
+        /**
+         * Дата
+         * @example 2000-01-01
+         */
+        "TV.API.Types.Date": string;
+        /**
+         * Регулярное выражение
+         *
+         *     Пустое значение разрешено
+         *
+         *     Управляющие символы "/" в начале и в конце строки будут удалены
+         * @example /^year_(\d\d\d\d)$/
+         */
+        "TV.API.Types.RegExp": string;
     };
     responses: never;
     parameters: never;

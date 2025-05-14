@@ -12,13 +12,13 @@ export interface components {
             /** Список id документов
              *
              *     Вместо targets_ids можно указывать набор параметров org_id, date1 и date2 */
-            targets_ids?: import('../../../../TV/API/Types/IntArray.ts').components['schemas']['TV.API.Types.IntArray'] | null;
+            targets_ids?: components["schemas"]["TV.API.Types.IntArray"] | null;
             /** Id организации */
             org_id?: string | null;
             /** Дата начала диапазона */
-            date1?: import('../../../../TV/API/Types/Date.ts').components['schemas']['TV.API.Types.Date'] | null;
+            date1?: components["schemas"]["TV.API.Types.Date"] | null;
             /** Дата конца диапазона */
-            date2?: import('../../../../TV/API/Types/Date.ts').components['schemas']['TV.API.Types.Date'] | null;
+            date2?: components["schemas"]["TV.API.Types.Date"] | null;
             /** Тип документа enum(RequisitesDocuments::$availableDocumentsTypes) */
             type: string;
             /** Использовать подпись
@@ -26,6 +26,20 @@ export interface components {
              *     Если true, то документ с подписью (не распространяется на договоры) */
             signed?: boolean;
         };
+        /**
+         * Тип массива: int
+         *
+         *     Принимает: Любые целые числа и числа в строках
+         * @description @extends AbstractTypedArray<int>
+         *     @method int[] getValues()
+         *     @method int current()
+         */
+        "TV.API.Types.IntArray": number[];
+        /**
+         * Дата
+         * @example 2000-01-01
+         */
+        "TV.API.Types.Date": string;
     };
     responses: never;
     parameters: never;

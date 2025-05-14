@@ -15,7 +15,25 @@ export interface components {
          *     @method Qualifier offsetGet()
          *     @see \TV\API\Types\Qualifier
          */
-        "Keywords_2.Types.Volumes.Qualifiers": import('./Qualifier.ts').components['schemas']['Keywords_2.Types.Volumes.Qualifier'][];
+        "Keywords_2.Types.Volumes.Qualifiers": components["schemas"]["Keywords_2.Types.Volumes.Qualifier"][];
+        /**
+         * Ключ поисковой системы для проверки частоты
+         * @enum {integer}
+         */
+        "Keywords_2.Types.Volumes.SearcherKey": 0 | 1;
+        /**
+         * Тип частоты
+         * @enum {integer}
+         */
+        "Keywords_2.Types.Volumes.Type": 1 | 2 | 3 | 5 | 6;
+        /** Определитель с настройками региона для проверки частоты запросов */
+        "Keywords_2.Types.Volumes.Qualifier": {
+            /** Строковй идентификатор определителя */
+            id: string;
+            region_key: number;
+            searcher_key: components["schemas"]["Keywords_2.Types.Volumes.SearcherKey"];
+            type: components["schemas"]["Keywords_2.Types.Volumes.Type"];
+        };
     };
     responses: never;
     parameters: never;

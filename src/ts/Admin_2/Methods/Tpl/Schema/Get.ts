@@ -12,8 +12,10 @@ export interface components {
             /** Путь к шаблону */
             tpl: string;
             /** Язык шаблона (при пустом значении используется язык пользователя) */
-            lang?: import('../../../../TV/API/Types/Lang.ts').components['schemas']['TV.API.Types.Lang'] | null;
+            lang?: components["schemas"]["TV.API.Types.Lang"] | null;
         };
+        /** @enum {string} */
+        "TV.API.Types.Lang": "ru" | "en";
     };
     responses: never;
     parameters: never;

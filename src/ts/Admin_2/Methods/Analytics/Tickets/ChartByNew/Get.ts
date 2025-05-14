@@ -9,12 +9,26 @@ export interface components {
     schemas: {
         /** Получение статистики по кол-ву пользователей, открывших первый тикет */
         "Admin_2.Methods.Analytics.Tickets.ChartByNew.Get": {
-            period: import('../../../../Types/Analytics/Segment.ts').components['schemas']['Admin_2.Types.Analytics.Segment'];
+            period: components["schemas"]["Admin_2.Types.Analytics.Segment"];
             /** Длина периода */
             limit: number;
             /** Максимальная дата отчета */
-            date?: import('../../../../../TV/API/Types/Date.ts').components['schemas']['TV.API.Types.Date'] | null;
+            date?: components["schemas"]["TV.API.Types.Date"] | null;
         };
+        /**
+         * Имя сегмента, на которые делится период отчета
+         *
+         *     Отчет делится на равные части - сегменты, за каждый сегмент выводится сводка с агрегацией по этому сегменту
+         *
+         *     Пример: вывод количества регистраций за каждый **месяц** в отчете
+         * @enum {string}
+         */
+        "Admin_2.Types.Analytics.Segment": "day" | "month" | "year";
+        /**
+         * Дата
+         * @example 2000-01-01
+         */
+        "TV.API.Types.Date": string;
     };
     responses: never;
     parameters: never;

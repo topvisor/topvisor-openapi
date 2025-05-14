@@ -11,15 +11,52 @@ export interface components {
         "Cron_2.Methods.Commands.Edit": {
             /** Описание задачи */
             description?: string | null;
-            days?: import('../../Types/Days.ts').components['schemas']['Cron_2.Types.Days'] | null;
-            hh?: import('../../Types/Hour.ts').components['schemas']['Cron_2.Types.Hour'] | null;
-            i?: import('../../Types/Minute.ts').components['schemas']['Cron_2.Types.Minute'] | null;
+            days?: components["schemas"]["Cron_2.Types.Days"] | null;
+            hh?: components["schemas"]["Cron_2.Types.Hour"] | null;
+            i?: components["schemas"]["Cron_2.Types.Minute"] | null;
             /** Статус активности задачи */
             on?: boolean | null;
-            filters: import('../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['filters'];
-            id?: import('../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['id'];
-            command: import('../../Params/CommandTrait.ts').components['schemas']['Cron_2.Params.CommandTrait']['command'];
+            filters: components["schemas"]["filters"];
+            id?: components["schemas"]["id"];
+            command: components["schemas"]["command"];
         };
+        /**
+         * День недели, в который должен производиться запуск cron
+         * @enum {string}
+         */
+        "Cron_2.Types.Day": "1" | "2" | "3" | "4" | "5" | "6" | "7";
+        /** Дни недели, в которые должен производиться запуск cron */
+        "Cron_2.Types.Days": components["schemas"]["Cron_2.Types.Day"][];
+        /** Час в который должен производиться запуск cron
+         *
+         *     Пустое значение зарезервированно для запуска cron каждый час
+         *
+         *     Значение должно находиться в диапазоне от 0 до 23 включительно */
+        "Cron_2.Types.Hour": string;
+        /** Минута или интервал в минутах в который должен производиться запуск cron
+         *
+         *     Значение должно находится в диапазоне от 0 до 59 включительно
+         *
+         *     Если значение является интервалом, в начало ставится символ '*' */
+        "Cron_2.Types.Minute": string;
+        /**
+         * Список фильтров по полям объекта
+         *
+         *     {name: string, operator: Field::AVAILABLE_OPERATORS, values: array}
+         *
+         *     Использует поля модели
+         *
+         *     Поля обязатлеьное, если $id не указан
+         * @description @see AbstractMethod::MODEL
+         *     @see Field::AVAILABLE_OPERATORS
+         */
+        filters: (string | number)[];
+        /** Id объекта, для фильтрации объектов по id
+         *
+         *     Только для моделей с полем id */
+        id: number | null;
+        /** Имя команды cron */
+        command: string;
     };
     responses: never;
     parameters: never;
