@@ -55,6 +55,30 @@ export interface components {
                     description: "";
                 };
             };
+            /** @constant */
+            readonly Get_more: "Get more";
+            /** @constant */
+            readonly Unlock: "Unlock";
+            /** @constant */
+            readonly Current_plan: "Your current plan";
+            /** @constant */
+            readonly Payment_method: "Payment method";
+            /** @constant */
+            readonly Next_billing: "Next billing";
+            /** @constant */
+            readonly Next_plan: "Next plan";
+            /** @constant */
+            readonly Update_plan: "Update plan";
+            /** @constant */
+            readonly Cancel_subscription: "Cancel subscription";
+            /** @constant */
+            readonly View_invoice: "View invoice";
+            /** @constant */
+            readonly Billing_history: "Your billing history";
+            /** @constant */
+            readonly No_billing_history_data: "You do not have any billing history.";
+            /** @constant */
+            readonly View_all: "View all";
         };
     };
     responses: never;

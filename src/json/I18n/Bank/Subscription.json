@@ -58,10 +58,70 @@
                             }
                         },
                         "readOnly": true
+                    },
+                    "Get_more": {
+                        "const": "Get more",
+                        "readOnly": true
+                    },
+                    "Unlock": {
+                        "const": "Unlock",
+                        "readOnly": true
+                    },
+                    "Current_plan": {
+                        "const": "Your current plan",
+                        "readOnly": true
+                    },
+                    "Payment_method": {
+                        "const": "Payment method",
+                        "readOnly": true
+                    },
+                    "Next_billing": {
+                        "const": "Next billing",
+                        "readOnly": true
+                    },
+                    "Next_plan": {
+                        "const": "Next plan",
+                        "readOnly": true
+                    },
+                    "Update_plan": {
+                        "const": "Update plan",
+                        "readOnly": true
+                    },
+                    "Cancel_subscription": {
+                        "const": "Cancel subscription",
+                        "readOnly": true
+                    },
+                    "View_invoice": {
+                        "const": "View invoice",
+                        "readOnly": true
+                    },
+                    "Billing_history": {
+                        "const": "Your billing history",
+                        "readOnly": true
+                    },
+                    "No_billing_history_data": {
+                        "const": "You do not have any billing history.",
+                        "readOnly": true
+                    },
+                    "View_all": {
+                        "const": "View all",
+                        "readOnly": true
                     }
                 },
                 "required": [
-                    "Texts_by_limit_name"
+                    "Texts_by_limit_name",
+                    "Get_more",
+                    "Unlock",
+                    "Current_plan",
+                    "Payment_method",
+                    "Next_billing",
+                    "Next_plan",
+                    "Update_plan",
+                    "Cancel_subscription",
+                    "View_invoice",
+                    "Billing_history",
+                    "No_billing_history_data",
+                    "View_all"
                 ]
             }
         }
