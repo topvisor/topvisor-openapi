@@ -45,13 +45,11 @@
                     "subscription_plan_id": {
                         "title": "ID плана подписки\n\nЕсли указан, сумма будет переопределена\n\nНельзя использовать вместе с `tariff_id` и `items`",
                         "description": "@see \\Services\\Bank_2\\Objects\\Subscriptions\\Plan",
-                        "default": "A1",
                         "nullable": true,
                         "type": "string"
                     },
                     "subscription_cycle": {
                         "title": "Период цикла подписки",
-                        "default": 1,
                         "nullable": true,
                         "allOf": [
                             {
