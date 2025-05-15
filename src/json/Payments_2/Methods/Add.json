@@ -35,17 +35,29 @@
                         "type": "string"
                     },
                     "tariff_id": {
-                        "title": "ID тарифа (если указан, сумма будет переопределена)",
-                        "type": "integer"
-                    },
-                    "plan_id": {
-                        "title": "ID плана",
-                        "description": "@see \\Services\\Bank_2\\Methods\\Subscriptions\\Plans",
+                        "title": "ID тарифа\n\nЕсли указан, сумма будет переопределена\n\nНельзя использовать вместе с `subscription_plan_id`",
                         "type": "integer"
                     },
                     "tariff_count_month": {
                         "title": "Число предоплаченных месяцев по тарифу\n\nПримеры:\n- при оплате тарифа на 1 месяц должен быть равен 1\n- при оплате тарифа на 2 месяца должен быть равен 2",
                         "type": "integer"
+                    },
+                    "subscription_plan_id": {
+                        "title": "ID плана подписки\n\nЕсли указан, сумма будет переопределена\n\nНельзя использовать вместе с `tariff_id` и `items`",
+                        "description": "@see \\Services\\Bank_2\\Objects\\Subscriptions\\Plan",
+                        "default": "A1",
+                        "nullable": true,
+                        "type": "string"
+                    },
+                    "subscription_cycle": {
+                        "title": "Период цикла подписки",
+                        "default": 1,
+                        "nullable": true,
+                        "allOf": [
+                            {
+                                "$ref": "../../Bank_2/Types/Subscriptions/Cycle.json#/components/schemas/Bank_2.Types.Subscriptions.Cycle"
+                            }
+                        ]
                     },
                     "comment": {
                         "title": "Комментарий",

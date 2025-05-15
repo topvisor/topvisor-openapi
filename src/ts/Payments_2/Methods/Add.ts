@@ -25,19 +25,33 @@ export interface components {
             country: import('../Types/Country.ts').components['schemas']['Payments_2.Types.Country'];
             /** Номер договора/оферты для платежа */
             requisites_id?: string;
-            /** ID тарифа (если указан, сумма будет переопределена) */
+            /** ID тарифа
+             *
+             *     Если указан, сумма будет переопределена
+             *
+             *     Нельзя использовать вместе с `subscription_plan_id` */
             tariff_id?: number;
-            /**
-             * ID плана
-             * @description @see \Services\Bank_2\Methods\Subscriptions\Plans
-             */
-            plan_id?: number;
             /** Число предоплаченных месяцев по тарифу
              *
              *     Примеры:
              *     - при оплате тарифа на 1 месяц должен быть равен 1
              *     - при оплате тарифа на 2 месяца должен быть равен 2 */
             tariff_count_month?: number;
+            /**
+             * ID плана подписки
+             *
+             *     Если указан, сумма будет переопределена
+             *
+             *     Нельзя использовать вместе с `tariff_id` и `items`
+             * @description @see \Services\Bank_2\Objects\Subscriptions\Plan
+             * @default A1
+             */
+            subscription_plan_id: string;
+            /**
+             * Период цикла подписки
+             * @default 1
+             */
+            subscription_cycle: import('../../Bank_2/Types/Subscriptions/Cycle.ts').components['schemas']['Bank_2.Types.Subscriptions.Cycle'];
             /** Комментарий */
             comment?: string;
             /** Элементы платежа */

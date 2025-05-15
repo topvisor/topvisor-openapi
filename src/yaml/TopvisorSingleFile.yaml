@@ -12114,6 +12114,19 @@ components:
         - BY
         - KZ
         - other
+    Bank_2.Types.Subscriptions.Cycle:
+      type: integer
+      enum:
+        - 1
+        - 12
+      title: |-
+        Цикл подписки в месяцах
+
+        Оплата происходит сразу за весь период цикла
+
+        Если подписка не отменена в течение идущего цикла, то после его завершения она будет автоматически продляться путем повторения платежа
+
+        Все лимиты, выданные по подписке обновляются без учета этого цикла подписки
     TV.API.Types.Email:
       type: string
       title: E-mail
@@ -12136,11 +12149,12 @@ components:
           title: Номер договора/оферты для платежа
           type: string
         tariff_id:
-          title: ID тарифа (если указан, сумма будет переопределена)
-          type: integer
-        plan_id:
-          title: ID плана
-          description: '@see \Services\Bank_2\Methods\Subscriptions\Plans'
+          title: |-
+            ID тарифа
+
+            Если указан, сумма будет переопределена
+
+            Нельзя использовать вместе с `subscription_plan_id`
           type: integer
         tariff_count_month:
           title: |-
@@ -12150,6 +12164,23 @@ components:
             - при оплате тарифа на 1 месяц должен быть равен 1
             - при оплате тарифа на 2 месяца должен быть равен 2
           type: integer
+        subscription_plan_id:
+          title: |-
+            ID плана подписки
+
+            Если указан, сумма будет переопределена
+
+            Нельзя использовать вместе с `tariff_id` и `items`
+          description: '@see \Services\Bank_2\Objects\Subscriptions\Plan'
+          default: A1
+          nullable: true
+          type: string
+        subscription_cycle:
+          title: Период цикла подписки
+          default: 1
+          nullable: true
+          allOf:
+            - $ref: '#/components/schemas/Bank_2.Types.Subscriptions.Cycle'
         comment:
           title: Комментарий
           type: string
