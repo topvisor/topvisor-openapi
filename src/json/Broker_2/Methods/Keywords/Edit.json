@@ -1,0 +1,65 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Broker_2.Methods.Keywords.Edit",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Broker_2.Methods.Keywords.Edit": {
+                "type": "object",
+                "properties": {
+                    "project_id": {
+                        "title": "Id проекта",
+                        "type": "integer"
+                    },
+                    "provider_n": {
+                        "title": "Провайдер",
+                        "type": "integer"
+                    },
+                    "tactics": {
+                        "title": "Объем трафика\n\n- 0: max\n- 1: ~75%\n- 2: ~15%\n- 3: ~5%\n- 4: ~95%\n- 5: ~90%",
+                        "nullable": true,
+                        "type": "integer"
+                    },
+                    "tactics_2": {
+                        "nullable": true,
+                        "allOf": [
+                            {
+                                "$ref": "../../../Broker_2/Types/Keywords/Tactics2.json#/components/schemas/Broker_2.Types.Keywords.Tactics2"
+                            }
+                        ]
+                    },
+                    "percent": {
+                        "title": "Корректировка объявлений (проценты)",
+                        "nullable": true,
+                        "type": "integer"
+                    },
+                    "price_max": {
+                        "title": "Максимальная цена",
+                        "nullable": true,
+                        "type": "number"
+                    },
+                    "price_risk": {
+                        "title": "Ставка риска",
+                        "nullable": true,
+                        "type": "number"
+                    },
+                    "filters": {
+                        "$ref": "../../../TV/API/Params/FiltersTrait.json#/components/schemas/TV.API.Params.FiltersTrait/properties/filters"
+                    },
+                    "id": {
+                        "$ref": "../../../TV/API/Params/FiltersTrait.json#/components/schemas/TV.API.Params.FiltersTrait/properties/id"
+                    }
+                },
+                "required": [
+                    "project_id",
+                    "provider_n",
+                    "filters"
+                ],
+                "title": "Редактирование объявлений (запросов) рекламной кампании"
+            }
+        }
+    }
+}

@@ -980,6 +980,57 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
+    /** Удаление запросов рекламной кампании */
+    "/del/broker_2/keywords/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["DelBroker2Keywords"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Редактирование объявлений (запросов) рекламной кампании */
+    "/edit/broker_2/keywords/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["EditBroker2Keywords"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Получение запросов рекламной кампании */
+    "/get/broker_2/keywords/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["GetBroker2Keywords"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
     /** Получение логов */
     "/get/broker_2/log/": {
         parameters: {
@@ -3408,6 +3459,23 @@ export interface paths {
         get?: never;
         put?: never;
         post: operations["GetBroker2GroupsEditor"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Изменение статуса запросов рекламной кампании */
+    "/edit/broker_2/keywords/status/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["EditBroker2KeywordsStatus"];
         delete?: never;
         options?: never;
         head?: never;
@@ -7362,6 +7430,87 @@ export interface operations {
             };
         };
     };
+    DelBroker2Keywords: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Broker_2/Methods/Keywords/Del.ts').components['schemas']['Broker_2.Methods.Keywords.Del'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        /** @throws Exception */
+                        result: unknown;
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: null;
+                };
+            };
+        };
+    };
+    EditBroker2Keywords: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Broker_2/Methods/Keywords/Edit.ts').components['schemas']['Broker_2.Methods.Keywords.Edit'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        /** @throws Exception */
+                        result: number;
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: import('./Models/Broker/Keywords.ts').components['schemas']['Models.Broker.Keywords'];
+                };
+            };
+        };
+    };
+    GetBroker2Keywords: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Broker_2/Methods/Keywords/Get.ts').components['schemas']['Broker_2.Methods.Keywords.Get'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        /** @throws Exception */
+                        result: import('./Models/Broker/Keywords.ts').components['schemas']['Models.Broker.Keywords'][];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: import('./Models/Broker/Keywords.ts').components['schemas']['Models.Broker.Keywords'];
+                };
+            };
+        };
+    };
     GetBroker2Log: {
         parameters: {
             query?: never;
@@ -11030,6 +11179,33 @@ export interface operations {
                 content: {
                     "application/json": ({
                         result: (string | number)[];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: null;
+                };
+            };
+        };
+    };
+    EditBroker2KeywordsStatus: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Broker_2/Methods/Keywords/Status/Edit.ts').components['schemas']['Broker_2.Methods.Keywords.Status.Edit'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        /** @throws Exception */
+                        result: unknown;
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };

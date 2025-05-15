@@ -1937,6 +1937,107 @@ paths:
               schema:
                 $ref: '#/components/schemas/Models.Broker.Groups'
                 description: Only for typescript, does not contain real data
+  /del/broker_2/keywords/:
+    post:
+      operationId: DelBroker2Keywords
+      tags:
+        - Broker_2
+      summary: Удаление запросов рекламной кампании
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Broker_2.Methods.Keywords.Del'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            title: '@throws Exception'
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
+  /edit/broker_2/keywords/:
+    post:
+      operationId: EditBroker2Keywords
+      tags:
+        - Broker_2
+      summary: Редактирование объявлений (запросов) рекламной кампании
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Broker_2.Methods.Keywords.Edit'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            type: integer
+                            title: '@throws Exception'
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                $ref: '#/components/schemas/Models.Broker.Keywords'
+                description: Only for typescript, does not contain real data
+  /get/broker_2/keywords/:
+    post:
+      operationId: GetBroker2Keywords
+      tags:
+        - Broker_2
+      summary: Получение запросов рекламной кампании
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Broker_2.Methods.Keywords.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            type: array
+                            items:
+                              $ref: '#/components/schemas/Models.Broker.Keywords'
+                              description: Only for typescript, does not contain real data
+                            title: '@throws Exception'
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                      - $ref: '#/components/schemas/Pagination'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                $ref: '#/components/schemas/Models.Broker.Keywords'
+                description: Only for typescript, does not contain real data
   /get/broker_2/log/:
     post:
       operationId: GetBroker2Log
@@ -6580,6 +6681,37 @@ paths:
                               oneOf:
                                 - type: string
                                 - type: number
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
+  /edit/broker_2/keywords/status/:
+    post:
+      operationId: EditBroker2KeywordsStatus
+      tags:
+        - Broker_2
+      summary: Изменение статуса запросов рекламной кампании
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Broker_2.Methods.Keywords.Status.Edit'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            title: '@throws Exception'
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
@@ -14127,6 +14259,177 @@ components:
           nullable: true
         P2L:
           nullable: true
+    Broker_2.Methods.Keywords.Del:
+      type: object
+      properties:
+        campaign_tv_id:
+          title: Id кампании
+          type: integer
+        keywords_data:
+          title: Информация о запросах (id группы и id запросов)
+          type: array
+          items:
+            oneOf:
+              - type: string
+              - type: number
+      required:
+        - campaign_tv_id
+        - keywords_data
+      title: Удаление запросов рекламной кампании
+    Broker_2.Types.Keywords.Tactics2:
+      type: string
+      enum:
+        - maxBid
+        - minBid
+        - lowerPos
+        - suspend
+      title: Тактика при превышении максимальной цены
+    Broker_2.Methods.Keywords.Edit:
+      type: object
+      properties:
+        project_id:
+          title: Id проекта
+          type: integer
+        provider_n:
+          title: Провайдер
+          type: integer
+        tactics:
+          title: |-
+            Объем трафика
+
+            - 0: max
+            - 1: ~75%
+            - 2: ~15%
+            - 3: ~5%
+            - 4: ~95%
+            - 5: ~90%
+          nullable: true
+          type: integer
+        tactics_2:
+          nullable: true
+          allOf:
+            - $ref: '#/components/schemas/Broker_2.Types.Keywords.Tactics2'
+        percent:
+          title: Корректировка объявлений (проценты)
+          nullable: true
+          type: integer
+        price_max:
+          title: Максимальная цена
+          nullable: true
+          type: number
+        price_risk:
+          title: Ставка риска
+          nullable: true
+          type: number
+        filters:
+          $ref: '#/components/schemas/filters'
+        id:
+          $ref: '#/components/schemas/id'
+      required:
+        - project_id
+        - provider_n
+        - filters
+      title: Редактирование объявлений (запросов) рекламной кампании
+    Models.Broker.Keywords:
+      properties:
+        id: {}
+        campaign_tv_id:
+          nullable: true
+        keyword_id:
+          nullable: true
+        group_id:
+          nullable: true
+        keyword:
+          nullable: true
+        status:
+          nullable: true
+        state:
+          nullable: true
+        shows:
+          nullable: true
+        clicks:
+          nullable: true
+        P11:
+          nullable: true
+        P12:
+          nullable: true
+        P13:
+          nullable: true
+        P1L:
+          nullable: true
+        P21:
+          nullable: true
+        P2L:
+          nullable: true
+        P11_f:
+          nullable: true
+        P12_f:
+          nullable: true
+        P13_f:
+          nullable: true
+        P1L_f:
+          nullable: true
+        P21_f:
+          nullable: true
+        P2L_f:
+          nullable: true
+        TrafficVolumes:
+          nullable: true
+        bid:
+          nullable: true
+        contextBid:
+          nullable: true
+        price:
+          nullable: true
+        price_max:
+          nullable: true
+        price_risk:
+          nullable: true
+        percent:
+          nullable: true
+        tactics:
+          nullable: true
+        tactics_2_old:
+          nullable: true
+        tactics_2:
+          nullable: true
+        'on':
+          nullable: true
+        'off':
+          nullable: true
+        for_off:
+          nullable: true
+    Broker_2.Methods.Keywords.Get:
+      type: object
+      properties:
+        campaign_tv_id:
+          title: Id рекламной кампании
+          type: integer
+        group_by:
+          title: Группировка
+          nullable: true
+          type: string
+        fields:
+          $ref: '#/components/schemas/fields'
+        orders:
+          $ref: '#/components/schemas/orders'
+        filters:
+          $ref: '#/components/schemas/filters'
+        id:
+          $ref: '#/components/schemas/id'
+        limit:
+          $ref: '#/components/schemas/limit'
+        offset:
+          $ref: '#/components/schemas/offset'
+        fetch_style:
+          $ref: '#/components/schemas/fetch_style'
+      required:
+        - campaign_tv_id
+        - fields
+        - orders
+        - filters
+        - offset
+      title: Получение запросов рекламной кампании
     Broker_2.Methods.Log.Get:
       type: object
       properties:
@@ -19587,6 +19890,23 @@ components:
       required:
         - campaign_tv_id
       title: Получение групп рекламной кампании для редактора
+    Broker_2.Methods.Keywords.Status.Edit:
+      type: object
+      properties:
+        campaign_tv_id:
+          title: Id кампании
+          type: integer
+        keywords_data:
+          title: Информация о запросах (id группы и id запросов)
+          type: array
+          items:
+            oneOf:
+              - type: string
+              - type: number
+      required:
+        - campaign_tv_id
+        - keywords_data
+      title: Изменение статуса запросов рекламной кампании
     Broker_2.Methods.Log.Export.Get:
       type: object
       properties:
