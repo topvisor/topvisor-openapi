@@ -691,7 +691,7 @@
                         "readOnly": true
                     },
                     "Create_project": {
-                        "const": "Create project",
+                        "const": "Add project",
                         "readOnly": true
                     },
                     "Select_type_add_name_url": {

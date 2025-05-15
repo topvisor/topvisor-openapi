@@ -349,7 +349,7 @@ export interface components {
             /** @constant */
             readonly Main_settings: "Main settings";
             /** @constant */
-            readonly Create_project: "Create project";
+            readonly Create_project: "Add project";
             /** @constant */
             readonly Select_type_add_name_url: "Select a project type, add a URL and a name";
             /** @constant */
