@@ -946,6 +946,40 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
+    /** Добавление групп рекламной кампании */
+    "/add/broker_2/groups/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["AddBroker2Groups"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Получение групп рекламной кампании */
+    "/get/broker_2/groups/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["GetBroker2Groups"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
     /** Получение логов */
     "/get/broker_2/log/": {
         parameters: {
@@ -3357,6 +3391,23 @@ export interface paths {
         get?: never;
         put?: never;
         post: operations["GetBank2SubscriptionsPlans"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Получение групп рекламной кампании для редактора */
+    "/get/broker_2/groups/editor/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["GetBroker2GroupsEditor"];
         delete?: never;
         options?: never;
         head?: never;
@@ -7257,6 +7308,60 @@ export interface operations {
             };
         };
     };
+    AddBroker2Groups: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Broker_2/Methods/Groups/Add.ts').components['schemas']['Broker_2.Methods.Groups.Add'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        /** @throws Exception */
+                        result: unknown;
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: null;
+                };
+            };
+        };
+    };
+    GetBroker2Groups: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Broker_2/Methods/Groups/Get.ts').components['schemas']['Broker_2.Methods.Groups.Get'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        /** @throws Exception */
+                        result: import('./Models/Broker/Groups.ts').components['schemas']['Models.Broker.Groups'][];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: import('./Models/Broker/Groups.ts').components['schemas']['Models.Broker.Groups'];
+                };
+            };
+        };
+    };
     GetBroker2Log: {
         parameters: {
             query?: never;
@@ -10898,6 +11003,32 @@ export interface operations {
                 content: {
                     "application/json": ({
                         /** @return Bank_2\Objects\Subscriptions\Plan[] */
+                        result: (string | number)[];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: null;
+                };
+            };
+        };
+    };
+    GetBroker2GroupsEditor: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Broker_2/Methods/Groups/Editor/Get.ts').components['schemas']['Broker_2.Methods.Groups.Editor.Get'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
                         result: (string | number)[];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;

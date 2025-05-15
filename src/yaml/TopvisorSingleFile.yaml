@@ -1869,6 +1869,74 @@ paths:
             model:
               schema:
                 type: 'null'
+  /add/broker_2/groups/:
+    post:
+      operationId: AddBroker2Groups
+      tags:
+        - Broker_2
+      summary: Добавление групп рекламной кампании
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Broker_2.Methods.Groups.Add'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            title: '@throws Exception'
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
+  /get/broker_2/groups/:
+    post:
+      operationId: GetBroker2Groups
+      tags:
+        - Broker_2
+      summary: Получение групп рекламной кампании
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Broker_2.Methods.Groups.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            type: array
+                            items:
+                              $ref: '#/components/schemas/Models.Broker.Groups'
+                              description: Only for typescript, does not contain real data
+                            title: '@throws Exception'
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                      - $ref: '#/components/schemas/Pagination'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                $ref: '#/components/schemas/Models.Broker.Groups'
+                description: Only for typescript, does not contain real data
   /get/broker_2/log/:
     post:
       operationId: GetBroker2Log
@@ -6477,6 +6545,41 @@ paths:
                                 - type: string
                                 - type: number
                             title: '@return Bank_2\Objects\Subscriptions\Plan[]'
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
+  /get/broker_2/groups/editor/:
+    post:
+      operationId: GetBroker2GroupsEditor
+      tags:
+        - Broker_2
+      summary: Получение групп рекламной кампании для редактора
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Broker_2.Methods.Groups.Editor.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            type: array
+                            items:
+                              oneOf:
+                                - type: string
+                                - type: number
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
@@ -13929,6 +14032,101 @@ components:
       required:
         - inn
       title: Получение данных юридического лица по ИНН
+    Broker_2.Methods.Groups.Add:
+      type: object
+      properties:
+        campaign_tv_id:
+          title: Id кампании
+          type: integer
+        groups_names:
+          title: Имена групп
+          type: array
+          items:
+            oneOf:
+              - type: string
+              - type: number
+      required:
+        - campaign_tv_id
+        - groups_names
+      title: Добавление групп рекламной кампании
+    Broker_2.Methods.Groups.Get:
+      type: object
+      properties:
+        campaign_tv_id:
+          title: Id рекламной кампании
+          type: integer
+        filters_by_keywords:
+          title: Поиск групп по запросам
+          nullable: true
+          type: array
+          items:
+            oneOf:
+              - type: string
+              - type: number
+        fields:
+          $ref: '#/components/schemas/fields'
+        orders:
+          $ref: '#/components/schemas/orders'
+        filters:
+          $ref: '#/components/schemas/filters'
+        id:
+          $ref: '#/components/schemas/id'
+        limit:
+          $ref: '#/components/schemas/limit'
+        offset:
+          $ref: '#/components/schemas/offset'
+        fetch_style:
+          $ref: '#/components/schemas/fetch_style'
+      required:
+        - campaign_tv_id
+        - fields
+        - orders
+        - filters
+        - offset
+      title: Получение групп рекламной кампании
+    Models.Broker.Groups:
+      properties:
+        GEN_SEARCH_STRING():
+          nullable: true
+        id: {}
+        campaign_tv_id:
+          nullable: true
+        name:
+          nullable: true
+        geo:
+          nullable: true
+        type:
+          nullable: true
+        status:
+          nullable: true
+        servingStatus:
+          nullable: true
+        count:
+          nullable: true
+        'on':
+          nullable: true
+        'off':
+          nullable: true
+        for_off:
+          nullable: true
+        keywords_load_time:
+          nullable: true
+        timestamp:
+          nullable: true
+        keyword:
+          nullable: true
+        keywords_off:
+          nullable: true
+        price_max:
+          nullable: true
+        P21:
+          nullable: true
+        P11:
+          nullable: true
+        P1L:
+          nullable: true
+        P2L:
+          nullable: true
     Broker_2.Methods.Log.Get:
       type: object
       properties:
@@ -19376,6 +19574,19 @@ components:
       properties: {}
       required: []
       title: Получение интерфейсов настройки всех планов подписки
+    Broker_2.Methods.Groups.Editor.Get:
+      type: object
+      properties:
+        campaign_tv_id:
+          title: Id рекламной кампании
+          type: integer
+        group_status:
+          title: Статус группы
+          nullable: true
+          type: string
+      required:
+        - campaign_tv_id
+      title: Получение групп рекламной кампании для редактора
     Broker_2.Methods.Log.Export.Get:
       type: object
       properties:
