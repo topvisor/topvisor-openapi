@@ -6447,6 +6447,38 @@ paths:
             model:
               schema:
                 type: 'null'
+  /add/broker_2/tasks/rateTask/:
+    post:
+      operationId: AddBroker2TasksRateTask
+      tags:
+        - Broker_2
+      summary: Ручной запуск корректировки
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Broker_2.Methods.Tasks.RateTask.Add'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            type: integer
+                            title: '@throws Exception'
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
   /get/content_2/apometr/calendar/:
     post:
       operationId: GetContent2ApometrCalendar
@@ -19248,6 +19280,15 @@ components:
       properties: {}
       required: []
       title: Получение интерфейсов настройки всех планов подписки
+    Broker_2.Methods.Tasks.RateTask.Add:
+      type: object
+      properties:
+        campaign_tv_id:
+          title: Id кампании
+          type: integer
+      required:
+        - campaign_tv_id
+      title: Ручной запуск корректировки
     Positions_2.Types.RegionDevice:
       type: integer
       enum:

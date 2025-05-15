@@ -3346,6 +3346,23 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
+    /** Ручной запуск корректировки */
+    "/add/broker_2/tasks/rateTask/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["AddBroker2TasksRateTask"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
     /** Получение календаря апдейтов */
     "/get/content_2/apometr/calendar/": {
         parameters: {
@@ -10821,6 +10838,33 @@ export interface operations {
                     "application/json": ({
                         /** @return Bank_2\Objects\Subscriptions\Plan[] */
                         result: (string | number)[];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: null;
+                };
+            };
+        };
+    };
+    AddBroker2TasksRateTask: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Broker_2/Methods/Tasks/RateTask/Add.ts').components['schemas']['Broker_2.Methods.Tasks.RateTask.Add'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        /** @throws Exception */
+                        result: number;
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
