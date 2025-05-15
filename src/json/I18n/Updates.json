@@ -181,6 +181,14 @@
                     "Embed_widget": {
                         "const": "Embed widget",
                         "readOnly": true
+                    },
+                    "Top_5_sites": {
+                        "const": "SERP Top websites for keyword",
+                        "readOnly": true
+                    },
+                    "More_info": {
+                        "const": "Get more insights on&nbsp;organic SERP with&nbsp;<a href=\"{{ hrefSnapshots }}\" target=\"_blank\">Snapshots</a> and&nbsp;<a href=\"{{ hrefCompetitors }}\" target=\"_blank\">Competitor Analysis</a>",
+                        "readOnly": true
                     }
                 },
                 "required": [
@@ -226,7 +234,9 @@
                     "Updates_yandex_telegram",
                     "Updates_yandex_X",
                     "Share_link",
-                    "Embed_widget"
+                    "Embed_widget",
+                    "Top_5_sites",
+                    "More_info"
                 ]
             }
         }

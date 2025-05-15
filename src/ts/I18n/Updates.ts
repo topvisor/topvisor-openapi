@@ -94,6 +94,10 @@ export interface components {
             readonly Share_link: "Copy link";
             /** @constant */
             readonly Embed_widget: "Embed widget";
+            /** @constant */
+            readonly Top_5_sites: "SERP Top websites for keyword";
+            /** @constant */
+            readonly More_info: "Get more insights on&nbsp;organic SERP with&nbsp;<a href=\"{{ hrefSnapshots }}\" target=\"_blank\">Snapshots</a> and&nbsp;<a href=\"{{ hrefCompetitors }}\" target=\"_blank\">Competitor Analysis</a>";
         };
     };
     responses: never;
