@@ -10819,6 +10819,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
+                        /** @return Config\Sites\Common\Subscriptions\Plan\Plan[] */
                         result: (string | number)[];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;

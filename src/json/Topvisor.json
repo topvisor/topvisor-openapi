@@ -11530,7 +11530,8 @@
                                                                         "type": "number"
                                                                     }
                                                                 ]
-                                                            }
+                                                            },
+                                                            "title": "@return Config\\Sites\\Common\\Subscriptions\\Plan\\Plan[]"
                                                         }
                                                     },
                                                     "required": [
