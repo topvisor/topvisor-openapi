@@ -3194,6 +3194,73 @@
                 }
             }
         },
+        "/get/broker_2/log/": {
+            "post": {
+                "operationId": "GetBroker2Log",
+                "tags": [
+                    "Broker_2"
+                ],
+                "summary": "Получение логов",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Broker_2/Methods/Log/Get.json#/components/schemas/Broker_2.Methods.Log.Get"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "oneOf": [
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "type": "array",
+                                                            "items": {
+                                                                "$ref": "Models/Broker/Log.json#/components/schemas/Models.Broker.Log",
+                                                                "description": "Only for typescript, does not contain real data"
+                                                            },
+                                                            "title": "@throws Exception"
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "result"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                },
+                                                {
+                                                    "$ref": "Pagination.json#/components/schemas/Pagination"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
+                                        }
+                                    ]
+                                }
+                            },
+                            "model": {
+                                "schema": {
+                                    "$ref": "Models/Broker/Log.json#/components/schemas/Models.Broker.Log",
+                                    "description": "Only for typescript, does not contain real data"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
         "/get/comments_2/byAuthor/": {
             "post": {
                 "operationId": "GetComments2ByAuthor",
@@ -11552,6 +11619,38 @@
                             "model": {
                                 "schema": {
                                     "type": "null"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/get/broker_2/log/export/": {
+            "post": {
+                "operationId": "GetBroker2LogExport",
+                "tags": [
+                    "Broker_2"
+                ],
+                "summary": "Экспортирование архива логов",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Broker_2/Methods/Log/Export/Get.json#/components/schemas/Broker_2.Methods.Log.Export.Get"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "@throws Exception",
+                        "content": {
+                            "application/octet-stream": {
+                                "schema": {
+                                    "type": "string",
+                                    "format": "binary"
                                 }
                             }
                         }

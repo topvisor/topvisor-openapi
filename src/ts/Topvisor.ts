@@ -946,6 +946,23 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
+    /** Получение логов */
+    "/get/broker_2/log/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["GetBroker2Log"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
     /** Получение комментариев автора. Без вложенности */
     "/get/comments_2/byAuthor/": {
         parameters: {
@@ -3340,6 +3357,23 @@ export interface paths {
         get?: never;
         put?: never;
         post: operations["GetBank2SubscriptionsPlans"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Экспортирование архива логов */
+    "/get/broker_2/log/export/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["GetBroker2LogExport"];
         delete?: never;
         options?: never;
         head?: never;
@@ -7223,6 +7257,33 @@ export interface operations {
             };
         };
     };
+    GetBroker2Log: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Broker_2/Methods/Log/Get.ts').components['schemas']['Broker_2.Methods.Log.Get'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        /** @throws Exception */
+                        result: import('./Models/Broker/Log.ts').components['schemas']['Models.Broker.Log'][];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: import('./Models/Broker/Log.ts').components['schemas']['Models.Broker.Log'];
+                };
+            };
+        };
+    };
     GetComments2ByAuthor: {
         parameters: {
             query?: never;
@@ -10840,6 +10901,30 @@ export interface operations {
                         result: (string | number)[];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
+                };
+            };
+        };
+    };
+    GetBroker2LogExport: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Broker_2/Methods/Log/Export/Get.ts').components['schemas']['Broker_2.Methods.Log.Export.Get'];
+            };
+        };
+        responses: {
+            /** @description @throws Exception */
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/octet-stream": string;
                 };
             };
         };
