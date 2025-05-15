@@ -11531,7 +11531,7 @@
                                                                     }
                                                                 ]
                                                             },
-                                                            "title": "@return Config\\Sites\\Common\\Subscriptions\\Plan\\Plan[]"
+                                                            "title": "@return Bank_2\\Objects\\Subscriptions\\Plan[]"
                                                         }
                                                     },
                                                     "required": [
