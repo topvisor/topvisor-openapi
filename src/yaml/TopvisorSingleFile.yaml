@@ -1869,6 +1869,74 @@ paths:
             model:
               schema:
                 type: 'null'
+  /edit/broker_2/ads/:
+    post:
+      operationId: EditBroker2Ads
+      tags:
+        - Broker_2
+      summary: Редактирование объявления
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Broker_2.Methods.Ads.Edit'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            title: '@throws Exception'
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
+  /get/broker_2/ads/:
+    post:
+      operationId: GetBroker2Ads
+      tags:
+        - Broker_2
+      summary: Получение объявления рекламной кампании
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Broker_2.Methods.Ads.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            type: array
+                            items:
+                              $ref: '#/components/schemas/Models.Broker.Ads'
+                              description: Only for typescript, does not contain real data
+                            title: '@throws Exception'
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                      - $ref: '#/components/schemas/Pagination'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                $ref: '#/components/schemas/Models.Broker.Ads'
+                description: Only for typescript, does not contain real data
   /add/broker_2/groups/:
     post:
       operationId: AddBroker2Groups
@@ -6646,6 +6714,68 @@ paths:
                                 - type: string
                                 - type: number
                             title: '@return Bank_2\Objects\Subscriptions\Plan[]'
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
+  /edit/broker_2/ads/status/:
+    post:
+      operationId: EditBroker2AdsStatus
+      tags:
+        - Broker_2
+      summary: Изменение статуса объявлений
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Broker_2.Methods.Ads.Status.Edit'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            title: '@throws Exception'
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
+  /edit/broker_2/ads/toModerate/:
+    post:
+      operationId: EditBroker2AdsToModerate
+      tags:
+        - Broker_2
+      summary: Отправка объявления на модерацию
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Broker_2.Methods.Ads.ToModerate.Edit'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            title: '@throws Exception'
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
@@ -14164,6 +14294,120 @@ components:
       required:
         - inn
       title: Получение данных юридического лица по ИНН
+    Broker_2.Types.Ads.Type:
+      type: string
+      enum:
+        - TEXT_AD
+        - SMART_AD
+        - MOBILE_APP_AD
+        - DYNAMIC_TEXT_AD
+        - IMAGE_AD
+        - CPC_VIDEO_AD
+        - CPM_BANNER_AD
+        - CPM_VIDEO_AD
+        - SHOPPING_AD
+        - LISTING_AD
+      title: Тип объявления
+      description: '@see https://yandex.ru/dev/direct/doc/ru/objects/ad#types'
+    Broker_2.Methods.Ads.Edit:
+      type: object
+      properties:
+        campaign_tv_id:
+          title: Id рекламной кампании
+          type: integer
+        group_id:
+          title: Id группы
+          type: integer
+        id:
+          title: Id объявления
+          type: integer
+        type:
+          allOf:
+            - $ref: '#/components/schemas/Broker_2.Types.Ads.Type'
+        title:
+          title: Заголовок
+          nullable: true
+          type: string
+        text:
+          title: Текст
+          nullable: true
+          type: string
+        href:
+          title: Ссылка
+          nullable: true
+          type: string
+        display_url:
+          title: Url для отображения
+          nullable: true
+          type: string
+      required:
+        - campaign_tv_id
+        - group_id
+        - id
+        - type
+      title: Редактирование объявления
+    Broker_2.Methods.Ads.Get:
+      type: object
+      properties:
+        campaign_tv_id:
+          title: Id рекламной кампании
+          type: integer
+        fields:
+          $ref: '#/components/schemas/fields'
+        orders:
+          $ref: '#/components/schemas/orders'
+        filters:
+          $ref: '#/components/schemas/filters'
+        id:
+          $ref: '#/components/schemas/id'
+        limit:
+          $ref: '#/components/schemas/limit'
+        offset:
+          $ref: '#/components/schemas/offset'
+        fetch_style:
+          $ref: '#/components/schemas/fetch_style'
+      required:
+        - campaign_tv_id
+        - fields
+        - orders
+        - filters
+        - offset
+      title: Получение объявления рекламной кампании
+    Models.Broker.Ads:
+      properties:
+        id: {}
+        campaign_tv_id:
+          nullable: true
+        group_id:
+          nullable: true
+        title:
+          nullable: true
+        text:
+          nullable: true
+        text2:
+          nullable: true
+        href:
+          nullable: true
+        domain:
+          nullable: true
+        display_url:
+          nullable: true
+        type:
+          nullable: true
+        subtype:
+          nullable: true
+        status:
+          nullable: true
+        state:
+          nullable: true
+        'on':
+          nullable: true
+        'off':
+          nullable: true
+        for_off:
+          nullable: true
+        timestamp:
+          nullable: true
     Broker_2.Methods.Groups.Add:
       type: object
       properties:
@@ -19877,6 +20121,32 @@ components:
       properties: {}
       required: []
       title: Получение интерфейсов настройки всех планов подписки
+    Broker_2.Methods.Ads.Status.Edit:
+      type: object
+      properties:
+        campaign_tv_id:
+          title: Id кампании
+          type: integer
+        ads_data:
+          title: Информация об объявлениях (id группы, id объявлений и статусы объявлений)
+          type: array
+          items:
+            oneOf:
+              - type: string
+              - type: number
+      required:
+        - campaign_tv_id
+        - ads_data
+      title: Изменение статуса объявлений
+    Broker_2.Methods.Ads.ToModerate.Edit:
+      type: object
+      properties:
+        campaign_tv_id:
+          title: Id кампании
+          type: integer
+      required:
+        - campaign_tv_id
+      title: Отправка объявления на модерацию
     Broker_2.Methods.Groups.Editor.Get:
       type: object
       properties:
