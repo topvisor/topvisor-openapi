@@ -449,7 +449,7 @@ paths:
 
         Возвращает информацию о платеже, если ожидается вывод формы оплаты на сайте
 
-        При ошибке производит редирект на страницу с инофрмацией об ошибке
+        При ошибке производит редирект на страницу с информацией об ошибке
       requestBody:
         content:
           application/json:
@@ -11488,6 +11488,10 @@ components:
         - BY
         - KZ
         - other
+    TV.API.Types.Email:
+      type: string
+      title: E-mail
+      example: name@example.com
     Payments_2.Methods.Add:
       type: object
       properties:
@@ -11508,6 +11512,10 @@ components:
         tariff_id:
           title: ID тарифа (если указан, сумма будет переопределена)
           type: integer
+        plan_id:
+          title: ID плана
+          description: '@see \Services\Bank_2\Methods\Subscriptions\Plans'
+          type: integer
         tariff_count_month:
           title: |-
             Число предоплаченных месяцев по тарифу
@@ -11520,7 +11528,7 @@ components:
           title: Комментарий
           type: string
         items:
-          title: Комментарий
+          title: Элементы платежа
           type: array
           items:
             oneOf:
@@ -11533,11 +11541,10 @@ components:
           title: Пробрасываемые данные в redirectToPay() для FinishAuthorize Tinkoff для Apple Pay и Google Pay
           type: string
         email:
-          title: |-
-            Email (указывается, если у пользователя не привязан email)
-            TODO: Добавить тип Email
+          title: Email (указывается, если у пользователя не привязан email)
           nullable: true
-          type: string
+          allOf:
+            - $ref: '#/components/schemas/TV.API.Types.Email'
         phone:
           title: Телефон (указывается для определенных систем оплаты)
           type: string
@@ -11560,7 +11567,7 @@ components:
 
         Возвращает информацию о платеже, если ожидается вывод формы оплаты на сайте
 
-        При ошибке производит редирект на страницу с инофрмацией об ошибке
+        При ошибке производит редирект на страницу с информацией об ошибке
     Payments_2.Methods.Get:
       type: object
       properties:
@@ -12418,10 +12425,6 @@ components:
           nullable: true
         quitted_user:
           nullable: true
-    TV.API.Types.Email:
-      type: string
-      title: E-mail
-      example: name@example.com
     Admin_2.Methods.Staff.Add:
       type: object
       properties:

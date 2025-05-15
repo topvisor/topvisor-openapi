@@ -15,7 +15,7 @@ export interface components {
          *
          *     Возвращает информацию о платеже, если ожидается вывод формы оплаты на сайте
          *
-         *     При ошибке производит редирект на страницу с инофрмацией об ошибке */
+         *     При ошибке производит редирект на страницу с информацией об ошибке */
         "Payments_2.Methods.Add": {
             /** Платежная система */
             system: import('../Types/System.ts').components['schemas']['Payments_2.Types.System'];
@@ -27,6 +27,11 @@ export interface components {
             requisites_id?: string;
             /** ID тарифа (если указан, сумма будет переопределена) */
             tariff_id?: number;
+            /**
+             * ID плана
+             * @description @see \Services\Bank_2\Methods\Subscriptions\Plans
+             */
+            plan_id?: number;
             /** Число предоплаченных месяцев по тарифу
              *
              *     Примеры:
@@ -35,15 +40,14 @@ export interface components {
             tariff_count_month?: number;
             /** Комментарий */
             comment?: string;
-            /** Комментарий */
+            /** Элементы платежа */
             items?: (string | number)[];
             /** ID карты в системе оплаты для привязки */
             card_id?: string;
             /** Пробрасываемые данные в redirectToPay() для FinishAuthorize Tinkoff для Apple Pay и Google Pay */
             payment_data?: string;
-            /** Email (указывается, если у пользователя не привязан email)
-             *     TODO: Добавить тип Email */
-            email?: string | null;
+            /** Email (указывается, если у пользователя не привязан email) */
+            email?: import('../../TV/API/Types/Email.ts').components['schemas']['TV.API.Types.Email'] | null;
             /** Телефон (указывается для определенных систем оплаты) */
             phone?: string;
             /** Флаг - отменяемый платеж, используется для сохранения данных банковской карты пользователя, сумма платежа вернется пользователю после отмены */
