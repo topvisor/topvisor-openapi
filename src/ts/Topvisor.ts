@@ -980,6 +980,74 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
+    /** Добавление рекламной кампании в управление ставками */
+    "/add/broker_2/campaigns/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["AddBroker2Campaigns"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Удаление рекламной компании из управления ставками */
+    "/del/broker_2/campaigns/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["DelBroker2Campaigns"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Редактирование рекламной кампании */
+    "/edit/broker_2/campaigns/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["EditBroker2Campaigns"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Получение списка рекламных кампаний */
+    "/get/broker_2/campaigns/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["GetBroker2Campaigns"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
     /** Добавление групп рекламной кампании */
     "/add/broker_2/groups/": {
         parameters: {
@@ -3510,6 +3578,23 @@ export interface paths {
         get?: never;
         put?: never;
         post: operations["EditBroker2AdsToModerate"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Обновление данных таргетинга */
+    "/edit/broker_2/campaigns/updateTargeting/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["EditBroker2CampaignsUpdateTargeting"];
         delete?: never;
         options?: never;
         head?: never;
@@ -7498,6 +7583,114 @@ export interface operations {
             };
         };
     };
+    AddBroker2Campaigns: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Broker_2/Methods/Campaigns/Add.ts').components['schemas']['Broker_2.Methods.Campaigns.Add'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        /** @throws Exception */
+                        result: number;
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: import('./Models/Broker/Campaigns.ts').components['schemas']['Models.Broker.Campaigns'];
+                };
+            };
+        };
+    };
+    DelBroker2Campaigns: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Broker_2/Methods/Campaigns/Del.ts').components['schemas']['Broker_2.Methods.Campaigns.Del'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        /** @throws Exception */
+                        result: number;
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: import('./Models/Broker/Campaigns.ts').components['schemas']['Models.Broker.Campaigns'];
+                };
+            };
+        };
+    };
+    EditBroker2Campaigns: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Broker_2/Methods/Campaigns/Edit.ts').components['schemas']['Broker_2.Methods.Campaigns.Edit'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        /** @throws Exception */
+                        result: number;
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: import('./Models/Broker/Campaigns.ts').components['schemas']['Models.Broker.Campaigns'];
+                };
+            };
+        };
+    };
+    GetBroker2Campaigns: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Broker_2/Methods/Campaigns/Get.ts').components['schemas']['Broker_2.Methods.Campaigns.Get'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        /** @throws Exception */
+                        result: import('./Models/Broker/Campaigns.ts').components['schemas']['Models.Broker.Campaigns'][];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: import('./Models/Broker/Campaigns.ts').components['schemas']['Models.Broker.Campaigns'];
+                };
+            };
+        };
+    };
     AddBroker2Groups: {
         parameters: {
             query?: never;
@@ -11331,6 +11524,33 @@ export interface operations {
                         result: unknown;
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
+                };
+            };
+        };
+    };
+    EditBroker2CampaignsUpdateTargeting: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Broker_2/Methods/Campaigns/UpdateTargeting/Edit.ts').components['schemas']['Broker_2.Methods.Campaigns.UpdateTargeting.Edit'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        /** @throws Exception */
+                        result: number;
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: import('./Models/Broker/Campaigns.ts').components['schemas']['Models.Broker.Campaigns'];
                 };
             };
         };

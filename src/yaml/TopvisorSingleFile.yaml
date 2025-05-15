@@ -1937,6 +1937,144 @@ paths:
               schema:
                 $ref: '#/components/schemas/Models.Broker.Ads'
                 description: Only for typescript, does not contain real data
+  /add/broker_2/campaigns/:
+    post:
+      operationId: AddBroker2Campaigns
+      tags:
+        - Broker_2
+      summary: Добавление рекламной кампании в управление ставками
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Broker_2.Methods.Campaigns.Add'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            type: integer
+                            title: '@throws Exception'
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                $ref: '#/components/schemas/Models.Broker.Campaigns'
+                description: Only for typescript, does not contain real data
+  /del/broker_2/campaigns/:
+    post:
+      operationId: DelBroker2Campaigns
+      tags:
+        - Broker_2
+      summary: Удаление рекламной компании из управления ставками
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Broker_2.Methods.Campaigns.Del'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            type: integer
+                            title: '@throws Exception'
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                      - $ref: '#/components/schemas/Pagination'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                $ref: '#/components/schemas/Models.Broker.Campaigns'
+                description: Only for typescript, does not contain real data
+  /edit/broker_2/campaigns/:
+    post:
+      operationId: EditBroker2Campaigns
+      tags:
+        - Broker_2
+      summary: Редактирование рекламной кампании
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Broker_2.Methods.Campaigns.Edit'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            type: integer
+                            title: '@throws Exception'
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                      - $ref: '#/components/schemas/Pagination'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                $ref: '#/components/schemas/Models.Broker.Campaigns'
+                description: Only for typescript, does not contain real data
+  /get/broker_2/campaigns/:
+    post:
+      operationId: GetBroker2Campaigns
+      tags:
+        - Broker_2
+      summary: Получение списка рекламных кампаний
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Broker_2.Methods.Campaigns.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            type: array
+                            items:
+                              $ref: '#/components/schemas/Models.Broker.Campaigns'
+                              description: Only for typescript, does not contain real data
+                            title: '@throws Exception'
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                      - $ref: '#/components/schemas/Pagination'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                $ref: '#/components/schemas/Models.Broker.Campaigns'
+                description: Only for typescript, does not contain real data
   /add/broker_2/groups/:
     post:
       operationId: AddBroker2Groups
@@ -6783,6 +6921,40 @@ paths:
             model:
               schema:
                 type: 'null'
+  /edit/broker_2/campaigns/updateTargeting/:
+    post:
+      operationId: EditBroker2CampaignsUpdateTargeting
+      tags:
+        - Broker_2
+      summary: Обновление данных таргетинга
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Broker_2.Methods.Campaigns.UpdateTargeting.Edit'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            type: integer
+                            title: '@throws Exception'
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                      - $ref: '#/components/schemas/Pagination'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                $ref: '#/components/schemas/Models.Broker.Campaigns'
+                description: Only for typescript, does not contain real data
   /get/broker_2/groups/editor/:
     post:
       operationId: GetBroker2GroupsEditor
@@ -14408,6 +14580,182 @@ components:
           nullable: true
         timestamp:
           nullable: true
+    Broker_2.Methods.Campaigns.Add:
+      type: object
+      properties:
+        project_id:
+          title: Id проекта
+          type: integer
+        filters:
+          $ref: '#/components/schemas/filters'
+        id:
+          $ref: '#/components/schemas/id'
+      required:
+        - project_id
+      title: Добавление рекламной кампании в управление ставками
+    Models.Broker.Campaigns:
+      properties:
+        id: {}
+        project_id:
+          nullable: true
+        provider_n:
+          nullable: true
+        campaign_tv_id:
+          nullable: true
+        client_id:
+          nullable: true
+        login:
+          nullable: true
+        agency_name:
+          nullable: true
+        name:
+          nullable: true
+        shows:
+          nullable: true
+        clicks:
+          nullable: true
+        count_tasks:
+          nullable: true
+        frequency:
+          nullable: true
+        rest:
+          nullable: true
+        price:
+          nullable: true
+        timezone:
+          nullable: true
+        currency:
+          nullable: true
+        state:
+          nullable: true
+        servingStatus:
+          nullable: true
+        status_name:
+          nullable: true
+        manualBids:
+          nullable: true
+        no_manage_suspended_keywords:
+          nullable: true
+        added:
+          nullable: true
+        'on':
+          nullable: true
+        on_tv:
+          nullable: true
+        'off':
+          nullable: true
+        for_off:
+          nullable: true
+        groups_load_time:
+          nullable: true
+        keywords_statistics_update:
+          nullable: true
+        count_keywords:
+          nullable: true
+        count_keywords_autocorrect:
+          nullable: true
+        targeting:
+          nullable: true
+        limits:
+          nullable: true
+        limits_max:
+          nullable: true
+    Broker_2.Methods.Campaigns.Del:
+      type: object
+      properties:
+        project_id:
+          title: Id проекта
+          type: integer
+        filters:
+          $ref: '#/components/schemas/filters'
+        id:
+          $ref: '#/components/schemas/id'
+        fields:
+          $ref: '#/components/schemas/fields'
+        orders:
+          $ref: '#/components/schemas/orders'
+        limit:
+          $ref: '#/components/schemas/limit'
+        offset:
+          $ref: '#/components/schemas/offset'
+        fetch_style:
+          $ref: '#/components/schemas/fetch_style'
+      required:
+        - project_id
+        - filters
+      title: Удаление рекламной компании из управления ставками
+    Broker_2.Methods.Campaigns.Edit:
+      type: object
+      properties:
+        project_id:
+          title: Id проекта
+          type: integer
+        update_targeting:
+          title: Обновить ли данные таргетинга (только для Директа)
+          type: boolean
+        on_tv:
+          title: Включить ли
+          nullable: true
+          type: boolean
+        frequency:
+          title: 'Частота корректировок (1: раз в час, 2: два раза в час, -1: раз в день, -2: два раза в день)'
+          nullable: true
+          type: integer
+        no_manage_suspended_keywords:
+          title: Не управлять ли отключенными ключевыми фразами
+          nullable: true
+          type: boolean
+        include_used_in_other_projects:
+          title: Получить ли информацию о том, в каких проектах интегрированы указанные компании
+          type: boolean
+        filters:
+          $ref: '#/components/schemas/filters'
+        id:
+          $ref: '#/components/schemas/id'
+        fields:
+          $ref: '#/components/schemas/fields'
+        orders:
+          $ref: '#/components/schemas/orders'
+        limit:
+          $ref: '#/components/schemas/limit'
+        offset:
+          $ref: '#/components/schemas/offset'
+        fetch_style:
+          $ref: '#/components/schemas/fetch_style'
+      required:
+        - project_id
+        - filters
+      title: Редактирование рекламной кампании
+    Broker_2.Methods.Campaigns.Get:
+      type: object
+      properties:
+        project_id:
+          title: Id проекта
+          type: integer
+        include_used_in_other_projects:
+          title: Получить ли информацию о том, в каких проектах интегрированы указанные компании
+          type: boolean
+        fields:
+          $ref: '#/components/schemas/fields'
+        orders:
+          $ref: '#/components/schemas/orders'
+        filters:
+          $ref: '#/components/schemas/filters'
+        id:
+          $ref: '#/components/schemas/id'
+        limit:
+          $ref: '#/components/schemas/limit'
+        offset:
+          $ref: '#/components/schemas/offset'
+        fetch_style:
+          $ref: '#/components/schemas/fetch_style'
+      required:
+        - project_id
+        - fields
+        - orders
+        - filters
+        - offset
+      title: Получение списка рекламных кампаний
     Broker_2.Methods.Groups.Add:
       type: object
       properties:
@@ -20147,6 +20495,31 @@ components:
       required:
         - campaign_tv_id
       title: Отправка объявления на модерацию
+    Broker_2.Methods.Campaigns.UpdateTargeting.Edit:
+      type: object
+      properties:
+        project_id:
+          title: Id проекта
+          type: integer
+        include_used_in_other_projects:
+          title: Получить ли информацию о том, в каких проектах интегрированы указанные компании
+          type: boolean
+        filters:
+          $ref: '#/components/schemas/filters'
+        id:
+          $ref: '#/components/schemas/id'
+        orders:
+          $ref: '#/components/schemas/orders'
+        limit:
+          $ref: '#/components/schemas/limit'
+        offset:
+          $ref: '#/components/schemas/offset'
+        fetch_style:
+          $ref: '#/components/schemas/fetch_style'
+      required:
+        - project_id
+        - filters
+      title: Обновление данных таргетинга
     Broker_2.Methods.Groups.Editor.Get:
       type: object
       properties:
