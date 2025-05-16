@@ -106,6 +106,18 @@
                     "View_all": {
                         "const": "View all",
                         "readOnly": true
+                    },
+                    "daily": {
+                        "const": "daily",
+                        "readOnly": true
+                    },
+                    "monthly": {
+                        "const": "monthly",
+                        "readOnly": true
+                    },
+                    "per_project": {
+                        "const": "per project",
+                        "readOnly": true
                     }
                 },
                 "required": [
@@ -121,7 +133,10 @@
                     "View_invoice",
                     "Billing_history",
                     "No_billing_history_data",
-                    "View_all"
+                    "View_all",
+                    "daily",
+                    "monthly",
+                    "per_project"
                 ]
             }
         }

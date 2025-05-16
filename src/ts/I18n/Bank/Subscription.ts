@@ -79,6 +79,12 @@ export interface components {
             readonly No_billing_history_data: "You do not have any billing history.";
             /** @constant */
             readonly View_all: "View all";
+            /** @constant */
+            readonly daily: "daily";
+            /** @constant */
+            readonly monthly: "monthly";
+            /** @constant */
+            readonly per_project: "per project";
         };
     };
     responses: never;
