@@ -10,6 +10,10 @@ export interface components {
         "I18n.Bank.Subscription": {
             /** @constant */
             readonly Texts_by_limit_name: {
+                positions_tasks: {
+                    name: "Daily Rank Checks";
+                    description: "Total number of tasks, that are performed every day. A check (task) is a rank checking for 1 keywords in 1 search engine, 1 location and 1 device type. For example, 500 checks is checking ranks for 500 keywords в Google New York desktop or 250 keywords in both Google New York desktop и Google New York smartphone.";
+                };
                 positions_check: {
                     name: "Rank checks";
                     description: "Example description";
@@ -36,10 +40,6 @@ export interface components {
                 };
                 projects_rights: {
                     name: "Guest Users";
-                    description: "";
-                };
-                positions_tasks: {
-                    name: "Rank total tasks";
                     description: "";
                 };
                 projects_competitors: {
