@@ -87,6 +87,12 @@ export interface components {
             readonly yearly: "yearly";
             /** @constant */
             readonly per_project: "per project";
+            /** @constant */
+            readonly Confirmed: "Confirmed";
+            /** @constant */
+            readonly Prepared: "Prepared";
+            /** @constant */
+            readonly Cancelled: "Cancelled";
         };
     };
     responses: never;

@@ -122,6 +122,18 @@
                     "per_project": {
                         "const": "per project",
                         "readOnly": true
+                    },
+                    "Confirmed": {
+                        "const": "Confirmed",
+                        "readOnly": true
+                    },
+                    "Prepared": {
+                        "const": "Prepared",
+                        "readOnly": true
+                    },
+                    "Cancelled": {
+                        "const": "Cancelled",
+                        "readOnly": true
                     }
                 },
                 "required": [
@@ -141,7 +153,10 @@
                     "daily",
                     "monthly",
                     "yearly",
-                    "per_project"
+                    "per_project",
+                    "Confirmed",
+                    "Prepared",
+                    "Cancelled"
                 ]
             }
         }
