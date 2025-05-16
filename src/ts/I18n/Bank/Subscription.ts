@@ -84,6 +84,8 @@ export interface components {
             /** @constant */
             readonly monthly: "monthly";
             /** @constant */
+            readonly yearly: "yearly";
+            /** @constant */
             readonly per_project: "per project";
         };
     };

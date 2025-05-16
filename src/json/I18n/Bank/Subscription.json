@@ -115,6 +115,10 @@
                         "const": "monthly",
                         "readOnly": true
                     },
+                    "yearly": {
+                        "const": "yearly",
+                        "readOnly": true
+                    },
                     "per_project": {
                         "const": "per project",
                         "readOnly": true
@@ -136,6 +140,7 @@
                     "View_all",
                     "daily",
                     "monthly",
+                    "yearly",
                     "per_project"
                 ]
             }
