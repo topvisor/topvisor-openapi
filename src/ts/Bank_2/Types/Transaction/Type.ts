@@ -11,7 +11,7 @@ export interface components {
          * Тип транзакции
          * @enum {string}
          */
-        "Bank_2.Types.Transaction.Type": "minus" | "plus" | "plusBonus" | "minusAdmin";
+        "Bank_2.Types.Transaction.Type": "minus" | "plus" | "plusBonus" | "minusAdmin" | "minusGhost";
     };
     responses: never;
     parameters: never;

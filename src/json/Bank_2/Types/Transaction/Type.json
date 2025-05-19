@@ -13,7 +13,8 @@
                     "minus",
                     "plus",
                     "plusBonus",
-                    "minusAdmin"
+                    "minusAdmin",
+                    "minusGhost"
                 ],
                 "title": "Тип транзакции"
             }
