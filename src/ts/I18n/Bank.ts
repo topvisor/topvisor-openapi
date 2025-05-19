@@ -167,7 +167,9 @@ export interface components {
             /** @constant */
             readonly plan_payment: "pricing plan subscription fee";
             /** @constant */
-            readonly Extending_plan_failed: "Subscription failed to renew";
+            readonly Extending_tariff_failed: "Tariff failed to renew";
+            /** @constant */
+            readonly Extending_subscription_failed: "Subscription failed to renew";
             /** @constant */
             readonly Extending_plan_notice: "To restart your subscription ";
             /** @constant */
