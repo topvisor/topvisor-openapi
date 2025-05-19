@@ -511,7 +511,7 @@
                         "readOnly": true
                     },
                     "Name_payment_log_subscription_pay": {
-                        "const": "Subscription plan {{ subscriptionPlanId }}, period: {{ subscriptionCycle }} months",
+                        "const": "Subscription plan {{ subscriptionPlanLabel }}, period: {{ subscriptionCycle }} months",
                         "readOnly": true
                     },
                     "System_name_balance": {

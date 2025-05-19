@@ -259,7 +259,7 @@ export interface components {
             /** @constant */
             readonly Name_payment_log_subscription_in: "Incoming payment #%paymentId% for subscription  via \"%systemName%\"%contractInfo%";
             /** @constant */
-            readonly Name_payment_log_subscription_pay: "Subscription plan {{ subscriptionPlanId }}, period: {{ subscriptionCycle }} months";
+            readonly Name_payment_log_subscription_pay: "Subscription plan {{ subscriptionPlanLabel }}, period: {{ subscriptionCycle }} months";
             /** @constant */
             readonly System_name_balance: "Payment from account balance";
             /** @constant */
