@@ -59,7 +59,9 @@ export interface components {
             /** @constant */
             readonly Message_start_text1: "Hi! I can send your questions to Customer Support and get replies.";
             /** @constant */
-            readonly Message_start_text2: "To get a list of commands that I understand, type /help. To contact support, send your question in the chat.";
+            readonly Message_start_text2: "To get a list of commands that I understand, type /help.";
+            /** @constant */
+            readonly Message_start_text3: "To contact support, send your question in the chat.";
             /** @constant */
             readonly Message_start_apometer_text: "";
             /** @constant */

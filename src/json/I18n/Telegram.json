@@ -111,7 +111,11 @@
                         "readOnly": true
                     },
                     "Message_start_text2": {
-                        "const": "To get a list of commands that I understand, type /help. To contact support, send your question in the chat.",
+                        "const": "To get a list of commands that I understand, type /help.",
+                        "readOnly": true
+                    },
+                    "Message_start_text3": {
+                        "const": "To contact support, send your question in the chat.",
                         "readOnly": true
                     },
                     "Message_start_apometer_text": {
@@ -206,6 +210,7 @@
                     "Message_available_commands_tpvsr",
                     "Message_start_text1",
                     "Message_start_text2",
+                    "Message_start_text3",
                     "Message_start_apometer_text",
                     "Message_stop_text",
                     "Message_pair_done1",
