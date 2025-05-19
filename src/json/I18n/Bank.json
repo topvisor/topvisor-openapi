@@ -502,8 +502,12 @@
                         "const": "Credit%systemType% - Payment TV-%paymentId% via \"%systemName%\"%contractInfo%",
                         "readOnly": true
                     },
-                    "Name_payment_log_tariff": {
-                        "const": "1-Month Subscription %tariffName% - plan - Payment TV-%paymentId% via \"%systemName%\"%contractInfo%",
+                    "Name_payment_log_subscription_in": {
+                        "const": "Incoming payment #%paymentId% for subscription  via \"%systemName%\"%contractInfo%",
+                        "readOnly": true
+                    },
+                    "Name_payment_log_subscription_pay": {
+                        "const": "Subscription plan {{ subscriptionPlanId }}, period: {{ subscriptionCycle }} months",
                         "readOnly": true
                     },
                     "System_name_balance": {
@@ -1280,7 +1284,8 @@
                     "You_can_select_change_currency_once_before_first_payment_notice",
                     "Payments_willbe_made_in_currency",
                     "Name_payment_log",
-                    "Name_payment_log_tariff",
+                    "Name_payment_log_subscription_in",
+                    "Name_payment_log_subscription_pay",
                     "System_name_balance",
                     "System_name_card",
                     "System_name_invoice",
