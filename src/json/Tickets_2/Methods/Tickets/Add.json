@@ -77,6 +77,15 @@
                     "task_id": {
                         "title": "Номер задачи redmine, связанной с тикетом\n\nНедокументированный параметр",
                         "type": "integer"
+                    },
+                    "site": {
+                        "title": "Сайт для создания тикета",
+                        "nullable": true,
+                        "allOf": [
+                            {
+                                "$ref": "../../../TV/Core/Sites/Sites.json#/components/schemas/TV.Core.Sites.Sites"
+                            }
+                        ]
                     }
                 },
                 "required": [

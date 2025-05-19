@@ -17167,6 +17167,11 @@ components:
         - android
         - guest
       title: Откуда поступил тикет
+    TV.Core.Sites.Sites:
+      type: string
+      enum:
+        - topvisor
+        - thundo
     Tickets_2.Methods.Tickets.Add:
       type: object
       properties:
@@ -17225,6 +17230,11 @@ components:
 
             Недокументированный параметр
           type: integer
+        site:
+          title: Сайт для создания тикета
+          nullable: true
+          allOf:
+            - $ref: '#/components/schemas/TV.Core.Sites.Sites'
       required:
         - text
       title: Создание тикета

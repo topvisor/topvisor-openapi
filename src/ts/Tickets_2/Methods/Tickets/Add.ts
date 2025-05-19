@@ -40,6 +40,8 @@ export interface components {
              *
              *     Недокументированный параметр */
             task_id?: number;
+            /** Сайт для создания тикета */
+            site?: import('../../../TV/Core/Sites/Sites.ts').components['schemas']['TV.Core.Sites.Sites'] | null;
         };
     };
     responses: never;
