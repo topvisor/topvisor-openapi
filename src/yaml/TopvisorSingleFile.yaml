@@ -14354,12 +14354,196 @@ components:
           nullable: true
         by_user_email:
           nullable: true
+    Bank_2.Objects.Subscriptions.Plan:
+      type: object
+      properties:
+        id:
+          type: string
+        name:
+          type: string
+        priceUSD:
+          type: integer
+        annualDiscount:
+          title: |-
+            Скидка за годовую подписку
+
+            При расчете финальной стоимости может использоваться округление
+          type: number
+        maxByName:
+          title: Выдаваемые лимиты
+          type: array
+          items:
+            oneOf:
+              - type: string
+              - type: number
+        suffixName:
+          title: Суффикс, характеризующий настройки тарифа
+          type: string
+      required:
+        - id
+        - name
+        - priceUSD
+        - annualDiscount
+        - maxByName
+        - suffixName
+      title: |-
+        Класс настройки плана подписки
+
+        Используйте этот класс для описания настроек в namespace `Config\Sites\Common\Subscriptions\Plan`
+
+        В плане нужно указать его имя, стоимость и лимиты
+
+        Планы можно группировать:
+
+        - в одном и том же плане может быть разное количество запросов и других лимитов
+        - в этом случае для каждого варианта создается отдельный класс с добавлением порядкового номера в имени файла
+        - все вариации такого плана должны иметь одно и то же имя
+        - это делается для визуального упрощения работы с планами, на самом деле каждая вариация плана, это уникальный план со своими настройками
+
+        В примерах указаны примерные соотношения между лимитами:
+
+        - для удобства можно использовать математическими выражения
+        - для гибкости можно указывать произвольные значения
+
+        Рекомендация по названию классов, для удобства настройки:
+         - `A_{{ PlanName }}{{ Number }}`
+         - `B_{{ PlanName }}{{ Number }}`
+         - `C_{{ PlanName }}{{ Number }}`
+
+        Пример имени класса, оно же id плана: `StarterPack1`
+
+        При выводе на сайте тарифы выводятся в нужном порядке, например с сортировкой по стоимости
+    Bank_2.Types.Subscriptions.Status:
+      type: string
+      enum:
+        - active
+        - suspended
+        - finished
+        - terminated
+      title: Статус подписки
+    Bank_2.Types.Subscriptions.Type:
+      type: string
+      enum:
+        - auto
+        - manual
+      title: |-
+        Тип подписки
+
+        Определяет способ списания средств и порядок продления подписки
+    Bank_2.Types.Subscriptions.Manager:
+      type: string
+      enum:
+        - system
+        - api
+      title: |-
+        Кто выполняет продление подписки, а именно:
+
+        - запуск списания с карты / электронного кошелька
+        - создание счета
+        - отправка предложения об оплате
+    Bank_2.Objects.Requisites.Payment.RecurrentState:
+      type: object
+      properties:
+        status:
+          allOf:
+            - $ref: '#/components/schemas/Bank_2.Types.Subscriptions.Status'
+        type:
+          allOf:
+            - $ref: '#/components/schemas/Bank_2.Types.Subscriptions.Type'
+        manager:
+          allOf:
+            - $ref: '#/components/schemas/Bank_2.Types.Subscriptions.Manager'
+        methodInfo:
+          title: |-
+            Краткая информация о способе платежа
+
+            - неполный номер карты и срок действия
+            - номер договора
+          type: string
+      required:
+        - status
+        - type
+        - manager
+        - methodInfo
+      title: Состояние рекуррентного платежа (после выполнения платежа)
+    TV.API.Types.Datetime:
+      type: string
+      title: Дата с временем
+      example: '2000-01-01 00:00:00'
+    Bank_2.Objects.Subscriptions.Subscription:
+      type: object
+      properties:
+        paymentId:
+          title: id платежа, подписки
+          nullable: true
+          type: integer
+        externalPaymentId:
+          nullable: true
+          type: string
+        plan:
+          title: Текущий план подписки
+          nullable: true
+          allOf:
+            - $ref: '#/components/schemas/Bank_2.Objects.Subscriptions.Plan'
+        recurrentState:
+          title: Состояние подписки
+          nullable: true
+          allOf:
+            - $ref: '#/components/schemas/Bank_2.Objects.Requisites.Payment.RecurrentState'
+        cycle:
+          title: Время окончания подписки
+          nullable: true
+          allOf:
+            - $ref: '#/components/schemas/Bank_2.Types.Subscriptions.Cycle'
+        timeStart:
+          title: Время начала подписки
+          nullable: true
+          allOf:
+            - $ref: '#/components/schemas/TV.API.Types.Datetime'
+        timeEnd:
+          title: Время окончания подписки
+          nullable: true
+          allOf:
+            - $ref: '#/components/schemas/TV.API.Types.Datetime'
+        limitUsedByName:
+          title: |-
+            Использованные лимиты
+
+            Доступные лимиты см. в `plan`
+
+            Для нетарифицируемых лимитов значение всегда `null`
+          description: '@type Array<Bank_2\Types\Subscriptions\Limit\Name, int>'
+          nullable: true
+          type: array
+          items:
+            oneOf:
+              - type: string
+              - type: number
+        limitTypeByName:
+          title: Типы лимитов
+          nullable: true
+          type: array
+          items:
+            oneOf:
+              - type: string
+              - type: number
+      required: []
+      title: Информация о текущей подписки пользователя и ее лимитах
     Bank_2.Methods.Info.Get:
       type: object
       properties:
         subscription_show_limits:
           title: Отобразить лимиты при возвращении подписки
           type: boolean
+        result:
+          title: |-
+            Для openapi
+
+            TODO: После типизации результата убрать
+          description: '@internal'
+          nullable: true
+          allOf:
+            - $ref: '#/components/schemas/Bank_2.Objects.Subscriptions.Subscription'
         fields:
           $ref: '#/components/schemas/fields'
         orders:
@@ -19574,10 +19758,6 @@ components:
           nullable: true
         count_warnings:
           nullable: true
-    TV.API.Types.Datetime:
-      type: string
-      title: Дата с временем
-      example: '2000-01-01 00:00:00'
     Audit_2.Methods.Audit.Log.Get:
       type: object
       properties:

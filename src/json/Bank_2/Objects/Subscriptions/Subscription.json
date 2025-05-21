@@ -1,0 +1,104 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Bank_2.Objects.Subscriptions.Subscription",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Bank_2.Objects.Subscriptions.Subscription": {
+                "type": "object",
+                "properties": {
+                    "paymentId": {
+                        "title": "id платежа, подписки",
+                        "nullable": true,
+                        "type": "integer"
+                    },
+                    "externalPaymentId": {
+                        "nullable": true,
+                        "type": "string"
+                    },
+                    "plan": {
+                        "title": "Текущий план подписки",
+                        "nullable": true,
+                        "allOf": [
+                            {
+                                "$ref": "../../../Bank_2/Objects/Subscriptions/Plan.json#/components/schemas/Bank_2.Objects.Subscriptions.Plan"
+                            }
+                        ]
+                    },
+                    "recurrentState": {
+                        "title": "Состояние подписки",
+                        "nullable": true,
+                        "allOf": [
+                            {
+                                "$ref": "../../../Bank_2/Objects/Requisites/Payment/RecurrentState.json#/components/schemas/Bank_2.Objects.Requisites.Payment.RecurrentState"
+                            }
+                        ]
+                    },
+                    "cycle": {
+                        "title": "Время окончания подписки",
+                        "nullable": true,
+                        "allOf": [
+                            {
+                                "$ref": "../../../Bank_2/Types/Subscriptions/Cycle.json#/components/schemas/Bank_2.Types.Subscriptions.Cycle"
+                            }
+                        ]
+                    },
+                    "timeStart": {
+                        "title": "Время начала подписки",
+                        "nullable": true,
+                        "allOf": [
+                            {
+                                "$ref": "../../../TV/API/Types/Datetime.json#/components/schemas/TV.API.Types.Datetime"
+                            }
+                        ]
+                    },
+                    "timeEnd": {
+                        "title": "Время окончания подписки",
+                        "nullable": true,
+                        "allOf": [
+                            {
+                                "$ref": "../../../TV/API/Types/Datetime.json#/components/schemas/TV.API.Types.Datetime"
+                            }
+                        ]
+                    },
+                    "limitUsedByName": {
+                        "title": "Использованные лимиты\n\nДоступные лимиты см. в `plan`\n\nДля нетарифицируемых лимитов значение всегда `null`",
+                        "description": "@type Array<Bank_2\\Types\\Subscriptions\\Limit\\Name, int>",
+                        "nullable": true,
+                        "type": "array",
+                        "items": {
+                            "oneOf": [
+                                {
+                                    "type": "string"
+                                },
+                                {
+                                    "type": "number"
+                                }
+                            ]
+                        }
+                    },
+                    "limitTypeByName": {
+                        "title": "Типы лимитов",
+                        "nullable": true,
+                        "type": "array",
+                        "items": {
+                            "oneOf": [
+                                {
+                                    "type": "string"
+                                },
+                                {
+                                    "type": "number"
+                                }
+                            ]
+                        }
+                    }
+                },
+                "required": [],
+                "title": "Информация о текущей подписки пользователя и ее лимитах"
+            }
+        }
+    }
+}

@@ -14,6 +14,16 @@
                         "title": "Отобразить лимиты при возвращении подписки",
                         "type": "boolean"
                     },
+                    "result": {
+                        "title": "Для openapi\n\nTODO: После типизации результата убрать",
+                        "description": "@internal",
+                        "nullable": true,
+                        "allOf": [
+                            {
+                                "$ref": "../../../Bank_2/Objects/Subscriptions/Subscription.json#/components/schemas/Bank_2.Objects.Subscriptions.Subscription"
+                            }
+                        ]
+                    },
                     "fields": {
                         "$ref": "../../../TV/API/Params/FieldsTrait.json#/components/schemas/TV.API.Params.FieldsTrait/properties/fields"
                     },
