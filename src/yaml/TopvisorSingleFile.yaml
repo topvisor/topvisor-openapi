@@ -21927,54 +21927,6 @@ components:
         Получение информации об SSL сертификате
         Возваращает объект с параметрами:
         - expire
-    Keywords_2.Types.Region:
-      type: object
-      properties:
-        key:
-          title: Ключ региона
-          type: integer
-        searcher_key:
-          title: Ключ поисковика
-          allOf:
-            - $ref: '#/components/schemas/Positions_2.Types.SearcherKey'
-        lang:
-          title: |-
-            Язык региона
-
-            Для каждой ПС доступен разный
-          nullable: true
-          type: string
-        types:
-          title: Тип проверки частот. Для гугла всегда 3
-          type: array
-          items:
-            oneOf:
-              - type: string
-              - type: number
-        device:
-          title: Девайс
-          nullable: true
-          allOf:
-            - $ref: '#/components/schemas/Positions_2.Types.RegionDevice'
-        depth:
-          title: |-
-            Глубина региона
-
-            - 1-3 для Яндекса (ПК)
-            - 1-10 для Google
-            - 1-3 для GooglePlay
-          default: 1
-          type: integer
-      required:
-        - key
-        - searcher_key
-        - types
-        - depth
-    Keywords_2.Types.RegionsArray:
-      type: array
-      items:
-        $ref: '#/components/schemas/Keywords_2.Types.Region'
-      title: Массив регионов
     Projects_2.Methods.Tasks.Volumes.Add:
       type: object
       properties:
@@ -22005,14 +21957,14 @@ components:
             - 2: не проверять запросы с частотой
           nullable: true
           type: integer
-        regions:
-          title: Объекты определителей частоты (параметр не обязатален, если check_all_regions = true)
+        qualifiers:
+          title: Объекты определителей частоты (параметр не обязателен, если check_all_regions = true)
           allOf:
-            - $ref: '#/components/schemas/Keywords_2.Types.RegionsArray'
+            - $ref: '#/components/schemas/Keywords_2.Types.Volumes.Qualifiers'
       required:
         - url
         - keywords
-        - regions
+        - qualifiers
       title: Создание задачи
     Tickets_2.Methods.Admin.Message.Del:
       type: object

@@ -23,8 +23,8 @@ export interface components {
              *     - 1: не проверять запросы с актуальной частотой
              *     - 2: не проверять запросы с частотой */
             no_recheck?: number | null;
-            /** Объекты определителей частоты (параметр не обязатален, если check_all_regions = true) */
-            regions: import('../../../../Keywords_2/Types/RegionsArray.ts').components['schemas']['Keywords_2.Types.RegionsArray'];
+            /** Объекты определителей частоты (параметр не обязателен, если check_all_regions = true) */
+            qualifiers: import('../../../../Keywords_2/Types/Volumes/Qualifiers.ts').components['schemas']['Keywords_2.Types.Volumes.Qualifiers'];
         };
     };
     responses: never;
