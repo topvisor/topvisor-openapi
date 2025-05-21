@@ -48,6 +48,15 @@
                     "folder_name": {
                         "nullable": true
                     },
+                    "task_time_delete": {
+                        "nullable": true
+                    },
+                    "task_method_name": {
+                        "nullable": true
+                    },
+                    "task_method_params_json": {
+                        "nullable": true
+                    },
                     "site": {
                         "nullable": true
                     },

@@ -21,6 +21,9 @@ export interface components {
             last_view?: any;
             folder_id?: number | null;
             folder_name?: any;
+            task_time_delete?: any;
+            task_method_name?: any;
+            task_method_params_json?: any;
             site?: any;
             update?: any;
             status_positions?: string | null;
