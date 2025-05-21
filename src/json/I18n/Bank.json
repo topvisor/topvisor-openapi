@@ -1167,7 +1167,7 @@
                         "readOnly": true
                     },
                     "Dialog_subscription_title": {
-                        "const": "Subscribe to {{ siteName }} Pricing Plan",
+                        "const": "Subscribe to the {{ siteName }} plan",
                         "readOnly": true
                     }
                 },

@@ -12,46 +12,57 @@ export interface components {
             readonly Texts_by_limit_name: {
                 positions_tasks: {
                     name: "Daily Rank Checks";
+                    extendedName: "daily rank checks";
                     description: "Total number of tasks, that are performed every day. A check (task) is a rank checking for 1 keywords in 1 search engine, 1 location and 1 device type. For example, 500 checks is checking ranks for 500 keywords в Google New York desktop or 250 keywords in both Google New York desktop и Google New York smartphone.";
                 };
                 positions_check: {
                     name: "Rank checks";
+                    extendedName: "rank checks";
                     description: "Example description";
                 };
                 positions_check_manual: {
                     name: "Manual rechecks";
+                    extendedName: "daily manual rechecks";
                     description: "";
                 };
                 keywords_volumes: {
                     name: "Search volume";
+                    extendedName: "search volume";
                     description: "";
                 };
                 keywords_collect: {
                     name: "Keyword research";
+                    extendedName: "keyword research by your site";
                     description: "";
                 };
                 keywords_collect_hint: {
                     name: "Search suggestions";
+                    extendedName: "search suggestions";
                     description: "";
                 };
                 projects: {
                     name: "Projects";
+                    extendedName: "projects";
                     description: "";
                 };
                 projects_rights: {
                     name: "Guest Users";
+                    extendedName: "guest users";
                     description: "";
                 };
                 projects_competitors: {
                     name: "Competitors";
+                    extendedName: "competitors per project";
                     description: "";
                 };
                 projects_archive: {
                     name: "Archived projects";
+                    extendedName: "archived projects";
                     description: "";
                 };
                 api: {
                     name: "API";
+                    extendedName: "API";
                     description: "";
                 };
             };
@@ -93,6 +104,20 @@ export interface components {
             readonly Prepared: "Prepared";
             /** @constant */
             readonly Cancelled: "Cancelled";
+            /** @constant */
+            readonly Subscribing_to_thundo_plan?: "Subscribing to the Thundo plan";
+            /** @constant */
+            readonly Your_current_plan: "Your current plan is";
+            /** @constant */
+            readonly Pay_annually: "Pay annually and";
+            /** @constant */
+            readonly get_2_months: "get 2 months free";
+            /** @constant */
+            readonly Do_you_need_more: "<b>Do you need more than 50 000 keywords?</b><br>Just get in touch to get a tailored quote.";
+            /** @constant */
+            readonly Contact_sales: "Contact Sales";
+            /** @constant */
+            readonly keywords: "keywords";
         };
     };
     responses: never;

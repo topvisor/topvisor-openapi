@@ -587,7 +587,7 @@ export interface components {
             /** @constant */
             readonly Act: "Act";
             /** @constant */
-            readonly Dialog_subscription_title: "Subscribe to {{ siteName }} Pricing Plan";
+            readonly Dialog_subscription_title: "Subscribe to the {{ siteName }} plan";
         };
     };
     responses: never;
