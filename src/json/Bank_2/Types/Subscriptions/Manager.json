@@ -1,0 +1,20 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Bank_2.Types.Subscriptions.Manager",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Bank_2.Types.Subscriptions.Manager": {
+                "type": "string",
+                "enum": [
+                    "system",
+                    "api"
+                ],
+                "title": "Кто выполняет продление подписки, а именно:\n\n- запуск списания с карты / электронного кошелька\n- создание счета\n- отправка предложения об оплате"
+            }
+        }
+    }
+}
