@@ -70,10 +70,6 @@
                         },
                         "readOnly": true
                     },
-                    "Plans_and_limits": {
-                        "const": "Plans & Limits",
-                        "readOnly": true
-                    },
                     "Your_limits": {
                         "const": "Your limits",
                         "readOnly": true
@@ -173,7 +169,6 @@
                 },
                 "required": [
                     "Texts_by_limit_name",
-                    "Plans_and_limits",
                     "Your_limits",
                     "Get_more",
                     "Unlock",

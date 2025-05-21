@@ -1001,6 +1001,10 @@
                     "View_the_author_page": {
                         "const": "View the author's page",
                         "readOnly": true
+                    },
+                    "Plans_and_limits": {
+                        "const": "Plans & Limits",
+                        "readOnly": true
                     }
                 },
                 "required": [
@@ -1244,7 +1248,8 @@
                     "Promo_button",
                     "Promo_button_text",
                     "Promo_button_link",
-                    "View_the_author_page"
+                    "View_the_author_page",
+                    "Plans_and_limits"
                 ]
             }
         }
