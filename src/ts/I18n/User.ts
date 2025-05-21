@@ -504,10 +504,6 @@ export interface components {
             readonly Promo_button_link: "Link on the button";
             /** @constant */
             readonly View_the_author_page: "View the author's page";
-            /** @constant */
-            readonly Plans_and_limits: "Plans & Limits";
-            /** @constant */
-            readonly Your_limits: "Your limits";
         };
     };
     responses: never;

@@ -67,6 +67,10 @@ export interface components {
                 };
             };
             /** @constant */
+            readonly Plans_and_limits: "Plans & Limits";
+            /** @constant */
+            readonly Your_limits: "Your limits";
+            /** @constant */
             readonly Get_more: "Get more";
             /** @constant */
             readonly Unlock: "Unlock";
