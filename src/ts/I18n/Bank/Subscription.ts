@@ -99,12 +99,6 @@ export interface components {
             /** @constant */
             readonly per_project: "per project";
             /** @constant */
-            readonly Confirmed: "Confirmed";
-            /** @constant */
-            readonly Prepared: "Prepared";
-            /** @constant */
-            readonly Cancelled: "Cancelled";
-            /** @constant */
             readonly Subscribing_to_thundo_plan?: "Subscribing to the Thundo plan";
             /** @constant */
             readonly Your_current_plan: "Your current plan is";
