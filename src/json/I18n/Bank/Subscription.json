@@ -161,6 +161,18 @@
                     "keywords": {
                         "const": "keywords",
                         "readOnly": true
+                    },
+                    "Your_data_is_here": {
+                        "const": "Your data is still here if you need it",
+                        "readOnly": true
+                    },
+                    "You_can_reactivate": {
+                        "const": "You can reactivate your account at any time and get full access to all your previous data.",
+                        "readOnly": true
+                    },
+                    "Reactivate": {
+                        "const": "Reactivate my account",
+                        "readOnly": true
                     }
                 },
                 "required": [
@@ -187,7 +199,10 @@
                     "get_2_months",
                     "Do_you_need_more",
                     "Contact_sales",
-                    "keywords"
+                    "keywords",
+                    "Your_data_is_here",
+                    "You_can_reactivate",
+                    "Reactivate"
                 ]
             }
         }

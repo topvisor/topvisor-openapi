@@ -112,6 +112,12 @@ export interface components {
             readonly Contact_sales: "Contact Sales";
             /** @constant */
             readonly keywords: "keywords";
+            /** @constant */
+            readonly Your_data_is_here: "Your data is still here if you need it";
+            /** @constant */
+            readonly You_can_reactivate: "You can reactivate your account at any time and get full access to all your previous data.";
+            /** @constant */
+            readonly Reactivate: "Reactivate my account";
         };
     };
     responses: never;
