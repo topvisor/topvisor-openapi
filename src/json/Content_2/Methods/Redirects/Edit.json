@@ -18,6 +18,10 @@
                         "title": "На поддомен",
                         "type": "string"
                     },
+                    "comments": {
+                        "title": "Комментарий",
+                        "type": "string"
+                    },
                     "site": {
                         "title": "Сайт\n\n* topvisor\n* thundo",
                         "type": "string"
@@ -34,6 +38,7 @@
                 "required": [
                     "redirect_path",
                     "redirect_subdomain",
+                    "comments",
                     "site",
                     "subdomain",
                     "path_mask"

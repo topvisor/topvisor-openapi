@@ -26,6 +26,9 @@
                     },
                     "redirect_path": {
                         "nullable": true
+                    },
+                    "comments": {
+                        "nullable": true
                     }
                 }
             }

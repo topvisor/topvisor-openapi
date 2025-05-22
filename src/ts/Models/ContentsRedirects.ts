@@ -14,6 +14,7 @@ export interface components {
             subdomain?: any;
             redirect_subdomain?: any;
             redirect_path?: any;
+            comments?: any;
         };
     };
     responses: never;

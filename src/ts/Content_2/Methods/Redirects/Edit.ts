@@ -13,6 +13,8 @@ export interface components {
             redirect_path: string;
             /** На поддомен */
             redirect_subdomain: string;
+            /** Комментарий */
+            comments: string;
             /** Сайт
              *
              *     * topvisor

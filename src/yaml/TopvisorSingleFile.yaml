@@ -15555,6 +15555,9 @@ components:
         redirect_subdomain:
           title: На поддомен
           type: string
+        comments:
+          title: Комментарий
+          type: string
         site:
           title: |-
             Сайт
@@ -15575,6 +15578,7 @@ components:
       required:
         - redirect_path
         - redirect_subdomain
+        - comments
         - site
         - subdomain
         - path_mask
@@ -15615,6 +15619,8 @@ components:
         redirect_subdomain:
           nullable: true
         redirect_path:
+          nullable: true
+        comments:
           nullable: true
     Content_2.Methods.Rss.Get:
       type: object
