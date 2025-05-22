@@ -93,15 +93,13 @@ export interface components {
             /** @constant */
             readonly View_all: "View all";
             /** @constant */
-            readonly daily: "daily";
+            readonly action_daily: "daily";
             /** @constant */
-            readonly monthly: "monthly";
+            readonly action_monthly: "monthly";
+            /** @constant */
+            readonly object_by_project: "per project";
             /** @constant */
             readonly yearly: "yearly";
-            /** @constant */
-            readonly per_project: "per project";
-            /** @constant */
-            readonly Subscribing_to_thundo_plan?: "Subscribing to the Thundo plan";
             /** @constant */
             readonly Your_current_plan: "Your current plan is";
             /** @constant */

@@ -122,24 +122,20 @@
                         "const": "View all",
                         "readOnly": true
                     },
-                    "daily": {
+                    "action_daily": {
                         "const": "daily",
                         "readOnly": true
                     },
-                    "monthly": {
+                    "action_monthly": {
                         "const": "monthly",
+                        "readOnly": true
+                    },
+                    "object_by_project": {
+                        "const": "per project",
                         "readOnly": true
                     },
                     "yearly": {
                         "const": "yearly",
-                        "readOnly": true
-                    },
-                    "per_project": {
-                        "const": "per project",
-                        "readOnly": true
-                    },
-                    "Subscribing_to_thundo_plan": {
-                        "const": "Subscribing to the Thundo plan",
                         "readOnly": true
                     },
                     "Your_current_plan": {
@@ -182,10 +178,10 @@
                     "Billing_history",
                     "No_billing_history_data",
                     "View_all",
-                    "daily",
-                    "monthly",
+                    "action_daily",
+                    "action_monthly",
+                    "object_by_project",
                     "yearly",
-                    "per_project",
                     "Your_current_plan",
                     "Pay_annually",
                     "get_2_months",
