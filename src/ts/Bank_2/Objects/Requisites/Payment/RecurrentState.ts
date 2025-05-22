@@ -16,6 +16,7 @@ export interface components {
             manager: import('../../../Types/Subscriptions/Manager.ts').components['schemas']['Bank_2.Types.Subscriptions.Manager'];
             /** Краткая информация о способе платежа
              *
+             *     - id платежа
              *     - неполный номер карты и срок действия
              *     - номер договора */
             methodInfo: string;
