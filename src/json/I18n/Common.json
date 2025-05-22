@@ -706,6 +706,10 @@
                         "const": "Upload",
                         "readOnly": true
                     },
+                    "Open": {
+                        "const": "Open",
+                        "readOnly": true
+                    },
                     "Hide_all": {
                         "const": "Hide all",
                         "readOnly": true
@@ -2077,6 +2081,7 @@
                     "Keyword_researcher",
                     "Rank_tracker",
                     "Upload",
+                    "Open",
                     "Hide_all",
                     "Expand_all",
                     "Expand",

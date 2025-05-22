@@ -357,6 +357,8 @@ export interface components {
             /** @constant */
             readonly Upload: "Upload";
             /** @constant */
+            readonly Open: "Open";
+            /** @constant */
             readonly Hide_all: "Hide all";
             /** @constant */
             readonly Expand_all: "Expand all";
