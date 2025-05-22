@@ -2414,16 +2414,16 @@ paths:
               schema:
                 $ref: '#/components/schemas/Models.Content.Authors'
                 description: Only for typescript, does not contain real data
-  /abstactregular/content_2/redirects/:
+  /abstractregular/content_2/redirects/:
     post:
-      operationId: AbstactregularContent2Redirects
+      operationId: AbstractregularContent2Redirects
       tags:
         - Content_2
       requestBody:
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/Content_2.Methods.Redirects.AbstactRegular'
+              $ref: '#/components/schemas/Content_2.Methods.Redirects.AbstractRegular'
         required: true
       responses:
         '200':
@@ -15457,7 +15457,7 @@ components:
         bookmark_author:
           type: integer
           nullable: true
-    Content_2.Methods.Redirects.AbstactRegular:
+    Content_2.Methods.Redirects.AbstractRegular:
       type: object
       properties:
         site:

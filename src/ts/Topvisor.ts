@@ -1220,7 +1220,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };
-    "/abstactregular/content_2/redirects/": {
+    "/abstractregular/content_2/redirects/": {
         parameters: {
             query?: never;
             header?: never;
@@ -1229,7 +1229,7 @@ export interface paths {
         };
         get?: never;
         put?: never;
-        post: operations["AbstactregularContent2Redirects"];
+        post: operations["AbstractregularContent2Redirects"];
         delete?: never;
         options?: never;
         head?: never;
@@ -7974,7 +7974,7 @@ export interface operations {
             };
         };
     };
-    AbstactregularContent2Redirects: {
+    AbstractregularContent2Redirects: {
         parameters: {
             query?: never;
             header?: never;
@@ -7983,7 +7983,7 @@ export interface operations {
         };
         requestBody: {
             content: {
-                "application/json": import('./Content_2/Methods/Redirects/AbstactRegular.ts').components['schemas']['Content_2.Methods.Redirects.AbstactRegular'];
+                "application/json": import('./Content_2/Methods/Redirects/AbstractRegular.ts').components['schemas']['Content_2.Methods.Redirects.AbstractRegular'];
             };
         };
         responses: {

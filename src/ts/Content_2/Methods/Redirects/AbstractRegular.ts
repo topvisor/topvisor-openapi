@@ -7,7 +7,7 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        "Content_2.Methods.Redirects.AbstactRegular": {
+        "Content_2.Methods.Redirects.AbstractRegular": {
             /** Сайт
              *
              *     * topvisor

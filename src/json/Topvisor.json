@@ -4191,9 +4191,9 @@
                 }
             }
         },
-        "/abstactregular/content_2/redirects/": {
+        "/abstractregular/content_2/redirects/": {
             "post": {
-                "operationId": "AbstactregularContent2Redirects",
+                "operationId": "AbstractregularContent2Redirects",
                 "tags": [
                     "Content_2"
                 ],
@@ -4201,7 +4201,7 @@
                     "content": {
                         "application/json": {
                             "schema": {
-                                "$ref": "Content_2/Methods/Redirects/AbstactRegular.json#/components/schemas/Content_2.Methods.Redirects.AbstactRegular"
+                                "$ref": "Content_2/Methods/Redirects/AbstractRegular.json#/components/schemas/Content_2.Methods.Redirects.AbstractRegular"
                             }
                         }
                     },
