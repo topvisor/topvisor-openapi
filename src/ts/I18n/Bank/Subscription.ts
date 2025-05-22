@@ -122,6 +122,8 @@ export interface components {
             readonly Auto_renewal_is_disabled: "Auto-renewal is disabled. To renew the subscription click the \"Resume plan\" below";
             /** @constant */
             readonly Resume_plan: "Resume plan";
+            /** @constant */
+            readonly Active_until: "Active until";
         };
     };
     responses: never;

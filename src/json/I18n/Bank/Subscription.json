@@ -181,6 +181,10 @@
                     "Resume_plan": {
                         "const": "Resume plan",
                         "readOnly": true
+                    },
+                    "Active_until": {
+                        "const": "Active until",
+                        "readOnly": true
                     }
                 },
                 "required": [
@@ -212,7 +216,8 @@
                     "You_can_reactivate",
                     "Reactivate",
                     "Auto_renewal_is_disabled",
-                    "Resume_plan"
+                    "Resume_plan",
+                    "Active_until"
                 ]
             }
         }
