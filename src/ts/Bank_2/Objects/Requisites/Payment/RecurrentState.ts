@@ -7,7 +7,9 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Состояние рекуррентного платежа (после выполнения платежа) */
+        /** Состояние рекуррентного платежа
+         *
+         *     Создается при подтверждении проведения оплаты и определяет дальнейшую логику работы с рекуррентными платежами */
         "Bank_2.Objects.Requisites.Payment.RecurrentState": {
             status: import('../../../Types/Subscriptions/Status.ts').components['schemas']['Bank_2.Types.Subscriptions.Status'];
             type: import('../../../Types/Subscriptions/Type.ts').components['schemas']['Bank_2.Types.Subscriptions.Type'];
