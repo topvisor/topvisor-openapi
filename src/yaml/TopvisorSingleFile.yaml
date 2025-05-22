@@ -14444,6 +14444,10 @@ components:
         Пример имени класса, оно же id плана: `StarterPack1`
 
         При выводе на сайте тарифы выводятся в нужном порядке, например с сортировкой по стоимости
+    Datetime:
+      type: object
+      properties: {}
+      required: []
     Bank_2.Types.Subscriptions.Status:
       type: string
       enum:
@@ -14478,11 +14482,13 @@ components:
         timeStart:
           title: Начало расчетного периода, обычно время оплаты
           nullable: true
-          type: string
+          allOf:
+            - $ref: '#/components/schemas/Datetime'
         timeEnd:
           title: Окончание расчетного периода
           nullable: true
-          type: string
+          allOf:
+            - $ref: '#/components/schemas/Datetime'
         status:
           allOf:
             - $ref: '#/components/schemas/Bank_2.Types.Subscriptions.Status'
@@ -14509,10 +14515,6 @@ components:
         Состояние рекуррентного платежа
 
         Создается при подтверждении проведения оплаты и определяет дальнейшую логику работы с рекуррентными платежами
-    TV.API.Types.Datetime:
-      type: string
-      title: Дата с временем
-      example: '2000-01-01 00:00:00'
     Bank_2.Objects.Subscriptions.Subscription:
       type: object
       properties:
@@ -14538,16 +14540,6 @@ components:
           nullable: true
           allOf:
             - $ref: '#/components/schemas/Bank_2.Types.Subscriptions.Cycle'
-        timeStart:
-          title: Время начала подписки
-          nullable: true
-          allOf:
-            - $ref: '#/components/schemas/TV.API.Types.Datetime'
-        timeEnd:
-          title: Время окончания подписки
-          nullable: true
-          allOf:
-            - $ref: '#/components/schemas/TV.API.Types.Datetime'
         limitUsedByName:
           title: |-
             Использованные лимиты
@@ -19807,6 +19799,10 @@ components:
           nullable: true
         count_warnings:
           nullable: true
+    TV.API.Types.Datetime:
+      type: string
+      title: Дата с временем
+      example: '2000-01-01 00:00:00'
     Audit_2.Methods.Audit.Log.Get:
       type: object
       properties:

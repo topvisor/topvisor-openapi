@@ -46,24 +46,6 @@
                             }
                         ]
                     },
-                    "timeStart": {
-                        "title": "Время начала подписки",
-                        "nullable": true,
-                        "allOf": [
-                            {
-                                "$ref": "../../../TV/API/Types/Datetime.json#/components/schemas/TV.API.Types.Datetime"
-                            }
-                        ]
-                    },
-                    "timeEnd": {
-                        "title": "Время окончания подписки",
-                        "nullable": true,
-                        "allOf": [
-                            {
-                                "$ref": "../../../TV/API/Types/Datetime.json#/components/schemas/TV.API.Types.Datetime"
-                            }
-                        ]
-                    },
                     "limitUsedByName": {
                         "title": "Использованные лимиты\n\nДоступные лимиты см. в `plan`\n\nДля нетарифицируемых лимитов значение всегда `null`",
                         "description": "@type Array<Bank_2\\Types\\Subscriptions\\Limit\\Name, int>",

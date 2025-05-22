@@ -13,12 +13,20 @@
                     "timeStart": {
                         "title": "Начало расчетного периода, обычно время оплаты",
                         "nullable": true,
-                        "type": "string"
+                        "allOf": [
+                            {
+                                "$ref": "../../../../Datetime.json#/components/schemas/Datetime"
+                            }
+                        ]
                     },
                     "timeEnd": {
                         "title": "Окончание расчетного периода",
                         "nullable": true,
-                        "type": "string"
+                        "allOf": [
+                            {
+                                "$ref": "../../../../Datetime.json#/components/schemas/Datetime"
+                            }
+                        ]
                     },
                     "status": {
                         "allOf": [
