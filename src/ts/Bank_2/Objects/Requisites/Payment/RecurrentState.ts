@@ -12,9 +12,9 @@ export interface components {
          *     Создается при подтверждении проведения оплаты и определяет дальнейшую логику работы с рекуррентными платежами */
         "Bank_2.Objects.Requisites.Payment.RecurrentState": {
             /** Начало расчетного периода, обычно время оплаты */
-            timeStart?: string | null;
+            timeStart?: import('../../../../Datetime.ts').components['schemas']['Datetime'] | null;
             /** Окончание расчетного периода */
-            timeEnd?: string | null;
+            timeEnd?: import('../../../../Datetime.ts').components['schemas']['Datetime'] | null;
             status: import('../../../Types/Subscriptions/Status.ts').components['schemas']['Bank_2.Types.Subscriptions.Status'];
             type: import('../../../Types/Subscriptions/Type.ts').components['schemas']['Bank_2.Types.Subscriptions.Type'];
             manager: import('../../../Types/Subscriptions/Manager.ts').components['schemas']['Bank_2.Types.Subscriptions.Manager'];

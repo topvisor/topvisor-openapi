@@ -18,10 +18,6 @@ export interface components {
             recurrentState?: import('../Requisites/Payment/RecurrentState.ts').components['schemas']['Bank_2.Objects.Requisites.Payment.RecurrentState'] | null;
             /** Время окончания подписки */
             cycle?: import('../../Types/Subscriptions/Cycle.ts').components['schemas']['Bank_2.Types.Subscriptions.Cycle'] | null;
-            /** Время начала подписки */
-            timeStart?: import('../../../TV/API/Types/Datetime.ts').components['schemas']['TV.API.Types.Datetime'] | null;
-            /** Время окончания подписки */
-            timeEnd?: import('../../../TV/API/Types/Datetime.ts').components['schemas']['TV.API.Types.Datetime'] | null;
             /**
              * Использованные лимиты
              *
