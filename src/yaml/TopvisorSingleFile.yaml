@@ -9371,37 +9371,6 @@ paths:
             model:
               schema:
                 type: 'null'
-  /edit/admin_2/actions/account/currency/:
-    post:
-      operationId: EditAdmin2ActionsAccountCurrency
-      tags:
-        - Admin_2
-      summary: Изменение валюты пользователя
-      requestBody:
-        content:
-          application/json:
-            schema:
-              $ref: '#/components/schemas/Admin_2.Methods.Actions.Account.Currency.Edit'
-        required: true
-      responses:
-        '200':
-          description: ''
-          content:
-            application/json:
-              schema:
-                oneOf:
-                  - allOf:
-                      - type: object
-                        properties:
-                          result:
-                            $ref: '#/components/schemas/Admin_2.Objects.Actions.Result'
-                        required:
-                          - result
-                      - $ref: '#/components/schemas/ResponseSuccess'
-                  - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /edit/admin_2/actions/backup/keywords/:
     post:
       operationId: EditAdmin2ActionsBackupKeywords
@@ -9785,6 +9754,68 @@ paths:
           application/json:
             schema:
               $ref: '#/components/schemas/Admin_2.Methods.Actions.Slack.Messages.Del'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            $ref: '#/components/schemas/Admin_2.Objects.Actions.Result'
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
+  /edit/admin_2/actions/user/currency/:
+    post:
+      operationId: EditAdmin2ActionsUserCurrency
+      tags:
+        - Admin_2
+      summary: Изменение валюты пользователя
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Admin_2.Methods.Actions.User.Currency.Edit'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            $ref: '#/components/schemas/Admin_2.Objects.Actions.Result'
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
+  /edit/admin_2/actions/user/email/:
+    post:
+      operationId: EditAdmin2ActionsUserEmail
+      tags:
+        - Admin_2
+      summary: Замена email пользователя
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Admin_2.Methods.Actions.User.Email.Edit'
         required: true
       responses:
         '200':
@@ -22446,23 +22477,6 @@ components:
       description: |-
         @POST string month - месяц в формате: YYYY-mm
         столбцы CSV: 'Дата акта', 'Номер акта', 'Контрагент', 'ИНН', 'Товар/услуга', 'Номенклатура', 'Кол-во', 'Цена', 'НДС', 'Сумма', 'Способ оплаты'
-    Admin_2.Methods.Actions.Account.Currency.Edit:
-      type: object
-      properties:
-        userId:
-          title: ID пользователя
-          type: integer
-        currency:
-          title: Валюта
-          type: string
-        test:
-          title: Являеется ли запуск - тестом
-          type: boolean
-      required:
-        - userId
-        - currency
-        - test
-      title: Изменение валюты пользователя
     Admin_2.Methods.Actions.Backup.Keywords.Edit:
       type: object
       properties:
@@ -22792,6 +22806,53 @@ components:
         - secunds
         - test
       title: Удаление сообщений
+    Admin_2.Methods.Actions.User.Currency.Edit:
+      type: object
+      properties:
+        userId:
+          title: ID пользователя
+          type: integer
+        currency:
+          title: Валюта
+          type: string
+        test:
+          title: Являеется ли запуск - тестом
+          type: boolean
+      required:
+        - userId
+        - currency
+        - test
+      title: Изменение валюты пользователя
+    Admin_2.Methods.Actions.User.Email.Edit:
+      type: object
+      properties:
+        user_id:
+          title: ID пользователя
+          type: integer
+        email_old:
+          title: Старый email
+          allOf:
+            - $ref: '#/components/schemas/TV.API.Types.Email'
+        email_new:
+          title: Новый email
+          allOf:
+            - $ref: '#/components/schemas/TV.API.Types.Email'
+        pass_admin_actions:
+          type: string
+        is_verif:
+          title: Владелец нового email подтвердил владение аккаунтом со старым email
+          type: boolean
+        test:
+          title: Являеется ли запуск - тестом
+          type: boolean
+      required:
+        - user_id
+        - email_old
+        - email_new
+        - pass_admin_actions
+        - is_verif
+        - test
+      title: Замена email пользователя
     Admin_2.Methods.Analytics.Accounting.SummaryForChart.Get:
       type: object
       properties:

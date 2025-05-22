@@ -16961,64 +16961,6 @@
                 }
             }
         },
-        "/edit/admin_2/actions/account/currency/": {
-            "post": {
-                "operationId": "EditAdmin2ActionsAccountCurrency",
-                "tags": [
-                    "Admin_2"
-                ],
-                "summary": "Изменение валюты пользователя",
-                "requestBody": {
-                    "content": {
-                        "application/json": {
-                            "schema": {
-                                "$ref": "Admin_2/Methods/Actions/Account/Currency/Edit.json#/components/schemas/Admin_2.Methods.Actions.Account.Currency.Edit"
-                            }
-                        }
-                    },
-                    "required": true
-                },
-                "responses": {
-                    "200": {
-                        "description": "",
-                        "content": {
-                            "application/json": {
-                                "schema": {
-                                    "oneOf": [
-                                        {
-                                            "allOf": [
-                                                {
-                                                    "type": "object",
-                                                    "properties": {
-                                                        "result": {
-                                                            "$ref": "Admin_2/Objects/Actions/Result.json#/components/schemas/Admin_2.Objects.Actions.Result"
-                                                        }
-                                                    },
-                                                    "required": [
-                                                        "result"
-                                                    ]
-                                                },
-                                                {
-                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
-                                                }
-                                            ]
-                                        },
-                                        {
-                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
-                                        }
-                                    ]
-                                }
-                            },
-                            "model": {
-                                "schema": {
-                                    "type": "null"
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        },
         "/edit/admin_2/actions/backup/keywords/": {
             "post": {
                 "operationId": "EditAdmin2ActionsBackupKeywords",
@@ -17727,6 +17669,122 @@
                         "application/json": {
                             "schema": {
                                 "$ref": "Admin_2/Methods/Actions/Slack/Messages/Del.json#/components/schemas/Admin_2.Methods.Actions.Slack.Messages.Del"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "oneOf": [
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "$ref": "Admin_2/Objects/Actions/Result.json#/components/schemas/Admin_2.Objects.Actions.Result"
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "result"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
+                                        }
+                                    ]
+                                }
+                            },
+                            "model": {
+                                "schema": {
+                                    "type": "null"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/edit/admin_2/actions/user/currency/": {
+            "post": {
+                "operationId": "EditAdmin2ActionsUserCurrency",
+                "tags": [
+                    "Admin_2"
+                ],
+                "summary": "Изменение валюты пользователя",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Admin_2/Methods/Actions/User/Currency/Edit.json#/components/schemas/Admin_2.Methods.Actions.User.Currency.Edit"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "oneOf": [
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "$ref": "Admin_2/Objects/Actions/Result.json#/components/schemas/Admin_2.Objects.Actions.Result"
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "result"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
+                                        }
+                                    ]
+                                }
+                            },
+                            "model": {
+                                "schema": {
+                                    "type": "null"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/edit/admin_2/actions/user/email/": {
+            "post": {
+                "operationId": "EditAdmin2ActionsUserEmail",
+                "tags": [
+                    "Admin_2"
+                ],
+                "summary": "Замена email пользователя",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Admin_2/Methods/Actions/User/Email/Edit.json#/components/schemas/Admin_2.Methods.Actions.User.Email.Edit"
                             }
                         }
                     },

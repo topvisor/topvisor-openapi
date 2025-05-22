@@ -8,7 +8,7 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         /** Изменение валюты пользователя */
-        "Admin_2.Methods.Actions.Account.Currency.Edit": {
+        "Admin_2.Methods.Actions.User.Currency.Edit": {
             /** ID пользователя */
             userId: number;
             /** Валюта */

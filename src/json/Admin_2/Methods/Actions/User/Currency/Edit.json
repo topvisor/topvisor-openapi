@@ -1,13 +1,13 @@
 {
     "openapi": "3.0.0",
     "info": {
-        "title": "Topvisor/Admin_2.Methods.Actions.Account.Currency.Edit",
+        "title": "Topvisor/Admin_2.Methods.Actions.User.Currency.Edit",
         "version": "2.0.0"
     },
     "paths": {},
     "components": {
         "schemas": {
-            "Admin_2.Methods.Actions.Account.Currency.Edit": {
+            "Admin_2.Methods.Actions.User.Currency.Edit": {
                 "type": "object",
                 "properties": {
                     "userId": {
