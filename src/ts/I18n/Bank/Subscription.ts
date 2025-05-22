@@ -118,6 +118,10 @@ export interface components {
             readonly You_can_reactivate: "You can reactivate your account at any time and get full access to all your previous data.";
             /** @constant */
             readonly Reactivate: "Reactivate my account";
+            /** @constant */
+            readonly Auto_renewal_is_disabled: "Auto-renewal is disabled. To renew the subscription click the \"Resume plan\" below";
+            /** @constant */
+            readonly Resume_plan: "Resume plan";
         };
     };
     responses: never;

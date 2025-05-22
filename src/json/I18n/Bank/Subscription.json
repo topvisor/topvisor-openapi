@@ -173,6 +173,14 @@
                     "Reactivate": {
                         "const": "Reactivate my account",
                         "readOnly": true
+                    },
+                    "Auto_renewal_is_disabled": {
+                        "const": "Auto-renewal is disabled. To renew the subscription click the \"Resume plan\" below",
+                        "readOnly": true
+                    },
+                    "Resume_plan": {
+                        "const": "Resume plan",
+                        "readOnly": true
                     }
                 },
                 "required": [
@@ -202,7 +210,9 @@
                     "keywords",
                     "Your_data_is_here",
                     "You_can_reactivate",
-                    "Reactivate"
+                    "Reactivate",
+                    "Auto_renewal_is_disabled",
+                    "Resume_plan"
                 ]
             }
         }

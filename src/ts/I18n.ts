@@ -33,6 +33,7 @@ export interface components {
         Telegram: import('./I18n/Telegram.ts').components['schemas']['I18n.Telegram'];
         Thundo: import('./I18n/Thundo.ts').components['schemas']['I18n.Thundo'];
         Tickets: import('./I18n/Tickets.ts').components['schemas']['I18n.Tickets'];
+        Toolbox: import('./I18n/Toolbox.ts').components['schemas']['I18n.Toolbox'];
         Tpvsr: import('./I18n/Tpvsr.ts').components['schemas']['I18n.Tpvsr'];
         Tv: import('./I18n/Tv.ts').components['schemas']['I18n.Tv'];
         Units: import('./I18n/Units.ts').components['schemas']['I18n.Units'];

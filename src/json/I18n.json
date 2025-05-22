@@ -85,6 +85,9 @@
             "Tickets": {
                 "$ref": "I18n/Tickets.json#/components/schemas/I18n.Tickets"
             },
+            "Toolbox": {
+                "$ref": "I18n/Toolbox.json#/components/schemas/I18n.Toolbox"
+            },
             "Tpvsr": {
                 "$ref": "I18n/Tpvsr.json#/components/schemas/I18n.Tpvsr"
             },
