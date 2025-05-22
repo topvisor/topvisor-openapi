@@ -14475,6 +14475,14 @@ components:
     Bank_2.Objects.Requisites.Payment.RecurrentState:
       type: object
       properties:
+        timeStart:
+          title: Начало расчетного периода, обычно время оплаты
+          nullable: true
+          type: string
+        timeEnd:
+          title: Окончание расчетного периода
+          nullable: true
+          type: string
         status:
           allOf:
             - $ref: '#/components/schemas/Bank_2.Types.Subscriptions.Status'

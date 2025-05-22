@@ -257,6 +257,8 @@ export interface components {
             /** @constant */
             readonly Name_payment_log: "Credit%systemType% - Payment TV-%paymentId% via \"%systemName%\"%contractInfo%";
             /** @constant */
+            readonly Name_payment_log_tariff: "1-Month Subscription %tariffName% - plan - Payment TV-%paymentId% via \"%systemName%\"%contractInfo%";
+            /** @constant */
             readonly Name_payment_log_subscription_in: "Incoming payment #%paymentId% for subscription  via \"%systemName%\"%contractInfo%";
             /** @constant */
             readonly Name_payment_log_subscription_pay: "Subscription plan {{ subscriptionPlanLabel }}, period: {{ subscriptionCycle }} months";
