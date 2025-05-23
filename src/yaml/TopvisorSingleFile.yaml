@@ -12294,6 +12294,8 @@ components:
           nullable: true
         data:
           nullable: true
+        items:
+          nullable: true
         sum:
           nullable: true
         currency:
@@ -12305,6 +12307,10 @@ components:
         tariff_id:
           nullable: true
         tariff_count_month:
+          nullable: true
+        subscription_plan_id:
+          nullable: true
+        subscription_cycle:
           nullable: true
         date:
           nullable: true
