@@ -14580,15 +14580,16 @@ components:
           nullable: true
           allOf:
             - $ref: '#/components/schemas/Bank_2.Objects.Subscriptions.Plan'
+        nextPlan:
+          title: Следующий план подписки
+          nullable: true
+          allOf:
+            - $ref: '#/components/schemas/Bank_2.Objects.Subscriptions.Plan'
         recurrentState:
           title: Состояние подписки
           nullable: true
           allOf:
             - $ref: '#/components/schemas/Bank_2.Objects.Requisites.Payment.RecurrentState'
-        nextPlanId:
-          title: id плана для следующей подписки
-          nullable: true
-          type: string
         cycle:
           title: Текущий цикл для подписки
           nullable: true

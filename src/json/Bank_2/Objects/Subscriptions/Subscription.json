@@ -32,6 +32,15 @@
                             }
                         ]
                     },
+                    "nextPlan": {
+                        "title": "Следующий план подписки",
+                        "nullable": true,
+                        "allOf": [
+                            {
+                                "$ref": "../../../Bank_2/Objects/Subscriptions/Plan.json#/components/schemas/Bank_2.Objects.Subscriptions.Plan"
+                            }
+                        ]
+                    },
                     "recurrentState": {
                         "title": "Состояние подписки",
                         "nullable": true,
@@ -40,11 +49,6 @@
                                 "$ref": "../../../Bank_2/Objects/Requisites/Payment/RecurrentState.json#/components/schemas/Bank_2.Objects.Requisites.Payment.RecurrentState"
                             }
                         ]
-                    },
-                    "nextPlanId": {
-                        "title": "id плана для следующей подписки",
-                        "nullable": true,
-                        "type": "string"
                     },
                     "cycle": {
                         "title": "Текущий цикл для подписки",
