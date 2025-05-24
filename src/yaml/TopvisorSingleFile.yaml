@@ -16673,7 +16673,7 @@ components:
       type: object
       properties:
         next_requisites_id:
-          title: ID следующего запроса
+          title: ID реквизитов для продления тарифа
           type: string
       required:
         - next_requisites_id
@@ -23298,10 +23298,6 @@ components:
         - project_id
         - check_id
       title: Получение информации о текущей ошибке на роботе
-    DateTime:
-      type: object
-      properties: {}
-      required: []
     Audit_2.Methods.Audit.Log.Chart.Get:
       type: object
       properties:
@@ -23309,12 +23305,12 @@ components:
           title: Фильтр по периоду
           nullable: true
           allOf:
-            - $ref: '#/components/schemas/DateTime'
+            - $ref: '#/components/schemas/TV.API.Types.Datetime'
         time2:
           title: Фильтр по периоду
           nullable: true
           allOf:
-            - $ref: '#/components/schemas/DateTime'
+            - $ref: '#/components/schemas/TV.API.Types.Datetime'
         page:
           title: Номер страницы (для использования в SQL)
           default: 1

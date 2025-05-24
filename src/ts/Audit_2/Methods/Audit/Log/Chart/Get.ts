@@ -13,9 +13,9 @@ export interface components {
          */
         "Audit_2.Methods.Audit.Log.Chart.Get": {
             /** Фильтр по периоду */
-            time1?: import('../../../../../DateTime.ts').components['schemas']['DateTime'] | null;
+            time1?: import('../../../../../TV/API/Types/Datetime.ts').components['schemas']['TV.API.Types.Datetime'] | null;
             /** Фильтр по периоду */
-            time2?: import('../../../../../DateTime.ts').components['schemas']['DateTime'] | null;
+            time2?: import('../../../../../TV/API/Types/Datetime.ts').components['schemas']['TV.API.Types.Datetime'] | null;
             /**
              * Номер страницы (для использования в SQL)
              * @default 1
