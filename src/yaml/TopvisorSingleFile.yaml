@@ -7698,6 +7698,43 @@ paths:
             model:
               schema:
                 type: 'null'
+  /edit/payments_2/subscriptions/next/:
+    post:
+      operationId: EditPayments2SubscriptionsNext
+      tags:
+        - Payments_2
+      summary: |-
+        Изменения подписки на следующий расчетный период
+
+        Изменение доступно только в рамках одной платежной системы
+
+        Если требуется изменить другие параметры подписки, это можно сделать через создание новой подписки.
+        При создании новой подписки текущая подписка будет досрочно завершена, с выдачей скидки в пользу новой подписки
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Payments_2.Methods.Subscriptions.Next.Edit'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            type: boolean
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
   /edit/payments_2/tariff/delCard/:
     post:
       operationId: EditPayments2TariffDelCard
@@ -21523,6 +21560,30 @@ components:
         - telegram
         - comment
       title: Отправление письма с лэндинга вакансий на hr@topvisor.com
+    Payments_2.Methods.Subscriptions.Next.Edit:
+      type: object
+      properties:
+        payment_id:
+          title: id платежа, связанного с подпиской
+          type: integer
+        subscription_plan_id:
+          title: ID следующего плана подписки
+          type: integer
+        subscription_cycle:
+          title: Значение следующего цикла подписки
+          allOf:
+            - $ref: '#/components/schemas/Bank_2.Types.Subscriptions.Cycle'
+      required:
+        - payment_id
+        - subscription_plan_id
+        - subscription_cycle
+      title: |-
+        Изменения подписки на следующий расчетный период
+
+        Изменение доступно только в рамках одной платежной системы
+
+        Если требуется изменить другие параметры подписки, это можно сделать через создание новой подписки.
+        При создании новой подписки текущая подписка будет досрочно завершена, с выдачей скидки в пользу новой подписки
     Payments_2.Methods.Tariff.DelCard.Edit:
       type: object
       properties: {}

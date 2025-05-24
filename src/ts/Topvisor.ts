@@ -3985,6 +3985,28 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
+    /** Изменения подписки на следующий расчетный период
+     *
+     *     Изменение доступно только в рамках одной платежной системы
+     *
+     *     Если требуется изменить другие параметры подписки, это можно сделать через создание новой подписки.
+     *     При создании новой подписки текущая подписка будет досрочно завершена, с выдачей скидки в пользу новой подписки */
+    "/edit/payments_2/subscriptions/next/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["EditPayments2SubscriptionsNext"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
     /** Отписка от тарифа, оплаченного картой */
     "/edit/payments_2/tariff/delCard/": {
         parameters: {
@@ -12142,6 +12164,32 @@ export interface operations {
                 content: {
                     "application/json": ({
                         result: number;
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: null;
+                };
+            };
+        };
+    };
+    EditPayments2SubscriptionsNext: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Payments_2/Methods/Subscriptions/Next/Edit.ts').components['schemas']['Payments_2.Methods.Subscriptions.Next.Edit'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: boolean;
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };

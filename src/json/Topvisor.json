@@ -13871,6 +13871,64 @@
                 }
             }
         },
+        "/edit/payments_2/subscriptions/next/": {
+            "post": {
+                "operationId": "EditPayments2SubscriptionsNext",
+                "tags": [
+                    "Payments_2"
+                ],
+                "summary": "Изменения подписки на следующий расчетный период\n\nИзменение доступно только в рамках одной платежной системы\n\nЕсли требуется изменить другие параметры подписки, это можно сделать через создание новой подписки.\nПри создании новой подписки текущая подписка будет досрочно завершена, с выдачей скидки в пользу новой подписки",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Payments_2/Methods/Subscriptions/Next/Edit.json#/components/schemas/Payments_2.Methods.Subscriptions.Next.Edit"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "oneOf": [
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "type": "boolean"
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "result"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
+                                        }
+                                    ]
+                                }
+                            },
+                            "model": {
+                                "schema": {
+                                    "type": "null"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
         "/edit/payments_2/tariff/delCard/": {
             "post": {
                 "operationId": "EditPayments2TariffDelCard",
