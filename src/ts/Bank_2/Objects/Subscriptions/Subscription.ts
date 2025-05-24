@@ -12,12 +12,17 @@ export interface components {
             /** id платежа, подписки */
             paymentId?: number | null;
             externalPaymentId?: string | null;
+            next?: string | null;
             /** Текущий план подписки */
             plan?: import('./Plan.ts').components['schemas']['Bank_2.Objects.Subscriptions.Plan'] | null;
             /** Состояние подписки */
             recurrentState?: import('../Requisites/Payment/RecurrentState.ts').components['schemas']['Bank_2.Objects.Requisites.Payment.RecurrentState'] | null;
-            /** Время окончания подписки */
+            /** id плана для следующей подписки */
+            nextPlanId?: string | null;
+            /** Текущий цикл для подписки */
             cycle?: import('../../Types/Subscriptions/Cycle.ts').components['schemas']['Bank_2.Types.Subscriptions.Cycle'] | null;
+            /** Цикл для следующей подписки */
+            nextCycle?: import('../../Types/Subscriptions/Cycle.ts').components['schemas']['Bank_2.Types.Subscriptions.Cycle'] | null;
             /**
              * Использованные лимиты
              *

@@ -7728,6 +7728,7 @@ paths:
                         properties:
                           result:
                             type: boolean
+                            title: '@throws Exception'
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
@@ -14557,7 +14558,10 @@ components:
       title: |-
         Состояние рекуррентного платежа
 
-        Создается при подтверждении проведения оплаты и определяет дальнейшую логику работы с рекуррентными платежами
+        - создается при подтверждении проведения оплаты или при других обновлениях подписки, содержит только данные, которые надо обновить
+        - используется при выводе состояния подписки
+
+        Определяет логику работы с рекуррентными платежами
     Bank_2.Objects.Subscriptions.Subscription:
       type: object
       properties:
@@ -14566,6 +14570,9 @@ components:
           nullable: true
           type: integer
         externalPaymentId:
+          nullable: true
+          type: string
+        next:
           nullable: true
           type: string
         plan:
@@ -14578,8 +14585,17 @@ components:
           nullable: true
           allOf:
             - $ref: '#/components/schemas/Bank_2.Objects.Requisites.Payment.RecurrentState'
+        nextPlanId:
+          title: id плана для следующей подписки
+          nullable: true
+          type: string
         cycle:
-          title: Время окончания подписки
+          title: Текущий цикл для подписки
+          nullable: true
+          allOf:
+            - $ref: '#/components/schemas/Bank_2.Types.Subscriptions.Cycle'
+        nextCycle:
+          title: Цикл для следующей подписки
           nullable: true
           allOf:
             - $ref: '#/components/schemas/Bank_2.Types.Subscriptions.Cycle'

@@ -12189,6 +12189,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
+                        /** @throws Exception */
                         result: boolean;
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;

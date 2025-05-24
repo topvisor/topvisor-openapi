@@ -13901,7 +13901,8 @@
                                                     "type": "object",
                                                     "properties": {
                                                         "result": {
-                                                            "type": "boolean"
+                                                            "type": "boolean",
+                                                            "title": "@throws Exception"
                                                         }
                                                     },
                                                     "required": [
