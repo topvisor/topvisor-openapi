@@ -158,6 +158,14 @@
                         "const": "Legal services",
                         "readOnly": true
                     },
+                    "Cinema_tickets": {
+                        "const": "Cinema, tickets",
+                        "readOnly": true
+                    },
+                    "High_technology": {
+                        "const": "LLMs and hi-tech",
+                        "readOnly": true
+                    },
                     "Go_to_statictics": {
                         "const": "Go to statistics of the day",
                         "readOnly": true
@@ -229,6 +237,8 @@
                     "Finance",
                     "Electronics",
                     "Legal_services",
+                    "Cinema_tickets",
+                    "High_technology",
                     "Go_to_statictics",
                     "Apometr_info",
                     "Updates_yandex_telegram",
