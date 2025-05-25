@@ -243,23 +243,6 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Удаление настроек автоопераций */
-    "/del/recurring_2/": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        get?: never;
-        put?: never;
-        post: operations["DelRecurring2"];
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
-    };  
     /** Настройка рекуррентного платежа */
     "/edit/recurring_2/": {
         parameters: {
@@ -6487,32 +6470,6 @@ export interface operations {
                 content: {
                     "application/json": ({
                         result: string;
-                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
-                };
-            };
-        };
-    };
-    DelRecurring2: {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        requestBody: {
-            content: {
-                "application/json": import('./Recurring_2/Methods/Del.ts').components['schemas']['Recurring_2.Methods.Del'];
-            };
-        };
-        responses: {
-            200: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/json": ({
-                        result: unknown;
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };

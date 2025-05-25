@@ -540,36 +540,6 @@ paths:
             model:
               schema:
                 type: 'null'
-  /del/recurring_2/:
-    post:
-      operationId: DelRecurring2
-      tags:
-        - Recurring_2
-      summary: Удаление настроек автоопераций
-      requestBody:
-        content:
-          application/json:
-            schema:
-              $ref: '#/components/schemas/Recurring_2.Methods.Del'
-        required: true
-      responses:
-        '200':
-          description: ''
-          content:
-            application/json:
-              schema:
-                oneOf:
-                  - allOf:
-                      - type: object
-                        properties:
-                          result: {}
-                        required:
-                          - result
-                      - $ref: '#/components/schemas/ResponseSuccess'
-                  - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /edit/recurring_2/:
     post:
       operationId: EditRecurring2
@@ -12405,11 +12375,16 @@ components:
         Генерация QR кода по тексту
 
         Возвращает изображение в формате data:image/png;base64
+    Recurring_2.Types.System:
+      type: string
+      enum:
+        - card
+        - invoice
+      title: Платежная система рекуррентного платежа
     Recurring_2.Types.Type:
       type: string
       enum:
         - refill
-        - domainRenew
       title: Тип рекуррентного платежа
     TV.API.Types.Url:
       type: string
@@ -12423,26 +12398,6 @@ components:
         Будет проивзедено автоматическое приведение к формату
 
         Разрешен ввод пустой строки, для удаления значения url
-    Recurring_2.Methods.Del:
-      type: object
-      properties:
-        type:
-          allOf:
-            - $ref: '#/components/schemas/Recurring_2.Types.Type'
-        target:
-          title: Объект доменного платежа (в случае domainRenew - домен)
-          allOf:
-            - $ref: '#/components/schemas/TV.API.Types.Url'
-      required:
-        - type
-        - target
-      title: Удаление настроек автоопераций
-    Recurring_2.Types.System:
-      type: string
-      enum:
-        - card
-        - invoice
-      title: Платежная система рекуррентного платежа
     Recurring_2.Methods.Edit:
       type: object
       properties:
