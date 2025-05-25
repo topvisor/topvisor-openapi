@@ -13815,6 +13815,65 @@
                 }
             }
         },
+        "/edit/payments_2/recurrent/suspend/": {
+            "post": {
+                "operationId": "EditPayments2RecurrentSuspend",
+                "tags": [
+                    "Payments_2"
+                ],
+                "summary": "Управление приостановкой/возобновлением рекуррентных платежей",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Payments_2/Methods/Recurrent/Suspend/Edit.json#/components/schemas/Payments_2.Methods.Recurrent.Suspend.Edit"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "oneOf": [
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "type": "integer",
+                                                            "title": "@throws Exception Ошибка во входных данных, внешнем API или БД"
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "result"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
+                                        }
+                                    ]
+                                }
+                            },
+                            "model": {
+                                "schema": {
+                                    "type": "null"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
         "/edit/payments_2/subscriptions/next/": {
             "post": {
                 "operationId": "EditPayments2SubscriptionsNext",

@@ -7668,6 +7668,38 @@ paths:
             model:
               schema:
                 type: 'null'
+  /edit/payments_2/recurrent/suspend/:
+    post:
+      operationId: EditPayments2RecurrentSuspend
+      tags:
+        - Payments_2
+      summary: Управление приостановкой/возобновлением рекуррентных платежей
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Payments_2.Methods.Recurrent.Suspend.Edit'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            type: integer
+                            title: '@throws Exception Ошибка во входных данных, внешнем API или БД'
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
   /edit/payments_2/subscriptions/next/:
     post:
       operationId: EditPayments2SubscriptionsNext
@@ -14470,11 +14502,11 @@ components:
         - system
         - api
       title: |-
-        Кто выполняет продление подписки, а именно:
+        Кто управляет подпиской, а именно:
 
-        - запуск списания с карты / электронного кошелька
-        - создание счета
-        - отправка предложения об оплате
+        - Запуск списания с карты / электронного кошелька
+        - Создание счета
+        - Отправка предложения об оплате
     Bank_2.Objects.Requisites.Payment.RecurrentState:
       type: object
       properties:
@@ -21532,6 +21564,23 @@ components:
         - telegram
         - comment
       title: Отправление письма с лэндинга вакансий на hr@topvisor.com
+    Payments_2.Methods.Recurrent.Suspend.Edit:
+      type: object
+      properties:
+        payment_id:
+          title: id платежа, связанного с подпиской или тарифом
+          type: integer
+        suspend:
+          title: |-
+            Флаг приостановки/возобновления рекуррентных платежей
+
+            - `true`: приостановить
+            - `false`: возобновить
+          type: boolean
+      required:
+        - payment_id
+        - suspend
+      title: Управление приостановкой/возобновлением рекуррентных платежей
     Payments_2.Methods.Subscriptions.Next.Edit:
       type: object
       properties:

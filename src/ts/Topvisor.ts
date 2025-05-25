@@ -3968,6 +3968,23 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
+    /** Управление приостановкой/возобновлением рекуррентных платежей */
+    "/edit/payments_2/recurrent/suspend/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["EditPayments2RecurrentSuspend"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
     /** Изменения подписки на следующий расчетный период
      *
      *     Изменение доступно только в рамках одной платежной системы
@@ -12120,6 +12137,33 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
+                        result: number;
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: null;
+                };
+            };
+        };
+    };
+    EditPayments2RecurrentSuspend: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Payments_2/Methods/Recurrent/Suspend/Edit.ts').components['schemas']['Payments_2.Methods.Recurrent.Suspend.Edit'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        /** @throws Exception Ошибка во входных данных, внешнем API или БД */
                         result: number;
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
