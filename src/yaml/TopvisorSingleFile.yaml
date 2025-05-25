@@ -1677,7 +1677,7 @@ paths:
                               oneOf:
                                 - type: string
                                 - type: number
-                            title: '@return array{balance_all: float, balance_personal: float, balance_bonus: float, balance_plan: float, tariff: array, subscription?: Bank_2\Objects\Subscriptions\Subscription}'
+                            title: '@return array{balance_all: float, balance_personal: float, balance_bonus: float, balance_plan: float, tariff: array, subscription?: Bank_2\Objects\Subscriptions\Subscription, subscription_name?: Bank_2\Objects\Subscriptions\Subscription}'
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
@@ -13357,12 +13357,12 @@ components:
     Admin_2.Methods.TariffChangeExpire.Edit:
       type: object
       properties:
-        expire:
+        state_time_end:
           title: Дата следующего списания по тарифу
           allOf:
             - $ref: '#/components/schemas/TV.API.Types.Date'
       required:
-        - expire
+        - state_time_end
       title: Изменение даты следующего списания по тарифу
     Admin_2.Methods.Tpl.Get:
       type: object
