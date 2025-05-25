@@ -18,15 +18,15 @@ export interface components {
             timeStart?: import('../../../../Datetime.ts').components['schemas']['Datetime'] | null;
             /** Окончание расчетного периода */
             timeEnd?: import('../../../../Datetime.ts').components['schemas']['Datetime'] | null;
-            status: import('../../../Types/Subscriptions/Status.ts').components['schemas']['Bank_2.Types.Subscriptions.Status'];
-            type: import('../../../Types/Subscriptions/Type.ts').components['schemas']['Bank_2.Types.Subscriptions.Type'];
-            manager: import('../../../Types/Subscriptions/Manager.ts').components['schemas']['Bank_2.Types.Subscriptions.Manager'];
             /** Краткая информация о способе платежа
              *
              *     - id платежа
              *     - неполный номер карты и срок действия
              *     - номер договора */
             methodInfo: string;
+            status: import('../../../Types/Subscriptions/Status.ts').components['schemas']['Bank_2.Types.Subscriptions.Status'];
+            type: import('../../../Types/Subscriptions/Type.ts').components['schemas']['Bank_2.Types.Subscriptions.Type'];
+            manager: import('../../../Types/Subscriptions/Manager.ts').components['schemas']['Bank_2.Types.Subscriptions.Manager'];
         };
     };
     responses: never;

@@ -14533,6 +14533,14 @@ components:
           nullable: true
           allOf:
             - $ref: '#/components/schemas/Datetime'
+        methodInfo:
+          title: |-
+            Краткая информация о способе платежа
+
+            - id платежа
+            - неполный номер карты и срок действия
+            - номер договора
+          type: string
         status:
           allOf:
             - $ref: '#/components/schemas/Bank_2.Types.Subscriptions.Status'
@@ -14542,19 +14550,11 @@ components:
         manager:
           allOf:
             - $ref: '#/components/schemas/Bank_2.Types.Subscriptions.Manager'
-        methodInfo:
-          title: |-
-            Краткая информация о способе платежа
-
-            - id платежа
-            - неполный номер карты и срок действия
-            - номер договора
-          type: string
       required:
+        - methodInfo
         - status
         - type
         - manager
-        - methodInfo
       title: |-
         Состояние рекуррентного платежа
 
