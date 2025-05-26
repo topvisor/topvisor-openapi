@@ -12,8 +12,18 @@ export interface components {
          *     - expire */
         "Projects_2.Methods.Status.Ssl.Get": {
             /** Домен */
-            domain: import('../../../../TV/API/Types/Url.ts').components['schemas']['TV.API.Types.Url'];
+            domain: components["schemas"]["TV.API.Types.Url"];
         };
+        /** Краткий URL в punycode, не может содержать UTF-символы:
+         *     - без схемы
+         *     - без "www." в домене
+         *     - без слешей на конце
+         *     - без "<" и ">"
+         *
+         *     Будет проивзедено автоматическое приведение к формату
+         *
+         *     Разрешен ввод пустой строки, для удаления значения url */
+        "TV.API.Types.Url": string;
     };
     responses: never;
     parameters: never;

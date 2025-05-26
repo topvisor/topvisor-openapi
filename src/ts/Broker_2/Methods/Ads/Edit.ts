@@ -15,7 +15,7 @@ export interface components {
             group_id: number;
             /** Id объявления */
             id: number;
-            type: import('../../Types/Ads/Type.ts').components['schemas']['Broker_2.Types.Ads.Type'];
+            type: components["schemas"]["Broker_2.Types.Ads.Type"];
             /** Заголовок */
             title?: string | null;
             /** Текст */
@@ -25,6 +25,12 @@ export interface components {
             /** Url для отображения */
             display_url?: string | null;
         };
+        /**
+         * Тип объявления
+         * @description @see https://yandex.ru/dev/direct/doc/ru/objects/ad#types
+         * @enum {string}
+         */
+        "Broker_2.Types.Ads.Type": "TEXT_AD" | "SMART_AD" | "MOBILE_APP_AD" | "DYNAMIC_TEXT_AD" | "IMAGE_AD" | "CPC_VIDEO_AD" | "CPM_BANNER_AD" | "CPM_VIDEO_AD" | "SHOPPING_AD" | "LISTING_AD";
     };
     responses: never;
     parameters: never;

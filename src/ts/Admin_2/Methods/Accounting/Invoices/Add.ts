@@ -10,7 +10,7 @@ export interface components {
         /** Добавление счета на оплату */
         "Admin_2.Methods.Accounting.Invoices.Add": {
             /** Дата документа */
-            document_date: import('../../../../TV/API/Types/Date.ts').components['schemas']['TV.API.Types.Date'];
+            document_date: components["schemas"]["TV.API.Types.Date"];
             /** Номер документа */
             document_number: string;
             /** Имя файла */
@@ -24,6 +24,11 @@ export interface components {
             /** Сумма */
             sum: number;
         };
+        /**
+         * Дата
+         * @example 2000-01-01
+         */
+        "TV.API.Types.Date": string;
     };
     responses: never;
     parameters: never;

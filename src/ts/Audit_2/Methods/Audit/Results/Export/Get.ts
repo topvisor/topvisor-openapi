@@ -12,7 +12,7 @@ export interface components {
          * @deprecated
          */
         "Audit_2.Methods.Audit.Results.Export.Get": {
-            type_report: import('../../../../Types/Audit/Results/Export/TypeReport.ts').components['schemas']['Audit_2.Types.Audit.Results.Export.TypeReport'];
+            type_report: components["schemas"]["Audit_2.Types.Audit.Results.Export.TypeReport"];
             /**
              * Формат экспорта
              * @default pdf
@@ -24,9 +24,18 @@ export interface components {
             filter?: string | null;
             /** Вид ссылок (только для PDF) */
             external?: string | null;
-            project_id: import('../../../../../TV/API/Params/ProjectIdTrait.ts').components['schemas']['TV.API.Params.ProjectIdTrait']['project_id'];
-            check_id: import('../../../../Params/Audit/CheckIdTrait.ts').components['schemas']['Audit_2.Params.Audit.CheckIdTrait']['check_id'];
+            project_id: components["schemas"]["project_id"];
+            check_id: components["schemas"]["check_id"];
         };
+        /**
+         * Тип отчета аудита для экспорта
+         * @enum {integer}
+         */
+        "Audit_2.Types.Audit.Results.Export.TypeReport": 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7;
+        /** ID проекта */
+        project_id: number;
+        /** ID проверки аудита */
+        check_id: number;
     };
     responses: never;
     parameters: never;

@@ -10,13 +10,15 @@ export interface components {
         /** Получение записей словаря */
         "Admin_2.Methods.I18n.Get": {
             /** Язык словаря */
-            lang?: import('../../../TV/API/Types/Lang.ts').components['schemas']['TV.API.Types.Lang'] | null;
+            lang?: components["schemas"]["TV.API.Types.Lang"] | null;
             /** Категория словаря */
             category?: string | null;
             /** Поиск по словарю */
             search?: string | null;
             only_duplicates?: boolean;
         };
+        /** @enum {string} */
+        "TV.API.Types.Lang": "ru" | "en";
     };
     responses: never;
     parameters: never;

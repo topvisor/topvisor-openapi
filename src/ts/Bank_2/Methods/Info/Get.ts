@@ -17,15 +17,189 @@ export interface components {
              *     TODO: После типизации результата убрать
              * @description @internal
              */
-            result?: import('../../Objects/Subscriptions/Subscription.ts').components['schemas']['Bank_2.Objects.Subscriptions.Subscription'] | null;
-            fields: import('../../../TV/API/Params/FieldsTrait.ts').components['schemas']['TV.API.Params.FieldsTrait']['fields'];
-            orders: import('../../../TV/API/Params/OrdersTrait.ts').components['schemas']['TV.API.Params.OrdersTrait']['orders'];
-            filters: import('../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['filters'];
-            id?: import('../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['id'];
-            limit?: import('../../../TV/API/Params/LimitTrait.ts').components['schemas']['TV.API.Params.LimitTrait']['limit'];
-            offset: import('../../../TV/API/Params/OffsetTrait.ts').components['schemas']['TV.API.Params.OffsetTrait']['offset'];
-            fetch_style?: import('../../../TV/API/Params/FetchStyleTrait.ts').components['schemas']['TV.API.Params.FetchStyleTrait']['fetch_style'];
+            result?: components["schemas"]["Bank_2.Objects.Subscriptions.Subscription"] | null;
+            fields: components["schemas"]["fields"];
+            orders: components["schemas"]["orders"];
+            filters: components["schemas"]["filters"];
+            id?: components["schemas"]["id"];
+            limit?: components["schemas"]["limit"];
+            offset: components["schemas"]["offset"];
+            fetch_style?: components["schemas"]["fetch_style"];
         };
+        /** Класс настройки плана подписки
+         *
+         *     Используйте этот класс для описания настроек в namespace `Config\Sites\Common\Subscriptions\Plan`
+         *
+         *     В плане нужно указать его имя, стоимость и лимиты
+         *
+         *     Планы можно группировать:
+         *
+         *     - в одном и том же плане может быть разное количество запросов и других лимитов
+         *     - в этом случае для каждого варианта создается отдельный класс с добавлением порядкового номера в имени файла
+         *     - все вариации такого плана должны иметь одно и то же имя
+         *     - это делается для визуального упрощения работы с планами, на самом деле каждая вариация плана, это уникальный план со своими настройками
+         *
+         *     В примерах указаны примерные соотношения между лимитами:
+         *
+         *     - для удобства можно использовать математическими выражения
+         *     - для гибкости можно указывать произвольные значения
+         *
+         *     Рекомендация по названию классов, для удобства настройки:
+         *      - `A_{{ PlanName }}{{ Number }}`
+         *      - `B_{{ PlanName }}{{ Number }}`
+         *      - `C_{{ PlanName }}{{ Number }}`
+         *
+         *     Пример имени класса, оно же id плана: `StarterPack1`
+         *
+         *     При выводе на сайте тарифы выводятся в нужном порядке, например с сортировкой по стоимости */
+        "Bank_2.Objects.Subscriptions.Plan": {
+            id: string;
+            name: string;
+            priceUSD: number;
+            /** Скидка за годовую подписку
+             *
+             *     При расчете финальной стоимости может использоваться округление */
+            annualDiscount: number;
+            /** Выдаваемые лимиты */
+            maxByName: (string | number)[];
+            /** Суффикс, характеризующий настройки тарифа */
+            suffixName: string;
+        };
+        Datetime: Record<string, never>;
+        /**
+         * Статус подписки
+         * @enum {string}
+         */
+        "Bank_2.Types.Subscriptions.Status": "active" | "suspended" | "finished" | "terminated";
+        /**
+         * Тип подписки
+         *
+         *     Определяет способ списания средств и порядок продления подписки
+         * @enum {string}
+         */
+        "Bank_2.Types.Subscriptions.Type": "auto" | "manual";
+        /**
+         * Кто управляет подпиской, а именно:
+         *
+         *     - Запуск списания с карты / электронного кошелька
+         *     - Создание счета
+         *     - Отправка предложения об оплате
+         * @enum {string}
+         */
+        "Bank_2.Types.Subscriptions.Manager": "system" | "api";
+        /** Состояние рекуррентного платежа
+         *
+         *     - создается при подтверждении проведения оплаты или при других обновлениях подписки, содержит только данные, которые надо обновить
+         *     - используется при выводе состояния подписки
+         *
+         *     Определяет логику работы с рекуррентными платежами */
+        "Bank_2.Objects.Requisites.Payment.RecurrentState": {
+            /** Начало расчетного периода, обычно время оплаты */
+            timeStart?: components["schemas"]["Datetime"] | null;
+            /** Окончание расчетного периода */
+            timeEnd?: components["schemas"]["Datetime"] | null;
+            /** Краткая информация о способе платежа
+             *
+             *     - id платежа
+             *     - неполный номер карты и срок действия
+             *     - номер договора */
+            methodInfo: string;
+            status: components["schemas"]["Bank_2.Types.Subscriptions.Status"];
+            type: components["schemas"]["Bank_2.Types.Subscriptions.Type"];
+            manager: components["schemas"]["Bank_2.Types.Subscriptions.Manager"];
+        };
+        /**
+         * Цикл подписки в месяцах
+         *
+         *     Оплата происходит сразу за весь период цикла
+         *
+         *     Если подписка не отменена в течение идущего цикла, то после его завершения она будет автоматически продляться путем повторения платежа
+         *
+         *     Все лимиты, выданные по подписке обновляются без учета этого цикла подписки
+         * @enum {integer}
+         */
+        "Bank_2.Types.Subscriptions.Cycle": 1 | 12;
+        /** Информация о текущей подписки пользователя и ее лимитах */
+        "Bank_2.Objects.Subscriptions.Subscription": {
+            /** id платежа, подписки */
+            paymentId?: number | null;
+            externalPaymentId?: string | null;
+            next?: string | null;
+            /** Текущий план подписки */
+            plan?: components["schemas"]["Bank_2.Objects.Subscriptions.Plan"] | null;
+            /** Следующий план подписки */
+            nextPlan?: components["schemas"]["Bank_2.Objects.Subscriptions.Plan"] | null;
+            /** Состояние подписки */
+            recurrentState?: components["schemas"]["Bank_2.Objects.Requisites.Payment.RecurrentState"] | null;
+            /** Текущий цикл для подписки */
+            cycle?: components["schemas"]["Bank_2.Types.Subscriptions.Cycle"] | null;
+            /** Цикл для следующей подписки */
+            nextCycle?: components["schemas"]["Bank_2.Types.Subscriptions.Cycle"] | null;
+            /**
+             * Использованные лимиты
+             *
+             *     Доступные лимиты см. в `plan`
+             *
+             *     Для нетарифицируемых лимитов значение всегда `null`
+             * @description @type Array<Bank_2\Types\Subscriptions\Limit\Name, int>
+             */
+            limitUsedByName?: (string | number)[] | null;
+            /** Типы лимитов */
+            limitTypeByName?: (string | number)[] | null;
+        };
+        /**
+         * Список полей объекта, которые надо вернуть в результате
+         *
+         *     Если запрос поддерижвает параметр fetch_style, формат ответа может быть разным, fields будет влиять на содержание данных в этом ответе
+         *
+         *     Использует поля модели
+         * @description @see AbstractMethod::MODEL
+         */
+        fields: (string | number)[];
+        /**
+         * Список полей объекта, по которым необходимо выполнить сортировку
+         *
+         *     Поля могут быть строками или объектом: {name: string, direction: 'ASC' | 'DESC', orderValues: array}
+         *
+         *     Использует поля модели
+         * @description @see AbstractMethod::MODEL
+         */
+        orders: (string | number)[];
+        /**
+         * Список фильтров по полям объекта
+         *
+         *     {name: string, operator: Field::AVAILABLE_OPERATORS, values: array}
+         *
+         *     Использует поля модели
+         *
+         *     Поля обязатлеьное, если $id не указан
+         * @description @see AbstractMethod::MODEL
+         *     @see Field::AVAILABLE_OPERATORS
+         */
+        filters: (string | number)[];
+        /** Id объекта, для фильтрации объектов по id
+         *
+         *     Только для моделей с полем id */
+        id: number | null;
+        /** Количество объектов, которые необходимо получить в результате
+         *
+         *     Используется в паре с offset */
+        limit: number | null;
+        /** Число объектов, которое необходимо пропустить при получении резальтата
+         *
+         *     Используется в паре с limit */
+        offset: number;
+        /**
+         * Определяет формат результата: коллекция, объект, значение
+         *
+         *     Примеры:
+         *     - fetchAll - получить коллекцию объектов
+         *     - fetch - получить один объект
+         *     - fetchColumn - получить свойсвто объекта
+         * @description @see Selector::AVAILABLE_FETCH_STYLES
+         *     @see Selector::execFetch() - см. реализацию
+         */
+        fetch_style: string | null;
     };
     responses: never;
     parameters: never;

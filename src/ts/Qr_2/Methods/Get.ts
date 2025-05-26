@@ -18,7 +18,7 @@ export interface components {
              *     - 0 - черно-белый
              *     - 1 - шашечки
              *     - 2 - группы с закруглениями */
-            tpl_n?: import('../Types/TplN.ts').components['schemas']['Qr_2.Types.TplN'];
+            tpl_n?: components["schemas"]["Qr_2.Types.TplN"];
             /** Использовать ли брендированное лого */
             use_brand?: boolean;
             /** Использовать ли цвета из лого */
@@ -31,6 +31,8 @@ export interface components {
              */
             point_size: number;
         };
+        /** @enum {integer} */
+        "Qr_2.Types.TplN": 0 | 1 | 2;
     };
     responses: never;
     parameters: never;

@@ -14,15 +14,15 @@ export interface components {
             externalPaymentId?: string | null;
             next?: string | null;
             /** Текущий план подписки */
-            plan?: import('./Plan.ts').components['schemas']['Bank_2.Objects.Subscriptions.Plan'] | null;
+            plan?: components["schemas"]["Bank_2.Objects.Subscriptions.Plan"] | null;
             /** Следующий план подписки */
-            nextPlan?: import('./Plan.ts').components['schemas']['Bank_2.Objects.Subscriptions.Plan'] | null;
+            nextPlan?: components["schemas"]["Bank_2.Objects.Subscriptions.Plan"] | null;
             /** Состояние подписки */
-            recurrentState?: import('../Requisites/Payment/RecurrentState.ts').components['schemas']['Bank_2.Objects.Requisites.Payment.RecurrentState'] | null;
+            recurrentState?: components["schemas"]["Bank_2.Objects.Requisites.Payment.RecurrentState"] | null;
             /** Текущий цикл для подписки */
-            cycle?: import('../../Types/Subscriptions/Cycle.ts').components['schemas']['Bank_2.Types.Subscriptions.Cycle'] | null;
+            cycle?: components["schemas"]["Bank_2.Types.Subscriptions.Cycle"] | null;
             /** Цикл для следующей подписки */
-            nextCycle?: import('../../Types/Subscriptions/Cycle.ts').components['schemas']['Bank_2.Types.Subscriptions.Cycle'] | null;
+            nextCycle?: components["schemas"]["Bank_2.Types.Subscriptions.Cycle"] | null;
             /**
              * Использованные лимиты
              *
@@ -35,6 +35,99 @@ export interface components {
             /** Типы лимитов */
             limitTypeByName?: (string | number)[] | null;
         };
+        /** Класс настройки плана подписки
+         *
+         *     Используйте этот класс для описания настроек в namespace `Config\Sites\Common\Subscriptions\Plan`
+         *
+         *     В плане нужно указать его имя, стоимость и лимиты
+         *
+         *     Планы можно группировать:
+         *
+         *     - в одном и том же плане может быть разное количество запросов и других лимитов
+         *     - в этом случае для каждого варианта создается отдельный класс с добавлением порядкового номера в имени файла
+         *     - все вариации такого плана должны иметь одно и то же имя
+         *     - это делается для визуального упрощения работы с планами, на самом деле каждая вариация плана, это уникальный план со своими настройками
+         *
+         *     В примерах указаны примерные соотношения между лимитами:
+         *
+         *     - для удобства можно использовать математическими выражения
+         *     - для гибкости можно указывать произвольные значения
+         *
+         *     Рекомендация по названию классов, для удобства настройки:
+         *      - `A_{{ PlanName }}{{ Number }}`
+         *      - `B_{{ PlanName }}{{ Number }}`
+         *      - `C_{{ PlanName }}{{ Number }}`
+         *
+         *     Пример имени класса, оно же id плана: `StarterPack1`
+         *
+         *     При выводе на сайте тарифы выводятся в нужном порядке, например с сортировкой по стоимости */
+        "Bank_2.Objects.Subscriptions.Plan": {
+            id: string;
+            name: string;
+            priceUSD: number;
+            /** Скидка за годовую подписку
+             *
+             *     При расчете финальной стоимости может использоваться округление */
+            annualDiscount: number;
+            /** Выдаваемые лимиты */
+            maxByName: (string | number)[];
+            /** Суффикс, характеризующий настройки тарифа */
+            suffixName: string;
+        };
+        Datetime: Record<string, never>;
+        /**
+         * Статус подписки
+         * @enum {string}
+         */
+        "Bank_2.Types.Subscriptions.Status": "active" | "suspended" | "finished" | "terminated";
+        /**
+         * Тип подписки
+         *
+         *     Определяет способ списания средств и порядок продления подписки
+         * @enum {string}
+         */
+        "Bank_2.Types.Subscriptions.Type": "auto" | "manual";
+        /**
+         * Кто управляет подпиской, а именно:
+         *
+         *     - Запуск списания с карты / электронного кошелька
+         *     - Создание счета
+         *     - Отправка предложения об оплате
+         * @enum {string}
+         */
+        "Bank_2.Types.Subscriptions.Manager": "system" | "api";
+        /** Состояние рекуррентного платежа
+         *
+         *     - создается при подтверждении проведения оплаты или при других обновлениях подписки, содержит только данные, которые надо обновить
+         *     - используется при выводе состояния подписки
+         *
+         *     Определяет логику работы с рекуррентными платежами */
+        "Bank_2.Objects.Requisites.Payment.RecurrentState": {
+            /** Начало расчетного периода, обычно время оплаты */
+            timeStart?: components["schemas"]["Datetime"] | null;
+            /** Окончание расчетного периода */
+            timeEnd?: components["schemas"]["Datetime"] | null;
+            /** Краткая информация о способе платежа
+             *
+             *     - id платежа
+             *     - неполный номер карты и срок действия
+             *     - номер договора */
+            methodInfo: string;
+            status: components["schemas"]["Bank_2.Types.Subscriptions.Status"];
+            type: components["schemas"]["Bank_2.Types.Subscriptions.Type"];
+            manager: components["schemas"]["Bank_2.Types.Subscriptions.Manager"];
+        };
+        /**
+         * Цикл подписки в месяцах
+         *
+         *     Оплата происходит сразу за весь период цикла
+         *
+         *     Если подписка не отменена в течение идущего цикла, то после его завершения она будет автоматически продляться путем повторения платежа
+         *
+         *     Все лимиты, выданные по подписке обновляются без учета этого цикла подписки
+         * @enum {integer}
+         */
+        "Bank_2.Types.Subscriptions.Cycle": 1 | 12;
     };
     responses: never;
     parameters: never;

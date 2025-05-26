@@ -12,12 +12,42 @@ export interface components {
             /** Id проекта */
             project_id: number;
             /** Ключ ПС */
-            searcher_key: import('../../../../Types/SearcherKey.ts').components['schemas']['Positions_2.Types.SearcherKey'];
+            searcher_key: components["schemas"]["Positions_2.Types.SearcherKey"];
             /** Ключи регионов */
-            regions_indexes: import('../../../../../TV/API/Types/IntArray.ts').components['schemas']['TV.API.Types.IntArray'];
-            filters: import('../../../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['filters'];
-            id?: import('../../../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['id'];
+            regions_indexes: components["schemas"]["TV.API.Types.IntArray"];
+            filters: components["schemas"]["filters"];
+            id?: components["schemas"]["id"];
         };
+        /**
+         * Ключ поисковой системы для проверки позиций
+         * @enum {integer}
+         */
+        "Positions_2.Types.SearcherKey": 0 | 20 | 21 | 1 | 4 | 5 | 7 | 8 | 9;
+        /**
+         * Тип массива: int
+         *
+         *     Принимает: Любые целые числа и числа в строках
+         * @description @extends AbstractTypedArray<int>
+         *     @method int[] getValues()
+         *     @method int current()
+         */
+        "TV.API.Types.IntArray": number[];
+        /**
+         * Список фильтров по полям объекта
+         *
+         *     {name: string, operator: Field::AVAILABLE_OPERATORS, values: array}
+         *
+         *     Использует поля модели
+         *
+         *     Поля обязатлеьное, если $id не указан
+         * @description @see AbstractMethod::MODEL
+         *     @see Field::AVAILABLE_OPERATORS
+         */
+        filters: (string | number)[];
+        /** Id объекта, для фильтрации объектов по id
+         *
+         *     Только для моделей с полем id */
+        id: number | null;
     };
     responses: never;
     parameters: never;

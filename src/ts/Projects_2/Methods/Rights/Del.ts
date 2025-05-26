@@ -10,7 +10,7 @@ export interface components {
         /** Удаление прав у пользователя */
         "Projects_2.Methods.Rights.Del": {
             /** Email пользователя (если пользователь не зарегистрирован будет выслано приглашение) */
-            email: import('../../../TV/API/Types/Email.ts').components['schemas']['TV.API.Types.Email'];
+            email: components["schemas"]["TV.API.Types.Email"];
             /** ID проектов
              *
              *     Вместо project_ids можно укзывать project_id */
@@ -20,6 +20,11 @@ export interface components {
              *     Вместо project_id можно укзывать projects_ids */
             project_id?: number | null;
         };
+        /**
+         * E-mail
+         * @example name@example.com
+         */
+        "TV.API.Types.Email": string;
     };
     responses: never;
     parameters: never;

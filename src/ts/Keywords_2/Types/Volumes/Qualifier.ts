@@ -12,9 +12,19 @@ export interface components {
             /** Строковй идентификатор определителя */
             id: string;
             region_key: number;
-            searcher_key: import('./SearcherKey.ts').components['schemas']['Keywords_2.Types.Volumes.SearcherKey'];
-            type: import('./Type.ts').components['schemas']['Keywords_2.Types.Volumes.Type'];
+            searcher_key: components["schemas"]["Keywords_2.Types.Volumes.SearcherKey"];
+            type: components["schemas"]["Keywords_2.Types.Volumes.Type"];
         };
+        /**
+         * Ключ поисковой системы для проверки частоты
+         * @enum {integer}
+         */
+        "Keywords_2.Types.Volumes.SearcherKey": 0 | 1;
+        /**
+         * Тип частоты
+         * @enum {integer}
+         */
+        "Keywords_2.Types.Volumes.Type": 1 | 2 | 3 | 5 | 6;
     };
     responses: never;
     parameters: never;

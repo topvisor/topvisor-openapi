@@ -71,7 +71,7 @@
                         "readOnly": true
                     },
                     "Your_limits": {
-                        "const": "Your limits",
+                        "const": "Limits",
                         "readOnly": true
                     },
                     "Get_more": {
@@ -83,7 +83,7 @@
                         "readOnly": true
                     },
                     "Current_plan": {
-                        "const": "Your current plan",
+                        "const": "Current plan",
                         "readOnly": true
                     },
                     "Payment_method": {
@@ -111,7 +111,7 @@
                         "readOnly": true
                     },
                     "Billing_history": {
-                        "const": "Your billing history",
+                        "const": "Billing history",
                         "readOnly": true
                     },
                     "No_billing_history_data": {

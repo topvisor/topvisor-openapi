@@ -12,9 +12,9 @@ export interface components {
             /** ID проекта */
             project_id: number;
             /** Номер метрики */
-            axe: import('../../Types/Analytics/Axe.ts').components['schemas']['Projects_2.Types.Analytics.Axe'];
+            axe: components["schemas"]["Projects_2.Types.Analytics.Axe"];
             /** Тип группировки */
-            base_filter: import('../../Types/Analytics/Base.ts').components['schemas']['Projects_2.Types.Analytics.Base'];
+            base_filter: components["schemas"]["Projects_2.Types.Analytics.Base"];
             /** Id графика, после которого нужно вставить новый график */
             insert_after_id?: number | null;
             /** Маленький график */
@@ -22,6 +22,16 @@ export interface components {
             /** Сделать график доступным другим пользователям проекта (может настраивать только владелец проекта) */
             share?: number | null;
         };
+        /**
+         * Номер метрики
+         * @enum {integer}
+         */
+        "Projects_2.Types.Analytics.Axe": 1 | 2 | 3 | 4 | 11 | 12 | 13;
+        /**
+         * Тип группировки
+         * @enum {integer}
+         */
+        "Projects_2.Types.Analytics.Base": 1 | 11 | 13 | 2 | 3 | 6 | 4 | 5 | 12;
     };
     responses: never;
     parameters: never;

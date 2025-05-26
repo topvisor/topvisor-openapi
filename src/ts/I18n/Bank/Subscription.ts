@@ -67,13 +67,13 @@ export interface components {
                 };
             };
             /** @constant */
-            readonly Your_limits: "Your limits";
+            readonly Your_limits: "Limits";
             /** @constant */
             readonly Get_more: "Get more";
             /** @constant */
             readonly Unlock: "Unlock";
             /** @constant */
-            readonly Current_plan: "Your current plan";
+            readonly Current_plan: "Current plan";
             /** @constant */
             readonly Payment_method: "Payment method";
             /** @constant */
@@ -87,7 +87,7 @@ export interface components {
             /** @constant */
             readonly View_invoice: "View invoice";
             /** @constant */
-            readonly Billing_history: "Your billing history";
+            readonly Billing_history: "Billing history";
             /** @constant */
             readonly No_billing_history_data: "You do not have any billing history.";
             /** @constant */

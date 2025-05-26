@@ -14,8 +14,15 @@ export interface components {
              *     Тип результата зависит от типа запроса и его настроек */
             errors?: null | null;
             /** Список ообщений, полученных при выполнении запроса */
-            messages?: import('./TV/API/Types/StringArray.ts').components['schemas']['TV.API.Types.StringArray'] | null;
+            messages?: components["schemas"]["TV.API.Types.StringArray"] | null;
         };
+        /**
+         * Тип массива: string[]
+         * @description @extends AbstractTypedArray<string>
+         *     @method string[] getValues()
+         *     @method string current()
+         */
+        "TV.API.Types.StringArray": string[];
     };
     responses: never;
     parameters: never;

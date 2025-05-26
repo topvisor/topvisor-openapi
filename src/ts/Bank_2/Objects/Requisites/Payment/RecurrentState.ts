@@ -15,19 +15,41 @@ export interface components {
          *     Определяет логику работы с рекуррентными платежами */
         "Bank_2.Objects.Requisites.Payment.RecurrentState": {
             /** Начало расчетного периода, обычно время оплаты */
-            timeStart?: import('../../../../Datetime.ts').components['schemas']['Datetime'] | null;
+            timeStart?: components["schemas"]["Datetime"] | null;
             /** Окончание расчетного периода */
-            timeEnd?: import('../../../../Datetime.ts').components['schemas']['Datetime'] | null;
+            timeEnd?: components["schemas"]["Datetime"] | null;
             /** Краткая информация о способе платежа
              *
              *     - id платежа
              *     - неполный номер карты и срок действия
              *     - номер договора */
             methodInfo: string;
-            status: import('../../../Types/Subscriptions/Status.ts').components['schemas']['Bank_2.Types.Subscriptions.Status'];
-            type: import('../../../Types/Subscriptions/Type.ts').components['schemas']['Bank_2.Types.Subscriptions.Type'];
-            manager: import('../../../Types/Subscriptions/Manager.ts').components['schemas']['Bank_2.Types.Subscriptions.Manager'];
+            status: components["schemas"]["Bank_2.Types.Subscriptions.Status"];
+            type: components["schemas"]["Bank_2.Types.Subscriptions.Type"];
+            manager: components["schemas"]["Bank_2.Types.Subscriptions.Manager"];
         };
+        Datetime: Record<string, never>;
+        /**
+         * Статус подписки
+         * @enum {string}
+         */
+        "Bank_2.Types.Subscriptions.Status": "active" | "suspended" | "finished" | "terminated";
+        /**
+         * Тип подписки
+         *
+         *     Определяет способ списания средств и порядок продления подписки
+         * @enum {string}
+         */
+        "Bank_2.Types.Subscriptions.Type": "auto" | "manual";
+        /**
+         * Кто управляет подпиской, а именно:
+         *
+         *     - Запуск списания с карты / электронного кошелька
+         *     - Создание счета
+         *     - Отправка предложения об оплате
+         * @enum {string}
+         */
+        "Bank_2.Types.Subscriptions.Manager": "system" | "api";
     };
     responses: never;
     parameters: never;

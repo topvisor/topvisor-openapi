@@ -13,7 +13,7 @@ export interface components {
             /** Список исходных запросов */
             keywords: (string | number)[];
             /** Объекты определителей настроек ПС и регионов */
-            qualifiers: import('../../Types/Collect/Qualifiers.ts').components['schemas']['Keywords_2.Types.Collect.Qualifiers'];
+            qualifiers: components["schemas"]["Keywords_2.Types.Collect.Qualifiers"];
             /** Минус фразы (только для searcher_key = 0 и searcher_key = 1) */
             keywords_minus?: (string | number)[];
             /** Id группы для размещения подобранных запросов */
@@ -21,12 +21,50 @@ export interface components {
             /** Id папки для новых групп */
             to_id?: number;
             /** @default in_folder_last */
-            to_type: import('../../Types/Collect/ToType.ts').components['schemas']['Keywords_2.Types.Collect.ToType'];
+            to_type: components["schemas"]["Keywords_2.Types.Collect.ToType"];
             /** Собирать все запросы в одну группу (не несет смысл, если указан to_group_id) */
             in_one_group?: boolean;
-            currency?: import('../../../TV/API/Types/Currency.ts').components['schemas']['TV.API.Types.Currency'] | null;
+            currency?: components["schemas"]["TV.API.Types.Currency"] | null;
             debug?: string | null;
         };
+        /**
+         * Ключ поисковой системы для проверки частоты
+         * @enum {integer}
+         */
+        "Keywords_2.Types.Collect.SearcherKey": 0 | 1 | 5 | 104 | 100 | 101 | 105;
+        /**
+         * Тип метода перебора
+         * @enum {string}
+         */
+        "Keywords_2.Types.Collect.HintGenerator": "letter" | "letter_ru" | "number" | "space";
+        /** Типы метода перебора */
+        "Keywords_2.Types.Collect.HintGenerators": components["schemas"]["Keywords_2.Types.Collect.HintGenerator"][];
+        /** Определитель с настройками для подбора */
+        "Keywords_2.Types.Collect.Qualifier": {
+            region_key: number;
+            searcher_key: components["schemas"]["Keywords_2.Types.Collect.SearcherKey"];
+            region_lang?: string | null;
+            also_searched?: boolean | null;
+            depth?: number | null;
+            hint_depth?: number | null;
+            hint_generators?: components["schemas"]["Keywords_2.Types.Collect.HintGenerators"] | null;
+        };
+        /** Определители с настройками для подбора */
+        "Keywords_2.Types.Collect.Qualifiers": components["schemas"]["Keywords_2.Types.Collect.Qualifier"][];
+        /**
+         * Куда добавлять добавляемые группы
+         * @enum {string}
+         */
+        "Keywords_2.Types.Collect.ToType": "in_folder" | "in_folder_last";
+        /**
+         * Валюта
+         *
+         *     Этот общий тип, не зависящий от контекста
+         *
+         *     Дополниетольно нужно проверять в API методах через site()->checkAllowCurrency() в функции check()
+         * @enum {string}
+         */
+        "TV.API.Types.Currency": "RUB" | "USD";
     };
     responses: never;
     parameters: never;

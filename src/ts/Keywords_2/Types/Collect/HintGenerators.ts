@@ -8,7 +8,12 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         /** Типы метода перебора */
-        "Keywords_2.Types.Collect.HintGenerators": import('./HintGenerator.ts').components['schemas']['Keywords_2.Types.Collect.HintGenerator'][];
+        "Keywords_2.Types.Collect.HintGenerators": components["schemas"]["Keywords_2.Types.Collect.HintGenerator"][];
+        /**
+         * Тип метода перебора
+         * @enum {string}
+         */
+        "Keywords_2.Types.Collect.HintGenerator": "letter" | "letter_ru" | "number" | "space";
     };
     responses: never;
     parameters: never;

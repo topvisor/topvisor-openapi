@@ -8,7 +8,12 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         /** Id поисковых системы для проверки позиций */
-        "Positions_2.Types.SearchersKeys": import('./SearcherKey.ts').components['schemas']['Positions_2.Types.SearcherKey'][];
+        "Positions_2.Types.SearchersKeys": components["schemas"]["Positions_2.Types.SearcherKey"][];
+        /**
+         * Ключ поисковой системы для проверки позиций
+         * @enum {integer}
+         */
+        "Positions_2.Types.SearcherKey": 0 | 20 | 21 | 1 | 4 | 5 | 7 | 8 | 9;
     };
     responses: never;
     parameters: never;

@@ -3934,7 +3934,8 @@ paths:
                   - $ref: '#/components/schemas/ResponseError'
             model:
               schema:
-                type: 'null'
+                $ref: '#/components/schemas/Models.Projects'
+                description: Only for typescript, does not contain real data
   /del/recurring_2/recurringCard/:
     post:
       operationId: DelRecurring2RecurringCard
@@ -11535,6 +11536,37 @@ paths:
                       - type: object
                         properties:
                           result: {}
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
+  /get/projects_2/tasks/volumes/price/:
+    post:
+      operationId: GetProjects2TasksVolumesPrice
+      tags:
+        - Projects_2
+      summary: Получение проверки частоты задачи без проекта
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Projects_2.Methods.Tasks.Volumes.Price.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            type: number
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
@@ -24097,6 +24129,34 @@ components:
         - regions_indexes
         - filters
       title: Настройка сортировки регионов
+    Projects_2.Methods.Tasks.Volumes.Price.Get:
+      type: object
+      properties:
+        keywords:
+          title: Ключевые фразы
+          type: array
+          items:
+            oneOf:
+              - type: string
+              - type: number
+        no_recheck:
+          title: |-
+            Проверять ли запросы
+
+            - 0: проверять
+            - 1: не проверять запросы с актуальной частотой
+            - 2: не проверять запросы с частотой
+          nullable: true
+          allOf:
+            - $ref: '#/components/schemas/Keywords_2.Types.Volumes.NoRecheck'
+        qualifiers:
+          title: Объекты определителей частоты
+          allOf:
+            - $ref: '#/components/schemas/Keywords_2.Types.Volumes.Qualifiers'
+      required:
+        - keywords
+        - qualifiers
+      title: Получение проверки частоты задачи без проекта
     Projects_2.Methods.Tasks.Volumes.Status.Get:
       type: object
       properties:

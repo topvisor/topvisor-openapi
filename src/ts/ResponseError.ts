@@ -15,10 +15,31 @@ export interface components {
              * Список ошибок, полученных при выполнении запроса
              * @description @requires
              */
-            errors: import('./Errors.ts').components['schemas']['Errors'];
+            errors: components["schemas"]["Errors"];
             /** Список ообщений, полученных при выполнении запроса */
-            messages?: import('./TV/API/Types/StringArray.ts').components['schemas']['TV.API.Types.StringArray'] | null;
+            messages?: components["schemas"]["TV.API.Types.StringArray"] | null;
         };
+        stdClass: Record<string, never>;
+        /** Информация об ошибке */
+        Error: {
+            /** Код ошибки
+             *
+             *     Код ошибки 0 - deprecated */
+            code: number;
+            /** Описание ошибки */
+            string: string;
+            /** Объект с дополнительной информацией */
+            detail: components["schemas"]["stdClass"];
+        };
+        /** Список ошибок */
+        Errors: components["schemas"]["Error"][];
+        /**
+         * Тип массива: string[]
+         * @description @extends AbstractTypedArray<string>
+         *     @method string[] getValues()
+         *     @method string current()
+         */
+        "TV.API.Types.StringArray": string[];
     };
     responses: never;
     parameters: never;

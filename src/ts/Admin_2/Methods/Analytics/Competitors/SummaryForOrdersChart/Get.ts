@@ -9,15 +9,33 @@ export interface components {
     schemas: {
         /** Получение конкурентов для графика */
         "Admin_2.Methods.Analytics.Competitors.SummaryForOrdersChart.Get": {
-            period: import('../../../../Types/Analytics/Segment.ts').components['schemas']['Admin_2.Types.Analytics.Segment'];
+            period: components["schemas"]["Admin_2.Types.Analytics.Segment"];
             /** Длина периода */
             limit: number;
-            currency?: import('../../../../../TV/API/Types/Currency.ts').components['schemas']['TV.API.Types.Currency'] | null;
+            currency?: components["schemas"]["TV.API.Types.Currency"] | null;
             /** Сортировать ли по типу */
             order_by_type?: number | null;
             /** Инлекс региона */
             region_index?: number | null;
         };
+        /**
+         * Имя сегмента, на которые делится период отчета
+         *
+         *     Отчет делится на равные части - сегменты, за каждый сегмент выводится сводка с агрегацией по этому сегменту
+         *
+         *     Пример: вывод количества регистраций за каждый **месяц** в отчете
+         * @enum {string}
+         */
+        "Admin_2.Types.Analytics.Segment": "day" | "month" | "year";
+        /**
+         * Валюта
+         *
+         *     Этот общий тип, не зависящий от контекста
+         *
+         *     Дополниетольно нужно проверять в API методах через site()->checkAllowCurrency() в функции check()
+         * @enum {string}
+         */
+        "TV.API.Types.Currency": "RUB" | "USD";
     };
     responses: never;
     parameters: never;

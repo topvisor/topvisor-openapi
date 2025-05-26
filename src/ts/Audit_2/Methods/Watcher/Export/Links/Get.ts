@@ -14,12 +14,21 @@ export interface components {
             /** Выводить полные тексты (для вкладки контент) */
             fulltext: boolean;
             /** @default all */
-            changed: import('../../../../Types/Audit/Summary/FilterCheckState.ts').components['schemas']['Audit_2.Types.Audit.Summary.FilterCheckState'];
+            changed: components["schemas"]["Audit_2.Types.Audit.Summary.FilterCheckState"];
             /** Фильтр по тегам */
             tags_ids?: (string | number)[] | null;
-            project_id: import('../../../../../TV/API/Params/ProjectIdTrait.ts').components['schemas']['TV.API.Params.ProjectIdTrait']['project_id'];
-            check_id: import('../../../../Params/Wathcer/CheckIdTrait.ts').components['schemas']['Audit_2.Params.Wathcer.CheckIdTrait']['check_id'];
+            project_id: components["schemas"]["project_id"];
+            check_id: components["schemas"]["check_id"];
         };
+        /**
+         * Фильтр по состоянию изменения в сводке
+         * @enum {string}
+         */
+        "Audit_2.Types.Audit.Summary.FilterCheckState": "all" | "changed";
+        /** ID проекта */
+        project_id: number;
+        /** ID проверки радара */
+        check_id: number;
     };
     responses: never;
     parameters: never;

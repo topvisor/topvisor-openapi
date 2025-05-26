@@ -12,15 +12,20 @@ export interface components {
             /** ID пользователя */
             user_id: number;
             /** Старый email */
-            email_old: import('../../../../../TV/API/Types/Email.ts').components['schemas']['TV.API.Types.Email'];
+            email_old: components["schemas"]["TV.API.Types.Email"];
             /** Новый email */
-            email_new: import('../../../../../TV/API/Types/Email.ts').components['schemas']['TV.API.Types.Email'];
+            email_new: components["schemas"]["TV.API.Types.Email"];
             pass_admin_actions: string;
             /** Владелец нового email подтвердил владение аккаунтом со старым email */
             is_verif: boolean;
             /** Являеется ли запуск - тестом */
             test: boolean;
         };
+        /**
+         * E-mail
+         * @example name@example.com
+         */
+        "TV.API.Types.Email": string;
     };
     responses: never;
     parameters: never;
