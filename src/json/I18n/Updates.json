@@ -195,7 +195,7 @@
                         "readOnly": true
                     },
                     "More_info": {
-                        "const": "Get more insights on&nbsp;organic SERP with&nbsp;<a href=\"{{ hrefSnapshots }}\" target=\"_blank\">Snapshots</a> and&nbsp;<a href=\"{{ hrefCompetitors }}\" target=\"_blank\">Competitor Analysis</a>",
+                        "const": "Get more insights on&nbsp;organic SERP with&nbsp;<a href=\"{{ hrefSnapshots }}\" target=\"_blank\">SERP Snapshots</a>",
                         "readOnly": true
                     }
                 },
