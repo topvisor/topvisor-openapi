@@ -10,7 +10,7 @@ export interface components {
         /** Создание задачи */
         "Projects_2.Methods.Tasks.Volumes.Add": {
             /** Url проекта (домен или url страницы) */
-            url: components["schemas"]["TV.API.Types.UrlShort"];
+            url: import('../../../../TV/API/Types/UrlShort.ts').components['schemas']['TV.API.Types.UrlShort'];
             /** Массив ключевых запросов в формате CSV
              *
              *     - array keywords - массив ключевых запросов, допускается формат CSV */
@@ -24,45 +24,8 @@ export interface components {
              *     - 2: не проверять запросы с частотой */
             no_recheck?: number | null;
             /** Объекты определителей частоты (параметр не обязателен, если check_all_regions = true) */
-            qualifiers: components["schemas"]["Keywords_2.Types.Volumes.Qualifiers"];
+            qualifiers: import('../../../../Keywords_2/Types/Volumes/Qualifiers.ts').components['schemas']['Keywords_2.Types.Volumes.Qualifiers'];
         };
-        /** Краткий URL в punycode, не может содержать UTF-символы:
-         *     - без схемы
-         *     - без "www." в домене
-         *     - без слешей на конце
-         *     - без "<" и ">"
-         *
-         *     Будет проивзедено автоматическое приведение к формату
-         *
-         *     Разрешен ввод пустой строки, для удаления значения url */
-        "TV.API.Types.UrlShort": string;
-        /**
-         * Ключ поисковой системы для проверки частоты
-         * @enum {integer}
-         */
-        "Keywords_2.Types.Volumes.SearcherKey": 0 | 1;
-        /**
-         * Тип частоты
-         * @enum {integer}
-         */
-        "Keywords_2.Types.Volumes.Type": 1 | 2 | 3 | 5 | 6;
-        /** Определитель с настройками региона для проверки частоты запросов */
-        "Keywords_2.Types.Volumes.Qualifier": {
-            /** Строковй идентификатор определителя */
-            id: string;
-            region_key: number;
-            searcher_key: components["schemas"]["Keywords_2.Types.Volumes.SearcherKey"];
-            type: components["schemas"]["Keywords_2.Types.Volumes.Type"];
-        };
-        /**
-         * Определители проверки частоты
-         * @description @extends AbstractStringArray<Qualifier>
-         *     @method Qualifier[] getValues()
-         *     @method Qualifier current()
-         *     @method Qualifier offsetGet()
-         *     @see \TV\API\Types\Qualifier
-         */
-        "Keywords_2.Types.Volumes.Qualifiers": components["schemas"]["Keywords_2.Types.Volumes.Qualifier"][];
     };
     responses: never;
     parameters: never;

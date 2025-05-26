@@ -9,16 +9,9 @@ export interface components {
     schemas: {
         /** Получение количества настроенных URL */
         "Audit_2.Methods.CountUrls.Get": {
-            audit_type: components["schemas"]["Audit_2.Types.Type"];
-            project_id: components["schemas"]["project_id"];
+            audit_type: import('../../Types/Type.ts').components['schemas']['Audit_2.Types.Type'];
+            project_id: import('../../../TV/API/Params/ProjectIdTrait.ts').components['schemas']['TV.API.Params.ProjectIdTrait']['project_id'];
         };
-        /**
-         * Модуль аудита
-         * @enum {string}
-         */
-        "Audit_2.Types.Type": "audit" | "indexing" | "sitemap" | "watcher";
-        /** ID проекта */
-        project_id: number;
     };
     responses: never;
     parameters: never;

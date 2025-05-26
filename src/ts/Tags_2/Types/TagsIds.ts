@@ -13,12 +13,7 @@ export interface components {
          *     Тип массива: TagId[]
          * @description @see Tags_2\Types\TagId
          */
-        "Tags_2.Types.TagsIds": components["schemas"]["Tags_2.Types.TagId"][];
-        /**
-         * Id тега
-         * @enum {string}
-         */
-        "Tags_2.Types.TagId": "1" | "2" | "3" | "4" | "5" | "6" | "7" | "8" | "9" | "10" | "11" | "12" | "13" | "14" | "15" | "16" | "17" | "18" | "19" | "20";
+        "Tags_2.Types.TagsIds": import('./TagId.ts').components['schemas']['Tags_2.Types.TagId'][];
     };
     responses: never;
     parameters: never;

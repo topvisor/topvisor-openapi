@@ -19,57 +19,12 @@ export interface components {
              */
             apply_discount: boolean;
             /** Каким типом расширять группу */
-            type: components["schemas"]["Keywords_2.Types.Collect.Ext.Type"];
+            type: import('../../../../Types/Collect/Ext/Type.ts').components['schemas']['Keywords_2.Types.Collect.Ext.Type'];
             /** Объекты определителей настроек ПС и регионов */
-            qualifiers: components["schemas"]["Keywords_2.Types.Collect.Qualifiers"];
-            filters?: components["schemas"]["filters"];
-            id?: components["schemas"]["id"];
+            qualifiers: import('../../../../Types/Collect/Qualifiers.ts').components['schemas']['Keywords_2.Types.Collect.Qualifiers'];
+            filters?: import('../../../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['filters'];
+            id?: import('../../../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['id'];
         };
-        /**
-         * По каким параметрам расширять группу
-         * @enum {string}
-         */
-        "Keywords_2.Types.Collect.Ext.Type": "groupName" | "groupNameWithKeywords" | "keywords";
-        /**
-         * Ключ поисковой системы для проверки частоты
-         * @enum {integer}
-         */
-        "Keywords_2.Types.Collect.SearcherKey": 0 | 1 | 5 | 104 | 100 | 101 | 105;
-        /**
-         * Тип метода перебора
-         * @enum {string}
-         */
-        "Keywords_2.Types.Collect.HintGenerator": "letter" | "letter_ru" | "number" | "space";
-        /** Типы метода перебора */
-        "Keywords_2.Types.Collect.HintGenerators": components["schemas"]["Keywords_2.Types.Collect.HintGenerator"][];
-        /** Определитель с настройками для подбора */
-        "Keywords_2.Types.Collect.Qualifier": {
-            region_key: number;
-            searcher_key: components["schemas"]["Keywords_2.Types.Collect.SearcherKey"];
-            region_lang?: string | null;
-            also_searched?: boolean | null;
-            depth?: number | null;
-            hint_depth?: number | null;
-            hint_generators?: components["schemas"]["Keywords_2.Types.Collect.HintGenerators"] | null;
-        };
-        /** Определители с настройками для подбора */
-        "Keywords_2.Types.Collect.Qualifiers": components["schemas"]["Keywords_2.Types.Collect.Qualifier"][];
-        /**
-         * Список фильтров по полям объекта
-         *
-         *     {name: string, operator: Field::AVAILABLE_OPERATORS, values: array}
-         *
-         *     Использует поля модели
-         *
-         *     Поля обязатлеьное, если $id не указан
-         * @description @see AbstractMethod::MODEL
-         *     @see Field::AVAILABLE_OPERATORS
-         */
-        filters: (string | number)[];
-        /** Id объекта, для фильтрации объектов по id
-         *
-         *     Только для моделей с полем id */
-        id: number | null;
     };
     responses: never;
     parameters: never;

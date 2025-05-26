@@ -13,36 +13,19 @@ export interface components {
          */
         "Audit_2.Methods.Audit.Log.Chart.Get": {
             /** Фильтр по периоду */
-            time1?: components["schemas"]["TV.API.Types.Datetime"] | null;
+            time1?: import('../../../../../TV/API/Types/Datetime.ts').components['schemas']['TV.API.Types.Datetime'] | null;
             /** Фильтр по периоду */
-            time2?: components["schemas"]["TV.API.Types.Datetime"] | null;
+            time2?: import('../../../../../TV/API/Types/Datetime.ts').components['schemas']['TV.API.Types.Datetime'] | null;
             /**
              * Номер страницы (для использования в SQL)
              * @default 1
              */
             page: number;
-            limit?: components["schemas"]["limit"];
-            offset?: components["schemas"]["offset"];
-            project_id: components["schemas"]["project_id"];
-            check_id: components["schemas"]["check_id"];
+            limit?: import('../../../../../TV/API/Params/LimitTrait.ts').components['schemas']['TV.API.Params.LimitTrait']['limit'];
+            offset?: import('../../../../../TV/API/Params/OffsetTrait.ts').components['schemas']['TV.API.Params.OffsetTrait']['offset'];
+            project_id: import('../../../../../TV/API/Params/ProjectIdTrait.ts').components['schemas']['TV.API.Params.ProjectIdTrait']['project_id'];
+            check_id: import('../../../../Params/Audit/CheckIdTrait.ts').components['schemas']['Audit_2.Params.Audit.CheckIdTrait']['check_id'];
         };
-        /**
-         * Дата с временем
-         * @example 2000-01-01 00:00:00
-         */
-        "TV.API.Types.Datetime": string;
-        /** Количество объектов, которые необходимо получить в результате
-         *
-         *     Используется в паре с offset */
-        limit: number | null;
-        /** Число объектов, которое необходимо пропустить при получении резальтата
-         *
-         *     Используется в паре с limit */
-        offset: number;
-        /** ID проекта */
-        project_id: number;
-        /** ID проверки аудита */
-        check_id: number;
     };
     responses: never;
     parameters: never;

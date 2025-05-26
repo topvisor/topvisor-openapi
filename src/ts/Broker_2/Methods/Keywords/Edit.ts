@@ -22,37 +22,16 @@ export interface components {
              *     - 4: ~95%
              *     - 5: ~90% */
             tactics?: number | null;
-            tactics_2?: components["schemas"]["Broker_2.Types.Keywords.Tactics2"] | null;
+            tactics_2?: import('../../Types/Keywords/Tactics2.ts').components['schemas']['Broker_2.Types.Keywords.Tactics2'] | null;
             /** Корректировка объявлений (проценты) */
             percent?: number | null;
             /** Максимальная цена */
             price_max?: number | null;
             /** Ставка риска */
             price_risk?: number | null;
-            filters: components["schemas"]["filters"];
-            id?: components["schemas"]["id"];
+            filters: import('../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['filters'];
+            id?: import('../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['id'];
         };
-        /**
-         * Тактика при превышении максимальной цены
-         * @enum {string}
-         */
-        "Broker_2.Types.Keywords.Tactics2": "maxBid" | "minBid" | "lowerPos" | "suspend";
-        /**
-         * Список фильтров по полям объекта
-         *
-         *     {name: string, operator: Field::AVAILABLE_OPERATORS, values: array}
-         *
-         *     Использует поля модели
-         *
-         *     Поля обязатлеьное, если $id не указан
-         * @description @see AbstractMethod::MODEL
-         *     @see Field::AVAILABLE_OPERATORS
-         */
-        filters: (string | number)[];
-        /** Id объекта, для фильтрации объектов по id
-         *
-         *     Только для моделей с полем id */
-        id: number | null;
     };
     responses: never;
     parameters: never;

@@ -19,19 +19,8 @@ export interface components {
             /** ID следующего плана подписки */
             subscription_plan_id: number;
             /** Значение следующего цикла подписки */
-            subscription_cycle: components["schemas"]["Bank_2.Types.Subscriptions.Cycle"];
+            subscription_cycle: import('../../../../Bank_2/Types/Subscriptions/Cycle.ts').components['schemas']['Bank_2.Types.Subscriptions.Cycle'];
         };
-        /**
-         * Цикл подписки в месяцах
-         *
-         *     Оплата происходит сразу за весь период цикла
-         *
-         *     Если подписка не отменена в течение идущего цикла, то после его завершения она будет автоматически продляться путем повторения платежа
-         *
-         *     Все лимиты, выданные по подписке обновляются без учета этого цикла подписки
-         * @enum {integer}
-         */
-        "Bank_2.Types.Subscriptions.Cycle": 1 | 12;
     };
     responses: never;
     parameters: never;

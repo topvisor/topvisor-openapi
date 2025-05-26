@@ -18,20 +18,10 @@ export interface components {
             /** Текс для промо кнопки */
             promo_label?: string | null;
             /** Ссылка для промо кнопки */
-            promo_link?: components["schemas"]["TV.API.Types.Url"] | null;
+            promo_link?: import('../../../TV/API/Types/Url.ts').components['schemas']['TV.API.Types.Url'] | null;
             /** Отображать ли автора в списке авторов */
             show_in_author_list?: boolean | null;
         };
-        /** Краткий URL в punycode, не может содержать UTF-символы:
-         *     - без схемы
-         *     - без "www." в домене
-         *     - без слешей на конце
-         *     - без "<" и ">"
-         *
-         *     Будет проивзедено автоматическое приведение к формату
-         *
-         *     Разрешен ввод пустой строки, для удаления значения url */
-        "TV.API.Types.Url": string;
     };
     responses: never;
     parameters: never;

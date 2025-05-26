@@ -16,42 +16,10 @@ export interface components {
              *     - 0: проверять
              *     - 1: не проверять запросы с актуальной частотой
              *     - 2: не проверять запросы с частотой */
-            no_recheck?: components["schemas"]["Keywords_2.Types.Volumes.NoRecheck"] | null;
+            no_recheck?: import('../../../../../Keywords_2/Types/Volumes/NoRecheck.ts').components['schemas']['Keywords_2.Types.Volumes.NoRecheck'] | null;
             /** Объекты определителей частоты */
-            qualifiers: components["schemas"]["Keywords_2.Types.Volumes.Qualifiers"];
+            qualifiers: import('../../../../../Keywords_2/Types/Volumes/Qualifiers.ts').components['schemas']['Keywords_2.Types.Volumes.Qualifiers'];
         };
-        /**
-         * Какие запросы следует пропусить при перепроверке частоты
-         * @enum {integer}
-         */
-        "Keywords_2.Types.Volumes.NoRecheck": 0 | 1 | 2;
-        /**
-         * Ключ поисковой системы для проверки частоты
-         * @enum {integer}
-         */
-        "Keywords_2.Types.Volumes.SearcherKey": 0 | 1;
-        /**
-         * Тип частоты
-         * @enum {integer}
-         */
-        "Keywords_2.Types.Volumes.Type": 1 | 2 | 3 | 5 | 6;
-        /** Определитель с настройками региона для проверки частоты запросов */
-        "Keywords_2.Types.Volumes.Qualifier": {
-            /** Строковй идентификатор определителя */
-            id: string;
-            region_key: number;
-            searcher_key: components["schemas"]["Keywords_2.Types.Volumes.SearcherKey"];
-            type: components["schemas"]["Keywords_2.Types.Volumes.Type"];
-        };
-        /**
-         * Определители проверки частоты
-         * @description @extends AbstractStringArray<Qualifier>
-         *     @method Qualifier[] getValues()
-         *     @method Qualifier current()
-         *     @method Qualifier offsetGet()
-         *     @see \TV\API\Types\Qualifier
-         */
-        "Keywords_2.Types.Volumes.Qualifiers": components["schemas"]["Keywords_2.Types.Volumes.Qualifier"][];
     };
     responses: never;
     parameters: never;

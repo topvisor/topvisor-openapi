@@ -18,11 +18,11 @@ export interface components {
          *     При ошибке производит редирект на страницу с информацией об ошибке */
         "Payments_2.Methods.Add": {
             /** Платежная система */
-            system: components["schemas"]["Payments_2.Types.System"];
+            system: import('../Types/System.ts').components['schemas']['Payments_2.Types.System'];
             /** Сумма платежа */
             sum: number;
             /** Страна реквизитов */
-            country: components["schemas"]["Payments_2.Types.Country"];
+            country: import('../Types/Country.ts').components['schemas']['Payments_2.Types.Country'];
             /** Номер договора/оферты для платежа */
             requisites_id?: string;
             /** ID тарифа
@@ -47,7 +47,7 @@ export interface components {
              */
             subscription_plan_id?: string | null;
             /** Период цикла подписки */
-            subscription_cycle?: components["schemas"]["Bank_2.Types.Subscriptions.Cycle"] | null;
+            subscription_cycle?: import('../../Bank_2/Types/Subscriptions/Cycle.ts').components['schemas']['Bank_2.Types.Subscriptions.Cycle'] | null;
             /** Комментарий */
             comment?: string;
             /** Элементы платежа */
@@ -57,7 +57,7 @@ export interface components {
             /** Пробрасываемые данные в redirectToPay() для FinishAuthorize Tinkoff для Apple Pay и Google Pay */
             payment_data?: string;
             /** Email (указывается, если у пользователя не привязан email) */
-            email?: components["schemas"]["TV.API.Types.Email"] | null;
+            email?: import('../../TV/API/Types/Email.ts').components['schemas']['TV.API.Types.Email'] | null;
             /** Телефон (указывается для определенных систем оплаты) */
             phone?: string;
             /** Флаг - отменяемый платеж, используется для сохранения данных банковской карты пользователя, сумма платежа вернется пользователю после отмены */
@@ -65,26 +65,6 @@ export interface components {
             /** Возвратить id платежа, не выполняя redirectToPay() */
             return_id?: boolean;
         };
-        /** @enum {string} */
-        "Payments_2.Types.System": "balance" | "card" | "card_ios" | "card_android" | "card_ap" | "card_gp" | "invoice" | "tinkoff_business" | "ap" | "ym" | "qw" | "sb" | "wm2" | "pp" | "pd" | "pd_invoice" | "rk" | "pt" | "lp" | "ppg" | "pr";
-        /** @enum {string} */
-        "Payments_2.Types.Country": "RU" | "UA" | "BY" | "KZ" | "other";
-        /**
-         * Цикл подписки в месяцах
-         *
-         *     Оплата происходит сразу за весь период цикла
-         *
-         *     Если подписка не отменена в течение идущего цикла, то после его завершения она будет автоматически продляться путем повторения платежа
-         *
-         *     Все лимиты, выданные по подписке обновляются без учета этого цикла подписки
-         * @enum {integer}
-         */
-        "Bank_2.Types.Subscriptions.Cycle": 1 | 12;
-        /**
-         * E-mail
-         * @example name@example.com
-         */
-        "TV.API.Types.Email": string;
     };
     responses: never;
     parameters: never;

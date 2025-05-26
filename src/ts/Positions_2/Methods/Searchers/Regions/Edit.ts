@@ -18,7 +18,7 @@ export interface components {
              *     Для разных ПС список языков разный */
             region_lang?: string | null;
             /** Устройство региона */
-            region_device?: components["schemas"]["Positions_2.Types.RegionDevice"] | null;
+            region_device?: import('../../../Types/RegionDevice.ts').components['schemas']['Positions_2.Types.RegionDevice'] | null;
             /** Глубина региона
              *
              *     - 1-3 для Яндекса (ПК)
@@ -27,30 +27,9 @@ export interface components {
             region_depth?: number | null;
             /** Включен */
             enabled?: boolean | null;
-            filters: components["schemas"]["filters"];
-            id?: components["schemas"]["id"];
+            filters: import('../../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['filters'];
+            id?: import('../../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['id'];
         };
-        /**
-         * Устройство региона
-         * @enum {integer}
-         */
-        "Positions_2.Types.RegionDevice": 0 | 1 | 2;
-        /**
-         * Список фильтров по полям объекта
-         *
-         *     {name: string, operator: Field::AVAILABLE_OPERATORS, values: array}
-         *
-         *     Использует поля модели
-         *
-         *     Поля обязатлеьное, если $id не указан
-         * @description @see AbstractMethod::MODEL
-         *     @see Field::AVAILABLE_OPERATORS
-         */
-        filters: (string | number)[];
-        /** Id объекта, для фильтрации объектов по id
-         *
-         *     Только для моделей с полем id */
-        id: number | null;
     };
     responses: never;
     parameters: never;

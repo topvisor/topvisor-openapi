@@ -41,33 +41,10 @@ export interface components {
              *     - 1: без учета регионов */
             common_traffic?: boolean | null;
             /** Права для гостевых ссылок */
-            guest_link_right?: components["schemas"]["Positions_2.Types.Settings.GuestLinkRights"] | null;
-            filters: components["schemas"]["filters"];
-            id?: components["schemas"]["id"];
+            guest_link_right?: import('../../Types/Settings/GuestLinkRights.ts').components['schemas']['Positions_2.Types.Settings.GuestLinkRights'] | null;
+            filters: import('../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['filters'];
+            id?: import('../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['id'];
         };
-        /**
-         * Право для гостевых ссылок
-         * @enum {string}
-         */
-        "Positions_2.Types.Settings.GuestLinkRight": "volume" | "frequency" | "visitors" | "dates" | "summary" | "graphics" | "competitors";
-        /** Права для гостевых ссылок */
-        "Positions_2.Types.Settings.GuestLinkRights": components["schemas"]["Positions_2.Types.Settings.GuestLinkRight"][];
-        /**
-         * Список фильтров по полям объекта
-         *
-         *     {name: string, operator: Field::AVAILABLE_OPERATORS, values: array}
-         *
-         *     Использует поля модели
-         *
-         *     Поля обязатлеьное, если $id не указан
-         * @description @see AbstractMethod::MODEL
-         *     @see Field::AVAILABLE_OPERATORS
-         */
-        filters: (string | number)[];
-        /** Id объекта, для фильтрации объектов по id
-         *
-         *     Только для моделей с полем id */
-        id: number | null;
     };
     responses: never;
     parameters: never;

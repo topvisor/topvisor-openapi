@@ -9,59 +9,23 @@ export interface components {
     schemas: {
         /** Экспорт результатов проверки файла */
         "Audit_2.Methods.Audit.Export.Get": {
-            target_type: components["schemas"]["Audit_2.Types.Audit.TargetType"];
+            target_type: import('../../../Types/Audit/TargetType.ts').components['schemas']['Audit_2.Types.Audit.TargetType'];
             /** Тип отчета для фильтра по ресурсам страницы
              *
              *     Только для $target_type = pages */
-            filters_resources_target_type?: components["schemas"]["Audit_2.Types.Audit.TargetType"] | null;
+            filters_resources_target_type?: import('../../../Types/Audit/TargetType.ts').components['schemas']['Audit_2.Types.Audit.TargetType'] | null;
             /** Фильтр по ресурсам страницы, API fitlers для объекта, тип которого указан в filters_extra_target_type
              *
              *     Только для $target_type = pages */
             filters_resources?: (string | number)[];
             /** Формат экспортируемого файла */
-            output: components["schemas"]["TV.API.Types.ExportFormat"];
-            project_id: components["schemas"]["project_id"];
-            fields?: components["schemas"]["fields"];
-            filters?: components["schemas"]["filters"];
-            id?: components["schemas"]["id"];
-            check_id: components["schemas"]["check_id"];
+            output: import('../../../../TV/API/Types/ExportFormat.ts').components['schemas']['TV.API.Types.ExportFormat'];
+            project_id: import('../../../../TV/API/Params/ProjectIdTrait.ts').components['schemas']['TV.API.Params.ProjectIdTrait']['project_id'];
+            fields?: import('../../../../TV/API/Params/FieldsTrait.ts').components['schemas']['TV.API.Params.FieldsTrait']['fields'];
+            filters?: import('../../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['filters'];
+            id?: import('../../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['id'];
+            check_id: import('../../../Params/Audit/CheckIdTrait.ts').components['schemas']['Audit_2.Params.Audit.CheckIdTrait']['check_id'];
         };
-        /**
-         * Тип очтета аудита
-         * @enum {string}
-         */
-        "Audit_2.Types.Audit.TargetType": "pages" | "links" | "images" | "js" | "css";
-        /** @enum {string} */
-        "TV.API.Types.ExportFormat": "csv" | "xlsx";
-        /** ID проекта */
-        project_id: number;
-        /**
-         * Список полей объекта, которые надо вернуть в результате
-         *
-         *     Если запрос поддерижвает параметр fetch_style, формат ответа может быть разным, fields будет влиять на содержание данных в этом ответе
-         *
-         *     Использует поля модели
-         * @description @see AbstractMethod::MODEL
-         */
-        fields: (string | number)[];
-        /**
-         * Список фильтров по полям объекта
-         *
-         *     {name: string, operator: Field::AVAILABLE_OPERATORS, values: array}
-         *
-         *     Использует поля модели
-         *
-         *     Поля обязатлеьное, если $id не указан
-         * @description @see AbstractMethod::MODEL
-         *     @see Field::AVAILABLE_OPERATORS
-         */
-        filters: (string | number)[];
-        /** Id объекта, для фильтрации объектов по id
-         *
-         *     Только для моделей с полем id */
-        id: number | null;
-        /** ID проверки аудита */
-        check_id: number;
     };
     responses: never;
     parameters: never;

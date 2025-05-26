@@ -11,9 +11,9 @@ export interface components {
             /** Номер договора */
             id: number;
             /** Корпоративный e-mail */
-            email: components["schemas"]["TV.API.Types.Email"];
+            email: import('../../../TV/API/Types/Email.ts').components['schemas']['TV.API.Types.Email'];
             /** Личный e-mail */
-            staff_email: components["schemas"]["TV.API.Types.Email"];
+            staff_email: import('../../../TV/API/Types/Email.ts').components['schemas']['TV.API.Types.Email'];
             /** Должность */
             post: string;
             /** Фамилия */
@@ -37,11 +37,6 @@ export interface components {
             /** Группа */
             group?: number | null;
         };
-        /**
-         * E-mail
-         * @example name@example.com
-         */
-        "TV.API.Types.Email": string;
     };
     responses: never;
     parameters: never;

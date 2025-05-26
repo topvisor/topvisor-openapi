@@ -14,9 +14,9 @@ export interface components {
             /** Id организации */
             org_id: string;
             /** Дата начала диапазона */
-            date1: components["schemas"]["TV.API.Types.Date"];
+            date1: import('../../../../TV/API/Types/Date.ts').components['schemas']['TV.API.Types.Date'];
             /** Дата конца диапазона */
-            date2: components["schemas"]["TV.API.Types.Date"];
+            date2: import('../../../../TV/API/Types/Date.ts').components['schemas']['TV.API.Types.Date'];
             /** КПП организации */
             org_kpp?: string | null;
             /** Id договора */
@@ -26,11 +26,6 @@ export interface components {
              *     Если true, то документ с подписью (не распространяется на договоры) */
             signed?: boolean;
         };
-        /**
-         * Дата
-         * @example 2000-01-01
-         */
-        "TV.API.Types.Date": string;
     };
     responses: never;
     parameters: never;

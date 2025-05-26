@@ -10,21 +10,14 @@ export interface components {
         /** Оставление отзыва */
         "Votes_2.Methods.Add": {
             /** Поддомен с которого оставлен отзыв */
-            subdomain?: components["schemas"]["TV.API.Types.Topvisor.Subdomain"];
+            subdomain?: import('../../TV/API/Types/Topvisor/Subdomain.ts').components['schemas']['TV.API.Types.Topvisor.Subdomain'];
             /** Url (путь) с которого оставлен отзыв */
             url: string;
             /** Комментарий */
             comment?: string;
             /** Оценка */
-            rate: components["schemas"]["Votes_2.Types.Rate"];
+            rate: import('../Types/Rate.ts').components['schemas']['Votes_2.Types.Rate'];
         };
-        /** @enum {string} */
-        "TV.API.Types.Topvisor.Subdomain": "" | "journal";
-        /**
-         * Оценка отзыва
-         * @enum {string}
-         */
-        "Votes_2.Types.Rate": "1" | "2" | "3" | "4" | "5";
     };
     responses: never;
     parameters: never;

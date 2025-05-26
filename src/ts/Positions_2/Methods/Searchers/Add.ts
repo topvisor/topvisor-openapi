@@ -12,13 +12,8 @@ export interface components {
             /** Id проекта */
             project_id: number;
             /** Ключ ПС */
-            searcher_key: components["schemas"]["Positions_2.Types.SearcherKey"];
+            searcher_key: import('../../Types/SearcherKey.ts').components['schemas']['Positions_2.Types.SearcherKey'];
         };
-        /**
-         * Ключ поисковой системы для проверки позиций
-         * @enum {integer}
-         */
-        "Positions_2.Types.SearcherKey": 0 | 20 | 21 | 1 | 4 | 5 | 7 | 8 | 9;
     };
     responses: never;
     parameters: never;
