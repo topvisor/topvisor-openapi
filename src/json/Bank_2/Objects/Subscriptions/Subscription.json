@@ -19,8 +19,21 @@
                         "nullable": true,
                         "type": "string"
                     },
+                    "next": {
+                        "nullable": true,
+                        "type": "string"
+                    },
                     "plan": {
                         "title": "Текущий план подписки",
+                        "nullable": true,
+                        "allOf": [
+                            {
+                                "$ref": "../../../Bank_2/Objects/Subscriptions/Plan.json#/components/schemas/Bank_2.Objects.Subscriptions.Plan"
+                            }
+                        ]
+                    },
+                    "nextPlan": {
+                        "title": "Следующий план подписки",
                         "nullable": true,
                         "allOf": [
                             {
@@ -38,7 +51,16 @@
                         ]
                     },
                     "cycle": {
-                        "title": "Время окончания подписки",
+                        "title": "Текущий цикл для подписки",
+                        "nullable": true,
+                        "allOf": [
+                            {
+                                "$ref": "../../../Bank_2/Types/Subscriptions/Cycle.json#/components/schemas/Bank_2.Types.Subscriptions.Cycle"
+                            }
+                        ]
+                    },
+                    "nextCycle": {
+                        "title": "Цикл для следующей подписки",
                         "nullable": true,
                         "allOf": [
                             {

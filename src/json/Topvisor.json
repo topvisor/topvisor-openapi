@@ -750,62 +750,6 @@
                 }
             }
         },
-        "/del/recurring_2/": {
-            "post": {
-                "operationId": "DelRecurring2",
-                "tags": [
-                    "Recurring_2"
-                ],
-                "summary": "Удаление настроек автоопераций",
-                "requestBody": {
-                    "content": {
-                        "application/json": {
-                            "schema": {
-                                "$ref": "Recurring_2/Methods/Del.json#/components/schemas/Recurring_2.Methods.Del"
-                            }
-                        }
-                    },
-                    "required": true
-                },
-                "responses": {
-                    "200": {
-                        "description": "",
-                        "content": {
-                            "application/json": {
-                                "schema": {
-                                    "oneOf": [
-                                        {
-                                            "allOf": [
-                                                {
-                                                    "type": "object",
-                                                    "properties": {
-                                                        "result": {}
-                                                    },
-                                                    "required": [
-                                                        "result"
-                                                    ]
-                                                },
-                                                {
-                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
-                                                }
-                                            ]
-                                        },
-                                        {
-                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
-                                        }
-                                    ]
-                                }
-                            },
-                            "model": {
-                                "schema": {
-                                    "type": "null"
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        },
         "/edit/recurring_2/": {
             "post": {
                 "operationId": "EditRecurring2",
@@ -2877,7 +2821,7 @@
                                                                     }
                                                                 ]
                                                             },
-                                                            "title": "@return array{balance_all: float, balance_personal: float, balance_bonus: float, balance_plan: float, tariff: array, subscription?: Bank_2\\Objects\\Subscriptions\\Subscription}"
+                                                            "title": "@return array{balance_all: float, balance_personal: float, balance_bonus: float, balance_plan: float, tariff: array, subscription?: Bank_2\\Objects\\Subscriptions\\Subscription, subscription_name?: Bank_2\\Objects\\Subscriptions\\Subscription}"
                                                         }
                                                     },
                                                     "required": [
@@ -13844,6 +13788,124 @@
                                                     "properties": {
                                                         "result": {
                                                             "type": "integer"
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "result"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
+                                        }
+                                    ]
+                                }
+                            },
+                            "model": {
+                                "schema": {
+                                    "type": "null"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/edit/payments_2/recurrent/suspend/": {
+            "post": {
+                "operationId": "EditPayments2RecurrentSuspend",
+                "tags": [
+                    "Payments_2"
+                ],
+                "summary": "Управление приостановкой/возобновлением рекуррентных платежей",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Payments_2/Methods/Recurrent/Suspend/Edit.json#/components/schemas/Payments_2.Methods.Recurrent.Suspend.Edit"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "oneOf": [
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "type": "integer",
+                                                            "title": "@throws Exception Ошибка во входных данных, внешнем API или БД"
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "result"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
+                                        }
+                                    ]
+                                }
+                            },
+                            "model": {
+                                "schema": {
+                                    "type": "null"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/edit/payments_2/subscriptions/next/": {
+            "post": {
+                "operationId": "EditPayments2SubscriptionsNext",
+                "tags": [
+                    "Payments_2"
+                ],
+                "summary": "Изменения подписки на следующий расчетный период\n\nИзменение доступно только в рамках одной платежной системы\n\nЕсли требуется изменить другие параметры подписки, это можно сделать через создание новой подписки.\nПри создании новой подписки текущая подписка будет досрочно завершена, с выдачей скидки в пользу новой подписки",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Payments_2/Methods/Subscriptions/Next/Edit.json#/components/schemas/Payments_2.Methods.Subscriptions.Next.Edit"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "oneOf": [
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "type": "boolean",
+                                                            "title": "@throws Exception"
                                                         }
                                                     },
                                                     "required": [

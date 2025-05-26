@@ -9,7 +9,7 @@ export interface components {
     schemas: {
         /** Изменение платежных реквизитов тарифа */
         "Payments_2.Methods.NextRequisitesId.Edit": {
-            /** ID следующего запроса */
+            /** ID реквизитов для продления тарифа */
             next_requisites_id: string;
         };
     };

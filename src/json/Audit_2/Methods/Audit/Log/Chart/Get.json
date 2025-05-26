@@ -15,7 +15,7 @@
                         "nullable": true,
                         "allOf": [
                             {
-                                "$ref": "../../../../../DateTime.json#/components/schemas/DateTime"
+                                "$ref": "../../../../../TV/API/Types/Datetime.json#/components/schemas/TV.API.Types.Datetime"
                             }
                         ]
                     },
@@ -24,7 +24,7 @@
                         "nullable": true,
                         "allOf": [
                             {
-                                "$ref": "../../../../../DateTime.json#/components/schemas/DateTime"
+                                "$ref": "../../../../../TV/API/Types/Datetime.json#/components/schemas/TV.API.Types.Datetime"
                             }
                         ]
                     },

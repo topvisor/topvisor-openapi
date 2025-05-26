@@ -1,13 +1,13 @@
 {
     "openapi": "3.0.0",
     "info": {
-        "title": "Topvisor/DateTime",
+        "title": "Topvisor/Datetime",
         "version": "2.0.0"
     },
     "paths": {},
     "components": {
         "schemas": {
-            "DateTime": {
+            "Datetime": {
                 "type": "object",
                 "properties": {},
                 "required": []

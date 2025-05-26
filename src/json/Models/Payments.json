@@ -31,6 +31,9 @@
                     "data": {
                         "nullable": true
                     },
+                    "items": {
+                        "nullable": true
+                    },
                     "sum": {
                         "nullable": true
                     },
@@ -47,6 +50,12 @@
                         "nullable": true
                     },
                     "tariff_count_month": {
+                        "nullable": true
+                    },
+                    "subscription_plan_id": {
+                        "nullable": true
+                    },
+                    "subscription_cycle": {
                         "nullable": true
                     },
                     "date": {

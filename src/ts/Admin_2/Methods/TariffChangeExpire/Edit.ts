@@ -10,7 +10,7 @@ export interface components {
         /** Изменение даты следующего списания по тарифу */
         "Admin_2.Methods.TariffChangeExpire.Edit": {
             /** Дата следующего списания по тарифу */
-            expire: import('../../../TV/API/Types/Date.ts').components['schemas']['TV.API.Types.Date'];
+            state_time_end: import('../../../TV/API/Types/Date.ts').components['schemas']['TV.API.Types.Date'];
         };
     };
     responses: never;

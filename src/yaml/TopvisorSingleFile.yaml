@@ -540,36 +540,6 @@ paths:
             model:
               schema:
                 type: 'null'
-  /del/recurring_2/:
-    post:
-      operationId: DelRecurring2
-      tags:
-        - Recurring_2
-      summary: Удаление настроек автоопераций
-      requestBody:
-        content:
-          application/json:
-            schema:
-              $ref: '#/components/schemas/Recurring_2.Methods.Del'
-        required: true
-      responses:
-        '200':
-          description: ''
-          content:
-            application/json:
-              schema:
-                oneOf:
-                  - allOf:
-                      - type: object
-                        properties:
-                          result: {}
-                        required:
-                          - result
-                      - $ref: '#/components/schemas/ResponseSuccess'
-                  - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /edit/recurring_2/:
     post:
       operationId: EditRecurring2
@@ -1707,7 +1677,7 @@ paths:
                               oneOf:
                                 - type: string
                                 - type: number
-                            title: '@return array{balance_all: float, balance_personal: float, balance_bonus: float, balance_plan: float, tariff: array, subscription?: Bank_2\Objects\Subscriptions\Subscription}'
+                            title: '@return array{balance_all: float, balance_personal: float, balance_bonus: float, balance_plan: float, tariff: array, subscription?: Bank_2\Objects\Subscriptions\Subscription, subscription_name?: Bank_2\Objects\Subscriptions\Subscription}'
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
@@ -7698,6 +7668,76 @@ paths:
             model:
               schema:
                 type: 'null'
+  /edit/payments_2/recurrent/suspend/:
+    post:
+      operationId: EditPayments2RecurrentSuspend
+      tags:
+        - Payments_2
+      summary: Управление приостановкой/возобновлением рекуррентных платежей
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Payments_2.Methods.Recurrent.Suspend.Edit'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            type: integer
+                            title: '@throws Exception Ошибка во входных данных, внешнем API или БД'
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
+  /edit/payments_2/subscriptions/next/:
+    post:
+      operationId: EditPayments2SubscriptionsNext
+      tags:
+        - Payments_2
+      summary: |-
+        Изменения подписки на следующий расчетный период
+
+        Изменение доступно только в рамках одной платежной системы
+
+        Если требуется изменить другие параметры подписки, это можно сделать через создание новой подписки.
+        При создании новой подписки текущая подписка будет досрочно завершена, с выдачей скидки в пользу новой подписки
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Payments_2.Methods.Subscriptions.Next.Edit'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            type: boolean
+                            title: '@throws Exception'
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
   /edit/payments_2/tariff/delCard/:
     post:
       operationId: EditPayments2TariffDelCard
@@ -12294,6 +12334,8 @@ components:
           nullable: true
         data:
           nullable: true
+        items:
+          nullable: true
         sum:
           nullable: true
         currency:
@@ -12305,6 +12347,10 @@ components:
         tariff_id:
           nullable: true
         tariff_count_month:
+          nullable: true
+        subscription_plan_id:
+          nullable: true
+        subscription_cycle:
           nullable: true
         date:
           nullable: true
@@ -12361,11 +12407,16 @@ components:
         Генерация QR кода по тексту
 
         Возвращает изображение в формате data:image/png;base64
+    Recurring_2.Types.System:
+      type: string
+      enum:
+        - card
+        - invoice
+      title: Платежная система рекуррентного платежа
     Recurring_2.Types.Type:
       type: string
       enum:
         - refill
-        - domainRenew
       title: Тип рекуррентного платежа
     TV.API.Types.Url:
       type: string
@@ -12379,26 +12430,6 @@ components:
         Будет проивзедено автоматическое приведение к формату
 
         Разрешен ввод пустой строки, для удаления значения url
-    Recurring_2.Methods.Del:
-      type: object
-      properties:
-        type:
-          allOf:
-            - $ref: '#/components/schemas/Recurring_2.Types.Type'
-        target:
-          title: Объект доменного платежа (в случае domainRenew - домен)
-          allOf:
-            - $ref: '#/components/schemas/TV.API.Types.Url'
-      required:
-        - type
-        - target
-      title: Удаление настроек автоопераций
-    Recurring_2.Types.System:
-      type: string
-      enum:
-        - card
-        - invoice
-      title: Платежная система рекуррентного платежа
     Recurring_2.Methods.Edit:
       type: object
       properties:
@@ -13326,12 +13357,12 @@ components:
     Admin_2.Methods.TariffChangeExpire.Edit:
       type: object
       properties:
-        expire:
+        state_time_end:
           title: Дата следующего списания по тарифу
           allOf:
             - $ref: '#/components/schemas/TV.API.Types.Date'
       required:
-        - expire
+        - state_time_end
       title: Изменение даты следующего списания по тарифу
     Admin_2.Methods.Tpl.Get:
       type: object
@@ -14471,11 +14502,11 @@ components:
         - system
         - api
       title: |-
-        Кто выполняет продление подписки, а именно:
+        Кто управляет подпиской, а именно:
 
-        - запуск списания с карты / электронного кошелька
-        - создание счета
-        - отправка предложения об оплате
+        - Запуск списания с карты / электронного кошелька
+        - Создание счета
+        - Отправка предложения об оплате
     Bank_2.Objects.Requisites.Payment.RecurrentState:
       type: object
       properties:
@@ -14489,6 +14520,14 @@ components:
           nullable: true
           allOf:
             - $ref: '#/components/schemas/Datetime'
+        methodInfo:
+          title: |-
+            Краткая информация о способе платежа
+
+            - id платежа
+            - неполный номер карты и срок действия
+            - номер договора
+          type: string
         status:
           allOf:
             - $ref: '#/components/schemas/Bank_2.Types.Subscriptions.Status'
@@ -14498,23 +14537,18 @@ components:
         manager:
           allOf:
             - $ref: '#/components/schemas/Bank_2.Types.Subscriptions.Manager'
-        methodInfo:
-          title: |-
-            Краткая информация о способе платежа
-
-            - id платежа
-            - неполный номер карты и срок действия
-            - номер договора
-          type: string
       required:
+        - methodInfo
         - status
         - type
         - manager
-        - methodInfo
       title: |-
         Состояние рекуррентного платежа
 
-        Создается при подтверждении проведения оплаты и определяет дальнейшую логику работы с рекуррентными платежами
+        - создается при подтверждении проведения оплаты или при других обновлениях подписки, содержит только данные, которые надо обновить
+        - используется при выводе состояния подписки
+
+        Определяет логику работы с рекуррентными платежами
     Bank_2.Objects.Subscriptions.Subscription:
       type: object
       properties:
@@ -14525,8 +14559,16 @@ components:
         externalPaymentId:
           nullable: true
           type: string
+        next:
+          nullable: true
+          type: string
         plan:
           title: Текущий план подписки
+          nullable: true
+          allOf:
+            - $ref: '#/components/schemas/Bank_2.Objects.Subscriptions.Plan'
+        nextPlan:
+          title: Следующий план подписки
           nullable: true
           allOf:
             - $ref: '#/components/schemas/Bank_2.Objects.Subscriptions.Plan'
@@ -14536,7 +14578,12 @@ components:
           allOf:
             - $ref: '#/components/schemas/Bank_2.Objects.Requisites.Payment.RecurrentState'
         cycle:
-          title: Время окончания подписки
+          title: Текущий цикл для подписки
+          nullable: true
+          allOf:
+            - $ref: '#/components/schemas/Bank_2.Types.Subscriptions.Cycle'
+        nextCycle:
+          title: Цикл для следующей подписки
           nullable: true
           allOf:
             - $ref: '#/components/schemas/Bank_2.Types.Subscriptions.Cycle'
@@ -16667,7 +16714,7 @@ components:
       type: object
       properties:
         next_requisites_id:
-          title: ID следующего запроса
+          title: ID реквизитов для продления тарифа
           type: string
       required:
         - next_requisites_id
@@ -21517,6 +21564,47 @@ components:
         - telegram
         - comment
       title: Отправление письма с лэндинга вакансий на hr@topvisor.com
+    Payments_2.Methods.Recurrent.Suspend.Edit:
+      type: object
+      properties:
+        payment_id:
+          title: id платежа, связанного с подпиской или тарифом
+          type: integer
+        suspend:
+          title: |-
+            Флаг приостановки/возобновления рекуррентных платежей
+
+            - `true`: приостановить
+            - `false`: возобновить
+          type: boolean
+      required:
+        - payment_id
+        - suspend
+      title: Управление приостановкой/возобновлением рекуррентных платежей
+    Payments_2.Methods.Subscriptions.Next.Edit:
+      type: object
+      properties:
+        payment_id:
+          title: id платежа, связанного с подпиской
+          type: integer
+        subscription_plan_id:
+          title: ID следующего плана подписки
+          type: integer
+        subscription_cycle:
+          title: Значение следующего цикла подписки
+          allOf:
+            - $ref: '#/components/schemas/Bank_2.Types.Subscriptions.Cycle'
+      required:
+        - payment_id
+        - subscription_plan_id
+        - subscription_cycle
+      title: |-
+        Изменения подписки на следующий расчетный период
+
+        Изменение доступно только в рамках одной платежной системы
+
+        Если требуется изменить другие параметры подписки, это можно сделать через создание новой подписки.
+        При создании новой подписки текущая подписка будет досрочно завершена, с выдачей скидки в пользу новой подписки
     Payments_2.Methods.Tariff.DelCard.Edit:
       type: object
       properties: {}
@@ -23292,10 +23380,6 @@ components:
         - project_id
         - check_id
       title: Получение информации о текущей ошибке на роботе
-    DateTime:
-      type: object
-      properties: {}
-      required: []
     Audit_2.Methods.Audit.Log.Chart.Get:
       type: object
       properties:
@@ -23303,12 +23387,12 @@ components:
           title: Фильтр по периоду
           nullable: true
           allOf:
-            - $ref: '#/components/schemas/DateTime'
+            - $ref: '#/components/schemas/TV.API.Types.Datetime'
         time2:
           title: Фильтр по периоду
           nullable: true
           allOf:
-            - $ref: '#/components/schemas/DateTime'
+            - $ref: '#/components/schemas/TV.API.Types.Datetime'
         page:
           title: Номер страницы (для использования в SQL)
           default: 1

@@ -10,7 +10,7 @@
             "Admin_2.Methods.TariffChangeExpire.Edit": {
                 "type": "object",
                 "properties": {
-                    "expire": {
+                    "state_time_end": {
                         "title": "Дата следующего списания по тарифу",
                         "allOf": [
                             {
@@ -20,7 +20,7 @@
                     }
                 },
                 "required": [
-                    "expire"
+                    "state_time_end"
                 ],
                 "title": "Изменение даты следующего списания по тарифу"
             }

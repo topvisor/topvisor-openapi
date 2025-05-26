@@ -16,12 +16,15 @@ export interface components {
             system?: any;
             requisites_id?: any;
             data?: any;
+            items?: any;
             sum?: any;
             currency?: any;
             status?: any;
             recurrent_type?: any;
             tariff_id?: any;
             tariff_count_month?: any;
+            subscription_plan_id?: any;
+            subscription_cycle?: any;
             date?: any;
             date_month?: any;
             date_finished?: any;

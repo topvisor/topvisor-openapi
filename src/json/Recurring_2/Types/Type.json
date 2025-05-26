@@ -10,8 +10,7 @@
             "Recurring_2.Types.Type": {
                 "type": "string",
                 "enum": [
-                    "refill",
-                    "domainRenew"
+                    "refill"
                 ],
                 "title": "Тип рекуррентного платежа"
             }

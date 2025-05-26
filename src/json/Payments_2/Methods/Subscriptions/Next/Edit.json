@@ -1,0 +1,39 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Payments_2.Methods.Subscriptions.Next.Edit",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Payments_2.Methods.Subscriptions.Next.Edit": {
+                "type": "object",
+                "properties": {
+                    "payment_id": {
+                        "title": "id платежа, связанного с подпиской",
+                        "type": "integer"
+                    },
+                    "subscription_plan_id": {
+                        "title": "ID следующего плана подписки",
+                        "type": "integer"
+                    },
+                    "subscription_cycle": {
+                        "title": "Значение следующего цикла подписки",
+                        "allOf": [
+                            {
+                                "$ref": "../../../../Bank_2/Types/Subscriptions/Cycle.json#/components/schemas/Bank_2.Types.Subscriptions.Cycle"
+                            }
+                        ]
+                    }
+                },
+                "required": [
+                    "payment_id",
+                    "subscription_plan_id",
+                    "subscription_cycle"
+                ],
+                "title": "Изменения подписки на следующий расчетный период\n\nИзменение доступно только в рамках одной платежной системы\n\nЕсли требуется изменить другие параметры подписки, это можно сделать через создание новой подписки.\nПри создании новой подписки текущая подписка будет досрочно завершена, с выдачей скидки в пользу новой подписки"
+            }
+        }
+    }
+}

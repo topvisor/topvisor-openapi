@@ -11,7 +11,7 @@
                 "type": "object",
                 "properties": {
                     "next_requisites_id": {
-                        "title": "ID следующего запроса",
+                        "title": "ID реквизитов для продления тарифа",
                         "type": "string"
                     }
                 },

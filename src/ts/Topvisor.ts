@@ -243,23 +243,6 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Удаление настроек автоопераций */
-    "/del/recurring_2/": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        get?: never;
-        put?: never;
-        post: operations["DelRecurring2"];
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
-    };  
     /** Настройка рекуррентного платежа */
     "/edit/recurring_2/": {
         parameters: {
@@ -3985,6 +3968,45 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
+    /** Управление приостановкой/возобновлением рекуррентных платежей */
+    "/edit/payments_2/recurrent/suspend/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["EditPayments2RecurrentSuspend"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Изменения подписки на следующий расчетный период
+     *
+     *     Изменение доступно только в рамках одной платежной системы
+     *
+     *     Если требуется изменить другие параметры подписки, это можно сделать через создание новой подписки.
+     *     При создании новой подписки текущая подписка будет досрочно завершена, с выдачей скидки в пользу новой подписки */
+    "/edit/payments_2/subscriptions/next/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["EditPayments2SubscriptionsNext"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
     /** Отписка от тарифа, оплаченного картой */
     "/edit/payments_2/tariff/delCard/": {
         parameters: {
@@ -6471,32 +6493,6 @@ export interface operations {
             };
         };
     };
-    DelRecurring2: {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        requestBody: {
-            content: {
-                "application/json": import('./Recurring_2/Methods/Del.ts').components['schemas']['Recurring_2.Methods.Del'];
-            };
-        };
-        responses: {
-            200: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/json": ({
-                        result: unknown;
-                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
-                };
-            };
-        };
-    };
     EditRecurring2: {
         parameters: {
             query?: never;
@@ -7408,7 +7404,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        /** @return array{balance_all: float, balance_personal: float, balance_bonus: float, balance_plan: float, tariff: array, subscription?: Bank_2\Objects\Subscriptions\Subscription} */
+                        /** @return array{balance_all: float, balance_personal: float, balance_bonus: float, balance_plan: float, tariff: array, subscription?: Bank_2\Objects\Subscriptions\Subscription, subscription_name?: Bank_2\Objects\Subscriptions\Subscription} */
                         result: (string | number)[];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
@@ -12142,6 +12138,60 @@ export interface operations {
                 content: {
                     "application/json": ({
                         result: number;
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: null;
+                };
+            };
+        };
+    };
+    EditPayments2RecurrentSuspend: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Payments_2/Methods/Recurrent/Suspend/Edit.ts').components['schemas']['Payments_2.Methods.Recurrent.Suspend.Edit'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        /** @throws Exception Ошибка во входных данных, внешнем API или БД */
+                        result: number;
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: null;
+                };
+            };
+        };
+    };
+    EditPayments2SubscriptionsNext: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Payments_2/Methods/Subscriptions/Next/Edit.ts').components['schemas']['Payments_2.Methods.Subscriptions.Next.Edit'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        /** @throws Exception */
+                        result: boolean;
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };

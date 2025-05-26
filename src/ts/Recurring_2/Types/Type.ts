@@ -11,7 +11,7 @@ export interface components {
          * Тип рекуррентного платежа
          * @enum {string}
          */
-        "Recurring_2.Types.Type": "refill" | "domainRenew";
+        "Recurring_2.Types.Type": "refill";
     };
     responses: never;
     parameters: never;
