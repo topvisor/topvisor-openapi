@@ -574,8 +574,12 @@
                         "const": "For locations",
                         "readOnly": true
                     },
+                    "Check_old_searches": {
+                        "const": "Keywords with outdated volume",
+                        "readOnly": true
+                    },
                     "Skip_tracked_searches": {
-                        "const": "Skip keywords with any search volume",
+                        "const": "Keywords without checks volume",
                         "readOnly": true
                     },
                     "Check_active_groups_only": {
@@ -920,10 +924,6 @@
                     },
                     "Negative_words": {
                         "const": "Negative keywords",
-                        "readOnly": true
-                    },
-                    "Check_old_searches": {
-                        "const": "Skip keywords with actual search volume",
                         "readOnly": true
                     },
                     "Group_id": {
@@ -1340,6 +1340,7 @@
                     "Match_type_exact",
                     "Match_type_strict",
                     "By_location",
+                    "Check_old_searches",
                     "Skip_tracked_searches",
                     "Check_active_groups_only",
                     "By_total_searches",
@@ -1427,7 +1428,6 @@
                     "Not_checked",
                     "Set_phrases_minus",
                     "Negative_words",
-                    "Check_old_searches",
                     "Group_id",
                     "Project_id",
                     "Keyword_id",
