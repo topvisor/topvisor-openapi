@@ -291,7 +291,7 @@
                         "readOnly": true
                     },
                     "Plan_discount": {
-                        "const": "YOU SAVE",
+                        "const": "You save",
                         "readOnly": true
                     },
                     "discount": {

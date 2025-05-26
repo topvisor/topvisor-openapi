@@ -1677,7 +1677,7 @@ paths:
                               oneOf:
                                 - type: string
                                 - type: number
-                            title: '@return array{balance_all: float, balance_personal: float, balance_bonus: float, balance_plan: float, tariff: array, subscription?: Bank_2\Objects\Subscriptions\Subscription, subscription_name?: Bank_2\Objects\Subscriptions\Subscription}'
+                            title: '@return array{balance_all: float, balance_personal: float, balance_bonus: float, balance_tariff: float, tariff: array, subscription?: Bank_2\Objects\Subscriptions\Subscription, subscription_name?: Bank_2\Objects\Subscriptions\Subscription}'
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
@@ -13458,9 +13458,9 @@ components:
           nullable: true
         balance_bonus:
           nullable: true
-        balance_plan:
+        balance_tariff:
           nullable: true
-        plan_id:
+        tariff_id:
           nullable: true
         status:
           nullable: true
@@ -13472,7 +13472,7 @@ components:
           nullable: true
         average_expenses_3:
           nullable: true
-        plan_expire:
+        tariff_state_time_end:
           nullable: true
         referrer_id:
           nullable: true

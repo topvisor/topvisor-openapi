@@ -27,14 +27,14 @@ export interface components {
             deleted?: any;
             balance_all?: any;
             balance_bonus?: any;
-            balance_plan?: any;
-            plan_id?: any;
+            balance_tariff?: any;
+            tariff_id?: any;
             status?: any;
             status_paid?: any;
             status_used?: any;
             sum_payments?: any;
             average_expenses_3?: any;
-            plan_expire?: any;
+            tariff_state_time_end?: any;
             referrer_id?: any;
         };
     };

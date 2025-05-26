@@ -64,10 +64,10 @@
                     "balance_bonus": {
                         "nullable": true
                     },
-                    "balance_plan": {
+                    "balance_tariff": {
                         "nullable": true
                     },
-                    "plan_id": {
+                    "tariff_id": {
                         "nullable": true
                     },
                     "status": {
@@ -85,7 +85,7 @@
                     "average_expenses_3": {
                         "nullable": true
                     },
-                    "plan_expire": {
+                    "tariff_state_time_end": {
                         "nullable": true
                     },
                     "referrer_id": {

@@ -149,7 +149,7 @@ export interface components {
             /** @constant */
             readonly Account_plan: "Account (Pricing plan)";
             /** @constant */
-            readonly Plan_discount: "YOU SAVE";
+            readonly Plan_discount: "You save";
             /** @constant */
             readonly discount: "you save";
             /** @constant */
