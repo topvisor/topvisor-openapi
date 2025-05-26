@@ -7,10 +7,8 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Получение инфомации о балансе */
+        /** Получение информации о балансе */
         "Bank_2.Methods.Info.Get": {
-            /** Отобразить лимиты при возвращении подписки */
-            subscription_show_limits?: boolean;
             /**
              * Для openapi
              *
@@ -18,13 +16,7 @@ export interface components {
              * @description @internal
              */
             result?: import('../../Objects/Subscriptions/Subscription.ts').components['schemas']['Bank_2.Objects.Subscriptions.Subscription'] | null;
-            fields: import('../../../TV/API/Params/FieldsTrait.ts').components['schemas']['TV.API.Params.FieldsTrait']['fields'];
-            orders: import('../../../TV/API/Params/OrdersTrait.ts').components['schemas']['TV.API.Params.OrdersTrait']['orders'];
-            filters: import('../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['filters'];
-            id?: import('../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['id'];
-            limit?: import('../../../TV/API/Params/LimitTrait.ts').components['schemas']['TV.API.Params.LimitTrait']['limit'];
-            offset: import('../../../TV/API/Params/OffsetTrait.ts').components['schemas']['TV.API.Params.OffsetTrait']['offset'];
-            fetch_style?: import('../../../TV/API/Params/FetchStyleTrait.ts').components['schemas']['TV.API.Params.FetchStyleTrait']['fetch_style'];
+            fields?: import('../../../TV/API/Params/FieldsTrait.ts').components['schemas']['TV.API.Params.FieldsTrait']['fields'];
         };
     };
     responses: never;

@@ -2786,7 +2786,7 @@
                 "tags": [
                     "Bank_2"
                 ],
-                "summary": "Получение инфомации о балансе",
+                "summary": "Получение информации о балансе",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -2830,9 +2830,6 @@
                                                 },
                                                 {
                                                     "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
-                                                },
-                                                {
-                                                    "$ref": "Pagination.json#/components/schemas/Pagination"
                                                 }
                                             ]
                                         },
