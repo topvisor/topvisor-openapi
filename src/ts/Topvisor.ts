@@ -2132,6 +2132,23 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
+    /** Получение дополнительных параметров к списку столбцов */
+    "/get/templates_2/fieldsProperties/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["GetTemplates2FieldsProperties"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
     /** Загрузка файла на сервер
      *
      *     Процесс создания сообщения в тикет не завершен */
@@ -9491,6 +9508,32 @@ export interface operations {
                     "application/json": ({
                         /** @throws Exception */
                         result: (string | number)[];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: null;
+                };
+            };
+        };
+    };
+    GetTemplates2FieldsProperties: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Templates_2/Methods/FieldsProperties/Get.ts').components['schemas']['Templates_2.Methods.FieldsProperties.Get'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./stdClass.ts').components['schemas']['stdClass'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };

@@ -4166,6 +4166,37 @@ paths:
             model:
               schema:
                 type: 'null'
+  /get/templates_2/fieldsProperties/:
+    post:
+      operationId: GetTemplates2FieldsProperties
+      tags:
+        - Templates_2
+      summary: Получение дополнительных параметров к списку столбцов
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Templates_2.Methods.FieldsProperties.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            $ref: '#/components/schemas/stdClass'
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
   /add/tickets_2/files/:
     post:
       operationId: AddTickets2Files
@@ -17647,6 +17678,22 @@ components:
       required:
         - target_type
       title: Получение сохраненного списока столбцов
+    Templates_2.Methods.FieldsProperties.Get:
+      type: object
+      properties:
+        target_type:
+          allOf:
+            - $ref: '#/components/schemas/Templates_2.Types.TargetType'
+        target_subtype:
+          title: Подтип данных (место использования)
+          type: integer
+        target_id:
+          title: Id целевого проекта
+          nullable: true
+          type: integer
+      required:
+        - target_type
+      title: Получение дополнительных параметров к списку столбцов
     Tickets_2.Methods.Files.Add:
       type: object
       properties:
