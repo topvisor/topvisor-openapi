@@ -1197,6 +1197,10 @@
                     "Check_all_wordstats": {
                         "const": "Check all keywords",
                         "readOnly": true
+                    },
+                    "keywords": {
+                        "const": "keywords",
+                        "readOnly": true
                     }
                 },
                 "required": [
@@ -1495,7 +1499,8 @@
                     "Root_folder",
                     "Groups_with_keywords",
                     "Type_of_volume_needed_for_visibility",
-                    "Check_all_wordstats"
+                    "Check_all_wordstats",
+                    "keywords"
                 ]
             }
         }
