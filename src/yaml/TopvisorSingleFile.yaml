@@ -14648,7 +14648,7 @@ components:
       enum:
         - active
         - suspended
-        - finished
+        - stopped
         - terminated
       title: Статус подписки
     Bank_2.Types.Subscriptions.Type:

@@ -12,7 +12,7 @@
                 "enum": [
                     "active",
                     "suspended",
-                    "finished",
+                    "stopped",
                     "terminated"
                 ],
                 "title": "Статус подписки"

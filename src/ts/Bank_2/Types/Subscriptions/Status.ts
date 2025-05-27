@@ -11,7 +11,7 @@ export interface components {
          * Статус подписки
          * @enum {string}
          */
-        "Bank_2.Types.Subscriptions.Status": "active" | "suspended" | "finished" | "terminated";
+        "Bank_2.Types.Subscriptions.Status": "active" | "suspended" | "stopped" | "terminated";
     };
     responses: never;
     parameters: never;
