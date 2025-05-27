@@ -97,7 +97,7 @@ export interface components {
             /** @constant */
             readonly Upgrade_plan: "Upgrade plan";
             /** @constant */
-            readonly Cancel_subscription: "Cancel subscription";
+            readonly Cancel_subscription: "Suspend subscription";
             /** @constant */
             readonly View_invoice: "View invoice";
             /** @constant */

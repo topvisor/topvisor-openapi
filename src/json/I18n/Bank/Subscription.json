@@ -125,7 +125,7 @@
                         "readOnly": true
                     },
                     "Cancel_subscription": {
-                        "const": "Cancel subscription",
+                        "const": "Suspend subscription",
                         "readOnly": true
                     },
                     "View_invoice": {
