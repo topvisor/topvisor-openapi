@@ -80,6 +80,10 @@
                         },
                         "readOnly": true
                     },
+                    "Error_avilable_downgrade": {
+                        "const": "You cannot pay for a subscription plan lower than your current active subscription plan, please select to change your subscription from next month instead",
+                        "readOnly": true
+                    },
                     "Your_limits": {
                         "const": "Limits",
                         "readOnly": true
@@ -110,6 +114,10 @@
                     },
                     "Update_plan": {
                         "const": "Update plan",
+                        "readOnly": true
+                    },
+                    "Upgrade_plan": {
+                        "const": "Upgrade plan",
                         "readOnly": true
                     },
                     "Cancel_subscription": {
@@ -196,6 +204,7 @@
                 "required": [
                     "Texts_by_limit_name",
                     "Type_limit_by_name",
+                    "Error_avilable_downgrade",
                     "Your_limits",
                     "Get_more",
                     "Unlock",
@@ -204,6 +213,7 @@
                     "Next_billing",
                     "Next_plan",
                     "Update_plan",
+                    "Upgrade_plan",
                     "Cancel_subscription",
                     "View_invoice",
                     "Billing_history",

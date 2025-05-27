@@ -75,6 +75,8 @@ export interface components {
                 access: "";
             };
             /** @constant */
+            readonly Error_avilable_downgrade: "You cannot pay for a subscription plan lower than your current active subscription plan, please select to change your subscription from next month instead";
+            /** @constant */
             readonly Your_limits: "Limits";
             /** @constant */
             readonly Get_more: "Get more";
@@ -90,6 +92,8 @@ export interface components {
             readonly Next_plan: "Next plan";
             /** @constant */
             readonly Update_plan: "Update plan";
+            /** @constant */
+            readonly Upgrade_plan: "Upgrade plan";
             /** @constant */
             readonly Cancel_subscription: "Cancel subscription";
             /** @constant */
