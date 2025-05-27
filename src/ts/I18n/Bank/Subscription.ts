@@ -67,6 +67,14 @@ export interface components {
                 };
             };
             /** @constant */
+            readonly action_daily: "daily";
+            /** @constant */
+            readonly action_monthly: "monthly";
+            /** @constant */
+            readonly object_by_project: "per project";
+            /** @constant */
+            readonly by_year: "annual";
+            /** @constant */
             readonly Your_limits: "Limits";
             /** @constant */
             readonly Get_more: "Get more";
@@ -93,29 +101,21 @@ export interface components {
             /** @constant */
             readonly View_all: "View all";
             /** @constant */
-            readonly action_daily: "daily";
-            /** @constant */
-            readonly action_monthly: "monthly";
-            /** @constant */
-            readonly object_by_project: "per project";
-            /** @constant */
-            readonly in_yearly: "yearly";
-            /** @constant */
             readonly Your_current_plan: "Your current plan is";
             /** @constant */
             readonly Pay_annually: "Pay annually and";
             /** @constant */
             readonly get_2_months: "get 2 months free";
             /** @constant */
-            readonly Do_you_need_more: "<b>Do you need more than 50 000 keywords?</b><br>Just get in touch to get a tailored quote.";
+            readonly Do_you_need_more_1: "Do you need more than {{ count }} keywords?";
+            /** @constant */
+            readonly Do_you_need_more_2: "Just get in touch to get a tailored quote.";
             /** @constant */
             readonly Contact_sales: "Contact Sales";
             /** @constant */
-            readonly keywords: "keywords";
-            /** @constant */
             readonly Your_data_is_here: "Your data is still here if you need it";
             /** @constant */
-            readonly You_can_reactivate: "You can reactivate your account at any time and get full access to all your previous data.";
+            readonly You_can_reactivate: "You can reactivate your account at any time and get full access to all your previous data";
             /** @constant */
             readonly Reactivate: "Reactivate my account";
             /** @constant */
@@ -127,7 +127,9 @@ export interface components {
             /** @constant */
             readonly Activate_immediately: "Activate selected tariff plan immediately";
             /** @constant */
-            readonly Subscription_cost_recalculate: "Subscription cost will be recalculated according to the <a href=\"\">current rules</a>";
+            readonly Subscription_cost_recalculate_1: "Subscription cost will be recalculated according to the <a href=\"\">current rules</a>";
+            /** @constant */
+            readonly Subscription_cost_recalculate_2: "current rules";
         };
     };
     responses: never;

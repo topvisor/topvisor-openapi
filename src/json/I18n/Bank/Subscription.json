@@ -70,6 +70,22 @@
                         },
                         "readOnly": true
                     },
+                    "action_daily": {
+                        "const": "daily",
+                        "readOnly": true
+                    },
+                    "action_monthly": {
+                        "const": "monthly",
+                        "readOnly": true
+                    },
+                    "object_by_project": {
+                        "const": "per project",
+                        "readOnly": true
+                    },
+                    "by_year": {
+                        "const": "annual",
+                        "readOnly": true
+                    },
                     "Your_limits": {
                         "const": "Limits",
                         "readOnly": true
@@ -122,22 +138,6 @@
                         "const": "View all",
                         "readOnly": true
                     },
-                    "action_daily": {
-                        "const": "daily",
-                        "readOnly": true
-                    },
-                    "action_monthly": {
-                        "const": "monthly",
-                        "readOnly": true
-                    },
-                    "object_by_project": {
-                        "const": "per project",
-                        "readOnly": true
-                    },
-                    "in_yearly": {
-                        "const": "yearly",
-                        "readOnly": true
-                    },
                     "Your_current_plan": {
                         "const": "Your current plan is",
                         "readOnly": true
@@ -150,16 +150,16 @@
                         "const": "get 2 months free",
                         "readOnly": true
                     },
-                    "Do_you_need_more": {
-                        "const": "<b>Do you need more than 50 000 keywords?</b><br>Just get in touch to get a tailored quote.",
+                    "Do_you_need_more_1": {
+                        "const": "Do you need more than {{ count }} keywords?",
+                        "readOnly": true
+                    },
+                    "Do_you_need_more_2": {
+                        "const": "Just get in touch to get a tailored quote.",
                         "readOnly": true
                     },
                     "Contact_sales": {
                         "const": "Contact Sales",
-                        "readOnly": true
-                    },
-                    "keywords": {
-                        "const": "keywords",
                         "readOnly": true
                     },
                     "Your_data_is_here": {
@@ -167,7 +167,7 @@
                         "readOnly": true
                     },
                     "You_can_reactivate": {
-                        "const": "You can reactivate your account at any time and get full access to all your previous data.",
+                        "const": "You can reactivate your account at any time and get full access to all your previous data",
                         "readOnly": true
                     },
                     "Reactivate": {
@@ -190,13 +190,21 @@
                         "const": "Activate selected tariff plan immediately",
                         "readOnly": true
                     },
-                    "Subscription_cost_recalculate": {
+                    "Subscription_cost_recalculate_1": {
                         "const": "Subscription cost will be recalculated according to the <a href=\"\">current rules</a>",
+                        "readOnly": true
+                    },
+                    "Subscription_cost_recalculate_2": {
+                        "const": "current rules",
                         "readOnly": true
                     }
                 },
                 "required": [
                     "Texts_by_limit_name",
+                    "action_daily",
+                    "action_monthly",
+                    "object_by_project",
+                    "by_year",
                     "Your_limits",
                     "Get_more",
                     "Unlock",
@@ -210,16 +218,12 @@
                     "Billing_history",
                     "No_billing_history_data",
                     "View_all",
-                    "action_daily",
-                    "action_monthly",
-                    "object_by_project",
-                    "in_yearly",
                     "Your_current_plan",
                     "Pay_annually",
                     "get_2_months",
-                    "Do_you_need_more",
+                    "Do_you_need_more_1",
+                    "Do_you_need_more_2",
                     "Contact_sales",
-                    "keywords",
                     "Your_data_is_here",
                     "You_can_reactivate",
                     "Reactivate",
@@ -227,7 +231,8 @@
                     "Resume_plan",
                     "Active_until",
                     "Activate_immediately",
-                    "Subscription_cost_recalculate"
+                    "Subscription_cost_recalculate_1",
+                    "Subscription_cost_recalculate_2"
                 ]
             }
         }
