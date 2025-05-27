@@ -70,20 +70,14 @@
                         },
                         "readOnly": true
                     },
-                    "action_daily": {
-                        "const": "daily",
-                        "readOnly": true
-                    },
-                    "action_monthly": {
-                        "const": "monthly",
-                        "readOnly": true
-                    },
-                    "object_by_project": {
-                        "const": "per project",
-                        "readOnly": true
-                    },
-                    "by_year": {
-                        "const": "annual",
+                    "Type_limit_by_name": {
+                        "const": {
+                            "action_daily": "daily",
+                            "action_monthly": "monthly",
+                            "object_by_project": "per project",
+                            "object": "",
+                            "access": ""
+                        },
                         "readOnly": true
                     },
                     "Your_limits": {
@@ -201,10 +195,7 @@
                 },
                 "required": [
                     "Texts_by_limit_name",
-                    "action_daily",
-                    "action_monthly",
-                    "object_by_project",
-                    "by_year",
+                    "Type_limit_by_name",
                     "Your_limits",
                     "Get_more",
                     "Unlock",

@@ -67,13 +67,13 @@ export interface components {
                 };
             };
             /** @constant */
-            readonly action_daily: "daily";
-            /** @constant */
-            readonly action_monthly: "monthly";
-            /** @constant */
-            readonly object_by_project: "per project";
-            /** @constant */
-            readonly by_year: "annual";
+            readonly Type_limit_by_name: {
+                action_daily: "daily";
+                action_monthly: "monthly";
+                object_by_project: "per project";
+                object: "";
+                access: "";
+            };
             /** @constant */
             readonly Your_limits: "Limits";
             /** @constant */
