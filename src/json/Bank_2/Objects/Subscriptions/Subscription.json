@@ -69,7 +69,7 @@
                     },
                     "price": {
                         "title": "Стоимость текущей подписки",
-                        "type": "string"
+                        "type": "integer"
                     },
                     "renewPrice": {
                         "title": "Стоимость продления подписки",

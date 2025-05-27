@@ -32,7 +32,7 @@ export interface components {
             /** Цикл для следующей подписки */
             nextCycle: import('../../Types/Subscriptions/Cycle.ts').components['schemas']['Bank_2.Types.Subscriptions.Cycle'];
             /** Стоимость текущей подписки */
-            price: string;
+            price: number;
             /** Стоимость продления подписки */
             renewPrice: number;
             /**
