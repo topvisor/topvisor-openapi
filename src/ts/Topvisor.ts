@@ -2064,6 +2064,23 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
+    /** Получение данных доступных столбцов для выборки */
+    "/get/templates_2/availableFieldsData/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["GetTemplates2AvailableFieldsData"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
     /** Получение сохраненного списока столбцов */
     "/get/templates_2/fields/": {
         parameters: {
@@ -9333,6 +9350,33 @@ export interface operations {
                 content: {
                     "application/json": ({
                         result: unknown;
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: null;
+                };
+            };
+        };
+    };
+    GetTemplates2AvailableFieldsData: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Templates_2/Methods/AvailableFieldsData/Get.ts').components['schemas']['Templates_2.Methods.AvailableFieldsData.Get'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        /** @throws Exception */
+                        result: (string | number)[];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };

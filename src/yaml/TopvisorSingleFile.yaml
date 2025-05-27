@@ -4031,6 +4031,42 @@ paths:
             model:
               schema:
                 type: 'null'
+  /get/templates_2/availableFieldsData/:
+    post:
+      operationId: GetTemplates2AvailableFieldsData
+      tags:
+        - Templates_2
+      summary: Получение данных доступных столбцов для выборки
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Templates_2.Methods.AvailableFieldsData.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            type: array
+                            items:
+                              oneOf:
+                                - type: string
+                                - type: number
+                            title: '@throws Exception'
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
   /get/templates_2/fields/:
     post:
       operationId: GetTemplates2Fields
@@ -17477,6 +17513,15 @@ components:
       properties: {}
       required: []
       title: Получение привязанных карт пользователя
+    Templates_2.Methods.AvailableFieldsData.Get:
+      type: object
+      properties:
+        target_type:
+          allOf:
+            - $ref: '#/components/schemas/Templates_2.Types.TargetType'
+      required:
+        - target_type
+      title: Получение данных доступных столбцов для выборки
     Templates_2.Methods.Fields.Get:
       type: object
       properties:
