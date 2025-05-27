@@ -119,7 +119,7 @@ export interface components {
             /** @constant */
             readonly Reactivate: "Reactivate my account";
             /** @constant */
-            readonly Auto_renewal_is_disabled: "Auto-renewal is disabled. To renew the subscription click the \"Resume plan\" below";
+            readonly Auto_renewal_is_disabled: "Auto-renewal is disabled. To renew the subscription click the \"Resume plan\" below or if you need a higher plan click the \"Upgrade plan\"";
             /** @constant */
             readonly Resume_plan: "Resume plan";
             /** @constant */
