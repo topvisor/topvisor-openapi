@@ -4067,6 +4067,69 @@ paths:
             model:
               schema:
                 type: 'null'
+  /del/templates_2/fields/:
+    post:
+      operationId: DelTemplates2Fields
+      tags:
+        - Templates_2
+      summary: Удаление сохраненного списка столбцов
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Templates_2.Methods.Fields.Del'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            type: integer
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
+  /edit/templates_2/fields/:
+    post:
+      operationId: EditTemplates2Fields
+      tags:
+        - Templates_2
+      summary: Сохранение списка столбцов
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Templates_2.Methods.Fields.Edit'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            type: integer
+                            title: '@throws Exception'
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
   /get/templates_2/fields/:
     post:
       operationId: GetTemplates2Fields
@@ -17527,6 +17590,47 @@ components:
       required:
         - target_type
       title: Получение данных доступных столбцов для выборки
+    Templates_2.Methods.Fields.Del:
+      type: object
+      properties:
+        target_type:
+          allOf:
+            - $ref: '#/components/schemas/Templates_2.Types.TargetType'
+        target_subtype:
+          title: Подтип данных (место использования)
+          type: integer
+        target_id:
+          title: Id шаблона
+          nullable: true
+          type: integer
+      required:
+        - target_type
+      title: Удаление сохраненного списка столбцов
+    Templates_2.Methods.Fields.Edit:
+      type: object
+      properties:
+        target_type:
+          allOf:
+            - $ref: '#/components/schemas/Templates_2.Types.TargetType'
+        target_subtype:
+          title: Подтип данных (место использования)
+          type: integer
+        target_id:
+          title: Id целевого проекта
+          nullable: true
+          type: integer
+        properties:
+          title: Свойства шаблона
+          type: array
+          items:
+            oneOf:
+              - type: string
+              - type: number
+        fields:
+          $ref: '#/components/schemas/fields'
+      required:
+        - target_type
+      title: Сохранение списка столбцов
     Templates_2.Methods.Fields.Get:
       type: object
       properties:
