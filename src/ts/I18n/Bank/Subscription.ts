@@ -124,6 +124,10 @@ export interface components {
             readonly Resume_plan: "Resume plan";
             /** @constant */
             readonly Active_until: "Active until";
+            /** @constant */
+            readonly Activate_immediately: "Activate selected tariff plan immediately";
+            /** @constant */
+            readonly Subscription_cost_recalculate: "Subscription cost will be recalculated according to the <a href=\"\">current rules</a>";
         };
     };
     responses: never;

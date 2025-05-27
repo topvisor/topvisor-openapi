@@ -185,6 +185,14 @@
                     "Active_until": {
                         "const": "Active until",
                         "readOnly": true
+                    },
+                    "Activate_immediately": {
+                        "const": "Activate selected tariff plan immediately",
+                        "readOnly": true
+                    },
+                    "Subscription_cost_recalculate": {
+                        "const": "Subscription cost will be recalculated according to the <a href=\"\">current rules</a>",
+                        "readOnly": true
                     }
                 },
                 "required": [
@@ -217,7 +225,9 @@
                     "Reactivate",
                     "Auto_renewal_is_disabled",
                     "Resume_plan",
-                    "Active_until"
+                    "Active_until",
+                    "Activate_immediately",
+                    "Subscription_cost_recalculate"
                 ]
             }
         }

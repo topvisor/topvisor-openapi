@@ -34,6 +34,11 @@ export interface components {
              */
             readonly HOST_DEV: string;
             /**
+             * Хост сокращателя ссылок
+             * @default No set
+             */
+            readonly HOST_TPVSR: string;
+            /**
              * Тип биллинга по умолчанию
              *
              *     - balance

@@ -34,6 +34,12 @@
                         "readOnly": true,
                         "type": "string"
                     },
+                    "HOST_TPVSR": {
+                        "title": "Хост сокращателя ссылок",
+                        "default": "No set",
+                        "readOnly": true,
+                        "type": "string"
+                    },
                     "DEFAULT_BANK_TYPE": {
                         "title": "Тип биллинга по умолчанию\n\n- balance\n- limits",
                         "default": "balance",
@@ -204,6 +210,7 @@
                     "ID_ASSETS",
                     "HOST",
                     "HOST_DEV",
+                    "HOST_TPVSR",
                     "DEFAULT_BANK_TYPE",
                     "LANGUAGES",
                     "LANGUAGE_MAIN",

@@ -10,19 +10,24 @@ export interface components {
         /** Информация о текущей подписки пользователя и ее лимитах */
         "Bank_2.Objects.Subscriptions.Subscription": {
             /** id платежа, подписки */
-            paymentId?: number | null;
-            externalPaymentId?: string | null;
-            next?: string | null;
+            paymentId: number;
+            externalPaymentId: string;
+            /** Стоимость амортизации
+             *
+             *     Используется для расчета первого платежа при переподписки на другой план
+             *
+             *     Указывается в валюте подписки */
+            depreciationCost: number;
             /** Текущий план подписки */
-            plan?: import('./Plan.ts').components['schemas']['Bank_2.Objects.Subscriptions.Plan'] | null;
+            plan: import('./Plan.ts').components['schemas']['Bank_2.Objects.Subscriptions.Plan'];
             /** Следующий план подписки */
             nextPlan?: import('./Plan.ts').components['schemas']['Bank_2.Objects.Subscriptions.Plan'] | null;
             /** Состояние подписки */
-            recurrentState?: import('../Requisites/Payment/RecurrentState.ts').components['schemas']['Bank_2.Objects.Requisites.Payment.RecurrentState'] | null;
+            recurrentState: import('../Requisites/Payment/RecurrentState.ts').components['schemas']['Bank_2.Objects.Requisites.Payment.RecurrentState'];
             /** Текущий цикл для подписки */
-            cycle?: import('../../Types/Subscriptions/Cycle.ts').components['schemas']['Bank_2.Types.Subscriptions.Cycle'] | null;
+            cycle: import('../../Types/Subscriptions/Cycle.ts').components['schemas']['Bank_2.Types.Subscriptions.Cycle'];
             /** Цикл для следующей подписки */
-            nextCycle?: import('../../Types/Subscriptions/Cycle.ts').components['schemas']['Bank_2.Types.Subscriptions.Cycle'] | null;
+            nextCycle: import('../../Types/Subscriptions/Cycle.ts').components['schemas']['Bank_2.Types.Subscriptions.Cycle'];
             /**
              * Использованные лимиты
              *
@@ -31,9 +36,9 @@ export interface components {
              *     Для нетарифицируемых лимитов значение всегда `null`
              * @description @type Array<Bank_2\Types\Subscriptions\Limit\Name, int>
              */
-            limitUsedByName?: (string | number)[] | null;
+            limitUsedByName: (string | number)[];
             /** Типы лимитов */
-            limitTypeByName?: (string | number)[] | null;
+            limitTypeByName: (string | number)[];
         };
     };
     responses: never;

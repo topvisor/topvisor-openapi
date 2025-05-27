@@ -101,7 +101,7 @@ export interface components {
             /** @constant */
             readonly Top_5_sites: "SERP Top websites for keyword";
             /** @constant */
-            readonly More_info: "Get more insights on&nbsp;organic SERP with&nbsp;<a href=\"{{ hrefSnapshots }}\" target=\"_blank\">SERP Snapshots</a>";
+            readonly More_info: "Get more insights on&nbsp;organic SERP with&nbsp;<a href=\"{{ hrefSnapshots }}\" target=\"_blank\">SERP Snapshots →</a>";
         };
     };
     responses: never;

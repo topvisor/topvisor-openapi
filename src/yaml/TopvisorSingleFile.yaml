@@ -636,6 +636,42 @@ paths:
             model:
               schema:
                 type: 'null'
+  /get/templates_2/:
+    post:
+      operationId: GetTemplates2
+      tags:
+        - Templates_2
+      summary: Получение сохраненного списка шаблонов
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Templates_2.Methods.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            type: array
+                            items:
+                              oneOf:
+                                - type: string
+                                - type: number
+                            title: '@throws Exception'
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
   /add/urls_2/:
     post:
       operationId: AddUrls2
@@ -3988,6 +4024,42 @@ paths:
                       - type: object
                         properties:
                           result: {}
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
+  /get/templates_2/fields/:
+    post:
+      operationId: GetTemplates2Fields
+      tags:
+        - Templates_2
+      summary: Получение сохраненного списока столбцов
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Templates_2.Methods.Fields.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            type: array
+                            items:
+                              oneOf:
+                                - type: string
+                                - type: number
+                            title: '@throws Exception'
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
@@ -12541,6 +12613,31 @@ components:
       required:
         - type
       title: Получение списка тегов
+    Templates_2.Types.TargetType:
+      type: string
+      enum:
+        - templates
+        - groups
+        - keywords
+        - competitors_keywords
+        - competitors_wordstat
+      title: Тип данных (место использования)
+    Templates_2.Methods.Get:
+      type: object
+      properties:
+        target_type:
+          allOf:
+            - $ref: '#/components/schemas/Templates_2.Types.TargetType'
+        target_subtype:
+          title: Подтип данных (место использования)
+          type: integer
+        include_fields:
+          title: Включать ли поля
+          default: true
+          type: boolean
+      required:
+        - target_type
+      title: Получение сохраненного списка шаблонов
     Urls_2.Types.Flag:
       type: integer
       enum:
@@ -14585,17 +14682,19 @@ components:
       properties:
         paymentId:
           title: id платежа, подписки
-          nullable: true
           type: integer
         externalPaymentId:
-          nullable: true
           type: string
-        next:
-          nullable: true
-          type: string
+        depreciationCost:
+          title: |-
+            Стоимость амортизации
+
+            Используется для расчета первого платежа при переподписки на другой план
+
+            Указывается в валюте подписки
+          type: integer
         plan:
           title: Текущий план подписки
-          nullable: true
           allOf:
             - $ref: '#/components/schemas/Bank_2.Objects.Subscriptions.Plan'
         nextPlan:
@@ -14605,17 +14704,14 @@ components:
             - $ref: '#/components/schemas/Bank_2.Objects.Subscriptions.Plan'
         recurrentState:
           title: Состояние подписки
-          nullable: true
           allOf:
             - $ref: '#/components/schemas/Bank_2.Objects.Requisites.Payment.RecurrentState'
         cycle:
           title: Текущий цикл для подписки
-          nullable: true
           allOf:
             - $ref: '#/components/schemas/Bank_2.Types.Subscriptions.Cycle'
         nextCycle:
           title: Цикл для следующей подписки
-          nullable: true
           allOf:
             - $ref: '#/components/schemas/Bank_2.Types.Subscriptions.Cycle'
         limitUsedByName:
@@ -14626,7 +14722,6 @@ components:
 
             Для нетарифицируемых лимитов значение всегда `null`
           description: '@type Array<Bank_2\Types\Subscriptions\Limit\Name, int>'
-          nullable: true
           type: array
           items:
             oneOf:
@@ -14634,13 +14729,21 @@ components:
               - type: number
         limitTypeByName:
           title: Типы лимитов
-          nullable: true
           type: array
           items:
             oneOf:
               - type: string
               - type: number
-      required: []
+      required:
+        - paymentId
+        - externalPaymentId
+        - depreciationCost
+        - plan
+        - recurrentState
+        - cycle
+        - nextCycle
+        - limitUsedByName
+        - limitTypeByName
       title: Информация о текущей подписки пользователя и ее лимитах
     Bank_2.Methods.Info.Get:
       type: object
@@ -17374,6 +17477,22 @@ components:
       properties: {}
       required: []
       title: Получение привязанных карт пользователя
+    Templates_2.Methods.Fields.Get:
+      type: object
+      properties:
+        target_type:
+          allOf:
+            - $ref: '#/components/schemas/Templates_2.Types.TargetType'
+        target_subtype:
+          title: Подтип данных (место использования)
+          type: integer
+        target_id:
+          title: Id целевого проекта
+          nullable: true
+          type: integer
+      required:
+        - target_type
+      title: Получение сохраненного списока столбцов
     Tickets_2.Methods.Files.Add:
       type: object
       properties:

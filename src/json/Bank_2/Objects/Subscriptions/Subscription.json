@@ -12,20 +12,17 @@
                 "properties": {
                     "paymentId": {
                         "title": "id платежа, подписки",
-                        "nullable": true,
                         "type": "integer"
                     },
                     "externalPaymentId": {
-                        "nullable": true,
                         "type": "string"
                     },
-                    "next": {
-                        "nullable": true,
-                        "type": "string"
+                    "depreciationCost": {
+                        "title": "Стоимость амортизации\n\nИспользуется для расчета первого платежа при переподписки на другой план\n\nУказывается в валюте подписки",
+                        "type": "integer"
                     },
                     "plan": {
                         "title": "Текущий план подписки",
-                        "nullable": true,
                         "allOf": [
                             {
                                 "$ref": "../../../Bank_2/Objects/Subscriptions/Plan.json#/components/schemas/Bank_2.Objects.Subscriptions.Plan"
@@ -43,7 +40,6 @@
                     },
                     "recurrentState": {
                         "title": "Состояние подписки",
-                        "nullable": true,
                         "allOf": [
                             {
                                 "$ref": "../../../Bank_2/Objects/Requisites/Payment/RecurrentState.json#/components/schemas/Bank_2.Objects.Requisites.Payment.RecurrentState"
@@ -52,7 +48,6 @@
                     },
                     "cycle": {
                         "title": "Текущий цикл для подписки",
-                        "nullable": true,
                         "allOf": [
                             {
                                 "$ref": "../../../Bank_2/Types/Subscriptions/Cycle.json#/components/schemas/Bank_2.Types.Subscriptions.Cycle"
@@ -61,7 +56,6 @@
                     },
                     "nextCycle": {
                         "title": "Цикл для следующей подписки",
-                        "nullable": true,
                         "allOf": [
                             {
                                 "$ref": "../../../Bank_2/Types/Subscriptions/Cycle.json#/components/schemas/Bank_2.Types.Subscriptions.Cycle"
@@ -71,7 +65,6 @@
                     "limitUsedByName": {
                         "title": "Использованные лимиты\n\nДоступные лимиты см. в `plan`\n\nДля нетарифицируемых лимитов значение всегда `null`",
                         "description": "@type Array<Bank_2\\Types\\Subscriptions\\Limit\\Name, int>",
-                        "nullable": true,
                         "type": "array",
                         "items": {
                             "oneOf": [
@@ -86,7 +79,6 @@
                     },
                     "limitTypeByName": {
                         "title": "Типы лимитов",
-                        "nullable": true,
                         "type": "array",
                         "items": {
                             "oneOf": [
@@ -100,7 +92,17 @@
                         }
                     }
                 },
-                "required": [],
+                "required": [
+                    "paymentId",
+                    "externalPaymentId",
+                    "depreciationCost",
+                    "plan",
+                    "recurrentState",
+                    "cycle",
+                    "nextCycle",
+                    "limitUsedByName",
+                    "limitTypeByName"
+                ],
                 "title": "Информация о текущей подписки пользователя и ее лимитах"
             }
         }
