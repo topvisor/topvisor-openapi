@@ -14,12 +14,10 @@ export interface components {
          *     Если требуется изменить другие параметры подписки, это можно сделать через создание новой подписки.
          *     При создании новой подписки текущая подписка будет досрочно завершена, с выдачей скидки в пользу новой подписки */
         "Payments_2.Methods.Subscriptions.Next.Edit": {
-            /** Id платежа, связанного с подпиской */
-            payment_id: number;
             /** Id следующего плана подписки */
-            subscription_plan_id: string;
+            subscription_plan_id?: string | null;
             /** Значение следующего цикла подписки */
-            subscription_cycle: import('../../../../Bank_2/Types/Subscriptions/Cycle.ts').components['schemas']['Bank_2.Types.Subscriptions.Cycle'];
+            subscription_cycle?: import('../../../../Bank_2/Types/Subscriptions/Cycle.ts').components['schemas']['Bank_2.Types.Subscriptions.Cycle'] | null;
         };
     };
     responses: never;

@@ -88,6 +88,10 @@
                         "const": "An unknown error occurred while changing the status of the current subscription",
                         "readOnly": true
                     },
+                    "Error_system_functional_unavailable": {
+                        "const": "This functionality is not available in the selected payment system",
+                        "readOnly": true
+                    },
                     "Your_limits": {
                         "const": "Limits",
                         "readOnly": true
@@ -206,6 +210,7 @@
                     "Type_limit_by_name",
                     "Error_avilable_downgrade",
                     "Error_set_status_stopped",
+                    "Error_system_functional_unavailable",
                     "Your_limits",
                     "Get_more",
                     "Unlock",

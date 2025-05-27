@@ -79,6 +79,8 @@ export interface components {
             /** @constant */
             readonly Error_set_status_stopped: "An unknown error occurred while changing the status of the current subscription";
             /** @constant */
+            readonly Error_system_functional_unavailable: "This functionality is not available in the selected payment system";
+            /** @constant */
             readonly Your_limits: "Limits";
             /** @constant */
             readonly Get_more: "Get more";
