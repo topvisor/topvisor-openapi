@@ -15026,6 +15026,12 @@ components:
           title: Цикл для следующей подписки
           allOf:
             - $ref: '#/components/schemas/Bank_2.Types.Subscriptions.Cycle'
+        price:
+          title: Стоимость текущей подписки
+          type: string
+        renewPrice:
+          title: Стоимость продления подписки
+          type: integer
         limitUsedByName:
           title: |-
             Использованные лимиты
@@ -15055,6 +15061,8 @@ components:
         - recurrentState
         - cycle
         - nextCycle
+        - price
+        - renewPrice
         - limitUsedByName
         - limitTypeByName
       title: Информация о текущей подписки пользователя и ее лимитах

@@ -67,6 +67,14 @@
                             }
                         ]
                     },
+                    "price": {
+                        "title": "Стоимость текущей подписки",
+                        "type": "string"
+                    },
+                    "renewPrice": {
+                        "title": "Стоимость продления подписки",
+                        "type": "integer"
+                    },
                     "limitUsedByName": {
                         "title": "Использованные лимиты\n\nДоступные лимиты см. в `plan`\n\nДля нетарифицируемых лимитов значение всегда `null`",
                         "description": "@type Array<Bank_2\\Types\\Subscriptions\\Limit\\Name, int>",
@@ -106,6 +114,8 @@
                     "recurrentState",
                     "cycle",
                     "nextCycle",
+                    "price",
+                    "renewPrice",
                     "limitUsedByName",
                     "limitTypeByName"
                 ],
