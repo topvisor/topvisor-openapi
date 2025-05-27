@@ -99,7 +99,7 @@ export interface components {
             /** @constant */
             readonly object_by_project: "per project";
             /** @constant */
-            readonly yearly: "yearly";
+            readonly in_yearly: "yearly";
             /** @constant */
             readonly Your_current_plan: "Your current plan is";
             /** @constant */

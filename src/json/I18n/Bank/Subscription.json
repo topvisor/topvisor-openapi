@@ -134,7 +134,7 @@
                         "const": "per project",
                         "readOnly": true
                     },
-                    "yearly": {
+                    "in_yearly": {
                         "const": "yearly",
                         "readOnly": true
                     },
@@ -213,7 +213,7 @@
                     "action_daily",
                     "action_monthly",
                     "object_by_project",
-                    "yearly",
+                    "in_yearly",
                     "Your_current_plan",
                     "Pay_annually",
                     "get_2_months",
