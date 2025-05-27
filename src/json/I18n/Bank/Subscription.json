@@ -84,6 +84,10 @@
                         "const": "You cannot pay for a subscription plan lower than your current active subscription plan, please select to change your subscription from next month instead",
                         "readOnly": true
                     },
+                    "Error_set_status_stopped": {
+                        "const": "An unknown error occurred while changing the status of the current subscription",
+                        "readOnly": true
+                    },
                     "Your_limits": {
                         "const": "Limits",
                         "readOnly": true
@@ -205,6 +209,7 @@
                     "Texts_by_limit_name",
                     "Type_limit_by_name",
                     "Error_avilable_downgrade",
+                    "Error_set_status_stopped",
                     "Your_limits",
                     "Get_more",
                     "Unlock",

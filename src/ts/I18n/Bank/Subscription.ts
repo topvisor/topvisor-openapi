@@ -77,6 +77,8 @@ export interface components {
             /** @constant */
             readonly Error_avilable_downgrade: "You cannot pay for a subscription plan lower than your current active subscription plan, please select to change your subscription from next month instead";
             /** @constant */
+            readonly Error_set_status_stopped: "An unknown error occurred while changing the status of the current subscription";
+            /** @constant */
             readonly Your_limits: "Limits";
             /** @constant */
             readonly Get_more: "Get more";

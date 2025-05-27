@@ -22095,11 +22095,11 @@ components:
       type: object
       properties:
         payment_id:
-          title: id платежа, связанного с подпиской
+          title: Id платежа, связанного с подпиской
           type: integer
         subscription_plan_id:
-          title: ID следующего плана подписки
-          type: integer
+          title: Id следующего плана подписки
+          type: string
         subscription_cycle:
           title: Значение следующего цикла подписки
           allOf:
