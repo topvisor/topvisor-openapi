@@ -11,6 +11,9 @@ export interface components {
         "Bank_2.Objects.Subscriptions.Subscription": {
             /** id платежа, подписки */
             paymentId: number;
+            /** Платежная система */
+            paymentSystem: string;
+            /** id платежа в платежной системе */
             externalPaymentId: string;
             /** Стоимость амортизации
              *

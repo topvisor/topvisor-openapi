@@ -14719,7 +14719,11 @@ components:
         paymentId:
           title: id платежа, подписки
           type: integer
+        paymentSystem:
+          title: Платежная система
+          type: string
         externalPaymentId:
+          title: id платежа в платежной системе
           type: string
         depreciationCost:
           title: |-
@@ -14772,6 +14776,7 @@ components:
               - type: number
       required:
         - paymentId
+        - paymentSystem
         - externalPaymentId
         - depreciationCost
         - plan
