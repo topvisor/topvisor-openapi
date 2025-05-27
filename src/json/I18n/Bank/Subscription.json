@@ -193,15 +193,11 @@
                         "readOnly": true
                     },
                     "Activate_immediately": {
-                        "const": "Activate selected tariff plan immediately",
+                        "const": "Switch to plan right now",
                         "readOnly": true
                     },
-                    "Subscription_cost_recalculate_1": {
-                        "const": "Subscription cost will be recalculated according to the <a href=\"\">current rules</a>",
-                        "readOnly": true
-                    },
-                    "Subscription_cost_recalculate_2": {
-                        "const": "current rules",
+                    "Will_be_charged_on": {
+                        "const": "Will be charged on",
                         "readOnly": true
                     }
                 },
@@ -237,8 +233,7 @@
                     "Resume_plan",
                     "Active_until",
                     "Activate_immediately",
-                    "Subscription_cost_recalculate_1",
-                    "Subscription_cost_recalculate_2"
+                    "Will_be_charged_on"
                 ]
             }
         }
