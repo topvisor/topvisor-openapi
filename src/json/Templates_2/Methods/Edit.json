@@ -1,0 +1,68 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Templates_2.Methods.Edit",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Templates_2.Methods.Edit": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "title": "Id шаблона",
+                        "type": "integer"
+                    },
+                    "name": {
+                        "title": "Название шаблона",
+                        "nullable": true,
+                        "type": "string"
+                    },
+                    "is_default": {
+                        "title": "Является ли шаблоном по умолчанию",
+                        "nullable": true,
+                        "type": "boolean"
+                    },
+                    "ord": {
+                        "title": "Использовать ли сортировку",
+                        "nullable": true,
+                        "type": "boolean"
+                    },
+                    "fields": {
+                        "title": "Поля шаблона",
+                        "type": "array",
+                        "items": {
+                            "oneOf": [
+                                {
+                                    "type": "string"
+                                },
+                                {
+                                    "type": "number"
+                                }
+                            ]
+                        }
+                    },
+                    "properties": {
+                        "title": "Свойства шаблона",
+                        "type": "array",
+                        "items": {
+                            "oneOf": [
+                                {
+                                    "type": "string"
+                                },
+                                {
+                                    "type": "number"
+                                }
+                            ]
+                        }
+                    }
+                },
+                "required": [
+                    "id"
+                ],
+                "title": "Изменение шаблона"
+            }
+        }
+    }
+}

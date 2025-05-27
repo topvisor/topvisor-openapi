@@ -1,0 +1,75 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Templates_2.Methods.Add",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Templates_2.Methods.Add": {
+                "type": "object",
+                "properties": {
+                    "target_type": {
+                        "allOf": [
+                            {
+                                "$ref": "../../Templates_2/Types/TargetType.json#/components/schemas/Templates_2.Types.TargetType"
+                            }
+                        ]
+                    },
+                    "name": {
+                        "title": "Название шаблона",
+                        "type": "string"
+                    },
+                    "target_subtype": {
+                        "title": "Подтип данных (место использования)",
+                        "type": "integer"
+                    },
+                    "is_default": {
+                        "title": "Является ли шаблоном по умолчанию",
+                        "nullable": true,
+                        "type": "boolean"
+                    },
+                    "ord": {
+                        "title": "Использовать ли сортировку",
+                        "nullable": true,
+                        "type": "boolean"
+                    },
+                    "fields": {
+                        "title": "Поля шаблона",
+                        "type": "array",
+                        "items": {
+                            "oneOf": [
+                                {
+                                    "type": "string"
+                                },
+                                {
+                                    "type": "number"
+                                }
+                            ]
+                        }
+                    },
+                    "properties": {
+                        "title": "Свойства шаблона",
+                        "type": "array",
+                        "items": {
+                            "oneOf": [
+                                {
+                                    "type": "string"
+                                },
+                                {
+                                    "type": "number"
+                                }
+                            ]
+                        }
+                    }
+                },
+                "required": [
+                    "target_type",
+                    "name"
+                ],
+                "title": "Сохранение шаблона"
+            }
+        }
+    }
+}
