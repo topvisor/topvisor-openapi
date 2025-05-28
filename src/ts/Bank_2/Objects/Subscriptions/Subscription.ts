@@ -13,8 +13,10 @@ export interface components {
             paymentId: number;
             /** Платежная система */
             paymentSystem: string;
-            /** id платежа в платежной системе */
+            /** Id платежа в платежной системе */
             externalPaymentId: string;
+            /** Id реквизитов юр. лица, указанные при оплате */
+            paymentRequisitesId: string;
             /** Стоимость амортизации
              *
              *     Используется для расчета первого платежа при переподписки на другой план

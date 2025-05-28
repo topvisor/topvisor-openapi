@@ -19,7 +19,11 @@
                         "type": "string"
                     },
                     "externalPaymentId": {
-                        "title": "id платежа в платежной системе",
+                        "title": "Id платежа в платежной системе",
+                        "type": "string"
+                    },
+                    "paymentRequisitesId": {
+                        "title": "Id реквизитов юр. лица, указанные при оплате",
                         "type": "string"
                     },
                     "depreciationCost": {
@@ -109,6 +113,7 @@
                     "paymentId",
                     "paymentSystem",
                     "externalPaymentId",
+                    "paymentRequisitesId",
                     "depreciationCost",
                     "plan",
                     "recurrentState",
