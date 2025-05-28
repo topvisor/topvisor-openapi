@@ -136,10 +136,6 @@ export interface components {
             readonly Activate_immediately: "Switch to plan right now";
             /** @constant */
             readonly Will_be_charged_on: "Will be charged on";
-            /** @constant */
-            readonly Replace_subscription: "Replace subscription";
-            /** @constant */
-            readonly Next_subscription: "Next subscription";
         };
     };
     responses: never;
