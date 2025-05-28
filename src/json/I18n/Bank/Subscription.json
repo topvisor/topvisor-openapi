@@ -203,6 +203,14 @@
                     "Will_be_charged_on": {
                         "const": "Will be charged on",
                         "readOnly": true
+                    },
+                    "Apply": {
+                        "const": "Apply",
+                        "readOnly": true
+                    },
+                    "Pay": {
+                        "const": "Pay",
+                        "readOnly": true
                     }
                 },
                 "required": [
@@ -238,7 +246,9 @@
                     "Resume_plan",
                     "Active_until",
                     "Activate_immediately",
-                    "Will_be_charged_on"
+                    "Will_be_charged_on",
+                    "Apply",
+                    "Pay"
                 ]
             }
         }
