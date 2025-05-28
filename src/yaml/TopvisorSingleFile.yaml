@@ -3317,6 +3317,44 @@ paths:
             model:
               schema:
                 type: 'null'
+  /edit/payments_2/subscriptions/:
+    post:
+      operationId: EditPayments2Subscriptions
+      tags:
+        - Payments_2
+      summary: |-
+        Изменения подписки сейчас
+
+        Выполняет остановку текущей подписки и создает платежку на новую подписку:
+
+        - Новая подписка получит скидку на первый платеж с учетом амортизации оплаты на действующую подписку
+        - После оплаты новой подписки действующая подписка будет досрочно завершена
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Payments_2.Methods.Subscriptions.Edit'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            type: boolean
+                            title: '@throws Exception'
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
   /add/payments_2/urTinkoffCreateApplication/:
     post:
       operationId: AddPayments2UrTinkoffCreateApplication
@@ -8008,8 +8046,7 @@ paths:
 
         Изменение доступно только в рамках одной платежной системы
 
-        Если требуется изменить другие параметры подписки, это можно сделать через создание новой подписки.
-        При создании новой подписки текущая подписка будет досрочно завершена, с выдачей скидки в пользу новой подписки
+        Если требуется изменить другие параметры подписки, это можно только путем остановки этой подписки и созданием новой подписки
       requestBody:
         content:
           application/json:
@@ -17155,6 +17192,26 @@ components:
       required:
         - next_requisites_id
       title: Изменение платежных реквизитов тарифа
+    Payments_2.Methods.Subscriptions.Edit:
+      type: object
+      properties:
+        subscription_plan_id:
+          title: Id следующего плана подписки
+          nullable: true
+          type: string
+        subscription_cycle:
+          title: Значение следующего цикла подписки
+          nullable: true
+          allOf:
+            - $ref: '#/components/schemas/Bank_2.Types.Subscriptions.Cycle'
+      required: []
+      title: |-
+        Изменения подписки сейчас
+
+        Выполняет остановку текущей подписки и создает платежку на новую подписку:
+
+        - Новая подписка получит скидку на первый платеж с учетом амортизации оплаты на действующую подписку
+        - После оплаты новой подписки действующая подписка будет досрочно завершена
     Payments_2.Methods.UrTinkoffCreateApplication.Add:
       type: object
       properties: {}
@@ -22117,8 +22174,7 @@ components:
 
         Изменение доступно только в рамках одной платежной системы
 
-        Если требуется изменить другие параметры подписки, это можно сделать через создание новой подписки.
-        При создании новой подписки текущая подписка будет досрочно завершена, с выдачей скидки в пользу новой подписки
+        Если требуется изменить другие параметры подписки, это можно только путем остановки этой подписки и созданием новой подписки
     Payments_2.Methods.Tariff.DelCard.Edit:
       type: object
       properties: {}

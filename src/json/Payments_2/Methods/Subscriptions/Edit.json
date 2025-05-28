@@ -1,13 +1,13 @@
 {
     "openapi": "3.0.0",
     "info": {
-        "title": "Topvisor/Payments_2.Methods.Subscriptions.Next.Edit",
+        "title": "Topvisor/Payments_2.Methods.Subscriptions.Edit",
         "version": "2.0.0"
     },
     "paths": {},
     "components": {
         "schemas": {
-            "Payments_2.Methods.Subscriptions.Next.Edit": {
+            "Payments_2.Methods.Subscriptions.Edit": {
                 "type": "object",
                 "properties": {
                     "subscription_plan_id": {
@@ -20,13 +20,13 @@
                         "nullable": true,
                         "allOf": [
                             {
-                                "$ref": "../../../../Bank_2/Types/Subscriptions/Cycle.json#/components/schemas/Bank_2.Types.Subscriptions.Cycle"
+                                "$ref": "../../../Bank_2/Types/Subscriptions/Cycle.json#/components/schemas/Bank_2.Types.Subscriptions.Cycle"
                             }
                         ]
                     }
                 },
                 "required": [],
-                "title": "Изменения подписки на следующий расчетный период\n\nИзменение доступно только в рамках одной платежной системы\n\nЕсли требуется изменить другие параметры подписки, это можно только путем остановки этой подписки и созданием новой подписки"
+                "title": "Изменения подписки сейчас\n\nВыполняет остановку текущей подписки и создает платежку на новую подписку:\n\n- Новая подписка получит скидку на первый платеж с учетом амортизации оплаты на действующую подписку\n- После оплаты новой подписки действующая подписка будет досрочно завершена"
             }
         }
     }

@@ -5836,6 +5836,65 @@
                 }
             }
         },
+        "/edit/payments_2/subscriptions/": {
+            "post": {
+                "operationId": "EditPayments2Subscriptions",
+                "tags": [
+                    "Payments_2"
+                ],
+                "summary": "Изменения подписки сейчас\n\nВыполняет остановку текущей подписки и создает платежку на новую подписку:\n\n- Новая подписка получит скидку на первый платеж с учетом амортизации оплаты на действующую подписку\n- После оплаты новой подписки действующая подписка будет досрочно завершена",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Payments_2/Methods/Subscriptions/Edit.json#/components/schemas/Payments_2.Methods.Subscriptions.Edit"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "oneOf": [
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "type": "boolean",
+                                                            "title": "@throws Exception"
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "result"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
+                                        }
+                                    ]
+                                }
+                            },
+                            "model": {
+                                "schema": {
+                                    "type": "null"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
         "/add/payments_2/urTinkoffCreateApplication/": {
             "post": {
                 "operationId": "AddPayments2UrTinkoffCreateApplication",
@@ -14437,7 +14496,7 @@
                 "tags": [
                     "Payments_2"
                 ],
-                "summary": "Изменения подписки на следующий расчетный период\n\nИзменение доступно только в рамках одной платежной системы\n\nЕсли требуется изменить другие параметры подписки, это можно сделать через создание новой подписки.\nПри создании новой подписки текущая подписка будет досрочно завершена, с выдачей скидки в пользу новой подписки",
+                "summary": "Изменения подписки на следующий расчетный период\n\nИзменение доступно только в рамках одной платежной системы\n\nЕсли требуется изменить другие параметры подписки, это можно только путем остановки этой подписки и созданием новой подписки",
                 "requestBody": {
                     "content": {
                         "application/json": {

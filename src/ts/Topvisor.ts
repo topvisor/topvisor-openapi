@@ -1683,6 +1683,28 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
+    /** Изменения подписки сейчас
+     *
+     *     Выполняет остановку текущей подписки и создает платежку на новую подписку:
+     *
+     *     - Новая подписка получит скидку на первый платеж с учетом амортизации оплаты на действующую подписку
+     *     - После оплаты новой подписки действующая подписка будет досрочно завершена */
+    "/edit/payments_2/subscriptions/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["EditPayments2Subscriptions"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
     /** Отправка заявки на подключение Тинькофф Бизнес */
     "/add/payments_2/urTinkoffCreateApplication/": {
         parameters: {
@@ -4142,8 +4164,7 @@ export interface paths {
      *
      *     Изменение доступно только в рамках одной платежной системы
      *
-     *     Если требуется изменить другие параметры подписки, это можно сделать через создание новой подписки.
-     *     При создании новой подписки текущая подписка будет досрочно завершена, с выдачей скидки в пользу новой подписки */
+     *     Если требуется изменить другие параметры подписки, это можно только путем остановки этой подписки и созданием новой подписки */
     "/edit/payments_2/subscriptions/next/": {
         parameters: {
             query?: never;
@@ -8882,6 +8903,33 @@ export interface operations {
                 content: {
                     "application/json": ({
                         result: number;
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: null;
+                };
+            };
+        };
+    };
+    EditPayments2Subscriptions: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Payments_2/Methods/Subscriptions/Edit.ts').components['schemas']['Payments_2.Methods.Subscriptions.Edit'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        /** @throws Exception */
+                        result: boolean;
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
