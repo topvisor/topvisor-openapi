@@ -1683,12 +1683,19 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Изменения подписки сейчас
+    /**
+     * Изменения подписки сейчас
      *
-     *     Выполняет остановку текущей подписки и создает платежку на новую подписку:
+     *     Реализует две взаимоисключающие стратегии:
      *
-     *     - Новая подписка получит скидку на первый платеж с учетом амортизации оплаты на действующую подписку
-     *     - После оплаты новой подписки действующая подписка будет досрочно завершена */
+     *     - Проведение доплаты по текущей подписке
+     *     - Остановка текущей подписки и создание новой
+     *        - Новая подписка получит скидку на первый платеж с учетом амортизации оплаты на действующую подписку
+     *        - После оплаты новой подписки действующая подписка будет досрочно завершена
+     *
+     *     Выбор стратегии зависит от типа управления подпиской
+     * @description @see Bank_2\Types\Subscriptions\Manager
+     */
     "/edit/payments_2/subscriptions/": {
         parameters: {
             query?: never;
@@ -8929,7 +8936,7 @@ export interface operations {
                 content: {
                     "application/json": ({
                         /** @throws Exception */
-                        result: boolean;
+                        result: string;
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };

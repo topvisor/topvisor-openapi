@@ -7,17 +7,24 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Изменения подписки сейчас
+        /**
+         * Изменения подписки сейчас
          *
-         *     Выполняет остановку текущей подписки и создает платежку на новую подписку:
+         *     Реализует две взаимоисключающие стратегии:
          *
-         *     - Новая подписка получит скидку на первый платеж с учетом амортизации оплаты на действующую подписку
-         *     - После оплаты новой подписки действующая подписка будет досрочно завершена */
+         *     - Проведение доплаты по текущей подписке
+         *     - Остановка текущей подписки и создание новой
+         *        - Новая подписка получит скидку на первый платеж с учетом амортизации оплаты на действующую подписку
+         *        - После оплаты новой подписки действующая подписка будет досрочно завершена
+         *
+         *     Выбор стратегии зависит от типа управления подпиской
+         * @description @see Bank_2\Types\Subscriptions\Manager
+         */
         "Payments_2.Methods.Subscriptions.Edit": {
-            /** Id следующего плана подписки */
-            subscription_plan_id?: string | null;
-            /** Значение следующего цикла подписки */
-            subscription_cycle?: import('../../../Bank_2/Types/Subscriptions/Cycle.ts').components['schemas']['Bank_2.Types.Subscriptions.Cycle'] | null;
+            /** Id нового плана подписки */
+            subscription_plan_id: string;
+            /** Значение цикла новой подписки */
+            subscription_cycle: import('../../../Bank_2/Types/Subscriptions/Cycle.ts').components['schemas']['Bank_2.Types.Subscriptions.Cycle'];
         };
     };
     responses: never;
