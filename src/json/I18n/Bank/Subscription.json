@@ -185,7 +185,7 @@
                         "readOnly": true
                     },
                     "Auto_renewal_is_disabled": {
-                        "const": "Auto-renewal is disabled. To renew the subscription click the \"Resume plan\" below or if you need a higher plan click the \"Upgrade plan\"",
+                        "const": "Auto-renewal is disabled. To renew the subscription click the \"Resume plan\" or if you need a higher plan click the \"Upgrade plan\"",
                         "readOnly": true
                     },
                     "Resume_plan": {
