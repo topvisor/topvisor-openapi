@@ -125,6 +125,8 @@ export interface components {
             /** @constant */
             readonly Archive_project: "Archive";
             /** @constant */
+            readonly In_archive: "In archive";
+            /** @constant */
             readonly Unarchive_project: "Restore";
             /** @constant */
             readonly Extend: "Renew";
@@ -463,6 +465,8 @@ export interface components {
             /** @constant */
             readonly Move_to_folder: "Move to folder";
             /** @constant */
+            readonly Move: "Move";
+            /** @constant */
             readonly Open_in_new_tab: "Open in new tab";
             /** @constant */
             readonly In_queue: "In queue";
@@ -478,6 +482,8 @@ export interface components {
             readonly Spend_limit: "Spend limit";
             /** @constant */
             readonly Change_url_no_available: "The project URL must match the previously configured site\nThe URL cannot be changed to an address leading to another resource.";
+            /** @constant */
+            readonly Create_folder: "Create folder";
             /** @constant */
             readonly Sort_by_search_engine: "By search engine";
             /** @constant */

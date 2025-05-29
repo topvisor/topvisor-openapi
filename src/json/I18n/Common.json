@@ -1498,6 +1498,10 @@
                         "const": "All folders",
                         "readOnly": true
                     },
+                    "Root_folder": {
+                        "const": "Root folder",
+                        "readOnly": true
+                    },
                     "All_regions": {
                         "const": "All locations",
                         "readOnly": true
@@ -2277,6 +2281,7 @@
                     "competitor",
                     "All_groups",
                     "All_folders",
+                    "Root_folder",
                     "All_regions",
                     "All_searchers",
                     "All_projects",

@@ -753,6 +753,8 @@ export interface components {
             /** @constant */
             readonly All_folders: "All folders";
             /** @constant */
+            readonly Root_folder: "Root folder";
+            /** @constant */
             readonly All_regions: "All locations";
             /** @constant */
             readonly All_searchers: "All search engines";

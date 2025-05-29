@@ -242,6 +242,10 @@
                         "const": "Archive",
                         "readOnly": true
                     },
+                    "In_archive": {
+                        "const": "In archive",
+                        "readOnly": true
+                    },
                     "Unarchive_project": {
                         "const": "Restore",
                         "readOnly": true
@@ -918,6 +922,10 @@
                         "const": "Move to folder",
                         "readOnly": true
                     },
+                    "Move": {
+                        "const": "Move",
+                        "readOnly": true
+                    },
                     "Open_in_new_tab": {
                         "const": "Open in new tab",
                         "readOnly": true
@@ -948,6 +956,10 @@
                     },
                     "Change_url_no_available": {
                         "const": "The project URL must match the previously configured site\nThe URL cannot be changed to an address leading to another resource.",
+                        "readOnly": true
+                    },
+                    "Create_folder": {
+                        "const": "Create folder",
                         "readOnly": true
                     },
                     "Sort_by_search_engine": {
@@ -1029,6 +1041,7 @@
                     "Visibility",
                     "Register_domain",
                     "Archive_project",
+                    "In_archive",
                     "Unarchive_project",
                     "Extend",
                     "Extend_domain",
@@ -1197,6 +1210,7 @@
                     "Selected_project_type",
                     "Cost_for_guest_project_owner",
                     "Move_to_folder",
+                    "Move",
                     "Open_in_new_tab",
                     "In_queue",
                     "In_progress",
@@ -1205,6 +1219,7 @@
                     "Spent",
                     "Spend_limit",
                     "Change_url_no_available",
+                    "Create_folder",
                     "Sort_by_search_engine",
                     "Sort_by_yande_region_code",
                     "Sort_by_lphabetically",
