@@ -142,6 +142,12 @@ export interface components {
             readonly Payment_by_schedule: "Payment will be processed according to schedule";
             /** @constant */
             readonly Subscribe: "Subscribe";
+            /** @constant */
+            readonly Try_seo_rank_traker: "Try SEO Rank Tracker for Free Now";
+            /** @constant */
+            readonly Start_free_trial_info: "Start your free 14‑days trial now and discover how your SEO can be better. Get maximum from analyzing your rankings.";
+            /** @constant */
+            readonly Start_Free_Trial: "Start Free Trial";
         };
     };
     responses: never;

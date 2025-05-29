@@ -215,6 +215,18 @@
                     "Subscribe": {
                         "const": "Subscribe",
                         "readOnly": true
+                    },
+                    "Try_seo_rank_traker": {
+                        "const": "Try SEO Rank Tracker for Free Now",
+                        "readOnly": true
+                    },
+                    "Start_free_trial_info": {
+                        "const": "Start your free 14‑days trial now and discover how your SEO can be better. Get maximum from analyzing your rankings.",
+                        "readOnly": true
+                    },
+                    "Start_Free_Trial": {
+                        "const": "Start Free Trial",
+                        "readOnly": true
                     }
                 },
                 "required": [
@@ -253,7 +265,10 @@
                     "Activate_immediately",
                     "Will_be_charged_now",
                     "Payment_by_schedule",
-                    "Subscribe"
+                    "Subscribe",
+                    "Try_seo_rank_traker",
+                    "Start_free_trial_info",
+                    "Start_Free_Trial"
                 ]
             }
         }
