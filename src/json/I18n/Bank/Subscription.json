@@ -116,12 +116,16 @@
                         "const": "Next billing",
                         "readOnly": true
                     },
+                    "Next_billing_cost": {
+                        "const": "Next cost",
+                        "readOnly": true
+                    },
                     "Next_plan": {
                         "const": "Next plan",
                         "readOnly": true
                     },
-                    "Update_plan": {
-                        "const": "Update plan",
+                    "Change_plan": {
+                        "const": "Change plan",
                         "readOnly": true
                     },
                     "Upgrade_plan": {
@@ -197,19 +201,19 @@
                         "readOnly": true
                     },
                     "Activate_immediately": {
-                        "const": "Switch to plan right now",
+                        "const": "Activate immediately",
                         "readOnly": true
                     },
-                    "Will_be_charged_on": {
-                        "const": "Will be charged on",
+                    "Will_be_charged_now": {
+                        "const": "Will be charged of upgrade",
                         "readOnly": true
                     },
-                    "Apply": {
-                        "const": "Apply",
+                    "Payment_by_schedule": {
+                        "const": "Payment will be processed according to schedule",
                         "readOnly": true
                     },
-                    "Pay": {
-                        "const": "Pay",
+                    "Subscribe": {
+                        "const": "Subscribe",
                         "readOnly": true
                     }
                 },
@@ -225,8 +229,9 @@
                     "Current_plan",
                     "Payment_method",
                     "Next_billing",
+                    "Next_billing_cost",
                     "Next_plan",
-                    "Update_plan",
+                    "Change_plan",
                     "Upgrade_plan",
                     "Cancel_subscription",
                     "View_invoice",
@@ -246,9 +251,9 @@
                     "Resume_plan",
                     "Active_until",
                     "Activate_immediately",
-                    "Will_be_charged_on",
-                    "Apply",
-                    "Pay"
+                    "Will_be_charged_now",
+                    "Payment_by_schedule",
+                    "Subscribe"
                 ]
             }
         }

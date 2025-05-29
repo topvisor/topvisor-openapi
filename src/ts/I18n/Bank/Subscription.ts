@@ -93,9 +93,11 @@ export interface components {
             /** @constant */
             readonly Next_billing: "Next billing";
             /** @constant */
+            readonly Next_billing_cost: "Next cost";
+            /** @constant */
             readonly Next_plan: "Next plan";
             /** @constant */
-            readonly Update_plan: "Update plan";
+            readonly Change_plan: "Change plan";
             /** @constant */
             readonly Upgrade_plan: "Upgrade plan";
             /** @constant */
@@ -133,13 +135,13 @@ export interface components {
             /** @constant */
             readonly Active_until: "Active until";
             /** @constant */
-            readonly Activate_immediately: "Switch to plan right now";
+            readonly Activate_immediately: "Activate immediately";
             /** @constant */
-            readonly Will_be_charged_on: "Will be charged on";
+            readonly Will_be_charged_now: "Will be charged of upgrade";
             /** @constant */
-            readonly Apply: "Apply";
+            readonly Payment_by_schedule: "Payment will be processed according to schedule";
             /** @constant */
-            readonly Pay: "Pay";
+            readonly Subscribe: "Subscribe";
         };
     };
     responses: never;

@@ -37,7 +37,7 @@ export interface components {
             id: string;
             name: string;
             priceUSD: number;
-            /** Скидка за годовую подписку
+            /** Скидка за годовую подписку в процентах от 0 до 1
              *
              *     При расчете финальной стоимости может использоваться округление */
             annualDiscount: number;
