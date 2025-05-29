@@ -289,7 +289,7 @@ export interface components {
             /** @constant */
             readonly System_name_ym: "YooMoney";
             /** @constant */
-            readonly System_name_rk: "Robokassa (cards of non-Russian banks, except Ukraine, USA, Turkey, Belarus)";
+            readonly System_name_rk: "Robokassa";
             /** @constant */
             readonly System_name_qw: "QIWI";
             /** @constant */
@@ -299,11 +299,15 @@ export interface components {
             /** @constant */
             readonly System_name_sb: "SberPay";
             /** @constant */
-            readonly System_name_lp: "LeadPay (cards of Belarusian banks)";
+            readonly System_name_lp: "LeadPay";
             /** @constant */
-            readonly System_name_pr: "Prodamus (cards of Belarusian banks)";
+            readonly System_name_pr: "Prodamus";
             /** @constant */
-            readonly System_name_ppg: "PayPro Global (cards of non-Russian banks, PayPal, Wire Transfer. All countries except Belarus)";
+            readonly System_info_for_belarus: "(cards of Belarusian banks)";
+            /** @constant */
+            readonly System_name_ppg: "PayPro Global";
+            /** @constant */
+            readonly System_ppg_info: "(cards of non-Russian banks, PayPal, Wire Transfer. All countries except Belarus)";
             /** @constant */
             readonly Your_contract_expires_notice: "Contract expiration notice";
             /** @constant */

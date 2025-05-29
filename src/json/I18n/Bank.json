@@ -571,7 +571,7 @@
                         "readOnly": true
                     },
                     "System_name_rk": {
-                        "const": "Robokassa (cards of non-Russian banks, except Ukraine, USA, Turkey, Belarus)",
+                        "const": "Robokassa",
                         "readOnly": true
                     },
                     "System_name_qw": {
@@ -591,15 +591,23 @@
                         "readOnly": true
                     },
                     "System_name_lp": {
-                        "const": "LeadPay (cards of Belarusian banks)",
+                        "const": "LeadPay",
                         "readOnly": true
                     },
                     "System_name_pr": {
-                        "const": "Prodamus (cards of Belarusian banks)",
+                        "const": "Prodamus",
+                        "readOnly": true
+                    },
+                    "System_info_for_belarus": {
+                        "const": "(cards of Belarusian banks)",
                         "readOnly": true
                     },
                     "System_name_ppg": {
-                        "const": "PayPro Global (cards of non-Russian banks, PayPal, Wire Transfer. All countries except Belarus)",
+                        "const": "PayPro Global",
+                        "readOnly": true
+                    },
+                    "System_ppg_info": {
+                        "const": "(cards of non-Russian banks, PayPal, Wire Transfer. All countries except Belarus)",
                         "readOnly": true
                     },
                     "Your_contract_expires_notice": {
@@ -1320,7 +1328,9 @@
                     "System_name_sb",
                     "System_name_lp",
                     "System_name_pr",
+                    "System_info_for_belarus",
                     "System_name_ppg",
+                    "System_ppg_info",
                     "Your_contract_expires_notice",
                     "Earlier_contacts_closed_notice",
                     "Tinkoff_bank_details",
