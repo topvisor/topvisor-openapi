@@ -498,6 +498,10 @@
                         "const": "Topvisor Software TV-%paymentId%",
                         "readOnly": true
                     },
+                    "Name_payment_subscription": {
+                        "const": "Subscription plan {{ subscriptionPlanLabel }}, period: {{ subscriptionCycle }} months",
+                        "readOnly": true
+                    },
                     "Name_payment_tariff_short": {
                         "const": "Topvisor Software 1-Month %tariffName% plan TV-%paymentId%",
                         "readOnly": true
@@ -1292,6 +1296,7 @@
                     "US_dollar",
                     "You_can_select_change_currency_once_before_first_payment_notice",
                     "Payments_willbe_made_in_currency",
+                    "Name_payment_subscription",
                     "Name_payment_log",
                     "Name_payment_log_tariff",
                     "Name_payment_log_subscription_in",

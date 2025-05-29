@@ -253,6 +253,8 @@ export interface components {
             /** @constant */
             readonly Name_payment_short?: "Topvisor Software TV-%paymentId%";
             /** @constant */
+            readonly Name_payment_subscription: "Subscription plan {{ subscriptionPlanLabel }}, period: {{ subscriptionCycle }} months";
+            /** @constant */
             readonly Name_payment_tariff_short?: "Topvisor Software 1-Month %tariffName% plan TV-%paymentId%";
             /** @constant */
             readonly Name_payment_log: "Credit%systemType% - Payment TV-%paymentId% via \"%systemName%\"%contractInfo%";
