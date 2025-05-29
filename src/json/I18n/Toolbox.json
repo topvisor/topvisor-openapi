@@ -30,11 +30,11 @@
                         "const": "Completed",
                         "readOnly": true
                     },
-                    "Hours": {
+                    "h": {
                         "const": "h",
                         "readOnly": true
                     },
-                    "Minutes": {
+                    "min": {
                         "const": "min",
                         "readOnly": true
                     },
@@ -49,6 +49,10 @@
                     "No_tasks": {
                         "const": "No tasks",
                         "readOnly": true
+                    },
+                    "For_export": {
+                        "const": "For export",
+                        "readOnly": true
                     }
                 },
                 "required": [
@@ -57,10 +61,11 @@
                     "View_collected_data_and_monitor_status",
                     "Tool",
                     "Task_completed",
-                    "Hours",
-                    "Minutes",
+                    "h",
+                    "min",
                     "Repeat_task",
-                    "No_tasks"
+                    "No_tasks",
+                    "For_export"
                 ]
             }
         }

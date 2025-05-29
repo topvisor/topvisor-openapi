@@ -19,15 +19,17 @@ export interface components {
             /** @constant */
             readonly Task_completed: "Completed";
             /** @constant */
-            readonly Hours: "h";
+            readonly h: "h";
             /** @constant */
-            readonly Minutes: "min";
+            readonly min: "min";
             /** @constant */
             readonly Need_to_save_data_till_end?: "Wanna save keywords data forever? <a href=\"/support/start/create/\" target=\"_blank\">Create a project</a> in Topvisor and check volume without time limits.";
             /** @constant */
             readonly Repeat_task: "Repeat task";
             /** @constant */
             readonly No_tasks: "No tasks";
+            /** @constant */
+            readonly For_export: "For export";
         };
     };
     responses: never;
