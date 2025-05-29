@@ -14,9 +14,9 @@ export interface components {
          *     Если требуется изменить другие параметры подписки, это можно только путем остановки этой подписки и созданием новой подписки */
         "Payments_2.Methods.Subscriptions.Next.Edit": {
             /** Id следующего плана подписки */
-            subscription_plan_id?: string | null;
+            subscription_plan_id: string;
             /** Значение следующего цикла подписки */
-            subscription_cycle?: import('../../../../Bank_2/Types/Subscriptions/Cycle.ts').components['schemas']['Bank_2.Types.Subscriptions.Cycle'] | null;
+            subscription_cycle: import('../../../../Bank_2/Types/Subscriptions/Cycle.ts').components['schemas']['Bank_2.Types.Subscriptions.Cycle'];
         };
     };
     responses: never;

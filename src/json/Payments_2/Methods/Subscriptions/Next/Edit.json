@@ -12,12 +12,10 @@
                 "properties": {
                     "subscription_plan_id": {
                         "title": "Id следующего плана подписки",
-                        "nullable": true,
                         "type": "string"
                     },
                     "subscription_cycle": {
                         "title": "Значение следующего цикла подписки",
-                        "nullable": true,
                         "allOf": [
                             {
                                 "$ref": "../../../../Bank_2/Types/Subscriptions/Cycle.json#/components/schemas/Bank_2.Types.Subscriptions.Cycle"
@@ -25,7 +23,10 @@
                         ]
                     }
                 },
-                "required": [],
+                "required": [
+                    "subscription_plan_id",
+                    "subscription_cycle"
+                ],
                 "title": "Изменения подписки на следующий расчетный период\n\nИзменение доступно только в рамках одной платежной системы\n\nЕсли требуется изменить другие параметры подписки, это можно только путем остановки этой подписки и созданием новой подписки"
             }
         }

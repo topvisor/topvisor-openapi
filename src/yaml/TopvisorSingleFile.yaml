@@ -22177,14 +22177,14 @@ components:
       properties:
         subscription_plan_id:
           title: Id следующего плана подписки
-          nullable: true
           type: string
         subscription_cycle:
           title: Значение следующего цикла подписки
-          nullable: true
           allOf:
             - $ref: '#/components/schemas/Bank_2.Types.Subscriptions.Cycle'
-      required: []
+      required:
+        - subscription_plan_id
+        - subscription_cycle
       title: |-
         Изменения подписки на следующий расчетный период
 
