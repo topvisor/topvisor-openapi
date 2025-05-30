@@ -7580,6 +7580,7 @@ paths:
                             items:
                               $ref: '#/components/schemas/Models.Pages'
                               description: Only for typescript, does not contain real data
+                            title: '@throws Exception'
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
@@ -7652,6 +7653,7 @@ paths:
                             items:
                               $ref: '#/components/schemas/Models.Pages'
                               description: Only for typescript, does not contain real data
+                            title: '@throws Exception'
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
@@ -7691,6 +7693,7 @@ paths:
                             items:
                               $ref: '#/components/schemas/Models.Pages'
                               description: Only for typescript, does not contain real data
+                            title: '@throws Exception'
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
@@ -7727,6 +7730,7 @@ paths:
                             items:
                               $ref: '#/components/schemas/Models.Pages'
                               description: Only for typescript, does not contain real data
+                            title: '@throws Exception'
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'

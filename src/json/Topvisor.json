@@ -13626,7 +13626,8 @@
                                                             "items": {
                                                                 "$ref": "Models/Pages.json#/components/schemas/Models.Pages",
                                                                 "description": "Only for typescript, does not contain real data"
-                                                            }
+                                                            },
+                                                            "title": "@throws Exception"
                                                         }
                                                     },
                                                     "required": [
@@ -13758,7 +13759,8 @@
                                                             "items": {
                                                                 "$ref": "Models/Pages.json#/components/schemas/Models.Pages",
                                                                 "description": "Only for typescript, does not contain real data"
-                                                            }
+                                                            },
+                                                            "title": "@throws Exception"
                                                         }
                                                     },
                                                     "required": [
@@ -13824,7 +13826,8 @@
                                                             "items": {
                                                                 "$ref": "Models/Pages.json#/components/schemas/Models.Pages",
                                                                 "description": "Only for typescript, does not contain real data"
-                                                            }
+                                                            },
+                                                            "title": "@throws Exception"
                                                         }
                                                     },
                                                     "required": [
@@ -13890,7 +13893,8 @@
                                                             "items": {
                                                                 "$ref": "Models/Pages.json#/components/schemas/Models.Pages",
                                                                 "description": "Only for typescript, does not contain real data"
-                                                            }
+                                                            },
+                                                            "title": "@throws Exception"
                                                         }
                                                     },
                                                     "required": [
