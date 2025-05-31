@@ -307,35 +307,35 @@ export interface components {
                 title: "og:title found";
                 title_negative: "og:title not found";
                 description: "Open Graph is a meta tag markup that allows to create an attractive preview of a page when publishing a link on social media.\n\t\tMeta tag og:title stands for a header and Title tag.";
-                resolve: "Check the page HTML-code and add og:title meta tag. Don't make og:title too long — headers on socials are much shorter than in search. <a href=\"https://yandex.ru/support/webmaster/open-graph/?lang=en\" target=\"_blank\">More on Open Graph in the official Yandex guide →</a>";
+                resolve: "Check the page HTML-code and add og:title meta tag. Don't make og:title too long — headers on socials are much shorter than in search. <a href=\"https://yandex.ru/support/webmaster/en/open-graph/intro-open-graph.html\" target=\"_blank\">More on Open Graph in the official Yandex guide →</a>";
             };
             /** @constant */
             readonly pages_check_og_description_exists: {
                 title: "og:description found";
                 title_negative: "og:description not found";
                 description: "Open Graph is a meta tag markup that allows to create an attractive preview of a page when publishing a link on social media.\n\t\tMeta tag og:description contains a brief description of the page content and stands for Description tag.";
-                resolve: "Check the page HTML-code and add og:description. Don't make og:description too long — headers on socials are much shorter than in search. <a href=\"https://yandex.ru/support/webmaster/open-graph/?lang=en\" target=\"_blank\">More on Open Graph in the official Yandex guide →</a>";
+                resolve: "Check the page HTML-code and add og:description. Don't make og:description too long — headers on socials are much shorter than in search. <a href=\"https://yandex.ru/support/webmaster/en/open-graph/intro-open-graph.html\" target=\"_blank\">More on Open Graph in the official Yandex guide →</a>";
             };
             /** @constant */
             readonly pages_check_og_image_exists: {
                 title: "og:image found";
                 title_negative: "og:image not found";
                 description: "Open Graph is a meta tag markup that allows to create an attractive preview of a page when publishing a link on social media.\n\t\tog:image meta tag contains the image that will be displayed in the page preview.";
-                resolve: "Check the page HTML-code and add og:image. Specify the image URL in the meta tag. Image size should be >1200x630 px and weigh <5 Mb — such image will look good in most social networks. <a href=\"https://yandex.ru/support/webmaster/open-graph/?lang=en\" target=\"_blank\">More on Open Graph in the official Yandex guide →</a>";
+                resolve: "Check the page HTML-code and add og:image. Specify the image URL in the meta tag. Image size should be >1200x630 px and weigh <5 Mb — such image will look good in most social networks. <a href=\"https://yandex.ru/support/webmaster/en/open-graph/intro-open-graph.html\" target=\"_blank\">More on Open Graph in the official Yandex guide →</a>";
             };
             /** @constant */
             readonly pages_check_og_url_exists: {
                 title: "og:url found";
                 title_negative: "og:url not found";
                 description: "Open Graph is a meta tag markup that allows to create an attractive preview of a page when publishing a link on social media.\n\t\tog:url meta tag contains the canonical URL where user will land after clicking the preview.";
-                resolve: "Check the page HTML-code and add og:url. In the meta tag there should be the target URL a user should land on after following the link in preview. <a href=\"https://yandex.ru/support/webmaster/open-graph/?lang=en\" target=\"_blank\">More on Open Graph in the official Yandex guide →</a>";
+                resolve: "Check the page HTML-code and add og:url. In the meta tag there should be the target URL a user should land on after following the link in preview. <a href=\"https://yandex.ru/support/webmaster/en/open-graph/intro-open-graph.html\" target=\"_blank\">More on Open Graph in the official Yandex guide →</a>";
             };
             /** @constant */
             readonly pages_check_og_url_canonical: {
                 title: "og:url matches canonical";
                 title_negative: "og:url doesn't match canonical";
                 description: "Canonical URL helps search engines to identify target URL among similar URLs.\n\t\tIn Open Graph markup og:url should match canonical so that if users click a preview link they will land on a target URL.";
-                resolve: "Check og:url meta tag and add a canonical URL in it. <a href=\"https://yandex.ru/support/webmaster/open-graph/?lang=en\" target=\"_blank\">More on Open Graph in the official Yandex guide →</a>";
+                resolve: "Check og:url meta tag and add a canonical URL in it. <a href=\"https://yandex.ru/support/webmaster/en/open-graph/intro-open-graph.html\" target=\"_blank\">More on Open Graph in the official Yandex guide →</a>";
             };
             /** @constant */
             readonly links_check_http_code_200: {
