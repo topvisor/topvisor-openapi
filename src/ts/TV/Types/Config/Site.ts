@@ -39,6 +39,11 @@ export interface components {
              */
             readonly HOST_TPVSR: string;
             /**
+             * Имя модуля
+             * @default No set
+             */
+            readonly HOST_TPVSR_MODULE: string;
+            /**
              * Тип биллинга по умолчанию
              *
              *     - balance

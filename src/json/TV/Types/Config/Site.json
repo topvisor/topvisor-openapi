@@ -40,6 +40,12 @@
                         "readOnly": true,
                         "type": "string"
                     },
+                    "HOST_TPVSR_MODULE": {
+                        "title": "Имя модуля",
+                        "default": "No set",
+                        "readOnly": true,
+                        "type": "string"
+                    },
                     "DEFAULT_BANK_TYPE": {
                         "title": "Тип биллинга по умолчанию\n\n- balance\n- limits",
                         "default": "balance",
@@ -211,6 +217,7 @@
                     "HOST",
                     "HOST_DEV",
                     "HOST_TPVSR",
+                    "HOST_TPVSR_MODULE",
                     "DEFAULT_BANK_TYPE",
                     "LANGUAGES",
                     "LANGUAGE_MAIN",
