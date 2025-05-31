@@ -166,6 +166,10 @@
                         "const": "LLMs and hi-tech",
                         "readOnly": true
                     },
+                    "Flowers": {
+                        "const": "Flowers and bouquets",
+                        "readOnly": true
+                    },
                     "Go_to_statictics": {
                         "const": "Go to statistics of the day",
                         "readOnly": true
@@ -239,6 +243,7 @@
                     "Legal_services",
                     "Cinema_tickets",
                     "High_technology",
+                    "Flowers",
                     "Go_to_statictics",
                     "Apometr_info",
                     "Updates_yandex_telegram",

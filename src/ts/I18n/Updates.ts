@@ -87,6 +87,8 @@ export interface components {
             /** @constant */
             readonly High_technology: "LLMs and hi-tech";
             /** @constant */
+            readonly Flowers: "Flowers and bouquets";
+            /** @constant */
             readonly Go_to_statictics: "Go to statistics of the day";
             /** @constant */
             readonly Apometr_info: "Updates Scanner is a tool that detects changes and updates in organic search results split by topics. We check SERP every day and measure changes on a 10-point scale. <a href=\"{{ hrefSupport }}\" target=\"_blank\">More on Updates Scanner →</a>";
