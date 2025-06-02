@@ -94,6 +94,8 @@ export interface components {
             readonly Top_5_sites: "SERP Top websites for keyword";
             /** @constant */
             readonly More_info: "Get more insights on&nbsp;organic SERP with&nbsp;<a href=\"{{ hrefSnapshots }}\" target=\"_blank\">SERP Snapshots →</a>";
+            /** @constant */
+            readonly Change_in_google: "A change in Google ranking algorithm occurred. For more information check Google Search Central";
         };
     };
     responses: never;

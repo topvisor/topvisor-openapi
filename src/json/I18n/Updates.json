@@ -181,6 +181,10 @@
                     "More_info": {
                         "const": "Get more insights on&nbsp;organic SERP with&nbsp;<a href=\"{{ hrefSnapshots }}\" target=\"_blank\">SERP Snapshots →</a>",
                         "readOnly": true
+                    },
+                    "Change_in_google": {
+                        "const": "A change in Google ranking algorithm occurred. For more information check Google Search Central",
+                        "readOnly": true
                     }
                 },
                 "required": [
@@ -226,7 +230,8 @@
                     "Share_link",
                     "Embed_widget",
                     "Top_5_sites",
-                    "More_info"
+                    "More_info",
+                    "Change_in_google"
                 ]
             }
         }
