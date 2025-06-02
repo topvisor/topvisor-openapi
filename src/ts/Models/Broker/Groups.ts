@@ -20,7 +20,6 @@ export interface components {
             on?: any;
             off?: any;
             for_off?: any;
-            keywords_load_time?: any;
             timestamp?: any;
             keyword?: any;
             keywords_off?: any;

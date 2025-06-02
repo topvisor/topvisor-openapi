@@ -15616,8 +15616,6 @@ components:
           nullable: true
         for_off:
           nullable: true
-        keywords_load_time:
-          nullable: true
         timestamp:
           nullable: true
         keyword:
