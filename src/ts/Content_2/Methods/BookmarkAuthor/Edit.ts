@@ -7,14 +7,15 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Создание сертификата
-         *
-         *     Можно создавать только для пройденных курсов */
-        "Content_2.Methods.Journal.Course.Certificates.Add": {
-            /** Url курса относительно домена */
-            course_url: string;
-            /** Имя на кого выписывается сертификат */
-            user_name: string;
+        /** Редактирование статуса закладки для автора */
+        "Content_2.Methods.BookmarkAuthor.Edit": {
+            /** Id автора */
+            user_id: number;
+            /** Установлена ли закладка
+             *
+             *     - false: снять закладку
+             *     - true: сохранить закладку */
+            bookmark: boolean;
         };
     };
     responses: never;

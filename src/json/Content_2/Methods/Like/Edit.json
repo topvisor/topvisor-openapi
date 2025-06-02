@@ -1,38 +1,38 @@
 {
     "openapi": "3.0.0",
     "info": {
-        "title": "Topvisor/Content_2.Methods.Redirects.Del",
+        "title": "Topvisor/Content_2.Methods.Like.Edit",
         "version": "2.0.0"
     },
     "paths": {},
     "components": {
         "schemas": {
-            "Content_2.Methods.Redirects.Del": {
+            "Content_2.Methods.Like.Edit": {
                 "type": "object",
                 "properties": {
-                    "site": {
-                        "title": "Сайт\n\n- topvisor\n- thundo",
-                        "type": "string"
-                    },
                     "subdomain": {
-                        "title": "С поддомена\n\n- 'journal'\n- ''",
+                        "title": "Поддомен страницы",
                         "allOf": [
                             {
                                 "$ref": "../../../Content_2/Types/Subdomain.json#/components/schemas/Content_2.Types.Subdomain"
                             }
                         ]
                     },
-                    "path_mask": {
-                        "title": "С пути (маска, * - любой символ)",
+                    "url": {
+                        "title": "Url страницы",
                         "type": "string"
+                    },
+                    "like": {
+                        "title": "Установлен ли лайк",
+                        "type": "boolean"
                     }
                 },
                 "required": [
-                    "site",
                     "subdomain",
-                    "path_mask"
+                    "url",
+                    "like"
                 ],
-                "title": "Удаление редиректа"
+                "title": "Редактирование статуса лайка для страницы"
             }
         }
     }

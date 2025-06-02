@@ -12,18 +12,18 @@ export interface components {
             /** На путь */
             redirect_path: string;
             /** На поддомен */
-            redirect_subdomain: string;
+            redirect_subdomain: import('../../Types/Subdomain.ts').components['schemas']['Content_2.Types.Subdomain'];
             /** Сайт
              *
-             *     * topvisor
-             *     * thundo */
+             *     - topvisor
+             *     - thundo */
             site: string;
             /** С поддомена
              *
-             *     * 'journal'
-             *     * '' */
-            subdomain: string;
-            /** с пути (маска, * - любой символ) */
+             *     - 'journal'
+             *     - '' */
+            subdomain: import('../../Types/Subdomain.ts').components['schemas']['Content_2.Types.Subdomain'];
+            /** С пути (маска, * - любой символ) */
             path_mask: string;
         };
     };

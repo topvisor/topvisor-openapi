@@ -7,19 +7,14 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        "Content_2.Methods.Redirects.AbstractRegular": {
-            /** Сайт
-             *
-             *     - topvisor
-             *     - thundo */
-            site: string;
-            /** С поддомена
-             *
-             *     - 'journal'
-             *     - '' */
+        /** Редактирование статуса лайка для страницы */
+        "Content_2.Methods.Like.Edit": {
+            /** Поддомен страницы */
             subdomain: import('../../Types/Subdomain.ts').components['schemas']['Content_2.Types.Subdomain'];
-            /** С пути (маска, * - любой символ) */
-            path_mask: string;
+            /** Url страницы */
+            url: string;
+            /** Установлен ли лайк */
+            like: boolean;
         };
     };
     responses: never;

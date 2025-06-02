@@ -7,14 +7,10 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Создание сертификата
-         *
-         *     Можно создавать только для пройденных курсов */
-        "Content_2.Methods.Journal.Course.Certificates.Add": {
-            /** Url курса относительно домена */
-            course_url: string;
-            /** Имя на кого выписывается сертификат */
-            user_name: string;
+        /** Перенести документ в папку /archive/ */
+        "Content_2.Methods.Pages.Del": {
+            filters: import('../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['filters'];
+            id?: import('../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['id'];
         };
     };
     responses: never;

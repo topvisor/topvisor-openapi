@@ -7,18 +7,19 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
+        /** Удаление редиректа */
         "Content_2.Methods.Redirects.Del": {
             /** Сайт
              *
-             *     * topvisor
-             *     * thundo */
+             *     - topvisor
+             *     - thundo */
             site: string;
             /** С поддомена
              *
-             *     * 'journal'
-             *     * '' */
-            subdomain: string;
-            /** с пути (маска, * - любой символ) */
+             *     - 'journal'
+             *     - '' */
+            subdomain: import('../../Types/Subdomain.ts').components['schemas']['Content_2.Types.Subdomain'];
+            /** С пути (маска, * - любой символ) */
             path_mask: string;
         };
     };

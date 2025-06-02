@@ -16,22 +16,30 @@
                     },
                     "redirect_subdomain": {
                         "title": "На поддомен",
-                        "type": "string"
+                        "allOf": [
+                            {
+                                "$ref": "../../../Content_2/Types/Subdomain.json#/components/schemas/Content_2.Types.Subdomain"
+                            }
+                        ]
                     },
                     "comments": {
                         "title": "Комментарий",
                         "type": "string"
                     },
                     "site": {
-                        "title": "Сайт\n\n* topvisor\n* thundo",
+                        "title": "Сайт\n\n- topvisor\n- thundo",
                         "type": "string"
                     },
                     "subdomain": {
-                        "title": "С поддомена\n\n* 'journal'\n* ''",
-                        "type": "string"
+                        "title": "С поддомена\n\n- 'journal'\n- ''",
+                        "allOf": [
+                            {
+                                "$ref": "../../../Content_2/Types/Subdomain.json#/components/schemas/Content_2.Types.Subdomain"
+                            }
+                        ]
                     },
                     "path_mask": {
-                        "title": "с пути (маска, * - любой символ)",
+                        "title": "С пути (маска, * - любой символ)",
                         "type": "string"
                     }
                 },

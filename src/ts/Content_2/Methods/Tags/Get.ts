@@ -7,14 +7,14 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Создание сертификата
-         *
-         *     Можно создавать только для пройденных курсов */
-        "Content_2.Methods.Journal.Course.Certificates.Add": {
-            /** Url курса относительно домена */
-            course_url: string;
-            /** Имя на кого выписывается сертификат */
-            user_name: string;
+        /** Поиск тегов */
+        "Content_2.Methods.Tags.Get": {
+            /** Фильтр по поддомену */
+            subdomain?: import('../../Types/Subdomain.ts').components['schemas']['Content_2.Types.Subdomain'] | null;
+            /** Искомый тэг */
+            tag?: string;
+            /** Фильтр по каталогу url */
+            url?: string | null;
         };
     };
     responses: never;
