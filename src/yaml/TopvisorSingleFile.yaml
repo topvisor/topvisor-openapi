@@ -924,10 +924,6 @@ paths:
                       - type: object
                         properties:
                           result:
-                            type: array
-                            items:
-                              $ref: '#/components/schemas/Models.Urls'
-                              description: Only for typescript, does not contain real data
                             title: '@throws Exception'
                         required:
                           - result

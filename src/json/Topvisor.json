@@ -1407,11 +1407,6 @@
                                                     "type": "object",
                                                     "properties": {
                                                         "result": {
-                                                            "type": "array",
-                                                            "items": {
-                                                                "$ref": "Models/Urls.json#/components/schemas/Models.Urls",
-                                                                "description": "Only for typescript, does not contain real data"
-                                                            },
                                                             "title": "@throws Exception"
                                                         }
                                                     },
