@@ -8552,7 +8552,7 @@ export interface operations {
                 content: {
                     "application/json": ({
                         /** @throws Exception */
-                        result: import('./Models/Content/Authors.ts').components['schemas']['Models.Content.Authors'][];
+                        result: unknown;
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: import('./Models/Content/Authors.ts').components['schemas']['Models.Content.Authors'];
                 };

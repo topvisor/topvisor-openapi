@@ -4490,11 +4490,6 @@
                                                     "type": "object",
                                                     "properties": {
                                                         "result": {
-                                                            "type": "array",
-                                                            "items": {
-                                                                "$ref": "Models/Content/Authors.json#/components/schemas/Models.Content.Authors",
-                                                                "description": "Only for typescript, does not contain real data"
-                                                            },
                                                             "title": "@throws Exception"
                                                         }
                                                     },
