@@ -9102,6 +9102,42 @@ paths:
             model:
               schema:
                 type: 'null'
+  /get/redmine_2/users/groups/:
+    post:
+      operationId: GetRedmine2UsersGroups
+      tags:
+        - Redmine_2
+      summary: Получить список групп с пользователями
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Redmine_2.Methods.Users.Groups.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            type: array
+                            items:
+                              oneOf:
+                                - type: string
+                                - type: number
+                            title: '@throws Exception'
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
   /del/tickets_2/admin/message/:
     post:
       operationId: DelTickets2AdminMessage
@@ -22869,6 +22905,11 @@ components:
         - keywords
         - qualifiers
       title: Создание задачи
+    Redmine_2.Methods.Users.Groups.Get:
+      type: object
+      properties: {}
+      required: []
+      title: Получить список групп с пользователями
     Tickets_2.Methods.Admin.Message.Del:
       type: object
       properties:

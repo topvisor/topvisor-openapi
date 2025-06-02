@@ -126,6 +126,12 @@
                         "readOnly": true,
                         "type": "number"
                     },
+                    "BROKER_MIN_BALANCE": {
+                        "title": "Необходимый баланс для запуска корректировки ставок.",
+                        "default": 10000,
+                        "readOnly": true,
+                        "type": "number"
+                    },
                     "CLASTER_COST": {
                         "title": "Стоимость кластера.",
                         "default": 10000,
@@ -331,6 +337,7 @@
                     "SY_COST",
                     "SY_HINTS_COST",
                     "BROKER_COST",
+                    "BROKER_MIN_BALANCE",
                     "CLASTER_COST",
                     "CLASTER_COST_10",
                     "CLASTER_COST_50",

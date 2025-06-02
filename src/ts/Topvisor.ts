@@ -4744,6 +4744,23 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
+    /** Получить список групп с пользователями */
+    "/get/redmine_2/users/groups/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["GetRedmine2UsersGroups"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
     /** Удаление ответа в тикете, только для админов */
     "/del/tickets_2/admin/message/": {
         parameters: {
@@ -13498,6 +13515,33 @@ export interface operations {
                 content: {
                     "application/json": ({
                         result: unknown;
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: null;
+                };
+            };
+        };
+    };
+    GetRedmine2UsersGroups: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Redmine_2/Methods/Users/Groups/Get.ts').components['schemas']['Redmine_2.Methods.Users.Groups.Get'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        /** @throws Exception */
+                        result: (string | number)[];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };

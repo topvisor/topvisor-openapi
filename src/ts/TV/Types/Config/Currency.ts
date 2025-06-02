@@ -101,6 +101,11 @@ export interface components {
              */
             readonly BROKER_COST: number;
             /**
+             * Необходимый баланс для запуска корректировки ставок.
+             * @default 10000
+             */
+            readonly BROKER_MIN_BALANCE: number;
+            /**
              * Стоимость кластера.
              * @default 10000
              */

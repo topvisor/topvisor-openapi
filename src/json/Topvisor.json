@@ -16431,6 +16431,75 @@
                 }
             }
         },
+        "/get/redmine_2/users/groups/": {
+            "post": {
+                "operationId": "GetRedmine2UsersGroups",
+                "tags": [
+                    "Redmine_2"
+                ],
+                "summary": "Получить список групп с пользователями",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Redmine_2/Methods/Users/Groups/Get.json#/components/schemas/Redmine_2.Methods.Users.Groups.Get"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "oneOf": [
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "type": "array",
+                                                            "items": {
+                                                                "oneOf": [
+                                                                    {
+                                                                        "type": "string"
+                                                                    },
+                                                                    {
+                                                                        "type": "number"
+                                                                    }
+                                                                ]
+                                                            },
+                                                            "title": "@throws Exception"
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "result"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
+                                        }
+                                    ]
+                                }
+                            },
+                            "model": {
+                                "schema": {
+                                    "type": "null"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
         "/del/tickets_2/admin/message/": {
             "post": {
                 "operationId": "DelTickets2AdminMessage",
