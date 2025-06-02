@@ -527,8 +527,7 @@ paths:
                   - allOf:
                       - type: object
                         properties:
-                          result:
-                            title: '@throws Exception'
+                          result: {}
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
@@ -558,12 +557,7 @@ paths:
                   - allOf:
                       - type: object
                         properties:
-                          result:
-                            type: array
-                            items:
-                              $ref: '#/components/schemas/Models.Payments'
-                              description: Only for typescript, does not contain real data
-                            title: '@throws Exception'
+                          result: {}
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
@@ -660,9 +654,7 @@ paths:
                   - allOf:
                       - type: object
                         properties:
-                          result:
-                            type: integer
-                            title: '@throws Exception'
+                          result: {}
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
@@ -924,7 +916,7 @@ paths:
                       - type: object
                         properties:
                           result:
-                            title: '@throws Exception'
+                            title: Список urls проекта
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
@@ -1329,12 +1321,7 @@ paths:
                   - allOf:
                       - type: object
                         properties:
-                          result:
-                            type: array
-                            items:
-                              $ref: '#/components/schemas/Models.Admin.Staff'
-                              description: Only for typescript, does not contain real data
-                            title: '@throws Exception'
+                          result: {}
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
@@ -1432,9 +1419,7 @@ paths:
                   - allOf:
                       - type: object
                         properties:
-                          result:
-                            type: integer
-                            title: '@throws Exception'
+                          result: {}
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
@@ -1465,12 +1450,7 @@ paths:
                   - allOf:
                       - type: object
                         properties:
-                          result:
-                            type: array
-                            items:
-                              $ref: '#/components/schemas/Models.Admin.Users'
-                              description: Only for typescript, does not contain real data
-                            title: '@throws Exception'
+                          result: {}
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
@@ -1579,12 +1559,7 @@ paths:
                   - allOf:
                       - type: object
                         properties:
-                          result:
-                            type: array
-                            items:
-                              oneOf:
-                                - type: string
-                                - type: number
+                          result: {}
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
@@ -1827,12 +1802,7 @@ paths:
                   - allOf:
                       - type: object
                         properties:
-                          result:
-                            type: array
-                            items:
-                              oneOf:
-                                - type: string
-                                - type: number
+                          result: {}
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
@@ -1862,12 +1832,7 @@ paths:
                   - allOf:
                       - type: object
                         properties:
-                          result:
-                            type: array
-                            items:
-                              $ref: '#/components/schemas/Models.BalanceHistory'
-                              description: Only for typescript, does not contain real data
-                            title: '@throws Exception'
+                          result: {}
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
@@ -1966,9 +1931,7 @@ paths:
                   - allOf:
                       - type: object
                         properties:
-                          result:
-                            type: integer
-                            title: '@throws Exception'
+                          result: {}
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
@@ -1998,9 +1961,7 @@ paths:
                   - allOf:
                       - type: object
                         properties:
-                          result:
-                            type: integer
-                            title: '@throws Exception'
+                          result: {}
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
@@ -2030,12 +1991,7 @@ paths:
                   - allOf:
                       - type: object
                         properties:
-                          result:
-                            type: array
-                            items:
-                              $ref: '#/components/schemas/Models.Requisites'
-                              description: Only for typescript, does not contain real data
-                            title: '@throws Exception'
+                          result: {}
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
@@ -2610,8 +2566,7 @@ paths:
                   - allOf:
                       - type: object
                         properties:
-                          result:
-                            title: '@throws Exception'
+                          result: {}
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
@@ -3604,8 +3559,7 @@ paths:
                   - allOf:
                       - type: object
                         properties:
-                          result:
-                            title: '@throws Exception'
+                          result: {}
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
@@ -3900,9 +3854,7 @@ paths:
                   - allOf:
                       - type: object
                         properties:
-                          result:
-                            type: integer
-                            title: '@throws Exception'
+                          result: {}
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
@@ -3932,9 +3884,7 @@ paths:
                   - allOf:
                       - type: object
                         properties:
-                          result:
-                            type: integer
-                            title: '@throws Exception'
+                          result: {}
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
@@ -3964,9 +3914,7 @@ paths:
                   - allOf:
                       - type: object
                         properties:
-                          result:
-                            type: integer
-                            title: '@throws Exception'
+                          result: {}
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
@@ -4295,12 +4243,7 @@ paths:
                   - allOf:
                       - type: object
                         properties:
-                          result:
-                            type: array
-                            items:
-                              $ref: '#/components/schemas/Models.Projects.Folders'
-                              description: Only for typescript, does not contain real data
-                            title: '@throws Exception'
+                          result: {}
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
@@ -4332,9 +4275,7 @@ paths:
                   - allOf:
                       - type: object
                         properties:
-                          result:
-                            type: integer
-                            title: '@throws Exception'
+                          result: {}
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
@@ -4565,12 +4506,7 @@ paths:
                   - allOf:
                       - type: object
                         properties:
-                          result:
-                            type: array
-                            items:
-                              $ref: '#/components/schemas/Models.Projects'
-                              description: Only for typescript, does not contain real data
-                            title: '@throws Exception'
+                          result: {}
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
@@ -4602,9 +4538,7 @@ paths:
                   - allOf:
                       - type: object
                         properties:
-                          result:
-                            type: integer
-                            title: '@throws Exception'
+                          result: {}
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
@@ -4634,12 +4568,7 @@ paths:
                   - allOf:
                       - type: object
                         properties:
-                          result:
-                            type: array
-                            items:
-                              oneOf:
-                                - type: string
-                                - type: number
+                          result: {}
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
@@ -5268,12 +5197,7 @@ paths:
                   - allOf:
                       - type: object
                         properties:
-                          result:
-                            type: array
-                            items:
-                              $ref: '#/components/schemas/Models.Admin.Accounting.Counteragents'
-                              description: Only for typescript, does not contain real data
-                            title: '@throws Exception'
+                          result: {}
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
@@ -5434,12 +5358,7 @@ paths:
                   - allOf:
                       - type: object
                         properties:
-                          result:
-                            type: array
-                            items:
-                              $ref: '#/components/schemas/Models.Admin.Invoices'
-                              description: Only for typescript, does not contain real data
-                            title: '@throws Exception'
+                          result: {}
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
@@ -5471,12 +5390,7 @@ paths:
                   - allOf:
                       - type: object
                         properties:
-                          result:
-                            type: array
-                            items:
-                              $ref: '#/components/schemas/Models.EmptyModel'
-                              description: Only for typescript, does not contain real data
-                            title: '@throws Exception'
+                          result: {}
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
@@ -6015,12 +5929,7 @@ paths:
                   - allOf:
                       - type: object
                         properties:
-                          result:
-                            type: array
-                            items:
-                              $ref: '#/components/schemas/Models.Analytics.Events'
-                              description: Only for typescript, does not contain real data
-                            title: '@throws Exception'
+                          result: {}
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
@@ -6302,12 +6211,7 @@ paths:
                   - allOf:
                       - type: object
                         properties:
-                          result:
-                            type: array
-                            items:
-                              $ref: '#/components/schemas/Models.Analytics.RanksUsers'
-                              description: Only for typescript, does not contain real data
-                            title: '@throws Exception'
+                          result: {}
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
@@ -6831,11 +6735,7 @@ paths:
                       - type: object
                         properties:
                           result:
-                            type: array
-                            items:
-                              $ref: '#/components/schemas/Models.Audit.Checks'
-                              description: Only for typescript, does not contain real data
-                            title: '@throws Exception'
+                            title: Список выполненных (выполняемых) проверок аудита
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
@@ -7562,8 +7462,7 @@ paths:
                   - allOf:
                       - type: object
                         properties:
-                          result:
-                            type: integer
+                          result: {}
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
@@ -7613,8 +7512,7 @@ paths:
                   - allOf:
                       - type: object
                         properties:
-                          result:
-                            type: string
+                          result: {}
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
@@ -8020,11 +7918,7 @@ paths:
                   - allOf:
                       - type: object
                         properties:
-                          result:
-                            type: array
-                            items:
-                              $ref: '#/components/schemas/Models.Apometr.Keywords'
-                              description: Only for typescript, does not contain real data
+                          result: {}
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
@@ -8056,12 +7950,7 @@ paths:
                   - allOf:
                       - type: object
                         properties:
-                          result:
-                            type: array
-                            items:
-                              oneOf:
-                                - type: string
-                                - type: number
+                          result: {}
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
@@ -8809,9 +8698,7 @@ paths:
                   - allOf:
                       - type: object
                         properties:
-                          result:
-                            type: integer
-                            title: '@throws Exception'
+                          result: {}
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
@@ -8841,9 +8728,7 @@ paths:
                   - allOf:
                       - type: object
                         properties:
-                          result:
-                            type: integer
-                            title: '@throws Exception'
+                          result: {}
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
@@ -8873,9 +8758,7 @@ paths:
                   - allOf:
                       - type: object
                         properties:
-                          result:
-                            type: integer
-                            title: '@throws Exception'
+                          result: {}
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
@@ -8936,9 +8819,7 @@ paths:
                   - allOf:
                       - type: object
                         properties:
-                          result:
-                            type: integer
-                            title: '@throws Exception'
+                          result: {}
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
@@ -9096,9 +8977,7 @@ paths:
                   - allOf:
                       - type: object
                         properties:
-                          result:
-                            type: integer
-                            title: '@throws Exception'
+                          result: {}
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
@@ -9131,9 +9010,7 @@ paths:
                   - allOf:
                       - type: object
                         properties:
-                          result:
-                            type: integer
-                            title: '@throws Exception'
+                          result: {}
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
@@ -9163,8 +9040,7 @@ paths:
                   - allOf:
                       - type: object
                         properties:
-                          result:
-                            type: integer
+                          result: {}
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
@@ -9653,9 +9529,7 @@ paths:
                   - allOf:
                       - type: object
                         properties:
-                          result:
-                            type: integer
-                            title: '@throws Exception'
+                          result: {}
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
@@ -10139,8 +10013,7 @@ paths:
                   - allOf:
                       - type: object
                         properties:
-                          result:
-                            type: integer
+                          result: {}
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
@@ -10234,9 +10107,7 @@ paths:
                   - allOf:
                       - type: object
                         properties:
-                          result:
-                            type: integer
-                            title: '@throws Exception'
+                          result: {}
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
@@ -10266,9 +10137,7 @@ paths:
                   - allOf:
                       - type: object
                         properties:
-                          result:
-                            type: integer
-                            title: '@throws Exception'
+                          result: {}
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
@@ -10298,9 +10167,7 @@ paths:
                   - allOf:
                       - type: object
                         properties:
-                          result:
-                            type: integer
-                            title: '@throws Exception'
+                          result: {}
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
@@ -10353,8 +10220,7 @@ paths:
                   - allOf:
                       - type: object
                         properties:
-                          result:
-                            type: integer
+                          result: {}
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
@@ -12225,12 +12091,7 @@ paths:
                   - allOf:
                       - type: object
                         properties:
-                          result:
-                            type: array
-                            items:
-                              oneOf:
-                                - type: string
-                                - type: number
+                          result: {}
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
@@ -12376,12 +12237,7 @@ paths:
                   - allOf:
                       - type: object
                         properties:
-                          result:
-                            type: array
-                            items:
-                              oneOf:
-                                - type: string
-                                - type: number
+                          result: {}
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
@@ -12412,11 +12268,6 @@ paths:
                       - type: object
                         properties:
                           result:
-                            type: array
-                            items:
-                              oneOf:
-                                - type: string
-                                - type: number
                             title: '@return array{pricesByUsers: array<string, array{price: float, priceOriginal: float, qualifiers: array{region_key: int, searcher_key: (0 | 1 | 5 | 100 | 101 | 102 | 104 | 105 | 106), region_lang?: (string | null), also_searched?: (int | null), depth?: (int | null), hint_depth: (1 | 2 | 3), hint_generators: array<(''letter'' | ''letter_ru'' | ''number'' | ''space'')>}, comment: string}>}'
                         required:
                           - result
@@ -12501,9 +12352,7 @@ paths:
                   - allOf:
                       - type: object
                         properties:
-                          result:
-                            type: integer
-                            title: '@throws Exception'
+                          result: {}
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
@@ -12564,9 +12413,7 @@ paths:
                   - allOf:
                       - type: object
                         properties:
-                          result:
-                            type: integer
-                            title: '@throws Exception'
+                          result: {}
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
@@ -12660,12 +12507,7 @@ paths:
                   - allOf:
                       - type: object
                         properties:
-                          result:
-                            type: array
-                            items:
-                              oneOf:
-                                - type: string
-                                - type: number
+                          result: {}
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
@@ -12695,9 +12537,7 @@ paths:
                   - allOf:
                       - type: object
                         properties:
-                          result:
-                            type: string
-                            title: '@throws Exception'
+                          result: {}
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
