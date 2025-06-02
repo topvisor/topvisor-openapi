@@ -675,7 +675,6 @@
                                                     "type": "object",
                                                     "properties": {
                                                         "result": {
-                                                            "type": "integer",
                                                             "title": "@throws Exception"
                                                         }
                                                     },

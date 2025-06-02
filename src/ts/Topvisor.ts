@@ -6905,7 +6905,7 @@ export interface operations {
                 content: {
                     "application/json": ({
                         /** @throws Exception */
-                        result: number;
+                        result: unknown;
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };

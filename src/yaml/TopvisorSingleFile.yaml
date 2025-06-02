@@ -528,7 +528,6 @@ paths:
                       - type: object
                         properties:
                           result:
-                            type: integer
                             title: '@throws Exception'
                         required:
                           - result
