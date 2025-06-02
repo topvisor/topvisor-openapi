@@ -4704,7 +4704,8 @@
                                                     "type": "object",
                                                     "properties": {
                                                         "result": {
-                                                            "type": "string"
+                                                            "type": "string",
+                                                            "title": "@throws Exception"
                                                         }
                                                     },
                                                     "required": [
@@ -4766,7 +4767,8 @@
                                                     "type": "object",
                                                     "properties": {
                                                         "result": {
-                                                            "type": "string"
+                                                            "type": "string",
+                                                            "title": "@throws Exception"
                                                         }
                                                     },
                                                     "required": [

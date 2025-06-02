@@ -2707,6 +2707,7 @@ paths:
                         properties:
                           result:
                             type: string
+                            title: '@throws Exception'
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
@@ -2740,6 +2741,7 @@ paths:
                         properties:
                           result:
                             type: string
+                            title: '@throws Exception'
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'

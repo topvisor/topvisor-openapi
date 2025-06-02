@@ -8432,6 +8432,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
+                        /** @throws Exception */
                         result: string;
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: import('./Models/Pages.ts').components['schemas']['Models.Pages'];
@@ -8458,6 +8459,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
+                        /** @throws Exception */
                         result: string;
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: import('./Models/Pages.ts').components['schemas']['Models.Pages'];
