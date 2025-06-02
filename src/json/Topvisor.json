@@ -6307,11 +6307,6 @@
                                                     "type": "object",
                                                     "properties": {
                                                         "result": {
-                                                            "type": "array",
-                                                            "items": {
-                                                                "$ref": "Models/Keywords.json#/components/schemas/Models.Keywords",
-                                                                "description": "Only for typescript, does not contain real data"
-                                                            },
                                                             "title": "@throws Exception"
                                                         }
                                                     },
