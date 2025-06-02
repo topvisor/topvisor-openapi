@@ -674,7 +674,10 @@
                                                 {
                                                     "type": "object",
                                                     "properties": {
-                                                        "result": {}
+                                                        "result": {
+                                                            "type": "integer",
+                                                            "title": "@throws Exception"
+                                                        }
                                                     },
                                                     "required": [
                                                         "result"
@@ -730,7 +733,14 @@
                                                 {
                                                     "type": "object",
                                                     "properties": {
-                                                        "result": {}
+                                                        "result": {
+                                                            "type": "array",
+                                                            "items": {
+                                                                "$ref": "Models/Payments.json#/components/schemas/Models.Payments",
+                                                                "description": "Only for typescript, does not contain real data"
+                                                            },
+                                                            "title": "@throws Exception"
+                                                        }
                                                     },
                                                     "required": [
                                                         "result"
@@ -906,7 +916,10 @@
                                                 {
                                                     "type": "object",
                                                     "properties": {
-                                                        "result": {}
+                                                        "result": {
+                                                            "type": "integer",
+                                                            "title": "@throws Exception"
+                                                        }
                                                     },
                                                     "required": [
                                                         "result"
@@ -1395,7 +1408,12 @@
                                                     "type": "object",
                                                     "properties": {
                                                         "result": {
-                                                            "title": "Список urls проекта"
+                                                            "type": "array",
+                                                            "items": {
+                                                                "$ref": "Models/Urls.json#/components/schemas/Models.Urls",
+                                                                "description": "Only for typescript, does not contain real data"
+                                                            },
+                                                            "title": "@throws Exception"
                                                         }
                                                     },
                                                     "required": [
@@ -2134,7 +2152,14 @@
                                                 {
                                                     "type": "object",
                                                     "properties": {
-                                                        "result": {}
+                                                        "result": {
+                                                            "type": "array",
+                                                            "items": {
+                                                                "$ref": "Models/Admin/Staff.json#/components/schemas/Models.Admin.Staff",
+                                                                "description": "Only for typescript, does not contain real data"
+                                                            },
+                                                            "title": "@throws Exception"
+                                                        }
                                                     },
                                                     "required": [
                                                         "result"
@@ -2320,7 +2345,10 @@
                                                 {
                                                     "type": "object",
                                                     "properties": {
-                                                        "result": {}
+                                                        "result": {
+                                                            "type": "integer",
+                                                            "title": "@throws Exception"
+                                                        }
                                                     },
                                                     "required": [
                                                         "result"
@@ -2377,7 +2405,14 @@
                                                 {
                                                     "type": "object",
                                                     "properties": {
-                                                        "result": {}
+                                                        "result": {
+                                                            "type": "array",
+                                                            "items": {
+                                                                "$ref": "Models/Admin/Users.json#/components/schemas/Models.Admin.Users",
+                                                                "description": "Only for typescript, does not contain real data"
+                                                            },
+                                                            "title": "@throws Exception"
+                                                        }
                                                     },
                                                     "required": [
                                                         "result"
@@ -2568,7 +2603,19 @@
                                                 {
                                                     "type": "object",
                                                     "properties": {
-                                                        "result": {}
+                                                        "result": {
+                                                            "type": "array",
+                                                            "items": {
+                                                                "oneOf": [
+                                                                    {
+                                                                        "type": "string"
+                                                                    },
+                                                                    {
+                                                                        "type": "number"
+                                                                    }
+                                                                ]
+                                                            }
+                                                        }
                                                     },
                                                     "required": [
                                                         "result"
@@ -3008,7 +3055,19 @@
                                                 {
                                                     "type": "object",
                                                     "properties": {
-                                                        "result": {}
+                                                        "result": {
+                                                            "type": "array",
+                                                            "items": {
+                                                                "oneOf": [
+                                                                    {
+                                                                        "type": "string"
+                                                                    },
+                                                                    {
+                                                                        "type": "number"
+                                                                    }
+                                                                ]
+                                                            }
+                                                        }
                                                     },
                                                     "required": [
                                                         "result"
@@ -3064,7 +3123,14 @@
                                                 {
                                                     "type": "object",
                                                     "properties": {
-                                                        "result": {}
+                                                        "result": {
+                                                            "type": "array",
+                                                            "items": {
+                                                                "$ref": "Models/BalanceHistory.json#/components/schemas/Models.BalanceHistory",
+                                                                "description": "Only for typescript, does not contain real data"
+                                                            },
+                                                            "title": "@throws Exception"
+                                                        }
                                                     },
                                                     "required": [
                                                         "result"
@@ -3251,7 +3317,10 @@
                                                 {
                                                     "type": "object",
                                                     "properties": {
-                                                        "result": {}
+                                                        "result": {
+                                                            "type": "integer",
+                                                            "title": "@throws Exception"
+                                                        }
                                                     },
                                                     "required": [
                                                         "result"
@@ -3307,7 +3376,10 @@
                                                 {
                                                     "type": "object",
                                                     "properties": {
-                                                        "result": {}
+                                                        "result": {
+                                                            "type": "integer",
+                                                            "title": "@throws Exception"
+                                                        }
                                                     },
                                                     "required": [
                                                         "result"
@@ -3363,7 +3435,14 @@
                                                 {
                                                     "type": "object",
                                                     "properties": {
-                                                        "result": {}
+                                                        "result": {
+                                                            "type": "array",
+                                                            "items": {
+                                                                "$ref": "Models/Requisites.json#/components/schemas/Models.Requisites",
+                                                                "description": "Only for typescript, does not contain real data"
+                                                            },
+                                                            "title": "@throws Exception"
+                                                        }
                                                     },
                                                     "required": [
                                                         "result"
@@ -4416,7 +4495,14 @@
                                                 {
                                                     "type": "object",
                                                     "properties": {
-                                                        "result": {}
+                                                        "result": {
+                                                            "type": "array",
+                                                            "items": {
+                                                                "$ref": "Models/Content/Authors.json#/components/schemas/Models.Content.Authors",
+                                                                "description": "Only for typescript, does not contain real data"
+                                                            },
+                                                            "title": "@throws Exception"
+                                                        }
                                                     },
                                                     "required": [
                                                         "result"
@@ -6220,7 +6306,14 @@
                                                 {
                                                     "type": "object",
                                                     "properties": {
-                                                        "result": {}
+                                                        "result": {
+                                                            "type": "array",
+                                                            "items": {
+                                                                "$ref": "Models/Keywords.json#/components/schemas/Models.Keywords",
+                                                                "description": "Only for typescript, does not contain real data"
+                                                            },
+                                                            "title": "@throws Exception"
+                                                        }
                                                     },
                                                     "required": [
                                                         "result"
@@ -6745,7 +6838,10 @@
                                                 {
                                                     "type": "object",
                                                     "properties": {
-                                                        "result": {}
+                                                        "result": {
+                                                            "type": "integer",
+                                                            "title": "@throws Exception"
+                                                        }
                                                     },
                                                     "required": [
                                                         "result"
@@ -6801,7 +6897,10 @@
                                                 {
                                                     "type": "object",
                                                     "properties": {
-                                                        "result": {}
+                                                        "result": {
+                                                            "type": "integer",
+                                                            "title": "@throws Exception"
+                                                        }
                                                     },
                                                     "required": [
                                                         "result"
@@ -6857,7 +6956,10 @@
                                                 {
                                                     "type": "object",
                                                     "properties": {
-                                                        "result": {}
+                                                        "result": {
+                                                            "type": "integer",
+                                                            "title": "@throws Exception"
+                                                        }
                                                     },
                                                     "required": [
                                                         "result"
@@ -7467,7 +7569,14 @@
                                                 {
                                                     "type": "object",
                                                     "properties": {
-                                                        "result": {}
+                                                        "result": {
+                                                            "type": "array",
+                                                            "items": {
+                                                                "$ref": "Models/Projects/Folders.json#/components/schemas/Models.Projects.Folders",
+                                                                "description": "Only for typescript, does not contain real data"
+                                                            },
+                                                            "title": "@throws Exception"
+                                                        }
                                                     },
                                                     "required": [
                                                         "result"
@@ -7527,7 +7636,10 @@
                                                 {
                                                     "type": "object",
                                                     "properties": {
-                                                        "result": {}
+                                                        "result": {
+                                                            "type": "integer",
+                                                            "title": "@throws Exception"
+                                                        }
                                                     },
                                                     "required": [
                                                         "result"
@@ -7953,7 +8065,14 @@
                                                 {
                                                     "type": "object",
                                                     "properties": {
-                                                        "result": {}
+                                                        "result": {
+                                                            "type": "array",
+                                                            "items": {
+                                                                "$ref": "Models/Projects.json#/components/schemas/Models.Projects",
+                                                                "description": "Only for typescript, does not contain real data"
+                                                            },
+                                                            "title": "@throws Exception"
+                                                        }
                                                     },
                                                     "required": [
                                                         "result"
@@ -8013,7 +8132,10 @@
                                                 {
                                                     "type": "object",
                                                     "properties": {
-                                                        "result": {}
+                                                        "result": {
+                                                            "type": "integer",
+                                                            "title": "@throws Exception"
+                                                        }
                                                     },
                                                     "required": [
                                                         "result"
@@ -8069,7 +8191,19 @@
                                                 {
                                                     "type": "object",
                                                     "properties": {
-                                                        "result": {}
+                                                        "result": {
+                                                            "type": "array",
+                                                            "items": {
+                                                                "oneOf": [
+                                                                    {
+                                                                        "type": "string"
+                                                                    },
+                                                                    {
+                                                                        "type": "number"
+                                                                    }
+                                                                ]
+                                                            }
+                                                        }
                                                     },
                                                     "required": [
                                                         "result"
@@ -9198,7 +9332,14 @@
                                                 {
                                                     "type": "object",
                                                     "properties": {
-                                                        "result": {}
+                                                        "result": {
+                                                            "type": "array",
+                                                            "items": {
+                                                                "$ref": "Models/Admin/Accounting/Counteragents.json#/components/schemas/Models.Admin.Accounting.Counteragents",
+                                                                "description": "Only for typescript, does not contain real data"
+                                                            },
+                                                            "title": "@throws Exception"
+                                                        }
                                                     },
                                                     "required": [
                                                         "result"
@@ -9498,7 +9639,14 @@
                                                 {
                                                     "type": "object",
                                                     "properties": {
-                                                        "result": {}
+                                                        "result": {
+                                                            "type": "array",
+                                                            "items": {
+                                                                "$ref": "Models/Admin/Invoices.json#/components/schemas/Models.Admin.Invoices",
+                                                                "description": "Only for typescript, does not contain real data"
+                                                            },
+                                                            "title": "@throws Exception"
+                                                        }
                                                     },
                                                     "required": [
                                                         "result"
@@ -9558,7 +9706,14 @@
                                                 {
                                                     "type": "object",
                                                     "properties": {
-                                                        "result": {}
+                                                        "result": {
+                                                            "type": "array",
+                                                            "items": {
+                                                                "$ref": "Models/EmptyModel.json#/components/schemas/Models.EmptyModel",
+                                                                "description": "Only for typescript, does not contain real data"
+                                                            },
+                                                            "title": "@throws Exception"
+                                                        }
                                                     },
                                                     "required": [
                                                         "result"
@@ -10569,7 +10724,14 @@
                                                 {
                                                     "type": "object",
                                                     "properties": {
-                                                        "result": {}
+                                                        "result": {
+                                                            "type": "array",
+                                                            "items": {
+                                                                "$ref": "Models/Analytics/Events.json#/components/schemas/Models.Analytics.Events",
+                                                                "description": "Only for typescript, does not contain real data"
+                                                            },
+                                                            "title": "@throws Exception"
+                                                        }
                                                     },
                                                     "required": [
                                                         "result"
@@ -11102,7 +11264,14 @@
                                                 {
                                                     "type": "object",
                                                     "properties": {
-                                                        "result": {}
+                                                        "result": {
+                                                            "type": "array",
+                                                            "items": {
+                                                                "$ref": "Models/Analytics/RanksUsers.json#/components/schemas/Models.Analytics.RanksUsers",
+                                                                "description": "Only for typescript, does not contain real data"
+                                                            },
+                                                            "title": "@throws Exception"
+                                                        }
                                                     },
                                                     "required": [
                                                         "result"
@@ -12055,7 +12224,12 @@
                                                     "type": "object",
                                                     "properties": {
                                                         "result": {
-                                                            "title": "Список выполненных (выполняемых) проверок аудита"
+                                                            "type": "array",
+                                                            "items": {
+                                                                "$ref": "Models/Audit/Checks.json#/components/schemas/Models.Audit.Checks",
+                                                                "description": "Only for typescript, does not contain real data"
+                                                            },
+                                                            "title": "@throws Exception"
                                                         }
                                                     },
                                                     "required": [
@@ -13353,7 +13527,9 @@
                                                 {
                                                     "type": "object",
                                                     "properties": {
-                                                        "result": {}
+                                                        "result": {
+                                                            "type": "integer"
+                                                        }
                                                     },
                                                     "required": [
                                                         "result"
@@ -13441,7 +13617,9 @@
                                                 {
                                                     "type": "object",
                                                     "properties": {
-                                                        "result": {}
+                                                        "result": {
+                                                            "type": "string"
+                                                        }
                                                     },
                                                     "required": [
                                                         "result"
@@ -14196,7 +14374,13 @@
                                                 {
                                                     "type": "object",
                                                     "properties": {
-                                                        "result": {}
+                                                        "result": {
+                                                            "type": "array",
+                                                            "items": {
+                                                                "$ref": "Models/Apometr/Keywords.json#/components/schemas/Models.Apometr.Keywords",
+                                                                "description": "Only for typescript, does not contain real data"
+                                                            }
+                                                        }
                                                     },
                                                     "required": [
                                                         "result"
@@ -14256,7 +14440,19 @@
                                                 {
                                                     "type": "object",
                                                     "properties": {
-                                                        "result": {}
+                                                        "result": {
+                                                            "type": "array",
+                                                            "items": {
+                                                                "oneOf": [
+                                                                    {
+                                                                        "type": "string"
+                                                                    },
+                                                                    {
+                                                                        "type": "number"
+                                                                    }
+                                                                ]
+                                                            }
+                                                        }
                                                     },
                                                     "required": [
                                                         "result"
@@ -15627,7 +15823,10 @@
                                                 {
                                                     "type": "object",
                                                     "properties": {
-                                                        "result": {}
+                                                        "result": {
+                                                            "type": "integer",
+                                                            "title": "@throws Exception"
+                                                        }
                                                     },
                                                     "required": [
                                                         "result"
@@ -15683,7 +15882,10 @@
                                                 {
                                                     "type": "object",
                                                     "properties": {
-                                                        "result": {}
+                                                        "result": {
+                                                            "type": "integer",
+                                                            "title": "@throws Exception"
+                                                        }
                                                     },
                                                     "required": [
                                                         "result"
@@ -15739,7 +15941,10 @@
                                                 {
                                                     "type": "object",
                                                     "properties": {
-                                                        "result": {}
+                                                        "result": {
+                                                            "type": "integer",
+                                                            "title": "@throws Exception"
+                                                        }
                                                     },
                                                     "required": [
                                                         "result"
@@ -15853,7 +16058,10 @@
                                                 {
                                                     "type": "object",
                                                     "properties": {
-                                                        "result": {}
+                                                        "result": {
+                                                            "type": "integer",
+                                                            "title": "@throws Exception"
+                                                        }
                                                     },
                                                     "required": [
                                                         "result"
@@ -16151,7 +16359,10 @@
                                                 {
                                                     "type": "object",
                                                     "properties": {
-                                                        "result": {}
+                                                        "result": {
+                                                            "type": "integer",
+                                                            "title": "@throws Exception"
+                                                        }
                                                     },
                                                     "required": [
                                                         "result"
@@ -16207,7 +16418,10 @@
                                                 {
                                                     "type": "object",
                                                     "properties": {
-                                                        "result": {}
+                                                        "result": {
+                                                            "type": "integer",
+                                                            "title": "@throws Exception"
+                                                        }
                                                     },
                                                     "required": [
                                                         "result"
@@ -16263,7 +16477,9 @@
                                                 {
                                                     "type": "object",
                                                     "properties": {
-                                                        "result": {}
+                                                        "result": {
+                                                            "type": "integer"
+                                                        }
                                                     },
                                                     "required": [
                                                         "result"
@@ -17154,7 +17370,10 @@
                                                 {
                                                     "type": "object",
                                                     "properties": {
-                                                        "result": {}
+                                                        "result": {
+                                                            "type": "integer",
+                                                            "title": "@throws Exception"
+                                                        }
                                                     },
                                                     "required": [
                                                         "result"
@@ -18063,7 +18282,9 @@
                                                 {
                                                     "type": "object",
                                                     "properties": {
-                                                        "result": {}
+                                                        "result": {
+                                                            "type": "integer"
+                                                        }
                                                     },
                                                     "required": [
                                                         "result"
@@ -18237,7 +18458,10 @@
                                                 {
                                                     "type": "object",
                                                     "properties": {
-                                                        "result": {}
+                                                        "result": {
+                                                            "type": "integer",
+                                                            "title": "@throws Exception"
+                                                        }
                                                     },
                                                     "required": [
                                                         "result"
@@ -18293,7 +18517,10 @@
                                                 {
                                                     "type": "object",
                                                     "properties": {
-                                                        "result": {}
+                                                        "result": {
+                                                            "type": "integer",
+                                                            "title": "@throws Exception"
+                                                        }
                                                     },
                                                     "required": [
                                                         "result"
@@ -18349,7 +18576,10 @@
                                                 {
                                                     "type": "object",
                                                     "properties": {
-                                                        "result": {}
+                                                        "result": {
+                                                            "type": "integer",
+                                                            "title": "@throws Exception"
+                                                        }
                                                     },
                                                     "required": [
                                                         "result"
@@ -18438,7 +18668,9 @@
                                                 {
                                                     "type": "object",
                                                     "properties": {
-                                                        "result": {}
+                                                        "result": {
+                                                            "type": "integer"
+                                                        }
                                                     },
                                                     "required": [
                                                         "result"
@@ -21936,7 +22168,19 @@
                                                 {
                                                     "type": "object",
                                                     "properties": {
-                                                        "result": {}
+                                                        "result": {
+                                                            "type": "array",
+                                                            "items": {
+                                                                "oneOf": [
+                                                                    {
+                                                                        "type": "string"
+                                                                    },
+                                                                    {
+                                                                        "type": "number"
+                                                                    }
+                                                                ]
+                                                            }
+                                                        }
                                                     },
                                                     "required": [
                                                         "result"
@@ -22192,7 +22436,19 @@
                                                 {
                                                     "type": "object",
                                                     "properties": {
-                                                        "result": {}
+                                                        "result": {
+                                                            "type": "array",
+                                                            "items": {
+                                                                "oneOf": [
+                                                                    {
+                                                                        "type": "string"
+                                                                    },
+                                                                    {
+                                                                        "type": "number"
+                                                                    }
+                                                                ]
+                                                            }
+                                                        }
                                                     },
                                                     "required": [
                                                         "result"
@@ -22249,6 +22505,17 @@
                                                     "type": "object",
                                                     "properties": {
                                                         "result": {
+                                                            "type": "array",
+                                                            "items": {
+                                                                "oneOf": [
+                                                                    {
+                                                                        "type": "string"
+                                                                    },
+                                                                    {
+                                                                        "type": "number"
+                                                                    }
+                                                                ]
+                                                            },
                                                             "title": "@return array{pricesByUsers: array<string, array{price: float, priceOriginal: float, qualifiers: array{region_key: int, searcher_key: (0 | 1 | 5 | 100 | 101 | 102 | 104 | 105 | 106), region_lang?: (string | null), also_searched?: (int | null), depth?: (int | null), hint_depth: (1 | 2 | 3), hint_generators: array<('letter' | 'letter_ru' | 'number' | 'space')>}, comment: string}>}"
                                                         }
                                                     },
@@ -22396,7 +22663,10 @@
                                                 {
                                                     "type": "object",
                                                     "properties": {
-                                                        "result": {}
+                                                        "result": {
+                                                            "type": "integer",
+                                                            "title": "@throws Exception"
+                                                        }
                                                     },
                                                     "required": [
                                                         "result"
@@ -22510,7 +22780,10 @@
                                                 {
                                                     "type": "object",
                                                     "properties": {
-                                                        "result": {}
+                                                        "result": {
+                                                            "type": "integer",
+                                                            "title": "@throws Exception"
+                                                        }
                                                     },
                                                     "required": [
                                                         "result"
@@ -22686,7 +22959,19 @@
                                                 {
                                                     "type": "object",
                                                     "properties": {
-                                                        "result": {}
+                                                        "result": {
+                                                            "type": "array",
+                                                            "items": {
+                                                                "oneOf": [
+                                                                    {
+                                                                        "type": "string"
+                                                                    },
+                                                                    {
+                                                                        "type": "number"
+                                                                    }
+                                                                ]
+                                                            }
+                                                        }
                                                     },
                                                     "required": [
                                                         "result"
@@ -22742,7 +23027,10 @@
                                                 {
                                                     "type": "object",
                                                     "properties": {
-                                                        "result": {}
+                                                        "result": {
+                                                            "type": "string",
+                                                            "title": "@throws Exception"
+                                                        }
                                                     },
                                                     "required": [
                                                         "result"
