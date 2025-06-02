@@ -669,8 +669,6 @@ export interface components {
             /** @constant */
             readonly TOTAL: "TOTAL";
             /** @constant */
-            readonly Yandex_update: "Yandex update";
-            /** @constant */
             readonly "\u0441ode": "code";
             /** @constant */
             readonly Thank_you: "Thank you!";
@@ -844,14 +842,6 @@ export interface components {
             readonly Project_dynamics: "Keyword dynamics";
             /** @constant */
             readonly Apometr: "Updates";
-            /** @constant */
-            readonly Apometr_title: "Google and Yandex SERP tracking tool";
-            /** @constant */
-            readonly Apometr_description: "Google and Yandex updates calendar (SERP updates and changes). Get SERP updates alerts. SERP updates score for different locations and content types.";
-            /** @constant */
-            readonly Apometr_og_title: "Google and Yandex SERP updates";
-            /** @constant */
-            readonly Apometr_og_description: "SERP updates score for different locations and content types.";
             /** @constant */
             readonly Apometr_notice: "Get update alerts";
             /** @constant */

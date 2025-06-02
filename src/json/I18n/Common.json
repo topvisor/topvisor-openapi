@@ -1330,10 +1330,6 @@
                         "const": "TOTAL",
                         "readOnly": true
                     },
-                    "Yandex_update": {
-                        "const": "Yandex update",
-                        "readOnly": true
-                    },
                     "сode": {
                         "const": "code",
                         "readOnly": true
@@ -1680,22 +1676,6 @@
                     },
                     "Apometr": {
                         "const": "Updates",
-                        "readOnly": true
-                    },
-                    "Apometr_title": {
-                        "const": "Google and Yandex SERP tracking tool",
-                        "readOnly": true
-                    },
-                    "Apometr_description": {
-                        "const": "Google and Yandex updates calendar (SERP updates and changes). Get SERP updates alerts. SERP updates score for different locations and content types.",
-                        "readOnly": true
-                    },
-                    "Apometr_og_title": {
-                        "const": "Google and Yandex SERP updates",
-                        "readOnly": true
-                    },
-                    "Apometr_og_description": {
-                        "const": "SERP updates score for different locations and content types.",
                         "readOnly": true
                     },
                     "Apometr_notice": {
@@ -2239,7 +2219,6 @@
                     "Year",
                     "Total",
                     "TOTAL",
-                    "Yandex_update",
                     "сode",
                     "Thank_you",
                     "Thank_you_for_using_our_tools",
@@ -2327,10 +2306,6 @@
                     "Project_analytics",
                     "Project_dynamics",
                     "Apometr",
-                    "Apometr_title",
-                    "Apometr_description",
-                    "Apometr_og_title",
-                    "Apometr_og_description",
                     "Apometr_notice",
                     "Pricing_title",
                     "Profile_title",

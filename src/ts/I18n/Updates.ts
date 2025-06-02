@@ -9,8 +9,6 @@ export interface components {
     schemas: {
         "I18n.Updates": {
             /** @constant */
-            readonly SERP_update_score: "SERP update score";
-            /** @constant */
             readonly confirmed_Yandex: "update confirmed by Yandex";
             /** @constant */
             readonly Calendar: "updates calendar";
@@ -40,14 +38,6 @@ export interface components {
             readonly Update: "Update";
             /** @constant */
             readonly Updates_calendar: "Updates calendar";
-            /** @constant */
-            readonly Yandex_update: "Yandex update";
-            /** @constant */
-            readonly Yandex_text_update: "Yandex text update";
-            /** @constant */
-            readonly Yandex_SERP_update: "Yandex SERP update";
-            /** @constant */
-            readonly Index_updated_on: "Index updated on";
             /** @constant */
             readonly of_Yandex: "Yandex";
             /** @constant */

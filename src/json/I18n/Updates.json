@@ -10,10 +10,6 @@
             "I18n.Updates": {
                 "type": "object",
                 "properties": {
-                    "SERP_update_score": {
-                        "const": "SERP update score",
-                        "readOnly": true
-                    },
                     "confirmed_Yandex": {
                         "const": "update confirmed by Yandex",
                         "readOnly": true
@@ -72,22 +68,6 @@
                     },
                     "Updates_calendar": {
                         "const": "Updates calendar",
-                        "readOnly": true
-                    },
-                    "Yandex_update": {
-                        "const": "Yandex update",
-                        "readOnly": true
-                    },
-                    "Yandex_text_update": {
-                        "const": "Yandex text update",
-                        "readOnly": true
-                    },
-                    "Yandex_SERP_update": {
-                        "const": "Yandex SERP update",
-                        "readOnly": true
-                    },
-                    "Index_updated_on": {
-                        "const": "Index updated on",
                         "readOnly": true
                     },
                     "of_Yandex": {
@@ -204,7 +184,6 @@
                     }
                 },
                 "required": [
-                    "SERP_update_score",
                     "confirmed_Yandex",
                     "Calendar",
                     "Informer",
@@ -220,10 +199,6 @@
                     "points",
                     "Update",
                     "Updates_calendar",
-                    "Yandex_update",
-                    "Yandex_text_update",
-                    "Yandex_SERP_update",
-                    "Index_updated_on",
                     "of_Yandex",
                     "All_categories",
                     "Auto_moto",
