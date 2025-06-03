@@ -10537,6 +10537,37 @@ paths:
             model:
               schema:
                 type: 'null'
+  /edit/admin_2/actions/regions/commitGoogle/:
+    post:
+      operationId: EditAdmin2ActionsRegionsCommitGoogle
+      tags:
+        - Admin_2
+      summary: Добавить регионы Google в сервис
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Admin_2.Methods.Actions.Regions.CommitGoogle.Edit'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            $ref: '#/components/schemas/Admin_2.Objects.Actions.Result'
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
   /edit/admin_2/actions/regions/updateGoogle/:
     post:
       operationId: EditAdmin2ActionsRegionsUpdateGoogle
@@ -24574,6 +24605,31 @@ components:
         - needRenameProject
         - test
       title: Изменение домена проекта
+    Admin_2.Methods.Actions.Regions.CommitGoogle.Edit:
+      type: object
+      properties:
+        regions:
+          title: |-
+            Список регионов в формате:
+
+            - Яндекс lr, укажите 0, если региона в Яндексе нет
+            - Criteria ID: id региона в google
+            - coords: координаты
+            - name_ru: имя региона
+            - areaName_ru: имя родительского региона, обычно это область
+          description: '@type array<array{lr: int, criteriaId: int, coords: string, name_ru: string, areaName_ru: string}>'
+          type: array
+          items:
+            oneOf:
+              - type: string
+              - type: number
+        test:
+          title: Являеется ли запуск - тестом
+          type: boolean
+      required:
+        - regions
+        - test
+      title: Добавить регионы Google в сервис
     Admin_2.Methods.Actions.Regions.UpdateGoogle.Edit:
       type: object
       properties:

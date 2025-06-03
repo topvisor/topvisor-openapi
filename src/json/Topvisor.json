@@ -19042,6 +19042,64 @@
                 }
             }
         },
+        "/edit/admin_2/actions/regions/commitGoogle/": {
+            "post": {
+                "operationId": "EditAdmin2ActionsRegionsCommitGoogle",
+                "tags": [
+                    "Admin_2"
+                ],
+                "summary": "Добавить регионы Google в сервис",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Admin_2/Methods/Actions/Regions/CommitGoogle/Edit.json#/components/schemas/Admin_2.Methods.Actions.Regions.CommitGoogle.Edit"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "oneOf": [
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "$ref": "Admin_2/Objects/Actions/Result.json#/components/schemas/Admin_2.Objects.Actions.Result"
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "result"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
+                                        }
+                                    ]
+                                }
+                            },
+                            "model": {
+                                "schema": {
+                                    "type": "null"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
         "/edit/admin_2/actions/regions/updateGoogle/": {
             "post": {
                 "operationId": "EditAdmin2ActionsRegionsUpdateGoogle",
