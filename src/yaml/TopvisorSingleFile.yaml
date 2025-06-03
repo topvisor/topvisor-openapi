@@ -4733,12 +4733,7 @@ paths:
                   - allOf:
                       - type: object
                         properties:
-                          result:
-                            type: array
-                            items:
-                              oneOf:
-                                - type: string
-                                - type: number
+                          result: {}
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
