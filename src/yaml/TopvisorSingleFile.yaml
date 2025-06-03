@@ -4606,6 +4606,70 @@ paths:
             model:
               schema:
                 type: 'null'
+  /get/sms_2/checkPIN/:
+    post:
+      operationId: GetSms2CheckPIN
+      tags:
+        - Sms_2
+      summary: Проверить код для подтверждения действия
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Sms_2.Methods.CheckPIN.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            type: string
+                            title: '@throws Exception'
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
+  /get/sms_2/sendPIN/:
+    post:
+      operationId: GetSms2SendPIN
+      tags:
+        - Sms_2
+      summary: Отправить код для подтверждения действия
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Sms_2.Methods.SendPIN.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            type: boolean
+                            title: '@throws Exception'
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
   /get/templates_2/availableFieldsData/:
     post:
       operationId: GetTemplates2AvailableFieldsData
@@ -19046,6 +19110,28 @@ components:
       properties: {}
       required: []
       title: Получение привязанных карт пользователя
+    Sms_2.Methods.CheckPIN.Get:
+      type: object
+      properties:
+        pin:
+          title: Код подтверждения
+          type: string
+        phones:
+          title: Телефон/массив или строка(через запятую) телефонов, на которые надо отправить код подтверждения
+          description: '@type string | array'
+          nullable: true
+      required:
+        - pin
+      title: Проверить код для подтверждения действия
+    Sms_2.Methods.SendPIN.Get:
+      type: object
+      properties:
+        phones:
+          title: Телефон/массив или строка(через запятую) телефонов, на которые надо отправить код подтверждения
+          description: '@type string | array'
+          nullable: true
+      required: []
+      title: Отправить код для подтверждения действия
     Templates_2.Methods.AvailableFieldsData.Get:
       type: object
       properties:

@@ -1,0 +1,30 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Sms_2.Methods.CheckPIN.Get",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Sms_2.Methods.CheckPIN.Get": {
+                "type": "object",
+                "properties": {
+                    "pin": {
+                        "title": "Код подтверждения",
+                        "type": "string"
+                    },
+                    "phones": {
+                        "title": "Телефон/массив или строка(через запятую) телефонов, на которые надо отправить код подтверждения",
+                        "description": "@type string | array",
+                        "nullable": true
+                    }
+                },
+                "required": [
+                    "pin"
+                ],
+                "title": "Проверить код для подтверждения действия"
+            }
+        }
+    }
+}
