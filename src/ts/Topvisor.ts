@@ -10306,7 +10306,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: import('./stdClass.ts').components['schemas']['stdClass'];
+                        result: (string | number)[];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };

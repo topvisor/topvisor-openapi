@@ -4734,7 +4734,11 @@ paths:
                       - type: object
                         properties:
                           result:
-                            $ref: '#/components/schemas/stdClass'
+                            type: array
+                            items:
+                              oneOf:
+                                - type: string
+                                - type: number
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
