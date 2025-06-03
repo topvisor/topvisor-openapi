@@ -3361,6 +3361,36 @@ paths:
             model:
               schema:
                 type: 'null'
+  /get/example_2/bag/:
+    post:
+      operationId: GetExample2Bag
+      tags:
+        - Example_2
+      summary: 'TODO: удалить после закрытия задачи #28444'
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Example_2.Methods.Bag.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result: {}
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
   /get/example_2/custom/:
     post:
       operationId: GetExample2Custom
@@ -17643,6 +17673,14 @@ components:
         - booleans
         - enum_numbers
       title: Метод с примерами параметров типа Enum
+    Example_2.Methods.Bag.Get:
+      type: object
+      properties:
+        type:
+          nullable: true
+          type: integer
+      required: []
+      title: 'TODO: удалить после закрытия задачи #28444'
     Example_2.Methods.Custom.Get:
       type: object
       properties:
