@@ -9573,6 +9573,38 @@ paths:
             model:
               schema:
                 type: 'null'
+  /edit/reports_2/positions/sendTest/:
+    post:
+      operationId: EditReports2PositionsSendTest
+      tags:
+        - Reports_2
+      summary: Отправить тестовый отчет
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Reports_2.Methods.Positions.SendTest.Edit'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            type: integer
+                            title: '@throws Exception'
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
   /del/tickets_2/admin/message/:
     post:
       operationId: DelTickets2AdminMessage
@@ -10456,6 +10488,38 @@ paths:
           application/json:
             schema:
               $ref: '#/components/schemas/Admin_2.Methods.Actions.Projects.Domain.Edit'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            $ref: '#/components/schemas/Admin_2.Objects.Actions.Result'
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
+  /edit/admin_2/actions/regions/updateGoogle/:
+    post:
+      operationId: EditAdmin2ActionsRegionsUpdateGoogle
+      tags:
+        - Admin_2
+      summary: Обновление регионов Google
+      description: '@see https://developers.google.com/google-ads/api/data/geotargets'
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Admin_2.Methods.Actions.Regions.UpdateGoogle.Edit'
         required: true
       responses:
         '200':
@@ -23931,6 +23995,15 @@ components:
       properties: {}
       required: []
       title: Получить список групп с пользователями
+    Reports_2.Methods.Positions.SendTest.Edit:
+      type: object
+      properties:
+        project_id:
+          title: Id проекта, по которому необходимо отправить тестовый отчет
+          type: integer
+      required:
+        - project_id
+      title: Отправить тестовый отчет
     Tickets_2.Methods.Admin.Message.Del:
       type: object
       properties:
@@ -24464,6 +24537,16 @@ components:
         - needRenameProject
         - test
       title: Изменение домена проекта
+    Admin_2.Methods.Actions.Regions.UpdateGoogle.Edit:
+      type: object
+      properties:
+        test:
+          title: Являеется ли запуск - тестом
+          type: boolean
+      required:
+        - test
+      title: Обновление регионов Google
+      description: '@see https://developers.google.com/google-ads/api/data/geotargets'
     Admin_2.Methods.Actions.Robot.Checks.Edit:
       type: object
       properties:

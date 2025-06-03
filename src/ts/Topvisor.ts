@@ -4965,6 +4965,23 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
+    /** Отправить тестовый отчет */
+    "/edit/reports_2/positions/sendTest/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["EditReports2PositionsSendTest"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
     /** Удаление ответа в тикете, только для админов */
     "/del/tickets_2/admin/message/": {
         parameters: {
@@ -5458,6 +5475,26 @@ export interface paths {
         get?: never;
         put?: never;
         post: operations["EditAdmin2ActionsProjectsDomain"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /**
+     * Обновление регионов Google
+     * @description @see https://developers.google.com/google-ads/api/data/geotargets
+     */
+    "/edit/admin_2/actions/regions/updateGoogle/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["EditAdmin2ActionsRegionsUpdateGoogle"];
         delete?: never;
         options?: never;
         head?: never;
@@ -14104,6 +14141,33 @@ export interface operations {
             };
         };
     };
+    EditReports2PositionsSendTest: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Reports_2/Methods/Positions/SendTest/Edit.ts').components['schemas']['Reports_2.Methods.Positions.SendTest.Edit'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        /** @throws Exception */
+                        result: number;
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: null;
+                };
+            };
+        };
+    };
     DelTickets2AdminMessage: {
         parameters: {
             query?: never;
@@ -14841,6 +14905,32 @@ export interface operations {
         requestBody: {
             content: {
                 "application/json": import('./Admin_2/Methods/Actions/Projects/Domain/Edit.ts').components['schemas']['Admin_2.Methods.Actions.Projects.Domain.Edit'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./Admin_2/Objects/Actions/Result.ts').components['schemas']['Admin_2.Objects.Actions.Result'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: null;
+                };
+            };
+        };
+    };
+    EditAdmin2ActionsRegionsUpdateGoogle: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Admin_2/Methods/Actions/Regions/UpdateGoogle/Edit.ts').components['schemas']['Admin_2.Methods.Actions.Regions.UpdateGoogle.Edit'];
             };
         };
         responses: {

@@ -17250,6 +17250,65 @@
                 }
             }
         },
+        "/edit/reports_2/positions/sendTest/": {
+            "post": {
+                "operationId": "EditReports2PositionsSendTest",
+                "tags": [
+                    "Reports_2"
+                ],
+                "summary": "Отправить тестовый отчет",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Reports_2/Methods/Positions/SendTest/Edit.json#/components/schemas/Reports_2.Methods.Positions.SendTest.Edit"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "oneOf": [
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "type": "integer",
+                                                            "title": "@throws Exception"
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "result"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
+                                        }
+                                    ]
+                                }
+                            },
+                            "model": {
+                                "schema": {
+                                    "type": "null"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
         "/del/tickets_2/admin/message/": {
             "post": {
                 "operationId": "DelTickets2AdminMessage",
@@ -18883,6 +18942,65 @@
                         "application/json": {
                             "schema": {
                                 "$ref": "Admin_2/Methods/Actions/Projects/Domain/Edit.json#/components/schemas/Admin_2.Methods.Actions.Projects.Domain.Edit"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "oneOf": [
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "$ref": "Admin_2/Objects/Actions/Result.json#/components/schemas/Admin_2.Objects.Actions.Result"
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "result"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
+                                        }
+                                    ]
+                                }
+                            },
+                            "model": {
+                                "schema": {
+                                    "type": "null"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/edit/admin_2/actions/regions/updateGoogle/": {
+            "post": {
+                "operationId": "EditAdmin2ActionsRegionsUpdateGoogle",
+                "tags": [
+                    "Admin_2"
+                ],
+                "summary": "Обновление регионов Google",
+                "description": "@see https://developers.google.com/google-ads/api/data/geotargets",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Admin_2/Methods/Actions/Regions/UpdateGoogle/Edit.json#/components/schemas/Admin_2.Methods.Actions.Regions.UpdateGoogle.Edit"
                             }
                         }
                     },
