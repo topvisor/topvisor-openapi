@@ -53,6 +53,10 @@
                     "For_export": {
                         "const": "For export",
                         "readOnly": true
+                    },
+                    "With_tool_can_fast_check": {
+                        "const": "With the help of the tool you can quickly check the demand and popularity of key phrases. <a href=\"/support/volume/\" target=\"_blank\">What is frequency →</a>",
+                        "readOnly": true
                     }
                 },
                 "required": [
@@ -65,7 +69,8 @@
                     "min",
                     "Repeat_task",
                     "No_tasks",
-                    "For_export"
+                    "For_export",
+                    "With_tool_can_fast_check"
                 ]
             }
         }

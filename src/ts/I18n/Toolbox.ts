@@ -30,6 +30,8 @@ export interface components {
             readonly No_tasks: "No tasks";
             /** @constant */
             readonly For_export: "For export";
+            /** @constant */
+            readonly With_tool_can_fast_check: "With the help of the tool you can quickly check the demand and popularity of key phrases. <a href=\"/support/volume/\" target=\"_blank\">What is frequency →</a>";
         };
     };
     responses: never;
