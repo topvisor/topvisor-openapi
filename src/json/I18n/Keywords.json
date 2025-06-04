@@ -475,7 +475,7 @@
                         "readOnly": true
                     },
                     "Before_grouping_setup_target_urls": {
-                        "const": "Before grouping, make sure that target URLs are assigned",
+                        "const": "Before grouping, make sure that target URLs are assigned. <a href=\"/support/rankings/target-url/setup/\" target=\"_blank\">How to setup target URLs →</a>",
                         "readOnly": true
                     },
                     "Change_clustering_level": {

@@ -241,7 +241,7 @@ export interface components {
             /** @constant */
             readonly Cluster_target_url: "Grouping by target URLs";
             /** @constant */
-            readonly Before_grouping_setup_target_urls: "Before grouping, make sure that target URLs are assigned";
+            readonly Before_grouping_setup_target_urls: "Before grouping, make sure that target URLs are assigned. <a href=\"/support/rankings/target-url/setup/\" target=\"_blank\">How to setup target URLs →</a>";
             /** @constant */
             readonly Change_clustering_level: "Change clustering level";
             /** @constant */
