@@ -40,7 +40,11 @@
                     "no_recheck": {
                         "title": "Проверять ли запросы\n\n- 0: проверять\n- 1: не проверять запросы с актуальной частотой\n- 2: не проверять запросы с частотой",
                         "nullable": true,
-                        "type": "integer"
+                        "allOf": [
+                            {
+                                "$ref": "../../../../Keywords_2/Types/Volumes/NoRecheck.json#/components/schemas/Keywords_2.Types.Volumes.NoRecheck"
+                            }
+                        ]
                     },
                     "qualifiers": {
                         "title": "Объекты определителей частоты (параметр не обязателен, если check_all_regions = true)",

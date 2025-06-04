@@ -37,6 +37,10 @@
                     "Hint_not_checks_btn": {
                         "const": "Generate sitemap",
                         "readOnly": true
+                    },
+                    "You_will_be_charged": {
+                        "const": "You will be charged",
+                        "readOnly": true
                     }
                 },
                 "required": [
@@ -46,7 +50,8 @@
                     "Max_pages",
                     "Info_cost",
                     "Hint_not_checks_text",
-                    "Hint_not_checks_btn"
+                    "Hint_not_checks_btn",
+                    "You_will_be_charged"
                 ]
             }
         }

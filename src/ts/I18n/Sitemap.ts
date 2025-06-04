@@ -22,6 +22,8 @@ export interface components {
             readonly Hint_not_checks_text: "Sitemap hasn't  been generated yet.<br>🗺️ <a href=\"/support/sitemap/\" target=\"_blank\">Why you need to generate sitemap →</a>";
             /** @constant */
             readonly Hint_not_checks_btn: "Generate sitemap";
+            /** @constant */
+            readonly You_will_be_charged: "You will be charged";
         };
     };
     responses: never;
