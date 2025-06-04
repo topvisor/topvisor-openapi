@@ -867,11 +867,11 @@
                         "readOnly": true
                     },
                     "CONTROLLER_phrases_missed": {
-                        "const": "skipped duplicate keywords",
+                        "const": "Skipped duplicate keywords",
                         "readOnly": true
                     },
                     "CONTROLLER_phrases_moved": {
-                        "const": "moved (changed) keywords",
+                        "const": "Moved (changed) keywords",
                         "readOnly": true
                     },
                     "CONTROLLER_Semantic_kernel": {
@@ -1201,6 +1201,18 @@
                     "keywords": {
                         "const": "keywords",
                         "readOnly": true
+                    },
+                    "No_keywords_found": {
+                        "const": "No keywords found",
+                        "readOnly": true
+                    },
+                    "Added_phrases": {
+                        "const": "Added keywords",
+                        "readOnly": true
+                    },
+                    "Changed_phrases": {
+                        "const": "Moved (changed) keywords",
+                        "readOnly": true
                     }
                 },
                 "required": [
@@ -1500,7 +1512,10 @@
                     "Groups_with_keywords",
                     "Type_of_volume_needed_for_visibility",
                     "Check_all_wordstats",
-                    "keywords"
+                    "keywords",
+                    "No_keywords_found",
+                    "Added_phrases",
+                    "Changed_phrases"
                 ]
             }
         }

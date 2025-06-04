@@ -459,6 +459,10 @@ export interface components {
             /** @constant */
             readonly Webmaster: "Yandex.Webmaster";
             /** @constant */
+            readonly Webmaster_monitoring: "Yandex.Webmaster - Monitoring search requests";
+            /** @constant */
+            readonly Webmaster_popular: "Yandex.Webmaster - Popular requests";
+            /** @constant */
             readonly Yandex_Direct: "Yandex Direct";
             /** @constant */
             readonly YandexDirect: "Yandex.Direct";

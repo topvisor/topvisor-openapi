@@ -910,6 +910,14 @@
                         "const": "Yandex.Webmaster",
                         "readOnly": true
                     },
+                    "Webmaster_monitoring": {
+                        "const": "Yandex.Webmaster - Monitoring search requests",
+                        "readOnly": true
+                    },
+                    "Webmaster_popular": {
+                        "const": "Yandex.Webmaster - Popular requests",
+                        "readOnly": true
+                    },
                     "Yandex_Direct": {
                         "const": "Yandex Direct",
                         "readOnly": true
@@ -2114,6 +2122,8 @@
                     "Projects",
                     "Metrika",
                     "Webmaster",
+                    "Webmaster_monitoring",
+                    "Webmaster_popular",
                     "Yandex_Direct",
                     "YandexDirect",
                     "Yandex_Wordstat",

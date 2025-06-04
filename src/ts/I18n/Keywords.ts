@@ -437,9 +437,9 @@ export interface components {
             /** @constant */
             readonly CONTROLLER_Phrases_added: "You have successfully added keywords";
             /** @constant */
-            readonly CONTROLLER_phrases_missed: "skipped duplicate keywords";
+            readonly CONTROLLER_phrases_missed: "Skipped duplicate keywords";
             /** @constant */
-            readonly CONTROLLER_phrases_moved: "moved (changed) keywords";
+            readonly CONTROLLER_phrases_moved: "Moved (changed) keywords";
             /** @constant */
             readonly CONTROLLER_Semantic_kernel: "Keywords";
             /** @constant */
@@ -604,6 +604,12 @@ export interface components {
             readonly Check_all_wordstats: "Check all keywords";
             /** @constant */
             readonly keywords: "keywords";
+            /** @constant */
+            readonly No_keywords_found: "No keywords found";
+            /** @constant */
+            readonly Added_phrases: "Added keywords";
+            /** @constant */
+            readonly Changed_phrases: "Moved (changed) keywords";
         };
     };
     responses: never;
