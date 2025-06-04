@@ -7923,7 +7923,7 @@ paths:
       operationId: GetContent2ApometrCHHistory
       tags:
         - Content_2
-      summary: Получение истории urls, найденых в выдаче, за конкретную проверку
+      summary: Получение истории urls, найденных в выдаче, за конкретную проверку
       requestBody:
         content:
           application/json:
@@ -22840,7 +22840,7 @@ components:
         - orders
         - filters
         - offset
-      title: Получение истории urls, найденых в выдаче, за конкретную проверку
+      title: Получение истории urls, найденных в выдаче, за конкретную проверку
     Models.Apometr.History:
       properties:
         time:

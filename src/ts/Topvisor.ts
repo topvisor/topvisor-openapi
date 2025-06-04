@@ -4089,7 +4089,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Получение истории urls, найденых в выдаче, за конкретную проверку */
+    /** Получение истории urls, найденных в выдаче, за конкретную проверку */
     "/get/content_2/apometr/cHHistory/": {
         parameters: {
             query?: never;
