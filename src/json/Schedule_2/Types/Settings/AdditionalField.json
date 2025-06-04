@@ -1,0 +1,22 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Schedule_2.Types.Settings.AdditionalField",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Schedule_2.Types.Settings.AdditionalField": {
+                "type": "string",
+                "enum": [
+                    "summary",
+                    "traffic",
+                    "url",
+                    "frequency"
+                ],
+                "title": "Дополнительное поле отчета проверки позиций"
+            }
+        }
+    }
+}

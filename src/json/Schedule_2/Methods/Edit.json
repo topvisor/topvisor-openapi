@@ -1,0 +1,52 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Schedule_2.Methods.Edit",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Schedule_2.Methods.Edit": {
+                "type": "object",
+                "properties": {
+                    "schedule": {
+                        "title": "Каждый элемент содержит:\n- times: Массив времени, где каждый элемент — ассоциативный массив с ключами:\n- - hour: Час из перечисления доступных часов (см. $availableHours)\n- - minute: Минута из перечисления доступных минут (см. $availableMinutes)\n- days: Массив дней из перечисления доступных дней (см. $availableDays)",
+                        "description": "@var array<int, array{times: array<int, array{hour: string, minute: string}>, days: string[]}> $schedule Массив расписания, содержащий элементы с данными о времени и днях.\n\n@see Schedule_2\\Mods\\Schedule::$availableHours\n@see Schedule_2\\Mods\\Schedule::$availableMinutes\n@see Schedule_2\\Mods\\Schedule::$availableDays",
+                        "type": "array",
+                        "items": {
+                            "oneOf": [
+                                {
+                                    "type": "string"
+                                },
+                                {
+                                    "type": "number"
+                                }
+                            ]
+                        }
+                    },
+                    "type": {
+                        "title": "Тип расписания",
+                        "description": "@see Schedule_2\\Mods\\Schedule::$availableTypes",
+                        "type": "string"
+                    },
+                    "target_id": {
+                        "title": "Id объекта, к которому будет привязано расписание",
+                        "type": "integer"
+                    },
+                    "target_id_2": {
+                        "title": "Id второго объекта, к которому будет привязано расписание (для mentions)",
+                        "nullable": true,
+                        "type": "integer"
+                    }
+                },
+                "required": [
+                    "schedule",
+                    "type",
+                    "target_id"
+                ],
+                "title": "Привязать расписание к объекту"
+            }
+        }
+    }
+}
