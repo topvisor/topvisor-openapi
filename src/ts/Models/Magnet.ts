@@ -7,7 +7,7 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        "Models.Magnet": any;
+        "Models.Magnet": unknown;
     };
     responses: never;
     parameters: never;

@@ -3777,7 +3777,10 @@ paths:
         Создать Open API схемы и скачать в zip
 
         В результате вернет zip файл в потоке вывода
-      description: '@see https://editor.swagger.io/ Редактор Open API'
+      description: |-
+        @see https://editor.swagger.io/ Редактор Open API
+
+        test
       requestBody:
         content:
           application/json:
@@ -18772,12 +18775,21 @@ components:
           title: Формат схемы Open API, json или yaml
           default: json
           type: string
+        incremental:
+          title: |-
+            Использовать инкрементальный вывод схемы
+
+            В этом режиме в схему будут добавляться только изменения за один час
+          type: boolean
       required: []
       title: |-
         Создать Open API схемы и скачать в zip
 
         В результате вернет zip файл в потоке вывода
-      description: '@see https://editor.swagger.io/ Редактор Open API'
+      description: |-
+        @see https://editor.swagger.io/ Редактор Open API
+
+        test
     Payments_2.Methods.Companies.Get:
       type: object
       properties: {}

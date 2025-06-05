@@ -8,17 +8,17 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         "Models.Folders": {
-            "COUNT(*)"?: any;
-            id?: any;
-            project_id?: any;
-            parent_id?: any;
-            name?: any;
-            count_folders?: any;
-            count_groups?: any;
-            count_groups_active?: any;
-            ord?: any;
-            path?: any;
-            ord_path?: any;
+            "COUNT(*)"?: unknown;
+            id?: unknown;
+            project_id?: unknown;
+            parent_id?: unknown;
+            name?: unknown;
+            count_folders?: unknown;
+            count_groups?: unknown;
+            count_groups_active?: unknown;
+            ord?: unknown;
+            path?: unknown;
+            ord_path?: unknown;
         };
     };
     responses: never;

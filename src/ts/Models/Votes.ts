@@ -8,15 +8,15 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         "Models.Votes": {
-            id?: any;
-            site?: any;
-            subdomain?: any;
-            url?: any;
-            user_id?: any;
-            rate?: any;
-            created_time?: any;
-            comment?: any;
-            is_viewed?: any;
+            id?: unknown;
+            site?: unknown;
+            subdomain?: unknown;
+            url?: unknown;
+            user_id?: unknown;
+            rate?: unknown;
+            created_time?: unknown;
+            comment?: unknown;
+            is_viewed?: unknown;
         };
     };
     responses: never;

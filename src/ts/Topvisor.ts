@@ -3,8 +3,7 @@
  * Do not make direct changes to the file.
  */
 
-export interface paths {  
-    /** Фиксация события test */
+export interface paths {
     "/add/analytics_2/": {
         parameters: {
             query?: never;
@@ -14,14 +13,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Фиксация события test */
         post: operations["AddAnalytics2"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Добавление примечания */
+    };
     "/add/annotations_2/": {
         parameters: {
             query?: never;
@@ -31,14 +30,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Добавление примечания */
         post: operations["AddAnnotations2"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Удаление примечания */
+    };
     "/del/annotations_2/": {
         parameters: {
             query?: never;
@@ -48,14 +47,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Удаление примечания */
         post: operations["DelAnnotations2"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Редактирование примечания */
+    };
     "/edit/annotations_2/": {
         parameters: {
             query?: never;
@@ -65,14 +64,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Редактирование примечания */
         post: operations["EditAnnotations2"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Получение примечаний */
+    };
     "/get/annotations_2/": {
         parameters: {
             query?: never;
@@ -82,14 +81,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Получение примечаний */
         post: operations["GetAnnotations2"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Получение заархивированного приложения */
+    };
     "/get/app_2/": {
         parameters: {
             query?: never;
@@ -99,14 +98,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Получение заархивированного приложения */
         post: operations["GetApp2"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Добавление комментария */
+    };
     "/add/comments_2/": {
         parameters: {
             query?: never;
@@ -116,18 +115,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Добавление комментария */
         post: operations["AddComments2"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Удаление комментария
-     *
-     *     Удалять комментарии можно только в течение ограниченного времени
-     *
-     *     Админы могут удалять комментарии в любое время */
+    };
     "/del/comments_2/": {
         parameters: {
             query?: never;
@@ -137,16 +132,18 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Удаление комментария
+         *
+         *     Удалять комментарии можно только в течение ограниченного времени
+         *
+         *     Админы могут удалять комментарии в любое время */
         post: operations["DelComments2"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Изменение комментария
-     *
-     *     Изменять комментарий можно только в течение ограниченного времени */
+    };
     "/edit/comments_2/": {
         parameters: {
             query?: never;
@@ -156,16 +153,16 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Изменение комментария
+         *
+         *     Изменять комментарий можно только в течение ограниченного времени */
         post: operations["EditComments2"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Получение комментариев
-     *
-     *     Возвращает набор комментариев со всеми подкомменатриями, limit, offset не виляют на получение вложенных комментариев */
+    };
     "/get/comments_2/": {
         parameters: {
             query?: never;
@@ -175,14 +172,16 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Получение комментариев
+         *
+         *     Возвращает набор комментариев со всеми подкомменатриями, limit, offset не виляют на получение вложенных комментариев */
         post: operations["GetComments2"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Получить полные данные об одной странице */
+    };
     "/get/content_2/": {
         parameters: {
             query?: never;
@@ -192,22 +191,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Получить полные данные об одной странице */
         post: operations["GetContent2"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Создание платежки и переход к оплате
-     *
-     *     Возвращает id платежа, если указан параметр $return_id = true
-     *
-     *     Производит редирект, если настроена форма оплаты на стороне платежной системы
-     *
-     *     Возвращает информацию о платеже, если ожидается вывод формы оплаты на сайте
-     *
-     *     При ошибке производит редирект на страницу с информацией об ошибке */
+    };
     "/add/payments_2/": {
         parameters: {
             query?: never;
@@ -217,14 +208,22 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Создание платежки и переход к оплате
+         *
+         *     Возвращает id платежа, если указан параметр $return_id = true
+         *
+         *     Производит редирект, если настроена форма оплаты на стороне платежной системы
+         *
+         *     Возвращает информацию о платеже, если ожидается вывод формы оплаты на сайте
+         *
+         *     При ошибке производит редирект на страницу с информацией об ошибке */
         post: operations["AddPayments2"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Получение списка платежей */
+    };
     "/get/payments_2/": {
         parameters: {
             query?: never;
@@ -234,16 +233,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Получение списка платежей */
         post: operations["GetPayments2"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Генерация QR кода по тексту
-     *
-     *     Возвращает изображение в формате data:image/png;base64 */
+    };
     "/get/qr_2/": {
         parameters: {
             query?: never;
@@ -253,14 +250,16 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Генерация QR кода по тексту
+         *
+         *     Возвращает изображение в формате data:image/png;base64 */
         post: operations["GetQr2"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Настройка рекуррентного платежа */
+    };
     "/edit/recurring_2/": {
         parameters: {
             query?: never;
@@ -270,6 +269,7 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Настройка рекуррентного платежа */
         post: operations["EditRecurring2"];
         delete?: never;
         options?: never;
@@ -308,8 +308,7 @@ export interface paths {
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Привязать расписание к объекту */
+    };
     "/edit/schedule_2/": {
         parameters: {
             query?: never;
@@ -319,14 +318,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Привязать расписание к объекту */
         post: operations["EditSchedule2"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Получение рассписания */
+    };
     "/get/schedule_2/": {
         parameters: {
             query?: never;
@@ -336,14 +335,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Получение рассписания */
         post: operations["GetSchedule2"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Сохранение списка тегов */
+    };
     "/edit/tags_2/": {
         parameters: {
             query?: never;
@@ -353,14 +352,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Сохранение списка тегов */
         post: operations["EditTags2"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Получение списка тегов */
+    };
     "/get/tags_2/": {
         parameters: {
             query?: never;
@@ -370,14 +369,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Получение списка тегов */
         post: operations["GetTags2"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Сохранение шаблона */
+    };
     "/add/templates_2/": {
         parameters: {
             query?: never;
@@ -387,14 +386,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Сохранение шаблона */
         post: operations["AddTemplates2"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Удаление шаблона */
+    };
     "/del/templates_2/": {
         parameters: {
             query?: never;
@@ -404,14 +403,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Удаление шаблона */
         post: operations["DelTemplates2"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Изменение шаблона */
+    };
     "/edit/templates_2/": {
         parameters: {
             query?: never;
@@ -421,14 +420,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Изменение шаблона */
         post: operations["EditTemplates2"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Получение сохраненного списка шаблонов */
+    };
     "/get/templates_2/": {
         parameters: {
             query?: never;
@@ -438,14 +437,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Получение сохраненного списка шаблонов */
         post: operations["GetTemplates2"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Добавление url */
+    };
     "/add/urls_2/": {
         parameters: {
             query?: never;
@@ -455,14 +454,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Добавление url */
         post: operations["AddUrls2"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Изменение urls */
+    };
     "/edit/urls_2/": {
         parameters: {
             query?: never;
@@ -472,14 +471,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Изменение urls */
         post: operations["EditUrls2"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Получение списка urls проекта */
+    };
     "/get/urls_2/": {
         parameters: {
             query?: never;
@@ -489,14 +488,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Получение списка urls проекта */
         post: operations["GetUrls2"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Оставление отзыва */
+    };
     "/add/votes_2/": {
         parameters: {
             query?: never;
@@ -506,14 +505,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Оставление отзыва */
         post: operations["AddVotes2"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Получение своих отзывов */
+    };
     "/get/votes_2/": {
         parameters: {
             query?: never;
@@ -523,14 +522,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Получение своих отзывов */
         post: operations["GetVotes2"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Получение скриншота (платная функция) */
+    };
     "/get/webscreens_2/": {
         parameters: {
             query?: never;
@@ -540,6 +539,7 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Получение скриншота (платная функция) */
         post: operations["GetWebscreens2"];
         delete?: never;
         options?: never;
@@ -562,8 +562,7 @@ export interface paths {
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Получение доступа к акаунту пользователя в режиме "призрак" */
+    };
     "/get/admin_2/ghost/": {
         parameters: {
             query?: never;
@@ -573,14 +572,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Получение доступа к акаунту пользователя в режиме "призрак" */
         post: operations["GetAdmin2Ghost"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Получение записей словаря */
+    };
     "/get/admin_2/i18n/": {
         parameters: {
             query?: never;
@@ -590,6 +589,7 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Получение записей словаря */
         post: operations["GetAdmin2I18n"];
         delete?: never;
         options?: never;
@@ -612,8 +612,7 @@ export interface paths {
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Сохранение текстового файла лога */
+    };
     "/edit/admin_2/logs/": {
         parameters: {
             query?: never;
@@ -623,14 +622,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Сохранение текстового файла лога */
         post: operations["EditAdmin2Logs"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Загрузка текстового файла лога */
+    };
     "/get/admin_2/logs/": {
         parameters: {
             query?: never;
@@ -640,6 +639,7 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Загрузка текстового файла лога */
         post: operations["GetAdmin2Logs"];
         delete?: never;
         options?: never;
@@ -662,8 +662,7 @@ export interface paths {
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Добавление сотрудника */
+    };
     "/add/admin_2/staff/": {
         parameters: {
             query?: never;
@@ -673,6 +672,7 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Добавление сотрудника */
         post: operations["AddAdmin2Staff"];
         delete?: never;
         options?: never;
@@ -695,8 +695,7 @@ export interface paths {
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Получение персонала, объект admin_staff */
+    };
     "/get/admin_2/staff/": {
         parameters: {
             query?: never;
@@ -706,14 +705,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Получение персонала, объект admin_staff */
         post: operations["GetAdmin2Staff"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Изменение даты следующего списания по тарифу */
+    };
     "/edit/admin_2/tariffChangeExpire/": {
         parameters: {
             query?: never;
@@ -723,14 +722,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Изменение даты следующего списания по тарифу */
         post: operations["EditAdmin2TariffChangeExpire"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Поиск HTML шаблонов */
+    };
     "/get/admin_2/tpl/": {
         parameters: {
             query?: never;
@@ -740,14 +739,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Поиск HTML шаблонов */
         post: operations["GetAdmin2Tpl"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Редактирование пользователей, объект admin_users */
+    };
     "/edit/admin_2/users/": {
         parameters: {
             query?: never;
@@ -757,14 +756,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Редактирование пользователей, объект admin_users */
         post: operations["EditAdmin2Users"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Получение пользователей */
+    };
     "/get/admin_2/users/": {
         parameters: {
             query?: never;
@@ -774,6 +773,7 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Получение пользователей */
         post: operations["GetAdmin2Users"];
         delete?: never;
         options?: never;
@@ -796,8 +796,7 @@ export interface paths {
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Получение всех своих примечаний по всем проектам и сервисам */
+    };
     "/get/annotations_2/my/": {
         parameters: {
             query?: never;
@@ -807,19 +806,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Получение всех своих примечаний по всем проектам и сервисам */
         post: operations["GetAnnotations2My"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Получение данных подтверждения
-     *
-     *     Возвращает результат подтверждения в виде
-     *     массива с сообщением (acceptAction),
-     *     логической переменной (acceptEmail),
-     *     null при неправильно введенном типе */
+    };
     "/get/app_2/actions/": {
         parameters: {
             query?: never;
@@ -829,14 +823,19 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Получение данных подтверждения
+         *
+         *     Возвращает результат подтверждения в виде
+         *     массива с сообщением (acceptAction),
+         *     логической переменной (acceptEmail),
+         *     null при неправильно введенном типе */
         post: operations["GetApp2Actions"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Получение текста политики конфиденциальности */
+    };
     "/get/app_2/privacy/": {
         parameters: {
             query?: never;
@@ -846,14 +845,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Получение текста политики конфиденциальности */
         post: operations["GetApp2Privacy"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Получение количества настроенных URL */
+    };
     "/get/audit_2/countUrls/": {
         parameters: {
             query?: never;
@@ -863,16 +862,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Получение количества настроенных URL */
         post: operations["GetAudit2CountUrls"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Получение отчета по проверке индексации
-     *
-     *     Необходимо указать либо date1 и date2, либо dates (вместе указывать нельзя) */
+    };
     "/get/audit_2/indexing/": {
         parameters: {
             query?: never;
@@ -882,14 +879,16 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Получение отчета по проверке индексации
+         *
+         *     Необходимо указать либо date1 и date2, либо dates (вместе указывать нельзя) */
         post: operations["GetAudit2Indexing"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Применение настроек Анализа сайта */
+    };
     "/edit/audit_2/settings/": {
         parameters: {
             query?: never;
@@ -899,14 +898,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Применение настроек Анализа сайта */
         post: operations["EditAudit2Settings"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Получение настроек аудита */
+    };
     "/get/audit_2/settings/": {
         parameters: {
             query?: never;
@@ -916,18 +915,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Получение настроек аудита */
         post: operations["GetAudit2Settings"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Получение результатов проверок радара
-     *
-     *     Отчет генерируется на основе объектов urls
-     *
-     *     Необходимо указать либо check_id1 и check_id2, либо checks_ids (вместе указывать нельзя) */
+    };
     "/get/audit_2/watcher/": {
         parameters: {
             query?: never;
@@ -937,14 +932,18 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Получение результатов проверок радара
+         *
+         *     Отчет генерируется на основе объектов urls
+         *
+         *     Необходимо указать либо check_id1 и check_id2, либо checks_ids (вместе указывать нельзя) */
         post: operations["GetAudit2Watcher"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Получение данных банка по БИК */
+    };
     "/get/bank_2/bank/": {
         parameters: {
             query?: never;
@@ -954,14 +953,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Получение данных банка по БИК */
         post: operations["GetBank2Bank"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Получение истории транзакций */
+    };
     "/get/bank_2/history/": {
         parameters: {
             query?: never;
@@ -971,14 +970,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Получение истории транзакций */
         post: operations["GetBank2History"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Получение информации о балансе */
+    };
     "/get/bank_2/info/": {
         parameters: {
             query?: never;
@@ -988,14 +987,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Получение информации о балансе */
         post: operations["GetBank2Info"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Добавиление реквизитов */
+    };
     "/add/bank_2/requisites/": {
         parameters: {
             query?: never;
@@ -1005,14 +1004,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Добавиление реквизитов */
         post: operations["AddBank2Requisites"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Закрытие договора (оферту закрыть невозможно) */
+    };
     "/del/bank_2/requisites/": {
         parameters: {
             query?: never;
@@ -1022,14 +1021,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Закрытие договора (оферту закрыть невозможно) */
         post: operations["DelBank2Requisites"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Изменение реквизитов */
+    };
     "/edit/bank_2/requisites/": {
         parameters: {
             query?: never;
@@ -1039,14 +1038,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Изменение реквизитов */
         post: operations["EditBank2Requisites"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Получение списка договоров */
+    };
     "/get/bank_2/requisites/": {
         parameters: {
             query?: never;
@@ -1056,14 +1055,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Получение списка договоров */
         post: operations["GetBank2Requisites"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Получение данных юридического лица по ИНН */
+    };
     "/get/bank_2/ur/": {
         parameters: {
             query?: never;
@@ -1073,14 +1072,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Получение данных юридического лица по ИНН */
         post: operations["GetBank2Ur"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Редактирование объявления */
+    };
     "/edit/broker_2/ads/": {
         parameters: {
             query?: never;
@@ -1090,14 +1089,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Редактирование объявления */
         post: operations["EditBroker2Ads"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Получение объявления рекламной кампании */
+    };
     "/get/broker_2/ads/": {
         parameters: {
             query?: never;
@@ -1107,14 +1106,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Получение объявления рекламной кампании */
         post: operations["GetBroker2Ads"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Добавление рекламной кампании в управление ставками */
+    };
     "/add/broker_2/campaigns/": {
         parameters: {
             query?: never;
@@ -1124,14 +1123,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Добавление рекламной кампании в управление ставками */
         post: operations["AddBroker2Campaigns"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Удаление рекламной компании из управления ставками */
+    };
     "/del/broker_2/campaigns/": {
         parameters: {
             query?: never;
@@ -1141,14 +1140,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Удаление рекламной компании из управления ставками */
         post: operations["DelBroker2Campaigns"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Редактирование рекламной кампании */
+    };
     "/edit/broker_2/campaigns/": {
         parameters: {
             query?: never;
@@ -1158,14 +1157,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Редактирование рекламной кампании */
         post: operations["EditBroker2Campaigns"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Получение списка рекламных кампаний */
+    };
     "/get/broker_2/campaigns/": {
         parameters: {
             query?: never;
@@ -1175,14 +1174,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Получение списка рекламных кампаний */
         post: operations["GetBroker2Campaigns"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Добавление групп рекламной кампании */
+    };
     "/add/broker_2/groups/": {
         parameters: {
             query?: never;
@@ -1192,14 +1191,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Добавление групп рекламной кампании */
         post: operations["AddBroker2Groups"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Получение групп рекламной кампании */
+    };
     "/get/broker_2/groups/": {
         parameters: {
             query?: never;
@@ -1209,14 +1208,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Получение групп рекламной кампании */
         post: operations["GetBroker2Groups"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Удаление запросов рекламной кампании */
+    };
     "/del/broker_2/keywords/": {
         parameters: {
             query?: never;
@@ -1226,14 +1225,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Удаление запросов рекламной кампании */
         post: operations["DelBroker2Keywords"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Редактирование объявлений (запросов) рекламной кампании */
+    };
     "/edit/broker_2/keywords/": {
         parameters: {
             query?: never;
@@ -1243,14 +1242,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Редактирование объявлений (запросов) рекламной кампании */
         post: operations["EditBroker2Keywords"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Получение запросов рекламной кампании */
+    };
     "/get/broker_2/keywords/": {
         parameters: {
             query?: never;
@@ -1260,14 +1259,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Получение запросов рекламной кампании */
         post: operations["GetBroker2Keywords"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Получение логов */
+    };
     "/get/broker_2/log/": {
         parameters: {
             query?: never;
@@ -1277,14 +1276,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Получение логов */
         post: operations["GetBroker2Log"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Получение комментариев автора. Без вложенности */
+    };
     "/get/comments_2/byAuthor/": {
         parameters: {
             query?: never;
@@ -1294,16 +1293,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Получение комментариев автора. Без вложенности */
         post: operations["GetComments2ByAuthor"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Редактирование статуса лайка для комментария
-     *
-     *     Возвращает результат редактирования статуса лайка */
+    };
     "/edit/comments_2/like/": {
         parameters: {
             query?: never;
@@ -1313,14 +1310,16 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Редактирование статуса лайка для комментария
+         *
+         *     Возвращает результат редактирования статуса лайка */
         post: operations["EditComments2Like"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Изменить настройки автора */
+    };
     "/edit/content_2/authors/": {
         parameters: {
             query?: never;
@@ -1330,14 +1329,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Изменить настройки автора */
         post: operations["EditContent2Authors"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Получение данных об авторе */
+    };
     "/get/content_2/authors/": {
         parameters: {
             query?: never;
@@ -1347,14 +1346,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Получение данных об авторе */
         post: operations["GetContent2Authors"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Редактирование статуса закладки для автора */
+    };
     "/edit/content_2/bookmarkAuthor/": {
         parameters: {
             query?: never;
@@ -1364,14 +1363,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Редактирование статуса закладки для автора */
         post: operations["EditContent2BookmarkAuthor"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Редактирование статуса закладки для страницы */
+    };
     "/edit/content_2/bookmark/": {
         parameters: {
             query?: never;
@@ -1381,14 +1380,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Редактирование статуса закладки для страницы */
         post: operations["EditContent2Bookmark"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Редактирование статуса лайка для страницы */
+    };
     "/edit/content_2/like/": {
         parameters: {
             query?: never;
@@ -1398,6 +1397,7 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Редактирование статуса лайка для страницы */
         post: operations["EditContent2Like"];
         delete?: never;
         options?: never;
@@ -1420,8 +1420,7 @@ export interface paths {
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Создание документа */
+    };
     "/add/content_2/pages/": {
         parameters: {
             query?: never;
@@ -1431,14 +1430,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Создание документа */
         post: operations["AddContent2Pages"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Перенести документ в папку /archive/ */
+    };
     "/del/content_2/pages/": {
         parameters: {
             query?: never;
@@ -1448,14 +1447,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Перенести документ в папку /archive/ */
         post: operations["DelContent2Pages"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Изменение документа */
+    };
     "/edit/content_2/pages/": {
         parameters: {
             query?: never;
@@ -1465,14 +1464,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Изменение документа */
         post: operations["EditContent2Pages"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Получение документов */
+    };
     "/get/content_2/pages/": {
         parameters: {
             query?: never;
@@ -1482,6 +1481,7 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Получение документов */
         post: operations["GetContent2Pages"];
         delete?: never;
         options?: never;
@@ -1504,8 +1504,7 @@ export interface paths {
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Добавление правила редиректа (для админов) */
+    };
     "/add/content_2/redirects/": {
         parameters: {
             query?: never;
@@ -1515,14 +1514,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Добавление правила редиректа (для админов) */
         post: operations["AddContent2Redirects"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Удаление редиректа */
+    };
     "/del/content_2/redirects/": {
         parameters: {
             query?: never;
@@ -1532,14 +1531,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Удаление редиректа */
         post: operations["DelContent2Redirects"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Изменение правила редиректа (для админов) */
+    };
     "/edit/content_2/redirects/": {
         parameters: {
             query?: never;
@@ -1549,14 +1548,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Изменение правила редиректа (для админов) */
         post: operations["EditContent2Redirects"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Получение списка правил (для админов) */
+    };
     "/get/content_2/redirects/": {
         parameters: {
             query?: never;
@@ -1566,16 +1565,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Получение списка правил (для админов) */
         post: operations["GetContent2Redirects"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Получение RSS раздела сайта
-     *
-     *     Для выборки страниц используется модель: Pages */
+    };
     "/get/content_2/rss/": {
         parameters: {
             query?: never;
@@ -1585,14 +1582,16 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Получение RSS раздела сайта
+         *
+         *     Для выборки страниц используется модель: Pages */
         post: operations["GetContent2Rss"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Поиск страниц */
+    };
     "/get/content_2/search/": {
         parameters: {
             query?: never;
@@ -1602,14 +1601,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Поиск страниц */
         post: operations["GetContent2Search"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Получение xml карты сайта */
+    };
     "/get/content_2/sitemap/": {
         parameters: {
             query?: never;
@@ -1619,14 +1618,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Получение xml карты сайта */
         post: operations["GetContent2Sitemap"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Поиск тегов */
+    };
     "/get/content_2/tags/": {
         parameters: {
             query?: never;
@@ -1636,14 +1635,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Поиск тегов */
         post: operations["GetContent2Tags"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Добавление задачи cron */
+    };
     "/add/cron_2/commands/": {
         parameters: {
             query?: never;
@@ -1653,14 +1652,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Добавление задачи cron */
         post: operations["AddCron2Commands"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Удаление задачи cron */
+    };
     "/del/cron_2/commands/": {
         parameters: {
             query?: never;
@@ -1670,14 +1669,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Удаление задачи cron */
         post: operations["DelCron2Commands"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Изменение задачи cron */
+    };
     "/edit/cron_2/commands/": {
         parameters: {
             query?: never;
@@ -1687,14 +1686,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Изменение задачи cron */
         post: operations["EditCron2Commands"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Получение задач cron */
+    };
     "/get/cron_2/commands/": {
         parameters: {
             query?: never;
@@ -1704,14 +1703,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Получение задач cron */
         post: operations["GetCron2Commands"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Получение списка имен сервисов, в которых есть команды cron */
+    };
     "/get/cron_2/services/": {
         parameters: {
             query?: never;
@@ -1721,14 +1720,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Получение списка имен сервисов, в которых есть команды cron */
         post: operations["GetCron2Services"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Метод с примерами параметров типа Enum */
+    };
     "/get/example_2/array/": {
         parameters: {
             query?: never;
@@ -1738,14 +1737,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Метод с примерами параметров типа Enum */
         post: operations["GetExample2Array"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** TODO: удалить после закрытия задачи #28444 */
+    };
     "/get/example_2/bag/": {
         parameters: {
             query?: never;
@@ -1755,14 +1754,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** TODO: удалить после закрытия задачи #28444 */
         post: operations["GetExample2Bag"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Получение текущего времени */
+    };
     "/get/example_2/custom/": {
         parameters: {
             query?: never;
@@ -1772,14 +1771,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Получение текущего времени */
         post: operations["GetExample2Custom"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Метод с примерами параметров типа Enum */
+    };
     "/get/example_2/enum/": {
         parameters: {
             query?: never;
@@ -1789,14 +1788,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Метод с примерами параметров типа Enum */
         post: operations["GetExample2Enum"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Метод с примерами параметров типа Object */
+    };
     "/get/example_2/object/": {
         parameters: {
             query?: never;
@@ -1806,14 +1805,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Метод с примерами параметров типа Object */
         post: operations["GetExample2Object"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Получение списка проектов */
+    };
     "/get/example_2/projects/": {
         parameters: {
             query?: never;
@@ -1823,6 +1822,7 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Получение списка проектов */
         post: operations["GetExample2Projects"];
         delete?: never;
         options?: never;
@@ -1845,8 +1845,7 @@ export interface paths {
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Получение списка запросов проекта */
+    };
     "/get/keywords_2/keywords/": {
         parameters: {
             query?: never;
@@ -1856,14 +1855,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Получение списка запросов проекта */
         post: operations["GetKeywords2Keywords"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Получение частоты проекта или одной группы */
+    };
     "/get/keywords_2/volumes/": {
         parameters: {
             query?: never;
@@ -1873,19 +1872,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Получение частоты проекта или одной группы */
         post: operations["GetKeywords2Volumes"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /**
-     * Создать Open API схемы и скачать в zip
-     *
-     *     В результате вернет zip файл в потоке вывода
-     * @description @see https://editor.swagger.io/ Редактор Open API
-     */
+    };
     "/get/openapi_2/download/": {
         parameters: {
             query?: never;
@@ -1895,14 +1889,21 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /**
+         * Создать Open API схемы и скачать в zip
+         *
+         *     В результате вернет zip файл в потоке вывода
+         * @description @see https://editor.swagger.io/ Редактор Open API
+         *
+         *     test
+         */
         post: operations["GetOpenapi2Download"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Получение компании пользователя, через которых, были совершены платежи */
+    };
     "/get/payments_2/companies/": {
         parameters: {
             query?: never;
@@ -1912,14 +1913,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Получение компании пользователя, через которых, были совершены платежи */
         post: operations["GetPayments2Companies"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Подписание контракта (только для админов) */
+    };
     "/edit/payments_2/contractSign/": {
         parameters: {
             query?: never;
@@ -1929,14 +1930,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Подписание контракта (только для админов) */
         post: operations["EditPayments2ContractSign"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Изменение платежных реквизитов тарифа */
+    };
     "/edit/payments_2/nextRequisitesId/": {
         parameters: {
             query?: never;
@@ -1946,26 +1947,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Изменение платежных реквизитов тарифа */
         post: operations["EditPayments2NextRequisitesId"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /**
-     * Изменения подписки сейчас
-     *
-     *     Реализует две взаимоисключающие стратегии:
-     *
-     *     - Проведение доплаты по текущей подписке
-     *     - Остановка текущей подписки и создание новой
-     *        - Новая подписка получит скидку на первый платеж с учетом амортизации оплаты на действующую подписку
-     *        - После оплаты новой подписки действующая подписка будет досрочно завершена
-     *
-     *     Выбор стратегии зависит от типа управления подпиской
-     * @description @see Bank_2\Types\Subscriptions\Manager
-     */
+    };
     "/edit/payments_2/subscriptions/": {
         parameters: {
             query?: never;
@@ -1975,14 +1964,26 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /**
+         * Изменения подписки сейчас
+         *
+         *     Реализует две взаимоисключающие стратегии:
+         *
+         *     - Проведение доплаты по текущей подписке
+         *     - Остановка текущей подписки и создание новой
+         *        - Новая подписка получит скидку на первый платеж с учетом амортизации оплаты на действующую подписку
+         *        - После оплаты новой подписки действующая подписка будет досрочно завершена
+         *
+         *     Выбор стратегии зависит от типа управления подпиской
+         * @description @see Bank_2\Types\Subscriptions\Manager
+         */
         post: operations["EditPayments2Subscriptions"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Отправка заявки на подключение Тинькофф Бизнес */
+    };
     "/add/payments_2/urTinkoffCreateApplication/": {
         parameters: {
             query?: never;
@@ -1992,14 +1993,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Отправка заявки на подключение Тинькофф Бизнес */
         post: operations["AddPayments2UrTinkoffCreateApplication"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Валидация домена для подтверждения оплаты Apple Pay (system = card_ap) */
+    };
     "/get/payments_2/validateMerchantCardAP/": {
         parameters: {
             query?: never;
@@ -2009,14 +2010,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Валидация домена для подтверждения оплаты Apple Pay (system = card_ap) */
         post: operations["GetPayments2ValidateMerchantCardAP"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Добавление ПС */
+    };
     "/add/positions_2/searchers/": {
         parameters: {
             query?: never;
@@ -2026,14 +2027,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Добавление ПС */
         post: operations["AddPositions2Searchers"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Удаление ПС */
+    };
     "/del/positions_2/searchers/": {
         parameters: {
             query?: never;
@@ -2043,14 +2044,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Удаление ПС */
         post: operations["DelPositions2Searchers"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Установка общих настроек проверки позиций проекта */
+    };
     "/edit/positions_2/settings/": {
         parameters: {
             query?: never;
@@ -2060,14 +2061,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Установка общих настроек проверки позиций проекта */
         post: operations["EditPositions2Settings"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Добавление графика */
+    };
     "/add/projects_2/analytics/": {
         parameters: {
             query?: never;
@@ -2077,14 +2078,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Добавление графика */
         post: operations["AddProjects2Analytics"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Удаление графика */
+    };
     "/del/projects_2/analytics/": {
         parameters: {
             query?: never;
@@ -2094,14 +2095,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Удаление графика */
         post: operations["DelProjects2Analytics"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Настройка графика */
+    };
     "/edit/projects_2/analytics/": {
         parameters: {
             query?: never;
@@ -2111,14 +2112,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Настройка графика */
         post: operations["EditProjects2Analytics"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Получение списка графиков */
+    };
     "/get/projects_2/analytics/": {
         parameters: {
             query?: never;
@@ -2128,16 +2129,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Получение списка графиков */
         post: operations["GetProjects2Analytics"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Добавление конкурента
-     *
-     *     Ограничения: не более Projects_2\Competitors::MAX_COMPETITORS_PER_PROJECT конкурентов в одном проекте */
+    };
     "/add/projects_2/competitors/": {
         parameters: {
             query?: never;
@@ -2147,16 +2146,16 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Добавление конкурента
+         *
+         *     Ограничения: не более Projects_2\Competitors::MAX_COMPETITORS_PER_PROJECT конкурентов в одном проекте */
         post: operations["AddProjects2Competitors"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Удаление конкурентов
-     *
-     *     Обязательный параметр или ids или urls */
+    };
     "/del/projects_2/competitors/": {
         parameters: {
             query?: never;
@@ -2166,14 +2165,16 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Удаление конкурентов
+         *
+         *     Обязательный параметр или ids или urls */
         post: operations["DelProjects2Competitors"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Получение списка конкурентов */
+    };
     "/get/projects_2/competitors/": {
         parameters: {
             query?: never;
@@ -2183,14 +2184,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Получение списка конкурентов */
         post: operations["GetProjects2Competitors"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Добавление папки */
+    };
     "/add/projects_2/folders/": {
         parameters: {
             query?: never;
@@ -2200,14 +2201,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Добавление папки */
         post: operations["AddProjects2Folders"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Удаление папок */
+    };
     "/del/projects_2/folders/": {
         parameters: {
             query?: never;
@@ -2217,14 +2218,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Удаление папок */
         post: operations["DelProjects2Folders"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Получение списка папок */
+    };
     "/get/projects_2/folders/": {
         parameters: {
             query?: never;
@@ -2234,14 +2235,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Получение списка папок */
         post: operations["GetProjects2Folders"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Добавление проекта */
+    };
     "/add/projects_2/projects/": {
         parameters: {
             query?: never;
@@ -2251,14 +2252,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Добавление проекта */
         post: operations["AddProjects2Projects"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Удаление проектов */
+    };
     "/del/projects_2/projects/": {
         parameters: {
             query?: never;
@@ -2268,14 +2269,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Удаление проектов */
         post: operations["DelProjects2Projects"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Получение списка проектов */
+    };
     "/get/projects_2/projects/": {
         parameters: {
             query?: never;
@@ -2285,14 +2286,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Получение списка проектов */
         post: operations["GetProjects2Projects"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Удаление прав у пользователя */
+    };
     "/del/projects_2/rights/": {
         parameters: {
             query?: never;
@@ -2302,14 +2303,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Удаление прав у пользователя */
         post: operations["DelProjects2Rights"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Изменение прав на проект */
+    };
     "/edit/projects_2/rights/": {
         parameters: {
             query?: never;
@@ -2319,14 +2320,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Изменение прав на проект */
         post: operations["EditProjects2Rights"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Получение информации о настройке прав и смене владельца */
+    };
     "/get/projects_2/rights/": {
         parameters: {
             query?: never;
@@ -2336,17 +2337,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Получение информации о настройке прав и смене владельца */
         post: operations["GetProjects2Rights"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Получение информации о домене и SSL сертификате
-     *     Возвращает объект с параметрами:
-     *     - domain_expire
-     *     - ssl_expire */
+    };
     "/get/projects_2/status/": {
         parameters: {
             query?: never;
@@ -2356,14 +2354,17 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Получение информации о домене и SSL сертификате
+         *     Возвращает объект с параметрами:
+         *     - domain_expire
+         *     - ssl_expire */
         post: operations["GetProjects2Status"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Получение списка задач */
+    };
     "/get/projects_2/tasks/": {
         parameters: {
             query?: never;
@@ -2373,14 +2374,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Получение списка задач */
         post: operations["GetProjects2Tasks"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Удалить привязанную карту (system = card) */
+    };
     "/del/recurring_2/recurringCard/": {
         parameters: {
             query?: never;
@@ -2390,14 +2391,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Удалить привязанную карту (system = card) */
         post: operations["DelRecurring2RecurringCard"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Получение привязанных карт пользователя */
+    };
     "/get/recurring_2/recurringCard/": {
         parameters: {
             query?: never;
@@ -2407,14 +2408,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Получение привязанных карт пользователя */
         post: operations["GetRecurring2RecurringCard"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Изменить дополнительные параметры расписания */
+    };
     "/edit/schedule_2/settings/": {
         parameters: {
             query?: never;
@@ -2424,19 +2425,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Изменить дополнительные параметры расписания */
         post: operations["EditSchedule2Settings"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /**
-     * Получить дополнительные параметры расписания
-     *
-     *     Для каждого типа могут быть свои параметры
-     * @description @see Schedule_2\Mods\Settings
-     */
+    };
     "/get/schedule_2/settings/": {
         parameters: {
             query?: never;
@@ -2446,14 +2442,19 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /**
+         * Получить дополнительные параметры расписания
+         *
+         *     Для каждого типа могут быть свои параметры
+         * @description @see Schedule_2\Mods\Settings
+         */
         post: operations["GetSchedule2Settings"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Проверить код для подтверждения действия */
+    };
     "/get/sms_2/checkPIN/": {
         parameters: {
             query?: never;
@@ -2463,14 +2464,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Проверить код для подтверждения действия */
         post: operations["GetSms2CheckPIN"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Отправить код для подтверждения действия */
+    };
     "/get/sms_2/sendPIN/": {
         parameters: {
             query?: never;
@@ -2480,14 +2481,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Отправить код для подтверждения действия */
         post: operations["GetSms2SendPIN"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Получение данных доступных столбцов для выборки */
+    };
     "/get/templates_2/availableFieldsData/": {
         parameters: {
             query?: never;
@@ -2497,14 +2498,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Получение данных доступных столбцов для выборки */
         post: operations["GetTemplates2AvailableFieldsData"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Удаление сохраненного списка столбцов */
+    };
     "/del/templates_2/fields/": {
         parameters: {
             query?: never;
@@ -2514,14 +2515,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Удаление сохраненного списка столбцов */
         post: operations["DelTemplates2Fields"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Сохранение списка столбцов */
+    };
     "/edit/templates_2/fields/": {
         parameters: {
             query?: never;
@@ -2531,14 +2532,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Сохранение списка столбцов */
         post: operations["EditTemplates2Fields"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Получение сохраненного списока столбцов */
+    };
     "/get/templates_2/fields/": {
         parameters: {
             query?: never;
@@ -2548,14 +2549,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Получение сохраненного списока столбцов */
         post: operations["GetTemplates2Fields"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Получение дополнительных параметров к списку столбцов */
+    };
     "/get/templates_2/fieldsProperties/": {
         parameters: {
             query?: never;
@@ -2565,16 +2566,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Получение дополнительных параметров к списку столбцов */
         post: operations["GetTemplates2FieldsProperties"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Загрузка файла на сервер
-     *
-     *     Процесс создания сообщения в тикет не завершен */
+    };
     "/add/tickets_2/files/": {
         parameters: {
             query?: never;
@@ -2584,16 +2583,16 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Загрузка файла на сервер
+         *
+         *     Процесс создания сообщения в тикет не завершен */
         post: operations["AddTickets2Files"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Удаление временных файлов для тикета
-     *
-     *     Процесс создания поста не завершен */
+    };
     "/del/tickets_2/files/": {
         parameters: {
             query?: never;
@@ -2603,16 +2602,16 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Удаление временных файлов для тикета
+         *
+         *     Процесс создания поста не завершен */
         post: operations["DelTickets2Files"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Получение списка временных файлов, загруженных для тикета
-     *
-     *     Процесс создания поста не завершен */
+    };
     "/get/tickets_2/files/": {
         parameters: {
             query?: never;
@@ -2622,14 +2621,16 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Получение списка временных файлов, загруженных для тикета
+         *
+         *     Процесс создания поста не завершен */
         post: operations["GetTickets2Files"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Добавление сообщения к тикиту */
+    };
     "/add/tickets_2/messages/": {
         parameters: {
             query?: never;
@@ -2639,14 +2640,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Добавление сообщения к тикиту */
         post: operations["AddTickets2Messages"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Дать оценку тикету */
+    };
     "/edit/tickets_2/rate/": {
         parameters: {
             query?: never;
@@ -2656,14 +2657,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Дать оценку тикету */
         post: operations["EditTickets2Rate"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Создание тикета */
+    };
     "/add/tickets_2/tickets/": {
         parameters: {
             query?: never;
@@ -2673,14 +2674,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Создание тикета */
         post: operations["AddTickets2Tickets"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Редактирование тикета */
+    };
     "/edit/tickets_2/tickets/": {
         parameters: {
             query?: never;
@@ -2690,14 +2691,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Редактирование тикета */
         post: operations["EditTickets2Tickets"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Получение списка тикетов с сообщениями */
+    };
     "/get/tickets_2/tickets/": {
         parameters: {
             query?: never;
@@ -2707,14 +2708,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Получение списка тикетов с сообщениями */
         post: operations["GetTickets2Tickets"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Экспорт urls в определенном формате */
+    };
     "/get/urls_2/export/": {
         parameters: {
             query?: never;
@@ -2724,22 +2725,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Экспорт urls в определенном формате */
         post: operations["GetUrls2Export"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Импортирование urls
-     *
-     *     Доступные поля для импорта:
-     *     - url
-     *     - sitemap
-     *     - audit
-     *     - indexing
-     *     - watcher
-     *     - tags */
+    };
     "/add/urls_2/import/": {
         parameters: {
             query?: never;
@@ -2749,14 +2742,22 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Импортирование urls
+         *
+         *     Доступные поля для импорта:
+         *     - url
+         *     - sitemap
+         *     - audit
+         *     - indexing
+         *     - watcher
+         *     - tags */
         post: operations["AddUrls2Import"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Изменение тегов */
+    };
     "/edit/urls_2/tags/": {
         parameters: {
             query?: never;
@@ -2766,16 +2767,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Изменение тегов */
         post: operations["EditUrls2Tags"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Добавление комментария к отзыву
-     *
-     *     Оставить комментарий можно в течение часа поосле выставления оценки */
+    };
     "/edit/votes_2/comment/": {
         parameters: {
             query?: never;
@@ -2785,14 +2784,16 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Добавление комментария к отзыву
+         *
+         *     Оставить комментарий можно в течение часа поосле выставления оценки */
         post: operations["EditVotes2Comment"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Изменение параметров контрагента */
+    };
     "/edit/admin_2/accounting/counteragents/": {
         parameters: {
             query?: never;
@@ -2802,14 +2803,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Изменение параметров контрагента */
         post: operations["EditAdmin2AccountingCounteragents"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Получение контрагента */
+    };
     "/get/admin_2/accounting/counteragents/": {
         parameters: {
             query?: never;
@@ -2819,6 +2820,7 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Получение контрагента */
         post: operations["GetAdmin2AccountingCounteragents"];
         delete?: never;
         options?: never;
@@ -2841,8 +2843,7 @@ export interface paths {
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Получение групп */
+    };
     "/get/admin_2/accounting/group/": {
         parameters: {
             query?: never;
@@ -2852,14 +2853,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Получение групп */
         post: operations["GetAdmin2AccountingGroup"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Добавление счета на оплату */
+    };
     "/add/admin_2/accounting/invoices/": {
         parameters: {
             query?: never;
@@ -2869,14 +2870,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Добавление счета на оплату */
         post: operations["AddAdmin2AccountingInvoices"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Отмена отправки счета. Разрешено только для счетов со статусом pending или sending */
+    };
     "/del/admin_2/accounting/invoices/": {
         parameters: {
             query?: never;
@@ -2886,14 +2887,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Отмена отправки счета. Разрешено только для счетов со статусом pending или sending */
         post: operations["DelAdmin2AccountingInvoices"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Получение счетов на оплату */
+    };
     "/get/admin_2/accounting/invoices/": {
         parameters: {
             query?: never;
@@ -2903,14 +2904,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Получение счетов на оплату */
         post: operations["GetAdmin2AccountingInvoices"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Получение внутренних операций */
+    };
     "/get/admin_2/accounting/operations/": {
         parameters: {
             query?: never;
@@ -2920,14 +2921,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Получение внутренних операций */
         post: operations["GetAdmin2AccountingOperations"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Создание и проведение транзакции */
+    };
     "/edit/admin_2/actions/bank/": {
         parameters: {
             query?: never;
@@ -2937,14 +2938,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Создание и проведение транзакции */
         post: operations["EditAdmin2ActionsBank"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Отмена проведения счета */
+    };
     "/del/admin_2/actions/payments/": {
         parameters: {
             query?: never;
@@ -2954,14 +2955,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Отмена проведения счета */
         post: operations["DelAdmin2ActionsPayments"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Проведение счета */
+    };
     "/edit/admin_2/actions/payments/": {
         parameters: {
             query?: never;
@@ -2971,14 +2972,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Проведение счета */
         post: operations["EditAdmin2ActionsPayments"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Востановление удаленной проверки */
+    };
     "/edit/admin_2/actions/positions/": {
         parameters: {
             query?: never;
@@ -2988,14 +2989,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Востановление удаленной проверки */
         post: operations["EditAdmin2ActionsPositions"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Востановление удаленного проекта */
+    };
     "/edit/admin_2/actions/projects/": {
         parameters: {
             query?: never;
@@ -3005,14 +3006,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Востановление удаленного проекта */
         post: operations["EditAdmin2ActionsProjects"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Сбор статистики и трафика */
+    };
     "/get/admin_2/actions/projects/": {
         parameters: {
             query?: never;
@@ -3022,14 +3023,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Сбор статистики и трафика */
         post: operations["GetAdmin2ActionsProjects"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Добавление бота в телеграм канал */
+    };
     "/add/admin_2/actions/telegram/": {
         parameters: {
             query?: never;
@@ -3039,14 +3040,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Добавление бота в телеграм канал */
         post: operations["AddAdmin2ActionsTelegram"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Получение общей статистики по реферальной программе */
+    };
     "/get/admin_2/affiliate/referralProgramStats/": {
         parameters: {
             query?: never;
@@ -3056,14 +3057,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Получение общей статистики по реферальной программе */
         post: operations["GetAdmin2AffiliateReferralProgramStats"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Получение сводки числа рефералов по своему уровню */
+    };
     "/get/admin_2/affiliate/referralsByLevel/": {
         parameters: {
             query?: never;
@@ -3073,14 +3074,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Получение сводки числа рефералов по своему уровню */
         post: operations["GetAdmin2AffiliateReferralsByLevel"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Получение сводки по новым рефералам */
+    };
     "/get/admin_2/affiliate/referrals/": {
         parameters: {
             query?: never;
@@ -3090,14 +3091,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Получение сводки по новым рефералам */
         post: operations["GetAdmin2AffiliateReferrals"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Получение сводки числа партнеров по числу рефералов */
+    };
     "/get/admin_2/affiliate/referrersByReferrals/": {
         parameters: {
             query?: never;
@@ -3107,14 +3108,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Получение сводки числа партнеров по числу рефералов */
         post: operations["GetAdmin2AffiliateReferrersByReferrals"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Получение сводки по новым партнерам */
+    };
     "/get/admin_2/affiliate/referrers/": {
         parameters: {
             query?: never;
@@ -3124,14 +3125,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Получение сводки по новым партнерам */
         post: operations["GetAdmin2AffiliateReferrers"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Получение партнеров c кол-вом рефералов */
+    };
     "/get/admin_2/affiliate/referrersWithReferrals/": {
         parameters: {
             query?: never;
@@ -3141,21 +3142,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Получение партнеров c кол-вом рефералов */
         post: operations["GetAdmin2AffiliateReferrersWithReferrals"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Получение активности пользователей по статусам активности
-     *     статусы активности:
-     *            1. Активный - клиент, который пополнял баланс в сервисе хотя бы раз. При этом трата средств в течение месяца не мнее 100 рублей (или $5).
-     *            2. Активный (новый) - в эту категорию попадают клиенты, которые первый раз перешли в статус "Активного клиента".
-     *            3. Активный (постоянный) - в эту категорию попадют клиенты, которые не меняли свой статус активности за последний месяц
-     *            4. Активный (вернувшийся) - в эту категорию попадют клиенты, которые вернули себе статус "Активный клиент".
-     *            5. Стал не активным - в эту категорию попадют клиенты, которые потеряли статус "Активного клиента" и на протяжении 2 месяцев не возвращали
-     *     себе этот статус. */
+    };
     "/get/admin_2/analytics/activity/": {
         parameters: {
             query?: never;
@@ -3165,14 +3159,21 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Получение активности пользователей по статусам активности
+         *     статусы активности:
+         *            1. Активный - клиент, который пополнял баланс в сервисе хотя бы раз. При этом трата средств в течение месяца не мнее 100 рублей (или $5).
+         *            2. Активный (новый) - в эту категорию попадают клиенты, которые первый раз перешли в статус "Активного клиента".
+         *            3. Активный (постоянный) - в эту категорию попадют клиенты, которые не меняли свой статус активности за последний месяц
+         *            4. Активный (вернувшийся) - в эту категорию попадют клиенты, которые вернули себе статус "Активный клиент".
+         *            5. Стал не активным - в эту категорию попадют клиенты, которые потеряли статус "Активного клиента" и на протяжении 2 месяцев не возвращали
+         *     себе этот статус. */
         post: operations["GetAdmin2AnalyticsActivity"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Получение числа активных пользователей */
+    };
     "/get/admin_2/analytics/countOnlineUsers/": {
         parameters: {
             query?: never;
@@ -3182,14 +3183,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Получение числа активных пользователей */
         post: operations["GetAdmin2AnalyticsCountOnlineUsers"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Получение мероприятий */
+    };
     "/get/admin_2/analytics/events/": {
         parameters: {
             query?: never;
@@ -3199,14 +3200,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Получение мероприятий */
         post: operations["GetAdmin2AnalyticsEvents"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Получение суммы оплат за период */
+    };
     "/get/admin_2/analytics/payments/": {
         parameters: {
             query?: never;
@@ -3216,6 +3217,7 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Получение суммы оплат за период */
         post: operations["GetAdmin2AnalyticsPayments"];
         delete?: never;
         options?: never;
@@ -3238,8 +3240,7 @@ export interface paths {
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Получение статистики */
+    };
     "/get/admin_2/analytics/statistics/": {
         parameters: {
             query?: never;
@@ -3249,6 +3250,7 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Получение статистики */
         post: operations["GetAdmin2AnalyticsStatistics"];
         delete?: never;
         options?: never;
@@ -3271,8 +3273,7 @@ export interface paths {
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Получение тикетов */
+    };
     "/get/admin_2/analytics/tickets/": {
         parameters: {
             query?: never;
@@ -3282,14 +3283,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Получение тикетов */
         post: operations["GetAdmin2AnalyticsTickets"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Получение категорий словаря */
+    };
     "/get/admin_2/i18n/categories/": {
         parameters: {
             query?: never;
@@ -3299,14 +3300,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Получение категорий словаря */
         post: operations["GetAdmin2I18nCategories"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Получение данных из системного лога */
+    };
     "/get/admin_2/logs/system/": {
         parameters: {
             query?: never;
@@ -3316,6 +3317,7 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Получение данных из системного лога */
         post: operations["GetAdmin2LogsSystem"];
         delete?: never;
         options?: never;
@@ -3338,8 +3340,7 @@ export interface paths {
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Рейтинг по сообщениям в слеке за предыдущий месяц */
+    };
     "/get/admin_2/slack/rate/": {
         parameters: {
             query?: never;
@@ -3349,14 +3350,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Рейтинг по сообщениям в слеке за предыдущий месяц */
         post: operations["GetAdmin2SlackRate"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Настройка доступа */
+    };
     "/edit/admin_2/staff/access/": {
         parameters: {
             query?: never;
@@ -3366,14 +3367,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Настройка доступа */
         post: operations["EditAdmin2StaffAccess"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Получение из бд данные сотрудников указанного поста */
+    };
     "/get/admin_2/staff/byPost/": {
         parameters: {
             query?: never;
@@ -3383,14 +3384,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Получение из бд данные сотрудников указанного поста */
         post: operations["GetAdmin2StaffByPost"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Печать договора */
+    };
     "/get/admin_2/staff/contractPrint/": {
         parameters: {
             query?: never;
@@ -3400,6 +3401,7 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Печать договора */
         post: operations["GetAdmin2StaffContractPrint"];
         delete?: never;
         options?: never;
@@ -3423,8 +3425,7 @@ export interface paths {
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Добавление отпуска для сотрудника */
+    };
     "/add/admin_2/staff/vacation/": {
         parameters: {
             query?: never;
@@ -3434,14 +3435,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Добавление отпуска для сотрудника */
         post: operations["AddAdmin2StaffVacation"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Удаление данных об отпуске */
+    };
     "/del/admin_2/staff/vacation/": {
         parameters: {
             query?: never;
@@ -3451,14 +3452,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Удаление данных об отпуске */
         post: operations["DelAdmin2StaffVacation"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Печать заявления на отпуск */
+    };
     "/get/admin_2/staff/vacationPrint/": {
         parameters: {
             query?: never;
@@ -3468,14 +3469,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Печать заявления на отпуск */
         post: operations["GetAdmin2StaffVacationPrint"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Получение схему HTML шаблона */
+    };
     "/get/admin_2/tpl/schema/": {
         parameters: {
             query?: never;
@@ -3485,14 +3486,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Получение схему HTML шаблона */
         post: operations["GetAdmin2TplSchema"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Добавление промокоды к достижению */
+    };
     "/add/admin_2/users/promocodes/": {
         parameters: {
             query?: never;
@@ -3502,18 +3503,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Добавление промокоды к достижению */
         post: operations["AddAdmin2UsersPromocodes"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Получение промокодов
-     *
-     *     В params хранится строка в формате:
-     *     - {{ rank_id }}
-     *     - {{ rank_id }},single_code - для многоразового кода */
+    };
     "/get/admin_2/users/promocodes/": {
         parameters: {
             query?: never;
@@ -3523,14 +3520,18 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Получение промокодов
+         *
+         *     В params хранится строка в формате:
+         *     - {{ rank_id }}
+         *     - {{ rank_id }},single_code - для многоразового кода */
         post: operations["GetAdmin2UsersPromocodes"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Добавление достижение */
+    };
     "/add/admin_2/users/ranks/": {
         parameters: {
             query?: never;
@@ -3540,14 +3541,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Добавление достижение */
         post: operations["AddAdmin2UsersRanks"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Измение достижение */
+    };
     "/edit/admin_2/users/ranks/": {
         parameters: {
             query?: never;
@@ -3557,14 +3558,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Измение достижение */
         post: operations["EditAdmin2UsersRanks"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Получение достижения */
+    };
     "/get/admin_2/users/ranks/": {
         parameters: {
             query?: never;
@@ -3574,17 +3575,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Получение достижения */
         post: operations["GetAdmin2UsersRanks"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /**
-     * Получение сводки анализа сайта
-     * @deprecated
-     */
+    };
     "/get/audit_2/audit/browse/": {
         parameters: {
             query?: never;
@@ -3594,18 +3592,17 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /**
+         * Получение сводки анализа сайта
+         * @deprecated
+         */
         post: operations["GetAudit2AuditBrowse"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Получение общей информации о проверках
-     *     - только для проверки, которая не завершена
-     *     - в ответе будут заменены значения кодов ответа на текущие: count_000, count_1xx, count_2xx, count_3xx, count_4xx, count_5xx
-     *     - в ответе будет заменено значение count_pages и count_all на текущие
-     *     - в ответ будет добавлены значения robot_step и robot_count_tasks_allм */
+    };
     "/get/audit_2/audit/checks/": {
         parameters: {
             query?: never;
@@ -3615,14 +3612,18 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Получение общей информации о проверках
+         *     - только для проверки, которая не завершена
+         *     - в ответе будут заменены значения кодов ответа на текущие: count_000, count_1xx, count_2xx, count_3xx, count_4xx, count_5xx
+         *     - в ответе будет заменено значение count_pages и count_all на текущие
+         *     - в ответ будет добавлены значения robot_step и robot_count_tasks_allм */
         post: operations["GetAudit2AuditChecks"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Получение проверенных css */
+    };
     "/get/audit_2/audit/css/": {
         parameters: {
             query?: never;
@@ -3632,14 +3633,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Получение проверенных css */
         post: operations["GetAudit2AuditCss"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Экспорт результатов проверки файла */
+    };
     "/get/audit_2/audit/export/": {
         parameters: {
             query?: never;
@@ -3649,14 +3650,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Экспорт результатов проверки файла */
         post: operations["GetAudit2AuditExport"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Получение проверенных изображений */
+    };
     "/get/audit_2/audit/images/": {
         parameters: {
             query?: never;
@@ -3666,14 +3667,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Получение проверенных изображений */
         post: operations["GetAudit2AuditImages"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Получение проверенных js */
+    };
     "/get/audit_2/audit/js/": {
         parameters: {
             query?: never;
@@ -3683,14 +3684,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Получение проверенных js */
         post: operations["GetAudit2AuditJs"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Получение проверенных ссылок */
+    };
     "/get/audit_2/audit/links/": {
         parameters: {
             query?: never;
@@ -3700,14 +3701,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Получение проверенных ссылок */
         post: operations["GetAudit2AuditLinks"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Получение данных проверенных ресурсов */
+    };
     "/get/audit_2/audit/log/": {
         parameters: {
             query?: never;
@@ -3717,14 +3718,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Получение данных проверенных ресурсов */
         post: operations["GetAudit2AuditLog"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Получение страниц, по которым был выполнен аудит */
+    };
     "/get/audit_2/audit/pages/": {
         parameters: {
             query?: never;
@@ -3734,14 +3735,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Получение страниц, по которым был выполнен аудит */
         post: operations["GetAudit2AuditPages"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Получение сводки о выполненном аудите */
+    };
     "/get/audit_2/audit/summary/": {
         parameters: {
             query?: never;
@@ -3751,14 +3752,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Получение сводки о выполненном аудите */
         post: operations["GetAudit2AuditSummary"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Получение сводки страницы */
+    };
     "/get/audit_2/audit/summaryPage/": {
         parameters: {
             query?: never;
@@ -3768,16 +3769,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Получение сводки страницы */
         post: operations["GetAudit2AuditSummaryPage"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Экспорт результатов индексации
-     *
-     *     Необходимо указать либо date1 и date2, либо dates (вместе указывать нельзя) */
+    };
     "/get/audit_2/indexing/export/": {
         parameters: {
             query?: never;
@@ -3787,16 +3786,16 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Экспорт результатов индексации
+         *
+         *     Необходимо указать либо date1 и date2, либо dates (вместе указывать нельзя) */
         post: operations["GetAudit2IndexingExport"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Создание гостевой ссылки на просмотр позиций
-     *
-     *     Необходимо указать либо date1 и date2, либо dates (вместе указывать нельзя) */
+    };
     "/get/audit_2/indexing/links/": {
         parameters: {
             query?: never;
@@ -3806,14 +3805,16 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Создание гостевой ссылки на просмотр позиций
+         *
+         *     Необходимо указать либо date1 и date2, либо dates (вместе указывать нельзя) */
         post: operations["GetAudit2IndexingLinks"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Получение сводки индексации */
+    };
     "/get/audit_2/indexing/summary/": {
         parameters: {
             query?: never;
@@ -3823,19 +3824,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Получение сводки индексации */
         post: operations["GetAudit2IndexingSummary"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Построение отчета по одному URL
-     *
-     *     Отличия от get/audit_2/watcher:
-     *     - отчет генерируется на основе объекта watcher_results, а не urls
-     *     - параметры выбора периода отчета игнорируются
-     *     - выбор прверок регулируется параметрами запроса filters, limit и offset */
+    };
     "/get/audit_2/watcher/byURL/": {
         parameters: {
             query?: never;
@@ -3845,14 +3841,19 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Построение отчета по одному URL
+         *
+         *     Отличия от get/audit_2/watcher:
+         *     - отчет генерируется на основе объекта watcher_results, а не urls
+         *     - параметры выбора периода отчета игнорируются
+         *     - выбор прверок регулируется параметрами запроса filters, limit и offset */
         post: operations["GetAudit2WatcherByURL"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Получение проверок радара */
+    };
     "/get/audit_2/watcher/checks/": {
         parameters: {
             query?: never;
@@ -3862,14 +3863,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Получение проверок радара */
         post: operations["GetAudit2WatcherChecks"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Получение сводки радара */
+    };
     "/get/audit_2/watcher/summary/": {
         parameters: {
             query?: never;
@@ -3879,14 +3880,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Получение сводки радара */
         post: operations["GetAudit2WatcherSummary"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Отправка договора в диадок */
+    };
     "/get/bank_2/diadoc/sendContract/": {
         parameters: {
             query?: never;
@@ -3896,16 +3897,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Отправка договора в диадок */
         post: operations["GetBank2DiadocSendContract"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Отправка акта сверки в диадок
-     *
-     *     Параметры см. в bank_2_requisites::protected_get_printTotalReceipt(); */
+    };
     "/get/bank_2/diadoc/sendTotalReceipt/": {
         parameters: {
             query?: never;
@@ -3915,14 +3914,16 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Отправка акта сверки в диадок
+         *
+         *     Параметры см. в bank_2_requisites::protected_get_printTotalReceipt(); */
         post: operations["GetBank2DiadocSendTotalReceipt"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Экспорт лога банка */
+    };
     "/get/bank_2/history/export/": {
         parameters: {
             query?: never;
@@ -3932,14 +3933,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Экспорт лога банка */
         post: operations["GetBank2HistoryExport"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Получение сводки проведенных операций */
+    };
     "/get/bank_2/history/summary/": {
         parameters: {
             query?: never;
@@ -3949,14 +3950,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Получение сводки проведенных операций */
         post: operations["GetBank2HistorySummary"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Перевод средств с реферального счета на бонусный */
+    };
     "/edit/bank_2/referrals/toBonus/": {
         parameters: {
             query?: never;
@@ -3966,14 +3967,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Перевод средств с реферального счета на бонусный */
         post: operations["EditBank2ReferralsToBonus"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Получение id тарифа пользователя по типу контракта */
+    };
     "/get/bank_2/requisites/contractTariffId/": {
         parameters: {
             query?: never;
@@ -3983,14 +3984,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Получение id тарифа пользователя по типу контракта */
         post: operations["GetBank2RequisitesContractTariffId"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Скачивание документа в формате PDF */
+    };
     "/get/bank_2/requisites/print/": {
         parameters: {
             query?: never;
@@ -4000,14 +4001,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Скачивание документа в формате PDF */
         post: operations["GetBank2RequisitesPrint"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Получение акта сверки (акты по предоплате выводятся в одном платеже) */
+    };
     "/get/bank_2/requisites/printTotalReceipt/": {
         parameters: {
             query?: never;
@@ -4017,14 +4018,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Получение акта сверки (акты по предоплате выводятся в одном платеже) */
         post: operations["GetBank2RequisitesPrintTotalReceipt"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Скачивание архива документов в формате PDF */
+    };
     "/get/bank_2/requisites/printZip/": {
         parameters: {
             query?: never;
@@ -4034,14 +4035,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Скачивание архива документов в формате PDF */
         post: operations["GetBank2RequisitesPrintZip"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Получение интерфейсов настройки всех планов подписки */
+    };
     "/get/bank_2/subscriptions/plans/": {
         parameters: {
             query?: never;
@@ -4051,14 +4052,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Получение интерфейсов настройки всех планов подписки */
         post: operations["GetBank2SubscriptionsPlans"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Изменение статуса объявлений */
+    };
     "/edit/broker_2/ads/status/": {
         parameters: {
             query?: never;
@@ -4068,14 +4069,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Изменение статуса объявлений */
         post: operations["EditBroker2AdsStatus"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Отправка объявления на модерацию */
+    };
     "/edit/broker_2/ads/toModerate/": {
         parameters: {
             query?: never;
@@ -4085,14 +4086,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Отправка объявления на модерацию */
         post: operations["EditBroker2AdsToModerate"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Обновление данных таргетинга */
+    };
     "/edit/broker_2/campaigns/updateTargeting/": {
         parameters: {
             query?: never;
@@ -4102,14 +4103,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Обновление данных таргетинга */
         post: operations["EditBroker2CampaignsUpdateTargeting"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Получение групп рекламной кампании для редактора */
+    };
     "/get/broker_2/groups/editor/": {
         parameters: {
             query?: never;
@@ -4119,14 +4120,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Получение групп рекламной кампании для редактора */
         post: operations["GetBroker2GroupsEditor"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Изменение статуса запросов рекламной кампании */
+    };
     "/edit/broker_2/keywords/status/": {
         parameters: {
             query?: never;
@@ -4136,14 +4137,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Изменение статуса запросов рекламной кампании */
         post: operations["EditBroker2KeywordsStatus"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Экспортирование архива логов */
+    };
     "/get/broker_2/log/export/": {
         parameters: {
             query?: never;
@@ -4153,14 +4154,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Экспортирование архива логов */
         post: operations["GetBroker2LogExport"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Ручной запуск корректировки */
+    };
     "/add/broker_2/tasks/rateTask/": {
         parameters: {
             query?: never;
@@ -4170,14 +4171,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Ручной запуск корректировки */
         post: operations["AddBroker2TasksRateTask"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Оплатить отчет */
+    };
     "/edit/competitors_2/orders/pay/": {
         parameters: {
             query?: never;
@@ -4187,14 +4188,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Оплатить отчет */
         post: operations["EditCompetitors2OrdersPay"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Получение календаря апдейтов */
+    };
     "/get/content_2/apometr/calendar/": {
         parameters: {
             query?: never;
@@ -4204,14 +4205,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Получение календаря апдейтов */
         post: operations["GetContent2ApometrCalendar"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Получение истории urls, найденных в выдаче, за конкретную проверку */
+    };
     "/get/content_2/apometr/cHHistory/": {
         parameters: {
             query?: never;
@@ -4221,14 +4222,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Получение истории urls, найденных в выдаче, за конкретную проверку */
         post: operations["GetContent2ApometrCHHistory"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Получение истории шторма за период в 2 суток */
+    };
     "/get/content_2/apometr/history/": {
         parameters: {
             query?: never;
@@ -4238,14 +4239,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Получение истории шторма за период в 2 суток */
         post: operations["GetContent2ApometrHistory"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Получение поисковых запросов апометра */
+    };
     "/get/content_2/apometr/keywords/": {
         parameters: {
             query?: never;
@@ -4255,14 +4256,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Получение поисковых запросов апометра */
         post: operations["GetContent2ApometrKeywords"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Получение апдейтов */
+    };
     "/get/content_2/apometr/updates/": {
         parameters: {
             query?: never;
@@ -4272,14 +4273,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Получение апдейтов */
         post: operations["GetContent2ApometrUpdates"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Получение статьи */
+    };
     "/get/content_2/journal/articles/": {
         parameters: {
             query?: never;
@@ -4289,14 +4290,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Получение статьи */
         post: operations["GetContent2JournalArticles"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Получение закладок авторов */
+    };
     "/get/content_2/journal/bookmarksAuthors/": {
         parameters: {
             query?: never;
@@ -4306,14 +4307,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Получение закладок авторов */
         post: operations["GetContent2JournalBookmarksAuthors"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Получение закладок */
+    };
     "/get/content_2/journal/bookmarks/": {
         parameters: {
             query?: never;
@@ -4323,16 +4324,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Получение закладок */
         post: operations["GetContent2JournalBookmarks"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Получение инофрмации о курсах
-     *
-     *     Параметры выборки основаны на модели Models\Pages */
+    };
     "/get/content_2/journal/course/": {
         parameters: {
             query?: never;
@@ -4342,14 +4341,16 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Получение инофрмации о курсах
+         *
+         *     Параметры выборки основаны на модели Models\Pages */
         post: operations["GetContent2JournalCourse"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Получение рубрики */
+    };
     "/get/content_2/journal/rubrics/": {
         parameters: {
             query?: never;
@@ -4359,14 +4360,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Получение рубрики */
         post: operations["GetContent2JournalRubrics"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Изменение состояния подписки на рассылку журнала */
+    };
     "/edit/content_2/journal/subscribe/": {
         parameters: {
             query?: never;
@@ -4376,14 +4377,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Изменение состояния подписки на рассылку журнала */
         post: operations["EditContent2JournalSubscribe"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Сортировка документов */
+    };
     "/edit/content_2/pages/order/": {
         parameters: {
             query?: never;
@@ -4393,14 +4394,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Сортировка документов */
         post: operations["EditContent2PagesOrder"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Получение меню справки */
+    };
     "/get/content_2/support/menu/": {
         parameters: {
             query?: never;
@@ -4410,14 +4411,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Получение меню справки */
         post: operations["GetContent2SupportMenu"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Постановка задачи на подбор запросов */
+    };
     "/edit/keywords_2/collect/go/": {
         parameters: {
             query?: never;
@@ -4427,17 +4428,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Постановка задачи на подбор запросов */
         post: operations["EditKeywords2CollectGo"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /**
-     * Получение стоимости подбора запросов
-     * @description @see Keywords_2\Methods\Collect\AbstractRegular
-     */
+    };
     "/get/keywords_2/collect/price/": {
         parameters: {
             query?: never;
@@ -4447,19 +4445,17 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /**
+         * Получение стоимости подбора запросов
+         * @description @see Keywords_2\Methods\Collect\AbstractRegular
+         */
         post: operations["GetKeywords2CollectPrice"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /**
-     * Импорт запросов (по необходимости зависимых с ними групп и папок)
-     *
-     *     Доступные поля для импорта: group_folder_path|group_name|name|tags|target поля перекрывают аналогичные параметры в запросе
-     * @description @see Keywords_2\Mods\Keywords\Import::fromHandle()
-     */
+    };
     "/add/keywords_2/keywords/import/": {
         parameters: {
             query?: never;
@@ -4469,14 +4465,19 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /**
+         * Импорт запросов (по необходимости зависимых с ними групп и папок)
+         *
+         *     Доступные поля для импорта: group_folder_path|group_name|name|tags|target поля перекрывают аналогичные параметры в запросе
+         * @description @see Keywords_2\Mods\Keywords\Import::fromHandle()
+         */
         post: operations["AddKeywords2KeywordsImport"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Постановка задачи на проверку частоты запросов */
+    };
     "/edit/keywords_2/volumes/go/": {
         parameters: {
             query?: never;
@@ -4486,14 +4487,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Постановка задачи на проверку частоты запросов */
         post: operations["EditKeywords2VolumesGo"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Информация о стоимости запуска проверки позиций по проектам */
+    };
     "/get/keywords_2/volumes/price/": {
         parameters: {
             query?: never;
@@ -4503,14 +4504,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Информация о стоимости запуска проверки позиций по проектам */
         post: operations["GetKeywords2VolumesPrice"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Отправление письма с лэндинга вакансий на hr@topvisor.com */
+    };
     "/add/landings_2/hr/feedback/": {
         parameters: {
             query?: never;
@@ -4520,14 +4521,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Отправление письма с лэндинга вакансий на hr@topvisor.com */
         post: operations["AddLandings2HrFeedback"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Управление приостановкой/возобновлением рекуррентных платежей */
+    };
     "/edit/payments_2/recurrent/suspend/": {
         parameters: {
             query?: never;
@@ -4537,18 +4538,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Управление приостановкой/возобновлением рекуррентных платежей */
         post: operations["EditPayments2RecurrentSuspend"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Изменения подписки на следующий расчетный период
-     *
-     *     Изменение доступно только в рамках одной платежной системы
-     *
-     *     Если требуется изменить другие параметры подписки, это можно только путем остановки этой подписки и созданием новой подписки */
+    };
     "/edit/payments_2/subscriptions/next/": {
         parameters: {
             query?: never;
@@ -4558,14 +4555,18 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Изменения подписки на следующий расчетный период
+         *
+         *     Изменение доступно только в рамках одной платежной системы
+         *
+         *     Если требуется изменить другие параметры подписки, это можно только путем остановки этой подписки и созданием новой подписки */
         post: operations["EditPayments2SubscriptionsNext"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Отписка от тарифа, оплаченного картой */
+    };
     "/edit/payments_2/tariff/delCard/": {
         parameters: {
             query?: never;
@@ -4575,14 +4576,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Отписка от тарифа, оплаченного картой */
         post: operations["EditPayments2TariffDelCard"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Настройка оплаты тарифов: выставлять ли счета через диадок */
+    };
     "/edit/payments_2/tariff/nextToDiadoc/": {
         parameters: {
             query?: never;
@@ -4592,14 +4593,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Настройка оплаты тарифов: выставлять ли счета через диадок */
         post: operations["EditPayments2TariffNextToDiadoc"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Смена тарифа со следующего месяца */
+    };
     "/edit/payments_2/tariff/setNext/": {
         parameters: {
             query?: never;
@@ -4609,14 +4610,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Смена тарифа со следующего месяца */
         post: operations["EditPayments2TariffSetNext"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Отправка проектов на проверку позиций */
+    };
     "/edit/positions_2/checker/go/": {
         parameters: {
             query?: never;
@@ -4626,14 +4627,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Отправка проектов на проверку позиций */
         post: operations["EditPositions2CheckerGo"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Информация о стоимости запуска проверки позиций по проектам */
+    };
     "/get/positions_2/checker/price/": {
         parameters: {
             query?: never;
@@ -4643,14 +4644,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Информация о стоимости запуска проверки позиций по проектам */
         post: operations["GetPositions2CheckerPrice"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Включение/выключение ПС */
+    };
     "/edit/positions_2/searchers/enabled/": {
         parameters: {
             query?: never;
@@ -4660,14 +4661,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Включение/выключение ПС */
         post: operations["EditPositions2SearchersEnabled"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Добавление региона */
+    };
     "/add/positions_2/searchers/regions/": {
         parameters: {
             query?: never;
@@ -4677,14 +4678,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Добавление региона */
         post: operations["AddPositions2SearchersRegions"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Удаление региона */
+    };
     "/del/positions_2/searchers/regions/": {
         parameters: {
             query?: never;
@@ -4694,14 +4695,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Удаление региона */
         post: operations["DelPositions2SearchersRegions"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Изменение региона */
+    };
     "/edit/positions_2/searchers/regions/": {
         parameters: {
             query?: never;
@@ -4711,14 +4712,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Изменение региона */
         post: operations["EditPositions2SearchersRegions"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Настройка сортировки ПС */
+    };
     "/edit/positions_2/searchers/sort/": {
         parameters: {
             query?: never;
@@ -4728,14 +4729,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Настройка сортировки ПС */
         post: operations["EditPositions2SearchersSort"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Получение данных графика */
+    };
     "/get/projects_2/analytics/graph/": {
         parameters: {
             query?: never;
@@ -4745,14 +4746,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Получение данных графика */
         post: operations["GetProjects2AnalyticsGraph"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Перемещение конкурента (сортировка) */
+    };
     "/edit/projects_2/competitors/move/": {
         parameters: {
             query?: never;
@@ -4762,14 +4763,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Перемещение конкурента (сортировка) */
         post: operations["EditProjects2CompetitorsMove"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Установка имени конкурента */
+    };
     "/edit/projects_2/competitors/name/": {
         parameters: {
             query?: never;
@@ -4779,14 +4780,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Установка имени конкурента */
         post: operations["EditProjects2CompetitorsName"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Включение/выключение конкурентов */
+    };
     "/edit/projects_2/competitors/on/": {
         parameters: {
             query?: never;
@@ -4796,14 +4797,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Включение/выключение конкурентов */
         post: operations["EditProjects2CompetitorsOn"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Перемещение проектов в папку */
+    };
     "/edit/projects_2/folders/move/": {
         parameters: {
             query?: never;
@@ -4813,16 +4814,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Перемещение проектов в папку */
         post: operations["EditProjects2FoldersMove"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Переместить папку
-     *
-     *     Вложенные папки запрещены, поэтому перемещение происходит только в пределах одного списка */
+    };
     "/edit/projects_2/folders/moveFolder/": {
         parameters: {
             query?: never;
@@ -4832,14 +4831,16 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Переместить папку
+         *
+         *     Вложенные папки запрещены, поэтому перемещение происходит только в пределах одного списка */
         post: operations["EditProjects2FoldersMoveFolder"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Изменение имени папки */
+    };
     "/edit/projects_2/folders/name/": {
         parameters: {
             query?: never;
@@ -4849,16 +4850,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Изменение имени папки */
         post: operations["EditProjects2FoldersName"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Получить подсазки конкурентов для добавления в проект
-     *
-     *     Доступ по API закрыт */
+    };
     "/get/projects_2/master/hintsCompetitors/": {
         parameters: {
             query?: never;
@@ -4868,15 +4867,16 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Получить подсазки конкурентов для добавления в проект
+         *
+         *     Доступ по API закрыт */
         post: operations["GetProjects2MasterHintsCompetitors"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Получить подсазки запросов для добавления в проект
-     *     Доступ по API закрыт */
+    };
     "/get/projects_2/master/hintsKeywords/": {
         parameters: {
             query?: never;
@@ -4886,14 +4886,15 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Получить подсазки запросов для добавления в проект
+         *     Доступ по API закрыт */
         post: operations["GetProjects2MasterHintsKeywords"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Копирование проекта */
+    };
     "/add/projects_2/projects/copy/": {
         parameters: {
             query?: never;
@@ -4903,14 +4904,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Копирование проекта */
         post: operations["AddProjects2ProjectsCopy"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Настройка избранных проектов */
+    };
     "/edit/projects_2/projects/favorite/": {
         parameters: {
             query?: never;
@@ -4920,14 +4921,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Настройка избранных проектов */
         post: operations["EditProjects2ProjectsFavorite"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Перемещение проекта (сортировка) */
+    };
     "/edit/projects_2/projects/move/": {
         parameters: {
             query?: never;
@@ -4937,14 +4938,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Перемещение проекта (сортировка) */
         post: operations["EditProjects2ProjectsMove"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Установка имени проекта */
+    };
     "/edit/projects_2/projects/name/": {
         parameters: {
             query?: never;
@@ -4954,14 +4955,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Установка имени проекта */
         post: operations["EditProjects2ProjectsName"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Редактирование "on" проектов */
+    };
     "/edit/projects_2/projects/on/": {
         parameters: {
             query?: never;
@@ -4971,14 +4972,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Редактирование "on" проектов */
         post: operations["EditProjects2ProjectsOn"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Изменение сортировки проектов */
+    };
     "/edit/projects_2/projects/sort/": {
         parameters: {
             query?: never;
@@ -4988,14 +4989,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Изменение сортировки проектов */
         post: operations["EditProjects2ProjectsSort"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Редактирование тегов проектов */
+    };
     "/edit/projects_2/projects/tags/": {
         parameters: {
             query?: never;
@@ -5005,14 +5006,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Редактирование тегов проектов */
         post: operations["EditProjects2ProjectsTags"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Редактирование ссылки проекта */
+    };
     "/edit/projects_2/projects/url/": {
         parameters: {
             query?: never;
@@ -5022,14 +5023,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Редактирование ссылки проекта */
         post: operations["EditProjects2ProjectsUrl"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Отмена передачи проекта */
+    };
     "/del/projects_2/rights/changeOwner/": {
         parameters: {
             query?: never;
@@ -5039,14 +5040,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Отмена передачи проекта */
         post: operations["DelProjects2RightsChangeOwner"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Инициализация передачи проекта другому пользователю */
+    };
     "/edit/projects_2/rights/changeOwner/": {
         parameters: {
             query?: never;
@@ -5056,19 +5057,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Инициализация передачи проекта другому пользователю */
         post: operations["EditProjects2RightsChangeOwner"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Получение информации о регистрации домена
-     *
-     *     Возвращает объект с параметрами:
-     *     - wait_time, если данные не готовы
-     *     - created, если данные готовы
-     *     - paidtill, если данные готовы */
+    };
     "/get/projects_2/status/registrar/": {
         parameters: {
             query?: never;
@@ -5078,16 +5074,19 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Получение информации о регистрации домена
+         *
+         *     Возвращает объект с параметрами:
+         *     - wait_time, если данные не готовы
+         *     - created, если данные готовы
+         *     - paidtill, если данные готовы */
         post: operations["GetProjects2StatusRegistrar"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Получение информации об SSL сертификате
-     *     Возваращает объект с параметрами:
-     *     - expire */
+    };
     "/get/projects_2/status/ssl/": {
         parameters: {
             query?: never;
@@ -5097,14 +5096,16 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Получение информации об SSL сертификате
+         *     Возваращает объект с параметрами:
+         *     - expire */
         post: operations["GetProjects2StatusSsl"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Создание задачи */
+    };
     "/add/projects_2/tasks/volumes/": {
         parameters: {
             query?: never;
@@ -5114,14 +5115,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Создание задачи */
         post: operations["AddProjects2TasksVolumes"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Получить список групп с пользователями */
+    };
     "/get/redmine_2/users/groups/": {
         parameters: {
             query?: never;
@@ -5131,14 +5132,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Получить список групп с пользователями */
         post: operations["GetRedmine2UsersGroups"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Отправить тестовый отчет */
+    };
     "/edit/reports_2/positions/sendTest/": {
         parameters: {
             query?: never;
@@ -5148,14 +5149,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Отправить тестовый отчет */
         post: operations["EditReports2PositionsSendTest"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Получить список email, используемых в любых расписаниях, к которым есть доступ у аккаунта */
+    };
     "/get/schedule_2/settings/emailsHints/": {
         parameters: {
             query?: never;
@@ -5165,14 +5166,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Получить список email, используемых в любых расписаниях, к которым есть доступ у аккаунта */
         post: operations["GetSchedule2SettingsEmailsHints"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Удаление ответа в тикете, только для админов */
+    };
     "/del/tickets_2/admin/message/": {
         parameters: {
             query?: never;
@@ -5182,14 +5183,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Удаление ответа в тикете, только для админов */
         post: operations["DelTickets2AdminMessage"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Редактирование текста ответа в тикете, только для админов */
+    };
     "/edit/tickets_2/admin/message/": {
         parameters: {
             query?: never;
@@ -5199,14 +5200,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Редактирование текста ответа в тикете, только для админов */
         post: operations["EditTickets2AdminMessage"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Добавление шаблона тикета */
+    };
     "/add/tickets_2/admin/templates/": {
         parameters: {
             query?: never;
@@ -5216,14 +5217,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Добавление шаблона тикета */
         post: operations["AddTickets2AdminTemplates"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Удаление шаблона */
+    };
     "/del/tickets_2/admin/templates/": {
         parameters: {
             query?: never;
@@ -5233,14 +5234,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Удаление шаблона */
         post: operations["DelTickets2AdminTemplates"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Изменение шаблона */
+    };
     "/edit/tickets_2/admin/templates/": {
         parameters: {
             query?: never;
@@ -5250,14 +5251,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Изменение шаблона */
         post: operations["EditTickets2AdminTemplates"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Получение шаблона тикета */
+    };
     "/get/tickets_2/admin/templates/": {
         parameters: {
             query?: never;
@@ -5267,14 +5268,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Получение шаблона тикета */
         post: operations["GetTickets2AdminTemplates"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Редактирование тикета (для админов) */
+    };
     "/edit/tickets_2/admin/ticket/": {
         parameters: {
             query?: never;
@@ -5284,14 +5285,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Редактирование тикета (для админов) */
         post: operations["EditTickets2AdminTicket"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Перенос последниего сообщения (до 1 сообщения автора) в новый тикет */
+    };
     "/edit/tickets_2/admin/ticketSplit/": {
         parameters: {
             query?: never;
@@ -5301,14 +5302,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Перенос последниего сообщения (до 1 сообщения автора) в новый тикет */
         post: operations["EditTickets2AdminTicketSplit"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Получение инфомрации о пользователе */
+    };
     "/get/tickets_2/admin/user/": {
         parameters: {
             query?: never;
@@ -5318,14 +5319,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Получение инфомрации о пользователе */
         post: operations["GetTickets2AdminUser"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Установка userId для тикетов без userId */
+    };
     "/edit/tickets_2/admin/userId/": {
         parameters: {
             query?: never;
@@ -5335,14 +5336,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Установка userId для тикетов без userId */
         post: operations["EditTickets2AdminUserId"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Редактирваоние комменатрий админа */
+    };
     "/edit/tickets_2/tickets/adminComment/": {
         parameters: {
             query?: never;
@@ -5352,16 +5353,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Редактирваоние комменатрий админа */
         post: operations["EditTickets2TicketsAdminComment"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Получение краткой информации о тикетах
-     *
-     *     id последнего непрочитанного тикета, число непрочитанных тикетов */
+    };
     "/get/tickets_2/tickets/info/": {
         parameters: {
             query?: never;
@@ -5371,14 +5370,16 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Получение краткой информации о тикетах
+         *
+         *     id последнего непрочитанного тикета, число непрочитанных тикетов */
         post: operations["GetTickets2TicketsInfo"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Пометка тикета как "прочитанный" для автора тикета или админов */
+    };
     "/edit/tickets_2/tickets/setReaded/": {
         parameters: {
             query?: never;
@@ -5388,14 +5389,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Пометка тикета как "прочитанный" для автора тикета или админов */
         post: operations["EditTickets2TicketsSetReaded"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Написание текста */
+    };
     "/edit/tickets_2/tickets/writing/": {
         parameters: {
             query?: never;
@@ -5405,14 +5406,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Написание текста */
         post: operations["EditTickets2TicketsWriting"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Получение URL к карте сайта по файлу robots.txt для указанного домена */
+    };
     "/get/urls_2/import/recognizeLinkSitemapXml/": {
         parameters: {
             query?: never;
@@ -5422,14 +5423,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Получение URL к карте сайта по файлу robots.txt для указанного домена */
         post: operations["GetUrls2ImportRecognizeLinkSitemapXml"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Привязка email к аккаунту */
+    };
     "/add/users_2/join/email/": {
         parameters: {
             query?: never;
@@ -5439,14 +5440,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Привязка email к аккаунту */
         post: operations["AddUsers2JoinEmail"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Добавление фильтра группы */
+    };
     "/add/admin_2/accounting/group/filter/": {
         parameters: {
             query?: never;
@@ -5456,14 +5457,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Добавление фильтра группы */
         post: operations["AddAdmin2AccountingGroupFilter"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Удаление фильтра группы */
+    };
     "/del/admin_2/accounting/group/filter/": {
         parameters: {
             query?: never;
@@ -5473,14 +5474,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Удаление фильтра группы */
         post: operations["DelAdmin2AccountingGroupFilter"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Изменение фильтра группы */
+    };
     "/edit/admin_2/accounting/group/filter/": {
         parameters: {
             query?: never;
@@ -5490,14 +5491,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Изменение фильтра группы */
         post: operations["EditAdmin2AccountingGroupFilter"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Скачивание документа */
+    };
     "/get/admin_2/accounting/invoices/file/": {
         parameters: {
             query?: never;
@@ -5507,18 +5508,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Скачивание документа */
         post: operations["GetAdmin2AccountingInvoicesFile"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /**
-     * Скачивание реестра исходящих операций
-     * @description @POST string month - месяц в формате: YYYY-mm
-     *     столбцы CSV: 'Дата акта', 'Номер акта', 'Контрагент', 'ИНН', 'Товар/услуга', 'Номенклатура', 'Кол-во', 'Цена', 'НДС', 'Сумма', 'Способ оплаты'
-     */
+    };
     "/get/admin_2/accounting/operations/export/": {
         parameters: {
             query?: never;
@@ -5528,14 +5525,18 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /**
+         * Скачивание реестра исходящих операций
+         * @description @POST string month - месяц в формате: YYYY-mm
+         *     столбцы CSV: 'Дата акта', 'Номер акта', 'Контрагент', 'ИНН', 'Товар/услуга', 'Номенклатура', 'Кол-во', 'Цена', 'НДС', 'Сумма', 'Способ оплаты'
+         */
         post: operations["GetAdmin2AccountingOperationsExport"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Востановление поисковых запросов из бэкапа */
+    };
     "/edit/admin_2/actions/backup/keywords/": {
         parameters: {
             query?: never;
@@ -5545,14 +5546,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Востановление поисковых запросов из бэкапа */
         post: operations["EditAdmin2ActionsBackupKeywords"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Загрузить и разместить бекап в БД бекапов */
+    };
     "/edit/admin_2/actions/backup/loader/": {
         parameters: {
             query?: never;
@@ -5562,14 +5563,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Загрузить и разместить бекап в БД бекапов */
         post: operations["EditAdmin2ActionsBackupLoader"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Востановление удаленного проекта */
+    };
     "/edit/admin_2/actions/backup/project/": {
         parameters: {
             query?: never;
@@ -5579,14 +5580,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Востановление удаленного проекта */
         post: operations["EditAdmin2ActionsBackupProject"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Оплата реферального счета */
+    };
     "/edit/admin_2/actions/bank/referral/": {
         parameters: {
             query?: never;
@@ -5596,14 +5597,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Оплата реферального счета */
         post: operations["EditAdmin2ActionsBankReferral"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Отправка акты в диадок */
+    };
     "/add/admin_2/actions/payments/diadoc/": {
         parameters: {
             query?: never;
@@ -5613,14 +5614,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Отправка акты в диадок */
         post: operations["AddAdmin2ActionsPaymentsDiadoc"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Импортирование историй позиций из CSV */
+    };
     "/add/admin_2/actions/positions/history/": {
         parameters: {
             query?: never;
@@ -5630,14 +5631,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Импортирование историй позиций из CSV */
         post: operations["AddAdmin2ActionsPositionsHistory"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Сброс статуса проверки позиций */
+    };
     "/edit/admin_2/actions/positions/status/": {
         parameters: {
             query?: never;
@@ -5647,14 +5648,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Сброс статуса проверки позиций */
         post: operations["EditAdmin2ActionsPositionsStatus"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Изменение домена проекта */
+    };
     "/edit/admin_2/actions/projects/domain/": {
         parameters: {
             query?: never;
@@ -5664,14 +5665,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Изменение домена проекта */
         post: operations["EditAdmin2ActionsProjectsDomain"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Добавить регионы Google в сервис */
+    };
     "/edit/admin_2/actions/regions/commitGoogle/": {
         parameters: {
             query?: never;
@@ -5681,17 +5682,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Добавить регионы Google в сервис */
         post: operations["EditAdmin2ActionsRegionsCommitGoogle"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /**
-     * Обновление регионов Google
-     * @description @see https://developers.google.com/google-ads/api/data/geotargets
-     */
+    };
     "/edit/admin_2/actions/regions/updateGoogle/": {
         parameters: {
             query?: never;
@@ -5701,14 +5699,17 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /**
+         * Обновление регионов Google
+         * @description @see https://developers.google.com/google-ads/api/data/geotargets
+         */
         post: operations["EditAdmin2ActionsRegionsUpdateGoogle"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Перевод проверок позиций яндекс */
+    };
     "/edit/admin_2/actions/robot/checks/": {
         parameters: {
             query?: never;
@@ -5718,14 +5719,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Перевод проверок позиций яндекс */
         post: operations["EditAdmin2ActionsRobotChecks"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Изменение приоритета задач */
+    };
     "/edit/admin_2/actions/robot/priority/": {
         parameters: {
             query?: never;
@@ -5735,14 +5736,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Изменение приоритета задач */
         post: operations["EditAdmin2ActionsRobotPriority"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Снятие задачи с дэбага */
+    };
     "/edit/admin_2/actions/robot/task/": {
         parameters: {
             query?: never;
@@ -5752,14 +5753,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Снятие задачи с дэбага */
         post: operations["EditAdmin2ActionsRobotTask"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Удаление файлов */
+    };
     "/del/admin_2/actions/slack/files/": {
         parameters: {
             query?: never;
@@ -5769,14 +5770,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Удаление файлов */
         post: operations["DelAdmin2ActionsSlackFiles"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Удаление сообщений */
+    };
     "/del/admin_2/actions/slack/messages/": {
         parameters: {
             query?: never;
@@ -5786,14 +5787,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Удаление сообщений */
         post: operations["DelAdmin2ActionsSlackMessages"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Изменение валюты пользователя */
+    };
     "/edit/admin_2/actions/user/currency/": {
         parameters: {
             query?: never;
@@ -5803,14 +5804,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Изменение валюты пользователя */
         post: operations["EditAdmin2ActionsUserCurrency"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Замена email пользователя */
+    };
     "/edit/admin_2/actions/user/email/": {
         parameters: {
             query?: never;
@@ -5820,14 +5821,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Замена email пользователя */
         post: operations["EditAdmin2ActionsUserEmail"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Получение сводки по группам */
+    };
     "/get/admin_2/analytics/accounting/summaryForChart/": {
         parameters: {
             query?: never;
@@ -5837,14 +5838,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Получение сводки по группам */
         post: operations["GetAdmin2AnalyticsAccountingSummaryForChart"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Получение активности пользователей в формате для графика */
+    };
     "/get/admin_2/analytics/activity/chartByPeriod/": {
         parameters: {
             query?: never;
@@ -5854,14 +5855,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Получение активности пользователей в формате для графика */
         post: operations["GetAdmin2AnalyticsActivityChartByPeriod"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Получение конкурентов для графика */
+    };
     "/get/admin_2/analytics/competitors/summaryForOrdersChart/": {
         parameters: {
             query?: never;
@@ -5871,14 +5872,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Получение конкурентов для графика */
         post: operations["GetAdmin2AnalyticsCompetitorsSummaryForOrdersChart"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Получение суммы оплат по системам платежей за период */
+    };
     "/get/admin_2/analytics/payments/systems/": {
         parameters: {
             query?: never;
@@ -5888,14 +5889,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Получение суммы оплат по системам платежей за период */
         post: operations["GetAdmin2AnalyticsPaymentsSystems"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Получение суммы оплат по тарифам за период */
+    };
     "/get/admin_2/analytics/payments/tariff/": {
         parameters: {
             query?: never;
@@ -5905,14 +5906,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Получение суммы оплат по тарифам за период */
         post: operations["GetAdmin2AnalyticsPaymentsTariff"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Получение числа автоматических проверока по дням по часам */
+    };
     "/get/admin_2/analytics/positions/chartByDayByHourAuto/": {
         parameters: {
             query?: never;
@@ -5922,14 +5923,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Получение числа автоматических проверока по дням по часам */
         post: operations["GetAdmin2AnalyticsPositionsChartByDayByHourAuto"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Получение числа автоматических проверок по часам */
+    };
     "/get/admin_2/analytics/positions/chartByHourAuto/": {
         parameters: {
             query?: never;
@@ -5939,14 +5940,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Получение числа автоматических проверок по часам */
         post: operations["GetAdmin2AnalyticsPositionsChartByHourAuto"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Получение числа проверок за месяц по часам */
+    };
     "/get/admin_2/analytics/positions/chartByHour/": {
         parameters: {
             query?: never;
@@ -5956,14 +5957,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Получение числа проверок за месяц по часам */
         post: operations["GetAdmin2AnalyticsPositionsChartByHour"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Получение числа проверок по часам по пользователям */
+    };
     "/get/admin_2/analytics/positions/chartCountUsersByHour/": {
         parameters: {
             query?: never;
@@ -5973,14 +5974,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Получение числа проверок по часам по пользователям */
         post: operations["GetAdmin2AnalyticsPositionsChartCountUsersByHour"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Получение статистики тикетов по миграциям */
+    };
     "/get/admin_2/analytics/tickets/chartByMigrations/": {
         parameters: {
             query?: never;
@@ -5990,14 +5991,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Получение статистики тикетов по миграциям */
         post: operations["GetAdmin2AnalyticsTicketsChartByMigrations"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Получение статистики по кол-ву пользователей, открывших первый тикет */
+    };
     "/get/admin_2/analytics/tickets/chartByNew/": {
         parameters: {
             query?: never;
@@ -6007,14 +6008,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Получение статистики по кол-ву пользователей, открывших первый тикет */
         post: operations["GetAdmin2AnalyticsTicketsChartByNew"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Получение статистики тикетов по оценкам */
+    };
     "/get/admin_2/analytics/tickets/chartByRates/": {
         parameters: {
             query?: never;
@@ -6024,14 +6025,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Получение статистики тикетов по оценкам */
         post: operations["GetAdmin2AnalyticsTicketsChartByRates"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Получение статистику тикетов по тегам */
+    };
     "/get/admin_2/analytics/tickets/chartByTags/": {
         parameters: {
             query?: never;
@@ -6041,14 +6042,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Получение статистику тикетов по тегам */
         post: operations["GetAdmin2AnalyticsTicketsChartByTags"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Получение статистики по среднему времени ожидания ответа на вопросы в тикетах */
+    };
     "/get/admin_2/analytics/tickets/chartByWaitTime/": {
         parameters: {
             query?: never;
@@ -6058,14 +6059,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Получение статистики по среднему времени ожидания ответа на вопросы в тикетах */
         post: operations["GetAdmin2AnalyticsTicketsChartByWaitTime"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Получение статистики ответов на тикеты */
+    };
     "/get/admin_2/analytics/tickets/messages/": {
         parameters: {
             query?: never;
@@ -6075,14 +6076,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Получение статистики ответов на тикеты */
         post: operations["GetAdmin2AnalyticsTicketsMessages"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Помечание лога как обработанного */
+    };
     "/edit/admin_2/logs/system/checked/": {
         parameters: {
             query?: never;
@@ -6092,16 +6093,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Помечание лога как обработанного */
         post: operations["EditAdmin2LogsSystemChecked"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Получение графика с количеством подписок на рубрики с сегментцией по способам рассылки
-     *
-     *     График кешируется, первый запрос может выполняться дольше */
+    };
     "/get/admin_2/users/informer/subscriptions/": {
         parameters: {
             query?: never;
@@ -6111,14 +6110,16 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Получение графика с количеством подписок на рубрики с сегментцией по способам рассылки
+         *
+         *     График кешируется, первый запрос может выполняться дольше */
         post: operations["GetAdmin2UsersInformerSubscriptions"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Запуск проверки аудита */
+    };
     "/edit/audit_2/audit/checker/go/": {
         parameters: {
             query?: never;
@@ -6128,14 +6129,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Запуск проверки аудита */
         post: operations["EditAudit2AuditCheckerGo"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Информация о стоимости запуска аудита по проектам */
+    };
     "/get/audit_2/audit/checker/price/": {
         parameters: {
             query?: never;
@@ -6145,14 +6146,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Информация о стоимости запуска аудита по проектам */
         post: operations["GetAudit2AuditCheckerPrice"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Получение гостевой ссылки на просмотр аудита позиций */
+    };
     "/get/audit_2/audit/export/links/": {
         parameters: {
             query?: never;
@@ -6162,14 +6163,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Получение гостевой ссылки на просмотр аудита позиций */
         post: operations["GetAudit2AuditExportLinks"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Экспорт отчета Анализа сайта */
+    };
     "/get/audit_2/audit/export/summary/": {
         parameters: {
             query?: never;
@@ -6179,14 +6180,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Экспорт отчета Анализа сайта */
         post: operations["GetAudit2AuditExportSummary"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Получение информации о текущей ошибке на роботе */
+    };
     "/get/audit_2/audit/log/actualError/": {
         parameters: {
             query?: never;
@@ -6196,17 +6197,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Получение информации о текущей ошибке на роботе */
         post: operations["GetAudit2AuditLogActualError"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /**
-     * Получение данных для графика
-     * @deprecated
-     */
+    };
     "/get/audit_2/audit/log/chart/": {
         parameters: {
             query?: never;
@@ -6216,17 +6214,17 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /**
+         * Получение данных для графика
+         * @deprecated
+         */
         post: operations["GetAudit2AuditLogChart"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /**
-     * Экспорт результатов аудита
-     * @deprecated
-     */
+    };
     "/get/audit_2/audit/results/export/": {
         parameters: {
             query?: never;
@@ -6236,17 +6234,17 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /**
+         * Экспорт результатов аудита
+         * @deprecated
+         */
         post: operations["GetAudit2AuditResultsExport"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /**
-     * Получение результатов анализа страницы
-     * @deprecated
-     */
+    };
     "/get/audit_2/audit/results/page/": {
         parameters: {
             query?: never;
@@ -6256,14 +6254,17 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /**
+         * Получение результатов анализа страницы
+         * @deprecated
+         */
         post: operations["GetAudit2AuditResultsPage"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Отправка проектов на проверку индексации */
+    };
     "/edit/audit_2/indexing/checker/go/": {
         parameters: {
             query?: never;
@@ -6273,14 +6274,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Отправка проектов на проверку индексации */
         post: operations["EditAudit2IndexingCheckerGo"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Информация о стоимости запуска индексации по проектам */
+    };
     "/get/audit_2/indexing/checker/price/": {
         parameters: {
             query?: never;
@@ -6290,16 +6291,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Информация о стоимости запуска индексации по проектам */
         post: operations["GetAudit2IndexingCheckerPrice"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Получение гостевой ссылки на просмотр индексации
-     *
-     *     Необходимо указать либо date1 и date2, либо dates (вместе указывать нельзя) */
+    };
     "/get/audit_2/indexing/export/links/": {
         parameters: {
             query?: never;
@@ -6309,14 +6308,16 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Получение гостевой ссылки на просмотр индексации
+         *
+         *     Необходимо указать либо date1 и date2, либо dates (вместе указывать нельзя) */
         post: operations["GetAudit2IndexingExportLinks"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Экспорт файла в хранилище */
+    };
     "/get/audit_2/indexing/export/toRepository/": {
         parameters: {
             query?: never;
@@ -6326,14 +6327,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Экспорт файла в хранилище */
         post: operations["GetAudit2IndexingExportToRepository"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Получение сводок индексации для графика */
+    };
     "/get/audit_2/indexing/summary/chart/": {
         parameters: {
             query?: never;
@@ -6343,14 +6344,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Получение сводок индексации для графика */
         post: operations["GetAudit2IndexingSummaryChart"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Отправка проектов на проверку карты сайта */
+    };
     "/edit/audit_2/sitemap/checker/go/": {
         parameters: {
             query?: never;
@@ -6360,14 +6361,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Отправка проектов на проверку карты сайта */
         post: operations["EditAudit2SitemapCheckerGo"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Информация о стоимости запуска индексации по проектам */
+    };
     "/get/audit_2/sitemap/checker/price/": {
         parameters: {
             query?: never;
@@ -6377,14 +6378,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Информация о стоимости запуска индексации по проектам */
         post: operations["GetAudit2SitemapCheckerPrice"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Отправка проектов на проверку радара */
+    };
     "/edit/audit_2/watcher/checker/go/": {
         parameters: {
             query?: never;
@@ -6394,14 +6395,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Отправка проектов на проверку радара */
         post: operations["EditAudit2WatcherCheckerGo"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Информация о стоимости запуска индексации по проектам */
+    };
     "/get/audit_2/watcher/checker/price/": {
         parameters: {
             query?: never;
@@ -6411,14 +6412,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Информация о стоимости запуска индексации по проектам */
         post: operations["GetAudit2WatcherCheckerPrice"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Создание гостевой ссылки на просмотр радара */
+    };
     "/get/audit_2/watcher/export/links/": {
         parameters: {
             query?: never;
@@ -6428,14 +6429,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Создание гостевой ссылки на просмотр радара */
         post: operations["GetAudit2WatcherExportLinks"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Получение сводок радара для графика */
+    };
     "/get/audit_2/watcher/summary/chart/": {
         parameters: {
             query?: never;
@@ -6445,14 +6446,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Получение сводок радара для графика */
         post: operations["GetAudit2WatcherSummaryChart"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Получение календаря текстовых апдейтов */
+    };
     "/get/content_2/apometr/text/calendar/": {
         parameters: {
             query?: never;
@@ -6462,14 +6463,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Получение календаря текстовых апдейтов */
         post: operations["GetContent2ApometrTextCalendar"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Получение текстовых апдейтов */
+    };
     "/get/content_2/apometr/text/updates/": {
         parameters: {
             query?: never;
@@ -6479,14 +6480,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Получение текстовых апдейтов */
         post: operations["GetContent2ApometrTextUpdates"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Получение дат апдейтов */
+    };
     "/get/content_2/apometr/updates/dates/": {
         parameters: {
             query?: never;
@@ -6496,16 +6497,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Получение дат апдейтов */
         post: operations["GetContent2ApometrUpdatesDates"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Создание сертификата
-     *
-     *     Можно создавать только для пройденных курсов */
+    };
     "/add/content_2/journal/course/certificates/": {
         parameters: {
             query?: never;
@@ -6515,16 +6514,16 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Создание сертификата
+         *
+         *     Можно создавать только для пройденных курсов */
         post: operations["AddContent2JournalCourseCertificates"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Изменение сертификата
-     *
-     *     Можно менять только имя, если оно не указано */
+    };
     "/edit/content_2/journal/course/certificates/": {
         parameters: {
             query?: never;
@@ -6534,14 +6533,16 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Изменение сертификата
+         *
+         *     Можно менять только имя, если оно не указано */
         post: operations["EditContent2JournalCourseCertificates"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Получение своего сертификата */
+    };
     "/get/content_2/journal/course/certificates/": {
         parameters: {
             query?: never;
@@ -6551,17 +6552,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Получение своего сертификата */
         post: operations["GetContent2JournalCourseCertificates"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Получение модулей курса
-     *
-     *     Дополнительные поля:
-     *      - lessons - см. includeLessons() */
+    };
     "/get/content_2/journal/course/chapters/": {
         parameters: {
             query?: never;
@@ -6571,18 +6569,17 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Получение модулей курса
+         *
+         *     Дополнительные поля:
+         *      - lessons - см. includeLessons() */
         post: operations["GetContent2JournalCourseChapters"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /**
-     * Получение списка страниц по буквам для модуля SEO словарь
-     *     Результат функции кешируется
-     * @description @return array<string, array{url: string, h1: string}> - массив с ключом "Буква" и значением массив страниц Pages
-     */
+    };
     "/get/content_2/journal/dictionary/articlesByLetter/": {
         parameters: {
             query?: never;
@@ -6592,17 +6589,18 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /**
+         * Получение списка страниц по буквам для модуля SEO словарь
+         *     Результат функции кешируется
+         * @description @return array<string, array{url: string, h1: string}> - массив с ключом "Буква" и значением массив страниц Pages
+         */
         post: operations["GetContent2JournalDictionaryArticlesByLetter"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /**
-     * Получение стаьи для "Слово дня" в модуле SEO словарь
-     * @description @return (array<string, array{url: string, menu_name: string, description: string, count_views: integer}> | null)
-     */
+    };
     "/get/content_2/journal/dictionary/wordOfday/": {
         parameters: {
             query?: never;
@@ -6612,14 +6610,17 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /**
+         * Получение стаьи для "Слово дня" в модуле SEO словарь
+         * @description @return (array<string, array{url: string, menu_name: string, description: string, count_views: integer}> | null)
+         */
         post: operations["GetContent2JournalDictionaryWordOfday"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Постановка задачи на расширение группы */
+    };
     "/edit/keywords_2/collect/ext/go/": {
         parameters: {
             query?: never;
@@ -6629,14 +6630,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Постановка задачи на расширение группы */
         post: operations["EditKeywords2CollectExtGo"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Получение цены на расширение группы */
+    };
     "/get/keywords_2/collect/ext/price/": {
         parameters: {
             query?: never;
@@ -6646,16 +6647,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Получение цены на расширение группы */
         post: operations["GetKeywords2CollectExtPrice"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Экспорт регионов (CSV)
-     *
-     *     - searcher_key, name_or_key (название или код)[, country_code (2 буквенный код страны), lang, device, depth] */
+    };
     "/get/positions_2/searchers/regions/export/": {
         parameters: {
             query?: never;
@@ -6665,14 +6664,16 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Экспорт регионов (CSV)
+         *
+         *     - searcher_key, name_or_key (название или код)[, country_code (2 буквенный код страны), lang, device, depth] */
         post: operations["GetPositions2SearchersRegionsExport"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Импорт регионов (CSV) */
+    };
     "/add/positions_2/searchers/regions/import/": {
         parameters: {
             query?: never;
@@ -6682,14 +6683,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Импорт регионов (CSV) */
         post: operations["AddPositions2SearchersRegionsImport"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Настройка сортировки регионов */
+    };
     "/edit/positions_2/searchers/regions/sort/": {
         parameters: {
             query?: never;
@@ -6699,14 +6700,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Настройка сортировки регионов */
         post: operations["EditPositions2SearchersRegionsSort"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Получение проверки частоты задачи без проекта */
+    };
     "/get/projects_2/tasks/volumes/price/": {
         parameters: {
             query?: never;
@@ -6716,14 +6717,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Получение проверки частоты задачи без проекта */
         post: operations["GetProjects2TasksVolumesPrice"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Получение статуса проверки частоты задачи */
+    };
     "/get/projects_2/tasks/volumes/status/": {
         parameters: {
             query?: never;
@@ -6733,14 +6734,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Получение статуса проверки частоты задачи */
         post: operations["GetProjects2TasksVolumesStatus"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Изменение сортировки шаблонов */
+    };
     "/edit/tickets_2/admin/templates/sort/": {
         parameters: {
             query?: never;
@@ -6750,14 +6751,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Изменение сортировки шаблонов */
         post: operations["EditTickets2AdminTemplatesSort"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Копирование истории позиций */
+    };
     "/add/admin_2/actions/positions/history/copy/": {
         parameters: {
             query?: never;
@@ -6767,14 +6768,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Копирование истории позиций */
         post: operations["AddAdmin2ActionsPositionsHistoryCopy"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Получение сертификата по id */
+    };
     "/get/content_2/journal/course/certificates/byID/": {
         parameters: {
             query?: never;
@@ -6784,14 +6785,14 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Получение сертификата по id */
         post: operations["GetContent2JournalCourseCertificatesByID"];
         delete?: never;
         options?: never;
         head?: never;
         patch?: never;
         trace?: never;
-    };  
-    /** Получение сертификата в виде изображения */
+    };
     "/get/content_2/journal/course/certificates/image/": {
         parameters: {
             query?: never;
@@ -6801,6 +6802,7 @@ export interface paths {
         };
         get?: never;
         put?: never;
+        /** Получение сертификата в виде изображения */
         post: operations["GetContent2JournalCourseCertificatesImage"];
         delete?: never;
         options?: never;

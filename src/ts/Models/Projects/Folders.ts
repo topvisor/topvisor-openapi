@@ -8,10 +8,10 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         "Models.Projects.Folders": {
-            id?: any;
-            user_id?: any;
-            name?: any;
-            order?: any;
+            id?: unknown;
+            user_id?: unknown;
+            name?: unknown;
+            order?: unknown;
         };
     };
     responses: never;

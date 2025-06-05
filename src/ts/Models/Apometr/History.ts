@@ -8,14 +8,14 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         "Models.Apometr.History": {
-            time?: any;
-            action?: any;
-            region_index?: any;
-            keyword_id?: any;
-            url?: any;
-            position?: any;
-            d?: any;
-            d_day?: any;
+            time?: unknown;
+            action?: unknown;
+            region_index?: unknown;
+            keyword_id?: unknown;
+            url?: unknown;
+            position?: unknown;
+            d?: unknown;
+            d_day?: unknown;
         };
     };
     responses: never;
