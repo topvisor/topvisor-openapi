@@ -1885,8 +1885,6 @@ export interface paths {
      *
      *     В результате вернет zip файл в потоке вывода
      * @description @see https://editor.swagger.io/ Редактор Open API
-     *
-     *     test
      */
     "/get/openapi_2/download/": {
         parameters: {

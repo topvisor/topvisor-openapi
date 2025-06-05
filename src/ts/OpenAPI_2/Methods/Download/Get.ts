@@ -12,8 +12,6 @@ export interface components {
          *
          *     В результате вернет zip файл в потоке вывода
          * @description @see https://editor.swagger.io/ Редактор Open API
-         *
-         *     test
          */
         "OpenAPI_2.Methods.Download.Get": {
             /**
