@@ -1,11 +1,11 @@
 name: Build & Commit OpenAPI YAML Single File
 
 on:
-  push:
-    branches:
-      - main
-    paths:
-      - src/json/Topvisor.json
+#  push:
+#    branches:
+#      - main
+#    paths:
+#      - src/json/Topvisor.json
   workflow_dispatch:
 
 concurrency:
