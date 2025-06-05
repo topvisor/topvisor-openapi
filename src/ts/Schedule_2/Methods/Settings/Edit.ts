@@ -16,7 +16,7 @@ export interface components {
             type: string;
             /** Id объекта, для которого требуется получить параметры расписания */
             target_id: number;
-            /** Id второго объекта, для которого требуется получить параметры расписания (обзятельно для mentions) */
+            /** Id второго объекта, для которого требуется получить параметры расписания (обязательно для mentions) */
             target_id_2?: number | null;
             /** Список email для отправки отчетов */
             emails?: import('../../../TV/API/Types/EmailArray.ts').components['schemas']['TV.API.Types.EmailArray'] | null;
