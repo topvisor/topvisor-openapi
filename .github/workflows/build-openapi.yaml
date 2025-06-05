@@ -6,6 +6,11 @@ on:
       - main
     paths:
       - src/json/Topvisor.json
+  workflow_dispatch:
+
+concurrency:
+  group: openapi-build-${{ github.ref }}
+  cancel-in-progress: true
 
 jobs:
   build-and-commit:
