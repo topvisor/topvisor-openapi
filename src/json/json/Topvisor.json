@@ -5,6 +5,39 @@
     "version": "2.0.0"
   },
   "paths": {
+    "/get/openapi_2/download/": {
+      "post": {
+        "operationId": "GetOpenapi2Download",
+        "tags": [
+          "Openapi_2"
+        ],
+        "summary": "Создать Open API схемы и скачать в zip\n\nВ результате вернет zip файл в потоке вывода",
+        "description": "@see https://editor.swagger.io/ Редактор Open API",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "OpenAPI_2/Methods/Download/Get.json#/components/schemas/OpenAPI_2.Methods.Download.Get"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/octet-stream": {
+                "schema": {
+                  "type": "string",
+                  "format": "binary"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "/add/analytics_2/": {
       "post": {
         "operationId": "AddAnalytics2",
@@ -6605,39 +6638,6 @@
                 "schema": {
                   "$ref": "Models/Groups.json#/components/schemas/Models.Groups",
                   "description": "Only for typescript, does not contain real data"
-                }
-              }
-            }
-          }
-        }
-      }
-    },
-    "/get/openapi_2/download/": {
-      "post": {
-        "operationId": "GetOpenapi2Download",
-        "tags": [
-          "Openapi_2"
-        ],
-        "summary": "Создать Open API схемы и скачать в zip\n\nВ результате вернет zip файл в потоке вывода",
-        "description": "@see https://editor.swagger.io/ Редактор Open API",
-        "requestBody": {
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "OpenAPI_2/Methods/Download/Get.json#/components/schemas/OpenAPI_2.Methods.Download.Get"
-              }
-            }
-          },
-          "required": true
-        },
-        "responses": {
-          "200": {
-            "description": "",
-            "content": {
-              "application/octet-stream": {
-                "schema": {
-                  "type": "string",
-                  "format": "binary"
                 }
               }
             }

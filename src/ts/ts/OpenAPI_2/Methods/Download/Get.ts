@@ -19,6 +19,12 @@ export interface components {
              * @default json
              */
             format: string;
+            /** Использовать инкрементальный вывод схемы
+             *
+             *     В этом режиме в схему будут добавляться только изменения за один час
+             *
+             *     test */
+            incremental?: boolean;
         };
     };
     responses: never;

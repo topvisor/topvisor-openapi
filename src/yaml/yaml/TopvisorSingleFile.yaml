@@ -114,6 +114,30 @@ tags:
   - name: Webscreens_2
     description: webscreens_2
 paths:
+  /get/openapi_2/download/:
+    post:
+      operationId: GetOpenapi2Download
+      tags:
+        - Openapi_2
+      summary: |-
+        Создать Open API схемы и скачать в zip
+
+        В результате вернет zip файл в потоке вывода
+      description: '@see https://editor.swagger.io/ Редактор Open API'
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/OpenAPI_2.Methods.Download.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/octet-stream:
+              schema:
+                type: string
+                format: binary
   /add/analytics_2/:
     post:
       operationId: AddAnalytics2
@@ -3768,30 +3792,6 @@ paths:
               schema:
                 $ref: '#/components/schemas/Models.Groups'
                 description: Only for typescript, does not contain real data
-  /get/openapi_2/download/:
-    post:
-      operationId: GetOpenapi2Download
-      tags:
-        - Openapi_2
-      summary: |-
-        Создать Open API схемы и скачать в zip
-
-        В результате вернет zip файл в потоке вывода
-      description: '@see https://editor.swagger.io/ Редактор Open API'
-      requestBody:
-        content:
-          application/json:
-            schema:
-              $ref: '#/components/schemas/OpenAPI_2.Methods.Download.Get'
-        required: true
-      responses:
-        '200':
-          description: ''
-          content:
-            application/octet-stream:
-              schema:
-                type: string
-                format: binary
   /get/payments_2/companies/:
     post:
       operationId: GetPayments2Companies
@@ -13020,6 +13020,19 @@ components:
       name: auth
       in: cookie
   schemas:
+    OpenAPI_2.Methods.Download.Get:
+      type: object
+      properties:
+        format:
+          title: Формат схемы Open API, json или yaml
+          default: json
+          type: string
+        incremental:
+          title: "Использовать инкрементальный вывод схемы\r\n\r\nВ этом режиме в схему будут добавляться только изменения за один час\r\n\r\ntest"
+          type: boolean
+      required: []
+      title: "Создать Open API схемы и скачать в zip\r\n\r\nВ результате вернет zip файл в потоке вывода"
+      description: '@see https://editor.swagger.io/ Редактор Open API'
     Analytics_2.Methods.Add:
       type: object
       properties:
@@ -18765,19 +18778,6 @@ components:
               - date
               - project_id
               - region_index
-    OpenAPI_2.Methods.Download.Get:
-      type: object
-      properties:
-        format:
-          title: Формат схемы Open API, json или yaml
-          default: json
-          type: string
-      required: []
-      title: |-
-        Создать Open API схемы и скачать в zip
-
-        В результате вернет zip файл в потоке вывода
-      description: '@see https://editor.swagger.io/ Редактор Open API'
     Payments_2.Methods.Companies.Get:
       type: object
       properties: {}
