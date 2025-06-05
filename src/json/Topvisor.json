@@ -11,7 +11,7 @@
                 "tags": [
                     "Analytics_2"
                 ],
-                "summary": "Фиксация события test ",
+                "summary": "Фиксация события test",
                 "requestBody": {
                     "content": {
                         "application/json": {
