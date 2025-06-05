@@ -2,6 +2,7 @@
 	"version": "1.0.0",
 	"author": "Artemeey <artemeey2@gmail.com>",
 	"license": "MIT",
+	"type": "module",
 	"engines": {
 		"npm": ">=10.0.0",
 		"node": ">=20.0.0"
