@@ -8,12 +8,12 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         "Models.Users.Verif": {
-            email?: unknown;
-            code?: unknown;
-            action?: unknown;
-            params?: unknown;
-            data?: unknown;
-            date?: unknown;
+            email?: any;
+            code?: any;
+            action?: any;
+            params?: any;
+            data?: any;
+            date?: any;
         };
     };
     responses: never;

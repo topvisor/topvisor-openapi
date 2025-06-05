@@ -8,18 +8,18 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         "Models.Analytics.RanksUsers": {
-            code?: unknown;
-            email?: unknown;
-            rank?: unknown;
-            retention_week?: unknown;
-            retention_month?: unknown;
-            payment_week?: unknown;
-            payment_month?: unknown;
-            payment_month_6?: unknown;
-            payment_year?: unknown;
-            new_user?: unknown;
-            returned_user?: unknown;
-            quitted_user?: unknown;
+            code?: any;
+            email?: any;
+            rank?: any;
+            retention_week?: any;
+            retention_month?: any;
+            payment_week?: any;
+            payment_month?: any;
+            payment_month_6?: any;
+            payment_year?: any;
+            new_user?: any;
+            returned_user?: any;
+            quitted_user?: any;
         };
     };
     responses: never;

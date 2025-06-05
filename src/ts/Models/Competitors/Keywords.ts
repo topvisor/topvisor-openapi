@@ -27,11 +27,11 @@ export interface components {
             url?: string | null;
             snippet_title?: string | null;
             snippet_body?: string | null;
-            snippet_ext?: unknown;
+            snippet_ext?: any;
             volume?: number | null;
             cost_rub?: number | null;
             cost_usd?: number | null;
-            elements?: unknown;
+            elements?: any;
             count_results?: number | null;
             keyword_name?: string | null;
             block_position?: string | null;
@@ -45,7 +45,7 @@ export interface components {
             url_vs?: string | null;
             snippet_title_vs?: string | null;
             snippet_body_vs?: string | null;
-            snippet_ext_vs?: unknown;
+            snippet_ext_vs?: any;
             prev_position_vs?: number | null;
         };
     };

@@ -8,20 +8,20 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         "Models.Mentions.Mentions": {
-            id?: unknown;
-            project_id?: unknown;
-            rule_id?: unknown;
-            searcher_key?: unknown;
-            post_user_id?: unknown;
-            post_id?: unknown;
-            name?: unknown;
-            avatar?: unknown;
-            date?: unknown;
-            text?: unknown;
-            sentiment?: unknown;
-            readed?: unknown;
-            time_parse?: unknown;
-            need_send_report?: unknown;
+            id?: any;
+            project_id?: any;
+            rule_id?: any;
+            searcher_key?: any;
+            post_user_id?: any;
+            post_id?: any;
+            name?: any;
+            avatar?: any;
+            date?: any;
+            text?: any;
+            sentiment?: any;
+            readed?: any;
+            time_parse?: any;
+            need_send_report?: any;
         };
     };
     responses: never;

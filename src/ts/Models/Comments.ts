@@ -8,22 +8,22 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         "Models.Comments": {
-            id?: unknown;
-            site?: unknown;
-            subdomain?: unknown;
-            page_url?: unknown;
-            reply_id?: unknown;
-            user_id?: unknown;
-            time?: unknown;
-            text?: unknown;
-            count_likes?: unknown;
-            status?: unknown;
-            user_name?: unknown;
-            user_avatar?: unknown;
-            author_alias?: unknown;
-            author_count_pages?: unknown;
-            like?: unknown;
-            page_title?: unknown;
+            id?: any;
+            site?: any;
+            subdomain?: any;
+            page_url?: any;
+            reply_id?: any;
+            user_id?: any;
+            time?: any;
+            text?: any;
+            count_likes?: any;
+            status?: any;
+            user_name?: any;
+            user_avatar?: any;
+            author_alias?: any;
+            author_count_pages?: any;
+            like?: any;
+            page_title?: any;
         };
     };
     responses: never;

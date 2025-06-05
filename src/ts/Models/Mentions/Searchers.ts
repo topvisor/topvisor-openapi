@@ -8,12 +8,12 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         "Models.Mentions.Searchers": {
-            rule_id?: unknown;
-            key?: unknown;
-            project_id?: unknown;
-            depth?: unknown;
-            enabled?: unknown;
-            changed?: unknown;
+            rule_id?: any;
+            key?: any;
+            project_id?: any;
+            depth?: any;
+            enabled?: any;
+            changed?: any;
         };
     };
     responses: never;

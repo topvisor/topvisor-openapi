@@ -8,7 +8,7 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         "Models.Analytics.Events": {
-            COUNT?: unknown;
+            COUNT?: any;
             /** @example {
              *       "need set qualifiers": [
              *         "action",
@@ -18,15 +18,15 @@ export interface components {
              *         "label_3"
              *       ]
              *     } */
-            COUNT_QUALIFIERS?: unknown;
-            time?: unknown;
-            category?: unknown;
-            action?: unknown;
-            label?: unknown;
-            label_2?: unknown;
-            label_3?: unknown;
-            user_id?: unknown;
-            hash_id?: unknown;
+            COUNT_QUALIFIERS?: any;
+            time?: any;
+            category?: any;
+            action?: any;
+            label?: any;
+            label_2?: any;
+            label_3?: any;
+            user_id?: any;
+            hash_id?: any;
         };
     };
     responses: never;
