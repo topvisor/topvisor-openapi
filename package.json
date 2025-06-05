@@ -1,8 +1,9 @@
 {
 	"name": "topvisor-openapi",
-	"description": "OpenApi schemas for Topvisor API",
 	"version": "1.0.0",
+	"description": "OpenApi schemas for Topvisor API",
 	"author": "Artemeey <artemeey2@gmail.com>",
+	"type": "module",
 	"license": "MIT",
 	"files": [
 		"src"
