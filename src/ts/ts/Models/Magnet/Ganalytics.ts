@@ -8,15 +8,15 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         "Models.Magnet.Ganalytics": {
-            id?: any;
-            phrase?: any;
-            visits?: any;
-            bounce?: any;
-            pageviews?: any;
-            duration?: any;
-            project_id?: any;
-            "IS_EXISTS()"?: any;
-            "COUNT(*)"?: any;
+            id?: unknown;
+            phrase?: unknown;
+            visits?: unknown;
+            bounce?: unknown;
+            pageviews?: unknown;
+            duration?: unknown;
+            project_id?: unknown;
+            "IS_EXISTS()"?: unknown;
+            "COUNT(*)"?: unknown;
         };
     };
     responses: never;

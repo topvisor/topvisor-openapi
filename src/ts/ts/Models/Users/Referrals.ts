@@ -8,14 +8,14 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         "Models.Users.Referrals": {
-            "STATS()"?: any;
-            referral_id?: any;
-            referrer_id?: any;
-            time_reg?: any;
-            number?: any;
-            income?: any;
-            level?: any;
-            status?: any;
+            "STATS()"?: unknown;
+            referral_id?: unknown;
+            referrer_id?: unknown;
+            time_reg?: unknown;
+            number?: unknown;
+            income?: unknown;
+            level?: unknown;
+            status?: unknown;
         };
     };
     responses: never;

@@ -8,18 +8,18 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         "Models.Magnet.Metrika": {
-            id?: any;
-            key?: any;
-            phrase?: any;
-            path?: any;
-            visits?: any;
-            bounce?: any;
-            pageviews?: any;
-            duration?: any;
-            domain?: any;
-            project_id?: any;
-            "IS_EXISTS()"?: any;
-            "COUNT(*)"?: any;
+            id?: unknown;
+            key?: unknown;
+            phrase?: unknown;
+            path?: unknown;
+            visits?: unknown;
+            bounce?: unknown;
+            pageviews?: unknown;
+            duration?: unknown;
+            domain?: unknown;
+            project_id?: unknown;
+            "IS_EXISTS()"?: unknown;
+            "COUNT(*)"?: unknown;
         };
     };
     responses: never;

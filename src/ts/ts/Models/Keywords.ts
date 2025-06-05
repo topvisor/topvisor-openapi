@@ -8,29 +8,29 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         "Models.Keywords": {
-            "COUNT(*)"?: any;
-            "LENGTH(name)"?: any;
-            "tagsNames()"?: any;
-            id?: any;
-            phrase_id?: any;
-            project_id?: any;
-            group_id?: any;
-            tags?: any;
-            target?: any;
-            ord?: any;
-            name?: any;
-            group_name?: any;
-            group_on?: any;
-            group_ord?: any;
-            group_folder_id?: any;
-            group_folder_path?: any;
-            group_folder_ord?: any;
+            "COUNT(*)"?: unknown;
+            "LENGTH(name)"?: unknown;
+            "tagsNames()"?: unknown;
+            id?: unknown;
+            phrase_id?: unknown;
+            project_id?: unknown;
+            group_id?: unknown;
+            tags?: unknown;
+            target?: unknown;
+            ord?: unknown;
+            name?: unknown;
+            group_name?: unknown;
+            group_on?: unknown;
+            group_ord?: unknown;
+            group_folder_id?: unknown;
+            group_folder_path?: unknown;
+            group_folder_ord?: unknown;
             /** @example {
              *       "need set qualifiers": [
              *         "region_index"
              *       ]
              *     } */
-            target_status?: any;
+            target_status?: unknown;
             /** @example {
              *       "need set qualifiers": [
              *         "date",
@@ -84,7 +84,7 @@ export interface components {
              *         "region_index"
              *       ]
              *     } */
-            positionStatus?: any;
+            positionStatus?: unknown;
             /** @example {
              *       "need set qualifiers": [
              *         "region_key",
@@ -92,7 +92,7 @@ export interface components {
              *         "type"
              *       ]
              *     } */
-            volume?: any;
+            volume?: unknown;
             /** @example {
              *       "need set qualifiers": [
              *         "position",
@@ -100,7 +100,7 @@ export interface components {
              *         "searcher_key"
              *       ]
              *     } */
-            cost_forecast?: any;
+            cost_forecast?: unknown;
         };
     };
     responses: never;

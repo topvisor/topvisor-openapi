@@ -8,17 +8,17 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         "Models.Quizes.Questions": {
-            "ANSWERS()"?: any;
-            "RESPONSES()"?: any;
-            "IS_PASSED()"?: any;
-            id?: any;
-            quiz_id?: any;
-            type?: any;
-            text?: any;
-            response_text?: any;
-            score?: any;
-            likes_count?: any;
-            ord?: any;
+            "ANSWERS()"?: unknown;
+            "RESPONSES()"?: unknown;
+            "IS_PASSED()"?: unknown;
+            id?: unknown;
+            quiz_id?: unknown;
+            type?: unknown;
+            text?: unknown;
+            response_text?: unknown;
+            score?: unknown;
+            likes_count?: unknown;
+            ord?: unknown;
         };
     };
     responses: never;

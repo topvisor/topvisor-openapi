@@ -8,7 +8,7 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         "Models.Urls": {
-            "COUNT(*)"?: any;
+            "COUNT(*)"?: unknown;
             /** @example {
              *       "need set qualifiers": [
              *         "check_id"
@@ -18,14 +18,14 @@ export interface components {
             id?: number;
             url?: string | null;
             project_id?: number | null;
-            sitemap?: any;
-            audit?: any;
-            watcher?: any;
-            indexing?: any;
-            tags?: any;
-            sitemap_lastmod?: any;
-            sitemap_changefreq?: any;
-            sitemap_priority?: any;
+            sitemap?: unknown;
+            audit?: unknown;
+            watcher?: unknown;
+            indexing?: unknown;
+            tags?: unknown;
+            sitemap_lastmod?: unknown;
+            sitemap_changefreq?: unknown;
+            sitemap_priority?: unknown;
             /** @example {
              *       "need set qualifiers": [
              *         "date",

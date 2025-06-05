@@ -8,19 +8,19 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         "Models.Requisites": {
-            "LABEL()"?: any;
-            id?: any;
-            user_id?: any;
-            country?: any;
-            contract_date?: any;
-            contract_type?: any;
-            contract_balance?: any;
-            contract_tariff_id?: any;
-            data?: any;
-            signed?: any;
-            deleted?: any;
-            edc_connected?: any;
-            fromBase64Data?: any;
+            "LABEL()"?: unknown;
+            id?: unknown;
+            user_id?: unknown;
+            country?: unknown;
+            contract_date?: unknown;
+            contract_type?: unknown;
+            contract_balance?: unknown;
+            contract_tariff_id?: unknown;
+            data?: unknown;
+            signed?: unknown;
+            deleted?: unknown;
+            edc_connected?: unknown;
+            fromBase64Data?: unknown;
         };
     };
     responses: never;
