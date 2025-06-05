@@ -8,20 +8,20 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         "Models.ShortLink": {
-            "COUNT(*)"?: unknown;
-            "GEN_SEARCH_STRING()"?: unknown;
-            short_link?: unknown;
-            link?: unknown;
-            user_id?: unknown;
-            create?: unknown;
-            title?: unknown;
-            favorite?: unknown;
-            deleted?: unknown;
-            hash?: unknown;
-            count?: unknown;
-            secret?: unknown;
-            ban?: unknown;
-            tags?: unknown;
+            "COUNT(*)"?: any;
+            "GEN_SEARCH_STRING()"?: any;
+            short_link?: any;
+            link?: any;
+            user_id?: any;
+            create?: any;
+            title?: any;
+            favorite?: any;
+            deleted?: any;
+            hash?: any;
+            count?: any;
+            secret?: any;
+            ban?: any;
+            tags?: any;
         };
     };
     responses: never;

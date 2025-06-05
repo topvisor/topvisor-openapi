@@ -11,7 +11,7 @@ export interface components {
          * Имена telegram ботов
          * @enum {string}
          */
-        "Telegram_2.Types.Bot.Name": "TopvisorBot" | "ThundoBot" | "ApometrBot";
+        "Telegram_2.Types.Bot.Name": "TopvisorBot" | "ThundoBot" | "ApometrBot" | "LibraryBot";
     };
     responses: never;
     parameters: never;

@@ -8,10 +8,10 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         "Models.Apometr.Keywords": {
-            id?: unknown;
-            lang?: unknown;
-            name?: unknown;
-            pool_id?: unknown;
+            id?: any;
+            lang?: any;
+            name?: any;
+            pool_id?: any;
         };
     };
     responses: never;

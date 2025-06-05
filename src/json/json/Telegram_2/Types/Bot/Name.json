@@ -12,7 +12,8 @@
                 "enum": [
                     "TopvisorBot",
                     "ThundoBot",
-                    "ApometrBot"
+                    "ApometrBot",
+                    "LibraryBot"
                 ],
                 "title": "Имена telegram ботов"
             }

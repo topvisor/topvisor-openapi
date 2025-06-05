@@ -8,19 +8,19 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         "Models.Admin.Invoices": {
-            id?: unknown;
-            time?: unknown;
-            external_name?: unknown;
-            external_id?: unknown;
-            document_date?: unknown;
-            document_number?: unknown;
-            org_name?: unknown;
-            inn?: unknown;
-            sum?: unknown;
-            file_name?: unknown;
-            file_data?: unknown;
-            user_id?: unknown;
-            status?: unknown;
+            id?: any;
+            time?: any;
+            external_name?: any;
+            external_id?: any;
+            document_date?: any;
+            document_number?: any;
+            org_name?: any;
+            inn?: any;
+            sum?: any;
+            file_name?: any;
+            file_data?: any;
+            user_id?: any;
+            status?: any;
         };
     };
     responses: never;

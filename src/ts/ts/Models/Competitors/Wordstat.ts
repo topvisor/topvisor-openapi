@@ -23,7 +23,7 @@ export interface components {
             cost_usd?: number | null;
             domains?: string | null;
             domains_ads?: string | null;
-            elements?: unknown;
+            elements?: any;
             count_results?: number | null;
             keyword_id?: number | null;
             keyword_name?: string | null;
