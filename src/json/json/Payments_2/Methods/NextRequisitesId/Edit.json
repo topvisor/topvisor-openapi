@@ -1,0 +1,25 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Payments_2.Methods.NextRequisitesId.Edit",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Payments_2.Methods.NextRequisitesId.Edit": {
+                "type": "object",
+                "properties": {
+                    "next_requisites_id": {
+                        "title": "ID реквизитов для продления тарифа",
+                        "type": "string"
+                    }
+                },
+                "required": [
+                    "next_requisites_id"
+                ],
+                "title": "Изменение платежных реквизитов тарифа"
+            }
+        }
+    }
+}

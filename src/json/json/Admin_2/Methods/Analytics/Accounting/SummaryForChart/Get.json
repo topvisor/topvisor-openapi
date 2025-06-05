@@ -1,0 +1,70 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Admin_2.Methods.Analytics.Accounting.SummaryForChart.Get",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Admin_2.Methods.Analytics.Accounting.SummaryForChart.Get": {
+                "type": "object",
+                "properties": {
+                    "period": {
+                        "allOf": [
+                            {
+                                "$ref": "../../../../../Admin_2/Types/Analytics/Segment.json#/components/schemas/Admin_2.Types.Analytics.Segment"
+                            }
+                        ]
+                    },
+                    "currency": {
+                        "allOf": [
+                            {
+                                "$ref": "../../../../../TV/API/Types/Currency.json#/components/schemas/TV.API.Types.Currency"
+                            }
+                        ]
+                    },
+                    "date": {
+                        "title": "Дата начала отсчета периода",
+                        "allOf": [
+                            {
+                                "$ref": "../../../../../TV/API/Types/Date.json#/components/schemas/TV.API.Types.Date"
+                            }
+                        ]
+                    },
+                    "operations_type": {
+                        "title": "Тип операций (расход, приход, все операции)\n\n- profit: приход\n- charges: расход",
+                        "nullable": true,
+                        "type": "string"
+                    },
+                    "limit": {
+                        "title": "Длина периода",
+                        "default": 12,
+                        "type": "integer"
+                    },
+                    "filters": {
+                        "title": "Фильтр по объектам групп, см. Admin_2\\Accounting\\Group",
+                        "nullable": true,
+                        "type": "array",
+                        "items": {
+                            "oneOf": [
+                                {
+                                    "type": "string"
+                                },
+                                {
+                                    "type": "number"
+                                }
+                            ]
+                        }
+                    }
+                },
+                "required": [
+                    "period",
+                    "currency",
+                    "date"
+                ],
+                "title": "Получение сводки по группам"
+            }
+        }
+    }
+}

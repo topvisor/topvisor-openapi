@@ -1,0 +1,20 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/TV.API.Types.DatetimeArray",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "TV.API.Types.DatetimeArray": {
+                "type": "array",
+                "items": {
+                    "$ref": "../../../TV/API/Types/Datetime.json#/components/schemas/TV.API.Types.Datetime"
+                },
+                "title": "Тип массива: Datetime[]",
+                "description": "@extends AbstractStringArray<Datetime>\n@method Datetime[] getValues()\n@method Datetime current()\n@see \\TV\\API\\Types\\Datetime"
+            }
+        }
+    }
+}

@@ -1,0 +1,25 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Bank_2.Methods.Ur.Get",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Bank_2.Methods.Ur.Get": {
+                "type": "object",
+                "properties": {
+                    "inn": {
+                        "title": "ИНН юридического лица",
+                        "type": "string"
+                    }
+                },
+                "required": [
+                    "inn"
+                ],
+                "title": "Получение данных юридического лица по ИНН"
+            }
+        }
+    }
+}

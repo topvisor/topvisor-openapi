@@ -1,0 +1,18 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Recurring_2.Methods.RecurringCard.Get",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Recurring_2.Methods.RecurringCard.Get": {
+                "type": "object",
+                "properties": {},
+                "required": [],
+                "title": "Получение привязанных карт пользователя"
+            }
+        }
+    }
+}

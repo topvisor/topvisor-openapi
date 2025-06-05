@@ -1,0 +1,92 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/I18n.Landings.Price",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "I18n.Landings.Price": {
+                "type": "object",
+                "properties": {
+                    "Depth": {
+                        "const": "depth",
+                        "readOnly": true
+                    },
+                    "of_results": {
+                        "const": "results",
+                        "readOnly": true
+                    },
+                    "of_keywords": {
+                        "const": "keywords",
+                        "readOnly": true
+                    },
+                    "of_pages": {
+                        "const": "URLs",
+                        "readOnly": true
+                    },
+                    "up_to": {
+                        "const": "up to",
+                        "readOnly": true
+                    },
+                    "from": {
+                        "const": "from",
+                        "readOnly": true
+                    },
+                    "Without_discount": {
+                        "const": "No discount",
+                        "readOnly": true
+                    },
+                    "What_is_a_tariff": {
+                        "const": "What is a pricing plan (tariff)?",
+                        "readOnly": true
+                    },
+                    "Rank_tracker_and_collecting_TOP": {
+                        "const": "Rank Tracking and SERP Top",
+                        "readOnly": true
+                    },
+                    "Semantics": {
+                        "const": "Semantics",
+                        "readOnly": true
+                    },
+                    "Technical_Seo": {
+                        "const": "Technical SEO",
+                        "readOnly": true
+                    },
+                    "Yandex_direct": {
+                        "const": "Yandex Direct",
+                        "readOnly": true
+                    },
+                    "Account": {
+                        "const": "Account",
+                        "readOnly": true
+                    },
+                    "No_discount_on_tools": {
+                        "const": "No discount on Topvisor tools",
+                        "readOnly": true
+                    },
+                    "On_all_tools": {
+                        "const": "on Topvisor tools",
+                        "readOnly": true
+                    }
+                },
+                "required": [
+                    "Depth",
+                    "of_results",
+                    "of_keywords",
+                    "of_pages",
+                    "up_to",
+                    "from",
+                    "Without_discount",
+                    "What_is_a_tariff",
+                    "Rank_tracker_and_collecting_TOP",
+                    "Semantics",
+                    "Technical_Seo",
+                    "Yandex_direct",
+                    "Account"
+                ]
+            }
+        }
+    }
+}

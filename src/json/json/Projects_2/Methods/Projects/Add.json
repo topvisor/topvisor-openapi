@@ -1,0 +1,67 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Projects_2.Methods.Projects.Add",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Projects_2.Methods.Projects.Add": {
+                "type": "object",
+                "properties": {
+                    "url": {
+                        "title": "Url проекта (домен или url страницы)",
+                        "allOf": [
+                            {
+                                "$ref": "../../../TV/API/Types/UrlShort.json#/components/schemas/TV.API.Types.UrlShort"
+                            }
+                        ]
+                    },
+                    "name": {
+                        "title": "Имя проекта (по умолчанию равен url проекта)",
+                        "nullable": true,
+                        "type": "string"
+                    },
+                    "tags": {
+                        "title": "enum(1..10) tags - теги проекта (по умолчанию - [1])",
+                        "default": [
+                            1
+                        ],
+                        "nullable": true,
+                        "type": "array",
+                        "items": {
+                            "oneOf": [
+                                {
+                                    "type": "string"
+                                },
+                                {
+                                    "type": "number"
+                                }
+                            ]
+                        }
+                    },
+                    "folder_id": {
+                        "title": "Id папки, к которой будет привязан проект",
+                        "nullable": true,
+                        "type": "integer"
+                    },
+                    "on": {
+                        "title": "Активность проекта",
+                        "nullable": true,
+                        "type": "integer"
+                    },
+                    "is_task": {
+                        "title": "Является ли проект задачей",
+                        "nullable": true,
+                        "type": "boolean"
+                    }
+                },
+                "required": [
+                    "url"
+                ],
+                "title": "Добавление проекта"
+            }
+        }
+    }
+}

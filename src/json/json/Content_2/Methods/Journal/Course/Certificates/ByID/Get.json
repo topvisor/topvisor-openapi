@@ -1,0 +1,25 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Content_2.Methods.Journal.Course.Certificates.ByID.Get",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Content_2.Methods.Journal.Course.Certificates.ByID.Get": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "title": "Id сертификата",
+                        "type": "integer"
+                    }
+                },
+                "required": [
+                    "id"
+                ],
+                "title": "Получение сертификата по id"
+            }
+        }
+    }
+}

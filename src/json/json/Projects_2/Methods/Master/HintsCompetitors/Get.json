@@ -1,0 +1,25 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Projects_2.Methods.Master.HintsCompetitors.Get",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Projects_2.Methods.Master.HintsCompetitors.Get": {
+                "type": "object",
+                "properties": {
+                    "project_id": {
+                        "title": "ID проекта",
+                        "type": "integer"
+                    }
+                },
+                "required": [
+                    "project_id"
+                ],
+                "title": "Получить подсазки конкурентов для добавления в проект\n\nДоступ по API закрыт"
+            }
+        }
+    }
+}

@@ -1,0 +1,23 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Bank_2.Methods.Bank.Get",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Bank_2.Methods.Bank.Get": {
+                "type": "object",
+                "properties": {
+                    "bik": {
+                        "title": "БИК банка",
+                        "type": "string"
+                    }
+                },
+                "required": [],
+                "title": "Получение данных банка по БИК"
+            }
+        }
+    }
+}

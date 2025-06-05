@@ -1,0 +1,107 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Models.Competitors.Wordstat",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Models.Competitors.Wordstat": {
+                "properties": {
+                    "COUNT(*)": {
+                        "type": "string",
+                        "nullable": true
+                    },
+                    "date": {
+                        "type": "string",
+                        "nullable": true
+                    },
+                    "region_index": {
+                        "type": "integer",
+                        "nullable": true
+                    },
+                    "query": {
+                        "type": "string",
+                        "nullable": true
+                    },
+                    "is_similar": {
+                        "type": "integer",
+                        "nullable": true
+                    },
+                    "is_commercial": {
+                        "type": "integer",
+                        "nullable": true
+                    },
+                    "is_phrase": {
+                        "type": "integer",
+                        "nullable": true
+                    },
+                    "is_strict": {
+                        "type": "integer",
+                        "nullable": true
+                    },
+                    "is_order": {
+                        "type": "integer",
+                        "nullable": true
+                    },
+                    "is_question": {
+                        "type": "integer",
+                        "nullable": true
+                    },
+                    "volume": {
+                        "type": "integer",
+                        "nullable": true
+                    },
+                    "cost_rub": {
+                        "type": "integer",
+                        "nullable": true
+                    },
+                    "cost_usd": {
+                        "type": "integer",
+                        "nullable": true
+                    },
+                    "domains": {
+                        "type": "string",
+                        "nullable": true
+                    },
+                    "domains_ads": {
+                        "type": "string",
+                        "nullable": true
+                    },
+                    "elements": {
+                        "nullable": true
+                    },
+                    "count_results": {
+                        "type": "integer",
+                        "nullable": true
+                    },
+                    "keyword_id": {
+                        "type": "integer",
+                        "nullable": true
+                    },
+                    "keyword_name": {
+                        "type": "string",
+                        "nullable": true
+                    },
+                    "keyword_length": {
+                        "type": "integer",
+                        "nullable": true
+                    },
+                    "keyword_count_words": {
+                        "type": "integer",
+                        "nullable": true
+                    },
+                    "domain_leader": {
+                        "type": "string",
+                        "nullable": true
+                    },
+                    "intersection": {
+                        "type": "integer",
+                        "nullable": true
+                    }
+                }
+            }
+        }
+    }
+}

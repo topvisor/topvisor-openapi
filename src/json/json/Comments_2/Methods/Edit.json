@@ -1,0 +1,30 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Comments_2.Methods.Edit",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Comments_2.Methods.Edit": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "title": "ID комментария",
+                        "type": "integer"
+                    },
+                    "text": {
+                        "title": "Текст комментария, не может быть пустой строкой",
+                        "type": "string"
+                    }
+                },
+                "required": [
+                    "id",
+                    "text"
+                ],
+                "title": "Изменение комментария\n\nИзменять комментарий можно только в течение ограниченного времени"
+            }
+        }
+    }
+}

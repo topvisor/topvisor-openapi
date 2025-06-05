@@ -1,0 +1,25 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Content_2.Methods.Journal.Course.Certificates.Get",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Content_2.Methods.Journal.Course.Certificates.Get": {
+                "type": "object",
+                "properties": {
+                    "course_url": {
+                        "title": "Url курса относительно домена",
+                        "type": "string"
+                    }
+                },
+                "required": [
+                    "course_url"
+                ],
+                "title": "Получение своего сертификата"
+            }
+        }
+    }
+}

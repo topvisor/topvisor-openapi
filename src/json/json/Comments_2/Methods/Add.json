@@ -1,0 +1,42 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Comments_2.Methods.Add",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Comments_2.Methods.Add": {
+                "type": "object",
+                "properties": {
+                    "subdomain": {
+                        "allOf": [
+                            {
+                                "$ref": "../../TV/API/Types/Topvisor/Subdomain.json#/components/schemas/TV.API.Types.Topvisor.Subdomain"
+                            }
+                        ]
+                    },
+                    "text": {
+                        "title": "Текст комментария",
+                        "type": "string"
+                    },
+                    "page_url": {
+                        "title": "Адрес страницы (нельзя указывать совместно с reply_id)",
+                        "nullable": true,
+                        "type": "string"
+                    },
+                    "reply_id": {
+                        "title": "Привязать к комментарию с id = reply_id  (нельзя указывать совместно с page_url)",
+                        "nullable": true,
+                        "type": "integer"
+                    }
+                },
+                "required": [
+                    "text"
+                ],
+                "title": "Добавление комментария"
+            }
+        }
+    }
+}

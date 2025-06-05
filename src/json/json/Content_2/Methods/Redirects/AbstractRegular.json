@@ -1,0 +1,38 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Content_2.Methods.Redirects.AbstractRegular",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Content_2.Methods.Redirects.AbstractRegular": {
+                "type": "object",
+                "properties": {
+                    "site": {
+                        "title": "Сайт\n\n- topvisor\n- thundo",
+                        "type": "string"
+                    },
+                    "subdomain": {
+                        "title": "С поддомена\n\n- 'journal'\n- ''",
+                        "allOf": [
+                            {
+                                "$ref": "../../../Content_2/Types/Subdomain.json#/components/schemas/Content_2.Types.Subdomain"
+                            }
+                        ]
+                    },
+                    "path_mask": {
+                        "title": "С пути (маска, * - любой символ)",
+                        "type": "string"
+                    }
+                },
+                "required": [
+                    "site",
+                    "subdomain",
+                    "path_mask"
+                ]
+            }
+        }
+    }
+}

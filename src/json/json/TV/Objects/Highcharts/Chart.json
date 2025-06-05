@@ -1,0 +1,65 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/TV.Objects.Highcharts.Chart",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "TV.Objects.Highcharts.Chart": {
+                "type": "object",
+                "properties": {
+                    "categories": {
+                        "title": "Категории\n\nДля обчных графиков это значения на оси X",
+                        "type": "array",
+                        "items": {
+                            "oneOf": [
+                                {
+                                    "type": "string"
+                                },
+                                {
+                                    "type": "number"
+                                }
+                            ]
+                        }
+                    },
+                    "series": {
+                        "title": "Набор серий\n\nСерия - это объект, выводимый на графике, например линия.\n\nСерия обязательно должна иметь поле data, в котором перечисляются значения для категорий. Значения должны идти в таком же порядке, что и\nкатегории",
+                        "type": "array",
+                        "items": {
+                            "oneOf": [
+                                {
+                                    "type": "string"
+                                },
+                                {
+                                    "type": "number"
+                                }
+                            ]
+                        }
+                    },
+                    "additionalData": {
+                        "title": "Дополнительгная информация",
+                        "type": "array",
+                        "items": {
+                            "oneOf": [
+                                {
+                                    "type": "string"
+                                },
+                                {
+                                    "type": "number"
+                                }
+                            ]
+                        }
+                    }
+                },
+                "required": [
+                    "categories",
+                    "series",
+                    "additionalData"
+                ],
+                "title": "Сокращенный тип с данными для вывода hightcharts\n\nhttps://www.highcharts.com/"
+            }
+        }
+    }
+}

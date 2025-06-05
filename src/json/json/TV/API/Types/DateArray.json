@@ -1,0 +1,20 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/TV.API.Types.DateArray",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "TV.API.Types.DateArray": {
+                "type": "array",
+                "items": {
+                    "$ref": "../../../TV/API/Types/Date.json#/components/schemas/TV.API.Types.Date"
+                },
+                "title": "Тип массива: Date[]",
+                "description": "@extends AbstractStringArray<Date>\n@method Date[] getValues()\n@method Date current()\n@see \\TV\\API\\Types\\Date"
+            }
+        }
+    }
+}

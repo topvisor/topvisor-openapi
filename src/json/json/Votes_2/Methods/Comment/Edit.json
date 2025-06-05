@@ -1,0 +1,30 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Votes_2.Methods.Comment.Edit",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Votes_2.Methods.Comment.Edit": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "title": "Id отзыва",
+                        "type": "integer"
+                    },
+                    "comment": {
+                        "title": "Комментарий",
+                        "type": "string"
+                    }
+                },
+                "required": [
+                    "id",
+                    "comment"
+                ],
+                "title": "Добавление комментария к отзыву\n\nОставить комментарий можно в течение часа поосле выставления оценки"
+            }
+        }
+    }
+}

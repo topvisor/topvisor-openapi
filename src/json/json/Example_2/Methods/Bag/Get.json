@@ -1,0 +1,23 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Example_2.Methods.Bag.Get",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Example_2.Methods.Bag.Get": {
+                "type": "object",
+                "properties": {
+                    "type": {
+                        "nullable": true,
+                        "type": "integer"
+                    }
+                },
+                "required": [],
+                "title": "TODO: удалить после закрытия задачи #28444"
+            }
+        }
+    }
+}

@@ -1,0 +1,169 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Models.Competitors.Keywords",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Models.Competitors.Keywords": {
+                "properties": {
+                    "COUNT(*)": {
+                        "type": "string",
+                        "nullable": true
+                    },
+                    "DUMMY()": {
+                        "type": "string",
+                        "nullable": true
+                    },
+                    "DUMMY_VS()": {
+                        "type": "string",
+                        "nullable": true
+                    },
+                    "KEYWORDS_IDS_SQL()": {
+                        "type": "string",
+                        "nullable": true
+                    },
+                    "CTR_BASE()": {
+                        "type": "integer",
+                        "nullable": true
+                    },
+                    "TRAFFIC()": {
+                        "type": "integer",
+                        "nullable": true
+                    },
+                    "MONTH_COST_RUB()": {
+                        "type": "integer",
+                        "nullable": true
+                    },
+                    "MONTH_COST_USD()": {
+                        "type": "integer",
+                        "nullable": true
+                    },
+                    "GROUP_NAME_BY_URL()": {
+                        "type": "string",
+                        "nullable": true
+                    },
+                    "GROUP_NAME_BY_DOMAIN()": {
+                        "type": "string",
+                        "nullable": true
+                    },
+                    "SNIPPET()": {
+                        "type": "string",
+                        "nullable": true
+                    },
+                    "date": {
+                        "type": "string",
+                        "nullable": true
+                    },
+                    "region_index": {
+                        "type": "integer",
+                        "nullable": true
+                    },
+                    "domain": {
+                        "type": "string",
+                        "nullable": true
+                    },
+                    "keyword_id": {
+                        "type": "integer",
+                        "nullable": true
+                    },
+                    "position": {
+                        "type": "integer",
+                        "nullable": true
+                    },
+                    "url": {
+                        "type": "string",
+                        "nullable": true
+                    },
+                    "snippet_title": {
+                        "type": "string",
+                        "nullable": true
+                    },
+                    "snippet_body": {
+                        "type": "string",
+                        "nullable": true
+                    },
+                    "snippet_ext": {
+                        "nullable": true
+                    },
+                    "volume": {
+                        "type": "integer",
+                        "nullable": true
+                    },
+                    "cost_rub": {
+                        "type": "integer",
+                        "nullable": true
+                    },
+                    "cost_usd": {
+                        "type": "integer",
+                        "nullable": true
+                    },
+                    "elements": {
+                        "nullable": true
+                    },
+                    "count_results": {
+                        "type": "integer",
+                        "nullable": true
+                    },
+                    "keyword_name": {
+                        "type": "string",
+                        "nullable": true
+                    },
+                    "block_position": {
+                        "type": "string",
+                        "nullable": true
+                    },
+                    "prev_position": {
+                        "type": "integer",
+                        "nullable": true
+                    },
+                    "CTR_BASE_VS()": {
+                        "type": "integer",
+                        "nullable": true
+                    },
+                    "TRAFFIC_VS()": {
+                        "type": "string",
+                        "nullable": true
+                    },
+                    "MONTH_COST_RUB_VS()": {
+                        "type": "integer",
+                        "nullable": true
+                    },
+                    "MONTH_COST_USD_VS()": {
+                        "type": "string",
+                        "nullable": true
+                    },
+                    "SNIPPET_VS()": {
+                        "type": "string",
+                        "nullable": true
+                    },
+                    "position_vs": {
+                        "type": "integer",
+                        "nullable": true
+                    },
+                    "url_vs": {
+                        "type": "string",
+                        "nullable": true
+                    },
+                    "snippet_title_vs": {
+                        "type": "string",
+                        "nullable": true
+                    },
+                    "snippet_body_vs": {
+                        "type": "string",
+                        "nullable": true
+                    },
+                    "snippet_ext_vs": {
+                        "nullable": true
+                    },
+                    "prev_position_vs": {
+                        "type": "integer",
+                        "nullable": true
+                    }
+                }
+            }
+        }
+    }
+}

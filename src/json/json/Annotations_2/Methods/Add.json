@@ -1,0 +1,43 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Annotations_2.Methods.Add",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Annotations_2.Methods.Add": {
+                "type": "object",
+                "properties": {
+                    "project_id": {
+                        "title": "ID проекта",
+                        "type": "integer"
+                    },
+                    "service": {
+                        "title": "Имя сервиса",
+                        "allOf": [
+                            {
+                                "$ref": "../../Annotations_2/Types/ServiceName.json#/components/schemas/Annotations_2.Types.ServiceName"
+                            }
+                        ]
+                    },
+                    "target_id": {
+                        "title": "Идентификатор отчета в сервисе",
+                        "type": "string"
+                    },
+                    "text": {
+                        "title": "Комментарий, если не указан, комментарий добавлен не будет",
+                        "type": "string"
+                    }
+                },
+                "required": [
+                    "project_id",
+                    "service",
+                    "target_id"
+                ],
+                "title": "Добавление примечания"
+            }
+        }
+    }
+}

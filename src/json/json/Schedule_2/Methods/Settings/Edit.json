@@ -1,0 +1,151 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Schedule_2.Methods.Settings.Edit",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Schedule_2.Methods.Settings.Edit": {
+                "type": "object",
+                "properties": {
+                    "type": {
+                        "title": "Тип расписания",
+                        "description": "@see Schedule_2\\Mods\\Schedule::$availableTypes",
+                        "type": "string"
+                    },
+                    "target_id": {
+                        "title": "Id объекта, для которого требуется получить параметры расписания",
+                        "type": "integer"
+                    },
+                    "target_id_2": {
+                        "title": "Id второго объекта, для которого требуется получить параметры расписания (обязательно для mentions)",
+                        "nullable": true,
+                        "type": "integer"
+                    },
+                    "emails": {
+                        "title": "Список email для отправки отчетов",
+                        "nullable": true,
+                        "allOf": [
+                            {
+                                "$ref": "../../../TV/API/Types/EmailArray.json#/components/schemas/TV.API.Types.EmailArray"
+                            }
+                        ]
+                    },
+                    "send_to_informer": {
+                        "title": "Отправить ли уведомление в информер",
+                        "nullable": true,
+                        "type": "boolean"
+                    },
+                    "telegram_chats_ids": {
+                        "title": "Id чатов телеграмма для рассылки уведомлений",
+                        "nullable": true,
+                        "allOf": [
+                            {
+                                "$ref": "../../../TV/API/Types/IntArray.json#/components/schemas/TV.API.Types.IntArray"
+                            }
+                        ]
+                    },
+                    "stop_repeated_check": {
+                        "title": "Не совершать ли повторную проверку",
+                        "nullable": true,
+                        "type": "boolean"
+                    },
+                    "regions_keys_by_searcher_key": {
+                        "title": "Ключ региона для проверки частосты\n\nРазрешено указывать только Яндекс и Google (0, 1)",
+                        "nullable": true,
+                        "type": "array",
+                        "items": {
+                            "oneOf": [
+                                {
+                                    "type": "string"
+                                },
+                                {
+                                    "type": "number"
+                                }
+                            ]
+                        }
+                    },
+                    "volumes_types": {
+                        "title": "Имеет смысл только для Яндекс",
+                        "nullable": true,
+                        "allOf": [
+                            {
+                                "$ref": "../../../Keywords_2/Types/Volumes/Types.json#/components/schemas/Keywords_2.Types.Volumes.Types"
+                            }
+                        ]
+                    },
+                    "with_competitors": {
+                        "title": "Добавить ли в отчет позиции конкурентов",
+                        "nullable": true,
+                        "type": "boolean"
+                    },
+                    "period": {
+                        "nullable": true,
+                        "allOf": [
+                            {
+                                "$ref": "../../../Schedule_2/Types/Settings/Period.json#/components/schemas/Schedule_2.Types.Settings.Period"
+                            }
+                        ]
+                    },
+                    "formats": {
+                        "nullable": true,
+                        "allOf": [
+                            {
+                                "$ref": "../../../Schedule_2/Types/Settings/Formats.json#/components/schemas/Schedule_2.Types.Settings.Formats"
+                            }
+                        ]
+                    },
+                    "additional_fields": {
+                        "nullable": true,
+                        "allOf": [
+                            {
+                                "$ref": "../../../Schedule_2/Types/Settings/AdditionalFields.json#/components/schemas/Schedule_2.Types.Settings.AdditionalFields"
+                            }
+                        ]
+                    },
+                    "link_sitemap_xml": {
+                        "title": "Ссылка на sitemap",
+                        "nullable": true,
+                        "allOf": [
+                            {
+                                "$ref": "../../../TV/API/Types/Url.json#/components/schemas/TV.API.Types.Url"
+                            }
+                        ]
+                    },
+                    "regexp_sitemap": {
+                        "title": "Регулярное выражение для карты сайта",
+                        "nullable": true,
+                        "type": "string"
+                    },
+                    "regexp_audit": {
+                        "title": "Регулярное выражение для аудита",
+                        "nullable": true,
+                        "type": "string"
+                    },
+                    "regexp_watcher": {
+                        "title": "Регулярное выражение для радара",
+                        "nullable": true,
+                        "type": "string"
+                    },
+                    "regexp_indexing": {
+                        "title": "Регулярное выражение для индексации",
+                        "nullable": true,
+                        "type": "string"
+                    },
+                    "max_urls_count": {
+                        "title": "Ограничение по количеству url получаемых при проверке",
+                        "nullable": true,
+                        "type": "integer"
+                    }
+                },
+                "required": [
+                    "type",
+                    "target_id"
+                ],
+                "title": "Изменить дополнительные параметры расписания"
+            }
+        }
+    }
+}

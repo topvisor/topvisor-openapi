@@ -1,0 +1,20 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Qr_2.Types.TplN",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Qr_2.Types.TplN": {
+                "type": "integer",
+                "enum": [
+                    0,
+                    1,
+                    2
+                ]
+            }
+        }
+    }
+}

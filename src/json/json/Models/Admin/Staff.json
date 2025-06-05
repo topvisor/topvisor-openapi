@@ -1,0 +1,100 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Models.Admin.Staff",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Models.Admin.Staff": {
+                "properties": {
+                    "VACATIONS()": {
+                        "nullable": true
+                    },
+                    "id": {},
+                    "site": {
+                        "nullable": true
+                    },
+                    "name": {
+                        "nullable": true
+                    },
+                    "lang": {
+                        "nullable": true
+                    },
+                    "timezone": {
+                        "nullable": true
+                    },
+                    "dateformat": {
+                        "nullable": true
+                    },
+                    "date_reg": {
+                        "nullable": true
+                    },
+                    "group": {
+                        "nullable": true
+                    },
+                    "phone": {
+                        "nullable": true
+                    },
+                    "email": {
+                        "nullable": true
+                    },
+                    "avatar": {
+                        "nullable": true
+                    },
+                    "staff_id": {
+                        "nullable": true
+                    },
+                    "staff_email": {
+                        "nullable": true
+                    },
+                    "staff_department": {
+                        "nullable": true
+                    },
+                    "staff_posts": {
+                        "type": "array",
+                        "items": {
+                            "oneOf": [
+                                {
+                                    "type": "string"
+                                },
+                                {
+                                    "type": "number"
+                                }
+                            ]
+                        },
+                        "nullable": true
+                    },
+                    "staff_post": {
+                        "nullable": true
+                    },
+                    "staff_name": {
+                        "nullable": true
+                    },
+                    "staff_surname": {
+                        "nullable": true
+                    },
+                    "staff_patronymic": {
+                        "nullable": true
+                    },
+                    "staff_post_2": {
+                        "nullable": true
+                    },
+                    "staff_name_2": {
+                        "nullable": true
+                    },
+                    "staff_surname_2": {
+                        "nullable": true
+                    },
+                    "staff_patronymic_2": {
+                        "nullable": true
+                    },
+                    "staff_access": {
+                        "nullable": true
+                    }
+                }
+            }
+        }
+    }
+}

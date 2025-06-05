@@ -1,0 +1,189 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Models",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Models.Annotations": {
+                "$ref": "Models/Annotations.json#/components/schemas/Models.Annotations"
+            },
+            "Models.BalanceHistory": {
+                "$ref": "Models/BalanceHistory.json#/components/schemas/Models.BalanceHistory"
+            },
+            "Models.Comments": {
+                "$ref": "Models/Comments.json#/components/schemas/Models.Comments"
+            },
+            "Models.ContentsRedirects": {
+                "$ref": "Models/ContentsRedirects.json#/components/schemas/Models.ContentsRedirects"
+            },
+            "Models.CronCommands": {
+                "$ref": "Models/CronCommands.json#/components/schemas/Models.CronCommands"
+            },
+            "Models.EmptyModel": {
+                "$ref": "Models/EmptyModel.json#/components/schemas/Models.EmptyModel"
+            },
+            "Models.Folders": {
+                "$ref": "Models/Folders.json#/components/schemas/Models.Folders"
+            },
+            "Models.Groups": {
+                "$ref": "Models/Groups.json#/components/schemas/Models.Groups"
+            },
+            "Models.Keywords": {
+                "$ref": "Models/Keywords.json#/components/schemas/Models.Keywords"
+            },
+            "Models.Magnet": {
+                "$ref": "Models/Magnet.json#/components/schemas/Models.Magnet"
+            },
+            "Models.Model": {
+                "$ref": "Models/Model.json#/components/schemas/Models.Model"
+            },
+            "Models.Pages": {
+                "$ref": "Models/Pages.json#/components/schemas/Models.Pages"
+            },
+            "Models.Payments": {
+                "$ref": "Models/Payments.json#/components/schemas/Models.Payments"
+            },
+            "Models.Projects": {
+                "$ref": "Models/Projects.json#/components/schemas/Models.Projects"
+            },
+            "Models.Quizes": {
+                "$ref": "Models/Quizes.json#/components/schemas/Models.Quizes"
+            },
+            "Models.Requisites": {
+                "$ref": "Models/Requisites.json#/components/schemas/Models.Requisites"
+            },
+            "Models.ShortLink": {
+                "$ref": "Models/ShortLink.json#/components/schemas/Models.ShortLink"
+            },
+            "Models.Tickets": {
+                "$ref": "Models/Tickets.json#/components/schemas/Models.Tickets"
+            },
+            "Models.Urls": {
+                "$ref": "Models/Urls.json#/components/schemas/Models.Urls"
+            },
+            "Models.Votes": {
+                "$ref": "Models/Votes.json#/components/schemas/Models.Votes"
+            },
+            "Models.Admin.Invoices": {
+                "$ref": "Models/Admin/Invoices.json#/components/schemas/Models.Admin.Invoices"
+            },
+            "Models.Admin.Staff": {
+                "$ref": "Models/Admin/Staff.json#/components/schemas/Models.Admin.Staff"
+            },
+            "Models.Admin.Users": {
+                "$ref": "Models/Admin/Users.json#/components/schemas/Models.Admin.Users"
+            },
+            "Models.Analytics.Events": {
+                "$ref": "Models/Analytics/Events.json#/components/schemas/Models.Analytics.Events"
+            },
+            "Models.Analytics.Ranks": {
+                "$ref": "Models/Analytics/Ranks.json#/components/schemas/Models.Analytics.Ranks"
+            },
+            "Models.Analytics.RanksUsers": {
+                "$ref": "Models/Analytics/RanksUsers.json#/components/schemas/Models.Analytics.RanksUsers"
+            },
+            "Models.Apometr.History": {
+                "$ref": "Models/Apometr/History.json#/components/schemas/Models.Apometr.History"
+            },
+            "Models.Apometr.Keywords": {
+                "$ref": "Models/Apometr/Keywords.json#/components/schemas/Models.Apometr.Keywords"
+            },
+            "Models.Audit.Checks": {
+                "$ref": "Models/Audit/Checks.json#/components/schemas/Models.Audit.Checks"
+            },
+            "Models.Audit.Css": {
+                "$ref": "Models/Audit/Css.json#/components/schemas/Models.Audit.Css"
+            },
+            "Models.Audit.Images": {
+                "$ref": "Models/Audit/Images.json#/components/schemas/Models.Audit.Images"
+            },
+            "Models.Audit.Js": {
+                "$ref": "Models/Audit/Js.json#/components/schemas/Models.Audit.Js"
+            },
+            "Models.Audit.Links": {
+                "$ref": "Models/Audit/Links.json#/components/schemas/Models.Audit.Links"
+            },
+            "Models.Audit.Pages": {
+                "$ref": "Models/Audit/Pages.json#/components/schemas/Models.Audit.Pages"
+            },
+            "Models.Broker.Ads": {
+                "$ref": "Models/Broker/Ads.json#/components/schemas/Models.Broker.Ads"
+            },
+            "Models.Broker.Campaigns": {
+                "$ref": "Models/Broker/Campaigns.json#/components/schemas/Models.Broker.Campaigns"
+            },
+            "Models.Broker.Groups": {
+                "$ref": "Models/Broker/Groups.json#/components/schemas/Models.Broker.Groups"
+            },
+            "Models.Broker.Keywords": {
+                "$ref": "Models/Broker/Keywords.json#/components/schemas/Models.Broker.Keywords"
+            },
+            "Models.Broker.Log": {
+                "$ref": "Models/Broker/Log.json#/components/schemas/Models.Broker.Log"
+            },
+            "Models.Competitors.Domains": {
+                "$ref": "Models/Competitors/Domains.json#/components/schemas/Models.Competitors.Domains"
+            },
+            "Models.Competitors.Keywords": {
+                "$ref": "Models/Competitors/Keywords.json#/components/schemas/Models.Competitors.Keywords"
+            },
+            "Models.Competitors.Urls": {
+                "$ref": "Models/Competitors/Urls.json#/components/schemas/Models.Competitors.Urls"
+            },
+            "Models.Competitors.Wordstat": {
+                "$ref": "Models/Competitors/Wordstat.json#/components/schemas/Models.Competitors.Wordstat"
+            },
+            "Models.Content.Authors": {
+                "$ref": "Models/Content/Authors.json#/components/schemas/Models.Content.Authors"
+            },
+            "Models.Magnet.Ganalytics": {
+                "$ref": "Models/Magnet/Ganalytics.json#/components/schemas/Models.Magnet.Ganalytics"
+            },
+            "Models.Magnet.Gsc": {
+                "$ref": "Models/Magnet/Gsc.json#/components/schemas/Models.Magnet.Gsc"
+            },
+            "Models.Magnet.Metrika": {
+                "$ref": "Models/Magnet/Metrika.json#/components/schemas/Models.Magnet.Metrika"
+            },
+            "Models.Magnet.Webmaster": {
+                "$ref": "Models/Magnet/Webmaster.json#/components/schemas/Models.Magnet.Webmaster"
+            },
+            "Models.Mentions.Mentions": {
+                "$ref": "Models/Mentions/Mentions.json#/components/schemas/Models.Mentions.Mentions"
+            },
+            "Models.Mentions.Rules": {
+                "$ref": "Models/Mentions/Rules.json#/components/schemas/Models.Mentions.Rules"
+            },
+            "Models.Mentions.Searchers": {
+                "$ref": "Models/Mentions/Searchers.json#/components/schemas/Models.Mentions.Searchers"
+            },
+            "Models.Projects.Folders": {
+                "$ref": "Models/Projects/Folders.json#/components/schemas/Models.Projects.Folders"
+            },
+            "Models.Quizes.Questions": {
+                "$ref": "Models/Quizes/Questions.json#/components/schemas/Models.Quizes.Questions"
+            },
+            "Models.Users.Ranks": {
+                "$ref": "Models/Users/Ranks.json#/components/schemas/Models.Users.Ranks"
+            },
+            "Models.Users.Referrals": {
+                "$ref": "Models/Users/Referrals.json#/components/schemas/Models.Users.Referrals"
+            },
+            "Models.Users.Verif": {
+                "$ref": "Models/Users/Verif.json#/components/schemas/Models.Users.Verif"
+            },
+            "Models.Watcher.Results": {
+                "$ref": "Models/Watcher/Results.json#/components/schemas/Models.Watcher.Results"
+            },
+            "Models.Admin.Accounting.Counteragents": {
+                "$ref": "Models/Admin/Accounting/Counteragents.json#/components/schemas/Models.Admin.Accounting.Counteragents"
+            },
+            "Models.Admin.Users.Ranks": {
+                "$ref": "Models/Admin/Users/Ranks.json#/components/schemas/Models.Admin.Users.Ranks"
+            }
+        }
+    }
+}

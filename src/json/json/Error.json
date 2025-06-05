@@ -1,0 +1,39 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Error",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Error": {
+                "type": "object",
+                "properties": {
+                    "code": {
+                        "title": "Код ошибки\n\nКод ошибки 0 - deprecated",
+                        "type": "integer"
+                    },
+                    "string": {
+                        "title": "Описание ошибки",
+                        "type": "string"
+                    },
+                    "detail": {
+                        "title": "Объект с дополнительной информацией",
+                        "allOf": [
+                            {
+                                "$ref": "stdClass.json#/components/schemas/stdClass"
+                            }
+                        ]
+                    }
+                },
+                "required": [
+                    "code",
+                    "string",
+                    "detail"
+                ],
+                "title": "Информация об ошибке"
+            }
+        }
+    }
+}

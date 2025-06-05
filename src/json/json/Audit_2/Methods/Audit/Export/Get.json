@@ -1,0 +1,77 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Audit_2.Methods.Audit.Export.Get",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Audit_2.Methods.Audit.Export.Get": {
+                "type": "object",
+                "properties": {
+                    "target_type": {
+                        "allOf": [
+                            {
+                                "$ref": "../../../../Audit_2/Types/Audit/TargetType.json#/components/schemas/Audit_2.Types.Audit.TargetType"
+                            }
+                        ]
+                    },
+                    "filters_resources_target_type": {
+                        "title": "Тип отчета для фильтра по ресурсам страницы\n\nТолько для $target_type = pages",
+                        "nullable": true,
+                        "allOf": [
+                            {
+                                "$ref": "../../../../Audit_2/Types/Audit/TargetType.json#/components/schemas/Audit_2.Types.Audit.TargetType"
+                            }
+                        ]
+                    },
+                    "filters_resources": {
+                        "title": "Фильтр по ресурсам страницы, API fitlers для объекта, тип которого указан в filters_extra_target_type\n\nТолько для $target_type = pages",
+                        "type": "array",
+                        "items": {
+                            "oneOf": [
+                                {
+                                    "type": "string"
+                                },
+                                {
+                                    "type": "number"
+                                }
+                            ]
+                        }
+                    },
+                    "output": {
+                        "title": "Формат экспортируемого файла",
+                        "allOf": [
+                            {
+                                "$ref": "../../../../TV/API/Types/ExportFormat.json#/components/schemas/TV.API.Types.ExportFormat"
+                            }
+                        ]
+                    },
+                    "project_id": {
+                        "$ref": "../../../../TV/API/Params/ProjectIdTrait.json#/components/schemas/TV.API.Params.ProjectIdTrait/properties/project_id"
+                    },
+                    "fields": {
+                        "$ref": "../../../../TV/API/Params/FieldsTrait.json#/components/schemas/TV.API.Params.FieldsTrait/properties/fields"
+                    },
+                    "filters": {
+                        "$ref": "../../../../TV/API/Params/FiltersTrait.json#/components/schemas/TV.API.Params.FiltersTrait/properties/filters"
+                    },
+                    "id": {
+                        "$ref": "../../../../TV/API/Params/FiltersTrait.json#/components/schemas/TV.API.Params.FiltersTrait/properties/id"
+                    },
+                    "check_id": {
+                        "$ref": "../../../../Audit_2/Params/Audit/CheckIdTrait.json#/components/schemas/Audit_2.Params.Audit.CheckIdTrait/properties/check_id"
+                    }
+                },
+                "required": [
+                    "target_type",
+                    "output",
+                    "project_id",
+                    "check_id"
+                ],
+                "title": "Экспорт результатов проверки файла"
+            }
+        }
+    }
+}

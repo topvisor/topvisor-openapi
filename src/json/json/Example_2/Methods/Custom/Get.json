@@ -1,0 +1,24 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Example_2.Methods.Custom.Get",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Example_2.Methods.Custom.Get": {
+                "type": "object",
+                "properties": {
+                    "format": {
+                        "title": "Формат даты\n\nНе обязательный параметр строкового типа со значением по умолчанию\n\nМожно не указывать, но в exec() он не может быть пустым",
+                        "default": "Y-m-d H:i:s",
+                        "type": "string"
+                    }
+                },
+                "required": [],
+                "title": "Получение текущего времени"
+            }
+        }
+    }
+}

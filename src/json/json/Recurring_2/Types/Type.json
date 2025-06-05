@@ -1,0 +1,19 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Recurring_2.Types.Type",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Recurring_2.Types.Type": {
+                "type": "string",
+                "enum": [
+                    "refill"
+                ],
+                "title": "Тип рекуррентного платежа"
+            }
+        }
+    }
+}

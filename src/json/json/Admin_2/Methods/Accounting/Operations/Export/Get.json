@@ -1,0 +1,26 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Admin_2.Methods.Accounting.Operations.Export.Get",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Admin_2.Methods.Accounting.Operations.Export.Get": {
+                "type": "object",
+                "properties": {
+                    "month": {
+                        "title": "Месяц",
+                        "type": "string"
+                    }
+                },
+                "required": [
+                    "month"
+                ],
+                "title": "Скачивание реестра исходящих операций",
+                "description": "@POST string month - месяц в формате: YYYY-mm\nстолбцы CSV: 'Дата акта', 'Номер акта', 'Контрагент', 'ИНН', 'Товар/услуга', 'Номенклатура', 'Кол-во', 'Цена', 'НДС', 'Сумма', 'Способ оплаты'"
+            }
+        }
+    }
+}

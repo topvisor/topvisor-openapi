@@ -1,0 +1,30 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Payments_2.Methods.Recurrent.Suspend.Edit",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Payments_2.Methods.Recurrent.Suspend.Edit": {
+                "type": "object",
+                "properties": {
+                    "payment_id": {
+                        "title": "id платежа, связанного с подпиской или тарифом",
+                        "type": "integer"
+                    },
+                    "suspend": {
+                        "title": "Флаг приостановки/возобновления рекуррентных платежей\n\n- `true`: приостановить\n- `false`: возобновить",
+                        "type": "boolean"
+                    }
+                },
+                "required": [
+                    "payment_id",
+                    "suspend"
+                ],
+                "title": "Управление приостановкой/возобновлением рекуррентных платежей"
+            }
+        }
+    }
+}

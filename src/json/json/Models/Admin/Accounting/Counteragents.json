@@ -1,0 +1,48 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Models.Admin.Accounting.Counteragents",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Models.Admin.Accounting.Counteragents": {
+                "properties": {
+                    "GROUPS_NAMES()": {
+                        "nullable": true
+                    },
+                    "id": {
+                        "type": "integer"
+                    },
+                    "name": {
+                        "type": "string",
+                        "nullable": true
+                    },
+                    "inn": {
+                        "type": "string",
+                        "nullable": true
+                    },
+                    "document_number": {
+                        "type": "string",
+                        "nullable": true
+                    },
+                    "comments": {
+                        "type": "string",
+                        "nullable": true
+                    },
+                    "comments_2": {
+                        "type": "string",
+                        "nullable": true
+                    },
+                    "in_several_groups": {
+                        "nullable": true
+                    },
+                    "group_id": {
+                        "nullable": true
+                    }
+                }
+            }
+        }
+    }
+}

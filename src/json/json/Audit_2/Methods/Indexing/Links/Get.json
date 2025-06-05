@@ -1,0 +1,144 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Audit_2.Methods.Indexing.Links.Get",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Audit_2.Methods.Indexing.Links.Get": {
+                "type": "object",
+                "properties": {
+                    "template_date_range": {
+                        "title": "Диапазон значений шаблона",
+                        "type": "string"
+                    },
+                    "dates": {
+                        "title": "Произвольные даты без использования диапазона",
+                        "nullable": true,
+                        "type": "array",
+                        "items": {
+                            "oneOf": [
+                                {
+                                    "type": "string"
+                                },
+                                {
+                                    "type": "number"
+                                }
+                            ]
+                        }
+                    },
+                    "date1": {
+                        "title": "Дата начала диапазона",
+                        "nullable": true,
+                        "type": "string"
+                    },
+                    "date2": {
+                        "title": "Дата окончания диапазона",
+                        "nullable": true,
+                        "type": "string"
+                    },
+                    "type_range": {
+                        "title": "Тип диапазона дат",
+                        "default": 7,
+                        "nullable": true,
+                        "allOf": [
+                            {
+                                "$ref": "../../../../Audit_2/Types/Indexing/TypeRange.json#/components/schemas/Audit_2.Types.Indexing.TypeRange"
+                            }
+                        ]
+                    },
+                    "count_dates": {
+                        "title": "Количество дней в диапазоне",
+                        "nullable": true,
+                        "type": "integer"
+                    },
+                    "searchers_keys": {
+                        "title": "Ппоисковые ключи",
+                        "nullable": true,
+                        "type": "array",
+                        "items": {
+                            "oneOf": [
+                                {
+                                    "type": "string"
+                                },
+                                {
+                                    "type": "number"
+                                }
+                            ]
+                        }
+                    },
+                    "tags": {
+                        "title": "Теги",
+                        "nullable": true,
+                        "type": "array",
+                        "items": {
+                            "oneOf": [
+                                {
+                                    "type": "string"
+                                },
+                                {
+                                    "type": "number"
+                                }
+                            ]
+                        }
+                    },
+                    "dynamic": {
+                        "title": "Динамический",
+                        "nullable": true,
+                        "type": "array",
+                        "items": {
+                            "oneOf": [
+                                {
+                                    "type": "string"
+                                },
+                                {
+                                    "type": "number"
+                                }
+                            ]
+                        }
+                    },
+                    "data_dynamic": {
+                        "title": "Динаамические данные",
+                        "nullable": true,
+                        "type": "array",
+                        "items": {
+                            "oneOf": [
+                                {
+                                    "type": "string"
+                                },
+                                {
+                                    "type": "number"
+                                }
+                            ]
+                        }
+                    },
+                    "data_sort": {
+                        "title": "Сортировка данных",
+                        "nullable": true,
+                        "type": "array",
+                        "items": {
+                            "oneOf": [
+                                {
+                                    "type": "string"
+                                },
+                                {
+                                    "type": "number"
+                                }
+                            ]
+                        }
+                    },
+                    "project_id": {
+                        "$ref": "../../../../TV/API/Params/ProjectIdTrait.json#/components/schemas/TV.API.Params.ProjectIdTrait/properties/project_id"
+                    }
+                },
+                "required": [
+                    "template_date_range",
+                    "project_id"
+                ],
+                "title": "Создание гостевой ссылки на просмотр позиций\n\nНеобходимо указать либо date1 и date2, либо dates (вместе указывать нельзя)"
+            }
+        }
+    }
+}

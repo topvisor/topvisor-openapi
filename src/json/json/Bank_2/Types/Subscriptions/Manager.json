@@ -1,0 +1,20 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Bank_2.Types.Subscriptions.Manager",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Bank_2.Types.Subscriptions.Manager": {
+                "type": "string",
+                "enum": [
+                    "system",
+                    "api"
+                ],
+                "title": "Кто управляет подпиской, а именно:\n\n- Запуск списания с карты / электронного кошелька\n- Создание счета\n- Отправка предложения об оплате"
+            }
+        }
+    }
+}

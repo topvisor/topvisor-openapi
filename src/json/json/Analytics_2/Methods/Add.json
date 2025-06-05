@@ -1,0 +1,49 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Analytics_2.Methods.Add",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Analytics_2.Methods.Add": {
+                "type": "object",
+                "properties": {
+                    "ec": {
+                        "title": "Категория",
+                        "nullable": true,
+                        "type": "string"
+                    },
+                    "ea": {
+                        "title": "Дейсвтие",
+                        "nullable": true,
+                        "type": "string"
+                    },
+                    "el": {
+                        "title": "Ярлык в base64",
+                        "nullable": true,
+                        "type": "string"
+                    },
+                    "uid": {
+                        "title": "ID пользователя",
+                        "nullable": true,
+                        "type": "integer"
+                    },
+                    "hash_id": {
+                        "title": "Хеш для уникализации события",
+                        "nullable": true,
+                        "type": "integer"
+                    },
+                    "hash": {
+                        "title": "Хэш для проверки подлинности события",
+                        "nullable": true,
+                        "type": "integer"
+                    }
+                },
+                "required": [],
+                "title": "Фиксация события test"
+            }
+        }
+    }
+}

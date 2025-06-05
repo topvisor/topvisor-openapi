@@ -1,0 +1,54 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/I18n.Sites.Topvisor.Organization",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "I18n.Sites.Topvisor.Organization": {
+                "type": "object",
+                "properties": {
+                    "Description": {
+                        "const": "All you need for SEO on one platform. Rank tracking and volume checking, website audit, keyword research. Cluster keywords by Top and track website changes. We make SEO easy for SEO specialists and digital marketers.",
+                        "readOnly": true
+                    },
+                    "Street_address": {
+                        "const": "Voronezhskaya st., 5A, Prisma office building, office 242",
+                        "readOnly": true
+                    },
+                    "Address_locality": {
+                        "const": "Saint Petersburg",
+                        "readOnly": true
+                    },
+                    "Address_region": {
+                        "const": "Leningrad region",
+                        "readOnly": true
+                    },
+                    "Address_country": {
+                        "const": "Russia",
+                        "readOnly": true
+                    },
+                    "Contact_type": {
+                        "const": "Sales",
+                        "readOnly": true
+                    },
+                    "General_manager": {
+                        "const": "Pustovoyt Denis Anatolievich",
+                        "readOnly": true
+                    }
+                },
+                "required": [
+                    "Description",
+                    "Street_address",
+                    "Address_locality",
+                    "Address_region",
+                    "Address_country",
+                    "Contact_type",
+                    "General_manager"
+                ]
+            }
+        }
+    }
+}

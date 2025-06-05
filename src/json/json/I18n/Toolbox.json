@@ -1,0 +1,78 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/I18n.Toolbox",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "I18n.Toolbox": {
+                "type": "object",
+                "properties": {
+                    "Toolbox": {
+                        "const": "Toolbox",
+                        "readOnly": true
+                    },
+                    "Tasks_list": {
+                        "const": "Tasks list",
+                        "readOnly": true
+                    },
+                    "View_collected_data_and_monitor_status": {
+                        "const": "View collected data and watch launched tasks status. Tasks are stored for 24 hours.",
+                        "readOnly": true
+                    },
+                    "Tool": {
+                        "const": "Tool",
+                        "readOnly": true
+                    },
+                    "Task_completed": {
+                        "const": "Completed",
+                        "readOnly": true
+                    },
+                    "h": {
+                        "const": "h",
+                        "readOnly": true
+                    },
+                    "min": {
+                        "const": "min",
+                        "readOnly": true
+                    },
+                    "Need_to_save_data_till_end": {
+                        "const": "Wanna save keywords data forever? <a href=\"/support/start/create/\" target=\"_blank\">Create a project</a> in Topvisor and check volume without time limits.",
+                        "readOnly": true
+                    },
+                    "Repeat_task": {
+                        "const": "Repeat task",
+                        "readOnly": true
+                    },
+                    "No_tasks": {
+                        "const": "No tasks",
+                        "readOnly": true
+                    },
+                    "For_export": {
+                        "const": "For export",
+                        "readOnly": true
+                    },
+                    "With_tool_can_fast_check": {
+                        "const": "With the help of the tool you can quickly check the demand and popularity of key phrases. <a href=\"/support/volume/\" target=\"_blank\">What is frequency →</a>",
+                        "readOnly": true
+                    }
+                },
+                "required": [
+                    "Toolbox",
+                    "Tasks_list",
+                    "View_collected_data_and_monitor_status",
+                    "Tool",
+                    "Task_completed",
+                    "h",
+                    "min",
+                    "Repeat_task",
+                    "No_tasks",
+                    "For_export",
+                    "With_tool_can_fast_check"
+                ]
+            }
+        }
+    }
+}

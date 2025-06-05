@@ -1,0 +1,804 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/I18n.Competitors",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "I18n.Competitors": {
+                "type": "object",
+                "properties": {
+                    "Competitor_analysis": {
+                        "const": "Competitor research",
+                        "readOnly": true
+                    },
+                    "Powerful_tool_for_competitve_analysis": {
+                        "const": "Powerful tool for comprehensive competitve reserach",
+                        "readOnly": true
+                    },
+                    "Results_on_serp": {
+                        "const": "Total search results count",
+                        "readOnly": true
+                    },
+                    "Keywords": {
+                        "const": "Keywords",
+                        "readOnly": true
+                    },
+                    "Keyword": {
+                        "const": "Keyword",
+                        "readOnly": true
+                    },
+                    "Traffic": {
+                        "const": "Traffic",
+                        "readOnly": true
+                    },
+                    "Common": {
+                        "const": "Common",
+                        "readOnly": true
+                    },
+                    "Unique": {
+                        "const": "Unique",
+                        "readOnly": true
+                    },
+                    "Chart": {
+                        "const": "Chart",
+                        "readOnly": true
+                    },
+                    "Summary": {
+                        "const": "Summary",
+                        "readOnly": true
+                    },
+                    "Summary_data": {
+                        "const": "Summary data",
+                        "readOnly": true
+                    },
+                    "Get_report": {
+                        "const": "Create report",
+                        "readOnly": true
+                    },
+                    "Expand": {
+                        "const": "Expand",
+                        "readOnly": true
+                    },
+                    "Expand_report": {
+                        "const": "Expand report",
+                        "readOnly": true
+                    },
+                    "Domain_or_URL": {
+                        "const": "Domain or URL",
+                        "readOnly": true
+                    },
+                    "Enter_domain_or_URL": {
+                        "const": "Enter domain or URL",
+                        "readOnly": true
+                    },
+                    "Enter_keyword": {
+                        "const": "Enter keyword",
+                        "readOnly": true
+                    },
+                    "Create_report": {
+                        "const": "Create report",
+                        "readOnly": true
+                    },
+                    "Report_created": {
+                        "const": "Report created",
+                        "readOnly": true
+                    },
+                    "Structure": {
+                        "const": "Structure",
+                        "readOnly": true
+                    },
+                    "Search_results": {
+                        "const": "Search results",
+                        "readOnly": true
+                    },
+                    "Related_keywords": {
+                        "const": "Related keywords",
+                        "readOnly": true
+                    },
+                    "Word_forms": {
+                        "const": "Word forms",
+                        "readOnly": true
+                    },
+                    "Organic_results": {
+                        "const": "Organic results",
+                        "readOnly": true
+                    },
+                    "organic_results": {
+                        "const": "organic",
+                        "readOnly": true
+                    },
+                    "Ads": {
+                        "const": "Ads",
+                        "readOnly": true
+                    },
+                    "ads": {
+                        "const": "ads",
+                        "readOnly": true
+                    },
+                    "Unique_keywords": {
+                        "const": "Unique keywords",
+                        "readOnly": true
+                    },
+                    "All_keywords": {
+                        "const": "All keywords",
+                        "readOnly": true
+                    },
+                    "Common_keywords": {
+                        "const": "Common keywords",
+                        "readOnly": true
+                    },
+                    "Cost": {
+                        "const": "Cost",
+                        "readOnly": true
+                    },
+                    "Volume": {
+                        "const": "Volume",
+                        "readOnly": true
+                    },
+                    "Count": {
+                        "const": "Count",
+                        "readOnly": true
+                    },
+                    "My_reports": {
+                        "const": "My reports",
+                        "readOnly": true
+                    },
+                    "Domain_keywords": {
+                        "const": "Domain keywords",
+                        "readOnly": true
+                    },
+                    "Domain_ad_texts": {
+                        "const": "Domain ad texts",
+                        "readOnly": true
+                    },
+                    "Competitors_in_organic_paid_search": {
+                        "const": "Competitors in organic & paid search",
+                        "readOnly": true
+                    },
+                    "Competitors_keywords": {
+                        "const": "Competitor's keywords",
+                        "readOnly": true
+                    },
+                    "Competitors_ad_texts": {
+                        "const": "Competitor's ad texts",
+                        "readOnly": true
+                    },
+                    "Basic_report": {
+                        "const": "Basic",
+                        "readOnly": true
+                    },
+                    "Select_report_type": {
+                        "const": "Select a report type",
+                        "readOnly": true
+                    },
+                    "domain_and_competitors_list": {
+                        "const": "domain and list of competitors",
+                        "readOnly": true
+                    },
+                    "purchased": {
+                        "const": "purchased",
+                        "readOnly": true
+                    },
+                    "Add_competitor_keywords": {
+                        "const": "Add competitor keywords",
+                        "readOnly": true
+                    },
+                    "you_can_purchase_later": {
+                        "const": "multi reports",
+                        "readOnly": true
+                    },
+                    "Checklist_keywords_paid_and_organic": {
+                        "const": "Keywords (Paid + Organic)",
+                        "readOnly": true
+                    },
+                    "Keyword_performance_indicators": {
+                        "const": "Keyword performance indicators",
+                        "readOnly": true
+                    },
+                    "Snippets_and_ads": {
+                        "const": "Snippet and ads",
+                        "readOnly": true
+                    },
+                    "Website_URLs_visible_in_search": {
+                        "const": "Website URLs in SERP",
+                        "readOnly": true
+                    },
+                    "Compare_data_with_competitors": {
+                        "const": "Compare data with competitors",
+                        "readOnly": true
+                    },
+                    "Group_export_of_competitors": {
+                        "const": "Competitors group export",
+                        "readOnly": true
+                    },
+                    "Keyword_cloud": {
+                        "const": "Keyword cloud",
+                        "readOnly": true
+                    },
+                    "CPC": {
+                        "const": "CPC",
+                        "readOnly": true
+                    },
+                    "Keywords_by_URL": {
+                        "const": "Keywords by URL",
+                        "readOnly": true
+                    },
+                    "Competitor_research_level": {
+                        "const": "Competitor research level",
+                        "readOnly": true
+                    },
+                    "List_of_competitors_and_intersection": {
+                        "const": "List of competitors and intersection",
+                        "readOnly": true
+                    },
+                    "Competitors_level_info": {
+                        "const": "A list of likely competitors will be included in the report without this option.<br><br>\n\t\tAdd competitor keywords to your report for quick access to keywords and snippets.<br><br>\n\t\tThe higher is the selected research level, the fewer pools of competitor keywords with a lower intersection level will be in the report.<br><br>\n\t\tIf you are not sure yet which level to select, you can buy the advanced report later on the <b>Competitors</b> page.",
+                        "readOnly": true
+                    },
+                    "level_purchased": {
+                        "const": "level purchased",
+                        "readOnly": true
+                    },
+                    "included": {
+                        "const": "included",
+                        "readOnly": true
+                    },
+                    "in_the_report": {
+                        "const": "in the report",
+                        "readOnly": true
+                    },
+                    "Total": {
+                        "const": "Total",
+                        "readOnly": true
+                    },
+                    "Competitors_list": {
+                        "const": "List of competitors",
+                        "readOnly": true
+                    },
+                    "Keywords_list": {
+                        "const": "List of keywords",
+                        "readOnly": true
+                    },
+                    "Keywords_of_competitors": {
+                        "const": "Competitors keywords",
+                        "readOnly": true
+                    },
+                    "To_project": {
+                        "const": "To project",
+                        "readOnly": true
+                    },
+                    "To_your_project": {
+                        "const": "To your project",
+                        "readOnly": true
+                    },
+                    "Export_keywords_to_project": {
+                        "const": "Export keywords to the project",
+                        "readOnly": true
+                    },
+                    "To_export_keywords_to_project": {
+                        "const": "Export keywords to the project",
+                        "readOnly": true
+                    },
+                    "Select_project": {
+                        "const": "Select a project",
+                        "readOnly": true
+                    },
+                    "Automated_grouping": {
+                        "const": "Automated grouping",
+                        "readOnly": true
+                    },
+                    "If_these_keywords_already_added": {
+                        "const": "If these keywords already exist in the project",
+                        "readOnly": true
+                    },
+                    "Keywords_total": {
+                        "const": "Total",
+                        "readOnly": true
+                    },
+                    "Keywords_common": {
+                        "const": "Common",
+                        "readOnly": true
+                    },
+                    "Keywords_unique": {
+                        "const": "Unique",
+                        "readOnly": true
+                    },
+                    "Keywords_intersection": {
+                        "const": "Intersection",
+                        "readOnly": true
+                    },
+                    "Keywords_volume": {
+                        "const": "Volume",
+                        "readOnly": true
+                    },
+                    "Keywords_impressions": {
+                        "const": "Impressions",
+                        "readOnly": true
+                    },
+                    "Keywords_avg_rank": {
+                        "const": "Average",
+                        "readOnly": true
+                    },
+                    "Keywords_median_rank": {
+                        "const": "Median",
+                        "readOnly": true
+                    },
+                    "Keywords_traffic": {
+                        "const": "Traffic",
+                        "readOnly": true
+                    },
+                    "Keywords_cost": {
+                        "const": "Cost",
+                        "readOnly": true
+                    },
+                    "Keywords_count": {
+                        "const": "Keywords",
+                        "readOnly": true
+                    },
+                    "Keywords_relevance": {
+                        "const": "Relevance",
+                        "readOnly": true
+                    },
+                    "Competitor": {
+                        "const": "Competitor",
+                        "readOnly": true
+                    },
+                    "Elements": {
+                        "const": "Elements",
+                        "readOnly": true
+                    },
+                    "No_elements": {
+                        "const": "No elements",
+                        "readOnly": true
+                    },
+                    "Elements_object_card": {
+                        "const": "Object card",
+                        "readOnly": true
+                    },
+                    "Elements_featured_snippet": {
+                        "const": "Featured snippet",
+                        "readOnly": true
+                    },
+                    "Elements_goods": {
+                        "const": "Goods",
+                        "readOnly": true
+                    },
+                    "Elements_map": {
+                        "const": "Map",
+                        "readOnly": true
+                    },
+                    "Elements_video": {
+                        "const": "Video",
+                        "readOnly": true
+                    },
+                    "Elements_images": {
+                        "const": "Images",
+                        "readOnly": true
+                    },
+                    "Elements_news": {
+                        "const": "News",
+                        "readOnly": true
+                    },
+                    "Elements_calc": {
+                        "const": "Formulas",
+                        "readOnly": true
+                    },
+                    "Elements_knowledge_panel": {
+                        "const": "Knowledge panel",
+                        "readOnly": true
+                    },
+                    "Elements_dictionary": {
+                        "const": "Dictionary",
+                        "readOnly": true
+                    },
+                    "Elements_definitions": {
+                        "const": "Definitions",
+                        "readOnly": true
+                    },
+                    "Elements_travel": {
+                        "const": "Travel",
+                        "readOnly": true
+                    },
+                    "Elements_calculator": {
+                        "const": "Calculator",
+                        "readOnly": true
+                    },
+                    "Elements_related_searches": {
+                        "const": "Related keywords",
+                        "readOnly": true
+                    },
+                    "Elements_ad_top": {
+                        "const": "Ad at the page top",
+                        "readOnly": true
+                    },
+                    "Elements_ad_bottom": {
+                        "const": "Ad at the page bottom",
+                        "readOnly": true
+                    },
+                    "Elements_ad_goods": {
+                        "const": "Ad - goods",
+                        "readOnly": true
+                    },
+                    "Elements_recipes": {
+                        "const": "Recipes",
+                        "readOnly": true
+                    },
+                    "Elements_health": {
+                        "const": "Health",
+                        "readOnly": true
+                    },
+                    "Elements_food": {
+                        "const": "Food, delivery, recipes",
+                        "readOnly": true
+                    },
+                    "Elements_media": {
+                        "const": "Media",
+                        "readOnly": true
+                    },
+                    "Elements_yandex_services": {
+                        "const": "Yandex services",
+                        "readOnly": true
+                    },
+                    "Elements_interactive": {
+                        "const": "Charts etc.",
+                        "readOnly": true
+                    },
+                    "reversed": {
+                        "const": "reversed",
+                        "readOnly": true
+                    },
+                    "Rank_from_last_check": {
+                        "const": "Rank from last check",
+                        "readOnly": true
+                    },
+                    "Snippet_title": {
+                        "const": "Snippet title",
+                        "readOnly": true
+                    },
+                    "Snippet_body": {
+                        "const": "Snippet body",
+                        "readOnly": true
+                    },
+                    "Results_count": {
+                        "const": "Results",
+                        "readOnly": true
+                    },
+                    "Ad_type": {
+                        "const": "Ad type",
+                        "readOnly": true
+                    },
+                    "Traffic_forecast_depends_on_impressions_and_rank": {
+                        "const": "Traffic forecast<br>Depends on the number of impressions and a website rank",
+                        "readOnly": true
+                    },
+                    "Potential_ad_cost_depends_on_CPC_and_traffic": {
+                        "const": "Potential ad cost based on traffic forecast. Сalculated by multiplying Traffic and CPC.",
+                        "readOnly": true
+                    },
+                    "Pages": {
+                        "const": "Pages",
+                        "readOnly": true
+                    },
+                    "Results_menu": {
+                        "const": "Results menu",
+                        "readOnly": true
+                    },
+                    "Website_topic": {
+                        "const": "Topic",
+                        "readOnly": true
+                    },
+                    "Search_URL_keyword": {
+                        "const": "Search URL / Keyword",
+                        "readOnly": true
+                    },
+                    "Expires_in": {
+                        "const": "Expires in",
+                        "readOnly": true
+                    },
+                    "Keyword_search_volume": {
+                        "const": "Keyword search volume",
+                        "readOnly": true
+                    },
+                    "Keyword_rank": {
+                        "const": "Keyword rank",
+                        "readOnly": true
+                    },
+                    "Keywords_to_export": {
+                        "const": "Keywords to export",
+                        "readOnly": true
+                    },
+                    "Intersection_label": {
+                        "const": "Keyword intersection percentage",
+                        "readOnly": true
+                    },
+                    "Relevance_label": {
+                        "const": "Relevance of two websites",
+                        "readOnly": true
+                    },
+                    "Set_target_URLs_automatically": {
+                        "const": "Set target URLs automatically",
+                        "readOnly": true
+                    },
+                    "Traffic_forecast": {
+                        "const": "Traffic forecast",
+                        "readOnly": true
+                    },
+                    "Traffic_volume": {
+                        "const": "Traffic volume",
+                        "readOnly": true
+                    },
+                    "No_data_to_display": {
+                        "const": "No data to display",
+                        "readOnly": true
+                    },
+                    "List_of_leaders": {
+                        "const": "List of leaders",
+                        "readOnly": true
+                    },
+                    "Leaders_keywords": {
+                        "const": "Leaders keywords",
+                        "readOnly": true
+                    },
+                    "Intersection_level": {
+                        "const": "Intersection level",
+                        "readOnly": true
+                    },
+                    "Question_phrases": {
+                        "const": "Question phrases",
+                        "readOnly": true
+                    },
+                    "Fix_word_order": {
+                        "const": "Fix word order",
+                        "readOnly": true
+                    },
+                    "Exact_match": {
+                        "const": "Exact match",
+                        "readOnly": true
+                    },
+                    "Leader": {
+                        "const": "Leader",
+                        "readOnly": true
+                    },
+                    "Commercial_word_forms": {
+                        "const": "Commercial word forms",
+                        "readOnly": true
+                    },
+                    "Keyword_has_broad_thematic_database_specify_keyword": {
+                        "const": "Keyword has broad thematic database, specify keyword to get a more accurate report",
+                        "readOnly": true
+                    },
+                    "Wordforms_thematic_keywords_leaders_list": {
+                        "const": "Word forms, thematic keywords and <br>list of leaders",
+                        "readOnly": true
+                    },
+                    "Search_volume_keyword_cost_seasonality": {
+                        "const": "Seasonal search volume and keyword cost",
+                        "readOnly": true
+                    },
+                    "Research_by_word_form": {
+                        "const": "Research by word form",
+                        "readOnly": true
+                    },
+                    "Research_by_thematic": {
+                        "const": "Research by topic",
+                        "readOnly": true
+                    },
+                    "by_thematic": {
+                        "const": "by topic",
+                        "readOnly": true
+                    },
+                    "Organic_top_50_ads_by_thematics": {
+                        "const": "TOP 50 organic results + Ads on topic",
+                        "readOnly": true
+                    },
+                    "Topic_leaders_list": {
+                        "const": "List of topic leaders",
+                        "readOnly": true
+                    },
+                    "Snippets_ads_of_topic_leaders": {
+                        "const": "Snippets and ads of topic leaders",
+                        "readOnly": true
+                    },
+                    "Bulk_export_of_leaders_keywords": {
+                        "const": "Bulk export of leader keywords",
+                        "readOnly": true
+                    },
+                    "Competitor_research": {
+                        "const": "Competitor research",
+                        "readOnly": true
+                    },
+                    "Leaders_analysis": {
+                        "const": "Leader research",
+                        "readOnly": true
+                    },
+                    "Leaders": {
+                        "const": "Leaders",
+                        "readOnly": true
+                    },
+                    "Word_count": {
+                        "const": "Word count",
+                        "readOnly": true
+                    },
+                    "Length": {
+                        "const": "Length",
+                        "readOnly": true
+                    },
+                    "Intersection_level_required": {
+                        "const": "Intersection level required",
+                        "readOnly": true
+                    },
+                    "Download_keywords_snippets_after_purchase": {
+                        "const": "After purchase, you can download keywords and snippets of this and other competitors with the intersection level %intersection% in one click and compare their data with the main domain on this report.",
+                        "readOnly": true
+                    },
+                    "Results_not_found": {
+                        "const": "There's no report by such URL or keyword in our database. This means the URL doesn't rank in TOP-50 for high volume keywords or that the keyword has <5 volume in Yandex and Google at the same time.<br><br>To find the competitors that rank for the keywords in your project with My competitors tool, follow <a href=\"/support/rankings/snapshots/competitors/\">this manual.</a>",
+                        "readOnly": true
+                    }
+                },
+                "required": [
+                    "Competitor_analysis",
+                    "Powerful_tool_for_competitve_analysis",
+                    "Results_on_serp",
+                    "Keywords",
+                    "Keyword",
+                    "Traffic",
+                    "Common",
+                    "Unique",
+                    "Chart",
+                    "Summary",
+                    "Summary_data",
+                    "Get_report",
+                    "Expand",
+                    "Expand_report",
+                    "Domain_or_URL",
+                    "Enter_domain_or_URL",
+                    "Enter_keyword",
+                    "Create_report",
+                    "Report_created",
+                    "Structure",
+                    "Search_results",
+                    "Related_keywords",
+                    "Word_forms",
+                    "Organic_results",
+                    "organic_results",
+                    "Ads",
+                    "ads",
+                    "Unique_keywords",
+                    "All_keywords",
+                    "Common_keywords",
+                    "Cost",
+                    "Volume",
+                    "Count",
+                    "My_reports",
+                    "Domain_keywords",
+                    "Domain_ad_texts",
+                    "Competitors_in_organic_paid_search",
+                    "Competitors_keywords",
+                    "Competitors_ad_texts",
+                    "Basic_report",
+                    "Select_report_type",
+                    "domain_and_competitors_list",
+                    "purchased",
+                    "Add_competitor_keywords",
+                    "you_can_purchase_later",
+                    "Checklist_keywords_paid_and_organic",
+                    "Keyword_performance_indicators",
+                    "Snippets_and_ads",
+                    "Website_URLs_visible_in_search",
+                    "Compare_data_with_competitors",
+                    "Group_export_of_competitors",
+                    "Keyword_cloud",
+                    "CPC",
+                    "Keywords_by_URL",
+                    "Competitor_research_level",
+                    "List_of_competitors_and_intersection",
+                    "Competitors_level_info",
+                    "level_purchased",
+                    "included",
+                    "in_the_report",
+                    "Total",
+                    "Competitors_list",
+                    "Keywords_list",
+                    "Keywords_of_competitors",
+                    "To_project",
+                    "To_your_project",
+                    "Export_keywords_to_project",
+                    "To_export_keywords_to_project",
+                    "Select_project",
+                    "Automated_grouping",
+                    "If_these_keywords_already_added",
+                    "Keywords_total",
+                    "Keywords_common",
+                    "Keywords_unique",
+                    "Keywords_intersection",
+                    "Keywords_volume",
+                    "Keywords_impressions",
+                    "Keywords_avg_rank",
+                    "Keywords_median_rank",
+                    "Keywords_traffic",
+                    "Keywords_cost",
+                    "Keywords_count",
+                    "Keywords_relevance",
+                    "Competitor",
+                    "Elements",
+                    "No_elements",
+                    "Elements_object_card",
+                    "Elements_featured_snippet",
+                    "Elements_goods",
+                    "Elements_map",
+                    "Elements_video",
+                    "Elements_images",
+                    "Elements_news",
+                    "Elements_calc",
+                    "Elements_knowledge_panel",
+                    "Elements_dictionary",
+                    "Elements_definitions",
+                    "Elements_travel",
+                    "Elements_calculator",
+                    "Elements_related_searches",
+                    "Elements_ad_top",
+                    "Elements_ad_bottom",
+                    "Elements_ad_goods",
+                    "Elements_recipes",
+                    "Elements_health",
+                    "Elements_food",
+                    "Elements_media",
+                    "Elements_yandex_services",
+                    "Elements_interactive",
+                    "reversed",
+                    "Rank_from_last_check",
+                    "Snippet_title",
+                    "Snippet_body",
+                    "Results_count",
+                    "Ad_type",
+                    "Traffic_forecast_depends_on_impressions_and_rank",
+                    "Potential_ad_cost_depends_on_CPC_and_traffic",
+                    "Pages",
+                    "Results_menu",
+                    "Website_topic",
+                    "Search_URL_keyword",
+                    "Expires_in",
+                    "Keyword_search_volume",
+                    "Keyword_rank",
+                    "Keywords_to_export",
+                    "Intersection_label",
+                    "Relevance_label",
+                    "Set_target_URLs_automatically",
+                    "Traffic_forecast",
+                    "Traffic_volume",
+                    "No_data_to_display",
+                    "List_of_leaders",
+                    "Leaders_keywords",
+                    "Intersection_level",
+                    "Question_phrases",
+                    "Fix_word_order",
+                    "Exact_match",
+                    "Leader",
+                    "Commercial_word_forms",
+                    "Keyword_has_broad_thematic_database_specify_keyword",
+                    "Wordforms_thematic_keywords_leaders_list",
+                    "Search_volume_keyword_cost_seasonality",
+                    "Research_by_word_form",
+                    "Research_by_thematic",
+                    "by_thematic",
+                    "Organic_top_50_ads_by_thematics",
+                    "Topic_leaders_list",
+                    "Snippets_ads_of_topic_leaders",
+                    "Bulk_export_of_leaders_keywords",
+                    "Competitor_research",
+                    "Leaders_analysis",
+                    "Leaders",
+                    "Word_count",
+                    "Length",
+                    "Intersection_level_required",
+                    "Download_keywords_snippets_after_purchase",
+                    "Results_not_found"
+                ]
+            }
+        }
+    }
+}

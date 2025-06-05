@@ -1,0 +1,579 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/I18n.Dynamics",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "I18n.Dynamics": {
+                "type": "object",
+                "properties": {
+                    "Number_keywords_better_ranks": {
+                        "const": "Keywords that advanced in ranks",
+                        "readOnly": true
+                    },
+                    "Number_keywords_same_ranks": {
+                        "const": "Keywords that didn't change ranks",
+                        "readOnly": true
+                    },
+                    "Number_keywords_drop_ranks": {
+                        "const": "Keywords that dropped in ranks",
+                        "readOnly": true
+                    },
+                    "Search_table": {
+                        "const": "Find in table",
+                        "readOnly": true
+                    },
+                    "Search_page": {
+                        "const": "Find on page",
+                        "readOnly": true
+                    },
+                    "Snippets": {
+                        "const": "Snippets",
+                        "readOnly": true
+                    },
+                    "Remove_results": {
+                        "const": "Delete all results for the applied date",
+                        "readOnly": true
+                    },
+                    "oneway_operation": {
+                        "const": "this action cannot be undone",
+                        "readOnly": true
+                    },
+                    "Proceed_deleting_ask": {
+                        "const": "Do you want to continue?",
+                        "readOnly": true
+                    },
+                    "Sort_by_target": {
+                        "const": "By target URL",
+                        "readOnly": true
+                    },
+                    "Sort_by_default": {
+                        "const": "Default settings",
+                        "readOnly": true
+                    },
+                    "Sort_by_relevant": {
+                        "const": "By ranked URL",
+                        "readOnly": true
+                    },
+                    "Sort_by_position_change": {
+                        "const": "Ranking dynamics over period",
+                        "readOnly": true
+                    },
+                    "Filter_by_tag": {
+                        "const": "Filter by tag",
+                        "readOnly": true
+                    },
+                    "Set_target_for_group": {
+                        "const": "Set target for group",
+                        "readOnly": true
+                    },
+                    "Send_email": {
+                        "const": "Send to Email",
+                        "readOnly": true
+                    },
+                    "Target_URL": {
+                        "const": "Target URL",
+                        "readOnly": true
+                    },
+                    "Rankings_updated_less_than_5minutes": {
+                        "const": "You updated keyword ranks less than 5 minutes ago",
+                        "readOnly": true
+                    },
+                    "Add_keywords_locations_notice": {
+                        "const": "Add keywords and select locations<br> in project settings",
+                        "readOnly": true
+                    },
+                    "Tasks_processing_notice": {
+                        "const": "We're processing your tasks.",
+                        "readOnly": true
+                    },
+                    "Ranks_updating_notice": {
+                        "const": "We're updating your keyword rankings.",
+                        "readOnly": true
+                    },
+                    "Updated": {
+                        "const": "Last update",
+                        "readOnly": true
+                    },
+                    "Positions_snippets": {
+                        "const": "Rankings and snippets",
+                        "readOnly": true
+                    },
+                    "Period_last_7_days": {
+                        "const": "Last 7 days",
+                        "readOnly": true
+                    },
+                    "Period_last_10_days": {
+                        "const": "Last 10 days",
+                        "readOnly": true
+                    },
+                    "Period_last_30_days": {
+                        "const": "Last 30 days",
+                        "readOnly": true
+                    },
+                    "Any_dates": {
+                        "const": "Optional dates",
+                        "readOnly": true
+                    },
+                    "Current_month": {
+                        "const": "This month",
+                        "readOnly": true
+                    },
+                    "Previous_month": {
+                        "const": "Previous month",
+                        "readOnly": true
+                    },
+                    "Last_year": {
+                        "const": "Last year",
+                        "readOnly": true
+                    },
+                    "Random": {
+                        "const": "Random",
+                        "readOnly": true
+                    },
+                    "Period_regular": {
+                        "const": "Period",
+                        "readOnly": true
+                    },
+                    "Period_2_dates": {
+                        "const": "Two dates",
+                        "readOnly": true
+                    },
+                    "Period_2_margin_dates": {
+                        "const": "First and last date",
+                        "readOnly": true
+                    },
+                    "Period_2_latest_dates": {
+                        "const": "Two latest dates",
+                        "readOnly": true
+                    },
+                    "Period_first_date": {
+                        "const": "First date",
+                        "readOnly": true
+                    },
+                    "Period_last_date": {
+                        "const": "Last date",
+                        "readOnly": true
+                    },
+                    "Period_1_date": {
+                        "const": "One date",
+                        "readOnly": true
+                    },
+                    "Period_only_updates": {
+                        "const": "Only Yandex updates",
+                        "readOnly": true
+                    },
+                    "Last_day_month": {
+                        "const": "Last day of month",
+                        "readOnly": true
+                    },
+                    "Count_dates": {
+                        "const": "Max dates",
+                        "readOnly": true
+                    },
+                    "Painting_0": {
+                        "const": "Top, progress",
+                        "readOnly": true
+                    },
+                    "Painting_1": {
+                        "const": "Improved, dropped",
+                        "readOnly": true
+                    },
+                    "Report_after_tracking_30min_1": {
+                        "const": "After rank tracking",
+                        "readOnly": true
+                    },
+                    "Report_after_tracking_30min_2": {
+                        "const": "in 30 minutes",
+                        "readOnly": true
+                    },
+                    "Display_week_average_ranking": {
+                        "const": "Week's average",
+                        "readOnly": true
+                    },
+                    "Summary": {
+                        "const": "Summary",
+                        "readOnly": true
+                    },
+                    "Show_graphics": {
+                        "const": "Charts",
+                        "readOnly": true
+                    },
+                    "Target_equal_relevant": {
+                        "const": "Target = Ranked",
+                        "readOnly": true
+                    },
+                    "Off_display_group_names": {
+                        "const": "Hide group names",
+                        "readOnly": true
+                    },
+                    "On_display_group_names": {
+                        "const": "Show group names",
+                        "readOnly": true
+                    },
+                    "Display_group_names_above": {
+                        "const": "Display names under groups",
+                        "readOnly": true
+                    },
+                    "Display_group_names_near": {
+                        "const": "Display names near groups",
+                        "readOnly": true
+                    },
+                    "Show_global_volume": {
+                        "const": "Display / Hide global search volume",
+                        "readOnly": true
+                    },
+                    "Remove_keyword": {
+                        "const": "Are you sure you want to delete a selected keyword?",
+                        "readOnly": true
+                    },
+                    "Remove_history": {
+                        "const": "Wipe data for the selected date",
+                        "readOnly": true
+                    },
+                    "Show_competitors": {
+                        "const": "Competitors",
+                        "readOnly": true
+                    },
+                    "Hide_keywords_added_in_period": {
+                        "const": "Hide keywords added within the applied period",
+                        "readOnly": true
+                    },
+                    "Only_keywords_added_in_period": {
+                        "const": "Only keywords added within the applied period",
+                        "readOnly": true
+                    },
+                    "Show_keywords_added_in_period": {
+                        "const": "All keywords",
+                        "readOnly": true
+                    },
+                    "and_save_snapshots": {
+                        "const": "snapshots collected",
+                        "readOnly": true
+                    },
+                    "Check_rankings": {
+                        "const": "Check rankings of project",
+                        "readOnly": true
+                    },
+                    "Add_keywords_on_page": {
+                        "const": "Add keywords on the page",
+                        "readOnly": true
+                    },
+                    "Keywords": {
+                        "const": "Keywords",
+                        "readOnly": true
+                    },
+                    "Add_se_location_to_display_data": {
+                        "const": "Add search engine and location to display data",
+                        "readOnly": true
+                    },
+                    "Number_of_visits": {
+                        "const": "Number of visits",
+                        "readOnly": true
+                    },
+                    "Matches_relevant_URL": {
+                        "const": "Matches ranked URL",
+                        "readOnly": true
+                    },
+                    "Not_Matches_relevant_URL": {
+                        "const": "Doesn't match ranked URL",
+                        "readOnly": true
+                    },
+                    "Relevant_URL_change_history": {
+                        "const": "Ranked URL history",
+                        "readOnly": true
+                    },
+                    "Relevant_URL_changes": {
+                        "const": "Ranked URL changes",
+                        "readOnly": true
+                    },
+                    "Download": {
+                        "const": "Download",
+                        "readOnly": true
+                    },
+                    "Date_order": {
+                        "const": "Date order",
+                        "readOnly": true
+                    },
+                    "Chart_export": {
+                        "const": "Chart export",
+                        "readOnly": true
+                    },
+                    "Calendar_legend_ranks_checked": {
+                        "const": "Check",
+                        "readOnly": true
+                    },
+                    "Calendar_legend_yandex_update": {
+                        "const": "Yandex update",
+                        "readOnly": true
+                    },
+                    "Sort_keywords": {
+                        "const": "Sort",
+                        "readOnly": true
+                    },
+                    "Filter": {
+                        "const": "Filter",
+                        "readOnly": true
+                    },
+                    "Not_filter": {
+                        "const": "No filter",
+                        "readOnly": true
+                    },
+                    "Target_and_relevant_URL": {
+                        "const": "Target and ranked URL",
+                        "readOnly": true
+                    },
+                    "Matches": {
+                        "const": "Match",
+                        "readOnly": true
+                    },
+                    "Not_matches": {
+                        "const": "Don't match",
+                        "readOnly": true
+                    },
+                    "Status_not_defined": {
+                        "const": "Matching not defined",
+                        "readOnly": true
+                    },
+                    "Not_specified": {
+                        "const": "Target not specified",
+                        "readOnly": true
+                    },
+                    "with_featured_snippets": {
+                        "const": "with Featured Snippets",
+                        "readOnly": true
+                    },
+                    "Pin_panel": {
+                        "const": "Pin panel",
+                        "readOnly": true
+                    },
+                    "Pin_filters": {
+                        "const": "Pin filters",
+                        "readOnly": true
+                    },
+                    "Pin_summary": {
+                        "const": "Pin summary",
+                        "readOnly": true
+                    },
+                    "Customize_view": {
+                        "const": "Customize view",
+                        "readOnly": true
+                    },
+                    "Color_theme": {
+                        "const": "Color theme",
+                        "readOnly": true
+                    },
+                    "Highcharts_Export_PNG": {
+                        "const": "Download PNG image",
+                        "readOnly": true
+                    },
+                    "Highcharts_Export_JPEG": {
+                        "const": "Download JPEG image",
+                        "readOnly": true
+                    },
+                    "Highcharts_Export_PDF": {
+                        "const": "Download PDF document",
+                        "readOnly": true
+                    },
+                    "Highcharts_Export_SVG": {
+                        "const": "Download SVG image",
+                        "readOnly": true
+                    },
+                    "Highcharts_Export_Print": {
+                        "const": "Print chart",
+                        "readOnly": true
+                    },
+                    "Highcharts_Export_CSV": {
+                        "const": "Download CSV",
+                        "readOnly": true
+                    },
+                    "Summary_mode": {
+                        "const": "Summary mode",
+                        "readOnly": true
+                    },
+                    "Default_summary_mode": {
+                        "const": "Default",
+                        "readOnly": true
+                    },
+                    "Compact_summary_mode": {
+                        "const": "Compact",
+                        "readOnly": true
+                    },
+                    "Columns_summary_mode": {
+                        "const": "Columns",
+                        "readOnly": true
+                    },
+                    "order": {
+                        "const": "keyword ranking report",
+                        "readOnly": true
+                    },
+                    "Project_has_been_deleted": {
+                        "const": "Project has been deleted",
+                        "readOnly": true
+                    },
+                    "Snippets_no_checked": {
+                        "const": "<b>Snippets</b> weren't collected on the selected dates.",
+                        "readOnly": true
+                    },
+                    "Snippets_no_checking": {
+                        "const": "<b>Snippets</b> aren't being collected. Turn this feature on in the project's settings.",
+                        "readOnly": true
+                    },
+                    "Selected_time_is_hightload": {
+                        "const": "<p>Selected period is the hight load.</p><p>If you need to get results in the morning, we recommend setting time from <i></i> to <i></i> in the morning.</p>",
+                        "readOnly": true
+                    },
+                    "Delete_keyword": {
+                        "const": "Delete keyword",
+                        "readOnly": true
+                    },
+                    "Recheck": {
+                        "const": "Recheck keyword ranking",
+                        "readOnly": true
+                    },
+                    "Checking": {
+                        "const": "Tracking",
+                        "readOnly": true
+                    },
+                    "Recheck_finish": {
+                        "const": "Ranking successfully rechecked",
+                        "readOnly": true
+                    },
+                    "No_target_status": {
+                        "const": "Target link not added",
+                        "readOnly": true
+                    },
+                    "No_result_target_status": {
+                        "const": "Search results not found",
+                        "readOnly": true
+                    },
+                    "Bad_target_status": {
+                        "const": "Result does not match a target link",
+                        "readOnly": true
+                    },
+                    "Good_target_status": {
+                        "const": "Result matches a target link",
+                        "readOnly": true
+                    }
+                },
+                "required": [
+                    "Number_keywords_better_ranks",
+                    "Number_keywords_same_ranks",
+                    "Number_keywords_drop_ranks",
+                    "Search_table",
+                    "Search_page",
+                    "Snippets",
+                    "Remove_results",
+                    "oneway_operation",
+                    "Proceed_deleting_ask",
+                    "Sort_by_target",
+                    "Sort_by_default",
+                    "Sort_by_relevant",
+                    "Sort_by_position_change",
+                    "Filter_by_tag",
+                    "Set_target_for_group",
+                    "Send_email",
+                    "Target_URL",
+                    "Rankings_updated_less_than_5minutes",
+                    "Add_keywords_locations_notice",
+                    "Tasks_processing_notice",
+                    "Ranks_updating_notice",
+                    "Updated",
+                    "Positions_snippets",
+                    "Period_last_7_days",
+                    "Period_last_10_days",
+                    "Period_last_30_days",
+                    "Any_dates",
+                    "Current_month",
+                    "Previous_month",
+                    "Last_year",
+                    "Random",
+                    "Period_regular",
+                    "Period_2_dates",
+                    "Period_2_margin_dates",
+                    "Period_2_latest_dates",
+                    "Period_first_date",
+                    "Period_last_date",
+                    "Period_1_date",
+                    "Period_only_updates",
+                    "Last_day_month",
+                    "Count_dates",
+                    "Painting_0",
+                    "Painting_1",
+                    "Report_after_tracking_30min_1",
+                    "Report_after_tracking_30min_2",
+                    "Display_week_average_ranking",
+                    "Summary",
+                    "Show_graphics",
+                    "Target_equal_relevant",
+                    "Off_display_group_names",
+                    "On_display_group_names",
+                    "Display_group_names_above",
+                    "Display_group_names_near",
+                    "Show_global_volume",
+                    "Remove_keyword",
+                    "Remove_history",
+                    "Show_competitors",
+                    "Hide_keywords_added_in_period",
+                    "Only_keywords_added_in_period",
+                    "Show_keywords_added_in_period",
+                    "and_save_snapshots",
+                    "Check_rankings",
+                    "Add_keywords_on_page",
+                    "Keywords",
+                    "Add_se_location_to_display_data",
+                    "Number_of_visits",
+                    "Matches_relevant_URL",
+                    "Not_Matches_relevant_URL",
+                    "Relevant_URL_change_history",
+                    "Relevant_URL_changes",
+                    "Download",
+                    "Date_order",
+                    "Chart_export",
+                    "Calendar_legend_ranks_checked",
+                    "Calendar_legend_yandex_update",
+                    "Sort_keywords",
+                    "Filter",
+                    "Not_filter",
+                    "Target_and_relevant_URL",
+                    "Matches",
+                    "Not_matches",
+                    "Status_not_defined",
+                    "Not_specified",
+                    "with_featured_snippets",
+                    "Pin_panel",
+                    "Pin_filters",
+                    "Pin_summary",
+                    "Customize_view",
+                    "Color_theme",
+                    "Highcharts_Export_PNG",
+                    "Highcharts_Export_JPEG",
+                    "Highcharts_Export_PDF",
+                    "Highcharts_Export_SVG",
+                    "Highcharts_Export_Print",
+                    "Highcharts_Export_CSV",
+                    "Summary_mode",
+                    "Default_summary_mode",
+                    "Compact_summary_mode",
+                    "Columns_summary_mode",
+                    "order",
+                    "Project_has_been_deleted",
+                    "Snippets_no_checked",
+                    "Snippets_no_checking",
+                    "Selected_time_is_hightload",
+                    "Delete_keyword",
+                    "Recheck",
+                    "Checking",
+                    "Recheck_finish",
+                    "No_target_status",
+                    "No_result_target_status",
+                    "Bad_target_status",
+                    "Good_target_status"
+                ]
+            }
+        }
+    }
+}

@@ -1,0 +1,27 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Projects_2.Types.Analytics.Base",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Projects_2.Types.Analytics.Base": {
+                "type": "integer",
+                "enum": [
+                    1,
+                    11,
+                    13,
+                    2,
+                    3,
+                    6,
+                    4,
+                    5,
+                    12
+                ],
+                "title": "Тип группировки"
+            }
+        }
+    }
+}

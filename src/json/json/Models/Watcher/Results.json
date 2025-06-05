@@ -1,0 +1,101 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Models.Watcher.Results",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Models.Watcher.Results": {
+                "properties": {
+                    "project_id": {
+                        "nullable": true
+                    },
+                    "check_id": {
+                        "nullable": true
+                    },
+                    "url_id": {
+                        "nullable": true
+                    },
+                    "http_codes": {
+                        "type": "array",
+                        "items": {
+                            "oneOf": [
+                                {
+                                    "type": "string"
+                                },
+                                {
+                                    "type": "number"
+                                }
+                            ]
+                        },
+                        "nullable": true
+                    },
+                    "http_codes_changed": {
+                        "nullable": true
+                    },
+                    "http_codes_md5": {
+                        "nullable": true
+                    },
+                    "redirects": {
+                        "type": "array",
+                        "items": {
+                            "oneOf": [
+                                {
+                                    "type": "string"
+                                },
+                                {
+                                    "type": "number"
+                                }
+                            ]
+                        },
+                        "nullable": true
+                    },
+                    "redirects_changed": {
+                        "nullable": true
+                    },
+                    "redirects_md5": {
+                        "nullable": true
+                    },
+                    "h1": {
+                        "nullable": true
+                    },
+                    "h1_changed": {
+                        "nullable": true
+                    },
+                    "h1_md5": {
+                        "nullable": true
+                    },
+                    "title": {
+                        "nullable": true
+                    },
+                    "title_changed": {
+                        "nullable": true
+                    },
+                    "title_md5": {
+                        "nullable": true
+                    },
+                    "description": {
+                        "nullable": true
+                    },
+                    "description_changed": {
+                        "nullable": true
+                    },
+                    "description_md5": {
+                        "nullable": true
+                    },
+                    "content": {
+                        "nullable": true
+                    },
+                    "content_changed": {
+                        "nullable": true
+                    },
+                    "content_md5": {
+                        "nullable": true
+                    }
+                }
+            }
+        }
+    }
+}

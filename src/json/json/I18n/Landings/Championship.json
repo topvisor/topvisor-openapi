@@ -1,0 +1,54 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/I18n.Landings.Championship",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "I18n.Landings.Championship": {
+                "type": "object",
+                "properties": {
+                    "Best_cases": {
+                        "const": "Best cases",
+                        "readOnly": true
+                    },
+                    "Main_competition": {
+                        "const": "Main competition 🏆",
+                        "readOnly": true
+                    },
+                    "Special_nominations": {
+                        "const": "Special nominations 🏆",
+                        "readOnly": true
+                    },
+                    "Nomination": {
+                        "const": "Nomination",
+                        "readOnly": true
+                    },
+                    "Place": {
+                        "const": "Place",
+                        "readOnly": true
+                    },
+                    "Case_and_author": {
+                        "const": "Case and author",
+                        "readOnly": true
+                    },
+                    "place": {
+                        "const": "place",
+                        "readOnly": true
+                    }
+                },
+                "required": [
+                    "Best_cases",
+                    "Main_competition",
+                    "Special_nominations",
+                    "Nomination",
+                    "Place",
+                    "Case_and_author",
+                    "place"
+                ]
+            }
+        }
+    }
+}

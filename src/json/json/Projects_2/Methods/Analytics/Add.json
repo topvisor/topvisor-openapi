@@ -1,0 +1,58 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Projects_2.Methods.Analytics.Add",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Projects_2.Methods.Analytics.Add": {
+                "type": "object",
+                "properties": {
+                    "project_id": {
+                        "title": "ID проекта",
+                        "type": "integer"
+                    },
+                    "axe": {
+                        "title": "Номер метрики",
+                        "allOf": [
+                            {
+                                "$ref": "../../../Projects_2/Types/Analytics/Axe.json#/components/schemas/Projects_2.Types.Analytics.Axe"
+                            }
+                        ]
+                    },
+                    "base_filter": {
+                        "title": "Тип группировки",
+                        "allOf": [
+                            {
+                                "$ref": "../../../Projects_2/Types/Analytics/Base.json#/components/schemas/Projects_2.Types.Analytics.Base"
+                            }
+                        ]
+                    },
+                    "insert_after_id": {
+                        "title": "Id графика, после которого нужно вставить новый график",
+                        "nullable": true,
+                        "type": "integer"
+                    },
+                    "narrow": {
+                        "title": "Маленький график",
+                        "nullable": true,
+                        "type": "integer"
+                    },
+                    "share": {
+                        "title": "Сделать график доступным другим пользователям проекта (может настраивать только владелец проекта)",
+                        "nullable": true,
+                        "type": "integer"
+                    }
+                },
+                "required": [
+                    "project_id",
+                    "axe",
+                    "base_filter"
+                ],
+                "title": "Добавление графика"
+            }
+        }
+    }
+}

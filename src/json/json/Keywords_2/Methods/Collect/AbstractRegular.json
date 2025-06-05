@@ -1,0 +1,96 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Keywords_2.Methods.Collect.AbstractRegular",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Keywords_2.Methods.Collect.AbstractRegular": {
+                "type": "object",
+                "properties": {
+                    "project_id": {
+                        "title": "ID проекта",
+                        "type": "integer"
+                    },
+                    "keywords": {
+                        "title": "Список исходных запросов",
+                        "type": "array",
+                        "items": {
+                            "oneOf": [
+                                {
+                                    "type": "string"
+                                },
+                                {
+                                    "type": "number"
+                                }
+                            ]
+                        }
+                    },
+                    "qualifiers": {
+                        "title": "Объекты определителей настроек ПС и регионов",
+                        "allOf": [
+                            {
+                                "$ref": "../../../Keywords_2/Types/Collect/Qualifiers.json#/components/schemas/Keywords_2.Types.Collect.Qualifiers"
+                            }
+                        ]
+                    },
+                    "keywords_minus": {
+                        "title": "Минус фразы (только для searcher_key = 0 и searcher_key = 1)",
+                        "type": "array",
+                        "items": {
+                            "oneOf": [
+                                {
+                                    "type": "string"
+                                },
+                                {
+                                    "type": "number"
+                                }
+                            ]
+                        }
+                    },
+                    "to_group_id": {
+                        "title": "Id группы для размещения подобранных запросов",
+                        "nullable": true,
+                        "type": "integer"
+                    },
+                    "to_id": {
+                        "title": "Id папки для новых групп",
+                        "type": "integer"
+                    },
+                    "to_type": {
+                        "default": "in_folder_last",
+                        "nullable": true,
+                        "allOf": [
+                            {
+                                "$ref": "../../../Keywords_2/Types/Collect/ToType.json#/components/schemas/Keywords_2.Types.Collect.ToType"
+                            }
+                        ]
+                    },
+                    "in_one_group": {
+                        "title": "Собирать все запросы в одну группу (не несет смысл, если указан to_group_id)",
+                        "type": "boolean"
+                    },
+                    "currency": {
+                        "nullable": true,
+                        "allOf": [
+                            {
+                                "$ref": "../../../TV/API/Types/Currency.json#/components/schemas/TV.API.Types.Currency"
+                            }
+                        ]
+                    },
+                    "debug": {
+                        "nullable": true,
+                        "type": "string"
+                    }
+                },
+                "required": [
+                    "project_id",
+                    "keywords",
+                    "qualifiers"
+                ]
+            }
+        }
+    }
+}

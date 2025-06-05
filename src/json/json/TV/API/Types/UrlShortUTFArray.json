@@ -1,0 +1,20 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/TV.API.Types.UrlShortUTFArray",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "TV.API.Types.UrlShortUTFArray": {
+                "type": "array",
+                "items": {
+                    "$ref": "../../../TV/API/Types/UrlShortUTF.json#/components/schemas/TV.API.Types.UrlShortUTF"
+                },
+                "title": "Тип массива: UrlShortUTF[]",
+                "description": "@extends AbstractStringArray<UrlShortUTF>\n@method UrlShortUTF[] getValues()\n@method UrlShortUTF current()\n@see \\TV\\API\\Types\\UrlShortUTF"
+            }
+        }
+    }
+}

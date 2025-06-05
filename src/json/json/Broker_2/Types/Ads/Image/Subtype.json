@@ -1,0 +1,22 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Broker_2.Types.Ads.Image.Subtype",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Broker_2.Types.Ads.Image.Subtype": {
+                "type": "string",
+                "enum": [
+                    "TEXT_IMAGE_AD",
+                    "MOBILE_APP_IMAGE_AD",
+                    "TEXT_AD_BUILDER_AD",
+                    "MOBILE_APP_AD_BUILDER_AD"
+                ],
+                "title": "Подтип графического объявления"
+            }
+        }
+    }
+}

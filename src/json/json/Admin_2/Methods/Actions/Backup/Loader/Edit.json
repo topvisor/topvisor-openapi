@@ -1,0 +1,67 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Admin_2.Methods.Actions.Backup.Loader.Edit",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Admin_2.Methods.Actions.Backup.Loader.Edit": {
+                "type": "object",
+                "properties": {
+                    "pass_admin_actions": {
+                        "type": "string"
+                    },
+                    "server_name": {
+                        "title": "Сервер, с которого делались бекапы",
+                        "type": "string"
+                    },
+                    "db_name": {
+                        "title": "Имя БД",
+                        "type": "string"
+                    },
+                    "table_name": {
+                        "title": "Имя таблицы",
+                        "type": "string"
+                    },
+                    "date": {
+                        "title": "Дата бекапа чата для добавления",
+                        "allOf": [
+                            {
+                                "$ref": "../../../../../TV/API/Types/Date.json#/components/schemas/TV.API.Types.Date"
+                            }
+                        ]
+                    },
+                    "insert_filter_regexp": {
+                        "title": "Регулярное выражение для импорта только нужных блоков INSERT\n\nБекапы хрянятся в .sql файлах с INSERT командами, в одном INSERT может быть много строк",
+                        "nullable": true,
+                        "allOf": [
+                            {
+                                "$ref": "../../../../../TV/API/Types/RegExp.json#/components/schemas/TV.API.Types.RegExp"
+                            }
+                        ]
+                    },
+                    "task_key": {
+                        "title": "Ключ задачи, участвует в генерации имени БД бекапа\n\nМожет потребоваться в случае выполнения одновременных бекапов одной и тоже же таблицы за одну и ту же дату",
+                        "nullable": true,
+                        "type": "string"
+                    },
+                    "test": {
+                        "title": "Являеется ли запуск - тестом",
+                        "type": "boolean"
+                    }
+                },
+                "required": [
+                    "pass_admin_actions",
+                    "server_name",
+                    "db_name",
+                    "table_name",
+                    "date",
+                    "test"
+                ],
+                "title": "Загрузить и разместить бекап в БД бекапов"
+            }
+        }
+    }
+}

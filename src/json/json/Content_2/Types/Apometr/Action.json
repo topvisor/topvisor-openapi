@@ -1,0 +1,20 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Content_2.Types.Apometr.Action",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Content_2.Types.Apometr.Action": {
+                "type": "string",
+                "enum": [
+                    "0",
+                    "xml"
+                ],
+                "title": "Тип выдачи"
+            }
+        }
+    }
+}

@@ -1,0 +1,33 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Admin_2.Methods.Analytics.Payments.Get",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Admin_2.Methods.Analytics.Payments.Get": {
+                "type": "object",
+                "properties": {
+                    "period": {
+                        "allOf": [
+                            {
+                                "$ref": "../../../../Admin_2/Types/Analytics/Segment.json#/components/schemas/Admin_2.Types.Analytics.Segment"
+                            }
+                        ]
+                    },
+                    "limit": {
+                        "title": "Длина периода",
+                        "type": "integer"
+                    }
+                },
+                "required": [
+                    "period",
+                    "limit"
+                ],
+                "title": "Получение суммы оплат за период"
+            }
+        }
+    }
+}

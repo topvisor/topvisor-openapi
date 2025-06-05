@@ -1,0 +1,39 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/I18n.Landings.Jobs",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "I18n.Landings.Jobs": {
+                "type": "object",
+                "properties": {
+                    "Link_to_resume_or_comment": {
+                        "const": "Link to your resume or a comment",
+                        "readOnly": true
+                    },
+                    "Submit_button_text": {
+                        "const": "I want to join!",
+                        "readOnly": true
+                    },
+                    "Accept_user_agreement_text_befor_link": {
+                        "const": "By submitting an application , I give my consent to the processing of private data in accordance with",
+                        "readOnly": true
+                    },
+                    "Accept_user_agreement_link_text": {
+                        "const": "Privacy Policy",
+                        "readOnly": true
+                    }
+                },
+                "required": [
+                    "Link_to_resume_or_comment",
+                    "Submit_button_text",
+                    "Accept_user_agreement_text_befor_link",
+                    "Accept_user_agreement_link_text"
+                ]
+            }
+        }
+    }
+}

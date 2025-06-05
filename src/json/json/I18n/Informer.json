@@ -1,0 +1,172 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/I18n.Informer",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "I18n.Informer": {
+                "type": "object",
+                "properties": {
+                    "Type_balance": {
+                        "const": "Balance",
+                        "readOnly": true
+                    },
+                    "Type_news": {
+                        "const": "Sevice news",
+                        "readOnly": true
+                    },
+                    "Type_academy": {
+                        "const": "Topvisor-Academy",
+                        "readOnly": true
+                    },
+                    "Type_tickets": {
+                        "const": "Tickets",
+                        "readOnly": true
+                    },
+                    "Type_yandex_update": {
+                        "const": "Yandex update",
+                        "readOnly": true
+                    },
+                    "Type_comments": {
+                        "const": "New comment alerts",
+                        "readOnly": true
+                    },
+                    "Type_api": {
+                        "const": "API updates",
+                        "readOnly": true
+                    },
+                    "Type_journal": {
+                        "const": "Topvisor–Journal",
+                        "readOnly": true
+                    },
+                    "Unsubscribe": {
+                        "const": "Unsubscribe",
+                        "readOnly": true
+                    },
+                    "Enter_title_and_text": {
+                        "const": "Enter title and message text",
+                        "readOnly": true
+                    },
+                    "Log_text": {
+                        "const": "Emailing",
+                        "readOnly": true
+                    },
+                    "Log_text2": {
+                        "const": "only for subscribers",
+                        "readOnly": true
+                    },
+                    "Tickets_title": {
+                        "const": "You received a new reply to your ticket",
+                        "readOnly": true
+                    },
+                    "Balance_title": {
+                        "const": "Account balance alert",
+                        "readOnly": true
+                    },
+                    "Update_title": {
+                        "const": "Yandex search results updated",
+                        "readOnly": true
+                    },
+                    "Comments_title": {
+                        "const": "You comment has a new reply! Join the discussion 😎",
+                        "readOnly": true
+                    },
+                    "No_new_notifications": {
+                        "const": "No notifications yet",
+                        "readOnly": true
+                    },
+                    "clear_all": {
+                        "const": "clear all",
+                        "readOnly": true
+                    },
+                    "Notifications": {
+                        "const": "Notifications",
+                        "readOnly": true
+                    },
+                    "Email": {
+                        "const": "Email",
+                        "readOnly": true
+                    },
+                    "Push": {
+                        "const": "Push",
+                        "readOnly": true
+                    },
+                    "Block": {
+                        "const": "Block",
+                        "readOnly": true
+                    },
+                    "Informer": {
+                        "const": "Alerts",
+                        "readOnly": true
+                    },
+                    "Select_all": {
+                        "const": "Select all",
+                        "readOnly": true
+                    },
+                    "Clear_all": {
+                        "const": "Clear all",
+                        "readOnly": true
+                    },
+                    "Comment_replies": {
+                        "const": "Comment replies",
+                        "readOnly": true
+                    },
+                    "replied_to_you": {
+                        "const": " replied to you",
+                        "readOnly": true
+                    },
+                    "in_comments_on_the_post": {
+                        "const": "in comments on the post",
+                        "readOnly": true
+                    },
+                    "Email_delivery_failure": {
+                        "const": "Email delivery has failed to this recipient",
+                        "readOnly": true
+                    },
+                    "email_unsubscribed_from_reports": {
+                        "const": "unsubscribed from reports of projects",
+                        "readOnly": true
+                    },
+                    "You_unsubscribed_from_emails": {
+                        "const": "You unsubscribed from emails to",
+                        "readOnly": true
+                    }
+                },
+                "required": [
+                    "Type_balance",
+                    "Type_news",
+                    "Type_tickets",
+                    "Type_yandex_update",
+                    "Type_comments",
+                    "Type_api",
+                    "Unsubscribe",
+                    "Enter_title_and_text",
+                    "Log_text",
+                    "Log_text2",
+                    "Tickets_title",
+                    "Balance_title",
+                    "Update_title",
+                    "Comments_title",
+                    "No_new_notifications",
+                    "clear_all",
+                    "Notifications",
+                    "Email",
+                    "Push",
+                    "Block",
+                    "Informer",
+                    "Select_all",
+                    "Clear_all",
+                    "Comment_replies",
+                    "replied_to_you",
+                    "in_comments_on_the_post",
+                    "Email_delivery_failure",
+                    "email_unsubscribed_from_reports",
+                    "You_unsubscribed_from_emails"
+                ]
+            }
+        }
+    }
+}

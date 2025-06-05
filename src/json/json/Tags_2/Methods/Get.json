@@ -1,0 +1,32 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Tags_2.Methods.Get",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Tags_2.Methods.Get": {
+                "type": "object",
+                "properties": {
+                    "type": {
+                        "allOf": [
+                            {
+                                "$ref": "../../Tags_2/Types/Type.json#/components/schemas/Tags_2.Types.Type"
+                            }
+                        ]
+                    },
+                    "project_id": {
+                        "nullable": true,
+                        "type": "integer"
+                    }
+                },
+                "required": [
+                    "type"
+                ],
+                "title": "Получение списка тегов"
+            }
+        }
+    }
+}

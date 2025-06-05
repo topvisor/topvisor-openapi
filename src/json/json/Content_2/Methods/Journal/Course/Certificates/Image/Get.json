@@ -1,0 +1,40 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Content_2.Methods.Journal.Course.Certificates.Image.Get",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Content_2.Methods.Journal.Course.Certificates.Image.Get": {
+                "type": "object",
+                "properties": {
+                    "format": {
+                        "title": "Формат файла\n\n* pdf\n* png",
+                        "type": "string"
+                    },
+                    "output": {
+                        "title": "Возвращаемый формат\n\n* dataURL: вернуть в ответе как Data URL\n* inline вывести файл как есть",
+                        "nullable": true,
+                        "type": "string"
+                    },
+                    "dpr": {
+                        "title": "devicePixelRatio, см. в js window.devicePixelRatio, имеет смысл для format = png",
+                        "nullable": true,
+                        "type": "number"
+                    },
+                    "id": {
+                        "title": "Id сертификата",
+                        "type": "integer"
+                    }
+                },
+                "required": [
+                    "format",
+                    "id"
+                ],
+                "title": "Получение сертификата в виде изображения"
+            }
+        }
+    }
+}

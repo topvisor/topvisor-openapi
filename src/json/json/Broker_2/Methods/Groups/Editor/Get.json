@@ -1,0 +1,30 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Broker_2.Methods.Groups.Editor.Get",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Broker_2.Methods.Groups.Editor.Get": {
+                "type": "object",
+                "properties": {
+                    "campaign_tv_id": {
+                        "title": "Id рекламной кампании",
+                        "type": "integer"
+                    },
+                    "group_status": {
+                        "title": "Статус группы",
+                        "nullable": true,
+                        "type": "string"
+                    }
+                },
+                "required": [
+                    "campaign_tv_id"
+                ],
+                "title": "Получение групп рекламной кампании для редактора"
+            }
+        }
+    }
+}

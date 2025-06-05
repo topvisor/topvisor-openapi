@@ -1,0 +1,30 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Projects_2.Methods.Folders.MoveFolder.Edit",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Projects_2.Methods.Folders.MoveFolder.Edit": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "title": "Id папки, которую надо перенести",
+                        "type": "integer"
+                    },
+                    "insert_after_id": {
+                        "title": "Id папки, после которой надо разместить перемещаемую папку\n\nУкажите 0, если надо переместить папку в начало списка",
+                        "type": "integer"
+                    }
+                },
+                "required": [
+                    "id",
+                    "insert_after_id"
+                ],
+                "title": "Переместить папку\n\nВложенные папки запрещены, поэтому перемещение происходит только в пределах одного списка"
+            }
+        }
+    }
+}

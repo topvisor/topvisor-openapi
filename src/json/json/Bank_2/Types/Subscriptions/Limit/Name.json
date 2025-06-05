@@ -1,0 +1,30 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Bank_2.Types.Subscriptions.Limit.Name",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Bank_2.Types.Subscriptions.Limit.Name": {
+                "type": "string",
+                "enum": [
+                    "positions_check",
+                    "positions_check_manual",
+                    "keywords_volumes",
+                    "keywords_collect",
+                    "keywords_collect_hint",
+                    "positions_tasks",
+                    "projects",
+                    "projects_rights",
+                    "projects_competitors",
+                    "projects_archive",
+                    "api"
+                ],
+                "title": "Имя лимита\n\nГайдлайн: Имя лимита начинается с имени сервиса и характеризуется именем обеъкта или именем метода",
+                "description": "@see \\Services\\Bank_2\\Objects\\Subscriptions\\Limit"
+            }
+        }
+    }
+}

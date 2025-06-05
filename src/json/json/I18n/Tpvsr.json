@@ -1,0 +1,93 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/I18n.Tpvsr",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "I18n.Tpvsr": {
+                "type": "object",
+                "properties": {
+                    "Link_deleted": {
+                        "const": "Link deleted",
+                        "readOnly": true
+                    },
+                    "Show_deleted_links": {
+                        "const": "Show deleted links",
+                        "readOnly": true
+                    },
+                    "Show_favorite_links": {
+                        "const": "Show favorite links",
+                        "readOnly": true
+                    },
+                    "Remove_link": {
+                        "const": "Delete link",
+                        "readOnly": true
+                    },
+                    "Recover_link": {
+                        "const": "Restore link",
+                        "readOnly": true
+                    },
+                    "Set_favorite": {
+                        "const": "Star link",
+                        "readOnly": true
+                    },
+                    "Link_cannot_be_shortened": {
+                        "const": "URL cannot be shorten.",
+                        "readOnly": true
+                    },
+                    "Link_blocked_roskomnadzor": {
+                        "const": "URL cannot be shorten (4). URL blocked by Roskomnadzor.",
+                        "readOnly": true
+                    },
+                    "Sort_name_desc": {
+                        "const": "Title Z-A",
+                        "readOnly": true
+                    },
+                    "Sort_name_asc": {
+                        "const": "Title A-Z",
+                        "readOnly": true
+                    },
+                    "Sort_clicks_desc": {
+                        "const": "Clicks descending",
+                        "readOnly": true
+                    },
+                    "Sort_clicks_asc": {
+                        "const": "Clicks ascending",
+                        "readOnly": true
+                    },
+                    "Sort_date_asc": {
+                        "const": "By date from oldest to newest",
+                        "readOnly": true
+                    },
+                    "Sort_date_desc": {
+                        "const": "By date from newest to oldest",
+                        "readOnly": true
+                    },
+                    "Limit_exceeded": {
+                        "const": "Free URL Shortener limit reached! To use free URL Shortener, top up your balance within a year. You can use funds on your balance to pay for any Topvisor tools and features.",
+                        "readOnly": true
+                    }
+                },
+                "required": [
+                    "Link_deleted",
+                    "Show_deleted_links",
+                    "Show_favorite_links",
+                    "Remove_link",
+                    "Recover_link",
+                    "Set_favorite",
+                    "Link_cannot_be_shortened",
+                    "Link_blocked_roskomnadzor",
+                    "Sort_name_desc",
+                    "Sort_name_asc",
+                    "Sort_clicks_desc",
+                    "Sort_clicks_asc",
+                    "Sort_date_asc",
+                    "Sort_date_desc"
+                ]
+            }
+        }
+    }
+}

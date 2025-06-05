@@ -1,0 +1,107 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Admin_2.Methods.Users.Ranks.Add",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Admin_2.Methods.Users.Ranks.Add": {
+                "type": "object",
+                "properties": {
+                    "name_id": {
+                        "nullable": true,
+                        "type": "string"
+                    },
+                    "category": {
+                        "nullable": true,
+                        "allOf": [
+                            {
+                                "$ref": "../../../../Admin_2/Types/Users/Ranks/Category.json#/components/schemas/Admin_2.Types.Users.Ranks.Category"
+                            }
+                        ]
+                    },
+                    "name_ru": {
+                        "nullable": true,
+                        "type": "string"
+                    },
+                    "name_en": {
+                        "nullable": true,
+                        "type": "string"
+                    },
+                    "descr_ru": {
+                        "nullable": true,
+                        "type": "string"
+                    },
+                    "descr_en": {
+                        "nullable": true,
+                        "type": "string"
+                    },
+                    "descr_how_to_use_ru": {
+                        "nullable": true,
+                        "type": "string"
+                    },
+                    "descr_how_to_use_en": {
+                        "nullable": true,
+                        "type": "string"
+                    },
+                    "bonus_RUB": {
+                        "nullable": true,
+                        "type": "integer"
+                    },
+                    "bonus_USD": {
+                        "nullable": true,
+                        "type": "integer"
+                    },
+                    "cashback_expenses": {
+                        "nullable": true,
+                        "type": "integer"
+                    },
+                    "cashback_first_payment": {
+                        "nullable": true,
+                        "type": "integer"
+                    },
+                    "discount": {
+                        "nullable": true,
+                        "type": "integer"
+                    },
+                    "referrer_id": {
+                        "nullable": true,
+                        "type": "integer"
+                    },
+                    "from_date": {
+                        "nullable": true,
+                        "type": "string"
+                    },
+                    "to_date": {
+                        "nullable": true,
+                        "type": "string"
+                    },
+                    "max_count_usage": {
+                        "nullable": true,
+                        "type": "integer"
+                    },
+                    "currency": {
+                        "nullable": true,
+                        "type": "string"
+                    },
+                    "only_new_users": {
+                        "nullable": true,
+                        "type": "boolean"
+                    },
+                    "color": {
+                        "nullable": true,
+                        "type": "string"
+                    },
+                    "always_visible": {
+                        "nullable": true,
+                        "type": "boolean"
+                    }
+                },
+                "required": [],
+                "title": "Добавление достижение"
+            }
+        }
+    }
+}

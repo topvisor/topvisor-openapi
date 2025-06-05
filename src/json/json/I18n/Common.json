@@ -1,0 +1,2376 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/I18n.Common",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "I18n.Common": {
+                "type": "object",
+                "properties": {
+                    "url_lang_prefix": {
+                        "const": "",
+                        "readOnly": true
+                    },
+                    "Page_404_text": {
+                        "const": "Page Not Found",
+                        "readOnly": true
+                    },
+                    "Page_404_text2": {
+                        "const": "You will be redirected <br> in",
+                        "readOnly": true
+                    },
+                    "Page_404_sec": {
+                        "const": "seconds",
+                        "readOnly": true
+                    },
+                    "Page_403_text": {
+                        "const": "Access denied",
+                        "readOnly": true
+                    },
+                    "openApp_text": {
+                        "const": "Page loading",
+                        "readOnly": true
+                    },
+                    "openApp_text2": {
+                        "const": "Open application",
+                        "readOnly": true
+                    },
+                    "lang": {
+                        "const": "en",
+                        "readOnly": true
+                    },
+                    "lang_country": {
+                        "const": "US",
+                        "readOnly": true
+                    },
+                    "lang_url": {
+                        "const": "",
+                        "readOnly": true
+                    },
+                    "alternate_lang": {
+                        "const": "ru",
+                        "readOnly": true
+                    },
+                    "alternate_lang_country": {
+                        "const": "RU",
+                        "readOnly": true
+                    },
+                    "alternate_lang_url": {
+                        "const": "/ru",
+                        "readOnly": true
+                    },
+                    "Lang_full": {
+                        "const": "English",
+                        "readOnly": true
+                    },
+                    "language": {
+                        "const": "language",
+                        "readOnly": true
+                    },
+                    "Language": {
+                        "const": "Language",
+                        "readOnly": true
+                    },
+                    "locale": {
+                        "const": "en_US",
+                        "readOnly": true
+                    },
+                    "date_format": {
+                        "const": "m/d/Y",
+                        "readOnly": true
+                    },
+                    "Description": {
+                        "const": "Tools for tracking, analyzing and measuring SEO performance",
+                        "readOnly": true
+                    },
+                    "Og_description": {
+                        "const": "Try out SEO & PPC Tools for keyword research, clustering, rank tracking and on-page optimization. Get better results from paid search and organic rankings!",
+                        "readOnly": true
+                    },
+                    "Og_description_invite": {
+                        "const": "SEO & PPC Tools for better marketing. Highly recommended!",
+                        "readOnly": true
+                    },
+                    "Ascending": {
+                        "const": "Ascending",
+                        "readOnly": true
+                    },
+                    "Descending": {
+                        "const": "Descending",
+                        "readOnly": true
+                    },
+                    "TV_address_street": {
+                        "const": "Voronezhskaya ul.",
+                        "readOnly": true
+                    },
+                    "Message_session_security_error": {
+                        "const": "Session security error, please <a href=\"/\">refresh page</a> and try again",
+                        "readOnly": true
+                    },
+                    "Message_dbh_remote": {
+                        "const": "We're upgrading our servers. The service is temporarily unavailable. Please, try again later",
+                        "readOnly": true
+                    },
+                    "Message_dbh_remote_error": {
+                        "const": "We're upgrading our servers. Tasks creating is temporarily unavailable. Please, try again later",
+                        "readOnly": true
+                    },
+                    "Message_ch_error": {
+                        "const": "We're upgrading this module's server, please, try again later",
+                        "readOnly": true
+                    },
+                    "Message_sp_error": {
+                        "const": "We're upgrading this module's server, please, try again later",
+                        "readOnly": true
+                    },
+                    "Every_day": {
+                        "const": "Every day",
+                        "readOnly": true
+                    },
+                    "time_a_0": {
+                        "const": "times",
+                        "readOnly": true
+                    },
+                    "time_a_1": {
+                        "const": "time",
+                        "readOnly": true
+                    },
+                    "time_a_2": {
+                        "const": "times",
+                        "readOnly": true
+                    },
+                    "a_week": {
+                        "const": "a week",
+                        "readOnly": true
+                    },
+                    "a_month": {
+                        "const": "a month",
+                        "readOnly": true
+                    },
+                    "discount": {
+                        "const": "discount",
+                        "readOnly": true
+                    },
+                    "month_short": {
+                        "const": "mo",
+                        "readOnly": true
+                    },
+                    "Balance": {
+                        "const": "Balance",
+                        "readOnly": true
+                    },
+                    "Referrals": {
+                        "const": "Affiliate program",
+                        "readOnly": true
+                    },
+                    "Organization": {
+                        "const": "Organization",
+                        "readOnly": true
+                    },
+                    "Yes": {
+                        "const": "Yes",
+                        "readOnly": true
+                    },
+                    "Exists": {
+                        "const": "Exists",
+                        "readOnly": true
+                    },
+                    "No": {
+                        "const": "No",
+                        "readOnly": true
+                    },
+                    "not": {
+                        "const": "not",
+                        "readOnly": true
+                    },
+                    "and": {
+                        "const": "and",
+                        "readOnly": true
+                    },
+                    "ruble": {
+                        "const": "rub.",
+                        "readOnly": true
+                    },
+                    "for": {
+                        "const": "for",
+                        "readOnly": true
+                    },
+                    "For": {
+                        "const": "For",
+                        "readOnly": true
+                    },
+                    "Close": {
+                        "const": "Close",
+                        "readOnly": true
+                    },
+                    "OK": {
+                        "const": "OK",
+                        "readOnly": true
+                    },
+                    "Apply": {
+                        "const": "OK",
+                        "readOnly": true
+                    },
+                    "Choose": {
+                        "const": "Apply",
+                        "readOnly": true
+                    },
+                    "Download": {
+                        "const": "Download",
+                        "readOnly": true
+                    },
+                    "download": {
+                        "const": "download",
+                        "readOnly": true
+                    },
+                    "Step": {
+                        "const": "Step",
+                        "readOnly": true
+                    },
+                    "Continue": {
+                        "const": "Continue",
+                        "readOnly": true
+                    },
+                    "Back": {
+                        "const": "Back",
+                        "readOnly": true
+                    },
+                    "Next": {
+                        "const": "Next",
+                        "readOnly": true
+                    },
+                    "Prev_page_short": {
+                        "const": "Prev",
+                        "readOnly": true
+                    },
+                    "Next_page_short": {
+                        "const": "Next",
+                        "readOnly": true
+                    },
+                    "project": {
+                        "const": "project",
+                        "readOnly": true
+                    },
+                    "Project": {
+                        "const": "Project",
+                        "readOnly": true
+                    },
+                    "of_project": {
+                        "const": "of project",
+                        "readOnly": true
+                    },
+                    "Tool_digest": {
+                        "const": "Google Year at Topvisor",
+                        "readOnly": true
+                    },
+                    "Ticket": {
+                        "const": "Ticket",
+                        "readOnly": true
+                    },
+                    "Tickets": {
+                        "const": "Tickets",
+                        "readOnly": true
+                    },
+                    "All_tickets": {
+                        "const": "All tickets",
+                        "readOnly": true
+                    },
+                    "All_pages": {
+                        "const": "All articles",
+                        "readOnly": true
+                    },
+                    "Submit": {
+                        "const": "Submit",
+                        "readOnly": true
+                    },
+                    "Tickets_page": {
+                        "const": "\"Tickets\" page",
+                        "readOnly": true
+                    },
+                    "Submitted": {
+                        "const": "Submitted",
+                        "readOnly": true
+                    },
+                    "Created_at": {
+                        "const": "Created",
+                        "readOnly": true
+                    },
+                    "Schet_number": {
+                        "const": "No.",
+                        "readOnly": true
+                    },
+                    "Cancel": {
+                        "const": "Cancel",
+                        "readOnly": true
+                    },
+                    "Send": {
+                        "const": "Send",
+                        "readOnly": true
+                    },
+                    "More": {
+                        "const": "More",
+                        "readOnly": true
+                    },
+                    "Read_more": {
+                        "const": "Read more",
+                        "readOnly": true
+                    },
+                    "Read_more2": {
+                        "const": "Read more",
+                        "readOnly": true
+                    },
+                    "User": {
+                        "const": "User",
+                        "readOnly": true
+                    },
+                    "Message": {
+                        "const": "Message",
+                        "readOnly": true
+                    },
+                    "Message_not_sended": {
+                        "const": "Message hasn't been sent",
+                        "readOnly": true
+                    },
+                    "Comment_not_deleted": {
+                        "const": "Comment not removed",
+                        "readOnly": true
+                    },
+                    "Link": {
+                        "const": "Link",
+                        "readOnly": true
+                    },
+                    "Name": {
+                        "const": "Name",
+                        "readOnly": true
+                    },
+                    "First_and_last_name": {
+                        "const": "First and last name",
+                        "readOnly": true
+                    },
+                    "Access_denied": {
+                        "const": "Access denied",
+                        "readOnly": true
+                    },
+                    "Access_error": {
+                        "const": "Access error",
+                        "readOnly": true
+                    },
+                    "No_data": {
+                        "const": "No data found",
+                        "readOnly": true
+                    },
+                    "No_results": {
+                        "const": "No results",
+                        "readOnly": true
+                    },
+                    "Dynamics": {
+                        "const": "Dynamics",
+                        "readOnly": true
+                    },
+                    "Country": {
+                        "const": "Country",
+                        "readOnly": true
+                    },
+                    "Number": {
+                        "const": "No.",
+                        "readOnly": true
+                    },
+                    "Number_word": {
+                        "const": "Number",
+                        "readOnly": true
+                    },
+                    "CPC": {
+                        "const": "CPC",
+                        "readOnly": true
+                    },
+                    "Clear": {
+                        "const": "Clear",
+                        "readOnly": true
+                    },
+                    "Phone": {
+                        "const": "Phone number",
+                        "readOnly": true
+                    },
+                    "Email": {
+                        "const": "Email",
+                        "readOnly": true
+                    },
+                    "Email_not_exist": {
+                        "const": "The Email you entered doesn't exist",
+                        "readOnly": true
+                    },
+                    "Password_incorrect": {
+                        "const": "The password you entered is incorrect!",
+                        "readOnly": true
+                    },
+                    "Enter_email": {
+                        "const": "Enter email",
+                        "readOnly": true
+                    },
+                    "Enter_password": {
+                        "const": "Enter password",
+                        "readOnly": true
+                    },
+                    "Remember_me": {
+                        "const": "Remember me",
+                        "readOnly": true
+                    },
+                    "Forgot_password": {
+                        "const": "Forgot your password?",
+                        "readOnly": true
+                    },
+                    "Signup_now": {
+                        "const": "Sign up now",
+                        "readOnly": true
+                    },
+                    "Sign_in_with": {
+                        "const": "Sign in with",
+                        "readOnly": true
+                    },
+                    "Password_recovering": {
+                        "const": "Recover password",
+                        "readOnly": true
+                    },
+                    "Recover_password": {
+                        "const": "Recover password",
+                        "readOnly": true
+                    },
+                    "Keywords_one_per_line": {
+                        "const": "Keywords (each keyword on a new line)",
+                        "readOnly": true
+                    },
+                    "Add_se": {
+                        "const": "Add a Search engine",
+                        "readOnly": true
+                    },
+                    "Create_project": {
+                        "const": "Create a project",
+                        "readOnly": true
+                    },
+                    "Creating": {
+                        "const": "Creating...",
+                        "readOnly": true
+                    },
+                    "Enter_valid_email_notice": {
+                        "const": "Enter a valid E-mail address",
+                        "readOnly": true
+                    },
+                    "No_account_sign_up": {
+                        "const": "No account? <a href=\".\" data-to-view=\"%toViewReg%\">Sign up</a>",
+                        "readOnly": true
+                    },
+                    "No_account": {
+                        "const": "No account?",
+                        "readOnly": true
+                    },
+                    "Through_registration_you_confirm_agreement_policy": {
+                        "const": "By pressing Sign up you accept <a href=\"{{ hrefConfirm }}\" target=\"_blank\">Terms and Conditions</a> and give <a href=\"{{ hrefPrivacy }}\" target=\"_blank\">Privacy Policy and mailing consent</a>",
+                        "readOnly": true
+                    },
+                    "Already_have_account": {
+                        "const": "Already have an account",
+                        "readOnly": true
+                    },
+                    "Try_again_or_sign_up": {
+                        "const": "<a href=\".\" data-to-view=\"%toViewAuth%\">Log in</a> or <a href=\".\" data-to-view=\"%toViewReg%\">sign up</a>",
+                        "readOnly": true
+                    },
+                    "If_no_msg_check_spam_ask_support_notice": {
+                        "const": "If you didn't receive a message, check a <b>Spam</b> folder or submit a ticket to <a href=\"%hrefCreateTicket%\">Customer support</a>",
+                        "readOnly": true
+                    },
+                    "If_no_msg": {
+                        "const": "If you didn't receive a message, check a <b>Spam</b> folder or submit a ticket to ",
+                        "readOnly": true
+                    },
+                    "support_notice": {
+                        "const": "Customer support",
+                        "readOnly": true
+                    },
+                    "Confirmation_link_sent_to_email": {
+                        "const": "A confirmation link has been sent to ",
+                        "readOnly": true
+                    },
+                    "Internal_error": {
+                        "const": "Internal error occurred, please submit a report to the developers",
+                        "readOnly": true
+                    },
+                    "Unknown_error": {
+                        "const": "Unknown error occurred, please try again later",
+                        "readOnly": true
+                    },
+                    "Google_server_error": {
+                        "const": "Google server error",
+                        "readOnly": true
+                    },
+                    "Yandex_API_server_error": {
+                        "const": "Yandex.API server error",
+                        "readOnly": true
+                    },
+                    "Yandex_auth_error": {
+                        "const": "Error occurred! Please, contact the project owner to resolve the issue!",
+                        "readOnly": true
+                    },
+                    "Request_error_required": {
+                        "const": "Required parameter missing in the request",
+                        "readOnly": true
+                    },
+                    "Request_error_type": {
+                        "const": "Passed parameter type mismatch",
+                        "readOnly": true
+                    },
+                    "Request_error_value": {
+                        "const": "Passed parameter value mismatch",
+                        "readOnly": true
+                    },
+                    "Request_error_qualifiers": {
+                        "const": "Passed qualifiers mismatch",
+                        "readOnly": true
+                    },
+                    "Error_regexp": {
+                        "const": "Regular expression error",
+                        "readOnly": true
+                    },
+                    "Valid_characters": {
+                        "const": "Valid characters",
+                        "readOnly": true
+                    },
+                    "Bonus": {
+                        "const": "Bonus",
+                        "readOnly": true
+                    },
+                    "or": {
+                        "const": "or",
+                        "readOnly": true
+                    },
+                    "to": {
+                        "const": "until",
+                        "readOnly": true
+                    },
+                    "to_1": {
+                        "const": "to",
+                        "readOnly": true
+                    },
+                    "at": {
+                        "const": "at",
+                        "readOnly": true
+                    },
+                    "To": {
+                        "const": "Until",
+                        "readOnly": true
+                    },
+                    "Until": {
+                        "const": "Up to ",
+                        "readOnly": true
+                    },
+                    "next_count": {
+                        "const": "next",
+                        "readOnly": true
+                    },
+                    "pages": {
+                        "const": "pages",
+                        "readOnly": true
+                    },
+                    "pages_full": {
+                        "const": "pages",
+                        "readOnly": true
+                    },
+                    "limit": {
+                        "const": "display",
+                        "readOnly": true
+                    },
+                    "by": {
+                        "const": "by",
+                        "readOnly": true
+                    },
+                    "Path": {
+                        "const": "Path",
+                        "readOnly": true
+                    },
+                    "Rule": {
+                        "const": "Rule",
+                        "readOnly": true
+                    },
+                    "Allow": {
+                        "const": "Allow",
+                        "readOnly": true
+                    },
+                    "Disallow": {
+                        "const": "Forbid",
+                        "readOnly": true
+                    },
+                    "Allow_of_mask": {
+                        "const": "Add mask matches from sitemap",
+                        "readOnly": true
+                    },
+                    "Disallow_of_mask": {
+                        "const": "Forbid the mask",
+                        "readOnly": true
+                    },
+                    "Search": {
+                        "const": "Search",
+                        "readOnly": true
+                    },
+                    "Examples": {
+                        "const": "Examples",
+                        "readOnly": true
+                    },
+                    "Begin": {
+                        "const": "Start",
+                        "readOnly": true
+                    },
+                    "Start_over": {
+                        "const": "Start over",
+                        "readOnly": true
+                    },
+                    "Export": {
+                        "const": "Export",
+                        "readOnly": true
+                    },
+                    "Import": {
+                        "const": "Import",
+                        "readOnly": true
+                    },
+                    "Off": {
+                        "const": "Off",
+                        "readOnly": true
+                    },
+                    "Changes": {
+                        "const": "Changes",
+                        "readOnly": true
+                    },
+                    "Change": {
+                        "const": "Change",
+                        "readOnly": true
+                    },
+                    "Value": {
+                        "const": "Value",
+                        "readOnly": true
+                    },
+                    "Hide": {
+                        "const": "Hide",
+                        "readOnly": true
+                    },
+                    "Display": {
+                        "const": "Display",
+                        "readOnly": true
+                    },
+                    "Save": {
+                        "const": "Save",
+                        "readOnly": true
+                    },
+                    "Time": {
+                        "const": "Time",
+                        "readOnly": true
+                    },
+                    "Loading": {
+                        "const": "Loading",
+                        "readOnly": true
+                    },
+                    "CY": {
+                        "const": "CY",
+                        "readOnly": true
+                    },
+                    "Broker": {
+                        "const": "Bid manager",
+                        "readOnly": true
+                    },
+                    "Maintenance": {
+                        "const": "Page is under maintenance",
+                        "readOnly": true
+                    },
+                    "on_account": {
+                        "const": "to account",
+                        "readOnly": true
+                    },
+                    "on": {
+                        "const": "to",
+                        "readOnly": true
+                    },
+                    "Tools": {
+                        "const": "SEO Tools",
+                        "readOnly": true
+                    },
+                    "Keyword_researcher": {
+                        "const": "Keyword research tool",
+                        "readOnly": true
+                    },
+                    "Rank_tracker": {
+                        "const": "Rank tracker tool",
+                        "readOnly": true
+                    },
+                    "Upload": {
+                        "const": "Upload",
+                        "readOnly": true
+                    },
+                    "Open": {
+                        "const": "Open",
+                        "readOnly": true
+                    },
+                    "Hide_all": {
+                        "const": "Hide all",
+                        "readOnly": true
+                    },
+                    "Expand_all": {
+                        "const": "Expand all",
+                        "readOnly": true
+                    },
+                    "Expand": {
+                        "const": "Expand",
+                        "readOnly": true
+                    },
+                    "Attention": {
+                        "const": "Attention",
+                        "readOnly": true
+                    },
+                    "from": {
+                        "const": "from",
+                        "readOnly": true
+                    },
+                    "from_1": {
+                        "const": "from",
+                        "readOnly": true
+                    },
+                    "dated": {
+                        "const": "dated",
+                        "readOnly": true
+                    },
+                    "fromDate": {
+                        "const": "from",
+                        "readOnly": true
+                    },
+                    "toDate": {
+                        "const": "to",
+                        "readOnly": true
+                    },
+                    "SE": {
+                        "const": "SE",
+                        "readOnly": true
+                    },
+                    "Guest_link": {
+                        "const": "Guest link",
+                        "readOnly": true
+                    },
+                    "Guest_link_copied_to_clipboard": {
+                        "const": "Guest link copied to clipboard",
+                        "readOnly": true
+                    },
+                    "Device_0": {
+                        "const": "PC",
+                        "readOnly": true
+                    },
+                    "Device_1": {
+                        "const": "Tablet",
+                        "readOnly": true
+                    },
+                    "Device_2": {
+                        "const": "Phone",
+                        "readOnly": true
+                    },
+                    "Device_100": {
+                        "const": "YandexBot/3.0",
+                        "readOnly": true
+                    },
+                    "Device_102": {
+                        "const": "YandexBot/3.0 (mobile)",
+                        "readOnly": true
+                    },
+                    "Device_110": {
+                        "const": "Googlebot/2.1",
+                        "readOnly": true
+                    },
+                    "Device_112": {
+                        "const": "Googlebot/2.1 (mobile)",
+                        "readOnly": true
+                    },
+                    "Device_120": {
+                        "const": "AdsBot-Google",
+                        "readOnly": true
+                    },
+                    "Device_122": {
+                        "const": "AdsBot-Google-Mobile",
+                        "readOnly": true
+                    },
+                    "Device_200": {
+                        "const": "TopvisorBot",
+                        "readOnly": true
+                    },
+                    "Device_202": {
+                        "const": "TopvisorBot (mobile)",
+                        "readOnly": true
+                    },
+                    "Tag": {
+                        "const": "Tag",
+                        "readOnly": true
+                    },
+                    "Tags": {
+                        "const": "Tags",
+                        "readOnly": true
+                    },
+                    "All_tags": {
+                        "const": "All tags",
+                        "readOnly": true
+                    },
+                    "Charts": {
+                        "const": "Charts",
+                        "readOnly": true
+                    },
+                    "All": {
+                        "const": "All",
+                        "readOnly": true
+                    },
+                    "Selected": {
+                        "const": "Selected",
+                        "readOnly": true
+                    },
+                    "Select": {
+                        "const": "Select",
+                        "readOnly": true
+                    },
+                    "Select_all": {
+                        "const": "Select all",
+                        "readOnly": true
+                    },
+                    "Added": {
+                        "const": "Added",
+                        "readOnly": true
+                    },
+                    "Deleted": {
+                        "const": "Deleted",
+                        "readOnly": true
+                    },
+                    "Rename": {
+                        "const": "Rename",
+                        "readOnly": true
+                    },
+                    "On_or_off": {
+                        "const": "On / Off",
+                        "readOnly": true
+                    },
+                    "Autoselect": {
+                        "const": "Autoselect",
+                        "readOnly": true
+                    },
+                    "Open_project": {
+                        "const": "Open project",
+                        "readOnly": true
+                    },
+                    "Domain": {
+                        "const": "Domain",
+                        "readOnly": true
+                    },
+                    "Domains": {
+                        "const": "Domains",
+                        "readOnly": true
+                    },
+                    "Track": {
+                        "const": "Track",
+                        "readOnly": true
+                    },
+                    "Check": {
+                        "const": "Check",
+                        "readOnly": true
+                    },
+                    "Track_continued": {
+                        "const": "Track",
+                        "readOnly": true
+                    },
+                    "Telegram": {
+                        "const": "Telegram",
+                        "readOnly": true
+                    },
+                    "Link_to_telegram": {
+                        "const": "Link to Telegram",
+                        "readOnly": true
+                    },
+                    "Other": {
+                        "const": "Other",
+                        "readOnly": true
+                    },
+                    "Other_f": {
+                        "const": "Other",
+                        "readOnly": true
+                    },
+                    "Proceed": {
+                        "const": "Proceed",
+                        "readOnly": true
+                    },
+                    "Projects": {
+                        "const": "Projects",
+                        "readOnly": true
+                    },
+                    "Metrika": {
+                        "const": "Yandex.Metrica",
+                        "readOnly": true
+                    },
+                    "Webmaster": {
+                        "const": "Yandex.Webmaster",
+                        "readOnly": true
+                    },
+                    "Webmaster_monitoring": {
+                        "const": "Yandex.Webmaster - Monitoring search requests",
+                        "readOnly": true
+                    },
+                    "Webmaster_popular": {
+                        "const": "Yandex.Webmaster - Popular requests",
+                        "readOnly": true
+                    },
+                    "Yandex_Direct": {
+                        "const": "Yandex Direct",
+                        "readOnly": true
+                    },
+                    "YandexDirect": {
+                        "const": "Yandex.Direct",
+                        "readOnly": true
+                    },
+                    "Yandex_Wordstat": {
+                        "const": "Yandex Wordstat",
+                        "readOnly": true
+                    },
+                    "Y_freq": {
+                        "const": "Volume",
+                        "readOnly": true
+                    },
+                    "Y_freq2": {
+                        "const": "\"Volume\"",
+                        "readOnly": true
+                    },
+                    "Y_freq3": {
+                        "const": "\"!Volume\"",
+                        "readOnly": true
+                    },
+                    "Y_freq5": {
+                        "const": "\"[Volume]\"",
+                        "readOnly": true
+                    },
+                    "Y_freq6": {
+                        "const": "\"[!Volume]\"",
+                        "readOnly": true
+                    },
+                    "G_freq2": {
+                        "const": "\"[Volume]\"",
+                        "readOnly": true
+                    },
+                    "M_freq2": {
+                        "const": "\"Volume\"",
+                        "readOnly": true
+                    },
+                    "Y_price1": {
+                        "const": "1st Premium",
+                        "readOnly": true
+                    },
+                    "Y_price2": {
+                        "const": "2st Premium",
+                        "readOnly": true
+                    },
+                    "Y_price3": {
+                        "const": "Premium",
+                        "readOnly": true
+                    },
+                    "Y_price4": {
+                        "const": "1st place",
+                        "readOnly": true
+                    },
+                    "Y_price5": {
+                        "const": "Guaranteed",
+                        "readOnly": true
+                    },
+                    "G_price": {
+                        "const": "Bid",
+                        "readOnly": true
+                    },
+                    "Search_engine": {
+                        "const": "Search engine",
+                        "readOnly": true
+                    },
+                    "Search_engines": {
+                        "const": "Search engines",
+                        "readOnly": true
+                    },
+                    "Region": {
+                        "const": "Location",
+                        "readOnly": true
+                    },
+                    "region": {
+                        "const": "location",
+                        "readOnly": true
+                    },
+                    "Selected_regions": {
+                        "const": "Selected locations",
+                        "readOnly": true
+                    },
+                    "Compare": {
+                        "const": "Compare",
+                        "readOnly": true
+                    },
+                    "Folder": {
+                        "const": "Folder",
+                        "readOnly": true
+                    },
+                    "Group": {
+                        "const": "Group",
+                        "readOnly": true
+                    },
+                    "Visibility": {
+                        "const": "Visibility",
+                        "readOnly": true
+                    },
+                    "Average": {
+                        "const": "Avg.pos.",
+                        "readOnly": true
+                    },
+                    "Average_position": {
+                        "const": "Average position",
+                        "readOnly": true
+                    },
+                    "Add": {
+                        "const": "Add",
+                        "readOnly": true
+                    },
+                    "Create": {
+                        "const": "Create",
+                        "readOnly": true
+                    },
+                    "Move": {
+                        "const": "Move",
+                        "readOnly": true
+                    },
+                    "Delete": {
+                        "const": "Delete",
+                        "readOnly": true
+                    },
+                    "Replace": {
+                        "const": "Repalce",
+                        "readOnly": true
+                    },
+                    "Restore": {
+                        "const": "Restore",
+                        "readOnly": true
+                    },
+                    "Copy": {
+                        "const": "Copy",
+                        "readOnly": true
+                    },
+                    "Copy2": {
+                        "const": "Copy",
+                        "readOnly": true
+                    },
+                    "Remove": {
+                        "const": "Delete",
+                        "readOnly": true
+                    },
+                    "Charge": {
+                        "const": "You will be charged",
+                        "readOnly": true
+                    },
+                    "confirm": {
+                        "const": "confirm",
+                        "readOnly": true
+                    },
+                    "Confirm": {
+                        "const": "Confirm",
+                        "readOnly": true
+                    },
+                    "Delete_selected": {
+                        "const": "Delete selected",
+                        "readOnly": true
+                    },
+                    "Delete_all": {
+                        "const": "Delete all",
+                        "readOnly": true
+                    },
+                    "Traffic": {
+                        "const": "Traffic",
+                        "readOnly": true
+                    },
+                    "Positions": {
+                        "const": "Rankings",
+                        "readOnly": true
+                    },
+                    "Keyword": {
+                        "const": "Keyword",
+                        "readOnly": true
+                    },
+                    "Key_word": {
+                        "const": "Keyword",
+                        "readOnly": true
+                    },
+                    "Settings": {
+                        "const": "Settings",
+                        "readOnly": true
+                    },
+                    "Settings_URL": {
+                        "const": "URL Settings",
+                        "readOnly": true
+                    },
+                    "Irreversible": {
+                        "const": "Important! This operation cannot be undone.",
+                        "readOnly": true
+                    },
+                    "Empty_field": {
+                        "const": "Missing",
+                        "readOnly": true
+                    },
+                    "Notification": {
+                        "const": "Notifications",
+                        "readOnly": true
+                    },
+                    "Personal_project": {
+                        "const": "My project",
+                        "readOnly": true
+                    },
+                    "Agreement": {
+                        "const": "Terms of Service",
+                        "readOnly": true
+                    },
+                    "Period": {
+                        "const": "Period",
+                        "readOnly": true
+                    },
+                    "Config_is_readonly": {
+                        "const": "You cannot change project settings until tracking is completed",
+                        "readOnly": true
+                    },
+                    "regions": {
+                        "const": "locations",
+                        "readOnly": true
+                    },
+                    "types": {
+                        "const": "types",
+                        "readOnly": true
+                    },
+                    "Select_date": {
+                        "const": "Select date",
+                        "readOnly": true
+                    },
+                    "Not_date": {
+                        "const": "Not date",
+                        "readOnly": true
+                    },
+                    "Close_window": {
+                        "const": "Close window",
+                        "readOnly": true
+                    },
+                    "Dashboard": {
+                        "const": "Dashboard",
+                        "readOnly": true
+                    },
+                    "Support": {
+                        "const": "Help center",
+                        "readOnly": true
+                    },
+                    "Shortener": {
+                        "const": "URL shortener",
+                        "readOnly": true
+                    },
+                    "Journal": {
+                        "const": "Journal",
+                        "readOnly": true
+                    },
+                    "Academy": {
+                        "const": "Academy",
+                        "readOnly": true
+                    },
+                    "Pricing": {
+                        "const": "Pricing",
+                        "readOnly": true
+                    },
+                    "Signup": {
+                        "const": "Sign up",
+                        "readOnly": true
+                    },
+                    "Sign_up": {
+                        "const": "Sign up",
+                        "readOnly": true
+                    },
+                    "Sign_up_2": {
+                        "const": "Sign up",
+                        "readOnly": true
+                    },
+                    "Sign_in": {
+                        "const": "Sign in",
+                        "readOnly": true
+                    },
+                    "Sign_in_account": {
+                        "const": "Sign in",
+                        "readOnly": true
+                    },
+                    "Sign_out": {
+                        "const": "Sign out",
+                        "readOnly": true
+                    },
+                    "Server_response": {
+                        "const": "Server response",
+                        "readOnly": true
+                    },
+                    "Red": {
+                        "const": "Red",
+                        "readOnly": true
+                    },
+                    "Orange": {
+                        "const": "Orange",
+                        "readOnly": true
+                    },
+                    "Yellow": {
+                        "const": "Yellow",
+                        "readOnly": true
+                    },
+                    "Blue": {
+                        "const": "Blue",
+                        "readOnly": true
+                    },
+                    "Purple": {
+                        "const": "Purple",
+                        "readOnly": true
+                    },
+                    "Green": {
+                        "const": "Green",
+                        "readOnly": true
+                    },
+                    "Magenta": {
+                        "const": "Magenta",
+                        "readOnly": true
+                    },
+                    "Dark_blue": {
+                        "const": "Dark blue",
+                        "readOnly": true
+                    },
+                    "Turquoise": {
+                        "const": "Turquoise",
+                        "readOnly": true
+                    },
+                    "Frequency": {
+                        "const": "Volume",
+                        "readOnly": true
+                    },
+                    "Moscow": {
+                        "const": "Moscow",
+                        "readOnly": true
+                    },
+                    "Minsk": {
+                        "const": "Minsk",
+                        "readOnly": true
+                    },
+                    "Kyiv": {
+                        "const": "Kyiv",
+                        "readOnly": true
+                    },
+                    "London": {
+                        "const": "London",
+                        "readOnly": true
+                    },
+                    "NewYork": {
+                        "const": "New York",
+                        "readOnly": true
+                    },
+                    "StPetersburg": {
+                        "const": "St. Petersburg",
+                        "readOnly": true
+                    },
+                    "Almaty": {
+                        "const": "Almaty",
+                        "readOnly": true
+                    },
+                    "Russia": {
+                        "const": "Russia",
+                        "readOnly": true
+                    },
+                    "Ukraine": {
+                        "const": "Ukraine",
+                        "readOnly": true
+                    },
+                    "Kazakhstan": {
+                        "const": "Kazakhstan",
+                        "readOnly": true
+                    },
+                    "Belarus": {
+                        "const": "Belarus",
+                        "readOnly": true
+                    },
+                    "Sum": {
+                        "const": "Amount",
+                        "readOnly": true
+                    },
+                    "Date": {
+                        "const": "Date",
+                        "readOnly": true
+                    },
+                    "Week": {
+                        "const": "Week",
+                        "readOnly": true
+                    },
+                    "Month": {
+                        "const": "Month",
+                        "readOnly": true
+                    },
+                    "month": {
+                        "const": "month",
+                        "readOnly": true
+                    },
+                    "months": {
+                        "const": "months",
+                        "readOnly": true
+                    },
+                    "months_mult": {
+                        "const": "months",
+                        "readOnly": true
+                    },
+                    "months_6": {
+                        "const": "6 months",
+                        "readOnly": true
+                    },
+                    "Quarter": {
+                        "const": "Quarter",
+                        "readOnly": true
+                    },
+                    "Year": {
+                        "const": "Year",
+                        "readOnly": true
+                    },
+                    "Total": {
+                        "const": "Total",
+                        "readOnly": true
+                    },
+                    "TOTAL": {
+                        "const": "TOTAL",
+                        "readOnly": true
+                    },
+                    "сode": {
+                        "const": "code",
+                        "readOnly": true
+                    },
+                    "Thank_you": {
+                        "const": "Thank you!",
+                        "readOnly": true
+                    },
+                    "Thank_you_for_using_our_tools": {
+                        "const": "Thank you for using our tools",
+                        "readOnly": true
+                    },
+                    "Since": {
+                        "const": "Since",
+                        "readOnly": true
+                    },
+                    "Till": {
+                        "const": "Till",
+                        "readOnly": true
+                    },
+                    "till": {
+                        "const": "up to",
+                        "readOnly": true
+                    },
+                    "Yandex": {
+                        "const": "Yandex",
+                        "readOnly": true
+                    },
+                    "Position": {
+                        "const": "Rank",
+                        "readOnly": true
+                    },
+                    "Impressions": {
+                        "const": "Impressions",
+                        "readOnly": true
+                    },
+                    "Demand": {
+                        "const": "Demand",
+                        "readOnly": true
+                    },
+                    "FAQ": {
+                        "const": "FAQ",
+                        "readOnly": true
+                    },
+                    "Frequently_asked_questions": {
+                        "const": "Frequently asked questions",
+                        "readOnly": true
+                    },
+                    "Owner": {
+                        "const": "Owner",
+                        "readOnly": true
+                    },
+                    "level": {
+                        "const": "level",
+                        "readOnly": true
+                    },
+                    "No_payments": {
+                        "const": "No payments yet",
+                        "readOnly": true
+                    },
+                    "Show_legend": {
+                        "const": "Show legend",
+                        "readOnly": true
+                    },
+                    "Hide_legend": {
+                        "const": "Hide legend",
+                        "readOnly": true
+                    },
+                    "Menu_expand": {
+                        "const": "Expand menu",
+                        "readOnly": true
+                    },
+                    "Menu_unexpand": {
+                        "const": "Minimize menu",
+                        "readOnly": true
+                    },
+                    "Menu_dynamics_search": {
+                        "const": "Search",
+                        "readOnly": true
+                    },
+                    "Menu_dynamics": {
+                        "const": "Rank Tracker",
+                        "readOnly": true
+                    },
+                    "Menu_snapshots": {
+                        "const": "SERP Snapshots",
+                        "readOnly": true
+                    },
+                    "Menu_competitors": {
+                        "const": "My competitors",
+                        "readOnly": true
+                    },
+                    "Menu_phrases": {
+                        "const": "Keywords",
+                        "readOnly": true
+                    },
+                    "Menu_audit": {
+                        "const": "Audit",
+                        "readOnly": true
+                    },
+                    "Menu_analytics": {
+                        "const": "Overview",
+                        "readOnly": true
+                    },
+                    "Menu_PPC": {
+                        "const": "PPC",
+                        "readOnly": true
+                    },
+                    "Menu_broker": {
+                        "const": "Yandex.Direct",
+                        "readOnly": true
+                    },
+                    "Menu_settings": {
+                        "const": "Settings",
+                        "readOnly": true
+                    },
+                    "Menu_more": {
+                        "const": "More",
+                        "readOnly": true
+                    },
+                    "Folders": {
+                        "const": "Folders",
+                        "readOnly": true
+                    },
+                    "Groups": {
+                        "const": "Groups",
+                        "readOnly": true
+                    },
+                    "Keywords": {
+                        "const": "Keywords",
+                        "readOnly": true
+                    },
+                    "of_keywords": {
+                        "const": "keywords",
+                        "readOnly": true
+                    },
+                    "of_folders": {
+                        "const": "folders",
+                        "readOnly": true
+                    },
+                    "of_projects": {
+                        "const": "projects",
+                        "readOnly": true
+                    },
+                    "of_project1": {
+                        "const": "for project",
+                        "readOnly": true
+                    },
+                    "for_project": {
+                        "const": "for project",
+                        "readOnly": true
+                    },
+                    "competitor": {
+                        "const": "competitor",
+                        "readOnly": true
+                    },
+                    "All_groups": {
+                        "const": "All groups",
+                        "readOnly": true
+                    },
+                    "All_folders": {
+                        "const": "All folders",
+                        "readOnly": true
+                    },
+                    "Root_folder": {
+                        "const": "Root folder",
+                        "readOnly": true
+                    },
+                    "All_regions": {
+                        "const": "All locations",
+                        "readOnly": true
+                    },
+                    "All_searchers": {
+                        "const": "All search engines",
+                        "readOnly": true
+                    },
+                    "All_projects": {
+                        "const": "All projects",
+                        "readOnly": true
+                    },
+                    "Integration": {
+                        "const": "Integration",
+                        "readOnly": true
+                    },
+                    "updates_days": {
+                        "const": "update days",
+                        "readOnly": true
+                    },
+                    "whole_period": {
+                        "const": "the entire period",
+                        "readOnly": true
+                    },
+                    "two_dates": {
+                        "const": "two dates",
+                        "readOnly": true
+                    },
+                    "Report_for_project": {
+                        "const": "Project report for",
+                        "readOnly": true
+                    },
+                    "Interval": {
+                        "const": "Time range",
+                        "readOnly": true
+                    },
+                    "competitors_comparison": {
+                        "const": "compare with competitors",
+                        "readOnly": true
+                    },
+                    "Searchers_comparison": {
+                        "const": "Compare by search engine",
+                        "readOnly": true
+                    },
+                    "Regions_comparison": {
+                        "const": "Compare by location",
+                        "readOnly": true
+                    },
+                    "Browser_not_supported": {
+                        "const": "Your browser is not supported!",
+                        "readOnly": true
+                    },
+                    "Browser_settings": {
+                        "const": "Browser settings",
+                        "readOnly": true
+                    },
+                    "Service_may_go_unstable": {
+                        "const": "Service might be unstable",
+                        "readOnly": true
+                    },
+                    "Preferred_browser": {
+                        "const": "Compatible browser is",
+                        "readOnly": true
+                    },
+                    "Comparison_by": {
+                        "const": "Compare by",
+                        "readOnly": true
+                    },
+                    "Phrases": {
+                        "const": "Keywords",
+                        "readOnly": true
+                    },
+                    "TOP": {
+                        "const": "TOP",
+                        "readOnly": true
+                    },
+                    "Top": {
+                        "const": "Top",
+                        "readOnly": true
+                    },
+                    "Phrases_dynamics": {
+                        "const": "Keyword dynamics",
+                        "readOnly": true
+                    },
+                    "Project_settings": {
+                        "const": "Project settings",
+                        "readOnly": true
+                    },
+                    "Phrases_in_TOP": {
+                        "const": "Keywords in TOP",
+                        "readOnly": true
+                    },
+                    "Phrases_in_Top": {
+                        "const": "Keywords in Top",
+                        "readOnly": true
+                    },
+                    "Page": {
+                        "const": "Page",
+                        "readOnly": true
+                    },
+                    "page": {
+                        "const": "page",
+                        "readOnly": true
+                    },
+                    "last_10_days": {
+                        "const": "last 10 days",
+                        "readOnly": true
+                    },
+                    "last_month": {
+                        "const": "last month",
+                        "readOnly": true
+                    },
+                    "last_check": {
+                        "const": "last update",
+                        "readOnly": true
+                    },
+                    "last_two_dates": {
+                        "const": "last 2 updates",
+                        "readOnly": true
+                    },
+                    "last_month_week_average": {
+                        "const": "last month (week's average)",
+                        "readOnly": true
+                    },
+                    "also_searched": {
+                        "const": "similar keywords",
+                        "readOnly": true
+                    },
+                    "Sources": {
+                        "const": "Sources",
+                        "readOnly": true
+                    },
+                    "Clicks": {
+                        "const": "Clicks",
+                        "readOnly": true
+                    },
+                    "Other_dates": {
+                        "const": "Other dates",
+                        "readOnly": true
+                    },
+                    "Help_center": {
+                        "const": "Help Center",
+                        "readOnly": true
+                    },
+                    "Help_center_welcome": {
+                        "const": "Support Center",
+                        "readOnly": true
+                    },
+                    "Help_center_question": {
+                        "const": "Got any questions?",
+                        "readOnly": true
+                    },
+                    "Run": {
+                        "const": "Run",
+                        "readOnly": true
+                    },
+                    "Manage": {
+                        "const": "Manage",
+                        "readOnly": true
+                    },
+                    "Missed_project_id": {
+                        "const": "Project id is missing",
+                        "readOnly": true
+                    },
+                    "Missed_project_id2": {
+                        "const": "`Project_id` is missing",
+                        "readOnly": true
+                    },
+                    "Project_analytics": {
+                        "const": "Project analytics",
+                        "readOnly": true
+                    },
+                    "Project_dynamics": {
+                        "const": "Keyword dynamics",
+                        "readOnly": true
+                    },
+                    "Apometr": {
+                        "const": "Updates",
+                        "readOnly": true
+                    },
+                    "Apometr_notice": {
+                        "const": "Get update alerts",
+                        "readOnly": true
+                    },
+                    "Pricing_title": {
+                        "const": "Pricing",
+                        "readOnly": true
+                    },
+                    "Profile_title": {
+                        "const": "Account",
+                        "readOnly": true
+                    },
+                    "Bank_title": {
+                        "const": "Billing",
+                        "readOnly": true
+                    },
+                    "Your_projects": {
+                        "const": "Your projects",
+                        "readOnly": true
+                    },
+                    "Incorrect_file_format": {
+                        "const": "Invalid file format (expected: %availableExtensionsNames%)",
+                        "readOnly": true
+                    },
+                    "Max_size": {
+                        "const": "Maximum upload size exceeded (%maxSize%)",
+                        "readOnly": true
+                    },
+                    "Audit": {
+                        "const": "Website SEO Audit tool",
+                        "readOnly": true
+                    },
+                    "Tutorial": {
+                        "const": "Tutorials",
+                        "readOnly": true
+                    },
+                    "User_id": {
+                        "const": "User ID",
+                        "readOnly": true
+                    },
+                    "Managing_executive": {
+                        "const": "Managing executive",
+                        "readOnly": true
+                    },
+                    "Pustovoit": {
+                        "const": "Pustovoit",
+                        "readOnly": true
+                    },
+                    "Denis": {
+                        "const": "Denis",
+                        "readOnly": true
+                    },
+                    "Anatolyevich": {
+                        "const": "Anatolyevich",
+                        "readOnly": true
+                    },
+                    "CEO": {
+                        "const": "Chief Executive Officer",
+                        "readOnly": true
+                    },
+                    "office": {
+                        "const": "office",
+                        "readOnly": true
+                    },
+                    "Dot": {
+                        "const": "Dot",
+                        "readOnly": true
+                    },
+                    "Comma": {
+                        "const": "Comma",
+                        "readOnly": true
+                    },
+                    "Enter_manually": {
+                        "const": "Add manually",
+                        "readOnly": true
+                    },
+                    "max_10_mb": {
+                        "const": "max 10 Mb",
+                        "readOnly": true
+                    },
+                    "Schedule_settings_checks": {
+                        "const": "Checks schedule",
+                        "readOnly": true
+                    },
+                    "Schedule_settings_reports": {
+                        "const": "Reports schedule",
+                        "readOnly": true
+                    },
+                    "Basic": {
+                        "const": "Basic",
+                        "readOnly": true
+                    },
+                    "Address_IP": {
+                        "const": "IP address",
+                        "readOnly": true
+                    },
+                    "Phone_number": {
+                        "const": "Phone number",
+                        "readOnly": true
+                    },
+                    "Recipient": {
+                        "const": "Recipient",
+                        "readOnly": true
+                    },
+                    "Federal_act": {
+                        "const": " Federal act",
+                        "readOnly": true
+                    },
+                    "optional": {
+                        "const": "optional",
+                        "readOnly": true
+                    },
+                    "Full_name_abbr": {
+                        "const": "Full name",
+                        "readOnly": true
+                    },
+                    "Mobile_phone": {
+                        "const": "Mobile phone",
+                        "readOnly": true
+                    },
+                    "not_found": {
+                        "const": "not found",
+                        "readOnly": true
+                    },
+                    "Try_to_reset_filters_or_search_archive_html": {
+                        "const": "Try to <i class=\"a\" data-action=\"reset_filters\">reset</i> all filters<br><i class=\"archive_search\">\n\tor search <a href=\"/support/projects/archive\" target=\"_blank\" class=\"a\">Archived</a> projects</i>",
+                        "readOnly": true
+                    },
+                    "Print": {
+                        "const": "Print",
+                        "readOnly": true
+                    },
+                    "Contact_us": {
+                        "const": "Contact us",
+                        "readOnly": true
+                    },
+                    "Competitor_analysis": {
+                        "const": "Competitor research",
+                        "readOnly": true
+                    },
+                    "Refill_balance": {
+                        "const": "Top up your balance",
+                        "readOnly": true
+                    },
+                    "Median": {
+                        "const": "Median",
+                        "readOnly": true
+                    },
+                    "Reset": {
+                        "const": "Reset",
+                        "readOnly": true
+                    },
+                    "View": {
+                        "const": "View",
+                        "readOnly": true
+                    },
+                    "Bar_pin": {
+                        "const": "Pin bar",
+                        "readOnly": true
+                    },
+                    "Count": {
+                        "const": "Number",
+                        "readOnly": true
+                    },
+                    "Invalid_url": {
+                        "const": "Invalid URL format",
+                        "readOnly": true
+                    },
+                    "Access_settings": {
+                        "const": "Access settings",
+                        "readOnly": true
+                    },
+                    "Hide_access_settings": {
+                        "const": "Hide access settings",
+                        "readOnly": true
+                    },
+                    "Sort": {
+                        "const": "Sort",
+                        "readOnly": true
+                    },
+                    "No_snippet": {
+                        "const": "No snippet",
+                        "readOnly": true
+                    },
+                    "Copied_to_clipboard": {
+                        "const": "Copied to clipboard",
+                        "readOnly": true
+                    },
+                    "Cannot_copied_to_clipboard": {
+                        "const": "Cannot copied to clipboard",
+                        "readOnly": true
+                    },
+                    "Copy_guest_link_manually": {
+                        "const": "Copy the guest link manually",
+                        "readOnly": true
+                    },
+                    "Press_to_copy_1": {
+                        "const": "Press",
+                        "readOnly": true
+                    },
+                    "Press_to_copy_2": {
+                        "const": "+C to copy a link",
+                        "readOnly": true
+                    },
+                    "Guest_link_created": {
+                        "const": "Guest link created",
+                        "readOnly": true
+                    },
+                    "Need_fill_required_fields": {
+                        "const": "Please fill in all required fields",
+                        "readOnly": true
+                    }
+                },
+                "required": [
+                    "url_lang_prefix",
+                    "Page_404_text",
+                    "Page_404_text2",
+                    "Page_404_sec",
+                    "Page_403_text",
+                    "openApp_text",
+                    "openApp_text2",
+                    "lang",
+                    "lang_country",
+                    "lang_url",
+                    "alternate_lang",
+                    "alternate_lang_country",
+                    "alternate_lang_url",
+                    "Lang_full",
+                    "language",
+                    "Language",
+                    "locale",
+                    "date_format",
+                    "Description",
+                    "Og_description",
+                    "Og_description_invite",
+                    "Ascending",
+                    "Descending",
+                    "TV_address_street",
+                    "Message_session_security_error",
+                    "Message_dbh_remote",
+                    "Message_dbh_remote_error",
+                    "Message_ch_error",
+                    "Message_sp_error",
+                    "Every_day",
+                    "time_a_0",
+                    "time_a_1",
+                    "time_a_2",
+                    "a_week",
+                    "a_month",
+                    "discount",
+                    "month_short",
+                    "Balance",
+                    "Referrals",
+                    "Organization",
+                    "Yes",
+                    "Exists",
+                    "No",
+                    "not",
+                    "and",
+                    "ruble",
+                    "for",
+                    "For",
+                    "Close",
+                    "OK",
+                    "Apply",
+                    "Choose",
+                    "Download",
+                    "download",
+                    "Step",
+                    "Continue",
+                    "Back",
+                    "Next",
+                    "Prev_page_short",
+                    "Next_page_short",
+                    "project",
+                    "Project",
+                    "of_project",
+                    "Ticket",
+                    "Tickets",
+                    "All_tickets",
+                    "All_pages",
+                    "Submit",
+                    "Tickets_page",
+                    "Submitted",
+                    "Created_at",
+                    "Schet_number",
+                    "Cancel",
+                    "Send",
+                    "More",
+                    "Read_more",
+                    "Read_more2",
+                    "User",
+                    "Message",
+                    "Message_not_sended",
+                    "Comment_not_deleted",
+                    "Link",
+                    "Name",
+                    "First_and_last_name",
+                    "Access_denied",
+                    "Access_error",
+                    "No_data",
+                    "No_results",
+                    "Dynamics",
+                    "Country",
+                    "Number",
+                    "Number_word",
+                    "CPC",
+                    "Clear",
+                    "Phone",
+                    "Email",
+                    "Email_not_exist",
+                    "Password_incorrect",
+                    "Enter_email",
+                    "Enter_password",
+                    "Remember_me",
+                    "Forgot_password",
+                    "Signup_now",
+                    "Sign_in_with",
+                    "Password_recovering",
+                    "Recover_password",
+                    "Keywords_one_per_line",
+                    "Add_se",
+                    "Create_project",
+                    "Creating",
+                    "Enter_valid_email_notice",
+                    "No_account_sign_up",
+                    "No_account",
+                    "Through_registration_you_confirm_agreement_policy",
+                    "Already_have_account",
+                    "Try_again_or_sign_up",
+                    "If_no_msg_check_spam_ask_support_notice",
+                    "If_no_msg",
+                    "support_notice",
+                    "Confirmation_link_sent_to_email",
+                    "Internal_error",
+                    "Unknown_error",
+                    "Google_server_error",
+                    "Yandex_API_server_error",
+                    "Yandex_auth_error",
+                    "Request_error_required",
+                    "Request_error_type",
+                    "Request_error_value",
+                    "Request_error_qualifiers",
+                    "Error_regexp",
+                    "Valid_characters",
+                    "Bonus",
+                    "or",
+                    "to",
+                    "to_1",
+                    "at",
+                    "To",
+                    "Until",
+                    "next_count",
+                    "pages",
+                    "pages_full",
+                    "limit",
+                    "by",
+                    "Path",
+                    "Rule",
+                    "Allow",
+                    "Disallow",
+                    "Allow_of_mask",
+                    "Disallow_of_mask",
+                    "Search",
+                    "Examples",
+                    "Begin",
+                    "Start_over",
+                    "Export",
+                    "Import",
+                    "Off",
+                    "Changes",
+                    "Change",
+                    "Value",
+                    "Hide",
+                    "Display",
+                    "Save",
+                    "Time",
+                    "Loading",
+                    "CY",
+                    "Broker",
+                    "Maintenance",
+                    "on_account",
+                    "on",
+                    "Tools",
+                    "Keyword_researcher",
+                    "Rank_tracker",
+                    "Upload",
+                    "Open",
+                    "Hide_all",
+                    "Expand_all",
+                    "Expand",
+                    "Attention",
+                    "from",
+                    "from_1",
+                    "dated",
+                    "fromDate",
+                    "toDate",
+                    "SE",
+                    "Guest_link",
+                    "Guest_link_copied_to_clipboard",
+                    "Device_0",
+                    "Device_1",
+                    "Device_2",
+                    "Device_100",
+                    "Device_102",
+                    "Device_110",
+                    "Device_112",
+                    "Device_120",
+                    "Device_122",
+                    "Tag",
+                    "Tags",
+                    "All_tags",
+                    "Charts",
+                    "All",
+                    "Selected",
+                    "Select",
+                    "Select_all",
+                    "Added",
+                    "Deleted",
+                    "Rename",
+                    "On_or_off",
+                    "Autoselect",
+                    "Open_project",
+                    "Domain",
+                    "Domains",
+                    "Track",
+                    "Check",
+                    "Track_continued",
+                    "Telegram",
+                    "Link_to_telegram",
+                    "Other",
+                    "Other_f",
+                    "Proceed",
+                    "Projects",
+                    "Metrika",
+                    "Webmaster",
+                    "Webmaster_monitoring",
+                    "Webmaster_popular",
+                    "Yandex_Direct",
+                    "YandexDirect",
+                    "Yandex_Wordstat",
+                    "Y_freq",
+                    "Y_freq2",
+                    "Y_freq3",
+                    "Y_freq5",
+                    "Y_freq6",
+                    "G_freq2",
+                    "M_freq2",
+                    "Y_price1",
+                    "Y_price2",
+                    "Y_price3",
+                    "Y_price4",
+                    "Y_price5",
+                    "G_price",
+                    "Search_engine",
+                    "Search_engines",
+                    "Region",
+                    "region",
+                    "Selected_regions",
+                    "Compare",
+                    "Folder",
+                    "Group",
+                    "Visibility",
+                    "Average",
+                    "Average_position",
+                    "Add",
+                    "Create",
+                    "Move",
+                    "Delete",
+                    "Replace",
+                    "Restore",
+                    "Copy",
+                    "Copy2",
+                    "Remove",
+                    "Charge",
+                    "confirm",
+                    "Confirm",
+                    "Delete_selected",
+                    "Delete_all",
+                    "Traffic",
+                    "Positions",
+                    "Keyword",
+                    "Key_word",
+                    "Settings",
+                    "Settings_URL",
+                    "Irreversible",
+                    "Empty_field",
+                    "Notification",
+                    "Personal_project",
+                    "Agreement",
+                    "Period",
+                    "Config_is_readonly",
+                    "regions",
+                    "types",
+                    "Select_date",
+                    "Not_date",
+                    "Close_window",
+                    "Dashboard",
+                    "Support",
+                    "Shortener",
+                    "Journal",
+                    "Academy",
+                    "Pricing",
+                    "Signup",
+                    "Sign_up",
+                    "Sign_up_2",
+                    "Sign_in",
+                    "Sign_in_account",
+                    "Sign_out",
+                    "Server_response",
+                    "Red",
+                    "Orange",
+                    "Yellow",
+                    "Blue",
+                    "Purple",
+                    "Green",
+                    "Magenta",
+                    "Dark_blue",
+                    "Turquoise",
+                    "Frequency",
+                    "Moscow",
+                    "Minsk",
+                    "Kyiv",
+                    "London",
+                    "NewYork",
+                    "StPetersburg",
+                    "Almaty",
+                    "Russia",
+                    "Ukraine",
+                    "Kazakhstan",
+                    "Belarus",
+                    "Sum",
+                    "Date",
+                    "Week",
+                    "Month",
+                    "month",
+                    "months",
+                    "months_mult",
+                    "months_6",
+                    "Quarter",
+                    "Year",
+                    "Total",
+                    "TOTAL",
+                    "сode",
+                    "Thank_you",
+                    "Thank_you_for_using_our_tools",
+                    "Since",
+                    "Till",
+                    "till",
+                    "Yandex",
+                    "Position",
+                    "Impressions",
+                    "Demand",
+                    "FAQ",
+                    "Frequently_asked_questions",
+                    "Owner",
+                    "level",
+                    "No_payments",
+                    "Show_legend",
+                    "Hide_legend",
+                    "Menu_expand",
+                    "Menu_unexpand",
+                    "Menu_dynamics_search",
+                    "Menu_dynamics",
+                    "Menu_snapshots",
+                    "Menu_competitors",
+                    "Menu_phrases",
+                    "Menu_audit",
+                    "Menu_analytics",
+                    "Menu_PPC",
+                    "Menu_broker",
+                    "Menu_settings",
+                    "Menu_more",
+                    "Folders",
+                    "Groups",
+                    "Keywords",
+                    "of_keywords",
+                    "of_folders",
+                    "of_projects",
+                    "of_project1",
+                    "for_project",
+                    "competitor",
+                    "All_groups",
+                    "All_folders",
+                    "Root_folder",
+                    "All_regions",
+                    "All_searchers",
+                    "All_projects",
+                    "Integration",
+                    "updates_days",
+                    "whole_period",
+                    "two_dates",
+                    "Report_for_project",
+                    "Interval",
+                    "competitors_comparison",
+                    "Searchers_comparison",
+                    "Regions_comparison",
+                    "Browser_not_supported",
+                    "Browser_settings",
+                    "Service_may_go_unstable",
+                    "Preferred_browser",
+                    "Comparison_by",
+                    "Phrases",
+                    "TOP",
+                    "Top",
+                    "Phrases_dynamics",
+                    "Project_settings",
+                    "Phrases_in_TOP",
+                    "Phrases_in_Top",
+                    "Page",
+                    "page",
+                    "last_10_days",
+                    "last_month",
+                    "last_check",
+                    "last_two_dates",
+                    "last_month_week_average",
+                    "also_searched",
+                    "Sources",
+                    "Clicks",
+                    "Other_dates",
+                    "Help_center",
+                    "Help_center_welcome",
+                    "Help_center_question",
+                    "Run",
+                    "Manage",
+                    "Missed_project_id",
+                    "Missed_project_id2",
+                    "Project_analytics",
+                    "Project_dynamics",
+                    "Apometr",
+                    "Apometr_notice",
+                    "Pricing_title",
+                    "Profile_title",
+                    "Bank_title",
+                    "Your_projects",
+                    "Incorrect_file_format",
+                    "Max_size",
+                    "Audit",
+                    "Tutorial",
+                    "User_id",
+                    "Managing_executive",
+                    "Pustovoit",
+                    "Denis",
+                    "Anatolyevich",
+                    "CEO",
+                    "office",
+                    "Dot",
+                    "Comma",
+                    "Enter_manually",
+                    "max_10_mb",
+                    "Schedule_settings_checks",
+                    "Schedule_settings_reports",
+                    "Basic",
+                    "Address_IP",
+                    "Phone_number",
+                    "Recipient",
+                    "Federal_act",
+                    "optional",
+                    "Full_name_abbr",
+                    "Mobile_phone",
+                    "not_found",
+                    "Try_to_reset_filters_or_search_archive_html",
+                    "Print",
+                    "Contact_us",
+                    "Competitor_analysis",
+                    "Refill_balance",
+                    "Median",
+                    "Reset",
+                    "View",
+                    "Bar_pin",
+                    "Count",
+                    "Invalid_url",
+                    "Access_settings",
+                    "Hide_access_settings",
+                    "Sort",
+                    "No_snippet",
+                    "Copied_to_clipboard",
+                    "Cannot_copied_to_clipboard",
+                    "Copy_guest_link_manually",
+                    "Press_to_copy_1",
+                    "Press_to_copy_2",
+                    "Guest_link_created",
+                    "Need_fill_required_fields"
+                ]
+            }
+        }
+    }
+}

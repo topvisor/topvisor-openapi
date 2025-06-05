@@ -1,0 +1,74 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/FieldOrder",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "FieldOrder": {
+                "type": "object",
+                "properties": {
+                    "name": {
+                        "title": "Имя поля",
+                        "type": "string"
+                    },
+                    "direction": {
+                        "title": "Оператор сравнения",
+                        "default": "ASC",
+                        "allOf": [
+                            {
+                                "$ref": "FieldDirection.json#/components/schemas/FieldDirection"
+                            }
+                        ]
+                    },
+                    "orderValues": {
+                        "title": "Список значений поля, для ручной сортировки",
+                        "type": "array",
+                        "items": {
+                            "oneOf": [
+                                {
+                                    "type": "string"
+                                },
+                                {
+                                    "type": "number"
+                                }
+                            ]
+                        }
+                    },
+                    "operator": {
+                        "title": "Оператор сравнения",
+                        "allOf": [
+                            {
+                                "$ref": "FieldOperator.json#/components/schemas/FieldOperator"
+                            }
+                        ]
+                    },
+                    "values": {
+                        "title": "Значения для сравенния\n\nВ зависимости от типа условия оно может иметь разное количество значений\n\nОбычно оно имеет только одно значение",
+                        "type": "array",
+                        "items": {
+                            "oneOf": [
+                                {
+                                    "type": "string"
+                                },
+                                {
+                                    "type": "number"
+                                }
+                            ]
+                        }
+                    }
+                },
+                "required": [
+                    "name",
+                    "direction",
+                    "orderValues",
+                    "operator",
+                    "values"
+                ],
+                "title": "Поле сортировки"
+            }
+        }
+    }
+}

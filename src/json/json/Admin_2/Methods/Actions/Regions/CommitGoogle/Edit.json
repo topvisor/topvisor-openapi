@@ -1,0 +1,41 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Admin_2.Methods.Actions.Regions.CommitGoogle.Edit",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Admin_2.Methods.Actions.Regions.CommitGoogle.Edit": {
+                "type": "object",
+                "properties": {
+                    "regions": {
+                        "title": "Список регионов в формате:\n\n- Яндекс lr, укажите 0, если региона в Яндексе нет\n- Criteria ID: id региона в google\n- coords: координаты\n- name_ru: имя региона\n- areaName_ru: имя родительского региона, обычно это область",
+                        "description": "@type array<array{lr: int, criteriaId: int, coords: string, name_ru: string, areaName_ru: string}>",
+                        "type": "array",
+                        "items": {
+                            "oneOf": [
+                                {
+                                    "type": "string"
+                                },
+                                {
+                                    "type": "number"
+                                }
+                            ]
+                        }
+                    },
+                    "test": {
+                        "title": "Являеется ли запуск - тестом",
+                        "type": "boolean"
+                    }
+                },
+                "required": [
+                    "regions",
+                    "test"
+                ],
+                "title": "Добавить регионы Google в сервис"
+            }
+        }
+    }
+}

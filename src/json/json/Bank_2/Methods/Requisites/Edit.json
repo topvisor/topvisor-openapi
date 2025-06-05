@@ -1,0 +1,30 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Bank_2.Methods.Requisites.Edit",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Bank_2.Methods.Requisites.Edit": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "title": "Id реквезитов",
+                        "type": "string"
+                    },
+                    "data": {
+                        "title": "Данные реквезитов\n\nсм. объект Bank_2\\Objects\\Requisites",
+                        "type": "string"
+                    }
+                },
+                "required": [
+                    "id",
+                    "data"
+                ],
+                "title": "Изменение реквизитов"
+            }
+        }
+    }
+}

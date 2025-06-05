@@ -1,0 +1,70 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Audit_2.Methods.Indexing.Summary.Chart.Get",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Audit_2.Methods.Indexing.Summary.Chart.Get": {
+                "type": "object",
+                "properties": {
+                    "dates": {
+                        "title": "Произвольные даты без диапазона",
+                        "type": "array",
+                        "items": {
+                            "oneOf": [
+                                {
+                                    "type": "string"
+                                },
+                                {
+                                    "type": "number"
+                                }
+                            ]
+                        }
+                    },
+                    "searcher_key": {
+                        "nullable": true,
+                        "allOf": [
+                            {
+                                "$ref": "../../../../../Audit_2/Types/Indexing/SearcherKey.json#/components/schemas/Audit_2.Types.Indexing.SearcherKey"
+                            }
+                        ]
+                    },
+                    "show_counts_changes": {
+                        "title": "Отобразить количество изменений",
+                        "type": "boolean"
+                    },
+                    "show_counts_in_index": {
+                        "title": "Отобразить количество страниц в индексе",
+                        "type": "boolean"
+                    },
+                    "show_counts_all": {
+                        "title": "Отобразить количество проверенных страниц",
+                        "type": "boolean"
+                    },
+                    "forChart": {
+                        "title": "Вернуть данные в формате для графика\n\nНедокументируемый параметр",
+                        "description": "@private",
+                        "type": "boolean"
+                    },
+                    "project_id": {
+                        "$ref": "../../../../../TV/API/Params/ProjectIdTrait.json#/components/schemas/TV.API.Params.ProjectIdTrait/properties/project_id"
+                    },
+                    "filters": {
+                        "$ref": "../../../../../TV/API/Params/FiltersTrait.json#/components/schemas/TV.API.Params.FiltersTrait/properties/filters"
+                    },
+                    "id": {
+                        "$ref": "../../../../../TV/API/Params/FiltersTrait.json#/components/schemas/TV.API.Params.FiltersTrait/properties/id"
+                    }
+                },
+                "required": [
+                    "dates",
+                    "project_id"
+                ],
+                "title": "Получение сводок индексации для графика"
+            }
+        }
+    }
+}

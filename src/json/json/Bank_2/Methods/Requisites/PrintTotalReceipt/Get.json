@@ -1,0 +1,51 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Bank_2.Methods.Requisites.PrintTotalReceipt.Get",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Bank_2.Methods.Requisites.PrintTotalReceipt.Get": {
+                "type": "object",
+                "properties": {
+                    "date1": {
+                        "title": "Дата начала диапазона",
+                        "allOf": [
+                            {
+                                "$ref": "../../../../TV/API/Types/Date.json#/components/schemas/TV.API.Types.Date"
+                            }
+                        ]
+                    },
+                    "date2": {
+                        "title": "Дата конца диапазона",
+                        "allOf": [
+                            {
+                                "$ref": "../../../../TV/API/Types/Date.json#/components/schemas/TV.API.Types.Date"
+                            }
+                        ]
+                    },
+                    "org_id": {
+                        "title": "Id организации",
+                        "type": "string"
+                    },
+                    "returnPdfDataForDiadoc": {
+                        "title": "Для внутреннего использования",
+                        "type": "boolean"
+                    },
+                    "signed": {
+                        "title": "Использовать подпись\n\nЕсли true, то документ с подписью (не распространяется на договоры)",
+                        "type": "boolean"
+                    }
+                },
+                "required": [
+                    "date1",
+                    "date2",
+                    "org_id"
+                ],
+                "title": "Получение акта сверки (акты по предоплате выводятся в одном платеже)"
+            }
+        }
+    }
+}

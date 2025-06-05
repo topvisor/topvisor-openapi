@@ -1,0 +1,229 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/I18n.Telegram",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "I18n.Telegram": {
+                "type": "object",
+                "properties": {
+                    "Panel_get_command_list": {
+                        "const": "Get list of commands",
+                        "readOnly": true
+                    },
+                    "Panel_enable_notifications": {
+                        "const": "Turn on notifications",
+                        "readOnly": true
+                    },
+                    "Panel_disable_notifications": {
+                        "const": "Turn off notifications",
+                        "readOnly": true
+                    },
+                    "Panel_pair_account": {
+                        "const": "Link Topvisor account",
+                        "readOnly": true
+                    },
+                    "Panel_unpair_account": {
+                        "const": "Remove Topvisor account",
+                        "readOnly": true
+                    },
+                    "Panel_get_short_link": {
+                        "const": "Create short link",
+                        "readOnly": true
+                    },
+                    "Panel_back": {
+                        "const": "Back",
+                        "readOnly": true
+                    },
+                    "Panel_cancel": {
+                        "const": "Cancel",
+                        "readOnly": true
+                    },
+                    "Panel_main_menu": {
+                        "const": "Main menu",
+                        "readOnly": true
+                    },
+                    "Panel_select_lang": {
+                        "const": "Select language",
+                        "readOnly": true
+                    },
+                    "Panel_eng": {
+                        "const": "English",
+                        "readOnly": true
+                    },
+                    "Panel_rus": {
+                        "const": "Russian",
+                        "readOnly": true
+                    },
+                    "Panel_i_subscribed": {
+                        "const": "Already subscribed 😎",
+                        "readOnly": true
+                    },
+                    "Panel_subscribe": {
+                        "const": "Subscribe",
+                        "readOnly": true
+                    },
+                    "Panel_open_materials": {
+                        "const": "Open materials 📚",
+                        "readOnly": true
+                    },
+                    "Panel_library": {
+                        "const": "Open library",
+                        "readOnly": true
+                    },
+                    "Message_chat_disabled": {
+                        "const": "Message not received. To contact Customer Care and read replies, type /start",
+                        "readOnly": true
+                    },
+                    "Message_available_commands": {
+                        "const": "Commands that I understand:",
+                        "readOnly": true
+                    },
+                    "Message_available_commands_help": {
+                        "const": "Get list of commands",
+                        "readOnly": true
+                    },
+                    "Message_available_commands_start": {
+                        "const": "Turn on notifications",
+                        "readOnly": true
+                    },
+                    "Message_available_commands_stop": {
+                        "const": "Turn off notifications",
+                        "readOnly": true
+                    },
+                    "Message_available_commands_pair": {
+                        "const": "Link Topvisor account",
+                        "readOnly": true
+                    },
+                    "Message_available_commands_unpair": {
+                        "const": "Remove Topvisor account",
+                        "readOnly": true
+                    },
+                    "Message_available_commands_tpvsr": {
+                        "const": "Create short link",
+                        "readOnly": true
+                    },
+                    "Message_start_text1": {
+                        "const": "Hi! I can send your questions to Customer Support and get replies.",
+                        "readOnly": true
+                    },
+                    "Message_start_text2": {
+                        "const": "To get a list of commands that I understand, type /help.",
+                        "readOnly": true
+                    },
+                    "Message_start_text3": {
+                        "const": "To contact support, send your question in the chat.",
+                        "readOnly": true
+                    },
+                    "Message_start_apometer_text": {
+                        "const": "",
+                        "readOnly": true
+                    },
+                    "Message_stop_text": {
+                        "const": "Notifications have been turned off. I'll stop sending you alerts and Customer Support replies.",
+                        "readOnly": true
+                    },
+                    "Message_pair_done1": {
+                        "const": "Your Telegram already linked to the account",
+                        "readOnly": true
+                    },
+                    "Message_pair_done2": {
+                        "const": "To remove account, type /unpair",
+                        "readOnly": true
+                    },
+                    "Message_pair_authorize1": {
+                        "const": "Sign in to Topvisor and click the <a href=\"https://topvisor.com/income/telegram/join/",
+                        "readOnly": true
+                    },
+                    "Message_pair_authorize2": {
+                        "const": "\">ссылке</a> to link your Telegram to the Topvisor account",
+                        "readOnly": true
+                    },
+                    "Message_unpair": {
+                        "const": "Account removed.",
+                        "readOnly": true
+                    },
+                    "Message_tpvsr": {
+                        "const": "Send me a URL to shorten.",
+                        "readOnly": true
+                    },
+                    "Message_tpvsr_cancel": {
+                        "const": "Type /cancel to step backwards.",
+                        "readOnly": true
+                    },
+                    "Message_tpvsr_failure": {
+                        "const": "Link not shortened",
+                        "readOnly": true
+                    },
+                    "Message_tpvsr_cancel_done": {
+                        "const": "Link shortening canceled.",
+                        "readOnly": true
+                    },
+                    "Message_join_authorize": {
+                        "const": "Sign in to Topvisor and try to link your account again.",
+                        "readOnly": true
+                    },
+                    "Message_join_done1": {
+                        "const": "Account",
+                        "readOnly": true
+                    },
+                    "Message_join_done2": {
+                        "const": "successfully linked.",
+                        "readOnly": true
+                    },
+                    "Message_check_journal_subscription": {
+                        "const": "You are in the library of useful content from Topvisor-Journal. Checkin you library card 🧐",
+                        "readOnly": true
+                    },
+                    "Message_not_subscribed": {
+                        "const": "It seems you are not reading the Topvisor-Journal channel yet 😳🕶🤏\nSubscribe to get a bunch of useful things 🔥",
+                        "readOnly": true
+                    },
+                    "Message_subscribed": {
+                        "const": "You are already reading the Topvisor-Journal channel. Access is open 😎\nDon’t unsubscribe - we are constantly adding useful materials ✍️",
+                        "readOnly": true
+                    }
+                },
+                "required": [
+                    "Panel_get_command_list",
+                    "Panel_enable_notifications",
+                    "Panel_disable_notifications",
+                    "Panel_get_short_link",
+                    "Panel_back",
+                    "Panel_cancel",
+                    "Panel_main_menu",
+                    "Panel_select_lang",
+                    "Panel_eng",
+                    "Panel_rus",
+                    "Panel_i_subscribed",
+                    "Panel_subscribe",
+                    "Panel_open_materials",
+                    "Panel_library",
+                    "Message_chat_disabled",
+                    "Message_available_commands",
+                    "Message_available_commands_help",
+                    "Message_available_commands_start",
+                    "Message_available_commands_stop",
+                    "Message_available_commands_tpvsr",
+                    "Message_start_text1",
+                    "Message_start_text2",
+                    "Message_start_text3",
+                    "Message_start_apometer_text",
+                    "Message_stop_text",
+                    "Message_pair_done1",
+                    "Message_pair_done2",
+                    "Message_unpair",
+                    "Message_tpvsr",
+                    "Message_tpvsr_cancel",
+                    "Message_tpvsr_failure",
+                    "Message_tpvsr_cancel_done",
+                    "Message_join_done1",
+                    "Message_join_done2"
+                ]
+            }
+        }
+    }
+}

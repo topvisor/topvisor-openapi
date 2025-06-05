@@ -1,0 +1,20 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/TV.API.Types.UrlShortArray",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "TV.API.Types.UrlShortArray": {
+                "type": "array",
+                "items": {
+                    "$ref": "../../../TV/API/Types/UrlShort.json#/components/schemas/TV.API.Types.UrlShort"
+                },
+                "title": "Тип массива: UrlShort[]",
+                "description": "@extends AbstractStringArray<UrlShort>\n@method UrlShort[] getValues()\n@method UrlShort current()\n@see \\TV\\API\\Types\\UrlShort"
+            }
+        }
+    }
+}

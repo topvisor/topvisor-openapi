@@ -1,0 +1,49 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Content_2.Methods.Pages.Order.Edit",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Content_2.Methods.Pages.Order.Edit": {
+                "type": "object",
+                "properties": {
+                    "subdomain": {
+                        "title": "Поддомен папки",
+                        "allOf": [
+                            {
+                                "$ref": "../../../../Content_2/Types/Subdomain.json#/components/schemas/Content_2.Types.Subdomain"
+                            }
+                        ]
+                    },
+                    "parent_url": {
+                        "title": "Адрес папки с документами",
+                        "type": "string"
+                    },
+                    "urls": {
+                        "title": "Адреса документов в нужном порядке",
+                        "type": "array",
+                        "items": {
+                            "oneOf": [
+                                {
+                                    "type": "string"
+                                },
+                                {
+                                    "type": "number"
+                                }
+                            ]
+                        }
+                    }
+                },
+                "required": [
+                    "subdomain",
+                    "parent_url",
+                    "urls"
+                ],
+                "title": "Сортировка документов"
+            }
+        }
+    }
+}

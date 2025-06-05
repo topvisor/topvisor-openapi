@@ -1,0 +1,131 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Bank_2.Objects.Subscriptions.Subscription",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Bank_2.Objects.Subscriptions.Subscription": {
+                "type": "object",
+                "properties": {
+                    "paymentId": {
+                        "title": "id платежа, подписки",
+                        "type": "integer"
+                    },
+                    "paymentSystem": {
+                        "title": "Платежная система",
+                        "type": "string"
+                    },
+                    "externalPaymentId": {
+                        "title": "Id платежа в платежной системе",
+                        "type": "string"
+                    },
+                    "paymentRequisitesId": {
+                        "title": "Id реквизитов юр. лица, указанные при оплате",
+                        "type": "string"
+                    },
+                    "depreciationCost": {
+                        "title": "Стоимость амортизации\n\nИспользуется для расчета первого платежа при переподписки на другой план\n\nУказывается в валюте подписки",
+                        "type": "integer"
+                    },
+                    "plan": {
+                        "title": "Текущий план подписки",
+                        "allOf": [
+                            {
+                                "$ref": "../../../Bank_2/Objects/Subscriptions/Plan.json#/components/schemas/Bank_2.Objects.Subscriptions.Plan"
+                            }
+                        ]
+                    },
+                    "nextPlan": {
+                        "title": "Следующий план подписки",
+                        "nullable": true,
+                        "allOf": [
+                            {
+                                "$ref": "../../../Bank_2/Objects/Subscriptions/Plan.json#/components/schemas/Bank_2.Objects.Subscriptions.Plan"
+                            }
+                        ]
+                    },
+                    "recurrentState": {
+                        "title": "Состояние подписки",
+                        "allOf": [
+                            {
+                                "$ref": "../../../Bank_2/Objects/Requisites/Payment/RecurrentState.json#/components/schemas/Bank_2.Objects.Requisites.Payment.RecurrentState"
+                            }
+                        ]
+                    },
+                    "cycle": {
+                        "title": "Текущий цикл для подписки",
+                        "allOf": [
+                            {
+                                "$ref": "../../../Bank_2/Types/Subscriptions/Cycle.json#/components/schemas/Bank_2.Types.Subscriptions.Cycle"
+                            }
+                        ]
+                    },
+                    "nextCycle": {
+                        "title": "Цикл для следующей подписки",
+                        "allOf": [
+                            {
+                                "$ref": "../../../Bank_2/Types/Subscriptions/Cycle.json#/components/schemas/Bank_2.Types.Subscriptions.Cycle"
+                            }
+                        ]
+                    },
+                    "price": {
+                        "title": "Стоимость текущей подписки",
+                        "type": "integer"
+                    },
+                    "renewPrice": {
+                        "title": "Стоимость продления подписки",
+                        "type": "integer"
+                    },
+                    "limitUsedByName": {
+                        "title": "Использованные лимиты\n\nДоступные лимиты см. в `plan`\n\nДля нетарифицируемых лимитов значение всегда `null`",
+                        "description": "@type Array<Bank_2\\Types\\Subscriptions\\Limit\\Name, int>",
+                        "type": "array",
+                        "items": {
+                            "oneOf": [
+                                {
+                                    "type": "string"
+                                },
+                                {
+                                    "type": "number"
+                                }
+                            ]
+                        }
+                    },
+                    "limitTypeByName": {
+                        "title": "Типы лимитов",
+                        "type": "array",
+                        "items": {
+                            "oneOf": [
+                                {
+                                    "type": "string"
+                                },
+                                {
+                                    "type": "number"
+                                }
+                            ]
+                        }
+                    }
+                },
+                "required": [
+                    "paymentId",
+                    "paymentSystem",
+                    "externalPaymentId",
+                    "paymentRequisitesId",
+                    "depreciationCost",
+                    "plan",
+                    "recurrentState",
+                    "cycle",
+                    "nextCycle",
+                    "price",
+                    "renewPrice",
+                    "limitUsedByName",
+                    "limitTypeByName"
+                ],
+                "title": "Информация о текущей подписки пользователя и ее лимитах"
+            }
+        }
+    }
+}

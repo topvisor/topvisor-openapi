@@ -1,0 +1,1232 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/I18n.Projects",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "I18n.Projects": {
+                "type": "object",
+                "properties": {
+                    "Add_project_title": {
+                        "const": "Add project",
+                        "readOnly": true
+                    },
+                    "Enter_project_name": {
+                        "const": "Enter project name",
+                        "readOnly": true
+                    },
+                    "Site": {
+                        "const": "Project URL",
+                        "readOnly": true
+                    },
+                    "Keywords": {
+                        "const": "Keywords",
+                        "readOnly": true
+                    },
+                    "Broker": {
+                        "const": "Bid manager",
+                        "readOnly": true
+                    },
+                    "Analytics": {
+                        "const": "Analytics and reports",
+                        "readOnly": true
+                    },
+                    "Add_project_url": {
+                        "const": "Enter website or webpage URL",
+                        "readOnly": true
+                    },
+                    "Del_project_title": {
+                        "const": "Delete project",
+                        "readOnly": true
+                    },
+                    "Del_project_question": {
+                        "const": "Are you sure you want to delete project",
+                        "readOnly": true
+                    },
+                    "Del_selected_projects_question": {
+                        "const": "Are you sure you want to delete the selected projects?",
+                        "readOnly": true
+                    },
+                    "Del_folder_question": {
+                        "const": "Are you sure you want to delete this project?<br><br>Projects will be moved to the root folder",
+                        "readOnly": true
+                    },
+                    "Check_positions": {
+                        "const": "Check Rankings",
+                        "readOnly": true
+                    },
+                    "Check_positions_with_filter": {
+                        "const": "Apply filter and check rankings (search engine / location / folder / group)",
+                        "readOnly": true
+                    },
+                    "domain_missed": {
+                        "const": "Domain not specified, check \"site\" parameter",
+                        "readOnly": true
+                    },
+                    "Incorrect_domain": {
+                        "const": "Invalid domain name",
+                        "readOnly": true
+                    },
+                    "owner_rights_error": {
+                        "const": "You can't change project owner access settings",
+                        "readOnly": true
+                    },
+                    "Edit_positions_notice_to_wait": {
+                        "const": "We are assigning project tasks, settings will be available within a minute",
+                        "readOnly": true
+                    },
+                    "Searcher_missed": {
+                        "const": "Search engine provider missed",
+                        "readOnly": true
+                    },
+                    "Searcher_exists": {
+                        "const": "This search engine already added to the project",
+                        "readOnly": true
+                    },
+                    "Region_exists": {
+                        "const": "Location with applied settings already added",
+                        "readOnly": true
+                    },
+                    "Region_not_available": {
+                        "const": "You can't add this location",
+                        "readOnly": true
+                    },
+                    "Project_not_available_for_Youtube": {
+                        "const": "Youtube rank tracking is not available for this project",
+                        "readOnly": true
+                    },
+                    "Searcher_not_found": {
+                        "const": "Search engine not found",
+                        "readOnly": true
+                    },
+                    "Delegating_impossible2": {
+                        "const": "You cannot give this user access to the project: currency in your accounts should be the same.\nAccount currency can be changed before the first payment with this instruction: https://topvisor.com/support/bank/currency/",
+                        "readOnly": true
+                    },
+                    "You_are_owner": {
+                        "const": "You are the project owner already",
+                        "readOnly": true
+                    },
+                    "Add_to_favorites": {
+                        "const": "Add to favorites",
+                        "readOnly": true
+                    },
+                    "User_not_exists": {
+                        "const": "This user doesn't exist",
+                        "readOnly": true
+                    },
+                    "ChangeOwner_message1": {
+                        "const": "You received full access to the project",
+                        "readOnly": true
+                    },
+                    "ChangeOwner_message2": {
+                        "const": "To accept project transfer and start working on it, click \"Accept project\".",
+                        "readOnly": true
+                    },
+                    "ChangeOwner_message3": {
+                        "const": "Accept project",
+                        "readOnly": true
+                    },
+                    "ChangeOwner_title": {
+                        "const": "Project transfer",
+                        "readOnly": true
+                    },
+                    "AcceptChangeOwner_msg1": {
+                        "const": "The project was delegated by the user who is no longer a project owner.",
+                        "readOnly": true
+                    },
+                    "AcceptChangeOwner_msg2": {
+                        "const": "You have become the project owner of",
+                        "readOnly": true
+                    },
+                    "Competitors_add": {
+                        "const": "Add competitors",
+                        "readOnly": true
+                    },
+                    "Competitors_add2": {
+                        "const": "Add competitors",
+                        "readOnly": true
+                    },
+                    "Competitors_price_1": {
+                        "const": "Keyword research cost",
+                        "readOnly": true
+                    },
+                    "Competitors_price_2": {
+                        "const": "$",
+                        "readOnly": true
+                    },
+                    "Competitor_site_missed": {
+                        "const": "Competitor site not specified",
+                        "readOnly": true
+                    },
+                    "Competitor_double": {
+                        "const": "Competitor already exists",
+                        "readOnly": true
+                    },
+                    "Competitor_Wrong_data": {
+                        "const": "Invalid data format",
+                        "readOnly": true
+                    },
+                    "Youtube_competitor_error": {
+                        "const": "Competitor must match youtube.com* wildcard",
+                        "readOnly": true
+                    },
+                    "Competitor_count_error": {
+                        "const": "You can't add more than 250 competitors",
+                        "readOnly": true
+                    },
+                    "Check_campaigns_acess_and_API_permission": {
+                        "const": "Check campaign access and API permission",
+                        "readOnly": true
+                    },
+                    "Sum_for_pay": {
+                        "const": "Project owner will be charged",
+                        "readOnly": true
+                    },
+                    "Visits_in_yandex": {
+                        "const": "Visits on Yandex",
+                        "readOnly": true
+                    },
+                    "Visits_in_google": {
+                        "const": "Visits on Google",
+                        "readOnly": true
+                    },
+                    "Visits_in_mail": {
+                        "const": "Visits on Mail.ru",
+                        "readOnly": true
+                    },
+                    "Info_cost": {
+                        "const": "You will be charged",
+                        "readOnly": true
+                    },
+                    "Last_update": {
+                        "const": "Last check",
+                        "readOnly": true
+                    },
+                    "Keywords_in_top": {
+                        "const": "TOP 10/11-30/30+",
+                        "readOnly": true
+                    },
+                    "Dynamics": {
+                        "const": "Dynamics",
+                        "readOnly": true
+                    },
+                    "Traffic": {
+                        "const": "Traffic in SE",
+                        "readOnly": true
+                    },
+                    "Indexed": {
+                        "const": "Index status",
+                        "readOnly": true
+                    },
+                    "Links": {
+                        "const": "Links",
+                        "readOnly": true
+                    },
+                    "Average_position": {
+                        "const": "Avg.pos.",
+                        "readOnly": true
+                    },
+                    "Visibility": {
+                        "const": "Vis-ty",
+                        "readOnly": true
+                    },
+                    "Register_domain": {
+                        "const": "Domain registration",
+                        "readOnly": true
+                    },
+                    "Archive_project": {
+                        "const": "Archive",
+                        "readOnly": true
+                    },
+                    "In_archive": {
+                        "const": "In archive",
+                        "readOnly": true
+                    },
+                    "Unarchive_project": {
+                        "const": "Restore",
+                        "readOnly": true
+                    },
+                    "Extend": {
+                        "const": "Renew",
+                        "readOnly": true
+                    },
+                    "Extend_domain": {
+                        "const": "Renew your domain",
+                        "readOnly": true
+                    },
+                    "Transfer_domain": {
+                        "const": "Transfer your domain",
+                        "readOnly": true
+                    },
+                    "Yandex_short": {
+                        "const": "Y:",
+                        "readOnly": true
+                    },
+                    "Yandex_SQI": {
+                        "const": "SQI",
+                        "readOnly": true
+                    },
+                    "No_tag": {
+                        "const": "Default tag",
+                        "readOnly": true
+                    },
+                    "Edit": {
+                        "const": "Edit",
+                        "readOnly": true
+                    },
+                    "My_projects": {
+                        "const": "My projects",
+                        "readOnly": true
+                    },
+                    "Scheduled_update": {
+                        "const": "Scheduled update",
+                        "readOnly": true
+                    },
+                    "Manual_update": {
+                        "const": "Manual update",
+                        "readOnly": true
+                    },
+                    "Guest_projects": {
+                        "const": "Guest projects",
+                        "readOnly": true
+                    },
+                    "Guest_my_projects": {
+                        "const": "My and guest projects",
+                        "readOnly": true
+                    },
+                    "Archived_projects": {
+                        "const": "Archived projects",
+                        "readOnly": true
+                    },
+                    "Add_project": {
+                        "const": "Add project",
+                        "readOnly": true
+                    },
+                    "Current_registrar": {
+                        "const": "Current registrar",
+                        "readOnly": true
+                    },
+                    "Info_archived": {
+                        "const": "You are going to archive your project. Archived projects are suspended and unavailable.",
+                        "readOnly": true
+                    },
+                    "Info_archived_html": {
+                        "const": "You are going to archive the <i class=\"one\">project</i><i class=\"several\">selected projects</i>. Archived projects are suspended and unavailable.",
+                        "readOnly": true
+                    },
+                    "Accept_unarchive": {
+                        "const": "Do you really want to restore this project from the archive?",
+                        "readOnly": true
+                    },
+                    "Info_unarchive_html": {
+                        "const": "Do you really want to restore the <i class=\"one\">project</i><i class=\"several\">selected projects</i>?",
+                        "readOnly": true
+                    },
+                    "Archive": {
+                        "const": "Archive",
+                        "readOnly": true
+                    },
+                    "Unarchive": {
+                        "const": "Restore",
+                        "readOnly": true
+                    },
+                    "Info_bulk_update": {
+                        "const": "Check Rankings",
+                        "readOnly": true
+                    },
+                    "Bulk_update": {
+                        "const": "Check Rankings",
+                        "readOnly": true
+                    },
+                    "No_bulk_update_projects": {
+                        "const": "There are no projects available for bulk update",
+                        "readOnly": true
+                    },
+                    "Registration_date": {
+                        "const": "Registered",
+                        "readOnly": true
+                    },
+                    "Domain_valid_until": {
+                        "const": "Domain expires",
+                        "readOnly": true
+                    },
+                    "Deleted_date": {
+                        "const": "Deleted",
+                        "readOnly": true
+                    },
+                    "Domain_extended_time": {
+                        "const": "Domain to renew after",
+                        "readOnly": true
+                    },
+                    "Extend_current_cost": {
+                        "const": "Your<br>domain renewal costs",
+                        "readOnly": true
+                    },
+                    "Extend_axelname": {
+                        "const": "Renew your domain with <br> ",
+                        "readOnly": true
+                    },
+                    "Update_tpa": {
+                        "const": "Update the key",
+                        "readOnly": true
+                    },
+                    "Copy_with_settings": {
+                        "const": "Copy project and main settings",
+                        "readOnly": true
+                    },
+                    "Copy_keywords": {
+                        "const": "Copy keywords",
+                        "readOnly": true
+                    },
+                    "Copy_dynamics": {
+                        "const": "Copy keyword ranking history",
+                        "readOnly": true
+                    },
+                    "Copy": {
+                        "const": "Copy",
+                        "readOnly": true
+                    },
+                    "A_copy": {
+                        "const": "Copy",
+                        "readOnly": true
+                    },
+                    "Copy_project": {
+                        "const": "Copy project",
+                        "readOnly": true
+                    },
+                    "Report_on_weekdays": {
+                        "const": "On days of week",
+                        "readOnly": true
+                    },
+                    "Report_custom_frequency": {
+                        "const": "Custom frequency",
+                        "readOnly": true
+                    },
+                    "Send_competitor_report": {
+                        "const": "Send competition report",
+                        "readOnly": true
+                    },
+                    "Report_format": {
+                        "const": "Report format",
+                        "readOnly": true
+                    },
+                    "Send_test_report": {
+                        "const": "Test report",
+                        "readOnly": true
+                    },
+                    "Test_report_sent_email": {
+                        "const": "Test report has been successfully sent to your email",
+                        "readOnly": true
+                    },
+                    "Test_report_sent": {
+                        "const": "Test report successfully sent",
+                        "readOnly": true
+                    },
+                    "Access_add_user": {
+                        "const": "Add user",
+                        "readOnly": true
+                    },
+                    "company_logo": {
+                        "const": "company logo",
+                        "readOnly": true
+                    },
+                    "Settings_no_automated_update_if_manual": {
+                        "const": "Do not run scheduled update if rankings were checked on demand less than 12 hours ago",
+                        "readOnly": true
+                    },
+                    "Settings_particular_days": {
+                        "const": "On dates",
+                        "readOnly": true
+                    },
+                    "After_updates": {
+                        "const": "After Yandex updates",
+                        "readOnly": true
+                    },
+                    "After_update": {
+                        "const": "After Yandex update",
+                        "readOnly": true
+                    },
+                    "immediately": {
+                        "const": "immediately",
+                        "readOnly": true
+                    },
+                    "in_hour": {
+                        "const": "in %hour% h.",
+                        "readOnly": true
+                    },
+                    "Settings_on_demand": {
+                        "const": "On demand",
+                        "readOnly": true
+                    },
+                    "Advanced_options": {
+                        "const": "Tool settings",
+                        "readOnly": true
+                    },
+                    "Do_not_collect": {
+                        "const": "Do not collect",
+                        "readOnly": true
+                    },
+                    "Collect": {
+                        "const": "Collect",
+                        "readOnly": true
+                    },
+                    "Subdomains": {
+                        "const": "Subdomains",
+                        "readOnly": true
+                    },
+                    "Subdomains_do_not_check": {
+                        "const": "Do not check",
+                        "readOnly": true
+                    },
+                    "Subdomains_check": {
+                        "const": "Check",
+                        "readOnly": true
+                    },
+                    "Search_filter": {
+                        "const": "Search filter",
+                        "readOnly": true
+                    },
+                    "Do_not_filter": {
+                        "const": "Do not filter",
+                        "readOnly": true
+                    },
+                    "Moderate_filtering": {
+                        "const": "Moderate",
+                        "readOnly": true
+                    },
+                    "Family_search": {
+                        "const": "Family search",
+                        "readOnly": true
+                    },
+                    "Spelling": {
+                        "const": "Spelling",
+                        "readOnly": true
+                    },
+                    "Do_not_correct_spelling": {
+                        "const": "Do not correct",
+                        "readOnly": true
+                    },
+                    "Correct_spelling": {
+                        "const": "Correct",
+                        "readOnly": true
+                    },
+                    "Traffic_segmentation": {
+                        "const": "Traffic segmentation",
+                        "readOnly": true
+                    },
+                    "Local_traffic": {
+                        "const": "By region",
+                        "readOnly": true
+                    },
+                    "Global_traffic": {
+                        "const": "Global",
+                        "readOnly": true
+                    },
+                    "Select_se": {
+                        "const": "Pick search engine",
+                        "readOnly": true
+                    },
+                    "Integrate_denied": {
+                        "const": "Denied",
+                        "readOnly": true
+                    },
+                    "Integrate_account_locked": {
+                        "const": "You seem to be logged out of your account",
+                        "readOnly": true
+                    },
+                    "Schedule": {
+                        "const": "Schedule",
+                        "readOnly": true
+                    },
+                    "Competitors": {
+                        "const": "Competitors",
+                        "readOnly": true
+                    },
+                    "of_competitors": {
+                        "const": "competitors",
+                        "readOnly": true
+                    },
+                    "Access": {
+                        "const": "Access",
+                        "readOnly": true
+                    },
+                    "Project_archived_notice": {
+                        "const": "Project is archived, access to features is limited.",
+                        "readOnly": true
+                    },
+                    "Project_archived_90days_notice": {
+                        "const": "Projects inactive during 180 days are archived automatically",
+                        "readOnly": true
+                    },
+                    "Projects_archived": {
+                        "const": "Projects are archived",
+                        "readOnly": true
+                    },
+                    "Popular": {
+                        "const": "Popular",
+                        "readOnly": true
+                    },
+                    "Other": {
+                        "const": "Other",
+                        "readOnly": true
+                    },
+                    "Select_project": {
+                        "const": "Select project",
+                        "readOnly": true
+                    },
+                    "List_of_projects": {
+                        "const": "List of projects",
+                        "readOnly": true
+                    },
+                    "To_list_of_projects": {
+                        "const": "List of projects",
+                        "readOnly": true
+                    },
+                    "Search_projects": {
+                        "const": "Search projects",
+                        "readOnly": true
+                    },
+                    "Delegation": {
+                        "const": "Project transfer",
+                        "readOnly": true
+                    },
+                    "Activate_deactivate_competitors": {
+                        "const": "Enable/Disable all competitors",
+                        "readOnly": true
+                    },
+                    "Wipe_all_competitors": {
+                        "const": "Are you sure you want to wipe all competitors?",
+                        "readOnly": true
+                    },
+                    "Wipe_competitors_note": {
+                        "const": "Wipe competitors",
+                        "readOnly": true
+                    },
+                    "Reporting_period": {
+                        "const": "Reporting period",
+                        "readOnly": true
+                    },
+                    "Do_not_ask": {
+                        "const": "Do not ask me again",
+                        "readOnly": true
+                    },
+                    "To_accept_project_click_msg": {
+                        "const": "To accept a project <b>%project_name%</b> transfer, click the message",
+                        "readOnly": true
+                    },
+                    "Reports_send_to_address": {
+                        "const": "Send to",
+                        "readOnly": true
+                    },
+                    "Checks": {
+                        "const": "Tools",
+                        "readOnly": true
+                    },
+                    "Reports": {
+                        "const": "Reports",
+                        "readOnly": true
+                    },
+                    "Access_to_project": {
+                        "const": "Share project",
+                        "readOnly": true
+                    },
+                    "Transfer_project": {
+                        "const": "Transfer project",
+                        "readOnly": true
+                    },
+                    "Do_not_brand": {
+                        "const": "Do not apply branding",
+                        "readOnly": true
+                    },
+                    "Show_account_balance": {
+                        "const": "Show your account balance",
+                        "readOnly": true
+                    },
+                    "To_previous_step": {
+                        "const": "Previous step",
+                        "readOnly": true
+                    },
+                    "Next": {
+                        "const": "Next",
+                        "readOnly": true
+                    },
+                    "Keyword_import": {
+                        "const": "Keyword import",
+                        "readOnly": true
+                    },
+                    "Competitor_settings": {
+                        "const": "Set competitors",
+                        "readOnly": true
+                    },
+                    "Se_and_locations": {
+                        "const": "Search engines and locations",
+                        "readOnly": true
+                    },
+                    "Completed": {
+                        "const": "Completed",
+                        "readOnly": true
+                    },
+                    "Track_rankings": {
+                        "const": "Track rankings",
+                        "readOnly": true
+                    },
+                    "Start_audit": {
+                        "const": "Start site audit",
+                        "readOnly": true
+                    },
+                    "Start_watcher": {
+                        "const": "Start watcher",
+                        "readOnly": true
+                    },
+                    "Start_indexing": {
+                        "const": "Start indexing",
+                        "readOnly": true
+                    },
+                    "Start_sitemap": {
+                        "const": "Sitemap generator",
+                        "readOnly": true
+                    },
+                    "Main_settings": {
+                        "const": "Main settings",
+                        "readOnly": true
+                    },
+                    "Create_project": {
+                        "const": "Add project",
+                        "readOnly": true
+                    },
+                    "Select_type_add_name_url": {
+                        "const": "Select a project type, add a URL and a name",
+                        "readOnly": true
+                    },
+                    "Enter_youtube_URL": {
+                        "const": "Enter the URL of a channel (youtube.com/@user) or a video (youtube.com/watch?v=...)",
+                        "readOnly": true
+                    },
+                    "Enter_app_URL": {
+                        "const": "Enter app URL",
+                        "readOnly": true
+                    },
+                    "Enter_domain_or_page": {
+                        "const": "Enter domain (example.com) or page URL (example.com/page/)",
+                        "readOnly": true
+                    },
+                    "Site_or_page": {
+                        "const": "Site or webpage",
+                        "readOnly": true
+                    },
+                    "Add_project_name": {
+                        "const": "Enter project name",
+                        "readOnly": true
+                    },
+                    "Created_date": {
+                        "const": "Created",
+                        "readOnly": true
+                    },
+                    "Project_owner": {
+                        "const": "Project owner",
+                        "readOnly": true
+                    },
+                    "Add_keywords": {
+                        "const": "Add keywords",
+                        "readOnly": true
+                    },
+                    "Add_keywords_button": {
+                        "const": "Add keywords",
+                        "readOnly": true
+                    },
+                    "Keywords_for_import": {
+                        "const": "Keywords",
+                        "readOnly": true
+                    },
+                    "Enter_keywords_one_per_line": {
+                        "const": "Enter keywords, one per line",
+                        "readOnly": true
+                    },
+                    "Recommended_keywords": {
+                        "const": "Keyword ideas",
+                        "readOnly": true
+                    },
+                    "Add_selected": {
+                        "const": "Add selected",
+                        "readOnly": true
+                    },
+                    "Added_keywords": {
+                        "const": "Added keywords",
+                        "readOnly": true
+                    },
+                    "Group_manage_tags_on_page": {
+                        "const": "Group and manage tags at",
+                        "readOnly": true
+                    },
+                    "see": {
+                        "const": "see",
+                        "readOnly": true
+                    },
+                    "Add_competitors": {
+                        "const": "Add competitors",
+                        "readOnly": true
+                    },
+                    "My_competitors": {
+                        "const": "My competitors",
+                        "readOnly": true
+                    },
+                    "Competitor_URL": {
+                        "const": "Competitor URL",
+                        "readOnly": true
+                    },
+                    "Competitor_name": {
+                        "const": "Competitor name",
+                        "readOnly": true
+                    },
+                    "Find_competitors": {
+                        "const": "Find competitors",
+                        "readOnly": true
+                    },
+                    "Suggested_competitors": {
+                        "const": "Suggested competitors",
+                        "readOnly": true
+                    },
+                    "Get_search_volume": {
+                        "const": "Check search volume",
+                        "readOnly": true
+                    },
+                    "Check_keyword_rankings": {
+                        "const": "Check keyword rankings",
+                        "readOnly": true
+                    },
+                    "Project_setup_completed": {
+                        "const": "Project setup completed",
+                        "readOnly": true
+                    },
+                    "Add_search_engines_and_locations": {
+                        "const": "Add search engines and locations",
+                        "readOnly": true
+                    },
+                    "Select_search_engine": {
+                        "const": "Select search engine",
+                        "readOnly": true
+                    },
+                    "Press_search_engine_icon_to_add_location": {
+                        "const": "Press a search engine icon and add a location",
+                        "readOnly": true
+                    },
+                    "You_can_manage_locations_in_settings": {
+                        "const": "You can manage added locations in project settings",
+                        "readOnly": true
+                    },
+                    "Enter_location_or_lr": {
+                        "const": "Enter Location or its Yandex code",
+                        "readOnly": true
+                    },
+                    "Locations": {
+                        "const": "Locations",
+                        "readOnly": true
+                    },
+                    "Skip_wizard": {
+                        "const": "Do not run setup wizard",
+                        "readOnly": true
+                    },
+                    "Setup_rank_tracker": {
+                        "const": "Set up Rank Tracker",
+                        "readOnly": true
+                    },
+                    "Setup_audit": {
+                        "const": "Set up Website Audit",
+                        "readOnly": true
+                    },
+                    "Setup_audit_urls": {
+                        "const": "Pages for audit",
+                        "readOnly": true
+                    },
+                    "Setup_watcher": {
+                        "const": "Set up Watcher",
+                        "readOnly": true
+                    },
+                    "Setup_watcher_urls": {
+                        "const": "Pages for watcher",
+                        "readOnly": true
+                    },
+                    "Setup_indexing": {
+                        "const": "Set up Index Checker",
+                        "readOnly": true
+                    },
+                    "Setup_indexing_urls": {
+                        "const": "Pages for indexing",
+                        "readOnly": true
+                    },
+                    "Setup_sitemap": {
+                        "const": "Set up Sitemap Generator",
+                        "readOnly": true
+                    },
+                    "Add_all_recommended": {
+                        "const": "Add all recommended",
+                        "readOnly": true
+                    },
+                    "Delete_keywords_from_orginal_project": {
+                        "const": "Delete keywords from the orginal project",
+                        "readOnly": true
+                    },
+                    "Project_name": {
+                        "const": "Name",
+                        "readOnly": true
+                    },
+                    "Project_projects_selected": {
+                        "const": "Selected",
+                        "readOnly": true
+                    },
+                    "Create_your_first_project": {
+                        "const": "Create your first project",
+                        "readOnly": true
+                    },
+                    "Topvisor_general_info_tip": {
+                        "const": "9 tools for SEO and marketing.<br>Check keyword rankings, research keywords, track changes to webpages and much more.",
+                        "readOnly": true
+                    },
+                    "No_projects_match_filter": {
+                        "const": "No projects match filter",
+                        "readOnly": true
+                    },
+                    "Enter_folder_name": {
+                        "const": "Enter folder name",
+                        "readOnly": true
+                    },
+                    "Add_keywords_se_locations_to_check_notice": {
+                        "const": "No tasks found. Add keywords, a search engine and a location in the project settings",
+                        "readOnly": true
+                    },
+                    "Summary_by_location": {
+                        "const": "Summary by location",
+                        "readOnly": true
+                    },
+                    "Project_type": {
+                        "const": "Project type",
+                        "readOnly": true
+                    },
+                    "Project_folder": {
+                        "const": "Project folder",
+                        "readOnly": true
+                    },
+                    "Selected_project_type": {
+                        "const": "Selected project type",
+                        "readOnly": true
+                    },
+                    "Cost_for_guest_project_owner": {
+                        "const": "Project owner will be charged",
+                        "readOnly": true
+                    },
+                    "Move_to_folder": {
+                        "const": "Move to folder",
+                        "readOnly": true
+                    },
+                    "Move": {
+                        "const": "Move",
+                        "readOnly": true
+                    },
+                    "Open_in_new_tab": {
+                        "const": "Open in new tab",
+                        "readOnly": true
+                    },
+                    "In_queue": {
+                        "const": "In queue",
+                        "readOnly": true
+                    },
+                    "In_progress": {
+                        "const": "In progress",
+                        "readOnly": true
+                    },
+                    "URL_count": {
+                        "const": "Number of URLs",
+                        "readOnly": true
+                    },
+                    "Username": {
+                        "const": "Username",
+                        "readOnly": true
+                    },
+                    "Spent": {
+                        "const": "Spent",
+                        "readOnly": true
+                    },
+                    "Spend_limit": {
+                        "const": "Spend limit",
+                        "readOnly": true
+                    },
+                    "Change_url_no_available": {
+                        "const": "The project URL must match the previously configured site\nThe URL cannot be changed to an address leading to another resource.",
+                        "readOnly": true
+                    },
+                    "Create_folder": {
+                        "const": "Create folder",
+                        "readOnly": true
+                    },
+                    "Sort_by_search_engine": {
+                        "const": "By search engine",
+                        "readOnly": true
+                    },
+                    "Sort_by_yande_region_code": {
+                        "const": "By Yandex region code (lr)",
+                        "readOnly": true
+                    },
+                    "Sort_by_lphabetically": {
+                        "const": "Alphabetically",
+                        "readOnly": true
+                    },
+                    "Project_url": {
+                        "const": "Project URL",
+                        "readOnly": true
+                    },
+                    "Enter_location": {
+                        "const": "Enter location",
+                        "readOnly": true
+                    }
+                },
+                "required": [
+                    "Add_project_title",
+                    "Enter_project_name",
+                    "Site",
+                    "Keywords",
+                    "Broker",
+                    "Analytics",
+                    "Add_project_url",
+                    "Del_project_title",
+                    "Del_project_question",
+                    "Del_selected_projects_question",
+                    "Del_folder_question",
+                    "Check_positions",
+                    "Check_positions_with_filter",
+                    "domain_missed",
+                    "Incorrect_domain",
+                    "owner_rights_error",
+                    "Edit_positions_notice_to_wait",
+                    "Searcher_missed",
+                    "Searcher_exists",
+                    "Region_exists",
+                    "Region_not_available",
+                    "Project_not_available_for_Youtube",
+                    "Searcher_not_found",
+                    "You_are_owner",
+                    "Add_to_favorites",
+                    "User_not_exists",
+                    "ChangeOwner_message1",
+                    "ChangeOwner_message2",
+                    "ChangeOwner_message3",
+                    "ChangeOwner_title",
+                    "AcceptChangeOwner_msg1",
+                    "AcceptChangeOwner_msg2",
+                    "Competitors_add",
+                    "Competitors_add2",
+                    "Competitors_price_1",
+                    "Competitors_price_2",
+                    "Competitor_site_missed",
+                    "Competitor_double",
+                    "Competitor_Wrong_data",
+                    "Youtube_competitor_error",
+                    "Competitor_count_error",
+                    "Check_campaigns_acess_and_API_permission",
+                    "Sum_for_pay",
+                    "Visits_in_yandex",
+                    "Visits_in_google",
+                    "Visits_in_mail",
+                    "Info_cost",
+                    "Last_update",
+                    "Keywords_in_top",
+                    "Dynamics",
+                    "Traffic",
+                    "Indexed",
+                    "Links",
+                    "Average_position",
+                    "Visibility",
+                    "Register_domain",
+                    "Archive_project",
+                    "In_archive",
+                    "Unarchive_project",
+                    "Extend",
+                    "Extend_domain",
+                    "Transfer_domain",
+                    "Yandex_short",
+                    "Yandex_SQI",
+                    "No_tag",
+                    "Edit",
+                    "My_projects",
+                    "Scheduled_update",
+                    "Manual_update",
+                    "Guest_projects",
+                    "Guest_my_projects",
+                    "Archived_projects",
+                    "Add_project",
+                    "Current_registrar",
+                    "Info_archived",
+                    "Info_archived_html",
+                    "Accept_unarchive",
+                    "Info_unarchive_html",
+                    "Archive",
+                    "Unarchive",
+                    "Info_bulk_update",
+                    "Bulk_update",
+                    "No_bulk_update_projects",
+                    "Registration_date",
+                    "Domain_valid_until",
+                    "Deleted_date",
+                    "Domain_extended_time",
+                    "Extend_current_cost",
+                    "Extend_axelname",
+                    "Update_tpa",
+                    "Copy_with_settings",
+                    "Copy_keywords",
+                    "Copy_dynamics",
+                    "Copy",
+                    "A_copy",
+                    "Copy_project",
+                    "Report_on_weekdays",
+                    "Report_custom_frequency",
+                    "Send_competitor_report",
+                    "Report_format",
+                    "Send_test_report",
+                    "Test_report_sent_email",
+                    "Test_report_sent",
+                    "Access_add_user",
+                    "company_logo",
+                    "Settings_no_automated_update_if_manual",
+                    "Settings_particular_days",
+                    "After_updates",
+                    "After_update",
+                    "immediately",
+                    "in_hour",
+                    "Settings_on_demand",
+                    "Advanced_options",
+                    "Do_not_collect",
+                    "Collect",
+                    "Subdomains",
+                    "Subdomains_do_not_check",
+                    "Subdomains_check",
+                    "Search_filter",
+                    "Do_not_filter",
+                    "Moderate_filtering",
+                    "Family_search",
+                    "Spelling",
+                    "Do_not_correct_spelling",
+                    "Correct_spelling",
+                    "Traffic_segmentation",
+                    "Local_traffic",
+                    "Global_traffic",
+                    "Select_se",
+                    "Integrate_denied",
+                    "Integrate_account_locked",
+                    "Schedule",
+                    "Competitors",
+                    "of_competitors",
+                    "Access",
+                    "Project_archived_notice",
+                    "Project_archived_90days_notice",
+                    "Projects_archived",
+                    "Popular",
+                    "Other",
+                    "Select_project",
+                    "List_of_projects",
+                    "To_list_of_projects",
+                    "Search_projects",
+                    "Delegation",
+                    "Activate_deactivate_competitors",
+                    "Wipe_all_competitors",
+                    "Wipe_competitors_note",
+                    "Reporting_period",
+                    "Do_not_ask",
+                    "To_accept_project_click_msg",
+                    "Reports_send_to_address",
+                    "Checks",
+                    "Reports",
+                    "Access_to_project",
+                    "Transfer_project",
+                    "Do_not_brand",
+                    "Show_account_balance",
+                    "To_previous_step",
+                    "Next",
+                    "Keyword_import",
+                    "Competitor_settings",
+                    "Se_and_locations",
+                    "Completed",
+                    "Track_rankings",
+                    "Start_audit",
+                    "Start_watcher",
+                    "Start_indexing",
+                    "Start_sitemap",
+                    "Main_settings",
+                    "Create_project",
+                    "Select_type_add_name_url",
+                    "Enter_youtube_URL",
+                    "Enter_app_URL",
+                    "Enter_domain_or_page",
+                    "Site_or_page",
+                    "Add_project_name",
+                    "Created_date",
+                    "Project_owner",
+                    "Add_keywords",
+                    "Add_keywords_button",
+                    "Keywords_for_import",
+                    "Enter_keywords_one_per_line",
+                    "Recommended_keywords",
+                    "Add_selected",
+                    "Added_keywords",
+                    "Group_manage_tags_on_page",
+                    "see",
+                    "Add_competitors",
+                    "My_competitors",
+                    "Competitor_URL",
+                    "Competitor_name",
+                    "Find_competitors",
+                    "Suggested_competitors",
+                    "Get_search_volume",
+                    "Check_keyword_rankings",
+                    "Project_setup_completed",
+                    "Add_search_engines_and_locations",
+                    "Select_search_engine",
+                    "Press_search_engine_icon_to_add_location",
+                    "You_can_manage_locations_in_settings",
+                    "Enter_location_or_lr",
+                    "Locations",
+                    "Skip_wizard",
+                    "Setup_rank_tracker",
+                    "Setup_audit",
+                    "Setup_audit_urls",
+                    "Setup_watcher",
+                    "Setup_watcher_urls",
+                    "Setup_indexing",
+                    "Setup_indexing_urls",
+                    "Setup_sitemap",
+                    "Add_all_recommended",
+                    "Delete_keywords_from_orginal_project",
+                    "Project_name",
+                    "Project_projects_selected",
+                    "Create_your_first_project",
+                    "No_projects_match_filter",
+                    "Enter_folder_name",
+                    "Add_keywords_se_locations_to_check_notice",
+                    "Summary_by_location",
+                    "Project_type",
+                    "Project_folder",
+                    "Selected_project_type",
+                    "Cost_for_guest_project_owner",
+                    "Move_to_folder",
+                    "Move",
+                    "Open_in_new_tab",
+                    "In_queue",
+                    "In_progress",
+                    "URL_count",
+                    "Username",
+                    "Spent",
+                    "Spend_limit",
+                    "Change_url_no_available",
+                    "Create_folder",
+                    "Sort_by_search_engine",
+                    "Sort_by_yande_region_code",
+                    "Sort_by_lphabetically",
+                    "Project_url",
+                    "Enter_location"
+                ]
+            }
+        }
+    }
+}

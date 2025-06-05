@@ -1,0 +1,74 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Positions_2.Methods.Checker.Go.Edit",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Positions_2.Methods.Checker.Go.Edit": {
+                "type": "object",
+                "properties": {
+                    "debug": {
+                        "title": "Запуск в режиме отладки\n\nТолько для админов",
+                        "description": "@private",
+                        "type": "boolean"
+                    },
+                    "regions_indexes": {
+                        "title": "Проверка с учетом фильтра по регионам",
+                        "nullable": true,
+                        "allOf": [
+                            {
+                                "$ref": "../../../../TV/API/Types/IntArray.json#/components/schemas/TV.API.Types.IntArray"
+                            }
+                        ]
+                    },
+                    "folders_ids": {
+                        "title": "Проверка с учетом фильтра по папкам",
+                        "nullable": true,
+                        "allOf": [
+                            {
+                                "$ref": "../../../../TV/API/Types/IntArray.json#/components/schemas/TV.API.Types.IntArray"
+                            }
+                        ]
+                    },
+                    "folders_ids_depth": {
+                        "title": "При фильтрации по ID папок также проверять в подпапках",
+                        "description": "@type bool",
+                        "type": "boolean"
+                    },
+                    "groups_ids": {
+                        "title": "Проверка с учетом фильтра по группам (сочетается с фильтром folders_ids по логике И)",
+                        "nullable": true,
+                        "allOf": [
+                            {
+                                "$ref": "../../../../TV/API/Types/IntArray.json#/components/schemas/TV.API.Types.IntArray"
+                            }
+                        ]
+                    },
+                    "do_snapshots": {
+                        "title": "Глубина проверки снимка (перекрывает аналогичное значение в настройках проекта)\n\n9 - означет глубину 10\n\nenum(0, 2, 3, 5, 9)\n\nTODO: сдлеать enum",
+                        "nullable": true,
+                        "type": "integer"
+                    },
+                    "keyword_id": {
+                        "title": "Проверка одного запроса\n\n- не допускается при массовой проверке проектов\n- требует указания одного `regions_indexes`\n- не допускается совместное использование с `folders_ids`, `groups_ids` и `do_snapshots`",
+                        "nullable": true,
+                        "type": "integer"
+                    },
+                    "filters": {
+                        "$ref": "../../../../TV/API/Params/FiltersTrait.json#/components/schemas/TV.API.Params.FiltersTrait/properties/filters"
+                    },
+                    "id": {
+                        "$ref": "../../../../TV/API/Params/FiltersTrait.json#/components/schemas/TV.API.Params.FiltersTrait/properties/id"
+                    }
+                },
+                "required": [
+                    "filters"
+                ],
+                "title": "Отправка проектов на проверку позиций"
+            }
+        }
+    }
+}

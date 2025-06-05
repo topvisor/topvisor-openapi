@@ -1,0 +1,1477 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/I18n.Bank",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "I18n.Bank": {
+                "type": "object",
+                "properties": {
+                    "Plus": {
+                        "const": "Credit",
+                        "readOnly": true
+                    },
+                    "Minus": {
+                        "const": "Expenses",
+                        "readOnly": true
+                    },
+                    "Payment": {
+                        "const": "Payment",
+                        "readOnly": true
+                    },
+                    "Incorrect_sum": {
+                        "const": "Incorrect sum!",
+                        "readOnly": true
+                    },
+                    "Not_enough_balance": {
+                        "const": "Insufficient balance in your account!",
+                        "readOnly": true
+                    },
+                    "Not_enough_owner_balance_short": {
+                        "const": "The project owner has insufficient funds to complete the task",
+                        "readOnly": true
+                    },
+                    "Not_enough_owner_balance": {
+                        "const": "The project owner has insufficient funds to complete the task. Contact the owner of the project ",
+                        "readOnly": true
+                    },
+                    "Not_enough_owner_balance2": {
+                        "const": " and ask them to top up their balance.",
+                        "readOnly": true
+                    },
+                    "Not_enough_balance_limit": {
+                        "const": "You used up the limit on checks the project's owner gave you. Contact the owner via ",
+                        "readOnly": true
+                    },
+                    "Not_enough_balance_limit2": {
+                        "const": " if you need to raise the limit",
+                        "readOnly": true
+                    },
+                    "Refill_balance": {
+                        "const": "Top up balance",
+                        "readOnly": true
+                    },
+                    "Bonus_refill": {
+                        "const": "Bonus for balance top-up",
+                        "readOnly": true
+                    },
+                    "Mail_address": {
+                        "const": "Address",
+                        "readOnly": true
+                    },
+                    "Basis1": {
+                        "const": "Certificates",
+                        "readOnly": true
+                    },
+                    "Basis2": {
+                        "const": "Powers of attorney",
+                        "readOnly": true
+                    },
+                    "Basis3": {
+                        "const": "Management contract",
+                        "readOnly": true
+                    },
+                    "Ref_action": {
+                        "const": "Transaction from the affiliate account to the system account",
+                        "readOnly": true
+                    },
+                    "bonuses": {
+                        "const": "bonus",
+                        "readOnly": true
+                    },
+                    "public_offer": {
+                        "const": "public offer",
+                        "readOnly": true
+                    },
+                    "by_public_offer": {
+                        "const": "under public offer",
+                        "readOnly": true
+                    },
+                    "dogovor": {
+                        "const": "contract",
+                        "readOnly": true
+                    },
+                    "by_dogovor": {
+                        "const": "under agreement",
+                        "readOnly": true
+                    },
+                    "Info_bonus": {
+                        "const": "Topvisor bonus credit",
+                        "readOnly": true
+                    },
+                    "Info_system_cash": {
+                        "const": "Topvisor bonus credit",
+                        "readOnly": true
+                    },
+                    "Info_system_withdrawal": {
+                        "const": "Withdrawal to system account",
+                        "readOnly": true
+                    },
+                    "Refund_by_invoice": {
+                        "const": "Refund by invoice",
+                        "readOnly": true
+                    },
+                    "Return_to_payment": {
+                        "const": "Back to payment methods",
+                        "readOnly": true
+                    },
+                    "Payment_processed": {
+                        "const": "Your payment has been processed successfully. <br> Thank you for choosing our tools",
+                        "readOnly": true
+                    },
+                    "Payment_unsuccessful": {
+                        "const": "Sorry, payment failed.<br>Please, try another payment method or contact Customer Support.",
+                        "readOnly": true
+                    },
+                    "Bonuses": {
+                        "const": "Bonus account",
+                        "readOnly": true
+                    },
+                    "Comment": {
+                        "const": "Description",
+                        "readOnly": true
+                    },
+                    "Operation": {
+                        "const": "Operation",
+                        "readOnly": true
+                    },
+                    "Pay": {
+                        "const": "Pay",
+                        "readOnly": true
+                    },
+                    "Total_to_pay": {
+                        "const": "Total",
+                        "readOnly": true
+                    },
+                    "Referral_link": {
+                        "const": "Affiliate link",
+                        "readOnly": true
+                    },
+                    "Your_referrals": {
+                        "const": "Referrals",
+                        "readOnly": true
+                    },
+                    "Referrals_registered": {
+                        "const": "Registered",
+                        "readOnly": true
+                    },
+                    "Referrals_turnover": {
+                        "const": "Turnover",
+                        "readOnly": true
+                    },
+                    "Referrals_last_payment": {
+                        "const": "Last payment",
+                        "readOnly": true
+                    },
+                    "Income": {
+                        "const": "Income",
+                        "readOnly": true
+                    },
+                    "Set_period": {
+                        "const": "Select period",
+                        "readOnly": true
+                    },
+                    "Referrals_bonus": {
+                        "const": "We have a bonus for you!",
+                        "readOnly": true
+                    },
+                    "Referrals_bonus_info": {
+                        "const": "We'll gift social media referrals extra 200 free ranking updates!",
+                        "readOnly": true
+                    },
+                    "Share": {
+                        "const": "Share",
+                        "readOnly": true
+                    },
+                    "Referrals_attach_email": {
+                        "const": "This address will be linked to your account as an affiliate address",
+                        "readOnly": true
+                    },
+                    "Referrals_share": {
+                        "const": "Share on social media",
+                        "readOnly": true
+                    },
+                    "Referrals_send_email_invite": {
+                        "const": "Send invitation",
+                        "readOnly": true
+                    },
+                    "Referrals_invitation_sent": {
+                        "const": "We have sent invitation email to",
+                        "readOnly": true
+                    },
+                    "Referrals_stats": {
+                        "const": "Stats",
+                        "readOnly": true
+                    },
+                    "Referrals_level": {
+                        "const": "Referee level",
+                        "readOnly": true
+                    },
+                    "Referrals_you_earned": {
+                        "const": "You earned",
+                        "readOnly": true
+                    },
+                    "Referrals_withdraw_to_balance": {
+                        "const": "To balance",
+                        "readOnly": true
+                    },
+                    "Referrals_withdraw": {
+                        "const": "Withdraw",
+                        "readOnly": true
+                    },
+                    "Referrals_transfer": {
+                        "const": "Transfer",
+                        "readOnly": true
+                    },
+                    "Referrals_confirm_funds_transfer_to_bonus_account_notice": {
+                        "const": "Your earnings will be transferred to the bonus balance, you will not be able to withdraw it later.<br><br>\n\tDo you want to continue?",
+                        "readOnly": true
+                    },
+                    "Referrals_levels_description_title": {
+                        "const": "Referrals get levels that depend on the total amount paid. There are no limits on Referrals' levels or\n\tthe reward amount a Partner can get. But the reward accrues only during two years after Referral registration date.<br><br>\n\tA Partner gets a reward each time a Referral reaches a new level on the Affiliate program. A reward is 100 rubles for the 1st\n\tlevel and 10% of the new payments by a Referral for the next levels.",
+                        "readOnly": true
+                    },
+                    "Referrals_download_invoice_act": {
+                        "const": "Download invoice and act",
+                        "readOnly": true
+                    },
+                    "Referrals_withdrawal_available_from_amount_notice": {
+                        "const": "You can withdraw the amount from 5 000 rubles",
+                        "readOnly": true
+                    },
+                    "Referrals_link_to_EDF_setup_instruction": {
+                        "const": "What is EDF, how can I use it?",
+                        "readOnly": true
+                    },
+                    "Referrals_send_documents_to_get_payout_comment": {
+                        "const": "Send downloaded documents to Topvisor Co., Ltd (Tax ID 4726000897) via e-document workflow. We will make a payout within a working day.",
+                        "readOnly": true
+                    },
+                    "Referrals_visits": {
+                        "const": "Visits",
+                        "readOnly": true
+                    },
+                    "Referrals_registrations": {
+                        "const": "Registrations",
+                        "readOnly": true
+                    },
+                    "Referrals_partner_bank_details": {
+                        "const": "Affiliate program member bank details",
+                        "readOnly": true
+                    },
+                    "Referrals_invitation_from": {
+                        "const": "Invitation from",
+                        "readOnly": true
+                    },
+                    "Referrals_transfer_from_referral_to_bonus_balance": {
+                        "const": "Transfer from referral balance to bonus balance",
+                        "readOnly": true
+                    },
+                    "First_referral_email_title": {
+                        "const": "You got your first referral!",
+                        "readOnly": true
+                    },
+                    "New_referral_email_title": {
+                        "const": "You already have %count_referrals% referrals. Keep it up! 🎉",
+                        "readOnly": true
+                    },
+                    "Referrals_award_email_title": {
+                        "const": "You received a reward! Your referral reached a new level 🔥",
+                        "readOnly": true
+                    },
+                    "Referrals_total_amount_earned_email_title": {
+                        "const": "As our partner, you have already earned %total_balance_ref% rubles. Keep it up! ?",
+                        "readOnly": true
+                    },
+                    "Account_plan": {
+                        "const": "Account (Pricing plan)",
+                        "readOnly": true
+                    },
+                    "Plan_discount": {
+                        "const": "You save",
+                        "readOnly": true
+                    },
+                    "discount": {
+                        "const": "you save",
+                        "readOnly": true
+                    },
+                    "Discount": {
+                        "const": "You save",
+                        "readOnly": true
+                    },
+                    "plan_month": {
+                        "const": "per month",
+                        "readOnly": true
+                    },
+                    "Remove_card": {
+                        "const": "Remove card",
+                        "readOnly": true
+                    },
+                    "Cancel_subscription": {
+                        "const": "Cancel subscription",
+                        "readOnly": true
+                    },
+                    "Link_card": {
+                        "const": "Save",
+                        "readOnly": true
+                    },
+                    "Removed_card_notice": {
+                        "const": "Your credit card is removed. You can add a credit card again at the end of the current billing period.",
+                        "readOnly": true
+                    },
+                    "plan_payment": {
+                        "const": "pricing plan subscription fee",
+                        "readOnly": true
+                    },
+                    "Extending_tariff_failed": {
+                        "const": "Tariff failed to renew",
+                        "readOnly": true
+                    },
+                    "Extending_subscription_failed": {
+                        "const": "Subscription failed to renew",
+                        "readOnly": true
+                    },
+                    "Extending_plan_notice": {
+                        "const": "To restart your subscription ",
+                        "readOnly": true
+                    },
+                    "Tariff_choose_plan": {
+                        "const": "Choose a plan that works for you and save up to ",
+                        "readOnly": true
+                    },
+                    "Tariff_next_plan": {
+                        "const": "Next plan",
+                        "readOnly": true
+                    },
+                    "Tariff_text": {
+                        "const": "Pricing Plan discount is valid until the end of the billing period.\nIf unsubscribed, the discount is saved and corresponds to the selected Pricing Plan. The billing period is 1 calendar month.<br><br>\nYou can select another payment method after unsubscribing from the Pricing Plan and at the end of the billing period of the Pricing Plan.",
+                        "readOnly": true
+                    },
+                    "Billing_operations": {
+                        "const": "Billing operations",
+                        "readOnly": true
+                    },
+                    "Service_tracking": {
+                        "const": "Rank tracker tool",
+                        "readOnly": true
+                    },
+                    "Service_researcher": {
+                        "const": "Keyword research tool",
+                        "readOnly": true
+                    },
+                    "Service_suggestions_tool": {
+                        "const": "Search suggestions tool",
+                        "readOnly": true
+                    },
+                    "Service_AMS_tracker": {
+                        "const": "Search volume tool",
+                        "readOnly": true
+                    },
+                    "Service_clustering": {
+                        "const": "Keyword clustering tool",
+                        "readOnly": true
+                    },
+                    "Service_auditor": {
+                        "const": "SEO audit tool",
+                        "readOnly": true
+                    },
+                    "Service_auditor_hold": {
+                        "const": "SEO audit tool (hold)",
+                        "readOnly": true
+                    },
+                    "Service_watcher": {
+                        "const": "Website watcher",
+                        "readOnly": true
+                    },
+                    "Service_index_checker": {
+                        "const": "Index checker tool",
+                        "readOnly": true
+                    },
+                    "Service_sitemap": {
+                        "const": "Sitemap generator",
+                        "readOnly": true
+                    },
+                    "Service_broker": {
+                        "const": "Bid manager<br>/1000 adjustments",
+                        "readOnly": true
+                    },
+                    "Service_bid_manager": {
+                        "const": "Bid manager",
+                        "readOnly": true
+                    },
+                    "Service_domain_registration": {
+                        "const": "Domain registration",
+                        "readOnly": true
+                    },
+                    "Service_web_screens": {
+                        "const": "Web screenshots",
+                        "readOnly": true
+                    },
+                    "Service_domain_renewal": {
+                        "const": "Domain renewal",
+                        "readOnly": true
+                    },
+                    "Service_payments_no_type": {
+                        "const": "Payments of no type",
+                        "readOnly": true
+                    },
+                    "Service_export": {
+                        "const": "Projects export",
+                        "readOnly": true
+                    },
+                    "Service_registrar_services": {
+                        "const": "Registrar services",
+                        "readOnly": true
+                    },
+                    "Service_competitors": {
+                        "const": "Competitor research",
+                        "readOnly": true
+                    },
+                    "Inform_choose_plan": {
+                        "const": "You can choose the right plan straight away after ",
+                        "readOnly": true
+                    },
+                    "register": {
+                        "const": "signup",
+                        "readOnly": true
+                    },
+                    "Move_to_plan": {
+                        "const": "Choose the right plan for your business on ",
+                        "readOnly": true
+                    },
+                    "bank_page": {
+                        "const": "billing page",
+                        "readOnly": true
+                    },
+                    "inform_updates_per_month": {
+                        "const": " rank updates per month",
+                        "readOnly": true
+                    },
+                    "Tariff_balance_activation": {
+                        "const": "Pricing plan fee",
+                        "readOnly": true
+                    },
+                    "Prepaid_months": {
+                        "const": "Prepaid months (including current)",
+                        "readOnly": true
+                    },
+                    "paid_earlier": {
+                        "const": "paid earlier",
+                        "readOnly": true
+                    },
+                    "pricing_plan": {
+                        "const": "pricing plan",
+                        "readOnly": true
+                    },
+                    "Insufficient_balance_to_extend_plan": {
+                        "const": "Not enough funds to renew subscription",
+                        "readOnly": true
+                    },
+                    "Russian_ruble": {
+                        "const": "Russian ruble",
+                        "readOnly": true
+                    },
+                    "US_dollar": {
+                        "const": "US dollar",
+                        "readOnly": true
+                    },
+                    "You_can_select_change_currency_once_before_first_payment_notice": {
+                        "const": "Currency can be selected and changed only once before the first payment",
+                        "readOnly": true
+                    },
+                    "Payments_willbe_made_in_currency": {
+                        "const": "Payments will be accepted in the following currency",
+                        "readOnly": true
+                    },
+                    "Name_payment": {
+                        "const": "Topvisor Software - Payment TV-%paymentId%",
+                        "readOnly": true
+                    },
+                    "Name_payment_tariff": {
+                        "const": "Topvisor Software 1-Month Subscription %tariffName% plan - Payment TV-%paymentId%",
+                        "readOnly": true
+                    },
+                    "Name_payment_short": {
+                        "const": "Topvisor Software TV-%paymentId%",
+                        "readOnly": true
+                    },
+                    "Name_payment_subscription": {
+                        "const": "Subscription plan {{ subscriptionPlanLabel }}, period: {{ subscriptionCycle }} months",
+                        "readOnly": true
+                    },
+                    "Name_payment_tariff_short": {
+                        "const": "Topvisor Software 1-Month %tariffName% plan TV-%paymentId%",
+                        "readOnly": true
+                    },
+                    "Name_payment_log": {
+                        "const": "Credit%systemType% - Payment TV-%paymentId% via \"%systemName%\"%contractInfo%",
+                        "readOnly": true
+                    },
+                    "Name_payment_log_tariff": {
+                        "const": "1-Month Subscription %tariffName% - plan - Payment TV-%paymentId% via \"%systemName%\"%contractInfo%",
+                        "readOnly": true
+                    },
+                    "Name_payment_log_subscription_in": {
+                        "const": "Incoming payment #%paymentId% for subscription  via \"%systemName%\"%contractInfo%",
+                        "readOnly": true
+                    },
+                    "Name_payment_log_subscription_pay": {
+                        "const": "Subscription plan {{ subscriptionPlanLabel }}, period: {{ subscriptionCycle }} months",
+                        "readOnly": true
+                    },
+                    "System_name_balance": {
+                        "const": "Payment from account balance",
+                        "readOnly": true
+                    },
+                    "System_name_card": {
+                        "const": "Credit card payment",
+                        "readOnly": true
+                    },
+                    "System_name_invoice": {
+                        "const": "Wire transfer",
+                        "readOnly": true
+                    },
+                    "System_name_tinkoff_business": {
+                        "const": "Wire transfer (T-Business)",
+                        "readOnly": true
+                    },
+                    "System_name_card_ap": {
+                        "const": "Apple Pay",
+                        "readOnly": true
+                    },
+                    "System_name_card_gp": {
+                        "const": "Google Pay",
+                        "readOnly": true
+                    },
+                    "System_name_card_ios": {
+                        "const": "iOS",
+                        "readOnly": true
+                    },
+                    "System_name_card_android": {
+                        "const": "Android",
+                        "readOnly": true
+                    },
+                    "System_name_wm2": {
+                        "const": "WebMoney",
+                        "readOnly": true
+                    },
+                    "System_name_pp": {
+                        "const": "PayPal",
+                        "readOnly": true
+                    },
+                    "System_name_pt": {
+                        "const": "Payture",
+                        "readOnly": true
+                    },
+                    "System_name_ym": {
+                        "const": "YooMoney",
+                        "readOnly": true
+                    },
+                    "System_name_rk": {
+                        "const": "Robokassa",
+                        "readOnly": true
+                    },
+                    "System_name_qw": {
+                        "const": "QIWI",
+                        "readOnly": true
+                    },
+                    "System_name_pd": {
+                        "const": "Paddle",
+                        "readOnly": true
+                    },
+                    "System_name_pd_invoice": {
+                        "const": "Paddle invoice",
+                        "readOnly": true
+                    },
+                    "System_name_sb": {
+                        "const": "SberPay",
+                        "readOnly": true
+                    },
+                    "System_name_lp": {
+                        "const": "LeadPay",
+                        "readOnly": true
+                    },
+                    "System_name_pr": {
+                        "const": "Prodamus",
+                        "readOnly": true
+                    },
+                    "System_info_for_belarus": {
+                        "const": "(cards of Belarusian banks)",
+                        "readOnly": true
+                    },
+                    "System_name_ppg": {
+                        "const": "PayPro Global",
+                        "readOnly": true
+                    },
+                    "System_ppg_info": {
+                        "const": "(cards of non-Russian banks, PayPal, Wire Transfer. All countries except Belarus)",
+                        "readOnly": true
+                    },
+                    "Your_contract_expires_notice": {
+                        "const": "Contract expiration notice",
+                        "readOnly": true
+                    },
+                    "Earlier_contacts_closed_notice": {
+                        "const": "Your earlier contract has been closed",
+                        "readOnly": true
+                    },
+                    "Tinkoff_bank_details": {
+                        "const": "TBank, Moscow",
+                        "readOnly": true
+                    },
+                    "Contragent_message": {
+                        "const": "Dear valued counterparty!\nOur company started using electronic document workflow system. We can issue and receive invoices, acts and receipts,\nkeep all documents and correspondence in the e-format without issuing paper duplicates.\nIf you would like to receive your documents in e-format via the electronic document workflow system, accept this invitation.\nBest regards, Denis Pustovoit",
+                        "readOnly": true
+                    },
+                    "for_1_month_on_pricing_plan": {
+                        "const": "for 1 month on the pricing plan",
+                        "readOnly": true
+                    },
+                    "TV": {
+                        "const": "TV-",
+                        "readOnly": true
+                    },
+                    "Grant_right_to_use_Topvisor": {
+                        "const": "Right to use Topvisor software under contract",
+                        "readOnly": true
+                    },
+                    "Mentioned_services_completed_in_full_notice": {
+                        "const": "The services mentioned above have been completed in full and on time. The customer does not have any concerns regarding volume, quality, and delivery timing.",
+                        "readOnly": true
+                    },
+                    "Offer": {
+                        "const": "Offer",
+                        "readOnly": true
+                    },
+                    "Contract_offer": {
+                        "const": "Contract offer",
+                        "readOnly": true
+                    },
+                    "Contract": {
+                        "const": "Agreement",
+                        "readOnly": true
+                    },
+                    "Add_payment_details": {
+                        "const": "Add payment details",
+                        "readOnly": true
+                    },
+                    "Natural_person": {
+                        "const": "Individual",
+                        "readOnly": true
+                    },
+                    "Legal_person": {
+                        "const": "Company",
+                        "readOnly": true
+                    },
+                    "Sole_proprietor": {
+                        "const": "Sole proprietor",
+                        "readOnly": true
+                    },
+                    "Sole_proprietor_short": {
+                        "const": "SP",
+                        "readOnly": true
+                    },
+                    "Status": {
+                        "const": "Status",
+                        "readOnly": true
+                    },
+                    "Unconfirmed": {
+                        "const": "Pending / Unconfirmed",
+                        "readOnly": true
+                    },
+                    "Pause": {
+                        "const": "Received (paused)",
+                        "readOnly": true
+                    },
+                    "Confirmed": {
+                        "const": "Completed",
+                        "readOnly": true
+                    },
+                    "Pending_payment": {
+                        "const": "Pending payment",
+                        "readOnly": true
+                    },
+                    "Paid_and_postponed": {
+                        "const": "Pre-paid and postponed",
+                        "readOnly": true
+                    },
+                    "Service_acceptance_act": {
+                        "const": "Service acceptance act",
+                        "readOnly": true
+                    },
+                    "Payment_confirmed": {
+                        "const": "Payment confirmed",
+                        "readOnly": true
+                    },
+                    "Payment_prepaid": {
+                        "const": "Payment prepaid",
+                        "readOnly": true
+                    },
+                    "Payment_canceled": {
+                        "const": "Payment canceled",
+                        "readOnly": true
+                    },
+                    "Payment_refunded": {
+                        "const": "Payment refunded",
+                        "readOnly": true
+                    },
+                    "Make_invoice": {
+                        "const": "Create invoice",
+                        "readOnly": true
+                    },
+                    "Get_payment_invoice": {
+                        "const": "Get invoice",
+                        "readOnly": true
+                    },
+                    "Card_payment": {
+                        "const": "Card payment",
+                        "readOnly": true
+                    },
+                    "Card_payment_info": {
+                        "const": "(Visa and Mastercard of Russian banks;<br>«Mir» of any banks)",
+                        "readOnly": true
+                    },
+                    "Paddle_info": {
+                        "const": "(Visa and Mastercard of non-Russian banks excluding Belarus;<br>American Express, PayPal)",
+                        "readOnly": true
+                    },
+                    "Pay_with_card_processing_time_15min": {
+                        "const": "Pay with card. Processing time: 15 minutes.",
+                        "readOnly": true
+                    },
+                    "Project_id": {
+                        "const": "Project ID",
+                        "readOnly": true
+                    },
+                    "Project_info": {
+                        "const": "Project info",
+                        "readOnly": true
+                    },
+                    "Automatic_top_up": {
+                        "const": "Auto top-up",
+                        "readOnly": true
+                    },
+                    "Account_automatic_top_up": {
+                        "const": "Balance auto top-up",
+                        "readOnly": true
+                    },
+                    "When_current_balance_reaches": {
+                        "const": "When balance is below",
+                        "readOnly": true
+                    },
+                    "Top_up_balance_with": {
+                        "const": "Top up balance by",
+                        "readOnly": true
+                    },
+                    "Topvisor_soft_account_topup": {
+                        "const": "Top up Topvisor account",
+                        "readOnly": true
+                    },
+                    "Subscribe_Topvisor_plan": {
+                        "const": "Subscribe to Topvisor plan",
+                        "readOnly": true
+                    },
+                    "Amount_from": {
+                        "const": "Minimum amount",
+                        "readOnly": true
+                    },
+                    "Subscribe_for_period": {
+                        "const": "Subscribe period",
+                        "readOnly": true
+                    },
+                    "Invoice_for": {
+                        "const": "Invoice for",
+                        "readOnly": true
+                    },
+                    "you_need_to_select_plan": {
+                        "const": "select a plan above",
+                        "readOnly": true
+                    },
+                    "Subscribe_to_plan": {
+                        "const": "Subscribe to plan",
+                        "readOnly": true
+                    },
+                    "Change_plan": {
+                        "const": "Change plan",
+                        "readOnly": true
+                    },
+                    "Payment_status": {
+                        "const": "Payment status",
+                        "readOnly": true
+                    },
+                    "Individual_no_banking_details": {
+                        "const": "Individual",
+                        "readOnly": true
+                    },
+                    "Add_banking_details": {
+                        "const": "Add company details",
+                        "readOnly": true
+                    },
+                    "Add_admin": {
+                        "const": "Add administrator",
+                        "readOnly": true
+                    },
+                    "Edit_company_agreement": {
+                        "const": "Edit agreement",
+                        "readOnly": true
+                    },
+                    "Edit_admin_card": {
+                        "const": "Edit administrator card",
+                        "readOnly": true
+                    },
+                    "Save_bank_details": {
+                        "const": "Save bank details",
+                        "readOnly": true
+                    },
+                    "Discount_active_after_payment_plan_autorenewed_notice": {
+                        "const": "Discount for Topvisor software will be activated after your payment is credited to the Pricing plan balance account. A selected plan is renewed automatically. The Pricing plan balance gets zeroed out in the end of each month.",
+                        "readOnly": true
+                    },
+                    "for_1_month": {
+                        "const": "for 1 month",
+                        "readOnly": true
+                    },
+                    "active": {
+                        "const": "active",
+                        "readOnly": true
+                    },
+                    "Cancel_pricing_plan_subscription": {
+                        "const": "Cancel subscription",
+                        "readOnly": true
+                    },
+                    "Invoice_created_successfully": {
+                        "const": "Invoice created successfully",
+                        "readOnly": true
+                    },
+                    "Proceed_to_bank_account_to_sign_order": {
+                        "const": "Proceed to TBank account to sign a payment order",
+                        "readOnly": true
+                    },
+                    "Estimated_processing_time": {
+                        "const": "Estimated processing time is 5 minutes",
+                        "readOnly": true
+                    },
+                    "Topup_amount": {
+                        "const": "Topup amount",
+                        "readOnly": true
+                    },
+                    "Topup_balance": {
+                        "const": "Top up balance",
+                        "readOnly": true
+                    },
+                    "Next_plan_payment": {
+                        "const": "Next payment",
+                        "readOnly": true
+                    },
+                    "in_the_amount": {
+                        "const": "of",
+                        "readOnly": true
+                    },
+                    "View_payment_warrants": {
+                        "const": "View payment warrants on the",
+                        "readOnly": true
+                    },
+                    "New_card": {
+                        "const": "New card",
+                        "readOnly": true
+                    },
+                    "card": {
+                        "const": "card",
+                        "readOnly": true
+                    },
+                    "Tinkoff_business_e_account": {
+                        "const": "T-Business (e-account)",
+                        "readOnly": true
+                    },
+                    "Get_invoice_via_Diadoc": {
+                        "const": "Get invoice via e-doc",
+                        "readOnly": true
+                    },
+                    "to_Topvisor_balance": {
+                        "const": "to Topvisor balance",
+                        "readOnly": true
+                    },
+                    "Register_in_Tinkoff_business": {
+                        "const": "Create a T-Business account",
+                        "readOnly": true
+                    },
+                    "Best_option": {
+                        "const": "Best choice",
+                        "readOnly": true
+                    },
+                    "Get_receipt_to_email": {
+                        "const": "Get receipt to Email",
+                        "readOnly": true
+                    },
+                    "Company_name": {
+                        "const": "Company name",
+                        "readOnly": true
+                    },
+                    "Company_address": {
+                        "const": "Company address",
+                        "readOnly": true
+                    },
+                    "Country_of_residence": {
+                        "const": "Country of residence",
+                        "readOnly": true
+                    },
+                    "Organization_name": {
+                        "const": "Company name",
+                        "readOnly": true
+                    },
+                    "Organization_english_name": {
+                        "const": "Company name in English",
+                        "readOnly": true
+                    },
+                    "OKPO": {
+                        "const": "OKPO",
+                        "readOnly": true
+                    },
+                    "Checking_account": {
+                        "const": "Checking account",
+                        "readOnly": true
+                    },
+                    "BIC": {
+                        "const": "BIC",
+                        "readOnly": true
+                    },
+                    "Bank_BIC": {
+                        "const": "BIC of bank",
+                        "readOnly": true
+                    },
+                    "Name_of_bank": {
+                        "const": "Name of bank",
+                        "readOnly": true
+                    },
+                    "Name_of_bank_short": {
+                        "const": "Name",
+                        "readOnly": true
+                    },
+                    "for_public_companies_and_monopolies": {
+                        "const": "for public companies and natural monopolies",
+                        "readOnly": true
+                    },
+                    "Legal_address": {
+                        "const": "Legal address",
+                        "readOnly": true
+                    },
+                    "Postal_address": {
+                        "const": "Postal address",
+                        "readOnly": true
+                    },
+                    "Postal_code": {
+                        "const": "Postal code / Zip code",
+                        "readOnly": true
+                    },
+                    "City": {
+                        "const": "City",
+                        "readOnly": true
+                    },
+                    "Region": {
+                        "const": "State / Province",
+                        "readOnly": true
+                    },
+                    "Correspondent_bank_details": {
+                        "const": "Correspondent bank details",
+                        "readOnly": true
+                    },
+                    "corr_acc": {
+                        "const": "Bank corr. acc.",
+                        "readOnly": true
+                    },
+                    "corr_acc_short": {
+                        "const": "corr. acc.",
+                        "readOnly": true
+                    },
+                    "IIC": {
+                        "const": "IIC",
+                        "readOnly": true
+                    },
+                    "MFO": {
+                        "const": "MFO",
+                        "readOnly": true
+                    },
+                    "Signatory_full_name": {
+                        "const": "Signatory full name",
+                        "readOnly": true
+                    },
+                    "Title": {
+                        "const": "Title",
+                        "readOnly": true
+                    },
+                    "Acts_under": {
+                        "const": "Acts under",
+                        "readOnly": true
+                    },
+                    "Of_chart": {
+                        "const": "Chart",
+                        "readOnly": true
+                    },
+                    "Of_certificate": {
+                        "const": "Certificate",
+                        "readOnly": true
+                    },
+                    "Of_power_of_attorney": {
+                        "const": "Power of attorney",
+                        "readOnly": true
+                    },
+                    "Of_contract_of_management": {
+                        "const": "Contract of management",
+                        "readOnly": true
+                    },
+                    "Signatory_full_name_genitive": {
+                        "const": "Signatory full name in genitive case",
+                        "readOnly": true
+                    },
+                    "Title_genitive": {
+                        "const": "Title in genitive case",
+                        "readOnly": true
+                    },
+                    "Number_of_signatories": {
+                        "const": "Number of signatories",
+                        "readOnly": true
+                    },
+                    "Create_Tinkoff_business_account": {
+                        "const": "Create T-Business account",
+                        "readOnly": true
+                    },
+                    "Domain_registration_or_renewal": {
+                        "const": "Domain registration or renewal ID%paymentId%",
+                        "readOnly": true
+                    },
+                    "Not_enough_money_for_purchase": {
+                        "const": "You do not have enough funds to complete purchase",
+                        "readOnly": true
+                    },
+                    "Manage_contract": {
+                        "const": "Manage contract",
+                        "readOnly": true
+                    },
+                    "Cash_receipts": {
+                        "const": "Cash receipts",
+                        "readOnly": true
+                    },
+                    "Reconciliation_statement": {
+                        "const": "Reconciliation statement",
+                        "readOnly": true
+                    },
+                    "Download_contract": {
+                        "const": "Download contract",
+                        "readOnly": true
+                    },
+                    "Sign_contract_via_diadoc": {
+                        "const": "Sign contract via e-doc",
+                        "readOnly": true
+                    },
+                    "Connect_to_diadoc": {
+                        "const": "Connect Diadoc e-management",
+                        "readOnly": true
+                    },
+                    "Download_envelope_cover": {
+                        "const": "Download envelope cover",
+                        "readOnly": true
+                    },
+                    "Receipts_for_period": {
+                        "const": "Receipts for the period",
+                        "readOnly": true
+                    },
+                    "Reconciliation_statement_for_period": {
+                        "const": "Reconciliation statement for the period",
+                        "readOnly": true
+                    },
+                    "Send_to_diadoc": {
+                        "const": "Send via e-doc",
+                        "readOnly": true
+                    },
+                    "Invoices_and_warrants": {
+                        "const": "Invoices and warrants",
+                        "readOnly": true
+                    },
+                    "Invoices_and_acts": {
+                        "const": "Invoices and statements",
+                        "readOnly": true
+                    },
+                    "Operations": {
+                        "const": "Billing history",
+                        "readOnly": true
+                    },
+                    "Invoice_number": {
+                        "const": "Invoice number",
+                        "readOnly": true
+                    },
+                    "Plan_not_selected": {
+                        "const": "Plan<br> not selected",
+                        "readOnly": true
+                    },
+                    "account_personal": {
+                        "const": "personal",
+                        "readOnly": true
+                    },
+                    "account_pricing_plan": {
+                        "const": "pricing plan",
+                        "readOnly": true
+                    },
+                    "account_bonus": {
+                        "const": "bonus",
+                        "readOnly": true
+                    },
+                    "Software": {
+                        "const": "Software",
+                        "readOnly": true
+                    },
+                    "Invoice": {
+                        "const": "Invoice",
+                        "readOnly": true
+                    },
+                    "Tools_and_pricing": {
+                        "const": "Tools and prices",
+                        "readOnly": true
+                    },
+                    "Start_for_free": {
+                        "const": "Start for free",
+                        "readOnly": true
+                    },
+                    "View_all_pricing_1": {
+                        "const": "View full",
+                        "readOnly": true
+                    },
+                    "View_all_pricing_2": {
+                        "const": "pricing",
+                        "readOnly": true
+                    },
+                    "Faster_payments_system": {
+                        "const": "Faster payments system",
+                        "readOnly": true
+                    },
+                    "QR_code": {
+                        "const": "QR code",
+                        "readOnly": true
+                    },
+                    "Full_amount": {
+                        "const": "Full amount",
+                        "readOnly": true
+                    },
+                    "Money_be_transferred_to_bonus_acc_no_withdraw": {
+                        "const": "Funds will be transferred to the bonus account, you won't be able to withdraw it.",
+                        "readOnly": true
+                    },
+                    "Select_amount_to_transfer": {
+                        "const": "Select amount to transfer (rub.)",
+                        "readOnly": true
+                    },
+                    "Do_you_want_continue": {
+                        "const": "Do you want to continue?",
+                        "readOnly": true
+                    },
+                    "Get_closing_documents_by_mail": {
+                        "const": "Get closing documents by mail",
+                        "readOnly": true
+                    },
+                    "Get_closing_documents_by_mail_info": {
+                        "const": "Check this box to receive closing documents by mail. We will send the registered mail with the Russian Post, you will need to receive it at your post office.<br><br>\n\t\tIf you want to receive the documents in electronic form, accept our invitation to join electronic document flow.<br><br>\n\t\tIf your accounting department do not see this invitation, contact us. Sometimes the original documents are not necessary, you can always get the copies under Invoices and warrants.",
+                        "readOnly": true
+                    },
+                    "Confirm_document_removal": {
+                        "const": "Are you sure you want to delete this document",
+                        "readOnly": true
+                    },
+                    "Act": {
+                        "const": "Act",
+                        "readOnly": true
+                    },
+                    "Dialog_subscription_title": {
+                        "const": "Subscribe to the {{ siteName }} plan",
+                        "readOnly": true
+                    }
+                },
+                "required": [
+                    "Plus",
+                    "Minus",
+                    "Payment",
+                    "Incorrect_sum",
+                    "Not_enough_balance",
+                    "Not_enough_owner_balance_short",
+                    "Not_enough_owner_balance",
+                    "Not_enough_owner_balance2",
+                    "Not_enough_balance_limit",
+                    "Not_enough_balance_limit2",
+                    "Refill_balance",
+                    "Bonus_refill",
+                    "Mail_address",
+                    "Basis1",
+                    "Basis2",
+                    "Basis3",
+                    "Ref_action",
+                    "bonuses",
+                    "public_offer",
+                    "by_public_offer",
+                    "dogovor",
+                    "by_dogovor",
+                    "Info_system_withdrawal",
+                    "Refund_by_invoice",
+                    "Return_to_payment",
+                    "Payment_processed",
+                    "Payment_unsuccessful",
+                    "Bonuses",
+                    "Comment",
+                    "Operation",
+                    "Pay",
+                    "Total_to_pay",
+                    "Referral_link",
+                    "Your_referrals",
+                    "Referrals_registered",
+                    "Referrals_turnover",
+                    "Referrals_last_payment",
+                    "Income",
+                    "Set_period",
+                    "Referrals_bonus",
+                    "Referrals_bonus_info",
+                    "Share",
+                    "Referrals_attach_email",
+                    "Referrals_share",
+                    "Referrals_send_email_invite",
+                    "Referrals_invitation_sent",
+                    "Referrals_stats",
+                    "Referrals_level",
+                    "Referrals_you_earned",
+                    "Referrals_withdraw_to_balance",
+                    "Referrals_withdraw",
+                    "Referrals_transfer",
+                    "Referrals_confirm_funds_transfer_to_bonus_account_notice",
+                    "Referrals_levels_description_title",
+                    "Referrals_download_invoice_act",
+                    "Referrals_withdrawal_available_from_amount_notice",
+                    "Referrals_link_to_EDF_setup_instruction",
+                    "Referrals_visits",
+                    "Referrals_registrations",
+                    "Referrals_partner_bank_details",
+                    "Referrals_invitation_from",
+                    "Referrals_transfer_from_referral_to_bonus_balance",
+                    "First_referral_email_title",
+                    "New_referral_email_title",
+                    "Referrals_award_email_title",
+                    "Referrals_total_amount_earned_email_title",
+                    "Account_plan",
+                    "Plan_discount",
+                    "discount",
+                    "Discount",
+                    "plan_month",
+                    "Remove_card",
+                    "Cancel_subscription",
+                    "Link_card",
+                    "Removed_card_notice",
+                    "plan_payment",
+                    "Extending_tariff_failed",
+                    "Extending_subscription_failed",
+                    "Extending_plan_notice",
+                    "Tariff_choose_plan",
+                    "Tariff_next_plan",
+                    "Tariff_text",
+                    "Billing_operations",
+                    "Service_tracking",
+                    "Service_researcher",
+                    "Service_suggestions_tool",
+                    "Service_AMS_tracker",
+                    "Service_clustering",
+                    "Service_auditor",
+                    "Service_auditor_hold",
+                    "Service_watcher",
+                    "Service_index_checker",
+                    "Service_sitemap",
+                    "Service_broker",
+                    "Service_bid_manager",
+                    "Service_domain_registration",
+                    "Service_web_screens",
+                    "Service_domain_renewal",
+                    "Service_payments_no_type",
+                    "Service_export",
+                    "Service_registrar_services",
+                    "Service_competitors",
+                    "Inform_choose_plan",
+                    "register",
+                    "Move_to_plan",
+                    "bank_page",
+                    "inform_updates_per_month",
+                    "Tariff_balance_activation",
+                    "Prepaid_months",
+                    "paid_earlier",
+                    "pricing_plan",
+                    "Insufficient_balance_to_extend_plan",
+                    "Russian_ruble",
+                    "US_dollar",
+                    "You_can_select_change_currency_once_before_first_payment_notice",
+                    "Payments_willbe_made_in_currency",
+                    "Name_payment_subscription",
+                    "Name_payment_log",
+                    "Name_payment_log_tariff",
+                    "Name_payment_log_subscription_in",
+                    "Name_payment_log_subscription_pay",
+                    "System_name_balance",
+                    "System_name_card",
+                    "System_name_invoice",
+                    "System_name_tinkoff_business",
+                    "System_name_card_ap",
+                    "System_name_card_gp",
+                    "System_name_card_ios",
+                    "System_name_card_android",
+                    "System_name_wm2",
+                    "System_name_pp",
+                    "System_name_pt",
+                    "System_name_ym",
+                    "System_name_rk",
+                    "System_name_qw",
+                    "System_name_pd",
+                    "System_name_pd_invoice",
+                    "System_name_sb",
+                    "System_name_lp",
+                    "System_name_pr",
+                    "System_info_for_belarus",
+                    "System_name_ppg",
+                    "System_ppg_info",
+                    "Your_contract_expires_notice",
+                    "Earlier_contacts_closed_notice",
+                    "Tinkoff_bank_details",
+                    "Contragent_message",
+                    "for_1_month_on_pricing_plan",
+                    "TV",
+                    "Mentioned_services_completed_in_full_notice",
+                    "Offer",
+                    "Contract_offer",
+                    "Contract",
+                    "Add_payment_details",
+                    "Natural_person",
+                    "Legal_person",
+                    "Sole_proprietor",
+                    "Sole_proprietor_short",
+                    "Status",
+                    "Unconfirmed",
+                    "Pause",
+                    "Confirmed",
+                    "Pending_payment",
+                    "Paid_and_postponed",
+                    "Service_acceptance_act",
+                    "Payment_confirmed",
+                    "Payment_prepaid",
+                    "Payment_canceled",
+                    "Payment_refunded",
+                    "Make_invoice",
+                    "Get_payment_invoice",
+                    "Card_payment",
+                    "Card_payment_info",
+                    "Paddle_info",
+                    "Pay_with_card_processing_time_15min",
+                    "Project_id",
+                    "Project_info",
+                    "Automatic_top_up",
+                    "Account_automatic_top_up",
+                    "When_current_balance_reaches",
+                    "Top_up_balance_with",
+                    "Amount_from",
+                    "Subscribe_for_period",
+                    "Invoice_for",
+                    "you_need_to_select_plan",
+                    "Subscribe_to_plan",
+                    "Change_plan",
+                    "Payment_status",
+                    "Individual_no_banking_details",
+                    "Add_banking_details",
+                    "Add_admin",
+                    "Edit_company_agreement",
+                    "Edit_admin_card",
+                    "Save_bank_details",
+                    "for_1_month",
+                    "active",
+                    "Cancel_pricing_plan_subscription",
+                    "Invoice_created_successfully",
+                    "Proceed_to_bank_account_to_sign_order",
+                    "Estimated_processing_time",
+                    "Topup_amount",
+                    "Topup_balance",
+                    "Next_plan_payment",
+                    "in_the_amount",
+                    "View_payment_warrants",
+                    "New_card",
+                    "card",
+                    "Tinkoff_business_e_account",
+                    "Get_invoice_via_Diadoc",
+                    "Register_in_Tinkoff_business",
+                    "Best_option",
+                    "Get_receipt_to_email",
+                    "Company_name",
+                    "Company_address",
+                    "Country_of_residence",
+                    "Organization_name",
+                    "Organization_english_name",
+                    "OKPO",
+                    "Checking_account",
+                    "BIC",
+                    "Bank_BIC",
+                    "Name_of_bank",
+                    "Name_of_bank_short",
+                    "for_public_companies_and_monopolies",
+                    "Legal_address",
+                    "Postal_address",
+                    "Postal_code",
+                    "City",
+                    "Region",
+                    "Correspondent_bank_details",
+                    "corr_acc",
+                    "corr_acc_short",
+                    "IIC",
+                    "MFO",
+                    "Signatory_full_name",
+                    "Title",
+                    "Acts_under",
+                    "Of_chart",
+                    "Of_certificate",
+                    "Of_power_of_attorney",
+                    "Of_contract_of_management",
+                    "Signatory_full_name_genitive",
+                    "Title_genitive",
+                    "Number_of_signatories",
+                    "Create_Tinkoff_business_account",
+                    "Domain_registration_or_renewal",
+                    "Not_enough_money_for_purchase",
+                    "Manage_contract",
+                    "Cash_receipts",
+                    "Reconciliation_statement",
+                    "Download_contract",
+                    "Sign_contract_via_diadoc",
+                    "Connect_to_diadoc",
+                    "Download_envelope_cover",
+                    "Receipts_for_period",
+                    "Reconciliation_statement_for_period",
+                    "Send_to_diadoc",
+                    "Invoices_and_warrants",
+                    "Invoices_and_acts",
+                    "Operations",
+                    "Invoice_number",
+                    "Plan_not_selected",
+                    "account_personal",
+                    "account_pricing_plan",
+                    "account_bonus",
+                    "Software",
+                    "Invoice",
+                    "Tools_and_pricing",
+                    "Start_for_free",
+                    "View_all_pricing_1",
+                    "View_all_pricing_2",
+                    "Faster_payments_system",
+                    "QR_code",
+                    "Full_amount",
+                    "Money_be_transferred_to_bonus_acc_no_withdraw",
+                    "Select_amount_to_transfer",
+                    "Do_you_want_continue",
+                    "Get_closing_documents_by_mail",
+                    "Get_closing_documents_by_mail_info",
+                    "Confirm_document_removal",
+                    "Act",
+                    "Dialog_subscription_title"
+                ]
+            }
+        }
+    }
+}

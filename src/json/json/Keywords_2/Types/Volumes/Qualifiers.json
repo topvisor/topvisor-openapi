@@ -1,0 +1,20 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Keywords_2.Types.Volumes.Qualifiers",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Keywords_2.Types.Volumes.Qualifiers": {
+                "type": "array",
+                "items": {
+                    "$ref": "../../../Keywords_2/Types/Volumes/Qualifier.json#/components/schemas/Keywords_2.Types.Volumes.Qualifier"
+                },
+                "title": "Определители проверки частоты",
+                "description": "@extends AbstractStringArray<Qualifier>\n@method Qualifier[] getValues()\n@method Qualifier current()\n@method Qualifier offsetGet()\n@see \\TV\\API\\Types\\Qualifier"
+            }
+        }
+    }
+}
