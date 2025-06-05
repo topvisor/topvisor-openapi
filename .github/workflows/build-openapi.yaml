@@ -1,0 +1,54 @@
+name: Build & Commit OpenAPI YAML Single File
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - src/json/Topvisor.json
+
+jobs:
+  build-and-commit:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version-file: 'package.json'
+
+      - name: Cache npm dependencies
+        uses: actions/cache@v4
+        with:
+          path: ~/.npm
+          key: npm-${{ hashFiles('package-lock.json') }}
+          restore-keys: npm-
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Bundle OpenAPI YAML
+        run: |
+          mkdir -p src/yaml
+          npm run build-yaml-sf
+
+      - name: Commit and push changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          
+          git add src/yaml/TopvisorSingleFile.yaml
+          
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "ci: update bundled OpenAPI YAML"
+          
+            git push origin HEAD
+          fi
