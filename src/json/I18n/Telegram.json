@@ -122,6 +122,10 @@
                         "const": "",
                         "readOnly": true
                     },
+                    "Message_start_library_text": {
+                        "const": "",
+                        "readOnly": true
+                    },
                     "Message_stop_text": {
                         "const": "Notifications have been turned off. I'll stop sending you alerts and Customer Support replies.",
                         "readOnly": true
@@ -212,6 +216,7 @@
                     "Message_start_text2",
                     "Message_start_text3",
                     "Message_start_apometer_text",
+                    "Message_start_library_text",
                     "Message_stop_text",
                     "Message_pair_done1",
                     "Message_pair_done2",

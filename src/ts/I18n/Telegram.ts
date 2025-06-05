@@ -65,6 +65,8 @@ export interface components {
             /** @constant */
             readonly Message_start_apometer_text: "";
             /** @constant */
+            readonly Message_start_library_text: "";
+            /** @constant */
             readonly Message_stop_text: "Notifications have been turned off. I'll stop sending you alerts and Customer Support replies.";
             /** @constant */
             readonly Message_pair_done1: "Your Telegram already linked to the account";
