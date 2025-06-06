@@ -12,12 +12,7 @@
                 "properties": {
                     "urls": {
                         "title": "Список URL соответствующих домену проекта, допускается формат CSV\n\nМожно передать в виде файла с именем urls, допускаются форматы CSV и XML (допустимы сжатые XML в .gz)\n\nНельзя передавать одновременно в виде массива и в виде файла или использовать совместно с link_sitemap_xml",
-                        "nullable": true,
-                        "allOf": [
-                            {
-                                "$ref": "../../../TV/API/Types/UrlArray.json#/components/schemas/TV.API.Types.UrlArray"
-                            }
-                        ]
+                        "nullable": true
                     },
                     "link_sitemap_xml": {
                         "title": "Файл с содержимым для импорта, допускается формат XML (допустимы сжатые XML в .gz)",

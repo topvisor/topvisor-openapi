@@ -20101,16 +20101,6 @@ components:
         - offset
         - project_id
       title: Экспорт urls в определенном формате
-    TV.API.Types.UrlArray:
-      type: array
-      items:
-        $ref: '#/components/schemas/TV.API.Types.Url'
-      title: 'Тип массива: Url[]'
-      description: |-
-        @extends AbstractStringArray<Url>
-        @method Url[] getValues()
-        @method Url current()
-        @see \TV\API\Types\Url
     Urls_2.Methods.Import.Add:
       type: object
       properties:
@@ -20122,8 +20112,6 @@ components:
 
             Нельзя передавать одновременно в виде массива и в виде файла или использовать совместно с link_sitemap_xml
           nullable: true
-          allOf:
-            - $ref: '#/components/schemas/TV.API.Types.UrlArray'
         link_sitemap_xml:
           title: Файл с содержимым для импорта, допускается формат XML (допустимы сжатые XML в .gz)
           nullable: true

@@ -22,7 +22,7 @@ export interface components {
              *     Можно передать в виде файла с именем urls, допускаются форматы CSV и XML (допустимы сжатые XML в .gz)
              *
              *     Нельзя передавать одновременно в виде массива и в виде файла или использовать совместно с link_sitemap_xml */
-            urls?: import('../../../TV/API/Types/UrlArray.ts').components['schemas']['TV.API.Types.UrlArray'] | null;
+            urls?: unknown;
             /** Файл с содержимым для импорта, допускается формат XML (допустимы сжатые XML в .gz) */
             link_sitemap_xml?: import('../../../TV/API/Types/Url.ts').components['schemas']['TV.API.Types.Url'] | null;
             tags?: import('../../../Tags_2/Types/TagsIds.ts').components['schemas']['Tags_2.Types.TagsIds'] | null;
