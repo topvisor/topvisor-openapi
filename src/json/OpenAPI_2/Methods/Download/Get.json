@@ -22,7 +22,7 @@
                 },
                 "required": [],
                 "title": "Создать Open API схемы и скачать в zip\n\nВ результате вернет zip файл в потоке вывода",
-                "description": "@see https://editor.swagger.io/ Редактор Open API"
+                "description": "@see https://editor.swagger.io/ Редактор Open API\n\ntest"
             }
         }
     }
