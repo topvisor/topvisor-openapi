@@ -6087,7 +6087,7 @@
                                                                     }
                                                                 ]
                                                             },
-                                                            "title": "Ассоциативный массив с результирующими переданными параетрами, и результатоми implodeQuotes() и genSet()"
+                                                            "title": "@type array<string, array<string, mixed>>"
                                                         }
                                                     },
                                                     "required": [
