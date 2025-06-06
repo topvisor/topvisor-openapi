@@ -3780,7 +3780,7 @@ paths:
       description: |-
         @see https://editor.swagger.io/ Редактор Open API
 
-        test 6
+        test 7
       requestBody:
         content:
           application/json:
@@ -18789,7 +18789,7 @@ components:
       description: |-
         @see https://editor.swagger.io/ Редактор Open API
 
-        test 6
+        test 7
     Payments_2.Methods.Companies.Get:
       type: object
       properties: {}
