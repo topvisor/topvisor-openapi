@@ -18772,10 +18772,7 @@ components:
       type: object
       properties:
         format:
-          title: |-
-            Формат схемы Open API, json или yaml
-
-            test 2
+          title: Формат схемы Open API, json или yaml
           default: json
           type: string
         incremental:

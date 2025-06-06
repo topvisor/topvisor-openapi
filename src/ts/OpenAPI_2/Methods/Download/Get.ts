@@ -18,8 +18,6 @@ export interface components {
         "OpenAPI_2.Methods.Download.Get": {
             /**
              * Формат схемы Open API, json или yaml
-             *
-             *     test 2
              * @default json
              */
             format: string;

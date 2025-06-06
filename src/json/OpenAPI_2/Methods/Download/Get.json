@@ -11,7 +11,7 @@
                 "type": "object",
                 "properties": {
                     "format": {
-                        "title": "Формат схемы Open API, json или yaml\n\ntest 2",
+                        "title": "Формат схемы Open API, json или yaml",
                         "default": "json",
                         "type": "string"
                     },
