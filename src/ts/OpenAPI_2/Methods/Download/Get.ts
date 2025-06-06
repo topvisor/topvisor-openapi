@@ -12,18 +12,20 @@ export interface components {
          *
          *     В результате вернет zip файл в потоке вывода
          * @description @see https://editor.swagger.io/ Редактор Open API
+         *
+         *     test 6
          */
         "OpenAPI_2.Methods.Download.Get": {
             /**
              * Формат схемы Open API, json или yaml
+             *
+             *     test 2
              * @default json
              */
             format: string;
             /** Использовать инкрементальный вывод схемы
              *
-             *     В этом режиме в схему будут добавляться только изменения за один час
-             *
-             *     Только для тестов */
+             *     В этом режиме в схему будут добавляться только изменения за один час */
             incremental?: boolean;
         };
     };
