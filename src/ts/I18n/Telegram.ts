@@ -75,7 +75,7 @@ export interface components {
             /** @constant */
             readonly Message_pair_authorize1: "Sign in to %siteName% and click the <a href=\"https://%siteId%.com/income/telegram/join/";
             /** @constant */
-            readonly Message_pair_authorize2: "\">ссылке</a> to link your Telegram to the %siteName% account";
+            readonly Message_pair_authorize2: "\">link</a> to link your Telegram to the %siteName% account";
             /** @constant */
             readonly Message_unpair: "Account removed.";
             /** @constant */
