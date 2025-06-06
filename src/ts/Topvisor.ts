@@ -1885,8 +1885,6 @@ export interface paths {
      *
      *     В результате вернет zip файл в потоке вывода
      * @description @see https://editor.swagger.io/ Редактор Open API
-     *
-     *     test 7
      */
     "/get/openapi_2/download/": {
         parameters: {
@@ -1898,6 +1896,28 @@ export interface paths {
         get?: never;
         put?: never;
         post: operations["GetOpenapi2Download"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /**
+     * Создать Open API схемы и скачать в zip
+     *
+     *     В результате вернет zip файл в потоке вывода
+     * @description @see https://editor.swagger.io/ Редактор Open API
+     */
+    "/test/openapi_2/download/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["TestOpenapi2Download"];
         delete?: never;
         options?: never;
         head?: never;
@@ -9760,6 +9780,29 @@ export interface operations {
         requestBody: {
             content: {
                 "application/json": import('./OpenAPI_2/Methods/Download/Get.ts').components['schemas']['OpenAPI_2.Methods.Download.Get'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/octet-stream": string;
+                };
+            };
+        };
+    };
+    TestOpenapi2Download: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./OpenAPI_2/Methods/Download/Test.ts').components['schemas']['OpenAPI_2.Methods.Download.Test'];
             };
         };
         responses: {
