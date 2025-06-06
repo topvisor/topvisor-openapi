@@ -3777,10 +3777,7 @@ paths:
         Создать Open API схемы и скачать в zip
 
         В результате вернет zip файл в потоке вывода
-      description: |-
-        @see https://editor.swagger.io/ Редактор Open API
-
-        test
+      description: '@see https://editor.swagger.io/ Редактор Open API'
       requestBody:
         content:
           application/json:
@@ -18788,10 +18785,7 @@ components:
         Создать Open API схемы и скачать в zip
 
         В результате вернет zip файл в потоке вывода
-      description: |-
-        @see https://editor.swagger.io/ Редактор Open API
-
-        test
+      description: '@see https://editor.swagger.io/ Редактор Open API'
     Payments_2.Methods.Companies.Get:
       type: object
       properties: {}
