@@ -3792,30 +3792,6 @@ paths:
               schema:
                 type: string
                 format: binary
-  /test/openapi_2/download/:
-    post:
-      operationId: TestOpenapi2Download
-      tags:
-        - Openapi_2
-      summary: |-
-        Создать Open API схемы и скачать в zip
-
-        В результате вернет zip файл в потоке вывода
-      description: '@see https://editor.swagger.io/ Редактор Open API'
-      requestBody:
-        content:
-          application/json:
-            schema:
-              $ref: '#/components/schemas/OpenAPI_2.Methods.Download.Test'
-        required: true
-      responses:
-        '200':
-          description: ''
-          content:
-            application/octet-stream:
-              schema:
-                type: string
-                format: binary
   /get/payments_2/companies/:
     post:
       operationId: GetPayments2Companies
@@ -18790,25 +18766,6 @@ components:
               - project_id
               - region_index
     OpenAPI_2.Methods.Download.Get:
-      type: object
-      properties:
-        format:
-          title: Формат схемы Open API, json или yaml
-          default: json
-          type: string
-        incremental:
-          title: |-
-            Использовать инкрементальный вывод схемы
-
-            В этом режиме в схему будут добавляться только изменения за один час
-          type: boolean
-      required: []
-      title: |-
-        Создать Open API схемы и скачать в zip
-
-        В результате вернет zip файл в потоке вывода
-      description: '@see https://editor.swagger.io/ Редактор Open API'
-    OpenAPI_2.Methods.Download.Test:
       type: object
       properties:
         format:
