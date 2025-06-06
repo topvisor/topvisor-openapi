@@ -15,9 +15,9 @@ export interface components {
             /** @constant */
             readonly Panel_disable_notifications: "Turn off notifications";
             /** @constant */
-            readonly Panel_pair_account?: "Link Topvisor account";
+            readonly Panel_pair_account: "Link %siteName% account";
             /** @constant */
-            readonly Panel_unpair_account?: "Remove Topvisor account";
+            readonly Panel_unpair_account: "Remove %siteName% account";
             /** @constant */
             readonly Panel_get_short_link: "Create short link";
             /** @constant */
@@ -73,9 +73,9 @@ export interface components {
             /** @constant */
             readonly Message_pair_done2: "To remove account, type /unpair";
             /** @constant */
-            readonly Message_pair_authorize1?: "Sign in to Topvisor and click the <a href=\"https://topvisor.com/income/telegram/join/";
+            readonly Message_pair_authorize1: "Sign in to %siteName% and click the <a href=\"https://%siteId%.com/income/telegram/join/";
             /** @constant */
-            readonly Message_pair_authorize2?: "\">ссылке</a> to link your Telegram to the Topvisor account";
+            readonly Message_pair_authorize2: "\">ссылке</a> to link your Telegram to the %siteName% account";
             /** @constant */
             readonly Message_unpair: "Account removed.";
             /** @constant */
@@ -87,7 +87,7 @@ export interface components {
             /** @constant */
             readonly Message_tpvsr_cancel_done: "Link shortening canceled.";
             /** @constant */
-            readonly Message_join_authorize?: "Sign in to Topvisor and try to link your account again.";
+            readonly Message_join_authorize: "Sign in to %siteName% and try to link your account again.";
             /** @constant */
             readonly Message_join_done1: "Account";
             /** @constant */
@@ -98,6 +98,14 @@ export interface components {
             readonly Message_not_subscribed?: "It seems you are not reading the Topvisor-Journal channel yet 😳🕶🤏\nSubscribe to get a bunch of useful things 🔥";
             /** @constant */
             readonly Message_subscribed?: "You are already reading the Topvisor-Journal channel. Access is open 😎\nDon’t unsubscribe - we are constantly adding useful materials ✍️";
+            /** @constant */
+            readonly Topvisor?: "Topvisor";
+            /** @constant */
+            readonly Thundo?: "Thundo";
+            /** @constant */
+            readonly Profile_successfully_linked: "Profile ID %userId% has been successfully linked.";
+            /** @constant */
+            readonly Impossible_link_profile: "It is impossible to link a profile";
         };
     };
     responses: never;

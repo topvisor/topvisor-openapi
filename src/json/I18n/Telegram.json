@@ -23,11 +23,11 @@
                         "readOnly": true
                     },
                     "Panel_pair_account": {
-                        "const": "Link Topvisor account",
+                        "const": "Link %siteName% account",
                         "readOnly": true
                     },
                     "Panel_unpair_account": {
-                        "const": "Remove Topvisor account",
+                        "const": "Remove %siteName% account",
                         "readOnly": true
                     },
                     "Panel_get_short_link": {
@@ -139,11 +139,11 @@
                         "readOnly": true
                     },
                     "Message_pair_authorize1": {
-                        "const": "Sign in to Topvisor and click the <a href=\"https://topvisor.com/income/telegram/join/",
+                        "const": "Sign in to %siteName% and click the <a href=\"https://%siteId%.com/income/telegram/join/",
                         "readOnly": true
                     },
                     "Message_pair_authorize2": {
-                        "const": "\">ссылке</a> to link your Telegram to the Topvisor account",
+                        "const": "\">ссылке</a> to link your Telegram to the %siteName% account",
                         "readOnly": true
                     },
                     "Message_unpair": {
@@ -167,7 +167,7 @@
                         "readOnly": true
                     },
                     "Message_join_authorize": {
-                        "const": "Sign in to Topvisor and try to link your account again.",
+                        "const": "Sign in to %siteName% and try to link your account again.",
                         "readOnly": true
                     },
                     "Message_join_done1": {
@@ -189,12 +189,30 @@
                     "Message_subscribed": {
                         "const": "You are already reading the Topvisor-Journal channel. Access is open 😎\nDon’t unsubscribe - we are constantly adding useful materials ✍️",
                         "readOnly": true
+                    },
+                    "Topvisor": {
+                        "const": "Topvisor",
+                        "readOnly": true
+                    },
+                    "Thundo": {
+                        "const": "Thundo",
+                        "readOnly": true
+                    },
+                    "Profile_successfully_linked": {
+                        "const": "Profile ID %userId% has been successfully linked.",
+                        "readOnly": true
+                    },
+                    "Impossible_link_profile": {
+                        "const": "It is impossible to link a profile",
+                        "readOnly": true
                     }
                 },
                 "required": [
                     "Panel_get_command_list",
                     "Panel_enable_notifications",
                     "Panel_disable_notifications",
+                    "Panel_pair_account",
+                    "Panel_unpair_account",
                     "Panel_get_short_link",
                     "Panel_back",
                     "Panel_cancel",
@@ -220,13 +238,18 @@
                     "Message_stop_text",
                     "Message_pair_done1",
                     "Message_pair_done2",
+                    "Message_pair_authorize1",
+                    "Message_pair_authorize2",
                     "Message_unpair",
                     "Message_tpvsr",
                     "Message_tpvsr_cancel",
                     "Message_tpvsr_failure",
                     "Message_tpvsr_cancel_done",
+                    "Message_join_authorize",
                     "Message_join_done1",
-                    "Message_join_done2"
+                    "Message_join_done2",
+                    "Profile_successfully_linked",
+                    "Impossible_link_profile"
                 ]
             }
         }
