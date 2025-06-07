@@ -6502,7 +6502,6 @@
                                                     "properties": {
                                                         "result": {
                                                             "title": "Тест phpDoc\n\nTODO: Удалить после настройки openapi\n\n- static\n- parent\n- self",
-                                                            "description": "@type array<int>",
                                                             "allOf": [
                                                                 {
                                                                     "$ref": "Example_2/Methods/PhpDoc/Get.json#/components/schemas/Example_2.Methods.PhpDoc.Get"

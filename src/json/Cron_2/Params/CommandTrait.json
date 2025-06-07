@@ -19,18 +19,6 @@
                     "command"
                 ]
             }
-        },
-        "parameters": {
-            "command": {
-                "name": "command",
-                "description": "Имя команды cron",
-                "required": true,
-                "style": "deepObject",
-                "in": "query",
-                "schema": {
-                    "type": "string"
-                }
-            }
         }
     }
 }

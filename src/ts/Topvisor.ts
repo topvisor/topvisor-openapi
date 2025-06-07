@@ -9693,10 +9693,13 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        /**
-                         * @type array<int>
-                         * @description @type array<int>
-                         */
+                        /** Тест phpDoc
+                         *
+                         *     TODO: Удалить после настройки openapi
+                         *
+                         *     - static
+                         *     - parent
+                         *     - self */
                         result: import('./Example_2/Methods/PhpDoc/Get.ts').components['schemas']['Example_2.Methods.PhpDoc.Get'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;

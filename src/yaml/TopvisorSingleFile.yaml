@@ -3750,7 +3750,6 @@ paths:
                               - static
                               - parent
                               - self
-                            description: '@type array<int>'
                             allOf:
                               - $ref: '#/components/schemas/Example_2.Methods.PhpDoc.Get'
                         required:

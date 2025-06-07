@@ -19,18 +19,6 @@
                     "check_id"
                 ]
             }
-        },
-        "parameters": {
-            "check_id": {
-                "name": "check_id",
-                "description": "ID проверки аудита",
-                "required": true,
-                "style": "deepObject",
-                "in": "query",
-                "schema": {
-                    "type": "integer"
-                }
-            }
         }
     }
 }

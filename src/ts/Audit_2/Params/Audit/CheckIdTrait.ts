@@ -13,10 +13,7 @@ export interface components {
         };
     };
     responses: never;
-    parameters: {
-        /** @description ID проверки аудита */
-        check_id: number;
-    };
+    parameters: never;
     requestBodies: never;
     headers: never;
     pathItems: never;

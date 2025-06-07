@@ -19,18 +19,6 @@
                     "project_id"
                 ]
             }
-        },
-        "parameters": {
-            "project_id": {
-                "name": "project_id",
-                "description": "ID проекта",
-                "required": true,
-                "style": "deepObject",
-                "in": "query",
-                "schema": {
-                    "type": "integer"
-                }
-            }
         }
     }
 }

@@ -13,10 +13,7 @@ export interface components {
         };
     };
     responses: never;
-    parameters: {
-        /** @description ID проекта */
-        project_id: number;
-    };
+    parameters: never;
     requestBodies: never;
     headers: never;
     pathItems: never;

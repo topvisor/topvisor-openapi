@@ -13,10 +13,7 @@ export interface components {
         };
     };
     responses: never;
-    parameters: {
-        /** @description Имя команды cron */
-        command: string;
-    };
+    parameters: never;
     requestBodies: never;
     headers: never;
     pathItems: never;
