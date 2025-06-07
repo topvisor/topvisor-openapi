@@ -15,12 +15,7 @@ export interface components {
         };
     };
     responses: never;
-    parameters: {
-        /** @description Число объектов, которое необходимо пропустить при получении резальтата
-         *
-         *     Используется в паре с limit */
-        offset: number;
-    };
+    parameters: never;
     requestBodies: never;
     headers: never;
     pathItems: never;

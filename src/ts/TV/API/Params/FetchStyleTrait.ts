@@ -22,18 +22,7 @@ export interface components {
         };
     };
     responses: never;
-    parameters: {
-        /** @description Определяет формат результата: коллекция, объект, значение
-         *
-         *     Примеры:
-         *     - fetchAll - получить коллекцию объектов
-         *     - fetch - получить один объект
-         *     - fetchColumn - получить свойсвто объекта
-         *
-         *     @see Selector::AVAILABLE_FETCH_STYLES
-         *     @see Selector::execFetch() - см. реализацию */
-        fetch_style: string;
-    };
+    parameters: never;
     requestBodies: never;
     headers: never;
     pathItems: never;

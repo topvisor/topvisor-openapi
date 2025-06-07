@@ -15,12 +15,7 @@ export interface components {
         };
     };
     responses: never;
-    parameters: {
-        /** @description Количество объектов, которые необходимо получить в результате
-         *
-         *     Используется в паре с offset */
-        limit: number;
-    };
+    parameters: never;
     requestBodies: never;
     headers: never;
     pathItems: never;

@@ -19,17 +19,6 @@
                 },
                 "required": []
             }
-        },
-        "parameters": {
-            "fetch_style": {
-                "name": "fetch_style",
-                "description": "Определяет формат результата: коллекция, объект, значение\n\nПримеры:\n- fetchAll - получить коллекцию объектов\n- fetch - получить один объект\n- fetchColumn - получить свойсвто объекта\n\n@see Selector::AVAILABLE_FETCH_STYLES\n@see Selector::execFetch() - см. реализацию",
-                "style": "deepObject",
-                "in": "query",
-                "schema": {
-                    "type": "string"
-                }
-            }
         }
     }
 }

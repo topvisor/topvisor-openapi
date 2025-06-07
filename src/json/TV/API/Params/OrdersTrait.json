@@ -30,28 +30,6 @@
                     "orders"
                 ]
             }
-        },
-        "parameters": {
-            "orders": {
-                "name": "orders",
-                "description": "Список полей объекта, по которым необходимо выполнить сортировку\n\nПоля могут быть строками или объектом: {name: string, direction: 'ASC' | 'DESC', orderValues: array}\n\nИспользует поля модели\n\n@see AbstractMethod::MODEL",
-                "required": true,
-                "style": "deepObject",
-                "in": "query",
-                "schema": {
-                    "type": "array",
-                    "items": {
-                        "oneOf": [
-                            {
-                                "type": "string"
-                            },
-                            {
-                                "type": "number"
-                            }
-                        ]
-                    }
-                }
-            }
         }
     }
 }

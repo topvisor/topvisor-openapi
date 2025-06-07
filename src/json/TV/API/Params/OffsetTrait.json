@@ -19,18 +19,6 @@
                     "offset"
                 ]
             }
-        },
-        "parameters": {
-            "offset": {
-                "name": "offset",
-                "description": "Число объектов, которое необходимо пропустить при получении резальтата\n\nИспользуется в паре с limit",
-                "required": true,
-                "style": "deepObject",
-                "in": "query",
-                "schema": {
-                    "type": "integer"
-                }
-            }
         }
     }
 }

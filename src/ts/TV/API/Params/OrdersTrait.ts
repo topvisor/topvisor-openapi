@@ -20,16 +20,7 @@ export interface components {
         };
     };
     responses: never;
-    parameters: {
-        /** @description Список полей объекта, по которым необходимо выполнить сортировку
-         *
-         *     Поля могут быть строками или объектом: {name: string, direction: 'ASC' | 'DESC', orderValues: array}
-         *
-         *     Использует поля модели
-         *
-         *     @see AbstractMethod::MODEL */
-        orders: (string | number)[];
-    };
+    parameters: never;
     requestBodies: never;
     headers: never;
     pathItems: never;

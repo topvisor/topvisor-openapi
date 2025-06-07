@@ -27,23 +27,7 @@ export interface components {
         };
     };
     responses: never;
-    parameters: {
-        /** @description Список фильтров по полям объекта
-         *
-         *     {name: string, operator: Field::AVAILABLE_OPERATORS, values: array}
-         *
-         *     Использует поля модели
-         *
-         *     Поля обязатлеьное, если $id не указан
-         *
-         *     @see AbstractMethod::MODEL
-         *     @see Field::AVAILABLE_OPERATORS */
-        filters: (string | number)[];
-        /** @description Id объекта, для фильтрации объектов по id
-         *
-         *     Только для моделей с полем id */
-        id: number;
-    };
+    parameters: never;
     requestBodies: never;
     headers: never;
     pathItems: never;

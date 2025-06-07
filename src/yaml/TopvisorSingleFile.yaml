@@ -3742,7 +3742,14 @@ paths:
                       - type: object
                         properties:
                           result:
-                            title: '@type array<int>'
+                            title: |-
+                              Тест phpDoc
+
+                              TODO: Удалить после настройки openapi
+
+                              - static
+                              - parent
+                              - self
                             description: '@type array<int>'
                             allOf:
                               - $ref: '#/components/schemas/Example_2.Methods.PhpDoc.Get'
@@ -18580,13 +18587,6 @@ components:
         - orders
         - filters
         - offset
-      additionalProperties:
-        required:
-          - result
-        type: object
-        properties:
-          result:
-            $ref: '#/components/schemas/Example_2.Methods.PhpDoc.Get'
       title: Тест phpDoc
       description: '@todo : Удалить после настройки openapi'
     Example_2.Methods.Projects.Get:

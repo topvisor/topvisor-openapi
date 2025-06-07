@@ -18,17 +18,6 @@
                 },
                 "required": []
             }
-        },
-        "parameters": {
-            "limit": {
-                "name": "limit",
-                "description": "Количество объектов, которые необходимо получить в результате\n\nИспользуется в паре с offset",
-                "style": "deepObject",
-                "in": "query",
-                "schema": {
-                    "type": "integer"
-                }
-            }
         }
     }
 }
