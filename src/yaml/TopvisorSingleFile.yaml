@@ -20569,9 +20569,30 @@ components:
       required:
         - user
       title: Метод с примерами параметров типа Object
+    TV.API.Params.FieldsTrait:
+      type: object
+      properties:
+        fields:
+          title: |-
+            Список полей объекта, которые надо вернуть в результате
+
+            Если запрос поддерижвает параметр fetch_style, формат ответа может быть разным, fields будет влиять на содержание данных в этом ответе
+
+            Использует поля модели
+          description: '@see AbstractMethod::MODEL'
+          type: array
+          items:
+            oneOf:
+              - type: string
+              - type: number
+      required:
+        - fields
     Example_2.Methods.PhpDoc.Get:
       type: object
       properties:
+        test:
+          allOf:
+            - $ref: '#/components/schemas/TV.API.Params.FieldsTrait'
         fields:
           title: |-
             Список полей объекта, которые надо вернуть в результате
@@ -20649,6 +20670,7 @@ components:
           nullable: true
           type: string
       required:
+        - test
         - fields
         - orders
         - filters

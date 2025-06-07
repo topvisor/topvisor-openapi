@@ -12,6 +12,7 @@ export interface components {
          * @description @todo : Удалить после настройки openapi
          */
         "Example_2.Methods.PhpDoc.Get": {
+            test: import('../../../TV/API/Params/FieldsTrait.ts').components['schemas']['TV.API.Params.FieldsTrait'];
             /**
              * Список полей объекта, которые надо вернуть в результате
              *
