@@ -6490,7 +6490,7 @@
                 },
                 "responses": {
                     "200": {
-                        "description": "",
+                        "description": "Тест phpDoc\n\nTODO: Удалить после настройки openapi\n\n- static\n- parent\n- self",
                         "content": {
                             "application/json": {
                                 "schema": {
@@ -6530,6 +6530,12 @@
                             "model": {
                                 "schema": {
                                     "type": "null"
+                                }
+                            },
+                            "application/octet-stream": {
+                                "schema": {
+                                    "type": "string",
+                                    "format": "binary"
                                 }
                             }
                         }

@@ -3733,7 +3733,14 @@ paths:
         required: true
       responses:
         '200':
-          description: ''
+          description: |-
+            Тест phpDoc
+
+            TODO: Удалить после настройки openapi
+
+            - static
+            - parent
+            - self
           content:
             application/json:
               schema:
@@ -3760,6 +3767,10 @@ paths:
             model:
               schema:
                 type: 'null'
+            application/octet-stream:
+              schema:
+                type: string
+                format: binary
   /get/example_2/projects/:
     post:
       operationId: GetExample2Projects
