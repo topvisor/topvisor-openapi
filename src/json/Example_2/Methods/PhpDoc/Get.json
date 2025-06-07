@@ -38,6 +38,17 @@
                     "filters",
                     "offset"
                 ],
+                "additionalProperties": {
+                    "required": [
+                        "result"
+                    ],
+                    "type": "object",
+                    "properties": {
+                        "result": {
+                            "$ref": "../../../Example_2/Methods/PhpDoc/Get.json#/components/schemas/Example_2.Methods.PhpDoc.Get"
+                        }
+                    }
+                },
                 "title": "Тест phpDoc",
                 "description": "@todo : Удалить после настройки openapi"
             }

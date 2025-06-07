@@ -18580,6 +18580,13 @@ components:
         - orders
         - filters
         - offset
+      additionalProperties:
+        required:
+          - result
+        type: object
+        properties:
+          result:
+            $ref: '#/components/schemas/Example_2.Methods.PhpDoc.Get'
       title: Тест phpDoc
       description: '@todo : Удалить после настройки openapi'
     Example_2.Methods.Projects.Get:
