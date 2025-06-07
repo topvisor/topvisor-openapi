@@ -111,8 +111,7 @@
                         "type": "string"
                     },
                     "project_id": {
-                        "title": "ID проекта",
-                        "type": "integer"
+                        "$ref": "../../../../../TV/API/Params/ProjectIdTrait.json#/components/schemas/TV.API.Params.ProjectIdTrait/properties/project_id"
                     }
                 },
                 "required": [

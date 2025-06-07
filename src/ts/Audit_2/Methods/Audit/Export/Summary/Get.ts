@@ -11,10 +11,8 @@ export interface components {
         "Audit_2.Methods.Audit.Export.Summary.Get": {
             /** Формат экспортируемого файла */
             output: string;
-            /** ID проекта */
-            project_id: number;
-            /** ID проверки аудита */
-            check_id: number;
+            project_id: import('../../../../../TV/API/Params/ProjectIdTrait.ts').components['schemas']['TV.API.Params.ProjectIdTrait']['project_id'];
+            check_id: import('../../../../Params/Audit/CheckIdTrait.ts').components['schemas']['Audit_2.Params.Audit.CheckIdTrait']['check_id'];
         };
     };
     responses: never;

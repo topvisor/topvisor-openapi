@@ -16,15 +16,7 @@ export interface components {
              * @description @internal
              */
             result?: import('../../Objects/Subscriptions/Subscription.ts').components['schemas']['Bank_2.Objects.Subscriptions.Subscription'] | null;
-            /**
-             * Список полей объекта, которые надо вернуть в результате
-             *
-             *     Если запрос поддерижвает параметр fetch_style, формат ответа может быть разным, fields будет влиять на содержание данных в этом ответе
-             *
-             *     Использует поля модели
-             * @description @see AbstractMethod::MODEL
-             */
-            fields?: (string | number)[];
+            fields?: import('../../../TV/API/Params/FieldsTrait.ts').components['schemas']['TV.API.Params.FieldsTrait']['fields'];
         };
     };
     responses: never;

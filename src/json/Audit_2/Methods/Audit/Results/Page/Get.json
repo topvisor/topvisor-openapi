@@ -20,27 +20,13 @@
                         "type": "string"
                     },
                     "orders": {
-                        "title": "Список полей объекта, по которым необходимо выполнить сортировку\n\nПоля могут быть строками или объектом: {name: string, direction: 'ASC' | 'DESC', orderValues: array}\n\nИспользует поля модели",
-                        "description": "@see AbstractMethod::MODEL",
-                        "type": "array",
-                        "items": {
-                            "oneOf": [
-                                {
-                                    "type": "string"
-                                },
-                                {
-                                    "type": "number"
-                                }
-                            ]
-                        }
+                        "$ref": "../../../../../TV/API/Params/OrdersTrait.json#/components/schemas/TV.API.Params.OrdersTrait/properties/orders"
                     },
                     "project_id": {
-                        "title": "ID проекта",
-                        "type": "integer"
+                        "$ref": "../../../../../TV/API/Params/ProjectIdTrait.json#/components/schemas/TV.API.Params.ProjectIdTrait/properties/project_id"
                     },
                     "check_id": {
-                        "title": "ID проверки аудита",
-                        "type": "integer"
+                        "$ref": "../../../../../Audit_2/Params/Audit/CheckIdTrait.json#/components/schemas/Audit_2.Params.Audit.CheckIdTrait/properties/check_id"
                     }
                 },
                 "required": [

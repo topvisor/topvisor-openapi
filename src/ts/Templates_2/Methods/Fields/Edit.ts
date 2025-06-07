@@ -16,15 +16,7 @@ export interface components {
             target_id?: number | null;
             /** Свойства шаблона */
             properties?: (string | number)[];
-            /**
-             * Список полей объекта, которые надо вернуть в результате
-             *
-             *     Если запрос поддерижвает параметр fetch_style, формат ответа может быть разным, fields будет влиять на содержание данных в этом ответе
-             *
-             *     Использует поля модели
-             * @description @see AbstractMethod::MODEL
-             */
-            fields?: (string | number)[];
+            fields?: import('../../../TV/API/Params/FieldsTrait.ts').components['schemas']['TV.API.Params.FieldsTrait']['fields'];
         };
     };
     responses: never;

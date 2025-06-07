@@ -16,8 +16,7 @@ export interface components {
             i: import('../../Types/Minute.ts').components['schemas']['Cron_2.Types.Minute'];
             /** Статус активности задачи */
             on?: boolean;
-            /** Имя команды cron */
-            command: string;
+            command: import('../../Params/CommandTrait.ts').components['schemas']['Cron_2.Params.CommandTrait']['command'];
         };
     };
     responses: never;

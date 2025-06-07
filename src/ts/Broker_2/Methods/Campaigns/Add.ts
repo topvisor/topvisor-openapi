@@ -11,22 +11,8 @@ export interface components {
         "Broker_2.Methods.Campaigns.Add": {
             /** Id проекта */
             project_id: number;
-            /**
-             * Список фильтров по полям объекта
-             *
-             *     {name: string, operator: Field::AVAILABLE_OPERATORS, values: array}
-             *
-             *     Использует поля модели
-             *
-             *     Поля обязатлеьное, если $id не указан
-             * @description @see AbstractMethod::MODEL
-             *     @see Field::AVAILABLE_OPERATORS
-             */
-            filters?: (string | number)[];
-            /** Id объекта, для фильтрации объектов по id
-             *
-             *     Только для моделей с полем id */
-            id?: number | null;
+            filters?: import('../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['filters'];
+            id?: import('../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['id'];
         };
     };
     responses: never;

@@ -21,8 +21,7 @@ export interface components {
             /** Флаг активности в индексации */
             watcher?: import('../Types/Flag.ts').components['schemas']['Urls_2.Types.Flag'] | null;
             tags?: import('../../Tags_2/Types/TagsIds.ts').components['schemas']['Tags_2.Types.TagsIds'] | null;
-            /** ID проекта */
-            project_id: number;
+            project_id: import('../../TV/API/Params/ProjectIdTrait.ts').components['schemas']['TV.API.Params.ProjectIdTrait']['project_id'];
         };
     };
     responses: never;

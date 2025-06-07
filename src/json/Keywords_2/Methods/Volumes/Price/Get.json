@@ -51,24 +51,10 @@
                         "type": "boolean"
                     },
                     "filters": {
-                        "title": "Список фильтров по полям объекта\n\n{name: string, operator: Field::AVAILABLE_OPERATORS, values: array}\n\nИспользует поля модели\n\nПоля обязатлеьное, если $id не указан",
-                        "description": "@see AbstractMethod::MODEL\n@see Field::AVAILABLE_OPERATORS",
-                        "type": "array",
-                        "items": {
-                            "oneOf": [
-                                {
-                                    "type": "string"
-                                },
-                                {
-                                    "type": "number"
-                                }
-                            ]
-                        }
+                        "$ref": "../../../../TV/API/Params/FiltersTrait.json#/components/schemas/TV.API.Params.FiltersTrait/properties/filters"
                     },
                     "id": {
-                        "title": "Id объекта, для фильтрации объектов по id\n\nТолько для моделей с полем id",
-                        "nullable": true,
-                        "type": "integer"
+                        "$ref": "../../../../TV/API/Params/FiltersTrait.json#/components/schemas/TV.API.Params.FiltersTrait/properties/id"
                     }
                 },
                 "required": [

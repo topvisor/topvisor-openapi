@@ -42,17 +42,8 @@ export interface components {
              * @default 60
              */
             count_dates: number;
-            /** ID проекта */
-            project_id: number;
-            /**
-             * Список полей объекта, которые надо вернуть в результате
-             *
-             *     Если запрос поддерижвает параметр fetch_style, формат ответа может быть разным, fields будет влиять на содержание данных в этом ответе
-             *
-             *     Использует поля модели
-             * @description @see AbstractMethod::MODEL
-             */
-            fields?: (string | number)[];
+            project_id: import('../../../../TV/API/Params/ProjectIdTrait.ts').components['schemas']['TV.API.Params.ProjectIdTrait']['project_id'];
+            fields?: import('../../../../TV/API/Params/FieldsTrait.ts').components['schemas']['TV.API.Params.FieldsTrait']['fields'];
         };
     };
     responses: never;

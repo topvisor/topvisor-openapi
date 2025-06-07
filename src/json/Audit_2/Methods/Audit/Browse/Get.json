@@ -11,12 +11,10 @@
                 "type": "object",
                 "properties": {
                     "project_id": {
-                        "title": "ID проекта",
-                        "type": "integer"
+                        "$ref": "../../../../TV/API/Params/ProjectIdTrait.json#/components/schemas/TV.API.Params.ProjectIdTrait/properties/project_id"
                     },
                     "check_id": {
-                        "title": "ID проверки аудита",
-                        "type": "integer"
+                        "$ref": "../../../../Audit_2/Params/Audit/CheckIdTrait.json#/components/schemas/Audit_2.Params.Audit.CheckIdTrait/properties/check_id"
                     }
                 },
                 "required": [

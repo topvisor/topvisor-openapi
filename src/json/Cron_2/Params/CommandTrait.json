@@ -1,0 +1,36 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Cron_2.Params.CommandTrait",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Cron_2.Params.CommandTrait": {
+                "type": "object",
+                "properties": {
+                    "command": {
+                        "title": "Имя команды cron",
+                        "type": "string"
+                    }
+                },
+                "required": [
+                    "command"
+                ]
+            }
+        },
+        "parameters": {
+            "command": {
+                "name": "command",
+                "description": "Имя команды cron",
+                "required": true,
+                "style": "deepObject",
+                "in": "query",
+                "schema": {
+                    "type": "string"
+                }
+            }
+        }
+    }
+}
