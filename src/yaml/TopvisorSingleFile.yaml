@@ -3502,7 +3502,10 @@ paths:
       operationId: GetExample2Bag
       tags:
         - Example_2
-      summary: 'TODO: удалить после закрытия задачи #28444'
+      summary: |-
+        Для тестов интерфейса
+
+        TODO: удалить после закрытия задачи #28444
       requestBody:
         content:
           application/json:
@@ -18138,7 +18141,10 @@ components:
           nullable: true
           type: integer
       required: []
-      title: 'TODO: удалить после закрытия задачи #28444'
+      title: |-
+        Для тестов интерфейса
+
+        TODO: удалить после закрытия задачи #28444
     Example_2.Methods.Custom.Get:
       type: object
       properties:

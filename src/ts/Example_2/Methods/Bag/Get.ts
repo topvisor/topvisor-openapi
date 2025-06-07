@@ -7,7 +7,9 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** TODO: удалить после закрытия задачи #28444 */
+        /** Для тестов интерфейса
+         *
+         *     TODO: удалить после закрытия задачи #28444 */
         "Example_2.Methods.Bag.Get": {
             type?: number | null;
         };

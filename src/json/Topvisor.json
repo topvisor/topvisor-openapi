@@ -6121,7 +6121,7 @@
                 "tags": [
                     "Example_2"
                 ],
-                "summary": "TODO: удалить после закрытия задачи #28444",
+                "summary": "Для тестов интерфейса\n\nTODO: удалить после закрытия задачи #28444",
                 "requestBody": {
                     "content": {
                         "application/json": {
