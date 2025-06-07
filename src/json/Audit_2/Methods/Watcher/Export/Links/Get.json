@@ -42,10 +42,12 @@
                         }
                     },
                     "project_id": {
-                        "$ref": "../../../../../TV/API/Params/ProjectIdTrait.json#/components/schemas/TV.API.Params.ProjectIdTrait/properties/project_id"
+                        "title": "ID проекта",
+                        "type": "integer"
                     },
                     "check_id": {
-                        "$ref": "../../../../../Audit_2/Params/Wathcer/CheckIdTrait.json#/components/schemas/Audit_2.Params.Wathcer.CheckIdTrait/properties/check_id"
+                        "title": "ID проверки радара",
+                        "type": "integer"
                     }
                 },
                 "required": [

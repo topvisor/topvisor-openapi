@@ -36,7 +36,8 @@ export interface components {
             data_dynamic?: (string | number)[] | null;
             /** Сортировка данных */
             data_sort?: (string | number)[] | null;
-            project_id: import('../../../../TV/API/Params/ProjectIdTrait.ts').components['schemas']['TV.API.Params.ProjectIdTrait']['project_id'];
+            /** ID проекта */
+            project_id: number;
         };
     };
     responses: never;

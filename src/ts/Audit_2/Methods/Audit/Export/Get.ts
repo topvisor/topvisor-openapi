@@ -20,11 +20,35 @@ export interface components {
             filters_resources?: (string | number)[];
             /** Формат экспортируемого файла */
             output: import('../../../../TV/API/Types/ExportFormat.ts').components['schemas']['TV.API.Types.ExportFormat'];
-            project_id: import('../../../../TV/API/Params/ProjectIdTrait.ts').components['schemas']['TV.API.Params.ProjectIdTrait']['project_id'];
-            fields?: import('../../../../TV/API/Params/FieldsTrait.ts').components['schemas']['TV.API.Params.FieldsTrait']['fields'];
-            filters?: import('../../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['filters'];
-            id?: import('../../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['id'];
-            check_id: import('../../../Params/Audit/CheckIdTrait.ts').components['schemas']['Audit_2.Params.Audit.CheckIdTrait']['check_id'];
+            /** ID проекта */
+            project_id: number;
+            /**
+             * Список полей объекта, которые надо вернуть в результате
+             *
+             *     Если запрос поддерижвает параметр fetch_style, формат ответа может быть разным, fields будет влиять на содержание данных в этом ответе
+             *
+             *     Использует поля модели
+             * @description @see AbstractMethod::MODEL
+             */
+            fields?: (string | number)[];
+            /**
+             * Список фильтров по полям объекта
+             *
+             *     {name: string, operator: Field::AVAILABLE_OPERATORS, values: array}
+             *
+             *     Использует поля модели
+             *
+             *     Поля обязатлеьное, если $id не указан
+             * @description @see AbstractMethod::MODEL
+             *     @see Field::AVAILABLE_OPERATORS
+             */
+            filters?: (string | number)[];
+            /** Id объекта, для фильтрации объектов по id
+             *
+             *     Только для моделей с полем id */
+            id?: number | null;
+            /** ID проверки аудита */
+            check_id: number;
         };
     };
     responses: never;

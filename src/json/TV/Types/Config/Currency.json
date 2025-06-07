@@ -12,102 +12,102 @@
                 "properties": {
                     "GA_CU": {
                         "title": "Код валюты.",
-                        "default": "No set",
                         "readOnly": true,
+                        "default": "No set",
                         "type": "string"
                     },
                     "CU_LABEL": {
                         "title": "Символ валюты.",
-                        "default": "No set",
                         "readOnly": true,
+                        "default": "No set",
                         "type": "string"
                     },
                     "CU_PREFIX": {
                         "title": "Префикс валюты.\n\n`CU_PREFIX` и `getCUSuffix()` взаимоисключены, только один из них должен опредять не пустое значение",
-                        "default": "No set",
                         "readOnly": true,
+                        "default": "No set",
                         "type": "string"
                     },
                     "CU_PREFIX_ICO": {
                         "title": "Иконка префикса валюты.",
-                        "default": "No set",
                         "readOnly": true,
+                        "default": "No set",
                         "type": "string"
                     },
                     "CU_SUFFIX_ICO": {
                         "title": "Иконка суффикса валюты.",
-                        "default": "No set",
                         "readOnly": true,
+                        "default": "No set",
                         "type": "string"
                     },
                     "CU_PRECISION": {
                         "title": "Точность валюты.",
-                        "default": 10000,
                         "readOnly": true,
+                        "default": 10000,
                         "type": "integer"
                     },
                     "QUERY_COST": {
                         "title": "Стоимость запроса в валюте.",
-                        "default": 10000,
                         "readOnly": true,
+                        "default": 10000,
                         "type": "number"
                     },
                     "QUERY_COST_COMPETITORS": {
                         "title": "Стоимость запроса для конкурентов.",
-                        "default": 10000,
                         "readOnly": true,
+                        "default": 10000,
                         "type": "number"
                     },
                     "QUERY_COST_SERP": {
                         "title": "Стоимость запроса для SERP.",
-                        "default": 10000,
                         "readOnly": true,
+                        "default": 10000,
                         "type": "number"
                     },
                     "QUERY_COST_SNIPPET": {
                         "title": "Стоимость запроса для сниппетов.",
-                        "default": 10000,
                         "readOnly": true,
+                        "default": 10000,
                         "type": "number"
                     },
                     "QUERY_COST_SNAPSHOT": {
                         "title": "Стоимость запроса для снэпшота.",
-                        "default": 10000,
                         "readOnly": true,
+                        "default": 10000,
                         "type": "number"
                     },
                     "QUERY_COST_DEPTH_K": {
                         "title": "Глубина запроса.",
-                        "default": 10000,
                         "readOnly": true,
+                        "default": 10000,
                         "type": "integer"
                     },
                     "EXPORT_ONE_RESULT_COST": {
                         "title": "Стоимость одного результата экспорта.",
-                        "default": 10000,
                         "readOnly": true,
+                        "default": 10000,
                         "type": "number"
                     },
                     "QUERY_COST_FREQUENCY": {
                         "title": "Частота запросов.",
-                        "default": 10000,
                         "readOnly": true,
+                        "default": 10000,
                         "type": "number"
                     },
                     "SY_COST": {
                         "title": "Стоимость SY.",
-                        "default": 10000,
                         "readOnly": true,
+                        "default": 10000,
                         "type": "number"
                     },
                     "SY_HINTS_COST": {
                         "title": "Массив с подсказками стоимости.",
+                        "readOnly": true,
                         "default": [
                             10000,
                             10000,
                             10000
                         ],
-                        "readOnly": true,
                         "type": "array",
                         "items": {
                             "oneOf": [
@@ -122,138 +122,139 @@
                     },
                     "BROKER_COST": {
                         "title": "Стоимость брокера.",
-                        "default": 10000,
                         "readOnly": true,
+                        "default": 10000,
                         "type": "number"
                     },
                     "BROKER_MIN_BALANCE": {
                         "title": "Необходимый баланс для запуска корректировки ставок.",
-                        "default": 10000,
                         "readOnly": true,
+                        "default": 10000,
                         "type": "number"
                     },
                     "CLASTER_COST": {
                         "title": "Стоимость кластера.",
-                        "default": 10000,
                         "readOnly": true,
+                        "default": 10000,
                         "type": "number"
                     },
                     "CLASTER_COST_10": {
                         "title": "Стоимость кластера для 10 единиц.",
-                        "default": 10000,
                         "readOnly": true,
+                        "default": 10000,
                         "type": "number"
                     },
                     "CLASTER_COST_50": {
                         "title": "Стоимость кластера для 50 единиц.",
-                        "default": 10000,
                         "readOnly": true,
+                        "default": 10000,
                         "type": "number"
                     },
                     "CLASTER_COST_250": {
                         "title": "Стоимость кластера для 250 единиц.",
-                        "default": 10000,
                         "readOnly": true,
+                        "default": 10000,
                         "type": "number"
                     },
                     "CLASTER_CHANGE_COST": {
                         "title": "Стоимость изменения кластера.",
-                        "default": 10000,
                         "readOnly": true,
+                        "default": 10000,
                         "type": "number"
                     },
                     "AUDIT_SITEMAP_100": {
                         "title": "Стоимость для audit_sitemap_100.",
-                        "default": 10000,
                         "readOnly": true,
+                        "default": 10000,
                         "type": "number"
                     },
                     "AUDIT_SITEMAP_1000": {
                         "title": "Стоимость для audit_sitemap_1000.",
-                        "default": 10000,
                         "readOnly": true,
+                        "default": 10000,
                         "type": "number"
                     },
                     "AUDIT_SITEMAP_10000": {
                         "title": "Стоимость для audit_sitemap_10000.",
-                        "default": 10000,
                         "readOnly": true,
+                        "default": 10000,
                         "type": "number"
                     },
                     "AUDIT_SITEMAP_100000": {
                         "title": "Стоимость для audit_sitemap_100000.",
-                        "default": 10000,
                         "readOnly": true,
+                        "default": 10000,
                         "type": "number"
                     },
                     "AUDIT_SITEMAP_150000": {
                         "title": "Стоимость для audit_sitemap_150000.",
-                        "default": 10000,
                         "readOnly": true,
+                        "default": 10000,
                         "type": "number"
                     },
                     "AUDIT_SITEMAP_300000": {
                         "title": "Стоимость для audit_sitemap_300000.",
-                        "default": 10000,
                         "readOnly": true,
+                        "default": 10000,
                         "type": "number"
                     },
                     "AUDIT_COST": {
                         "title": "Стоимость для аудита.",
-                        "default": 10000,
                         "readOnly": true,
+                        "default": 10000,
                         "type": "number"
                     },
                     "AUDIT_COST_100": {
                         "title": "Стоимость для аудита 100.",
-                        "default": 10000,
                         "readOnly": true,
+                        "default": 10000,
                         "type": "number"
                     },
                     "AUDIT_COST_1000": {
                         "title": "Стоимость для аудита 1000.",
-                        "default": 10000,
                         "readOnly": true,
+                        "default": 10000,
                         "type": "number"
                     },
                     "AUDIT_COST_10000": {
                         "title": "Стоимость для аудита 10000.",
-                        "default": 10000,
                         "readOnly": true,
+                        "default": 10000,
                         "type": "number"
                     },
                     "WATCHER_COST": {
                         "title": "Стоимость наблюдателя.",
-                        "default": 10000,
                         "readOnly": true,
+                        "default": 10000,
                         "type": "number"
                     },
                     "INDEXING_COST": {
                         "title": "Стоимость индексации.",
-                        "default": 10000,
                         "readOnly": true,
+                        "default": 10000,
                         "type": "number"
                     },
                     "MENTIONS_COST": {
                         "title": "Стоимость упоминаний.",
-                        "default": 10000,
                         "readOnly": true,
+                        "default": 10000,
                         "type": "number"
                     },
                     "COMPETITORS_COST": {
                         "title": "Стоимость конкурентов.",
-                        "default": 10000,
                         "readOnly": true,
+                        "default": 10000,
                         "type": "number"
                     },
                     "WEB_SCREENS_COST": {
                         "title": "Стоимость веб-скриншотов.",
-                        "default": 10000,
                         "readOnly": true,
+                        "default": 10000,
                         "type": "number"
                     },
                     "TARIFF_NAMES": {
                         "title": "Массив тарифных планов.",
+                        "readOnly": true,
                         "default": [
                             "No set",
                             "No set",
@@ -261,7 +262,6 @@
                             "No set",
                             "No set"
                         ],
-                        "readOnly": true,
                         "type": "array",
                         "items": {
                             "oneOf": [
@@ -276,6 +276,7 @@
                     },
                     "TARIFF_VALUES": {
                         "title": "Массив значений тарифов.",
+                        "readOnly": true,
                         "default": [
                             10000,
                             10000,
@@ -283,7 +284,6 @@
                             10000,
                             10000
                         ],
-                        "readOnly": true,
                         "type": "array",
                         "items": {
                             "oneOf": [
@@ -298,6 +298,7 @@
                     },
                     "TARIFF_DISCOUNT": {
                         "title": "Массив скидок на тарифы.",
+                        "readOnly": true,
                         "default": [
                             0,
                             10,
@@ -305,7 +306,6 @@
                             20,
                             30
                         ],
-                        "readOnly": true,
                         "type": "array",
                         "items": {
                             "oneOf": [

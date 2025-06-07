@@ -20,8 +20,8 @@
                     },
                     "type_action": {
                         "title": "Тип подтверждения",
-                        "default": "acceptAction",
                         "nullable": true,
+                        "default": "acceptAction",
                         "type": "string"
                     }
                 },

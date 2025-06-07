@@ -20,8 +20,8 @@
                     },
                     "to_type": {
                         "title": "Позиция перемещения:\n- before\n- after",
-                        "default": "after",
                         "nullable": true,
+                        "default": "after",
                         "type": "string"
                     }
                 },

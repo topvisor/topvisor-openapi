@@ -25,10 +25,10 @@
                     },
                     "tags": {
                         "title": "enum(1..10) tags - теги проекта (по умолчанию - [1])",
+                        "nullable": true,
                         "default": [
                             1
                         ],
-                        "nullable": true,
                         "type": "array",
                         "items": {
                             "oneOf": [

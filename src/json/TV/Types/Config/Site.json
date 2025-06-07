@@ -12,44 +12,44 @@
                 "properties": {
                     "ID": {
                         "title": "Ключ домена\n\nИспользуется в путях файлов и в БД",
-                        "default": "No set",
                         "readOnly": true,
+                        "default": "No set",
                         "type": "string"
                     },
                     "ID_ASSETS": {
                         "title": "Аббревиатура ключа домена\n\nИспользуется в путях публичных ресурсов, например для файлов на CDN",
-                        "default": "No set",
                         "readOnly": true,
+                        "default": "No set",
                         "type": "string"
                     },
                     "HOST": {
                         "title": "Основной хост",
-                        "default": "No set",
                         "readOnly": true,
+                        "default": "No set",
                         "type": "string"
                     },
                     "HOST_DEV": {
                         "title": "Основной хост для разработки",
-                        "default": "No set",
                         "readOnly": true,
+                        "default": "No set",
                         "type": "string"
                     },
                     "HOST_TPVSR": {
                         "title": "Хост сокращателя ссылок",
-                        "default": "No set",
                         "readOnly": true,
+                        "default": "No set",
                         "type": "string"
                     },
                     "HOST_TPVSR_MODULE": {
                         "title": "Имя модуля",
-                        "default": "No set",
                         "readOnly": true,
+                        "default": "No set",
                         "type": "string"
                     },
                     "DEFAULT_BANK_TYPE": {
                         "title": "Тип биллинга по умолчанию\n\n- balance\n- limits",
-                        "default": "balance",
                         "readOnly": true,
+                        "default": "balance",
                         "type": "string"
                     },
                     "LANGUAGES": {
@@ -69,8 +69,8 @@
                     },
                     "LANGUAGE_MAIN": {
                         "title": "Оснвоной язык, ISO 639-1",
-                        "default": "No set",
                         "readOnly": true,
+                        "default": "No set",
                         "type": "string"
                     },
                     "LANGUAGES_ADDITIONAL": {
@@ -90,10 +90,10 @@
                     },
                     "CURRENCIES": {
                         "title": "Список валют, используемых на сайте",
+                        "readOnly": true,
                         "default": [
                             "No set"
                         ],
-                        "readOnly": true,
                         "type": "array",
                         "items": {
                             "oneOf": [
@@ -138,26 +138,26 @@
                     },
                     "MAILING_EMAIL": {
                         "title": "Почта рассыльщика\n\nОна же используется в тикетнице",
-                        "default": "No set",
                         "readOnly": true,
+                        "default": "No set",
                         "type": "string"
                     },
                     "MAILING_ALT_EMAIL": {
                         "title": "Альтернативная почта рассыльщика\n\nИспользуется, если нужно отправлять почту от имени другого домена\n\nДанная почта должна быть настроена на пересылку всех писем на MAILING_EMAIL",
-                        "default": "No set",
                         "readOnly": true,
+                        "default": "No set",
                         "type": "string"
                     },
                     "SUPPORT_EMAIL": {
                         "title": "Почта поддержки, обычно alias MAILING_EMAIL",
-                        "default": "No set",
                         "readOnly": true,
+                        "default": "No set",
                         "type": "string"
                     },
                     "NO_REPLY_EMAIL": {
                         "title": "Почта рассыльщика, без приема ответов",
-                        "default": "No set",
                         "readOnly": true,
+                        "default": "No set",
                         "type": "string"
                     },
                     "CLOSED_BY_MOD": {
@@ -177,37 +177,37 @@
                         }
                     },
                     "INN": {
-                        "default": "No set",
                         "readOnly": true,
+                        "default": "No set",
                         "type": "string"
                     },
                     "COUNTER_YANDEX": {
                         "title": "Счетчик Яндекс метрики",
-                        "default": "No set",
                         "readOnly": true,
+                        "default": "No set",
                         "type": "string"
                     },
                     "COUNTER_YANDEX_JOURNAL": {
                         "title": "Счетчик Яндекс метрики для модуля Журнал",
-                        "default": "No set",
                         "readOnly": true,
+                        "default": "No set",
                         "type": "string"
                     },
                     "COUNTER_GOOGLE": {
                         "title": "Счетчик Google Аналитики",
-                        "default": "No set",
                         "readOnly": true,
+                        "default": "No set",
                         "type": "string"
                     },
                     "COUNTER_GOOGLE_JOURNAL": {
                         "title": "Счетчик Google Аналитики для модуля Журнал",
-                        "default": "No set",
                         "readOnly": true,
+                        "default": "No set",
                         "type": "string"
                     },
                     "DIADOC_ID": {
-                        "default": 10000,
                         "readOnly": true,
+                        "default": 10000,
                         "type": "integer"
                     }
                 },

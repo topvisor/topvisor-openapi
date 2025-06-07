@@ -33,7 +33,8 @@ export interface components {
             data_sort?: (string | number)[] | null;
             /** Применение изменений только для */
             only_changed_for?: string | null;
-            project_id: import('../../../../../TV/API/Params/ProjectIdTrait.ts').components['schemas']['TV.API.Params.ProjectIdTrait']['project_id'];
+            /** ID проекта */
+            project_id: number;
         };
     };
     responses: never;

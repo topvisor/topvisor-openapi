@@ -10,7 +10,8 @@ export interface components {
         /** Экспорт файла в хранилище */
         "Audit_2.Methods.Indexing.Export.ToRepository.Get": {
             repository: import('../../../../../Export_2/Types/Repository/Name.ts').components['schemas']['Export_2.Types.Repository.Name'];
-            project_id: import('../../../../../TV/API/Params/ProjectIdTrait.ts').components['schemas']['TV.API.Params.ProjectIdTrait']['project_id'];
+            /** ID проекта */
+            project_id: number;
         };
     };
     responses: never;

@@ -11,13 +11,13 @@
                 "type": "object",
                 "properties": {
                     "fields": {
+                        "nullable": true,
                         "default": [
                             "id",
                             "name",
                             "site",
                             "on"
                         ],
-                        "nullable": true,
                         "type": "array",
                         "items": {
                             "oneOf": [

@@ -41,8 +41,8 @@
                     },
                     "type_range": {
                         "title": "Тип диапазона дат",
-                        "default": 7,
                         "nullable": true,
+                        "default": 7,
                         "allOf": [
                             {
                                 "$ref": "../../../../Audit_2/Types/Indexing/TypeRange.json#/components/schemas/Audit_2.Types.Indexing.TypeRange"
@@ -130,7 +130,8 @@
                         }
                     },
                     "project_id": {
-                        "$ref": "../../../../TV/API/Params/ProjectIdTrait.json#/components/schemas/TV.API.Params.ProjectIdTrait/properties/project_id"
+                        "title": "ID проекта",
+                        "type": "integer"
                     }
                 },
                 "required": [

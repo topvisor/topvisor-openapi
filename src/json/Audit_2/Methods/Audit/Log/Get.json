@@ -51,16 +51,21 @@
                         "type": "integer"
                     },
                     "project_id": {
-                        "$ref": "../../../../TV/API/Params/ProjectIdTrait.json#/components/schemas/TV.API.Params.ProjectIdTrait/properties/project_id"
+                        "title": "ID проекта",
+                        "type": "integer"
                     },
                     "limit": {
-                        "$ref": "../../../../TV/API/Params/LimitTrait.json#/components/schemas/TV.API.Params.LimitTrait/properties/limit"
+                        "title": "Количество объектов, которые необходимо получить в результате\n\nИспользуется в паре с offset",
+                        "nullable": true,
+                        "type": "integer"
                     },
                     "offset": {
-                        "$ref": "../../../../TV/API/Params/OffsetTrait.json#/components/schemas/TV.API.Params.OffsetTrait/properties/offset"
+                        "title": "Число объектов, которое необходимо пропустить при получении резальтата\n\nИспользуется в паре с limit",
+                        "type": "integer"
                     },
                     "check_id": {
-                        "$ref": "../../../../Audit_2/Params/Audit/CheckIdTrait.json#/components/schemas/Audit_2.Params.Audit.CheckIdTrait/properties/check_id"
+                        "title": "ID проверки аудита",
+                        "type": "integer"
                     }
                 },
                 "required": [

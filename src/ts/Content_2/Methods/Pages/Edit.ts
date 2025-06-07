@@ -59,8 +59,22 @@ export interface components {
              *
              *     Доступно всем, если не заполнено */
             required_posts_any?: import('../../Types/Pages/RequiredPosts.ts').components['schemas']['Content_2.Types.Pages.RequiredPosts'] | null;
-            filters?: import('../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['filters'];
-            id?: import('../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['id'];
+            /**
+             * Список фильтров по полям объекта
+             *
+             *     {name: string, operator: Field::AVAILABLE_OPERATORS, values: array}
+             *
+             *     Использует поля модели
+             *
+             *     Поля обязатлеьное, если $id не указан
+             * @description @see AbstractMethod::MODEL
+             *     @see Field::AVAILABLE_OPERATORS
+             */
+            filters?: (string | number)[];
+            /** Id объекта, для фильтрации объектов по id
+             *
+             *     Только для моделей с полем id */
+            id?: number | null;
         };
     };
     responses: never;

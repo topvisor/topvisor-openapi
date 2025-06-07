@@ -1745,7 +1745,9 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** TODO: удалить после закрытия задачи #28444 */
+    /** Для тестов интерфейса
+     *
+     *     TODO: удалить после закрытия задачи #28444 */
     "/get/example_2/bag/": {
         parameters: {
             query?: never;
@@ -1807,6 +1809,26 @@ export interface paths {
         get?: never;
         put?: never;
         post: operations["GetExample2Object"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /**
+     * Тест phpDoc
+     * @description @todo : Удалить после настройки openapi
+     */
+    "/get/example_2/phpDoc/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["GetExample2PhpDoc"];
         delete?: never;
         options?: never;
         head?: never;
@@ -6839,7 +6861,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: number;
+                        result: number | null;
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -6865,7 +6887,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: number;
+                        result: number | null;
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -6891,7 +6913,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: number;
+                        result: number | null;
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -6917,7 +6939,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: number;
+                        result: number | null;
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -6943,7 +6965,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: import('./Models/Annotations.ts').components['schemas']['Models.Annotations'][];
+                        result: import('./Models/Annotations.ts').components['schemas']['Models.Annotations'][] | null;
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: import('./Models/Annotations.ts').components['schemas']['Models.Annotations'];
                 };
@@ -6993,7 +7015,7 @@ export interface operations {
                 content: {
                     "application/json": ({
                         /** Id вставленного комментария */
-                        result: number;
+                        result: number | null;
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -7019,7 +7041,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: number;
+                        result: number | null;
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -7045,7 +7067,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: number;
+                        result: number | null;
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -7200,7 +7222,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: string;
+                        result: string | null;
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -7252,13 +7274,13 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        /** Непосредтсвенный вызов API функции
+                        /** Непосредственный вызов API функции
                          *
                          *     Запрещено делать публичной, это приведет к поломке preCall()
                          *
                          *     В описании к функции отвечать на вопрос: `Что является результатом запроса?` Например: `Список пользователей`
                          *
-                         *     TODO: Автоматической проверки нет, не менять protected */
+                         *     Не менять `protected`, проверка проводится при генерации схем в `TV\API\Objects\ClassAPIMethodInfo` */
                         result: unknown;
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
@@ -7286,7 +7308,7 @@ export interface operations {
                 content: {
                     "application/json": ({
                         /** @throws Exception */
-                        result: number;
+                        result: number | null;
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -7313,7 +7335,7 @@ export interface operations {
                 content: {
                     "application/json": ({
                         /** @throws Exception */
-                        result: number;
+                        result: number | null;
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -7392,7 +7414,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: (string | number)[];
+                        result: (string | number)[] | null;
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -7419,7 +7441,7 @@ export interface operations {
                 content: {
                     "application/json": ({
                         /** @throws Exception */
-                        result: number;
+                        result: number | null;
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -7446,7 +7468,7 @@ export interface operations {
                 content: {
                     "application/json": ({
                         /** @throws Exception */
-                        result: number;
+                        result: number | null;
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -7526,7 +7548,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: number;
+                        result: number | null;
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: import('./Models/Urls.ts').components['schemas']['Models.Urls'];
                 };
@@ -7552,7 +7574,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: number;
+                        result: number | null;
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: import('./Models/Urls.ts').components['schemas']['Models.Urls'];
                 };
@@ -7605,7 +7627,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: number;
+                        result: number | null;
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: import('./Models/Votes.ts').components['schemas']['Models.Votes'];
                 };
@@ -7631,7 +7653,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: import('./Models/Votes.ts').components['schemas']['Models.Votes'][];
+                        result: import('./Models/Votes.ts').components['schemas']['Models.Votes'][] | null;
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: import('./Models/Votes.ts').components['schemas']['Models.Votes'];
                 };
@@ -7680,13 +7702,13 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        /** Непосредтсвенный вызов API функции
+                        /** Непосредственный вызов API функции
                          *
                          *     Запрещено делать публичной, это приведет к поломке preCall()
                          *
                          *     В описании к функции отвечать на вопрос: `Что является результатом запроса?` Например: `Список пользователей`
                          *
-                         *     TODO: Автоматической проверки нет, не менять protected */
+                         *     Не менять `protected`, проверка проводится при генерации схем в `TV\API\Objects\ClassAPIMethodInfo` */
                         result: unknown;
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
@@ -7789,7 +7811,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: number;
+                        result: number | null;
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -7841,7 +7863,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: import('./Models/Analytics/Ranks.ts').components['schemas']['Models.Analytics.Ranks'][];
+                        result: import('./Models/Analytics/Ranks.ts').components['schemas']['Models.Analytics.Ranks'][] | null;
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: import('./Models/Analytics/Ranks.ts').components['schemas']['Models.Analytics.Ranks'];
                 };
@@ -7867,7 +7889,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: number;
+                        result: number | null;
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -7893,7 +7915,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: number;
+                        result: number | null;
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -7945,7 +7967,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: number;
+                        result: number | null;
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -8049,7 +8071,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: import('./Models/Votes.ts').components['schemas']['Models.Votes'][];
+                        result: import('./Models/Votes.ts').components['schemas']['Models.Votes'][] | null;
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: import('./Models/Votes.ts').components['schemas']['Models.Votes'];
                 };
@@ -8075,7 +8097,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: import('./Models/Annotations.ts').components['schemas']['Models.Annotations'][];
+                        result: import('./Models/Annotations.ts').components['schemas']['Models.Annotations'][] | null;
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: import('./Models/Annotations.ts').components['schemas']['Models.Annotations'];
                 };
@@ -8127,7 +8149,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: import('./Controller_2/Objects/Page.ts').components['schemas']['Controller_2.Objects.Page'];
+                        result: import('./Controller_2/Objects/Page.ts').components['schemas']['Controller_2.Objects.Page'] | null;
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -8154,7 +8176,7 @@ export interface operations {
                 content: {
                     "application/json": ({
                         /** Количество настроенных URL */
-                        result: number;
+                        result: number | null;
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -8208,7 +8230,7 @@ export interface operations {
                 content: {
                     "application/json": ({
                         /** Количество применных настроек */
-                        result: number;
+                        result: number | null;
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -8235,7 +8257,7 @@ export interface operations {
                 content: {
                     "application/json": ({
                         /** Настройки аудита */
-                        result: (string | number)[];
+                        result: (string | number)[] | null;
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -8262,7 +8284,7 @@ export interface operations {
                 content: {
                     "application/json": ({
                         /** Генерируемый на основе urls, список результатов проверок радара */
-                        result: (string | number)[];
+                        result: (string | number)[] | null;
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -8340,7 +8362,10 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        /** @return array{balance_all: float, balance_personal: float, balance_bonus: float, balance_tariff: float, tariff: array, subscription?: Bank_2\Objects\Subscriptions\Subscription, subscription_name?: Bank_2\Objects\Subscriptions\Subscription} */
+                        /**
+                         * @return array{balance_all: float, balance_personal: float, balance_bonus: float, balance_tariff: float, tariff: array, subscription?: Bank_2\Objects\Subscriptions\Subscription, subscription_name?: Bank_2\Objects\Subscriptions\Subscription}
+                         * @description @return array{balance_all: float, balance_personal: float, balance_bonus: float, balance_tariff: float, tariff: array, subscription?: Bank_2\Objects\Subscriptions\Subscription, subscription_name?: Bank_2\Objects\Subscriptions\Subscription}
+                         */
                         result: (string | number)[];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
@@ -8367,7 +8392,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: string;
+                        result: string | null;
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -8497,7 +8522,10 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        /** @throws Exception */
+                        /**
+                         * @throws Exception
+                         * @description @throws Exception
+                         */
                         result: unknown;
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
@@ -8525,7 +8553,7 @@ export interface operations {
                 content: {
                     "application/json": ({
                         /** @throws Exception */
-                        result: import('./Models/Broker/Ads.ts').components['schemas']['Models.Broker.Ads'][];
+                        result: import('./Models/Broker/Ads.ts').components['schemas']['Models.Broker.Ads'][] | null;
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: import('./Models/Broker/Ads.ts').components['schemas']['Models.Broker.Ads'];
                 };
@@ -8552,7 +8580,7 @@ export interface operations {
                 content: {
                     "application/json": ({
                         /** @throws Exception */
-                        result: number;
+                        result: number | null;
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: import('./Models/Broker/Campaigns.ts').components['schemas']['Models.Broker.Campaigns'];
                 };
@@ -8579,7 +8607,7 @@ export interface operations {
                 content: {
                     "application/json": ({
                         /** @throws Exception */
-                        result: number;
+                        result: number | null;
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: import('./Models/Broker/Campaigns.ts').components['schemas']['Models.Broker.Campaigns'];
                 };
@@ -8659,7 +8687,10 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        /** @throws Exception */
+                        /**
+                         * @throws Exception
+                         * @description @throws Exception
+                         */
                         result: unknown;
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
@@ -8713,7 +8744,10 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        /** @throws Exception */
+                        /**
+                         * @throws Exception
+                         * @description @throws Exception
+                         */
                         result: unknown;
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
@@ -8795,7 +8829,7 @@ export interface operations {
                 content: {
                     "application/json": ({
                         /** @throws Exception */
-                        result: import('./Models/Broker/Log.ts').components['schemas']['Models.Broker.Log'][];
+                        result: import('./Models/Broker/Log.ts').components['schemas']['Models.Broker.Log'][] | null;
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: import('./Models/Broker/Log.ts').components['schemas']['Models.Broker.Log'];
                 };
@@ -8821,7 +8855,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: import('./Models/Comments.ts').components['schemas']['Models.Comments'][];
+                        result: import('./Models/Comments.ts').components['schemas']['Models.Comments'][] | null;
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: import('./Models/Comments.ts').components['schemas']['Models.Comments'];
                 };
@@ -8847,7 +8881,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: number;
+                        result: number | null;
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -8873,7 +8907,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: number;
+                        result: number | null;
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -8925,7 +8959,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: number;
+                        result: number | null;
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -8951,7 +8985,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: number;
+                        result: number | null;
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -8977,7 +9011,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: number;
+                        result: number | null;
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -9003,13 +9037,13 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        /** Непосредтсвенный вызов API функции
+                        /** Непосредственный вызов API функции
                          *
                          *     Запрещено делать публичной, это приведет к поломке preCall()
                          *
                          *     В описании к функции отвечать на вопрос: `Что является результатом запроса?` Например: `Список пользователей`
                          *
-                         *     TODO: Автоматической проверки нет, не менять protected */
+                         *     Не менять `protected`, проверка проводится при генерации схем в `TV\API\Objects\ClassAPIMethodInfo` */
                         result: unknown;
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: import('./Models/Pages.ts').components['schemas']['Models.Pages'];
@@ -9064,7 +9098,7 @@ export interface operations {
                 content: {
                     "application/json": ({
                         /** @throws Exception */
-                        result: number;
+                        result: number | null;
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: import('./Models/Pages.ts').components['schemas']['Models.Pages'];
                 };
@@ -9091,7 +9125,7 @@ export interface operations {
                 content: {
                     "application/json": ({
                         /** @throws Exception */
-                        result: number;
+                        result: number | null;
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: import('./Models/Pages.ts').components['schemas']['Models.Pages'];
                 };
@@ -9118,7 +9152,7 @@ export interface operations {
                 content: {
                     "application/json": ({
                         /** @throws Exception */
-                        result: import('./Models/Pages.ts').components['schemas']['Models.Pages'][];
+                        result: import('./Models/Pages.ts').components['schemas']['Models.Pages'][] | null;
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: import('./Models/Pages.ts').components['schemas']['Models.Pages'];
                 };
@@ -9144,13 +9178,13 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        /** Непосредтсвенный вызов API функции
+                        /** Непосредственный вызов API функции
                          *
                          *     Запрещено делать публичной, это приведет к поломке preCall()
                          *
                          *     В описании к функции отвечать на вопрос: `Что является результатом запроса?` Например: `Список пользователей`
                          *
-                         *     TODO: Автоматической проверки нет, не менять protected */
+                         *     Не менять `protected`, проверка проводится при генерации схем в `TV\API\Objects\ClassAPIMethodInfo` */
                         result: unknown;
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
@@ -9178,7 +9212,7 @@ export interface operations {
                 content: {
                     "application/json": ({
                         /** @throws Exception */
-                        result: number;
+                        result: number | null;
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -9205,7 +9239,7 @@ export interface operations {
                 content: {
                     "application/json": ({
                         /** @throws Exception */
-                        result: number;
+                        result: number | null;
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -9232,7 +9266,7 @@ export interface operations {
                 content: {
                     "application/json": ({
                         /** @throws Exception */
-                        result: number;
+                        result: number | null;
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -9258,7 +9292,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: import('./Models/ContentsRedirects.ts').components['schemas']['Models.ContentsRedirects'][];
+                        result: import('./Models/ContentsRedirects.ts').components['schemas']['Models.ContentsRedirects'][] | null;
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: import('./Models/ContentsRedirects.ts').components['schemas']['Models.ContentsRedirects'];
                 };
@@ -9285,7 +9319,7 @@ export interface operations {
                 content: {
                     "application/json": ({
                         /** @throws Exception */
-                        result: string;
+                        result: string | null;
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: import('./Models/Pages.ts').components['schemas']['Models.Pages'];
                 };
@@ -9339,7 +9373,7 @@ export interface operations {
                 content: {
                     "application/json": ({
                         /** @throws Exception */
-                        result: string;
+                        result: string | null;
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: import('./Models/Pages.ts').components['schemas']['Models.Pages'];
                 };
@@ -9365,7 +9399,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: (string | number)[];
+                        result: (string | number)[] | null;
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -9391,7 +9425,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: number;
+                        result: number | null;
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: import('./Models/CronCommands.ts').components['schemas']['Models.CronCommands'];
                 };
@@ -9417,7 +9451,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: number;
+                        result: number | null;
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: import('./Models/CronCommands.ts').components['schemas']['Models.CronCommands'];
                 };
@@ -9443,7 +9477,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: number;
+                        result: number | null;
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: import('./Models/CronCommands.ts').components['schemas']['Models.CronCommands'];
                 };
@@ -9470,7 +9504,7 @@ export interface operations {
                 content: {
                     "application/json": ({
                         /** Список задач cron */
-                        result: import('./Models/CronCommands.ts').components['schemas']['Models.CronCommands'][];
+                        result: import('./Models/CronCommands.ts').components['schemas']['Models.CronCommands'][] | null;
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: import('./Models/CronCommands.ts').components['schemas']['Models.CronCommands'];
                 };
@@ -9497,7 +9531,7 @@ export interface operations {
                 content: {
                     "application/json": ({
                         /** Список имен сервисов */
-                        result: import('./Models/CronCommands.ts').components['schemas']['Models.CronCommands'][];
+                        result: import('./Models/CronCommands.ts').components['schemas']['Models.CronCommands'][] | null;
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: import('./Models/CronCommands.ts').components['schemas']['Models.CronCommands'];
                 };
@@ -9523,7 +9557,10 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        /** Ассоциативный массив с результирующими переданными параетрами, и результатоми implodeQuotes() и genSet() */
+                        /**
+                         * @type array<string, array<string, mixed>>
+                         * @description @type array<string, array<string, mixed>>
+                         */
                         result: (string | number)[];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
@@ -9637,6 +9674,36 @@ export interface operations {
             };
         };
     };
+    GetExample2PhpDoc: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Example_2/Methods/PhpDoc/Get.ts').components['schemas']['Example_2.Methods.PhpDoc.Get'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        /**
+                         * @type array<int>
+                         * @description @type array<int>
+                         */
+                        result: import('./Example_2/Methods/PhpDoc/Get.ts').components['schemas']['Example_2.Methods.PhpDoc.Get'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: null;
+                };
+            };
+        };
+    };
     GetExample2Projects: {
         parameters: {
             query?: never;
@@ -9656,7 +9723,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: import('./Models/Projects.ts').components['schemas']['Models.Projects'][];
+                        result: import('./Models/Projects.ts').components['schemas']['Models.Projects'][] | null;
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: import('./Models/Projects.ts').components['schemas']['Models.Projects'];
                 };
@@ -9682,13 +9749,13 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        /** Непосредтсвенный вызов API функции
+                        /** Непосредственный вызов API функции
                          *
                          *     Запрещено делать публичной, это приведет к поломке preCall()
                          *
                          *     В описании к функции отвечать на вопрос: `Что является результатом запроса?` Например: `Список пользователей`
                          *
-                         *     TODO: Автоматической проверки нет, не менять protected */
+                         *     Не менять `protected`, проверка проводится при генерации схем в `TV\API\Objects\ClassAPIMethodInfo` */
                         result: unknown;
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
@@ -9741,7 +9808,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: number;
+                        result: number | null;
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: import('./Models/Groups.ts').components['schemas']['Models.Groups'];
                 };
@@ -9790,7 +9857,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: (string | number)[];
+                        result: (string | number)[] | null;
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -9816,7 +9883,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: number;
+                        result: number | null;
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -9842,7 +9909,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: number;
+                        result: number | null;
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -9868,8 +9935,11 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        /** @throws Exception */
-                        result: string;
+                        /**
+                         * @throws Exception
+                         * @description @throws Exception
+                         */
+                        result: string | null;
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -9895,7 +9965,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: number;
+                        result: number | null;
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -9921,7 +9991,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: (string | number)[];
+                        result: (string | number)[] | null;
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -10025,7 +10095,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: number;
+                        result: number | null;
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -10051,7 +10121,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: number;
+                        result: number | null;
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -10077,7 +10147,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: number;
+                        result: number | null;
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -10103,7 +10173,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: (string | number)[];
+                        result: (string | number)[] | null;
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -10181,7 +10251,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: (string | number)[];
+                        result: (string | number)[] | null;
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -10208,7 +10278,7 @@ export interface operations {
                 content: {
                     "application/json": ({
                         /** @returns ?int id добавленной папки */
-                        result: number;
+                        result: number | null;
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -10234,7 +10304,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: number;
+                        result: number | null;
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: import('./Models/Projects/Folders.ts').components['schemas']['Models.Projects.Folders'];
                 };
@@ -10338,7 +10408,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: import('./Models/Projects.ts').components['schemas']['Models.Projects'][];
+                        result: import('./Models/Projects.ts').components['schemas']['Models.Projects'][] | null;
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: import('./Models/Projects.ts').components['schemas']['Models.Projects'];
                 };
@@ -10364,7 +10434,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: number;
+                        result: number | null;
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -10390,7 +10460,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: number;
+                        result: number | null;
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -10547,7 +10617,7 @@ export interface operations {
                 content: {
                     "application/json": ({
                         /** @throws Exception */
-                        result: number;
+                        result: number | null;
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -10680,7 +10750,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: number;
+                        result: number | null;
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -10707,7 +10777,7 @@ export interface operations {
                 content: {
                     "application/json": ({
                         /** @throws Exception */
-                        result: number;
+                        result: number | null;
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -10865,7 +10935,7 @@ export interface operations {
                 content: {
                     "application/json": ({
                         /** Id добавленного сообщения */
-                        result: number;
+                        result: number | null;
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -10891,7 +10961,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: number;
+                        result: number | null;
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -10918,7 +10988,7 @@ export interface operations {
                 content: {
                     "application/json": ({
                         /** Id тикета */
-                        result: number;
+                        result: number | null;
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -10944,7 +11014,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: number;
+                        result: number | null;
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -10970,7 +11040,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: import('./Models/Tickets.ts').components['schemas']['Models.Tickets'][];
+                        result: import('./Models/Tickets.ts').components['schemas']['Models.Tickets'][] | null;
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: import('./Models/Tickets.ts').components['schemas']['Models.Tickets'];
                 };
@@ -11019,10 +11089,15 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        /** @return ?array{'countSended': int, 'countDuplicated': int, 'countAdded': int, 'countChanged': int}
+                        /**
+                         * @return ?array{'countSended': int, 'countDuplicated': int, 'countAdded': int, 'countChanged': int}
                          *
-                         *     @throws Exception */
-                        result: (string | number)[];
+                         *     @throws Exception
+                         * @description @return ?array{'countSended': int, 'countDuplicated': int, 'countAdded': int, 'countChanged': int}
+                         *
+                         *     @throws Exception
+                         */
+                        result: (string | number)[] | null;
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -11048,7 +11123,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: number;
+                        result: number | null;
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: import('./Models/Urls.ts').components['schemas']['Models.Urls'];
                 };
@@ -11074,7 +11149,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: number;
+                        result: number | null;
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -11100,7 +11175,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: number;
+                        result: number | null;
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -11152,7 +11227,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: number;
+                        result: number | null;
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -11178,7 +11253,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: import('./Models/EmptyModel.ts').components['schemas']['Models.EmptyModel'][];
+                        result: import('./Models/EmptyModel.ts').components['schemas']['Models.EmptyModel'][] | null;
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: import('./Models/EmptyModel.ts').components['schemas']['Models.EmptyModel'];
                 };
@@ -11204,7 +11279,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: number;
+                        result: number | null;
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -11230,7 +11305,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: number;
+                        result: number | null;
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: import('./Models/Admin/Invoices.ts').components['schemas']['Models.Admin.Invoices'];
                 };
@@ -11490,7 +11565,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: (string | number)[];
+                        result: (string | number)[] | null;
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -11620,7 +11695,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: import('./Models/EmptyModel.ts').components['schemas']['Models.EmptyModel'][];
+                        result: import('./Models/EmptyModel.ts').components['schemas']['Models.EmptyModel'][] | null;
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: import('./Models/EmptyModel.ts').components['schemas']['Models.EmptyModel'];
                 };
@@ -11646,7 +11721,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: (string | number)[];
+                        result: (string | number)[] | null;
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -11724,7 +11799,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: (string | number)[];
+                        result: (string | number)[] | null;
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -11776,7 +11851,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: (string | number)[];
+                        result: (string | number)[] | null;
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -11802,13 +11877,13 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        /** Непосредтсвенный вызов API функции
+                        /** Непосредственный вызов API функции
                          *
                          *     Запрещено делать публичной, это приведет к поломке preCall()
                          *
                          *     В описании к функции отвечать на вопрос: `Что является результатом запроса?` Например: `Список пользователей`
                          *
-                         *     TODO: Автоматической проверки нет, не менять protected */
+                         *     Не менять `protected`, проверка проводится при генерации схем в `TV\API\Objects\ClassAPIMethodInfo` */
                         result: unknown;
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
@@ -11887,7 +11962,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: (string | number)[];
+                        result: (string | number)[] | null;
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -11940,7 +12015,7 @@ export interface operations {
                 content: {
                     "application/json": ({
                         /** Список пользователей */
-                        result: (string | number)[];
+                        result: (string | number)[] | null;
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -11966,7 +12041,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: number;
+                        result: number | null;
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: import('./Models/Admin/Staff.ts').components['schemas']['Models.Admin.Staff'];
                 };
@@ -12067,7 +12142,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: number;
+                        result: number | null;
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -12093,7 +12168,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: number;
+                        result: number | null;
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -12169,7 +12244,7 @@ export interface operations {
                 content: {
                     "application/json": ({
                         /** @throws Exception */
-                        result: number;
+                        result: number | null;
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: import('./Models/Users/Verif.ts').components['schemas']['Models.Users.Verif'];
                 };
@@ -12195,7 +12270,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: import('./Models/Users/Verif.ts').components['schemas']['Models.Users.Verif'][];
+                        result: import('./Models/Users/Verif.ts').components['schemas']['Models.Users.Verif'][] | null;
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: import('./Models/Users/Verif.ts').components['schemas']['Models.Users.Verif'];
                 };
@@ -12221,7 +12296,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: number;
+                        result: number | null;
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: import('./Models/Admin/Users/Ranks.ts').components['schemas']['Models.Admin.Users.Ranks'];
                 };
@@ -12247,7 +12322,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: number;
+                        result: number | null;
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: import('./Models/Admin/Users/Ranks.ts').components['schemas']['Models.Admin.Users.Ranks'];
                 };
@@ -12273,7 +12348,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: import('./Models/Admin/Users/Ranks.ts').components['schemas']['Models.Admin.Users.Ranks'][];
+                        result: import('./Models/Admin/Users/Ranks.ts').components['schemas']['Models.Admin.Users.Ranks'][] | null;
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: import('./Models/Admin/Users/Ranks.ts').components['schemas']['Models.Admin.Users.Ranks'];
                 };
@@ -12300,7 +12375,7 @@ export interface operations {
                 content: {
                     "application/json": ({
                         /** Сводка анализа сайта */
-                        result: (string | number)[];
+                        result: (string | number)[] | null;
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -12354,7 +12429,7 @@ export interface operations {
                 content: {
                     "application/json": ({
                         /** Список проверенных css */
-                        result: import('./Models/Audit/Css.ts').components['schemas']['Models.Audit.Css'][];
+                        result: import('./Models/Audit/Css.ts').components['schemas']['Models.Audit.Css'][] | null;
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: import('./Models/Audit/Css.ts').components['schemas']['Models.Audit.Css'];
                 };
@@ -12405,7 +12480,7 @@ export interface operations {
                 content: {
                     "application/json": ({
                         /** Список проверенных изображений */
-                        result: import('./Models/Audit/Images.ts').components['schemas']['Models.Audit.Images'][];
+                        result: import('./Models/Audit/Images.ts').components['schemas']['Models.Audit.Images'][] | null;
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: import('./Models/Audit/Images.ts').components['schemas']['Models.Audit.Images'];
                 };
@@ -12432,7 +12507,7 @@ export interface operations {
                 content: {
                     "application/json": ({
                         /** Список проверенных js */
-                        result: import('./Models/Audit/Js.ts').components['schemas']['Models.Audit.Js'][];
+                        result: import('./Models/Audit/Js.ts').components['schemas']['Models.Audit.Js'][] | null;
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: import('./Models/Audit/Js.ts').components['schemas']['Models.Audit.Js'];
                 };
@@ -12459,7 +12534,7 @@ export interface operations {
                 content: {
                     "application/json": ({
                         /** Список проверенных ссылок */
-                        result: import('./Models/Audit/Links.ts').components['schemas']['Models.Audit.Links'][];
+                        result: import('./Models/Audit/Links.ts').components['schemas']['Models.Audit.Links'][] | null;
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: import('./Models/Audit/Links.ts').components['schemas']['Models.Audit.Links'];
                 };
@@ -12513,7 +12588,7 @@ export interface operations {
                 content: {
                     "application/json": ({
                         /** Список страниц */
-                        result: import('./Models/Audit/Pages.ts').components['schemas']['Models.Audit.Pages'][];
+                        result: import('./Models/Audit/Pages.ts').components['schemas']['Models.Audit.Pages'][] | null;
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: import('./Models/Audit/Pages.ts').components['schemas']['Models.Audit.Pages'];
                 };
@@ -12545,7 +12620,7 @@ export interface operations {
                          *      - `$res['all']['all']['count_checks_success']` - количество пройденных проверок во всех категориях
                          *      - `$res['pages']['indexing']['count_checks_success']` - количество пройденных проверок в категории Страницы / Индексация
                          *      - `$res['all']['all']['count_checks_success']` - количество пройденных проверок во всех категориях */
-                        result: import('./Models/Audit/Checks.ts').components['schemas']['Models.Audit.Checks'][];
+                        result: import('./Models/Audit/Checks.ts').components['schemas']['Models.Audit.Checks'][] | null;
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: import('./Models/Audit/Checks.ts').components['schemas']['Models.Audit.Checks'];
                 };
@@ -12572,7 +12647,7 @@ export interface operations {
                 content: {
                     "application/json": ({
                         /** Сводка о выполненном аудите по одной странице */
-                        result: import('./Models/Audit/Pages.ts').components['schemas']['Models.Audit.Pages'][];
+                        result: import('./Models/Audit/Pages.ts').components['schemas']['Models.Audit.Pages'][] | null;
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: import('./Models/Audit/Pages.ts').components['schemas']['Models.Audit.Pages'];
                 };
@@ -12626,7 +12701,7 @@ export interface operations {
                 content: {
                     "application/json": ({
                         /** Короткая гостевая ссылка на просмотр позиций */
-                        result: string;
+                        result: string | null;
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -12653,7 +12728,7 @@ export interface operations {
                 content: {
                     "application/json": ({
                         /** Сводка индексации */
-                        result: (string | number)[];
+                        result: (string | number)[] | null;
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -12680,7 +12755,7 @@ export interface operations {
                 content: {
                     "application/json": ({
                         /** Отчет по одному URL */
-                        result: import('./Models/Watcher/Results.ts').components['schemas']['Models.Watcher.Results'][];
+                        result: import('./Models/Watcher/Results.ts').components['schemas']['Models.Watcher.Results'][] | null;
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: import('./Models/Watcher/Results.ts').components['schemas']['Models.Watcher.Results'];
                 };
@@ -12707,7 +12782,7 @@ export interface operations {
                 content: {
                     "application/json": ({
                         /** Список проверок радара */
-                        result: (string | number)[];
+                        result: (string | number)[] | null;
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -12734,7 +12809,7 @@ export interface operations {
                 content: {
                     "application/json": ({
                         /** Сводка с количеством изменений по каждому типу проверки */
-                        result: (string | number)[];
+                        result: (string | number)[] | null;
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -12861,7 +12936,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: number;
+                        result: number | null;
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -13012,7 +13087,10 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        /** @throws Exception */
+                        /**
+                         * @throws Exception
+                         * @description @throws Exception
+                         */
                         result: unknown;
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
@@ -13039,7 +13117,10 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        /** @throws Exception */
+                        /**
+                         * @throws Exception
+                         * @description @throws Exception
+                         */
                         result: unknown;
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
@@ -13119,7 +13200,10 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        /** @throws Exception */
+                        /**
+                         * @throws Exception
+                         * @description @throws Exception
+                         */
                         result: unknown;
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
@@ -13171,7 +13255,7 @@ export interface operations {
                 content: {
                     "application/json": ({
                         /** @throws Exception */
-                        result: number;
+                        result: number | null;
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -13198,7 +13282,7 @@ export interface operations {
                 content: {
                     "application/json": ({
                         /** @throws Exception */
-                        result: number;
+                        result: number | null;
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -13224,7 +13308,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: (string | number)[];
+                        result: (string | number)[] | null;
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -13276,7 +13360,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: (string | number)[];
+                        result: (string | number)[] | null;
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -13435,7 +13519,7 @@ export interface operations {
                 content: {
                     "application/json": ({
                         /** @throws Exception */
-                        result: import('./Models/Pages.ts').components['schemas']['Models.Pages'][];
+                        result: import('./Models/Pages.ts').components['schemas']['Models.Pages'][] | null;
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: import('./Models/Pages.ts').components['schemas']['Models.Pages'];
                 };
@@ -13462,7 +13546,7 @@ export interface operations {
                 content: {
                     "application/json": ({
                         /** @throws Exception */
-                        result: import('./Models/Pages.ts').components['schemas']['Models.Pages'][];
+                        result: import('./Models/Pages.ts').components['schemas']['Models.Pages'][] | null;
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: import('./Models/Pages.ts').components['schemas']['Models.Pages'];
                 };
@@ -13514,7 +13598,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: number;
+                        result: number | null;
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -13567,7 +13651,7 @@ export interface operations {
                 content: {
                     "application/json": ({
                         /** Массив созданных групп */
-                        result: (string | number)[];
+                        result: (string | number)[] | null;
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -13593,7 +13677,10 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        /** @return array{pricesByUsers: array<string, array{price: float, priceOriginal: float, qualifiers: array{region_key: int, searcher_key: (0 | 1 | 5 | 100 | 101 | 102 | 104 | 105 | 106), region_lang?: (string | null), also_searched?: (int | null), depth?: (int | null), hint_depth: (1 | 2 | 3), hint_generators: array<('letter' | 'letter_ru' | 'number' | 'space')>}, comment: string}>} */
+                        /**
+                         * @return array{pricesByUsers: array<string, array{price: float, priceOriginal: float, qualifiers: array{region_key: int, searcher_key: (0 | 1 | 5 | 100 | 101 | 102 | 104 | 105 | 106), region_lang?: (string | null), also_searched?: (int | null), depth?: (int | null), hint_depth: (1 | 2 | 3), hint_generators: array<('letter' | 'letter_ru' | 'number' | 'space')>}, comment: string}>}
+                         * @description @return array{pricesByUsers: array<string, array{price: float, priceOriginal: float, qualifiers: array{region_key: int, searcher_key: (0 | 1 | 5 | 100 | 101 | 102 | 104 | 105 | 106), region_lang?: (string | null), also_searched?: (int | null), depth?: (int | null), hint_depth: (1 | 2 | 3), hint_generators: array<('letter' | 'letter_ru' | 'number' | 'space')>}, comment: string}>}
+                         */
                         result: (string | number)[];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
@@ -13620,7 +13707,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: (string | number)[];
+                        result: (string | number)[] | null;
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -13646,7 +13733,10 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        /** @throws Exception */
+                        /**
+                         * @throws Exception
+                         * @description @throws Exception
+                         */
                         result: unknown;
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: import('./Models/Keywords.ts').components['schemas']['Models.Keywords'];
@@ -13700,7 +13790,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: number;
+                        result: number | null;
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -13727,7 +13817,7 @@ export interface operations {
                 content: {
                     "application/json": ({
                         /** @throws Exception Ошибка во входных данных, внешнем API или БД */
-                        result: number;
+                        result: number | null;
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -13780,7 +13870,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: number;
+                        result: number | null;
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -13806,7 +13896,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: number;
+                        result: number | null;
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -13832,7 +13922,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: number;
+                        result: number | null;
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -14042,7 +14132,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: (string | number)[];
+                        result: (string | number)[] | null;
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -14068,7 +14158,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: number;
+                        result: number | null;
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -14276,7 +14366,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: string;
+                        result: string | null;
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -14302,7 +14392,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: number;
+                        result: number | null;
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: import('./Models/Projects.ts').components['schemas']['Models.Projects'];
                 };
@@ -14328,7 +14418,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: number;
+                        result: number | null;
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -14406,7 +14496,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: number;
+                        result: number | null;
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: import('./Models/Projects.ts').components['schemas']['Models.Projects'];
                 };
@@ -14432,7 +14522,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: number;
+                        result: number | null;
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -14484,7 +14574,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: number;
+                        result: number | null;
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -14510,7 +14600,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: number;
+                        result: number | null;
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -14694,7 +14784,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: number;
+                        result: number | null;
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -14720,7 +14810,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: number;
+                        result: number | null;
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -14746,7 +14836,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: number;
+                        result: number | null;
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -14772,7 +14862,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: number;
+                        result: number | null;
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -14798,7 +14888,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: number;
+                        result: number | null;
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -14824,7 +14914,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: (string | number)[];
+                        result: (string | number)[] | null;
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -14850,7 +14940,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: number;
+                        result: number | null;
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -14876,7 +14966,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: number;
+                        result: number | null;
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -14928,7 +15018,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: number;
+                        result: number | null;
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -14954,7 +15044,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: number;
+                        result: number | null;
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -15006,7 +15096,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: number;
+                        result: number | null;
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -15085,7 +15175,10 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        /** @throws Exception */
+                        /**
+                         * @throws Exception
+                         * @description @throws Exception
+                         */
                         result: number;
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
@@ -15551,7 +15644,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: import('./Admin_2/Objects/Actions/Result.ts').components['schemas']['Admin_2.Objects.Actions.Result'];
+                        result: import('./Admin_2/Objects/Actions/Result.ts').components['schemas']['Admin_2.Objects.Actions.Result'] | null;
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -15707,7 +15800,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: (string | number)[];
+                        result: (string | number)[] | null;
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -15733,7 +15826,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: (string | number)[];
+                        result: (string | number)[] | null;
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -15759,7 +15852,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: (string | number)[];
+                        result: (string | number)[] | null;
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -15785,7 +15878,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: (string | number)[];
+                        result: (string | number)[] | null;
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -16045,7 +16138,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: (string | number)[];
+                        result: (string | number)[] | null;
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -16071,7 +16164,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: number;
+                        result: number | null;
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -16098,7 +16191,7 @@ export interface operations {
                 content: {
                     "application/json": ({
                         /** Данные для построения графика */
-                        result: import('./TV/Objects/Highcharts/Chart.ts').components['schemas']['TV.Objects.Highcharts.Chart'];
+                        result: import('./TV/Objects/Highcharts/Chart.ts').components['schemas']['TV.Objects.Highcharts.Chart'] | null;
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -16151,7 +16244,10 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        /** @throws Exception */
+                        /**
+                         * @throws Exception
+                         * @description @throws Exception
+                         */
                         result: unknown;
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: import('./Models/Projects.ts').components['schemas']['Models.Projects'];
@@ -16179,7 +16275,7 @@ export interface operations {
                 content: {
                     "application/json": ({
                         /** Короткая гостевая ссылка на просмотр аудита позиций */
-                        result: string;
+                        result: string | null;
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -16232,7 +16328,7 @@ export interface operations {
                         /** Информацией о текущей ошибке на роботе
                          *
                          *     Вернет null, если ошибки на роботе нет */
-                        result: import('./stdClass.ts').components['schemas']['stdClass'];
+                        result: import('./stdClass.ts').components['schemas']['stdClass'] | null;
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -16259,7 +16355,7 @@ export interface operations {
                 content: {
                     "application/json": ({
                         /** Данные для графика */
-                        result: (string | number)[];
+                        result: (string | number)[] | null;
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -16286,7 +16382,7 @@ export interface operations {
                 content: {
                     "application/json": ({
                         /** Ответ об успешнности экспорта результатов аудита */
-                        result: boolean;
+                        result: boolean | null;
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -16312,8 +16408,12 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        /** @return array{result: array{page_in_filter: bool, index: int, snippet: string, content: string}}
-                         *     @throws Exception */
+                        /**
+                         * @return array{result: array{page_in_filter: bool, index: int, snippet: string, content: string}}
+                         *     @throws Exception
+                         * @description @return array{result: array{page_in_filter: bool, index: int, snippet: string, content: string}}
+                         *     @throws Exception
+                         */
                         result: (string | number)[];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
@@ -16367,7 +16467,10 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        /** @throws Exception */
+                        /**
+                         * @throws Exception
+                         * @description @throws Exception
+                         */
                         result: unknown;
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: import('./Models/Projects.ts').components['schemas']['Models.Projects'];
@@ -16395,7 +16498,7 @@ export interface operations {
                 content: {
                     "application/json": ({
                         /** Короткая гостевая ссылка на просмотр индексации */
-                        result: string;
+                        result: string | null;
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -16446,7 +16549,7 @@ export interface operations {
                 content: {
                     "application/json": ({
                         /** Сводки индексации */
-                        result: (string | number)[];
+                        result: (string | number)[] | null;
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -16499,7 +16602,10 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        /** @throws Exception */
+                        /**
+                         * @throws Exception
+                         * @description @throws Exception
+                         */
                         result: unknown;
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: import('./Models/Projects.ts').components['schemas']['Models.Projects'];
@@ -16553,7 +16659,10 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        /** @throws Exception */
+                        /**
+                         * @throws Exception
+                         * @description @throws Exception
+                         */
                         result: unknown;
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: import('./Models/Projects.ts').components['schemas']['Models.Projects'];
@@ -16581,7 +16690,7 @@ export interface operations {
                 content: {
                     "application/json": ({
                         /** Короткая ссылка гостевого доступа для просмотра радара */
-                        result: string;
+                        result: string | null;
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -16608,7 +16717,7 @@ export interface operations {
                 content: {
                     "application/json": ({
                         /** Сводки с количеством изменений по каждому типу проверки */
-                        result: (string | number)[];
+                        result: (string | number)[] | null;
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -16634,7 +16743,10 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        /** @return array<string, array<string, int>> */
+                        /**
+                         * @return array<string, array<string, int>>
+                         * @description @return array<string, array<string, int>>
+                         */
                         result: (string | number)[];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
@@ -16714,7 +16826,7 @@ export interface operations {
                 content: {
                     "application/json": ({
                         /** @throws Exception */
-                        result: number;
+                        result: number | null;
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: import('./Models/Pages.ts').components['schemas']['Models.Pages'];
                 };
@@ -16740,7 +16852,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: number;
+                        result: number | null;
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -16818,7 +16930,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: import('./Models/Pages.ts').components['schemas']['Models.Pages'][];
+                        result: import('./Models/Pages.ts').components['schemas']['Models.Pages'][] | null;
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: import('./Models/Pages.ts').components['schemas']['Models.Pages'];
                 };
@@ -16844,7 +16956,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: import('./Models/Pages.ts').components['schemas']['Models.Pages'][];
+                        result: import('./Models/Pages.ts').components['schemas']['Models.Pages'][] | null;
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: import('./Models/Pages.ts').components['schemas']['Models.Pages'];
                 };
@@ -16896,7 +17008,10 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        /** @return array{pricesByUsers: array<string, array{price: float, priceOriginal: float, qualifiers: array{region_key: int, searcher_key: (0 | 1 | 5 | 100 | 101 | 102 | 104 | 105 | 106), region_lang?: (string | null), also_searched?: (int | null), depth?: (int | null), hint_depth: (1 | 2 | 3), hint_generators: array<('letter' | 'letter_ru' | 'number' | 'space')>}, comment: string}>} */
+                        /**
+                         * @return array{pricesByUsers: array<string, array{price: float, priceOriginal: float, qualifiers: array{region_key: int, searcher_key: (0 | 1 | 5 | 100 | 101 | 102 | 104 | 105 | 106), region_lang?: (string | null), also_searched?: (int | null), depth?: (int | null), hint_depth: (1 | 2 | 3), hint_generators: array<('letter' | 'letter_ru' | 'number' | 'space')>}, comment: string}>}
+                         * @description @return array{pricesByUsers: array<string, array{price: float, priceOriginal: float, qualifiers: array{region_key: int, searcher_key: (0 | 1 | 5 | 100 | 101 | 102 | 104 | 105 | 106), region_lang?: (string | null), also_searched?: (int | null), depth?: (int | null), hint_depth: (1 | 2 | 3), hint_generators: array<('letter' | 'letter_ru' | 'number' | 'space')>}, comment: string}>}
+                         */
                         result: unknown;
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
@@ -16946,7 +17061,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: number;
+                        result: number | null;
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -17050,7 +17165,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: number;
+                        result: number | null;
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };

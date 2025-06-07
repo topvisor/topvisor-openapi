@@ -10,7 +10,8 @@ export interface components {
         /** Получение настроек аудита */
         "Audit_2.Methods.Settings.Get": {
             fields: import('../../Types/Settings/FieldNames.ts').components['schemas']['Audit_2.Types.Settings.FieldNames'];
-            project_id: import('../../../TV/API/Params/ProjectIdTrait.ts').components['schemas']['TV.API.Params.ProjectIdTrait']['project_id'];
+            /** ID проекта */
+            project_id: number;
         };
     };
     responses: never;

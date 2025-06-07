@@ -60,8 +60,8 @@
                         "type": "integer"
                     },
                     "to_type": {
-                        "default": "in_folder_last",
                         "nullable": true,
+                        "default": "in_folder_last",
                         "allOf": [
                             {
                                 "$ref": "../../../../Keywords_2/Types/Collect/ToType.json#/components/schemas/Keywords_2.Types.Collect.ToType"

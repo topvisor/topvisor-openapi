@@ -41,7 +41,19 @@
                         }
                     },
                     "fields": {
-                        "$ref": "../../../TV/API/Params/FieldsTrait.json#/components/schemas/TV.API.Params.FieldsTrait/properties/fields"
+                        "title": "Список полей объекта, которые надо вернуть в результате\n\nЕсли запрос поддерижвает параметр fetch_style, формат ответа может быть разным, fields будет влиять на содержание данных в этом ответе\n\nИспользует поля модели",
+                        "description": "@see AbstractMethod::MODEL",
+                        "type": "array",
+                        "items": {
+                            "oneOf": [
+                                {
+                                    "type": "string"
+                                },
+                                {
+                                    "type": "number"
+                                }
+                            ]
+                        }
                     }
                 },
                 "required": [
