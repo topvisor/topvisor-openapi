@@ -13551,7 +13551,12 @@ components:
           - type: string
           - type: number
     orders:
-      title: "Список полей объекта, по которым необходимо выполнить сортировку\r\n\r\nПоля могут быть строками или объектом: {name: string, direction: 'ASC' | 'DESC', orderValues: array}\r\n\r\nИспользует поля модели"
+      title: |-
+        Список полей объекта, по которым необходимо выполнить сортировку
+
+        Поля могут быть строками или объектом: {name: string, direction: 'ASC' | 'DESC', orderValues: array}
+
+        Использует поля модели
       description: '@see AbstractMethod::MODEL'
       type: array
       items:
