@@ -40,6 +40,14 @@
                 ],
                 "title": "Тест phpDoc",
                 "description": "@todo : Удалить после настройки openapi"
+            },
+            "Example_2.Methods.PhpDoc.Get.Exec": {
+                "title": "Тест phpDoc\n\nTODO: Удалить после настройки openapi\n\n- static\n- parent\n- self",
+                "allOf": [
+                    {
+                        "$ref": "../../../Example_2/Objects/User.json#/components/schemas/Example_2.Objects.User"
+                    }
+                ]
             }
         }
     }

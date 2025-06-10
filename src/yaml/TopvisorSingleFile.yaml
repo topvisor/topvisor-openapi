@@ -3733,14 +3733,7 @@ paths:
         required: true
       responses:
         '200':
-          description: |-
-            Тест phpDoc
-
-            TODO: Удалить после настройки openapi
-
-            - static
-            - parent
-            - self
+          description: ''
           content:
             application/json:
               schema:
@@ -3758,7 +3751,7 @@ paths:
                               - parent
                               - self
                             allOf:
-                              - $ref: '#/components/schemas/Example_2.Methods.PhpDoc.Get'
+                              - $ref: '#/components/schemas/Example_2.Objects.User'
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'

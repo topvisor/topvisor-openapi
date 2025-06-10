@@ -20,6 +20,14 @@ export interface components {
             offset: import('../../../TV/API/Params/OffsetTrait.ts').components['schemas']['TV.API.Params.OffsetTrait']['offset'];
             fetch_style?: import('../../../TV/API/Params/FetchStyleTrait.ts').components['schemas']['TV.API.Params.FetchStyleTrait']['fetch_style'];
         };
+        /** Тест phpDoc
+         *
+         *     TODO: Удалить после настройки openapi
+         *
+         *     - static
+         *     - parent
+         *     - self */
+        "Example_2.Methods.PhpDoc.Get.Exec": import('../../Objects/User.ts').components['schemas']['Example_2.Objects.User'];
     };
     responses: never;
     parameters: never;
