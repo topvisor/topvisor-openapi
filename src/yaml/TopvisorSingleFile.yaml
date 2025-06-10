@@ -12418,7 +12418,10 @@ components:
       type: object
       properties:
         errors:
-          title: "Результат ответа API метода\r\n\r\nТип результата зависит от типа запроса и его настроек"
+          title: |-
+            Результат ответа API метода
+
+            Тип результата зависит от типа запроса и его настроек
           nullable: true
           type: 'null'
         messages:
@@ -12436,7 +12439,10 @@ components:
       type: object
       properties:
         code:
-          title: "Код ошибки\r\n\r\nКод ошибки 0 - deprecated"
+          title: |-
+            Код ошибки
+
+            Код ошибки 0 - deprecated
           type: integer
         string:
           title: Описание ошибки
@@ -12665,7 +12671,10 @@ components:
       type: object
       properties:
         nextOffset:
-          title: "Смещение для получения следующий порции данных\r\n\r\nВернется только в случае существования следующей порции"
+          title: |-
+            Смещение для получения следующий порции данных
+
+            Вернется только в случае существования следующей порции
           nullable: true
           type: integer
         total:
