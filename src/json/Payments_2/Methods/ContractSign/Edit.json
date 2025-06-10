@@ -24,6 +24,10 @@
                     "signed"
                 ],
                 "title": "Подписание контракта (только для админов)"
+            },
+            "Payments_2.Methods.ContractSign.Edit.Exec": {
+                "nullable": true,
+                "type": "integer"
             }
         }
     }

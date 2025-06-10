@@ -12,6 +12,20 @@
                 "properties": {},
                 "required": [],
                 "title": "Получение интерфейсов настройки всех планов подписки"
+            },
+            "Bank_2.Methods.Subscriptions.Plans.Get.Exec": {
+                "title": "@return Bank_2\\Objects\\Subscriptions\\Plan[]",
+                "type": "array",
+                "items": {
+                    "oneOf": [
+                        {
+                            "type": "string"
+                        },
+                        {
+                            "type": "number"
+                        }
+                    ]
+                }
             }
         }
     }

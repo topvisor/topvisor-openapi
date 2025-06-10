@@ -12,6 +12,7 @@ export interface components {
             /** ID шаблона */
             id: number;
         };
+        "Tickets_2.Methods.Admin.Templates.Del.Exec": number | null;
     };
     responses: never;
     parameters: never;

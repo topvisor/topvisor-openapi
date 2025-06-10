@@ -20,6 +20,7 @@ export interface components {
             /** Прикрепленное сообщение */
             comment: string;
         };
+        "Landings_2.Methods.Hr.Feedback.Add.Exec": number | null;
     };
     responses: never;
     parameters: never;

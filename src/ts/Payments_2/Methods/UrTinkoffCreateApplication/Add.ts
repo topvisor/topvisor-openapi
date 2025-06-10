@@ -9,6 +9,7 @@ export interface components {
     schemas: {
         /** Отправка заявки на подключение Тинькофф Бизнес */
         "Payments_2.Methods.UrTinkoffCreateApplication.Add": Record<string, never>;
+        "Payments_2.Methods.UrTinkoffCreateApplication.Add.Exec": number | null;
     };
     responses: never;
     parameters: never;

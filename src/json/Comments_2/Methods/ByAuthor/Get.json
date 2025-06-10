@@ -44,6 +44,20 @@
                     "offset"
                 ],
                 "title": "Получение комментариев автора. Без вложенности"
+            },
+            "Comments_2.Methods.ByAuthor.Get.Exec": {
+                "nullable": true,
+                "type": "array",
+                "items": {
+                    "oneOf": [
+                        {
+                            "type": "string"
+                        },
+                        {
+                            "type": "number"
+                        }
+                    ]
+                }
             }
         }
     }

@@ -18,6 +18,7 @@ export interface components {
             on?: boolean;
             command: import('../../Params/CommandTrait.ts').components['schemas']['Cron_2.Params.CommandTrait']['command'];
         };
+        "Cron_2.Methods.Commands.Add.Exec": number | null;
     };
     responses: never;
     parameters: never;

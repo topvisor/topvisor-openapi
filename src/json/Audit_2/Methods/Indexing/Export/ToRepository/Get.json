@@ -26,6 +26,10 @@
                     "project_id"
                 ],
                 "title": "Экспорт файла в хранилище"
+            },
+            "Audit_2.Methods.Indexing.Export.ToRepository.Get.Exec": {
+                "title": "Будет произведен редиркт на файл в хранилище",
+                "type": "never"
             }
         }
     }

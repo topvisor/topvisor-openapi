@@ -18,6 +18,20 @@
                 },
                 "required": [],
                 "title": "Получение шаблона тикета"
+            },
+            "Tickets_2.Methods.Admin.Templates.Get.Exec": {
+                "nullable": true,
+                "type": "array",
+                "items": {
+                    "oneOf": [
+                        {
+                            "type": "string"
+                        },
+                        {
+                            "type": "number"
+                        }
+                    ]
+                }
             }
         }
     }

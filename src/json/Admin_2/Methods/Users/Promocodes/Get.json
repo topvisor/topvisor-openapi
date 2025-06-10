@@ -39,6 +39,20 @@
                     "offset"
                 ],
                 "title": "Получение промокодов\n\nВ params хранится строка в формате:\n- {{ rank_id }}\n- {{ rank_id }},single_code - для многоразового кода"
+            },
+            "Admin_2.Methods.Users.Promocodes.Get.Exec": {
+                "nullable": true,
+                "type": "array",
+                "items": {
+                    "oneOf": [
+                        {
+                            "type": "string"
+                        },
+                        {
+                            "type": "number"
+                        }
+                    ]
+                }
             }
         }
     }

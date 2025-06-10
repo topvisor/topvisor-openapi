@@ -33,6 +33,11 @@
                     "path_mask"
                 ],
                 "title": "Удаление редиректа"
+            },
+            "Content_2.Methods.Redirects.Del.Exec": {
+                "title": "@throws Exception",
+                "nullable": true,
+                "type": "integer"
             }
         }
     }

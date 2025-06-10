@@ -39,6 +39,9 @@
                     "offset"
                 ],
                 "title": "Получение списка папок"
+            },
+            "Projects_2.Methods.Folders.Get.Exec": {
+                "nullable": true
             }
         }
     }

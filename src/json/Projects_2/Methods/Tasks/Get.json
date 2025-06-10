@@ -59,6 +59,9 @@
                     "offset"
                 ],
                 "title": "Получение списка задач"
+            },
+            "Projects_2.Methods.Tasks.Get.Exec": {
+                "nullable": true
             }
         }
     }

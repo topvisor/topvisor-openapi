@@ -39,6 +39,21 @@
                     "offset"
                 ],
                 "title": "Получение задач cron"
+            },
+            "Cron_2.Methods.Commands.Get.Exec": {
+                "title": "Список задач cron",
+                "nullable": true,
+                "type": "array",
+                "items": {
+                    "oneOf": [
+                        {
+                            "type": "string"
+                        },
+                        {
+                            "type": "number"
+                        }
+                    ]
+                }
             }
         }
     }

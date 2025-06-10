@@ -14,6 +14,11 @@ export interface components {
             /** Информация о запросах (id группы и id запросов) */
             keywords_data: (string | number)[];
         };
+        /**
+         * @return (array | int | null) выводит int, если функция провайдера не определена
+         * @description @throws Exception
+         */
+        "Broker_2.Methods.Keywords.Del.Exec": unknown;
     };
     responses: never;
     parameters: never;

@@ -28,6 +28,19 @@
                     "currency"
                 ],
                 "title": "Получение сводки числа партнеров по числу рефералов"
+            },
+            "Admin_2.Methods.Affiliate.ReferrersByReferrals.Get.Exec": {
+                "type": "array",
+                "items": {
+                    "oneOf": [
+                        {
+                            "type": "string"
+                        },
+                        {
+                            "type": "number"
+                        }
+                    ]
+                }
             }
         }
     }

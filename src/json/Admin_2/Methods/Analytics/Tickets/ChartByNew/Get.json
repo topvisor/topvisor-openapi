@@ -36,6 +36,19 @@
                     "limit"
                 ],
                 "title": "Получение статистики по кол-ву пользователей, открывших первый тикет"
+            },
+            "Admin_2.Methods.Analytics.Tickets.ChartByNew.Get.Exec": {
+                "type": "array",
+                "items": {
+                    "oneOf": [
+                        {
+                            "type": "string"
+                        },
+                        {
+                            "type": "number"
+                        }
+                    ]
+                }
             }
         }
     }

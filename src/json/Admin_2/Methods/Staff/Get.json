@@ -39,6 +39,9 @@
                     "offset"
                 ],
                 "title": "Получение персонала, объект admin_staff"
+            },
+            "Admin_2.Methods.Staff.Get.Exec": {
+                "nullable": true
             }
         }
     }

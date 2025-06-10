@@ -29,6 +29,8 @@ export interface components {
             offset?: import('../../../../TV/API/Params/OffsetTrait.ts').components['schemas']['TV.API.Params.OffsetTrait']['offset'];
             check_id: import('../../../Params/Audit/CheckIdTrait.ts').components['schemas']['Audit_2.Params.Audit.CheckIdTrait']['check_id'];
         };
+        /** Данные проверенных ресурсов */
+        "Audit_2.Methods.Audit.Log.Get.Exec": (string | number)[];
     };
     responses: never;
     parameters: never;

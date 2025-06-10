@@ -9,6 +9,7 @@ export interface components {
     schemas: {
         /** Получение числа активных пользователей */
         "Admin_2.Methods.Analytics.CountOnlineUsers.Get": Record<string, never>;
+        "Admin_2.Methods.Analytics.CountOnlineUsers.Get.Exec": (string | number)[];
     };
     responses: never;
     parameters: never;

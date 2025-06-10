@@ -23,6 +23,8 @@ export interface components {
             /** Свойства шаблона */
             properties?: (string | number)[];
         };
+        /** @throws Exception */
+        "Templates_2.Methods.Add.Exec": number | null;
     };
     responses: never;
     parameters: never;

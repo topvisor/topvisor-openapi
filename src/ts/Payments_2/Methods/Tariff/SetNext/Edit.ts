@@ -12,6 +12,7 @@ export interface components {
             /** Id тарифа */
             id: number;
         };
+        "Payments_2.Methods.Tariff.SetNext.Edit.Exec": number | null;
     };
     responses: never;
     parameters: never;

@@ -43,6 +43,10 @@
                     "project_id"
                 ],
                 "title": "Получение списка urls проекта"
+            },
+            "Urls_2.Methods.Get.Exec": {
+                "title": "Список urls проекта",
+                "nullable": true
             }
         }
     }

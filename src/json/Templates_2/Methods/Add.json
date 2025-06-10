@@ -69,6 +69,11 @@
                     "name"
                 ],
                 "title": "Сохранение шаблона"
+            },
+            "Templates_2.Methods.Add.Exec": {
+                "title": "@throws Exception",
+                "nullable": true,
+                "type": "integer"
             }
         }
     }

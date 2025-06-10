@@ -61,6 +61,10 @@
                     "project_id"
                 ],
                 "title": "Постановка задачи на проверку частоты запросов"
+            },
+            "Keywords_2.Methods.Volumes.Go.Edit.Exec": {
+                "title": "@return object{projectIds: int[]} Список id проектов, отрпавленных на проверку",
+                "description": "@throws Exception"
             }
         }
     }

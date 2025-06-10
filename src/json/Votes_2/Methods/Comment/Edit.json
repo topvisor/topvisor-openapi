@@ -24,6 +24,10 @@
                     "comment"
                 ],
                 "title": "Добавление комментария к отзыву\n\nОставить комментарий можно в течение часа поосле выставления оценки"
+            },
+            "Votes_2.Methods.Comment.Edit.Exec": {
+                "nullable": true,
+                "type": "integer"
             }
         }
     }

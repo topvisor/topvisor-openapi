@@ -39,6 +39,9 @@
                     "offset"
                 ],
                 "title": "Получение счетов на оплату"
+            },
+            "Admin_2.Methods.Accounting.Invoices.Get.Exec": {
+                "nullable": true
             }
         }
     }

@@ -48,6 +48,20 @@
                     "data"
                 ],
                 "title": "Получение данных графика"
+            },
+            "Projects_2.Methods.Analytics.Graph.Get.Exec": {
+                "nullable": true,
+                "type": "array",
+                "items": {
+                    "oneOf": [
+                        {
+                            "type": "string"
+                        },
+                        {
+                            "type": "number"
+                        }
+                    ]
+                }
             }
         }
     }

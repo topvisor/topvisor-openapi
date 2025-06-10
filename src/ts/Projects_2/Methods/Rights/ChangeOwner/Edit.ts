@@ -14,6 +14,7 @@ export interface components {
             /** Почта */
             email: import('../../../../TV/API/Types/Email.ts').components['schemas']['TV.API.Types.Email'];
         };
+        "Projects_2.Methods.Rights.ChangeOwner.Edit.Exec": number | null;
     };
     responses: never;
     parameters: never;

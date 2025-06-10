@@ -55,6 +55,10 @@
                     "text"
                 ],
                 "title": "Генерация QR кода по тексту\n\nВозвращает изображение в формате data:image/png;base64"
+            },
+            "Qr_2.Methods.Get.Exec": {
+                "nullable": true,
+                "type": "string"
             }
         }
     }

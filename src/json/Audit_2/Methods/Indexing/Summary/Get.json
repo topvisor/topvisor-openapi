@@ -64,6 +64,21 @@
                     "project_id"
                 ],
                 "title": "Получение сводки индексации"
+            },
+            "Audit_2.Methods.Indexing.Summary.Get.Exec": {
+                "title": "Сводка индексации",
+                "nullable": true,
+                "type": "array",
+                "items": {
+                    "oneOf": [
+                        {
+                            "type": "string"
+                        },
+                        {
+                            "type": "number"
+                        }
+                    ]
+                }
             }
         }
     }

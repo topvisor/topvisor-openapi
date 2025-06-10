@@ -16,6 +16,7 @@ export interface components {
             /** Имя */
             name: string;
         };
+        "Projects_2.Methods.Competitors.Name.Edit.Exec": number;
     };
     responses: never;
     parameters: never;

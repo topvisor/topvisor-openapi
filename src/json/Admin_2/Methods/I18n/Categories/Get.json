@@ -12,6 +12,19 @@
                 "properties": {},
                 "required": [],
                 "title": "Получение категорий словаря"
+            },
+            "Admin_2.Methods.I18n.Categories.Get.Exec": {
+                "type": "array",
+                "items": {
+                    "oneOf": [
+                        {
+                            "type": "string"
+                        },
+                        {
+                            "type": "number"
+                        }
+                    ]
+                }
             }
         }
     }

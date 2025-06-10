@@ -61,6 +61,9 @@
                     "qualifiers"
                 ],
                 "title": "Создание задачи"
+            },
+            "Projects_2.Methods.Tasks.Volumes.Add.Exec": {
+                "nullable": true
             }
         }
     }

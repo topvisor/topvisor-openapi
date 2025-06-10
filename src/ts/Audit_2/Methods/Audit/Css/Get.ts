@@ -19,6 +19,8 @@ export interface components {
             project_id: import('../../../../TV/API/Params/ProjectIdTrait.ts').components['schemas']['TV.API.Params.ProjectIdTrait']['project_id'];
             check_id: import('../../../Params/Audit/CheckIdTrait.ts').components['schemas']['Audit_2.Params.Audit.CheckIdTrait']['check_id'];
         };
+        /** Список проверенных css */
+        "Audit_2.Methods.Audit.Css.Get.Exec": (string | number)[] | null;
     };
     responses: never;
     parameters: never;

@@ -26,6 +26,21 @@
                     "project_id"
                 ],
                 "title": "Получение настроек аудита"
+            },
+            "Audit_2.Methods.Settings.Get.Exec": {
+                "title": "Настройки аудита",
+                "nullable": true,
+                "type": "array",
+                "items": {
+                    "oneOf": [
+                        {
+                            "type": "string"
+                        },
+                        {
+                            "type": "number"
+                        }
+                    ]
+                }
             }
         }
     }

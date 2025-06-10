@@ -35,6 +35,10 @@
                     "to_id"
                 ],
                 "title": "Перемещение конкурента (сортировка)"
+            },
+            "Projects_2.Methods.Competitors.Move.Edit.Exec": {
+                "nullable": true,
+                "type": "integer"
             }
         }
     }

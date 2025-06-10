@@ -12,6 +12,7 @@ export interface components {
             /** Файл лога */
             log_file: string;
         };
+        "Admin_2.Methods.Logs.Get.Exec": string;
     };
     responses: never;
     parameters: never;

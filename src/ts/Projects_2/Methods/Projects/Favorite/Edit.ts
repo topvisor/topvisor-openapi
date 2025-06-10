@@ -17,6 +17,7 @@ export interface components {
             filters: import('../../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['filters'];
             id?: import('../../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['id'];
         };
+        "Projects_2.Methods.Projects.Favorite.Edit.Exec": number | null;
     };
     responses: never;
     parameters: never;

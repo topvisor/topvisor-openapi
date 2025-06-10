@@ -136,6 +136,20 @@
                     "project_id"
                 ],
                 "title": "Получение отчета по проверке индексации\n\nНеобходимо указать либо date1 и date2, либо dates (вместе указывать нельзя)"
+            },
+            "Audit_2.Methods.Indexing.Get.Exec": {
+                "title": "Список ссылок с данными по ним",
+                "type": "array",
+                "items": {
+                    "oneOf": [
+                        {
+                            "type": "string"
+                        },
+                        {
+                            "type": "number"
+                        }
+                    ]
+                }
             }
         }
     }

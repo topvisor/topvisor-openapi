@@ -12,6 +12,11 @@ export interface components {
             /** Дата календаря */
             date?: import('../../../../../TV/API/Types/Date.ts').components['schemas']['TV.API.Types.Date'] | null;
         };
+        /**
+         * Матрица: массив с индексами времени с массивом с индексами дат со значением количества страниц в индексе (в UNIXTIME)
+         * @description @return array<string, array<string, int>>
+         */
+        "Content_2.Methods.Apometr.Text.Calendar.Get.Exec": (string | number)[];
     };
     responses: never;
     parameters: never;

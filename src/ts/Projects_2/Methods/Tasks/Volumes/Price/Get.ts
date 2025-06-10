@@ -20,6 +20,7 @@ export interface components {
             /** Объекты определителей частоты */
             qualifiers: import('../../../../../Keywords_2/Types/Volumes/Qualifiers.ts').components['schemas']['Keywords_2.Types.Volumes.Qualifiers'];
         };
+        "Projects_2.Methods.Tasks.Volumes.Price.Get.Exec": number;
     };
     responses: never;
     parameters: never;

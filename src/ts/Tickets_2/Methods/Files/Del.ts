@@ -14,6 +14,7 @@ export interface components {
             /** Название дирректории */
             name: string;
         };
+        "Tickets_2.Methods.Files.Del.Exec": number;
     };
     responses: never;
     parameters: never;

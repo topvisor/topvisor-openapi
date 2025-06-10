@@ -14,6 +14,7 @@ export interface components {
             /** Ключ ПС */
             searcher_key: import('../../Types/SearcherKey.ts').components['schemas']['Positions_2.Types.SearcherKey'];
         };
+        "Positions_2.Methods.Searchers.Add.Exec": unknown;
     };
     responses: never;
     parameters: never;

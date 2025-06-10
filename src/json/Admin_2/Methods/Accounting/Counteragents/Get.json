@@ -39,6 +39,9 @@
                     "offset"
                 ],
                 "title": "Получение контрагента"
+            },
+            "Admin_2.Methods.Accounting.Counteragents.Get.Exec": {
+                "nullable": true
             }
         }
     }

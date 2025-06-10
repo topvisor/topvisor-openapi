@@ -91,6 +91,21 @@
                     "qualifiers"
                 ],
                 "title": "Постановка задачи на подбор запросов"
+            },
+            "Keywords_2.Methods.Collect.Go.Edit.Exec": {
+                "title": "Массив созданных групп",
+                "nullable": true,
+                "type": "array",
+                "items": {
+                    "oneOf": [
+                        {
+                            "type": "string"
+                        },
+                        {
+                            "type": "number"
+                        }
+                    ]
+                }
             }
         }
     }

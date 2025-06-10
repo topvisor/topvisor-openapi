@@ -25,6 +25,9 @@
                     "filters"
                 ],
                 "title": "Удаление проектов"
+            },
+            "Projects_2.Methods.Projects.Del.Exec": {
+                "type": "integer"
             }
         }
     }

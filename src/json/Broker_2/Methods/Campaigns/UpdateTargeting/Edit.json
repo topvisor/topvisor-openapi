@@ -42,6 +42,10 @@
                     "filters"
                 ],
                 "title": "Обновление данных таргетинга"
+            },
+            "Broker_2.Methods.Campaigns.UpdateTargeting.Edit.Exec": {
+                "title": "@throws Exception",
+                "type": "integer"
             }
         }
     }

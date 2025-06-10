@@ -35,6 +35,8 @@ export interface components {
             only_changed_for?: string | null;
             project_id: import('../../../../../TV/API/Params/ProjectIdTrait.ts').components['schemas']['TV.API.Params.ProjectIdTrait']['project_id'];
         };
+        /** Короткая гостевая ссылка на просмотр индексации */
+        "Audit_2.Methods.Indexing.Export.Links.Get.Exec": string | null;
     };
     responses: never;
     parameters: never;

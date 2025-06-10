@@ -12,6 +12,7 @@ export interface components {
             /** ИНН юридического лица */
             inn: string;
         };
+        "Bank_2.Methods.Ur.Get.Exec": unknown;
     };
     responses: never;
     parameters: never;

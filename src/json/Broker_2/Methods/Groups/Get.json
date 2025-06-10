@@ -59,6 +59,20 @@
                     "offset"
                 ],
                 "title": "Получение групп рекламной кампании"
+            },
+            "Broker_2.Methods.Groups.Get.Exec": {
+                "title": "@throws Exception",
+                "type": "array",
+                "items": {
+                    "oneOf": [
+                        {
+                            "type": "string"
+                        },
+                        {
+                            "type": "number"
+                        }
+                    ]
+                }
             }
         }
     }

@@ -23,6 +23,10 @@
                     "ids"
                 ],
                 "title": "Изменение сортировки шаблонов"
+            },
+            "Tickets_2.Methods.Admin.Templates.Sort.Edit.Exec": {
+                "nullable": true,
+                "type": "integer"
             }
         }
     }

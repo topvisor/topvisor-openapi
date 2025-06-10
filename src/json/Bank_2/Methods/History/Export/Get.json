@@ -43,6 +43,9 @@
                     "output"
                 ],
                 "title": "Экспорт лога банка"
+            },
+            "Bank_2.Methods.History.Export.Get.Exec": {
+                "type": "never"
             }
         }
     }

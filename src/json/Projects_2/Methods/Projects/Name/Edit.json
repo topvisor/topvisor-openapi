@@ -24,6 +24,9 @@
                     "id"
                 ],
                 "title": "Установка имени проекта"
+            },
+            "Projects_2.Methods.Projects.Name.Edit.Exec": {
+                "type": "integer"
             }
         }
     }

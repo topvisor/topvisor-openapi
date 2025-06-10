@@ -30,6 +30,7 @@ export interface components {
             filters: import('../../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['filters'];
             id?: import('../../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['id'];
         };
+        "Positions_2.Methods.Searchers.Regions.Edit.Exec": number;
     };
     responses: never;
     parameters: never;

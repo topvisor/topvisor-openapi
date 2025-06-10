@@ -66,6 +66,9 @@
                     "h"
                 ],
                 "title": "Получение скриншота (платная функция)"
+            },
+            "Webscreens_2.Methods.Get.Exec": {
+                "type": "never"
             }
         }
     }

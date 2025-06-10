@@ -19,6 +19,19 @@
                     "post"
                 ],
                 "title": "Получение из бд данные сотрудников указанного поста"
+            },
+            "Admin_2.Methods.Staff.ByPost.Get.Exec": {
+                "type": "array",
+                "items": {
+                    "oneOf": [
+                        {
+                            "type": "string"
+                        },
+                        {
+                            "type": "number"
+                        }
+                    ]
+                }
             }
         }
     }

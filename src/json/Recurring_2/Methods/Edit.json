@@ -54,6 +54,9 @@
                     "type"
                 ],
                 "title": "Настройка рекуррентного платежа"
+            },
+            "Recurring_2.Methods.Edit.Exec": {
+                "type": "integer"
             }
         }
     }

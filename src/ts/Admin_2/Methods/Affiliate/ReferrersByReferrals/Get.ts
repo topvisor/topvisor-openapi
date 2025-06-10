@@ -14,6 +14,7 @@ export interface components {
             /** Валюта партнеров */
             currency: import('../../../../TV/API/Types/Currency.ts').components['schemas']['TV.API.Types.Currency'];
         };
+        "Admin_2.Methods.Affiliate.ReferrersByReferrals.Get.Exec": (string | number)[];
     };
     responses: never;
     parameters: never;

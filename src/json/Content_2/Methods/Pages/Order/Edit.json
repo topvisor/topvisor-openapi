@@ -43,6 +43,10 @@
                     "urls"
                 ],
                 "title": "Сортировка документов"
+            },
+            "Content_2.Methods.Pages.Order.Edit.Exec": {
+                "nullable": true,
+                "type": "integer"
             }
         }
     }

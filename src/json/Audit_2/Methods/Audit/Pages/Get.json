@@ -70,6 +70,21 @@
                     "check_id"
                 ],
                 "title": "Получение страниц, по которым был выполнен аудит"
+            },
+            "Audit_2.Methods.Audit.Pages.Get.Exec": {
+                "title": "Список страниц",
+                "nullable": true,
+                "type": "array",
+                "items": {
+                    "oneOf": [
+                        {
+                            "type": "string"
+                        },
+                        {
+                            "type": "number"
+                        }
+                    ]
+                }
             }
         }
     }

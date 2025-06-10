@@ -24,6 +24,10 @@
                     "bookmark"
                 ],
                 "title": "Редактирование статуса закладки для автора"
+            },
+            "Content_2.Methods.BookmarkAuthor.Edit.Exec": {
+                "nullable": true,
+                "type": "integer"
             }
         }
     }

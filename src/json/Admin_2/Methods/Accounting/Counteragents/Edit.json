@@ -30,6 +30,10 @@
                     "name"
                 ],
                 "title": "Изменение параметров контрагента"
+            },
+            "Admin_2.Methods.Accounting.Counteragents.Edit.Exec": {
+                "nullable": true,
+                "type": "integer"
             }
         }
     }

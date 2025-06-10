@@ -19,6 +19,9 @@
                     "contract_type"
                 ],
                 "title": "Получение id тарифа пользователя по типу контракта"
+            },
+            "Bank_2.Methods.Requisites.ContractTariffId.Get.Exec": {
+                "nullable": true
             }
         }
     }

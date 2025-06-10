@@ -16,6 +16,19 @@
                 },
                 "required": [],
                 "title": "Получить список email, используемых в любых расписаниях, к которым есть доступ у аккаунта"
+            },
+            "Schedule_2.Methods.Settings.EmailsHints.Get.Exec": {
+                "type": "array",
+                "items": {
+                    "oneOf": [
+                        {
+                            "type": "string"
+                        },
+                        {
+                            "type": "number"
+                        }
+                    ]
+                }
             }
         }
     }

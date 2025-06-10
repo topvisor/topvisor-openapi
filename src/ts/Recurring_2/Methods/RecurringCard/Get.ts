@@ -9,6 +9,7 @@ export interface components {
     schemas: {
         /** Получение привязанных карт пользователя */
         "Recurring_2.Methods.RecurringCard.Get": Record<string, never>;
+        "Recurring_2.Methods.RecurringCard.Get.Exec": unknown;
     };
     responses: never;
     parameters: never;

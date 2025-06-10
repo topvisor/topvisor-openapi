@@ -52,6 +52,11 @@
                 ],
                 "title": "Экспорт результатов аудита",
                 "deprecated": true
+            },
+            "Audit_2.Methods.Audit.Results.Export.Get.Exec": {
+                "title": "Ответ об успешнности экспорта результатов аудита",
+                "nullable": true,
+                "type": "boolean"
             }
         }
     }

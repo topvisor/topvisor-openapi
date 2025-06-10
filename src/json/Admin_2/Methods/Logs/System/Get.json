@@ -34,6 +34,20 @@
                 },
                 "required": [],
                 "title": "Получение данных из системного лога"
+            },
+            "Admin_2.Methods.Logs.System.Get.Exec": {
+                "nullable": true,
+                "type": "array",
+                "items": {
+                    "oneOf": [
+                        {
+                            "type": "string"
+                        },
+                        {
+                            "type": "number"
+                        }
+                    ]
+                }
             }
         }
     }

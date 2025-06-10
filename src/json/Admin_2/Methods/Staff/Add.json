@@ -97,6 +97,10 @@
                     "posts"
                 ],
                 "title": "Добавление сотрудника"
+            },
+            "Admin_2.Methods.Staff.Add.Exec": {
+                "nullable": true,
+                "type": "integer"
             }
         }
     }

@@ -39,6 +39,13 @@
                     "test"
                 ],
                 "title": "Создание и проведение транзакции"
+            },
+            "Admin_2.Methods.Actions.Bank.Edit.Exec": {
+                "allOf": [
+                    {
+                        "$ref": "../../../../Admin_2/Objects/Actions/Result.json#/components/schemas/Admin_2.Objects.Actions.Result"
+                    }
+                ]
             }
         }
     }

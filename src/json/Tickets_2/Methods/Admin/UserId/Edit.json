@@ -24,6 +24,10 @@
                     "user_id"
                 ],
                 "title": "Установка userId для тикетов без userId"
+            },
+            "Tickets_2.Methods.Admin.UserId.Edit.Exec": {
+                "nullable": true,
+                "type": "integer"
             }
         }
     }

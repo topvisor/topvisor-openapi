@@ -26,6 +26,10 @@
                     "filters"
                 ],
                 "title": "Информация о стоимости запуска индексации по проектам"
+            },
+            "Audit_2.Methods.Watcher.Checker.Price.Get.Exec": {
+                "title": "@return object{pricesByUsers: object{int: object{projectsIds: [], price: float, priceOriginal: float}}}",
+                "description": "@throws Exception"
             }
         }
     }

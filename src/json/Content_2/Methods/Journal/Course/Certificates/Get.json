@@ -19,6 +19,9 @@
                     "course_url"
                 ],
                 "title": "Получение своего сертификата"
+            },
+            "Content_2.Methods.Journal.Course.Certificates.Get.Exec": {
+                "nullable": true
             }
         }
     }

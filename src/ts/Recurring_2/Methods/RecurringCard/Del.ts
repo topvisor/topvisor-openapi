@@ -12,6 +12,7 @@ export interface components {
             /** Id карты в системе Тинькофф */
             card_id: number;
         };
+        "Recurring_2.Methods.RecurringCard.Del.Exec": unknown;
     };
     responses: never;
     parameters: never;

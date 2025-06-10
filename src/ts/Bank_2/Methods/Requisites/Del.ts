@@ -12,6 +12,7 @@ export interface components {
             /** Id реквезитов */
             id: string;
         };
+        "Bank_2.Methods.Requisites.Del.Exec": unknown;
     };
     responses: never;
     parameters: never;

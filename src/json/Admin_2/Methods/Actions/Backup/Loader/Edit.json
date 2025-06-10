@@ -61,6 +61,13 @@
                     "test"
                 ],
                 "title": "Загрузить и разместить бекап в БД бекапов"
+            },
+            "Admin_2.Methods.Actions.Backup.Loader.Edit.Exec": {
+                "allOf": [
+                    {
+                        "$ref": "../../../../../Admin_2/Objects/Actions/Result.json#/components/schemas/Admin_2.Objects.Actions.Result"
+                    }
+                ]
             }
         }
     }

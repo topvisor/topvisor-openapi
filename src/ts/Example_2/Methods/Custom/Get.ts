@@ -19,6 +19,7 @@ export interface components {
              */
             format: string;
         };
+        "Example_2.Methods.Custom.Get.Exec": string;
     };
     responses: never;
     parameters: never;

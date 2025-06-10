@@ -39,6 +39,9 @@
                     "offset"
                 ],
                 "title": "Получение внутренних операций"
+            },
+            "Admin_2.Methods.Accounting.Operations.Get.Exec": {
+                "nullable": true
             }
         }
     }

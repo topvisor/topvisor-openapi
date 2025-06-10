@@ -18,6 +18,9 @@
                     "id"
                 ],
                 "title": "Печать заявления на отпуск"
+            },
+            "Admin_2.Methods.Staff.VacationPrint.Get.Exec": {
+                "type": "never"
             }
         }
     }

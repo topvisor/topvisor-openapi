@@ -14,6 +14,7 @@ export interface components {
             /** ID юзера для установки */
             user_id: number;
         };
+        "Tickets_2.Methods.Admin.UserId.Edit.Exec": number | null;
     };
     responses: never;
     parameters: never;

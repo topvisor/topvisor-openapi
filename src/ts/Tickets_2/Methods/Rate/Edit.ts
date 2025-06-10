@@ -18,6 +18,7 @@ export interface components {
             /** Комментарий */
             comment?: string | null;
         };
+        "Tickets_2.Methods.Rate.Edit.Exec": number | null;
     };
     responses: never;
     parameters: never;

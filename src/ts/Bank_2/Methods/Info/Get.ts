@@ -18,6 +18,11 @@ export interface components {
             result?: import('../../Objects/Subscriptions/Subscription.ts').components['schemas']['Bank_2.Objects.Subscriptions.Subscription'] | null;
             fields?: import('../../../TV/API/Params/FieldsTrait.ts').components['schemas']['TV.API.Params.FieldsTrait']['fields'];
         };
+        /**
+         * Информация о балансе и тарифе пользователя.
+         * @description @return array{balance_all: float, balance_personal: float, balance_bonus: float, balance_tariff: float, tariff: array, subscription?: Bank_2\Objects\Subscriptions\Subscription, subscription_name?: Bank_2\Objects\Subscriptions\Subscription}
+         */
+        "Bank_2.Methods.Info.Get.Exec": (string | number)[];
     };
     responses: never;
     parameters: never;

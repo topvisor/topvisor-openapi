@@ -61,6 +61,9 @@
                     "project_id"
                 ],
                 "title": "Информация о стоимости запуска проверки позиций по проектам"
+            },
+            "Keywords_2.Methods.Volumes.Price.Get.Exec": {
+                "title": "@return object{pricesByUsers: object{int: object{projectsIds: [], price: float, priceOriginal: float}}}"
             }
         }
     }

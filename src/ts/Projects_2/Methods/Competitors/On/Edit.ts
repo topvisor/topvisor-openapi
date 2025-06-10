@@ -19,6 +19,7 @@ export interface components {
              *     - 0 - включен */
             on: number;
         };
+        "Projects_2.Methods.Competitors.On.Edit.Exec": number;
     };
     responses: never;
     parameters: never;

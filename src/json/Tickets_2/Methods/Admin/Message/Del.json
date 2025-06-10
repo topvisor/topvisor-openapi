@@ -19,6 +19,10 @@
                     "id"
                 ],
                 "title": "Удаление ответа в тикете, только для админов"
+            },
+            "Tickets_2.Methods.Admin.Message.Del.Exec": {
+                "nullable": true,
+                "type": "integer"
             }
         }
     }

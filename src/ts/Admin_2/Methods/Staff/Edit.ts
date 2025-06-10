@@ -37,6 +37,7 @@ export interface components {
             /** Группа */
             group?: number | null;
         };
+        "Admin_2.Methods.Staff.Edit.Exec": number | null;
     };
     responses: never;
     parameters: never;

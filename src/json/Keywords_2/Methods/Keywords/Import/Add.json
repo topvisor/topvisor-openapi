@@ -78,6 +78,20 @@
                 ],
                 "title": "Импорт запросов (по необходимости зависимых с ними групп и папок)\n\nДоступные поля для импорта: group_folder_path|group_name|name|tags|target поля перекрывают аналогичные параметры в запросе",
                 "description": "@see Keywords_2\\Mods\\Keywords\\Import::fromHandle()"
+            },
+            "Keywords_2.Methods.Keywords.Import.Add.Exec": {
+                "nullable": true,
+                "type": "array",
+                "items": {
+                    "oneOf": [
+                        {
+                            "type": "string"
+                        },
+                        {
+                            "type": "number"
+                        }
+                    ]
+                }
             }
         }
     }

@@ -12,6 +12,13 @@
                 "properties": {},
                 "required": [],
                 "title": "Получение числа автоматических проверока по дням по часам"
+            },
+            "Admin_2.Methods.Analytics.Positions.ChartByDayByHourAuto.Get.Exec": {
+                "allOf": [
+                    {
+                        "$ref": "../../../../../stdClass.json#/components/schemas/stdClass"
+                    }
+                ]
             }
         }
     }

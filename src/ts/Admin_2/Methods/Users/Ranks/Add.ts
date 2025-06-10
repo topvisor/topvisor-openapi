@@ -31,6 +31,7 @@ export interface components {
             color?: string | null;
             always_visible?: boolean | null;
         };
+        "Admin_2.Methods.Users.Ranks.Add.Exec": number | null;
     };
     responses: never;
     parameters: never;

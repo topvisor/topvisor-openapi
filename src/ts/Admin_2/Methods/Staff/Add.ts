@@ -36,6 +36,7 @@ export interface components {
             /** Привелегии */
             posts: (string | number)[];
         };
+        "Admin_2.Methods.Staff.Add.Exec": number | null;
     };
     responses: never;
     parameters: never;

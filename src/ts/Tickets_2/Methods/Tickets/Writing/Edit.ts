@@ -18,6 +18,7 @@ export interface components {
              *     text = null - написания со скрытым содержимым (без текста) */
             text?: string | null;
         };
+        "Tickets_2.Methods.Tickets.Writing.Edit.Exec": unknown;
     };
     responses: never;
     parameters: never;

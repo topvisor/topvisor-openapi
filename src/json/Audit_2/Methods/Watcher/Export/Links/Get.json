@@ -54,6 +54,11 @@
                     "check_id"
                 ],
                 "title": "Создание гостевой ссылки на просмотр радара"
+            },
+            "Audit_2.Methods.Watcher.Export.Links.Get.Exec": {
+                "title": "Короткая ссылка гостевого доступа для просмотра радара",
+                "nullable": true,
+                "type": "string"
             }
         }
     }

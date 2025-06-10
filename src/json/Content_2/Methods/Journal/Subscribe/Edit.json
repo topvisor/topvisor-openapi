@@ -19,6 +19,9 @@
                     "subscribe"
                 ],
                 "title": "Изменение состояния подписки на рассылку журнала"
+            },
+            "Content_2.Methods.Journal.Subscribe.Edit.Exec": {
+                "type": "integer"
             }
         }
     }

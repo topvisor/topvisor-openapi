@@ -14,6 +14,7 @@ export interface components {
             /** Домен */
             domain: import('../../../../TV/API/Types/Url.ts').components['schemas']['TV.API.Types.Url'];
         };
+        "Projects_2.Methods.Status.Ssl.Get.Exec": import('../../../../stdClass.ts').components['schemas']['stdClass'];
     };
     responses: never;
     parameters: never;

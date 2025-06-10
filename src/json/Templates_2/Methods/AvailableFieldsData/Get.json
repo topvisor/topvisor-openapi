@@ -22,6 +22,20 @@
                     "target_type"
                 ],
                 "title": "Получение данных доступных столбцов для выборки"
+            },
+            "Templates_2.Methods.AvailableFieldsData.Get.Exec": {
+                "title": "@throws Exception",
+                "type": "array",
+                "items": {
+                    "oneOf": [
+                        {
+                            "type": "string"
+                        },
+                        {
+                            "type": "number"
+                        }
+                    ]
+                }
             }
         }
     }

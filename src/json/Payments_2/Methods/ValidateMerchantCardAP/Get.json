@@ -19,6 +19,20 @@
                     "validation_url"
                 ],
                 "title": "Валидация домена для подтверждения оплаты Apple Pay (system = card_ap)"
+            },
+            "Payments_2.Methods.ValidateMerchantCardAP.Get.Exec": {
+                "nullable": true,
+                "type": "array",
+                "items": {
+                    "oneOf": [
+                        {
+                            "type": "string"
+                        },
+                        {
+                            "type": "number"
+                        }
+                    ]
+                }
             }
         }
     }

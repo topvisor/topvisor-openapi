@@ -25,6 +25,10 @@
                     "command"
                 ],
                 "title": "Удаление задачи cron"
+            },
+            "Cron_2.Methods.Commands.Del.Exec": {
+                "nullable": true,
+                "type": "integer"
             }
         }
     }

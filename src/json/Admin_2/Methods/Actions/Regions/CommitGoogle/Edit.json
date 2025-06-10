@@ -35,6 +35,13 @@
                     "test"
                 ],
                 "title": "Добавить регионы Google в сервис"
+            },
+            "Admin_2.Methods.Actions.Regions.CommitGoogle.Edit.Exec": {
+                "allOf": [
+                    {
+                        "$ref": "../../../../../Admin_2/Objects/Actions/Result.json#/components/schemas/Admin_2.Objects.Actions.Result"
+                    }
+                ]
             }
         }
     }

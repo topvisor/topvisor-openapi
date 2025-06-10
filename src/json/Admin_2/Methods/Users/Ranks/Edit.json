@@ -106,6 +106,10 @@
                     "id"
                 ],
                 "title": "Измение достижение"
+            },
+            "Admin_2.Methods.Users.Ranks.Edit.Exec": {
+                "nullable": true,
+                "type": "integer"
             }
         }
     }

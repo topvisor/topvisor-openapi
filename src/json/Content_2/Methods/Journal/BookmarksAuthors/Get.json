@@ -39,6 +39,19 @@
                     "offset"
                 ],
                 "title": "Получение закладок авторов"
+            },
+            "Content_2.Methods.Journal.BookmarksAuthors.Get.Exec": {
+                "type": "array",
+                "items": {
+                    "oneOf": [
+                        {
+                            "type": "string"
+                        },
+                        {
+                            "type": "number"
+                        }
+                    ]
+                }
             }
         }
     }

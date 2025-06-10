@@ -12,6 +12,7 @@ export interface components {
             filters: import('../../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['filters'];
             id?: import('../../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['id'];
         };
+        "Admin_2.Methods.Accounting.Invoices.Del.Exec": number | null;
     };
     responses: never;
     parameters: never;

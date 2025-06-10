@@ -36,6 +36,20 @@
                     "date"
                 ],
                 "title": "Получение активности пользователей в формате для графика"
+            },
+            "Admin_2.Methods.Analytics.Activity.ChartByPeriod.Get.Exec": {
+                "nullable": true,
+                "type": "array",
+                "items": {
+                    "oneOf": [
+                        {
+                            "type": "string"
+                        },
+                        {
+                            "type": "number"
+                        }
+                    ]
+                }
             }
         }
     }

@@ -12,6 +12,7 @@ export interface components {
             /** ID шаблонов */
             ids: import('../../../../../TV/API/Types/IntArray.ts').components['schemas']['TV.API.Types.IntArray'];
         };
+        "Tickets_2.Methods.Admin.Templates.Sort.Edit.Exec": number | null;
     };
     responses: never;
     parameters: never;

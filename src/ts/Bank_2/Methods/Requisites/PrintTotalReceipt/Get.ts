@@ -22,6 +22,7 @@ export interface components {
              *     Если true, то документ с подписью (не распространяется на договоры) */
             signed?: boolean;
         };
+        "Bank_2.Methods.Requisites.PrintTotalReceipt.Get.Exec": unknown;
     };
     responses: never;
     parameters: never;

@@ -9,6 +9,7 @@ export interface components {
     schemas: {
         /** Получение заархивированного приложения */
         "App_2.Methods.Get": Record<string, never>;
+        "App_2.Methods.Get.Exec": Record<string, never>;
     };
     responses: never;
     parameters: never;

@@ -14,6 +14,7 @@ export interface components {
             /** Новая ссылка */
             url: import('../../../../TV/API/Types/UrlShort.ts').components['schemas']['TV.API.Types.UrlShort'];
         };
+        "Projects_2.Methods.Projects.Url.Edit.Exec": number;
     };
     responses: never;
     parameters: never;

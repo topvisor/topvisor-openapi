@@ -17,6 +17,8 @@ export interface components {
              *     - `false`: возобновить */
             suspend: boolean;
         };
+        /** @throws Exception Ошибка во входных данных, внешнем API или БД */
+        "Payments_2.Methods.Recurrent.Suspend.Edit.Exec": number | null;
     };
     responses: never;
     parameters: never;

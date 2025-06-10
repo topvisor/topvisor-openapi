@@ -51,6 +51,20 @@
                     "limit"
                 ],
                 "title": "Получение статистики ответов на тикеты"
+            },
+            "Admin_2.Methods.Analytics.Tickets.Messages.Get.Exec": {
+                "nullable": true,
+                "type": "array",
+                "items": {
+                    "oneOf": [
+                        {
+                            "type": "string"
+                        },
+                        {
+                            "type": "number"
+                        }
+                    ]
+                }
             }
         }
     }

@@ -13,6 +13,8 @@ export interface components {
             number2: import('../../Types/Number.ts').components['schemas']['Example_2.Types.Number'];
             letter: import('../../Types/Letter.ts').components['schemas']['Example_2.Types.Letter'];
         };
+        /** Ассоциативный массив с результирующими переданными параетрами и результатом genSet() */
+        "Example_2.Methods.Enum.Get.Exec": (string | number)[];
     };
     responses: never;
     parameters: never;

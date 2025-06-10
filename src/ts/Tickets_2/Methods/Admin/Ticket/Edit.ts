@@ -19,6 +19,7 @@ export interface components {
             /** Статус тикета */
             status?: boolean | null;
         };
+        "Tickets_2.Methods.Admin.Ticket.Edit.Exec": number | null;
     };
     responses: never;
     parameters: never;

@@ -61,6 +61,20 @@
                     "offset"
                 ],
                 "title": "Получение списка тикетов с сообщениями"
+            },
+            "Tickets_2.Methods.Tickets.Get.Exec": {
+                "nullable": true,
+                "type": "array",
+                "items": {
+                    "oneOf": [
+                        {
+                            "type": "string"
+                        },
+                        {
+                            "type": "number"
+                        }
+                    ]
+                }
             }
         }
     }

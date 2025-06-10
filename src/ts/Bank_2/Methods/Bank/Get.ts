@@ -12,6 +12,7 @@ export interface components {
             /** БИК банка */
             bik?: string;
         };
+        "Bank_2.Methods.Bank.Get.Exec": unknown;
     };
     responses: never;
     parameters: never;

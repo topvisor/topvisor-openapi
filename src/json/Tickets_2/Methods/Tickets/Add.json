@@ -92,6 +92,11 @@
                     "text"
                 ],
                 "title": "Создание тикета"
+            },
+            "Tickets_2.Methods.Tickets.Add.Exec": {
+                "title": "Id тикета",
+                "nullable": true,
+                "type": "integer"
             }
         }
     }

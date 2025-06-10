@@ -28,6 +28,8 @@ export interface components {
             currency?: import('../../../../TV/API/Types/Currency.ts').components['schemas']['TV.API.Types.Currency'] | null;
             debug?: string | null;
         };
+        /** Массив созданных групп */
+        "Keywords_2.Methods.Collect.Go.Edit.Exec": (string | number)[] | null;
     };
     responses: never;
     parameters: never;

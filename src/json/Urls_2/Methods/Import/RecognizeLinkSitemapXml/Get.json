@@ -19,6 +19,10 @@
                     "domain"
                 ],
                 "title": "Получение URL к карте сайта по файлу robots.txt для указанного домена"
+            },
+            "Urls_2.Methods.Import.RecognizeLinkSitemapXml.Get.Exec": {
+                "title": "URL к карте сайта",
+                "type": "string"
             }
         }
     }

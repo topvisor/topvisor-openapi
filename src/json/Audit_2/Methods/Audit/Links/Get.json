@@ -47,6 +47,21 @@
                     "check_id"
                 ],
                 "title": "Получение проверенных ссылок"
+            },
+            "Audit_2.Methods.Audit.Links.Get.Exec": {
+                "title": "Список проверенных ссылок",
+                "nullable": true,
+                "type": "array",
+                "items": {
+                    "oneOf": [
+                        {
+                            "type": "string"
+                        },
+                        {
+                            "type": "number"
+                        }
+                    ]
+                }
             }
         }
     }

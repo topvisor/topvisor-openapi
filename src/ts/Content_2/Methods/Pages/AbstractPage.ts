@@ -59,6 +59,14 @@ export interface components {
              *     Доступно всем, если не заполнено */
             required_posts_any?: import('../../Types/Pages/RequiredPosts.ts').components['schemas']['Content_2.Types.Pages.RequiredPosts'] | null;
         };
+        /** Непосредственный вызов API функции
+         *
+         *     Запрещено делать публичной, это приведет к поломке preCall()
+         *
+         *     В описании к функции отвечать на вопрос: `Что является результатом запроса?` Например: `Список пользователей`
+         *
+         *     Не менять `protected`, проверка проводится при генерации схем в `TV\API\Objects\ClassAPIMethodInfo` */
+        "Content_2.Methods.Pages.AbstractPage.Exec": unknown;
     };
     responses: never;
     parameters: never;

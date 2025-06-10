@@ -16,6 +16,7 @@ export interface components {
             /** Установлен ли лайк */
             like: boolean;
         };
+        "Content_2.Methods.Like.Edit.Exec": number | null;
     };
     responses: never;
     parameters: never;

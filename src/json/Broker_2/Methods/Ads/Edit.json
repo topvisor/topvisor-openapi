@@ -57,6 +57,11 @@
                     "type"
                 ],
                 "title": "Редактирование объявления"
+            },
+            "Broker_2.Methods.Ads.Edit.Exec": {
+                "title": "@return (array | int | null) выводит int, если функция провайдера не определена",
+                "description": "@throws Exception",
+                "nullable": true
             }
         }
     }

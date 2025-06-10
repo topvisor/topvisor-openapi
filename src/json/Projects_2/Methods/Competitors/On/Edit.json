@@ -33,6 +33,9 @@
                     "on"
                 ],
                 "title": "Включение/выключение конкурентов"
+            },
+            "Projects_2.Methods.Competitors.On.Edit.Exec": {
+                "type": "integer"
             }
         }
     }

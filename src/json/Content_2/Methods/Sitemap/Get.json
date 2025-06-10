@@ -39,6 +39,11 @@
                     "offset"
                 ],
                 "title": "Получение xml карты сайта"
+            },
+            "Content_2.Methods.Sitemap.Get.Exec": {
+                "title": "@throws Exception",
+                "nullable": true,
+                "type": "string"
             }
         }
     }

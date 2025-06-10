@@ -12,6 +12,7 @@ export interface components {
             /** ID ответа */
             id: number;
         };
+        "Tickets_2.Methods.Admin.Message.Del.Exec": number | null;
     };
     responses: never;
     parameters: never;

@@ -39,6 +39,19 @@
                     "offset"
                 ],
                 "title": "Получение модулей курса\n\nДополнительные поля:\n - lessons - см. includeLessons()"
+            },
+            "Content_2.Methods.Journal.Course.Chapters.Get.Exec": {
+                "type": "array",
+                "items": {
+                    "oneOf": [
+                        {
+                            "type": "string"
+                        },
+                        {
+                            "type": "number"
+                        }
+                    ]
+                }
             }
         }
     }

@@ -33,6 +33,10 @@
                     "service"
                 ],
                 "title": "Удаление примечания"
+            },
+            "Annotations_2.Methods.Del.Exec": {
+                "nullable": true,
+                "type": "integer"
             }
         }
     }

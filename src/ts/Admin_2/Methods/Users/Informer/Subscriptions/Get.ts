@@ -13,6 +13,8 @@ export interface components {
         "Admin_2.Methods.Users.Informer.Subscriptions.Get": {
             tariff_id?: number | null;
         };
+        /** Данные для построения графика */
+        "Admin_2.Methods.Users.Informer.Subscriptions.Get.Exec": import('../../../../../TV/Objects/Highcharts/Chart.ts').components['schemas']['TV.Objects.Highcharts.Chart'] | null;
     };
     responses: never;
     parameters: never;

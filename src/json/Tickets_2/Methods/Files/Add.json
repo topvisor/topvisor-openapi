@@ -19,6 +19,9 @@
                     "filename"
                 ],
                 "title": "Загрузка файла на сервер\n\nПроцесс создания сообщения в тикет не завершен"
+            },
+            "Tickets_2.Methods.Files.Add.Exec": {
+                "type": "integer"
             }
         }
     }

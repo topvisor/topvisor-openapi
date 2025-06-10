@@ -14,6 +14,7 @@ export interface components {
             /** Проверен ли лог */
             checked: boolean;
         };
+        "Admin_2.Methods.Logs.System.Checked.Edit.Exec": number | null;
     };
     responses: never;
     parameters: never;

@@ -21,6 +21,8 @@ export interface components {
             filters?: import('../../../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['filters'];
             id?: import('../../../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['id'];
         };
+        /** Сводки с количеством изменений по каждому типу проверки */
+        "Audit_2.Methods.Watcher.Summary.Chart.Get.Exec": (string | number)[] | null;
     };
     responses: never;
     parameters: never;

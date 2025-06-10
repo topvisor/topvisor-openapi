@@ -19,6 +19,11 @@
                     "campaign_tv_id"
                 ],
                 "title": "Отправка объявления на модерацию"
+            },
+            "Broker_2.Methods.Ads.ToModerate.Edit.Exec": {
+                "title": "@return (array | int) выводит int, если функция провайдера не определена",
+                "description": "@throws Exception",
+                "nullable": true
             }
         }
     }

@@ -24,6 +24,9 @@
                     "id"
                 ],
                 "title": "Написание текста"
+            },
+            "Tickets_2.Methods.Tickets.Writing.Edit.Exec": {
+                "nullable": true
             }
         }
     }

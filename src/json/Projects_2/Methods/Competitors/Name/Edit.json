@@ -29,6 +29,9 @@
                     "name"
                 ],
                 "title": "Установка имени конкурента"
+            },
+            "Projects_2.Methods.Competitors.Name.Edit.Exec": {
+                "type": "integer"
             }
         }
     }

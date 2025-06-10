@@ -19,6 +19,11 @@
                     "name"
                 ],
                 "title": "Добавление папки"
+            },
+            "Projects_2.Methods.Folders.Add.Exec": {
+                "title": "@returns ?int id добавленной папки",
+                "nullable": true,
+                "type": "integer"
             }
         }
     }

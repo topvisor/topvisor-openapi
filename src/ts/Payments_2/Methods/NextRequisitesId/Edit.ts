@@ -12,6 +12,7 @@ export interface components {
             /** ID реквизитов для продления тарифа */
             next_requisites_id: string;
         };
+        "Payments_2.Methods.NextRequisitesId.Edit.Exec": number | null;
     };
     responses: never;
     parameters: never;

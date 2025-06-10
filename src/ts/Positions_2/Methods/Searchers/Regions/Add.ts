@@ -33,6 +33,7 @@ export interface components {
              */
             region_depth: number;
         };
+        "Positions_2.Methods.Searchers.Regions.Add.Exec": unknown;
     };
     responses: never;
     parameters: never;

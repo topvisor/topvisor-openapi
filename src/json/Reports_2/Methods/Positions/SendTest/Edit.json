@@ -19,6 +19,10 @@
                     "project_id"
                 ],
                 "title": "Отправить тестовый отчет"
+            },
+            "Reports_2.Methods.Positions.SendTest.Edit.Exec": {
+                "title": "@throws Exception",
+                "type": "integer"
             }
         }
     }

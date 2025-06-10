@@ -39,6 +39,21 @@
                     "offset"
                 ],
                 "title": "Получение списка имен сервисов, в которых есть команды cron"
+            },
+            "Cron_2.Methods.Get.Exec": {
+                "title": "Список имен сервисов",
+                "nullable": true,
+                "type": "array",
+                "items": {
+                    "oneOf": [
+                        {
+                            "type": "string"
+                        },
+                        {
+                            "type": "number"
+                        }
+                    ]
+                }
             }
         }
     }

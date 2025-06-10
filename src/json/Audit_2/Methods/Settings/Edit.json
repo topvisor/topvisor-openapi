@@ -149,6 +149,11 @@
                     "project_id"
                 ],
                 "title": "Применение настроек Анализа сайта"
+            },
+            "Audit_2.Methods.Settings.Edit.Exec": {
+                "title": "Количество применных настроек",
+                "nullable": true,
+                "type": "integer"
             }
         }
     }

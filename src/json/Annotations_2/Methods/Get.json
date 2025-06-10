@@ -53,6 +53,20 @@
                     "offset"
                 ],
                 "title": "Получение примечаний"
+            },
+            "Annotations_2.Methods.Get.Exec": {
+                "nullable": true,
+                "type": "array",
+                "items": {
+                    "oneOf": [
+                        {
+                            "type": "string"
+                        },
+                        {
+                            "type": "number"
+                        }
+                    ]
+                }
             }
         }
     }

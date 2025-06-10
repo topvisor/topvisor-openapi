@@ -32,6 +32,8 @@ export interface components {
             filters: import('../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['filters'];
             id?: import('../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['id'];
         };
+        /** @throws Exception */
+        "Broker_2.Methods.Keywords.Edit.Exec": number;
     };
     responses: never;
     parameters: never;

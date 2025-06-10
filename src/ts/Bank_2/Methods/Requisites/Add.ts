@@ -15,6 +15,7 @@ export interface components {
             /** Id тарифа, для договоров, ассоциируемых с тарифом (например fl223) */
             tariff_id?: number;
         };
+        "Bank_2.Methods.Requisites.Add.Exec": string | null;
     };
     responses: never;
     parameters: never;

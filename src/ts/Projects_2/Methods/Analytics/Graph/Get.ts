@@ -18,6 +18,7 @@ export interface components {
             /** Сравнение метрики */
             compare_axe?: number | null;
         };
+        "Projects_2.Methods.Analytics.Graph.Get.Exec": (string | number)[] | null;
     };
     responses: never;
     parameters: never;

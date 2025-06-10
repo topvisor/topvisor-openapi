@@ -71,6 +71,10 @@
                     "project_id"
                 ],
                 "title": "Добавление url"
+            },
+            "Urls_2.Methods.Add.Exec": {
+                "nullable": true,
+                "type": "integer"
             }
         }
     }

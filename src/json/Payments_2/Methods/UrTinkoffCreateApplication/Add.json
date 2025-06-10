@@ -12,6 +12,10 @@
                 "properties": {},
                 "required": [],
                 "title": "Отправка заявки на подключение Тинькофф Бизнес"
+            },
+            "Payments_2.Methods.UrTinkoffCreateApplication.Add.Exec": {
+                "nullable": true,
+                "type": "integer"
             }
         }
     }

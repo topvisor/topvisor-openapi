@@ -27,6 +27,7 @@ export interface components {
             /** Является ли проект задачей */
             is_task?: boolean | null;
         };
+        "Projects_2.Methods.Projects.Add.Exec": unknown;
     };
     responses: never;
     parameters: never;

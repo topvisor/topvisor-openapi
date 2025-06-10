@@ -35,6 +35,9 @@
                     "filters"
                 ],
                 "title": "Настройка сортировки ПС"
+            },
+            "Positions_2.Methods.Searchers.Sort.Edit.Exec": {
+                "nullable": true
             }
         }
     }

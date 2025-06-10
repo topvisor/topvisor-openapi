@@ -28,6 +28,11 @@
                     "text"
                 ],
                 "title": "Добавление сообщения к тикиту"
+            },
+            "Tickets_2.Methods.Messages.Add.Exec": {
+                "title": "Id добавленного сообщения",
+                "nullable": true,
+                "type": "integer"
             }
         }
     }

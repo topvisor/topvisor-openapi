@@ -32,6 +32,10 @@
                     "subdomain",
                     "path_mask"
                 ]
+            },
+            "Content_2.Methods.Redirects.AbstractRegular.Exec": {
+                "title": "Непосредственный вызов API функции\n\nЗапрещено делать публичной, это приведет к поломке preCall()\n\nВ описании к функции отвечать на вопрос: `Что является результатом запроса?` Например: `Список пользователей`\n\nНе менять `protected`, проверка проводится при генерации схем в `TV\\API\\Objects\\ClassAPIMethodInfo`",
+                "nullable": true
             }
         }
     }

@@ -62,6 +62,21 @@
                     "project_id"
                 ],
                 "title": "Получение сводки радара"
+            },
+            "Audit_2.Methods.Watcher.Summary.Get.Exec": {
+                "title": "Сводка с количеством изменений по каждому типу проверки",
+                "nullable": true,
+                "type": "array",
+                "items": {
+                    "oneOf": [
+                        {
+                            "type": "string"
+                        },
+                        {
+                            "type": "number"
+                        }
+                    ]
+                }
             }
         }
     }

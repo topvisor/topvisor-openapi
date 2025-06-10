@@ -24,6 +24,11 @@
                     "user_name"
                 ],
                 "title": "Создание сертификата\n\nМожно создавать только для пройденных курсов"
+            },
+            "Content_2.Methods.Journal.Course.Certificates.Add.Exec": {
+                "title": "@throws Exception",
+                "nullable": true,
+                "type": "integer"
             }
         }
     }

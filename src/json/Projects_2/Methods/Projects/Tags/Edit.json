@@ -37,6 +37,10 @@
                     "id"
                 ],
                 "title": "Редактирование тегов проектов"
+            },
+            "Projects_2.Methods.Projects.Tags.Edit.Exec": {
+                "nullable": true,
+                "type": "integer"
             }
         }
     }

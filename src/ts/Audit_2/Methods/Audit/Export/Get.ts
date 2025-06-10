@@ -26,6 +26,8 @@ export interface components {
             id?: import('../../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['id'];
             check_id: import('../../../Params/Audit/CheckIdTrait.ts').components['schemas']['Audit_2.Params.Audit.CheckIdTrait']['check_id'];
         };
+        /** Файл результатов проверки сайта */
+        "Audit_2.Methods.Audit.Export.Get.Exec": Record<string, never>;
     };
     responses: never;
     parameters: never;

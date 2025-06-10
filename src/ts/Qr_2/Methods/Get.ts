@@ -31,6 +31,7 @@ export interface components {
              */
             point_size: number;
         };
+        "Qr_2.Methods.Get.Exec": string | null;
     };
     responses: never;
     parameters: never;

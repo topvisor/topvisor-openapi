@@ -24,6 +24,7 @@ export interface components {
             /** Id сертификата */
             id: number;
         };
+        "Content_2.Methods.Journal.Course.Certificates.Image.Get.Exec": unknown;
     };
     responses: never;
     parameters: never;

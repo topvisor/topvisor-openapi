@@ -18,6 +18,7 @@ export interface components {
             /** Список имен конкурентов (если указан, должен быть такой же длины как urls) */
             names?: (string | number)[] | null;
         };
+        "Projects_2.Methods.Competitors.Add.Exec": (string | number)[];
     };
     responses: never;
     parameters: never;

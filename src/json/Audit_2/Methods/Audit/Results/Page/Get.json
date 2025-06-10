@@ -36,6 +36,21 @@
                 ],
                 "title": "Получение результатов анализа страницы",
                 "deprecated": true
+            },
+            "Audit_2.Methods.Audit.Results.Page.Get.Exec": {
+                "title": "Результаты анализа страницы",
+                "description": "@return array{result: array{page_in_filter: bool, index: int, snippet: string, content: string}}\n@throws Exception",
+                "type": "array",
+                "items": {
+                    "oneOf": [
+                        {
+                            "type": "string"
+                        },
+                        {
+                            "type": "number"
+                        }
+                    ]
+                }
             }
         }
     }

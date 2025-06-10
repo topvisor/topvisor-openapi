@@ -12,6 +12,8 @@ export interface components {
             /** Id проекта, по которому необходимо отправить тестовый отчет */
             project_id: number;
         };
+        /** @throws Exception */
+        "Reports_2.Methods.Positions.SendTest.Edit.Exec": number;
     };
     responses: never;
     parameters: never;

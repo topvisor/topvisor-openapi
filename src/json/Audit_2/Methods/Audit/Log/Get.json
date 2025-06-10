@@ -68,6 +68,20 @@
                     "check_id"
                 ],
                 "title": "Получение данных проверенных ресурсов"
+            },
+            "Audit_2.Methods.Audit.Log.Get.Exec": {
+                "title": "Данные проверенных ресурсов",
+                "type": "array",
+                "items": {
+                    "oneOf": [
+                        {
+                            "type": "string"
+                        },
+                        {
+                            "type": "number"
+                        }
+                    ]
+                }
             }
         }
     }

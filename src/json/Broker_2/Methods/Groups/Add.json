@@ -34,6 +34,11 @@
                     "groups_names"
                 ],
                 "title": "Добавление групп рекламной кампании"
+            },
+            "Broker_2.Methods.Groups.Add.Exec": {
+                "title": "@return (array | int | null) выводит int, если функция провайдера не определена",
+                "description": "@throws Exception",
+                "nullable": true
             }
         }
     }

@@ -21,6 +21,7 @@ export interface components {
              *     - day_off */
             type: (string | number)[];
         };
+        "Admin_2.Methods.Staff.Vacation.Add.Exec": number | null;
     };
     responses: never;
     parameters: never;

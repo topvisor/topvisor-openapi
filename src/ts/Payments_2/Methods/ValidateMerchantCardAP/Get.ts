@@ -12,6 +12,7 @@ export interface components {
             /** URL для запроса к Apple Pay */
             validation_url: string;
         };
+        "Payments_2.Methods.ValidateMerchantCardAP.Get.Exec": (string | number)[] | null;
     };
     responses: never;
     parameters: never;

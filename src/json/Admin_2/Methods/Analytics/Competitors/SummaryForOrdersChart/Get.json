@@ -45,6 +45,20 @@
                     "limit"
                 ],
                 "title": "Получение конкурентов для графика"
+            },
+            "Admin_2.Methods.Analytics.Competitors.SummaryForOrdersChart.Get.Exec": {
+                "nullable": true,
+                "type": "array",
+                "items": {
+                    "oneOf": [
+                        {
+                            "type": "string"
+                        },
+                        {
+                            "type": "number"
+                        }
+                    ]
+                }
             }
         }
     }

@@ -33,6 +33,13 @@
                     "test"
                 ],
                 "title": "Востановление удаленной проверки"
+            },
+            "Admin_2.Methods.Actions.Positions.Edit.Exec": {
+                "allOf": [
+                    {
+                        "$ref": "../../../../Admin_2/Objects/Actions/Result.json#/components/schemas/Admin_2.Objects.Actions.Result"
+                    }
+                ]
             }
         }
     }

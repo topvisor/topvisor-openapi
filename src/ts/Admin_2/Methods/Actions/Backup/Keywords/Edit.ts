@@ -27,6 +27,7 @@ export interface components {
             /** Являеется ли запуск - тестом */
             test: boolean;
         };
+        "Admin_2.Methods.Actions.Backup.Keywords.Edit.Exec": import('../../../../Objects/Actions/Result.ts').components['schemas']['Admin_2.Objects.Actions.Result'];
     };
     responses: never;
     parameters: never;

@@ -9,6 +9,7 @@ export interface components {
     schemas: {
         /** Получение числа автоматических проверока по дням по часам */
         "Admin_2.Methods.Analytics.Positions.ChartByDayByHourAuto.Get": Record<string, never>;
+        "Admin_2.Methods.Analytics.Positions.ChartByDayByHourAuto.Get.Exec": import('../../../../../stdClass.ts').components['schemas']['stdClass'];
     };
     responses: never;
     parameters: never;

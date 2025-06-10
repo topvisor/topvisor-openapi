@@ -42,6 +42,20 @@
                     "lang"
                 ],
                 "title": "Получить полные данные об одной странице"
+            },
+            "Content_2.Methods.Get.Exec": {
+                "title": "Возможные парамеры $config:\n\nОбщие:\n   - user_id\n   - create\n   - title\n   - description\n   - html\n   - menu_name\n   - order\n   - image\n   - og_title\n   - og_description\n   - og_image\n   - array tags\n   - enum(ACTIVE,DEV,DEFER,DEL) state, если установлен DEV - статья не будет отображаться в меню и поиске на сайте\n\nДля справки:\n   - apiFullMethodName\n   - apiRequestParams - массив\n\nДля журнала:\n   - count_views\n   - count_unique_views\n   - count_likes",
+                "type": "array",
+                "items": {
+                    "oneOf": [
+                        {
+                            "type": "string"
+                        },
+                        {
+                            "type": "number"
+                        }
+                    ]
+                }
             }
         }
     }

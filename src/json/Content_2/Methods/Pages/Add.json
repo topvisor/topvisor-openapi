@@ -181,6 +181,10 @@
                 },
                 "required": [],
                 "title": "Создание документа"
+            },
+            "Content_2.Methods.Pages.Add.Exec": {
+                "title": "@throws Exception",
+                "type": "integer"
             }
         }
     }

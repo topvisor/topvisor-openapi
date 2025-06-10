@@ -52,6 +52,13 @@
                     "test"
                 ],
                 "title": "Востановление удаленного проекта"
+            },
+            "Admin_2.Methods.Actions.Backup.Project.Edit.Exec": {
+                "allOf": [
+                    {
+                        "$ref": "../../../../../Admin_2/Objects/Actions/Result.json#/components/schemas/Admin_2.Objects.Actions.Result"
+                    }
+                ]
             }
         }
     }

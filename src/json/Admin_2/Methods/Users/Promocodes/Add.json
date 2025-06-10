@@ -38,6 +38,11 @@
                     "rank_id"
                 ],
                 "title": "Добавление промокоды к достижению"
+            },
+            "Admin_2.Methods.Users.Promocodes.Add.Exec": {
+                "title": "@throws Exception",
+                "nullable": true,
+                "type": "integer"
             }
         }
     }

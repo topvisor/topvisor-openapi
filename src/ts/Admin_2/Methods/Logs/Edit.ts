@@ -14,6 +14,7 @@ export interface components {
             /** Текст */
             log_text: string;
         };
+        "Admin_2.Methods.Logs.Edit.Exec": number | null;
     };
     responses: never;
     parameters: never;

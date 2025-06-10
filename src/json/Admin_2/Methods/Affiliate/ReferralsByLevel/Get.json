@@ -28,6 +28,19 @@
                     "currency"
                 ],
                 "title": "Получение сводки числа рефералов по своему уровню"
+            },
+            "Admin_2.Methods.Affiliate.ReferralsByLevel.Get.Exec": {
+                "type": "array",
+                "items": {
+                    "oneOf": [
+                        {
+                            "type": "string"
+                        },
+                        {
+                            "type": "number"
+                        }
+                    ]
+                }
             }
         }
     }

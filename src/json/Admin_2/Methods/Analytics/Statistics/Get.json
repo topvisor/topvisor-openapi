@@ -12,6 +12,20 @@
                 "properties": {},
                 "required": [],
                 "title": "Получение статистики"
+            },
+            "Admin_2.Methods.Analytics.Statistics.Get.Exec": {
+                "nullable": true,
+                "type": "array",
+                "items": {
+                    "oneOf": [
+                        {
+                            "type": "string"
+                        },
+                        {
+                            "type": "number"
+                        }
+                    ]
+                }
             }
         }
     }

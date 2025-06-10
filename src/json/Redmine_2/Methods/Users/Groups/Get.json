@@ -12,6 +12,20 @@
                 "properties": {},
                 "required": [],
                 "title": "Получить список групп с пользователями"
+            },
+            "Redmine_2.Methods.Users.Groups.Get.Exec": {
+                "title": "@throws Exception",
+                "type": "array",
+                "items": {
+                    "oneOf": [
+                        {
+                            "type": "string"
+                        },
+                        {
+                            "type": "number"
+                        }
+                    ]
+                }
             }
         }
     }

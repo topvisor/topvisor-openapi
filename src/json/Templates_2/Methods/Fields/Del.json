@@ -31,6 +31,10 @@
                     "target_type"
                 ],
                 "title": "Удаление сохраненного списка столбцов"
+            },
+            "Templates_2.Methods.Fields.Del.Exec": {
+                "nullable": true,
+                "type": "integer"
             }
         }
     }

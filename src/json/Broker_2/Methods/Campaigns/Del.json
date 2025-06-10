@@ -41,6 +41,11 @@
                     "filters"
                 ],
                 "title": "Удаление рекламной компании из управления ставками"
+            },
+            "Broker_2.Methods.Campaigns.Del.Exec": {
+                "title": "@throws Exception",
+                "nullable": true,
+                "type": "integer"
             }
         }
     }

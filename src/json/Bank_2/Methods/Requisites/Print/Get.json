@@ -28,6 +28,9 @@
                     "type"
                 ],
                 "title": "Скачивание документа в формате PDF"
+            },
+            "Bank_2.Methods.Requisites.Print.Get.Exec": {
+                "type": "never"
             }
         }
     }

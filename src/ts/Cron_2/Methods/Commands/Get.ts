@@ -17,6 +17,8 @@ export interface components {
             offset: import('../../../TV/API/Params/OffsetTrait.ts').components['schemas']['TV.API.Params.OffsetTrait']['offset'];
             fetch_style?: import('../../../TV/API/Params/FetchStyleTrait.ts').components['schemas']['TV.API.Params.FetchStyleTrait']['fetch_style'];
         };
+        /** Список задач cron */
+        "Cron_2.Methods.Commands.Get.Exec": (string | number)[] | null;
     };
     responses: never;
     parameters: never;

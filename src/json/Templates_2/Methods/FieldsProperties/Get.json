@@ -31,6 +31,9 @@
                     "target_type"
                 ],
                 "title": "Получение дополнительных параметров к списку столбцов"
+            },
+            "Templates_2.Methods.FieldsProperties.Get.Exec": {
+                "nullable": true
             }
         }
     }

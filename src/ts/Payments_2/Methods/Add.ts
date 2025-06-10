@@ -65,6 +65,7 @@ export interface components {
             /** Возвратить id платежа, не выполняя redirectToPay() */
             return_id?: boolean;
         };
+        "Payments_2.Methods.Add.Exec": unknown;
     };
     responses: never;
     parameters: never;

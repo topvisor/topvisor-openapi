@@ -80,6 +80,19 @@
                     "lang",
                     "subject"
                 ]
+            },
+            "Admin_2.Methods.Informer.Add.Exec": {
+                "type": "array",
+                "items": {
+                    "oneOf": [
+                        {
+                            "type": "string"
+                        },
+                        {
+                            "type": "number"
+                        }
+                    ]
+                }
             }
         }
     }

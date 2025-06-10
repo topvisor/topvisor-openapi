@@ -14,6 +14,7 @@ export interface components {
             /** ID проекта */
             id: number;
         };
+        "Projects_2.Methods.Projects.Name.Edit.Exec": number;
     };
     responses: never;
     parameters: never;

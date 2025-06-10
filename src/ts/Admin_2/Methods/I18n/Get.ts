@@ -17,6 +17,8 @@ export interface components {
             search?: string | null;
             only_duplicates?: boolean;
         };
+        /** @return array{lang: string, category: string, name: string, value: string} */
+        "Admin_2.Methods.I18n.Get.Exec": (string | number)[];
     };
     responses: never;
     parameters: never;

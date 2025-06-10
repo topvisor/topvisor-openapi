@@ -41,6 +41,9 @@
                     "tags"
                 ],
                 "title": "Сохранение списка тегов"
+            },
+            "Tags_2.Methods.Edit.Exec": {
+                "nullable": true
             }
         }
     }

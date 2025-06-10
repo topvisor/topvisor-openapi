@@ -18,6 +18,7 @@ export interface components {
              *     Если true, то документ с подписью (не распространяется на договоры) */
             signed?: boolean;
         };
+        "Bank_2.Methods.Requisites.Print.Get.Exec": Record<string, never>;
     };
     responses: never;
     parameters: never;

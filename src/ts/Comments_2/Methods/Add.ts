@@ -17,6 +17,8 @@ export interface components {
             /** Привязать к комментарию с id = reply_id  (нельзя указывать совместно с page_url) */
             reply_id?: number | null;
         };
+        /** Id вставленного комментария */
+        "Comments_2.Methods.Add.Exec": number | null;
     };
     responses: never;
     parameters: never;

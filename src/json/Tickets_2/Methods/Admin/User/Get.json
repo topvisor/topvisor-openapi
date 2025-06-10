@@ -19,6 +19,19 @@
                     "id"
                 ],
                 "title": "Получение инфомрации о пользователе"
+            },
+            "Tickets_2.Methods.Admin.User.Get.Exec": {
+                "type": "array",
+                "items": {
+                    "oneOf": [
+                        {
+                            "type": "string"
+                        },
+                        {
+                            "type": "number"
+                        }
+                    ]
+                }
             }
         }
     }

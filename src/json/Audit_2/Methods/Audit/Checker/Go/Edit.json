@@ -26,6 +26,9 @@
                     "filters"
                 ],
                 "title": "Запуск проверки аудита"
+            },
+            "Audit_2.Methods.Audit.Checker.Go.Edit.Exec": {
+                "title": "@return object{projectIds: int[]} Список id проектов, отрпавленных на проверку"
             }
         }
     }

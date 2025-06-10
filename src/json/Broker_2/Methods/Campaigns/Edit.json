@@ -64,6 +64,10 @@
                     "filters"
                 ],
                 "title": "Редактирование рекламной кампании"
+            },
+            "Broker_2.Methods.Campaigns.Edit.Exec": {
+                "title": "@throws Exception",
+                "type": "integer"
             }
         }
     }

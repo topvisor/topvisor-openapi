@@ -26,6 +26,10 @@
                     "filters"
                 ],
                 "title": "Настройка избранных проектов"
+            },
+            "Projects_2.Methods.Projects.Favorite.Edit.Exec": {
+                "nullable": true,
+                "type": "integer"
             }
         }
     }

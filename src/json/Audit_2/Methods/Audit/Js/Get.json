@@ -47,6 +47,21 @@
                     "check_id"
                 ],
                 "title": "Получение проверенных js"
+            },
+            "Audit_2.Methods.Audit.Js.Get.Exec": {
+                "title": "Список проверенных js",
+                "nullable": true,
+                "type": "array",
+                "items": {
+                    "oneOf": [
+                        {
+                            "type": "string"
+                        },
+                        {
+                            "type": "number"
+                        }
+                    ]
+                }
             }
         }
     }

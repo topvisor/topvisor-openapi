@@ -16,6 +16,7 @@ export interface components {
             /** Текст комментария, не может быть пустой строкой */
             text: string;
         };
+        "Comments_2.Methods.Edit.Exec": number | null;
     };
     responses: never;
     parameters: never;

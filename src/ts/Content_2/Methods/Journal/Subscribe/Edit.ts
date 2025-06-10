@@ -14,6 +14,7 @@ export interface components {
              *     * 0: отписаться */
             subscribe: boolean;
         };
+        "Content_2.Methods.Journal.Subscribe.Edit.Exec": number;
     };
     responses: never;
     parameters: never;

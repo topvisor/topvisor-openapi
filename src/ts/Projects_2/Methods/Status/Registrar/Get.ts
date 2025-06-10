@@ -17,6 +17,7 @@ export interface components {
             /** Домен */
             domain: import('../../../../TV/API/Types/UrlShort.ts').components['schemas']['TV.API.Types.UrlShort'];
         };
+        "Projects_2.Methods.Status.Registrar.Get.Exec": import('../../../../stdClass.ts').components['schemas']['stdClass'];
     };
     responses: never;
     parameters: never;

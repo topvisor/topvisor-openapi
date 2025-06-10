@@ -56,6 +56,10 @@
                     "filters"
                 ],
                 "title": "Настройка доступа"
+            },
+            "Admin_2.Methods.Staff.Access.Edit.Exec": {
+                "nullable": true,
+                "type": "integer"
             }
         }
     }

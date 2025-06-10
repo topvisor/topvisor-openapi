@@ -12,6 +12,9 @@
                 "properties": {},
                 "required": [],
                 "title": "Получение заархивированного приложения"
+            },
+            "App_2.Methods.Get.Exec": {
+                "type": "never"
             }
         }
     }

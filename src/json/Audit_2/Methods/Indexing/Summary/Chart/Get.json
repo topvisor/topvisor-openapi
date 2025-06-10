@@ -64,6 +64,21 @@
                     "project_id"
                 ],
                 "title": "Получение сводок индексации для графика"
+            },
+            "Audit_2.Methods.Indexing.Summary.Chart.Get.Exec": {
+                "title": "Сводки индексации",
+                "nullable": true,
+                "type": "array",
+                "items": {
+                    "oneOf": [
+                        {
+                            "type": "string"
+                        },
+                        {
+                            "type": "number"
+                        }
+                    ]
+                }
             }
         }
     }

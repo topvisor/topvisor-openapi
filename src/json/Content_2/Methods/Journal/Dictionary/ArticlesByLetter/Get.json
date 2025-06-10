@@ -40,6 +40,20 @@
                 ],
                 "title": "Получение списка страниц по буквам для модуля SEO словарь\nРезультат функции кешируется",
                 "description": "@return array<string, array{url: string, h1: string}> - массив с ключом \"Буква\" и значением массив страниц Pages"
+            },
+            "Content_2.Methods.Journal.Dictionary.ArticlesByLetter.Get.Exec": {
+                "nullable": true,
+                "type": "array",
+                "items": {
+                    "oneOf": [
+                        {
+                            "type": "string"
+                        },
+                        {
+                            "type": "number"
+                        }
+                    ]
+                }
             }
         }
     }

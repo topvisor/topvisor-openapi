@@ -19,6 +19,10 @@
                     "id"
                 ],
                 "title": "Удаление шаблона"
+            },
+            "Tickets_2.Methods.Admin.Templates.Del.Exec": {
+                "nullable": true,
+                "type": "integer"
             }
         }
     }

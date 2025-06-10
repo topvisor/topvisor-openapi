@@ -38,6 +38,8 @@ export interface components {
             data_sort?: (string | number)[] | null;
             project_id: import('../../../../TV/API/Params/ProjectIdTrait.ts').components['schemas']['TV.API.Params.ProjectIdTrait']['project_id'];
         };
+        /** Короткая гостевая ссылка на просмотр позиций */
+        "Audit_2.Methods.Indexing.Links.Get.Exec": string | null;
     };
     responses: never;
     parameters: never;

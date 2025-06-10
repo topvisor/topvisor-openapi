@@ -47,6 +47,11 @@
                     "path_mask"
                 ],
                 "title": "Добавление правила редиректа (для админов)"
+            },
+            "Content_2.Methods.Redirects.Add.Exec": {
+                "title": "@throws Exception",
+                "nullable": true,
+                "type": "integer"
             }
         }
     }

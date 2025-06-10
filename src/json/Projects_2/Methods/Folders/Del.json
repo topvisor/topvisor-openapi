@@ -21,6 +21,10 @@
                     "filters"
                 ],
                 "title": "Удаление папок"
+            },
+            "Projects_2.Methods.Folders.Del.Exec": {
+                "nullable": true,
+                "type": "integer"
             }
         }
     }

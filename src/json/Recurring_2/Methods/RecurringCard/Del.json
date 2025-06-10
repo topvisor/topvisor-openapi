@@ -19,6 +19,9 @@
                     "card_id"
                 ],
                 "title": "Удалить привязанную карту (system = card)"
+            },
+            "Recurring_2.Methods.RecurringCard.Del.Exec": {
+                "nullable": true
             }
         }
     }

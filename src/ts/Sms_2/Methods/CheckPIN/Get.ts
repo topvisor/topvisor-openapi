@@ -17,6 +17,8 @@ export interface components {
              */
             phones?: unknown;
         };
+        /** @throws Exception */
+        "Sms_2.Methods.CheckPIN.Get.Exec": string;
     };
     responses: never;
     parameters: never;

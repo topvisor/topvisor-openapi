@@ -12,6 +12,13 @@
                 "properties": {},
                 "required": [],
                 "title": "Получение числа проверок по часам по пользователям"
+            },
+            "Admin_2.Methods.Analytics.Positions.ChartCountUsersByHour.Get.Exec": {
+                "allOf": [
+                    {
+                        "$ref": "../../../../../stdClass.json#/components/schemas/stdClass"
+                    }
+                ]
             }
         }
     }

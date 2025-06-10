@@ -14,6 +14,7 @@ export interface components {
             /** Комментарий */
             comment?: string | null;
         };
+        "Tickets_2.Methods.Tickets.AdminComment.Edit.Exec": number | null;
     };
     responses: never;
     parameters: never;

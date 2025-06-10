@@ -37,6 +37,10 @@
                     "service"
                 ],
                 "title": "Редактирование примечания"
+            },
+            "Annotations_2.Methods.Edit.Exec": {
+                "nullable": true,
+                "type": "integer"
             }
         }
     }

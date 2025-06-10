@@ -12,6 +12,7 @@ export interface components {
             /** Параметры, передаваемые в шаблон */
             props: (string | number)[];
         };
+        "Admin_2.Methods.Staff.ContractPrint.Get.Exec": Record<string, never>;
     };
     responses: never;
     parameters: never;

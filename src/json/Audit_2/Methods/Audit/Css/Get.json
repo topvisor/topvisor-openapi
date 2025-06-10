@@ -47,6 +47,21 @@
                     "check_id"
                 ],
                 "title": "Получение проверенных css"
+            },
+            "Audit_2.Methods.Audit.Css.Get.Exec": {
+                "title": "Список проверенных css",
+                "nullable": true,
+                "type": "array",
+                "items": {
+                    "oneOf": [
+                        {
+                            "type": "string"
+                        },
+                        {
+                            "type": "number"
+                        }
+                    ]
+                }
             }
         }
     }

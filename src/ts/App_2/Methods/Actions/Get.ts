@@ -24,6 +24,7 @@ export interface components {
              */
             type_action: string;
         };
+        "App_2.Methods.Actions.Get.Exec": unknown;
     };
     responses: never;
     parameters: never;

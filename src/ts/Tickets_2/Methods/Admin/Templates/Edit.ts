@@ -16,6 +16,7 @@ export interface components {
             /** Текст */
             text: string;
         };
+        "Tickets_2.Methods.Admin.Templates.Edit.Exec": number | null;
     };
     responses: never;
     parameters: never;

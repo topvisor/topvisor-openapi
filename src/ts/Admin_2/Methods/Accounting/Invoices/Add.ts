@@ -24,6 +24,7 @@ export interface components {
             /** Сумма */
             sum: number;
         };
+        "Admin_2.Methods.Accounting.Invoices.Add.Exec": number | null;
     };
     responses: never;
     parameters: never;

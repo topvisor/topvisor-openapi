@@ -14,6 +14,7 @@ export interface components {
             /** Флаг того, что тикет закрыт */
             status?: boolean | null;
         };
+        "Tickets_2.Methods.Tickets.Edit.Exec": number | null;
     };
     responses: never;
     parameters: never;

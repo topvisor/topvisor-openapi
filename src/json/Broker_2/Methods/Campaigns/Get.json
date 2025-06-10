@@ -48,6 +48,20 @@
                     "offset"
                 ],
                 "title": "Получение списка рекламных кампаний"
+            },
+            "Broker_2.Methods.Campaigns.Get.Exec": {
+                "title": "@throws Exception",
+                "type": "array",
+                "items": {
+                    "oneOf": [
+                        {
+                            "type": "string"
+                        },
+                        {
+                            "type": "number"
+                        }
+                    ]
+                }
             }
         }
     }

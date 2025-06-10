@@ -18,6 +18,7 @@ export interface components {
             /** Оценка */
             rate: import('../Types/Rate.ts').components['schemas']['Votes_2.Types.Rate'];
         };
+        "Votes_2.Methods.Add.Exec": number | null;
     };
     responses: never;
     parameters: never;

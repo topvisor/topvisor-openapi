@@ -28,6 +28,7 @@ export interface components {
              *     Указывать, когда указывается одно из следующих полей [counteragent_name, counteragent_inn, purpose] */
             type?: string | null;
         };
+        "Admin_2.Methods.Accounting.Group.Edit.Exec": number | null;
     };
     responses: never;
     parameters: never;

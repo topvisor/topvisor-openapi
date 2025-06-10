@@ -12,6 +12,8 @@ export interface components {
             /** Домен */
             domain: string;
         };
+        /** URL к карте сайта */
+        "Urls_2.Methods.Import.RecognizeLinkSitemapXml.Get.Exec": string;
     };
     responses: never;
     parameters: never;

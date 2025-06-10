@@ -16,6 +16,7 @@ export interface components {
             /** Копировать ли позиции по запросам проекта (если copy_keywords = 1) */
             copy_positions?: boolean | null;
         };
+        "Projects_2.Methods.Projects.Copy.Add.Exec": string | null;
     };
     responses: never;
     parameters: never;

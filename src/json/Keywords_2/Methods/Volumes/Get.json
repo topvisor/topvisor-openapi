@@ -64,6 +64,10 @@
                     "offset"
                 ],
                 "title": "Получение частоты проекта или одной группы"
+            },
+            "Keywords_2.Methods.Volumes.Get.Exec": {
+                "nullable": true,
+                "type": "number"
             }
         }
     }

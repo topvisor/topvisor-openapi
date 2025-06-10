@@ -12,6 +12,7 @@ export interface components {
             /** Язык страницы */
             lang?: import('../../../TV/API/Types/Lang.ts').components['schemas']['TV.API.Types.Lang'] | null;
         };
+        "App_2.Methods.Privacy.Get.Exec": import('../../../Controller_2/Objects/Page.ts').components['schemas']['Controller_2.Objects.Page'] | null;
     };
     responses: never;
     parameters: never;

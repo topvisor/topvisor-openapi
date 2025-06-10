@@ -44,6 +44,13 @@ export interface components {
             debug?: boolean | null;
             project_id: import('../../../TV/API/Params/ProjectIdTrait.ts').components['schemas']['TV.API.Params.ProjectIdTrait']['project_id'];
         };
+        /**
+         * Информация об импортированных urls
+         * @description @return ?array{'countSended': int, 'countDuplicated': int, 'countAdded': int, 'countChanged': int}
+         *
+         *     @throws Exception
+         */
+        "Urls_2.Methods.Import.Add.Exec": (string | number)[] | null;
     };
     responses: never;
     parameters: never;

@@ -34,6 +34,13 @@
                     "test"
                 ],
                 "title": "Изменение домена проекта"
+            },
+            "Admin_2.Methods.Actions.Projects.Domain.Edit.Exec": {
+                "allOf": [
+                    {
+                        "$ref": "../../../../../Admin_2/Objects/Actions/Result.json#/components/schemas/Admin_2.Objects.Actions.Result"
+                    }
+                ]
             }
         }
     }

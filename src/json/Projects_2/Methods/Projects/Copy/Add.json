@@ -29,6 +29,10 @@
                     "project_id"
                 ],
                 "title": "Копирование проекта"
+            },
+            "Projects_2.Methods.Projects.Copy.Add.Exec": {
+                "nullable": true,
+                "type": "string"
             }
         }
     }

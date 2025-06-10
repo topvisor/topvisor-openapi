@@ -52,6 +52,21 @@
                     "check_id"
                 ],
                 "title": "Получение сводки страницы"
+            },
+            "Audit_2.Methods.Audit.SummaryPage.Get.Exec": {
+                "title": "Сводка о выполненном аудите по одной странице",
+                "nullable": true,
+                "type": "array",
+                "items": {
+                    "oneOf": [
+                        {
+                            "type": "string"
+                        },
+                        {
+                            "type": "number"
+                        }
+                    ]
+                }
             }
         }
     }

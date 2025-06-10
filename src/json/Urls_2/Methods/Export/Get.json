@@ -63,6 +63,9 @@
                     "project_id"
                 ],
                 "title": "Экспорт urls в определенном формате"
+            },
+            "Urls_2.Methods.Export.Get.Exec": {
+                "type": "never"
             }
         }
     }

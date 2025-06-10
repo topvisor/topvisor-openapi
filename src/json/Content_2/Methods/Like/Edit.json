@@ -33,6 +33,10 @@
                     "like"
                 ],
                 "title": "Редактирование статуса лайка для страницы"
+            },
+            "Content_2.Methods.Like.Edit.Exec": {
+                "nullable": true,
+                "type": "integer"
             }
         }
     }

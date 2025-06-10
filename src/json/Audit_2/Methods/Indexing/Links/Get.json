@@ -138,6 +138,11 @@
                     "project_id"
                 ],
                 "title": "Создание гостевой ссылки на просмотр позиций\n\nНеобходимо указать либо date1 и date2, либо dates (вместе указывать нельзя)"
+            },
+            "Audit_2.Methods.Indexing.Links.Get.Exec": {
+                "title": "Короткая гостевая ссылка на просмотр позиций",
+                "nullable": true,
+                "type": "string"
             }
         }
     }

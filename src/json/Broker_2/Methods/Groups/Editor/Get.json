@@ -24,6 +24,19 @@
                     "campaign_tv_id"
                 ],
                 "title": "Получение групп рекламной кампании для редактора"
+            },
+            "Broker_2.Methods.Groups.Editor.Get.Exec": {
+                "type": "array",
+                "items": {
+                    "oneOf": [
+                        {
+                            "type": "string"
+                        },
+                        {
+                            "type": "number"
+                        }
+                    ]
+                }
             }
         }
     }

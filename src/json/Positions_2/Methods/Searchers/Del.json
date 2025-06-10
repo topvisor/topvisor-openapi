@@ -35,6 +35,9 @@
                     "filters"
                 ],
                 "title": "Удаление ПС"
+            },
+            "Positions_2.Methods.Searchers.Del.Exec": {
+                "nullable": true
             }
         }
     }

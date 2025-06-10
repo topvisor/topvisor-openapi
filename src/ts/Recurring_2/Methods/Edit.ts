@@ -20,6 +20,7 @@ export interface components {
             /** Id карты в системе Тинькофф */
             cardId?: number | null;
         };
+        "Recurring_2.Methods.Edit.Exec": number;
     };
     responses: never;
     parameters: never;

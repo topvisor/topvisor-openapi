@@ -13,6 +13,7 @@ export interface components {
         "Example_2.Methods.Bag.Get": {
             type?: number | null;
         };
+        "Example_2.Methods.Bag.Get.Exec": unknown;
     };
     responses: never;
     parameters: never;

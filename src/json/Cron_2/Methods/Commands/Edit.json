@@ -59,6 +59,10 @@
                     "command"
                 ],
                 "title": "Изменение задачи cron"
+            },
+            "Cron_2.Methods.Commands.Edit.Exec": {
+                "nullable": true,
+                "type": "integer"
             }
         }
     }

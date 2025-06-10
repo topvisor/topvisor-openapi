@@ -37,6 +37,8 @@ export interface components {
             fetch_style?: import('../../../../TV/API/Params/FetchStyleTrait.ts').components['schemas']['TV.API.Params.FetchStyleTrait']['fetch_style'];
             project_id: import('../../../../TV/API/Params/ProjectIdTrait.ts').components['schemas']['TV.API.Params.ProjectIdTrait']['project_id'];
         };
+        /** Отчет по одному URL */
+        "Audit_2.Methods.Watcher.ByURL.Get.Exec": (string | number)[] | null;
     };
     responses: never;
     parameters: never;

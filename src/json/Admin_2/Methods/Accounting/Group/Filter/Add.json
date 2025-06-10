@@ -39,6 +39,9 @@
                     "counteragent_inn"
                 ],
                 "title": "Добавление фильтра группы"
+            },
+            "Admin_2.Methods.Accounting.Group.Filter.Add.Exec": {
+                "nullable": true
             }
         }
     }

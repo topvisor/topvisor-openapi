@@ -51,6 +51,9 @@
                     "region_key"
                 ],
                 "title": "Добавление региона"
+            },
+            "Positions_2.Methods.Searchers.Regions.Add.Exec": {
+                "nullable": true
             }
         }
     }

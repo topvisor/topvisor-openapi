@@ -14,6 +14,7 @@ export interface components {
             /** Валюта реферало */
             currency: import('../../../../TV/API/Types/Currency.ts').components['schemas']['TV.API.Types.Currency'];
         };
+        "Admin_2.Methods.Affiliate.ReferralsByLevel.Get.Exec": (string | number)[];
     };
     responses: never;
     parameters: never;

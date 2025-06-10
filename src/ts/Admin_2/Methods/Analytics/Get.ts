@@ -21,6 +21,7 @@ export interface components {
             /** Длина периода */
             limit?: number | null;
         };
+        "Admin_2.Methods.Analytics.Get.Exec": (string | number)[];
     };
     responses: never;
     parameters: never;

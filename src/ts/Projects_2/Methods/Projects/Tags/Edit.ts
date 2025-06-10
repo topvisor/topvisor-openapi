@@ -19,6 +19,7 @@ export interface components {
             /** ID проекта */
             id: number;
         };
+        "Projects_2.Methods.Projects.Tags.Edit.Exec": number | null;
     };
     responses: never;
     parameters: never;

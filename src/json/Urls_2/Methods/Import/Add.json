@@ -97,6 +97,22 @@
                     "project_id"
                 ],
                 "title": "Импортирование urls\n\nДоступные поля для импорта:\n- url\n- sitemap\n- audit\n- indexing\n- watcher\n- tags"
+            },
+            "Urls_2.Methods.Import.Add.Exec": {
+                "title": "Информация об импортированных urls",
+                "description": "@return ?array{'countSended': int, 'countDuplicated': int, 'countAdded': int, 'countChanged': int}\n\n@throws Exception",
+                "nullable": true,
+                "type": "array",
+                "items": {
+                    "oneOf": [
+                        {
+                            "type": "string"
+                        },
+                        {
+                            "type": "number"
+                        }
+                    ]
+                }
             }
         }
     }

@@ -12,6 +12,9 @@
                 "properties": {},
                 "required": [],
                 "title": "Получение привязанных карт пользователя"
+            },
+            "Recurring_2.Methods.RecurringCard.Get.Exec": {
+                "nullable": true
             }
         }
     }

@@ -23,6 +23,10 @@
                     "state_time_end"
                 ],
                 "title": "Изменение даты следующего списания по тарифу"
+            },
+            "Admin_2.Methods.TariffChangeExpire.Edit.Exec": {
+                "nullable": true,
+                "type": "integer"
             }
         }
     }

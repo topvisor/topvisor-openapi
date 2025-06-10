@@ -12,6 +12,7 @@ export interface components {
             /** Id договора */
             requisites_id: string;
         };
+        "Bank_2.Methods.Diadoc.SendContract.Get.Exec": boolean;
     };
     responses: never;
     parameters: never;

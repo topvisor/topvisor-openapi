@@ -48,6 +48,8 @@ export interface components {
             orders?: import('../../../TV/API/Params/OrdersTrait.ts').components['schemas']['TV.API.Params.OrdersTrait']['orders'];
             offset?: import('../../../TV/API/Params/OffsetTrait.ts').components['schemas']['TV.API.Params.OffsetTrait']['offset'];
         };
+        /** Генерируемый на основе urls, список результатов проверок радара */
+        "Audit_2.Methods.Watcher.Get.Exec": (string | number)[] | null;
     };
     responses: never;
     parameters: never;

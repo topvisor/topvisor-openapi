@@ -9,6 +9,7 @@ export interface components {
     schemas: {
         /** Получение общей статистики по реферальной программе */
         "Admin_2.Methods.Affiliate.ReferralProgramStats.Get": Record<string, never>;
+        "Admin_2.Methods.Affiliate.ReferralProgramStats.Get.Exec": (string | number)[] | null;
     };
     responses: never;
     parameters: never;

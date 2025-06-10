@@ -19,6 +19,9 @@
                     "requisites_id"
                 ],
                 "title": "Отправка договора в диадок"
+            },
+            "Bank_2.Methods.Diadoc.SendContract.Get.Exec": {
+                "type": "boolean"
             }
         }
     }

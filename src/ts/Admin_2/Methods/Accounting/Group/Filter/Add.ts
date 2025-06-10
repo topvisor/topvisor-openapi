@@ -23,6 +23,7 @@ export interface components {
             /** Назначение операции */
             purpose?: string | null;
         };
+        "Admin_2.Methods.Accounting.Group.Filter.Add.Exec": unknown;
     };
     responses: never;
     parameters: never;

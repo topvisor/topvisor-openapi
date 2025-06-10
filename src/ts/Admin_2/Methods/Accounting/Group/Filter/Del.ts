@@ -14,6 +14,7 @@ export interface components {
             /** ID фильтра */
             filter_id: number;
         };
+        "Admin_2.Methods.Accounting.Group.Filter.Del.Exec": unknown;
     };
     responses: never;
     parameters: never;

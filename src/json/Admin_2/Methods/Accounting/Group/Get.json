@@ -39,6 +39,20 @@
                     "offset"
                 ],
                 "title": "Получение групп"
+            },
+            "Admin_2.Methods.Accounting.Group.Get.Exec": {
+                "nullable": true,
+                "type": "array",
+                "items": {
+                    "oneOf": [
+                        {
+                            "type": "string"
+                        },
+                        {
+                            "type": "number"
+                        }
+                    ]
+                }
             }
         }
     }

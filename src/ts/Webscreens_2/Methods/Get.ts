@@ -42,6 +42,7 @@ export interface components {
              *     Параметры clip и full_page нельзя использовать одновременно */
             clip_y?: number | null;
         };
+        "Webscreens_2.Methods.Get.Exec": Record<string, never>;
     };
     responses: never;
     parameters: never;

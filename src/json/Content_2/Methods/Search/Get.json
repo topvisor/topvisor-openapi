@@ -67,6 +67,20 @@
                     "offset"
                 ],
                 "title": "Поиск страниц"
+            },
+            "Content_2.Methods.Search.Get.Exec": {
+                "title": "@throws Exception",
+                "type": "array",
+                "items": {
+                    "oneOf": [
+                        {
+                            "type": "string"
+                        },
+                        {
+                            "type": "number"
+                        }
+                    ]
+                }
             }
         }
     }

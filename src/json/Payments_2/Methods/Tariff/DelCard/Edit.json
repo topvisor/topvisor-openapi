@@ -12,6 +12,10 @@
                 "properties": {},
                 "required": [],
                 "title": "Отписка от тарифа, оплаченного картой"
+            },
+            "Payments_2.Methods.Tariff.DelCard.Edit.Exec": {
+                "nullable": true,
+                "type": "integer"
             }
         }
     }

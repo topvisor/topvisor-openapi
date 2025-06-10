@@ -26,6 +26,11 @@
                     "project_id"
                 ],
                 "title": "Получение количества настроенных URL"
+            },
+            "Audit_2.Methods.CountUrls.Get.Exec": {
+                "title": "Количество настроенных URL",
+                "nullable": true,
+                "type": "integer"
             }
         }
     }

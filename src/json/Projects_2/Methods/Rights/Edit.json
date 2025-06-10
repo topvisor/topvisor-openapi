@@ -62,6 +62,10 @@
                     "email"
                 ],
                 "title": "Изменение прав на проект"
+            },
+            "Projects_2.Methods.Rights.Edit.Exec": {
+                "nullable": true,
+                "type": "integer"
             }
         }
     }

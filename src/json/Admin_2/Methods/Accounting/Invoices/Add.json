@@ -53,6 +53,10 @@
                     "sum"
                 ],
                 "title": "Добавление счета на оплату"
+            },
+            "Admin_2.Methods.Accounting.Invoices.Add.Exec": {
+                "nullable": true,
+                "type": "integer"
             }
         }
     }

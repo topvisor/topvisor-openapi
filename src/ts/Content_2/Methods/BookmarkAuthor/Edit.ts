@@ -17,6 +17,7 @@ export interface components {
              *     - true: сохранить закладку */
             bookmark: boolean;
         };
+        "Content_2.Methods.BookmarkAuthor.Edit.Exec": number | null;
     };
     responses: never;
     parameters: never;

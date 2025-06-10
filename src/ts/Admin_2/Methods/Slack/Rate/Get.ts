@@ -9,6 +9,8 @@ export interface components {
     schemas: {
         /** Рейтинг по сообщениям в слеке за предыдущий месяц */
         "Admin_2.Methods.Slack.Rate.Get": Record<string, never>;
+        /** Список пользователей */
+        "Admin_2.Methods.Slack.Rate.Get.Exec": (string | number)[] | null;
     };
     responses: never;
     parameters: never;

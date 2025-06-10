@@ -14,6 +14,11 @@ export interface components {
             /** Информация об объявлениях (id группы, id объявлений и статусы объявлений) */
             ads_data: (string | number)[];
         };
+        /**
+         * @return (array | int | null) выводит int, если функция провайдера не определена
+         * @description @throws Exception
+         */
+        "Broker_2.Methods.Ads.Status.Edit.Exec": unknown;
     };
     responses: never;
     parameters: never;

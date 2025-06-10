@@ -44,6 +44,9 @@
                     "filters"
                 ],
                 "title": "Настройка сортировки регионов"
+            },
+            "Positions_2.Methods.Searchers.Regions.Sort.Edit.Exec": {
+                "nullable": true
             }
         }
     }

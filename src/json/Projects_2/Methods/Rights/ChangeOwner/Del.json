@@ -28,6 +28,10 @@
                     "email"
                 ],
                 "title": "Отмена передачи проекта"
+            },
+            "Projects_2.Methods.Rights.ChangeOwner.Del.Exec": {
+                "nullable": true,
+                "type": "integer"
             }
         }
     }

@@ -36,6 +36,11 @@
                     "text"
                 ],
                 "title": "Добавление комментария"
+            },
+            "Comments_2.Methods.Add.Exec": {
+                "title": "Id вставленного комментария",
+                "nullable": true,
+                "type": "integer"
             }
         }
     }

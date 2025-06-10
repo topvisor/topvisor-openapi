@@ -29,6 +29,9 @@
                     "props"
                 ],
                 "title": "Печать договора"
+            },
+            "Admin_2.Methods.Staff.ContractPrint.Get.Exec": {
+                "type": "never"
             }
         }
     }

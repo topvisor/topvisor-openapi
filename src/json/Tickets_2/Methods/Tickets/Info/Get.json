@@ -12,6 +12,19 @@
                 "properties": {},
                 "required": [],
                 "title": "Получение краткой информации о тикетах\n\nid последнего непрочитанного тикета, число непрочитанных тикетов"
+            },
+            "Tickets_2.Methods.Tickets.Info.Get.Exec": {
+                "type": "array",
+                "items": {
+                    "oneOf": [
+                        {
+                            "type": "string"
+                        },
+                        {
+                            "type": "number"
+                        }
+                    ]
+                }
             }
         }
     }

@@ -28,6 +28,19 @@
                     "currency"
                 ],
                 "title": "Получение сводки по новым партнерам"
+            },
+            "Admin_2.Methods.Affiliate.Referrers.Get.Exec": {
+                "type": "array",
+                "items": {
+                    "oneOf": [
+                        {
+                            "type": "string"
+                        },
+                        {
+                            "type": "number"
+                        }
+                    ]
+                }
             }
         }
     }

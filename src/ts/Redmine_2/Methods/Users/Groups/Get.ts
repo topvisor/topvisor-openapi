@@ -9,6 +9,8 @@ export interface components {
     schemas: {
         /** Получить список групп с пользователями */
         "Redmine_2.Methods.Users.Groups.Get": Record<string, never>;
+        /** @throws Exception */
+        "Redmine_2.Methods.Users.Groups.Get.Exec": (string | number)[];
     };
     responses: never;
     parameters: never;

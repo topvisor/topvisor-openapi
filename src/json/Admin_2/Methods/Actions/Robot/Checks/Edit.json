@@ -24,6 +24,13 @@
                     "test"
                 ],
                 "title": "Перевод проверок позиций яндекс"
+            },
+            "Admin_2.Methods.Actions.Robot.Checks.Edit.Exec": {
+                "allOf": [
+                    {
+                        "$ref": "../../../../../Admin_2/Objects/Actions/Result.json#/components/schemas/Admin_2.Objects.Actions.Result"
+                    }
+                ]
             }
         }
     }

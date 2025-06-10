@@ -34,6 +34,9 @@
                     "filters"
                 ],
                 "title": "Отправка проектов на проверку карты сайта"
+            },
+            "Audit_2.Methods.Sitemap.Checker.Go.Edit.Exec": {
+                "title": "@return object{projectIds: int[]} Список id проектов, отрпавленных на проверку"
             }
         }
     }

@@ -18,6 +18,7 @@ export interface components {
             /** Комментарий, если не указан, комментарий добавлен не будет */
             text?: string;
         };
+        "Annotations_2.Methods.Add.Exec": number | null;
     };
     responses: never;
     parameters: never;

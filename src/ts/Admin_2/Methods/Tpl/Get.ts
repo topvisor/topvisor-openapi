@@ -12,6 +12,7 @@ export interface components {
             /** Путь к шаблону */
             tpl: string;
         };
+        "Admin_2.Methods.Tpl.Get.Exec": (string | number)[];
     };
     responses: never;
     parameters: never;

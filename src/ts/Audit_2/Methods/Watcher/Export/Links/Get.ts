@@ -20,6 +20,8 @@ export interface components {
             project_id: import('../../../../../TV/API/Params/ProjectIdTrait.ts').components['schemas']['TV.API.Params.ProjectIdTrait']['project_id'];
             check_id: import('../../../../Params/Wathcer/CheckIdTrait.ts').components['schemas']['Audit_2.Params.Wathcer.CheckIdTrait']['check_id'];
         };
+        /** Короткая ссылка гостевого доступа для просмотра радара */
+        "Audit_2.Methods.Watcher.Export.Links.Get.Exec": string | null;
     };
     responses: never;
     parameters: never;

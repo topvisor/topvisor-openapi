@@ -19,6 +19,10 @@
                     "id"
                 ],
                 "title": "Пометка тикета как \"прочитанный\" для автора тикета или админов"
+            },
+            "Tickets_2.Methods.Tickets.SetReaded.Edit.Exec": {
+                "nullable": true,
+                "type": "integer"
             }
         }
     }

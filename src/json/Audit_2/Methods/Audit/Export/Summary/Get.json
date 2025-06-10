@@ -27,6 +27,10 @@
                     "check_id"
                 ],
                 "title": "Экспорт отчета Анализа сайта"
+            },
+            "Audit_2.Methods.Audit.Export.Summary.Get.Exec": {
+                "title": "Файл отчета анализа сайта",
+                "type": "never"
             }
         }
     }

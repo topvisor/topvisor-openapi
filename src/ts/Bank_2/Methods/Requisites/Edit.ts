@@ -16,6 +16,7 @@ export interface components {
              *     см. объект Bank_2\Objects\Requisites */
             data: string;
         };
+        "Bank_2.Methods.Requisites.Edit.Exec": unknown;
     };
     responses: never;
     parameters: never;

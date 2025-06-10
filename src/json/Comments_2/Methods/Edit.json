@@ -24,6 +24,10 @@
                     "text"
                 ],
                 "title": "Изменение комментария\n\nИзменять комментарий можно только в течение ограниченного времени"
+            },
+            "Comments_2.Methods.Edit.Exec": {
+                "nullable": true,
+                "type": "integer"
             }
         }
     }

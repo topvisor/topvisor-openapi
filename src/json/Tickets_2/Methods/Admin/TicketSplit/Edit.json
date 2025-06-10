@@ -19,6 +19,10 @@
                     "id"
                 ],
                 "title": "Перенос последниего сообщения (до 1 сообщения автора) в новый тикет"
+            },
+            "Tickets_2.Methods.Admin.TicketSplit.Edit.Exec": {
+                "nullable": true,
+                "type": "integer"
             }
         }
     }

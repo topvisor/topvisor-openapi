@@ -61,6 +61,10 @@
                     "project_id"
                 ],
                 "title": "Изменение urls"
+            },
+            "Urls_2.Methods.Edit.Exec": {
+                "nullable": true,
+                "type": "integer"
             }
         }
     }

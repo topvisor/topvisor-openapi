@@ -34,6 +34,13 @@
                     "test"
                 ],
                 "title": "Копирование истории позиций"
+            },
+            "Admin_2.Methods.Actions.Positions.History.Copy.Add.Exec": {
+                "allOf": [
+                    {
+                        "$ref": "../../../../../../Admin_2/Objects/Actions/Result.json#/components/schemas/Admin_2.Objects.Actions.Result"
+                    }
+                ]
             }
         }
     }

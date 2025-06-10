@@ -71,6 +71,10 @@
                     "check_id"
                 ],
                 "title": "Экспорт результатов проверки файла"
+            },
+            "Audit_2.Methods.Audit.Export.Get.Exec": {
+                "title": "Файл результатов проверки сайта",
+                "type": "never"
             }
         }
     }

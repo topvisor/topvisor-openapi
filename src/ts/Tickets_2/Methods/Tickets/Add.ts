@@ -43,6 +43,8 @@ export interface components {
             /** Сайт для создания тикета */
             site?: import('../../../TV/Core/Sites/Sites.ts').components['schemas']['TV.Core.Sites.Sites'] | null;
         };
+        /** Id тикета */
+        "Tickets_2.Methods.Tickets.Add.Exec": number | null;
     };
     responses: never;
     parameters: never;

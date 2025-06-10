@@ -42,6 +42,10 @@
                     "id"
                 ],
                 "title": "Редактирование тикета (для админов)"
+            },
+            "Tickets_2.Methods.Admin.Ticket.Edit.Exec": {
+                "nullable": true,
+                "type": "integer"
             }
         }
     }

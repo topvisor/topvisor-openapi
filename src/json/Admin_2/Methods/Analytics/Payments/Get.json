@@ -27,6 +27,20 @@
                     "limit"
                 ],
                 "title": "Получение суммы оплат за период"
+            },
+            "Admin_2.Methods.Analytics.Payments.Get.Exec": {
+                "nullable": true,
+                "type": "array",
+                "items": {
+                    "oneOf": [
+                        {
+                            "type": "string"
+                        },
+                        {
+                            "type": "number"
+                        }
+                    ]
+                }
             }
         }
     }

@@ -11,6 +11,8 @@ export interface components {
         "Example_2.Methods.Object.Get": {
             user: import('../../Objects/User.ts').components['schemas']['Example_2.Objects.User'];
         };
+        /** Ассоциативный массив с результирующими переданными параетрами и результатом genSet() */
+        "Example_2.Methods.Object.Get.Exec": (string | number)[];
     };
     responses: never;
     parameters: never;

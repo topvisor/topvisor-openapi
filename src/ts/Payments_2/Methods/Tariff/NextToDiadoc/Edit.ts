@@ -12,6 +12,7 @@ export interface components {
             /** Флаг - применение настройки тарифов */
             next_to_diadoc: boolean;
         };
+        "Payments_2.Methods.Tariff.NextToDiadoc.Edit.Exec": number | null;
     };
     responses: never;
     parameters: never;

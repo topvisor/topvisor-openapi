@@ -62,6 +62,21 @@
                     "project_id"
                 ],
                 "title": "Получение сводок радара для графика"
+            },
+            "Audit_2.Methods.Watcher.Summary.Chart.Get.Exec": {
+                "title": "Сводки с количеством изменений по каждому типу проверки",
+                "nullable": true,
+                "type": "array",
+                "items": {
+                    "oneOf": [
+                        {
+                            "type": "string"
+                        },
+                        {
+                            "type": "number"
+                        }
+                    ]
+                }
             }
         }
     }

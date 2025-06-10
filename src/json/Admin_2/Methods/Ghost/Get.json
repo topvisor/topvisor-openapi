@@ -54,6 +54,9 @@
                     "offset"
                 ],
                 "title": "Получение доступа к акаунту пользователя в режиме \"призрак\""
+            },
+            "Admin_2.Methods.Ghost.Get.Exec": {
+                "type": "never"
             }
         }
     }

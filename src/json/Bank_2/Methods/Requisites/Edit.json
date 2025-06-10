@@ -24,6 +24,9 @@
                     "data"
                 ],
                 "title": "Изменение реквизитов"
+            },
+            "Bank_2.Methods.Requisites.Edit.Exec": {
+                "nullable": true
             }
         }
     }

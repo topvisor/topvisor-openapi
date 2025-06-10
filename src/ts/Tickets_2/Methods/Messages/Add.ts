@@ -16,6 +16,8 @@ export interface components {
             /** Не проводить рассылку уведомлений */
             is_silent?: boolean;
         };
+        /** Id добавленного сообщения */
+        "Tickets_2.Methods.Messages.Add.Exec": number | null;
     };
     responses: never;
     parameters: never;

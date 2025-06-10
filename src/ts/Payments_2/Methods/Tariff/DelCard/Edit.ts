@@ -9,6 +9,7 @@ export interface components {
     schemas: {
         /** Отписка от тарифа, оплаченного картой */
         "Payments_2.Methods.Tariff.DelCard.Edit": Record<string, never>;
+        "Payments_2.Methods.Tariff.DelCard.Edit.Exec": number | null;
     };
     responses: never;
     parameters: never;

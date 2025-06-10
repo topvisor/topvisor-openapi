@@ -12,6 +12,7 @@ export interface components {
             /** ID события */
             id: number;
         };
+        "Admin_2.Methods.Staff.Vacation.Del.Exec": number | null;
     };
     responses: never;
     parameters: never;

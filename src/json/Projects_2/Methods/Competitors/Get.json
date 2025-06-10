@@ -49,6 +49,20 @@
                     "project_id"
                 ],
                 "title": "Получение списка конкурентов"
+            },
+            "Projects_2.Methods.Competitors.Get.Exec": {
+                "nullable": true,
+                "type": "array",
+                "items": {
+                    "oneOf": [
+                        {
+                            "type": "string"
+                        },
+                        {
+                            "type": "number"
+                        }
+                    ]
+                }
             }
         }
     }

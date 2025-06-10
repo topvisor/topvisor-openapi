@@ -12,6 +12,7 @@ export interface components {
             /** Сумма для перевода */
             sum: string;
         };
+        "Bank_2.Methods.Referrals.ToBonus.Edit.Exec": number | null;
     };
     responses: never;
     parameters: never;

@@ -18,6 +18,21 @@
                     "project_id"
                 ],
                 "title": "Получение проверок радара"
+            },
+            "Audit_2.Methods.Watcher.Checks.Get.Exec": {
+                "title": "Список проверок радара",
+                "nullable": true,
+                "type": "array",
+                "items": {
+                    "oneOf": [
+                        {
+                            "type": "string"
+                        },
+                        {
+                            "type": "number"
+                        }
+                    ]
+                }
             }
         }
     }

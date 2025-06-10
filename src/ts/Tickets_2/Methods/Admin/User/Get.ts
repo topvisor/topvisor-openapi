@@ -12,6 +12,7 @@ export interface components {
             /** ID пользователя */
             id: number;
         };
+        "Tickets_2.Methods.Admin.User.Get.Exec": (string | number)[];
     };
     responses: never;
     parameters: never;

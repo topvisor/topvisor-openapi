@@ -38,6 +38,13 @@
                     "test"
                 ],
                 "title": "Удаление сообщений"
+            },
+            "Admin_2.Methods.Actions.Slack.Messages.Del.Exec": {
+                "allOf": [
+                    {
+                        "$ref": "../../../../../Admin_2/Objects/Actions/Result.json#/components/schemas/Admin_2.Objects.Actions.Result"
+                    }
+                ]
             }
         }
     }

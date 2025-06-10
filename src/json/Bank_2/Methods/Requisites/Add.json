@@ -31,6 +31,10 @@
                     "type"
                 ],
                 "title": "Добавиление реквизитов"
+            },
+            "Bank_2.Methods.Requisites.Add.Exec": {
+                "nullable": true,
+                "type": "string"
             }
         }
     }

@@ -39,6 +39,21 @@
                     "offset"
                 ],
                 "title": "Получение рубрики"
+            },
+            "Content_2.Methods.Journal.Rubrics.Get.Exec": {
+                "title": "@throws Exception",
+                "nullable": true,
+                "type": "array",
+                "items": {
+                    "oneOf": [
+                        {
+                            "type": "string"
+                        },
+                        {
+                            "type": "number"
+                        }
+                    ]
+                }
             }
         }
     }

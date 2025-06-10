@@ -16,6 +16,8 @@ export interface components {
             /** Имя на кого выписывается сертификат */
             user_name: string;
         };
+        /** @throws Exception */
+        "Content_2.Methods.Journal.Course.Certificates.Add.Exec": number | null;
     };
     responses: never;
     parameters: never;

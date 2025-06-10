@@ -47,6 +47,9 @@
                     "qualifiers"
                 ],
                 "title": "Получение проверки частоты задачи без проекта"
+            },
+            "Projects_2.Methods.Tasks.Volumes.Price.Get.Exec": {
+                "type": "number"
             }
         }
     }

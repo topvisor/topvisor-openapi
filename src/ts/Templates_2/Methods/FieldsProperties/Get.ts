@@ -15,6 +15,7 @@ export interface components {
             /** Id целевого проекта */
             target_id?: number | null;
         };
+        "Templates_2.Methods.FieldsProperties.Get.Exec": unknown;
     };
     responses: never;
     parameters: never;

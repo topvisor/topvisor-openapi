@@ -21,6 +21,7 @@ export interface components {
             tags: (string | number)[];
             project_id?: number | null;
         };
+        "Tags_2.Methods.Edit.Exec": unknown;
     };
     responses: never;
     parameters: never;

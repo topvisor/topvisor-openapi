@@ -12,6 +12,8 @@ export interface components {
             repository: import('../../../../../Export_2/Types/Repository/Name.ts').components['schemas']['Export_2.Types.Repository.Name'];
             project_id: import('../../../../../TV/API/Params/ProjectIdTrait.ts').components['schemas']['TV.API.Params.ProjectIdTrait']['project_id'];
         };
+        /** Будет произведен редиркт на файл в хранилище */
+        "Audit_2.Methods.Indexing.Export.ToRepository.Get.Exec": Record<string, never>;
     };
     responses: never;
     parameters: never;

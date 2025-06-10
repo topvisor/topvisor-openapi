@@ -26,6 +26,7 @@ export interface components {
             /** Фильтр по объектам групп, см. Admin_2\Accounting\Group */
             filters?: (string | number)[] | null;
         };
+        "Admin_2.Methods.Analytics.Accounting.SummaryForChart.Get.Exec": (string | number)[];
     };
     responses: never;
     parameters: never;

@@ -11,6 +11,7 @@ export interface components {
         "Admin_2.Methods.Staff.VacationPrint.Get": {
             id: number;
         };
+        "Admin_2.Methods.Staff.VacationPrint.Get.Exec": Record<string, never>;
     };
     responses: never;
     parameters: never;

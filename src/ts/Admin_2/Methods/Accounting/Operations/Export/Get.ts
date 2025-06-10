@@ -16,6 +16,7 @@ export interface components {
             /** Месяц */
             month: string;
         };
+        "Admin_2.Methods.Accounting.Operations.Export.Get.Exec": unknown;
     };
     responses: never;
     parameters: never;

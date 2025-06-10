@@ -61,6 +61,8 @@ export interface components {
             fetch_style?: import('../../../TV/API/Params/FetchStyleTrait.ts').components['schemas']['TV.API.Params.FetchStyleTrait']['fetch_style'];
             project_id: import('../../../TV/API/Params/ProjectIdTrait.ts').components['schemas']['TV.API.Params.ProjectIdTrait']['project_id'];
         };
+        /** Список ссылок с данными по ним */
+        "Audit_2.Methods.Indexing.Get.Exec": (string | number)[];
     };
     responses: never;
     parameters: never;

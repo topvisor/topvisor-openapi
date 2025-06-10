@@ -14,6 +14,11 @@ export interface components {
             booleans: import('../../../TV/API/Types/BoolArray.ts').components['schemas']['TV.API.Types.BoolArray'];
             enum_numbers: import('../../Types/EnumNumberArray.ts').components['schemas']['Example_2.Types.EnumNumberArray'];
         };
+        /**
+         * Ассоциативный массив с результирующими переданными параетрами, и результатоми implodeQuotes() и genSet()
+         * @description @type array<string, array<string, mixed>>
+         */
+        "Example_2.Methods.Array.Get.Exec": (string | number)[];
     };
     responses: never;
     parameters: never;

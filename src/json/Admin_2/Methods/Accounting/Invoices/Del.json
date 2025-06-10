@@ -21,6 +21,10 @@
                     "filters"
                 ],
                 "title": "Отмена отправки счета. Разрешено только для счетов со статусом pending или sending"
+            },
+            "Admin_2.Methods.Accounting.Invoices.Del.Exec": {
+                "nullable": true,
+                "type": "integer"
             }
         }
     }

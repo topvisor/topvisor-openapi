@@ -12,6 +12,7 @@ export interface components {
             /** ID графика */
             id: number;
         };
+        "Projects_2.Methods.Analytics.Del.Exec": number | null;
     };
     responses: never;
     parameters: never;

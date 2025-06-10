@@ -22,6 +22,7 @@ export interface components {
             /** Отображать ли автора в списке авторов */
             show_in_author_list?: boolean | null;
         };
+        "Content_2.Methods.Authors.Edit.Exec": number | null;
     };
     responses: never;
     parameters: never;

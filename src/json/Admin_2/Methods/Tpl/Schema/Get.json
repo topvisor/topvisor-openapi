@@ -28,6 +28,19 @@
                     "tpl"
                 ],
                 "title": "Получение схему HTML шаблона"
+            },
+            "Admin_2.Methods.Tpl.Schema.Get.Exec": {
+                "type": "array",
+                "items": {
+                    "oneOf": [
+                        {
+                            "type": "string"
+                        },
+                        {
+                            "type": "number"
+                        }
+                    ]
+                }
             }
         }
     }

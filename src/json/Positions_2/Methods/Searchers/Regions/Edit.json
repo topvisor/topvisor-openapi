@@ -55,6 +55,9 @@
                     "filters"
                 ],
                 "title": "Изменение региона"
+            },
+            "Positions_2.Methods.Searchers.Regions.Edit.Exec": {
+                "type": "integer"
             }
         }
     }

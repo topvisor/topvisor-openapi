@@ -15,6 +15,8 @@ export interface components {
              */
             phones?: unknown;
         };
+        /** @throws Exception */
+        "Sms_2.Methods.SendPIN.Get.Exec": boolean;
     };
     responses: never;
     parameters: never;

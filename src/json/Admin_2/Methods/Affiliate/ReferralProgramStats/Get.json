@@ -12,6 +12,20 @@
                 "properties": {},
                 "required": [],
                 "title": "Получение общей статистики по реферальной программе"
+            },
+            "Admin_2.Methods.Affiliate.ReferralProgramStats.Get.Exec": {
+                "nullable": true,
+                "type": "array",
+                "items": {
+                    "oneOf": [
+                        {
+                            "type": "string"
+                        },
+                        {
+                            "type": "number"
+                        }
+                    ]
+                }
             }
         }
     }

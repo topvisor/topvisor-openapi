@@ -24,6 +24,10 @@
                     "user_name"
                 ],
                 "title": "Изменение сертификата\n\nМожно менять только имя, если оно не указано"
+            },
+            "Content_2.Methods.Journal.Course.Certificates.Edit.Exec": {
+                "nullable": true,
+                "type": "integer"
             }
         }
     }

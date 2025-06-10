@@ -52,6 +52,10 @@
                     "base_filter"
                 ],
                 "title": "Добавление графика"
+            },
+            "Projects_2.Methods.Analytics.Add.Exec": {
+                "nullable": true,
+                "type": "integer"
             }
         }
     }

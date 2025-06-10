@@ -23,6 +23,21 @@
                 ],
                 "title": "Получение сводки анализа сайта",
                 "deprecated": true
+            },
+            "Audit_2.Methods.Audit.Browse.Get.Exec": {
+                "title": "Сводка анализа сайта",
+                "nullable": true,
+                "type": "array",
+                "items": {
+                    "oneOf": [
+                        {
+                            "type": "string"
+                        },
+                        {
+                            "type": "number"
+                        }
+                    ]
+                }
             }
         }
     }

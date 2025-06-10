@@ -24,6 +24,9 @@
                     "filter_id"
                 ],
                 "title": "Удаление фильтра группы"
+            },
+            "Admin_2.Methods.Accounting.Group.Filter.Del.Exec": {
+                "nullable": true
             }
         }
     }

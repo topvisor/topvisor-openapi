@@ -24,6 +24,13 @@
                     "test"
                 ],
                 "title": "Удаление файлов"
+            },
+            "Admin_2.Methods.Actions.Slack.Files.Del.Exec": {
+                "allOf": [
+                    {
+                        "$ref": "../../../../../Admin_2/Objects/Actions/Result.json#/components/schemas/Admin_2.Objects.Actions.Result"
+                    }
+                ]
             }
         }
     }

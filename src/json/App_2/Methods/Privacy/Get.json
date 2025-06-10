@@ -22,6 +22,14 @@
                 },
                 "required": [],
                 "title": "Получение текста политики конфиденциальности"
+            },
+            "App_2.Methods.Privacy.Get.Exec": {
+                "nullable": true,
+                "allOf": [
+                    {
+                        "$ref": "../../../Controller_2/Objects/Page.json#/components/schemas/Controller_2.Objects.Page"
+                    }
+                ]
             }
         }
     }

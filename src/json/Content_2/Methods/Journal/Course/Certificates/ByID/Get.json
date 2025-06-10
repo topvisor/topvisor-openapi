@@ -19,6 +19,9 @@
                     "id"
                 ],
                 "title": "Получение сертификата по id"
+            },
+            "Content_2.Methods.Journal.Course.Certificates.ByID.Get.Exec": {
+                "nullable": true
             }
         }
     }

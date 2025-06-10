@@ -18,6 +18,14 @@ export interface components {
             /** Id второго объекта, к которому будет привязано расписание (для mentions) */
             target_id_2?: number | null;
         };
+        /** Непосредственный вызов API функции
+         *
+         *     Запрещено делать публичной, это приведет к поломке preCall()
+         *
+         *     В описании к функции отвечать на вопрос: `Что является результатом запроса?` Например: `Список пользователей`
+         *
+         *     Не менять `protected`, проверка проводится при генерации схем в `TV\API\Objects\ClassAPIMethodInfo` */
+        "Schedule_2.Methods.AbstractRegular.Exec": unknown;
     };
     responses: never;
     parameters: never;

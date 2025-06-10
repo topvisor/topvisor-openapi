@@ -19,6 +19,9 @@
                     "inn"
                 ],
                 "title": "Получение данных юридического лица по ИНН"
+            },
+            "Bank_2.Methods.Ur.Get.Exec": {
+                "nullable": true
             }
         }
     }

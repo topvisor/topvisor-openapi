@@ -19,6 +19,10 @@
                     "next_requisites_id"
                 ],
                 "title": "Изменение платежных реквизитов тарифа"
+            },
+            "Payments_2.Methods.NextRequisitesId.Edit.Exec": {
+                "nullable": true,
+                "type": "integer"
             }
         }
     }

@@ -19,6 +19,11 @@
                     "id"
                 ],
                 "title": "Удаление шаблона"
+            },
+            "Templates_2.Methods.Del.Exec": {
+                "title": "@throws Exception",
+                "nullable": true,
+                "type": "integer"
             }
         }
     }

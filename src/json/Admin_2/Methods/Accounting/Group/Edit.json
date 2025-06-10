@@ -47,6 +47,10 @@
                     }
                 },
                 "required": []
+            },
+            "Admin_2.Methods.Accounting.Group.Edit.Exec": {
+                "nullable": true,
+                "type": "integer"
             }
         }
     }

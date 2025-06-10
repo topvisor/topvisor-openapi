@@ -43,6 +43,10 @@
                     "email"
                 ],
                 "title": "Удаление прав у пользователя"
+            },
+            "Projects_2.Methods.Rights.Del.Exec": {
+                "nullable": true,
+                "type": "integer"
             }
         }
     }

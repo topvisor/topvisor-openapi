@@ -19,6 +19,10 @@
                     "next_to_diadoc"
                 ],
                 "title": "Настройка оплаты тарифов: выставлять ли счета через диадок"
+            },
+            "Payments_2.Methods.Tariff.NextToDiadoc.Edit.Exec": {
+                "nullable": true,
+                "type": "integer"
             }
         }
     }

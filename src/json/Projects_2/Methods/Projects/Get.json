@@ -80,6 +80,20 @@
                     "offset"
                 ],
                 "title": "Получение списка проектов"
+            },
+            "Projects_2.Methods.Projects.Get.Exec": {
+                "nullable": true,
+                "type": "array",
+                "items": {
+                    "oneOf": [
+                        {
+                            "type": "string"
+                        },
+                        {
+                            "type": "number"
+                        }
+                    ]
+                }
             }
         }
     }

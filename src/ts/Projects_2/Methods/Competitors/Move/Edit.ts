@@ -24,6 +24,7 @@ export interface components {
              */
             to_type: string;
         };
+        "Projects_2.Methods.Competitors.Move.Edit.Exec": number | null;
     };
     responses: never;
     parameters: never;

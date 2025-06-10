@@ -34,6 +34,11 @@
                     "keywords_data"
                 ],
                 "title": "Изменение статуса запросов рекламной кампании"
+            },
+            "Broker_2.Methods.Keywords.Status.Edit.Exec": {
+                "title": "@return (array | int | null) выводит int, если функция провайдера не определена",
+                "description": "@throws Exception",
+                "nullable": true
             }
         }
     }

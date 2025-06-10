@@ -12,6 +12,7 @@ export interface components {
             /** Пост сотрудников */
             post: string;
         };
+        "Admin_2.Methods.Staff.ByPost.Get.Exec": (string | number)[];
     };
     responses: never;
     parameters: never;

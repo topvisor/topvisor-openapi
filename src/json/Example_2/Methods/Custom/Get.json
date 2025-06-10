@@ -18,6 +18,9 @@
                 },
                 "required": [],
                 "title": "Получение текущего времени"
+            },
+            "Example_2.Methods.Custom.Get.Exec": {
+                "type": "string"
             }
         }
     }

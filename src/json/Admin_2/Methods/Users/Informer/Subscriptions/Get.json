@@ -17,6 +17,15 @@
                 },
                 "required": [],
                 "title": "Получение графика с количеством подписок на рубрики с сегментцией по способам рассылки\n\nГрафик кешируется, первый запрос может выполняться дольше"
+            },
+            "Admin_2.Methods.Users.Informer.Subscriptions.Get.Exec": {
+                "title": "Данные для построения графика",
+                "nullable": true,
+                "allOf": [
+                    {
+                        "$ref": "../../../../../TV/Objects/Highcharts/Chart.json#/components/schemas/TV.Objects.Highcharts.Chart"
+                    }
+                ]
             }
         }
     }

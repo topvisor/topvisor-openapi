@@ -16,6 +16,7 @@ export interface components {
             /** ID комментария */
             id: number;
         };
+        "Comments_2.Methods.Del.Exec": number | null;
     };
     responses: never;
     parameters: never;

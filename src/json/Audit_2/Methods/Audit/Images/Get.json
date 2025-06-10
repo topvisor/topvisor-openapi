@@ -47,6 +47,21 @@
                     "check_id"
                 ],
                 "title": "Получение проверенных изображений"
+            },
+            "Audit_2.Methods.Audit.Images.Get.Exec": {
+                "title": "Список проверенных изображений",
+                "nullable": true,
+                "type": "array",
+                "items": {
+                    "oneOf": [
+                        {
+                            "type": "string"
+                        },
+                        {
+                            "type": "number"
+                        }
+                    ]
+                }
             }
         }
     }

@@ -9,6 +9,7 @@ export interface components {
     schemas: {
         /** Получение статистики */
         "Admin_2.Methods.Analytics.Statistics.Get": Record<string, never>;
+        "Admin_2.Methods.Analytics.Statistics.Get.Exec": (string | number)[] | null;
     };
     responses: never;
     parameters: never;

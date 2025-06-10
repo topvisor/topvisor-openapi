@@ -11,6 +11,7 @@ export interface components {
         "Content_2.Methods.Apometr.Updates.Dates.Get": {
             limit?: number | null;
         };
+        "Content_2.Methods.Apometr.Updates.Dates.Get.Exec": (string | number)[];
     };
     responses: never;
     parameters: never;

@@ -17,6 +17,9 @@
                 },
                 "required": [],
                 "title": "Для тестов интерфейса\n\nTODO: удалить после закрытия задачи #28444"
+            },
+            "Example_2.Methods.Bag.Get.Exec": {
+                "nullable": true
             }
         }
     }

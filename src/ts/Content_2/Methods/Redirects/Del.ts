@@ -22,6 +22,8 @@ export interface components {
             /** С пути (маска, * - любой символ) */
             path_mask: string;
         };
+        /** @throws Exception */
+        "Content_2.Methods.Redirects.Del.Exec": number | null;
     };
     responses: never;
     parameters: never;

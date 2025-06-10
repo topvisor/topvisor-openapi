@@ -39,6 +39,10 @@
                     "comment"
                 ],
                 "title": "Отправление письма с лэндинга вакансий на hr@topvisor.com"
+            },
+            "Landings_2.Methods.Hr.Feedback.Add.Exec": {
+                "nullable": true,
+                "type": "integer"
             }
         }
     }

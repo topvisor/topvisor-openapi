@@ -18,6 +18,7 @@ export interface components {
              *     Укажите 0, если надо переместить папку в начало списка */
             insert_after_id: number;
         };
+        "Projects_2.Methods.Folders.MoveFolder.Edit.Exec": unknown;
     };
     responses: never;
     parameters: never;

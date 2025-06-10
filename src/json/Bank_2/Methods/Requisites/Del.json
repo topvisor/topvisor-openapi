@@ -19,6 +19,9 @@
                     "id"
                 ],
                 "title": "Закрытие договора (оферту закрыть невозможно)"
+            },
+            "Bank_2.Methods.Requisites.Del.Exec": {
+                "nullable": true
             }
         }
     }

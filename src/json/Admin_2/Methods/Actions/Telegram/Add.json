@@ -29,6 +29,13 @@
                     "test"
                 ],
                 "title": "Добавление бота в телеграм канал"
+            },
+            "Admin_2.Methods.Actions.Telegram.Add.Exec": {
+                "allOf": [
+                    {
+                        "$ref": "../../../../Admin_2/Objects/Actions/Result.json#/components/schemas/Admin_2.Objects.Actions.Result"
+                    }
+                ]
             }
         }
     }

@@ -9,6 +9,7 @@ export interface components {
     schemas: {
         /** Получение меню справки */
         "Content_2.Methods.Support.Menu.Get": Record<string, never>;
+        "Content_2.Methods.Support.Menu.Get.Exec": (string | number)[];
     };
     responses: never;
     parameters: never;

@@ -44,6 +44,9 @@
                     "offset"
                 ],
                 "title": "Получение статуса проверки частоты задачи"
+            },
+            "Projects_2.Methods.Tasks.Volumes.Status.Get.Exec": {
+                "nullable": true
             }
         }
     }

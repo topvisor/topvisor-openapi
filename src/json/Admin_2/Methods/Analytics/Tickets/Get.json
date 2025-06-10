@@ -39,6 +39,19 @@
                     "offset"
                 ],
                 "title": "Получение тикетов"
+            },
+            "Admin_2.Methods.Analytics.Tickets.Get.Exec": {
+                "type": "array",
+                "items": {
+                    "oneOf": [
+                        {
+                            "type": "string"
+                        },
+                        {
+                            "type": "number"
+                        }
+                    ]
+                }
             }
         }
     }

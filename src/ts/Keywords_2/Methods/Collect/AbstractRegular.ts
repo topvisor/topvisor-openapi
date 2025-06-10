@@ -27,6 +27,14 @@ export interface components {
             currency?: import('../../../TV/API/Types/Currency.ts').components['schemas']['TV.API.Types.Currency'] | null;
             debug?: string | null;
         };
+        /** Непосредственный вызов API функции
+         *
+         *     Запрещено делать публичной, это приведет к поломке preCall()
+         *
+         *     В описании к функции отвечать на вопрос: `Что является результатом запроса?` Например: `Список пользователей`
+         *
+         *     Не менять `protected`, проверка проводится при генерации схем в `TV\API\Objects\ClassAPIMethodInfo` */
+        "Keywords_2.Methods.Collect.AbstractRegular.Exec": unknown;
     };
     responses: never;
     parameters: never;

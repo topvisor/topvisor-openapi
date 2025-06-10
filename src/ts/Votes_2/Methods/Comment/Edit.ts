@@ -16,6 +16,7 @@ export interface components {
             /** Комментарий */
             comment: string;
         };
+        "Votes_2.Methods.Comment.Edit.Exec": number | null;
     };
     responses: never;
     parameters: never;

@@ -55,6 +55,9 @@
                     "type"
                 ],
                 "title": "Скачивание архива документов в формате PDF"
+            },
+            "Bank_2.Methods.Requisites.PrintZip.Get.Exec": {
+                "type": "never"
             }
         }
     }

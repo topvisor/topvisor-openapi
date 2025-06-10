@@ -46,6 +46,11 @@
                     "target_id"
                 ],
                 "title": "Привязать расписание к объекту"
+            },
+            "Schedule_2.Methods.Edit.Exec": {
+                "title": "@throws Exception",
+                "nullable": true,
+                "type": "integer"
             }
         }
     }

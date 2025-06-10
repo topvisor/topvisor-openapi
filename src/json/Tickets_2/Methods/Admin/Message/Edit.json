@@ -24,6 +24,10 @@
                     "text"
                 ],
                 "title": "Редактирование текста ответа в тикете, только для админов"
+            },
+            "Tickets_2.Methods.Admin.Message.Edit.Exec": {
+                "nullable": true,
+                "type": "integer"
             }
         }
     }

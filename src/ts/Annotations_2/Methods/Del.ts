@@ -16,6 +16,7 @@ export interface components {
             /** Имя сервиса */
             service: import('../Types/ServiceName.ts').components['schemas']['Annotations_2.Types.ServiceName'];
         };
+        "Annotations_2.Methods.Del.Exec": number | null;
     };
     responses: never;
     parameters: never;

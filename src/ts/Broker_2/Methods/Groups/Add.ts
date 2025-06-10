@@ -14,6 +14,11 @@ export interface components {
             /** Имена групп */
             groups_names: (string | number)[];
         };
+        /**
+         * @return (array | int | null) выводит int, если функция провайдера не определена
+         * @description @throws Exception
+         */
+        "Broker_2.Methods.Groups.Add.Exec": unknown;
     };
     responses: never;
     parameters: never;

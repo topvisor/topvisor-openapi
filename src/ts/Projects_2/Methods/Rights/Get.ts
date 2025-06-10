@@ -12,6 +12,7 @@ export interface components {
             /** ID проекта */
             project_id: number;
         };
+        "Projects_2.Methods.Rights.Get.Exec": (string | number)[];
     };
     responses: never;
     parameters: never;

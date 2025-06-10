@@ -9,6 +9,7 @@ export interface components {
     schemas: {
         /** Получение возможных posts */
         "Admin_2.Methods.Staff.Posts.Get": Record<string, never>;
+        "Admin_2.Methods.Staff.Posts.Get.Exec": (string | number)[];
     };
     responses: never;
     parameters: never;

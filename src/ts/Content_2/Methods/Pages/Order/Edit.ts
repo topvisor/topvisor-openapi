@@ -16,6 +16,7 @@ export interface components {
             /** Адреса документов в нужном порядке */
             urls: (string | number)[];
         };
+        "Content_2.Methods.Pages.Order.Edit.Exec": number | null;
     };
     responses: never;
     parameters: never;

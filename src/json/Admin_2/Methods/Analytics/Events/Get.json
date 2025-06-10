@@ -39,6 +39,9 @@
                     "offset"
                 ],
                 "title": "Получение мероприятий"
+            },
+            "Admin_2.Methods.Analytics.Events.Get.Exec": {
+                "nullable": true
             }
         }
     }

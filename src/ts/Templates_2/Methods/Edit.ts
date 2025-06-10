@@ -22,6 +22,8 @@ export interface components {
             /** Свойства шаблона */
             properties?: (string | number)[];
         };
+        /** @throws Exception */
+        "Templates_2.Methods.Edit.Exec": number;
     };
     responses: never;
     parameters: never;

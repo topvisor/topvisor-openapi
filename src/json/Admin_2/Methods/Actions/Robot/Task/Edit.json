@@ -34,6 +34,14 @@
                     "test"
                 ],
                 "title": "Снятие задачи с дэбага"
+            },
+            "Admin_2.Methods.Actions.Robot.Task.Edit.Exec": {
+                "nullable": true,
+                "allOf": [
+                    {
+                        "$ref": "../../../../../Admin_2/Objects/Actions/Result.json#/components/schemas/Admin_2.Objects.Actions.Result"
+                    }
+                ]
             }
         }
     }

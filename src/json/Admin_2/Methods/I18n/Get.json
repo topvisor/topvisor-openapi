@@ -35,6 +35,20 @@
                 },
                 "required": [],
                 "title": "Получение записей словаря"
+            },
+            "Admin_2.Methods.I18n.Get.Exec": {
+                "title": "@return array{lang: string, category: string, name: string, value: string}",
+                "type": "array",
+                "items": {
+                    "oneOf": [
+                        {
+                            "type": "string"
+                        },
+                        {
+                            "type": "number"
+                        }
+                    ]
+                }
             }
         }
     }

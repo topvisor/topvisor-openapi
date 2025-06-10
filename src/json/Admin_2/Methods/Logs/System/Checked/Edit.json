@@ -24,6 +24,10 @@
                     "checked"
                 ],
                 "title": "Помечание лога как обработанного"
+            },
+            "Admin_2.Methods.Logs.System.Checked.Edit.Exec": {
+                "nullable": true,
+                "type": "integer"
             }
         }
     }

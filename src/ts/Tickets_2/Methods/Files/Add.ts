@@ -14,6 +14,7 @@ export interface components {
             /** Имя файла */
             filename: string;
         };
+        "Tickets_2.Methods.Files.Add.Exec": number;
     };
     responses: never;
     parameters: never;

@@ -6861,7 +6861,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: number | null;
+                        result: import('./Analytics_2/Methods/Add.ts').components['schemas']['Analytics_2.Methods.Add.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -6887,7 +6887,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: number | null;
+                        result: import('./Annotations_2/Methods/Add.ts').components['schemas']['Annotations_2.Methods.Add.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -6913,7 +6913,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: number | null;
+                        result: import('./Annotations_2/Methods/Del.ts').components['schemas']['Annotations_2.Methods.Del.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -6939,7 +6939,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: number | null;
+                        result: import('./Annotations_2/Methods/Edit.ts').components['schemas']['Annotations_2.Methods.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -6965,7 +6965,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: import('./Models/Annotations.ts').components['schemas']['Models.Annotations'][] | null;
+                        result: import('./Annotations_2/Methods/Get.ts').components['schemas']['Annotations_2.Methods.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: import('./Models/Annotations.ts').components['schemas']['Models.Annotations'];
                 };
@@ -7015,7 +7015,7 @@ export interface operations {
                 content: {
                     "application/json": ({
                         /** Id вставленного комментария */
-                        result: number | null;
+                        result: import('./Comments_2/Methods/Add.ts').components['schemas']['Comments_2.Methods.Add.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -7041,7 +7041,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: number | null;
+                        result: import('./Comments_2/Methods/Del.ts').components['schemas']['Comments_2.Methods.Del.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -7067,7 +7067,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: number | null;
+                        result: import('./Comments_2/Methods/Edit.ts').components['schemas']['Comments_2.Methods.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -7093,7 +7093,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: import('./Models/Comments.ts').components['schemas']['Models.Comments'][];
+                        result: import('./Comments_2/Methods/Get.ts').components['schemas']['Comments_2.Methods.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: import('./Models/Comments.ts').components['schemas']['Models.Comments'];
                 };
@@ -7144,7 +7144,7 @@ export interface operations {
                          *        - count_views
                          *        - count_unique_views
                          *        - count_likes */
-                        result: (string | number)[];
+                        result: import('./Content_2/Methods/Get.ts').components['schemas']['Content_2.Methods.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -7170,7 +7170,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: unknown;
+                        result: import('./Payments_2/Methods/Add.ts').components['schemas']['Payments_2.Methods.Add.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -7196,7 +7196,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: unknown;
+                        result: import('./Payments_2/Methods/Get.ts').components['schemas']['Payments_2.Methods.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: import('./Models/Payments.ts').components['schemas']['Models.Payments'];
                 };
@@ -7222,7 +7222,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: string | null;
+                        result: import('./Qr_2/Methods/Get.ts').components['schemas']['Qr_2.Methods.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -7248,7 +7248,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: number;
+                        result: import('./Recurring_2/Methods/Edit.ts').components['schemas']['Recurring_2.Methods.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -7281,7 +7281,7 @@ export interface operations {
                          *     В описании к функции отвечать на вопрос: `Что является результатом запроса?` Например: `Список пользователей`
                          *
                          *     Не менять `protected`, проверка проводится при генерации схем в `TV\API\Objects\ClassAPIMethodInfo` */
-                        result: unknown;
+                        result: import('./Schedule_2/Methods/AbstractRegular.ts').components['schemas']['Schedule_2.Methods.AbstractRegular.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -7308,7 +7308,7 @@ export interface operations {
                 content: {
                     "application/json": ({
                         /** @throws Exception */
-                        result: number | null;
+                        result: import('./Schedule_2/Methods/Del.ts').components['schemas']['Schedule_2.Methods.Del.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -7335,7 +7335,7 @@ export interface operations {
                 content: {
                     "application/json": ({
                         /** @throws Exception */
-                        result: number | null;
+                        result: import('./Schedule_2/Methods/Edit.ts').components['schemas']['Schedule_2.Methods.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -7362,7 +7362,7 @@ export interface operations {
                 content: {
                     "application/json": ({
                         /** @throws Exception */
-                        result: (string | number)[];
+                        result: import('./Schedule_2/Methods/Get.ts').components['schemas']['Schedule_2.Methods.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -7388,7 +7388,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: unknown;
+                        result: import('./Tags_2/Methods/Edit.ts').components['schemas']['Tags_2.Methods.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -7414,7 +7414,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: (string | number)[] | null;
+                        result: import('./Tags_2/Methods/Get.ts').components['schemas']['Tags_2.Methods.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -7441,7 +7441,7 @@ export interface operations {
                 content: {
                     "application/json": ({
                         /** @throws Exception */
-                        result: number | null;
+                        result: import('./Templates_2/Methods/Add.ts').components['schemas']['Templates_2.Methods.Add.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -7468,7 +7468,7 @@ export interface operations {
                 content: {
                     "application/json": ({
                         /** @throws Exception */
-                        result: number | null;
+                        result: import('./Templates_2/Methods/Del.ts').components['schemas']['Templates_2.Methods.Del.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -7495,7 +7495,7 @@ export interface operations {
                 content: {
                     "application/json": ({
                         /** @throws Exception */
-                        result: number;
+                        result: import('./Templates_2/Methods/Edit.ts').components['schemas']['Templates_2.Methods.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -7522,7 +7522,7 @@ export interface operations {
                 content: {
                     "application/json": ({
                         /** @throws Exception */
-                        result: (string | number)[];
+                        result: import('./Templates_2/Methods/Get.ts').components['schemas']['Templates_2.Methods.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -7548,7 +7548,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: number | null;
+                        result: import('./Urls_2/Methods/Add.ts').components['schemas']['Urls_2.Methods.Add.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: import('./Models/Urls.ts').components['schemas']['Models.Urls'];
                 };
@@ -7574,7 +7574,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: number | null;
+                        result: import('./Urls_2/Methods/Edit.ts').components['schemas']['Urls_2.Methods.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: import('./Models/Urls.ts').components['schemas']['Models.Urls'];
                 };
@@ -7601,7 +7601,7 @@ export interface operations {
                 content: {
                     "application/json": ({
                         /** Список urls проекта */
-                        result: unknown;
+                        result: import('./Urls_2/Methods/Get.ts').components['schemas']['Urls_2.Methods.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: import('./Models/Urls.ts').components['schemas']['Models.Urls'];
                 };
@@ -7627,7 +7627,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: number | null;
+                        result: import('./Votes_2/Methods/Add.ts').components['schemas']['Votes_2.Methods.Add.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: import('./Models/Votes.ts').components['schemas']['Models.Votes'];
                 };
@@ -7653,7 +7653,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: import('./Models/Votes.ts').components['schemas']['Models.Votes'][] | null;
+                        result: import('./Votes_2/Methods/Get.ts').components['schemas']['Votes_2.Methods.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: import('./Models/Votes.ts').components['schemas']['Models.Votes'];
                 };
@@ -7709,7 +7709,7 @@ export interface operations {
                          *     В описании к функции отвечать на вопрос: `Что является результатом запроса?` Например: `Список пользователей`
                          *
                          *     Не менять `protected`, проверка проводится при генерации схем в `TV\API\Objects\ClassAPIMethodInfo` */
-                        result: unknown;
+                        result: import('./Admin_2/Methods/Actions/AbstractRegular.ts').components['schemas']['Admin_2.Methods.Actions.AbstractRegular.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -7759,7 +7759,7 @@ export interface operations {
                 content: {
                     "application/json": ({
                         /** @return array{lang: string, category: string, name: string, value: string} */
-                        result: (string | number)[];
+                        result: import('./Admin_2/Methods/I18n/Get.ts').components['schemas']['Admin_2.Methods.I18n.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -7785,7 +7785,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: (string | number)[];
+                        result: import('./Admin_2/Methods/Informer/Add.ts').components['schemas']['Admin_2.Methods.Informer.Add.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -7811,7 +7811,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: number | null;
+                        result: import('./Admin_2/Methods/Logs/Edit.ts').components['schemas']['Admin_2.Methods.Logs.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -7837,7 +7837,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: string;
+                        result: import('./Admin_2/Methods/Logs/Get.ts').components['schemas']['Admin_2.Methods.Logs.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -7863,7 +7863,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: import('./Models/Analytics/Ranks.ts').components['schemas']['Models.Analytics.Ranks'][] | null;
+                        result: import('./Admin_2/Methods/Ranks/Get.ts').components['schemas']['Admin_2.Methods.Ranks.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: import('./Models/Analytics/Ranks.ts').components['schemas']['Models.Analytics.Ranks'];
                 };
@@ -7889,7 +7889,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: number | null;
+                        result: import('./Admin_2/Methods/Staff/Add.ts').components['schemas']['Admin_2.Methods.Staff.Add.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -7915,7 +7915,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: number | null;
+                        result: import('./Admin_2/Methods/Staff/Edit.ts').components['schemas']['Admin_2.Methods.Staff.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -7941,7 +7941,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: unknown;
+                        result: import('./Admin_2/Methods/Staff/Get.ts').components['schemas']['Admin_2.Methods.Staff.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: import('./Models/Admin/Staff.ts').components['schemas']['Models.Admin.Staff'];
                 };
@@ -7967,7 +7967,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: number | null;
+                        result: import('./Admin_2/Methods/TariffChangeExpire/Edit.ts').components['schemas']['Admin_2.Methods.TariffChangeExpire.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -7993,7 +7993,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: (string | number)[];
+                        result: import('./Admin_2/Methods/Tpl/Get.ts').components['schemas']['Admin_2.Methods.Tpl.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -8019,7 +8019,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: unknown;
+                        result: import('./Admin_2/Methods/Users/Edit.ts').components['schemas']['Admin_2.Methods.Users.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: import('./Models/Admin/Users.ts').components['schemas']['Models.Admin.Users'];
                 };
@@ -8045,7 +8045,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: unknown;
+                        result: import('./Admin_2/Methods/Users/Get.ts').components['schemas']['Admin_2.Methods.Users.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: import('./Models/Admin/Users.ts').components['schemas']['Models.Admin.Users'];
                 };
@@ -8071,7 +8071,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: import('./Models/Votes.ts').components['schemas']['Models.Votes'][] | null;
+                        result: import('./Admin_2/Methods/Votes/Get.ts').components['schemas']['Admin_2.Methods.Votes.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: import('./Models/Votes.ts').components['schemas']['Models.Votes'];
                 };
@@ -8097,7 +8097,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: import('./Models/Annotations.ts').components['schemas']['Models.Annotations'][] | null;
+                        result: import('./Annotations_2/Methods/My/Get.ts').components['schemas']['Annotations_2.Methods.My.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: import('./Models/Annotations.ts').components['schemas']['Models.Annotations'];
                 };
@@ -8123,7 +8123,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: unknown;
+                        result: import('./App_2/Methods/Actions/Get.ts').components['schemas']['App_2.Methods.Actions.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -8149,7 +8149,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: import('./Controller_2/Objects/Page.ts').components['schemas']['Controller_2.Objects.Page'] | null;
+                        result: import('./App_2/Methods/Privacy/Get.ts').components['schemas']['App_2.Methods.Privacy.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -8176,7 +8176,7 @@ export interface operations {
                 content: {
                     "application/json": ({
                         /** Количество настроенных URL */
-                        result: number | null;
+                        result: import('./Audit_2/Methods/CountUrls/Get.ts').components['schemas']['Audit_2.Methods.CountUrls.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -8203,7 +8203,7 @@ export interface operations {
                 content: {
                     "application/json": ({
                         /** Список ссылок с данными по ним */
-                        result: import('./Models/Urls.ts').components['schemas']['Models.Urls'][];
+                        result: import('./Audit_2/Methods/Indexing/Get.ts').components['schemas']['Audit_2.Methods.Indexing.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: import('./Models/Urls.ts').components['schemas']['Models.Urls'];
                 };
@@ -8230,7 +8230,7 @@ export interface operations {
                 content: {
                     "application/json": ({
                         /** Количество применных настроек */
-                        result: number | null;
+                        result: import('./Audit_2/Methods/Settings/Edit.ts').components['schemas']['Audit_2.Methods.Settings.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -8257,7 +8257,7 @@ export interface operations {
                 content: {
                     "application/json": ({
                         /** Настройки аудита */
-                        result: (string | number)[] | null;
+                        result: import('./Audit_2/Methods/Settings/Get.ts').components['schemas']['Audit_2.Methods.Settings.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -8284,7 +8284,7 @@ export interface operations {
                 content: {
                     "application/json": ({
                         /** Генерируемый на основе urls, список результатов проверок радара */
-                        result: (string | number)[] | null;
+                        result: import('./Audit_2/Methods/Watcher/Get.ts').components['schemas']['Audit_2.Methods.Watcher.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -8310,7 +8310,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: unknown;
+                        result: import('./Bank_2/Methods/Bank/Get.ts').components['schemas']['Bank_2.Methods.Bank.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -8336,7 +8336,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: unknown;
+                        result: import('./Bank_2/Methods/History/Get.ts').components['schemas']['Bank_2.Methods.History.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: import('./Models/BalanceHistory.ts').components['schemas']['Models.BalanceHistory'];
                 };
@@ -8362,11 +8362,8 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        /**
-                         * @return array{balance_all: float, balance_personal: float, balance_bonus: float, balance_tariff: float, tariff: array, subscription?: Bank_2\Objects\Subscriptions\Subscription, subscription_name?: Bank_2\Objects\Subscriptions\Subscription}
-                         * @description @return array{balance_all: float, balance_personal: float, balance_bonus: float, balance_tariff: float, tariff: array, subscription?: Bank_2\Objects\Subscriptions\Subscription, subscription_name?: Bank_2\Objects\Subscriptions\Subscription}
-                         */
-                        result: (string | number)[];
+                        /** @return array{balance_all: float, balance_personal: float, balance_bonus: float, balance_tariff: float, tariff: array, subscription?: Bank_2\Objects\Subscriptions\Subscription, subscription_name?: Bank_2\Objects\Subscriptions\Subscription} */
+                        result: import('./Bank_2/Methods/Info/Get.ts').components['schemas']['Bank_2.Methods.Info.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -8392,7 +8389,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: string | null;
+                        result: import('./Bank_2/Methods/Requisites/Add.ts').components['schemas']['Bank_2.Methods.Requisites.Add.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -8418,7 +8415,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: unknown;
+                        result: import('./Bank_2/Methods/Requisites/Del.ts').components['schemas']['Bank_2.Methods.Requisites.Del.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -8444,7 +8441,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: unknown;
+                        result: import('./Bank_2/Methods/Requisites/Edit.ts').components['schemas']['Bank_2.Methods.Requisites.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -8470,7 +8467,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: unknown;
+                        result: import('./Bank_2/Methods/Requisites/Get.ts').components['schemas']['Bank_2.Methods.Requisites.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: import('./Models/Requisites.ts').components['schemas']['Models.Requisites'];
                 };
@@ -8496,7 +8493,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: unknown;
+                        result: import('./Bank_2/Methods/Ur/Get.ts').components['schemas']['Bank_2.Methods.Ur.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -8522,11 +8519,8 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        /**
-                         * @throws Exception
-                         * @description @throws Exception
-                         */
-                        result: unknown;
+                        /** @throws Exception */
+                        result: import('./Broker_2/Methods/Ads/Edit.ts').components['schemas']['Broker_2.Methods.Ads.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -8553,7 +8547,7 @@ export interface operations {
                 content: {
                     "application/json": ({
                         /** @throws Exception */
-                        result: import('./Models/Broker/Ads.ts').components['schemas']['Models.Broker.Ads'][] | null;
+                        result: import('./Broker_2/Methods/Ads/Get.ts').components['schemas']['Broker_2.Methods.Ads.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: import('./Models/Broker/Ads.ts').components['schemas']['Models.Broker.Ads'];
                 };
@@ -8580,7 +8574,7 @@ export interface operations {
                 content: {
                     "application/json": ({
                         /** @throws Exception */
-                        result: number | null;
+                        result: import('./Broker_2/Methods/Campaigns/Add.ts').components['schemas']['Broker_2.Methods.Campaigns.Add.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: import('./Models/Broker/Campaigns.ts').components['schemas']['Models.Broker.Campaigns'];
                 };
@@ -8607,7 +8601,7 @@ export interface operations {
                 content: {
                     "application/json": ({
                         /** @throws Exception */
-                        result: number | null;
+                        result: import('./Broker_2/Methods/Campaigns/Del.ts').components['schemas']['Broker_2.Methods.Campaigns.Del.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: import('./Models/Broker/Campaigns.ts').components['schemas']['Models.Broker.Campaigns'];
                 };
@@ -8634,7 +8628,7 @@ export interface operations {
                 content: {
                     "application/json": ({
                         /** @throws Exception */
-                        result: number;
+                        result: import('./Broker_2/Methods/Campaigns/Edit.ts').components['schemas']['Broker_2.Methods.Campaigns.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: import('./Models/Broker/Campaigns.ts').components['schemas']['Models.Broker.Campaigns'];
                 };
@@ -8661,7 +8655,7 @@ export interface operations {
                 content: {
                     "application/json": ({
                         /** @throws Exception */
-                        result: import('./Models/Broker/Campaigns.ts').components['schemas']['Models.Broker.Campaigns'][];
+                        result: import('./Broker_2/Methods/Campaigns/Get.ts').components['schemas']['Broker_2.Methods.Campaigns.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: import('./Models/Broker/Campaigns.ts').components['schemas']['Models.Broker.Campaigns'];
                 };
@@ -8687,11 +8681,8 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        /**
-                         * @throws Exception
-                         * @description @throws Exception
-                         */
-                        result: unknown;
+                        /** @throws Exception */
+                        result: import('./Broker_2/Methods/Groups/Add.ts').components['schemas']['Broker_2.Methods.Groups.Add.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -8718,7 +8709,7 @@ export interface operations {
                 content: {
                     "application/json": ({
                         /** @throws Exception */
-                        result: import('./Models/Broker/Groups.ts').components['schemas']['Models.Broker.Groups'][];
+                        result: import('./Broker_2/Methods/Groups/Get.ts').components['schemas']['Broker_2.Methods.Groups.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: import('./Models/Broker/Groups.ts').components['schemas']['Models.Broker.Groups'];
                 };
@@ -8744,11 +8735,8 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        /**
-                         * @throws Exception
-                         * @description @throws Exception
-                         */
-                        result: unknown;
+                        /** @throws Exception */
+                        result: import('./Broker_2/Methods/Keywords/Del.ts').components['schemas']['Broker_2.Methods.Keywords.Del.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -8775,7 +8763,7 @@ export interface operations {
                 content: {
                     "application/json": ({
                         /** @throws Exception */
-                        result: number;
+                        result: import('./Broker_2/Methods/Keywords/Edit.ts').components['schemas']['Broker_2.Methods.Keywords.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: import('./Models/Broker/Keywords.ts').components['schemas']['Models.Broker.Keywords'];
                 };
@@ -8802,7 +8790,7 @@ export interface operations {
                 content: {
                     "application/json": ({
                         /** @throws Exception */
-                        result: import('./Models/Broker/Keywords.ts').components['schemas']['Models.Broker.Keywords'][];
+                        result: import('./Broker_2/Methods/Keywords/Get.ts').components['schemas']['Broker_2.Methods.Keywords.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: import('./Models/Broker/Keywords.ts').components['schemas']['Models.Broker.Keywords'];
                 };
@@ -8829,7 +8817,7 @@ export interface operations {
                 content: {
                     "application/json": ({
                         /** @throws Exception */
-                        result: import('./Models/Broker/Log.ts').components['schemas']['Models.Broker.Log'][] | null;
+                        result: import('./Broker_2/Methods/Log/Get.ts').components['schemas']['Broker_2.Methods.Log.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: import('./Models/Broker/Log.ts').components['schemas']['Models.Broker.Log'];
                 };
@@ -8855,7 +8843,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: import('./Models/Comments.ts').components['schemas']['Models.Comments'][] | null;
+                        result: import('./Comments_2/Methods/ByAuthor/Get.ts').components['schemas']['Comments_2.Methods.ByAuthor.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: import('./Models/Comments.ts').components['schemas']['Models.Comments'];
                 };
@@ -8881,7 +8869,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: number | null;
+                        result: import('./Comments_2/Methods/Like/Edit.ts').components['schemas']['Comments_2.Methods.Like.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -8907,7 +8895,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: number | null;
+                        result: import('./Content_2/Methods/Authors/Edit.ts').components['schemas']['Content_2.Methods.Authors.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -8933,7 +8921,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: unknown;
+                        result: import('./Content_2/Methods/Authors/Get.ts').components['schemas']['Content_2.Methods.Authors.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: import('./Models/Content/Authors.ts').components['schemas']['Models.Content.Authors'];
                 };
@@ -8959,7 +8947,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: number | null;
+                        result: import('./Content_2/Methods/BookmarkAuthor/Edit.ts').components['schemas']['Content_2.Methods.BookmarkAuthor.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -8985,7 +8973,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: number | null;
+                        result: import('./Content_2/Methods/Bookmark/Edit.ts').components['schemas']['Content_2.Methods.Bookmark.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -9011,7 +8999,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: number | null;
+                        result: import('./Content_2/Methods/Like/Edit.ts').components['schemas']['Content_2.Methods.Like.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -9044,7 +9032,7 @@ export interface operations {
                          *     В описании к функции отвечать на вопрос: `Что является результатом запроса?` Например: `Список пользователей`
                          *
                          *     Не менять `protected`, проверка проводится при генерации схем в `TV\API\Objects\ClassAPIMethodInfo` */
-                        result: unknown;
+                        result: import('./Content_2/Methods/Pages/AbstractPage.ts').components['schemas']['Content_2.Methods.Pages.AbstractPage.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: import('./Models/Pages.ts').components['schemas']['Models.Pages'];
                 };
@@ -9071,7 +9059,7 @@ export interface operations {
                 content: {
                     "application/json": ({
                         /** @throws Exception */
-                        result: number;
+                        result: import('./Content_2/Methods/Pages/Add.ts').components['schemas']['Content_2.Methods.Pages.Add.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: import('./Models/Pages.ts').components['schemas']['Models.Pages'];
                 };
@@ -9098,7 +9086,7 @@ export interface operations {
                 content: {
                     "application/json": ({
                         /** @throws Exception */
-                        result: number | null;
+                        result: import('./Content_2/Methods/Pages/Del.ts').components['schemas']['Content_2.Methods.Pages.Del.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: import('./Models/Pages.ts').components['schemas']['Models.Pages'];
                 };
@@ -9125,7 +9113,7 @@ export interface operations {
                 content: {
                     "application/json": ({
                         /** @throws Exception */
-                        result: number | null;
+                        result: import('./Content_2/Methods/Pages/Edit.ts').components['schemas']['Content_2.Methods.Pages.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: import('./Models/Pages.ts').components['schemas']['Models.Pages'];
                 };
@@ -9152,7 +9140,7 @@ export interface operations {
                 content: {
                     "application/json": ({
                         /** @throws Exception */
-                        result: import('./Models/Pages.ts').components['schemas']['Models.Pages'][] | null;
+                        result: import('./Content_2/Methods/Pages/Get.ts').components['schemas']['Content_2.Methods.Pages.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: import('./Models/Pages.ts').components['schemas']['Models.Pages'];
                 };
@@ -9185,7 +9173,7 @@ export interface operations {
                          *     В описании к функции отвечать на вопрос: `Что является результатом запроса?` Например: `Список пользователей`
                          *
                          *     Не менять `protected`, проверка проводится при генерации схем в `TV\API\Objects\ClassAPIMethodInfo` */
-                        result: unknown;
+                        result: import('./Content_2/Methods/Redirects/AbstractRegular.ts').components['schemas']['Content_2.Methods.Redirects.AbstractRegular.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -9212,7 +9200,7 @@ export interface operations {
                 content: {
                     "application/json": ({
                         /** @throws Exception */
-                        result: number | null;
+                        result: import('./Content_2/Methods/Redirects/Add.ts').components['schemas']['Content_2.Methods.Redirects.Add.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -9239,7 +9227,7 @@ export interface operations {
                 content: {
                     "application/json": ({
                         /** @throws Exception */
-                        result: number | null;
+                        result: import('./Content_2/Methods/Redirects/Del.ts').components['schemas']['Content_2.Methods.Redirects.Del.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -9266,7 +9254,7 @@ export interface operations {
                 content: {
                     "application/json": ({
                         /** @throws Exception */
-                        result: number | null;
+                        result: import('./Content_2/Methods/Redirects/Edit.ts').components['schemas']['Content_2.Methods.Redirects.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -9292,7 +9280,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: import('./Models/ContentsRedirects.ts').components['schemas']['Models.ContentsRedirects'][] | null;
+                        result: import('./Content_2/Methods/Redirects/Get.ts').components['schemas']['Content_2.Methods.Redirects.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: import('./Models/ContentsRedirects.ts').components['schemas']['Models.ContentsRedirects'];
                 };
@@ -9319,7 +9307,7 @@ export interface operations {
                 content: {
                     "application/json": ({
                         /** @throws Exception */
-                        result: string | null;
+                        result: import('./Content_2/Methods/Rss/Get.ts').components['schemas']['Content_2.Methods.Rss.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: import('./Models/Pages.ts').components['schemas']['Models.Pages'];
                 };
@@ -9346,7 +9334,7 @@ export interface operations {
                 content: {
                     "application/json": ({
                         /** @throws Exception */
-                        result: (string | number)[];
+                        result: import('./Content_2/Methods/Search/Get.ts').components['schemas']['Content_2.Methods.Search.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -9373,7 +9361,7 @@ export interface operations {
                 content: {
                     "application/json": ({
                         /** @throws Exception */
-                        result: string | null;
+                        result: import('./Content_2/Methods/Sitemap/Get.ts').components['schemas']['Content_2.Methods.Sitemap.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: import('./Models/Pages.ts').components['schemas']['Models.Pages'];
                 };
@@ -9399,7 +9387,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: (string | number)[] | null;
+                        result: import('./Content_2/Methods/Tags/Get.ts').components['schemas']['Content_2.Methods.Tags.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -9425,7 +9413,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: number | null;
+                        result: import('./Cron_2/Methods/Commands/Add.ts').components['schemas']['Cron_2.Methods.Commands.Add.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: import('./Models/CronCommands.ts').components['schemas']['Models.CronCommands'];
                 };
@@ -9451,7 +9439,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: number | null;
+                        result: import('./Cron_2/Methods/Commands/Del.ts').components['schemas']['Cron_2.Methods.Commands.Del.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: import('./Models/CronCommands.ts').components['schemas']['Models.CronCommands'];
                 };
@@ -9477,7 +9465,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: number | null;
+                        result: import('./Cron_2/Methods/Commands/Edit.ts').components['schemas']['Cron_2.Methods.Commands.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: import('./Models/CronCommands.ts').components['schemas']['Models.CronCommands'];
                 };
@@ -9504,7 +9492,7 @@ export interface operations {
                 content: {
                     "application/json": ({
                         /** Список задач cron */
-                        result: import('./Models/CronCommands.ts').components['schemas']['Models.CronCommands'][] | null;
+                        result: import('./Cron_2/Methods/Commands/Get.ts').components['schemas']['Cron_2.Methods.Commands.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: import('./Models/CronCommands.ts').components['schemas']['Models.CronCommands'];
                 };
@@ -9531,7 +9519,7 @@ export interface operations {
                 content: {
                     "application/json": ({
                         /** Список имен сервисов */
-                        result: import('./Models/CronCommands.ts').components['schemas']['Models.CronCommands'][] | null;
+                        result: import('./Cron_2/Methods/Get.ts').components['schemas']['Cron_2.Methods.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: import('./Models/CronCommands.ts').components['schemas']['Models.CronCommands'];
                 };
@@ -9557,11 +9545,8 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        /**
-                         * @type array<string, array<string, mixed>>
-                         * @description @type array<string, array<string, mixed>>
-                         */
-                        result: (string | number)[];
+                        /** @type array<string, array<string, mixed>> */
+                        result: import('./Example_2/Methods/Array/Get.ts').components['schemas']['Example_2.Methods.Array.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -9587,7 +9572,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: unknown;
+                        result: import('./Example_2/Methods/Bag/Get.ts').components['schemas']['Example_2.Methods.Bag.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -9613,7 +9598,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: string;
+                        result: import('./Example_2/Methods/Custom/Get.ts').components['schemas']['Example_2.Methods.Custom.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -9640,7 +9625,7 @@ export interface operations {
                 content: {
                     "application/json": ({
                         /** Ассоциативный массив с результирующими переданными параетрами и результатом genSet() */
-                        result: (string | number)[];
+                        result: import('./Example_2/Methods/Enum/Get.ts').components['schemas']['Example_2.Methods.Enum.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -9667,7 +9652,7 @@ export interface operations {
                 content: {
                     "application/json": ({
                         /** Ассоциативный массив с результирующими переданными параетрами и результатом genSet() */
-                        result: (string | number)[];
+                        result: import('./Example_2/Methods/Object/Get.ts').components['schemas']['Example_2.Methods.Object.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -9700,7 +9685,7 @@ export interface operations {
                          *     - static
                          *     - parent
                          *     - self */
-                        result: import('./Example_2/Methods/PhpDoc/Get.ts').components['schemas']['Example_2.Methods.PhpDoc.Get'];
+                        result: import('./Example_2/Methods/PhpDoc/Get.ts').components['schemas']['Example_2.Methods.PhpDoc.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -9726,7 +9711,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: import('./Models/Projects.ts').components['schemas']['Models.Projects'][] | null;
+                        result: import('./Example_2/Methods/Projects/Get.ts').components['schemas']['Example_2.Methods.Projects.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: import('./Models/Projects.ts').components['schemas']['Models.Projects'];
                 };
@@ -9759,7 +9744,7 @@ export interface operations {
                          *     В описании к функции отвечать на вопрос: `Что является результатом запроса?` Например: `Список пользователей`
                          *
                          *     Не менять `protected`, проверка проводится при генерации схем в `TV\API\Objects\ClassAPIMethodInfo` */
-                        result: unknown;
+                        result: import('./Keywords_2/Methods/Collect/AbstractRegular.ts').components['schemas']['Keywords_2.Methods.Collect.AbstractRegular.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -9785,7 +9770,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: unknown;
+                        result: import('./Keywords_2/Methods/Keywords/Get.ts').components['schemas']['Keywords_2.Methods.Keywords.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: import('./Models/Keywords.ts').components['schemas']['Models.Keywords'];
                 };
@@ -9811,7 +9796,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: number | null;
+                        result: import('./Keywords_2/Methods/Volumes/Get.ts').components['schemas']['Keywords_2.Methods.Volumes.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: import('./Models/Groups.ts').components['schemas']['Models.Groups'];
                 };
@@ -9860,7 +9845,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: (string | number)[] | null;
+                        result: import('./Payments_2/Methods/Companies/Get.ts').components['schemas']['Payments_2.Methods.Companies.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -9886,7 +9871,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: number | null;
+                        result: import('./Payments_2/Methods/ContractSign/Edit.ts').components['schemas']['Payments_2.Methods.ContractSign.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -9912,7 +9897,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: number | null;
+                        result: import('./Payments_2/Methods/NextRequisitesId/Edit.ts').components['schemas']['Payments_2.Methods.NextRequisitesId.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -9938,11 +9923,8 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        /**
-                         * @throws Exception
-                         * @description @throws Exception
-                         */
-                        result: string | null;
+                        /** @throws Exception */
+                        result: import('./Payments_2/Methods/Subscriptions/Edit.ts').components['schemas']['Payments_2.Methods.Subscriptions.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -9968,7 +9950,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: number | null;
+                        result: import('./Payments_2/Methods/UrTinkoffCreateApplication/Add.ts').components['schemas']['Payments_2.Methods.UrTinkoffCreateApplication.Add.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -9994,7 +9976,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: (string | number)[] | null;
+                        result: import('./Payments_2/Methods/ValidateMerchantCardAP/Get.ts').components['schemas']['Payments_2.Methods.ValidateMerchantCardAP.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -10020,7 +10002,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: unknown;
+                        result: import('./Positions_2/Methods/Searchers/Add.ts').components['schemas']['Positions_2.Methods.Searchers.Add.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -10046,7 +10028,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: unknown;
+                        result: import('./Positions_2/Methods/Searchers/Del.ts').components['schemas']['Positions_2.Methods.Searchers.Del.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -10072,7 +10054,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: unknown;
+                        result: import('./Positions_2/Methods/Settings/Edit.ts').components['schemas']['Positions_2.Methods.Settings.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -10098,7 +10080,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: number | null;
+                        result: import('./Projects_2/Methods/Analytics/Add.ts').components['schemas']['Projects_2.Methods.Analytics.Add.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -10124,7 +10106,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: number | null;
+                        result: import('./Projects_2/Methods/Analytics/Del.ts').components['schemas']['Projects_2.Methods.Analytics.Del.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -10150,7 +10132,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: number | null;
+                        result: import('./Projects_2/Methods/Analytics/Edit.ts').components['schemas']['Projects_2.Methods.Analytics.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -10176,7 +10158,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: (string | number)[] | null;
+                        result: import('./Projects_2/Methods/Analytics/Get.ts').components['schemas']['Projects_2.Methods.Analytics.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -10202,7 +10184,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: (string | number)[];
+                        result: import('./Projects_2/Methods/Competitors/Add.ts').components['schemas']['Projects_2.Methods.Competitors.Add.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -10228,7 +10210,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: number;
+                        result: import('./Projects_2/Methods/Competitors/Del.ts').components['schemas']['Projects_2.Methods.Competitors.Del.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -10254,7 +10236,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: (string | number)[] | null;
+                        result: import('./Projects_2/Methods/Competitors/Get.ts').components['schemas']['Projects_2.Methods.Competitors.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -10281,7 +10263,7 @@ export interface operations {
                 content: {
                     "application/json": ({
                         /** @returns ?int id добавленной папки */
-                        result: number | null;
+                        result: import('./Projects_2/Methods/Folders/Add.ts').components['schemas']['Projects_2.Methods.Folders.Add.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -10307,7 +10289,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: number | null;
+                        result: import('./Projects_2/Methods/Folders/Del.ts').components['schemas']['Projects_2.Methods.Folders.Del.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: import('./Models/Projects/Folders.ts').components['schemas']['Models.Projects.Folders'];
                 };
@@ -10333,7 +10315,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: unknown;
+                        result: import('./Projects_2/Methods/Folders/Get.ts').components['schemas']['Projects_2.Methods.Folders.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: import('./Models/Projects/Folders.ts').components['schemas']['Models.Projects.Folders'];
                 };
@@ -10359,7 +10341,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: unknown;
+                        result: import('./Projects_2/Methods/Projects/Add.ts').components['schemas']['Projects_2.Methods.Projects.Add.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -10385,7 +10367,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: number;
+                        result: import('./Projects_2/Methods/Projects/Del.ts').components['schemas']['Projects_2.Methods.Projects.Del.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: import('./Models/Projects.ts').components['schemas']['Models.Projects'];
                 };
@@ -10411,7 +10393,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: import('./Models/Projects.ts').components['schemas']['Models.Projects'][] | null;
+                        result: import('./Projects_2/Methods/Projects/Get.ts').components['schemas']['Projects_2.Methods.Projects.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: import('./Models/Projects.ts').components['schemas']['Models.Projects'];
                 };
@@ -10437,7 +10419,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: number | null;
+                        result: import('./Projects_2/Methods/Rights/Del.ts').components['schemas']['Projects_2.Methods.Rights.Del.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -10463,7 +10445,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: number | null;
+                        result: import('./Projects_2/Methods/Rights/Edit.ts').components['schemas']['Projects_2.Methods.Rights.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -10489,7 +10471,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: (string | number)[];
+                        result: import('./Projects_2/Methods/Rights/Get.ts').components['schemas']['Projects_2.Methods.Rights.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -10515,7 +10497,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: import('./stdClass.ts').components['schemas']['stdClass'];
+                        result: import('./Projects_2/Methods/Status/Get.ts').components['schemas']['Projects_2.Methods.Status.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -10541,7 +10523,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: unknown;
+                        result: import('./Projects_2/Methods/Tasks/Get.ts').components['schemas']['Projects_2.Methods.Tasks.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: import('./Models/Projects.ts').components['schemas']['Models.Projects'];
                 };
@@ -10567,7 +10549,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: unknown;
+                        result: import('./Recurring_2/Methods/RecurringCard/Del.ts').components['schemas']['Recurring_2.Methods.RecurringCard.Del.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -10593,7 +10575,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: unknown;
+                        result: import('./Recurring_2/Methods/RecurringCard/Get.ts').components['schemas']['Recurring_2.Methods.RecurringCard.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -10620,7 +10602,7 @@ export interface operations {
                 content: {
                     "application/json": ({
                         /** @throws Exception */
-                        result: number | null;
+                        result: import('./Schedule_2/Methods/Settings/Edit.ts').components['schemas']['Schedule_2.Methods.Settings.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -10646,7 +10628,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: (string | number)[];
+                        result: import('./Schedule_2/Methods/Settings/Get.ts').components['schemas']['Schedule_2.Methods.Settings.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -10673,7 +10655,7 @@ export interface operations {
                 content: {
                     "application/json": ({
                         /** @throws Exception */
-                        result: string;
+                        result: import('./Sms_2/Methods/CheckPIN/Get.ts').components['schemas']['Sms_2.Methods.CheckPIN.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -10700,7 +10682,7 @@ export interface operations {
                 content: {
                     "application/json": ({
                         /** @throws Exception */
-                        result: boolean;
+                        result: import('./Sms_2/Methods/SendPIN/Get.ts').components['schemas']['Sms_2.Methods.SendPIN.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -10727,7 +10709,7 @@ export interface operations {
                 content: {
                     "application/json": ({
                         /** @throws Exception */
-                        result: (string | number)[];
+                        result: import('./Templates_2/Methods/AvailableFieldsData/Get.ts').components['schemas']['Templates_2.Methods.AvailableFieldsData.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -10753,7 +10735,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: number | null;
+                        result: import('./Templates_2/Methods/Fields/Del.ts').components['schemas']['Templates_2.Methods.Fields.Del.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -10780,7 +10762,7 @@ export interface operations {
                 content: {
                     "application/json": ({
                         /** @throws Exception */
-                        result: number | null;
+                        result: import('./Templates_2/Methods/Fields/Edit.ts').components['schemas']['Templates_2.Methods.Fields.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -10807,7 +10789,7 @@ export interface operations {
                 content: {
                     "application/json": ({
                         /** @throws Exception */
-                        result: (string | number)[];
+                        result: import('./Templates_2/Methods/Fields/Get.ts').components['schemas']['Templates_2.Methods.Fields.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -10833,7 +10815,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: unknown;
+                        result: import('./Templates_2/Methods/FieldsProperties/Get.ts').components['schemas']['Templates_2.Methods.FieldsProperties.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -10859,7 +10841,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: number;
+                        result: import('./Tickets_2/Methods/Files/Add.ts').components['schemas']['Tickets_2.Methods.Files.Add.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -10885,7 +10867,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: number;
+                        result: import('./Tickets_2/Methods/Files/Del.ts').components['schemas']['Tickets_2.Methods.Files.Del.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -10911,7 +10893,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: (string | number)[];
+                        result: import('./Tickets_2/Methods/Files/Get.ts').components['schemas']['Tickets_2.Methods.Files.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -10938,7 +10920,7 @@ export interface operations {
                 content: {
                     "application/json": ({
                         /** Id добавленного сообщения */
-                        result: number | null;
+                        result: import('./Tickets_2/Methods/Messages/Add.ts').components['schemas']['Tickets_2.Methods.Messages.Add.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -10964,7 +10946,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: number | null;
+                        result: import('./Tickets_2/Methods/Rate/Edit.ts').components['schemas']['Tickets_2.Methods.Rate.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -10991,7 +10973,7 @@ export interface operations {
                 content: {
                     "application/json": ({
                         /** Id тикета */
-                        result: number | null;
+                        result: import('./Tickets_2/Methods/Tickets/Add.ts').components['schemas']['Tickets_2.Methods.Tickets.Add.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -11017,7 +10999,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: number | null;
+                        result: import('./Tickets_2/Methods/Tickets/Edit.ts').components['schemas']['Tickets_2.Methods.Tickets.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -11043,7 +11025,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: import('./Models/Tickets.ts').components['schemas']['Models.Tickets'][] | null;
+                        result: import('./Tickets_2/Methods/Tickets/Get.ts').components['schemas']['Tickets_2.Methods.Tickets.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: import('./Models/Tickets.ts').components['schemas']['Models.Tickets'];
                 };
@@ -11092,15 +11074,10 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        /**
-                         * @return ?array{'countSended': int, 'countDuplicated': int, 'countAdded': int, 'countChanged': int}
+                        /** @return ?array{'countSended': int, 'countDuplicated': int, 'countAdded': int, 'countChanged': int}
                          *
-                         *     @throws Exception
-                         * @description @return ?array{'countSended': int, 'countDuplicated': int, 'countAdded': int, 'countChanged': int}
-                         *
-                         *     @throws Exception
-                         */
-                        result: (string | number)[] | null;
+                         *     @throws Exception */
+                        result: import('./Urls_2/Methods/Import/Add.ts').components['schemas']['Urls_2.Methods.Import.Add.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -11126,7 +11103,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: number | null;
+                        result: import('./Urls_2/Methods/Tags/Edit.ts').components['schemas']['Urls_2.Methods.Tags.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: import('./Models/Urls.ts').components['schemas']['Models.Urls'];
                 };
@@ -11152,7 +11129,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: number | null;
+                        result: import('./Votes_2/Methods/Comment/Edit.ts').components['schemas']['Votes_2.Methods.Comment.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -11178,7 +11155,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: number | null;
+                        result: import('./Admin_2/Methods/Accounting/Counteragents/Edit.ts').components['schemas']['Admin_2.Methods.Accounting.Counteragents.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -11204,7 +11181,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: unknown;
+                        result: import('./Admin_2/Methods/Accounting/Counteragents/Get.ts').components['schemas']['Admin_2.Methods.Accounting.Counteragents.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: import('./Models/Admin/Accounting/Counteragents.ts').components['schemas']['Models.Admin.Accounting.Counteragents'];
                 };
@@ -11230,7 +11207,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: number | null;
+                        result: import('./Admin_2/Methods/Accounting/Group/Edit.ts').components['schemas']['Admin_2.Methods.Accounting.Group.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -11256,7 +11233,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: import('./Models/EmptyModel.ts').components['schemas']['Models.EmptyModel'][] | null;
+                        result: import('./Admin_2/Methods/Accounting/Group/Get.ts').components['schemas']['Admin_2.Methods.Accounting.Group.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: import('./Models/EmptyModel.ts').components['schemas']['Models.EmptyModel'];
                 };
@@ -11282,7 +11259,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: number | null;
+                        result: import('./Admin_2/Methods/Accounting/Invoices/Add.ts').components['schemas']['Admin_2.Methods.Accounting.Invoices.Add.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -11308,7 +11285,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: number | null;
+                        result: import('./Admin_2/Methods/Accounting/Invoices/Del.ts').components['schemas']['Admin_2.Methods.Accounting.Invoices.Del.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: import('./Models/Admin/Invoices.ts').components['schemas']['Models.Admin.Invoices'];
                 };
@@ -11334,7 +11311,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: unknown;
+                        result: import('./Admin_2/Methods/Accounting/Invoices/Get.ts').components['schemas']['Admin_2.Methods.Accounting.Invoices.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: import('./Models/Admin/Invoices.ts').components['schemas']['Models.Admin.Invoices'];
                 };
@@ -11360,7 +11337,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: unknown;
+                        result: import('./Admin_2/Methods/Accounting/Operations/Get.ts').components['schemas']['Admin_2.Methods.Accounting.Operations.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: import('./Models/EmptyModel.ts').components['schemas']['Models.EmptyModel'];
                 };
@@ -11386,7 +11363,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: import('./Admin_2/Objects/Actions/Result.ts').components['schemas']['Admin_2.Objects.Actions.Result'];
+                        result: import('./Admin_2/Methods/Actions/Bank/Edit.ts').components['schemas']['Admin_2.Methods.Actions.Bank.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -11412,7 +11389,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: import('./Admin_2/Objects/Actions/Result.ts').components['schemas']['Admin_2.Objects.Actions.Result'];
+                        result: import('./Admin_2/Methods/Actions/Payments/Del.ts').components['schemas']['Admin_2.Methods.Actions.Payments.Del.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -11438,7 +11415,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: import('./Admin_2/Objects/Actions/Result.ts').components['schemas']['Admin_2.Objects.Actions.Result'];
+                        result: import('./Admin_2/Methods/Actions/Payments/Edit.ts').components['schemas']['Admin_2.Methods.Actions.Payments.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -11464,7 +11441,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: import('./Admin_2/Objects/Actions/Result.ts').components['schemas']['Admin_2.Objects.Actions.Result'];
+                        result: import('./Admin_2/Methods/Actions/Positions/Edit.ts').components['schemas']['Admin_2.Methods.Actions.Positions.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -11490,7 +11467,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: import('./Admin_2/Objects/Actions/Result.ts').components['schemas']['Admin_2.Objects.Actions.Result'];
+                        result: import('./Admin_2/Methods/Actions/Projects/Edit.ts').components['schemas']['Admin_2.Methods.Actions.Projects.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -11516,7 +11493,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: import('./Admin_2/Objects/Actions/Result.ts').components['schemas']['Admin_2.Objects.Actions.Result'];
+                        result: import('./Admin_2/Methods/Actions/Projects/Get.ts').components['schemas']['Admin_2.Methods.Actions.Projects.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -11542,7 +11519,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: import('./Admin_2/Objects/Actions/Result.ts').components['schemas']['Admin_2.Objects.Actions.Result'];
+                        result: import('./Admin_2/Methods/Actions/Telegram/Add.ts').components['schemas']['Admin_2.Methods.Actions.Telegram.Add.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -11568,7 +11545,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: (string | number)[] | null;
+                        result: import('./Admin_2/Methods/Affiliate/ReferralProgramStats/Get.ts').components['schemas']['Admin_2.Methods.Affiliate.ReferralProgramStats.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -11594,7 +11571,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: (string | number)[];
+                        result: import('./Admin_2/Methods/Affiliate/ReferralsByLevel/Get.ts').components['schemas']['Admin_2.Methods.Affiliate.ReferralsByLevel.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -11620,7 +11597,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: (string | number)[];
+                        result: import('./Admin_2/Methods/Affiliate/Referrals/Get.ts').components['schemas']['Admin_2.Methods.Affiliate.Referrals.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -11646,7 +11623,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: (string | number)[];
+                        result: import('./Admin_2/Methods/Affiliate/ReferrersByReferrals/Get.ts').components['schemas']['Admin_2.Methods.Affiliate.ReferrersByReferrals.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -11672,7 +11649,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: (string | number)[];
+                        result: import('./Admin_2/Methods/Affiliate/Referrers/Get.ts').components['schemas']['Admin_2.Methods.Affiliate.Referrers.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -11698,7 +11675,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: import('./Models/EmptyModel.ts').components['schemas']['Models.EmptyModel'][] | null;
+                        result: import('./Admin_2/Methods/Affiliate/ReferrersWithReferrals/Get.ts').components['schemas']['Admin_2.Methods.Affiliate.ReferrersWithReferrals.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: import('./Models/EmptyModel.ts').components['schemas']['Models.EmptyModel'];
                 };
@@ -11724,7 +11701,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: (string | number)[] | null;
+                        result: import('./Admin_2/Methods/Analytics/Activity/Get.ts').components['schemas']['Admin_2.Methods.Analytics.Activity.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -11750,7 +11727,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: (string | number)[];
+                        result: import('./Admin_2/Methods/Analytics/CountOnlineUsers/Get.ts').components['schemas']['Admin_2.Methods.Analytics.CountOnlineUsers.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -11776,7 +11753,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: unknown;
+                        result: import('./Admin_2/Methods/Analytics/Events/Get.ts').components['schemas']['Admin_2.Methods.Analytics.Events.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: import('./Models/Analytics/Events.ts').components['schemas']['Models.Analytics.Events'];
                 };
@@ -11802,7 +11779,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: (string | number)[] | null;
+                        result: import('./Admin_2/Methods/Analytics/Payments/Get.ts').components['schemas']['Admin_2.Methods.Analytics.Payments.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -11828,7 +11805,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: (string | number)[];
+                        result: import('./Admin_2/Methods/Analytics/Get.ts').components['schemas']['Admin_2.Methods.Analytics.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -11854,7 +11831,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: (string | number)[] | null;
+                        result: import('./Admin_2/Methods/Analytics/Statistics/Get.ts').components['schemas']['Admin_2.Methods.Analytics.Statistics.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -11887,7 +11864,7 @@ export interface operations {
                          *     В описании к функции отвечать на вопрос: `Что является результатом запроса?` Например: `Список пользователей`
                          *
                          *     Не менять `protected`, проверка проводится при генерации схем в `TV\API\Objects\ClassAPIMethodInfo` */
-                        result: unknown;
+                        result: import('./Admin_2/Methods/Analytics/Tickets/AbstractTicketsStats.ts').components['schemas']['Admin_2.Methods.Analytics.Tickets.AbstractTicketsStats.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -11913,7 +11890,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: import('./Models/Tickets.ts').components['schemas']['Models.Tickets'][];
+                        result: import('./Admin_2/Methods/Analytics/Tickets/Get.ts').components['schemas']['Admin_2.Methods.Analytics.Tickets.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: import('./Models/Tickets.ts').components['schemas']['Models.Tickets'];
                 };
@@ -11939,7 +11916,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: (string | number)[];
+                        result: import('./Admin_2/Methods/I18n/Categories/Get.ts').components['schemas']['Admin_2.Methods.I18n.Categories.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -11965,7 +11942,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: (string | number)[] | null;
+                        result: import('./Admin_2/Methods/Logs/System/Get.ts').components['schemas']['Admin_2.Methods.Logs.System.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -11991,7 +11968,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: unknown;
+                        result: import('./Admin_2/Methods/Ranks/Activations/Get.ts').components['schemas']['Admin_2.Methods.Ranks.Activations.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: import('./Models/Analytics/RanksUsers.ts').components['schemas']['Models.Analytics.RanksUsers'];
                 };
@@ -12018,7 +11995,7 @@ export interface operations {
                 content: {
                     "application/json": ({
                         /** Список пользователей */
-                        result: (string | number)[] | null;
+                        result: import('./Admin_2/Methods/Slack/Rate/Get.ts').components['schemas']['Admin_2.Methods.Slack.Rate.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -12044,7 +12021,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: number | null;
+                        result: import('./Admin_2/Methods/Staff/Access/Edit.ts').components['schemas']['Admin_2.Methods.Staff.Access.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: import('./Models/Admin/Staff.ts').components['schemas']['Models.Admin.Staff'];
                 };
@@ -12070,7 +12047,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: (string | number)[];
+                        result: import('./Admin_2/Methods/Staff/ByPost/Get.ts').components['schemas']['Admin_2.Methods.Staff.ByPost.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -12119,7 +12096,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: (string | number)[];
+                        result: import('./Admin_2/Methods/Staff/Posts/Get.ts').components['schemas']['Admin_2.Methods.Staff.Posts.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -12145,7 +12122,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: number | null;
+                        result: import('./Admin_2/Methods/Staff/Vacation/Add.ts').components['schemas']['Admin_2.Methods.Staff.Vacation.Add.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -12171,7 +12148,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: number | null;
+                        result: import('./Admin_2/Methods/Staff/Vacation/Del.ts').components['schemas']['Admin_2.Methods.Staff.Vacation.Del.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -12220,7 +12197,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: (string | number)[];
+                        result: import('./Admin_2/Methods/Tpl/Schema/Get.ts').components['schemas']['Admin_2.Methods.Tpl.Schema.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -12247,7 +12224,7 @@ export interface operations {
                 content: {
                     "application/json": ({
                         /** @throws Exception */
-                        result: number | null;
+                        result: import('./Admin_2/Methods/Users/Promocodes/Add.ts').components['schemas']['Admin_2.Methods.Users.Promocodes.Add.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: import('./Models/Users/Verif.ts').components['schemas']['Models.Users.Verif'];
                 };
@@ -12273,7 +12250,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: import('./Models/Users/Verif.ts').components['schemas']['Models.Users.Verif'][] | null;
+                        result: import('./Admin_2/Methods/Users/Promocodes/Get.ts').components['schemas']['Admin_2.Methods.Users.Promocodes.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: import('./Models/Users/Verif.ts').components['schemas']['Models.Users.Verif'];
                 };
@@ -12299,7 +12276,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: number | null;
+                        result: import('./Admin_2/Methods/Users/Ranks/Add.ts').components['schemas']['Admin_2.Methods.Users.Ranks.Add.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: import('./Models/Admin/Users/Ranks.ts').components['schemas']['Models.Admin.Users.Ranks'];
                 };
@@ -12325,7 +12302,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: number | null;
+                        result: import('./Admin_2/Methods/Users/Ranks/Edit.ts').components['schemas']['Admin_2.Methods.Users.Ranks.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: import('./Models/Admin/Users/Ranks.ts').components['schemas']['Models.Admin.Users.Ranks'];
                 };
@@ -12351,7 +12328,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: import('./Models/Admin/Users/Ranks.ts').components['schemas']['Models.Admin.Users.Ranks'][] | null;
+                        result: import('./Admin_2/Methods/Users/Ranks/Get.ts').components['schemas']['Admin_2.Methods.Users.Ranks.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: import('./Models/Admin/Users/Ranks.ts').components['schemas']['Models.Admin.Users.Ranks'];
                 };
@@ -12378,7 +12355,7 @@ export interface operations {
                 content: {
                     "application/json": ({
                         /** Сводка анализа сайта */
-                        result: (string | number)[] | null;
+                        result: import('./Audit_2/Methods/Audit/Browse/Get.ts').components['schemas']['Audit_2.Methods.Audit.Browse.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -12405,7 +12382,7 @@ export interface operations {
                 content: {
                     "application/json": ({
                         /** Список выполненных (выполняемых) проверок аудита */
-                        result: unknown;
+                        result: import('./Audit_2/Methods/Audit/Checks/Get.ts').components['schemas']['Audit_2.Methods.Audit.Checks.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: import('./Models/Audit/Checks.ts').components['schemas']['Models.Audit.Checks'];
                 };
@@ -12432,7 +12409,7 @@ export interface operations {
                 content: {
                     "application/json": ({
                         /** Список проверенных css */
-                        result: import('./Models/Audit/Css.ts').components['schemas']['Models.Audit.Css'][] | null;
+                        result: import('./Audit_2/Methods/Audit/Css/Get.ts').components['schemas']['Audit_2.Methods.Audit.Css.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: import('./Models/Audit/Css.ts').components['schemas']['Models.Audit.Css'];
                 };
@@ -12483,7 +12460,7 @@ export interface operations {
                 content: {
                     "application/json": ({
                         /** Список проверенных изображений */
-                        result: import('./Models/Audit/Images.ts').components['schemas']['Models.Audit.Images'][] | null;
+                        result: import('./Audit_2/Methods/Audit/Images/Get.ts').components['schemas']['Audit_2.Methods.Audit.Images.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: import('./Models/Audit/Images.ts').components['schemas']['Models.Audit.Images'];
                 };
@@ -12510,7 +12487,7 @@ export interface operations {
                 content: {
                     "application/json": ({
                         /** Список проверенных js */
-                        result: import('./Models/Audit/Js.ts').components['schemas']['Models.Audit.Js'][] | null;
+                        result: import('./Audit_2/Methods/Audit/Js/Get.ts').components['schemas']['Audit_2.Methods.Audit.Js.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: import('./Models/Audit/Js.ts').components['schemas']['Models.Audit.Js'];
                 };
@@ -12537,7 +12514,7 @@ export interface operations {
                 content: {
                     "application/json": ({
                         /** Список проверенных ссылок */
-                        result: import('./Models/Audit/Links.ts').components['schemas']['Models.Audit.Links'][] | null;
+                        result: import('./Audit_2/Methods/Audit/Links/Get.ts').components['schemas']['Audit_2.Methods.Audit.Links.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: import('./Models/Audit/Links.ts').components['schemas']['Models.Audit.Links'];
                 };
@@ -12564,7 +12541,7 @@ export interface operations {
                 content: {
                     "application/json": ({
                         /** Данные проверенных ресурсов */
-                        result: (string | number)[];
+                        result: import('./Audit_2/Methods/Audit/Log/Get.ts').components['schemas']['Audit_2.Methods.Audit.Log.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -12591,7 +12568,7 @@ export interface operations {
                 content: {
                     "application/json": ({
                         /** Список страниц */
-                        result: import('./Models/Audit/Pages.ts').components['schemas']['Models.Audit.Pages'][] | null;
+                        result: import('./Audit_2/Methods/Audit/Pages/Get.ts').components['schemas']['Audit_2.Methods.Audit.Pages.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: import('./Models/Audit/Pages.ts').components['schemas']['Models.Audit.Pages'];
                 };
@@ -12623,7 +12600,7 @@ export interface operations {
                          *      - `$res['all']['all']['count_checks_success']` - количество пройденных проверок во всех категориях
                          *      - `$res['pages']['indexing']['count_checks_success']` - количество пройденных проверок в категории Страницы / Индексация
                          *      - `$res['all']['all']['count_checks_success']` - количество пройденных проверок во всех категориях */
-                        result: import('./Models/Audit/Checks.ts').components['schemas']['Models.Audit.Checks'][] | null;
+                        result: import('./Audit_2/Methods/Audit/Summary/Get.ts').components['schemas']['Audit_2.Methods.Audit.Summary.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: import('./Models/Audit/Checks.ts').components['schemas']['Models.Audit.Checks'];
                 };
@@ -12650,7 +12627,7 @@ export interface operations {
                 content: {
                     "application/json": ({
                         /** Сводка о выполненном аудите по одной странице */
-                        result: import('./Models/Audit/Pages.ts').components['schemas']['Models.Audit.Pages'][] | null;
+                        result: import('./Audit_2/Methods/Audit/SummaryPage/Get.ts').components['schemas']['Audit_2.Methods.Audit.SummaryPage.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: import('./Models/Audit/Pages.ts').components['schemas']['Models.Audit.Pages'];
                 };
@@ -12677,7 +12654,7 @@ export interface operations {
                 content: {
                     "application/json": ({
                         /** Результаты индексации */
-                        result: string;
+                        result: import('./Audit_2/Methods/Indexing/Export/Get.ts').components['schemas']['Audit_2.Methods.Indexing.Export.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -12704,7 +12681,7 @@ export interface operations {
                 content: {
                     "application/json": ({
                         /** Короткая гостевая ссылка на просмотр позиций */
-                        result: string | null;
+                        result: import('./Audit_2/Methods/Indexing/Links/Get.ts').components['schemas']['Audit_2.Methods.Indexing.Links.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -12731,7 +12708,7 @@ export interface operations {
                 content: {
                     "application/json": ({
                         /** Сводка индексации */
-                        result: (string | number)[] | null;
+                        result: import('./Audit_2/Methods/Indexing/Summary/Get.ts').components['schemas']['Audit_2.Methods.Indexing.Summary.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -12758,7 +12735,7 @@ export interface operations {
                 content: {
                     "application/json": ({
                         /** Отчет по одному URL */
-                        result: import('./Models/Watcher/Results.ts').components['schemas']['Models.Watcher.Results'][] | null;
+                        result: import('./Audit_2/Methods/Watcher/ByURL/Get.ts').components['schemas']['Audit_2.Methods.Watcher.ByURL.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: import('./Models/Watcher/Results.ts').components['schemas']['Models.Watcher.Results'];
                 };
@@ -12785,7 +12762,7 @@ export interface operations {
                 content: {
                     "application/json": ({
                         /** Список проверок радара */
-                        result: (string | number)[] | null;
+                        result: import('./Audit_2/Methods/Watcher/Checks/Get.ts').components['schemas']['Audit_2.Methods.Watcher.Checks.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -12812,7 +12789,7 @@ export interface operations {
                 content: {
                     "application/json": ({
                         /** Сводка с количеством изменений по каждому типу проверки */
-                        result: (string | number)[] | null;
+                        result: import('./Audit_2/Methods/Watcher/Summary/Get.ts').components['schemas']['Audit_2.Methods.Watcher.Summary.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -12838,7 +12815,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: boolean;
+                        result: import('./Bank_2/Methods/Diadoc/SendContract/Get.ts').components['schemas']['Bank_2.Methods.Diadoc.SendContract.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -12864,7 +12841,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: boolean;
+                        result: import('./Bank_2/Methods/Diadoc/SendTotalReceipt/Get.ts').components['schemas']['Bank_2.Methods.Diadoc.SendTotalReceipt.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -12913,7 +12890,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: import('./Models/BalanceHistory.ts').components['schemas']['Models.BalanceHistory'][];
+                        result: import('./Bank_2/Methods/History/Summary/Get.ts').components['schemas']['Bank_2.Methods.History.Summary.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: import('./Models/BalanceHistory.ts').components['schemas']['Models.BalanceHistory'];
                 };
@@ -12939,7 +12916,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: number | null;
+                        result: import('./Bank_2/Methods/Referrals/ToBonus/Edit.ts').components['schemas']['Bank_2.Methods.Referrals.ToBonus.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -12965,7 +12942,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: unknown;
+                        result: import('./Bank_2/Methods/Requisites/ContractTariffId/Get.ts').components['schemas']['Bank_2.Methods.Requisites.ContractTariffId.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -13014,7 +12991,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: unknown;
+                        result: import('./Bank_2/Methods/Requisites/PrintTotalReceipt/Get.ts').components['schemas']['Bank_2.Methods.Requisites.PrintTotalReceipt.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -13064,7 +13041,7 @@ export interface operations {
                 content: {
                     "application/json": ({
                         /** @return Bank_2\Objects\Subscriptions\Plan[] */
-                        result: (string | number)[];
+                        result: import('./Bank_2/Methods/Subscriptions/Plans/Get.ts').components['schemas']['Bank_2.Methods.Subscriptions.Plans.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -13090,11 +13067,8 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        /**
-                         * @throws Exception
-                         * @description @throws Exception
-                         */
-                        result: unknown;
+                        /** @throws Exception */
+                        result: import('./Broker_2/Methods/Ads/Status/Edit.ts').components['schemas']['Broker_2.Methods.Ads.Status.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -13120,11 +13094,8 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        /**
-                         * @throws Exception
-                         * @description @throws Exception
-                         */
-                        result: unknown;
+                        /** @throws Exception */
+                        result: import('./Broker_2/Methods/Ads/ToModerate/Edit.ts').components['schemas']['Broker_2.Methods.Ads.ToModerate.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -13151,7 +13122,7 @@ export interface operations {
                 content: {
                     "application/json": ({
                         /** @throws Exception */
-                        result: number;
+                        result: import('./Broker_2/Methods/Campaigns/UpdateTargeting/Edit.ts').components['schemas']['Broker_2.Methods.Campaigns.UpdateTargeting.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: import('./Models/Broker/Campaigns.ts').components['schemas']['Models.Broker.Campaigns'];
                 };
@@ -13177,7 +13148,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: (string | number)[];
+                        result: import('./Broker_2/Methods/Groups/Editor/Get.ts').components['schemas']['Broker_2.Methods.Groups.Editor.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -13203,11 +13174,8 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        /**
-                         * @throws Exception
-                         * @description @throws Exception
-                         */
-                        result: unknown;
+                        /** @throws Exception */
+                        result: import('./Broker_2/Methods/Keywords/Status/Edit.ts').components['schemas']['Broker_2.Methods.Keywords.Status.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -13258,7 +13226,7 @@ export interface operations {
                 content: {
                     "application/json": ({
                         /** @throws Exception */
-                        result: number | null;
+                        result: import('./Broker_2/Methods/Tasks/RateTask/Add.ts').components['schemas']['Broker_2.Methods.Tasks.RateTask.Add.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -13285,7 +13253,7 @@ export interface operations {
                 content: {
                     "application/json": ({
                         /** @throws Exception */
-                        result: number | null;
+                        result: import('./Competitors_2/Methods/Orders/Pay/Edit.ts').components['schemas']['Competitors_2.Methods.Orders.Pay.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -13311,7 +13279,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: (string | number)[] | null;
+                        result: import('./Content_2/Methods/Apometr/Calendar/Get.ts').components['schemas']['Content_2.Methods.Apometr.Calendar.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -13337,7 +13305,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: import('./Models/Apometr/History.ts').components['schemas']['Models.Apometr.History'][];
+                        result: import('./Content_2/Methods/Apometr/CHHistory/Get.ts').components['schemas']['Content_2.Methods.Apometr.CHHistory.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: import('./Models/Apometr/History.ts').components['schemas']['Models.Apometr.History'];
                 };
@@ -13363,7 +13331,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: (string | number)[] | null;
+                        result: import('./Content_2/Methods/Apometr/History/Get.ts').components['schemas']['Content_2.Methods.Apometr.History.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -13389,7 +13357,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: unknown;
+                        result: import('./Content_2/Methods/Apometr/Keywords/Get.ts').components['schemas']['Content_2.Methods.Apometr.Keywords.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: import('./Models/Apometr/Keywords.ts').components['schemas']['Models.Apometr.Keywords'];
                 };
@@ -13415,7 +13383,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: unknown;
+                        result: import('./Content_2/Methods/Apometr/Updates/Get.ts').components['schemas']['Content_2.Methods.Apometr.Updates.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -13442,7 +13410,7 @@ export interface operations {
                 content: {
                     "application/json": ({
                         /** @throws Exception */
-                        result: import('./Models/Pages.ts').components['schemas']['Models.Pages'][];
+                        result: import('./Content_2/Methods/Journal/Articles/Get.ts').components['schemas']['Content_2.Methods.Journal.Articles.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: import('./Models/Pages.ts').components['schemas']['Models.Pages'];
                 };
@@ -13468,7 +13436,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: import('./Models/Pages.ts').components['schemas']['Models.Pages'][];
+                        result: import('./Content_2/Methods/Journal/BookmarksAuthors/Get.ts').components['schemas']['Content_2.Methods.Journal.BookmarksAuthors.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: import('./Models/Pages.ts').components['schemas']['Models.Pages'];
                 };
@@ -13495,7 +13463,7 @@ export interface operations {
                 content: {
                     "application/json": ({
                         /** @throws Exception */
-                        result: import('./Models/Pages.ts').components['schemas']['Models.Pages'][];
+                        result: import('./Content_2/Methods/Journal/Bookmarks/Get.ts').components['schemas']['Content_2.Methods.Journal.Bookmarks.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: import('./Models/Pages.ts').components['schemas']['Models.Pages'];
                 };
@@ -13522,7 +13490,7 @@ export interface operations {
                 content: {
                     "application/json": ({
                         /** @throws Exception */
-                        result: import('./Models/Pages.ts').components['schemas']['Models.Pages'][] | null;
+                        result: import('./Content_2/Methods/Journal/Course/Get.ts').components['schemas']['Content_2.Methods.Journal.Course.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: import('./Models/Pages.ts').components['schemas']['Models.Pages'];
                 };
@@ -13549,7 +13517,7 @@ export interface operations {
                 content: {
                     "application/json": ({
                         /** @throws Exception */
-                        result: import('./Models/Pages.ts').components['schemas']['Models.Pages'][] | null;
+                        result: import('./Content_2/Methods/Journal/Rubrics/Get.ts').components['schemas']['Content_2.Methods.Journal.Rubrics.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: import('./Models/Pages.ts').components['schemas']['Models.Pages'];
                 };
@@ -13575,7 +13543,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: number;
+                        result: import('./Content_2/Methods/Journal/Subscribe/Edit.ts').components['schemas']['Content_2.Methods.Journal.Subscribe.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -13601,7 +13569,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: number | null;
+                        result: import('./Content_2/Methods/Pages/Order/Edit.ts').components['schemas']['Content_2.Methods.Pages.Order.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -13627,7 +13595,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: (string | number)[];
+                        result: import('./Content_2/Methods/Support/Menu/Get.ts').components['schemas']['Content_2.Methods.Support.Menu.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -13654,7 +13622,7 @@ export interface operations {
                 content: {
                     "application/json": ({
                         /** Массив созданных групп */
-                        result: (string | number)[] | null;
+                        result: import('./Keywords_2/Methods/Collect/Go/Edit.ts').components['schemas']['Keywords_2.Methods.Collect.Go.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -13680,11 +13648,8 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        /**
-                         * @return array{pricesByUsers: array<string, array{price: float, priceOriginal: float, qualifiers: array{region_key: int, searcher_key: (0 | 1 | 5 | 100 | 101 | 102 | 104 | 105 | 106), region_lang?: (string | null), also_searched?: (int | null), depth?: (int | null), hint_depth: (1 | 2 | 3), hint_generators: array<('letter' | 'letter_ru' | 'number' | 'space')>}, comment: string}>}
-                         * @description @return array{pricesByUsers: array<string, array{price: float, priceOriginal: float, qualifiers: array{region_key: int, searcher_key: (0 | 1 | 5 | 100 | 101 | 102 | 104 | 105 | 106), region_lang?: (string | null), also_searched?: (int | null), depth?: (int | null), hint_depth: (1 | 2 | 3), hint_generators: array<('letter' | 'letter_ru' | 'number' | 'space')>}, comment: string}>}
-                         */
-                        result: (string | number)[];
+                        /** @return array{pricesByUsers: array<string, array{price: float, priceOriginal: float, qualifiers: array{region_key: int, searcher_key: (0 | 1 | 5 | 100 | 101 | 102 | 104 | 105 | 106), region_lang?: (string | null), also_searched?: (int | null), depth?: (int | null), hint_depth: (1 | 2 | 3), hint_generators: array<('letter' | 'letter_ru' | 'number' | 'space')>}, comment: string}>} */
+                        result: import('./Keywords_2/Methods/Collect/Price/Get.ts').components['schemas']['Keywords_2.Methods.Collect.Price.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -13710,7 +13675,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: (string | number)[] | null;
+                        result: import('./Keywords_2/Methods/Keywords/Import/Add.ts').components['schemas']['Keywords_2.Methods.Keywords.Import.Add.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -13736,11 +13701,8 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        /**
-                         * @throws Exception
-                         * @description @throws Exception
-                         */
-                        result: unknown;
+                        /** @throws Exception */
+                        result: import('./Keywords_2/Methods/Volumes/Go/Edit.ts').components['schemas']['Keywords_2.Methods.Volumes.Go.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: import('./Models/Keywords.ts').components['schemas']['Models.Keywords'];
                 };
@@ -13767,7 +13729,7 @@ export interface operations {
                 content: {
                     "application/json": ({
                         /** @return object{pricesByUsers: object{int: object{projectsIds: [], price: float, priceOriginal: float}}} */
-                        result: unknown;
+                        result: import('./Keywords_2/Methods/Volumes/Price/Get.ts').components['schemas']['Keywords_2.Methods.Volumes.Price.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: import('./Models/Keywords.ts').components['schemas']['Models.Keywords'];
                 };
@@ -13793,7 +13755,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: number | null;
+                        result: import('./Landings_2/Methods/Hr/Feedback/Add.ts').components['schemas']['Landings_2.Methods.Hr.Feedback.Add.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -13820,7 +13782,7 @@ export interface operations {
                 content: {
                     "application/json": ({
                         /** @throws Exception Ошибка во входных данных, внешнем API или БД */
-                        result: number | null;
+                        result: import('./Payments_2/Methods/Recurrent/Suspend/Edit.ts').components['schemas']['Payments_2.Methods.Recurrent.Suspend.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -13847,7 +13809,7 @@ export interface operations {
                 content: {
                     "application/json": ({
                         /** @throws Exception */
-                        result: boolean;
+                        result: import('./Payments_2/Methods/Subscriptions/Next/Edit.ts').components['schemas']['Payments_2.Methods.Subscriptions.Next.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -13873,7 +13835,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: number | null;
+                        result: import('./Payments_2/Methods/Tariff/DelCard/Edit.ts').components['schemas']['Payments_2.Methods.Tariff.DelCard.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -13899,7 +13861,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: number | null;
+                        result: import('./Payments_2/Methods/Tariff/NextToDiadoc/Edit.ts').components['schemas']['Payments_2.Methods.Tariff.NextToDiadoc.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -13925,7 +13887,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: number | null;
+                        result: import('./Payments_2/Methods/Tariff/SetNext/Edit.ts').components['schemas']['Payments_2.Methods.Tariff.SetNext.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -13952,7 +13914,7 @@ export interface operations {
                 content: {
                     "application/json": ({
                         /** @return object{projectIds: int[]} Список id проектов, отрпавленных на проверку */
-                        result: unknown;
+                        result: import('./Positions_2/Methods/Checker/Go/Edit.ts').components['schemas']['Positions_2.Methods.Checker.Go.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: import('./Models/Projects.ts').components['schemas']['Models.Projects'];
                 };
@@ -13979,7 +13941,7 @@ export interface operations {
                 content: {
                     "application/json": ({
                         /** @return object{pricesByUsers: object{int: object{projectsIds: [], price: float, priceOriginal: float}}} */
-                        result: unknown;
+                        result: import('./Positions_2/Methods/Checker/Price/Get.ts').components['schemas']['Positions_2.Methods.Checker.Price.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: import('./Models/Projects.ts').components['schemas']['Models.Projects'];
                 };
@@ -14005,7 +13967,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: unknown;
+                        result: import('./Positions_2/Methods/Searchers/Enabled/Edit.ts').components['schemas']['Positions_2.Methods.Searchers.Enabled.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -14031,7 +13993,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: unknown;
+                        result: import('./Positions_2/Methods/Searchers/Regions/Add.ts').components['schemas']['Positions_2.Methods.Searchers.Regions.Add.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -14057,7 +14019,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: unknown;
+                        result: import('./Positions_2/Methods/Searchers/Regions/Del.ts').components['schemas']['Positions_2.Methods.Searchers.Regions.Del.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -14083,7 +14045,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: number;
+                        result: import('./Positions_2/Methods/Searchers/Regions/Edit.ts').components['schemas']['Positions_2.Methods.Searchers.Regions.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -14109,7 +14071,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: unknown;
+                        result: import('./Positions_2/Methods/Searchers/Sort/Edit.ts').components['schemas']['Positions_2.Methods.Searchers.Sort.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -14135,7 +14097,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: (string | number)[] | null;
+                        result: import('./Projects_2/Methods/Analytics/Graph/Get.ts').components['schemas']['Projects_2.Methods.Analytics.Graph.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -14161,7 +14123,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: number | null;
+                        result: import('./Projects_2/Methods/Competitors/Move/Edit.ts').components['schemas']['Projects_2.Methods.Competitors.Move.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -14187,7 +14149,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: number;
+                        result: import('./Projects_2/Methods/Competitors/Name/Edit.ts').components['schemas']['Projects_2.Methods.Competitors.Name.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -14213,7 +14175,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: number;
+                        result: import('./Projects_2/Methods/Competitors/On/Edit.ts').components['schemas']['Projects_2.Methods.Competitors.On.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -14239,7 +14201,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: unknown;
+                        result: import('./Projects_2/Methods/Folders/Move/Edit.ts').components['schemas']['Projects_2.Methods.Folders.Move.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -14265,7 +14227,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: unknown;
+                        result: import('./Projects_2/Methods/Folders/MoveFolder/Edit.ts').components['schemas']['Projects_2.Methods.Folders.MoveFolder.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -14291,7 +14253,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: unknown;
+                        result: import('./Projects_2/Methods/Folders/Name/Edit.ts').components['schemas']['Projects_2.Methods.Folders.Name.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -14317,7 +14279,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: (string | number)[];
+                        result: import('./Projects_2/Methods/Master/HintsCompetitors/Get.ts').components['schemas']['Projects_2.Methods.Master.HintsCompetitors.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -14343,7 +14305,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: (string | number)[];
+                        result: import('./Projects_2/Methods/Master/HintsKeywords/Get.ts').components['schemas']['Projects_2.Methods.Master.HintsKeywords.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -14369,7 +14331,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: string | null;
+                        result: import('./Projects_2/Methods/Projects/Copy/Add.ts').components['schemas']['Projects_2.Methods.Projects.Copy.Add.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -14395,7 +14357,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: number | null;
+                        result: import('./Projects_2/Methods/Projects/Favorite/Edit.ts').components['schemas']['Projects_2.Methods.Projects.Favorite.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: import('./Models/Projects.ts').components['schemas']['Models.Projects'];
                 };
@@ -14421,7 +14383,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: number | null;
+                        result: import('./Projects_2/Methods/Projects/Move/Edit.ts').components['schemas']['Projects_2.Methods.Projects.Move.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -14447,7 +14409,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: number;
+                        result: import('./Projects_2/Methods/Projects/Name/Edit.ts').components['schemas']['Projects_2.Methods.Projects.Name.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -14473,7 +14435,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: number;
+                        result: import('./Projects_2/Methods/Projects/On/Edit.ts').components['schemas']['Projects_2.Methods.Projects.On.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: import('./Models/Projects.ts').components['schemas']['Models.Projects'];
                 };
@@ -14499,7 +14461,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: number | null;
+                        result: import('./Projects_2/Methods/Projects/Sort/Edit.ts').components['schemas']['Projects_2.Methods.Projects.Sort.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: import('./Models/Projects.ts').components['schemas']['Models.Projects'];
                 };
@@ -14525,7 +14487,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: number | null;
+                        result: import('./Projects_2/Methods/Projects/Tags/Edit.ts').components['schemas']['Projects_2.Methods.Projects.Tags.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -14551,7 +14513,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: number;
+                        result: import('./Projects_2/Methods/Projects/Url/Edit.ts').components['schemas']['Projects_2.Methods.Projects.Url.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -14577,7 +14539,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: number | null;
+                        result: import('./Projects_2/Methods/Rights/ChangeOwner/Del.ts').components['schemas']['Projects_2.Methods.Rights.ChangeOwner.Del.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -14603,7 +14565,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: number | null;
+                        result: import('./Projects_2/Methods/Rights/ChangeOwner/Edit.ts').components['schemas']['Projects_2.Methods.Rights.ChangeOwner.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -14629,7 +14591,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: import('./stdClass.ts').components['schemas']['stdClass'];
+                        result: import('./Projects_2/Methods/Status/Registrar/Get.ts').components['schemas']['Projects_2.Methods.Status.Registrar.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -14655,7 +14617,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: import('./stdClass.ts').components['schemas']['stdClass'];
+                        result: import('./Projects_2/Methods/Status/Ssl/Get.ts').components['schemas']['Projects_2.Methods.Status.Ssl.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -14681,7 +14643,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: unknown;
+                        result: import('./Projects_2/Methods/Tasks/Volumes/Add.ts').components['schemas']['Projects_2.Methods.Tasks.Volumes.Add.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -14708,7 +14670,7 @@ export interface operations {
                 content: {
                     "application/json": ({
                         /** @throws Exception */
-                        result: (string | number)[];
+                        result: import('./Redmine_2/Methods/Users/Groups/Get.ts').components['schemas']['Redmine_2.Methods.Users.Groups.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -14735,7 +14697,7 @@ export interface operations {
                 content: {
                     "application/json": ({
                         /** @throws Exception */
-                        result: number;
+                        result: import('./Reports_2/Methods/Positions/SendTest/Edit.ts').components['schemas']['Reports_2.Methods.Positions.SendTest.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -14761,7 +14723,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: (string | number)[];
+                        result: import('./Schedule_2/Methods/Settings/EmailsHints/Get.ts').components['schemas']['Schedule_2.Methods.Settings.EmailsHints.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -14787,7 +14749,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: number | null;
+                        result: import('./Tickets_2/Methods/Admin/Message/Del.ts').components['schemas']['Tickets_2.Methods.Admin.Message.Del.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -14813,7 +14775,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: number | null;
+                        result: import('./Tickets_2/Methods/Admin/Message/Edit.ts').components['schemas']['Tickets_2.Methods.Admin.Message.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -14839,7 +14801,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: number | null;
+                        result: import('./Tickets_2/Methods/Admin/Templates/Add.ts').components['schemas']['Tickets_2.Methods.Admin.Templates.Add.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -14865,7 +14827,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: number | null;
+                        result: import('./Tickets_2/Methods/Admin/Templates/Del.ts').components['schemas']['Tickets_2.Methods.Admin.Templates.Del.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -14891,7 +14853,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: number | null;
+                        result: import('./Tickets_2/Methods/Admin/Templates/Edit.ts').components['schemas']['Tickets_2.Methods.Admin.Templates.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -14917,7 +14879,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: (string | number)[] | null;
+                        result: import('./Tickets_2/Methods/Admin/Templates/Get.ts').components['schemas']['Tickets_2.Methods.Admin.Templates.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -14943,7 +14905,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: number | null;
+                        result: import('./Tickets_2/Methods/Admin/Ticket/Edit.ts').components['schemas']['Tickets_2.Methods.Admin.Ticket.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -14969,7 +14931,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: number | null;
+                        result: import('./Tickets_2/Methods/Admin/TicketSplit/Edit.ts').components['schemas']['Tickets_2.Methods.Admin.TicketSplit.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -14995,7 +14957,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: (string | number)[];
+                        result: import('./Tickets_2/Methods/Admin/User/Get.ts').components['schemas']['Tickets_2.Methods.Admin.User.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -15021,7 +14983,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: number | null;
+                        result: import('./Tickets_2/Methods/Admin/UserId/Edit.ts').components['schemas']['Tickets_2.Methods.Admin.UserId.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -15047,7 +15009,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: number | null;
+                        result: import('./Tickets_2/Methods/Tickets/AdminComment/Edit.ts').components['schemas']['Tickets_2.Methods.Tickets.AdminComment.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -15073,7 +15035,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: (string | number)[];
+                        result: import('./Tickets_2/Methods/Tickets/Info/Get.ts').components['schemas']['Tickets_2.Methods.Tickets.Info.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -15099,7 +15061,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: number | null;
+                        result: import('./Tickets_2/Methods/Tickets/SetReaded/Edit.ts').components['schemas']['Tickets_2.Methods.Tickets.SetReaded.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -15125,7 +15087,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: unknown;
+                        result: import('./Tickets_2/Methods/Tickets/Writing/Edit.ts').components['schemas']['Tickets_2.Methods.Tickets.Writing.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -15152,7 +15114,7 @@ export interface operations {
                 content: {
                     "application/json": ({
                         /** URL к карте сайта */
-                        result: string;
+                        result: import('./Urls_2/Methods/Import/RecognizeLinkSitemapXml/Get.ts').components['schemas']['Urls_2.Methods.Import.RecognizeLinkSitemapXml.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -15178,11 +15140,8 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        /**
-                         * @throws Exception
-                         * @description @throws Exception
-                         */
-                        result: number;
+                        /** @throws Exception */
+                        result: import('./Users_2/Methods/Join/Email/Add.ts').components['schemas']['Users_2.Methods.Join.Email.Add.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -15208,7 +15167,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: unknown;
+                        result: import('./Admin_2/Methods/Accounting/Group/Filter/Add.ts').components['schemas']['Admin_2.Methods.Accounting.Group.Filter.Add.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -15234,7 +15193,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: unknown;
+                        result: import('./Admin_2/Methods/Accounting/Group/Filter/Del.ts').components['schemas']['Admin_2.Methods.Accounting.Group.Filter.Del.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -15260,7 +15219,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: unknown;
+                        result: import('./Admin_2/Methods/Accounting/Group/Filter/Edit.ts').components['schemas']['Admin_2.Methods.Accounting.Group.Filter.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -15309,7 +15268,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: unknown;
+                        result: import('./Admin_2/Methods/Accounting/Operations/Export/Get.ts').components['schemas']['Admin_2.Methods.Accounting.Operations.Export.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -15335,7 +15294,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: import('./Admin_2/Objects/Actions/Result.ts').components['schemas']['Admin_2.Objects.Actions.Result'];
+                        result: import('./Admin_2/Methods/Actions/Backup/Keywords/Edit.ts').components['schemas']['Admin_2.Methods.Actions.Backup.Keywords.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -15361,7 +15320,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: import('./Admin_2/Objects/Actions/Result.ts').components['schemas']['Admin_2.Objects.Actions.Result'];
+                        result: import('./Admin_2/Methods/Actions/Backup/Loader/Edit.ts').components['schemas']['Admin_2.Methods.Actions.Backup.Loader.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -15387,7 +15346,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: import('./Admin_2/Objects/Actions/Result.ts').components['schemas']['Admin_2.Objects.Actions.Result'];
+                        result: import('./Admin_2/Methods/Actions/Backup/Project/Edit.ts').components['schemas']['Admin_2.Methods.Actions.Backup.Project.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -15413,7 +15372,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: import('./Admin_2/Objects/Actions/Result.ts').components['schemas']['Admin_2.Objects.Actions.Result'];
+                        result: import('./Admin_2/Methods/Actions/Bank/Referral/Edit.ts').components['schemas']['Admin_2.Methods.Actions.Bank.Referral.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -15439,7 +15398,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: import('./Admin_2/Objects/Actions/Result.ts').components['schemas']['Admin_2.Objects.Actions.Result'];
+                        result: import('./Admin_2/Methods/Actions/Payments/Diadoc/Add.ts').components['schemas']['Admin_2.Methods.Actions.Payments.Diadoc.Add.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -15465,7 +15424,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: import('./Admin_2/Objects/Actions/Result.ts').components['schemas']['Admin_2.Objects.Actions.Result'];
+                        result: import('./Admin_2/Methods/Actions/Positions/History/Add.ts').components['schemas']['Admin_2.Methods.Actions.Positions.History.Add.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -15491,7 +15450,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: import('./Admin_2/Objects/Actions/Result.ts').components['schemas']['Admin_2.Objects.Actions.Result'];
+                        result: import('./Admin_2/Methods/Actions/Positions/Status/Edit.ts').components['schemas']['Admin_2.Methods.Actions.Positions.Status.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -15517,7 +15476,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: import('./Admin_2/Objects/Actions/Result.ts').components['schemas']['Admin_2.Objects.Actions.Result'];
+                        result: import('./Admin_2/Methods/Actions/Projects/Domain/Edit.ts').components['schemas']['Admin_2.Methods.Actions.Projects.Domain.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -15543,7 +15502,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: import('./Admin_2/Objects/Actions/Result.ts').components['schemas']['Admin_2.Objects.Actions.Result'];
+                        result: import('./Admin_2/Methods/Actions/Regions/CommitGoogle/Edit.ts').components['schemas']['Admin_2.Methods.Actions.Regions.CommitGoogle.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -15569,7 +15528,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: import('./Admin_2/Objects/Actions/Result.ts').components['schemas']['Admin_2.Objects.Actions.Result'];
+                        result: import('./Admin_2/Methods/Actions/Regions/UpdateGoogle/Edit.ts').components['schemas']['Admin_2.Methods.Actions.Regions.UpdateGoogle.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -15595,7 +15554,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: import('./Admin_2/Objects/Actions/Result.ts').components['schemas']['Admin_2.Objects.Actions.Result'];
+                        result: import('./Admin_2/Methods/Actions/Robot/Checks/Edit.ts').components['schemas']['Admin_2.Methods.Actions.Robot.Checks.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -15621,7 +15580,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: import('./Admin_2/Objects/Actions/Result.ts').components['schemas']['Admin_2.Objects.Actions.Result'];
+                        result: import('./Admin_2/Methods/Actions/Robot/Priority/Edit.ts').components['schemas']['Admin_2.Methods.Actions.Robot.Priority.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -15647,7 +15606,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: import('./Admin_2/Objects/Actions/Result.ts').components['schemas']['Admin_2.Objects.Actions.Result'] | null;
+                        result: import('./Admin_2/Methods/Actions/Robot/Task/Edit.ts').components['schemas']['Admin_2.Methods.Actions.Robot.Task.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -15673,7 +15632,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: import('./Admin_2/Objects/Actions/Result.ts').components['schemas']['Admin_2.Objects.Actions.Result'];
+                        result: import('./Admin_2/Methods/Actions/Slack/Files/Del.ts').components['schemas']['Admin_2.Methods.Actions.Slack.Files.Del.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -15699,7 +15658,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: import('./Admin_2/Objects/Actions/Result.ts').components['schemas']['Admin_2.Objects.Actions.Result'];
+                        result: import('./Admin_2/Methods/Actions/Slack/Messages/Del.ts').components['schemas']['Admin_2.Methods.Actions.Slack.Messages.Del.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -15725,7 +15684,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: import('./Admin_2/Objects/Actions/Result.ts').components['schemas']['Admin_2.Objects.Actions.Result'];
+                        result: import('./Admin_2/Methods/Actions/User/Currency/Edit.ts').components['schemas']['Admin_2.Methods.Actions.User.Currency.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -15751,7 +15710,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: import('./Admin_2/Objects/Actions/Result.ts').components['schemas']['Admin_2.Objects.Actions.Result'];
+                        result: import('./Admin_2/Methods/Actions/User/Email/Edit.ts').components['schemas']['Admin_2.Methods.Actions.User.Email.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -15777,7 +15736,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: (string | number)[];
+                        result: import('./Admin_2/Methods/Analytics/Accounting/SummaryForChart/Get.ts').components['schemas']['Admin_2.Methods.Analytics.Accounting.SummaryForChart.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -15803,7 +15762,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: (string | number)[] | null;
+                        result: import('./Admin_2/Methods/Analytics/Activity/ChartByPeriod/Get.ts').components['schemas']['Admin_2.Methods.Analytics.Activity.ChartByPeriod.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -15829,7 +15788,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: (string | number)[] | null;
+                        result: import('./Admin_2/Methods/Analytics/Competitors/SummaryForOrdersChart/Get.ts').components['schemas']['Admin_2.Methods.Analytics.Competitors.SummaryForOrdersChart.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -15855,7 +15814,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: (string | number)[] | null;
+                        result: import('./Admin_2/Methods/Analytics/Payments/Systems/Get.ts').components['schemas']['Admin_2.Methods.Analytics.Payments.Systems.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -15881,7 +15840,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: (string | number)[] | null;
+                        result: import('./Admin_2/Methods/Analytics/Payments/Tariff/Get.ts').components['schemas']['Admin_2.Methods.Analytics.Payments.Tariff.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -15907,7 +15866,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: import('./stdClass.ts').components['schemas']['stdClass'];
+                        result: import('./Admin_2/Methods/Analytics/Positions/ChartByDayByHourAuto/Get.ts').components['schemas']['Admin_2.Methods.Analytics.Positions.ChartByDayByHourAuto.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -15933,7 +15892,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: import('./stdClass.ts').components['schemas']['stdClass'];
+                        result: import('./Admin_2/Methods/Analytics/Positions/ChartByHourAuto/Get.ts').components['schemas']['Admin_2.Methods.Analytics.Positions.ChartByHourAuto.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -15959,7 +15918,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: import('./stdClass.ts').components['schemas']['stdClass'];
+                        result: import('./Admin_2/Methods/Analytics/Positions/ChartByHour/Get.ts').components['schemas']['Admin_2.Methods.Analytics.Positions.ChartByHour.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -15985,7 +15944,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: import('./stdClass.ts').components['schemas']['stdClass'];
+                        result: import('./Admin_2/Methods/Analytics/Positions/ChartCountUsersByHour/Get.ts').components['schemas']['Admin_2.Methods.Analytics.Positions.ChartCountUsersByHour.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -16011,7 +15970,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: (string | number)[];
+                        result: import('./Admin_2/Methods/Analytics/Tickets/ChartByMigrations/Get.ts').components['schemas']['Admin_2.Methods.Analytics.Tickets.ChartByMigrations.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -16037,7 +15996,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: (string | number)[];
+                        result: import('./Admin_2/Methods/Analytics/Tickets/ChartByNew/Get.ts').components['schemas']['Admin_2.Methods.Analytics.Tickets.ChartByNew.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -16063,7 +16022,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: (string | number)[];
+                        result: import('./Admin_2/Methods/Analytics/Tickets/ChartByRates/Get.ts').components['schemas']['Admin_2.Methods.Analytics.Tickets.ChartByRates.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -16089,7 +16048,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: (string | number)[];
+                        result: import('./Admin_2/Methods/Analytics/Tickets/ChartByTags/Get.ts').components['schemas']['Admin_2.Methods.Analytics.Tickets.ChartByTags.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -16115,7 +16074,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: (string | number)[];
+                        result: import('./Admin_2/Methods/Analytics/Tickets/ChartByWaitTime/Get.ts').components['schemas']['Admin_2.Methods.Analytics.Tickets.ChartByWaitTime.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -16141,7 +16100,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: (string | number)[] | null;
+                        result: import('./Admin_2/Methods/Analytics/Tickets/Messages/Get.ts').components['schemas']['Admin_2.Methods.Analytics.Tickets.Messages.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -16167,7 +16126,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: number | null;
+                        result: import('./Admin_2/Methods/Logs/System/Checked/Edit.ts').components['schemas']['Admin_2.Methods.Logs.System.Checked.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -16194,7 +16153,7 @@ export interface operations {
                 content: {
                     "application/json": ({
                         /** Данные для построения графика */
-                        result: import('./TV/Objects/Highcharts/Chart.ts').components['schemas']['TV.Objects.Highcharts.Chart'] | null;
+                        result: import('./Admin_2/Methods/Users/Informer/Subscriptions/Get.ts').components['schemas']['Admin_2.Methods.Users.Informer.Subscriptions.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -16221,7 +16180,7 @@ export interface operations {
                 content: {
                     "application/json": ({
                         /** @return object{projectIds: int[]} Список id проектов, отрпавленных на проверку */
-                        result: unknown;
+                        result: import('./Audit_2/Methods/Audit/Checker/Go/Edit.ts').components['schemas']['Audit_2.Methods.Audit.Checker.Go.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: import('./Models/Projects.ts').components['schemas']['Models.Projects'];
                 };
@@ -16247,11 +16206,8 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        /**
-                         * @throws Exception
-                         * @description @throws Exception
-                         */
-                        result: unknown;
+                        /** @throws Exception */
+                        result: import('./Audit_2/Methods/Audit/Checker/Price/Get.ts').components['schemas']['Audit_2.Methods.Audit.Checker.Price.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: import('./Models/Projects.ts').components['schemas']['Models.Projects'];
                 };
@@ -16278,7 +16234,7 @@ export interface operations {
                 content: {
                     "application/json": ({
                         /** Короткая гостевая ссылка на просмотр аудита позиций */
-                        result: string | null;
+                        result: import('./Audit_2/Methods/Audit/Export/Links/Get.ts').components['schemas']['Audit_2.Methods.Audit.Export.Links.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -16331,7 +16287,7 @@ export interface operations {
                         /** Информацией о текущей ошибке на роботе
                          *
                          *     Вернет null, если ошибки на роботе нет */
-                        result: import('./stdClass.ts').components['schemas']['stdClass'] | null;
+                        result: import('./Audit_2/Methods/Audit/Log/ActualError/Get.ts').components['schemas']['Audit_2.Methods.Audit.Log.ActualError.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -16358,7 +16314,7 @@ export interface operations {
                 content: {
                     "application/json": ({
                         /** Данные для графика */
-                        result: (string | number)[] | null;
+                        result: import('./Audit_2/Methods/Audit/Log/Chart/Get.ts').components['schemas']['Audit_2.Methods.Audit.Log.Chart.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -16385,7 +16341,7 @@ export interface operations {
                 content: {
                     "application/json": ({
                         /** Ответ об успешнности экспорта результатов аудита */
-                        result: boolean | null;
+                        result: import('./Audit_2/Methods/Audit/Results/Export/Get.ts').components['schemas']['Audit_2.Methods.Audit.Results.Export.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -16411,13 +16367,9 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        /**
-                         * @return array{result: array{page_in_filter: bool, index: int, snippet: string, content: string}}
-                         *     @throws Exception
-                         * @description @return array{result: array{page_in_filter: bool, index: int, snippet: string, content: string}}
-                         *     @throws Exception
-                         */
-                        result: (string | number)[];
+                        /** @return array{result: array{page_in_filter: bool, index: int, snippet: string, content: string}}
+                         *     @throws Exception */
+                        result: import('./Audit_2/Methods/Audit/Results/Page/Get.ts').components['schemas']['Audit_2.Methods.Audit.Results.Page.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -16444,7 +16396,7 @@ export interface operations {
                 content: {
                     "application/json": ({
                         /** @return object{projectIds: int[]} Список id проектов, отрпавленных на проверку */
-                        result: unknown;
+                        result: import('./Audit_2/Methods/Indexing/Checker/Go/Edit.ts').components['schemas']['Audit_2.Methods.Indexing.Checker.Go.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: import('./Models/Projects.ts').components['schemas']['Models.Projects'];
                 };
@@ -16470,11 +16422,8 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        /**
-                         * @throws Exception
-                         * @description @throws Exception
-                         */
-                        result: unknown;
+                        /** @throws Exception */
+                        result: import('./Audit_2/Methods/Indexing/Checker/Price/Get.ts').components['schemas']['Audit_2.Methods.Indexing.Checker.Price.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: import('./Models/Projects.ts').components['schemas']['Models.Projects'];
                 };
@@ -16501,7 +16450,7 @@ export interface operations {
                 content: {
                     "application/json": ({
                         /** Короткая гостевая ссылка на просмотр индексации */
-                        result: string | null;
+                        result: import('./Audit_2/Methods/Indexing/Export/Links/Get.ts').components['schemas']['Audit_2.Methods.Indexing.Export.Links.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -16552,7 +16501,7 @@ export interface operations {
                 content: {
                     "application/json": ({
                         /** Сводки индексации */
-                        result: (string | number)[] | null;
+                        result: import('./Audit_2/Methods/Indexing/Summary/Chart/Get.ts').components['schemas']['Audit_2.Methods.Indexing.Summary.Chart.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -16579,7 +16528,7 @@ export interface operations {
                 content: {
                     "application/json": ({
                         /** @return object{projectIds: int[]} Список id проектов, отрпавленных на проверку */
-                        result: unknown;
+                        result: import('./Audit_2/Methods/Sitemap/Checker/Go/Edit.ts').components['schemas']['Audit_2.Methods.Sitemap.Checker.Go.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: import('./Models/Projects.ts').components['schemas']['Models.Projects'];
                 };
@@ -16605,11 +16554,8 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        /**
-                         * @throws Exception
-                         * @description @throws Exception
-                         */
-                        result: unknown;
+                        /** @throws Exception */
+                        result: import('./Audit_2/Methods/Sitemap/Checker/Price/Get.ts').components['schemas']['Audit_2.Methods.Sitemap.Checker.Price.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: import('./Models/Projects.ts').components['schemas']['Models.Projects'];
                 };
@@ -16636,7 +16582,7 @@ export interface operations {
                 content: {
                     "application/json": ({
                         /** @return object{projectIds: int[]} Список id проектов, отрпавленных на проверку */
-                        result: unknown;
+                        result: import('./Audit_2/Methods/Watcher/Checker/Go/Edit.ts').components['schemas']['Audit_2.Methods.Watcher.Checker.Go.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: import('./Models/Projects.ts').components['schemas']['Models.Projects'];
                 };
@@ -16662,11 +16608,8 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        /**
-                         * @throws Exception
-                         * @description @throws Exception
-                         */
-                        result: unknown;
+                        /** @throws Exception */
+                        result: import('./Audit_2/Methods/Watcher/Checker/Price/Get.ts').components['schemas']['Audit_2.Methods.Watcher.Checker.Price.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: import('./Models/Projects.ts').components['schemas']['Models.Projects'];
                 };
@@ -16693,7 +16636,7 @@ export interface operations {
                 content: {
                     "application/json": ({
                         /** Короткая ссылка гостевого доступа для просмотра радара */
-                        result: string | null;
+                        result: import('./Audit_2/Methods/Watcher/Export/Links/Get.ts').components['schemas']['Audit_2.Methods.Watcher.Export.Links.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -16720,7 +16663,7 @@ export interface operations {
                 content: {
                     "application/json": ({
                         /** Сводки с количеством изменений по каждому типу проверки */
-                        result: (string | number)[] | null;
+                        result: import('./Audit_2/Methods/Watcher/Summary/Chart/Get.ts').components['schemas']['Audit_2.Methods.Watcher.Summary.Chart.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -16746,11 +16689,8 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        /**
-                         * @return array<string, array<string, int>>
-                         * @description @return array<string, array<string, int>>
-                         */
-                        result: (string | number)[];
+                        /** @return array<string, array<string, int>> */
+                        result: import('./Content_2/Methods/Apometr/Text/Calendar/Get.ts').components['schemas']['Content_2.Methods.Apometr.Text.Calendar.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -16776,7 +16716,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: (string | number)[];
+                        result: import('./Content_2/Methods/Apometr/Text/Updates/Get.ts').components['schemas']['Content_2.Methods.Apometr.Text.Updates.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -16802,7 +16742,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: (string | number)[];
+                        result: import('./Content_2/Methods/Apometr/Updates/Dates/Get.ts').components['schemas']['Content_2.Methods.Apometr.Updates.Dates.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -16829,7 +16769,7 @@ export interface operations {
                 content: {
                     "application/json": ({
                         /** @throws Exception */
-                        result: number | null;
+                        result: import('./Content_2/Methods/Journal/Course/Certificates/Add.ts').components['schemas']['Content_2.Methods.Journal.Course.Certificates.Add.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: import('./Models/Pages.ts').components['schemas']['Models.Pages'];
                 };
@@ -16855,7 +16795,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: number | null;
+                        result: import('./Content_2/Methods/Journal/Course/Certificates/Edit.ts').components['schemas']['Content_2.Methods.Journal.Course.Certificates.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -16881,7 +16821,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: unknown;
+                        result: import('./Content_2/Methods/Journal/Course/Certificates/Get.ts').components['schemas']['Content_2.Methods.Journal.Course.Certificates.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -16907,7 +16847,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: import('./Models/Pages.ts').components['schemas']['Models.Pages'][];
+                        result: import('./Content_2/Methods/Journal/Course/Chapters/Get.ts').components['schemas']['Content_2.Methods.Journal.Course.Chapters.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: import('./Models/Pages.ts').components['schemas']['Models.Pages'];
                 };
@@ -16933,7 +16873,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: import('./Models/Pages.ts').components['schemas']['Models.Pages'][] | null;
+                        result: import('./Content_2/Methods/Journal/Dictionary/ArticlesByLetter/Get.ts').components['schemas']['Content_2.Methods.Journal.Dictionary.ArticlesByLetter.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: import('./Models/Pages.ts').components['schemas']['Models.Pages'];
                 };
@@ -16959,7 +16899,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: import('./Models/Pages.ts').components['schemas']['Models.Pages'][] | null;
+                        result: import('./Content_2/Methods/Journal/Dictionary/WordOfday/Get.ts').components['schemas']['Content_2.Methods.Journal.Dictionary.WordOfday.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: import('./Models/Pages.ts').components['schemas']['Models.Pages'];
                 };
@@ -16985,7 +16925,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: unknown;
+                        result: import('./Keywords_2/Methods/Collect/Ext/Go/Edit.ts').components['schemas']['Keywords_2.Methods.Collect.Ext.Go.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -17011,11 +16951,8 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        /**
-                         * @return array{pricesByUsers: array<string, array{price: float, priceOriginal: float, qualifiers: array{region_key: int, searcher_key: (0 | 1 | 5 | 100 | 101 | 102 | 104 | 105 | 106), region_lang?: (string | null), also_searched?: (int | null), depth?: (int | null), hint_depth: (1 | 2 | 3), hint_generators: array<('letter' | 'letter_ru' | 'number' | 'space')>}, comment: string}>}
-                         * @description @return array{pricesByUsers: array<string, array{price: float, priceOriginal: float, qualifiers: array{region_key: int, searcher_key: (0 | 1 | 5 | 100 | 101 | 102 | 104 | 105 | 106), region_lang?: (string | null), also_searched?: (int | null), depth?: (int | null), hint_depth: (1 | 2 | 3), hint_generators: array<('letter' | 'letter_ru' | 'number' | 'space')>}, comment: string}>}
-                         */
-                        result: unknown;
+                        /** @return array{pricesByUsers: array<string, array{price: float, priceOriginal: float, qualifiers: array{region_key: int, searcher_key: (0 | 1 | 5 | 100 | 101 | 102 | 104 | 105 | 106), region_lang?: (string | null), also_searched?: (int | null), depth?: (int | null), hint_depth: (1 | 2 | 3), hint_generators: array<('letter' | 'letter_ru' | 'number' | 'space')>}, comment: string}>} */
+                        result: import('./Keywords_2/Methods/Collect/Ext/Price/Get.ts').components['schemas']['Keywords_2.Methods.Collect.Ext.Price.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -17064,7 +17001,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: number | null;
+                        result: import('./Positions_2/Methods/Searchers/Regions/Import/Add.ts').components['schemas']['Positions_2.Methods.Searchers.Regions.Import.Add.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -17090,7 +17027,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: unknown;
+                        result: import('./Positions_2/Methods/Searchers/Regions/Sort/Edit.ts').components['schemas']['Positions_2.Methods.Searchers.Regions.Sort.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -17116,7 +17053,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: number;
+                        result: import('./Projects_2/Methods/Tasks/Volumes/Price/Get.ts').components['schemas']['Projects_2.Methods.Tasks.Volumes.Price.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -17142,7 +17079,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: unknown;
+                        result: import('./Projects_2/Methods/Tasks/Volumes/Status/Get.ts').components['schemas']['Projects_2.Methods.Tasks.Volumes.Status.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: import('./Models/Projects.ts').components['schemas']['Models.Projects'];
                 };
@@ -17168,7 +17105,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: number | null;
+                        result: import('./Tickets_2/Methods/Admin/Templates/Sort/Edit.ts').components['schemas']['Tickets_2.Methods.Admin.Templates.Sort.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -17194,7 +17131,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: import('./Admin_2/Objects/Actions/Result.ts').components['schemas']['Admin_2.Objects.Actions.Result'];
+                        result: import('./Admin_2/Methods/Actions/Positions/History/Copy/Add.ts').components['schemas']['Admin_2.Methods.Actions.Positions.History.Copy.Add.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -17220,7 +17157,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: unknown;
+                        result: import('./Content_2/Methods/Journal/Course/Certificates/ByID/Get.ts').components['schemas']['Content_2.Methods.Journal.Course.Certificates.ByID.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -17246,7 +17183,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: unknown;
+                        result: import('./Content_2/Methods/Journal/Course/Certificates/Image/Get.ts').components['schemas']['Content_2.Methods.Journal.Course.Certificates.Image.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };

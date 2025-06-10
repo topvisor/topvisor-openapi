@@ -48,6 +48,19 @@
                     "currency",
                     "field_name"
                 ]
+            },
+            "Admin_2.Methods.Analytics.Get.Exec": {
+                "type": "array",
+                "items": {
+                    "oneOf": [
+                        {
+                            "type": "string"
+                        },
+                        {
+                            "type": "number"
+                        }
+                    ]
+                }
             }
         }
     }

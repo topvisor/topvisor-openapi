@@ -31,6 +31,19 @@
                 ],
                 "title": "Получить дополнительные параметры расписания\n\nДля каждого типа могут быть свои параметры",
                 "description": "@see Schedule_2\\Mods\\Settings"
+            },
+            "Schedule_2.Methods.Settings.Get.Exec": {
+                "type": "array",
+                "items": {
+                    "oneOf": [
+                        {
+                            "type": "string"
+                        },
+                        {
+                            "type": "number"
+                        }
+                    ]
+                }
             }
         }
     }

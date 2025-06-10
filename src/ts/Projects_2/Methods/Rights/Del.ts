@@ -20,6 +20,7 @@ export interface components {
              *     Вместо project_id можно укзывать projects_ids */
             project_id?: number | null;
         };
+        "Projects_2.Methods.Rights.Del.Exec": number | null;
     };
     responses: never;
     parameters: never;

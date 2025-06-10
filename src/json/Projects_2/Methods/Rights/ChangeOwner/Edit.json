@@ -28,6 +28,10 @@
                     "email"
                 ],
                 "title": "Инициализация передачи проекта другому пользователю"
+            },
+            "Projects_2.Methods.Rights.ChangeOwner.Edit.Exec": {
+                "nullable": true,
+                "type": "integer"
             }
         }
     }

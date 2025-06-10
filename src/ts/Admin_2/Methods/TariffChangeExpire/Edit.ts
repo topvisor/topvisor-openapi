@@ -12,6 +12,7 @@ export interface components {
             /** Дата следующего списания по тарифу */
             state_time_end: import('../../../TV/API/Types/Date.ts').components['schemas']['TV.API.Types.Date'];
         };
+        "Admin_2.Methods.TariffChangeExpire.Edit.Exec": number | null;
     };
     responses: never;
     parameters: never;

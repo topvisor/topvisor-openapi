@@ -27,6 +27,7 @@ export interface components {
             fetch_style?: import('../../../TV/API/Params/FetchStyleTrait.ts').components['schemas']['TV.API.Params.FetchStyleTrait']['fetch_style'];
             project_id: import('../../../TV/API/Params/ProjectIdTrait.ts').components['schemas']['TV.API.Params.ProjectIdTrait']['project_id'];
         };
+        "Urls_2.Methods.Export.Get.Exec": Record<string, never>;
     };
     responses: never;
     parameters: never;

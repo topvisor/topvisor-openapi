@@ -11,6 +11,7 @@ export interface components {
         "Schedule_2.Methods.Settings.EmailsHints.Get": {
             term?: string;
         };
+        "Schedule_2.Methods.Settings.EmailsHints.Get.Exec": (string | number)[];
     };
     responses: never;
     parameters: never;

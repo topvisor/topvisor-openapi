@@ -14,6 +14,7 @@ export interface components {
             /** Имя папки */
             name: string;
         };
+        "Projects_2.Methods.Folders.Name.Edit.Exec": unknown;
     };
     responses: never;
     parameters: never;

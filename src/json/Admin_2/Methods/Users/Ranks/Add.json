@@ -101,6 +101,10 @@
                 },
                 "required": [],
                 "title": "Добавление достижение"
+            },
+            "Admin_2.Methods.Users.Ranks.Add.Exec": {
+                "nullable": true,
+                "type": "integer"
             }
         }
     }

@@ -34,6 +34,19 @@
                     "searcher_key"
                 ],
                 "title": "Получение текстовых апдейтов"
+            },
+            "Content_2.Methods.Apometr.Text.Updates.Get.Exec": {
+                "type": "array",
+                "items": {
+                    "oneOf": [
+                        {
+                            "type": "string"
+                        },
+                        {
+                            "type": "number"
+                        }
+                    ]
+                }
             }
         }
     }

@@ -37,6 +37,10 @@
                     "target_id"
                 ],
                 "title": "Добавление примечания"
+            },
+            "Annotations_2.Methods.Add.Exec": {
+                "nullable": true,
+                "type": "integer"
             }
         }
     }

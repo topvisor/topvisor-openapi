@@ -51,6 +51,10 @@
                     "command"
                 ],
                 "title": "Добавление задачи cron"
+            },
+            "Cron_2.Methods.Commands.Add.Exec": {
+                "nullable": true,
+                "type": "integer"
             }
         }
     }

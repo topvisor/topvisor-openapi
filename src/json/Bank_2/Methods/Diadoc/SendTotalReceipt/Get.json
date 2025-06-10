@@ -51,6 +51,9 @@
                     "date2"
                 ],
                 "title": "Отправка акта сверки в диадок\n\nПараметры см. в bank_2_requisites::protected_get_printTotalReceipt();"
+            },
+            "Bank_2.Methods.Diadoc.SendTotalReceipt.Get.Exec": {
+                "type": "boolean"
             }
         }
     }

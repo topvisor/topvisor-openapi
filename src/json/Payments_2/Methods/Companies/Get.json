@@ -12,6 +12,20 @@
                 "properties": {},
                 "required": [],
                 "title": "Получение компании пользователя, через которых, были совершены платежи"
+            },
+            "Payments_2.Methods.Companies.Get.Exec": {
+                "nullable": true,
+                "type": "array",
+                "items": {
+                    "oneOf": [
+                        {
+                            "type": "string"
+                        },
+                        {
+                            "type": "number"
+                        }
+                    ]
+                }
             }
         }
     }

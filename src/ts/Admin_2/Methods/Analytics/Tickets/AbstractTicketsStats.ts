@@ -14,6 +14,14 @@ export interface components {
             /** Максимальная дата отчета */
             date?: import('../../../../TV/API/Types/Date.ts').components['schemas']['TV.API.Types.Date'] | null;
         };
+        /** Непосредственный вызов API функции
+         *
+         *     Запрещено делать публичной, это приведет к поломке preCall()
+         *
+         *     В описании к функции отвечать на вопрос: `Что является результатом запроса?` Например: `Список пользователей`
+         *
+         *     Не менять `protected`, проверка проводится при генерации схем в `TV\API\Objects\ClassAPIMethodInfo` */
+        "Admin_2.Methods.Analytics.Tickets.AbstractTicketsStats.Exec": unknown;
     };
     responses: never;
     parameters: never;

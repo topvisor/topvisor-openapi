@@ -12,6 +12,8 @@ export interface components {
             fields: import('../../Types/Settings/FieldNames.ts').components['schemas']['Audit_2.Types.Settings.FieldNames'];
             project_id: import('../../../TV/API/Params/ProjectIdTrait.ts').components['schemas']['TV.API.Params.ProjectIdTrait']['project_id'];
         };
+        /** Настройки аудита */
+        "Audit_2.Methods.Settings.Get.Exec": (string | number)[] | null;
     };
     responses: never;
     parameters: never;

@@ -18,6 +18,10 @@
                 },
                 "required": [],
                 "title": "Отправить код для подтверждения действия"
+            },
+            "Sms_2.Methods.SendPIN.Get.Exec": {
+                "title": "@throws Exception",
+                "type": "boolean"
             }
         }
     }

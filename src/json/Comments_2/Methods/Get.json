@@ -56,6 +56,19 @@
                     "offset"
                 ],
                 "title": "Получение комментариев\n\nВозвращает набор комментариев со всеми подкомменатриями, limit, offset не виляют на получение вложенных комментариев"
+            },
+            "Comments_2.Methods.Get.Exec": {
+                "type": "array",
+                "items": {
+                    "oneOf": [
+                        {
+                            "type": "string"
+                        },
+                        {
+                            "type": "number"
+                        }
+                    ]
+                }
             }
         }
     }

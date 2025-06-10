@@ -12,6 +12,7 @@ export interface components {
             /** Тип контракта */
             contract_type: string;
         };
+        "Bank_2.Methods.Requisites.ContractTariffId.Get.Exec": unknown;
     };
     responses: never;
     parameters: never;

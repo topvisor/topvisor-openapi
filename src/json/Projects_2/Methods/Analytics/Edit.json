@@ -39,6 +39,10 @@
                     "id"
                 ],
                 "title": "Настройка графика"
+            },
+            "Projects_2.Methods.Analytics.Edit.Exec": {
+                "nullable": true,
+                "type": "integer"
             }
         }
     }

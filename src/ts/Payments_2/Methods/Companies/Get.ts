@@ -9,6 +9,7 @@ export interface components {
     schemas: {
         /** Получение компании пользователя, через которых, были совершены платежи */
         "Payments_2.Methods.Companies.Get": Record<string, never>;
+        "Payments_2.Methods.Companies.Get.Exec": (string | number)[] | null;
     };
     responses: never;
     parameters: never;

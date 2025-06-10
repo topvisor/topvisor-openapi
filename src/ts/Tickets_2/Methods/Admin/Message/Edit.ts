@@ -14,6 +14,7 @@ export interface components {
             /** Текст сообщения */
             text: string;
         };
+        "Tickets_2.Methods.Admin.Message.Edit.Exec": number | null;
     };
     responses: never;
     parameters: never;

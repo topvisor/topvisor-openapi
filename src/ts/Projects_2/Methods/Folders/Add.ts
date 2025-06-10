@@ -12,6 +12,8 @@ export interface components {
             /** Имя папки */
             name: string;
         };
+        /** @returns ?int id добавленной папки */
+        "Projects_2.Methods.Folders.Add.Exec": number | null;
     };
     responses: never;
     parameters: never;

@@ -29,6 +29,13 @@
                     "test"
                 ],
                 "title": "Отправка акты в диадок"
+            },
+            "Admin_2.Methods.Actions.Payments.Diadoc.Add.Exec": {
+                "allOf": [
+                    {
+                        "$ref": "../../../../../Admin_2/Objects/Actions/Result.json#/components/schemas/Admin_2.Objects.Actions.Result"
+                    }
+                ]
             }
         }
     }

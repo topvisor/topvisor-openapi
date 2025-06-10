@@ -26,6 +26,9 @@
                     "filters"
                 ],
                 "title": "Редактирование \"on\" проектов"
+            },
+            "Projects_2.Methods.Projects.On.Edit.Exec": {
+                "type": "integer"
             }
         }
     }

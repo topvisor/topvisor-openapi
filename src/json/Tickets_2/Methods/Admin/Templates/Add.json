@@ -24,6 +24,10 @@
                     "text"
                 ],
                 "title": "Добавление шаблона тикета"
+            },
+            "Tickets_2.Methods.Admin.Templates.Add.Exec": {
+                "nullable": true,
+                "type": "integer"
             }
         }
     }

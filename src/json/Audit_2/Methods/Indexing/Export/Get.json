@@ -110,6 +110,10 @@
                     "project_id"
                 ],
                 "title": "Экспорт результатов индексации\n\nНеобходимо указать либо date1 и date2, либо dates (вместе указывать нельзя)"
+            },
+            "Audit_2.Methods.Indexing.Export.Get.Exec": {
+                "title": "Результаты индексации",
+                "type": "string"
             }
         }
     }

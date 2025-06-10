@@ -15,6 +15,8 @@ export interface components {
             /** Id целевого проекта */
             target_id?: number | null;
         };
+        /** @throws Exception */
+        "Templates_2.Methods.Fields.Get.Exec": (string | number)[];
     };
     responses: never;
     parameters: never;

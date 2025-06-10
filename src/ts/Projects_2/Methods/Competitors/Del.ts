@@ -18,6 +18,7 @@ export interface components {
             /** Url конкурентов */
             urls?: import('../../../TV/API/Types/UrlShortArray.ts').components['schemas']['TV.API.Types.UrlShortArray'] | null;
         };
+        "Projects_2.Methods.Competitors.Del.Exec": number;
     };
     responses: never;
     parameters: never;

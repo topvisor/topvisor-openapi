@@ -45,6 +45,8 @@ export interface components {
             project_id: import('../../../../TV/API/Params/ProjectIdTrait.ts').components['schemas']['TV.API.Params.ProjectIdTrait']['project_id'];
             fields?: import('../../../../TV/API/Params/FieldsTrait.ts').components['schemas']['TV.API.Params.FieldsTrait']['fields'];
         };
+        /** Результаты индексации */
+        "Audit_2.Methods.Indexing.Export.Get.Exec": string;
     };
     responses: never;
     parameters: never;

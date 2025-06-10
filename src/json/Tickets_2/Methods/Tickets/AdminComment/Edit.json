@@ -24,6 +24,10 @@
                     "id"
                 ],
                 "title": "Редактирваоние комменатрий админа"
+            },
+            "Tickets_2.Methods.Tickets.AdminComment.Edit.Exec": {
+                "nullable": true,
+                "type": "integer"
             }
         }
     }

@@ -24,6 +24,7 @@ export interface components {
             /** Максимальная дата отчета */
             date?: import('../../../../../TV/API/Types/Date.ts').components['schemas']['TV.API.Types.Date'] | null;
         };
+        "Admin_2.Methods.Analytics.Tickets.Messages.Get.Exec": (string | number)[] | null;
     };
     responses: never;
     parameters: never;

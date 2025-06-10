@@ -26,6 +26,9 @@
                     "filters"
                 ],
                 "title": "Перемещение проектов в папку"
+            },
+            "Projects_2.Methods.Folders.Move.Edit.Exec": {
+                "nullable": true
             }
         }
     }

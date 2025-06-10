@@ -14,6 +14,7 @@ export interface components {
             comments?: string | null;
             comments_2?: string | null;
         };
+        "Admin_2.Methods.Accounting.Counteragents.Edit.Exec": number | null;
     };
     responses: never;
     parameters: never;

@@ -15,6 +15,7 @@ export interface components {
             /** Id шаблона */
             target_id?: number | null;
         };
+        "Templates_2.Methods.Fields.Del.Exec": number | null;
     };
     responses: never;
     parameters: never;

@@ -28,6 +28,9 @@
                     "url"
                 ],
                 "title": "Редактирование ссылки проекта"
+            },
+            "Projects_2.Methods.Projects.Url.Edit.Exec": {
+                "type": "integer"
             }
         }
     }

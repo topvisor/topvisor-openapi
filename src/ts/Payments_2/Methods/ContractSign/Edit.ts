@@ -14,6 +14,7 @@ export interface components {
             /** Флаг обозначающий подписан ли контракт */
             signed: boolean;
         };
+        "Payments_2.Methods.ContractSign.Edit.Exec": number | null;
     };
     responses: never;
     parameters: never;

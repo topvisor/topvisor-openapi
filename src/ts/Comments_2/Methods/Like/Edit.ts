@@ -18,6 +18,7 @@ export interface components {
              *     - 1: поставить лайк */
             like: boolean;
         };
+        "Comments_2.Methods.Like.Edit.Exec": number | null;
     };
     responses: never;
     parameters: never;

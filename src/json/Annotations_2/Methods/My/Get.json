@@ -39,6 +39,20 @@
                     "offset"
                 ],
                 "title": "Получение всех своих примечаний по всем проектам и сервисам"
+            },
+            "Annotations_2.Methods.My.Get.Exec": {
+                "nullable": true,
+                "type": "array",
+                "items": {
+                    "oneOf": [
+                        {
+                            "type": "string"
+                        },
+                        {
+                            "type": "number"
+                        }
+                    ]
+                }
             }
         }
     }

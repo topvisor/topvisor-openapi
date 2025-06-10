@@ -22,6 +22,15 @@
                     "check_id"
                 ],
                 "title": "Получение информации о текущей ошибке на роботе"
+            },
+            "Audit_2.Methods.Audit.Log.ActualError.Get.Exec": {
+                "title": "Информацией о текущей ошибке на роботе\n\nВернет null, если ошибки на роботе нет",
+                "nullable": true,
+                "allOf": [
+                    {
+                        "$ref": "../../../../../stdClass.json#/components/schemas/stdClass"
+                    }
+                ]
             }
         }
     }

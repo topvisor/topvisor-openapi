@@ -54,6 +54,20 @@
                 },
                 "required": [],
                 "title": "Получение истории шторма за период в 2 суток"
+            },
+            "Content_2.Methods.Apometr.History.Get.Exec": {
+                "nullable": true,
+                "type": "array",
+                "items": {
+                    "oneOf": [
+                        {
+                            "type": "string"
+                        },
+                        {
+                            "type": "number"
+                        }
+                    ]
+                }
             }
         }
     }

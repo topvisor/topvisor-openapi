@@ -75,6 +75,11 @@
                     "check_id"
                 ],
                 "title": "Получение гостевой ссылки на просмотр аудита позиций"
+            },
+            "Audit_2.Methods.Audit.Export.Links.Get.Exec": {
+                "title": "Короткая гостевая ссылка на просмотр аудита позиций",
+                "nullable": true,
+                "type": "string"
             }
         }
     }

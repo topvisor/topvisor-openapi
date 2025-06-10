@@ -29,6 +29,8 @@ export interface components {
             filters?: import('../../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['filters'];
             id?: import('../../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['id'];
         };
+        /** Сводка индексации */
+        "Audit_2.Methods.Indexing.Summary.Get.Exec": (string | number)[] | null;
     };
     responses: never;
     parameters: never;

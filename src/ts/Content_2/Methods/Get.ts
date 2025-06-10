@@ -21,6 +21,32 @@ export interface components {
              */
             render_tpl: boolean;
         };
+        /** Возможные парамеры $config:
+         *
+         *     Общие:
+         *        - user_id
+         *        - create
+         *        - title
+         *        - description
+         *        - html
+         *        - menu_name
+         *        - order
+         *        - image
+         *        - og_title
+         *        - og_description
+         *        - og_image
+         *        - array tags
+         *        - enum(ACTIVE,DEV,DEFER,DEL) state, если установлен DEV - статья не будет отображаться в меню и поиске на сайте
+         *
+         *     Для справки:
+         *        - apiFullMethodName
+         *        - apiRequestParams - массив
+         *
+         *     Для журнала:
+         *        - count_views
+         *        - count_unique_views
+         *        - count_likes */
+        "Content_2.Methods.Get.Exec": (string | number)[];
     };
     responses: never;
     parameters: never;

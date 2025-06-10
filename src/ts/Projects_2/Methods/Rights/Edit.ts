@@ -24,6 +24,7 @@ export interface components {
             /** Лимит трат пользователем в месяц */
             limit?: number | null;
         };
+        "Projects_2.Methods.Rights.Edit.Exec": number | null;
     };
     responses: never;
     parameters: never;

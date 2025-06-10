@@ -60,6 +60,20 @@
                 },
                 "required": [],
                 "title": "Получение календаря апдейтов"
+            },
+            "Content_2.Methods.Apometr.Calendar.Get.Exec": {
+                "nullable": true,
+                "type": "array",
+                "items": {
+                    "oneOf": [
+                        {
+                            "type": "string"
+                        },
+                        {
+                            "type": "number"
+                        }
+                    ]
+                }
             }
         }
     }

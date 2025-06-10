@@ -19,6 +19,13 @@
                     "project_id"
                 ],
                 "title": "Получение информации о домене и SSL сертификате\nВозвращает объект с параметрами:\n- domain_expire\n- ssl_expire"
+            },
+            "Projects_2.Methods.Status.Get.Exec": {
+                "allOf": [
+                    {
+                        "$ref": "../../../stdClass.json#/components/schemas/stdClass"
+                    }
+                ]
             }
         }
     }

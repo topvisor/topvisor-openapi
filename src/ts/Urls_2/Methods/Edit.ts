@@ -22,6 +22,7 @@ export interface components {
             id?: import('../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['id'];
             project_id: import('../../TV/API/Params/ProjectIdTrait.ts').components['schemas']['TV.API.Params.ProjectIdTrait']['project_id'];
         };
+        "Urls_2.Methods.Edit.Exec": number | null;
     };
     responses: never;
     parameters: never;

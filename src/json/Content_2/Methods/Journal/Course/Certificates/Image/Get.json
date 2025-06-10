@@ -34,6 +34,9 @@
                     "id"
                 ],
                 "title": "Получение сертификата в виде изображения"
+            },
+            "Content_2.Methods.Journal.Course.Certificates.Image.Get.Exec": {
+                "nullable": true
             }
         }
     }

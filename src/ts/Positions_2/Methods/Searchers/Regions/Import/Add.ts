@@ -21,6 +21,7 @@ export interface components {
              *     - searcher_key, name_or_key (название или код)[, country_code (2 буквенный код страны), lang, device, depth] */
             regions?: unknown;
         };
+        "Positions_2.Methods.Searchers.Regions.Import.Add.Exec": number | null;
     };
     responses: never;
     parameters: never;

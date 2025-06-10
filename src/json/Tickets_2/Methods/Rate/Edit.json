@@ -29,6 +29,10 @@
                     "id"
                 ],
                 "title": "Дать оценку тикету"
+            },
+            "Tickets_2.Methods.Rate.Edit.Exec": {
+                "nullable": true,
+                "type": "integer"
             }
         }
     }

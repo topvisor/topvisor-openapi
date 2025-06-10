@@ -22,6 +22,7 @@ export interface components {
             /** Хэш для проверки подлинности события */
             hash?: number | null;
         };
+        "Analytics_2.Methods.Add.Exec": number | null;
     };
     responses: never;
     parameters: never;

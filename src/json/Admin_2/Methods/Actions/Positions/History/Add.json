@@ -34,6 +34,13 @@
                     "test"
                 ],
                 "title": "Импортирование историй позиций из CSV"
+            },
+            "Admin_2.Methods.Actions.Positions.History.Add.Exec": {
+                "allOf": [
+                    {
+                        "$ref": "../../../../../Admin_2/Objects/Actions/Result.json#/components/schemas/Admin_2.Objects.Actions.Result"
+                    }
+                ]
             }
         }
     }

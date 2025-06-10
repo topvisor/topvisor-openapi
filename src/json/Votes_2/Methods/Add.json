@@ -40,6 +40,10 @@
                     "rate"
                 ],
                 "title": "Оставление отзыва"
+            },
+            "Votes_2.Methods.Add.Exec": {
+                "nullable": true,
+                "type": "integer"
             }
         }
     }

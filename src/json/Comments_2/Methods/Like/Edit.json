@@ -24,6 +24,10 @@
                     "like"
                 ],
                 "title": "Редактирование статуса лайка для комментария\n\nВозвращает результат редактирования статуса лайка"
+            },
+            "Comments_2.Methods.Like.Edit.Exec": {
+                "nullable": true,
+                "type": "integer"
             }
         }
     }

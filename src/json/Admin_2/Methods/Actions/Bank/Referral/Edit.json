@@ -39,6 +39,13 @@
                     "test"
                 ],
                 "title": "Оплата реферального счета"
+            },
+            "Admin_2.Methods.Actions.Bank.Referral.Edit.Exec": {
+                "allOf": [
+                    {
+                        "$ref": "../../../../../Admin_2/Objects/Actions/Result.json#/components/schemas/Admin_2.Objects.Actions.Result"
+                    }
+                ]
             }
         }
     }

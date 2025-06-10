@@ -12,6 +12,7 @@ export interface components {
             /** Id тикета */
             id: number;
         };
+        "Tickets_2.Methods.Admin.TicketSplit.Edit.Exec": number | null;
     };
     responses: never;
     parameters: never;

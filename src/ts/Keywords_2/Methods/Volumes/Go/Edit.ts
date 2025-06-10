@@ -36,6 +36,11 @@ export interface components {
             filters?: import('../../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['filters'];
             id?: import('../../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['id'];
         };
+        /**
+         * @return object{projectIds: int[]} Список id проектов, отрпавленных на проверку
+         * @description @throws Exception
+         */
+        "Keywords_2.Methods.Volumes.Go.Edit.Exec": unknown;
     };
     responses: never;
     parameters: never;

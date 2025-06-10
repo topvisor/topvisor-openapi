@@ -12,6 +12,21 @@
                 "properties": {},
                 "required": [],
                 "title": "Рейтинг по сообщениям в слеке за предыдущий месяц"
+            },
+            "Admin_2.Methods.Slack.Rate.Get.Exec": {
+                "title": "Список пользователей",
+                "nullable": true,
+                "type": "array",
+                "items": {
+                    "oneOf": [
+                        {
+                            "type": "string"
+                        },
+                        {
+                            "type": "number"
+                        }
+                    ]
+                }
             }
         }
     }
