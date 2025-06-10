@@ -6506,7 +6506,8 @@
                                                                 {
                                                                     "$ref": "Example_2/Objects/User.json#/components/schemas/Example_2.Objects.User"
                                                                 }
-                                                            ]
+                                                            ],
+                                                            "$ref": "Example_2/Methods/PhpDoc/Get.json#/components/schemas/Example_2.Methods.PhpDoc.Get.Exec"
                                                         }
                                                     },
                                                     "required": [

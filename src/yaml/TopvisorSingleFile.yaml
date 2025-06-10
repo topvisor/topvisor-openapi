@@ -3751,7 +3751,8 @@ paths:
                               - parent
                               - self
                             allOf:
-                              - $ref: '#/components/schemas/Example_2.Objects.User'
+                              - $ref: Example_2/Objects/User.json#/components/schemas/Example_2.Objects.User
+                            $ref: '#/components/schemas/Example_2.Methods.PhpDoc.Get.Exec'
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
@@ -18592,6 +18593,17 @@ components:
         - offset
       title: Тест phpDoc
       description: '@todo : Удалить после настройки openapi'
+    Example_2.Methods.PhpDoc.Get.Exec:
+      title: |-
+        Тест phpDoc
+
+        TODO: Удалить после настройки openapi
+
+        - static
+        - parent
+        - self
+      allOf:
+        - $ref: '#/components/schemas/Example_2.Objects.User'
     Example_2.Methods.Projects.Get:
       type: object
       properties:
