@@ -60,14 +60,7 @@
             "Comments_2.Methods.Get.Exec": {
                 "type": "array",
                 "items": {
-                    "oneOf": [
-                        {
-                            "type": "string"
-                        },
-                        {
-                            "type": "number"
-                        }
-                    ]
+                    "type": "any"
                 }
             }
         }

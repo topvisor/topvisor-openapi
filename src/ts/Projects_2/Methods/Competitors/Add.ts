@@ -16,9 +16,9 @@ export interface components {
             /** Список url конкурентов */
             urls: import('../../../TV/API/Types/UrlShortArray.ts').components['schemas']['TV.API.Types.UrlShortArray'];
             /** Список имен конкурентов (если указан, должен быть такой же длины как urls) */
-            names?: (string | number)[] | null;
+            names?: Record<string, never>[] | null;
         };
-        "Projects_2.Methods.Competitors.Add.Exec": (string | number)[];
+        "Projects_2.Methods.Competitors.Add.Exec": Record<string, never>[];
     };
     responses: never;
     parameters: never;

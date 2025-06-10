@@ -18,7 +18,7 @@ export interface components {
          * Ассоциативный массив с результирующими переданными параетрами, и результатоми implodeQuotes() и genSet()
          * @description @type array<string, array<string, mixed>>
          */
-        "Example_2.Methods.Array.Get.Exec": (string | number)[];
+        "Example_2.Methods.Array.Get.Exec": Record<string, never>[];
     };
     responses: never;
     parameters: never;

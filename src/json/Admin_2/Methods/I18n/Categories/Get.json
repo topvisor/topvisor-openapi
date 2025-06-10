@@ -16,14 +16,7 @@
             "Admin_2.Methods.I18n.Categories.Get.Exec": {
                 "type": "array",
                 "items": {
-                    "oneOf": [
-                        {
-                            "type": "string"
-                        },
-                        {
-                            "type": "number"
-                        }
-                    ]
+                    "type": "any"
                 }
             }
         }

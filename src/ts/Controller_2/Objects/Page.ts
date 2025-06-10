@@ -9,13 +9,13 @@ export interface components {
     schemas: {
         "Controller_2.Objects.Page": {
             location: import('./Location.ts').components['schemas']['Controller_2.Objects.Location'];
-            _GET: (string | number)[];
+            _GET: Record<string, never>[];
             openGraph: import('./OpenGraph.ts').components['schemas']['Controller_2.Objects.OpenGraph'];
             options: import('./Page/Options.ts').components['schemas']['Controller_2.Objects.Page.Options'];
             article: import('./Page/Article.ts').components['schemas']['Controller_2.Objects.Page.Article'];
             secondMenu: import('../../Tpl/Core/SecondMenu.ts').components['schemas']['Tpl.Core.SecondMenu'];
             leftMenu: import('../../Tpl/Core/LeftMenu.ts').components['schemas']['Tpl.Core.LeftMenu'];
-            params: (string | number)[];
+            params: Record<string, never>[];
             site: import('../../TV/Core/Sites/Site.ts').components['schemas']['TV.Core.Sites.Site'];
             subdomain: string;
             langContext: string;
@@ -35,8 +35,8 @@ export interface components {
              * @default default
              */
             topPanelSeparation: string;
-            jsonLDs: (string | number)[];
-            htmlAttributes: (string | number)[];
+            jsonLDs: Record<string, never>[];
+            htmlAttributes: Record<string, never>[];
             logo: string;
             redirect: string;
             /** @default 302 */
@@ -49,8 +49,8 @@ export interface components {
             tplPath: string;
             tplRendered: string;
             tplSiteRendered: string;
-            data: (string | number)[];
-            rightsLabels: (string | number)[];
+            data: Record<string, never>[];
+            rightsLabels: Record<string, never>[];
             isFullSize: boolean;
             showFooter: boolean;
             isAdaptive: boolean;

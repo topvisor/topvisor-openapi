@@ -14,14 +14,7 @@
                         "title": "Произвольные даты без диапазона",
                         "type": "array",
                         "items": {
-                            "oneOf": [
-                                {
-                                    "type": "string"
-                                },
-                                {
-                                    "type": "number"
-                                }
-                            ]
+                            "type": "any"
                         }
                     },
                     "searcher_key": {
@@ -70,14 +63,7 @@
                 "nullable": true,
                 "type": "array",
                 "items": {
-                    "oneOf": [
-                        {
-                            "type": "string"
-                        },
-                        {
-                            "type": "number"
-                        }
-                    ]
+                    "type": "any"
                 }
             }
         }

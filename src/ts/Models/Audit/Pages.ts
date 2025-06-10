@@ -10,15 +10,15 @@ export interface components {
         "Models.Audit.Pages": {
             dummy_opener_summary_page?: any;
             "COUNT(*)"?: any;
-            "HTTP_CODES_HUNDREDS()"?: (string | number)[] | null;
+            "HTTP_CODES_HUNDREDS()"?: Record<string, never>[] | null;
             check_id?: any;
             url_id?: any;
             url?: any;
             time_parse?: any;
-            http_codes?: (string | number)[] | null;
+            http_codes?: Record<string, never>[] | null;
             last_http_code?: any;
             tls_version?: any;
-            redirects?: (string | number)[] | null;
+            redirects?: Record<string, never>[] | null;
             meta_robots_none?: any;
             x_robots_tag_none?: any;
             meta_robots_noindex?: any;

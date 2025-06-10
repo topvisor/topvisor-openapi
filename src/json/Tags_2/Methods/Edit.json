@@ -21,14 +21,7 @@
                         "title": "Список тегов в формате:\n<code>\n{\n   id:id,\n   name:name,\n   color_id:color_id\n}\n</code>",
                         "type": "array",
                         "items": {
-                            "oneOf": [
-                                {
-                                    "type": "string"
-                                },
-                                {
-                                    "type": "number"
-                                }
-                            ]
+                            "type": "any"
                         }
                     },
                     "project_id": {

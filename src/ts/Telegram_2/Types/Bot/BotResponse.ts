@@ -12,7 +12,7 @@ export interface components {
             operation: import('./Api/Operation.ts').components['schemas']['Telegram_2.Types.Bot.Api.Operation'];
             text: string;
             replyMarkup?: string | null;
-            params: (string | number)[];
+            params: Record<string, never>[];
         };
     };
     responses: never;

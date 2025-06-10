@@ -39,14 +39,7 @@
                         "title": "Недокументириуемый параметр\n\nset(Audit_2\\Types\\Type => regexp)",
                         "type": "array",
                         "items": {
-                            "oneOf": [
-                                {
-                                    "type": "string"
-                                },
-                                {
-                                    "type": "number"
-                                }
-                            ]
+                            "type": "any"
                         }
                     },
                     "sitemap": {
@@ -100,18 +93,31 @@
             },
             "Urls_2.Methods.Import.Add.Exec": {
                 "title": "Информация об импортированных urls",
-                "description": "@return ?array{'countSended': int, 'countDuplicated': int, 'countAdded': int, 'countChanged': int}\n\n@throws Exception",
+                "description": "\n\n@throws Exception",
                 "nullable": true,
                 "type": "array",
+                "properties": {
+                    "'countSended'": {
+                        "type": "integer"
+                    },
+                    "'countDuplicated'": {
+                        "type": "integer"
+                    },
+                    "'countAdded'": {
+                        "type": "integer"
+                    },
+                    "'countChanged'": {
+                        "type": "integer"
+                    }
+                },
+                "required": [
+                    "'countSended'",
+                    "'countDuplicated'",
+                    "'countAdded'",
+                    "'countChanged'"
+                ],
                 "items": {
-                    "oneOf": [
-                        {
-                            "type": "string"
-                        },
-                        {
-                            "type": "number"
-                        }
-                    ]
+                    "type": "any"
                 }
             }
         }

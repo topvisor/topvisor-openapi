@@ -16,7 +16,7 @@ export interface components {
             target_id?: number | null;
         };
         /** @throws Exception */
-        "Templates_2.Methods.Fields.Get.Exec": (string | number)[];
+        "Templates_2.Methods.Fields.Get.Exec": Record<string, never>[];
     };
     responses: never;
     parameters: never;

@@ -29,17 +29,42 @@
             },
             "Bank_2.Methods.Info.Get.Exec": {
                 "title": "Информация о балансе и тарифе пользователя.",
-                "description": "@return array{balance_all: float, balance_personal: float, balance_bonus: float, balance_tariff: float, tariff: array, subscription?: Bank_2\\Objects\\Subscriptions\\Subscription, subscription_name?: Bank_2\\Objects\\Subscriptions\\Subscription}",
                 "type": "array",
-                "items": {
-                    "oneOf": [
-                        {
-                            "type": "string"
-                        },
-                        {
-                            "type": "number"
+                "properties": {
+                    "balance_all": {
+                        "type": "number"
+                    },
+                    "balance_personal": {
+                        "type": "number"
+                    },
+                    "balance_bonus": {
+                        "type": "number"
+                    },
+                    "balance_tariff": {
+                        "type": "number"
+                    },
+                    "tariff": {
+                        "type": "array",
+                        "items": {
+                            "type": "any"
                         }
-                    ]
+                    },
+                    "subscription": {
+                        "$ref": "../../../Bank_2/Objects/Subscriptions/Subscription.json#/components/schemas/Bank_2.Objects.Subscriptions.Subscription"
+                    },
+                    "subscription_name": {
+                        "$ref": "../../../Bank_2/Objects/Subscriptions/Subscription.json#/components/schemas/Bank_2.Objects.Subscriptions.Subscription"
+                    }
+                },
+                "required": [
+                    "balance_all",
+                    "balance_personal",
+                    "balance_bonus",
+                    "balance_tariff",
+                    "tariff"
+                ],
+                "items": {
+                    "type": "any"
                 }
             }
         }

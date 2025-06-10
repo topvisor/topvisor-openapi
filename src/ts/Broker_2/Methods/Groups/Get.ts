@@ -12,7 +12,7 @@ export interface components {
             /** Id рекламной кампании */
             campaign_tv_id: number;
             /** Поиск групп по запросам */
-            filters_by_keywords?: (string | number)[] | null;
+            filters_by_keywords?: Record<string, never>[] | null;
             fields: import('../../../TV/API/Params/FieldsTrait.ts').components['schemas']['TV.API.Params.FieldsTrait']['fields'];
             orders: import('../../../TV/API/Params/OrdersTrait.ts').components['schemas']['TV.API.Params.OrdersTrait']['orders'];
             filters: import('../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['filters'];
@@ -22,7 +22,7 @@ export interface components {
             fetch_style?: import('../../../TV/API/Params/FetchStyleTrait.ts').components['schemas']['TV.API.Params.FetchStyleTrait']['fetch_style'];
         };
         /** @throws Exception */
-        "Broker_2.Methods.Groups.Get.Exec": (string | number)[];
+        "Broker_2.Methods.Groups.Get.Exec": Record<string, never>[];
     };
     responses: never;
     parameters: never;

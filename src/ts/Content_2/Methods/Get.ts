@@ -46,7 +46,7 @@ export interface components {
          *        - count_views
          *        - count_unique_views
          *        - count_likes */
-        "Content_2.Methods.Get.Exec": (string | number)[];
+        "Content_2.Methods.Get.Exec": Record<string, never>[];
     };
     responses: never;
     parameters: never;

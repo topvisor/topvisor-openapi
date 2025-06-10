@@ -10,7 +10,7 @@ export interface components {
         /** Рейтинг по сообщениям в слеке за предыдущий месяц */
         "Admin_2.Methods.Slack.Rate.Get": Record<string, never>;
         /** Список пользователей */
-        "Admin_2.Methods.Slack.Rate.Get.Exec": (string | number)[] | null;
+        "Admin_2.Methods.Slack.Rate.Get.Exec": Record<string, never>[] | null;
     };
     responses: never;
     parameters: never;

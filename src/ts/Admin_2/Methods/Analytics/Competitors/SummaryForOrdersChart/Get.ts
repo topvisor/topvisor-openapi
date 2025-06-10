@@ -18,7 +18,7 @@ export interface components {
             /** Инлекс региона */
             region_index?: number | null;
         };
-        "Admin_2.Methods.Analytics.Competitors.SummaryForOrdersChart.Get.Exec": (string | number)[] | null;
+        "Admin_2.Methods.Analytics.Competitors.SummaryForOrdersChart.Get.Exec": Record<string, never>[] | null;
     };
     responses: never;
     parameters: never;

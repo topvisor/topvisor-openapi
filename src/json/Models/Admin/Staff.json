@@ -55,14 +55,7 @@
                     "staff_posts": {
                         "type": "array",
                         "items": {
-                            "oneOf": [
-                                {
-                                    "type": "string"
-                                },
-                                {
-                                    "type": "number"
-                                }
-                            ]
+                            "type": "any"
                         },
                         "nullable": true
                     },

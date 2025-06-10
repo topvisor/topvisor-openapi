@@ -10,7 +10,7 @@ export interface components {
         /** Изменение прав на проект */
         "Projects_2.Methods.Rights.Edit": {
             /** Вместо project_ids можно укзывать project_id */
-            projects_ids?: (string | number)[] | null;
+            projects_ids?: Record<string, never>[] | null;
             /** Email пользователя (если пользователь не зарегистрирован будет выслано приглашение) */
             email: import('../../../TV/API/Types/Email.ts').components['schemas']['TV.API.Types.Email'];
             /** Побитовая маска прав */

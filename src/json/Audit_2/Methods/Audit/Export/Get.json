@@ -30,14 +30,7 @@
                         "title": "Фильтр по ресурсам страницы, API fitlers для объекта, тип которого указан в filters_extra_target_type\n\nТолько для $target_type = pages",
                         "type": "array",
                         "items": {
-                            "oneOf": [
-                                {
-                                    "type": "string"
-                                },
-                                {
-                                    "type": "number"
-                                }
-                            ]
+                            "type": "any"
                         }
                     },
                     "output": {

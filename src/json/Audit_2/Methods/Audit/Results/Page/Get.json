@@ -39,17 +39,38 @@
             },
             "Audit_2.Methods.Audit.Results.Page.Get.Exec": {
                 "title": "Результаты анализа страницы",
-                "description": "@return array{result: array{page_in_filter: bool, index: int, snippet: string, content: string}}\n@throws Exception",
+                "description": "\n@throws Exception",
                 "type": "array",
-                "items": {
-                    "oneOf": [
-                        {
-                            "type": "string"
+                "properties": {
+                    "result": {
+                        "type": "object",
+                        "properties": {
+                            "page_in_filter": {
+                                "type": "boolean"
+                            },
+                            "index": {
+                                "type": "integer"
+                            },
+                            "snippet": {
+                                "type": "string"
+                            },
+                            "content": {
+                                "type": "string"
+                            }
                         },
-                        {
-                            "type": "number"
-                        }
-                    ]
+                        "required": [
+                            "page_in_filter",
+                            "index",
+                            "snippet",
+                            "content"
+                        ]
+                    }
+                },
+                "required": [
+                    "result"
+                ],
+                "items": {
+                    "type": "any"
                 }
             }
         }

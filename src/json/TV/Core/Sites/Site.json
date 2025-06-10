@@ -23,14 +23,7 @@
                         "description": "@type array{\n    yandex_client_id:string,\n    yandex_client_id_auth:string,\n    yandex_client_secret:string,\n    google_client_id:string,\n    google_client_secret:string,\n    sms_client:string,\n    selectel_api_key:string,\n    vk_pixel_id:string,\n    vk_group_id:string,\n    vk_service_token:string,\n    vk_group_token:string,\n    telegram_token:string,\n    telegram_token_apometr:string,\n    tinkoff_business_token:string,\n    tinkoff_openapi_token:string,\n    tinkoff_security_key:string,\n    tinkoff_ap_cert_pass:string,\n    tinkoff_partner_key:string,\n    tinkoff_partner_secret:string,\n    botan_token_TopvisorBot:string,\n    botan_token_ApometrBot:string,\n    diadoc:string,\n    fbAppId:string,\n    fbTokens:array,\n    twTokens:array\n}",
                         "type": "array",
                         "items": {
-                            "oneOf": [
-                                {
-                                    "type": "string"
-                                },
-                                {
-                                    "type": "number"
-                                }
-                            ]
+                            "type": "any"
                         }
                     }
                 },

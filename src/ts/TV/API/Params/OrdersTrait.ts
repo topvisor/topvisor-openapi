@@ -16,7 +16,7 @@ export interface components {
              *     Использует поля модели
              * @description @see AbstractMethod::MODEL
              */
-            orders: (string | number)[];
+            orders: Record<string, never>[];
         };
     };
     responses: never;

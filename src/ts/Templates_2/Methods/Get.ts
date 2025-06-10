@@ -19,7 +19,7 @@ export interface components {
             include_fields: boolean;
         };
         /** @throws Exception */
-        "Templates_2.Methods.Get.Exec": (string | number)[];
+        "Templates_2.Methods.Get.Exec": Record<string, never>[];
     };
     responses: never;
     parameters: never;

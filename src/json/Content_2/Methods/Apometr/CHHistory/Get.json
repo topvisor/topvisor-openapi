@@ -65,14 +65,7 @@
             "Content_2.Methods.Apometr.CHHistory.Get.Exec": {
                 "type": "array",
                 "items": {
-                    "oneOf": [
-                        {
-                            "type": "string"
-                        },
-                        {
-                            "type": "number"
-                        }
-                    ]
+                    "type": "any"
                 }
             }
         }

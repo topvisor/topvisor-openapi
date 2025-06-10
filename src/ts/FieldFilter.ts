@@ -18,7 +18,7 @@ export interface components {
              *     В зависимости от типа условия оно может иметь разное количество значений
              *
              *     Обычно оно имеет только одно значение */
-            values: (string | number)[];
+            values: Record<string, never>[];
         };
     };
     responses: never;

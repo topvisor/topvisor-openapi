@@ -7,10 +7,7 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /**
-         * Получение стаьи для "Слово дня" в модуле SEO словарь
-         * @description @return (array<string, array{url: string, menu_name: string, description: string, count_views: integer}> | null)
-         */
+        /** Получение стаьи для "Слово дня" в модуле SEO словарь */
         "Content_2.Methods.Journal.Dictionary.WordOfday.Get": {
             fields: import('../../../../../TV/API/Params/FieldsTrait.ts').components['schemas']['TV.API.Params.FieldsTrait']['fields'];
             orders: import('../../../../../TV/API/Params/OrdersTrait.ts').components['schemas']['TV.API.Params.OrdersTrait']['orders'];
@@ -20,7 +17,7 @@ export interface components {
             offset: import('../../../../../TV/API/Params/OffsetTrait.ts').components['schemas']['TV.API.Params.OffsetTrait']['offset'];
             fetch_style?: import('../../../../../TV/API/Params/FetchStyleTrait.ts').components['schemas']['TV.API.Params.FetchStyleTrait']['fetch_style'];
         };
-        "Content_2.Methods.Journal.Dictionary.WordOfday.Get.Exec": (string | number)[] | null;
+        "Content_2.Methods.Journal.Dictionary.WordOfday.Get.Exec": Record<string, never>[] | null;
     };
     responses: never;
     parameters: never;

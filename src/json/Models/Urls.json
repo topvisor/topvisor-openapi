@@ -15,14 +15,7 @@
                     "WATCHER_HTTP_CODES_HUNDREDS()": {
                         "type": "array",
                         "items": {
-                            "oneOf": [
-                                {
-                                    "type": "string"
-                                },
-                                {
-                                    "type": "number"
-                                }
-                            ]
+                            "type": "any"
                         },
                         "nullable": true,
                         "example": {
@@ -89,14 +82,7 @@
                     "watcher_http_codes": {
                         "type": "array",
                         "items": {
-                            "oneOf": [
-                                {
-                                    "type": "string"
-                                },
-                                {
-                                    "type": "number"
-                                }
-                            ]
+                            "type": "any"
                         },
                         "nullable": true,
                         "example": {
@@ -117,14 +103,7 @@
                     "watcher_redirects": {
                         "type": "array",
                         "items": {
-                            "oneOf": [
-                                {
-                                    "type": "string"
-                                },
-                                {
-                                    "type": "number"
-                                }
-                            ]
+                            "type": "any"
                         },
                         "nullable": true,
                         "example": {

@@ -15,7 +15,7 @@ export interface components {
              *       "site",
              *       "on"
              *     ] */
-            fields: (string | number)[];
+            fields: Record<string, never>[];
             /** ID проекта */
             project_id: number;
             /** Вернуть ли в результате только включенных конкурентов */
@@ -23,7 +23,7 @@ export interface components {
             /** Включить ли в результат основной проект */
             include_project?: boolean | null;
         };
-        "Projects_2.Methods.Competitors.Get.Exec": (string | number)[] | null;
+        "Projects_2.Methods.Competitors.Get.Exec": Record<string, never>[] | null;
     };
     responses: never;
     parameters: never;

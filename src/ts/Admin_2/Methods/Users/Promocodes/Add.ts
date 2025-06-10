@@ -13,7 +13,7 @@ export interface components {
             /** single_code - многоразовый промокод */
             single_code?: string | null;
             /** Список многоразовых промокодов */
-            codes?: (string | number)[] | null;
+            codes?: Record<string, never>[] | null;
         };
         /** @throws Exception */
         "Admin_2.Methods.Users.Promocodes.Add.Exec": number | null;

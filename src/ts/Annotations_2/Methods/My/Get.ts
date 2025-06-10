@@ -17,7 +17,7 @@ export interface components {
             offset: import('../../../TV/API/Params/OffsetTrait.ts').components['schemas']['TV.API.Params.OffsetTrait']['offset'];
             fetch_style?: import('../../../TV/API/Params/FetchStyleTrait.ts').components['schemas']['TV.API.Params.FetchStyleTrait']['fetch_style'];
         };
-        "Annotations_2.Methods.My.Get.Exec": (string | number)[] | null;
+        "Annotations_2.Methods.My.Get.Exec": Record<string, never>[] | null;
     };
     responses: never;
     parameters: never;

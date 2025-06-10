@@ -20,11 +20,11 @@ export interface components {
             /** ID проекта */
             project_id: number;
             /** Список исходных запросов */
-            keywords: (string | number)[];
+            keywords: Record<string, never>[];
             /** Объекты определителей настроек ПС и регионов */
             qualifiers: import('../../../Types/Collect/Qualifiers.ts').components['schemas']['Keywords_2.Types.Collect.Qualifiers'];
             /** Минус фразы (только для searcher_key = 0 и searcher_key = 1) */
-            keywords_minus?: (string | number)[];
+            keywords_minus?: Record<string, never>[];
             /** Id группы для размещения подобранных запросов */
             to_group_id?: number | null;
             /** Id папки для новых групп */
@@ -36,11 +36,8 @@ export interface components {
             currency?: import('../../../../TV/API/Types/Currency.ts').components['schemas']['TV.API.Types.Currency'] | null;
             debug?: string | null;
         };
-        /**
-         * Информация о стоимости запуска подбора запросов
-         * @description @return array{pricesByUsers: array<string, array{price: float, priceOriginal: float, qualifiers: array{region_key: int, searcher_key: (0 | 1 | 5 | 100 | 101 | 102 | 104 | 105 | 106), region_lang?: (string | null), also_searched?: (int | null), depth?: (int | null), hint_depth: (1 | 2 | 3), hint_generators: array<('letter' | 'letter_ru' | 'number' | 'space')>}, comment: string}>}
-         */
-        "Keywords_2.Methods.Collect.Price.Get.Exec": (string | number)[];
+        /** Информация о стоимости запуска подбора запросов */
+        "Keywords_2.Methods.Collect.Price.Get.Exec": Record<string, never>[];
     };
     responses: never;
     parameters: never;

@@ -12,7 +12,7 @@ export interface components {
             target_type: import('../../Types/TargetType.ts').components['schemas']['Templates_2.Types.TargetType'];
         };
         /** @throws Exception */
-        "Templates_2.Methods.AvailableFieldsData.Get.Exec": (string | number)[];
+        "Templates_2.Methods.AvailableFieldsData.Get.Exec": Record<string, never>[];
     };
     responses: never;
     parameters: never;

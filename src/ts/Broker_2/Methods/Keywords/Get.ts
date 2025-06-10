@@ -22,7 +22,7 @@ export interface components {
             fetch_style?: import('../../../TV/API/Params/FetchStyleTrait.ts').components['schemas']['TV.API.Params.FetchStyleTrait']['fetch_style'];
         };
         /** @throws Exception */
-        "Broker_2.Methods.Keywords.Get.Exec": (string | number)[];
+        "Broker_2.Methods.Keywords.Get.Exec": Record<string, never>[];
     };
     responses: never;
     parameters: never;

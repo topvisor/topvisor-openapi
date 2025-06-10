@@ -14,16 +14,16 @@ export interface components {
             /** Категории
              *
              *     Для обчных графиков это значения на оси X */
-            categories: (string | number)[];
+            categories: Record<string, never>[];
             /** Набор серий
              *
              *     Серия - это объект, выводимый на графике, например линия.
              *
              *     Серия обязательно должна иметь поле data, в котором перечисляются значения для категорий. Значения должны идти в таком же порядке, что и
              *     категории */
-            series: (string | number)[];
+            series: Record<string, never>[];
             /** Дополнительгная информация */
-            additionalData: (string | number)[];
+            additionalData: Record<string, never>[];
         };
     };
     responses: never;

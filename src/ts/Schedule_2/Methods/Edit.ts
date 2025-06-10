@@ -21,7 +21,7 @@ export interface components {
              *     @see Schedule_2\Mods\Schedule::$availableMinutes
              *     @see Schedule_2\Mods\Schedule::$availableDays
              */
-            schedule: (string | number)[];
+            schedule: Record<string, never>[];
             /**
              * Тип расписания
              * @description @see Schedule_2\Mods\Schedule::$availableTypes

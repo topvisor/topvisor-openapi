@@ -25,7 +25,7 @@ export interface components {
              *       "redirects"
              *     ]
              */
-            watcher_fields: (string | number)[];
+            watcher_fields: Record<string, never>[];
             show_diff?: import('../../../Types/Watcher/ShowDiff.ts').components['schemas']['Audit_2.Types.Watcher.ShowDiff'];
             watcher_type: import('../../../Types/Watcher/Type.ts').components['schemas']['Audit_2.Types.Watcher.Type'];
             fields: import('../../../../TV/API/Params/FieldsTrait.ts').components['schemas']['TV.API.Params.FieldsTrait']['fields'];
@@ -38,7 +38,7 @@ export interface components {
             project_id: import('../../../../TV/API/Params/ProjectIdTrait.ts').components['schemas']['TV.API.Params.ProjectIdTrait']['project_id'];
         };
         /** Отчет по одному URL */
-        "Audit_2.Methods.Watcher.ByURL.Get.Exec": (string | number)[] | null;
+        "Audit_2.Methods.Watcher.ByURL.Get.Exec": Record<string, never>[] | null;
     };
     responses: never;
     parameters: never;

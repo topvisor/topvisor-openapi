@@ -12,7 +12,7 @@ export interface components {
             user: import('../../Objects/User.ts').components['schemas']['Example_2.Objects.User'];
         };
         /** Ассоциативный массив с результирующими переданными параетрами и результатом genSet() */
-        "Example_2.Methods.Object.Get.Exec": (string | number)[];
+        "Example_2.Methods.Object.Get.Exec": Record<string, never>[];
     };
     responses: never;
     parameters: never;

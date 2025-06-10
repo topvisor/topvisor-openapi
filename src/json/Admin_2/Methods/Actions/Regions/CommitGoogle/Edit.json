@@ -15,14 +15,7 @@
                         "description": "@type array<array{lr: int, criteriaId: int, coords: string, name_ru: string, areaName_ru: string}>",
                         "type": "array",
                         "items": {
-                            "oneOf": [
-                                {
-                                    "type": "string"
-                                },
-                                {
-                                    "type": "number"
-                                }
-                            ]
+                            "type": "any"
                         }
                     },
                     "test": {

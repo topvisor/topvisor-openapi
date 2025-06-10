@@ -43,14 +43,7 @@
             "Bank_2.Methods.History.Summary.Get.Exec": {
                 "type": "array",
                 "items": {
-                    "oneOf": [
-                        {
-                            "type": "string"
-                        },
-                        {
-                            "type": "number"
-                        }
-                    ]
+                    "type": "any"
                 }
             }
         }

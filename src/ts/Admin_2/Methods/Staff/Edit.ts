@@ -33,7 +33,7 @@ export interface components {
             /** Название отдела */
             department: string;
             /** Привелегии */
-            posts: (string | number)[];
+            posts: Record<string, never>[];
             /** Группа */
             group?: number | null;
         };

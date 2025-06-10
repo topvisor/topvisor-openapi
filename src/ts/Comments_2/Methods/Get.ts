@@ -24,7 +24,7 @@ export interface components {
             offset: import('../../TV/API/Params/OffsetTrait.ts').components['schemas']['TV.API.Params.OffsetTrait']['offset'];
             fetch_style?: import('../../TV/API/Params/FetchStyleTrait.ts').components['schemas']['TV.API.Params.FetchStyleTrait']['fetch_style'];
         };
-        "Comments_2.Methods.Get.Exec": (string | number)[];
+        "Comments_2.Methods.Get.Exec": Record<string, never>[];
     };
     responses: never;
     parameters: never;

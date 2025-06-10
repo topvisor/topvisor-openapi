@@ -31,7 +31,7 @@ export interface components {
             /** Недокументириуемый параметр
              *
              *     set(Audit_2\Types\Type => regexp) */
-            setActiveByRegexpByType?: (string | number)[];
+            setActiveByRegexpByType?: Record<string, never>[];
             /** Флаг активности в карте сайта
              *     - 1 - присутствовал в прошлых версиях карты сайта */
             sitemap?: import('../../Types/Flag.ts').components['schemas']['Urls_2.Types.Flag'] | null;
@@ -46,11 +46,11 @@ export interface components {
         };
         /**
          * Информация об импортированных urls
-         * @description @return ?array{'countSended': int, 'countDuplicated': int, 'countAdded': int, 'countChanged': int}
+         * @description
          *
          *     @throws Exception
          */
-        "Urls_2.Methods.Import.Add.Exec": (string | number)[] | null;
+        "Urls_2.Methods.Import.Add.Exec": Record<string, never>[] | null;
     };
     responses: never;
     parameters: never;

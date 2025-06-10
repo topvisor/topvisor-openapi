@@ -34,7 +34,7 @@ export interface components {
             /** Название отдела */
             department: string;
             /** Привелегии */
-            posts: (string | number)[];
+            posts: Record<string, never>[];
         };
         "Admin_2.Methods.Staff.Add.Exec": number | null;
     };

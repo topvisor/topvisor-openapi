@@ -40,14 +40,7 @@
             "Admin_2.Methods.Analytics.Tickets.ChartByTags.Get.Exec": {
                 "type": "array",
                 "items": {
-                    "oneOf": [
-                        {
-                            "type": "string"
-                        },
-                        {
-                            "type": "number"
-                        }
-                    ]
+                    "type": "any"
                 }
             }
         }

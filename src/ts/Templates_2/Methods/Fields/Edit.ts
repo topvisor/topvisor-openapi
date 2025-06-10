@@ -15,7 +15,7 @@ export interface components {
             /** Id целевого проекта */
             target_id?: number | null;
             /** Свойства шаблона */
-            properties?: (string | number)[];
+            properties?: Record<string, never>[];
             fields?: import('../../../TV/API/Params/FieldsTrait.ts').components['schemas']['TV.API.Params.FieldsTrait']['fields'];
         };
         /** @throws Exception */

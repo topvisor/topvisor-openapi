@@ -13,7 +13,7 @@ export interface components {
             pass?: string | null;
         };
         /**
-         * @return int - 0: произошла ошибка, 1: email успешно привязан, 2: требуется ввести пароль, 3: отправлен запрос на подтверждение
+         * - 0: произошла ошибка, 1: email успешно привязан, 2: требуется ввести пароль, 3: отправлен запрос на подтверждение
          * @description @throws Exception
          */
         "Users_2.Methods.Join.Email.Add.Exec": number;

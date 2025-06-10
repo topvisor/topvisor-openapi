@@ -44,8 +44,10 @@ export interface components {
             filters: import('../../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['filters'];
             id?: import('../../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['id'];
         };
-        /** @return object{projectIds: int[]} Список id проектов, отрпавленных на проверку */
-        "Positions_2.Methods.Checker.Go.Edit.Exec": unknown;
+        /** Список id проектов, отрпавленных на проверку */
+        "Positions_2.Methods.Checker.Go.Edit.Exec": {
+            projectIds: number[];
+        };
     };
     responses: never;
     parameters: never;

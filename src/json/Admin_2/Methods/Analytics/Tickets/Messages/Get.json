@@ -14,14 +14,7 @@
                         "title": "Поля\n\n- date\n- count_messages\n- count_tickets\n- count_messages_user:%userId%\n- percent_messages_user:%userId%\n- vacations_by_user_id",
                         "type": "array",
                         "items": {
-                            "oneOf": [
-                                {
-                                    "type": "string"
-                                },
-                                {
-                                    "type": "number"
-                                }
-                            ]
+                            "type": "any"
                         }
                     },
                     "period": {
@@ -56,14 +49,7 @@
                 "nullable": true,
                 "type": "array",
                 "items": {
-                    "oneOf": [
-                        {
-                            "type": "string"
-                        },
-                        {
-                            "type": "number"
-                        }
-                    ]
+                    "type": "any"
                 }
             }
         }

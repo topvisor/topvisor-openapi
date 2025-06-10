@@ -15,7 +15,7 @@ export interface components {
              *       1
              *     ]
              */
-            tags: (string | number)[];
+            tags: Record<string, never>[];
             /** ID проекта */
             id: number;
         };

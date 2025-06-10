@@ -9,7 +9,7 @@ export interface components {
     schemas: {
         /** Изменение сортировки проектов */
         "Projects_2.Methods.Projects.Sort.Edit": {
-            orders: (string | number)[];
+            orders: Record<string, never>[];
             filters: import('../../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['filters'];
             id?: import('../../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['id'];
         };

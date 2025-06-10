@@ -9,16 +9,16 @@ export interface components {
     schemas: {
         "Models.Audit.Images": {
             "COUNT(*)"?: any;
-            "HTTP_CODES_HUNDREDS()"?: (string | number)[] | null;
+            "HTTP_CODES_HUNDREDS()"?: Record<string, never>[] | null;
             check_id?: any;
             url_id?: any;
             url_ids?: any;
             url?: any;
             alt?: any;
             time_parse?: any;
-            http_codes?: (string | number)[] | null;
+            http_codes?: Record<string, never>[] | null;
             last_http_code?: any;
-            redirects?: (string | number)[] | null;
+            redirects?: Record<string, never>[] | null;
             locations?: any;
             count?: any;
             ttfb?: any;

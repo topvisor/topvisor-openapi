@@ -6600,11 +6600,8 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /**
-     * Получение списка страниц по буквам для модуля SEO словарь
-     *     Результат функции кешируется
-     * @description @return array<string, array{url: string, h1: string}> - массив с ключом "Буква" и значением массив страниц Pages
-     */
+    /** Получение списка страниц по буквам для модуля SEO словарь
+     *     Результат функции кешируется */
     "/get/content_2/journal/dictionary/articlesByLetter/": {
         parameters: {
             query?: never;
@@ -6621,10 +6618,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /**
-     * Получение стаьи для "Слово дня" в модуле SEO словарь
-     * @description @return (array<string, array{url: string, menu_name: string, description: string, count_views: integer}> | null)
-     */
+    /** Получение стаьи для "Слово дня" в модуле SEO словарь */
     "/get/content_2/journal/dictionary/wordOfday/": {
         parameters: {
             query?: never;
@@ -7014,7 +7008,6 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        /** Id вставленного комментария */
                         result: import('./Comments_2/Methods/Add.ts').components['schemas']['Comments_2.Methods.Add.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
@@ -7119,31 +7112,6 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        /** Возможные парамеры $config:
-                         *
-                         *     Общие:
-                         *        - user_id
-                         *        - create
-                         *        - title
-                         *        - description
-                         *        - html
-                         *        - menu_name
-                         *        - order
-                         *        - image
-                         *        - og_title
-                         *        - og_description
-                         *        - og_image
-                         *        - array tags
-                         *        - enum(ACTIVE,DEV,DEFER,DEL) state, если установлен DEV - статья не будет отображаться в меню и поиске на сайте
-                         *
-                         *     Для справки:
-                         *        - apiFullMethodName
-                         *        - apiRequestParams - массив
-                         *
-                         *     Для журнала:
-                         *        - count_views
-                         *        - count_unique_views
-                         *        - count_likes */
                         result: import('./Content_2/Methods/Get.ts').components['schemas']['Content_2.Methods.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
@@ -7274,13 +7242,6 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        /** Непосредственный вызов API функции
-                         *
-                         *     Запрещено делать публичной, это приведет к поломке preCall()
-                         *
-                         *     В описании к функции отвечать на вопрос: `Что является результатом запроса?` Например: `Список пользователей`
-                         *
-                         *     Не менять `protected`, проверка проводится при генерации схем в `TV\API\Objects\ClassAPIMethodInfo` */
                         result: import('./Schedule_2/Methods/AbstractRegular.ts').components['schemas']['Schedule_2.Methods.AbstractRegular.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
@@ -7307,7 +7268,6 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        /** @throws Exception */
                         result: import('./Schedule_2/Methods/Del.ts').components['schemas']['Schedule_2.Methods.Del.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
@@ -7334,7 +7294,6 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        /** @throws Exception */
                         result: import('./Schedule_2/Methods/Edit.ts').components['schemas']['Schedule_2.Methods.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
@@ -7361,7 +7320,6 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        /** @throws Exception */
                         result: import('./Schedule_2/Methods/Get.ts').components['schemas']['Schedule_2.Methods.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
@@ -7440,7 +7398,6 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        /** @throws Exception */
                         result: import('./Templates_2/Methods/Add.ts').components['schemas']['Templates_2.Methods.Add.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
@@ -7467,7 +7424,6 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        /** @throws Exception */
                         result: import('./Templates_2/Methods/Del.ts').components['schemas']['Templates_2.Methods.Del.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
@@ -7494,7 +7450,6 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        /** @throws Exception */
                         result: import('./Templates_2/Methods/Edit.ts').components['schemas']['Templates_2.Methods.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
@@ -7521,7 +7476,6 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        /** @throws Exception */
                         result: import('./Templates_2/Methods/Get.ts').components['schemas']['Templates_2.Methods.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
@@ -7600,7 +7554,6 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        /** Список urls проекта */
                         result: import('./Urls_2/Methods/Get.ts').components['schemas']['Urls_2.Methods.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: import('./Models/Urls.ts').components['schemas']['Models.Urls'];
@@ -7702,13 +7655,6 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        /** Непосредственный вызов API функции
-                         *
-                         *     Запрещено делать публичной, это приведет к поломке preCall()
-                         *
-                         *     В описании к функции отвечать на вопрос: `Что является результатом запроса?` Например: `Список пользователей`
-                         *
-                         *     Не менять `protected`, проверка проводится при генерации схем в `TV\API\Objects\ClassAPIMethodInfo` */
                         result: import('./Admin_2/Methods/Actions/AbstractRegular.ts').components['schemas']['Admin_2.Methods.Actions.AbstractRegular.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
@@ -7758,7 +7704,6 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        /** @return array{lang: string, category: string, name: string, value: string} */
                         result: import('./Admin_2/Methods/I18n/Get.ts').components['schemas']['Admin_2.Methods.I18n.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
@@ -8175,7 +8120,6 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        /** Количество настроенных URL */
                         result: import('./Audit_2/Methods/CountUrls/Get.ts').components['schemas']['Audit_2.Methods.CountUrls.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
@@ -8202,7 +8146,6 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        /** Список ссылок с данными по ним */
                         result: import('./Audit_2/Methods/Indexing/Get.ts').components['schemas']['Audit_2.Methods.Indexing.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: import('./Models/Urls.ts').components['schemas']['Models.Urls'];
@@ -8229,7 +8172,6 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        /** Количество применных настроек */
                         result: import('./Audit_2/Methods/Settings/Edit.ts').components['schemas']['Audit_2.Methods.Settings.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
@@ -8256,7 +8198,6 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        /** Настройки аудита */
                         result: import('./Audit_2/Methods/Settings/Get.ts').components['schemas']['Audit_2.Methods.Settings.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
@@ -8283,7 +8224,6 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        /** Генерируемый на основе urls, список результатов проверок радара */
                         result: import('./Audit_2/Methods/Watcher/Get.ts').components['schemas']['Audit_2.Methods.Watcher.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
@@ -8362,7 +8302,6 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        /** @return array{balance_all: float, balance_personal: float, balance_bonus: float, balance_tariff: float, tariff: array, subscription?: Bank_2\Objects\Subscriptions\Subscription, subscription_name?: Bank_2\Objects\Subscriptions\Subscription} */
                         result: import('./Bank_2/Methods/Info/Get.ts').components['schemas']['Bank_2.Methods.Info.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
@@ -8519,7 +8458,6 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        /** @throws Exception */
                         result: import('./Broker_2/Methods/Ads/Edit.ts').components['schemas']['Broker_2.Methods.Ads.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
@@ -8546,7 +8484,6 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        /** @throws Exception */
                         result: import('./Broker_2/Methods/Ads/Get.ts').components['schemas']['Broker_2.Methods.Ads.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: import('./Models/Broker/Ads.ts').components['schemas']['Models.Broker.Ads'];
@@ -8573,7 +8510,6 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        /** @throws Exception */
                         result: import('./Broker_2/Methods/Campaigns/Add.ts').components['schemas']['Broker_2.Methods.Campaigns.Add.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: import('./Models/Broker/Campaigns.ts').components['schemas']['Models.Broker.Campaigns'];
@@ -8600,7 +8536,6 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        /** @throws Exception */
                         result: import('./Broker_2/Methods/Campaigns/Del.ts').components['schemas']['Broker_2.Methods.Campaigns.Del.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: import('./Models/Broker/Campaigns.ts').components['schemas']['Models.Broker.Campaigns'];
@@ -8627,7 +8562,6 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        /** @throws Exception */
                         result: import('./Broker_2/Methods/Campaigns/Edit.ts').components['schemas']['Broker_2.Methods.Campaigns.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: import('./Models/Broker/Campaigns.ts').components['schemas']['Models.Broker.Campaigns'];
@@ -8654,7 +8588,6 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        /** @throws Exception */
                         result: import('./Broker_2/Methods/Campaigns/Get.ts').components['schemas']['Broker_2.Methods.Campaigns.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: import('./Models/Broker/Campaigns.ts').components['schemas']['Models.Broker.Campaigns'];
@@ -8681,7 +8614,6 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        /** @throws Exception */
                         result: import('./Broker_2/Methods/Groups/Add.ts').components['schemas']['Broker_2.Methods.Groups.Add.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
@@ -8708,7 +8640,6 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        /** @throws Exception */
                         result: import('./Broker_2/Methods/Groups/Get.ts').components['schemas']['Broker_2.Methods.Groups.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: import('./Models/Broker/Groups.ts').components['schemas']['Models.Broker.Groups'];
@@ -8735,7 +8666,6 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        /** @throws Exception */
                         result: import('./Broker_2/Methods/Keywords/Del.ts').components['schemas']['Broker_2.Methods.Keywords.Del.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
@@ -8762,7 +8692,6 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        /** @throws Exception */
                         result: import('./Broker_2/Methods/Keywords/Edit.ts').components['schemas']['Broker_2.Methods.Keywords.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: import('./Models/Broker/Keywords.ts').components['schemas']['Models.Broker.Keywords'];
@@ -8789,7 +8718,6 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        /** @throws Exception */
                         result: import('./Broker_2/Methods/Keywords/Get.ts').components['schemas']['Broker_2.Methods.Keywords.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: import('./Models/Broker/Keywords.ts').components['schemas']['Models.Broker.Keywords'];
@@ -8816,7 +8744,6 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        /** @throws Exception */
                         result: import('./Broker_2/Methods/Log/Get.ts').components['schemas']['Broker_2.Methods.Log.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: import('./Models/Broker/Log.ts').components['schemas']['Models.Broker.Log'];
@@ -9025,13 +8952,6 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        /** Непосредственный вызов API функции
-                         *
-                         *     Запрещено делать публичной, это приведет к поломке preCall()
-                         *
-                         *     В описании к функции отвечать на вопрос: `Что является результатом запроса?` Например: `Список пользователей`
-                         *
-                         *     Не менять `protected`, проверка проводится при генерации схем в `TV\API\Objects\ClassAPIMethodInfo` */
                         result: import('./Content_2/Methods/Pages/AbstractPage.ts').components['schemas']['Content_2.Methods.Pages.AbstractPage.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: import('./Models/Pages.ts').components['schemas']['Models.Pages'];
@@ -9058,7 +8978,6 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        /** @throws Exception */
                         result: import('./Content_2/Methods/Pages/Add.ts').components['schemas']['Content_2.Methods.Pages.Add.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: import('./Models/Pages.ts').components['schemas']['Models.Pages'];
@@ -9085,7 +9004,6 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        /** @throws Exception */
                         result: import('./Content_2/Methods/Pages/Del.ts').components['schemas']['Content_2.Methods.Pages.Del.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: import('./Models/Pages.ts').components['schemas']['Models.Pages'];
@@ -9112,7 +9030,6 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        /** @throws Exception */
                         result: import('./Content_2/Methods/Pages/Edit.ts').components['schemas']['Content_2.Methods.Pages.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: import('./Models/Pages.ts').components['schemas']['Models.Pages'];
@@ -9139,7 +9056,6 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        /** @throws Exception */
                         result: import('./Content_2/Methods/Pages/Get.ts').components['schemas']['Content_2.Methods.Pages.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: import('./Models/Pages.ts').components['schemas']['Models.Pages'];
@@ -9166,13 +9082,6 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        /** Непосредственный вызов API функции
-                         *
-                         *     Запрещено делать публичной, это приведет к поломке preCall()
-                         *
-                         *     В описании к функции отвечать на вопрос: `Что является результатом запроса?` Например: `Список пользователей`
-                         *
-                         *     Не менять `protected`, проверка проводится при генерации схем в `TV\API\Objects\ClassAPIMethodInfo` */
                         result: import('./Content_2/Methods/Redirects/AbstractRegular.ts').components['schemas']['Content_2.Methods.Redirects.AbstractRegular.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
@@ -9199,7 +9108,6 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        /** @throws Exception */
                         result: import('./Content_2/Methods/Redirects/Add.ts').components['schemas']['Content_2.Methods.Redirects.Add.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
@@ -9226,7 +9134,6 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        /** @throws Exception */
                         result: import('./Content_2/Methods/Redirects/Del.ts').components['schemas']['Content_2.Methods.Redirects.Del.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
@@ -9253,7 +9160,6 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        /** @throws Exception */
                         result: import('./Content_2/Methods/Redirects/Edit.ts').components['schemas']['Content_2.Methods.Redirects.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
@@ -9306,7 +9212,6 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        /** @throws Exception */
                         result: import('./Content_2/Methods/Rss/Get.ts').components['schemas']['Content_2.Methods.Rss.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: import('./Models/Pages.ts').components['schemas']['Models.Pages'];
@@ -9333,7 +9238,6 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        /** @throws Exception */
                         result: import('./Content_2/Methods/Search/Get.ts').components['schemas']['Content_2.Methods.Search.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
@@ -9360,7 +9264,6 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        /** @throws Exception */
                         result: import('./Content_2/Methods/Sitemap/Get.ts').components['schemas']['Content_2.Methods.Sitemap.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: import('./Models/Pages.ts').components['schemas']['Models.Pages'];
@@ -9491,7 +9394,6 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        /** Список задач cron */
                         result: import('./Cron_2/Methods/Commands/Get.ts').components['schemas']['Cron_2.Methods.Commands.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: import('./Models/CronCommands.ts').components['schemas']['Models.CronCommands'];
@@ -9518,7 +9420,6 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        /** Список имен сервисов */
                         result: import('./Cron_2/Methods/Get.ts').components['schemas']['Cron_2.Methods.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: import('./Models/CronCommands.ts').components['schemas']['Models.CronCommands'];
@@ -9545,7 +9446,6 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        /** @type array<string, array<string, mixed>> */
                         result: import('./Example_2/Methods/Array/Get.ts').components['schemas']['Example_2.Methods.Array.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
@@ -9624,7 +9524,6 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        /** Ассоциативный массив с результирующими переданными параетрами и результатом genSet() */
                         result: import('./Example_2/Methods/Enum/Get.ts').components['schemas']['Example_2.Methods.Enum.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
@@ -9651,7 +9550,6 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        /** Ассоциативный массив с результирующими переданными параетрами и результатом genSet() */
                         result: import('./Example_2/Methods/Object/Get.ts').components['schemas']['Example_2.Methods.Object.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
@@ -9678,13 +9576,6 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        /** Тест phpDoc
-                         *
-                         *     TODO: Удалить после настройки openapi
-                         *
-                         *     - static
-                         *     - parent
-                         *     - self */
                         result: import('./Example_2/Methods/PhpDoc/Get.ts').components['schemas']['Example_2.Methods.PhpDoc.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
@@ -9737,13 +9628,6 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        /** Непосредственный вызов API функции
-                         *
-                         *     Запрещено делать публичной, это приведет к поломке preCall()
-                         *
-                         *     В описании к функции отвечать на вопрос: `Что является результатом запроса?` Например: `Список пользователей`
-                         *
-                         *     Не менять `protected`, проверка проводится при генерации схем в `TV\API\Objects\ClassAPIMethodInfo` */
                         result: import('./Keywords_2/Methods/Collect/AbstractRegular.ts').components['schemas']['Keywords_2.Methods.Collect.AbstractRegular.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
@@ -9923,7 +9807,6 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        /** @throws Exception */
                         result: import('./Payments_2/Methods/Subscriptions/Edit.ts').components['schemas']['Payments_2.Methods.Subscriptions.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
@@ -10262,7 +10145,6 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        /** @returns ?int id добавленной папки */
                         result: import('./Projects_2/Methods/Folders/Add.ts').components['schemas']['Projects_2.Methods.Folders.Add.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
@@ -10601,7 +10483,6 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        /** @throws Exception */
                         result: import('./Schedule_2/Methods/Settings/Edit.ts').components['schemas']['Schedule_2.Methods.Settings.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
@@ -10654,7 +10535,6 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        /** @throws Exception */
                         result: import('./Sms_2/Methods/CheckPIN/Get.ts').components['schemas']['Sms_2.Methods.CheckPIN.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
@@ -10681,7 +10561,6 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        /** @throws Exception */
                         result: import('./Sms_2/Methods/SendPIN/Get.ts').components['schemas']['Sms_2.Methods.SendPIN.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
@@ -10708,7 +10587,6 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        /** @throws Exception */
                         result: import('./Templates_2/Methods/AvailableFieldsData/Get.ts').components['schemas']['Templates_2.Methods.AvailableFieldsData.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
@@ -10761,7 +10639,6 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        /** @throws Exception */
                         result: import('./Templates_2/Methods/Fields/Edit.ts').components['schemas']['Templates_2.Methods.Fields.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
@@ -10788,7 +10665,6 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        /** @throws Exception */
                         result: import('./Templates_2/Methods/Fields/Get.ts').components['schemas']['Templates_2.Methods.Fields.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
@@ -10919,7 +10795,6 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        /** Id добавленного сообщения */
                         result: import('./Tickets_2/Methods/Messages/Add.ts').components['schemas']['Tickets_2.Methods.Messages.Add.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
@@ -10972,7 +10847,6 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        /** Id тикета */
                         result: import('./Tickets_2/Methods/Tickets/Add.ts').components['schemas']['Tickets_2.Methods.Tickets.Add.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
@@ -11074,9 +10948,6 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        /** @return ?array{'countSended': int, 'countDuplicated': int, 'countAdded': int, 'countChanged': int}
-                         *
-                         *     @throws Exception */
                         result: import('./Urls_2/Methods/Import/Add.ts').components['schemas']['Urls_2.Methods.Import.Add.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
@@ -11857,13 +11728,6 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        /** Непосредственный вызов API функции
-                         *
-                         *     Запрещено делать публичной, это приведет к поломке preCall()
-                         *
-                         *     В описании к функции отвечать на вопрос: `Что является результатом запроса?` Например: `Список пользователей`
-                         *
-                         *     Не менять `protected`, проверка проводится при генерации схем в `TV\API\Objects\ClassAPIMethodInfo` */
                         result: import('./Admin_2/Methods/Analytics/Tickets/AbstractTicketsStats.ts').components['schemas']['Admin_2.Methods.Analytics.Tickets.AbstractTicketsStats.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
@@ -11994,7 +11858,6 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        /** Список пользователей */
                         result: import('./Admin_2/Methods/Slack/Rate/Get.ts').components['schemas']['Admin_2.Methods.Slack.Rate.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
@@ -12223,7 +12086,6 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        /** @throws Exception */
                         result: import('./Admin_2/Methods/Users/Promocodes/Add.ts').components['schemas']['Admin_2.Methods.Users.Promocodes.Add.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: import('./Models/Users/Verif.ts').components['schemas']['Models.Users.Verif'];
@@ -12354,7 +12216,6 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        /** Сводка анализа сайта */
                         result: import('./Audit_2/Methods/Audit/Browse/Get.ts').components['schemas']['Audit_2.Methods.Audit.Browse.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
@@ -12381,7 +12242,6 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        /** Список выполненных (выполняемых) проверок аудита */
                         result: import('./Audit_2/Methods/Audit/Checks/Get.ts').components['schemas']['Audit_2.Methods.Audit.Checks.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: import('./Models/Audit/Checks.ts').components['schemas']['Models.Audit.Checks'];
@@ -12408,7 +12268,6 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        /** Список проверенных css */
                         result: import('./Audit_2/Methods/Audit/Css/Get.ts').components['schemas']['Audit_2.Methods.Audit.Css.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: import('./Models/Audit/Css.ts').components['schemas']['Models.Audit.Css'];
@@ -12459,7 +12318,6 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        /** Список проверенных изображений */
                         result: import('./Audit_2/Methods/Audit/Images/Get.ts').components['schemas']['Audit_2.Methods.Audit.Images.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: import('./Models/Audit/Images.ts').components['schemas']['Models.Audit.Images'];
@@ -12486,7 +12344,6 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        /** Список проверенных js */
                         result: import('./Audit_2/Methods/Audit/Js/Get.ts').components['schemas']['Audit_2.Methods.Audit.Js.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: import('./Models/Audit/Js.ts').components['schemas']['Models.Audit.Js'];
@@ -12513,7 +12370,6 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        /** Список проверенных ссылок */
                         result: import('./Audit_2/Methods/Audit/Links/Get.ts').components['schemas']['Audit_2.Methods.Audit.Links.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: import('./Models/Audit/Links.ts').components['schemas']['Models.Audit.Links'];
@@ -12540,7 +12396,6 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        /** Данные проверенных ресурсов */
                         result: import('./Audit_2/Methods/Audit/Log/Get.ts').components['schemas']['Audit_2.Methods.Audit.Log.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
@@ -12567,7 +12422,6 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        /** Список страниц */
                         result: import('./Audit_2/Methods/Audit/Pages/Get.ts').components['schemas']['Audit_2.Methods.Audit.Pages.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: import('./Models/Audit/Pages.ts').components['schemas']['Models.Audit.Pages'];
@@ -12594,12 +12448,6 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        /** Сводка о выполненном аудите
-                         *
-                         *     Возвращает объект со сводкой по категориям, пример:
-                         *      - `$res['all']['all']['count_checks_success']` - количество пройденных проверок во всех категориях
-                         *      - `$res['pages']['indexing']['count_checks_success']` - количество пройденных проверок в категории Страницы / Индексация
-                         *      - `$res['all']['all']['count_checks_success']` - количество пройденных проверок во всех категориях */
                         result: import('./Audit_2/Methods/Audit/Summary/Get.ts').components['schemas']['Audit_2.Methods.Audit.Summary.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: import('./Models/Audit/Checks.ts').components['schemas']['Models.Audit.Checks'];
@@ -12626,7 +12474,6 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        /** Сводка о выполненном аудите по одной странице */
                         result: import('./Audit_2/Methods/Audit/SummaryPage/Get.ts').components['schemas']['Audit_2.Methods.Audit.SummaryPage.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: import('./Models/Audit/Pages.ts').components['schemas']['Models.Audit.Pages'];
@@ -12653,7 +12500,6 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        /** Результаты индексации */
                         result: import('./Audit_2/Methods/Indexing/Export/Get.ts').components['schemas']['Audit_2.Methods.Indexing.Export.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
@@ -12680,7 +12526,6 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        /** Короткая гостевая ссылка на просмотр позиций */
                         result: import('./Audit_2/Methods/Indexing/Links/Get.ts').components['schemas']['Audit_2.Methods.Indexing.Links.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
@@ -12707,7 +12552,6 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        /** Сводка индексации */
                         result: import('./Audit_2/Methods/Indexing/Summary/Get.ts').components['schemas']['Audit_2.Methods.Indexing.Summary.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
@@ -12734,7 +12578,6 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        /** Отчет по одному URL */
                         result: import('./Audit_2/Methods/Watcher/ByURL/Get.ts').components['schemas']['Audit_2.Methods.Watcher.ByURL.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: import('./Models/Watcher/Results.ts').components['schemas']['Models.Watcher.Results'];
@@ -12761,7 +12604,6 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        /** Список проверок радара */
                         result: import('./Audit_2/Methods/Watcher/Checks/Get.ts').components['schemas']['Audit_2.Methods.Watcher.Checks.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
@@ -12788,7 +12630,6 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        /** Сводка с количеством изменений по каждому типу проверки */
                         result: import('./Audit_2/Methods/Watcher/Summary/Get.ts').components['schemas']['Audit_2.Methods.Watcher.Summary.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
@@ -13040,7 +12881,6 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        /** @return Bank_2\Objects\Subscriptions\Plan[] */
                         result: import('./Bank_2/Methods/Subscriptions/Plans/Get.ts').components['schemas']['Bank_2.Methods.Subscriptions.Plans.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
@@ -13067,7 +12907,6 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        /** @throws Exception */
                         result: import('./Broker_2/Methods/Ads/Status/Edit.ts').components['schemas']['Broker_2.Methods.Ads.Status.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
@@ -13094,7 +12933,6 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        /** @throws Exception */
                         result: import('./Broker_2/Methods/Ads/ToModerate/Edit.ts').components['schemas']['Broker_2.Methods.Ads.ToModerate.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
@@ -13121,7 +12959,6 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        /** @throws Exception */
                         result: import('./Broker_2/Methods/Campaigns/UpdateTargeting/Edit.ts').components['schemas']['Broker_2.Methods.Campaigns.UpdateTargeting.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: import('./Models/Broker/Campaigns.ts').components['schemas']['Models.Broker.Campaigns'];
@@ -13174,7 +13011,6 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        /** @throws Exception */
                         result: import('./Broker_2/Methods/Keywords/Status/Edit.ts').components['schemas']['Broker_2.Methods.Keywords.Status.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
@@ -13225,7 +13061,6 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        /** @throws Exception */
                         result: import('./Broker_2/Methods/Tasks/RateTask/Add.ts').components['schemas']['Broker_2.Methods.Tasks.RateTask.Add.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
@@ -13252,7 +13087,6 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        /** @throws Exception */
                         result: import('./Competitors_2/Methods/Orders/Pay/Edit.ts').components['schemas']['Competitors_2.Methods.Orders.Pay.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
@@ -13409,7 +13243,6 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        /** @throws Exception */
                         result: import('./Content_2/Methods/Journal/Articles/Get.ts').components['schemas']['Content_2.Methods.Journal.Articles.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: import('./Models/Pages.ts').components['schemas']['Models.Pages'];
@@ -13462,7 +13295,6 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        /** @throws Exception */
                         result: import('./Content_2/Methods/Journal/Bookmarks/Get.ts').components['schemas']['Content_2.Methods.Journal.Bookmarks.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: import('./Models/Pages.ts').components['schemas']['Models.Pages'];
@@ -13489,7 +13321,6 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        /** @throws Exception */
                         result: import('./Content_2/Methods/Journal/Course/Get.ts').components['schemas']['Content_2.Methods.Journal.Course.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: import('./Models/Pages.ts').components['schemas']['Models.Pages'];
@@ -13516,7 +13347,6 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        /** @throws Exception */
                         result: import('./Content_2/Methods/Journal/Rubrics/Get.ts').components['schemas']['Content_2.Methods.Journal.Rubrics.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: import('./Models/Pages.ts').components['schemas']['Models.Pages'];
@@ -13621,7 +13451,6 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        /** Массив созданных групп */
                         result: import('./Keywords_2/Methods/Collect/Go/Edit.ts').components['schemas']['Keywords_2.Methods.Collect.Go.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
@@ -13648,7 +13477,6 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        /** @return array{pricesByUsers: array<string, array{price: float, priceOriginal: float, qualifiers: array{region_key: int, searcher_key: (0 | 1 | 5 | 100 | 101 | 102 | 104 | 105 | 106), region_lang?: (string | null), also_searched?: (int | null), depth?: (int | null), hint_depth: (1 | 2 | 3), hint_generators: array<('letter' | 'letter_ru' | 'number' | 'space')>}, comment: string}>} */
                         result: import('./Keywords_2/Methods/Collect/Price/Get.ts').components['schemas']['Keywords_2.Methods.Collect.Price.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
@@ -13701,7 +13529,6 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        /** @throws Exception */
                         result: import('./Keywords_2/Methods/Volumes/Go/Edit.ts').components['schemas']['Keywords_2.Methods.Volumes.Go.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: import('./Models/Keywords.ts').components['schemas']['Models.Keywords'];
@@ -13728,7 +13555,6 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        /** @return object{pricesByUsers: object{int: object{projectsIds: [], price: float, priceOriginal: float}}} */
                         result: import('./Keywords_2/Methods/Volumes/Price/Get.ts').components['schemas']['Keywords_2.Methods.Volumes.Price.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: import('./Models/Keywords.ts').components['schemas']['Models.Keywords'];
@@ -13781,7 +13607,6 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        /** @throws Exception Ошибка во входных данных, внешнем API или БД */
                         result: import('./Payments_2/Methods/Recurrent/Suspend/Edit.ts').components['schemas']['Payments_2.Methods.Recurrent.Suspend.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
@@ -13808,7 +13633,6 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        /** @throws Exception */
                         result: import('./Payments_2/Methods/Subscriptions/Next/Edit.ts').components['schemas']['Payments_2.Methods.Subscriptions.Next.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
@@ -13913,7 +13737,6 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        /** @return object{projectIds: int[]} Список id проектов, отрпавленных на проверку */
                         result: import('./Positions_2/Methods/Checker/Go/Edit.ts').components['schemas']['Positions_2.Methods.Checker.Go.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: import('./Models/Projects.ts').components['schemas']['Models.Projects'];
@@ -13940,7 +13763,6 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        /** @return object{pricesByUsers: object{int: object{projectsIds: [], price: float, priceOriginal: float}}} */
                         result: import('./Positions_2/Methods/Checker/Price/Get.ts').components['schemas']['Positions_2.Methods.Checker.Price.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: import('./Models/Projects.ts').components['schemas']['Models.Projects'];
@@ -14669,7 +14491,6 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        /** @throws Exception */
                         result: import('./Redmine_2/Methods/Users/Groups/Get.ts').components['schemas']['Redmine_2.Methods.Users.Groups.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
@@ -14696,7 +14517,6 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        /** @throws Exception */
                         result: import('./Reports_2/Methods/Positions/SendTest/Edit.ts').components['schemas']['Reports_2.Methods.Positions.SendTest.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
@@ -15113,7 +14933,6 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        /** URL к карте сайта */
                         result: import('./Urls_2/Methods/Import/RecognizeLinkSitemapXml/Get.ts').components['schemas']['Urls_2.Methods.Import.RecognizeLinkSitemapXml.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
@@ -15140,7 +14959,6 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        /** @throws Exception */
                         result: import('./Users_2/Methods/Join/Email/Add.ts').components['schemas']['Users_2.Methods.Join.Email.Add.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
@@ -16152,7 +15970,6 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        /** Данные для построения графика */
                         result: import('./Admin_2/Methods/Users/Informer/Subscriptions/Get.ts').components['schemas']['Admin_2.Methods.Users.Informer.Subscriptions.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
@@ -16179,7 +15996,6 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        /** @return object{projectIds: int[]} Список id проектов, отрпавленных на проверку */
                         result: import('./Audit_2/Methods/Audit/Checker/Go/Edit.ts').components['schemas']['Audit_2.Methods.Audit.Checker.Go.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: import('./Models/Projects.ts').components['schemas']['Models.Projects'];
@@ -16206,7 +16022,6 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        /** @throws Exception */
                         result: import('./Audit_2/Methods/Audit/Checker/Price/Get.ts').components['schemas']['Audit_2.Methods.Audit.Checker.Price.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: import('./Models/Projects.ts').components['schemas']['Models.Projects'];
@@ -16233,7 +16048,6 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        /** Короткая гостевая ссылка на просмотр аудита позиций */
                         result: import('./Audit_2/Methods/Audit/Export/Links/Get.ts').components['schemas']['Audit_2.Methods.Audit.Export.Links.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
@@ -16284,9 +16098,6 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        /** Информацией о текущей ошибке на роботе
-                         *
-                         *     Вернет null, если ошибки на роботе нет */
                         result: import('./Audit_2/Methods/Audit/Log/ActualError/Get.ts').components['schemas']['Audit_2.Methods.Audit.Log.ActualError.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
@@ -16313,7 +16124,6 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        /** Данные для графика */
                         result: import('./Audit_2/Methods/Audit/Log/Chart/Get.ts').components['schemas']['Audit_2.Methods.Audit.Log.Chart.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
@@ -16340,7 +16150,6 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        /** Ответ об успешнности экспорта результатов аудита */
                         result: import('./Audit_2/Methods/Audit/Results/Export/Get.ts').components['schemas']['Audit_2.Methods.Audit.Results.Export.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
@@ -16367,8 +16176,6 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        /** @return array{result: array{page_in_filter: bool, index: int, snippet: string, content: string}}
-                         *     @throws Exception */
                         result: import('./Audit_2/Methods/Audit/Results/Page/Get.ts').components['schemas']['Audit_2.Methods.Audit.Results.Page.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
@@ -16395,7 +16202,6 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        /** @return object{projectIds: int[]} Список id проектов, отрпавленных на проверку */
                         result: import('./Audit_2/Methods/Indexing/Checker/Go/Edit.ts').components['schemas']['Audit_2.Methods.Indexing.Checker.Go.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: import('./Models/Projects.ts').components['schemas']['Models.Projects'];
@@ -16422,7 +16228,6 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        /** @throws Exception */
                         result: import('./Audit_2/Methods/Indexing/Checker/Price/Get.ts').components['schemas']['Audit_2.Methods.Indexing.Checker.Price.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: import('./Models/Projects.ts').components['schemas']['Models.Projects'];
@@ -16449,7 +16254,6 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        /** Короткая гостевая ссылка на просмотр индексации */
                         result: import('./Audit_2/Methods/Indexing/Export/Links/Get.ts').components['schemas']['Audit_2.Methods.Indexing.Export.Links.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
@@ -16500,7 +16304,6 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        /** Сводки индексации */
                         result: import('./Audit_2/Methods/Indexing/Summary/Chart/Get.ts').components['schemas']['Audit_2.Methods.Indexing.Summary.Chart.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
@@ -16527,7 +16330,6 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        /** @return object{projectIds: int[]} Список id проектов, отрпавленных на проверку */
                         result: import('./Audit_2/Methods/Sitemap/Checker/Go/Edit.ts').components['schemas']['Audit_2.Methods.Sitemap.Checker.Go.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: import('./Models/Projects.ts').components['schemas']['Models.Projects'];
@@ -16554,7 +16356,6 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        /** @throws Exception */
                         result: import('./Audit_2/Methods/Sitemap/Checker/Price/Get.ts').components['schemas']['Audit_2.Methods.Sitemap.Checker.Price.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: import('./Models/Projects.ts').components['schemas']['Models.Projects'];
@@ -16581,7 +16382,6 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        /** @return object{projectIds: int[]} Список id проектов, отрпавленных на проверку */
                         result: import('./Audit_2/Methods/Watcher/Checker/Go/Edit.ts').components['schemas']['Audit_2.Methods.Watcher.Checker.Go.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: import('./Models/Projects.ts').components['schemas']['Models.Projects'];
@@ -16608,7 +16408,6 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        /** @throws Exception */
                         result: import('./Audit_2/Methods/Watcher/Checker/Price/Get.ts').components['schemas']['Audit_2.Methods.Watcher.Checker.Price.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: import('./Models/Projects.ts').components['schemas']['Models.Projects'];
@@ -16635,7 +16434,6 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        /** Короткая ссылка гостевого доступа для просмотра радара */
                         result: import('./Audit_2/Methods/Watcher/Export/Links/Get.ts').components['schemas']['Audit_2.Methods.Watcher.Export.Links.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
@@ -16662,7 +16460,6 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        /** Сводки с количеством изменений по каждому типу проверки */
                         result: import('./Audit_2/Methods/Watcher/Summary/Chart/Get.ts').components['schemas']['Audit_2.Methods.Watcher.Summary.Chart.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
@@ -16689,7 +16486,6 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        /** @return array<string, array<string, int>> */
                         result: import('./Content_2/Methods/Apometr/Text/Calendar/Get.ts').components['schemas']['Content_2.Methods.Apometr.Text.Calendar.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
@@ -16768,7 +16564,6 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        /** @throws Exception */
                         result: import('./Content_2/Methods/Journal/Course/Certificates/Add.ts').components['schemas']['Content_2.Methods.Journal.Course.Certificates.Add.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: import('./Models/Pages.ts').components['schemas']['Models.Pages'];
@@ -16951,7 +16746,6 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        /** @return array{pricesByUsers: array<string, array{price: float, priceOriginal: float, qualifiers: array{region_key: int, searcher_key: (0 | 1 | 5 | 100 | 101 | 102 | 104 | 105 | 106), region_lang?: (string | null), also_searched?: (int | null), depth?: (int | null), hint_depth: (1 | 2 | 3), hint_generators: array<('letter' | 'letter_ru' | 'number' | 'space')>}, comment: string}>} */
                         result: import('./Keywords_2/Methods/Collect/Ext/Price/Get.ts').components['schemas']['Keywords_2.Methods.Collect.Ext.Price.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;

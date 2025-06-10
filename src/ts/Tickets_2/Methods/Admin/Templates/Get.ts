@@ -12,7 +12,7 @@ export interface components {
             /** Текст для поиска */
             search?: string | null;
         };
-        "Tickets_2.Methods.Admin.Templates.Get.Exec": (string | number)[] | null;
+        "Tickets_2.Methods.Admin.Templates.Get.Exec": Record<string, never>[] | null;
     };
     responses: never;
     parameters: never;

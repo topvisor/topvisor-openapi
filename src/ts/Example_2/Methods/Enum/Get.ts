@@ -14,7 +14,7 @@ export interface components {
             letter: import('../../Types/Letter.ts').components['schemas']['Example_2.Types.Letter'];
         };
         /** Ассоциативный массив с результирующими переданными параетрами и результатом genSet() */
-        "Example_2.Methods.Enum.Get.Exec": (string | number)[];
+        "Example_2.Methods.Enum.Get.Exec": Record<string, never>[];
     };
     responses: never;
     parameters: never;

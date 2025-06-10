@@ -51,7 +51,7 @@ export interface components {
             /** Комментарий */
             comment?: string;
             /** Элементы платежа */
-            items?: (string | number)[];
+            items?: Record<string, never>[];
             /** ID карты в системе оплаты для привязки */
             card_id?: string;
             /** Пробрасываемые данные в redirectToPay() для FinishAuthorize Tinkoff для Apple Pay и Google Pay */

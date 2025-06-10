@@ -16,7 +16,7 @@ export interface components {
             check_id: import('../../../Params/Audit/CheckIdTrait.ts').components['schemas']['Audit_2.Params.Audit.CheckIdTrait']['check_id'];
         };
         /** Сводка анализа сайта */
-        "Audit_2.Methods.Audit.Browse.Get.Exec": (string | number)[] | null;
+        "Audit_2.Methods.Audit.Browse.Get.Exec": Record<string, never>[] | null;
     };
     responses: never;
     parameters: never;

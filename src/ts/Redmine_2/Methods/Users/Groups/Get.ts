@@ -10,7 +10,7 @@ export interface components {
         /** Получить список групп с пользователями */
         "Redmine_2.Methods.Users.Groups.Get": Record<string, never>;
         /** @throws Exception */
-        "Redmine_2.Methods.Users.Groups.Get.Exec": (string | number)[];
+        "Redmine_2.Methods.Users.Groups.Get.Exec": Record<string, never>[];
     };
     responses: never;
     parameters: never;

@@ -18,14 +18,7 @@
                         "title": "Ассоциативный массив с информацией, связанной с выполняемым дейсвтием",
                         "type": "array",
                         "items": {
-                            "oneOf": [
-                                {
-                                    "type": "string"
-                                },
-                                {
-                                    "type": "number"
-                                }
-                            ]
+                            "type": "any"
                         }
                     },
                     "executionTime": {
@@ -36,14 +29,7 @@
                         "title": "Информация о затраченных ресурсавах при выполнении дейсвтия",
                         "type": "array",
                         "items": {
-                            "oneOf": [
-                                {
-                                    "type": "string"
-                                },
-                                {
-                                    "type": "number"
-                                }
-                            ]
+                            "type": "any"
                         }
                     }
                 },

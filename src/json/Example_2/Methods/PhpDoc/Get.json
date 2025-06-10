@@ -42,10 +42,54 @@
                 "description": "@todo : Удалить после настройки openapi"
             },
             "Example_2.Methods.PhpDoc.Get.Exec": {
-                "title": "Тест phpDoc\n\nTODO: Удалить после настройки openapi\n\n- static\n- parent\n- self",
-                "allOf": [
+                "title": "Test phpDoc",
+                "anyOf": [
                     {
-                        "$ref": "../../../Example_2/Objects/User.json#/components/schemas/Example_2.Objects.User"
+                        "type": "array",
+                        "items": {
+                            "anyOf": [
+                                {
+                                    "type": "integer",
+                                    "enum": [
+                                        "1"
+                                    ]
+                                },
+                                {
+                                    "type": "integer",
+                                    "enum": [
+                                        "2"
+                                    ]
+                                },
+                                {
+                                    "type": "array",
+                                    "items": {
+                                        "$ref": "../../../Example_2/Objects/User.json#/components/schemas/Example_2.Objects.User"
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "type": "object",
+                        "properties": {
+                            "name": {
+                                "type": "array",
+                                "items": {
+                                    "type": "object",
+                                    "properties": {
+                                        "a": {
+                                            "$ref": "../../../Example_2/Objects/User.json#/components/schemas/Example_2.Objects.User"
+                                        }
+                                    },
+                                    "required": [
+                                        "a"
+                                    ]
+                                }
+                            }
+                        },
+                        "required": [
+                            "name"
+                        ]
                     }
                 ]
             }

@@ -17,7 +17,7 @@ export interface components {
              */
             direction: import('./FieldDirection.ts').components['schemas']['FieldDirection'];
             /** Список значений поля, для ручной сортировки */
-            orderValues: (string | number)[];
+            orderValues: Record<string, never>[];
             /** Оператор сравнения */
             operator: import('./FieldOperator.ts').components['schemas']['FieldOperator'];
             /** Значения для сравенния
@@ -25,7 +25,7 @@ export interface components {
              *     В зависимости от типа условия оно может иметь разное количество значений
              *
              *     Обычно оно имеет только одно значение */
-            values: (string | number)[];
+            values: Record<string, never>[];
         };
     };
     responses: never;

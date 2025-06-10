@@ -13,10 +13,10 @@ export interface components {
             campaign_tv_id: number;
         };
         /**
-         * @return (array | int) выводит int, если функция провайдера не определена
+         * выводит int, если функция провайдера не определена
          * @description @throws Exception
          */
-        "Broker_2.Methods.Ads.ToModerate.Edit.Exec": unknown;
+        "Broker_2.Methods.Ads.ToModerate.Edit.Exec": (Record<string, never>[] | number) | null;
     };
     responses: never;
     parameters: never;

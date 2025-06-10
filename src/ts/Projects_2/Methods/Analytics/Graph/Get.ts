@@ -14,11 +14,11 @@ export interface components {
             /** Номер метрики */
             axe: import('../../../Types/Analytics/Axe.ts').components['schemas']['Projects_2.Types.Analytics.Axe'];
             /** Данные графика */
-            data: (string | number)[];
+            data: Record<string, never>[];
             /** Сравнение метрики */
             compare_axe?: number | null;
         };
-        "Projects_2.Methods.Analytics.Graph.Get.Exec": (string | number)[] | null;
+        "Projects_2.Methods.Analytics.Graph.Get.Exec": Record<string, never>[] | null;
     };
     responses: never;
     parameters: never;

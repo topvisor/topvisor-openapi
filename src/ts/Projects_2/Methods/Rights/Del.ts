@@ -14,7 +14,7 @@ export interface components {
             /** ID проектов
              *
              *     Вместо project_ids можно укзывать project_id */
-            projects_ids?: (string | number)[] | null;
+            projects_ids?: Record<string, never>[] | null;
             /** ID проекта
              *
              *     Вместо project_id можно укзывать projects_ids */

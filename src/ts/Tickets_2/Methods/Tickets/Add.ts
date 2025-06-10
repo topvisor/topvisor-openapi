@@ -16,7 +16,7 @@ export interface components {
             /** Язык тикета, нужен для подгрузки правильного языка в ответных письмах через почту */
             lang?: import('../../../TV/API/Types/Lang.ts').components['schemas']['TV.API.Types.Lang'] | null;
             /** Данные среды пользователя */
-            user_data?: (string | number)[] | null;
+            user_data?: Record<string, never>[] | null;
             /** URL страницы, с которой отправлен тикет
              *
              *     Не используется, если указан user_data */

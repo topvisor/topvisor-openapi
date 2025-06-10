@@ -38,21 +38,13 @@
                     "filters",
                     "offset"
                 ],
-                "title": "Получение стаьи для \"Слово дня\" в модуле SEO словарь",
-                "description": "@return (array<string, array{url: string, menu_name: string, description: string, count_views: integer}> | null)"
+                "title": "Получение стаьи для \"Слово дня\" в модуле SEO словарь"
             },
             "Content_2.Methods.Journal.Dictionary.WordOfday.Get.Exec": {
                 "nullable": true,
                 "type": "array",
                 "items": {
-                    "oneOf": [
-                        {
-                            "type": "string"
-                        },
-                        {
-                            "type": "number"
-                        }
-                    ]
+                    "type": "any"
                 }
             }
         }

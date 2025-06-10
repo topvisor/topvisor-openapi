@@ -11,7 +11,7 @@
                 "type": "object",
                 "properties": {
                     "code": {
-                        "title": "Код ошибки\n\nКод ошибки 0 - deprecated",
+                        "title": "Код ошибки\r\n\r\nКод ошибки 0 - deprecated",
                         "type": "integer"
                     },
                     "string": {

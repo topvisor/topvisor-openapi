@@ -21,9 +21,20 @@
                 "title": "Отправка объявления на модерацию"
             },
             "Broker_2.Methods.Ads.ToModerate.Edit.Exec": {
-                "title": "@return (array | int) выводит int, если функция провайдера не определена",
+                "title": "выводит int, если функция провайдера не определена",
                 "description": "@throws Exception",
-                "nullable": true
+                "nullable": true,
+                "anyOf": [
+                    {
+                        "type": "array",
+                        "items": {
+                            "type": "any"
+                        }
+                    },
+                    {
+                        "type": "integer"
+                    }
+                ]
             }
         }
     }

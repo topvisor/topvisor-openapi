@@ -270,7 +270,6 @@ paths:
             model:
               schema:
                 $ref: '#/components/schemas/Models.Annotations'
-                description: Only for typescript, does not contain real data
   /get/app_2/:
     post:
       operationId: GetApp2
@@ -315,7 +314,6 @@ paths:
                         properties:
                           result:
                             $ref: '#/components/schemas/Comments_2.Methods.Add.Exec'
-                            title: Id вставленного комментария
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
@@ -428,7 +426,6 @@ paths:
             model:
               schema:
                 $ref: '#/components/schemas/Models.Comments'
-                description: Only for typescript, does not contain real data
   /get/content_2/:
     post:
       operationId: GetContent2
@@ -453,32 +450,6 @@ paths:
                         properties:
                           result:
                             $ref: '#/components/schemas/Content_2.Methods.Get.Exec'
-                            title: |-
-                              Возможные парамеры $config:
-
-                              Общие:
-                                 - user_id
-                                 - create
-                                 - title
-                                 - description
-                                 - html
-                                 - menu_name
-                                 - order
-                                 - image
-                                 - og_title
-                                 - og_description
-                                 - og_image
-                                 - array tags
-                                 - enum(ACTIVE,DEV,DEFER,DEL) state, если установлен DEV - статья не будет отображаться в меню и поиске на сайте
-
-                              Для справки:
-                                 - apiFullMethodName
-                                 - apiRequestParams - массив
-
-                              Для журнала:
-                                 - count_views
-                                 - count_unique_views
-                                 - count_likes
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
@@ -558,7 +529,6 @@ paths:
             model:
               schema:
                 $ref: '#/components/schemas/Models.Payments'
-                description: Only for typescript, does not contain real data
   /get/qr_2/:
     post:
       operationId: GetQr2
@@ -647,14 +617,6 @@ paths:
                         properties:
                           result:
                             $ref: '#/components/schemas/Schedule_2.Methods.AbstractRegular.Exec'
-                            title: |-
-                              Непосредственный вызов API функции
-
-                              Запрещено делать публичной, это приведет к поломке preCall()
-
-                              В описании к функции отвечать на вопрос: `Что является результатом запроса?` Например: `Список пользователей`
-
-                              Не менять `protected`, проверка проводится при генерации схем в `TV\API\Objects\ClassAPIMethodInfo`
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
@@ -685,7 +647,6 @@ paths:
                         properties:
                           result:
                             $ref: '#/components/schemas/Schedule_2.Methods.Del.Exec'
-                            title: '@throws Exception'
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
@@ -717,7 +678,6 @@ paths:
                         properties:
                           result:
                             $ref: '#/components/schemas/Schedule_2.Methods.Edit.Exec'
-                            title: '@throws Exception'
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
@@ -749,7 +709,6 @@ paths:
                         properties:
                           result:
                             $ref: '#/components/schemas/Schedule_2.Methods.Get.Exec'
-                            title: '@throws Exception'
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
@@ -843,7 +802,6 @@ paths:
                         properties:
                           result:
                             $ref: '#/components/schemas/Templates_2.Methods.Add.Exec'
-                            title: '@throws Exception'
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
@@ -875,7 +833,6 @@ paths:
                         properties:
                           result:
                             $ref: '#/components/schemas/Templates_2.Methods.Del.Exec'
-                            title: '@throws Exception'
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
@@ -907,7 +864,6 @@ paths:
                         properties:
                           result:
                             $ref: '#/components/schemas/Templates_2.Methods.Edit.Exec'
-                            title: '@throws Exception'
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
@@ -939,7 +895,6 @@ paths:
                         properties:
                           result:
                             $ref: '#/components/schemas/Templates_2.Methods.Get.Exec'
-                            title: '@throws Exception'
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
@@ -978,7 +933,6 @@ paths:
             model:
               schema:
                 $ref: '#/components/schemas/Models.Urls'
-                description: Only for typescript, does not contain real data
   /edit/urls_2/:
     post:
       operationId: EditUrls2
@@ -1010,7 +964,6 @@ paths:
             model:
               schema:
                 $ref: '#/components/schemas/Models.Urls'
-                description: Only for typescript, does not contain real data
   /get/urls_2/:
     post:
       operationId: GetUrls2
@@ -1035,7 +988,6 @@ paths:
                         properties:
                           result:
                             $ref: '#/components/schemas/Urls_2.Methods.Get.Exec'
-                            title: Список urls проекта
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
@@ -1044,7 +996,6 @@ paths:
             model:
               schema:
                 $ref: '#/components/schemas/Models.Urls'
-                description: Only for typescript, does not contain real data
   /add/votes_2/:
     post:
       operationId: AddVotes2
@@ -1076,7 +1027,6 @@ paths:
             model:
               schema:
                 $ref: '#/components/schemas/Models.Votes'
-                description: Only for typescript, does not contain real data
   /get/votes_2/:
     post:
       operationId: GetVotes2
@@ -1109,7 +1059,6 @@ paths:
             model:
               schema:
                 $ref: '#/components/schemas/Models.Votes'
-                description: Only for typescript, does not contain real data
   /get/webscreens_2/:
     post:
       operationId: GetWebscreens2
@@ -1153,14 +1102,6 @@ paths:
                         properties:
                           result:
                             $ref: '#/components/schemas/Admin_2.Methods.Actions.AbstractRegular.Exec'
-                            title: |-
-                              Непосредственный вызов API функции
-
-                              Запрещено делать публичной, это приведет к поломке preCall()
-
-                              В описании к функции отвечать на вопрос: `Что является результатом запроса?` Например: `Список пользователей`
-
-                              Не менять `protected`, проверка проводится при генерации схем в `TV\API\Objects\ClassAPIMethodInfo`
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
@@ -1212,7 +1153,6 @@ paths:
                         properties:
                           result:
                             $ref: '#/components/schemas/Admin_2.Methods.I18n.Get.Exec'
-                            title: '@return array{lang: string, category: string, name: string, value: string}'
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
@@ -1343,7 +1283,6 @@ paths:
             model:
               schema:
                 $ref: '#/components/schemas/Models.Analytics.Ranks'
-                description: Only for typescript, does not contain real data
   /add/admin_2/staff/:
     post:
       operationId: AddAdmin2Staff
@@ -1437,7 +1376,6 @@ paths:
             model:
               schema:
                 $ref: '#/components/schemas/Models.Admin.Staff'
-                description: Only for typescript, does not contain real data
   /edit/admin_2/tariffChangeExpire/:
     post:
       operationId: EditAdmin2TariffChangeExpire
@@ -1531,7 +1469,6 @@ paths:
             model:
               schema:
                 $ref: '#/components/schemas/Models.Admin.Users'
-                description: Only for typescript, does not contain real data
   /get/admin_2/users/:
     post:
       operationId: GetAdmin2Users
@@ -1564,7 +1501,6 @@ paths:
             model:
               schema:
                 $ref: '#/components/schemas/Models.Admin.Users'
-                description: Only for typescript, does not contain real data
   /get/admin_2/votes/:
     post:
       operationId: GetAdmin2Votes
@@ -1596,7 +1532,6 @@ paths:
             model:
               schema:
                 $ref: '#/components/schemas/Models.Votes'
-                description: Only for typescript, does not contain real data
   /get/annotations_2/my/:
     post:
       operationId: GetAnnotations2My
@@ -1629,7 +1564,6 @@ paths:
             model:
               schema:
                 $ref: '#/components/schemas/Models.Annotations'
-                description: Only for typescript, does not contain real data
   /get/app_2/actions/:
     post:
       operationId: GetApp2Actions
@@ -1722,7 +1656,6 @@ paths:
                         properties:
                           result:
                             $ref: '#/components/schemas/Audit_2.Methods.CountUrls.Get.Exec'
-                            title: Количество настроенных URL
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
@@ -1757,7 +1690,6 @@ paths:
                         properties:
                           result:
                             $ref: '#/components/schemas/Audit_2.Methods.Indexing.Get.Exec'
-                            title: Список ссылок с данными по ним
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
@@ -1766,7 +1698,6 @@ paths:
             model:
               schema:
                 $ref: '#/components/schemas/Models.Urls'
-                description: Only for typescript, does not contain real data
   /edit/audit_2/settings/:
     post:
       operationId: EditAudit2Settings
@@ -1791,7 +1722,6 @@ paths:
                         properties:
                           result:
                             $ref: '#/components/schemas/Audit_2.Methods.Settings.Edit.Exec'
-                            title: Количество применных настроек
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
@@ -1823,7 +1753,6 @@ paths:
                         properties:
                           result:
                             $ref: '#/components/schemas/Audit_2.Methods.Settings.Get.Exec'
-                            title: Настройки аудита
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
@@ -1860,7 +1789,6 @@ paths:
                         properties:
                           result:
                             $ref: '#/components/schemas/Audit_2.Methods.Watcher.Get.Exec'
-                            title: Генерируемый на основе urls, список результатов проверок радара
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
@@ -1932,7 +1860,6 @@ paths:
             model:
               schema:
                 $ref: '#/components/schemas/Models.BalanceHistory'
-                description: Only for typescript, does not contain real data
   /get/bank_2/info/:
     post:
       operationId: GetBank2Info
@@ -1957,7 +1884,6 @@ paths:
                         properties:
                           result:
                             $ref: '#/components/schemas/Bank_2.Methods.Info.Get.Exec'
-                            title: '@return array{balance_all: float, balance_personal: float, balance_bonus: float, balance_tariff: float, tariff: array, subscription?: Bank_2\Objects\Subscriptions\Subscription, subscription_name?: Bank_2\Objects\Subscriptions\Subscription}'
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
@@ -2090,7 +2016,6 @@ paths:
             model:
               schema:
                 $ref: '#/components/schemas/Models.Requisites'
-                description: Only for typescript, does not contain real data
   /get/bank_2/ur/:
     post:
       operationId: GetBank2Ur
@@ -2146,7 +2071,6 @@ paths:
                         properties:
                           result:
                             $ref: '#/components/schemas/Broker_2.Methods.Ads.Edit.Exec'
-                            title: '@throws Exception'
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
@@ -2178,7 +2102,6 @@ paths:
                         properties:
                           result:
                             $ref: '#/components/schemas/Broker_2.Methods.Ads.Get.Exec'
-                            title: '@throws Exception'
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
@@ -2187,7 +2110,6 @@ paths:
             model:
               schema:
                 $ref: '#/components/schemas/Models.Broker.Ads'
-                description: Only for typescript, does not contain real data
   /add/broker_2/campaigns/:
     post:
       operationId: AddBroker2Campaigns
@@ -2212,7 +2134,6 @@ paths:
                         properties:
                           result:
                             $ref: '#/components/schemas/Broker_2.Methods.Campaigns.Add.Exec'
-                            title: '@throws Exception'
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
@@ -2220,7 +2141,6 @@ paths:
             model:
               schema:
                 $ref: '#/components/schemas/Models.Broker.Campaigns'
-                description: Only for typescript, does not contain real data
   /del/broker_2/campaigns/:
     post:
       operationId: DelBroker2Campaigns
@@ -2245,7 +2165,6 @@ paths:
                         properties:
                           result:
                             $ref: '#/components/schemas/Broker_2.Methods.Campaigns.Del.Exec'
-                            title: '@throws Exception'
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
@@ -2254,7 +2173,6 @@ paths:
             model:
               schema:
                 $ref: '#/components/schemas/Models.Broker.Campaigns'
-                description: Only for typescript, does not contain real data
   /edit/broker_2/campaigns/:
     post:
       operationId: EditBroker2Campaigns
@@ -2279,7 +2197,6 @@ paths:
                         properties:
                           result:
                             $ref: '#/components/schemas/Broker_2.Methods.Campaigns.Edit.Exec'
-                            title: '@throws Exception'
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
@@ -2288,7 +2205,6 @@ paths:
             model:
               schema:
                 $ref: '#/components/schemas/Models.Broker.Campaigns'
-                description: Only for typescript, does not contain real data
   /get/broker_2/campaigns/:
     post:
       operationId: GetBroker2Campaigns
@@ -2313,7 +2229,6 @@ paths:
                         properties:
                           result:
                             $ref: '#/components/schemas/Broker_2.Methods.Campaigns.Get.Exec'
-                            title: '@throws Exception'
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
@@ -2322,7 +2237,6 @@ paths:
             model:
               schema:
                 $ref: '#/components/schemas/Models.Broker.Campaigns'
-                description: Only for typescript, does not contain real data
   /add/broker_2/groups/:
     post:
       operationId: AddBroker2Groups
@@ -2347,7 +2261,6 @@ paths:
                         properties:
                           result:
                             $ref: '#/components/schemas/Broker_2.Methods.Groups.Add.Exec'
-                            title: '@throws Exception'
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
@@ -2379,7 +2292,6 @@ paths:
                         properties:
                           result:
                             $ref: '#/components/schemas/Broker_2.Methods.Groups.Get.Exec'
-                            title: '@throws Exception'
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
@@ -2388,7 +2300,6 @@ paths:
             model:
               schema:
                 $ref: '#/components/schemas/Models.Broker.Groups'
-                description: Only for typescript, does not contain real data
   /del/broker_2/keywords/:
     post:
       operationId: DelBroker2Keywords
@@ -2413,7 +2324,6 @@ paths:
                         properties:
                           result:
                             $ref: '#/components/schemas/Broker_2.Methods.Keywords.Del.Exec'
-                            title: '@throws Exception'
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
@@ -2445,7 +2355,6 @@ paths:
                         properties:
                           result:
                             $ref: '#/components/schemas/Broker_2.Methods.Keywords.Edit.Exec'
-                            title: '@throws Exception'
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
@@ -2453,7 +2362,6 @@ paths:
             model:
               schema:
                 $ref: '#/components/schemas/Models.Broker.Keywords'
-                description: Only for typescript, does not contain real data
   /get/broker_2/keywords/:
     post:
       operationId: GetBroker2Keywords
@@ -2478,7 +2386,6 @@ paths:
                         properties:
                           result:
                             $ref: '#/components/schemas/Broker_2.Methods.Keywords.Get.Exec'
-                            title: '@throws Exception'
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
@@ -2487,7 +2394,6 @@ paths:
             model:
               schema:
                 $ref: '#/components/schemas/Models.Broker.Keywords'
-                description: Only for typescript, does not contain real data
   /get/broker_2/log/:
     post:
       operationId: GetBroker2Log
@@ -2512,7 +2418,6 @@ paths:
                         properties:
                           result:
                             $ref: '#/components/schemas/Broker_2.Methods.Log.Get.Exec'
-                            title: '@throws Exception'
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
@@ -2521,7 +2426,6 @@ paths:
             model:
               schema:
                 $ref: '#/components/schemas/Models.Broker.Log'
-                description: Only for typescript, does not contain real data
   /get/comments_2/byAuthor/:
     post:
       operationId: GetComments2ByAuthor
@@ -2554,7 +2458,6 @@ paths:
             model:
               schema:
                 $ref: '#/components/schemas/Models.Comments'
-                description: Only for typescript, does not contain real data
   /edit/comments_2/like/:
     post:
       operationId: EditComments2Like
@@ -2652,7 +2555,6 @@ paths:
             model:
               schema:
                 $ref: '#/components/schemas/Models.Content.Authors'
-                description: Only for typescript, does not contain real data
   /edit/content_2/bookmarkAuthor/:
     post:
       operationId: EditContent2BookmarkAuthor
@@ -2769,14 +2671,6 @@ paths:
                         properties:
                           result:
                             $ref: '#/components/schemas/Content_2.Methods.Pages.AbstractPage.Exec'
-                            title: |-
-                              Непосредственный вызов API функции
-
-                              Запрещено делать публичной, это приведет к поломке preCall()
-
-                              В описании к функции отвечать на вопрос: `Что является результатом запроса?` Например: `Список пользователей`
-
-                              Не менять `protected`, проверка проводится при генерации схем в `TV\API\Objects\ClassAPIMethodInfo`
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
@@ -2784,7 +2678,6 @@ paths:
             model:
               schema:
                 $ref: '#/components/schemas/Models.Pages'
-                description: Only for typescript, does not contain real data
   /add/content_2/pages/:
     post:
       operationId: AddContent2Pages
@@ -2809,7 +2702,6 @@ paths:
                         properties:
                           result:
                             $ref: '#/components/schemas/Content_2.Methods.Pages.Add.Exec'
-                            title: '@throws Exception'
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
@@ -2817,7 +2709,6 @@ paths:
             model:
               schema:
                 $ref: '#/components/schemas/Models.Pages'
-                description: Only for typescript, does not contain real data
   /del/content_2/pages/:
     post:
       operationId: DelContent2Pages
@@ -2842,7 +2733,6 @@ paths:
                         properties:
                           result:
                             $ref: '#/components/schemas/Content_2.Methods.Pages.Del.Exec'
-                            title: '@throws Exception'
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
@@ -2850,7 +2740,6 @@ paths:
             model:
               schema:
                 $ref: '#/components/schemas/Models.Pages'
-                description: Only for typescript, does not contain real data
   /edit/content_2/pages/:
     post:
       operationId: EditContent2Pages
@@ -2875,7 +2764,6 @@ paths:
                         properties:
                           result:
                             $ref: '#/components/schemas/Content_2.Methods.Pages.Edit.Exec'
-                            title: '@throws Exception'
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
@@ -2883,7 +2771,6 @@ paths:
             model:
               schema:
                 $ref: '#/components/schemas/Models.Pages'
-                description: Only for typescript, does not contain real data
   /get/content_2/pages/:
     post:
       operationId: GetContent2Pages
@@ -2908,7 +2795,6 @@ paths:
                         properties:
                           result:
                             $ref: '#/components/schemas/Content_2.Methods.Pages.Get.Exec'
-                            title: '@throws Exception'
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
@@ -2917,7 +2803,6 @@ paths:
             model:
               schema:
                 $ref: '#/components/schemas/Models.Pages'
-                description: Only for typescript, does not contain real data
   /abstractregular/content_2/redirects/:
     post:
       operationId: AbstractregularContent2Redirects
@@ -2941,14 +2826,6 @@ paths:
                         properties:
                           result:
                             $ref: '#/components/schemas/Content_2.Methods.Redirects.AbstractRegular.Exec'
-                            title: |-
-                              Непосредственный вызов API функции
-
-                              Запрещено делать публичной, это приведет к поломке preCall()
-
-                              В описании к функции отвечать на вопрос: `Что является результатом запроса?` Например: `Список пользователей`
-
-                              Не менять `protected`, проверка проводится при генерации схем в `TV\API\Objects\ClassAPIMethodInfo`
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
@@ -2980,7 +2857,6 @@ paths:
                         properties:
                           result:
                             $ref: '#/components/schemas/Content_2.Methods.Redirects.Add.Exec'
-                            title: '@throws Exception'
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
@@ -3012,7 +2888,6 @@ paths:
                         properties:
                           result:
                             $ref: '#/components/schemas/Content_2.Methods.Redirects.Del.Exec'
-                            title: '@throws Exception'
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
@@ -3044,7 +2919,6 @@ paths:
                         properties:
                           result:
                             $ref: '#/components/schemas/Content_2.Methods.Redirects.Edit.Exec'
-                            title: '@throws Exception'
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
@@ -3084,7 +2958,6 @@ paths:
             model:
               schema:
                 $ref: '#/components/schemas/Models.ContentsRedirects'
-                description: Only for typescript, does not contain real data
   /get/content_2/rss/:
     post:
       operationId: GetContent2Rss
@@ -3112,7 +2985,6 @@ paths:
                         properties:
                           result:
                             $ref: '#/components/schemas/Content_2.Methods.Rss.Get.Exec'
-                            title: '@throws Exception'
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
@@ -3121,7 +2993,6 @@ paths:
             model:
               schema:
                 $ref: '#/components/schemas/Models.Pages'
-                description: Only for typescript, does not contain real data
   /get/content_2/search/:
     post:
       operationId: GetContent2Search
@@ -3146,7 +3017,6 @@ paths:
                         properties:
                           result:
                             $ref: '#/components/schemas/Content_2.Methods.Search.Get.Exec'
-                            title: '@throws Exception'
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
@@ -3179,7 +3049,6 @@ paths:
                         properties:
                           result:
                             $ref: '#/components/schemas/Content_2.Methods.Sitemap.Get.Exec'
-                            title: '@throws Exception'
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
@@ -3188,7 +3057,6 @@ paths:
             model:
               schema:
                 $ref: '#/components/schemas/Models.Pages'
-                description: Only for typescript, does not contain real data
   /get/content_2/tags/:
     post:
       operationId: GetContent2Tags
@@ -3251,7 +3119,6 @@ paths:
             model:
               schema:
                 $ref: '#/components/schemas/Models.CronCommands'
-                description: Only for typescript, does not contain real data
   /del/cron_2/commands/:
     post:
       operationId: DelCron2Commands
@@ -3283,7 +3150,6 @@ paths:
             model:
               schema:
                 $ref: '#/components/schemas/Models.CronCommands'
-                description: Only for typescript, does not contain real data
   /edit/cron_2/commands/:
     post:
       operationId: EditCron2Commands
@@ -3315,7 +3181,6 @@ paths:
             model:
               schema:
                 $ref: '#/components/schemas/Models.CronCommands'
-                description: Only for typescript, does not contain real data
   /get/cron_2/commands/:
     post:
       operationId: GetCron2Commands
@@ -3340,7 +3205,6 @@ paths:
                         properties:
                           result:
                             $ref: '#/components/schemas/Cron_2.Methods.Commands.Get.Exec'
-                            title: Список задач cron
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
@@ -3349,7 +3213,6 @@ paths:
             model:
               schema:
                 $ref: '#/components/schemas/Models.CronCommands'
-                description: Only for typescript, does not contain real data
   /get/cron_2/services/:
     post:
       operationId: GetCron2Services
@@ -3374,7 +3237,6 @@ paths:
                         properties:
                           result:
                             $ref: '#/components/schemas/Cron_2.Methods.Get.Exec'
-                            title: Список имен сервисов
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
@@ -3383,7 +3245,6 @@ paths:
             model:
               schema:
                 $ref: '#/components/schemas/Models.CronCommands'
-                description: Only for typescript, does not contain real data
   /get/example_2/array/:
     post:
       operationId: GetExample2Array
@@ -3408,7 +3269,6 @@ paths:
                         properties:
                           result:
                             $ref: '#/components/schemas/Example_2.Methods.Array.Get.Exec'
-                            title: '@type array<string, array<string, mixed>>'
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
@@ -3505,7 +3365,6 @@ paths:
                         properties:
                           result:
                             $ref: '#/components/schemas/Example_2.Methods.Enum.Get.Exec'
-                            title: Ассоциативный массив с результирующими переданными параетрами и результатом genSet()
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
@@ -3537,7 +3396,6 @@ paths:
                         properties:
                           result:
                             $ref: '#/components/schemas/Example_2.Methods.Object.Get.Exec'
-                            title: Ассоциативный массив с результирующими переданными параетрами и результатом genSet()
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
@@ -3570,14 +3428,6 @@ paths:
                         properties:
                           result:
                             $ref: '#/components/schemas/Example_2.Methods.PhpDoc.Get.Exec'
-                            title: |-
-                              Тест phpDoc
-
-                              TODO: Удалить после настройки openapi
-
-                              - static
-                              - parent
-                              - self
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
@@ -3618,7 +3468,6 @@ paths:
             model:
               schema:
                 $ref: '#/components/schemas/Models.Projects'
-                description: Only for typescript, does not contain real data
   /abstractregular/keywords_2/collect/:
     post:
       operationId: AbstractregularKeywords2Collect
@@ -3642,14 +3491,6 @@ paths:
                         properties:
                           result:
                             $ref: '#/components/schemas/Keywords_2.Methods.Collect.AbstractRegular.Exec'
-                            title: |-
-                              Непосредственный вызов API функции
-
-                              Запрещено делать публичной, это приведет к поломке preCall()
-
-                              В описании к функции отвечать на вопрос: `Что является результатом запроса?` Например: `Список пользователей`
-
-                              Не менять `protected`, проверка проводится при генерации схем в `TV\API\Objects\ClassAPIMethodInfo`
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
@@ -3689,7 +3530,6 @@ paths:
             model:
               schema:
                 $ref: '#/components/schemas/Models.Keywords'
-                description: Only for typescript, does not contain real data
   /get/keywords_2/volumes/:
     post:
       operationId: GetKeywords2Volumes
@@ -3722,7 +3562,6 @@ paths:
             model:
               schema:
                 $ref: '#/components/schemas/Models.Groups'
-                description: Only for typescript, does not contain real data
   /get/openapi_2/download/:
     post:
       operationId: GetOpenapi2Download
@@ -3875,7 +3714,6 @@ paths:
                         properties:
                           result:
                             $ref: '#/components/schemas/Payments_2.Methods.Subscriptions.Edit.Exec'
-                            title: '@throws Exception'
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
@@ -4285,7 +4123,6 @@ paths:
                         properties:
                           result:
                             $ref: '#/components/schemas/Projects_2.Methods.Folders.Add.Exec'
-                            title: '@returns ?int id добавленной папки'
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
@@ -4324,7 +4161,6 @@ paths:
             model:
               schema:
                 $ref: '#/components/schemas/Models.Projects.Folders'
-                description: Only for typescript, does not contain real data
   /get/projects_2/folders/:
     post:
       operationId: GetProjects2Folders
@@ -4357,7 +4193,6 @@ paths:
             model:
               schema:
                 $ref: '#/components/schemas/Models.Projects.Folders'
-                description: Only for typescript, does not contain real data
   /add/projects_2/projects/:
     post:
       operationId: AddProjects2Projects
@@ -4420,7 +4255,6 @@ paths:
             model:
               schema:
                 $ref: '#/components/schemas/Models.Projects'
-                description: Only for typescript, does not contain real data
   /get/projects_2/projects/:
     post:
       operationId: GetProjects2Projects
@@ -4453,7 +4287,6 @@ paths:
             model:
               schema:
                 $ref: '#/components/schemas/Models.Projects'
-                description: Only for typescript, does not contain real data
   /del/projects_2/rights/:
     post:
       operationId: DelProjects2Rights
@@ -4615,7 +4448,6 @@ paths:
             model:
               schema:
                 $ref: '#/components/schemas/Models.Projects'
-                description: Only for typescript, does not contain real data
   /del/recurring_2/recurringCard/:
     post:
       operationId: DelRecurring2RecurringCard
@@ -4702,7 +4534,6 @@ paths:
                         properties:
                           result:
                             $ref: '#/components/schemas/Schedule_2.Methods.Settings.Edit.Exec'
-                            title: '@throws Exception'
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
@@ -4769,7 +4600,6 @@ paths:
                         properties:
                           result:
                             $ref: '#/components/schemas/Sms_2.Methods.CheckPIN.Get.Exec'
-                            title: '@throws Exception'
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
@@ -4801,7 +4631,6 @@ paths:
                         properties:
                           result:
                             $ref: '#/components/schemas/Sms_2.Methods.SendPIN.Get.Exec'
-                            title: '@throws Exception'
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
@@ -4833,7 +4662,6 @@ paths:
                         properties:
                           result:
                             $ref: '#/components/schemas/Templates_2.Methods.AvailableFieldsData.Get.Exec'
-                            title: '@throws Exception'
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
@@ -4896,7 +4724,6 @@ paths:
                         properties:
                           result:
                             $ref: '#/components/schemas/Templates_2.Methods.Fields.Edit.Exec'
-                            title: '@throws Exception'
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
@@ -4928,7 +4755,6 @@ paths:
                         properties:
                           result:
                             $ref: '#/components/schemas/Templates_2.Methods.Fields.Get.Exec'
-                            title: '@throws Exception'
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
@@ -5093,7 +4919,6 @@ paths:
                         properties:
                           result:
                             $ref: '#/components/schemas/Tickets_2.Methods.Messages.Add.Exec'
-                            title: Id добавленного сообщения
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
@@ -5156,7 +4981,6 @@ paths:
                         properties:
                           result:
                             $ref: '#/components/schemas/Tickets_2.Methods.Tickets.Add.Exec'
-                            title: Id тикета
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
@@ -5227,7 +5051,6 @@ paths:
             model:
               schema:
                 $ref: '#/components/schemas/Models.Tickets'
-                description: Only for typescript, does not contain real data
   /get/urls_2/export/:
     post:
       operationId: GetUrls2Export
@@ -5281,10 +5104,6 @@ paths:
                         properties:
                           result:
                             $ref: '#/components/schemas/Urls_2.Methods.Import.Add.Exec'
-                            title: |-
-                              @return ?array{'countSended': int, 'countDuplicated': int, 'countAdded': int, 'countChanged': int}
-
-                              @throws Exception
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
@@ -5323,7 +5142,6 @@ paths:
             model:
               schema:
                 $ref: '#/components/schemas/Models.Urls'
-                description: Only for typescript, does not contain real data
   /edit/votes_2/comment/:
     post:
       operationId: EditVotes2Comment
@@ -5421,7 +5239,6 @@ paths:
             model:
               schema:
                 $ref: '#/components/schemas/Models.Admin.Accounting.Counteragents'
-                description: Only for typescript, does not contain real data
   /edit/admin_2/accounting/group/:
     post:
       operationId: EditAdmin2AccountingGroup
@@ -5484,7 +5301,6 @@ paths:
             model:
               schema:
                 $ref: '#/components/schemas/Models.EmptyModel'
-                description: Only for typescript, does not contain real data
   /add/admin_2/accounting/invoices/:
     post:
       operationId: AddAdmin2AccountingInvoices
@@ -5547,7 +5363,6 @@ paths:
             model:
               schema:
                 $ref: '#/components/schemas/Models.Admin.Invoices'
-                description: Only for typescript, does not contain real data
   /get/admin_2/accounting/invoices/:
     post:
       operationId: GetAdmin2AccountingInvoices
@@ -5580,7 +5395,6 @@ paths:
             model:
               schema:
                 $ref: '#/components/schemas/Models.Admin.Invoices'
-                description: Only for typescript, does not contain real data
   /get/admin_2/accounting/operations/:
     post:
       operationId: GetAdmin2AccountingOperations
@@ -5613,7 +5427,6 @@ paths:
             model:
               schema:
                 $ref: '#/components/schemas/Models.EmptyModel'
-                description: Only for typescript, does not contain real data
   /edit/admin_2/actions/bank/:
     post:
       operationId: EditAdmin2ActionsBank
@@ -6018,7 +5831,6 @@ paths:
             model:
               schema:
                 $ref: '#/components/schemas/Models.EmptyModel'
-                description: Only for typescript, does not contain real data
   /get/admin_2/analytics/activity/:
     post:
       operationId: GetAdmin2AnalyticsActivity
@@ -6122,7 +5934,6 @@ paths:
             model:
               schema:
                 $ref: '#/components/schemas/Models.Analytics.Events'
-                description: Only for typescript, does not contain real data
   /get/admin_2/analytics/payments/:
     post:
       operationId: GetAdmin2AnalyticsPayments
@@ -6240,14 +6051,6 @@ paths:
                         properties:
                           result:
                             $ref: '#/components/schemas/Admin_2.Methods.Analytics.Tickets.AbstractTicketsStats.Exec'
-                            title: |-
-                              Непосредственный вызов API функции
-
-                              Запрещено делать публичной, это приведет к поломке preCall()
-
-                              В описании к функции отвечать на вопрос: `Что является результатом запроса?` Например: `Список пользователей`
-
-                              Не менять `protected`, проверка проводится при генерации схем в `TV\API\Objects\ClassAPIMethodInfo`
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
@@ -6288,7 +6091,6 @@ paths:
             model:
               schema:
                 $ref: '#/components/schemas/Models.Tickets'
-                description: Only for typescript, does not contain real data
   /get/admin_2/i18n/categories/:
     post:
       operationId: GetAdmin2I18nCategories
@@ -6383,7 +6185,6 @@ paths:
             model:
               schema:
                 $ref: '#/components/schemas/Models.Analytics.RanksUsers'
-                description: Only for typescript, does not contain real data
   /get/admin_2/slack/rate/:
     post:
       operationId: GetAdmin2SlackRate
@@ -6408,7 +6209,6 @@ paths:
                         properties:
                           result:
                             $ref: '#/components/schemas/Admin_2.Methods.Slack.Rate.Get.Exec'
-                            title: Список пользователей
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
@@ -6447,7 +6247,6 @@ paths:
             model:
               schema:
                 $ref: '#/components/schemas/Models.Admin.Staff'
-                description: Only for typescript, does not contain real data
   /get/admin_2/staff/byPost/:
     post:
       operationId: GetAdmin2StaffByPost
@@ -6667,7 +6466,6 @@ paths:
                         properties:
                           result:
                             $ref: '#/components/schemas/Admin_2.Methods.Users.Promocodes.Add.Exec'
-                            title: '@throws Exception'
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
@@ -6675,7 +6473,6 @@ paths:
             model:
               schema:
                 $ref: '#/components/schemas/Models.Users.Verif'
-                description: Only for typescript, does not contain real data
   /get/admin_2/users/promocodes/:
     post:
       operationId: GetAdmin2UsersPromocodes
@@ -6713,7 +6510,6 @@ paths:
             model:
               schema:
                 $ref: '#/components/schemas/Models.Users.Verif'
-                description: Only for typescript, does not contain real data
   /add/admin_2/users/ranks/:
     post:
       operationId: AddAdmin2UsersRanks
@@ -6745,7 +6541,6 @@ paths:
             model:
               schema:
                 $ref: '#/components/schemas/Models.Admin.Users.Ranks'
-                description: Only for typescript, does not contain real data
   /edit/admin_2/users/ranks/:
     post:
       operationId: EditAdmin2UsersRanks
@@ -6777,7 +6572,6 @@ paths:
             model:
               schema:
                 $ref: '#/components/schemas/Models.Admin.Users.Ranks'
-                description: Only for typescript, does not contain real data
   /get/admin_2/users/ranks/:
     post:
       operationId: GetAdmin2UsersRanks
@@ -6810,7 +6604,6 @@ paths:
             model:
               schema:
                 $ref: '#/components/schemas/Models.Admin.Users.Ranks'
-                description: Only for typescript, does not contain real data
   /get/audit_2/audit/browse/:
     post:
       operationId: GetAudit2AuditBrowse
@@ -6836,7 +6629,6 @@ paths:
                         properties:
                           result:
                             $ref: '#/components/schemas/Audit_2.Methods.Audit.Browse.Get.Exec'
-                            title: Сводка анализа сайта
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
@@ -6873,7 +6665,6 @@ paths:
                         properties:
                           result:
                             $ref: '#/components/schemas/Audit_2.Methods.Audit.Checks.Get.Exec'
-                            title: Список выполненных (выполняемых) проверок аудита
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
@@ -6882,7 +6673,6 @@ paths:
             model:
               schema:
                 $ref: '#/components/schemas/Models.Audit.Checks'
-                description: Only for typescript, does not contain real data
   /get/audit_2/audit/css/:
     post:
       operationId: GetAudit2AuditCss
@@ -6907,7 +6697,6 @@ paths:
                         properties:
                           result:
                             $ref: '#/components/schemas/Audit_2.Methods.Audit.Css.Get.Exec'
-                            title: Список проверенных css
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
@@ -6916,7 +6705,6 @@ paths:
             model:
               schema:
                 $ref: '#/components/schemas/Models.Audit.Css'
-                description: Only for typescript, does not contain real data
   /get/audit_2/audit/export/:
     post:
       operationId: GetAudit2AuditExport
@@ -6961,7 +6749,6 @@ paths:
                         properties:
                           result:
                             $ref: '#/components/schemas/Audit_2.Methods.Audit.Images.Get.Exec'
-                            title: Список проверенных изображений
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
@@ -6970,7 +6757,6 @@ paths:
             model:
               schema:
                 $ref: '#/components/schemas/Models.Audit.Images'
-                description: Only for typescript, does not contain real data
   /get/audit_2/audit/js/:
     post:
       operationId: GetAudit2AuditJs
@@ -6995,7 +6781,6 @@ paths:
                         properties:
                           result:
                             $ref: '#/components/schemas/Audit_2.Methods.Audit.Js.Get.Exec'
-                            title: Список проверенных js
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
@@ -7004,7 +6789,6 @@ paths:
             model:
               schema:
                 $ref: '#/components/schemas/Models.Audit.Js'
-                description: Only for typescript, does not contain real data
   /get/audit_2/audit/links/:
     post:
       operationId: GetAudit2AuditLinks
@@ -7029,7 +6813,6 @@ paths:
                         properties:
                           result:
                             $ref: '#/components/schemas/Audit_2.Methods.Audit.Links.Get.Exec'
-                            title: Список проверенных ссылок
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
@@ -7038,7 +6821,6 @@ paths:
             model:
               schema:
                 $ref: '#/components/schemas/Models.Audit.Links'
-                description: Only for typescript, does not contain real data
   /get/audit_2/audit/log/:
     post:
       operationId: GetAudit2AuditLog
@@ -7063,7 +6845,6 @@ paths:
                         properties:
                           result:
                             $ref: '#/components/schemas/Audit_2.Methods.Audit.Log.Get.Exec'
-                            title: Данные проверенных ресурсов
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
@@ -7096,7 +6877,6 @@ paths:
                         properties:
                           result:
                             $ref: '#/components/schemas/Audit_2.Methods.Audit.Pages.Get.Exec'
-                            title: Список страниц
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
@@ -7105,7 +6885,6 @@ paths:
             model:
               schema:
                 $ref: '#/components/schemas/Models.Audit.Pages'
-                description: Only for typescript, does not contain real data
   /get/audit_2/audit/summary/:
     post:
       operationId: GetAudit2AuditSummary
@@ -7130,13 +6909,6 @@ paths:
                         properties:
                           result:
                             $ref: '#/components/schemas/Audit_2.Methods.Audit.Summary.Get.Exec'
-                            title: |-
-                              Сводка о выполненном аудите
-
-                              Возвращает объект со сводкой по категориям, пример:
-                               - `$res['all']['all']['count_checks_success']` - количество пройденных проверок во всех категориях
-                               - `$res['pages']['indexing']['count_checks_success']` - количество пройденных проверок в категории Страницы / Индексация
-                               - `$res['all']['all']['count_checks_success']` - количество пройденных проверок во всех категориях
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
@@ -7145,7 +6917,6 @@ paths:
             model:
               schema:
                 $ref: '#/components/schemas/Models.Audit.Checks'
-                description: Only for typescript, does not contain real data
   /get/audit_2/audit/summaryPage/:
     post:
       operationId: GetAudit2AuditSummaryPage
@@ -7170,7 +6941,6 @@ paths:
                         properties:
                           result:
                             $ref: '#/components/schemas/Audit_2.Methods.Audit.SummaryPage.Get.Exec'
-                            title: Сводка о выполненном аудите по одной странице
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
@@ -7179,7 +6949,6 @@ paths:
             model:
               schema:
                 $ref: '#/components/schemas/Models.Audit.Pages'
-                description: Only for typescript, does not contain real data
   /get/audit_2/indexing/export/:
     post:
       operationId: GetAudit2IndexingExport
@@ -7207,7 +6976,6 @@ paths:
                         properties:
                           result:
                             $ref: '#/components/schemas/Audit_2.Methods.Indexing.Export.Get.Exec'
-                            title: Результаты индексации
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
@@ -7242,7 +7010,6 @@ paths:
                         properties:
                           result:
                             $ref: '#/components/schemas/Audit_2.Methods.Indexing.Links.Get.Exec'
-                            title: Короткая гостевая ссылка на просмотр позиций
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
@@ -7274,7 +7041,6 @@ paths:
                         properties:
                           result:
                             $ref: '#/components/schemas/Audit_2.Methods.Indexing.Summary.Get.Exec'
-                            title: Сводка индексации
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
@@ -7312,7 +7078,6 @@ paths:
                         properties:
                           result:
                             $ref: '#/components/schemas/Audit_2.Methods.Watcher.ByURL.Get.Exec'
-                            title: Отчет по одному URL
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
@@ -7321,7 +7086,6 @@ paths:
             model:
               schema:
                 $ref: '#/components/schemas/Models.Watcher.Results'
-                description: Only for typescript, does not contain real data
   /get/audit_2/watcher/checks/:
     post:
       operationId: GetAudit2WatcherChecks
@@ -7346,7 +7110,6 @@ paths:
                         properties:
                           result:
                             $ref: '#/components/schemas/Audit_2.Methods.Watcher.Checks.Get.Exec'
-                            title: Список проверок радара
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
@@ -7378,7 +7141,6 @@ paths:
                         properties:
                           result:
                             $ref: '#/components/schemas/Audit_2.Methods.Watcher.Summary.Get.Exec'
-                            title: Сводка с количеством изменений по каждому типу проверки
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
@@ -7503,7 +7265,6 @@ paths:
             model:
               schema:
                 $ref: '#/components/schemas/Models.BalanceHistory'
-                description: Only for typescript, does not contain real data
   /edit/bank_2/referrals/toBonus/:
     post:
       operationId: EditBank2ReferralsToBonus
@@ -7661,7 +7422,6 @@ paths:
                         properties:
                           result:
                             $ref: '#/components/schemas/Bank_2.Methods.Subscriptions.Plans.Get.Exec'
-                            title: '@return Bank_2\Objects\Subscriptions\Plan[]'
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
@@ -7693,7 +7453,6 @@ paths:
                         properties:
                           result:
                             $ref: '#/components/schemas/Broker_2.Methods.Ads.Status.Edit.Exec'
-                            title: '@throws Exception'
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
@@ -7725,7 +7484,6 @@ paths:
                         properties:
                           result:
                             $ref: '#/components/schemas/Broker_2.Methods.Ads.ToModerate.Edit.Exec'
-                            title: '@throws Exception'
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
@@ -7757,7 +7515,6 @@ paths:
                         properties:
                           result:
                             $ref: '#/components/schemas/Broker_2.Methods.Campaigns.UpdateTargeting.Edit.Exec'
-                            title: '@throws Exception'
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
@@ -7766,7 +7523,6 @@ paths:
             model:
               schema:
                 $ref: '#/components/schemas/Models.Broker.Campaigns'
-                description: Only for typescript, does not contain real data
   /get/broker_2/groups/editor/:
     post:
       operationId: GetBroker2GroupsEditor
@@ -7822,7 +7578,6 @@ paths:
                         properties:
                           result:
                             $ref: '#/components/schemas/Broker_2.Methods.Keywords.Status.Edit.Exec'
-                            title: '@throws Exception'
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
@@ -7874,7 +7629,6 @@ paths:
                         properties:
                           result:
                             $ref: '#/components/schemas/Broker_2.Methods.Tasks.RateTask.Add.Exec'
-                            title: '@throws Exception'
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
@@ -7906,7 +7660,6 @@ paths:
                         properties:
                           result:
                             $ref: '#/components/schemas/Competitors_2.Methods.Orders.Pay.Edit.Exec'
-                            title: '@throws Exception'
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
@@ -7977,7 +7730,6 @@ paths:
             model:
               schema:
                 $ref: '#/components/schemas/Models.Apometr.History'
-                description: Only for typescript, does not contain real data
   /get/content_2/apometr/history/:
     post:
       operationId: GetContent2ApometrHistory
@@ -8041,7 +7793,6 @@ paths:
             model:
               schema:
                 $ref: '#/components/schemas/Models.Apometr.Keywords'
-                description: Only for typescript, does not contain real data
   /get/content_2/apometr/updates/:
     post:
       operationId: GetContent2ApometrUpdates
@@ -8098,7 +7849,6 @@ paths:
                         properties:
                           result:
                             $ref: '#/components/schemas/Content_2.Methods.Journal.Articles.Get.Exec'
-                            title: '@throws Exception'
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
@@ -8107,7 +7857,6 @@ paths:
             model:
               schema:
                 $ref: '#/components/schemas/Models.Pages'
-                description: Only for typescript, does not contain real data
   /get/content_2/journal/bookmarksAuthors/:
     post:
       operationId: GetContent2JournalBookmarksAuthors
@@ -8140,7 +7889,6 @@ paths:
             model:
               schema:
                 $ref: '#/components/schemas/Models.Pages'
-                description: Only for typescript, does not contain real data
   /get/content_2/journal/bookmarks/:
     post:
       operationId: GetContent2JournalBookmarks
@@ -8165,7 +7913,6 @@ paths:
                         properties:
                           result:
                             $ref: '#/components/schemas/Content_2.Methods.Journal.Bookmarks.Get.Exec'
-                            title: '@throws Exception'
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
@@ -8174,7 +7921,6 @@ paths:
             model:
               schema:
                 $ref: '#/components/schemas/Models.Pages'
-                description: Only for typescript, does not contain real data
   /get/content_2/journal/course/:
     post:
       operationId: GetContent2JournalCourse
@@ -8202,7 +7948,6 @@ paths:
                         properties:
                           result:
                             $ref: '#/components/schemas/Content_2.Methods.Journal.Course.Get.Exec'
-                            title: '@throws Exception'
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
@@ -8211,7 +7956,6 @@ paths:
             model:
               schema:
                 $ref: '#/components/schemas/Models.Pages'
-                description: Only for typescript, does not contain real data
   /get/content_2/journal/rubrics/:
     post:
       operationId: GetContent2JournalRubrics
@@ -8236,7 +7980,6 @@ paths:
                         properties:
                           result:
                             $ref: '#/components/schemas/Content_2.Methods.Journal.Rubrics.Get.Exec'
-                            title: '@throws Exception'
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
@@ -8245,7 +7988,6 @@ paths:
             model:
               schema:
                 $ref: '#/components/schemas/Models.Pages'
-                description: Only for typescript, does not contain real data
   /edit/content_2/journal/subscribe/:
     post:
       operationId: EditContent2JournalSubscribe
@@ -8363,7 +8105,6 @@ paths:
                         properties:
                           result:
                             $ref: '#/components/schemas/Keywords_2.Methods.Collect.Go.Edit.Exec'
-                            title: Массив созданных групп
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
@@ -8396,7 +8137,6 @@ paths:
                         properties:
                           result:
                             $ref: '#/components/schemas/Keywords_2.Methods.Collect.Price.Get.Exec'
-                            title: '@return array{pricesByUsers: array<string, array{price: float, priceOriginal: float, qualifiers: array{region_key: int, searcher_key: (0 | 1 | 5 | 100 | 101 | 102 | 104 | 105 | 106), region_lang?: (string | null), also_searched?: (int | null), depth?: (int | null), hint_depth: (1 | 2 | 3), hint_generators: array<(''letter'' | ''letter_ru'' | ''number'' | ''space'')>}, comment: string}>}'
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
@@ -8463,7 +8203,6 @@ paths:
                         properties:
                           result:
                             $ref: '#/components/schemas/Keywords_2.Methods.Volumes.Go.Edit.Exec'
-                            title: '@throws Exception'
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
@@ -8471,7 +8210,6 @@ paths:
             model:
               schema:
                 $ref: '#/components/schemas/Models.Keywords'
-                description: Only for typescript, does not contain real data
   /get/keywords_2/volumes/price/:
     post:
       operationId: GetKeywords2VolumesPrice
@@ -8496,7 +8234,6 @@ paths:
                         properties:
                           result:
                             $ref: '#/components/schemas/Keywords_2.Methods.Volumes.Price.Get.Exec'
-                            title: '@return object{pricesByUsers: object{int: object{projectsIds: [], price: float, priceOriginal: float}}}'
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
@@ -8504,7 +8241,6 @@ paths:
             model:
               schema:
                 $ref: '#/components/schemas/Models.Keywords'
-                description: Only for typescript, does not contain real data
   /add/landings_2/hr/feedback/:
     post:
       operationId: AddLandings2HrFeedback
@@ -8560,7 +8296,6 @@ paths:
                         properties:
                           result:
                             $ref: '#/components/schemas/Payments_2.Methods.Recurrent.Suspend.Edit.Exec'
-                            title: '@throws Exception Ошибка во входных данных, внешнем API или БД'
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
@@ -8597,7 +8332,6 @@ paths:
                         properties:
                           result:
                             $ref: '#/components/schemas/Payments_2.Methods.Subscriptions.Next.Edit.Exec'
-                            title: '@throws Exception'
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
@@ -8722,7 +8456,6 @@ paths:
                         properties:
                           result:
                             $ref: '#/components/schemas/Positions_2.Methods.Checker.Go.Edit.Exec'
-                            title: '@return object{projectIds: int[]} Список id проектов, отрпавленных на проверку'
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
@@ -8730,7 +8463,6 @@ paths:
             model:
               schema:
                 $ref: '#/components/schemas/Models.Projects'
-                description: Only for typescript, does not contain real data
   /get/positions_2/checker/price/:
     post:
       operationId: GetPositions2CheckerPrice
@@ -8755,7 +8487,6 @@ paths:
                         properties:
                           result:
                             $ref: '#/components/schemas/Positions_2.Methods.Checker.Price.Get.Exec'
-                            title: '@return object{pricesByUsers: object{int: object{projectsIds: [], price: float, priceOriginal: float}}}'
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
@@ -8763,7 +8494,6 @@ paths:
             model:
               schema:
                 $ref: '#/components/schemas/Models.Projects'
-                description: Only for typescript, does not contain real data
   /edit/positions_2/searchers/enabled/:
     post:
       operationId: EditPositions2SearchersEnabled
@@ -9268,7 +8998,6 @@ paths:
             model:
               schema:
                 $ref: '#/components/schemas/Models.Projects'
-                description: Only for typescript, does not contain real data
   /edit/projects_2/projects/move/:
     post:
       operationId: EditProjects2ProjectsMove
@@ -9362,7 +9091,6 @@ paths:
             model:
               schema:
                 $ref: '#/components/schemas/Models.Projects'
-                description: Only for typescript, does not contain real data
   /edit/projects_2/projects/sort/:
     post:
       operationId: EditProjects2ProjectsSort
@@ -9394,7 +9122,6 @@ paths:
             model:
               schema:
                 $ref: '#/components/schemas/Models.Projects'
-                description: Only for typescript, does not contain real data
   /edit/projects_2/projects/tags/:
     post:
       operationId: EditProjects2ProjectsTags
@@ -9645,7 +9372,6 @@ paths:
                         properties:
                           result:
                             $ref: '#/components/schemas/Redmine_2.Methods.Users.Groups.Get.Exec'
-                            title: '@throws Exception'
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
@@ -9677,7 +9403,6 @@ paths:
                         properties:
                           result:
                             $ref: '#/components/schemas/Reports_2.Methods.Positions.SendTest.Edit.Exec'
-                            title: '@throws Exception'
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
@@ -10177,7 +9902,6 @@ paths:
                         properties:
                           result:
                             $ref: '#/components/schemas/Urls_2.Methods.Import.RecognizeLinkSitemapXml.Get.Exec'
-                            title: URL к карте сайта
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
@@ -10209,7 +9933,6 @@ paths:
                         properties:
                           result:
                             $ref: '#/components/schemas/Users_2.Methods.Join.Email.Add.Exec'
-                            title: '@throws Exception'
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
@@ -11426,7 +11149,6 @@ paths:
                         properties:
                           result:
                             $ref: '#/components/schemas/Admin_2.Methods.Users.Informer.Subscriptions.Get.Exec'
-                            title: Данные для построения графика
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
@@ -11458,7 +11180,6 @@ paths:
                         properties:
                           result:
                             $ref: '#/components/schemas/Audit_2.Methods.Audit.Checker.Go.Edit.Exec'
-                            title: '@return object{projectIds: int[]} Список id проектов, отрпавленных на проверку'
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
@@ -11466,7 +11187,6 @@ paths:
             model:
               schema:
                 $ref: '#/components/schemas/Models.Projects'
-                description: Only for typescript, does not contain real data
   /get/audit_2/audit/checker/price/:
     post:
       operationId: GetAudit2AuditCheckerPrice
@@ -11491,7 +11211,6 @@ paths:
                         properties:
                           result:
                             $ref: '#/components/schemas/Audit_2.Methods.Audit.Checker.Price.Get.Exec'
-                            title: '@throws Exception'
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
@@ -11499,7 +11218,6 @@ paths:
             model:
               schema:
                 $ref: '#/components/schemas/Models.Projects'
-                description: Only for typescript, does not contain real data
   /get/audit_2/audit/export/links/:
     post:
       operationId: GetAudit2AuditExportLinks
@@ -11524,7 +11242,6 @@ paths:
                         properties:
                           result:
                             $ref: '#/components/schemas/Audit_2.Methods.Audit.Export.Links.Get.Exec'
-                            title: Короткая гостевая ссылка на просмотр аудита позиций
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
@@ -11576,10 +11293,6 @@ paths:
                         properties:
                           result:
                             $ref: '#/components/schemas/Audit_2.Methods.Audit.Log.ActualError.Get.Exec'
-                            title: |-
-                              Информацией о текущей ошибке на роботе
-
-                              Вернет null, если ошибки на роботе нет
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
@@ -11612,7 +11325,6 @@ paths:
                         properties:
                           result:
                             $ref: '#/components/schemas/Audit_2.Methods.Audit.Log.Chart.Get.Exec'
-                            title: Данные для графика
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
@@ -11646,7 +11358,6 @@ paths:
                         properties:
                           result:
                             $ref: '#/components/schemas/Audit_2.Methods.Audit.Results.Export.Get.Exec'
-                            title: Ответ об успешнности экспорта результатов аудита
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
@@ -11679,9 +11390,6 @@ paths:
                         properties:
                           result:
                             $ref: '#/components/schemas/Audit_2.Methods.Audit.Results.Page.Get.Exec'
-                            title: |-
-                              @return array{result: array{page_in_filter: bool, index: int, snippet: string, content: string}}
-                              @throws Exception
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
@@ -11713,7 +11421,6 @@ paths:
                         properties:
                           result:
                             $ref: '#/components/schemas/Audit_2.Methods.Indexing.Checker.Go.Edit.Exec'
-                            title: '@return object{projectIds: int[]} Список id проектов, отрпавленных на проверку'
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
@@ -11721,7 +11428,6 @@ paths:
             model:
               schema:
                 $ref: '#/components/schemas/Models.Projects'
-                description: Only for typescript, does not contain real data
   /get/audit_2/indexing/checker/price/:
     post:
       operationId: GetAudit2IndexingCheckerPrice
@@ -11746,7 +11452,6 @@ paths:
                         properties:
                           result:
                             $ref: '#/components/schemas/Audit_2.Methods.Indexing.Checker.Price.Get.Exec'
-                            title: '@throws Exception'
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
@@ -11754,7 +11459,6 @@ paths:
             model:
               schema:
                 $ref: '#/components/schemas/Models.Projects'
-                description: Only for typescript, does not contain real data
   /get/audit_2/indexing/export/links/:
     post:
       operationId: GetAudit2IndexingExportLinks
@@ -11782,7 +11486,6 @@ paths:
                         properties:
                           result:
                             $ref: '#/components/schemas/Audit_2.Methods.Indexing.Export.Links.Get.Exec'
-                            title: Короткая гостевая ссылка на просмотр индексации
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
@@ -11834,7 +11537,6 @@ paths:
                         properties:
                           result:
                             $ref: '#/components/schemas/Audit_2.Methods.Indexing.Summary.Chart.Get.Exec'
-                            title: Сводки индексации
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
@@ -11866,7 +11568,6 @@ paths:
                         properties:
                           result:
                             $ref: '#/components/schemas/Audit_2.Methods.Sitemap.Checker.Go.Edit.Exec'
-                            title: '@return object{projectIds: int[]} Список id проектов, отрпавленных на проверку'
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
@@ -11874,7 +11575,6 @@ paths:
             model:
               schema:
                 $ref: '#/components/schemas/Models.Projects'
-                description: Only for typescript, does not contain real data
   /get/audit_2/sitemap/checker/price/:
     post:
       operationId: GetAudit2SitemapCheckerPrice
@@ -11899,7 +11599,6 @@ paths:
                         properties:
                           result:
                             $ref: '#/components/schemas/Audit_2.Methods.Sitemap.Checker.Price.Get.Exec'
-                            title: '@throws Exception'
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
@@ -11907,7 +11606,6 @@ paths:
             model:
               schema:
                 $ref: '#/components/schemas/Models.Projects'
-                description: Only for typescript, does not contain real data
   /edit/audit_2/watcher/checker/go/:
     post:
       operationId: EditAudit2WatcherCheckerGo
@@ -11932,7 +11630,6 @@ paths:
                         properties:
                           result:
                             $ref: '#/components/schemas/Audit_2.Methods.Watcher.Checker.Go.Edit.Exec'
-                            title: '@return object{projectIds: int[]} Список id проектов, отрпавленных на проверку'
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
@@ -11940,7 +11637,6 @@ paths:
             model:
               schema:
                 $ref: '#/components/schemas/Models.Projects'
-                description: Only for typescript, does not contain real data
   /get/audit_2/watcher/checker/price/:
     post:
       operationId: GetAudit2WatcherCheckerPrice
@@ -11965,7 +11661,6 @@ paths:
                         properties:
                           result:
                             $ref: '#/components/schemas/Audit_2.Methods.Watcher.Checker.Price.Get.Exec'
-                            title: '@throws Exception'
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
@@ -11973,7 +11668,6 @@ paths:
             model:
               schema:
                 $ref: '#/components/schemas/Models.Projects'
-                description: Only for typescript, does not contain real data
   /get/audit_2/watcher/export/links/:
     post:
       operationId: GetAudit2WatcherExportLinks
@@ -11998,7 +11692,6 @@ paths:
                         properties:
                           result:
                             $ref: '#/components/schemas/Audit_2.Methods.Watcher.Export.Links.Get.Exec'
-                            title: Короткая ссылка гостевого доступа для просмотра радара
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
@@ -12030,7 +11723,6 @@ paths:
                         properties:
                           result:
                             $ref: '#/components/schemas/Audit_2.Methods.Watcher.Summary.Chart.Get.Exec'
-                            title: Сводки с количеством изменений по каждому типу проверки
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
@@ -12062,7 +11754,6 @@ paths:
                         properties:
                           result:
                             $ref: '#/components/schemas/Content_2.Methods.Apometr.Text.Calendar.Get.Exec'
-                            title: '@return array<string, array<string, int>>'
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
@@ -12161,7 +11852,6 @@ paths:
                         properties:
                           result:
                             $ref: '#/components/schemas/Content_2.Methods.Journal.Course.Certificates.Add.Exec'
-                            title: '@throws Exception'
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
@@ -12169,7 +11859,6 @@ paths:
             model:
               schema:
                 $ref: '#/components/schemas/Models.Pages'
-                description: Only for typescript, does not contain real data
   /edit/content_2/journal/course/certificates/:
     post:
       operationId: EditContent2JournalCourseCertificates
@@ -12271,7 +11960,6 @@ paths:
             model:
               schema:
                 $ref: '#/components/schemas/Models.Pages'
-                description: Only for typescript, does not contain real data
   /get/content_2/journal/dictionary/articlesByLetter/:
     post:
       operationId: GetContent2JournalDictionaryArticlesByLetter
@@ -12280,7 +11968,6 @@ paths:
       summary: |-
         Получение списка страниц по буквам для модуля SEO словарь
         Результат функции кешируется
-      description: '@return array<string, array{url: string, h1: string}> - массив с ключом "Буква" и значением массив страниц Pages'
       requestBody:
         content:
           application/json:
@@ -12307,14 +11994,12 @@ paths:
             model:
               schema:
                 $ref: '#/components/schemas/Models.Pages'
-                description: Only for typescript, does not contain real data
   /get/content_2/journal/dictionary/wordOfday/:
     post:
       operationId: GetContent2JournalDictionaryWordOfday
       tags:
         - Content_2
       summary: Получение стаьи для "Слово дня" в модуле SEO словарь
-      description: '@return (array<string, array{url: string, menu_name: string, description: string, count_views: integer}> | null)'
       requestBody:
         content:
           application/json:
@@ -12341,7 +12026,6 @@ paths:
             model:
               schema:
                 $ref: '#/components/schemas/Models.Pages'
-                description: Only for typescript, does not contain real data
   /edit/keywords_2/collect/ext/go/:
     post:
       operationId: EditKeywords2CollectExtGo
@@ -12397,7 +12081,6 @@ paths:
                         properties:
                           result:
                             $ref: '#/components/schemas/Keywords_2.Methods.Collect.Ext.Price.Get.Exec'
-                            title: '@return array{pricesByUsers: array<string, array{price: float, priceOriginal: float, qualifiers: array{region_key: int, searcher_key: (0 | 1 | 5 | 100 | 101 | 102 | 104 | 105 | 106), region_lang?: (string | null), also_searched?: (int | null), depth?: (int | null), hint_depth: (1 | 2 | 3), hint_generators: array<(''letter'' | ''letter_ru'' | ''number'' | ''space'')>}, comment: string}>}'
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
@@ -12553,7 +12236,6 @@ paths:
             model:
               schema:
                 $ref: '#/components/schemas/Models.Projects'
-                description: Only for typescript, does not contain real data
   /edit/tickets_2/admin/templates/sort/:
     post:
       operationId: EditTickets2AdminTemplatesSort
@@ -12736,10 +12418,7 @@ components:
       type: object
       properties:
         errors:
-          title: |-
-            Результат ответа API метода
-
-            Тип результата зависит от типа запроса и его настроек
+          title: "Результат ответа API метода\r\n\r\nТип результата зависит от типа запроса и его настроек"
           nullable: true
           type: 'null'
         messages:
@@ -12757,10 +12436,7 @@ components:
       type: object
       properties:
         code:
-          title: |-
-            Код ошибки
-
-            Код ошибки 0 - deprecated
+          title: "Код ошибки\r\n\r\nКод ошибки 0 - deprecated"
           type: integer
         string:
           title: Описание ошибки
@@ -12888,9 +12564,7 @@ components:
       description: '@see AbstractMethod::MODEL'
       type: array
       items:
-        oneOf:
-          - type: string
-          - type: number
+        type: any
     orders:
       title: |-
         Список полей объекта, по которым необходимо выполнить сортировку
@@ -12901,9 +12575,7 @@ components:
       description: '@see AbstractMethod::MODEL'
       type: array
       items:
-        oneOf:
-          - type: string
-          - type: number
+        type: any
     filters:
       title: |-
         Список фильтров по полям объекта
@@ -12918,9 +12590,7 @@ components:
         @see Field::AVAILABLE_OPERATORS
       type: array
       items:
-        oneOf:
-          - type: string
-          - type: number
+        type: any
     id:
       title: |-
         Id объекта, для фильтрации объектов по id
@@ -12990,17 +12660,12 @@ components:
       nullable: true
       type: array
       items:
-        oneOf:
-          - type: string
-          - type: number
+        type: any
     Pagination:
       type: object
       properties:
         nextOffset:
-          title: |-
-            Смещение для получения следующий порции данных
-
-            Вернется только в случае существования следующей порции
+          title: "Смещение для получения следующий порции данных\r\n\r\nВернется только в случае существования следующей порции"
           nullable: true
           type: integer
         total:
@@ -13134,9 +12799,7 @@ components:
     Comments_2.Methods.Get.Exec:
       type: array
       items:
-        oneOf:
-          - type: string
-          - type: number
+        type: any
     Models.Comments:
       properties:
         id: {}
@@ -13232,9 +12895,7 @@ components:
            - count_likes
       type: array
       items:
-        oneOf:
-          - type: string
-          - type: number
+        type: any
     Payments_2.Types.System:
       type: string
       enum:
@@ -13339,9 +13000,7 @@ components:
           title: Элементы платежа
           type: array
           items:
-            oneOf:
-              - type: string
-              - type: number
+            type: any
         card_id:
           title: ID карты в системе оплаты для привязки
           type: string
@@ -13480,9 +13139,7 @@ components:
           nullable: true
           type: array
           items:
-            oneOf:
-              - type: string
-              - type: number
+            type: any
         point_size:
           title: Размер точек QR кода в пикселях
           default: 4
@@ -13617,9 +13274,7 @@ components:
             @see Schedule_2\Mods\Schedule::$availableDays
           type: array
           items:
-            oneOf:
-              - type: string
-              - type: number
+            type: any
         type:
           title: Тип расписания
           description: '@see Schedule_2\Mods\Schedule::$availableTypes'
@@ -13662,9 +13317,7 @@ components:
       title: '@throws Exception'
       type: array
       items:
-        oneOf:
-          - type: string
-          - type: number
+        type: any
     Tags_2.Types.Type:
       type: string
       enum:
@@ -13693,9 +13346,7 @@ components:
             </code>
           type: array
           items:
-            oneOf:
-              - type: string
-              - type: number
+            type: any
         project_id:
           nullable: true
           type: integer
@@ -13721,9 +13372,7 @@ components:
       nullable: true
       type: array
       items:
-        oneOf:
-          - type: string
-          - type: number
+        type: any
     Templates_2.Types.TargetType:
       type: string
       enum:
@@ -13757,16 +13406,12 @@ components:
           title: Поля шаблона
           type: array
           items:
-            oneOf:
-              - type: string
-              - type: number
+            type: any
         properties:
           title: Свойства шаблона
           type: array
           items:
-            oneOf:
-              - type: string
-              - type: number
+            type: any
       required:
         - target_type
         - name
@@ -13810,16 +13455,12 @@ components:
           title: Поля шаблона
           type: array
           items:
-            oneOf:
-              - type: string
-              - type: number
+            type: any
         properties:
           title: Свойства шаблона
           type: array
           items:
-            oneOf:
-              - type: string
-              - type: number
+            type: any
       required:
         - id
       title: Изменение шаблона
@@ -13846,9 +13487,7 @@ components:
       title: '@throws Exception'
       type: array
       items:
-        oneOf:
-          - type: string
-          - type: number
+        type: any
     Urls_2.Types.Flag:
       type: integer
       enum:
@@ -13942,9 +13581,7 @@ components:
         WATCHER_HTTP_CODES_HUNDREDS():
           type: array
           items:
-            oneOf:
-              - type: string
-              - type: number
+            type: any
           nullable: true
           example:
             need set qualifiers:
@@ -13990,9 +13627,7 @@ components:
         watcher_http_codes:
           type: array
           items:
-            oneOf:
-              - type: string
-              - type: number
+            type: any
           nullable: true
           example:
             need set qualifiers:
@@ -14006,9 +13641,7 @@ components:
         watcher_redirects:
           type: array
           items:
-            oneOf:
-              - type: string
-              - type: number
+            type: any
           nullable: true
           example:
             need set qualifiers:
@@ -14207,9 +13840,7 @@ components:
       nullable: true
       type: array
       items:
-        oneOf:
-          - type: string
-          - type: number
+        type: any
     Webscreens_2.Methods.Get:
       type: object
       properties:
@@ -14343,12 +13974,23 @@ components:
       required: []
       title: Получение записей словаря
     Admin_2.Methods.I18n.Get.Exec:
-      title: '@return array{lang: string, category: string, name: string, value: string}'
       type: array
+      properties:
+        lang:
+          type: string
+        category:
+          type: string
+        name:
+          type: string
+        value:
+          type: string
+      required:
+        - lang
+        - category
+        - name
+        - value
       items:
-        oneOf:
-          - type: string
-          - type: number
+        type: any
     TV.API.Types.IntArray:
       type: array
       items:
@@ -14432,9 +14074,7 @@ components:
     Admin_2.Methods.Informer.Add.Exec:
       type: array
       items:
-        oneOf:
-          - type: string
-          - type: number
+        type: any
     Admin_2.Methods.Logs.Edit:
       type: object
       properties:
@@ -14488,9 +14128,7 @@ components:
       nullable: true
       type: array
       items:
-        oneOf:
-          - type: string
-          - type: number
+        type: any
     Models.Analytics.Ranks:
       properties:
         ACTIVATIONS():
@@ -14575,9 +14213,7 @@ components:
           title: Привелегии
           type: array
           items:
-            oneOf:
-              - type: string
-              - type: number
+            type: any
       required:
         - id
         - email
@@ -14641,9 +14277,7 @@ components:
           title: Привелегии
           type: array
           items:
-            oneOf:
-              - type: string
-              - type: number
+            type: any
         group:
           title: Группа
           nullable: true
@@ -14724,9 +14358,7 @@ components:
         staff_posts:
           type: array
           items:
-            oneOf:
-              - type: string
-              - type: number
+            type: any
           nullable: true
         staff_post:
           nullable: true
@@ -14775,9 +14407,7 @@ components:
     Admin_2.Methods.Tpl.Get.Exec:
       type: array
       items:
-        oneOf:
-          - type: string
-          - type: number
+        type: any
     Admin_2.Methods.Users.Edit:
       type: object
       properties:
@@ -14906,9 +14536,7 @@ components:
       nullable: true
       type: array
       items:
-        oneOf:
-          - type: string
-          - type: number
+        type: any
     Annotations_2.Methods.My.Get:
       type: object
       properties:
@@ -14936,9 +14564,7 @@ components:
       nullable: true
       type: array
       items:
-        oneOf:
-          - type: string
-          - type: number
+        type: any
     App_2.Methods.Actions.Get:
       type: object
       properties:
@@ -14999,9 +14625,7 @@ components:
         alternates:
           type: array
           items:
-            oneOf:
-              - type: string
-              - type: number
+            type: any
       required:
         - title
         - description
@@ -15048,9 +14672,7 @@ components:
         tags:
           type: array
           items:
-            oneOf:
-              - type: string
-              - type: number
+            type: any
         count_views:
           type: integer
         count_unique_views:
@@ -15131,9 +14753,7 @@ components:
         items:
           type: array
           items:
-            oneOf:
-              - type: string
-              - type: number
+            type: any
       required:
         - items
     TV.Core.Sites.Site:
@@ -15177,9 +14797,7 @@ components:
             }
           type: array
           items:
-            oneOf:
-              - type: string
-              - type: number
+            type: any
       required:
         - host
         - config
@@ -15201,9 +14819,7 @@ components:
         _GET:
           type: array
           items:
-            oneOf:
-              - type: string
-              - type: number
+            type: any
         openGraph:
           allOf:
             - $ref: '#/components/schemas/Controller_2.Objects.OpenGraph'
@@ -15222,9 +14838,7 @@ components:
         params:
           type: array
           items:
-            oneOf:
-              - type: string
-              - type: number
+            type: any
         site:
           allOf:
             - $ref: '#/components/schemas/TV.Core.Sites.Site'
@@ -15254,15 +14868,11 @@ components:
         jsonLDs:
           type: array
           items:
-            oneOf:
-              - type: string
-              - type: number
+            type: any
         htmlAttributes:
           type: array
           items:
-            oneOf:
-              - type: string
-              - type: number
+            type: any
         logo:
           type: string
         redirect:
@@ -15289,15 +14899,11 @@ components:
         data:
           type: array
           items:
-            oneOf:
-              - type: string
-              - type: number
+            type: any
         rightsLabels:
           type: array
           items:
-            oneOf:
-              - type: string
-              - type: number
+            type: any
         isFullSize:
           type: boolean
         showFooter:
@@ -15416,9 +15022,7 @@ components:
             - data
           type: array
           items:
-            oneOf:
-              - type: string
-              - type: number
+            type: any
         show_headers:
           title: Вернуть ли заголовки отчета
           type: boolean
@@ -15439,9 +15043,7 @@ components:
           nullable: true
           type: array
           items:
-            oneOf:
-              - type: string
-              - type: number
+            type: any
         date1:
           title: Дата начала диапазона
           nullable: true
@@ -15496,9 +15098,7 @@ components:
       title: Список ссылок с данными по ним
       type: array
       items:
-        oneOf:
-          - type: string
-          - type: number
+        type: any
     Audit_2.Types.Settings.WatcherType:
       type: string
       enum:
@@ -15690,9 +15290,7 @@ components:
       nullable: true
       type: array
       items:
-        oneOf:
-          - type: string
-          - type: number
+        type: any
     Audit_2.Types.Watcher.TypeRange:
       type: integer
       enum:
@@ -15729,9 +15327,7 @@ components:
           nullable: true
           type: array
           items:
-            oneOf:
-              - type: string
-              - type: number
+            type: any
         check_id1:
           title: ID проверки начала диапазона
           nullable: true
@@ -15758,9 +15354,7 @@ components:
             - redirects
           type: array
           items:
-            oneOf:
-              - type: string
-              - type: number
+            type: any
         show_headers:
           title: Добавить в результат заголовки отчета
           type: boolean
@@ -15798,9 +15392,7 @@ components:
       nullable: true
       type: array
       items:
-        oneOf:
-          - type: string
-          - type: number
+        type: any
     Bank_2.Methods.Bank.Get:
       type: object
       properties:
@@ -15899,9 +15491,7 @@ components:
           title: Выдаваемые лимиты
           type: array
           items:
-            oneOf:
-              - type: string
-              - type: number
+            type: any
         suffixName:
           title: Суффикс, характеризующий настройки тарифа
           type: string
@@ -16075,16 +15665,12 @@ components:
           description: '@type Array<Bank_2\Types\Subscriptions\Limit\Name, int>'
           type: array
           items:
-            oneOf:
-              - type: string
-              - type: number
+            type: any
         limitTypeByName:
           title: Типы лимитов
           type: array
           items:
-            oneOf:
-              - type: string
-              - type: number
+            type: any
       required:
         - paymentId
         - paymentSystem
@@ -16118,12 +15704,32 @@ components:
       title: Получение информации о балансе
     Bank_2.Methods.Info.Get.Exec:
       title: Информация о балансе и тарифе пользователя.
-      description: '@return array{balance_all: float, balance_personal: float, balance_bonus: float, balance_tariff: float, tariff: array, subscription?: Bank_2\Objects\Subscriptions\Subscription, subscription_name?: Bank_2\Objects\Subscriptions\Subscription}'
       type: array
+      properties:
+        balance_all:
+          type: number
+        balance_personal:
+          type: number
+        balance_bonus:
+          type: number
+        balance_tariff:
+          type: number
+        tariff:
+          type: array
+          items:
+            type: any
+        subscription:
+          $ref: '#/components/schemas/Bank_2.Objects.Subscriptions.Subscription'
+        subscription_name:
+          $ref: '#/components/schemas/Bank_2.Objects.Subscriptions.Subscription'
+      required:
+        - balance_all
+        - balance_personal
+        - balance_bonus
+        - balance_tariff
+        - tariff
       items:
-        oneOf:
-          - type: string
-          - type: number
+        type: any
     Bank_2.Types.Requisites.Type:
       type: string
       enum:
@@ -16303,9 +15909,15 @@ components:
         - type
       title: Редактирование объявления
     Broker_2.Methods.Ads.Edit.Exec:
-      title: '@return (array | int | null) выводит int, если функция провайдера не определена'
+      title: выводит int, если функция провайдера не определена
       description: '@throws Exception'
       nullable: true
+      anyOf:
+        - type: array
+          items:
+            type: any
+        - type: integer
+        - type: 'null'
     Broker_2.Methods.Ads.Get:
       type: object
       properties:
@@ -16338,9 +15950,7 @@ components:
       nullable: true
       type: array
       items:
-        oneOf:
-          - type: string
-          - type: number
+        type: any
     Models.Broker.Ads:
       properties:
         id: {}
@@ -16567,9 +16177,7 @@ components:
       title: '@throws Exception'
       type: array
       items:
-        oneOf:
-          - type: string
-          - type: number
+        type: any
     Broker_2.Methods.Groups.Add:
       type: object
       properties:
@@ -16580,17 +16188,21 @@ components:
           title: Имена групп
           type: array
           items:
-            oneOf:
-              - type: string
-              - type: number
+            type: any
       required:
         - campaign_tv_id
         - groups_names
       title: Добавление групп рекламной кампании
     Broker_2.Methods.Groups.Add.Exec:
-      title: '@return (array | int | null) выводит int, если функция провайдера не определена'
+      title: выводит int, если функция провайдера не определена
       description: '@throws Exception'
       nullable: true
+      anyOf:
+        - type: array
+          items:
+            type: any
+        - type: integer
+        - type: 'null'
     Broker_2.Methods.Groups.Get:
       type: object
       properties:
@@ -16602,9 +16214,7 @@ components:
           nullable: true
           type: array
           items:
-            oneOf:
-              - type: string
-              - type: number
+            type: any
         fields:
           $ref: '#/components/schemas/fields'
         orders:
@@ -16630,9 +16240,7 @@ components:
       title: '@throws Exception'
       type: array
       items:
-        oneOf:
-          - type: string
-          - type: number
+        type: any
     Models.Broker.Groups:
       properties:
         GEN_SEARCH_STRING():
@@ -16684,17 +16292,21 @@ components:
           title: Информация о запросах (id группы и id запросов)
           type: array
           items:
-            oneOf:
-              - type: string
-              - type: number
+            type: any
       required:
         - campaign_tv_id
         - keywords_data
       title: Удаление запросов рекламной кампании
     Broker_2.Methods.Keywords.Del.Exec:
-      title: '@return (array | int | null) выводит int, если функция провайдера не определена'
+      title: выводит int, если функция провайдера не определена
       description: '@throws Exception'
       nullable: true
+      anyOf:
+        - type: array
+          items:
+            type: any
+        - type: integer
+        - type: 'null'
     Broker_2.Types.Keywords.Tactics2:
       type: string
       enum:
@@ -16856,9 +16468,7 @@ components:
       title: '@throws Exception'
       type: array
       items:
-        oneOf:
-          - type: string
-          - type: number
+        type: any
     Broker_2.Methods.Log.Get:
       type: object
       properties:
@@ -16891,9 +16501,7 @@ components:
       nullable: true
       type: array
       items:
-        oneOf:
-          - type: string
-          - type: number
+        type: any
     Models.Broker.Log:
       properties:
         COUNT(*):
@@ -16937,9 +16545,7 @@ components:
       nullable: true
       type: array
       items:
-        oneOf:
-          - type: string
-          - type: number
+        type: any
     Comments_2.Methods.Like.Edit:
       type: object
       properties:
@@ -17225,25 +16831,19 @@ components:
           nullable: true
           type: array
           items:
-            oneOf:
-              - type: string
-              - type: number
+            type: any
         c:
           title: Массив тегов
           nullable: true
           type: array
           items:
-            oneOf:
-              - type: string
-              - type: number
+            type: any
         tags:
           title: Список тегов
           nullable: true
           type: array
           items:
-            oneOf:
-              - type: string
-              - type: number
+            type: any
         noindex:
           title: Не индексировать страницу
           type: boolean
@@ -17459,25 +17059,19 @@ components:
           nullable: true
           type: array
           items:
-            oneOf:
-              - type: string
-              - type: number
+            type: any
         c:
           title: Массив тегов
           nullable: true
           type: array
           items:
-            oneOf:
-              - type: string
-              - type: number
+            type: any
         tags:
           title: Список тегов
           nullable: true
           type: array
           items:
-            oneOf:
-              - type: string
-              - type: number
+            type: any
         noindex:
           title: Не индексировать страницу
           type: boolean
@@ -17595,25 +17189,19 @@ components:
           nullable: true
           type: array
           items:
-            oneOf:
-              - type: string
-              - type: number
+            type: any
         c:
           title: Массив тегов
           nullable: true
           type: array
           items:
-            oneOf:
-              - type: string
-              - type: number
+            type: any
         tags:
           title: Список тегов
           nullable: true
           type: array
           items:
-            oneOf:
-              - type: string
-              - type: number
+            type: any
         noindex:
           title: Не индексировать страницу
           type: boolean
@@ -17684,9 +17272,7 @@ components:
       nullable: true
       type: array
       items:
-        oneOf:
-          - type: string
-          - type: number
+        type: any
     Content_2.Methods.Redirects.AbstractRegular:
       type: object
       properties:
@@ -17861,9 +17447,7 @@ components:
       nullable: true
       type: array
       items:
-        oneOf:
-          - type: string
-          - type: number
+        type: any
     Models.ContentsRedirects:
       properties:
         PATH_MASK():
@@ -17960,9 +17544,7 @@ components:
       title: '@throws Exception'
       type: array
       items:
-        oneOf:
-          - type: string
-          - type: number
+        type: any
     Content_2.Methods.Sitemap.Get:
       type: object
       properties:
@@ -18011,9 +17593,7 @@ components:
       nullable: true
       type: array
       items:
-        oneOf:
-          - type: string
-          - type: number
+        type: any
     Cron_2.Types.Day:
       type: string
       enum:
@@ -18188,9 +17768,7 @@ components:
       nullable: true
       type: array
       items:
-        oneOf:
-          - type: string
-          - type: number
+        type: any
     Cron_2.Methods.Get:
       type: object
       properties:
@@ -18219,9 +17797,7 @@ components:
       nullable: true
       type: array
       items:
-        oneOf:
-          - type: string
-          - type: number
+        type: any
     TV.API.Types.BoolArray:
       type: array
       items:
@@ -18276,9 +17852,7 @@ components:
       description: '@type array<string, array<string, mixed>>'
       type: array
       items:
-        oneOf:
-          - type: string
-          - type: number
+        type: any
     Example_2.Methods.Bag.Get:
       type: object
       properties:
@@ -18335,9 +17909,7 @@ components:
       title: Ассоциативный массив с результирующими переданными параетрами и результатом genSet()
       type: array
       items:
-        oneOf:
-          - type: string
-          - type: number
+        type: any
     Example_2.Objects.Address:
       type: object
       properties:
@@ -18379,9 +17951,7 @@ components:
       title: Ассоциативный массив с результирующими переданными параетрами и результатом genSet()
       type: array
       items:
-        oneOf:
-          - type: string
-          - type: number
+        type: any
     Example_2.Methods.PhpDoc.Get:
       type: object
       properties:
@@ -18407,16 +17977,33 @@ components:
       title: Тест phpDoc
       description: '@todo : Удалить после настройки openapi'
     Example_2.Methods.PhpDoc.Get.Exec:
-      title: |-
-        Тест phpDoc
-
-        TODO: Удалить после настройки openapi
-
-        - static
-        - parent
-        - self
-      allOf:
-        - $ref: '#/components/schemas/Example_2.Objects.User'
+      title: Test phpDoc
+      anyOf:
+        - type: array
+          items:
+            anyOf:
+              - type: integer
+                enum:
+                  - '1'
+              - type: integer
+                enum:
+                  - '2'
+              - type: array
+                items:
+                  $ref: '#/components/schemas/Example_2.Objects.User'
+        - type: object
+          properties:
+            name:
+              type: array
+              items:
+                type: object
+                properties:
+                  a:
+                    $ref: '#/components/schemas/Example_2.Objects.User'
+                required:
+                  - a
+          required:
+            - name
     Example_2.Methods.Projects.Get:
       type: object
       properties:
@@ -18453,9 +18040,7 @@ components:
       nullable: true
       type: array
       items:
-        oneOf:
-          - type: string
-          - type: number
+        type: any
     Models.Projects:
       properties:
         COUNT(*):
@@ -18607,16 +18192,12 @@ components:
         indexing_searchers_keys:
           type: array
           items:
-            oneOf:
-              - type: string
-              - type: number
+            type: any
           nullable: true
         watcher_types:
           type: array
           items:
-            oneOf:
-              - type: string
-              - type: number
+            type: any
           nullable: true
     Keywords_2.Types.Collect.SearcherKey:
       type: integer
@@ -18702,9 +18283,7 @@ components:
           title: Список исходных запросов
           type: array
           items:
-            oneOf:
-              - type: string
-              - type: number
+            type: any
         qualifiers:
           title: Объекты определителей настроек ПС и регионов
           allOf:
@@ -18713,9 +18292,7 @@ components:
           title: Минус фразы (только для searcher_key = 0 и searcher_key = 1)
           type: array
           items:
-            oneOf:
-              - type: string
-              - type: number
+            type: any
         to_group_id:
           title: Id группы для размещения подобранных запросов
           nullable: true
@@ -19019,9 +18596,7 @@ components:
       nullable: true
       type: array
       items:
-        oneOf:
-          - type: string
-          - type: number
+        type: any
     Payments_2.Methods.ContractSign.Edit:
       type: object
       properties:
@@ -19104,9 +18679,7 @@ components:
       nullable: true
       type: array
       items:
-        oneOf:
-          - type: string
-          - type: number
+        type: any
     Positions_2.Types.SearcherKey:
       type: integer
       enum:
@@ -19356,9 +18929,7 @@ components:
       nullable: true
       type: array
       items:
-        oneOf:
-          - type: string
-          - type: number
+        type: any
     TV.API.Types.UrlShort:
       type: string
       title: |-
@@ -19396,9 +18967,7 @@ components:
           nullable: true
           type: array
           items:
-            oneOf:
-              - type: string
-              - type: number
+            type: any
       required:
         - project_id
         - urls
@@ -19409,9 +18978,7 @@ components:
     Projects_2.Methods.Competitors.Add.Exec:
       type: array
       items:
-        oneOf:
-          - type: string
-          - type: number
+        type: any
     Projects_2.Methods.Competitors.Del:
       type: object
       properties:
@@ -19448,9 +19015,7 @@ components:
             - 'on'
           type: array
           items:
-            oneOf:
-              - type: string
-              - type: number
+            type: any
         project_id:
           title: ID проекта
           type: integer
@@ -19469,9 +19034,7 @@ components:
       nullable: true
       type: array
       items:
-        oneOf:
-          - type: string
-          - type: number
+        type: any
     Projects_2.Methods.Folders.Add:
       type: object
       properties:
@@ -19550,9 +19113,7 @@ components:
             - 1
           type: array
           items:
-            oneOf:
-              - type: string
-              - type: number
+            type: any
         folder_id:
           title: Id папки, к которой будет привязан проект
           nullable: true
@@ -19614,9 +19175,7 @@ components:
           deprecated: true
           type: array
           items:
-            oneOf:
-              - type: string
-              - type: number
+            type: any
         is_task:
           title: Является ли проект задачей
           nullable: true
@@ -19645,9 +19204,7 @@ components:
       nullable: true
       type: array
       items:
-        oneOf:
-          - type: string
-          - type: number
+        type: any
     Projects_2.Methods.Rights.Del:
       type: object
       properties:
@@ -19663,9 +19220,7 @@ components:
           nullable: true
           type: array
           items:
-            oneOf:
-              - type: string
-              - type: number
+            type: any
         project_id:
           title: |-
             ID проекта
@@ -19687,9 +19242,7 @@ components:
           nullable: true
           type: array
           items:
-            oneOf:
-              - type: string
-              - type: number
+            type: any
         email:
           title: Email пользователя (если пользователь не зарегистрирован будет выслано приглашение)
           allOf:
@@ -19732,9 +19285,7 @@ components:
     Projects_2.Methods.Rights.Get.Exec:
       type: array
       items:
-        oneOf:
-          - type: string
-          - type: number
+        type: any
     Projects_2.Methods.Status.Get:
       type: object
       properties:
@@ -19912,9 +19463,7 @@ components:
           nullable: true
           type: array
           items:
-            oneOf:
-              - type: string
-              - type: number
+            type: any
         volumes_types:
           title: Имеет смысл только для Яндекс
           nullable: true
@@ -19994,9 +19543,7 @@ components:
     Schedule_2.Methods.Settings.Get.Exec:
       type: array
       items:
-        oneOf:
-          - type: string
-          - type: number
+        type: any
     Sms_2.Methods.CheckPIN.Get:
       type: object
       properties:
@@ -20038,9 +19585,7 @@ components:
       title: '@throws Exception'
       type: array
       items:
-        oneOf:
-          - type: string
-          - type: number
+        type: any
     Templates_2.Methods.Fields.Del:
       type: object
       properties:
@@ -20077,9 +19622,7 @@ components:
           title: Свойства шаблона
           type: array
           items:
-            oneOf:
-              - type: string
-              - type: number
+            type: any
         fields:
           $ref: '#/components/schemas/fields'
       required:
@@ -20109,9 +19652,7 @@ components:
       title: '@throws Exception'
       type: array
       items:
-        oneOf:
-          - type: string
-          - type: number
+        type: any
     Templates_2.Methods.FieldsProperties.Get:
       type: object
       properties:
@@ -20169,9 +19710,7 @@ components:
     Tickets_2.Methods.Files.Get.Exec:
       type: array
       items:
-        oneOf:
-          - type: string
-          - type: number
+        type: any
     Tickets_2.Methods.Messages.Add:
       type: object
       properties:
@@ -20255,9 +19794,7 @@ components:
           nullable: true
           type: array
           items:
-            oneOf:
-              - type: string
-              - type: number
+            type: any
         resource:
           title: |-
             URL страницы, с которой отправлен тикет
@@ -20328,9 +19865,7 @@ components:
           nullable: true
           type: array
           items:
-            oneOf:
-              - type: string
-              - type: number
+            type: any
         show_messages_users:
           title: Добавить в результат данные пользователей, написавших сообщения в тикеты
           type: boolean
@@ -20361,9 +19896,7 @@ components:
       nullable: true
       type: array
       items:
-        oneOf:
-          - type: string
-          - type: number
+        type: any
     Models.Tickets:
       properties:
         REQUISITES():
@@ -20536,9 +20069,7 @@ components:
             set(Audit_2\Types\Type => regexp)
           type: array
           items:
-            oneOf:
-              - type: string
-              - type: number
+            type: any
         sitemap:
           title: |-
             Флаг активности в карте сайта
@@ -20581,15 +20112,27 @@ components:
     Urls_2.Methods.Import.Add.Exec:
       title: Информация об импортированных urls
       description: |-
-        @return ?array{'countSended': int, 'countDuplicated': int, 'countAdded': int, 'countChanged': int}
+
 
         @throws Exception
       nullable: true
       type: array
+      properties:
+        '''countSended''':
+          type: integer
+        '''countDuplicated''':
+          type: integer
+        '''countAdded''':
+          type: integer
+        '''countChanged''':
+          type: integer
+      required:
+        - '''countSended'''
+        - '''countDuplicated'''
+        - '''countAdded'''
+        - '''countChanged'''
       items:
-        oneOf:
-          - type: string
-          - type: number
+        type: any
     Urls_2.Types.Tags.Action:
       type: string
       enum:
@@ -20778,9 +20321,7 @@ components:
       nullable: true
       type: array
       items:
-        oneOf:
-          - type: string
-          - type: number
+        type: any
     Models.EmptyModel:
       properties: {}
     Admin_2.Methods.Accounting.Invoices.Add:
@@ -20950,9 +20491,7 @@ components:
           title: Ассоциативный массив с информацией, связанной с выполняемым дейсвтием
           type: array
           items:
-            oneOf:
-              - type: string
-              - type: number
+            type: any
         executionTime:
           title: Время выполнения дейсвтия
           type: number
@@ -20960,9 +20499,7 @@ components:
           title: Информация о затраченных ресурсавах при выполнении дейсвтия
           type: array
           items:
-            oneOf:
-              - type: string
-              - type: number
+            type: any
       required:
         - isTest
         - info
@@ -21108,9 +20645,7 @@ components:
       nullable: true
       type: array
       items:
-        oneOf:
-          - type: string
-          - type: number
+        type: any
     Admin_2.Methods.Affiliate.ReferralsByLevel.Get:
       type: object
       properties:
@@ -21128,9 +20663,7 @@ components:
     Admin_2.Methods.Affiliate.ReferralsByLevel.Get.Exec:
       type: array
       items:
-        oneOf:
-          - type: string
-          - type: number
+        type: any
     Admin_2.Methods.Affiliate.Referrals.Get:
       type: object
       properties:
@@ -21148,9 +20681,7 @@ components:
     Admin_2.Methods.Affiliate.Referrals.Get.Exec:
       type: array
       items:
-        oneOf:
-          - type: string
-          - type: number
+        type: any
     Admin_2.Methods.Affiliate.ReferrersByReferrals.Get:
       type: object
       properties:
@@ -21168,9 +20699,7 @@ components:
     Admin_2.Methods.Affiliate.ReferrersByReferrals.Get.Exec:
       type: array
       items:
-        oneOf:
-          - type: string
-          - type: number
+        type: any
     Admin_2.Methods.Affiliate.Referrers.Get:
       type: object
       properties:
@@ -21192,9 +20721,7 @@ components:
     Admin_2.Methods.Affiliate.Referrers.Get.Exec:
       type: array
       items:
-        oneOf:
-          - type: string
-          - type: number
+        type: any
     Admin_2.Methods.Affiliate.ReferrersWithReferrals.Get:
       type: object
       properties:
@@ -21222,9 +20749,7 @@ components:
       nullable: true
       type: array
       items:
-        oneOf:
-          - type: string
-          - type: number
+        type: any
     Admin_2.Methods.Analytics.Activity.Get:
       type: object
       properties:
@@ -21255,9 +20780,7 @@ components:
       nullable: true
       type: array
       items:
-        oneOf:
-          - type: string
-          - type: number
+        type: any
     Admin_2.Methods.Analytics.CountOnlineUsers.Get:
       type: object
       properties: {}
@@ -21266,9 +20789,7 @@ components:
     Admin_2.Methods.Analytics.CountOnlineUsers.Get.Exec:
       type: array
       items:
-        oneOf:
-          - type: string
-          - type: number
+        type: any
     Admin_2.Methods.Analytics.Events.Get:
       type: object
       properties:
@@ -21352,9 +20873,7 @@ components:
       nullable: true
       type: array
       items:
-        oneOf:
-          - type: string
-          - type: number
+        type: any
     Admin_2.Methods.Analytics.Get:
       type: object
       properties:
@@ -21388,9 +20907,7 @@ components:
     Admin_2.Methods.Analytics.Get.Exec:
       type: array
       items:
-        oneOf:
-          - type: string
-          - type: number
+        type: any
     Admin_2.Methods.Analytics.Statistics.Get:
       type: object
       properties: {}
@@ -21400,9 +20917,7 @@ components:
       nullable: true
       type: array
       items:
-        oneOf:
-          - type: string
-          - type: number
+        type: any
     Admin_2.Methods.Analytics.Tickets.AbstractTicketsStats:
       type: object
       properties:
@@ -21456,9 +20971,7 @@ components:
     Admin_2.Methods.Analytics.Tickets.Get.Exec:
       type: array
       items:
-        oneOf:
-          - type: string
-          - type: number
+        type: any
     Admin_2.Methods.I18n.Categories.Get:
       type: object
       properties: {}
@@ -21467,9 +20980,7 @@ components:
     Admin_2.Methods.I18n.Categories.Get.Exec:
       type: array
       items:
-        oneOf:
-          - type: string
-          - type: number
+        type: any
     Admin_2.Methods.Logs.System.Get:
       type: object
       properties:
@@ -21493,9 +21004,7 @@ components:
       nullable: true
       type: array
       items:
-        oneOf:
-          - type: string
-          - type: number
+        type: any
     Admin_2.Methods.Ranks.Activations.Get:
       type: object
       properties:
@@ -21556,9 +21065,7 @@ components:
       nullable: true
       type: array
       items:
-        oneOf:
-          - type: string
-          - type: number
+        type: any
     Admin_2.Methods.Staff.Access.Edit:
       type: object
       properties:
@@ -21618,9 +21125,7 @@ components:
     Admin_2.Methods.Staff.ByPost.Get.Exec:
       type: array
       items:
-        oneOf:
-          - type: string
-          - type: number
+        type: any
     Admin_2.Methods.Staff.ContractPrint.Get:
       type: object
       properties:
@@ -21628,9 +21133,7 @@ components:
           title: Параметры, передаваемые в шаблон
           type: array
           items:
-            oneOf:
-              - type: string
-              - type: number
+            type: any
       required:
         - props
       title: Печать договора
@@ -21642,9 +21145,7 @@ components:
     Admin_2.Methods.Staff.Posts.Get.Exec:
       type: array
       items:
-        oneOf:
-          - type: string
-          - type: number
+        type: any
     Admin_2.Methods.Staff.Vacation.Add:
       type: object
       properties:
@@ -21667,9 +21168,7 @@ components:
             - day_off
           type: array
           items:
-            oneOf:
-              - type: string
-              - type: number
+            type: any
       required:
         - user_id
         - date1
@@ -21716,9 +21215,7 @@ components:
     Admin_2.Methods.Tpl.Schema.Get.Exec:
       type: array
       items:
-        oneOf:
-          - type: string
-          - type: number
+        type: any
     Admin_2.Methods.Users.Promocodes.Add:
       type: object
       properties:
@@ -21733,9 +21230,7 @@ components:
           nullable: true
           type: array
           items:
-            oneOf:
-              - type: string
-              - type: number
+            type: any
       required:
         - rank_id
       title: Добавление промокоды к достижению
@@ -21789,9 +21284,7 @@ components:
       nullable: true
       type: array
       items:
-        oneOf:
-          - type: string
-          - type: number
+        type: any
     Admin_2.Types.Users.Ranks.Category:
       type: string
       enum:
@@ -22028,9 +21521,7 @@ components:
       nullable: true
       type: array
       items:
-        oneOf:
-          - type: string
-          - type: number
+        type: any
     check_id:
       title: ID проверки аудита
       type: integer
@@ -22051,9 +21542,7 @@ components:
       nullable: true
       type: array
       items:
-        oneOf:
-          - type: string
-          - type: number
+        type: any
     Audit_2.Methods.Audit.Checks.Get:
       type: object
       properties:
@@ -22352,9 +21841,7 @@ components:
       nullable: true
       type: array
       items:
-        oneOf:
-          - type: string
-          - type: number
+        type: any
     Models.Audit.Css:
       properties:
         COUNT(*):
@@ -22362,9 +21849,7 @@ components:
         HTTP_CODES_HUNDREDS():
           type: array
           items:
-            oneOf:
-              - type: string
-              - type: number
+            type: any
           nullable: true
         check_id:
           nullable: true
@@ -22381,18 +21866,14 @@ components:
         http_codes:
           type: array
           items:
-            oneOf:
-              - type: string
-              - type: number
+            type: any
           nullable: true
         last_http_code:
           nullable: true
         redirects:
           type: array
           items:
-            oneOf:
-              - type: string
-              - type: number
+            type: any
           nullable: true
         locations:
           nullable: true
@@ -22481,9 +21962,7 @@ components:
             Только для $target_type = pages
           type: array
           items:
-            oneOf:
-              - type: string
-              - type: number
+            type: any
         output:
           title: Формат экспортируемого файла
           allOf:
@@ -22538,9 +22017,7 @@ components:
       nullable: true
       type: array
       items:
-        oneOf:
-          - type: string
-          - type: number
+        type: any
     Models.Audit.Images:
       properties:
         COUNT(*):
@@ -22548,9 +22025,7 @@ components:
         HTTP_CODES_HUNDREDS():
           type: array
           items:
-            oneOf:
-              - type: string
-              - type: number
+            type: any
           nullable: true
         check_id:
           nullable: true
@@ -22567,18 +22042,14 @@ components:
         http_codes:
           type: array
           items:
-            oneOf:
-              - type: string
-              - type: number
+            type: any
           nullable: true
         last_http_code:
           nullable: true
         redirects:
           type: array
           items:
-            oneOf:
-              - type: string
-              - type: number
+            type: any
           nullable: true
         locations:
           nullable: true
@@ -22676,9 +22147,7 @@ components:
       nullable: true
       type: array
       items:
-        oneOf:
-          - type: string
-          - type: number
+        type: any
     Models.Audit.Js:
       properties:
         COUNT(*):
@@ -22686,9 +22155,7 @@ components:
         HTTP_CODES_HUNDREDS():
           type: array
           items:
-            oneOf:
-              - type: string
-              - type: number
+            type: any
           nullable: true
         check_id:
           nullable: true
@@ -22705,18 +22172,14 @@ components:
         http_codes:
           type: array
           items:
-            oneOf:
-              - type: string
-              - type: number
+            type: any
           nullable: true
         last_http_code:
           nullable: true
         redirects:
           type: array
           items:
-            oneOf:
-              - type: string
-              - type: number
+            type: any
           nullable: true
         ttfb:
           nullable: true
@@ -22802,9 +22265,7 @@ components:
       nullable: true
       type: array
       items:
-        oneOf:
-          - type: string
-          - type: number
+        type: any
     Models.Audit.Links:
       properties:
         COUNT(*):
@@ -22814,9 +22275,7 @@ components:
         HTTP_CODES_HUNDREDS():
           type: array
           items:
-            oneOf:
-              - type: string
-              - type: number
+            type: any
           nullable: true
         check_id:
           nullable: true
@@ -22838,9 +22297,7 @@ components:
         http_codes:
           type: array
           items:
-            oneOf:
-              - type: string
-              - type: number
+            type: any
           nullable: true
         last_http_code:
           nullable: true
@@ -22851,9 +22308,7 @@ components:
         redirects:
           type: array
           items:
-            oneOf:
-              - type: string
-              - type: number
+            type: any
           nullable: true
         nofollow:
           nullable: true
@@ -22947,9 +22402,7 @@ components:
       title: Данные проверенных ресурсов
       type: array
       items:
-        oneOf:
-          - type: string
-          - type: number
+        type: any
     Audit_2.Methods.Audit.Pages.Get:
       type: object
       properties:
@@ -22962,9 +22415,7 @@ components:
           title: Фильтр по ресурсам страницы, API fitlers для объекта, тип которого указан в filters_extra_target_type
           type: array
           items:
-            oneOf:
-              - type: string
-              - type: number
+            type: any
         fields:
           $ref: '#/components/schemas/fields'
         orders:
@@ -22996,9 +22447,7 @@ components:
       nullable: true
       type: array
       items:
-        oneOf:
-          - type: string
-          - type: number
+        type: any
     Models.Audit.Pages:
       properties:
         dummy_opener_summary_page:
@@ -23008,9 +22457,7 @@ components:
         HTTP_CODES_HUNDREDS():
           type: array
           items:
-            oneOf:
-              - type: string
-              - type: number
+            type: any
           nullable: true
         check_id:
           nullable: true
@@ -23023,9 +22470,7 @@ components:
         http_codes:
           type: array
           items:
-            oneOf:
-              - type: string
-              - type: number
+            type: any
           nullable: true
         last_http_code:
           nullable: true
@@ -23034,9 +22479,7 @@ components:
         redirects:
           type: array
           items:
-            oneOf:
-              - type: string
-              - type: number
+            type: any
           nullable: true
         meta_robots_none:
           nullable: true
@@ -23247,9 +22690,7 @@ components:
           title: Фильтр по состоянию сигнала (success, warning, error)
           type: array
           items:
-            oneOf:
-              - type: string
-              - type: number
+            type: any
         filter_check_state:
           nullable: true
           allOf:
@@ -23291,9 +22732,7 @@ components:
       nullable: true
       type: array
       items:
-        oneOf:
-          - type: string
-          - type: number
+        type: any
     Audit_2.Methods.Audit.SummaryPage.Get:
       type: object
       properties:
@@ -23332,9 +22771,7 @@ components:
       nullable: true
       type: array
       items:
-        oneOf:
-          - type: string
-          - type: number
+        type: any
     Audit_2.Methods.Indexing.Export.Get:
       type: object
       properties:
@@ -23358,17 +22795,13 @@ components:
           title: Настройки экспорта
           type: array
           items:
-            oneOf:
-              - type: string
-              - type: number
+            type: any
         dates:
           title: Произвольные даты без использования диапазона
           nullable: true
           type: array
           items:
-            oneOf:
-              - type: string
-              - type: number
+            type: any
         date1:
           title: Дата начала диапазона
           nullable: true
@@ -23417,9 +22850,7 @@ components:
           nullable: true
           type: array
           items:
-            oneOf:
-              - type: string
-              - type: number
+            type: any
         date1:
           title: Дата начала диапазона
           nullable: true
@@ -23443,41 +22874,31 @@ components:
           nullable: true
           type: array
           items:
-            oneOf:
-              - type: string
-              - type: number
+            type: any
         tags:
           title: Теги
           nullable: true
           type: array
           items:
-            oneOf:
-              - type: string
-              - type: number
+            type: any
         dynamic:
           title: Динамический
           nullable: true
           type: array
           items:
-            oneOf:
-              - type: string
-              - type: number
+            type: any
         data_dynamic:
           title: Динаамические данные
           nullable: true
           type: array
           items:
-            oneOf:
-              - type: string
-              - type: number
+            type: any
         data_sort:
           title: Сортировка данных
           nullable: true
           type: array
           items:
-            oneOf:
-              - type: string
-              - type: number
+            type: any
         project_id:
           $ref: '#/components/schemas/project_id'
       required:
@@ -23498,9 +22919,7 @@ components:
           title: Произвольные даты без диапазона
           type: array
           items:
-            oneOf:
-              - type: string
-              - type: number
+            type: any
         searcher_key:
           nullable: true
           allOf:
@@ -23536,9 +22955,7 @@ components:
       nullable: true
       type: array
       items:
-        oneOf:
-          - type: string
-          - type: number
+        type: any
     Audit_2.Methods.Watcher.ByURL.Get:
       type: object
       properties:
@@ -23555,9 +22972,7 @@ components:
             - redirects
           type: array
           items:
-            oneOf:
-              - type: string
-              - type: number
+            type: any
         show_diff:
           allOf:
             - $ref: '#/components/schemas/Audit_2.Types.Watcher.ShowDiff'
@@ -23600,9 +23015,7 @@ components:
       nullable: true
       type: array
       items:
-        oneOf:
-          - type: string
-          - type: number
+        type: any
     Models.Watcher.Results:
       properties:
         project_id:
@@ -23614,9 +23027,7 @@ components:
         http_codes:
           type: array
           items:
-            oneOf:
-              - type: string
-              - type: number
+            type: any
           nullable: true
         http_codes_changed:
           nullable: true
@@ -23625,9 +23036,7 @@ components:
         redirects:
           type: array
           items:
-            oneOf:
-              - type: string
-              - type: number
+            type: any
           nullable: true
         redirects_changed:
           nullable: true
@@ -23670,9 +23079,7 @@ components:
       nullable: true
       type: array
       items:
-        oneOf:
-          - type: string
-          - type: number
+        type: any
     Audit_2.Methods.Watcher.Summary.Get:
       type: object
       properties:
@@ -23681,16 +23088,12 @@ components:
           nullable: true
           type: array
           items:
-            oneOf:
-              - type: string
-              - type: number
+            type: any
         checks_ids:
           title: ID проверок
           type: array
           items:
-            oneOf:
-              - type: string
-              - type: number
+            type: any
         show_counts_changes:
           title: Отобразить количество изменений по типам
           type: boolean
@@ -23712,9 +23115,7 @@ components:
       nullable: true
       type: array
       items:
-        oneOf:
-          - type: string
-          - type: number
+        type: any
     Bank_2.Methods.Diadoc.SendContract.Get:
       type: object
       properties:
@@ -23815,9 +23216,7 @@ components:
     Bank_2.Methods.History.Summary.Get.Exec:
       type: array
       items:
-        oneOf:
-          - type: string
-          - type: number
+        type: any
     Bank_2.Methods.Referrals.ToBonus.Edit:
       type: object
       properties:
@@ -23933,12 +23332,9 @@ components:
       required: []
       title: Получение интерфейсов настройки всех планов подписки
     Bank_2.Methods.Subscriptions.Plans.Get.Exec:
-      title: '@return Bank_2\Objects\Subscriptions\Plan[]'
       type: array
       items:
-        oneOf:
-          - type: string
-          - type: number
+        $ref: '#/components/schemas/Bank_2.Objects.Subscriptions.Plan'
     Broker_2.Methods.Ads.Status.Edit:
       type: object
       properties:
@@ -23949,17 +23345,21 @@ components:
           title: Информация об объявлениях (id группы, id объявлений и статусы объявлений)
           type: array
           items:
-            oneOf:
-              - type: string
-              - type: number
+            type: any
       required:
         - campaign_tv_id
         - ads_data
       title: Изменение статуса объявлений
     Broker_2.Methods.Ads.Status.Edit.Exec:
-      title: '@return (array | int | null) выводит int, если функция провайдера не определена'
+      title: выводит int, если функция провайдера не определена
       description: '@throws Exception'
       nullable: true
+      anyOf:
+        - type: array
+          items:
+            type: any
+        - type: integer
+        - type: 'null'
     Broker_2.Methods.Ads.ToModerate.Edit:
       type: object
       properties:
@@ -23970,9 +23370,14 @@ components:
         - campaign_tv_id
       title: Отправка объявления на модерацию
     Broker_2.Methods.Ads.ToModerate.Edit.Exec:
-      title: '@return (array | int) выводит int, если функция провайдера не определена'
+      title: выводит int, если функция провайдера не определена
       description: '@throws Exception'
       nullable: true
+      anyOf:
+        - type: array
+          items:
+            type: any
+        - type: integer
     Broker_2.Methods.Campaigns.UpdateTargeting.Edit:
       type: object
       properties:
@@ -24017,9 +23422,7 @@ components:
     Broker_2.Methods.Groups.Editor.Get.Exec:
       type: array
       items:
-        oneOf:
-          - type: string
-          - type: number
+        type: any
     Broker_2.Methods.Keywords.Status.Edit:
       type: object
       properties:
@@ -24030,17 +23433,21 @@ components:
           title: Информация о запросах (id группы и id запросов)
           type: array
           items:
-            oneOf:
-              - type: string
-              - type: number
+            type: any
       required:
         - campaign_tv_id
         - keywords_data
       title: Изменение статуса запросов рекламной кампании
     Broker_2.Methods.Keywords.Status.Edit.Exec:
-      title: '@return (array | int | null) выводит int, если функция провайдера не определена'
+      title: выводит int, если функция провайдера не определена
       description: '@throws Exception'
       nullable: true
+      anyOf:
+        - type: array
+          items:
+            type: any
+        - type: integer
+        - type: 'null'
     Broker_2.Methods.Log.Export.Get:
       type: object
       properties:
@@ -24170,9 +23577,7 @@ components:
       nullable: true
       type: array
       items:
-        oneOf:
-          - type: string
-          - type: number
+        type: any
     Content_2.Methods.Apometr.CHHistory.Get:
       type: object
       properties:
@@ -24212,9 +23617,7 @@ components:
     Content_2.Methods.Apometr.CHHistory.Get.Exec:
       type: array
       items:
-        oneOf:
-          - type: string
-          - type: number
+        type: any
     Models.Apometr.History:
       properties:
         time:
@@ -24267,9 +23670,7 @@ components:
       nullable: true
       type: array
       items:
-        oneOf:
-          - type: string
-          - type: number
+        type: any
     Content_2.Methods.Apometr.Keywords.Get:
       type: object
       properties:
@@ -24349,9 +23750,7 @@ components:
       title: '@throws Exception'
       type: array
       items:
-        oneOf:
-          - type: string
-          - type: number
+        type: any
     Content_2.Methods.Journal.BookmarksAuthors.Get:
       type: object
       properties:
@@ -24378,9 +23777,7 @@ components:
     Content_2.Methods.Journal.BookmarksAuthors.Get.Exec:
       type: array
       items:
-        oneOf:
-          - type: string
-          - type: number
+        type: any
     Content_2.Methods.Journal.Bookmarks.Get:
       type: object
       properties:
@@ -24408,9 +23805,7 @@ components:
       title: '@throws Exception'
       type: array
       items:
-        oneOf:
-          - type: string
-          - type: number
+        type: any
     Content_2.Methods.Journal.Course.Get:
       type: object
       properties:
@@ -24446,9 +23841,7 @@ components:
       nullable: true
       type: array
       items:
-        oneOf:
-          - type: string
-          - type: number
+        type: any
     Content_2.Methods.Journal.Rubrics.Get:
       type: object
       properties:
@@ -24477,9 +23870,7 @@ components:
       nullable: true
       type: array
       items:
-        oneOf:
-          - type: string
-          - type: number
+        type: any
     Content_2.Methods.Journal.Subscribe.Edit:
       type: object
       properties:
@@ -24508,9 +23899,7 @@ components:
           title: Адреса документов в нужном порядке
           type: array
           items:
-            oneOf:
-              - type: string
-              - type: number
+            type: any
       required:
         - subdomain
         - parent_url
@@ -24527,9 +23916,7 @@ components:
     Content_2.Methods.Support.Menu.Get.Exec:
       type: array
       items:
-        oneOf:
-          - type: string
-          - type: number
+        type: any
     Keywords_2.Methods.Collect.Go.Edit:
       type: object
       properties:
@@ -24540,9 +23927,7 @@ components:
           title: Список исходных запросов
           type: array
           items:
-            oneOf:
-              - type: string
-              - type: number
+            type: any
         qualifiers:
           title: Объекты определителей настроек ПС и регионов
           allOf:
@@ -24551,9 +23936,7 @@ components:
           title: Минус фразы (только для searcher_key = 0 и searcher_key = 1)
           type: array
           items:
-            oneOf:
-              - type: string
-              - type: number
+            type: any
         to_group_id:
           title: Id группы для размещения подобранных запросов
           nullable: true
@@ -24586,9 +23969,7 @@ components:
       nullable: true
       type: array
       items:
-        oneOf:
-          - type: string
-          - type: number
+        type: any
     Keywords_2.Methods.Collect.Price.Get:
       type: object
       properties:
@@ -24603,9 +23984,7 @@ components:
           title: Список исходных запросов
           type: array
           items:
-            oneOf:
-              - type: string
-              - type: number
+            type: any
         qualifiers:
           title: Объекты определителей настроек ПС и регионов
           allOf:
@@ -24614,9 +23993,7 @@ components:
           title: Минус фразы (только для searcher_key = 0 и searcher_key = 1)
           type: array
           items:
-            oneOf:
-              - type: string
-              - type: number
+            type: any
         to_group_id:
           title: Id группы для размещения подобранных запросов
           nullable: true
@@ -24647,12 +24024,100 @@ components:
       description: '@see Keywords_2\Methods\Collect\AbstractRegular'
     Keywords_2.Methods.Collect.Price.Get.Exec:
       title: Информация о стоимости запуска подбора запросов
-      description: '@return array{pricesByUsers: array<string, array{price: float, priceOriginal: float, qualifiers: array{region_key: int, searcher_key: (0 | 1 | 5 | 100 | 101 | 102 | 104 | 105 | 106), region_lang?: (string | null), also_searched?: (int | null), depth?: (int | null), hint_depth: (1 | 2 | 3), hint_generators: array<(''letter'' | ''letter_ru'' | ''number'' | ''space'')>}, comment: string}>}'
       type: array
+      properties:
+        pricesByUsers:
+          type: object
+          additionalProperties:
+            type: object
+            properties:
+              price:
+                type: number
+              priceOriginal:
+                type: number
+              qualifiers:
+                type: object
+                properties:
+                  region_key:
+                    type: integer
+                  searcher_key:
+                    anyOf:
+                      - type: integer
+                        enum:
+                          - '0'
+                      - type: integer
+                        enum:
+                          - '1'
+                      - type: integer
+                        enum:
+                          - '5'
+                      - type: integer
+                        enum:
+                          - '100'
+                      - type: integer
+                        enum:
+                          - '101'
+                      - type: integer
+                        enum:
+                          - '102'
+                      - type: integer
+                        enum:
+                          - '104'
+                      - type: integer
+                        enum:
+                          - '105'
+                      - type: integer
+                        enum:
+                          - '106'
+                  region_lang:
+                    type: string
+                  also_searched:
+                    type: integer
+                  depth:
+                    type: integer
+                  hint_depth:
+                    anyOf:
+                      - type: integer
+                        enum:
+                          - '1'
+                      - type: integer
+                        enum:
+                          - '2'
+                      - type: integer
+                        enum:
+                          - '3'
+                  hint_generators:
+                    type: array
+                    items:
+                      anyOf:
+                        - type: string
+                          enum:
+                            - letter
+                        - type: string
+                          enum:
+                            - letter_ru
+                        - type: string
+                          enum:
+                            - number
+                        - type: string
+                          enum:
+                            - space
+                required:
+                  - region_key
+                  - searcher_key
+                  - hint_depth
+                  - hint_generators
+              comment:
+                type: string
+            required:
+              - price
+              - priceOriginal
+              - qualifiers
+              - comment
+      required:
+        - pricesByUsers
       items:
-        oneOf:
-          - type: string
-          - type: number
+        type: any
     Keywords_2.Methods.Keywords.Import.Add:
       type: object
       properties:
@@ -24720,9 +24185,7 @@ components:
       nullable: true
       type: array
       items:
-        oneOf:
-          - type: string
-          - type: number
+        type: any
     Keywords_2.Types.Volumes.NoRecheck:
       type: integer
       enum:
@@ -24812,8 +24275,16 @@ components:
         - project_id
       title: Постановка задачи на проверку частоты запросов
     Keywords_2.Methods.Volumes.Go.Edit.Exec:
-      title: '@return object{projectIds: int[]} Список id проектов, отрпавленных на проверку'
+      title: Список id проектов, отрпавленных на проверку
       description: '@throws Exception'
+      type: object
+      properties:
+        projectIds:
+          type: array
+          items:
+            type: integer
+      required:
+        - projectIds
     Keywords_2.Methods.Volumes.Price.Get:
       type: object
       properties:
@@ -24858,8 +24329,7 @@ components:
       required:
         - project_id
       title: Информация о стоимости запуска проверки позиций по проектам
-    Keywords_2.Methods.Volumes.Price.Get.Exec:
-      title: '@return object{pricesByUsers: object{int: object{projectsIds: [], price: float, priceOriginal: float}}}'
+    Keywords_2.Methods.Volumes.Price.Get.Exec: {}
     Landings_2.Methods.Hr.Feedback.Add:
       type: object
       properties:
@@ -25020,7 +24490,15 @@ components:
         - filters
       title: Отправка проектов на проверку позиций
     Positions_2.Methods.Checker.Go.Edit.Exec:
-      title: '@return object{projectIds: int[]} Список id проектов, отрпавленных на проверку'
+      title: Список id проектов, отрпавленных на проверку
+      type: object
+      properties:
+        projectIds:
+          type: array
+          items:
+            type: integer
+      required:
+        - projectIds
     Positions_2.Methods.Checker.Price.Get:
       type: object
       properties:
@@ -25077,8 +24555,7 @@ components:
       required:
         - filters
       title: Информация о стоимости запуска проверки позиций по проектам
-    Positions_2.Methods.Checker.Price.Get.Exec:
-      title: '@return object{pricesByUsers: object{int: object{projectsIds: [], price: float, priceOriginal: float}}}'
+    Positions_2.Methods.Checker.Price.Get.Exec: {}
     Positions_2.Methods.Searchers.Enabled.Edit:
       type: object
       properties:
@@ -25254,9 +24731,7 @@ components:
           title: Данные графика
           type: array
           items:
-            oneOf:
-              - type: string
-              - type: number
+            type: any
         compare_axe:
           title: Сравнение метрики
           nullable: true
@@ -25270,9 +24745,7 @@ components:
       nullable: true
       type: array
       items:
-        oneOf:
-          - type: string
-          - type: number
+        type: any
     Projects_2.Methods.Competitors.Move.Edit:
       type: object
       properties:
@@ -25412,9 +24885,7 @@ components:
     Projects_2.Methods.Master.HintsCompetitors.Get.Exec:
       type: array
       items:
-        oneOf:
-          - type: string
-          - type: number
+        type: any
     Projects_2.Methods.Master.HintsKeywords.Get:
       type: object
       properties:
@@ -25429,9 +24900,7 @@ components:
     Projects_2.Methods.Master.HintsKeywords.Get.Exec:
       type: array
       items:
-        oneOf:
-          - type: string
-          - type: number
+        type: any
     Projects_2.Methods.Projects.Copy.Add:
       type: object
       properties:
@@ -25533,9 +25002,7 @@ components:
         orders:
           type: array
           items:
-            oneOf:
-              - type: string
-              - type: number
+            type: any
         filters:
           $ref: '#/components/schemas/filters'
         id:
@@ -25557,9 +25024,7 @@ components:
             - 1
           type: array
           items:
-            oneOf:
-              - type: string
-              - type: number
+            type: any
         id:
           title: ID проекта
           type: integer
@@ -25668,9 +25133,7 @@ components:
             - array keywords - массив ключевых запросов, допускается формат CSV
           type: array
           items:
-            oneOf:
-              - type: string
-              - type: number
+            type: any
         remove_special_chars:
           title: 'Вырезать ли плюсы, точки, запятые, апострофы, кавычки (по умолчанию: 0 - не вырезать)'
           nullable: true
@@ -25705,9 +25168,7 @@ components:
       title: '@throws Exception'
       type: array
       items:
-        oneOf:
-          - type: string
-          - type: number
+        type: any
     Reports_2.Methods.Positions.SendTest.Edit:
       type: object
       properties:
@@ -25730,9 +25191,7 @@ components:
     Schedule_2.Methods.Settings.EmailsHints.Get.Exec:
       type: array
       items:
-        oneOf:
-          - type: string
-          - type: number
+        type: any
     Tickets_2.Methods.Admin.Message.Del:
       type: object
       properties:
@@ -25822,9 +25281,7 @@ components:
       nullable: true
       type: array
       items:
-        oneOf:
-          - type: string
-          - type: number
+        type: any
     Tickets_2.Methods.Admin.Ticket.Edit:
       type: object
       properties:
@@ -25877,9 +25334,7 @@ components:
     Tickets_2.Methods.Admin.User.Get.Exec:
       type: array
       items:
-        oneOf:
-          - type: string
-          - type: number
+        type: any
     Tickets_2.Methods.Admin.UserId.Edit:
       type: object
       properties:
@@ -25923,9 +25378,7 @@ components:
     Tickets_2.Methods.Tickets.Info.Get.Exec:
       type: array
       items:
-        oneOf:
-          - type: string
-          - type: number
+        type: any
     Tickets_2.Methods.Tickets.SetReaded.Edit:
       type: object
       properties:
@@ -25982,7 +25435,7 @@ components:
         - email
       title: Привязка email к аккаунту
     Users_2.Methods.Join.Email.Add.Exec:
-      title: '@return int - 0: произошла ошибка, 1: email успешно привязан, 2: требуется ввести пароль, 3: отправлен запрос на подтверждение'
+      title: '- 0: произошла ошибка, 1: email успешно привязан, 2: требуется ввести пароль, 3: отправлен запрос на подтверждение'
       description: '@throws Exception'
       type: integer
     Admin_2.Methods.Accounting.Group.Filter.Add:
@@ -26371,9 +25824,7 @@ components:
           description: '@type array<array{lr: int, criteriaId: int, coords: string, name_ru: string, areaName_ru: string}>'
           type: array
           items:
-            oneOf:
-              - type: string
-              - type: number
+            type: any
         test:
           title: Являеется ли запуск - тестом
           type: boolean
@@ -26592,9 +26043,7 @@ components:
           nullable: true
           type: array
           items:
-            oneOf:
-              - type: string
-              - type: number
+            type: any
       required:
         - period
         - currency
@@ -26603,9 +26052,7 @@ components:
     Admin_2.Methods.Analytics.Accounting.SummaryForChart.Get.Exec:
       type: array
       items:
-        oneOf:
-          - type: string
-          - type: number
+        type: any
     Admin_2.Methods.Analytics.Activity.ChartByPeriod.Get:
       type: object
       properties:
@@ -26628,9 +26075,7 @@ components:
       nullable: true
       type: array
       items:
-        oneOf:
-          - type: string
-          - type: number
+        type: any
     Admin_2.Methods.Analytics.Competitors.SummaryForOrdersChart.Get:
       type: object
       properties:
@@ -26660,9 +26105,7 @@ components:
       nullable: true
       type: array
       items:
-        oneOf:
-          - type: string
-          - type: number
+        type: any
     Admin_2.Methods.Analytics.Payments.Systems.Get:
       type: object
       properties:
@@ -26684,9 +26127,7 @@ components:
       nullable: true
       type: array
       items:
-        oneOf:
-          - type: string
-          - type: number
+        type: any
     Admin_2.Methods.Analytics.Payments.Tariff.Get:
       type: object
       properties:
@@ -26708,9 +26149,7 @@ components:
       nullable: true
       type: array
       items:
-        oneOf:
-          - type: string
-          - type: number
+        type: any
     Admin_2.Methods.Analytics.Positions.ChartByDayByHourAuto.Get:
       type: object
       properties: {}
@@ -26764,9 +26203,7 @@ components:
     Admin_2.Methods.Analytics.Tickets.ChartByMigrations.Get.Exec:
       type: array
       items:
-        oneOf:
-          - type: string
-          - type: number
+        type: any
     Admin_2.Methods.Analytics.Tickets.ChartByNew.Get:
       type: object
       properties:
@@ -26788,9 +26225,7 @@ components:
     Admin_2.Methods.Analytics.Tickets.ChartByNew.Get.Exec:
       type: array
       items:
-        oneOf:
-          - type: string
-          - type: number
+        type: any
     Admin_2.Methods.Analytics.Tickets.ChartByRates.Get:
       type: object
       properties:
@@ -26812,9 +26247,7 @@ components:
     Admin_2.Methods.Analytics.Tickets.ChartByRates.Get.Exec:
       type: array
       items:
-        oneOf:
-          - type: string
-          - type: number
+        type: any
     Admin_2.Methods.Analytics.Tickets.ChartByTags.Get:
       type: object
       properties:
@@ -26836,9 +26269,7 @@ components:
     Admin_2.Methods.Analytics.Tickets.ChartByTags.Get.Exec:
       type: array
       items:
-        oneOf:
-          - type: string
-          - type: number
+        type: any
     Admin_2.Methods.Analytics.Tickets.ChartByWaitTime.Get:
       type: object
       properties:
@@ -26860,9 +26291,7 @@ components:
     Admin_2.Methods.Analytics.Tickets.ChartByWaitTime.Get.Exec:
       type: array
       items:
-        oneOf:
-          - type: string
-          - type: number
+        type: any
     Admin_2.Methods.Analytics.Tickets.Messages.Get:
       type: object
       properties:
@@ -26878,9 +26307,7 @@ components:
             - vacations_by_user_id
           type: array
           items:
-            oneOf:
-              - type: string
-              - type: number
+            type: any
         period:
           allOf:
             - $ref: '#/components/schemas/Admin_2.Types.Analytics.Segment'
@@ -26901,9 +26328,7 @@ components:
       nullable: true
       type: array
       items:
-        oneOf:
-          - type: string
-          - type: number
+        type: any
     Admin_2.Methods.Logs.System.Checked.Edit:
       type: object
       properties:
@@ -26941,9 +26366,7 @@ components:
             Для обчных графиков это значения на оси X
           type: array
           items:
-            oneOf:
-              - type: string
-              - type: number
+            type: any
         series:
           title: |-
             Набор серий
@@ -26954,16 +26377,12 @@ components:
             категории
           type: array
           items:
-            oneOf:
-              - type: string
-              - type: number
+            type: any
         additionalData:
           title: Дополнительгная информация
           type: array
           items:
-            oneOf:
-              - type: string
-              - type: number
+            type: any
       required:
         - categories
         - series
@@ -26995,7 +26414,15 @@ components:
         - filters
       title: Запуск проверки аудита
     Audit_2.Methods.Audit.Checker.Go.Edit.Exec:
-      title: '@return object{projectIds: int[]} Список id проектов, отрпавленных на проверку'
+      title: Список id проектов, отрпавленных на проверку
+      type: object
+      properties:
+        projectIds:
+          type: array
+          items:
+            type: integer
+      required:
+        - projectIds
     Audit_2.Methods.Audit.Checker.Price.Get:
       type: object
       properties:
@@ -27014,7 +26441,6 @@ components:
         - filters
       title: Информация о стоимости запуска аудита по проектам
     Audit_2.Methods.Audit.Checker.Price.Get.Exec:
-      title: '@return object{pricesByUsers: object{int: object{projectsIds: [], price: float, priceOriginal: float}}}'
       description: '@throws Exception'
     Audit_2.Methods.Audit.Export.Links.Get:
       type: object
@@ -27026,23 +26452,17 @@ components:
           title: Шаблон просмотра (используется на странице с просмотром проверки)
           type: array
           items:
-            oneOf:
-              - type: string
-              - type: number
+            type: any
         log_http_codes_hundreds:
           title: Логи фильтра по категориям кодов (используется на странице с просмотром проверки)
           type: array
           items:
-            oneOf:
-              - type: string
-              - type: number
+            type: any
         view_signal_type:
           title: Тип сигнала просмотра (используется на странице с просмотром проверки)
           type: array
           items:
-            oneOf:
-              - type: string
-              - type: number
+            type: any
         links_external:
           title: Внешние ссылки (используется на странице с просмотром проверки)
           type: string
@@ -27130,9 +26550,7 @@ components:
       nullable: true
       type: array
       items:
-        oneOf:
-          - type: string
-          - type: number
+        type: any
     Audit_2.Types.Audit.Results.Export.TypeReport:
       type: integer
       enum:
@@ -27207,13 +26625,30 @@ components:
     Audit_2.Methods.Audit.Results.Page.Get.Exec:
       title: Результаты анализа страницы
       description: |-
-        @return array{result: array{page_in_filter: bool, index: int, snippet: string, content: string}}
+
         @throws Exception
       type: array
+      properties:
+        result:
+          type: object
+          properties:
+            page_in_filter:
+              type: boolean
+            index:
+              type: integer
+            snippet:
+              type: string
+            content:
+              type: string
+          required:
+            - page_in_filter
+            - index
+            - snippet
+            - content
+      required:
+        - result
       items:
-        oneOf:
-          - type: string
-          - type: number
+        type: any
     Audit_2.Methods.Indexing.Checker.Go.Edit:
       type: object
       properties:
@@ -27232,7 +26667,15 @@ components:
         - filters
       title: Отправка проектов на проверку индексации
     Audit_2.Methods.Indexing.Checker.Go.Edit.Exec:
-      title: '@return object{projectIds: int[]} Список id проектов, отрпавленных на проверку'
+      title: Список id проектов, отрпавленных на проверку
+      type: object
+      properties:
+        projectIds:
+          type: array
+          items:
+            type: integer
+      required:
+        - projectIds
     Audit_2.Methods.Indexing.Checker.Price.Get:
       type: object
       properties:
@@ -27251,7 +26694,6 @@ components:
         - filters
       title: Информация о стоимости запуска индексации по проектам
     Audit_2.Methods.Indexing.Checker.Price.Get.Exec:
-      title: '@return object{pricesByUsers: object{int: object{projectsIds: [], price: float, priceOriginal: float}}}'
       description: '@throws Exception'
     Audit_2.Methods.Indexing.Export.Links.Get:
       type: object
@@ -27261,9 +26703,7 @@ components:
           nullable: true
           type: array
           items:
-            oneOf:
-              - type: string
-              - type: number
+            type: any
         template_date_range:
           title: Диапозон значений шаблона
           nullable: true
@@ -27273,9 +26713,7 @@ components:
           nullable: true
           type: array
           items:
-            oneOf:
-              - type: string
-              - type: number
+            type: any
         date1:
           title: Дата начала диапазона
           nullable: true
@@ -27300,17 +26738,13 @@ components:
           nullable: true
           type: array
           items:
-            oneOf:
-              - type: string
-              - type: number
+            type: any
         data_sort:
           title: Сортировка данных
           nullable: true
           type: array
           items:
-            oneOf:
-              - type: string
-              - type: number
+            type: any
         only_changed_for:
           title: Применение изменений только для
           nullable: true
@@ -27353,9 +26787,7 @@ components:
           title: Произвольные даты без диапазона
           type: array
           items:
-            oneOf:
-              - type: string
-              - type: number
+            type: any
         searcher_key:
           nullable: true
           allOf:
@@ -27391,9 +26823,7 @@ components:
       nullable: true
       type: array
       items:
-        oneOf:
-          - type: string
-          - type: number
+        type: any
     Audit_2.Types.Sitemap.MaxPages:
       type: integer
       enum:
@@ -27431,7 +26861,15 @@ components:
         - filters
       title: Отправка проектов на проверку карты сайта
     Audit_2.Methods.Sitemap.Checker.Go.Edit.Exec:
-      title: '@return object{projectIds: int[]} Список id проектов, отрпавленных на проверку'
+      title: Список id проектов, отрпавленных на проверку
+      type: object
+      properties:
+        projectIds:
+          type: array
+          items:
+            type: integer
+      required:
+        - projectIds
     Audit_2.Methods.Sitemap.Checker.Price.Get:
       type: object
       properties:
@@ -27454,7 +26892,6 @@ components:
         - filters
       title: Информация о стоимости запуска индексации по проектам
     Audit_2.Methods.Sitemap.Checker.Price.Get.Exec:
-      title: '@return object{pricesByUsers: object{int: object{projectsIds: [], price: float, priceOriginal: float}}}'
       description: '@throws Exception'
     Audit_2.Methods.Watcher.Checker.Go.Edit:
       type: object
@@ -27474,7 +26911,15 @@ components:
         - filters
       title: Отправка проектов на проверку радара
     Audit_2.Methods.Watcher.Checker.Go.Edit.Exec:
-      title: '@return object{projectIds: int[]} Список id проектов, отрпавленных на проверку'
+      title: Список id проектов, отрпавленных на проверку
+      type: object
+      properties:
+        projectIds:
+          type: array
+          items:
+            type: integer
+      required:
+        - projectIds
     Audit_2.Methods.Watcher.Checker.Price.Get:
       type: object
       properties:
@@ -27493,7 +26938,6 @@ components:
         - filters
       title: Информация о стоимости запуска индексации по проектам
     Audit_2.Methods.Watcher.Checker.Price.Get.Exec:
-      title: '@return object{pricesByUsers: object{int: object{projectsIds: [], price: float, priceOriginal: float}}}'
       description: '@throws Exception'
     properties-check_id:
       title: ID проверки радара
@@ -27516,9 +26960,7 @@ components:
           nullable: true
           type: array
           items:
-            oneOf:
-              - type: string
-              - type: number
+            type: any
         project_id:
           $ref: '#/components/schemas/project_id'
         check_id:
@@ -27540,16 +26982,12 @@ components:
           nullable: true
           type: array
           items:
-            oneOf:
-              - type: string
-              - type: number
+            type: any
         checks_ids:
           title: ID проверок
           type: array
           items:
-            oneOf:
-              - type: string
-              - type: number
+            type: any
         show_counts_changes:
           title: Отобразить количество изменений по типам
           type: boolean
@@ -27571,9 +27009,7 @@ components:
       nullable: true
       type: array
       items:
-        oneOf:
-          - type: string
-          - type: number
+        type: any
     Content_2.Methods.Apometr.Text.Calendar.Get:
       type: object
       properties:
@@ -27586,12 +27022,13 @@ components:
       title: Получение календаря текстовых апдейтов
     Content_2.Methods.Apometr.Text.Calendar.Get.Exec:
       title: 'Матрица: массив с индексами времени с массивом с индексами дат со значением количества страниц в индексе (в UNIXTIME)'
-      description: '@return array<string, array<string, int>>'
       type: array
+      additionalProperties:
+        type: object
+        additionalProperties:
+          type: integer
       items:
-        oneOf:
-          - type: string
-          - type: number
+        type: any
     Content_2.Methods.Apometr.Text.Updates.Get:
       type: object
       properties:
@@ -27611,9 +27048,7 @@ components:
     Content_2.Methods.Apometr.Text.Updates.Get.Exec:
       type: array
       items:
-        oneOf:
-          - type: string
-          - type: number
+        type: any
     Content_2.Methods.Apometr.Updates.Dates.Get:
       type: object
       properties:
@@ -27625,9 +27060,7 @@ components:
     Content_2.Methods.Apometr.Updates.Dates.Get.Exec:
       type: array
       items:
-        oneOf:
-          - type: string
-          - type: number
+        type: any
     Content_2.Methods.Journal.Course.Certificates.Add:
       type: object
       properties:
@@ -27708,9 +27141,7 @@ components:
     Content_2.Methods.Journal.Course.Chapters.Get.Exec:
       type: array
       items:
-        oneOf:
-          - type: string
-          - type: number
+        type: any
     Content_2.Methods.Journal.Dictionary.ArticlesByLetter.Get:
       type: object
       properties:
@@ -27736,14 +27167,22 @@ components:
       title: |-
         Получение списка страниц по буквам для модуля SEO словарь
         Результат функции кешируется
-      description: '@return array<string, array{url: string, h1: string}> - массив с ключом "Буква" и значением массив страниц Pages'
     Content_2.Methods.Journal.Dictionary.ArticlesByLetter.Get.Exec:
+      title: '- массив с ключом "Буква" и значением массив страниц Pages'
       nullable: true
       type: array
+      additionalProperties:
+        type: object
+        properties:
+          url:
+            type: string
+          h1:
+            type: string
+        required:
+          - url
+          - h1
       items:
-        oneOf:
-          - type: string
-          - type: number
+        type: any
     Content_2.Methods.Journal.Dictionary.WordOfday.Get:
       type: object
       properties:
@@ -27767,14 +27206,11 @@ components:
         - filters
         - offset
       title: Получение стаьи для "Слово дня" в модуле SEO словарь
-      description: '@return (array<string, array{url: string, menu_name: string, description: string, count_views: integer}> | null)'
     Content_2.Methods.Journal.Dictionary.WordOfday.Get.Exec:
       nullable: true
       type: array
       items:
-        oneOf:
-          - type: string
-          - type: number
+        type: any
     Keywords_2.Types.Collect.Ext.Type:
       type: string
       enum:
@@ -27793,9 +27229,7 @@ components:
           nullable: true
           type: array
           items:
-            oneOf:
-              - type: string
-              - type: number
+            type: any
         type:
           title: Каким типом расширять группу
           allOf:
@@ -27826,9 +27260,7 @@ components:
           nullable: true
           type: array
           items:
-            oneOf:
-              - type: string
-              - type: number
+            type: any
         apply_discount:
           title: 'Отображать сумму с учетом скидки (по умолчанию: 1)'
           default: true
@@ -27852,8 +27284,105 @@ components:
       title: Получение цены на расширение группы
     Keywords_2.Methods.Collect.Ext.Price.Get.Exec:
       title: Информация о стоимости запуска подбора запросов
-      description: '@return array{pricesByUsers: array<string, array{price: float, priceOriginal: float, qualifiers: array{region_key: int, searcher_key: (0 | 1 | 5 | 100 | 101 | 102 | 104 | 105 | 106), region_lang?: (string | null), also_searched?: (int | null), depth?: (int | null), hint_depth: (1 | 2 | 3), hint_generators: array<(''letter'' | ''letter_ru'' | ''number'' | ''space'')>}, comment: string}>}'
       nullable: true
+      type: object
+      properties:
+        pricesByUsers:
+          type: object
+          additionalProperties:
+            type: object
+            properties:
+              price:
+                type: number
+              priceOriginal:
+                type: number
+              qualifiers:
+                type: object
+                properties:
+                  region_key:
+                    type: integer
+                  searcher_key:
+                    anyOf:
+                      - type: integer
+                        enum:
+                          - '0'
+                      - type: integer
+                        enum:
+                          - '1'
+                      - type: integer
+                        enum:
+                          - '5'
+                      - type: integer
+                        enum:
+                          - '100'
+                      - type: integer
+                        enum:
+                          - '101'
+                      - type: integer
+                        enum:
+                          - '102'
+                      - type: integer
+                        enum:
+                          - '104'
+                      - type: integer
+                        enum:
+                          - '105'
+                      - type: integer
+                        enum:
+                          - '106'
+                  region_lang:
+                    anyOf:
+                      - type: string
+                      - type: 'null'
+                  also_searched:
+                    anyOf:
+                      - type: integer
+                      - type: 'null'
+                  depth:
+                    anyOf:
+                      - type: integer
+                      - type: 'null'
+                  hint_depth:
+                    anyOf:
+                      - type: integer
+                        enum:
+                          - '1'
+                      - type: integer
+                        enum:
+                          - '2'
+                      - type: integer
+                        enum:
+                          - '3'
+                  hint_generators:
+                    type: array
+                    items:
+                      anyOf:
+                        - type: string
+                          enum:
+                            - letter
+                        - type: string
+                          enum:
+                            - letter_ru
+                        - type: string
+                          enum:
+                            - number
+                        - type: string
+                          enum:
+                            - space
+                required:
+                  - region_key
+                  - searcher_key
+                  - hint_depth
+                  - hint_generators
+              comment:
+                type: string
+            required:
+              - price
+              - priceOriginal
+              - qualifiers
+              - comment
+      required:
+        - pricesByUsers
     Positions_2.Methods.Searchers.Regions.Export.Get:
       type: object
       properties:
@@ -27940,9 +27469,7 @@ components:
           title: Ключевые фразы
           type: array
           items:
-            oneOf:
-              - type: string
-              - type: number
+            type: any
         no_recheck:
           title: |-
             Проверять ли запросы

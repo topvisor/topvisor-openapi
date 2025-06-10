@@ -12,7 +12,7 @@ export interface components {
             /** ID проекта */
             project_id: number;
             /** Минус фразы */
-            keywords_minus?: (string | number)[] | null;
+            keywords_minus?: Record<string, never>[] | null;
             /**
              * Отображать сумму с учетом скидки (по умолчанию: 1)
              * @default true
@@ -25,11 +25,25 @@ export interface components {
             filters?: import('../../../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['filters'];
             id?: import('../../../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['id'];
         };
-        /**
-         * Информация о стоимости запуска подбора запросов
-         * @description @return array{pricesByUsers: array<string, array{price: float, priceOriginal: float, qualifiers: array{region_key: int, searcher_key: (0 | 1 | 5 | 100 | 101 | 102 | 104 | 105 | 106), region_lang?: (string | null), also_searched?: (int | null), depth?: (int | null), hint_depth: (1 | 2 | 3), hint_generators: array<('letter' | 'letter_ru' | 'number' | 'space')>}, comment: string}>}
-         */
-        "Keywords_2.Methods.Collect.Ext.Price.Get.Exec": unknown;
+        /** Информация о стоимости запуска подбора запросов */
+        "Keywords_2.Methods.Collect.Ext.Price.Get.Exec": {
+            pricesByUsers: {
+                [key: string]: {
+                    price: number;
+                    priceOriginal: number;
+                    qualifiers: {
+                        region_key: number;
+                        searcher_key: "0" | "1" | "5" | "100" | "101" | "102" | "104" | "105" | "106";
+                        region_lang?: string | null;
+                        also_searched?: number | null;
+                        depth?: number | null;
+                        hint_depth: "1" | "2" | "3";
+                        hint_generators: ("letter" | "letter_ru" | "number" | "space")[];
+                    };
+                    comment: string;
+                };
+            };
+        } | null;
     };
     responses: never;
     parameters: never;

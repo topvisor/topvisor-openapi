@@ -11,11 +11,11 @@ export interface components {
             /** ID проекта */
             project_id: number;
             /** Список исходных запросов */
-            keywords: (string | number)[];
+            keywords: Record<string, never>[];
             /** Объекты определителей настроек ПС и регионов */
             qualifiers: import('../../Types/Collect/Qualifiers.ts').components['schemas']['Keywords_2.Types.Collect.Qualifiers'];
             /** Минус фразы (только для searcher_key = 0 и searcher_key = 1) */
-            keywords_minus?: (string | number)[];
+            keywords_minus?: Record<string, never>[];
             /** Id группы для размещения подобранных запросов */
             to_group_id?: number | null;
             /** Id папки для новых групп */

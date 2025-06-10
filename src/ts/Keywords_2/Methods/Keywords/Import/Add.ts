@@ -47,7 +47,7 @@ export interface components {
             /** Массив номеров тегов */
             tags?: import('../../../../Tags_2/Types/TagsIds.ts').components['schemas']['Tags_2.Types.TagsIds'] | null;
         };
-        "Keywords_2.Methods.Keywords.Import.Add.Exec": (string | number)[] | null;
+        "Keywords_2.Methods.Keywords.Import.Add.Exec": Record<string, never>[] | null;
     };
     responses: never;
     parameters: never;

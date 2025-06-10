@@ -22,7 +22,7 @@ export interface components {
             intro?: string | null;
             html: string;
             image: string;
-            tags: (string | number)[];
+            tags: Record<string, never>[];
             count_views: number;
             count_unique_views?: number | null;
             count_likes: number;

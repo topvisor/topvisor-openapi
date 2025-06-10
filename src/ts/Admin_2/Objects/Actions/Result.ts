@@ -12,11 +12,11 @@ export interface components {
             /** Запущено ли дейсвтие в тестовом режиме */
             isTest: boolean;
             /** Ассоциативный массив с информацией, связанной с выполняемым дейсвтием */
-            info: (string | number)[];
+            info: Record<string, never>[];
             /** Время выполнения дейсвтия */
             executionTime: number;
             /** Информация о затраченных ресурсавах при выполнении дейсвтия */
-            memory: (string | number)[];
+            memory: Record<string, never>[];
         };
     };
     responses: never;

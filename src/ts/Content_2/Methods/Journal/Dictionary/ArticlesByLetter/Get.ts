@@ -7,11 +7,8 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /**
-         * Получение списка страниц по буквам для модуля SEO словарь
-         *     Результат функции кешируется
-         * @description @return array<string, array{url: string, h1: string}> - массив с ключом "Буква" и значением массив страниц Pages
-         */
+        /** Получение списка страниц по буквам для модуля SEO словарь
+         *     Результат функции кешируется */
         "Content_2.Methods.Journal.Dictionary.ArticlesByLetter.Get": {
             fields: import('../../../../../TV/API/Params/FieldsTrait.ts').components['schemas']['TV.API.Params.FieldsTrait']['fields'];
             orders: import('../../../../../TV/API/Params/OrdersTrait.ts').components['schemas']['TV.API.Params.OrdersTrait']['orders'];
@@ -21,7 +18,8 @@ export interface components {
             offset: import('../../../../../TV/API/Params/OffsetTrait.ts').components['schemas']['TV.API.Params.OffsetTrait']['offset'];
             fetch_style?: import('../../../../../TV/API/Params/FetchStyleTrait.ts').components['schemas']['TV.API.Params.FetchStyleTrait']['fetch_style'];
         };
-        "Content_2.Methods.Journal.Dictionary.ArticlesByLetter.Get.Exec": (string | number)[] | null;
+        /** - массив с ключом "Буква" и значением массив страниц Pages */
+        "Content_2.Methods.Journal.Dictionary.ArticlesByLetter.Get.Exec": Record<string, never>[] | null;
     };
     responses: never;
     parameters: never;

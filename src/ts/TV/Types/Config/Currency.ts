@@ -94,7 +94,7 @@ export interface components {
              *       10000
              *     ]
              */
-            readonly SY_HINTS_COST: (string | number)[];
+            readonly SY_HINTS_COST: Record<string, never>[];
             /**
              * Стоимость брокера.
              * @default 10000
@@ -215,7 +215,7 @@ export interface components {
              *       "No set"
              *     ]
              */
-            readonly TARIFF_NAMES: (string | number)[];
+            readonly TARIFF_NAMES: Record<string, never>[];
             /**
              * Массив значений тарифов.
              * @default [
@@ -226,7 +226,7 @@ export interface components {
              *       10000
              *     ]
              */
-            readonly TARIFF_VALUES: (string | number)[];
+            readonly TARIFF_VALUES: Record<string, never>[];
             /**
              * Массив скидок на тарифы.
              * @default [
@@ -237,7 +237,7 @@ export interface components {
              *       30
              *     ]
              */
-            readonly TARIFF_DISCOUNT: (string | number)[];
+            readonly TARIFF_DISCOUNT: Record<string, never>[];
         };
     };
     responses: never;

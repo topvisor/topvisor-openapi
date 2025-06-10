@@ -27,7 +27,7 @@ export interface components {
              * Добавить в результат сводку с указанными параметрами
              * @deprecated
              */
-            include_positions_summary_params?: (string | number)[] | null;
+            include_positions_summary_params?: Record<string, never>[] | null;
             /** Является ли проект задачей */
             is_task?: boolean | null;
             fields: import('../../../TV/API/Params/FieldsTrait.ts').components['schemas']['TV.API.Params.FieldsTrait']['fields'];
@@ -38,7 +38,7 @@ export interface components {
             offset: import('../../../TV/API/Params/OffsetTrait.ts').components['schemas']['TV.API.Params.OffsetTrait']['offset'];
             fetch_style?: import('../../../TV/API/Params/FetchStyleTrait.ts').components['schemas']['TV.API.Params.FetchStyleTrait']['fetch_style'];
         };
-        "Projects_2.Methods.Projects.Get.Exec": (string | number)[] | null;
+        "Projects_2.Methods.Projects.Get.Exec": Record<string, never>[] | null;
     };
     responses: never;
     parameters: never;

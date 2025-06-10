@@ -17,7 +17,7 @@ export interface components {
              *      - USD */
             currency: import('../../../../TV/API/Types/Currency.ts').components['schemas']['TV.API.Types.Currency'];
         };
-        "Admin_2.Methods.Affiliate.Referrers.Get.Exec": (string | number)[];
+        "Admin_2.Methods.Affiliate.Referrers.Get.Exec": Record<string, never>[];
     };
     responses: never;
     parameters: never;

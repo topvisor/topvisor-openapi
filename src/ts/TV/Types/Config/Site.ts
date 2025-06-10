@@ -52,7 +52,7 @@ export interface components {
              */
             readonly DEFAULT_BANK_TYPE: string;
             /** Список поддерживаемых языков, ISO 639-1 */
-            readonly LANGUAGES: (string | number)[];
+            readonly LANGUAGES: Record<string, never>[];
             /**
              * Оснвоной язык, ISO 639-1
              * @default No set
@@ -63,22 +63,22 @@ export interface components {
              *     При генерации url дополнительный язык добавляется в начало url в модуле контента
              *
              *     Аналогично `self::LANGUAGES`, без `self::LANGUAGE_MAIN` */
-            readonly LANGUAGES_ADDITIONAL: (string | number)[];
+            readonly LANGUAGES_ADDITIONAL: Record<string, never>[];
             /**
              * Список валют, используемых на сайте
              * @default [
              *       "No set"
              *     ]
              */
-            readonly CURRENCIES: (string | number)[];
+            readonly CURRENCIES: Record<string, never>[];
             /** Список поддоменов
              *
              *     Примеры:
              *     - `''` для основного домена `example.com`
              *     - `'subdomain'` для поддомена `subdomain.example.com` */
-            readonly SUBDOMAINS: (string | number)[];
+            readonly SUBDOMAINS: Record<string, never>[];
             /** Список поддерживаемых тем оформления */
-            readonly THEMES: (string | number)[];
+            readonly THEMES: Record<string, never>[];
             /**
              * Почта рассыльщика
              *
@@ -113,7 +113,7 @@ export interface components {
              *     Значение: всегда true, значение игнорируется
              * @description @see Controller_2\Objects\Page::params
              */
-            readonly CLOSED_BY_MOD: (string | number)[];
+            readonly CLOSED_BY_MOD: Record<string, never>[];
             /** @default No set */
             readonly INN: string;
             /**

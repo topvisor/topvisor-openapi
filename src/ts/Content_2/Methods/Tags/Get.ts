@@ -16,7 +16,7 @@ export interface components {
             /** Фильтр по каталогу url */
             url?: string | null;
         };
-        "Content_2.Methods.Tags.Get.Exec": (string | number)[] | null;
+        "Content_2.Methods.Tags.Get.Exec": Record<string, never>[] | null;
     };
     responses: never;
     parameters: never;

@@ -10,7 +10,7 @@ export interface components {
         /** Печать договора */
         "Admin_2.Methods.Staff.ContractPrint.Get": {
             /** Параметры, передаваемые в шаблон */
-            props: (string | number)[];
+            props: Record<string, never>[];
         };
         "Admin_2.Methods.Staff.ContractPrint.Get.Exec": Record<string, never>;
     };

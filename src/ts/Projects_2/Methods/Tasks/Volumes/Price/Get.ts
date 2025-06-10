@@ -10,7 +10,7 @@ export interface components {
         /** Получение проверки частоты задачи без проекта */
         "Projects_2.Methods.Tasks.Volumes.Price.Get": {
             /** Ключевые фразы */
-            keywords: (string | number)[];
+            keywords: Record<string, never>[];
             /** Проверять ли запросы
              *
              *     - 0: проверять

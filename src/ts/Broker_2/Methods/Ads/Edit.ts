@@ -26,10 +26,10 @@ export interface components {
             display_url?: string | null;
         };
         /**
-         * @return (array | int | null) выводит int, если функция провайдера не определена
+         * выводит int, если функция провайдера не определена
          * @description @throws Exception
          */
-        "Broker_2.Methods.Ads.Edit.Exec": unknown;
+        "Broker_2.Methods.Ads.Edit.Exec": (Record<string, never>[] | number | null) | null;
     };
     responses: never;
     parameters: never;

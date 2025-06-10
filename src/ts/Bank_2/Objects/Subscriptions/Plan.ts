@@ -44,7 +44,7 @@ export interface components {
              *     При расчете финальной стоимости может использоваться округление */
             annualDiscount: number;
             /** Выдаваемые лимиты */
-            maxByName: (string | number)[];
+            maxByName: Record<string, never>[];
             /** Суффикс, характеризующий настройки тарифа */
             suffixName: string;
         };

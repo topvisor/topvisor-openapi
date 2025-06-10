@@ -22,10 +22,10 @@ export interface components {
         };
         /**
          * Результаты анализа страницы
-         * @description @return array{result: array{page_in_filter: bool, index: int, snippet: string, content: string}}
+         * @description
          *     @throws Exception
          */
-        "Audit_2.Methods.Audit.Results.Page.Get.Exec": (string | number)[];
+        "Audit_2.Methods.Audit.Results.Page.Get.Exec": Record<string, never>[];
     };
     responses: never;
     parameters: never;

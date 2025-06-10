@@ -17,14 +17,14 @@ export interface components {
              *     - count_messages_user:%userId%
              *     - percent_messages_user:%userId%
              *     - vacations_by_user_id */
-            fields: (string | number)[];
+            fields: Record<string, never>[];
             period: import('../../../../Types/Analytics/Segment.ts').components['schemas']['Admin_2.Types.Analytics.Segment'];
             /** Длина периода */
             limit: number;
             /** Максимальная дата отчета */
             date?: import('../../../../../TV/API/Types/Date.ts').components['schemas']['TV.API.Types.Date'] | null;
         };
-        "Admin_2.Methods.Analytics.Tickets.Messages.Get.Exec": (string | number)[] | null;
+        "Admin_2.Methods.Analytics.Tickets.Messages.Get.Exec": Record<string, never>[] | null;
     };
     responses: never;
     parameters: never;

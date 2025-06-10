@@ -14,7 +14,7 @@ export interface components {
             /** Длина периода */
             limit: number;
         };
-        "Admin_2.Methods.Analytics.Payments.Systems.Get.Exec": (string | number)[] | null;
+        "Admin_2.Methods.Analytics.Payments.Systems.Get.Exec": Record<string, never>[] | null;
     };
     responses: never;
     parameters: never;

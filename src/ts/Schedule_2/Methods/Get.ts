@@ -20,7 +20,7 @@ export interface components {
             target_id_2?: number | null;
         };
         /** @throws Exception */
-        "Schedule_2.Methods.Get.Exec": (string | number)[];
+        "Schedule_2.Methods.Get.Exec": Record<string, never>[];
     };
     responses: never;
     parameters: never;

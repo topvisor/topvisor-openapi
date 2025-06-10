@@ -19,7 +19,7 @@ export interface components {
              *
              *     - vacation
              *     - day_off */
-            type: (string | number)[];
+            type: Record<string, never>[];
         };
         "Admin_2.Methods.Staff.Vacation.Add.Exec": number | null;
     };

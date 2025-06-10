@@ -43,7 +43,7 @@ export interface components {
             /** Отладка email */
             debug?: boolean | null;
         };
-        "Admin_2.Methods.Informer.Add.Exec": (string | number)[];
+        "Admin_2.Methods.Informer.Add.Exec": Record<string, never>[];
     };
     responses: never;
     parameters: never;

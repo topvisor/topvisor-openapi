@@ -21,14 +21,7 @@
                     "http_codes": {
                         "type": "array",
                         "items": {
-                            "oneOf": [
-                                {
-                                    "type": "string"
-                                },
-                                {
-                                    "type": "number"
-                                }
-                            ]
+                            "type": "any"
                         },
                         "nullable": true
                     },
@@ -41,14 +34,7 @@
                     "redirects": {
                         "type": "array",
                         "items": {
-                            "oneOf": [
-                                {
-                                    "type": "string"
-                                },
-                                {
-                                    "type": "number"
-                                }
-                            ]
+                            "type": "any"
                         },
                         "nullable": true
                     },

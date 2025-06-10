@@ -290,8 +290,7 @@
                             },
                             "model": {
                                 "schema": {
-                                    "$ref": "Models/Annotations.json#/components/schemas/Models.Annotations",
-                                    "description": "Only for typescript, does not contain real data"
+                                    "$ref": "Models/Annotations.json#/components/schemas/Models.Annotations"
                                 }
                             }
                         }
@@ -361,8 +360,7 @@
                                                     "type": "object",
                                                     "properties": {
                                                         "result": {
-                                                            "$ref": "Comments_2/Methods/Add.json#/components/schemas/Comments_2.Methods.Add.Exec",
-                                                            "title": "Id вставленного комментария"
+                                                            "$ref": "Comments_2/Methods/Add.json#/components/schemas/Comments_2.Methods.Add.Exec"
                                                         }
                                                     },
                                                     "required": [
@@ -559,8 +557,7 @@
                             },
                             "model": {
                                 "schema": {
-                                    "$ref": "Models/Comments.json#/components/schemas/Models.Comments",
-                                    "description": "Only for typescript, does not contain real data"
+                                    "$ref": "Models/Comments.json#/components/schemas/Models.Comments"
                                 }
                             }
                         }
@@ -598,8 +595,7 @@
                                                     "type": "object",
                                                     "properties": {
                                                         "result": {
-                                                            "$ref": "Content_2/Methods/Get.json#/components/schemas/Content_2.Methods.Get.Exec",
-                                                            "title": "Возможные парамеры $config:\n\nОбщие:\n   - user_id\n   - create\n   - title\n   - description\n   - html\n   - menu_name\n   - order\n   - image\n   - og_title\n   - og_description\n   - og_image\n   - array tags\n   - enum(ACTIVE,DEV,DEFER,DEL) state, если установлен DEV - статья не будет отображаться в меню и поиске на сайте\n\nДля справки:\n   - apiFullMethodName\n   - apiRequestParams - массив\n\nДля журнала:\n   - count_views\n   - count_unique_views\n   - count_likes"
+                                                            "$ref": "Content_2/Methods/Get.json#/components/schemas/Content_2.Methods.Get.Exec"
                                                         }
                                                     },
                                                     "required": [
@@ -738,8 +734,7 @@
                             },
                             "model": {
                                 "schema": {
-                                    "$ref": "Models/Payments.json#/components/schemas/Models.Payments",
-                                    "description": "Only for typescript, does not contain real data"
+                                    "$ref": "Models/Payments.json#/components/schemas/Models.Payments"
                                 }
                             }
                         }
@@ -892,8 +887,7 @@
                                                     "type": "object",
                                                     "properties": {
                                                         "result": {
-                                                            "$ref": "Schedule_2/Methods/AbstractRegular.json#/components/schemas/Schedule_2.Methods.AbstractRegular.Exec",
-                                                            "title": "Непосредственный вызов API функции\n\nЗапрещено делать публичной, это приведет к поломке preCall()\n\nВ описании к функции отвечать на вопрос: `Что является результатом запроса?` Например: `Список пользователей`\n\nНе менять `protected`, проверка проводится при генерации схем в `TV\\API\\Objects\\ClassAPIMethodInfo`"
+                                                            "$ref": "Schedule_2/Methods/AbstractRegular.json#/components/schemas/Schedule_2.Methods.AbstractRegular.Exec"
                                                         }
                                                     },
                                                     "required": [
@@ -950,8 +944,7 @@
                                                     "type": "object",
                                                     "properties": {
                                                         "result": {
-                                                            "$ref": "Schedule_2/Methods/Del.json#/components/schemas/Schedule_2.Methods.Del.Exec",
-                                                            "title": "@throws Exception"
+                                                            "$ref": "Schedule_2/Methods/Del.json#/components/schemas/Schedule_2.Methods.Del.Exec"
                                                         }
                                                     },
                                                     "required": [
@@ -1009,8 +1002,7 @@
                                                     "type": "object",
                                                     "properties": {
                                                         "result": {
-                                                            "$ref": "Schedule_2/Methods/Edit.json#/components/schemas/Schedule_2.Methods.Edit.Exec",
-                                                            "title": "@throws Exception"
+                                                            "$ref": "Schedule_2/Methods/Edit.json#/components/schemas/Schedule_2.Methods.Edit.Exec"
                                                         }
                                                     },
                                                     "required": [
@@ -1068,8 +1060,7 @@
                                                     "type": "object",
                                                     "properties": {
                                                         "result": {
-                                                            "$ref": "Schedule_2/Methods/Get.json#/components/schemas/Schedule_2.Methods.Get.Exec",
-                                                            "title": "@throws Exception"
+                                                            "$ref": "Schedule_2/Methods/Get.json#/components/schemas/Schedule_2.Methods.Get.Exec"
                                                         }
                                                     },
                                                     "required": [
@@ -1243,8 +1234,7 @@
                                                     "type": "object",
                                                     "properties": {
                                                         "result": {
-                                                            "$ref": "Templates_2/Methods/Add.json#/components/schemas/Templates_2.Methods.Add.Exec",
-                                                            "title": "@throws Exception"
+                                                            "$ref": "Templates_2/Methods/Add.json#/components/schemas/Templates_2.Methods.Add.Exec"
                                                         }
                                                     },
                                                     "required": [
@@ -1302,8 +1292,7 @@
                                                     "type": "object",
                                                     "properties": {
                                                         "result": {
-                                                            "$ref": "Templates_2/Methods/Del.json#/components/schemas/Templates_2.Methods.Del.Exec",
-                                                            "title": "@throws Exception"
+                                                            "$ref": "Templates_2/Methods/Del.json#/components/schemas/Templates_2.Methods.Del.Exec"
                                                         }
                                                     },
                                                     "required": [
@@ -1361,8 +1350,7 @@
                                                     "type": "object",
                                                     "properties": {
                                                         "result": {
-                                                            "$ref": "Templates_2/Methods/Edit.json#/components/schemas/Templates_2.Methods.Edit.Exec",
-                                                            "title": "@throws Exception"
+                                                            "$ref": "Templates_2/Methods/Edit.json#/components/schemas/Templates_2.Methods.Edit.Exec"
                                                         }
                                                     },
                                                     "required": [
@@ -1420,8 +1408,7 @@
                                                     "type": "object",
                                                     "properties": {
                                                         "result": {
-                                                            "$ref": "Templates_2/Methods/Get.json#/components/schemas/Templates_2.Methods.Get.Exec",
-                                                            "title": "@throws Exception"
+                                                            "$ref": "Templates_2/Methods/Get.json#/components/schemas/Templates_2.Methods.Get.Exec"
                                                         }
                                                     },
                                                     "required": [
@@ -1499,8 +1486,7 @@
                             },
                             "model": {
                                 "schema": {
-                                    "$ref": "Models/Urls.json#/components/schemas/Models.Urls",
-                                    "description": "Only for typescript, does not contain real data"
+                                    "$ref": "Models/Urls.json#/components/schemas/Models.Urls"
                                 }
                             }
                         }
@@ -1558,8 +1544,7 @@
                             },
                             "model": {
                                 "schema": {
-                                    "$ref": "Models/Urls.json#/components/schemas/Models.Urls",
-                                    "description": "Only for typescript, does not contain real data"
+                                    "$ref": "Models/Urls.json#/components/schemas/Models.Urls"
                                 }
                             }
                         }
@@ -1597,8 +1582,7 @@
                                                     "type": "object",
                                                     "properties": {
                                                         "result": {
-                                                            "$ref": "Urls_2/Methods/Get.json#/components/schemas/Urls_2.Methods.Get.Exec",
-                                                            "title": "Список urls проекта"
+                                                            "$ref": "Urls_2/Methods/Get.json#/components/schemas/Urls_2.Methods.Get.Exec"
                                                         }
                                                     },
                                                     "required": [
@@ -1621,8 +1605,7 @@
                             },
                             "model": {
                                 "schema": {
-                                    "$ref": "Models/Urls.json#/components/schemas/Models.Urls",
-                                    "description": "Only for typescript, does not contain real data"
+                                    "$ref": "Models/Urls.json#/components/schemas/Models.Urls"
                                 }
                             }
                         }
@@ -1680,8 +1663,7 @@
                             },
                             "model": {
                                 "schema": {
-                                    "$ref": "Models/Votes.json#/components/schemas/Models.Votes",
-                                    "description": "Only for typescript, does not contain real data"
+                                    "$ref": "Models/Votes.json#/components/schemas/Models.Votes"
                                 }
                             }
                         }
@@ -1742,8 +1724,7 @@
                             },
                             "model": {
                                 "schema": {
-                                    "$ref": "Models/Votes.json#/components/schemas/Models.Votes",
-                                    "description": "Only for typescript, does not contain real data"
+                                    "$ref": "Models/Votes.json#/components/schemas/Models.Votes"
                                 }
                             }
                         }
@@ -1812,8 +1793,7 @@
                                                     "type": "object",
                                                     "properties": {
                                                         "result": {
-                                                            "$ref": "Admin_2/Methods/Actions/AbstractRegular.json#/components/schemas/Admin_2.Methods.Actions.AbstractRegular.Exec",
-                                                            "title": "Непосредственный вызов API функции\n\nЗапрещено делать публичной, это приведет к поломке preCall()\n\nВ описании к функции отвечать на вопрос: `Что является результатом запроса?` Например: `Список пользователей`\n\nНе менять `protected`, проверка проводится при генерации схем в `TV\\API\\Objects\\ClassAPIMethodInfo`"
+                                                            "$ref": "Admin_2/Methods/Actions/AbstractRegular.json#/components/schemas/Admin_2.Methods.Actions.AbstractRegular.Exec"
                                                         }
                                                     },
                                                     "required": [
@@ -1903,8 +1883,7 @@
                                                     "type": "object",
                                                     "properties": {
                                                         "result": {
-                                                            "$ref": "Admin_2/Methods/I18n/Get.json#/components/schemas/Admin_2.Methods.I18n.Get.Exec",
-                                                            "title": "@return array{lang: string, category: string, name: string, value: string}"
+                                                            "$ref": "Admin_2/Methods/I18n/Get.json#/components/schemas/Admin_2.Methods.I18n.Get.Exec"
                                                         }
                                                     },
                                                     "required": [
@@ -2157,8 +2136,7 @@
                             },
                             "model": {
                                 "schema": {
-                                    "$ref": "Models/Analytics/Ranks.json#/components/schemas/Models.Analytics.Ranks",
-                                    "description": "Only for typescript, does not contain real data"
+                                    "$ref": "Models/Analytics/Ranks.json#/components/schemas/Models.Analytics.Ranks"
                                 }
                             }
                         }
@@ -2334,8 +2312,7 @@
                             },
                             "model": {
                                 "schema": {
-                                    "$ref": "Models/Admin/Staff.json#/components/schemas/Models.Admin.Staff",
-                                    "description": "Only for typescript, does not contain real data"
+                                    "$ref": "Models/Admin/Staff.json#/components/schemas/Models.Admin.Staff"
                                 }
                             }
                         }
@@ -2509,8 +2486,7 @@
                             },
                             "model": {
                                 "schema": {
-                                    "$ref": "Models/Admin/Users.json#/components/schemas/Models.Admin.Users",
-                                    "description": "Only for typescript, does not contain real data"
+                                    "$ref": "Models/Admin/Users.json#/components/schemas/Models.Admin.Users"
                                 }
                             }
                         }
@@ -2571,8 +2547,7 @@
                             },
                             "model": {
                                 "schema": {
-                                    "$ref": "Models/Admin/Users.json#/components/schemas/Models.Admin.Users",
-                                    "description": "Only for typescript, does not contain real data"
+                                    "$ref": "Models/Admin/Users.json#/components/schemas/Models.Admin.Users"
                                 }
                             }
                         }
@@ -2632,8 +2607,7 @@
                             },
                             "model": {
                                 "schema": {
-                                    "$ref": "Models/Votes.json#/components/schemas/Models.Votes",
-                                    "description": "Only for typescript, does not contain real data"
+                                    "$ref": "Models/Votes.json#/components/schemas/Models.Votes"
                                 }
                             }
                         }
@@ -2694,8 +2668,7 @@
                             },
                             "model": {
                                 "schema": {
-                                    "$ref": "Models/Annotations.json#/components/schemas/Models.Annotations",
-                                    "description": "Only for typescript, does not contain real data"
+                                    "$ref": "Models/Annotations.json#/components/schemas/Models.Annotations"
                                 }
                             }
                         }
@@ -2849,8 +2822,7 @@
                                                     "type": "object",
                                                     "properties": {
                                                         "result": {
-                                                            "$ref": "Audit_2/Methods/CountUrls/Get.json#/components/schemas/Audit_2.Methods.CountUrls.Get.Exec",
-                                                            "title": "Количество настроенных URL"
+                                                            "$ref": "Audit_2/Methods/CountUrls/Get.json#/components/schemas/Audit_2.Methods.CountUrls.Get.Exec"
                                                         }
                                                     },
                                                     "required": [
@@ -2908,8 +2880,7 @@
                                                     "type": "object",
                                                     "properties": {
                                                         "result": {
-                                                            "$ref": "Audit_2/Methods/Indexing/Get.json#/components/schemas/Audit_2.Methods.Indexing.Get.Exec",
-                                                            "title": "Список ссылок с данными по ним"
+                                                            "$ref": "Audit_2/Methods/Indexing/Get.json#/components/schemas/Audit_2.Methods.Indexing.Get.Exec"
                                                         }
                                                     },
                                                     "required": [
@@ -2932,8 +2903,7 @@
                             },
                             "model": {
                                 "schema": {
-                                    "$ref": "Models/Urls.json#/components/schemas/Models.Urls",
-                                    "description": "Only for typescript, does not contain real data"
+                                    "$ref": "Models/Urls.json#/components/schemas/Models.Urls"
                                 }
                             }
                         }
@@ -2971,8 +2941,7 @@
                                                     "type": "object",
                                                     "properties": {
                                                         "result": {
-                                                            "$ref": "Audit_2/Methods/Settings/Edit.json#/components/schemas/Audit_2.Methods.Settings.Edit.Exec",
-                                                            "title": "Количество применных настроек"
+                                                            "$ref": "Audit_2/Methods/Settings/Edit.json#/components/schemas/Audit_2.Methods.Settings.Edit.Exec"
                                                         }
                                                     },
                                                     "required": [
@@ -3030,8 +2999,7 @@
                                                     "type": "object",
                                                     "properties": {
                                                         "result": {
-                                                            "$ref": "Audit_2/Methods/Settings/Get.json#/components/schemas/Audit_2.Methods.Settings.Get.Exec",
-                                                            "title": "Настройки аудита"
+                                                            "$ref": "Audit_2/Methods/Settings/Get.json#/components/schemas/Audit_2.Methods.Settings.Get.Exec"
                                                         }
                                                     },
                                                     "required": [
@@ -3089,8 +3057,7 @@
                                                     "type": "object",
                                                     "properties": {
                                                         "result": {
-                                                            "$ref": "Audit_2/Methods/Watcher/Get.json#/components/schemas/Audit_2.Methods.Watcher.Get.Exec",
-                                                            "title": "Генерируемый на основе urls, список результатов проверок радара"
+                                                            "$ref": "Audit_2/Methods/Watcher/Get.json#/components/schemas/Audit_2.Methods.Watcher.Get.Exec"
                                                         }
                                                     },
                                                     "required": [
@@ -3232,8 +3199,7 @@
                             },
                             "model": {
                                 "schema": {
-                                    "$ref": "Models/BalanceHistory.json#/components/schemas/Models.BalanceHistory",
-                                    "description": "Only for typescript, does not contain real data"
+                                    "$ref": "Models/BalanceHistory.json#/components/schemas/Models.BalanceHistory"
                                 }
                             }
                         }
@@ -3271,8 +3237,7 @@
                                                     "type": "object",
                                                     "properties": {
                                                         "result": {
-                                                            "$ref": "Bank_2/Methods/Info/Get.json#/components/schemas/Bank_2.Methods.Info.Get.Exec",
-                                                            "title": "@return array{balance_all: float, balance_personal: float, balance_bonus: float, balance_tariff: float, tariff: array, subscription?: Bank_2\\Objects\\Subscriptions\\Subscription, subscription_name?: Bank_2\\Objects\\Subscriptions\\Subscription}"
+                                                            "$ref": "Bank_2/Methods/Info/Get.json#/components/schemas/Bank_2.Methods.Info.Get.Exec"
                                                         }
                                                     },
                                                     "required": [
@@ -3527,8 +3492,7 @@
                             },
                             "model": {
                                 "schema": {
-                                    "$ref": "Models/Requisites.json#/components/schemas/Models.Requisites",
-                                    "description": "Only for typescript, does not contain real data"
+                                    "$ref": "Models/Requisites.json#/components/schemas/Models.Requisites"
                                 }
                             }
                         }
@@ -3624,8 +3588,7 @@
                                                     "type": "object",
                                                     "properties": {
                                                         "result": {
-                                                            "$ref": "Broker_2/Methods/Ads/Edit.json#/components/schemas/Broker_2.Methods.Ads.Edit.Exec",
-                                                            "title": "@throws Exception"
+                                                            "$ref": "Broker_2/Methods/Ads/Edit.json#/components/schemas/Broker_2.Methods.Ads.Edit.Exec"
                                                         }
                                                     },
                                                     "required": [
@@ -3683,8 +3646,7 @@
                                                     "type": "object",
                                                     "properties": {
                                                         "result": {
-                                                            "$ref": "Broker_2/Methods/Ads/Get.json#/components/schemas/Broker_2.Methods.Ads.Get.Exec",
-                                                            "title": "@throws Exception"
+                                                            "$ref": "Broker_2/Methods/Ads/Get.json#/components/schemas/Broker_2.Methods.Ads.Get.Exec"
                                                         }
                                                     },
                                                     "required": [
@@ -3707,8 +3669,7 @@
                             },
                             "model": {
                                 "schema": {
-                                    "$ref": "Models/Broker/Ads.json#/components/schemas/Models.Broker.Ads",
-                                    "description": "Only for typescript, does not contain real data"
+                                    "$ref": "Models/Broker/Ads.json#/components/schemas/Models.Broker.Ads"
                                 }
                             }
                         }
@@ -3746,8 +3707,7 @@
                                                     "type": "object",
                                                     "properties": {
                                                         "result": {
-                                                            "$ref": "Broker_2/Methods/Campaigns/Add.json#/components/schemas/Broker_2.Methods.Campaigns.Add.Exec",
-                                                            "title": "@throws Exception"
+                                                            "$ref": "Broker_2/Methods/Campaigns/Add.json#/components/schemas/Broker_2.Methods.Campaigns.Add.Exec"
                                                         }
                                                     },
                                                     "required": [
@@ -3767,8 +3727,7 @@
                             },
                             "model": {
                                 "schema": {
-                                    "$ref": "Models/Broker/Campaigns.json#/components/schemas/Models.Broker.Campaigns",
-                                    "description": "Only for typescript, does not contain real data"
+                                    "$ref": "Models/Broker/Campaigns.json#/components/schemas/Models.Broker.Campaigns"
                                 }
                             }
                         }
@@ -3806,8 +3765,7 @@
                                                     "type": "object",
                                                     "properties": {
                                                         "result": {
-                                                            "$ref": "Broker_2/Methods/Campaigns/Del.json#/components/schemas/Broker_2.Methods.Campaigns.Del.Exec",
-                                                            "title": "@throws Exception"
+                                                            "$ref": "Broker_2/Methods/Campaigns/Del.json#/components/schemas/Broker_2.Methods.Campaigns.Del.Exec"
                                                         }
                                                     },
                                                     "required": [
@@ -3830,8 +3788,7 @@
                             },
                             "model": {
                                 "schema": {
-                                    "$ref": "Models/Broker/Campaigns.json#/components/schemas/Models.Broker.Campaigns",
-                                    "description": "Only for typescript, does not contain real data"
+                                    "$ref": "Models/Broker/Campaigns.json#/components/schemas/Models.Broker.Campaigns"
                                 }
                             }
                         }
@@ -3869,8 +3826,7 @@
                                                     "type": "object",
                                                     "properties": {
                                                         "result": {
-                                                            "$ref": "Broker_2/Methods/Campaigns/Edit.json#/components/schemas/Broker_2.Methods.Campaigns.Edit.Exec",
-                                                            "title": "@throws Exception"
+                                                            "$ref": "Broker_2/Methods/Campaigns/Edit.json#/components/schemas/Broker_2.Methods.Campaigns.Edit.Exec"
                                                         }
                                                     },
                                                     "required": [
@@ -3893,8 +3849,7 @@
                             },
                             "model": {
                                 "schema": {
-                                    "$ref": "Models/Broker/Campaigns.json#/components/schemas/Models.Broker.Campaigns",
-                                    "description": "Only for typescript, does not contain real data"
+                                    "$ref": "Models/Broker/Campaigns.json#/components/schemas/Models.Broker.Campaigns"
                                 }
                             }
                         }
@@ -3932,8 +3887,7 @@
                                                     "type": "object",
                                                     "properties": {
                                                         "result": {
-                                                            "$ref": "Broker_2/Methods/Campaigns/Get.json#/components/schemas/Broker_2.Methods.Campaigns.Get.Exec",
-                                                            "title": "@throws Exception"
+                                                            "$ref": "Broker_2/Methods/Campaigns/Get.json#/components/schemas/Broker_2.Methods.Campaigns.Get.Exec"
                                                         }
                                                     },
                                                     "required": [
@@ -3956,8 +3910,7 @@
                             },
                             "model": {
                                 "schema": {
-                                    "$ref": "Models/Broker/Campaigns.json#/components/schemas/Models.Broker.Campaigns",
-                                    "description": "Only for typescript, does not contain real data"
+                                    "$ref": "Models/Broker/Campaigns.json#/components/schemas/Models.Broker.Campaigns"
                                 }
                             }
                         }
@@ -3995,8 +3948,7 @@
                                                     "type": "object",
                                                     "properties": {
                                                         "result": {
-                                                            "$ref": "Broker_2/Methods/Groups/Add.json#/components/schemas/Broker_2.Methods.Groups.Add.Exec",
-                                                            "title": "@throws Exception"
+                                                            "$ref": "Broker_2/Methods/Groups/Add.json#/components/schemas/Broker_2.Methods.Groups.Add.Exec"
                                                         }
                                                     },
                                                     "required": [
@@ -4054,8 +4006,7 @@
                                                     "type": "object",
                                                     "properties": {
                                                         "result": {
-                                                            "$ref": "Broker_2/Methods/Groups/Get.json#/components/schemas/Broker_2.Methods.Groups.Get.Exec",
-                                                            "title": "@throws Exception"
+                                                            "$ref": "Broker_2/Methods/Groups/Get.json#/components/schemas/Broker_2.Methods.Groups.Get.Exec"
                                                         }
                                                     },
                                                     "required": [
@@ -4078,8 +4029,7 @@
                             },
                             "model": {
                                 "schema": {
-                                    "$ref": "Models/Broker/Groups.json#/components/schemas/Models.Broker.Groups",
-                                    "description": "Only for typescript, does not contain real data"
+                                    "$ref": "Models/Broker/Groups.json#/components/schemas/Models.Broker.Groups"
                                 }
                             }
                         }
@@ -4117,8 +4067,7 @@
                                                     "type": "object",
                                                     "properties": {
                                                         "result": {
-                                                            "$ref": "Broker_2/Methods/Keywords/Del.json#/components/schemas/Broker_2.Methods.Keywords.Del.Exec",
-                                                            "title": "@throws Exception"
+                                                            "$ref": "Broker_2/Methods/Keywords/Del.json#/components/schemas/Broker_2.Methods.Keywords.Del.Exec"
                                                         }
                                                     },
                                                     "required": [
@@ -4176,8 +4125,7 @@
                                                     "type": "object",
                                                     "properties": {
                                                         "result": {
-                                                            "$ref": "Broker_2/Methods/Keywords/Edit.json#/components/schemas/Broker_2.Methods.Keywords.Edit.Exec",
-                                                            "title": "@throws Exception"
+                                                            "$ref": "Broker_2/Methods/Keywords/Edit.json#/components/schemas/Broker_2.Methods.Keywords.Edit.Exec"
                                                         }
                                                     },
                                                     "required": [
@@ -4197,8 +4145,7 @@
                             },
                             "model": {
                                 "schema": {
-                                    "$ref": "Models/Broker/Keywords.json#/components/schemas/Models.Broker.Keywords",
-                                    "description": "Only for typescript, does not contain real data"
+                                    "$ref": "Models/Broker/Keywords.json#/components/schemas/Models.Broker.Keywords"
                                 }
                             }
                         }
@@ -4236,8 +4183,7 @@
                                                     "type": "object",
                                                     "properties": {
                                                         "result": {
-                                                            "$ref": "Broker_2/Methods/Keywords/Get.json#/components/schemas/Broker_2.Methods.Keywords.Get.Exec",
-                                                            "title": "@throws Exception"
+                                                            "$ref": "Broker_2/Methods/Keywords/Get.json#/components/schemas/Broker_2.Methods.Keywords.Get.Exec"
                                                         }
                                                     },
                                                     "required": [
@@ -4260,8 +4206,7 @@
                             },
                             "model": {
                                 "schema": {
-                                    "$ref": "Models/Broker/Keywords.json#/components/schemas/Models.Broker.Keywords",
-                                    "description": "Only for typescript, does not contain real data"
+                                    "$ref": "Models/Broker/Keywords.json#/components/schemas/Models.Broker.Keywords"
                                 }
                             }
                         }
@@ -4299,8 +4244,7 @@
                                                     "type": "object",
                                                     "properties": {
                                                         "result": {
-                                                            "$ref": "Broker_2/Methods/Log/Get.json#/components/schemas/Broker_2.Methods.Log.Get.Exec",
-                                                            "title": "@throws Exception"
+                                                            "$ref": "Broker_2/Methods/Log/Get.json#/components/schemas/Broker_2.Methods.Log.Get.Exec"
                                                         }
                                                     },
                                                     "required": [
@@ -4323,8 +4267,7 @@
                             },
                             "model": {
                                 "schema": {
-                                    "$ref": "Models/Broker/Log.json#/components/schemas/Models.Broker.Log",
-                                    "description": "Only for typescript, does not contain real data"
+                                    "$ref": "Models/Broker/Log.json#/components/schemas/Models.Broker.Log"
                                 }
                             }
                         }
@@ -4385,8 +4328,7 @@
                             },
                             "model": {
                                 "schema": {
-                                    "$ref": "Models/Comments.json#/components/schemas/Models.Comments",
-                                    "description": "Only for typescript, does not contain real data"
+                                    "$ref": "Models/Comments.json#/components/schemas/Models.Comments"
                                 }
                             }
                         }
@@ -4563,8 +4505,7 @@
                             },
                             "model": {
                                 "schema": {
-                                    "$ref": "Models/Content/Authors.json#/components/schemas/Models.Content.Authors",
-                                    "description": "Only for typescript, does not contain real data"
+                                    "$ref": "Models/Content/Authors.json#/components/schemas/Models.Content.Authors"
                                 }
                             }
                         }
@@ -4775,8 +4716,7 @@
                                                     "type": "object",
                                                     "properties": {
                                                         "result": {
-                                                            "$ref": "Content_2/Methods/Pages/AbstractPage.json#/components/schemas/Content_2.Methods.Pages.AbstractPage.Exec",
-                                                            "title": "Непосредственный вызов API функции\n\nЗапрещено делать публичной, это приведет к поломке preCall()\n\nВ описании к функции отвечать на вопрос: `Что является результатом запроса?` Например: `Список пользователей`\n\nНе менять `protected`, проверка проводится при генерации схем в `TV\\API\\Objects\\ClassAPIMethodInfo`"
+                                                            "$ref": "Content_2/Methods/Pages/AbstractPage.json#/components/schemas/Content_2.Methods.Pages.AbstractPage.Exec"
                                                         }
                                                     },
                                                     "required": [
@@ -4796,8 +4736,7 @@
                             },
                             "model": {
                                 "schema": {
-                                    "$ref": "Models/Pages.json#/components/schemas/Models.Pages",
-                                    "description": "Only for typescript, does not contain real data"
+                                    "$ref": "Models/Pages.json#/components/schemas/Models.Pages"
                                 }
                             }
                         }
@@ -4835,8 +4774,7 @@
                                                     "type": "object",
                                                     "properties": {
                                                         "result": {
-                                                            "$ref": "Content_2/Methods/Pages/Add.json#/components/schemas/Content_2.Methods.Pages.Add.Exec",
-                                                            "title": "@throws Exception"
+                                                            "$ref": "Content_2/Methods/Pages/Add.json#/components/schemas/Content_2.Methods.Pages.Add.Exec"
                                                         }
                                                     },
                                                     "required": [
@@ -4856,8 +4794,7 @@
                             },
                             "model": {
                                 "schema": {
-                                    "$ref": "Models/Pages.json#/components/schemas/Models.Pages",
-                                    "description": "Only for typescript, does not contain real data"
+                                    "$ref": "Models/Pages.json#/components/schemas/Models.Pages"
                                 }
                             }
                         }
@@ -4895,8 +4832,7 @@
                                                     "type": "object",
                                                     "properties": {
                                                         "result": {
-                                                            "$ref": "Content_2/Methods/Pages/Del.json#/components/schemas/Content_2.Methods.Pages.Del.Exec",
-                                                            "title": "@throws Exception"
+                                                            "$ref": "Content_2/Methods/Pages/Del.json#/components/schemas/Content_2.Methods.Pages.Del.Exec"
                                                         }
                                                     },
                                                     "required": [
@@ -4916,8 +4852,7 @@
                             },
                             "model": {
                                 "schema": {
-                                    "$ref": "Models/Pages.json#/components/schemas/Models.Pages",
-                                    "description": "Only for typescript, does not contain real data"
+                                    "$ref": "Models/Pages.json#/components/schemas/Models.Pages"
                                 }
                             }
                         }
@@ -4955,8 +4890,7 @@
                                                     "type": "object",
                                                     "properties": {
                                                         "result": {
-                                                            "$ref": "Content_2/Methods/Pages/Edit.json#/components/schemas/Content_2.Methods.Pages.Edit.Exec",
-                                                            "title": "@throws Exception"
+                                                            "$ref": "Content_2/Methods/Pages/Edit.json#/components/schemas/Content_2.Methods.Pages.Edit.Exec"
                                                         }
                                                     },
                                                     "required": [
@@ -4976,8 +4910,7 @@
                             },
                             "model": {
                                 "schema": {
-                                    "$ref": "Models/Pages.json#/components/schemas/Models.Pages",
-                                    "description": "Only for typescript, does not contain real data"
+                                    "$ref": "Models/Pages.json#/components/schemas/Models.Pages"
                                 }
                             }
                         }
@@ -5015,8 +4948,7 @@
                                                     "type": "object",
                                                     "properties": {
                                                         "result": {
-                                                            "$ref": "Content_2/Methods/Pages/Get.json#/components/schemas/Content_2.Methods.Pages.Get.Exec",
-                                                            "title": "@throws Exception"
+                                                            "$ref": "Content_2/Methods/Pages/Get.json#/components/schemas/Content_2.Methods.Pages.Get.Exec"
                                                         }
                                                     },
                                                     "required": [
@@ -5039,8 +4971,7 @@
                             },
                             "model": {
                                 "schema": {
-                                    "$ref": "Models/Pages.json#/components/schemas/Models.Pages",
-                                    "description": "Only for typescript, does not contain real data"
+                                    "$ref": "Models/Pages.json#/components/schemas/Models.Pages"
                                 }
                             }
                         }
@@ -5077,8 +5008,7 @@
                                                     "type": "object",
                                                     "properties": {
                                                         "result": {
-                                                            "$ref": "Content_2/Methods/Redirects/AbstractRegular.json#/components/schemas/Content_2.Methods.Redirects.AbstractRegular.Exec",
-                                                            "title": "Непосредственный вызов API функции\n\nЗапрещено делать публичной, это приведет к поломке preCall()\n\nВ описании к функции отвечать на вопрос: `Что является результатом запроса?` Например: `Список пользователей`\n\nНе менять `protected`, проверка проводится при генерации схем в `TV\\API\\Objects\\ClassAPIMethodInfo`"
+                                                            "$ref": "Content_2/Methods/Redirects/AbstractRegular.json#/components/schemas/Content_2.Methods.Redirects.AbstractRegular.Exec"
                                                         }
                                                     },
                                                     "required": [
@@ -5136,8 +5066,7 @@
                                                     "type": "object",
                                                     "properties": {
                                                         "result": {
-                                                            "$ref": "Content_2/Methods/Redirects/Add.json#/components/schemas/Content_2.Methods.Redirects.Add.Exec",
-                                                            "title": "@throws Exception"
+                                                            "$ref": "Content_2/Methods/Redirects/Add.json#/components/schemas/Content_2.Methods.Redirects.Add.Exec"
                                                         }
                                                     },
                                                     "required": [
@@ -5195,8 +5124,7 @@
                                                     "type": "object",
                                                     "properties": {
                                                         "result": {
-                                                            "$ref": "Content_2/Methods/Redirects/Del.json#/components/schemas/Content_2.Methods.Redirects.Del.Exec",
-                                                            "title": "@throws Exception"
+                                                            "$ref": "Content_2/Methods/Redirects/Del.json#/components/schemas/Content_2.Methods.Redirects.Del.Exec"
                                                         }
                                                     },
                                                     "required": [
@@ -5254,8 +5182,7 @@
                                                     "type": "object",
                                                     "properties": {
                                                         "result": {
-                                                            "$ref": "Content_2/Methods/Redirects/Edit.json#/components/schemas/Content_2.Methods.Redirects.Edit.Exec",
-                                                            "title": "@throws Exception"
+                                                            "$ref": "Content_2/Methods/Redirects/Edit.json#/components/schemas/Content_2.Methods.Redirects.Edit.Exec"
                                                         }
                                                     },
                                                     "required": [
@@ -5336,8 +5263,7 @@
                             },
                             "model": {
                                 "schema": {
-                                    "$ref": "Models/ContentsRedirects.json#/components/schemas/Models.ContentsRedirects",
-                                    "description": "Only for typescript, does not contain real data"
+                                    "$ref": "Models/ContentsRedirects.json#/components/schemas/Models.ContentsRedirects"
                                 }
                             }
                         }
@@ -5375,8 +5301,7 @@
                                                     "type": "object",
                                                     "properties": {
                                                         "result": {
-                                                            "$ref": "Content_2/Methods/Rss/Get.json#/components/schemas/Content_2.Methods.Rss.Get.Exec",
-                                                            "title": "@throws Exception"
+                                                            "$ref": "Content_2/Methods/Rss/Get.json#/components/schemas/Content_2.Methods.Rss.Get.Exec"
                                                         }
                                                     },
                                                     "required": [
@@ -5399,8 +5324,7 @@
                             },
                             "model": {
                                 "schema": {
-                                    "$ref": "Models/Pages.json#/components/schemas/Models.Pages",
-                                    "description": "Only for typescript, does not contain real data"
+                                    "$ref": "Models/Pages.json#/components/schemas/Models.Pages"
                                 }
                             }
                         }
@@ -5438,8 +5362,7 @@
                                                     "type": "object",
                                                     "properties": {
                                                         "result": {
-                                                            "$ref": "Content_2/Methods/Search/Get.json#/components/schemas/Content_2.Methods.Search.Get.Exec",
-                                                            "title": "@throws Exception"
+                                                            "$ref": "Content_2/Methods/Search/Get.json#/components/schemas/Content_2.Methods.Search.Get.Exec"
                                                         }
                                                     },
                                                     "required": [
@@ -5500,8 +5423,7 @@
                                                     "type": "object",
                                                     "properties": {
                                                         "result": {
-                                                            "$ref": "Content_2/Methods/Sitemap/Get.json#/components/schemas/Content_2.Methods.Sitemap.Get.Exec",
-                                                            "title": "@throws Exception"
+                                                            "$ref": "Content_2/Methods/Sitemap/Get.json#/components/schemas/Content_2.Methods.Sitemap.Get.Exec"
                                                         }
                                                     },
                                                     "required": [
@@ -5524,8 +5446,7 @@
                             },
                             "model": {
                                 "schema": {
-                                    "$ref": "Models/Pages.json#/components/schemas/Models.Pages",
-                                    "description": "Only for typescript, does not contain real data"
+                                    "$ref": "Models/Pages.json#/components/schemas/Models.Pages"
                                 }
                             }
                         }
@@ -5641,8 +5562,7 @@
                             },
                             "model": {
                                 "schema": {
-                                    "$ref": "Models/CronCommands.json#/components/schemas/Models.CronCommands",
-                                    "description": "Only for typescript, does not contain real data"
+                                    "$ref": "Models/CronCommands.json#/components/schemas/Models.CronCommands"
                                 }
                             }
                         }
@@ -5700,8 +5620,7 @@
                             },
                             "model": {
                                 "schema": {
-                                    "$ref": "Models/CronCommands.json#/components/schemas/Models.CronCommands",
-                                    "description": "Only for typescript, does not contain real data"
+                                    "$ref": "Models/CronCommands.json#/components/schemas/Models.CronCommands"
                                 }
                             }
                         }
@@ -5759,8 +5678,7 @@
                             },
                             "model": {
                                 "schema": {
-                                    "$ref": "Models/CronCommands.json#/components/schemas/Models.CronCommands",
-                                    "description": "Only for typescript, does not contain real data"
+                                    "$ref": "Models/CronCommands.json#/components/schemas/Models.CronCommands"
                                 }
                             }
                         }
@@ -5798,8 +5716,7 @@
                                                     "type": "object",
                                                     "properties": {
                                                         "result": {
-                                                            "$ref": "Cron_2/Methods/Commands/Get.json#/components/schemas/Cron_2.Methods.Commands.Get.Exec",
-                                                            "title": "Список задач cron"
+                                                            "$ref": "Cron_2/Methods/Commands/Get.json#/components/schemas/Cron_2.Methods.Commands.Get.Exec"
                                                         }
                                                     },
                                                     "required": [
@@ -5822,8 +5739,7 @@
                             },
                             "model": {
                                 "schema": {
-                                    "$ref": "Models/CronCommands.json#/components/schemas/Models.CronCommands",
-                                    "description": "Only for typescript, does not contain real data"
+                                    "$ref": "Models/CronCommands.json#/components/schemas/Models.CronCommands"
                                 }
                             }
                         }
@@ -5861,8 +5777,7 @@
                                                     "type": "object",
                                                     "properties": {
                                                         "result": {
-                                                            "$ref": "Cron_2/Methods/Get.json#/components/schemas/Cron_2.Methods.Get.Exec",
-                                                            "title": "Список имен сервисов"
+                                                            "$ref": "Cron_2/Methods/Get.json#/components/schemas/Cron_2.Methods.Get.Exec"
                                                         }
                                                     },
                                                     "required": [
@@ -5885,8 +5800,7 @@
                             },
                             "model": {
                                 "schema": {
-                                    "$ref": "Models/CronCommands.json#/components/schemas/Models.CronCommands",
-                                    "description": "Only for typescript, does not contain real data"
+                                    "$ref": "Models/CronCommands.json#/components/schemas/Models.CronCommands"
                                 }
                             }
                         }
@@ -5924,8 +5838,7 @@
                                                     "type": "object",
                                                     "properties": {
                                                         "result": {
-                                                            "$ref": "Example_2/Methods/Array/Get.json#/components/schemas/Example_2.Methods.Array.Get.Exec",
-                                                            "title": "@type array<string, array<string, mixed>>"
+                                                            "$ref": "Example_2/Methods/Array/Get.json#/components/schemas/Example_2.Methods.Array.Get.Exec"
                                                         }
                                                     },
                                                     "required": [
@@ -6099,8 +6012,7 @@
                                                     "type": "object",
                                                     "properties": {
                                                         "result": {
-                                                            "$ref": "Example_2/Methods/Enum/Get.json#/components/schemas/Example_2.Methods.Enum.Get.Exec",
-                                                            "title": "Ассоциативный массив с результирующими переданными параетрами и результатом genSet()"
+                                                            "$ref": "Example_2/Methods/Enum/Get.json#/components/schemas/Example_2.Methods.Enum.Get.Exec"
                                                         }
                                                     },
                                                     "required": [
@@ -6158,8 +6070,7 @@
                                                     "type": "object",
                                                     "properties": {
                                                         "result": {
-                                                            "$ref": "Example_2/Methods/Object/Get.json#/components/schemas/Example_2.Methods.Object.Get.Exec",
-                                                            "title": "Ассоциативный массив с результирующими переданными параетрами и результатом genSet()"
+                                                            "$ref": "Example_2/Methods/Object/Get.json#/components/schemas/Example_2.Methods.Object.Get.Exec"
                                                         }
                                                     },
                                                     "required": [
@@ -6218,8 +6129,7 @@
                                                     "type": "object",
                                                     "properties": {
                                                         "result": {
-                                                            "$ref": "Example_2/Methods/PhpDoc/Get.json#/components/schemas/Example_2.Methods.PhpDoc.Get.Exec",
-                                                            "title": "Тест phpDoc\n\nTODO: Удалить после настройки openapi\n\n- static\n- parent\n- self"
+                                                            "$ref": "Example_2/Methods/PhpDoc/Get.json#/components/schemas/Example_2.Methods.PhpDoc.Get.Exec"
                                                         }
                                                     },
                                                     "required": [
@@ -6303,8 +6213,7 @@
                             },
                             "model": {
                                 "schema": {
-                                    "$ref": "Models/Projects.json#/components/schemas/Models.Projects",
-                                    "description": "Only for typescript, does not contain real data"
+                                    "$ref": "Models/Projects.json#/components/schemas/Models.Projects"
                                 }
                             }
                         }
@@ -6341,8 +6250,7 @@
                                                     "type": "object",
                                                     "properties": {
                                                         "result": {
-                                                            "$ref": "Keywords_2/Methods/Collect/AbstractRegular.json#/components/schemas/Keywords_2.Methods.Collect.AbstractRegular.Exec",
-                                                            "title": "Непосредственный вызов API функции\n\nЗапрещено делать публичной, это приведет к поломке preCall()\n\nВ описании к функции отвечать на вопрос: `Что является результатом запроса?` Например: `Список пользователей`\n\nНе менять `protected`, проверка проводится при генерации схем в `TV\\API\\Objects\\ClassAPIMethodInfo`"
+                                                            "$ref": "Keywords_2/Methods/Collect/AbstractRegular.json#/components/schemas/Keywords_2.Methods.Collect.AbstractRegular.Exec"
                                                         }
                                                     },
                                                     "required": [
@@ -6423,8 +6331,7 @@
                             },
                             "model": {
                                 "schema": {
-                                    "$ref": "Models/Keywords.json#/components/schemas/Models.Keywords",
-                                    "description": "Only for typescript, does not contain real data"
+                                    "$ref": "Models/Keywords.json#/components/schemas/Models.Keywords"
                                 }
                             }
                         }
@@ -6485,8 +6392,7 @@
                             },
                             "model": {
                                 "schema": {
-                                    "$ref": "Models/Groups.json#/components/schemas/Models.Groups",
-                                    "description": "Only for typescript, does not contain real data"
+                                    "$ref": "Models/Groups.json#/components/schemas/Models.Groups"
                                 }
                             }
                         }
@@ -6732,8 +6638,7 @@
                                                     "type": "object",
                                                     "properties": {
                                                         "result": {
-                                                            "$ref": "Payments_2/Methods/Subscriptions/Edit.json#/components/schemas/Payments_2.Methods.Subscriptions.Edit.Exec",
-                                                            "title": "@throws Exception"
+                                                            "$ref": "Payments_2/Methods/Subscriptions/Edit.json#/components/schemas/Payments_2.Methods.Subscriptions.Edit.Exec"
                                                         }
                                                     },
                                                     "required": [
@@ -7487,8 +7392,7 @@
                                                     "type": "object",
                                                     "properties": {
                                                         "result": {
-                                                            "$ref": "Projects_2/Methods/Folders/Add.json#/components/schemas/Projects_2.Methods.Folders.Add.Exec",
-                                                            "title": "@returns ?int id добавленной папки"
+                                                            "$ref": "Projects_2/Methods/Folders/Add.json#/components/schemas/Projects_2.Methods.Folders.Add.Exec"
                                                         }
                                                     },
                                                     "required": [
@@ -7566,8 +7470,7 @@
                             },
                             "model": {
                                 "schema": {
-                                    "$ref": "Models/Projects/Folders.json#/components/schemas/Models.Projects.Folders",
-                                    "description": "Only for typescript, does not contain real data"
+                                    "$ref": "Models/Projects/Folders.json#/components/schemas/Models.Projects.Folders"
                                 }
                             }
                         }
@@ -7628,8 +7531,7 @@
                             },
                             "model": {
                                 "schema": {
-                                    "$ref": "Models/Projects/Folders.json#/components/schemas/Models.Projects.Folders",
-                                    "description": "Only for typescript, does not contain real data"
+                                    "$ref": "Models/Projects/Folders.json#/components/schemas/Models.Projects.Folders"
                                 }
                             }
                         }
@@ -7745,8 +7647,7 @@
                             },
                             "model": {
                                 "schema": {
-                                    "$ref": "Models/Projects.json#/components/schemas/Models.Projects",
-                                    "description": "Only for typescript, does not contain real data"
+                                    "$ref": "Models/Projects.json#/components/schemas/Models.Projects"
                                 }
                             }
                         }
@@ -7807,8 +7708,7 @@
                             },
                             "model": {
                                 "schema": {
-                                    "$ref": "Models/Projects.json#/components/schemas/Models.Projects",
-                                    "description": "Only for typescript, does not contain real data"
+                                    "$ref": "Models/Projects.json#/components/schemas/Models.Projects"
                                 }
                             }
                         }
@@ -8104,8 +8004,7 @@
                             },
                             "model": {
                                 "schema": {
-                                    "$ref": "Models/Projects.json#/components/schemas/Models.Projects",
-                                    "description": "Only for typescript, does not contain real data"
+                                    "$ref": "Models/Projects.json#/components/schemas/Models.Projects"
                                 }
                             }
                         }
@@ -8259,8 +8158,7 @@
                                                     "type": "object",
                                                     "properties": {
                                                         "result": {
-                                                            "$ref": "Schedule_2/Methods/Settings/Edit.json#/components/schemas/Schedule_2.Methods.Settings.Edit.Exec",
-                                                            "title": "@throws Exception"
+                                                            "$ref": "Schedule_2/Methods/Settings/Edit.json#/components/schemas/Schedule_2.Methods.Settings.Edit.Exec"
                                                         }
                                                     },
                                                     "required": [
@@ -8377,8 +8275,7 @@
                                                     "type": "object",
                                                     "properties": {
                                                         "result": {
-                                                            "$ref": "Sms_2/Methods/CheckPIN/Get.json#/components/schemas/Sms_2.Methods.CheckPIN.Get.Exec",
-                                                            "title": "@throws Exception"
+                                                            "$ref": "Sms_2/Methods/CheckPIN/Get.json#/components/schemas/Sms_2.Methods.CheckPIN.Get.Exec"
                                                         }
                                                     },
                                                     "required": [
@@ -8436,8 +8333,7 @@
                                                     "type": "object",
                                                     "properties": {
                                                         "result": {
-                                                            "$ref": "Sms_2/Methods/SendPIN/Get.json#/components/schemas/Sms_2.Methods.SendPIN.Get.Exec",
-                                                            "title": "@throws Exception"
+                                                            "$ref": "Sms_2/Methods/SendPIN/Get.json#/components/schemas/Sms_2.Methods.SendPIN.Get.Exec"
                                                         }
                                                     },
                                                     "required": [
@@ -8495,8 +8391,7 @@
                                                     "type": "object",
                                                     "properties": {
                                                         "result": {
-                                                            "$ref": "Templates_2/Methods/AvailableFieldsData/Get.json#/components/schemas/Templates_2.Methods.AvailableFieldsData.Get.Exec",
-                                                            "title": "@throws Exception"
+                                                            "$ref": "Templates_2/Methods/AvailableFieldsData/Get.json#/components/schemas/Templates_2.Methods.AvailableFieldsData.Get.Exec"
                                                         }
                                                     },
                                                     "required": [
@@ -8612,8 +8507,7 @@
                                                     "type": "object",
                                                     "properties": {
                                                         "result": {
-                                                            "$ref": "Templates_2/Methods/Fields/Edit.json#/components/schemas/Templates_2.Methods.Fields.Edit.Exec",
-                                                            "title": "@throws Exception"
+                                                            "$ref": "Templates_2/Methods/Fields/Edit.json#/components/schemas/Templates_2.Methods.Fields.Edit.Exec"
                                                         }
                                                     },
                                                     "required": [
@@ -8671,8 +8565,7 @@
                                                     "type": "object",
                                                     "properties": {
                                                         "result": {
-                                                            "$ref": "Templates_2/Methods/Fields/Get.json#/components/schemas/Templates_2.Methods.Fields.Get.Exec",
-                                                            "title": "@throws Exception"
+                                                            "$ref": "Templates_2/Methods/Fields/Get.json#/components/schemas/Templates_2.Methods.Fields.Get.Exec"
                                                         }
                                                     },
                                                     "required": [
@@ -8962,8 +8855,7 @@
                                                     "type": "object",
                                                     "properties": {
                                                         "result": {
-                                                            "$ref": "Tickets_2/Methods/Messages/Add.json#/components/schemas/Tickets_2.Methods.Messages.Add.Exec",
-                                                            "title": "Id добавленного сообщения"
+                                                            "$ref": "Tickets_2/Methods/Messages/Add.json#/components/schemas/Tickets_2.Methods.Messages.Add.Exec"
                                                         }
                                                     },
                                                     "required": [
@@ -9079,8 +8971,7 @@
                                                     "type": "object",
                                                     "properties": {
                                                         "result": {
-                                                            "$ref": "Tickets_2/Methods/Tickets/Add.json#/components/schemas/Tickets_2.Methods.Tickets.Add.Exec",
-                                                            "title": "Id тикета"
+                                                            "$ref": "Tickets_2/Methods/Tickets/Add.json#/components/schemas/Tickets_2.Methods.Tickets.Add.Exec"
                                                         }
                                                     },
                                                     "required": [
@@ -9219,8 +9110,7 @@
                             },
                             "model": {
                                 "schema": {
-                                    "$ref": "Models/Tickets.json#/components/schemas/Models.Tickets",
-                                    "description": "Only for typescript, does not contain real data"
+                                    "$ref": "Models/Tickets.json#/components/schemas/Models.Tickets"
                                 }
                             }
                         }
@@ -9290,8 +9180,7 @@
                                                     "type": "object",
                                                     "properties": {
                                                         "result": {
-                                                            "$ref": "Urls_2/Methods/Import/Add.json#/components/schemas/Urls_2.Methods.Import.Add.Exec",
-                                                            "title": "@return ?array{'countSended': int, 'countDuplicated': int, 'countAdded': int, 'countChanged': int}\n\n@throws Exception"
+                                                            "$ref": "Urls_2/Methods/Import/Add.json#/components/schemas/Urls_2.Methods.Import.Add.Exec"
                                                         }
                                                     },
                                                     "required": [
@@ -9369,8 +9258,7 @@
                             },
                             "model": {
                                 "schema": {
-                                    "$ref": "Models/Urls.json#/components/schemas/Models.Urls",
-                                    "description": "Only for typescript, does not contain real data"
+                                    "$ref": "Models/Urls.json#/components/schemas/Models.Urls"
                                 }
                             }
                         }
@@ -9547,8 +9435,7 @@
                             },
                             "model": {
                                 "schema": {
-                                    "$ref": "Models/Admin/Accounting/Counteragents.json#/components/schemas/Models.Admin.Accounting.Counteragents",
-                                    "description": "Only for typescript, does not contain real data"
+                                    "$ref": "Models/Admin/Accounting/Counteragents.json#/components/schemas/Models.Admin.Accounting.Counteragents"
                                 }
                             }
                         }
@@ -9666,8 +9553,7 @@
                             },
                             "model": {
                                 "schema": {
-                                    "$ref": "Models/EmptyModel.json#/components/schemas/Models.EmptyModel",
-                                    "description": "Only for typescript, does not contain real data"
+                                    "$ref": "Models/EmptyModel.json#/components/schemas/Models.EmptyModel"
                                 }
                             }
                         }
@@ -9783,8 +9669,7 @@
                             },
                             "model": {
                                 "schema": {
-                                    "$ref": "Models/Admin/Invoices.json#/components/schemas/Models.Admin.Invoices",
-                                    "description": "Only for typescript, does not contain real data"
+                                    "$ref": "Models/Admin/Invoices.json#/components/schemas/Models.Admin.Invoices"
                                 }
                             }
                         }
@@ -9845,8 +9730,7 @@
                             },
                             "model": {
                                 "schema": {
-                                    "$ref": "Models/Admin/Invoices.json#/components/schemas/Models.Admin.Invoices",
-                                    "description": "Only for typescript, does not contain real data"
+                                    "$ref": "Models/Admin/Invoices.json#/components/schemas/Models.Admin.Invoices"
                                 }
                             }
                         }
@@ -9907,8 +9791,7 @@
                             },
                             "model": {
                                 "schema": {
-                                    "$ref": "Models/EmptyModel.json#/components/schemas/Models.EmptyModel",
-                                    "description": "Only for typescript, does not contain real data"
+                                    "$ref": "Models/EmptyModel.json#/components/schemas/Models.EmptyModel"
                                 }
                             }
                         }
@@ -10665,8 +10548,7 @@
                             },
                             "model": {
                                 "schema": {
-                                    "$ref": "Models/EmptyModel.json#/components/schemas/Models.EmptyModel",
-                                    "description": "Only for typescript, does not contain real data"
+                                    "$ref": "Models/EmptyModel.json#/components/schemas/Models.EmptyModel"
                                 }
                             }
                         }
@@ -10846,8 +10728,7 @@
                             },
                             "model": {
                                 "schema": {
-                                    "$ref": "Models/Analytics/Events.json#/components/schemas/Models.Analytics.Events",
-                                    "description": "Only for typescript, does not contain real data"
+                                    "$ref": "Models/Analytics/Events.json#/components/schemas/Models.Analytics.Events"
                                 }
                             }
                         }
@@ -11063,8 +10944,7 @@
                                                     "type": "object",
                                                     "properties": {
                                                         "result": {
-                                                            "$ref": "Admin_2/Methods/Analytics/Tickets/AbstractTicketsStats.json#/components/schemas/Admin_2.Methods.Analytics.Tickets.AbstractTicketsStats.Exec",
-                                                            "title": "Непосредственный вызов API функции\n\nЗапрещено делать публичной, это приведет к поломке preCall()\n\nВ описании к функции отвечать на вопрос: `Что является результатом запроса?` Например: `Список пользователей`\n\nНе менять `protected`, проверка проводится при генерации схем в `TV\\API\\Objects\\ClassAPIMethodInfo`"
+                                                            "$ref": "Admin_2/Methods/Analytics/Tickets/AbstractTicketsStats.json#/components/schemas/Admin_2.Methods.Analytics.Tickets.AbstractTicketsStats.Exec"
                                                         }
                                                     },
                                                     "required": [
@@ -11148,8 +11028,7 @@
                             },
                             "model": {
                                 "schema": {
-                                    "$ref": "Models/Tickets.json#/components/schemas/Models.Tickets",
-                                    "description": "Only for typescript, does not contain real data"
+                                    "$ref": "Models/Tickets.json#/components/schemas/Models.Tickets"
                                 }
                             }
                         }
@@ -11328,8 +11207,7 @@
                             },
                             "model": {
                                 "schema": {
-                                    "$ref": "Models/Analytics/RanksUsers.json#/components/schemas/Models.Analytics.RanksUsers",
-                                    "description": "Only for typescript, does not contain real data"
+                                    "$ref": "Models/Analytics/RanksUsers.json#/components/schemas/Models.Analytics.RanksUsers"
                                 }
                             }
                         }
@@ -11367,8 +11245,7 @@
                                                     "type": "object",
                                                     "properties": {
                                                         "result": {
-                                                            "$ref": "Admin_2/Methods/Slack/Rate/Get.json#/components/schemas/Admin_2.Methods.Slack.Rate.Get.Exec",
-                                                            "title": "Список пользователей"
+                                                            "$ref": "Admin_2/Methods/Slack/Rate/Get.json#/components/schemas/Admin_2.Methods.Slack.Rate.Get.Exec"
                                                         }
                                                     },
                                                     "required": [
@@ -11446,8 +11323,7 @@
                             },
                             "model": {
                                 "schema": {
-                                    "$ref": "Models/Admin/Staff.json#/components/schemas/Models.Admin.Staff",
-                                    "description": "Only for typescript, does not contain real data"
+                                    "$ref": "Models/Admin/Staff.json#/components/schemas/Models.Admin.Staff"
                                 }
                             }
                         }
@@ -11839,8 +11715,7 @@
                                                     "type": "object",
                                                     "properties": {
                                                         "result": {
-                                                            "$ref": "Admin_2/Methods/Users/Promocodes/Add.json#/components/schemas/Admin_2.Methods.Users.Promocodes.Add.Exec",
-                                                            "title": "@throws Exception"
+                                                            "$ref": "Admin_2/Methods/Users/Promocodes/Add.json#/components/schemas/Admin_2.Methods.Users.Promocodes.Add.Exec"
                                                         }
                                                     },
                                                     "required": [
@@ -11860,8 +11735,7 @@
                             },
                             "model": {
                                 "schema": {
-                                    "$ref": "Models/Users/Verif.json#/components/schemas/Models.Users.Verif",
-                                    "description": "Only for typescript, does not contain real data"
+                                    "$ref": "Models/Users/Verif.json#/components/schemas/Models.Users.Verif"
                                 }
                             }
                         }
@@ -11922,8 +11796,7 @@
                             },
                             "model": {
                                 "schema": {
-                                    "$ref": "Models/Users/Verif.json#/components/schemas/Models.Users.Verif",
-                                    "description": "Only for typescript, does not contain real data"
+                                    "$ref": "Models/Users/Verif.json#/components/schemas/Models.Users.Verif"
                                 }
                             }
                         }
@@ -11981,8 +11854,7 @@
                             },
                             "model": {
                                 "schema": {
-                                    "$ref": "Models/Admin/Users/Ranks.json#/components/schemas/Models.Admin.Users.Ranks",
-                                    "description": "Only for typescript, does not contain real data"
+                                    "$ref": "Models/Admin/Users/Ranks.json#/components/schemas/Models.Admin.Users.Ranks"
                                 }
                             }
                         }
@@ -12040,8 +11912,7 @@
                             },
                             "model": {
                                 "schema": {
-                                    "$ref": "Models/Admin/Users/Ranks.json#/components/schemas/Models.Admin.Users.Ranks",
-                                    "description": "Only for typescript, does not contain real data"
+                                    "$ref": "Models/Admin/Users/Ranks.json#/components/schemas/Models.Admin.Users.Ranks"
                                 }
                             }
                         }
@@ -12102,8 +11973,7 @@
                             },
                             "model": {
                                 "schema": {
-                                    "$ref": "Models/Admin/Users/Ranks.json#/components/schemas/Models.Admin.Users.Ranks",
-                                    "description": "Only for typescript, does not contain real data"
+                                    "$ref": "Models/Admin/Users/Ranks.json#/components/schemas/Models.Admin.Users.Ranks"
                                 }
                             }
                         }
@@ -12142,8 +12012,7 @@
                                                     "type": "object",
                                                     "properties": {
                                                         "result": {
-                                                            "$ref": "Audit_2/Methods/Audit/Browse/Get.json#/components/schemas/Audit_2.Methods.Audit.Browse.Get.Exec",
-                                                            "title": "Сводка анализа сайта"
+                                                            "$ref": "Audit_2/Methods/Audit/Browse/Get.json#/components/schemas/Audit_2.Methods.Audit.Browse.Get.Exec"
                                                         }
                                                     },
                                                     "required": [
@@ -12201,8 +12070,7 @@
                                                     "type": "object",
                                                     "properties": {
                                                         "result": {
-                                                            "$ref": "Audit_2/Methods/Audit/Checks/Get.json#/components/schemas/Audit_2.Methods.Audit.Checks.Get.Exec",
-                                                            "title": "Список выполненных (выполняемых) проверок аудита"
+                                                            "$ref": "Audit_2/Methods/Audit/Checks/Get.json#/components/schemas/Audit_2.Methods.Audit.Checks.Get.Exec"
                                                         }
                                                     },
                                                     "required": [
@@ -12225,8 +12093,7 @@
                             },
                             "model": {
                                 "schema": {
-                                    "$ref": "Models/Audit/Checks.json#/components/schemas/Models.Audit.Checks",
-                                    "description": "Only for typescript, does not contain real data"
+                                    "$ref": "Models/Audit/Checks.json#/components/schemas/Models.Audit.Checks"
                                 }
                             }
                         }
@@ -12264,8 +12131,7 @@
                                                     "type": "object",
                                                     "properties": {
                                                         "result": {
-                                                            "$ref": "Audit_2/Methods/Audit/Css/Get.json#/components/schemas/Audit_2.Methods.Audit.Css.Get.Exec",
-                                                            "title": "Список проверенных css"
+                                                            "$ref": "Audit_2/Methods/Audit/Css/Get.json#/components/schemas/Audit_2.Methods.Audit.Css.Get.Exec"
                                                         }
                                                     },
                                                     "required": [
@@ -12288,8 +12154,7 @@
                             },
                             "model": {
                                 "schema": {
-                                    "$ref": "Models/Audit/Css.json#/components/schemas/Models.Audit.Css",
-                                    "description": "Only for typescript, does not contain real data"
+                                    "$ref": "Models/Audit/Css.json#/components/schemas/Models.Audit.Css"
                                 }
                             }
                         }
@@ -12359,8 +12224,7 @@
                                                     "type": "object",
                                                     "properties": {
                                                         "result": {
-                                                            "$ref": "Audit_2/Methods/Audit/Images/Get.json#/components/schemas/Audit_2.Methods.Audit.Images.Get.Exec",
-                                                            "title": "Список проверенных изображений"
+                                                            "$ref": "Audit_2/Methods/Audit/Images/Get.json#/components/schemas/Audit_2.Methods.Audit.Images.Get.Exec"
                                                         }
                                                     },
                                                     "required": [
@@ -12383,8 +12247,7 @@
                             },
                             "model": {
                                 "schema": {
-                                    "$ref": "Models/Audit/Images.json#/components/schemas/Models.Audit.Images",
-                                    "description": "Only for typescript, does not contain real data"
+                                    "$ref": "Models/Audit/Images.json#/components/schemas/Models.Audit.Images"
                                 }
                             }
                         }
@@ -12422,8 +12285,7 @@
                                                     "type": "object",
                                                     "properties": {
                                                         "result": {
-                                                            "$ref": "Audit_2/Methods/Audit/Js/Get.json#/components/schemas/Audit_2.Methods.Audit.Js.Get.Exec",
-                                                            "title": "Список проверенных js"
+                                                            "$ref": "Audit_2/Methods/Audit/Js/Get.json#/components/schemas/Audit_2.Methods.Audit.Js.Get.Exec"
                                                         }
                                                     },
                                                     "required": [
@@ -12446,8 +12308,7 @@
                             },
                             "model": {
                                 "schema": {
-                                    "$ref": "Models/Audit/Js.json#/components/schemas/Models.Audit.Js",
-                                    "description": "Only for typescript, does not contain real data"
+                                    "$ref": "Models/Audit/Js.json#/components/schemas/Models.Audit.Js"
                                 }
                             }
                         }
@@ -12485,8 +12346,7 @@
                                                     "type": "object",
                                                     "properties": {
                                                         "result": {
-                                                            "$ref": "Audit_2/Methods/Audit/Links/Get.json#/components/schemas/Audit_2.Methods.Audit.Links.Get.Exec",
-                                                            "title": "Список проверенных ссылок"
+                                                            "$ref": "Audit_2/Methods/Audit/Links/Get.json#/components/schemas/Audit_2.Methods.Audit.Links.Get.Exec"
                                                         }
                                                     },
                                                     "required": [
@@ -12509,8 +12369,7 @@
                             },
                             "model": {
                                 "schema": {
-                                    "$ref": "Models/Audit/Links.json#/components/schemas/Models.Audit.Links",
-                                    "description": "Only for typescript, does not contain real data"
+                                    "$ref": "Models/Audit/Links.json#/components/schemas/Models.Audit.Links"
                                 }
                             }
                         }
@@ -12548,8 +12407,7 @@
                                                     "type": "object",
                                                     "properties": {
                                                         "result": {
-                                                            "$ref": "Audit_2/Methods/Audit/Log/Get.json#/components/schemas/Audit_2.Methods.Audit.Log.Get.Exec",
-                                                            "title": "Данные проверенных ресурсов"
+                                                            "$ref": "Audit_2/Methods/Audit/Log/Get.json#/components/schemas/Audit_2.Methods.Audit.Log.Get.Exec"
                                                         }
                                                     },
                                                     "required": [
@@ -12610,8 +12468,7 @@
                                                     "type": "object",
                                                     "properties": {
                                                         "result": {
-                                                            "$ref": "Audit_2/Methods/Audit/Pages/Get.json#/components/schemas/Audit_2.Methods.Audit.Pages.Get.Exec",
-                                                            "title": "Список страниц"
+                                                            "$ref": "Audit_2/Methods/Audit/Pages/Get.json#/components/schemas/Audit_2.Methods.Audit.Pages.Get.Exec"
                                                         }
                                                     },
                                                     "required": [
@@ -12634,8 +12491,7 @@
                             },
                             "model": {
                                 "schema": {
-                                    "$ref": "Models/Audit/Pages.json#/components/schemas/Models.Audit.Pages",
-                                    "description": "Only for typescript, does not contain real data"
+                                    "$ref": "Models/Audit/Pages.json#/components/schemas/Models.Audit.Pages"
                                 }
                             }
                         }
@@ -12673,8 +12529,7 @@
                                                     "type": "object",
                                                     "properties": {
                                                         "result": {
-                                                            "$ref": "Audit_2/Methods/Audit/Summary/Get.json#/components/schemas/Audit_2.Methods.Audit.Summary.Get.Exec",
-                                                            "title": "Сводка о выполненном аудите\n\nВозвращает объект со сводкой по категориям, пример:\n - `$res['all']['all']['count_checks_success']` - количество пройденных проверок во всех категориях\n - `$res['pages']['indexing']['count_checks_success']` - количество пройденных проверок в категории Страницы / Индексация\n - `$res['all']['all']['count_checks_success']` - количество пройденных проверок во всех категориях"
+                                                            "$ref": "Audit_2/Methods/Audit/Summary/Get.json#/components/schemas/Audit_2.Methods.Audit.Summary.Get.Exec"
                                                         }
                                                     },
                                                     "required": [
@@ -12697,8 +12552,7 @@
                             },
                             "model": {
                                 "schema": {
-                                    "$ref": "Models/Audit/Checks.json#/components/schemas/Models.Audit.Checks",
-                                    "description": "Only for typescript, does not contain real data"
+                                    "$ref": "Models/Audit/Checks.json#/components/schemas/Models.Audit.Checks"
                                 }
                             }
                         }
@@ -12736,8 +12590,7 @@
                                                     "type": "object",
                                                     "properties": {
                                                         "result": {
-                                                            "$ref": "Audit_2/Methods/Audit/SummaryPage/Get.json#/components/schemas/Audit_2.Methods.Audit.SummaryPage.Get.Exec",
-                                                            "title": "Сводка о выполненном аудите по одной странице"
+                                                            "$ref": "Audit_2/Methods/Audit/SummaryPage/Get.json#/components/schemas/Audit_2.Methods.Audit.SummaryPage.Get.Exec"
                                                         }
                                                     },
                                                     "required": [
@@ -12760,8 +12613,7 @@
                             },
                             "model": {
                                 "schema": {
-                                    "$ref": "Models/Audit/Pages.json#/components/schemas/Models.Audit.Pages",
-                                    "description": "Only for typescript, does not contain real data"
+                                    "$ref": "Models/Audit/Pages.json#/components/schemas/Models.Audit.Pages"
                                 }
                             }
                         }
@@ -12799,8 +12651,7 @@
                                                     "type": "object",
                                                     "properties": {
                                                         "result": {
-                                                            "$ref": "Audit_2/Methods/Indexing/Export/Get.json#/components/schemas/Audit_2.Methods.Indexing.Export.Get.Exec",
-                                                            "title": "Результаты индексации"
+                                                            "$ref": "Audit_2/Methods/Indexing/Export/Get.json#/components/schemas/Audit_2.Methods.Indexing.Export.Get.Exec"
                                                         }
                                                     },
                                                     "required": [
@@ -12858,8 +12709,7 @@
                                                     "type": "object",
                                                     "properties": {
                                                         "result": {
-                                                            "$ref": "Audit_2/Methods/Indexing/Links/Get.json#/components/schemas/Audit_2.Methods.Indexing.Links.Get.Exec",
-                                                            "title": "Короткая гостевая ссылка на просмотр позиций"
+                                                            "$ref": "Audit_2/Methods/Indexing/Links/Get.json#/components/schemas/Audit_2.Methods.Indexing.Links.Get.Exec"
                                                         }
                                                     },
                                                     "required": [
@@ -12917,8 +12767,7 @@
                                                     "type": "object",
                                                     "properties": {
                                                         "result": {
-                                                            "$ref": "Audit_2/Methods/Indexing/Summary/Get.json#/components/schemas/Audit_2.Methods.Indexing.Summary.Get.Exec",
-                                                            "title": "Сводка индексации"
+                                                            "$ref": "Audit_2/Methods/Indexing/Summary/Get.json#/components/schemas/Audit_2.Methods.Indexing.Summary.Get.Exec"
                                                         }
                                                     },
                                                     "required": [
@@ -12976,8 +12825,7 @@
                                                     "type": "object",
                                                     "properties": {
                                                         "result": {
-                                                            "$ref": "Audit_2/Methods/Watcher/ByURL/Get.json#/components/schemas/Audit_2.Methods.Watcher.ByURL.Get.Exec",
-                                                            "title": "Отчет по одному URL"
+                                                            "$ref": "Audit_2/Methods/Watcher/ByURL/Get.json#/components/schemas/Audit_2.Methods.Watcher.ByURL.Get.Exec"
                                                         }
                                                     },
                                                     "required": [
@@ -13000,8 +12848,7 @@
                             },
                             "model": {
                                 "schema": {
-                                    "$ref": "Models/Watcher/Results.json#/components/schemas/Models.Watcher.Results",
-                                    "description": "Only for typescript, does not contain real data"
+                                    "$ref": "Models/Watcher/Results.json#/components/schemas/Models.Watcher.Results"
                                 }
                             }
                         }
@@ -13039,8 +12886,7 @@
                                                     "type": "object",
                                                     "properties": {
                                                         "result": {
-                                                            "$ref": "Audit_2/Methods/Watcher/Checks/Get.json#/components/schemas/Audit_2.Methods.Watcher.Checks.Get.Exec",
-                                                            "title": "Список проверок радара"
+                                                            "$ref": "Audit_2/Methods/Watcher/Checks/Get.json#/components/schemas/Audit_2.Methods.Watcher.Checks.Get.Exec"
                                                         }
                                                     },
                                                     "required": [
@@ -13098,8 +12944,7 @@
                                                     "type": "object",
                                                     "properties": {
                                                         "result": {
-                                                            "$ref": "Audit_2/Methods/Watcher/Summary/Get.json#/components/schemas/Audit_2.Methods.Watcher.Summary.Get.Exec",
-                                                            "title": "Сводка с количеством изменений по каждому типу проверки"
+                                                            "$ref": "Audit_2/Methods/Watcher/Summary/Get.json#/components/schemas/Audit_2.Methods.Watcher.Summary.Get.Exec"
                                                         }
                                                     },
                                                     "required": [
@@ -13328,8 +13173,7 @@
                             },
                             "model": {
                                 "schema": {
-                                    "$ref": "Models/BalanceHistory.json#/components/schemas/Models.BalanceHistory",
-                                    "description": "Only for typescript, does not contain real data"
+                                    "$ref": "Models/BalanceHistory.json#/components/schemas/Models.BalanceHistory"
                                 }
                             }
                         }
@@ -13605,8 +13449,7 @@
                                                     "type": "object",
                                                     "properties": {
                                                         "result": {
-                                                            "$ref": "Bank_2/Methods/Subscriptions/Plans/Get.json#/components/schemas/Bank_2.Methods.Subscriptions.Plans.Get.Exec",
-                                                            "title": "@return Bank_2\\Objects\\Subscriptions\\Plan[]"
+                                                            "$ref": "Bank_2/Methods/Subscriptions/Plans/Get.json#/components/schemas/Bank_2.Methods.Subscriptions.Plans.Get.Exec"
                                                         }
                                                     },
                                                     "required": [
@@ -13664,8 +13507,7 @@
                                                     "type": "object",
                                                     "properties": {
                                                         "result": {
-                                                            "$ref": "Broker_2/Methods/Ads/Status/Edit.json#/components/schemas/Broker_2.Methods.Ads.Status.Edit.Exec",
-                                                            "title": "@throws Exception"
+                                                            "$ref": "Broker_2/Methods/Ads/Status/Edit.json#/components/schemas/Broker_2.Methods.Ads.Status.Edit.Exec"
                                                         }
                                                     },
                                                     "required": [
@@ -13723,8 +13565,7 @@
                                                     "type": "object",
                                                     "properties": {
                                                         "result": {
-                                                            "$ref": "Broker_2/Methods/Ads/ToModerate/Edit.json#/components/schemas/Broker_2.Methods.Ads.ToModerate.Edit.Exec",
-                                                            "title": "@throws Exception"
+                                                            "$ref": "Broker_2/Methods/Ads/ToModerate/Edit.json#/components/schemas/Broker_2.Methods.Ads.ToModerate.Edit.Exec"
                                                         }
                                                     },
                                                     "required": [
@@ -13782,8 +13623,7 @@
                                                     "type": "object",
                                                     "properties": {
                                                         "result": {
-                                                            "$ref": "Broker_2/Methods/Campaigns/UpdateTargeting/Edit.json#/components/schemas/Broker_2.Methods.Campaigns.UpdateTargeting.Edit.Exec",
-                                                            "title": "@throws Exception"
+                                                            "$ref": "Broker_2/Methods/Campaigns/UpdateTargeting/Edit.json#/components/schemas/Broker_2.Methods.Campaigns.UpdateTargeting.Edit.Exec"
                                                         }
                                                     },
                                                     "required": [
@@ -13806,8 +13646,7 @@
                             },
                             "model": {
                                 "schema": {
-                                    "$ref": "Models/Broker/Campaigns.json#/components/schemas/Models.Broker.Campaigns",
-                                    "description": "Only for typescript, does not contain real data"
+                                    "$ref": "Models/Broker/Campaigns.json#/components/schemas/Models.Broker.Campaigns"
                                 }
                             }
                         }
@@ -13903,8 +13742,7 @@
                                                     "type": "object",
                                                     "properties": {
                                                         "result": {
-                                                            "$ref": "Broker_2/Methods/Keywords/Status/Edit.json#/components/schemas/Broker_2.Methods.Keywords.Status.Edit.Exec",
-                                                            "title": "@throws Exception"
+                                                            "$ref": "Broker_2/Methods/Keywords/Status/Edit.json#/components/schemas/Broker_2.Methods.Keywords.Status.Edit.Exec"
                                                         }
                                                     },
                                                     "required": [
@@ -13994,8 +13832,7 @@
                                                     "type": "object",
                                                     "properties": {
                                                         "result": {
-                                                            "$ref": "Broker_2/Methods/Tasks/RateTask/Add.json#/components/schemas/Broker_2.Methods.Tasks.RateTask.Add.Exec",
-                                                            "title": "@throws Exception"
+                                                            "$ref": "Broker_2/Methods/Tasks/RateTask/Add.json#/components/schemas/Broker_2.Methods.Tasks.RateTask.Add.Exec"
                                                         }
                                                     },
                                                     "required": [
@@ -14053,8 +13890,7 @@
                                                     "type": "object",
                                                     "properties": {
                                                         "result": {
-                                                            "$ref": "Competitors_2/Methods/Orders/Pay/Edit.json#/components/schemas/Competitors_2.Methods.Orders.Pay.Edit.Exec",
-                                                            "title": "@throws Exception"
+                                                            "$ref": "Competitors_2/Methods/Orders/Pay/Edit.json#/components/schemas/Competitors_2.Methods.Orders.Pay.Edit.Exec"
                                                         }
                                                     },
                                                     "required": [
@@ -14193,8 +14029,7 @@
                             },
                             "model": {
                                 "schema": {
-                                    "$ref": "Models/Apometr/History.json#/components/schemas/Models.Apometr.History",
-                                    "description": "Only for typescript, does not contain real data"
+                                    "$ref": "Models/Apometr/History.json#/components/schemas/Models.Apometr.History"
                                 }
                             }
                         }
@@ -14313,8 +14148,7 @@
                             },
                             "model": {
                                 "schema": {
-                                    "$ref": "Models/Apometr/Keywords.json#/components/schemas/Models.Apometr.Keywords",
-                                    "description": "Only for typescript, does not contain real data"
+                                    "$ref": "Models/Apometr/Keywords.json#/components/schemas/Models.Apometr.Keywords"
                                 }
                             }
                         }
@@ -14413,8 +14247,7 @@
                                                     "type": "object",
                                                     "properties": {
                                                         "result": {
-                                                            "$ref": "Content_2/Methods/Journal/Articles/Get.json#/components/schemas/Content_2.Methods.Journal.Articles.Get.Exec",
-                                                            "title": "@throws Exception"
+                                                            "$ref": "Content_2/Methods/Journal/Articles/Get.json#/components/schemas/Content_2.Methods.Journal.Articles.Get.Exec"
                                                         }
                                                     },
                                                     "required": [
@@ -14437,8 +14270,7 @@
                             },
                             "model": {
                                 "schema": {
-                                    "$ref": "Models/Pages.json#/components/schemas/Models.Pages",
-                                    "description": "Only for typescript, does not contain real data"
+                                    "$ref": "Models/Pages.json#/components/schemas/Models.Pages"
                                 }
                             }
                         }
@@ -14499,8 +14331,7 @@
                             },
                             "model": {
                                 "schema": {
-                                    "$ref": "Models/Pages.json#/components/schemas/Models.Pages",
-                                    "description": "Only for typescript, does not contain real data"
+                                    "$ref": "Models/Pages.json#/components/schemas/Models.Pages"
                                 }
                             }
                         }
@@ -14538,8 +14369,7 @@
                                                     "type": "object",
                                                     "properties": {
                                                         "result": {
-                                                            "$ref": "Content_2/Methods/Journal/Bookmarks/Get.json#/components/schemas/Content_2.Methods.Journal.Bookmarks.Get.Exec",
-                                                            "title": "@throws Exception"
+                                                            "$ref": "Content_2/Methods/Journal/Bookmarks/Get.json#/components/schemas/Content_2.Methods.Journal.Bookmarks.Get.Exec"
                                                         }
                                                     },
                                                     "required": [
@@ -14562,8 +14392,7 @@
                             },
                             "model": {
                                 "schema": {
-                                    "$ref": "Models/Pages.json#/components/schemas/Models.Pages",
-                                    "description": "Only for typescript, does not contain real data"
+                                    "$ref": "Models/Pages.json#/components/schemas/Models.Pages"
                                 }
                             }
                         }
@@ -14601,8 +14430,7 @@
                                                     "type": "object",
                                                     "properties": {
                                                         "result": {
-                                                            "$ref": "Content_2/Methods/Journal/Course/Get.json#/components/schemas/Content_2.Methods.Journal.Course.Get.Exec",
-                                                            "title": "@throws Exception"
+                                                            "$ref": "Content_2/Methods/Journal/Course/Get.json#/components/schemas/Content_2.Methods.Journal.Course.Get.Exec"
                                                         }
                                                     },
                                                     "required": [
@@ -14625,8 +14453,7 @@
                             },
                             "model": {
                                 "schema": {
-                                    "$ref": "Models/Pages.json#/components/schemas/Models.Pages",
-                                    "description": "Only for typescript, does not contain real data"
+                                    "$ref": "Models/Pages.json#/components/schemas/Models.Pages"
                                 }
                             }
                         }
@@ -14664,8 +14491,7 @@
                                                     "type": "object",
                                                     "properties": {
                                                         "result": {
-                                                            "$ref": "Content_2/Methods/Journal/Rubrics/Get.json#/components/schemas/Content_2.Methods.Journal.Rubrics.Get.Exec",
-                                                            "title": "@throws Exception"
+                                                            "$ref": "Content_2/Methods/Journal/Rubrics/Get.json#/components/schemas/Content_2.Methods.Journal.Rubrics.Get.Exec"
                                                         }
                                                     },
                                                     "required": [
@@ -14688,8 +14514,7 @@
                             },
                             "model": {
                                 "schema": {
-                                    "$ref": "Models/Pages.json#/components/schemas/Models.Pages",
-                                    "description": "Only for typescript, does not contain real data"
+                                    "$ref": "Models/Pages.json#/components/schemas/Models.Pages"
                                 }
                             }
                         }
@@ -14901,8 +14726,7 @@
                                                     "type": "object",
                                                     "properties": {
                                                         "result": {
-                                                            "$ref": "Keywords_2/Methods/Collect/Go/Edit.json#/components/schemas/Keywords_2.Methods.Collect.Go.Edit.Exec",
-                                                            "title": "Массив созданных групп"
+                                                            "$ref": "Keywords_2/Methods/Collect/Go/Edit.json#/components/schemas/Keywords_2.Methods.Collect.Go.Edit.Exec"
                                                         }
                                                     },
                                                     "required": [
@@ -14961,8 +14785,7 @@
                                                     "type": "object",
                                                     "properties": {
                                                         "result": {
-                                                            "$ref": "Keywords_2/Methods/Collect/Price/Get.json#/components/schemas/Keywords_2.Methods.Collect.Price.Get.Exec",
-                                                            "title": "@return array{pricesByUsers: array<string, array{price: float, priceOriginal: float, qualifiers: array{region_key: int, searcher_key: (0 | 1 | 5 | 100 | 101 | 102 | 104 | 105 | 106), region_lang?: (string | null), also_searched?: (int | null), depth?: (int | null), hint_depth: (1 | 2 | 3), hint_generators: array<('letter' | 'letter_ru' | 'number' | 'space')>}, comment: string}>}"
+                                                            "$ref": "Keywords_2/Methods/Collect/Price/Get.json#/components/schemas/Keywords_2.Methods.Collect.Price.Get.Exec"
                                                         }
                                                     },
                                                     "required": [
@@ -15079,8 +14902,7 @@
                                                     "type": "object",
                                                     "properties": {
                                                         "result": {
-                                                            "$ref": "Keywords_2/Methods/Volumes/Go/Edit.json#/components/schemas/Keywords_2.Methods.Volumes.Go.Edit.Exec",
-                                                            "title": "@throws Exception"
+                                                            "$ref": "Keywords_2/Methods/Volumes/Go/Edit.json#/components/schemas/Keywords_2.Methods.Volumes.Go.Edit.Exec"
                                                         }
                                                     },
                                                     "required": [
@@ -15100,8 +14922,7 @@
                             },
                             "model": {
                                 "schema": {
-                                    "$ref": "Models/Keywords.json#/components/schemas/Models.Keywords",
-                                    "description": "Only for typescript, does not contain real data"
+                                    "$ref": "Models/Keywords.json#/components/schemas/Models.Keywords"
                                 }
                             }
                         }
@@ -15139,8 +14960,7 @@
                                                     "type": "object",
                                                     "properties": {
                                                         "result": {
-                                                            "$ref": "Keywords_2/Methods/Volumes/Price/Get.json#/components/schemas/Keywords_2.Methods.Volumes.Price.Get.Exec",
-                                                            "title": "@return object{pricesByUsers: object{int: object{projectsIds: [], price: float, priceOriginal: float}}}"
+                                                            "$ref": "Keywords_2/Methods/Volumes/Price/Get.json#/components/schemas/Keywords_2.Methods.Volumes.Price.Get.Exec"
                                                         }
                                                     },
                                                     "required": [
@@ -15160,8 +14980,7 @@
                             },
                             "model": {
                                 "schema": {
-                                    "$ref": "Models/Keywords.json#/components/schemas/Models.Keywords",
-                                    "description": "Only for typescript, does not contain real data"
+                                    "$ref": "Models/Keywords.json#/components/schemas/Models.Keywords"
                                 }
                             }
                         }
@@ -15257,8 +15076,7 @@
                                                     "type": "object",
                                                     "properties": {
                                                         "result": {
-                                                            "$ref": "Payments_2/Methods/Recurrent/Suspend/Edit.json#/components/schemas/Payments_2.Methods.Recurrent.Suspend.Edit.Exec",
-                                                            "title": "@throws Exception Ошибка во входных данных, внешнем API или БД"
+                                                            "$ref": "Payments_2/Methods/Recurrent/Suspend/Edit.json#/components/schemas/Payments_2.Methods.Recurrent.Suspend.Edit.Exec"
                                                         }
                                                     },
                                                     "required": [
@@ -15316,8 +15134,7 @@
                                                     "type": "object",
                                                     "properties": {
                                                         "result": {
-                                                            "$ref": "Payments_2/Methods/Subscriptions/Next/Edit.json#/components/schemas/Payments_2.Methods.Subscriptions.Next.Edit.Exec",
-                                                            "title": "@throws Exception"
+                                                            "$ref": "Payments_2/Methods/Subscriptions/Next/Edit.json#/components/schemas/Payments_2.Methods.Subscriptions.Next.Edit.Exec"
                                                         }
                                                     },
                                                     "required": [
@@ -15549,8 +15366,7 @@
                                                     "type": "object",
                                                     "properties": {
                                                         "result": {
-                                                            "$ref": "Positions_2/Methods/Checker/Go/Edit.json#/components/schemas/Positions_2.Methods.Checker.Go.Edit.Exec",
-                                                            "title": "@return object{projectIds: int[]} Список id проектов, отрпавленных на проверку"
+                                                            "$ref": "Positions_2/Methods/Checker/Go/Edit.json#/components/schemas/Positions_2.Methods.Checker.Go.Edit.Exec"
                                                         }
                                                     },
                                                     "required": [
@@ -15570,8 +15386,7 @@
                             },
                             "model": {
                                 "schema": {
-                                    "$ref": "Models/Projects.json#/components/schemas/Models.Projects",
-                                    "description": "Only for typescript, does not contain real data"
+                                    "$ref": "Models/Projects.json#/components/schemas/Models.Projects"
                                 }
                             }
                         }
@@ -15609,8 +15424,7 @@
                                                     "type": "object",
                                                     "properties": {
                                                         "result": {
-                                                            "$ref": "Positions_2/Methods/Checker/Price/Get.json#/components/schemas/Positions_2.Methods.Checker.Price.Get.Exec",
-                                                            "title": "@return object{pricesByUsers: object{int: object{projectsIds: [], price: float, priceOriginal: float}}}"
+                                                            "$ref": "Positions_2/Methods/Checker/Price/Get.json#/components/schemas/Positions_2.Methods.Checker.Price.Get.Exec"
                                                         }
                                                     },
                                                     "required": [
@@ -15630,8 +15444,7 @@
                             },
                             "model": {
                                 "schema": {
-                                    "$ref": "Models/Projects.json#/components/schemas/Models.Projects",
-                                    "description": "Only for typescript, does not contain real data"
+                                    "$ref": "Models/Projects.json#/components/schemas/Models.Projects"
                                 }
                             }
                         }
@@ -16559,8 +16372,7 @@
                             },
                             "model": {
                                 "schema": {
-                                    "$ref": "Models/Projects.json#/components/schemas/Models.Projects",
-                                    "description": "Only for typescript, does not contain real data"
+                                    "$ref": "Models/Projects.json#/components/schemas/Models.Projects"
                                 }
                             }
                         }
@@ -16734,8 +16546,7 @@
                             },
                             "model": {
                                 "schema": {
-                                    "$ref": "Models/Projects.json#/components/schemas/Models.Projects",
-                                    "description": "Only for typescript, does not contain real data"
+                                    "$ref": "Models/Projects.json#/components/schemas/Models.Projects"
                                 }
                             }
                         }
@@ -16793,8 +16604,7 @@
                             },
                             "model": {
                                 "schema": {
-                                    "$ref": "Models/Projects.json#/components/schemas/Models.Projects",
-                                    "description": "Only for typescript, does not contain real data"
+                                    "$ref": "Models/Projects.json#/components/schemas/Models.Projects"
                                 }
                             }
                         }
@@ -17238,8 +17048,7 @@
                                                     "type": "object",
                                                     "properties": {
                                                         "result": {
-                                                            "$ref": "Redmine_2/Methods/Users/Groups/Get.json#/components/schemas/Redmine_2.Methods.Users.Groups.Get.Exec",
-                                                            "title": "@throws Exception"
+                                                            "$ref": "Redmine_2/Methods/Users/Groups/Get.json#/components/schemas/Redmine_2.Methods.Users.Groups.Get.Exec"
                                                         }
                                                     },
                                                     "required": [
@@ -17297,8 +17106,7 @@
                                                     "type": "object",
                                                     "properties": {
                                                         "result": {
-                                                            "$ref": "Reports_2/Methods/Positions/SendTest/Edit.json#/components/schemas/Reports_2.Methods.Positions.SendTest.Edit.Exec",
-                                                            "title": "@throws Exception"
+                                                            "$ref": "Reports_2/Methods/Positions/SendTest/Edit.json#/components/schemas/Reports_2.Methods.Positions.SendTest.Edit.Exec"
                                                         }
                                                     },
                                                     "required": [
@@ -18226,8 +18034,7 @@
                                                     "type": "object",
                                                     "properties": {
                                                         "result": {
-                                                            "$ref": "Urls_2/Methods/Import/RecognizeLinkSitemapXml/Get.json#/components/schemas/Urls_2.Methods.Import.RecognizeLinkSitemapXml.Get.Exec",
-                                                            "title": "URL к карте сайта"
+                                                            "$ref": "Urls_2/Methods/Import/RecognizeLinkSitemapXml/Get.json#/components/schemas/Urls_2.Methods.Import.RecognizeLinkSitemapXml.Get.Exec"
                                                         }
                                                     },
                                                     "required": [
@@ -18285,8 +18092,7 @@
                                                     "type": "object",
                                                     "properties": {
                                                         "result": {
-                                                            "$ref": "Users_2/Methods/Join/Email/Add.json#/components/schemas/Users_2.Methods.Join.Email.Add.Exec",
-                                                            "title": "@throws Exception"
+                                                            "$ref": "Users_2/Methods/Join/Email/Add.json#/components/schemas/Users_2.Methods.Join.Email.Add.Exec"
                                                         }
                                                     },
                                                     "required": [
@@ -20557,8 +20363,7 @@
                                                     "type": "object",
                                                     "properties": {
                                                         "result": {
-                                                            "$ref": "Admin_2/Methods/Users/Informer/Subscriptions/Get.json#/components/schemas/Admin_2.Methods.Users.Informer.Subscriptions.Get.Exec",
-                                                            "title": "Данные для построения графика"
+                                                            "$ref": "Admin_2/Methods/Users/Informer/Subscriptions/Get.json#/components/schemas/Admin_2.Methods.Users.Informer.Subscriptions.Get.Exec"
                                                         }
                                                     },
                                                     "required": [
@@ -20616,8 +20421,7 @@
                                                     "type": "object",
                                                     "properties": {
                                                         "result": {
-                                                            "$ref": "Audit_2/Methods/Audit/Checker/Go/Edit.json#/components/schemas/Audit_2.Methods.Audit.Checker.Go.Edit.Exec",
-                                                            "title": "@return object{projectIds: int[]} Список id проектов, отрпавленных на проверку"
+                                                            "$ref": "Audit_2/Methods/Audit/Checker/Go/Edit.json#/components/schemas/Audit_2.Methods.Audit.Checker.Go.Edit.Exec"
                                                         }
                                                     },
                                                     "required": [
@@ -20637,8 +20441,7 @@
                             },
                             "model": {
                                 "schema": {
-                                    "$ref": "Models/Projects.json#/components/schemas/Models.Projects",
-                                    "description": "Only for typescript, does not contain real data"
+                                    "$ref": "Models/Projects.json#/components/schemas/Models.Projects"
                                 }
                             }
                         }
@@ -20676,8 +20479,7 @@
                                                     "type": "object",
                                                     "properties": {
                                                         "result": {
-                                                            "$ref": "Audit_2/Methods/Audit/Checker/Price/Get.json#/components/schemas/Audit_2.Methods.Audit.Checker.Price.Get.Exec",
-                                                            "title": "@throws Exception"
+                                                            "$ref": "Audit_2/Methods/Audit/Checker/Price/Get.json#/components/schemas/Audit_2.Methods.Audit.Checker.Price.Get.Exec"
                                                         }
                                                     },
                                                     "required": [
@@ -20697,8 +20499,7 @@
                             },
                             "model": {
                                 "schema": {
-                                    "$ref": "Models/Projects.json#/components/schemas/Models.Projects",
-                                    "description": "Only for typescript, does not contain real data"
+                                    "$ref": "Models/Projects.json#/components/schemas/Models.Projects"
                                 }
                             }
                         }
@@ -20736,8 +20537,7 @@
                                                     "type": "object",
                                                     "properties": {
                                                         "result": {
-                                                            "$ref": "Audit_2/Methods/Audit/Export/Links/Get.json#/components/schemas/Audit_2.Methods.Audit.Export.Links.Get.Exec",
-                                                            "title": "Короткая гостевая ссылка на просмотр аудита позиций"
+                                                            "$ref": "Audit_2/Methods/Audit/Export/Links/Get.json#/components/schemas/Audit_2.Methods.Audit.Export.Links.Get.Exec"
                                                         }
                                                     },
                                                     "required": [
@@ -20827,8 +20627,7 @@
                                                     "type": "object",
                                                     "properties": {
                                                         "result": {
-                                                            "$ref": "Audit_2/Methods/Audit/Log/ActualError/Get.json#/components/schemas/Audit_2.Methods.Audit.Log.ActualError.Get.Exec",
-                                                            "title": "Информацией о текущей ошибке на роботе\n\nВернет null, если ошибки на роботе нет"
+                                                            "$ref": "Audit_2/Methods/Audit/Log/ActualError/Get.json#/components/schemas/Audit_2.Methods.Audit.Log.ActualError.Get.Exec"
                                                         }
                                                     },
                                                     "required": [
@@ -20887,8 +20686,7 @@
                                                     "type": "object",
                                                     "properties": {
                                                         "result": {
-                                                            "$ref": "Audit_2/Methods/Audit/Log/Chart/Get.json#/components/schemas/Audit_2.Methods.Audit.Log.Chart.Get.Exec",
-                                                            "title": "Данные для графика"
+                                                            "$ref": "Audit_2/Methods/Audit/Log/Chart/Get.json#/components/schemas/Audit_2.Methods.Audit.Log.Chart.Get.Exec"
                                                         }
                                                     },
                                                     "required": [
@@ -20950,8 +20748,7 @@
                                                     "type": "object",
                                                     "properties": {
                                                         "result": {
-                                                            "$ref": "Audit_2/Methods/Audit/Results/Export/Get.json#/components/schemas/Audit_2.Methods.Audit.Results.Export.Get.Exec",
-                                                            "title": "Ответ об успешнности экспорта результатов аудита"
+                                                            "$ref": "Audit_2/Methods/Audit/Results/Export/Get.json#/components/schemas/Audit_2.Methods.Audit.Results.Export.Get.Exec"
                                                         }
                                                     },
                                                     "required": [
@@ -21010,8 +20807,7 @@
                                                     "type": "object",
                                                     "properties": {
                                                         "result": {
-                                                            "$ref": "Audit_2/Methods/Audit/Results/Page/Get.json#/components/schemas/Audit_2.Methods.Audit.Results.Page.Get.Exec",
-                                                            "title": "@return array{result: array{page_in_filter: bool, index: int, snippet: string, content: string}}\n@throws Exception"
+                                                            "$ref": "Audit_2/Methods/Audit/Results/Page/Get.json#/components/schemas/Audit_2.Methods.Audit.Results.Page.Get.Exec"
                                                         }
                                                     },
                                                     "required": [
@@ -21069,8 +20865,7 @@
                                                     "type": "object",
                                                     "properties": {
                                                         "result": {
-                                                            "$ref": "Audit_2/Methods/Indexing/Checker/Go/Edit.json#/components/schemas/Audit_2.Methods.Indexing.Checker.Go.Edit.Exec",
-                                                            "title": "@return object{projectIds: int[]} Список id проектов, отрпавленных на проверку"
+                                                            "$ref": "Audit_2/Methods/Indexing/Checker/Go/Edit.json#/components/schemas/Audit_2.Methods.Indexing.Checker.Go.Edit.Exec"
                                                         }
                                                     },
                                                     "required": [
@@ -21090,8 +20885,7 @@
                             },
                             "model": {
                                 "schema": {
-                                    "$ref": "Models/Projects.json#/components/schemas/Models.Projects",
-                                    "description": "Only for typescript, does not contain real data"
+                                    "$ref": "Models/Projects.json#/components/schemas/Models.Projects"
                                 }
                             }
                         }
@@ -21129,8 +20923,7 @@
                                                     "type": "object",
                                                     "properties": {
                                                         "result": {
-                                                            "$ref": "Audit_2/Methods/Indexing/Checker/Price/Get.json#/components/schemas/Audit_2.Methods.Indexing.Checker.Price.Get.Exec",
-                                                            "title": "@throws Exception"
+                                                            "$ref": "Audit_2/Methods/Indexing/Checker/Price/Get.json#/components/schemas/Audit_2.Methods.Indexing.Checker.Price.Get.Exec"
                                                         }
                                                     },
                                                     "required": [
@@ -21150,8 +20943,7 @@
                             },
                             "model": {
                                 "schema": {
-                                    "$ref": "Models/Projects.json#/components/schemas/Models.Projects",
-                                    "description": "Only for typescript, does not contain real data"
+                                    "$ref": "Models/Projects.json#/components/schemas/Models.Projects"
                                 }
                             }
                         }
@@ -21189,8 +20981,7 @@
                                                     "type": "object",
                                                     "properties": {
                                                         "result": {
-                                                            "$ref": "Audit_2/Methods/Indexing/Export/Links/Get.json#/components/schemas/Audit_2.Methods.Indexing.Export.Links.Get.Exec",
-                                                            "title": "Короткая гостевая ссылка на просмотр индексации"
+                                                            "$ref": "Audit_2/Methods/Indexing/Export/Links/Get.json#/components/schemas/Audit_2.Methods.Indexing.Export.Links.Get.Exec"
                                                         }
                                                     },
                                                     "required": [
@@ -21280,8 +21071,7 @@
                                                     "type": "object",
                                                     "properties": {
                                                         "result": {
-                                                            "$ref": "Audit_2/Methods/Indexing/Summary/Chart/Get.json#/components/schemas/Audit_2.Methods.Indexing.Summary.Chart.Get.Exec",
-                                                            "title": "Сводки индексации"
+                                                            "$ref": "Audit_2/Methods/Indexing/Summary/Chart/Get.json#/components/schemas/Audit_2.Methods.Indexing.Summary.Chart.Get.Exec"
                                                         }
                                                     },
                                                     "required": [
@@ -21339,8 +21129,7 @@
                                                     "type": "object",
                                                     "properties": {
                                                         "result": {
-                                                            "$ref": "Audit_2/Methods/Sitemap/Checker/Go/Edit.json#/components/schemas/Audit_2.Methods.Sitemap.Checker.Go.Edit.Exec",
-                                                            "title": "@return object{projectIds: int[]} Список id проектов, отрпавленных на проверку"
+                                                            "$ref": "Audit_2/Methods/Sitemap/Checker/Go/Edit.json#/components/schemas/Audit_2.Methods.Sitemap.Checker.Go.Edit.Exec"
                                                         }
                                                     },
                                                     "required": [
@@ -21360,8 +21149,7 @@
                             },
                             "model": {
                                 "schema": {
-                                    "$ref": "Models/Projects.json#/components/schemas/Models.Projects",
-                                    "description": "Only for typescript, does not contain real data"
+                                    "$ref": "Models/Projects.json#/components/schemas/Models.Projects"
                                 }
                             }
                         }
@@ -21399,8 +21187,7 @@
                                                     "type": "object",
                                                     "properties": {
                                                         "result": {
-                                                            "$ref": "Audit_2/Methods/Sitemap/Checker/Price/Get.json#/components/schemas/Audit_2.Methods.Sitemap.Checker.Price.Get.Exec",
-                                                            "title": "@throws Exception"
+                                                            "$ref": "Audit_2/Methods/Sitemap/Checker/Price/Get.json#/components/schemas/Audit_2.Methods.Sitemap.Checker.Price.Get.Exec"
                                                         }
                                                     },
                                                     "required": [
@@ -21420,8 +21207,7 @@
                             },
                             "model": {
                                 "schema": {
-                                    "$ref": "Models/Projects.json#/components/schemas/Models.Projects",
-                                    "description": "Only for typescript, does not contain real data"
+                                    "$ref": "Models/Projects.json#/components/schemas/Models.Projects"
                                 }
                             }
                         }
@@ -21459,8 +21245,7 @@
                                                     "type": "object",
                                                     "properties": {
                                                         "result": {
-                                                            "$ref": "Audit_2/Methods/Watcher/Checker/Go/Edit.json#/components/schemas/Audit_2.Methods.Watcher.Checker.Go.Edit.Exec",
-                                                            "title": "@return object{projectIds: int[]} Список id проектов, отрпавленных на проверку"
+                                                            "$ref": "Audit_2/Methods/Watcher/Checker/Go/Edit.json#/components/schemas/Audit_2.Methods.Watcher.Checker.Go.Edit.Exec"
                                                         }
                                                     },
                                                     "required": [
@@ -21480,8 +21265,7 @@
                             },
                             "model": {
                                 "schema": {
-                                    "$ref": "Models/Projects.json#/components/schemas/Models.Projects",
-                                    "description": "Only for typescript, does not contain real data"
+                                    "$ref": "Models/Projects.json#/components/schemas/Models.Projects"
                                 }
                             }
                         }
@@ -21519,8 +21303,7 @@
                                                     "type": "object",
                                                     "properties": {
                                                         "result": {
-                                                            "$ref": "Audit_2/Methods/Watcher/Checker/Price/Get.json#/components/schemas/Audit_2.Methods.Watcher.Checker.Price.Get.Exec",
-                                                            "title": "@throws Exception"
+                                                            "$ref": "Audit_2/Methods/Watcher/Checker/Price/Get.json#/components/schemas/Audit_2.Methods.Watcher.Checker.Price.Get.Exec"
                                                         }
                                                     },
                                                     "required": [
@@ -21540,8 +21323,7 @@
                             },
                             "model": {
                                 "schema": {
-                                    "$ref": "Models/Projects.json#/components/schemas/Models.Projects",
-                                    "description": "Only for typescript, does not contain real data"
+                                    "$ref": "Models/Projects.json#/components/schemas/Models.Projects"
                                 }
                             }
                         }
@@ -21579,8 +21361,7 @@
                                                     "type": "object",
                                                     "properties": {
                                                         "result": {
-                                                            "$ref": "Audit_2/Methods/Watcher/Export/Links/Get.json#/components/schemas/Audit_2.Methods.Watcher.Export.Links.Get.Exec",
-                                                            "title": "Короткая ссылка гостевого доступа для просмотра радара"
+                                                            "$ref": "Audit_2/Methods/Watcher/Export/Links/Get.json#/components/schemas/Audit_2.Methods.Watcher.Export.Links.Get.Exec"
                                                         }
                                                     },
                                                     "required": [
@@ -21638,8 +21419,7 @@
                                                     "type": "object",
                                                     "properties": {
                                                         "result": {
-                                                            "$ref": "Audit_2/Methods/Watcher/Summary/Chart/Get.json#/components/schemas/Audit_2.Methods.Watcher.Summary.Chart.Get.Exec",
-                                                            "title": "Сводки с количеством изменений по каждому типу проверки"
+                                                            "$ref": "Audit_2/Methods/Watcher/Summary/Chart/Get.json#/components/schemas/Audit_2.Methods.Watcher.Summary.Chart.Get.Exec"
                                                         }
                                                     },
                                                     "required": [
@@ -21697,8 +21477,7 @@
                                                     "type": "object",
                                                     "properties": {
                                                         "result": {
-                                                            "$ref": "Content_2/Methods/Apometr/Text/Calendar/Get.json#/components/schemas/Content_2.Methods.Apometr.Text.Calendar.Get.Exec",
-                                                            "title": "@return array<string, array<string, int>>"
+                                                            "$ref": "Content_2/Methods/Apometr/Text/Calendar/Get.json#/components/schemas/Content_2.Methods.Apometr.Text.Calendar.Get.Exec"
                                                         }
                                                     },
                                                     "required": [
@@ -21878,8 +21657,7 @@
                                                     "type": "object",
                                                     "properties": {
                                                         "result": {
-                                                            "$ref": "Content_2/Methods/Journal/Course/Certificates/Add.json#/components/schemas/Content_2.Methods.Journal.Course.Certificates.Add.Exec",
-                                                            "title": "@throws Exception"
+                                                            "$ref": "Content_2/Methods/Journal/Course/Certificates/Add.json#/components/schemas/Content_2.Methods.Journal.Course.Certificates.Add.Exec"
                                                         }
                                                     },
                                                     "required": [
@@ -21899,8 +21677,7 @@
                             },
                             "model": {
                                 "schema": {
-                                    "$ref": "Models/Pages.json#/components/schemas/Models.Pages",
-                                    "description": "Only for typescript, does not contain real data"
+                                    "$ref": "Models/Pages.json#/components/schemas/Models.Pages"
                                 }
                             }
                         }
@@ -22077,8 +21854,7 @@
                             },
                             "model": {
                                 "schema": {
-                                    "$ref": "Models/Pages.json#/components/schemas/Models.Pages",
-                                    "description": "Only for typescript, does not contain real data"
+                                    "$ref": "Models/Pages.json#/components/schemas/Models.Pages"
                                 }
                             }
                         }
@@ -22093,7 +21869,6 @@
                     "Content_2"
                 ],
                 "summary": "Получение списка страниц по буквам для модуля SEO словарь\nРезультат функции кешируется",
-                "description": "@return array<string, array{url: string, h1: string}> - массив с ключом \"Буква\" и значением массив страниц Pages",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -22140,8 +21915,7 @@
                             },
                             "model": {
                                 "schema": {
-                                    "$ref": "Models/Pages.json#/components/schemas/Models.Pages",
-                                    "description": "Only for typescript, does not contain real data"
+                                    "$ref": "Models/Pages.json#/components/schemas/Models.Pages"
                                 }
                             }
                         }
@@ -22156,7 +21930,6 @@
                     "Content_2"
                 ],
                 "summary": "Получение стаьи для \"Слово дня\" в модуле SEO словарь",
-                "description": "@return (array<string, array{url: string, menu_name: string, description: string, count_views: integer}> | null)",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -22203,8 +21976,7 @@
                             },
                             "model": {
                                 "schema": {
-                                    "$ref": "Models/Pages.json#/components/schemas/Models.Pages",
-                                    "description": "Only for typescript, does not contain real data"
+                                    "$ref": "Models/Pages.json#/components/schemas/Models.Pages"
                                 }
                             }
                         }
@@ -22300,8 +22072,7 @@
                                                     "type": "object",
                                                     "properties": {
                                                         "result": {
-                                                            "$ref": "Keywords_2/Methods/Collect/Ext/Price/Get.json#/components/schemas/Keywords_2.Methods.Collect.Ext.Price.Get.Exec",
-                                                            "title": "@return array{pricesByUsers: array<string, array{price: float, priceOriginal: float, qualifiers: array{region_key: int, searcher_key: (0 | 1 | 5 | 100 | 101 | 102 | 104 | 105 | 106), region_lang?: (string | null), also_searched?: (int | null), depth?: (int | null), hint_depth: (1 | 2 | 3), hint_generators: array<('letter' | 'letter_ru' | 'number' | 'space')>}, comment: string}>}"
+                                                            "$ref": "Keywords_2/Methods/Collect/Ext/Price/Get.json#/components/schemas/Keywords_2.Methods.Collect.Ext.Price.Get.Exec"
                                                         }
                                                     },
                                                     "required": [
@@ -22588,8 +22359,7 @@
                             },
                             "model": {
                                 "schema": {
-                                    "$ref": "Models/Projects.json#/components/schemas/Models.Projects",
-                                    "description": "Only for typescript, does not contain real data"
+                                    "$ref": "Models/Projects.json#/components/schemas/Models.Projects"
                                 }
                             }
                         }

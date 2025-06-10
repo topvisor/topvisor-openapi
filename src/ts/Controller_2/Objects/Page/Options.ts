@@ -13,7 +13,7 @@ export interface components {
             keywords: string;
             noindex: boolean;
             canonical: string;
-            alternates: (string | number)[];
+            alternates: Record<string, never>[];
         };
     };
     responses: never;

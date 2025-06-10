@@ -10,7 +10,7 @@ export interface components {
         /** Получение сводки индексации */
         "Audit_2.Methods.Indexing.Summary.Get": {
             /** Произвольные даты без диапазона */
-            dates: (string | number)[];
+            dates: Record<string, never>[];
             searcher_key?: import('../../../Types/Indexing/SearcherKey.ts').components['schemas']['Audit_2.Types.Indexing.SearcherKey'] | null;
             /** Отобразить количество изменений */
             show_counts_changes?: boolean;
@@ -30,7 +30,7 @@ export interface components {
             id?: import('../../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['id'];
         };
         /** Сводка индексации */
-        "Audit_2.Methods.Indexing.Summary.Get.Exec": (string | number)[] | null;
+        "Audit_2.Methods.Indexing.Summary.Get.Exec": Record<string, never>[] | null;
     };
     responses: never;
     parameters: never;

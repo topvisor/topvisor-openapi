@@ -18,14 +18,7 @@
                         "title": "Информация о запросах (id группы и id запросов)",
                         "type": "array",
                         "items": {
-                            "oneOf": [
-                                {
-                                    "type": "string"
-                                },
-                                {
-                                    "type": "number"
-                                }
-                            ]
+                            "type": "any"
                         }
                     }
                 },
@@ -36,9 +29,23 @@
                 "title": "Удаление запросов рекламной кампании"
             },
             "Broker_2.Methods.Keywords.Del.Exec": {
-                "title": "@return (array | int | null) выводит int, если функция провайдера не определена",
+                "title": "выводит int, если функция провайдера не определена",
                 "description": "@throws Exception",
-                "nullable": true
+                "nullable": true,
+                "anyOf": [
+                    {
+                        "type": "array",
+                        "items": {
+                            "type": "any"
+                        }
+                    },
+                    {
+                        "type": "integer"
+                    },
+                    {
+                        "type": "null"
+                    }
+                ]
             }
         }
     }

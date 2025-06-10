@@ -14,7 +14,7 @@ export interface components {
             /** Язык шаблона (при пустом значении используется язык пользователя) */
             lang?: import('../../../../TV/API/Types/Lang.ts').components['schemas']['TV.API.Types.Lang'] | null;
         };
-        "Admin_2.Methods.Tpl.Schema.Get.Exec": (string | number)[];
+        "Admin_2.Methods.Tpl.Schema.Get.Exec": Record<string, never>[];
     };
     responses: never;
     parameters: never;

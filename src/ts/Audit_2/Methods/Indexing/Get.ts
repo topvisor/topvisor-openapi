@@ -20,7 +20,7 @@ export interface components {
              *       "data"
              *     ]
              */
-            indexing_fields: (string | number)[];
+            indexing_fields: Record<string, never>[];
             /** Вернуть ли заголовки отчета */
             show_headers?: boolean;
             /** Вернуть ли суммарное количество страниц в индексе по URL */
@@ -32,7 +32,7 @@ export interface components {
              *     Формат записи: `{{ date }}:{{ searcher_key }}` */
             filter_by_alert?: string;
             /** Произвольные даты без использования диапазона */
-            dates?: (string | number)[] | null;
+            dates?: Record<string, never>[] | null;
             /** Дата начала диапазона */
             date1?: import('../../../TV/API/Types/Date.ts').components['schemas']['TV.API.Types.Date'] | null;
             /** Дата окончания диапазона */
@@ -62,7 +62,7 @@ export interface components {
             project_id: import('../../../TV/API/Params/ProjectIdTrait.ts').components['schemas']['TV.API.Params.ProjectIdTrait']['project_id'];
         };
         /** Список ссылок с данными по ним */
-        "Audit_2.Methods.Indexing.Get.Exec": (string | number)[];
+        "Audit_2.Methods.Indexing.Get.Exec": Record<string, never>[];
     };
     responses: never;
     parameters: never;

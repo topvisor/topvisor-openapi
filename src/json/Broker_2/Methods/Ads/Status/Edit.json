@@ -18,14 +18,7 @@
                         "title": "Информация об объявлениях (id группы, id объявлений и статусы объявлений)",
                         "type": "array",
                         "items": {
-                            "oneOf": [
-                                {
-                                    "type": "string"
-                                },
-                                {
-                                    "type": "number"
-                                }
-                            ]
+                            "type": "any"
                         }
                     }
                 },
@@ -36,9 +29,23 @@
                 "title": "Изменение статуса объявлений"
             },
             "Broker_2.Methods.Ads.Status.Edit.Exec": {
-                "title": "@return (array | int | null) выводит int, если функция провайдера не определена",
+                "title": "выводит int, если функция провайдера не определена",
                 "description": "@throws Exception",
-                "nullable": true
+                "nullable": true,
+                "anyOf": [
+                    {
+                        "type": "array",
+                        "items": {
+                            "type": "any"
+                        }
+                    },
+                    {
+                        "type": "integer"
+                    },
+                    {
+                        "type": "null"
+                    }
+                ]
             }
         }
     }

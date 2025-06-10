@@ -12,7 +12,7 @@ export interface components {
             project_id: import('../../../../TV/API/Params/ProjectIdTrait.ts').components['schemas']['TV.API.Params.ProjectIdTrait']['project_id'];
         };
         /** Список проверок радара */
-        "Audit_2.Methods.Watcher.Checks.Get.Exec": (string | number)[] | null;
+        "Audit_2.Methods.Watcher.Checks.Get.Exec": Record<string, never>[] | null;
     };
     responses: never;
     parameters: never;

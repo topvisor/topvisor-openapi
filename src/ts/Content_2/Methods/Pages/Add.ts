@@ -42,11 +42,11 @@ export interface components {
             /** Ссылка на основное изображение (обычно относительный путь до изображения от корня сайта) */
             image?: string | null;
             /** object(name => value) og - объект с данными Open Graph */
-            og?: (string | number)[] | null;
+            og?: Record<string, never>[] | null;
             /** Массив тегов */
-            c?: (string | number)[] | null;
+            c?: Record<string, never>[] | null;
             /** Список тегов */
-            tags?: (string | number)[] | null;
+            tags?: Record<string, never>[] | null;
             /** Не индексировать страницу */
             noindex?: boolean;
             /** Тема оформления страницы */

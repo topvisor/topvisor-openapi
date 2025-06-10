@@ -9,8 +9,7 @@ export interface components {
     schemas: {
         /** Получение интерфейсов настройки всех планов подписки */
         "Bank_2.Methods.Subscriptions.Plans.Get": Record<string, never>;
-        /** @return Bank_2\Objects\Subscriptions\Plan[] */
-        "Bank_2.Methods.Subscriptions.Plans.Get.Exec": (string | number)[];
+        "Bank_2.Methods.Subscriptions.Plans.Get.Exec": import('../../../Objects/Subscriptions/Plan.ts').components['schemas']['Bank_2.Objects.Subscriptions.Plan'][];
     };
     responses: never;
     parameters: never;

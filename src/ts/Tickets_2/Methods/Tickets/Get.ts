@@ -9,7 +9,7 @@ export interface components {
     schemas: {
         /** Получение списка тикетов с сообщениями */
         "Tickets_2.Methods.Tickets.Get": {
-            fields_messages?: (string | number)[] | null;
+            fields_messages?: Record<string, never>[] | null;
             /** Добавить в результат данные пользователей, написавших сообщения в тикеты */
             show_messages_users?: boolean;
             /** Добавить в результат данные о том, что пишет собеседник */
@@ -22,7 +22,7 @@ export interface components {
             offset: import('../../../TV/API/Params/OffsetTrait.ts').components['schemas']['TV.API.Params.OffsetTrait']['offset'];
             fetch_style?: import('../../../TV/API/Params/FetchStyleTrait.ts').components['schemas']['TV.API.Params.FetchStyleTrait']['fetch_style'];
         };
-        "Tickets_2.Methods.Tickets.Get.Exec": (string | number)[] | null;
+        "Tickets_2.Methods.Tickets.Get.Exec": Record<string, never>[] | null;
     };
     responses: never;
     parameters: never;

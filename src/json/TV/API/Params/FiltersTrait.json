@@ -15,14 +15,7 @@
                         "description": "@see AbstractMethod::MODEL\n@see Field::AVAILABLE_OPERATORS",
                         "type": "array",
                         "items": {
-                            "oneOf": [
-                                {
-                                    "type": "string"
-                                },
-                                {
-                                    "type": "number"
-                                }
-                            ]
+                            "type": "any"
                         }
                     },
                     "id": {

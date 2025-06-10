@@ -24,7 +24,7 @@ export interface components {
             /** Id второго объекта, для которого требуется получить расписание (обзятельно для mentions) */
             target_id_2?: number | null;
         };
-        "Schedule_2.Methods.Settings.Get.Exec": (string | number)[];
+        "Schedule_2.Methods.Settings.Get.Exec": Record<string, never>[];
     };
     responses: never;
     parameters: never;

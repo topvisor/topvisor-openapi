@@ -14,7 +14,7 @@ export interface components {
             /** Адрес папки с документами */
             parent_url: string;
             /** Адреса документов в нужном порядке */
-            urls: (string | number)[];
+            urls: Record<string, never>[];
         };
         "Content_2.Methods.Pages.Order.Edit.Exec": number | null;
     };

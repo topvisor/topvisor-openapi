@@ -22,14 +22,7 @@
                         "title": "Массив ключевых запросов в формате CSV\n\n- array keywords - массив ключевых запросов, допускается формат CSV",
                         "type": "array",
                         "items": {
-                            "oneOf": [
-                                {
-                                    "type": "string"
-                                },
-                                {
-                                    "type": "number"
-                                }
-                            ]
+                            "type": "any"
                         }
                     },
                     "remove_special_chars": {

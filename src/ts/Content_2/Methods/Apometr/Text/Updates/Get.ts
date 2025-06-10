@@ -14,7 +14,7 @@ export interface components {
             searcher_key: import('../../../../../Positions_2/Types/SearcherKey.ts').components['schemas']['Positions_2.Types.SearcherKey'];
             date?: import('../../../../../TV/API/Types/Date.ts').components['schemas']['TV.API.Types.Date'] | null;
         };
-        "Content_2.Methods.Apometr.Text.Updates.Get.Exec": (string | number)[];
+        "Content_2.Methods.Apometr.Text.Updates.Get.Exec": Record<string, never>[];
     };
     responses: never;
     parameters: never;

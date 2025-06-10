@@ -25,7 +25,7 @@ export interface components {
             /** Вернуть только средние значения по всем тематикам */
             avg?: boolean;
         };
-        "Content_2.Methods.Apometr.History.Get.Exec": (string | number)[] | null;
+        "Content_2.Methods.Apometr.History.Get.Exec": Record<string, never>[] | null;
     };
     responses: never;
     parameters: never;

@@ -14,7 +14,7 @@ export interface components {
              *         "check_id"
              *       ]
              *     } */
-            "WATCHER_HTTP_CODES_HUNDREDS()"?: (string | number)[] | null;
+            "WATCHER_HTTP_CODES_HUNDREDS()"?: Record<string, never>[] | null;
             id?: number;
             url?: string | null;
             project_id?: number | null;
@@ -45,7 +45,7 @@ export interface components {
              *         "check_id"
              *       ]
              *     } */
-            watcher_http_codes?: (string | number)[] | null;
+            watcher_http_codes?: Record<string, never>[] | null;
             /** @example {
              *       "need set qualifiers": [
              *         "check_id"
@@ -57,7 +57,7 @@ export interface components {
              *         "check_id"
              *       ]
              *     } */
-            watcher_redirects?: (string | number)[] | null;
+            watcher_redirects?: Record<string, never>[] | null;
             /** @example {
              *       "need set qualifiers": [
              *         "check_id"

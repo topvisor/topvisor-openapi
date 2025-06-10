@@ -19,7 +19,7 @@ export interface components {
              *     - areaName_ru: имя родительского региона, обычно это область
              * @description @type array<array{lr: int, criteriaId: int, coords: string, name_ru: string, areaName_ru: string}>
              */
-            regions: (string | number)[];
+            regions: Record<string, never>[];
             /** Являеется ли запуск - тестом */
             test: boolean;
         };

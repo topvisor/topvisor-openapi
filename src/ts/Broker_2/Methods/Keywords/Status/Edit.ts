@@ -12,13 +12,13 @@ export interface components {
             /** Id кампании */
             campaign_tv_id: number;
             /** Информация о запросах (id группы и id запросов) */
-            keywords_data: (string | number)[];
+            keywords_data: Record<string, never>[];
         };
         /**
-         * @return (array | int | null) выводит int, если функция провайдера не определена
+         * выводит int, если функция провайдера не определена
          * @description @throws Exception
          */
-        "Broker_2.Methods.Keywords.Status.Edit.Exec": unknown;
+        "Broker_2.Methods.Keywords.Status.Edit.Exec": (Record<string, never>[] | number | null) | null;
     };
     responses: never;
     parameters: never;
