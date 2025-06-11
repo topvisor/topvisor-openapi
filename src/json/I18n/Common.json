@@ -1898,32 +1898,8 @@
                         "const": "Please fill in all required fields",
                         "readOnly": true
                     },
-                    "Report_an_error": {
-                        "const": "Report an error",
-                        "readOnly": true
-                    },
-                    "We_have_got_your_error_report": {
-                        "const": "We've got your error report",
-                        "readOnly": true
-                    },
-                    "Thanks": {
-                        "const": "Thanks",
-                        "readOnly": true
-                    },
-                    "If_we_should_have_any_additional_questions": {
-                        "const": "If we should have any additional questions, we'll send you a ticket. To open tickets, hit 💌 Tickets in the header.",
-                        "readOnly": true
-                    },
                     "Open_file": {
                         "const": "Open the file",
-                        "readOnly": true
-                    },
-                    "Hello": {
-                        "const": "Hello",
-                        "readOnly": true
-                    },
-                    "This_is_an_automatic_message_obout_error": {
-                        "const": "This is an automatic message that I've encountered an error. Below you'll find site logs the devs configured to collect.",
                         "readOnly": true
                     },
                     "Undefined_address": {
@@ -1936,6 +1912,18 @@
                     },
                     "Response_server": {
                         "const": "Server response",
+                        "readOnly": true
+                    },
+                    "Report_an_error": {
+                        "const": "Report an error",
+                        "readOnly": true
+                    },
+                    "Report_an_error_ticket_message": {
+                        "const": "Hello!\n\nThis is an automatic message that I've encountered an error. Below you'll find site logs the devs configured to collect.",
+                        "readOnly": true
+                    },
+                    "Report_an_error_response": {
+                        "const": "We've got your error report. Thanks!\nIf we should have any additional questions, we'll send you a ticket. To open tickets, hit 💌 Tickets in the header.",
                         "readOnly": true
                     }
                 },
@@ -2409,16 +2397,13 @@
                     "Press_to_copy_2",
                     "Guest_link_created",
                     "Need_fill_required_fields",
-                    "Report_an_error",
-                    "We_have_got_your_error_report",
-                    "Thanks",
-                    "If_we_should_have_any_additional_questions",
                     "Open_file",
-                    "Hello",
-                    "This_is_an_automatic_message_obout_error",
                     "Undefined_address",
                     "Error",
-                    "Response_server"
+                    "Response_server",
+                    "Report_an_error",
+                    "Report_an_error_ticket_message",
+                    "Report_an_error_response"
                 ]
             }
         }
