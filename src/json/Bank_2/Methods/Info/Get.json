@@ -40,7 +40,7 @@
                         "$ref": "../../../Bank_2/Objects/Subscriptions/Subscription.json#/components/schemas/Bank_2.Objects.Subscriptions.Subscription"
                     },
                     "subscription_name": {
-                        "$ref": "../../../Bank_2/Objects/Subscriptions/Subscription.json#/components/schemas/Bank_2.Objects.Subscriptions.Subscription"
+                        "type": "string"
                     }
                 },
                 "required": [

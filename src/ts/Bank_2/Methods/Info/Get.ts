@@ -19,7 +19,7 @@ export interface components {
             balance_tariff: number;
             tariff: unknown[];
             subscription?: import('../../Objects/Subscriptions/Subscription.ts').components['schemas']['Bank_2.Objects.Subscriptions.Subscription'];
-            subscription_name?: import('../../Objects/Subscriptions/Subscription.ts').components['schemas']['Bank_2.Objects.Subscriptions.Subscription'];
+            subscription_name?: string;
         };
     };
     responses: never;

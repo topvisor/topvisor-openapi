@@ -15586,7 +15586,7 @@ components:
         subscription:
           $ref: '#/components/schemas/Bank_2.Objects.Subscriptions.Subscription'
         subscription_name:
-          $ref: '#/components/schemas/Bank_2.Objects.Subscriptions.Subscription'
+          type: string
       required:
         - balance_all
         - balance_personal
