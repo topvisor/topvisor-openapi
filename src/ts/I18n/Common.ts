@@ -953,14 +953,6 @@ export interface components {
             /** @constant */
             readonly Need_fill_required_fields: "Please fill in all required fields";
             /** @constant */
-            readonly Open_file: "Open the file";
-            /** @constant */
-            readonly Undefined_address: "Undefined address";
-            /** @constant */
-            readonly Error: "Error";
-            /** @constant */
-            readonly Response_server: "Server response";
-            /** @constant */
             readonly Report_an_error: "Report an error";
             /** @constant */
             readonly Report_an_error_ticket_message: "Hello!\n\nThis is an automatic message that I've encountered an error. Below you'll find site logs the devs configured to collect.";

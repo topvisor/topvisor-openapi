@@ -1898,22 +1898,6 @@
                         "const": "Please fill in all required fields",
                         "readOnly": true
                     },
-                    "Open_file": {
-                        "const": "Open the file",
-                        "readOnly": true
-                    },
-                    "Undefined_address": {
-                        "const": "Undefined address",
-                        "readOnly": true
-                    },
-                    "Error": {
-                        "const": "Error",
-                        "readOnly": true
-                    },
-                    "Response_server": {
-                        "const": "Server response",
-                        "readOnly": true
-                    },
                     "Report_an_error": {
                         "const": "Report an error",
                         "readOnly": true
@@ -2397,10 +2381,6 @@
                     "Press_to_copy_2",
                     "Guest_link_created",
                     "Need_fill_required_fields",
-                    "Open_file",
-                    "Undefined_address",
-                    "Error",
-                    "Response_server",
                     "Report_an_error",
                     "Report_an_error_ticket_message",
                     "Report_an_error_response"
