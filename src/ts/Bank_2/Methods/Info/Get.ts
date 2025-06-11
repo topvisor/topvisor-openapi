@@ -9,17 +9,18 @@ export interface components {
     schemas: {
         /** Получение информации о балансе */
         "Bank_2.Methods.Info.Get": {
-            /**
-             * Для openapi
-             *
-             *     TODO: После типизации результата убрать
-             * @description @internal
-             */
-            result?: import('../../Objects/Subscriptions/Subscription.ts').components['schemas']['Bank_2.Objects.Subscriptions.Subscription'] | null;
             fields?: import('../../../TV/API/Params/FieldsTrait.ts').components['schemas']['TV.API.Params.FieldsTrait']['fields'];
         };
         /** Информация о балансе и тарифе пользователя. */
-        "Bank_2.Methods.Info.Get.Exec": unknown[];
+        "Bank_2.Methods.Info.Get.Exec": {
+            balance_all: number;
+            balance_personal: number;
+            balance_bonus: number;
+            balance_tariff: number;
+            tariff: unknown[];
+            subscription?: import('../../Objects/Subscriptions/Subscription.ts').components['schemas']['Bank_2.Objects.Subscriptions.Subscription'];
+            subscription_name?: import('../../Objects/Subscriptions/Subscription.ts').components['schemas']['Bank_2.Objects.Subscriptions.Subscription'];
+        };
     };
     responses: never;
     parameters: never;

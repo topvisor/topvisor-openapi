@@ -15354,6 +15354,13 @@ components:
           nullable: true
         by_user_email:
           nullable: true
+    Bank_2.Methods.Info.Get:
+      type: object
+      properties:
+        fields:
+          $ref: '#/components/schemas/fields'
+      required: []
+      title: Получение информации о балансе
     Bank_2.Objects.Subscriptions.Plan:
       type: object
       properties:
@@ -15562,25 +15569,9 @@ components:
         - limitUsedByName
         - limitTypeByName
       title: Информация о текущей подписки пользователя и ее лимитах
-    Bank_2.Methods.Info.Get:
-      type: object
-      properties:
-        result:
-          title: |-
-            Для openapi
-
-            TODO: После типизации результата убрать
-          description: '@internal'
-          nullable: true
-          allOf:
-            - $ref: '#/components/schemas/Bank_2.Objects.Subscriptions.Subscription'
-        fields:
-          $ref: '#/components/schemas/fields'
-      required: []
-      title: Получение информации о балансе
     Bank_2.Methods.Info.Get.Exec:
       title: Информация о балансе и тарифе пользователя.
-      type: array
+      type: object
       properties:
         balance_all:
           type: number

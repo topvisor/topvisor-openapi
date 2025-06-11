@@ -10,16 +10,6 @@
             "Bank_2.Methods.Info.Get": {
                 "type": "object",
                 "properties": {
-                    "result": {
-                        "title": "Для openapi\n\nTODO: После типизации результата убрать",
-                        "description": "@internal",
-                        "nullable": true,
-                        "allOf": [
-                            {
-                                "$ref": "../../../Bank_2/Objects/Subscriptions/Subscription.json#/components/schemas/Bank_2.Objects.Subscriptions.Subscription"
-                            }
-                        ]
-                    },
                     "fields": {
                         "$ref": "../../../TV/API/Params/FieldsTrait.json#/components/schemas/TV.API.Params.FieldsTrait/properties/fields"
                     }
@@ -29,7 +19,7 @@
             },
             "Bank_2.Methods.Info.Get.Exec": {
                 "title": "Информация о балансе и тарифе пользователя.",
-                "type": "array",
+                "type": "object",
                 "properties": {
                     "balance_all": {
                         "type": "number"
