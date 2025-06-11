@@ -23,7 +23,7 @@ export interface components {
             staff_id?: any;
             staff_email?: any;
             staff_department?: any;
-            staff_posts?: Record<string, never>[] | null;
+            staff_posts?: unknown[] | null;
             staff_post?: any;
             staff_name?: any;
             staff_surname?: any;

@@ -48,10 +48,7 @@
             },
             "Admin_2.Methods.Analytics.Competitors.SummaryForOrdersChart.Get.Exec": {
                 "nullable": true,
-                "type": "array",
-                "items": {
-                    "type": "any"
-                }
+                "type": "array"
             }
         }
     }

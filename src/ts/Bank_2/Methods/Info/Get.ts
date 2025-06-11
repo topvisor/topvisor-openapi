@@ -19,7 +19,7 @@ export interface components {
             fields?: import('../../../TV/API/Params/FieldsTrait.ts').components['schemas']['TV.API.Params.FieldsTrait']['fields'];
         };
         /** Информация о балансе и тарифе пользователя. */
-        "Bank_2.Methods.Info.Get.Exec": Record<string, never>[];
+        "Bank_2.Methods.Info.Get.Exec": unknown[];
     };
     responses: never;
     parameters: never;

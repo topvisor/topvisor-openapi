@@ -13,10 +13,7 @@
                     "projects_ids": {
                         "title": "Вместо project_ids можно укзывать project_id",
                         "nullable": true,
-                        "type": "array",
-                        "items": {
-                            "type": "any"
-                        }
+                        "type": "array"
                     },
                     "email": {
                         "title": "Email пользователя (если пользователь не зарегистрирован будет выслано приглашение)",

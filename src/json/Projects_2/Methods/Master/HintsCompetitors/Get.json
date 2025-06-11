@@ -21,10 +21,7 @@
                 "title": "Получить подсазки конкурентов для добавления в проект\n\nДоступ по API закрыт"
             },
             "Projects_2.Methods.Master.HintsCompetitors.Get.Exec": {
-                "type": "array",
-                "items": {
-                    "type": "any"
-                }
+                "type": "array"
             }
         }
     }

@@ -14,9 +14,6 @@
                     },
                     "HTTP_CODES_HUNDREDS()": {
                         "type": "array",
-                        "items": {
-                            "type": "any"
-                        },
                         "nullable": true
                     },
                     "check_id": {
@@ -39,9 +36,6 @@
                     },
                     "http_codes": {
                         "type": "array",
-                        "items": {
-                            "type": "any"
-                        },
                         "nullable": true
                     },
                     "last_http_code": {
@@ -49,9 +43,6 @@
                     },
                     "redirects": {
                         "type": "array",
-                        "items": {
-                            "type": "any"
-                        },
                         "nullable": true
                     },
                     "locations": {

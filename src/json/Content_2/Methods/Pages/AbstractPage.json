@@ -108,26 +108,17 @@
                     "og": {
                         "title": "object(name => value) og - объект с данными Open Graph",
                         "nullable": true,
-                        "type": "array",
-                        "items": {
-                            "type": "any"
-                        }
+                        "type": "array"
                     },
                     "c": {
                         "title": "Массив тегов",
                         "nullable": true,
-                        "type": "array",
-                        "items": {
-                            "type": "any"
-                        }
+                        "type": "array"
                     },
                     "tags": {
                         "title": "Список тегов",
                         "nullable": true,
-                        "type": "array",
-                        "items": {
-                            "type": "any"
-                        }
+                        "type": "array"
                     },
                     "noindex": {
                         "title": "Не индексировать страницу",

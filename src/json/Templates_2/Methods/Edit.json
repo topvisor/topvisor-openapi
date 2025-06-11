@@ -31,17 +31,11 @@
                     },
                     "fields": {
                         "title": "Поля шаблона",
-                        "type": "array",
-                        "items": {
-                            "type": "any"
-                        }
+                        "type": "array"
                     },
                     "properties": {
                         "title": "Свойства шаблона",
-                        "type": "array",
-                        "items": {
-                            "type": "any"
-                        }
+                        "type": "array"
                     }
                 },
                 "required": [

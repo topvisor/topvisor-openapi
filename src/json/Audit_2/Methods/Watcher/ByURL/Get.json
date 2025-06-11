@@ -24,10 +24,7 @@
                             "http_codes",
                             "redirects"
                         ],
-                        "type": "array",
-                        "items": {
-                            "type": "any"
-                        }
+                        "type": "array"
                     },
                     "show_diff": {
                         "allOf": [
@@ -82,10 +79,7 @@
             "Audit_2.Methods.Watcher.ByURL.Get.Exec": {
                 "title": "Отчет по одному URL",
                 "nullable": true,
-                "type": "array",
-                "items": {
-                    "type": "any"
-                }
+                "type": "array"
             }
         }
     }

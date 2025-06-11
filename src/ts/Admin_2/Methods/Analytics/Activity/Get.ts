@@ -22,7 +22,7 @@ export interface components {
             /** Дата */
             date: import('../../../../TV/API/Types/Date.ts').components['schemas']['TV.API.Types.Date'];
         };
-        "Admin_2.Methods.Analytics.Activity.Get.Exec": Record<string, never>[] | null;
+        "Admin_2.Methods.Analytics.Activity.Get.Exec": unknown[] | null;
     };
     responses: never;
     parameters: never;

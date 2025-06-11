@@ -14,7 +14,7 @@ export interface components {
             /** ID */
             id?: number | null;
         };
-        "Projects_2.Methods.Analytics.Get.Exec": Record<string, never>[] | null;
+        "Projects_2.Methods.Analytics.Get.Exec": unknown[] | null;
     };
     responses: never;
     parameters: never;

@@ -14,7 +14,7 @@ export interface components {
             /** ID проекта */
             project_id: number;
         };
-        "Projects_2.Methods.Master.HintsCompetitors.Get.Exec": Record<string, never>[];
+        "Projects_2.Methods.Master.HintsCompetitors.Get.Exec": unknown[];
     };
     responses: never;
     parameters: never;

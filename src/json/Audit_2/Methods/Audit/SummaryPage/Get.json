@@ -56,10 +56,7 @@
             "Audit_2.Methods.Audit.SummaryPage.Get.Exec": {
                 "title": "Сводка о выполненном аудите по одной странице",
                 "nullable": true,
-                "type": "array",
-                "items": {
-                    "type": "any"
-                }
+                "type": "array"
             }
         }
     }

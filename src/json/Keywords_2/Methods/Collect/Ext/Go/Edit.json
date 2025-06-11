@@ -17,10 +17,7 @@
                     "keywords_minus": {
                         "title": "Минус фразы",
                         "nullable": true,
-                        "type": "array",
-                        "items": {
-                            "type": "any"
-                        }
+                        "type": "array"
                     },
                     "type": {
                         "title": "Каким типом расширять группу",

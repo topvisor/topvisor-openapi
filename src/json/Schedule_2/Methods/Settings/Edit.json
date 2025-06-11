@@ -55,10 +55,7 @@
                     "regions_keys_by_searcher_key": {
                         "title": "Ключ региона для проверки частосты\n\nРазрешено указывать только Яндекс и Google (0, 1)",
                         "nullable": true,
-                        "type": "array",
-                        "items": {
-                            "type": "any"
-                        }
+                        "type": "array"
                     },
                     "volumes_types": {
                         "title": "Имеет смысл только для Яндекс",

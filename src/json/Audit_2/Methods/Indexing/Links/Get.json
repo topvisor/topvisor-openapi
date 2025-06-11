@@ -17,10 +17,7 @@
                     "dates": {
                         "title": "Произвольные даты без использования диапазона",
                         "nullable": true,
-                        "type": "array",
-                        "items": {
-                            "type": "any"
-                        }
+                        "type": "array"
                     },
                     "date1": {
                         "title": "Дата начала диапазона",
@@ -50,42 +47,27 @@
                     "searchers_keys": {
                         "title": "Ппоисковые ключи",
                         "nullable": true,
-                        "type": "array",
-                        "items": {
-                            "type": "any"
-                        }
+                        "type": "array"
                     },
                     "tags": {
                         "title": "Теги",
                         "nullable": true,
-                        "type": "array",
-                        "items": {
-                            "type": "any"
-                        }
+                        "type": "array"
                     },
                     "dynamic": {
                         "title": "Динамический",
                         "nullable": true,
-                        "type": "array",
-                        "items": {
-                            "type": "any"
-                        }
+                        "type": "array"
                     },
                     "data_dynamic": {
                         "title": "Динаамические данные",
                         "nullable": true,
-                        "type": "array",
-                        "items": {
-                            "type": "any"
-                        }
+                        "type": "array"
                     },
                     "data_sort": {
                         "title": "Сортировка данных",
                         "nullable": true,
-                        "type": "array",
-                        "items": {
-                            "type": "any"
-                        }
+                        "type": "array"
                     },
                     "project_id": {
                         "$ref": "../../../../TV/API/Params/ProjectIdTrait.json#/components/schemas/TV.API.Params.ProjectIdTrait/properties/project_id"

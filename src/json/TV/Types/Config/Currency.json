@@ -108,10 +108,7 @@
                             10000,
                             10000
                         ],
-                        "type": "array",
-                        "items": {
-                            "type": "any"
-                        }
+                        "type": "array"
                     },
                     "BROKER_COST": {
                         "title": "Стоимость брокера.",
@@ -255,10 +252,7 @@
                             "No set",
                             "No set"
                         ],
-                        "type": "array",
-                        "items": {
-                            "type": "any"
-                        }
+                        "type": "array"
                     },
                     "TARIFF_VALUES": {
                         "title": "Массив значений тарифов.",
@@ -270,10 +264,7 @@
                             10000,
                             10000
                         ],
-                        "type": "array",
-                        "items": {
-                            "type": "any"
-                        }
+                        "type": "array"
                     },
                     "TARIFF_DISCOUNT": {
                         "title": "Массив скидок на тарифы.",
@@ -285,10 +276,7 @@
                             20,
                             30
                         ],
-                        "type": "array",
-                        "items": {
-                            "type": "any"
-                        }
+                        "type": "array"
                     }
                 },
                 "required": [

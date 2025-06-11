@@ -42,7 +42,7 @@ export interface components {
              *         twTokens:array
              *     }
              */
-            configTPA: Record<string, never>[];
+            configTPA: unknown[];
         };
     };
     responses: never;

@@ -20,9 +20,6 @@
                     },
                     "http_codes": {
                         "type": "array",
-                        "items": {
-                            "type": "any"
-                        },
                         "nullable": true
                     },
                     "http_codes_changed": {
@@ -33,9 +30,6 @@
                     },
                     "redirects": {
                         "type": "array",
-                        "items": {
-                            "type": "any"
-                        },
                         "nullable": true
                     },
                     "redirects_changed": {

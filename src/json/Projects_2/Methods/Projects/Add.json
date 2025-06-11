@@ -29,10 +29,7 @@
                         "default": [
                             1
                         ],
-                        "type": "array",
-                        "items": {
-                            "type": "any"
-                        }
+                        "type": "array"
                     },
                     "folder_id": {
                         "title": "Id папки, к которой будет привязан проект",

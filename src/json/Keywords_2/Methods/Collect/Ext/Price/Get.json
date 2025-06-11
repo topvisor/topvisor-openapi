@@ -17,10 +17,7 @@
                     "keywords_minus": {
                         "title": "Минус фразы",
                         "nullable": true,
-                        "type": "array",
-                        "items": {
-                            "type": "any"
-                        }
+                        "type": "array"
                     },
                     "apply_discount": {
                         "title": "Отображать сумму с учетом скидки (по умолчанию: 1)",

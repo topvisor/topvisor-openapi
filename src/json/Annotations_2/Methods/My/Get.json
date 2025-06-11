@@ -42,10 +42,7 @@
             },
             "Annotations_2.Methods.My.Get.Exec": {
                 "nullable": true,
-                "type": "array",
-                "items": {
-                    "type": "any"
-                }
+                "type": "array"
             }
         }
     }

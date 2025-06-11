@@ -14,7 +14,7 @@ export interface components {
             /** Диапазон значений шаблона */
             template_date_range: string;
             /** Произвольные даты без использования диапазона */
-            dates?: Record<string, never>[] | null;
+            dates?: unknown[] | null;
             /** Дата начала диапазона */
             date1?: string | null;
             /** Дата окончания диапазона */
@@ -27,15 +27,15 @@ export interface components {
             /** Количество дней в диапазоне */
             count_dates?: number | null;
             /** Ппоисковые ключи */
-            searchers_keys?: Record<string, never>[] | null;
+            searchers_keys?: unknown[] | null;
             /** Теги */
-            tags?: Record<string, never>[] | null;
+            tags?: unknown[] | null;
             /** Динамический */
-            dynamic?: Record<string, never>[] | null;
+            dynamic?: unknown[] | null;
             /** Динаамические данные */
-            data_dynamic?: Record<string, never>[] | null;
+            data_dynamic?: unknown[] | null;
             /** Сортировка данных */
-            data_sort?: Record<string, never>[] | null;
+            data_sort?: unknown[] | null;
             project_id: import('../../../../TV/API/Params/ProjectIdTrait.ts').components['schemas']['TV.API.Params.ProjectIdTrait']['project_id'];
         };
         /** Короткая гостевая ссылка на просмотр позиций */

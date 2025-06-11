@@ -45,10 +45,7 @@
                     "filters": {
                         "title": "Фильтр по объектам групп, см. Admin_2\\Accounting\\Group",
                         "nullable": true,
-                        "type": "array",
-                        "items": {
-                            "type": "any"
-                        }
+                        "type": "array"
                     }
                 },
                 "required": [
@@ -59,10 +56,7 @@
                 "title": "Получение сводки по группам"
             },
             "Admin_2.Methods.Analytics.Accounting.SummaryForChart.Get.Exec": {
-                "type": "array",
-                "items": {
-                    "type": "any"
-                }
+                "type": "array"
             }
         }
     }

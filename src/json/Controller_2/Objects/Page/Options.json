@@ -26,10 +26,7 @@
                         "type": "string"
                     },
                     "alternates": {
-                        "type": "array",
-                        "items": {
-                            "type": "any"
-                        }
+                        "type": "array"
                     }
                 },
                 "required": [

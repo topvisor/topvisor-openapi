@@ -17,10 +17,7 @@
                     "filters_by_keywords": {
                         "title": "Поиск групп по запросам",
                         "nullable": true,
-                        "type": "array",
-                        "items": {
-                            "type": "any"
-                        }
+                        "type": "array"
                     },
                     "fields": {
                         "$ref": "../../../TV/API/Params/FieldsTrait.json#/components/schemas/TV.API.Params.FieldsTrait/properties/fields"
@@ -55,10 +52,7 @@
             },
             "Broker_2.Methods.Groups.Get.Exec": {
                 "title": "@throws Exception",
-                "type": "array",
-                "items": {
-                    "type": "any"
-                }
+                "type": "array"
             }
         }
     }

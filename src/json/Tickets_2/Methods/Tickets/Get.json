@@ -12,10 +12,7 @@
                 "properties": {
                     "fields_messages": {
                         "nullable": true,
-                        "type": "array",
-                        "items": {
-                            "type": "any"
-                        }
+                        "type": "array"
                     },
                     "show_messages_users": {
                         "title": "Добавить в результат данные пользователей, написавших сообщения в тикеты",
@@ -57,10 +54,7 @@
             },
             "Tickets_2.Methods.Tickets.Get.Exec": {
                 "nullable": true,
-                "type": "array",
-                "items": {
-                    "type": "any"
-                }
+                "type": "array"
             }
         }
     }

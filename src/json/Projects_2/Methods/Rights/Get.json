@@ -21,10 +21,7 @@
                 "title": "Получение информации о настройке прав и смене владельца"
             },
             "Projects_2.Methods.Rights.Get.Exec": {
-                "type": "array",
-                "items": {
-                    "type": "any"
-                }
+                "type": "array"
             }
         }
     }

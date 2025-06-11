@@ -15,10 +15,7 @@
             },
             "Payments_2.Methods.Companies.Get.Exec": {
                 "nullable": true,
-                "type": "array",
-                "items": {
-                    "type": "any"
-                }
+                "type": "array"
             }
         }
     }

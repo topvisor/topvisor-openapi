@@ -12536,8 +12536,6 @@ components:
         Использует поля модели
       description: '@see AbstractMethod::MODEL'
       type: array
-      items:
-        type: any
     orders:
       title: |-
         Список полей объекта, по которым необходимо выполнить сортировку
@@ -12547,8 +12545,6 @@ components:
         Использует поля модели
       description: '@see AbstractMethod::MODEL'
       type: array
-      items:
-        type: any
     filters:
       title: |-
         Список фильтров по полям объекта
@@ -12562,8 +12558,6 @@ components:
         @see AbstractMethod::MODEL
         @see Field::AVAILABLE_OPERATORS
       type: array
-      items:
-        type: any
     id:
       title: |-
         Id объекта, для фильтрации объектов по id
@@ -12632,8 +12626,6 @@ components:
     Annotations_2.Methods.Get.Exec:
       nullable: true
       type: array
-      items:
-        type: any
     Pagination:
       type: object
       properties:
@@ -12774,8 +12766,6 @@ components:
         Возвращает набор комментариев со всеми подкомменатриями, limit, offset не виляют на получение вложенных комментариев
     Comments_2.Methods.Get.Exec:
       type: array
-      items:
-        type: any
     Models.Comments:
       properties:
         id: {}
@@ -12870,8 +12860,6 @@ components:
            - count_unique_views
            - count_likes
       type: array
-      items:
-        type: any
     Payments_2.Types.System:
       type: string
       enum:
@@ -12975,8 +12963,6 @@ components:
         items:
           title: Элементы платежа
           type: array
-          items:
-            type: any
         card_id:
           title: ID карты в системе оплаты для привязки
           type: string
@@ -13114,8 +13100,6 @@ components:
           title: Использовать указанный цвет, цвет задается массивом из 3 элементов [r, g, b]
           nullable: true
           type: array
-          items:
-            type: any
         point_size:
           title: Размер точек QR кода в пикселях
           default: 4
@@ -13249,8 +13233,6 @@ components:
             @see Schedule_2\Mods\Schedule::$availableMinutes
             @see Schedule_2\Mods\Schedule::$availableDays
           type: array
-          items:
-            type: any
         type:
           title: Тип расписания
           description: '@see Schedule_2\Mods\Schedule::$availableTypes'
@@ -13292,8 +13274,6 @@ components:
     Schedule_2.Methods.Get.Exec:
       title: '@throws Exception'
       type: array
-      items:
-        type: any
     Tags_2.Types.Type:
       type: string
       enum:
@@ -13321,8 +13301,6 @@ components:
             }
             </code>
           type: array
-          items:
-            type: any
         project_id:
           nullable: true
           type: integer
@@ -13347,8 +13325,6 @@ components:
     Tags_2.Methods.Get.Exec:
       nullable: true
       type: array
-      items:
-        type: any
     Templates_2.Types.TargetType:
       type: string
       enum:
@@ -13381,13 +13357,9 @@ components:
         fields:
           title: Поля шаблона
           type: array
-          items:
-            type: any
         properties:
           title: Свойства шаблона
           type: array
-          items:
-            type: any
       required:
         - target_type
         - name
@@ -13430,13 +13402,9 @@ components:
         fields:
           title: Поля шаблона
           type: array
-          items:
-            type: any
         properties:
           title: Свойства шаблона
           type: array
-          items:
-            type: any
       required:
         - id
       title: Изменение шаблона
@@ -13462,8 +13430,6 @@ components:
     Templates_2.Methods.Get.Exec:
       title: '@throws Exception'
       type: array
-      items:
-        type: any
     Urls_2.Types.Flag:
       type: integer
       enum:
@@ -13556,8 +13522,6 @@ components:
           nullable: true
         WATCHER_HTTP_CODES_HUNDREDS():
           type: array
-          items:
-            type: any
           nullable: true
           example:
             need set qualifiers:
@@ -13602,8 +13566,6 @@ components:
               - searcher_key
         watcher_http_codes:
           type: array
-          items:
-            type: any
           nullable: true
           example:
             need set qualifiers:
@@ -13616,8 +13578,6 @@ components:
               - check_id
         watcher_redirects:
           type: array
-          items:
-            type: any
           nullable: true
           example:
             need set qualifiers:
@@ -13815,8 +13775,6 @@ components:
     Votes_2.Methods.Get.Exec:
       nullable: true
       type: array
-      items:
-        type: any
     Webscreens_2.Methods.Get:
       type: object
       properties:
@@ -13965,8 +13923,6 @@ components:
         - category
         - name
         - value
-      items:
-        type: any
     TV.API.Types.IntArray:
       type: array
       items:
@@ -14049,8 +14005,6 @@ components:
         - subject
     Admin_2.Methods.Informer.Add.Exec:
       type: array
-      items:
-        type: any
     Admin_2.Methods.Logs.Edit:
       type: object
       properties:
@@ -14103,8 +14057,6 @@ components:
     Admin_2.Methods.Ranks.Get.Exec:
       nullable: true
       type: array
-      items:
-        type: any
     Models.Analytics.Ranks:
       properties:
         ACTIVATIONS():
@@ -14188,8 +14140,6 @@ components:
         posts:
           title: Привелегии
           type: array
-          items:
-            type: any
       required:
         - id
         - email
@@ -14252,8 +14202,6 @@ components:
         posts:
           title: Привелегии
           type: array
-          items:
-            type: any
         group:
           title: Группа
           nullable: true
@@ -14333,8 +14281,6 @@ components:
           nullable: true
         staff_posts:
           type: array
-          items:
-            type: any
           nullable: true
         staff_post:
           nullable: true
@@ -14382,8 +14328,6 @@ components:
       title: Поиск HTML шаблонов
     Admin_2.Methods.Tpl.Get.Exec:
       type: array
-      items:
-        type: any
     Admin_2.Methods.Users.Edit:
       type: object
       properties:
@@ -14511,8 +14455,6 @@ components:
     Admin_2.Methods.Votes.Get.Exec:
       nullable: true
       type: array
-      items:
-        type: any
     Annotations_2.Methods.My.Get:
       type: object
       properties:
@@ -14539,8 +14481,6 @@ components:
     Annotations_2.Methods.My.Get.Exec:
       nullable: true
       type: array
-      items:
-        type: any
     App_2.Methods.Actions.Get:
       type: object
       properties:
@@ -14600,8 +14540,6 @@ components:
           type: string
         alternates:
           type: array
-          items:
-            type: any
       required:
         - title
         - description
@@ -14647,8 +14585,6 @@ components:
           type: string
         tags:
           type: array
-          items:
-            type: any
         count_views:
           type: integer
         count_unique_views:
@@ -14728,8 +14664,6 @@ components:
       properties:
         items:
           type: array
-          items:
-            type: any
       required:
         - items
     TV.Core.Sites.Site:
@@ -14772,8 +14706,6 @@ components:
                 twTokens:array
             }
           type: array
-          items:
-            type: any
       required:
         - host
         - config
@@ -14794,8 +14726,6 @@ components:
             - $ref: '#/components/schemas/Controller_2.Objects.Location'
         _GET:
           type: array
-          items:
-            type: any
         openGraph:
           allOf:
             - $ref: '#/components/schemas/Controller_2.Objects.OpenGraph'
@@ -14813,8 +14743,6 @@ components:
             - $ref: '#/components/schemas/Tpl.Core.LeftMenu'
         params:
           type: array
-          items:
-            type: any
         site:
           allOf:
             - $ref: '#/components/schemas/TV.Core.Sites.Site'
@@ -14843,12 +14771,8 @@ components:
           type: string
         jsonLDs:
           type: array
-          items:
-            type: any
         htmlAttributes:
           type: array
-          items:
-            type: any
         logo:
           type: string
         redirect:
@@ -14874,12 +14798,8 @@ components:
           type: string
         data:
           type: array
-          items:
-            type: any
         rightsLabels:
           type: array
-          items:
-            type: any
         isFullSize:
           type: boolean
         showFooter:
@@ -14997,8 +14917,6 @@ components:
           default:
             - data
           type: array
-          items:
-            type: any
         show_headers:
           title: Вернуть ли заголовки отчета
           type: boolean
@@ -15018,8 +14936,6 @@ components:
           title: Произвольные даты без использования диапазона
           nullable: true
           type: array
-          items:
-            type: any
         date1:
           title: Дата начала диапазона
           nullable: true
@@ -15073,8 +14989,6 @@ components:
     Audit_2.Methods.Indexing.Get.Exec:
       title: Список ссылок с данными по ним
       type: array
-      items:
-        type: any
     Audit_2.Types.Settings.WatcherType:
       type: string
       enum:
@@ -15265,8 +15179,6 @@ components:
       title: Настройки аудита
       nullable: true
       type: array
-      items:
-        type: any
     Audit_2.Types.Watcher.TypeRange:
       type: integer
       enum:
@@ -15302,8 +15214,6 @@ components:
           title: ID проверок в произвольном порядке
           nullable: true
           type: array
-          items:
-            type: any
         check_id1:
           title: ID проверки начала диапазона
           nullable: true
@@ -15329,8 +15239,6 @@ components:
             - http_codes
             - redirects
           type: array
-          items:
-            type: any
         show_headers:
           title: Добавить в результат заголовки отчета
           type: boolean
@@ -15367,8 +15275,6 @@ components:
       title: Генерируемый на основе urls, список результатов проверок радара
       nullable: true
       type: array
-      items:
-        type: any
     Bank_2.Methods.Bank.Get:
       type: object
       properties:
@@ -15466,8 +15372,6 @@ components:
         maxByName:
           title: Выдаваемые лимиты
           type: array
-          items:
-            type: any
         suffixName:
           title: Суффикс, характеризующий настройки тарифа
           type: string
@@ -15640,13 +15544,9 @@ components:
             Для нетарифицируемых лимитов значение всегда `null`
           description: '@type Array<Bank_2\Types\Subscriptions\Limit\Name, int>'
           type: array
-          items:
-            type: any
         limitTypeByName:
           title: Типы лимитов
           type: array
-          items:
-            type: any
       required:
         - paymentId
         - paymentSystem
@@ -15692,8 +15592,6 @@ components:
           type: number
         tariff:
           type: array
-          items:
-            type: any
         subscription:
           $ref: '#/components/schemas/Bank_2.Objects.Subscriptions.Subscription'
         subscription_name:
@@ -15704,8 +15602,6 @@ components:
         - balance_bonus
         - balance_tariff
         - tariff
-      items:
-        type: any
     Bank_2.Types.Requisites.Type:
       type: string
       enum:
@@ -15890,8 +15786,6 @@ components:
       nullable: true
       anyOf:
         - type: array
-          items:
-            type: any
         - type: integer
         - type: 'null'
     Broker_2.Methods.Ads.Get:
@@ -15925,8 +15819,6 @@ components:
       title: '@throws Exception'
       nullable: true
       type: array
-      items:
-        type: any
     Models.Broker.Ads:
       properties:
         id: {}
@@ -16152,8 +16044,6 @@ components:
     Broker_2.Methods.Campaigns.Get.Exec:
       title: '@throws Exception'
       type: array
-      items:
-        type: any
     Broker_2.Methods.Groups.Add:
       type: object
       properties:
@@ -16163,8 +16053,6 @@ components:
         groups_names:
           title: Имена групп
           type: array
-          items:
-            type: any
       required:
         - campaign_tv_id
         - groups_names
@@ -16175,8 +16063,6 @@ components:
       nullable: true
       anyOf:
         - type: array
-          items:
-            type: any
         - type: integer
         - type: 'null'
     Broker_2.Methods.Groups.Get:
@@ -16189,8 +16075,6 @@ components:
           title: Поиск групп по запросам
           nullable: true
           type: array
-          items:
-            type: any
         fields:
           $ref: '#/components/schemas/fields'
         orders:
@@ -16215,8 +16099,6 @@ components:
     Broker_2.Methods.Groups.Get.Exec:
       title: '@throws Exception'
       type: array
-      items:
-        type: any
     Models.Broker.Groups:
       properties:
         GEN_SEARCH_STRING():
@@ -16267,8 +16149,6 @@ components:
         keywords_data:
           title: Информация о запросах (id группы и id запросов)
           type: array
-          items:
-            type: any
       required:
         - campaign_tv_id
         - keywords_data
@@ -16279,8 +16159,6 @@ components:
       nullable: true
       anyOf:
         - type: array
-          items:
-            type: any
         - type: integer
         - type: 'null'
     Broker_2.Types.Keywords.Tactics2:
@@ -16443,8 +16321,6 @@ components:
     Broker_2.Methods.Keywords.Get.Exec:
       title: '@throws Exception'
       type: array
-      items:
-        type: any
     Broker_2.Methods.Log.Get:
       type: object
       properties:
@@ -16476,8 +16352,6 @@ components:
       title: '@throws Exception'
       nullable: true
       type: array
-      items:
-        type: any
     Models.Broker.Log:
       properties:
         COUNT(*):
@@ -16520,8 +16394,6 @@ components:
     Comments_2.Methods.ByAuthor.Get.Exec:
       nullable: true
       type: array
-      items:
-        type: any
     Comments_2.Methods.Like.Edit:
       type: object
       properties:
@@ -16806,20 +16678,14 @@ components:
           title: object(name => value) og - объект с данными Open Graph
           nullable: true
           type: array
-          items:
-            type: any
         c:
           title: Массив тегов
           nullable: true
           type: array
-          items:
-            type: any
         tags:
           title: Список тегов
           nullable: true
           type: array
-          items:
-            type: any
         noindex:
           title: Не индексировать страницу
           type: boolean
@@ -17034,20 +16900,14 @@ components:
           title: object(name => value) og - объект с данными Open Graph
           nullable: true
           type: array
-          items:
-            type: any
         c:
           title: Массив тегов
           nullable: true
           type: array
-          items:
-            type: any
         tags:
           title: Список тегов
           nullable: true
           type: array
-          items:
-            type: any
         noindex:
           title: Не индексировать страницу
           type: boolean
@@ -17164,20 +17024,14 @@ components:
           title: object(name => value) og - объект с данными Open Graph
           nullable: true
           type: array
-          items:
-            type: any
         c:
           title: Массив тегов
           nullable: true
           type: array
-          items:
-            type: any
         tags:
           title: Список тегов
           nullable: true
           type: array
-          items:
-            type: any
         noindex:
           title: Не индексировать страницу
           type: boolean
@@ -17247,8 +17101,6 @@ components:
       title: '@throws Exception'
       nullable: true
       type: array
-      items:
-        type: any
     Content_2.Methods.Redirects.AbstractRegular:
       type: object
       properties:
@@ -17422,8 +17274,6 @@ components:
     Content_2.Methods.Redirects.Get.Exec:
       nullable: true
       type: array
-      items:
-        type: any
     Models.ContentsRedirects:
       properties:
         PATH_MASK():
@@ -17519,8 +17369,6 @@ components:
     Content_2.Methods.Search.Get.Exec:
       title: '@throws Exception'
       type: array
-      items:
-        type: any
     Content_2.Methods.Sitemap.Get:
       type: object
       properties:
@@ -17568,8 +17416,6 @@ components:
     Content_2.Methods.Tags.Get.Exec:
       nullable: true
       type: array
-      items:
-        type: any
     Cron_2.Types.Day:
       type: string
       enum:
@@ -17743,8 +17589,6 @@ components:
       title: Список задач cron
       nullable: true
       type: array
-      items:
-        type: any
     Cron_2.Methods.Get:
       type: object
       properties:
@@ -17772,8 +17616,6 @@ components:
       title: Список имен сервисов
       nullable: true
       type: array
-      items:
-        type: any
     TV.API.Types.BoolArray:
       type: array
       items:
@@ -17827,8 +17669,6 @@ components:
       title: Ассоциативный массив с результирующими переданными параетрами, и результатоми implodeQuotes() и genSet()
       description: '@type array<string, array<string, mixed>>'
       type: array
-      items:
-        type: any
     Example_2.Methods.Bag.Get:
       type: object
       properties:
@@ -17884,8 +17724,6 @@ components:
     Example_2.Methods.Enum.Get.Exec:
       title: Ассоциативный массив с результирующими переданными параетрами и результатом genSet()
       type: array
-      items:
-        type: any
     Example_2.Objects.Address:
       type: object
       properties:
@@ -17926,8 +17764,6 @@ components:
     Example_2.Methods.Object.Get.Exec:
       title: Ассоциативный массив с результирующими переданными параетрами и результатом genSet()
       type: array
-      items:
-        type: any
     Example_2.Methods.Projects.Get:
       type: object
       properties:
@@ -17963,8 +17799,6 @@ components:
     Example_2.Methods.Projects.Get.Exec:
       nullable: true
       type: array
-      items:
-        type: any
     Models.Projects:
       properties:
         COUNT(*):
@@ -18115,13 +17949,9 @@ components:
           nullable: true
         indexing_searchers_keys:
           type: array
-          items:
-            type: any
           nullable: true
         watcher_types:
           type: array
-          items:
-            type: any
           nullable: true
     Keywords_2.Types.Collect.SearcherKey:
       type: integer
@@ -18206,8 +18036,6 @@ components:
         keywords:
           title: Список исходных запросов
           type: array
-          items:
-            type: any
         qualifiers:
           title: Объекты определителей настроек ПС и регионов
           allOf:
@@ -18215,8 +18043,6 @@ components:
         keywords_minus:
           title: Минус фразы (только для searcher_key = 0 и searcher_key = 1)
           type: array
-          items:
-            type: any
         to_group_id:
           title: Id группы для размещения подобранных запросов
           nullable: true
@@ -18519,8 +18345,6 @@ components:
     Payments_2.Methods.Companies.Get.Exec:
       nullable: true
       type: array
-      items:
-        type: any
     Payments_2.Methods.ContractSign.Edit:
       type: object
       properties:
@@ -18602,8 +18426,6 @@ components:
     Payments_2.Methods.ValidateMerchantCardAP.Get.Exec:
       nullable: true
       type: array
-      items:
-        type: any
     Positions_2.Types.SearcherKey:
       type: integer
       enum:
@@ -18852,8 +18674,6 @@ components:
     Projects_2.Methods.Analytics.Get.Exec:
       nullable: true
       type: array
-      items:
-        type: any
     TV.API.Types.UrlShort:
       type: string
       title: |-
@@ -18890,8 +18710,6 @@ components:
           title: Список имен конкурентов (если указан, должен быть такой же длины как urls)
           nullable: true
           type: array
-          items:
-            type: any
       required:
         - project_id
         - urls
@@ -18901,8 +18719,6 @@ components:
         Ограничения: не более Projects_2\Competitors::MAX_COMPETITORS_PER_PROJECT конкурентов в одном проекте
     Projects_2.Methods.Competitors.Add.Exec:
       type: array
-      items:
-        type: any
     Projects_2.Methods.Competitors.Del:
       type: object
       properties:
@@ -18938,8 +18754,6 @@ components:
             - site
             - 'on'
           type: array
-          items:
-            type: any
         project_id:
           title: ID проекта
           type: integer
@@ -18957,8 +18771,6 @@ components:
     Projects_2.Methods.Competitors.Get.Exec:
       nullable: true
       type: array
-      items:
-        type: any
     Projects_2.Methods.Folders.Add:
       type: object
       properties:
@@ -19036,8 +18848,6 @@ components:
           default:
             - 1
           type: array
-          items:
-            type: any
         folder_id:
           title: Id папки, к которой будет привязан проект
           nullable: true
@@ -19098,8 +18908,6 @@ components:
           nullable: true
           deprecated: true
           type: array
-          items:
-            type: any
         is_task:
           title: Является ли проект задачей
           nullable: true
@@ -19127,8 +18935,6 @@ components:
     Projects_2.Methods.Projects.Get.Exec:
       nullable: true
       type: array
-      items:
-        type: any
     Projects_2.Methods.Rights.Del:
       type: object
       properties:
@@ -19143,8 +18949,6 @@ components:
             Вместо project_ids можно укзывать project_id
           nullable: true
           type: array
-          items:
-            type: any
         project_id:
           title: |-
             ID проекта
@@ -19165,8 +18969,6 @@ components:
           title: Вместо project_ids можно укзывать project_id
           nullable: true
           type: array
-          items:
-            type: any
         email:
           title: Email пользователя (если пользователь не зарегистрирован будет выслано приглашение)
           allOf:
@@ -19208,8 +19010,6 @@ components:
       title: Получение информации о настройке прав и смене владельца
     Projects_2.Methods.Rights.Get.Exec:
       type: array
-      items:
-        type: any
     Projects_2.Methods.Status.Get:
       type: object
       properties:
@@ -19386,8 +19186,6 @@ components:
             Разрешено указывать только Яндекс и Google (0, 1)
           nullable: true
           type: array
-          items:
-            type: any
         volumes_types:
           title: Имеет смысл только для Яндекс
           nullable: true
@@ -19466,8 +19264,6 @@ components:
       description: '@see Schedule_2\Mods\Settings'
     Schedule_2.Methods.Settings.Get.Exec:
       type: array
-      items:
-        type: any
     Sms_2.Methods.CheckPIN.Get:
       type: object
       properties:
@@ -19508,8 +19304,6 @@ components:
     Templates_2.Methods.AvailableFieldsData.Get.Exec:
       title: '@throws Exception'
       type: array
-      items:
-        type: any
     Templates_2.Methods.Fields.Del:
       type: object
       properties:
@@ -19545,8 +19339,6 @@ components:
         properties:
           title: Свойства шаблона
           type: array
-          items:
-            type: any
         fields:
           $ref: '#/components/schemas/fields'
       required:
@@ -19575,8 +19367,6 @@ components:
     Templates_2.Methods.Fields.Get.Exec:
       title: '@throws Exception'
       type: array
-      items:
-        type: any
     Templates_2.Methods.FieldsProperties.Get:
       type: object
       properties:
@@ -19633,8 +19423,6 @@ components:
         Процесс создания поста не завершен
     Tickets_2.Methods.Files.Get.Exec:
       type: array
-      items:
-        type: any
     Tickets_2.Methods.Messages.Add:
       type: object
       properties:
@@ -19717,8 +19505,6 @@ components:
           title: Данные среды пользователя
           nullable: true
           type: array
-          items:
-            type: any
         resource:
           title: |-
             URL страницы, с которой отправлен тикет
@@ -19788,8 +19574,6 @@ components:
         fields_messages:
           nullable: true
           type: array
-          items:
-            type: any
         show_messages_users:
           title: Добавить в результат данные пользователей, написавших сообщения в тикеты
           type: boolean
@@ -19819,8 +19603,6 @@ components:
     Tickets_2.Methods.Tickets.Get.Exec:
       nullable: true
       type: array
-      items:
-        type: any
     Models.Tickets:
       properties:
         REQUISITES():
@@ -19992,8 +19774,6 @@ components:
 
             set(Audit_2\Types\Type => regexp)
           type: array
-          items:
-            type: any
         sitemap:
           title: |-
             Флаг активности в карте сайта
@@ -20055,8 +19835,6 @@ components:
         - '''countDuplicated'''
         - '''countAdded'''
         - '''countChanged'''
-      items:
-        type: any
     Urls_2.Types.Tags.Action:
       type: string
       enum:
@@ -20244,8 +20022,6 @@ components:
     Admin_2.Methods.Accounting.Group.Get.Exec:
       nullable: true
       type: array
-      items:
-        type: any
     Models.EmptyModel:
       properties: {}
     Admin_2.Methods.Accounting.Invoices.Add:
@@ -20414,16 +20190,12 @@ components:
         info:
           title: Ассоциативный массив с информацией, связанной с выполняемым дейсвтием
           type: array
-          items:
-            type: any
         executionTime:
           title: Время выполнения дейсвтия
           type: number
         memory:
           title: Информация о затраченных ресурсавах при выполнении дейсвтия
           type: array
-          items:
-            type: any
       required:
         - isTest
         - info
@@ -20568,8 +20340,6 @@ components:
     Admin_2.Methods.Affiliate.ReferralProgramStats.Get.Exec:
       nullable: true
       type: array
-      items:
-        type: any
     Admin_2.Methods.Affiliate.ReferralsByLevel.Get:
       type: object
       properties:
@@ -20586,8 +20356,6 @@ components:
       title: Получение сводки числа рефералов по своему уровню
     Admin_2.Methods.Affiliate.ReferralsByLevel.Get.Exec:
       type: array
-      items:
-        type: any
     Admin_2.Methods.Affiliate.Referrals.Get:
       type: object
       properties:
@@ -20604,8 +20372,6 @@ components:
       title: Получение сводки по новым рефералам
     Admin_2.Methods.Affiliate.Referrals.Get.Exec:
       type: array
-      items:
-        type: any
     Admin_2.Methods.Affiliate.ReferrersByReferrals.Get:
       type: object
       properties:
@@ -20622,8 +20388,6 @@ components:
       title: Получение сводки числа партнеров по числу рефералов
     Admin_2.Methods.Affiliate.ReferrersByReferrals.Get.Exec:
       type: array
-      items:
-        type: any
     Admin_2.Methods.Affiliate.Referrers.Get:
       type: object
       properties:
@@ -20644,8 +20408,6 @@ components:
       title: Получение сводки по новым партнерам
     Admin_2.Methods.Affiliate.Referrers.Get.Exec:
       type: array
-      items:
-        type: any
     Admin_2.Methods.Affiliate.ReferrersWithReferrals.Get:
       type: object
       properties:
@@ -20672,8 +20434,6 @@ components:
     Admin_2.Methods.Affiliate.ReferrersWithReferrals.Get.Exec:
       nullable: true
       type: array
-      items:
-        type: any
     Admin_2.Methods.Analytics.Activity.Get:
       type: object
       properties:
@@ -20703,8 +20463,6 @@ components:
     Admin_2.Methods.Analytics.Activity.Get.Exec:
       nullable: true
       type: array
-      items:
-        type: any
     Admin_2.Methods.Analytics.CountOnlineUsers.Get:
       type: object
       properties: {}
@@ -20712,8 +20470,6 @@ components:
       title: Получение числа активных пользователей
     Admin_2.Methods.Analytics.CountOnlineUsers.Get.Exec:
       type: array
-      items:
-        type: any
     Admin_2.Methods.Analytics.Events.Get:
       type: object
       properties:
@@ -20796,8 +20552,6 @@ components:
     Admin_2.Methods.Analytics.Payments.Get.Exec:
       nullable: true
       type: array
-      items:
-        type: any
     Admin_2.Methods.Analytics.Get:
       type: object
       properties:
@@ -20830,8 +20584,6 @@ components:
         - field_name
     Admin_2.Methods.Analytics.Get.Exec:
       type: array
-      items:
-        type: any
     Admin_2.Methods.Analytics.Statistics.Get:
       type: object
       properties: {}
@@ -20840,8 +20592,6 @@ components:
     Admin_2.Methods.Analytics.Statistics.Get.Exec:
       nullable: true
       type: array
-      items:
-        type: any
     Admin_2.Methods.Analytics.Tickets.AbstractTicketsStats:
       type: object
       properties:
@@ -20894,8 +20644,6 @@ components:
       title: Получение тикетов
     Admin_2.Methods.Analytics.Tickets.Get.Exec:
       type: array
-      items:
-        type: any
     Admin_2.Methods.I18n.Categories.Get:
       type: object
       properties: {}
@@ -20903,8 +20651,6 @@ components:
       title: Получение категорий словаря
     Admin_2.Methods.I18n.Categories.Get.Exec:
       type: array
-      items:
-        type: any
     Admin_2.Methods.Logs.System.Get:
       type: object
       properties:
@@ -20927,8 +20673,6 @@ components:
     Admin_2.Methods.Logs.System.Get.Exec:
       nullable: true
       type: array
-      items:
-        type: any
     Admin_2.Methods.Ranks.Activations.Get:
       type: object
       properties:
@@ -20988,8 +20732,6 @@ components:
       title: Список пользователей
       nullable: true
       type: array
-      items:
-        type: any
     Admin_2.Methods.Staff.Access.Edit:
       type: object
       properties:
@@ -21048,16 +20790,12 @@ components:
       title: Получение из бд данные сотрудников указанного поста
     Admin_2.Methods.Staff.ByPost.Get.Exec:
       type: array
-      items:
-        type: any
     Admin_2.Methods.Staff.ContractPrint.Get:
       type: object
       properties:
         props:
           title: Параметры, передаваемые в шаблон
           type: array
-          items:
-            type: any
       required:
         - props
       title: Печать договора
@@ -21068,8 +20806,6 @@ components:
       title: Получение возможных posts
     Admin_2.Methods.Staff.Posts.Get.Exec:
       type: array
-      items:
-        type: any
     Admin_2.Methods.Staff.Vacation.Add:
       type: object
       properties:
@@ -21091,8 +20827,6 @@ components:
             - vacation
             - day_off
           type: array
-          items:
-            type: any
       required:
         - user_id
         - date1
@@ -21138,8 +20872,6 @@ components:
       title: Получение схему HTML шаблона
     Admin_2.Methods.Tpl.Schema.Get.Exec:
       type: array
-      items:
-        type: any
     Admin_2.Methods.Users.Promocodes.Add:
       type: object
       properties:
@@ -21153,8 +20885,6 @@ components:
           title: Список многоразовых промокодов
           nullable: true
           type: array
-          items:
-            type: any
       required:
         - rank_id
       title: Добавление промокоды к достижению
@@ -21207,8 +20937,6 @@ components:
     Admin_2.Methods.Users.Promocodes.Get.Exec:
       nullable: true
       type: array
-      items:
-        type: any
     Admin_2.Types.Users.Ranks.Category:
       type: string
       enum:
@@ -21444,8 +21172,6 @@ components:
     Admin_2.Methods.Users.Ranks.Get.Exec:
       nullable: true
       type: array
-      items:
-        type: any
     check_id:
       title: ID проверки аудита
       type: integer
@@ -21465,8 +21191,6 @@ components:
       title: Сводка анализа сайта
       nullable: true
       type: array
-      items:
-        type: any
     Audit_2.Methods.Audit.Checks.Get:
       type: object
       properties:
@@ -21764,16 +21488,12 @@ components:
       title: Список проверенных css
       nullable: true
       type: array
-      items:
-        type: any
     Models.Audit.Css:
       properties:
         COUNT(*):
           nullable: true
         HTTP_CODES_HUNDREDS():
           type: array
-          items:
-            type: any
           nullable: true
         check_id:
           nullable: true
@@ -21789,15 +21509,11 @@ components:
           nullable: true
         http_codes:
           type: array
-          items:
-            type: any
           nullable: true
         last_http_code:
           nullable: true
         redirects:
           type: array
-          items:
-            type: any
           nullable: true
         locations:
           nullable: true
@@ -21885,8 +21601,6 @@ components:
 
             Только для $target_type = pages
           type: array
-          items:
-            type: any
         output:
           title: Формат экспортируемого файла
           allOf:
@@ -21940,16 +21654,12 @@ components:
       title: Список проверенных изображений
       nullable: true
       type: array
-      items:
-        type: any
     Models.Audit.Images:
       properties:
         COUNT(*):
           nullable: true
         HTTP_CODES_HUNDREDS():
           type: array
-          items:
-            type: any
           nullable: true
         check_id:
           nullable: true
@@ -21965,15 +21675,11 @@ components:
           nullable: true
         http_codes:
           type: array
-          items:
-            type: any
           nullable: true
         last_http_code:
           nullable: true
         redirects:
           type: array
-          items:
-            type: any
           nullable: true
         locations:
           nullable: true
@@ -22070,16 +21776,12 @@ components:
       title: Список проверенных js
       nullable: true
       type: array
-      items:
-        type: any
     Models.Audit.Js:
       properties:
         COUNT(*):
           nullable: true
         HTTP_CODES_HUNDREDS():
           type: array
-          items:
-            type: any
           nullable: true
         check_id:
           nullable: true
@@ -22095,15 +21797,11 @@ components:
           nullable: true
         http_codes:
           type: array
-          items:
-            type: any
           nullable: true
         last_http_code:
           nullable: true
         redirects:
           type: array
-          items:
-            type: any
           nullable: true
         ttfb:
           nullable: true
@@ -22188,8 +21886,6 @@ components:
       title: Список проверенных ссылок
       nullable: true
       type: array
-      items:
-        type: any
     Models.Audit.Links:
       properties:
         COUNT(*):
@@ -22198,8 +21894,6 @@ components:
           nullable: true
         HTTP_CODES_HUNDREDS():
           type: array
-          items:
-            type: any
           nullable: true
         check_id:
           nullable: true
@@ -22220,8 +21914,6 @@ components:
           nullable: true
         http_codes:
           type: array
-          items:
-            type: any
           nullable: true
         last_http_code:
           nullable: true
@@ -22231,8 +21923,6 @@ components:
           nullable: true
         redirects:
           type: array
-          items:
-            type: any
           nullable: true
         nofollow:
           nullable: true
@@ -22325,8 +22015,6 @@ components:
     Audit_2.Methods.Audit.Log.Get.Exec:
       title: Данные проверенных ресурсов
       type: array
-      items:
-        type: any
     Audit_2.Methods.Audit.Pages.Get:
       type: object
       properties:
@@ -22338,8 +22026,6 @@ components:
         filters_resources:
           title: Фильтр по ресурсам страницы, API fitlers для объекта, тип которого указан в filters_extra_target_type
           type: array
-          items:
-            type: any
         fields:
           $ref: '#/components/schemas/fields'
         orders:
@@ -22370,8 +22056,6 @@ components:
       title: Список страниц
       nullable: true
       type: array
-      items:
-        type: any
     Models.Audit.Pages:
       properties:
         dummy_opener_summary_page:
@@ -22380,8 +22064,6 @@ components:
           nullable: true
         HTTP_CODES_HUNDREDS():
           type: array
-          items:
-            type: any
           nullable: true
         check_id:
           nullable: true
@@ -22393,8 +22075,6 @@ components:
           nullable: true
         http_codes:
           type: array
-          items:
-            type: any
           nullable: true
         last_http_code:
           nullable: true
@@ -22402,8 +22082,6 @@ components:
           nullable: true
         redirects:
           type: array
-          items:
-            type: any
           nullable: true
         meta_robots_none:
           nullable: true
@@ -22613,8 +22291,6 @@ components:
         filter_check_type:
           title: Фильтр по состоянию сигнала (success, warning, error)
           type: array
-          items:
-            type: any
         filter_check_state:
           nullable: true
           allOf:
@@ -22655,8 +22331,6 @@ components:
          - `$res['all']['all']['count_checks_success']` - количество пройденных проверок во всех категориях
       nullable: true
       type: array
-      items:
-        type: any
     Audit_2.Methods.Audit.SummaryPage.Get:
       type: object
       properties:
@@ -22694,8 +22368,6 @@ components:
       title: Сводка о выполненном аудите по одной странице
       nullable: true
       type: array
-      items:
-        type: any
     Audit_2.Methods.Indexing.Export.Get:
       type: object
       properties:
@@ -22718,14 +22390,10 @@ components:
         properties:
           title: Настройки экспорта
           type: array
-          items:
-            type: any
         dates:
           title: Произвольные даты без использования диапазона
           nullable: true
           type: array
-          items:
-            type: any
         date1:
           title: Дата начала диапазона
           nullable: true
@@ -22773,8 +22441,6 @@ components:
           title: Произвольные даты без использования диапазона
           nullable: true
           type: array
-          items:
-            type: any
         date1:
           title: Дата начала диапазона
           nullable: true
@@ -22797,32 +22463,22 @@ components:
           title: Ппоисковые ключи
           nullable: true
           type: array
-          items:
-            type: any
         tags:
           title: Теги
           nullable: true
           type: array
-          items:
-            type: any
         dynamic:
           title: Динамический
           nullable: true
           type: array
-          items:
-            type: any
         data_dynamic:
           title: Динаамические данные
           nullable: true
           type: array
-          items:
-            type: any
         data_sort:
           title: Сортировка данных
           nullable: true
           type: array
-          items:
-            type: any
         project_id:
           $ref: '#/components/schemas/project_id'
       required:
@@ -22842,8 +22498,6 @@ components:
         dates:
           title: Произвольные даты без диапазона
           type: array
-          items:
-            type: any
         searcher_key:
           nullable: true
           allOf:
@@ -22878,8 +22532,6 @@ components:
       title: Сводка индексации
       nullable: true
       type: array
-      items:
-        type: any
     Audit_2.Methods.Watcher.ByURL.Get:
       type: object
       properties:
@@ -22895,8 +22547,6 @@ components:
             - http_codes
             - redirects
           type: array
-          items:
-            type: any
         show_diff:
           allOf:
             - $ref: '#/components/schemas/Audit_2.Types.Watcher.ShowDiff'
@@ -22938,8 +22588,6 @@ components:
       title: Отчет по одному URL
       nullable: true
       type: array
-      items:
-        type: any
     Models.Watcher.Results:
       properties:
         project_id:
@@ -22950,8 +22598,6 @@ components:
           nullable: true
         http_codes:
           type: array
-          items:
-            type: any
           nullable: true
         http_codes_changed:
           nullable: true
@@ -22959,8 +22605,6 @@ components:
           nullable: true
         redirects:
           type: array
-          items:
-            type: any
           nullable: true
         redirects_changed:
           nullable: true
@@ -23002,8 +22646,6 @@ components:
       title: Список проверок радара
       nullable: true
       type: array
-      items:
-        type: any
     Audit_2.Methods.Watcher.Summary.Get:
       type: object
       properties:
@@ -23011,13 +22653,9 @@ components:
           title: Тип проверки
           nullable: true
           type: array
-          items:
-            type: any
         checks_ids:
           title: ID проверок
           type: array
-          items:
-            type: any
         show_counts_changes:
           title: Отобразить количество изменений по типам
           type: boolean
@@ -23038,8 +22676,6 @@ components:
       title: Сводка с количеством изменений по каждому типу проверки
       nullable: true
       type: array
-      items:
-        type: any
     Bank_2.Methods.Diadoc.SendContract.Get:
       type: object
       properties:
@@ -23139,8 +22775,6 @@ components:
       title: Получение сводки проведенных операций
     Bank_2.Methods.History.Summary.Get.Exec:
       type: array
-      items:
-        type: any
     Bank_2.Methods.Referrals.ToBonus.Edit:
       type: object
       properties:
@@ -23268,8 +22902,6 @@ components:
         ads_data:
           title: Информация об объявлениях (id группы, id объявлений и статусы объявлений)
           type: array
-          items:
-            type: any
       required:
         - campaign_tv_id
         - ads_data
@@ -23280,8 +22912,6 @@ components:
       nullable: true
       anyOf:
         - type: array
-          items:
-            type: any
         - type: integer
         - type: 'null'
     Broker_2.Methods.Ads.ToModerate.Edit:
@@ -23299,8 +22929,6 @@ components:
       nullable: true
       anyOf:
         - type: array
-          items:
-            type: any
         - type: integer
     Broker_2.Methods.Campaigns.UpdateTargeting.Edit:
       type: object
@@ -23345,8 +22973,6 @@ components:
       title: Получение групп рекламной кампании для редактора
     Broker_2.Methods.Groups.Editor.Get.Exec:
       type: array
-      items:
-        type: any
     Broker_2.Methods.Keywords.Status.Edit:
       type: object
       properties:
@@ -23356,8 +22982,6 @@ components:
         keywords_data:
           title: Информация о запросах (id группы и id запросов)
           type: array
-          items:
-            type: any
       required:
         - campaign_tv_id
         - keywords_data
@@ -23368,8 +22992,6 @@ components:
       nullable: true
       anyOf:
         - type: array
-          items:
-            type: any
         - type: integer
         - type: 'null'
     Broker_2.Methods.Log.Export.Get:
@@ -23500,8 +23122,6 @@ components:
     Content_2.Methods.Apometr.Calendar.Get.Exec:
       nullable: true
       type: array
-      items:
-        type: any
     Content_2.Methods.Apometr.CHHistory.Get:
       type: object
       properties:
@@ -23540,8 +23160,6 @@ components:
       title: Получение истории urls, найденных в выдаче, за конкретную проверку
     Content_2.Methods.Apometr.CHHistory.Get.Exec:
       type: array
-      items:
-        type: any
     Models.Apometr.History:
       properties:
         time:
@@ -23593,8 +23211,6 @@ components:
     Content_2.Methods.Apometr.History.Get.Exec:
       nullable: true
       type: array
-      items:
-        type: any
     Content_2.Methods.Apometr.Keywords.Get:
       type: object
       properties:
@@ -23673,8 +23289,6 @@ components:
     Content_2.Methods.Journal.Articles.Get.Exec:
       title: '@throws Exception'
       type: array
-      items:
-        type: any
     Content_2.Methods.Journal.BookmarksAuthors.Get:
       type: object
       properties:
@@ -23700,8 +23314,6 @@ components:
       title: Получение закладок авторов
     Content_2.Methods.Journal.BookmarksAuthors.Get.Exec:
       type: array
-      items:
-        type: any
     Content_2.Methods.Journal.Bookmarks.Get:
       type: object
       properties:
@@ -23728,8 +23340,6 @@ components:
     Content_2.Methods.Journal.Bookmarks.Get.Exec:
       title: '@throws Exception'
       type: array
-      items:
-        type: any
     Content_2.Methods.Journal.Course.Get:
       type: object
       properties:
@@ -23764,8 +23374,6 @@ components:
       title: '@throws Exception'
       nullable: true
       type: array
-      items:
-        type: any
     Content_2.Methods.Journal.Rubrics.Get:
       type: object
       properties:
@@ -23793,8 +23401,6 @@ components:
       title: '@throws Exception'
       nullable: true
       type: array
-      items:
-        type: any
     Content_2.Methods.Journal.Subscribe.Edit:
       type: object
       properties:
@@ -23822,8 +23428,6 @@ components:
         urls:
           title: Адреса документов в нужном порядке
           type: array
-          items:
-            type: any
       required:
         - subdomain
         - parent_url
@@ -23839,8 +23443,6 @@ components:
       title: Получение меню справки
     Content_2.Methods.Support.Menu.Get.Exec:
       type: array
-      items:
-        type: any
     Keywords_2.Methods.Collect.Go.Edit:
       type: object
       properties:
@@ -23850,8 +23452,6 @@ components:
         keywords:
           title: Список исходных запросов
           type: array
-          items:
-            type: any
         qualifiers:
           title: Объекты определителей настроек ПС и регионов
           allOf:
@@ -23859,8 +23459,6 @@ components:
         keywords_minus:
           title: Минус фразы (только для searcher_key = 0 и searcher_key = 1)
           type: array
-          items:
-            type: any
         to_group_id:
           title: Id группы для размещения подобранных запросов
           nullable: true
@@ -23892,8 +23490,6 @@ components:
       title: Массив созданных групп
       nullable: true
       type: array
-      items:
-        type: any
     Keywords_2.Methods.Collect.Price.Get:
       type: object
       properties:
@@ -23907,8 +23503,6 @@ components:
         keywords:
           title: Список исходных запросов
           type: array
-          items:
-            type: any
         qualifiers:
           title: Объекты определителей настроек ПС и регионов
           allOf:
@@ -23916,8 +23510,6 @@ components:
         keywords_minus:
           title: Минус фразы (только для searcher_key = 0 и searcher_key = 1)
           type: array
-          items:
-            type: any
         to_group_id:
           title: Id группы для размещения подобранных запросов
           nullable: true
@@ -24040,8 +23632,6 @@ components:
               - comment
       required:
         - pricesByUsers
-      items:
-        type: any
     Keywords_2.Methods.Keywords.Import.Add:
       type: object
       properties:
@@ -24108,8 +23698,6 @@ components:
     Keywords_2.Methods.Keywords.Import.Add.Exec:
       nullable: true
       type: array
-      items:
-        type: any
     Keywords_2.Types.Volumes.NoRecheck:
       type: integer
       enum:
@@ -24253,7 +23841,8 @@ components:
       required:
         - project_id
       title: Информация о стоимости запуска проверки позиций по проектам
-    Keywords_2.Methods.Volumes.Price.Get.Exec: {}
+    Keywords_2.Methods.Volumes.Price.Get.Exec:
+      type: object
     Landings_2.Methods.Hr.Feedback.Add:
       type: object
       properties:
@@ -24479,7 +24068,8 @@ components:
       required:
         - filters
       title: Информация о стоимости запуска проверки позиций по проектам
-    Positions_2.Methods.Checker.Price.Get.Exec: {}
+    Positions_2.Methods.Checker.Price.Get.Exec:
+      type: object
     Positions_2.Methods.Searchers.Enabled.Edit:
       type: object
       properties:
@@ -24654,8 +24244,6 @@ components:
         data:
           title: Данные графика
           type: array
-          items:
-            type: any
         compare_axe:
           title: Сравнение метрики
           nullable: true
@@ -24668,8 +24256,6 @@ components:
     Projects_2.Methods.Analytics.Graph.Get.Exec:
       nullable: true
       type: array
-      items:
-        type: any
     Projects_2.Methods.Competitors.Move.Edit:
       type: object
       properties:
@@ -24808,8 +24394,6 @@ components:
         Доступ по API закрыт
     Projects_2.Methods.Master.HintsCompetitors.Get.Exec:
       type: array
-      items:
-        type: any
     Projects_2.Methods.Master.HintsKeywords.Get:
       type: object
       properties:
@@ -24823,8 +24407,6 @@ components:
         Доступ по API закрыт
     Projects_2.Methods.Master.HintsKeywords.Get.Exec:
       type: array
-      items:
-        type: any
     Projects_2.Methods.Projects.Copy.Add:
       type: object
       properties:
@@ -24925,8 +24507,6 @@ components:
       properties:
         orders:
           type: array
-          items:
-            type: any
         filters:
           $ref: '#/components/schemas/filters'
         id:
@@ -24947,8 +24527,6 @@ components:
           default:
             - 1
           type: array
-          items:
-            type: any
         id:
           title: ID проекта
           type: integer
@@ -25056,8 +24634,6 @@ components:
 
             - array keywords - массив ключевых запросов, допускается формат CSV
           type: array
-          items:
-            type: any
         remove_special_chars:
           title: 'Вырезать ли плюсы, точки, запятые, апострофы, кавычки (по умолчанию: 0 - не вырезать)'
           nullable: true
@@ -25091,8 +24667,6 @@ components:
     Redmine_2.Methods.Users.Groups.Get.Exec:
       title: '@throws Exception'
       type: array
-      items:
-        type: any
     Reports_2.Methods.Positions.SendTest.Edit:
       type: object
       properties:
@@ -25114,8 +24688,6 @@ components:
       title: Получить список email, используемых в любых расписаниях, к которым есть доступ у аккаунта
     Schedule_2.Methods.Settings.EmailsHints.Get.Exec:
       type: array
-      items:
-        type: any
     Tickets_2.Methods.Admin.Message.Del:
       type: object
       properties:
@@ -25204,8 +24776,6 @@ components:
     Tickets_2.Methods.Admin.Templates.Get.Exec:
       nullable: true
       type: array
-      items:
-        type: any
     Tickets_2.Methods.Admin.Ticket.Edit:
       type: object
       properties:
@@ -25257,8 +24827,6 @@ components:
       title: Получение инфомрации о пользователе
     Tickets_2.Methods.Admin.User.Get.Exec:
       type: array
-      items:
-        type: any
     Tickets_2.Methods.Admin.UserId.Edit:
       type: object
       properties:
@@ -25301,8 +24869,6 @@ components:
         id последнего непрочитанного тикета, число непрочитанных тикетов
     Tickets_2.Methods.Tickets.Info.Get.Exec:
       type: array
-      items:
-        type: any
     Tickets_2.Methods.Tickets.SetReaded.Edit:
       type: object
       properties:
@@ -25747,8 +25313,6 @@ components:
             - areaName_ru: имя родительского региона, обычно это область
           description: '@type array<array{lr: int, criteriaId: int, coords: string, name_ru: string, areaName_ru: string}>'
           type: array
-          items:
-            type: any
         test:
           title: Являеется ли запуск - тестом
           type: boolean
@@ -25966,8 +25530,6 @@ components:
           title: Фильтр по объектам групп, см. Admin_2\Accounting\Group
           nullable: true
           type: array
-          items:
-            type: any
       required:
         - period
         - currency
@@ -25975,8 +25537,6 @@ components:
       title: Получение сводки по группам
     Admin_2.Methods.Analytics.Accounting.SummaryForChart.Get.Exec:
       type: array
-      items:
-        type: any
     Admin_2.Methods.Analytics.Activity.ChartByPeriod.Get:
       type: object
       properties:
@@ -25998,8 +25558,6 @@ components:
     Admin_2.Methods.Analytics.Activity.ChartByPeriod.Get.Exec:
       nullable: true
       type: array
-      items:
-        type: any
     Admin_2.Methods.Analytics.Competitors.SummaryForOrdersChart.Get:
       type: object
       properties:
@@ -26028,8 +25586,6 @@ components:
     Admin_2.Methods.Analytics.Competitors.SummaryForOrdersChart.Get.Exec:
       nullable: true
       type: array
-      items:
-        type: any
     Admin_2.Methods.Analytics.Payments.Systems.Get:
       type: object
       properties:
@@ -26050,8 +25606,6 @@ components:
     Admin_2.Methods.Analytics.Payments.Systems.Get.Exec:
       nullable: true
       type: array
-      items:
-        type: any
     Admin_2.Methods.Analytics.Payments.Tariff.Get:
       type: object
       properties:
@@ -26072,8 +25626,6 @@ components:
     Admin_2.Methods.Analytics.Payments.Tariff.Get.Exec:
       nullable: true
       type: array
-      items:
-        type: any
     Admin_2.Methods.Analytics.Positions.ChartByDayByHourAuto.Get:
       type: object
       properties: {}
@@ -26126,8 +25678,6 @@ components:
       title: Получение статистики тикетов по миграциям
     Admin_2.Methods.Analytics.Tickets.ChartByMigrations.Get.Exec:
       type: array
-      items:
-        type: any
     Admin_2.Methods.Analytics.Tickets.ChartByNew.Get:
       type: object
       properties:
@@ -26148,8 +25698,6 @@ components:
       title: Получение статистики по кол-ву пользователей, открывших первый тикет
     Admin_2.Methods.Analytics.Tickets.ChartByNew.Get.Exec:
       type: array
-      items:
-        type: any
     Admin_2.Methods.Analytics.Tickets.ChartByRates.Get:
       type: object
       properties:
@@ -26170,8 +25718,6 @@ components:
       title: Получение статистики тикетов по оценкам
     Admin_2.Methods.Analytics.Tickets.ChartByRates.Get.Exec:
       type: array
-      items:
-        type: any
     Admin_2.Methods.Analytics.Tickets.ChartByTags.Get:
       type: object
       properties:
@@ -26192,8 +25738,6 @@ components:
       title: Получение статистику тикетов по тегам
     Admin_2.Methods.Analytics.Tickets.ChartByTags.Get.Exec:
       type: array
-      items:
-        type: any
     Admin_2.Methods.Analytics.Tickets.ChartByWaitTime.Get:
       type: object
       properties:
@@ -26214,8 +25758,6 @@ components:
       title: Получение статистики по среднему времени ожидания ответа на вопросы в тикетах
     Admin_2.Methods.Analytics.Tickets.ChartByWaitTime.Get.Exec:
       type: array
-      items:
-        type: any
     Admin_2.Methods.Analytics.Tickets.Messages.Get:
       type: object
       properties:
@@ -26230,8 +25772,6 @@ components:
             - percent_messages_user:%userId%
             - vacations_by_user_id
           type: array
-          items:
-            type: any
         period:
           allOf:
             - $ref: '#/components/schemas/Admin_2.Types.Analytics.Segment'
@@ -26251,8 +25791,6 @@ components:
     Admin_2.Methods.Analytics.Tickets.Messages.Get.Exec:
       nullable: true
       type: array
-      items:
-        type: any
     Admin_2.Methods.Logs.System.Checked.Edit:
       type: object
       properties:
@@ -26289,8 +25827,6 @@ components:
 
             Для обчных графиков это значения на оси X
           type: array
-          items:
-            type: any
         series:
           title: |-
             Набор серий
@@ -26300,13 +25836,9 @@ components:
             Серия обязательно должна иметь поле data, в котором перечисляются значения для категорий. Значения должны идти в таком же порядке, что и
             категории
           type: array
-          items:
-            type: any
         additionalData:
           title: Дополнительгная информация
           type: array
-          items:
-            type: any
       required:
         - categories
         - series
@@ -26366,6 +25898,7 @@ components:
       title: Информация о стоимости запуска аудита по проектам
     Audit_2.Methods.Audit.Checker.Price.Get.Exec:
       description: '@throws Exception'
+      type: object
     Audit_2.Methods.Audit.Export.Links.Get:
       type: object
       properties:
@@ -26375,18 +25908,12 @@ components:
         view_template:
           title: Шаблон просмотра (используется на странице с просмотром проверки)
           type: array
-          items:
-            type: any
         log_http_codes_hundreds:
           title: Логи фильтра по категориям кодов (используется на странице с просмотром проверки)
           type: array
-          items:
-            type: any
         view_signal_type:
           title: Тип сигнала просмотра (используется на странице с просмотром проверки)
           type: array
-          items:
-            type: any
         links_external:
           title: Внешние ссылки (используется на странице с просмотром проверки)
           type: string
@@ -26473,8 +26000,6 @@ components:
       title: Данные для графика
       nullable: true
       type: array
-      items:
-        type: any
     Audit_2.Types.Audit.Results.Export.TypeReport:
       type: integer
       enum:
@@ -26571,8 +26096,6 @@ components:
             - content
       required:
         - result
-      items:
-        type: any
     Audit_2.Methods.Indexing.Checker.Go.Edit:
       type: object
       properties:
@@ -26619,6 +26142,7 @@ components:
       title: Информация о стоимости запуска индексации по проектам
     Audit_2.Methods.Indexing.Checker.Price.Get.Exec:
       description: '@throws Exception'
+      type: object
     Audit_2.Methods.Indexing.Export.Links.Get:
       type: object
       properties:
@@ -26626,8 +26150,6 @@ components:
           title: Поисковые ключи
           nullable: true
           type: array
-          items:
-            type: any
         template_date_range:
           title: Диапозон значений шаблона
           nullable: true
@@ -26636,8 +26158,6 @@ components:
           title: Произвольные даты без использования диапазона
           nullable: true
           type: array
-          items:
-            type: any
         date1:
           title: Дата начала диапазона
           nullable: true
@@ -26661,14 +26181,10 @@ components:
           title: ID тегов
           nullable: true
           type: array
-          items:
-            type: any
         data_sort:
           title: Сортировка данных
           nullable: true
           type: array
-          items:
-            type: any
         only_changed_for:
           title: Применение изменений только для
           nullable: true
@@ -26710,8 +26226,6 @@ components:
         dates:
           title: Произвольные даты без диапазона
           type: array
-          items:
-            type: any
         searcher_key:
           nullable: true
           allOf:
@@ -26746,8 +26260,6 @@ components:
       title: Сводки индексации
       nullable: true
       type: array
-      items:
-        type: any
     Audit_2.Types.Sitemap.MaxPages:
       type: integer
       enum:
@@ -26817,6 +26329,7 @@ components:
       title: Информация о стоимости запуска индексации по проектам
     Audit_2.Methods.Sitemap.Checker.Price.Get.Exec:
       description: '@throws Exception'
+      type: object
     Audit_2.Methods.Watcher.Checker.Go.Edit:
       type: object
       properties:
@@ -26863,6 +26376,7 @@ components:
       title: Информация о стоимости запуска индексации по проектам
     Audit_2.Methods.Watcher.Checker.Price.Get.Exec:
       description: '@throws Exception'
+      type: object
     properties-check_id:
       title: ID проверки радара
       type: integer
@@ -26883,8 +26397,6 @@ components:
           title: Фильтр по тегам
           nullable: true
           type: array
-          items:
-            type: any
         project_id:
           $ref: '#/components/schemas/project_id'
         check_id:
@@ -26905,13 +26417,9 @@ components:
           title: Тип проверки
           nullable: true
           type: array
-          items:
-            type: any
         checks_ids:
           title: ID проверок
           type: array
-          items:
-            type: any
         show_counts_changes:
           title: Отобразить количество изменений по типам
           type: boolean
@@ -26932,8 +26440,6 @@ components:
       title: Сводки с количеством изменений по каждому типу проверки
       nullable: true
       type: array
-      items:
-        type: any
     Content_2.Methods.Apometr.Text.Calendar.Get:
       type: object
       properties:
@@ -26951,8 +26457,6 @@ components:
         type: object
         additionalProperties:
           type: integer
-      items:
-        type: any
     Content_2.Methods.Apometr.Text.Updates.Get:
       type: object
       properties:
@@ -26971,8 +26475,6 @@ components:
       title: Получение текстовых апдейтов
     Content_2.Methods.Apometr.Text.Updates.Get.Exec:
       type: array
-      items:
-        type: any
     Content_2.Methods.Apometr.Updates.Dates.Get:
       type: object
       properties:
@@ -26983,8 +26485,6 @@ components:
       title: Получение дат апдейтов
     Content_2.Methods.Apometr.Updates.Dates.Get.Exec:
       type: array
-      items:
-        type: any
     Content_2.Methods.Journal.Course.Certificates.Add:
       type: object
       properties:
@@ -27064,8 +26564,6 @@ components:
          - lessons - см. includeLessons()
     Content_2.Methods.Journal.Course.Chapters.Get.Exec:
       type: array
-      items:
-        type: any
     Content_2.Methods.Journal.Dictionary.ArticlesByLetter.Get:
       type: object
       properties:
@@ -27105,8 +26603,6 @@ components:
         required:
           - url
           - h1
-      items:
-        type: any
     Content_2.Methods.Journal.Dictionary.WordOfday.Get:
       type: object
       properties:
@@ -27133,8 +26629,6 @@ components:
     Content_2.Methods.Journal.Dictionary.WordOfday.Get.Exec:
       nullable: true
       type: array
-      items:
-        type: any
     Keywords_2.Types.Collect.Ext.Type:
       type: string
       enum:
@@ -27152,8 +26646,6 @@ components:
           title: Минус фразы
           nullable: true
           type: array
-          items:
-            type: any
         type:
           title: Каким типом расширять группу
           allOf:
@@ -27183,8 +26675,6 @@ components:
           title: Минус фразы
           nullable: true
           type: array
-          items:
-            type: any
         apply_discount:
           title: 'Отображать сумму с учетом скидки (по умолчанию: 1)'
           default: true
@@ -27392,8 +26882,6 @@ components:
         keywords:
           title: Ключевые фразы
           type: array
-          items:
-            type: any
         no_recheck:
           title: |-
             Проверять ли запросы

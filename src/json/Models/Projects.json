@@ -227,16 +227,10 @@
                     },
                     "indexing_searchers_keys": {
                         "type": "array",
-                        "items": {
-                            "type": "any"
-                        },
                         "nullable": true
                     },
                     "watcher_types": {
                         "type": "array",
-                        "items": {
-                            "type": "any"
-                        },
                         "nullable": true
                     }
                 }

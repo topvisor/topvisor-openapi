@@ -11,7 +11,7 @@ export interface components {
          *
          *     id последнего непрочитанного тикета, число непрочитанных тикетов */
         "Tickets_2.Methods.Tickets.Info.Get": Record<string, never>;
-        "Tickets_2.Methods.Tickets.Info.Get.Exec": Record<string, never>[];
+        "Tickets_2.Methods.Tickets.Info.Get.Exec": unknown[];
     };
     responses: never;
     parameters: never;

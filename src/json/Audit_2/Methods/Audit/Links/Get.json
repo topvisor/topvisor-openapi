@@ -51,10 +51,7 @@
             "Audit_2.Methods.Audit.Links.Get.Exec": {
                 "title": "Список проверенных ссылок",
                 "nullable": true,
-                "type": "array",
-                "items": {
-                    "type": "any"
-                }
+                "type": "array"
             }
         }
     }

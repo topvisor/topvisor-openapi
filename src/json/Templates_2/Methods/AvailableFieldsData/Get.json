@@ -25,10 +25,7 @@
             },
             "Templates_2.Methods.AvailableFieldsData.Get.Exec": {
                 "title": "@throws Exception",
-                "type": "array",
-                "items": {
-                    "type": "any"
-                }
+                "type": "array"
             }
         }
     }

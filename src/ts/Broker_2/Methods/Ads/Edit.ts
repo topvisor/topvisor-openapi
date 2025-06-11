@@ -29,7 +29,7 @@ export interface components {
          * выводит int, если функция провайдера не определена
          * @description @throws Exception
          */
-        "Broker_2.Methods.Ads.Edit.Exec": (Record<string, never>[] | number | null) | null;
+        "Broker_2.Methods.Ads.Edit.Exec": (unknown[] | number | null) | null;
     };
     responses: never;
     parameters: never;

@@ -12,10 +12,7 @@
                 "properties": {
                     "dates": {
                         "title": "Произвольные даты без диапазона",
-                        "type": "array",
-                        "items": {
-                            "type": "any"
-                        }
+                        "type": "array"
                     },
                     "searcher_key": {
                         "nullable": true,
@@ -61,10 +58,7 @@
             "Audit_2.Methods.Indexing.Summary.Get.Exec": {
                 "title": "Сводка индексации",
                 "nullable": true,
-                "type": "array",
-                "items": {
-                    "type": "any"
-                }
+                "type": "array"
             }
         }
     }

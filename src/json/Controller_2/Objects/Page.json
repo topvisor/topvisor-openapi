@@ -18,10 +18,7 @@
                         ]
                     },
                     "_GET": {
-                        "type": "array",
-                        "items": {
-                            "type": "any"
-                        }
+                        "type": "array"
                     },
                     "openGraph": {
                         "allOf": [
@@ -59,10 +56,7 @@
                         ]
                     },
                     "params": {
-                        "type": "array",
-                        "items": {
-                            "type": "any"
-                        }
+                        "type": "array"
                     },
                     "site": {
                         "allOf": [
@@ -104,16 +98,10 @@
                         "type": "string"
                     },
                     "jsonLDs": {
-                        "type": "array",
-                        "items": {
-                            "type": "any"
-                        }
+                        "type": "array"
                     },
                     "htmlAttributes": {
-                        "type": "array",
-                        "items": {
-                            "type": "any"
-                        }
+                        "type": "array"
                     },
                     "logo": {
                         "type": "string"
@@ -152,16 +140,10 @@
                         "type": "string"
                     },
                     "data": {
-                        "type": "array",
-                        "items": {
-                            "type": "any"
-                        }
+                        "type": "array"
                     },
                     "rightsLabels": {
-                        "type": "array",
-                        "items": {
-                            "type": "any"
-                        }
+                        "type": "array"
                     },
                     "isFullSize": {
                         "type": "boolean"

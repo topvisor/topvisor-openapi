@@ -27,10 +27,7 @@
             },
             "Projects_2.Methods.Analytics.Get.Exec": {
                 "nullable": true,
-                "type": "array",
-                "items": {
-                    "type": "any"
-                }
+                "type": "array"
             }
         }
     }

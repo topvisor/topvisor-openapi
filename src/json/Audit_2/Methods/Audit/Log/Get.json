@@ -71,10 +71,7 @@
             },
             "Audit_2.Methods.Audit.Log.Get.Exec": {
                 "title": "Данные проверенных ресурсов",
-                "type": "array",
-                "items": {
-                    "type": "any"
-                }
+                "type": "array"
             }
         }
     }

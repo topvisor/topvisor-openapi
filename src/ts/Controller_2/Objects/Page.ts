@@ -9,13 +9,13 @@ export interface components {
     schemas: {
         "Controller_2.Objects.Page": {
             location: import('./Location.ts').components['schemas']['Controller_2.Objects.Location'];
-            _GET: Record<string, never>[];
+            _GET: unknown[];
             openGraph: import('./OpenGraph.ts').components['schemas']['Controller_2.Objects.OpenGraph'];
             options: import('./Page/Options.ts').components['schemas']['Controller_2.Objects.Page.Options'];
             article: import('./Page/Article.ts').components['schemas']['Controller_2.Objects.Page.Article'];
             secondMenu: import('../../Tpl/Core/SecondMenu.ts').components['schemas']['Tpl.Core.SecondMenu'];
             leftMenu: import('../../Tpl/Core/LeftMenu.ts').components['schemas']['Tpl.Core.LeftMenu'];
-            params: Record<string, never>[];
+            params: unknown[];
             site: import('../../TV/Core/Sites/Site.ts').components['schemas']['TV.Core.Sites.Site'];
             subdomain: string;
             langContext: string;
@@ -35,8 +35,8 @@ export interface components {
              * @default default
              */
             topPanelSeparation: string;
-            jsonLDs: Record<string, never>[];
-            htmlAttributes: Record<string, never>[];
+            jsonLDs: unknown[];
+            htmlAttributes: unknown[];
             logo: string;
             redirect: string;
             /** @default 302 */
@@ -49,8 +49,8 @@ export interface components {
             tplPath: string;
             tplRendered: string;
             tplSiteRendered: string;
-            data: Record<string, never>[];
-            rightsLabels: Record<string, never>[];
+            data: unknown[];
+            rightsLabels: unknown[];
             isFullSize: boolean;
             showFooter: boolean;
             isAdaptive: boolean;

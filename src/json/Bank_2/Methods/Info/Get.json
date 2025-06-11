@@ -44,10 +44,7 @@
                         "type": "number"
                     },
                     "tariff": {
-                        "type": "array",
-                        "items": {
-                            "type": "any"
-                        }
+                        "type": "array"
                     },
                     "subscription": {
                         "$ref": "../../../Bank_2/Objects/Subscriptions/Subscription.json#/components/schemas/Bank_2.Objects.Subscriptions.Subscription"
@@ -62,10 +59,7 @@
                     "balance_bonus",
                     "balance_tariff",
                     "tariff"
-                ],
-                "items": {
-                    "type": "any"
-                }
+                ]
             }
         }
     }

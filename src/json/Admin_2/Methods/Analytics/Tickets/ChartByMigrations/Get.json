@@ -38,10 +38,7 @@
                 "title": "Получение статистики тикетов по миграциям"
             },
             "Admin_2.Methods.Analytics.Tickets.ChartByMigrations.Get.Exec": {
-                "type": "array",
-                "items": {
-                    "type": "any"
-                }
+                "type": "array"
             }
         }
     }

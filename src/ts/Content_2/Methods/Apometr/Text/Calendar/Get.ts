@@ -13,7 +13,7 @@ export interface components {
             date?: import('../../../../../TV/API/Types/Date.ts').components['schemas']['TV.API.Types.Date'] | null;
         };
         /** Матрица: массив с индексами времени с массивом с индексами дат со значением количества страниц в индексе (в UNIXTIME) */
-        "Content_2.Methods.Apometr.Text.Calendar.Get.Exec": Record<string, never>[];
+        "Content_2.Methods.Apometr.Text.Calendar.Get.Exec": unknown[];
     };
     responses: never;
     parameters: never;

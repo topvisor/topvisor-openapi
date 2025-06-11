@@ -15,10 +15,7 @@
             },
             "Redmine_2.Methods.Users.Groups.Get.Exec": {
                 "title": "@throws Exception",
-                "type": "array",
-                "items": {
-                    "type": "any"
-                }
+                "type": "array"
             }
         }
     }

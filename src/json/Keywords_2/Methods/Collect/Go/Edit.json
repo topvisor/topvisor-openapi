@@ -16,10 +16,7 @@
                     },
                     "keywords": {
                         "title": "Список исходных запросов",
-                        "type": "array",
-                        "items": {
-                            "type": "any"
-                        }
+                        "type": "array"
                     },
                     "qualifiers": {
                         "title": "Объекты определителей настроек ПС и регионов",
@@ -31,10 +28,7 @@
                     },
                     "keywords_minus": {
                         "title": "Минус фразы (только для searcher_key = 0 и searcher_key = 1)",
-                        "type": "array",
-                        "items": {
-                            "type": "any"
-                        }
+                        "type": "array"
                     },
                     "to_group_id": {
                         "title": "Id группы для размещения подобранных запросов",
@@ -81,10 +75,7 @@
             "Keywords_2.Methods.Collect.Go.Edit.Exec": {
                 "title": "Массив созданных групп",
                 "nullable": true,
-                "type": "array",
-                "items": {
-                    "type": "any"
-                }
+                "type": "array"
             }
         }
     }

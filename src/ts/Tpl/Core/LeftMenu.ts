@@ -8,7 +8,7 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         "Tpl.Core.LeftMenu": {
-            items: Record<string, never>[];
+            items: unknown[];
         };
     };
     responses: never;

@@ -11,10 +11,10 @@ export interface components {
             project_id?: any;
             check_id?: any;
             url_id?: any;
-            http_codes?: Record<string, never>[] | null;
+            http_codes?: unknown[] | null;
             http_codes_changed?: any;
             http_codes_md5?: any;
-            redirects?: Record<string, never>[] | null;
+            redirects?: unknown[] | null;
             redirects_changed?: any;
             redirects_md5?: any;
             h1?: any;

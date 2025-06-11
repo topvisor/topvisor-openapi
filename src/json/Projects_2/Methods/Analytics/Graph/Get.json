@@ -24,10 +24,7 @@
                     },
                     "data": {
                         "title": "Данные графика",
-                        "type": "array",
-                        "items": {
-                            "type": "any"
-                        }
+                        "type": "array"
                     },
                     "compare_axe": {
                         "title": "Сравнение метрики",
@@ -44,10 +41,7 @@
             },
             "Projects_2.Methods.Analytics.Graph.Get.Exec": {
                 "nullable": true,
-                "type": "array",
-                "items": {
-                    "type": "any"
-                }
+                "type": "array"
             }
         }
     }

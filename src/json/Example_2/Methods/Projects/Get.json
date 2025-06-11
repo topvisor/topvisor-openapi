@@ -47,10 +47,7 @@
             },
             "Example_2.Methods.Projects.Get.Exec": {
                 "nullable": true,
-                "type": "array",
-                "items": {
-                    "type": "any"
-                }
+                "type": "array"
             }
         }
     }

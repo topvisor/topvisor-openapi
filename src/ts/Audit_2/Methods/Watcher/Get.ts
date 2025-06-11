@@ -14,7 +14,7 @@ export interface components {
          *     Необходимо указать либо check_id1 и check_id2, либо checks_ids (вместе указывать нельзя) */
         "Audit_2.Methods.Watcher.Get": {
             /** ID проверок в произвольном порядке */
-            checks_ids?: Record<string, never>[] | null;
+            checks_ids?: unknown[] | null;
             /** ID проверки начала диапазона */
             check_id1?: number | null;
             /** ID проверки конца диапазона */
@@ -34,7 +34,7 @@ export interface components {
              *       "redirects"
              *     ]
              */
-            watcher_fields: Record<string, never>[];
+            watcher_fields: unknown[];
             /** Добавить в результат заголовки отчета */
             show_headers?: boolean;
             show_diff?: import('../../Types/Watcher/ShowDiff.ts').components['schemas']['Audit_2.Types.Watcher.ShowDiff'];
@@ -49,7 +49,7 @@ export interface components {
             offset?: import('../../../TV/API/Params/OffsetTrait.ts').components['schemas']['TV.API.Params.OffsetTrait']['offset'];
         };
         /** Генерируемый на основе urls, список результатов проверок радара */
-        "Audit_2.Methods.Watcher.Get.Exec": Record<string, never>[] | null;
+        "Audit_2.Methods.Watcher.Get.Exec": unknown[] | null;
     };
     responses: never;
     parameters: never;

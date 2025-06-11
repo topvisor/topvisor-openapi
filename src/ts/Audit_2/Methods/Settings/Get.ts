@@ -13,7 +13,7 @@ export interface components {
             project_id: import('../../../TV/API/Params/ProjectIdTrait.ts').components['schemas']['TV.API.Params.ProjectIdTrait']['project_id'];
         };
         /** Настройки аудита */
-        "Audit_2.Methods.Settings.Get.Exec": Record<string, never>[] | null;
+        "Audit_2.Methods.Settings.Get.Exec": unknown[] | null;
     };
     responses: never;
     parameters: never;

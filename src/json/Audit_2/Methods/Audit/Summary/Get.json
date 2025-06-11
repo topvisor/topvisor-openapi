@@ -12,10 +12,7 @@
                 "properties": {
                     "filter_check_type": {
                         "title": "Фильтр по состоянию сигнала (success, warning, error)",
-                        "type": "array",
-                        "items": {
-                            "type": "any"
-                        }
+                        "type": "array"
                     },
                     "filter_check_state": {
                         "nullable": true,
@@ -66,10 +63,7 @@
             "Audit_2.Methods.Audit.Summary.Get.Exec": {
                 "title": "Сводка о выполненном аудите\n\nВозвращает объект со сводкой по категориям, пример:\n - `$res['all']['all']['count_checks_success']` - количество пройденных проверок во всех категориях\n - `$res['pages']['indexing']['count_checks_success']` - количество пройденных проверок в категории Страницы / Индексация\n - `$res['all']['all']['count_checks_success']` - количество пройденных проверок во всех категориях",
                 "nullable": true,
-                "type": "array",
-                "items": {
-                    "type": "any"
-                }
+                "type": "array"
             }
         }
     }

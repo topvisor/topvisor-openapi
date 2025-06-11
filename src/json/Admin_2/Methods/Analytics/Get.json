@@ -50,10 +50,7 @@
                 ]
             },
             "Admin_2.Methods.Analytics.Get.Exec": {
-                "type": "array",
-                "items": {
-                    "type": "any"
-                }
+                "type": "array"
             }
         }
     }

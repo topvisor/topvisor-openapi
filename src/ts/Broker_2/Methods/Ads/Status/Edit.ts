@@ -12,13 +12,13 @@ export interface components {
             /** Id кампании */
             campaign_tv_id: number;
             /** Информация об объявлениях (id группы, id объявлений и статусы объявлений) */
-            ads_data: Record<string, never>[];
+            ads_data: unknown[];
         };
         /**
          * выводит int, если функция провайдера не определена
          * @description @throws Exception
          */
-        "Broker_2.Methods.Ads.Status.Edit.Exec": (Record<string, never>[] | number | null) | null;
+        "Broker_2.Methods.Ads.Status.Edit.Exec": (unknown[] | number | null) | null;
     };
     responses: never;
     parameters: never;

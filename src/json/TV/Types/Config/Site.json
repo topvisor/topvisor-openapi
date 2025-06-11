@@ -55,10 +55,7 @@
                     "LANGUAGES": {
                         "title": "Список поддерживаемых языков, ISO 639-1",
                         "readOnly": true,
-                        "type": "array",
-                        "items": {
-                            "type": "any"
-                        }
+                        "type": "array"
                     },
                     "LANGUAGE_MAIN": {
                         "title": "Оснвоной язык, ISO 639-1",
@@ -69,10 +66,7 @@
                     "LANGUAGES_ADDITIONAL": {
                         "title": "Список дополнительных языков, ISO 639-1\n\nПри генерации url дополнительный язык добавляется в начало url в модуле контента\n\nАналогично `self::LANGUAGES`, без `self::LANGUAGE_MAIN`",
                         "readOnly": true,
-                        "type": "array",
-                        "items": {
-                            "type": "any"
-                        }
+                        "type": "array"
                     },
                     "CURRENCIES": {
                         "title": "Список валют, используемых на сайте",
@@ -80,26 +74,17 @@
                         "default": [
                             "No set"
                         ],
-                        "type": "array",
-                        "items": {
-                            "type": "any"
-                        }
+                        "type": "array"
                     },
                     "SUBDOMAINS": {
                         "title": "Список поддоменов\n\nПримеры:\n- `''` для основного домена `example.com`\n- `'subdomain'` для поддомена `subdomain.example.com`",
                         "readOnly": true,
-                        "type": "array",
-                        "items": {
-                            "type": "any"
-                        }
+                        "type": "array"
                     },
                     "THEMES": {
                         "title": "Список поддерживаемых тем оформления",
                         "readOnly": true,
-                        "type": "array",
-                        "items": {
-                            "type": "any"
-                        }
+                        "type": "array"
                     },
                     "MAILING_EMAIL": {
                         "title": "Почта рассыльщика\n\nОна же используется в тикетнице",
@@ -129,10 +114,7 @@
                         "title": "Словарь модулей, доступ к которым надо закрыть\n\nФормат ключа: `{{ page param 1 }}`, `{{ page param 1 }}/{{ page param 2 }}`\n\nЗначение: всегда true, значение игнорируется",
                         "description": "@see Controller_2\\Objects\\Page::params",
                         "readOnly": true,
-                        "type": "array",
-                        "items": {
-                            "type": "any"
-                        }
+                        "type": "array"
                     },
                     "INN": {
                         "readOnly": true,

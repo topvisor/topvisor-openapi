@@ -18,7 +18,7 @@ export interface components {
              *        color_id:color_id
              *     }
              *     </code> */
-            tags: Record<string, never>[];
+            tags: unknown[];
             project_id?: number | null;
         };
         "Tags_2.Methods.Edit.Exec": unknown;

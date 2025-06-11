@@ -36,10 +36,7 @@
                 "title": "Получение текстовых апдейтов"
             },
             "Content_2.Methods.Apometr.Text.Updates.Get.Exec": {
-                "type": "array",
-                "items": {
-                    "type": "any"
-                }
+                "type": "array"
             }
         }
     }

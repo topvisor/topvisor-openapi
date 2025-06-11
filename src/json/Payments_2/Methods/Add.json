@@ -63,10 +63,7 @@
                     },
                     "items": {
                         "title": "Элементы платежа",
-                        "type": "array",
-                        "items": {
-                            "type": "any"
-                        }
+                        "type": "array"
                     },
                     "card_id": {
                         "title": "ID карты в системе оплаты для привязки",

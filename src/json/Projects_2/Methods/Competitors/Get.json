@@ -18,10 +18,7 @@
                             "site",
                             "on"
                         ],
-                        "type": "array",
-                        "items": {
-                            "type": "any"
-                        }
+                        "type": "array"
                     },
                     "project_id": {
                         "title": "ID проекта",
@@ -45,10 +42,7 @@
             },
             "Projects_2.Methods.Competitors.Get.Exec": {
                 "nullable": true,
-                "type": "array",
-                "items": {
-                    "type": "any"
-                }
+                "type": "array"
             }
         }
     }

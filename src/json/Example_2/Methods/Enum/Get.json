@@ -41,10 +41,7 @@
             },
             "Example_2.Methods.Enum.Get.Exec": {
                 "title": "Ассоциативный массив с результирующими переданными параетрами и результатом genSet()",
-                "type": "array",
-                "items": {
-                    "type": "any"
-                }
+                "type": "array"
             }
         }
     }

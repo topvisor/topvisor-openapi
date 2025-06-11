@@ -19,9 +19,9 @@ export interface components {
             /** Использовать ли сортировку */
             ord?: boolean | null;
             /** Поля шаблона */
-            fields?: Record<string, never>[];
+            fields?: unknown[];
             /** Свойства шаблона */
-            properties?: Record<string, never>[];
+            properties?: unknown[];
         };
         /** @throws Exception */
         "Templates_2.Methods.Add.Exec": number | null;

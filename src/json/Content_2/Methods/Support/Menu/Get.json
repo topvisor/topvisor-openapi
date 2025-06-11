@@ -14,10 +14,7 @@
                 "title": "Получение меню справки"
             },
             "Content_2.Methods.Support.Menu.Get.Exec": {
-                "type": "array",
-                "items": {
-                    "type": "any"
-                }
+                "type": "array"
             }
         }
     }

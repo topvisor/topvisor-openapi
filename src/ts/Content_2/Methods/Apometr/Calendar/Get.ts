@@ -23,7 +23,7 @@ export interface components {
             /** Дата, определяющая месяц, в формате YYYY-MM-01 */
             date_month?: import('../../../../TV/API/Types/Date.ts').components['schemas']['TV.API.Types.Date'] | null;
         };
-        "Content_2.Methods.Apometr.Calendar.Get.Exec": Record<string, never>[] | null;
+        "Content_2.Methods.Apometr.Calendar.Get.Exec": unknown[] | null;
     };
     responses: never;
     parameters: never;

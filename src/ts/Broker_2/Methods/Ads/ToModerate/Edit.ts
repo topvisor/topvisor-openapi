@@ -16,7 +16,7 @@ export interface components {
          * выводит int, если функция провайдера не определена
          * @description @throws Exception
          */
-        "Broker_2.Methods.Ads.ToModerate.Edit.Exec": (Record<string, never>[] | number) | null;
+        "Broker_2.Methods.Ads.ToModerate.Edit.Exec": (unknown[] | number) | null;
     };
     responses: never;
     parameters: never;

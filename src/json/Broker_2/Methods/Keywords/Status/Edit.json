@@ -16,10 +16,7 @@
                     },
                     "keywords_data": {
                         "title": "Информация о запросах (id группы и id запросов)",
-                        "type": "array",
-                        "items": {
-                            "type": "any"
-                        }
+                        "type": "array"
                     }
                 },
                 "required": [
@@ -34,10 +31,7 @@
                 "nullable": true,
                 "anyOf": [
                     {
-                        "type": "array",
-                        "items": {
-                            "type": "any"
-                        }
+                        "type": "array"
                     },
                     {
                         "type": "integer"

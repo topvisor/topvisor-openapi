@@ -19,10 +19,7 @@
                     },
                     "tags": {
                         "title": "Список тегов в формате:\n<code>\n{\n   id:id,\n   name:name,\n   color_id:color_id\n}\n</code>",
-                        "type": "array",
-                        "items": {
-                            "type": "any"
-                        }
+                        "type": "array"
                     },
                     "project_id": {
                         "nullable": true,

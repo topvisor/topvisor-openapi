@@ -22,10 +22,7 @@
             },
             "Payments_2.Methods.ValidateMerchantCardAP.Get.Exec": {
                 "nullable": true,
-                "type": "array",
-                "items": {
-                    "type": "any"
-                }
+                "type": "array"
             }
         }
     }

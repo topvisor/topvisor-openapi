@@ -15,10 +15,7 @@
             },
             "Admin_2.Methods.Analytics.Statistics.Get.Exec": {
                 "nullable": true,
-                "type": "array",
-                "items": {
-                    "type": "any"
-                }
+                "type": "array"
             }
         }
     }

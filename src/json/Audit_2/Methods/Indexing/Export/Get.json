@@ -34,18 +34,12 @@
                     },
                     "properties": {
                         "title": "Настройки экспорта",
-                        "type": "array",
-                        "items": {
-                            "type": "any"
-                        }
+                        "type": "array"
                     },
                     "dates": {
                         "title": "Произвольные даты без использования диапазона",
                         "nullable": true,
-                        "type": "array",
-                        "items": {
-                            "type": "any"
-                        }
+                        "type": "array"
                     },
                     "date1": {
                         "title": "Дата начала диапазона",

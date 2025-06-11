@@ -43,10 +43,7 @@
             "Cron_2.Methods.Get.Exec": {
                 "title": "Список имен сервисов",
                 "nullable": true,
-                "type": "array",
-                "items": {
-                    "type": "any"
-                }
+                "type": "array"
             }
         }
     }

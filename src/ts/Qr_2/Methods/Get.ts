@@ -24,7 +24,7 @@ export interface components {
             /** Использовать ли цвета из лого */
             use_logo_colors?: boolean;
             /** Использовать указанный цвет, цвет задается массивом из 3 элементов [r, g, b] */
-            color?: Record<string, never>[] | null;
+            color?: unknown[] | null;
             /**
              * Размер точек QR кода в пикселях
              * @default 4

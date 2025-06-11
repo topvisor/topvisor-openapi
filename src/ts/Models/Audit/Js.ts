@@ -9,16 +9,16 @@ export interface components {
     schemas: {
         "Models.Audit.Js": {
             "COUNT(*)"?: any;
-            "HTTP_CODES_HUNDREDS()"?: Record<string, never>[] | null;
+            "HTTP_CODES_HUNDREDS()"?: unknown[] | null;
             check_id?: any;
             url_ids?: any;
             url_id?: any;
             url?: any;
             count?: any;
             time_parse?: any;
-            http_codes?: Record<string, never>[] | null;
+            http_codes?: unknown[] | null;
             last_http_code?: any;
-            redirects?: Record<string, never>[] | null;
+            redirects?: unknown[] | null;
             ttfb?: any;
             count_pages?: any;
             compression?: any;

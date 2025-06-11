@@ -44,7 +44,7 @@ export interface components {
             filters: import('../../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['filters'];
             id?: import('../../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['id'];
         };
-        "Positions_2.Methods.Checker.Price.Get.Exec": unknown;
+        "Positions_2.Methods.Checker.Price.Get.Exec": Record<string, never>;
     };
     responses: never;
     parameters: never;

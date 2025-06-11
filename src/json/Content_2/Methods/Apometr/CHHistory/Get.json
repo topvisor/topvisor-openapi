@@ -63,10 +63,7 @@
                 "title": "Получение истории urls, найденных в выдаче, за конкретную проверку"
             },
             "Content_2.Methods.Apometr.CHHistory.Get.Exec": {
-                "type": "array",
-                "items": {
-                    "type": "any"
-                }
+                "type": "array"
             }
         }
     }

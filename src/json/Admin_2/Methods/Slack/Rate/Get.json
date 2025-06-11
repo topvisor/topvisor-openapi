@@ -16,10 +16,7 @@
             "Admin_2.Methods.Slack.Rate.Get.Exec": {
                 "title": "Список пользователей",
                 "nullable": true,
-                "type": "array",
-                "items": {
-                    "type": "any"
-                }
+                "type": "array"
             }
         }
     }

@@ -41,10 +41,7 @@
                 "title": "Получение модулей курса\n\nДополнительные поля:\n - lessons - см. includeLessons()"
             },
             "Content_2.Methods.Journal.Course.Chapters.Get.Exec": {
-                "type": "array",
-                "items": {
-                    "type": "any"
-                }
+                "type": "array"
             }
         }
     }

@@ -57,10 +57,7 @@
                     "category",
                     "name",
                     "value"
-                ],
-                "items": {
-                    "type": "any"
-                }
+                ]
             }
         }
     }

@@ -16,10 +16,7 @@
                     },
                     "groups_names": {
                         "title": "Имена групп",
-                        "type": "array",
-                        "items": {
-                            "type": "any"
-                        }
+                        "type": "array"
                     }
                 },
                 "required": [
@@ -34,10 +31,7 @@
                 "nullable": true,
                 "anyOf": [
                     {
-                        "type": "array",
-                        "items": {
-                            "type": "any"
-                        }
+                        "type": "array"
                     },
                     {
                         "type": "integer"

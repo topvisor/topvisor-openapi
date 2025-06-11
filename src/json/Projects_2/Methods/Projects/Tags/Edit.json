@@ -16,10 +16,7 @@
                         "default": [
                             1
                         ],
-                        "type": "array",
-                        "items": {
-                            "type": "any"
-                        }
+                        "type": "array"
                     },
                     "id": {
                         "title": "ID проекта",

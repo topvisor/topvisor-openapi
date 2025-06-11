@@ -81,10 +81,7 @@
             },
             "Keywords_2.Methods.Keywords.Import.Add.Exec": {
                 "nullable": true,
-                "type": "array",
-                "items": {
-                    "type": "any"
-                }
+                "type": "array"
             }
         }
     }

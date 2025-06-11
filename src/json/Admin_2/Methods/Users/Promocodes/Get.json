@@ -42,10 +42,7 @@
             },
             "Admin_2.Methods.Users.Promocodes.Get.Exec": {
                 "nullable": true,
-                "type": "array",
-                "items": {
-                    "type": "any"
-                }
+                "type": "array"
             }
         }
     }

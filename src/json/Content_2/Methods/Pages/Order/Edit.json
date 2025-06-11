@@ -24,10 +24,7 @@
                     },
                     "urls": {
                         "title": "Адреса документов в нужном порядке",
-                        "type": "array",
-                        "items": {
-                            "type": "any"
-                        }
+                        "type": "array"
                     }
                 },
                 "required": [

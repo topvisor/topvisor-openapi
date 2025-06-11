@@ -37,10 +37,7 @@
             },
             "Admin_2.Methods.Logs.System.Get.Exec": {
                 "nullable": true,
-                "type": "array",
-                "items": {
-                    "type": "any"
-                }
+                "type": "array"
             }
         }
     }

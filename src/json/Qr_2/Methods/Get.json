@@ -33,10 +33,7 @@
                     "color": {
                         "title": "Использовать указанный цвет, цвет задается массивом из 3 элементов [r, g, b]",
                         "nullable": true,
-                        "type": "array",
-                        "items": {
-                            "type": "any"
-                        }
+                        "type": "array"
                     },
                     "point_size": {
                         "title": "Размер точек QR кода в пикселях",

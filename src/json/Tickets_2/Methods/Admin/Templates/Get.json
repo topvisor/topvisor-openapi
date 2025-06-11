@@ -21,10 +21,7 @@
             },
             "Tickets_2.Methods.Admin.Templates.Get.Exec": {
                 "nullable": true,
-                "type": "array",
-                "items": {
-                    "type": "any"
-                }
+                "type": "array"
             }
         }
     }

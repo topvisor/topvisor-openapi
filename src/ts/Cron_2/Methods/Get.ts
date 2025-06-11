@@ -18,7 +18,7 @@ export interface components {
             fetch_style?: import('../../TV/API/Params/FetchStyleTrait.ts').components['schemas']['TV.API.Params.FetchStyleTrait']['fetch_style'];
         };
         /** Список имен сервисов */
-        "Cron_2.Methods.Get.Exec": Record<string, never>[] | null;
+        "Cron_2.Methods.Get.Exec": unknown[] | null;
     };
     responses: never;
     parameters: never;

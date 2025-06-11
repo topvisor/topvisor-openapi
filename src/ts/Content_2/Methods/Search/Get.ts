@@ -26,7 +26,7 @@ export interface components {
             fetch_style?: import('../../../TV/API/Params/FetchStyleTrait.ts').components['schemas']['TV.API.Params.FetchStyleTrait']['fetch_style'];
         };
         /** @throws Exception */
-        "Content_2.Methods.Search.Get.Exec": Record<string, never>[];
+        "Content_2.Methods.Search.Get.Exec": unknown[];
     };
     responses: never;
     parameters: never;

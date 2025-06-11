@@ -45,9 +45,9 @@ export interface components {
              *     Для нетарифицируемых лимитов значение всегда `null`
              * @description @type Array<Bank_2\Types\Subscriptions\Limit\Name, int>
              */
-            limitUsedByName: Record<string, never>[];
+            limitUsedByName: unknown[];
             /** Типы лимитов */
-            limitTypeByName: Record<string, never>[];
+            limitTypeByName: unknown[];
         };
     };
     responses: never;

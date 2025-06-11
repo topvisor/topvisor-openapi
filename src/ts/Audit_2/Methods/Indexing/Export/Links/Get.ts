@@ -12,11 +12,11 @@ export interface components {
          *     Необходимо указать либо date1 и date2, либо dates (вместе указывать нельзя) */
         "Audit_2.Methods.Indexing.Export.Links.Get": {
             /** Поисковые ключи */
-            searchers_keys?: Record<string, never>[] | null;
+            searchers_keys?: unknown[] | null;
             /** Диапозон значений шаблона */
             template_date_range?: string | null;
             /** Произвольные даты без использования диапазона */
-            dates?: Record<string, never>[] | null;
+            dates?: unknown[] | null;
             /** Дата начала диапазона */
             date1?: string | null;
             /** Дата окончания диапазона */
@@ -28,9 +28,9 @@ export interface components {
             /** Количество дней в диапазоне */
             count_dates?: number;
             /** ID тегов */
-            tags_ids?: Record<string, never>[] | null;
+            tags_ids?: unknown[] | null;
             /** Сортировка данных */
-            data_sort?: Record<string, never>[] | null;
+            data_sort?: unknown[] | null;
             /** Применение изменений только для */
             only_changed_for?: string | null;
             project_id: import('../../../../../TV/API/Params/ProjectIdTrait.ts').components['schemas']['TV.API.Params.ProjectIdTrait']['project_id'];

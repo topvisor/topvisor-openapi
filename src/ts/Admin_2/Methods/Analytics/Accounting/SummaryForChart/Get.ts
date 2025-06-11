@@ -24,9 +24,9 @@ export interface components {
              */
             limit: number;
             /** Фильтр по объектам групп, см. Admin_2\Accounting\Group */
-            filters?: Record<string, never>[] | null;
+            filters?: unknown[] | null;
         };
-        "Admin_2.Methods.Analytics.Accounting.SummaryForChart.Get.Exec": Record<string, never>[];
+        "Admin_2.Methods.Analytics.Accounting.SummaryForChart.Get.Exec": unknown[];
     };
     responses: never;
     parameters: never;

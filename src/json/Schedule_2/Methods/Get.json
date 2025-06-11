@@ -33,10 +33,7 @@
             },
             "Schedule_2.Methods.Get.Exec": {
                 "title": "@throws Exception",
-                "type": "array",
-                "items": {
-                    "type": "any"
-                }
+                "type": "array"
             }
         }
     }

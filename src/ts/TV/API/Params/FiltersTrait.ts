@@ -19,7 +19,7 @@ export interface components {
              * @description @see AbstractMethod::MODEL
              *     @see Field::AVAILABLE_OPERATORS
              */
-            filters: Record<string, never>[];
+            filters: unknown[];
             /** Id объекта, для фильтрации объектов по id
              *
              *     Только для моделей с полем id */

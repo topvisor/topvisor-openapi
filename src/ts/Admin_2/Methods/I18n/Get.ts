@@ -17,7 +17,7 @@ export interface components {
             search?: string | null;
             only_duplicates?: boolean;
         };
-        "Admin_2.Methods.I18n.Get.Exec": Record<string, never>[];
+        "Admin_2.Methods.I18n.Get.Exec": unknown[];
     };
     responses: never;
     parameters: never;

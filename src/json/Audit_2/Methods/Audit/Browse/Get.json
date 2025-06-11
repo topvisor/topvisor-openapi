@@ -27,10 +27,7 @@
             "Audit_2.Methods.Audit.Browse.Get.Exec": {
                 "title": "Сводка анализа сайта",
                 "nullable": true,
-                "type": "array",
-                "items": {
-                    "type": "any"
-                }
+                "type": "array"
             }
         }
     }

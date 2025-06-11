@@ -25,10 +25,7 @@
             },
             "Example_2.Methods.Object.Get.Exec": {
                 "title": "Ассоциативный массив с результирующими переданными параетрами и результатом genSet()",
-                "type": "array",
-                "items": {
-                    "type": "any"
-                }
+                "type": "array"
             }
         }
     }

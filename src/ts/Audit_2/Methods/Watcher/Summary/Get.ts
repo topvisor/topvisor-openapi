@@ -10,9 +10,9 @@ export interface components {
         /** Получение сводки радара */
         "Audit_2.Methods.Watcher.Summary.Get": {
             /** Тип проверки */
-            watcher_types?: Record<string, never>[] | null;
+            watcher_types?: unknown[] | null;
             /** ID проверок */
-            checks_ids: Record<string, never>[];
+            checks_ids: unknown[];
             /** Отобразить количество изменений по типам */
             show_counts_changes?: boolean;
             /** Недокументируемый параметр, данные для графика */
@@ -22,7 +22,7 @@ export interface components {
             id?: import('../../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['id'];
         };
         /** Сводка с количеством изменений по каждому типу проверки */
-        "Audit_2.Methods.Watcher.Summary.Get.Exec": Record<string, never>[] | null;
+        "Audit_2.Methods.Watcher.Summary.Get.Exec": unknown[] | null;
     };
     responses: never;
     parameters: never;

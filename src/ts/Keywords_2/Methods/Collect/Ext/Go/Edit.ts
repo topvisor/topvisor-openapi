@@ -12,7 +12,7 @@ export interface components {
             /** ID проекта */
             project_id: number;
             /** Минус фразы */
-            keywords_minus?: Record<string, never>[] | null;
+            keywords_minus?: unknown[] | null;
             /** Каким типом расширять группу */
             type: import('../../../../Types/Collect/Ext/Type.ts').components['schemas']['Keywords_2.Types.Collect.Ext.Type'];
             /** Объекты определителей настроек ПС и регионов */

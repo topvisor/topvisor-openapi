@@ -51,10 +51,7 @@
             "Audit_2.Methods.Audit.Images.Get.Exec": {
                 "title": "Список проверенных изображений",
                 "nullable": true,
-                "type": "array",
-                "items": {
-                    "type": "any"
-                }
+                "type": "array"
             }
         }
     }

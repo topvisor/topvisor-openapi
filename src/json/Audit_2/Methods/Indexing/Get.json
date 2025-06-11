@@ -22,10 +22,7 @@
                         "default": [
                             "data"
                         ],
-                        "type": "array",
-                        "items": {
-                            "type": "any"
-                        }
+                        "type": "array"
                     },
                     "show_headers": {
                         "title": "Вернуть ли заголовки отчета",
@@ -46,10 +43,7 @@
                     "dates": {
                         "title": "Произвольные даты без использования диапазона",
                         "nullable": true,
-                        "type": "array",
-                        "items": {
-                            "type": "any"
-                        }
+                        "type": "array"
                     },
                     "date1": {
                         "title": "Дата начала диапазона",
@@ -125,10 +119,7 @@
             },
             "Audit_2.Methods.Indexing.Get.Exec": {
                 "title": "Список ссылок с данными по ним",
-                "type": "array",
-                "items": {
-                    "type": "any"
-                }
+                "type": "array"
             }
         }
     }

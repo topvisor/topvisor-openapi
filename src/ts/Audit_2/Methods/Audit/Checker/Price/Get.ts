@@ -20,7 +20,7 @@ export interface components {
             id?: import('../../../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['id'];
         };
         /** @description @throws Exception */
-        "Audit_2.Methods.Audit.Checker.Price.Get.Exec": unknown;
+        "Audit_2.Methods.Audit.Checker.Price.Get.Exec": Record<string, never>;
     };
     responses: never;
     parameters: never;

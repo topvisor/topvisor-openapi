@@ -82,10 +82,7 @@
                 ]
             },
             "Admin_2.Methods.Informer.Add.Exec": {
-                "type": "array",
-                "items": {
-                    "type": "any"
-                }
+                "type": "array"
             }
         }
     }

@@ -13,10 +13,7 @@
                     "orders": {
                         "title": "Список полей объекта, по которым необходимо выполнить сортировку\n\nПоля могут быть строками или объектом: {name: string, direction: 'ASC' | 'DESC', orderValues: array}\n\nИспользует поля модели",
                         "description": "@see AbstractMethod::MODEL",
-                        "type": "array",
-                        "items": {
-                            "type": "any"
-                        }
+                        "type": "array"
                     }
                 },
                 "required": [

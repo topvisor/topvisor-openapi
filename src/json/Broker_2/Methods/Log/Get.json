@@ -48,10 +48,7 @@
             "Broker_2.Methods.Log.Get.Exec": {
                 "title": "@throws Exception",
                 "nullable": true,
-                "type": "array",
-                "items": {
-                    "type": "any"
-                }
+                "type": "array"
             }
         }
     }

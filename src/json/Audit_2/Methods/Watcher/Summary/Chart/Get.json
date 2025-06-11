@@ -13,17 +13,11 @@
                     "watcher_types": {
                         "title": "Тип проверки",
                         "nullable": true,
-                        "type": "array",
-                        "items": {
-                            "type": "any"
-                        }
+                        "type": "array"
                     },
                     "checks_ids": {
                         "title": "ID проверок",
-                        "type": "array",
-                        "items": {
-                            "type": "any"
-                        }
+                        "type": "array"
                     },
                     "show_counts_changes": {
                         "title": "Отобразить количество изменений по типам",
@@ -52,10 +46,7 @@
             "Audit_2.Methods.Watcher.Summary.Chart.Get.Exec": {
                 "title": "Сводки с количеством изменений по каждому типу проверки",
                 "nullable": true,
-                "type": "array",
-                "items": {
-                    "type": "any"
-                }
+                "type": "array"
             }
         }
     }

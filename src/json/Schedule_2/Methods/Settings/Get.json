@@ -33,10 +33,7 @@
                 "description": "@see Schedule_2\\Mods\\Settings"
             },
             "Schedule_2.Methods.Settings.Get.Exec": {
-                "type": "array",
-                "items": {
-                    "type": "any"
-                }
+                "type": "array"
             }
         }
     }

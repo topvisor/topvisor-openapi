@@ -39,10 +39,7 @@
             },
             "Admin_2.Methods.Analytics.Activity.ChartByPeriod.Get.Exec": {
                 "nullable": true,
-                "type": "array",
-                "items": {
-                    "type": "any"
-                }
+                "type": "array"
             }
         }
     }

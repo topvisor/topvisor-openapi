@@ -34,10 +34,7 @@
             },
             "Content_2.Methods.Tags.Get.Exec": {
                 "nullable": true,
-                "type": "array",
-                "items": {
-                    "type": "any"
-                }
+                "type": "array"
             }
         }
     }

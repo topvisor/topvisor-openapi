@@ -26,10 +26,7 @@
                 "title": "Получение групп рекламной кампании для редактора"
             },
             "Broker_2.Methods.Groups.Editor.Get.Exec": {
-                "type": "array",
-                "items": {
-                    "type": "any"
-                }
+                "type": "array"
             }
         }
     }

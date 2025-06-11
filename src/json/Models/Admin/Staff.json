@@ -54,9 +54,6 @@
                     },
                     "staff_posts": {
                         "type": "array",
-                        "items": {
-                            "type": "any"
-                        },
                         "nullable": true
                     },
                     "staff_post": {

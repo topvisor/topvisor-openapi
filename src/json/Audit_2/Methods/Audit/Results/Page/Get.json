@@ -68,10 +68,7 @@
                 },
                 "required": [
                     "result"
-                ],
-                "items": {
-                    "type": "any"
-                }
+                ]
             }
         }
     }

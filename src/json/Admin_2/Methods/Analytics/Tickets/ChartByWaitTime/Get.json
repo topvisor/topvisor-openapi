@@ -38,10 +38,7 @@
                 "title": "Получение статистики по среднему времени ожидания ответа на вопросы в тикетах"
             },
             "Admin_2.Methods.Analytics.Tickets.ChartByWaitTime.Get.Exec": {
-                "type": "array",
-                "items": {
-                    "type": "any"
-                }
+                "type": "array"
             }
         }
     }

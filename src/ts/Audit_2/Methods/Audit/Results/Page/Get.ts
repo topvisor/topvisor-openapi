@@ -25,7 +25,7 @@ export interface components {
          * @description
          *     @throws Exception
          */
-        "Audit_2.Methods.Audit.Results.Page.Get.Exec": Record<string, never>[];
+        "Audit_2.Methods.Audit.Results.Page.Get.Exec": unknown[];
     };
     responses: never;
     parameters: never;

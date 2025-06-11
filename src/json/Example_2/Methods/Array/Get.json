@@ -50,10 +50,7 @@
             "Example_2.Methods.Array.Get.Exec": {
                 "title": "Ассоциативный массив с результирующими переданными параетрами, и результатоми implodeQuotes() и genSet()",
                 "description": "@type array<string, array<string, mixed>>",
-                "type": "array",
-                "items": {
-                    "type": "any"
-                }
+                "type": "array"
             }
         }
     }

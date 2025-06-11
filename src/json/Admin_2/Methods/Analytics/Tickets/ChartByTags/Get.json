@@ -38,10 +38,7 @@
                 "title": "Получение статистику тикетов по тегам"
             },
             "Admin_2.Methods.Analytics.Tickets.ChartByTags.Get.Exec": {
-                "type": "array",
-                "items": {
-                    "type": "any"
-                }
+                "type": "array"
             }
         }
     }

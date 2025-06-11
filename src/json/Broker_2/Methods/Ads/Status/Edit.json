@@ -16,10 +16,7 @@
                     },
                     "ads_data": {
                         "title": "Информация об объявлениях (id группы, id объявлений и статусы объявлений)",
-                        "type": "array",
-                        "items": {
-                            "type": "any"
-                        }
+                        "type": "array"
                     }
                 },
                 "required": [
@@ -34,10 +31,7 @@
                 "nullable": true,
                 "anyOf": [
                     {
-                        "type": "array",
-                        "items": {
-                            "type": "any"
-                        }
+                        "type": "array"
                     },
                     {
                         "type": "integer"

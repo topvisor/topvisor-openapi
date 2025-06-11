@@ -14,7 +14,7 @@ export interface components {
             /** Статус группы */
             group_status?: string | null;
         };
-        "Broker_2.Methods.Groups.Editor.Get.Exec": Record<string, never>[];
+        "Broker_2.Methods.Groups.Editor.Get.Exec": unknown[];
     };
     responses: never;
     parameters: never;

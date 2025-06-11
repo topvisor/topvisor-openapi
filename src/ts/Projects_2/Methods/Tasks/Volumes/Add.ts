@@ -14,7 +14,7 @@ export interface components {
             /** Массив ключевых запросов в формате CSV
              *
              *     - array keywords - массив ключевых запросов, допускается формат CSV */
-            keywords: Record<string, never>[];
+            keywords: unknown[];
             /** Вырезать ли плюсы, точки, запятые, апострофы, кавычки (по умолчанию: 0 - не вырезать) */
             remove_special_chars?: boolean | null;
             /** Проверять ли запросы

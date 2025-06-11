@@ -12,10 +12,7 @@
                 "properties": {
                     "props": {
                         "title": "Параметры, передаваемые в шаблон",
-                        "type": "array",
-                        "items": {
-                            "type": "any"
-                        }
+                        "type": "array"
                     }
                 },
                 "required": [

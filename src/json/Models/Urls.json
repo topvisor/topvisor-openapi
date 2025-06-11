@@ -14,9 +14,6 @@
                     },
                     "WATCHER_HTTP_CODES_HUNDREDS()": {
                         "type": "array",
-                        "items": {
-                            "type": "any"
-                        },
                         "nullable": true,
                         "example": {
                             "need set qualifiers": [
@@ -81,9 +78,6 @@
                     },
                     "watcher_http_codes": {
                         "type": "array",
-                        "items": {
-                            "type": "any"
-                        },
                         "nullable": true,
                         "example": {
                             "need set qualifiers": [
@@ -102,9 +96,6 @@
                     },
                     "watcher_redirects": {
                         "type": "array",
-                        "items": {
-                            "type": "any"
-                        },
                         "nullable": true,
                         "example": {
                             "need set qualifiers": [

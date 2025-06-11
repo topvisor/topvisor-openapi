@@ -25,10 +25,7 @@
                     },
                     "maxByName": {
                         "title": "Выдаваемые лимиты",
-                        "type": "array",
-                        "items": {
-                            "type": "any"
-                        }
+                        "type": "array"
                     },
                     "suffixName": {
                         "title": "Суффикс, характеризующий настройки тарифа",

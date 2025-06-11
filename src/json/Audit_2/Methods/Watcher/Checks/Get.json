@@ -22,10 +22,7 @@
             "Audit_2.Methods.Watcher.Checks.Get.Exec": {
                 "title": "Список проверок радара",
                 "nullable": true,
-                "type": "array",
-                "items": {
-                    "type": "any"
-                }
+                "type": "array"
             }
         }
     }

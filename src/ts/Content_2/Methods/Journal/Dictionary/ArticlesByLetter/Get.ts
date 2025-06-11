@@ -19,7 +19,7 @@ export interface components {
             fetch_style?: import('../../../../../TV/API/Params/FetchStyleTrait.ts').components['schemas']['TV.API.Params.FetchStyleTrait']['fetch_style'];
         };
         /** - массив с ключом "Буква" и значением массив страниц Pages */
-        "Content_2.Methods.Journal.Dictionary.ArticlesByLetter.Get.Exec": Record<string, never>[] | null;
+        "Content_2.Methods.Journal.Dictionary.ArticlesByLetter.Get.Exec": unknown[] | null;
     };
     responses: never;
     parameters: never;

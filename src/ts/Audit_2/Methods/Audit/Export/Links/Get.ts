@@ -12,11 +12,11 @@ export interface components {
             /** Название просмотра (используется на странице с просмотром проверки) */
             view_name?: string;
             /** Шаблон просмотра (используется на странице с просмотром проверки) */
-            view_template: Record<string, never>[];
+            view_template: unknown[];
             /** Логи фильтра по категориям кодов (используется на странице с просмотром проверки) */
-            log_http_codes_hundreds: Record<string, never>[];
+            log_http_codes_hundreds: unknown[];
             /** Тип сигнала просмотра (используется на странице с просмотром проверки) */
-            view_signal_type: Record<string, never>[];
+            view_signal_type: unknown[];
             /** Внешние ссылки (используется на странице с просмотром проверки) */
             links_external?: string;
             project_id: import('../../../../../TV/API/Params/ProjectIdTrait.ts').components['schemas']['TV.API.Params.ProjectIdTrait']['project_id'];

@@ -21,7 +21,7 @@ export interface components {
             /** Длина периода */
             limit?: number | null;
         };
-        "Admin_2.Methods.Analytics.Get.Exec": Record<string, never>[];
+        "Admin_2.Methods.Analytics.Get.Exec": unknown[];
     };
     responses: never;
     parameters: never;

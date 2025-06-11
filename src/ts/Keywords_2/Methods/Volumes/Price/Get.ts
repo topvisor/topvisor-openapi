@@ -36,7 +36,7 @@ export interface components {
             filters?: import('../../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['filters'];
             id?: import('../../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['id'];
         };
-        "Keywords_2.Methods.Volumes.Price.Get.Exec": unknown;
+        "Keywords_2.Methods.Volumes.Price.Get.Exec": Record<string, never>;
     };
     responses: never;
     parameters: never;

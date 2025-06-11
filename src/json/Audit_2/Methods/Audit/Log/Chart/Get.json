@@ -56,10 +56,7 @@
             "Audit_2.Methods.Audit.Log.Chart.Get.Exec": {
                 "title": "Данные для графика",
                 "nullable": true,
-                "type": "array",
-                "items": {
-                    "type": "any"
-                }
+                "type": "array"
             }
         }
     }

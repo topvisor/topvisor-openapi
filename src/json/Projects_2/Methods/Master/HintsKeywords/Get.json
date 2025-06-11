@@ -21,10 +21,7 @@
                 "title": "Получить подсазки запросов для добавления в проект\nДоступ по API закрыт"
             },
             "Projects_2.Methods.Master.HintsKeywords.Get.Exec": {
-                "type": "array",
-                "items": {
-                    "type": "any"
-                }
+                "type": "array"
             }
         }
     }

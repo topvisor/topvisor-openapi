@@ -47,10 +47,7 @@
             },
             "Comments_2.Methods.ByAuthor.Get.Exec": {
                 "nullable": true,
-                "type": "array",
-                "items": {
-                    "type": "any"
-                }
+                "type": "array"
             }
         }
     }

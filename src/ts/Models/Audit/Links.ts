@@ -10,7 +10,7 @@ export interface components {
         "Models.Audit.Links": {
             "COUNT(*)"?: any;
             search?: any;
-            "HTTP_CODES_HUNDREDS()"?: Record<string, never>[] | null;
+            "HTTP_CODES_HUNDREDS()"?: unknown[] | null;
             check_id?: any;
             project_id?: any;
             url_id?: any;
@@ -19,11 +19,11 @@ export interface components {
             type?: any;
             content?: string | null;
             time_parse?: any;
-            http_codes?: Record<string, never>[] | null;
+            http_codes?: unknown[] | null;
             last_http_code?: any;
             count?: any;
             title?: any;
-            redirects?: Record<string, never>[] | null;
+            redirects?: unknown[] | null;
             nofollow?: any;
             sponsored?: any;
             ugc?: any;

@@ -57,10 +57,7 @@
             },
             "Content_2.Methods.Apometr.History.Get.Exec": {
                 "nullable": true,
-                "type": "array",
-                "items": {
-                    "type": "any"
-                }
+                "type": "array"
             }
         }
     }

@@ -12,7 +12,7 @@ export interface components {
             /** ID проекта */
             project_id: number;
             /** Минус фразы */
-            keywords_minus?: Record<string, never>[] | null;
+            keywords_minus?: unknown[] | null;
             /**
              * Отображать сумму с учетом скидки (по умолчанию: 1)
              * @default true

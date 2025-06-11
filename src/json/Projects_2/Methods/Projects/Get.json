@@ -34,10 +34,7 @@
                         "title": "Добавить в результат сводку с указанными параметрами",
                         "nullable": true,
                         "deprecated": true,
-                        "type": "array",
-                        "items": {
-                            "type": "any"
-                        }
+                        "type": "array"
                     },
                     "is_task": {
                         "title": "Является ли проект задачей",
@@ -76,10 +73,7 @@
             },
             "Projects_2.Methods.Projects.Get.Exec": {
                 "nullable": true,
-                "type": "array",
-                "items": {
-                    "type": "any"
-                }
+                "type": "array"
             }
         }
     }

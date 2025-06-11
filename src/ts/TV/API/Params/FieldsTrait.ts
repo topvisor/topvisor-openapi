@@ -16,7 +16,7 @@ export interface components {
              *     Использует поля модели
              * @description @see AbstractMethod::MODEL
              */
-            fields: Record<string, never>[];
+            fields: unknown[];
         };
     };
     responses: never;

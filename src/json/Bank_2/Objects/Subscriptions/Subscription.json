@@ -82,17 +82,11 @@
                     "limitUsedByName": {
                         "title": "Использованные лимиты\n\nДоступные лимиты см. в `plan`\n\nДля нетарифицируемых лимитов значение всегда `null`",
                         "description": "@type Array<Bank_2\\Types\\Subscriptions\\Limit\\Name, int>",
-                        "type": "array",
-                        "items": {
-                            "type": "any"
-                        }
+                        "type": "array"
                     },
                     "limitTypeByName": {
                         "title": "Типы лимитов",
-                        "type": "array",
-                        "items": {
-                            "type": "any"
-                        }
+                        "type": "array"
                     }
                 },
                 "required": [

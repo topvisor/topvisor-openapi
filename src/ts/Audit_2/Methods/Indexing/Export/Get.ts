@@ -23,9 +23,9 @@ export interface components {
             /** Формат экспортируемого файла */
             output: import('../../../../TV/API/Types/ExportFormat.ts').components['schemas']['TV.API.Types.ExportFormat'];
             /** Настройки экспорта */
-            properties?: Record<string, never>[];
+            properties?: unknown[];
             /** Произвольные даты без использования диапазона */
-            dates?: Record<string, never>[] | null;
+            dates?: unknown[] | null;
             /** Дата начала диапазона */
             date1?: import('../../../../TV/API/Types/Date.ts').components['schemas']['TV.API.Types.Date'] | null;
             /** Дата окончания диапазона */

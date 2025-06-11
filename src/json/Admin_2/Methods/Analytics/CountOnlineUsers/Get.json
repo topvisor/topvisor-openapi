@@ -14,10 +14,7 @@
                 "title": "Получение числа активных пользователей"
             },
             "Admin_2.Methods.Analytics.CountOnlineUsers.Get.Exec": {
-                "type": "array",
-                "items": {
-                    "type": "any"
-                }
+                "type": "array"
             }
         }
     }

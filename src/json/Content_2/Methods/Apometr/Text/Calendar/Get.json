@@ -31,9 +31,6 @@
                     "additionalProperties": {
                         "type": "integer"
                     }
-                },
-                "items": {
-                    "type": "any"
                 }
             }
         }

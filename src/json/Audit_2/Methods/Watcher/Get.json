@@ -13,10 +13,7 @@
                     "checks_ids": {
                         "title": "ID проверок в произвольном порядке",
                         "nullable": true,
-                        "type": "array",
-                        "items": {
-                            "type": "any"
-                        }
+                        "type": "array"
                     },
                     "check_id1": {
                         "title": "ID проверки начала диапазона",
@@ -54,10 +51,7 @@
                             "http_codes",
                             "redirects"
                         ],
-                        "type": "array",
-                        "items": {
-                            "type": "any"
-                        }
+                        "type": "array"
                     },
                     "show_headers": {
                         "title": "Добавить в результат заголовки отчета",
@@ -105,10 +99,7 @@
             "Audit_2.Methods.Watcher.Get.Exec": {
                 "title": "Генерируемый на основе urls, список результатов проверок радара",
                 "nullable": true,
-                "type": "array",
-                "items": {
-                    "type": "any"
-                }
+                "type": "array"
             }
         }
     }

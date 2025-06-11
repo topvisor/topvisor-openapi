@@ -25,10 +25,7 @@
                     "names": {
                         "title": "Список имен конкурентов (если указан, должен быть такой же длины как urls)",
                         "nullable": true,
-                        "type": "array",
-                        "items": {
-                            "type": "any"
-                        }
+                        "type": "array"
                     }
                 },
                 "required": [
@@ -38,10 +35,7 @@
                 "title": "Добавление конкурента\n\nОграничения: не более Projects_2\\Competitors::MAX_COMPETITORS_PER_PROJECT конкурентов в одном проекте"
             },
             "Projects_2.Methods.Competitors.Add.Exec": {
-                "type": "array",
-                "items": {
-                    "type": "any"
-                }
+                "type": "array"
             }
         }
     }

@@ -34,10 +34,7 @@
                     "user_data": {
                         "title": "Данные среды пользователя",
                         "nullable": true,
-                        "type": "array",
-                        "items": {
-                            "type": "any"
-                        }
+                        "type": "array"
                     },
                     "resource": {
                         "title": "URL страницы, с которой отправлен тикет\n\nНе используется, если указан user_data",

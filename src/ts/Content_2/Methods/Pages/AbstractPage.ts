@@ -41,11 +41,11 @@ export interface components {
             /** Ссылка на основное изображение (обычно относительный путь до изображения от корня сайта) */
             image?: string | null;
             /** object(name => value) og - объект с данными Open Graph */
-            og?: Record<string, never>[] | null;
+            og?: unknown[] | null;
             /** Массив тегов */
-            c?: Record<string, never>[] | null;
+            c?: unknown[] | null;
             /** Список тегов */
-            tags?: Record<string, never>[] | null;
+            tags?: unknown[] | null;
             /** Не индексировать страницу */
             noindex?: boolean;
             /** Тема оформления страницы */

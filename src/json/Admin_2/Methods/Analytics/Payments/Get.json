@@ -30,10 +30,7 @@
             },
             "Admin_2.Methods.Analytics.Payments.Get.Exec": {
                 "nullable": true,
-                "type": "array",
-                "items": {
-                    "type": "any"
-                }
+                "type": "array"
             }
         }
     }

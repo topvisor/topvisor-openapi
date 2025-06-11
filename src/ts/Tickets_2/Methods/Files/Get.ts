@@ -11,7 +11,7 @@ export interface components {
          *
          *     Процесс создания поста не завершен */
         "Tickets_2.Methods.Files.Get": Record<string, never>;
-        "Tickets_2.Methods.Files.Get.Exec": Record<string, never>[];
+        "Tickets_2.Methods.Files.Get.Exec": unknown[];
     };
     responses: never;
     parameters: never;

@@ -38,10 +38,7 @@
                 "title": "Получение статистики тикетов по оценкам"
             },
             "Admin_2.Methods.Analytics.Tickets.ChartByRates.Get.Exec": {
-                "type": "array",
-                "items": {
-                    "type": "any"
-                }
+                "type": "array"
             }
         }
     }

@@ -32,10 +32,7 @@
                     },
                     "type": {
                         "title": "Тип\n\n- vacation\n- day_off",
-                        "type": "array",
-                        "items": {
-                            "type": "any"
-                        }
+                        "type": "array"
                     }
                 },
                 "required": [

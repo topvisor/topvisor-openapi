@@ -63,10 +63,7 @@
             },
             "Content_2.Methods.Apometr.Calendar.Get.Exec": {
                 "nullable": true,
-                "type": "array",
-                "items": {
-                    "type": "any"
-                }
+                "type": "array"
             }
         }
     }

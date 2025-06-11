@@ -13,10 +13,7 @@
                     "searchers_keys": {
                         "title": "Поисковые ключи",
                         "nullable": true,
-                        "type": "array",
-                        "items": {
-                            "type": "any"
-                        }
+                        "type": "array"
                     },
                     "template_date_range": {
                         "title": "Диапозон значений шаблона",
@@ -26,10 +23,7 @@
                     "dates": {
                         "title": "Произвольные даты без использования диапазона",
                         "nullable": true,
-                        "type": "array",
-                        "items": {
-                            "type": "any"
-                        }
+                        "type": "array"
                     },
                     "date1": {
                         "title": "Дата начала диапазона",
@@ -64,18 +58,12 @@
                     "tags_ids": {
                         "title": "ID тегов",
                         "nullable": true,
-                        "type": "array",
-                        "items": {
-                            "type": "any"
-                        }
+                        "type": "array"
                     },
                     "data_sort": {
                         "title": "Сортировка данных",
                         "nullable": true,
-                        "type": "array",
-                        "items": {
-                            "type": "any"
-                        }
+                        "type": "array"
                     },
                     "only_changed_for": {
                         "title": "Применение изменений только для",

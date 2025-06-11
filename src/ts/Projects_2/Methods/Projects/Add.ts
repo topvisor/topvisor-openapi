@@ -19,7 +19,7 @@ export interface components {
              *       1
              *     ]
              */
-            tags: Record<string, never>[];
+            tags: unknown[];
             /** Id папки, к которой будет привязан проект */
             folder_id?: number | null;
             /** Активность проекта */

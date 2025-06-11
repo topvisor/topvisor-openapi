@@ -26,10 +26,7 @@
                 "nullable": true,
                 "anyOf": [
                     {
-                        "type": "array",
-                        "items": {
-                            "type": "any"
-                        }
+                        "type": "array"
                     },
                     {
                         "type": "integer"

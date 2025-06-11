@@ -21,10 +21,7 @@
                 "title": "Поиск HTML шаблонов"
             },
             "Admin_2.Methods.Tpl.Get.Exec": {
-                "type": "array",
-                "items": {
-                    "type": "any"
-                }
+                "type": "array"
             }
         }
     }
