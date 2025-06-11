@@ -80,7 +80,7 @@
             },
             "Keywords_2.Methods.Collect.Price.Get.Exec": {
                 "title": "Информация о стоимости запуска подбора запросов",
-                "type": "array",
+                "type": "object",
                 "properties": {
                     "pricesByUsers": {
                         "type": "object",

@@ -952,6 +952,26 @@ export interface components {
             readonly Guest_link_created: "Guest link created";
             /** @constant */
             readonly Need_fill_required_fields: "Please fill in all required fields";
+            /** @constant */
+            readonly Report_an_error: "Report an error";
+            /** @constant */
+            readonly We_have_got_your_error_report: "We've got your error report";
+            /** @constant */
+            readonly Thanks: "Thanks";
+            /** @constant */
+            readonly If_we_should_have_any_additional_questions: "If we should have any additional questions, we'll send you a ticket. To open tickets, hit 💌 Tickets in the header.";
+            /** @constant */
+            readonly Open_file: "Open the file";
+            /** @constant */
+            readonly Hello: "Hello";
+            /** @constant */
+            readonly This_is_an_automatic_message_obout_error: "This is an automatic message that I've encountered an error. Below you'll find site logs the devs configured to collect.";
+            /** @constant */
+            readonly Undefined_address: "Undefined address";
+            /** @constant */
+            readonly Error: "Error";
+            /** @constant */
+            readonly Response_server: "Server response";
         };
     };
     responses: never;

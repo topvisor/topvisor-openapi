@@ -17,7 +17,12 @@ export interface components {
             search?: string | null;
             only_duplicates?: boolean;
         };
-        "Admin_2.Methods.I18n.Get.Exec": unknown[];
+        "Admin_2.Methods.I18n.Get.Exec": {
+            lang: string;
+            category: string;
+            name: string;
+            value: string;
+        };
     };
     responses: never;
     parameters: never;

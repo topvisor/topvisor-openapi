@@ -43,7 +43,7 @@
             "Content_2.Methods.Journal.Dictionary.ArticlesByLetter.Get.Exec": {
                 "title": "- массив с ключом \"Буква\" и значением массив страниц Pages",
                 "nullable": true,
-                "type": "array",
+                "type": "object",
                 "additionalProperties": {
                     "type": "object",
                     "properties": {

@@ -25,7 +25,14 @@ export interface components {
          * @description
          *     @throws Exception
          */
-        "Audit_2.Methods.Audit.Results.Page.Get.Exec": unknown[];
+        "Audit_2.Methods.Audit.Results.Page.Get.Exec": {
+            result: {
+                page_in_filter: boolean;
+                index: number;
+                snippet: string;
+                content: string;
+            };
+        };
     };
     responses: never;
     parameters: never;

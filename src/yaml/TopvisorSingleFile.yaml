@@ -3276,40 +3276,6 @@ paths:
             model:
               schema:
                 type: 'null'
-  /get/example_2/bag/:
-    post:
-      operationId: GetExample2Bag
-      tags:
-        - Example_2
-      summary: |-
-        Для тестов интерфейса
-
-        TODO: удалить после закрытия задачи #28444
-      requestBody:
-        content:
-          application/json:
-            schema:
-              $ref: '#/components/schemas/Example_2.Methods.Bag.Get'
-        required: true
-      responses:
-        '200':
-          description: ''
-          content:
-            application/json:
-              schema:
-                oneOf:
-                  - allOf:
-                      - type: object
-                        properties:
-                          result:
-                            $ref: '#/components/schemas/Example_2.Methods.Bag.Get.Exec'
-                        required:
-                          - result
-                      - $ref: '#/components/schemas/ResponseSuccess'
-                  - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /get/example_2/custom/:
     post:
       operationId: GetExample2Custom
@@ -13908,7 +13874,7 @@ components:
       required: []
       title: Получение записей словаря
     Admin_2.Methods.I18n.Get.Exec:
-      type: array
+      type: object
       properties:
         lang:
           type: string
@@ -17660,19 +17626,6 @@ components:
       title: Ассоциативный массив с результирующими переданными параетрами, и результатоми implodeQuotes() и genSet()
       description: '@type array<string, array<string, mixed>>'
       type: array
-    Example_2.Methods.Bag.Get:
-      type: object
-      properties:
-        type:
-          nullable: true
-          type: integer
-      required: []
-      title: |-
-        Для тестов интерфейса
-
-        TODO: удалить после закрытия задачи #28444
-    Example_2.Methods.Bag.Get.Exec:
-      nullable: true
     Example_2.Methods.Custom.Get:
       type: object
       properties:
@@ -19811,7 +19764,7 @@ components:
 
         @throws Exception
       nullable: true
-      type: array
+      type: object
       properties:
         '''countSended''':
           type: integer
@@ -23531,7 +23484,7 @@ components:
       description: '@see Keywords_2\Methods\Collect\AbstractRegular'
     Keywords_2.Methods.Collect.Price.Get.Exec:
       title: Информация о стоимости запуска подбора запросов
-      type: array
+      type: object
       properties:
         pricesByUsers:
           type: object
@@ -26067,7 +26020,7 @@ components:
       description: |-
 
         @throws Exception
-      type: array
+      type: object
       properties:
         result:
           type: object
@@ -26443,7 +26396,7 @@ components:
       title: Получение календаря текстовых апдейтов
     Content_2.Methods.Apometr.Text.Calendar.Get.Exec:
       title: 'Матрица: массив с индексами времени с массивом с индексами дат со значением количества страниц в индексе (в UNIXTIME)'
-      type: array
+      type: object
       additionalProperties:
         type: object
         additionalProperties:
@@ -26583,7 +26536,7 @@ components:
     Content_2.Methods.Journal.Dictionary.ArticlesByLetter.Get.Exec:
       title: '- массив с ключом "Буква" и значением массив страниц Pages'
       nullable: true
-      type: array
+      type: object
       additionalProperties:
         type: object
         properties:

@@ -37,7 +37,24 @@ export interface components {
             debug?: string | null;
         };
         /** Информация о стоимости запуска подбора запросов */
-        "Keywords_2.Methods.Collect.Price.Get.Exec": unknown[];
+        "Keywords_2.Methods.Collect.Price.Get.Exec": {
+            pricesByUsers: {
+                [key: string]: {
+                    price: number;
+                    priceOriginal: number;
+                    qualifiers: {
+                        region_key: number;
+                        searcher_key: "0" | "1" | "5" | "100" | "101" | "102" | "104" | "105" | "106";
+                        region_lang?: string;
+                        also_searched?: number;
+                        depth?: number;
+                        hint_depth: "1" | "2" | "3";
+                        hint_generators: ("letter" | "letter_ru" | "number" | "space")[];
+                    };
+                    comment: string;
+                };
+            };
+        };
     };
     responses: never;
     parameters: never;

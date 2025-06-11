@@ -1745,25 +1745,6 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Для тестов интерфейса
-     *
-     *     TODO: удалить после закрытия задачи #28444 */
-    "/get/example_2/bag/": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        get?: never;
-        put?: never;
-        post: operations["GetExample2Bag"];
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
-    };  
     /** Получение текущего времени */
     "/get/example_2/custom/": {
         parameters: {
@@ -9427,32 +9408,6 @@ export interface operations {
                 content: {
                     "application/json": ({
                         result: import('./Example_2/Methods/Array/Get.ts').components['schemas']['Example_2.Methods.Array.Get.Exec'];
-                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
-                };
-            };
-        };
-    };
-    GetExample2Bag: {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        requestBody: {
-            content: {
-                "application/json": import('./Example_2/Methods/Bag/Get.ts').components['schemas']['Example_2.Methods.Bag.Get'];
-            };
-        };
-        responses: {
-            200: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/json": ({
-                        result: import('./Example_2/Methods/Bag/Get.ts').components['schemas']['Example_2.Methods.Bag.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };

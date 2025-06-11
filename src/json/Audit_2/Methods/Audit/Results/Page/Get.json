@@ -40,7 +40,7 @@
             "Audit_2.Methods.Audit.Results.Page.Get.Exec": {
                 "title": "Результаты анализа страницы",
                 "description": "\n@throws Exception",
-                "type": "array",
+                "type": "object",
                 "properties": {
                     "result": {
                         "type": "object",

@@ -5866,64 +5866,6 @@
                 }
             }
         },
-        "/get/example_2/bag/": {
-            "post": {
-                "operationId": "GetExample2Bag",
-                "tags": [
-                    "Example_2"
-                ],
-                "summary": "Для тестов интерфейса\n\nTODO: удалить после закрытия задачи #28444",
-                "requestBody": {
-                    "content": {
-                        "application/json": {
-                            "schema": {
-                                "$ref": "Example_2/Methods/Bag/Get.json#/components/schemas/Example_2.Methods.Bag.Get"
-                            }
-                        }
-                    },
-                    "required": true
-                },
-                "responses": {
-                    "200": {
-                        "description": "",
-                        "content": {
-                            "application/json": {
-                                "schema": {
-                                    "oneOf": [
-                                        {
-                                            "allOf": [
-                                                {
-                                                    "type": "object",
-                                                    "properties": {
-                                                        "result": {
-                                                            "$ref": "Example_2/Methods/Bag/Get.json#/components/schemas/Example_2.Methods.Bag.Get.Exec"
-                                                        }
-                                                    },
-                                                    "required": [
-                                                        "result"
-                                                    ]
-                                                },
-                                                {
-                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
-                                                }
-                                            ]
-                                        },
-                                        {
-                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
-                                        }
-                                    ]
-                                }
-                            },
-                            "model": {
-                                "schema": {
-                                    "type": "null"
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        },
         "/get/example_2/custom/": {
             "post": {
                 "operationId": "GetExample2Custom",

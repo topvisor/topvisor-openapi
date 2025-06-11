@@ -50,7 +50,12 @@ export interface components {
          *
          *     @throws Exception
          */
-        "Urls_2.Methods.Import.Add.Exec": unknown[] | null;
+        "Urls_2.Methods.Import.Add.Exec": {
+            "'countSended'": number;
+            "'countDuplicated'": number;
+            "'countAdded'": number;
+            "'countChanged'": number;
+        } | null;
     };
     responses: never;
     parameters: never;

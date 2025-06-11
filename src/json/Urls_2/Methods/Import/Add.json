@@ -92,7 +92,7 @@
                 "title": "Информация об импортированных urls",
                 "description": "\n\n@throws Exception",
                 "nullable": true,
-                "type": "array",
+                "type": "object",
                 "properties": {
                     "'countSended'": {
                         "type": "integer"

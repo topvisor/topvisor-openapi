@@ -37,7 +37,7 @@
                 "title": "Получение записей словаря"
             },
             "Admin_2.Methods.I18n.Get.Exec": {
-                "type": "array",
+                "type": "object",
                 "properties": {
                     "lang": {
                         "type": "string"

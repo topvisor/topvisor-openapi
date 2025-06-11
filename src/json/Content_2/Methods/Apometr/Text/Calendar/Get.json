@@ -25,7 +25,7 @@
             },
             "Content_2.Methods.Apometr.Text.Calendar.Get.Exec": {
                 "title": "Матрица: массив с индексами времени с массивом с индексами дат со значением количества страниц в индексе (в UNIXTIME)",
-                "type": "array",
+                "type": "object",
                 "additionalProperties": {
                     "type": "object",
                     "additionalProperties": {
