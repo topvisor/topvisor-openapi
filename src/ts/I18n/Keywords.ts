@@ -610,6 +610,8 @@ export interface components {
             readonly Added_phrases: "Added keywords";
             /** @constant */
             readonly Changed_phrases: "Moved (changed) keywords";
+            /** @constant */
+            readonly Fitler_by_keywords: "What keywords to check";
         };
     };
     responses: never;

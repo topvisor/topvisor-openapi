@@ -1213,6 +1213,10 @@
                     "Changed_phrases": {
                         "const": "Moved (changed) keywords",
                         "readOnly": true
+                    },
+                    "Fitler_by_keywords": {
+                        "const": "What keywords to check",
+                        "readOnly": true
                     }
                 },
                 "required": [
@@ -1515,7 +1519,8 @@
                     "keywords",
                     "No_keywords_found",
                     "Added_phrases",
-                    "Changed_phrases"
+                    "Changed_phrases",
+                    "Fitler_by_keywords"
                 ]
             }
         }
