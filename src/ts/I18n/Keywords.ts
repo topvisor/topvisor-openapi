@@ -609,9 +609,9 @@ export interface components {
             /** @constant */
             readonly Changed_phrases: "Moved (changed) keywords";
             /** @constant */
-            readonly Fitler_by_keywords_for_check: "What keywords to check";
+            readonly Fitler_by_keywords_for_check: "Which keywords to check";
             /** @constant */
-            readonly All_keywords: "Все запросы";
+            readonly All_keywords: "All keywords";
         };
     };
     responses: never;

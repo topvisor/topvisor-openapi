@@ -1211,11 +1211,11 @@
                         "readOnly": true
                     },
                     "Fitler_by_keywords_for_check": {
-                        "const": "What keywords to check",
+                        "const": "Which keywords to check",
                         "readOnly": true
                     },
                     "All_keywords": {
-                        "const": "Все запросы",
+                        "const": "All keywords",
                         "readOnly": true
                     }
                 },
