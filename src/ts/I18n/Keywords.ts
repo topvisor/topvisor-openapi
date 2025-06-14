@@ -601,8 +601,6 @@ export interface components {
             /** @constant */
             readonly Type_of_volume_needed_for_visibility: "Check this type of Search Volume to calculate Visibility for";
             /** @constant */
-            readonly Check_all_wordstats: "Check all keywords";
-            /** @constant */
             readonly keywords: "keywords";
             /** @constant */
             readonly No_keywords_found: "No keywords found";
@@ -612,6 +610,8 @@ export interface components {
             readonly Changed_phrases: "Moved (changed) keywords";
             /** @constant */
             readonly Fitler_by_keywords: "What keywords to check";
+            /** @constant */
+            readonly All_keywords: "Все запросы";
         };
     };
     responses: never;

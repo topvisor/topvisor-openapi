@@ -1194,10 +1194,6 @@
                         "const": "Check this type of Search Volume to calculate Visibility for",
                         "readOnly": true
                     },
-                    "Check_all_wordstats": {
-                        "const": "Check all keywords",
-                        "readOnly": true
-                    },
                     "keywords": {
                         "const": "keywords",
                         "readOnly": true
@@ -1216,6 +1212,10 @@
                     },
                     "Fitler_by_keywords": {
                         "const": "What keywords to check",
+                        "readOnly": true
+                    },
+                    "All_keywords": {
+                        "const": "Все запросы",
                         "readOnly": true
                     }
                 },
@@ -1515,12 +1515,12 @@
                     "Root_folder",
                     "Groups_with_keywords",
                     "Type_of_volume_needed_for_visibility",
-                    "Check_all_wordstats",
                     "keywords",
                     "No_keywords_found",
                     "Added_phrases",
                     "Changed_phrases",
-                    "Fitler_by_keywords"
+                    "Fitler_by_keywords",
+                    "All_keywords"
                 ]
             }
         }
