@@ -579,7 +579,7 @@
                         "readOnly": true
                     },
                     "Skip_tracked_searches": {
-                        "const": "Keywords without checks volume",
+                        "const": "Keywords without checked volume",
                         "readOnly": true
                     },
                     "Check_active_groups_only": {

@@ -293,7 +293,7 @@ export interface components {
             /** @constant */
             readonly Check_old_searches: "Keywords with outdated volume";
             /** @constant */
-            readonly Skip_tracked_searches: "Keywords without checks volume";
+            readonly Skip_tracked_searches: "Keywords without checked volume";
             /** @constant */
             readonly Check_active_groups_only: "Check active groups only";
             /** @constant */
