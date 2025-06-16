@@ -87,6 +87,10 @@ export interface components {
             /** @constant */
             readonly Average_expenses: "Average expenses";
             /** @constant */
+            readonly Add_resource_admin_link: "Add resource admin link";
+            /** @constant */
+            readonly Admin_link: "Admin link";
+            /** @constant */
             readonly Bad: "Bad";
             /** @constant */
             readonly Normal: "OK";

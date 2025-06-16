@@ -22305,6 +22305,64 @@
                 }
             }
         },
+        "/edit/tickets_2/admin/ticket/resourceAdmin/": {
+            "post": {
+                "operationId": "EditTickets2AdminTicketResourceAdmin",
+                "tags": [
+                    "Tickets_2"
+                ],
+                "summary": "Изменение админской ссылки к тикетам. Только для админов",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Tickets_2/Methods/Admin/Ticket/ResourceAdmin/Edit.json#/components/schemas/Tickets_2.Methods.Admin.Ticket.ResourceAdmin.Edit"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "oneOf": [
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "$ref": "Tickets_2/Methods/Admin/Ticket/ResourceAdmin/Edit.json#/components/schemas/Tickets_2.Methods.Admin.Ticket.ResourceAdmin.Edit.Exec"
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "result"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
+                                        }
+                                    ]
+                                }
+                            },
+                            "model": {
+                                "schema": {
+                                    "type": "null"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
         "/add/admin_2/actions/positions/history/copy/": {
             "post": {
                 "operationId": "AddAdmin2ActionsPositionsHistoryCopy",

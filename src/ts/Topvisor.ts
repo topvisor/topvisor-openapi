@@ -6734,6 +6734,23 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
+    /** Изменение админской ссылки к тикетам. Только для админов */
+    "/edit/tickets_2/admin/ticket/resourceAdmin/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["EditTickets2AdminTicketResourceAdmin"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
     /** Копирование истории позиций */
     "/add/admin_2/actions/positions/history/copy/": {
         parameters: {
@@ -16809,6 +16826,32 @@ export interface operations {
                 content: {
                     "application/json": ({
                         result: import('./Tickets_2/Methods/Admin/Templates/Sort/Edit.ts').components['schemas']['Tickets_2.Methods.Admin.Templates.Sort.Edit.Exec'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: null;
+                };
+            };
+        };
+    };
+    EditTickets2AdminTicketResourceAdmin: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Tickets_2/Methods/Admin/Ticket/ResourceAdmin/Edit.ts').components['schemas']['Tickets_2.Methods.Admin.Ticket.ResourceAdmin.Edit'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./Tickets_2/Methods/Admin/Ticket/ResourceAdmin/Edit.ts').components['schemas']['Tickets_2.Methods.Admin.Ticket.ResourceAdmin.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };

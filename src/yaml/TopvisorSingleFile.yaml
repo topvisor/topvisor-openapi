@@ -12200,6 +12200,37 @@ paths:
             model:
               schema:
                 type: 'null'
+  /edit/tickets_2/admin/ticket/resourceAdmin/:
+    post:
+      operationId: EditTickets2AdminTicketResourceAdmin
+      tags:
+        - Tickets_2
+      summary: Изменение админской ссылки к тикетам. Только для админов
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Tickets_2.Methods.Admin.Ticket.ResourceAdmin.Edit'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            $ref: '#/components/schemas/Tickets_2.Methods.Admin.Ticket.ResourceAdmin.Edit.Exec'
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
   /add/admin_2/actions/positions/history/copy/:
     post:
       operationId: AddAdmin2ActionsPositionsHistoryCopy
@@ -26886,6 +26917,22 @@ components:
         - ids
       title: Изменение сортировки шаблонов
     Tickets_2.Methods.Admin.Templates.Sort.Edit.Exec:
+      nullable: true
+      type: integer
+    Tickets_2.Methods.Admin.Ticket.ResourceAdmin.Edit:
+      type: object
+      properties:
+        resource_admin:
+          title: Ссылка
+          type: string
+        ticket_id:
+          title: ID тикета
+          type: integer
+      required:
+        - resource_admin
+        - ticket_id
+      title: Изменение админской ссылки к тикетам. Только для админов
+    Tickets_2.Methods.Admin.Ticket.ResourceAdmin.Edit.Exec:
       nullable: true
       type: integer
     Admin_2.Methods.Actions.Positions.History.Copy.Add:
