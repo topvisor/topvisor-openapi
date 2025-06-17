@@ -1,0 +1,32 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Mentions_2.Methods.Checker.Go.Edit",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Mentions_2.Methods.Checker.Go.Edit": {
+                "type": "object",
+                "properties": {
+                    "searchers_keys": {
+                        "title": "Ключи источников (фильтр)",
+                        "nullable": true,
+                        "allOf": [
+                            {
+                                "$ref": "../../../../Mentions_2/Types/SearchersKeys.json#/components/schemas/Mentions_2.Types.SearchersKeys"
+                            }
+                        ]
+                    }
+                },
+                "required": [],
+                "title": "Отправка правил на проверку"
+            },
+            "Mentions_2.Methods.Checker.Go.Edit.Exec": {
+                "title": "@throws Exception",
+                "type": "array"
+            }
+        }
+    }
+}

@@ -1,0 +1,46 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Mentions_2.Methods.Rules.Add",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Mentions_2.Methods.Rules.Add": {
+                "type": "object",
+                "properties": {
+                    "project_id": {
+                        "title": "ID проекта",
+                        "type": "integer"
+                    },
+                    "name": {
+                        "title": "Имя",
+                        "type": "string"
+                    },
+                    "any": {
+                        "title": "Ключевые слова, любое из",
+                        "type": "array"
+                    },
+                    "plus": {
+                        "title": "Ключевые слова, все из",
+                        "type": "array"
+                    },
+                    "minus": {
+                        "title": "Ключевые слова, ни одно из",
+                        "type": "array"
+                    }
+                },
+                "required": [
+                    "project_id",
+                    "name"
+                ],
+                "title": "Добавление правила"
+            },
+            "Mentions_2.Methods.Rules.Add.Exec": {
+                "title": "@throws Exception",
+                "type": "integer"
+            }
+        }
+    }
+}

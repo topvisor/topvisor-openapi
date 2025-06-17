@@ -1,0 +1,41 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Mentions_2.Methods.Rules.Rename.Edit",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Mentions_2.Methods.Rules.Rename.Edit": {
+                "type": "object",
+                "properties": {
+                    "project_id": {
+                        "title": "ID проекта",
+                        "type": "integer"
+                    },
+                    "name": {
+                        "title": "Имя",
+                        "type": "string"
+                    },
+                    "filters": {
+                        "$ref": "../../../../TV/API/Params/FiltersTrait.json#/components/schemas/TV.API.Params.FiltersTrait/properties/filters"
+                    },
+                    "id": {
+                        "$ref": "../../../../TV/API/Params/FiltersTrait.json#/components/schemas/TV.API.Params.FiltersTrait/properties/id"
+                    }
+                },
+                "required": [
+                    "project_id",
+                    "name",
+                    "filters"
+                ],
+                "title": "Изменить имя правила"
+            },
+            "Mentions_2.Methods.Rules.Rename.Edit.Exec": {
+                "title": "@throws Exception",
+                "type": "integer"
+            }
+        }
+    }
+}

@@ -1,0 +1,37 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Mentions_2.Methods.Checker.Price.Get",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Mentions_2.Methods.Checker.Price.Get": {
+                "type": "object",
+                "properties": {
+                    "searchers_keys": {
+                        "title": "Ключи источников (фильтр)",
+                        "nullable": true,
+                        "allOf": [
+                            {
+                                "$ref": "../../../../Mentions_2/Types/SearchersKeys.json#/components/schemas/Mentions_2.Types.SearchersKeys"
+                            }
+                        ]
+                    },
+                    "apply_discount": {
+                        "title": "Отображать сумму с учетом скидки (по умолчанию 1)",
+                        "default": true,
+                        "type": "boolean"
+                    }
+                },
+                "required": [],
+                "title": "Получение стоимости проверки"
+            },
+            "Mentions_2.Methods.Checker.Price.Get.Exec": {
+                "title": "@throws Exception",
+                "type": "array"
+            }
+        }
+    }
+}

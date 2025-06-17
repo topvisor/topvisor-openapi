@@ -457,6 +457,38 @@ paths:
             model:
               schema:
                 type: 'null'
+  /get/mentions_2/:
+    post:
+      operationId: GetMentions2
+      tags:
+        - Mentions_2
+      summary: Получение списка упоминаний
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Mentions_2.Methods.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            $ref: '#/components/schemas/Mentions_2.Methods.Get.Exec'
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                      - $ref: '#/components/schemas/Pagination'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                $ref: '#/components/schemas/Models.Mentions.Mentions'
   /add/payments_2/:
     post:
       operationId: AddPayments2
@@ -3495,6 +3527,259 @@ paths:
             model:
               schema:
                 $ref: '#/components/schemas/Models.Groups'
+  /edit/mentions_2/readed/:
+    post:
+      operationId: EditMentions2Readed
+      tags:
+        - Mentions_2
+      summary: Изменение флага "прочитано"
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Mentions_2.Methods.Readed.Edit'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            $ref: '#/components/schemas/Mentions_2.Methods.Readed.Edit.Exec'
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                $ref: '#/components/schemas/Models.Mentions.Mentions'
+  /add/mentions_2/rules/:
+    post:
+      operationId: AddMentions2Rules
+      tags:
+        - Mentions_2
+      summary: Добавление правила
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Mentions_2.Methods.Rules.Add'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            $ref: '#/components/schemas/Mentions_2.Methods.Rules.Add.Exec'
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
+  /del/mentions_2/rules/:
+    post:
+      operationId: DelMentions2Rules
+      tags:
+        - Mentions_2
+      summary: Удаление правила
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Mentions_2.Methods.Rules.Del'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            $ref: '#/components/schemas/Mentions_2.Methods.Rules.Del.Exec'
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                $ref: '#/components/schemas/Models.Mentions.Rules'
+  /get/mentions_2/rules/:
+    post:
+      operationId: GetMentions2Rules
+      tags:
+        - Mentions_2
+      summary: Получение списка правил
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Mentions_2.Methods.Rules.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            $ref: '#/components/schemas/Mentions_2.Methods.Rules.Get.Exec'
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                      - $ref: '#/components/schemas/Pagination'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                $ref: '#/components/schemas/Models.Mentions.Rules'
+  /add/mentions_2/searchers/:
+    post:
+      operationId: AddMentions2Searchers
+      tags:
+        - Mentions_2
+      summary: |-
+        Добавление поисковика
+
+        Изменит, если уже существует
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Mentions_2.Methods.Searchers.Add'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            $ref: '#/components/schemas/Mentions_2.Methods.Searchers.Add.Exec'
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
+  /del/mentions_2/searchers/:
+    post:
+      operationId: DelMentions2Searchers
+      tags:
+        - Mentions_2
+      summary: Удаление поисковика
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Mentions_2.Methods.Searchers.Del'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            $ref: '#/components/schemas/Mentions_2.Methods.Searchers.Del.Exec'
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                $ref: '#/components/schemas/Models.Mentions.Searchers'
+  /get/mentions_2/searchers/:
+    post:
+      operationId: GetMentions2Searchers
+      tags:
+        - Mentions_2
+      summary: Получение списка поисковиков
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Mentions_2.Methods.Searchers.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            $ref: '#/components/schemas/Mentions_2.Methods.Searchers.Get.Exec'
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                      - $ref: '#/components/schemas/Pagination'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                $ref: '#/components/schemas/Models.Mentions.Searchers'
+  /edit/mentions_2/sentiment/:
+    post:
+      operationId: EditMentions2Sentiment
+      tags:
+        - Mentions_2
+      summary: Изменение тональности
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Mentions_2.Methods.Sentiment.Edit'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            $ref: '#/components/schemas/Mentions_2.Methods.Sentiment.Edit.Exec'
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                $ref: '#/components/schemas/Models.Mentions.Mentions'
   /get/openapi_2/download/:
     post:
       operationId: GetOpenapi2Download
@@ -8205,6 +8490,192 @@ paths:
             model:
               schema:
                 type: 'null'
+  /edit/mentions_2/checker/go/:
+    post:
+      operationId: EditMentions2CheckerGo
+      tags:
+        - Mentions_2
+      summary: Отправка правил на проверку
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Mentions_2.Methods.Checker.Go.Edit'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            $ref: '#/components/schemas/Mentions_2.Methods.Checker.Go.Edit.Exec'
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
+  /get/mentions_2/checker/price/:
+    post:
+      operationId: GetMentions2CheckerPrice
+      tags:
+        - Mentions_2
+      summary: Получение стоимости проверки
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Mentions_2.Methods.Checker.Price.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            $ref: '#/components/schemas/Mentions_2.Methods.Checker.Price.Get.Exec'
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
+  /edit/mentions_2/rules/keywords/:
+    post:
+      operationId: EditMentions2RulesKeywords
+      tags:
+        - Mentions_2
+      summary: Изменение ключевых слов правила
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Mentions_2.Methods.Rules.Keywords.Edit'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            $ref: '#/components/schemas/Mentions_2.Methods.Rules.Keywords.Edit.Exec'
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                $ref: '#/components/schemas/Models.Mentions.Rules'
+  /edit/mentions_2/rules/rename/:
+    post:
+      operationId: EditMentions2RulesRename
+      tags:
+        - Mentions_2
+      summary: Изменить имя правила
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Mentions_2.Methods.Rules.Rename.Edit'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            $ref: '#/components/schemas/Mentions_2.Methods.Rules.Rename.Edit.Exec'
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                $ref: '#/components/schemas/Models.Mentions.Rules'
+  /edit/mentions_2/searchers/depth/:
+    post:
+      operationId: EditMentions2SearchersDepth
+      tags:
+        - Mentions_2
+      summary: Изменение глубины сбора упоминаний
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Mentions_2.Methods.Searchers.Depth.Edit'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            $ref: '#/components/schemas/Mentions_2.Methods.Searchers.Depth.Edit.Exec'
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                $ref: '#/components/schemas/Models.Mentions.Searchers'
+  /edit/mentions_2/searchers/enabled/:
+    post:
+      operationId: EditMentions2SearchersEnabled
+      tags:
+        - Mentions_2
+      summary: Изменить активность поисковика
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Mentions_2.Methods.Searchers.Enabled.Edit'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            $ref: '#/components/schemas/Mentions_2.Methods.Searchers.Enabled.Edit.Exec'
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                $ref: '#/components/schemas/Models.Mentions.Searchers'
   /edit/payments_2/recurrent/suspend/:
     post:
       operationId: EditPayments2RecurrentSuspend
@@ -12857,6 +13328,65 @@ components:
            - count_unique_views
            - count_likes
       type: array
+    Mentions_2.Methods.Get:
+      type: object
+      properties:
+        project_id:
+          title: ID проекта
+          type: integer
+        fields:
+          $ref: '#/components/schemas/fields'
+        orders:
+          $ref: '#/components/schemas/orders'
+        filters:
+          $ref: '#/components/schemas/filters'
+        id:
+          $ref: '#/components/schemas/id'
+        limit:
+          $ref: '#/components/schemas/limit'
+        offset:
+          $ref: '#/components/schemas/offset'
+        fetch_style:
+          $ref: '#/components/schemas/fetch_style'
+      required:
+        - project_id
+        - fields
+        - orders
+        - filters
+        - offset
+      title: Получение списка упоминаний
+    Mentions_2.Methods.Get.Exec:
+      title: '@throws Exception'
+      type: array
+    Models.Mentions.Mentions:
+      properties:
+        id: {}
+        project_id:
+          nullable: true
+        rule_id:
+          nullable: true
+        searcher_key:
+          nullable: true
+        post_user_id:
+          nullable: true
+        post_id:
+          nullable: true
+        name:
+          nullable: true
+        avatar:
+          nullable: true
+        date:
+          nullable: true
+        text:
+          nullable: true
+        sentiment:
+          nullable: true
+        readed:
+          nullable: true
+        time_parse:
+          nullable: true
+        need_send_report:
+          nullable: true
     Payments_2.Types.System:
       type: string
       enum:
@@ -18293,6 +18823,263 @@ components:
               - date
               - project_id
               - region_index
+    Mentions_2.Methods.Readed.Edit:
+      type: object
+      properties:
+        project_id:
+          title: ID проекта
+          type: integer
+        readed:
+          title: Флаг "прочитано"
+          type: boolean
+        filters:
+          $ref: '#/components/schemas/filters'
+        id:
+          $ref: '#/components/schemas/id'
+      required:
+        - project_id
+        - filters
+      title: Изменение флага "прочитано"
+    Mentions_2.Methods.Readed.Edit.Exec:
+      title: '@throws Exception'
+      type: integer
+    Mentions_2.Methods.Rules.Add:
+      type: object
+      properties:
+        project_id:
+          title: ID проекта
+          type: integer
+        name:
+          title: Имя
+          type: string
+        any:
+          title: Ключевые слова, любое из
+          type: array
+        plus:
+          title: Ключевые слова, все из
+          type: array
+        minus:
+          title: Ключевые слова, ни одно из
+          type: array
+      required:
+        - project_id
+        - name
+      title: Добавление правила
+    Mentions_2.Methods.Rules.Add.Exec:
+      title: '@throws Exception'
+      type: integer
+    Mentions_2.Methods.Rules.Del:
+      type: object
+      properties:
+        project_id:
+          title: ID проекта
+          type: integer
+        filters:
+          $ref: '#/components/schemas/filters'
+        id:
+          $ref: '#/components/schemas/id'
+      required:
+        - project_id
+        - filters
+      title: Удаление правила
+    Mentions_2.Methods.Rules.Del.Exec:
+      title: '@throws Exception'
+      type: integer
+    Models.Mentions.Rules:
+      properties:
+        id: {}
+        project_id:
+          nullable: true
+        name:
+          nullable: true
+        any:
+          nullable: true
+        plus:
+          nullable: true
+        minus:
+          nullable: true
+        status:
+          nullable: true
+        report_last_time:
+          nullable: true
+        searcher_depth_by_keys:
+          nullable: true
+        searcher_key:
+          nullable: true
+        project_user_id:
+          nullable: true
+        project_competitor:
+          nullable: true
+        project_right:
+          nullable: true
+    Mentions_2.Methods.Rules.Get:
+      type: object
+      properties:
+        project_id:
+          title: ID проекта
+          type: integer
+        fields:
+          $ref: '#/components/schemas/fields'
+        orders:
+          $ref: '#/components/schemas/orders'
+        filters:
+          $ref: '#/components/schemas/filters'
+        id:
+          $ref: '#/components/schemas/id'
+        limit:
+          $ref: '#/components/schemas/limit'
+        offset:
+          $ref: '#/components/schemas/offset'
+        fetch_style:
+          $ref: '#/components/schemas/fetch_style'
+      required:
+        - project_id
+        - fields
+        - orders
+        - filters
+        - offset
+      title: Получение списка правил
+    Mentions_2.Methods.Rules.Get.Exec:
+      title: '@throws Exception'
+      type: array
+    Mentions_2.Types.SearcherKey:
+      type: integer
+      enum:
+        - 101
+        - 102
+        - 103
+      title: Доступные ключи поисковика
+    Mentions_2.Methods.Searchers.Add:
+      type: object
+      properties:
+        project_id:
+          title: ID проекта
+          type: integer
+        rule_id:
+          title: ID правила
+          type: integer
+        key:
+          allOf:
+            - $ref: '#/components/schemas/Mentions_2.Types.SearcherKey'
+        enabled:
+          title: Включен ли поисковик
+          default: true
+          type: boolean
+        depth:
+          title: |-
+            Глубина сбора упоминаний (x100)
+
+            От 1 до 10
+          nullable: true
+          type: integer
+      required:
+        - project_id
+        - rule_id
+        - key
+      title: |-
+        Добавление поисковика
+
+        Изменит, если уже существует
+    Mentions_2.Methods.Searchers.Add.Exec:
+      type: integer
+    Mentions_2.Methods.Searchers.Del:
+      type: object
+      properties:
+        project_id:
+          title: ID проекта
+          type: integer
+        rule_id:
+          title: ID правила
+          type: integer
+        filters:
+          $ref: '#/components/schemas/filters'
+        id:
+          $ref: '#/components/schemas/id'
+      required:
+        - project_id
+        - rule_id
+        - filters
+      title: Удаление поисковика
+    Mentions_2.Methods.Searchers.Del.Exec:
+      title: '@throws Exception'
+      type: integer
+    Models.Mentions.Searchers:
+      properties:
+        rule_id:
+          nullable: true
+        key:
+          nullable: true
+        project_id:
+          nullable: true
+        depth:
+          nullable: true
+        enabled:
+          nullable: true
+        changed:
+          nullable: true
+    Mentions_2.Methods.Searchers.Get:
+      type: object
+      properties:
+        project_id:
+          title: ID проекта
+          type: integer
+        rule_id:
+          title: ID правила
+          type: integer
+        fields:
+          $ref: '#/components/schemas/fields'
+        orders:
+          $ref: '#/components/schemas/orders'
+        filters:
+          $ref: '#/components/schemas/filters'
+        id:
+          $ref: '#/components/schemas/id'
+        limit:
+          $ref: '#/components/schemas/limit'
+        offset:
+          $ref: '#/components/schemas/offset'
+        fetch_style:
+          $ref: '#/components/schemas/fetch_style'
+      required:
+        - project_id
+        - rule_id
+        - fields
+        - orders
+        - filters
+        - offset
+      title: Получение списка поисковиков
+    Mentions_2.Methods.Searchers.Get.Exec:
+      title: '@throws Exception'
+      type: array
+    Mentions_2.Types.Sentiment:
+      type: string
+      enum:
+        - bad
+        - neutral
+        - good
+      title: Тональность
+    Mentions_2.Methods.Sentiment.Edit:
+      type: object
+      properties:
+        project_id:
+          title: ID проекта
+          type: integer
+        sentiment:
+          title: Тональность
+          default: neutral
+          allOf:
+            - $ref: '#/components/schemas/Mentions_2.Types.Sentiment'
+        filters:
+          $ref: '#/components/schemas/filters'
+        id:
+          $ref: '#/components/schemas/id'
+      required:
+        - project_id
+        - filters
+      title: Изменение тональности
+    Mentions_2.Methods.Sentiment.Edit.Exec:
+      title: '@throws Exception'
+      type: integer
     OpenAPI_2.Methods.Download.Get:
       type: object
       properties:
@@ -23845,6 +24632,147 @@ components:
       title: Отправление письма с лэндинга вакансий на hr@topvisor.com
     Landings_2.Methods.Hr.Feedback.Add.Exec:
       nullable: true
+      type: integer
+    Mentions_2.Types.SearchersKeys:
+      type: array
+      items:
+        $ref: '#/components/schemas/Mentions_2.Types.SearcherKey'
+      title: Id поисковых системы
+    Mentions_2.Methods.Checker.Go.Edit:
+      type: object
+      properties:
+        searchers_keys:
+          title: Ключи источников (фильтр)
+          nullable: true
+          allOf:
+            - $ref: '#/components/schemas/Mentions_2.Types.SearchersKeys'
+      required: []
+      title: Отправка правил на проверку
+    Mentions_2.Methods.Checker.Go.Edit.Exec:
+      title: '@throws Exception'
+      type: array
+    Mentions_2.Methods.Checker.Price.Get:
+      type: object
+      properties:
+        searchers_keys:
+          title: Ключи источников (фильтр)
+          nullable: true
+          allOf:
+            - $ref: '#/components/schemas/Mentions_2.Types.SearchersKeys'
+        apply_discount:
+          title: Отображать сумму с учетом скидки (по умолчанию 1)
+          default: true
+          type: boolean
+      required: []
+      title: Получение стоимости проверки
+    Mentions_2.Methods.Checker.Price.Get.Exec:
+      title: '@throws Exception'
+      type: array
+    Mentions_2.Types.Rules.Keywords.Type:
+      type: string
+      enum:
+        - any
+        - plus
+        - minus
+      title: Типы доступных фраз
+    Mentions_2.Methods.Rules.Keywords.Edit:
+      type: object
+      properties:
+        project_id:
+          title: ID проекта
+          type: integer
+        keywords:
+          title: Фразы для изменения
+          type: array
+        type:
+          title: Тип ключевых слов
+          allOf:
+            - $ref: '#/components/schemas/Mentions_2.Types.Rules.Keywords.Type'
+        filters:
+          $ref: '#/components/schemas/filters'
+        id:
+          $ref: '#/components/schemas/id'
+      required:
+        - project_id
+        - keywords
+        - type
+        - filters
+      title: Изменение ключевых слов правила
+    Mentions_2.Methods.Rules.Keywords.Edit.Exec:
+      title: '@throws Exception'
+      type: integer
+    Mentions_2.Methods.Rules.Rename.Edit:
+      type: object
+      properties:
+        project_id:
+          title: ID проекта
+          type: integer
+        name:
+          title: Имя
+          type: string
+        filters:
+          $ref: '#/components/schemas/filters'
+        id:
+          $ref: '#/components/schemas/id'
+      required:
+        - project_id
+        - name
+        - filters
+      title: Изменить имя правила
+    Mentions_2.Methods.Rules.Rename.Edit.Exec:
+      title: '@throws Exception'
+      type: integer
+    Mentions_2.Methods.Searchers.Depth.Edit:
+      type: object
+      properties:
+        project_id:
+          title: ID проекта
+          type: integer
+        rule_id:
+          title: ID правила
+          type: integer
+        depth:
+          title: |-
+            Глубина сбора упоминаний (x100)
+
+            От 1 до 10
+          nullable: true
+          type: integer
+        filters:
+          $ref: '#/components/schemas/filters'
+        id:
+          $ref: '#/components/schemas/id'
+      required:
+        - project_id
+        - rule_id
+        - filters
+      title: Изменение глубины сбора упоминаний
+    Mentions_2.Methods.Searchers.Depth.Edit.Exec:
+      title: '@throws Exception'
+      type: integer
+    Mentions_2.Methods.Searchers.Enabled.Edit:
+      type: object
+      properties:
+        project_id:
+          title: ID проекта
+          type: integer
+        rule_id:
+          title: ID правила
+          type: integer
+        enabled:
+          title: Включен ли поисковик
+          type: integer
+        filters:
+          $ref: '#/components/schemas/filters'
+        id:
+          $ref: '#/components/schemas/id'
+      required:
+        - project_id
+        - rule_id
+        - filters
+      title: Изменить активность поисковика
+    Mentions_2.Methods.Searchers.Enabled.Edit.Exec:
+      title: '@throws Exception'
       type: integer
     Payments_2.Methods.Recurrent.Suspend.Edit:
       type: object

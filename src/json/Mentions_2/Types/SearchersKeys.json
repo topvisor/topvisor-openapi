@@ -1,0 +1,19 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Mentions_2.Types.SearchersKeys",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Mentions_2.Types.SearchersKeys": {
+                "type": "array",
+                "items": {
+                    "$ref": "../../Mentions_2/Types/SearcherKey.json#/components/schemas/Mentions_2.Types.SearcherKey"
+                },
+                "title": "Id поисковых системы"
+            }
+        }
+    }
+}

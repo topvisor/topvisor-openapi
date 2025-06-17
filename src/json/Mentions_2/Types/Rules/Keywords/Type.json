@@ -1,0 +1,21 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Mentions_2.Types.Rules.Keywords.Type",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Mentions_2.Types.Rules.Keywords.Type": {
+                "type": "string",
+                "enum": [
+                    "any",
+                    "plus",
+                    "minus"
+                ],
+                "title": "Типы доступных фраз"
+            }
+        }
+    }
+}

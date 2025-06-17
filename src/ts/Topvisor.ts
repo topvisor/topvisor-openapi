@@ -199,6 +199,23 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
+    /** Получение списка упоминаний */
+    "/get/mentions_2/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["GetMentions2"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
     /** Создание платежки и переход к оплате
      *
      *     Возвращает id платежа, если указан параметр $return_id = true
@@ -1857,6 +1874,144 @@ export interface paths {
         get?: never;
         put?: never;
         post: operations["GetKeywords2Volumes"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Изменение флага "прочитано" */
+    "/edit/mentions_2/readed/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["EditMentions2Readed"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Добавление правила */
+    "/add/mentions_2/rules/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["AddMentions2Rules"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Удаление правила */
+    "/del/mentions_2/rules/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["DelMentions2Rules"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Получение списка правил */
+    "/get/mentions_2/rules/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["GetMentions2Rules"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Добавление поисковика
+     *
+     *     Изменит, если уже существует */
+    "/add/mentions_2/searchers/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["AddMentions2Searchers"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Удаление поисковика */
+    "/del/mentions_2/searchers/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["DelMentions2Searchers"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Получение списка поисковиков */
+    "/get/mentions_2/searchers/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["GetMentions2Searchers"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Изменение тональности */
+    "/edit/mentions_2/sentiment/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["EditMentions2Sentiment"];
         delete?: never;
         options?: never;
         head?: never;
@@ -4510,6 +4665,108 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
+    /** Отправка правил на проверку */
+    "/edit/mentions_2/checker/go/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["EditMentions2CheckerGo"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Получение стоимости проверки */
+    "/get/mentions_2/checker/price/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["GetMentions2CheckerPrice"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Изменение ключевых слов правила */
+    "/edit/mentions_2/rules/keywords/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["EditMentions2RulesKeywords"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Изменить имя правила */
+    "/edit/mentions_2/rules/rename/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["EditMentions2RulesRename"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Изменение глубины сбора упоминаний */
+    "/edit/mentions_2/searchers/depth/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["EditMentions2SearchersDepth"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Изменить активность поисковика */
+    "/edit/mentions_2/searchers/enabled/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["EditMentions2SearchersEnabled"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
     /** Управление приостановкой/возобновлением рекуррентных платежей */
     "/edit/payments_2/recurrent/suspend/": {
         parameters: {
@@ -7097,6 +7354,32 @@ export interface operations {
             };
         };
     };
+    GetMentions2: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Mentions_2/Methods/Get.ts').components['schemas']['Mentions_2.Methods.Get'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./Mentions_2/Methods/Get.ts').components['schemas']['Mentions_2.Methods.Get.Exec'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: import('./Models/Mentions/Mentions.ts').components['schemas']['Models.Mentions.Mentions'];
+                };
+            };
+        };
+    };
     AddPayments2: {
         parameters: {
             query?: never;
@@ -9609,6 +9892,214 @@ export interface operations {
                         result: import('./Keywords_2/Methods/Volumes/Get.ts').components['schemas']['Keywords_2.Methods.Volumes.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: import('./Models/Groups.ts').components['schemas']['Models.Groups'];
+                };
+            };
+        };
+    };
+    EditMentions2Readed: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Mentions_2/Methods/Readed/Edit.ts').components['schemas']['Mentions_2.Methods.Readed.Edit'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./Mentions_2/Methods/Readed/Edit.ts').components['schemas']['Mentions_2.Methods.Readed.Edit.Exec'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: import('./Models/Mentions/Mentions.ts').components['schemas']['Models.Mentions.Mentions'];
+                };
+            };
+        };
+    };
+    AddMentions2Rules: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Mentions_2/Methods/Rules/Add.ts').components['schemas']['Mentions_2.Methods.Rules.Add'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./Mentions_2/Methods/Rules/Add.ts').components['schemas']['Mentions_2.Methods.Rules.Add.Exec'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: null;
+                };
+            };
+        };
+    };
+    DelMentions2Rules: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Mentions_2/Methods/Rules/Del.ts').components['schemas']['Mentions_2.Methods.Rules.Del'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./Mentions_2/Methods/Rules/Del.ts').components['schemas']['Mentions_2.Methods.Rules.Del.Exec'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: import('./Models/Mentions/Rules.ts').components['schemas']['Models.Mentions.Rules'];
+                };
+            };
+        };
+    };
+    GetMentions2Rules: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Mentions_2/Methods/Rules/Get.ts').components['schemas']['Mentions_2.Methods.Rules.Get'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./Mentions_2/Methods/Rules/Get.ts').components['schemas']['Mentions_2.Methods.Rules.Get.Exec'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: import('./Models/Mentions/Rules.ts').components['schemas']['Models.Mentions.Rules'];
+                };
+            };
+        };
+    };
+    AddMentions2Searchers: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Mentions_2/Methods/Searchers/Add.ts').components['schemas']['Mentions_2.Methods.Searchers.Add'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./Mentions_2/Methods/Searchers/Add.ts').components['schemas']['Mentions_2.Methods.Searchers.Add.Exec'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: null;
+                };
+            };
+        };
+    };
+    DelMentions2Searchers: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Mentions_2/Methods/Searchers/Del.ts').components['schemas']['Mentions_2.Methods.Searchers.Del'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./Mentions_2/Methods/Searchers/Del.ts').components['schemas']['Mentions_2.Methods.Searchers.Del.Exec'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: import('./Models/Mentions/Searchers.ts').components['schemas']['Models.Mentions.Searchers'];
+                };
+            };
+        };
+    };
+    GetMentions2Searchers: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Mentions_2/Methods/Searchers/Get.ts').components['schemas']['Mentions_2.Methods.Searchers.Get'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./Mentions_2/Methods/Searchers/Get.ts').components['schemas']['Mentions_2.Methods.Searchers.Get.Exec'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: import('./Models/Mentions/Searchers.ts').components['schemas']['Models.Mentions.Searchers'];
+                };
+            };
+        };
+    };
+    EditMentions2Sentiment: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Mentions_2/Methods/Sentiment/Edit.ts').components['schemas']['Mentions_2.Methods.Sentiment.Edit'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./Mentions_2/Methods/Sentiment/Edit.ts').components['schemas']['Mentions_2.Methods.Sentiment.Edit.Exec'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: import('./Models/Mentions/Mentions.ts').components['schemas']['Models.Mentions.Mentions'];
                 };
             };
         };
@@ -13510,6 +14001,162 @@ export interface operations {
                         result: import('./Landings_2/Methods/Hr/Feedback/Add.ts').components['schemas']['Landings_2.Methods.Hr.Feedback.Add.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
+                };
+            };
+        };
+    };
+    EditMentions2CheckerGo: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Mentions_2/Methods/Checker/Go/Edit.ts').components['schemas']['Mentions_2.Methods.Checker.Go.Edit'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./Mentions_2/Methods/Checker/Go/Edit.ts').components['schemas']['Mentions_2.Methods.Checker.Go.Edit.Exec'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: null;
+                };
+            };
+        };
+    };
+    GetMentions2CheckerPrice: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Mentions_2/Methods/Checker/Price/Get.ts').components['schemas']['Mentions_2.Methods.Checker.Price.Get'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./Mentions_2/Methods/Checker/Price/Get.ts').components['schemas']['Mentions_2.Methods.Checker.Price.Get.Exec'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: null;
+                };
+            };
+        };
+    };
+    EditMentions2RulesKeywords: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Mentions_2/Methods/Rules/Keywords/Edit.ts').components['schemas']['Mentions_2.Methods.Rules.Keywords.Edit'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./Mentions_2/Methods/Rules/Keywords/Edit.ts').components['schemas']['Mentions_2.Methods.Rules.Keywords.Edit.Exec'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: import('./Models/Mentions/Rules.ts').components['schemas']['Models.Mentions.Rules'];
+                };
+            };
+        };
+    };
+    EditMentions2RulesRename: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Mentions_2/Methods/Rules/Rename/Edit.ts').components['schemas']['Mentions_2.Methods.Rules.Rename.Edit'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./Mentions_2/Methods/Rules/Rename/Edit.ts').components['schemas']['Mentions_2.Methods.Rules.Rename.Edit.Exec'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: import('./Models/Mentions/Rules.ts').components['schemas']['Models.Mentions.Rules'];
+                };
+            };
+        };
+    };
+    EditMentions2SearchersDepth: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Mentions_2/Methods/Searchers/Depth/Edit.ts').components['schemas']['Mentions_2.Methods.Searchers.Depth.Edit'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./Mentions_2/Methods/Searchers/Depth/Edit.ts').components['schemas']['Mentions_2.Methods.Searchers.Depth.Edit.Exec'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: import('./Models/Mentions/Searchers.ts').components['schemas']['Models.Mentions.Searchers'];
+                };
+            };
+        };
+    };
+    EditMentions2SearchersEnabled: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Mentions_2/Methods/Searchers/Enabled/Edit.ts').components['schemas']['Mentions_2.Methods.Searchers.Enabled.Edit'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./Mentions_2/Methods/Searchers/Enabled/Edit.ts').components['schemas']['Mentions_2.Methods.Searchers.Enabled.Edit.Exec'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: import('./Models/Mentions/Searchers.ts').components['schemas']['Models.Mentions.Searchers'];
                 };
             };
         };

@@ -623,6 +623,67 @@
                 }
             }
         },
+        "/get/mentions_2/": {
+            "post": {
+                "operationId": "GetMentions2",
+                "tags": [
+                    "Mentions_2"
+                ],
+                "summary": "Получение списка упоминаний",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Mentions_2/Methods/Get.json#/components/schemas/Mentions_2.Methods.Get"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "oneOf": [
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "$ref": "Mentions_2/Methods/Get.json#/components/schemas/Mentions_2.Methods.Get.Exec"
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "result"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                },
+                                                {
+                                                    "$ref": "Pagination.json#/components/schemas/Pagination"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
+                                        }
+                                    ]
+                                }
+                            },
+                            "model": {
+                                "schema": {
+                                    "$ref": "Models/Mentions/Mentions.json#/components/schemas/Models.Mentions.Mentions"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
         "/add/payments_2/": {
             "post": {
                 "operationId": "AddPayments2",
@@ -6273,6 +6334,476 @@
                             "model": {
                                 "schema": {
                                     "$ref": "Models/Groups.json#/components/schemas/Models.Groups"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/edit/mentions_2/readed/": {
+            "post": {
+                "operationId": "EditMentions2Readed",
+                "tags": [
+                    "Mentions_2"
+                ],
+                "summary": "Изменение флага \"прочитано\"",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Mentions_2/Methods/Readed/Edit.json#/components/schemas/Mentions_2.Methods.Readed.Edit"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "oneOf": [
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "$ref": "Mentions_2/Methods/Readed/Edit.json#/components/schemas/Mentions_2.Methods.Readed.Edit.Exec"
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "result"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
+                                        }
+                                    ]
+                                }
+                            },
+                            "model": {
+                                "schema": {
+                                    "$ref": "Models/Mentions/Mentions.json#/components/schemas/Models.Mentions.Mentions"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/add/mentions_2/rules/": {
+            "post": {
+                "operationId": "AddMentions2Rules",
+                "tags": [
+                    "Mentions_2"
+                ],
+                "summary": "Добавление правила",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Mentions_2/Methods/Rules/Add.json#/components/schemas/Mentions_2.Methods.Rules.Add"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "oneOf": [
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "$ref": "Mentions_2/Methods/Rules/Add.json#/components/schemas/Mentions_2.Methods.Rules.Add.Exec"
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "result"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
+                                        }
+                                    ]
+                                }
+                            },
+                            "model": {
+                                "schema": {
+                                    "type": "null"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/del/mentions_2/rules/": {
+            "post": {
+                "operationId": "DelMentions2Rules",
+                "tags": [
+                    "Mentions_2"
+                ],
+                "summary": "Удаление правила",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Mentions_2/Methods/Rules/Del.json#/components/schemas/Mentions_2.Methods.Rules.Del"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "oneOf": [
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "$ref": "Mentions_2/Methods/Rules/Del.json#/components/schemas/Mentions_2.Methods.Rules.Del.Exec"
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "result"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
+                                        }
+                                    ]
+                                }
+                            },
+                            "model": {
+                                "schema": {
+                                    "$ref": "Models/Mentions/Rules.json#/components/schemas/Models.Mentions.Rules"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/get/mentions_2/rules/": {
+            "post": {
+                "operationId": "GetMentions2Rules",
+                "tags": [
+                    "Mentions_2"
+                ],
+                "summary": "Получение списка правил",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Mentions_2/Methods/Rules/Get.json#/components/schemas/Mentions_2.Methods.Rules.Get"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "oneOf": [
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "$ref": "Mentions_2/Methods/Rules/Get.json#/components/schemas/Mentions_2.Methods.Rules.Get.Exec"
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "result"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                },
+                                                {
+                                                    "$ref": "Pagination.json#/components/schemas/Pagination"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
+                                        }
+                                    ]
+                                }
+                            },
+                            "model": {
+                                "schema": {
+                                    "$ref": "Models/Mentions/Rules.json#/components/schemas/Models.Mentions.Rules"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/add/mentions_2/searchers/": {
+            "post": {
+                "operationId": "AddMentions2Searchers",
+                "tags": [
+                    "Mentions_2"
+                ],
+                "summary": "Добавление поисковика\n\nИзменит, если уже существует",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Mentions_2/Methods/Searchers/Add.json#/components/schemas/Mentions_2.Methods.Searchers.Add"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "oneOf": [
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "$ref": "Mentions_2/Methods/Searchers/Add.json#/components/schemas/Mentions_2.Methods.Searchers.Add.Exec"
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "result"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
+                                        }
+                                    ]
+                                }
+                            },
+                            "model": {
+                                "schema": {
+                                    "type": "null"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/del/mentions_2/searchers/": {
+            "post": {
+                "operationId": "DelMentions2Searchers",
+                "tags": [
+                    "Mentions_2"
+                ],
+                "summary": "Удаление поисковика",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Mentions_2/Methods/Searchers/Del.json#/components/schemas/Mentions_2.Methods.Searchers.Del"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "oneOf": [
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "$ref": "Mentions_2/Methods/Searchers/Del.json#/components/schemas/Mentions_2.Methods.Searchers.Del.Exec"
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "result"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
+                                        }
+                                    ]
+                                }
+                            },
+                            "model": {
+                                "schema": {
+                                    "$ref": "Models/Mentions/Searchers.json#/components/schemas/Models.Mentions.Searchers"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/get/mentions_2/searchers/": {
+            "post": {
+                "operationId": "GetMentions2Searchers",
+                "tags": [
+                    "Mentions_2"
+                ],
+                "summary": "Получение списка поисковиков",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Mentions_2/Methods/Searchers/Get.json#/components/schemas/Mentions_2.Methods.Searchers.Get"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "oneOf": [
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "$ref": "Mentions_2/Methods/Searchers/Get.json#/components/schemas/Mentions_2.Methods.Searchers.Get.Exec"
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "result"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                },
+                                                {
+                                                    "$ref": "Pagination.json#/components/schemas/Pagination"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
+                                        }
+                                    ]
+                                }
+                            },
+                            "model": {
+                                "schema": {
+                                    "$ref": "Models/Mentions/Searchers.json#/components/schemas/Models.Mentions.Searchers"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/edit/mentions_2/sentiment/": {
+            "post": {
+                "operationId": "EditMentions2Sentiment",
+                "tags": [
+                    "Mentions_2"
+                ],
+                "summary": "Изменение тональности",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Mentions_2/Methods/Sentiment/Edit.json#/components/schemas/Mentions_2.Methods.Sentiment.Edit"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "oneOf": [
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "$ref": "Mentions_2/Methods/Sentiment/Edit.json#/components/schemas/Mentions_2.Methods.Sentiment.Edit.Exec"
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "result"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
+                                        }
+                                    ]
+                                }
+                            },
+                            "model": {
+                                "schema": {
+                                    "$ref": "Models/Mentions/Mentions.json#/components/schemas/Models.Mentions.Mentions"
                                 }
                             }
                         }
@@ -14919,6 +15450,354 @@
                             "model": {
                                 "schema": {
                                     "type": "null"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/edit/mentions_2/checker/go/": {
+            "post": {
+                "operationId": "EditMentions2CheckerGo",
+                "tags": [
+                    "Mentions_2"
+                ],
+                "summary": "Отправка правил на проверку",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Mentions_2/Methods/Checker/Go/Edit.json#/components/schemas/Mentions_2.Methods.Checker.Go.Edit"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "oneOf": [
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "$ref": "Mentions_2/Methods/Checker/Go/Edit.json#/components/schemas/Mentions_2.Methods.Checker.Go.Edit.Exec"
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "result"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
+                                        }
+                                    ]
+                                }
+                            },
+                            "model": {
+                                "schema": {
+                                    "type": "null"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/get/mentions_2/checker/price/": {
+            "post": {
+                "operationId": "GetMentions2CheckerPrice",
+                "tags": [
+                    "Mentions_2"
+                ],
+                "summary": "Получение стоимости проверки",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Mentions_2/Methods/Checker/Price/Get.json#/components/schemas/Mentions_2.Methods.Checker.Price.Get"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "oneOf": [
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "$ref": "Mentions_2/Methods/Checker/Price/Get.json#/components/schemas/Mentions_2.Methods.Checker.Price.Get.Exec"
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "result"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
+                                        }
+                                    ]
+                                }
+                            },
+                            "model": {
+                                "schema": {
+                                    "type": "null"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/edit/mentions_2/rules/keywords/": {
+            "post": {
+                "operationId": "EditMentions2RulesKeywords",
+                "tags": [
+                    "Mentions_2"
+                ],
+                "summary": "Изменение ключевых слов правила",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Mentions_2/Methods/Rules/Keywords/Edit.json#/components/schemas/Mentions_2.Methods.Rules.Keywords.Edit"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "oneOf": [
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "$ref": "Mentions_2/Methods/Rules/Keywords/Edit.json#/components/schemas/Mentions_2.Methods.Rules.Keywords.Edit.Exec"
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "result"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
+                                        }
+                                    ]
+                                }
+                            },
+                            "model": {
+                                "schema": {
+                                    "$ref": "Models/Mentions/Rules.json#/components/schemas/Models.Mentions.Rules"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/edit/mentions_2/rules/rename/": {
+            "post": {
+                "operationId": "EditMentions2RulesRename",
+                "tags": [
+                    "Mentions_2"
+                ],
+                "summary": "Изменить имя правила",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Mentions_2/Methods/Rules/Rename/Edit.json#/components/schemas/Mentions_2.Methods.Rules.Rename.Edit"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "oneOf": [
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "$ref": "Mentions_2/Methods/Rules/Rename/Edit.json#/components/schemas/Mentions_2.Methods.Rules.Rename.Edit.Exec"
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "result"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
+                                        }
+                                    ]
+                                }
+                            },
+                            "model": {
+                                "schema": {
+                                    "$ref": "Models/Mentions/Rules.json#/components/schemas/Models.Mentions.Rules"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/edit/mentions_2/searchers/depth/": {
+            "post": {
+                "operationId": "EditMentions2SearchersDepth",
+                "tags": [
+                    "Mentions_2"
+                ],
+                "summary": "Изменение глубины сбора упоминаний",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Mentions_2/Methods/Searchers/Depth/Edit.json#/components/schemas/Mentions_2.Methods.Searchers.Depth.Edit"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "oneOf": [
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "$ref": "Mentions_2/Methods/Searchers/Depth/Edit.json#/components/schemas/Mentions_2.Methods.Searchers.Depth.Edit.Exec"
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "result"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
+                                        }
+                                    ]
+                                }
+                            },
+                            "model": {
+                                "schema": {
+                                    "$ref": "Models/Mentions/Searchers.json#/components/schemas/Models.Mentions.Searchers"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/edit/mentions_2/searchers/enabled/": {
+            "post": {
+                "operationId": "EditMentions2SearchersEnabled",
+                "tags": [
+                    "Mentions_2"
+                ],
+                "summary": "Изменить активность поисковика",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Mentions_2/Methods/Searchers/Enabled/Edit.json#/components/schemas/Mentions_2.Methods.Searchers.Enabled.Edit"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "oneOf": [
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "$ref": "Mentions_2/Methods/Searchers/Enabled/Edit.json#/components/schemas/Mentions_2.Methods.Searchers.Enabled.Edit.Exec"
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "result"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
+                                        }
+                                    ]
+                                }
+                            },
+                            "model": {
+                                "schema": {
+                                    "$ref": "Models/Mentions/Searchers.json#/components/schemas/Models.Mentions.Searchers"
                                 }
                             }
                         }

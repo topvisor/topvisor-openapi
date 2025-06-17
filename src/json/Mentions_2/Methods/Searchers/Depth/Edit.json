@@ -1,0 +1,46 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Mentions_2.Methods.Searchers.Depth.Edit",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Mentions_2.Methods.Searchers.Depth.Edit": {
+                "type": "object",
+                "properties": {
+                    "project_id": {
+                        "title": "ID проекта",
+                        "type": "integer"
+                    },
+                    "rule_id": {
+                        "title": "ID правила",
+                        "type": "integer"
+                    },
+                    "depth": {
+                        "title": "Глубина сбора упоминаний (x100)\n\nОт 1 до 10",
+                        "nullable": true,
+                        "type": "integer"
+                    },
+                    "filters": {
+                        "$ref": "../../../../TV/API/Params/FiltersTrait.json#/components/schemas/TV.API.Params.FiltersTrait/properties/filters"
+                    },
+                    "id": {
+                        "$ref": "../../../../TV/API/Params/FiltersTrait.json#/components/schemas/TV.API.Params.FiltersTrait/properties/id"
+                    }
+                },
+                "required": [
+                    "project_id",
+                    "rule_id",
+                    "filters"
+                ],
+                "title": "Изменение глубины сбора упоминаний"
+            },
+            "Mentions_2.Methods.Searchers.Depth.Edit.Exec": {
+                "title": "@throws Exception",
+                "type": "integer"
+            }
+        }
+    }
+}

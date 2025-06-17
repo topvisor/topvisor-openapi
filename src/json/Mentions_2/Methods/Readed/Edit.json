@@ -1,0 +1,40 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Mentions_2.Methods.Readed.Edit",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Mentions_2.Methods.Readed.Edit": {
+                "type": "object",
+                "properties": {
+                    "project_id": {
+                        "title": "ID проекта",
+                        "type": "integer"
+                    },
+                    "readed": {
+                        "title": "Флаг \"прочитано\"",
+                        "type": "boolean"
+                    },
+                    "filters": {
+                        "$ref": "../../../TV/API/Params/FiltersTrait.json#/components/schemas/TV.API.Params.FiltersTrait/properties/filters"
+                    },
+                    "id": {
+                        "$ref": "../../../TV/API/Params/FiltersTrait.json#/components/schemas/TV.API.Params.FiltersTrait/properties/id"
+                    }
+                },
+                "required": [
+                    "project_id",
+                    "filters"
+                ],
+                "title": "Изменение флага \"прочитано\""
+            },
+            "Mentions_2.Methods.Readed.Edit.Exec": {
+                "title": "@throws Exception",
+                "type": "integer"
+            }
+        }
+    }
+}
