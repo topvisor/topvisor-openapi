@@ -1406,6 +1406,14 @@
                         "const": "Hide legend",
                         "readOnly": true
                     },
+                    "Service_AMS_tracker": {
+                        "const": "Search volume tool",
+                        "readOnly": true
+                    },
+                    "Tools_and_pricing": {
+                        "const": "Tools and prices",
+                        "readOnly": true
+                    },
                     "Menu_expand": {
                         "const": "Expand menu",
                         "readOnly": true
@@ -1452,10 +1460,6 @@
                     },
                     "Menu_settings": {
                         "const": "Settings",
-                        "readOnly": true
-                    },
-                    "Menu_more": {
-                        "const": "More",
                         "readOnly": true
                     },
                     "Folders": {
@@ -1909,6 +1913,10 @@
                     "Report_an_error_response": {
                         "const": "We've got your error report. Thanks!\nIf we should have any additional questions, we'll send you a ticket. To open tickets, hit 💌 Tickets in the header.",
                         "readOnly": true
+                    },
+                    "Knowledge_base": {
+                        "const": "Knowledge base",
+                        "readOnly": true
                     }
                 },
                 "required": [
@@ -2258,6 +2266,8 @@
                     "No_payments",
                     "Show_legend",
                     "Hide_legend",
+                    "Service_AMS_tracker",
+                    "Tools_and_pricing",
                     "Menu_expand",
                     "Menu_unexpand",
                     "Menu_dynamics_search",
@@ -2270,7 +2280,6 @@
                     "Menu_PPC",
                     "Menu_broker",
                     "Menu_settings",
-                    "Menu_more",
                     "Folders",
                     "Groups",
                     "Keywords",
@@ -2383,7 +2392,8 @@
                     "Need_fill_required_fields",
                     "Report_an_error",
                     "Report_an_error_ticket_message",
-                    "Report_an_error_response"
+                    "Report_an_error_response",
+                    "Knowledge_base"
                 ]
             }
         }

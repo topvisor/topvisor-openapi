@@ -366,10 +366,6 @@
                         "const": "Search suggestions tool",
                         "readOnly": true
                     },
-                    "Service_AMS_tracker": {
-                        "const": "Search volume tool",
-                        "readOnly": true
-                    },
                     "Service_clustering": {
                         "const": "Keyword clustering tool",
                         "readOnly": true
@@ -1126,10 +1122,6 @@
                         "const": "Invoice",
                         "readOnly": true
                     },
-                    "Tools_and_pricing": {
-                        "const": "Tools and prices",
-                        "readOnly": true
-                    },
                     "Start_for_free": {
                         "const": "Start for free",
                         "readOnly": true
@@ -1274,7 +1266,6 @@
                     "Service_tracking",
                     "Service_researcher",
                     "Service_suggestions_tool",
-                    "Service_AMS_tracker",
                     "Service_clustering",
                     "Service_auditor",
                     "Service_auditor_hold",
@@ -1455,7 +1446,6 @@
                     "account_bonus",
                     "Software",
                     "Invoice",
-                    "Tools_and_pricing",
                     "Start_for_free",
                     "View_all_pricing_1",
                     "View_all_pricing_2",

@@ -707,6 +707,10 @@ export interface components {
             /** @constant */
             readonly Hide_legend: "Hide legend";
             /** @constant */
+            readonly Service_AMS_tracker: "Search volume tool";
+            /** @constant */
+            readonly Tools_and_pricing: "Tools and prices";
+            /** @constant */
             readonly Menu_expand: "Expand menu";
             /** @constant */
             readonly Menu_unexpand: "Minimize menu";
@@ -730,8 +734,6 @@ export interface components {
             readonly Menu_broker: "Yandex.Direct";
             /** @constant */
             readonly Menu_settings: "Settings";
-            /** @constant */
-            readonly Menu_more: "More";
             /** @constant */
             readonly Folders: "Folders";
             /** @constant */
@@ -958,6 +960,8 @@ export interface components {
             readonly Report_an_error_ticket_message: "Hello!\n\nThis is an automatic message that I've encountered an error. Below you'll find site logs the devs configured to collect.";
             /** @constant */
             readonly Report_an_error_response: "We've got your error report. Thanks!\nIf we should have any additional questions, we'll send you a ticket. To open tickets, hit 💌 Tickets in the header.";
+            /** @constant */
+            readonly Knowledge_base: "Knowledge base";
         };
     };
     responses: never;

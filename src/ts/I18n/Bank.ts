@@ -187,8 +187,6 @@ export interface components {
             /** @constant */
             readonly Service_suggestions_tool: "Search suggestions tool";
             /** @constant */
-            readonly Service_AMS_tracker: "Search volume tool";
-            /** @constant */
             readonly Service_clustering: "Keyword clustering tool";
             /** @constant */
             readonly Service_auditor: "SEO audit tool";
@@ -566,8 +564,6 @@ export interface components {
             readonly Software: "Software";
             /** @constant */
             readonly Invoice: "Invoice";
-            /** @constant */
-            readonly Tools_and_pricing: "Tools and prices";
             /** @constant */
             readonly Start_for_free: "Start for free";
             /** @constant */
