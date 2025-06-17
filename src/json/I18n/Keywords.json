@@ -723,11 +723,11 @@
                         "readOnly": true
                     },
                     "Integrate_to_use_the_tool_3": {
-                        "const": "your account with Google Analytics, Google Search Console or Yandex Metrica",
+                        "const": "your account with Google Analytics, Google Search Console or Yandex Metrica. <a href=\"/support/projects/integration/\" target=\"_blank\">How to integrate accounts →</a>",
                         "readOnly": true
                     },
                     "Integrate_to_use_the_tool_3_without_yandex": {
-                        "const": "your account with Google Analytics, Google Search Console",
+                        "const": "your account with Google Analytics, Google Search Console.<a href=\"/support/projects/integration/\" target=\"_blank\">How to integrate accounts →</a>",
                         "readOnly": true
                     },
                     "Integrate_to_use_the_tool_aditional": {

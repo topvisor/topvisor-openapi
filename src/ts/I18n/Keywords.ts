@@ -365,9 +365,9 @@ export interface components {
             /** @constant */
             readonly Integrate_to_use_the_tool_2: "integrate";
             /** @constant */
-            readonly Integrate_to_use_the_tool_3: "your account with Google Analytics, Google Search Console or Yandex Metrica";
+            readonly Integrate_to_use_the_tool_3: "your account with Google Analytics, Google Search Console or Yandex Metrica. <a href=\"/support/projects/integration/\" target=\"_blank\">How to integrate accounts →</a>";
             /** @constant */
-            readonly Integrate_to_use_the_tool_3_without_yandex: "your account with Google Analytics, Google Search Console";
+            readonly Integrate_to_use_the_tool_3_without_yandex: "your account with Google Analytics, Google Search Console.<a href=\"/support/projects/integration/\" target=\"_blank\">How to integrate accounts →</a>";
             /** @constant */
             readonly Integrate_to_use_the_tool_aditional: "";
             /** @constant */
