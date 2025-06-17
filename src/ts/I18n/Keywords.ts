@@ -612,6 +612,8 @@ export interface components {
             readonly Fitler_by_keywords_for_check: "Which keywords to check";
             /** @constant */
             readonly All_keywords: "All keywords";
+            /** @constant */
+            readonly Select_source: "Select source";
         };
     };
     responses: never;

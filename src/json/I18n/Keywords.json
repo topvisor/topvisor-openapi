@@ -1217,6 +1217,10 @@
                     "All_keywords": {
                         "const": "All keywords",
                         "readOnly": true
+                    },
+                    "Select_source": {
+                        "const": "Select source",
+                        "readOnly": true
                     }
                 },
                 "required": [
@@ -1520,7 +1524,8 @@
                     "Added_phrases",
                     "Changed_phrases",
                     "Fitler_by_keywords_for_check",
-                    "All_keywords"
+                    "All_keywords",
+                    "Select_source"
                 ]
             }
         }
