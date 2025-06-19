@@ -17,14 +17,16 @@ export interface components {
             qualifiers: import('../../../Types/Collect/Qualifiers.ts').components['schemas']['Keywords_2.Types.Collect.Qualifiers'];
             /** Минус фразы (только для searcher_key = 0 и searcher_key = 1) */
             keywords_minus?: unknown[];
-            /** Id группы для размещения подобранных запросов */
+            /** Id группы для размещения подобранных запросов
+             *
+             *     Можно указывать только при `in_one_group` = `true` */
             to_group_id?: number | null;
+            /** Собирать все запросы в одну группу */
+            in_one_group?: boolean;
             /** Id папки для новых групп */
             to_id?: number;
             /** @default in_folder_last */
             to_type: import('../../../Types/Collect/ToType.ts').components['schemas']['Keywords_2.Types.Collect.ToType'];
-            /** Собирать все запросы в одну группу (не несет смысл, если указан to_group_id) */
-            in_one_group?: boolean;
             currency?: import('../../../../TV/API/Types/Currency.ts').components['schemas']['TV.API.Types.Currency'] | null;
             debug?: string | null;
         };

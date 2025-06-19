@@ -14,7 +14,7 @@ export interface components {
          * @description @see \Services\Bank_2\Objects\Subscriptions\Limit
          * @enum {string}
          */
-        "Bank_2.Types.Subscriptions.Limit.Name": "positions_check" | "positions_check_manual" | "keywords_volumes" | "keywords_collect" | "keywords_collect_hint" | "positions_tasks" | "projects" | "projects_rights" | "projects_competitors" | "projects_archive" | "api";
+        "Bank_2.Types.Subscriptions.Limit.Name": "positions_check" | "positions_check_manual" | "keywords_volumes" | "keywords_collect" | "positions_tasks" | "projects" | "projects_rights" | "projects_competitors" | "projects_archive" | "api";
     };
     responses: never;
     parameters: never;

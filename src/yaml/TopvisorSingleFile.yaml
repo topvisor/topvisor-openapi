@@ -3527,36 +3527,6 @@ paths:
             model:
               schema:
                 $ref: '#/components/schemas/Models.Projects'
-  /abstractregular/keywords_2/collect/:
-    post:
-      operationId: AbstractregularKeywords2Collect
-      tags:
-        - Keywords_2
-      requestBody:
-        content:
-          application/json:
-            schema:
-              $ref: '#/components/schemas/Keywords_2.Methods.Collect.AbstractRegular'
-        required: true
-      responses:
-        '200':
-          description: ''
-          content:
-            application/json:
-              schema:
-                oneOf:
-                  - allOf:
-                      - type: object
-                        properties:
-                          result:
-                            $ref: '#/components/schemas/Keywords_2.Methods.Collect.AbstractRegular.Exec'
-                        required:
-                          - result
-                      - $ref: '#/components/schemas/ResponseSuccess'
-                  - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
   /get/keywords_2/keywords/:
     post:
       operationId: GetKeywords2Keywords
@@ -8741,7 +8711,6 @@ paths:
       tags:
         - Keywords_2
       summary: Получение стоимости подбора запросов
-      description: '@see Keywords_2\Methods\Collect\AbstractRegular'
       requestBody:
         content:
           application/json:
@@ -19013,132 +18982,6 @@ components:
         watcher_types:
           type: array
           nullable: true
-    Keywords_2.Types.Collect.SearcherKey:
-      type: integer
-      enum:
-        - 0
-        - 1
-        - 5
-        - 104
-        - 100
-        - 101
-        - 105
-      title: Ключ поисковой системы для проверки частоты
-    Keywords_2.Types.Collect.HintGenerator:
-      type: string
-      enum:
-        - letter
-        - letter_ru
-        - number
-        - space
-      title: Тип метода перебора
-    Keywords_2.Types.Collect.HintGenerators:
-      type: array
-      items:
-        $ref: '#/components/schemas/Keywords_2.Types.Collect.HintGenerator'
-      title: Типы метода перебора
-    Keywords_2.Types.Collect.Qualifier:
-      type: object
-      properties:
-        region_key:
-          type: integer
-        searcher_key:
-          allOf:
-            - $ref: '#/components/schemas/Keywords_2.Types.Collect.SearcherKey'
-        region_lang:
-          nullable: true
-          type: string
-        also_searched:
-          nullable: true
-          type: boolean
-        depth:
-          nullable: true
-          type: integer
-        hint_depth:
-          nullable: true
-          type: integer
-        hint_generators:
-          nullable: true
-          allOf:
-            - $ref: '#/components/schemas/Keywords_2.Types.Collect.HintGenerators'
-      required:
-        - region_key
-        - searcher_key
-      title: Определитель с настройками для подбора
-    Keywords_2.Types.Collect.Qualifiers:
-      type: array
-      items:
-        $ref: '#/components/schemas/Keywords_2.Types.Collect.Qualifier'
-      title: Определители с настройками для подбора
-    Keywords_2.Types.Collect.ToType:
-      type: string
-      enum:
-        - in_folder
-        - in_folder_last
-      title: Куда добавлять добавляемые группы
-    TV.API.Types.Currency:
-      type: string
-      enum:
-        - RUB
-        - USD
-      title: |-
-        Валюта
-
-        Этот общий тип, не зависящий от контекста
-
-        Дополниетольно нужно проверять в API методах через site()->checkAllowCurrency() в функции check()
-    Keywords_2.Methods.Collect.AbstractRegular:
-      type: object
-      properties:
-        project_id:
-          title: ID проекта
-          type: integer
-        keywords:
-          title: Список исходных запросов
-          type: array
-        qualifiers:
-          title: Объекты определителей настроек ПС и регионов
-          allOf:
-            - $ref: '#/components/schemas/Keywords_2.Types.Collect.Qualifiers'
-        keywords_minus:
-          title: Минус фразы (только для searcher_key = 0 и searcher_key = 1)
-          type: array
-        to_group_id:
-          title: Id группы для размещения подобранных запросов
-          nullable: true
-          type: integer
-        to_id:
-          title: Id папки для новых групп
-          type: integer
-        to_type:
-          nullable: true
-          default: in_folder_last
-          allOf:
-            - $ref: '#/components/schemas/Keywords_2.Types.Collect.ToType'
-        in_one_group:
-          title: Собирать все запросы в одну группу (не несет смысл, если указан to_group_id)
-          type: boolean
-        currency:
-          nullable: true
-          allOf:
-            - $ref: '#/components/schemas/TV.API.Types.Currency'
-        debug:
-          nullable: true
-          type: string
-      required:
-        - project_id
-        - keywords
-        - qualifiers
-    Keywords_2.Methods.Collect.AbstractRegular.Exec:
-      title: |-
-        Непосредственный вызов API функции
-
-        Запрещено делать публичной, это приведет к поломке preCall()
-
-        В описании к функции отвечать на вопрос: `Что является результатом запроса?` Например: `Список пользователей`
-
-        Не менять `protected`, проверка проводится при генерации схем в `TV\API\Objects\ClassAPIMethodInfo`
-      nullable: true
     Keywords_2.Methods.Keywords.Get:
       type: object
       properties:
@@ -21894,6 +21737,17 @@ components:
     Admin_2.Methods.Affiliate.ReferralProgramStats.Get.Exec:
       nullable: true
       type: array
+    TV.API.Types.Currency:
+      type: string
+      enum:
+        - RUB
+        - USD
+      title: |-
+        Валюта
+
+        Этот общий тип, не зависящий от контекста
+
+        Дополниетольно нужно проверять в API методах через site()->checkAllowCurrency() в функции check()
     Admin_2.Methods.Affiliate.ReferralsByLevel.Get:
       type: object
       properties:
@@ -24997,6 +24851,79 @@ components:
       title: Получение меню справки
     Content_2.Methods.Support.Menu.Get.Exec:
       type: array
+    Keywords_2.Types.Collect.SearcherKey:
+      type: integer
+      enum:
+        - 0
+        - 1
+        - 5
+        - 100
+        - 101
+        - 104
+        - 105
+      title: Ключ поисковой системы для сбора запросов
+    Keywords_2.Types.Collect.HintGenerator:
+      type: string
+      enum:
+        - letter
+        - letter_ru
+        - number
+        - space
+      title: Тип метода подбора подсказок
+    Keywords_2.Types.Collect.HintGenerators:
+      type: array
+      items:
+        $ref: '#/components/schemas/Keywords_2.Types.Collect.HintGenerator'
+      title: Типы метода перебора
+      description: |-
+        @extends API\Types\AbstractObjectArray<HintGenerator>
+        @method HintGenerator[] getValues()
+        @method HintGenerator current()
+        @see HintGenerator
+    Keywords_2.Types.Collect.Qualifier:
+      type: object
+      properties:
+        region_key:
+          type: integer
+        searcher_key:
+          allOf:
+            - $ref: '#/components/schemas/Keywords_2.Types.Collect.SearcherKey'
+        region_lang:
+          nullable: true
+          type: string
+        also_searched:
+          nullable: true
+          type: boolean
+        depth:
+          nullable: true
+          type: integer
+        hint_depth:
+          nullable: true
+          type: integer
+        hint_generators:
+          nullable: true
+          allOf:
+            - $ref: '#/components/schemas/Keywords_2.Types.Collect.HintGenerators'
+      required:
+        - region_key
+        - searcher_key
+      title: Определитель с настройками для подбора
+    Keywords_2.Types.Collect.Qualifiers:
+      type: array
+      items:
+        $ref: '#/components/schemas/Keywords_2.Types.Collect.Qualifier'
+      title: Определители с настройками для подбора
+      description: |-
+        @extends API\Types\AbstractObjectArray<Qualifier>
+        @method Qualifier[] getValues()
+        @method Qualifier current()
+        @see Qualifier
+    Keywords_2.Types.Collect.ToType:
+      type: string
+      enum:
+        - in_folder
+        - in_folder_last
+      title: Куда добавлять добавляемые группы
     Keywords_2.Methods.Collect.Go.Edit:
       type: object
       properties:
@@ -25014,9 +24941,15 @@ components:
           title: Минус фразы (только для searcher_key = 0 и searcher_key = 1)
           type: array
         to_group_id:
-          title: Id группы для размещения подобранных запросов
+          title: |-
+            Id группы для размещения подобранных запросов
+
+            Можно указывать только при `in_one_group` = `true`
           nullable: true
           type: integer
+        in_one_group:
+          title: Собирать все запросы в одну группу
+          type: boolean
         to_id:
           title: Id папки для новых групп
           type: integer
@@ -25025,9 +24958,6 @@ components:
           default: in_folder_last
           allOf:
             - $ref: '#/components/schemas/Keywords_2.Types.Collect.ToType'
-        in_one_group:
-          title: Собирать все запросы в одну группу (не несет смысл, если указан to_group_id)
-          type: boolean
         currency:
           nullable: true
           allOf:
@@ -25065,9 +24995,15 @@ components:
           title: Минус фразы (только для searcher_key = 0 и searcher_key = 1)
           type: array
         to_group_id:
-          title: Id группы для размещения подобранных запросов
+          title: |-
+            Id группы для размещения подобранных запросов
+
+            Можно указывать только при `in_one_group` = `true`
           nullable: true
           type: integer
+        in_one_group:
+          title: Собирать все запросы в одну группу
+          type: boolean
         to_id:
           title: Id папки для новых групп
           type: integer
@@ -25076,9 +25012,6 @@ components:
           default: in_folder_last
           allOf:
             - $ref: '#/components/schemas/Keywords_2.Types.Collect.ToType'
-        in_one_group:
-          title: Собирать все запросы в одну группу (не несет смысл, если указан to_group_id)
-          type: boolean
         currency:
           nullable: true
           allOf:
@@ -25091,7 +25024,6 @@ components:
         - keywords
         - qualifiers
       title: Получение стоимости подбора запросов
-      description: '@see Keywords_2\Methods\Collect\AbstractRegular'
     Keywords_2.Methods.Collect.Price.Get.Exec:
       title: Информация о стоимости запуска подбора запросов
       type: object
@@ -25140,11 +25072,17 @@ components:
                         enum:
                           - '106'
                   region_lang:
-                    type: string
+                    anyOf:
+                      - type: string
+                      - type: 'null'
                   also_searched:
-                    type: integer
+                    anyOf:
+                      - type: integer
+                      - type: 'null'
                   depth:
-                    type: integer
+                    anyOf:
+                      - type: integer
+                      - type: 'null'
                   hint_depth:
                     anyOf:
                       - type: integer
@@ -25327,7 +25265,7 @@ components:
           allOf:
             - $ref: '#/components/schemas/Keywords_2.Types.Volumes.Qualifiers'
         set_qualifiers_for_visibility:
-          title: Проверить частоты для всех регионов с нужным типом для расчета видимости
+          title: Если установлено, то будут проверены частоты для всех регионов проекта с нужным типом для расчета видимости
           nullable: true
           type: boolean
         group_folder_id_depth:
@@ -25341,7 +25279,7 @@ components:
         - project_id
       title: Постановка задачи на проверку частоты запросов
     Keywords_2.Methods.Volumes.Go.Edit.Exec:
-      title: Список id проектов, отрпавленных на проверку
+      title: Список id проектов, отправленных на проверку
       description: '@throws Exception'
       type: object
       properties:
@@ -25382,7 +25320,7 @@ components:
           allOf:
             - $ref: '#/components/schemas/Keywords_2.Types.Volumes.Qualifiers'
         set_qualifiers_for_visibility:
-          title: Проверить частоты для всех регионов с нужным типом для расчета видимости
+          title: Если установлено, то будут проверены частоты для всех регионов проекта с нужным типом для расчета видимости
           nullable: true
           type: boolean
         group_folder_id_depth:

@@ -12,7 +12,8 @@
                 "items": {
                     "$ref": "../../../Keywords_2/Types/Collect/HintGenerator.json#/components/schemas/Keywords_2.Types.Collect.HintGenerator"
                 },
-                "title": "Типы метода перебора"
+                "title": "Типы метода перебора",
+                "description": "@extends API\\Types\\AbstractObjectArray<HintGenerator>\n@method HintGenerator[] getValues()\n@method HintGenerator current()\n@see HintGenerator"
             }
         }
     }

@@ -8,10 +8,10 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         /**
-         * Ключ поисковой системы для проверки частоты
+         * Ключ поисковой системы для сбора запросов
          * @enum {integer}
          */
-        "Keywords_2.Types.Collect.SearcherKey": 0 | 1 | 5 | 104 | 100 | 101 | 105;
+        "Keywords_2.Types.Collect.SearcherKey": 0 | 1 | 5 | 100 | 101 | 104 | 105;
     };
     responses: never;
     parameters: never;

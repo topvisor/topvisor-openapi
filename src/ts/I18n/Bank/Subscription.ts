@@ -35,11 +35,6 @@ export interface components {
                     extendedName: "keyword research by your site";
                     description: "";
                 };
-                keywords_collect_hint: {
-                    name: "Search suggestions";
-                    extendedName: "search suggestions";
-                    description: "";
-                };
                 projects: {
                     name: "Projects";
                     extendedName: "projects";

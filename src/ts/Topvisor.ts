@@ -1880,22 +1880,6 @@ export interface paths {
         head?: never;
         patch?: never;
         trace?: never;
-    };
-    "/abstractregular/keywords_2/collect/": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        get?: never;
-        put?: never;
-        post: operations["AbstractregularKeywords2Collect"];
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
     };  
     /** Получение списка запросов проекта */
     "/get/keywords_2/keywords/": {
@@ -4792,10 +4776,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /**
-     * Получение стоимости подбора запросов
-     * @description @see Keywords_2\Methods\Collect\AbstractRegular
-     */
+    /** Получение стоимости подбора запросов */
     "/get/keywords_2/collect/price/": {
         parameters: {
             query?: never;
@@ -10129,32 +10110,6 @@ export interface operations {
                         result: import('./Example_2/Methods/Projects/Get.ts').components['schemas']['Example_2.Methods.Projects.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: import('./Models/Projects.ts').components['schemas']['Models.Projects'];
-                };
-            };
-        };
-    };
-    AbstractregularKeywords2Collect: {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        requestBody: {
-            content: {
-                "application/json": import('./Keywords_2/Methods/Collect/AbstractRegular.ts').components['schemas']['Keywords_2.Methods.Collect.AbstractRegular'];
-            };
-        };
-        responses: {
-            200: {
-                headers: {
-                    [name: string]: unknown;
-                };
-                content: {
-                    "application/json": ({
-                        result: import('./Keywords_2/Methods/Collect/AbstractRegular.ts').components['schemas']['Keywords_2.Methods.Collect.AbstractRegular.Exec'];
-                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
                 };
             };
         };

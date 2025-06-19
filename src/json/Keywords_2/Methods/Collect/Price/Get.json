@@ -36,9 +36,13 @@
                         "type": "array"
                     },
                     "to_group_id": {
-                        "title": "Id группы для размещения подобранных запросов",
+                        "title": "Id группы для размещения подобранных запросов\n\nМожно указывать только при `in_one_group` = `true`",
                         "nullable": true,
                         "type": "integer"
+                    },
+                    "in_one_group": {
+                        "title": "Собирать все запросы в одну группу",
+                        "type": "boolean"
                     },
                     "to_id": {
                         "title": "Id папки для новых групп",
@@ -52,10 +56,6 @@
                                 "$ref": "../../../../Keywords_2/Types/Collect/ToType.json#/components/schemas/Keywords_2.Types.Collect.ToType"
                             }
                         ]
-                    },
-                    "in_one_group": {
-                        "title": "Собирать все запросы в одну группу (не несет смысл, если указан to_group_id)",
-                        "type": "boolean"
                     },
                     "currency": {
                         "nullable": true,
@@ -75,8 +75,7 @@
                     "keywords",
                     "qualifiers"
                 ],
-                "title": "Получение стоимости подбора запросов",
-                "description": "@see Keywords_2\\Methods\\Collect\\AbstractRegular"
+                "title": "Получение стоимости подбора запросов"
             },
             "Keywords_2.Methods.Collect.Price.Get.Exec": {
                 "title": "Информация о стоимости запуска подбора запросов",
@@ -158,13 +157,34 @@
                                             ]
                                         },
                                         "region_lang": {
-                                            "type": "string"
+                                            "anyOf": [
+                                                {
+                                                    "type": "string"
+                                                },
+                                                {
+                                                    "type": "null"
+                                                }
+                                            ]
                                         },
                                         "also_searched": {
-                                            "type": "integer"
+                                            "anyOf": [
+                                                {
+                                                    "type": "integer"
+                                                },
+                                                {
+                                                    "type": "null"
+                                                }
+                                            ]
                                         },
                                         "depth": {
-                                            "type": "integer"
+                                            "anyOf": [
+                                                {
+                                                    "type": "integer"
+                                                },
+                                                {
+                                                    "type": "null"
+                                                }
+                                            ]
                                         },
                                         "hint_depth": {
                                             "anyOf": [

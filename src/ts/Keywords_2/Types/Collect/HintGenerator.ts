@@ -8,7 +8,7 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         /**
-         * Тип метода перебора
+         * Тип метода подбора подсказок
          * @enum {string}
          */
         "Keywords_2.Types.Collect.HintGenerator": "letter" | "letter_ru" | "number" | "space";

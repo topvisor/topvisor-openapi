@@ -29,7 +29,7 @@ export interface components {
              *     - Обязателен, если `set_qualifiers_for_visibility` != `true`
              *     - Нельзя указывать, если `set_qualifiers_for_visibility` = `true` */
             qualifiers?: import('../../../Types/Volumes/Qualifiers.ts').components['schemas']['Keywords_2.Types.Volumes.Qualifiers'] | null;
-            /** Проверить частоты для всех регионов с нужным типом для расчета видимости */
+            /** Если установлено, то будут проверены частоты для всех регионов проекта с нужным типом для расчета видимости */
             set_qualifiers_for_visibility?: boolean | null;
             /** При фильтрации по ID папок также искать в подпапках */
             group_folder_id_depth?: boolean;
