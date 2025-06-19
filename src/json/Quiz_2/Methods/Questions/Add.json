@@ -1,0 +1,52 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Quiz_2.Methods.Questions.Add",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Quiz_2.Methods.Questions.Add": {
+                "type": "object",
+                "properties": {
+                    "quiz_id": {
+                        "title": "ID теста",
+                        "type": "string"
+                    },
+                    "type": {
+                        "allOf": [
+                            {
+                                "$ref": "../../../Quiz_2/Types/Questions/Type.json#/components/schemas/Quiz_2.Types.Questions.Type"
+                            }
+                        ]
+                    },
+                    "text": {
+                        "title": "Текст вопроса",
+                        "nullable": true,
+                        "type": "string"
+                    },
+                    "response_text": {
+                        "title": "Текст, появляющийся после ответа",
+                        "nullable": true,
+                        "type": "string"
+                    },
+                    "score": {
+                        "title": "Баллы за верный ответ на вопрос",
+                        "nullable": true,
+                        "type": "integer"
+                    }
+                },
+                "required": [
+                    "quiz_id",
+                    "type"
+                ],
+                "title": "Добавление вопроса"
+            },
+            "Quiz_2.Methods.Questions.Add.Exec": {
+                "nullable": true,
+                "type": "integer"
+            }
+        }
+    }
+}

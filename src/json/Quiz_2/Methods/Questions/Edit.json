@@ -1,0 +1,57 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Quiz_2.Methods.Questions.Edit",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Quiz_2.Methods.Questions.Edit": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "title": "ID вопроса",
+                        "type": "integer"
+                    },
+                    "type": {
+                        "nullable": true,
+                        "allOf": [
+                            {
+                                "$ref": "../../../Quiz_2/Types/Questions/Type.json#/components/schemas/Quiz_2.Types.Questions.Type"
+                            }
+                        ]
+                    },
+                    "text": {
+                        "title": "Тест вопроса",
+                        "nullable": true,
+                        "type": "string"
+                    },
+                    "score": {
+                        "title": "Баллы за верный ответ на вопрос",
+                        "nullable": true,
+                        "type": "integer"
+                    },
+                    "response_text": {
+                        "title": "Текст, появляющийся после ответа",
+                        "nullable": true,
+                        "type": "string"
+                    },
+                    "answers": {
+                        "title": "Варианты ответа",
+                        "nullable": true,
+                        "type": "array"
+                    }
+                },
+                "required": [
+                    "id"
+                ],
+                "title": "Редактировать вопрос"
+            },
+            "Quiz_2.Methods.Questions.Edit.Exec": {
+                "nullable": true,
+                "type": "integer"
+            }
+        }
+    }
+}

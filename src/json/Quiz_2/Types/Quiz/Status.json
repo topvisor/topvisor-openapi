@@ -1,0 +1,21 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Quiz_2.Types.Quiz.Status",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Quiz_2.Types.Quiz.Status": {
+                "type": "string",
+                "enum": [
+                    "DEV",
+                    "ACTIVE",
+                    "DELETED"
+                ],
+                "title": "Статус квиза"
+            }
+        }
+    }
+}

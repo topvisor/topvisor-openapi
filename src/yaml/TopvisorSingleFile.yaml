@@ -595,6 +595,100 @@ paths:
             model:
               schema:
                 type: 'null'
+  /add/quiz_2/:
+    post:
+      operationId: AddQuiz2
+      tags:
+        - Quiz_2
+      summary: Добавление теста
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Quiz_2.Methods.Add'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            $ref: '#/components/schemas/Quiz_2.Methods.Add.Exec'
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
+  /edit/quiz_2/:
+    post:
+      operationId: EditQuiz2
+      tags:
+        - Quiz_2
+      summary: Редактирование теста
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Quiz_2.Methods.Edit'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            $ref: '#/components/schemas/Quiz_2.Methods.Edit.Exec'
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
+  /get/quiz_2/:
+    post:
+      operationId: GetQuiz2
+      tags:
+        - Quiz_2
+      summary: Получение тестов
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Quiz_2.Methods.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            $ref: '#/components/schemas/Quiz_2.Methods.Get.Exec'
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                      - $ref: '#/components/schemas/Pagination'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                $ref: '#/components/schemas/Models.Quizes'
   /edit/recurring_2/:
     post:
       operationId: EditRecurring2
@@ -4666,6 +4760,317 @@ paths:
             model:
               schema:
                 $ref: '#/components/schemas/Models.Projects'
+  /abstractregular/quiz_2/questions/:
+    post:
+      operationId: AbstractregularQuiz2Questions
+      tags:
+        - Quiz_2
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Quiz_2.Methods.Questions.AbstractRegular'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            $ref: '#/components/schemas/Quiz_2.Methods.Questions.AbstractRegular.Exec'
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
+  /add/quiz_2/questions/:
+    post:
+      operationId: AddQuiz2Questions
+      tags:
+        - Quiz_2
+      summary: Добавление вопроса
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Quiz_2.Methods.Questions.Add'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            $ref: '#/components/schemas/Quiz_2.Methods.Questions.Add.Exec'
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
+  /del/quiz_2/questions/:
+    post:
+      operationId: DelQuiz2Questions
+      tags:
+        - Quiz_2
+      summary: Удаление вопроса
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Quiz_2.Methods.Questions.Del'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            $ref: '#/components/schemas/Quiz_2.Methods.Questions.Del.Exec'
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
+  /edit/quiz_2/questions/:
+    post:
+      operationId: EditQuiz2Questions
+      tags:
+        - Quiz_2
+      summary: Редактировать вопрос
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Quiz_2.Methods.Questions.Edit'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            $ref: '#/components/schemas/Quiz_2.Methods.Questions.Edit.Exec'
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
+  /get/quiz_2/questions/:
+    post:
+      operationId: GetQuiz2Questions
+      tags:
+        - Quiz_2
+      summary: Получение вопроса
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Quiz_2.Methods.Questions.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            $ref: '#/components/schemas/Quiz_2.Methods.Questions.Get.Exec'
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                      - $ref: '#/components/schemas/Pagination'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                $ref: '#/components/schemas/Models.Quizes.Questions'
+  /add/quiz_2/questionsResponses/:
+    post:
+      operationId: AddQuiz2QuestionsResponses
+      tags:
+        - Quiz_2
+      summary: Добавление ответа
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Quiz_2.Methods.QuestionsResponses.Add'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            $ref: '#/components/schemas/Quiz_2.Methods.QuestionsResponses.Add.Exec'
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
+  /del/quiz_2/results/:
+    post:
+      operationId: DelQuiz2Results
+      tags:
+        - Quiz_2
+      summary: Удаление результатов предыдущих попытки пройти тест
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Quiz_2.Methods.Results.Del'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            $ref: '#/components/schemas/Quiz_2.Methods.Results.Del.Exec'
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
+  /get/quiz_2/results/:
+    post:
+      operationId: GetQuiz2Results
+      tags:
+        - Quiz_2
+      summary: Получение своих результатов прохождения теста
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Quiz_2.Methods.Results.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            $ref: '#/components/schemas/Quiz_2.Methods.Results.Get.Exec'
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
+  /get/quiz_2/resultsUsers/:
+    post:
+      operationId: GetQuiz2ResultsUsers
+      tags:
+        - Quiz_2
+      summary: Получение участников теста
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Quiz_2.Methods.ResultsUsers.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            $ref: '#/components/schemas/Quiz_2.Methods.ResultsUsers.Get.Exec'
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
+  /get/quiz_2/withQuestions/:
+    post:
+      operationId: GetQuiz2WithQuestions
+      tags:
+        - Quiz_2
+      summary: Получение теста с вопросами
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Quiz_2.Methods.WithQuestions.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            $ref: '#/components/schemas/Quiz_2.Methods.WithQuestions.Get.Exec'
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                      - $ref: '#/components/schemas/Pagination'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                $ref: '#/components/schemas/Models.Quizes'
   /del/recurring_2/recurringCard/:
     post:
       operationId: DelRecurring2RecurringCard
@@ -9752,6 +10157,37 @@ paths:
             model:
               schema:
                 type: 'null'
+  /add/quiz_2/questionsResponses/multi/:
+    post:
+      operationId: AddQuiz2QuestionsResponsesMulti
+      tags:
+        - Quiz_2
+      summary: Добавление нескольких ответов
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Quiz_2.Methods.QuestionsResponses.Multi.Add'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            $ref: '#/components/schemas/Quiz_2.Methods.QuestionsResponses.Multi.Add.Exec'
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
   /get/redmine_2/users/groups/:
     post:
       operationId: GetRedmine2UsersGroups
@@ -13640,6 +14076,125 @@ components:
     Qr_2.Methods.Get.Exec:
       nullable: true
       type: string
+    Quiz_2.Types.Quiz.Status:
+      type: string
+      enum:
+        - DEV
+        - ACTIVE
+        - DELETED
+      title: Статус квиза
+    Quiz_2.Methods.Add:
+      type: object
+      properties:
+        name:
+          title: Имя теста
+          type: string
+        text:
+          title: Описание теста
+          nullable: true
+          type: string
+        status:
+          title: Статус теста
+          nullable: true
+          allOf:
+            - $ref: '#/components/schemas/Quiz_2.Types.Quiz.Status'
+      required:
+        - name
+      title: Добавление теста
+    Quiz_2.Methods.Add.Exec:
+      nullable: true
+      type: string
+    Quiz_2.Methods.Edit:
+      type: object
+      properties:
+        quiz_id:
+          title: ID теста
+          type: string
+        name:
+          title: Имя теста
+          nullable: true
+          type: string
+        text:
+          title: Описание теста
+          nullable: true
+          type: string
+        status:
+          title: Статус теста
+          nullable: true
+          allOf:
+            - $ref: '#/components/schemas/Quiz_2.Types.Quiz.Status'
+        min_score:
+          title: Минимальное число очков
+          nullable: true
+          type: integer
+        available_reset_second:
+          title: Число секунд, через которое тест можно перепройти, 0 - тест перепройти нельзя
+          nullable: true
+          type: integer
+      required:
+        - quiz_id
+      title: Редактирование теста
+    Quiz_2.Methods.Edit.Exec:
+      nullable: true
+      type: integer
+    Quiz_2.Methods.Get:
+      type: object
+      properties:
+        fields:
+          $ref: '#/components/schemas/fields'
+        orders:
+          $ref: '#/components/schemas/orders'
+        filters:
+          $ref: '#/components/schemas/filters'
+        id:
+          $ref: '#/components/schemas/id'
+        limit:
+          $ref: '#/components/schemas/limit'
+        offset:
+          $ref: '#/components/schemas/offset'
+        fetch_style:
+          $ref: '#/components/schemas/fetch_style'
+      required:
+        - fields
+        - orders
+        - filters
+        - offset
+      title: Получение тестов
+    Quiz_2.Methods.Get.Exec:
+      nullable: true
+    Models.Quizes:
+      properties:
+        AVAILABLE_RESET():
+          nullable: true
+        id: {}
+        user_id:
+          nullable: true
+        name:
+          nullable: true
+        text:
+          nullable: true
+        count_questions:
+          nullable: true
+        total_score:
+          nullable: true
+        min_score:
+          nullable: true
+        available_reset_second:
+          nullable: true
+        status:
+          nullable: true
+        count_questions_is_passed:
+          nullable: true
+        score:
+          nullable: true
+        is_passed:
+          nullable: true
+        update:
+          nullable: true
+        is_finished:
+          nullable: true
+        is_passed_earlier:
+          nullable: true
     Recurring_2.Types.System:
       type: string
       enum:
@@ -19833,6 +20388,239 @@ components:
       title: Получение списка задач
     Projects_2.Methods.Tasks.Get.Exec:
       nullable: true
+    Quiz_2.Methods.Questions.AbstractRegular:
+      type: object
+      properties: {}
+      required: []
+    Quiz_2.Methods.Questions.AbstractRegular.Exec:
+      title: |-
+        Непосредственный вызов API функции
+
+        Запрещено делать публичной, это приведет к поломке preCall()
+
+        В описании к функции отвечать на вопрос: `Что является результатом запроса?` Например: `Список пользователей`
+
+        Не менять `protected`, проверка проводится при генерации схем в `TV\API\Objects\ClassAPIMethodInfo`
+      nullable: true
+    Quiz_2.Types.Questions.Type:
+      type: string
+      enum:
+        - ONE
+        - SEVERAL
+        - TEXT
+      title: Тип вопроса
+    Quiz_2.Methods.Questions.Add:
+      type: object
+      properties:
+        quiz_id:
+          title: ID теста
+          type: string
+        type:
+          allOf:
+            - $ref: '#/components/schemas/Quiz_2.Types.Questions.Type'
+        text:
+          title: Текст вопроса
+          nullable: true
+          type: string
+        response_text:
+          title: Текст, появляющийся после ответа
+          nullable: true
+          type: string
+        score:
+          title: Баллы за верный ответ на вопрос
+          nullable: true
+          type: integer
+      required:
+        - quiz_id
+        - type
+      title: Добавление вопроса
+    Quiz_2.Methods.Questions.Add.Exec:
+      nullable: true
+      type: integer
+    Quiz_2.Methods.Questions.Del:
+      type: object
+      properties:
+        id:
+          title: ID вопроса
+          type: integer
+      required:
+        - id
+      title: Удаление вопроса
+    Quiz_2.Methods.Questions.Del.Exec:
+      nullable: true
+      type: integer
+    Quiz_2.Methods.Questions.Edit:
+      type: object
+      properties:
+        id:
+          title: ID вопроса
+          type: integer
+        type:
+          nullable: true
+          allOf:
+            - $ref: '#/components/schemas/Quiz_2.Types.Questions.Type'
+        text:
+          title: Тест вопроса
+          nullable: true
+          type: string
+        score:
+          title: Баллы за верный ответ на вопрос
+          nullable: true
+          type: integer
+        response_text:
+          title: Текст, появляющийся после ответа
+          nullable: true
+          type: string
+        answers:
+          title: Варианты ответа
+          nullable: true
+          type: array
+      required:
+        - id
+      title: Редактировать вопрос
+    Quiz_2.Methods.Questions.Edit.Exec:
+      nullable: true
+      type: integer
+    Quiz_2.Methods.Questions.Get:
+      type: object
+      properties:
+        user_id:
+          title: ID пользователя, ответы которого нужно вернуть (только для админов)
+          nullable: true
+          type: integer
+        fields:
+          $ref: '#/components/schemas/fields'
+        orders:
+          $ref: '#/components/schemas/orders'
+        filters:
+          $ref: '#/components/schemas/filters'
+        id:
+          $ref: '#/components/schemas/id'
+        limit:
+          $ref: '#/components/schemas/limit'
+        offset:
+          $ref: '#/components/schemas/offset'
+        fetch_style:
+          $ref: '#/components/schemas/fetch_style'
+      required:
+        - fields
+        - orders
+        - filters
+        - offset
+      title: Получение вопроса
+    Quiz_2.Methods.Questions.Get.Exec:
+      title: Получение вопроса
+      nullable: true
+      type: array
+    Models.Quizes.Questions:
+      properties:
+        ANSWERS():
+          nullable: true
+        RESPONSES():
+          nullable: true
+        IS_PASSED():
+          nullable: true
+        id: {}
+        quiz_id:
+          nullable: true
+        type:
+          nullable: true
+        text:
+          nullable: true
+        response_text:
+          nullable: true
+        score:
+          nullable: true
+        likes_count:
+          nullable: true
+        ord:
+          nullable: true
+    Quiz_2.Methods.QuestionsResponses.Add:
+      type: object
+      properties:
+        question_id:
+          title: ID вопроса
+          type: integer
+        values:
+          title: Ответы
+          type: array
+      required:
+        - question_id
+        - values
+      title: Добавление ответа
+    Quiz_2.Methods.QuestionsResponses.Add.Exec:
+      nullable: true
+      type: integer
+    Quiz_2.Methods.Results.Del:
+      type: object
+      properties:
+        quiz_id:
+          title: ID теста
+          type: string
+      required:
+        - quiz_id
+      title: Удаление результатов предыдущих попытки пройти тест
+    Quiz_2.Methods.Results.Del.Exec:
+      nullable: true
+      type: integer
+    Quiz_2.Methods.Results.Get:
+      type: object
+      properties:
+        ids:
+          title: ID тестов
+          type: array
+      required:
+        - ids
+      title: Получение своих результатов прохождения теста
+    Quiz_2.Methods.Results.Get.Exec:
+      nullable: true
+      type: array
+    Quiz_2.Methods.ResultsUsers.Get:
+      type: object
+      properties:
+        quiz_id:
+          title: ID теста
+          type: string
+      required:
+        - quiz_id
+      title: Получение участников теста
+    Quiz_2.Methods.ResultsUsers.Get.Exec:
+      nullable: true
+      type: array
+    Quiz_2.Methods.WithQuestions.Get:
+      type: object
+      properties:
+        quiz_id:
+          title: ID теста
+          type: string
+        user_id:
+          title: ID пользователя, ответы которого нужно вернуть (только для админов)
+          nullable: true
+          type: integer
+        fields:
+          $ref: '#/components/schemas/fields'
+        orders:
+          $ref: '#/components/schemas/orders'
+        filters:
+          $ref: '#/components/schemas/filters'
+        id:
+          $ref: '#/components/schemas/id'
+        limit:
+          $ref: '#/components/schemas/limit'
+        offset:
+          $ref: '#/components/schemas/offset'
+        fetch_style:
+          $ref: '#/components/schemas/fetch_style'
+      required:
+        - quiz_id
+        - fields
+        - orders
+        - filters
+        - offset
+      title: Получение теста с вопросами
+    Quiz_2.Methods.WithQuestions.Get.Exec:
+      nullable: true
+      type: array
     Recurring_2.Methods.RecurringCard.Del:
       type: object
       properties:
@@ -25566,6 +26354,18 @@ components:
       title: Создание задачи
     Projects_2.Methods.Tasks.Volumes.Add.Exec:
       nullable: true
+    Quiz_2.Methods.QuestionsResponses.Multi.Add:
+      type: object
+      properties:
+        questions_responses:
+          title: Ответы
+          type: array
+      required:
+        - questions_responses
+      title: Добавление нескольких ответов
+    Quiz_2.Methods.QuestionsResponses.Multi.Add.Exec:
+      nullable: true
+      type: integer
     Redmine_2.Methods.Users.Groups.Get:
       type: object
       properties: {}

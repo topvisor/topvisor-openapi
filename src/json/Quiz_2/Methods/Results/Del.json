@@ -1,0 +1,29 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Quiz_2.Methods.Results.Del",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Quiz_2.Methods.Results.Del": {
+                "type": "object",
+                "properties": {
+                    "quiz_id": {
+                        "title": "ID теста",
+                        "type": "string"
+                    }
+                },
+                "required": [
+                    "quiz_id"
+                ],
+                "title": "Удаление результатов предыдущих попытки пройти тест"
+            },
+            "Quiz_2.Methods.Results.Del.Exec": {
+                "nullable": true,
+                "type": "integer"
+            }
+        }
+    }
+}

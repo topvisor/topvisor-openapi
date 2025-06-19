@@ -1,0 +1,29 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Quiz_2.Methods.Results.Get",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Quiz_2.Methods.Results.Get": {
+                "type": "object",
+                "properties": {
+                    "ids": {
+                        "title": "ID тестов",
+                        "type": "array"
+                    }
+                },
+                "required": [
+                    "ids"
+                ],
+                "title": "Получение своих результатов прохождения теста"
+            },
+            "Quiz_2.Methods.Results.Get.Exec": {
+                "nullable": true,
+                "type": "array"
+            }
+        }
+    }
+}
