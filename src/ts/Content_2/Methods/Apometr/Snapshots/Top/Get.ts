@@ -15,14 +15,9 @@ export interface components {
             region_index: number;
             action: import('../../../../Types/Apometr/Action.ts').components['schemas']['Content_2.Types.Apometr.Action'];
         };
-        /**
-         * Статистика домена по каждой категории
+        /** Статистика домена по каждой категории
          *
-         *     Позиция 0 - значит, домен вышел из топа
-         * @description
-         *
-         *     @throws Exception
-         */
+         *     Позиция 0 - значит, домен вышел из топа */
         "Content_2.Methods.Apometr.Snapshots.Top.Get.Exec": {
             domain: string;
             pos: string;

@@ -39,7 +39,6 @@
             },
             "Content_2.Methods.Apometr.Snapshots.Top.Get.Exec": {
                 "title": "Статистика домена по каждой категории\n\nПозиция 0 - значит, домен вышел из топа",
-                "description": "\n\n@throws Exception",
                 "nullable": true,
                 "type": "array",
                 "items": {

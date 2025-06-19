@@ -28727,10 +28727,6 @@ components:
         Статистика домена по каждой категории
 
         Позиция 0 - значит, домен вышел из топа
-      description: |-
-
-
-        @throws Exception
       nullable: true
       type: array
       items:
