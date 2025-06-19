@@ -60,7 +60,8 @@
                     "filters",
                     "offset"
                 ],
-                "title": "Получение истории urls, найденных в выдаче, за конкретную проверку"
+                "title": "Получение истории urls, найденных в выдаче, за конкретную проверку",
+                "deprecated": true
             },
             "Content_2.Methods.Apometr.CHHistory.Get.Exec": {
                 "type": "array"

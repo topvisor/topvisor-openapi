@@ -7,7 +7,10 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Получение истории urls, найденных в выдаче, за конкретную проверку */
+        /**
+         * Получение истории urls, найденных в выдаче, за конкретную проверку
+         * @deprecated
+         */
         "Content_2.Methods.Apometr.CHHistory.Get": {
             /** Дата и время проверки */
             datetime: import('../../../../TV/API/Types/Datetime.ts').components['schemas']['TV.API.Types.Datetime'];

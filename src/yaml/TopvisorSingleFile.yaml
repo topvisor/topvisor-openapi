@@ -8323,6 +8323,7 @@ paths:
             model:
               schema:
                 $ref: '#/components/schemas/Models.Apometr.History'
+      deprecated: true
   /get/content_2/apometr/history/:
     post:
       operationId: GetContent2ApometrHistory
@@ -13193,6 +13194,37 @@ paths:
                         properties:
                           result:
                             $ref: '#/components/schemas/Content_2.Methods.Journal.Course.Certificates.Image.Get.Exec'
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
+  /get/content_2/apometr/snapshots/top/:
+    post:
+      operationId: GetContent2ApometrSnapshotsTop
+      tags:
+        - Content_2
+      summary: Получение топа выдачи сайтов за определенную проверку
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Content_2.Methods.Apometr.Snapshots.Top.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            $ref: '#/components/schemas/Content_2.Methods.Apometr.Snapshots.Top.Get.Exec'
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
@@ -24566,6 +24598,7 @@ components:
         - filters
         - offset
       title: Получение истории urls, найденных в выдаче, за конкретную проверку
+      deprecated: true
     Content_2.Methods.Apometr.CHHistory.Get.Exec:
       type: array
     Models.Apometr.History:
@@ -28671,3 +28704,50 @@ components:
       title: Получение сертификата в виде изображения
     Content_2.Methods.Journal.Course.Certificates.Image.Get.Exec:
       nullable: true
+    Content_2.Methods.Apometr.Snapshots.Top.Get:
+      type: object
+      properties:
+        datetime:
+          title: Дата и время проверки
+          allOf:
+            - $ref: '#/components/schemas/TV.API.Types.Datetime'
+        region_index:
+          title: Индекс региона
+          type: integer
+        action:
+          allOf:
+            - $ref: '#/components/schemas/Content_2.Types.Apometr.Action'
+      required:
+        - datetime
+        - region_index
+        - action
+      title: Получение топа выдачи сайтов за определенную проверку
+    Content_2.Methods.Apometr.Snapshots.Top.Get.Exec:
+      title: |-
+        Статистика домена по каждой категории
+
+        Позиция 0 - значит, домен вышел из топа
+      description: |-
+
+
+        @throws Exception
+      nullable: true
+      type: array
+      items:
+        type: array
+        items:
+          type: object
+          properties:
+            domain:
+              type: string
+            pos:
+              type: string
+            prev:
+              type: integer
+            delta:
+              type: integer
+          required:
+            - domain
+            - pos
+            - prev
+            - delta

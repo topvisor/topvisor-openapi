@@ -15150,7 +15150,8 @@
                             }
                         }
                     }
-                }
+                },
+                "deprecated": true
             }
         },
         "/get/content_2/apometr/history/": {
@@ -24151,6 +24152,64 @@
                                                     "properties": {
                                                         "result": {
                                                             "$ref": "Content_2/Methods/Journal/Course/Certificates/Image/Get.json#/components/schemas/Content_2.Methods.Journal.Course.Certificates.Image.Get.Exec"
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "result"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
+                                        }
+                                    ]
+                                }
+                            },
+                            "model": {
+                                "schema": {
+                                    "type": "null"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/get/content_2/apometr/snapshots/top/": {
+            "post": {
+                "operationId": "GetContent2ApometrSnapshotsTop",
+                "tags": [
+                    "Content_2"
+                ],
+                "summary": "Получение топа выдачи сайтов за определенную проверку",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Content_2/Methods/Apometr/Snapshots/Top/Get.json#/components/schemas/Content_2.Methods.Apometr.Snapshots.Top.Get"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "oneOf": [
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "$ref": "Content_2/Methods/Apometr/Snapshots/Top/Get.json#/components/schemas/Content_2.Methods.Apometr.Snapshots.Top.Get.Exec"
                                                         }
                                                     },
                                                     "required": [
