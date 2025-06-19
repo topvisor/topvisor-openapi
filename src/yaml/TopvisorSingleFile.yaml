@@ -20306,6 +20306,11 @@ components:
           nullable: true
           allOf:
             - $ref: '#/components/schemas/TV.Core.Sites.Sites'
+        tags:
+          title: Доступные теги тикета
+          nullable: true
+          allOf:
+            - $ref: '#/components/schemas/Tags_2.Types.TagsIds'
       required:
         - text
       title: Создание тикета

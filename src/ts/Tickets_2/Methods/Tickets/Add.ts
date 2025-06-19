@@ -42,6 +42,8 @@ export interface components {
             task_id?: number;
             /** Сайт для создания тикета */
             site?: import('../../../TV/Core/Sites/Sites.ts').components['schemas']['TV.Core.Sites.Sites'] | null;
+            /** Доступные теги тикета */
+            tags?: import('../../../Tags_2/Types/TagsIds.ts').components['schemas']['Tags_2.Types.TagsIds'] | null;
         };
         /** Id тикета */
         "Tickets_2.Methods.Tickets.Add.Exec": number | null;

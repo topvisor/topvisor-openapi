@@ -76,6 +76,15 @@
                                 "$ref": "../../../TV/Core/Sites/Sites.json#/components/schemas/TV.Core.Sites.Sites"
                             }
                         ]
+                    },
+                    "tags": {
+                        "title": "Доступные теги тикета",
+                        "nullable": true,
+                        "allOf": [
+                            {
+                                "$ref": "../../../Tags_2/Types/TagsIds.json#/components/schemas/Tags_2.Types.TagsIds"
+                            }
+                        ]
                     }
                 },
                 "required": [
