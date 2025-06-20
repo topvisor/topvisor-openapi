@@ -28712,7 +28712,6 @@ components:
           allOf:
             - $ref: '#/components/schemas/TV.API.Types.Datetime'
         region_index:
-          title: Индекс региона
           type: integer
         action:
           allOf:

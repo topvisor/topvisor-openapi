@@ -19,7 +19,6 @@
                         ]
                     },
                     "region_index": {
-                        "title": "Индекс региона",
                         "type": "integer"
                     },
                     "action": {
