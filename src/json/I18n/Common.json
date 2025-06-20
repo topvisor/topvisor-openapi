@@ -1915,7 +1915,7 @@
                         "readOnly": true
                     },
                     "Knowledge_base": {
-                        "const": "Knowledge base",
+                        "const": "Resources",
                         "readOnly": true
                     }
                 },
