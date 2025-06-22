@@ -54,7 +54,6 @@
                 "title": "Изменение правила редиректа (для админов)"
             },
             "Content_2.Methods.Redirects.Edit.Exec": {
-                "title": "@throws Exception",
                 "nullable": true,
                 "type": "integer"
             }
