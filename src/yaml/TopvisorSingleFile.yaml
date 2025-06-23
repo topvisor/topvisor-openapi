@@ -22265,7 +22265,7 @@ components:
 
             - vacation
             - day_off
-          type: array
+          type: string
       required:
         - user_id
         - date1
