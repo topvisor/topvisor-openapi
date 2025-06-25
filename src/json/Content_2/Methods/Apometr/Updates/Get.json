@@ -10,19 +10,11 @@
             "Content_2.Methods.Apometr.Updates.Get": {
                 "type": "object",
                 "properties": {
-                    "limit": {
-                        "default": 100,
+                    "region_index": {
+                        "title": "Индекс региона",
                         "type": "integer"
                     },
-                    "searcher_key": {
-                        "allOf": [
-                            {
-                                "$ref": "../../../../Positions_2/Types/SearcherKey.json#/components/schemas/Positions_2.Types.SearcherKey"
-                            }
-                        ]
-                    },
                     "date": {
-                        "nullable": true,
                         "allOf": [
                             {
                                 "$ref": "../../../../TV/API/Types/Date.json#/components/schemas/TV.API.Types.Date"
@@ -31,12 +23,18 @@
                     }
                 },
                 "required": [
-                    "searcher_key"
+                    "region_index",
+                    "date"
                 ],
                 "title": "Получение апдейтов"
             },
             "Content_2.Methods.Apometr.Updates.Get.Exec": {
-                "nullable": true
+                "nullable": true,
+                "allOf": [
+                    {
+                        "$ref": "../../../../Content_2/Types/Update.json#/components/schemas/Content_2.Types.Update"
+                    }
+                ]
             }
         }
     }

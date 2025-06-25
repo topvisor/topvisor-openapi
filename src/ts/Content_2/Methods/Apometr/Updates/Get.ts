@@ -9,12 +9,11 @@ export interface components {
     schemas: {
         /** Получение апдейтов */
         "Content_2.Methods.Apometr.Updates.Get": {
-            /** @default 100 */
-            limit: number;
-            searcher_key: import('../../../../Positions_2/Types/SearcherKey.ts').components['schemas']['Positions_2.Types.SearcherKey'];
-            date?: import('../../../../TV/API/Types/Date.ts').components['schemas']['TV.API.Types.Date'] | null;
+            /** Индекс региона */
+            region_index: number;
+            date: import('../../../../TV/API/Types/Date.ts').components['schemas']['TV.API.Types.Date'];
         };
-        "Content_2.Methods.Apometr.Updates.Get.Exec": unknown;
+        "Content_2.Methods.Apometr.Updates.Get.Exec": import('../../../Types/Update.ts').components['schemas']['Content_2.Types.Update'] | null;
     };
     responses: never;
     parameters: never;
