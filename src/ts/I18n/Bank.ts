@@ -527,7 +527,7 @@ export interface components {
             /** @constant */
             readonly Manage_contract: "Manage contract";
             /** @constant */
-            readonly Cash_receipts: "Cash receipts";
+            readonly Cash_receipt: "Cash receipts";
             /** @constant */
             readonly Reconciliation_statement: "Reconciliation statement";
             /** @constant */

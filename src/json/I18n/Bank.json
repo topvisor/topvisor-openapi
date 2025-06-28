@@ -1046,7 +1046,7 @@
                         "const": "Manage contract",
                         "readOnly": true
                     },
-                    "Cash_receipts": {
+                    "Cash_receipt": {
                         "const": "Cash receipts",
                         "readOnly": true
                     },
@@ -1427,7 +1427,7 @@
                     "Domain_registration_or_renewal",
                     "Not_enough_money_for_purchase",
                     "Manage_contract",
-                    "Cash_receipts",
+                    "Cash_receipt",
                     "Reconciliation_statement",
                     "Download_contract",
                     "Sign_contract_via_diadoc",
