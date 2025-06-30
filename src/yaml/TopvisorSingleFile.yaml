@@ -13768,6 +13768,68 @@ paths:
             model:
               schema:
                 type: 'null'
+  /edit/snapshots_2/hiddenDomains/:
+    post:
+      operationId: EditSnapshots2HiddenDomains
+      tags:
+        - Snapshots_2
+      summary: Выделение сайтов (доменов) как неважные
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Snapshots_2.Methods.HiddenDomains.Edit'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            $ref: '#/components/schemas/Snapshots_2.Methods.HiddenDomains.Edit.Exec'
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
+  /get/snapshots_2/hiddenDomains/:
+    post:
+      operationId: GetSnapshots2HiddenDomains
+      tags:
+        - Snapshots_2
+      summary: Получение списка сайтов (доменов), которые выделены как неважные
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Snapshots_2.Methods.HiddenDomains.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            $ref: '#/components/schemas/Snapshots_2.Methods.HiddenDomains.Get.Exec'
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
 components:
   securitySchemes:
     authToken:
@@ -29650,3 +29712,34 @@ components:
         Создаст токен, если его не существует
     Informer_2.Methods.Push.Safari.WebService.AuthToken.Get.Exec:
       type: string
+    Snapshots_2.Methods.HiddenDomains.Edit:
+      type: object
+      properties:
+        project_id:
+          title: Id проекта
+          type: integer
+        domains:
+          title: Список доменов
+          nullable: true
+          allOf:
+            - $ref: '#/components/schemas/TV.API.Types.StringArray'
+      required:
+        - project_id
+      title: Выделение сайтов (доменов) как неважные
+    Snapshots_2.Methods.HiddenDomains.Edit.Exec:
+      nullable: true
+      anyOf:
+        - type: boolean
+        - type: integer
+        - type: 'null'
+    Snapshots_2.Methods.HiddenDomains.Get:
+      type: object
+      properties:
+        project_id:
+          title: Id проекта
+          type: integer
+      required:
+        - project_id
+      title: Получение списка сайтов (доменов), которые выделены как неважные
+    Snapshots_2.Methods.HiddenDomains.Get.Exec:
+      type: array

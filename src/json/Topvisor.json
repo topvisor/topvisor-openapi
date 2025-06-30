@@ -25230,6 +25230,122 @@
                     }
                 }
             }
+        },
+        "/edit/snapshots_2/hiddenDomains/": {
+            "post": {
+                "operationId": "EditSnapshots2HiddenDomains",
+                "tags": [
+                    "Snapshots_2"
+                ],
+                "summary": "Выделение сайтов (доменов) как неважные",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Snapshots_2/Methods/HiddenDomains/Edit.json#/components/schemas/Snapshots_2.Methods.HiddenDomains.Edit"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "oneOf": [
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "$ref": "Snapshots_2/Methods/HiddenDomains/Edit.json#/components/schemas/Snapshots_2.Methods.HiddenDomains.Edit.Exec"
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "result"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
+                                        }
+                                    ]
+                                }
+                            },
+                            "model": {
+                                "schema": {
+                                    "type": "null"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/get/snapshots_2/hiddenDomains/": {
+            "post": {
+                "operationId": "GetSnapshots2HiddenDomains",
+                "tags": [
+                    "Snapshots_2"
+                ],
+                "summary": "Получение списка сайтов (доменов), которые выделены как неважные",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Snapshots_2/Methods/HiddenDomains/Get.json#/components/schemas/Snapshots_2.Methods.HiddenDomains.Get"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "oneOf": [
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "$ref": "Snapshots_2/Methods/HiddenDomains/Get.json#/components/schemas/Snapshots_2.Methods.HiddenDomains.Get.Exec"
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "result"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
+                                        }
+                                    ]
+                                }
+                            },
+                            "model": {
+                                "schema": {
+                                    "type": "null"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
         }
     },
     "components": {
