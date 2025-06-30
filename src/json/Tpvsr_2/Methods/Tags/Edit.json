@@ -1,0 +1,38 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Tpvsr_2.Methods.Tags.Edit",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Tpvsr_2.Methods.Tags.Edit": {
+                "type": "object",
+                "properties": {
+                    "hash": {
+                        "title": "Хеш ссылки",
+                        "type": "string"
+                    },
+                    "tags": {
+                        "title": "Новые теги",
+                        "allOf": [
+                            {
+                                "$ref": "../../../Tpvsr_2/Types/Tags.json#/components/schemas/Tpvsr_2.Types.Tags"
+                            }
+                        ]
+                    }
+                },
+                "required": [
+                    "hash",
+                    "tags"
+                ],
+                "title": "Изменение тегов"
+            },
+            "Tpvsr_2.Methods.Tags.Edit.Exec": {
+                "nullable": true,
+                "type": "integer"
+            }
+        }
+    }
+}

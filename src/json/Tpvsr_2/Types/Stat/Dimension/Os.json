@@ -1,0 +1,25 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Tpvsr_2.Types.Stat.Dimension.Os",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Tpvsr_2.Types.Stat.Dimension.Os": {
+                "type": "string",
+                "enum": [
+                    "Android",
+                    "iOS",
+                    "WP",
+                    "Windows",
+                    "Macintosh",
+                    "Linux",
+                    "Other"
+                ],
+                "title": "Операционная система"
+            }
+        }
+    }
+}

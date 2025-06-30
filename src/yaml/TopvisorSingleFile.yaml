@@ -1028,6 +1028,100 @@ paths:
             model:
               schema:
                 type: 'null'
+  /add/tpvsr_2/:
+    post:
+      operationId: AddTpvsr2
+      tags:
+        - Tpvsr_2
+      summary: Добавление ссылки
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Tpvsr_2.Methods.Add'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            $ref: '#/components/schemas/Tpvsr_2.Methods.Add.Exec'
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
+  /edit/tpvsr_2/:
+    post:
+      operationId: EditTpvsr2
+      tags:
+        - Tpvsr_2
+      summary: Редактирование ссылки
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Tpvsr_2.Methods.Edit'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            $ref: '#/components/schemas/Tpvsr_2.Methods.Edit.Exec'
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                $ref: '#/components/schemas/Models.ShortLink'
+  /get/tpvsr_2/:
+    post:
+      operationId: GetTpvsr2
+      tags:
+        - Tpvsr_2
+      summary: Получение списка ссылок пользователя
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Tpvsr_2.Methods.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            $ref: '#/components/schemas/Tpvsr_2.Methods.Get.Exec'
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                      - $ref: '#/components/schemas/Pagination'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                $ref: '#/components/schemas/Models.ShortLink'
   /add/urls_2/:
     post:
       operationId: AddUrls2
@@ -5800,6 +5894,99 @@ paths:
             model:
               schema:
                 $ref: '#/components/schemas/Models.Tickets'
+  /get/tpvsr_2/stat/:
+    post:
+      operationId: GetTpvsr2Stat
+      tags:
+        - Tpvsr_2
+      summary: Получение статистики по ссылке
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Tpvsr_2.Methods.Stat.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            $ref: '#/components/schemas/Tpvsr_2.Methods.Stat.Get.Exec'
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
+  /edit/tpvsr_2/tags/:
+    post:
+      operationId: EditTpvsr2Tags
+      tags:
+        - Tpvsr_2
+      summary: Изменение тегов
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Tpvsr_2.Methods.Tags.Edit'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            $ref: '#/components/schemas/Tpvsr_2.Methods.Tags.Edit.Exec'
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
+  /get/tpvsr_2/title/:
+    post:
+      operationId: GetTpvsr2Title
+      tags:
+        - Tpvsr_2
+      summary: Получить title ссылки
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Tpvsr_2.Methods.Title.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            $ref: '#/components/schemas/Tpvsr_2.Methods.Title.Get.Exec'
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
   /get/urls_2/export/:
     post:
       operationId: GetUrls2Export
@@ -10907,6 +11094,37 @@ paths:
             model:
               schema:
                 type: 'null'
+  /get/tpvsr_2/stat/referers/:
+    post:
+      operationId: GetTpvsr2StatReferers
+      tags:
+        - Tpvsr_2
+      summary: Получение всех источников по индексу источника
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Tpvsr_2.Methods.Stat.Referers.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            $ref: '#/components/schemas/Tpvsr_2.Methods.Stat.Referers.Get.Exec'
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
   /get/urls_2/import/recognizeLinkSitemapXml/:
     post:
       operationId: GetUrls2ImportRecognizeLinkSitemapXml
@@ -13361,6 +13579,68 @@ paths:
             model:
               schema:
                 type: 'null'
+  /get/tpvsr_2/stat/export/guestLinks/:
+    post:
+      operationId: GetTpvsr2StatExportGuestLinks
+      tags:
+        - Tpvsr_2
+      summary: Поучение гостевой ссылки
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Tpvsr_2.Methods.Stat.Export.GuestLinks.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            $ref: '#/components/schemas/Tpvsr_2.Methods.Stat.Export.GuestLinks.Get.Exec'
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
+  /get/tpvsr_2/stat/export/referrers/:
+    post:
+      operationId: GetTpvsr2StatExportReferrers
+      tags:
+        - Tpvsr_2
+      summary: Получение списка источников
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Tpvsr_2.Methods.Stat.Export.Referrers.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            $ref: '#/components/schemas/Tpvsr_2.Methods.Stat.Export.Referrers.Get.Exec'
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
   /add/admin_2/actions/positions/history/copy/:
     post:
       operationId: AddAdmin2ActionsPositionsHistoryCopy
@@ -14759,6 +15039,122 @@ components:
         - target_type
       title: Получение сохраненного списка шаблонов
     Templates_2.Methods.Get.Exec:
+      type: array
+    Tpvsr_2.Types.Tags:
+      type: array
+      items:
+        $ref: '#/components/schemas/Tpvsr_2.Types.Tags'
+      title: Тэги для установки
+    Tpvsr_2.Methods.Add:
+      type: object
+      properties:
+        link:
+          title: Ссылка
+          type: string
+        title:
+          title: Название ссылки
+          nullable: true
+          type: string
+        add_secret:
+          title: Добавить секретную строку
+          type: boolean
+        tags:
+          title: Тэги ссылки
+          nullable: true
+          allOf:
+            - $ref: '#/components/schemas/Tpvsr_2.Types.Tags'
+        fields:
+          title: Поля, которые нужно получить
+          nullable: true
+          type: array
+      required:
+        - link
+      title: Добавление ссылки
+    Tpvsr_2.Methods.Add.Exec:
+      nullable: true
+    Tpvsr_2.Methods.Edit:
+      type: object
+      properties:
+        favorite:
+          title: Избранная ссылка
+          nullable: true
+          type: boolean
+        deleted:
+          title: Удаленная ссылка
+          nullable: true
+          type: boolean
+        title:
+          title: Заголовок ссылки
+          nullable: true
+          type: string
+        hash:
+          title: Хэш ссылки
+          nullable: true
+          type: string
+        filters:
+          $ref: '#/components/schemas/filters'
+        id:
+          $ref: '#/components/schemas/id'
+      required:
+        - filters
+      title: Редактирование ссылки
+    Tpvsr_2.Methods.Edit.Exec:
+      nullable: true
+      type: integer
+    Models.ShortLink:
+      properties:
+        COUNT(*):
+          nullable: true
+        GEN_SEARCH_STRING():
+          nullable: true
+        short_link:
+          nullable: true
+        link:
+          nullable: true
+        user_id:
+          nullable: true
+        create:
+          nullable: true
+        title:
+          nullable: true
+        favorite:
+          nullable: true
+        deleted:
+          nullable: true
+        hash:
+          nullable: true
+        count:
+          nullable: true
+        secret:
+          nullable: true
+        ban:
+          nullable: true
+        tags:
+          nullable: true
+    Tpvsr_2.Methods.Get:
+      type: object
+      properties:
+        fields:
+          $ref: '#/components/schemas/fields'
+        orders:
+          $ref: '#/components/schemas/orders'
+        filters:
+          $ref: '#/components/schemas/filters'
+        id:
+          $ref: '#/components/schemas/id'
+        limit:
+          $ref: '#/components/schemas/limit'
+        offset:
+          $ref: '#/components/schemas/offset'
+        fetch_style:
+          $ref: '#/components/schemas/fetch_style'
+      required:
+        - fields
+        - orders
+        - filters
+        - offset
+      title: Получение списка ссылок пользователя
+    Tpvsr_2.Methods.Get.Exec:
       type: array
     Urls_2.Types.Flag:
       type: integer
@@ -21421,6 +21817,122 @@ components:
           nullable: true
         message_noticed:
           nullable: true
+    Tpvsr_2.Types.Stat.Dimension.Type:
+      type: string
+      enum:
+        - chart_data
+        - counts_unique
+        - referrers
+        - browsers
+        - oses
+        - countries
+      title: Тип получаемых данных
+    Tpvsr_2.Types.Stat.Dimension.Types:
+      type: array
+      items:
+        $ref: '#/components/schemas/Tpvsr_2.Types.Stat.Dimension.Type'
+      title: Типы получаемых данных
+    Tpvsr_2.Types.Stat.Dimension.Browser:
+      type: string
+      enum:
+        - IE
+        - Chrome
+        - Firefox
+        - Opera
+        - Safari
+        - Ya
+        - Other
+      title: Бразуер для получение информации
+    Tpvsr_2.Types.Stat.Dimension.Browsers:
+      type: array
+      items:
+        $ref: '#/components/schemas/Tpvsr_2.Types.Stat.Dimension.Browser'
+      title: Бразуеры для получение информации
+    Tpvsr_2.Types.Stat.Dimension.Os:
+      type: string
+      enum:
+        - Android
+        - iOS
+        - WP
+        - Windows
+        - Macintosh
+        - Linux
+        - Other
+      title: Операционная система
+    Tpvsr_2.Types.Stat.Dimension.Oses:
+      type: array
+      items:
+        $ref: '#/components/schemas/Tpvsr_2.Types.Stat.Dimension.Os'
+      title: Операционные системы
+    Tpvsr_2.Types.Stat.Dimension.Referrer:
+      type: string
+      enum:
+        - social
+        - sites
+        - undefined
+        - overall
+      title: Место откуда перешел пользователь
+    Tpvsr_2.Types.Stat.Dimension.Referrers:
+      type: array
+      items:
+        $ref: '#/components/schemas/Tpvsr_2.Types.Stat.Dimension.Referrer'
+      title: Места откуда перешел пользователь
+    Tpvsr_2.Methods.Stat.Get:
+      type: object
+      properties:
+        hash:
+          title: Хэш ссылки
+          type: string
+        type_dimensions:
+          nullable: true
+          allOf:
+            - $ref: '#/components/schemas/Tpvsr_2.Types.Stat.Dimension.Types'
+        browser_dimensions:
+          nullable: true
+          allOf:
+            - $ref: '#/components/schemas/Tpvsr_2.Types.Stat.Dimension.Browsers'
+        os_dimensions:
+          nullable: true
+          allOf:
+            - $ref: '#/components/schemas/Tpvsr_2.Types.Stat.Dimension.Oses'
+        referrers_dimensions:
+          nullable: true
+          allOf:
+            - $ref: '#/components/schemas/Tpvsr_2.Types.Stat.Dimension.Referrers'
+      required:
+        - hash
+      title: Получение статистики по ссылке
+    Tpvsr_2.Methods.Stat.Get.Exec:
+      nullable: true
+      type: array
+    Tpvsr_2.Methods.Tags.Edit:
+      type: object
+      properties:
+        hash:
+          title: Хеш ссылки
+          type: string
+        tags:
+          title: Новые теги
+          allOf:
+            - $ref: '#/components/schemas/Tpvsr_2.Types.Tags'
+      required:
+        - hash
+        - tags
+      title: Изменение тегов
+    Tpvsr_2.Methods.Tags.Edit.Exec:
+      nullable: true
+      type: integer
+    Tpvsr_2.Methods.Title.Get:
+      type: object
+      properties:
+        link:
+          title: Ссылка
+          type: string
+      required:
+        - link
+      title: Получить title ссылки
+    Tpvsr_2.Methods.Title.Get.Exec:
+      type: string
     Urls_2.Types.Export.Output:
       type: string
       enum:
@@ -26921,6 +27433,21 @@ components:
       title: Написание текста
     Tickets_2.Methods.Tickets.Writing.Edit.Exec:
       nullable: true
+    Tpvsr_2.Methods.Stat.Referers.Get:
+      type: object
+      properties:
+        hash:
+          title: Хэш ссылки
+          type: string
+        referer_index:
+          title: Индекс источника
+          type: string
+      required:
+        - hash
+        - referer_index
+      title: Получение всех источников по индексу источника
+    Tpvsr_2.Methods.Stat.Referers.Get.Exec:
+      type: array
     Urls_2.Methods.Import.RecognizeLinkSitemapXml.Get:
       type: object
       properties:
@@ -29016,6 +29543,37 @@ components:
     Tickets_2.Methods.Admin.Ticket.ResourceAdmin.Edit.Exec:
       nullable: true
       type: integer
+    Tpvsr_2.Methods.Stat.Export.GuestLinks.Get:
+      type: object
+      properties:
+        hash:
+          title: Хэш ссылки
+          type: string
+      required:
+        - hash
+      title: Поучение гостевой ссылки
+    Tpvsr_2.Methods.Stat.Export.GuestLinks.Get.Exec:
+      type: string
+    Tpvsr_2.Types.Stat.Export.Referrers.Output:
+      type: string
+      enum:
+        - csv
+      title: Формат экспорта
+    Tpvsr_2.Methods.Stat.Export.Referrers.Get:
+      type: object
+      properties:
+        hash:
+          title: Хэш ссылки
+          type: string
+        output:
+          allOf:
+            - $ref: '#/components/schemas/Tpvsr_2.Types.Stat.Export.Referrers.Output'
+      required:
+        - hash
+        - output
+      title: Получение списка источников
+    Tpvsr_2.Methods.Stat.Export.Referrers.Get.Exec:
+      type: string
     Admin_2.Methods.Actions.Positions.History.Copy.Add:
       type: object
       properties:

@@ -1,0 +1,28 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Tpvsr_2.Methods.Title.Get",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Tpvsr_2.Methods.Title.Get": {
+                "type": "object",
+                "properties": {
+                    "link": {
+                        "title": "Ссылка",
+                        "type": "string"
+                    }
+                },
+                "required": [
+                    "link"
+                ],
+                "title": "Получить title ссылки"
+            },
+            "Tpvsr_2.Methods.Title.Get.Exec": {
+                "type": "string"
+            }
+        }
+    }
+}

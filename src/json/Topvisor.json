@@ -1674,6 +1674,183 @@
                 }
             }
         },
+        "/add/tpvsr_2/": {
+            "post": {
+                "operationId": "AddTpvsr2",
+                "tags": [
+                    "Tpvsr_2"
+                ],
+                "summary": "Добавление ссылки",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Tpvsr_2/Methods/Add.json#/components/schemas/Tpvsr_2.Methods.Add"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "oneOf": [
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "$ref": "Tpvsr_2/Methods/Add.json#/components/schemas/Tpvsr_2.Methods.Add.Exec"
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "result"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
+                                        }
+                                    ]
+                                }
+                            },
+                            "model": {
+                                "schema": {
+                                    "type": "null"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/edit/tpvsr_2/": {
+            "post": {
+                "operationId": "EditTpvsr2",
+                "tags": [
+                    "Tpvsr_2"
+                ],
+                "summary": "Редактирование ссылки",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Tpvsr_2/Methods/Edit.json#/components/schemas/Tpvsr_2.Methods.Edit"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "oneOf": [
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "$ref": "Tpvsr_2/Methods/Edit.json#/components/schemas/Tpvsr_2.Methods.Edit.Exec"
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "result"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
+                                        }
+                                    ]
+                                }
+                            },
+                            "model": {
+                                "schema": {
+                                    "$ref": "Models/ShortLink.json#/components/schemas/Models.ShortLink"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/get/tpvsr_2/": {
+            "post": {
+                "operationId": "GetTpvsr2",
+                "tags": [
+                    "Tpvsr_2"
+                ],
+                "summary": "Получение списка ссылок пользователя",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Tpvsr_2/Methods/Get.json#/components/schemas/Tpvsr_2.Methods.Get"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "oneOf": [
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "$ref": "Tpvsr_2/Methods/Get.json#/components/schemas/Tpvsr_2.Methods.Get.Exec"
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "result"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                },
+                                                {
+                                                    "$ref": "Pagination.json#/components/schemas/Pagination"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
+                                        }
+                                    ]
+                                }
+                            },
+                            "model": {
+                                "schema": {
+                                    "$ref": "Models/ShortLink.json#/components/schemas/Models.ShortLink"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
         "/add/urls_2/": {
             "post": {
                 "operationId": "AddUrls2",
@@ -10520,6 +10697,180 @@
                             "model": {
                                 "schema": {
                                     "$ref": "Models/Tickets.json#/components/schemas/Models.Tickets"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/get/tpvsr_2/stat/": {
+            "post": {
+                "operationId": "GetTpvsr2Stat",
+                "tags": [
+                    "Tpvsr_2"
+                ],
+                "summary": "Получение статистики по ссылке",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Tpvsr_2/Methods/Stat/Get.json#/components/schemas/Tpvsr_2.Methods.Stat.Get"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "oneOf": [
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "$ref": "Tpvsr_2/Methods/Stat/Get.json#/components/schemas/Tpvsr_2.Methods.Stat.Get.Exec"
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "result"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
+                                        }
+                                    ]
+                                }
+                            },
+                            "model": {
+                                "schema": {
+                                    "type": "null"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/edit/tpvsr_2/tags/": {
+            "post": {
+                "operationId": "EditTpvsr2Tags",
+                "tags": [
+                    "Tpvsr_2"
+                ],
+                "summary": "Изменение тегов",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Tpvsr_2/Methods/Tags/Edit.json#/components/schemas/Tpvsr_2.Methods.Tags.Edit"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "oneOf": [
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "$ref": "Tpvsr_2/Methods/Tags/Edit.json#/components/schemas/Tpvsr_2.Methods.Tags.Edit.Exec"
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "result"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
+                                        }
+                                    ]
+                                }
+                            },
+                            "model": {
+                                "schema": {
+                                    "type": "null"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/get/tpvsr_2/title/": {
+            "post": {
+                "operationId": "GetTpvsr2Title",
+                "tags": [
+                    "Tpvsr_2"
+                ],
+                "summary": "Получить title ссылки",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Tpvsr_2/Methods/Title/Get.json#/components/schemas/Tpvsr_2.Methods.Title.Get"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "oneOf": [
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "$ref": "Tpvsr_2/Methods/Title/Get.json#/components/schemas/Tpvsr_2.Methods.Title.Get.Exec"
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "result"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
+                                        }
+                                    ]
+                                }
+                            },
+                            "model": {
+                                "schema": {
+                                    "type": "null"
                                 }
                             }
                         }
@@ -19934,6 +20285,64 @@
                 }
             }
         },
+        "/get/tpvsr_2/stat/referers/": {
+            "post": {
+                "operationId": "GetTpvsr2StatReferers",
+                "tags": [
+                    "Tpvsr_2"
+                ],
+                "summary": "Получение всех источников по индексу источника",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Tpvsr_2/Methods/Stat/Referers/Get.json#/components/schemas/Tpvsr_2.Methods.Stat.Referers.Get"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "oneOf": [
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "$ref": "Tpvsr_2/Methods/Stat/Referers/Get.json#/components/schemas/Tpvsr_2.Methods.Stat.Referers.Get.Exec"
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "result"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
+                                        }
+                                    ]
+                                }
+                            },
+                            "model": {
+                                "schema": {
+                                    "type": "null"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
         "/get/urls_2/import/recognizeLinkSitemapXml/": {
             "post": {
                 "operationId": "GetUrls2ImportRecognizeLinkSitemapXml",
@@ -24447,6 +24856,122 @@
                                                     "properties": {
                                                         "result": {
                                                             "$ref": "Tickets_2/Methods/Admin/Ticket/ResourceAdmin/Edit.json#/components/schemas/Tickets_2.Methods.Admin.Ticket.ResourceAdmin.Edit.Exec"
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "result"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
+                                        }
+                                    ]
+                                }
+                            },
+                            "model": {
+                                "schema": {
+                                    "type": "null"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/get/tpvsr_2/stat/export/guestLinks/": {
+            "post": {
+                "operationId": "GetTpvsr2StatExportGuestLinks",
+                "tags": [
+                    "Tpvsr_2"
+                ],
+                "summary": "Поучение гостевой ссылки",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Tpvsr_2/Methods/Stat/Export/GuestLinks/Get.json#/components/schemas/Tpvsr_2.Methods.Stat.Export.GuestLinks.Get"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "oneOf": [
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "$ref": "Tpvsr_2/Methods/Stat/Export/GuestLinks/Get.json#/components/schemas/Tpvsr_2.Methods.Stat.Export.GuestLinks.Get.Exec"
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "result"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
+                                        }
+                                    ]
+                                }
+                            },
+                            "model": {
+                                "schema": {
+                                    "type": "null"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/get/tpvsr_2/stat/export/referrers/": {
+            "post": {
+                "operationId": "GetTpvsr2StatExportReferrers",
+                "tags": [
+                    "Tpvsr_2"
+                ],
+                "summary": "Получение списка источников",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Tpvsr_2/Methods/Stat/Export/Referrers/Get.json#/components/schemas/Tpvsr_2.Methods.Stat.Export.Referrers.Get"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "oneOf": [
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "$ref": "Tpvsr_2/Methods/Stat/Export/Referrers/Get.json#/components/schemas/Tpvsr_2.Methods.Stat.Export.Referrers.Get.Exec"
                                                         }
                                                     },
                                                     "required": [

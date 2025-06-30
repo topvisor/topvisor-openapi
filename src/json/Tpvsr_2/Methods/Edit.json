@@ -1,0 +1,51 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Tpvsr_2.Methods.Edit",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Tpvsr_2.Methods.Edit": {
+                "type": "object",
+                "properties": {
+                    "favorite": {
+                        "title": "Избранная ссылка",
+                        "nullable": true,
+                        "type": "boolean"
+                    },
+                    "deleted": {
+                        "title": "Удаленная ссылка",
+                        "nullable": true,
+                        "type": "boolean"
+                    },
+                    "title": {
+                        "title": "Заголовок ссылки",
+                        "nullable": true,
+                        "type": "string"
+                    },
+                    "hash": {
+                        "title": "Хэш ссылки",
+                        "nullable": true,
+                        "type": "string"
+                    },
+                    "filters": {
+                        "$ref": "../../TV/API/Params/FiltersTrait.json#/components/schemas/TV.API.Params.FiltersTrait/properties/filters"
+                    },
+                    "id": {
+                        "$ref": "../../TV/API/Params/FiltersTrait.json#/components/schemas/TV.API.Params.FiltersTrait/properties/id"
+                    }
+                },
+                "required": [
+                    "filters"
+                ],
+                "title": "Редактирование ссылки"
+            },
+            "Tpvsr_2.Methods.Edit.Exec": {
+                "nullable": true,
+                "type": "integer"
+            }
+        }
+    }
+}

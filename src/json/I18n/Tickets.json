@@ -166,11 +166,11 @@
                         "const": "Average expenses",
                         "readOnly": true
                     },
-                    "Add_resource_admin_link": {
-                        "const": "Add resource admin link",
+                    "Edit_resource_admin": {
+                        "const": "Config resource admin link",
                         "readOnly": true
                     },
-                    "Admin_link": {
+                    "Resource_admin": {
                         "const": "Admin link",
                         "readOnly": true
                     },
@@ -267,8 +267,8 @@
                     "Sound_xylophone",
                     "Sound_drums",
                     "Average_expenses",
-                    "Add_resource_admin_link",
-                    "Admin_link",
+                    "Edit_resource_admin",
+                    "Resource_admin",
                     "Bad",
                     "Normal",
                     "Good",

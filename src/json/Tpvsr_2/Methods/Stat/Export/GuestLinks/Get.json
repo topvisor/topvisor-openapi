@@ -1,0 +1,28 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Tpvsr_2.Methods.Stat.Export.GuestLinks.Get",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Tpvsr_2.Methods.Stat.Export.GuestLinks.Get": {
+                "type": "object",
+                "properties": {
+                    "hash": {
+                        "title": "Хэш ссылки",
+                        "type": "string"
+                    }
+                },
+                "required": [
+                    "hash"
+                ],
+                "title": "Поучение гостевой ссылки"
+            },
+            "Tpvsr_2.Methods.Stat.Export.GuestLinks.Get.Exec": {
+                "type": "string"
+            }
+        }
+    }
+}

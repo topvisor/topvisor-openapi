@@ -513,6 +513,57 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
+    /** Добавление ссылки */
+    "/add/tpvsr_2/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["AddTpvsr2"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Редактирование ссылки */
+    "/edit/tpvsr_2/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["EditTpvsr2"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Получение списка ссылок пользователя */
+    "/get/tpvsr_2/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["GetTpvsr2"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
     /** Добавление url */
     "/add/urls_2/": {
         parameters: {
@@ -3135,6 +3186,57 @@ export interface paths {
         get?: never;
         put?: never;
         post: operations["GetTickets2Tickets"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Получение статистики по ссылке */
+    "/get/tpvsr_2/stat/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["GetTpvsr2Stat"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Изменение тегов */
+    "/edit/tpvsr_2/tags/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["EditTpvsr2Tags"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Получить title ссылки */
+    "/get/tpvsr_2/title/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["GetTpvsr2Title"];
         delete?: never;
         options?: never;
         head?: never;
@@ -5994,6 +6096,23 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
+    /** Получение всех источников по индексу источника */
+    "/get/tpvsr_2/stat/referers/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["GetTpvsr2StatReferers"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
     /** Получение URL к карте сайта по файлу robots.txt для указанного домена */
     "/get/urls_2/import/recognizeLinkSitemapXml/": {
         parameters: {
@@ -7370,6 +7489,40 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
+    /** Поучение гостевой ссылки */
+    "/get/tpvsr_2/stat/export/guestLinks/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["GetTpvsr2StatExportGuestLinks"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Получение списка источников */
+    "/get/tpvsr_2/stat/export/referrers/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["GetTpvsr2StatExportReferrers"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
     /** Копирование истории позиций */
     "/add/admin_2/actions/positions/history/copy/": {
         parameters: {
@@ -7443,7 +7596,10 @@ export interface paths {
 }
 export type webhooks = Record<string, never>;
 export interface components {
-    schemas: never;
+    schemas: {
+        /** Тэги для установки */
+        "Tpvsr_2.Types.Tags": components["schemas"]["Tpvsr_2.Types.Tags"][];
+    };
     responses: never;
     parameters: never;
     requestBodies: never;
@@ -8199,6 +8355,84 @@ export interface operations {
                         result: import('./Templates_2/Methods/Get.ts').components['schemas']['Templates_2.Methods.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
+                };
+            };
+        };
+    };
+    AddTpvsr2: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Tpvsr_2/Methods/Add.ts').components['schemas']['Tpvsr_2.Methods.Add'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./Tpvsr_2/Methods/Add.ts').components['schemas']['Tpvsr_2.Methods.Add.Exec'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: null;
+                };
+            };
+        };
+    };
+    EditTpvsr2: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Tpvsr_2/Methods/Edit.ts').components['schemas']['Tpvsr_2.Methods.Edit'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./Tpvsr_2/Methods/Edit.ts').components['schemas']['Tpvsr_2.Methods.Edit.Exec'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: import('./Models/ShortLink.ts').components['schemas']['Models.ShortLink'];
+                };
+            };
+        };
+    };
+    GetTpvsr2: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Tpvsr_2/Methods/Get.ts').components['schemas']['Tpvsr_2.Methods.Get'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./Tpvsr_2/Methods/Get.ts').components['schemas']['Tpvsr_2.Methods.Get.Exec'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: import('./Models/ShortLink.ts').components['schemas']['Models.ShortLink'];
                 };
             };
         };
@@ -12142,6 +12376,84 @@ export interface operations {
                         result: import('./Tickets_2/Methods/Tickets/Get.ts').components['schemas']['Tickets_2.Methods.Tickets.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: import('./Models/Tickets.ts').components['schemas']['Models.Tickets'];
+                };
+            };
+        };
+    };
+    GetTpvsr2Stat: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Tpvsr_2/Methods/Stat/Get.ts').components['schemas']['Tpvsr_2.Methods.Stat.Get'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./Tpvsr_2/Methods/Stat/Get.ts').components['schemas']['Tpvsr_2.Methods.Stat.Get.Exec'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: null;
+                };
+            };
+        };
+    };
+    EditTpvsr2Tags: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Tpvsr_2/Methods/Tags/Edit.ts').components['schemas']['Tpvsr_2.Methods.Tags.Edit'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./Tpvsr_2/Methods/Tags/Edit.ts').components['schemas']['Tpvsr_2.Methods.Tags.Edit.Exec'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: null;
+                };
+            };
+        };
+    };
+    GetTpvsr2Title: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Tpvsr_2/Methods/Title/Get.ts').components['schemas']['Tpvsr_2.Methods.Title.Get'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./Tpvsr_2/Methods/Title/Get.ts').components['schemas']['Tpvsr_2.Methods.Title.Get.Exec'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: null;
                 };
             };
         };
@@ -16387,6 +16699,32 @@ export interface operations {
             };
         };
     };
+    GetTpvsr2StatReferers: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Tpvsr_2/Methods/Stat/Referers/Get.ts').components['schemas']['Tpvsr_2.Methods.Stat.Referers.Get'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./Tpvsr_2/Methods/Stat/Referers/Get.ts').components['schemas']['Tpvsr_2.Methods.Stat.Referers.Get.Exec'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: null;
+                };
+            };
+        };
+    };
     GetUrls2ImportRecognizeLinkSitemapXml: {
         parameters: {
             query?: never;
@@ -18425,6 +18763,58 @@ export interface operations {
                 content: {
                     "application/json": ({
                         result: import('./Tickets_2/Methods/Admin/Ticket/ResourceAdmin/Edit.ts').components['schemas']['Tickets_2.Methods.Admin.Ticket.ResourceAdmin.Edit.Exec'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: null;
+                };
+            };
+        };
+    };
+    GetTpvsr2StatExportGuestLinks: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Tpvsr_2/Methods/Stat/Export/GuestLinks/Get.ts').components['schemas']['Tpvsr_2.Methods.Stat.Export.GuestLinks.Get'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./Tpvsr_2/Methods/Stat/Export/GuestLinks/Get.ts').components['schemas']['Tpvsr_2.Methods.Stat.Export.GuestLinks.Get.Exec'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: null;
+                };
+            };
+        };
+    };
+    GetTpvsr2StatExportReferrers: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Tpvsr_2/Methods/Stat/Export/Referrers/Get.ts').components['schemas']['Tpvsr_2.Methods.Stat.Export.Referrers.Get'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./Tpvsr_2/Methods/Stat/Export/Referrers/Get.ts').components['schemas']['Tpvsr_2.Methods.Stat.Export.Referrers.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };

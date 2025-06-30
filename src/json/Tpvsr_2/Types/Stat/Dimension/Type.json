@@ -1,0 +1,24 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Tpvsr_2.Types.Stat.Dimension.Type",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Tpvsr_2.Types.Stat.Dimension.Type": {
+                "type": "string",
+                "enum": [
+                    "chart_data",
+                    "counts_unique",
+                    "referrers",
+                    "browsers",
+                    "oses",
+                    "countries"
+                ],
+                "title": "Тип получаемых данных"
+            }
+        }
+    }
+}

@@ -1,0 +1,61 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Tpvsr_2.Methods.Stat.Get",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Tpvsr_2.Methods.Stat.Get": {
+                "type": "object",
+                "properties": {
+                    "hash": {
+                        "title": "Хэш ссылки",
+                        "type": "string"
+                    },
+                    "type_dimensions": {
+                        "nullable": true,
+                        "allOf": [
+                            {
+                                "$ref": "../../../Tpvsr_2/Types/Stat/Dimension/Types.json#/components/schemas/Tpvsr_2.Types.Stat.Dimension.Types"
+                            }
+                        ]
+                    },
+                    "browser_dimensions": {
+                        "nullable": true,
+                        "allOf": [
+                            {
+                                "$ref": "../../../Tpvsr_2/Types/Stat/Dimension/Browsers.json#/components/schemas/Tpvsr_2.Types.Stat.Dimension.Browsers"
+                            }
+                        ]
+                    },
+                    "os_dimensions": {
+                        "nullable": true,
+                        "allOf": [
+                            {
+                                "$ref": "../../../Tpvsr_2/Types/Stat/Dimension/Oses.json#/components/schemas/Tpvsr_2.Types.Stat.Dimension.Oses"
+                            }
+                        ]
+                    },
+                    "referrers_dimensions": {
+                        "nullable": true,
+                        "allOf": [
+                            {
+                                "$ref": "../../../Tpvsr_2/Types/Stat/Dimension/Referrers.json#/components/schemas/Tpvsr_2.Types.Stat.Dimension.Referrers"
+                            }
+                        ]
+                    }
+                },
+                "required": [
+                    "hash"
+                ],
+                "title": "Получение статистики по ссылке"
+            },
+            "Tpvsr_2.Methods.Stat.Get.Exec": {
+                "nullable": true,
+                "type": "array"
+            }
+        }
+    }
+}

@@ -1,0 +1,36 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Tpvsr_2.Methods.Stat.Export.Referrers.Get",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Tpvsr_2.Methods.Stat.Export.Referrers.Get": {
+                "type": "object",
+                "properties": {
+                    "hash": {
+                        "title": "Хэш ссылки",
+                        "type": "string"
+                    },
+                    "output": {
+                        "allOf": [
+                            {
+                                "$ref": "../../../../../Tpvsr_2/Types/Stat/Export/Referrers/Output.json#/components/schemas/Tpvsr_2.Types.Stat.Export.Referrers.Output"
+                            }
+                        ]
+                    }
+                },
+                "required": [
+                    "hash",
+                    "output"
+                ],
+                "title": "Получение списка источников"
+            },
+            "Tpvsr_2.Methods.Stat.Export.Referrers.Get.Exec": {
+                "type": "string"
+            }
+        }
+    }
+}

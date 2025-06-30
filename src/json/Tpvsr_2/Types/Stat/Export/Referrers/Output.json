@@ -1,0 +1,19 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Tpvsr_2.Types.Stat.Export.Referrers.Output",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Tpvsr_2.Types.Stat.Export.Referrers.Output": {
+                "type": "string",
+                "enum": [
+                    "csv"
+                ],
+                "title": "Формат экспорта"
+            }
+        }
+    }
+}
