@@ -50,7 +50,6 @@ export interface components {
             /** Ограничение по количеству url получаемых при проверке */
             max_urls_count?: string;
         };
-        /** @throws Exception */
         "Schedule_2.Methods.Settings.Edit.Exec": number | null;
     };
     responses: never;

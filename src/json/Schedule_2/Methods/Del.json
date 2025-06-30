@@ -31,7 +31,6 @@
                 ]
             },
             "Schedule_2.Methods.Del.Exec": {
-                "title": "@throws Exception",
                 "nullable": true,
                 "type": "integer"
             }

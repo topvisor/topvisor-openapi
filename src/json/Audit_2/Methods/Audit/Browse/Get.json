@@ -22,6 +22,7 @@
                     "check_id"
                 ],
                 "title": "Получение сводки анализа сайта",
+                "description": "@deprecated",
                 "deprecated": true
             },
             "Audit_2.Methods.Audit.Browse.Get.Exec": {

@@ -37,7 +37,6 @@
                 "title": "Изменить активность поисковика"
             },
             "Mentions_2.Methods.Searchers.Enabled.Edit.Exec": {
-                "title": "@throws Exception",
                 "type": "integer"
             }
         }

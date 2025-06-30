@@ -10,6 +10,7 @@ export interface components {
         /**
          * Получение результатов анализа страницы
          * @deprecated
+         * @description @deprecated
          */
         "Audit_2.Methods.Audit.Results.Page.Get": {
             /** Ссылка на анализируемую страницу */
@@ -20,11 +21,7 @@ export interface components {
             project_id: import('../../../../../TV/API/Params/ProjectIdTrait.ts').components['schemas']['TV.API.Params.ProjectIdTrait']['project_id'];
             check_id: import('../../../../Params/Audit/CheckIdTrait.ts').components['schemas']['Audit_2.Params.Audit.CheckIdTrait']['check_id'];
         };
-        /**
-         * Результаты анализа страницы
-         * @description
-         *     @throws Exception
-         */
+        /** Результаты анализа страницы */
         "Audit_2.Methods.Audit.Results.Page.Get.Exec": {
             result: {
                 page_in_filter: boolean;

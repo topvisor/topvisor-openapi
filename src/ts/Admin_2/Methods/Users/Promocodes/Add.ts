@@ -15,7 +15,6 @@ export interface components {
             /** Список многоразовых промокодов */
             codes?: unknown[] | null;
         };
-        /** @throws Exception */
         "Admin_2.Methods.Users.Promocodes.Add.Exec": number | null;
     };
     responses: never;

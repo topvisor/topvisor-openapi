@@ -159,7 +159,6 @@
                 "title": "Изменение документа"
             },
             "Content_2.Methods.Pages.Edit.Exec": {
-                "title": "@throws Exception",
                 "nullable": true,
                 "type": "integer"
             }

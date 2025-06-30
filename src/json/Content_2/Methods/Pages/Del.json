@@ -23,7 +23,6 @@
                 "title": "Перенести документ в папку /archive/"
             },
             "Content_2.Methods.Pages.Del.Exec": {
-                "title": "@throws Exception",
                 "nullable": true,
                 "type": "integer"
             }

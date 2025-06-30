@@ -51,6 +51,7 @@
                     "check_id"
                 ],
                 "title": "Экспорт результатов аудита",
+                "description": "@deprecated",
                 "deprecated": true
             },
             "Audit_2.Methods.Audit.Results.Export.Get.Exec": {

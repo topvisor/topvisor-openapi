@@ -46,7 +46,6 @@
                 "title": "Получение объявления рекламной кампании"
             },
             "Broker_2.Methods.Ads.Get.Exec": {
-                "title": "@throws Exception",
                 "nullable": true,
                 "type": "array"
             }

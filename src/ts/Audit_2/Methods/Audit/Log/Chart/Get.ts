@@ -10,6 +10,7 @@ export interface components {
         /**
          * Получение данных для графика
          * @deprecated
+         * @description @deprecated
          */
         "Audit_2.Methods.Audit.Log.Chart.Get": {
             /** Фильтр по периоду */

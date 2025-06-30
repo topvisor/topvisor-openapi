@@ -12,7 +12,7 @@
                 "properties": {
                     "schedule": {
                         "title": "Каждый элемент содержит:\n- times: Массив времени, где каждый элемент — ассоциативный массив с ключами:\n- - hour: Час из перечисления доступных часов (см. $availableHours)\n- - minute: Минута из перечисления доступных минут (см. $availableMinutes)\n- days: Массив дней из перечисления доступных дней (см. $availableDays)",
-                        "description": "@var array<int, array{times: array<int, array{hour: string, minute: string}>, days: string[]}> $schedule Массив расписания, содержащий элементы с данными о времени и днях.\n\n@see Schedule_2\\Mods\\Schedule::$availableHours\n@see Schedule_2\\Mods\\Schedule::$availableMinutes\n@see Schedule_2\\Mods\\Schedule::$availableDays",
+                        "description": "@var array<int, array{times: array<int, array{hour: string, minute: string}>, days: string[]}> $schedule Массив расписания, содержащий элементы с данными о времени и днях.\n@see Schedule_2\\Mods\\Schedule::$availableHours\n@see Schedule_2\\Mods\\Schedule::$availableMinutes\n@see Schedule_2\\Mods\\Schedule::$availableDays",
                         "type": "array"
                     },
                     "type": {
@@ -38,7 +38,6 @@
                 "title": "Привязать расписание к объекту"
             },
             "Schedule_2.Methods.Edit.Exec": {
-                "title": "@throws Exception",
                 "nullable": true,
                 "type": "integer"
             }

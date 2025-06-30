@@ -21,7 +21,6 @@
                 "title": "Ручной запуск корректировки"
             },
             "Broker_2.Methods.Tasks.RateTask.Add.Exec": {
-                "title": "@throws Exception",
                 "nullable": true,
                 "type": "integer"
             }

@@ -22,7 +22,6 @@
             },
             "Broker_2.Methods.Ads.ToModerate.Edit.Exec": {
                 "title": "выводит int, если функция провайдера не определена",
-                "description": "@throws Exception",
                 "nullable": true,
                 "anyOf": [
                     {

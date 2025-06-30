@@ -38,7 +38,6 @@
                 "title": "Добавление правила"
             },
             "Mentions_2.Methods.Rules.Add.Exec": {
-                "title": "@throws Exception",
                 "type": "integer"
             }
         }

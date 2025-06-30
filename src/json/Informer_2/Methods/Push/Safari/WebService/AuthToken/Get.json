@@ -1,0 +1,21 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Informer_2.Methods.Push.Safari.WebService.AuthToken.Get",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Informer_2.Methods.Push.Safari.WebService.AuthToken.Get": {
+                "type": "object",
+                "properties": {},
+                "required": [],
+                "title": "Получение токена авторизации для работы с safari web push\n\nСоздаст токен, если его не существует"
+            },
+            "Informer_2.Methods.Push.Safari.WebService.AuthToken.Get.Exec": {
+                "type": "string"
+            }
+        }
+    }
+}

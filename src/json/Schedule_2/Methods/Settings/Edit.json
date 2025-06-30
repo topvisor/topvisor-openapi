@@ -136,7 +136,6 @@
                 "title": "Изменить дополнительные параметры расписания"
             },
             "Schedule_2.Methods.Settings.Edit.Exec": {
-                "title": "@throws Exception",
                 "nullable": true,
                 "type": "integer"
             }

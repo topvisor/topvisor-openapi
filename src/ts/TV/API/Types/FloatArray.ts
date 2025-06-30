@@ -10,7 +10,7 @@ export interface components {
         /**
          * Тип: float[]
          * @deprecated
-         * @description
+         * @description @deprecated Использовать не рекомендуется, для передачи float рекомендуется использовать строки или целые числа, умноженные на 10^n
          *     @extends AbstractTypedArray<float>
          *     @method float[] getValues()
          *     @method float current()

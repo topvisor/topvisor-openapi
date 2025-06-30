@@ -14,10 +14,7 @@ export interface components {
             /** Информация о запросах (id группы и id запросов) */
             keywords_data: unknown[];
         };
-        /**
-         * выводит int, если функция провайдера не определена
-         * @description @throws Exception
-         */
+        /** выводит int, если функция провайдера не определена */
         "Broker_2.Methods.Keywords.Status.Edit.Exec": (unknown[] | number | null) | null;
     };
     responses: never;

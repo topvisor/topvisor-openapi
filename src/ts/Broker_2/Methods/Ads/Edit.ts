@@ -25,10 +25,7 @@ export interface components {
             /** Url для отображения */
             display_url?: string | null;
         };
-        /**
-         * выводит int, если функция провайдера не определена
-         * @description @throws Exception
-         */
+        /** выводит int, если функция провайдера не определена */
         "Broker_2.Methods.Ads.Edit.Exec": (unknown[] | number | null) | null;
     };
     responses: never;

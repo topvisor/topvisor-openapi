@@ -33,7 +33,6 @@
                 "title": "Получение сохраненного списка шаблонов"
             },
             "Templates_2.Methods.Get.Exec": {
-                "title": "@throws Exception",
                 "type": "array"
             }
         }

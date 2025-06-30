@@ -12,7 +12,6 @@ export interface components {
             /** Id шаблона */
             id: number;
         };
-        /** @throws Exception */
         "Templates_2.Methods.Del.Exec": number | null;
     };
     responses: never;

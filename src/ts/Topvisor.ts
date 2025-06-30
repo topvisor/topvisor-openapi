@@ -1881,6 +1881,91 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
+    /** Настройка уведомлений */
+    "/edit/informer_2/config/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["EditInformer2Config"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Получение настроек уведомлений */
+    "/get/informer_2/config/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["GetInformer2Config"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Получение информации о сообщениях в информере */
+    "/get/informer_2/info/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["GetInformer2Info"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Удаление сообщений из инфомера */
+    "/del/informer_2/informer/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["DelInformer2Informer"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Получение списка сообщений в информере */
+    "/get/informer_2/informer/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["GetInformer2Informer"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
     /** Получение списка запросов проекта */
     "/get/keywords_2/keywords/": {
         parameters: {
@@ -3926,6 +4011,7 @@ export interface paths {
     /**
      * Получение сводки анализа сайта
      * @deprecated
+     * @description @deprecated
      */
     "/get/audit_2/audit/browse/": {
         parameters: {
@@ -4553,7 +4639,11 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Получение истории urls, найденных в выдаче, за конкретную проверку */
+    /**
+     * Получение истории urls, найденных в выдаче, за конкретную проверку
+     * @deprecated
+     * @description @deprecated Используйте Services\Content_2\Methods\Apometr\Snapshots\Top\Get
+     */
     "/get/content_2/apometr/cHHistory/": {
         parameters: {
             query?: never;
@@ -4753,6 +4843,40 @@ export interface paths {
         get?: never;
         put?: never;
         post: operations["GetContent2SupportMenu"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Регистрация токена */
+    "/add/informer_2/push/token/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["AddInformer2PushToken"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Удаление токена */
+    "/del/informer_2/push/token/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["DelInformer2PushToken"];
         delete?: never;
         options?: never;
         head?: never;
@@ -6664,6 +6788,7 @@ export interface paths {
     /**
      * Получение данных для графика
      * @deprecated
+     * @description @deprecated
      */
     "/get/audit_2/audit/log/chart/": {
         parameters: {
@@ -6684,6 +6809,7 @@ export interface paths {
     /**
      * Экспорт результатов аудита
      * @deprecated
+     * @description @deprecated
      */
     "/get/audit_2/audit/results/export/": {
         parameters: {
@@ -6704,6 +6830,7 @@ export interface paths {
     /**
      * Получение результатов анализа страницы
      * @deprecated
+     * @description @deprecated
      */
     "/get/audit_2/audit/results/page/": {
         parameters: {
@@ -6904,6 +7031,23 @@ export interface paths {
         get?: never;
         put?: never;
         post: operations["GetAudit2WatcherSummaryChart"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Получение топа выдачи сайтов за определенную проверку */
+    "/get/content_2/apometr/snapshots/top/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["GetContent2ApometrSnapshotsTop"];
         delete?: never;
         options?: never;
         head?: never;
@@ -7271,6 +7415,25 @@ export interface paths {
         get?: never;
         put?: never;
         post: operations["GetContent2JournalCourseCertificatesImage"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Получение токена авторизации для работы с safari web push
+     *
+     *     Создаст токен, если его не существует */
+    "/get/informer_2/push/safari/webService/authToken/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["GetInformer2PushSafariWebServiceAuthToken"];
         delete?: never;
         options?: never;
         head?: never;
@@ -10110,6 +10273,136 @@ export interface operations {
                         result: import('./Example_2/Methods/Projects/Get.ts').components['schemas']['Example_2.Methods.Projects.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: import('./Models/Projects.ts').components['schemas']['Models.Projects'];
+                };
+            };
+        };
+    };
+    EditInformer2Config: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Informer_2/Methods/Config/Edit.ts').components['schemas']['Informer_2.Methods.Config.Edit'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./Informer_2/Methods/Config/Edit.ts').components['schemas']['Informer_2.Methods.Config.Edit.Exec'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: null;
+                };
+            };
+        };
+    };
+    GetInformer2Config: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Informer_2/Methods/Config/Get.ts').components['schemas']['Informer_2.Methods.Config.Get'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./Informer_2/Methods/Config/Get.ts').components['schemas']['Informer_2.Methods.Config.Get.Exec'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: null;
+                };
+            };
+        };
+    };
+    GetInformer2Info: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Informer_2/Methods/Info/Get.ts').components['schemas']['Informer_2.Methods.Info.Get'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./Informer_2/Methods/Info/Get.ts').components['schemas']['Informer_2.Methods.Info.Get.Exec'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: null;
+                };
+            };
+        };
+    };
+    DelInformer2Informer: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Informer_2/Methods/Informer/Del.ts').components['schemas']['Informer_2.Methods.Informer.Del'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./Informer_2/Methods/Informer/Del.ts').components['schemas']['Informer_2.Methods.Informer.Del.Exec'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: null;
+                };
+            };
+        };
+    };
+    GetInformer2Informer: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Informer_2/Methods/Informer/Get.ts').components['schemas']['Informer_2.Methods.Informer.Get'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./Informer_2/Methods/Informer/Get.ts').components['schemas']['Informer_2.Methods.Informer.Get.Exec'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: null;
                 };
             };
         };
@@ -13978,7 +14271,6 @@ export interface operations {
             };
         };
         responses: {
-            /** @description @throws Exception */
             200: {
                 headers: {
                     [name: string]: unknown;
@@ -14165,7 +14457,7 @@ export interface operations {
                 content: {
                     "application/json": ({
                         result: import('./Content_2/Methods/Apometr/Updates/Get.ts').components['schemas']['Content_2.Methods.Apometr.Updates.Get.Exec'];
-                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
             };
@@ -14373,6 +14665,58 @@ export interface operations {
                 content: {
                     "application/json": ({
                         result: import('./Content_2/Methods/Support/Menu/Get.ts').components['schemas']['Content_2.Methods.Support.Menu.Get.Exec'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: null;
+                };
+            };
+        };
+    };
+    AddInformer2PushToken: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Informer_2/Methods/Push/Token/Add.ts').components['schemas']['Informer_2.Methods.Push.Token.Add'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./Informer_2/Methods/Push/Token/Add.ts').components['schemas']['Informer_2.Methods.Push.Token.Add.Exec'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: null;
+                };
+            };
+        };
+    };
+    DelInformer2PushToken: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Informer_2/Methods/Push/Token/Del.ts').components['schemas']['Informer_2.Methods.Push.Token.Del'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./Informer_2/Methods/Push/Token/Del.ts').components['schemas']['Informer_2.Methods.Push.Token.Del.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -17596,6 +17940,32 @@ export interface operations {
             };
         };
     };
+    GetContent2ApometrSnapshotsTop: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Content_2/Methods/Apometr/Snapshots/Top/Get.ts').components['schemas']['Content_2.Methods.Apometr.Snapshots.Top.Get'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./Content_2/Methods/Apometr/Snapshots/Top/Get.ts').components['schemas']['Content_2.Methods.Apometr.Snapshots.Top.Get.Exec'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: null;
+                };
+            };
+        };
+    };
     GetContent2ApometrTextCalendar: {
         parameters: {
             query?: never;
@@ -18133,6 +18503,32 @@ export interface operations {
                 content: {
                     "application/json": ({
                         result: import('./Content_2/Methods/Journal/Course/Certificates/Image/Get.ts').components['schemas']['Content_2.Methods.Journal.Course.Certificates.Image.Get.Exec'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: null;
+                };
+            };
+        };
+    };
+    GetInformer2PushSafariWebServiceAuthToken: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Informer_2/Methods/Push/Safari/WebService/AuthToken/Get.ts').components['schemas']['Informer_2.Methods.Push.Safari.WebService.AuthToken.Get'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./Informer_2/Methods/Push/Safari/WebService/AuthToken/Get.ts').components['schemas']['Informer_2.Methods.Push.Safari.WebService.AuthToken.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };

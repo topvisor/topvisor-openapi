@@ -12,7 +12,6 @@ export interface components {
             /** Id кампании */
             campaign_tv_id: number;
         };
-        /** @throws Exception */
         "Broker_2.Methods.Tasks.RateTask.Add.Exec": number | null;
     };
     responses: never;

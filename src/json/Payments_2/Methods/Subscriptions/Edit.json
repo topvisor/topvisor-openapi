@@ -32,7 +32,6 @@
             },
             "Payments_2.Methods.Subscriptions.Edit.Exec": {
                 "title": "Пустая строка в случае успешной автоматической оплаты\n\nСсылка на оплату, в случае успешного выставления счета, если требуется участие пользователя",
-                "description": "@throws Exception",
                 "nullable": true,
                 "type": "string"
             }

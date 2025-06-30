@@ -18,7 +18,6 @@ export interface components {
             /** Значение следующего цикла подписки */
             subscription_cycle: import('../../../../Bank_2/Types/Subscriptions/Cycle.ts').components['schemas']['Bank_2.Types.Subscriptions.Cycle'];
         };
-        /** @throws Exception */
         "Payments_2.Methods.Subscriptions.Next.Edit.Exec": boolean;
     };
     responses: never;

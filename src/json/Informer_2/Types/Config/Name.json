@@ -1,0 +1,35 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Informer_2.Types.Config.Name",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Informer_2.Types.Config.Name": {
+                "type": "object",
+                "properties": {
+                    "method": {
+                        "allOf": [
+                            {
+                                "$ref": "../../../Informer_2/Types/Config/Method.json#/components/schemas/Informer_2.Types.Config.Method"
+                            }
+                        ]
+                    },
+                    "provider": {
+                        "allOf": [
+                            {
+                                "$ref": "../../../Informer_2/Types/Provider.json#/components/schemas/Informer_2.Types.Provider"
+                            }
+                        ]
+                    }
+                },
+                "required": [
+                    "method",
+                    "provider"
+                ]
+            }
+        }
+    }
+}

@@ -60,7 +60,6 @@ export interface components {
              *     Доступно всем, если не заполнено */
             required_posts_any?: import('../../Types/Pages/RequiredPosts.ts').components['schemas']['Content_2.Types.Pages.RequiredPosts'] | null;
         };
-        /** @throws Exception */
         "Content_2.Methods.Pages.Add.Exec": number;
     };
     responses: never;

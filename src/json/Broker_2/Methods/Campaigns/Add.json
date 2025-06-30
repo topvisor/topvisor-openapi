@@ -27,7 +27,6 @@
                 "title": "Добавление рекламной кампании в управление ставками"
             },
             "Broker_2.Methods.Campaigns.Add.Exec": {
-                "title": "@throws Exception",
                 "nullable": true,
                 "type": "integer"
             }

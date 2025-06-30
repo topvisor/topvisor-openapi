@@ -44,12 +44,7 @@ export interface components {
             debug?: boolean | null;
             project_id: import('../../../TV/API/Params/ProjectIdTrait.ts').components['schemas']['TV.API.Params.ProjectIdTrait']['project_id'];
         };
-        /**
-         * Информация об импортированных urls
-         * @description
-         *
-         *     @throws Exception
-         */
+        /** Информация об импортированных urls */
         "Urls_2.Methods.Import.Add.Exec": {
             "'countSended'": number;
             "'countDuplicated'": number;

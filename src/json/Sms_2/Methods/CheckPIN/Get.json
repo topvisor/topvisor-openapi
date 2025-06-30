@@ -26,7 +26,6 @@
                 "title": "Проверить код для подтверждения действия"
             },
             "Sms_2.Methods.CheckPIN.Get.Exec": {
-                "title": "@throws Exception",
                 "type": "string"
             }
         }

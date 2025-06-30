@@ -28,7 +28,6 @@
                 "title": "Удаление правила"
             },
             "Mentions_2.Methods.Rules.Del.Exec": {
-                "title": "@throws Exception",
                 "type": "integer"
             }
         }

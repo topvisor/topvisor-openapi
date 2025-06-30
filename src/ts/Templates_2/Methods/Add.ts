@@ -23,7 +23,6 @@ export interface components {
             /** Свойства шаблона */
             properties?: unknown[];
         };
-        /** @throws Exception */
         "Templates_2.Methods.Add.Exec": number | null;
     };
     responses: never;

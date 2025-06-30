@@ -42,7 +42,6 @@
                 "title": "Изменение ключевых слов правила"
             },
             "Mentions_2.Methods.Rules.Keywords.Edit.Exec": {
-                "title": "@throws Exception",
                 "type": "integer"
             }
         }

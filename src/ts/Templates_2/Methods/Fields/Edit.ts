@@ -18,7 +18,6 @@ export interface components {
             properties?: unknown[];
             fields?: import('../../../TV/API/Params/FieldsTrait.ts').components['schemas']['TV.API.Params.FieldsTrait']['fields'];
         };
-        /** @throws Exception */
         "Templates_2.Methods.Fields.Edit.Exec": number | null;
     };
     responses: never;

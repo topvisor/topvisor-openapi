@@ -12,10 +12,7 @@ export interface components {
             /** Id кампании */
             campaign_tv_id: number;
         };
-        /**
-         * выводит int, если функция провайдера не определена
-         * @description @throws Exception
-         */
+        /** выводит int, если функция провайдера не определена */
         "Broker_2.Methods.Ads.ToModerate.Edit.Exec": (unknown[] | number) | null;
     };
     responses: never;

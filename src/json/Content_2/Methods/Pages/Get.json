@@ -55,7 +55,6 @@
                 "title": "Получение документов"
             },
             "Content_2.Methods.Pages.Get.Exec": {
-                "title": "@throws Exception",
                 "nullable": true,
                 "type": "array"
             }

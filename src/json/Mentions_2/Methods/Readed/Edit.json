@@ -32,7 +32,6 @@
                 "title": "Изменение флага \"прочитано\""
             },
             "Mentions_2.Methods.Readed.Edit.Exec": {
-                "title": "@throws Exception",
                 "type": "integer"
             }
         }

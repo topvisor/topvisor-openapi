@@ -10,6 +10,7 @@ export interface components {
         /**
          * Получение истории urls, найденных в выдаче, за конкретную проверку
          * @deprecated
+         * @description @deprecated Используйте Services\Content_2\Methods\Apometr\Snapshots\Top\Get
          */
         "Content_2.Methods.Apometr.CHHistory.Get": {
             /** Дата и время проверки */

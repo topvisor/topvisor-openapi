@@ -24,7 +24,6 @@
                 "title": "Отправка правил на проверку"
             },
             "Mentions_2.Methods.Checker.Go.Edit.Exec": {
-                "title": "@throws Exception",
                 "type": "array"
             }
         }

@@ -90,7 +90,6 @@
             },
             "Urls_2.Methods.Import.Add.Exec": {
                 "title": "Информация об импортированных urls",
-                "description": "\n\n@throws Exception",
                 "nullable": true,
                 "type": "object",
                 "properties": {

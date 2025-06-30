@@ -10,6 +10,7 @@ export interface components {
         /**
          * Экспорт результатов аудита
          * @deprecated
+         * @description @deprecated
          */
         "Audit_2.Methods.Audit.Results.Export.Get": {
             type_report: import('../../../../Types/Audit/Results/Export/TypeReport.ts').components['schemas']['Audit_2.Types.Audit.Results.Export.TypeReport'];

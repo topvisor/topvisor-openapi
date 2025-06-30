@@ -11,7 +11,6 @@ export interface components {
         "Templates_2.Methods.AvailableFieldsData.Get": {
             target_type: import('../../Types/TargetType.ts').components['schemas']['Templates_2.Types.TargetType'];
         };
-        /** @throws Exception */
         "Templates_2.Methods.AvailableFieldsData.Get.Exec": unknown[];
     };
     responses: never;

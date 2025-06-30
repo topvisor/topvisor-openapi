@@ -46,7 +46,6 @@
                 "title": "Оплатить отчет"
             },
             "Competitors_2.Methods.Orders.Pay.Edit.Exec": {
-                "title": "@throws Exception",
                 "nullable": true,
                 "type": "integer"
             }

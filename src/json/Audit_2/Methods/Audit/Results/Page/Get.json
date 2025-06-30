@@ -35,11 +35,11 @@
                     "check_id"
                 ],
                 "title": "Получение результатов анализа страницы",
+                "description": "@deprecated",
                 "deprecated": true
             },
             "Audit_2.Methods.Audit.Results.Page.Get.Exec": {
                 "title": "Результаты анализа страницы",
-                "description": "\n@throws Exception",
                 "type": "object",
                 "properties": {
                     "result": {

@@ -46,7 +46,6 @@
                 "title": "Получение списка правил"
             },
             "Mentions_2.Methods.Rules.Get.Exec": {
-                "title": "@throws Exception",
                 "type": "array"
             }
         }

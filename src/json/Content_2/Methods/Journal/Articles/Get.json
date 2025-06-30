@@ -41,7 +41,6 @@
                 "title": "Получение статьи"
             },
             "Content_2.Methods.Journal.Articles.Get.Exec": {
-                "title": "@throws Exception",
                 "type": "array"
             }
         }

@@ -10,6 +10,7 @@ export interface components {
         /**
          * Получение сводки анализа сайта
          * @deprecated
+         * @description @deprecated
          */
         "Audit_2.Methods.Audit.Browse.Get": {
             project_id: import('../../../../TV/API/Params/ProjectIdTrait.ts').components['schemas']['TV.API.Params.ProjectIdTrait']['project_id'];

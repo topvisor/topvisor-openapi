@@ -26,7 +26,6 @@
                 "title": "Управление приостановкой/возобновлением рекуррентных платежей"
             },
             "Payments_2.Methods.Recurrent.Suspend.Edit.Exec": {
-                "title": "@throws Exception Ошибка во входных данных, внешнем API или БД",
                 "nullable": true,
                 "type": "integer"
             }

@@ -19,7 +19,6 @@ export interface components {
             /** Id второго объекта, для которого требуется получить расписание (обзятельно для mentions) */
             target_id_2?: number | null;
         };
-        /** @throws Exception */
         "Schedule_2.Methods.Get.Exec": unknown[];
     };
     responses: never;

@@ -33,7 +33,6 @@
                 "title": "Удаление поисковика"
             },
             "Mentions_2.Methods.Searchers.Del.Exec": {
-                "title": "@throws Exception",
                 "type": "integer"
             }
         }

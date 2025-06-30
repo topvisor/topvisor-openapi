@@ -23,7 +23,6 @@ export interface components {
             /** Оплаченная степень схожести доменов */
             intersection: number;
         };
-        /** @throws Exception */
         "Competitors_2.Methods.Orders.Pay.Edit.Exec": number | null;
     };
     responses: never;

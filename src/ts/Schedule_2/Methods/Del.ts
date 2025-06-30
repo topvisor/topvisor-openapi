@@ -18,7 +18,6 @@ export interface components {
             /** Id второго объекта, к которому будет привязано расписание (для mentions) */
             target_id_2?: number | null;
         };
-        /** @throws Exception */
         "Schedule_2.Methods.Del.Exec": number | null;
     };
     responses: never;

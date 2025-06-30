@@ -29,7 +29,6 @@
                 "title": "Получение стоимости проверки"
             },
             "Mentions_2.Methods.Checker.Price.Get.Exec": {
-                "title": "@throws Exception",
                 "type": "array"
             }
         }

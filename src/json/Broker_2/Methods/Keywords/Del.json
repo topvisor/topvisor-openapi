@@ -27,7 +27,6 @@
             },
             "Broker_2.Methods.Keywords.Del.Exec": {
                 "title": "выводит int, если функция провайдера не определена",
-                "description": "@throws Exception",
                 "nullable": true,
                 "anyOf": [
                     {

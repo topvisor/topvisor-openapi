@@ -32,6 +32,7 @@
                     },
                     "include_positions_summary_params": {
                         "title": "Добавить в результат сводку с указанными параметрами",
+                        "description": "@deprecated 2026-02-01",
                         "nullable": true,
                         "deprecated": true,
                         "type": "array"

@@ -44,7 +44,6 @@
                 "title": "Изменение шаблона"
             },
             "Templates_2.Methods.Edit.Exec": {
-                "title": "@throws Exception",
                 "type": "integer"
             }
         }

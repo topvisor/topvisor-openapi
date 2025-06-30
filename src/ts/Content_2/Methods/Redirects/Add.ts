@@ -26,7 +26,6 @@ export interface components {
             /** С пути (маска, * - любой символ) */
             path_mask: string;
         };
-        /** @throws Exception */
         "Content_2.Methods.Redirects.Add.Exec": number | null;
     };
     responses: never;

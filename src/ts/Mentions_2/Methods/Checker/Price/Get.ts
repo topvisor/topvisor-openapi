@@ -17,7 +17,6 @@ export interface components {
              */
             apply_discount: boolean;
         };
-        /** @throws Exception */
         "Mentions_2.Methods.Checker.Price.Get.Exec": unknown[];
     };
     responses: never;

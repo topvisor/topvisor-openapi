@@ -20,7 +20,6 @@ export interface components {
             /** Ключевые слова, ни одно из */
             minus?: unknown[];
         };
-        /** @throws Exception */
         "Mentions_2.Methods.Rules.Add.Exec": number;
     };
     responses: never;

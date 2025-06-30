@@ -6339,6 +6339,299 @@
                 }
             }
         },
+        "/edit/informer_2/config/": {
+            "post": {
+                "operationId": "EditInformer2Config",
+                "tags": [
+                    "Informer_2"
+                ],
+                "summary": "Настройка уведомлений",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Informer_2/Methods/Config/Edit.json#/components/schemas/Informer_2.Methods.Config.Edit"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "oneOf": [
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "$ref": "Informer_2/Methods/Config/Edit.json#/components/schemas/Informer_2.Methods.Config.Edit.Exec"
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "result"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
+                                        }
+                                    ]
+                                }
+                            },
+                            "model": {
+                                "schema": {
+                                    "type": "null"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/get/informer_2/config/": {
+            "post": {
+                "operationId": "GetInformer2Config",
+                "tags": [
+                    "Informer_2"
+                ],
+                "summary": "Получение настроек уведомлений",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Informer_2/Methods/Config/Get.json#/components/schemas/Informer_2.Methods.Config.Get"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "oneOf": [
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "$ref": "Informer_2/Methods/Config/Get.json#/components/schemas/Informer_2.Methods.Config.Get.Exec"
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "result"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
+                                        }
+                                    ]
+                                }
+                            },
+                            "model": {
+                                "schema": {
+                                    "type": "null"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/get/informer_2/info/": {
+            "post": {
+                "operationId": "GetInformer2Info",
+                "tags": [
+                    "Informer_2"
+                ],
+                "summary": "Получение информации о сообщениях в информере",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Informer_2/Methods/Info/Get.json#/components/schemas/Informer_2.Methods.Info.Get"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "oneOf": [
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "$ref": "Informer_2/Methods/Info/Get.json#/components/schemas/Informer_2.Methods.Info.Get.Exec"
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "result"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
+                                        }
+                                    ]
+                                }
+                            },
+                            "model": {
+                                "schema": {
+                                    "type": "null"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/del/informer_2/informer/": {
+            "post": {
+                "operationId": "DelInformer2Informer",
+                "tags": [
+                    "Informer_2"
+                ],
+                "summary": "Удаление сообщений из инфомера",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Informer_2/Methods/Informer/Del.json#/components/schemas/Informer_2.Methods.Informer.Del"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "oneOf": [
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "$ref": "Informer_2/Methods/Informer/Del.json#/components/schemas/Informer_2.Methods.Informer.Del.Exec"
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "result"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
+                                        }
+                                    ]
+                                }
+                            },
+                            "model": {
+                                "schema": {
+                                    "type": "null"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/get/informer_2/informer/": {
+            "post": {
+                "operationId": "GetInformer2Informer",
+                "tags": [
+                    "Informer_2"
+                ],
+                "summary": "Получение списка сообщений в информере",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Informer_2/Methods/Informer/Get.json#/components/schemas/Informer_2.Methods.Informer.Get"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "oneOf": [
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "$ref": "Informer_2/Methods/Informer/Get.json#/components/schemas/Informer_2.Methods.Informer.Get.Exec"
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "result"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                },
+                                                {
+                                                    "$ref": "Pagination.json#/components/schemas/Pagination"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
+                                        }
+                                    ]
+                                }
+                            },
+                            "model": {
+                                "schema": {
+                                    "type": "null"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
         "/get/keywords_2/keywords/": {
             "post": {
                 "operationId": "GetKeywords2Keywords",
@@ -13104,6 +13397,7 @@
                     "Audit_2"
                 ],
                 "summary": "Получение сводки анализа сайта",
+                "description": "@deprecated",
                 "deprecated": true,
                 "requestBody": {
                     "content": {
@@ -14905,7 +15199,7 @@
                 },
                 "responses": {
                     "200": {
-                        "description": "@throws Exception",
+                        "description": "",
                         "content": {
                             "application/octet-stream": {
                                 "schema": {
@@ -15099,6 +15393,8 @@
                     "Content_2"
                 ],
                 "summary": "Получение истории urls, найденных в выдаче, за конкретную проверку",
+                "description": "@deprecated Используйте Services\\Content_2\\Methods\\Apometr\\Snapshots\\Top\\Get",
+                "deprecated": true,
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -15150,8 +15446,7 @@
                             }
                         }
                     }
-                },
-                "deprecated": true
+                }
             }
         },
         "/get/content_2/apometr/history/": {
@@ -15312,9 +15607,6 @@
                                                 },
                                                 {
                                                     "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
-                                                },
-                                                {
-                                                    "$ref": "Pagination.json#/components/schemas/Pagination"
                                                 }
                                             ]
                                         },
@@ -15786,6 +16078,122 @@
                                                     "properties": {
                                                         "result": {
                                                             "$ref": "Content_2/Methods/Support/Menu/Get.json#/components/schemas/Content_2.Methods.Support.Menu.Get.Exec"
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "result"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
+                                        }
+                                    ]
+                                }
+                            },
+                            "model": {
+                                "schema": {
+                                    "type": "null"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/add/informer_2/push/token/": {
+            "post": {
+                "operationId": "AddInformer2PushToken",
+                "tags": [
+                    "Informer_2"
+                ],
+                "summary": "Регистрация токена",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Informer_2/Methods/Push/Token/Add.json#/components/schemas/Informer_2.Methods.Push.Token.Add"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "oneOf": [
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "$ref": "Informer_2/Methods/Push/Token/Add.json#/components/schemas/Informer_2.Methods.Push.Token.Add.Exec"
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "result"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
+                                        }
+                                    ]
+                                }
+                            },
+                            "model": {
+                                "schema": {
+                                    "type": "null"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/del/informer_2/push/token/": {
+            "post": {
+                "operationId": "DelInformer2PushToken",
+                "tags": [
+                    "Informer_2"
+                ],
+                "summary": "Удаление токена",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Informer_2/Methods/Push/Token/Del.json#/components/schemas/Informer_2.Methods.Push.Token.Del"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "oneOf": [
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "$ref": "Informer_2/Methods/Push/Token/Del.json#/components/schemas/Informer_2.Methods.Push.Token.Del.Exec"
                                                         }
                                                     },
                                                     "required": [
@@ -22184,6 +22592,7 @@
                     "Audit_2"
                 ],
                 "summary": "Получение данных для графика",
+                "description": "@deprecated",
                 "deprecated": true,
                 "requestBody": {
                     "content": {
@@ -22246,6 +22655,7 @@
                     "Audit_2"
                 ],
                 "summary": "Экспорт результатов аудита",
+                "description": "@deprecated",
                 "deprecated": true,
                 "requestBody": {
                     "content": {
@@ -22305,6 +22715,7 @@
                     "Audit_2"
                 ],
                 "summary": "Получение результатов анализа страницы",
+                "description": "@deprecated",
                 "deprecated": true,
                 "requestBody": {
                     "content": {
@@ -22942,6 +23353,64 @@
                                                     "properties": {
                                                         "result": {
                                                             "$ref": "Audit_2/Methods/Watcher/Summary/Chart/Get.json#/components/schemas/Audit_2.Methods.Watcher.Summary.Chart.Get.Exec"
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "result"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
+                                        }
+                                    ]
+                                }
+                            },
+                            "model": {
+                                "schema": {
+                                    "type": "null"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/get/content_2/apometr/snapshots/top/": {
+            "post": {
+                "operationId": "GetContent2ApometrSnapshotsTop",
+                "tags": [
+                    "Content_2"
+                ],
+                "summary": "Получение топа выдачи сайтов за определенную проверку",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Content_2/Methods/Apometr/Snapshots/Top/Get.json#/components/schemas/Content_2.Methods.Apometr.Snapshots.Top.Get"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "oneOf": [
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "$ref": "Content_2/Methods/Apometr/Snapshots/Top/Get.json#/components/schemas/Content_2.Methods.Apometr.Snapshots.Top.Get.Exec"
                                                         }
                                                     },
                                                     "required": [
@@ -24179,18 +24648,18 @@
                 }
             }
         },
-        "/get/content_2/apometr/snapshots/top/": {
+        "/get/informer_2/push/safari/webService/authToken/": {
             "post": {
-                "operationId": "GetContent2ApometrSnapshotsTop",
+                "operationId": "GetInformer2PushSafariWebServiceAuthToken",
                 "tags": [
-                    "Content_2"
+                    "Informer_2"
                 ],
-                "summary": "Получение топа выдачи сайтов за определенную проверку",
+                "summary": "Получение токена авторизации для работы с safari web push\n\nСоздаст токен, если его не существует",
                 "requestBody": {
                     "content": {
                         "application/json": {
                             "schema": {
-                                "$ref": "Content_2/Methods/Apometr/Snapshots/Top/Get.json#/components/schemas/Content_2.Methods.Apometr.Snapshots.Top.Get"
+                                "$ref": "Informer_2/Methods/Push/Safari/WebService/AuthToken/Get.json#/components/schemas/Informer_2.Methods.Push.Safari.WebService.AuthToken.Get"
                             }
                         }
                     },
@@ -24209,7 +24678,7 @@
                                                     "type": "object",
                                                     "properties": {
                                                         "result": {
-                                                            "$ref": "Content_2/Methods/Apometr/Snapshots/Top/Get.json#/components/schemas/Content_2.Methods.Apometr.Snapshots.Top.Get.Exec"
+                                                            "$ref": "Informer_2/Methods/Push/Safari/WebService/AuthToken/Get.json#/components/schemas/Informer_2.Methods.Push.Safari.WebService.AuthToken.Get.Exec"
                                                         }
                                                     },
                                                     "required": [

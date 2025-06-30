@@ -22,7 +22,6 @@ export interface components {
             /** Свойства шаблона */
             properties?: unknown[];
         };
-        /** @throws Exception */
         "Templates_2.Methods.Edit.Exec": number;
     };
     responses: never;

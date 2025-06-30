@@ -51,6 +51,7 @@
                     "check_id"
                 ],
                 "title": "Получение данных для графика",
+                "description": "@deprecated",
                 "deprecated": true
             },
             "Audit_2.Methods.Audit.Log.Chart.Get.Exec": {

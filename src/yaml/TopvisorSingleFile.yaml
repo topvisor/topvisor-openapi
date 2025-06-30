@@ -3527,6 +3527,162 @@ paths:
             model:
               schema:
                 $ref: '#/components/schemas/Models.Projects'
+  /edit/informer_2/config/:
+    post:
+      operationId: EditInformer2Config
+      tags:
+        - Informer_2
+      summary: Настройка уведомлений
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Informer_2.Methods.Config.Edit'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            $ref: '#/components/schemas/Informer_2.Methods.Config.Edit.Exec'
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
+  /get/informer_2/config/:
+    post:
+      operationId: GetInformer2Config
+      tags:
+        - Informer_2
+      summary: Получение настроек уведомлений
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Informer_2.Methods.Config.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            $ref: '#/components/schemas/Informer_2.Methods.Config.Get.Exec'
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
+  /get/informer_2/info/:
+    post:
+      operationId: GetInformer2Info
+      tags:
+        - Informer_2
+      summary: Получение информации о сообщениях в информере
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Informer_2.Methods.Info.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            $ref: '#/components/schemas/Informer_2.Methods.Info.Get.Exec'
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
+  /del/informer_2/informer/:
+    post:
+      operationId: DelInformer2Informer
+      tags:
+        - Informer_2
+      summary: Удаление сообщений из инфомера
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Informer_2.Methods.Informer.Del'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            $ref: '#/components/schemas/Informer_2.Methods.Informer.Del.Exec'
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
+  /get/informer_2/informer/:
+    post:
+      operationId: GetInformer2Informer
+      tags:
+        - Informer_2
+      summary: Получение списка сообщений в информере
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Informer_2.Methods.Informer.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            $ref: '#/components/schemas/Informer_2.Methods.Informer.Get.Exec'
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                      - $ref: '#/components/schemas/Pagination'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
   /get/keywords_2/keywords/:
     post:
       operationId: GetKeywords2Keywords
@@ -7203,6 +7359,7 @@ paths:
       tags:
         - Audit_2
       summary: Получение сводки анализа сайта
+      description: '@deprecated'
       deprecated: true
       requestBody:
         content:
@@ -8192,7 +8349,7 @@ paths:
         required: true
       responses:
         '200':
-          description: '@throws Exception'
+          description: ''
           content:
             application/octet-stream:
               schema:
@@ -8297,6 +8454,8 @@ paths:
       tags:
         - Content_2
       summary: Получение истории urls, найденных в выдаче, за конкретную проверку
+      description: '@deprecated Используйте Services\Content_2\Methods\Apometr\Snapshots\Top\Get'
+      deprecated: true
       requestBody:
         content:
           application/json:
@@ -8323,7 +8482,6 @@ paths:
             model:
               schema:
                 $ref: '#/components/schemas/Models.Apometr.History'
-      deprecated: true
   /get/content_2/apometr/history/:
     post:
       operationId: GetContent2ApometrHistory
@@ -8414,7 +8572,6 @@ paths:
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
-                      - $ref: '#/components/schemas/Pagination'
                   - $ref: '#/components/schemas/ResponseError'
             model:
               schema:
@@ -8668,6 +8825,68 @@ paths:
                         properties:
                           result:
                             $ref: '#/components/schemas/Content_2.Methods.Support.Menu.Get.Exec'
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
+  /add/informer_2/push/token/:
+    post:
+      operationId: AddInformer2PushToken
+      tags:
+        - Informer_2
+      summary: Регистрация токена
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Informer_2.Methods.Push.Token.Add'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            $ref: '#/components/schemas/Informer_2.Methods.Push.Token.Add.Exec'
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
+  /del/informer_2/push/token/:
+    post:
+      operationId: DelInformer2PushToken
+      tags:
+        - Informer_2
+      summary: Удаление токена
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Informer_2.Methods.Push.Token.Del'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            $ref: '#/components/schemas/Informer_2.Methods.Push.Token.Del.Exec'
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
@@ -12116,6 +12335,7 @@ paths:
       tags:
         - Audit_2
       summary: Получение данных для графика
+      description: '@deprecated'
       deprecated: true
       requestBody:
         content:
@@ -12149,6 +12369,7 @@ paths:
       tags:
         - Audit_2
       summary: Экспорт результатов аудита
+      description: '@deprecated'
       deprecated: true
       requestBody:
         content:
@@ -12181,6 +12402,7 @@ paths:
       tags:
         - Audit_2
       summary: Получение результатов анализа страницы
+      description: '@deprecated'
       deprecated: true
       requestBody:
         content:
@@ -12533,6 +12755,37 @@ paths:
                         properties:
                           result:
                             $ref: '#/components/schemas/Audit_2.Methods.Watcher.Summary.Chart.Get.Exec'
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
+  /get/content_2/apometr/snapshots/top/:
+    post:
+      operationId: GetContent2ApometrSnapshotsTop
+      tags:
+        - Content_2
+      summary: Получение топа выдачи сайтов за определенную проверку
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Content_2.Methods.Apometr.Snapshots.Top.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            $ref: '#/components/schemas/Content_2.Methods.Apometr.Snapshots.Top.Get.Exec'
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
@@ -13201,17 +13454,20 @@ paths:
             model:
               schema:
                 type: 'null'
-  /get/content_2/apometr/snapshots/top/:
+  /get/informer_2/push/safari/webService/authToken/:
     post:
-      operationId: GetContent2ApometrSnapshotsTop
+      operationId: GetInformer2PushSafariWebServiceAuthToken
       tags:
-        - Content_2
-      summary: Получение топа выдачи сайтов за определенную проверку
+        - Informer_2
+      summary: |-
+        Получение токена авторизации для работы с safari web push
+
+        Создаст токен, если его не существует
       requestBody:
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/Content_2.Methods.Apometr.Snapshots.Top.Get'
+              $ref: '#/components/schemas/Informer_2.Methods.Push.Safari.WebService.AuthToken.Get'
         required: true
       responses:
         '200':
@@ -13224,7 +13480,7 @@ paths:
                       - type: object
                         properties:
                           result:
-                            $ref: '#/components/schemas/Content_2.Methods.Apometr.Snapshots.Top.Get.Exec'
+                            $ref: '#/components/schemas/Informer_2.Methods.Push.Safari.WebService.AuthToken.Get.Exec'
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
@@ -13793,7 +14049,6 @@ components:
         - offset
       title: Получение списка упоминаний
     Mentions_2.Methods.Get.Exec:
-      title: '@throws Exception'
       type: array
     Models.Mentions.Mentions:
       properties:
@@ -14296,7 +14551,6 @@ components:
         - type
         - target_id
     Schedule_2.Methods.Del.Exec:
-      title: '@throws Exception'
       nullable: true
       type: integer
     Schedule_2.Methods.Edit:
@@ -14311,7 +14565,6 @@ components:
             - days: Массив дней из перечисления доступных дней (см. $availableDays)
           description: |-
             @var array<int, array{times: array<int, array{hour: string, minute: string}>, days: string[]}> $schedule Массив расписания, содержащий элементы с данными о времени и днях.
-
             @see Schedule_2\Mods\Schedule::$availableHours
             @see Schedule_2\Mods\Schedule::$availableMinutes
             @see Schedule_2\Mods\Schedule::$availableDays
@@ -14333,7 +14586,6 @@ components:
         - target_id
       title: Привязать расписание к объекту
     Schedule_2.Methods.Edit.Exec:
-      title: '@throws Exception'
       nullable: true
       type: integer
     Schedule_2.Methods.Get:
@@ -14355,7 +14607,6 @@ components:
         - target_id
       title: Получение рассписания
     Schedule_2.Methods.Get.Exec:
-      title: '@throws Exception'
       type: array
     Tags_2.Types.Type:
       type: string
@@ -14448,7 +14699,6 @@ components:
         - name
       title: Сохранение шаблона
     Templates_2.Methods.Add.Exec:
-      title: '@throws Exception'
       nullable: true
       type: integer
     Templates_2.Methods.Del:
@@ -14461,7 +14711,6 @@ components:
         - id
       title: Удаление шаблона
     Templates_2.Methods.Del.Exec:
-      title: '@throws Exception'
       nullable: true
       type: integer
     Templates_2.Methods.Edit:
@@ -14492,7 +14741,6 @@ components:
         - id
       title: Изменение шаблона
     Templates_2.Methods.Edit.Exec:
-      title: '@throws Exception'
       type: integer
     Templates_2.Methods.Get:
       type: object
@@ -14511,7 +14759,6 @@ components:
         - target_type
       title: Получение сохраненного списка шаблонов
     Templates_2.Methods.Get.Exec:
-      title: '@throws Exception'
       type: array
     Urls_2.Types.Flag:
       type: integer
@@ -16856,7 +17103,6 @@ components:
       title: Редактирование объявления
     Broker_2.Methods.Ads.Edit.Exec:
       title: выводит int, если функция провайдера не определена
-      description: '@throws Exception'
       nullable: true
       anyOf:
         - type: array
@@ -16890,7 +17136,6 @@ components:
         - offset
       title: Получение объявления рекламной кампании
     Broker_2.Methods.Ads.Get.Exec:
-      title: '@throws Exception'
       nullable: true
       type: array
     Models.Broker.Ads:
@@ -16942,7 +17187,6 @@ components:
         - project_id
       title: Добавление рекламной кампании в управление ставками
     Broker_2.Methods.Campaigns.Add.Exec:
-      title: '@throws Exception'
       nullable: true
       type: integer
     Models.Broker.Campaigns:
@@ -17037,7 +17281,6 @@ components:
         - filters
       title: Удаление рекламной компании из управления ставками
     Broker_2.Methods.Campaigns.Del.Exec:
-      title: '@throws Exception'
       nullable: true
       type: integer
     Broker_2.Methods.Campaigns.Edit:
@@ -17083,7 +17326,6 @@ components:
         - filters
       title: Редактирование рекламной кампании
     Broker_2.Methods.Campaigns.Edit.Exec:
-      title: '@throws Exception'
       type: integer
     Broker_2.Methods.Campaigns.Get:
       type: object
@@ -17116,7 +17358,6 @@ components:
         - offset
       title: Получение списка рекламных кампаний
     Broker_2.Methods.Campaigns.Get.Exec:
-      title: '@throws Exception'
       type: array
     Broker_2.Methods.Groups.Add:
       type: object
@@ -17133,7 +17374,6 @@ components:
       title: Добавление групп рекламной кампании
     Broker_2.Methods.Groups.Add.Exec:
       title: выводит int, если функция провайдера не определена
-      description: '@throws Exception'
       nullable: true
       anyOf:
         - type: array
@@ -17171,7 +17411,6 @@ components:
         - offset
       title: Получение групп рекламной кампании
     Broker_2.Methods.Groups.Get.Exec:
-      title: '@throws Exception'
       type: array
     Models.Broker.Groups:
       properties:
@@ -17229,7 +17468,6 @@ components:
       title: Удаление запросов рекламной кампании
     Broker_2.Methods.Keywords.Del.Exec:
       title: выводит int, если функция провайдера не определена
-      description: '@throws Exception'
       nullable: true
       anyOf:
         - type: array
@@ -17290,7 +17528,6 @@ components:
         - filters
       title: Редактирование объявлений (запросов) рекламной кампании
     Broker_2.Methods.Keywords.Edit.Exec:
-      title: '@throws Exception'
       type: integer
     Models.Broker.Keywords:
       properties:
@@ -17393,7 +17630,6 @@ components:
         - offset
       title: Получение запросов рекламной кампании
     Broker_2.Methods.Keywords.Get.Exec:
-      title: '@throws Exception'
       type: array
     Broker_2.Methods.Log.Get:
       type: object
@@ -17423,7 +17659,6 @@ components:
         - offset
       title: Получение логов
     Broker_2.Methods.Log.Get.Exec:
-      title: '@throws Exception'
       nullable: true
       type: array
     Models.Broker.Log:
@@ -18008,7 +18243,6 @@ components:
       required: []
       title: Создание документа
     Content_2.Methods.Pages.Add.Exec:
-      title: '@throws Exception'
       type: integer
     Content_2.Methods.Pages.Del:
       type: object
@@ -18021,7 +18255,6 @@ components:
         - filters
       title: Перенести документ в папку /archive/
     Content_2.Methods.Pages.Del.Exec:
-      title: '@throws Exception'
       nullable: true
       type: integer
     Content_2.Methods.Pages.Edit:
@@ -18136,7 +18369,6 @@ components:
       required: []
       title: Изменение документа
     Content_2.Methods.Pages.Edit.Exec:
-      title: '@throws Exception'
       nullable: true
       type: integer
     Content_2.Methods.Pages.Get:
@@ -18172,7 +18404,6 @@ components:
         - offset
       title: Получение документов
     Content_2.Methods.Pages.Get.Exec:
-      title: '@throws Exception'
       nullable: true
       type: array
     Content_2.Methods.Redirects.AbstractRegular:
@@ -18246,7 +18477,6 @@ components:
         - path_mask
       title: Добавление правила редиректа (для админов)
     Content_2.Methods.Redirects.Add.Exec:
-      title: '@throws Exception'
       nullable: true
       type: integer
     Content_2.Methods.Redirects.Del:
@@ -18276,7 +18506,6 @@ components:
         - path_mask
       title: Удаление редиректа
     Content_2.Methods.Redirects.Del.Exec:
-      title: '@throws Exception'
       nullable: true
       type: integer
     Content_2.Methods.Redirects.Edit:
@@ -18395,7 +18624,6 @@ components:
 
         Для выборки страниц используется модель: Pages
     Content_2.Methods.Rss.Get.Exec:
-      title: '@throws Exception'
       nullable: true
       type: string
     Content_2.Methods.Search.Get:
@@ -18440,7 +18668,6 @@ components:
         - offset
       title: Поиск страниц
     Content_2.Methods.Search.Get.Exec:
-      title: '@throws Exception'
       type: array
     Content_2.Methods.Sitemap.Get:
       type: object
@@ -18466,7 +18693,6 @@ components:
         - offset
       title: Получение xml карты сайта
     Content_2.Methods.Sitemap.Get.Exec:
-      title: '@throws Exception'
       nullable: true
       type: string
     Content_2.Methods.Tags.Get:
@@ -19013,6 +19239,90 @@ components:
         watcher_types:
           type: array
           nullable: true
+    Informer_2.Types.Config.Method:
+      type: string
+      enum:
+        - news
+        - balance
+        - yandex-update
+        - comments
+        - api
+        - journal
+        - academy
+      title: Тема сообщения
+    Informer_2.Types.Provider:
+      type: string
+      enum:
+        - info
+        - email
+        - sms
+        - push
+        - min
+      title: Способ рассылки
+    Informer_2.Types.Config.Name:
+      type: object
+      properties:
+        method:
+          allOf:
+            - $ref: '#/components/schemas/Informer_2.Types.Config.Method'
+        provider:
+          allOf:
+            - $ref: '#/components/schemas/Informer_2.Types.Provider'
+      required:
+        - method
+        - provider
+    Informer_2.Methods.Config.Edit:
+      type: object
+      properties:
+        name:
+          title: Название типа. Содержит название провайдера и метода
+          allOf:
+            - $ref: '#/components/schemas/Informer_2.Types.Config.Name'
+        value:
+          title: Значение
+          type: integer
+      required:
+        - name
+        - value
+      title: Настройка уведомлений
+    Informer_2.Methods.Config.Edit.Exec:
+      nullable: true
+      type: integer
+    Informer_2.Methods.Config.Get:
+      type: object
+      properties: {}
+      required: []
+      title: Получение настроек уведомлений
+    Informer_2.Methods.Config.Get.Exec:
+      type: array
+    Informer_2.Methods.Info.Get:
+      type: object
+      properties: {}
+      required: []
+      title: Получение информации о сообщениях в информере
+    Informer_2.Methods.Info.Get.Exec:
+      type: array
+    Informer_2.Methods.Informer.Del:
+      type: object
+      properties:
+        ids:
+          title: ID сообщений для удаления
+          allOf:
+            - $ref: '#/components/schemas/TV.API.Types.IntArray'
+      required:
+        - ids
+      title: Удаление сообщений из инфомера
+    Informer_2.Methods.Informer.Del.Exec:
+      type: integer
+    Informer_2.Methods.Informer.Get:
+      type: object
+      properties:
+        limit:
+          $ref: '#/components/schemas/limit'
+      required: []
+      title: Получение списка сообщений в информере
+    Informer_2.Methods.Informer.Get.Exec:
+      type: array
     Keywords_2.Methods.Keywords.Get:
       type: object
       properties:
@@ -19270,7 +19580,6 @@ components:
         - filters
       title: Изменение флага "прочитано"
     Mentions_2.Methods.Readed.Edit.Exec:
-      title: '@throws Exception'
       type: integer
     Mentions_2.Methods.Rules.Add:
       type: object
@@ -19295,7 +19604,6 @@ components:
         - name
       title: Добавление правила
     Mentions_2.Methods.Rules.Add.Exec:
-      title: '@throws Exception'
       type: integer
     Mentions_2.Methods.Rules.Del:
       type: object
@@ -19312,7 +19620,6 @@ components:
         - filters
       title: Удаление правила
     Mentions_2.Methods.Rules.Del.Exec:
-      title: '@throws Exception'
       type: integer
     Models.Mentions.Rules:
       properties:
@@ -19369,7 +19676,6 @@ components:
         - offset
       title: Получение списка правил
     Mentions_2.Methods.Rules.Get.Exec:
-      title: '@throws Exception'
       type: array
     Mentions_2.Types.SearcherKey:
       type: integer
@@ -19430,7 +19736,6 @@ components:
         - filters
       title: Удаление поисковика
     Mentions_2.Methods.Searchers.Del.Exec:
-      title: '@throws Exception'
       type: integer
     Models.Mentions.Searchers:
       properties:
@@ -19478,7 +19783,6 @@ components:
         - offset
       title: Получение списка поисковиков
     Mentions_2.Methods.Searchers.Get.Exec:
-      title: '@throws Exception'
       type: array
     Mentions_2.Types.Sentiment:
       type: string
@@ -19507,7 +19811,6 @@ components:
         - filters
       title: Изменение тональности
     Mentions_2.Methods.Sentiment.Edit.Exec:
-      title: '@throws Exception'
       type: integer
     OpenAPI_2.Methods.Download.Get:
       type: object
@@ -19594,7 +19897,6 @@ components:
         Пустая строка в случае успешной автоматической оплаты
 
         Ссылка на оплату, в случае успешного выставления счета, если требуется участие пользователя
-      description: '@throws Exception'
       nullable: true
       type: string
     Payments_2.Methods.UrTinkoffCreateApplication.Add:
@@ -20096,6 +20398,7 @@ components:
           type: boolean
         include_positions_summary_params:
           title: Добавить в результат сводку с указанными параметрами
+          description: '@deprecated 2026-02-01'
           nullable: true
           deprecated: true
           type: array
@@ -20660,7 +20963,6 @@ components:
         - target_id
       title: Изменить дополнительные параметры расписания
     Schedule_2.Methods.Settings.Edit.Exec:
-      title: '@throws Exception'
       nullable: true
       type: integer
     Schedule_2.Methods.Settings.Get:
@@ -20701,7 +21003,6 @@ components:
         - pin
       title: Проверить код для подтверждения действия
     Sms_2.Methods.CheckPIN.Get.Exec:
-      title: '@throws Exception'
       type: string
     Sms_2.Methods.SendPIN.Get:
       type: object
@@ -20713,7 +21014,6 @@ components:
       required: []
       title: Отправить код для подтверждения действия
     Sms_2.Methods.SendPIN.Get.Exec:
-      title: '@throws Exception'
       type: boolean
     Templates_2.Methods.AvailableFieldsData.Get:
       type: object
@@ -20725,7 +21025,6 @@ components:
         - target_type
       title: Получение данных доступных столбцов для выборки
     Templates_2.Methods.AvailableFieldsData.Get.Exec:
-      title: '@throws Exception'
       type: array
     Templates_2.Methods.Fields.Del:
       type: object
@@ -20768,7 +21067,6 @@ components:
         - target_type
       title: Сохранение списка столбцов
     Templates_2.Methods.Fields.Edit.Exec:
-      title: '@throws Exception'
       nullable: true
       type: integer
     Templates_2.Methods.Fields.Get:
@@ -20788,7 +21086,6 @@ components:
         - target_type
       title: Получение сохраненного списока столбцов
     Templates_2.Methods.Fields.Get.Exec:
-      title: '@throws Exception'
       type: array
     Templates_2.Methods.FieldsProperties.Get:
       type: object
@@ -21243,10 +21540,6 @@ components:
         - tags
     Urls_2.Methods.Import.Add.Exec:
       title: Информация об импортированных urls
-      description: |-
-
-
-        @throws Exception
       nullable: true
       type: object
       properties:
@@ -22328,7 +22621,6 @@ components:
         - rank_id
       title: Добавление промокоды к достижению
     Admin_2.Methods.Users.Promocodes.Add.Exec:
-      title: '@throws Exception'
       nullable: true
       type: integer
     Models.Users.Verif:
@@ -22625,6 +22917,7 @@ components:
         - project_id
         - check_id
       title: Получение сводки анализа сайта
+      description: '@deprecated'
       deprecated: true
     Audit_2.Methods.Audit.Browse.Get.Exec:
       title: Сводка анализа сайта
@@ -24347,7 +24640,6 @@ components:
       title: Изменение статуса объявлений
     Broker_2.Methods.Ads.Status.Edit.Exec:
       title: выводит int, если функция провайдера не определена
-      description: '@throws Exception'
       nullable: true
       anyOf:
         - type: array
@@ -24364,7 +24656,6 @@ components:
       title: Отправка объявления на модерацию
     Broker_2.Methods.Ads.ToModerate.Edit.Exec:
       title: выводит int, если функция провайдера не определена
-      description: '@throws Exception'
       nullable: true
       anyOf:
         - type: array
@@ -24395,7 +24686,6 @@ components:
         - filters
       title: Обновление данных таргетинга
     Broker_2.Methods.Campaigns.UpdateTargeting.Edit.Exec:
-      title: '@throws Exception'
       type: integer
     Broker_2.Methods.Groups.Editor.Get:
       type: object
@@ -24427,7 +24717,6 @@ components:
       title: Изменение статуса запросов рекламной кампании
     Broker_2.Methods.Keywords.Status.Edit.Exec:
       title: выводит int, если функция провайдера не определена
-      description: '@throws Exception'
       nullable: true
       anyOf:
         - type: array
@@ -24475,7 +24764,6 @@ components:
         - campaign_tv_id
       title: Ручной запуск корректировки
     Broker_2.Methods.Tasks.RateTask.Add.Exec:
-      title: '@throws Exception'
       nullable: true
       type: integer
     Competitors_2.Methods.Orders.Pay.Edit:
@@ -24506,7 +24794,6 @@ components:
         - intersection
       title: Оплатить отчет
     Competitors_2.Methods.Orders.Pay.Edit.Exec:
-      title: '@throws Exception'
       nullable: true
       type: integer
     Positions_2.Types.RegionDevice:
@@ -24597,6 +24884,7 @@ components:
         - filters
         - offset
       title: Получение истории urls, найденных в выдаче, за конкретную проверку
+      description: '@deprecated Используйте Services\Content_2\Methods\Apometr\Snapshots\Top\Get'
       deprecated: true
     Content_2.Methods.Apometr.CHHistory.Get.Exec:
       type: array
@@ -24759,7 +25047,6 @@ components:
         - offset
       title: Получение статьи
     Content_2.Methods.Journal.Articles.Get.Exec:
-      title: '@throws Exception'
       type: array
     Content_2.Methods.Journal.BookmarksAuthors.Get:
       type: object
@@ -24810,7 +25097,6 @@ components:
         - offset
       title: Получение закладок
     Content_2.Methods.Journal.Bookmarks.Get.Exec:
-      title: '@throws Exception'
       type: array
     Content_2.Methods.Journal.Course.Get:
       type: object
@@ -24843,7 +25129,6 @@ components:
 
         Параметры выборки основаны на модели Models\Pages
     Content_2.Methods.Journal.Course.Get.Exec:
-      title: '@throws Exception'
       nullable: true
       type: array
     Content_2.Methods.Journal.Rubrics.Get:
@@ -24870,7 +25155,6 @@ components:
         - offset
       title: Получение рубрики
     Content_2.Methods.Journal.Rubrics.Get.Exec:
-      title: '@throws Exception'
       nullable: true
       type: array
     Content_2.Methods.Journal.Subscribe.Edit:
@@ -24915,6 +25199,44 @@ components:
       title: Получение меню справки
     Content_2.Methods.Support.Menu.Get.Exec:
       type: array
+    Informer_2.Types.Push.Token.Type:
+      type: string
+      enum:
+        - firebase
+        - web
+        - safari
+        - safariAuth
+      title: Типы токенов
+    Informer_2.Methods.Push.Token.Add:
+      type: object
+      properties:
+        type:
+          allOf:
+            - $ref: '#/components/schemas/Informer_2.Types.Push.Token.Type'
+        token:
+          title: Токен
+          type: string
+      required:
+        - type
+        - token
+      title: Регистрация токена
+    Informer_2.Methods.Push.Token.Add.Exec:
+      type: integer
+    Informer_2.Methods.Push.Token.Del:
+      type: object
+      properties:
+        type:
+          allOf:
+            - $ref: '#/components/schemas/Informer_2.Types.Push.Token.Type'
+        token:
+          title: Токен
+          type: string
+      required:
+        - type
+        - token
+      title: Удаление токена
+    Informer_2.Methods.Push.Token.Del.Exec:
+      type: integer
     Keywords_2.Types.Collect.SearcherKey:
       type: integer
       enum:
@@ -25344,7 +25666,6 @@ components:
       title: Постановка задачи на проверку частоты запросов
     Keywords_2.Methods.Volumes.Go.Edit.Exec:
       title: Список id проектов, отправленных на проверку
-      description: '@throws Exception'
       type: object
       properties:
         projectIds:
@@ -25443,7 +25764,6 @@ components:
       required: []
       title: Отправка правил на проверку
     Mentions_2.Methods.Checker.Go.Edit.Exec:
-      title: '@throws Exception'
       type: array
     Mentions_2.Methods.Checker.Price.Get:
       type: object
@@ -25460,7 +25780,6 @@ components:
       required: []
       title: Получение стоимости проверки
     Mentions_2.Methods.Checker.Price.Get.Exec:
-      title: '@throws Exception'
       type: array
     Mentions_2.Types.Rules.Keywords.Type:
       type: string
@@ -25493,7 +25812,6 @@ components:
         - filters
       title: Изменение ключевых слов правила
     Mentions_2.Methods.Rules.Keywords.Edit.Exec:
-      title: '@throws Exception'
       type: integer
     Mentions_2.Methods.Rules.Rename.Edit:
       type: object
@@ -25514,7 +25832,6 @@ components:
         - filters
       title: Изменить имя правила
     Mentions_2.Methods.Rules.Rename.Edit.Exec:
-      title: '@throws Exception'
       type: integer
     Mentions_2.Methods.Searchers.Depth.Edit:
       type: object
@@ -25542,7 +25859,6 @@ components:
         - filters
       title: Изменение глубины сбора упоминаний
     Mentions_2.Methods.Searchers.Depth.Edit.Exec:
-      title: '@throws Exception'
       type: integer
     Mentions_2.Methods.Searchers.Enabled.Edit:
       type: object
@@ -25566,7 +25882,6 @@ components:
         - filters
       title: Изменить активность поисковика
     Mentions_2.Methods.Searchers.Enabled.Edit.Exec:
-      title: '@throws Exception'
       type: integer
     Payments_2.Methods.Recurrent.Suspend.Edit:
       type: object
@@ -25586,7 +25901,6 @@ components:
         - suspend
       title: Управление приостановкой/возобновлением рекуррентных платежей
     Payments_2.Methods.Recurrent.Suspend.Edit.Exec:
-      title: '@throws Exception Ошибка во входных данных, внешнем API или БД'
       nullable: true
       type: integer
     Payments_2.Methods.Subscriptions.Next.Edit:
@@ -25609,7 +25923,6 @@ components:
 
         Если требуется изменить другие параметры подписки, это можно только путем остановки этой подписки и созданием новой подписки
     Payments_2.Methods.Subscriptions.Next.Edit.Exec:
-      title: '@throws Exception'
       type: boolean
     Payments_2.Methods.Tariff.DelCard.Edit:
       type: object
@@ -26374,7 +26687,6 @@ components:
       required: []
       title: Получить список групп с пользователями
     Redmine_2.Methods.Users.Groups.Get.Exec:
-      title: '@throws Exception'
       type: array
     Reports_2.Methods.Positions.SendTest.Edit:
       type: object
@@ -26386,7 +26698,6 @@ components:
         - project_id
       title: Отправить тестовый отчет
     Reports_2.Methods.Positions.SendTest.Edit.Exec:
-      title: '@throws Exception'
       type: integer
     Schedule_2.Methods.Settings.EmailsHints.Get:
       type: object
@@ -26635,7 +26946,6 @@ components:
       title: Привязка email к аккаунту
     Users_2.Methods.Join.Email.Add.Exec:
       title: '- 0: произошла ошибка, 1: email успешно привязан, 2: требуется ввести пароль, 3: отправлен запрос на подтверждение'
-      description: '@throws Exception'
       type: integer
     Admin_2.Methods.Accounting.Group.Filter.Add:
       type: object
@@ -27606,7 +27916,6 @@ components:
         - filters
       title: Информация о стоимости запуска аудита по проектам
     Audit_2.Methods.Audit.Checker.Price.Get.Exec:
-      description: '@throws Exception'
       type: object
     Audit_2.Methods.Audit.Export.Links.Get:
       type: object
@@ -27704,6 +28013,7 @@ components:
         - project_id
         - check_id
       title: Получение данных для графика
+      description: '@deprecated'
       deprecated: true
     Audit_2.Methods.Audit.Log.Chart.Get.Exec:
       title: Данные для графика
@@ -27753,6 +28063,7 @@ components:
         - project_id
         - check_id
       title: Экспорт результатов аудита
+      description: '@deprecated'
       deprecated: true
     Audit_2.Methods.Audit.Results.Export.Get.Exec:
       title: Ответ об успешнности экспорта результатов аудита
@@ -27779,12 +28090,10 @@ components:
         - project_id
         - check_id
       title: Получение результатов анализа страницы
+      description: '@deprecated'
       deprecated: true
     Audit_2.Methods.Audit.Results.Page.Get.Exec:
       title: Результаты анализа страницы
-      description: |-
-
-        @throws Exception
       type: object
       properties:
         result:
@@ -27850,7 +28159,6 @@ components:
         - filters
       title: Информация о стоимости запуска индексации по проектам
     Audit_2.Methods.Indexing.Checker.Price.Get.Exec:
-      description: '@throws Exception'
       type: object
     Audit_2.Methods.Indexing.Export.Links.Get:
       type: object
@@ -28037,7 +28345,6 @@ components:
         - filters
       title: Информация о стоимости запуска индексации по проектам
     Audit_2.Methods.Sitemap.Checker.Price.Get.Exec:
-      description: '@throws Exception'
       type: object
     Audit_2.Methods.Watcher.Checker.Go.Edit:
       type: object
@@ -28084,7 +28391,6 @@ components:
         - filters
       title: Информация о стоимости запуска индексации по проектам
     Audit_2.Methods.Watcher.Checker.Price.Get.Exec:
-      description: '@throws Exception'
       type: object
     properties-check_id:
       title: ID проверки радара
@@ -28149,6 +28455,48 @@ components:
       title: Сводки с количеством изменений по каждому типу проверки
       nullable: true
       type: array
+    Content_2.Methods.Apometr.Snapshots.Top.Get:
+      type: object
+      properties:
+        datetime:
+          title: Дата и время проверки
+          allOf:
+            - $ref: '#/components/schemas/TV.API.Types.Datetime'
+        region_index:
+          type: integer
+        action:
+          allOf:
+            - $ref: '#/components/schemas/Content_2.Types.Apometr.Action'
+      required:
+        - datetime
+        - region_index
+        - action
+      title: Получение топа выдачи сайтов за определенную проверку
+    Content_2.Methods.Apometr.Snapshots.Top.Get.Exec:
+      title: |-
+        Статистика домена по каждой категории
+
+        Позиция 0 - значит, домен вышел из топа
+      nullable: true
+      type: array
+      items:
+        type: array
+        items:
+          type: object
+          properties:
+            domain:
+              type: string
+            pos:
+              type: string
+            prev:
+              type: integer
+            delta:
+              type: integer
+          required:
+            - domain
+            - pos
+            - prev
+            - delta
     Content_2.Methods.Apometr.Text.Calendar.Get:
       type: object
       properties:
@@ -28211,7 +28559,6 @@ components:
 
         Можно создавать только для пройденных курсов
     Content_2.Methods.Journal.Course.Certificates.Add.Exec:
-      title: '@throws Exception'
       nullable: true
       type: integer
     Content_2.Methods.Journal.Course.Certificates.Edit:
@@ -28735,45 +29082,13 @@ components:
       title: Получение сертификата в виде изображения
     Content_2.Methods.Journal.Course.Certificates.Image.Get.Exec:
       nullable: true
-    Content_2.Methods.Apometr.Snapshots.Top.Get:
+    Informer_2.Methods.Push.Safari.WebService.AuthToken.Get:
       type: object
-      properties:
-        datetime:
-          title: Дата и время проверки
-          allOf:
-            - $ref: '#/components/schemas/TV.API.Types.Datetime'
-        region_index:
-          type: integer
-        action:
-          allOf:
-            - $ref: '#/components/schemas/Content_2.Types.Apometr.Action'
-      required:
-        - datetime
-        - region_index
-        - action
-      title: Получение топа выдачи сайтов за определенную проверку
-    Content_2.Methods.Apometr.Snapshots.Top.Get.Exec:
+      properties: {}
+      required: []
       title: |-
-        Статистика домена по каждой категории
+        Получение токена авторизации для работы с safari web push
 
-        Позиция 0 - значит, домен вышел из топа
-      nullable: true
-      type: array
-      items:
-        type: array
-        items:
-          type: object
-          properties:
-            domain:
-              type: string
-            pos:
-              type: string
-            prev:
-              type: integer
-            delta:
-              type: integer
-          required:
-            - domain
-            - pos
-            - prev
-            - delta
+        Создаст токен, если его не существует
+    Informer_2.Methods.Push.Safari.WebService.AuthToken.Get.Exec:
+      type: string

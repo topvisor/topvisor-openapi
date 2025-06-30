@@ -16,7 +16,6 @@ export interface components {
             filters: import('../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['filters'];
             id?: import('../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['id'];
         };
-        /** @throws Exception */
         "Mentions_2.Methods.Searchers.Del.Exec": number;
     };
     responses: never;

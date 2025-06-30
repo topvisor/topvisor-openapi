@@ -12,7 +12,6 @@ export interface components {
             /** Ключи источников (фильтр) */
             searchers_keys?: import('../../../Types/SearchersKeys.ts').components['schemas']['Mentions_2.Types.SearchersKeys'] | null;
         };
-        /** @throws Exception */
         "Mentions_2.Methods.Checker.Go.Edit.Exec": unknown[];
     };
     responses: never;

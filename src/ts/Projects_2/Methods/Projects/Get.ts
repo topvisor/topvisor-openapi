@@ -26,6 +26,7 @@ export interface components {
             /**
              * Добавить в результат сводку с указанными параметрами
              * @deprecated
+             * @description @deprecated 2026-02-01
              */
             include_positions_summary_params?: unknown[] | null;
             /** Является ли проект задачей */

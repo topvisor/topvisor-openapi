@@ -13,7 +13,7 @@
                     "type": "number"
                 },
                 "title": "Тип: float[]",
-                "description": "\n@extends AbstractTypedArray<float>\n@method float[] getValues()\n@method float current()",
+                "description": "@deprecated Использовать не рекомендуется, для передачи float рекомендуется использовать строки или целые числа, умноженные на 10^n\n@extends AbstractTypedArray<float>\n@method float[] getValues()\n@method float current()",
                 "deprecated": true
             }
         }

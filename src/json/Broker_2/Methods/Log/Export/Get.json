@@ -55,7 +55,6 @@
                 "title": "Экспортирование архива логов"
             },
             "Broker_2.Methods.Log.Export.Get.Exec": {
-                "title": "@throws Exception",
                 "type": "never"
             }
         }

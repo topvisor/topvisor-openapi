@@ -40,7 +40,6 @@
                 "title": "Сохранение списка столбцов"
             },
             "Templates_2.Methods.Fields.Edit.Exec": {
-                "title": "@throws Exception",
                 "nullable": true,
                 "type": "integer"
             }

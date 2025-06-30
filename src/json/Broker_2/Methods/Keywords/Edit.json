@@ -61,7 +61,6 @@
                 "title": "Редактирование объявлений (запросов) рекламной кампании"
             },
             "Broker_2.Methods.Keywords.Edit.Exec": {
-                "title": "@throws Exception",
                 "type": "integer"
             }
         }

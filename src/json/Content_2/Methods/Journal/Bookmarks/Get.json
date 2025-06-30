@@ -41,7 +41,6 @@
                 "title": "Получение закладок"
             },
             "Content_2.Methods.Journal.Bookmarks.Get.Exec": {
-                "title": "@throws Exception",
                 "type": "array"
             }
         }

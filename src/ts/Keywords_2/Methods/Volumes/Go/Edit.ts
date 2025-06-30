@@ -36,10 +36,7 @@ export interface components {
             filters?: import('../../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['filters'];
             id?: import('../../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['id'];
         };
-        /**
-         * Список id проектов, отправленных на проверку
-         * @description @throws Exception
-         */
+        /** Список id проектов, отправленных на проверку */
         "Keywords_2.Methods.Volumes.Go.Edit.Exec": {
             projectIds: number[];
         };

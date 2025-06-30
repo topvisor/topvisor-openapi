@@ -16,7 +16,6 @@ export interface components {
              *     - - minute: Минута из перечисления доступных минут (см. $availableMinutes)
              *     - days: Массив дней из перечисления доступных дней (см. $availableDays)
              * @description @var array<int, array{times: array<int, array{hour: string, minute: string}>, days: string[]}> $schedule Массив расписания, содержащий элементы с данными о времени и днях.
-             *
              *     @see Schedule_2\Mods\Schedule::$availableHours
              *     @see Schedule_2\Mods\Schedule::$availableMinutes
              *     @see Schedule_2\Mods\Schedule::$availableDays
@@ -32,7 +31,6 @@ export interface components {
             /** Id второго объекта, к которому будет привязано расписание (для mentions) */
             target_id_2?: number | null;
         };
-        /** @throws Exception */
         "Schedule_2.Methods.Edit.Exec": number | null;
     };
     responses: never;

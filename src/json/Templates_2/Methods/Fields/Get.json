@@ -33,7 +33,6 @@
                 "title": "Получение сохраненного списока столбцов"
             },
             "Templates_2.Methods.Fields.Get.Exec": {
-                "title": "@throws Exception",
                 "type": "array"
             }
         }
