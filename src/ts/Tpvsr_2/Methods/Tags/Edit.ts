@@ -15,8 +15,6 @@ export interface components {
             tags: import('../../Types/Tags.ts').components['schemas']['Tpvsr_2.Types.Tags'];
         };
         "Tpvsr_2.Methods.Tags.Edit.Exec": number | null;
-        /** Тэги для установки */
-        "Tpvsr_2.Types.Tags": components["schemas"]["Tpvsr_2.Types.Tags"][];
     };
     responses: never;
     parameters: never;
