@@ -19711,45 +19711,12 @@ components:
         watcher_types:
           type: array
           nullable: true
-    Informer_2.Types.Config.Method:
-      type: string
-      enum:
-        - news
-        - balance
-        - yandex-update
-        - comments
-        - api
-        - journal
-        - academy
-      title: Тема сообщения
-    Informer_2.Types.Provider:
-      type: string
-      enum:
-        - info
-        - email
-        - sms
-        - push
-        - min
-      title: Способ рассылки
-    Informer_2.Types.Config.Name:
-      type: object
-      properties:
-        method:
-          allOf:
-            - $ref: '#/components/schemas/Informer_2.Types.Config.Method'
-        provider:
-          allOf:
-            - $ref: '#/components/schemas/Informer_2.Types.Provider'
-      required:
-        - method
-        - provider
     Informer_2.Methods.Config.Edit:
       type: object
       properties:
         name:
           title: Название типа. Содержит название провайдера и метода
-          allOf:
-            - $ref: '#/components/schemas/Informer_2.Types.Config.Name'
+          type: string
         value:
           title: Значение
           type: integer

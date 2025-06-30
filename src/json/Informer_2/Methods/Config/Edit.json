@@ -12,11 +12,7 @@
                 "properties": {
                     "name": {
                         "title": "Название типа. Содержит название провайдера и метода",
-                        "allOf": [
-                            {
-                                "$ref": "../../../Informer_2/Types/Config/Name.json#/components/schemas/Informer_2.Types.Config.Name"
-                            }
-                        ]
+                        "type": "string"
                     },
                     "value": {
                         "title": "Значение",

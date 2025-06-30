@@ -10,7 +10,7 @@ export interface components {
         /** Настройка уведомлений */
         "Informer_2.Methods.Config.Edit": {
             /** Название типа. Содержит название провайдера и метода */
-            name: import('../../Types/Config/Name.ts').components['schemas']['Informer_2.Types.Config.Name'];
+            name: string;
             /** Значение */
             value: number;
         };
