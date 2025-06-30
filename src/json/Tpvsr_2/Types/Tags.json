@@ -10,7 +10,7 @@
             "Tpvsr_2.Types.Tags": {
                 "type": "array",
                 "items": {
-                    "$ref": "../../Tpvsr_2/Types/Tags.json#/components/schemas/Tpvsr_2.Types.Tags"
+                    "$ref": "../../Tpvsr_2/Types/Tag.json#/components/schemas/Tpvsr_2.Types.Tag"
                 },
                 "title": "Тэги для установки"
             }

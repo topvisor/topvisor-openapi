@@ -8,7 +8,7 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         /** Тэги для установки */
-        "Tpvsr_2.Types.Tags": components["schemas"]["Tpvsr_2.Types.Tags"][];
+        "Tpvsr_2.Types.Tags": import('./Tag.ts').components['schemas']['Tpvsr_2.Types.Tag'][];
     };
     responses: never;
     parameters: never;
