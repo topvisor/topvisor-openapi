@@ -175,11 +175,11 @@
                         "readOnly": true
                     },
                     "Top_5_sites": {
-                        "const": "SERP Top websites for keyword",
+                        "const": "SERP Top websites for the topic:",
                         "readOnly": true
                     },
                     "More_info": {
-                        "const": "Get more insights on&nbsp;organic SERP with&nbsp;<a href=\"{{ hrefSnapshots }}\" target=\"_blank\">SERP Snapshots →</a>",
+                        "const": "Get organic Top websites in your niche with SERP&nbsp;<a href=\"{{ hrefSnapshots }}\" target=\"_blank\">Top Checker →</a>",
                         "readOnly": true
                     },
                     "Change_in_google": {

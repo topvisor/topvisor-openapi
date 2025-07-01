@@ -11,6 +11,7 @@ export interface components {
         "Content_2.Methods.Apometr.Snapshots.Top.Get": {
             /** Дата и время проверки */
             datetime: import('../../../../../TV/API/Types/Datetime.ts').components['schemas']['TV.API.Types.Datetime'];
+            /** Индекс региона */
             region_index: number;
             action: import('../../../../Types/Apometr/Action.ts').components['schemas']['Content_2.Types.Apometr.Action'];
         };
