@@ -93,7 +93,7 @@ export interface components {
             /** @constant */
             readonly Top_5_sites: "SERP Top websites for the topic:";
             /** @constant */
-            readonly More_info: "Get organic Top websites in your niche with SERP&nbsp;<a href=\"{{ hrefSnapshots }}\" target=\"_blank\">Top Checker →</a>";
+            readonly More_info: "Get organic Top websites in your niche with <a href=\"{{ hrefSnapshots }}\" target=\"_blank\">SERP Top Checker →</a>";
             /** @constant */
             readonly Change_in_google: "A change in Google ranking algorithm occurred. For more information check Google Search Central";
         };

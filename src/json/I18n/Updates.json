@@ -179,7 +179,7 @@
                         "readOnly": true
                     },
                     "More_info": {
-                        "const": "Get organic Top websites in your niche with SERP&nbsp;<a href=\"{{ hrefSnapshots }}\" target=\"_blank\">Top Checker →</a>",
+                        "const": "Get organic Top websites in your niche with <a href=\"{{ hrefSnapshots }}\" target=\"_blank\">SERP Top Checker →</a>",
                         "readOnly": true
                     },
                     "Change_in_google": {
