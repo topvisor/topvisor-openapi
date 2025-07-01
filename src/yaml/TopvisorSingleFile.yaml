@@ -21869,12 +21869,12 @@ components:
         - browsers
         - oses
         - countries
-      title: Тип получаемых данных
+      title: Тип статистики кликов по ссылке
     Tpvsr_2.Types.Stat.Dimension.Types:
       type: array
       items:
         $ref: '#/components/schemas/Tpvsr_2.Types.Stat.Dimension.Type'
-      title: Типы получаемых данных
+      title: Типы статистики кликов по ссылке
     Tpvsr_2.Types.Stat.Dimension.Browser:
       type: string
       enum:

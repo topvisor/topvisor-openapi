@@ -12,7 +12,7 @@
                 "items": {
                     "$ref": "../../../../Tpvsr_2/Types/Stat/Dimension/Type.json#/components/schemas/Tpvsr_2.Types.Stat.Dimension.Type"
                 },
-                "title": "Типы получаемых данных"
+                "title": "Типы статистики кликов по ссылке"
             }
         }
     }

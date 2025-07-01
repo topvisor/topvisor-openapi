@@ -8,7 +8,7 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         /**
-         * Тип получаемых данных
+         * Тип статистики кликов по ссылке
          * @enum {string}
          */
         "Tpvsr_2.Types.Stat.Dimension.Type": "chart_data" | "counts_unique" | "referrers" | "browsers" | "oses" | "countries";
