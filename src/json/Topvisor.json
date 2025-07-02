@@ -3509,7 +3509,7 @@
                 "tags": [
                     "Bank_2"
                 ],
-                "summary": "Получение данных банка по БИК",
+                "summary": "Получение данных банка по БИК или Swift",
                 "requestBody": {
                     "content": {
                         "application/json": {

@@ -2022,7 +2022,7 @@ paths:
       operationId: GetBank2Bank
       tags:
         - Bank_2
-      summary: Получение данных банка по БИК
+      summary: Получение данных банка по БИК или Swift
       requestBody:
         content:
           application/json:
@@ -17112,10 +17112,10 @@ components:
       type: object
       properties:
         bik:
-          title: БИК банка
+          title: БИК или Swift банка
           type: string
       required: []
-      title: Получение данных банка по БИК
+      title: Получение данных банка по БИК или Swift
     Bank_2.Methods.Bank.Get.Exec:
       nullable: true
     Bank_2.Methods.History.Get:

@@ -7,9 +7,9 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Получение данных банка по БИК */
+        /** Получение данных банка по БИК или Swift */
         "Bank_2.Methods.Bank.Get": {
-            /** БИК банка */
+            /** БИК или Swift банка */
             bik?: string;
         };
         "Bank_2.Methods.Bank.Get.Exec": unknown;
