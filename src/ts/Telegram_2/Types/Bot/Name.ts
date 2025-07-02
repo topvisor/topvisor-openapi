@@ -8,7 +8,7 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         /**
-         * Имена telegram ботов
+         * Имя telegram бота
          * @enum {string}
          */
         "Telegram_2.Types.Bot.Name": "TopvisorBot" | "ThundoBot" | "ApometrBot" | "LibraryBot";
