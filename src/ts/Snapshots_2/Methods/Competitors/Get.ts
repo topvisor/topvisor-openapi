@@ -62,14 +62,14 @@ export interface components {
              * @default 31
              */
             count_dates: number;
-            /** При фильтрации по ID папок также искать в подпапках */
-            group_folder_id_depth?: boolean;
-            /** Искать в корзине */
-            show_trash?: boolean;
             /** Только запросы, присутствующие в первой проверке указанного периода
              *
              *     - 2 - только добавленные запросы за период, работает не корректно из-за ограничение JOIN CH */
             only_exists_first_date?: number | null;
+            /** При фильтрации по ID папок также искать в подпапках */
+            group_folder_id_depth?: boolean;
+            /** Искать в корзине */
+            show_trash?: boolean;
             fields?: import('../../../TV/API/Params/FieldsTrait.ts').components['schemas']['TV.API.Params.FieldsTrait']['fields'];
             orders?: import('../../../TV/API/Params/OrdersTrait.ts').components['schemas']['TV.API.Params.OrdersTrait']['orders'];
             filters?: import('../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['filters'];

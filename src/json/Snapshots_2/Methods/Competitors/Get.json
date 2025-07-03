@@ -122,6 +122,11 @@
                         "default": 31,
                         "type": "integer"
                     },
+                    "only_exists_first_date": {
+                        "title": "Только запросы, присутствующие в первой проверке указанного периода\n\n- 2 - только добавленные запросы за период, работает не корректно из-за ограничение JOIN CH",
+                        "nullable": true,
+                        "type": "integer"
+                    },
                     "group_folder_id_depth": {
                         "title": "При фильтрации по ID папок также искать в подпапках",
                         "type": "boolean"
@@ -129,11 +134,6 @@
                     "show_trash": {
                         "title": "Искать в корзине",
                         "type": "boolean"
-                    },
-                    "only_exists_first_date": {
-                        "title": "Только запросы, присутствующие в первой проверке указанного периода\n\n- 2 - только добавленные запросы за период, работает не корректно из-за ограничение JOIN CH",
-                        "nullable": true,
-                        "type": "integer"
                     },
                     "fields": {
                         "$ref": "../../../TV/API/Params/FieldsTrait.json#/components/schemas/TV.API.Params.FieldsTrait/properties/fields"

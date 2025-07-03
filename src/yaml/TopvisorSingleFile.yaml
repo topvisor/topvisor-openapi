@@ -29980,12 +29980,6 @@ components:
           description: '@see \Services\Positions_2\History::MAX_LENGTH_PERIOD - максимально возможное количество дней в диапазоне'
           default: 31
           type: integer
-        group_folder_id_depth:
-          title: При фильтрации по ID папок также искать в подпапках
-          type: boolean
-        show_trash:
-          title: Искать в корзине
-          type: boolean
         only_exists_first_date:
           title: |-
             Только запросы, присутствующие в первой проверке указанного периода
@@ -29993,6 +29987,12 @@ components:
             - 2 - только добавленные запросы за период, работает не корректно из-за ограничение JOIN CH
           nullable: true
           type: integer
+        group_folder_id_depth:
+          title: При фильтрации по ID папок также искать в подпапках
+          type: boolean
+        show_trash:
+          title: Искать в корзине
+          type: boolean
         fields:
           $ref: '#/components/schemas/fields'
         orders:
