@@ -7,7 +7,10 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** @enum {string} */
+        /**
+         * Требуемая должность для просмотра страницы
+         * @enum {string}
+         */
         "Content_2.Types.Pages.RequiredPost": "DEVELOPER" | "SUPPORT" | "ACCOUNTING" | "HR" | "DOCUMENTATION";
     };
     responses: never;
