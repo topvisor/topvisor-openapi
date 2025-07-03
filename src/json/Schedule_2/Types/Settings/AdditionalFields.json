@@ -12,7 +12,8 @@
                 "items": {
                     "$ref": "../../../Schedule_2/Types/Settings/AdditionalField.json#/components/schemas/Schedule_2.Types.Settings.AdditionalField"
                 },
-                "title": "Дополнительные поля отчета проверки позиций"
+                "title": "Дополнительные поля отчета проверки позиций",
+                "description": "@see AdditionalField"
             }
         }
     }

@@ -12,7 +12,8 @@
                 "items": {
                     "$ref": "../../Tpvsr_2/Types/Tag.json#/components/schemas/Tpvsr_2.Types.Tag"
                 },
-                "title": "Тэги для установки"
+                "title": "Тэги для установки",
+                "description": "@see Tag"
             }
         }
     }

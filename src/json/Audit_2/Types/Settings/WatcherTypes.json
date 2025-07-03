@@ -12,7 +12,8 @@
                 "items": {
                     "$ref": "../../../Audit_2/Types/Settings/WatcherType.json#/components/schemas/Audit_2.Types.Settings.WatcherType"
                 },
-                "title": "Типы отчетов радара"
+                "title": "Типы отчетов радара",
+                "description": "@see WatcherType"
             }
         }
     }

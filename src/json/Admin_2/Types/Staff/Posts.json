@@ -12,7 +12,8 @@
                 "items": {
                     "$ref": "../../../Admin_2/Types/Staff/Post.json#/components/schemas/Admin_2.Types.Staff.Post"
                 },
-                "title": "Возможные права доступа"
+                "title": "Возможные права доступа",
+                "description": "@see Post"
             }
         }
     }

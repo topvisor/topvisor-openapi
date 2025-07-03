@@ -12,7 +12,8 @@
                 "items": {
                     "$ref": "../../../Content_2/Types/Pages/RequiredPost.json#/components/schemas/Content_2.Types.Pages.RequiredPost"
                 },
-                "title": "Требуемые должности для просмотра страницы"
+                "title": "Требуемые должности для просмотра страницы",
+                "description": "@see RequiredPost"
             }
         }
     }

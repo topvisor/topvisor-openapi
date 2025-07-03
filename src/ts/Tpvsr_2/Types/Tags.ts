@@ -7,7 +7,10 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Тэги для установки */
+        /**
+         * Тэги для установки
+         * @description @see Tag
+         */
         "Tpvsr_2.Types.Tags": import('./Tag.ts').components['schemas']['Tpvsr_2.Types.Tag'][];
     };
     responses: never;

@@ -12,7 +12,8 @@
                 "items": {
                     "$ref": "../../Mentions_2/Types/SearcherKey.json#/components/schemas/Mentions_2.Types.SearcherKey"
                 },
-                "title": "Id поисковых системы"
+                "title": "Id поисковых системы",
+                "description": "@see SearcherKey"
             }
         }
     }

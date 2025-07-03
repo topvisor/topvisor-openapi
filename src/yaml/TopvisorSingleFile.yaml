@@ -15183,6 +15183,7 @@ components:
       items:
         $ref: '#/components/schemas/Tpvsr_2.Types.Tag'
       title: Тэги для установки
+      description: '@see Tag'
     Tpvsr_2.Methods.Add:
       type: object
       properties:
@@ -15334,7 +15335,7 @@ components:
         Список id тегов
 
         Тип массива: TagId[]
-      description: '@see Tags_2\Types\TagId'
+      description: '@see TagId'
     project_id:
       title: ID проекта
       type: integer
@@ -15976,6 +15977,7 @@ components:
       items:
         $ref: '#/components/schemas/Admin_2.Types.Staff.Post'
       title: Возможные права доступа
+      description: '@see Post'
     Admin_2.Methods.Staff.Add:
       type: object
       properties:
@@ -16771,6 +16773,7 @@ components:
       items:
         $ref: '#/components/schemas/Audit_2.Types.Indexing.SearcherKey'
       title: Id поисковых систем для индексации
+      description: '@see SearcherKey'
     Audit_2.Types.Indexing.TypeRange:
       type: integer
       enum:
@@ -16882,6 +16885,7 @@ components:
       items:
         $ref: '#/components/schemas/Audit_2.Types.Settings.WatcherType'
       title: Типы отчетов радара
+      description: '@see WatcherType'
     TV.API.Types.RegExp:
       type: string
       title: |-
@@ -17043,6 +17047,7 @@ components:
       items:
         $ref: '#/components/schemas/Audit_2.Types.Settings.FieldName'
       title: Имена настроек для инструментов аудита
+      description: '@see FieldName'
     Audit_2.Methods.Settings.Get:
       type: object
       properties:
@@ -18465,6 +18470,7 @@ components:
       items:
         $ref: '#/components/schemas/Content_2.Types.Pages.RequiredPost'
       title: Требуемые должности для просмотра страницы
+      description: '@see RequiredPost'
     Content_2.Methods.Pages.AbstractPage:
       type: object
       properties:
@@ -21380,6 +21386,7 @@ components:
       items:
         $ref: '#/components/schemas/Schedule_2.Types.Settings.Format'
       title: Форматыы отчета
+      description: '@see Format'
     Schedule_2.Types.Settings.AdditionalField:
       type: string
       enum:
@@ -21393,6 +21400,7 @@ components:
       items:
         $ref: '#/components/schemas/Schedule_2.Types.Settings.AdditionalField'
       title: Дополнительные поля отчета проверки позиций
+      description: '@see AdditionalField'
     Schedule_2.Methods.Settings.Edit:
       type: object
       properties:
@@ -26388,6 +26396,7 @@ components:
       items:
         $ref: '#/components/schemas/Mentions_2.Types.SearcherKey'
       title: Id поисковых системы
+      description: '@see SearcherKey'
     Mentions_2.Methods.Checker.Go.Edit:
       type: object
       properties:

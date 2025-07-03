@@ -7,7 +7,10 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Требуемые должности для просмотра страницы */
+        /**
+         * Требуемые должности для просмотра страницы
+         * @description @see RequiredPost
+         */
         "Content_2.Types.Pages.RequiredPosts": import('./RequiredPost.ts').components['schemas']['Content_2.Types.Pages.RequiredPost'][];
     };
     responses: never;

@@ -7,7 +7,10 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Возможные права доступа */
+        /**
+         * Возможные права доступа
+         * @description @see Post
+         */
         "Admin_2.Types.Staff.Posts": import('./Post.ts').components['schemas']['Admin_2.Types.Staff.Post'][];
     };
     responses: never;
