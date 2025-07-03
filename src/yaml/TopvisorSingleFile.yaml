@@ -15960,6 +15960,22 @@ components:
           nullable: true
         quitted_user:
           nullable: true
+    Admin_2.Types.Staff.Post:
+      type: string
+      enum:
+        - DEVELOPER
+        - SUPPORT
+        - GHOST
+        - CONTENT
+        - DOCUMENTATION
+        - HR
+        - ACCOUNTING
+      title: Возможное право доступа
+    Admin_2.Types.Staff.Posts:
+      type: array
+      items:
+        $ref: '#/components/schemas/Admin_2.Types.Staff.Post'
+      title: Возможные права доступа
     Admin_2.Methods.Staff.Add:
       type: object
       properties:
@@ -16002,8 +16018,8 @@ components:
           title: Название отдела
           type: string
         posts:
-          title: Привелегии
-          type: array
+          allOf:
+            - $ref: '#/components/schemas/Admin_2.Types.Staff.Posts'
       required:
         - id
         - email

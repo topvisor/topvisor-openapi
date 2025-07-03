@@ -67,8 +67,11 @@
                         "type": "string"
                     },
                     "posts": {
-                        "title": "Привелегии",
-                        "type": "array"
+                        "allOf": [
+                            {
+                                "$ref": "../../../Admin_2/Types/Staff/Posts.json#/components/schemas/Admin_2.Types.Staff.Posts"
+                            }
+                        ]
                     }
                 },
                 "required": [
