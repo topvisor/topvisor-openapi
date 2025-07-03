@@ -25462,6 +25462,67 @@
                     }
                 }
             }
+        },
+        "/get/snapshots_2/competitors/": {
+            "post": {
+                "operationId": "GetSnapshots2Competitors",
+                "tags": [
+                    "Snapshots_2"
+                ],
+                "summary": "Получение списка конкурентов\n\nМетод базируется на объекте keywords (доступны только фильтры)",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Snapshots_2/Methods/Competitors/Get.json#/components/schemas/Snapshots_2.Methods.Competitors.Get"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "oneOf": [
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "$ref": "Snapshots_2/Methods/Competitors/Get.json#/components/schemas/Snapshots_2.Methods.Competitors.Get.Exec"
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "result"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                },
+                                                {
+                                                    "$ref": "Pagination.json#/components/schemas/Pagination"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
+                                        }
+                                    ]
+                                }
+                            },
+                            "model": {
+                                "schema": {
+                                    "type": "null"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
         }
     },
     "components": {
