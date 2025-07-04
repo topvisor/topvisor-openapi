@@ -42,6 +42,18 @@
                         "const": "URL cannot be shorten (4). URL blocked by Roskomnadzor.",
                         "readOnly": true
                     },
+                    "Limit_exceeded": {
+                        "const": "Free URL Shortener limit reached! To use free URL Shortener, top up your balance within a year. You can use funds on your balance to pay for any Topvisor tools and features.",
+                        "readOnly": true
+                    },
+                    "Insert_link_and_press_enter": {
+                        "const": "Insert link and press enter",
+                        "readOnly": true
+                    },
+                    "Search_by_link": {
+                        "const": "Search by link",
+                        "readOnly": true
+                    },
                     "Sort_name_desc": {
                         "const": "Title Z-A",
                         "readOnly": true
@@ -66,8 +78,8 @@
                         "const": "By date from newest to oldest",
                         "readOnly": true
                     },
-                    "Limit_exceeded": {
-                        "const": "Free URL Shortener limit reached! To use free URL Shortener, top up your balance within a year. You can use funds on your balance to pay for any Topvisor tools and features.",
+                    "Short_url_faster_with_bot": {
+                        "const": "Shorten links faster using a <a href=\"{{ botLink }}\" target=\"_blank\">Telegram bot →</a>",
                         "readOnly": true
                     }
                 },
@@ -80,12 +92,15 @@
                     "Set_favorite",
                     "Link_cannot_be_shortened",
                     "Link_blocked_roskomnadzor",
+                    "Insert_link_and_press_enter",
+                    "Search_by_link",
                     "Sort_name_desc",
                     "Sort_name_asc",
                     "Sort_clicks_desc",
                     "Sort_clicks_asc",
                     "Sort_date_asc",
-                    "Sort_date_desc"
+                    "Sort_date_desc",
+                    "Short_url_faster_with_bot"
                 ]
             }
         }

@@ -25,6 +25,12 @@ export interface components {
             /** @constant */
             readonly Link_blocked_roskomnadzor: "URL cannot be shorten (4). URL blocked by Roskomnadzor.";
             /** @constant */
+            readonly Limit_exceeded?: "Free URL Shortener limit reached! To use free URL Shortener, top up your balance within a year. You can use funds on your balance to pay for any Topvisor tools and features.";
+            /** @constant */
+            readonly Insert_link_and_press_enter: "Insert link and press enter";
+            /** @constant */
+            readonly Search_by_link: "Search by link";
+            /** @constant */
             readonly Sort_name_desc: "Title Z-A";
             /** @constant */
             readonly Sort_name_asc: "Title A-Z";
@@ -37,7 +43,7 @@ export interface components {
             /** @constant */
             readonly Sort_date_desc: "By date from newest to oldest";
             /** @constant */
-            readonly Limit_exceeded?: "Free URL Shortener limit reached! To use free URL Shortener, top up your balance within a year. You can use funds on your balance to pay for any Topvisor tools and features.";
+            readonly Short_url_faster_with_bot: "Shorten links faster using a <a href=\"{{ botLink }}\" target=\"_blank\">Telegram bot →</a>";
         };
     };
     responses: never;

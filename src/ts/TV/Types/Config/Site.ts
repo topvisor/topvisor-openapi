@@ -44,6 +44,11 @@ export interface components {
              */
             readonly HOST_TPVSR_MODULE: string;
             /**
+             * Имя бота сокращателя
+             * @default No set
+             */
+            readonly TPVSR_BOT_NAME: string;
+            /**
              * Тип биллинга по умолчанию
              *
              *     - balance
@@ -138,6 +143,14 @@ export interface components {
             readonly COUNTER_GOOGLE_JOURNAL: string;
             /** @default 10000 */
             readonly DIADOC_ID: number;
+            /** Запрещенные API.
+             *
+             *     Разрешается блок как сервиса, так и частного метода
+             *
+             *     Блокировка сервиса целиком: ['Admin_2', 'Users_2']
+             *     Блокировка сервисов метода ['Admin_2\Methods\Informer'] - заблокирует только методы из Informer
+             *     Блокировка частного метода ['Admin_2\Methods\Informer\Get'] - заблокирует запрос к методу Get, остальные будут доступны */
+            readonly BLOCKED_SERVICES: unknown[];
         };
     };
     responses: never;
