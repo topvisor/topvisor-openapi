@@ -11,7 +11,7 @@ export interface components {
          * Тема сообщения
          * @enum {string}
          */
-        "Informer_2.Types.Config.Method": "news" | "balance" | "yandex-update" | "comments" | "api" | "journal" | "academy";
+        "Informer_2.Types.Config.Method": "news" | "balance" | "yandex-update" | "comments" | "api" | "journal" | "academy" | "tickets";
     };
     responses: never;
     parameters: never;

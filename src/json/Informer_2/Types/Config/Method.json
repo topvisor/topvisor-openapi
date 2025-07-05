@@ -16,7 +16,8 @@
                     "comments",
                     "api",
                     "journal",
-                    "academy"
+                    "academy",
+                    "tickets"
                 ],
                 "title": "Тема сообщения"
             }
