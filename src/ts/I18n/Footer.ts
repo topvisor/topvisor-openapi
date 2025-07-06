@@ -11,7 +11,7 @@ export interface components {
             /** @constant */
             readonly Suggestions_tool: "Search Suggestions";
             /** @constant */
-            readonly Rank_and_SERP_top_cheking: "Rank and SERP Top checking";
+            readonly Rank_and_SERP_top_cheking: "Rank and SERP Top Checking";
             /** @constant */
             readonly Semantics: "Semantics";
             /** @constant */
@@ -19,11 +19,11 @@ export interface components {
             /** @constant */
             readonly Miscellaneous: "Miscellaneous";
             /** @constant */
-            readonly About_us: "About us";
+            readonly About_us: "About Us";
             /** @constant */
             readonly Resources: "Resources";
             /** @constant */
-            readonly Questions: "Got any questions?";
+            readonly Questions: "Got Any Questions?";
             /** @constant */
             readonly Grouping_tool: "Keyword Clustering";
             /** @constant */

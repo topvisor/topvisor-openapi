@@ -15,7 +15,7 @@
                         "readOnly": true
                     },
                     "Rank_and_SERP_top_cheking": {
-                        "const": "Rank and SERP Top checking",
+                        "const": "Rank and SERP Top Checking",
                         "readOnly": true
                     },
                     "Semantics": {
@@ -31,7 +31,7 @@
                         "readOnly": true
                     },
                     "About_us": {
-                        "const": "About us",
+                        "const": "About Us",
                         "readOnly": true
                     },
                     "Resources": {
@@ -39,7 +39,7 @@
                         "readOnly": true
                     },
                     "Questions": {
-                        "const": "Got any questions?",
+                        "const": "Got Any Questions?",
                         "readOnly": true
                     },
                     "Grouping_tool": {
