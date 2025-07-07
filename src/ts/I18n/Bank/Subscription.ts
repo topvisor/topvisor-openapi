@@ -143,6 +143,10 @@ export interface components {
             readonly Start_free_trial_info: "Start your free 14‑days trial now and discover how your SEO can be better. Get maximum from analyzing your rankings.";
             /** @constant */
             readonly Start_Free_Trial: "Start Free Trial";
+            /** @constant */
+            readonly Monthly: "Monthly";
+            /** @constant */
+            readonly Yearly: "Yearly";
         };
     };
     responses: never;

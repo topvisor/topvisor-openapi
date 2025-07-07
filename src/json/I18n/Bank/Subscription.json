@@ -222,6 +222,14 @@
                     "Start_Free_Trial": {
                         "const": "Start Free Trial",
                         "readOnly": true
+                    },
+                    "Monthly": {
+                        "const": "Monthly",
+                        "readOnly": true
+                    },
+                    "Yearly": {
+                        "const": "Yearly",
+                        "readOnly": true
                     }
                 },
                 "required": [
@@ -263,7 +271,9 @@
                     "Subscribe",
                     "Try_seo_rank_traker",
                     "Start_free_trial_info",
-                    "Start_Free_Trial"
+                    "Start_Free_Trial",
+                    "Monthly",
+                    "Yearly"
                 ]
             }
         }
