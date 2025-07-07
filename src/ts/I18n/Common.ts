@@ -651,6 +651,10 @@ export interface components {
             /** @constant */
             readonly Sum: "Amount";
             /** @constant */
+            readonly hours_short: "h";
+            /** @constant */
+            readonly minutes_short: "min";
+            /** @constant */
             readonly Date: "Date";
             /** @constant */
             readonly Week: "Week";

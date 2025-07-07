@@ -1294,6 +1294,14 @@
                         "const": "Amount",
                         "readOnly": true
                     },
+                    "hours_short": {
+                        "const": "h",
+                        "readOnly": true
+                    },
+                    "minutes_short": {
+                        "const": "min",
+                        "readOnly": true
+                    },
                     "Date": {
                         "const": "Date",
                         "readOnly": true
@@ -2238,6 +2246,8 @@
                     "Kazakhstan",
                     "Belarus",
                     "Sum",
+                    "hours_short",
+                    "minutes_short",
                     "Date",
                     "Week",
                     "Month",

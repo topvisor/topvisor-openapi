@@ -13,25 +13,15 @@ export interface components {
             /** @constant */
             readonly Tasks_list: "Tasks list";
             /** @constant */
-            readonly View_collected_data_and_monitor_status: "View collected data and watch launched tasks status. Tasks are stored for 24 hours.";
-            /** @constant */
             readonly Tool: "Tool";
             /** @constant */
             readonly Task_completed: "Completed";
             /** @constant */
-            readonly h: "h";
-            /** @constant */
-            readonly min: "min";
-            /** @constant */
-            readonly Need_to_save_data_till_end?: "Wanna save keywords data forever? <a href=\"/support/start/create/\" target=\"_blank\">Create a project</a> in Topvisor and check volume without time limits.";
+            readonly In_process: "In process";
             /** @constant */
             readonly Repeat_task: "Repeat task";
             /** @constant */
             readonly No_tasks: "No tasks";
-            /** @constant */
-            readonly For_export: "For export";
-            /** @constant */
-            readonly With_tool_can_fast_check: "With the help of the tool you can quickly check the demand and popularity of key phrases. <a href=\"/support/volume/\" target=\"_blank\">What is frequency →</a>";
         };
     };
     responses: never;
