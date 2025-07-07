@@ -48,7 +48,7 @@ export interface components {
             /** Регулярное выражение для индексации */
             regexp_indexing?: string | null;
             /** Ограничение по количеству url получаемых при проверке */
-            max_urls_count?: string;
+            max_urls_count?: number | null;
         };
         "Schedule_2.Methods.Settings.Edit.Exec": number | null;
     };

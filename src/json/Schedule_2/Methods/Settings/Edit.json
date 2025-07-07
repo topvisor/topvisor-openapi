@@ -126,7 +126,8 @@
                     },
                     "max_urls_count": {
                         "title": "Ограничение по количеству url получаемых при проверке",
-                        "type": "string"
+                        "nullable": true,
+                        "type": "integer"
                     }
                 },
                 "required": [
