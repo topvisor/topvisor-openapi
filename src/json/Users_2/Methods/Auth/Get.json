@@ -11,7 +11,7 @@
                 "type": "object",
                 "properties": {
                     "authorisation_login": {
-                        "title": "Логин авторизации",
+                        "title": "Логин авторизации\n\nМожет принимать Email|null|emptyString",
                         "nullable": true,
                         "type": "string"
                     },

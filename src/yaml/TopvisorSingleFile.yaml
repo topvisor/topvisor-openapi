@@ -29862,7 +29862,10 @@ components:
       type: object
       properties:
         authorisation_login:
-          title: Логин авторизации
+          title: |-
+            Логин авторизации
+
+            Может принимать Email|null|emptyString
           nullable: true
           type: string
         authorisation_pass:

@@ -9,7 +9,9 @@ export interface components {
     schemas: {
         /** Проверка на авторизацию пользователя */
         "Users_2.Methods.Auth.Get": {
-            /** Логин авторизации */
+            /** Логин авторизации
+             *
+             *     Может принимать Email|null|emptyString */
             authorisation_login?: string | null;
             /** Пароль авторизации */
             authorisation_pass?: string | null;
