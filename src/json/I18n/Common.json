@@ -263,7 +263,7 @@
                         "readOnly": true
                     },
                     "Tool_digest": {
-                        "const": "Google Year at Topvisor",
+                        "const": "Case Championship 2025",
                         "readOnly": true
                     },
                     "Ticket": {
@@ -1991,6 +1991,7 @@
                     "project",
                     "Project",
                     "of_project",
+                    "Tool_digest",
                     "Ticket",
                     "Tickets",
                     "All_tickets",

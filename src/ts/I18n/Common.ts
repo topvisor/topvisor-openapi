@@ -135,7 +135,7 @@ export interface components {
             /** @constant */
             readonly of_project: "of project";
             /** @constant */
-            readonly Tool_digest?: "Google Year at Topvisor";
+            readonly Tool_digest: "Case Championship 2025";
             /** @constant */
             readonly Ticket: "Ticket";
             /** @constant */
