@@ -11,7 +11,7 @@
                 "tags": [
                     "Analytics_2"
                 ],
-                "summary": "Фиксация события test",
+                "summary": "Фиксация события",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -12441,7 +12441,7 @@
                 "tags": [
                     "Admin_2"
                 ],
-                "summary": "Получение мероприятий",
+                "summary": "Получение метрик из сервиса Аналитика",
                 "requestBody": {
                     "content": {
                         "application/json": {

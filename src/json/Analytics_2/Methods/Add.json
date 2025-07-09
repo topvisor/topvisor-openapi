@@ -42,7 +42,7 @@
                     }
                 },
                 "required": [],
-                "title": "Фиксация события test"
+                "title": "Фиксация события"
             },
             "Analytics_2.Methods.Add.Exec": {
                 "nullable": true,

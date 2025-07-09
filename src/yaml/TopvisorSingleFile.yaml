@@ -119,7 +119,7 @@ paths:
       operationId: AddAnalytics2
       tags:
         - Analytics_2
-      summary: Фиксация события test
+      summary: Фиксация события
       requestBody:
         content:
           application/json:
@@ -6843,7 +6843,7 @@ paths:
       operationId: GetAdmin2AnalyticsEvents
       tags:
         - Admin_2
-      summary: Получение мероприятий
+      summary: Получение метрик из сервиса Аналитика
       requestBody:
         content:
           application/json:
@@ -13968,7 +13968,7 @@ components:
           nullable: true
           type: integer
       required: []
-      title: Фиксация события test
+      title: Фиксация события
     Analytics_2.Methods.Add.Exec:
       nullable: true
       type: integer
@@ -22903,7 +22903,7 @@ components:
         - orders
         - filters
         - offset
-      title: Получение мероприятий
+      title: Получение метрик из сервиса Аналитика
     Admin_2.Methods.Analytics.Events.Get.Exec:
       nullable: true
     Models.Analytics.Events:
