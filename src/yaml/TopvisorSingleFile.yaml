@@ -13927,6 +13927,37 @@ paths:
             model:
               schema:
                 type: 'null'
+  /get/system_2/tpl/:
+    post:
+      operationId: GetSystem2Tpl
+      tags:
+        - System_2
+      summary: Получение кешируемого HTML-шаблона
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/System_2.Methods.Tpl.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            $ref: '#/components/schemas/System_2.Methods.Tpl.Get.Exec'
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
 components:
   securitySchemes:
     authToken:
@@ -30021,3 +30052,48 @@ components:
         Метод базируется на объекте keywords (доступны только фильтры)
     Snapshots_2.Methods.Competitors.Get.Exec:
       type: array
+    System_2.Types.Tpl.Lang:
+      type: string
+      enum:
+        - ru
+        - en
+        - ''
+      title: Язык шаблона
+    System_2.Types.Tpl.Currency:
+      type: string
+      enum:
+        - RUB
+        - USD
+        - ''
+      title: Валюта шаблонов
+    System_2.Methods.Tpl.Get:
+      type: object
+      properties:
+        tpl:
+          title: Путь к шаблону
+          type: string
+        tpl_data:
+          title: Данные для шаблона (кеш будет отключен)
+          nullable: true
+          type: array
+        wait_change_etag:
+          title: Ожидать изменение шаблона (кеш будет отключен)
+          nullable: true
+          type: string
+        lang:
+          nullable: true
+          allOf:
+            - $ref: '#/components/schemas/System_2.Types.Tpl.Lang'
+        currency:
+          nullable: true
+          allOf:
+            - $ref: '#/components/schemas/System_2.Types.Tpl.Currency'
+        v:
+          title: Версия кэша
+          nullable: true
+          type: integer
+      required:
+        - tpl
+      title: Получение кешируемого HTML-шаблона
+    System_2.Methods.Tpl.Get.Exec:
+      type: string
