@@ -1,0 +1,43 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/System_2.Types.Calls.Call",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "System_2.Types.Calls.Call": {
+                "type": "object",
+                "properties": {
+                    "module": {
+                        "title": "Название модуля",
+                        "type": "string"
+                    },
+                    "func": {
+                        "title": "Название функции",
+                        "type": "string"
+                    },
+                    "data": {
+                        "title": "Параметры вызова",
+                        "nullable": true,
+                        "type": "array"
+                    },
+                    "oper": {
+                        "allOf": [
+                            {
+                                "$ref": "../../../System_2/Types/Operation.json#/components/schemas/System_2.Types.Operation"
+                            }
+                        ]
+                    }
+                },
+                "required": [
+                    "module",
+                    "func",
+                    "oper"
+                ],
+                "title": "Объект вызова модуля системы\n\nИспользуется для подготовки данных запроса к внутреннему API"
+            }
+        }
+    }
+}
