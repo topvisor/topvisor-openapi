@@ -58,7 +58,6 @@ export interface components {
             type_range: number;
             /**
              * Количество дней в диапазоне
-             * @description @see \Services\Positions_2\History::MAX_LENGTH_PERIOD - максимально возможное количество дней в диапазоне
              * @default 31
              */
             count_dates: number;
