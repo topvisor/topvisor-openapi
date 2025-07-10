@@ -16,7 +16,7 @@ export interface components {
              * @description @requires
              */
             errors: import('./Errors.ts').components['schemas']['Errors'];
-            /** Список ообщений, полученных при выполнении запроса */
+            /** Список сообщений, полученных при выполнении запроса */
             messages?: import('./TV/API/Types/StringArray.ts').components['schemas']['TV.API.Types.StringArray'] | null;
         };
     };

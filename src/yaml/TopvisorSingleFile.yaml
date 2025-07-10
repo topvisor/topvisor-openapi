@@ -14055,7 +14055,7 @@ components:
           nullable: true
           type: 'null'
         messages:
-          title: Список ообщений, полученных при выполнении запроса
+          title: Список сообщений, полученных при выполнении запроса
           nullable: true
           allOf:
             - $ref: '#/components/schemas/TV.API.Types.StringArray'
@@ -14104,7 +14104,7 @@ components:
           allOf:
             - $ref: '#/components/schemas/Errors'
         messages:
-          title: Список ообщений, полученных при выполнении запроса
+          title: Список сообщений, полученных при выполнении запроса
           nullable: true
           allOf:
             - $ref: '#/components/schemas/TV.API.Types.StringArray'
