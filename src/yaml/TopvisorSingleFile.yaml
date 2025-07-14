@@ -30561,7 +30561,8 @@ components:
           allOf:
             - $ref: '#/components/schemas/Snapshots_2.Types.Competitors.Export.Output'
         returnFilenameFromFolder:
-          title: для внутреннего использования
+          title: Вернуть ли URI-идентификатор или имя файла, из директории.
+          description: '@internal'
           nullable: true
           type: string
         properties:

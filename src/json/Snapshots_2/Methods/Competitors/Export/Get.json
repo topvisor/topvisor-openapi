@@ -18,7 +18,8 @@
                         ]
                     },
                     "returnFilenameFromFolder": {
-                        "title": "для внутреннего использования",
+                        "title": "Вернуть ли URI-идентификатор или имя файла, из директории.",
+                        "description": "@internal",
                         "nullable": true,
                         "type": "string"
                     },

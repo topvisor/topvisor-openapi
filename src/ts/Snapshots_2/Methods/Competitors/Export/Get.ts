@@ -10,7 +10,10 @@ export interface components {
         /** Экспорт списка конкурентов */
         "Snapshots_2.Methods.Competitors.Export.Get": {
             output: import('../../../Types/Competitors/Export/Output.ts').components['schemas']['Snapshots_2.Types.Competitors.Export.Output'];
-            /** для внутреннего использования */
+            /**
+             * Вернуть ли URI-идентификатор или имя файла, из директории.
+             * @description @internal
+             */
             returnFilenameFromFolder?: string | null;
             /** Параметры экспорта, возможные поля:
              *     - showSummary */
