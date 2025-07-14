@@ -1,0 +1,19 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Snapshots_2.Types.History.PositionsFields",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Snapshots_2.Types.History.PositionsFields": {
+                "type": "array",
+                "items": {
+                    "$ref": "../../../Snapshots_2/Types/History/PositionsField.json#/components/schemas/Snapshots_2.Types.History.PositionsField"
+                },
+                "title": "Поля, возвращаемые в snapshotsData"
+            }
+        }
+    }
+}
