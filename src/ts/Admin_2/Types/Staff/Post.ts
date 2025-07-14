@@ -8,10 +8,10 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         /**
-         * Возможное право доступа
+         * Позиция или права сотрудника
          * @enum {string}
          */
-        "Admin_2.Types.Staff.Post": "DEVELOPER" | "SUPPORT" | "GHOST" | "CONTENT" | "DOCUMENTATION" | "HR" | "ACCOUNTING";
+        "Admin_2.Types.Staff.Post": "DEVELOPER" | "SUPPORT" | "ACCOUNTING" | "HR" | "DOCUMENTATION" | "GHOST" | "CONTENT";
     };
     responses: never;
     parameters: never;

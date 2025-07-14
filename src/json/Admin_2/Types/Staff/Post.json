@@ -12,13 +12,13 @@
                 "enum": [
                     "DEVELOPER",
                     "SUPPORT",
-                    "GHOST",
-                    "CONTENT",
-                    "DOCUMENTATION",
+                    "ACCOUNTING",
                     "HR",
-                    "ACCOUNTING"
+                    "DOCUMENTATION",
+                    "GHOST",
+                    "CONTENT"
                 ],
-                "title": "Возможное право доступа"
+                "title": "Позиция или права сотрудника"
             }
         }
     }

@@ -16270,18 +16270,22 @@ components:
       enum:
         - DEVELOPER
         - SUPPORT
+        - ACCOUNTING
+        - HR
+        - DOCUMENTATION
         - GHOST
         - CONTENT
-        - DOCUMENTATION
-        - HR
-        - ACCOUNTING
-      title: Возможное право доступа
+      title: Позиция или права сотрудника
     Admin_2.Types.Staff.Posts:
       type: array
       items:
         $ref: '#/components/schemas/Admin_2.Types.Staff.Post'
-      title: Возможные права доступа
-      description: '@see Post'
+      title: Позиции сотрудников
+      description: |-
+        @extends API\Types\AbstractObjectArray<Post>
+        @method Post[] getValues()
+        @method Post current()
+        @see Post
     Admin_2.Methods.Staff.Add:
       type: object
       properties:

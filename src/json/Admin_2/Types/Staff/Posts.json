@@ -12,8 +12,8 @@
                 "items": {
                     "$ref": "../../../Admin_2/Types/Staff/Post.json#/components/schemas/Admin_2.Types.Staff.Post"
                 },
-                "title": "Возможные права доступа",
-                "description": "@see Post"
+                "title": "Позиции сотрудников",
+                "description": "@extends API\\Types\\AbstractObjectArray<Post>\n@method Post[] getValues()\n@method Post current()\n@see Post"
             }
         }
     }
