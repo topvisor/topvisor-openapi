@@ -1,0 +1,36 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Snapshots_2.Methods.Competitors.Export.ToRepository.Get",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Snapshots_2.Methods.Competitors.Export.ToRepository.Get": {
+                "type": "object",
+                "properties": {
+                    "project_id": {
+                        "title": "Id проекта",
+                        "type": "integer"
+                    },
+                    "repository": {
+                        "allOf": [
+                            {
+                                "$ref": "../../../../../Snapshots_2/Types/Competitors/Export/Repository.json#/components/schemas/Snapshots_2.Types.Competitors.Export.Repository"
+                            }
+                        ]
+                    }
+                },
+                "required": [
+                    "project_id",
+                    "repository"
+                ],
+                "title": "Экспорт в хранилище\n\nПроизводит редирект на файл в кранилище"
+            },
+            "Snapshots_2.Methods.Competitors.Export.ToRepository.Get.Exec": {
+                "type": "never"
+            }
+        }
+    }
+}

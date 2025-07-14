@@ -25700,6 +25700,191 @@
                     }
                 }
             }
+        },
+        "/abstractregular/snapshots_2/competitors/": {
+            "post": {
+                "operationId": "AbstractregularSnapshots2Competitors",
+                "tags": [
+                    "Snapshots_2"
+                ],
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Snapshots_2/Methods/Competitors/AbstractRegular.json#/components/schemas/Snapshots_2.Methods.Competitors.AbstractRegular"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "oneOf": [
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "$ref": "Snapshots_2/Methods/Competitors/AbstractRegular.json#/components/schemas/Snapshots_2.Methods.Competitors.AbstractRegular.Exec"
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "result"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                },
+                                                {
+                                                    "$ref": "Pagination.json#/components/schemas/Pagination"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
+                                        }
+                                    ]
+                                }
+                            },
+                            "model": {
+                                "schema": {
+                                    "type": "null"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/get/snapshots_2/competitors/export/": {
+            "post": {
+                "operationId": "GetSnapshots2CompetitorsExport",
+                "tags": [
+                    "Snapshots_2"
+                ],
+                "summary": "Экспорт списка конкурентов",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Snapshots_2/Methods/Competitors/Export/Get.json#/components/schemas/Snapshots_2.Methods.Competitors.Export.Get"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "oneOf": [
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "$ref": "Snapshots_2/Methods/Competitors/Export/Get.json#/components/schemas/Snapshots_2.Methods.Competitors.Export.Get.Exec"
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "result"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                },
+                                                {
+                                                    "$ref": "Pagination.json#/components/schemas/Pagination"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
+                                        }
+                                    ]
+                                }
+                            },
+                            "model": {
+                                "schema": {
+                                    "type": "null"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/get/snapshots_2/competitors/chart/export/": {
+            "post": {
+                "operationId": "GetSnapshots2CompetitorsChartExport",
+                "tags": [
+                    "Snapshots_2"
+                ],
+                "summary": "Экспорт сводки с графика\n\nОписание параметров смотреть в get/snapshots_2/competitors",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Snapshots_2/Methods/Competitors/Chart/Export/Get.json#/components/schemas/Snapshots_2.Methods.Competitors.Chart.Export.Get"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/octet-stream": {
+                                "schema": {
+                                    "type": "string",
+                                    "format": "binary"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/get/snapshots_2/competitors/export/toRepository/": {
+            "post": {
+                "operationId": "GetSnapshots2CompetitorsExportToRepository",
+                "tags": [
+                    "Snapshots_2"
+                ],
+                "summary": "Экспорт в хранилище\n\nПроизводит редирект на файл в кранилище",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Snapshots_2/Methods/Competitors/Export/ToRepository/Get.json#/components/schemas/Snapshots_2.Methods.Competitors.Export.ToRepository.Get"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/octet-stream": {
+                                "schema": {
+                                    "type": "string",
+                                    "format": "binary"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
         }
     },
     "components": {
