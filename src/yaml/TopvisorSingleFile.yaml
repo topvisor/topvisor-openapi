@@ -13990,6 +13990,37 @@ paths:
             model:
               schema:
                 type: 'null'
+  /edit/system_2/api/genKey/:
+    post:
+      operationId: EditSystem2ApiGenKey
+      tags:
+        - System_2
+      summary: Генерация нового API ключа
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/System_2.Methods.Api.GenKey.Edit'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            $ref: '#/components/schemas/System_2.Methods.Api.GenKey.Edit.Exec'
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
 components:
   securitySchemes:
     authToken:
@@ -30278,3 +30309,10 @@ components:
       required:
         - dates
         - seriesByDomain
+    System_2.Methods.Api.GenKey.Edit:
+      type: object
+      properties: {}
+      required: []
+      title: Генерация нового API ключа
+    System_2.Methods.Api.GenKey.Edit.Exec:
+      type: string

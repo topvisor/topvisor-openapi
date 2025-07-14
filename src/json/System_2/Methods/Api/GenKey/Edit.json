@@ -1,0 +1,21 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/System_2.Methods.Api.GenKey.Edit",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "System_2.Methods.Api.GenKey.Edit": {
+                "type": "object",
+                "properties": {},
+                "required": [],
+                "title": "Генерация нового API ключа"
+            },
+            "System_2.Methods.Api.GenKey.Edit.Exec": {
+                "type": "string"
+            }
+        }
+    }
+}

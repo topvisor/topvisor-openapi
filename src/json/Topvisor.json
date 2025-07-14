@@ -25642,6 +25642,64 @@
                     }
                 }
             }
+        },
+        "/edit/system_2/api/genKey/": {
+            "post": {
+                "operationId": "EditSystem2ApiGenKey",
+                "tags": [
+                    "System_2"
+                ],
+                "summary": "Генерация нового API ключа",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "System_2/Methods/Api/GenKey/Edit.json#/components/schemas/System_2.Methods.Api.GenKey.Edit"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "oneOf": [
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "$ref": "System_2/Methods/Api/GenKey/Edit.json#/components/schemas/System_2.Methods.Api.GenKey.Edit.Exec"
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "result"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
+                                        }
+                                    ]
+                                }
+                            },
+                            "model": {
+                                "schema": {
+                                    "type": "null"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
         }
     },
     "components": {
