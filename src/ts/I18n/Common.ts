@@ -9,6 +9,18 @@ export interface components {
     schemas: {
         "I18n.Common": {
             /** @constant */
+            readonly SearchersNames: {
+                0: "Yandex";
+                1: "Google";
+                4: "YouTube";
+                5: "Bing";
+                7: "Seznam";
+                8: "AppStore";
+                9: "GoogleStore";
+                20: "Yandex.com";
+                21: "Yandex.com.tr";
+            };
+            /** @constant */
             readonly url_lang_prefix: "";
             /** @constant */
             readonly Page_404_text: "Page Not Found";

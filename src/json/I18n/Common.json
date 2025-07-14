@@ -10,6 +10,20 @@
             "I18n.Common": {
                 "type": "object",
                 "properties": {
+                    "SearchersNames": {
+                        "const": {
+                            "0": "Yandex",
+                            "1": "Google",
+                            "4": "YouTube",
+                            "5": "Bing",
+                            "7": "Seznam",
+                            "8": "AppStore",
+                            "9": "GoogleStore",
+                            "20": "Yandex.com",
+                            "21": "Yandex.com.tr"
+                        },
+                        "readOnly": true
+                    },
                     "url_lang_prefix": {
                         "const": "",
                         "readOnly": true
@@ -1928,6 +1942,7 @@
                     }
                 },
                 "required": [
+                    "SearchersNames",
                     "url_lang_prefix",
                     "Page_404_text",
                     "Page_404_text2",

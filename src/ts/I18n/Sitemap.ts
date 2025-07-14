@@ -11,7 +11,9 @@ export interface components {
             /** @constant */
             readonly Settings: "Tool settings";
             /** @constant */
-            readonly Popup_go_text_before_select: "Sitemap for <a href=\"#\" class=\"domain\" target=\"_blank\"></a> will contain up to:";
+            readonly Popup_go_text_before_select_1: "Sitemap for";
+            /** @constant */
+            readonly Popup_go_text_before_select_2: "will contain up to";
             /** @constant */
             readonly Popup_go_text_before_price: "Project owner will be charged:";
             /** @constant */
