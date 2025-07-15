@@ -44,6 +44,10 @@ export interface components {
             readonly Sort_date_desc: "By date from newest to oldest";
             /** @constant */
             readonly Short_url_faster_with_bot: "Shorten links faster using a <a href=\"{{ botLink }}\" target=\"_blank\">Telegram bot →</a>";
+            /** @constant */
+            readonly Free_url_limit_reached: "Free URL Shortener limit reached!";
+            /** @constant */
+            readonly To_continue_use_need_to_pay?: "To use free URL Shortener, top up your balance with not less than {{ minSum }} within one year. You can use funds on your balance to pay for any of Topvisor tools and features.";
         };
     };
     responses: never;

@@ -81,6 +81,14 @@
                     "Short_url_faster_with_bot": {
                         "const": "Shorten links faster using a <a href=\"{{ botLink }}\" target=\"_blank\">Telegram bot →</a>",
                         "readOnly": true
+                    },
+                    "Free_url_limit_reached": {
+                        "const": "Free URL Shortener limit reached!",
+                        "readOnly": true
+                    },
+                    "To_continue_use_need_to_pay": {
+                        "const": "To use free URL Shortener, top up your balance with not less than {{ minSum }} within one year. You can use funds on your balance to pay for any of Topvisor tools and features.",
+                        "readOnly": true
                     }
                 },
                 "required": [
@@ -100,7 +108,8 @@
                     "Sort_clicks_asc",
                     "Sort_date_asc",
                     "Sort_date_desc",
-                    "Short_url_faster_with_bot"
+                    "Short_url_faster_with_bot",
+                    "Free_url_limit_reached"
                 ]
             }
         }
