@@ -11,8 +11,8 @@ export interface components {
         "Admin_2.Methods.Actions.Robot.Priority.Edit": {
             /** ID сайта или проекта */
             siteOrProjectId?: string | null;
-            /** ID пользователя */
-            userId?: number | null;
+            /** ID пользователей */
+            usersIds?: import('../../../../../TV/API/Types/IntArray.ts').components['schemas']['TV.API.Types.IntArray'] | null;
             /** Приоритет */
             priority: number;
             /**

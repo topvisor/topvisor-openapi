@@ -28346,10 +28346,11 @@ components:
           title: ID сайта или проекта
           nullable: true
           type: string
-        userId:
-          title: ID пользователя
+        usersIds:
+          title: ID пользователей
           nullable: true
-          type: integer
+          allOf:
+            - $ref: '#/components/schemas/TV.API.Types.IntArray'
         priority:
           title: Приоритет
           type: integer

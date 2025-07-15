@@ -15,10 +15,14 @@
                         "nullable": true,
                         "type": "string"
                     },
-                    "userId": {
-                        "title": "ID пользователя",
+                    "usersIds": {
+                        "title": "ID пользователей",
                         "nullable": true,
-                        "type": "integer"
+                        "allOf": [
+                            {
+                                "$ref": "../../../../../TV/API/Types/IntArray.json#/components/schemas/TV.API.Types.IntArray"
+                            }
+                        ]
                     },
                     "priority": {
                         "title": "Приоритет",
