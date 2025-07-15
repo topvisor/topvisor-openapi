@@ -1,0 +1,33 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/System_2.Methods.Games.Record.Edit",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "System_2.Methods.Games.Record.Edit": {
+                "type": "object",
+                "properties": {
+                    "record": {
+                        "title": "Новый рекорд",
+                        "type": "integer"
+                    },
+                    "hash": {
+                        "title": "Хэш рекорда. Для защиты от подделок",
+                        "type": "integer"
+                    }
+                },
+                "required": [
+                    "record",
+                    "hash"
+                ],
+                "title": "Изменение рекорда в тетрисе"
+            },
+            "System_2.Methods.Games.Record.Edit.Exec": {
+                "type": "integer"
+            }
+        }
+    }
+}

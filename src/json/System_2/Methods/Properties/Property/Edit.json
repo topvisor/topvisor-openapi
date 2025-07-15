@@ -1,0 +1,58 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/System_2.Methods.Properties.Property.Edit",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "System_2.Methods.Properties.Property.Edit": {
+                "type": "object",
+                "properties": {
+                    "name": {
+                        "title": "Имя параметра",
+                        "type": "string"
+                    },
+                    "value": {
+                        "title": "Значение параметра",
+                        "nullable": true,
+                        "type": "string"
+                    },
+                    "type": {
+                        "default": "varchar",
+                        "allOf": [
+                            {
+                                "$ref": "../../../../System_2/Types/Properties/Property/Type.json#/components/schemas/System_2.Types.Properties.Property.Type"
+                            }
+                        ]
+                    },
+                    "encode_to_base64": {
+                        "title": "Кодировать ли данные в base64",
+                        "type": "boolean"
+                    },
+                    "target_name": {
+                        "nullable": true,
+                        "allOf": [
+                            {
+                                "$ref": "../../../../System_2/Types/Properties/Property/TargetName.json#/components/schemas/System_2.Types.Properties.Property.TargetName"
+                            }
+                        ]
+                    },
+                    "target_id": {
+                        "title": "Id объекта в категории",
+                        "type": "integer"
+                    }
+                },
+                "required": [
+                    "name"
+                ],
+                "title": "Редактирование параметра\n\nНе хранить в параметрах конфиденциальную информацию"
+            },
+            "System_2.Methods.Properties.Property.Edit.Exec": {
+                "nullable": true,
+                "type": "integer"
+            }
+        }
+    }
+}

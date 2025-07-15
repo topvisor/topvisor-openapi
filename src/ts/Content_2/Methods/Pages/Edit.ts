@@ -41,11 +41,9 @@ export interface components {
             order?: number | null;
             /** Ссылка на основное изображение (обычно относительный путь до изображения от корня сайта) */
             image?: string | null;
-            /** object(name => value) og - объект с данными Open Graph */
+            /** @var ?array{string: string} Объект с данными Open Graph */
             og?: unknown[] | null;
-            /** Массив тегов */
-            c?: unknown[] | null;
-            /** Список тегов */
+            /** @var ?string[] Список тегов */
             tags?: unknown[] | null;
             /** Не индексировать страницу */
             noindex?: boolean;
@@ -58,7 +56,7 @@ export interface components {
             /** Ограничение доступа
              *
              *     Доступно всем, если не заполнено */
-            required_posts_any?: import('../../Types/Pages/RequiredPosts.ts').components['schemas']['Content_2.Types.Pages.RequiredPosts'] | null;
+            required_posts_any?: import('../../../Admin_2/Types/Staff/Posts.ts').components['schemas']['Admin_2.Types.Staff.Posts'] | null;
             filters?: import('../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['filters'];
             id?: import('../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['id'];
         };

@@ -1,0 +1,20 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/System_2.Types.Properties.Property.Type",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "System_2.Types.Properties.Property.Type": {
+                "type": "string",
+                "enum": [
+                    "varchar",
+                    "text"
+                ],
+                "title": "Поле хранения параметра"
+            }
+        }
+    }
+}

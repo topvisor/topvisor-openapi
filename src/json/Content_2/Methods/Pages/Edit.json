@@ -106,17 +106,12 @@
                         "type": "string"
                     },
                     "og": {
-                        "title": "object(name => value) og - объект с данными Open Graph",
-                        "nullable": true,
-                        "type": "array"
-                    },
-                    "c": {
-                        "title": "Массив тегов",
+                        "title": "@var ?array{string: string} Объект с данными Open Graph",
                         "nullable": true,
                         "type": "array"
                     },
                     "tags": {
-                        "title": "Список тегов",
+                        "title": "@var ?string[] Список тегов",
                         "nullable": true,
                         "type": "array"
                     },
@@ -144,7 +139,7 @@
                         "nullable": true,
                         "allOf": [
                             {
-                                "$ref": "../../../Content_2/Types/Pages/RequiredPosts.json#/components/schemas/Content_2.Types.Pages.RequiredPosts"
+                                "$ref": "../../../Admin_2/Types/Staff/Posts.json#/components/schemas/Admin_2.Types.Staff.Posts"
                             }
                         ]
                     },
