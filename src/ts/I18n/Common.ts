@@ -655,7 +655,7 @@ export interface components {
             /** @constant */
             readonly Russia: "Russia";
             /** @constant */
-            readonly The_United_Kingdom: "The United Kingdom";
+            readonly United_Kingdom: "United Kingdom";
             /** @constant */
             readonly Ukraine: "Ukraine";
             /** @constant */

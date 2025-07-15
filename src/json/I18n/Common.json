@@ -1292,8 +1292,8 @@
                         "const": "Russia",
                         "readOnly": true
                     },
-                    "The_United_Kingdom": {
-                        "const": "The United Kingdom",
+                    "United_Kingdom": {
+                        "const": "United Kingdom",
                         "readOnly": true
                     },
                     "Ukraine": {
@@ -2262,7 +2262,7 @@
                     "StPetersburg",
                     "Almaty",
                     "Russia",
-                    "The_United_Kingdom",
+                    "United_Kingdom",
                     "Ukraine",
                     "Kazakhstan",
                     "Belarus",
