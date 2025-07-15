@@ -31303,7 +31303,6 @@ components:
         value:
           title: Значение параметра
           nullable: true
-          type: string
         type:
           default: varchar
           allOf:

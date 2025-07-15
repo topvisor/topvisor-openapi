@@ -14,7 +14,7 @@ export interface components {
             /** Имя параметра */
             name: string;
             /** Значение параметра */
-            value?: string | null;
+            value?: unknown;
             /** @default varchar */
             type: import('../../../Types/Properties/Property/Type.ts').components['schemas']['System_2.Types.Properties.Property.Type'];
             /** Кодировать ли данные в base64 */
