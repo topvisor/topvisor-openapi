@@ -78,7 +78,38 @@ export interface components {
             page?: import('../../../TV/API/Params/PageTrait.ts').components['schemas']['TV.API.Params.PageTrait']['page'];
             fetch_style?: import('../../../TV/API/Params/FetchStyleTrait.ts').components['schemas']['TV.API.Params.FetchStyleTrait']['fetch_style'];
         };
-        "Snapshots_2.Methods.Competitors.Get.Exec": unknown[];
+        "Snapshots_2.Methods.Competitors.Get.Exec": {
+            competitors: {
+                domain: string;
+                protocol: string;
+                summariesData: {
+                    [key: string]: {
+                        countUrls: number;
+                        avg?: number;
+                        median?: number;
+                        tops?: {
+                            "\"1_10\"": number;
+                            "\"11_20\""?: number;
+                            "\"11_30\""?: number;
+                            "\"11_50\""?: number;
+                            "\"31_50\"": number;
+                            "\"51_100\"": number;
+                            all: number;
+                            absent: number;
+                        };
+                        visibility?: number;
+                        volumes_no_collected?: "0" | "1" | "2";
+                        urls?: string[];
+                    };
+                };
+                url?: string;
+            }[];
+            dates: string[];
+            depthPositions: number;
+            countKeywords: number;
+            volumes_no_collected?: "0" | "1" | "2";
+            existsDates?: string[];
+        };
     };
     responses: never;
     parameters: never;

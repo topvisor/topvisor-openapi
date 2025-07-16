@@ -47,7 +47,7 @@ export interface components {
              */
             count_dates: number;
             /** Получение данных по всем запросам (недокументируемый параметр, используется в экспорте) */
-            output?: string | null;
+            output?: import('../../Types/History/Export/Output.ts').components['schemas']['Snapshots_2.Types.History.Export.Output'] | null;
             /** Только запросы, присутствующие в первой проверке указанного периода
              *
              *     - 2 - только добавленные запросы за период, работает не корректно из-за ограничения JOIN CH */
@@ -65,7 +65,38 @@ export interface components {
             page?: import('../../../TV/API/Params/PageTrait.ts').components['schemas']['TV.API.Params.PageTrait']['page'];
             fetch_style?: import('../../../TV/API/Params/FetchStyleTrait.ts').components['schemas']['TV.API.Params.FetchStyleTrait']['fetch_style'];
         };
-        "Snapshots_2.Methods.History.Get.Exec": unknown[] | null;
+        "Snapshots_2.Methods.History.Get.Exec": (unknown[] | null | {
+            competitors: {
+                domain: string;
+                protocol: string;
+                summariesData: {
+                    [key: string]: {
+                        countUrls: number;
+                        avg?: number;
+                        median?: number;
+                        tops?: {
+                            "\"1_10\"": number;
+                            "\"11_20\""?: number;
+                            "\"11_30\""?: number;
+                            "\"11_50\""?: number;
+                            "\"31_50\"": number;
+                            "\"51_100\"": number;
+                            all: number;
+                            absent: number;
+                        };
+                        visibility?: number;
+                        volumes_no_collected?: "0" | "1" | "2";
+                        urls?: string[];
+                    };
+                };
+                url?: string;
+            }[];
+            dates: string[];
+            depthPositions: number;
+            countKeywords: number;
+            volumes_no_collected?: "0" | "1" | "2";
+            existsDates?: string[];
+        }) | null;
     };
     responses: never;
     parameters: never;

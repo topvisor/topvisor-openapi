@@ -30412,7 +30412,106 @@ components:
 
         Метод базируется на объекте keywords (доступны только фильтры)
     Snapshots_2.Methods.Competitors.Get.Exec:
-      type: array
+      type: object
+      properties:
+        competitors:
+          type: array
+          items:
+            type: object
+            properties:
+              domain:
+                type: string
+              protocol:
+                type: string
+              summariesData:
+                type: object
+                additionalProperties:
+                  type: object
+                  properties:
+                    countUrls:
+                      type: integer
+                    avg:
+                      type: number
+                    median:
+                      type: number
+                    tops:
+                      type: object
+                      properties:
+                        '"1_10"':
+                          type: integer
+                        '"11_20"':
+                          type: integer
+                        '"11_30"':
+                          type: integer
+                        '"11_50"':
+                          type: integer
+                        '"31_50"':
+                          type: integer
+                        '"51_100"':
+                          type: integer
+                        all:
+                          type: integer
+                        absent:
+                          type: integer
+                      required:
+                        - '"1_10"'
+                        - '"31_50"'
+                        - '"51_100"'
+                        - all
+                        - absent
+                    visibility:
+                      type: number
+                    volumes_no_collected:
+                      anyOf:
+                        - type: integer
+                          enum:
+                            - '0'
+                        - type: integer
+                          enum:
+                            - '1'
+                        - type: integer
+                          enum:
+                            - '2'
+                    urls:
+                      type: array
+                      items:
+                        type: string
+                  required:
+                    - countUrls
+              url:
+                type: string
+            required:
+              - domain
+              - protocol
+              - summariesData
+        dates:
+          type: array
+          items:
+            type: string
+        depthPositions:
+          type: integer
+        countKeywords:
+          type: integer
+        volumes_no_collected:
+          anyOf:
+            - type: integer
+              enum:
+                - '0'
+            - type: integer
+              enum:
+                - '1'
+            - type: integer
+              enum:
+                - '2'
+        existsDates:
+          type: array
+          items:
+            type: string
+      required:
+        - competitors
+        - dates
+        - depthPositions
+        - countKeywords
     System_2.Types.Tpl.Lang:
       type: string
       enum:
@@ -31139,6 +31238,13 @@ components:
 
         Не менять `protected`, проверка проводится при генерации схем в `TV\API\Objects\ClassAPIMethodInfo`
       nullable: true
+    Snapshots_2.Types.History.Export.Output:
+      type: string
+      enum:
+        - csv
+        - csvOld
+        - xlsx
+      title: Тип экспортируемого файла
     Snapshots_2.Methods.History.Get:
       type: object
       properties:
@@ -31207,7 +31313,8 @@ components:
         output:
           title: Получение данных по всем запросам (недокументируемый параметр, используется в экспорте)
           nullable: true
-          type: string
+          allOf:
+            - $ref: '#/components/schemas/Snapshots_2.Types.History.Export.Output'
         only_exists_first_date:
           title: |-
             Только запросы, присутствующие в первой проверке указанного периода
@@ -31245,6 +31352,108 @@ components:
         Метод базируется на объекте keywords (доступны только фильтры)
     Snapshots_2.Methods.History.Get.Exec:
       nullable: true
+      anyOf:
+        - type: 'null'
+        - type: object
+          properties:
+            competitors:
+              type: array
+              items:
+                type: object
+                properties:
+                  domain:
+                    type: string
+                  protocol:
+                    type: string
+                  summariesData:
+                    type: object
+                    additionalProperties:
+                      type: object
+                      properties:
+                        countUrls:
+                          type: integer
+                        avg:
+                          type: number
+                        median:
+                          type: number
+                        tops:
+                          type: object
+                          properties:
+                            '"1_10"':
+                              type: integer
+                            '"11_20"':
+                              type: integer
+                            '"11_30"':
+                              type: integer
+                            '"11_50"':
+                              type: integer
+                            '"31_50"':
+                              type: integer
+                            '"51_100"':
+                              type: integer
+                            all:
+                              type: integer
+                            absent:
+                              type: integer
+                          required:
+                            - '"1_10"'
+                            - '"31_50"'
+                            - '"51_100"'
+                            - all
+                            - absent
+                        visibility:
+                          type: number
+                        volumes_no_collected:
+                          anyOf:
+                            - type: integer
+                              enum:
+                                - '0'
+                            - type: integer
+                              enum:
+                                - '1'
+                            - type: integer
+                              enum:
+                                - '2'
+                        urls:
+                          type: array
+                          items:
+                            type: string
+                      required:
+                        - countUrls
+                  url:
+                    type: string
+                required:
+                  - domain
+                  - protocol
+                  - summariesData
+            dates:
+              type: array
+              items:
+                type: string
+            depthPositions:
+              type: integer
+            countKeywords:
+              type: integer
+            volumes_no_collected:
+              anyOf:
+                - type: integer
+                  enum:
+                    - '0'
+                - type: integer
+                  enum:
+                    - '1'
+                - type: integer
+                  enum:
+                    - '2'
+            existsDates:
+              type: array
+              items:
+                type: string
+          required:
+            - competitors
+            - dates
+            - depthPositions
+            - countKeywords
       type: array
     System_2.Methods.Games.Record.Edit:
       type: object
