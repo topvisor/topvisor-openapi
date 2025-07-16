@@ -41,7 +41,6 @@
                 "title": "Получение списка конкурентов"
             },
             "Projects_2.Methods.Competitors.Get.Exec": {
-                "nullable": true,
                 "type": "array"
             }
         }

@@ -21214,7 +21214,6 @@ components:
         - project_id
       title: Получение списка конкурентов
     Projects_2.Methods.Competitors.Get.Exec:
-      nullable: true
       type: array
     Projects_2.Methods.Folders.Add:
       type: object
@@ -27028,16 +27027,16 @@ components:
     Payments_2.Methods.Tariff.SetNext.Edit.Exec:
       nullable: true
       type: integer
+    debug:
+      title: |-
+        Включить режим отладки
+
+        Учитывается только при запуске с правами администратора
+      description: '@internal'
+      type: boolean
     Positions_2.Methods.Checker.Go.Edit:
       type: object
       properties:
-        debug:
-          title: |-
-            Запуск в режиме отладки
-
-            Только для админов
-          description: '@private'
-          type: boolean
         regions_indexes:
           title: Проверка с учетом фильтра по регионам
           nullable: true
@@ -27077,10 +27076,20 @@ components:
             - не допускается совместное использование с `folders_ids`, `groups_ids` и `do_snapshots`
           nullable: true
           type: integer
+        mod_engine:
+          title: |-
+            Движок проверки позиций
+
+            Учитывается только при запуске с правами администратора
+          description: '@internal'
+          nullable: true
+          type: string
         filters:
           $ref: '#/components/schemas/filters'
         id:
           $ref: '#/components/schemas/id'
+        debug:
+          $ref: '#/components/schemas/debug'
       required:
         - filters
       title: Отправка проектов на проверку позиций

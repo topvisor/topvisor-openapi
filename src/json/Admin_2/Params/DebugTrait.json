@@ -1,0 +1,25 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Admin_2.Params.DebugTrait",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Admin_2.Params.DebugTrait": {
+                "type": "object",
+                "properties": {
+                    "debug": {
+                        "title": "Включить режим отладки\n\nУчитывается только при запуске с правами администратора",
+                        "description": "@internal",
+                        "type": "boolean"
+                    }
+                },
+                "required": [
+                    "debug"
+                ]
+            }
+        }
+    }
+}

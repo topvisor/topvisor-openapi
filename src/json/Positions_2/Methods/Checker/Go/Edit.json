@@ -10,11 +10,6 @@
             "Positions_2.Methods.Checker.Go.Edit": {
                 "type": "object",
                 "properties": {
-                    "debug": {
-                        "title": "Запуск в режиме отладки\n\nТолько для админов",
-                        "description": "@private",
-                        "type": "boolean"
-                    },
                     "regions_indexes": {
                         "title": "Проверка с учетом фильтра по регионам",
                         "nullable": true,
@@ -57,11 +52,20 @@
                         "nullable": true,
                         "type": "integer"
                     },
+                    "mod_engine": {
+                        "title": "Движок проверки позиций\n\nУчитывается только при запуске с правами администратора",
+                        "description": "@internal",
+                        "nullable": true,
+                        "type": "string"
+                    },
                     "filters": {
                         "$ref": "../../../../TV/API/Params/FiltersTrait.json#/components/schemas/TV.API.Params.FiltersTrait/properties/filters"
                     },
                     "id": {
                         "$ref": "../../../../TV/API/Params/FiltersTrait.json#/components/schemas/TV.API.Params.FiltersTrait/properties/id"
+                    },
+                    "debug": {
+                        "$ref": "../../../../Admin_2/Params/DebugTrait.json#/components/schemas/Admin_2.Params.DebugTrait/properties/debug"
                     }
                 },
                 "required": [

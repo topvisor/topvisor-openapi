@@ -1,0 +1,31 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Robot_2.Types.Keys.Api",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Robot_2.Types.Keys.Api": {
+                "type": "string",
+                "enum": [
+                    "NONE",
+                    "YANDEX",
+                    "YANDEX_COM",
+                    "YANDEX_TR",
+                    "BRIGHTDATA",
+                    "XML_RIVER",
+                    "XML_STOCK",
+                    "NETNUT",
+                    "PROXYMADATA",
+                    "YANDEX_ASYNC",
+                    "XML_STOCK_IE",
+                    "XML_STOCK_YANDEX_ASYNC",
+                    "XML_RIVER_YANDEX_ASYNC"
+                ],
+                "title": "Движок, который прикрепляется к ключу\n\nТолько ключи с прикрепленным движком могут выполнять задачи такого движка"
+            }
+        }
+    }
+}

@@ -23,7 +23,7 @@ export interface components {
             /** Включить ли в результат основной проект */
             include_project?: boolean | null;
         };
-        "Projects_2.Methods.Competitors.Get.Exec": unknown[] | null;
+        "Projects_2.Methods.Competitors.Get.Exec": unknown[];
     };
     responses: never;
     parameters: never;
