@@ -6467,7 +6467,7 @@ paths:
       operationId: GetUsers2Auth
       tags:
         - Users_2
-      summary: Проверка на авторизацию пользователя
+      summary: Информация о сессии авторизации пользователя
       requestBody:
         content:
           application/json:
@@ -25074,10 +25074,18 @@ components:
           nullable: true
           type: string
       required: []
-      title: Проверка на авторизацию пользователя
+      title: Информация о сессии авторизации пользователя
     Users_2.Methods.Auth.Get.Exec:
       nullable: true
-      type: array
+      type: object
+      properties:
+        id:
+          type: integer
+        auth:
+          type: string
+      required:
+        - id
+        - auth
     Users_2.Methods.Logout.Get:
       type: object
       properties: {}

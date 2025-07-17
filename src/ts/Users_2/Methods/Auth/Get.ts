@@ -7,7 +7,7 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Проверка на авторизацию пользователя */
+        /** Информация о сессии авторизации пользователя */
         "Users_2.Methods.Auth.Get": {
             /** Логин авторизации
              *
@@ -16,7 +16,10 @@ export interface components {
             /** Пароль авторизации */
             authorisation_pass?: string | null;
         };
-        "Users_2.Methods.Auth.Get.Exec": unknown[] | null;
+        "Users_2.Methods.Auth.Get.Exec": {
+            id: number;
+            auth: string;
+        } | null;
     };
     responses: never;
     parameters: never;
