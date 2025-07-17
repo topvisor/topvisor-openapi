@@ -1,0 +1,57 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/System_2.Methods.Api.Test.Get",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "System_2.Methods.Api.Test.Get": {
+                "type": "object",
+                "properties": {
+                    "v": {
+                        "allOf": [
+                            {
+                                "$ref": "../../../../System_2/Types/Api/V.json#/components/schemas/System_2.Types.Api.V"
+                            }
+                        ]
+                    },
+                    "oper": {
+                        "allOf": [
+                            {
+                                "$ref": "../../../../System_2/Types/Operation.json#/components/schemas/System_2.Types.Operation"
+                            }
+                        ]
+                    },
+                    "format": {
+                        "title": "Формат ответа",
+                        "type": "string"
+                    },
+                    "service": {
+                        "title": "Вызываемый сервис",
+                        "type": "string"
+                    },
+                    "method": {
+                        "title": "Метод сервиса",
+                        "type": "string"
+                    },
+                    "requestBody": {
+                        "title": "Параметры вызываемого запроса",
+                        "type": "array"
+                    }
+                },
+                "required": [
+                    "v",
+                    "oper",
+                    "format",
+                    "service"
+                ],
+                "title": "Вызов тестового API запроса"
+            },
+            "System_2.Methods.Api.Test.Get.Exec": {
+                "nullable": true
+            }
+        }
+    }
+}

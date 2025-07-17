@@ -14323,6 +14323,37 @@ paths:
             model:
               schema:
                 type: 'null'
+  /get/system_2/api/test/:
+    post:
+      operationId: GetSystem2ApiTest
+      tags:
+        - System_2
+      summary: Вызов тестового API запроса
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/System_2.Methods.Api.Test.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            $ref: '#/components/schemas/System_2.Methods.Api.Test.Get.Exec'
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
 components:
   securitySchemes:
     authToken:
@@ -31544,3 +31575,45 @@ components:
     System_2.Methods.Properties.Property.Edit.Exec:
       nullable: true
       type: integer
+    System_2.Types.Api.V:
+      type: string
+      enum:
+        - v2
+      title: Версия API
+    System_2.Types.Operation:
+      type: string
+      enum:
+        - get
+        - add
+        - edit
+        - del
+      title: Метод вызова функции
+    System_2.Methods.Api.Test.Get:
+      type: object
+      properties:
+        v:
+          allOf:
+            - $ref: '#/components/schemas/System_2.Types.Api.V'
+        oper:
+          allOf:
+            - $ref: '#/components/schemas/System_2.Types.Operation'
+        format:
+          title: Формат ответа
+          type: string
+        service:
+          title: Вызываемый сервис
+          type: string
+        method:
+          title: Метод сервиса
+          type: string
+        requestBody:
+          title: Параметры вызываемого запроса
+          type: array
+      required:
+        - v
+        - oper
+        - format
+        - service
+      title: Вызов тестового API запроса
+    System_2.Methods.Api.Test.Get.Exec:
+      nullable: true
