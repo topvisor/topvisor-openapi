@@ -1,0 +1,178 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Snapshots_2.Methods.History.Export.Get",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Snapshots_2.Methods.History.Export.Get": {
+                "type": "object",
+                "properties": {
+                    "returnFilenameFromFolder": {
+                        "title": "Вернуть ли URI-идентификатор или имя файла, из директории.",
+                        "description": "@internal",
+                        "nullable": true,
+                        "type": "string"
+                    },
+                    "properties": {
+                        "title": "Дополнительные параметры экспорта\n\nВозможные поля:\n- showSummary\n- compact\n- splitGroups",
+                        "type": "array"
+                    },
+                    "tpl": {
+                        "title": "Шаблон (только для pdf)",
+                        "nullable": true,
+                        "allOf": [
+                            {
+                                "$ref": "../../../../Snapshots_2/Types/History/Export/Tpl.json#/components/schemas/Snapshots_2.Types.History.Export.Tpl"
+                            }
+                        ]
+                    },
+                    "project_id": {
+                        "title": "Id проекта",
+                        "type": "integer"
+                    },
+                    "region_index": {
+                        "title": "Индекс региона\n\nЕсли не задан нужно задать параметры searcher_key, region_key, region_lang, region_device",
+                        "nullable": true,
+                        "type": "integer"
+                    },
+                    "region_key": {
+                        "title": "Ключ региона",
+                        "nullable": true,
+                        "type": "integer"
+                    },
+                    "region_lang": {
+                        "title": "Язык региона",
+                        "nullable": true,
+                        "type": "string"
+                    },
+                    "region_device": {
+                        "nullable": true,
+                        "allOf": [
+                            {
+                                "$ref": "../../../../Positions_2/Types/RegionDevice.json#/components/schemas/Positions_2.Types.RegionDevice"
+                            }
+                        ]
+                    },
+                    "show_exists_dates": {
+                        "title": "Добавить ли в результат даты, в которых были проверки (existsDates)",
+                        "type": "boolean"
+                    },
+                    "show_ams": {
+                        "title": "Добавить ли в результат показатель шторма между выбранными проверками",
+                        "type": "boolean"
+                    },
+                    "positions_fields": {
+                        "nullable": true,
+                        "allOf": [
+                            {
+                                "$ref": "../../../../Snapshots_2/Types/History/PositionsFields.json#/components/schemas/Snapshots_2.Types.History.PositionsFields"
+                            }
+                        ]
+                    },
+                    "searcher_key": {
+                        "nullable": true,
+                        "allOf": [
+                            {
+                                "$ref": "../../../../Positions_2/Types/SearcherKey.json#/components/schemas/Positions_2.Types.SearcherKey"
+                            }
+                        ]
+                    },
+                    "dates": {
+                        "title": "Произвольные даты без использования диапазона\n\nЕсли не задан нужно задать параметры date1, date2, type_range, count_dates",
+                        "nullable": true,
+                        "allOf": [
+                            {
+                                "$ref": "../../../../TV/API/Types/DateArray.json#/components/schemas/TV.API.Types.DateArray"
+                            }
+                        ]
+                    },
+                    "date1": {
+                        "title": "Дата начала диапазона",
+                        "nullable": true,
+                        "allOf": [
+                            {
+                                "$ref": "../../../../TV/API/Types/Date.json#/components/schemas/TV.API.Types.Date"
+                            }
+                        ]
+                    },
+                    "date2": {
+                        "title": "Дата окончания диапазона",
+                        "nullable": true,
+                        "allOf": [
+                            {
+                                "$ref": "../../../../TV/API/Types/Date.json#/components/schemas/TV.API.Types.Date"
+                            }
+                        ]
+                    },
+                    "type_range": {
+                        "title": "Тип диапазона дат",
+                        "default": 3,
+                        "type": "integer"
+                    },
+                    "count_dates": {
+                        "title": "Количество дней в диапазоне",
+                        "default": 31,
+                        "type": "integer"
+                    },
+                    "output": {
+                        "title": "Получение данных по всем запросам (недокументируемый параметр, используется в экспорте)",
+                        "nullable": true,
+                        "allOf": [
+                            {
+                                "$ref": "../../../../Snapshots_2/Types/History/Export/Output.json#/components/schemas/Snapshots_2.Types.History.Export.Output"
+                            }
+                        ]
+                    },
+                    "only_exists_first_date": {
+                        "title": "Только запросы, присутствующие в первой проверке указанного периода\n\n- 2 - только добавленные запросы за период, работает не корректно из-за ограничения JOIN CH",
+                        "nullable": true,
+                        "type": "integer"
+                    },
+                    "group_folder_id_depth": {
+                        "title": "При фильтрации по ID папок также искать в подпапках",
+                        "type": "boolean"
+                    },
+                    "show_trash": {
+                        "title": "Искать в корзине",
+                        "type": "boolean"
+                    },
+                    "fields": {
+                        "$ref": "../../../../TV/API/Params/FieldsTrait.json#/components/schemas/TV.API.Params.FieldsTrait/properties/fields"
+                    },
+                    "orders": {
+                        "$ref": "../../../../TV/API/Params/OrdersTrait.json#/components/schemas/TV.API.Params.OrdersTrait/properties/orders"
+                    },
+                    "filters": {
+                        "$ref": "../../../../TV/API/Params/FiltersTrait.json#/components/schemas/TV.API.Params.FiltersTrait/properties/filters"
+                    },
+                    "id": {
+                        "$ref": "../../../../TV/API/Params/FiltersTrait.json#/components/schemas/TV.API.Params.FiltersTrait/properties/id"
+                    },
+                    "limit": {
+                        "$ref": "../../../../TV/API/Params/LimitTrait.json#/components/schemas/TV.API.Params.LimitTrait/properties/limit"
+                    },
+                    "offset": {
+                        "$ref": "../../../../TV/API/Params/OffsetTrait.json#/components/schemas/TV.API.Params.OffsetTrait/properties/offset"
+                    },
+                    "page": {
+                        "$ref": "../../../../TV/API/Params/PageTrait.json#/components/schemas/TV.API.Params.PageTrait/properties/page"
+                    },
+                    "fetch_style": {
+                        "$ref": "../../../../TV/API/Params/FetchStyleTrait.json#/components/schemas/TV.API.Params.FetchStyleTrait/properties/fetch_style"
+                    }
+                },
+                "required": [
+                    "project_id"
+                ],
+                "title": "Экспорт истории снимков выдачи"
+            },
+            "Snapshots_2.Methods.History.Export.Get.Exec": {
+                "nullable": true,
+                "type": "string"
+            }
+        }
+    }
+}

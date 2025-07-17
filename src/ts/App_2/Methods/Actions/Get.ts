@@ -23,6 +23,7 @@ export interface components {
              * @default acceptAction
              */
             type_action: string;
+            redirect?: string;
         };
         "App_2.Methods.Actions.Get.Exec": unknown;
     };

@@ -1,0 +1,37 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/System_2.Methods.Cloud.Add",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "System_2.Methods.Cloud.Add": {
+                "type": "object",
+                "properties": {
+                    "directory": {
+                        "title": "Директория",
+                        "type": "string"
+                    },
+                    "basename": {
+                        "title": "Имя файла с расширением",
+                        "type": "string"
+                    },
+                    "file": {
+                        "title": "Данные файла, если не указано - считается, что создается папка",
+                        "type": "string"
+                    }
+                },
+                "required": [
+                    "directory",
+                    "basename"
+                ],
+                "title": "Создание директории или загрузка файла\n\nВернет имя директории в случае создания директории или bool при загрузке файла"
+            },
+            "System_2.Methods.Cloud.Add.Exec": {
+                "nullable": true
+            }
+        }
+    }
+}

@@ -1,0 +1,24 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Users_2.Methods.Xml.Get",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Users_2.Methods.Xml.Get": {
+                "type": "object",
+                "properties": {},
+                "required": [],
+                "title": "Нужно для обратной совместимости с приложениями",
+                "description": "@deprecated",
+                "deprecated": true
+            },
+            "Users_2.Methods.Xml.Get.Exec": {
+                "nullable": true,
+                "type": "array"
+            }
+        }
+    }
+}

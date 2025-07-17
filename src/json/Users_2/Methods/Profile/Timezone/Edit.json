@@ -1,0 +1,29 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Users_2.Methods.Profile.Timezone.Edit",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Users_2.Methods.Profile.Timezone.Edit": {
+                "type": "object",
+                "properties": {
+                    "timezone": {
+                        "title": "Новая временная зона\n\nhttps://www.php.net/manual/ru/timezones.php",
+                        "type": "string"
+                    }
+                },
+                "required": [
+                    "timezone"
+                ],
+                "title": "Изменение временной зоны"
+            },
+            "Users_2.Methods.Profile.Timezone.Edit.Exec": {
+                "nullable": true,
+                "type": "integer"
+            }
+        }
+    }
+}

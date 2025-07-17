@@ -23,6 +23,9 @@
                         "nullable": true,
                         "default": "acceptAction",
                         "type": "string"
+                    },
+                    "redirect": {
+                        "type": "string"
                     }
                 },
                 "required": [

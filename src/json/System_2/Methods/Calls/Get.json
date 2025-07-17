@@ -1,0 +1,61 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/System_2.Methods.Calls.Get",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "System_2.Methods.Calls.Get": {
+                "type": "object",
+                "properties": {
+                    "calls": {
+                        "title": "Методы",
+                        "allOf": [
+                            {
+                                "$ref": "../../../System_2/Types/Calls/Calls.json#/components/schemas/System_2.Types.Calls.Calls"
+                            }
+                        ]
+                    },
+                    "getFormat": {
+                        "default": "apiV2",
+                        "allOf": [
+                            {
+                                "$ref": "../../../System_2/Types/Calls/Format.json#/components/schemas/System_2.Types.Calls.Format"
+                            }
+                        ]
+                    },
+                    "rows": {
+                        "title": "Количество элементов на странице",
+                        "type": "integer"
+                    },
+                    "sidx": {
+                        "title": "Имя поля по которому будет вестись сортировка",
+                        "type": "string"
+                    },
+                    "sord": {
+                        "title": "Направление сортировки",
+                        "type": "string"
+                    },
+                    "limit": {
+                        "$ref": "../../../TV/API/Params/LimitTrait.json#/components/schemas/TV.API.Params.LimitTrait/properties/limit"
+                    },
+                    "offset": {
+                        "$ref": "../../../TV/API/Params/OffsetTrait.json#/components/schemas/TV.API.Params.OffsetTrait/properties/offset"
+                    },
+                    "page": {
+                        "$ref": "../../../TV/API/Params/PageTrait.json#/components/schemas/TV.API.Params.PageTrait/properties/page"
+                    }
+                },
+                "required": [
+                    "calls"
+                ],
+                "title": "Вызов нескольких методов в одном вызове"
+            },
+            "System_2.Methods.Calls.Get.Exec": {
+                "type": "array"
+            }
+        }
+    }
+}

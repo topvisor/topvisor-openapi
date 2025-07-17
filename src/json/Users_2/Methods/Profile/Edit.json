@@ -1,0 +1,56 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Users_2.Methods.Profile.Edit",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Users_2.Methods.Profile.Edit": {
+                "type": "object",
+                "properties": {
+                    "phone": {
+                        "title": "Телефон",
+                        "nullable": true,
+                        "type": "string"
+                    },
+                    "name": {
+                        "title": "ФИО",
+                        "nullable": true,
+                        "type": "string"
+                    },
+                    "dateformat": {
+                        "title": "Формат дат, отображаемых на сайте и в скачиваемых отчетах\n\nhttps://www.php.net/manual/ru/datetime.format.php",
+                        "nullable": true,
+                        "type": "string"
+                    },
+                    "positions_reverse_dates": {
+                        "title": "Позиции, просмотр отчета: использовать обратный порядок дат",
+                        "nullable": true,
+                        "type": "boolean"
+                    },
+                    "positions_save_regions": {
+                        "title": "Позиции, просмотр отчета: запоминать последние выбранные регионы",
+                        "nullable": true,
+                        "type": "boolean"
+                    },
+                    "positions_top_segments": {
+                        "nullable": true,
+                        "allOf": [
+                            {
+                                "$ref": "../../../Users_2/Types/Profile/PositionsTopSegment.json#/components/schemas/Users_2.Types.Profile.PositionsTopSegment"
+                            }
+                        ]
+                    }
+                },
+                "required": [],
+                "title": "Изменение параметров активного пользователя"
+            },
+            "Users_2.Methods.Profile.Edit.Exec": {
+                "nullable": true,
+                "type": "integer"
+            }
+        }
+    }
+}

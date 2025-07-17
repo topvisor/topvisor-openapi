@@ -1,0 +1,23 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Users_2.Types.Ranks.Id",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Users_2.Types.Ranks.Id": {
+                "type": "integer",
+                "enum": [
+                    3,
+                    27,
+                    28,
+                    44,
+                    56
+                ],
+                "title": "Id достижения"
+            }
+        }
+    }
+}

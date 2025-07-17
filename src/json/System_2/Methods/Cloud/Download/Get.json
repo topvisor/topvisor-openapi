@@ -1,0 +1,33 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/System_2.Methods.Cloud.Download.Get",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "System_2.Methods.Cloud.Download.Get": {
+                "type": "object",
+                "properties": {
+                    "directory": {
+                        "title": "Директория",
+                        "type": "string"
+                    },
+                    "basename": {
+                        "title": "Имя файла с расширением",
+                        "type": "string"
+                    }
+                },
+                "required": [
+                    "directory",
+                    "basename"
+                ],
+                "title": "Скачивание файла из директории"
+            },
+            "System_2.Methods.Cloud.Download.Get.Exec": {
+                "type": "never"
+            }
+        }
+    }
+}

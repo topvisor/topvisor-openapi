@@ -101,7 +101,11 @@
                     "output": {
                         "title": "Получение данных по всем запросам (недокументируемый параметр, используется в экспорте)",
                         "nullable": true,
-                        "type": "string"
+                        "allOf": [
+                            {
+                                "$ref": "../../../Snapshots_2/Types/History/Export/Output.json#/components/schemas/Snapshots_2.Types.History.Export.Output"
+                            }
+                        ]
                     },
                     "only_exists_first_date": {
                         "title": "Только запросы, присутствующие в первой проверке указанного периода\n\n- 2 - только добавленные запросы за период, работает не корректно из-за ограничения JOIN CH",

@@ -1,0 +1,38 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/System_2.Methods.Cloud.Rename.Edit",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "System_2.Methods.Cloud.Rename.Edit": {
+                "type": "object",
+                "properties": {
+                    "directory": {
+                        "title": "Директория",
+                        "type": "string"
+                    },
+                    "basename": {
+                        "title": "Старое имя файла вместе с расширением",
+                        "type": "string"
+                    },
+                    "new_basename": {
+                        "title": "Новое имя файла с расширением",
+                        "type": "string"
+                    }
+                },
+                "required": [
+                    "directory",
+                    "basename",
+                    "new_basename"
+                ],
+                "title": "Переименовывание файла"
+            },
+            "System_2.Methods.Cloud.Rename.Edit.Exec": {
+                "type": "string"
+            }
+        }
+    }
+}

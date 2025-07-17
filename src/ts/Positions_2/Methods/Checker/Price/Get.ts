@@ -9,13 +9,6 @@ export interface components {
     schemas: {
         /** Информация о стоимости запуска проверки позиций по проектам */
         "Positions_2.Methods.Checker.Price.Get": {
-            /**
-             * Запуск в режиме отладки
-             *
-             *     Только для админов
-             * @description @private
-             */
-            debug?: boolean;
             /** Проверка с учетом фильтра по регионам */
             regions_indexes?: import('../../../../TV/API/Types/IntArray.ts').components['schemas']['TV.API.Types.IntArray'] | null;
             /** Проверка с учетом фильтра по папкам */
@@ -41,8 +34,16 @@ export interface components {
              *     - требует указания одного `regions_indexes`
              *     - не допускается совместное использование с `folders_ids`, `groups_ids` и `do_snapshots` */
             keyword_id?: number | null;
+            /**
+             * Движок проверки позиций
+             *
+             *     Учитывается только при запуске с правами администратора
+             * @description @internal
+             */
+            mod_engine?: string | null;
             filters: import('../../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['filters'];
             id?: import('../../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['id'];
+            debug?: import('../../../../Admin_2/Params/DebugTrait.ts').components['schemas']['Admin_2.Params.DebugTrait']['debug'];
         };
         "Positions_2.Methods.Checker.Price.Get.Exec": Record<string, never>;
     };

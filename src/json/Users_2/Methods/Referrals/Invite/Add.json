@@ -1,0 +1,32 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Users_2.Methods.Referrals.Invite.Add",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Users_2.Methods.Referrals.Invite.Add": {
+                "type": "object",
+                "properties": {
+                    "email": {
+                        "title": "Email, который был зарегистрирован",
+                        "allOf": [
+                            {
+                                "$ref": "../../../../TV/API/Types/Email.json#/components/schemas/TV.API.Types.Email"
+                            }
+                        ]
+                    }
+                },
+                "required": [
+                    "email"
+                ],
+                "title": "Регистрация по приглашению (по реферальной программе)"
+            },
+            "Users_2.Methods.Referrals.Invite.Add.Exec": {
+                "type": "integer"
+            }
+        }
+    }
+}

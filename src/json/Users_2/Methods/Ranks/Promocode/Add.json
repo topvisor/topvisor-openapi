@@ -1,0 +1,47 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Users_2.Methods.Ranks.Promocode.Add",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Users_2.Methods.Ranks.Promocode.Add": {
+                "type": "object",
+                "properties": {
+                    "promocode": {
+                        "title": "Промокод",
+                        "type": "string"
+                    },
+                    "email": {
+                        "title": "Email, к которому необходимо привязать достижение (для неавторизованных пользователей)",
+                        "nullable": true,
+                        "allOf": [
+                            {
+                                "$ref": "../../../../TV/API/Types/Email.json#/components/schemas/TV.API.Types.Email"
+                            }
+                        ]
+                    },
+                    "halloween_rank": {
+                        "title": "Достижения на хэлуине",
+                        "nullable": true,
+                        "type": "string"
+                    },
+                    "redirect": {
+                        "title": "Редирект после сообщения",
+                        "type": "string"
+                    }
+                },
+                "required": [
+                    "promocode"
+                ],
+                "title": "Установка достижения по промокоду"
+            },
+            "Users_2.Methods.Ranks.Promocode.Add.Exec": {
+                "nullable": true,
+                "type": "string"
+            }
+        }
+    }
+}

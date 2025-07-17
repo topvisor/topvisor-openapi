@@ -1,0 +1,22 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/System_2.Types.Cloud.File.Type",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "System_2.Types.Cloud.File.Type": {
+                "type": "string",
+                "enum": [
+                    "pdir",
+                    "cdir",
+                    "dir",
+                    "file"
+                ],
+                "title": "Тип файла, получаемого из облака Selectel"
+            }
+        }
+    }
+}

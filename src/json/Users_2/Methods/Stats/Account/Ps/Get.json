@@ -1,0 +1,44 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Users_2.Methods.Stats.Account.Ps.Get",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Users_2.Methods.Stats.Account.Ps.Get": {
+                "type": "object",
+                "properties": {
+                    "project_id": {
+                        "title": "ID проекта",
+                        "type": "integer"
+                    },
+                    "period": {
+                        "title": "Какую часть от периода показать",
+                        "type": "integer"
+                    },
+                    "colorsPsBySearcherKey": {
+                        "default": {
+                            "0": "#FFD633",
+                            "1": "#4285F4",
+                            "4": "#CC181E",
+                            "5": "#0C8484",
+                            "20": "#FFD633",
+                            "21": "#FFD633"
+                        },
+                        "type": "array"
+                    }
+                },
+                "required": [
+                    "period"
+                ],
+                "title": "Получение статистики по ПС"
+            },
+            "Users_2.Methods.Stats.Account.Ps.Get.Exec": {
+                "nullable": true,
+                "type": "array"
+            }
+        }
+    }
+}

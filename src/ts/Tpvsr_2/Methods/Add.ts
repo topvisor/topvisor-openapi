@@ -21,8 +21,6 @@ export interface components {
             fields?: unknown[] | null;
         };
         "Tpvsr_2.Methods.Add.Exec": unknown;
-        /** Тэги для установки */
-        "Tpvsr_2.Types.Tags": components["schemas"]["Tpvsr_2.Types.Tags"][];
     };
     responses: never;
     parameters: never;

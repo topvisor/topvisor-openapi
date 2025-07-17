@@ -1,0 +1,46 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Users_2.Methods.Referrals.ChartCountsByDate.Get",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Users_2.Methods.Referrals.ChartCountsByDate.Get": {
+                "type": "object",
+                "properties": {
+                    "date1": {
+                        "title": "От какой даты получить",
+                        "allOf": [
+                            {
+                                "$ref": "../../../../TV/API/Types/Date.json#/components/schemas/TV.API.Types.Date"
+                            }
+                        ]
+                    },
+                    "date2": {
+                        "title": "До какой даты получить",
+                        "allOf": [
+                            {
+                                "$ref": "../../../../TV/API/Types/Date.json#/components/schemas/TV.API.Types.Date"
+                            }
+                        ]
+                    }
+                },
+                "required": [
+                    "date1",
+                    "date2"
+                ],
+                "title": "Получение количество переходов и регистраций по реферальной ссылке (для графика)"
+            },
+            "Users_2.Methods.Referrals.ChartCountsByDate.Get.Exec": {
+                "nullable": true,
+                "allOf": [
+                    {
+                        "$ref": "../../../../stdClass.json#/components/schemas/stdClass"
+                    }
+                ]
+            }
+        }
+    }
+}

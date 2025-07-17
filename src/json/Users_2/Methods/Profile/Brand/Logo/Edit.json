@@ -1,0 +1,27 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Users_2.Methods.Profile.Brand.Logo.Edit",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Users_2.Methods.Profile.Brand.Logo.Edit": {
+                "type": "object",
+                "properties": {
+                    "file": {
+                        "title": "Ссылка на новый логотип",
+                        "nullable": true,
+                        "type": "string"
+                    }
+                },
+                "required": [],
+                "title": "Изменение логотипа бренда"
+            },
+            "Users_2.Methods.Profile.Brand.Logo.Edit.Exec": {
+                "type": "boolean"
+            }
+        }
+    }
+}

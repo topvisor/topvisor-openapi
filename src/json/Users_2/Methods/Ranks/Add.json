@@ -1,0 +1,33 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Users_2.Methods.Ranks.Add",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Users_2.Methods.Ranks.Add": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "title": "ID достижения",
+                        "allOf": [
+                            {
+                                "$ref": "../../../Users_2/Types/Ranks/Id.json#/components/schemas/Users_2.Types.Ranks.Id"
+                            }
+                        ]
+                    }
+                },
+                "required": [
+                    "id"
+                ],
+                "title": "Активация достижения"
+            },
+            "Users_2.Methods.Ranks.Add.Exec": {
+                "nullable": true,
+                "type": "integer"
+            }
+        }
+    }
+}

@@ -13,6 +13,15 @@
                     "link": {
                         "title": "Ссылка",
                         "type": "string"
+                    },
+                    "curl": {
+                        "title": "Экземпляр curl для выполнения запроса",
+                        "nullable": true,
+                        "allOf": [
+                            {
+                                "$ref": "../../../Topvisor/Curl/Curl.json#/components/schemas/Topvisor.Curl.Curl"
+                            }
+                        ]
                     }
                 },
                 "required": [

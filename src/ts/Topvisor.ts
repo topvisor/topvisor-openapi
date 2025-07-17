@@ -4,7 +4,7 @@
  */
 
 export interface paths {  
-    /** Фиксация события test */
+    /** Фиксация события */
     "/add/analytics_2/": {
         parameters: {
             query?: never;
@@ -615,6 +615,23 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
+    /** Получение данных пользователя */
+    "/get/users_2/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["GetUsers2"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
     /** Оставление отзыва */
     "/add/votes_2/": {
         parameters: {
@@ -1063,7 +1080,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Получение данных банка по БИК */
+    /** Получение данных банка по БИК или Swift */
     "/get/bank_2/bank/": {
         parameters: {
             query?: never;
@@ -1524,7 +1541,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };
-    "/abstractpage/content_2/pages/": {
+    "/abstracteditpage/content_2/pages/": {
         parameters: {
             query?: never;
             header?: never;
@@ -1533,7 +1550,7 @@ export interface paths {
         };
         get?: never;
         put?: never;
-        post: operations["AbstractpageContent2Pages"];
+        post: operations["AbstracteditpageContent2Pages"];
         delete?: never;
         options?: never;
         head?: never;
@@ -2964,6 +2981,197 @@ export interface paths {
         head?: never;
         patch?: never;
         trace?: never;
+    };
+    "/abstractregular/snapshots_2/competitors/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["AbstractregularSnapshots2Competitors"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Получение списка конкурентов
+     *
+     *     Метод базируется на объекте keywords (доступны только фильтры) */
+    "/get/snapshots_2/competitors/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["GetSnapshots2Competitors"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Выделение сайтов (доменов) как неважные */
+    "/edit/snapshots_2/hiddenDomains/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["EditSnapshots2HiddenDomains"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Получение списка сайтов (доменов), которые выделены как неважные */
+    "/get/snapshots_2/hiddenDomains/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["GetSnapshots2HiddenDomains"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/abstractregular/snapshots_2/history/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["AbstractregularSnapshots2History"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Получение истории снимков выдачи
+     *
+     *     Метод базируется на объекте keywords (доступны только фильтры) */
+    "/get/snapshots_2/history/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["GetSnapshots2History"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Вызов нескольких методов в одном вызове */
+    "/get/system_2/calls/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["GetSystem2Calls"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Создание директории или загрузка файла
+     *
+     *     Вернет имя директории в случае создания директории или bool при загрузке файла */
+    "/add/system_2/cloud/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["AddSystem2Cloud"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Удаление файлов (файл будет перенесен в директорию /cloud/recycled) */
+    "/del/system_2/cloud/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["DelSystem2Cloud"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Получение директорий и файлов из облака */
+    "/get/system_2/cloud/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["GetSystem2Cloud"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Получение кешируемого HTML-шаблона */
+    "/get/system_2/tpl/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["GetSystem2Tpl"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
     };  
     /** Получение данных доступных столбцов для выборки */
     "/get/templates_2/availableFieldsData/": {
@@ -3296,6 +3504,181 @@ export interface paths {
         get?: never;
         put?: never;
         post: operations["EditUrls2Tags"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Проверка на авторизацию пользователя */
+    "/get/users_2/auth/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["GetUsers2Auth"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Выход из аккаунта */
+    "/get/users_2/logout/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["GetUsers2Logout"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
+    "/abstractregular/users_2/profile/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["AbstractregularUsers2Profile"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Изменение параметров активного пользователя */
+    "/edit/users_2/profile/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["EditUsers2Profile"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Активация достижения */
+    "/add/users_2/ranks/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["AddUsers2Ranks"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Получение достижений пользователя */
+    "/get/users_2/ranks/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["GetUsers2Ranks"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Получение списка рефералов */
+    "/get/users_2/referrals/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["GetUsers2Referrals"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Создание заявки на регистрацию пользователя */
+    "/add/users_2/reg/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["AddUsers2Reg"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Получение списка телеграм аккаунтов
+     *
+     *     При указании project_id получает список телеграм аккаунтов по владельцу проекта */
+    "/get/users_2/telegramAccounts/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["GetUsers2TelegramAccounts"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /**
+     * Нужно для обратной совместимости с приложениями
+     * @deprecated
+     * @description @deprecated
+     */
+    "/get/users_2/xml/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["GetUsers2Xml"];
         delete?: never;
         options?: never;
         head?: never;
@@ -3718,7 +4101,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Получение мероприятий */
+    /** Получение метрик из сервиса Аналитика */
     "/get/admin_2/analytics/events/": {
         parameters: {
             query?: never;
@@ -3935,7 +4318,8 @@ export interface paths {
         head?: never;
         patch?: never;
         trace?: never;
-    };
+    };  
+    /** Получение возможных позиций сотрудников */
     "/get/admin_2/staff/posts/": {
         parameters: {
             query?: never;
@@ -3945,7 +4329,6 @@ export interface paths {
         };
         get?: never;
         put?: never;
-        /** Получение возможных posts */
         post: operations["GetAdmin2StaffPosts"];
         delete?: never;
         options?: never;
@@ -5856,6 +6239,322 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
+    /** Получение данных сводки конкурентов для графика */
+    "/get/snapshots_2/competitors/chart/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["GetSnapshots2CompetitorsChart"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Экспорт списка конкурентов */
+    "/get/snapshots_2/competitors/export/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["GetSnapshots2CompetitorsExport"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Экспорт истории снимков выдачи */
+    "/get/snapshots_2/history/export/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["GetSnapshots2HistoryExport"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Создание гостевой ссылки на просмотр снимков выдачи */
+    "/get/snapshots_2/history/links/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["GetSnapshots2HistoryLinks"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Генерация нового API ключа */
+    "/edit/system_2/api/genKey/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["EditSystem2ApiGenKey"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Вызов тестового API запроса */
+    "/get/system_2/api/test/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["GetSystem2ApiTest"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Скачивание файла из директории */
+    "/get/system_2/cloud/download/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["GetSystem2CloudDownload"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Переименовывание файла */
+    "/edit/system_2/cloud/rename/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["EditSystem2CloudRename"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Фиксация события по ссылке на изображение
+     *
+     *     см. Analytics_2\Mods\Analytics::genEventImgLink() */
+    "/add/system_2/common/analytics/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["AddSystem2CommonAnalytics"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Получение доступных запросы для построения отчета с кэшированием на 30 дней */
+    "/get/system_2/common/competitorsQueries/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["GetSystem2CommonCompetitorsQueries"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Загрузка настроек OpenAPI */
+    "/get/system_2/common/openAPI/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["GetSystem2CommonOpenAPI"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Получение превью страницы
+     *
+     *     Вернет изображение в формате image/png
+     *
+     *     Ссылка для теста https://topvisor.dev:17860/ajax/get.php?module=system_2&func=common_pagePreview&url={$shortUrl} */
+    "/get/system_2/common/pagePreview/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["GetSystem2CommonPagePreview"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Получение регионов для поисковиков с последующим кэшированием для Get запросов */
+    "/get/system_2/common/regions/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["GetSystem2CommonRegions"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Получение снимка сайта
+     *
+     *     Вернет изображение в формате image/png */
+    "/get/system_2/common/webScreensFree/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["GetSystem2CommonWebScreensFree"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Изменение рекорда в тетрисе */
+    "/edit/system_2/games/record/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["EditSystem2GamesRecord"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Получение рекорда тетриса */
+    "/get/system_2/games/record/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["GetSystem2GamesRecord"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Логирование ошибки js и отправка в канал slack */
+    "/add/system_2/log/error/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["AddSystem2LogError"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Редактирование параметра
+     *
+     *     Не хранить в параметрах конфиденциальную информацию */
+    "/edit/system_2/properties/property/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["EditSystem2PropertiesProperty"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
     /** Удаление ответа в тикете, только для админов */
     "/del/tickets_2/admin/message/": {
         parameters: {
@@ -6141,6 +6840,244 @@ export interface paths {
         get?: never;
         put?: never;
         post: operations["AddUsers2JoinEmail"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Удаление аватарки */
+    "/del/users_2/profile/avatar/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["DelUsers2ProfileAvatar"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Изменение автара */
+    "/edit/users_2/profile/avatar/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["EditUsers2ProfileAvatar"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Получение пути на аватар пользователя от корня сайта */
+    "/get/users_2/profile/avatar/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["GetUsers2ProfileAvatar"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Изменение валюты пользователя */
+    "/edit/users_2/profile/currency/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["EditUsers2ProfileCurrency"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Отправка сообщения на смену Email */
+    "/edit/users_2/profile/email/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["EditUsers2ProfileEmail"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Изменение языка */
+    "/edit/users_2/profile/lang/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["EditUsers2ProfileLang"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Изменение пароля */
+    "/edit/users_2/profile/pass/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["EditUsers2ProfilePass"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Отправка заявки на сброс пароля (подтверждается методом Users_2\Mods::acceptEmail()) */
+    "/edit/users_2/profile/retrievePass/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["EditUsers2ProfileRetrievePass"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Изменение темы сайта */
+    "/edit/users_2/profile/theme/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["EditUsers2ProfileTheme"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Изменение временной зоны */
+    "/edit/users_2/profile/timezone/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["EditUsers2ProfileTimezone"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Установка достижения по промокоду */
+    "/add/users_2/ranks/promocode/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["AddUsers2RanksPromocode"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Получение количество переходов и регистраций по реферальной ссылке (для графика) */
+    "/get/users_2/referrals/chartCountsByDate/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["GetUsers2ReferralsChartCountsByDate"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Регистрация по приглашению (по реферальной программе) */
+    "/add/users_2/referrals/invite/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["AddUsers2ReferralsInvite"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Получение общего числа проектов / запросов (автоматических / ручных) */
+    "/get/users_2/stats/account/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["GetUsers2StatsAccount"];
         delete?: never;
         options?: never;
         head?: never;
@@ -7455,6 +8392,63 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
+    /** Экспорт сводки с графика
+     *
+     *     Описание параметров смотреть в get/snapshots_2/competitors */
+    "/get/snapshots_2/competitors/chart/export/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["GetSnapshots2CompetitorsChartExport"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Экспорт в хранилище
+     *
+     *     Производит редирект на файл в кранилище */
+    "/get/snapshots_2/competitors/export/toRepository/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["GetSnapshots2CompetitorsExportToRepository"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Экспорт в хранилище
+     *
+     *     Производит редирект на файл в кранилище */
+    "/get/snapshots_2/history/export/toRepository/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["GetSnapshots2HistoryExportToRepository"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
     /** Изменение сортировки шаблонов */
     "/edit/tickets_2/admin/templates/sort/": {
         parameters: {
@@ -7517,6 +8511,125 @@ export interface paths {
         get?: never;
         put?: never;
         post: operations["GetTpvsr2StatExportReferrers"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Удаление логотипа компании */
+    "/del/users_2/profile/brand/logo/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["DelUsers2ProfileBrandLogo"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Изменение логотипа бренда */
+    "/edit/users_2/profile/brand/logo/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["EditUsers2ProfileBrandLogo"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Установка ранга Twitter */
+    "/add/users_2/ranks/promocode/twitter/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["AddUsers2RanksPromocodeTwitter"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Получение списка месяцев */
+    "/get/users_2/stats/account/listMonth/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["GetUsers2StatsAccountListMonth"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Получение списка проектов для статистики аккаунта */
+    "/get/users_2/stats/account/listProjects/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["GetUsers2StatsAccountListProjects"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Получение списка используемых ПС в проекте */
+    "/get/users_2/stats/account/listPs/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["GetUsers2StatsAccountListPs"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Получение статистики по ПС */
+    "/get/users_2/stats/account/ps/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["GetUsers2StatsAccountPs"];
         delete?: never;
         options?: never;
         head?: never;
@@ -7592,14 +8705,32 @@ export interface paths {
         head?: never;
         patch?: never;
         trace?: never;
+    };  
+    /** Генерация тестового файла
+     *
+     *     Вернет случайный набор символов в формате application/json; charset=utf-8
+     *
+     *     URL для теста: https://topvisor.com/ajax/get.php?module=system_2&func=common_tests_speed_file&size=$size&token=$token */
+    "/get/system_2/common/tests/speed/file/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["GetSystem2CommonTestsSpeedFile"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
     };
 }
 export type webhooks = Record<string, never>;
 export interface components {
-    schemas: {
-        /** Тэги для установки */
-        "Tpvsr_2.Types.Tags": components["schemas"]["Tpvsr_2.Types.Tags"][];
-    };
+    schemas: never;
     responses: never;
     parameters: never;
     requestBodies: never;
@@ -8511,6 +9642,32 @@ export interface operations {
                         result: import('./Urls_2/Methods/Get.ts').components['schemas']['Urls_2.Methods.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: import('./Models/Urls.ts').components['schemas']['Models.Urls'];
+                };
+            };
+        };
+    };
+    GetUsers2: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Users_2/Methods/Get.ts').components['schemas']['Users_2.Methods.Get'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./Users_2/Methods/Get.ts').components['schemas']['Users_2.Methods.Get.Exec'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: null;
                 };
             };
         };
@@ -9887,7 +11044,7 @@ export interface operations {
             };
         };
     };
-    AbstractpageContent2Pages: {
+    AbstracteditpageContent2Pages: {
         parameters: {
             query?: never;
             header?: never;
@@ -9896,7 +11053,7 @@ export interface operations {
         };
         requestBody: {
             content: {
-                "application/json": import('./Content_2/Methods/Pages/AbstractPage.ts').components['schemas']['Content_2.Methods.Pages.AbstractPage'];
+                "application/json": import('./Content_2/Methods/Pages/AbstractEditPage.ts').components['schemas']['Content_2.Methods.Pages.AbstractEditPage'];
             };
         };
         responses: {
@@ -9906,7 +11063,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: import('./Content_2/Methods/Pages/AbstractPage.ts').components['schemas']['Content_2.Methods.Pages.AbstractPage.Exec'];
+                        result: import('./Content_2/Methods/Pages/AbstractEditPage.ts').components['schemas']['Content_2.Methods.Pages.AbstractEditPage.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: import('./Models/Pages.ts').components['schemas']['Models.Pages'];
                 };
@@ -12042,6 +13199,292 @@ export interface operations {
             };
         };
     };
+    AbstractregularSnapshots2Competitors: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Snapshots_2/Methods/Competitors/AbstractRegular.ts').components['schemas']['Snapshots_2.Methods.Competitors.AbstractRegular'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./Snapshots_2/Methods/Competitors/AbstractRegular.ts').components['schemas']['Snapshots_2.Methods.Competitors.AbstractRegular.Exec'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: null;
+                };
+            };
+        };
+    };
+    GetSnapshots2Competitors: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Snapshots_2/Methods/Competitors/Get.ts').components['schemas']['Snapshots_2.Methods.Competitors.Get'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./Snapshots_2/Methods/Competitors/Get.ts').components['schemas']['Snapshots_2.Methods.Competitors.Get.Exec'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: null;
+                };
+            };
+        };
+    };
+    EditSnapshots2HiddenDomains: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Snapshots_2/Methods/HiddenDomains/Edit.ts').components['schemas']['Snapshots_2.Methods.HiddenDomains.Edit'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./Snapshots_2/Methods/HiddenDomains/Edit.ts').components['schemas']['Snapshots_2.Methods.HiddenDomains.Edit.Exec'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: null;
+                };
+            };
+        };
+    };
+    GetSnapshots2HiddenDomains: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Snapshots_2/Methods/HiddenDomains/Get.ts').components['schemas']['Snapshots_2.Methods.HiddenDomains.Get'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./Snapshots_2/Methods/HiddenDomains/Get.ts').components['schemas']['Snapshots_2.Methods.HiddenDomains.Get.Exec'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: null;
+                };
+            };
+        };
+    };
+    AbstractregularSnapshots2History: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Snapshots_2/Methods/History/AbstractRegular.ts').components['schemas']['Snapshots_2.Methods.History.AbstractRegular'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./Snapshots_2/Methods/History/AbstractRegular.ts').components['schemas']['Snapshots_2.Methods.History.AbstractRegular.Exec'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: null;
+                };
+            };
+        };
+    };
+    GetSnapshots2History: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Snapshots_2/Methods/History/Get.ts').components['schemas']['Snapshots_2.Methods.History.Get'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./Snapshots_2/Methods/History/Get.ts').components['schemas']['Snapshots_2.Methods.History.Get.Exec'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: null;
+                };
+            };
+        };
+    };
+    GetSystem2Calls: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./System_2/Methods/Calls/Get.ts').components['schemas']['System_2.Methods.Calls.Get'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./System_2/Methods/Calls/Get.ts').components['schemas']['System_2.Methods.Calls.Get.Exec'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: null;
+                };
+            };
+        };
+    };
+    AddSystem2Cloud: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./System_2/Methods/Cloud/Add.ts').components['schemas']['System_2.Methods.Cloud.Add'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./System_2/Methods/Cloud/Add.ts').components['schemas']['System_2.Methods.Cloud.Add.Exec'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: null;
+                };
+            };
+        };
+    };
+    DelSystem2Cloud: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./System_2/Methods/Cloud/Del.ts').components['schemas']['System_2.Methods.Cloud.Del'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./System_2/Methods/Cloud/Del.ts').components['schemas']['System_2.Methods.Cloud.Del.Exec'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: null;
+                };
+            };
+        };
+    };
+    GetSystem2Cloud: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./System_2/Methods/Cloud/Get.ts').components['schemas']['System_2.Methods.Cloud.Get'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./System_2/Methods/Cloud/Get.ts').components['schemas']['System_2.Methods.Cloud.Get.Exec'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: null;
+                };
+            };
+        };
+    };
+    GetSystem2Tpl: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./System_2/Methods/Tpl/Get.ts').components['schemas']['System_2.Methods.Tpl.Get'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./System_2/Methods/Tpl/Get.ts').components['schemas']['System_2.Methods.Tpl.Get.Exec'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: null;
+                };
+            };
+        };
+    };
     GetTemplates2AvailableFieldsData: {
         parameters: {
             query?: never;
@@ -12529,6 +13972,266 @@ export interface operations {
                         result: import('./Urls_2/Methods/Tags/Edit.ts').components['schemas']['Urls_2.Methods.Tags.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: import('./Models/Urls.ts').components['schemas']['Models.Urls'];
+                };
+            };
+        };
+    };
+    GetUsers2Auth: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Users_2/Methods/Auth/Get.ts').components['schemas']['Users_2.Methods.Auth.Get'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./Users_2/Methods/Auth/Get.ts').components['schemas']['Users_2.Methods.Auth.Get.Exec'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: null;
+                };
+            };
+        };
+    };
+    GetUsers2Logout: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Users_2/Methods/Logout/Get.ts').components['schemas']['Users_2.Methods.Logout.Get'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./Users_2/Methods/Logout/Get.ts').components['schemas']['Users_2.Methods.Logout.Get.Exec'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: null;
+                };
+            };
+        };
+    };
+    AbstractregularUsers2Profile: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Users_2/Methods/Profile/AbstractRegular.ts').components['schemas']['Users_2.Methods.Profile.AbstractRegular'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./Users_2/Methods/Profile/AbstractRegular.ts').components['schemas']['Users_2.Methods.Profile.AbstractRegular.Exec'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: null;
+                };
+            };
+        };
+    };
+    EditUsers2Profile: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Users_2/Methods/Profile/Edit.ts').components['schemas']['Users_2.Methods.Profile.Edit'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./Users_2/Methods/Profile/Edit.ts').components['schemas']['Users_2.Methods.Profile.Edit.Exec'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: null;
+                };
+            };
+        };
+    };
+    AddUsers2Ranks: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Users_2/Methods/Ranks/Add.ts').components['schemas']['Users_2.Methods.Ranks.Add'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./Users_2/Methods/Ranks/Add.ts').components['schemas']['Users_2.Methods.Ranks.Add.Exec'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: null;
+                };
+            };
+        };
+    };
+    GetUsers2Ranks: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Users_2/Methods/Ranks/Get.ts').components['schemas']['Users_2.Methods.Ranks.Get'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./Users_2/Methods/Ranks/Get.ts').components['schemas']['Users_2.Methods.Ranks.Get.Exec'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: import('./Models/Users/Ranks.ts').components['schemas']['Models.Users.Ranks'];
+                };
+            };
+        };
+    };
+    GetUsers2Referrals: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Users_2/Methods/Referrals/Get.ts').components['schemas']['Users_2.Methods.Referrals.Get'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./Users_2/Methods/Referrals/Get.ts').components['schemas']['Users_2.Methods.Referrals.Get.Exec'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: import('./Models/Users/Referrals.ts').components['schemas']['Models.Users.Referrals'];
+                };
+            };
+        };
+    };
+    AddUsers2Reg: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Users_2/Methods/Reg/Add.ts').components['schemas']['Users_2.Methods.Reg.Add'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./Users_2/Methods/Reg/Add.ts').components['schemas']['Users_2.Methods.Reg.Add.Exec'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: null;
+                };
+            };
+        };
+    };
+    GetUsers2TelegramAccounts: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Users_2/Methods/TelegramAccounts/Get.ts').components['schemas']['Users_2.Methods.TelegramAccounts.Get'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./Users_2/Methods/TelegramAccounts/Get.ts').components['schemas']['Users_2.Methods.TelegramAccounts.Get.Exec'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: null;
+                };
+            };
+        };
+    };
+    GetUsers2Xml: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Users_2/Methods/Xml/Get.ts').components['schemas']['Users_2.Methods.Xml.Get'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./Users_2/Methods/Xml/Get.ts').components['schemas']['Users_2.Methods.Xml.Get.Exec'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: null;
                 };
             };
         };
@@ -16335,6 +18038,459 @@ export interface operations {
             };
         };
     };
+    GetSnapshots2CompetitorsChart: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Snapshots_2/Methods/Competitors/Chart/Get.ts').components['schemas']['Snapshots_2.Methods.Competitors.Chart.Get'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./Snapshots_2/Methods/Competitors/Chart/Get.ts').components['schemas']['Snapshots_2.Methods.Competitors.Chart.Get.Exec'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: null;
+                };
+            };
+        };
+    };
+    GetSnapshots2CompetitorsExport: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Snapshots_2/Methods/Competitors/Export/Get.ts').components['schemas']['Snapshots_2.Methods.Competitors.Export.Get'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./Snapshots_2/Methods/Competitors/Export/Get.ts').components['schemas']['Snapshots_2.Methods.Competitors.Export.Get.Exec'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: null;
+                };
+            };
+        };
+    };
+    GetSnapshots2HistoryExport: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Snapshots_2/Methods/History/Export/Get.ts').components['schemas']['Snapshots_2.Methods.History.Export.Get'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./Snapshots_2/Methods/History/Export/Get.ts').components['schemas']['Snapshots_2.Methods.History.Export.Get.Exec'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: null;
+                };
+            };
+        };
+    };
+    GetSnapshots2HistoryLinks: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Snapshots_2/Methods/History/Links/Get.ts').components['schemas']['Snapshots_2.Methods.History.Links.Get'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./Snapshots_2/Methods/History/Links/Get.ts').components['schemas']['Snapshots_2.Methods.History.Links.Get.Exec'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: null;
+                };
+            };
+        };
+    };
+    EditSystem2ApiGenKey: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./System_2/Methods/Api/GenKey/Edit.ts').components['schemas']['System_2.Methods.Api.GenKey.Edit'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./System_2/Methods/Api/GenKey/Edit.ts').components['schemas']['System_2.Methods.Api.GenKey.Edit.Exec'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: null;
+                };
+            };
+        };
+    };
+    GetSystem2ApiTest: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./System_2/Methods/Api/Test/Get.ts').components['schemas']['System_2.Methods.Api.Test.Get'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./System_2/Methods/Api/Test/Get.ts').components['schemas']['System_2.Methods.Api.Test.Get.Exec'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: null;
+                };
+            };
+        };
+    };
+    GetSystem2CloudDownload: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./System_2/Methods/Cloud/Download/Get.ts').components['schemas']['System_2.Methods.Cloud.Download.Get'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/octet-stream": string;
+                };
+            };
+        };
+    };
+    EditSystem2CloudRename: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./System_2/Methods/Cloud/Rename/Edit.ts').components['schemas']['System_2.Methods.Cloud.Rename.Edit'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./System_2/Methods/Cloud/Rename/Edit.ts').components['schemas']['System_2.Methods.Cloud.Rename.Edit.Exec'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: null;
+                };
+            };
+        };
+    };
+    AddSystem2CommonAnalytics: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./System_2/Methods/Common/Analytics/Add.ts').components['schemas']['System_2.Methods.Common.Analytics.Add'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/octet-stream": string;
+                };
+            };
+        };
+    };
+    GetSystem2CommonCompetitorsQueries: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./System_2/Methods/Common/CompetitorsQueries/Get.ts').components['schemas']['System_2.Methods.Common.CompetitorsQueries.Get'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./System_2/Methods/Common/CompetitorsQueries/Get.ts').components['schemas']['System_2.Methods.Common.CompetitorsQueries.Get.Exec'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: null;
+                };
+            };
+        };
+    };
+    GetSystem2CommonOpenAPI: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./System_2/Methods/Common/OpenAPI/Get.ts').components['schemas']['System_2.Methods.Common.OpenAPI.Get'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/octet-stream": string;
+                };
+            };
+        };
+    };
+    GetSystem2CommonPagePreview: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./System_2/Methods/Common/PagePreview/Get.ts').components['schemas']['System_2.Methods.Common.PagePreview.Get'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/octet-stream": string;
+                };
+            };
+        };
+    };
+    GetSystem2CommonRegions: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./System_2/Methods/Common/Regions/Get.ts').components['schemas']['System_2.Methods.Common.Regions.Get'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./System_2/Methods/Common/Regions/Get.ts').components['schemas']['System_2.Methods.Common.Regions.Get.Exec'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: null;
+                };
+            };
+        };
+    };
+    GetSystem2CommonWebScreensFree: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./System_2/Methods/Common/WebScreensFree/Get.ts').components['schemas']['System_2.Methods.Common.WebScreensFree.Get'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/octet-stream": string;
+                };
+            };
+        };
+    };
+    EditSystem2GamesRecord: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./System_2/Methods/Games/Record/Edit.ts').components['schemas']['System_2.Methods.Games.Record.Edit'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./System_2/Methods/Games/Record/Edit.ts').components['schemas']['System_2.Methods.Games.Record.Edit.Exec'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: null;
+                };
+            };
+        };
+    };
+    GetSystem2GamesRecord: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./System_2/Methods/Games/Record/Get.ts').components['schemas']['System_2.Methods.Games.Record.Get'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./System_2/Methods/Games/Record/Get.ts').components['schemas']['System_2.Methods.Games.Record.Get.Exec'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: null;
+                };
+            };
+        };
+    };
+    AddSystem2LogError: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./System_2/Methods/Log/Error/Add.ts').components['schemas']['System_2.Methods.Log.Error.Add'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./System_2/Methods/Log/Error/Add.ts').components['schemas']['System_2.Methods.Log.Error.Add.Exec'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: null;
+                };
+            };
+        };
+    };
+    EditSystem2PropertiesProperty: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./System_2/Methods/Properties/Property/Edit.ts').components['schemas']['System_2.Methods.Properties.Property.Edit'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./System_2/Methods/Properties/Property/Edit.ts').components['schemas']['System_2.Methods.Properties.Property.Edit.Exec'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: null;
+                };
+            };
+        };
+    };
     DelTickets2AdminMessage: {
         parameters: {
             query?: never;
@@ -16771,6 +18927,370 @@ export interface operations {
                 content: {
                     "application/json": ({
                         result: import('./Users_2/Methods/Join/Email/Add.ts').components['schemas']['Users_2.Methods.Join.Email.Add.Exec'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: null;
+                };
+            };
+        };
+    };
+    DelUsers2ProfileAvatar: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Users_2/Methods/Profile/Avatar/Del.ts').components['schemas']['Users_2.Methods.Profile.Avatar.Del'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./Users_2/Methods/Profile/Avatar/Del.ts').components['schemas']['Users_2.Methods.Profile.Avatar.Del.Exec'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: null;
+                };
+            };
+        };
+    };
+    EditUsers2ProfileAvatar: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Users_2/Methods/Profile/Avatar/Edit.ts').components['schemas']['Users_2.Methods.Profile.Avatar.Edit'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./Users_2/Methods/Profile/Avatar/Edit.ts').components['schemas']['Users_2.Methods.Profile.Avatar.Edit.Exec'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: null;
+                };
+            };
+        };
+    };
+    GetUsers2ProfileAvatar: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Users_2/Methods/Profile/Avatar/Get.ts').components['schemas']['Users_2.Methods.Profile.Avatar.Get'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./Users_2/Methods/Profile/Avatar/Get.ts').components['schemas']['Users_2.Methods.Profile.Avatar.Get.Exec'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: null;
+                };
+            };
+        };
+    };
+    EditUsers2ProfileCurrency: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Users_2/Methods/Profile/Currency/Edit.ts').components['schemas']['Users_2.Methods.Profile.Currency.Edit'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./Users_2/Methods/Profile/Currency/Edit.ts').components['schemas']['Users_2.Methods.Profile.Currency.Edit.Exec'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: null;
+                };
+            };
+        };
+    };
+    EditUsers2ProfileEmail: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Users_2/Methods/Profile/Email/Edit.ts').components['schemas']['Users_2.Methods.Profile.Email.Edit'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./Users_2/Methods/Profile/Email/Edit.ts').components['schemas']['Users_2.Methods.Profile.Email.Edit.Exec'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: null;
+                };
+            };
+        };
+    };
+    EditUsers2ProfileLang: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Users_2/Methods/Profile/Lang/Edit.ts').components['schemas']['Users_2.Methods.Profile.Lang.Edit'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./Users_2/Methods/Profile/Lang/Edit.ts').components['schemas']['Users_2.Methods.Profile.Lang.Edit.Exec'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: null;
+                };
+            };
+        };
+    };
+    EditUsers2ProfilePass: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Users_2/Methods/Profile/Pass/Edit.ts').components['schemas']['Users_2.Methods.Profile.Pass.Edit'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./Users_2/Methods/Profile/Pass/Edit.ts').components['schemas']['Users_2.Methods.Profile.Pass.Edit.Exec'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: null;
+                };
+            };
+        };
+    };
+    EditUsers2ProfileRetrievePass: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Users_2/Methods/Profile/RetrievePass/Edit.ts').components['schemas']['Users_2.Methods.Profile.RetrievePass.Edit'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./Users_2/Methods/Profile/RetrievePass/Edit.ts').components['schemas']['Users_2.Methods.Profile.RetrievePass.Edit.Exec'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: null;
+                };
+            };
+        };
+    };
+    EditUsers2ProfileTheme: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Users_2/Methods/Profile/Theme/Edit.ts').components['schemas']['Users_2.Methods.Profile.Theme.Edit'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./Users_2/Methods/Profile/Theme/Edit.ts').components['schemas']['Users_2.Methods.Profile.Theme.Edit.Exec'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: null;
+                };
+            };
+        };
+    };
+    EditUsers2ProfileTimezone: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Users_2/Methods/Profile/Timezone/Edit.ts').components['schemas']['Users_2.Methods.Profile.Timezone.Edit'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./Users_2/Methods/Profile/Timezone/Edit.ts').components['schemas']['Users_2.Methods.Profile.Timezone.Edit.Exec'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: null;
+                };
+            };
+        };
+    };
+    AddUsers2RanksPromocode: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Users_2/Methods/Ranks/Promocode/Add.ts').components['schemas']['Users_2.Methods.Ranks.Promocode.Add'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./Users_2/Methods/Ranks/Promocode/Add.ts').components['schemas']['Users_2.Methods.Ranks.Promocode.Add.Exec'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: null;
+                };
+            };
+        };
+    };
+    GetUsers2ReferralsChartCountsByDate: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Users_2/Methods/Referrals/ChartCountsByDate/Get.ts').components['schemas']['Users_2.Methods.Referrals.ChartCountsByDate.Get'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./Users_2/Methods/Referrals/ChartCountsByDate/Get.ts').components['schemas']['Users_2.Methods.Referrals.ChartCountsByDate.Get.Exec'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: null;
+                };
+            };
+        };
+    };
+    AddUsers2ReferralsInvite: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Users_2/Methods/Referrals/Invite/Add.ts').components['schemas']['Users_2.Methods.Referrals.Invite.Add'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./Users_2/Methods/Referrals/Invite/Add.ts').components['schemas']['Users_2.Methods.Referrals.Invite.Add.Exec'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: null;
+                };
+            };
+        };
+    };
+    GetUsers2StatsAccount: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Users_2/Methods/Stats/Account/Get.ts').components['schemas']['Users_2.Methods.Stats.Account.Get'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./Users_2/Methods/Stats/Account/Get.ts').components['schemas']['Users_2.Methods.Stats.Account.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -18717,6 +21237,75 @@ export interface operations {
             };
         };
     };
+    GetSnapshots2CompetitorsChartExport: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Snapshots_2/Methods/Competitors/Chart/Export/Get.ts').components['schemas']['Snapshots_2.Methods.Competitors.Chart.Export.Get'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/octet-stream": string;
+                };
+            };
+        };
+    };
+    GetSnapshots2CompetitorsExportToRepository: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Snapshots_2/Methods/Competitors/Export/ToRepository/Get.ts').components['schemas']['Snapshots_2.Methods.Competitors.Export.ToRepository.Get'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/octet-stream": string;
+                };
+            };
+        };
+    };
+    GetSnapshots2HistoryExportToRepository: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Snapshots_2/Methods/History/Export/ToRepository/Get.ts').components['schemas']['Snapshots_2.Methods.History.Export.ToRepository.Get'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/octet-stream": string;
+                };
+            };
+        };
+    };
     EditTickets2AdminTemplatesSort: {
         parameters: {
             query?: never;
@@ -18815,6 +21404,188 @@ export interface operations {
                 content: {
                     "application/json": ({
                         result: import('./Tpvsr_2/Methods/Stat/Export/Referrers/Get.ts').components['schemas']['Tpvsr_2.Methods.Stat.Export.Referrers.Get.Exec'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: null;
+                };
+            };
+        };
+    };
+    DelUsers2ProfileBrandLogo: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Users_2/Methods/Profile/Brand/Logo/Del.ts').components['schemas']['Users_2.Methods.Profile.Brand.Logo.Del'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./Users_2/Methods/Profile/Brand/Logo/Del.ts').components['schemas']['Users_2.Methods.Profile.Brand.Logo.Del.Exec'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: null;
+                };
+            };
+        };
+    };
+    EditUsers2ProfileBrandLogo: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Users_2/Methods/Profile/Brand/Logo/Edit.ts').components['schemas']['Users_2.Methods.Profile.Brand.Logo.Edit'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./Users_2/Methods/Profile/Brand/Logo/Edit.ts').components['schemas']['Users_2.Methods.Profile.Brand.Logo.Edit.Exec'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: null;
+                };
+            };
+        };
+    };
+    AddUsers2RanksPromocodeTwitter: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Users_2/Methods/Ranks/Promocode/Twitter/Add.ts').components['schemas']['Users_2.Methods.Ranks.Promocode.Twitter.Add'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./Users_2/Methods/Ranks/Promocode/Twitter/Add.ts').components['schemas']['Users_2.Methods.Ranks.Promocode.Twitter.Add.Exec'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: null;
+                };
+            };
+        };
+    };
+    GetUsers2StatsAccountListMonth: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Users_2/Methods/Stats/Account/ListMonth/Get.ts').components['schemas']['Users_2.Methods.Stats.Account.ListMonth.Get'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./Users_2/Methods/Stats/Account/ListMonth/Get.ts').components['schemas']['Users_2.Methods.Stats.Account.ListMonth.Get.Exec'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: null;
+                };
+            };
+        };
+    };
+    GetUsers2StatsAccountListProjects: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Users_2/Methods/Stats/Account/ListProjects/Get.ts').components['schemas']['Users_2.Methods.Stats.Account.ListProjects.Get'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./Users_2/Methods/Stats/Account/ListProjects/Get.ts').components['schemas']['Users_2.Methods.Stats.Account.ListProjects.Get.Exec'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: null;
+                };
+            };
+        };
+    };
+    GetUsers2StatsAccountListPs: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Users_2/Methods/Stats/Account/ListPs/Get.ts').components['schemas']['Users_2.Methods.Stats.Account.ListPs.Get'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./Users_2/Methods/Stats/Account/ListPs/Get.ts').components['schemas']['Users_2.Methods.Stats.Account.ListPs.Get.Exec'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: null;
+                };
+            };
+        };
+    };
+    GetUsers2StatsAccountPs: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Users_2/Methods/Stats/Account/Ps/Get.ts').components['schemas']['Users_2.Methods.Stats.Account.Ps.Get'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./Users_2/Methods/Stats/Account/Ps/Get.ts').components['schemas']['Users_2.Methods.Stats.Account.Ps.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -18921,6 +21692,29 @@ export interface operations {
                         result: import('./Informer_2/Methods/Push/Safari/WebService/AuthToken/Get.ts').components['schemas']['Informer_2.Methods.Push.Safari.WebService.AuthToken.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
+                };
+            };
+        };
+    };
+    GetSystem2CommonTestsSpeedFile: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./System_2/Methods/Common/Tests/Speed/File/Get.ts').components['schemas']['System_2.Methods.Common.Tests.Speed.File.Get'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/octet-stream": string;
                 };
             };
         };

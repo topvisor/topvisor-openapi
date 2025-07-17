@@ -1,0 +1,32 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Users_2.Methods.Profile.Theme.Edit",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Users_2.Methods.Profile.Theme.Edit": {
+                "type": "object",
+                "properties": {
+                    "theme": {
+                        "allOf": [
+                            {
+                                "$ref": "../../../../Users_2/Types/Profile/Theme.json#/components/schemas/Users_2.Types.Profile.Theme"
+                            }
+                        ]
+                    }
+                },
+                "required": [
+                    "theme"
+                ],
+                "title": "Изменение темы сайта"
+            },
+            "Users_2.Methods.Profile.Theme.Edit.Exec": {
+                "nullable": true,
+                "type": "integer"
+            }
+        }
+    }
+}

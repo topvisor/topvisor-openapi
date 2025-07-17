@@ -1,0 +1,71 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/System_2.Methods.Common.Regions.Get",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "System_2.Methods.Common.Regions.Get": {
+                "type": "object",
+                "properties": {
+                    "searcher_key": {
+                        "allOf": [
+                            {
+                                "$ref": "../../../../Positions_2/Types/SearcherKey.json#/components/schemas/Positions_2.Types.SearcherKey"
+                            }
+                        ]
+                    },
+                    "country_code": {
+                        "title": "Код страны по ISO 3166-1 alpha-2",
+                        "nullable": true,
+                        "type": "string"
+                    },
+                    "term": {
+                        "title": "Поиск по",
+                        "nullable": true,
+                        "type": "string"
+                    },
+                    "search": {
+                        "title": "Поисковая фраза",
+                        "nullable": true,
+                        "type": "string"
+                    },
+                    "only_countries": {
+                        "title": "Искать только страны",
+                        "type": "boolean"
+                    },
+                    "for_volume": {
+                        "title": "#17499 для проверки частоты (исключить RU регионы из Google в связи с санкциями), недокументируемый параметр\n\nТолько для админов",
+                        "description": "@private\n@internal",
+                        "type": "boolean"
+                    },
+                    "region_ids": {
+                        "title": "ID регионов для получения",
+                        "nullable": true,
+                        "allOf": [
+                            {
+                                "$ref": "../../../../TV/API/Types/IntArray.json#/components/schemas/TV.API.Types.IntArray"
+                            }
+                        ]
+                    },
+                    "limit": {
+                        "$ref": "../../../../TV/API/Params/LimitTrait.json#/components/schemas/TV.API.Params.LimitTrait/properties/limit"
+                    },
+                    "offset": {
+                        "$ref": "../../../../TV/API/Params/OffsetTrait.json#/components/schemas/TV.API.Params.OffsetTrait/properties/offset"
+                    }
+                },
+                "required": [
+                    "searcher_key"
+                ],
+                "title": "Получение регионов для поисковиков с последующим кэшированием для Get запросов"
+            },
+            "System_2.Methods.Common.Regions.Get.Exec": {
+                "nullable": true,
+                "type": "array"
+            }
+        }
+    }
+}

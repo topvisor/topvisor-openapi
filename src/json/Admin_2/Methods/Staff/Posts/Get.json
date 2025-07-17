@@ -11,10 +11,14 @@
                 "type": "object",
                 "properties": {},
                 "required": [],
-                "title": "Получение возможных posts"
+                "title": "Получение возможных позиций сотрудников"
             },
             "Admin_2.Methods.Staff.Posts.Get.Exec": {
-                "type": "array"
+                "allOf": [
+                    {
+                        "$ref": "../../../../Admin_2/Types/Staff/Posts.json#/components/schemas/Admin_2.Types.Staff.Posts"
+                    }
+                ]
             }
         }
     }

@@ -1,0 +1,22 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Users_2.Methods.Ranks.Promocode.Twitter.Add",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Users_2.Methods.Ranks.Promocode.Twitter.Add": {
+                "type": "object",
+                "properties": {},
+                "required": [],
+                "title": "Установка ранга Twitter"
+            },
+            "Users_2.Methods.Ranks.Promocode.Twitter.Add.Exec": {
+                "nullable": true,
+                "type": "integer"
+            }
+        }
+    }
+}

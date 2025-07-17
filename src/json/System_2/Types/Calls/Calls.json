@@ -1,0 +1,20 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/System_2.Types.Calls.Calls",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "System_2.Types.Calls.Calls": {
+                "type": "array",
+                "items": {
+                    "$ref": "../../../System_2/Types/Calls/Call.json#/components/schemas/System_2.Types.Calls.Call"
+                },
+                "title": "Массив объектов вызова модуля системы",
+                "description": "@extends AbstractObjectArray<Call>\n@method Call[] getValues()\n@method Call current()\n@method Call offsetGet()"
+            }
+        }
+    }
+}

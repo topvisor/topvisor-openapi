@@ -1,0 +1,20 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/System_2.Types.Cloud.Files",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "System_2.Types.Cloud.Files": {
+                "type": "array",
+                "items": {
+                    "$ref": "../../../System_2/Types/Cloud/File.json#/components/schemas/System_2.Types.Cloud.File"
+                },
+                "title": "Возвращаемые форматы файлов",
+                "description": "@extends API\\Types\\AbstractObjectArray<File>\n@method File[] getValues()\n@method File current()\n@method File offsetGet()\n@see \\TV\\API\\Types\\Qualifier"
+            }
+        }
+    }
+}

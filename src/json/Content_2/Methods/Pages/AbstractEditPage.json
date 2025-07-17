@@ -1,0 +1,155 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Content_2.Methods.Pages.AbstractEditPage",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Content_2.Methods.Pages.AbstractEditPage": {
+                "type": "object",
+                "properties": {
+                    "url": {
+                        "title": "Адрес документа",
+                        "type": "string"
+                    },
+                    "subdomain": {
+                        "title": "Поддомен документа",
+                        "nullable": true,
+                        "allOf": [
+                            {
+                                "$ref": "../../../Content_2/Types/Subdomain.json#/components/schemas/Content_2.Types.Subdomain"
+                            }
+                        ]
+                    },
+                    "lang": {
+                        "title": "Язык документа",
+                        "nullable": true,
+                        "allOf": [
+                            {
+                                "$ref": "../../../TV/API/Types/Lang.json#/components/schemas/TV.API.Types.Lang"
+                            }
+                        ]
+                    },
+                    "user_id": {
+                        "title": "Id автора",
+                        "nullable": true,
+                        "type": "integer"
+                    },
+                    "user_id_2": {
+                        "title": "Id второго автора",
+                        "nullable": true,
+                        "type": "integer"
+                    },
+                    "user_id_3": {
+                        "title": "Id третьего автора",
+                        "nullable": true,
+                        "type": "integer"
+                    },
+                    "create": {
+                        "title": "Дата публикации",
+                        "nullable": true,
+                        "allOf": [
+                            {
+                                "$ref": "../../../TV/API/Types/Date.json#/components/schemas/TV.API.Types.Date"
+                            }
+                        ]
+                    },
+                    "publish_time": {
+                        "title": "Время публикации",
+                        "nullable": true,
+                        "allOf": [
+                            {
+                                "$ref": "../../../TV/API/Types/Datetime.json#/components/schemas/TV.API.Types.Datetime"
+                            }
+                        ]
+                    },
+                    "h1": {
+                        "title": "Заголовок страницы",
+                        "nullable": true,
+                        "type": "string"
+                    },
+                    "title": {
+                        "title": "Заголовок страницы для браузера",
+                        "nullable": true,
+                        "type": "string"
+                    },
+                    "description": {
+                        "title": "Описание страницы (meta - description)",
+                        "nullable": true,
+                        "type": "string"
+                    },
+                    "intro": {
+                        "title": "Вступительный текст",
+                        "nullable": true,
+                        "type": "string"
+                    },
+                    "html": {
+                        "title": "Контент страницы",
+                        "nullable": true,
+                        "type": "string"
+                    },
+                    "menu_name": {
+                        "title": "Заголовок для меню",
+                        "nullable": true,
+                        "type": "string"
+                    },
+                    "order": {
+                        "title": "Позиция сортировки документа",
+                        "nullable": true,
+                        "type": "integer"
+                    },
+                    "image": {
+                        "title": "Ссылка на основное изображение (обычно относительный путь до изображения от корня сайта)",
+                        "nullable": true,
+                        "type": "string"
+                    },
+                    "og": {
+                        "title": "@var ?array{string: string} Объект с данными Open Graph",
+                        "nullable": true,
+                        "type": "array"
+                    },
+                    "tags": {
+                        "title": "@var ?string[] Список тегов",
+                        "nullable": true,
+                        "type": "array"
+                    },
+                    "noindex": {
+                        "title": "Не индексировать страницу",
+                        "type": "boolean"
+                    },
+                    "theme": {
+                        "title": "Тема оформления страницы",
+                        "nullable": true,
+                        "type": "string"
+                    },
+                    "quiz_id": {
+                        "title": "Id теста",
+                        "nullable": true,
+                        "type": "string"
+                    },
+                    "state": {
+                        "title": "Статус документа",
+                        "nullable": true,
+                        "type": "string"
+                    },
+                    "required_posts_any": {
+                        "title": "Ограничение доступа\n\nДоступно всем, если не заполнено",
+                        "nullable": true,
+                        "allOf": [
+                            {
+                                "$ref": "../../../Admin_2/Types/Staff/Posts.json#/components/schemas/Admin_2.Types.Staff.Posts"
+                            }
+                        ]
+                    }
+                },
+                "required": []
+            },
+            "Content_2.Methods.Pages.AbstractEditPage.Exec": {
+                "title": "Непосредственный вызов API функции\n\nЗапрещено делать публичной, это приведет к поломке preCall()\n\nВ описании к функции отвечать на вопрос: `Что является результатом запроса?` Например: `Список пользователей`\n\nНе менять `protected`, проверка проводится при генерации схем в `TV\\API\\Objects\\ClassAPIMethodInfo`",
+                "nullable": true
+            }
+        }
+    }
+}

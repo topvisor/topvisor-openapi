@@ -1,0 +1,52 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/System_2.Methods.Common.Analytics.Add",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "System_2.Methods.Common.Analytics.Add": {
+                "type": "object",
+                "properties": {
+                    "ec": {
+                        "title": "Категория",
+                        "nullable": true,
+                        "type": "string"
+                    },
+                    "ea": {
+                        "title": "Действие",
+                        "nullable": true,
+                        "type": "string"
+                    },
+                    "el": {
+                        "title": "Ярлык в base64",
+                        "nullable": true,
+                        "type": "string"
+                    },
+                    "uid": {
+                        "title": "ID пользователя",
+                        "nullable": true,
+                        "type": "integer"
+                    },
+                    "hash_id": {
+                        "title": "Хеш для уникализации события",
+                        "nullable": true,
+                        "type": "integer"
+                    },
+                    "hash": {
+                        "title": "Хэш для проверки подлинности события",
+                        "nullable": true,
+                        "type": "integer"
+                    }
+                },
+                "required": [],
+                "title": "Фиксация события по ссылке на изображение\n\nсм. Analytics_2\\Mods\\Analytics::genEventImgLink()"
+            },
+            "System_2.Methods.Common.Analytics.Add.Exec": {
+                "type": "never"
+            }
+        }
+    }
+}

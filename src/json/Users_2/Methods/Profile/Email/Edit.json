@@ -1,0 +1,37 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Users_2.Methods.Profile.Email.Edit",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Users_2.Methods.Profile.Email.Edit": {
+                "type": "object",
+                "properties": {
+                    "email": {
+                        "title": "Новый email",
+                        "allOf": [
+                            {
+                                "$ref": "../../../../TV/API/Types/Email.json#/components/schemas/TV.API.Types.Email"
+                            }
+                        ]
+                    },
+                    "pass": {
+                        "title": "Пароль",
+                        "type": "string"
+                    }
+                },
+                "required": [
+                    "email",
+                    "pass"
+                ],
+                "title": "Отправка сообщения на смену Email"
+            },
+            "Users_2.Methods.Profile.Email.Edit.Exec": {
+                "type": "integer"
+            }
+        }
+    }
+}

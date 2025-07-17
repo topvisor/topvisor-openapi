@@ -1,0 +1,57 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/System_2.Methods.Common.PagePreview.Get",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "System_2.Methods.Common.PagePreview.Get": {
+                "type": "object",
+                "properties": {
+                    "url": {
+                        "title": "Url страницы",
+                        "allOf": [
+                            {
+                                "$ref": "../../../../TV/API/Types/UrlShort.json#/components/schemas/TV.API.Types.UrlShort"
+                            }
+                        ]
+                    },
+                    "format": {
+                        "allOf": [
+                            {
+                                "$ref": "../../../../System_2/Types/Common/PagePreview/Format.json#/components/schemas/System_2.Types.Common.PagePreview.Format"
+                            }
+                        ]
+                    },
+                    "lang": {
+                        "title": "Язык страницы",
+                        "nullable": true,
+                        "allOf": [
+                            {
+                                "$ref": "../../../../TV/API/Types/Lang.json#/components/schemas/TV.API.Types.Lang"
+                            }
+                        ]
+                    },
+                    "title": {
+                        "title": "Заголовок",
+                        "type": "string"
+                    },
+                    "description": {
+                        "title": "Кастомная надпись",
+                        "nullable": true,
+                        "type": "string"
+                    }
+                },
+                "required": [
+                    "url"
+                ],
+                "title": "Получение превью страницы\n\nВернет изображение в формате image/png\n\nСсылка для теста https://topvisor.dev:17860/ajax/get.php?module=system_2&func=common_pagePreview&url={$shortUrl}"
+            },
+            "System_2.Methods.Common.PagePreview.Get.Exec": {
+                "type": "never"
+            }
+        }
+    }
+}

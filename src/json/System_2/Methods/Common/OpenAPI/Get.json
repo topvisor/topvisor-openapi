@@ -1,0 +1,31 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/System_2.Methods.Common.OpenAPI.Get",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "System_2.Methods.Common.OpenAPI.Get": {
+                "type": "object",
+                "properties": {
+                    "format": {
+                        "title": "Формат",
+                        "default": "json",
+                        "type": "string"
+                    },
+                    "incremental": {
+                        "title": "Использовать инкрементальный вывод схемы",
+                        "type": "boolean"
+                    }
+                },
+                "required": [],
+                "title": "Загрузка настроек OpenAPI"
+            },
+            "System_2.Methods.Common.OpenAPI.Get.Exec": {
+                "type": "never"
+            }
+        }
+    }
+}

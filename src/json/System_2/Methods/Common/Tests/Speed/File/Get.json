@@ -1,0 +1,58 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/System_2.Methods.Common.Tests.Speed.File.Get",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "System_2.Methods.Common.Tests.Speed.File.Get": {
+                "type": "object",
+                "properties": {
+                    "size": {
+                        "title": "Размер файла в байтах",
+                        "type": "integer"
+                    },
+                    "token": {
+                        "title": "Проверочный токен",
+                        "type": "string"
+                    },
+                    "fields": {
+                        "$ref": "../../../../../../TV/API/Params/FieldsTrait.json#/components/schemas/TV.API.Params.FieldsTrait/properties/fields"
+                    },
+                    "orders": {
+                        "$ref": "../../../../../../TV/API/Params/OrdersTrait.json#/components/schemas/TV.API.Params.OrdersTrait/properties/orders"
+                    },
+                    "filters": {
+                        "$ref": "../../../../../../TV/API/Params/FiltersTrait.json#/components/schemas/TV.API.Params.FiltersTrait/properties/filters"
+                    },
+                    "id": {
+                        "$ref": "../../../../../../TV/API/Params/FiltersTrait.json#/components/schemas/TV.API.Params.FiltersTrait/properties/id"
+                    },
+                    "limit": {
+                        "$ref": "../../../../../../TV/API/Params/LimitTrait.json#/components/schemas/TV.API.Params.LimitTrait/properties/limit"
+                    },
+                    "offset": {
+                        "$ref": "../../../../../../TV/API/Params/OffsetTrait.json#/components/schemas/TV.API.Params.OffsetTrait/properties/offset"
+                    },
+                    "fetch_style": {
+                        "$ref": "../../../../../../TV/API/Params/FetchStyleTrait.json#/components/schemas/TV.API.Params.FetchStyleTrait/properties/fetch_style"
+                    }
+                },
+                "required": [
+                    "size",
+                    "token",
+                    "fields",
+                    "orders",
+                    "filters",
+                    "offset"
+                ],
+                "title": "Генерация тестового файла\n\nВернет случайный набор символов в формате application/json; charset=utf-8\n\nURL для теста: https://topvisor.com/ajax/get.php?module=system_2&func=common_tests_speed_file&size=$size&token=$token"
+            },
+            "System_2.Methods.Common.Tests.Speed.File.Get.Exec": {
+                "type": "never"
+            }
+        }
+    }
+}

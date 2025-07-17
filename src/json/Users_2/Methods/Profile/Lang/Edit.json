@@ -1,0 +1,33 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Users_2.Methods.Profile.Lang.Edit",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Users_2.Methods.Profile.Lang.Edit": {
+                "type": "object",
+                "properties": {
+                    "lang": {
+                        "title": "Новый язык",
+                        "allOf": [
+                            {
+                                "$ref": "../../../../TV/API/Types/Lang.json#/components/schemas/TV.API.Types.Lang"
+                            }
+                        ]
+                    }
+                },
+                "required": [
+                    "lang"
+                ],
+                "title": "Изменение языка"
+            },
+            "Users_2.Methods.Profile.Lang.Edit.Exec": {
+                "nullable": true,
+                "type": "integer"
+            }
+        }
+    }
+}

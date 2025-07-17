@@ -7,9 +7,9 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Получение возможных posts */
+        /** Получение возможных позиций сотрудников */
         "Admin_2.Methods.Staff.Posts.Get": Record<string, never>;
-        "Admin_2.Methods.Staff.Posts.Get.Exec": unknown[];
+        "Admin_2.Methods.Staff.Posts.Get.Exec": import('../../../Types/Staff/Posts.ts').components['schemas']['Admin_2.Types.Staff.Posts'];
     };
     responses: never;
     parameters: never;

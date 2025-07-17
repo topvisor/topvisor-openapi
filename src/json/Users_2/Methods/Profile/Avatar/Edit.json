@@ -1,0 +1,32 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Users_2.Methods.Profile.Avatar.Edit",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Users_2.Methods.Profile.Avatar.Edit": {
+                "type": "object",
+                "properties": {
+                    "file": {
+                        "title": "Ссылка на обновленный аватар",
+                        "type": "string"
+                    },
+                    "config": {
+                        "title": "Конфиг аватарки. Координаты по которым она должна обрезаться",
+                        "type": "array"
+                    }
+                },
+                "required": [
+                    "config"
+                ],
+                "title": "Изменение автара"
+            },
+            "Users_2.Methods.Profile.Avatar.Edit.Exec": {
+                "type": "integer"
+            }
+        }
+    }
+}
