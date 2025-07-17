@@ -11,7 +11,7 @@ export interface components {
         "Users_2.Methods.Auth.Get": {
             /** Логин авторизации
              *
-             *     Может принимать Email|null|emptyString */
+             *     Может принимать: email или идентификатор Open Auth системы авторизации */
             authorisation_login?: string | null;
             /** Пароль авторизации */
             authorisation_pass?: string | null;
