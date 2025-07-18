@@ -487,6 +487,8 @@ export interface components {
             /** @constant */
             readonly Send_to_email: "Send to Email";
             /** @constant */
+            readonly Cluster_the_core_and_send_results_to_email: "Cluster the core and send results to email";
+            /** @constant */
             readonly Data_will_be_pulled_for: "Collect data for";
             /** @constant */
             readonly total_count: "; total count";

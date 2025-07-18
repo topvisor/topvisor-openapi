@@ -966,6 +966,10 @@
                         "const": "Send to Email",
                         "readOnly": true
                     },
+                    "Cluster_the_core_and_send_results_to_email": {
+                        "const": "Cluster the core and send results to email",
+                        "readOnly": true
+                    },
                     "Data_will_be_pulled_for": {
                         "const": "Collect data for",
                         "readOnly": true
@@ -1462,6 +1466,7 @@
                     "Sorting_order",
                     "Keyword_clustering_completed",
                     "Send_to_email",
+                    "Cluster_the_core_and_send_results_to_email",
                     "Data_will_be_pulled_for",
                     "total_count",
                     "Enter_keywords",
