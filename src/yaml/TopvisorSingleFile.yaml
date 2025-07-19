@@ -20536,6 +20536,8 @@ components:
           nullable: true
         bookmark_author:
           nullable: true
+        publish_timestamp:
+          nullable: true
     Content_2.Methods.Pages.Add:
       type: object
       properties:
@@ -28620,8 +28622,15 @@ components:
       properties:
         datetime:
           title: Дата и время проверки
+          description: '@deprecated'
+          nullable: true
+          deprecated: true
           allOf:
             - $ref: '#/components/schemas/TV.API.Types.Datetime'
+        timestamp:
+          title: Время проверки в timestamp
+          nullable: true
+          type: integer
         region_index:
           title: Индекс региона
           type: integer
@@ -28643,7 +28652,6 @@ components:
         fetch_style:
           $ref: '#/components/schemas/fetch_style'
       required:
-        - datetime
         - region_index
         - action
         - fields
@@ -28695,9 +28703,17 @@ components:
             - $ref: '#/components/schemas/Positions_2.Types.RegionDevice'
         date:
           title: Дата
+          description: '@deprecated'
           nullable: true
+          deprecated: true
           allOf:
             - $ref: '#/components/schemas/TV.API.Types.Date'
+        timestamp:
+          title: |-
+            Время последней проверки за день в формате timestamp.
+            Получить данные апометра за 3 предыдущих дня и текущий день до этого времени.
+          nullable: true
+          type: integer
         avg:
           title: Вернуть только средние значения по всем тематикам
           type: boolean

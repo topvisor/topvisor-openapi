@@ -12,11 +12,19 @@
                 "properties": {
                     "datetime": {
                         "title": "Дата и время проверки",
+                        "description": "@deprecated",
+                        "nullable": true,
+                        "deprecated": true,
                         "allOf": [
                             {
                                 "$ref": "../../../../TV/API/Types/Datetime.json#/components/schemas/TV.API.Types.Datetime"
                             }
                         ]
+                    },
+                    "timestamp": {
+                        "title": "Время проверки в timestamp",
+                        "nullable": true,
+                        "type": "integer"
                     },
                     "region_index": {
                         "title": "Индекс региона",
@@ -52,7 +60,6 @@
                     }
                 },
                 "required": [
-                    "datetime",
                     "region_index",
                     "action",
                     "fields",

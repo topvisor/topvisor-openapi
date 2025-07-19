@@ -164,6 +164,9 @@
                     },
                     "bookmark_author": {
                         "nullable": true
+                    },
+                    "publish_timestamp": {
+                        "nullable": true
                     }
                 }
             }

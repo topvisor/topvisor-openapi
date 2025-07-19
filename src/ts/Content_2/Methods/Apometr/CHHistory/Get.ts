@@ -13,8 +13,14 @@ export interface components {
          * @description @deprecated Используйте Services\Content_2\Methods\Apometr\Snapshots\Top\Get
          */
         "Content_2.Methods.Apometr.CHHistory.Get": {
-            /** Дата и время проверки */
-            datetime: import('../../../../TV/API/Types/Datetime.ts').components['schemas']['TV.API.Types.Datetime'];
+            /**
+             * Дата и время проверки
+             * @deprecated
+             * @description @deprecated
+             */
+            datetime?: import('../../../../TV/API/Types/Datetime.ts').components['schemas']['TV.API.Types.Datetime'] | null;
+            /** Время проверки в timestamp */
+            timestamp?: number | null;
             /** Индекс региона */
             region_index: number;
             action: import('../../../Types/Apometr/Action.ts').components['schemas']['Content_2.Types.Apometr.Action'];

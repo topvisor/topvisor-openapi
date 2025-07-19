@@ -60,6 +60,7 @@ export interface components {
             like?: any;
             bookmark?: any;
             bookmark_author?: any;
+            publish_timestamp?: any;
         };
     };
     responses: never;
