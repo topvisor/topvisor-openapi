@@ -3652,6 +3652,37 @@ paths:
             model:
               schema:
                 $ref: '#/components/schemas/Models.Projects'
+  /get/example_2/test/:
+    post:
+      operationId: GetExample2Test
+      tags:
+        - Example_2
+      summary: Тест долго ответа сервера
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Example_2.Methods.Test.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            $ref: '#/components/schemas/Example_2.Methods.Test.Get.Exec'
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
   /edit/informer_2/config/:
     post:
       operationId: EditInformer2Config
@@ -21634,6 +21665,13 @@ components:
         watcher_types:
           type: array
           nullable: true
+    Example_2.Methods.Test.Get:
+      type: object
+      properties: {}
+      required: []
+      title: Тест долго ответа сервера
+    Example_2.Methods.Test.Get.Exec:
+      type: integer
     Informer_2.Methods.Config.Edit:
       type: object
       properties:

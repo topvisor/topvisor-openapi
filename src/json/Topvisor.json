@@ -6574,6 +6574,64 @@
                 }
             }
         },
+        "/get/example_2/test/": {
+            "post": {
+                "operationId": "GetExample2Test",
+                "tags": [
+                    "Example_2"
+                ],
+                "summary": "Тест долго ответа сервера",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Example_2/Methods/Test/Get.json#/components/schemas/Example_2.Methods.Test.Get"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "oneOf": [
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "$ref": "Example_2/Methods/Test/Get.json#/components/schemas/Example_2.Methods.Test.Get.Exec"
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "result"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
+                                        }
+                                    ]
+                                }
+                            },
+                            "model": {
+                                "schema": {
+                                    "type": "null"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
         "/edit/informer_2/config/": {
             "post": {
                 "operationId": "EditInformer2Config",

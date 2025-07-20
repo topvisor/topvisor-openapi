@@ -1949,6 +1949,23 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
+    /** Тест долго ответа сервера */
+    "/get/example_2/test/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["GetExample2Test"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
     /** Настройка уведомлений */
     "/edit/informer_2/config/": {
         parameters: {
@@ -3510,7 +3527,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Проверка на авторизацию пользователя */
+    /** Информация о сессии авторизации пользователя */
     "/get/users_2/auth/": {
         parameters: {
             query?: never;
@@ -11664,6 +11681,32 @@ export interface operations {
                         result: import('./Example_2/Methods/Projects/Get.ts').components['schemas']['Example_2.Methods.Projects.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: import('./Models/Projects.ts').components['schemas']['Models.Projects'];
+                };
+            };
+        };
+    };
+    GetExample2Test: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Example_2/Methods/Test/Get.ts').components['schemas']['Example_2.Methods.Test.Get'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./Example_2/Methods/Test/Get.ts').components['schemas']['Example_2.Methods.Test.Get.Exec'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: null;
                 };
             };
         };
