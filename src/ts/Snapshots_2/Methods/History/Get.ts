@@ -11,6 +11,8 @@ export interface components {
          *
          *     Метод базируется на объекте keywords (доступны только фильтры) */
         "Snapshots_2.Methods.History.Get": {
+            /** Получение данных по всем запросам */
+            output?: boolean;
             /** Id проекта */
             project_id: number;
             /** Индекс региона
@@ -46,8 +48,6 @@ export interface components {
              * @default 31
              */
             count_dates: number;
-            /** Получение данных по всем запросам (недокументируемый параметр, используется в экспорте) */
-            output?: import('../../Types/History/Export/Output.ts').components['schemas']['Snapshots_2.Types.History.Export.Output'] | null;
             /** Только запросы, присутствующие в первой проверке указанного периода
              *
              *     - 2 - только добавленные запросы за период, работает не корректно из-за ограничения JOIN CH */

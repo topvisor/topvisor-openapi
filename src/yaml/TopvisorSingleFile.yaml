@@ -24042,13 +24042,6 @@ components:
       items:
         $ref: '#/components/schemas/Snapshots_2.Types.History.PositionsField'
       title: Поля, возвращаемые в snapshotsData
-    Snapshots_2.Types.History.Export.Output:
-      type: string
-      enum:
-        - csv
-        - csvOld
-        - xlsx
-      title: Тип экспортируемого файла
     Snapshots_2.Methods.History.AbstractRegular:
       type: object
       properties:
@@ -24114,11 +24107,6 @@ components:
           title: Количество дней в диапазоне
           default: 31
           type: integer
-        output:
-          title: Получение данных по всем запросам (недокументируемый параметр, используется в экспорте)
-          nullable: true
-          allOf:
-            - $ref: '#/components/schemas/Snapshots_2.Types.History.Export.Output'
         only_exists_first_date:
           title: |-
             Только запросы, присутствующие в первой проверке указанного периода
@@ -24163,6 +24151,9 @@ components:
     Snapshots_2.Methods.History.Get:
       type: object
       properties:
+        output:
+          title: Получение данных по всем запросам
+          type: boolean
         project_id:
           title: Id проекта
           type: integer
@@ -24225,11 +24216,6 @@ components:
           title: Количество дней в диапазоне
           default: 31
           type: integer
-        output:
-          title: Получение данных по всем запросам (недокументируемый параметр, используется в экспорте)
-          nullable: true
-          allOf:
-            - $ref: '#/components/schemas/Snapshots_2.Types.History.Export.Output'
         only_exists_first_date:
           title: |-
             Только запросы, присутствующие в первой проверке указанного периода
@@ -31055,6 +31041,13 @@ components:
       enum:
         - print
       title: Шаблон документа (только для pdf)
+    Snapshots_2.Types.History.Export.Output:
+      type: string
+      enum:
+        - csv
+        - csvOld
+        - xlsx
+      title: Тип экспортируемого файла
     Snapshots_2.Methods.History.Export.Get:
       type: object
       properties:
@@ -31077,6 +31070,10 @@ components:
           nullable: true
           allOf:
             - $ref: '#/components/schemas/Snapshots_2.Types.History.Export.Tpl'
+        output:
+          title: Получение данных по всем запросам
+          allOf:
+            - $ref: '#/components/schemas/Snapshots_2.Types.History.Export.Output'
         project_id:
           title: Id проекта
           type: integer
@@ -31139,11 +31136,6 @@ components:
           title: Количество дней в диапазоне
           default: 31
           type: integer
-        output:
-          title: Получение данных по всем запросам (недокументируемый параметр, используется в экспорте)
-          nullable: true
-          allOf:
-            - $ref: '#/components/schemas/Snapshots_2.Types.History.Export.Output'
         only_exists_first_date:
           title: |-
             Только запросы, присутствующие в первой проверке указанного периода
@@ -31174,6 +31166,7 @@ components:
         fetch_style:
           $ref: '#/components/schemas/fetch_style'
       required:
+        - output
         - project_id
       title: Экспорт истории снимков выдачи
     Snapshots_2.Methods.History.Export.Get.Exec:
