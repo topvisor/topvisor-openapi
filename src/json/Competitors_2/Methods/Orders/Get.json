@@ -1,0 +1,54 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Competitors_2.Methods.Orders.Get",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Competitors_2.Methods.Orders.Get": {
+                "type": "object",
+                "properties": {
+                    "region_index": {
+                        "title": "Индекс региона (не путать с ключом региона)",
+                        "nullable": true,
+                        "type": "integer"
+                    },
+                    "query": {
+                        "title": "- ключевая фраза или ее часть (by_type = keyword)\n- url (by_type = url)",
+                        "nullable": true,
+                        "type": "string"
+                    },
+                    "by_type": {
+                        "nullable": true,
+                        "allOf": [
+                            {
+                                "$ref": "../../../Competitors_2/Types/ReportType.json#/components/schemas/Competitors_2.Types.ReportType"
+                            }
+                        ]
+                    },
+                    "date": {
+                        "title": "Дата проверки",
+                        "nullable": true,
+                        "allOf": [
+                            {
+                                "$ref": "../../../TV/API/Types/Date.json#/components/schemas/TV.API.Types.Date"
+                            }
+                        ]
+                    },
+                    "deleted": {
+                        "title": "Показать удаленные отчеты",
+                        "nullable": true,
+                        "type": "boolean"
+                    }
+                },
+                "required": [],
+                "title": "Получить список оплаченных отчетов"
+            },
+            "Competitors_2.Methods.Orders.Get.Exec": {
+                "type": "array"
+            }
+        }
+    }
+}

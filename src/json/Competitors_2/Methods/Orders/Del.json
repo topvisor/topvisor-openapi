@@ -1,0 +1,29 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Competitors_2.Methods.Orders.Del",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Competitors_2.Methods.Orders.Del": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "title": "Id отчета",
+                        "type": "integer"
+                    }
+                },
+                "required": [
+                    "id"
+                ],
+                "title": "Удаление отчета"
+            },
+            "Competitors_2.Methods.Orders.Del.Exec": {
+                "nullable": true,
+                "type": "integer"
+            }
+        }
+    }
+}

@@ -15828,6 +15828,68 @@ paths:
               schema:
                 type: string
                 format: binary
+  /del/competitors_2/orders/:
+    post:
+      operationId: DelCompetitors2Orders
+      tags:
+        - Competitors_2
+      summary: Удаление отчета
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Competitors_2.Methods.Orders.Del'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            $ref: '#/components/schemas/Competitors_2.Methods.Orders.Del.Exec'
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
+  /get/competitors_2/orders/:
+    post:
+      operationId: GetCompetitors2Orders
+      tags:
+        - Competitors_2
+      summary: Получить список оплаченных отчетов
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Competitors_2.Methods.Orders.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            $ref: '#/components/schemas/Competitors_2.Methods.Orders.Get.Exec'
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
 components:
   securitySchemes:
     authToken:
@@ -34615,3 +34677,45 @@ components:
         Вернет случайный набор символов в формате application/json; charset=utf-8
 
         URL для теста: https://topvisor.com/ajax/get.php?module=system_2&func=common_tests_speed_file&size=$size&token=$token
+    Competitors_2.Methods.Orders.Del:
+      type: object
+      properties:
+        id:
+          title: Id отчета
+          type: integer
+      required:
+        - id
+      title: Удаление отчета
+    Competitors_2.Methods.Orders.Del.Exec:
+      nullable: true
+      type: integer
+    Competitors_2.Methods.Orders.Get:
+      type: object
+      properties:
+        region_index:
+          title: Индекс региона (не путать с ключом региона)
+          nullable: true
+          type: integer
+        query:
+          title: |-
+            - ключевая фраза или ее часть (by_type = keyword)
+            - url (by_type = url)
+          nullable: true
+          type: string
+        by_type:
+          nullable: true
+          allOf:
+            - $ref: '#/components/schemas/Competitors_2.Types.ReportType'
+        date:
+          title: Дата проверки
+          nullable: true
+          allOf:
+            - $ref: '#/components/schemas/TV.API.Types.Date'
+        deleted:
+          title: Показать удаленные отчеты
+          nullable: true
+          type: boolean
+      required: []
+      title: Получить список оплаченных отчетов
+    Competitors_2.Methods.Orders.Get.Exec:
+      type: array
