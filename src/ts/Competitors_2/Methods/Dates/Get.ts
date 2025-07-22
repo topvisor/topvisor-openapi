@@ -15,7 +15,7 @@ export interface components {
              *     - url (by_type = url) */
             query: string;
             by_type: import('../../Types/ReportType.ts').components['schemas']['Competitors_2.Types.ReportType'];
-            /** ата проверки */
+            /** Дата проверки */
             date?: import('../../../TV/API/Types/Date.ts').components['schemas']['TV.API.Types.Date'] | null;
         };
         "Competitors_2.Methods.Dates.Get.Exec": unknown[];

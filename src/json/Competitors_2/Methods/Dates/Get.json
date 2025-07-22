@@ -26,7 +26,7 @@
                         ]
                     },
                     "date": {
-                        "title": "ата проверки",
+                        "title": "Дата проверки",
                         "nullable": true,
                         "allOf": [
                             {

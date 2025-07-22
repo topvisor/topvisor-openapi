@@ -20257,7 +20257,7 @@ components:
           allOf:
             - $ref: '#/components/schemas/Competitors_2.Types.ReportType'
         date:
-          title: ата проверки
+          title: Дата проверки
           nullable: true
           allOf:
             - $ref: '#/components/schemas/TV.API.Types.Date'
