@@ -1,0 +1,50 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Competitors_2.Methods.Dates.Get",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Competitors_2.Methods.Dates.Get": {
+                "type": "object",
+                "properties": {
+                    "region_index": {
+                        "title": "Индекс региона (не путать с ключом региона)",
+                        "type": "integer"
+                    },
+                    "query": {
+                        "title": "- ключевая фраза или ее часть (by_type = keyword)\n- url (by_type = url)",
+                        "type": "string"
+                    },
+                    "by_type": {
+                        "allOf": [
+                            {
+                                "$ref": "../../../Competitors_2/Types/ReportType.json#/components/schemas/Competitors_2.Types.ReportType"
+                            }
+                        ]
+                    },
+                    "date": {
+                        "title": "ата проверки",
+                        "nullable": true,
+                        "allOf": [
+                            {
+                                "$ref": "../../../TV/API/Types/Date.json#/components/schemas/TV.API.Types.Date"
+                            }
+                        ]
+                    }
+                },
+                "required": [
+                    "region_index",
+                    "query",
+                    "by_type"
+                ],
+                "title": "Получение даты проверок по заданному критерию (последние 12)"
+            },
+            "Competitors_2.Methods.Dates.Get.Exec": {
+                "type": "array"
+            }
+        }
+    }
+}
