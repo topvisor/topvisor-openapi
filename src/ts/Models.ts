@@ -59,6 +59,7 @@ export interface components {
         "Models.Mentions.Rules": import('./Models/Mentions/Rules.ts').components['schemas']['Models.Mentions.Rules'];
         "Models.Mentions.Searchers": import('./Models/Mentions/Searchers.ts').components['schemas']['Models.Mentions.Searchers'];
         "Models.Projects.Folders": import('./Models/Projects/Folders.ts').components['schemas']['Models.Projects.Folders'];
+        "Models.Projects.Rights": import('./Models/Projects/Rights.ts').components['schemas']['Models.Projects.Rights'];
         "Models.Quizes.Questions": import('./Models/Quizes/Questions.ts').components['schemas']['Models.Quizes.Questions'];
         "Models.Users.Ranks": import('./Models/Users/Ranks.ts').components['schemas']['Models.Users.Ranks'];
         "Models.Users.Referrals": import('./Models/Users/Referrals.ts').components['schemas']['Models.Users.Referrals'];

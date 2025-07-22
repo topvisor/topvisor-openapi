@@ -2669,7 +2669,7 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
-    /** Получение информации о настройке прав и смене владельца */
+    /** Получение информации о выданных доступах к проекту */
     "/get/projects_2/rights/": {
         parameters: {
             query?: never;
@@ -6124,6 +6124,23 @@ export interface paths {
         get?: never;
         put?: never;
         post: operations["EditProjects2RightsChangeOwner"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Получение информации о смене владельца */
+    "/get/projects_2/rights/changeOwner/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["GetProjects2RightsChangeOwner"];
         delete?: never;
         options?: never;
         head?: never;
@@ -12768,8 +12785,8 @@ export interface operations {
                 content: {
                     "application/json": ({
                         result: import('./Projects_2/Methods/Rights/Get.ts').components['schemas']['Projects_2.Methods.Rights.Get.Exec'];
-                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
-                    model: null;
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: import('./Models/Projects/Rights.ts').components['schemas']['Models.Projects.Rights'];
                 };
             };
         };
@@ -17893,6 +17910,32 @@ export interface operations {
                 content: {
                     "application/json": ({
                         result: import('./Projects_2/Methods/Rights/ChangeOwner/Edit.ts').components['schemas']['Projects_2.Methods.Rights.ChangeOwner.Edit.Exec'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: null;
+                };
+            };
+        };
+    };
+    GetProjects2RightsChangeOwner: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Projects_2/Methods/Rights/ChangeOwner/Get.ts').components['schemas']['Projects_2.Methods.Rights.ChangeOwner.Get'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./Projects_2/Methods/Rights/ChangeOwner/Get.ts').components['schemas']['Projects_2.Methods.Rights.ChangeOwner.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };

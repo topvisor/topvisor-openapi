@@ -14,51 +14,61 @@ export interface components {
                     name: "Keywords for Rank Checks";
                     extendedName: "daily rank checks";
                     description: "Total number of tasks, that are performed every day.\nA check (task) is a rank checking for 1 keywords in 1 search engine, 1 location and 1 device type.\nFor example, 500 checks is checking ranks for 500 keywords в Google New York desktop or 250 keywords in both Google New York desktop и Google New York smartphone.";
+                    exceeding: "Overall limit of rank checking tasks reached";
                 };
                 positions_check: {
                     name: "Rank checks";
                     extendedName: "rank checks";
-                    description: "Example description";
+                    description: "";
+                    exceeding: "Daily limit of rank checks reached";
                 };
                 positions_check_manual: {
                     name: "Manual rechecks";
                     extendedName: "daily manual rechecks";
                     description: "";
+                    exceeding: "Daily limit of position rechecks reached";
                 };
                 keywords_volumes: {
                     name: "Search volume";
                     extendedName: "search volume";
                     description: "";
+                    exceeding: "Monthly limit of search volume checks reached";
                 };
                 keywords_collect: {
                     name: "Keyword research";
                     extendedName: "keyword research by your site";
                     description: "";
+                    exceeding: "Monthly limit of keyword collection reached";
                 };
                 projects: {
                     name: "Projects";
                     extendedName: "projects";
                     description: "";
+                    exceeding: "Project count limit reached";
                 };
                 projects_rights: {
                     name: "Guest Users";
                     extendedName: "guest users";
                     description: "";
+                    exceeding: "Guest accounts limit reached";
                 };
                 projects_competitors: {
                     name: "Competitors";
                     extendedName: "competitors per project";
                     description: "";
+                    exceeding: "Competitors limit in one project reached";
                 };
                 projects_archive: {
                     name: "Archived projects";
                     extendedName: "archived projects";
                     description: "";
+                    exceeding: "Archived projects access disabled";
                 };
                 api: {
                     name: "API";
                     extendedName: "API";
                     description: "";
+                    exceeding: "API access disabled";
                 };
             };
             /** @constant */
@@ -147,6 +157,8 @@ export interface components {
             readonly Monthly: "Monthly";
             /** @constant */
             readonly Yearly: "Yearly";
+            /** @constant */
+            readonly Exceeding_by_owner: "The project owner has";
         };
     };
     responses: never;

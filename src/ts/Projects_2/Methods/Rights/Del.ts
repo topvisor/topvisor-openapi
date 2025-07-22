@@ -9,15 +9,15 @@ export interface components {
     schemas: {
         /** Удаление прав у пользователя */
         "Projects_2.Methods.Rights.Del": {
-            /** Email пользователя (если пользователь не зарегистрирован будет выслано приглашение) */
+            /** Email пользователя */
             email: import('../../../TV/API/Types/Email.ts').components['schemas']['TV.API.Types.Email'];
             /** ID проектов
              *
-             *     Вместо project_ids можно укзывать project_id */
+             *     Вместо project_ids можно укрывать project_id */
             projects_ids?: unknown[] | null;
             /** ID проекта
              *
-             *     Вместо project_id можно укзывать projects_ids */
+             *     Вместо project_id можно укрывать projects_ids */
             project_id?: number | null;
         };
         "Projects_2.Methods.Rights.Del.Exec": number | null;

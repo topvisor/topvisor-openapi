@@ -9,9 +9,9 @@ export interface components {
     schemas: {
         /** Изменение прав на проект */
         "Projects_2.Methods.Rights.Edit": {
-            /** Вместо project_ids можно укзывать project_id */
+            /** Вместо project_ids можно указывать project_id */
             projects_ids?: unknown[] | null;
-            /** Email пользователя (если пользователь не зарегистрирован будет выслано приглашение) */
+            /** Email пользователя (если пользователь не зарегистрирован, будет выслано приглашение) */
             email: import('../../../TV/API/Types/Email.ts').components['schemas']['TV.API.Types.Email'];
             /** Побитовая маска прав */
             rights?: import('../../../TV/API/Types/BoolArray.ts').components['schemas']['TV.API.Types.BoolArray'] | null;

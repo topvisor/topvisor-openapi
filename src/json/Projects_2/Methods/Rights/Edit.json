@@ -11,12 +11,12 @@
                 "type": "object",
                 "properties": {
                     "projects_ids": {
-                        "title": "Вместо project_ids можно укзывать project_id",
+                        "title": "Вместо project_ids можно указывать project_id",
                         "nullable": true,
                         "type": "array"
                     },
                     "email": {
-                        "title": "Email пользователя (если пользователь не зарегистрирован будет выслано приглашение)",
+                        "title": "Email пользователя (если пользователь не зарегистрирован, будет выслано приглашение)",
                         "allOf": [
                             {
                                 "$ref": "../../../TV/API/Types/Email.json#/components/schemas/TV.API.Types.Email"

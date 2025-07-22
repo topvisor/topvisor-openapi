@@ -11,7 +11,7 @@
                 "type": "object",
                 "properties": {
                     "email": {
-                        "title": "Email пользователя (если пользователь не зарегистрирован будет выслано приглашение)",
+                        "title": "Email пользователя",
                         "allOf": [
                             {
                                 "$ref": "../../../TV/API/Types/Email.json#/components/schemas/TV.API.Types.Email"
@@ -19,12 +19,12 @@
                         ]
                     },
                     "projects_ids": {
-                        "title": "ID проектов\n\nВместо project_ids можно укзывать project_id",
+                        "title": "ID проектов\n\nВместо project_ids можно укрывать project_id",
                         "nullable": true,
                         "type": "array"
                     },
                     "project_id": {
-                        "title": "ID проекта\n\nВместо project_id можно укзывать projects_ids",
+                        "title": "ID проекта\n\nВместо project_id можно укрывать projects_ids",
                         "nullable": true,
                         "type": "integer"
                     }

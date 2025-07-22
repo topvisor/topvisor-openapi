@@ -8958,7 +8958,7 @@
                 "tags": [
                     "Projects_2"
                 ],
-                "summary": "Получение информации о настройке прав и смене владельца",
+                "summary": "Получение информации о выданных доступах к проекту",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -8991,6 +8991,9 @@
                                                 },
                                                 {
                                                     "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                },
+                                                {
+                                                    "$ref": "Pagination.json#/components/schemas/Pagination"
                                                 }
                                             ]
                                         },
@@ -9002,7 +9005,7 @@
                             },
                             "model": {
                                 "schema": {
-                                    "type": "null"
+                                    "$ref": "Models/Projects/Rights.json#/components/schemas/Models.Projects.Rights"
                                 }
                             }
                         }
@@ -20394,6 +20397,64 @@
                                                     "properties": {
                                                         "result": {
                                                             "$ref": "Projects_2/Methods/Rights/ChangeOwner/Edit.json#/components/schemas/Projects_2.Methods.Rights.ChangeOwner.Edit.Exec"
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "result"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
+                                        }
+                                    ]
+                                }
+                            },
+                            "model": {
+                                "schema": {
+                                    "type": "null"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/get/projects_2/rights/changeOwner/": {
+            "post": {
+                "operationId": "GetProjects2RightsChangeOwner",
+                "tags": [
+                    "Projects_2"
+                ],
+                "summary": "Получение информации о смене владельца",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Projects_2/Methods/Rights/ChangeOwner/Get.json#/components/schemas/Projects_2.Methods.Rights.ChangeOwner.Get"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "oneOf": [
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "$ref": "Projects_2/Methods/Rights/ChangeOwner/Get.json#/components/schemas/Projects_2.Methods.Rights.ChangeOwner.Get.Exec"
                                                         }
                                                     },
                                                     "required": [

@@ -4949,7 +4949,7 @@ paths:
       operationId: GetProjects2Rights
       tags:
         - Projects_2
-      summary: Получение информации о настройке прав и смене владельца
+      summary: Получение информации о выданных доступах к проекту
       requestBody:
         content:
           application/json:
@@ -4971,10 +4971,11 @@ paths:
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
+                      - $ref: '#/components/schemas/Pagination'
                   - $ref: '#/components/schemas/ResponseError'
             model:
               schema:
-                type: 'null'
+                $ref: '#/components/schemas/Models.Projects.Rights'
   /get/projects_2/status/:
     post:
       operationId: GetProjects2Status
@@ -11155,6 +11156,37 @@ paths:
                         properties:
                           result:
                             $ref: '#/components/schemas/Projects_2.Methods.Rights.ChangeOwner.Edit.Exec'
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
+  /get/projects_2/rights/changeOwner/:
+    post:
+      operationId: GetProjects2RightsChangeOwner
+      tags:
+        - Projects_2
+      summary: Получение информации о смене владельца
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Projects_2.Methods.Rights.ChangeOwner.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            $ref: '#/components/schemas/Projects_2.Methods.Rights.ChangeOwner.Get.Exec'
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
@@ -22832,21 +22864,21 @@ components:
       type: object
       properties:
         email:
-          title: Email пользователя (если пользователь не зарегистрирован будет выслано приглашение)
+          title: Email пользователя
           allOf:
             - $ref: '#/components/schemas/TV.API.Types.Email'
         projects_ids:
           title: |-
             ID проектов
 
-            Вместо project_ids можно укзывать project_id
+            Вместо project_ids можно укрывать project_id
           nullable: true
           type: array
         project_id:
           title: |-
             ID проекта
 
-            Вместо project_id можно укзывать projects_ids
+            Вместо project_id можно укрывать projects_ids
           nullable: true
           type: integer
       required:
@@ -22859,11 +22891,11 @@ components:
       type: object
       properties:
         projects_ids:
-          title: Вместо project_ids можно укзывать project_id
+          title: Вместо project_ids можно указывать project_id
           nullable: true
           type: array
         email:
-          title: Email пользователя (если пользователь не зарегистрирован будет выслано приглашение)
+          title: Email пользователя (если пользователь не зарегистрирован, будет выслано приглашение)
           allOf:
             - $ref: '#/components/schemas/TV.API.Types.Email'
         rights:
@@ -22896,13 +22928,63 @@ components:
       type: object
       properties:
         project_id:
-          title: ID проекта
+          title: |-
+            ID проекта
+
+            - если указан: будут выводиться доступы с учетом доступа к проекту самого пользователя
+            - если не указан: будут выводиться все доступы всех проектов текущего пользователя
+          nullable: true
           type: integer
+        fields:
+          $ref: '#/components/schemas/fields'
+        orders:
+          $ref: '#/components/schemas/orders'
+        filters:
+          $ref: '#/components/schemas/filters'
+        id:
+          $ref: '#/components/schemas/id'
+        limit:
+          $ref: '#/components/schemas/limit'
+        offset:
+          $ref: '#/components/schemas/offset'
+        fetch_style:
+          $ref: '#/components/schemas/fetch_style'
       required:
-        - project_id
-      title: Получение информации о настройке прав и смене владельца
+        - fields
+        - orders
+        - filters
+        - offset
+      title: Получение информации о выданных доступах к проекту
     Projects_2.Methods.Rights.Get.Exec:
       type: array
+    Models.Projects.Rights:
+      properties:
+        COUNT_USER_ID():
+          nullable: true
+        project_id:
+          nullable: true
+        user_id:
+          nullable: true
+        from_user_id:
+          nullable: true
+        right:
+          nullable: true
+        user_name:
+          nullable: true
+        ord:
+          nullable: true
+        limit:
+          nullable: true
+        limit_used:
+          nullable: true
+        project_user_id:
+          nullable: true
+        project_on:
+          nullable: true
+        user_email:
+          nullable: true
+        user_avatar:
+          nullable: true
     Projects_2.Methods.Status.Get:
       type: object
       properties:
@@ -30431,6 +30513,19 @@ components:
     Projects_2.Methods.Rights.ChangeOwner.Edit.Exec:
       nullable: true
       type: integer
+    Projects_2.Methods.Rights.ChangeOwner.Get:
+      type: object
+      properties:
+        project_id:
+          title: ID проекта
+          type: integer
+      required:
+        - project_id
+      title: Получение информации о смене владельца
+    Projects_2.Methods.Rights.ChangeOwner.Get.Exec:
+      title: email пользователя, которому уже передается проект
+      nullable: true
+      type: string
     Projects_2.Methods.Status.Registrar.Get:
       type: object
       properties:
