@@ -11,7 +11,7 @@
                 "type": "object",
                 "properties": {
                     "output": {
-                        "title": "Получение данных по всем запросам",
+                        "title": "Получение данных по всем запросам\n\nМожет быть 1|0 или Snapshots_2\\Types\\History\\Export\\Output",
                         "nullable": true
                     },
                     "project_id": {
