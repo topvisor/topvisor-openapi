@@ -47,6 +47,7 @@
                 "title": "Получить список оплаченных отчетов"
             },
             "Competitors_2.Methods.Orders.Get.Exec": {
+                "nullable": true,
                 "type": "array"
             }
         }

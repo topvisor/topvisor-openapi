@@ -20,7 +20,7 @@ export interface components {
             /** Показать удаленные отчеты */
             deleted?: boolean | null;
         };
-        "Competitors_2.Methods.Orders.Get.Exec": unknown[];
+        "Competitors_2.Methods.Orders.Get.Exec": unknown[] | null;
     };
     responses: never;
     parameters: never;
