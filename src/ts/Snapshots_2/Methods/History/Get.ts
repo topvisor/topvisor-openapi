@@ -12,7 +12,7 @@ export interface components {
          *     Метод базируется на объекте keywords (доступны только фильтры) */
         "Snapshots_2.Methods.History.Get": {
             /** Получение данных по всем запросам */
-            output?: boolean;
+            output?: unknown;
             /** Id проекта */
             project_id: number;
             /** Индекс региона

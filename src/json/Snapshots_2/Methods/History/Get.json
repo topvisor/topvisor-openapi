@@ -12,7 +12,7 @@
                 "properties": {
                     "output": {
                         "title": "Получение данных по всем запросам",
-                        "type": "boolean"
+                        "nullable": true
                     },
                     "project_id": {
                         "title": "Id проекта",
