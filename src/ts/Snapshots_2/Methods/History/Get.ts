@@ -13,7 +13,7 @@ export interface components {
         "Snapshots_2.Methods.History.Get": {
             /** Получение данных по всем запросам
              *
-             *     Может быть 1|0 или Snapshots_2\Types\History\Export\Output */
+             *     Может быть 1 или Snapshots_2\Types\History\Export\Output */
             output?: unknown;
             /** Id проекта */
             project_id: number;

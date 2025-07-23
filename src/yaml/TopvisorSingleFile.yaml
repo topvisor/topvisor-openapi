@@ -24155,7 +24155,7 @@ components:
           title: |-
             Получение данных по всем запросам
 
-            Может быть 1|0 или Snapshots_2\Types\History\Export\Output
+            Может быть 1 или Snapshots_2\Types\History\Export\Output
           nullable: true
         project_id:
           title: Id проекта
