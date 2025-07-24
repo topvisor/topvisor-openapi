@@ -217,7 +217,7 @@ export interface components {
             /** @constant */
             readonly Email_not_exist: "The Email you entered doesn't exist";
             /** @constant */
-            readonly Password_incorrect: "The password you entered is incorrect!";
+            readonly Password_incorrect: "The email or password you entered is incorrect!";
             /** @constant */
             readonly Enter_email: "Enter email";
             /** @constant */

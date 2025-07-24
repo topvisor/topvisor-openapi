@@ -417,7 +417,7 @@
                         "readOnly": true
                     },
                     "Password_incorrect": {
-                        "const": "The password you entered is incorrect!",
+                        "const": "The email or password you entered is incorrect!",
                         "readOnly": true
                     },
                     "Enter_email": {
