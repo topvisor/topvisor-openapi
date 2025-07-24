@@ -1,0 +1,68 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Competitors_2.Methods.Orders.ByKeyword.Info.Get",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Competitors_2.Methods.Orders.ByKeyword.Info.Get": {
+                "type": "object",
+                "properties": {
+                    "region_index": {
+                        "title": "Индекс региона (не путать с ключом региона)",
+                        "type": "integer"
+                    },
+                    "query": {
+                        "title": "Ключевая фраза",
+                        "type": "string"
+                    },
+                    "date": {
+                        "title": "Дата проверки",
+                        "allOf": [
+                            {
+                                "$ref": "../../../../../TV/API/Types/Date.json#/components/schemas/TV.API.Types.Date"
+                            }
+                        ]
+                    },
+                    "short_if_paid": {
+                        "title": "Не возвращать информацию кроме is_paymented и options, если отчет оплачен",
+                        "type": "boolean"
+                    },
+                    "short_domains_info": {
+                        "title": "Не возвращать подробную информацию о подобранных доменах (count_competitors_keywords и count_competitors_ads)",
+                        "type": "boolean"
+                    },
+                    "apply_discount": {
+                        "title": "Отображать сумму с учетом скидки (по умолчанию 1)",
+                        "default": 1,
+                        "type": "integer"
+                    },
+                    "deleted": {
+                        "title": "Использовать удаленные отчеты",
+                        "type": "boolean"
+                    },
+                    "intersection": {
+                        "title": "Степень схожести конкурентов для сравнения",
+                        "type": "number"
+                    },
+                    "short": {
+                        "title": "Получить краткую статистику, только количество конкурентов",
+                        "type": "boolean"
+                    }
+                },
+                "required": [
+                    "region_index",
+                    "query",
+                    "date",
+                    "intersection"
+                ],
+                "title": "Получение информации об отчете (вернет нулевые данные, если отчет уже оплачен)"
+            },
+            "Competitors_2.Methods.Orders.ByKeyword.Info.Get.Exec": {
+                "type": "array"
+            }
+        }
+    }
+}

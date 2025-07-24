@@ -27116,6 +27116,64 @@
                 }
             }
         },
+        "/get/competitors_2/orders/byKeyword/info/": {
+            "post": {
+                "operationId": "GetCompetitors2OrdersByKeywordInfo",
+                "tags": [
+                    "Competitors_2"
+                ],
+                "summary": "Получение информации об отчете (вернет нулевые данные, если отчет уже оплачен)",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Competitors_2/Methods/Orders/ByKeyword/Info/Get.json#/components/schemas/Competitors_2.Methods.Orders.ByKeyword.Info.Get"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "oneOf": [
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "$ref": "Competitors_2/Methods/Orders/ByKeyword/Info/Get.json#/components/schemas/Competitors_2.Methods.Orders.ByKeyword.Info.Get.Exec"
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "result"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
+                                        }
+                                    ]
+                                }
+                            },
+                            "model": {
+                                "schema": {
+                                    "type": "null"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
         "/get/competitors_2/orders/byUrl/info/": {
             "post": {
                 "operationId": "GetCompetitors2OrdersByUrlInfo",

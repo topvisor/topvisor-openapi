@@ -8179,6 +8179,23 @@ export interface paths {
         trace?: never;
     };  
     /** Получение информации об отчете (вернет нулевые данные, если отчет уже оплачен) */
+    "/get/competitors_2/orders/byKeyword/info/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["GetCompetitors2OrdersByKeywordInfo"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Получение информации об отчете (вернет нулевые данные, если отчет уже оплачен) */
     "/get/competitors_2/orders/byUrl/info/": {
         parameters: {
             query?: never;
@@ -21024,6 +21041,32 @@ export interface operations {
                 content: {
                     "application/json": ({
                         result: import('./Audit_2/Methods/Watcher/Summary/Chart/Get.ts').components['schemas']['Audit_2.Methods.Watcher.Summary.Chart.Get.Exec'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: null;
+                };
+            };
+        };
+    };
+    GetCompetitors2OrdersByKeywordInfo: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Competitors_2/Methods/Orders/ByKeyword/Info/Get.ts').components['schemas']['Competitors_2.Methods.Orders.ByKeyword.Info.Get'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./Competitors_2/Methods/Orders/ByKeyword/Info/Get.ts').components['schemas']['Competitors_2.Methods.Orders.ByKeyword.Info.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };

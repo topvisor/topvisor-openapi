@@ -14791,6 +14791,37 @@ paths:
             model:
               schema:
                 type: 'null'
+  /get/competitors_2/orders/byKeyword/info/:
+    post:
+      operationId: GetCompetitors2OrdersByKeywordInfo
+      tags:
+        - Competitors_2
+      summary: Получение информации об отчете (вернет нулевые данные, если отчет уже оплачен)
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Competitors_2.Methods.Orders.ByKeyword.Info.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            $ref: '#/components/schemas/Competitors_2.Methods.Orders.ByKeyword.Info.Get.Exec'
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
   /get/competitors_2/orders/byUrl/info/:
     post:
       operationId: GetCompetitors2OrdersByUrlInfo
@@ -33616,6 +33647,46 @@ components:
     Audit_2.Methods.Watcher.Summary.Chart.Get.Exec:
       title: Сводки с количеством изменений по каждому типу проверки
       nullable: true
+      type: array
+    Competitors_2.Methods.Orders.ByKeyword.Info.Get:
+      type: object
+      properties:
+        region_index:
+          title: Индекс региона (не путать с ключом региона)
+          type: integer
+        query:
+          title: Ключевая фраза
+          type: string
+        date:
+          title: Дата проверки
+          allOf:
+            - $ref: '#/components/schemas/TV.API.Types.Date'
+        short_if_paid:
+          title: Не возвращать информацию кроме is_paymented и options, если отчет оплачен
+          type: boolean
+        short_domains_info:
+          title: Не возвращать подробную информацию о подобранных доменах (count_competitors_keywords и count_competitors_ads)
+          type: boolean
+        apply_discount:
+          title: Отображать сумму с учетом скидки (по умолчанию 1)
+          default: 1
+          type: integer
+        deleted:
+          title: Использовать удаленные отчеты
+          type: boolean
+        intersection:
+          title: Степень схожести конкурентов для сравнения
+          type: number
+        short:
+          title: Получить краткую статистику, только количество конкурентов
+          type: boolean
+      required:
+        - region_index
+        - query
+        - date
+        - intersection
+      title: Получение информации об отчете (вернет нулевые данные, если отчет уже оплачен)
+    Competitors_2.Methods.Orders.ByKeyword.Info.Get.Exec:
       type: array
     TV.API.Types.UrlUTF:
       type: string
