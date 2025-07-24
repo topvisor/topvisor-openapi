@@ -16,7 +16,11 @@
                     },
                     "view": {
                         "title": "Вид получаемых подсказок конкурентов",
-                        "type": "string"
+                        "allOf": [
+                            {
+                                "$ref": "../../../../Competitors_2/Types/ByUrl/Table/View.json#/components/schemas/Competitors_2.Types.ByUrl.Table.View"
+                            }
+                        ]
                     }
                 },
                 "required": [

@@ -1,0 +1,20 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Competitors_2.Types.ByKeyword.Charts.View",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Competitors_2.Types.ByKeyword.Charts.View": {
+                "type": "string",
+                "enum": [
+                    "wordstat",
+                    "similar",
+                    "leaders"
+                ]
+            }
+        }
+    }
+}

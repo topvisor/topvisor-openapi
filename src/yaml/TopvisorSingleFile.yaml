@@ -30542,6 +30542,12 @@ components:
       title: Изменение имени папки
     Projects_2.Methods.Folders.Name.Edit.Exec:
       nullable: true
+    Competitors_2.Types.ByUrl.Table.View:
+      type: string
+      enum:
+        - keywords
+        - domains
+        - structure
     Projects_2.Methods.Master.HintsCompetitors.Get:
       type: object
       properties:
@@ -30550,7 +30556,8 @@ components:
           type: integer
         view:
           title: Вид получаемых подсказок конкурентов
-          type: string
+          allOf:
+            - $ref: '#/components/schemas/Competitors_2.Types.ByUrl.Table.View'
       required:
         - project_id
         - view
@@ -30568,7 +30575,8 @@ components:
           type: integer
         view:
           title: Вид получаемых подсказок конкурентов
-          type: string
+          allOf:
+            - $ref: '#/components/schemas/Competitors_2.Types.ByUrl.Table.View'
       required:
         - project_id
         - view
