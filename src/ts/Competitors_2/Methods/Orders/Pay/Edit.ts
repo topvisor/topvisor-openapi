@@ -22,6 +22,16 @@ export interface components {
             date: import('../../../../TV/API/Types/Date.ts').components['schemas']['TV.API.Types.Date'];
             /** Оплаченная степень схожести доменов */
             intersection: number;
+            /** Не возвращать информацию кроме is_paymented, если отчет оплачен */
+            short_if_paid?: boolean;
+            /** Не возвращать подробную информацию о подобранных доменах (count_competitors_keywords и count_competitors_ads) */
+            short_domains_info?: boolean;
+            /** Использовать удаленные отчеты */
+            deleted?: boolean;
+            /** Строгая url */
+            strict_query?: boolean;
+            /** Получить краткую статистику, только количество конкурентов */
+            short?: boolean;
         };
         "Competitors_2.Methods.Orders.Pay.Edit.Exec": number | null;
     };

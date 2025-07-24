@@ -34,6 +34,26 @@
                     "intersection": {
                         "title": "Оплаченная степень схожести доменов",
                         "type": "number"
+                    },
+                    "short_if_paid": {
+                        "title": "Не возвращать информацию кроме is_paymented, если отчет оплачен",
+                        "type": "boolean"
+                    },
+                    "short_domains_info": {
+                        "title": "Не возвращать подробную информацию о подобранных доменах (count_competitors_keywords и count_competitors_ads)",
+                        "type": "boolean"
+                    },
+                    "deleted": {
+                        "title": "Использовать удаленные отчеты",
+                        "type": "boolean"
+                    },
+                    "strict_query": {
+                        "title": "Строгая url",
+                        "type": "boolean"
+                    },
+                    "short": {
+                        "title": "Получить краткую статистику, только количество конкурентов",
+                        "type": "boolean"
                     }
                 },
                 "required": [
