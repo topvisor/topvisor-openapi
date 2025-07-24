@@ -1473,6 +1473,40 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
+    /** Удаление отчета */
+    "/del/competitors_2/orders/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["DelCompetitors2Orders"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Получить список оплаченных отчетов */
+    "/get/competitors_2/orders/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["GetCompetitors2Orders"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
     /** Изменить настройки автора */
     "/edit/content_2/authors/": {
         parameters: {
@@ -8144,6 +8178,23 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
+    /** Получение информации об отчете (вернет нулевые данные, если отчет уже оплачен) */
+    "/get/competitors_2/orders/byUrl/info/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["GetCompetitors2OrdersByUrlInfo"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
     /** Получение топа выдачи сайтов за определенную проверку */
     "/get/content_2/apometr/snapshots/top/": {
         parameters: {
@@ -10985,6 +11036,58 @@ export interface operations {
                 content: {
                     "application/json": ({
                         result: import('./Competitors_2/Methods/Dates/Get.ts').components['schemas']['Competitors_2.Methods.Dates.Get.Exec'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: null;
+                };
+            };
+        };
+    };
+    DelCompetitors2Orders: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Competitors_2/Methods/Orders/Del.ts').components['schemas']['Competitors_2.Methods.Orders.Del'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./Competitors_2/Methods/Orders/Del.ts').components['schemas']['Competitors_2.Methods.Orders.Del.Exec'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: null;
+                };
+            };
+        };
+    };
+    GetCompetitors2Orders: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Competitors_2/Methods/Orders/Get.ts').components['schemas']['Competitors_2.Methods.Orders.Get'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./Competitors_2/Methods/Orders/Get.ts').components['schemas']['Competitors_2.Methods.Orders.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
@@ -20921,6 +21024,32 @@ export interface operations {
                 content: {
                     "application/json": ({
                         result: import('./Audit_2/Methods/Watcher/Summary/Chart/Get.ts').components['schemas']['Audit_2.Methods.Watcher.Summary.Chart.Get.Exec'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: null;
+                };
+            };
+        };
+    };
+    GetCompetitors2OrdersByUrlInfo: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Competitors_2/Methods/Orders/ByUrl/Info/Get.ts').components['schemas']['Competitors_2.Methods.Orders.ByUrl.Info.Get'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./Competitors_2/Methods/Orders/ByUrl/Info/Get.ts').components['schemas']['Competitors_2.Methods.Orders.ByUrl.Info.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };

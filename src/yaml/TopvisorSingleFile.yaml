@@ -2774,6 +2774,68 @@ paths:
             model:
               schema:
                 type: 'null'
+  /del/competitors_2/orders/:
+    post:
+      operationId: DelCompetitors2Orders
+      tags:
+        - Competitors_2
+      summary: Удаление отчета
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Competitors_2.Methods.Orders.Del'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            $ref: '#/components/schemas/Competitors_2.Methods.Orders.Del.Exec'
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
+  /get/competitors_2/orders/:
+    post:
+      operationId: GetCompetitors2Orders
+      tags:
+        - Competitors_2
+      summary: Получить список оплаченных отчетов
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Competitors_2.Methods.Orders.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            $ref: '#/components/schemas/Competitors_2.Methods.Orders.Get.Exec'
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
   /edit/content_2/authors/:
     post:
       operationId: EditContent2Authors
@@ -14729,6 +14791,37 @@ paths:
             model:
               schema:
                 type: 'null'
+  /get/competitors_2/orders/byUrl/info/:
+    post:
+      operationId: GetCompetitors2OrdersByUrlInfo
+      tags:
+        - Competitors_2
+      summary: Получение информации об отчете (вернет нулевые данные, если отчет уже оплачен)
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Competitors_2.Methods.Orders.ByUrl.Info.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            $ref: '#/components/schemas/Competitors_2.Methods.Orders.ByUrl.Info.Get.Exec'
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
   /get/content_2/apometr/snapshots/top/:
     post:
       operationId: GetContent2ApometrSnapshotsTop
@@ -15828,68 +15921,6 @@ paths:
               schema:
                 type: string
                 format: binary
-  /del/competitors_2/orders/:
-    post:
-      operationId: DelCompetitors2Orders
-      tags:
-        - Competitors_2
-      summary: Удаление отчета
-      requestBody:
-        content:
-          application/json:
-            schema:
-              $ref: '#/components/schemas/Competitors_2.Methods.Orders.Del'
-        required: true
-      responses:
-        '200':
-          description: ''
-          content:
-            application/json:
-              schema:
-                oneOf:
-                  - allOf:
-                      - type: object
-                        properties:
-                          result:
-                            $ref: '#/components/schemas/Competitors_2.Methods.Orders.Del.Exec'
-                        required:
-                          - result
-                      - $ref: '#/components/schemas/ResponseSuccess'
-                  - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
-  /get/competitors_2/orders/:
-    post:
-      operationId: GetCompetitors2Orders
-      tags:
-        - Competitors_2
-      summary: Получить список оплаченных отчетов
-      requestBody:
-        content:
-          application/json:
-            schema:
-              $ref: '#/components/schemas/Competitors_2.Methods.Orders.Get'
-        required: true
-      responses:
-        '200':
-          description: ''
-          content:
-            application/json:
-              schema:
-                oneOf:
-                  - allOf:
-                      - type: object
-                        properties:
-                          result:
-                            $ref: '#/components/schemas/Competitors_2.Methods.Orders.Get.Exec'
-                        required:
-                          - result
-                      - $ref: '#/components/schemas/ResponseSuccess'
-                  - $ref: '#/components/schemas/ResponseError'
-            model:
-              schema:
-                type: 'null'
 components:
   securitySchemes:
     authToken:
@@ -20329,6 +20360,49 @@ components:
         - by_type
       title: Получение даты проверок по заданному критерию (последние 12)
     Competitors_2.Methods.Dates.Get.Exec:
+      type: array
+    Competitors_2.Methods.Orders.Del:
+      type: object
+      properties:
+        id:
+          title: Id отчета
+          type: integer
+      required:
+        - id
+      title: Удаление отчета
+    Competitors_2.Methods.Orders.Del.Exec:
+      nullable: true
+      type: integer
+    Competitors_2.Methods.Orders.Get:
+      type: object
+      properties:
+        region_index:
+          title: Индекс региона (не путать с ключом региона)
+          nullable: true
+          type: integer
+        query:
+          title: |-
+            - ключевая фраза или ее часть (by_type = keyword)
+            - url (by_type = url)
+          nullable: true
+          type: string
+        by_type:
+          nullable: true
+          allOf:
+            - $ref: '#/components/schemas/Competitors_2.Types.ReportType'
+        date:
+          title: Дата проверки
+          nullable: true
+          allOf:
+            - $ref: '#/components/schemas/TV.API.Types.Date'
+        deleted:
+          title: Показать удаленные отчеты
+          nullable: true
+          type: boolean
+      required: []
+      title: Получить список оплаченных отчетов
+    Competitors_2.Methods.Orders.Get.Exec:
+      nullable: true
       type: array
     Content_2.Methods.Authors.Edit:
       type: object
@@ -33543,6 +33617,56 @@ components:
       title: Сводки с количеством изменений по каждому типу проверки
       nullable: true
       type: array
+    TV.API.Types.UrlUTF:
+      type: string
+      title: |-
+        URL не в punycode, может содержать UTF-символы:
+        - без "<" и ">"
+
+        Будет проивзедено автоматическое приведение к формату
+
+        Разрешен ввод пустой строки, для удаления значения url
+    Competitors_2.Methods.Orders.ByUrl.Info.Get:
+      type: object
+      properties:
+        region_index:
+          title: Индекс региона (не путать с ключом региона)
+          type: integer
+        query:
+          title: Url
+          allOf:
+            - $ref: '#/components/schemas/TV.API.Types.UrlUTF'
+        date:
+          title: Дата проверки
+          allOf:
+            - $ref: '#/components/schemas/TV.API.Types.Date'
+        short_if_paid:
+          title: Не возвращать информацию кроме is_paymented, если отчет оплачен
+          type: boolean
+        short_domains_info:
+          title: Не возвращать подробную информацию о подобранных доменах (count_competitors_keywords и count_competitors_ads)
+          type: boolean
+        apply_discount:
+          title: Отображать сумму с учетом скидки (по умолчанию 1)
+          default: 1
+          type: integer
+        deleted:
+          title: Использовать удаленные отчеты
+          type: boolean
+        strict_query:
+          title: Строгая url
+          type: boolean
+        intersection:
+          title: Степень схожести конкурентов для сравнения
+          type: number
+      required:
+        - region_index
+        - query
+        - date
+        - intersection
+      title: Получение информации об отчете (вернет нулевые данные, если отчет уже оплачен)
+    Competitors_2.Methods.Orders.ByUrl.Info.Get.Exec:
+      type: array
     Content_2.Methods.Apometr.Snapshots.Top.Get:
       type: object
       properties:
@@ -34267,11 +34391,6 @@ components:
           title: Количество дней в диапазоне
           default: 31
           type: integer
-        output:
-          title: Получение данных по всем запросам (недокументируемый параметр, используется в экспорте)
-          nullable: true
-          allOf:
-            - $ref: '#/components/schemas/Snapshots_2.Types.History.Export.Output'
         only_exists_first_date:
           title: |-
             Только запросы, присутствующие в первой проверке указанного периода
@@ -34376,11 +34495,6 @@ components:
           title: Количество дней в диапазоне
           default: 31
           type: integer
-        output:
-          title: Получение данных по всем запросам (недокументируемый параметр, используется в экспорте)
-          nullable: true
-          allOf:
-            - $ref: '#/components/schemas/Snapshots_2.Types.History.Export.Output'
         only_exists_first_date:
           title: |-
             Только запросы, присутствующие в первой проверке указанного периода
@@ -34673,46 +34787,3 @@ components:
         Вернет случайный набор символов в формате application/json; charset=utf-8
 
         URL для теста: https://topvisor.com/ajax/get.php?module=system_2&func=common_tests_speed_file&size=$size&token=$token
-    Competitors_2.Methods.Orders.Del:
-      type: object
-      properties:
-        id:
-          title: Id отчета
-          type: integer
-      required:
-        - id
-      title: Удаление отчета
-    Competitors_2.Methods.Orders.Del.Exec:
-      nullable: true
-      type: integer
-    Competitors_2.Methods.Orders.Get:
-      type: object
-      properties:
-        region_index:
-          title: Индекс региона (не путать с ключом региона)
-          nullable: true
-          type: integer
-        query:
-          title: |-
-            - ключевая фраза или ее часть (by_type = keyword)
-            - url (by_type = url)
-          nullable: true
-          type: string
-        by_type:
-          nullable: true
-          allOf:
-            - $ref: '#/components/schemas/Competitors_2.Types.ReportType'
-        date:
-          title: Дата проверки
-          nullable: true
-          allOf:
-            - $ref: '#/components/schemas/TV.API.Types.Date'
-        deleted:
-          title: Показать удаленные отчеты
-          nullable: true
-          type: boolean
-      required: []
-      title: Получить список оплаченных отчетов
-    Competitors_2.Methods.Orders.Get.Exec:
-      nullable: true
-      type: array
