@@ -13,10 +13,15 @@
                     "project_id": {
                         "title": "ID проекта",
                         "type": "integer"
+                    },
+                    "view": {
+                        "title": "Вид получаемых подсказок конкурентов",
+                        "type": "string"
                     }
                 },
                 "required": [
-                    "project_id"
+                    "project_id",
+                    "view"
                 ],
                 "title": "Получить подсазки конкурентов для добавления в проект\n\nДоступ по API закрыт"
             },

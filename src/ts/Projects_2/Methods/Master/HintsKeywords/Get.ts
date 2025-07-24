@@ -8,10 +8,13 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         /** Получить подсазки запросов для добавления в проект
+         *
          *     Доступ по API закрыт */
         "Projects_2.Methods.Master.HintsKeywords.Get": {
             /** ID проекта */
             project_id: number;
+            /** Вид получаемых подсказок конкурентов */
+            view: string;
         };
         "Projects_2.Methods.Master.HintsKeywords.Get.Exec": unknown[];
     };

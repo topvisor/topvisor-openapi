@@ -13,12 +13,17 @@
                     "project_id": {
                         "title": "ID проекта",
                         "type": "integer"
+                    },
+                    "view": {
+                        "title": "Вид получаемых подсказок конкурентов",
+                        "type": "string"
                     }
                 },
                 "required": [
-                    "project_id"
+                    "project_id",
+                    "view"
                 ],
-                "title": "Получить подсазки запросов для добавления в проект\nДоступ по API закрыт"
+                "title": "Получить подсазки запросов для добавления в проект\n\nДоступ по API закрыт"
             },
             "Projects_2.Methods.Master.HintsKeywords.Get.Exec": {
                 "type": "array"

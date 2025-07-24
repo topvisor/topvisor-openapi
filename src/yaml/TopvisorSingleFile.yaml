@@ -10920,6 +10920,7 @@ paths:
         - Projects_2
       summary: |-
         Получить подсазки запросов для добавления в проект
+
         Доступ по API закрыт
       requestBody:
         content:
@@ -30547,8 +30548,12 @@ components:
         project_id:
           title: ID проекта
           type: integer
+        view:
+          title: Вид получаемых подсказок конкурентов
+          type: string
       required:
         - project_id
+        - view
       title: |-
         Получить подсазки конкурентов для добавления в проект
 
@@ -30561,10 +30566,15 @@ components:
         project_id:
           title: ID проекта
           type: integer
+        view:
+          title: Вид получаемых подсказок конкурентов
+          type: string
       required:
         - project_id
+        - view
       title: |-
         Получить подсазки запросов для добавления в проект
+
         Доступ по API закрыт
     Projects_2.Methods.Master.HintsKeywords.Get.Exec:
       type: array

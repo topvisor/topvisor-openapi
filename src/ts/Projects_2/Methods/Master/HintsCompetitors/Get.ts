@@ -13,6 +13,8 @@ export interface components {
         "Projects_2.Methods.Master.HintsCompetitors.Get": {
             /** ID проекта */
             project_id: number;
+            /** Вид получаемых подсказок конкурентов */
+            view: string;
         };
         "Projects_2.Methods.Master.HintsCompetitors.Get.Exec": unknown[];
     };
