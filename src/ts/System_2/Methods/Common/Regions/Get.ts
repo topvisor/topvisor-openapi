@@ -12,10 +12,8 @@ export interface components {
             searcher_key: import('../../../../Positions_2/Types/SearcherKey.ts').components['schemas']['Positions_2.Types.SearcherKey'];
             /** Код страны по ISO 3166-1 alpha-2 */
             country_code?: string | null;
-            /** Поиск по */
-            term?: string | null;
             /** Поисковая фраза */
-            search?: string | null;
+            search: string;
             /** Искать только страны */
             only_countries?: boolean;
             /**

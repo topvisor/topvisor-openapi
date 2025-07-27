@@ -22,14 +22,8 @@
                         "nullable": true,
                         "type": "string"
                     },
-                    "term": {
-                        "title": "Поиск по",
-                        "nullable": true,
-                        "type": "string"
-                    },
                     "search": {
                         "title": "Поисковая фраза",
-                        "nullable": true,
                         "type": "string"
                     },
                     "only_countries": {
@@ -58,7 +52,8 @@
                     }
                 },
                 "required": [
-                    "searcher_key"
+                    "searcher_key",
+                    "search"
                 ],
                 "title": "Получение регионов для поисковиков с последующим кэшированием для Get запросов"
             },

@@ -10,7 +10,7 @@
             "Schedule_2.Methods.Settings.EmailsHints.Get": {
                 "type": "object",
                 "properties": {
-                    "term": {
+                    "search": {
                         "type": "string"
                     }
                 },

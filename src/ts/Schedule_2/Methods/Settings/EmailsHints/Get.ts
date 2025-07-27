@@ -9,7 +9,7 @@ export interface components {
     schemas: {
         /** Получить список email, используемых в любых расписаниях, к которым есть доступ у аккаунта */
         "Schedule_2.Methods.Settings.EmailsHints.Get": {
-            term?: string;
+            search?: string;
         };
         "Schedule_2.Methods.Settings.EmailsHints.Get.Exec": unknown[];
     };
