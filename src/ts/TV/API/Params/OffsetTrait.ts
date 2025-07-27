@@ -8,7 +8,7 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         "TV.API.Params.OffsetTrait": {
-            /** Число объектов, которое необходимо пропустить при получении резальтата
+            /** Число объектов, которое необходимо пропустить при получении результата
              *
              *     Используется в паре с limit */
             offset: number;

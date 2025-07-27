@@ -45,11 +45,6 @@
                             }
                         ]
                     },
-                    "page": {
-                        "title": "Номер страницы (для использования в SQL)",
-                        "default": 1,
-                        "type": "integer"
-                    },
                     "project_id": {
                         "$ref": "../../../../TV/API/Params/ProjectIdTrait.json#/components/schemas/TV.API.Params.ProjectIdTrait/properties/project_id"
                     },

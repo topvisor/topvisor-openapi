@@ -28,11 +28,6 @@
                             }
                         ]
                     },
-                    "page": {
-                        "title": "Номер страницы (для использования в SQL)",
-                        "default": 1,
-                        "type": "integer"
-                    },
                     "limit": {
                         "$ref": "../../../../../TV/API/Params/LimitTrait.json#/components/schemas/TV.API.Params.LimitTrait/properties/limit"
                     },

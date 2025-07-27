@@ -19,11 +19,6 @@ export interface components {
             show_locations?: boolean;
             /** Фильтр по категориям кодов */
             http_codes_hundreds?: import('../../../../TV/API/Types/IntArray.ts').components['schemas']['TV.API.Types.IntArray'] | null;
-            /**
-             * Номер страницы (для использования в SQL)
-             * @default 1
-             */
-            page: number;
             project_id: import('../../../../TV/API/Params/ProjectIdTrait.ts').components['schemas']['TV.API.Params.ProjectIdTrait']['project_id'];
             limit?: import('../../../../TV/API/Params/LimitTrait.ts').components['schemas']['TV.API.Params.LimitTrait']['limit'];
             offset?: import('../../../../TV/API/Params/OffsetTrait.ts').components['schemas']['TV.API.Params.OffsetTrait']['offset'];

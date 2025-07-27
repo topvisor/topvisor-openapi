@@ -26,26 +26,11 @@
                             }
                         ]
                     },
-                    "rows": {
-                        "title": "Количество элементов на странице",
-                        "type": "integer"
-                    },
-                    "sidx": {
-                        "title": "Имя поля по которому будет вестись сортировка",
-                        "type": "string"
-                    },
-                    "sord": {
-                        "title": "Направление сортировки",
-                        "type": "string"
-                    },
                     "limit": {
                         "$ref": "../../../TV/API/Params/LimitTrait.json#/components/schemas/TV.API.Params.LimitTrait/properties/limit"
                     },
                     "offset": {
                         "$ref": "../../../TV/API/Params/OffsetTrait.json#/components/schemas/TV.API.Params.OffsetTrait/properties/offset"
-                    },
-                    "page": {
-                        "$ref": "../../../TV/API/Params/PageTrait.json#/components/schemas/TV.API.Params.PageTrait/properties/page"
                     }
                 },
                 "required": [

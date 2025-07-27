@@ -13,15 +13,8 @@ export interface components {
             calls: import('../../Types/Calls/Calls.ts').components['schemas']['System_2.Types.Calls.Calls'];
             /** @default apiV2 */
             getFormat: import('../../Types/Calls/Format.ts').components['schemas']['System_2.Types.Calls.Format'];
-            /** Количество элементов на странице */
-            rows?: number;
-            /** Имя поля по которому будет вестись сортировка */
-            sidx?: string;
-            /** Направление сортировки */
-            sord?: string;
             limit?: import('../../../TV/API/Params/LimitTrait.ts').components['schemas']['TV.API.Params.LimitTrait']['limit'];
             offset?: import('../../../TV/API/Params/OffsetTrait.ts').components['schemas']['TV.API.Params.OffsetTrait']['offset'];
-            page?: import('../../../TV/API/Params/PageTrait.ts').components['schemas']['TV.API.Params.PageTrait']['page'];
         };
         "System_2.Methods.Calls.Get.Exec": unknown[];
     };

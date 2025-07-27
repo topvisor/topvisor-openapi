@@ -16200,7 +16200,7 @@ components:
       type: integer
     offset:
       title: |-
-        Число объектов, которое необходимо пропустить при получении резальтата
+        Число объектов, которое необходимо пропустить при получении результата
 
         Используется в паре с limit
       type: integer
@@ -23753,13 +23753,6 @@ components:
         @method Date[] getValues()
         @method Date current()
         @see \TV\API\Types\Date
-    page:
-      title: |-
-        Порядковый номер деления массива объектов с помощью limit, который используется для определения количество пропускамых объектов (offset)
-
-        Используется в паре с limit и offset
-      default: 1
-      type: integer
     Snapshots_2.Methods.Competitors.AbstractRegular:
       type: object
       properties:
@@ -23868,8 +23861,6 @@ components:
           $ref: '#/components/schemas/limit'
         offset:
           $ref: '#/components/schemas/offset'
-        page:
-          $ref: '#/components/schemas/page'
         fetch_style:
           $ref: '#/components/schemas/fetch_style'
       required:
@@ -23992,8 +23983,6 @@ components:
           $ref: '#/components/schemas/limit'
         offset:
           $ref: '#/components/schemas/offset'
-        page:
-          $ref: '#/components/schemas/page'
         fetch_style:
           $ref: '#/components/schemas/fetch_style'
       required:
@@ -24238,8 +24227,6 @@ components:
           $ref: '#/components/schemas/limit'
         offset:
           $ref: '#/components/schemas/offset'
-        page:
-          $ref: '#/components/schemas/page'
         fetch_style:
           $ref: '#/components/schemas/fetch_style'
       required:
@@ -24254,6 +24241,13 @@ components:
 
         Не менять `protected`, проверка проводится при генерации схем в `TV\API\Objects\ClassAPIMethodInfo`
       nullable: true
+    page:
+      title: |-
+        Порядковый номер деления массива объектов с помощью limit, который используется для определения количество пропускамых объектов (offset)
+
+        Используется в паре с limit и offset
+      default: 1
+      type: integer
     Snapshots_2.Methods.History.Get:
       type: object
       properties:
@@ -24523,21 +24517,10 @@ components:
           default: apiV2
           allOf:
             - $ref: '#/components/schemas/System_2.Types.Calls.Format'
-        rows:
-          title: Количество элементов на странице
-          type: integer
-        sidx:
-          title: Имя поля по которому будет вестись сортировка
-          type: string
-        sord:
-          title: Направление сортировки
-          type: string
         limit:
           $ref: '#/components/schemas/limit'
         offset:
           $ref: '#/components/schemas/offset'
-        page:
-          $ref: '#/components/schemas/page'
       required:
         - calls
       title: Вызов нескольких методов в одном вызове
@@ -27844,10 +27827,6 @@ components:
           nullable: true
           allOf:
             - $ref: '#/components/schemas/TV.API.Types.IntArray'
-        page:
-          title: Номер страницы (для использования в SQL)
-          default: 1
-          type: integer
         project_id:
           $ref: '#/components/schemas/project_id'
         limit:
@@ -33223,10 +33202,6 @@ components:
           nullable: true
           allOf:
             - $ref: '#/components/schemas/TV.API.Types.Datetime'
-        page:
-          title: Номер страницы (для использования в SQL)
-          default: 1
-          type: integer
         limit:
           $ref: '#/components/schemas/limit'
         offset:

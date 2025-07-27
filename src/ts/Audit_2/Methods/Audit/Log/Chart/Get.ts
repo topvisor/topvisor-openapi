@@ -17,11 +17,6 @@ export interface components {
             time1?: import('../../../../../TV/API/Types/Datetime.ts').components['schemas']['TV.API.Types.Datetime'] | null;
             /** Фильтр по периоду */
             time2?: import('../../../../../TV/API/Types/Datetime.ts').components['schemas']['TV.API.Types.Datetime'] | null;
-            /**
-             * Номер страницы (для использования в SQL)
-             * @default 1
-             */
-            page: number;
             limit?: import('../../../../../TV/API/Params/LimitTrait.ts').components['schemas']['TV.API.Params.LimitTrait']['limit'];
             offset?: import('../../../../../TV/API/Params/OffsetTrait.ts').components['schemas']['TV.API.Params.OffsetTrait']['offset'];
             project_id: import('../../../../../TV/API/Params/ProjectIdTrait.ts').components['schemas']['TV.API.Params.ProjectIdTrait']['project_id'];
