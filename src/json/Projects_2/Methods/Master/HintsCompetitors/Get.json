@@ -13,19 +13,10 @@
                     "project_id": {
                         "title": "ID проекта",
                         "type": "integer"
-                    },
-                    "view": {
-                        "title": "Вид получаемых подсказок конкурентов",
-                        "allOf": [
-                            {
-                                "$ref": "../../../../Competitors_2/Types/ByUrl/Table/View.json#/components/schemas/Competitors_2.Types.ByUrl.Table.View"
-                            }
-                        ]
                     }
                 },
                 "required": [
-                    "project_id",
-                    "view"
+                    "project_id"
                 ],
                 "title": "Получить подсазки конкурентов для добавления в проект\n\nДоступ по API закрыт"
             },
