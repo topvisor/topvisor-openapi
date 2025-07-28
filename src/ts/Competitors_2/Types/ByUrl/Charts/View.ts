@@ -7,7 +7,10 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** @enum {string} */
+        /**
+         * Тип отчета
+         * @enum {string}
+         */
         "Competitors_2.Types.ByUrl.Charts.View": "keywords" | "domains" | "structure";
     };
     responses: never;

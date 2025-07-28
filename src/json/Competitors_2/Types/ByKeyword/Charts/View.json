@@ -11,9 +11,10 @@
                 "type": "string",
                 "enum": [
                     "wordstat",
-                    "similar",
-                    "leaders"
-                ]
+                    "leaders",
+                    "similar"
+                ],
+                "title": "Тип отчета"
             }
         }
     }
