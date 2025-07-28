@@ -30527,6 +30527,7 @@ components:
         - keywords
         - domains
         - structure
+      title: Тип отчета
     Projects_2.Methods.Master.HintsCompetitors.Get:
       type: object
       properties:
