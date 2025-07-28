@@ -1,0 +1,25 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Competitors_2.Types.ByKeyword.Charts.Leaders.Type",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Competitors_2.Types.ByKeyword.Charts.Leaders.Type": {
+                "type": "string",
+                "enum": [
+                    "small",
+                    "count_keywords",
+                    "avg_position",
+                    "visibility",
+                    "sum_traffic",
+                    "sum_month_cost_rub",
+                    "sum_month_cost_usd"
+                ],
+                "title": "Тип графика"
+            }
+        }
+    }
+}
