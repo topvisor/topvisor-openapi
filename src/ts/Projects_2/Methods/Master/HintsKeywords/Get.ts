@@ -13,8 +13,6 @@ export interface components {
         "Projects_2.Methods.Master.HintsKeywords.Get": {
             /** ID проекта */
             project_id: number;
-            /** Вид получаемых подсказок конкурентов */
-            view: import('../../../../Competitors_2/Types/ByUrl/Table/View.ts').components['schemas']['Competitors_2.Types.ByUrl.Table.View'];
         };
         "Projects_2.Methods.Master.HintsKeywords.Get.Exec": unknown[];
     };

@@ -30553,13 +30553,8 @@ components:
         project_id:
           title: ID проекта
           type: integer
-        view:
-          title: Вид получаемых подсказок конкурентов
-          allOf:
-            - $ref: '#/components/schemas/Competitors_2.Types.ByUrl.Table.View'
       required:
         - project_id
-        - view
       title: |-
         Получить подсазки запросов для добавления в проект
 
