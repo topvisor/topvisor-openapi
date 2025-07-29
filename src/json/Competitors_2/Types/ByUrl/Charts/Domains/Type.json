@@ -1,0 +1,27 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Competitors_2.Types.ByUrl.Charts.Domains.Type",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Competitors_2.Types.ByUrl.Charts.Domains.Type": {
+                "type": "string",
+                "enum": [
+                    "small",
+                    "summary",
+                    "count_keywords",
+                    "avg_position",
+                    "visibility",
+                    "sum_traffic",
+                    "sum_traffic_forecast",
+                    "sum_month_cost_rub",
+                    "sum_month_cost_usd"
+                ],
+                "title": "Тип графика"
+            }
+        }
+    }
+}
