@@ -13,7 +13,7 @@ export interface components {
             region_index: number;
             /**
              * Тип отчета (по ключевой фразе или по домену)
-             * @description @see Competitors_2::$availableByTypes
+             * @description @see Competitors_2\Mods\Competitors::$availableByTypes
              */
             by_type: string;
             /** Ключевая фраза (или ее часть) / url */

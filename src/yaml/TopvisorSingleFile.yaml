@@ -28869,7 +28869,7 @@ components:
           type: integer
         by_type:
           title: Тип отчета (по ключевой фразе или по домену)
-          description: '@see Competitors_2::$availableByTypes'
+          description: '@see Competitors_2\Mods\Competitors::$availableByTypes'
           type: string
         query:
           title: Ключевая фраза (или ее часть) / url
