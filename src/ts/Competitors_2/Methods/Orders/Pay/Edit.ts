@@ -28,7 +28,7 @@ export interface components {
             short_domains_info?: boolean;
             /** Использовать удаленные отчеты */
             deleted?: boolean;
-            /** Строгая url */
+            /** Делать ли проверку на наоичие пути в URL (используется при (by_type = url)) */
             strict_query?: boolean;
             /** Получить краткую статистику, только количество конкурентов */
             short?: boolean;

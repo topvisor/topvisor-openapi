@@ -35,7 +35,7 @@
                         ]
                     },
                     "strict_query": {
-                        "title": "Строгая url",
+                        "title": "Делать ли проверку на наоичие пути в URL (используется при (by_type = url))",
                         "type": "boolean"
                     }
                 },

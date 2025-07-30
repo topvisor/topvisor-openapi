@@ -20387,7 +20387,7 @@ components:
           allOf:
             - $ref: '#/components/schemas/TV.API.Types.Date'
         strict_query:
-          title: Строгая url
+          title: Делать ли проверку на наоичие пути в URL (используется при (by_type = url))
           type: boolean
       required:
         - region_index
@@ -28894,7 +28894,7 @@ components:
           title: Использовать удаленные отчеты
           type: boolean
         strict_query:
-          title: Строгая url
+          title: Делать ли проверку на наоичие пути в URL (используется при (by_type = url))
           type: boolean
         short:
           title: Получить краткую статистику, только количество конкурентов
@@ -33716,7 +33716,7 @@ components:
           title: Использовать удаленные отчеты
           type: boolean
         strict_query:
-          title: Строгая url
+          title: Делать ли проверку на наоичие пути в URL (используется при (by_type = url))
           type: boolean
         intersection:
           title: Степень схожести конкурентов для сравнения

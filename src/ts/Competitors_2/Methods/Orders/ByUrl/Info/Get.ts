@@ -26,7 +26,7 @@ export interface components {
             apply_discount: number;
             /** Использовать удаленные отчеты */
             deleted?: boolean;
-            /** Строгая url */
+            /** Делать ли проверку на наоичие пути в URL (используется при (by_type = url)) */
             strict_query?: boolean;
             /** Степень схожести конкурентов для сравнения */
             intersection: number;
