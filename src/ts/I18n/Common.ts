@@ -980,6 +980,8 @@ export interface components {
             readonly Report_an_error_response: "We've got your error report. Thanks!\nIf we should have any additional questions, we'll send you a ticket. To open tickets, hit 💌 Tickets in the header.";
             /** @constant */
             readonly Knowledge_base: "Resources";
+            /** @constant */
+            readonly AllowCookies: "Allow all";
         };
     };
     responses: never;
