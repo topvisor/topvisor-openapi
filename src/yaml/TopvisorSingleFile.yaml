@@ -16166,7 +16166,7 @@ components:
       title: |-
         Список полей объекта, по которым необходимо выполнить сортировку
 
-        Поля могут быть строками или объектом: {name: string, direction: 'ASC' | 'DESC', orderValues: array}
+        Поля могут быть строками или объектом: {name: string, direction: 'ASC' | 'DESC', orderValues: array, operator: string, values: array}
 
         Использует поля модели
       description: '@see AbstractMethod::MODEL'
@@ -24244,13 +24244,6 @@ components:
 
         Не менять `protected`, проверка проводится при генерации схем в `TV\API\Objects\ClassAPIMethodInfo`
       nullable: true
-    page:
-      title: |-
-        Порядковый номер деления массива объектов с помощью limit, который используется для определения количество пропускамых объектов (offset)
-
-        Используется в паре с limit и offset
-      default: 1
-      type: integer
     Snapshots_2.Methods.History.Get:
       type: object
       properties:
@@ -24347,8 +24340,6 @@ components:
           $ref: '#/components/schemas/limit'
         offset:
           $ref: '#/components/schemas/offset'
-        page:
-          $ref: '#/components/schemas/page'
         fetch_style:
           $ref: '#/components/schemas/fetch_style'
       required:
@@ -30856,6 +30847,13 @@ components:
       title: Получить список email, используемых в любых расписаниях, к которым есть доступ у аккаунта
     Schedule_2.Methods.Settings.EmailsHints.Get.Exec:
       type: array
+    page:
+      title: |-
+        Порядковый номер деления массива объектов с помощью limit, который используется для определения количество пропускамых объектов (offset)
+
+        Используется в паре с limit и offset
+      default: 1
+      type: integer
     Snapshots_2.Methods.Competitors.Chart.Get:
       type: object
       properties:
