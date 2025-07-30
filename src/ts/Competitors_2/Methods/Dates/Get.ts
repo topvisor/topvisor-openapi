@@ -17,6 +17,8 @@ export interface components {
             by_type: import('../../Types/ReportType.ts').components['schemas']['Competitors_2.Types.ReportType'];
             /** Дата проверки */
             date?: import('../../../TV/API/Types/Date.ts').components['schemas']['TV.API.Types.Date'] | null;
+            /** Строгая url */
+            strict_query?: boolean;
         };
         "Competitors_2.Methods.Dates.Get.Exec": unknown[];
     };

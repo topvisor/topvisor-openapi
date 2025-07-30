@@ -20386,6 +20386,9 @@ components:
           nullable: true
           allOf:
             - $ref: '#/components/schemas/TV.API.Types.Date'
+        strict_query:
+          title: Строгая url
+          type: boolean
       required:
         - region_index
         - query

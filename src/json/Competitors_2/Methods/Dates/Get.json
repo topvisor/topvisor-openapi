@@ -33,6 +33,10 @@
                                 "$ref": "../../../TV/API/Types/Date.json#/components/schemas/TV.API.Types.Date"
                             }
                         ]
+                    },
+                    "strict_query": {
+                        "title": "Строгая url",
+                        "type": "boolean"
                     }
                 },
                 "required": [
