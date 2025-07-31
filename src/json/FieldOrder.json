@@ -25,10 +25,12 @@
                     },
                     "orderValues": {
                         "title": "Список значений поля, для ручной сортировки",
+                        "nullable": true,
                         "type": "array"
                     },
                     "operator": {
                         "title": "Оператор сравнения",
+                        "nullable": true,
                         "allOf": [
                             {
                                 "$ref": "FieldOperator.json#/components/schemas/FieldOperator"
@@ -37,15 +39,13 @@
                     },
                     "values": {
                         "title": "Значения для сравенния\n\nВ зависимости от типа условия оно может иметь разное количество значений\n\nОбычно оно имеет только одно значение",
+                        "nullable": true,
                         "type": "array"
                     }
                 },
                 "required": [
                     "name",
-                    "direction",
-                    "orderValues",
-                    "operator",
-                    "values"
+                    "direction"
                 ],
                 "title": "Поле сортировки"
             }

@@ -17,15 +17,15 @@ export interface components {
              */
             direction: import('./FieldDirection.ts').components['schemas']['FieldDirection'];
             /** Список значений поля, для ручной сортировки */
-            orderValues: unknown[];
+            orderValues?: unknown[] | null;
             /** Оператор сравнения */
-            operator: import('./FieldOperator.ts').components['schemas']['FieldOperator'];
+            operator?: import('./FieldOperator.ts').components['schemas']['FieldOperator'] | null;
             /** Значения для сравенния
              *
              *     В зависимости от типа условия оно может иметь разное количество значений
              *
              *     Обычно оно имеет только одно значение */
-            values: unknown[];
+            values?: unknown[] | null;
         };
     };
     responses: never;
