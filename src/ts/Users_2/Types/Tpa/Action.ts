@@ -8,10 +8,10 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         /**
-         * Дополнительный сегмент топа
-         * @enum {integer}
+         * Действие, выполняемое при авторизации
+         * @enum {string}
          */
-        "Users_2.Types.Profile.PositionsTopSegment": 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9;
+        "Users_2.Types.Tpa.Action": "auth" | "join";
     };
     responses: never;
     parameters: never;

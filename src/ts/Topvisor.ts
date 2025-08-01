@@ -5994,6 +5994,7 @@ export interface paths {
         trace?: never;
     };  
     /** Получить подсазки запросов для добавления в проект
+     *
      *     Доступ по API закрыт */
     "/get/projects_2/master/hintsKeywords/": {
         parameters: {
@@ -8749,6 +8750,104 @@ export interface paths {
         get?: never;
         put?: never;
         post: operations["GetUsers2StatsAccountPs"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /**
+     * Авторизация через Apple ID
+     * @description @see https://developer.apple.com/documentation/sign_in_with_apple/sign_in_with_apple_js/configuring_your_webpage_for_sign_in_with_apple
+     */
+    "/get/users_2/tpa/apple/auth/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["GetUsers2TpaAppleAuth"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /** Авторизация через Facebook */
+    "/get/users_2/tpa/facebook/auth/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["GetUsers2TpaFacebookAuth"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /**
+     * Авторизация через Google
+     * @description @see https://developers.google.com/identity/gsi/web/reference/js-reference
+     *     @see https://developers.google.com/identity/gsi/web/guides/verify-google-id-token
+     */
+    "/get/users_2/tpa/google/auth/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["GetUsers2TpaGoogleAuth"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /**
+     * Авторизация через VK ID
+     * @description @see https://id.vk.com/about/business/go/docs/ru/vkid/latest/vk-id/connection/api-integration/api-description
+     */
+    "/get/users_2/tpa/vk/auth/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["GetUsers2TpaVkAuth"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
+    /**
+     * Авторизация через Яндекс ID
+     * @description @see https://yandex.ru/dev/id/doc/ru/user-information
+     */
+    "/get/users_2/tpa/yandex/auth/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["GetUsers2TpaYandexAuth"];
         delete?: never;
         options?: never;
         head?: never;
@@ -21887,6 +21986,136 @@ export interface operations {
                 content: {
                     "application/json": ({
                         result: import('./Users_2/Methods/Stats/Account/Ps/Get.ts').components['schemas']['Users_2.Methods.Stats.Account.Ps.Get.Exec'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: null;
+                };
+            };
+        };
+    };
+    GetUsers2TpaAppleAuth: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Users_2/Methods/Tpa/Apple/Auth/Get.ts').components['schemas']['Users_2.Methods.Tpa.Apple.Auth.Get'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./Users_2/Methods/Tpa/Apple/Auth/Get.ts').components['schemas']['Users_2.Methods.Tpa.Apple.Auth.Get.Exec'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: null;
+                };
+            };
+        };
+    };
+    GetUsers2TpaFacebookAuth: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Users_2/Methods/Tpa/Facebook/Auth/Get.ts').components['schemas']['Users_2.Methods.Tpa.Facebook.Auth.Get'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./Users_2/Methods/Tpa/Facebook/Auth/Get.ts').components['schemas']['Users_2.Methods.Tpa.Facebook.Auth.Get.Exec'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: null;
+                };
+            };
+        };
+    };
+    GetUsers2TpaGoogleAuth: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Users_2/Methods/Tpa/Google/Auth/Get.ts').components['schemas']['Users_2.Methods.Tpa.Google.Auth.Get'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./Users_2/Methods/Tpa/Google/Auth/Get.ts').components['schemas']['Users_2.Methods.Tpa.Google.Auth.Get.Exec'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: null;
+                };
+            };
+        };
+    };
+    GetUsers2TpaVkAuth: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Users_2/Methods/Tpa/Vk/Auth/Get.ts').components['schemas']['Users_2.Methods.Tpa.Vk.Auth.Get'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./Users_2/Methods/Tpa/Vk/Auth/Get.ts').components['schemas']['Users_2.Methods.Tpa.Vk.Auth.Get.Exec'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: null;
+                };
+            };
+        };
+    };
+    GetUsers2TpaYandexAuth: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Users_2/Methods/Tpa/Yandex/Auth/Get.ts').components['schemas']['Users_2.Methods.Tpa.Yandex.Auth.Get'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./Users_2/Methods/Tpa/Yandex/Auth/Get.ts').components['schemas']['Users_2.Methods.Tpa.Yandex.Auth.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };

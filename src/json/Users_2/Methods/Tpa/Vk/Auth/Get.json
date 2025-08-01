@@ -1,0 +1,58 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Users_2.Methods.Tpa.Vk.Auth.Get",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Users_2.Methods.Tpa.Vk.Auth.Get": {
+                "type": "object",
+                "properties": {
+                    "code": {
+                        "title": "Код подтверждения для получения OAuth-токена",
+                        "type": "string"
+                    },
+                    "device_id": {
+                        "title": "Id девайса, с которого была выполнена аутентификация",
+                        "type": "string"
+                    },
+                    "state": {
+                        "title": "Дополнительные данные, записанные с начала авторизации",
+                        "type": "string"
+                    },
+                    "code_verifier": {
+                        "title": "Код верификации, полученный при генерации ссылки",
+                        "type": "string"
+                    },
+                    "action": {
+                        "allOf": [
+                            {
+                                "$ref": "../../../../../Users_2/Types/Tpa/Action.json#/components/schemas/Users_2.Types.Tpa.Action"
+                            }
+                        ]
+                    },
+                    "redirect": {
+                        "title": "Url редиректа после авторизации",
+                        "type": "string"
+                    }
+                },
+                "required": [
+                    "code",
+                    "device_id",
+                    "state",
+                    "code_verifier",
+                    "action",
+                    "redirect"
+                ],
+                "title": "Авторизация через VK ID",
+                "description": "@see https://id.vk.com/about/business/go/docs/ru/vkid/latest/vk-id/connection/api-integration/api-description"
+            },
+            "Users_2.Methods.Tpa.Vk.Auth.Get.Exec": {
+                "nullable": true,
+                "type": "array"
+            }
+        }
+    }
+}

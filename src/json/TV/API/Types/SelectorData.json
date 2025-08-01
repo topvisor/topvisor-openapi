@@ -1,0 +1,48 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/TV.API.Types.SelectorData",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "TV.API.Types.SelectorData": {
+                "type": "object",
+                "properties": {
+                    "fields": {
+                        "type": "array"
+                    },
+                    "filters": {
+                        "type": "array"
+                    },
+                    "id": {
+                        "nullable": true,
+                        "type": "integer"
+                    },
+                    "orders": {
+                        "type": "array"
+                    },
+                    "limit": {
+                        "nullable": true,
+                        "type": "integer"
+                    },
+                    "offset": {
+                        "type": "integer"
+                    },
+                    "fetch_style": {
+                        "nullable": true,
+                        "type": "string"
+                    }
+                },
+                "required": [
+                    "fields",
+                    "filters",
+                    "orders",
+                    "offset"
+                ],
+                "title": "Объект параметров Selector"
+            }
+        }
+    }
+}

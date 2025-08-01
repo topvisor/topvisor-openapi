@@ -11,11 +11,8 @@
                 "type": "object",
                 "properties": {
                     "theme": {
-                        "allOf": [
-                            {
-                                "$ref": "../../../../Users_2/Types/Profile/Theme.json#/components/schemas/Users_2.Types.Profile.Theme"
-                            }
-                        ]
+                        "title": "Тема сайта",
+                        "type": "string"
                     }
                 },
                 "required": [

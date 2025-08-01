@@ -91,6 +91,10 @@ export interface components {
             /** @constant */
             readonly Resource_admin: "Admin link";
             /** @constant */
+            readonly Send: "Send";
+            /** @constant */
+            readonly Go_to_new_line: "Go to a new line";
+            /** @constant */
             readonly Bad: "Bad";
             /** @constant */
             readonly Normal: "OK";

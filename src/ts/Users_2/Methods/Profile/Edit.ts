@@ -21,7 +21,7 @@ export interface components {
             positions_reverse_dates?: boolean | null;
             /** Позиции, просмотр отчета: запоминать последние выбранные регионы */
             positions_save_regions?: boolean | null;
-            positions_top_segments?: import('../../Types/Profile/PositionsTopSegment.ts').components['schemas']['Users_2.Types.Profile.PositionsTopSegment'] | null;
+            positions_top_segments?: import('../../../Positions_2/Types/TopSegment.ts').components['schemas']['Positions_2.Types.TopSegment'] | null;
         };
         "Users_2.Methods.Profile.Edit.Exec": number | null;
     };

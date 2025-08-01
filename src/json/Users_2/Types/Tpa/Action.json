@@ -1,0 +1,20 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Users_2.Types.Tpa.Action",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Users_2.Types.Tpa.Action": {
+                "type": "string",
+                "enum": [
+                    "auth",
+                    "join"
+                ],
+                "title": "Действие, выполняемое при авторизации"
+            }
+        }
+    }
+}

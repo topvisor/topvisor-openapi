@@ -39,7 +39,7 @@
                         "nullable": true,
                         "allOf": [
                             {
-                                "$ref": "../../../Users_2/Types/Profile/PositionsTopSegment.json#/components/schemas/Users_2.Types.Profile.PositionsTopSegment"
+                                "$ref": "../../../Positions_2/Types/TopSegment.json#/components/schemas/Positions_2.Types.TopSegment"
                             }
                         ]
                     }

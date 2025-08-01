@@ -1,0 +1,46 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Users_2.Methods.Tpa.Google.Auth.Get",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Users_2.Methods.Tpa.Google.Auth.Get": {
+                "type": "object",
+                "properties": {
+                    "jwt": {
+                        "title": "JWT токен",
+                        "type": "string"
+                    },
+                    "action": {
+                        "allOf": [
+                            {
+                                "$ref": "../../../../../Users_2/Types/Tpa/Action.json#/components/schemas/Users_2.Types.Tpa.Action"
+                            }
+                        ]
+                    },
+                    "lang": {
+                        "nullable": true,
+                        "allOf": [
+                            {
+                                "$ref": "../../../../../TV/API/Types/Lang.json#/components/schemas/TV.API.Types.Lang"
+                            }
+                        ]
+                    }
+                },
+                "required": [
+                    "jwt",
+                    "action"
+                ],
+                "title": "Авторизация через Google",
+                "description": "@see https://developers.google.com/identity/gsi/web/reference/js-reference\n@see https://developers.google.com/identity/gsi/web/guides/verify-google-id-token"
+            },
+            "Users_2.Methods.Tpa.Google.Auth.Get.Exec": {
+                "nullable": true,
+                "type": "array"
+            }
+        }
+    }
+}

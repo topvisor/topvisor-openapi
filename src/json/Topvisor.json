@@ -28944,6 +28944,300 @@
                 }
             }
         },
+        "/get/users_2/tpa/apple/auth/": {
+            "post": {
+                "operationId": "GetUsers2TpaAppleAuth",
+                "tags": [
+                    "Users_2"
+                ],
+                "summary": "Авторизация через Apple ID",
+                "description": "@see https://developer.apple.com/documentation/sign_in_with_apple/sign_in_with_apple_js/configuring_your_webpage_for_sign_in_with_apple",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Users_2/Methods/Tpa/Apple/Auth/Get.json#/components/schemas/Users_2.Methods.Tpa.Apple.Auth.Get"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "oneOf": [
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "$ref": "Users_2/Methods/Tpa/Apple/Auth/Get.json#/components/schemas/Users_2.Methods.Tpa.Apple.Auth.Get.Exec"
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "result"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
+                                        }
+                                    ]
+                                }
+                            },
+                            "model": {
+                                "schema": {
+                                    "type": "null"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/get/users_2/tpa/facebook/auth/": {
+            "post": {
+                "operationId": "GetUsers2TpaFacebookAuth",
+                "tags": [
+                    "Users_2"
+                ],
+                "summary": "Авторизация через Facebook",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Users_2/Methods/Tpa/Facebook/Auth/Get.json#/components/schemas/Users_2.Methods.Tpa.Facebook.Auth.Get"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "oneOf": [
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "$ref": "Users_2/Methods/Tpa/Facebook/Auth/Get.json#/components/schemas/Users_2.Methods.Tpa.Facebook.Auth.Get.Exec"
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "result"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
+                                        }
+                                    ]
+                                }
+                            },
+                            "model": {
+                                "schema": {
+                                    "type": "null"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/get/users_2/tpa/google/auth/": {
+            "post": {
+                "operationId": "GetUsers2TpaGoogleAuth",
+                "tags": [
+                    "Users_2"
+                ],
+                "summary": "Авторизация через Google",
+                "description": "@see https://developers.google.com/identity/gsi/web/reference/js-reference\n@see https://developers.google.com/identity/gsi/web/guides/verify-google-id-token",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Users_2/Methods/Tpa/Google/Auth/Get.json#/components/schemas/Users_2.Methods.Tpa.Google.Auth.Get"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "oneOf": [
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "$ref": "Users_2/Methods/Tpa/Google/Auth/Get.json#/components/schemas/Users_2.Methods.Tpa.Google.Auth.Get.Exec"
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "result"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
+                                        }
+                                    ]
+                                }
+                            },
+                            "model": {
+                                "schema": {
+                                    "type": "null"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/get/users_2/tpa/vk/auth/": {
+            "post": {
+                "operationId": "GetUsers2TpaVkAuth",
+                "tags": [
+                    "Users_2"
+                ],
+                "summary": "Авторизация через VK ID",
+                "description": "@see https://id.vk.com/about/business/go/docs/ru/vkid/latest/vk-id/connection/api-integration/api-description",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Users_2/Methods/Tpa/Vk/Auth/Get.json#/components/schemas/Users_2.Methods.Tpa.Vk.Auth.Get"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "oneOf": [
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "$ref": "Users_2/Methods/Tpa/Vk/Auth/Get.json#/components/schemas/Users_2.Methods.Tpa.Vk.Auth.Get.Exec"
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "result"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
+                                        }
+                                    ]
+                                }
+                            },
+                            "model": {
+                                "schema": {
+                                    "type": "null"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/get/users_2/tpa/yandex/auth/": {
+            "post": {
+                "operationId": "GetUsers2TpaYandexAuth",
+                "tags": [
+                    "Users_2"
+                ],
+                "summary": "Авторизация через Яндекс ID",
+                "description": "@see https://yandex.ru/dev/id/doc/ru/user-information",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Users_2/Methods/Tpa/Yandex/Auth/Get.json#/components/schemas/Users_2.Methods.Tpa.Yandex.Auth.Get"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "oneOf": [
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "$ref": "Users_2/Methods/Tpa/Yandex/Auth/Get.json#/components/schemas/Users_2.Methods.Tpa.Yandex.Auth.Get.Exec"
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "result"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
+                                        }
+                                    ]
+                                }
+                            },
+                            "model": {
+                                "schema": {
+                                    "type": "null"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
         "/add/admin_2/actions/positions/history/copy/": {
             "post": {
                 "operationId": "AddAdmin2ActionsPositionsHistoryCopy",

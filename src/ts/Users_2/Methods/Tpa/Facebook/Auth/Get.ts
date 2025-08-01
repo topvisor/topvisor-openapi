@@ -7,12 +7,13 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Изменение темы сайта */
-        "Users_2.Methods.Profile.Theme.Edit": {
-            /** Тема сайта */
-            theme: string;
+        /** Авторизация через Facebook */
+        "Users_2.Methods.Tpa.Facebook.Auth.Get": {
+            /** Токен доступа */
+            access_token: string;
+            action: import('../../../../Types/Tpa/Action.ts').components['schemas']['Users_2.Types.Tpa.Action'];
         };
-        "Users_2.Methods.Profile.Theme.Edit.Exec": number | null;
+        "Users_2.Methods.Tpa.Facebook.Auth.Get.Exec": unknown[] | null;
     };
     responses: never;
     parameters: never;

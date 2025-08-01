@@ -1,0 +1,37 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Users_2.Methods.Tpa.Facebook.Auth.Get",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Users_2.Methods.Tpa.Facebook.Auth.Get": {
+                "type": "object",
+                "properties": {
+                    "access_token": {
+                        "title": "Токен доступа",
+                        "type": "string"
+                    },
+                    "action": {
+                        "allOf": [
+                            {
+                                "$ref": "../../../../../Users_2/Types/Tpa/Action.json#/components/schemas/Users_2.Types.Tpa.Action"
+                            }
+                        ]
+                    }
+                },
+                "required": [
+                    "access_token",
+                    "action"
+                ],
+                "title": "Авторизация через Facebook"
+            },
+            "Users_2.Methods.Tpa.Facebook.Auth.Get.Exec": {
+                "nullable": true,
+                "type": "array"
+            }
+        }
+    }
+}

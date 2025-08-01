@@ -7,12 +7,16 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Изменение темы сайта */
-        "Users_2.Methods.Profile.Theme.Edit": {
-            /** Тема сайта */
-            theme: string;
+        /** Объект параметров Selector */
+        "TV.API.Types.SelectorData": {
+            fields: unknown[];
+            filters: unknown[];
+            id?: number | null;
+            orders: unknown[];
+            limit?: number | null;
+            offset: number;
+            fetch_style?: string | null;
         };
-        "Users_2.Methods.Profile.Theme.Edit.Exec": number | null;
     };
     responses: never;
     parameters: never;

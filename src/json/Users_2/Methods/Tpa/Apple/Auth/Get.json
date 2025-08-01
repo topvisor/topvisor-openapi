@@ -1,0 +1,38 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Users_2.Methods.Tpa.Apple.Auth.Get",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Users_2.Methods.Tpa.Apple.Auth.Get": {
+                "type": "object",
+                "properties": {
+                    "jwt": {
+                        "title": "JWT токен",
+                        "type": "string"
+                    },
+                    "action": {
+                        "allOf": [
+                            {
+                                "$ref": "../../../../../Users_2/Types/Tpa/Action.json#/components/schemas/Users_2.Types.Tpa.Action"
+                            }
+                        ]
+                    }
+                },
+                "required": [
+                    "jwt",
+                    "action"
+                ],
+                "title": "Авторизация через Apple ID",
+                "description": "@see https://developer.apple.com/documentation/sign_in_with_apple/sign_in_with_apple_js/configuring_your_webpage_for_sign_in_with_apple"
+            },
+            "Users_2.Methods.Tpa.Apple.Auth.Get.Exec": {
+                "nullable": true,
+                "type": "array"
+            }
+        }
+    }
+}

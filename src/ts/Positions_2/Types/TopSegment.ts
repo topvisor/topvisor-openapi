@@ -8,10 +8,10 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         /**
-         * Тема сайта
-         * @enum {string}
+         * Дополнительный сегмент топа
+         * @enum {integer}
          */
-        "Users_2.Types.Profile.Theme": "light" | "dark";
+        "Positions_2.Types.TopSegment": 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9;
     };
     responses: never;
     parameters: never;
