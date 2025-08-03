@@ -17914,14 +17914,14 @@ components:
           type: integer
         clip_x:
           title: |-
-            Координата x фрагмента
+            Координата фрагмента `x`
 
             Параметры clip и full_page нельзя использовать одновременно
           nullable: true
           type: integer
         clip_y:
           title: |-
-            Координата y фрагмента
+            Координата фрагмента `y`
 
             Параметры clip и full_page нельзя использовать одновременно
           nullable: true
@@ -21820,9 +21820,11 @@ components:
         - enum_numbers
       title: Метод с примерами параметров типа Enum
     Example_2.Methods.Array.Get.Exec:
-      title: Ассоциативный массив с результирующими переданными параетрами, и результатоми implodeQuotes() и genSet()
-      description: '@type array<string, array<string, mixed>>'
-      type: array
+      title: Ассоциативный массив с результирующими переданными параметрами и результатом implodeQuotes() и genSet()
+      type: object
+      additionalProperties:
+        type: object
+        additionalProperties: {}
     Example_2.Methods.Custom.Get:
       type: object
       properties:

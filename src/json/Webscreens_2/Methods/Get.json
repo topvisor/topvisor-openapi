@@ -50,12 +50,12 @@
                         "type": "integer"
                     },
                     "clip_x": {
-                        "title": "Координата x фрагмента\n\nПараметры clip и full_page нельзя использовать одновременно",
+                        "title": "Координата фрагмента `x`\n\nПараметры clip и full_page нельзя использовать одновременно",
                         "nullable": true,
                         "type": "integer"
                     },
                     "clip_y": {
-                        "title": "Координата y фрагмента\n\nПараметры clip и full_page нельзя использовать одновременно",
+                        "title": "Координата фрагмента `y`\n\nПараметры clip и full_page нельзя использовать одновременно",
                         "nullable": true,
                         "type": "integer"
                     }
