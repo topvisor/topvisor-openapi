@@ -2899,6 +2899,36 @@ paths:
             model:
               schema:
                 type: 'null'
+  /get/competitors_2/tableSummary/:
+    post:
+      operationId: GetCompetitors2TableSummary
+      tags:
+        - Competitors_2
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Competitors_2.Methods.TableSummary.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            $ref: '#/components/schemas/Competitors_2.Methods.TableSummary.Get.Exec'
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
   /edit/content_2/authors/:
     post:
       operationId: EditContent2Authors
@@ -20753,6 +20783,53 @@ components:
         - date
       title: Получение данных для отчета
     Competitors_2.Methods.Table.Get.Exec:
+      type: array
+    Competitors_2.Types.ByUrl.Table.View:
+      type: string
+      enum:
+        - keywords
+        - domains
+        - structure
+      title: Представление отчета
+    Competitors_2.Methods.TableSummary.Get:
+      type: object
+      properties:
+        by_type:
+          allOf:
+            - $ref: '#/components/schemas/Competitors_2.Types.Report.ByType'
+        region_index:
+          title: Индекс региона (не путать с ключом региона)
+          type: integer
+        query:
+          title: Ключевая фраза (или ее часть) / url
+          type: string
+        type:
+          allOf:
+            - $ref: '#/components/schemas/Competitors_2.Types.Report.Type'
+        view:
+          title: Представление отчета
+          nullable: true
+          allOf:
+            - $ref: '#/components/schemas/Competitors_2.Types.ByUrl.Table.View'
+        date:
+          title: Дата проверки
+          allOf:
+            - $ref: '#/components/schemas/TV.API.Types.Date'
+        query_vs:
+          title: Ключевая фраза (или ее часть) / url конкурента (для сравнения запросов)
+          nullable: true
+          type: string
+        strict_query:
+          title: Делать ли проверку на наоичие пути в URL (используется при (by_type = url))
+          type: boolean
+      required:
+        - by_type
+        - region_index
+        - query
+        - type
+        - date
+    Competitors_2.Methods.TableSummary.Get.Exec:
+      nullable: true
       type: array
     Content_2.Methods.Authors.Edit:
       type: object
