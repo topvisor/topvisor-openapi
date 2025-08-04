@@ -4867,6 +4867,67 @@
                 }
             }
         },
+        "/get/competitors_2/charts/": {
+            "post": {
+                "operationId": "GetCompetitors2Charts",
+                "tags": [
+                    "Competitors_2"
+                ],
+                "summary": "Получение данных для графика отчета",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Competitors_2/Methods/Charts/Get.json#/components/schemas/Competitors_2.Methods.Charts.Get"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "oneOf": [
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "$ref": "Competitors_2/Methods/Charts/Get.json#/components/schemas/Competitors_2.Methods.Charts.Get.Exec"
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "result"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                },
+                                                {
+                                                    "$ref": "Pagination.json#/components/schemas/Pagination"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
+                                        }
+                                    ]
+                                }
+                            },
+                            "model": {
+                                "schema": {
+                                    "type": "null"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
         "/get/competitors_2/dates/": {
             "post": {
                 "operationId": "GetCompetitors2Dates",
@@ -5166,6 +5227,7 @@
                 "tags": [
                     "Competitors_2"
                 ],
+                "summary": "Получение данных для сводки",
                 "requestBody": {
                     "content": {
                         "application/json": {
@@ -5214,8 +5276,7 @@
                             }
                         }
                     }
-                },
-                "summary": "Получение данных для сводки"
+                }
             }
         },
         "/edit/content_2/authors/": {

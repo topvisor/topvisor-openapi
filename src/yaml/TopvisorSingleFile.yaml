@@ -2743,6 +2743,38 @@ paths:
             model:
               schema:
                 type: 'null'
+  /get/competitors_2/charts/:
+    post:
+      operationId: GetCompetitors2Charts
+      tags:
+        - Competitors_2
+      summary: Получение данных для графика отчета
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Competitors_2.Methods.Charts.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            $ref: '#/components/schemas/Competitors_2.Methods.Charts.Get.Exec'
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                      - $ref: '#/components/schemas/Pagination'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
   /get/competitors_2/dates/:
     post:
       operationId: GetCompetitors2Dates
@@ -2904,6 +2936,7 @@ paths:
       operationId: GetCompetitors2TableSummary
       tags:
         - Competitors_2
+      summary: Получение данных для сводки
       requestBody:
         content:
           application/json:
@@ -2929,7 +2962,6 @@ paths:
             model:
               schema:
                 type: 'null'
-      summary: Получение данных для сводки
   /edit/content_2/authors/:
     post:
       operationId: EditContent2Authors
@@ -20622,6 +20654,133 @@ components:
         - url
         - keyword
       title: Тип запроса в отчета
+    Competitors_2.Types.Report.Type:
+      type: string
+      enum:
+        - serp
+        - ads
+      title: Тип отчета
+    TV.API.Types.UrlShortUTF:
+      type: string
+      title: |-
+        Краткий URL не в punycode, может содержать UTF-символы:
+        - без схемы
+        - без "www." в домене
+        - без слешей на конце
+        - без "<" и ">"
+
+        Будет проивзедено автоматическое приведение к формату
+
+        Разрешен ввод пустой строки, для удаления значения url
+    TV.API.Types.UrlShortUTFArray:
+      type: array
+      items:
+        $ref: '#/components/schemas/TV.API.Types.UrlShortUTF'
+      title: 'Тип массива: UrlShortUTF[]'
+      description: |-
+        @extends AbstractStringArray<UrlShortUTF>
+        @method UrlShortUTF[] getValues()
+        @method UrlShortUTF current()
+        @see \TV\API\Types\UrlShortUTF
+    TV.API.Types.UrlUTF:
+      type: string
+      title: |-
+        URL не в punycode, может содержать UTF-символы:
+        - без "<" и ">"
+
+        Будет проивзедено автоматическое приведение к формату
+
+        Разрешен ввод пустой строки, для удаления значения url
+    TV.API.Types.UrlUTFArray:
+      type: array
+      items:
+        $ref: '#/components/schemas/TV.API.Types.UrlUTF'
+      title: 'Тип массива: UrlUTF[]'
+      description: |-
+        @extends AbstractStringArray<UrlUTF>
+        @method UrlUTF[] getValues()
+        @method UrlUTF current()
+        @see \TV\API\Types\UrlUTF
+    Competitors_2.Methods.Charts.Get:
+      type: object
+      properties:
+        by_type:
+          allOf:
+            - $ref: '#/components/schemas/Competitors_2.Types.Report.ByType'
+        region_index:
+          title: Индекс региона (не путать с ключом региона)
+          type: integer
+        query:
+          title: Ключевая фраза (или ее часть) / url
+          type: string
+        type:
+          allOf:
+            - $ref: '#/components/schemas/Competitors_2.Types.Report.Type'
+        view:
+          title: Представление отчета
+          type: string
+        chart_type:
+          title: Тип графика
+          type: string
+        date:
+          title: Дата проверки
+          allOf:
+            - $ref: '#/components/schemas/TV.API.Types.Date'
+        query_vs:
+          title: Ключевая фраза (или ее часть) / url конкурента (для сравнения запросов)
+          nullable: true
+          type: string
+        strict_query:
+          title: Делать ли проверку на наоичие пути в URL (используется при (by_type = url))
+          type: boolean
+        intersection:
+          title: Минимальная схожесть
+          nullable: true
+          type: number
+        func:
+          title: Название функции
+          default: charts
+          type: string
+        domains:
+          title: Домены
+          nullable: true
+          allOf:
+            - $ref: '#/components/schemas/TV.API.Types.UrlShortUTFArray'
+        urls:
+          title: Urls адреса
+          nullable: true
+          allOf:
+            - $ref: '#/components/schemas/TV.API.Types.UrlUTFArray'
+        keywords_names:
+          title: Поисковые запросы
+          nullable: true
+          type: array
+        fields:
+          $ref: '#/components/schemas/fields'
+        orders:
+          $ref: '#/components/schemas/orders'
+        filters:
+          $ref: '#/components/schemas/filters'
+        id:
+          $ref: '#/components/schemas/id'
+        limit:
+          $ref: '#/components/schemas/limit'
+        offset:
+          $ref: '#/components/schemas/offset'
+        fetch_style:
+          $ref: '#/components/schemas/fetch_style'
+      required:
+        - by_type
+        - region_index
+        - query
+        - type
+        - view
+        - chart_type
+        - date
+      title: Получение данных для графика отчета
+    Competitors_2.Methods.Charts.Get.Exec:
+      nullable: true
+      type: array
     Competitors_2.Methods.Dates.Get:
       type: object
       properties:
@@ -20718,12 +20877,6 @@ components:
       title: Получение доступных запросов для построения отчета (не более 10)
     Competitors_2.Methods.Queries.Get.Exec:
       type: array
-    Competitors_2.Types.Report.Type:
-      type: string
-      enum:
-        - serp
-        - ads
-      title: Тип отчета
     Competitors_2.Methods.Table.Get:
       type: object
       properties:
@@ -34079,15 +34232,6 @@ components:
       title: Получение информации об отчете (вернет нулевые данные, если отчет уже оплачен)
     Competitors_2.Methods.Orders.ByKeyword.Info.Get.Exec:
       type: array
-    TV.API.Types.UrlUTF:
-      type: string
-      title: |-
-        URL не в punycode, может содержать UTF-символы:
-        - без "<" и ">"
-
-        Будет проивзедено автоматическое приведение к формату
-
-        Разрешен ввод пустой строки, для удаления значения url
     Competitors_2.Methods.Orders.ByUrl.Info.Get:
       type: object
       properties:

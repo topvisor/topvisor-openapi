@@ -1456,6 +1456,23 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
+    /** Получение данных для графика отчета */
+    "/get/competitors_2/charts/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["GetCompetitors2Charts"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
     /** Получение даты проверок по заданному критерию (последние 12) */
     "/get/competitors_2/dates/": {
         parameters: {
@@ -1540,7 +1557,8 @@ export interface paths {
         head?: never;
         patch?: never;
         trace?: never;
-    };
+    };  
+    /** Получение данных для сводки */
     "/get/competitors_2/tableSummary/": {
         parameters: {
             query?: never;
@@ -11177,6 +11195,32 @@ export interface operations {
                     "application/json": ({
                         result: import('./Comments_2/Methods/Like/Edit.ts').components['schemas']['Comments_2.Methods.Like.Edit.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: null;
+                };
+            };
+        };
+    };
+    GetCompetitors2Charts: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Competitors_2/Methods/Charts/Get.ts').components['schemas']['Competitors_2.Methods.Charts.Get'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./Competitors_2/Methods/Charts/Get.ts').components['schemas']['Competitors_2.Methods.Charts.Get.Exec'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };
             };
