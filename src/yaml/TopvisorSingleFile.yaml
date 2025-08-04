@@ -20713,7 +20713,6 @@ components:
           type: string
         date:
           title: Дата проверки
-          nullable: true
           allOf:
             - $ref: '#/components/schemas/TV.API.Types.Date'
         query_vs:
@@ -20751,6 +20750,7 @@ components:
         - query
         - type
         - view
+        - date
       title: Получение данных для отчета
     Competitors_2.Methods.Table.Get.Exec:
       type: array

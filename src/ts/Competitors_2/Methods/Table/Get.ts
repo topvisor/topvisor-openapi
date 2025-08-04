@@ -18,7 +18,7 @@ export interface components {
             /** Представление отчета */
             view: string;
             /** Дата проверки */
-            date?: import('../../../TV/API/Types/Date.ts').components['schemas']['TV.API.Types.Date'] | null;
+            date: import('../../../TV/API/Types/Date.ts').components['schemas']['TV.API.Types.Date'];
             /** Ключевая фраза (или ее часть) / url конкурента (для сравнения запросов) */
             query_vs?: string | null;
             /** Тип связи запросов между конкурентами */

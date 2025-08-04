@@ -38,7 +38,6 @@
                     },
                     "date": {
                         "title": "Дата проверки",
-                        "nullable": true,
                         "allOf": [
                             {
                                 "$ref": "../../../TV/API/Types/Date.json#/components/schemas/TV.API.Types.Date"
@@ -91,7 +90,8 @@
                     "region_index",
                     "query",
                     "type",
-                    "view"
+                    "view",
+                    "date"
                 ],
                 "title": "Получение данных для отчета"
             },
