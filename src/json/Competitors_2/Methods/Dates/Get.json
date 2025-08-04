@@ -21,7 +21,7 @@
                     "by_type": {
                         "allOf": [
                             {
-                                "$ref": "../../../Competitors_2/Types/ReportType.json#/components/schemas/Competitors_2.Types.ReportType"
+                                "$ref": "../../../Competitors_2/Types/Report/ByType.json#/components/schemas/Competitors_2.Types.Report.ByType"
                             }
                         ]
                     },

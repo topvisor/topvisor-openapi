@@ -9,7 +9,7 @@ export interface components {
     schemas: {
         /** Получение доступных запросы для построения отчета с кэшированием на 30 дней */
         "System_2.Methods.Common.CompetitorsQueries.Get": {
-            by_type: import('../../../../Competitors_2/Types/ReportType.ts').components['schemas']['Competitors_2.Types.ReportType'];
+            by_type: import('../../../../Competitors_2/Types/Report/ByType.ts').components['schemas']['Competitors_2.Types.Report.ByType'];
             /** Индекс региона (не путать с ключом региона) */
             region_index: number;
             /** Ключевая фраза (или ее часть) / url */

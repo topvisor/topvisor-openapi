@@ -8,10 +8,10 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         /**
-         * Представление отчета
+         * Тип запроса в отчета
          * @enum {string}
          */
-        "Competitors_2.Types.ByUrl.Charts.View": "keywords" | "domains" | "structure";
+        "Competitors_2.Types.Report.ByType": "url" | "keyword";
     };
     responses: never;
     parameters: never;

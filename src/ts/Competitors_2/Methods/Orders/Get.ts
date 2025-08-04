@@ -14,7 +14,7 @@ export interface components {
             /** - ключевая фраза или ее часть (by_type = keyword)
              *     - url (by_type = url) */
             query?: string | null;
-            by_type?: import('../../Types/ReportType.ts').components['schemas']['Competitors_2.Types.ReportType'] | null;
+            by_type?: import('../../Types/Report/ByType.ts').components['schemas']['Competitors_2.Types.Report.ByType'] | null;
             /** Дата проверки */
             date?: import('../../../TV/API/Types/Date.ts').components['schemas']['TV.API.Types.Date'] | null;
             /** Показать удаленные отчеты */
