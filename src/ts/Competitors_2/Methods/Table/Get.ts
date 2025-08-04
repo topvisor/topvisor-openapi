@@ -27,6 +27,11 @@ export interface components {
             strict_query?: boolean;
             /** Минимальная схожесть */
             intersection?: number | null;
+            /**
+             * Название функции
+             * @default table
+             */
+            func: string;
             fields?: import('../../../TV/API/Params/FieldsTrait.ts').components['schemas']['TV.API.Params.FieldsTrait']['fields'];
             orders?: import('../../../TV/API/Params/OrdersTrait.ts').components['schemas']['TV.API.Params.OrdersTrait']['orders'];
             filters?: import('../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['filters'];

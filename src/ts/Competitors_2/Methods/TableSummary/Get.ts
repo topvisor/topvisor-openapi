@@ -23,6 +23,11 @@ export interface components {
             query_vs?: string | null;
             /** Делать ли проверку на наоичие пути в URL (используется при (by_type = url)) */
             strict_query?: boolean;
+            /**
+             * Название функции
+             * @default tableSummary
+             */
+            func: string;
         };
         "Competitors_2.Methods.TableSummary.Get.Exec": unknown[] | null;
     };

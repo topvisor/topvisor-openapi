@@ -57,6 +57,11 @@
                     "strict_query": {
                         "title": "Делать ли проверку на наоичие пути в URL (используется при (by_type = url))",
                         "type": "boolean"
+                    },
+                    "func": {
+                        "title": "Название функции",
+                        "default": "tableSummary",
+                        "type": "string"
                     }
                 },
                 "required": [

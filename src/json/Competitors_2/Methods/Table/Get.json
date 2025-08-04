@@ -63,6 +63,11 @@
                         "nullable": true,
                         "type": "number"
                     },
+                    "func": {
+                        "title": "Название функции",
+                        "default": "table",
+                        "type": "string"
+                    },
                     "fields": {
                         "$ref": "../../../TV/API/Params/FieldsTrait.json#/components/schemas/TV.API.Params.FieldsTrait/properties/fields"
                     },

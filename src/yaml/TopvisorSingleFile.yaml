@@ -20761,6 +20761,10 @@ components:
           title: Минимальная схожесть
           nullable: true
           type: number
+        func:
+          title: Название функции
+          default: table
+          type: string
         fields:
           $ref: '#/components/schemas/fields'
         orders:
@@ -20823,6 +20827,10 @@ components:
         strict_query:
           title: Делать ли проверку на наоичие пути в URL (используется при (by_type = url))
           type: boolean
+        func:
+          title: Название функции
+          default: tableSummary
+          type: string
       required:
         - by_type
         - region_index
