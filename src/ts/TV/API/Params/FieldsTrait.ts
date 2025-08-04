@@ -15,7 +15,6 @@ export interface components {
              *
              *     Использует поля модели
              * @description @see AbstractMethod::MODEL
-             *     @type string[]
              */
             fields: unknown[];
         };

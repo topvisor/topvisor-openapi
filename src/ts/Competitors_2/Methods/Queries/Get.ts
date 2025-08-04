@@ -7,17 +7,17 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        /** Получение доступных запросы для построения отчета с кэшированием на 30 дней */
-        "System_2.Methods.Common.CompetitorsQueries.Get": {
-            by_type: import('../../../../Competitors_2/Types/ReportType.ts').components['schemas']['Competitors_2.Types.ReportType'];
+        /** Получение доступных запросов для построения отчета (не более 10) */
+        "Competitors_2.Methods.Queries.Get": {
+            by_type: import('../../Types/ReportType.ts').components['schemas']['Competitors_2.Types.ReportType'];
             /** Индекс региона (не путать с ключом региона) */
             region_index: number;
             /** Ключевая фраза (или ее часть) / url */
             query: string;
             /** Дата проверки */
-            date?: import('../../../../TV/API/Types/Date.ts').components['schemas']['TV.API.Types.Date'] | null;
+            date?: import('../../../TV/API/Types/Date.ts').components['schemas']['TV.API.Types.Date'] | null;
         };
-        "System_2.Methods.Common.CompetitorsQueries.Get.Exec": unknown[];
+        "Competitors_2.Methods.Queries.Get.Exec": unknown[];
     };
     responses: never;
     parameters: never;

@@ -1,19 +1,19 @@
 {
     "openapi": "3.0.0",
     "info": {
-        "title": "Topvisor/System_2.Methods.Common.CompetitorsQueries.Get",
+        "title": "Topvisor/Competitors_2.Methods.Queries.Get",
         "version": "2.0.0"
     },
     "paths": {},
     "components": {
         "schemas": {
-            "System_2.Methods.Common.CompetitorsQueries.Get": {
+            "Competitors_2.Methods.Queries.Get": {
                 "type": "object",
                 "properties": {
                     "by_type": {
                         "allOf": [
                             {
-                                "$ref": "../../../../Competitors_2/Types/ReportType.json#/components/schemas/Competitors_2.Types.ReportType"
+                                "$ref": "../../../Competitors_2/Types/ReportType.json#/components/schemas/Competitors_2.Types.ReportType"
                             }
                         ]
                     },
@@ -30,7 +30,7 @@
                         "nullable": true,
                         "allOf": [
                             {
-                                "$ref": "../../../../TV/API/Types/Date.json#/components/schemas/TV.API.Types.Date"
+                                "$ref": "../../../TV/API/Types/Date.json#/components/schemas/TV.API.Types.Date"
                             }
                         ]
                     }
@@ -40,9 +40,9 @@
                     "region_index",
                     "query"
                 ],
-                "title": "Получение доступных запросы для построения отчета с кэшированием на 30 дней"
+                "title": "Получение доступных запросов для построения отчета (не более 10)"
             },
-            "System_2.Methods.Common.CompetitorsQueries.Get.Exec": {
+            "Competitors_2.Methods.Queries.Get.Exec": {
                 "type": "array"
             }
         }

@@ -2836,6 +2836,37 @@ paths:
             model:
               schema:
                 type: 'null'
+  /get/competitors_2/queries/:
+    post:
+      operationId: GetCompetitors2Queries
+      tags:
+        - Competitors_2
+      summary: Получение доступных запросов для построения отчета (не более 10)
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Competitors_2.Methods.Queries.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            $ref: '#/components/schemas/Competitors_2.Methods.Queries.Get.Exec'
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
   /edit/content_2/authors/:
     post:
       operationId: EditContent2Authors
@@ -16321,9 +16352,7 @@ components:
         Если запрос поддерживает параметр `fetch_style`, формат ответа может быть разным, `fields` будет влиять на содержание данных в этом ответе
 
         Использует поля модели
-      description: |-
-        @see AbstractMethod::MODEL
-        @type string[]
+      description: '@see AbstractMethod::MODEL'
       type: array
     orders:
       title: |-
@@ -20601,6 +20630,30 @@ components:
       title: Получить список оплаченных отчетов
     Competitors_2.Methods.Orders.Get.Exec:
       nullable: true
+      type: array
+    Competitors_2.Methods.Queries.Get:
+      type: object
+      properties:
+        by_type:
+          allOf:
+            - $ref: '#/components/schemas/Competitors_2.Types.ReportType'
+        region_index:
+          title: Индекс региона (не путать с ключом региона)
+          type: integer
+        query:
+          title: Ключевая фраза (или ее часть) / url
+          type: string
+        date:
+          title: Дата проверки
+          nullable: true
+          allOf:
+            - $ref: '#/components/schemas/TV.API.Types.Date'
+      required:
+        - by_type
+        - region_index
+        - query
+      title: Получение доступных запросов для построения отчета (не более 10)
+    Competitors_2.Methods.Queries.Get.Exec:
       type: array
     Content_2.Methods.Authors.Edit:
       type: object
@@ -31632,8 +31685,25 @@ components:
         см. Analytics_2\Mods\Analytics::genEventImgLink()
     System_2.Methods.Common.CompetitorsQueries.Get:
       type: object
-      properties: {}
-      required: []
+      properties:
+        by_type:
+          allOf:
+            - $ref: '#/components/schemas/Competitors_2.Types.ReportType'
+        region_index:
+          title: Индекс региона (не путать с ключом региона)
+          type: integer
+        query:
+          title: Ключевая фраза (или ее часть) / url
+          type: string
+        date:
+          title: Дата проверки
+          nullable: true
+          allOf:
+            - $ref: '#/components/schemas/TV.API.Types.Date'
+      required:
+        - by_type
+        - region_index
+        - query
       title: Получение доступных запросы для построения отчета с кэшированием на 30 дней
     System_2.Methods.Common.CompetitorsQueries.Get.Exec:
       type: array

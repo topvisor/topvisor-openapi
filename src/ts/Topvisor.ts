@@ -1507,6 +1507,23 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
+    /** Получение доступных запросов для построения отчета (не более 10) */
+    "/get/competitors_2/queries/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["GetCompetitors2Queries"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
     /** Изменить настройки автора */
     "/edit/content_2/authors/": {
         parameters: {
@@ -11204,6 +11221,32 @@ export interface operations {
                 content: {
                     "application/json": ({
                         result: import('./Competitors_2/Methods/Orders/Get.ts').components['schemas']['Competitors_2.Methods.Orders.Get.Exec'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: null;
+                };
+            };
+        };
+    };
+    GetCompetitors2Queries: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Competitors_2/Methods/Queries/Get.ts').components['schemas']['Competitors_2.Methods.Queries.Get'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./Competitors_2/Methods/Queries/Get.ts').components['schemas']['Competitors_2.Methods.Queries.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };

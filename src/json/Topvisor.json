@@ -5041,6 +5041,64 @@
                 }
             }
         },
+        "/get/competitors_2/queries/": {
+            "post": {
+                "operationId": "GetCompetitors2Queries",
+                "tags": [
+                    "Competitors_2"
+                ],
+                "summary": "Получение доступных запросов для построения отчета (не более 10)",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Competitors_2/Methods/Queries/Get.json#/components/schemas/Competitors_2.Methods.Queries.Get"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "oneOf": [
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "$ref": "Competitors_2/Methods/Queries/Get.json#/components/schemas/Competitors_2.Methods.Queries.Get.Exec"
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "result"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
+                                        }
+                                    ]
+                                }
+                            },
+                            "model": {
+                                "schema": {
+                                    "type": "null"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
         "/edit/content_2/authors/": {
             "post": {
                 "operationId": "EditContent2Authors",
