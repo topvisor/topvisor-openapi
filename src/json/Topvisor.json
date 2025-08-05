@@ -27721,6 +27721,67 @@
                 }
             }
         },
+        "/add/competitors_2/export/byLeaders/tableToProject/": {
+            "post": {
+                "operationId": "AddCompetitors2ExportByLeadersTableToProject",
+                "tags": [
+                    "Competitors_2"
+                ],
+                "summary": "Экспорт запросов по доменам в проект\n\nРаботает только с отчетами по URL по списку доменов с оплаченной схожестью",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Competitors_2/Methods/Export/ByLeaders/TableToProject/Add.json#/components/schemas/Competitors_2.Methods.Export.ByLeaders.TableToProject.Add"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "oneOf": [
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "$ref": "Competitors_2/Methods/Export/ByLeaders/TableToProject/Add.json#/components/schemas/Competitors_2.Methods.Export.ByLeaders.TableToProject.Add.Exec"
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "result"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                },
+                                                {
+                                                    "$ref": "Pagination.json#/components/schemas/Pagination"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
+                                        }
+                                    ]
+                                }
+                            },
+                            "model": {
+                                "schema": {
+                                    "type": "null"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
         "/get/competitors_2/orders/byKeyword/info/": {
             "post": {
                 "operationId": "GetCompetitors2OrdersByKeywordInfo",

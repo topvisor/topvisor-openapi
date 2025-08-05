@@ -8370,6 +8370,25 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
+    /** Экспорт запросов по доменам в проект
+     *
+     *     Работает только с отчетами по URL по списку доменов с оплаченной схожестью */
+    "/add/competitors_2/export/byLeaders/tableToProject/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["AddCompetitors2ExportByLeadersTableToProject"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
     /** Получение информации об отчете (вернет нулевые данные, если отчет уже оплачен) */
     "/get/competitors_2/orders/byKeyword/info/": {
         parameters: {
@@ -21613,6 +21632,32 @@ export interface operations {
                 };
                 content: {
                     "application/octet-stream": string;
+                };
+            };
+        };
+    };
+    AddCompetitors2ExportByLeadersTableToProject: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Competitors_2/Methods/Export/ByLeaders/TableToProject/Add.ts').components['schemas']['Competitors_2.Methods.Export.ByLeaders.TableToProject.Add'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": ({
+                        result: import('./Competitors_2/Methods/Export/ByLeaders/TableToProject/Add.ts').components['schemas']['Competitors_2.Methods.Export.ByLeaders.TableToProject.Add.Exec'];
+                    } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
+                    model: null;
                 };
             };
         };
