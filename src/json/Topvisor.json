@@ -17390,6 +17390,67 @@
                 }
             }
         },
+        "/get/competitors_2/export/table/": {
+            "post": {
+                "operationId": "GetCompetitors2ExportTable",
+                "tags": [
+                    "Competitors_2"
+                ],
+                "summary": "Экспорт данных отчета",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Competitors_2/Methods/Export/Table/Get.json#/components/schemas/Competitors_2.Methods.Export.Table.Get"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "oneOf": [
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "$ref": "Competitors_2/Methods/Export/Table/Get.json#/components/schemas/Competitors_2.Methods.Export.Table.Get.Exec"
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "result"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                },
+                                                {
+                                                    "$ref": "Pagination.json#/components/schemas/Pagination"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
+                                        }
+                                    ]
+                                }
+                            },
+                            "model": {
+                                "schema": {
+                                    "type": "null"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
         "/edit/competitors_2/orders/pay/": {
             "post": {
                 "operationId": "EditCompetitors2OrdersPay",

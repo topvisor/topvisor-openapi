@@ -9524,6 +9524,38 @@ paths:
             model:
               schema:
                 type: 'null'
+  /get/competitors_2/export/table/:
+    post:
+      operationId: GetCompetitors2ExportTable
+      tags:
+        - Competitors_2
+      summary: Экспорт данных отчета
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Competitors_2.Methods.Export.Table.Get'
+        required: true
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - allOf:
+                      - type: object
+                        properties:
+                          result:
+                            $ref: '#/components/schemas/Competitors_2.Methods.Export.Table.Get.Exec'
+                        required:
+                          - result
+                      - $ref: '#/components/schemas/ResponseSuccess'
+                      - $ref: '#/components/schemas/Pagination'
+                  - $ref: '#/components/schemas/ResponseError'
+            model:
+              schema:
+                type: 'null'
   /edit/competitors_2/orders/pay/:
     post:
       operationId: EditCompetitors2OrdersPay
@@ -29412,6 +29444,92 @@ components:
     Broker_2.Methods.Tasks.RateTask.Add.Exec:
       nullable: true
       type: integer
+    Competitors_2.Types.Export.Table.Output:
+      type: string
+      enum:
+        - csv
+        - csv_utf
+        - xlsx
+      title: Тип экспортируемого файла
+    Competitors_2.Methods.Export.Table.Get:
+      type: object
+      properties:
+        output:
+          allOf:
+            - $ref: '#/components/schemas/Competitors_2.Types.Export.Table.Output'
+        by_type:
+          allOf:
+            - $ref: '#/components/schemas/Competitors_2.Types.Report.ByType'
+        region_index:
+          title: Индекс региона (не путать с ключом региона)
+          type: integer
+        query:
+          title: Ключевая фраза (или ее часть) / url
+          type: string
+        type:
+          allOf:
+            - $ref: '#/components/schemas/Competitors_2.Types.Report.Type'
+        view:
+          title: Представление отчета
+          type: string
+        date:
+          title: Дата проверки
+          allOf:
+            - $ref: '#/components/schemas/TV.API.Types.Date'
+        query_vs:
+          title: Ключевая фраза (или ее часть) / url конкурента (для сравнения запросов)
+          nullable: true
+          type: string
+        rel_vs:
+          title: Тип связи запросов между конкурентами
+          nullable: true
+          type: string
+        strict_query:
+          title: Делать ли проверку на наоичие пути в URL (используется при (by_type = url))
+          type: boolean
+        intersection:
+          title: Минимальная схожесть
+          nullable: true
+          type: number
+        func:
+          title: Название функции
+          default: export_table
+          type: string
+        handler:
+          title: |-
+            Обработчик
+
+            Для внутреннего использования
+
+            Возможные значения:
+            - handle
+            - name
+          nullable: true
+        fields:
+          $ref: '#/components/schemas/fields'
+        orders:
+          $ref: '#/components/schemas/orders'
+        filters:
+          $ref: '#/components/schemas/filters'
+        id:
+          $ref: '#/components/schemas/id'
+        limit:
+          $ref: '#/components/schemas/limit'
+        offset:
+          $ref: '#/components/schemas/offset'
+        fetch_style:
+          $ref: '#/components/schemas/fetch_style'
+      required:
+        - output
+        - by_type
+        - region_index
+        - query
+        - type
+        - view
+        - date
+      title: Экспорт данных отчета
+    Competitors_2.Methods.Export.Table.Get.Exec:
+      nullable: true
     Competitors_2.Methods.Orders.Pay.Edit:
       type: object
       properties:
