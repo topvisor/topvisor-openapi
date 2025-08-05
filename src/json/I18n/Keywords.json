@@ -1225,6 +1225,10 @@
                     "Select_source": {
                         "const": "Select source",
                         "readOnly": true
+                    },
+                    "Error_name_folder": {
+                        "const": "The folder name cannot contain \"/\"",
+                        "readOnly": true
                     }
                 },
                 "required": [
@@ -1530,7 +1534,8 @@
                     "Changed_phrases",
                     "Fitler_by_keywords_for_check",
                     "All_keywords",
-                    "Select_source"
+                    "Select_source",
+                    "Error_name_folder"
                 ]
             }
         }

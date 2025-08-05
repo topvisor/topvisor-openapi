@@ -20,8 +20,11 @@
                     },
                     "detail": {
                         "title": "Объект с дополнительной информацией",
-                        "type": "object",
-                        "additionalProperties": {}
+                        "allOf": [
+                            {
+                                "$ref": "stdClass.json#/components/schemas/stdClass"
+                            }
+                        ]
                     }
                 },
                 "required": [

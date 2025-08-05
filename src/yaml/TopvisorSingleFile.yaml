@@ -16343,6 +16343,10 @@ components:
             - $ref: '#/components/schemas/TV.API.Types.StringArray'
       required: []
       title: Результат успешного API запроса
+    stdClass:
+      type: object
+      properties: {}
+      required: []
     Error:
       type: object
       properties:
@@ -16357,8 +16361,8 @@ components:
           type: string
         detail:
           title: Объект с дополнительной информацией
-          type: object
-          additionalProperties: {}
+          allOf:
+            - $ref: '#/components/schemas/stdClass'
       required:
         - code
         - string
