@@ -1,0 +1,120 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Topvisor/Competitors_2.Methods.Export.AbstractRegular",
+        "version": "2.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Competitors_2.Methods.Export.AbstractRegular": {
+                "type": "object",
+                "properties": {
+                    "output": {
+                        "allOf": [
+                            {
+                                "$ref": "../../../Competitors_2/Types/Export/Table/Output.json#/components/schemas/Competitors_2.Types.Export.Table.Output"
+                            }
+                        ]
+                    },
+                    "by_type": {
+                        "allOf": [
+                            {
+                                "$ref": "../../../Competitors_2/Types/Report/ByType.json#/components/schemas/Competitors_2.Types.Report.ByType"
+                            }
+                        ]
+                    },
+                    "region_index": {
+                        "title": "Индекс региона (не путать с ключом региона)",
+                        "type": "integer"
+                    },
+                    "query": {
+                        "title": "Ключевая фраза (или ее часть) / url",
+                        "type": "string"
+                    },
+                    "type": {
+                        "allOf": [
+                            {
+                                "$ref": "../../../Competitors_2/Types/Report/Type.json#/components/schemas/Competitors_2.Types.Report.Type"
+                            }
+                        ]
+                    },
+                    "view": {
+                        "title": "Представление отчета",
+                        "type": "string"
+                    },
+                    "date": {
+                        "title": "Дата проверки",
+                        "allOf": [
+                            {
+                                "$ref": "../../../TV/API/Types/Date.json#/components/schemas/TV.API.Types.Date"
+                            }
+                        ]
+                    },
+                    "query_vs": {
+                        "title": "Ключевая фраза (или ее часть) / url конкурента (для сравнения запросов)",
+                        "nullable": true,
+                        "type": "string"
+                    },
+                    "rel_vs": {
+                        "title": "Тип связи запросов между конкурентами",
+                        "nullable": true,
+                        "type": "string"
+                    },
+                    "strict_query": {
+                        "title": "Делать ли проверку на наоичие пути в URL (используется при (by_type = url))",
+                        "type": "boolean"
+                    },
+                    "intersection": {
+                        "title": "Минимальная схожесть",
+                        "nullable": true,
+                        "type": "number"
+                    },
+                    "func": {
+                        "title": "Название функции",
+                        "default": "export_table",
+                        "type": "string"
+                    },
+                    "handler": {
+                        "title": "Обработчик\n\nДля внутреннего использования\n\nВозможные значения:\n- handle\n- name",
+                        "nullable": true
+                    },
+                    "fields": {
+                        "$ref": "../../../TV/API/Params/FieldsTrait.json#/components/schemas/TV.API.Params.FieldsTrait/properties/fields"
+                    },
+                    "orders": {
+                        "$ref": "../../../TV/API/Params/OrdersTrait.json#/components/schemas/TV.API.Params.OrdersTrait/properties/orders"
+                    },
+                    "filters": {
+                        "$ref": "../../../TV/API/Params/FiltersTrait.json#/components/schemas/TV.API.Params.FiltersTrait/properties/filters"
+                    },
+                    "id": {
+                        "$ref": "../../../TV/API/Params/FiltersTrait.json#/components/schemas/TV.API.Params.FiltersTrait/properties/id"
+                    },
+                    "limit": {
+                        "$ref": "../../../TV/API/Params/LimitTrait.json#/components/schemas/TV.API.Params.LimitTrait/properties/limit"
+                    },
+                    "offset": {
+                        "$ref": "../../../TV/API/Params/OffsetTrait.json#/components/schemas/TV.API.Params.OffsetTrait/properties/offset"
+                    },
+                    "fetch_style": {
+                        "$ref": "../../../TV/API/Params/FetchStyleTrait.json#/components/schemas/TV.API.Params.FetchStyleTrait/properties/fetch_style"
+                    }
+                },
+                "required": [
+                    "output",
+                    "by_type",
+                    "region_index",
+                    "query",
+                    "type",
+                    "view",
+                    "date"
+                ]
+            },
+            "Competitors_2.Methods.Export.AbstractRegular.Exec": {
+                "title": "Непосредственный вызов API функции\n\nЗапрещено делать публичной, это приведет к поломке preCall()\n\nВ описании к функции отвечать на вопрос: `Что является результатом запроса?` Например: `Список пользователей`\n\nНе менять `protected`, проверка проводится при генерации схем в `TV\\API\\Objects\\ClassAPIMethodInfo`",
+                "nullable": true
+            }
+        }
+    }
+}

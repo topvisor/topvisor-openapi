@@ -4986,6 +4986,66 @@
                 }
             }
         },
+        "/abstractregular/competitors_2/export/": {
+            "post": {
+                "operationId": "AbstractregularCompetitors2Export",
+                "tags": [
+                    "Competitors_2"
+                ],
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Competitors_2/Methods/Export/AbstractRegular.json#/components/schemas/Competitors_2.Methods.Export.AbstractRegular"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "oneOf": [
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "$ref": "Competitors_2/Methods/Export/AbstractRegular.json#/components/schemas/Competitors_2.Methods.Export.AbstractRegular.Exec"
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "result"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                },
+                                                {
+                                                    "$ref": "Pagination.json#/components/schemas/Pagination"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
+                                        }
+                                    ]
+                                }
+                            },
+                            "model": {
+                                "schema": {
+                                    "type": "null"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
         "/del/competitors_2/orders/": {
             "post": {
                 "operationId": "DelCompetitors2Orders",

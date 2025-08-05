@@ -63,8 +63,7 @@
                 "title": "Информация о стоимости запуска проверки позиций по проектам"
             },
             "Keywords_2.Methods.Volumes.Price.Get.Exec": {
-                "type": "object",
-                "additionalProperties": {}
+                "type": "object"
             }
         }
     }

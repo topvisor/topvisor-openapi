@@ -15,9 +15,7 @@ export interface components {
         /** Информацией о текущей ошибке на роботе
          *
          *     Вернет null, если ошибки на роботе нет */
-        "Audit_2.Methods.Audit.Log.ActualError.Get.Exec": {
-            [key: string]: unknown;
-        } | null;
+        "Audit_2.Methods.Audit.Log.ActualError.Get.Exec": import('../../../../../stdClass.ts').components['schemas']['stdClass'] | null;
     };
     responses: never;
     parameters: never;

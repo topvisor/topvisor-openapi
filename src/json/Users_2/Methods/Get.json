@@ -14,8 +14,11 @@
                 "title": "Получение данных пользователя"
             },
             "Users_2.Methods.Get.Exec": {
-                "type": "object",
-                "additionalProperties": {}
+                "allOf": [
+                    {
+                        "$ref": "../../stdClass.json#/components/schemas/stdClass"
+                    }
+                ]
             }
         }
     }

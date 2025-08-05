@@ -25,8 +25,11 @@
                 "title": "Получение информации о регистрации домена\n\nВозвращает объект с параметрами:\n- wait_time, если данные не готовы\n- created, если данные готовы\n- paidtill, если данные готовы"
             },
             "Projects_2.Methods.Status.Registrar.Get.Exec": {
-                "type": "object",
-                "additionalProperties": {}
+                "allOf": [
+                    {
+                        "$ref": "../../../../stdClass.json#/components/schemas/stdClass"
+                    }
+                ]
             }
         }
     }

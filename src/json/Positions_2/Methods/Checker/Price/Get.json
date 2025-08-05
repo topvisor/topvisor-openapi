@@ -74,8 +74,7 @@
                 "title": "Информация о стоимости запуска проверки позиций по проектам"
             },
             "Positions_2.Methods.Checker.Price.Get.Exec": {
-                "type": "object",
-                "additionalProperties": {}
+                "type": "object"
             }
         }
     }

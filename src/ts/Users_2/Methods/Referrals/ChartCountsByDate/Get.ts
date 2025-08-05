@@ -14,9 +14,7 @@ export interface components {
             /** До какой даты получить */
             date2: import('../../../../TV/API/Types/Date.ts').components['schemas']['TV.API.Types.Date'];
         };
-        "Users_2.Methods.Referrals.ChartCountsByDate.Get.Exec": {
-            [key: string]: unknown;
-        } | null;
+        "Users_2.Methods.Referrals.ChartCountsByDate.Get.Exec": import('../../../../stdClass.ts').components['schemas']['stdClass'] | null;
     };
     responses: never;
     parameters: never;
