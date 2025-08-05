@@ -8351,6 +8351,25 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
+    /** Экспорт запросов по доменам
+     *
+     *     Работает только с отчетами по URL по списку доменов с оплаченной схожестью */
+    "/get/competitors_2/export/byLeaders/table/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["GetCompetitors2ExportByLeadersTable"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
     /** Получение информации об отчете (вернет нулевые данные, если отчет уже оплачен) */
     "/get/competitors_2/orders/byKeyword/info/": {
         parameters: {
@@ -21571,6 +21590,29 @@ export interface operations {
                         result: import('./Competitors_2/Methods/Export/ByDomains/TableToProject/Add.ts').components['schemas']['Competitors_2.Methods.Export.ByDomains.TableToProject.Add.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
+                };
+            };
+        };
+    };
+    GetCompetitors2ExportByLeadersTable: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Competitors_2/Methods/Export/ByLeaders/Table/Get.ts').components['schemas']['Competitors_2.Methods.Export.ByLeaders.Table.Get'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/octet-stream": string;
                 };
             };
         };

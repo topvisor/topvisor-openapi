@@ -27689,6 +27689,38 @@
                 }
             }
         },
+        "/get/competitors_2/export/byLeaders/table/": {
+            "post": {
+                "operationId": "GetCompetitors2ExportByLeadersTable",
+                "tags": [
+                    "Competitors_2"
+                ],
+                "summary": "Экспорт запросов по доменам\n\nРаботает только с отчетами по URL по списку доменов с оплаченной схожестью",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Competitors_2/Methods/Export/ByLeaders/Table/Get.json#/components/schemas/Competitors_2.Methods.Export.ByLeaders.Table.Get"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/octet-stream": {
+                                "schema": {
+                                    "type": "string",
+                                    "format": "binary"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
         "/get/competitors_2/orders/byKeyword/info/": {
             "post": {
                 "operationId": "GetCompetitors2OrdersByKeywordInfo",
