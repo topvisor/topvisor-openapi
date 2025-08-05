@@ -4986,66 +4986,6 @@
                 }
             }
         },
-        "/abstractregular/competitors_2/export/": {
-            "post": {
-                "operationId": "AbstractregularCompetitors2Export",
-                "tags": [
-                    "Competitors_2"
-                ],
-                "requestBody": {
-                    "content": {
-                        "application/json": {
-                            "schema": {
-                                "$ref": "Competitors_2/Methods/Export/AbstractRegular.json#/components/schemas/Competitors_2.Methods.Export.AbstractRegular"
-                            }
-                        }
-                    },
-                    "required": true
-                },
-                "responses": {
-                    "200": {
-                        "description": "",
-                        "content": {
-                            "application/json": {
-                                "schema": {
-                                    "oneOf": [
-                                        {
-                                            "allOf": [
-                                                {
-                                                    "type": "object",
-                                                    "properties": {
-                                                        "result": {
-                                                            "$ref": "Competitors_2/Methods/Export/AbstractRegular.json#/components/schemas/Competitors_2.Methods.Export.AbstractRegular.Exec"
-                                                        }
-                                                    },
-                                                    "required": [
-                                                        "result"
-                                                    ]
-                                                },
-                                                {
-                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
-                                                },
-                                                {
-                                                    "$ref": "Pagination.json#/components/schemas/Pagination"
-                                                }
-                                            ]
-                                        },
-                                        {
-                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
-                                        }
-                                    ]
-                                }
-                            },
-                            "model": {
-                                "schema": {
-                                    "type": "null"
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        },
         "/del/competitors_2/orders/": {
             "post": {
                 "operationId": "DelCompetitors2Orders",
@@ -17450,6 +17390,66 @@
                 }
             }
         },
+        "/abstractregular/competitors_2/export/table/": {
+            "post": {
+                "operationId": "AbstractregularCompetitors2ExportTable",
+                "tags": [
+                    "Competitors_2"
+                ],
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Competitors_2/Methods/Export/Table/AbstractRegular.json#/components/schemas/Competitors_2.Methods.Export.Table.AbstractRegular"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "oneOf": [
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "$ref": "Competitors_2/Methods/Export/Table/AbstractRegular.json#/components/schemas/Competitors_2.Methods.Export.Table.AbstractRegular.Exec"
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "result"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                },
+                                                {
+                                                    "$ref": "Pagination.json#/components/schemas/Pagination"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
+                                        }
+                                    ]
+                                }
+                            },
+                            "model": {
+                                "schema": {
+                                    "type": "null"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
         "/get/competitors_2/export/table/": {
             "post": {
                 "operationId": "GetCompetitors2ExportTable",
@@ -17481,6 +17481,127 @@
                                                     "properties": {
                                                         "result": {
                                                             "$ref": "Competitors_2/Methods/Export/Table/Get.json#/components/schemas/Competitors_2.Methods.Export.Table.Get.Exec"
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "result"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                },
+                                                {
+                                                    "$ref": "Pagination.json#/components/schemas/Pagination"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
+                                        }
+                                    ]
+                                }
+                            },
+                            "model": {
+                                "schema": {
+                                    "type": "null"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/abstractregular/competitors_2/export/tableToProject/": {
+            "post": {
+                "operationId": "AbstractregularCompetitors2ExportTableToProject",
+                "tags": [
+                    "Competitors_2"
+                ],
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Competitors_2/Methods/Export/TableToProject/AbstractRegular.json#/components/schemas/Competitors_2.Methods.Export.TableToProject.AbstractRegular"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "oneOf": [
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "$ref": "Competitors_2/Methods/Export/TableToProject/AbstractRegular.json#/components/schemas/Competitors_2.Methods.Export.TableToProject.AbstractRegular.Exec"
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "result"
+                                                    ]
+                                                },
+                                                {
+                                                    "$ref": "ResponseSuccess.json#/components/schemas/ResponseSuccess"
+                                                },
+                                                {
+                                                    "$ref": "Pagination.json#/components/schemas/Pagination"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "$ref": "ResponseError.json#/components/schemas/ResponseError"
+                                        }
+                                    ]
+                                }
+                            },
+                            "model": {
+                                "schema": {
+                                    "type": "null"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/get/competitors_2/export/tableToProject/": {
+            "post": {
+                "operationId": "GetCompetitors2ExportTableToProject",
+                "tags": [
+                    "Competitors_2"
+                ],
+                "summary": "Экспорт запросов в проект",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "Competitors_2/Methods/Export/TableToProject/Get.json#/components/schemas/Competitors_2.Methods.Export.TableToProject.Get"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "oneOf": [
+                                        {
+                                            "allOf": [
+                                                {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "result": {
+                                                            "$ref": "Competitors_2/Methods/Export/TableToProject/Get.json#/components/schemas/Competitors_2.Methods.Export.TableToProject.Get.Exec"
                                                         }
                                                     },
                                                     "required": [

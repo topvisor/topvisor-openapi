@@ -7,18 +7,18 @@ export type paths = Record<string, never>;
 export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
-        "Competitors_2.Methods.Export.AbstractRegular": {
-            output: import('../../Types/Export/Table/Output.ts').components['schemas']['Competitors_2.Types.Export.Table.Output'];
-            by_type: import('../../Types/Report/ByType.ts').components['schemas']['Competitors_2.Types.Report.ByType'];
+        "Competitors_2.Methods.Export.Table.AbstractRegular": {
+            output: import('../../../Types/Export/Table/Output.ts').components['schemas']['Competitors_2.Types.Export.Table.Output'];
+            by_type: import('../../../Types/Report/ByType.ts').components['schemas']['Competitors_2.Types.Report.ByType'];
             /** Индекс региона (не путать с ключом региона) */
             region_index: number;
             /** Ключевая фраза (или ее часть) / url */
             query: string;
-            type: import('../../Types/Report/Type.ts').components['schemas']['Competitors_2.Types.Report.Type'];
+            type: import('../../../Types/Report/Type.ts').components['schemas']['Competitors_2.Types.Report.Type'];
             /** Представление отчета */
             view: string;
             /** Дата проверки */
-            date: import('../../../TV/API/Types/Date.ts').components['schemas']['TV.API.Types.Date'];
+            date: import('../../../../TV/API/Types/Date.ts').components['schemas']['TV.API.Types.Date'];
             /** Ключевая фраза (или ее часть) / url конкурента (для сравнения запросов) */
             query_vs?: string | null;
             /** Тип связи запросов между конкурентами */
@@ -40,13 +40,13 @@ export interface components {
              *     - handle
              *     - name */
             handler?: unknown;
-            fields?: import('../../../TV/API/Params/FieldsTrait.ts').components['schemas']['TV.API.Params.FieldsTrait']['fields'];
-            orders?: import('../../../TV/API/Params/OrdersTrait.ts').components['schemas']['TV.API.Params.OrdersTrait']['orders'];
-            filters?: import('../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['filters'];
-            id?: import('../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['id'];
-            limit?: import('../../../TV/API/Params/LimitTrait.ts').components['schemas']['TV.API.Params.LimitTrait']['limit'];
-            offset?: import('../../../TV/API/Params/OffsetTrait.ts').components['schemas']['TV.API.Params.OffsetTrait']['offset'];
-            fetch_style?: import('../../../TV/API/Params/FetchStyleTrait.ts').components['schemas']['TV.API.Params.FetchStyleTrait']['fetch_style'];
+            fields?: import('../../../../TV/API/Params/FieldsTrait.ts').components['schemas']['TV.API.Params.FieldsTrait']['fields'];
+            orders?: import('../../../../TV/API/Params/OrdersTrait.ts').components['schemas']['TV.API.Params.OrdersTrait']['orders'];
+            filters?: import('../../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['filters'];
+            id?: import('../../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['id'];
+            limit?: import('../../../../TV/API/Params/LimitTrait.ts').components['schemas']['TV.API.Params.LimitTrait']['limit'];
+            offset?: import('../../../../TV/API/Params/OffsetTrait.ts').components['schemas']['TV.API.Params.OffsetTrait']['offset'];
+            fetch_style?: import('../../../../TV/API/Params/FetchStyleTrait.ts').components['schemas']['TV.API.Params.FetchStyleTrait']['fetch_style'];
         };
         /** Непосредственный вызов API функции
          *
@@ -55,7 +55,7 @@ export interface components {
          *     В описании к функции отвечать на вопрос: `Что является результатом запроса?` Например: `Список пользователей`
          *
          *     Не менять `protected`, проверка проводится при генерации схем в `TV\API\Objects\ClassAPIMethodInfo` */
-        "Competitors_2.Methods.Export.AbstractRegular.Exec": unknown;
+        "Competitors_2.Methods.Export.Table.AbstractRegular.Exec": unknown;
     };
     responses: never;
     parameters: never;

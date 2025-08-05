@@ -1,26 +1,26 @@
 {
     "openapi": "3.0.0",
     "info": {
-        "title": "Topvisor/Competitors_2.Methods.Export.AbstractRegular",
+        "title": "Topvisor/Competitors_2.Methods.Export.Table.AbstractRegular",
         "version": "2.0.0"
     },
     "paths": {},
     "components": {
         "schemas": {
-            "Competitors_2.Methods.Export.AbstractRegular": {
+            "Competitors_2.Methods.Export.Table.AbstractRegular": {
                 "type": "object",
                 "properties": {
                     "output": {
                         "allOf": [
                             {
-                                "$ref": "../../../Competitors_2/Types/Export/Table/Output.json#/components/schemas/Competitors_2.Types.Export.Table.Output"
+                                "$ref": "../../../../Competitors_2/Types/Export/Table/Output.json#/components/schemas/Competitors_2.Types.Export.Table.Output"
                             }
                         ]
                     },
                     "by_type": {
                         "allOf": [
                             {
-                                "$ref": "../../../Competitors_2/Types/Report/ByType.json#/components/schemas/Competitors_2.Types.Report.ByType"
+                                "$ref": "../../../../Competitors_2/Types/Report/ByType.json#/components/schemas/Competitors_2.Types.Report.ByType"
                             }
                         ]
                     },
@@ -35,7 +35,7 @@
                     "type": {
                         "allOf": [
                             {
-                                "$ref": "../../../Competitors_2/Types/Report/Type.json#/components/schemas/Competitors_2.Types.Report.Type"
+                                "$ref": "../../../../Competitors_2/Types/Report/Type.json#/components/schemas/Competitors_2.Types.Report.Type"
                             }
                         ]
                     },
@@ -47,7 +47,7 @@
                         "title": "Дата проверки",
                         "allOf": [
                             {
-                                "$ref": "../../../TV/API/Types/Date.json#/components/schemas/TV.API.Types.Date"
+                                "$ref": "../../../../TV/API/Types/Date.json#/components/schemas/TV.API.Types.Date"
                             }
                         ]
                     },
@@ -80,25 +80,25 @@
                         "nullable": true
                     },
                     "fields": {
-                        "$ref": "../../../TV/API/Params/FieldsTrait.json#/components/schemas/TV.API.Params.FieldsTrait/properties/fields"
+                        "$ref": "../../../../TV/API/Params/FieldsTrait.json#/components/schemas/TV.API.Params.FieldsTrait/properties/fields"
                     },
                     "orders": {
-                        "$ref": "../../../TV/API/Params/OrdersTrait.json#/components/schemas/TV.API.Params.OrdersTrait/properties/orders"
+                        "$ref": "../../../../TV/API/Params/OrdersTrait.json#/components/schemas/TV.API.Params.OrdersTrait/properties/orders"
                     },
                     "filters": {
-                        "$ref": "../../../TV/API/Params/FiltersTrait.json#/components/schemas/TV.API.Params.FiltersTrait/properties/filters"
+                        "$ref": "../../../../TV/API/Params/FiltersTrait.json#/components/schemas/TV.API.Params.FiltersTrait/properties/filters"
                     },
                     "id": {
-                        "$ref": "../../../TV/API/Params/FiltersTrait.json#/components/schemas/TV.API.Params.FiltersTrait/properties/id"
+                        "$ref": "../../../../TV/API/Params/FiltersTrait.json#/components/schemas/TV.API.Params.FiltersTrait/properties/id"
                     },
                     "limit": {
-                        "$ref": "../../../TV/API/Params/LimitTrait.json#/components/schemas/TV.API.Params.LimitTrait/properties/limit"
+                        "$ref": "../../../../TV/API/Params/LimitTrait.json#/components/schemas/TV.API.Params.LimitTrait/properties/limit"
                     },
                     "offset": {
-                        "$ref": "../../../TV/API/Params/OffsetTrait.json#/components/schemas/TV.API.Params.OffsetTrait/properties/offset"
+                        "$ref": "../../../../TV/API/Params/OffsetTrait.json#/components/schemas/TV.API.Params.OffsetTrait/properties/offset"
                     },
                     "fetch_style": {
-                        "$ref": "../../../TV/API/Params/FetchStyleTrait.json#/components/schemas/TV.API.Params.FetchStyleTrait/properties/fetch_style"
+                        "$ref": "../../../../TV/API/Params/FetchStyleTrait.json#/components/schemas/TV.API.Params.FetchStyleTrait/properties/fetch_style"
                     }
                 },
                 "required": [
@@ -111,7 +111,7 @@
                     "date"
                 ]
             },
-            "Competitors_2.Methods.Export.AbstractRegular.Exec": {
+            "Competitors_2.Methods.Export.Table.AbstractRegular.Exec": {
                 "title": "Непосредственный вызов API функции\n\nЗапрещено делать публичной, это приведет к поломке preCall()\n\nВ описании к функции отвечать на вопрос: `Что является результатом запроса?` Например: `Список пользователей`\n\nНе менять `protected`, проверка проводится при генерации схем в `TV\\API\\Objects\\ClassAPIMethodInfo`",
                 "nullable": true
             }
