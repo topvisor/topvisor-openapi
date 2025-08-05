@@ -8313,6 +8313,25 @@ export interface paths {
         patch?: never;
         trace?: never;
     };  
+    /** Экспорт запросов по доменам
+     *
+     *     Работает только с отчетами по URL по списку доменов с оплаченной схожестью */
+    "/get/competitors_2/export/byDomains/table/": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        get?: never;
+        put?: never;
+        post: operations["GetCompetitors2ExportByDomainsTable"];
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };  
     /** Получение информации об отчете (вернет нулевые данные, если отчет уже оплачен) */
     "/get/competitors_2/orders/byKeyword/info/": {
         parameters: {
@@ -21484,6 +21503,29 @@ export interface operations {
                         result: import('./Audit_2/Methods/Watcher/Summary/Chart/Get.ts').components['schemas']['Audit_2.Methods.Watcher.Summary.Chart.Get.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
+                };
+            };
+        };
+    };
+    GetCompetitors2ExportByDomainsTable: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody: {
+            content: {
+                "application/json": import('./Competitors_2/Methods/Export/ByDomains/Table/Get.ts').components['schemas']['Competitors_2.Methods.Export.ByDomains.Table.Get'];
+            };
+        };
+        responses: {
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/octet-stream": string;
                 };
             };
         };
