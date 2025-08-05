@@ -19,7 +19,9 @@ export interface components {
             filters: import('../../../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['filters'];
             id?: import('../../../../../TV/API/Params/FiltersTrait.ts').components['schemas']['TV.API.Params.FiltersTrait']['id'];
         };
-        "Audit_2.Methods.Watcher.Checker.Price.Get.Exec": Record<string, never>;
+        "Audit_2.Methods.Watcher.Checker.Price.Get.Exec": {
+            [key: string]: unknown;
+        };
     };
     responses: never;
     parameters: never;

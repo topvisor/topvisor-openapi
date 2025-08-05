@@ -16343,10 +16343,6 @@ components:
             - $ref: '#/components/schemas/TV.API.Types.StringArray'
       required: []
       title: Результат успешного API запроса
-    stdClass:
-      type: object
-      properties: {}
-      required: []
     Error:
       type: object
       properties:
@@ -16361,8 +16357,8 @@ components:
           type: string
         detail:
           title: Объект с дополнительной информацией
-          allOf:
-            - $ref: '#/components/schemas/stdClass'
+          type: object
+          additionalProperties: {}
       required:
         - code
         - string
@@ -17948,8 +17944,8 @@ components:
       required: []
       title: Получение данных пользователя
     Users_2.Methods.Get.Exec:
-      allOf:
-        - $ref: '#/components/schemas/stdClass'
+      type: object
+      additionalProperties: {}
     Votes_2.Types.Rate:
       type: string
       enum:
@@ -23822,8 +23818,8 @@ components:
         - domain_expire
         - ssl_expire
     Projects_2.Methods.Status.Get.Exec:
-      allOf:
-        - $ref: '#/components/schemas/stdClass'
+      type: object
+      additionalProperties: {}
     Projects_2.Methods.Tasks.Get:
       type: object
       properties:
@@ -30506,6 +30502,7 @@ components:
       title: Информация о стоимости запуска проверки позиций по проектам
     Keywords_2.Methods.Volumes.Price.Get.Exec:
       type: object
+      additionalProperties: {}
     Landings_2.Methods.Hr.Feedback.Add:
       type: object
       properties:
@@ -30880,6 +30877,7 @@ components:
       title: Информация о стоимости запуска проверки позиций по проектам
     Positions_2.Methods.Checker.Price.Get.Exec:
       type: object
+      additionalProperties: {}
     Positions_2.Methods.Searchers.Enabled.Edit:
       type: object
       properties:
@@ -31427,8 +31425,8 @@ components:
         - created, если данные готовы
         - paidtill, если данные готовы
     Projects_2.Methods.Status.Registrar.Get.Exec:
-      allOf:
-        - $ref: '#/components/schemas/stdClass'
+      type: object
+      additionalProperties: {}
     Projects_2.Methods.Status.Ssl.Get:
       type: object
       properties:
@@ -31443,8 +31441,8 @@ components:
         Возваращает объект с параметрами:
         - expire
     Projects_2.Methods.Status.Ssl.Get.Exec:
-      allOf:
-        - $ref: '#/components/schemas/stdClass'
+      type: object
+      additionalProperties: {}
     Projects_2.Methods.Tasks.Volumes.Add:
       type: object
       properties:
@@ -32779,8 +32777,8 @@ components:
       title: Получение количество переходов и регистраций по реферальной ссылке (для графика)
     Users_2.Methods.Referrals.ChartCountsByDate.Get.Exec:
       nullable: true
-      allOf:
-        - $ref: '#/components/schemas/stdClass'
+      type: object
+      additionalProperties: {}
     Users_2.Methods.Referrals.Invite.Add:
       type: object
       properties:
@@ -33510,32 +33508,32 @@ components:
       required: []
       title: Получение числа автоматических проверока по дням по часам
     Admin_2.Methods.Analytics.Positions.ChartByDayByHourAuto.Get.Exec:
-      allOf:
-        - $ref: '#/components/schemas/stdClass'
+      type: object
+      additionalProperties: {}
     Admin_2.Methods.Analytics.Positions.ChartByHourAuto.Get:
       type: object
       properties: {}
       required: []
       title: Получение числа автоматических проверок по часам
     Admin_2.Methods.Analytics.Positions.ChartByHourAuto.Get.Exec:
-      allOf:
-        - $ref: '#/components/schemas/stdClass'
+      type: object
+      additionalProperties: {}
     Admin_2.Methods.Analytics.Positions.ChartByHour.Get:
       type: object
       properties: {}
       required: []
       title: Получение числа проверок за месяц по часам
     Admin_2.Methods.Analytics.Positions.ChartByHour.Get.Exec:
-      allOf:
-        - $ref: '#/components/schemas/stdClass'
+      type: object
+      additionalProperties: {}
     Admin_2.Methods.Analytics.Positions.ChartCountUsersByHour.Get:
       type: object
       properties: {}
       required: []
       title: Получение числа проверок по часам по пользователям
     Admin_2.Methods.Analytics.Positions.ChartCountUsersByHour.Get.Exec:
-      allOf:
-        - $ref: '#/components/schemas/stdClass'
+      type: object
+      additionalProperties: {}
     Admin_2.Methods.Analytics.Tickets.ChartByMigrations.Get:
       type: object
       properties:
@@ -33776,6 +33774,7 @@ components:
       title: Информация о стоимости запуска аудита по проектам
     Audit_2.Methods.Audit.Checker.Price.Get.Exec:
       type: object
+      additionalProperties: {}
     Audit_2.Methods.Audit.Export.Links.Get:
       type: object
       properties:
@@ -33841,8 +33840,8 @@ components:
 
         Вернет null, если ошибки на роботе нет
       nullable: true
-      allOf:
-        - $ref: '#/components/schemas/stdClass'
+      type: object
+      additionalProperties: {}
     Audit_2.Methods.Audit.Log.Chart.Get:
       type: object
       properties:
@@ -34015,6 +34014,7 @@ components:
       title: Информация о стоимости запуска индексации по проектам
     Audit_2.Methods.Indexing.Checker.Price.Get.Exec:
       type: object
+      additionalProperties: {}
     Audit_2.Methods.Indexing.Export.Links.Get:
       type: object
       properties:
@@ -34201,6 +34201,7 @@ components:
       title: Информация о стоимости запуска индексации по проектам
     Audit_2.Methods.Sitemap.Checker.Price.Get.Exec:
       type: object
+      additionalProperties: {}
     Audit_2.Methods.Watcher.Checker.Go.Edit:
       type: object
       properties:
@@ -34247,6 +34248,7 @@ components:
       title: Информация о стоимости запуска индексации по проектам
     Audit_2.Methods.Watcher.Checker.Price.Get.Exec:
       type: object
+      additionalProperties: {}
     properties-check_id:
       title: ID проверки радара
       type: integer
