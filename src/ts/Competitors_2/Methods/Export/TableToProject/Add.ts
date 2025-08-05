@@ -8,7 +8,7 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         /** Экспорт запросов в проект */
-        "Competitors_2.Methods.Export.TableToProject.Get": {
+        "Competitors_2.Methods.Export.TableToProject.Add": {
             /** Id проекта */
             project_id: number;
             /** Добавить разделение на группы */
@@ -77,7 +77,7 @@ export interface components {
             offset?: import('../../../../TV/API/Params/OffsetTrait.ts').components['schemas']['TV.API.Params.OffsetTrait']['offset'];
             fetch_style?: import('../../../../TV/API/Params/FetchStyleTrait.ts').components['schemas']['TV.API.Params.FetchStyleTrait']['fetch_style'];
         };
-        "Competitors_2.Methods.Export.TableToProject.Get.Exec": unknown;
+        "Competitors_2.Methods.Export.TableToProject.Add.Exec": unknown;
     };
     responses: never;
     parameters: never;

@@ -9618,9 +9618,9 @@ paths:
             model:
               schema:
                 type: 'null'
-  /get/competitors_2/export/tableToProject/:
+  /add/competitors_2/export/tableToProject/:
     post:
-      operationId: GetCompetitors2ExportTableToProject
+      operationId: AddCompetitors2ExportTableToProject
       tags:
         - Competitors_2
       summary: Экспорт запросов в проект
@@ -9628,7 +9628,7 @@ paths:
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/Competitors_2.Methods.Export.TableToProject.Get'
+              $ref: '#/components/schemas/Competitors_2.Methods.Export.TableToProject.Add'
         required: true
       responses:
         '200':
@@ -9641,7 +9641,7 @@ paths:
                       - type: object
                         properties:
                           result:
-                            $ref: '#/components/schemas/Competitors_2.Methods.Export.TableToProject.Get.Exec'
+                            $ref: '#/components/schemas/Competitors_2.Methods.Export.TableToProject.Add.Exec'
                         required:
                           - result
                       - $ref: '#/components/schemas/ResponseSuccess'
@@ -29844,7 +29844,7 @@ components:
 
         Не менять `protected`, проверка проводится при генерации схем в `TV\API\Objects\ClassAPIMethodInfo`
       nullable: true
-    Competitors_2.Methods.Export.TableToProject.Get:
+    Competitors_2.Methods.Export.TableToProject.Add:
       type: object
       properties:
         project_id:
@@ -29969,7 +29969,7 @@ components:
         - view
         - date
       title: Экспорт запросов в проект
-    Competitors_2.Methods.Export.TableToProject.Get.Exec:
+    Competitors_2.Methods.Export.TableToProject.Add.Exec:
       nullable: true
     Competitors_2.Methods.Orders.Pay.Edit:
       type: object

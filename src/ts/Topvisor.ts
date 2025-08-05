@@ -5276,7 +5276,7 @@ export interface paths {
         trace?: never;
     };  
     /** Экспорт запросов в проект */
-    "/get/competitors_2/export/tableToProject/": {
+    "/add/competitors_2/export/tableToProject/": {
         parameters: {
             query?: never;
             header?: never;
@@ -5285,7 +5285,7 @@ export interface paths {
         };
         get?: never;
         put?: never;
-        post: operations["GetCompetitors2ExportTableToProject"];
+        post: operations["AddCompetitors2ExportTableToProject"];
         delete?: never;
         options?: never;
         head?: never;
@@ -16960,7 +16960,7 @@ export interface operations {
             };
         };
     };
-    GetCompetitors2ExportTableToProject: {
+    AddCompetitors2ExportTableToProject: {
         parameters: {
             query?: never;
             header?: never;
@@ -16969,7 +16969,7 @@ export interface operations {
         };
         requestBody: {
             content: {
-                "application/json": import('./Competitors_2/Methods/Export/TableToProject/Get.ts').components['schemas']['Competitors_2.Methods.Export.TableToProject.Get'];
+                "application/json": import('./Competitors_2/Methods/Export/TableToProject/Add.ts').components['schemas']['Competitors_2.Methods.Export.TableToProject.Add'];
             };
         };
         responses: {
@@ -16979,7 +16979,7 @@ export interface operations {
                 };
                 content: {
                     "application/json": ({
-                        result: import('./Competitors_2/Methods/Export/TableToProject/Get.ts').components['schemas']['Competitors_2.Methods.Export.TableToProject.Get.Exec'];
+                        result: import('./Competitors_2/Methods/Export/TableToProject/Add.ts').components['schemas']['Competitors_2.Methods.Export.TableToProject.Add.Exec'];
                     } & import('./ResponseSuccess.ts').components['schemas']['ResponseSuccess'] & import('./Pagination.ts').components['schemas']['Pagination']) | import('./ResponseError.ts').components['schemas']['ResponseError'];
                     model: null;
                 };

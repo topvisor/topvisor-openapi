@@ -1,13 +1,13 @@
 {
     "openapi": "3.0.0",
     "info": {
-        "title": "Topvisor/Competitors_2.Methods.Export.TableToProject.Get",
+        "title": "Topvisor/Competitors_2.Methods.Export.TableToProject.Add",
         "version": "2.0.0"
     },
     "paths": {},
     "components": {
         "schemas": {
-            "Competitors_2.Methods.Export.TableToProject.Get": {
+            "Competitors_2.Methods.Export.TableToProject.Add": {
                 "type": "object",
                 "properties": {
                     "project_id": {
@@ -176,7 +176,7 @@
                 ],
                 "title": "Экспорт запросов в проект"
             },
-            "Competitors_2.Methods.Export.TableToProject.Get.Exec": {
+            "Competitors_2.Methods.Export.TableToProject.Add.Exec": {
                 "nullable": true
             }
         }

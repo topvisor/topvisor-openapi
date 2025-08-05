@@ -17571,9 +17571,9 @@
                 }
             }
         },
-        "/get/competitors_2/export/tableToProject/": {
+        "/add/competitors_2/export/tableToProject/": {
             "post": {
-                "operationId": "GetCompetitors2ExportTableToProject",
+                "operationId": "AddCompetitors2ExportTableToProject",
                 "tags": [
                     "Competitors_2"
                 ],
@@ -17582,7 +17582,7 @@
                     "content": {
                         "application/json": {
                             "schema": {
-                                "$ref": "Competitors_2/Methods/Export/TableToProject/Get.json#/components/schemas/Competitors_2.Methods.Export.TableToProject.Get"
+                                "$ref": "Competitors_2/Methods/Export/TableToProject/Add.json#/components/schemas/Competitors_2.Methods.Export.TableToProject.Add"
                             }
                         }
                     },
@@ -17601,7 +17601,7 @@
                                                     "type": "object",
                                                     "properties": {
                                                         "result": {
-                                                            "$ref": "Competitors_2/Methods/Export/TableToProject/Get.json#/components/schemas/Competitors_2.Methods.Export.TableToProject.Get.Exec"
+                                                            "$ref": "Competitors_2/Methods/Export/TableToProject/Add.json#/components/schemas/Competitors_2.Methods.Export.TableToProject.Add.Exec"
                                                         }
                                                     },
                                                     "required": [
