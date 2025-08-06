@@ -30,7 +30,6 @@
                         ]
                     },
                     "output": {
-                        "title": "Получение данных по всем запросам",
                         "allOf": [
                             {
                                 "$ref": "../../../../Snapshots_2/Types/History/Export/Output.json#/components/schemas/Snapshots_2.Types.History.Export.Output"

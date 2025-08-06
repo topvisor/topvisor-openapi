@@ -23,7 +23,6 @@ export interface components {
             properties?: unknown[];
             /** Шаблон (только для pdf) */
             tpl?: import('../../../Types/History/Export/Tpl.ts').components['schemas']['Snapshots_2.Types.History.Export.Tpl'] | null;
-            /** Получение данных по всем запросам */
             output: import('../../../Types/History/Export/Output.ts').components['schemas']['Snapshots_2.Types.History.Export.Output'];
             /** Id проекта */
             project_id: number;

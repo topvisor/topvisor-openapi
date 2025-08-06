@@ -32397,7 +32397,6 @@ components:
           allOf:
             - $ref: '#/components/schemas/Snapshots_2.Types.History.Export.Tpl'
         output:
-          title: Получение данных по всем запросам
           allOf:
             - $ref: '#/components/schemas/Snapshots_2.Types.History.Export.Output'
         project_id:
