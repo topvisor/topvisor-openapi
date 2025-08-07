@@ -616,8 +616,6 @@ export interface components {
             readonly All_keywords: "All keywords";
             /** @constant */
             readonly Select_source: "Select source";
-            /** @constant */
-            readonly Error_name_folder: "The folder name cannot contain \"/\"";
         };
     };
     responses: never;
