@@ -552,6 +552,10 @@
                         "const": "Valid characters",
                         "readOnly": true
                     },
+                    "Invalid_characters": {
+                        "const": "Invalid characters",
+                        "readOnly": true
+                    },
                     "Bonus": {
                         "const": "Bonus",
                         "readOnly": true
@@ -2083,6 +2087,7 @@
                     "Request_error_qualifiers",
                     "Error_regexp",
                     "Valid_characters",
+                    "Invalid_characters",
                     "Bonus",
                     "or",
                     "to",
