@@ -13,6 +13,17 @@ export interface components {
         "Projects_2.Methods.Master.HintsCompetitors.Get": {
             /** ID проекта */
             project_id: number;
+            /** Url конкурента для сравнения запросов */
+            query_vs?: string | null;
+            /**
+             * Тип связи запросов между конкурентами
+             * @default me
+             */
+            rel_vs: import('../../../../Competitors_2/Types/ByUrl/Table/Keywords/TypeVS.ts').components['schemas']['Competitors_2.Types.ByUrl.Table.Keywords.TypeVS'];
+            /** Минимальная схожесть */
+            intersection?: number;
+            /** Делать ли проверку на наличие пути в URL */
+            strict_query?: boolean;
         };
         "Projects_2.Methods.Master.HintsCompetitors.Get.Exec": unknown[];
     };

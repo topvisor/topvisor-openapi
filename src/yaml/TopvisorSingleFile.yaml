@@ -29685,7 +29685,7 @@ components:
           nullable: true
           type: string
         strict_query:
-          title: Делать ли проверку на наоичие пути в URL (используется при (by_type = url))
+          title: Делать ли проверку на наличие пути в URL (используется при (by_type = url))
           type: boolean
         intersection:
           title: Минимальная схожесть
@@ -31743,12 +31743,36 @@ components:
       title: Изменение имени папки
     Projects_2.Methods.Folders.Name.Edit.Exec:
       nullable: true
+    Competitors_2.Types.ByUrl.Table.Keywords.TypeVS:
+      type: string
+      enum:
+        - me
+        - exclusive_me
+        - common
+        - competitor
+        - exclusive_competitor
+      title: Тип связи запросов между конкурентами
     Projects_2.Methods.Master.HintsCompetitors.Get:
       type: object
       properties:
         project_id:
           title: ID проекта
           type: integer
+        query_vs:
+          title: Url конкурента для сравнения запросов
+          nullable: true
+          type: string
+        rel_vs:
+          title: Тип связи запросов между конкурентами
+          default: me
+          allOf:
+            - $ref: '#/components/schemas/Competitors_2.Types.ByUrl.Table.Keywords.TypeVS'
+        intersection:
+          title: Минимальная схожесть
+          type: number
+        strict_query:
+          title: Делать ли проверку на наличие пути в URL
+          type: boolean
       required:
         - project_id
       title: |-
@@ -31763,6 +31787,21 @@ components:
         project_id:
           title: ID проекта
           type: integer
+        strict_query:
+          title: Делать ли проверку на наличие пути в URL
+          type: boolean
+        query_vs:
+          title: Ключевая фраза (или ее часть) для сравнения запросов
+          nullable: true
+          type: string
+        rel_vs:
+          title: Тип связи запросов между конкурентами
+          default: me
+          allOf:
+            - $ref: '#/components/schemas/Competitors_2.Types.ByUrl.Table.Keywords.TypeVS'
+        intersection:
+          title: Минимальная схожесть
+          type: number
       required:
         - project_id
       title: |-

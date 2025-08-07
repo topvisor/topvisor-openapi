@@ -13,6 +13,17 @@ export interface components {
         "Projects_2.Methods.Master.HintsKeywords.Get": {
             /** ID проекта */
             project_id: number;
+            /** Делать ли проверку на наличие пути в URL */
+            strict_query?: boolean;
+            /** Ключевая фраза (или ее часть) для сравнения запросов */
+            query_vs?: string | null;
+            /**
+             * Тип связи запросов между конкурентами
+             * @default me
+             */
+            rel_vs: import('../../../../Competitors_2/Types/ByUrl/Table/Keywords/TypeVS.ts').components['schemas']['Competitors_2.Types.ByUrl.Table.Keywords.TypeVS'];
+            /** Минимальная схожесть */
+            intersection?: number;
         };
         "Projects_2.Methods.Master.HintsKeywords.Get.Exec": unknown[];
     };
