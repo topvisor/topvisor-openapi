@@ -29654,19 +29654,9 @@ components:
     Broker_2.Methods.Tasks.RateTask.Add.Exec:
       nullable: true
       type: integer
-    Competitors_2.Types.Export.Table.Output:
-      type: string
-      enum:
-        - csv
-        - csv_utf
-        - xlsx
-      title: Тип экспортируемого файла
     Competitors_2.Methods.Export.Table.AbstractRegular:
       type: object
       properties:
-        output:
-          allOf:
-            - $ref: '#/components/schemas/Competitors_2.Types.Export.Table.Output'
         by_type:
           allOf:
             - $ref: '#/components/schemas/Competitors_2.Types.Report.ByType'
@@ -29730,7 +29720,6 @@ components:
         fetch_style:
           $ref: '#/components/schemas/fetch_style'
       required:
-        - output
         - by_type
         - region_index
         - query
@@ -29747,6 +29736,13 @@ components:
 
         Не менять `protected`, проверка проводится при генерации схем в `TV\API\Objects\ClassAPIMethodInfo`
       nullable: true
+    Competitors_2.Types.Export.Table.Output:
+      type: string
+      enum:
+        - csv
+        - csv_utf
+        - xlsx
+      title: Тип экспортируемого файла
     Competitors_2.Methods.Export.Table.Get:
       type: object
       properties:
@@ -34869,15 +34865,15 @@ components:
     Competitors_2.Methods.Export.ByDomains.Table.Get:
       type: object
       properties:
+        output:
+          allOf:
+            - $ref: '#/components/schemas/Competitors_2.Types.Export.Table.Output'
         func:
           default: export_byDomains_table
           type: string
         deleted:
           nullable: true
           type: boolean
-        output:
-          allOf:
-            - $ref: '#/components/schemas/Competitors_2.Types.Export.Table.Output'
         by_type:
           allOf:
             - $ref: '#/components/schemas/Competitors_2.Types.Report.ByType'
@@ -35004,9 +35000,6 @@ components:
           nullable: true
           allOf:
             - $ref: '#/components/schemas/Tags_2.Types.TagsIds'
-        output:
-          allOf:
-            - $ref: '#/components/schemas/Competitors_2.Types.Export.Table.Output'
         by_type:
           allOf:
             - $ref: '#/components/schemas/Competitors_2.Types.Report.ByType'
@@ -35067,7 +35060,6 @@ components:
           $ref: '#/components/schemas/fetch_style'
       required:
         - project_id
-        - output
         - by_type
         - region_index
         - query
@@ -35083,15 +35075,15 @@ components:
     Competitors_2.Methods.Export.ByLeaders.Table.Get:
       type: object
       properties:
+        output:
+          allOf:
+            - $ref: '#/components/schemas/Competitors_2.Types.Export.Table.Output'
         func:
           default: export_byLeaders_table
           type: string
         deleted:
           nullable: true
           type: boolean
-        output:
-          allOf:
-            - $ref: '#/components/schemas/Competitors_2.Types.Export.Table.Output'
         by_type:
           allOf:
             - $ref: '#/components/schemas/Competitors_2.Types.Report.ByType'
@@ -35218,9 +35210,6 @@ components:
           nullable: true
           allOf:
             - $ref: '#/components/schemas/Tags_2.Types.TagsIds'
-        output:
-          allOf:
-            - $ref: '#/components/schemas/Competitors_2.Types.Export.Table.Output'
         by_type:
           allOf:
             - $ref: '#/components/schemas/Competitors_2.Types.Report.ByType'
@@ -35281,7 +35270,6 @@ components:
           $ref: '#/components/schemas/fetch_style'
       required:
         - project_id
-        - output
         - by_type
         - region_index
         - query

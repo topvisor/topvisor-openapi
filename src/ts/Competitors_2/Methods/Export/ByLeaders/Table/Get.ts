@@ -11,10 +11,10 @@ export interface components {
          *
          *     Работает только с отчетами по URL по списку доменов с оплаченной схожестью */
         "Competitors_2.Methods.Export.ByLeaders.Table.Get": {
+            output: import('../../../../Types/Export/Table/Output.ts').components['schemas']['Competitors_2.Types.Export.Table.Output'];
             /** @default export_byLeaders_table */
             func: string;
             deleted?: boolean | null;
-            output: import('../../../../Types/Export/Table/Output.ts').components['schemas']['Competitors_2.Types.Export.Table.Output'];
             by_type: import('../../../../Types/Report/ByType.ts').components['schemas']['Competitors_2.Types.Report.ByType'];
             /** Индекс региона (не путать с ключом региона) */
             region_index: number;

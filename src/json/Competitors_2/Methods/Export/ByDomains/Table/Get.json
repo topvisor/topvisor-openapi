@@ -10,6 +10,13 @@
             "Competitors_2.Methods.Export.ByDomains.Table.Get": {
                 "type": "object",
                 "properties": {
+                    "output": {
+                        "allOf": [
+                            {
+                                "$ref": "../../../../../Competitors_2/Types/Export/Table/Output.json#/components/schemas/Competitors_2.Types.Export.Table.Output"
+                            }
+                        ]
+                    },
                     "func": {
                         "default": "export_byDomains_table",
                         "type": "string"
@@ -17,13 +24,6 @@
                     "deleted": {
                         "nullable": true,
                         "type": "boolean"
-                    },
-                    "output": {
-                        "allOf": [
-                            {
-                                "$ref": "../../../../../Competitors_2/Types/Export/Table/Output.json#/components/schemas/Competitors_2.Types.Export.Table.Output"
-                            }
-                        ]
                     },
                     "by_type": {
                         "allOf": [

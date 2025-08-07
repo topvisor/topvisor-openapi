@@ -10,13 +10,6 @@
             "Competitors_2.Methods.Export.Table.AbstractRegular": {
                 "type": "object",
                 "properties": {
-                    "output": {
-                        "allOf": [
-                            {
-                                "$ref": "../../../../Competitors_2/Types/Export/Table/Output.json#/components/schemas/Competitors_2.Types.Export.Table.Output"
-                            }
-                        ]
-                    },
                     "by_type": {
                         "allOf": [
                             {
@@ -102,7 +95,6 @@
                     }
                 },
                 "required": [
-                    "output",
                     "by_type",
                     "region_index",
                     "query",

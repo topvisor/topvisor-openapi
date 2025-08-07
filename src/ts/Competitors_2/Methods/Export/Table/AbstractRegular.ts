@@ -8,7 +8,6 @@ export type webhooks = Record<string, never>;
 export interface components {
     schemas: {
         "Competitors_2.Methods.Export.Table.AbstractRegular": {
-            output: import('../../../Types/Export/Table/Output.ts').components['schemas']['Competitors_2.Types.Export.Table.Output'];
             by_type: import('../../../Types/Report/ByType.ts').components['schemas']['Competitors_2.Types.Report.ByType'];
             /** Индекс региона (не путать с ключом региона) */
             region_index: number;
