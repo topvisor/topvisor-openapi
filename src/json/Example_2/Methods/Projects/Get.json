@@ -47,7 +47,10 @@
             },
             "Example_2.Methods.Projects.Get.Exec": {
                 "nullable": true,
-                "type": "array"
+                "type": "array",
+                "items": {
+                    "$ref": "../../../Models/Projects.json#/components/schemas/Models.Projects"
+                }
             }
         }
     }

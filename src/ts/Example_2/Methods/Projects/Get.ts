@@ -23,7 +23,7 @@ export interface components {
             offset: import('../../../TV/API/Params/OffsetTrait.ts').components['schemas']['TV.API.Params.OffsetTrait']['offset'];
             fetch_style?: import('../../../TV/API/Params/FetchStyleTrait.ts').components['schemas']['TV.API.Params.FetchStyleTrait']['fetch_style'];
         };
-        "Example_2.Methods.Projects.Get.Exec": unknown[] | null;
+        "Example_2.Methods.Projects.Get.Exec": import('../../../Models/Projects.ts').components['schemas']['Models.Projects'][] | null;
     };
     responses: never;
     parameters: never;

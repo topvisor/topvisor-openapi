@@ -22573,9 +22573,6 @@ components:
         - filters
         - offset
       title: Получение списка проектов
-    Example_2.Methods.Projects.Get.Exec:
-      nullable: true
-      type: array
     Models.Projects:
       properties:
         COUNT(*):
@@ -22730,6 +22727,11 @@ components:
         watcher_types:
           type: array
           nullable: true
+    Example_2.Methods.Projects.Get.Exec:
+      nullable: true
+      type: array
+      items:
+        $ref: '#/components/schemas/Models.Projects'
     Example_2.Methods.Test.Get:
       type: object
       properties: {}
